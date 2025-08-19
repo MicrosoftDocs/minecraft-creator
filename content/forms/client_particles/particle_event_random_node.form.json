@@ -1,0 +1,78 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "particle_event_random_node",
+    "title": "Particle Event Random Node Client Particles",
+    "fields": [
+      {
+        "id": "expression",
+        "title": "Expression",
+        "dataType": 24,
+        "alternates": [
+          {
+            "id": "expression",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "expression",
+              "title": "Expression",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0,
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "expression",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "log",
+        "title": "Log",
+        "dataType": 2
+      },
+      {
+        "id": "particle_effect",
+        "title": "Particle Effect",
+        "dataType": 16,
+        "subFormId": "client_particles/particle_visual_effect_event"
+      },
+      {
+        "id": "randomize",
+        "title": "Randomize",
+        "dataType": 16,
+        "subFormId": "client_particles/particle_event_random_node"
+      },
+      {
+        "id": "sequence",
+        "title": "Sequence",
+        "dataType": 16,
+        "subFormId": "client_particles/particle_event_node"
+      },
+      {
+        "id": "sound_effect",
+        "title": "Sound Effect",
+        "dataType": 16,
+        "subFormId": "client_particles/particle_sound_effect_event"
+      },
+      {
+        "id": "weight",
+        "title": "Weight",
+        "dataType": 3,
+        "isRequired": true
+      }
+    ]
+  }
+}

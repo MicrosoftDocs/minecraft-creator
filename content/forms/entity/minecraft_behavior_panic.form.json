@@ -180,13 +180,13 @@
               "content": 1.1
             }
           ],
-          "/vanilla/behavior_pack/entities/villager_v2.json": [
+          "/vanilla/behavior_pack/entities/villager.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.panic/",
               "content": 0.6
             }
           ],
-          "/vanilla/behavior_pack/entities/villager.json": [
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.panic/",
               "content": 0.6
@@ -637,20 +637,20 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/villager_v2.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.panic/",
-          "content": {
-            "priority": 1,
-            "speed_multiplier": 0.6
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/villager.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.panic/",
           "content": {
             "priority": 3,
+            "speed_multiplier": 0.6
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.panic/",
+          "content": {
+            "priority": 1,
             "speed_multiplier": 0.6
           }
         }

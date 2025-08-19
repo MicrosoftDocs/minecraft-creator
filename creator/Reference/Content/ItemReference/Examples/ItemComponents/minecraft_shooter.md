@@ -23,7 +23,7 @@ Compels an item to shoot projectiles, similarly to a bow or crossbow. Must have 
 > * [Projectile (minecraft:projectile)](../EntityComponents/minecraftComponent_projectile.md)
 > 
 
-## Minecraft Shooter Item Properties
+## Minecraft Shooter Item Components Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -34,7 +34,7 @@ Compels an item to shoot projectiles, similarly to a bow or crossbow. Must have 
 
 ## Ammunition item type
 
-#### Ammunition Item Properties
+#### Ammunition Item Components Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

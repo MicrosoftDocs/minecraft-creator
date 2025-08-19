@@ -1,0 +1,26 @@
+{
+  "id": "Crafting Catalog Category",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Crafting Catalog Category",
+    "title": "Crafting Catalog Category Crafting Catalog",
+    "description": "Represents a collection of groups of items in a category..",
+    "fields": [
+      {
+        "id": "category_name",
+        "title": "CraftingCatalogItemCategory",
+        "description": "The category that the items will go to. This is restricted to construction, nature, equipment, or items.",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "groups",
+        "title": "Groups",
+        "description": "The groups that we are adding to a category.",
+        "dataType": 16,
+        "subFormId": "crafting_catalog/crafting_catalog_group",
+        "isRequired": true
+      }
+    ]
+  }
+}

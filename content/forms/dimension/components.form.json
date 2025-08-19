@@ -1,0 +1,23 @@
+{
+  "id": "Components",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Components",
+    "title": "Components Dimension",
+    "fields": [
+      {
+        "id": "minecraft:dimension_bounds",
+        "title": "Minecraft Dimension Bounds",
+        "dataType": 16,
+        "subFormId": "dimension/bounds"
+      },
+      {
+        "id": "minecraft:generation",
+        "title": "Minecraft Generation",
+        "dataType": 16,
+        "subFormId": "dimension/generation",
+        "isRequired": true
+      }
+    ]
+  }
+}

@@ -1,9 +1,11 @@
 {
   "id": "Protected Block",
-  "fields": [      {
-        "id": "processor_type",
-        "title": "Jigsaw Processor Type"
-      }],
+  "fields": [
+    {
+      "id": "processor_type",
+      "title": "Jigsaw Processor Type"
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "Protected Block",
     "title": "Protected Block World",

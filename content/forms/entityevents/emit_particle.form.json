@@ -2,7 +2,7 @@
   "fields": [
     {
       "id": "particle",
-      "desciption": "Identifier of the particle to emit.",
+      "description": "Identifier of the particle to emit.",
       "dataType": 2
     }
   ],

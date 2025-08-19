@@ -98,15 +98,6 @@ At /minecraft:entity/component_groups/minecraft:melee_equipment/minecraft:equipm
 }
 ```
 
-#### [Piglin Brute](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin_brute.json)
-
-
-```json
-"minecraft:equipment": {
-  "table": "loot_tables/entities/piglin_brute_gear.json"
-}
-```
-
 #### [Piglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin.json)
 
 At /minecraft:entity/component_groups/ranged_unit/minecraft:equipment/: 
@@ -122,6 +113,15 @@ At /minecraft:entity/component_groups/melee_unit/minecraft:equipment/:
 ```json
 "minecraft:equipment": {
   "table": "loot_tables/entities/piglin_gear_melee.json"
+}
+```
+
+#### [Piglin Brute](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin_brute.json)
+
+
+```json
+"minecraft:equipment": {
+  "table": "loot_tables/entities/piglin_brute_gear.json"
 }
 ```
 

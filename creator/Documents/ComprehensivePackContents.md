@@ -25,13 +25,13 @@ Wherever possible, the sections are linked to related tutorials, overviews, or r
 
 ## Comprehensive Behavior Pack
 
-Here is an introduction to [behavior packs](BehaviorPack.md).
+Here is an introduction to [Behavior Packs](BehaviorPack.md).
 
-- [animation_controllers](../Reference/Content/AnimationsReference/Examples/AnimationController.md)
+- [animation_controllers](./Animations/AnimationController.md)
     - `<entity_name>`
         - `<entity_name_animation_controller>`.json
     - `<entity_controller>`.json
-- [animations](../Reference/Content/AnimationsReference/Examples/AnimationGettingStarted.md)
+- [animations](./Animations/AnimationsOverview.md)
     - `<entity_name>`
         - `<entity_name_animations>`.json
     - `<entity_name_animations>`.json
@@ -80,7 +80,7 @@ Here is an introduction to [behavior packs](BehaviorPack.md).
 
 ## Comprehensive Resource Pack
 
-Here is an introduction to [resource packs](ResourcePack.md).
+Here is an introduction to [Resource Packs](ResourcePack.md).
 
 - [animation_controllers](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md#animation_controllers)
     - `<entity_animation_controllers>`.json
@@ -330,16 +330,4 @@ The following locales/languages are currently supported:
 
 ### Sample Packs
 
-To see examples of typical resource and behavior packs, check out the Minecraft [Vanilla resource pack](https://aka.ms/resourcepacktemplate) and [Vanilla behavior Pack](https://aka.ms/behaviorpacktemplate).
-
-## What's Next?
-
-Here is some more advanced Add-On pack content information:
-
-> [!div class="nextstepaction"]
-
-> [Scripting with TypeScript](scripting/next-steps.md)
-
-> [Creating New Entity Types](introductiontoaddentity.md)
-
-> [Entity JSON Documentation](../Reference/Content/EntityReference/index.yml)
+To see examples of typical Resource and Behavior Packs, check out the Minecraft [Vanilla Resource Pack](https://aka.ms/resourcepacktemplate) and [Vanilla Behavior Pack](https://aka.ms/behaviorpacktemplate).

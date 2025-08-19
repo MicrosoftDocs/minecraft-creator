@@ -138,18 +138,6 @@ Defines the families this entity belongs to.
 }
 ```
 
-#### [Breeze Wind Charge Projectile](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze_wind_charge_projectile.json)
-
-
-```json
-"minecraft:type_family": {
-  "family": [
-    "wind_charge",
-    "wind_charge_projectile"
-  ]
-}
-```
-
 #### [Breeze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze.json)
 
 
@@ -159,6 +147,18 @@ Defines the families this entity belongs to.
     "breeze",
     "monster",
     "mob"
+  ]
+}
+```
+
+#### [Breeze Wind Charge Projectile](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze_wind_charge_projectile.json)
+
+
+```json
+"minecraft:type_family": {
+  "family": [
+    "wind_charge",
+    "wind_charge_projectile"
   ]
 }
 ```

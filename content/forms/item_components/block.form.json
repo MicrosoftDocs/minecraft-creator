@@ -1,0 +1,35 @@
+{
+  "id": "block",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "block",
+    "title": "Block",
+    "fields": [
+      {
+        "id": "name",
+        "title": "Name",
+        "dataType": 2
+      },
+      {
+        "id": "states",
+        "title": "States",
+        "dataType": 0,
+        "alternates": [
+          {
+            "id": "states",
+            "dataType": 2
+          },
+          {
+            "id": "states",
+            "dataType": 1
+          }
+        ]
+      },
+      {
+        "id": "tags",
+        "title": "Tags",
+        "dataType": 2
+      }
+    ]
+  }
+}

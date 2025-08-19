@@ -54,11 +54,8 @@ Any components that this Client Biome uses.
 ## Ambient Sounds item type
 Sets the ambient sounds for the biome. These sounds must be in the 'individual_named_sounds' in a 'sounds.json' file.
 
-> [!Note]
-> This item requires a format version of at least 1.21.50.
 
-
-#### Minecraft Ambient Sounds Client Biome Properties
+#### Minecraft Ambient Sounds Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -79,11 +76,8 @@ Set the identifier used for atmospherics in Vibrant Visuals mode. Identifiers mu
 ## Biome Music item type
 Affects how music plays within the biome.
 
-> [!Note]
-> This item requires a format version of at least 1.21.50.
 
-
-#### Minecraft Biome Music Client Biome Properties
+#### Minecraft Biome Music Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -115,7 +109,7 @@ Set the dry foliage color used during rendering. Biomes without this component w
 Sets the fog settings used during rendering. Biomes without this component will have default fog settings.
 
 
-#### Minecraft Fog Appearance Client Biome Properties
+#### Minecraft Fog Appearance Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -125,7 +119,7 @@ Sets the fog settings used during rendering. Biomes without this component will 
 Sets the foliage color or color map used during rendering. Biomes without this component will have default foliage appearance.
 
 
-#### Minecraft Foliage Appearance Client Biome Properties
+#### Minecraft Foliage Appearance Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -155,7 +149,7 @@ Set the identifier used for lighting in Vibrant Visuals mode. Identifiers must r
 Sets the sky color used during rendering. Biomes without this component will have default sky color behavior.
 
 
-#### Minecraft Sky Color Client Biome Properties
+#### Minecraft Sky Color Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

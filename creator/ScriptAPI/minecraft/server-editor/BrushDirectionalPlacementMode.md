@@ -10,7 +10,33 @@ description: Contents of the @minecraft/server-editor.BrushDirectionalPlacementM
 # BrushDirectionalPlacementMode Enumeration
 
 ## Constants
-### **Default**
-`Default = 0`
-### **ByCamera**
-`ByCamera = 1`
+### **IgnoreCamera**
+`IgnoreCamera = 0`
+### **NormalCamera**
+`NormalCamera = 1`
+### **OppositeCamera**
+`OppositeCamera = 2`
+### **CameraLeft**
+`CameraLeft = 3`
+### **CameraRight**
+`CameraRight = 4`
+### **CameraFromAbove**
+`CameraFromAbove = 5`
+### **CameraFromBelow**
+`CameraFromBelow = 6`
+### **FrontFacePosX**
+`FrontFacePosX = 7`
+### **FrontFaceNegX**
+`FrontFaceNegX = 8`
+### **FrontFacePosZ**
+`FrontFacePosZ = 9`
+### **FrontFaceNegZ**
+`FrontFaceNegZ = 10`
+### **FrontFacePosY**
+`FrontFacePosY = 11`
+### **FrontFaceNegY**
+`FrontFaceNegY = 12`
+### **Random2Axes**
+`Random2Axes = 13`
+### **Random3Axes**
+`Random3Axes = 14`

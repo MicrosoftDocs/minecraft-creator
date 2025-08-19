@@ -1,0 +1,17 @@
+{
+  "id": "JigsawDescriptionIdentifier",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "JigsawDescriptionIdentifier",
+    "title": "JigsawDescriptionIdentifier Structure",
+    "description": "Identifier of the Jigsaw Structure.",
+    "fields": [
+      {
+        "id": "identifier",
+        "title": "Identifier",
+        "dataType": 16,
+        "isRequired": true
+      }
+    ]
+  }
+}

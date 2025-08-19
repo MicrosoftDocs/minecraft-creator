@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "cli (scratch)",
+      "cwd": "${workspaceRoot}/",
+      "args": ["world", "set", "-no-betaapis", "-o", "./debugcontent/results/worldCommand/"],
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceRoot}/src/cli/index.ts",
+      "outputCapture": "std",
+      "preLaunchTask": "gulp: jsncorebuild",
+      "sourceMaps":true,
+      "runtimeExecutable": null,
+      "localRoot": "${workspaceRoot}/src",
+      "runtimeArgs": ["--nolazy"],
+      "outFiles": ["${workspaceFolder}/toolbuild/jsn/**/*.js"]
+    }    
+  ]
+}

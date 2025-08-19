@@ -3,7 +3,7 @@
   "generated_doNotEdit": {
     "id": "minecraft:redstone_conductivity",
     "title": "Redstone Conductivity",
-    "description": "The basic redstone properties of a block; if the component is not provided the default values are used. Requires 1.21.30 format version and above.\r\nExperimental toggles required: Upcoming Creator Features (in format versions before 1.21.30)",
+    "description": "The basic redstone properties of a block; if the component is not provided the default values are used. Requires 1.21.30 format version and above.\nExperimental toggles required: Upcoming Creator Features (in format versions before 1.21.30)",
     "fields": [
       {
         "id": "allows_wire_to_step_down",

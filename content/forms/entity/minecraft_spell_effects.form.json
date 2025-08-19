@@ -112,24 +112,6 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-        {
-          "path": "/minecraft:entity/component_groups/to_villager/minecraft:spell_effects/",
-          "content": {
-            "add_effects": [
-              {
-                "effect": "strength",
-                "duration": 300
-              },
-              {
-                "effect": "heal",
-                "duration": 300
-              }
-            ],
-            "remove_effects": "weakness"
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/zombie_villager.json": [
         {
           "path": "/minecraft:entity/component_groups/to_villager/minecraft:spell_effects/",
@@ -142,6 +124,24 @@
               {
                 "effect": "heal",
                 "duration": 100
+              }
+            ],
+            "remove_effects": "weakness"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+        {
+          "path": "/minecraft:entity/component_groups/to_villager/minecraft:spell_effects/",
+          "content": {
+            "add_effects": [
+              {
+                "effect": "strength",
+                "duration": 300
+              },
+              {
+                "effect": "heal",
+                "duration": 300
               }
             ],
             "remove_effects": "weakness"

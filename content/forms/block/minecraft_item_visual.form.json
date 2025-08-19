@@ -25,7 +25,7 @@
   "generated_doNotEdit": {
     "id": "minecraft:item_visual",
     "title": "Item Visual",
-    "description": "The description identifier of the geometry and material used to render the item of this block.\r\nExperimental toggles required: Upcoming Creator Features (in format versions before 1.21.50)",
+    "description": "The description identifier of the geometry and material used to render the item of this block.\nExperimental toggles required: Upcoming Creator Features (in format versions before 1.21.50)",
     "fields": [
       {
         "id": "geometry",

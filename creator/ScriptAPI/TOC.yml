@@ -114,6 +114,8 @@
       href: minecraft/server/GameRule.md
     - name: GraphicsMode
       href: minecraft/server/GraphicsMode.md
+    - name: HeldItemOption
+      href: minecraft/server/HeldItemOption.md
     - name: HudElement
       href: minecraft/server/HudElement.md
     - name: HudVisibility
@@ -308,6 +310,8 @@
       href: minecraft/server/EffectType.md
     - name: EffectTypes
       href: minecraft/server/EffectTypes.md
+    - name: EmptyLootItem
+      href: minecraft/server/EmptyLootItem.md
     - name: EnchantmentType
       href: minecraft/server/EnchantmentType.md
     - name: EnchantmentTypes
@@ -606,8 +610,22 @@
       href: minecraft/server/LeverActionAfterEventSignal.md
     - name: ListBlockVolume
       href: minecraft/server/ListBlockVolume.md
+    - name: LootItem
+      href: minecraft/server/LootItem.md
+    - name: LootPool
+      href: minecraft/server/LootPool.md
+    - name: LootPoolEntry
+      href: minecraft/server/LootPoolEntry.md
+    - name: LootPoolTiers
+      href: minecraft/server/LootPoolTiers.md
+    - name: LootTable
+      href: minecraft/server/LootTable.md
+    - name: LootTableEntry
+      href: minecraft/server/LootTableEntry.md
     - name: LootTableManager
       href: minecraft/server/LootTableManager.md
+    - name: LootTableReference
+      href: minecraft/server/LootTableReference.md
     - name: MessageReceiveAfterEvent
       href: minecraft/server/MessageReceiveAfterEvent.md
     - name: MolangVariableMap
@@ -712,6 +730,10 @@
       href: minecraft/server/PlayerSpawnAfterEvent.md
     - name: PlayerSpawnAfterEventSignal
       href: minecraft/server/PlayerSpawnAfterEventSignal.md
+    - name: PlayerSwingStartAfterEvent
+      href: minecraft/server/PlayerSwingStartAfterEvent.md
+    - name: PlayerSwingStartAfterEventSignal
+      href: minecraft/server/PlayerSwingStartAfterEventSignal.md
     - name: PotionDeliveryType
       href: minecraft/server/PotionDeliveryType.md
     - name: PotionEffectType
@@ -920,6 +942,8 @@
       href: minecraft/server/PlayerAimAssistSettings.md
     - name: PlayerSoundOptions
       href: minecraft/server/PlayerSoundOptions.md
+    - name: PlayerSwingEventOptions
+      href: minecraft/server/PlayerSwingEventOptions.md
     - name: ProjectileShootOptions
       href: minecraft/server/ProjectileShootOptions.md
     - name: RangeComparison
@@ -956,6 +980,24 @@
       href: minecraft/server/VectorXZ.md
     - name: WorldSoundOptions
       href: minecraft/server/WorldSoundOptions.md
+    - name: BlockComponentReturnType
+      href: minecraft/server/BlockComponentReturnType.md
+    - name: BlockComponentTypeMap
+      href: minecraft/server/BlockComponentTypeMap.md
+    - name: BlockStateArg
+      href: minecraft/server/BlockStateArg.md
+    - name: EntityComponentReturnType
+      href: minecraft/server/EntityComponentReturnType.md
+    - name: EntityComponentTypeMap
+      href: minecraft/server/EntityComponentTypeMap.md
+    - name: EntityIdentifierType
+      href: minecraft/server/EntityIdentifierType.md
+    - name: ItemComponentReturnType
+      href: minecraft/server/ItemComponentReturnType.md
+    - name: ItemComponentTypeMap
+      href: minecraft/server/ItemComponentTypeMap.md
+    - name: VanillaEntityIdentifier
+      href: minecraft/server/VanillaEntityIdentifier.md
   - name: minecraft/server-admin
     items:
     - name: minecraft/server-admin
@@ -1030,6 +1072,8 @@
       href: minecraft/server-editor/EntityOperationType.md
     - name: ExportResult
       href: minecraft/server-editor/ExportResult.md
+    - name: FlattenMode
+      href: minecraft/server-editor/FlattenMode.md
     - name: GamePublishSetting
       href: minecraft/server-editor/GamePublishSetting.md
     - name: GraphicsSettingsProperty
@@ -1182,6 +1226,8 @@
       href: minecraft/server-editor/PlaytestManager.md
     - name: ProbabilityBlockPaletteItem
       href: minecraft/server-editor/ProbabilityBlockPaletteItem.md
+    - name: ProjectAfterEvents
+      href: minecraft/server-editor/ProjectAfterEvents.md
     - name: PyramidBrushShape
       href: minecraft/server-editor/PyramidBrushShape.md
     - name: RelativeVolumeListBlockVolume
@@ -1206,6 +1252,10 @@
       href: minecraft/server-editor/SimpleBlockPaletteItem.md
     - name: SimulationState
       href: minecraft/server-editor/SimulationState.md
+    - name: SimulationStateAfterEvent
+      href: minecraft/server-editor/SimulationStateAfterEvent.md
+    - name: SimulationStateChangeAfterEventSignal
+      href: minecraft/server-editor/SimulationStateChangeAfterEventSignal.md
     - name: SingleBlockBrushShape
       href: minecraft/server-editor/SingleBlockBrushShape.md
     - name: SpeedSettings
@@ -1476,6 +1526,76 @@
       href: minecraft/server-editor/WidgetCreateOptions.md
     - name: WidgetGroupCreateOptions
       href: minecraft/server-editor/WidgetGroupCreateOptions.md
+    - name: Action
+      href: minecraft/server-editor/Action.md
+    - name: ActionID
+      href: minecraft/server-editor/ActionID.md
+    - name: ActivationFunctionType
+      href: minecraft/server-editor/ActivationFunctionType.md
+    - name: AudioSettingsPropertyTypeMap
+      href: minecraft/server-editor/AudioSettingsPropertyTypeMap.md
+    - name: BasicTooltipContent
+      href: minecraft/server-editor/BasicTooltipContent.md
+    - name: ButtonPropertyItemSupportedActionTypes
+      href: minecraft/server-editor/ButtonPropertyItemSupportedActionTypes.md
+    - name: ContinuousAction
+      href: minecraft/server-editor/ContinuousAction.md
+    - name: EventHandler
+      href: minecraft/server-editor/EventHandler.md
+    - name: GraphicsSettingsPropertyTypeMap
+      href: minecraft/server-editor/GraphicsSettingsPropertyTypeMap.md
+    - name: ImageAnimationData
+      href: minecraft/server-editor/ImageAnimationData.md
+    - name: ImageResourceData
+      href: minecraft/server-editor/ImageResourceData.md
+    - name: IObservableProp
+      href: minecraft/server-editor/IObservableProp.md
+    - name: IPlayerUISession
+      href: minecraft/server-editor/IPlayerUISession.md
+    - name: KeyBinding
+      href: minecraft/server-editor/KeyBinding.md
+    - name: KeyBindingInfo
+      href: minecraft/server-editor/KeyBindingInfo.md
+    - name: LocalizedString
+      href: minecraft/server-editor/LocalizedString.md
+    - name: ModalToolLifecycleEventPayload
+      href: minecraft/server-editor/ModalToolLifecycleEventPayload.md
+    - name: MouseModifiers
+      href: minecraft/server-editor/MouseModifiers.md
+    - name: MouseProps
+      href: minecraft/server-editor/MouseProps.md
+    - name: MouseRayCastAction
+      href: minecraft/server-editor/MouseRayCastAction.md
+    - name: NoArgsAction
+      href: minecraft/server-editor/NoArgsAction.md
+    - name: PropertyBag
+      href: minecraft/server-editor/PropertyBag.md
+    - name: PropertyPaneVisibilityUpdate
+      href: minecraft/server-editor/PropertyPaneVisibilityUpdate.md
+    - name: Ray
+      href: minecraft/server-editor/Ray.md
+    - name: RegisteredAction
+      href: minecraft/server-editor/RegisteredAction.md
+    - name: ShutdownFunctionType
+      href: minecraft/server-editor/ShutdownFunctionType.md
+    - name: SpeedSettingsPropertyTypeMap
+      href: minecraft/server-editor/SpeedSettingsPropertyTypeMap.md
+    - name: StatefulAction
+      href: minecraft/server-editor/StatefulAction.md
+    - name: SupportedKeyboardActionTypes
+      href: minecraft/server-editor/SupportedKeyboardActionTypes.md
+    - name: SupportedMouseActionTypes
+      href: minecraft/server-editor/SupportedMouseActionTypes.md
+    - name: TooltipContent
+      href: minecraft/server-editor/TooltipContent.md
+    - name: TooltipInteractiveContent
+      href: minecraft/server-editor/TooltipInteractiveContent.md
+    - name: TooltipInteractiveContentDescription
+      href: minecraft/server-editor/TooltipInteractiveContentDescription.md
+    - name: TooltipLink
+      href: minecraft/server-editor/TooltipLink.md
+    - name: UnregisterInputBindingCallback
+      href: minecraft/server-editor/UnregisterInputBindingCallback.md
   - name: minecraft/server-gametest
     items:
     - name: minecraft/server-gametest

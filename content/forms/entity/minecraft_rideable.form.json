@@ -33,12 +33,12 @@
     {
       "id": "on_rider_enter_event",
       "dataType": 39,
-      "versionIntrouduced": "1.21.80"
+      "versionIntroduced": "1.21.80"
     },
     {
       "id": "on_rider_exit_event",
       "dataType": 39,
-      "versionIntrouduced": "1.21.80"
+      "versionIntroduced": "1.21.80"
     },
     {
       "id": "dismount_mode",
@@ -106,7 +106,7 @@
       {
         "id": "dismount_mode",
         "title": "Dismount Mode",
-        "description": "Defines where riders are placed when dismounting this entity:\r\n- \"default\", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found.\r\n- \"on_top_center\", riders are placed at the center of the top of the entity's collision box.",
+        "description": "Defines where riders are placed when dismounting this entity:\n- \"default\", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found.\n- \"on_top_center\", riders are placed at the center of the top of the entity's collision box.",
         "defaultValue": "default",
         "dataType": 2,
         "samples": {
@@ -1291,6 +1291,25 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_adult/minecraft:rideable/",
+          "content": {
+            "seat_count": 1,
+            "family_types": [
+              "zombie"
+            ],
+            "seats": {
+              "position": [
+                0,
+                1.175,
+                -0.35
+              ],
+              "lock_rider_rotation": 0
+            }
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/zombie_horse.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:horse_adult/minecraft:rideable/",
@@ -1329,24 +1348,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-        {
-          "path": "/minecraft:entity/component_groups/adult/minecraft:rideable/",
-          "content": {
-            "seat_count": 1,
-            "family_types": [
-              "zombie"
-            ],
-            "seats": {
-              "position": [
-                0,
-                1.175,
-                -0.35
-              ]
-            }
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/zombie_villager.json": [
         {
           "path": "/minecraft:entity/component_groups/adult/minecraft:rideable/",
@@ -1365,9 +1366,9 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:zombie_adult/minecraft:rideable/",
+          "path": "/minecraft:entity/component_groups/adult/minecraft:rideable/",
           "content": {
             "seat_count": 1,
             "family_types": [
@@ -1378,8 +1379,7 @@
                 0,
                 1.175,
                 -0.35
-              ],
-              "lock_rider_rotation": 0
+              ]
             }
           }
         }

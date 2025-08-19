@@ -56,7 +56,7 @@
       {
         "id": "downfall",
         "title": "Downfall",
-        "description": "Amount that precipitation affects colors and block changes",
+        "description": "Amount that precipitation affects colors and block changes. Setting to 0 will stop rain from falling in the biome.",
         "dataType": 3
       },
       {

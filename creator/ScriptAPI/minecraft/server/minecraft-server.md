@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.1.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.21.110-beta.24 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.21.110-beta.25 of Minecraft.
 
 ## Available Versions
 - `2.3.0-beta`
@@ -82,6 +82,7 @@ The following API versions are from a major version that is documented here: [*@
 - [GameMode](GameMode.md)
 - [GameRule](GameRule.md)
 - [GraphicsMode](GraphicsMode.md)
+- [HeldItemOption](HeldItemOption.md)
 - [HudElement](HudElement.md)
 - [HudVisibility](HudVisibility.md)
 - [InputButton](InputButton.md)
@@ -192,6 +193,7 @@ The following API versions are from a major version that is documented here: [*@
 - [EffectAddBeforeEventSignal](EffectAddBeforeEventSignal.md)
 - [EffectType](EffectType.md)
 - [EffectTypes](EffectTypes.md)
+- [EmptyLootItem](EmptyLootItem.md)
 - [EnchantmentType](EnchantmentType.md)
 - [EnchantmentTypes](EnchantmentTypes.md)
 - [Entity](Entity.md)
@@ -341,7 +343,14 @@ The following API versions are from a major version that is documented here: [*@
 - [LeverActionAfterEvent](LeverActionAfterEvent.md)
 - [LeverActionAfterEventSignal](LeverActionAfterEventSignal.md)
 - [ListBlockVolume](ListBlockVolume.md)
+- [LootItem](LootItem.md)
+- [LootPool](LootPool.md)
+- [LootPoolEntry](LootPoolEntry.md)
+- [LootPoolTiers](LootPoolTiers.md)
+- [LootTable](LootTable.md)
+- [LootTableEntry](LootTableEntry.md)
 - [LootTableManager](LootTableManager.md)
+- [LootTableReference](LootTableReference.md)
 - [MessageReceiveAfterEvent](MessageReceiveAfterEvent.md)
 - [MolangVariableMap](MolangVariableMap.md)
 - [PackSettingChangeAfterEvent](PackSettingChangeAfterEvent.md)
@@ -394,6 +403,8 @@ The following API versions are from a major version that is documented here: [*@
 - [PlayerPlaceBlockBeforeEventSignal](PlayerPlaceBlockBeforeEventSignal.md)
 - [PlayerSpawnAfterEvent](PlayerSpawnAfterEvent.md)
 - [PlayerSpawnAfterEventSignal](PlayerSpawnAfterEventSignal.md)
+- [PlayerSwingStartAfterEvent](PlayerSwingStartAfterEvent.md)
+- [PlayerSwingStartAfterEventSignal](PlayerSwingStartAfterEventSignal.md)
 - [PotionDeliveryType](PotionDeliveryType.md)
 - [PotionEffectType](PotionEffectType.md)
 - [Potions](Potions.md)
@@ -500,6 +511,7 @@ The following API versions are from a major version that is documented here: [*@
 - [PlayAnimationOptions](PlayAnimationOptions.md)
 - [PlayerAimAssistSettings](PlayerAimAssistSettings.md)
 - [PlayerSoundOptions](PlayerSoundOptions.md)
+- [PlayerSwingEventOptions](PlayerSwingEventOptions.md)
 - [ProjectileShootOptions](ProjectileShootOptions.md)
 - [RangeComparison](RangeComparison.md)
 - [RawMessage](RawMessage.md)

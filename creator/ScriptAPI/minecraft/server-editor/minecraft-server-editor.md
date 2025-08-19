@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.21.110-beta.24 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.21.110-beta.25 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -51,6 +51,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.110
 - [EditorMode](EditorMode.md)
 - [EntityOperationType](EntityOperationType.md)
 - [ExportResult](ExportResult.md)
+- [FlattenMode](FlattenMode.md)
 - [GamePublishSetting](GamePublishSetting.md)
 - [GraphicsSettingsProperty](GraphicsSettingsProperty.md)
 - [ImageResourceType](ImageResourceType.md)
@@ -166,6 +167,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.110
 - [ObservableValidator](ObservableValidator.md)
 - [PlaytestManager](PlaytestManager.md)
 - [ProbabilityBlockPaletteItem](ProbabilityBlockPaletteItem.md)
+- [ProjectAfterEvents](ProjectAfterEvents.md)
 - [PyramidBrushShape](PyramidBrushShape.md)
 - [RelativeVolumeListBlockVolume](RelativeVolumeListBlockVolume.md)
 - [SelectionChangeAfterEventSignal](SelectionChangeAfterEventSignal.md)
@@ -178,6 +180,8 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.110
 - [SettingsManager](SettingsManager.md)
 - [SimpleBlockPaletteItem](SimpleBlockPaletteItem.md)
 - [SimulationState](SimulationState.md)
+- [SimulationStateAfterEvent](SimulationStateAfterEvent.md)
+- [SimulationStateChangeAfterEventSignal](SimulationStateChangeAfterEventSignal.md)
 - [SingleBlockBrushShape](SingleBlockBrushShape.md)
 - [SpeedSettings](SpeedSettings.md)
 - [ThemeSettings](ThemeSettings.md)
@@ -491,3 +495,4 @@ Type: [*MinecraftEditor*](MinecraftEditor.md)
 ## Peer Dependencies
 - [`@minecraft/common`](../../../scriptapi/minecraft/common/minecraft-common.md)
 - [`@minecraft/server`](../../../scriptapi/minecraft/server/minecraft-server.md)
+- `@minecraft/vanilla-data`

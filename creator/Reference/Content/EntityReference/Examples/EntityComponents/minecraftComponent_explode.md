@@ -171,6 +171,20 @@ At /minecraft:entity/component_groups/minecraft:instant_explode_tnt/minecraft:ex
 }
 ```
 
+#### [Wither Skull](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wither_skull.json)
+
+At /minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/: 
+
+```json
+"minecraft:explode": {
+  "fuse_length": 0,
+  "fuse_lit": true,
+  "power": 1,
+  "causes_fire": false,
+  "destroy_affected_by_griefing": true
+}
+```
+
 #### [Wither Skull Dangerous](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wither_skull_dangerous.json)
 
 At /minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/: 
@@ -182,20 +196,6 @@ At /minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/:
   "power": 1,
   "causes_fire": false,
   "max_resistance": 4,
-  "destroy_affected_by_griefing": true
-}
-```
-
-#### [Wither Skull](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wither_skull.json)
-
-At /minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/: 
-
-```json
-"minecraft:explode": {
-  "fuse_length": 0,
-  "fuse_lit": true,
-  "power": 1,
-  "causes_fire": false,
   "destroy_affected_by_griefing": true
 }
 ```

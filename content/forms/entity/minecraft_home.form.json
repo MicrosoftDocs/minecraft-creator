@@ -13,7 +13,7 @@
       {
         "id": "home_block_list",
         "title": "Home Block List",
-        "description": "Optional list of blocks that can be considered a valid home. If no such block longer exists at that position,\r\n\t\t\t\t\t\t\t\t\t\t\tthe home restriction is removed. Example syntax: minecraft:sand. Not supported: minecraft:sand:1.",
+        "description": "Optional list of blocks that can be considered a valid home. If no such block longer exists at that position,\n\t\t\t\t\t\t\t\t\t\t\tthe home restriction is removed. Example syntax: minecraft:sand. Not supported: minecraft:sand:1.",
         "dataType": 17,
         "samples": {
           "/vanilla/behavior_pack/entities/bee.json": [
@@ -73,7 +73,7 @@
       {
         "id": "restriction_type",
         "title": "Restriction Type",
-        "description": "Defines how the the entity will be restricted to its home position. The possible values are:\r\n\t\t\t\t\t\t\t\t\t\t\t\t\\n- \"none\", which poses no restriction.\r\n\t\t\t\t\t\t\t\t\t\t\t\t\\n- \"random_movement\", which restricts randomized movement to be around the home position.\r\n\t\t\t\t\t\t\t\t\t\t\t\t\\n- \"all_movement\", which restricts any kind of movement to be around the home position.\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tHowever, entities that somehow got too far away from their home will always be able to move closer to it, if prompted to do so.",
+        "description": "Defines how the the entity will be restricted to its home position. The possible values are:\n\t\t\t\t\t\t\t\t\t\t\t\t\\n- \"none\", which poses no restriction.\n\t\t\t\t\t\t\t\t\t\t\t\t\\n- \"random_movement\", which restricts randomized movement to be around the home position.\n\t\t\t\t\t\t\t\t\t\t\t\t\\n- \"all_movement\", which restricts any kind of movement to be around the home position.\n\t\t\t\t\t\t\t\t\t\t\t\t\tHowever, entities that somehow got too far away from their home will always be able to move closer to it, if prompted to do so.",
         "defaultValue": "none",
         "dataType": 2,
         "samples": {

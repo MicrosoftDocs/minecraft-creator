@@ -2342,6 +2342,91 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/villager.json": [
+        {
+          "path": "/minecraft:entity/component_groups/behavior_peasant/minecraft:shareables/",
+          "content": {
+            "items": [
+              {
+                "item": "minecraft:bread",
+                "want_amount": 3,
+                "surplus_amount": 6,
+                "stored_in_inventory": true
+              },
+              {
+                "item": "minecraft:carrot",
+                "want_amount": 60,
+                "surplus_amount": 4,
+                "stored_in_inventory": true
+              },
+              {
+                "item": "minecraft:potato",
+                "want_amount": 60,
+                "surplus_amount": 24,
+                "stored_in_inventory": true
+              },
+              {
+                "item": "minecraft:beetroot",
+                "want_amount": 60,
+                "surplus_amount": 24,
+                "stored_in_inventory": true
+              },
+              {
+                "item": "minecraft:wheat_seeds",
+                "want_amount": 64,
+                "surplus_amount": 64,
+                "stored_in_inventory": true,
+                "pickup_only": true
+              },
+              {
+                "item": "minecraft:beetroot_seeds",
+                "want_amount": 64,
+                "surplus_amount": 64,
+                "stored_in_inventory": true,
+                "pickup_only": true
+              },
+              {
+                "item": "minecraft:wheat",
+                "want_amount": 45,
+                "surplus_amount": 18,
+                "craft_into": "minecraft:bread",
+                "stored_in_inventory": true
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/behavior_non_peasant/minecraft:shareables/",
+          "content": {
+            "items": [
+              {
+                "item": "minecraft:bread",
+                "want_amount": 3,
+                "surplus_amount": 6,
+                "stored_in_inventory": true
+              },
+              {
+                "item": "minecraft:carrot",
+                "want_amount": 12,
+                "surplus_amount": 24,
+                "stored_in_inventory": true
+              },
+              {
+                "item": "minecraft:potato",
+                "want_amount": 12,
+                "surplus_amount": 24,
+                "stored_in_inventory": true
+              },
+              {
+                "item": "minecraft:beetroot",
+                "want_amount": 12,
+                "surplus_amount": 24,
+                "stored_in_inventory": true
+              }
+            ]
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/villager_v2.json": [
         {
           "path": "/minecraft:entity/component_groups/work_schedule_farmer/minecraft:shareables/",
@@ -2429,91 +2514,6 @@
                 "item": "minecraft:carrot",
                 "want_amount": 60,
                 "surplus_amount": 24,
-                "stored_in_inventory": true
-              },
-              {
-                "item": "minecraft:potato",
-                "want_amount": 60,
-                "surplus_amount": 24,
-                "stored_in_inventory": true
-              },
-              {
-                "item": "minecraft:beetroot",
-                "want_amount": 60,
-                "surplus_amount": 24,
-                "stored_in_inventory": true
-              },
-              {
-                "item": "minecraft:wheat_seeds",
-                "want_amount": 64,
-                "surplus_amount": 64,
-                "stored_in_inventory": true,
-                "pickup_only": true
-              },
-              {
-                "item": "minecraft:beetroot_seeds",
-                "want_amount": 64,
-                "surplus_amount": 64,
-                "stored_in_inventory": true,
-                "pickup_only": true
-              },
-              {
-                "item": "minecraft:wheat",
-                "want_amount": 45,
-                "surplus_amount": 18,
-                "craft_into": "minecraft:bread",
-                "stored_in_inventory": true
-              }
-            ]
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/behavior_non_peasant/minecraft:shareables/",
-          "content": {
-            "items": [
-              {
-                "item": "minecraft:bread",
-                "want_amount": 3,
-                "surplus_amount": 6,
-                "stored_in_inventory": true
-              },
-              {
-                "item": "minecraft:carrot",
-                "want_amount": 12,
-                "surplus_amount": 24,
-                "stored_in_inventory": true
-              },
-              {
-                "item": "minecraft:potato",
-                "want_amount": 12,
-                "surplus_amount": 24,
-                "stored_in_inventory": true
-              },
-              {
-                "item": "minecraft:beetroot",
-                "want_amount": 12,
-                "surplus_amount": 24,
-                "stored_in_inventory": true
-              }
-            ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/villager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/behavior_peasant/minecraft:shareables/",
-          "content": {
-            "items": [
-              {
-                "item": "minecraft:bread",
-                "want_amount": 3,
-                "surplus_amount": 6,
-                "stored_in_inventory": true
-              },
-              {
-                "item": "minecraft:carrot",
-                "want_amount": 60,
-                "surplus_amount": 4,
                 "stored_in_inventory": true
               },
               {
@@ -3011,10 +3011,11 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie_pigman.json": [
+      "/vanilla/behavior_pack/entities/zombie.json": [
         {
           "path": "/minecraft:entity/components/minecraft:shareables/",
           "content": {
+            "singular_pickup": true,
             "items": [
               {
                 "item": "minecraft:netherite_sword",
@@ -3254,11 +3255,10 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+      "/vanilla/behavior_pack/entities/zombie_pigman.json": [
         {
           "path": "/minecraft:entity/components/minecraft:shareables/",
           "content": {
-            "singular_pickup": true,
             "items": [
               {
                 "item": "minecraft:netherite_sword",
@@ -3712,7 +3712,7 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
         {
           "path": "/minecraft:entity/components/minecraft:shareables/",
           "content": {

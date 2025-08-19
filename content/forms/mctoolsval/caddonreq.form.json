@@ -6,13 +6,13 @@
     {
       "id": "101",
       "title": "No loose file in type folder",
-      "desciption": "In a cooperative Add-On, there should not be any 'loose files' - e.g., <pack>/entities/this_is_a_loose_file.json - inside of a folder.",
+      "description": "In a cooperative Add-On, there should not be any 'loose files' - e.g., <pack>/entities/this_is_a_loose_file.json - inside of a folder.",
       "dataType": 0
     },
     {
       "id": "102",
       "title": "No common names in creator folder name",
-      "desciption": "Creator folders - e.g., <pack>/entities/<custom folder name> - should not be a 'common' name. It should probably be in the form <creator_short_name>_<game_shortName>. See attached list of creator names.",
+      "description": "Creator folders - e.g., <pack>/entities/<custom folder name> - should not be a 'common' name. It should probably be in the form <creator_short_name>_<game_shortName>. See attached list of creator names.",
       "dataType": 0,
       "choices": [
         { "id": "abilities" },

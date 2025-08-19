@@ -158,7 +158,7 @@
               "content": 30
             }
           ],
-          "/vanilla/behavior_pack/entities/piglin_brute.json": [
+          "/vanilla/behavior_pack/entities/piglin.json": [
             {
               "path": "/minecraft:entity/component_groups/start_zombification/minecraft:timer/",
               "content": 15
@@ -326,7 +326,7 @@
               }
             }
           ],
-          "/vanilla/behavior_pack/entities/piglin_brute.json": [
+          "/vanilla/behavior_pack/entities/piglin.json": [
             {
               "path": "/minecraft:entity/component_groups/start_zombification/minecraft:timer/",
               "content": {
@@ -607,7 +607,7 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/piglin_brute.json": [
+      "/vanilla/behavior_pack/entities/piglin.json": [
         {
           "path": "/minecraft:entity/component_groups/start_zombification/minecraft:timer/",
           "content": {
@@ -619,7 +619,7 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/piglin.json": [
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
         {
           "path": "/minecraft:entity/component_groups/start_zombification/minecraft:timer/",
           "content": {

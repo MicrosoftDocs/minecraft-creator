@@ -19,6 +19,7 @@ Type: [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
 ## Methods
 - [activateBrushTool](#activatebrushtool)
 - [beginPainting](#beginpainting)
+- [clearBlockStateOverrides](#clearblockstateoverrides)
 - [deactivateBrushTool](#deactivatebrushtool)
 - [disableItemPlacement](#disableitemplacement)
 - [enableItemPlacement](#enableitemplacement)
@@ -27,13 +28,16 @@ Type: [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
 - [getDirectionalPlacementMode](#getdirectionalplacementmode)
 - [getInverseEraseMode](#getinverseerasemode)
 - [isBrushPaintBusy](#isbrushpaintbusy)
+- [pushBlockStateOverride](#pushblockstateoverride)
+- [setBlockFacePlacementBasedOnCamera](#setblockfaceplacementbasedoncamera)
 - [setBrushMask](#setbrushmask)
 - [setBrushShape](#setbrushshape)
 - [setBrushShapeOffset](#setbrushshapeoffset)
 - [setBrushShapeVisible](#setbrushshapevisible)
 - [setDirectionalPlacementMode](#setdirectionalplacementmode)
-- [setFlattenHeight](#setflattenheight)
-- [setFlattenRadius](#setflattenradius)
+- [setFlattenMode](#setflattenmode)
+- [setFlattenSmoothing](#setflattensmoothing)
+- [setFloorBlockOverride](#setfloorblockoverride)
 - [setInverseEraseMode](#setinverseerasemode)
 - [setTerrainStrength](#setterrainstrength)
 - [singlePaint](#singlepaint)
@@ -58,6 +62,14 @@ beginPainting(onComplete: (arg0: PaintCompletionState) => void): void
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+
+### **clearBlockStateOverrides**
+`
+clearBlockStateOverrides(): void
+`
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **deactivateBrushTool**
 `
@@ -139,6 +151,31 @@ isBrushPaintBusy(): boolean
 Notes:
 - This function can't be called in read-only mode.
 
+### **pushBlockStateOverride**
+`
+pushBlockStateOverride(blockStateName: T, blockStateValue: minecraftvanilladata.BlockStateSuperset[T]): void
+`
+
+#### **Parameters**
+- **blockStateName**: *T*
+- **blockStateValue**: *minecraftvanilladata.BlockStateSuperset[T]*
+
+**Returns** *void*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **setBlockFacePlacementBasedOnCamera**
+`
+setBlockFacePlacementBasedOnCamera(enabled: boolean): void
+`
+
+#### **Parameters**
+- **enabled**: *boolean*
+  
+Notes:
+- This function can't be called in read-only mode.
+
 ### **setBrushMask**
 `
 setBrushMask(mask: BlockMaskList): void
@@ -195,24 +232,35 @@ setDirectionalPlacementMode(directionalPlacementMode: BrushDirectionalPlacementM
 Notes:
 - This function can't be called in read-only mode.
 
-### **setFlattenHeight**
+### **setFlattenMode**
 `
-setFlattenHeight(flattenHeight: number): void
+setFlattenMode(flattenMode: FlattenMode): void
 `
 
 #### **Parameters**
-- **flattenHeight**: *number*
+- **flattenMode**: [*FlattenMode*](FlattenMode.md)
   
 Notes:
 - This function can't be called in read-only mode.
 
-### **setFlattenRadius**
+### **setFlattenSmoothing**
 `
-setFlattenRadius(flattenRadius: number): void
+setFlattenSmoothing(flattenSmoothing: number): void
 `
 
 #### **Parameters**
-- **flattenRadius**: *number*
+- **flattenSmoothing**: *number*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **setFloorBlockOverride**
+`
+setFloorBlockOverride(floorBlockOverride: boolean): void
+`
+
+#### **Parameters**
+- **floorBlockOverride**: *boolean*
   
 Notes:
 - This function can't be called in read-only mode.

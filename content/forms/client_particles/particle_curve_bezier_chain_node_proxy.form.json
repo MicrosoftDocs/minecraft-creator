@@ -1,0 +1,39 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "particle_curve_bezier_chain node_proxy",
+    "title": "Particle Curve Bezier Chain Node Proxy Client Particles",
+    "fields": [
+      {
+        "id": "left_slope",
+        "title": "Left Slope",
+        "dataType": 3
+      },
+      {
+        "id": "left_value",
+        "title": "Left Value",
+        "dataType": 3
+      },
+      {
+        "id": "right_slope",
+        "title": "Right Slope",
+        "dataType": 3
+      },
+      {
+        "id": "right_value",
+        "title": "Right Value",
+        "dataType": 3
+      },
+      {
+        "id": "slope",
+        "title": "Slope",
+        "dataType": 3
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "dataType": 3
+      }
+    ]
+  }
+}

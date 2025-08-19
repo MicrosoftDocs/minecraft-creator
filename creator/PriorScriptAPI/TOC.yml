@@ -770,6 +770,20 @@
       href: minecraft/server-1xx/VectorXZ.md
     - name: WorldSoundOptions
       href: minecraft/server-1xx/WorldSoundOptions.md
+    - name: BlockComponentReturnType
+      href: minecraft/server-1xx/BlockComponentReturnType.md
+    - name: BlockComponentTypeMap
+      href: minecraft/server-1xx/BlockComponentTypeMap.md
+    - name: BlockStateArg
+      href: minecraft/server-1xx/BlockStateArg.md
+    - name: EntityComponentReturnType
+      href: minecraft/server-1xx/EntityComponentReturnType.md
+    - name: EntityComponentTypeMap
+      href: minecraft/server-1xx/EntityComponentTypeMap.md
+    - name: ItemComponentReturnType
+      href: minecraft/server-1xx/ItemComponentReturnType.md
+    - name: ItemComponentTypeMap
+      href: minecraft/server-1xx/ItemComponentTypeMap.md
   - name: minecraft/server-ui 1.x.x
     items:
     - name: minecraft/server-ui 1.x.x

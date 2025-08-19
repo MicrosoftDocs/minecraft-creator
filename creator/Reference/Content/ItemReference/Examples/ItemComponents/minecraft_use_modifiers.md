@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Determines how long an item takes to use in combination with components such as Shooter, Throwable, or Food.
 
 
-## Minecraft Use Modifiers Item Properties
+## Minecraft Use Modifiers Item Components Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -28,24 +28,5 @@ Determines how long an item takes to use in combination with components such as 
 "minecraft:use_modifiers": {
   "use_duration": 1.6,
   "movement_modifier": 0.35
-}
-```
-
-#### [Cooked Dream Turkey](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/items/cooked_dream_turkey.json)
-
-
-```json
-"minecraft:use_modifiers": {
-  "use_duration": 4,
-  "movement_modifier": 0.35
-}
-```
-
-#### [My Sword Shoot](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json)
-
-
-```json
-"minecraft:use_modifiers": {
-  "use_duration": 3
 }
 ```

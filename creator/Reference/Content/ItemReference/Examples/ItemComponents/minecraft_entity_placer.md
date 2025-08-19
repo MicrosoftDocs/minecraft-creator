@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Allows an item to place entities into the world. Additionally, in version 1.19.80 and above, the component allows the item to set the spawn type of a monster spawner.
 
 
-## Minecraft Entity Placer Item Properties
+## Minecraft Entity Placer Item Components Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -60,60 +60,6 @@ Allows an item to place entities into the world. Additionally, in version 1.19.8
   "use_on": [
     "minecraft:web"
   ]
-}
-```
-
-#### [Item Axe Turret Kit](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/axe_turret_kit.item.json)
-
-
-```json
-"minecraft:entity_placer": {
-  "entity": "mikeamm_gwve:axe_turret"
-}
-```
-
-#### [Item Bow Turret Kit](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/bow_turret_kit.item.json)
-
-
-```json
-"minecraft:entity_placer": {
-  "entity": "mikeamm_gwve:bow_turret"
-}
-```
-
-#### [Item Crossbow Turret Kit](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/crossbow_turret_kit.item.json)
-
-
-```json
-"minecraft:entity_placer": {
-  "entity": "mikeamm_gwve:crossbow_turret"
-}
-```
-
-#### [Item Gray Wave Generator Kit](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/gray_wave_generator_kit.item.json)
-
-
-```json
-"minecraft:entity_placer": {
-  "entity": "mikeamm_gwve:gray_wave_generator"
-}
-```
-
-#### [Item Shbullet Turret Kit](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/shbullet_turret_kit.item.json)
-
-
-```json
-"minecraft:entity_placer": {
-  "entity": "mikeamm_gwve:shbullet_turret"
-}
-```
-
-#### [Item Smfireball Turret Kit](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/smfireball_turret_kit.item.json)
-
-
-```json
-"minecraft:entity_placer": {
-  "entity": "mikeamm_gwve:smfireball_turret"
 }
 ```
 

@@ -657,7 +657,7 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/piglin_brute.json": [
+      "/vanilla/behavior_pack/entities/piglin.json": [
         {
           "path": "/minecraft:entity/components/minecraft:breathable/",
           "content": {
@@ -666,7 +666,7 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/piglin.json": [
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
         {
           "path": "/minecraft:entity/components/minecraft:breathable/",
           "content": {
@@ -773,7 +773,7 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+      "/vanilla/behavior_pack/entities/skeleton.json": [
         {
           "path": "/minecraft:entity/components/minecraft:breathable/",
           "content": {
@@ -783,7 +783,7 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/skeleton.json": [
+      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
         {
           "path": "/minecraft:entity/components/minecraft:breathable/",
           "content": {
@@ -894,7 +894,7 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/villager_v2.json": [
+      "/vanilla/behavior_pack/entities/villager.json": [
         {
           "path": "/minecraft:entity/components/minecraft:breathable/",
           "content": {
@@ -903,7 +903,7 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/villager.json": [
+      "/vanilla/behavior_pack/entities/villager_v2.json": [
         {
           "path": "/minecraft:entity/components/minecraft:breathable/",
           "content": {
@@ -948,6 +948,15 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/wither.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/wither_skeleton.json": [
         {
           "path": "/minecraft:entity/components/minecraft:breathable/",
@@ -955,15 +964,6 @@
             "total_supply": 15,
             "suffocate_time": 0,
             "breathes_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wither.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:breathable/",
-          "content": {
-            "total_supply": 15,
-            "suffocate_time": 0
           }
         }
       ],
@@ -982,6 +982,17 @@
           "content": {
             "total_supply": 15,
             "suffocate_time": 0,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_air": true,
             "breathes_water": true
           }
         }
@@ -1006,16 +1017,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:breathable/",
-          "content": {
-            "total_supply": 15,
-            "suffocate_time": 0,
-            "breathes_water": true
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/zombie_villager.json": [
         {
           "path": "/minecraft:entity/components/minecraft:breathable/",
@@ -1026,13 +1027,12 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
         {
           "path": "/minecraft:entity/components/minecraft:breathable/",
           "content": {
             "total_supply": 15,
             "suffocate_time": 0,
-            "breathes_air": true,
             "breathes_water": true
           }
         }
@@ -1196,7 +1196,7 @@
           }
         }
       ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave_generator.json": [
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave.json": [
         {
           "path": "/minecraft:entity/components/minecraft:breathable/",
           "content": {
@@ -1205,7 +1205,7 @@
           }
         }
       ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave.json": [
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave_generator.json": [
         {
           "path": "/minecraft:entity/components/minecraft:breathable/",
           "content": {

@@ -18,11 +18,7 @@ In this tutorial you will learn the following:
 > - How to create a model for an entity using [Blockbench](https://blockbench.net/).
 > - How to apply textures and animations to a model.
 
-### Requirements
-
-It's recommended that the following be completed before beginning this tutorial.
-
-- [Creating New Entity Types](IntroductionToAddEntity.md)
+Before beginning this tutorial, you should be familiar with [Creating New Entity Types](IntroductionToAddEntity.md).
 
 ## Model
 
@@ -33,7 +29,7 @@ To create the model and texture, we're going to use [Blockbench](https://blockbe
 >[!IMPORTANT]
 >Blockbench is provided by external, third-party contributors and is not a Mojang/Microsoft offering. Users should use at their own discretion.
 
-### Setting Up the Model
+### Setting up the model
 
 When you first open Blockbench, you'll see a list of available model formats. Select **Bedrock Model**. You'll see a dialog about the basic settings for the project.
 
@@ -43,7 +39,7 @@ The important part is **Mob Geometry Name**. Here, we'll enter a unique name for
 
 We can leave the field for the file name empty for now as we'll later define it when we export the model. The Box UV setting and the texture size can also be left at default because we'll change them later. The confirm button will save these settings.
 
-### Bone Structure
+### Bone structure
 
 The first thing to consider when making a model is the bone structure. Bones are the part of the model that can be animated, and they can be arranged in an arbitrarily deep hierarchy. Each bone itself is invisible but can contain cubes that will shape the model.
 
@@ -77,7 +73,7 @@ Once the shape of the model is done, you can create a texture template. The temp
 
 When creating a texture, enter `robot` as the texture name and check the Template option. In the template dialog, select your resolution. 16x is the default resolution of Minecraft, but you can go higher if you want.
 
-### Base Color
+### Base color
 
 Once the template is created, you can move to the Paint tab in Blockbench. This will reveal all the tools you have to modify the texture. Select the Paint Bucket tool and set the fill mode next to the tool to Cube. Select a color in the color panel on the right side. Now you can go over your cubes and color them in individual base colors.
 
@@ -96,9 +92,9 @@ There are a few tricks to use the paintbrush in Blockbench more efficiently:
 
 Animations can animate the shape of your model, but they can also play sounds and particle effects. In the following section, we'll take a look at how to add an animation to your entity, how to create your own animation in Blockbench, and finally, how to use animation controllers.
 
-### Using Default Animations
+### Using default animations
 
-The vanilla resource pack contains generic animations that you can reference in your own pack without actually copying the files. These animations can be a good starting point for vanilla-like entities, but of course, custom animations are a lot more powerful. You can find all vanilla animations in the vanilla resource pack [here](https://aka.ms/resourcepacktemplate).
+The vanilla resource pack contains generic animations that you can reference in your own pack without actually copying the files. These animations can be a good starting point for vanilla-like entities, but of course, custom animations are a lot more powerful. You can find all vanilla animations in the [Vanilla Resource Pack](https://aka.ms/resourcepacktemplate).
 
 In this example, we'll be using the *look at* animation. This animation will rotate the "head" bone. That's why it's important that the head of the model uses the exact same name.
 
@@ -135,7 +131,7 @@ Now, we need to play the animation. For simple animations that are always active
 
 If you now test the robot in-game, you'll see that it will turn its head and look around.
 
-### Creating an Animation
+### Creating an animation
 
 In the [guide to creating new entity types](IntroductionToAddEntity.md), we created a small driving animation for the robot. Let's now create an animation that plays when the robot loses the ground under its feet (wheel). Before creating an animation, always check if there's a way to trigger it. We can easily trigger a lose-balance animation for this because we can just use the Molang query `query.is_on_ground` to test when the robot no longer touches the ground.
 
@@ -172,7 +168,7 @@ The reason for that is the fact that the query in the scripts section is only a 
 
 We can use this behavior quite well for static or looping animations that have no beginning and no end. But if we want to start the animation every time the query changes, we need a different approach. This is where animation controllers come in.
 
-### Animation Controllers
+### Animation controllers
 
 Animation controllers work with states. An animation controller can have an unlimited number of states. Only one of these states is active at a time. The controller can transition to other states through Molang expressions. Each state can play a distinct set of animations, sounds, and particle effects.
 
@@ -273,7 +269,7 @@ Ultimately, which solution is best depends on the use case. In this example, the
   }
 ```
 
-## What's Next?
+## What's next?
 
 We've now learned how to create a model that's ready for animations and how to texture it. We've also linked an existing animation to the model and created our own animation in Blockbench.
 

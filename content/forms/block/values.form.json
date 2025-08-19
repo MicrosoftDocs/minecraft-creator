@@ -1,0 +1,17 @@
+{
+  "id": "Values",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Values",
+    "title": "Values Block",
+    "fields": [
+      {
+        "id": "values",
+        "title": "Values",
+        "dataType": 16,
+        "subFormId": "block/range",
+        "isRequired": true
+      }
+    ]
+  }
+}

@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Sets the item display name within Minecraft: Bedrock Edition. This component may also be used to pull from the localization file by referencing a key from it.
 
 
-## Minecraft Display Name Item Properties
+## Minecraft Display Name Item Components Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -81,15 +81,6 @@ At sample with localication key:
 }
 ```
 
-#### [Bag o Leaves](https://github.com/microsoft/minecraft-samples/tree/main/creator_camp/behavior_packs/creator_camp/items/bag_o_leaves.json)
-
-
-```json
-"minecraft:display_name": {
-  "value": "Bag o' Leaves"
-}
-```
-
 #### [Chestplate](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/chestplate.json)
 
 
@@ -123,5 +114,14 @@ At sample with localication key:
 ```json
 "minecraft:display_name": {
   "value": "My Custom Helmet"
+}
+```
+
+#### [My Leggings](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_leggings.json)
+
+
+```json
+"minecraft:display_name": {
+  "value": "My Custom Leggings"
 }
 ```

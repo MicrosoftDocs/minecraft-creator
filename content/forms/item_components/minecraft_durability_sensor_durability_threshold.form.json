@@ -1,0 +1,52 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "Durability Sensor Durability Threshold",
+    "description": "Defines both the durability threshold, and the effects emitted when that threshold is met.",
+    "fields": [
+      {
+        "id": "durability",
+        "title": "durability",
+        "description": "The effects are emitted when the item durability value is less than or equal to this value.",
+        "dataType": 0
+      },
+      {
+        "id": "particle_type",
+        "title": "enum ParticleType",
+        "description": "Particle effect to emit when the threshold is met.",
+        "dataType": 2
+      },
+      {
+        "id": "sound_event",
+        "title": "enum SharedTypes_Legacy_LevelSoundEvent",
+        "description": "Sound effect to emit when the threshold is met.",
+        "dataType": 2
+      }
+    ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:durability_sensor durability_threshold",
+    "title": "Minecraft Durability Sensor Durability Threshold Item Components",
+    "description": "Defines both the durability threshold, and the effects emitted when that threshold is met.",
+    "fields": [
+      {
+        "id": "durability",
+        "title": "Durability",
+        "description": "The effects are emitted when the item durability value is less than or equal to this value.",
+        "dataType": 0
+      },
+      {
+        "id": "particle_type",
+        "title": "ParticleType",
+        "description": "Particle effect to emit when the threshold is met.",
+        "dataType": 2
+      },
+      {
+        "id": "sound_event",
+        "title": "LevelSoundEvent",
+        "description": "Sound effect to emit when the threshold is met.",
+        "dataType": 2
+      }
+    ]
+  }
+}
