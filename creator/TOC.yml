@@ -194,8 +194,8 @@
             href: Reference/Content/SkinPacksReference/SkinPackJSONReference.md
           - name: Create a World Template
             href: Documents/CreateAWorldTemplate.md
-          - name: Utilizing Sub-Packs
-            href: Documents/UtilizingSubpacks.md
+          - name: Building Sub-Packs
+            href: Documents/BuildingSubpacks.md
           - name: 'Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition'
             href: Documents/ConvertingTexturePacks.md
           - name: Custom Pack Settings (currently in preview)
