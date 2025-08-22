@@ -10,7 +10,9 @@ ms.date: 08/19/2025
 
 # Building Sub-Packs
 
-One of the most wonderful aspects of being a Minecraft creator (and also, one of the most frustrating) is that no two players are the same: some are younger, some are older; some are on top-of-the-line gaming PCs, some are on muted mobile devices; the list goes on. With such a vast range of factors to account for, how do you ensure that all of your players are having an amazing experience? That's where sub-packs come in!
+One of the most wonderful aspects of being a Minecraft creator (and also, one of the most frustrating) is that no two players are the same: some are younger, some are older; some are on top-of-the-line gaming PCs, some are on muted mobile devices; the list goes on. 
+
+With such a vast range of factors to account for, how do you ensure that all of your players are having an amazing experience? That's where sub-packs come in!
 
 Sub-packs let players choose between different variations of a resource pack and switch between them at any time&mdash;there's no need to create separate packs! Creators can use sub-packs to offer multiple levels of fidelity, different content for different user types, and more. As with most features in Minecraft, the only limitation is what you can imagine.
 
@@ -19,11 +21,14 @@ Sub-packs let players choose between different variations of a resource pack and
 
 1. Open the resource pack for your world and create a new folder named `subpacks`.
 
-2. Open the `subpacks` folder and create a new folder for each sub-pack you would like to create. We're using the names SP1, SP2, and SP3 for this example, but feel free to use whatever names work for your project. Just remember to keep your custom sub-pack name short so you don't run into any issues with the character limit.
+2. Open the `subpacks` folder and create a new folder for each sub-pack you would like to create. We're using the names SP1, SP2, and SP3 for this example, but feel free to use whatever names work for your project.
+
+    > [!Tip]
+    > Just remember to keep your custom sub-pack name short so you don't run into any issues with the character limit.
 
     :::image type="content" source="Media/UtilizingSubpacks/Hierarchy1.png" alt-text="Image of the file layout for a resource pack containing a sub-packs folder with three subfolders for each sub-pack.":::
 
-3. Add the content for each into its' respective folder. Any files that normally go into your resource pack can be added into your sub-pack 'SP' folders.
+3. Add the content for each subpack into its respective folder. Any files that normally go into your resource pack can be added into your sub-pack 'SP' folders.
 
     > [!NOTE]
     > Files added to sub-packs will override the files in the main resource pack.
@@ -31,7 +36,7 @@ Sub-packs let players choose between different variations of a resource pack and
 
 ## Adding sub-packs to manifest.json
 
-Once you've created your sub-pack folders, it's time to edit the manifest.json file so the game knows that the files exist and pulls them in correctly. Use these components to create your own custom subpack, or copy and paste the example packs below into your manifest.json file.
+Once you've created your sub-pack folders, it's time to edit the manifest.json file so the game knows that the files exist and pulls them in correctly. Use these components to create your own custom subpack, or copy and paste the example below into your manifest.json file.
 
 | Name | Description |
 |:-----|:-----|
@@ -68,20 +73,20 @@ Once you've created your sub-pack folders, it's time to edit the manifest.json f
         {
             "folder_name": "SP1",
             "name": "Low-fi Assets",
-            "memory_tier": 0,
+            "memory_tier": 6,
             "memory_performance_tier": 1
         },
         {
             "folder_name": "SP2",
             "name": "Standard Assets",
-            "memory_tier": 16,
+            "memory_tier": 12,
             "memory_performance_tier": 2
         },
         {
             "folder_name": "SP3",
             "name": "Hi-fi Assets",
             "memory_tier": 64,
-            "memory_performance_tier": 4
+            "memory_performance_tier": 5
         }
     ],
     "settings": [
@@ -103,15 +108,24 @@ Now that our manifest is complete, here is our example sub-pack in action!
 
 ## Subpack selection
 
-To select a sub-pack, the system scans the list of subpack folders for the highest `memory_performance_tier` value that doesn't exceed the tier of the player's device. With our new tier system, each tier represents a different platform, so there's no more guess-work required when you're trying to assign a tier to your device's memory capacity. If you're familiar with the old way of doing things, we've provided a memory tier alignment table below to help you adjust.
+With our new tier system, each tier represents a different platform. So, there's no more guess-work required when you're trying to assign a tier to your device's memory capacity. If you're familiar with the old way of doing things, we've provided a table below to help you adjust.
 
-| Memory Performance Tier | Platform | Memory Tier | Greylist Tier (GB RAM) |Memory Range (GB) |
-|:--|:--|:--|:--|:--|
-|1|Nintendo Switch |11|2-4 (Mid)|2-4|
-|2|PS4; PS4 Pro; Xbox One; Xbox One S; 60% Mobile |12|4-8 (High)|4-5|
-|3|Xbox One X; Xbox Series S |18|4-8 (High)|6-8|
-|4|Xbox Series X; PS5 |24|>8 (Super High)|8-12|
-|5|PS5 Pro; 70% PC|32|>8 (Super High)|>12|
+### Memory tier alignment
+
+| Memory Performance Tier | Platform | Memory Tier | Memory Range (GB) |
+|:--|:--|:--|:--|
+|1|Nintendo Switch |&le;11|2-4|
+|2|PS4; PS4 Pro; Xbox One; Xbox One S; 60% Mobile |12-16|4-5|
+|3|Xbox One X; Xbox Series S |18-20|6-8|
+|4|Xbox Series X; PS5 |24-28|8-12|
+|5|PS5 Pro; 70% PC|&ge;32|>12|
+
+By default, the system scans the list of subpacks in your manifest file for the highest `memory_performance_tier` value that doesn't exceed the tier of the player's device to select a sub-pack.
+
+As a creator, you can change the default subpack selected as long as it's within players' platform capabilities. For example, a PS5 Pro defaults to Tier 5 but can be manually changed to select Tier 4 instead.
+
+> [!Note]
+> In the case of a tie, the system selects the last subpack listed of that tier. We recommend you avoid including multiple subpacks of the same tier in a single manifest file to avoid those confusing conflicts.
 
 
 ## What's Next?

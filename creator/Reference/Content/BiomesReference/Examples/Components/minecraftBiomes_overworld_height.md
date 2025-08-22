@@ -11,7 +11,7 @@ ms.date: 08/13/2025
 
 Noise parameters used to drive terrain height in the Overworld.
 
-> (!Note)
+> [!Note]
 > This is a pre-caves and cliffs component. It does not change overworld height, and currently only affects map item rendering.
 
 
