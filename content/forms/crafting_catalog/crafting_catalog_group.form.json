@@ -1,0 +1,56 @@
+{
+  "id": "Crafting Catalog Group",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Crafting Catalog Group",
+    "title": "Crafting Catalog Group Crafting Catalog",
+    "description": "Represents a group of items. A group can be collapsible if it is provided with a group identifier, or added a set of loose items without an icon.",
+    "fields": [
+      {
+        "id": "group_identifier",
+        "title": "Group Identifier",
+        "description": "Optional field to give an icon and name to a group. Otherwise the items are added as loose items.",
+        "dataType": 16,
+        "subFormId": "crafting_catalog/crafting_catalog_group_icon"
+      },
+      {
+        "id": "items",
+        "title": "Items",
+        "description": "The items to add to the group.",
+        "dataType": 15,
+        "subForm": {
+          "id": "items",
+          "title": "Items",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "items",
+            "dataType": 16,
+            "readOnly": true,
+            "subForm": {
+              "id": "items",
+              "title": "Items",
+              "fields": [
+                {
+                  "id": "name",
+                  "title": "Name",
+                  "description": "The name of an item or block. A namespace for the item is required. You can optionally provide an aux value for items that use it at the end. Example: namespace:my_item:1",
+                  "dataType": 16,
+                  "validity": [
+                    {
+                      "comparison": "pattern",
+                      "value": "^(?:.)+:(?:.)+$"
+                    }
+                  ],
+                  "isRequired": true
+                }
+              ]
+            }
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  }
+}

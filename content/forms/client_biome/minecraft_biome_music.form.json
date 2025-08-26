@@ -1,19 +1,8 @@
 {
+  "id": "minecraft:biome_music",
   "fields": [],
-  "versionIntroduced": "1.21.50",
+  "title": "Minecraft Biome Music",
   "description": "Affects how music plays within the biome",
-  "generated_doNotEdit": {
-    "title": "Biome Music",
-    "description": "Affect how music plays within the biome",
-    "fields": [
-      {
-        "id": "volume_multiplier",
-        "title": "volume_multiplier",
-        "description": "Multiplier temporarily and gradually applied to music volume when within this biome. Must be a value between 0 and 1, inclusive.",
-        "dataType": 3
-      }
-    ]
-  },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:biome_music",
     "title": "Minecraft Biome Music Client Biome",

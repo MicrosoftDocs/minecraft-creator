@@ -1,48 +1,6 @@
 {
+  "id": "minecraft:digger",
   "fields": [],
-  "description": "Allows a creator to determine how quickly an item can dig specific blocks.",
-  "samples": {
-    "sample": [
-      {
-        "path": "digger",
-        "content": {
-          "minecraft:digger": {
-            "use_efficiency": true,
-            "destroy_speeds": [
-              {
-                "speed": 6,
-                "block": {
-                  "tags": "query.any_tag( 'wood' )"
-                }
-              },
-              {
-                "block": "minecraft:coal_ore",
-                "speed": 2
-              }
-            ]
-          }
-        }
-      }
-    ]
-  },
-  "generated_doNotEdit": {
-    "title": "Digger",
-    "description": "Digger item component specifies how quickly this item can dig specific blocks.",
-    "fields": [
-      {
-        "id": "use_efficiency",
-        "title": "use_efficiency",
-        "description": "Determines whether this item should be impacted if the efficiency enchantment is applied to it.",
-        "dataType": 1
-      },
-      {
-        "id": "destroy_speeds",
-        "title": "destroy_speeds",
-        "description": "A list of blocks to dig with correlating speeds of digging.",
-        "dataType": 15
-      }
-    ]
-  },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:digger",
     "title": "Minecraft Digger Item",
@@ -53,7 +11,7 @@
         "title": "Destroy Speeds",
         "description": "A list of blocks to dig with correlating speeds of digging.",
         "dataType": 16,
-        "subFormId": "item/blockinfo"
+        "subFormId": "item_components/blockinfo"
       },
       {
         "id": "use_efficiency",

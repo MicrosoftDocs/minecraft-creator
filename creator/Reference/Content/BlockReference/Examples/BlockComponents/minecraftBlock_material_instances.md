@@ -101,7 +101,7 @@ A material instance definition to map to a material instance in a geometry file.
 | ambient_occlusion | *not set* | Decimal number | Should this material have ambient occlusion applied when lighting? If true, shadows will be created around and underneath the block. Optionally can be constructed with float to control exponent applied to ao value after lighting. |  | 
 | face_dimming | true | Boolean true/false | Should this material be dimmed by the direction it's facing? |  | 
 | isotropic | false | Boolean true/false | Should the faces that this material is applied to randomize their UVs? |  | 
-| render_method | opaque | String | The render method to use. Must be one of these options and must be the same for each: <br>"opaque" - Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency. <br>"double_sided" - Used for completely disabling backface culling. <br>"blend" - Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures). <br>"alpha_test" - Used for a block like the vanilla (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also disables backface culling. |  | 
+| render_method | opaque | String | The render method to use. Must be one of these options and must be the same for each:<br>"opaque" - Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency.<br>"double_sided" - Used for completely disabling backface culling.<br>"blend" - Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures).<br>"alpha_test" - Used for a block like the vanilla (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also disables backface culling. |  | 
 | texture | *not set* | String | Texture name for the material. |  | 
 | tint_method | false | Boolean true/false | Tint multiplied to the color. Tint method logic varies, but often refers to the "rain" and "temperature" of the biome the block is placed in to compute the tint. Supported tint methods are "none", "default_foliage", "birch_foliage", "evergreen_foliage", "dry_foliage", "grass" and "water" |  | 
 
@@ -249,6 +249,18 @@ A material instance definition to map to a material instance in a geometry file.
 }
 ```
 
+#### [Block Palm Leave](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json)
+
+
+```json
+"minecraft:material_instances": {
+  "*": {
+    "texture": "palm_leave",
+    "render_method": "alpha_test"
+  }
+}
+```
+
 #### [Block Palm Leave Corner](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_corner.block.json)
 
 
@@ -268,18 +280,6 @@ A material instance definition to map to a material instance in a geometry file.
 "minecraft:material_instances": {
   "*": {
     "texture": "palm_leave_tip",
-    "render_method": "alpha_test"
-  }
-}
-```
-
-#### [Block Palm Leave](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json)
-
-
-```json
-"minecraft:material_instances": {
-  "*": {
-    "texture": "palm_leave",
     "render_method": "alpha_test"
   }
 }

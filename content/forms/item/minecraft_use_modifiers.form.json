@@ -1,51 +1,6 @@
 {
+  "id": "minecraft:use_modifiers",
   "fields": [],
-  "description": "Determines how long an item takes to use in combination with components such as Shooter, Throwable, or Food.",
-  "generated_doNotEdit": {
-    "title": "Use Modifiers",
-    "description": "This component modifies use effects, including how long the item takes to use and the player's speed when used in combination with components like \"shooter\", \"throwable\", or \"food\".",
-    "fields": [
-      {
-        "id": "use_duration",
-        "title": "use_duration",
-        "description": "How long the item takes to use in seconds.",
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/items/apple.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:use_modifiers/",
-              "content": 1.6
-            }
-          ]
-        }
-      },
-      {
-        "id": "movement_modifier",
-        "title": "movement_modifier",
-        "description": "Modifier value to scale the players movement speed when item is in use.",
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/items/apple.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:use_modifiers/",
-              "content": 0.35
-            }
-          ]
-        }
-      }
-    ],
-    "samples": {
-      "/vanilla/behavior_pack/items/apple.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:use_modifiers/",
-          "content": {
-            "use_duration": 1.6,
-            "movement_modifier": 0.35
-          }
-        }
-      ]
-    }
-  },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:use_modifiers",
     "title": "Minecraft Use Modifiers Item",

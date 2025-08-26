@@ -19,7 +19,7 @@ Emits a particle specified via the particle attribute.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| particle | *not set* | String |  |  | 
+| particle | *not set* | String | Identifier of the particle to emit. |  | 
 
 ## Samples
 

@@ -1,0 +1,66 @@
+{
+  "fields": [],
+  "description": "Determines which tags are included on a given item",
+  "samples": {
+    "sample": [
+      {
+        "path": "sample",
+        "content": {
+          "do_swing_animation": false,
+          "launch_power_scale": 1,
+          "max_draw_duration": 0,
+          "max_launch_power": 1,
+          "min_draw_duration": 0,
+          "scale_power_by_draw_duration": false
+        }
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "title": "Tags",
+    "description": "The tags component specifies which tags an item has on it.",
+    "fields": [
+      {
+        "id": "tags",
+        "title": "tags",
+        "description": "An array that can contain multiple item tags.",
+        "dataType": 15,
+        "samples": {
+          "/vanilla/behavior_pack/items/apple.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:tags/",
+              "content": [
+                "minecraft:is_food"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/items/apple.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:tags/",
+          "content": {
+            "tags": [
+              "minecraft:is_food"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:tags",
+    "title": "Minecraft Tags Item Components",
+    "description": "The tags component specifies which tags an item has on it.",
+    "fields": [
+      {
+        "id": "tags",
+        "title": "Tags",
+        "description": "An array that can contain multiple item tags.",
+        "dataType": 17
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "Range",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Range",
+    "title": "Range Block",
+    "fields": [
+      {
+        "id": "max",
+        "title": "Max",
+        "dataType": 0,
+        "isRequired": true
+      },
+      {
+        "id": "min",
+        "title": "Min",
+        "dataType": 0,
+        "isRequired": true
+      }
+    ]
+  }
+}

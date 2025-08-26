@@ -502,19 +502,19 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/piglin_brute.json": [
-        {
-          "path": "/minecraft:entity/component_groups/melee_unit/minecraft:attack/",
-          "content": {
-            "damage": 7
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/piglin.json": [
         {
           "path": "/minecraft:entity/component_groups/melee_unit/minecraft:attack/",
           "content": {
             "damage": 5
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
+        {
+          "path": "/minecraft:entity/component_groups/melee_unit/minecraft:attack/",
+          "content": {
+            "damage": 7
           }
         }
       ],
@@ -663,19 +663,19 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:attack/",
+          "content": {
+            "damage": 3
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/zombie_pigman.json": [
         {
           "path": "/minecraft:entity/components/minecraft:attack/",
           "content": {
             "damage": 5
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:attack/",
-          "content": {
-            "damage": 3
           }
         }
       ],
@@ -687,7 +687,7 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
         {
           "path": "/minecraft:entity/components/minecraft:attack/",
           "content": {

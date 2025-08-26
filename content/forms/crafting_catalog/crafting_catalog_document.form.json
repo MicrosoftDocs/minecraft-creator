@@ -1,0 +1,19 @@
+{
+  "id": "Crafting Catalog Document",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Crafting Catalog Document",
+    "title": "Crafting Catalog Document Crafting Catalog",
+    "description": "The root object for defining the crafting catalog",
+    "fields": [
+      {
+        "id": "categories",
+        "title": "Categories",
+        "description": "The categories we are adding groups to.",
+        "dataType": 16,
+        "subFormId": "crafting_catalog/crafting_catalog_category",
+        "isRequired": true
+      }
+    ]
+  }
+}

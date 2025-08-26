@@ -71,7 +71,7 @@
           ]
         },
         "samples": {
-          "/vanilla/behavior_pack/entities/villager_v2.json": [
+          "/vanilla/behavior_pack/entities/villager.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.share_items/",
               "content": [
@@ -85,7 +85,7 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/villager.json": [
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.share_items/",
               "content": [
@@ -131,11 +131,11 @@
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/villager_v2.json": [
+      "/vanilla/behavior_pack/entities/villager.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.share_items/",
           "content": {
-            "priority": 10,
+            "priority": 8,
             "max_dist": 3,
             "goal_radius": 2,
             "speed_multiplier": 0.5,
@@ -151,11 +151,11 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/villager.json": [
+      "/vanilla/behavior_pack/entities/villager_v2.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.share_items/",
           "content": {
-            "priority": 8,
+            "priority": 10,
             "max_dist": 3,
             "goal_radius": 2,
             "speed_multiplier": 0.5,

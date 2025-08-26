@@ -13,6 +13,14 @@ The MinecraftEditor class is a namespace container for Editor functionality whic
 
 ## Properties
 
+### **afterEvents**
+`read-only afterEvents: ProjectAfterEvents;`
+
+Type: [*ProjectAfterEvents*](ProjectAfterEvents.md)
+
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **constants**
 `read-only constants: EditorConstants;`
 

@@ -554,6 +554,42 @@
               ]
             }
           ],
+          "/vanilla/behavior_pack/entities/villager.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "zombie"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "zombie_villager"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "illager"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "vex"
+                      }
+                    ]
+                  },
+                  "max_dist": 8,
+                  "walk_speed_multiplier": 0.6,
+                  "sprint_speed_multiplier": 0.6
+                }
+              ]
+            }
+          ],
           "/vanilla/behavior_pack/entities/villager_v2.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
@@ -585,42 +621,6 @@
                         "test": "is_family",
                         "subject": "other",
                         "value": "zoglin"
-                      }
-                    ]
-                  },
-                  "max_dist": 8,
-                  "walk_speed_multiplier": 0.6,
-                  "sprint_speed_multiplier": 0.6
-                }
-              ]
-            }
-          ],
-          "/vanilla/behavior_pack/entities/villager.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
-              "content": [
-                {
-                  "filters": {
-                    "any_of": [
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "zombie"
-                      },
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "zombie_villager"
-                      },
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "illager"
-                      },
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "vex"
                       }
                     ]
                   },
@@ -1662,6 +1662,45 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
+          "content": {
+            "priority": 3,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "zombie"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "zombie_villager"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "illager"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "vex"
+                    }
+                  ]
+                },
+                "max_dist": 8,
+                "walk_speed_multiplier": 0.6,
+                "sprint_speed_multiplier": 0.6
+              }
+            ]
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/villager_v2.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
@@ -1695,45 +1734,6 @@
                       "test": "is_family",
                       "subject": "other",
                       "value": "zoglin"
-                    }
-                  ]
-                },
-                "max_dist": 8,
-                "walk_speed_multiplier": 0.6,
-                "sprint_speed_multiplier": 0.6
-              }
-            ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/villager.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
-          "content": {
-            "priority": 3,
-            "entity_types": [
-              {
-                "filters": {
-                  "any_of": [
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "zombie"
-                    },
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "zombie_villager"
-                    },
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "illager"
-                    },
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "vex"
                     }
                   ]
                 },

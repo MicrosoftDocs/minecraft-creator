@@ -83,7 +83,7 @@
             {
               "id": "deals_damage",
               "title": "Deals Damage",
-              "description": "Defines how received damage affects the entity:\r\n                                          \\n- \"yes\", received damage is applied to the entity.\r\n                                          \\n- \"no\", received damage is not applied to the entity.\r\n                                          \\n- \"no_but_side_effects_apply\", received damage is not applied to the entity, but the side effects of the attack are. This means that the attacker's weapon loses durability, enchantment side effects are applied, and so on.",
+              "description": "Defines how received damage affects the entity:\n                                          \\n- \"yes\", received damage is applied to the entity.\n                                          \\n- \"no\", received damage is not applied to the entity.\n                                          \\n- \"no_but_side_effects_apply\", received damage is not applied to the entity, but the side effects of the attack are. This means that the attacker's weapon loses durability, enchantment side effects are applied, and so on.",
               "defaultValue": false,
               "dataType": 1
             },
@@ -704,6 +704,21 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:lightning_immune/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "on_damage": {
+                "filters": {
+                  "other_with_families": "lightning"
+                }
+              },
+              "deals_damage": false
+            }
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/skeleton_horse.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:lightning_immune/minecraft:damage_sensor/",
@@ -717,21 +732,6 @@
                 }
               },
               "deals_damage": "no"
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/skeleton.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:lightning_immune/minecraft:damage_sensor/",
-          "content": {
-            "triggers": {
-              "on_damage": {
-                "filters": {
-                  "other_with_families": "lightning"
-                }
-              },
-              "deals_damage": false
             }
           }
         }
@@ -759,25 +759,18 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/villager_v2.json": [
+      "/vanilla/behavior_pack/entities/villager.json": [
         {
           "path": "/minecraft:entity/components/minecraft:damage_sensor/",
           "content": {
             "triggers": [
               {
                 "on_damage": {
-                  "filters": [
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "lightning"
-                    },
-                    {
-                      "test": "is_difficulty",
-                      "operator": "!=",
-                      "value": "peaceful"
-                    }
-                  ],
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "lightning"
+                  },
                   "event": "become_witch"
                 },
                 "deals_damage": false
@@ -811,18 +804,25 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/villager.json": [
+      "/vanilla/behavior_pack/entities/villager_v2.json": [
         {
           "path": "/minecraft:entity/components/minecraft:damage_sensor/",
           "content": {
             "triggers": [
               {
                 "on_damage": {
-                  "filters": {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "lightning"
-                  },
+                  "filters": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "lightning"
+                    },
+                    {
+                      "test": "is_difficulty",
+                      "operator": "!=",
+                      "value": "peaceful"
+                    }
+                  ],
                   "event": "become_witch"
                 },
                 "deals_damage": false

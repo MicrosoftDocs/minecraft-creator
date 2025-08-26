@@ -9,7 +9,7 @@
       "samples": [
         {
           "path": "Example:",
-          "content": "\t\t\"set_property\": {\r\n\t\t\t\"minecraft:has_nectar\": false\r\n\t\t}\r\n\t"
+          "content": "\t\t\"set_property\": {\n\t\t\t\"minecraft:has_nectar\": false\n\t\t}\n\t"
         }
       ]
     }

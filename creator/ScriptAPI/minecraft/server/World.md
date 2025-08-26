@@ -375,7 +375,9 @@ Notes:
 getLootTableManager(): LootTableManager
 `
 
-**Returns** [*LootTableManager*](LootTableManager.md)
+Returns a manager capable of generating loot from an assortment of sources.
+
+**Returns** [*LootTableManager*](LootTableManager.md) - A loot table manager with a variety of loot generation methods.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

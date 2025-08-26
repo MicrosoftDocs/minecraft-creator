@@ -9,7 +9,7 @@ Please follow these guidelines when contributing:
 
 ### Form JSON content
 
-A lot of the content that is ultimately used to build content is in the `content` folder. This content is in JSON format, and is used to generate the documentation. The schema of the JSON format is based on the Minecraft Creator Tools TypeScript definitions - see `docs/dataform/IFormDefinition.ts` for the TypeScript definition of the JSON format used for the documentation.  IMPORTANT: as specified in the notes IDataForm.ts, do not edit any data in the generated_doNotEdit or generatedSchema_doNotEdit sub nodes of those JSON Files. Instead, make edits by adding corresponding override field updates in the base of the JSON node.
+A lot of the content that is ultimately used to build content is in the `content` folder. This content is in JSON format, and is used to generate the documentation. The schema of the JSON format is based on the Minecraft Creator Tools TypeScript definitions - see `docs/dataform/IFormDefinition.ts` for the TypeScript definition of the JSON format used for the documentation. IMPORTANT: as specified in the notes IDataForm.ts, do not edit any data in the generated_doNotEdit or generatedSchema_doNotEdit sub nodes of those JSON Files. Instead, make edits by adding or editing corresponding override field updates in the base of the JSON node if and only if the content will differ from what is in the generated sections.
 
 ### Markdown content
 

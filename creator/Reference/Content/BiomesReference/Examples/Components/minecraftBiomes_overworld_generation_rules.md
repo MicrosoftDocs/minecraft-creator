@@ -1,21 +1,18 @@
 ---
-author: cam-wilkerson
+author: mammerla
 ms.author: mikeam
 title: "Biome Documentation - minecraft:overworld_generation_rules"
 description: "Describes the minecraft:overworld_generation_rules biome"
 ms.service: minecraft-bedrock-edition
-ms.date: 08/13/2025 
+ms.date: 02/11/2025 
 ---
 
 # Biome Documentation - minecraft:overworld_generation_rules
 
 Controls how this biome is instantiated (and then potentially modified) during world generation of the overworld.
 
-> (!Note)
-> This is a pre-caves and cliffs component and is unused for custom biomes.
 
-
-## Minecraft overworld generation rules biome properties
+## Minecraft Overworld Generation Rules Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

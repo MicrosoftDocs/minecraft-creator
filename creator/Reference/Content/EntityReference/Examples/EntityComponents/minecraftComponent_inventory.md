@@ -133,7 +133,7 @@ Defines this entity's inventory properties.
 }
 ```
 
-#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+#### [Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager.json)
 
 
 ```json

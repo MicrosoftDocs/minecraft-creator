@@ -9,7 +9,7 @@ ms.date: 02/11/2025
 
 # Items Documentation - minecraft:item
 
-Item definition includes the "description" and "components" sections.
+Refers to the item definition, which includes the 'description' and 'components' sections of the file.
 
 
 ## Minecraft Item Item Properties
@@ -28,16 +28,16 @@ List of all components used in this item.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | minecraft:allow_off_hand | *not set* | Boolean true/false | The allow_off_hand component determines whether the item can be placed in the off hand slot of the inventory. |  | 
-| minecraft:allow_off_hand (Alternate 1) | *not set* | [Allow Off Hand (Alternate 1)](#allow-off-hand-(alternate-1)-item-type) item |  |  | 
+| minecraft:allow_off_hand (Alternate 1) | *not set* | [Allow Off Hand (Alternate 1)](#allow-off-hand-alternate-1-item-type) item |  |  | 
 | minecraft:block_placer | *not set* | [Block Placer](#block-placer-item-type) item | Items with the block_placer component will place a block when used. <br>This component can also be used instead of the "minecraft:icon" component to render the referenced block as the item icon. |  | 
 | minecraft:bundle_interaction | *not set* | [Bundle Interaction](#bundle-interaction-item-type) item | [EXPERIMENTAL] Adds bundle-specific interactions and tooltip to the item. Requires a "minecraft:storage_item" component. |  | 
 | minecraft:can_destroy_in_creative | *not set* | Boolean true/false | The can_destroy_in_creative component determines if the item can be used by a player to break blocks when in creative mode. |  | 
-| minecraft:can_destroy_in_creative (Alternate 1) | *not set* | [Can Destroy In Creative (Alternate 1)](#can-destroy-in-creative-(alternate-1)-item-type) item |  |  | 
+| minecraft:can_destroy_in_creative (Alternate 1) | *not set* | [Can Destroy In Creative (Alternate 1)](#can-destroy-in-creative-alternate-1-item-type) item |  |  | 
 | minecraft:compostable | *not set* | [Compostable](#compostable-item-type) item | Specifies that an item is compostable and provides the chance of creating a composting layer in the composter |  | 
 | minecraft:cooldown | *not set* | [Cooldown](#cooldown-item-type) item | After you use an item, all items specified with the same `cool down category` setting becomes unusable for the duration specified by the 'cool down time' setting in this component. |  | 
 | minecraft:custom_components | *not set* | Object | Specifies an array of custom components defined in a script that should be added to this item. |  | 
 | minecraft:damage | *not set* | Integer number | The damage component determines how much extra damage the item does on attack. |  | 
-| minecraft:damage (Alternate 1) | *not set* | [Damage (Alternate 1)](#damage-(alternate-1)-item-type) item |  |  | 
+| minecraft:damage (Alternate 1) | *not set* | [Damage (Alternate 1)](#damage-alternate-1-item-type) item |  |  | 
 | minecraft:damage_absorption | *not set* | [Damage Absorption](#damage-absorption-item-type) item | It allows an item to absorb damage that would otherwise be dealt to its wearer. For this to happen, the item needs to be equipped in an armor slot. The absorbed damage reduces the item's durability, with any excess damage being ignored. Because of this, the item also needs a `minecraft:durability` component. |  | 
 | minecraft:digger | *not set* | [Digger](#digger-item-type) item | Digger item component specifies how quickly this item can dig specific blocks. |  | 
 | minecraft:display_name | *not set* | [Display Name](#display-name-item-type) item | The display_name item component specifies the text shown whenever an item's name is displayed, like in hover text. |  | 
@@ -48,38 +48,38 @@ List of all components used in this item.
 | minecraft:entity_placer | *not set* | [Entity Placer](#entity-placer-item-type) item | The entity_placer item component specifies the blocks that the item can be placed on. |  | 
 | minecraft:food | *not set* | [Food](#food-item-type) item | When an item has a food component, it becomes edible to the player. Must have the 'minecraft:use_duration' component in order to function properly. |  | 
 | minecraft:fuel | *not set* | Decimal number | Fuel item component allows this item to be used as fuel in a furnace to 'cook' other items. |  | 
-| minecraft:fuel (Alternate 1) | *not set* | [Fuel (Alternate 1)](#fuel-(alternate-1)-item-type) item |  |  | 
+| minecraft:fuel (Alternate 1) | *not set* | [Fuel (Alternate 1)](#fuel-alternate-1-item-type) item |  |  | 
 | minecraft:glint | *not set* | Boolean true/false | The glint component determines whether the item has the enchanted glint render effect on it. |  | 
-| minecraft:glint (Alternate 1) | *not set* | [Glint (Alternate 1)](#glint-(alternate-1)-item-type) item |  |  | 
+| minecraft:glint (Alternate 1) | *not set* | [Glint (Alternate 1)](#glint-alternate-1-item-type) item |  |  | 
 | minecraft:hand_equipped | *not set* | Boolean true/false | The hand_equipped component determines if an item is rendered like a tool while it is in a player's hand. |  | 
-| minecraft:hand_equipped (Alternate 1) | *not set* | [Hand Equipped (Alternate 1)](#hand-equipped-(alternate-1)-item-type) item |  |  | 
+| minecraft:hand_equipped (Alternate 1) | *not set* | [Hand Equipped (Alternate 1)](#hand-equipped-alternate-1-item-type) item |  |  | 
 | minecraft:hover_text_color | *not set* | String | The hover_text_color component specifies the color of the item name when the players hovers the cursor over the item. |  | 
-| minecraft:hover_text_color (Alternate 1) | *not set* | [Hover Text Color (Alternate 1)](#hover-text-color-(alternate-1)-item-type) item |  |  | 
+| minecraft:hover_text_color (Alternate 1) | *not set* | [Hover Text Color (Alternate 1)](#hover-text-color-alternate-1-item-type) item |  |  | 
 | minecraft:icon | *not set* | String | Icon item component determines which icon graphic will be used to represent the item in the UI and elsewhere. |  | 
-| minecraft:icon (Alternate 1) | *not set* | [Icon (Alternate 1)](#icon-(alternate-1)-item-type) item |  |  | 
+| minecraft:icon (Alternate 1) | *not set* | [Icon (Alternate 1)](#icon-alternate-1-item-type) item |  |  | 
 | minecraft:interact_button | *not set* | Boolean true/false | This component is a boolean or string that determines if the interact button is shown in touch controls and what text is displayed on the button. When set as true, default "Use Item" text will be displayed. |  | 
 | minecraft:interact_button (Alternate 1) | *not set* | String |  |  | 
 | minecraft:liquid_clipped | *not set* | Boolean true/false | The liquid_clipped component determines whether the item interacts with liquid blocks on use. |  | 
-| minecraft:liquid_clipped (Alternate 1) | *not set* | [Liquid Clipped (Alternate 1)](#liquid-clipped-(alternate-1)-item-type) item |  |  | 
+| minecraft:liquid_clipped (Alternate 1) | *not set* | [Liquid Clipped (Alternate 1)](#liquid-clipped-alternate-1-item-type) item |  |  | 
 | minecraft:max_stack_size | *not set* | Integer number | The max_stack_size component specifies how many of the item can be stacked together. |  | 
-| minecraft:max_stack_size (Alternate 1) | *not set* | [Max Stack Size (Alternate 1)](#max-stack-size-(alternate-1)-item-type) item |  |  | 
+| minecraft:max_stack_size (Alternate 1) | *not set* | [Max Stack Size (Alternate 1)](#max-stack-size-alternate-1-item-type) item |  |  | 
 | minecraft:projectile | *not set* | [Projectile](#projectile-item-type) item | Projectile items shoot out, like an arrow. |  | 
 | minecraft:rarity | *not set* | String | Specifies the base rarity and subsequently color of the item name when the player hovers the cursor over the item. |  | 
-| minecraft:rarity (Alternate 1) | *not set* | [Rarity (Alternate 1)](#rarity-(alternate-1)-item-type) item |  |  | 
+| minecraft:rarity (Alternate 1) | *not set* | [Rarity (Alternate 1)](#rarity-alternate-1-item-type) item |  |  | 
 | minecraft:record | *not set* | [Record](#record-item-type) item | Record Item Component. Used by record items to play music. |  | 
 | minecraft:repairable | *not set* | [Repairable](#repairable-item-type) item | The repairable item component specifies which items can be used to repair this item, along with how much durability is gained. |  | 
 | minecraft:shooter | *not set* | [Shooter](#shooter-item-type) item | Shooter Item Component. |  | 
 | minecraft:should_despawn | *not set* | Boolean true/false | Should_despawn component determines if the item should eventually despawn while floating in the world |  | 
-| minecraft:should_despawn (Alternate 1) | *not set* | [Should Despawn (Alternate 1)](#should-despawn-(alternate-1)-item-type) item |  |  | 
+| minecraft:should_despawn (Alternate 1) | *not set* | [Should Despawn (Alternate 1)](#should-despawn-alternate-1-item-type) item |  |  | 
 | minecraft:stacked_by_data | *not set* | Boolean true/false | The stacked_by_data component determines whether the same items with different aux values can stack. Also defines whether the item entities can merge while floating in the world. |  | 
-| minecraft:stacked_by_data (Alternate 1) | *not set* | [Stacked By Data (Alternate 1)](#stacked-by-data-(alternate-1)-item-type) item |  |  | 
+| minecraft:stacked_by_data (Alternate 1) | *not set* | [Stacked By Data (Alternate 1)](#stacked-by-data-alternate-1-item-type) item |  |  | 
 | minecraft:storage_item | *not set* | [Storage Item](#storage-item-item-type) item | [EXPERIMENTAL] Storage Items can be used by other components to store other items within this item. |  | 
 | minecraft:storage_weight_limit | *not set* | [Storage Weight Limit](#storage-weight-limit-item-type) item | Specifies the maximum weight limit that a storage item can hold |  | 
 | minecraft:storage_weight_modifier | *not set* | [Storage Weight Modifier](#storage-weight-modifier-item-type) item | Specifies the maximum weight limit that a storage item can hold |  | 
 | minecraft:tags | *not set* | [Tags](#tags-item-type) item | The tags component specifies which tags an item has on it. |  | 
 | minecraft:throwable | *not set* | [Throwable](#throwable-item-type) item | Throwable items can be thrown by the player, such as a snowball. |  | 
 | minecraft:use_animation | *not set* | String | Use_animation specifies which animation is played when the player uses the item. |  | 
-| minecraft:use_animation (Alternate 1) | *not set* | [Use Animation (Alternate 1)](#use-animation-(alternate-1)-item-type) item |  |  | 
+| minecraft:use_animation (Alternate 1) | *not set* | [Use Animation (Alternate 1)](#use-animation-alternate-1-item-type) item |  |  | 
 | minecraft:use_modifiers | *not set* | [Use Modifiers](#use-modifiers-item-type) item | This component modifies use effects, including how long the item takes to use and the player's speed when used in combination with components like "shooter", "throwable", or "food". |  | 
 | minecraft:wearable | *not set* | [Wearable](#wearable-item-type) item | Wearable items can be worn by a player in the head, chest, legs, feet, or off-hand slots. |  | 
 
@@ -467,7 +467,7 @@ The repairable item component specifies which items can be used to repair this i
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | repair_items | *not set* | String | List of repair item entries. Each entry needs to define a list of strings for `items` that can be used for the repair and an optional `repair_amount` for how much durability is gained. |  | 
-| repair_items (Alternate 1) | *not set* | [Repair Items (Alternate 1)](#repair-items-(alternate-1)-item-type) item |  |  | 
+| repair_items (Alternate 1) | *not set* | [Repair Items (Alternate 1)](#repair-items-alternate-1-item-type) item |  |  | 
 
 ## Repair Items (Alternate 1) item type
 Repair Items.
@@ -480,7 +480,7 @@ Repair Items.
 | items | *not set* | String | Items that may be used to repair an item. |  | 
 | items (Alternate 1) | *not set* | Keyed set of strings |  |  | 
 | repair_amount | *not set* | Keyed set of strings | How much the item is repaired. |  | 
-| repair_amount (Alternate 1) | *not set* | Key/item pairs of [Repair Amount (Alternate 1)](#repair-amount-(alternate-1)-item-type) items |  |  | 
+| repair_amount (Alternate 1) | *not set* | Key/item pairs of [Repair Amount (Alternate 1)](#repair-amount-alternate-1-item-type) items |  |  | 
 | repair_amount (Alternate 2) | *not set* | Decimal number |  |  | 
 
 ## Repair Amount (Alternate 1) item type

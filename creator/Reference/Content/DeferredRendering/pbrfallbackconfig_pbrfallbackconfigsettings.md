@@ -28,13 +28,13 @@ PBRFallbackConfig PBRFallbackConfigSettings PBRFallbackSettings.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | actors | *not set* | [Actors](#actors-item-type) item | actors |  | 
-| actors (Alternate 1) | *not set* | [Actors (Alternate 1)](#actors-(alternate-1)-item-type) item |  |  | 
+| actors (Alternate 1) | *not set* | [Actors (Alternate 1)](#actors-alternate-1-item-type) item |  |  | 
 | blocks | *not set* | [Blocks](#blocks-item-type) item | blocks |  | 
-| blocks (Alternate 1) | *not set* | [Blocks (Alternate 1)](#blocks-(alternate-1)-item-type) item |  |  | 
+| blocks (Alternate 1) | *not set* | [Blocks (Alternate 1)](#blocks-alternate-1-item-type) item |  |  | 
 | items | *not set* | [Items](#items-item-type) item | items |  | 
-| items (Alternate 1) | *not set* | [Items (Alternate 1)](#items-(alternate-1)-item-type) item |  |  | 
+| items (Alternate 1) | *not set* | [Items (Alternate 1)](#items-alternate-1-item-type) item |  |  | 
 | particles | *not set* | [Particles](#particles-item-type) item | particles |  | 
-| particles (Alternate 1) | *not set* | [Particles (Alternate 1)](#particles-(alternate-1)-item-type) item |  |  | 
+| particles (Alternate 1) | *not set* | [Particles (Alternate 1)](#particles-alternate-1-item-type) item |  |  | 
 
 ## Actors item type
 Actors

@@ -35,7 +35,7 @@
               }
             }
           ],
-          "/vanilla/behavior_pack/entities/villager_v2.json": [
+          "/vanilla/behavior_pack/entities/villager.json": [
             {
               "path": "/minecraft:entity/component_groups/baby/minecraft:behavior.take_flower/",
               "content": {
@@ -48,7 +48,7 @@
               }
             }
           ],
-          "/vanilla/behavior_pack/entities/villager.json": [
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
             {
               "path": "/minecraft:entity/component_groups/baby/minecraft:behavior.take_flower/",
               "content": {
@@ -145,16 +145,16 @@
               "content": 4
             }
           ],
-          "/vanilla/behavior_pack/entities/villager_v2.json": [
-            {
-              "path": "/minecraft:entity/component_groups/baby/minecraft:behavior.take_flower/",
-              "content": 9
-            }
-          ],
           "/vanilla/behavior_pack/entities/villager.json": [
             {
               "path": "/minecraft:entity/component_groups/baby/minecraft:behavior.take_flower/",
               "content": 7
+            }
+          ],
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/component_groups/baby/minecraft:behavior.take_flower/",
+              "content": 9
             }
           ],
           "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
@@ -191,11 +191,11 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/villager_v2.json": [
+      "/vanilla/behavior_pack/entities/villager.json": [
         {
           "path": "/minecraft:entity/component_groups/baby/minecraft:behavior.take_flower/",
           "content": {
-            "priority": 9,
+            "priority": 7,
             "filters": {
               "all_of": [
                 {
@@ -207,11 +207,11 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/villager.json": [
+      "/vanilla/behavior_pack/entities/villager_v2.json": [
         {
           "path": "/minecraft:entity/component_groups/baby/minecraft:behavior.take_flower/",
           "content": {
-            "priority": 7,
+            "priority": 9,
             "filters": {
               "all_of": [
                 {

@@ -88,25 +88,6 @@ At /minecraft:entity/component_groups/minecraft:clear_raid_omen_spell_effect/min
 "minecraft:spell_effects": {}
 ```
 
-#### [Zombie Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_villager_v2.json)
-
-
-```json
-"minecraft:spell_effects": {
-  "add_effects": [
-    {
-      "effect": "strength",
-      "duration": 300
-    },
-    {
-      "effect": "heal",
-      "duration": 300
-    }
-  ],
-  "remove_effects": "weakness"
-}
-```
-
 #### [Zombie Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_villager.json)
 
 
@@ -120,6 +101,25 @@ At /minecraft:entity/component_groups/minecraft:clear_raid_omen_spell_effect/min
     {
       "effect": "heal",
       "duration": 100
+    }
+  ],
+  "remove_effects": "weakness"
+}
+```
+
+#### [Zombie Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_villager_v2.json)
+
+
+```json
+"minecraft:spell_effects": {
+  "add_effects": [
+    {
+      "effect": "strength",
+      "duration": 300
+    },
+    {
+      "effect": "heal",
+      "duration": 300
     }
   ],
   "remove_effects": "weakness"

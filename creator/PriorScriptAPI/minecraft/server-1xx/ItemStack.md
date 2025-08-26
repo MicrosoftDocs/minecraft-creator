@@ -442,20 +442,20 @@ Notes:
 
 ### **setLore**
 `
-setLore(loreList?: string[]): void
+setLore(loreList?: (RawMessage | string)[]): void
 `
 
 Sets the lore value - a secondary display string - for an ItemStack. The lore list is cleared if set to an empty string or undefined.
 
 #### **Parameters**
-- **loreList**?: *string*[] = `null`
+- **loreList**?: ([*RawMessage*](RawMessage.md) | *string*)[] = `null`
   
   List of lore lines. Each element in the list represents a new line. The maximum lore line count is 20. The maximum lore line length is 50 characters.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md)
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), *Error*
 
 #### Examples
 

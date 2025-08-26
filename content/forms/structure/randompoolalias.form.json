@@ -1,0 +1,26 @@
+{
+  "id": "RandomPoolAlias",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "RandomPoolAlias",
+    "title": "RandomPoolAlias Structure",
+    "description": "Pool alias for a Random list of targets",
+    "fields": [
+      {
+        "id": "alias",
+        "title": "Alias",
+        "description": "Alias of Random Pool",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "targets",
+        "title": "Targets",
+        "description": "List of potential pools",
+        "dataType": 16,
+        "subFormId": "world/weightedrandomitem",
+        "isRequired": true
+      }
+    ]
+  }
+}

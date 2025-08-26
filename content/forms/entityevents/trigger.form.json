@@ -28,7 +28,7 @@
       "samples": [
         {
           "path": "Example:",
-          "content": "\t\t\"sample:spawn_adult\": {\r\n\t\t\t// add adult component groups\r\n\t\t},\r\n\t\t\"sample:spawn_baby\": {\r\n\t\t\t// add baby component groups\r\n\t\t},\r\n\t\t\"minecraft:entity_spawned\": {\r\n\t\t\t\"randomize\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"weight\": 50.0,\r\n\t\t\t\t\t\"trigger\": \"sample:spawn_adult\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"weight\": 50.0,\r\n\t\t\t\t\t\"trigger\": \"sample:spawn_baby\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t}\r\n\t"
+          "content": "\t\t\"sample:spawn_adult\": {\n\t\t\t// add adult component groups\n\t\t},\n\t\t\"sample:spawn_baby\": {\n\t\t\t// add baby component groups\n\t\t},\n\t\t\"minecraft:entity_spawned\": {\n\t\t\t\"randomize\": [\n\t\t\t\t{\n\t\t\t\t\t\"weight\": 50.0,\n\t\t\t\t\t\"trigger\": \"sample:spawn_adult\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"weight\": 50.0,\n\t\t\t\t\t\"trigger\": \"sample:spawn_baby\"\n\t\t\t\t}\n\t\t\t]\n\t\t}\n\t"
         }
       ]
     }

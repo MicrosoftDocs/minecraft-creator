@@ -1,0 +1,16 @@
+{
+  "id": "Generation",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Generation",
+    "title": "Generation Dimension",
+    "fields": [
+      {
+        "id": "generator_type",
+        "title": "Generator Type",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  }
+}

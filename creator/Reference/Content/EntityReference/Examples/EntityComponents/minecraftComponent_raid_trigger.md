@@ -21,12 +21,6 @@ Attempts to trigger a raid at the entity's location.
 
 ## Raid Trigger item type
 
-#### Minecraft:raid_trigger Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| triggered_event | *not set* | String |  | Player: `{"event":"minecraft:remove_raid_trigger","target":"self"}` | 
-
 ## Samples
 
 #### [Player](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/player.json)

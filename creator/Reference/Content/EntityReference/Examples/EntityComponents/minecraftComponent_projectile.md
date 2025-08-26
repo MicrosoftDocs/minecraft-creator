@@ -45,14 +45,14 @@ Allows the entity to be a thrown entity.
 | reflect_immunity | 0 | Decimal number | During the specified time, in seconds, the projectile cannot be reflected by hitting it | Wind Charge Projectile: `0.5` | 
 | reflect_on_hurt | false | Boolean true/false | If true, this entity will be reflected back when hit | Breeze Wind Charge Projectile: `true` | 
 | semi_random_diff_damage | false | Boolean true/false | If true, damage will be randomized based on damage and speed | Dragon Fireball: `true` | 
-| shoot_sound | *not set* | String | The sound that plays when the projectile is shot | Wither Skull Dangerous: `"bow"` | 
+| shoot_sound | *not set* | String | The sound that plays when the projectile is shot | Wither Skull: `"bow"` | 
 | shoot_target | true | Boolean true/false | If true, the projectile will be shot towards the target of the entity firing it |  | 
 | should_bounce | false | Boolean true/false | If true, the projectile will bounce upon hit | Thrown Trident: `true` | 
 | splash_potion | false | Boolean true/false | If true, the projectile will be treated like a splash potion |  | 
 | splash_range | 4 | Decimal number | Radius in blocks of the 'splash' effect |  | 
 | stop_on_hurt | *not set* | String |  | Thrown Trident: `true` | 
 | uncertainty_base | 0 | Decimal number | The base accuracy. Accuracy is determined by the formula uncertaintyBase - difficultyLevel * uncertaintyMultiplier | Breeze Wind Charge Projectile: `5`, Wind Charge Projectile: `1`, Dragon Fireball: `10` | 
-| uncertainty_multiplier | 0 | Decimal number | Determines how much difficulty affects accuracy. Accuracy is determined by the formula uncertaintyBase - difficultyLevel * uncertaintyMultiplier | Breeze Wind Charge Projectile: `4`, Wither Skull Dangerous: `1` | 
+| uncertainty_multiplier | 0 | Decimal number | Determines how much difficulty affects accuracy. Accuracy is determined by the formula uncertaintyBase - difficultyLevel * uncertaintyMultiplier | Breeze Wind Charge Projectile: `4`, Wither Skull: `1` | 
 
 ## Samples
 

@@ -1,0 +1,181 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "particle_effect component",
+    "title": "Particle Effect Component Client Particles",
+    "fields": [
+      {
+        "id": "minecraft:emitter_initialization",
+        "title": "Minecraft Emitter Initialization",
+        "dataType": 16,
+        "subFormId": "client_particles/emitter_initialization"
+      },
+      {
+        "id": "minecraft:emitter_lifetime_events",
+        "title": "Minecraft Emitter Lifetime Events",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:emitter_lifetime_expression",
+        "title": "Minecraft Emitter Lifetime Expression",
+        "dataType": 16,
+        "subFormId": "client_particles/emitter_lifetime_expression"
+      },
+      {
+        "id": "minecraft:emitter_lifetime_looping",
+        "title": "Minecraft Emitter Lifetime Looping",
+        "dataType": 16,
+        "subFormId": "client_particles/emitter_lifetime_looping"
+      },
+      {
+        "id": "minecraft:emitter_lifetime_once",
+        "title": "Minecraft Emitter Lifetime Once",
+        "dataType": 16,
+        "subFormId": "client_particles/emitter_lifetime_once"
+      },
+      {
+        "id": "minecraft:emitter_local_space",
+        "title": "Minecraft Emitter Local Space",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:emitter_rate_instant",
+        "title": "Minecraft Emitter Rate Instant",
+        "dataType": 16,
+        "subFormId": "client_particles/emitter_rate_instant"
+      },
+      {
+        "id": "minecraft:emitter_rate_manual",
+        "title": "Minecraft Emitter Rate Manual",
+        "dataType": 16,
+        "subFormId": "client_particles/emitter_rate_manual"
+      },
+      {
+        "id": "minecraft:emitter_rate_steady",
+        "title": "Minecraft Emitter Rate Steady",
+        "dataType": 16,
+        "subFormId": "client_particles/emitter_rate_steady"
+      },
+      {
+        "id": "minecraft:emitter_shape_box",
+        "title": "Minecraft Emitter Shape Box",
+        "dataType": 16,
+        "subFormId": "client_particles/emitter_shape_box"
+      },
+      {
+        "id": "minecraft:emitter_shape_custom",
+        "title": "Minecraft Emitter Shape Custom",
+        "dataType": 16,
+        "subFormId": "client_particles/emitter_shape_custom"
+      },
+      {
+        "id": "minecraft:emitter_shape_disc",
+        "title": "Minecraft Emitter Shape Disc",
+        "dataType": 16,
+        "subFormId": "client_particles/emitter_shape_disc"
+      },
+      {
+        "id": "minecraft:emitter_shape_entity_aabb",
+        "title": "Minecraft Emitter Shape Entity Aabb",
+        "dataType": 16,
+        "subFormId": "client_particles/emitter_shape_entity_aabb"
+      },
+      {
+        "id": "minecraft:emitter_shape_point",
+        "title": "Minecraft Emitter Shape Point",
+        "dataType": 16,
+        "subFormId": "client_particles/emitter_shape_point"
+      },
+      {
+        "id": "minecraft:emitter_shape_sphere",
+        "title": "Minecraft Emitter Shape Sphere",
+        "dataType": 16,
+        "subFormId": "client_particles/emitter_shape_sphere"
+      },
+      {
+        "id": "minecraft:particle_appearance_billboard",
+        "title": "Minecraft Particle Appearance Billboard",
+        "dataType": 16,
+        "subFormId": "client_particles/particle_appearance_billboard"
+      },
+      {
+        "id": "minecraft:particle_appearance_lighting",
+        "title": "Minecraft Particle Appearance Lighting",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:particle_appearance_tinting",
+        "title": "Minecraft Particle Appearance Tinting",
+        "dataType": 16,
+        "subFormId": "client_particles/particle_appearance_tinting"
+      },
+      {
+        "id": "minecraft:particle_expire_if_in_blocks",
+        "title": "Minecraft Particle Expire If In Blocks",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:particle_expire_if_not_in_blocks",
+        "title": "Minecraft Particle Expire If Not In Blocks",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:particle_initial_speed",
+        "title": "Minecraft Particle Initial Speed",
+        "dataType": 24,
+        "alternates": [
+          {
+            "id": "minecraft:particle_initial_speed",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "minecraft:particle_initial_spin",
+        "title": "Minecraft Particle Initial Spin",
+        "dataType": 16,
+        "subFormId": "client_particles/particle_initial_spin"
+      },
+      {
+        "id": "minecraft:particle_initialization",
+        "title": "Minecraft Particle Initialization",
+        "dataType": 16,
+        "subFormId": "client_particles/particle_initialization"
+      },
+      {
+        "id": "minecraft:particle_kill_plane",
+        "title": "Minecraft Particle Kill Plane",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:particle_lifetime_events",
+        "title": "Minecraft Particle Lifetime Events",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:particle_lifetime_expression",
+        "title": "Minecraft Particle Lifetime Expression",
+        "dataType": 16,
+        "subFormId": "client_particles/particle_lifetime_expression"
+      },
+      {
+        "id": "minecraft:particle_motion_collision",
+        "title": "Minecraft Particle Motion Collision",
+        "dataType": 16,
+        "subFormId": "client_particles/particle_motion_collision"
+      },
+      {
+        "id": "minecraft:particle_motion_dynamic",
+        "title": "Minecraft Particle Motion Dynamic",
+        "dataType": 16,
+        "subFormId": "client_particles/particle_motion_dynamic"
+      },
+      {
+        "id": "minecraft:particle_motion_parametric",
+        "title": "Minecraft Particle Motion Parametric",
+        "dataType": 16,
+        "subFormId": "client_particles/particle_motion_parametric"
+      }
+    ]
+  }
+}
