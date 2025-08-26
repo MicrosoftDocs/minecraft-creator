@@ -378,6 +378,11 @@
       "source_path": "Documents/ScriptingLibraries.md",
       "redirect_url": "/minecraft/creator/documents/libraries",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/UtilizingSubpacks.md",
+      "redirect_url": "/minecraft/creator/documents/buildingsubpacks",
+      "redirect_document_id": false
     }
   ]
 }

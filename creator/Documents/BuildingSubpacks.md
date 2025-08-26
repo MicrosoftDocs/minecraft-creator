@@ -42,8 +42,8 @@ Once you've created your sub-pack folders, it's time to edit the manifest.json f
 |:-----|:-----|
 |**folder_name**| The name of the folder where your sub-pack is located|
 |**name**| The name players see when choosing your sub-pack|
-|**memory_tier**| Designates the minimum amount of RAM required to run the sub-pack (each tier represents 250 MB)|
-|**memory_performance_tier**| Denotes the optimal platform for a subpack (values range 1&ndash;5)|
+|**memory_tier**| Designates the minimum amount of RAM required to run the sub-pack (each tier represents 250 MB). In a future release, this component will be completely replaced by memory_performance_tier|
+|**memory_performance_tier**| Denotes the optimal platform for a subpack (values range 1&ndash;5). This component is still in experimental and requires manifest V3 to use|
 |**type**| Lets you enter a description of your pack and sub-packs|
 |**text**| The description players see when choosing your sub-pack
 
@@ -108,7 +108,7 @@ Now that our manifest is complete, here is our example sub-pack in action!
 
 ## Subpack selection
 
-With our new tier system, each tier represents a different platform. So, there's no more guess-work required when you're trying to assign a tier to your device's memory capacity. If you're familiar with the old way of doing things, we've provided a table below to help you adjust.
+With our new tier system, each tier represents a different platform. So, there's no more guess-work required when you're trying to assign a tier to your device's memory capacity.
 
 ### Memory tier alignment
 
@@ -122,7 +122,7 @@ With our new tier system, each tier represents a different platform. So, there's
 
 By default, the system scans the list of subpacks in your manifest file for the highest `memory_performance_tier` value that doesn't exceed the tier of the player's device to select a sub-pack.
 
-As a creator, you can change the default subpack selected as long as it's within players' platform capabilities. For example, a PS5 Pro defaults to Tier 5 but can be manually changed to select Tier 4 instead.
+As a creator, you can change the default subpack selection as long as it's within players' platform capabilities. For example, a PS5 Pro defaults to Tier 5 but can be manually changed to select Tier 4 instead.
 
 > [!Note]
 > In the case of a tie, the system selects the last subpack listed of that tier. We recommend you avoid including multiple subpacks of the same tier in a single manifest file to avoid those confusing conflicts.
