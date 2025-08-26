@@ -17,14 +17,14 @@ Defines an entity's transformation from the current definition into another.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | add | *not set* | Array of [Add](#add-item-type) items | List of components to add to the entity after the transformation |  | 
-| begin_transform_sound | *not set* | String | Sound to play when the transformation starts | Zombie Villager v2: `"remedy"` | 
-| delay | *not set* | Array of [Delay](#delay-item-type) items | Defines the properties of the delay for the transformation | Husk: `{"value":15}`, Pig: `0.5`, Zombie Villager v2: `{"value":100,"range_min":80,"range_max":200,"block_assist_chance":0.01,"block_radius":4,"block_chance":0.3,"block_types":["minecraft:bed","minecraft:iron_bars"]}` | 
+| begin_transform_sound | *not set* | String | Sound to play when the transformation starts | Zombie Villager: `"remedy"` | 
+| delay | *not set* | Array of [Delay](#delay-item-type) items | Defines the properties of the delay for the transformation | Husk: `{"value":15}`, Pig: `0.5`, Zombie Villager: `{"value":100,"block_assist_chance":0.01,"block_radius":4,"block_chance":0.3,"block_types":["minecraft:bed","minecraft:iron_bars"]}` | 
 | drop_equipment | false | Boolean true/false | Cause the entity to drop all equipment upon transformation | Husk: `true` | 
 | drop_inventory | false | Boolean true/false | Cause the entity to drop all items in inventory upon transformation | Piglin: `true` | 
 | into | *not set* | String | Entity Definition that this entity will transform into | Hoglin: `"minecraft:zoglin"`, Husk: `"minecraft:zombie<minecraft:as_adult>"`, `"minecraft:zombie<minecraft:as_baby>"` | 
 | keep_level | false | Boolean true/false | If this entity has trades and has leveled up, it should maintain that level after transformation. | Hoglin: `true` | 
 | keep_owner | false | Boolean true/false | If this entity is owned by another entity, it should remain owned after transformation. |  | 
-| preserve_equipment | false | Boolean true/false | Cause the entity to keep equipment after going through transformation | Piglin Brute: `true` | 
+| preserve_equipment | false | Boolean true/false | Cause the entity to keep equipment after going through transformation | Piglin: `true` | 
 | transformation_sound | *not set* | String | Sound to play when the entity is done transforming | Hoglin: `"mob.hoglin.converted_to_zombified"`, Husk: `"mob.husk.convert_to_zombie"`, Pig: `"mob.pig.death"` | 
 
 ## Add item type
@@ -115,18 +115,6 @@ At /minecraft:entity/component_groups/minecraft:convert_to_baby_zombie/minecraft
 }
 ```
 
-#### [Piglin Brute](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin_brute.json)
-
-
-```json
-"minecraft:transformation": {
-  "into": "minecraft:zombie_pigman",
-  "transformation_sound": "converted_to_zombified",
-  "keep_level": true,
-  "preserve_equipment": true
-}
-```
-
 #### [Piglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin.json)
 
 
@@ -136,6 +124,18 @@ At /minecraft:entity/component_groups/minecraft:convert_to_baby_zombie/minecraft
   "transformation_sound": "converted_to_zombified",
   "keep_level": true,
   "drop_inventory": true,
+  "preserve_equipment": true
+}
+```
+
+#### [Piglin Brute](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin_brute.json)
+
+
+```json
+"minecraft:transformation": {
+  "into": "minecraft:zombie_pigman",
+  "transformation_sound": "converted_to_zombified",
+  "keep_level": true,
   "preserve_equipment": true
 }
 ```
@@ -173,7 +173,7 @@ At /minecraft:entity/component_groups/minecraft:convert_to_baby_zombie/minecraft
 }
 ```
 
-#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+#### [Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager.json)
 
 At /minecraft:entity/component_groups/become_witch/minecraft:transformation/: 
 
@@ -184,11 +184,19 @@ At /minecraft:entity/component_groups/become_witch/minecraft:transformation/:
 }
 ```
 
+At /minecraft:entity/component_groups/become_villager_v2/minecraft:transformation/: 
+
+```json
+"minecraft:transformation": {
+  "into": "minecraft:villager_v2",
+  "keep_level": true
+}
+```
+
 At /minecraft:entity/component_groups/become_zombie/minecraft:transformation/: 
 
 ```json
 "minecraft:transformation": {
-  "into": "minecraft:zombie_villager_v2",
-  "keep_level": true
+  "into": "minecraft:zombie_villager"
 }
 ```

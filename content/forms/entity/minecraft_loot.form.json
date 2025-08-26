@@ -236,13 +236,13 @@
               "content": "loot_tables/entities/pig_saddled.json"
             }
           ],
-          "/vanilla/behavior_pack/entities/piglin_brute.json": [
+          "/vanilla/behavior_pack/entities/piglin.json": [
             {
               "path": "/minecraft:entity/components/minecraft:loot/",
               "content": "loot_tables/entities/piglin.json"
             }
           ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
+          "/vanilla/behavior_pack/entities/piglin_brute.json": [
             {
               "path": "/minecraft:entity/components/minecraft:loot/",
               "content": "loot_tables/entities/piglin.json"
@@ -314,16 +314,16 @@
               "content": "loot_tables/entities/silverfish.json"
             }
           ],
-          "/vanilla/behavior_pack/entities/skeleton_horse.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:skeleton_horse_adult/minecraft:loot/",
-              "content": "loot_tables/entities/skeleton_horse.json"
-            }
-          ],
           "/vanilla/behavior_pack/entities/skeleton.json": [
             {
               "path": "/minecraft:entity/components/minecraft:loot/",
               "content": "loot_tables/entities/skeleton.json"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:skeleton_horse_adult/minecraft:loot/",
+              "content": "loot_tables/entities/skeleton_horse.json"
             }
           ],
           "/vanilla/behavior_pack/entities/slime.json": [
@@ -396,16 +396,16 @@
               "content": "loot_tables/entities/witch.json"
             }
           ],
-          "/vanilla/behavior_pack/entities/wither_skeleton.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:loot/",
-              "content": "loot_tables/entities/wither_skeleton.json"
-            }
-          ],
           "/vanilla/behavior_pack/entities/wither.json": [
             {
               "path": "/minecraft:entity/components/minecraft:loot/",
               "content": "loot_tables/entities/wither_boss.json"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wither_skeleton.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:loot/",
+              "content": "loot_tables/entities/wither_skeleton.json"
             }
           ],
           "/vanilla/behavior_pack/entities/wolf.json": [
@@ -420,6 +420,12 @@
               "content": "loot_tables/entities/zoglin.json"
             }
           ],
+          "/vanilla/behavior_pack/entities/zombie.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:loot/",
+              "content": "loot_tables/entities/zombie.json"
+            }
+          ],
           "/vanilla/behavior_pack/entities/zombie_horse.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:horse_adult/minecraft:loot/",
@@ -430,12 +436,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:loot/",
               "content": "loot_tables/entities/zombie_pigman.json"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:loot/",
-              "content": "loot_tables/entities/zombie.json"
             }
           ],
           "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
@@ -850,7 +850,7 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/piglin_brute.json": [
+      "/vanilla/behavior_pack/entities/piglin.json": [
         {
           "path": "/minecraft:entity/components/minecraft:loot/",
           "content": {
@@ -858,7 +858,7 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/piglin.json": [
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
         {
           "path": "/minecraft:entity/components/minecraft:loot/",
           "content": {
@@ -956,19 +956,19 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:skeleton_horse_adult/minecraft:loot/",
-          "content": {
-            "table": "loot_tables/entities/skeleton_horse.json"
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/skeleton.json": [
         {
           "path": "/minecraft:entity/components/minecraft:loot/",
           "content": {
             "table": "loot_tables/entities/skeleton.json"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:skeleton_horse_adult/minecraft:loot/",
+          "content": {
+            "table": "loot_tables/entities/skeleton_horse.json"
           }
         }
       ],
@@ -1074,19 +1074,19 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:loot/",
-          "content": {
-            "table": "loot_tables/entities/wither_skeleton.json"
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/wither.json": [
         {
           "path": "/minecraft:entity/components/minecraft:loot/",
           "content": {
             "table": "loot_tables/entities/wither_boss.json"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:loot/",
+          "content": {
+            "table": "loot_tables/entities/wither_skeleton.json"
           }
         }
       ],
@@ -1106,6 +1106,14 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:loot/",
+          "content": {
+            "table": "loot_tables/entities/zombie.json"
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/zombie_horse.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:horse_adult/minecraft:loot/",
@@ -1122,14 +1130,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:loot/",
-          "content": {
-            "table": "loot_tables/entities/zombie.json"
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/zombie_villager.json": [
         {
           "path": "/minecraft:entity/components/minecraft:loot/",
@@ -1138,7 +1138,7 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
         {
           "path": "/minecraft:entity/components/minecraft:loot/",
           "content": {

@@ -1,0 +1,17 @@
+{
+  "id": "Jigsaw Structure Metadata Registry",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Jigsaw Structure Metadata Registry",
+    "title": "Jigsaw Structure Metadata Registry Structure",
+    "fields": [
+      {
+        "id": "metadata",
+        "title": "Metadata",
+        "description": "The registry associating structure locations with generated Jigsaw structure metadata.",
+        "dataType": 14,
+        "isRequired": true
+      }
+    ]
+  }
+}

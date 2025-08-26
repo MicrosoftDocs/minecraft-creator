@@ -45,6 +45,12 @@
           "content": "#5f4a2b"
         }
       ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:map_color/",
+          "content": "#639f28"
+        }
+      ],
       "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_corner.block.json": [
         {
           "path": "/minecraft:block/components/minecraft:map_color/",
@@ -55,12 +61,6 @@
         {
           "path": "/minecraft:block/components/minecraft:map_color/",
           "content": "#5f4a2b"
-        }
-      ],
-      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json": [
-        {
-          "path": "/minecraft:block/components/minecraft:map_color/",
-          "content": "#639f28"
         }
       ],
       "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_tree_top.block.json": [
@@ -105,6 +105,12 @@
           "content": "#5f4a2b"
         }
       ],
+      "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:map_color/",
+          "content": "#639f28"
+        }
+      ],
       "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave_corner.block.json": [
         {
           "path": "/minecraft:block/components/minecraft:map_color/",
@@ -115,12 +121,6 @@
         {
           "path": "/minecraft:block/components/minecraft:map_color/",
           "content": "#5f4a2b"
-        }
-      ],
-      "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave.block.json": [
-        {
-          "path": "/minecraft:block/components/minecraft:map_color/",
-          "content": "#639f28"
         }
       ],
       "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_tree_top.block.json": [

@@ -1,0 +1,76 @@
+{
+  "id": "Box",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Box",
+    "title": "Box Voxel Shapes",
+    "fields": [
+      {
+        "id": "max",
+        "title": "Max",
+        "dataType": 32,
+        "alternates": [
+          {
+            "id": "max",
+            "dataType": 16,
+            "subForm": {
+              "id": "max",
+              "title": "Max",
+              "fields": [
+                {
+                  "id": "x",
+                  "title": "X",
+                  "dataType": 3
+                },
+                {
+                  "id": "y",
+                  "title": "Y",
+                  "dataType": 3
+                },
+                {
+                  "id": "z",
+                  "title": "Z",
+                  "dataType": 3
+                }
+              ]
+            }
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "min",
+        "title": "Min",
+        "dataType": 32,
+        "alternates": [
+          {
+            "id": "min",
+            "dataType": 16,
+            "subForm": {
+              "id": "min",
+              "title": "Min",
+              "fields": [
+                {
+                  "id": "x",
+                  "title": "X",
+                  "dataType": 3
+                },
+                {
+                  "id": "y",
+                  "title": "Y",
+                  "dataType": 3
+                },
+                {
+                  "id": "z",
+                  "title": "Z",
+                  "dataType": 3
+                }
+              ]
+            }
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  }
+}

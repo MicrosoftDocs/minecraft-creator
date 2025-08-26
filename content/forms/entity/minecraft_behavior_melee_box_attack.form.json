@@ -382,13 +382,13 @@
               "content": 5
             }
           ],
-          "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+          "/vanilla/behavior_pack/entities/zombie_villager.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
               "content": 6
             }
           ],
-          "/vanilla/behavior_pack/entities/zombie_villager.json": [
+          "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
               "content": 6
@@ -579,21 +579,21 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/piglin_brute.json": [
-        {
-          "path": "/minecraft:entity/component_groups/melee_unit/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 4,
-            "speed_multiplier": 1,
-            "track_target": true
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/piglin.json": [
         {
           "path": "/minecraft:entity/component_groups/melee_unit/minecraft:behavior.melee_box_attack/",
           "content": {
             "priority": 8,
+            "speed_multiplier": 1,
+            "track_target": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
+        {
+          "path": "/minecraft:entity/component_groups/melee_unit/minecraft:behavior.melee_box_attack/",
+          "content": {
+            "priority": 4,
             "speed_multiplier": 1,
             "track_target": true
           }
@@ -692,21 +692,21 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
+          "content": {
+            "can_spread_on_fire": true,
+            "priority": 3
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/zombie_pigman.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
           "content": {
             "priority": 4,
             "speed_multiplier": 1.5
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "can_spread_on_fire": true,
-            "priority": 6
           }
         }
       ],
@@ -719,12 +719,12 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
           "content": {
             "can_spread_on_fire": true,
-            "priority": 3
+            "priority": 6
           }
         }
       ]

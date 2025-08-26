@@ -1,0 +1,57 @@
+{
+  "id": "DirectionSettings Proxy",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "DirectionSettings Proxy",
+    "title": "DirectionSettings Proxy Client Particles",
+    "fields": [
+      {
+        "id": "custom_direction",
+        "title": "Custom Direction",
+        "dataType": 24,
+        "minLength": 3,
+        "maxLength": 3,
+        "alternates": [
+          {
+            "id": "custom_direction",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "custom_direction",
+              "title": "Custom Direction",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0,
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "custom_direction",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "min_speed_threshold",
+        "title": "Min Speed Threshold",
+        "dataType": 3
+      },
+      {
+        "id": "mode",
+        "title": "Particle Appearance Billboard Direction Settings Mode",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  }
+}

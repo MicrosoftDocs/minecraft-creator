@@ -1,10 +1,10 @@
 ---
-author: cam-wilkerson
+author: mammerla
 ms.author: mikeam
 title: "Biomes Documentation - Biomes"
 description: "A reference document describing all current Biomes"
 ms.service: minecraft-bedrock-edition
-ms.date: 08/13/2025 
+ms.date: 02/11/2025 
 ---
 
 # Biomes Documentation

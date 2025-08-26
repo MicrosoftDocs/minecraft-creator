@@ -12,6 +12,33 @@ description: Contents of the @minecraft/server-editor.CylinderBrushShape class.
 ## Extends
 - *BrushShape*
 
+## Properties
+
+### **depth**
+`read-only depth: number;`
+
+Type: *number*
+
+### **height**
+`read-only height: number;`
+
+Type: *number*
+
+### **radius**
+`read-only radius: number;`
+
+Type: *number*
+
+### **uniform**
+`read-only uniform: boolean;`
+
+Type: *boolean*
+
+### **width**
+`read-only width: number;`
+
+Type: *number*
+
 ## Methods
 - [constructor](#(constructor))
 - [createSettingsPane](#createsettingspane)
@@ -29,6 +56,7 @@ new CylinderBrushShape(settings?: {
         xRotation?: number;
         yRotation?: number;
         zRotation?: number;
+        hideRotation?: boolean;
     })
 `
 
@@ -45,6 +73,7 @@ Constructs a new instance of the `CylinderBrushShape` class
         xRotation?: number;
         yRotation?: number;
         zRotation?: number;
+        hideRotation?: boolean;
     }*
 
 **Returns** *CylinderBrushShape*

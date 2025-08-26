@@ -16,11 +16,11 @@ Adds a timer for the entity to grow up. It can be accelerated by giving the enti
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| drop_items | *not set* | Array of strings | List of items that the entity drops when it grows up. | Turtle: `["turtle_shell_piece"]` | 
+| drop_items | *not set* | Array of strings | List of items that are dropped when an entity grows up | Turtle: `["turtle_shell_piece"]` | 
 | duration | 1200 | Decimal number | Length of time before an entity grows up (-1 to always stay a baby) | Armadillo: `1200`, Sniffer: `2400` | 
 | feed_items | *not set* | Array of strings | List of items that can be fed to the entity. Includes 'item' for the item name and 'growth' to define how much time it grows up by. | Armadillo: `"spider_eye"`, Axolotl: `"tropical_fish_bucket"`, Bee: `["minecraft:poppy","minecraft:blue_orchid","minecraft:allium","minecraft:azure_bluet","minecraft:red_tulip","minecraft:orange_tulip","minecraft:white_tulip","minecraft:pink_tulip","minecraft:oxeye_daisy","minecraft:cornflower","minecraft:lily_of_the_valley","minecraft:dandelion","minecraft:wither_rose","minecraft:sunflower","minecraft:lilac","minecraft:rose_bush","minecraft:peony","minecraft:flowering_azalea","minecraft:azalea_leaves_flowered","minecraft:mangrove_propagule","minecraft:pitcher_plant","minecraft:torchflower","minecraft:cherry_leaves","minecraft:pink_petals","minecraft:wildflowers","minecraft:cactus_flower"]` | 
-| feedItems | *not set* | Array of strings |  |  | 
-| grow_up | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to run when this entity grows up. | Armadillo: `{"event":"minecraft:ageable_grow_up","target":"self"}`, Dolphin: `{"event":"ageable_grow_up","target":"self"}`, Rabbit: `{"event":"grow_up","target":"self"}` | 
+| feedItems | *not set* | Array of strings | List of items that can be fed to an entity to age them up |  | 
+| grow_up | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to fire when an entity grows up | Armadillo: `{"event":"minecraft:ageable_grow_up","target":"self"}`, Dolphin: `{"event":"ageable_grow_up","target":"self"}`, Rabbit: `{"event":"grow_up","target":"self"}` | 
 | interact_filters | *not set* | Minecraft filter | List of conditions to meet so that the entity can be fed. | Armadillo: `{"test":"enum_property","domain":"minecraft:armadillo_state","value":"unrolled"}` | 
 | transform_to_item | *not set* | Array of strings | The feed item used will transform to this item upon successful interaction. Format: itemName:auxValue | Axolotl: `"water_bucket:0"` | 
 

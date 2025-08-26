@@ -18,7 +18,7 @@ Sets the item as a planter item component for blocks. Items with this component 
 > This item requires a format version of at least 1.21.50.
 
 
-## Minecraft Block Placer Item Properties
+## Minecraft Block Placer Item Components Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

@@ -72,13 +72,13 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
+      "/vanilla/behavior_pack/entities/wither.json": [
         {
           "path": "/minecraft:entity/components/minecraft:fire_immune/",
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/wither.json": [
+      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
         {
           "path": "/minecraft:entity/components/minecraft:fire_immune/",
           "content": {}

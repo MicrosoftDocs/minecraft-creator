@@ -75,6 +75,13 @@ The component can be defined as an object to gain control over more specific beh
 "minecraft:geometry": "geometry.frond_top"
 ```
 
+#### [Block Palm Leave](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json)
+
+
+```json
+"minecraft:geometry": "geometry.palm_leave"
+```
+
 #### [Block Palm Leave Corner](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_corner.block.json)
 
 
@@ -87,13 +94,6 @@ The component can be defined as an object to gain control over more specific beh
 
 ```json
 "minecraft:geometry": "geometry.palm_leave_tip"
-```
-
-#### [Block Palm Leave](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json)
-
-
-```json
-"minecraft:geometry": "geometry.palm_leave"
 ```
 
 #### [Block Palm Tree Top](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_tree_top.block.json)

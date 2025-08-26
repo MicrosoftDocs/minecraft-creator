@@ -260,7 +260,7 @@
       {
         "id": "set_target",
         "title": "Set Target",
-        "description": "Defines if and how the owner entity will set entities that are looking at it as its combat targets. Valid values:\r\n                                          \\n- \"never\", looking entities are never set as targets, but events are emitted.\r\n                                          \\n- \"once_and_stop_scanning\", the first detected looking entity is set as target. Scanning and event emission is suspended if and until the owner entity has a target.\r\n                                          \\n- \"once_and_keep_scanning\", the first detected looking entity is set as target. Scanning and event emission continues.s",
+        "description": "Defines if and how the owner entity will set entities that are looking at it as its combat targets. Valid values:\n                                          \\n- \"never\", looking entities are never set as targets, but events are emitted.\n                                          \\n- \"once_and_stop_scanning\", the first detected looking entity is set as target. Scanning and event emission is suspended if and until the owner entity has a target.\n                                          \\n- \"once_and_keep_scanning\", the first detected looking entity is set as target. Scanning and event emission continues.s",
         "defaultValue": false,
         "dataType": 1,
         "samples": {
