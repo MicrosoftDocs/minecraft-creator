@@ -1,19 +1,22 @@
 ---
 author: chipotle
 ms.author: mikeam
-title: Introduction to Molang
-description: "A reference document introducing Molang syntax, concepts, and functions."
+title: Molang Syntax Guide
+description: "A reference document covering Molang syntax, concepts, and functions."
 ms.service: minecraft-bedrock-edition
 ms.date: 08/13/2025
 ---
 
-# Introduction to Molang
+# Molang Syntax Guide
 
-Molang is a simple expression-based language designed for fast, data-driven calculation of values at runtime, with a direct connection to in-game values and systems.  It enables low-level systems like animation to support flexible data-driven behavior with high performance.
+> [!NOTE]
+> If you haven't read [An Introduction to Molang](./introduction.md), start there first!
+
+Molang is a simple expression language designed to be embedded in Minecraft JSON files. It provides fast, data-driven calculation of values at runtime, with a direct connection to in-game values and systems.  Molang enables low-level systems like animation to support flexible data-driven behavior with high performance.
 
 ## Syntax
 
-Molang uses a simple, C-like syntax. An expression can be formed from a simple value or math calculation, or a series of sub-expressions to allow for more complicated code.
+Molang uses a simple, C-like syntax. An expression can be formed from a simple value, a math calculation or query function, or a series of sub-expressions to allow for more complicated code.
 
 Like C, Molang statements terminate with a semicolon (`;`), but in simple cases, the terminating `;` should be omitted, and the result of the single expression is directly returned.
 
@@ -21,7 +24,7 @@ Like C, Molang statements terminate with a semicolon (`;`), but in simple cases,
 math.sin(query.anim_time * 1.23)
 ```
 
-Here's an example of a simple Molang expression used in a condition from the [Block States and Permutations](../../../BlockReference/Examples/BlockStatesAndPermutations.md) article:
+Here's an example of a simple Molang expression used in a condition from the [Block States and Permutations](../../Reference/Content/BlockReference/Examples/BlockStatesAndPermutations.md) article:
 
 ```json
 {
@@ -135,7 +138,7 @@ Molang supports the following value types as well:
 
 ## Query functions
 
-Query functions (such as `query.is_baby` or `query.is_item_equipped('main_hand')`) allow expressions to read game data.  If a query function takes no arguments, do not use parentheses. Otherwise, use parentheses and separate arguments with commas. For a full list of query functions, read the [Query Functions](QueryFunctions.md) article.
+Query functions (such as `query.is_baby` or `query.is_item_equipped('main_hand')`) allow expressions to read game data.  If a query function takes no arguments, do not use parentheses. Otherwise, use parentheses and separate arguments with commas. For a full list of query functions, read the [Query Functions](../../Reference/Content/MolangReference/Examples/MolangConcepts/QueryFunctions.md) article.
 
 ## Aliases
 
@@ -289,10 +292,10 @@ v.larger_value = (v.a > v.b) ? v.a : v.b;
 
 ## Loop
 
-Sometimes you want to execute an expression multiple times. Rather than copy-pasting it a bunch, you can use `loop(<count>, <expression>);`. We have placed some arbitrary restrictions on these for safety for now.The maximum loop counter is 1024.
+Sometimes you want to execute an expression multiple times. Rather than copy-pasting it a bunch, you can use `loop(<count>, <expression>);`.
 
 > [!CAUTION]
-> Also, note that while you can nest loops inside loops pretty much as deep as you want, be careful you don't make a loop so long it will hang your game!
+> The maximum loop counter is 1024 for safety reasons. While you can nest loops inside loops pretty much as deep as you want, be careful you don't make a loop so long it will hang your game!
 
 The example below showcases how a Fibonacci Calculator can be written in Molang:
 
