@@ -250,7 +250,7 @@ These JSON files drive Gray Wave item rendering, including the turrets in **turr
 }
 ```
 
-You can see how the texture-changing trick is accomplished here: in the render controller for the turret, we put the various damage level textures in `Array.damageLevels`, then use a bit of [Molang](../Documents/MolangBeginnersGuide.md) to choose which texture to map to the model by dividing the turret's health by `50`, arriving at a number from `0` (most damaged) to`4` (least damaged), and choosing the corresponding texture.
+You can see how the texture-changing trick is accomplished here: in the render controller for the turret, we put the various damage level textures in `Array.damageLevels`, then use a bit of [Molang](../Documents/molang/introduction.md) to choose which texture to map to the model by dividing the turret's health by `50`, arriving at a number from `0` (most damaged) to`4` (least damaged), and choosing the corresponding texture.
 
 ## Wrapping up
 

@@ -24,4 +24,4 @@ The Minecraft Learning Portal has multiple articles covering aspects of game dev
 
 - [Introduction to Scripting](./scripting/introduction.md)
 - [Script API Reference](../ScriptAPI/index.yml)
-- [Molang Reference](../Reference/Content/MolangReference/index.yml)
+- [Introduction to Molang](./molang/introduction.md)

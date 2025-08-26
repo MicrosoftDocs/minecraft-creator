@@ -18,7 +18,7 @@ First, let's start by describing each part of the entity animation system.
 Animations in Minecraft define the raw animation data for an entity. Animation files contain keyframe data that shows how the game should manipulate the bones, properties, or other components of an entity's model over a specific period of time (in frames). You can use animations to define specific sequences, such as walking, attacking, or idle poses that the entity should repeat when performing certain actions. For more specific information on animations, check out [Animation Documentation - Getting Started](../Reference/Content/AnimationsReference/Examples/AnimationGettingStarted.md).
 
 > [!NOTE]
-> Animations can also use Molang expressions to determine changes to an entity model (e.g., a rotating bone) over time. Sometimes Molang expressions can even be used instead of explicit keyframes. To learn more about Molang expressions, see [A first look at Molang](MolangBeginnersGuide.md).
+> Animations can also use Molang expressions to determine changes to an entity model (e.g., a rotating bone) over time. Sometimes Molang expressions can even be used instead of explicit keyframes. To learn more about Molang expressions, see [An Introduction to Molang](./molang/introduction.md).
 
 Animation controllers add logic to an entity to manage and trigger animations at the appropriate time or in response to an appropriate event. Animation controllers define when different animations play based on an entity's condition and current state. To learn more about animation controllers, see [Introduction to Animation Controllers](IntroductionToAnimationControllers.md).
 
