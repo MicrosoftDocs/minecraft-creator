@@ -380,6 +380,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "Documents/UtilizingSubpacks.md",
+      "redirect_url": "/minecraft/creator/documents/buildingsubpacks",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "Documents/MolangBeginnersGuide.md",
       "redirect_url": "/minecraft/creator/documents/introduction",
       "redirect_document_id": false
