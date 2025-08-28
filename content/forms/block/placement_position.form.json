@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Placement Position",
-    "title": "Placement Position Block",
+    "title": "Block Placement Position",
     "fields": [
       {
         "id": "enabled_states",

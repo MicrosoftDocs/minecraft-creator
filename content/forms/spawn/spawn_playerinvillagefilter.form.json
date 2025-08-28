@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn PlayerInVillageFilter",
-    "title": "Spawn PlayerInVillageFilter Spawn",
+    "title": "Spawn PlayerInVillageFilter",
     "fields": [
       {
         "id": "distance",

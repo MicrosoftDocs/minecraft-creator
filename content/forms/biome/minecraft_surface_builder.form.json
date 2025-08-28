@@ -1,9 +1,38 @@
 {
   "id": "minecraft:surface_builder",
-  "fields": [],
+  "fields": [
+    {
+      "id": "builder",
+      "dataType": 16,
+      "subFormId": "biome/minecraft_overworld",
+      "isRequired": true,
+      "alternates": [
+        {
+          "dataType": 16,
+          "subFormId": "biome/minecraft_frozen_ocean"
+        },
+        {
+          "dataType": 16,
+          "subFormId": "biome/minecraft_mesa"
+        },
+        {
+          "dataType": 16,
+          "subFormId": "biome/minecraft_swamp"
+        },
+        {
+          "dataType": 16,
+          "subFormId": "biome/minecraft_capped"
+        },
+        {
+          "dataType": 16,
+          "subFormId": "biome/minecraft_the_end"
+        }
+      ]
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:surface_builder",
-    "title": "Minecraft Surface Builder Biome",
+    "title": "Biome Surface Builder",
     "description": "Controls the materials used for terrain generation.",
     "fields": [
       {

@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "RandomBlockMatch",
-    "title": "RandomBlockMatch World",
+    "title": "World RandomBlockMatch",
     "description": "Predicate that evaluates to true with a given probability if the block at the specified location matches the specified block.",
     "fields": [
       {

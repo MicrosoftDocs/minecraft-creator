@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn Weight",
-    "title": "Spawn Weight Spawn",
+    "title": "Spawn Weight",
     "fields": [
       {
         "id": "default",

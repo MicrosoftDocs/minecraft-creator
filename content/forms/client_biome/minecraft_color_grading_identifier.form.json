@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:color_grading_identifier",
-    "title": "Minecraft Color Grading Identifier Client Biome",
+    "title": "Client Biome Color Grading Identifier",
     "description": "Set the identifier used for color grading in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Color Grading JSON schemas under the \"color_grading\" directory. Biomes without this component will have default color_grading settings.",
     "fields": [
       {

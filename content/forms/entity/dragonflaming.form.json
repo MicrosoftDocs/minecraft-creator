@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.dragonflaming",
-    "title": "Minecraft Behavior.dragonflaming Entity",
+    "title": "Entity Dragonflaming Behavior",
     "description": "Allows this entity to use a flame-breath attack. Can only be used by the Ender Dragon.",
     "fields": [
       {

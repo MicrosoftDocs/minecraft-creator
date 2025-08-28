@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Ammunition",
-    "title": "Ammunition Item Components",
+    "title": "Item Components Ammunition",
     "fields": [
       {
         "id": "item",

@@ -1,5 +1,6 @@
 {
   "fields": [],
+  "note": "This is a pre-Caves and Cliffs component and is unused for custom biomes.",
   "generated_doNotEdit": {
     "title": "Multinoise Generation Rules",
     "description": "Controls how this biome is instantiated (and then potentially modified) during world generation of the nether.",
@@ -38,7 +39,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:multinoise_generation_rules",
-    "title": "Minecraft Multinoise Generation Rules Biome",
+    "title": "Biome Multinoise Generation Rules",
     "description": "Controls how this biome is instantiated (and then potentially modified) during world generation of the nether.",
     "fields": [
       {

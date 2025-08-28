@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "DirectionSettings Proxy",
-    "title": "DirectionSettings Proxy Client Particles",
+    "title": "Client Particles DirectionSettings Proxy",
     "fields": [
       {
         "id": "custom_direction",

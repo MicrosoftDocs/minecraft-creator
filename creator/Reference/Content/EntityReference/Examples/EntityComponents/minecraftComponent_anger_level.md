@@ -32,11 +32,11 @@ Compels the entity to track anger towards a set of nuisances.
 | filters | *not set* | Minecraft filter | Filter out mob types that it should not attack while angry (other Piglins) |  | 
 | max_anger | 100 | Integer number | The maximum anger level that can be reached. Applies to any nuisance Value must be >= 0. | Warden: `150` | 
 | nuisance_filter | *not set* | Minecraft filter | Filter that is applied to determine if a mob can be a nuisance | Warden: `{"all_of":[{"test":"is_family","subject":"other","operator":"not","value":"warden"},{"test":"is_family","subject":"other","operator":"not","value":"inanimate"}]}` | 
-| on_increase_sounds | *not set* | Array of [Increase Sounds](#increase-sounds-item-type) items | Sounds to play when the entity is getting provoked. Evaluated in order. First matching condition wins | Warden: `[{"sound":"listening_angry","condition":"query.anger_level(this) >= 40"},{"sound":"listening","condition":"query.anger_level(this) >= 0"}]` | 
+| on_increase_sounds | *not set* | Array of [Increase Sounds](#increase-sounds) items | Sounds to play when the entity is getting provoked. Evaluated in order. First matching condition wins | Warden: `[{"sound":"listening_angry","condition":"query.anger_level(this) >= 40"},{"sound":"listening","condition":"query.anger_level(this) >= 0"}]` | 
 | remove_targets_below_angry_threshold | true | Boolean true/false | Defines if the mob should remove target if it falls below 'angry' threshold | Warden: `true` | 
 | sound_interval | *not set* | Range of integers | Anger boost applied to angry threshold when the entity gets angry. |  | 
 
-## Increase Sounds item type
+## Increase Sounds
 Sounds to play when the entity is getting provoked. Evaluated in order. First matching condition wins.
 
 

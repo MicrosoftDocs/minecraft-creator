@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Specifies the maximum weight limit that a storage item can hold.
 
 
-## Minecraft Storage Weight Modifier Item Components Properties
+## Item Components Storage Weight Modifier Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

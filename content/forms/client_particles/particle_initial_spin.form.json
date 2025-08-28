@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_initial_spin",
-    "title": "Particle Initial Spin Client Particles",
+    "title": "Client Particles Particle Initial Spin",
     "fields": [
       {
         "id": "rotation",

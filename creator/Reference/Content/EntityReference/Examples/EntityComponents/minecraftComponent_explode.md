@@ -16,7 +16,7 @@ Defines how the entity explodes.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| add | *not set* | [Add](#add-item-type) item |  | Fireball: `{"component_groups":["minecraft:exploding"]}` | 
+| add | *not set* | [Add (Add)](#add-add) item |  | Fireball: `{"component_groups":["minecraft:exploding"]}` | 
 | allow_underwater | false | Boolean true/false | If true, the explosion will affect blocks and entities under water. This item requires a format version of at least undefined. | Breeze Wind Charge Projectile: `true` | 
 | breaks_blocks | true | Boolean true/false | If true, the explosion will destroy blocks in the explosion radius. |  | 
 | causes_fire | false | Boolean true/false | If true, blocks in the explosion radius will be set on fire. | Fireball: `true` | 
@@ -33,7 +33,7 @@ Defines how the entity explodes.
 | sound_effect | explode | String | The name of the sound effect played when the explosion triggers. This item requires a format version of at least undefined. | Breeze Wind Charge Projectile: `"breeze_wind_charge.burst"`, Wind Charge Projectile: `"wind_charge.burst"`, Campghost: `"scary"` | 
 | toggles_blocks | false | Boolean true/false | If true, the explosion will toggle blocks in the explosion radius. This item requires a format version of at least undefined. | Breeze Wind Charge Projectile: `true` | 
 
-## Add item type
+## Add (Add)
 
 #### Add Properties
 

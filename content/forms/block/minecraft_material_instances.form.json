@@ -14,41 +14,83 @@
       "id": "*",
       "title": "Default settings for all faces (*)",
       "dataType": 16,
-      "subFormId": "block/materialinstanceface"
+      "subFormId": "block/materialinstanceface",
+      "alternates": [
+        {
+          "dataType": 2
+        }
+      ]
     },
     {
       "id": "north",
       "title": "North",
       "dataType": 16,
-      "subFormId": "block/materialinstanceface"
+      "subFormId": "block/materialinstanceface",
+      "alternates": [
+        {
+          "dataType": 2
+        }
+      ]
     },
     {
       "id": "south",
       "title": "South",
       "dataType": 16,
-      "subFormId": "block/materialinstanceface"
+      "subFormId": "block/materialinstanceface",
+      "alternates": [
+        {
+          "dataType": 2
+        }
+      ]
     },
     {
       "id": "east",
       "title": "East",
       "dataType": 16,
-      "subFormId": "block/materialinstanceface"
+      "subFormId": "block/materialinstanceface",
+      "alternates": [
+        {
+          "dataType": 2
+        }
+      ]
     },
     {
       "id": "west",
       "title": "West",
       "dataType": 16,
-      "subFormId": "block/materialinstanceface"
+      "subFormId": "block/materialinstanceface",
+      "alternates": [
+        {
+          "dataType": 2
+        }
+      ]
     },
     {
       "id": "up",
       "title": "Up",
       "dataType": 16,
-      "subFormId": "block/materialinstanceface"
+      "subFormId": "block/materialinstanceface",
+      "alternates": [
+        {
+          "dataType": 2
+        }
+      ]
     },
     {
       "id": "down",
       "title": "Down",
+      "dataType": 16,
+      "subFormId": "block/materialinstanceface",
+      "alternates": [
+        {
+          "dataType": 2
+        }
+      ]
+    },
+    {
+      "id": "Material Instance",
+      "title": "<Example Custom Material Instance>",
+      "isRemoved": true,
       "dataType": 16,
       "subFormId": "block/materialinstanceface"
     }

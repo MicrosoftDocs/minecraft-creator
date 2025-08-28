@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Set the identifier used for lighting in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Lighting JSON schemas under the "lighting" directory. Biomes without this component will have default lighting settings.
 
 
-## Minecraft Lighting Identifier Client Biome Properties
+## Client Biome Lighting Identifier Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

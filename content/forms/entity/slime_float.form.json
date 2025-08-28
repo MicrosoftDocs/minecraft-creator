@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.slime_float",
-    "title": "Minecraft Behavior.slime Float Entity",
+    "title": "Entity Slime Float Behavior",
     "description": "Allow slimes to float in water / lava. Can only be used by Slime and Magma Cubes.",
     "fields": [
       {

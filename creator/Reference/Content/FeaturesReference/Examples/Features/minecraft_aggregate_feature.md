@@ -16,11 +16,11 @@ Places a collection of features in an arbitrary order. All features in the colle
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description-item-type) item |  |  | 
+| description | *not set* | [Description](#description) item |  |  | 
 | features | *not set* | Array of strings | Collection of features to be placed one by one. No guarantee of order. All features use the same input position. |  | 
 | format_version | *not set* | String |  |  | 
 
-## Description item type
+## Description
 
 #### Description Properties
 

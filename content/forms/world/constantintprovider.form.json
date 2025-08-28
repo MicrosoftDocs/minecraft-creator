@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "ConstantIntProvider",
-    "title": "ConstantIntProvider World",
+    "title": "World ConstantIntProvider",
     "description": "Specifies a constant integer",
     "fields": [
       {

@@ -75,7 +75,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:record",
-    "title": "Minecraft Record Item Components",
+    "title": "Item Components Record",
     "description": "Record Item Component. Used by record items to play music.",
     "fields": [
       {

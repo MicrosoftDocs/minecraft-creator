@@ -23,18 +23,18 @@ Compels an item to shoot projectiles, similarly to a bow or crossbow. Must have 
 > * [Projectile (minecraft:projectile)](../EntityComponents/minecraftComponent_projectile.md)
 > 
 
-## Minecraft Shooter Item Components Properties
+## Item Components Shooter Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| ammunition | *not set* | [Ammunition](#ammunition-item-type) item | Ammunition. | My Sword Shoot: `[{"item":"minecraft:snowball","use_offhand":true,"search_inventory":true,"use_in_creative":true}]` | 
+| ammunition | *not set* | [Ammunition (Item Components Ammunition)](#item-components-ammunition) item | Ammunition. | My Sword Shoot: `[{"item":"minecraft:snowball","use_offhand":true,"search_inventory":true,"use_in_creative":true}]` | 
 | charge_on_draw | *not set* | Boolean true/false | Charge on draw? Default is set to false. |  | 
 | max_draw_duration | *not set* | Decimal number | Draw Duration. Default is set to 0. | My Sword Shoot: `1` | 
 | scale_power_by_draw_duration | *not set* | Boolean true/false | Scale power by draw duration? Default is set to false. | My Sword Shoot: `true` | 
 
-## Ammunition item type
+## Item Components Ammunition
 
-#### Ammunition Item Components Properties
+#### Item Components Ammunition Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

@@ -37,7 +37,7 @@ swamp: Allows ruined portals to be found underwater. Biome uses swamp flowers (m
 taiga: Biomes tagged "forest" or "forest_generation" will use normal Overworld flowers instead of forest flowers.
 
 
-## Minecraft Tags Biome Properties
+## Biome Tags Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

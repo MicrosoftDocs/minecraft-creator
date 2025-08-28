@@ -15,16 +15,16 @@ ms.date: 02/11/2025
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | capabilities | *not set* | Array of strings |  |  | 
-| dependencies | *not set* | [Dependencies](#dependencies-item-type) item |  |  | 
+| dependencies | *not set* | [0.0.Dependency) Dependencies (3](#3.0.0.dependency) item |  |  | 
 | format_version | *not set* | Integer number |  |  | 
 | has_education_metadata | *not set* | Boolean true/false |  |  | 
-| header | *not set* | [Header](#header-item-type) item |  |  | 
-| metadata | *not set* | [Metadata](#metadata-item-type) item |  |  | 
-| modules | *not set* | [Modules](#modules-item-type) item |  |  | 
+| header | *not set* | [0.0.Header) Header (3](#3.0.0.header) item |  |  | 
+| metadata | *not set* | [0.0.Metadata) Metadata (3](#3.0.0.metadata) item |  |  | 
+| modules | *not set* | [0.0.Module) Modules (3](#3.0.0.module) item |  |  | 
 | settings | *not set* | Array of strings |  |  | 
-| subpacks | *not set* | [Subpacks](#subpacks-item-type) item |  |  | 
+| subpacks | *not set* | [0.0.Subpack) Subpacks (3](#3.0.0.subpack) item |  |  | 
 
-## Dependencies item type
+## 3.0.0.Dependency
 
 #### 3.0.0.Dependency Properties
 
@@ -32,10 +32,10 @@ ms.date: 02/11/2025
 |:----------|:-------------|:----|:-----------|:------------- |
 | module_name | *not set* | String |  |  | 
 | uuid | *not set* | Object |  |  | 
-| version | *not set* | [Version](#version-item-type) item |  |  | 
+| version (Version) | *not set* | [Version (Version)](#version-version) item |  |  | 
 | version (Alternate 1) | *not set* | String |  |  | 
 
-## Version item type
+## Version (Version)
 
 #### Version Properties
 
@@ -47,7 +47,7 @@ ms.date: 02/11/2025
 | patch | *not set* | Integer number |  |  | 
 | preRelease | *not set* | String |  |  | 
 
-## Header item type
+## 3.0.0.Header
 
 #### 3.0.0.Header Properties
 
@@ -62,22 +62,10 @@ ms.date: 02/11/2025
 | pack_scope | *not set* | String |  |  | 
 | platform_locked | *not set* | Boolean true/false |  |  | 
 | uuid | *not set* | Object |  |  | 
-| version | *not set* | [Version](#version-item-type) item |  |  | 
+| version (Version) | *not set* | [Version (Version)](#version-version) item |  |  | 
 | version (Alternate 1) | *not set* | String |  |  | 
 
-## Version item type
-
-#### Version Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| buildMeta | *not set* | String |  |  | 
-| major | *not set* | Integer number |  |  | 
-| minor | *not set* | Integer number |  |  | 
-| patch | *not set* | Integer number |  |  | 
-| preRelease | *not set* | String |  |  | 
-
-## Metadata item type
+## 3.0.0.Metadata
 
 #### 3.0.0.Metadata Properties
 
@@ -89,7 +77,7 @@ ms.date: 02/11/2025
 | product_type | *not set* | String |  |  | 
 | url | *not set* | String |  |  | 
 
-## Modules item type
+## 3.0.0.Module
 
 #### 3.0.0.Module Properties
 
@@ -100,22 +88,10 @@ ms.date: 02/11/2025
 | language | *not set* | String |  |  | 
 | type | *not set* | String |  |  | 
 | uuid | *not set* | Object |  |  | 
-| version | *not set* | [Version](#version-item-type) item |  |  | 
+| version (Version) | *not set* | [Version (Version)](#version-version) item |  |  | 
 | version (Alternate 1) | *not set* | String |  |  | 
 
-## Version item type
-
-#### Version Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| buildMeta | *not set* | String |  |  | 
-| major | *not set* | Integer number |  |  | 
-| minor | *not set* | Integer number |  |  | 
-| patch | *not set* | Integer number |  |  | 
-| preRelease | *not set* | String |  |  | 
-
-## Subpacks item type
+## 3.0.0.Subpack
 
 #### 3.0.0.Subpack Properties
 

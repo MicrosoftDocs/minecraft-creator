@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "VerticalAnchorType",
-    "title": "VerticalAnchorType World",
+    "title": "World VerticalAnchorType",
     "description": "Specifies the vertical anchor",
     "fields": [
       {

@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "TemplatePoolElement",
-    "title": "TemplatePoolElement World",
+    "title": "World TemplatePoolElement",
     "fields": [
       {
         "id": "element",

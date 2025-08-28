@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Probability that creatures will spawn within the biome when a chunk is generated.
 
 
-## Minecraft Creature Spawn Probability Biome Properties
+## Biome Creature Spawn Probability Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

@@ -28,8 +28,8 @@ This entity can be ridden.
 | pull_in_entities | false | Boolean true/false | If true, this entity will pull entities matching the specified "family_types" into any available seats. Entities that are leashed will only be pulled in if their distance to their leash holder is less than the "hard_distance" defined in their own "minecraft:leashable" component. | Camel: `true` | 
 | rider_can_interact | false | Boolean true/false | If true, this entity will be picked when looked at by the rider. |  | 
 | seat_count | 1 | Integer number | The number of entities that can ride this entity at the same time. | Camel: `2`, Cat: `1`, Happy Ghast: `4` | 
-| seats | *not set* | Array of [Seats](#seats-item-type) items | The list of positions and number of riders for each position for entities riding this entity. | Camel: `[{"min_rider_count":0,"max_rider_count":2,"position":[0,1.905,0.5]},{"min_rider_count":1,"max_rider_count":2,"position":[0,1.905,-0.5]}]`, Cat: `{"position":[0,0.35,0]}`, Chicken: `{"position":[0,0.48,0]}` | 
-| (deprecated) pulls_in_entities | *not set* | Boolean true/false |  |  | 
+| seats | *not set* | Array of [Seats](#seats) items | The list of positions and number of riders for each position for entities riding this entity. | Camel: `[{"min_rider_count":0,"max_rider_count":2,"position":[0,1.905,0.5]},{"min_rider_count":1,"max_rider_count":2,"position":[0,1.905,-0.5]}]`, Cat: `{"position":[0,0.35,0]}`, Chicken: `{"position":[0,0.48,0]}` | 
+| pulls_in_entities | *not set* | Boolean true/false |  |  | 
 
 ### Dismount Mode choices
 
@@ -38,7 +38,7 @@ This entity can be ridden.
 | default | Default | |
 | on_top_center | On Top Center | |
 
-## Seats item type
+## Seats
 The list of positions and number of riders for each position for entities riding this entity.
 
 

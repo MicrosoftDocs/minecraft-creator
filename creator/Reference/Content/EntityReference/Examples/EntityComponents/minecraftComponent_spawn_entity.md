@@ -16,7 +16,7 @@ Adds a timer after which this entity will spawn another entity or item (similar 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| entities | *not set* | [Entities](#entities-item-type) item |  | Armadillo: `{"min_wait_time":300,"max_wait_time":600,"spawn_sound":"mob.armadillo.scute_drop","spawn_item":"armadillo_scute"}`, Chicken: `[{"min_wait_time":300,"max_wait_time":600,"spawn_sound":"plop","spawn_item":"egg","filters":[{"test":"rider_count","subject":"self","operator":"==","value":0},{"test":"enum_property","subject":"self","domain":"minecraft:climate_variant","value":"temperate"}]},{"min_wait_time":300,"max_wait_time":600,"spawn_sound":"plop","spawn_item":"brown_egg","filters":[{"test":"rider_count","subject":"self","operator":"==","value":0},{"test":"enum_property","subject":"self","domain":"minecraft:climate_variant","value":"warm"}]},{"min_wait_time":300,"max_wait_time":600,"spawn_sound":"plop","spawn_item":"blue_egg","filters":[{"test":"rider_count","subject":"self","operator":"==","value":0},{"test":"enum_property","subject":"self","domain":"minecraft:climate_variant","value":"cold"}]}]`, Ocelot: `{"filters":[{"test":"random_chance","value":7}],"min_wait_time":0,"max_wait_time":0,"num_to_spawn":2,"single_use":true,"spawn_entity":"minecraft:ocelot","spawn_event":"minecraft:entity_born","spawn_method":"born","spawn_sound":""}` | 
+| entities | *not set* | [Entities (Entities)](#entities-entities) item |  | Armadillo: `{"min_wait_time":300,"max_wait_time":600,"spawn_sound":"mob.armadillo.scute_drop","spawn_item":"armadillo_scute"}`, Chicken: `[{"min_wait_time":300,"max_wait_time":600,"spawn_sound":"plop","spawn_item":"egg","filters":[{"test":"rider_count","subject":"self","operator":"==","value":0},{"test":"enum_property","subject":"self","domain":"minecraft:climate_variant","value":"temperate"}]},{"min_wait_time":300,"max_wait_time":600,"spawn_sound":"plop","spawn_item":"brown_egg","filters":[{"test":"rider_count","subject":"self","operator":"==","value":0},{"test":"enum_property","subject":"self","domain":"minecraft:climate_variant","value":"warm"}]},{"min_wait_time":300,"max_wait_time":600,"spawn_sound":"plop","spawn_item":"blue_egg","filters":[{"test":"rider_count","subject":"self","operator":"==","value":0},{"test":"enum_property","subject":"self","domain":"minecraft:climate_variant","value":"cold"}]}]`, Ocelot: `{"filters":[{"test":"random_chance","value":7}],"min_wait_time":0,"max_wait_time":0,"num_to_spawn":2,"single_use":true,"spawn_entity":"minecraft:ocelot","spawn_event":"minecraft:entity_born","spawn_method":"born","spawn_sound":""}` | 
 | filters | *not set* | Minecraft filter | If present, the specified entity will only spawn if the filter evaluates to true. |  | 
 | max_wait_time | 600 | Integer number | Maximum amount of time to randomly wait in seconds before another entity is spawned. |  | 
 | min_wait_time | 300 | Integer number | Minimum amount of time to randomly wait in seconds before another entity is spawned. |  | 
@@ -30,13 +30,13 @@ Adds a timer after which this entity will spawn another entity or item (similar 
 | spawn_method | born | String | Method to use to spawn the entity. |  | 
 | spawn_sound | plop | String | Identifier of the sound effect to play when the entity is spawned. |  | 
 
-## Entities item type
+## Entities (Entities)
 
 #### Entities Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| filters | *not set* | Array of [Filters](#filters-item-type) items |  |  | 
+| filters | *not set* | Array of [Filters (Filters)](#filters-filters) items |  |  | 
 | max_wait_time | *not set* | Decimal number |  | Armadillo: `600` | 
 | min_wait_time | *not set* | Decimal number |  | Armadillo: `300` | 
 | num_to_spawn | *not set* | Decimal number |  |  | 
@@ -47,7 +47,7 @@ Adds a timer after which this entity will spawn another entity or item (similar 
 | spawn_item | *not set* | String |  | Armadillo: `"armadillo_scute"` | 
 | spawn_sound | *not set* | String |  | Armadillo: `"mob.armadillo.scute_drop"` | 
 
-## Filters item type
+## Filters (Filters)
 
 #### Filters Properties
 

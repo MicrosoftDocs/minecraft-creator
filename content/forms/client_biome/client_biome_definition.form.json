@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Client Biome Definition",
-    "title": "Client Biome Definition Client Biome",
+    "title": "Client Biome Definition",
     "description": "Contains a description and components to define a Client Biome.",
     "fields": [
       {

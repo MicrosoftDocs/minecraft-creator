@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn HeightFilter",
-    "title": "Spawn HeightFilter Spawn",
+    "title": "Spawn HeightFilter",
     "fields": [
       {
         "id": "max",

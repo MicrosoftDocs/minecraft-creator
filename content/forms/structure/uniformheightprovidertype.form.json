@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "UniformHeightProviderType",
-    "title": "UniformHeightProviderType Structure",
+    "title": "Structure UniformHeightProviderType",
     "description": "Uniform distribution of possible anchor points",
     "fields": [
       {

@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "UniformIntProvider",
-    "title": "UniformIntProvider World",
+    "title": "World UniformIntProvider",
     "description": "Specifies a uniformly distributed integer",
     "fields": [
       {

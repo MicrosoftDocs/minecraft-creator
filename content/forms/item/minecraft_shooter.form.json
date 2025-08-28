@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:shooter",
-    "title": "Minecraft Shooter Item",
+    "title": "Item Shooter",
     "description": "Shooter Item Component.",
     "fields": [
       {

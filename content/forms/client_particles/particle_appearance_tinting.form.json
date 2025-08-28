@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_appearance_tinting",
-    "title": "Particle Appearance Tinting Client Particles",
+    "title": "Client Particles Particle Appearance Tinting",
     "fields": [
       {
         "id": "color",

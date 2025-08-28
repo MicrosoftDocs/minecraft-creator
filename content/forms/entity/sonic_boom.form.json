@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.sonic_boom",
-    "title": "Minecraft Behavior.sonic Boom Entity",
+    "title": "Entity Sonic Boom Behavior",
     "description": "Allows this entity to perform a 'sonic boom' ranged attack",
     "fields": [
       {

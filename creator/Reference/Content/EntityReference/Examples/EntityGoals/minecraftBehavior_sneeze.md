@@ -18,7 +18,7 @@ Allows the mob to stop and sneeze possibly startling nearby mobs and dropping an
 |:----------|:-------------|:----|:-----------|:------------- |
 | cooldown_time | 0 | Decimal number | Time in seconds the mob has to wait before using the goal again | Panda: `1` | 
 | drop_item_chance | 1 | Decimal number | The probability that the mob will drop an item when it sneezes. | Panda: `0.001` | 
-| entity_types | *not set* | Array of [Entity Types](#entity-types-item-type) items | List of entity types this mob will startle (cause to jump) when it sneezes. | Panda: `[{"filters":{"all_of":[{"test":"has_component","subject":"other","operator":"!=","value":"minecraft:is_baby"},{"test":"is_family","subject":"other","value":"panda"},{"test":"in_water","subject":"other","operator":"!=","value":true},{"test":"on_ground","operator":"==","value":true}]},"max_dist":10}]` | 
+| entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entity types this mob will startle (cause to jump) when it sneezes. | Panda: `[{"filters":{"all_of":[{"test":"has_component","subject":"other","operator":"!=","value":"minecraft:is_baby"},{"test":"is_family","subject":"other","value":"panda"},{"test":"in_water","subject":"other","operator":"!=","value":true},{"test":"on_ground","operator":"==","value":true}]},"max_dist":10}]` | 
 | loot_table | *not set* | String | Loot table to select dropped items from. | Panda: `"loot_tables/entities/panda_sneeze.json"` | 
 | prepare_sound | *not set* | String | Sound to play when the sneeze is about to happen. | Panda: `"presneeze"` | 
 | prepare_time | 1 | Decimal number | The time in seconds that the mob takes to prepare to sneeze (while the prepare_sound is playing). | Panda: `1` | 
@@ -27,7 +27,7 @@ Allows the mob to stop and sneeze possibly startling nearby mobs and dropping an
 | sound | *not set* | String | Sound to play when the sneeze occurs. | Panda: `"sneeze"` | 
 | within_radius | 0 | Decimal number | Distance in blocks that mobs will be startled. | Panda: `10` | 
 
-## Entity Types item type
+## Entity Types
 List of entity types this mob will startle (cause to jump) when it sneezes.
 
 

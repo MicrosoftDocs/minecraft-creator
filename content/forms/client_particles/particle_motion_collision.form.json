@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_motion_collision",
-    "title": "Particle Motion Collision Client Particles",
+    "title": "Client Particles Particle Motion Collision",
     "fields": [
       {
         "id": "coefficient_of_restitution",

@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_rate_steady",
-    "title": "Emitter Rate Steady Client Particles",
+    "title": "Client Particles Emitter Rate Steady",
     "fields": [
       {
         "id": "max_particles",

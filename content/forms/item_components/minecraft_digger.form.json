@@ -45,7 +45,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:digger",
-    "title": "Minecraft Digger Item Components",
+    "title": "Item Components Digger",
     "description": "Digger item component specifies how quickly this item can dig specific blocks.",
     "fields": [
       {

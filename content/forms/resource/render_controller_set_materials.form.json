@@ -23,7 +23,6 @@
                 {
                   "id": "materials",
                   "title": "Materials",
-                  "undefinedIfEmpty": true,
                   "description": "Lists of materials that can be used in selection calculations",
                   "dataType": 28
                 }

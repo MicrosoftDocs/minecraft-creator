@@ -25,13 +25,13 @@ Allows mob to move towards a block.
 | speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal |  | 
 | start_chance | 1 | Decimal number | Chance to start the behavior (applied after each random tick_interval). | Bee: `0.5` | 
 | stay_duration | 0 | Decimal number | Number of ticks needed to complete a stay at the block. | Bee: `20` | 
-| target_block_filters | *not set* | [Target Block Filters](#target-block-filters-item-type) item |  | Bee: `{"test":"is_waterlogged","subject":"block","operator":"==","value":false}` | 
+| target_block_filters | *not set* | [Target Block Filters (Target Block Filters)](#target-block-filters-target-block-filters) item |  | Bee: `{"test":"is_waterlogged","subject":"block","operator":"==","value":false}` | 
 | target_blocks | *not set* | Array of strings | Block types to move to. | Bee: `["minecraft:poppy","minecraft:blue_orchid","minecraft:allium","minecraft:azure_bluet","minecraft:red_tulip","minecraft:orange_tulip","minecraft:white_tulip","minecraft:pink_tulip","minecraft:oxeye_daisy","minecraft:cornflower","minecraft:lily_of_the_valley","minecraft:dandelion","minecraft:wither_rose","minecraft:sunflower","minecraft:lilac","minecraft:rose_bush","minecraft:peony","minecraft:flowering_azalea","minecraft:azalea_leaves_flowered","minecraft:mangrove_propagule","minecraft:pitcher_plant","minecraft:torchflower","minecraft:cherry_leaves","minecraft:pink_petals","minecraft:open_eyeblossom","minecraft:wildflowers","minecraft:cactus_flower"]`, `["bee_nest","beehive"]` | 
 | target_offset | [0, 0, 0] | x, y, z coordinate array | Offset to add to the selected target position. | Bee: `[0,0.25,0]` | 
 | target_selection_method | nearest | String | Kind of block to find fitting the specification. Valid values are "random" and "nearest". | Bee: `"random"` | 
 | tick_interval | 20 | Integer number | Average interval in ticks to try to run this behavior. | Bee: `1` | 
 
-## Target Block Filters item type
+## Target Block Filters (Target Block Filters)
 
 #### Target_block_filters Properties
 

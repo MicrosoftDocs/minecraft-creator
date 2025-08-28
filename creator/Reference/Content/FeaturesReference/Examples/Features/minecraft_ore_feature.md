@@ -17,12 +17,12 @@ Places a vein of blocks to simulate ore deposits. Despite the name, any block ca
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | count | *not set* | Integer number | The number of blocks to be placed. |  | 
-| description | *not set* | [Description](#description-item-type) item |  |  | 
+| description | *not set* | [Description](#description) item |  |  | 
 | format_version | *not set* | String |  |  | 
-| replace_rules | *not set* | Array of [Replace Rules](#replace-rules-item-type) items |  |  | 
+| replace_rules | *not set* | Array of [Replace Rules](#replace-rules) items |  |  | 
 | replace_rules (Alternate 1) | *not set* | Array of strings |  |  | 
 
-## Description item type
+## Description
 
 #### Description Properties
 
@@ -30,7 +30,7 @@ Places a vein of blocks to simulate ore deposits. Despite the name, any block ca
 |:----------|:-------------|:----|:-----------|:------------- |
 | identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
 
-## Replace Rules item type
+## Replace Rules
 
 #### Replace Rules Properties
 

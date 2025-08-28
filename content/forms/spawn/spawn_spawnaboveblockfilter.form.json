@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn SpawnAboveBlockFilter",
-    "title": "Spawn SpawnAboveBlockFilter Spawn",
+    "title": "Spawn SpawnAboveBlockFilter",
     "fields": [
       {
         "id": "blocks",

@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Actor Document",
-    "title": "Actor Document Entity",
+    "title": "Entity Actor Document",
     "fields": [
       {
         "id": "component_groups",

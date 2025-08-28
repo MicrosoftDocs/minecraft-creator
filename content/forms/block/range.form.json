@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Range",
-    "title": "Range Block",
+    "title": "Block Range",
     "fields": [
       {
         "id": "max",

@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Box",
-    "title": "Box Voxel Shapes",
+    "title": "Voxel Shapes Box",
     "fields": [
       {
         "id": "max",

@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.sniff",
-    "title": "Minecraft Behavior.sniff Entity",
+    "title": "Entity Sniff Behavior",
     "description": "Allows this entity to detect the nearest player within \"sniffing_radius\" and update its \"minecraft:suspect_tracking\" component state",
     "fields": [
       {

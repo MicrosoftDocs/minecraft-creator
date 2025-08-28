@@ -18,11 +18,11 @@ Culling for this block is performed without considering the random offset.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| x | *not set* | [X](#x-item-type) item | X coordinate |  | 
-| y | *not set* | [Y](#y-item-type) item | Y coordinate |  | 
-| z | *not set* | [Z](#z-item-type) item | Z coordinate |  | 
+| x | *not set* | [x (Range Of Values Between Two Numbers)](#range-of-values-between-two-numbers) item | X coordinate |  | 
+| y | *not set* | [y (Range Of Values Between Two Numbers)](#range-of-values-between-two-numbers) item | Y coordinate |  | 
+| z | *not set* | [z (Range Of Values Between Two Numbers)](#range-of-values-between-two-numbers) item | Z coordinate |  | 
 
-## X item type
+## Range of values between two numbers
 Specifies a range of values between two numbers, with a defined number of steps. This is used to control the variation in block properties such as offset, color, or other attributes.
 
 
@@ -30,50 +30,10 @@ Specifies a range of values between two numbers, with a defined number of steps.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| range | *not set* | [Range](#range-item-type) item | Range of values |  | 
+| range | *not set* | [Range (Range Of Values)](#range-range-of-values) item | Range of values |  | 
 | steps | *not set* | Integer number | Number of steps between the range |  | 
 
-## Range item type
-
-#### Range of values Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max | *not set* | Decimal number | Maximum value of the range |  | 
-| min | *not set* | Decimal number | Minimum value of the range |  | 
-
-## Y item type
-Specifies a range of values between two numbers, with a defined number of steps. This is used to control the variation in block properties such as offset, color, or other attributes.
-
-
-#### Range of values between two numbers Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| range | *not set* | [Range](#range-item-type) item | Range of values |  | 
-| steps | *not set* | Integer number | Number of steps between the range |  | 
-
-## Range item type
-
-#### Range of values Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max | *not set* | Decimal number | Maximum value of the range |  | 
-| min | *not set* | Decimal number | Minimum value of the range |  | 
-
-## Z item type
-Specifies a range of values between two numbers, with a defined number of steps. This is used to control the variation in block properties such as offset, color, or other attributes.
-
-
-#### Range of values between two numbers Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| range | *not set* | [Range](#range-item-type) item | Range of values |  | 
-| steps | *not set* | Integer number | Number of steps between the range |  | 
-
-## Range item type
+## Range (Range Of Values)
 
 #### Range of values Properties
 

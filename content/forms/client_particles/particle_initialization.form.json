@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_initialization",
-    "title": "Particle Initialization Client Particles",
+    "title": "Client Particles Particle Initialization",
     "fields": [
       {
         "id": "per_render_expression",

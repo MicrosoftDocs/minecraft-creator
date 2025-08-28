@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Components",
-    "title": "Components Dimension",
+    "title": "Dimension Components",
     "fields": [
       {
         "id": "minecraft:dimension_bounds",

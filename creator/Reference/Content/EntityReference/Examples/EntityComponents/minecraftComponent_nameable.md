@@ -19,9 +19,9 @@ Allows this entity to be named (e.g. using a name tag).
 | allow_name_tag_renaming | true | Boolean true/false | If true, this entity can be renamed with name tags |  | 
 | always_show | false | Boolean true/false | If true, the name will always be shown | Player: `true` | 
 | default_trigger | *not set* | String | Trigger to run when the entity gets named | Vindicator: `{"event":"minecraft:stop_johnny","target":"self"}` | 
-| name_actions | *not set* | Array of [Name Actions](#name-actions-item-type) items | Describes the special names for this entity and the events to call when the entity acquires those names | Vindicator: `[{"name_filter":"Johnny","on_named":{"event":"minecraft:start_johnny","target":"self"}}]` | 
+| name_actions | *not set* | Array of [Name Actions](#name-actions) items | Describes the special names for this entity and the events to call when the entity acquires those names | Vindicator: `[{"name_filter":"Johnny","on_named":{"event":"minecraft:start_johnny","target":"self"}}]` | 
 
-## Name Actions item type
+## Name Actions
 Describes the special names for this entity and the events to call when the entity acquires those names.
 
 

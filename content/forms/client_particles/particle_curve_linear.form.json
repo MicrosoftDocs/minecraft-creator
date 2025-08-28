@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_curve_linear",
-    "title": "Particle Curve Linear Client Particles",
+    "title": "Client Particles Particle Curve Linear",
     "fields": [
       {
         "id": "horizontal_range",

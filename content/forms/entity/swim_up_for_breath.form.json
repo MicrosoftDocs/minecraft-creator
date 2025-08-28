@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.swim_up_for_breath",
-    "title": "Minecraft Behavior.swim Up For Breath Entity",
+    "title": "Entity Swim Up For Breath Behavior",
     "description": "Allows the mob to try to move to air once it is close to running out of its total breathable supply. Requires \"minecraft:breathable\".",
     "fields": [
       {

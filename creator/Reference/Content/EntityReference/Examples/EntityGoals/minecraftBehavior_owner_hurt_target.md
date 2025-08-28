@@ -18,10 +18,10 @@ Allows the mob to target a mob that is hurt by their owner.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| entity_types | *not set* | Array of [Entity Types](#entity-types-item-type) items | List of entity types that this entity can target if the potential target is hurt by this mob's owner |  | 
+| entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entity types that this entity can target if the potential target is hurt by this mob's owner |  | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Wolf: `2` | 
 
-## Entity Types item type
+## Entity Types
 List of entity types that this entity can target if the potential target is hurt by this mob's owner.
 
 

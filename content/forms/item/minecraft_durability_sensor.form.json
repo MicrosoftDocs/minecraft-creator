@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:durability_sensor",
-    "title": "Minecraft Durability Sensor Item",
+    "title": "Item Durability Sensor",
     "description": "Enables an item to emit effects when it receives damage. Because of this, the item also needs a `minecraft:durability` component.",
     "fields": [
       {

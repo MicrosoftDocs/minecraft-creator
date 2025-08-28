@@ -23,10 +23,10 @@ ms.date: 02/11/2025
 | pack_scope | *not set* | String |  |  | 
 | platform_locked | *not set* | Boolean true/false |  |  | 
 | uuid | *not set* | Object |  |  | 
-| version | *not set* | [Version](#version-item-type) item |  |  | 
+| version (Version) | *not set* | [Version (Version)](#version-version) item |  |  | 
 | version (Alternate 1) | *not set* | String |  |  | 
 
-## Version item type
+## Version (Version)
 
 #### Version Properties
 

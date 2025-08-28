@@ -10,7 +10,7 @@ ms.date: 02/11/2025
 # Biome Documentation - minecraft:the_end
 
 
-## Minecraft The End Biome Properties
+## Biome The End Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

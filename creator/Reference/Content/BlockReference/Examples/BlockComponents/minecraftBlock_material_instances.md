@@ -19,173 +19,24 @@ The material instances for a block. Maps face or material_instance names in a ge
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| * | *not set* | [*](#*-item-type) item |  | Block Fabricator: `{"texture":"mikeamm_gwve_fabricator","render_method":"alpha_test","ambient_occlusion":1}`, Block Gray Ore: `{"texture":"mikeamm_gwve_gray_ore","render_method":"alpha_test","face_dimming":false}`, Block Frond Top: `{"texture":"frond_top","render_method":"alpha_test"}` | 
-| down | *not set* | [Down](#down-item-type) item |  |  | 
-| east | *not set* | [East](#east-item-type) item |  |  | 
-| Material Instance | *not set* | Array of [Material Instance](#material-instance-item-type) items | A material instance definition to map to a material instance in a geometry file. The material instance "*" will be used for any materials that don't have a match. |  | 
-| north | *not set* | [North](#north-item-type) item |  | Tuna Roll: `"sushi_side"` | 
-| south | *not set* | [South](#south-item-type) item |  | Tuna Roll: `"sushi_side"` | 
-| up | *not set* | [Up](#up-item-type) item |  |  | 
-| west | *not set* | [West](#west-item-type) item |  |  | 
+| * (Material Instance Face) | *not set* | [* (Material Instance Face)](#material-instance-face) item |  | Block Fabricator: `{"texture":"mikeamm_gwve_fabricator","render_method":"alpha_test","ambient_occlusion":1}`, Block Gray Ore: `{"texture":"mikeamm_gwve_gray_ore","render_method":"alpha_test","face_dimming":false}`, Block Frond Top: `{"texture":"frond_top","render_method":"alpha_test"}` | 
+| * (Alternate 1) | *not set* | String |  |  | 
+| down (Material Instance Face) | *not set* | [Down (Material Instance Face)](#material-instance-face) item |  |  | 
+| down (Alternate 1) | *not set* | String |  |  | 
+| east (Material Instance Face) | *not set* | [East (Material Instance Face)](#material-instance-face) item |  |  | 
+| east (Alternate 1) | *not set* | String |  |  | 
+| north (Material Instance Face) | *not set* | [North (Material Instance Face)](#material-instance-face) item |  | Tuna Roll: `"sushi_side"` | 
+| north (Alternate 1) | *not set* | String |  |  | 
+| south (Material Instance Face) | *not set* | [South (Material Instance Face)](#material-instance-face) item |  | Tuna Roll: `"sushi_side"` | 
+| south (Alternate 1) | *not set* | String |  |  | 
+| up (Material Instance Face) | *not set* | [Up (Material Instance Face)](#material-instance-face) item |  |  | 
+| up (Alternate 1) | *not set* | String |  |  | 
+| west (Material Instance Face) | *not set* | [West (Material Instance Face)](#material-instance-face) item |  |  | 
+| west (Alternate 1) | *not set* | String |  |  | 
 
-## * item type
+## Material Instance Face
 
-#### * Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| ambient_occlusion | *not set* | Decimal number |  | Block Fabricator: `1` | 
-| render_method | *not set* | String |  | Block Fabricator: `"alpha_test"` | 
-| texture | *not set* | String |  | Block Fabricator: `"mikeamm_gwve_fabricator"` | 
-
-## Down item type
-
-#### * Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| ambient_occlusion | *not set* | Decimal number | If this material has ambient occlusion applied when lighting, shadows will be created around and underneath the block. Decimal value controls exponent applied to a value after lighting. |  | 
-| face_dimming | *not set* | String | This material should be dimmed by the direction it's facing. | Blue Bubble Fish: `true` | 
-| isotropic | false | Boolean true/false | Should the faces that this material is applied to randomize their UVs? This item requires a format version of at least undefined. |  | 
-| render_method | *not set* | [Render Method](#render-method-choices) choices | The render method to use. | Blue Bubble Fish: `"blend"`, Block Orange Ore: `"opaque"`, Block Frond Top: `"alpha_test"` | 
-| texture | *not set* | String | Texture name for the material. | Blue Bubble Fish: `"bubble_fish_blue"`, California Roll: `"sushi_wrap"`, Green Bubble Fish: `"bubble_fish_green"` | 
-| tint_method | false | Boolean true/false | Tint multiplied to the color. Tint method logic varies, but often refers to the "rain" and "temperature" of the biome the block is placed in to compute the tint. Supported tint methods are "none", "default_foliage", "birch_foliage", "evergreen_foliage", "dry_foliage", "grass" and "water" This item requires a format version of at least undefined. |  | 
-
-### Render Method choices
-
-|Value       |Title |Description |
-|:-----------|:-----|:-----------|
-| opaque | Opaque | Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency|
-| double_sided | Double Sided | Used for completely disabling backface culling.|
-| blend | Blend | Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures).|
-| alpha_test | Alpha Test | Used for a block like the monster spawner. Does not allow for translucency, only fully opaque or fully transparent textures. Also disabled backface culling.|
-| alpha_test_single_sided | Alpha Test (Single Sided) | Used for a block like the (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also enables backface culling.|
-| blend_to_opaque | Blend to Opaque | Will blend like stained glass in the near render and turn opaque on the far render.|
-| alpha_test_to_opaque | Alpha Test to Opaque | Used for a block like the leaves. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also disabled backface culling.|
-| alpha_test_single_sided_to_opaque | Alpha Test (Single Sided) to Opaque | Used for a block like the sugar cane. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also enables backface culling.|
-
-## East item type
-
-#### * Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| ambient_occlusion | *not set* | Decimal number | If this material has ambient occlusion applied when lighting, shadows will be created around and underneath the block. Decimal value controls exponent applied to a value after lighting. |  | 
-| face_dimming | *not set* | String | This material should be dimmed by the direction it's facing. | Blue Bubble Fish: `true` | 
-| isotropic | false | Boolean true/false | Should the faces that this material is applied to randomize their UVs? This item requires a format version of at least undefined. |  | 
-| render_method | *not set* | [Render Method](#render-method-choices) choices | The render method to use. | Blue Bubble Fish: `"blend"`, Block Orange Ore: `"opaque"`, Block Frond Top: `"alpha_test"` | 
-| texture | *not set* | String | Texture name for the material. | Blue Bubble Fish: `"bubble_fish_blue"`, California Roll: `"sushi_wrap"`, Green Bubble Fish: `"bubble_fish_green"` | 
-| tint_method | false | Boolean true/false | Tint multiplied to the color. Tint method logic varies, but often refers to the "rain" and "temperature" of the biome the block is placed in to compute the tint. Supported tint methods are "none", "default_foliage", "birch_foliage", "evergreen_foliage", "dry_foliage", "grass" and "water" This item requires a format version of at least undefined. |  | 
-
-### Render Method choices
-
-|Value       |Title |Description |
-|:-----------|:-----|:-----------|
-| opaque | Opaque | Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency|
-| double_sided | Double Sided | Used for completely disabling backface culling.|
-| blend | Blend | Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures).|
-| alpha_test | Alpha Test | Used for a block like the monster spawner. Does not allow for translucency, only fully opaque or fully transparent textures. Also disabled backface culling.|
-| alpha_test_single_sided | Alpha Test (Single Sided) | Used for a block like the (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also enables backface culling.|
-| blend_to_opaque | Blend to Opaque | Will blend like stained glass in the near render and turn opaque on the far render.|
-| alpha_test_to_opaque | Alpha Test to Opaque | Used for a block like the leaves. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also disabled backface culling.|
-| alpha_test_single_sided_to_opaque | Alpha Test (Single Sided) to Opaque | Used for a block like the sugar cane. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also enables backface culling.|
-
-## Material Instance item type
-A material instance definition to map to a material instance in a geometry file. The material instance "*" will be used for any materials that don't have a match.
-
-
-#### Material Instance Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| ambient_occlusion | *not set* | Decimal number | Should this material have ambient occlusion applied when lighting? If true, shadows will be created around and underneath the block. Optionally can be constructed with float to control exponent applied to ao value after lighting. |  | 
-| face_dimming | true | Boolean true/false | Should this material be dimmed by the direction it's facing? |  | 
-| isotropic | false | Boolean true/false | Should the faces that this material is applied to randomize their UVs? |  | 
-| render_method | opaque | String | The render method to use. Must be one of these options and must be the same for each:<br>"opaque" - Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency.<br>"double_sided" - Used for completely disabling backface culling.<br>"blend" - Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures).<br>"alpha_test" - Used for a block like the vanilla (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also disables backface culling. |  | 
-| texture | *not set* | String | Texture name for the material. |  | 
-| tint_method | false | Boolean true/false | Tint multiplied to the color. Tint method logic varies, but often refers to the "rain" and "temperature" of the biome the block is placed in to compute the tint. Supported tint methods are "none", "default_foliage", "birch_foliage", "evergreen_foliage", "dry_foliage", "grass" and "water" |  | 
-
-## North item type
-
-#### * Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| ambient_occlusion | *not set* | Decimal number | If this material has ambient occlusion applied when lighting, shadows will be created around and underneath the block. Decimal value controls exponent applied to a value after lighting. |  | 
-| face_dimming | *not set* | String | This material should be dimmed by the direction it's facing. | Blue Bubble Fish: `true` | 
-| isotropic | false | Boolean true/false | Should the faces that this material is applied to randomize their UVs? This item requires a format version of at least undefined. |  | 
-| render_method | *not set* | [Render Method](#render-method-choices) choices | The render method to use. | Blue Bubble Fish: `"blend"`, Block Orange Ore: `"opaque"`, Block Frond Top: `"alpha_test"` | 
-| texture | *not set* | String | Texture name for the material. | Blue Bubble Fish: `"bubble_fish_blue"`, California Roll: `"sushi_wrap"`, Green Bubble Fish: `"bubble_fish_green"` | 
-| tint_method | false | Boolean true/false | Tint multiplied to the color. Tint method logic varies, but often refers to the "rain" and "temperature" of the biome the block is placed in to compute the tint. Supported tint methods are "none", "default_foliage", "birch_foliage", "evergreen_foliage", "dry_foliage", "grass" and "water" This item requires a format version of at least undefined. |  | 
-
-### Render Method choices
-
-|Value       |Title |Description |
-|:-----------|:-----|:-----------|
-| opaque | Opaque | Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency|
-| double_sided | Double Sided | Used for completely disabling backface culling.|
-| blend | Blend | Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures).|
-| alpha_test | Alpha Test | Used for a block like the monster spawner. Does not allow for translucency, only fully opaque or fully transparent textures. Also disabled backface culling.|
-| alpha_test_single_sided | Alpha Test (Single Sided) | Used for a block like the (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also enables backface culling.|
-| blend_to_opaque | Blend to Opaque | Will blend like stained glass in the near render and turn opaque on the far render.|
-| alpha_test_to_opaque | Alpha Test to Opaque | Used for a block like the leaves. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also disabled backface culling.|
-| alpha_test_single_sided_to_opaque | Alpha Test (Single Sided) to Opaque | Used for a block like the sugar cane. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also enables backface culling.|
-
-## South item type
-
-#### * Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| ambient_occlusion | *not set* | Decimal number | If this material has ambient occlusion applied when lighting, shadows will be created around and underneath the block. Decimal value controls exponent applied to a value after lighting. |  | 
-| face_dimming | *not set* | String | This material should be dimmed by the direction it's facing. | Blue Bubble Fish: `true` | 
-| isotropic | false | Boolean true/false | Should the faces that this material is applied to randomize their UVs? This item requires a format version of at least undefined. |  | 
-| render_method | *not set* | [Render Method](#render-method-choices) choices | The render method to use. | Blue Bubble Fish: `"blend"`, Block Orange Ore: `"opaque"`, Block Frond Top: `"alpha_test"` | 
-| texture | *not set* | String | Texture name for the material. | Blue Bubble Fish: `"bubble_fish_blue"`, California Roll: `"sushi_wrap"`, Green Bubble Fish: `"bubble_fish_green"` | 
-| tint_method | false | Boolean true/false | Tint multiplied to the color. Tint method logic varies, but often refers to the "rain" and "temperature" of the biome the block is placed in to compute the tint. Supported tint methods are "none", "default_foliage", "birch_foliage", "evergreen_foliage", "dry_foliage", "grass" and "water" This item requires a format version of at least undefined. |  | 
-
-### Render Method choices
-
-|Value       |Title |Description |
-|:-----------|:-----|:-----------|
-| opaque | Opaque | Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency|
-| double_sided | Double Sided | Used for completely disabling backface culling.|
-| blend | Blend | Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures).|
-| alpha_test | Alpha Test | Used for a block like the monster spawner. Does not allow for translucency, only fully opaque or fully transparent textures. Also disabled backface culling.|
-| alpha_test_single_sided | Alpha Test (Single Sided) | Used for a block like the (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also enables backface culling.|
-| blend_to_opaque | Blend to Opaque | Will blend like stained glass in the near render and turn opaque on the far render.|
-| alpha_test_to_opaque | Alpha Test to Opaque | Used for a block like the leaves. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also disabled backface culling.|
-| alpha_test_single_sided_to_opaque | Alpha Test (Single Sided) to Opaque | Used for a block like the sugar cane. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also enables backface culling.|
-
-## Up item type
-
-#### * Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| ambient_occlusion | *not set* | Decimal number | If this material has ambient occlusion applied when lighting, shadows will be created around and underneath the block. Decimal value controls exponent applied to a value after lighting. |  | 
-| face_dimming | *not set* | String | This material should be dimmed by the direction it's facing. | Blue Bubble Fish: `true` | 
-| isotropic | false | Boolean true/false | Should the faces that this material is applied to randomize their UVs? This item requires a format version of at least undefined. |  | 
-| render_method | *not set* | [Render Method](#render-method-choices) choices | The render method to use. | Blue Bubble Fish: `"blend"`, Block Orange Ore: `"opaque"`, Block Frond Top: `"alpha_test"` | 
-| texture | *not set* | String | Texture name for the material. | Blue Bubble Fish: `"bubble_fish_blue"`, California Roll: `"sushi_wrap"`, Green Bubble Fish: `"bubble_fish_green"` | 
-| tint_method | false | Boolean true/false | Tint multiplied to the color. Tint method logic varies, but often refers to the "rain" and "temperature" of the biome the block is placed in to compute the tint. Supported tint methods are "none", "default_foliage", "birch_foliage", "evergreen_foliage", "dry_foliage", "grass" and "water" This item requires a format version of at least undefined. |  | 
-
-### Render Method choices
-
-|Value       |Title |Description |
-|:-----------|:-----|:-----------|
-| opaque | Opaque | Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency|
-| double_sided | Double Sided | Used for completely disabling backface culling.|
-| blend | Blend | Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures).|
-| alpha_test | Alpha Test | Used for a block like the monster spawner. Does not allow for translucency, only fully opaque or fully transparent textures. Also disabled backface culling.|
-| alpha_test_single_sided | Alpha Test (Single Sided) | Used for a block like the (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also enables backface culling.|
-| blend_to_opaque | Blend to Opaque | Will blend like stained glass in the near render and turn opaque on the far render.|
-| alpha_test_to_opaque | Alpha Test to Opaque | Used for a block like the leaves. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also disabled backface culling.|
-| alpha_test_single_sided_to_opaque | Alpha Test (Single Sided) to Opaque | Used for a block like the sugar cane. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also enables backface culling.|
-
-## West item type
-
-#### * Properties
+#### Material Instance Face Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Set the grass color or color map used during rendering. Biomes without this component will have default grass appearance.
 
 
-## Minecraft Grass Appearance Client Biome Properties
+## Client Biome Grass Appearance Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

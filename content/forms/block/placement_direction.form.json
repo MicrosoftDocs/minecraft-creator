@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Placement Direction",
-    "title": "Placement Direction Block",
+    "title": "Block Placement Direction",
     "fields": [
       {
         "id": "enabled_states",

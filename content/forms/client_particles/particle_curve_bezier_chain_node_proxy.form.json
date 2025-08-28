@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_curve_bezier_chain node_proxy",
-    "title": "Particle Curve Bezier Chain Node Proxy Client Particles",
+    "title": "Client Particles Particle Curve Bezier Chain Node Proxy",
     "fields": [
       {
         "id": "left_slope",

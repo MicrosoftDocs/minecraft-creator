@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:dyeable",
-    "title": "Minecraft Dyeable Item",
+    "title": "Item Dyeable",
     "fields": [
       {
         "id": "default_color",

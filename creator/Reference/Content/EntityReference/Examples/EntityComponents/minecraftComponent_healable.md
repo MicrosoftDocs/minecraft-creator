@@ -18,9 +18,9 @@ How entities heal.
 |:----------|:-------------|:----|:-----------|:------------- |
 | filters | *not set* | Minecraft filter | The filter group that defines the conditions for using this item to heal the entity. | Parrot: `{"test":"is_riding","operator":"!=","value":true}` | 
 | force_use | false | Boolean true/false | Determines if item can be used regardless of entity being at full health. | Parrot: `true` | 
-| items | *not set* | Array of [Items](#items-item-type) items | The array of items that can be used to heal this entity. | Camel: `[{"item":"cactus","heal_amount":2}]`, Cat: `[{"item":"fish","heal_amount":2},{"item":"salmon","heal_amount":2}]` | 
+| items | *not set* | Array of [Items](#items) items | The array of items that can be used to heal this entity. | Camel: `[{"item":"cactus","heal_amount":2}]`, Cat: `[{"item":"fish","heal_amount":2},{"item":"salmon","heal_amount":2}]` | 
 
-## Items item type
+## Items
 The array of items that can be used to heal this entity.
 
 

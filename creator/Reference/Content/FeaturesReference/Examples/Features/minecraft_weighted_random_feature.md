@@ -14,11 +14,11 @@ ms.date: 02/11/2025
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description-item-type) item |  |  | 
+| description | *not set* | [Description](#description) item |  |  | 
 | features | *not set* | Array of strings |  |  | 
 | format_version | *not set* | String |  |  | 
 
-## Description item type
+## Description
 
 #### Description Properties
 

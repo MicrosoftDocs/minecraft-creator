@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:projectile",
-    "title": "Minecraft Projectile Item",
+    "title": "Item Projectile",
     "description": "Projectile items shoot out, like an arrow.",
     "fields": [
       {

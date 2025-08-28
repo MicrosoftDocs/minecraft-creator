@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Structure",
-    "title": "Structure World",
+    "title": "World Structure",
     "fields": [
       {
         "id": "structure",

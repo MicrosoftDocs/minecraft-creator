@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Crafting Catalog Document",
-    "title": "Crafting Catalog Document Crafting Catalog",
+    "title": "Crafting Catalog Document",
     "description": "The root object for defining the crafting catalog",
     "fields": [
       {

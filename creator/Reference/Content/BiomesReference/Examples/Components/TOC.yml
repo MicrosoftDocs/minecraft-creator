@@ -1,25 +1,17 @@
 - name: Components List
   href: ../ComponentList.md
-- name: minecraft:capped
-  href: minecraftBiomes_capped.md
 - name: minecraft:climate
   href: minecraftBiomes_climate.md
 - name: minecraft:creature_spawn_probability
   href: minecraftBiomes_creature_spawn_probability.md
-- name: minecraft:frozen_ocean
-  href: minecraftBiomes_frozen_ocean.md
 - name: minecraft:humidity
   href: minecraftBiomes_humidity.md
 - name: minecraft:map_tints
   href: minecraftBiomes_map_tints.md
-- name: minecraft:mesa
-  href: minecraftBiomes_mesa.md
 - name: minecraft:mountain_parameters
   href: minecraftBiomes_mountain_parameters.md
 - name: minecraft:multinoise_generation_rules
   href: minecraftBiomes_multinoise_generation_rules.md
-- name: minecraft:overworld
-  href: minecraftBiomes_overworld.md
 - name: minecraft:overworld_generation_rules
   href: minecraftBiomes_overworld_generation_rules.md
 - name: minecraft:overworld_height
@@ -30,9 +22,5 @@
   href: minecraftBiomes_surface_builder.md
 - name: minecraft:surface_material_adjustments
   href: minecraftBiomes_surface_material_adjustments.md
-- name: minecraft:swamp
-  href: minecraftBiomes_swamp.md
 - name: minecraft:tags
   href: minecraftBiomes_tags.md
-- name: minecraft:the_end
-  href: minecraftBiomes_the_end.md

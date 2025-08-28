@@ -12,35 +12,35 @@ ms.date: 02/11/2025
 Contains a description and components to define a Client Biome.
 
 
-## Client Biome Definition Client Biome Properties
+## Client Biome Definition Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| components | *not set* | [Components](#components-item-type) item | Components for this Client Biome. |  | 
-| description | *not set* | [Description](#description-item-type) item | Non-component settings, including the Client Biome name. |  | 
+| components | *not set* | [Components (Client Biome Components)](#client-biome-components) item | Components for this Client Biome. |  | 
+| description | *not set* | [Description (Client Biome Description)](#client-biome-description) item | Non-component settings, including the Client Biome name. |  | 
 
-## Components item type
+## Client Biome Components
 Any components that this Client Biome uses.
 
 
-#### Client Biome Components Client Biome Properties
+#### Client Biome Components Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| minecraft:ambient_sounds | *not set* | [Ambient Sounds](#ambient-sounds-item-type) item | Set the ambient sounds for the biome. These sounds must be in the 'individual_named_sounds' in a 'sounds.json' file. |  | 
-| minecraft:atmosphere_identifier | *not set* | [Atmosphere Identifier](#atmosphere-identifier-item-type) item | Set the identifier used for atmospherics in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Atmospheric Scattering JSON schemas under the "atmospherics" directory. Biomes without this component will have default atmosphere settings. |  | 
-| minecraft:biome_music | *not set* | [Biome Music](#biome-music-item-type) item | Affect how music plays within the biome |  | 
-| minecraft:color_grading_identifier | *not set* | [Color Grading Identifier](#color-grading-identifier-item-type) item | Set the identifier used for color grading in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Color Grading JSON schemas under the "color_grading" directory. Biomes without this component will have default color_grading settings. |  | 
-| minecraft:dry_foliage_color | *not set* | [Dry Foliage Color](#dry-foliage-color-item-type) item | Set the dry foliage color used during rendering. Biomes without this component will have default dry foliage color behavior. |  | 
-| minecraft:fog_appearance | *not set* | [Fog Appearance](#fog-appearance-item-type) item | Set the fog settings used during rendering. Biomes without this component will have default fog settings. |  | 
-| minecraft:foliage_appearance | *not set* | [Foliage Appearance](#foliage-appearance-item-type) item | Set the foliage color or color map used during rendering. Biomes without this component will have default foliage appearance. |  | 
-| minecraft:grass_appearance | *not set* | [Grass Appearance](#grass-appearance-item-type) item | Set the grass color or color map used during rendering. Biomes without this component will have default grass appearance. |  | 
-| minecraft:lighting_identifier | *not set* | [Lighting Identifier](#lighting-identifier-item-type) item | Set the identifier used for lighting in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Lighting JSON schemas under the "lighting" directory. Biomes without this component will have default lighting settings. |  | 
-| minecraft:sky_color | *not set* | [Sky Color](#sky-color-item-type) item | Set the sky color used during rendering. Biomes without this component will have default sky color behavior. |  | 
-| minecraft:water_appearance | *not set* | [Water Appearance](#water-appearance-item-type) item | Set the water surface color used during rendering. Biomes without this component will have default water surface color behavior. |  | 
-| minecraft:water_identifier | *not set* | [Water Identifier](#water-identifier-item-type) item | Set the identifier used for rendering water in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Water JSON schemas under the "water" directory. Biomes without this component will have default water settings. |  | 
+| minecraft:ambient_sounds | *not set* | [Ambient Sounds (Minecraft Ambient Sounds)](#minecraft-ambient-sounds) item | Set the ambient sounds for the biome. These sounds must be in the 'individual_named_sounds' in a 'sounds.json' file. |  | 
+| minecraft:atmosphere_identifier | *not set* | [Atmosphere Identifier (Client Biome Atmosphere Identifier)](#client-biome-atmosphere-identifier) item | Set the identifier used for atmospherics in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Atmospheric Scattering JSON schemas under the "atmospherics" directory. Biomes without this component will have default atmosphere settings. |  | 
+| minecraft:biome_music | *not set* | [Biome Music (Minecraft Biome Music)](#minecraft-biome-music) item | Affect how music plays within the biome |  | 
+| minecraft:color_grading_identifier | *not set* | [Color Grading Identifier (Client Biome Color Grading Identifier)](#client-biome-color-grading-identifier) item | Set the identifier used for color grading in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Color Grading JSON schemas under the "color_grading" directory. Biomes without this component will have default color_grading settings. |  | 
+| minecraft:dry_foliage_color | *not set* | [Dry Foliage Color (Client Biome Dry Foliage Color)](#client-biome-dry-foliage-color) item | Set the dry foliage color used during rendering. Biomes without this component will have default dry foliage color behavior. |  | 
+| minecraft:fog_appearance | *not set* | [Fog Appearance (Minecraft Fog Appearance)](#minecraft-fog-appearance) item | Set the fog settings used during rendering. Biomes without this component will have default fog settings. |  | 
+| minecraft:foliage_appearance | *not set* | [Foliage Appearance (Minecraft Foliage Appearance)](#minecraft-foliage-appearance) item | Set the foliage color or color map used during rendering. Biomes without this component will have default foliage appearance. |  | 
+| minecraft:grass_appearance | *not set* | [Grass Appearance (Client Biome Grass Appearance)](#client-biome-grass-appearance) item | Set the grass color or color map used during rendering. Biomes without this component will have default grass appearance. |  | 
+| minecraft:lighting_identifier | *not set* | [Lighting Identifier (Client Biome Lighting Identifier)](#client-biome-lighting-identifier) item | Set the identifier used for lighting in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Lighting JSON schemas under the "lighting" directory. Biomes without this component will have default lighting settings. |  | 
+| minecraft:sky_color | *not set* | [Sky Color (Minecraft Sky Color)](#minecraft-sky-color) item | Set the sky color used during rendering. Biomes without this component will have default sky color behavior. |  | 
+| minecraft:water_appearance | *not set* | [Water Appearance (Client Biome Water Appearance)](#client-biome-water-appearance) item | Set the water surface color used during rendering. Biomes without this component will have default water surface color behavior. |  | 
+| minecraft:water_identifier | *not set* | [Water Identifier (Client Biome Water Identifier)](#client-biome-water-identifier) item | Set the identifier used for rendering water in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Water JSON schemas under the "water" directory. Biomes without this component will have default water settings. |  | 
 
-## Ambient Sounds item type
+## Minecraft Ambient Sounds
 Sets the ambient sounds for the biome. These sounds must be in the 'individual_named_sounds' in a 'sounds.json' file.
 
 
@@ -52,17 +52,17 @@ Sets the ambient sounds for the biome. These sounds must be in the 'individual_n
 | loop | *not set* | Object | Named sound that loops while the listener position is inside the biome |  | 
 | mood | *not set* | Object | Named sound that rarely plays at a nearby air block position when the light level is low. Biomes without an ambient mood sound will use the 'ambient.cave' sound. |  | 
 
-## Atmosphere Identifier item type
+## Client Biome Atmosphere Identifier
 Set the identifier used for atmospherics in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Atmospheric Scattering JSON schemas under the "atmospherics" directory. Biomes without this component will have default atmosphere settings.
 
 
-#### Minecraft Atmosphere Identifier Client Biome Properties
+#### Client Biome Atmosphere Identifier Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | atmosphere_identifier | *not set* | Object | Identifier of atmosphere definition to use |  | 
 
-## Biome Music item type
+## Minecraft Biome Music
 Affects how music plays within the biome.
 
 
@@ -73,28 +73,28 @@ Affects how music plays within the biome.
 | music_definition | *not set* | Object | Music to be played when inside this biome. If left off or not found the default music will be determined by the dimension. Empty string will result in no music. |  | 
 | volume_multiplier | *not set* | Decimal number | Multiplier temporarily and gradually applied to music volume when within this biome. Must be a value between 0 and 1, inclusive. |  | 
 
-## Color Grading Identifier item type
+## Client Biome Color Grading Identifier
 Set the identifier used for color grading in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Color Grading JSON schemas under the "color_grading" directory. Biomes without this component will have default color_grading settings.
 
 
-#### Minecraft Color Grading Identifier Client Biome Properties
+#### Client Biome Color Grading Identifier Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | color_grading_identifier | *not set* | Object | Identifier of color_grading definition to use |  | 
 
-## Dry Foliage Color item type
+## Client Biome Dry Foliage Color
 Set the dry foliage color used during rendering. Biomes without this component will have default dry foliage color behavior.
 
 
-#### Minecraft Dry Foliage Color Client Biome Properties
+#### Client Biome Dry Foliage Color Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | color | *not set* | String | RGB color of dry foliage |  | 
 | color (Alternate 1) | *not set* | Array of numbers |  |  | 
 
-## Fog Appearance item type
+## Minecraft Fog Appearance
 Sets the fog settings used during rendering. Biomes without this component will have default fog settings.
 
 
@@ -104,7 +104,7 @@ Sets the fog settings used during rendering. Biomes without this component will 
 |:----------|:-------------|:----|:-----------|:------------- |
 | fog_identifier | *not set* | Object | Identifier of fog definition to use |  | 
 
-## Foliage Appearance item type
+## Minecraft Foliage Appearance
 Sets the foliage color or color map used during rendering. Biomes without this component will have default foliage appearance.
 
 
@@ -114,27 +114,27 @@ Sets the foliage color or color map used during rendering. Biomes without this c
 |:----------|:-------------|:----|:-----------|:------------- |
 | color | *not set* | Object | RGB color of foliage, or a Foliage Color Map object. |  | 
 
-## Grass Appearance item type
+## Client Biome Grass Appearance
 Set the grass color or color map used during rendering. Biomes without this component will have default grass appearance.
 
 
-#### Minecraft Grass Appearance Client Biome Properties
+#### Client Biome Grass Appearance Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | color | *not set* | Object | RGB color of grass. |  | 
 
-## Lighting Identifier item type
+## Client Biome Lighting Identifier
 Set the identifier used for lighting in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Lighting JSON schemas under the "lighting" directory. Biomes without this component will have default lighting settings.
 
 
-#### Minecraft Lighting Identifier Client Biome Properties
+#### Client Biome Lighting Identifier Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | lighting_identifier | *not set* | Object | Identifier of lighting definition to use |  | 
 
-## Sky Color item type
+## Minecraft Sky Color
 Sets the sky color used during rendering. Biomes without this component will have default sky color behavior.
 
 
@@ -145,11 +145,11 @@ Sets the sky color used during rendering. Biomes without this component will hav
 | sky_color | *not set* | String | RGB color of the sky |  | 
 | sky_color (Alternate 1) | *not set* | Array of numbers |  |  | 
 
-## Water Appearance item type
+## Client Biome Water Appearance
 Set the water surface color used during rendering. Biomes without this component will have default water surface color behavior.
 
 
-#### Minecraft Water Appearance Client Biome Properties
+#### Client Biome Water Appearance Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -157,21 +157,21 @@ Set the water surface color used during rendering. Biomes without this component
 | surface_color (Alternate 1) | *not set* | Array of numbers |  |  | 
 | surface_opacity | *not set* | Decimal number | Opacity of the water surface (must be between 0 for invisible and 1 for opaque, inclusive) |  | 
 
-## Water Identifier item type
+## Client Biome Water Identifier
 Set the identifier used for rendering water in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Water JSON schemas under the "water" directory. Biomes without this component will have default water settings.
 
 
-#### Minecraft Water Identifier Client Biome Properties
+#### Client Biome Water Identifier Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | water_identifier | *not set* | Object | Identifier of water definition to use |  | 
 
-## Description item type
+## Client Biome Description
 Contains non-component settings for a Client Biome.
 
 
-#### Client Biome Description Client Biome Properties
+#### Client Biome Description Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

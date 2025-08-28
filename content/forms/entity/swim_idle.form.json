@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.swim_idle",
-    "title": "Minecraft Behavior.swim Idle Entity",
+    "title": "Entity Swim Idle Behavior",
     "description": "Allows the entity go idle, if swimming. Entity must be in water.",
     "fields": [
       {

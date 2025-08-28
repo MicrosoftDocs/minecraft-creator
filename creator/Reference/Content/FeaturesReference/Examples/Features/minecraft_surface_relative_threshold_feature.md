@@ -16,11 +16,11 @@ Determines whether the provided position is below the estimated surface level of
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description-item-type) item |  |  | 
+| description | *not set* | [Description](#description) item |  |  | 
 | format_version | *not set* | String |  |  | 
 | minimum_distance_below_surface | *not set* | Integer number | The minimum number of blocks required to be between the estimated surface level and a valid place for this feature. Defaults to zero. |  | 
 
-## Description item type
+## Description
 
 #### Description Properties
 

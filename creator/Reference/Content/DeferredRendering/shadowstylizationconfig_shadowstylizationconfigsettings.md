@@ -17,9 +17,9 @@ Struct ShadowStylizationConfig ShadowStylizationConfigSettings Client Deferred R
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | format_version | *not set* | String | format_version |  | 
-| minecraft:shadow_settings | *not set* | [Shadow Settings](#shadow-settings-item-type) item | minecraft:shadow_settings |  | 
+| minecraft:shadow_settings | *not set* | [Shadow Settings (ShadowStylizationConfig ShadowStylizationConfigSettings ShadowStylizationSettings)](#shadow-settings-shadowstylizationconfig-shadowstylizationconfigsettings-shadowstylizationsettings) item | minecraft:shadow_settings |  | 
 
-## Shadow Settings item type
+## Shadow Settings (ShadowStylizationConfig ShadowStylizationConfigSettings ShadowStylizationSettings)
 ShadowStylizationConfig ShadowStylizationConfigSettings ShadowStylizationSettings.
 
 

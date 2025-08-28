@@ -36,7 +36,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:tick_world",
-    "title": "Minecraft Tick World Entity",
+    "title": "Entity Tick World",
     "description": "Defines if the entity ticks the world and the radius around it to tick.",
     "fields": [
       {

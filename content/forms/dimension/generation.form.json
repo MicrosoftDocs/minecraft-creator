@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Generation",
-    "title": "Generation Dimension",
+    "title": "Dimension Generation",
     "fields": [
       {
         "id": "generator_type",

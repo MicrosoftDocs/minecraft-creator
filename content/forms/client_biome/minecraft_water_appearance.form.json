@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:water_appearance",
-    "title": "Minecraft Water Appearance Client Biome",
+    "title": "Client Biome Water Appearance",
     "description": "Set the water surface color used during rendering. Biomes without this component will have default water surface color behavior.",
     "fields": [
       {

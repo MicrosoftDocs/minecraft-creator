@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn DensityLimit",
-    "title": "Spawn DensityLimit Spawn",
+    "title": "Spawn DensityLimit",
     "fields": [
       {
         "id": "surface",

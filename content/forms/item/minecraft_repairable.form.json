@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:repairable",
-    "title": "Minecraft Repairable Item",
+    "title": "Item Repairable",
     "description": "The repairable item component specifies which items can be used to repair this item, along with how much durability is gained.",
     "fields": [
       {

@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Contains non-component settings for a Client Biome.
 
 
-## Client Biome Description Client Biome Properties
+## Client Biome Description Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

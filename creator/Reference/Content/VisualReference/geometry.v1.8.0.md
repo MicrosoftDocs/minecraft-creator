@@ -16,15 +16,15 @@ ms.date: 02/11/2025
 |:----------|:-------------|:----|:-----------|:------------- |
 | debug | *not set* | Boolean true/false |  |  | 
 | format_version | *not set* | Version |  |  | 
-| geometry.[a-zA-Z0-9_.'-:]+ | *not set* | [+ Geometry](#+-geometry-item-type) item |  |  | 
+| geometry.[a-zA-Z0-9_.'-:]+ | *not set* | [+ Geometry](#+-geometry) item |  |  | 
 
-## + Geometry item type
+## + Geometry
 
 #### + Geometry Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| bones | *not set* | Array of [Bones](#bones-item-type) items |  |  | 
+| bones | *not set* | Array of [Bones](#bones) items |  |  | 
 | bones (Alternate 1) | *not set* | Array of strings |  |  | 
 | cape | *not set* | String |  |  | 
 | debug | *not set* | Boolean true/false |  |  | 
@@ -32,14 +32,14 @@ ms.date: 02/11/2025
 | texturewidth | *not set* | Integer number |  |  | 
 | visible_bounds_offset | *not set* | Array of strings |  |  | 
 
-## Bones item type
+## Bones
 
 #### Bones Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | bind_pose_rotation | *not set* | Array of strings |  |  | 
-| cubes | *not set* | Array of [Cubes](#cubes-item-type) items |  |  | 
+| cubes | *not set* | Array of [Cubes](#cubes) items |  |  | 
 | cubes (Alternate 1) | *not set* | Array of strings |  |  | 
 | debug | *not set* | Boolean true/false |  |  | 
 | locators | *not set* | Named set of objects |  |  | 
@@ -49,14 +49,14 @@ ms.date: 02/11/2025
 | neverRender | *not set* | Boolean true/false |  |  | 
 | parent | *not set* | String |  |  | 
 | pivot | *not set* | Array of strings |  |  | 
-| poly_mesh | *not set* | Key/item pairs of [Poly Mesh](#poly-mesh-item-type) items |  |  | 
+| poly_mesh | *not set* | Key/item pairs of [Poly Mesh](#poly-mesh) items |  |  | 
 | render_group_id | *not set* | Integer number |  |  | 
 | reset | *not set* | Boolean true/false |  |  | 
 | rotation | *not set* | Array of strings |  |  | 
-| texture_meshes | *not set* | Array of [Texture Meshes](#texture-meshes-item-type) items |  |  | 
+| texture_meshes | *not set* | Array of [Texture Meshes](#texture-meshes) items |  |  | 
 | texture_meshes (Alternate 1) | *not set* | Array of strings |  |  | 
 
-## Cubes item type
+## Cubes
 
 #### Cubes Properties
 
@@ -67,7 +67,7 @@ ms.date: 02/11/2025
 | size | *not set* | Array of strings |  |  | 
 | uv | *not set* | Array of strings |  |  | 
 
-## Poly Mesh item type
+## Poly Mesh
 
 #### Poly Mesh Properties
 
@@ -79,7 +79,7 @@ ms.date: 02/11/2025
 | positions | *not set* | Array of strings |  |  | 
 | uvs | *not set* | Array of strings |  |  | 
 
-## Texture Meshes item type
+## Texture Meshes
 
 #### Texture Meshes Properties
 

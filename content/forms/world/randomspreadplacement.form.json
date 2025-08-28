@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "RandomSpreadPlacement",
-    "title": "RandomSpreadPlacement World",
+    "title": "World RandomSpreadPlacement",
     "fields": [
       {
         "id": "salt",

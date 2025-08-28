@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Contains non-component settings for a Biome.
 
 
-## Biome Description Biome Properties
+## Biome Description Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

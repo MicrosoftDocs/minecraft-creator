@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "ParticleLifetimeEvents Proxy",
-    "title": "ParticleLifetimeEvents Proxy Client Particles",
+    "title": "Client Particles ParticleLifetimeEvents Proxy",
     "fields": [
       {
         "id": "creation_event",
@@ -12,12 +12,7 @@
         "alternates": [
           {
             "id": "creation_event",
-            "dataType": 16,
-            "subForm": {
-              "id": "creation_event",
-              "title": "Creation Event",
-              "fields": []
-            }
+            "dataType": 2
           }
         ]
       },
@@ -28,12 +23,7 @@
         "alternates": [
           {
             "id": "expiration_event",
-            "dataType": 16,
-            "subForm": {
-              "id": "expiration_event",
-              "title": "Expiration Event",
-              "fields": []
-            }
+            "dataType": 2
           }
         ]
       },
@@ -44,12 +34,7 @@
         "alternates": [
           {
             "id": "timeline",
-            "dataType": 16,
-            "subForm": {
-              "id": "timeline",
-              "title": "Timeline",
-              "fields": []
-            }
+            "dataType": 2
           }
         ]
       }

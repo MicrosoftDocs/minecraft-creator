@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Represents the replacement information used to determine the placement of the overriding biome.
 
 
-## Biome Replacement Biome Properties
+## Biome Replacement Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Client Biome Description",
-    "title": "Client Biome Description Client Biome",
+    "title": "Client Biome Description",
     "description": "Contains non-component settings for a Client Biome.",
     "fields": [
       {

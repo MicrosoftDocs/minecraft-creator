@@ -18,7 +18,7 @@ Defines what events to call when this entity is damaged by specific entities or 
 |:----------|:-------------|:----|:-----------|:------------- |
 | deals_damage | false | [Deals Damage](#deals-damage-choices) choices | Defines how received damage affects the entity. |  | 
 | deals_damage (Alternate 1) | false | Boolean true/false |  |  | 
-| triggers | *not set* | [Triggers](#triggers-item-type) item | List of triggers with the events to call when taking specific kinds of damage." | Allay: `[{"on_damage":{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"test":"is_owner","subject":"other"}]}},"deals_damage":"no"}]`, Armadillo: `{"on_damage":{"filters":{"any_of":[{"test":"is_family","subject":"other","value":"mob"},{"test":"is_family","subject":"other","value":"player"}]},"event":"minecraft:threat_detected"}}`, `[{"on_damage":{"filters":{"any_of":[{"test":"is_family","subject":"other","value":"mob"},{"test":"is_family","subject":"other","value":"player"}]},"event":"minecraft:threat_detected"},"damage_multiplier":0.5,"damage_modifier":-1},{"damage_multiplier":0.5,"damage_modifier":-1}]` | 
+| triggers | *not set* | [Triggers](#triggers) item | List of triggers with the events to call when taking specific kinds of damage." | Allay: `[{"on_damage":{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"test":"is_owner","subject":"other"}]}},"deals_damage":"no"}]`, Armadillo: `{"on_damage":{"filters":{"any_of":[{"test":"is_family","subject":"other","value":"mob"},{"test":"is_family","subject":"other","value":"player"}]},"event":"minecraft:threat_detected"}}`, `[{"on_damage":{"filters":{"any_of":[{"test":"is_family","subject":"other","value":"mob"},{"test":"is_family","subject":"other","value":"player"}]},"event":"minecraft:threat_detected"},"damage_multiplier":0.5,"damage_modifier":-1},{"damage_multiplier":0.5,"damage_modifier":-1}]` | 
 
 ### Deals Damage choices
 
@@ -28,7 +28,7 @@ Defines what events to call when this entity is damaged by specific entities or 
 | no | No | Received damage is not applied to the entity.|
 | no_but_side_effects_apply | No But Side Effects Apply | Received damage is not applied to the entity, but the side effects of the attack are. This means that the attacker's weapon loses durability, enchantment side effects are applied, and so on.|
 
-## Triggers item type
+## Triggers
 List of triggers with the events to call when taking specific kinds of damage.".
 
 

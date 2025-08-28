@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:enchantable",
-    "title": "Minecraft Enchantable Item",
+    "title": "Item Enchantable",
     "description": "The enchantable component specifies what enchantments can be applied to the item. Not all enchantments will have an effect on all item components.",
     "fields": [
       {

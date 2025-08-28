@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn DifficultyFilter",
-    "title": "Spawn DifficultyFilter Spawn",
+    "title": "Spawn DifficultyFilter",
     "fields": [
       {
         "id": "max",

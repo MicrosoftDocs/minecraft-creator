@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "BlockDescriptorProxy",
-    "title": "BlockDescriptorProxy Entity",
+    "title": "Entity BlockDescriptorProxy",
     "fields": [
       {
         "id": "name",

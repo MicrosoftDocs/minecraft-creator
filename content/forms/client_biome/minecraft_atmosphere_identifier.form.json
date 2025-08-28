@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:atmosphere_identifier",
-    "title": "Minecraft Atmosphere Identifier Client Biome",
+    "title": "Client Biome Atmosphere Identifier",
     "description": "Set the identifier used for atmospherics in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Atmospheric Scattering JSON schemas under the \"atmospherics\" directory. Biomes without this component will have default atmosphere settings.",
     "fields": [
       {

@@ -19,7 +19,7 @@ Allows an entity to attack the closest target within a given subset of specific 
 | attack_interval | *not set* | Decimal number |  | Cave Spider: `5`, `10`, Llama: `16` | 
 | attack_interval_min | *not set* | Decimal number |  | Elder Guardian: `1` | 
 | attack_owner | false | Boolean true/false | If true, this entity can attack its owner. |  | 
-| entity_types | *not set* | Array of [Entity Types](#entity-types-item-type) items | List of entity types that this mob considers valid targets | Axolotl: `[{"filters":{"all_of":[{"test":"in_water","subject":"other","value":true},{"test":"has_component","subject":"self","operator":"!=","value":"minecraft:attack_cooldown"},{"any_of":[{"test":"is_family","subject":"other","value":"squid"},{"test":"is_family","subject":"other","value":"fish"},{"test":"is_family","subject":"other","value":"tadpole"}]}]},"max_dist":8},{"filters":{"all_of":[{"test":"in_water","subject":"other","value":true},{"any_of":[{"test":"is_family","subject":"other","value":"drowned"},{"test":"is_family","subject":"other","value":"guardian"},{"test":"is_family","subject":"other","value":"guardian_elder"}]}]},"max_dist":8}]`, Bee: `[{"filters":{"test":"is_family","subject":"other","value":"player"},"max_dist":10}]`, Blaze: `[{"filters":{"test":"is_family","subject":"other","value":"player"},"max_dist":48}]` | 
+| entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entity types that this mob considers valid targets | Axolotl: `[{"filters":{"all_of":[{"test":"in_water","subject":"other","value":true},{"test":"has_component","subject":"self","operator":"!=","value":"minecraft:attack_cooldown"},{"any_of":[{"test":"is_family","subject":"other","value":"squid"},{"test":"is_family","subject":"other","value":"fish"},{"test":"is_family","subject":"other","value":"tadpole"}]}]},"max_dist":8},{"filters":{"all_of":[{"test":"in_water","subject":"other","value":true},{"any_of":[{"test":"is_family","subject":"other","value":"drowned"},{"test":"is_family","subject":"other","value":"guardian"},{"test":"is_family","subject":"other","value":"guardian_elder"}]}]},"max_dist":8}]`, Bee: `[{"filters":{"test":"is_family","subject":"other","value":"player"},"max_dist":10}]`, Blaze: `[{"filters":{"test":"is_family","subject":"other","value":"player"},"max_dist":48}]` | 
 | must_reach | false | Boolean true/false | If true, this entity requires a path to the target. | Iron Golem: `true` | 
 | must_see | false | Boolean true/false | Determines if target-validity requires this entity to be in range only, or both in range and in sight. | Axolotl: `true` | 
 | must_see_forget_duration | 3 | Decimal number | Time (in seconds) the target must not be seen by this entity to become invalid. Used only if "must_see" is true. | Axolotl: `17`, Creeper: `3`, Phantom: `0.5` | 
@@ -33,7 +33,7 @@ Allows an entity to attack the closest target within a given subset of specific 
 | target_sneak_visibility_multiplier | 0.8 | Decimal number | Multiplied with the target type's "max_dist" when trying to detect a sneaking target. |  | 
 | within_radius | 0 | Decimal number | Maximum distance this entity can be from the target when following it, otherwise the target becomes invalid. This value is only used if the entity doesn't declare "minecraft:follow_range". | Axolotl: `20`, Breeze: `24`, Cat: `16` | 
 
-## Entity Types item type
+## Entity Types
 List of entity types that this mob considers valid targets.
 
 

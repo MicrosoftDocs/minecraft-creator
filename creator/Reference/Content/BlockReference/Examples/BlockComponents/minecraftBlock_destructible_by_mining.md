@@ -23,10 +23,10 @@ This item can also be represented as a `Boolean true/false`.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| item_specific_speeds | *not set* | Array of [Item Specific Speeds](#item-specific-speeds-item-type) items | Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. This array currently requires UpcomingFeatures experiment to be enabled. | Samples: `"{<br> "minecraft:destructible_by_mining": {<br> "seconds_to_destroy": 10,<br> "item_specific_speeds": [<br> {<br> "item": { "tags": "q.any_tag('minecraft:is_pickaxe', 'minecraft:is_tool') " },<br> "destroy_speed": 5.0<br> }<br> ]<br> }<br>}"`, `"{<br> "minecraft:destructible_by_mining": {<br> "seconds_to_destroy": 10,<br> "item_specific_speeds": [<br> {<br> "item": "minecraft:iron_pickaxe",<br> "destroy_speed": 5.0<br> },<br> {<br> "item": "minecraft:diamond_pickaxe",<br> "destroy_speed": 2.0<br> }<br> ]<br> }<br>}"`, Block White Sand: `[{"item":{"tags":"q.all_tags('minecraft:is_pickaxe', 'minecraft:wooden_tier')"},"destroy_speed":1.15},{"item":{"tags":"q.all_tags('minecraft:is_pickaxe', 'minecraft:stone_tier')"},"destroy_speed":0.6},{"item":{"tags":"q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier')"},"destroy_speed":0.4},{"item":{"tags":"q.all_tags('minecraft:is_pickaxe', 'minecraft:golden_tier')"},"destroy_speed":0.2},{"item":{"tags":"q.all_tags('minecraft:is_pickaxe', 'minecraft:diamond_tier')"},"destroy_speed":0.3},{"item":{"tags":"q.all_tags('minecraft:is_pickaxe', 'minecraft:netherite_tier')"},"destroy_speed":0.25}]` | 
+| item_specific_speeds | *not set* | Array of [Item Specific Speeds](#item-specific-speeds) items | Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. This array currently requires UpcomingFeatures experiment to be enabled. | Samples: `"{<br> "minecraft:destructible_by_mining": {<br> "seconds_to_destroy": 10,<br> "item_specific_speeds": [<br> {<br> "item": { "tags": "q.any_tag('minecraft:is_pickaxe', 'minecraft:is_tool') " },<br> "destroy_speed": 5.0<br> }<br> ]<br> }<br>}"`, `"{<br> "minecraft:destructible_by_mining": {<br> "seconds_to_destroy": 10,<br> "item_specific_speeds": [<br> {<br> "item": "minecraft:iron_pickaxe",<br> "destroy_speed": 5.0<br> },<br> {<br> "item": "minecraft:diamond_pickaxe",<br> "destroy_speed": 2.0<br> }<br> ]<br> }<br>}"`, Block White Sand: `[{"item":{"tags":"q.all_tags('minecraft:is_pickaxe', 'minecraft:wooden_tier')"},"destroy_speed":1.15},{"item":{"tags":"q.all_tags('minecraft:is_pickaxe', 'minecraft:stone_tier')"},"destroy_speed":0.6},{"item":{"tags":"q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier')"},"destroy_speed":0.4},{"item":{"tags":"q.all_tags('minecraft:is_pickaxe', 'minecraft:golden_tier')"},"destroy_speed":0.2},{"item":{"tags":"q.all_tags('minecraft:is_pickaxe', 'minecraft:diamond_tier')"},"destroy_speed":0.3},{"item":{"tags":"q.all_tags('minecraft:is_pickaxe', 'minecraft:netherite_tier')"},"destroy_speed":0.25}]` | 
 | seconds_to_destroy | 0 | Decimal number | Sets the number of seconds it takes to destroy the block with base equipment. Greater numbers result in greater mining times. | Block Fabricator: `0.4`, Block White Sand: `7.5`, Block Leaf Pile: `1` | 
 
-## Item Specific Speeds item type
+## Item Specific Speeds
 Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. This array currently requires UpcomingFeatures experiment to be enabled.
 
 
@@ -35,10 +35,10 @@ Optional array of objects to describe item specific block destroy speeds, each o
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | destroy_speed | *not set* | Decimal number | Required. A destroy speed applied while using the defined 'item'. |  | 
-| item | *not set* | Array of [Item](#item-item-type) items | Required. A filter for the item used while mining. |  | 
+| item | *not set* | Array of [Item](#item) items | Required. A filter for the item used while mining. |  | 
 | item (Alternate 1) | *not set* | String | An item tag that is usable for the item. |  | 
 
-## Item item type
+## Item
 Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. This array currently requires UpcomingFeatures experiment to be enabled.
 
 

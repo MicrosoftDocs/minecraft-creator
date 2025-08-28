@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:cooldown",
-    "title": "Minecraft Cooldown Item",
+    "title": "Item Cooldown",
     "description": "After you use an item, all items with a \"minecraft:cooldown\" component with the same \"category\" become unusable for the amount of seconds specified in \"duration\".",
     "fields": [
       {

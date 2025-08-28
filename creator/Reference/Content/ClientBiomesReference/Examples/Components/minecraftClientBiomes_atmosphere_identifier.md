@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Set the identifier used for atmospherics in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Atmospheric Scattering JSON schemas under the "atmospherics" directory. Biomes without this component will have default atmosphere settings.
 
 
-## Minecraft Atmosphere Identifier Client Biome Properties
+## Client Biome Atmosphere Identifier Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

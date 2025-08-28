@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "TagMatch",
-    "title": "TagMatch World",
+    "title": "World TagMatch",
     "description": "Predicate that evaluates to true if the block at the specified location constains the tag.",
     "fields": [
       {

@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Description",
-    "title": "Description Voxel Shapes",
+    "title": "Voxel Shapes Description",
     "fields": [
       {
         "id": "identifier",

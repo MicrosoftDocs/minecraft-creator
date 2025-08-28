@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Description",
-    "title": "Description Dimension",
+    "title": "Dimension Description",
     "fields": [
       {
         "id": "identifier",

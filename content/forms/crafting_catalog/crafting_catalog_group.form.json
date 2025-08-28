@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Crafting Catalog Group",
-    "title": "Crafting Catalog Group Crafting Catalog",
+    "title": "Crafting Catalog Group",
     "description": "Represents a group of items. A group can be collapsible if it is provided with a group identifier, or added a set of loose items without an icon.",
     "fields": [
       {
@@ -15,14 +15,8 @@
       },
       {
         "id": "items",
-        "title": "Items",
         "description": "The items to add to the group.",
-        "dataType": 15,
-        "subForm": {
-          "id": "items",
-          "title": "Items",
-          "fields": []
-        },
+        "dataType": 2,
         "alternates": [
           {
             "id": "items",

@@ -15,9 +15,9 @@ ms.date: 02/11/2025
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | format_version | *not set* | Version |  |  | 
-| minecraft:texture_set | *not set* | [Texture Set](#texture-set-item-type) item |  |  | 
+| minecraft:texture_set | *not set* | [Texture Set](#texture-set) item |  |  | 
 
-## Texture Set item type
+## Texture Set
 
 #### Texture Set Properties
 

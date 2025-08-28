@@ -10,7 +10,7 @@
   ],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:precipitation",
-    "title": "Minecraft Precipitation Client Biome",
+    "title": "Client Biome Precipitation",
     "description": "Describes the visuals for a biome's precipitation. Biomes without this component will have default values. At most one precipitation type can be set for a biome.",
     "fields": [
       {

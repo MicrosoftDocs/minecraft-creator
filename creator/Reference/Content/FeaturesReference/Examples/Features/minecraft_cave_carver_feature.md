@@ -16,13 +16,13 @@ Carves a cave through the world in the current chunk, and in every chunk around 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description-item-type) item |  |  | 
+| description | *not set* | [Description](#description) item |  |  | 
 | format_version | *not set* | String |  |  | 
 | height_limit | *not set* | Integer number | The height limit where we attempt to carve. |  | 
 | skip_carve_chance | *not set* | Integer number | The chance to skip doing the carve (1 / value). |  | 
 | width_modifier | *not set* | Molang | How many blocks to increase the cave radius by, from the center point of the cave. |  | 
 
-## Description item type
+## Description
 
 #### Description Properties
 

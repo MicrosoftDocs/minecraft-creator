@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 The duration of time (in seconds) items with a matching category will spend cooling down before becoming usable again.
 
 
-## Minecraft Cooldown Item Components Properties
+## Item Components Cooldown Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

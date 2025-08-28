@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Sets the item display name within Minecraft: Bedrock Edition. This component may also be used to pull from the localization file by referencing a key from it.
 
 
-## Minecraft Display Name Item Components Properties
+## Item Components Display Name Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

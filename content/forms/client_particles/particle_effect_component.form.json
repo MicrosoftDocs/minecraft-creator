@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_effect component",
-    "title": "Particle Effect Component Client Particles",
+    "title": "Client Particles Particle Effect Component",
     "fields": [
       {
         "id": "minecraft:emitter_initialization",

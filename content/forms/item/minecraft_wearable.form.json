@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:wearable",
-    "title": "Minecraft Wearable Item",
+    "title": "Item Wearable",
     "description": "Wearable items can be worn by a player in a specified slot.",
     "fields": [
       {

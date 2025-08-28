@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Grass Color Map",
-    "title": "Grass Color Map Client Biome",
+    "title": "Client Biome Grass Color Map",
     "description": "Object specifying a color map for grass instead of a specific color.",
     "fields": [
       {

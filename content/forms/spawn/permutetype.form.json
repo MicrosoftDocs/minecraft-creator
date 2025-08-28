@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "PermuteType",
-    "title": "PermuteType Spawn",
+    "title": "Spawn PermuteType",
     "fields": [
       {
         "id": "entity_type",

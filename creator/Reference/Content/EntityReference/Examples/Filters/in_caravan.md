@@ -19,13 +19,13 @@ Returns true if the subject entity is in a caravan.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| minecraft:damage_sensor | *not set* | [Damage Sensor](#damage-sensor-item-type) item |  | Llama: `{"triggers":{"cause":"all","deals_damage":"yes"}}`, Frost Moose: `{"triggers":{"cause":"all","deals_damage":true}}` | 
+| minecraft:damage_sensor | *not set* | [Damage Sensor (Minecraft Damage Sensor)](#damage-sensor-minecraft-damage-sensor) item |  | Llama: `{"triggers":{"cause":"all","deals_damage":"yes"}}`, Frost Moose: `{"triggers":{"cause":"all","deals_damage":true}}` | 
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
 | test | *not set* | String |  | Llama: `"in_caravan"` | 
 | value | true | Boolean true/false | (Optional) true or false. |  | 
 
-## Damage Sensor item type
+## Damage Sensor (Minecraft Damage Sensor)
 
 #### Minecraft:damage_sensor Properties
 

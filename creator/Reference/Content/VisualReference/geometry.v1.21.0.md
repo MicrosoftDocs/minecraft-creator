@@ -16,44 +16,44 @@ ms.date: 02/11/2025
 |:----------|:-------------|:----|:-----------|:------------- |
 | debug | *not set* | Boolean true/false |  |  | 
 | format_version | *not set* | Version |  |  | 
-| minecraft:geometry | *not set* | Array of [Geometry](#geometry-item-type) items |  |  | 
+| minecraft:geometry | *not set* | Array of [Geometry](#geometry) items |  |  | 
 | minecraft:geometry (Alternate 1) | *not set* | Array of strings |  |  | 
 
-## Geometry item type
+## Geometry
 
 #### Geometry Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| bones | *not set* | Array of [Bones](#bones-item-type) items |  |  | 
+| bones | *not set* | Array of [Bones](#bones) items |  |  | 
 | bones (Alternate 1) | *not set* | Array of strings | Bones define the 'skeleton' of the mob: the parts that can be animated, and to which geometry and other bones are attached. |  | 
 | cape | *not set* | String |  |  | 
-| description | *not set* | [Description](#description-item-type) item |  |  | 
-| item_display_transforms | *not set* | [Item Display Transforms](#item-display-transforms-item-type) item | Components of the 3d matrix transform to be applied to this geometry when displayed in this item rendering context. Valid contexts: ["gui", "firstperson_righthand", "firstperson_lefthand", "thirdperson_righthand", "thirdperson_lefthand", "ground", "fixed", "head", "embedded"]. |  | 
+| description | *not set* | [Description](#description) item |  |  | 
+| item_display_transforms | *not set* | [Item Display Transforms](#item-display-transforms) item | Components of the 3d matrix transform to be applied to this geometry when displayed in this item rendering context. Valid contexts: ["gui", "firstperson_righthand", "firstperson_lefthand", "thirdperson_righthand", "thirdperson_lefthand", "ground", "fixed", "head", "embedded"]. |  | 
 
-## Bones item type
+## Bones
 
 #### Bones Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | binding | *not set* | Molang | Useful for items. A molang expression specifying the bone name of the parent skeletal hierarchy that this bone should use as the root transform. Without this field it will look for a bone in the parent entity with the same name as this bone. If both are missing, it will assume a local skeletal hierarchy (via the "parent" field). If that is also missing, it will attach to the owning entity's root transform. |  | 
-| cubes | *not set* | Array of [Cubes](#cubes-item-type) items |  |  | 
+| cubes | *not set* | Array of [Cubes](#cubes) items |  |  | 
 | cubes (Alternate 1) | *not set* | Array of strings | This is the list of cubes associated with this bone. |  | 
 | debug | *not set* | Boolean true/false |  |  | 
-| locators | *not set* | Key/item pairs of [Locators](#locators-item-type) items |  |  | 
+| locators | *not set* | Key/item pairs of [Locators](#locators) items |  |  | 
 | locators (Alternate 1) | *not set* | Keyed set of strings | This is a list of locators associated with this bone. A locator is a point in model space that tracks a particular bone as the bone animates (by maintaining it's relationship to the bone through the animation). |  | 
 | mirror | *not set* | Boolean true/false | Mirrors the UV's of the unrotated cubes along the x axis, also causes the east/west faces to get flipped. |  | 
 | name | *not set* | String | Animation files refer to this bone via this identifier. |  | 
 | parent | *not set* | String | Bone that this bone is relative to. If the parent bone moves, this bone will move along with it. |  | 
 | pivot | *not set* | Array of strings |  |  | 
-| poly_mesh | *not set* | Key/item pairs of [Poly Mesh](#poly-mesh-item-type) items | [Deprecated] A triangle or quad mesh object. Can be used in conjunction with cubes and texture geometry. This feature is deprecated, and using it in new content will result in content errors. |  | 
+| poly_mesh | *not set* | Key/item pairs of [Poly Mesh](#poly-mesh) items | [Deprecated] A triangle or quad mesh object. Can be used in conjunction with cubes and texture geometry. This feature is deprecated, and using it in new content will result in content errors. |  | 
 | render_group_id | *not set* | Integer number |  |  | 
 | rotation | *not set* | Array of strings |  |  | 
-| texture_meshes | *not set* | Array of [Texture Meshes](#texture-meshes-item-type) items |  |  | 
+| texture_meshes | *not set* | Array of [Texture Meshes](#texture-meshes) items |  |  | 
 | texture_meshes (Alternate 1) | *not set* | Array of strings | Adds a mesh to the bone's geometry by converting texels in a texture into voxels. |  | 
 
-## Cubes item type
+## Cubes
 
 #### Cubes Properties
 
@@ -64,23 +64,23 @@ ms.date: 02/11/2025
 | pivot | *not set* | Array of strings |  |  | 
 | rotation | *not set* | Array of strings |  |  | 
 | size | *not set* | Array of strings |  |  | 
-| uv | *not set* | [Uv](#uv-item-type) item | This is an alternate per-face uv mapping which specifies each face of the cube. Omitting a face will cause that face to not get drawn. |  | 
+| uv | *not set* | [Uv](#uv) item | This is an alternate per-face uv mapping which specifies each face of the cube. Omitting a face will cause that face to not get drawn. |  | 
 | uv (Alternate 1) | *not set* | Array of strings |  |  | 
 
-## Uv item type
+## Uv
 
 #### Uv Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| down | *not set* | [Down](#down-item-type) item | Specifies the UV's for the face that stretches along the x and z axes, and faces the -y axis |  | 
-| east | *not set* | [East](#east-item-type) item | Specifies the UV's for the face that stretches along the z and y axes, and faces the x axis |  | 
-| north | *not set* | [North](#north-item-type) item | Specifies the UV's for the face that stretches along the x and y axes, and faces the -z axis. |  | 
-| south | *not set* | [South](#south-item-type) item | Specifies the UV's for the face that stretches along the x and y axes, and faces the z axis |  | 
-| up | *not set* | [Up](#up-item-type) item | Specifies the UV's for the face that stretches along the x and z axes, and faces the y axis |  | 
-| west | *not set* | [West](#west-item-type) item | Specifies the UV's for the face that stretches along the z and y axes, and faces the -x axis |  | 
+| down | *not set* | [Down](#down) item | Specifies the UV's for the face that stretches along the x and z axes, and faces the -y axis |  | 
+| east | *not set* | [East](#east) item | Specifies the UV's for the face that stretches along the z and y axes, and faces the x axis |  | 
+| north | *not set* | [North](#north) item | Specifies the UV's for the face that stretches along the x and y axes, and faces the -z axis. |  | 
+| south | *not set* | [South](#south) item | Specifies the UV's for the face that stretches along the x and y axes, and faces the z axis |  | 
+| up | *not set* | [Up](#up) item | Specifies the UV's for the face that stretches along the x and z axes, and faces the y axis |  | 
+| west | *not set* | [West](#west) item | Specifies the UV's for the face that stretches along the z and y axes, and faces the -x axis |  | 
 
-## Down item type
+## Down
 
 #### Down Properties
 
@@ -91,7 +91,7 @@ ms.date: 02/11/2025
 | uv_rotation | *not set* | Integer number | Rotates the uv rect clockwise the specified amount of degrees before applying it to the face. Valid values are 0, 90, 180 and 270. If not specified, no rotation will be applied. |  | 
 | uv_size | *not set* | Array of strings |  |  | 
 
-## East item type
+## East
 
 #### East Properties
 
@@ -102,7 +102,7 @@ ms.date: 02/11/2025
 | uv_rotation | *not set* | Integer number | Rotates the uv rect clockwise the specified amount of degrees before applying it to the face. Valid values are 0, 90, 180 and 270. If not specified, no rotation will be applied. |  | 
 | uv_size | *not set* | Array of strings |  |  | 
 
-## North item type
+## North
 
 #### North Properties
 
@@ -113,7 +113,7 @@ ms.date: 02/11/2025
 | uv_rotation | *not set* | Integer number | Rotates the uv rect clockwise the specified amount of degrees before applying it to the face. Valid values are 0, 90, 180 and 270. If not specified, no rotation will be applied. |  | 
 | uv_size | *not set* | Array of strings |  |  | 
 
-## South item type
+## South
 
 #### South Properties
 
@@ -124,7 +124,7 @@ ms.date: 02/11/2025
 | uv_rotation | *not set* | Integer number | Rotates the uv rect clockwise the specified amount of degrees before applying it to the face. Valid values are 0, 90, 180 and 270. If not specified, no rotation will be applied. |  | 
 | uv_size | *not set* | Array of strings |  |  | 
 
-## Up item type
+## Up
 
 #### Up Properties
 
@@ -135,7 +135,7 @@ ms.date: 02/11/2025
 | uv_rotation | *not set* | Integer number | Rotates the uv rect clockwise the specified amount of degrees before applying it to the face. Valid values are 0, 90, 180 and 270. If not specified, no rotation will be applied. |  | 
 | uv_size | *not set* | Array of strings |  |  | 
 
-## West item type
+## West
 
 #### West Properties
 
@@ -146,7 +146,7 @@ ms.date: 02/11/2025
 | uv_rotation | *not set* | Integer number | Rotates the uv rect clockwise the specified amount of degrees before applying it to the face. Valid values are 0, 90, 180 and 270. If not specified, no rotation will be applied. |  | 
 | uv_size | *not set* | Array of strings |  |  | 
 
-## Locators item type
+## Locators
 
 #### Locators Properties
 
@@ -156,7 +156,7 @@ ms.date: 02/11/2025
 | offset | *not set* | Array of strings |  |  | 
 | rotation | *not set* | Array of strings |  |  | 
 
-## Poly Mesh item type
+## Poly Mesh
 
 #### Poly Mesh Properties
 
@@ -168,7 +168,7 @@ ms.date: 02/11/2025
 | positions | *not set* | Array of strings |  |  | 
 | uvs | *not set* | Array of strings |  |  | 
 
-## Texture Meshes item type
+## Texture Meshes
 
 #### Texture Meshes Properties
 
@@ -181,7 +181,7 @@ ms.date: 02/11/2025
 | texture | *not set* | String | The friendly-named texture to use. |  | 
 | use_pixel_depth | *not set* | Boolean true/false | If set to "true", the geometry will have a depth of one pixel (in entity space, not texture space). This causes geometries with a texture resolution different from 16x16 to appear stretched. If set to "false", the geometry will be built from perfectly cubic voxels, no matter the texture's aspect ratio. The default value is "true". |  | 
 
-## Description item type
+## Description
 
 #### Description Properties
 
@@ -192,23 +192,23 @@ ms.date: 02/11/2025
 | texture_width | *not set* | Integer number | Assumed width in texels of the texture that will be bound to this geometry. |  | 
 | visible_bounds_offset | *not set* | Array of strings |  |  | 
 
-## Item Display Transforms item type
+## Item Display Transforms
 
 #### Item Display Transforms Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| embedded | *not set* | [Embedded](#embedded-item-type) item |  |  | 
-| firstperson_lefthand | *not set* | [Firstperson Lefthand](#firstperson-lefthand-item-type) item |  |  | 
-| firstperson_righthand | *not set* | [Firstperson Righthand](#firstperson-righthand-item-type) item |  |  | 
-| fixed | *not set* | [Fixed](#fixed-item-type) item |  |  | 
-| ground | *not set* | [Ground](#ground-item-type) item |  |  | 
-| gui | *not set* | [Gui](#gui-item-type) item |  |  | 
-| head | *not set* | [Head](#head-item-type) item |  |  | 
-| thirdperson_lefthand | *not set* | [Thirdperson Lefthand](#thirdperson-lefthand-item-type) item |  |  | 
-| thirdperson_righthand | *not set* | [Thirdperson Righthand](#thirdperson-righthand-item-type) item |  |  | 
+| embedded | *not set* | [Embedded](#embedded) item |  |  | 
+| firstperson_lefthand | *not set* | [Firstperson Lefthand](#firstperson-lefthand) item |  |  | 
+| firstperson_righthand | *not set* | [Firstperson Righthand](#firstperson-righthand) item |  |  | 
+| fixed | *not set* | [Fixed](#fixed) item |  |  | 
+| ground | *not set* | [Ground](#ground) item |  |  | 
+| gui | *not set* | [Gui](#gui) item |  |  | 
+| head | *not set* | [Head](#head) item |  |  | 
+| thirdperson_lefthand | *not set* | [Thirdperson Lefthand](#thirdperson-lefthand) item |  |  | 
+| thirdperson_righthand | *not set* | [Thirdperson Righthand](#thirdperson-righthand) item |  |  | 
 
-## Embedded item type
+## Embedded
 
 #### Embedded Properties
 
@@ -220,7 +220,7 @@ ms.date: 02/11/2025
 | scale_pivot | *not set* | Array of strings |  |  | 
 | translation | *not set* | Array of strings |  |  | 
 
-## Firstperson Lefthand item type
+## Firstperson Lefthand
 
 #### Firstperson Lefthand Properties
 
@@ -232,7 +232,7 @@ ms.date: 02/11/2025
 | scale_pivot | *not set* | Array of strings |  |  | 
 | translation | *not set* | Array of strings |  |  | 
 
-## Firstperson Righthand item type
+## Firstperson Righthand
 
 #### Firstperson Righthand Properties
 
@@ -244,7 +244,7 @@ ms.date: 02/11/2025
 | scale_pivot | *not set* | Array of strings |  |  | 
 | translation | *not set* | Array of strings |  |  | 
 
-## Fixed item type
+## Fixed
 
 #### Fixed Properties
 
@@ -256,7 +256,7 @@ ms.date: 02/11/2025
 | scale_pivot | *not set* | Array of strings |  |  | 
 | translation | *not set* | Array of strings |  |  | 
 
-## Ground item type
+## Ground
 
 #### Ground Properties
 
@@ -268,7 +268,7 @@ ms.date: 02/11/2025
 | scale_pivot | *not set* | Array of strings |  |  | 
 | translation | *not set* | Array of strings |  |  | 
 
-## Gui item type
+## Gui
 
 #### Gui Properties
 
@@ -281,7 +281,7 @@ ms.date: 02/11/2025
 | scale_pivot | *not set* | Array of strings |  |  | 
 | translation | *not set* | Array of strings |  |  | 
 
-## Head item type
+## Head
 
 #### Head Properties
 
@@ -293,7 +293,7 @@ ms.date: 02/11/2025
 | scale_pivot | *not set* | Array of strings |  |  | 
 | translation | *not set* | Array of strings |  |  | 
 
-## Thirdperson Lefthand item type
+## Thirdperson Lefthand
 
 #### Thirdperson Lefthand Properties
 
@@ -305,7 +305,7 @@ ms.date: 02/11/2025
 | scale_pivot | *not set* | Array of strings |  |  | 
 | translation | *not set* | Array of strings |  |  | 
 
-## Thirdperson Righthand item type
+## Thirdperson Righthand
 
 #### Thirdperson Righthand Properties
 

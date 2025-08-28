@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "components v1.21.80",
-    "title": "Components v1.21.80 Item",
+    "title": "Item 21.80 Components v1",
     "description": "List of all components used in this item.",
     "fields": [
       {
@@ -506,7 +506,7 @@
       },
       {
         "id": "minecraft:use_animation",
-        "title": "Minecraft Use Animation",
+        "title": "Animation",
         "description": "Use_animation specifies which animation is played when the player uses the item.",
         "dataType": 2,
         "alternates": [

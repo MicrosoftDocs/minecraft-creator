@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:the_end",
-    "title": "Minecraft The End Biome",
+    "title": "Biome The End",
     "fields": [
       {
         "id": "type",

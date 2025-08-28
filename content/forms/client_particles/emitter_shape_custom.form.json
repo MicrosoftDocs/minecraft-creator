@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_shape_custom",
-    "title": "Emitter Shape Custom Client Particles",
+    "title": "Client Particles Emitter Shape Custom",
     "fields": [
       {
         "id": "direction",

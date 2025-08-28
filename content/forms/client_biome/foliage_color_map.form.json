@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Foliage Color Map",
-    "title": "Foliage Color Map Client Biome",
+    "title": "Client Biome Foliage Color Map",
     "description": "Object specifying a color map for foliage instead of a specific color.",
     "fields": [
       {

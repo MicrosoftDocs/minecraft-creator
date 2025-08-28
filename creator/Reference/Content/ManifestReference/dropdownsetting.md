@@ -16,11 +16,11 @@ ms.date: 02/11/2025
 |:----------|:-------------|:----|:-----------|:------------- |
 | default | *not set* | String |  |  | 
 | name | *not set* | String |  |  | 
-| options | *not set* | [Options](#options-item-type) item |  |  | 
+| options | *not set* | [0.0.DropdownOption) Options (3](#3.0.0.dropdownoption) item |  |  | 
 | text | *not set* | String |  |  | 
 | type | *not set* | String |  |  | 
 
-## Options item type
+## 3.0.0.DropdownOption
 
 #### 3.0.0.DropdownOption Properties
 

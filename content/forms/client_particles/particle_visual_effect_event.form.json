@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_visual_effect_event",
-    "title": "Particle Visual Effect Event Client Particles",
+    "title": "Client Particles Particle Visual Effect Event",
     "fields": [
       {
         "id": "effect",

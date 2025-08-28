@@ -8,7 +8,7 @@
   ],
   "generatedFromSchema_doNotEdit": {
     "id": "BlockRules",
-    "title": "BlockRules World",
+    "title": "World BlockRules",
     "description": "Replaces and modifies blocks based on a series of rules",
     "fields": [
       {

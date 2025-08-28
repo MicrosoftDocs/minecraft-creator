@@ -2,11 +2,11 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_shape_entity_aabb",
-    "title": "Emitter Shape Entity Aabb Client Particles",
+    "title": "Client Particles Emitter Shape Entity Aabb",
     "fields": [
       {
         "id": "direction",
-        "title": "Direction",
+        "title": "Direction Type",
         "dataType": 2,
         "alternates": [
           {

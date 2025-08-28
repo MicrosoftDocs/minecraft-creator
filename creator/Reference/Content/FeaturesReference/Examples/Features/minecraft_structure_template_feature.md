@@ -17,22 +17,22 @@ Places a structure in the world. The structure must be stored as a .mcstructure 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | adjustment_radius | *not set* | Integer number | How far the structure is allowed to move when searching for a valid placement position. Search is radial, stopping when the nearest valid position is found. Defaults to 0 if omitted. |  | 
-| constraints | *not set* | [Constraints](#constraints-item-type) item | Specific constraints that must be satisfied when placing this structure. |  | 
-| description | *not set* | [Description](#description-item-type) item |  |  | 
+| constraints | *not set* | [Constraints](#constraints) item | Specific constraints that must be satisfied when placing this structure. |  | 
+| description | *not set* | [Description](#description) item |  |  | 
 | facing_direction"<"north", "south", "east", "west", "random" | *not set* | String | Direction the structure will face when placed in the world. Defaults to "random" if omitted. |  | 
 | format_version | *not set* | String |  |  | 
 
-## Constraints item type
+## Constraints
 
 #### Constraints Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| block_intersection | *not set* | [Block Intersection](#block-intersection-item-type) item | When specified, ensures the structure only intersects with allowlisted blocks. |  | 
+| block_intersection | *not set* | [Block Intersection](#block-intersection) item | When specified, ensures the structure only intersects with allowlisted blocks. |  | 
 | grounded | *not set* | Object | When specified, ensures the structure is on the ground. |  | 
 | unburied | *not set* | Object | When specified, ensures the structure has air above it. |  | 
 
-## Block Intersection item type
+## Block Intersection
 
 #### Block Intersection Properties
 
@@ -40,7 +40,7 @@ Places a structure in the world. The structure must be stored as a .mcstructure 
 |:----------|:-------------|:----|:-----------|:------------- |
 | block_allowlist|block_whitelist | *not set* | Array of strings |  |  | 
 
-## Description item type
+## Description
 
 #### Description Properties
 

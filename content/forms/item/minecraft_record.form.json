@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:record",
-    "title": "Minecraft Record Item",
+    "title": "Item Record",
     "description": "Record Item Component. Used by record items to play music.",
     "fields": [
       {

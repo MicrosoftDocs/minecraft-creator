@@ -20,13 +20,13 @@ ms.date: 02/11/2025
 | can_place_sculk_patch_on | *not set* | Array of strings |  |  | 
 | charge_amount | *not set* | Integer number |  |  | 
 | cursor_count | *not set* | Integer number |  |  | 
-| description | *not set* | [Description](#description-item-type) item |  |  | 
+| description | *not set* | [Description](#description) item |  |  | 
 | format_version | *not set* | String |  |  | 
 | growth_rounds | *not set* | Integer number |  |  | 
 | spread_attempts | *not set* | Integer number |  |  | 
 | spread_rounds | *not set* | Integer number |  |  | 
 
-## Description item type
+## Description
 
 #### Description Properties
 

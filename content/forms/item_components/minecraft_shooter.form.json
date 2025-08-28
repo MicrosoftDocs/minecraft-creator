@@ -125,7 +125,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:shooter",
-    "title": "Minecraft Shooter Item Components",
+    "title": "Item Components Shooter",
     "description": "Shooter Item Component.",
     "fields": [
       {

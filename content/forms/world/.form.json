@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Used to pair block rules with Structure Templates and to randomly place Structure Templates using a weighted list.",
-    "title": "Used To Pair Block Rules With Structure Templates And To Randomly Place Structure Templates Using a Weighted List World",
+    "title": "World Used To Pair Block Rules With Structure Templates And To Randomly Place Structure Templates Using a Weighted List",
     "fields": [
       {
         "id": "description",

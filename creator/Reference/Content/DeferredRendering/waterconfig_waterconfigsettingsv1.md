@@ -17,9 +17,9 @@ Struct WaterConfig WaterConfigSettingsV1 Client Deferred Rendering.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | format_version | *not set* | String | [editor(readonly:true)] |  | 
-| minecraft:water_settings | *not set* | [Water Settings](#water-settings-item-type) item | minecraft:water_settings |  | 
+| minecraft:water_settings | *not set* | [Water Settings (WaterConfig WaterConfigSettingsV1 WaterSettings)](#water-settings-waterconfig-waterconfigsettingsv1-watersettings) item | minecraft:water_settings |  | 
 
-## Water Settings item type
+## Water Settings (WaterConfig WaterConfigSettingsV1 WaterSettings)
 WaterConfig WaterConfigSettingsV1 WaterSettings.
 
 
@@ -27,12 +27,12 @@ WaterConfig WaterConfigSettingsV1 WaterSettings.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| caustics | *not set* | [Caustics](#caustics-item-type) item | caustics |  | 
-| description | *not set* | [Description](#description-item-type) item | description |  | 
-| particle_concentrations | *not set* | [Particle Concentrations](#particle-concentrations-item-type) item | particle_concentrations |  | 
-| waves | *not set* | [Waves](#waves-item-type) item | waves |  | 
+| caustics | *not set* | [Caustics (Mce Framebuilder CausticsParameters)](#caustics-mce-framebuilder-causticsparameters) item | caustics |  | 
+| description | *not set* | [Description (WaterConfig WaterConfigSettingsV0 WaterSettings WaterDescription)](#description-waterconfig-waterconfigsettingsv0-watersettings-waterdescription) item | description |  | 
+| particle_concentrations | *not set* | [Particle Concentrations (WaterConfig WaterConfigSettingsV0 WaterSettings PSY)](#particle-concentrations-waterconfig-waterconfigsettingsv0-watersettings-psy) item | particle_concentrations |  | 
+| waves | *not set* | [Waves (Mce Framebuilder WaterSurfaceParameters)](#waves-mce-framebuilder-watersurfaceparameters) item | waves |  | 
 
-## Caustics item type
+## Caustics (Mce Framebuilder CausticsParameters)
 Mce Framebuilder CausticsParameters.
 
 
@@ -46,7 +46,7 @@ Mce Framebuilder CausticsParameters.
 | scale | *not set* | Decimal number | scale Value must be >= 0.10000000149011612. Value must be <= 5. |  | 
 | texture | *not set* | String | texture |  | 
 
-## Description item type
+## Description (WaterConfig WaterConfigSettingsV0 WaterSettings WaterDescription)
 WaterConfig WaterConfigSettingsV0 WaterSettings WaterDescription.
 
 
@@ -56,7 +56,7 @@ WaterConfig WaterConfigSettingsV0 WaterSettings WaterDescription.
 |:----------|:-------------|:----|:-----------|:------------- |
 | identifier | *not set* | String | identifier |  | 
 
-## Particle Concentrations item type
+## Particle Concentrations (WaterConfig WaterConfigSettingsV0 WaterSettings PSY)
 WaterConfig WaterConfigSettingsV0 WaterSettings PSY.
 
 
@@ -68,7 +68,7 @@ WaterConfig WaterConfigSettingsV0 WaterSettings PSY.
 | chlorophyll | *not set* | Decimal number | chlorophyll Value must be <= 10. |  | 
 | suspended_sediment | *not set* | Decimal number | suspended_sediment Value must be <= 300. |  | 
 
-## Waves item type
+## Waves (Mce Framebuilder WaterSurfaceParameters)
 Mce Framebuilder WaterSurfaceParameters.
 
 

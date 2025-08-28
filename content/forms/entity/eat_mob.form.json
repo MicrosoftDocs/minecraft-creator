@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.eat_mob",
-    "title": "Minecraft Behavior.eat Mob Entity",
+    "title": "Entity Eat Mob Behavior",
     "description": "Allows the entity to eat a specified Mob.",
     "fields": [
       {

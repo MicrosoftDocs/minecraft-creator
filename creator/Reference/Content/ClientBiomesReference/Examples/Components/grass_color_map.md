@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Object specifying a color map for grass instead of a specific color.
 
 
-## Grass Color Map Client Biome Properties
+## Client Biome Grass Color Map Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

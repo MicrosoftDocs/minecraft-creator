@@ -19,10 +19,10 @@ ms.date: 02/11/2025
 |:----------|:-------------|:----|:-----------|:------------- |
 | bounding_box_max | *not set* | Array of strings | Dimensions of the Bounding Box |  | 
 | bounding_box_min | *not set* | Array of strings | Dimensions of the Bounding Box |  | 
-| description | *not set* | [Description](#description-item-type) item |  |  | 
+| description | *not set* | [Description](#description) item |  |  | 
 | format_version | *not set* | String |  |  | 
 
-## Description item type
+## Description
 
 #### Description Properties
 

@@ -16,11 +16,11 @@ Places a collection of features sequentially, in the order they appear in data. 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description-item-type) item |  |  | 
+| description | *not set* | [Description](#description) item |  |  | 
 | features | *not set* | Array of strings | List of features to be placed in sequence. The output position of the previous feature is used as the input position to the next. |  | 
 | format_version | *not set* | String |  |  | 
 
-## Description item type
+## Description
 
 #### Description Properties
 

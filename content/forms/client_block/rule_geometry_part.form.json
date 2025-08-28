@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Rule Geometry Part",
-    "title": "Rule Geometry Part Client Block",
+    "title": "Client Block Rule Geometry Part",
     "fields": [
       {
         "id": "bone",

@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.controlled_by_player",
-    "title": "Minecraft Behavior.controlled By Player Entity",
+    "title": "Entity Controlled By Player Behavior",
     "description": "Allows the entity to be controlled by a player which is holding the item specified in \"minecraft:item_controllable\" component's \"control_items\" field (required). Also requires the \"minecraft:movement\" component, and the \"minecraft:rideable\" component. On every tick, the entity will attempt to rotate towards where the player is facing with the control item whilst simultaneously moving forward.",
     "fields": [
       {

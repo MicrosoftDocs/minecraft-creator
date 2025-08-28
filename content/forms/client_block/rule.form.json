@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Rule",
-    "title": "Rule Client Block",
+    "title": "Client Block Rule",
     "fields": [
       {
         "id": "condition",

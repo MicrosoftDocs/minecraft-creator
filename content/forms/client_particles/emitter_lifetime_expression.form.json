@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_lifetime_expression",
-    "title": "Emitter Lifetime Expression Client Particles",
+    "title": "Client Particles Emitter Lifetime Expression",
     "fields": [
       {
         "id": "activation_expression",

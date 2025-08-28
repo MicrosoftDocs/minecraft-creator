@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "BlockDescriptorProxy",
-    "title": "BlockDescriptorProxy Item Components",
+    "title": "Item Components BlockDescriptorProxy",
     "fields": [
       {
         "id": "name",

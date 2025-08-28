@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_appearance_billboard flipbook_data",
-    "title": "Particle Appearance Billboard Flipbook Data Client Particles",
+    "title": "Client Particles Particle Appearance Billboard Flipbook Data",
     "fields": [
       {
         "id": "base_UV",

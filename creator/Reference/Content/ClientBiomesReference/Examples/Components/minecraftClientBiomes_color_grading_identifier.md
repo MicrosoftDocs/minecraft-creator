@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Set the identifier used for color grading in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Color Grading JSON schemas under the "color_grading" directory. Biomes without this component will have default color_grading settings.
 
 
-## Minecraft Color Grading Identifier Client Biome Properties
+## Client Biome Color Grading Identifier Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

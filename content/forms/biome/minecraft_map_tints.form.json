@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:map_tints",
-    "title": "Minecraft Map Tints Biome",
+    "title": "Biome Map Tints",
     "description": "Sets the color grass and foliage will be tinted by in this biome on the map.",
     "fields": [
       {

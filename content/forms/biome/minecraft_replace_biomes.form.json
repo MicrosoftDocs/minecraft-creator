@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:replace_biomes",
-    "title": "Minecraft Replace Biomes Biome",
+    "title": "Biome Replace Biomes",
     "description": "Replaces a specified portion of one or more Minecraft biomes.",
     "fields": [
       {

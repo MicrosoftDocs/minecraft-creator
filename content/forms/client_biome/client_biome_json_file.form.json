@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Client Biome JSON File",
-    "title": "Client Biome JSON File Client Biome",
+    "title": "Client Biome JSON File",
     "description": "Contains a format version and a Client Biome definition",
     "fields": [
       {

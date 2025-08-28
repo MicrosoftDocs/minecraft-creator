@@ -21,10 +21,10 @@ Allows the wither to focus its attacks on whichever mob has dealt the most damag
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| entity_types | *not set* | Array of [Entity Types](#entity-types-item-type) items | List of entity types the wither takes into account to find who dealt the most damage to it |  | 
+| entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entity types the wither takes into account to find who dealt the most damage to it |  | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Wither: `1` | 
 
-## Entity Types item type
+## Entity Types
 List of entity types the wither takes into account to find who dealt the most damage to it.
 
 
