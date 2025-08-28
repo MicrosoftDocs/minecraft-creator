@@ -23,15 +23,15 @@ Allows an entity to establish a way to get into the love state used for breeding
 | blend_attributes | true | Boolean true/false | If true, the entities will blend their attributes in the offspring after they breed. For example, horses blend their health, movement, and jump_strength in their offspring. |  | 
 | breed_cooldown | 60 | Decimal number | Time in seconds before the Entity can breed again. |  | 
 | breed_items | *not set* | Array of strings | The list of items that can be used to get the entity into the 'love' state. | Armadillo: `["spider_eye"]`, Axolotl: `"tropical_fish_bucket"`, Bee: `["minecraft:poppy","minecraft:blue_orchid","minecraft:allium","minecraft:azure_bluet","minecraft:red_tulip","minecraft:orange_tulip","minecraft:white_tulip","minecraft:pink_tulip","minecraft:oxeye_daisy","minecraft:cornflower","minecraft:lily_of_the_valley","minecraft:dandelion","minecraft:wither_rose","minecraft:sunflower","minecraft:lilac","minecraft:rose_bush","minecraft:peony","minecraft:flowering_azalea","minecraft:azalea_leaves_flowered","minecraft:mangrove_propagule","minecraft:pitcher_plant","minecraft:torchflower","minecraft:cherry_leaves","minecraft:pink_petals","minecraft:wildflowers","minecraft:cactus_flower"]` | 
-| breeds_with | *not set* | Array of [Breeds With](#breeds-with-item-type) items | The list of entity definitions that this entity can breed with. | Armadillo: `[{"mate_type":"minecraft:armadillo","baby_type":"minecraft:armadillo","breed_event":{"event":"minecraft:entity_born","target":"baby"}}]`, Axolotl: `{"mate_type":"minecraft:axolotl","baby_type":"minecraft:axolotl","breed_event":{"event":"minecraft:entity_born","target":"baby"}}`, Bee: `{"mate_type":"minecraft:bee","baby_type":"minecraft:bee","breed_event":{"event":"minecraft:entity_born","target":"baby"}}` | 
+| breeds_with | *not set* | Array of [Breeds With](#breeds-with) items | The list of entity definitions that this entity can breed with. | Armadillo: `[{"mate_type":"minecraft:armadillo","baby_type":"minecraft:armadillo","breed_event":{"event":"minecraft:entity_born","target":"baby"}}]`, Axolotl: `{"mate_type":"minecraft:axolotl","baby_type":"minecraft:axolotl","breed_event":{"event":"minecraft:entity_born","target":"baby"}}`, Bee: `{"mate_type":"minecraft:bee","baby_type":"minecraft:bee","breed_event":{"event":"minecraft:entity_born","target":"baby"}}` | 
 | causes_pregnancy | false | Boolean true/false | If true, the entity will become pregnant instead of spawning a baby. |  | 
 | combine_parent_colors | *not set* | String |  |  | 
-| deny_parents_variant | *not set* | [Deny Parents Variant](#deny-parents-variant-item-type) item | Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead. |  | 
-| environment_requirements | *not set* | Array of [Environment Requirements](#environment-requirements-item-type) items | The list of nearby block requirements to get the entity into the 'love' state. |  | 
+| deny_parents_variant | *not set* | [Deny Parents Variant](#deny-parents-variant) item | Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead. |  | 
+| environment_requirements | *not set* | Array of [Environment Requirements](#environment-requirements) items | The list of nearby block requirements to get the entity into the 'love' state. |  | 
 | extra_baby_chance | 0 | Percent Range | Chance that up to 16 babies will spawn. |  | 
 | inherit_tamed | true | Boolean true/false | If true, the babies will be automatically tamed if its parents are. |  | 
 | love_filters | *not set* | Minecraft filter | The filters to run when attempting to fall in love. |  | 
-| mutation_factor | *not set* | [Mutation Factor](#mutation-factor-item-type) item | Determines how likely the babies are to NOT inherit one of their parent's variances. |  | 
+| mutation_factor | *not set* | [Mutation Factor](#mutation-factor) item | Determines how likely the babies are to NOT inherit one of their parent's variances. |  | 
 | mutation_strategy | none | String | Strategy used for mutating variants and extra variants for offspring. Current valid alternatives are 'random' and 'none'. |  | 
 | parent_centric_attribute_blending | *not set* | Array of strings | [EXPERIMENTAL] List of attributes that should benefit from parent centric attribute blending. For example, horses blend their health, movement, and jump_strength in their offspring. |  | 
 | property_inheritance | *not set* | Array of strings | List of Entity Properties that should be inherited from the parent entities and potentially mutated. |  | 
@@ -41,7 +41,7 @@ Allows an entity to establish a way to get into the love state used for breeding
 | require_tame | true | Boolean true/false | If true, the entities need to be tamed first before they can breed. |  | 
 | transform_to_item | *not set* | String | The breed item used will transform to this item upon successful interaction. Format: itemName:auxValue |  | 
 
-## Breeds With item type
+## Breeds With
 The list of entity definitions that this entity can breed with.
 
 
@@ -53,7 +53,7 @@ The list of entity definitions that this entity can breed with.
 | breed_event | *not set* | Minecraft Event Reference | Event to run when this entity breeds. |  | 
 | mate_type | *not set* | String from a list of choices | The inclusive minimum of the variant range. |  | 
 
-## Deny Parents Variant item type
+## Deny Parents Variant
 Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead.
 
 
@@ -65,7 +65,7 @@ Determines how likely the baby of parents with the same variant will deny that v
 | max_variant | 0 | String | The inclusive maximum of the variant range. |  | 
 | min_variant | 0 | String | The inclusive minimum of the variant range. |  | 
 
-## Environment Requirements item type
+## Environment Requirements
 The list of nearby block requirements to get the entity into the 'love' state.
 
 
@@ -78,7 +78,7 @@ The list of nearby block requirements to get the entity into the 'love' state.
 | count | 1 | Integer number | The number of the required block types nearby for the entity to breed. |  | 
 | radius | 5 | Decimal number | How many blocks radius from the mob's center to search in for the required blocks. Bounded between 0 and 16. |  | 
 
-## Mutation Factor item type
+## Mutation Factor
 Determines how likely the babies are to NOT inherit one of their parent's variances. Values are between 0.0 and 1.0, with a higher number meaning more likely to mutate.
 
 

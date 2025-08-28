@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "BlockDefinitionDocument",
-    "title": "BlockDefinitionDocument Block",
+    "title": "BlockDefinitionDocument",
     "fields": [
       {
         "id": "description",

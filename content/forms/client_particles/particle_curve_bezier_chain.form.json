@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_curve_bezier_chain",
-    "title": "Particle Curve Bezier Chain Client Particles",
+    "title": "Client Particles Particle Curve Bezier Chain",
     "fields": [
       {
         "id": "input",

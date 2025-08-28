@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Filter Test",
-    "title": "Filter Test Spawn",
+    "title": "Spawn Filter Test",
     "fields": [
       {
         "id": "domain",

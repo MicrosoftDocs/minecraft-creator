@@ -15,19 +15,19 @@ ms.date: 02/11/2025
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | format_version | *not set* | Version |  |  | 
-| minecraft:fog_settings | *not set* | [Fog Settings](#fog-settings-item-type) item |  |  | 
+| minecraft:fog_settings | *not set* | [Fog Settings](#fog-settings) item |  |  | 
 
-## Fog Settings item type
+## Fog Settings
 
 #### Fog Settings Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description-item-type) item |  |  | 
-| distance | *not set* | [Distance](#distance-item-type) item | The distance fog settings for different camera locations. |  | 
-| volumetric | *not set* | [Volumetric](#volumetric-item-type) item | The volumetric fog settings. |  | 
+| description | *not set* | [Description](#description) item |  |  | 
+| distance | *not set* | [Distance](#distance) item | The distance fog settings for different camera locations. |  | 
+| volumetric | *not set* | [Volumetric](#volumetric) item | The volumetric fog settings. |  | 
 
-## Description item type
+## Description
 
 #### Description Properties
 
@@ -35,37 +35,37 @@ ms.date: 02/11/2025
 |:----------|:-------------|:----|:-----------|:------------- |
 | identifier | *not set* | String | The identifier for these fog settings. The identifier must include a namespace. |  | 
 
-## Distance item type
+## Distance
 
 #### Distance Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| air | *not set* | [Air](#air-item-type) item | The fog settings when the camera is in the air. |  | 
-| lava | *not set* | [Lava](#lava-item-type) item | The fog settings when the camera is in lava. |  | 
-| lava_resistance | *not set* | [Lava Resistance](#lava-resistance-item-type) item | The fog settings when the camera is in lava and the player has the lava resistance effect active. |  | 
-| powder_snow | *not set* | [Powder Snow](#powder-snow-item-type) item | The fog settings when the camera is inside a Powder Snow block. |  | 
-| water | *not set* | [Water](#water-item-type) item | The fog settings when the camera is in water. |  | 
-| weather | *not set* | [Weather](#weather-item-type) item | The fog settings for when the camera is in the air with active weather (rain, snow, etc..). |  | 
+| air | *not set* | [Air](#air) item | The fog settings when the camera is in the air. |  | 
+| lava | *not set* | [Lava](#lava) item | The fog settings when the camera is in lava. |  | 
+| lava_resistance | *not set* | [Lava Resistance](#lava-resistance) item | The fog settings when the camera is in lava and the player has the lava resistance effect active. |  | 
+| powder_snow | *not set* | [Powder Snow](#powder-snow) item | The fog settings when the camera is inside a Powder Snow block. |  | 
+| water | *not set* | [Water](#water) item | The fog settings when the camera is in water. |  | 
+| weather | *not set* | [Weather](#weather) item | The fog settings for when the camera is in the air with active weather (rain, snow, etc..). |  | 
 
-## Air item type
+## Air
 
 #### Air Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | render_distance_type"<"fixed", "render" | *not set* | String | Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance. |  | 
-| transition_fog | *not set* | [Transition Fog](#transition-fog-item-type) item | Additional fog data which will slowly transition to the distance fog of current biome. |  | 
+| transition_fog | *not set* | [Transition Fog](#transition-fog) item | Additional fog data which will slowly transition to the distance fog of current biome. |  | 
 
-## Transition Fog item type
+## Transition Fog
 
 #### Transition Fog Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| init_fog | *not set* | [Init Fog](#init-fog-item-type) item | Initial fog that will slowly transition into water distance fog of the biome when player goes into water. |  | 
+| init_fog | *not set* | [Init Fog](#init-fog) item | Initial fog that will slowly transition into water distance fog of the biome when player goes into water. |  | 
 
-## Init Fog item type
+## Init Fog
 
 #### Init Fog Properties
 
@@ -73,193 +73,73 @@ ms.date: 02/11/2025
 |:----------|:-------------|:----|:-----------|:------------- |
 | render_distance_type"<"fixed", "render" | *not set* | String | Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance. |  | 
 
-## Lava item type
+## Lava
 
 #### Lava Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | render_distance_type"<"fixed", "render" | *not set* | String | Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance. |  | 
-| transition_fog | *not set* | [Transition Fog](#transition-fog-item-type) item | Additional fog data which will slowly transition to the distance fog of current biome. |  | 
+| transition_fog | *not set* | [Transition Fog](#transition-fog) item | Additional fog data which will slowly transition to the distance fog of current biome. |  | 
 
-## Transition Fog item type
-
-#### Transition Fog Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| init_fog | *not set* | [Init Fog](#init-fog-item-type) item | Initial fog that will slowly transition into water distance fog of the biome when player goes into water. |  | 
-
-## Init Fog item type
-
-#### Init Fog Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| render_distance_type"<"fixed", "render" | *not set* | String | Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance. |  | 
-
-## Lava Resistance item type
+## Lava Resistance
 
 #### Lava Resistance Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | render_distance_type"<"fixed", "render" | *not set* | String | Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance. |  | 
-| transition_fog | *not set* | [Transition Fog](#transition-fog-item-type) item | Additional fog data which will slowly transition to the distance fog of current biome. |  | 
+| transition_fog | *not set* | [Transition Fog](#transition-fog) item | Additional fog data which will slowly transition to the distance fog of current biome. |  | 
 
-## Transition Fog item type
-
-#### Transition Fog Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| init_fog | *not set* | [Init Fog](#init-fog-item-type) item | Initial fog that will slowly transition into water distance fog of the biome when player goes into water. |  | 
-
-## Init Fog item type
-
-#### Init Fog Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| render_distance_type"<"fixed", "render" | *not set* | String | Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance. |  | 
-
-## Powder Snow item type
+## Powder Snow
 
 #### Powder Snow Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | render_distance_type"<"fixed", "render" | *not set* | String | Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance. |  | 
-| transition_fog | *not set* | [Transition Fog](#transition-fog-item-type) item | Additional fog data which will slowly transition to the distance fog of current biome. |  | 
+| transition_fog | *not set* | [Transition Fog](#transition-fog) item | Additional fog data which will slowly transition to the distance fog of current biome. |  | 
 
-## Transition Fog item type
-
-#### Transition Fog Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| init_fog | *not set* | [Init Fog](#init-fog-item-type) item | Initial fog that will slowly transition into water distance fog of the biome when player goes into water. |  | 
-
-## Init Fog item type
-
-#### Init Fog Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| render_distance_type"<"fixed", "render" | *not set* | String | Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance. |  | 
-
-## Water item type
+## Water
 
 #### Water Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | render_distance_type"<"fixed", "render" | *not set* | String | Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance. |  | 
-| transition_fog | *not set* | [Transition Fog](#transition-fog-item-type) item | Additional fog data which will slowly transition to the distance fog of current biome. |  | 
+| transition_fog | *not set* | [Transition Fog](#transition-fog) item | Additional fog data which will slowly transition to the distance fog of current biome. |  | 
 
-## Transition Fog item type
-
-#### Transition Fog Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| init_fog | *not set* | [Init Fog](#init-fog-item-type) item | Initial fog that will slowly transition into water distance fog of the biome when player goes into water. |  | 
-
-## Init Fog item type
-
-#### Init Fog Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| render_distance_type"<"fixed", "render" | *not set* | String | Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance. |  | 
-
-## Weather item type
+## Weather
 
 #### Weather Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | render_distance_type"<"fixed", "render" | *not set* | String | Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance. |  | 
-| transition_fog | *not set* | [Transition Fog](#transition-fog-item-type) item | Additional fog data which will slowly transition to the distance fog of current biome. |  | 
+| transition_fog | *not set* | [Transition Fog](#transition-fog) item | Additional fog data which will slowly transition to the distance fog of current biome. |  | 
 
-## Transition Fog item type
-
-#### Transition Fog Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| init_fog | *not set* | [Init Fog](#init-fog-item-type) item | Initial fog that will slowly transition into water distance fog of the biome when player goes into water. |  | 
-
-## Init Fog item type
-
-#### Init Fog Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| render_distance_type"<"fixed", "render" | *not set* | String | Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance. |  | 
-
-## Volumetric item type
+## Volumetric
 
 #### Volumetric Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| density | *not set* | [Density](#density-item-type) item | The density settings for different camera locations. |  | 
-| media_coefficients | *not set* | [Media Coefficients](#media-coefficients-item-type) item | The coefficient settings for the volumetric fog in different blocks. |  | 
+| density | *not set* | [Density](#density) item | The density settings for different camera locations. |  | 
+| media_coefficients | *not set* | [Media Coefficients](#media-coefficients) item | The coefficient settings for the volumetric fog in different blocks. |  | 
 
-## Density item type
+## Density
 
 #### Density Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| air | *not set* | [Air](#air-item-type) item | Fog density values as light passes through air blocks. |  | 
-| lava | *not set* | [Lava](#lava-item-type) item | Fog density values as light passes through lava blocks. |  | 
-| lava_resistance | *not set* | [Lava Resistance](#lava-resistance-item-type) item | Fog density values as light passes through lava blocks while the player has lava resistance. |  | 
-| water | *not set* | [Water](#water-item-type) item | Fog density values as light passes through water blocks. |  | 
-| weather | *not set* | [Weather](#weather-item-type) item | Fog density values as light passes through air blocks with active weather (rain, snow, etc..). |  | 
+| air | *not set* | [Air](#air) item | Fog density values as light passes through air blocks. |  | 
+| lava | *not set* | [Lava](#lava) item | Fog density values as light passes through lava blocks. |  | 
+| lava_resistance | *not set* | [Lava Resistance](#lava-resistance) item | Fog density values as light passes through lava blocks while the player has lava resistance. |  | 
+| water | *not set* | [Water](#water) item | Fog density values as light passes through water blocks. |  | 
+| weather | *not set* | [Weather](#weather) item | Fog density values as light passes through air blocks with active weather (rain, snow, etc..). |  | 
 
-## Air item type
-
-#### Air Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| uniform | *not set* | Boolean true/false | When set to true, the density will be uniform across all heights. |  | 
-
-## Lava item type
-
-#### Lava Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| uniform | *not set* | Boolean true/false | When set to true, the density will be uniform across all heights. |  | 
-
-## Lava Resistance item type
-
-#### Lava Resistance Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| uniform | *not set* | Boolean true/false | When set to true, the density will be uniform across all heights. |  | 
-
-## Water item type
-
-#### Water Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| uniform | *not set* | Boolean true/false | When set to true, the density will be uniform across all heights. |  | 
-
-## Weather item type
-
-#### Weather Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| uniform | *not set* | Boolean true/false | When set to true, the density will be uniform across all heights. |  | 
-
-## Media Coefficients item type
+## Media Coefficients
 
 #### Media Coefficients Properties
 

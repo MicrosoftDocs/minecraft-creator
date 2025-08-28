@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Forces a biome to ether always be humid or never humid. Humidity effects the spread chance, and spread rate of fire in the biome.
 
 
-## Minecraft Humidity Biome Properties
+## Biome Humidity Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

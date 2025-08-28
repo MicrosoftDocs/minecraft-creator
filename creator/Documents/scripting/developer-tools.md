@@ -1,5 +1,5 @@
 ---
-author: mikeam
+author: chipotle
 ms.author: mikeam
 title: Developer Tools for Minecraft
 description: "Using tools for enhanced editing, debugging, and profiling of JavaScript within Visual Studio Code"
@@ -9,7 +9,7 @@ ms.date: 07/11/2025
 
 # Developer Tools for Minecraft
 
-There are a few tools that can make the process of writing your JavaScript easier and more fun within Visual Studio Code. In this article, we'll discuss how you can install custom type definitions for Minecraft to provide autocomplete as you work, the Minecraft Script Debugger, and the Minecraft Script Profiler.
+There are a few tools that can make the process of writing your JavaScript easier and more fun within Visual Studio Code. In this article, we'll discuss how you can install custom type definitions for Minecraft to provide autocomplete as you work, the Minecraft Script Debugger with breakpoint debugging, the Script Profiler for performance analysis, and visual debugging utilities for in-world debugging.
 
 > [!TIP]
 > In the GitHub repository at <https://github.com/microsoft/minecraft-scripting-samples>, there are various starter samples and examples that come with these tools pre-configured, so if you start your project using those, a lot of the configuration work is already done for you.
@@ -50,7 +50,7 @@ npm i @minecraft/server-ui@beta
 
 ## Get insight into your code with Minecraft script debugging
 
-As you build more of a codebase in script, you'll want to inspect your code at various points to see the state of variables and test your algorithms. In many starter projects, people start by using commands like Console.log or Chat to print various variables as they go – informally, this is called "print debugging". But for developers, there is a better way! With scripting in Minecraft Bedrock Edition, you can use script debugging capabilities that make inspecting data in Minecraft script a snap.
+As you build more of a code base in script, you'll want to inspect your code at various points to see the state of variables and test your algorithms. In many starter projects, people start by using commands like Console.log or Chat to print various variables as they go – informally, this is called "print debugging". But for developers, there is a better way! With scripting in Minecraft Bedrock Edition, you can use script debugging capabilities that make inspecting data in Minecraft script a snap.
 
 To get started, you'll want to use Visual Studio Code as your editor for the JavaScript files you've been developing. Steps from there include:
 
@@ -90,7 +90,7 @@ CheckNetIsolation.exe LoopbackExempt -a -p=S-1-15-2-424268864-5579737-879501358-
 
 In order for the debugger to know where to find your source JavaScript or TypeScript files, you'll need to specifically open up a window of Visual Studio Code relative to the behavior pack where your JavaScript or TypeScript source files are. This may be inside of Minecraft's development behavior packs folder (e.g., `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\development_behavior_packs`) - or you may have your source code located in a separate folder (e.g., `c:\projects\myaddon`).
 
-Open up a Visual Studio Code window pointed at the folder with your Add-On script source.
+Open up a Visual Studio Code window pointed at the folder with your add-on script source.
 
 #### Step 4: Prepare Visual Studio Code for a connection
 
@@ -123,7 +123,7 @@ If your source is in JavaScript and you are developing directly against that sou
 `localRoot` should point at the folder which contains your behavior pack with script within it.
 Port 19144 is the default networking port for Minecraft Script Debugging.
 
-In the example above, `targetModuleUuid` is an optional parameter that specifies the identifier of your script module, which is located in your behavior pack's **manifest.json** file. This is important to use if you are developing Add-Ons in Minecraft while there are multiple behavior packs with script active.
+In the example above, `targetModuleUuid` is an optional parameter that specifies the identifier of your script module, which is located in your behavior pack's **manifest.json** file. This is important to use if you are developing add-ons in Minecraft while there are multiple behavior packs with script active.
 
 If your source is in a language like TypeScript that generates JavaScript for Minecraft, you will want to use `sourceMapRoot` and `generatedSourceRoot` parameters in **launch.json**:
 
@@ -272,6 +272,71 @@ Note: In versions 1.19.10 and beyond, the script profiler has been expanded to s
 
 With this profiler capability, you can quickly identify hotspots and where server time is spent, and spend your time optimizing your code where it matters.
 
-### Summary
+### Script debugging command reference
 
-That's it! Between updated code helpers as you add lines of JavaScript, debugger capabilities within Visual Studio Code, and profiler support we hope you'll be able to write more extensive tests and script much more quickly.
+#### Debugger commands
+
+- `/script debugger connect [host] [port]` - Connect to a debugger session
+- `/script debugger listen <port>` - Start listening for debugger connections  
+- `/script debugger close` - Close debugger connection
+
+#### Profiler commands
+
+- `/script profiler start` - Begin performance profiling session
+- `/script profiler stop` - End profiling and generate .cpuprofile file
+
+#### Diagnostics commands
+
+- `/script diagnostics startcapture` - Begin comprehensive diagnostics capture
+- `/script diagnostics stopcapture` - End diagnostics capture session
+
+## The Debug-Utilities module
+
+The `@minecraft/debug-utilities` module lets you render visual debug information directly in the game world. These tools are particularly useful for debugging spatial logic, entity behaviors, and world interactions.
+
+### Visual debug shapes
+
+- **DebugBox**: Render wireframe boxes to visualize collision bounds, regions, or areas of interest
+- **DebugSphere**: Display spherical debug markers for radius-based calculations
+- **DebugLine**: Draw lines between points to visualize connections, paths, or directions
+- **DebugArrow**: Show directional indicators for vectors, movement, or facing directions
+- **DebugCircle**: Render circular indicators for range or area effects
+- **DebugText**: Display text labels in 3D world space for labeling objects or showing values
+
+### Runtime monitoring
+
+- **Runtime Statistics**: Use `collectRuntimeStats()` to gather memory usage and performance metrics for script runtimes
+- **Plugin Statistics**: Use `collectPluginStats()` to collect type usage stats for each active script plugin/add-on
+- **Watchdog Controls**: Use `disableWatchdogTimingWarnings()` to control performance warning thresholds
+
+For more details, consult the [`debug-utilities` reference page](../../ScriptAPI/minecraft/debug-utilities/minecraft-debug-utilities.md).
+
+## The Diagnostics module
+
+The `@minecraft/diagnostics` module provides Sentry integration for comprehensive error tracking and monitoring:
+
+```javascript
+import { sentry } from '@minecraft/diagnostics';
+
+// Initialize error tracking
+sentry.initialize({
+    dsn: 'your-sentry-dsn',
+    environment: 'development'
+});
+
+// Capture errors with context
+try {
+    // Your script logic
+} catch (error) {
+    sentry.captureException(error, {
+        level: SentryEventLevel.Error,
+        extra: { customData: 'debugging info' }
+    });
+}
+```
+
+For more details, consult the [`diagnostics` reference page](../../ScriptAPI/minecraft/diagnostics/minecraft-diagnostics.md).
+
+## Summary
+
+That's it! Between updated code helpers as you add lines of JavaScript or TypeScript, the extensive debugging and profiling capabilities within Visual Studio Code, and the visual debugging and diagnostics tools, we hope you'll be able to build, debug, and optimize complex creations in Minecraft: Bedrock Edition much more quickly.

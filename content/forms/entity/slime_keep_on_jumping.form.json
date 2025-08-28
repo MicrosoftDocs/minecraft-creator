@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.slime_keep_on_jumping",
-    "title": "Minecraft Behavior.slime Keep On Jumping Entity",
+    "title": "Entity Slime Keep On Jumping Behavior",
     "description": "Allows the entity to continuously jump around like a slime.",
     "fields": [
       {

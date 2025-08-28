@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Set the identifier used for rendering water in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Water JSON schemas under the "water" directory. Biomes without this component will have default water settings.
 
 
-## Minecraft Water Identifier Client Biome Properties
+## Client Biome Water Identifier Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

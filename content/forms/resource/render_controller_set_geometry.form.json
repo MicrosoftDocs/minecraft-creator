@@ -23,7 +23,6 @@
                 {
                   "id": "geometries",
                   "title": "Geometries",
-                  "undefinedIfEmpty": true,
                   "description": "Lists of geometries that can be used in selection calculations",
                   "dataType": 28
                 }

@@ -2,11 +2,10 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Feature Rule Conditions",
-    "title": "Feature Rule Conditions World",
+    "title": "World Feature Rule Conditions",
     "fields": [
       {
         "id": "minecraft:biome_filter",
-        "title": "Minecraft Biome Filter",
         "description": "List of filter tests to determine which biomes this rule will attach to.",
         "dataType": 16,
         "subForm": {

@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Biome Description",
-    "title": "Biome Description Biome",
+    "title": "Biome Description",
     "description": "Contains non-component settings for a Biome.",
     "fields": [
       {

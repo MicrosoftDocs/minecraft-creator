@@ -17,7 +17,7 @@ Despawns the Actor when the despawn rules or optional filters evaluate to true.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | despawn_from_chance | true | Boolean true/false | Determines if "min_range_random_chance" is used in the standard despawn rules |  | 
-| despawn_from_distance | *not set* | Array of [Despawn From Distance](#despawn-from-distance-item-type) items | Specifies if the "min_distance" and "max_distance" are used in the standard despawn rules. | Armadillo: `{}`, Fish: `{"min_distance":32,"max_distance":40}` | 
+| despawn_from_distance | *not set* | Array of [Despawn From Distance](#despawn-from-distance) items | Specifies if the "min_distance" and "max_distance" are used in the standard despawn rules. | Armadillo: `{}`, Fish: `{"min_distance":32,"max_distance":40}` | 
 | despawn_from_inactivity | true | Boolean true/false | Determines if the "min_range_inactivity_timer" is used in the standard despawn rules. |  | 
 | despawn_from_simulation_edge | true | Boolean true/false | Determines if the mob is instantly despawned at the edge of simulation distance in the standard despawn rules. |  | 
 | filters | *not set* | Minecraft filter | The list of conditions that must be satisfied before the Actor is despawned. If a filter is defined then standard despawn rules are ignored. | Piglin Brute: `{"any_of":[{"all_of":[{"test":"is_persistent","value":false},{"test":"distance_to_nearest_player","operator":">","value":54}]},{"all_of":[{"test":"is_persistent","value":false},{"test":"inactivity_timer","subject":"self","value":30},{"test":"random_chance","value":800},{"test":"distance_to_nearest_player","operator":">","value":32}]}]}`, Wandering Trader: `{"all_of":[{"any_of":[{"test":"is_family","subject":"self","value":"wandering_trader_despawning"},{"test":"has_trade_supply","subject":"self","value":false}]},{"test":"distance_to_nearest_player","operator":">","value":24}]}` | 
@@ -25,7 +25,7 @@ Despawns the Actor when the despawn rules or optional filters evaluate to true.
 | min_range_random_chance | 800 | Integer number | A random chance between 1 and the given value. |  | 
 | remove_child_entities | false | Boolean true/false | If true, all entities linked to this entity in a child relationship (eg. leashed) will also be despawned. | Wandering Trader: `true` | 
 
-## Despawn From Distance item type
+## Despawn From Distance
 Specifies if the "min_distance" and "max_distance" are used in the standard despawn rules.
 
 

@@ -19,19 +19,19 @@ Places a single block in the world. The places_block field supports a single blo
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description-item-type) item |  |  | 
+| description | *not set* | [Description](#description) item |  |  | 
 | enforce_placement_rules | *not set* | Boolean true/false | If true, enforce the block's canPlace check. |  | 
 | enforce_survivability_rules | *not set* | Boolean true/false | If true, enforce the block's canSurvive check. |  | 
 | format_version | *not set* | String |  |  | 
-| may_attach_to | *not set* | [May Attach To](#may-attach-to-item-type) item | Allowlist which specifies where the block can be placed. |  | 
-| may_not_attach_to | *not set* | [May Not Attach To](#may-not-attach-to-item-type) item | Denylist which specifies where the block can't be placed. |  | 
+| may_attach_to | *not set* | [May Attach To](#may-attach-to) item | Allowlist which specifies where the block can be placed. |  | 
+| may_not_attach_to | *not set* | [May Not Attach To](#may-not-attach-to) item | Denylist which specifies where the block can't be placed. |  | 
 | may_replace | *not set* | Array of strings |  |  | 
-| places_block | *not set* | Array of [Places Block](#places-block-item-type) items |  |  | 
+| places_block | *not set* | Array of [Places Block](#places-block) items |  |  | 
 | places_block (Alternate 1) | *not set* | Object | Reference to the block to be placed. |  | 
 | places_block (Alternate 2) | *not set* | Array of strings |  |  | 
 | randomize_rotation | *not set* | Boolean true/false | If true, randomizes the block's cardinal orientation. |  | 
 
-## Description item type
+## Description
 
 #### Description Properties
 
@@ -39,7 +39,7 @@ Places a single block in the world. The places_block field supports a single blo
 |:----------|:-------------|:----|:-----------|:------------- |
 | identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
 
-## May Attach To item type
+## May Attach To
 
 #### May Attach To Properties
 
@@ -57,7 +57,7 @@ Places a single block in the world. The places_block field supports a single blo
 | top | *not set* | Array of strings |  |  | 
 | west | *not set* | Array of strings |  |  | 
 
-## May Not Attach To item type
+## May Not Attach To
 
 #### May Not Attach To Properties
 
@@ -73,7 +73,7 @@ Places a single block in the world. The places_block field supports a single blo
 | top | *not set* | Array of strings |  |  | 
 | west | *not set* | Array of strings |  |  | 
 
-## Places Block item type
+## Places Block
 
 #### Places Block Properties
 

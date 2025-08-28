@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "AlwaysTrueBlock",
-    "title": "AlwaysTrueBlock World",
+    "title": "World AlwaysTrueBlock",
     "description": "Predicate that always evaluates to true. This is the default predicate if no other predicate is specified.",
     "fields": [
       {

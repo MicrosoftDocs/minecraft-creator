@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.stay_near_noteblock",
-    "title": "Minecraft Behavior.stay Near Noteblock Entity",
+    "title": "Entity Stay Near Noteblock Behavior",
     "description": "The entity will attempt to toss the items from its inventory to a nearby recently played noteblock.",
     "fields": [
       {

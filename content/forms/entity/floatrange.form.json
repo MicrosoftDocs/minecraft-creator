@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "FloatRange",
-    "title": "FloatRange Entity",
+    "title": "Entity FloatRange",
     "fields": [
       {
         "id": "max",

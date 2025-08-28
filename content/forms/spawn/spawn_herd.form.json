@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn Herd",
-    "title": "Spawn Herd Spawn",
+    "title": "Spawn Herd",
     "fields": [
       {
         "id": "event",

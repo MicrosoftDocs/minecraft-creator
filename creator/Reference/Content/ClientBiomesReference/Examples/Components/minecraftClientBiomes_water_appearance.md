@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Set the water surface color used during rendering. Biomes without this component will have default water surface color behavior.
 
 
-## Minecraft Water Appearance Client Biome Properties
+## Client Biome Water Appearance Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

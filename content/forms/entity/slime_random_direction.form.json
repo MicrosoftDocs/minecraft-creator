@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.slime_random_direction",
-    "title": "Minecraft Behavior.slime Random Direction Entity",
+    "title": "Entity Slime Random Direction Behavior",
     "description": "Allows the entity to move in random directions like a slime.",
     "fields": [
       {

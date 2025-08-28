@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_lifetime_events proxy",
-    "title": "Emitter Lifetime Events Proxy Client Particles",
+    "title": "Client Particles Emitter Lifetime Events Proxy",
     "fields": [
       {
         "id": "creation_event",
@@ -11,12 +11,7 @@
         "alternates": [
           {
             "id": "creation_event",
-            "dataType": 16,
-            "subForm": {
-              "id": "creation_event",
-              "title": "Creation Event",
-              "fields": []
-            }
+            "dataType": 2
           }
         ]
       },
@@ -27,12 +22,7 @@
         "alternates": [
           {
             "id": "expiration_event",
-            "dataType": 16,
-            "subForm": {
-              "id": "expiration_event",
-              "title": "Expiration Event",
-              "fields": []
-            }
+            "dataType": 2
           }
         ]
       },
@@ -49,12 +39,7 @@
         "alternates": [
           {
             "id": "timeline",
-            "dataType": 16,
-            "subForm": {
-              "id": "timeline",
-              "title": "Timeline",
-              "fields": []
-            }
+            "dataType": 2
           }
         ]
       },
@@ -65,12 +50,7 @@
         "alternates": [
           {
             "id": "travel_distance_events",
-            "dataType": 16,
-            "subForm": {
-              "id": "travel_distance_events",
-              "title": "Travel Distance Events",
-              "fields": []
-            }
+            "dataType": 2
           }
         ]
       }

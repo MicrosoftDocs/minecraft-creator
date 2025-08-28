@@ -60,7 +60,6 @@
       },
       {
         "id": "version",
-        "title": "Version",
         "dataType": 16,
         "validity": [
           {

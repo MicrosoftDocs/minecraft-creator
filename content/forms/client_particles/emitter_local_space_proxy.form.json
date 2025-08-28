@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_local_space proxy",
-    "title": "Emitter Local Space Proxy Client Particles",
+    "title": "Client Particles Emitter Local Space Proxy",
     "fields": [
       {
         "id": "position",

@@ -8,7 +8,7 @@
   ],
   "generatedFromSchema_doNotEdit": {
     "id": "BlockIgnore",
-    "title": "BlockIgnore World",
+    "title": "World BlockIgnore",
     "description": "Specifies block types in the template that should be ignored by other processors.",
     "fields": [
       {

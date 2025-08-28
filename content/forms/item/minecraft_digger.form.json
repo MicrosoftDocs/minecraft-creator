@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:digger",
-    "title": "Minecraft Digger Item",
+    "title": "Item Digger",
     "description": "Digger item component specifies how quickly this item can dig specific blocks.",
     "fields": [
       {

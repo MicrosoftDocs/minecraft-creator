@@ -5,9 +5,11 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: script Command
 description: Description and usage of the script command
+ms.date: 08/07/2025
 ---
 # `/script` Command
-Debugging options for script within Minecraft.
+
+Comprehensive debugging, profiling, and diagnostics tools for script development in Minecraft. The script command provides access to debugger connections, performance profiling, and advanced diagnostics capture capabilities.
 
 <table>
   <tr>
@@ -21,29 +23,79 @@ Debugging options for script within Minecraft.
 </table>
 
 ## Usage
-### Start profiler
+
+### Debugger Connection Management
+
+#### Start debugger listener
+
 `/script debugger listen <port: int>`
 
-Start profiler (that is, performance) tracking of script within Minecraft.
+Start a debugger listener on the specified port. This allows Visual Studio Code or other debugging clients to connect to the server for script debugging sessions.
 
-### Stop profiler
+#### Connect to external debugger
+
 `/script debugger connect [host: string] [port: int]`
 
-Stop profiler-performance tracking of script with Minecraft.
+Connect to an external debugger host. If no host is specified, the value defaults to `localhost`. If no port is specified, the default debugging port is selected.
 
-### Watchdog export stats
+#### Close debugger connection
+
 `/script debugger close`
 
-Export watchdog statistics on script runtime behavior and memory consumption.
+Close the current debugger connection and stop debugging session.
 
-### `/script profiler start`
+### Performance Profiling
 
-### `/script profiler stop`
+#### Start performance profiler
 
-### `/script diagnostics startcapture`
+`/script profiler start`
 
-### `/script diagnostics stopcapture`
+Begin a performance profiling session that tracks function call times, memory usage, and execution patterns. Run this before exercising the code you want to analyze.
 
-## Arguments
-- `host`: string
-- `port`: int
+#### Stop performance profiler
+
+`/script profiler stop`
+
+Stop the performance profiling session and generate a .cpuprofile file in the Minecraft logs directory. This file can be opened in Visual Studio Code for detailed performance analysis.
+
+### Advanced Diagnostics
+
+#### Start comprehensive diagnostics capture
+
+`/script diagnostics startcapture`
+
+Begin capturing comprehensive diagnostics information including memory usage, execution timing, API call patterns, and runtime behavior. This provides more detailed information than the profiler alone.
+
+#### Stop diagnostics capture
+
+`/script diagnostics stopcapture`
+
+End the diagnostics capture session and save the diagnostic data. This information can be used for in-depth analysis of script behavior and performance optimization.
+
+## Output Files and Analysis
+
+### Profiler Output
+
+When using `/script profiler stop`, a **.cpuprofile** file is generated in the Minecraft logs directory:
+
+- **Retail Minecraft**: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\logs\`
+- **Minecraft Preview**: `%localappdata%\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\logs\`
+
+These **.cpuprofile** files can be opened directly in Visual Studio Code for detailed performance analysis, including function call trees, timing data, and performance bottlenecks.
+
+### Diagnostics Output
+
+Diagnostic capture sessions generate comprehensive data files that include:
+
+- Memory usage patterns and allocations
+- Script execution timing and performance metrics
+- API call frequency and patterns
+- Runtime behavior and watchdog statistics
+
+## Related Tools
+
+For complete script development capabilities, see:
+
+- **[Developer Tools for Minecraft](../../Documents/scripting/developer-tools.md)**: Comprehensive guide to the full script debugging toolkit
+- **[Debug Utilities](../../ScriptAPI/minecraft/debug-utilities/minecraft-debug-utilities.md)**: Visual debugging and runtime monitoring APIs
+- **[Diagnostics Module](../../ScriptAPI/minecraft/diagnostics/minecraft-diagnostics.md)**: Error tracking and monitoring capabilities

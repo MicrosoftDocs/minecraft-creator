@@ -4,7 +4,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:jigsaw_structure_metadata",
-    "title": "Minecraft Jigsaw Structure Metadata Structure",
+    "title": "Structure Jigsaw Structure Metadata",
     "fields": [
       {
         "id": "format_version",

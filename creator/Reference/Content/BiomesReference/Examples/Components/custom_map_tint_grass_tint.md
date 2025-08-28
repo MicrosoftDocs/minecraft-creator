@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Sets the color grass will be tinted by in this biome on the map.
 
 
-## Custom Map Tint Grass Tint Biome Properties
+## Biome Custom Map Tint Grass Tint Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

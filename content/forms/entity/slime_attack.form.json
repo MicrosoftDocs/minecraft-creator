@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.slime_attack",
-    "title": "Minecraft Behavior.slime Attack Entity",
+    "title": "Entity Slime Attack Behavior",
     "description": "Causes the entity to grow tired every once in a while, while attacking.",
     "fields": [
       {

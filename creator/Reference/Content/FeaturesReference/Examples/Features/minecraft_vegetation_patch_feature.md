@@ -16,14 +16,14 @@ Scatters vegetation in an area. The vegetation feature's appearance can be modif
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description-item-type) item |  |  | 
+| description | *not set* | [Description](#description) item |  |  | 
 | format_version | *not set* | String |  |  | 
 | replaceable_blocks | *not set* | Array of strings |  |  | 
 | surface | *not set* | String | Determines if a vegetation patch will grow from the ceiling or the floor. |  | 
 | vertical_range | *not set* | Integer number | Vertical range used to determine a suitable surface position for the patch. |  | 
 | waterlogged | *not set* | Boolean true/false | If true, waterlogs the positions occupied by the ground blocks. |  | 
 
-## Description item type
+## Description
 
 #### Description Properties
 

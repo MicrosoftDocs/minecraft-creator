@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Scatter Params",
-    "title": "Scatter Params World",
+    "title": "World Scatter Params",
     "description": "Controls the scatter distribution of a particular object.",
     "fields": [
       {

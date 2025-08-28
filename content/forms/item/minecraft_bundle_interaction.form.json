@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:bundle_interaction",
-    "title": "Minecraft Bundle Interaction Item",
+    "title": "Item Bundle Interaction",
     "description": "[EXPERIMENTAL] Adds bundle-specific interactions and tooltip to the item. Requires a \"minecraft:storage_item\" component.",
     "fields": [
       {

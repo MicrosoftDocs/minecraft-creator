@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "JigsawDescriptionIdentifier",
-    "title": "JigsawDescriptionIdentifier World",
+    "title": "World JigsawDescriptionIdentifier",
     "description": "Identifier of the Jigsaw Structure.",
     "fields": [
       {

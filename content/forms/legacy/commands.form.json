@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "commands",
-    "title": "Commands Legacy",
+    "title": "Legacy Commands",
     "fields": [
       {
         "id": "default_permission_level",

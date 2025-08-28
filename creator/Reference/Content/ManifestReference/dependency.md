@@ -16,10 +16,10 @@ ms.date: 02/11/2025
 |:----------|:-------------|:----|:-----------|:------------- |
 | module_name | *not set* | String |  |  | 
 | uuid | *not set* | Object |  |  | 
-| version | *not set* | [Version](#version-item-type) item |  |  | 
+| version (Version) | *not set* | [Version (Version)](#version-version) item |  |  | 
 | version (Alternate 1) | *not set* | String |  |  | 
 
-## Version item type
+## Version (Version)
 
 #### Version Properties
 

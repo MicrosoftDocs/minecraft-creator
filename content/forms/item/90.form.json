@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:item v1.21.90",
-    "title": "Minecraft Item v1.21.90 Item",
+    "title": "Item 21.90 Item v1",
     "description": "Item definition includes the \"description\" and \"components\" sections.",
     "fields": [
       {

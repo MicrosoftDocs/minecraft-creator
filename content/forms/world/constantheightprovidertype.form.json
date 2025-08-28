@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "ConstantHeightProviderType",
-    "title": "ConstantHeightProviderType World",
+    "title": "World ConstantHeightProviderType",
     "description": "Constant anchor point",
     "fields": [
       {

@@ -2,11 +2,11 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_shape_sphere",
-    "title": "Emitter Shape Sphere Client Particles",
+    "title": "Client Particles Emitter Shape Sphere",
     "fields": [
       {
         "id": "direction",
-        "title": "Direction",
+        "title": "Direction Type",
         "dataType": 2,
         "alternates": [
           {

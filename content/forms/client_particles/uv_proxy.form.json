@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "UV Proxy",
-    "title": "UV Proxy Client Particles",
+    "title": "Client Particles UV Proxy",
     "fields": [
       {
         "id": "flipbook",

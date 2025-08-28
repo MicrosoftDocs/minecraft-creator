@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Color Proxy",
-    "title": "Color Proxy Client Particles",
+    "title": "Client Particles Color Proxy",
     "fields": [
       {
         "id": "gradient",

@@ -3,20 +3,49 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "RandomBlockStateMatch",
-    "title": "RandomBlockStateMatch World",
+    "title": "World RandomBlockStateMatch",
     "description": "Predicate that evaluates to true with a given probability if the block at the specified location matches the specified block.",
     "fields": [
       {
         "id": "block_state",
-        "title": "Block State",
         "description": "The block state to match against.",
-        "dataType": 16,
-        "subForm": {
-          "id": "block_state",
-          "title": "Block State",
-          "fields": []
-        },
-        "alternates": [],
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "block_state",
+            "dataType": 16,
+            "readOnly": true,
+            "subForm": {
+              "id": "block_state",
+              "title": "Block State",
+              "fields": [
+                {
+                  "id": "name",
+                  "title": "Name",
+                  "description": "Name of the block",
+                  "dataType": 16,
+                  "isRequired": true
+                },
+                {
+                  "id": "states",
+                  "title": "States",
+                  "description": "Contains members named after each state, with boolean, integer, or string values.",
+                  "dataType": 31,
+                  "alternates": [
+                    {
+                      "id": "states",
+                      "dataType": 27
+                    },
+                    {
+                      "id": "states",
+                      "dataType": 24
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
         "isRequired": true
       },
       {

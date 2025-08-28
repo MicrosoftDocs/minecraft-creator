@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_effect",
-    "title": "Particle Effect Client Particles",
+    "title": "Client Particles Particle Effect",
     "fields": [
       {
         "id": "components",
@@ -13,7 +13,6 @@
       },
       {
         "id": "curves",
-        "title": "Curves",
         "dataType": 16,
         "subForm": {
           "id": "curves",

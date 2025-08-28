@@ -24,7 +24,6 @@
                 {
                   "id": "textures",
                   "title": "Textures",
-                  "undefinedIfEmpty": true,
                   "description": "Lists of textures that can be used in selection calculations",
                   "dataType": 28
                 }

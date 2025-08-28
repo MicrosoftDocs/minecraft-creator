@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.transport_items",
-    "title": "Minecraft Behavior.transport Items Entity",
+    "title": "Entity Transport Items Behavior",
     "description": "A behavior that enables a mob to transport items from and to containers.",
     "fields": [
       {
@@ -31,7 +31,6 @@
       },
       {
         "id": "destination_container_types",
-        "title": "Destination Container Types",
         "description": "A list of block descriptors that should be a container type to put items in. Default value: empty.",
         "dataType": 15,
         "subForm": {
@@ -175,7 +174,6 @@
       },
       {
         "id": "source_container_types",
-        "title": "Source Container Types",
         "description": "A list of block descriptors that should be a container type to get items from. Default value: empty.",
         "dataType": 15,
         "subForm": {

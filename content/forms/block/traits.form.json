@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Traits",
-    "title": "Traits Block",
+    "title": "Block Traits",
     "fields": [
       {
         "id": "minecraft:placement_direction",

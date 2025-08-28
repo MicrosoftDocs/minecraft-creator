@@ -4,11 +4,12 @@ ms.author: mikeam
 title: Particle Documentation - Particle Molang Integration
 description: "A reference document exploring ways creators can utilize Molang in particle effects"
 ms.service: minecraft-bedrock-edition
+ms.date: 08/25/2025
 ---
 
 # Particle Documentation - Particle Molang Integration
 
-Any field can use a Molang expression. Molang expressions are strings, defined in the Molang documentation [here](../MolangReference/Examples/MolangConcepts/MolangIntroduction.md). The particle system uses some special Molang variables for particle Molang expressions.
+Any field can use a Molang expression. Molang expressions are strings, as described in the [Molang Syntax Guide](../../../Documents/molang/syntax-guide.md). The particle system uses some special Molang variables for particle Molang expressions.
 
 Additionally, custom Molang parameters can be set in various ways and used in Molang expressions in effects.
 

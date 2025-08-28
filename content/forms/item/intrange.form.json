@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "IntRange",
-    "title": "IntRange Item",
+    "title": "Item IntRange",
     "fields": [
       {
         "id": "max",

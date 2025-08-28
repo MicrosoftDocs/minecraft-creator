@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "menu_category",
-    "title": "Menu Category Item",
+    "title": "Item Menu Category",
     "description": "menu_category contains the creative group name and category for this item.",
     "fields": [
       {

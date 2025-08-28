@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_motion_parametric",
-    "title": "Particle Motion Parametric Client Particles",
+    "title": "Client Particles Particle Motion Parametric",
     "fields": [
       {
         "id": "direction",

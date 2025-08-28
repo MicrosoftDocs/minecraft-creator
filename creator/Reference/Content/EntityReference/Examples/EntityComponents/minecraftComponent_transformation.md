@@ -16,9 +16,9 @@ Defines an entity's transformation from the current definition into another.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| add | *not set* | Array of [Add](#add-item-type) items | List of components to add to the entity after the transformation |  | 
+| add | *not set* | Array of [Add](#add) items | List of components to add to the entity after the transformation |  | 
 | begin_transform_sound | *not set* | String | Sound to play when the transformation starts | Zombie Villager: `"remedy"` | 
-| delay | *not set* | Array of [Delay](#delay-item-type) items | Defines the properties of the delay for the transformation | Husk: `{"value":15}`, Pig: `0.5`, Zombie Villager: `{"value":100,"block_assist_chance":0.01,"block_radius":4,"block_chance":0.3,"block_types":["minecraft:bed","minecraft:iron_bars"]}` | 
+| delay | *not set* | Array of [Delay](#delay) items | Defines the properties of the delay for the transformation | Husk: `{"value":15}`, Pig: `0.5`, Zombie Villager: `{"value":100,"block_assist_chance":0.01,"block_radius":4,"block_chance":0.3,"block_types":["minecraft:bed","minecraft:iron_bars"]}` | 
 | drop_equipment | false | Boolean true/false | Cause the entity to drop all equipment upon transformation | Husk: `true` | 
 | drop_inventory | false | Boolean true/false | Cause the entity to drop all items in inventory upon transformation | Piglin: `true` | 
 | into | *not set* | String | Entity Definition that this entity will transform into | Hoglin: `"minecraft:zoglin"`, Husk: `"minecraft:zombie<minecraft:as_adult>"`, `"minecraft:zombie<minecraft:as_baby>"` | 
@@ -27,7 +27,7 @@ Defines an entity's transformation from the current definition into another.
 | preserve_equipment | false | Boolean true/false | Cause the entity to keep equipment after going through transformation | Piglin: `true` | 
 | transformation_sound | *not set* | String | Sound to play when the entity is done transforming | Hoglin: `"mob.hoglin.converted_to_zombified"`, Husk: `"mob.husk.convert_to_zombie"`, Pig: `"mob.pig.death"` | 
 
-## Add item type
+## Add
 List of components to add to the entity after the transformation.
 
 
@@ -37,7 +37,7 @@ List of components to add to the entity after the transformation.
 |:----------|:-------------|:----|:-----------|:------------- |
 | component_groups | *not set* | Array of strings | Names of component groups to add |  | 
 
-## Delay item type
+## Delay
 Defines the properties of the delay for the transformation.
 
 

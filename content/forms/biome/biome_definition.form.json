@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Biome Definition",
-    "title": "Biome Definition Biome",
+    "title": "Biome Definition",
     "description": "Contains a description and components to define a Biome.",
     "fields": [
       {

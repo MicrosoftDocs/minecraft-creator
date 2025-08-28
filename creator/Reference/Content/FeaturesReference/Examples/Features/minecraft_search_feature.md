@@ -16,13 +16,13 @@ Sweeps a volume searching for a valid placement location for its referenced feat
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description-item-type) item |  |  | 
+| description | *not set* | [Description](#description) item |  |  | 
 | format_version | *not set* | String |  |  | 
 | required_successes | *not set* | Integer number | Number of valid positions the search must find in order to place the referenced feature |  | 
 | search_axis"<"-x", "+x", "-y", "+y", "-z", "+z" | *not set* | String | Axis that the search will sweep along through the 'search_volume' |  | 
-| search_volume | *not set* | [Search Volume](#search-volume-item-type) item | Axis-aligned bounding box that will be searched for valid placement positions. Expressed as offsets from the input position. |  | 
+| search_volume | *not set* | [Search Volume](#search-volume) item | Axis-aligned bounding box that will be searched for valid placement positions. Expressed as offsets from the input position. |  | 
 
-## Description item type
+## Description
 
 #### Description Properties
 
@@ -30,7 +30,7 @@ Sweeps a volume searching for a valid placement location for its referenced feat
 |:----------|:-------------|:----|:-----------|:------------- |
 | identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
 
-## Search Volume item type
+## Search Volume
 
 #### Search Volume Properties
 

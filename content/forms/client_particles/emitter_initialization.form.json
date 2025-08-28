@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_initialization",
-    "title": "Emitter Initialization Client Particles",
+    "title": "Client Particles Emitter Initialization",
     "fields": [
       {
         "id": "creation_expression",

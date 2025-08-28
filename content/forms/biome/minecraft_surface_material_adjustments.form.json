@@ -1,69 +1,8 @@
 {
   "fields": [],
-  "generated_doNotEdit": {
-    "title": "Surface Material Adjustments",
-    "description": "The specific blocks used for this surface adjustment",
-    "fields": [
-      {
-        "id": "sea_material",
-        "title": "sea_material",
-        "description": "Controls the block type used in the bodies of water in this biome when this adjustment is active.",
-        "dataType": 16,
-        "subForm": {
-          "title": "Sea Material",
-          "description": "Specifies a particular block. Can be a string block name or a JSON object",
-          "fields": []
-        }
-      },
-      {
-        "id": "foundation_material",
-        "title": "foundation_material",
-        "description": "Controls the block type used deep underground in this biome when this adjustment is active.",
-        "dataType": 16,
-        "subForm": {
-          "title": "Foundation Material",
-          "description": "Specifies a particular block. Can be a string block name or a JSON object",
-          "fields": []
-        }
-      },
-      {
-        "id": "top_material",
-        "title": "top_material",
-        "description": "Controls the block type used for the surface of this biome when this adjustment is active.",
-        "dataType": 16,
-        "subForm": {
-          "title": "Top Material",
-          "description": "Specifies a particular block. Can be a string block name or a JSON object",
-          "fields": []
-        }
-      },
-      {
-        "id": "mid_material",
-        "title": "mid_material",
-        "description": "Controls the block type used in a layer below the surface of this biome when this adjustment is active.",
-        "dataType": 16,
-        "subForm": {
-          "title": "Mid Material",
-          "description": "Specifies a particular block. Can be a string block name or a JSON object",
-          "fields": []
-        }
-      },
-      {
-        "id": "sea_floor_material",
-        "title": "sea_floor_material",
-        "description": "Controls the block type used as a floor for bodies of water in this biome when this adjustment is active.",
-        "dataType": 16,
-        "subForm": {
-          "title": "Sea Floor Material",
-          "description": "Specifies a particular block. Can be a string block name or a JSON object",
-          "fields": []
-        }
-      }
-    ]
-  },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:surface_material_adjustments",
-    "title": "Minecraft Surface Material Adjustments Biome",
+    "title": "Biome Surface Material Adjustments",
     "description": "Specify fine-detail changes to blocks used in terrain generation (based on a noise function).",
     "fields": [
       {
@@ -106,63 +45,208 @@
                 "fields": [
                   {
                     "id": "foundation_material",
-                    "title": "Foundation Material",
                     "description": "Controls the block type used deep underground in this biome when this adjustment is active.",
-                    "dataType": 16,
-                    "subForm": {
-                      "id": "foundation_material",
-                      "title": "Foundation Material",
-                      "fields": []
-                    },
-                    "alternates": []
+                    "dataType": 2,
+                    "alternates": [
+                      {
+                        "id": "foundation_material",
+                        "dataType": 16,
+                        "readOnly": true,
+                        "subForm": {
+                          "id": "foundation_material",
+                          "title": "Foundation Material",
+                          "fields": [
+                            {
+                              "id": "name",
+                              "title": "Name",
+                              "description": "Name of the block",
+                              "dataType": 16,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "states",
+                              "title": "States",
+                              "description": "Contains members named after each state, with boolean, integer, or string values.",
+                              "dataType": 31,
+                              "alternates": [
+                                {
+                                  "id": "states",
+                                  "dataType": 27
+                                },
+                                {
+                                  "id": "states",
+                                  "dataType": 24
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
                   },
                   {
                     "id": "mid_material",
-                    "title": "Mid Material",
                     "description": "Controls the block type used in a layer below the surface of this biome when this adjustment is active.",
-                    "dataType": 16,
-                    "subForm": {
-                      "id": "mid_material",
-                      "title": "Mid Material",
-                      "fields": []
-                    },
-                    "alternates": []
+                    "dataType": 2,
+                    "alternates": [
+                      {
+                        "id": "mid_material",
+                        "dataType": 16,
+                        "readOnly": true,
+                        "subForm": {
+                          "id": "mid_material",
+                          "title": "Mid Material",
+                          "fields": [
+                            {
+                              "id": "name",
+                              "title": "Name",
+                              "description": "Name of the block",
+                              "dataType": 16,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "states",
+                              "title": "States",
+                              "description": "Contains members named after each state, with boolean, integer, or string values.",
+                              "dataType": 31,
+                              "alternates": [
+                                {
+                                  "id": "states",
+                                  "dataType": 27
+                                },
+                                {
+                                  "id": "states",
+                                  "dataType": 24
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
                   },
                   {
                     "id": "sea_floor_material",
-                    "title": "Sea Floor Material",
                     "description": "Controls the block type used as a floor for bodies of water in this biome when this adjustment is active.",
-                    "dataType": 16,
-                    "subForm": {
-                      "id": "sea_floor_material",
-                      "title": "Sea Floor Material",
-                      "fields": []
-                    },
-                    "alternates": []
+                    "dataType": 2,
+                    "alternates": [
+                      {
+                        "id": "sea_floor_material",
+                        "dataType": 16,
+                        "readOnly": true,
+                        "subForm": {
+                          "id": "sea_floor_material",
+                          "title": "Sea Floor Material",
+                          "fields": [
+                            {
+                              "id": "name",
+                              "title": "Name",
+                              "description": "Name of the block",
+                              "dataType": 16,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "states",
+                              "title": "States",
+                              "description": "Contains members named after each state, with boolean, integer, or string values.",
+                              "dataType": 31,
+                              "alternates": [
+                                {
+                                  "id": "states",
+                                  "dataType": 27
+                                },
+                                {
+                                  "id": "states",
+                                  "dataType": 24
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
                   },
                   {
                     "id": "sea_material",
-                    "title": "Sea Material",
                     "description": "Controls the block type used in the bodies of water in this biome when this adjustment is active.",
-                    "dataType": 16,
-                    "subForm": {
-                      "id": "sea_material",
-                      "title": "Sea Material",
-                      "fields": []
-                    },
-                    "alternates": []
+                    "dataType": 2,
+                    "alternates": [
+                      {
+                        "id": "sea_material",
+                        "dataType": 16,
+                        "readOnly": true,
+                        "subForm": {
+                          "id": "sea_material",
+                          "title": "Sea Material",
+                          "fields": [
+                            {
+                              "id": "name",
+                              "title": "Name",
+                              "description": "Name of the block",
+                              "dataType": 16,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "states",
+                              "title": "States",
+                              "description": "Contains members named after each state, with boolean, integer, or string values.",
+                              "dataType": 31,
+                              "alternates": [
+                                {
+                                  "id": "states",
+                                  "dataType": 27
+                                },
+                                {
+                                  "id": "states",
+                                  "dataType": 24
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
                   },
                   {
                     "id": "top_material",
-                    "title": "Top Material",
                     "description": "Controls the block type used for the surface of this biome when this adjustment is active.",
-                    "dataType": 16,
-                    "subForm": {
-                      "id": "top_material",
-                      "title": "Top Material",
-                      "fields": []
-                    },
-                    "alternates": []
+                    "dataType": 2,
+                    "alternates": [
+                      {
+                        "id": "top_material",
+                        "dataType": 16,
+                        "readOnly": true,
+                        "subForm": {
+                          "id": "top_material",
+                          "title": "Top Material",
+                          "fields": [
+                            {
+                              "id": "name",
+                              "title": "Name",
+                              "description": "Name of the block",
+                              "dataType": 16,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "states",
+                              "title": "States",
+                              "description": "Contains members named after each state, with boolean, integer, or string values.",
+                              "dataType": 31,
+                              "alternates": [
+                                {
+                                  "id": "states",
+                                  "dataType": 27
+                                },
+                                {
+                                  "id": "states",
+                                  "dataType": 24
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
                   }
                 ]
               },

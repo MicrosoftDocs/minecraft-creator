@@ -11,8 +11,11 @@ ms.date: 02/11/2025
 
 Noise parameters used to drive terrain height in the Overworld.
 
+> [!Note]
+> This is a pre-Caves and Cliffs component. It does not change overworld height, and currently only affects map item rendering.
 
-## Minecraft Overworld Height Biome Properties
+
+## Biome Overworld Height Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

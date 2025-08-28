@@ -74,12 +74,11 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:entity_placer",
-    "title": "Minecraft Entity Placer Item Components",
+    "title": "Item Components Entity Placer",
     "description": "The entity_placer item component specifies the blocks that the item can be placed on.",
     "fields": [
       {
         "id": "dispense_on",
-        "title": "Dispense On",
         "description": "List of block descriptors of the blocks that this item can be dispensed on. If left empty, all blocks will be allowed.",
         "dataType": 15,
         "subForm": {
@@ -138,7 +137,6 @@
       },
       {
         "id": "use_on",
-        "title": "Use On",
         "description": "List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed.",
         "dataType": 15,
         "subForm": {

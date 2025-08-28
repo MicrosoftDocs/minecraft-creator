@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Client Biome Components",
-    "title": "Client Biome Components Client Biome",
+    "title": "Client Biome Components",
     "description": "Any components that this Client Biome uses",
     "fields": [
       {

@@ -2,11 +2,11 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_shape_disc",
-    "title": "Emitter Shape Disc Client Particles",
+    "title": "Client Particles Emitter Shape Disc",
     "fields": [
       {
         "id": "direction",
-        "title": "Direction",
+        "title": "Direction Type",
         "dataType": 2,
         "alternates": [
           {
@@ -84,7 +84,7 @@
       },
       {
         "id": "plane_normal",
-        "title": "Plane Normal",
+        "title": "Plane Normal Type",
         "dataType": 2,
         "alternates": [
           {

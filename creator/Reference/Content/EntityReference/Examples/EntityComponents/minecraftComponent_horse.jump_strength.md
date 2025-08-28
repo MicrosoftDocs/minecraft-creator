@@ -16,10 +16,10 @@ Determines the jump height for a horse or similar entity, like a donkey.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| value | *not set* | Array of [Value](#value-item-type) items | Value of jump strength the entity has when spawned. | Donkey: `0.5`, Horse: `{"range_min":0.4,"range_max":1}` | 
+| value | *not set* | Array of [Value](#value) items | Value of jump strength the entity has when spawned. | Donkey: `0.5`, Horse: `{"range_min":0.4,"range_max":1}` | 
 | value (Alternate 1) | *not set* | Integer number |  |  | 
 
-## Value item type
+## Value
 Describes the range of jump strength.
 
 

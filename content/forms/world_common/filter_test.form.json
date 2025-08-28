@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Filter Test",
-    "title": "Filter Test World Common",
+    "title": "World Common Filter Test",
     "fields": [
       {
         "id": "domain",

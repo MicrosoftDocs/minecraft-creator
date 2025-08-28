@@ -378,6 +378,31 @@
       "source_path": "Documents/ScriptingLibraries.md",
       "redirect_url": "/minecraft/creator/documents/libraries",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/UtilizingSubpacks.md",
+      "redirect_url": "/minecraft/creator/documents/buildingsubpacks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/MolangBeginnersGuide.md",
+      "redirect_url": "/minecraft/creator/documents/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/MolangReference/Examples/MolangConcepts/MolangIntroduction.md",
+      "redirect_url": "/minecraft/creator/documents/molang/syntax-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/MolangReference/Examples/MolangConcepts/DomainExamples.md",
+      "redirect_url": "/minecraft/creator/documents/molang/practical-molang",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/MolangReference/index.yml",
+      "redirect_url": "/minecraft/creator/documents/molang/introduction",
+      "redirect_document_id": false
     }
   ]
 }

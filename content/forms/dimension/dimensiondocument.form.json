@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "DimensionDocument",
-    "title": "DimensionDocument Dimension",
+    "title": "DimensionDocument",
     "fields": [
       {
         "id": "minecraft:dimension",

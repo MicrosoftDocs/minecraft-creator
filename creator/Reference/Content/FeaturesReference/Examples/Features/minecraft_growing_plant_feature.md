@@ -18,13 +18,13 @@ Places a growing plant in the world. A growing plant is a column that is anchore
 |:----------|:-------------|:----|:-----------|:------------- |
 | allow_water | *not set* | Boolean true/false | Plant blocks can be placed in water. |  | 
 | body_blocks | *not set* | Array of strings |  |  | 
-| description | *not set* | [Description](#description-item-type) item |  |  | 
+| description | *not set* | [Description](#description) item |  |  | 
 | format_version | *not set* | String |  |  | 
 | growth_direction | *not set* | String | Direction that the plant grows towards. Valid values: UP and DOWN |  | 
 | head_blocks | *not set* | Array of strings |  |  | 
 | height_distribution | *not set* | Array of strings |  |  | 
 
-## Description item type
+## Description
 
 #### Description Properties
 

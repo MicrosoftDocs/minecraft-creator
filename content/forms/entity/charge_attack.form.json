@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.charge_attack",
-    "title": "Minecraft Behavior.charge Attack Entity",
+    "title": "Entity Charge Attack Behavior",
     "description": "Allows this entity to damage a target by using a running attack.",
     "fields": [
       {

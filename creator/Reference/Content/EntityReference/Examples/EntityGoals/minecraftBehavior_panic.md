@@ -22,10 +22,10 @@ Allows the mob to enter the panic state, which makes it run around and away from
 | panic_sound | *not set* | String |  | Strider: `"panic"` | 
 | prefer_water | false | Boolean true/false | If true, the mob will prefer water over land | Turtle: `true` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `1`, Copper Golem: `2`, Horse: `3` | 
-| sound_interval | *not set* | [Sound Interval](#sound-interval-item-type) item |  | Strider: `{"range_min":1,"range_max":3}` | 
+| sound_interval | *not set* | [Sound Interval (Sound Interval)](#sound-interval-sound-interval) item |  | Strider: `{"range_min":1,"range_max":3}` | 
 | speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Allay: `2`, Bee: `1.25`, Camel: `4` | 
 
-## Sound Interval item type
+## Sound Interval (Sound Interval)
 
 #### Sound_interval Properties
 

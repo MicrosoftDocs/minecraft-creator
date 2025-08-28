@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "VerticalAnchorType",
-    "title": "VerticalAnchorType Structure",
+    "title": "Structure VerticalAnchorType",
     "description": "Specifies the vertical anchor",
     "fields": [
       {

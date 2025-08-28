@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.circle_around_anchor",
-    "title": "Minecraft Behavior.circle Around Anchor Entity",
+    "title": "Entity Circle Around Anchor Behavior",
     "description": "Causes an entity to circle around an anchor point placed near a point or target.",
     "fields": [
       {

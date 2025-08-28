@@ -12,18 +12,13 @@ ms.date: 02/11/2025
 Specify fine-detail changes to blocks used in terrain generation (based on a noise function).
 
 
-## Minecraft Surface Material Adjustments Biome Properties
+## Biome Surface Material Adjustments Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| adjustments | *not set* | Array of [Adjustments](#adjustments-item-type) items | All adjustments that match the column's noise values will be applied in the order listed. |  | 
-| foundation_material | *not set* | Object | Controls the block type used deep underground in this biome when this adjustment is active. |  | 
-| mid_material | *not set* | Object | Controls the block type used in a layer below the surface of this biome when this adjustment is active. |  | 
-| sea_floor_material | *not set* | Object | Controls the block type used as a floor for bodies of water in this biome when this adjustment is active. |  | 
-| sea_material | *not set* | Object | Controls the block type used in the bodies of water in this biome when this adjustment is active. |  | 
-| top_material | *not set* | Object | Controls the block type used for the surface of this biome when this adjustment is active. |  | 
+| adjustments | *not set* | Array of [Adjustments (Surface Material Adjustments - Surface Adjustment Settings)](#adjustments-surface-material-adjustments---surface-adjustment-settings) items | All adjustments that match the column's noise values will be applied in the order listed. |  | 
 
-## Adjustments item type
+## Adjustments (Surface Material Adjustments - Surface Adjustment Settings)
 An adjustment to generated terrain, replacing blocks based on the specified settings.
 
 
@@ -34,11 +29,11 @@ An adjustment to generated terrain, replacing blocks based on the specified sett
 | height_range | *not set* | Decimal number | Defines a range of noise values [min, max] for which this adjustment should be applied. Value must have at least 2 items. Value must have at most 2 items. |  | 
 | height_range (Alternate 1) | *not set* | Boolean true/false |  |  | 
 | height_range (Alternate 2) | *not set* | String |  |  | 
-| materials | *not set* | [Materials](#materials-item-type) item | The specific blocks used for this surface adjustment |  | 
+| materials | *not set* | [Materials (Surface Material Adjustments - Surface Adjustment Materials Settings)](#materials-surface-material-adjustments---surface-adjustment-materials-settings) item | The specific blocks used for this surface adjustment |  | 
 | noise_frequency_scale | *not set* | Decimal number | The scale to multiply by the position when accessing the noise value for the material adjustments. |  | 
 | noise_range | *not set* | Array of numbers | Defines a range of noise values [min, max] for which this adjustment should be applied. Value must have at least 2 items. Value must have at most 2 items. |  | 
 
-## Materials item type
+## Materials (Surface Material Adjustments - Surface Adjustment Materials Settings)
 The specific blocks used for this surface adjustment.
 
 
@@ -46,8 +41,68 @@ The specific blocks used for this surface adjustment.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| foundation_material | *not set* | Object | Controls the block type used deep underground in this biome when this adjustment is active. |  | 
-| mid_material | *not set* | Object | Controls the block type used in a layer below the surface of this biome when this adjustment is active. |  | 
-| sea_floor_material | *not set* | Object | Controls the block type used as a floor for bodies of water in this biome when this adjustment is active. |  | 
-| sea_material | *not set* | Object | Controls the block type used in the bodies of water in this biome when this adjustment is active. |  | 
-| top_material | *not set* | Object | Controls the block type used for the surface of this biome when this adjustment is active. |  | 
+| foundation_material | *not set* | String | Controls the block type used deep underground in this biome when this adjustment is active. |  | 
+| foundation_material (Alternate 1) | *not set* | [Foundation Material (Foundation Material)](#foundation-material-foundation-material) item |  |  | 
+| mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome when this adjustment is active. |  | 
+| mid_material (Alternate 1) | *not set* | [Mid Material (Mid Material)](#mid-material-mid-material) item |  |  | 
+| sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome when this adjustment is active. |  | 
+| sea_floor_material (Alternate 1) | *not set* | [Sea Floor Material (Sea Floor Material)](#sea-floor-material-sea-floor-material) item |  |  | 
+| sea_material | *not set* | String | Controls the block type used in the bodies of water in this biome when this adjustment is active. |  | 
+| sea_material (Alternate 1) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  |  | 
+| top_material | *not set* | String | Controls the block type used for the surface of this biome when this adjustment is active. |  | 
+| top_material (Alternate 1) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  |  | 
+
+## Foundation Material (Foundation Material)
+
+#### Foundation Material Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| name | *not set* | Object | Name of the block |  | 
+| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
+| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+
+## Mid Material (Mid Material)
+
+#### Mid Material Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| name | *not set* | Object | Name of the block |  | 
+| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
+| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+
+## Sea Floor Material (Sea Floor Material)
+
+#### Sea Floor Material Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| name | *not set* | Object | Name of the block |  | 
+| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
+| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+
+## Sea Material (Sea Material)
+
+#### Sea Material Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| name | *not set* | Object | Name of the block |  | 
+| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
+| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+
+## Top Material (Top Material)
+
+#### Top Material Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| name | *not set* | Object | Name of the block |  | 
+| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
+| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 

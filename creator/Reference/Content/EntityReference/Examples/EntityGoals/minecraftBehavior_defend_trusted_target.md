@@ -21,7 +21,7 @@ Allows the mob to target another mob that hurts an entity it trusts.
 |:----------|:-------------|:----|:-----------|:------------- |
 | aggro_sound | *not set* | String | Sound to occasionally play while defending. | Fox: `"mad"` | 
 | attack_interval | 0 | Integer number | Time in seconds between attacks |  | 
-| entity_types | *not set* | Array of [Entity Types](#entity-types-item-type) items | List of entity types that this mob considers valid targets |  | 
+| entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entity types that this mob considers valid targets |  | 
 | must_see | false | Boolean true/false | If true, only entities in this mob's viewing range can be selected as targets |  | 
 | must_see_forget_duration | 3 | Decimal number | Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more |  | 
 | on_defend_start | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  | Fox: `{"event":"minecraft:fox_configure_defending","target":"self"}` | 
@@ -29,7 +29,7 @@ Allows the mob to target another mob that hurts an entity it trusts.
 | sound_chance | *not set* | Decimal number |  | Fox: `0.05` | 
 | within_radius | 0 | Decimal number | Distance in blocks that the target can be within to launch an attack | Fox: `25` | 
 
-## Entity Types item type
+## Entity Types
 List of entity types that this mob considers valid targets.
 
 

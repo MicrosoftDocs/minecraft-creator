@@ -3,12 +3,11 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "BiomeConditions",
-    "title": "BiomeConditions Spawn",
+    "title": "Spawn BiomeConditions",
     "description": "Biome specific rules for spawning",
     "fields": [
       {
         "id": "biome_filter",
-        "title": "Biome Filter",
         "description": "Filter to limit spawns to specific biomes.",
         "dataType": 16,
         "subForm": {

@@ -99,7 +99,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:projectile",
-    "title": "Minecraft Projectile Item Components",
+    "title": "Item Components Projectile",
     "description": "Projectile items shoot out, like an arrow.",
     "fields": [
       {

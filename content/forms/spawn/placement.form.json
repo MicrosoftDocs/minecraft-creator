@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Placement",
-    "title": "Placement Spawn",
+    "title": "Spawn Placement",
     "description": "Placement rule defintions",
     "fields": [
       {

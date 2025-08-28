@@ -59,7 +59,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:cooldown",
-    "title": "Minecraft Cooldown Item Components",
+    "title": "Item Components Cooldown",
     "description": "After you use an item, all items with a \"minecraft:cooldown\" component with the same \"category\" become unusable for the amount of seconds specified in \"duration\".",
     "fields": [
       {

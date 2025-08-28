@@ -8,7 +8,7 @@
   ],
   "generatedFromSchema_doNotEdit": {
     "id": "Protected Block",
-    "title": "Protected Block World",
+    "title": "World Protected Block",
     "description": "Protect blocks from this structure's placement in the world. Ensuring that it does not replace matching blocks in the world",
     "fields": [
       {

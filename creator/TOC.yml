@@ -194,8 +194,8 @@
             href: Reference/Content/SkinPacksReference/SkinPackJSONReference.md
           - name: Create a World Template
             href: Documents/CreateAWorldTemplate.md
-          - name: Utilizing Sub-Packs
-            href: Documents/UtilizingSubpacks.md
+          - name: Building Sub-Packs
+            href: Documents/BuildingSubpacks.md
           - name: 'Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition'
             href: Documents/ConvertingTexturePacks.md
           - name: Custom Pack Settings (currently in preview)
@@ -224,8 +224,8 @@
           href: Documents/GameDevOverview.md
         - name: Redstone Guide
           href: Documents/RedstoneGuide.md
-        - name: Molang Beginner's Guide
-          href: Documents/MolangBeginnersGuide.md
+        - name: Introduction to Molang
+          href: Documents/molang/introduction.md
         - name: Introduction to Game Rules
           href: Documents/IntroductionToGamerules.md
         - name: Introduction to Commands
@@ -725,10 +725,14 @@
           href: Reference/Content/texturesetsreference/texturesetsconcepts/texturesetsintroduction.md
       - name: Molang
         items:
-          - name: Molang Reference
-            href: Reference/Content/molangreference/index.yml
-          - name: Molang Concepts
-            href: Reference/Content/Molangreference/Examples/Molangconcepts/TOC.yml
+          - name: Introduction to Molang
+            href: Documents/molang/introduction.md
+          - name: Molang Syntax Guide
+            href: Documents/molang/syntax-guide.md
+          - name: Practical Molang
+            href: Documents/molang/practical-molang.md
+          - name: Molang Query Function Reference
+            href: Reference/Content/MolangReference/Examples/MolangConcepts/QueryFunctions.md
       - name: Default Minecraft Listings
         href: Reference/Content/VanillaListingsReference/TOC.yml
       - name: Raw Message JSON

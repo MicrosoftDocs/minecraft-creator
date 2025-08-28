@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn Description",
-    "title": "Spawn Description Spawn",
+    "title": "Spawn Description",
     "fields": [
       {
         "id": "identifier",

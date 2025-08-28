@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "RandomGroupPoolAlias",
-    "title": "RandomGroupPoolAlias Structure",
+    "title": "Structure RandomGroupPoolAlias",
     "description": "Pool alias for a RandomGroup of aliases",
     "fields": [
       {

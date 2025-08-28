@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Jigsaw Block Metadata",
-    "title": "Jigsaw Block Metadata Structure",
+    "title": "Structure Jigsaw Block Metadata",
     "fields": [
       {
         "id": "block",
