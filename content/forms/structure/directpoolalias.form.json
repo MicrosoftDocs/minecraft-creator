@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "DirectPoolAlias",
-    "title": "DirectPoolAlias Structure",
+    "title": "Structure DirectPoolAlias",
     "description": "Pool alias for a Direct target.",
     "fields": [
       {

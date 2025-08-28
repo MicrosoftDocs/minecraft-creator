@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "BlockMatch",
-    "title": "BlockMatch World",
+    "title": "World BlockMatch",
     "description": "Predicate that evaluates to true if the block at the specified location matches the specified block.",
     "fields": [
       {

@@ -17,7 +17,7 @@ generates a rock formation to simulate a geode. Each layer of, and block within,
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | crack_point_offset | *not set* | Integer number | An offset applied to each distribution point that forms the geode crack opening. [0,10] |  | 
-| description | *not set* | [Description](#description-item-type) item |  |  | 
+| description | *not set* | [Description](#description) item |  |  | 
 | format_version | *not set* | String |  |  | 
 | inner_placements | *not set* | Array of strings |  |  | 
 | invalid_blocks_threshold | *not set* | Integer number | The threshold of invalid blocks for a geode to have a distribution point in before it aborts generation entirely. |  | 
@@ -30,7 +30,7 @@ generates a rock formation to simulate a geode. Each layer of, and block within,
 | min_point_offset | *not set* | Integer number | The lowest possible value of random offset applied to the position of each distribution point. [0,10] |  | 
 | placements_require_layer0_alternate | *not set* | Boolean true/false | If true, the potential placement block will only be placed on the alternate layer0 blocks that get placed. Potential placement blocks are blocks that depend on the existance of another block to be placed. The latter are the layer0 alternate blocks. |  | 
 
-## Description item type
+## Description
 
 #### Description Properties
 

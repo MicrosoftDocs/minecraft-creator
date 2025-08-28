@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:lighting_identifier",
-    "title": "Minecraft Lighting Identifier Client Biome",
+    "title": "Client Biome Lighting Identifier",
     "description": "Set the identifier used for lighting in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Lighting JSON schemas under the \"lighting\" directory. Biomes without this component will have default lighting settings.",
     "fields": [
       {

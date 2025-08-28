@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Crafting Catalog Category",
-    "title": "Crafting Catalog Category Crafting Catalog",
+    "title": "Crafting Catalog Category",
     "description": "Represents a collection of groups of items in a category..",
     "fields": [
       {

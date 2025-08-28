@@ -16,10 +16,10 @@ Defines the Conditional Spatial Update Bandwidth Optimizations of this entity.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| conditional_values | *not set* | Array of [Conditional Values](#conditional-values-item-type) items | The object containing the conditional bandwidth optimization values. | Boat: `[{"max_optimized_distance":0,"max_dropped_ticks":0,"use_motion_prediction_hints":true,"conditional_values":[{"test":"is_moving","subject":"self"}]}]` | 
-| default_values | *not set* | Array of [Default Values](#default-values-item-type) items | The object containing the default bandwidth optimization values. |  | 
+| conditional_values | *not set* | Array of [Conditional Values](#conditional-values) items | The object containing the conditional bandwidth optimization values. | Boat: `[{"max_optimized_distance":0,"max_dropped_ticks":0,"use_motion_prediction_hints":true,"conditional_values":[{"test":"is_moving","subject":"self"}]}]` | 
+| default_values | *not set* | Array of [Default Values](#default-values) items | The object containing the default bandwidth optimization values. |  | 
 
-## Conditional Values item type
+## Conditional Values
 The object containing the conditional bandwidth optimization values.
 
 
@@ -32,7 +32,7 @@ The object containing the conditional bandwidth optimization values.
 | max_optimized_distance | 80 | Decimal number | The maximum distance considered during bandwidth optimizations. Any value below the max is interpolated to find optimization, and any value greater than or equal to this max results in max optimization. |  | 
 | use_motion_prediction_hints | false | Boolean true/false | When set to true, smaller motion packets will be sent during drop packet intervals, resulting in the same amount of packets being sent as without optimizations but with much less data being sent. This should be used when actors are travelling very quickly or teleporting to prevent visual oddities. |  | 
 
-## Default Values item type
+## Default Values
 The object containing the default bandwidth optimization values.
 
 

@@ -5,7 +5,7 @@
   "description": "Affects how music plays within the biome",
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:biome_music",
-    "title": "Minecraft Biome Music Client Biome",
+    "title": "Client Biome Biome Music",
     "description": "Affect how music plays within the biome",
     "fields": [
       {

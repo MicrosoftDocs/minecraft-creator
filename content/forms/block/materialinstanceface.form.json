@@ -1,6 +1,6 @@
 {
-  "id": "*",
-  "title": "*",
+  "id": "material_instance_face",
+  "title": "Material Instance Face",
   "fields": [
     {
       "id": "texture",

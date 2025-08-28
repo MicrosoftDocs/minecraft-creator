@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Sets the color grass and foliage will be tinted by in this biome on the map.
 
 
-## Minecraft Map Tints Biome Properties
+## Biome Map Tints Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

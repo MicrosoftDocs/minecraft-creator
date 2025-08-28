@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:storage_item",
-    "title": "Minecraft Storage Item Item",
+    "title": "Item Storage Item",
     "description": "[EXPERIMENTAL] Storage Items can be used by other components to store other items within this item.",
     "fields": [
       {

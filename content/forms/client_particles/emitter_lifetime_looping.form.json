@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_lifetime_looping",
-    "title": "Emitter Lifetime Looping Client Particles",
+    "title": "Client Particles Emitter Lifetime Looping",
     "fields": [
       {
         "id": "active_time",

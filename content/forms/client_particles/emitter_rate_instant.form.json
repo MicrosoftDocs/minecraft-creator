@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_rate_instant",
-    "title": "Emitter Rate Instant Client Particles",
+    "title": "Client Particles Emitter Rate Instant",
     "fields": [
       {
         "id": "num_particles",

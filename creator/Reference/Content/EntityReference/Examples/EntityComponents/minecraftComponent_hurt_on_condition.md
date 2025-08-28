@@ -16,9 +16,9 @@ Defines a set of conditions under which an entity should take damage.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| damage_conditions | *not set* | Array of [Damage Conditions](#damage-conditions-item-type) items | List of damage conditions that when met can cause damage to the entity. | Allay: `[{"filters":{"test":"in_lava","subject":"self"},"cause":"lava","damage_per_tick":4}]` | 
+| damage_conditions | *not set* | Array of [Damage Conditions](#damage-conditions) items | List of damage conditions that when met can cause damage to the entity. | Allay: `[{"filters":{"test":"in_lava","subject":"self"},"cause":"lava","damage_per_tick":4}]` | 
 
-## Damage Conditions item type
+## Damage Conditions
 List of damage conditions that when met can cause damage to the entity.
 
 

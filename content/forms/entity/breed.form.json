@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.breed",
-    "title": "Minecraft Behavior.breed Entity",
+    "title": "Entity Breed Behavior",
     "description": "Allows this mob to breed with other mobs.",
     "fields": [
       {

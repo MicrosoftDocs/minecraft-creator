@@ -16,12 +16,12 @@ Generates a blob of the specified block with the specified dimensions. For the m
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description-item-type) item |  |  | 
+| description | *not set* | [Description](#description) item |  |  | 
 | exposed_face | *not set* | String | Defines a block face that is allowed to be exposed to air and/or water. Other faces need to be embedded for blocks to be placed by this feature. Defaults to upwards face. |  | 
 | format_version | *not set* | String |  |  | 
 | placement_radius_around_floor | *not set* | Integer number | Defines the cubic radius of the blob. [1, 8] |  | 
 
-## Description item type
+## Description
 
 #### Description Properties
 

@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_effect description",
-    "title": "Particle Effect Description Client Particles",
+    "title": "Client Particles Particle Effect Description",
     "description": "The description MUST contain an identifier and basic_render_parameters.",
     "fields": [
       {

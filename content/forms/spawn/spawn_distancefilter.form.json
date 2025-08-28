@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn DistanceFilter",
-    "title": "Spawn DistanceFilter Spawn",
+    "title": "Spawn DistanceFilter",
     "fields": [
       {
         "id": "max",

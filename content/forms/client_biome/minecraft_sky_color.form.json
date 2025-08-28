@@ -5,7 +5,7 @@
   "description": "Sets the sky color used during rendering. Biomes without this component will have default sky color behavior.",
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:sky_color",
-    "title": "Minecraft Sky Color Client Biome",
+    "title": "Client Biome Sky Color",
     "description": "Set the sky color used during rendering. Biomes without this component will have default sky color behavior.",
     "fields": [
       {

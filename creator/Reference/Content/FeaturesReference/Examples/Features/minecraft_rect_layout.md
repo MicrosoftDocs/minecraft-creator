@@ -17,12 +17,12 @@ ms.date: 02/11/2025
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description-item-type) item |  |  | 
-| feature_areas | *not set* | Array of [Feature Areas](#feature-areas-item-type) items |  |  | 
+| description | *not set* | [Description](#description) item |  |  | 
+| feature_areas | *not set* | Array of [Feature Areas](#feature-areas) items |  |  | 
 | feature_areas (Alternate 1) | *not set* | Array of strings |  |  | 
 | format_version | *not set* | String |  |  | 
 
-## Description item type
+## Description
 
 #### Description Properties
 
@@ -30,7 +30,7 @@ ms.date: 02/11/2025
 |:----------|:-------------|:----|:-----------|:------------- |
 | identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
 
-## Feature Areas item type
+## Feature Areas
 
 #### Feature Areas Properties
 

@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "SinglePoolElement",
-    "title": "SinglePoolElement World",
+    "title": "World SinglePoolElement",
     "fields": [
       {
         "id": "element_type",

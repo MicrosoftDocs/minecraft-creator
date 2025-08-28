@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.swim_wander",
-    "title": "Minecraft Behavior.swim Wander Entity",
+    "title": "Entity Swim Wander Behavior",
     "description": "Allows the entity to wander around while swimming, when not path-finding.",
     "fields": [
       {

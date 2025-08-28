@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn BrightnessFilter",
-    "title": "Spawn BrightnessFilter Spawn",
+    "title": "Spawn BrightnessFilter",
     "fields": [
       {
         "id": "adjust_for_weather",

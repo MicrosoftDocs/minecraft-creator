@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_appearance_billboard",
-    "title": "Particle Appearance Billboard Client Particles",
+    "title": "Client Particles Particle Appearance Billboard",
     "fields": [
       {
         "id": "direction",

@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Biome JSON File",
-    "title": "Biome JSON File Biome",
+    "title": "Biome JSON File",
     "description": "Contains a format version and a biome definition",
     "fields": [
       {

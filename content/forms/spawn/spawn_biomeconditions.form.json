@@ -3,11 +3,10 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn BiomeConditions",
-    "title": "Spawn BiomeConditions Spawn",
+    "title": "Spawn BiomeConditions",
     "fields": [
       {
         "id": "minecraft:biome_filter",
-        "title": "Minecraft Biome Filter",
         "description": "Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.",
         "dataType": 16,
         "subForm": {

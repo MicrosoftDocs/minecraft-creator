@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_lifetime_events travel_distance_events",
-    "title": "Emitter Lifetime Events Travel Distance Events Client Particles",
+    "title": "Client Particles Emitter Lifetime Events Travel Distance Events",
     "fields": [
       {
         "id": "distance",
@@ -17,12 +17,7 @@
         "alternates": [
           {
             "id": "effects",
-            "dataType": 16,
-            "subForm": {
-              "id": "effects",
-              "title": "Effects",
-              "fields": []
-            }
+            "dataType": 2
           }
         ],
         "isRequired": true

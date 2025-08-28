@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:block_placer",
-    "title": "Minecraft Block Placer Item",
+    "title": "Item Block Placer",
     "description": "Items with the block_placer component will place a block when used. \nThis component can also be used instead of the \"minecraft:icon\" component to render the referenced block as the item icon.",
     "fields": [
       {
@@ -29,7 +29,6 @@
       },
       {
         "id": "use_on",
-        "title": "Use On",
         "description": "List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed.",
         "dataType": 15,
         "subForm": {

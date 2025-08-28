@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_shape_point",
-    "title": "Emitter Shape Point Client Particles",
+    "title": "Client Particles Emitter Shape Point",
     "fields": [
       {
         "id": "direction",

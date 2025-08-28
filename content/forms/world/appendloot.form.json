@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "AppendLoot",
-    "title": "AppendLoot World",
+    "title": "World AppendLoot",
     "description": "Modifier will attempt to add loot to a block entity.",
     "fields": [
       {

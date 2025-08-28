@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Makes grass use the noise based colors for tinting in this biome on the map.
 
 
-## Custom Map Tint Grass Noise Biome Properties
+## Biome Custom Map Tint Grass Noise Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

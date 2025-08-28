@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "DimensionPaddingRange",
-    "title": "DimensionPaddingRange World",
+    "title": "World DimensionPaddingRange",
     "description": "Specifies the padding for the top and bottom of the world",
     "fields": [
       {

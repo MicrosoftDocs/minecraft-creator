@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "custom_map_tint_grass_noise",
-    "title": "Custom Map Tint Grass Noise Biome",
+    "title": "Biome Custom Map Tint Grass Noise",
     "description": "Makes grass use the noise based colors for tinting in this biome on the map.",
     "fields": [
       {

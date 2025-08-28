@@ -16,11 +16,11 @@ Generates a skeletal structure composed of bone blocks and parametric ore blocks
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description-item-type) item |  |  | 
+| description | *not set* | [Description](#description) item |  |  | 
 | format_version | *not set* | String |  |  | 
 | max_empty_corners | *not set* | Integer number |  |  | 
 
-## Description item type
+## Description
 
 #### Description Properties
 

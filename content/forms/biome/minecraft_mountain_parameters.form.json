@@ -43,7 +43,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:mountain_parameters",
-    "title": "Minecraft Mountain Parameters Biome",
+    "title": "Biome Mountain Parameters",
     "description": "Noise parameters used to drive mountain terrain generation in Overworld.",
     "fields": [
       {
@@ -64,15 +64,44 @@
             },
             {
               "id": "material",
-              "title": "Material",
               "description": "Block type use as steep material",
-              "dataType": 16,
-              "subForm": {
-                "id": "material",
-                "title": "Material",
-                "fields": []
-              },
-              "alternates": []
+              "dataType": 2,
+              "alternates": [
+                {
+                  "id": "material",
+                  "dataType": 16,
+                  "readOnly": true,
+                  "subForm": {
+                    "id": "material",
+                    "title": "Material",
+                    "fields": [
+                      {
+                        "id": "name",
+                        "title": "Name",
+                        "description": "Name of the block",
+                        "dataType": 16,
+                        "isRequired": true
+                      },
+                      {
+                        "id": "states",
+                        "title": "States",
+                        "description": "Contains members named after each state, with boolean, integer, or string values.",
+                        "dataType": 31,
+                        "alternates": [
+                          {
+                            "id": "states",
+                            "dataType": 27
+                          },
+                          {
+                            "id": "states",
+                            "dataType": 24
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
             },
             {
               "id": "north_slopes",

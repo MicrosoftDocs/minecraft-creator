@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn DelayFilter",
-    "title": "Spawn DelayFilter Spawn",
+    "title": "Spawn DelayFilter",
     "fields": [
       {
         "id": "identifier",

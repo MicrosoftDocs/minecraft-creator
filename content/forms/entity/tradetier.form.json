@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "TradeTier",
-    "title": "TradeTier Entity",
+    "title": "Entity TradeTier",
     "fields": [
       {
         "id": "groups",

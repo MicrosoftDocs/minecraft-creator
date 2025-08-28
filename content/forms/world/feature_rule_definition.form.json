@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Feature Rule Definition",
-    "title": "Feature Rule Definition World",
+    "title": "World Feature Rule Definition",
     "fields": [
       {
         "id": "conditions",

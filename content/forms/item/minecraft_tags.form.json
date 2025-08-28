@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:tags",
-    "title": "Minecraft Tags Item",
+    "title": "Item Tags",
     "description": "The tags component specifies which tags an item has on it.",
     "fields": [
       {

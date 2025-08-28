@@ -1063,7 +1063,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:experience_reward",
-    "title": "Minecraft Experience Reward Entity",
+    "title": "Entity Experience Reward",
     "fields": [
       {
         "id": "on_bred",

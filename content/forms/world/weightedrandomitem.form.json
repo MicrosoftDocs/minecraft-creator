@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "WeightedRandomItem",
-    "title": "WeightedRandomItem World",
+    "title": "World WeightedRandomItem",
     "description": "Weighted Random Item",
     "fields": [
       {

@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_lifetime_expression",
-    "title": "Particle Lifetime Expression Client Particles",
+    "title": "Client Particles Particle Lifetime Expression",
     "fields": [
       {
         "id": "expiration_expression",

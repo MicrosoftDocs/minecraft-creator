@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_event_random_node",
-    "title": "Particle Event Random Node Client Particles",
+    "title": "Client Particles Particle Event Random Node",
     "fields": [
       {
         "id": "expression",

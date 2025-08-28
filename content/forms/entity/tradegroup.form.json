@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "TradeGroup",
-    "title": "TradeGroup Entity",
+    "title": "Entity TradeGroup",
     "fields": [
       {
         "id": "num_to_select",

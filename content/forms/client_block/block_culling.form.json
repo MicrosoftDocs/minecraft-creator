@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Block Culling",
-    "title": "Block Culling Client Block",
+    "title": "Client Block Block Culling",
     "fields": [
       {
         "id": "description",

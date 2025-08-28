@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:storage_weight_limit",
-    "title": "Minecraft Storage Weight Limit Item Components",
+    "title": "Item Components Storage Weight Limit",
     "description": "Specifies the maximum weight limit that a storage item can hold",
     "fields": [
       {

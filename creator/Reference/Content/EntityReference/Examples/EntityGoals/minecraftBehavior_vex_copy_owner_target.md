@@ -19,10 +19,10 @@ Allows the mob to target the same entity its owner is targeting.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| entity_types | *not set* | Array of [Entity Types](#entity-types-item-type) items | List of entities this mob can copy the owner from |  | 
+| entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entities this mob can copy the owner from |  | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
 
-## Entity Types item type
+## Entity Types
 List of entities this mob can copy the owner from.
 
 

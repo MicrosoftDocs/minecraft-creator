@@ -26,7 +26,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:dyeable",
-    "title": "Minecraft Dyeable Item Components",
+    "title": "Item Components Dyeable",
     "fields": [
       {
         "id": "default_color",

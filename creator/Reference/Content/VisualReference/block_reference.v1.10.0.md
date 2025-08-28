@@ -15,9 +15,9 @@ ms.date: 02/11/2025
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | name | *not set* | String |  |  | 
-| states | *not set* | [States](#states-item-type) item |  |  | 
+| states | *not set* | [States](#states) item |  |  | 
 
-## States item type
+## States
 
 #### States Properties
 

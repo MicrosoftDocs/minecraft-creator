@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Feature Rule Description",
-    "title": "Feature Rule Description World",
+    "title": "World Feature Rule Description",
     "fields": [
       {
         "id": "identifier",

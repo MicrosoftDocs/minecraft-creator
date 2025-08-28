@@ -2,12 +2,11 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "JigsawStructure",
-    "title": "JigsawStructure World",
+    "title": "World JigsawStructure",
     "description": "A Jigsaw Structure is a group of Structure Templates that make up a larger structure.Jigsaw Structures are placed during world generation.",
     "fields": [
       {
         "id": "biome_filters",
-        "title": "Biome Filters",
         "description": "Biomes in which the Jigsaw Structure can generate.",
         "dataType": 16,
         "subForm": {

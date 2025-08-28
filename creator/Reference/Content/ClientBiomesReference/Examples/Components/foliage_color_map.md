@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Object specifying a color map for foliage instead of a specific color.
 
 
-## Foliage Color Map Client Biome Properties
+## Client Biome Foliage Color Map Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "description",
-    "title": "Description Item",
+    "title": "Item Description",
     "description": "Contains the required identifier for the item. May contain optional fields like menu_category.",
     "fields": [
       {

@@ -12,19 +12,19 @@ ms.date: 02/11/2025
 Allows an item to place entities into the world. Additionally, in version 1.19.80 and above, the component allows the item to set the spawn type of a monster spawner.
 
 
-## Minecraft Entity Placer Item Components Properties
+## Item Components Entity Placer Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| dispense_on | *not set* | Array of [Dispense On](#dispense-on-item-type) items | List of block descriptors of the blocks that this item can be dispensed on. If left empty, all blocks will be allowed. |  | 
+| dispense_on (Dispense On) | *not set* | Array of [Dispense On (Dispense On)](#dispense-on-dispense-on) items | List of block descriptors of the blocks that this item can be dispensed on. If left empty, all blocks will be allowed. |  | 
 | dispense_on (Alternate 1) | *not set* | String |  |  | 
 | dispense_on (Alternate 2) | *not set* | Object |  |  | 
 | entity | *not set* | Object | The entity to be placed in the world. Value must match a regular expression pattern of "^(?:\w+(?:\.\w+)*:(?=\w))?(?:\w+(?:\.\w+)*)(?:<((?:\w+(?:\.\w+)*:(?=\w))?\w+(?:\.\w+)*)*>)?$". | My Sword Turtle: `"minecraft:turtle"` | 
-| use_on | *not set* | Array of [Use On](#use-on-item-type) items | List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed. | My Sword Turtle: `["minecraft:sand"]` | 
+| use_on (Use On) | *not set* | Array of [Use On (Use On)](#use-on-use-on) items | List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed. | My Sword Turtle: `["minecraft:sand"]` | 
 | use_on (Alternate 1) | *not set* | String |  |  | 
 | use_on (Alternate 2) | *not set* | Object |  |  | 
 
-## Dispense On item type
+## Dispense On (Dispense On)
 
 #### Dispense On Properties
 
@@ -36,7 +36,7 @@ Allows an item to place entities into the world. Additionally, in version 1.19.8
 | states (Alternate 2) | *not set* | Boolean true/false |  |  | 
 | tags | *not set* | String |  |  | 
 
-## Use On item type
+## Use On (Use On)
 
 #### Use On Properties
 

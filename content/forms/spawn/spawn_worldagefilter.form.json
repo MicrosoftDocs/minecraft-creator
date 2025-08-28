@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn WorldAgeFilter",
-    "title": "Spawn WorldAgeFilter Spawn",
+    "title": "Spawn WorldAgeFilter",
     "fields": [
       {
         "id": "max",

@@ -11,8 +11,11 @@ ms.date: 02/11/2025
 
 Controls how this biome is instantiated (and then potentially modified) during world generation of the nether.
 
+> [!Note]
+> This is a pre-Caves and Cliffs component and is unused for custom biomes.
 
-## Minecraft Multinoise Generation Rules Biome Properties
+
+## Biome Multinoise Generation Rules Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

@@ -3,11 +3,10 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "BlockInfo",
-    "title": "BlockInfo Item Components",
+    "title": "Item Components BlockInfo",
     "fields": [
       {
         "id": "block",
-        "title": "Block",
         "description": "Block to be dug.",
         "dataType": 16,
         "subForm": {

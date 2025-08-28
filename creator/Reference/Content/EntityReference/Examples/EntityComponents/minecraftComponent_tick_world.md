@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Defines if the entity ticks the world and the radius around it to tick.
 
 
-## Minecraft Tick World Entity Properties
+## Entity Tick World Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

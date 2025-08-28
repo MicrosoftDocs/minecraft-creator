@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Values",
-    "title": "Values Block",
+    "title": "Block Values",
     "fields": [
       {
         "id": "values",

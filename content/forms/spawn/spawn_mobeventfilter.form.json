@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn MobEventFilter",
-    "title": "Spawn MobEventFilter Spawn",
+    "title": "Spawn MobEventFilter",
     "fields": [
       {
         "id": "event",

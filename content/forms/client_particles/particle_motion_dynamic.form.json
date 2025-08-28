@@ -2,7 +2,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_motion_dynamic",
-    "title": "Particle Motion Dynamic Client Particles",
+    "title": "Client Particles Particle Motion Dynamic",
     "fields": [
       {
         "id": "linear_acceleration",
