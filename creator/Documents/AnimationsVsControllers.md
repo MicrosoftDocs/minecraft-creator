@@ -113,12 +113,7 @@ We can see that the corresponding animation controller determines the `state` of
 
 Now that you know the difference between these two essential parts of the entity movement system, you can start using them to create or enhance your resource packs in Minecraft. For more information on using animations and animation controllers, see our guides on each of these topics:
 
-### Animation guides
-
 - [Animation Overview](./Animations/AnimationsOverview.md)
-- [Entity Modeling and Animation](EntityModelingAndAnimation.md)
-
-### Animation controller guides
-
-- [Introduction to Animation Controllers](IntroductionToAnimationControllers.md)
-- [Animation Documentation - Animation Controllers](../Reference/Content/AnimationsReference/Examples/AnimationController.md)
+- [Entity Modeling and Animation](./EntityModelingAndAnimation.md)
+- [Introduction to Animation Controllers](./IntroductionToAnimationControllers.md)
+- [Animation Controller Reference](./Animations/AnimationController.md)
