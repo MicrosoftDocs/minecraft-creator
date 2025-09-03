@@ -4,7 +4,7 @@
   "description": "Returns the entity's variant index. Relates to `variant` component.",
   "generated_doNotEdit": {
     "id": "query.variant",
-    "title": "Variant Query",
+    "title": "Variant",
     "description": "Returns the entity's variant index",
     "fields": []
   }

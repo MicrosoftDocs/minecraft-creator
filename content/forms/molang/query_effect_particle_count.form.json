@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.effect_particle_count",
-    "title": "Effect Particle Count Query",
+    "title": "Effect Particle Count",
     "description": "Returns the total number of active particles of the callee's particle effect type.",
     "fields": []
   }

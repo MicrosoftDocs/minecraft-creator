@@ -1,0 +1,10 @@
+{
+  "id": "`math.sin(value)`",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "`math.sin(value)`",
+    "title": "Sin(value)",
+    "description": "Sine (in degrees) of value",
+    "fields": []
+  }
+}

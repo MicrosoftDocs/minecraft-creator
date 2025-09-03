@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.death_ticks",
-    "title": "Death Ticks Query",
+    "title": "Death Ticks",
     "description": "Returns the elapsed ticks since the mob started dying.",
     "fields": []
   }

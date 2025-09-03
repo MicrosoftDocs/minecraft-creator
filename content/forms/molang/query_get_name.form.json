@@ -5,7 +5,7 @@
   "description": "Get the name of the mob if there is one, otherwise return ''. Deprecated; use `query.is_name_any` instead if possible so names can be changed later without breaking content.",
   "generated_doNotEdit": {
     "id": "query.get_name",
-    "title": "Get Name Query",
+    "title": "Get Name",
     "description": "DEPRECATED (Use query.is_name_any instead if possible so names can be changed later without breaking content.)Get the name of the mob if there is one, otherwise return ''.",
     "fields": []
   }

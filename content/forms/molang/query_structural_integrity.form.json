@@ -4,7 +4,7 @@
   "description": "Returns the structural integrity for the entity, otherwise returns 0. Generally applies to the minecart.",
   "generated_doNotEdit": {
     "id": "query.structural_integrity",
-    "title": "Structural Integrity Query",
+    "title": "Structural Integrity",
     "description": "Returns the structural integrity for the actor, otherwise returns 0.",
     "fields": []
   }

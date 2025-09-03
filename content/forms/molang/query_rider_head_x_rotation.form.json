@@ -4,7 +4,7 @@
   "description": "Returns the head x world-rotation of the rider entity at the provided index, else it returns 0.0. Takes one argument as a parameter.",
   "generated_doNotEdit": {
     "id": "query.rider_head_x_rotation",
-    "title": "Rider Head x Rotation Query",
+    "title": "Rider Head x Rotation",
     "description": "Takes one argument as a parameter. Returns the head x world-rotation of the rider entity at the provided index, else it returns 0.0.",
     "fields": []
   }

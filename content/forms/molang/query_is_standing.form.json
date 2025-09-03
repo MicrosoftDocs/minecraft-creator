@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is standing, else it returns 0.0. Applies generally to the non-grazing animations of the donkey, mule, horse, skeleton horse, and zombie horse.",
   "generated_doNotEdit": {
     "id": "query.is_standing",
-    "title": "Is Standing Query",
+    "title": "Is Standing",
     "description": "Returns 1.0 if the entity is standing, else it returns 0.0.",
     "fields": []
   }

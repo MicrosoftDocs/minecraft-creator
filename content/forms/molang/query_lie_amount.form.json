@@ -4,7 +4,7 @@
   "description": "Returns the lie down amount for the entity. Applies generally to the panda.",
   "generated_doNotEdit": {
     "id": "query.lie_amount",
-    "title": "Lie Amount Query",
+    "title": "Lie Amount",
     "description": "Returns the lie down amount for the entity.",
     "fields": []
   }

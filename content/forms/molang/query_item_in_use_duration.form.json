@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.item_in_use_duration",
-    "title": "Item In Use Duration Query",
+    "title": "Item In Use Duration",
     "description": "Returns the amount of time an item has been in use in seconds up to the maximum duration, else 0.0 if it doesn't make sense.",
     "fields": []
   }

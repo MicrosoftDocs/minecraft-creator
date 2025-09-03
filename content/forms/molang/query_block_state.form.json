@@ -4,7 +4,7 @@
   "description": "Returns the value of the associated block's block state.",
   "generated_doNotEdit": {
     "id": "query.block_state",
-    "title": "Block State Query",
+    "title": "Block State",
     "description": "Returns the value of the associated block's Block State.",
     "fields": []
   }

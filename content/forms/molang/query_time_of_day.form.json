@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.time_of_day",
-    "title": "Time Of Day Query",
+    "title": "Time Of Day",
     "description": "Returns the time of day (midnight=0.0, sunrise=0.25, noon=0.5, sunset=0.75) of the dimension the entity is in.",
     "fields": []
   }

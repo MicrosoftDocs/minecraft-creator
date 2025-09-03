@@ -33,6 +33,7 @@ Tests for the presence of an item with the named tag in the designated slot of t
 | head | Head | |
 | inventory | Inventory | |
 | leg | Leg | |
+| main_hand | Main Hand | |
 | torso | Torso | |
 
 ### Operator choices

@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.has_collision",
-    "title": "Has Collision Query",
+    "title": "Has Collision",
     "description": "Returns 1.0 if the entity has collisions enabled, else it returns 0.0.",
     "fields": []
   }

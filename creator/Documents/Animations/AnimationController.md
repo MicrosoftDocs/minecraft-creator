@@ -42,20 +42,6 @@ Animation controllers decide which animations to play and when.  Each controller
 }
 ```
 
-## Animation Controller Parameters
-
-|Name|Type|Optional or Required| Default |Description|
-|:----|:----|:----|:----|:----|
-|loop|Boolean|Optional|False |Should the animation loop back to t=0.0 when it finishes?|
-|blend_weight|Value or expression|Optional| 1.0 | How much this animation is blended with the others.  0.0 = off.  1.0 = fully apply all transforms.  Can be an expression |
-|animation_length|Float|Optional|Time of last key frame.| At what time does the system consider this animation finished?|
-|override_previous_animation|Boolean|Optional|false|  Should the animation pose of the bone be set to the bind pose before applying this animation, thereby overriding any previous animations to this point? |
-|bones|Array of objects.|Required|*not set*|The bone in the geometry section and various settings. Omitting a channel skips that channel for this animation of this bone. Any of these values can be expressions or values.|
-|position|Float or array of three floats representing x, y, and z values |Required|*not set*|The position of a bone in space.|
-|scale|Float or array of one float|Required|*not set*|The scale of the bones.|
-|rotation|Object with float values representing key frames|Required|*not set*|The set of key frames that might be specified during an animation to create greater granularity.|
-|states |Object|Optional|*not set*|The group of animations to process. May include variables to create more dynamic states. May include a transitions value to allow state blending between animations, such as querying the current state. Variables may be set by the game or user defined in a custom entity file.|
-
 ## States
 
 A state defines a group of animations to process (each of which can have its blend value). Each state has an optional variables section, listing any number of variables that referenced animations can use.  Each state also has one or more animations, using the name given in the entity's definition JSON.

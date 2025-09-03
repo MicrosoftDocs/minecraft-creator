@@ -84,20 +84,6 @@
                 }
               ]
             }
-          ],
-          "/vanilla/behavior_pack/entities/villager_v2.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.share_items/",
-              "content": [
-                {
-                  "filters": {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "villager"
-                  }
-                }
-              ]
-            }
           ]
         }
       },

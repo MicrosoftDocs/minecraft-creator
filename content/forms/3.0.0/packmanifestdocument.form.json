@@ -13,8 +13,7 @@
       {
         "id": "dependencies",
         "title": "Dependencies",
-        "dataType": 16,
-        "subFormId": "3.0.0/dependency"
+        "dataType": 17
       },
       {
         "id": "format_version",

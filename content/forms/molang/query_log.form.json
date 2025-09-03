@@ -4,7 +4,7 @@
   "description": "Debug log a value to the content file.",
   "generated_doNotEdit": {
     "id": "query.log",
-    "title": "Log Query",
+    "title": "Log",
     "description": "debug log a value to the content log",
     "fields": []
   }

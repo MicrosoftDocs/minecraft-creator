@@ -527,57 +527,6 @@
                 ]
               }
             }
-          ],
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:rideable/",
-              "content": [
-                {
-                  "min_rider_count": 0,
-                  "max_rider_count": 4,
-                  "position": [
-                    0,
-                    3.8,
-                    1.7
-                  ],
-                  "third_person_camera_radius": 8,
-                  "camera_relax_distance_smoothing": 6
-                },
-                {
-                  "min_rider_count": 1,
-                  "max_rider_count": 4,
-                  "position": [
-                    -1.7,
-                    3.8,
-                    0
-                  ],
-                  "third_person_camera_radius": 8,
-                  "camera_relax_distance_smoothing": 6
-                },
-                {
-                  "min_rider_count": 2,
-                  "max_rider_count": 4,
-                  "position": [
-                    0,
-                    3.8,
-                    -1.7
-                  ],
-                  "third_person_camera_radius": 8,
-                  "camera_relax_distance_smoothing": 6
-                },
-                {
-                  "min_rider_count": 3,
-                  "max_rider_count": 4,
-                  "position": [
-                    1.7,
-                    3.8,
-                    0
-                  ],
-                  "third_person_camera_radius": 8,
-                  "camera_relax_distance_smoothing": 6
-                }
-              ]
-            }
           ]
         }
       }

@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.walk_distance",
-    "title": "Walk Distance Query",
+    "title": "Walk Distance",
     "description": "Returns the total distance traveled by an entity while on the ground and not sneaking.",
     "fields": []
   }

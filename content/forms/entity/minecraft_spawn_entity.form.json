@@ -351,67 +351,6 @@
                 "single_use": true
               }
             }
-          ],
-          "/vanilla/behavior_pack/entities/wandering_trader.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:spawn_entity/",
-              "content": [
-                {
-                  "min_wait_time": 0,
-                  "max_wait_time": 0,
-                  "spawn_entity": "trader_llama",
-                  "spawn_event": "minecraft:from_wandering_trader",
-                  "single_use": true,
-                  "num_to_spawn": 2,
-                  "should_leash": true
-                }
-              ]
-            }
-          ],
-          "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/",
-              "content": {
-                "min_wait_time": 300,
-                "max_wait_time": 600,
-                "spawn_sound": "plop",
-                "spawn_item": "egg",
-                "filters": {
-                  "test": "rider_count",
-                  "subject": "self",
-                  "operator": "==",
-                  "value": 0
-                }
-              }
-            }
-          ],
-          "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/",
-              "content": {
-                "min_wait_time": 300,
-                "max_wait_time": 600,
-                "spawn_sound": "plop",
-                "spawn_item": "egg",
-                "filters": {
-                  "test": "rider_count",
-                  "subject": "self",
-                  "operator": "==",
-                  "value": 0
-                }
-              }
-            }
-          ],
-          "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/memory_jar.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:spawn_entity/",
-              "content": {
-                "min_wait_time": 300,
-                "max_wait_time": 600,
-                "spawn_sound": "place",
-                "spawn_item": "egg"
-              }
-            }
           ]
         }
       }

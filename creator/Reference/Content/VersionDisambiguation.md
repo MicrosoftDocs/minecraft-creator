@@ -31,7 +31,7 @@ To see all the files in each add-on pack, take a look at the [Comprehensive Pack
 
 Here is the introduction to [behavior packs](../../Documents/BehaviorPack.md).
 
-- [animation_controllers](AnimationsReference/Examples/AnimationController.md)
+- [animation_controllers](../../Documents/Animations/AnimationController.md)
     - `<entity_name>`
         - `<entity_name_animation_controllers>`.json
               "format_version": "1.10.30" (taken from [Entity Modeling and Animation](../../Documents/EntityModelingAndAnimation.md))
@@ -46,7 +46,7 @@ Here is the introduction to [behavior packs](../../Documents/BehaviorPack.md).
     - presets
         - `<identifier>`.json
             "format_version": "1.19.50"
-- [entities]()
+- [entities](./EntityReference/index.yml)
     - `<entity_name>`.json
          "format_version": "1.19.30",
 - [features](FeaturesReference/Examples/FeaturesIntroduction.md)
@@ -55,7 +55,7 @@ Here is the introduction to [behavior packs](../../Documents/BehaviorPack.md).
 - [feature_rules](FeaturesReference/Examples/FeaturesIntroduction.md)
     - `<feature_rule>`.json
          "format_version": "1.13.0"
-- [dialogue]
+- [dialogue](../../Documents/NPCDialogue.md)
     - `<scene_dialogue>`
         - `<scene>`.json
           "format_version":"1.17"

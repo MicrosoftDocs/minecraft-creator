@@ -1,0 +1,11 @@
+{
+  "id": "`math.exp(value)`",
+  "fields": [],
+  "description": "Returns _e_ raised to the `value` power",
+  "generated_doNotEdit": {
+    "id": "`math.exp(value)`",
+    "title": "Exp(value)",
+    "description": "Calculates e to the value'th power",
+    "fields": []
+  }
+}

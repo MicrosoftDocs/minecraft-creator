@@ -4,7 +4,7 @@
   "description": "Returns the number of ticks of invulnerability the entity has left if it makes sense, else it returns 0.0. Applies to wither.",
   "generated_doNotEdit": {
     "id": "query.invulnerable_ticks",
-    "title": "Invulnerable Ticks Query",
+    "title": "Invulnerable Ticks",
     "description": "Returns the number of ticks of invulnerability the entity has left if it makes sense, else it returns 0.0.",
     "fields": []
   }

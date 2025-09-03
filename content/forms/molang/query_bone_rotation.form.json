@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.bone_rotation",
-    "title": "Bone Rotation Query",
+    "title": "Bone Rotation",
     "description": "Returns the initial (from the .geo) rotation of a bone as a struct with members '.x', '.y', and '.z' in degrees.",
     "fields": []
   }

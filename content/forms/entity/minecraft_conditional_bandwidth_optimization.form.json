@@ -66,24 +66,6 @@
                 }
               ]
             }
-          ],
-          "/vanilla/behavior_pack/entities/chest_boat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:conditional_bandwidth_optimization/",
-              "content": [
-                {
-                  "max_optimized_distance": 0,
-                  "max_dropped_ticks": 0,
-                  "use_motion_prediction_hints": true,
-                  "conditional_values": [
-                    {
-                      "test": "is_moving",
-                      "subject": "self"
-                    }
-                  ]
-                }
-              ]
-            }
           ]
         }
       },

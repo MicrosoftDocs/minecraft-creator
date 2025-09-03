@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.anim_time",
-    "title": "Anim Time Query",
+    "title": "Anim Time",
     "description": "Returns the time in seconds since the current animation started, else 0.0 if not called within an animation.",
     "fields": []
   }

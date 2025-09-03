@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is sprinting, else it returns 0.0. Applies generally to players, piglins, and rabbits.",
   "generated_doNotEdit": {
     "id": "query.is_sprinting",
-    "title": "Is Sprinting Query",
+    "title": "Is Sprinting",
     "description": "Returns 1.0 if the entity is sprinting, else it returns 0.0.",
     "fields": []
   }

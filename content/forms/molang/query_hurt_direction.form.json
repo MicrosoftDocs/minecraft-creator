@@ -4,7 +4,7 @@
   "description": "Returns the hurt direction for the entity, otherwise returns 0.",
   "generated_doNotEdit": {
     "id": "query.hurt_direction",
-    "title": "Hurt Direction Query",
+    "title": "Hurt Direction",
     "description": "Returns the hurt direction for the actor, otherwise returns 0.",
     "fields": []
   }

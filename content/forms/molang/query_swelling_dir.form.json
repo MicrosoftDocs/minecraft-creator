@@ -4,7 +4,7 @@
   "description": "Returns the swelling direction of the entity if it makes sense, else it returns 0.0. Applies generally to the overlay color of creeper preparing to explode.",
   "generated_doNotEdit": {
     "id": "query.swelling_dir",
-    "title": "Swelling Dir Query",
+    "title": "Swelling Dir",
     "description": "Returns the swelling direction of the entity if it makes sense, else it returns 0.0.",
     "fields": []
   }

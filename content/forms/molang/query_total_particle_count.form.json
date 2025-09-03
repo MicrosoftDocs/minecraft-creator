@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.total_particle_count",
-    "title": "Total Particle Count Query",
+    "title": "Total Particle Count",
     "description": "Returns the total number of active particles in the world.",
     "fields": []
   }

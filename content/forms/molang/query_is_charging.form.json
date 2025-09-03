@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is charging, else it returns 0.0. Applies to animation controller for player, vex, and drowned.",
   "generated_doNotEdit": {
     "id": "query.is_charging",
-    "title": "Is Charging Query",
+    "title": "Is Charging",
     "description": "Returns 1.0 if the entity is charging, else it returns 0.0.",
     "fields": []
   }

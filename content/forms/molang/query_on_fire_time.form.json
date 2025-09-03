@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.on_fire_time",
-    "title": "On Fire Time Query",
+    "title": "Fire Time",
     "description": "Returns the time that the entity is on fire, else it returns 0.0.",
     "fields": []
   }

@@ -220,44 +220,7 @@ String operations only support `==` and `!=` at this time.
 
 ## Math Functions
 
-Molang has a rich set of math functions, modeled on the C math library.
-
-|Function |Description |
-|:--------|:-----------|
-| `math.abs(value)`| Absolute value of `value` |
-| `math.acos(value)`| arccos of `value` |
-| `math.asin(value)`| arcsin of `value` |
-| `math.atan(value)`| arctan of `value` |
-| `math.atan2(y, x)`| arctan of `y` / `x`. _Note the order of arguments!_ |
-| `math.ceil(value)`| Round `value` up to nearest integral number |
-| `math.clamp(value, min, max)`| Clamp `value` to between min and max inclusive |
-| `math.copy_sign(x, y)` | Compose a floating-point value with the magnitude of `x` and the sign of `y`. |
-| `math.cos(value)`| Cosine (in degrees) of `value` |
-| `math.die_roll(num, low, high)`| returns the sum of 'num' random floating point numbers, each with a value from low to high |
-| `math.die_roll_integer(num, low, high)`| returns the sum of 'num' random integer numbers, each with a value from low to high |
-| `math.exp(value)`| Returns _e_ raised to the `value` power |
-| `math.floor(value)`| Round `value` down to nearest integral number |
-| `math.hermite_blend(value)` | Interpolate points on a smooth curve using one of the Hermite Basis functions: `3t^2 - 2t^3`. While any valid float is a valid input, this function works best in the range `[0, 1]`. |
-| `math.lerp(a, b, t)`| Computes the linear interpolation between `a` and `b` with interpolation weighting factor `t` in the range `[0, 1]`, where `0 = a` and `1 = b` |
-| `math.lerprotate(a, b, t)` | Computes a linear interpolation around a circle in the shortest direction from `a` degrees to `b` degrees with interpolation weighting factor `t` (see `math.lerp`) |
-| `math.ln(value)`| Natural logarithm of `value` |
-| `math.max(a, b)`| Return highest value of `a` or `b` |
-| `math.min(a, b)`| Return lowest value of `a` or `b` |
-| `math.min_angle(value)` | Minimize angle magnitude (in degrees) into the range [-180, 180) |
-| `math.mod(value, denominator)`| Return the remainder of `value` / `denominator` |
-| `math.pi`| Returns the float representation of the constant pi. |
-| `math.pow(base, exponent)`| Elevates `base` to the `exponent` power |
-| `math.random(low, high)`| Random value between `low` and `high` inclusive |
-| `math.random_integer(low, high)`| Random integer value between `low` and `high` inclusive |
-| `math.round(value)`| Round `value` to nearest integral number |
-| `math.sign(value)` | Return `-1.0` if `value` is less than `0.0`; otherwise, return `1.0` |
-| `math.sin(value)`| Sine (in degrees) of `value` |
-| `math.sqrt(value)`| Square root of `value` |
-| `math.trunc(value)`| Round `value` towards zero |
-
-Notes:
-
-1. The difference between `math.die_roll` and `math.die_roll_integer` is that the former uses floating point and can return non-integer numbers; the latter works only with integers. If you're really trying to simulate actual dice, use `math.die_roll_integer`.
+Molang has a rich set of math functions, modeled on the C math library. See [the Molang Math Function refernece](./../../Reference/Content/MolangReference/Examples/MolangConcepts/MathFunctions.md) for more information.
 
 ## Brace scope delimiters
 

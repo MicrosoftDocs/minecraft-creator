@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.is_on_ground",
-    "title": "Is On Ground Query",
+    "title": "Is On Ground",
     "description": "Returns 1.0 if the entity is on the ground, else it returns 0.0.",
     "fields": []
   }

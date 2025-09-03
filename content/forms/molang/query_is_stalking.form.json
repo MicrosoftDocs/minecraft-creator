@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is stalking, else it returns 0.0. Applies generally to the fox.",
   "generated_doNotEdit": {
     "id": "query.is_stalking",
-    "title": "Is Stalking Query",
+    "title": "Is Stalking",
     "description": "Returns 1.0 if the entity is stalking, else it returns 0.0.",
     "fields": []
   }

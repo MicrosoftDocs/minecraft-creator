@@ -4,7 +4,7 @@
   "description": "Returns the day of the current world. When the world is first created, that is day `1`.",
   "generated_doNotEdit": {
     "id": "query.day",
-    "title": "Day Query",
+    "title": "Day",
     "description": "Returns the day of the current level.",
     "fields": []
   }
