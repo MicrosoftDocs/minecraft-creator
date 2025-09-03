@@ -9,11 +9,7 @@ ms-date: 04/29/2025
 
 # Jigsaw Structures
 
-Before taking a look at Jigsaw Structures, we should first start at structures themselves; as a reminder, a structure is a large decoration and arrangement of blocks, potentially covering many chunks of space.
-
-Jigsaw Structures are large structures comprised of multiple Structure Templates, each containing Jigsaw Blocks to determine their relative placement and constraints. Template Pools contain any number of Structure Templates, which can contain any number of Jigsaw Blocks, which may connect to one Template Pool.
-
-These structures also have rules guiding how and where they are generated within the world. Examples of Jigsaw Structures include Trail Ruins and Trial Chambers.
+Before taking a look at Jigsaw Structures, we should understand its component part: a Structure. A Structure is a large decoration and arrangement of blocks, potentially covering many chunks of space. It is saved as a Structure Template (.mcstructure in Bedrock, .nbt in Java) and can be created, loaded, and modified via Structure Blocks. See [Introduction to Structure Blocks](https://learn.microsoft.com/en-us/minecraft/creator/documents/structures/introductiontostructureblocks?view=minecraft-bedrock-stable).
 
 >[!IMPORTANT]
 > This feature is currently experimental, subject to change, and is only available when the **Data-Driven Jigsaw Structures** experiment is enabled for a world.
@@ -23,9 +19,12 @@ These structures also have rules guiding how and where they are generated within
 
 ## Construction
 
-At a high level, Jigsaw Structures are constructed by placing a single template; adding any Jigsaw Blocks within it, to a pending list. Then, if there is more depth that can be iterated, and there are pending Jigsaw Blocks to process, we will repeat. 
+A Jigsaw Structure is a dynamic, modular structure composed of multiple Structure Templates connected via Jigsaw Blocks. Each Structure Template contains Jigsaw Blocks that define how it can connect to other templates and where those connections should occur. These blocks act as connectors, enabling the structure to grow by attaching new pieces.
 
-Jigsaw Blocks act like connectors, allowing structures to grow by attaching new pieces. The `max_depth` sets a limit on how many times new pieces can be added through these connectors. Once the limit is reached, the structure stops expanding, preventing infinite growth.
+At a high level, the construction of a Jigsaw Structure begins by placing a single template. Any Jigsaw Blocks within it are added to a pending list. If there is additional depth available for iteration and pending blocks to process, the system continues expanding the structure by resolving those connections. This recursive process continues until the specified max_depth is reached, which limits how many times new pieces can be added—preventing infinite growth.
+
+The overall behavior and placement of a Jigsaw Structure in the world are governed by its Jigsaw Structure JSON, which defines generation rules and constraints. Examples of Jigsaw Structures include Trail Ruins and Trial Chambers.
+For more info, see [Introduction to Jigsaw Structures](https://learn.microsoft.com/en-us/minecraft/creator/documents/structures/introductiontojigsawstructures?view=minecraft-bedrock-stable).
 
 > Note: This process can be relatively time consuming depending on the complexity and quantity of Jigsaw Blocks in any given template.
 
