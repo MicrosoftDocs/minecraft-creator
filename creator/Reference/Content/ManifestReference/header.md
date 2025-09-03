@@ -20,11 +20,25 @@ ms.date: 02/11/2025
 | lock_template_options | *not set* | Boolean true/false |  |  | 
 | min_engine_version | *not set* | String |  |  | 
 | name | *not set* | String |  |  | 
+| pack_optimization_version (Pack Optimization Version) | *not set* | [Pack Optimization Version (Pack Optimization Version)](#pack-optimization-version-pack-optimization-version) item |  |  | 
+| pack_optimization_version (Alternate 1) | *not set* | String |  |  | 
 | pack_scope | *not set* | String |  |  | 
 | platform_locked | *not set* | Boolean true/false |  |  | 
 | uuid | *not set* | Object |  |  | 
 | version (Version) | *not set* | [Version (Version)](#version-version) item |  |  | 
 | version (Alternate 1) | *not set* | String |  |  | 
+
+## Pack Optimization Version (Pack Optimization Version)
+
+#### Pack Optimization Version Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| buildMeta | *not set* | String |  |  | 
+| major | *not set* | Integer number |  |  | 
+| minor | *not set* | Integer number |  |  | 
+| patch | *not set* | Integer number |  |  | 
+| preRelease | *not set* | String |  |  | 
 
 ## Version (Version)
 

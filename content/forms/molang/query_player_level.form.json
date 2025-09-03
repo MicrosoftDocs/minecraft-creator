@@ -4,7 +4,7 @@
   "description": "Returns the players level if the entity is a player, otherwise returns 0.",
   "generated_doNotEdit": {
     "id": "query.player_level",
-    "title": "Player Level Query",
+    "title": "Player Level",
     "description": "Returns the players level if the actor is a player, otherwise returns 0.",
     "fields": []
   }

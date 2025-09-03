@@ -4,7 +4,7 @@
   "description": "Returns the current texture of an item whose appearance can change (such as a drawn bow).",
   "generated_doNotEdit": {
     "id": "query.get_animation_frame",
-    "title": "Get Animation Frame Query",
+    "title": "Get Animation Frame",
     "description": "Returns the current texture of the item",
     "fields": []
   }

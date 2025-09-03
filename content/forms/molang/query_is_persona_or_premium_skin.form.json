@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.is_persona_or_premium_skin",
-    "title": "Is Persona Or Premium Skin Query",
+    "title": "Is Persona Or Premium Skin",
     "description": "Returns 1.0 if the player has a persona or premium skin, else it returns 0.0.",
     "fields": []
   }

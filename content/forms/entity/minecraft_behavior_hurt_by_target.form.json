@@ -100,61 +100,6 @@
                 }
               ]
             }
-          ],
-          "/vanilla/behavior_pack/entities/breeze.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/",
-              "content": [
-                {
-                  "filters": {
-                    "all_of": [
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "operator": "!=",
-                        "value": "skeleton"
-                      },
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "operator": "!=",
-                        "value": "stray"
-                      },
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "operator": "!=",
-                        "value": "zombie"
-                      },
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "operator": "!=",
-                        "value": "husk"
-                      },
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "operator": "!=",
-                        "value": "spider"
-                      },
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "operator": "!=",
-                        "value": "cavespider"
-                      },
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "operator": "!=",
-                        "value": "slime"
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
           ]
         }
       },

@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is eating, else it returns 0.0. Applies to the panda.",
   "generated_doNotEdit": {
     "id": "query.is_eating",
-    "title": "Is Eating Query",
+    "title": "Is Eating",
     "description": "Returns 1.0 if the entity is eating, else it returns 0.0.",
     "fields": []
   }

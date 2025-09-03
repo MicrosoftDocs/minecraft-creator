@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is gliding, else it returns 0.0. Applies to the elytra.",
   "generated_doNotEdit": {
     "id": "query.is_gliding",
-    "title": "Is Gliding Query",
+    "title": "Is Gliding",
     "description": "Returns 1.0 if the entity is gliding, else it returns 0.0.",
     "fields": []
   }

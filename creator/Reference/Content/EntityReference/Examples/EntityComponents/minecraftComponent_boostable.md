@@ -16,9 +16,9 @@ Defines the conditions and behavior of a rideable entity's boost.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| boost_items | *not set* | [Boost Items](#boost-items) item | List of items that can be used to boost while riding this entity. | Pig: `[{"item":"carrotOnAStick","damage":2,"replace_item":"fishing_rod"}]`, Strider: `[{"item":"warped_fungus_on_a_stick","damage":1,"replace_item":"fishing_rod"}]` | 
-| duration | 3 | Decimal number | Time in seconds for the boost. | Pig: `3`, Strider: `16` | 
-| speed_multiplier | 1 | Decimal number | Factor by which the entity's normal speed increases. E.g. 2.0 means go twice as fast. | Pig: `1.35` | 
+| boost_items | *not set* | [Boost Items](#boost-items) item | List of items that can be used to boost while riding this entity. | Pig: `[{"item":"carrotOnAStick","damage":2,"replace_item":"fishing_rod"}]` | 
+| duration | 3 | Decimal number | Time in seconds for the boost. |  | 
+| speed_multiplier | 1 | Decimal number | Factor by which the entity's normal speed increases. E.g. 2.0 means go twice as fast. |  | 
 
 ## Boost Items
 List of items that can be used to boost while riding this entity. Each item has the following properties:

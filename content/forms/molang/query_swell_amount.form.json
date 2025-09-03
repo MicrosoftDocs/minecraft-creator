@@ -4,7 +4,7 @@
   "description": "Returns how swollen an entity is. Generally applies to the creeper and wither.",
   "generated_doNotEdit": {
     "id": "query.swell_amount",
-    "title": "Swell Amount Query",
+    "title": "Swell Amount",
     "description": "Returns how swollen the entity is.",
     "fields": []
   }

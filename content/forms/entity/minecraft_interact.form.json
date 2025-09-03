@@ -634,35 +634,6 @@
                   }
                 ]
               }
-            },
-            {
-              "id": "use_item",
-              "title": "Use Item",
-              "dataType": 2
-            },
-            {
-              "id": "particle_on_start",
-              "title": "Particle On Start",
-              "dataType": 16,
-              "subForm": {
-                "id": "particle_on_start",
-                "title": "Particle_on_start",
-                "fields": [
-                  {
-                    "id": "particle_type",
-                    "title": "Particle_type",
-                    "dataType": 2,
-                    "samples": {
-                      "/vanilla/behavior_pack/entities/bee.json": [
-                        {
-                          "path": "particle_type",
-                          "content": "food"
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
             }
           ]
         },
@@ -709,39 +680,6 @@
                   "give_item": true,
                   "take_item": true,
                   "interact_text": "action.interact.allay"
-                }
-              ]
-            }
-          ],
-          "/vanilla/behavior_pack/entities/armadillo.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:interact/",
-              "content": [
-                {
-                  "on_interact": {
-                    "filters": {
-                      "all_of": [
-                        {
-                          "test": "is_family",
-                          "subject": "other",
-                          "value": "player"
-                        },
-                        {
-                          "test": "has_equipment",
-                          "subject": "other",
-                          "domain": "hand",
-                          "value": "brush"
-                        }
-                      ]
-                    }
-                  },
-                  "play_sounds": "mob.armadillo.brush",
-                  "interact_text": "action.interact.brush",
-                  "hurt_item": 16,
-                  "swing": true,
-                  "spawn_items": {
-                    "table": "loot_tables/entities/armadillo_brush.json"
-                  }
                 }
               ]
             }
@@ -1160,7 +1098,7 @@
                     "all_of": [
                       {
                         "test": "all_slots_empty",
-                        "domain": "hand",
+                        "value": "hand",
                         "operator": "not"
                       },
                       {
@@ -1170,7 +1108,7 @@
                       },
                       {
                         "test": "all_slots_empty",
-                        "domain": "hand",
+                        "value": "main_hand",
                         "subject": "other"
                       }
                     ]

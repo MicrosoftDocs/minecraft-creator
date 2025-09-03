@@ -12,6 +12,12 @@
         "isRequired": true
       },
       {
+        "id": "menu_category",
+        "title": "Menu Category",
+        "dataType": 16,
+        "subFormId": "block/menu_category"
+      },
+      {
         "id": "states",
         "title": "States",
         "dataType": 16

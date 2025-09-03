@@ -4,7 +4,7 @@
   "description": "Returns 1 if the entity has any of the specified type families, else 0.",
   "generated_doNotEdit": {
     "id": "query.has_any_family",
-    "title": "Has Any Family Query",
+    "title": "Has Any Family",
     "description": "Returns 1 if the entity has any of the specified families, else 0.",
     "fields": []
   }

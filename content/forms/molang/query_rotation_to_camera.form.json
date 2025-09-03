@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.rotation_to_camera",
-    "title": "Rotation To Camera Query",
+    "title": "Rotation To Camera",
     "description": "Returns the rotation required to aim at the camera.  Requires one argument representing the rotation axis you would like (0 for x, 1 for y).",
     "fields": []
   }

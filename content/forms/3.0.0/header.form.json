@@ -37,6 +37,47 @@
         "isRequired": true
       },
       {
+        "id": "pack_optimization_version",
+        "dataType": 16,
+        "subForm": {
+          "id": "pack_optimization_version",
+          "title": "Pack Optimization Version",
+          "fields": [
+            {
+              "id": "buildMeta",
+              "title": "BuildMeta",
+              "dataType": 2
+            },
+            {
+              "id": "major",
+              "title": "Major",
+              "dataType": 0
+            },
+            {
+              "id": "minor",
+              "title": "Minor",
+              "dataType": 0
+            },
+            {
+              "id": "patch",
+              "title": "Patch",
+              "dataType": 0
+            },
+            {
+              "id": "preRelease",
+              "title": "PreRelease",
+              "dataType": 2
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "pack_optimization_version",
+            "dataType": 2
+          }
+        ]
+      },
+      {
         "id": "pack_scope",
         "title": "Pack Scope",
         "dataType": 2

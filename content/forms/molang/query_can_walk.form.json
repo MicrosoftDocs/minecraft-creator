@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.can_walk",
-    "title": "Can Walk Query",
+    "title": "Can Walk",
     "description": "Returns 1.0 if the entity can walk, else it returns 0.0.",
     "fields": []
   }

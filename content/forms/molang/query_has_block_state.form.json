@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.has_block_state",
-    "title": "Has Block State Query",
+    "title": "Has Block State",
     "description": "Returns 1.0 if the associated block has the given block state or 0.0 if not.",
     "fields": []
   }

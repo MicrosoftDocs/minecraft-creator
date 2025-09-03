@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.has_cape",
-    "title": "Has Cape Query",
+    "title": "Has Cape",
     "description": "Returns 1.0 if the player has a cape, else it returns 0.0.",
     "fields": []
   }

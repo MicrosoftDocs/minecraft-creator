@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.is_riding",
-    "title": "Is Riding Query",
+    "title": "Is Riding",
     "description": "Returns 1.0 if the entity is riding, else it returns 0.0.",
     "fields": []
   }

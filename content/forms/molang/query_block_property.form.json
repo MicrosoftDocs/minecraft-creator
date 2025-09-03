@@ -5,7 +5,7 @@
   "isDeprecated": true,
   "generated_doNotEdit": {
     "id": "query.block_property",
-    "title": "Block Property Query",
+    "title": "Block Property",
     "description": "(No longer available in pack min_engine_version 1.20.40.) Returns the value of the associated block's Block State.",
     "fields": []
   }

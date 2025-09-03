@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the potion type or effect is lingering, else it returns 0.0.",
   "generated_doNotEdit": {
     "id": "query.is_lingering",
-    "title": "Is Lingering Query",
+    "title": "Is Lingering",
     "description": "Returns 1.0 if the entity is lingering, else it returns 0.0.",
     "fields": []
   }

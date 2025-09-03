@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.block_neighbor_has_any_tag",
-    "title": "Block Neighbor Has Any Tag Query",
+    "title": "Block Neighbor Has Any Tag",
     "description": "Takes a block-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has any of the tags provided.",
     "fields": []
   }

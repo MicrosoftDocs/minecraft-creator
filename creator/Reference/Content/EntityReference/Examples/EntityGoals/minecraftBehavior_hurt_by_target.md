@@ -17,7 +17,7 @@ Allows the mob to target another mob that hurts them.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | alert_same_type | false | Boolean true/false | If true, nearby mobs of the same type will be alerted about the damage | Silverfish: `true` | 
-| entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entity types that this mob can target when hurt by them | Bogged: `[{"filters":{"test":"is_family","subject":"other","operator":"!=","value":"breeze"}}]`, Breeze: `[{"filters":{"all_of":[{"test":"is_family","subject":"other","operator":"!=","value":"skeleton"},{"test":"is_family","subject":"other","operator":"!=","value":"stray"},{"test":"is_family","subject":"other","operator":"!=","value":"zombie"},{"test":"is_family","subject":"other","operator":"!=","value":"husk"},{"test":"is_family","subject":"other","operator":"!=","value":"spider"},{"test":"is_family","subject":"other","operator":"!=","value":"cavespider"},{"test":"is_family","subject":"other","operator":"!=","value":"slime"}]}}]` | 
+| entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entity types that this mob can target when hurt by them | Bogged: `[{"filters":{"test":"is_family","subject":"other","operator":"!=","value":"breeze"}}]` | 
 | hurt_owner | false | Boolean true/false | If true, the mob will hurt its owner and other mobs with the same owner as itself |  | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
 

@@ -59,6 +59,7 @@ Returns true when the designated equipment location for the subject entity has a
 | head | Head | |
 | inventory | Inventory | |
 | leg | Leg | |
+| main_hand | Main Hand | |
 | torso | Torso | |
 
 ## Samples

@@ -4,7 +4,7 @@
   "description": "Queries a Perlin Noise Map. Pertains to terrain generation. Takes x and z coordinates and generates a number that emulates a random noise pattern seen in nature.",
   "generated_doNotEdit": {
     "id": "query.noise",
-    "title": "Noise Query",
+    "title": "Noise",
     "description": "Queries Perlin Noise Map",
     "fields": []
   }

@@ -4,7 +4,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.has_biome_tag",
-    "title": "Has Biome Tag Query",
+    "title": "Has Biome Tag",
     "description": "Returns whether or not a Block Placement Target has a specific biome tag",
     "fields": []
   }

@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is attacking from range (i.e. `minecraft:behavior.ranged_attack`), else it returns 0.0.",
   "generated_doNotEdit": {
     "id": "query.facing_target_to_range_attack",
-    "title": "Facing Target To Range Attack Query",
+    "title": "Facing Target To Range Attack",
     "description": "Returns 1.0 if the entity is attacking from range (i.e. minecraft:behavior.ranged_attack), else it returns 0.0.",
     "fields": []
   }

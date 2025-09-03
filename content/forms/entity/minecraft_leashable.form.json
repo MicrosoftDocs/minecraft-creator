@@ -208,21 +208,6 @@
                 }
               ]
             }
-          ],
-          "/vanilla/behavior_pack/entities/camel.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:leashable/",
-              "content": [
-                {
-                  "filter": {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "happy_ghast"
-                  },
-                  "spring_type": "quad_dampened"
-                }
-              ]
-            }
           ]
         }
       },

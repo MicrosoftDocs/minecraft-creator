@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.ground_speed",
-    "title": "Ground Speed Query",
+    "title": "Ground Speed",
     "description": "Returns the ground speed of the entity in meters/second.",
     "fields": []
   }

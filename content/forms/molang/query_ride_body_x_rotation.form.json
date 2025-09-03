@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.ride_body_x_rotation",
-    "title": "Ride Body x Rotation Query",
+    "title": "Ride Body x Rotation",
     "description": "Returns the body pitch world-rotation of the ride an entity, else it returns 0.0.",
     "fields": []
   }

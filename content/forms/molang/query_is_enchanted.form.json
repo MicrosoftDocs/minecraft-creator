@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is enchanted, else it returns 0.0. Applies to armor, bows, crossbows, and shields.",
   "generated_doNotEdit": {
     "id": "query.is_enchanted",
-    "title": "Is Enchanted Query",
+    "title": "Is Enchanted",
     "description": "Returns 1.0 if the entity is enchanted, else it returns 0.0.",
     "fields": []
   }

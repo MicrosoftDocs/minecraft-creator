@@ -4,7 +4,7 @@
   "description": "Returns the shake time of the entity.",
   "generated_doNotEdit": {
     "id": "query.shake_time",
-    "title": "Shake Time Query",
+    "title": "Shake Time",
     "description": "Returns the shake time of the entity.",
     "fields": []
   }

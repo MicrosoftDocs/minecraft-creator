@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is sneezing, else it returns 0.0. Applies generally to the baby panda.",
   "generated_doNotEdit": {
     "id": "query.is_sneezing",
-    "title": "Is Sneezing Query",
+    "title": "Is Sneezing",
     "description": "Returns 1.0 if the entity is sneezing, else it returns 0.0.",
     "fields": []
   }

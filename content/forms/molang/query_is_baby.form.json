@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity has a `is_baby` component, else it returns 0.0.",
   "generated_doNotEdit": {
     "id": "query.is_baby",
-    "title": "Is Baby Query",
+    "title": "Is Baby",
     "description": "Returns 1.0 if the entity is a baby, else it returns 0.0.",
     "fields": []
   }

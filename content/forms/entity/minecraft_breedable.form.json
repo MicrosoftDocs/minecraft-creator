@@ -535,60 +535,6 @@
                 }
               }
             }
-          ],
-          "/vanilla/behavior_pack/entities/camel.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:camel_adult/minecraft:breedable/",
-              "content": [
-                {
-                  "mate_type": "minecraft:camel",
-                  "baby_type": "minecraft:camel",
-                  "breed_event": {
-                    "event": "minecraft:entity_born",
-                    "target": "baby"
-                  }
-                }
-              ]
-            }
-          ],
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_adult/minecraft:breedable/",
-              "content": {
-                "mate_type": "minecraft:cat",
-                "baby_type": "minecraft:cat",
-                "breed_event": {
-                  "event": "minecraft:entity_born",
-                  "target": "baby"
-                }
-              }
-            }
-          ],
-          "/vanilla/behavior_pack/entities/chicken.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:breedable/",
-              "content": {
-                "mate_type": "minecraft:chicken",
-                "baby_type": "minecraft:chicken",
-                "breed_event": {
-                  "event": "minecraft:entity_born",
-                  "target": "baby"
-                }
-              }
-            }
-          ],
-          "/vanilla/behavior_pack/entities/cow.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cow_adult/minecraft:breedable/",
-              "content": {
-                "mate_type": "minecraft:cow",
-                "baby_type": "minecraft:cow",
-                "breed_event": {
-                  "event": "minecraft:entity_born",
-                  "target": "baby"
-                }
-              }
-            }
           ]
         }
       },

@@ -1,0 +1,11 @@
+{
+  "id": "`math.lerprotate(start, end, 0_to_1)`",
+  "fields": [],
+  "description": "Computes a linear interpolation around a circle in the shortest direction from `a` degrees to `b` degrees with interpolation weighting factor `t` (see `math.lerp`).",
+  "generated_doNotEdit": {
+    "id": "`math.lerprotate(start, end, 0_to_1)`",
+    "title": "Lerprotate(start, End, 0 To 1)",
+    "description": "Lerp the shortest direction around a circle from start degrees to end degrees via 0_to_1",
+    "fields": []
+  }
+}

@@ -4,7 +4,7 @@
   "description": "Returns the how much the offhand shield should translate down when blocking and being hit.",
   "generated_doNotEdit": {
     "id": "query.shield_blocking_bob",
-    "title": "Shield Blocking Bob Query",
+    "title": "Shield Blocking Bob",
     "description": "Returns the how much the offhand shield should translate down when blocking and being hit.",
     "fields": []
   }

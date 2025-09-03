@@ -1,0 +1,26 @@
+{
+  "id": "Menu Category",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Menu Category",
+    "title": "Block Menu Category",
+    "fields": [
+      {
+        "id": "category",
+        "title": "CreativeItemCategory",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "group",
+        "title": "Group",
+        "dataType": 2
+      },
+      {
+        "id": "is_hidden_in_commands",
+        "title": "Is Hidden In Commands",
+        "dataType": 1
+      }
+    ]
+  }
+}

@@ -4,7 +4,7 @@
   "description": "Returns the head y world-rotation of the ride of an entity, else it returns 0.0. First parameter only for horses, zombie horses, skeleton horses, donkeys and mules that clamps rotation in degrees. Takes one optional argument as a parameter.",
   "generated_doNotEdit": {
     "id": "query.ride_head_y_rotation",
-    "title": "Ride Head y Rotation Query",
+    "title": "Ride Head y Rotation",
     "description": "Takes one optional argument as a parameter. Returns the head y world-rotation of the ride of an entity, else it returns 0.0. First parameter only for horses, zombie horses, skeleton horses, donkeys and mules that clamps rotation in degrees.",
     "fields": []
   }

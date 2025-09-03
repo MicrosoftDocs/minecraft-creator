@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is admiring, else it returns 0.0. Applies to piglin.",
   "generated_doNotEdit": {
     "id": "query.is_admiring",
-    "title": "Is Admiring Query",
+    "title": "Is Admiring",
     "description": "Returns 1.0 if the entity is admiring, else it returns 0.0.",
     "fields": []
   }

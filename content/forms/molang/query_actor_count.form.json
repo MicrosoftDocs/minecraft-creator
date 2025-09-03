@@ -4,7 +4,7 @@
   "description": "Returns the number of entities (actors) rendered in the last frame.",
   "generated_doNotEdit": {
     "id": "query.actor_count",
-    "title": "Actor Count Query",
+    "title": "Actor Count",
     "description": "Returns the number of actors rendered in the last frame.",
     "fields": []
   }

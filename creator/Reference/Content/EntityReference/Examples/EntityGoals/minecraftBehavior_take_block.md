@@ -21,7 +21,7 @@ ms.date: 02/11/2025
 | on_take | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Trigger ran if the entity does take a block. Self, Target, and Block are set. |  | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Enderman: `11` | 
 | requires_line_of_sight | *not set* | Boolean true/false | If true, whether the entity needs line of sight to the block they are trying to take. |  | 
-| xz_range | *not set* | Range of integers | XZ range from which the entity will try and take blocks from. | Enderman: `2` | 
+| xz_range | *not set* | Range of integers | XZ range from which the entity will try and take blocks from. | Enderman: `[-2,2]` | 
 | y_range | *not set* | Range of integers | Y range from which the entity will try and take blocks from. | Enderman: `[0,3]` | 
 
 ## Samples
@@ -32,7 +32,10 @@ ms.date: 02/11/2025
 ```json
 "minecraft:behavior.take_block": {
   "priority": 11,
-  "xz_range": 2,
+  "xz_range": [
+    -2,
+    2
+  ],
   "y_range": [
     0,
     3

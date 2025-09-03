@@ -4,7 +4,7 @@
   "description": "Returns the maximum trade tier of the entity if it can perform trades, else it returns 0.0",
   "generated_doNotEdit": {
     "id": "query.max_trade_tier",
-    "title": "Max Trade Tier Query",
+    "title": "Max Trade Tier",
     "description": "Returns the maximum trade tier of the entity if it makes sense, else it returns 0.0",
     "fields": []
   }

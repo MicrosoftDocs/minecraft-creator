@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.max_health",
-    "title": "Max Health Query",
+    "title": "Max Health",
     "description": "Returns the maximum health of the entity, or 0.0 if it doesn't make sense to call on this entity.",
     "fields": []
   }

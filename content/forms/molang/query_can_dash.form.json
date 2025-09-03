@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.can_dash",
-    "title": "Can Dash Query",
+    "title": "Can Dash",
     "description": "Returns 1.0 if the entity can dash, else it returns 0.0",
     "fields": []
   }

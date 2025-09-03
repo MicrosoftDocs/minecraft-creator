@@ -49,21 +49,6 @@
                 }
               ]
             }
-          ],
-          "/vanilla/behavior_pack/entities/armadillo.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:hurt_on_condition/",
-              "content": [
-                {
-                  "filters": {
-                    "test": "in_lava",
-                    "subject": "self"
-                  },
-                  "cause": "lava",
-                  "damage_per_tick": 4
-                }
-              ]
-            }
           ]
         }
       }

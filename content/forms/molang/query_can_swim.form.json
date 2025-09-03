@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.can_swim",
-    "title": "Can Swim Query",
+    "title": "Can Swim",
     "description": "Returns 1.0 if the entity can swim, else it returns 0.0.",
     "fields": []
   }

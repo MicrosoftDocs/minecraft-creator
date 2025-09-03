@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.combine_entities",
-    "title": "Combine Entities Query",
+    "title": "Combine Entities",
     "description": "Combines any valid entity references from all arguments into a single array.  Note that order is not preserved, and duplicates and invalid values are removed.",
     "fields": []
   }

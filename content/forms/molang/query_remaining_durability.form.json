@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.remaining_durability",
-    "title": "Remaining Durability Query",
+    "title": "Remaining Durability",
     "description": "Returns how much durability an item has remaining.",
     "fields": []
   }

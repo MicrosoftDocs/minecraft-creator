@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.has_rider",
-    "title": "Has Rider Query",
+    "title": "Has Rider",
     "description": "Returns 1.0 if the entity has a rider, else it returns 0.0",
     "fields": []
   }

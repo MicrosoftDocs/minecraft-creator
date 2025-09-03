@@ -4,7 +4,7 @@
   "description": "Returns the heartbeat interval of the entity in seconds. Returns 0 when the entity has no heartbeat.",
   "generated_doNotEdit": {
     "id": "query.heartbeat_interval",
-    "title": "Heartbeat Interval Query",
+    "title": "Heartbeat Interval",
     "description": "Returns the heartbeat interval of the actor in seconds. Returns 0 when the actor has no heartbeat.",
     "fields": []
   }

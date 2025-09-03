@@ -87,41 +87,6 @@
                 }
               ]
             }
-          ],
-          "/vanilla/behavior_pack/entities/horse.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:horse_wild/minecraft:tamemount/",
-              "content": [
-                {
-                  "item": "wheat",
-                  "temper_mod": 3
-                },
-                {
-                  "item": "sugar",
-                  "temper_mod": 3
-                },
-                {
-                  "item": "apple",
-                  "temper_mod": 3
-                },
-                {
-                  "item": "carrot",
-                  "temper_mod": 3
-                },
-                {
-                  "item": "golden_carrot",
-                  "temper_mod": 5
-                },
-                {
-                  "item": "golden_apple",
-                  "temper_mod": 10
-                },
-                {
-                  "item": "appleEnchanted",
-                  "temper_mod": 10
-                }
-              ]
-            }
           ]
         }
       },

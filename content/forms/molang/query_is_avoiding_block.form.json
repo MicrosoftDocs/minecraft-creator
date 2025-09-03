@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is fleeing from a block, else it returns 0.0.",
   "generated_doNotEdit": {
     "id": "query.is_avoiding_block",
-    "title": "Is Avoiding Block Query",
+    "title": "Is Avoiding Block",
     "description": "Returns 1.0 if the entity is fleeing from a block, else it returns 0.0.",
     "fields": []
   }

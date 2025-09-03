@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.is_on_fire",
-    "title": "Is On Fire Query",
+    "title": "Is On Fire",
     "description": "Returns 1.0 if the entity is on fire, else it returns 0.0.",
     "fields": []
   }

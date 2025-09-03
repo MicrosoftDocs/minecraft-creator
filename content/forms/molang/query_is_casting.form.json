@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is casting, else it returns 0.0. Pertains to evoker.",
   "generated_doNotEdit": {
     "id": "query.is_casting",
-    "title": "Is Casting Query",
+    "title": "Is Casting",
     "description": "Returns 1.0 if the entity is casting, else it returns 0.0.",
     "fields": []
   }

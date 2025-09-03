@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.is_on_screen",
-    "title": "Is On Screen Query",
+    "title": "Is On Screen",
     "description": "Returns 1.0 if this is called on an entity at a time when it is known if it is on screen, else it returns 0.0.",
     "fields": []
   }

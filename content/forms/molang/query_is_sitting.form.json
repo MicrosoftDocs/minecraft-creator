@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is sitting, else it returns 0.0. Applies generally to the fox, parrot, and wolf.",
   "generated_doNotEdit": {
     "id": "query.is_sitting",
-    "title": "Is Sitting Query",
+    "title": "Is Sitting",
     "description": "Returns 1.0 if the entity is sitting, else it returns 0.0.",
     "fields": []
   }

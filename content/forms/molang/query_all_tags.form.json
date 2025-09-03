@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.all_tags",
-    "title": "All Tags Query",
+    "title": "All Tags",
     "description": "Returns if the item or block has all of the tags specified.",
     "fields": []
   }

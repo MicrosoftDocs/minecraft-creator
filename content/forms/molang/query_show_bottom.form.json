@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.show_bottom",
-    "title": "Show Bottom Query",
+    "title": "Show Bottom",
     "description": "Returns 1.0 if we render the entity's bottom, else it returns 0.0.",
     "fields": []
   }

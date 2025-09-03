@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity (player) is in spectator mode, else it returns 0.0.",
   "generated_doNotEdit": {
     "id": "query.is_spectator",
-    "title": "Is Spectator Query",
+    "title": "Is Spectator",
     "description": "Returns 1.0 if the entity is spectator, else it returns 0.0.",
     "fields": []
   }

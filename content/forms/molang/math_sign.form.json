@@ -1,0 +1,10 @@
+{
+  "id": "`math.sign(value)`",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "`math.sign(value)`",
+    "title": "Sign(value)",
+    "description": "Returns 1 if value is positive, -1 otherwise",
+    "fields": []
+  }
+}

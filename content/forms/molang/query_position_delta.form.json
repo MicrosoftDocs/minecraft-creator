@@ -4,7 +4,7 @@
   "description": "Returns the position delta for an entity. Takes one argument that represents the desired axis (0 == x-axis, 1 == y-axis, 2 == z-axis). Applies to player animation.",
   "generated_doNotEdit": {
     "id": "query.position_delta",
-    "title": "Position Delta Query",
+    "title": "Position Delta",
     "description": "Returns the position delta for an actor.  Takes one argument that represents the desired axis (0 == x-axis, 1 == y-axis, 2 == z-axis).",
     "fields": []
   }

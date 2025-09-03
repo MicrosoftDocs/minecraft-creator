@@ -202,7 +202,10 @@
           "/vanilla/behavior_pack/entities/enderman.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.place_block/",
-              "content": 1
+              "content": [
+                -1,
+                1
+              ]
             }
           ]
         }
@@ -381,7 +384,10 @@
           "path": "/minecraft:entity/components/minecraft:behavior.place_block/",
           "content": {
             "priority": 10,
-            "xz_range": 1,
+            "xz_range": [
+              -1,
+              1
+            ],
             "y_range": [
               0,
               2

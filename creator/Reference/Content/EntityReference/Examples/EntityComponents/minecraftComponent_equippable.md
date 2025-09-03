@@ -16,7 +16,7 @@ Defines an entity's behavior for having items equipped to it.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| slots | *not set* | Array of [Slots](#slots) items | List of slots and the item that can be equipped. | Camel: `[{"slot":0,"item":"saddle","accepted_items":["saddle"],"on_equip":{"event":"minecraft:camel_saddled"},"on_unequip":{"event":"minecraft:camel_unsaddled"}}]`, Donkey: `[{"slot":0,"item":"saddle","accepted_items":["saddle"],"on_equip":{"event":"minecraft:donkey_saddled"},"on_unequip":{"event":"minecraft:donkey_unsaddled"}}]` | 
+| slots | *not set* | Array of [Slots](#slots) items | List of slots and the item that can be equipped. | Camel: `[{"slot":0,"item":"saddle","accepted_items":["saddle"],"on_equip":{"event":"minecraft:camel_saddled"},"on_unequip":{"event":"minecraft:camel_unsaddled"}}]` | 
 
 ## Slots
 List of slots and the item that can be equipped.

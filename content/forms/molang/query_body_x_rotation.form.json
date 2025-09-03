@@ -4,7 +4,7 @@
   "description": "Returns the body pitch rotation if called on an entity, else it returns 0.0.",
   "generated_doNotEdit": {
     "id": "query.body_x_rotation",
-    "title": "Body x Rotation Query",
+    "title": "Body x Rotation",
     "description": "Returns the body pitch rotation if called on an actor, else it returns 0.0.",
     "fields": []
   }

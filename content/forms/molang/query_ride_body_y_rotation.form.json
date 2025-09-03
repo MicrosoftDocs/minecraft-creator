@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.ride_body_y_rotation",
-    "title": "Ride Body y Rotation Query",
+    "title": "Ride Body y Rotation",
     "description": "Returns the body yaw world-rotation of the ride of on an entity, else it returns 0.0.",
     "fields": []
   }

@@ -219,7 +219,7 @@ ms.date: 02/11/2025
 | [query.key_frame_lerp_time](queryfunctions/query_key_frame_lerp_time.md)| Returns the ratio between the previous and next key frames. |
 | [query.last_frame_time](queryfunctions/query_last_frame_time.md)| Returns the time in *seconds* of the last frame. |
 | [query.last_hit_by_player](queryfunctions/query_last_hit_by_player.md)| Returns 1.0 if the entity was last hit by the player, else it returns 0.0. |
-| [query.last_input_mode_is_any](queryfunctions/query_last_input_mode_is_any.md)| Takes one or more arguments ('keyboard_and_mouse', 'touch', 'gamepad', or 'motion_controller'). |
+| [query.last_input_mode_is_any](queryfunctions/query_last_input_mode_is_any.md)| Takes one or more arguments ('keyboard_and_mouse', 'touch', or 'gamepad'). |
 | [query.leashed_entity_count](queryfunctions/query_leashed_entity_count.md)| Returns the number of entities for which this entity is the leash holder. |
 | [query.lie_amount](queryfunctions/query_lie_amount.md)| Returns the lie down amount for the entity. |
 | [query.life_span](queryfunctions/query_life_span.md)| Returns the limited life span of an entity, or 0.0 if it lives forever. |

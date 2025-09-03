@@ -24,7 +24,7 @@ Defines interactions with this entity.
 | health_amount | 0 | Integer number | The amount of health this entity will recover or lose when interacting with this item. Negative values will harm the entity. |  | 
 | hurt_item | 0 | Integer number | The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability. |  | 
 | interact_text | *not set* | String | Text to show when the player is able to interact in this way with this entity when playing with touch-screen controls. |  | 
-| interactions | *not set* | Array of [Interactions (Interactions)](#interactions-interactions) items |  | Allay: `[{"on_interact":{"filters":{"all_of":[{"test":"has_equipment","subject":"other","domain":"hand","operator":"not","value":"lead"},{"test":"is_sneak_held","subject":"other","value":false},{"any_of":[{"test":"all_slots_empty","subject":"other","operator":"not","value":"hand"},{"test":"all_slots_empty","subject":"self","operator":"not","value":"hand"}]}]}},"give_item":true,"take_item":true,"interact_text":"action.interact.allay"}]`, Armadillo: `[{"on_interact":{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"test":"has_equipment","subject":"other","domain":"hand","value":"brush"}]}},"play_sounds":"mob.armadillo.brush","interact_text":"action.interact.brush","hurt_item":16,"swing":true,"spawn_items":{"table":"loot_tables/entities/armadillo_brush.json"}}]` | 
+| interactions | *not set* | Array of [Interactions (Interactions)](#interactions-interactions) items |  | Allay: `[{"on_interact":{"filters":{"all_of":[{"test":"has_equipment","subject":"other","domain":"hand","operator":"not","value":"lead"},{"test":"is_sneak_held","subject":"other","value":false},{"any_of":[{"test":"all_slots_empty","subject":"other","operator":"not","value":"hand"},{"test":"all_slots_empty","subject":"self","operator":"not","value":"hand"}]}]}},"give_item":true,"take_item":true,"interact_text":"action.interact.allay"}]` | 
 
 ## Interactions (Interactions)
 
@@ -520,7 +520,7 @@ Loot table with items to drop on the ground upon successful interaction.
           "all_of": [
             {
               "test": "all_slots_empty",
-              "domain": "hand",
+              "value": "hand",
               "operator": "not"
             },
             {
@@ -530,7 +530,7 @@ Loot table with items to drop on the ground upon successful interaction.
             },
             {
               "test": "all_slots_empty",
-              "domain": "hand",
+              "value": "main_hand",
               "subject": "other"
             }
           ]

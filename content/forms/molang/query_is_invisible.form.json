@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is invisible (using render controllers), else it returns 0.0. Applies typically to the spider, Enderman, and phantom.",
   "generated_doNotEdit": {
     "id": "query.is_invisible",
-    "title": "Is Invisible Query",
+    "title": "Is Invisible",
     "description": "Returns 1.0 if the entity is invisible, else it returns 0.0.",
     "fields": []
   }

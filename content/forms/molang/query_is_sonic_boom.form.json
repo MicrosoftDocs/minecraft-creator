@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.is_sonic_boom",
-    "title": "Is Sonic Boom Query",
+    "title": "Is Sonic Boom",
     "description": "Returns 1.0 if the entity is using sonic boom, else it returns 0.0.",
     "fields": []
   }

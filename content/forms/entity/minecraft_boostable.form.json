@@ -84,18 +84,6 @@
                 }
               ]
             }
-          ],
-          "/vanilla/behavior_pack/entities/strider.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:strider_saddled/minecraft:boostable/",
-              "content": [
-                {
-                  "item": "warped_fungus_on_a_stick",
-                  "damage": 1,
-                  "replace_item": "fishing_rod"
-                }
-              ]
-            }
           ]
         }
       },
@@ -104,42 +92,14 @@
         "title": "Duration",
         "description": "Time in seconds for the boost.",
         "defaultValue": 3,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/pig.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:boostable/",
-              "content": 3
-            }
-          ],
-          "/vanilla/behavior_pack/entities/strider.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:strider_saddled/minecraft:boostable/",
-              "content": 16
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Factor by which the entity's normal speed increases. E.g. 2.0 means go twice as fast. Requires \"format_version\" of 1.20 or more, otherwise the value 1.35 will be used.",
         "defaultValue": 1.35,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/pig.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:boostable/",
-              "content": 1.35
-            }
-          ],
-          "/vanilla/behavior_pack/entities/strider.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:strider_saddled/minecraft:boostable/",
-              "content": 1.35
-            }
-          ]
-        }
+        "dataType": 3
       }
     ],
     "samples": {

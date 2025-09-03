@@ -4,7 +4,7 @@
   "description": "Returns the trade tier of the entity if it makes sense, else it returns 0.0. Generaly applies to the villager.",
   "generated_doNotEdit": {
     "id": "query.trade_tier",
-    "title": "Trade Tier Query",
+    "title": "Trade Tier",
     "description": "Returns the trade tier of the entity if it makes sense, else it returns 0.0",
     "fields": []
   }

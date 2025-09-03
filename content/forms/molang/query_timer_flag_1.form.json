@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.timer_flag_1",
-    "title": "Timer Flag 1 Query",
+    "title": "Timer Flag 1",
     "description": "Returns 1.0 if behavior.timer_flag_1 is running, else it returns 0.0.",
     "fields": []
   }

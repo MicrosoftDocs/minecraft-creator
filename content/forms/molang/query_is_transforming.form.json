@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is transforming, else it returns 0.0. Applies generally to the husk or zombie.",
   "generated_doNotEdit": {
     "id": "query.is_transforming",
-    "title": "Is Transforming Query",
+    "title": "Is Transforming",
     "description": "Returns 1.0 if the entity is transforming, else it returns 0.0.",
     "fields": []
   }

@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.has_gravity",
-    "title": "Has Gravity Query",
+    "title": "Has Gravity",
     "description": "Returns 1.0 if the entity is affected by gravity, else it returns 0.0.",
     "fields": []
   }

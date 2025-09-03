@@ -106,21 +106,6 @@
                 }
               ]
             }
-          ],
-          "/vanilla/behavior_pack/entities/warden.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
-              "content": [
-                {
-                  "event_name": "angry",
-                  "condition": "query.anger_level(this) >= 80"
-                },
-                {
-                  "event_name": "agitated",
-                  "condition": "query.anger_level(this) >= 40"
-                }
-              ]
-            }
           ]
         }
       },
@@ -129,94 +114,14 @@
         "title": "Range",
         "description": "Maximum time in seconds to randomly add to the ambient sound delay time.",
         "defaultValue": 16,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/allay.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
-              "content": 5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/look_for_food/minecraft:ambient_sound_interval/",
-              "content": 3
-            }
-          ],
-          "/vanilla/behavior_pack/entities/evocation_illager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:ambient_sound_interval/",
-              "content": 4
-            }
-          ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_ambient_night/minecraft:ambient_sound_interval/",
-              "content": 160
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pillager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:ambient_sound_interval/",
-              "content": 4
-            }
-          ],
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:ambient_sound_interval/",
-              "content": 8
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "value",
         "title": "Value",
         "description": "Minimum time in seconds before the entity plays its ambient sound again.",
         "defaultValue": 8,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/allay.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
-              "content": 5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/look_for_food/minecraft:ambient_sound_interval/",
-              "content": 2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/evocation_illager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:ambient_sound_interval/",
-              "content": 2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_ambient_night/minecraft:ambient_sound_interval/",
-              "content": 80
-            }
-          ],
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_with_passengers/minecraft:ambient_sound_interval/",
-              "content": 30
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_without_passengers/minecraft:ambient_sound_interval/",
-              "content": 5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:ambient_sound_interval/",
-              "content": 4
-            }
-          ]
-        }
+        "dataType": 3
       }
     ],
     "samples": {

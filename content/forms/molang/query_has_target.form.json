@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.has_target",
-    "title": "Has Target Query",
+    "title": "Has Target",
     "description": "Returns 1.0 if the entity has a target, else it returns 0.0",
     "fields": []
   }
