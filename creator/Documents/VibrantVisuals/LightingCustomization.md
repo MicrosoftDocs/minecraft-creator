@@ -5,7 +5,7 @@ title: Light Sources
 ms.topic: tutorial
 description: "Customizing light sources with Vibrant Visuals in Minecraft: Bedrock Edition."
 ms.service: minecraft-bedrock-edition
-ms.date: 05/23/2025
+ms.date: 08/05/2025
 ---
 
 # Light Sources
@@ -15,7 +15,7 @@ The flip side of customizing materials in Minecraft: Bedrock Edition with [textu
 Three JSON files define lighting in Vibrant Visuals:
 
 - **lighting/global.json** defines directional lights, a global desaturation value for emissive lights, ambient lighting, and sky lighting.
-- **point_lights/global.json** assigns light colors to specific block types such as torches.
+- **local_lighting/local_lighting.json** assigns light colors and light type to specific block types such as torches.
 - **pbr/global.json** sets default fallback values when texture set details isn't provided for a block, entity, particle, or item.
 
 ## Global lighting
@@ -54,15 +54,16 @@ The `"sky"` object controls some properties of the sky in terms of its contribut
 
 The sky's `"intensity"` value is a factor from 0.1 to 1.0 that controls how much sky light is factored into the indirect term for both diffuse and specular. A value of 1.0 causes the sky to contribute more to indirect light, and will result in shadows being less dark; a value of 0.1 will result in darker shadows, because less indirect light is contributed from the sky. The default value, if not provided, is 1.0.
 
-## Point lights
+## Local lights
+While the sun and moon's directional lighting can be considered "global lighting" because they impact everything in the scene, any light contribution that is constrained to some limited space can be considered "local lighting"
+The `"local_lighting"` object allows you to specify which blocks should be considered a local light, the type of local light they should be, and what color they should emit.
 
-The `"point_lights"` object allows you to specify which blocks should be considered point lights and what color they should emit.
-
+### Point lights
 The difference between a traditional light-emitting block and a point light block is that point lights emit light from a single point at the center of the block, thus the name "point" light. Like directional lights, they produce sophisticated lighting effects such as diffuse and specular highlights. This modeling works well for blocks such as torches, but isn't as good for conveying blocks with larger, discrete shapes, such as lava blocks or campfires. Blocks that emit light from a surface "area" rather than a single "point" should use the Emissive properties of Texture Sets and [lightEmission block components](../../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md) to control their light levels. You can always combine point lights and Emissive texture data in the same block to achieve your desired look.
 
-Feel free to experiment, but beware that point lights are considerably more resource-intensive than light produced by other means, so employ them with care. For instance, while you technically can turn lava blocks into point lights, it's not recommended simply because of the sheer amount of point lights that could be generated in common scenes.
+Feel free to experiment, but beware that point lights are considerably more resource-intensive than light produced by other means, so employ them with care. 
 
-By default, the game will treat the following blocks as point lights. This functionality can't be changed. However, you can override their default color if you include an entry for that block in your pack's **point_lights/global.json** file:
+By default, the game will treat the following blocks as point lights. This functionality can't be changed. However, you can override their default color, or apply point lights to your custom blocks, if you include an entry for that block in your pack's **local_lighting/local_lighting.json** file:
 
 - `minecraft:torch` as `#EFE39D`
 - `minecraft:redstone_torch` as `#FF0000`
@@ -70,10 +71,19 @@ By default, the game will treat the following blocks as point lights. This funct
 - `minecraft:lantern` as `#CE8133`
 - `minecraft:soul_lantern` as `#00FFFF`
 - `minecraft:soul_torch` as `#00FFFF`
+- `minecraft:candle` as `#EFE39D`
+    - Includes all colored candle variants, and candled cakes
+- `minecraft:sea_pickle` as `#FFFFFF`
+- `minecraft:copper_torch` as `#B8EF8D`
+- `minecraft:copper_lantern` as `#B8EF8D`
+   - Includes all waxed, weather, and oxidized variants
 
 To change the strength of a point light, refer to the [documentation for lightEmission block components](../../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md). Note that this lightEmission value is a separate concept from the "Emissive" value described in PBR or Texture Set documentation.
 
-The `"color"` value can be expressed either as an array of three numerical values in the range of 0&ndash;255, or as a six-digit hexadecimal string.
+The `light_color` value can be expressed either as an array of three numerical values in the range of 0&ndash;255, or as a six-digit hexadecimal string.
+
+The block will only be considered for point lighting if its `light_type` is set to `point_light`.
+
 
 ## PBR uniforms
 
@@ -91,12 +101,12 @@ While you can't control reflection properties directly, you can make use of [rou
 
 File location: **lighting/global.json**
 
-| Schema Version | Updates                                                        |
-|----------------|----------------------------------------------------------------|
-| `1.21.80`      | Added support for controlling the End light flash              |
-| `1.21.70`      | Added a new object for controlling the sky intensity           |
-| `1.21.60`      | Changed the data type for sun and moon colors from RGBA to RGB |
-| `1.21.40`      | N/A                                                            |
+| Schema Version | Updates                                                             |
+|----------------|---------------------------------------------------------------------|
+| `1.21.80`      | Added support for controlling the End light flash                   |
+| `1.21.70`      | Added a new object for controlling the sky intensity                |
+| `1.21.60`      | Changed the data type for sun and moon colors from RGBA to RGB      |
+| `1.21.40`      | N/A                                                                 |
 
 ```json
 {
@@ -144,22 +154,29 @@ File location: **lighting/global.json**
 }
 ```
 
-File location: **point_lights/global.json**
+
+File location: **local_lighting/local_lighting.json**
+
+| Schema Version | Updates                                                        |
+| -------------- | -------------------------------------------------------------- |
+| `1.21.110`     | Renamed `point_lights/global.json` to `local_lighting/local_lighting.json`. Added support for additional `light_type` property |
+| `1.21.40`      | N/A                                                            |
 
 ```json
 {
     string "format_version", // The 3-part schema version for parsing these point light settings.
-    object "minecraft:point_light_settings"
+    object "minecraft:local_light_settings"
     {
-        object "colors" // List of key-value pairs where the key is a namespace-qualified block name and the value is a color (supports RGB array or HEX string)
+        object "block identifier" //  namespace-qualified block name eg. minecraft:torch
         {
-            string: color, 
-            ...
-            string: color 
-        } 
+            light_color: color, // Optional. Supports RGB array or HEX string
+            light_type: "static_light" or "point_light"
+        },
+        ...
     }
 }
 ```
+
 
 File location: **pbr/global.json**
 
@@ -236,7 +253,7 @@ File location: **pbr/global.json**
 }
 ```
 
-### point_lights/global.json
+### point_lights/global.json [DEPRECATED]
 
 ```json
 {
@@ -244,6 +261,20 @@ File location: **pbr/global.json**
     "minecraft:minecraft:point_light_settings": {
         "colors": { 
            "minecraft:soul_torch": "#FFFFFF"
+        }
+    }
+}
+```
+
+### local_lighting/local_lighting.json
+
+```json
+{
+    "format_version": "1.21.110",
+    "minecraft:local_light_settings": {
+        "minecraft:torch": {
+            "light_color": "#EFE39D",
+            "light_type": "point_light"
         }
     }
 }
