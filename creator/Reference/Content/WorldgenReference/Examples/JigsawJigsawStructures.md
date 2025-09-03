@@ -80,7 +80,7 @@ The JSON below shows how to combine the properties above to make `trail_ruins`.
 } 
 ```
 
-### Description
+### > description
 
 Object containing the identifier of the Jigsaw Structure. This MUST contain an identifier.
 
@@ -90,14 +90,18 @@ Object containing the identifier of the Jigsaw Structure. This MUST contain an i
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | identifier | *not set* | Required | String | Identifier of the Jigsaw Structure. This is referenced by Structure Sets when adding Structures to the world generation. This will also be used in commands such as the `/locate` command.<br><br>Must include a namespace. The 'minecraft' namespace must not be used, unless overriding a Vanilla item.|  trail_ruins: `"minecraft:trail_ruins"`  | 
 
-### biome_filters
+### > biome_filters
 
 Biomes in which the Jigsaw Structure can generate.
 
-Biome filters are just a type of Entity Filter that only iterative over biomes. As such, most of the available [tests](../../EntityReference/Examples/FilterList.md), while functional, may not be useful in the context of biomes.
+Biome filters are just a type of Entity Filter that only iterative over biomes. As such, most of the available [filters](../../EntityReference/Examples/FilterList.md), while functional, may not be useful in the context of biomes.
+
+>[!IMPORTANT]
+> Jigsaw Structures currently work in the overworld but will likely break in other dimensions.
+> Thus, please specify the biome. Otherwise, the structure will appear in any dimension.
 
 > [!NOTE]
-> Generally speaking, the most useful `test` will be [`"has_biome_tag"`](../../EntityReference/Examples/Filters/has_biome_tag.md). With a `value` of the strings of the tags you're looking for. Here is a list of available [biome tags](../../entityreference/examples/definitions/nestedtables/biome_filter.md).
+> Generally speaking, the most useful filter will be [`"has_biome_tag"`](../../EntityReference/Examples/Filters/has_biome_tag.md). With a `value` of the strings of the tags you're looking for. Here is a list of available [biome tags](../../EntityReference/Examples/Definitions/NestedTables/biome_filter.md).
 
 #### Properties
 
@@ -117,7 +121,7 @@ Biome filters are just a type of Entity Filter that only iterative over biomes. 
 ], 
 ```
 
-### step
+### > step
 
 Specifies the world generation phase in which the structure is generated. This is used as a grouping concept to keep similar world-generation features generally bundled together. Useful for ordering the structures against each other.
 
@@ -137,7 +141,7 @@ Specifies the world generation phase in which the structure is generated. This i
 | `"top_layer_modification"`  | 11 |
 
 
-### terrain_adaptation
+### > terrain_adaptation
 
 How the terrain should adapt relative to the generated Jigsaw Structure. 
 
@@ -152,20 +156,20 @@ How the terrain should adapt relative to the generated Jigsaw Structure.
 | `"beard_box"` | Ambient block density will be added below the structure, and block density will be reduced within the entire box the structure occupies. |
 | `"encapsulate"` | Ambient block density will be added all around every piece of a structure. |
 
-### max_depth
+### > max_depth
 
 The maximum recursive steps the generation can take. Value between 0 and 20 (inclusive).
 
 For example, a Jigsaw Structure that builds a road with a `max_depth` of 5 will only have paths that are a maximum of 5 structures templates in length in any given direction from the origin.
 
-### start_height
+### > start_height
 
 The height provider which gives us the offset at which the Jigsaw Structure's `start_pool` should begin. 
 
 > [!NOTE]
 > This is an offset from the `heightmap_projection`. If `heightmap_projection` is set, it is recommended to use the [`"absolute"`](#absolute) Vertical Anchor for ease of use.
 
-##### height provider type
+#### Height Provider type
 
 The `type` of the the height provider. These values determine the format of the `start_height` JSON Object. That is, the rest of properties of the object.
 
@@ -176,7 +180,7 @@ The `type` of the the height provider. These values determine the format of the 
 | `"constant"` | Constant anchor point.<br>[`start_height`](#start_height) now expects the rest of the parameters to match the [`"constant"`](#constant-height-provider) format. |
 | `"uniform"` | Uniform distribution of possible anchor points.<br>Requires that the [`start_height`](#start_height)'s `value` be in the [`"uniform"`](#uniform-height-provider) format. |
 
-#### `"constant"` height provider
+#### - `"constant"` height provider
 
 When the `type` is `"constant"` it now also expects one vertical anchor point to use as the constant height.
 
@@ -195,7 +199,7 @@ When the `type` is `"constant"` it now also expects one vertical anchor point to
 },
 ```
 
-#### `"uniform"` height provider
+#### - `"uniform"` height provider
 
 When the `type` is `"uniform"` it now also expects two vertical anchor points to use as the minimum and maximum heights over which to perform the uniform distribution.
 
@@ -219,11 +223,11 @@ When the `type` is `"uniform"` it now also expects two vertical anchor points to
 },
 ```
 
-### Vertical Anchor
+### > Vertical Anchor
 
 A vertical anchor defines a point in the dimension to offset from. There are four types and each has it own individually named property:
 
-#### Absolute
+#### - Absolute
 
 An absolute height.
 
@@ -233,7 +237,7 @@ An absolute height.
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | absolute | *not set* | Required | Integer | An absolute height. |  trail_ruins: `-15` |
 
-#### Above Bottom
+#### - Above Bottom
 
 A relative height above the bottom of the dimension. Must be positive. 
 
@@ -243,7 +247,7 @@ A relative height above the bottom of the dimension. Must be positive.
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | above_bottom | *not set* | Required | Positive Integer | A relative height above the bottom of the dimension. |  |
 
-#### Below Top
+#### - Below Top
 
 A relative height below the top of the dimension. Must be positive. 
 
@@ -253,7 +257,7 @@ A relative height below the top of the dimension. Must be positive.
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | below_top | *not set* | Required | Positive Integer | A relative height below the top of the dimension. |  |
 
-#### From Sea
+#### - From Sea
 
 A relative height starting at the dimension's sea level.
 
@@ -264,7 +268,7 @@ A relative height starting at the dimension's sea level.
 | from_sea | *not set* | Required | Integer | A relative height starting at the dimensions sea level. |  |
 
 
-### heightmap_projection
+### > heightmap_projection
 
 The heightmap that should be used when determining the starting height.
 
@@ -290,7 +294,7 @@ For example, this:
 
 means that the Jigsaw Structure will begin generating 10 blocks above the ocean floor.
 
-### dimension_padding
+### > dimension_padding
 
 Used to specify the padding at the top and bottom of the dimension when placing Jigsaw Structures. Stops the structure from attempting to place blocks where they cannot be placed. This prevents the structure from creating holes in the bedrock or being cut off at the top.
 
@@ -301,7 +305,7 @@ Used to specify the padding at the top and bottom of the dimension when placing 
 | bottom | `0` | Optional | Positive Integer | Distance in blocks from the bottom of the dimension that may not be used by the Jigsaw Structure. |  |
 | top | `0` | Optional | Positive Integer | Distance in blocks from the top of the dimension that may not be used by the Jigsaw Structure. | |
 
-### max_distance_from_center
+### > max_distance_from_center
 
 Used to specify the max horizontal and vertical distances from the jigsaw pieces to the structure start.
 
@@ -311,13 +315,13 @@ Used to specify the max horizontal and vertical distances from the jigsaw pieces
 | horizontal | `80` | Required | Positive Integer | Max distance in blocks from the jigsaw pieces to the structure start on the horizontal plane. |  |
 | vertical | `<integer maximum>` | Optional | Positive Integer | Max distance in blocks from the jigsaw pieces to the structure start on the vertical axis. | |
 
-### pool_aliases 
+### > pool_aliases 
 
 Used to rewire jigsaw pool connections by redirecting pool references in an individual structure. Done by specifying aliases for Template Pools.  This can allow for themes across a full structure. 
 
 For instance: an alias `chambers/melee`, can be replaced by `chambers/melee/normal`, `chambers/melee/poison` or `chambers/melee/wither` which are specialized Template Pools.
 
-##### pool alias type
+#### Pool Alias type
 
 The `type` of the pool alias. These values determine the format of each individual pool alias JSON Object. That is, the rest of the properties on the object.
 
@@ -329,7 +333,7 @@ The `type` of the pool alias. These values determine the format of each individu
 | `"random"` | Pool alias for a Random list of targets.<br>[`pool_aliases`](#pool_aliases) now expects the rest of the parameters to match the [`"random"`](#random-pool-alias) format. |
 | `"random_group"` | Pool alias for a RandomGroup of aliases.<br>[`pool_aliases`](#pool_aliases) now expects the rest of the parameters to match the [`"random_group"`](#random_group-pool-alias) format. |
 
-#### direct pool alias
+#### - '"direct"' pool alias
 
 Pool alias for a Direct target.
 
@@ -351,7 +355,7 @@ Pool alias for a Direct target.
 ],
 ```
 
-#### random pool alias
+#### - '"random"' pool alias
 
 Pool alias for a Random list of targets.
 
@@ -382,7 +386,7 @@ Pool alias for a Random list of targets.
 ],
 ```
 
-#### random_group pool alias
+#### - '"random_group"' pool alias
 
 Pool alias for a RandomGroup of aliases.
 
@@ -437,7 +441,7 @@ Pool alias for a RandomGroup of aliases.
 ],
 ```
 
-### Weighted Random List
+### > Weighted Random List
 
 A weighted random list is a collection of items where each item is assigned a specific weight, representing its probability of being selected. The weights determine how likely each item is to be chosen when a random selection is made. Items with higher weights have a greater chance of being selected compared to items with lower weights.
 
@@ -454,7 +458,7 @@ The probability of selecting each fruit is:
 - Banana: `2/6 ≈ 33.33%`
 - Cherry: `3/6 ≈ 50%`
 
-#### Weighted Random Item
+#### - Weighted Random Item
 
 A used by [Weighted Random Lists](#weighted-random-list). the `weight` property must be positive. The `data` property can be anything.
 
@@ -465,7 +469,7 @@ A used by [Weighted Random Lists](#weighted-random-list). the `weight` property 
 | data | *not set* | Required | JSON Object | The data used when randomly selected. |  |
 | weight | *not set* | Required | Positive Integer | The weight of the item relative to the total weight of all items in the list. |  |
 
-### liquid_settings
+### > liquid_settings
 
 How to handle waterloggable blocks overlapping with existing liquid.
 
