@@ -34,6 +34,7 @@ Tests for the presence of a named item in the designated slot of the subject ent
 | head | Head | |
 | inventory | Inventory | |
 | leg | Leg | |
+| main_hand | Main Hand | |
 | torso | Torso | |
 
 ### Operator choices

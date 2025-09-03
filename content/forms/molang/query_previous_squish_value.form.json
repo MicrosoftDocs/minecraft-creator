@@ -4,7 +4,7 @@
   "description": "Returns the previous squish value for the current entity, or 0.0 if this doesn't make sense. Applies generally to slimes and magma cubes.",
   "generated_doNotEdit": {
     "id": "query.previous_squish_value",
-    "title": "Previous Squish Value Query",
+    "title": "Previous Squish Value",
     "description": "Returns the previous squish value for the current entity, or 0.0 if this doesn't make sense.",
     "fields": []
   }

@@ -4,7 +4,7 @@
   "description": "Returns the body yaw rotation if called on an entity, else it returns 0.0.",
   "generated_doNotEdit": {
     "id": "query.body_y_rotation",
-    "title": "Body y Rotation Query",
+    "title": "Body y Rotation",
     "description": "Returns the body yaw rotation if called on an actor, else it returns 0.0.",
     "fields": []
   }

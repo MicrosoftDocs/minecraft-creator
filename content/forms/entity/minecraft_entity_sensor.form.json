@@ -185,64 +185,6 @@
                 }
               ]
             }
-          ],
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:entity_sensor/",
-              "content": [
-                {
-                  "event": "minecraft:become_mobile",
-                  "cooldown": 0,
-                  "y_offset": 4.5,
-                  "range": [
-                    3.5,
-                    2
-                  ],
-                  "minimum_count": 0,
-                  "maximum_count": 0,
-                  "event_filters": {
-                    "all_of": [
-                      {
-                        "test": "is_vehicle_family",
-                        "subject": "other",
-                        "operator": "not",
-                        "value": "happy_ghast"
-                      },
-                      {
-                        "test": "actor_health",
-                        "operator": ">",
-                        "value": 0
-                      }
-                    ]
-                  }
-                },
-                {
-                  "event": "minecraft:become_immobile",
-                  "cooldown": 0,
-                  "y_offset": 4.5,
-                  "range": [
-                    3,
-                    1.5
-                  ],
-                  "minimum_count": 1,
-                  "event_filters": {
-                    "all_of": [
-                      {
-                        "test": "is_vehicle_family",
-                        "subject": "other",
-                        "operator": "not",
-                        "value": "happy_ghast"
-                      },
-                      {
-                        "test": "actor_health",
-                        "operator": ">",
-                        "value": 0
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
           ]
         }
       }

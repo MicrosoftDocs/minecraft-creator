@@ -149,55 +149,6 @@
                   "event": "minecraft:threat_detected"
                 }
               }
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:rolled_up/minecraft:damage_sensor/",
-              "content": [
-                {
-                  "on_damage": {
-                    "filters": {
-                      "any_of": [
-                        {
-                          "test": "is_family",
-                          "subject": "other",
-                          "value": "mob"
-                        },
-                        {
-                          "test": "is_family",
-                          "subject": "other",
-                          "value": "player"
-                        }
-                      ]
-                    },
-                    "event": "minecraft:threat_detected"
-                  },
-                  "damage_multiplier": 0.5,
-                  "damage_modifier": -1
-                },
-                {
-                  "damage_multiplier": 0.5,
-                  "damage_modifier": -1
-                }
-              ]
-            }
-          ],
-          "/vanilla/behavior_pack/entities/axolotl.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:damage_sensor/",
-              "content": {
-                "cause": "lightning",
-                "deals_damage": "yes",
-                "damage_multiplier": 2000
-              }
-            }
-          ],
-          "/vanilla/behavior_pack/entities/bat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:damage_sensor/",
-              "content": {
-                "cause": "fall",
-                "deals_damage": false
-              }
             }
           ]
         }

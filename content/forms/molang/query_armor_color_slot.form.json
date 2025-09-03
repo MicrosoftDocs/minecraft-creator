@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.armor_color_slot",
-    "title": "Armor Color Slot Query",
+    "title": "Armor Color Slot",
     "description": "Takes the armor slot index as a parameter, and returns the color of the armor in the requested slot. The valid values for the armor slot index are 0 (head), 1 (chest), 2 (legs), 3 (feet) and 4 (body).",
     "fields": []
   }

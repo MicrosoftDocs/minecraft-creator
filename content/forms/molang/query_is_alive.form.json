@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.is_alive",
-    "title": "Is Alive Query",
+    "title": "Is Alive",
     "description": "Returns 1.0 if the entity is alive, and 0.0 if it's dead.",
     "fields": []
   }

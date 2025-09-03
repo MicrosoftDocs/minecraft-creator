@@ -1,0 +1,10 @@
+{
+  "id": "`math.ease_in_elastic(start, end, 0_to_1)`",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "`math.ease_in_elastic(start, end, 0_to_1)`",
+    "title": "Ease In Elastic(start, End, 0 To 1)",
+    "description": "Output goes from start to end via 0_to_1, starting with elastic oscillations before accelerating into the end",
+    "fields": []
+  }
+}

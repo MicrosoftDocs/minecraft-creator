@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is ignited (has the `is_ignited` component), else it returns 0.0.",
   "generated_doNotEdit": {
     "id": "query.is_ignited",
-    "title": "Is Ignited Query",
+    "title": "Is Ignited",
     "description": "Returns 1.0 if the entity is ignited, else it returns 0.0.",
     "fields": []
   }

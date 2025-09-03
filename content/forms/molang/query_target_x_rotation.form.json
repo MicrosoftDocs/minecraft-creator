@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.target_x_rotation",
-    "title": "Target x Rotation Query",
+    "title": "Target x Rotation",
     "description": "Returns the x rotation required to aim at the entity's current target if it has one, else it returns 0.0.",
     "fields": []
   }

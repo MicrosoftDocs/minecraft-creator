@@ -1,0 +1,10 @@
+{
+  "id": "`math.ease_out_bounce(start, end, 0_to_1)`",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "`math.ease_out_bounce(start, end, 0_to_1)`",
+    "title": "Ease Out Bounce(start, End, 0 To 1)",
+    "description": "Output goes from start to end via 0_to_1, approaching the end with bounce oscillations that diminish over time",
+    "fields": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "3.0.0.NativeModuleDependency",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "3.0.0.NativeModuleDependency",
+    "title": "3.0.0.NativeModuleDependency",
+    "fields": [
+      {
+        "id": "module_name",
+        "title": "Module Name",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "version",
+        "title": "Version",
+        "dataType": 16,
+        "isRequired": true
+      }
+    ]
+  }
+}

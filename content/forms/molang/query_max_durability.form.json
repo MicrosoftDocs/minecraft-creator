@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.max_durability",
-    "title": "Max Durability Query",
+    "title": "Max Durability",
     "description": "Returns the max durability an item can take.",
     "fields": []
   }

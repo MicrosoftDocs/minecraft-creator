@@ -43,16 +43,6 @@
                   "display_on_screen_animation": true
                 }
               ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/add_wither_effect/minecraft:spell_effects/",
-              "content": [
-                {
-                  "effect": "wither",
-                  "duration": 40,
-                  "display_on_screen_animation": true
-                }
-              ]
             }
           ]
         }

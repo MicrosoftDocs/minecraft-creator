@@ -72,26 +72,6 @@
                 }
               ]
             }
-          ],
-          "/vanilla/behavior_pack/entities/donkey.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:equippable/",
-              "content": [
-                {
-                  "slot": 0,
-                  "item": "saddle",
-                  "accepted_items": [
-                    "saddle"
-                  ],
-                  "on_equip": {
-                    "event": "minecraft:donkey_saddled"
-                  },
-                  "on_unequip": {
-                    "event": "minecraft:donkey_unsaddled"
-                  }
-                }
-              ]
-            }
           ]
         }
       }

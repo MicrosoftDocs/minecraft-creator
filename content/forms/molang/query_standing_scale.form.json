@@ -4,7 +4,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.standing_scale",
-    "title": "Standing Scale Query",
+    "title": "Standing Scale",
     "description": "Returns the scale of how standing up the entity is.",
     "fields": []
   }

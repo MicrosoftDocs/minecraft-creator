@@ -4,7 +4,7 @@
   "description": "Returns the entity's yaw speed.",
   "generated_doNotEdit": {
     "id": "query.yaw_speed",
-    "title": "Yaw Speed Query",
+    "title": "Yaw Speed",
     "description": "Returns the entity's yaw speed",
     "fields": []
   }

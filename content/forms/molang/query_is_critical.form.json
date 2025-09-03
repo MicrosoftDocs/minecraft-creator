@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is at a critical level of damage, else it returns 0.0.",
   "generated_doNotEdit": {
     "id": "query.is_critical",
-    "title": "Is Critical Query",
+    "title": "Is Critical",
     "description": "Returns 1.0 if the entity is critical, else it returns 0.0.",
     "fields": []
   }

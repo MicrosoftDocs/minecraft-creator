@@ -1,0 +1,10 @@
+{
+  "id": "`math.ease_in_out_back(start, end, 0_to_1)`",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "`math.ease_in_out_back(start, end, 0_to_1)`",
+    "title": "Ease In Out Back(start, End, 0 To 1)",
+    "description": "Output goes from start to end via 0_to_1, overshooting at both start and end, with smoother change in the middle",
+    "fields": []
+  }
+}

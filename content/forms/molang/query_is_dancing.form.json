@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is dancing, else it returns 0.0. Applies to parrot and allay.",
   "generated_doNotEdit": {
     "id": "query.is_dancing",
-    "title": "Is Dancing Query",
+    "title": "Is Dancing",
     "description": "Returns 1.0 if the entity is dancing, else it returns 0.0.",
     "fields": []
   }

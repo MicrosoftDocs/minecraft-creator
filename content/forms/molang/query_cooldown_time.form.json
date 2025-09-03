@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.cooldown_time",
-    "title": "Cooldown Time Query",
+    "title": "Cooldown Time",
     "description": "Returns the total cooldown time in seconds for the item held or worn by the specified equipment slot name (and if required second numerical slot id), otherwise returns 0. Uses the same name and id that the replaceitem command takes when querying entities.",
     "fields": []
   }

@@ -12,7 +12,7 @@
   "description": "Takes a slot name followed by any tag you want to check for in the form of 'tag_name' and returns 1 if all of the tags are on that equipped item, 0 otherwise.",
   "generated_doNotEdit": {
     "id": "query.equipped_item_all_tags",
-    "title": "Equipped Item All Tags Query",
+    "title": "Equipped Item All Tags",
     "description": "Takes a slot name followed by any tag you want to check for in the form of 'tag_name' and returns 1 if all of the tags are on that equipped item, 0 otherwise.",
     "fields": []
   }

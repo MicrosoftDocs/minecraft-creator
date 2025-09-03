@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.can_power_jump",
-    "title": "Can Power Jump Query",
+    "title": "Can Power Jump",
     "description": "Returns 1.0 if the entity can power jump, else it returns 0.0.",
     "fields": []
   }

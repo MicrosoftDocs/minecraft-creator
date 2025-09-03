@@ -11,7 +11,7 @@ ms.date: 08/08/2025
 
 In Minecraft, animation controllers do pretty much what they say: manage animations for blocks and entities. Animation controllers allow you to define when different animations play based on an entity's condition and current state. Animation controllers are very important because they help define the gameplay experience. Not only can you use them for basic things, such as making sure an entity plays the walking animation while they move (instead of hovering over the ground in a T-pose!), but you can also use animation controllers to create customized experiences based on your world and the things that happen in it. For example, you could create a custom werewolf entity that transforms during the full moon, or a block that glows in the dark!
 
-In this guide, we will cover what animation controllers are and what they do and how to use them effectively. For more detailed information, such as code samples and in-depth definitions, refer to the [Animation Controllers Reference](../Reference/Content/AnimationsReference/Examples/AnimationController.md).
+In this guide, we will cover what animation controllers are and what they do and how to use them effectively. For more detailed information, such as code samples and in-depth definitions, refer to the [Animation Controllers Reference](./Animations/AnimationController.md).
 
 > [!NOTE]
 > This guide will not cover how to create custom animations. You can use programs like **Blockbench** to create custom animations to add flavor to your custom blocks and entities, but for this guide, we will only cover how to use animation controllers and how to transition between animations. For more information on creating animations, see the [Animation Overview](./Animations/AnimationsOverview.md).

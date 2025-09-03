@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is currently stunned, else it returns 0.0. Applies generally to the ravager.",
   "generated_doNotEdit": {
     "id": "query.is_stunned",
-    "title": "Is Stunned Query",
+    "title": "Is Stunned",
     "description": "Returns 1.0 if the entity is currently stunned, else it returns 0.0.",
     "fields": []
   }

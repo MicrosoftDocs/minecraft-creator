@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.is_crawling",
-    "title": "Is Crawling Query",
+    "title": "Is Crawling",
     "description": "Returns 1.0 if the entity is crawling, else it returns 0.0",
     "fields": []
   }

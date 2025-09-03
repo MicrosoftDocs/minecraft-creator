@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity has been bribed, else it returns 0.0. Pertains to bribing a dolphin with a fish.",
   "generated_doNotEdit": {
     "id": "query.is_bribed",
-    "title": "Is Bribed Query",
+    "title": "Is Bribed",
     "description": "Returns 1.0 if the entity has been bribed, else it returns 0.0.",
     "fields": []
   }

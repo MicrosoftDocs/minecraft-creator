@@ -1,0 +1,10 @@
+{
+  "id": "`math.trunc(value)`",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "`math.trunc(value)`",
+    "title": "Trunc(value)",
+    "description": "Round value towards zero",
+    "fields": []
+  }
+}

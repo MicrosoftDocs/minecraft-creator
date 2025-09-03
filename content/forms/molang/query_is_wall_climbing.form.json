@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.is_wall_climbing",
-    "title": "Is Wall Climbing Query",
+    "title": "Is Wall Climbing",
     "description": "Returns 1.0 if the entity is climbing a wall, else it returns 0.0.",
     "fields": []
   }

@@ -5,7 +5,7 @@
   "description": "Returns 1.0 if the associated block has the given block state or 0.0 if not. (No longer available in packs with `min_engine_version` >= 1.20.40.)",
   "generated_doNotEdit": {
     "id": "query.has_block_property",
-    "title": "Has Block Property Query",
+    "title": "Has Block Property",
     "description": "(No longer available in pack min_engine_version 1.20.40.) Returns 1.0 if the associated block has the given block state or 0.0 if not.",
     "fields": []
   }

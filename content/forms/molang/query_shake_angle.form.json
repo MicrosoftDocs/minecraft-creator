@@ -4,7 +4,7 @@
   "description": "Returns the shaking angle of the entity if it makes sense, else it returns 0.0. Generally applies to the wolf.",
   "generated_doNotEdit": {
     "id": "query.shake_angle",
-    "title": "Shake Angle Query",
+    "title": "Shake Angle",
     "description": "Returns the shaking angle of the entity if it makes sense, else it returns 0.0.",
     "fields": []
   }

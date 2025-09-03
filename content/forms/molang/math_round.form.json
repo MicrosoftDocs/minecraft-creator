@@ -1,0 +1,10 @@
+{
+  "id": "`math.round(value)`",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "`math.round(value)`",
+    "title": "Round(value)",
+    "description": "Round value to nearest integral number",
+    "fields": []
+  }
+}

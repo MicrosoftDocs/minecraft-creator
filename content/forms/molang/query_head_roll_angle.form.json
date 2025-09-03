@@ -4,7 +4,7 @@
   "description": "Returns the roll angle of the head of the entity if it makes sense, else it returns 0.0. Applies to how a wolf looks at a player holding food.",
   "generated_doNotEdit": {
     "id": "query.head_roll_angle",
-    "title": "Head Roll Angle Query",
+    "title": "Head Roll Angle",
     "description": "Returns the roll angle of the head of the entity if it makes sense, else it returns 0.0.",
     "fields": []
   }

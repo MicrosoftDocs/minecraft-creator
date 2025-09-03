@@ -403,6 +403,11 @@
       "source_path": "Reference/Content/MolangReference/index.yml",
       "redirect_url": "/minecraft/creator/documents/molang/introduction",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/AnimationsReference/Examples/AnimationController.md",
+      "redirect_url": "/minecraft/creator/documents/animations/animationcontroller",
+      "redirect_document_id": false
     }
   ]
 }

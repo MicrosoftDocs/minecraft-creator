@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.server_memory_tier",
-    "title": "Server Memory Tier Query",
+    "title": "Server Memory Tier",
     "description": "Returns a number representing the server RAM memory tier, 0 = 'SuperLow', 1 = 'Low', 2 = 'Mid', 3 = 'High', or 4 = 'SuperHigh'. Available on the server side (Behavior Packs) only.",
     "fields": []
   }

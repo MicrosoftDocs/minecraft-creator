@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.client_max_render_distance",
-    "title": "Client Max Render Distance Query",
+    "title": "Client Max Render Distance",
     "description": "Returns the max render distance in chunks of the current client. Available on the Client (Resource Packs) only.",
     "fields": []
   }

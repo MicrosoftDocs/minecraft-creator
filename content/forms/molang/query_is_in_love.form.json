@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is in love (has a love-hearts animation), else it returns 0.0.",
   "generated_doNotEdit": {
     "id": "query.is_in_love",
-    "title": "Is In Love Query",
+    "title": "Is In Love",
     "description": "Returns 1.0 if the entity is in love, else it returns 0.0.",
     "fields": []
   }

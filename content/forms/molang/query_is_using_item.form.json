@@ -4,7 +4,7 @@
   "description": "Returns 1.0 if the entity is using an item, else it returns 0.0. Applies generally to the allay.",
   "generated_doNotEdit": {
     "id": "query.is_using_item",
-    "title": "Is Using Item Query",
+    "title": "Is Using Item",
     "description": "Returns 1.0 if the entity is using an item, else it returns 0.0.",
     "fields": []
   }

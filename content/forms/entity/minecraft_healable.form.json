@@ -85,21 +85,6 @@
                 }
               ]
             }
-          ],
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:healable/",
-              "content": [
-                {
-                  "item": "fish",
-                  "heal_amount": 2
-                },
-                {
-                  "item": "salmon",
-                  "heal_amount": 2
-                }
-              ]
-            }
           ]
         }
       }

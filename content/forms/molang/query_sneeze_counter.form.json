@@ -4,7 +4,7 @@
   "description": "Returns the sneeze counter of the entity. Applies generally to the panda.",
   "generated_doNotEdit": {
     "id": "query.sneeze_counter",
-    "title": "Sneeze Counter Query",
+    "title": "Sneeze Counter",
     "description": "Returns the sneeze counter of the entity.",
     "fields": []
   }

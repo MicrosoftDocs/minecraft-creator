@@ -1,0 +1,124 @@
+- name: Molang Math Function List
+  href: ../MathFunctions.md
+- name: math.abs(value)
+  href: math_abs.md
+- name: math.acos(value)
+  href: math_acos.md
+- name: math.asin(value)
+  href: math_asin.md
+- name: math.atan(value)
+  href: math_atan.md
+- name: math.atan2(y, x)
+  href: math_atan2.md
+- name: math.ceil(value)
+  href: math_ceil.md
+- name: math.clamp(value, min, max)
+  href: math_clamp.md
+- name: math.copy_sign(A, B)
+  href: math_copy_sign.md
+- name: math.cos(value)
+  href: math_cos.md
+- name: math.die_roll(num, low, high)
+  href: math_die_roll.md
+- name: math.die_roll_integer(num, low, high)
+  href: math_die_roll_integer.md
+- name: math.ease_in_back(start, end, 0_to_1)
+  href: math_ease_in_back.md
+- name: math.ease_in_bounce(start, end, 0_to_1)
+  href: math_ease_in_bounce.md
+- name: math.ease_in_circ(start, end, 0_to_1)
+  href: math_ease_in_circ.md
+- name: math.ease_in_cubic(start, end, 0_to_1)
+  href: math_ease_in_cubic.md
+- name: math.ease_in_elastic(start, end, 0_to_1)
+  href: math_ease_in_elastic.md
+- name: math.ease_in_expo(start, end, 0_to_1)
+  href: math_ease_in_expo.md
+- name: math.ease_in_out_back(start, end, 0_to_1)
+  href: math_ease_in_out_back.md
+- name: math.ease_in_out_bounce(start, end, 0_to_1)
+  href: math_ease_in_out_bounce.md
+- name: math.ease_in_out_circ(start, end, 0_to_1)
+  href: math_ease_in_out_circ.md
+- name: math.ease_in_out_cubic(start, end, 0_to_1)
+  href: math_ease_in_out_cubic.md
+- name: math.ease_in_out_elastic(start, end, 0_to_1)
+  href: math_ease_in_out_elastic.md
+- name: math.ease_in_out_expo(start, end, 0_to_1)
+  href: math_ease_in_out_expo.md
+- name: math.ease_in_out_quad(start, end, 0_to_1)
+  href: math_ease_in_out_quad.md
+- name: math.ease_in_out_quart(start, end, 0_to_1)
+  href: math_ease_in_out_quart.md
+- name: math.ease_in_out_quint(start, end, 0_to_1)
+  href: math_ease_in_out_quint.md
+- name: math.ease_in_out_sine(start, end, 0_to_1)
+  href: math_ease_in_out_sine.md
+- name: math.ease_in_quad(start, end, 0_to_1)
+  href: math_ease_in_quad.md
+- name: math.ease_in_quart(start, end, 0_to_1)
+  href: math_ease_in_quart.md
+- name: math.ease_in_quint(start, end, 0_to_1)
+  href: math_ease_in_quint.md
+- name: math.ease_in_sine(start, end, 0_to_1)
+  href: math_ease_in_sine.md
+- name: math.ease_out_back(start, end, 0_to_1)
+  href: math_ease_out_back.md
+- name: math.ease_out_bounce(start, end, 0_to_1)
+  href: math_ease_out_bounce.md
+- name: math.ease_out_circ(start, end, 0_to_1)
+  href: math_ease_out_circ.md
+- name: math.ease_out_cubic(start, end, 0_to_1)
+  href: math_ease_out_cubic.md
+- name: math.ease_out_elastic(start, end, 0_to_1)
+  href: math_ease_out_elastic.md
+- name: math.ease_out_expo(start, end, 0_to_1)
+  href: math_ease_out_expo.md
+- name: math.ease_out_quad(start, end, 0_to_1)
+  href: math_ease_out_quad.md
+- name: math.ease_out_quart(start, end, 0_to_1)
+  href: math_ease_out_quart.md
+- name: math.ease_out_quint(start, end, 0_to_1)
+  href: math_ease_out_quint.md
+- name: math.ease_out_sine(start, end, 0_to_1)
+  href: math_ease_out_sine.md
+- name: math.exp(value)
+  href: math_exp.md
+- name: math.floor(value)
+  href: math_floor.md
+- name: math.hermite_blend(value)
+  href: math_hermite_blend.md
+- name: math.inverse_lerp(start, end, value)
+  href: math_inverse_lerp.md
+- name: math.lerp(start, end, 0_to_1)
+  href: math_lerp.md
+- name: math.lerprotate(start, end, 0_to_1)
+  href: math_lerprotate.md
+- name: math.ln(value)
+  href: math_ln.md
+- name: math.max(A, B)
+  href: math_max.md
+- name: math.min(A, B)
+  href: math_min.md
+- name: math.min_angle(value)
+  href: math_min_angle.md
+- name: math.mod(value, denominator)
+  href: math_mod.md
+- name: math.pi
+  href: math_pi.md
+- name: math.pow(base, exponent)
+  href: math_pow.md
+- name: math.random(low, high)
+  href: math_random.md
+- name: math.random_integer(low, high)
+  href: math_random_integer.md
+- name: math.round(value)
+  href: math_round.md
+- name: math.sign(value)
+  href: math_sign.md
+- name: math.sin(value)
+  href: math_sin.md
+- name: math.sqrt(value)
+  href: math_sqrt.md
+- name: math.trunc(value)
+  href: math_trunc.md

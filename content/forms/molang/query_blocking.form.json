@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.blocking",
-    "title": "Blocking Query",
+    "title": "Blocking",
     "description": "Returns 1.0 if the entity is blocking, else it returns 0.0.",
     "fields": []
   }

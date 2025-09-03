@@ -15,7 +15,7 @@ ms.date: 02/11/2025
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | capabilities | *not set* | Array of strings |  |  | 
-| dependencies | *not set* | [0.0.Dependency) Dependencies (3](#3.0.0.dependency) item |  |  | 
+| dependencies | *not set* | Array of strings |  |  | 
 | format_version | *not set* | Integer number |  |  | 
 | has_education_metadata | *not set* | Boolean true/false |  |  | 
 | header | *not set* | [0.0.Header) Header (3](#3.0.0.header) item |  |  | 
@@ -23,29 +23,6 @@ ms.date: 02/11/2025
 | modules | *not set* | [0.0.Module) Modules (3](#3.0.0.module) item |  |  | 
 | settings | *not set* | Array of strings |  |  | 
 | subpacks | *not set* | [0.0.Subpack) Subpacks (3](#3.0.0.subpack) item |  |  | 
-
-## 3.0.0.Dependency
-
-#### 3.0.0.Dependency Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| module_name | *not set* | String |  |  | 
-| uuid | *not set* | Object |  |  | 
-| version (Version) | *not set* | [Version (Version)](#version-version) item |  |  | 
-| version (Alternate 1) | *not set* | String |  |  | 
-
-## Version (Version)
-
-#### Version Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| buildMeta | *not set* | String |  |  | 
-| major | *not set* | Integer number |  |  | 
-| minor | *not set* | Integer number |  |  | 
-| patch | *not set* | Integer number |  |  | 
-| preRelease | *not set* | String |  |  | 
 
 ## 3.0.0.Header
 
@@ -59,11 +36,37 @@ ms.date: 02/11/2025
 | lock_template_options | *not set* | Boolean true/false |  |  | 
 | min_engine_version | *not set* | String |  |  | 
 | name | *not set* | String |  |  | 
+| pack_optimization_version (Pack Optimization Version) | *not set* | [Pack Optimization Version (Pack Optimization Version)](#pack-optimization-version-pack-optimization-version) item |  |  | 
+| pack_optimization_version (Alternate 1) | *not set* | String |  |  | 
 | pack_scope | *not set* | String |  |  | 
 | platform_locked | *not set* | Boolean true/false |  |  | 
 | uuid | *not set* | Object |  |  | 
 | version (Version) | *not set* | [Version (Version)](#version-version) item |  |  | 
 | version (Alternate 1) | *not set* | String |  |  | 
+
+## Pack Optimization Version (Pack Optimization Version)
+
+#### Pack Optimization Version Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| buildMeta | *not set* | String |  |  | 
+| major | *not set* | Integer number |  |  | 
+| minor | *not set* | Integer number |  |  | 
+| patch | *not set* | Integer number |  |  | 
+| preRelease | *not set* | String |  |  | 
+
+## Version (Version)
+
+#### Version Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| buildMeta | *not set* | String |  |  | 
+| major | *not set* | Integer number |  |  | 
+| minor | *not set* | Integer number |  |  | 
+| patch | *not set* | Integer number |  |  | 
+| preRelease | *not set* | String |  |  | 
 
 ## 3.0.0.Metadata
 
