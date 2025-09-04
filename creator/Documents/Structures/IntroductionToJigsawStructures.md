@@ -34,28 +34,23 @@ A brief tutorial on creating with Jigsaw structures is available on the [Minecra
 
 ### Pack Structure
 
-Jigsaw Structures are defined using these four JSON files:
-
-- mystructure.json
-- mystructureprocessor.json
-- mystructureset.json
-- mytemplatepool.json
-
-These files are stored within the **worldgen** folder of the behavior pack in this structure:
+Within the **worldgen** folder of the behavior pack in this structure, there are four folders with their own respective json file(s):
 
 ```
 behavior_packs 
   <pack_name> 
     worldgen 
-      jigsaw_structures 
-        mystructure.json 
       processors 
-        mystructureprocessor.json 
+          <mystructureprocessor>.json 
+      structures 
+          <mystructure>.json 
       structure_sets 
-        mystructureset.json 
+          <mystructureset>.json 
       template_pools 
-        mytemplatepool.json
+          <mytemplatepool>.json
 ```
+>[!Note]
+> The 'structures' folder is no longer named 'jigsaw_structures'.
 
 ## Processors
 
