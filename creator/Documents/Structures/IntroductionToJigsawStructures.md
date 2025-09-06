@@ -47,7 +47,7 @@ These files are stored within the **worldgen** folder of the behavior pack in th
 behavior_packs 
   <pack_name> 
     worldgen 
-      jigsaw_structures 
+      structures 
         mystructure.json 
       processors 
         mystructureprocessor.json 
