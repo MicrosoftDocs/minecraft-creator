@@ -49,7 +49,6 @@ For more info, see [Introduction to Jigsaw Structures](../../../../Documents/Str
 ## Example JSON
 
 The JSON below shows how to combine the properties above to make `trail_ruins`.
-##### JSON
 ```json
 { 
   "format_version": "1.21.20", 
@@ -111,7 +110,6 @@ Biome filters are just a type of Entity Filter that only iterative over biomes. 
 | operator | `"=="` | Optional | String | The comparison to apply with `value`.<br><br> Here is a list of available [operators](../../entityreference/examples/filters/has_biome_tag.md#operator-choices).  | trail_ruins: `"=="` |
 | value | *not set* | Required | Varies | The data the test will test with.<br><br> The expected type can be different for each [test](../../entityreference/examples/filterlist.md). | trail_ruins: `"has_structure_trail_ruins"` |
 
-##### JSON
 ```json
 "biome_filters": [ 
   { 
@@ -190,7 +188,6 @@ When the `type` is `"constant"` it now also expects one vertical anchor point to
 | [type](#height-provider-type) | *not set* | Required | String | Determines the rest of the parameters in this JSON Object. |  `"constant"` |
 | value | *not set* | Required | JSON Object  | The [Vertical Anchor](#vertical-anchor) to use as the constant height. |  trail_ruins: `{ "absolute": -15 }` |
 
-##### JSON
 ```json
 "start_height": {
   "type": "constant",
@@ -212,7 +209,6 @@ When the `type` is `"uniform"` it now also expects two vertical anchor points to
 | min | *not set* | Required | JSON Object | The [Vertical Anchor](#vertical-anchor) to use as the minimum value of the uniform distribution. |  |
 | max | *not set* | Required | JSON Object | The [Vertical Anchor](#vertical-anchor) to use as the maximum value of the uniform distribution. |  |
 
-##### JSON
 ```json
 "start_height": {
   "type": "uniform",
@@ -284,7 +280,6 @@ The heightmap that should be used when determining the starting height.
 | `"none"` | Doesn't perform any heightmap projection and begins generating from a Y of `0`. |
 
 For example:
-##### JSON
 ```json
 "heightmap_projection": "ocean_floor",
 "start_height": {
@@ -307,7 +302,6 @@ Used to specify the padding at the top and bottom of the dimension when placing 
 | bottom | `0` | Optional | Positive Integer | Distance in blocks from the bottom of the dimension that may not be used by the Jigsaw Structure. |  |
 | top | `0` | Optional | Positive Integer | Distance in blocks from the top of the dimension that may not be used by the Jigsaw Structure. | |
 
-##### JSON
 ```json
 "dimension_padding": {
   "top": 20,
@@ -325,7 +319,6 @@ Used to specify the max horizontal and vertical distances from the jigsaw pieces
 | horizontal | `80` | Required | Positive Integer | Max distance in blocks from the jigsaw pieces to the structure start on the horizontal plane. |  |
 | vertical | `<integer maximum>` | Optional | Positive Integer | Max distance in blocks from the jigsaw pieces to the structure start on the vertical axis. | |
 
-##### JSON
 ```json
 "max_distance_from_center": {
   "horizontal": 80,
@@ -364,7 +357,6 @@ Pool alias for a Direct target.
 | alias | *not set* | Required | String | The alias of the Template Pool to replace. |  |
 | target | *not set* | Required | String | The Template Pool to substitute when matched. |  |
 
-##### JSON
 ```json
 "pool_aliases" : [
   {
@@ -387,7 +379,6 @@ Pool alias for a Random list of targets.
 | alias | *not set* | Required | String | The alias of the Template Pool to replace.|  |
 | targets | *not set* | Required | JSON Object | A [weighted random list](#weighted-random-item) containing [items](#weighted-random-item) that contain potential Template Pools that will be randomly chosen from when the alias matches. |  |
 
-##### JSON
 ```json
 "pool_aliases": [
   {
@@ -418,7 +409,6 @@ Pool alias for a RandomGroup of aliases.
 | [type](#pool-alias-type) | *not set* | Required | String | Determines the rest of the parameters in this JSON Object. |  `"random_group"` |
 | groups | *not set* | Required | JSON Object | A [weighted random list](#weighted-random-item) containing [items](#weighted-random-item) that contain [pool alias](#pool_aliases) items. The pool alias types can be any valid type except [`random_group`](#random_group-pool-alias). |  |
 
-##### JSON
 ```json
 "pool_aliases": [
   {
@@ -503,7 +493,6 @@ Determines how to handle waterloggable blocks submerged in liquid.
 | `"apply_waterlogging"` | Causes a waterloggable block to become waterlogged, if it overlaps with existing liquid. |
 | `"ignore_waterlogging"` | Do not waterlog any waterloggable blocks that overlap existing liquid. |
 
-##### JSON
 ```json
 "liquid_settings": "ignore_waterlogging"
 ```
