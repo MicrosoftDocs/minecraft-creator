@@ -93,13 +93,13 @@ Object containing the identifier of the Jigsaw Structure. This MUST contain an i
 
 Biomes in which the Jigsaw Structure can generate.
 
-Biome filters are just a type of Entity Filter that only iterative over biomes. As such, most of the available [filters](../../EntityReference/Examples/FilterList.md), while functional, may not be useful in the context of biomes.
+Biome filters are just a type of Entity Filter that only iterative over biomes. As such, most of the available [tests](../../EntityReference/Examples/FilterList.md), while functional, may not be useful in the context of biomes.
 
 >[!IMPORTANT]
 > Jigsaw structures may behave unpredictably in dimensions other than the Overworld. We recommend targeting Jigsaw Structures to overworld-specific biomes there to prevent them from appearing, unintended, in other dimensions.
 
 > [!NOTE]
-> Generally speaking, the most useful filter will be [`"has_biome_tag"`](../../EntityReference/Examples/Filters/has_biome_tag.md). With a `value` of the strings of the tags you're looking for. Here is a list of available [biome tags](../../EntityReference/Examples/Definitions/NestedTables/biome_filter.md).
+> Generally speaking, the most useful `test` will be [`"has_biome_tag"`](../../EntityReference/Examples/Filters/has_biome_tag.md). With a `value` of the strings of the tags you're looking for. Here is a list of available [biome tags](../../EntityReference/Examples/Definitions/NestedTables/biome_filter.md).
 
 #### Properties
 
