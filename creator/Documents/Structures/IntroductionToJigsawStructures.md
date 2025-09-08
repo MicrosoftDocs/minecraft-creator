@@ -20,7 +20,7 @@ Jigsaw Structures can generate randomly in the world. Examples of Vanilla Jigsaw
 
 More updated overview of working with Jigsaw Structures:
 
-> [!VIDEO https://youtu.be/dVXA98kI9c0?si=W9GHp-WttC0hpG9p]
+> [!VIDEO https://www.youtube.com/embed/dVXA98kI9c0?si=JtadJXVep-wJz7qj]
 
 Original tutorial on creating with Jigsaw structures:
 
