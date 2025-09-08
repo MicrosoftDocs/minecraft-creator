@@ -195,27 +195,27 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Move Selected Right | Right Arrow | On |
 
 
-
 ### Terrain
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
 | Terrain Tool | Ctrl+T | - |
-| Toggle Smooth/Roughen| R | - |
+| Cycle Terrain Modes (Flatten/Smooth/Roughen) | Ctrl+T | - |
+| Flatten: Both | Shift+F | - |
+| Flatten: Down | Shift+D | - |
+| Flatten: Up | Shift+U | - |
 
 
-### Flatten Brush
-
-| Name | Shortcut | Exclusive |
-|:----|:----|:----|
-| Flatten Tool | Ctrl+Shift+H |  |
-
-
-### Extrude
+### Workbench
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
 |Extrude Tool| Ctrl+Shift+E | - |
+| Workbench Tool | Ctrl+W | - |
+| Primary Action (Left-click equivalent) | (Numpad +) | - |
+| Secondary Action (Shift+Left-click) | Shift+(Numpad +) | - |
+| Tertiary Action (Ctrl+Left-click) | Ctrl+(Numpad +) | - |
+| Quaternary Action (Ctrl+Shift+Left-click) | Ctrl+Shift+(Numpad +)
 
 
 ### Summon Tool

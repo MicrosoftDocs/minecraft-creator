@@ -4,7 +4,7 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Selection Tool
 description: "An overview of the Selection Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/28/2025
+ms.date: 09/04/2025
 ---
 
 # Selection Tool
