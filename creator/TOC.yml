@@ -497,8 +497,6 @@
                 href: Documents/BedrockEditor/EditorFillTool.md
               - name: Terrain Tool
                 href: Documents/BedrockEditor/EditorTerrainTool.md
-              - name: Flatten Tool
-                href: Documents/BedrockEditor/EditorFlattenTool.md
               - name: Extrude Tool
                 href: Documents/BedrockEditor/EditorExtrudeTool.md
               - name: Repeater Tool
