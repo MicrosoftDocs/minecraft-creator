@@ -39,19 +39,20 @@ The Publish to Realms Pane can be opened via the Action Bar or **File -> Publish
 > [!NOTE]
 > To use this feature you will need to be logged in with an active Realms subscription. Information on this can be found [here](https://www.minecraft.net/en-us/realms/how-buy-realm). When using a Preview build, you will need a Preview Realms setup before entering Editor Mode. 
 
-![Image of the Realms Pane.](Media/editor_realms_pane.png)
-
 ### Realms pane elements
 
-- **Selecting your Realm and slot**: If you have an active Realms subscription you will be able to see your Realm(s) in the Realm drop down. Once selected you can select the specific world slot you want to publish your Realm to.
+- **Selecting your Realm and slot**: If you have an active Realms subscription your Realm(s) appear in the drop down automatically. Once selected you can specify the world slot you want to publish your Realm to.
 
-- **Publish options**: Similar to Export, Publishing to Realms contains similar settings you can cusomize before publishing. To learn more about these details please visit the [Export Pane](EditorExport.md). 
+- **Publish options**: Similar to Export, publishing to Realms contains settings you can cusomize before publishing. 
+    ![Image of the Realms Pane.](Media/editor_realms_pane.png)
 
-- **Download**: The Download button will save the world in the current selected Realm slot to the minecraftWorlds folder. This is a great way to backup your world before publishing. 
+- **Download**: The Download button saves the world in the current selected Realm slot to the minecraftWorlds folder. This is a great way to backup your world before publishing. 
 
-- **Publish**: Publishes the current project to the selected Realms slot with the selected settings. Publishing to Realms uploads your current project to a chosen Realm slot so you and others can play or test across platforms without manual export/import. It mirrors key Export settings; lets you download the current slot as a backup; and publishes in a single flow from the Editor.
+- **Publish**: Publishes the current project to the selected Realms slot with the selected settings. It mirrors key Export settings; lets you download the current slot as a backup; and publishes in a single flow from the Editor.
 
 ## Publishing to your Realm
+
+Publishing to Realms uploads your current project to a chosen Realm slot so you and others can play or test across platforms without manual export/import. 
 
 1. Navigate to Realms from the Minecraft laucher home page. Your Realm(s) will automatically appear in the Realm dropdown if you have an active subscription.
 

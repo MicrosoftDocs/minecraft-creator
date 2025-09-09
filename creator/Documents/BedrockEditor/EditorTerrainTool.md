@@ -67,7 +67,7 @@ You can use the Brush drop-down to select the shape you want to use for smoothin
 |Terrain tool|**Ctrl**+**T**|
 |Cycle mode|**Ctrl**+**T** (while Terrain is active)|
 |Paint|Click and drag mouse|
-**When flatten is selected*:
+|**When flatten is selected**:||
 |Both|**Shift**+**F**|
 |Down|**Shift**+**D**|
 |Up|**Shift**+**U**|

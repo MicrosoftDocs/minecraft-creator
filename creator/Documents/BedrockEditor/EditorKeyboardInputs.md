@@ -4,7 +4,7 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Hotkeys
 description: "An overview of the keyboard input shortcuts in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/09/2025
+ms.date: 09/08/2025
 ---
 
 # Editor Hotkeys
@@ -206,11 +206,17 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Flatten: Up | Shift+U | - |
 
 
-### Workbench
+### Extrude
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
 |Extrude Tool| Ctrl+Shift+E | - |
+
+
+### Workbench
+
+| Name | Shortcut | Exclusive |
+|:----|:----|:----|
 | Workbench Tool | Ctrl+W | - |
 | Primary Action (Left-click equivalent) | (Numpad +) | - |
 | Secondary Action (Shift+Left-click) | Shift+(Numpad +) | - |
