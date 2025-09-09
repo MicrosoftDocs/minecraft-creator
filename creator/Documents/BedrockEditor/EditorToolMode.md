@@ -2,7 +2,7 @@
 author: cam-wilkerson
 ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Modes
-description: "An overview of Tool Mode and Crosshair Mode in of Minecraft Bedrock Editor"
+description: "An overview of Tool Mode and Crosshair Mode in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
 ms.date: 09/04/2025
 ---
