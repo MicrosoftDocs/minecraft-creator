@@ -22,32 +22,6 @@ A Structure Set contains a set of Jigsaw Structures and rules for how those stru
 | [structures](#structures) | *not set* | Required | JSON Object | A weighted list of Jigsaw Structure identifiers. Structures will be randomly chosen from this set during world generation. | (go to section) |
 
 
-## Example Structure Set JSON
-
-```json
-{ 
-  "format_version": "1.21.20", 
-  "minecraft:structure_set": { 
-    "description": { 
-      "identifier": "minecraft:trail_ruins" 
-    }, 
-    "placement": { 
-      "type": "minecraft:random_spread", 
-      "salt": 83469867, 
-      "separation": 8, 
-      "spacing": 34, 
-      "spread_type": "linear" 
-    }, 
-    "structures": [ 
-      { 
-        "structure": "minecraft:trail_ruins", 
-        "weight": 1 
-      } 
-    ] 
-  } 
-} 
-```
-
 ## description
 Object containing the identifier of the Structure Set. This MUST contain an identifier.
 
@@ -127,4 +101,30 @@ A weighted list of Jigsaw Structure identifiers. Structures will be randomly cho
     "weight": 1
   }
 ]
+```
+
+## Example Structure Set JSON
+
+```json
+{ 
+  "format_version": "1.21.20", 
+  "minecraft:structure_set": { 
+    "description": { 
+      "identifier": "minecraft:trail_ruins" 
+    }, 
+    "placement": { 
+      "type": "minecraft:random_spread", 
+      "salt": 83469867, 
+      "separation": 8, 
+      "spacing": 34, 
+      "spread_type": "linear" 
+    }, 
+    "structures": [ 
+      { 
+        "structure": "minecraft:trail_ruins", 
+        "weight": 1 
+      } 
+    ] 
+  } 
+} 
 ```
