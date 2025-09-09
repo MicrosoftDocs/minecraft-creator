@@ -77,12 +77,6 @@
               "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/1/filters/all_of/1/",
               "content": "!="
             }
-          ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.stalk_and_pounce_on_target/stuck_blocks/",
-              "content": "=="
-            }
           ]
         }
       },
@@ -169,16 +163,6 @@
               "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/1/on_damage/filters/",
               "content": "minecraft:sweet_berry_bush"
             }
-          ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/0/on_damage/filters/",
-              "content": "minecraft:sweet_berry_bush"
-            },
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.stalk_and_pounce_on_target/stuck_blocks/",
-              "content": "snow_layer"
-            }
           ]
         }
       },
@@ -252,25 +236,6 @@
             "test": "is_block",
             "subject": "block",
             "value": "minecraft:sweet_berry_bush"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/fox.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/0/on_damage/filters/",
-          "content": {
-            "test": "is_block",
-            "subject": "block",
-            "value": "minecraft:sweet_berry_bush"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.stalk_and_pounce_on_target/stuck_blocks/",
-          "content": {
-            "test": "is_block",
-            "subject": "block",
-            "operator": "==",
-            "value": "snow_layer"
           }
         }
       ]

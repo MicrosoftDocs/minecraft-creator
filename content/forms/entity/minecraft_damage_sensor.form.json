@@ -57,6 +57,7 @@
         "description": "List of triggers with the events to call when taking specific kinds of damage.\"",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "List of triggers with the events to call when taking specific kinds of damage.\"",
           "fields": [
             {

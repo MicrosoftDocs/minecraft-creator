@@ -128,6 +128,8 @@ Represents the unique type of network packet.
 `CurrentStructureFeaturePacket = "CurrentStructureFeaturePacket"`
 ### **DeathInfoPacket**
 `DeathInfoPacket = "DeathInfoPacket"`
+### **DebugDrawerPacket**
+`DebugDrawerPacket = "DebugDrawerPacket"`
 ### **DebugInfoPacket**
 `DebugInfoPacket = "DebugInfoPacket"`
 ### **DimensionDataPacket**
@@ -308,8 +310,6 @@ Represents the unique type of network packet.
 `ServerboundPackSettingChangePacket = "ServerboundPackSettingChangePacket"`
 ### **ServerPlayerPostMovePositionPacket**
 `ServerPlayerPostMovePositionPacket = "ServerPlayerPostMovePositionPacket"`
-### **ServerScriptDebugDrawerPacket**
-`ServerScriptDebugDrawerPacket = "ServerScriptDebugDrawerPacket"`
 ### **ServerSettingsRequestPacket**
 `ServerSettingsRequestPacket = "ServerSettingsRequestPacket"`
 ### **ServerSettingsResponsePacket**

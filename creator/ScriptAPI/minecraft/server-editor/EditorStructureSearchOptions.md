@@ -16,17 +16,27 @@ description: Contents of the @minecraft/server-editor.EditorStructureSearchOptio
 
 Type: *string*
 
-### **idPattern**
-`idPattern?: string;`
+### **id**
+`id?: string;`
 
 Type: *string*
 
-### **includeSources**
-`includeSources?: StructureSource[];`
+### **sources**
+`sources?: StructureSource[];`
 
 Type: [*StructureSource*](StructureSource.md)[]
 
-### **includeTags**
-`includeTags?: string[];`
+### **structureName**
+`structureName?: string;`
+
+Type: *string*
+
+### **structureNamespace**
+`structureNamespace?: string;`
+
+Type: *string*
+
+### **tags**
+`tags?: string[];`
 
 Type: *string*[]

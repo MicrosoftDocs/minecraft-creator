@@ -24,7 +24,7 @@ The `@minecraft/server-net` module contains types for executing HTTP-based reque
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.21.110-beta.25 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.21.120-beta.0 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`

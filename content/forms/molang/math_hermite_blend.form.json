@@ -3,7 +3,7 @@
   "fields": [],
   "description": "Interpolate points on a smooth curve using one of the Hermite Basis functions: `3t^2 - 2t^3`. While any valid float is a valid input, this function works best in the range `[0, 1]`.",
   "generated_doNotEdit": {
-    "id": "`math.hermite_blend(value)`",
+    "id": "math.hermite_blend(value)",
     "title": "Hermite Blend(value)",
     "description": "Useful for simple smooth curve interpolation using one of the Hermite Basis functions: `3t^2 - 2t^3`.  Note that while any valid float is a valid input, this function works best in the range [0,1].",
     "fields": []

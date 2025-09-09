@@ -12,6 +12,7 @@
         "description": "List of effects to add to this entity after adding this component",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "List of effects to add to this entity after adding this component",
           "fields": [
             {

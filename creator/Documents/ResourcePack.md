@@ -45,7 +45,7 @@ We will start by creating a folder called **My_RESOURCE_Pack**. Technically you 
 
 * Press **Win+R** to open **Run**.
 * If you are using main Minecraft releases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
-* Alternatively, if you are using preview Minecraft preleases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\games\com.mojang`
+* Alternatively, if you are using preview Minecraft versions, see more information about the folder to use in [this article](./GDKPCProjectFolder.md)
 * Click **OK**.
 
 2. Double-click the **development_resource_packs** folder to open it.

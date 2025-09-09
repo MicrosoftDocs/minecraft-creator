@@ -2,7 +2,7 @@
   "id": "`math.clamp(value, min, max)`",
   "fields": [],
   "generated_doNotEdit": {
-    "id": "`math.clamp(value, min, max)`",
+    "id": "math.clamp(value, min, max)",
     "title": "Clamp(value, Min, Max)",
     "description": "Clamp value to between min and max inclusive",
     "fields": []

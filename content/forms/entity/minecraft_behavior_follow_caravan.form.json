@@ -32,6 +32,7 @@
         "description": "List of entity types that this mob can follow in a caravan",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "List of entity types that this mob can follow in a caravan",
           "fields": [
             {

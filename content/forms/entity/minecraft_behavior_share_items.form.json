@@ -11,6 +11,7 @@
         "description": "List of entities this mob will share items with",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "List of entities this mob will share items with",
           "fields": [
             {

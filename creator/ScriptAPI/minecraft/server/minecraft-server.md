@@ -17,13 +17,14 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "2.1.0"
+    "version": "2.2.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.21.110-beta.25 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.21.120-beta.0 of Minecraft.
 
 ## Available Versions
-- `2.3.0-beta`
+- `2.4.0-beta`
+- `2.2.0`
 - `2.1.0`
 - `2.0.0`
 
@@ -63,6 +64,7 @@ The following API versions are from a major version that is documented here: [*@
 - [CompoundBlockVolumeAction](CompoundBlockVolumeAction.md)
 - [CompoundBlockVolumePositionRelativity](CompoundBlockVolumePositionRelativity.md)
 - [ContainerRulesErrorReason](ContainerRulesErrorReason.md)
+- [ControlScheme](ControlScheme.md)
 - [CustomCommandErrorReason](CustomCommandErrorReason.md)
 - [CustomCommandParamType](CustomCommandParamType.md)
 - [CustomCommandSource](CustomCommandSource.md)
@@ -158,6 +160,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockPermutation](BlockPermutation.md)
 - [BlockPistonComponent](BlockPistonComponent.md)
 - [BlockRecordPlayerComponent](BlockRecordPlayerComponent.md)
+- [BlockRedstoneProducerComponent](BlockRedstoneProducerComponent.md)
 - [BlockSignComponent](BlockSignComponent.md)
 - [BlockStates](BlockStates.md)
 - [BlockStateType](BlockStateType.md)
@@ -181,6 +184,7 @@ The following API versions are from a major version that is documented here: [*@
 - [CustomCommandOrigin](CustomCommandOrigin.md)
 - [CustomCommandRegistry](CustomCommandRegistry.md)
 - [CustomComponentParameters](CustomComponentParameters.md)
+- [DamagedByEntityCondition](DamagedByEntityCondition.md)
 - [DataDrivenEntityTriggerAfterEvent](DataDrivenEntityTriggerAfterEvent.md)
 - [DataDrivenEntityTriggerAfterEventSignal](DataDrivenEntityTriggerAfterEventSignal.md)
 - [Dimension](Dimension.md)
@@ -194,6 +198,7 @@ The following API versions are from a major version that is documented here: [*@
 - [EffectType](EffectType.md)
 - [EffectTypes](EffectTypes.md)
 - [EmptyLootItem](EmptyLootItem.md)
+- [EnchantInfo](EnchantInfo.md)
 - [EnchantmentType](EnchantmentType.md)
 - [EnchantmentTypes](EnchantmentTypes.md)
 - [Entity](Entity.md)
@@ -217,6 +222,8 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityFloatsInLiquidComponent](EntityFloatsInLiquidComponent.md)
 - [EntityFlyingSpeedComponent](EntityFlyingSpeedComponent.md)
 - [EntityFrictionModifierComponent](EntityFrictionModifierComponent.md)
+- [EntityHasMarkVariantCondition](EntityHasMarkVariantCondition.md)
+- [EntityHasVariantCondition](EntityHasVariantCondition.md)
 - [EntityHealableComponent](EntityHealableComponent.md)
 - [EntityHealthChangedAfterEvent](EntityHealthChangedAfterEvent.md)
 - [EntityHealthChangedAfterEventSignal](EntityHealthChangedAfterEventSignal.md)
@@ -243,6 +250,7 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityIsStunnedComponent](EntityIsStunnedComponent.md)
 - [EntityIsTamedComponent](EntityIsTamedComponent.md)
 - [EntityItemComponent](EntityItemComponent.md)
+- [EntityKilledCondition](EntityKilledCondition.md)
 - [EntityLavaMovementComponent](EntityLavaMovementComponent.md)
 - [EntityLeashableComponent](EntityLeashableComponent.md)
 - [EntityLoadAfterEvent](EntityLoadAfterEvent.md)
@@ -300,6 +308,7 @@ The following API versions are from a major version that is documented here: [*@
 - [GameRuleChangeAfterEventSignal](GameRuleChangeAfterEventSignal.md)
 - [GameRules](GameRules.md)
 - [InputInfo](InputInfo.md)
+- [IsBabyCondition](IsBabyCondition.md)
 - [ItemBookComponent](ItemBookComponent.md)
 - [ItemCompleteUseAfterEvent](ItemCompleteUseAfterEvent.md)
 - [ItemCompleteUseAfterEventSignal](ItemCompleteUseAfterEventSignal.md)
@@ -340,10 +349,14 @@ The following API versions are from a major version that is documented here: [*@
 - [ItemUseBeforeEvent](ItemUseBeforeEvent.md)
 - [ItemUseBeforeEventSignal](ItemUseBeforeEventSignal.md)
 - [ItemUseOnEvent](ItemUseOnEvent.md)
+- [KilledByEntityCondition](KilledByEntityCondition.md)
+- [KilledByPlayerCondition](KilledByPlayerCondition.md)
+- [KilledByPlayerOrPetsCondition](KilledByPlayerOrPetsCondition.md)
 - [LeverActionAfterEvent](LeverActionAfterEvent.md)
 - [LeverActionAfterEventSignal](LeverActionAfterEventSignal.md)
 - [ListBlockVolume](ListBlockVolume.md)
 - [LootItem](LootItem.md)
+- [LootItemCondition](LootItemCondition.md)
 - [LootPool](LootPool.md)
 - [LootPoolEntry](LootPoolEntry.md)
 - [LootPoolTiers](LootPoolTiers.md)
@@ -351,10 +364,12 @@ The following API versions are from a major version that is documented here: [*@
 - [LootTableEntry](LootTableEntry.md)
 - [LootTableManager](LootTableManager.md)
 - [LootTableReference](LootTableReference.md)
+- [MatchToolCondition](MatchToolCondition.md)
 - [MessageReceiveAfterEvent](MessageReceiveAfterEvent.md)
 - [MolangVariableMap](MolangVariableMap.md)
 - [PackSettingChangeAfterEvent](PackSettingChangeAfterEvent.md)
 - [PackSettingChangeAfterEventSignal](PackSettingChangeAfterEventSignal.md)
+- [PassengerOfEntityCondition](PassengerOfEntityCondition.md)
 - [PistonActivateAfterEvent](PistonActivateAfterEvent.md)
 - [PistonActivateAfterEventSignal](PistonActivateAfterEventSignal.md)
 - [Player](Player.md)
@@ -405,6 +420,8 @@ The following API versions are from a major version that is documented here: [*@
 - [PlayerSpawnAfterEventSignal](PlayerSpawnAfterEventSignal.md)
 - [PlayerSwingStartAfterEvent](PlayerSwingStartAfterEvent.md)
 - [PlayerSwingStartAfterEventSignal](PlayerSwingStartAfterEventSignal.md)
+- [PlayerUseNameTagAfterEvent](PlayerUseNameTagAfterEvent.md)
+- [PlayerUseNameTagAfterEventSignal](PlayerUseNameTagAfterEventSignal.md)
 - [PotionDeliveryType](PotionDeliveryType.md)
 - [PotionEffectType](PotionEffectType.md)
 - [Potions](Potions.md)
@@ -416,6 +433,10 @@ The following API versions are from a major version that is documented here: [*@
 - [ProjectileHitBlockAfterEventSignal](ProjectileHitBlockAfterEventSignal.md)
 - [ProjectileHitEntityAfterEvent](ProjectileHitEntityAfterEvent.md)
 - [ProjectileHitEntityAfterEventSignal](ProjectileHitEntityAfterEventSignal.md)
+- [RandomChanceCondition](RandomChanceCondition.md)
+- [RandomChanceWithLootingCondition](RandomChanceWithLootingCondition.md)
+- [RandomDifficultyChanceCondition](RandomDifficultyChanceCondition.md)
+- [RandomRegionalDifficultyChanceCondition](RandomRegionalDifficultyChanceCondition.md)
 - [Scoreboard](Scoreboard.md)
 - [ScoreboardIdentity](ScoreboardIdentity.md)
 - [ScoreboardObjective](ScoreboardObjective.md)
@@ -547,6 +568,7 @@ The following API versions are from a major version that is documented here: [*@
 - [EnchantmentTypeNotCompatibleError](EnchantmentTypeNotCompatibleError.md)
 - [EnchantmentTypeUnknownIdError](EnchantmentTypeUnknownIdError.md)
 - [EntitySpawnError](EntitySpawnError.md)
+- [InvalidBlockComponentError](InvalidBlockComponentError.md)
 - [InvalidContainerError](InvalidContainerError.md)
 - [InvalidContainerSlotError](InvalidContainerSlotError.md)
 - [InvalidEntityError](InvalidEntityError.md)

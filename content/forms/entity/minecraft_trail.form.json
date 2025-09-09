@@ -10,33 +10,13 @@
         "title": "Block Type",
         "description": "The type of block you wish to be spawned by the entity as it move about the world. Solid blocks may not be spawned at an offset of (0,0,0).",
         "defaultValue": "air",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/snow_golem.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:trail/",
-              "content": "minecraft:snow_layer"
-            }
-          ]
-        }
+        "dataType": 2
       },
       {
         "id": "spawn_filter",
         "title": "Spawn Filter",
         "description": "One or more conditions that must be met in order to cause the chosen block type to spawn.",
-        "dataType": 20,
-        "samples": {
-          "/vanilla/behavior_pack/entities/snow_golem.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:trail/",
-              "content": {
-                "test": "is_temperature_value",
-                "operator": "<",
-                "value": 0.81
-              }
-            }
-          ]
-        }
+        "dataType": 20
       },
       {
         "id": "spawn_offset",
@@ -50,20 +30,6 @@
         "dataType": 11
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/snow_golem.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:trail/",
-          "content": {
-            "block_type": "minecraft:snow_layer",
-            "spawn_filter": {
-              "test": "is_temperature_value",
-              "operator": "<",
-              "value": 0.81
-            }
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

@@ -1,0 +1,18 @@
+{
+  "id": "minecraft:precipitation_interactions",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:precipitation_interactions",
+    "title": "Precipitation Interactions",
+    "description": "Component that determines how the block will interact with rain and snow",
+    "fields": [
+      {
+        "id": "precipitation_behavior",
+        "title": "Precipitation Behavior",
+        "description": "What behavior should the block have. Three possible values: obstruct_rain, obstruct_rain_accumulate_snow and none",
+        "defaultValue": "accumulate snow",
+        "dataType": 2
+      }
+    ]
+  }
+}

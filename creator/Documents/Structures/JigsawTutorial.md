@@ -86,7 +86,7 @@ development_behavior_packs
         <room_structure>.mcstructure
         <hallway_structure>.mcstructure
     worldgen 
-      jigsaw_structures
+      structures
         mystructure.json
       processors
         mystructureprocessor.json
@@ -98,7 +98,7 @@ development_behavior_packs
 
 Here are the contents for each file:
 
-### jigsaw_structures/mystructure.json
+### structures/mystructure.json
 
 [Reference: Worldgen Jigsaw Structures](../../Reference/Content/WorldgenReference/Examples/JigsawJigsawStructures.md)
 
@@ -106,7 +106,7 @@ Replace the values for `identifier:` and `start_pool:`.
 
 ```json
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.100",
   "minecraft:jigsaw": {
     "description": {
       "identifier": "mike:basic_dungeon"
@@ -115,7 +115,12 @@ Replace the values for `identifier:` and `start_pool:`.
     "terrain_adaptation": "none",
     "start_pool": "mike:ns7x4",
     "max_depth": 12,
-    "start_height": 0,
+    "start_height": {
+      "type": "constant",
+      "value": {
+        "absolute": 10
+      }
+    },
     "heightmap_projection": "world_surface"
   }
 }
@@ -129,7 +134,7 @@ Replace the value for `identifier:` and feel free to change which blocks are use
 
 ```json
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.100",
   "minecraft:processor_list": {
     "description": {
       "identifier": "mike:stone_brick_replacement"
@@ -185,7 +190,7 @@ To adjust the number and proximity of your generated structures, try changing th
 
 ```json
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.100",
   "minecraft:structure_set": {
     "description": {
       "identifier": "mike:basic_dungeon"
@@ -219,7 +224,7 @@ You can replace:
 
 ```json
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.100",
   "minecraft:template_pool": {
     "description": {
       "identifier": "mike:ns7x4"
@@ -285,7 +290,7 @@ After you experiment with your jigsaw blocks and structures to get a basic under
 
 ```json
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.100",
   "minecraft:template_pool": {
     "description": {
       "identifier": "mike:ns7x4"
@@ -317,7 +322,7 @@ The interior structures will be generated from the **5x5int.json** template pool
 
 ```json
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.100",
   "minecraft:template_pool": {
     "description": {
       "identifier": "mike:5x5int"

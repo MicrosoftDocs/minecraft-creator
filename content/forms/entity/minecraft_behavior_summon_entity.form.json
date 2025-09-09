@@ -12,6 +12,7 @@
         "description": "List of spells for the mob to use to summon entities. Each spell has the following parameters:",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "List of spells for the mob to use to summon entities. Each spell has the following parameters:",
           "fields": [
             {
@@ -66,6 +67,7 @@
               "description": "List of steps for the spell. Each step has the following parameters:",
               "dataType": 15,
               "subForm": {
+                "id": "",
                 "description": "List of steps for the spell. Each step has the following parameters:",
                 "fields": [
                   {

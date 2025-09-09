@@ -24,6 +24,11 @@ Returns the number of extra times a loot pool will be rolled based on the player
 
 Type: [*@minecraft/common.NumberRange*](../../../scriptapi/minecraft/common/NumberRange.md)
 
+### **conditions**
+`read-only conditions: LootItemCondition[];`
+
+Type: [*LootItemCondition*](LootItemCondition.md)[]
+
 ### **entries**
 `read-only entries: LootPoolEntry[];`
 

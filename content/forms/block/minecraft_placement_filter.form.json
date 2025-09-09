@@ -11,6 +11,7 @@
         "description": "List of conditions where the block can be placed/survive. Limited to 64 conditions.",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "List of conditions where the block can be placed/survive. Limited to 64 conditions.",
           "fields": [
             {
@@ -25,6 +26,7 @@
               "description": "List of blocks that this block can be placed against in the \"allowed_faces\" direction. Limited to 64 blocks. Each block in this list can either be specified as a String (block name) or as a BlockDescriptor. A BlockDescriptor is an object that allows you to reference a block (or multiple blocks) based on its tags, or based on its name and states. The fields of a BlockDescriptor are described below.",
               "dataType": 15,
               "subForm": {
+                "id": "",
                 "description": "List of blocks that this block can be placed against in the \"allowed_faces\" direction. Limited to 64 blocks. Each block in this list can either be specified as a String (block name) or as a BlockDescriptor. A BlockDescriptor is an object that allows you to reference a block (or multiple blocks) based on its tags, or based on its name and states. The fields of a BlockDescriptor are described below.",
                 "fields": [
                   {

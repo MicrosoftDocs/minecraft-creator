@@ -10,7 +10,8 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.3.0-beta](#230-beta)
+- [2.4.0-beta](#240-beta)
+- [2.2.0](#220)
 - [2.1.0](#210)
 - [2.0.0](#200)
 - [1.19.0](#1190)
@@ -34,7 +35,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.3.0-beta
+## 2.4.0-beta
 #### Added *[`AimAssistCategory`](AimAssistCategory.md)*
 #### Added *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 #### Added *[`AimAssistPreset`](AimAssistPreset.md)*
@@ -52,11 +53,11 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
 - Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
+#### Added *[`BlockRedstoneProducerComponent`](BlockRedstoneProducerComponent.md)*
 #### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*
 - Added function *[`getBoundingBox`](BlockVolumeBase.md#getboundingbox)*
 #### Changed *[`Camera`](Camera.md)*
 - Added function *[`setCameraWithEase`](Camera.md#setcamerawithease)*
-- Added function *[`setFov`](Camera.md#setfov)*
 #### Added *[`ChatSendAfterEvent`](ChatSendAfterEvent.md)*
 #### Added *[`ChatSendAfterEventSignal`](ChatSendAfterEventSignal.md)*
 #### Added *[`ChatSendBeforeEvent`](ChatSendBeforeEvent.md)*
@@ -66,13 +67,12 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`containerRules`](Container.md#containerrules)*
 - Added property *[`weight`](Container.md#weight)*
 #### Changed *[`ContainerSlot`](ContainerSlot.md)*
-- Added function *[`getRawLore`](ContainerSlot.md#getrawlore)*
 - Added function *[`setDynamicProperties`](ContainerSlot.md#setdynamicproperties)*
+#### Added *[`DamagedByEntityCondition`](DamagedByEntityCondition.md)*
 #### Changed *[`Dimension`](Dimension.md)*
-- Changed function *[`fillBlocks`](Dimension.md#fillblocks)*
-  - Changed argument `volume` type from [*BlockVolumeBase*](BlockVolumeBase.md) to [*BlockVolumeBase*](BlockVolumeBase.md) | [*CompoundBlockVolume*](CompoundBlockVolume.md)
 - Added function *[`findClosestBiome`](Dimension.md#findclosestbiome)*
 - Added function *[`getBiome`](Dimension.md#getbiome)*
+- Added function *[`getGeneratedStructures`](Dimension.md#getgeneratedstructures)*
 - Added function *[`getLightLevel`](Dimension.md#getlightlevel)*
 - Added function *[`getSkyLightLevel`](Dimension.md#getskylightlevel)*
 - Added function *[`getWeather`](Dimension.md#getweather)*
@@ -85,6 +85,7 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`stopAllSounds`](Dimension.md#stopallsounds)*
 - Added function *[`stopSound`](Dimension.md#stopsound)*
 #### Added *[`EmptyLootItem`](EmptyLootItem.md)*
+#### Added *[`EnchantInfo`](EnchantInfo.md)*
 #### Changed *[`Entity`](Entity.md)*
 - Added property *[`target`](Entity.md#target)*
 - Added function *[`getAllBlocksStandingOn`](Entity.md#getallblocksstandingon)*
@@ -93,6 +94,9 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
 - Added property *[`airSupply`](EntityBreathableComponent.md#airsupply)*
 - Added property *[`canBreathe`](EntityBreathableComponent.md#canbreathe)*
+#### Added *[`EntityHasMarkVariantCondition`](EntityHasMarkVariantCondition.md)*
+#### Added *[`EntityHasVariantCondition`](EntityHasVariantCondition.md)*
+#### Added *[`EntityKilledCondition`](EntityKilledCondition.md)*
 #### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
 #### Changed *[`EntityTypes`](EntityTypes.md)*
 - Changed function *[`get`](EntityTypes.md#get)*
@@ -100,28 +104,37 @@ description: Changelog of the `@minecraft/server` module
   - Changed argument `identifier` type from *string* to *EntityIdentifierType<NoInfer<T>>*
 #### Changed *[`GameRules`](GameRules.md)*
 - Added property *[`locatorBar`](GameRules.md#locatorbar)*
-#### Added *[`ItemBookComponent`](ItemBookComponent.md)*
+#### Added *[`IsBabyCondition`](IsBabyCondition.md)*
 #### Added *[`ItemInventoryComponent`](ItemInventoryComponent.md)*
 #### Added *[`ItemPotionComponent`](ItemPotionComponent.md)*
 #### Changed *[`ItemStack`](ItemStack.md)*
 - Added property *[`weight`](ItemStack.md#weight)*
-- Added function *[`getRawLore`](ItemStack.md#getrawlore)*
 - Added function *[`setDynamicProperties`](ItemStack.md#setdynamicproperties)*
+#### Added *[`KilledByEntityCondition`](KilledByEntityCondition.md)*
+#### Added *[`KilledByPlayerCondition`](KilledByPlayerCondition.md)*
+#### Added *[`KilledByPlayerOrPetsCondition`](KilledByPlayerOrPetsCondition.md)*
 #### Added *[`LootItem`](LootItem.md)*
+#### Added *[`LootItemCondition`](LootItemCondition.md)*
 #### Added *[`LootPool`](LootPool.md)*
 #### Added *[`LootPoolEntry`](LootPoolEntry.md)*
 #### Added *[`LootPoolTiers`](LootPoolTiers.md)*
 #### Added *[`LootTable`](LootTable.md)*
 #### Added *[`LootTableEntry`](LootTableEntry.md)*
-#### Added *[`LootTableManager`](LootTableManager.md)*
+#### Changed *[`LootTableManager`](LootTableManager.md)*
+- Added function *[`generateLootFromTable`](LootTableManager.md#generatelootfromtable)*
+- Added function *[`getLootTable`](LootTableManager.md#getloottable)*
 #### Added *[`LootTableReference`](LootTableReference.md)*
+#### Added *[`MatchToolCondition`](MatchToolCondition.md)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
 #### Added *[`PackSettingChangeAfterEvent`](PackSettingChangeAfterEvent.md)*
 #### Added *[`PackSettingChangeAfterEventSignal`](PackSettingChangeAfterEventSignal.md)*
+#### Added *[`PassengerOfEntityCondition`](PassengerOfEntityCondition.md)*
 #### Changed *[`Player`](Player.md)*
 - Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`getAimAssist`](Player.md#getaimassist)*
+- Added function *[`getControlScheme`](Player.md#getcontrolscheme)*
 - Added function *[`postClientMessage`](Player.md#postclientmessage)*
+- Added function *[`setControlScheme`](Player.md#setcontrolscheme)*
 - Added function *[`stopAllSounds`](Player.md#stopallsounds)*
 - Added function *[`stopSound`](Player.md#stopsound)*
 #### Added *[`PlayerAimAssist`](PlayerAimAssist.md)*
@@ -129,9 +142,15 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
 #### Added *[`PlayerSwingStartAfterEvent`](PlayerSwingStartAfterEvent.md)*
 #### Added *[`PlayerSwingStartAfterEventSignal`](PlayerSwingStartAfterEventSignal.md)*
+#### Added *[`PlayerUseNameTagAfterEvent`](PlayerUseNameTagAfterEvent.md)*
+#### Added *[`PlayerUseNameTagAfterEventSignal`](PlayerUseNameTagAfterEventSignal.md)*
 #### Added *[`PotionDeliveryType`](PotionDeliveryType.md)*
 #### Added *[`PotionEffectType`](PotionEffectType.md)*
 #### Added *[`Potions`](Potions.md)*
+#### Added *[`RandomChanceCondition`](RandomChanceCondition.md)*
+#### Added *[`RandomChanceWithLootingCondition`](RandomChanceWithLootingCondition.md)*
+#### Added *[`RandomDifficultyChanceCondition`](RandomDifficultyChanceCondition.md)*
+#### Added *[`RandomRegionalDifficultyChanceCondition`](RandomRegionalDifficultyChanceCondition.md)*
 #### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
 #### Changed *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
 - Added property *[`watchdogTerminate`](SystemBeforeEvents.md#watchdogterminate)*
@@ -140,7 +159,6 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`World`](World.md)*
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
 - Added function *[`getAimAssist`](World.md#getaimassist)*
-- Added function *[`getLootTableManager`](World.md#getloottablemanager)*
 - Added function *[`getPackSettings`](World.md#getpacksettings)*
 - Added function *[`setDynamicProperties`](World.md#setdynamicproperties)*
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
@@ -148,14 +166,15 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
 - Added property *[`packSettingChange`](WorldAfterEvents.md#packsettingchange)*
 - Added property *[`playerSwingStart`](WorldAfterEvents.md#playerswingstart)*
+- Added property *[`playerUseNameTag`](WorldAfterEvents.md#playerusenametag)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
 #### Added enum [`AimAssistTargetMode`](AimAssistTargetMode.md)
-#### Added enum [`BookErrorReason`](BookErrorReason.md)
 #### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
 #### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
 #### Added enum [`ContainerRulesErrorReason`](ContainerRulesErrorReason.md)
+#### Added enum [`ControlScheme`](ControlScheme.md)
 #### Changed enum [`CustomCommandErrorReason`](CustomCommandErrorReason.md)
 - Added value `UnexpectedEnumName`
 #### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
@@ -166,11 +185,24 @@ description: Changelog of the `@minecraft/server` module
 - Added value `LocatorBar`
 #### Added enum [`HeldItemOption`](HeldItemOption.md)
 #### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
-- Added value `Book`
 - Added value `Inventory`
 - Added value `Potion`
 #### Added enum [`LiquidSettings`](LiquidSettings.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
+## 2.2.0
+#### Changed *[`Camera`](Camera.md)*
+- Added function *[`setFov`](Camera.md#setfov)*
+#### Changed *[`ContainerSlot`](ContainerSlot.md)*
+- Added function *[`getRawLore`](ContainerSlot.md#getrawlore)*
+#### Added *[`ItemBookComponent`](ItemBookComponent.md)*
+#### Changed *[`ItemStack`](ItemStack.md)*
+- Added function *[`getRawLore`](ItemStack.md#getrawlore)*
+#### Added *[`LootTableManager`](LootTableManager.md)*
+#### Changed *[`World`](World.md)*
+- Added function *[`getLootTableManager`](World.md#getloottablemanager)*
+#### Added enum [`BookErrorReason`](BookErrorReason.md)
+#### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
+- Added value `Book`
 ## 2.1.0
 #### Changed *[`Block`](Block.md)*
 - Added property *[`localizationKey`](Block.md#localizationkey)*

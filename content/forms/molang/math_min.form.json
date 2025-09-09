@@ -2,7 +2,7 @@
   "id": "`math.min(A, B)`",
   "fields": [],
   "generated_doNotEdit": {
-    "id": "`math.min(A, B)`",
+    "id": "math.min(A, B)",
     "title": "Min(A, B)",
     "description": "Return lowest value of A or B",
     "fields": []

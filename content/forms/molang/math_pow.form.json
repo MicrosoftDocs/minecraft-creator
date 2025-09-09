@@ -2,7 +2,7 @@
   "id": "`math.pow(base, exponent)`",
   "fields": [],
   "generated_doNotEdit": {
-    "id": "`math.pow(base, exponent)`",
+    "id": "math.pow(base, exponent)",
     "title": "Pow(base, Exponent)",
     "description": "Elevates `base` to the `exponent`'th power",
     "fields": []
