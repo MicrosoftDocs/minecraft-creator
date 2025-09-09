@@ -59,11 +59,12 @@ Publishing to Realms uploads your current project to a chosen Realm slot so you 
 2. Choose the Realm you want to work in, then select the world slot you want to publish to.
 
 3. Click Download to save the current contents of the selected Realm slot to your local `minecraftWorlds` folder.
-    > [!TIP] Always use this step to create a backup before you publish.
+    > [!TIP]
+    > Always use this step to create a backup before you publish.
 
 4. Click Publish to upload the current project to the selected Realm slot using the chosen settings. The process may take time for large worlds or slow connections. Keep the Editor open until it completes.
     > [!NOTE] 
-    > Your choices apply to the published world in the selected slot. Your publishing options for Realms are similar to those on the Export pane (game mode, difficulty, etc.). See [Export](EditorExport.md) for specifics.
+    > Your choices apply to the published world in the selected slot. Your publishing options for Realms are similar to those on the Export pane (game mode, difficulty, etc.).
 
 
 ## Tips

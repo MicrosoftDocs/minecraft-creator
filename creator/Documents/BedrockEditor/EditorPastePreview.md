@@ -54,11 +54,11 @@ Use Paste Preview to place a copied or cut selection exactly where you want it. 
 
 These shortcuts work while the Paste Preview is active. For the full list of shortcuts, see [Editor Hotkeys](../BedrockEditor/EditorKeyboardInputs.md).
 
-|Command |Shortcut |Alternate|
+|Command|Shortcut|Alternate|
 |:---|:---|:---|
 |Open Paste Preview|**Ctrl** + **Shift** + **V**|-|
 |Move Origin (anchor)|**Ctrl** + **Up/Down/Left/Right**|**Ctrl** + **Page Up/Page Down**|
-|Nudge Offset (relative)|**Ctrl** + **Shift** + **Up/Down/Left/Right**|-|**Ctrl** + **Shift** + **Page Up/Page Down**
+|Nudge Offset (relative)|**Ctrl** + **Shift** + **Up/Down/Left/Right**|**Ctrl** + **Shift** + **Page Up/Page Down**|
 |Rotate clockwise 90°|**R**|-|
 |Rotate counter‑clockwise 90°|**Shift** + **R**|-|
 |Mirror X‑axis|**X**|-|
