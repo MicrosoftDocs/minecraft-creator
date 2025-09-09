@@ -76,6 +76,8 @@
       href: minecraft/server/CompoundBlockVolumePositionRelativity.md
     - name: ContainerRulesErrorReason
       href: minecraft/server/ContainerRulesErrorReason.md
+    - name: ControlScheme
+      href: minecraft/server/ControlScheme.md
     - name: CustomCommandErrorReason
       href: minecraft/server/CustomCommandErrorReason.md
     - name: CustomCommandParamType
@@ -240,6 +242,8 @@
       href: minecraft/server/BlockPistonComponent.md
     - name: BlockRecordPlayerComponent
       href: minecraft/server/BlockRecordPlayerComponent.md
+    - name: BlockRedstoneProducerComponent
+      href: minecraft/server/BlockRedstoneProducerComponent.md
     - name: BlockSignComponent
       href: minecraft/server/BlockSignComponent.md
     - name: BlockStates
@@ -286,6 +290,8 @@
       href: minecraft/server/CustomCommandRegistry.md
     - name: CustomComponentParameters
       href: minecraft/server/CustomComponentParameters.md
+    - name: DamagedByEntityCondition
+      href: minecraft/server/DamagedByEntityCondition.md
     - name: DataDrivenEntityTriggerAfterEvent
       href: minecraft/server/DataDrivenEntityTriggerAfterEvent.md
     - name: DataDrivenEntityTriggerAfterEventSignal
@@ -312,6 +318,8 @@
       href: minecraft/server/EffectTypes.md
     - name: EmptyLootItem
       href: minecraft/server/EmptyLootItem.md
+    - name: EnchantInfo
+      href: minecraft/server/EnchantInfo.md
     - name: EnchantmentType
       href: minecraft/server/EnchantmentType.md
     - name: EnchantmentTypes
@@ -358,6 +366,10 @@
       href: minecraft/server/EntityFlyingSpeedComponent.md
     - name: EntityFrictionModifierComponent
       href: minecraft/server/EntityFrictionModifierComponent.md
+    - name: EntityHasMarkVariantCondition
+      href: minecraft/server/EntityHasMarkVariantCondition.md
+    - name: EntityHasVariantCondition
+      href: minecraft/server/EntityHasVariantCondition.md
     - name: EntityHealableComponent
       href: minecraft/server/EntityHealableComponent.md
     - name: EntityHealthChangedAfterEvent
@@ -410,6 +422,8 @@
       href: minecraft/server/EntityIsTamedComponent.md
     - name: EntityItemComponent
       href: minecraft/server/EntityItemComponent.md
+    - name: EntityKilledCondition
+      href: minecraft/server/EntityKilledCondition.md
     - name: EntityLavaMovementComponent
       href: minecraft/server/EntityLavaMovementComponent.md
     - name: EntityLeashableComponent
@@ -524,6 +538,8 @@
       href: minecraft/server/GameRules.md
     - name: InputInfo
       href: minecraft/server/InputInfo.md
+    - name: IsBabyCondition
+      href: minecraft/server/IsBabyCondition.md
     - name: ItemBookComponent
       href: minecraft/server/ItemBookComponent.md
     - name: ItemCompleteUseAfterEvent
@@ -604,6 +620,12 @@
       href: minecraft/server/ItemUseBeforeEventSignal.md
     - name: ItemUseOnEvent
       href: minecraft/server/ItemUseOnEvent.md
+    - name: KilledByEntityCondition
+      href: minecraft/server/KilledByEntityCondition.md
+    - name: KilledByPlayerCondition
+      href: minecraft/server/KilledByPlayerCondition.md
+    - name: KilledByPlayerOrPetsCondition
+      href: minecraft/server/KilledByPlayerOrPetsCondition.md
     - name: LeverActionAfterEvent
       href: minecraft/server/LeverActionAfterEvent.md
     - name: LeverActionAfterEventSignal
@@ -612,6 +634,8 @@
       href: minecraft/server/ListBlockVolume.md
     - name: LootItem
       href: minecraft/server/LootItem.md
+    - name: LootItemCondition
+      href: minecraft/server/LootItemCondition.md
     - name: LootPool
       href: minecraft/server/LootPool.md
     - name: LootPoolEntry
@@ -626,6 +650,8 @@
       href: minecraft/server/LootTableManager.md
     - name: LootTableReference
       href: minecraft/server/LootTableReference.md
+    - name: MatchToolCondition
+      href: minecraft/server/MatchToolCondition.md
     - name: MessageReceiveAfterEvent
       href: minecraft/server/MessageReceiveAfterEvent.md
     - name: MolangVariableMap
@@ -634,6 +660,8 @@
       href: minecraft/server/PackSettingChangeAfterEvent.md
     - name: PackSettingChangeAfterEventSignal
       href: minecraft/server/PackSettingChangeAfterEventSignal.md
+    - name: PassengerOfEntityCondition
+      href: minecraft/server/PassengerOfEntityCondition.md
     - name: PistonActivateAfterEvent
       href: minecraft/server/PistonActivateAfterEvent.md
     - name: PistonActivateAfterEventSignal
@@ -734,6 +762,10 @@
       href: minecraft/server/PlayerSwingStartAfterEvent.md
     - name: PlayerSwingStartAfterEventSignal
       href: minecraft/server/PlayerSwingStartAfterEventSignal.md
+    - name: PlayerUseNameTagAfterEvent
+      href: minecraft/server/PlayerUseNameTagAfterEvent.md
+    - name: PlayerUseNameTagAfterEventSignal
+      href: minecraft/server/PlayerUseNameTagAfterEventSignal.md
     - name: PotionDeliveryType
       href: minecraft/server/PotionDeliveryType.md
     - name: PotionEffectType
@@ -756,6 +788,14 @@
       href: minecraft/server/ProjectileHitEntityAfterEvent.md
     - name: ProjectileHitEntityAfterEventSignal
       href: minecraft/server/ProjectileHitEntityAfterEventSignal.md
+    - name: RandomChanceCondition
+      href: minecraft/server/RandomChanceCondition.md
+    - name: RandomChanceWithLootingCondition
+      href: minecraft/server/RandomChanceWithLootingCondition.md
+    - name: RandomDifficultyChanceCondition
+      href: minecraft/server/RandomDifficultyChanceCondition.md
+    - name: RandomRegionalDifficultyChanceCondition
+      href: minecraft/server/RandomRegionalDifficultyChanceCondition.md
     - name: Scoreboard
       href: minecraft/server/Scoreboard.md
     - name: ScoreboardIdentity
@@ -1128,6 +1168,8 @@
       href: minecraft/server-editor/StructureSource.md
     - name: ThemeSettingsColorKey
       href: minecraft/server-editor/ThemeSettingsColorKey.md
+    - name: WidgetCollisionType
+      href: minecraft/server-editor/WidgetCollisionType.md
     - name: WidgetComponentType
       href: minecraft/server-editor/WidgetComponentType.md
     - name: WidgetGizmoEventType
@@ -1268,6 +1310,8 @@
       href: minecraft/server-editor/UserDefinedTransactionHandle.md
     - name: UserDefinedTransactionHandlerId
       href: minecraft/server-editor/UserDefinedTransactionHandlerId.md
+    - name: Vector2LimitObservableValidator
+      href: minecraft/server-editor/Vector2LimitObservableValidator.md
     - name: Vector3LimitObservableValidator
       href: minecraft/server-editor/Vector3LimitObservableValidator.md
     - name: Widget
@@ -1286,6 +1330,8 @@
       href: minecraft/server-editor/WidgetComponentGizmo.md
     - name: WidgetComponentGizmoStateChangeEventParameters
       href: minecraft/server-editor/WidgetComponentGizmoStateChangeEventParameters.md
+    - name: WidgetComponentGrid
+      href: minecraft/server-editor/WidgetComponentGrid.md
     - name: WidgetComponentGuide
       href: minecraft/server-editor/WidgetComponentGuide.md
     - name: WidgetComponentRenderPrimitive
@@ -1414,6 +1460,10 @@
       href: minecraft/server-editor/IMenuContainer.md
     - name: IMenuCreationParams
       href: minecraft/server-editor/IMenuCreationParams.md
+    - name: IMenuPropertyItem
+      href: minecraft/server-editor/IMenuPropertyItem.md
+    - name: IMenuPropertyItemOptions
+      href: minecraft/server-editor/IMenuPropertyItemOptions.md
     - name: IModalControlPane
       href: minecraft/server-editor/IModalControlPane.md
     - name: IModalOverlayPane
@@ -1488,6 +1538,10 @@
       href: minecraft/server-editor/IToggleGroupPropertyItemEntry.md
     - name: IToggleGroupPropertyItemOptions
       href: minecraft/server-editor/IToggleGroupPropertyItemOptions.md
+    - name: IVector2PropertyItem
+      href: minecraft/server-editor/IVector2PropertyItem.md
+    - name: IVector2PropertyItemOptions
+      href: minecraft/server-editor/IVector2PropertyItemOptions.md
     - name: IVector3PropertyItem
       href: minecraft/server-editor/IVector3PropertyItem.md
     - name: IVector3PropertyItemOptions
@@ -1512,6 +1566,8 @@
       href: minecraft/server-editor/WidgetComponentEntityOptions.md
     - name: WidgetComponentGizmoOptions
       href: minecraft/server-editor/WidgetComponentGizmoOptions.md
+    - name: WidgetComponentGridOptions
+      href: minecraft/server-editor/WidgetComponentGridOptions.md
     - name: WidgetComponentGuideOptions
       href: minecraft/server-editor/WidgetComponentGuideOptions.md
     - name: WidgetComponentRenderPrimitiveOptions

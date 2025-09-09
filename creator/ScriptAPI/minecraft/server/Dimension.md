@@ -56,6 +56,9 @@ Type: *string*
 - [getEntitiesAtBlockLocation](#getentitiesatblocklocation)
 - [getEntitiesFromRay](#getentitiesfromray)
 ::: moniker range="=minecraft-bedrock-experimental"
+- [getGeneratedStructures](#getgeneratedstructures)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [getLightLevel](#getlightlevel)
 ::: moniker-end
 - [getPlayers](#getplayers)
@@ -192,13 +195,13 @@ function createExplosions(log: (message: string, status?: number) => void, targe
 
 ### **fillBlocks**
 `
-fillBlocks(volume: BlockVolumeBase | CompoundBlockVolume, block: BlockPermutation | BlockType | string, options?: BlockFillOptions): ListBlockVolume
+fillBlocks(volume: BlockVolumeBase, block: BlockPermutation | BlockType | string, options?: BlockFillOptions): ListBlockVolume
 `
 
 Fills an area of blocks with a specific block type.
 
 #### **Parameters**
-- **volume**: [*BlockVolumeBase*](BlockVolumeBase.md) | [*CompoundBlockVolume*](CompoundBlockVolume.md)
+- **volume**: [*BlockVolumeBase*](BlockVolumeBase.md)
   
   Volume of blocks to be filled.
 - **block**: [*BlockPermutation*](BlockPermutation.md) | [*BlockType*](BlockType.md) | *string*
@@ -505,6 +508,29 @@ Gets entities that intersect with a specified vector emanating from a location.
 Notes:
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getGeneratedStructures**
+`
+getGeneratedStructures(location: Vector3): (minecraftvanilladata.MinecraftFeatureTypes | string)[]
+`
+
+Returns a vector of generated structures that contain the specified location (ex: Pillager Outpost, Mineshaft, etc.). The vector will be empty if no structures are found.
+
+#### **Parameters**
+- **location**: *Vector3*
+  
+  Location at which to check for structures.
+
+**Returns** (*minecraftvanilladata.MinecraftFeatureTypes* | *string*)[]
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **getLightLevel**
