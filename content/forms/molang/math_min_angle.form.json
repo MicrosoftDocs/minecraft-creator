@@ -2,7 +2,7 @@
   "id": "`math.min_angle(value)`",
   "fields": [],
   "generated_doNotEdit": {
-    "id": "`math.min_angle(value)`",
+    "id": "math.min_angle(value)",
     "title": "Min Angle(value)",
     "description": "Minimize angle magnitude (in degrees) into the range [-180, 180)",
     "fields": []

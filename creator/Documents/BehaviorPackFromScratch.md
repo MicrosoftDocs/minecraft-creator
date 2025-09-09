@@ -4,6 +4,7 @@ ms.author: mikeam
 title: 'Create an Angry Cow: An Introduction To Behavior Packs (from scratch)'
 description: "An introduction to Behavior Packs and adding attacking behaviors to an in-game cow mob, starting from scratch."
 ms.service: minecraft-bedrock-edition
+ms.date: 09/09/2025
 ---
 
 # Introduction to Behavior Packs (from Scratch)
@@ -48,7 +49,7 @@ In this section, you will create a folder called **My_BEHAVIOR_Pack**. Well, act
 
 * Press **Win+R** to open **Run**.
 * If you are using main Minecraft releases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
-* Alternatively, if you are using preview Minecraft preleases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\games\com.mojang`
+* Alternatively, if you are using preview Minecraft versions, see more information about the folder to use in [this article](./GDKPCProjectFolder.md)
 * Click **OK**.
 
 2. Open the **development_behavior_packs** folder.

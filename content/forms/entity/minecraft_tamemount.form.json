@@ -18,6 +18,7 @@
         "description": "The list of items that, if carried while interacting with the entity, will anger it.",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "The list of items that, if carried while interacting with the entity, will anger it.",
           "fields": [
             {
@@ -35,6 +36,7 @@
         "description": "The list of items that can be used to increase the entity's temper and speed up the taming process.",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "The list of items that can be used to increase the entity's temper and speed up the taming process.",
           "fields": [
             {

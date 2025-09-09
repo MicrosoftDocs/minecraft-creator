@@ -472,6 +472,7 @@
         "description": "The list of entity definitions that this entity can breed with.",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "The list of entity definitions that this entity can breed with.",
           "fields": [
             {
@@ -551,6 +552,7 @@
         "description": "Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead.",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead.",
           "fields": [
             {
@@ -583,6 +585,7 @@
         "description": "The list of nearby block requirements to get the entity into the 'love' state.",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "The list of nearby block requirements to get the entity into the 'love' state.",
           "fields": [
             {
@@ -634,6 +637,7 @@
         "description": "Determines how likely the babies are to NOT inherit one of their parent's variances. Values are between 0.0 and 1.0, with a higher number meaning more likely to mutate.",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "Determines how likely the babies are to NOT inherit one of their parent's variances. Values are between 0.0 and 1.0, with a higher number meaning more likely to mutate.",
           "fields": [
             {

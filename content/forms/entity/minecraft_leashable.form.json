@@ -142,6 +142,7 @@
         "description": "Defines how this entity behaves when leashed to another entity. The first preset which \"filter\" conditions are met will be applied; if none match, a default configuration is used instead.",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "Defines how this entity behaves when leashed to another entity. The first preset which \"filter\" conditions are met will be applied; if none match, a default configuration is used instead.",
           "fields": [
             {

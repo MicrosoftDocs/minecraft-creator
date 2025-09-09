@@ -39,12 +39,6 @@
         ],
         "isRequired": true,
         "samples": {
-          "/vanilla/behavior_pack/items/wind_charge.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:projectile/",
-              "content": "wind_charge_projectile"
-            }
-          ],
           "/samples/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json": [
             {
               "path": "/minecraft:item/components/minecraft:projectile/",
@@ -61,14 +55,6 @@
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/items/wind_charge.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:projectile/",
-          "content": {
-            "projectile_entity": "wind_charge_projectile"
-          }
-        }
-      ],
       "/samples/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json": [
         {
           "path": "/minecraft:item/components/minecraft:projectile/",

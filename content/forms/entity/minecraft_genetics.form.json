@@ -92,6 +92,7 @@
         "description": "The list of genes that this entity has and will cross with a partner during breeding.",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "The list of genes that this entity has and will cross with a partner during breeding.",
           "fields": [
             {
@@ -106,6 +107,7 @@
               "description": "The list of genetic variants for this gene. These check for particular allele combinations and fire events when all of them are satisfied.",
               "dataType": 15,
               "subForm": {
+                "id": "",
                 "description": "The list of genetic variants for this gene. These check for particular allele combinations and fire events when all of them are satisfied.",
                 "fields": [
                   {
