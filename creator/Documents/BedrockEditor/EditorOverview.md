@@ -116,7 +116,7 @@ Before we dive into the Tool Mode UI, you might want to take a moment to familia
 
 ## Editor and Bedrock Dedicated Server
 
-Editor is enabled in the Win32 Bedrock Dedicated Server.
+Editor is enabled in the Windows version of Bedrock Dedicated Server.
 There are two ways to launch it:
 
 ### Launch editor from the command line
