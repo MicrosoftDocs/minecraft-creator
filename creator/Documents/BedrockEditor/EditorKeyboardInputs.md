@@ -101,6 +101,7 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 
 ## Modal Tools
 
+
 ### Selection
 
 | Name | Shortcut | Exclusive |
@@ -136,6 +137,7 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
 | Brush Paint Tool | Ctrl+B | - |
+
 
 ### Paste Preview
 
@@ -224,7 +226,7 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Quaternary Action (Ctrl+Shift+Left-click) | Ctrl+Shift+(Numpad +)
 
 
-### Summon Tool
+### Summon
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
