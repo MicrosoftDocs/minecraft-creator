@@ -240,6 +240,8 @@
       href: minecraft/server/BlockPermutation.md
     - name: BlockPistonComponent
       href: minecraft/server/BlockPistonComponent.md
+    - name: BlockPrecipitationInteractionsComponent
+      href: minecraft/server/BlockPrecipitationInteractionsComponent.md
     - name: BlockRecordPlayerComponent
       href: minecraft/server/BlockRecordPlayerComponent.md
     - name: BlockRedstoneProducerComponent
@@ -324,6 +326,12 @@
       href: minecraft/server/EnchantmentType.md
     - name: EnchantmentTypes
       href: minecraft/server/EnchantmentTypes.md
+    - name: EnchantRandomEquipmentFunction
+      href: minecraft/server/EnchantRandomEquipmentFunction.md
+    - name: EnchantRandomlyFunction
+      href: minecraft/server/EnchantRandomlyFunction.md
+    - name: EnchantWithLevelsFunction
+      href: minecraft/server/EnchantWithLevelsFunction.md
     - name: Entity
       href: minecraft/server/Entity.md
     - name: EntityAddRiderComponent
@@ -516,6 +524,8 @@
       href: minecraft/server/EntityVariantComponent.md
     - name: EntityWantsJockeyComponent
       href: minecraft/server/EntityWantsJockeyComponent.md
+    - name: ExplorationMapFunction
+      href: minecraft/server/ExplorationMapFunction.md
     - name: ExplosionAfterEvent
       href: minecraft/server/ExplosionAfterEvent.md
     - name: ExplosionAfterEventSignal
@@ -524,10 +534,14 @@
       href: minecraft/server/ExplosionBeforeEvent.md
     - name: ExplosionBeforeEventSignal
       href: minecraft/server/ExplosionBeforeEventSignal.md
+    - name: ExplosionDecayFunction
+      href: minecraft/server/ExplosionDecayFunction.md
     - name: FeedItem
       href: minecraft/server/FeedItem.md
     - name: FeedItemEffect
       href: minecraft/server/FeedItemEffect.md
+    - name: FillContainerFunction
+      href: minecraft/server/FillContainerFunction.md
     - name: FluidContainer
       href: minecraft/server/FluidContainer.md
     - name: GameRuleChangeAfterEvent
@@ -632,10 +646,14 @@
       href: minecraft/server/LeverActionAfterEventSignal.md
     - name: ListBlockVolume
       href: minecraft/server/ListBlockVolume.md
+    - name: LootingEnchantFunction
+      href: minecraft/server/LootingEnchantFunction.md
     - name: LootItem
       href: minecraft/server/LootItem.md
     - name: LootItemCondition
       href: minecraft/server/LootItemCondition.md
+    - name: LootItemFunction
+      href: minecraft/server/LootItemFunction.md
     - name: LootPool
       href: minecraft/server/LootPool.md
     - name: LootPoolEntry
@@ -788,12 +806,18 @@
       href: minecraft/server/ProjectileHitEntityAfterEvent.md
     - name: ProjectileHitEntityAfterEventSignal
       href: minecraft/server/ProjectileHitEntityAfterEventSignal.md
+    - name: RandomAuxValueFunction
+      href: minecraft/server/RandomAuxValueFunction.md
+    - name: RandomBlockStateFunction
+      href: minecraft/server/RandomBlockStateFunction.md
     - name: RandomChanceCondition
       href: minecraft/server/RandomChanceCondition.md
     - name: RandomChanceWithLootingCondition
       href: minecraft/server/RandomChanceWithLootingCondition.md
     - name: RandomDifficultyChanceCondition
       href: minecraft/server/RandomDifficultyChanceCondition.md
+    - name: RandomDyeFunction
+      href: minecraft/server/RandomDyeFunction.md
     - name: RandomRegionalDifficultyChanceCondition
       href: minecraft/server/RandomRegionalDifficultyChanceCondition.md
     - name: Scoreboard
@@ -814,10 +838,40 @@
       href: minecraft/server/Seat.md
     - name: ServerMessageAfterEventSignal
       href: minecraft/server/ServerMessageAfterEventSignal.md
+    - name: SetArmorTrimFunction
+      href: minecraft/server/SetArmorTrimFunction.md
+    - name: SetBannerDetailsFunction
+      href: minecraft/server/SetBannerDetailsFunction.md
+    - name: SetBookContentsFunction
+      href: minecraft/server/SetBookContentsFunction.md
+    - name: SetDataFromColorIndexFunction
+      href: minecraft/server/SetDataFromColorIndexFunction.md
+    - name: SetItemCountFunction
+      href: minecraft/server/SetItemCountFunction.md
+    - name: SetItemDamageFunction
+      href: minecraft/server/SetItemDamageFunction.md
+    - name: SetItemDataFunction
+      href: minecraft/server/SetItemDataFunction.md
+    - name: SetItemLoreFunction
+      href: minecraft/server/SetItemLoreFunction.md
+    - name: SetItemNameFunction
+      href: minecraft/server/SetItemNameFunction.md
+    - name: SetOminousBottleFunction
+      href: minecraft/server/SetOminousBottleFunction.md
+    - name: SetPotionFunction
+      href: minecraft/server/SetPotionFunction.md
+    - name: SetSpawnEggFunction
+      href: minecraft/server/SetSpawnEggFunction.md
+    - name: SetStewEffectFunction
+      href: minecraft/server/SetStewEffectFunction.md
     - name: ShutdownBeforeEventSignal
       href: minecraft/server/ShutdownBeforeEventSignal.md
     - name: ShutdownEvent
       href: minecraft/server/ShutdownEvent.md
+    - name: SmeltItemFunction
+      href: minecraft/server/SmeltItemFunction.md
+    - name: SpecificEnchantFunction
+      href: minecraft/server/SpecificEnchantFunction.md
     - name: StartupBeforeEventSignal
       href: minecraft/server/StartupBeforeEventSignal.md
     - name: StartupEvent

@@ -641,13 +641,13 @@ function sendTranslatedMessage(
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **setControlScheme**
 `
-setControlScheme(controlScheme?: string): void
+setControlScheme(controlScheme?: ControlScheme): void
 `
 
 Set a player's control scheme. The player's active camera preset must be set by scripts like with camera.setCamera() or commands.
 
 #### **Parameters**
-- **controlScheme**?: *string* = `null`
+- **controlScheme**?: [*ControlScheme*](ControlScheme.md) = `null`
   
   Control scheme type. If this argument is undefined, this method will clear the player's control scheme back to the player camera's default control scheme.
 

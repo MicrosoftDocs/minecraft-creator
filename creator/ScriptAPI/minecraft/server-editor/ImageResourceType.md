@@ -18,3 +18,5 @@ Supported image types.
 `Block = 1`
 ### **Icon**
 `Icon = 2`
+### **Structure**
+`Structure = 3`

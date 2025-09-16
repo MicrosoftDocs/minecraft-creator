@@ -4,23 +4,24 @@ ms.author: mikeam
 title: Introduction to Particles
 description: "A reference document detailing the basic concepts behind particles"
 ms.service: minecraft-bedrock-edition
+ms.date: 09/10/2025
 ---
 
 # Introduction to Particles
 
-Particle effects are one of the unsung heroes of Minecraft. From smoke effects to magic spells, from falling leaves to bubbles coming out of a fish's mouth... all of these effects are possible thanks to the magic of particles.
+Particle effects are one of the unsung heroes of Minecraft. From smoke effects to magic spells, from falling leaves to bubbles coming out of a fish's mouth&mdash;all of these effects are possible thanks to the magic of particles.
 
-At their most base level, particle effects consist of basic render parameters detailing the material and texture of the particle, followed by a set of components which can be placed in any order. A full list of particle components can be found [here](ParticleComponentList.md).
+A particle effect consists of basic render parameters detailing the particle's material and texture, followed by a set of [particle and/or emitter components](./ParticleComponentList.md) which can be placed in any order.
 
-## Naming and Location
+## Naming and location
 
-Minecraft: Bedrock Edition uses a custom JSON format for particle effects. Files are stored in the 'particles' folder of a resource pack. Similarly to models and entities, particles are referenced by their identifier, so the file can be saved in any subfolder of the 'particles' folder without having to reference it.
+Minecraft: Bedrock Edition uses a custom JSON format for particle effects. Files are stored in the **particles** folder of a Resource Pack. Similarly to models and entities, particles are referenced by their identifier, so the file can be saved in any subfolder of the **particles** folder without having to reference it.
 
-The particle identifier is specified at the top of the JSON file, and consists of a namespace and name, such as 'sample:colored_smoke'. As with all files that utilize namespacing, 'minecraft' as a namespace is reserved for Vanilla files.
+The particle identifier is specified at the top of the JSON file, and consists of a namespace and name, such as `sample:colored_smoke`. As with all files that utilize namespacing, `minecraft:` as a namespace is reserved for Vanilla files.
 
 ## Units
 
-All values in particle effects use meters (blocks) and seconds as units. Velocity is stated as meters per second (m/s) and acceleration is meters per second squared (m/s2). Rotations use degrees for both rotations and trigonometric functions.
+All values in particle effects use meters (blocks) and seconds as units. Velocity is stated as meters per second (m/s) and acceleration is meters per second squared (m/s&sup2;). Rotations use degrees for both rotations and trigonometric functions.
 
 Now that we have some context, let's take a look at an actual particle. This is a flame particle, like you would find on a lit torch:
 
@@ -69,6 +70,7 @@ Now that we have some context, let's take a look at an actual particle. This is 
 }
 
 ```
+
 In this example we can see the individual aspects that make up the effect, such as the 'particles_alpha' material and the 'texture/particle/particles' texture, and the five individual components. Put all of this together, and you've got a flame particle!
 
 Next, let's discuss some of these items in a little more detail.
@@ -91,16 +93,11 @@ For example, emitters usually need to have rules for their lifetime, so the effe
 
 A bonus benefit to this system is that new components can be added later and combined (where it makes sense, of course) to get different behaviors. For example, a particle might have a dynamic component for moving around, and after testing a collision component can be added to handle interacting with the terrain.
 
-## Particle Example Pack
+## Particle example pack
 
-Examples of various particles can be found here:
+Examples of various stand-alone particle effect can be found in the [Particle Example Pack](https://github.com/microsoft/minecraft-samples/tree/main/particles_examples_1.19). Please refer to the examples in the pack to see various ways to use the particle system.
 
-> [!div class="nextstepaction"]
-> [Particle Example Pack](https://github.com/microsoft/minecraft-samples/tree/main/particles_examples_1.19)
-
-These are examples of various stand-alone particle effects.  Please refer to the examples in the pack to see various ways to use the particle system.
-
-To invoke an example particle with the examples particles pack enabled, bring up the console, type:
+To invoke an example particle with the examples particles pack enabled, bring up the console and type:
 
 `/particle name x y z`
 
@@ -114,8 +111,8 @@ where "name" is the name of the particle effect, and `x y z` are the coordinates
 
 | Name| Description |
 |:-----------|:-----------|
-| minecraft:example_bezier_chaincurve| Demonstrates the use of a bezier chain curve in an effect |
-| minecraft:example_beziercurve| Demonstrates the use of a bezier curve in an effect |
+| minecraft:example_bezier_chaincurve| Demonstrates the use of a Bezier chain curve in an effect |
+| minecraft:example_beziercurve| Demonstrates the use of a Bezier curve in an effect |
 | minecraft:example_blendmode_add| Demonstrates `particles_add` material with texture of varying opacity |
 | minecraft:example_blendmode_alpha| Demonstrates `particles_alpha` material with texture of varying opacity  |
 | minecraft:example_blendmode_blend | Demonstrates `particles_blend` material with texture of varying opacity |

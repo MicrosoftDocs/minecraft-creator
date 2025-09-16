@@ -1,0 +1,10 @@
+{
+  "id": "query.modified_swing_duration",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.modified_swing_duration",
+    "title": "Modified Swing Duration",
+    "description": "Returns the duration of the mob's swing/attack animation, determined by the carried item and modified by effects applied on the mob. To access the swing/attack animation progress, use \"variable.attack_time\" instead.",
+    "fields": []
+  }
+}

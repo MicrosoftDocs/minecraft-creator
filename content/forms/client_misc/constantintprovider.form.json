@@ -1,5 +1,12 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "id": "type",
+      "title": "Provider Type",
+      "description": "Provider Type",
+      "dataType": 2
+    }
+  ],
   "generated_doNotEdit": {
     "title": "ConstantIntProvider",
     "description": "Specifies a constant integer",

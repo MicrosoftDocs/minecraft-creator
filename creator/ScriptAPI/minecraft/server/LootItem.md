@@ -20,6 +20,11 @@ Represents a loot pool entry containing an item to drop.
 
 ## Properties
 
+### **functions**
+`read-only functions: LootItemFunction[];`
+
+Type: [*LootItemFunction*](LootItemFunction.md)[]
+
 ### **name**
 `read-only name?: ItemType;`
 

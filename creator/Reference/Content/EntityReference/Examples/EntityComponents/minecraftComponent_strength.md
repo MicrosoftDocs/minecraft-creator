@@ -16,12 +16,12 @@ Defines the entity's strength to carry items.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| max | 5 | Integer number | The maximum strength of this entity | Llama: `5` | 
-| value | 1 | Integer number | The initial value of the strength | Llama: `1`, `2`, `3`, `4`, `5` | 
+| max | 5 | Integer number | The maximum strength of this entity | Frost Moose: `5` | 
+| value | 1 | Integer number | The initial value of the strength | Frost Moose: `1`, `2`, `3`, `4`, `5` | 
 
 ## Samples
 
-#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
+#### [Frost Moose](https://github.com/microsoft/minecraft-samples/tree/main/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json)
 
 At /minecraft:entity/component_groups/minecraft:strength_1/minecraft:strength/: 
 

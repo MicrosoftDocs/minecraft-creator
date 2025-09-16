@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_bone_aabb
 
-Returns the axis aligned bounding box of a bone as a struct with members '.min', '.max', along with '.x', '.y', and '.z' values for each.
+Returns the axis aligned bounding box of a bone as a structure with members '.min', '.max', along with '.x', '.y', and '.z' values for each.

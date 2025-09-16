@@ -1,5 +1,12 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "id": "target",
+      "title": "Filter target subject",
+      "description": "Filter target subject",
+      "dataType": 2
+    }
+  ],
   "generated_doNotEdit": {
     "title": "Trigger",
     "description": "Trigger",

@@ -53,6 +53,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
 - Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
+#### Added *[`BlockPrecipitationInteractionsComponent`](BlockPrecipitationInteractionsComponent.md)*
 #### Added *[`BlockRedstoneProducerComponent`](BlockRedstoneProducerComponent.md)*
 #### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*
 - Added function *[`getBoundingBox`](BlockVolumeBase.md#getboundingbox)*
@@ -86,6 +87,9 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`stopSound`](Dimension.md#stopsound)*
 #### Added *[`EmptyLootItem`](EmptyLootItem.md)*
 #### Added *[`EnchantInfo`](EnchantInfo.md)*
+#### Added *[`EnchantRandomEquipmentFunction`](EnchantRandomEquipmentFunction.md)*
+#### Added *[`EnchantRandomlyFunction`](EnchantRandomlyFunction.md)*
+#### Added *[`EnchantWithLevelsFunction`](EnchantWithLevelsFunction.md)*
 #### Changed *[`Entity`](Entity.md)*
 - Added property *[`target`](Entity.md#target)*
 - Added function *[`getAllBlocksStandingOn`](Entity.md#getallblocksstandingon)*
@@ -102,6 +106,9 @@ description: Changelog of the `@minecraft/server` module
 - Changed function *[`get`](EntityTypes.md#get)*
   - Changed return type from [*EntityType*](EntityType.md) to *EntityType* | *undefined*
   - Changed argument `identifier` type from *string* to *EntityIdentifierType<NoInfer<T>>*
+#### Added *[`ExplorationMapFunction`](ExplorationMapFunction.md)*
+#### Added *[`ExplosionDecayFunction`](ExplosionDecayFunction.md)*
+#### Added *[`FillContainerFunction`](FillContainerFunction.md)*
 #### Changed *[`GameRules`](GameRules.md)*
 - Added property *[`locatorBar`](GameRules.md#locatorbar)*
 #### Added *[`IsBabyCondition`](IsBabyCondition.md)*
@@ -113,8 +120,10 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`KilledByEntityCondition`](KilledByEntityCondition.md)*
 #### Added *[`KilledByPlayerCondition`](KilledByPlayerCondition.md)*
 #### Added *[`KilledByPlayerOrPetsCondition`](KilledByPlayerOrPetsCondition.md)*
+#### Added *[`LootingEnchantFunction`](LootingEnchantFunction.md)*
 #### Added *[`LootItem`](LootItem.md)*
 #### Added *[`LootItemCondition`](LootItemCondition.md)*
+#### Added *[`LootItemFunction`](LootItemFunction.md)*
 #### Added *[`LootPool`](LootPool.md)*
 #### Added *[`LootPoolEntry`](LootPoolEntry.md)*
 #### Added *[`LootPoolTiers`](LootPoolTiers.md)*
@@ -147,11 +156,29 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PotionDeliveryType`](PotionDeliveryType.md)*
 #### Added *[`PotionEffectType`](PotionEffectType.md)*
 #### Added *[`Potions`](Potions.md)*
+#### Added *[`RandomAuxValueFunction`](RandomAuxValueFunction.md)*
+#### Added *[`RandomBlockStateFunction`](RandomBlockStateFunction.md)*
 #### Added *[`RandomChanceCondition`](RandomChanceCondition.md)*
 #### Added *[`RandomChanceWithLootingCondition`](RandomChanceWithLootingCondition.md)*
 #### Added *[`RandomDifficultyChanceCondition`](RandomDifficultyChanceCondition.md)*
+#### Added *[`RandomDyeFunction`](RandomDyeFunction.md)*
 #### Added *[`RandomRegionalDifficultyChanceCondition`](RandomRegionalDifficultyChanceCondition.md)*
 #### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
+#### Added *[`SetArmorTrimFunction`](SetArmorTrimFunction.md)*
+#### Added *[`SetBannerDetailsFunction`](SetBannerDetailsFunction.md)*
+#### Added *[`SetBookContentsFunction`](SetBookContentsFunction.md)*
+#### Added *[`SetDataFromColorIndexFunction`](SetDataFromColorIndexFunction.md)*
+#### Added *[`SetItemCountFunction`](SetItemCountFunction.md)*
+#### Added *[`SetItemDamageFunction`](SetItemDamageFunction.md)*
+#### Added *[`SetItemDataFunction`](SetItemDataFunction.md)*
+#### Added *[`SetItemLoreFunction`](SetItemLoreFunction.md)*
+#### Added *[`SetItemNameFunction`](SetItemNameFunction.md)*
+#### Added *[`SetOminousBottleFunction`](SetOminousBottleFunction.md)*
+#### Added *[`SetPotionFunction`](SetPotionFunction.md)*
+#### Added *[`SetSpawnEggFunction`](SetSpawnEggFunction.md)*
+#### Added *[`SetStewEffectFunction`](SetStewEffectFunction.md)*
+#### Added *[`SmeltItemFunction`](SmeltItemFunction.md)*
+#### Added *[`SpecificEnchantFunction`](SpecificEnchantFunction.md)*
 #### Changed *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
 - Added property *[`watchdogTerminate`](SystemBeforeEvents.md#watchdogterminate)*
 #### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*

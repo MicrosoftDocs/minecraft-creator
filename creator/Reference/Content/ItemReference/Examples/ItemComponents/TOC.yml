@@ -34,6 +34,8 @@
   href: minecraft_enchantable.md
 - name: minecraft:entity_placer
   href: minecraft_entity_placer.md
+- name: minecraft:fire_resistant
+  href: minecraft_fire_resistant.md
 - name: minecraft:food
   href: minecraft_food.md
 - name: minecraft:fuel
@@ -74,6 +76,8 @@
   href: minecraft_storage_weight_limit.md
 - name: minecraft:storage_weight_modifier
   href: minecraft_storage_weight_modifier.md
+- name: minecraft:swing_duration
+  href: minecraft_swing_duration.md
 - name: minecraft:tags
   href: minecraft_tags.md
 - name: minecraft:throwable

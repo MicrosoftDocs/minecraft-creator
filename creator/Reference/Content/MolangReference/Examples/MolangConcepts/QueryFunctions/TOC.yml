@@ -32,6 +32,8 @@
   href: query_armor_texture_slot.md
 - name: query.average_frame_time
   href: query_average_frame_time.md
+- name: query.base_swing_duration
+  href: query_base_swing_duration.md
 - name: query.blocking
   href: query_blocking.md
 - name: query.block_face
@@ -450,6 +452,8 @@
   href: query_modified_distance_moved.md
 - name: query.modified_move_speed
   href: query_modified_move_speed.md
+- name: query.modified_swing_duration
+  href: query_modified_swing_duration.md
 - name: query.moon_brightness
   href: query_moon_brightness.md
 - name: query.moon_phase

@@ -5,7 +5,7 @@
   "generated_doNotEdit": {
     "id": "query.spellcolor",
     "title": "Spellcolor",
-    "description": "Returns a struct representing the entity spell color for the specified entity. The struct contains '.r' '.g' '.b' and '.a' members, each 0.0 to 1.0. If no actor is specified, each member value will be 0.0.",
+    "description": "Returns a representing the entity spell color for the specified entity. The struct contains '.r' '.g' '.b' and '.a' members, each 0.0 to 1.0. If no actor is specified, each member value will be 0.0.",
     "fields": []
   }
 }
