@@ -16,4 +16,4 @@ Component that determines how the block will interact with rain and snow.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| precipitation_behavior | accumulate snow | String | What behavior should the block have. Three possible values: obstruct_rain, obstruct_rain_accumulate_snow and none |  | 
+| precipitation_behavior | accumulate snow | String | What behavior should the block have. Three possible values: obrain, obstruct_rain_accumulate_snow and none |  | 

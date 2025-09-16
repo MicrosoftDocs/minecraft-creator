@@ -1,5 +1,20 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "id": "sound_event",
+      "title": "Sound Event",
+      "description": "Sound event type: 13, cat, blocks, chirp, far, mall, mellohi, stal, strad, ward, 11, wait, pigstep, otherside, 5, relic.",
+      "dataType": 2,
+      "samples": {
+        "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+          {
+            "path": "/minecraft:item/components/minecraft:record/",
+            "content": "pre_ram.screamer"
+          }
+        ]
+      }
+    }
+  ],
   "description": "Used by record items to play music.",
   "samples": {
     "sample": [

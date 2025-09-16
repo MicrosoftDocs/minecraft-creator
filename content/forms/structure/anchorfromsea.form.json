@@ -1,0 +1,18 @@
+{
+  "id": "AnchorFromSea",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "AnchorFromSea",
+    "title": "Structure AnchorFromSea",
+    "description": "Specifies the vertical anchor",
+    "fields": [
+      {
+        "id": "from_sea",
+        "title": "From Sea",
+        "description": "Offset from anchored vertical position",
+        "dataType": 0,
+        "isRequired": true
+      }
+    ]
+  }
+}

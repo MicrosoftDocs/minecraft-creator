@@ -1,5 +1,12 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "id": "processor_type",
+      "title": "Processors Type",
+      "description": "Processors Type",
+      "dataType": 2
+    }
+  ],
   "generated_doNotEdit": {
     "title": "JigsawStructure Processors BlockRules",
     "description": "Replaces and modifies blocks based on a series of rules",

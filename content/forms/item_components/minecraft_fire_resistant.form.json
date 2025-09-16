@@ -1,0 +1,17 @@
+{
+  "id": "minecraft:fire_resistant",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:fire_resistant",
+    "title": "Item Components Fire Resistant",
+    "description": "Determines whether the item is immune to burning when dropped in fire or lava.",
+    "fields": [
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "Determines whether the item is immune to burning when dropped in fire or lava.",
+        "dataType": 1
+      }
+    ]
+  }
+}
