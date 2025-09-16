@@ -37,6 +37,7 @@
         "description": "List of entity types that this mob considers valid targets",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "List of entity types that this mob considers valid targets",
           "fields": [
             {

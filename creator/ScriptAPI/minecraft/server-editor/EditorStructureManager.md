@@ -14,16 +14,16 @@ description: Contents of the @minecraft/server-editor.EditorStructureManager cla
 - [createFromClipboardItem](#createfromclipboarditem)
 - [deleteStructure](#deletestructure)
 - [getExistingTags](#getexistingtags)
-- [getOrCreateStructure](#getorcreatestructure)
+- [getStructure](#getstructure)
 - [searchStructures](#searchstructures)
 
 ### **createEmpty**
 `
-createEmpty(id: string, size: minecraftserver.Vector3): EditorStructure
+createEmpty(fullName: string, size: minecraftserver.Vector3): EditorStructure
 `
 
 #### **Parameters**
-- **id**: *string*
+- **fullName**: *string*
 - **size**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 **Returns** [*EditorStructure*](EditorStructure.md)
@@ -34,12 +34,12 @@ Notes:
 
 ### **createFromClipboardItem**
 `
-createFromClipboardItem(item: ClipboardItem, structureName: string): EditorStructure
+createFromClipboardItem(item: ClipboardItem, fullName: string): EditorStructure
 `
 
 #### **Parameters**
 - **item**: [*ClipboardItem*](ClipboardItem.md)
-- **structureName**: *string*
+- **fullName**: *string*
 
 **Returns** [*EditorStructure*](EditorStructure.md)
   
@@ -70,9 +70,9 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
 
-### **getOrCreateStructure**
+### **getStructure**
 `
-getOrCreateStructure(id: string): EditorStructure
+getStructure(id: string): EditorStructure
 `
 
 #### **Parameters**

@@ -11,6 +11,15 @@ description: Contents of the @minecraft/server-editor.EditorStructure class.
 
 ## Properties
 
+### **description**
+`read-only description: string;`
+
+Type: *string*
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*@minecraft/server.InvalidStructureError*](../../../scriptapi/minecraft/server/InvalidStructureError.md)
+
 ### **displayName**
 `read-only displayName: string;`
 
@@ -30,10 +39,73 @@ Type: *string*
 
 Type: *boolean*
 
+### **normalizedOrigin**
+`read-only normalizedOrigin: minecraftserver.Vector3;`
+
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*@minecraft/server.InvalidStructureError*](../../../scriptapi/minecraft/server/InvalidStructureError.md)
+
+### **notes**
+`read-only notes: string;`
+
+Type: *string*
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*@minecraft/server.InvalidStructureError*](../../../scriptapi/minecraft/server/InvalidStructureError.md)
+
+### **offset**
+`read-only offset: minecraftserver.Vector3;`
+
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*@minecraft/server.InvalidStructureError*](../../../scriptapi/minecraft/server/InvalidStructureError.md)
+
+### **originalWorldLocation**
+`read-only originalWorldLocation: minecraftserver.Vector3;`
+
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*@minecraft/server.InvalidStructureError*](../../../scriptapi/minecraft/server/InvalidStructureError.md)
+
 ### **size**
 `read-only size: minecraftserver.Vector3;`
 
 Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*@minecraft/server.InvalidStructureError*](../../../scriptapi/minecraft/server/InvalidStructureError.md)
+
+### **structureFullName**
+`read-only structureFullName: string;`
+
+Type: *string*
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*@minecraft/server.InvalidStructureError*](../../../scriptapi/minecraft/server/InvalidStructureError.md)
+
+### **structureName**
+`read-only structureName: string;`
+
+Type: *string*
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*@minecraft/server.InvalidStructureError*](../../../scriptapi/minecraft/server/InvalidStructureError.md)
+
+### **structureNamespace**
+`read-only structureNamespace: string;`
+
+Type: *string*
 
 Notes:
   - This property can throw errors when used.

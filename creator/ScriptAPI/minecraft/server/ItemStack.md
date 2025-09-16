@@ -120,9 +120,7 @@ Type: *number*
 - [getDynamicPropertyIds](#getdynamicpropertyids)
 - [getDynamicPropertyTotalByteCount](#getdynamicpropertytotalbytecount)
 - [getLore](#getlore)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getRawLore](#getrawlore)
-::: moniker-end
 - [getTags](#gettags)
 - [hasComponent](#hascomponent)
 - [hasTag](#hastag)
@@ -291,7 +289,6 @@ Returns the lore value - a secondary display string - for an ItemStack.
 
 **Returns** *string*[] - An array of lore lines. If the item does not have lore, returns an empty array.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getRawLore**
 `
 getRawLore(): RawMessage[]
@@ -300,10 +297,6 @@ getRawLore(): RawMessage[]
 Returns the lore value - a secondary display string - for an ItemStack. String lore lines will be converted to a [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) and put under [*@minecraft/server.RawMessage.text*](../../../scriptapi/minecraft/server/RawMessage.md#text).
 
 **Returns** [*RawMessage*](RawMessage.md)[] - An array of lore lines. If the item does not have lore, returns an empty array.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **getTags**
 `

@@ -98,6 +98,28 @@
               "content": "minecraft:has_nectar"
             }
           ],
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.take_flower/filters/all_of/1/",
+              "content": "minecraft:has_flower"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:interact/interactions/0/on_interact/filters/all_of/0/",
+              "content": "minecraft:is_waxed"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:interact/interactions/1/on_interact/filters/all_of/0/",
+              "content": "minecraft:is_waxed"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:interact/interactions/4/on_interact/filters/all_of/0/",
+              "content": "minecraft:has_flower"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:becoming_statue/minecraft:behavior.place_block/can_place/",
+              "content": "minecraft:is_becoming_statue"
+            }
+          ],
           "/vanilla/behavior_pack/entities/happy_ghast.json": [
             {
               "path": "/minecraft:entity/events/minecraft:become_immobile/filters/",
@@ -246,9 +268,13 @@
         "defaultValue": true,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:become_immobile/filters/",
+              "path": "/minecraft:entity/components/minecraft:interact/interactions/2/on_interact/filters/all_of/0/",
+              "content": true
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:interact/interactions/4/on_interact/filters/all_of/0/",
               "content": true
             }
           ]
@@ -305,6 +331,64 @@
           "content": {
             "test": "bool_property",
             "domain": "minecraft:has_nectar"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.take_flower/filters/all_of/1/",
+          "content": {
+            "test": "bool_property",
+            "domain": "minecraft:has_flower",
+            "value": false
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/interactions/0/on_interact/filters/all_of/0/",
+          "content": {
+            "test": "bool_property",
+            "domain": "minecraft:is_waxed",
+            "value": false
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/interactions/1/on_interact/filters/all_of/0/",
+          "content": {
+            "test": "bool_property",
+            "domain": "minecraft:is_waxed",
+            "value": false
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/interactions/2/on_interact/filters/all_of/0/",
+          "content": {
+            "test": "bool_property",
+            "domain": "minecraft:is_waxed",
+            "value": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/interactions/4/on_interact/filters/all_of/0/",
+          "content": {
+            "test": "bool_property",
+            "domain": "minecraft:has_flower",
+            "value": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:becoming_statue/minecraft:behavior.place_block/can_place/",
+          "content": {
+            "test": "bool_property",
+            "domain": "minecraft:is_becoming_statue",
+            "value": false
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:became_statue/minecraft:spawn_entity/entities/filters/",
+          "content": {
+            "test": "bool_property",
+            "domain": "minecraft:has_flower",
+            "value": true
           }
         }
       ],

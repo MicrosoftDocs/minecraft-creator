@@ -11,6 +11,7 @@
         "description": "List of damage conditions that when met can cause damage to the entity.",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "List of damage conditions that when met can cause damage to the entity.",
           "fields": [
             {

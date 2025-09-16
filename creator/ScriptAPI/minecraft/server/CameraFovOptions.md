@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.CameraFovOptions Interface
 description: Contents of the @minecraft/server.CameraFovOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CameraFovOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Used to change the field of view of the current camera.
 

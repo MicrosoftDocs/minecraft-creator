@@ -16,17 +16,7 @@ Enables the component to drop an item as a barter exchange.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| barter_table | *not set* | String from a list of choices | Loot table that's used to drop a random item. | Piglin: `"loot_tables/entities/piglin_barter.json"` | 
-| cooldown_after_being_attacked | 0 | Range of integers | Duration, in seconds, for which mob won't barter items if it was hurt. | Piglin: `20` | 
+| barter_table | *not set* | String from a list of choices | Loot table that's used to drop a random item. |  | 
+| cooldown_after_being_attacked | 0 | Range of integers | Duration, in seconds, for which mob won't barter items if it was hurt. |  | 
 
 ## Samples
-
-#### [Piglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin.json)
-
-
-```json
-"minecraft:barter": {
-  "barter_table": "loot_tables/entities/piglin_barter.json",
-  "cooldown_after_being_attacked": 20
-}
-```

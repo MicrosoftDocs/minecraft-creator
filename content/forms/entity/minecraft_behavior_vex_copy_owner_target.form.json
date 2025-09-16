@@ -12,6 +12,7 @@
         "description": "List of entities this mob can copy the owner from",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "List of entities this mob can copy the owner from",
           "fields": [
             {

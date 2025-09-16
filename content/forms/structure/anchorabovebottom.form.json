@@ -1,0 +1,18 @@
+{
+  "id": "AnchorAboveBottom",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "AnchorAboveBottom",
+    "title": "Structure AnchorAboveBottom",
+    "description": "Specifies the vertical anchor",
+    "fields": [
+      {
+        "id": "above_bottom",
+        "title": "Above Bottom",
+        "description": "Offset from anchored vertical position",
+        "dataType": 0,
+        "isRequired": true
+      }
+    ]
+  }
+}

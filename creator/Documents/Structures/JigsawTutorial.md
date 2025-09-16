@@ -13,9 +13,15 @@ In this tutorial, we're going to learn about how to create smaller structures an
 
 ## Demonstration: Working with Jigsaw Structures
 
+More updated overview of working with Jigsaw Structures:
+
+> [!VIDEO https://youtu.be/dVXA98kI9c0?si=W9GHp-WttC0hpG9p]
+
+Original tutorial on creating with Jigsaw structures. This video shows a way to use jigsaw structures, and we are using it as a guide to help us learn the process:
+
 > [!VIDEO https://www.youtube.com/embed/57sLxXDkaA0]
 
-This video shows a way use jigsaw structures, and we are using it as a guide to help us learn the process.
+Both videos are available on the [Minecraft Creator Channel](https://aka.ms/mcv)
 
 ## The Jigsaw Process
 
@@ -86,19 +92,19 @@ development_behavior_packs
         <room_structure>.mcstructure
         <hallway_structure>.mcstructure
     worldgen 
-      jigsaw_structures
-        mystructure.json
       processors
-        mystructureprocessor.json
+        <mystructureprocessor>.json
+      structures
+        <mystructure>.json
       structure_sets
-        mystructureset.json
+        <mystructureset>.json
       template_pools
-        mytemplatepool.json
+        <mytemplatepool>.json
 ```
 
 Here are the contents for each file:
 
-### jigsaw_structures/mystructure.json
+### structures/<mystructure>.json
 
 [Reference: Worldgen Jigsaw Structures](../../Reference/Content/WorldgenReference/Examples/JigsawJigsawStructures.md)
 
@@ -106,7 +112,7 @@ Replace the values for `identifier:` and `start_pool:`.
 
 ```json
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.100",
   "minecraft:jigsaw": {
     "description": {
       "identifier": "mike:basic_dungeon"
@@ -115,13 +121,18 @@ Replace the values for `identifier:` and `start_pool:`.
     "terrain_adaptation": "none",
     "start_pool": "mike:ns7x4",
     "max_depth": 12,
-    "start_height": 0,
+    "start_height": {
+      "type": "constant",
+      "value": {
+        "absolute": 0
+      }
+    },
     "heightmap_projection": "world_surface"
   }
 }
 ```
 
-### processors/mystructureprocessor.json
+### processors/<mystructureprocessor>.json
 
 [Reference: Worldgen Jigsaw Processors](./../../Reference/Content/WorldgenReference/Examples/JigsawProcessors.md)
 
@@ -129,7 +140,7 @@ Replace the value for `identifier:` and feel free to change which blocks are use
 
 ```json
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.100",
   "minecraft:processor_list": {
     "description": {
       "identifier": "mike:stone_brick_replacement"
@@ -175,7 +186,7 @@ Replace the value for `identifier:` and feel free to change which blocks are use
 }
 ```
 
-### structure_sets/mystructureset.json
+### structure_sets/<mystructureset>.json
 
 [Reference: Worldgen Jigsaw Structure Sets](../../Reference/Content/WorldgenReference/Examples/JigsawStructureSets.md)
 
@@ -185,7 +196,7 @@ To adjust the number and proximity of your generated structures, try changing th
 
 ```json
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.100",
   "minecraft:structure_set": {
     "description": {
       "identifier": "mike:basic_dungeon"
@@ -207,7 +218,7 @@ To adjust the number and proximity of your generated structures, try changing th
 }
 ```
 
-### template_pools/mytemplatepool.json
+### template_pools/<mytemplatepool>.json
 
 [Reference: Worldgen Jigsaw Template Pools](../../Reference/Content/WorldgenReference/Examples/JigsawTemplatePools.md)
 
@@ -219,7 +230,7 @@ You can replace:
 
 ```json
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.100",
   "minecraft:template_pool": {
     "description": {
       "identifier": "mike:ns7x4"
@@ -285,7 +296,7 @@ After you experiment with your jigsaw blocks and structures to get a basic under
 
 ```json
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.100",
   "minecraft:template_pool": {
     "description": {
       "identifier": "mike:ns7x4"
@@ -317,7 +328,7 @@ The interior structures will be generated from the **5x5int.json** template pool
 
 ```json
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.100",
   "minecraft:template_pool": {
     "description": {
       "identifier": "mike:5x5int"

@@ -18,7 +18,7 @@ Jigsaw Structures can generate randomly in the world. Examples of Vanilla Jigsaw
 
 ## On the Minecraft Creator Channel
 
-More updated overview of working with Jigsaw Structures:
+An updated overview of working with Jigsaw Structures
 
 > [!VIDEO https://www.youtube.com/embed/dVXA98kI9c0?si=JtadJXVep-wJz7qj]
 

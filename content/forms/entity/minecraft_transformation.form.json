@@ -11,6 +11,7 @@
         "description": "List of components to add to the entity after the transformation",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "List of components to add to the entity after the transformation",
           "fields": [
             {
@@ -48,6 +49,7 @@
         "description": "Defines the properties of the delay for the transformation",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "Defines the properties of the delay for the transformation",
           "fields": [
             {

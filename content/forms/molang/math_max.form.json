@@ -2,7 +2,7 @@
   "id": "`math.max(A, B)`",
   "fields": [],
   "generated_doNotEdit": {
-    "id": "`math.max(A, B)`",
+    "id": "math.max(A, B)",
     "title": "Max(A, B)",
     "description": "Return highest value of A or B",
     "fields": []

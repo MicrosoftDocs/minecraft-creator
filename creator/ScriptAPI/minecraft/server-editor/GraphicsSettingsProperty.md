@@ -12,6 +12,16 @@ description: Contents of the @minecraft/server-editor.GraphicsSettingsProperty e
 Enumeration representing identifiers for graphics settings properties.
 
 ## Constants
+### **DisableBlockEntityRendering**
+`DisableBlockEntityRendering = "DisableBlockEntityRendering"`
+### **DisableEntityRendering**
+`DisableEntityRendering = "DisableEntityRendering"`
+### **DisableParticleRendering**
+`DisableParticleRendering = "DisableParticleRendering"`
+### **DisableTerrainRendering**
+`DisableTerrainRendering = "DisableTerrainRendering"`
+### **DisableWeatherRendering**
+`DisableWeatherRendering = "DisableWeatherRendering"`
 ### **GraphicsMode**
 `GraphicsMode = "GraphicsMode"`
 ### **NightVision**
