@@ -18,9 +18,15 @@ Jigsaw Structures can generate randomly in the world. Examples of Vanilla Jigsaw
 
 ## On the Minecraft Creator Channel
 
-A brief tutorial on creating with Jigsaw structures is available on the [Minecraft Creator Channel](https://aka.ms/mcv):
+An updated overview of working with Jigsaw Structures
+
+> [!VIDEO https://www.youtube.com/embed/dVXA98kI9c0?si=JtadJXVep-wJz7qj]
+
+Original tutorial on creating with Jigsaw structures:
 
 > [!VIDEO https://www.youtube.com/embed/57sLxXDkaA0]
+
+Both videos are available on the [Minecraft Creator Channel](https://aka.ms/mcv)
 
 ## Terminology
 
@@ -34,28 +40,23 @@ A brief tutorial on creating with Jigsaw structures is available on the [Minecra
 
 ### Pack Structure
 
-Jigsaw Structures are defined using these four JSON files:
-
-- mystructure.json
-- mystructureprocessor.json
-- mystructureset.json
-- mytemplatepool.json
-
-These files are stored within the **worldgen** folder of the behavior pack in this structure:
+Within the **worldgen** folder of the behavior pack in this structure, there are four folders with their own respective json file(s):
 
 ```
 behavior_packs 
   <pack_name> 
     worldgen 
-      structures 
-        mystructure.json 
       processors 
-        mystructureprocessor.json 
+          <mystructureprocessor>.json 
+      structures 
+          <mystructure>.json 
       structure_sets 
-        mystructureset.json 
+          <mystructureset>.json 
       template_pools 
-        mytemplatepool.json
+          <mytemplatepool>.json
 ```
+>[!Note]
+> The 'structures' folder is no longer named 'jigsaw_structures'.
 
 ## Processors
 
@@ -73,67 +74,72 @@ Finally, the fourth rule replaces a single random Gravel block with a Suspicious
 
 ```json
 {
-  "format_version": "1.21.20", 
-  "minecraft:processor_list": { 
-    "description": { 
-      "identifier": "minecraft:trail_ruins_roads_archaeology" 
-    }, 
-    "processors": [ 
-      { 
-        "processor_type": "minecraft:rule", 
-        "rules": [ 
-          { 
-            "input_predicate": { 
-              "predicate_type": "minecraft:random_block_match", 
-              "block": "minecraft:gravel", 
-              "probability": 0.2 
-            }, 
-            "output_state": { 
-              "name": "minecraft:dirt" 
-            } 
-          }, 
-          { 
-            "input_predicate": { 
-              "predicate_type": "minecraft:random_block_match", 
-              "block": "minecraft:gravel", 
-              "probability": 0.1 
-            }, 
-            "output_state": { 
-              "name": "minecraft:coarse_dirt" 
-            } 
-          }, 
-          { 
-            "input_predicate": { 
-              "predicate_type": "minecraft:random_block_match", 
-              "block": "minecraft:mud_bricks", 
-              "probability": 0.1 
-            }, 
-            "output_state": { 
-              "name": "minecraft:packed_mud" 
-            } 
-          }, 
-          { 
-            "input_predicate": { 
-              "predicate_type": "minecraft:block_match", 
-              "block": "minecraft:gravel" 
-            }, 
-            "position_predicate": { 
-              "predicate_type": "minecraft:archeology_block_loot", 
-              "limit": 1, 
-              "loot_table": "loot_tables/entities/trail_ruins_brushable_block_common.json", 
-              "block_mapping": [ 
-                { 
-                  "key": "minecraft:gravel", 
-                  "value": "minecraft:suspicious_gravel" 
-                } 
-              ] 
-            } 
-          } 
-        ] 
-      } 
-    ] 
-  } 
-} 
+  "format_version": "1.21.20",
+  "minecraft:processor_list": {
+    "description": {
+      "identifier": "minecraft:trail_ruins_roads_archaeology"
+    },
+    "processors": [
+      {
+        "processor_type": "minecraft:rule",
+        "rules": [
+          {
+            "input_predicate": {
+              "predicate_type": "minecraft:random_block_match",
+              "block": "minecraft:gravel",
+              "probability": 0.2
+            },
+            "output_state": {
+              "name": "minecraft:dirt"
+            }
+          },
+          {
+            "input_predicate": {
+              "predicate_type": "minecraft:random_block_match",
+              "block": "minecraft:gravel",
+              "probability": 0.1
+            },
+            "output_state": {
+              "name": "minecraft:gravel"
+            }
+          },
+          {
+            "input_predicate": {
+              "predicate_type": "minecraft:random_block_match",
+              "block": "minecraft:mud_bricks",
+              "probability": 0.1
+            },
+            "output_state": {
+              "name": "minecraft:packed_mud"
+            }
+          }
+        ]
+      },
+      {
+        "processor_type": "minecraft:capped",
+        "limit": 2,
+        "delegate": {
+          "processor_type": "minecraft:rule",
+          "rules": [
+            {
+              "input_predicate": {
+                "predicate_type": "minecraft:block_match",
+                "block": "minecraft:gravel"
+              },
+              "output_state": {
+                "name": "minecraft:suspicious_gravel"
+              },
+              "block_entity_modifier": {
+                "type": "minecraft:append_loot",
+                "loot_table": "loot_tables/entities/trail_ruins_brushable_block_common.json"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
 ```
 
 ### Template Pool
@@ -184,27 +190,37 @@ Jigsaw Structures are large structures comprised of multiple Structure Templates
 > Other Jigsaw Structures such as Villages and Bastions use a legacy version of the Jigsaw Structure System and cannot be modified via JSON.
 
 ```json
-{ 
-  "format_version": "1.21.20", 
-  "minecraft:jigsaw": { 
-    "description": { 
-      "identifier": "minecraft:trail_ruins" 
-    }, 
-    "biome_filters": [ 
-      { 
-        "test": "has_biome_tag", 
-        "operator": "==", 
-        "value": "has_structure_trail_ruins" 
-      } 
-    ], 
-    "step": "underground_structures", 
-    "terrain_adaptation": "bury", 
-    "start_pool": "minecraft:trail_ruins/tower", 
-    "max_depth": 7, 
-    "start_height": -15, 
-    "heightmap_projection": "world_surface" 
-  } 
-} 
+{
+  "format_version": "1.21.20",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "minecraft:trail_ruins"
+    },
+    "biome_filters": [
+      {
+        "test": "has_biome_tag",
+        "operator": "==",
+        "value": "has_structure_trail_ruins"
+      }
+    ],
+    "step": "underground_structures",
+    "terrain_adaptation": "bury",
+    "start_pool": "minecraft:trail_ruins/tower",
+    "max_depth": 7,
+    "max_distance_from_center": {
+      "horizontal": 80,
+      "vertical": 80
+    },
+    "start_height": {
+      "type": "constant",
+      "value": {
+        "absolute": -15
+      }
+    },
+    "heightmap_projection": "world_surface"
+  }
+}
+
 ```
 
 ### Structure Sets
@@ -215,30 +231,30 @@ A Structure Set contains a set of Jigsaw Structures and rules for how those stru
 
 **Structure Set Example**
 
-Jigsaw Structures placed (red) with 32 spacing, (blue) 4 separation. Each pixel is 1 chunk.
+Jigsaw Structures placed 34 spacing, 8 separation.
 
 ```json
-{ 
-  "format_version": "1.21.20", 
-  "minecraft:structure_set": { 
-     "description": { 
-       "identifier": "minecraft:trail_ruins" 
-     }, 
-     "placement": { 
-       "type": "minecraft:random_spread", 
-       "salt": 83469867, 
-       "separation": 8, 
-       "spacing": 34, 
-       "spread_type": "linear" 
-     }, 
-     "structures": [ 
-       { 
-        "structure": "minecraft:trail_ruins", 
-        "weight": 1 
-       } 
-     ] 
-  } 
-} 
+{
+  "format_version": "1.21.20",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "minecraft:trail_ruins"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 83469867,
+      "separation": 8,
+      "spacing": 34,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "minecraft:trail_ruins",
+        "weight": 1
+      }
+    ]
+  }
+}
 ```
 
 ## What's Next?
