@@ -1,0 +1,18 @@
+{
+  "id": "AnchorAbsolute",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "AnchorAbsolute",
+    "title": "World AnchorAbsolute",
+    "description": "Specifies the vertical anchor",
+    "fields": [
+      {
+        "id": "absolute",
+        "title": "Absolute",
+        "description": "Offset from anchored vertical position",
+        "dataType": 0,
+        "isRequired": true
+      }
+    ]
+  }
+}

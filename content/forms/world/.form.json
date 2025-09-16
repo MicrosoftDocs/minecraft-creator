@@ -1,4 +1,5 @@
 {
+  "id": "Rules used by Jigsaw Structures to determine which blocks to modify or replace when placing a Structure Template in the world.",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Used to pair block rules with Structure Templates and to randomly place Structure Templates using a weighted list.",

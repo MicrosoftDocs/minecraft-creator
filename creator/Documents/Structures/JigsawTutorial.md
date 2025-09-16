@@ -112,7 +112,7 @@ Replace the values for `identifier:` and `start_pool:`.
 
 ```json
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.100",
   "minecraft:jigsaw": {
     "description": {
       "identifier": "mike:basic_dungeon"
@@ -140,7 +140,7 @@ Replace the value for `identifier:` and feel free to change which blocks are use
 
 ```json
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.100",
   "minecraft:processor_list": {
     "description": {
       "identifier": "mike:stone_brick_replacement"
@@ -196,7 +196,7 @@ To adjust the number and proximity of your generated structures, try changing th
 
 ```json
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.100",
   "minecraft:structure_set": {
     "description": {
       "identifier": "mike:basic_dungeon"
@@ -230,7 +230,7 @@ You can replace:
 
 ```json
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.100",
   "minecraft:template_pool": {
     "description": {
       "identifier": "mike:ns7x4"
@@ -296,7 +296,7 @@ After you experiment with your jigsaw blocks and structures to get a basic under
 
 ```json
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.100",
   "minecraft:template_pool": {
     "description": {
       "identifier": "mike:ns7x4"
@@ -328,7 +328,7 @@ The interior structures will be generated from the **5x5int.json** template pool
 
 ```json
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.100",
   "minecraft:template_pool": {
     "description": {
       "identifier": "mike:5x5int"

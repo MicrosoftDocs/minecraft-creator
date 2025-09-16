@@ -24,6 +24,7 @@
         "description": "List of events to send",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "List of events to send",
           "fields": [
             {

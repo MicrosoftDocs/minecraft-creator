@@ -3,7 +3,7 @@
   "generated_doNotEdit": {
     "id": "Set Entity Property",
     "title": "Set Entity Property",
-    "description": "Sets the value of an entity property. The property must be defined in the 'properties' section of the file. ",
+    "description": "Sets the value of an entity property. The property must be defined in the 'properties' section of the file.",
     "fields": [],
     "samples": {
       "samples": [

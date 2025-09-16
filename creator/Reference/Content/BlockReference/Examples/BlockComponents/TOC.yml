@@ -40,6 +40,8 @@
   href: minecraftBlock_movable.md
 - name: minecraft:placement_filter
   href: minecraftBlock_placement_filter.md
+- name: minecraft:precipitation_interactions
+  href: minecraftBlock_precipitation_interactions.md
 - name: minecraft:random_offset
   href: minecraftBlock_random_offset.md
 - name: minecraft:redstone_conductivity

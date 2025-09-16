@@ -18,6 +18,8 @@ description: Contents of the @minecraft/server-editor.WidgetComponentType enumer
 `Entity = "Entity"`
 ### **Gizmo**
 `Gizmo = "Gizmo"`
+### **Grid**
+`Grid = "Grid"`
 ### **Guide**
 `Guide = "Guide"`
 ### **RenderPrim**

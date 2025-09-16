@@ -11,6 +11,7 @@
         "description": "A list of potions that this entity can drink. Each potion entry has the following parameters:",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "A list of potions that this entity can drink. Each potion entry has the following parameters:",
           "fields": [
             {

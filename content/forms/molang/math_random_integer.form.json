@@ -2,7 +2,7 @@
   "id": "`math.random_integer(low, high)`",
   "fields": [],
   "generated_doNotEdit": {
-    "id": "`math.random_integer(low, high)`",
+    "id": "math.random_integer(low, high)",
     "title": "Random Integer(low, High)",
     "description": "Random integer value between low and high inclusive",
     "fields": []

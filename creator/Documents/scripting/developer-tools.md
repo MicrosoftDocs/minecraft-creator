@@ -248,9 +248,7 @@ If you are using the retail version of Minecraft, the log folder is located at:
 
 `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\logs\`
 
-If you are using Minecraft Preview, that log folder is located at:
-
-`%localappdata%\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\logs`
+If you are using Minecraft Preview, see [this article](./../GDKPCProjectFolder.md) for more information on folders to use for Minecraft Preview.
 
 To view a CPUProfile, simply open it within Visual Studio Code. The first time you open a CPUProfile file, your operating system will ask you how you wish to open the file. Select Open in [Visual Studio Code](https://code.visualstudio.com):
 

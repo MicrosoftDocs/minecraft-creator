@@ -72,6 +72,20 @@ This callback is called when UI control time is changed.
 
 Type: (arg0: *number*, arg1: *number*) => *void*
 
+### **renderGradientBackground**
+`renderGradientBackground?: boolean;`
+
+Flag that enables gradient background color on the timeline to be rendered, default is true
+
+Type: *boolean*
+
+### **showAlpha**
+`showAlpha?: boolean;`
+
+False means the alpha elements will not be shown in the color picker
+
+Type: *boolean*
+
 ### **title**
 `title?: LocalizedString;`
 

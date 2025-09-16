@@ -1,6 +1,11 @@
 {
   "fields": [
     {
+      "id": "slot",
+      "title": "Equipment Slot",
+      "description": "Specifies where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1."
+    },
+    {
       "id": "dispensable",
       "dataType": 1,
       "isDeprecated": true

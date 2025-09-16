@@ -4,17 +4,28 @@
   "generatedFromSchema_doNotEdit": {
     "id": "Placement Direction",
     "title": "Block Placement Direction",
+    "description": "Adds the \"minecraft:cardinal_direction\" and/or \"minecraft:facing_direction\" states and setter function to the block.",
     "fields": [
       {
         "id": "enabled_states",
         "title": "Enabled States",
+        "description": "Which states to enable. Must specify at least one. Options: [\"minecraft:cardinal_direction\", \"minecraft:facing_direction\"].",
         "dataType": 17,
+        "minLength": 1,
+        "maxLength": 2,
         "isRequired": true
       },
       {
         "id": "y_rotation_offset",
         "title": "y Rotation Offset",
-        "dataType": 3
+        "description": "The y rotation offset to apply to the block. Must be [0.0, 90.0, 180.0, 270.0, 360.0]. Default is 0, meaning if the player is facing north, the \"minecraft:cardinal_direction\" and/or \"minecraft:facing_direction\" state will be north.",
+        "dataType": 3,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 360
+          }
+        ]
       }
     ]
   }

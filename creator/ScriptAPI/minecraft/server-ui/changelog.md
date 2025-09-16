@@ -18,6 +18,7 @@ description: Changelog of the `@minecraft/server-ui` module
 - [1.0.0](#100)
 
 ## 2.1.0-beta
+#### Added module peer dependency `@minecraft/server@2.4.0-beta`
 ## 2.0.0
 #### Added module peer dependency `@minecraft/server@2.0.0`
 #### Removed module peer dependency `@minecraft/server@1.3.0`

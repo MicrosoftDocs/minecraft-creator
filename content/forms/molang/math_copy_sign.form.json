@@ -3,7 +3,7 @@
   "fields": [],
   "description": "Compose a floating-point value with the magnitude of `x` and the sign of `y`.",
   "generated_doNotEdit": {
-    "id": "`math.copy_sign(A, B)`",
+    "id": "math.copy_sign(A, B)",
     "title": "Copy Sign(A, B)",
     "description": "Returns A with the sign of B",
     "fields": []

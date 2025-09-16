@@ -9,7 +9,7 @@ ms.date: 02/11/2025
 
 # Entity Filters Documentation - minecraft:enum_property
 
-Returns true when the enum actor property matches the value provided.
+Returns true when the actor property matches the value provided.
 
 
 ## Property Properties

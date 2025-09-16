@@ -1,5 +1,12 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "id": "processor_type",
+      "title": "Processors Type",
+      "description": "Processors Type",
+      "dataType": 2
+    }
+  ],
   "generated_doNotEdit": {
     "title": "JigsawStructure Processors Capped",
     "description": "Processor that wraps a processor and caps the number of times the delegated processor can be applied.",

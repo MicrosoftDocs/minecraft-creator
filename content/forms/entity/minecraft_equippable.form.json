@@ -11,6 +11,7 @@
         "description": "List of slots and the item that can be equipped.",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "List of slots and the item that can be equipped.",
           "fields": [
             {

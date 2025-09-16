@@ -43,19 +43,19 @@
       {
         "id": "smoke_color",
         "title": "Smoke Color",
-        "description": " Default value: #DC00EF.",
+        "description": "Default value: #DC00EF.",
         "dataType": 2
       },
       {
         "id": "smoke_radius",
         "title": "Smoke Radius",
-        "description": " Default value: 5.",
+        "description": "Default value: 5.",
         "dataType": 3
       },
       {
         "id": "smoke_time",
         "title": "Smoke Time",
-        "description": " Default value: 10.",
+        "description": "Default value: 10.",
         "dataType": 3
       }
     ]

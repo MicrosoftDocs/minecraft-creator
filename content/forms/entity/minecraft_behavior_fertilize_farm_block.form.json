@@ -8,7 +8,7 @@
       {
         "id": "goal_radius",
         "title": "Goal Radius",
-        "description": "Distance in blocks within the mob considers it has reached it's target position. ",
+        "description": "Distance in blocks within the mob considers it has reached it's target position.",
         "defaultValue": 1.5,
         "dataType": 3
       },

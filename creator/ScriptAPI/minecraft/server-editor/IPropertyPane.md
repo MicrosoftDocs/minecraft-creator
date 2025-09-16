@@ -17,7 +17,7 @@ Property pane present dynamic content. It can be associated with an object and p
 ## Properties
 
 ### **collapsed**
-`collapsed: boolean;`
+`read-only collapsed: boolean;`
 
 Pane state for being expanded or collapsed.
 
@@ -44,6 +44,7 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 - [addDropdown](#adddropdown)
 - [addImage](#addimage)
 - [addLink](#addlink)
+- [addMenu](#addmenu)
 - [addNumber](#addnumber)
 - [addNumberTimeline](#addnumbertimeline)
 - [addProgressIndicator](#addprogressindicator)
@@ -51,11 +52,13 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 - [addString](#addstring)
 - [addText](#addtext)
 - [addToggleGroup](#addtogglegroup)
+- [addVector2](#addvector2)
 - [addVector3](#addvector3)
 - [beginConstruct](#beginconstruct)
 - [collapse](#collapse)
 - [createSubPane](#createsubpane)
 - [endConstruct](#endconstruct)
+- [expand](#expand)
 - [getTitle](#gettitle)
 - [removeSubPane](#removesubpane)
 - [setTitle](#settitle)
@@ -223,6 +226,25 @@ Adds a Link item to the pane.
 
 **Returns** *ILinkPropertyItem*
 
+### **addMenu**
+`
+addMenu(defaultEntries: {
+        params: IMenuCreationParams;
+        action?: RegisteredAction<NoArgsAction>;
+    }[], options?: IMenuPropertyItemOptions): IMenuPropertyItem
+`
+
+Adds a menu button property item to the pane.
+
+#### **Parameters**
+- **defaultEntries**: *{
+        params: IMenuCreationParams;
+        action?: RegisteredAction<NoArgsAction>;
+    }*[]
+- **options**?: *IMenuPropertyItemOptions*
+
+**Returns** *IMenuPropertyItem*
+
 ### **addNumber**
 `
 addNumber(value: IObservableProp<number>, options?: INumberPropertyItemOptions): INumberPropertyItem
@@ -312,12 +334,25 @@ Adds a toggle button group to the pane.
 
 **Returns** *IToggleGroupPropertyItem*
 
+### **addVector2**
+`
+addVector2(value: IObservableProp<minecraftserver.Vector2>, options?: IVector2PropertyItemOptions): IVector2PropertyItem
+`
+
+Adds a Vector2 item to the pane.
+
+#### **Parameters**
+- **value**: *IObservableProp<minecraftserver.Vector2>*
+- **options**?: *IVector2PropertyItemOptions*
+
+**Returns** *IVector2PropertyItem*
+
 ### **addVector3**
 `
 addVector3(value: IObservableProp<minecraftserver.Vector3>, options?: IVector3PropertyItemOptions): IVector3PropertyItem
 `
 
-Adds a Vec3 item to the pane.
+Adds a Vector3 item to the pane.
 
 #### **Parameters**
 - **value**: *IObservableProp<minecraftserver.Vector3>*
@@ -361,6 +396,15 @@ endConstruct(): void
 `
 
 Finalizes pane construction and synchronizes item data
+
+**Returns** *void*
+
+### **expand**
+`
+expand(): void
+`
+
+Expand the pane.
 
 **Returns** *void*
 

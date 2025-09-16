@@ -17,6 +17,7 @@
         "description": "List of entity types the wither takes into account to find who dealt the most damage to it",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "List of entity types the wither takes into account to find who dealt the most damage to it",
           "fields": [
             {

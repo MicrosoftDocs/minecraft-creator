@@ -1,10 +1,11 @@
 {
   "id": "query.bone_aabb",
   "fields": [],
+  "description": "Returns the axis aligned bounding box of a bone as a structure with members '.min', '.max', along with '.x', '.y', and '.z' values for each.",
   "generated_doNotEdit": {
     "id": "query.bone_aabb",
     "title": "Bone Aabb",
-    "description": "Returns the axis aligned bounding box of a bone as a struct with members '.min', '.max', along with '.x', '.y', and '.z' values for each.",
+    "description": "Returns the axis aligned bounding box of a bone as a with members '.min', '.max', along with '.x', '.y', and '.z' values for each.",
     "fields": []
   }
 }
