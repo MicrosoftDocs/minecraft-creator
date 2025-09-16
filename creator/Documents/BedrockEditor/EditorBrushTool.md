@@ -40,7 +40,6 @@ You can click once once to place one block shape, or click and drag to place blo
     > [!Tip]
     > You can use the scroll wheel on the mouse to increase or decrease the distance between you and the selection cube.
     
-
 ### Brush Target
 
 - **Block**
@@ -131,7 +130,7 @@ Block Filters determine what type of blocks are affected by the Brush Paint acti
     > [!TIP]
     > Pressing **Ctrl+B** also switches to Brush. 
 
-3. Set the Brush Size to 1 and choose Log for the Block Type.
+3. Set the Brush to Uniform Cuboid with a Length of 1, then use the block picker to choose a type of log.
 
 4. Find a clear place on the ground and place one log block.
 
@@ -139,7 +138,7 @@ Block Filters determine what type of blocks are affected by the Brush Paint acti
 
     ![Brush tool was used to draw logs stacked up like a tree trunk](Media/editor_overview_brush_log.png)
 
-6. Change the brush size to 3 and the block type to Leaves, then click the top of your log blocks to put leaves around the top of your tree.
+6. Change the Brush to Uniform Ellipsoid with a Length of 3, change the block type to Leaves, then click the top of your log stack to put leaves around the top of your tree.
 
     ![Brush tool was used to draw leaves at the top of the tree trunk](Media/editor_overview_brush_leaves.png)
 

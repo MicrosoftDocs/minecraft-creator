@@ -50,8 +50,6 @@ Inspect entities in the world and view or edit their key details. You can read i
 5. Check Tags and Effects to see the entity's current state.
 6. Press **Ctrl**+**D** to clear the selection and return to Help when needed.
 
-![Animation of the Entity Inspector.](Media/GIFs/EntityInspector.gif)
-
 
 ## Keyboard shortcuts
 

@@ -76,7 +76,7 @@ Alternatively, if you already have Bedrock installed and want to create a shortc
 
     or
 
-    `minecraft-preview:?Editor=true`
+    `minecraft-preview://creator/?Editor=true`
 
     This is case-sensitive and needs to match exactly.
 

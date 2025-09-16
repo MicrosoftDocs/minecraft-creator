@@ -58,9 +58,7 @@ Use the Pencil to place or erase single blocks with the proper orientation quick
 - **Fixed Distance**
 
     Selects blocks, air, or a combination of both, based on your Selection Settings, at a fixed location at the center of the Editor screen.
-
-    ![Animation of how to use Fixed Distance Selection](Media/FixedDistance.gif)
-
+    
     > [!Tip]
     > Fixed distance is the easiest mode to use if you want to select only air blocks. You can use the scroll wheel on the mouse to increase or decrease the distance between you and the selection cube.
 
