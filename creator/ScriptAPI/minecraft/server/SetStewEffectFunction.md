@@ -4,30 +4,25 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server.LootItem Class
-description: Contents of the @minecraft/server.LootItem class.
+title: minecraft/server.SetStewEffectFunction Class
+description: Contents of the @minecraft/server.SetStewEffectFunction class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# LootItem Class
+# SetStewEffectFunction Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*LootPoolEntry*](LootPoolEntry.md)
+- [*LootItemFunction*](LootItemFunction.md)
 
-Represents a loot pool entry containing an item to drop.
+Loot item function that modifies the effects of a dropped stew item.
 
 ## Properties
 
-### **functions**
-`read-only functions: LootItemFunction[];`
+### **effects**
+`read-only effects: number[];`
 
-Type: [*LootItemFunction*](LootItemFunction.md)[]
+An array of integers corresponding to stew effects to be randomly chosen from and applied to the dropped item.
 
-### **name**
-`read-only name?: ItemType;`
-
-The name of the item contained in this entry.
-
-Type: [*ItemType*](ItemType.md)
+Type: *number*[]

@@ -4,30 +4,25 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server.LootItem Class
-description: Contents of the @minecraft/server.LootItem class.
+title: minecraft/server.SetItemNameFunction Class
+description: Contents of the @minecraft/server.SetItemNameFunction class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# LootItem Class
+# SetItemNameFunction Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*LootPoolEntry*](LootPoolEntry.md)
+- [*LootItemFunction*](LootItemFunction.md)
 
-Represents a loot pool entry containing an item to drop.
+Loot item function that modifies the name of the item dropped.
 
 ## Properties
 
-### **functions**
-`read-only functions: LootItemFunction[];`
-
-Type: [*LootItemFunction*](LootItemFunction.md)[]
-
 ### **name**
-`read-only name?: ItemType;`
+`read-only name: string;`
 
-The name of the item contained in this entry.
+The name to apply to the dropped item.
 
-Type: [*ItemType*](ItemType.md)
+Type: *string*

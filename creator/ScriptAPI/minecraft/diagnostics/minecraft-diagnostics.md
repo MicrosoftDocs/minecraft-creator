@@ -24,7 +24,7 @@ Contains diagnostics functionality for discovering and diagnosing issues with co
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.21.120-beta.0 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.21.120-beta.22 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`

@@ -4,30 +4,25 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server.LootItem Class
-description: Contents of the @minecraft/server.LootItem class.
+title: minecraft/server.SetSpawnEggFunction Class
+description: Contents of the @minecraft/server.SetSpawnEggFunction class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# LootItem Class
+# SetSpawnEggFunction Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*LootPoolEntry*](LootPoolEntry.md)
+- [*LootItemFunction*](LootItemFunction.md)
 
-Represents a loot pool entry containing an item to drop.
+Loot item function that assigns an entity type to a dropped spawn egg. Does not work on any items other than spawn eggs.
 
 ## Properties
 
-### **functions**
-`read-only functions: LootItemFunction[];`
+### **id**
+`read-only id: string;`
 
-Type: [*LootItemFunction*](LootItemFunction.md)[]
+The entity to be assigned to the dropped egg.
 
-### **name**
-`read-only name?: ItemType;`
-
-The name of the item contained in this entry.
-
-Type: [*ItemType*](ItemType.md)
+Type: *string*

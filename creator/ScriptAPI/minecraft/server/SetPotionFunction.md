@@ -4,30 +4,25 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server.LootItem Class
-description: Contents of the @minecraft/server.LootItem class.
+title: minecraft/server.SetPotionFunction Class
+description: Contents of the @minecraft/server.SetPotionFunction class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# LootItem Class
+# SetPotionFunction Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*LootPoolEntry*](LootPoolEntry.md)
+- [*LootItemFunction*](LootItemFunction.md)
 
-Represents a loot pool entry containing an item to drop.
+Loot item function that assigns a type to a dropped potion.
 
 ## Properties
 
-### **functions**
-`read-only functions: LootItemFunction[];`
+### **id**
+`read-only id: string;`
 
-Type: [*LootItemFunction*](LootItemFunction.md)[]
+The id to be assigned to the dropped potion.
 
-### **name**
-`read-only name?: ItemType;`
-
-The name of the item contained in this entry.
-
-Type: [*ItemType*](ItemType.md)
+Type: *string*

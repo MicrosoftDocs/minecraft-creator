@@ -4,30 +4,25 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server.LootItem Class
-description: Contents of the @minecraft/server.LootItem class.
+title: minecraft/server.EnchantRandomlyFunction Class
+description: Contents of the @minecraft/server.EnchantRandomlyFunction class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# LootItem Class
+# EnchantRandomlyFunction Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*LootPoolEntry*](LootPoolEntry.md)
+- [*LootItemFunction*](LootItemFunction.md)
 
-Represents a loot pool entry containing an item to drop.
+Loot item function that randomly enchants the dropped item.
 
 ## Properties
 
-### **functions**
-`read-only functions: LootItemFunction[];`
+### **treasure**
+`read-only treasure: boolean;`
 
-Type: [*LootItemFunction*](LootItemFunction.md)[]
+Determines whether or not treasure enchantments are included in the randomly chosen enchantments.
 
-### **name**
-`read-only name?: ItemType;`
-
-The name of the item contained in this entry.
-
-Type: [*ItemType*](ItemType.md)
+Type: *boolean*

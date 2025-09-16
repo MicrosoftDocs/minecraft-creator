@@ -4,30 +4,25 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server.LootItem Class
-description: Contents of the @minecraft/server.LootItem class.
+title: minecraft/server.ExplorationMapFunction Class
+description: Contents of the @minecraft/server.ExplorationMapFunction class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# LootItem Class
+# ExplorationMapFunction Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*LootPoolEntry*](LootPoolEntry.md)
+- [*LootItemFunction*](LootItemFunction.md)
 
-Represents a loot pool entry containing an item to drop.
+Loot item function that modifies a dropped treasure map to mark a location.
 
 ## Properties
 
-### **functions**
-`read-only functions: LootItemFunction[];`
+### **destination**
+`read-only destination: string;`
 
-Type: [*LootItemFunction*](LootItemFunction.md)[]
+Determines which type of treasure map will drop.
 
-### **name**
-`read-only name?: ItemType;`
-
-The name of the item contained in this entry.
-
-Type: [*ItemType*](ItemType.md)
+Type: *string*
