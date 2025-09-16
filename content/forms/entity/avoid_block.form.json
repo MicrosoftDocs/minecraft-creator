@@ -1,0 +1,88 @@
+{
+  "id": "minecraft:behavior.avoid_block",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.avoid_block",
+    "title": "Entity Avoid Block Behavior",
+    "description": "Allows this entity to avoid certain blocks.",
+    "fields": [
+      {
+        "id": "avoid_block_sound",
+        "title": "LevelSoundEvent",
+        "description": "The sound event to play when the mob is avoiding a block.",
+        "dataType": 2
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17
+      },
+      {
+        "id": "on_escape",
+        "title": "Escape",
+        "description": "Escape triggers.",
+        "dataType": 16,
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0
+      },
+      {
+        "id": "search_height",
+        "title": "Search Height",
+        "description": "Maximum distance to look for a block in y. Default value: 0.",
+        "dataType": 0
+      },
+      {
+        "id": "search_range",
+        "title": "Search Range",
+        "description": "Maximum distance to look for a block in xz. Default value: 0.",
+        "dataType": 0
+      },
+      {
+        "id": "sound_interval",
+        "title": "Sound Interval",
+        "dataType": 16,
+        "subFormId": "entity/floatrange"
+      },
+      {
+        "id": "sprint_speed_modifier",
+        "title": "Sprint Speed Modifier",
+        "description": "Modifier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster. Default value: 1.",
+        "dataType": 3
+      },
+      {
+        "id": "target_blocks",
+        "title": "Target Blocks",
+        "description": "List of block types this mob avoids.",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "target_blocks",
+            "dataType": 24
+          }
+        ]
+      },
+      {
+        "id": "target_selection_method",
+        "title": "Target Selection Method",
+        "description": "Block search method. Default value: nearest.",
+        "dataType": 2
+      },
+      {
+        "id": "tick_interval",
+        "title": "Tick Interval",
+        "description": "Should start tick interval. Default value: 1.",
+        "dataType": 0
+      },
+      {
+        "id": "walk_speed_modifier",
+        "title": "Walk Speed Modifier",
+        "description": "Modifier for walking speed. 1.0 means keep the regular speed, while higher numbers make the walking speed faster. Default value: 1.",
+        "dataType": 3
+      }
+    ]
+  }
+}

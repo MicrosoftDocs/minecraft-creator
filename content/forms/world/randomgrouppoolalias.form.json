@@ -11,7 +11,7 @@
         "title": "Groups",
         "description": "Aliases for a RandomGroup",
         "dataType": 16,
-        "subFormId": "world/weightedrandomitem",
+        "subFormId": "world/randomgroupbindings",
         "isRequired": true
       }
     ]

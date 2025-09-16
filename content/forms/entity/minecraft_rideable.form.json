@@ -381,6 +381,7 @@
         "description": "The list of positions and number of riders for each position for entities riding this entity.",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "The list of positions and number of riders for each position for entities riding this entity.",
           "fields": [
             {

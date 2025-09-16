@@ -106,6 +106,7 @@
         "description": "A material instance definition to map to a material instance in a geometry file. The material instance \"*\" will be used for any materials that don't have a match.",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "A material instance definition to map to a material instance in a geometry file. The material instance \"*\" will be used for any materials that don't have a match.",
           "fields": [
             {

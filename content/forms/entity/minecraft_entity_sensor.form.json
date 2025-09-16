@@ -33,6 +33,7 @@
         "description": "The list of subsensors which sense for entities and emit events when all their conditions are met.",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "The list of subsensors which sense for entities and emit events when all their conditions are met.",
           "fields": [
             {

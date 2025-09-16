@@ -28,9 +28,7 @@ Type: *boolean*
 - [setCameraWithEase](#setcamerawithease)
 ::: moniker-end
 - [setDefaultCamera](#setdefaultcamera)
-::: moniker range="=minecraft-bedrock-experimental"
 - [setFov](#setfov)
-::: moniker-end
 
 ### **clear**
 `
@@ -122,7 +120,6 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **setFov**
 `
 setFov(fovCameraOptions?: CameraFovOptions): void
@@ -130,11 +127,7 @@ setFov(fovCameraOptions?: CameraFovOptions): void
 
 #### **Parameters**
 - **fovCameraOptions**?: [*CameraFovOptions*](CameraFovOptions.md) = `null`
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-::: moniker-end

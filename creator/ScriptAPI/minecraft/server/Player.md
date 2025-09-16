@@ -189,6 +189,9 @@ Notes:
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getAimAssist](#getaimassist)
 ::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [getControlScheme](#getcontrolscheme)
+::: moniker-end
 - [getGameMode](#getgamemode)
 - [getItemCooldown](#getitemcooldown)
 - [getSpawnPoint](#getspawnpoint)
@@ -202,6 +205,9 @@ Notes:
 - [removePropertyOverrideForEntity](#removepropertyoverrideforentity)
 - [resetLevel](#resetlevel)
 - [sendMessage](#sendmessage)
+::: moniker range="=minecraft-bedrock-experimental"
+- [setControlScheme](#setcontrolscheme)
+::: moniker-end
 - [setGameMode](#setgamemode)
 - [setPropertyOverrideForEntity](#setpropertyoverrideforentity)
 - [setSpawnPoint](#setspawnpoint)
@@ -302,6 +308,24 @@ The player's aim-assist settings.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getControlScheme**
+`
+getControlScheme(): ControlScheme
+`
+
+Returns the player's current control scheme.
+
+**Returns** [*ControlScheme*](ControlScheme.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 ::: moniker-end
 
 ### **getGameMode**
@@ -613,6 +637,28 @@ function sendTranslatedMessage(
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/sendTranslatedMessage.ts) code sandbox.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **setControlScheme**
+`
+setControlScheme(controlScheme?: ControlScheme): void
+`
+
+Set a player's control scheme. The player's active camera preset must be set by scripts like with camera.setCamera() or commands.
+
+#### **Parameters**
+- **controlScheme**?: [*ControlScheme*](ControlScheme.md) = `null`
+  
+  Control scheme type. If this argument is undefined, this method will clear the player's control scheme back to the player camera's default control scheme.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
 
 ### **setGameMode**
 `

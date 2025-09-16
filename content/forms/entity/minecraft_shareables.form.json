@@ -55,6 +55,7 @@
         "description": "List of items or item tags that the entity wants to share. Items in-game will match to this list from top to bottom, meaning that the first occurance of a match, be it name or tag, will shadow those coming after.",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "List of items or item tags that the entity wants to share. Items in-game will match to this list from top to bottom, meaning that the first occurance of a match, be it name or tag, will shadow those coming after.",
           "fields": [
             {
@@ -2377,13 +2378,13 @@
                 "priority": 3
               },
               {
-                "item": "minecraft:stone_sword",
+                "item": "minecraft:copper_sword",
                 "want_amount": 1,
                 "surplus_amount": 1,
                 "priority": 4
               },
               {
-                "item": "minecraft:copper_sword",
+                "item": "minecraft:stone_sword",
                 "want_amount": 1,
                 "surplus_amount": 1,
                 "priority": 5

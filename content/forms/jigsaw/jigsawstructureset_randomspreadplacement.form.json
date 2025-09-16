@@ -1,5 +1,10 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "id": "spread_type",
+      "title": "Spread Type"
+    }
+  ],
   "generated_doNotEdit": {
     "title": "JigsawStructureSet RandomSpreadPlacement",
     "description": "JigsawStructureSet RandomSpreadPlacement",

@@ -30,21 +30,7 @@
         "title": "Hud Range",
         "description": "The max distance from the boss at which the boss's health bar is present on the players screen.",
         "defaultValue": 55,
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ender_dragon.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:boss/",
-              "content": 125
-            }
-          ],
-          "/vanilla/behavior_pack/entities/wither.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:boss/",
-              "content": 55
-            }
-          ]
-        }
+        "dataType": 0
       },
       {
         "id": "name",
@@ -57,36 +43,9 @@
         "title": "Should Darken Sky",
         "description": "Whether the sky should darken in the presence of the boss.",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/wither.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:boss/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/ender_dragon.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:boss/",
-          "content": {
-            "should_darken_sky": false,
-            "hud_range": 125
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wither.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:boss/",
-          "content": {
-            "should_darken_sky": true,
-            "hud_range": 55
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

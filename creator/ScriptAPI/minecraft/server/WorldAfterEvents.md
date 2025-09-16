@@ -447,6 +447,21 @@ Notes:
   - This property can be read in early-execution mode.
 ::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **playerUseNameTag**
+`read-only playerUseNameTag: PlayerUseNameTagAfterEventSignal;`
+
+An event for when a player uses a named name tag on an entity.
+
+Type: [*PlayerUseNameTagAfterEventSignal*](PlayerUseNameTagAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
+
 ### **pressurePlatePop**
 `read-only pressurePlatePop: PressurePlatePopAfterEventSignal;`
 

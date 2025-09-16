@@ -75,6 +75,7 @@
         "description": "List of dynamic level sound events, with conditions for choosing between them. Evaluated in order, first one wins. If none evaluate to true, 'event_name' will take precedence.",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "List of dynamic level sound events, with conditions for choosing between them. Evaluated in order, first one wins. If none evaluate to true, 'event_name' will take precedence.",
           "fields": [
             {

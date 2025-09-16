@@ -11,42 +11,16 @@
         "title": "Category",
         "description": "All items with the same \"category\" are put on cooldown when one is used.",
         "dataType": 2,
-        "isRequired": true,
-        "samples": {
-          "/vanilla/behavior_pack/items/wind_charge.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:cooldown/",
-              "content": "wind_charge"
-            }
-          ]
-        }
+        "isRequired": true
       },
       {
         "id": "duration",
         "title": "Duration",
         "description": "How long the item is on cooldown before being able to be used again.",
         "dataType": 3,
-        "isRequired": true,
-        "samples": {
-          "/vanilla/behavior_pack/items/wind_charge.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:cooldown/",
-              "content": 0.5
-            }
-          ]
-        }
+        "isRequired": true
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/items/wind_charge.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:cooldown/",
-          "content": {
-            "category": "wind_charge",
-            "duration": 0.5
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

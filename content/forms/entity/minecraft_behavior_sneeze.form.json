@@ -57,6 +57,7 @@
         "description": "List of entity types this mob will startle (cause to jump) when it sneezes.",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "List of entity types this mob will startle (cause to jump) when it sneezes.",
           "fields": [
             {

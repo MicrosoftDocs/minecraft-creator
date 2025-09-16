@@ -1,0 +1,25 @@
+{
+  "id": "RandomGroupBindings",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "RandomGroupBindings",
+    "title": "World RandomGroupBindings",
+    "description": "Weighted Random Item",
+    "fields": [
+      {
+        "id": "data",
+        "title": "Data",
+        "description": "Item's data",
+        "dataType": 17,
+        "isRequired": true
+      },
+      {
+        "id": "weight",
+        "title": "Weight",
+        "description": "Weight of item",
+        "dataType": 0,
+        "isRequired": true
+      }
+    ]
+  }
+}

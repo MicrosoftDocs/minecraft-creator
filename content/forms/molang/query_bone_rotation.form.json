@@ -1,10 +1,11 @@
 {
   "id": "query.bone_rotation",
   "fields": [],
+  "description": "Returns the initial (from the .geo) rotation of a bone as a structure with members '.x', '.y', and '.z' in degrees.",
   "generated_doNotEdit": {
     "id": "query.bone_rotation",
     "title": "Bone Rotation",
-    "description": "Returns the initial (from the .geo) rotation of a bone as a struct with members '.x', '.y', and '.z' in degrees.",
+    "description": "Returns the initial (from the .geo) rotation of a bone as a with members '.x', '.y', and '.z' in degrees.",
     "fields": []
   }
 }

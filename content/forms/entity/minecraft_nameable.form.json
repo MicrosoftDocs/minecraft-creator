@@ -50,6 +50,7 @@
         "description": "Describes the special names for this entity and the events to call when the entity acquires those names",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "Describes the special names for this entity and the events to call when the entity acquires those names",
           "fields": [
             {

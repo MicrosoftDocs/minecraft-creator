@@ -315,6 +315,21 @@
               ]
             }
           ],
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:became_statue/minecraft:spawn_entity/",
+              "content": {
+                "min_wait_time": 0,
+                "max_wait_time": 0,
+                "spawn_item": "poppy",
+                "filters": {
+                  "test": "bool_property",
+                  "domain": "minecraft:has_flower",
+                  "value": true
+                }
+              }
+            }
+          ],
           "/vanilla/behavior_pack/entities/ocelot.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:wild_child_ocelot_spawn/minecraft:spawn_entity/",
@@ -435,6 +450,23 @@
                 ]
               }
             ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:became_statue/minecraft:spawn_entity/",
+          "content": {
+            "entities": {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "spawn_item": "poppy",
+              "filters": {
+                "test": "bool_property",
+                "domain": "minecraft:has_flower",
+                "value": true
+              }
+            }
           }
         }
       ],

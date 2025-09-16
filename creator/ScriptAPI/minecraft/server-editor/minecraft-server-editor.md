@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.21.110-beta.25 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.21.120-beta.22 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -79,6 +79,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.110
 - [StatusBarAlignment](StatusBarAlignment.md)
 - [StructureSource](StructureSource.md)
 - [ThemeSettingsColorKey](ThemeSettingsColorKey.md)
+- [WidgetCollisionType](WidgetCollisionType.md)
 - [WidgetComponentType](WidgetComponentType.md)
 - [WidgetGizmoEventType](WidgetGizmoEventType.md)
 - [WidgetGroupSelectionMode](WidgetGroupSelectionMode.md)
@@ -188,6 +189,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.110
 - [TransactionManager](TransactionManager.md)
 - [UserDefinedTransactionHandle](UserDefinedTransactionHandle.md)
 - [UserDefinedTransactionHandlerId](UserDefinedTransactionHandlerId.md)
+- [Vector2LimitObservableValidator](Vector2LimitObservableValidator.md)
 - [Vector3LimitObservableValidator](Vector3LimitObservableValidator.md)
 - [Widget](Widget.md)
 - [WidgetComponentBase](WidgetComponentBase.md)
@@ -197,6 +199,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.110
 - [WidgetComponentEntity](WidgetComponentEntity.md)
 - [WidgetComponentGizmo](WidgetComponentGizmo.md)
 - [WidgetComponentGizmoStateChangeEventParameters](WidgetComponentGizmoStateChangeEventParameters.md)
+- [WidgetComponentGrid](WidgetComponentGrid.md)
 - [WidgetComponentGuide](WidgetComponentGuide.md)
 - [WidgetComponentRenderPrimitive](WidgetComponentRenderPrimitive.md)
 - [WidgetComponentRenderPrimitiveTypeAxialSphere](WidgetComponentRenderPrimitiveTypeAxialSphere.md)
@@ -263,6 +266,8 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.110
 - [IMenu](IMenu.md)
 - [IMenuContainer](IMenuContainer.md)
 - [IMenuCreationParams](IMenuCreationParams.md)
+- [IMenuPropertyItem](IMenuPropertyItem.md)
+- [IMenuPropertyItemOptions](IMenuPropertyItemOptions.md)
 - [IModalControlPane](IModalControlPane.md)
 - [IModalOverlayPane](IModalOverlayPane.md)
 - [IModalOverlayPaneOptions](IModalOverlayPaneOptions.md)
@@ -300,6 +305,8 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.110
 - [IToggleGroupPropertyItem](IToggleGroupPropertyItem.md)
 - [IToggleGroupPropertyItemEntry](IToggleGroupPropertyItemEntry.md)
 - [IToggleGroupPropertyItemOptions](IToggleGroupPropertyItemOptions.md)
+- [IVector2PropertyItem](IVector2PropertyItem.md)
+- [IVector2PropertyItemOptions](IVector2PropertyItemOptions.md)
 - [IVector3PropertyItem](IVector3PropertyItem.md)
 - [IVector3PropertyItemOptions](IVector3PropertyItemOptions.md)
 - [LogProperties](LogProperties.md)
@@ -312,6 +319,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.110
 - [WidgetComponentClipboardOptions](WidgetComponentClipboardOptions.md)
 - [WidgetComponentEntityOptions](WidgetComponentEntityOptions.md)
 - [WidgetComponentGizmoOptions](WidgetComponentGizmoOptions.md)
+- [WidgetComponentGridOptions](WidgetComponentGridOptions.md)
 - [WidgetComponentGuideOptions](WidgetComponentGuideOptions.md)
 - [WidgetComponentRenderPrimitiveOptions](WidgetComponentRenderPrimitiveOptions.md)
 - [WidgetComponentSplineOptions](WidgetComponentSplineOptions.md)

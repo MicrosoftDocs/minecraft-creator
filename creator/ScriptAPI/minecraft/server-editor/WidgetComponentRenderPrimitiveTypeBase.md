@@ -21,3 +21,11 @@ description: Contents of the @minecraft/server-editor.WidgetComponentRenderPrimi
 `read-only primitiveType: PrimitiveType;`
 
 Type: [*PrimitiveType*](PrimitiveType.md)
+
+### **renderPriority**
+`renderPriority: number;`
+
+Type: *number*
+
+Notes:
+  - This property can't be edited in read-only mode.

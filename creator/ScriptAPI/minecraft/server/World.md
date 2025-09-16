@@ -110,9 +110,7 @@ Type: [*StructureManager*](StructureManager.md)
 - [getDynamicPropertyIds](#getdynamicpropertyids)
 - [getDynamicPropertyTotalByteCount](#getdynamicpropertytotalbytecount)
 - [getEntity](#getentity)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getLootTableManager](#getloottablemanager)
-::: moniker-end
 - [getMoonPhase](#getmoonphase)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getPackSettings](#getpacksettings)
@@ -369,7 +367,6 @@ Notes:
 - This function can throw errors.
   - Throws if the given entity id is invalid.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getLootTableManager**
 `
 getLootTableManager(): LootTableManager
@@ -378,10 +375,6 @@ getLootTableManager(): LootTableManager
 Returns a manager capable of generating loot from an assortment of sources.
 
 **Returns** [*LootTableManager*](LootTableManager.md) - A loot table manager with a variety of loot generation methods.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **getMoonPhase**
 `

@@ -3941,6 +3941,10 @@ Beetroot Soup
 Rabbit Stew
 - `rabbit_stew`
 Rabbit Stew
+- `minecraft:suspicious_stew`
+Suspicious Stew
+- `suspicious_stew`
+Suspicious Stew
 - `minecraft:baked_potato`
 Baked Potato
 - `baked_potato`
@@ -4855,10 +4859,6 @@ Banner Pattern
 Spawn Egg
 - `minecraft:chemistry_table`
 - `chemistry_table`
-- `minecraft:suspicious_stew`
-Suspicious Stew
-- `suspicious_stew`
-Suspicious Stew
 - `minecraft:filled_map`
 Filled Map
 - `filled_map`

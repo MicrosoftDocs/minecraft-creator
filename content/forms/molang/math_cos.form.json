@@ -2,7 +2,7 @@
   "id": "`math.cos(value)`",
   "fields": [],
   "generated_doNotEdit": {
-    "id": "`math.cos(value)`",
+    "id": "math.cos(value)",
     "title": "Cos(value)",
     "description": "Cosine (in degrees) of value",
     "fields": []

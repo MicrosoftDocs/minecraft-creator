@@ -31,6 +31,7 @@ ms.date: 02/11/2025
 | [minecraft:material_instances](./minecraftBlock_material_instances.md)| The material instances for a block. |
 | [minecraft:movable](./minecraftBlock_movable.md)| The description identifier of the movable component<br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.100) |
 | [minecraft:placement_filter](./minecraftBlock_placement_filter.md)| Sets rules for under what conditions the block can be placed/survive |
+| [minecraft:precipitation_interactions](./minecraftBlock_precipitation_interactions.md)| Component that determines how the block will interact with rain and snow |
 | [minecraft:random_offset](./minecraftBlock_random_offset.md)| This component defines a random offset for the block, seeded based on the block's position and the specified range and steps. |
 | [minecraft:redstone_conductivity](./minecraftBlock_redstone_conductivity.md)| The basic redstone properties of a block; if the component is not provided the default values are used. |
 | [minecraft:replaceable](./minecraftBlock_replaceable.md)| A block with this component can be replaced when another block is placed in the same block position.<br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.60) |

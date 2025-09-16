@@ -1,0 +1,25 @@
+{
+  "id": "JigsawTemplatePool",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "JigsawTemplatePool",
+    "title": "World JigsawTemplatePool",
+    "description": "Weighted Random Item",
+    "fields": [
+      {
+        "id": "data",
+        "title": "Data",
+        "description": "Item's data",
+        "dataType": 16,
+        "isRequired": true
+      },
+      {
+        "id": "weight",
+        "title": "Weight",
+        "description": "Weight of item",
+        "dataType": 0,
+        "isRequired": true
+      }
+    ]
+  }
+}

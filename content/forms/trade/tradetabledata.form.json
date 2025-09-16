@@ -1,13 +1,68 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "id": "56017534",
+      "title": "TradeItem",
+      "description": "TradeItem",
+      "dataType": 16
+    },
+    {
+      "id": "315535208",
+      "title": "class Json_Value",
+      "description": "class Json_Value",
+      "dataType": 16
+    },
+    {
+      "id": "943617905",
+      "title": "TradeTier",
+      "description": "TradeTier",
+      "dataType": 16
+    },
+    {
+      "id": "1088251937",
+      "title": "Filter Group",
+      "description": "Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.",
+      "dataType": 16
+    },
+    {
+      "id": "1093643626",
+      "title": "TradeItemList",
+      "description": "TradeItemList",
+      "dataType": 16
+    },
+    {
+      "id": "2298823339",
+      "title": "TradeItem_Quantity",
+      "description": "TradeItem_Quantity",
+      "dataType": 16
+    },
+    {
+      "id": "3153354884",
+      "title": "TradeGroup",
+      "description": "TradeGroup",
+      "dataType": 16
+    },
+    {
+      "id": "3738829565",
+      "title": "Trade",
+      "description": "Trade",
+      "dataType": 16
+    },
+    {
+      "id": "4150989894",
+      "title": "Filter Test",
+      "description": "Filter Test",
+      "dataType": 16
+    }
+  ],
   "generated_doNotEdit": {
     "title": "TradeTableData",
     "description": "TradeTableData",
     "fields": [
       {
         "id": "56017534",
-        "title": "struct SharedTypes_v1_21_30_TradeItem",
-        "description": "struct SharedTypes_v1_21_30_TradeItem",
+        "title": "TradeItem",
+        "description": "TradeItem",
         "dataType": 16
       },
       {
@@ -18,8 +73,8 @@
       },
       {
         "id": "943617905",
-        "title": "struct SharedTypes_v1_21_30_TradeTier",
-        "description": "struct SharedTypes_v1_21_30_TradeTier",
+        "title": "TradeTier",
+        "description": "TradeTier",
         "dataType": 16
       },
       {
@@ -30,26 +85,26 @@
       },
       {
         "id": "1093643626",
-        "title": "struct SharedTypes_v1_21_30_TradeItemList",
-        "description": "struct SharedTypes_v1_21_30_TradeItemList",
+        "title": "TradeItemList",
+        "description": "TradeItemList",
         "dataType": 16
       },
       {
         "id": "2298823339",
-        "title": "struct SharedTypes_v1_21_30_TradeItem_Quantity",
-        "description": "struct SharedTypes_v1_21_30_TradeItem_Quantity",
+        "title": "TradeItem_Quantity",
+        "description": "TradeItem_Quantity",
         "dataType": 16
       },
       {
         "id": "3153354884",
-        "title": "struct SharedTypes_v1_21_30_TradeGroup",
-        "description": "struct SharedTypes_v1_21_30_TradeGroup",
+        "title": "TradeGroup",
+        "description": "TradeGroup",
         "dataType": 16
       },
       {
         "id": "3738829565",
-        "title": "struct SharedTypes_v1_21_30_Trade",
-        "description": "struct SharedTypes_v1_21_30_Trade",
+        "title": "Trade",
+        "description": "Trade",
         "dataType": 16
       },
       {

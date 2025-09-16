@@ -28,6 +28,7 @@ ms.date: 02/11/2025
 | [minecraft:dyeable](./ItemComponents/minecraft_dyeable.md)| enables custom items to be dyed in cauldrons. |
 | [minecraft:enchantable](./ItemComponents/minecraft_enchantable.md)| Determines what enchantments can be applied to the item. |
 | [minecraft:entity_placer](./ItemComponents/minecraft_entity_placer.md)| Allows an item to place entities into the world. |
+| [minecraft:fire_resistant](./ItemComponents/minecraft_fire_resistant.md)| Determines whether the item is immune to burning when dropped in fire or lava. |
 | [minecraft:food](./ItemComponents/minecraft_food.md)| Sets the item as a food component, allowing it to be edible to the player. |
 | [minecraft:fuel](./ItemComponents/minecraft_fuel.md)| Allows this item to be used as fuel in a furnace to 'cook' other items. |
 | [minecraft:glint](./ItemComponents/minecraft_glint.md)| Determines whether the item has the enchanted glint render effect on it. |
@@ -48,6 +49,7 @@ ms.date: 02/11/2025
 | [minecraft:storage_item](./ItemComponents/minecraft_storage_item.md)| Enables an item to store data of the dynamic container associated with it. |
 | [minecraft:storage_weight_limit](./ItemComponents/minecraft_storage_weight_limit.md)| Specifies the maximum weight limit that a storage item can hold |
 | [minecraft:storage_weight_modifier](./ItemComponents/minecraft_storage_weight_modifier.md)| Specifies the maximum weight limit that a storage item can hold |
+| [minecraft:swing_duration](./ItemComponents/minecraft_swing_duration.md)| Duration, in seconds, of the item's swing animation played when mining or attacking. |
 | [minecraft:tags](./ItemComponents/minecraft_tags.md)| Determines which tags are included on a given item |
 | [minecraft:throwable](./ItemComponents/minecraft_throwable.md)| Sets the throwable item component. |
 | [minecraft:use_animation](./ItemComponents/minecraft_use_animation.md)| Use_animation specifies which animation is played when the player uses the item. |

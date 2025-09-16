@@ -220,6 +220,7 @@
         "description": "Sounds to play when the entity is getting provoked. Evaluated in order. First matching condition wins",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "Sounds to play when the entity is getting provoked. Evaluated in order. First matching condition wins",
           "fields": [
             {

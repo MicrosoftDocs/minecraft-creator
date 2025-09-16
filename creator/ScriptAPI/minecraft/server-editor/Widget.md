@@ -35,6 +35,14 @@ Type: *number*
 Notes:
   - This property can't be edited in read-only mode.
 
+### **collisionType**
+`collisionType: WidgetCollisionType;`
+
+Type: [*WidgetCollisionType*](WidgetCollisionType.md)
+
+Notes:
+  - This property can't be edited in read-only mode.
+
 ### **group**
 `read-only group: WidgetGroup;`
 
@@ -107,6 +115,7 @@ Type: *string*
 - [addClipboardComponent](#addclipboardcomponent)
 - [addEntityComponent](#addentitycomponent)
 - [addGizmoComponent](#addgizmocomponent)
+- [addGridComponent](#addgridcomponent)
 - [addGuideComponent](#addguidecomponent)
 - [addRenderPrimitiveComponent](#addrenderprimitivecomponent)
 - [addSplineComponent](#addsplinecomponent)
@@ -176,6 +185,21 @@ addGizmoComponent(componentName: string, options?: WidgetComponentGizmoOptions):
 - **options**?: [*WidgetComponentGizmoOptions*](WidgetComponentGizmoOptions.md) = `null`
 
 **Returns** [*WidgetComponentGizmo*](WidgetComponentGizmo.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+
+### **addGridComponent**
+`
+addGridComponent(componentName: string, options?: WidgetComponentGridOptions): WidgetComponentGrid
+`
+
+#### **Parameters**
+- **componentName**: *string*
+- **options**?: [*WidgetComponentGridOptions*](WidgetComponentGridOptions.md) = `null`
+
+**Returns** [*WidgetComponentGrid*](WidgetComponentGrid.md)
   
 Notes:
 - This function can't be called in read-only mode.

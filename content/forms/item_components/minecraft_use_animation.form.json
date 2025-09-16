@@ -1,5 +1,12 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "id": "value",
+      "title": "Value",
+      "description": "Specifies which animation to play when the the item is used.",
+      "dataType": 2
+    }
+  ],
   "scalarFieldUpgradeName": "value",
   "generated_doNotEdit": {
     "title": "Use Animation",

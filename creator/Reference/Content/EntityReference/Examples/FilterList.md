@@ -17,7 +17,7 @@ ms.date: 02/11/2025
 | [bool_property](Filters/bool_property.md)| Returns true when the bool actor property matches the value provided. |
 | [clock_time](Filters/clock_time.md)| Compares the current time with a float value in the range (0.0, 1.0). 0.0= Noon 0.25= Sunset 0.5= Midnight 0.75= Sunrise |
 | [distance_to_nearest_player](Filters/distance_to_nearest_player.md)| Compares the distance to the nearest Player with a float value. |
-| [enum_property](Filters/enum_property.md)| Returns true when the enum actor property matches the value provided. |
+| [enum_property](Filters/enum_property.md)| Returns true when the actor property matches the value provided. |
 | [float_property](Filters/float_property.md)| Returns true when the float actor property matches the value provided. |
 | [has_ability](Filters/has_ability.md)| Returns true when the subject entity has the named ability. |
 | [has_biome_tag](Filters/has_biome_tag.md)| Tests whether the biome the subject is in has the specified tag. |

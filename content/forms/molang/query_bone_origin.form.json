@@ -1,10 +1,11 @@
 {
   "id": "query.bone_origin",
   "fields": [],
+  "description": "Returns the initial (from the .geo) pivot of a bone as a structure with members '.x', '.y', and '.z'.",
   "generated_doNotEdit": {
     "id": "query.bone_origin",
     "title": "Bone Origin",
-    "description": "Returns the initial (from the .geo) pivot of a bone as a struct with members '.x', '.y', and '.z'.",
+    "description": "Returns the initial (from the .geo) pivot of a bone as a with members '.x', '.y', and '.z'.",
     "fields": []
   }
 }
