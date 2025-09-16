@@ -17,7 +17,7 @@ More updated overview of working with Jigsaw Structures:
 
 > [!VIDEO https://youtu.be/dVXA98kI9c0?si=W9GHp-WttC0hpG9p]
 
-Original tutorial on creating with Jigsaw structures. This video shows a way use jigsaw structures, and we are using it as a guide to help us learn the process:
+Original tutorial on creating with Jigsaw structures. This video shows a way to use jigsaw structures, and we are using it as a guide to help us learn the process:
 
 > [!VIDEO https://www.youtube.com/embed/57sLxXDkaA0]
 
