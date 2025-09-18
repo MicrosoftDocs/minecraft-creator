@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Introduction to the Tickingarea Command
 description: "A guide about ticking areas"
 ms.service: minecraft-bedrock-edition
+ms.date: 09/09/2025
 ---
 
 # Introduction to Ticking Areas
@@ -18,9 +19,7 @@ In this tutorial you will learn the following:
 > - How to find out what ticking areas have been created.
 > - What it means if a ticking area is preloaded.
 
-### Requirements
-
-It's recommended that the following be completed before beginning this tutorial.
+You should be familiar with these topics:
 
 - [Introduction to Commands](CommandsIntroduction.md)
 - [Introduction to Command Blocks](CommandBlocks.md)
@@ -29,19 +28,19 @@ You will need a Minecraft world with cheats enabled and coordinates shown.
 
 ## add
 
-Ticking areas are not made up of blocks - they are made up of the chunks Minecraft uses to create worlds. 
+Ticking areas are not made up of blocks; they are made up of the chunks Minecraft uses to create worlds.
 
-When you use the `/tickingarea add ...` command, it uses the parameters you give it to draw a shape that extends all the way up and all the way down from where you place it - like a column. But, you won't actually see the shape in the game, so it's like an imaginary column. Any chunks that are touched by this column are included in the ticking area. This chunk, or collection of chunks, is then saved with a name that you give it as a ticking area.
+> [!NOTE]
+> **What's a chunk?** A chunk is a portion of a world that's 16 blocks wide and 16 blocks long, extending from the bottom to the top of the world. (In the vanilla Overworld, that's 384 blocks high; in the Nether and the End, it's 256 blocks high.) World maps are generated chunk by chunk.
+
+When you use the `/tickingarea add ...` command, it uses the parameters you give it to draw a shape that extends all the way up and all the way down from where you place it&mdash;like a column. But, you won't actually see the shape in the game, so it's like an imaginary column. Any chunks that are touched by this column are included in the ticking area. This chunk, or collection of chunks, is then saved with a name that you give it as a ticking area.
 
 You can have up to 10 ticking areas in one world and you can keep track of them by name or by their coordinates.
 
 There are two ways to draw the shapes used to add a ticking area:
 
-**`/tickingarea add <from: x y z> <to: x y z> [name: string]`**
-This one draws an imaginary square, rectangle, or cube - depending on what coordinates you give it. Remember: the `y` coordinate doesn't really matter because the shape extends upwards and downwards to the boundaries of your world.
-
-**`/tickingarea add circle <center: x y z> <radius> int> [name: string]`**
-This one draws an imaginary circle with a maximum radius of 4.
+- `/tickingarea add <from: x y z> <to: x y z> [name: string]`: This draws an imaginary square, rectangle, or cube, depending on what coordinates you give it. Remember: the `y` coordinate doesn't really matter because the shape extends upwards and downwards to the boundaries of your world.
+- `/tickingarea add circle <center: x y z> <radius: int> [name: string]`: This draws an imaginary circle, with a maximum radius of 4 chunks.
 
 1. Before you add a ticking area, give yourself a command block that gives you an emerald once every 15 ticks.
 
@@ -63,13 +62,13 @@ To see a list of all of the ticking areas in a world, use:
 
 To remove a ticking area from the game use:
 
-```
+```text
 /tickingarea remove <name:string>
 ```
 
 or
 
-```
+```text
 /tickingarea remove <position x y z>
 ```
 
@@ -77,7 +76,7 @@ or
 
 To remove all of the ticking areas from the game use:
 
-```
+```text
 /tickingarea remove_all
 ```
 
@@ -89,7 +88,7 @@ Ticking areas typically load after the world containing them is launched, unless
 
 Like the `tickingarea add` command, there are two syntaxes for the preload overload: one taking a position and one taking an area name.
 
-```
+```text
 /tickingarea preload <position> [optional preload value] 
 
 /tickingarea preload <area name> [optional preload value] 
@@ -99,19 +98,19 @@ If the optional preload value is not specified, then the command queries the cur
 
 For `/tickingarea add...`, there is an option value to specify that the new area should preload, for both the box and circle variants.
 
-```
+```text
 /tickingarea add <min position> <max position> [optional name] [optional preload value] 
 
 /tickingarea add circle <center position> <radius in chunks> [optional name] [optional preload value]
 ```
 
-## Using the Schedule command with a ticking area
+## Using the schedule command with a ticking area
 
 Creators can use the `/schedule` command to make the game wait for chunks and entities to be loaded before executing a series of commands, such as those configured in a ticking area. This is important for our creators so that they can know when they can run their commands in each area.
 
 ### Syntax of the /schedule command
 
-```
+```text
 /schedule on_area_loaded add <from: x y z> <to: x y z> <function:filepath> 
 
 /schedule on_area_loaded add circle <center: x y z> <radius: int> <function: filepath> 
@@ -119,10 +118,11 @@ Creators can use the `/schedule` command to make the game wait for chunks and en
 /schedule on_area_loaded add tickingarea <name: string> <function: filepath>
 ```
 
-## What's Next?
+## What's next?
 
-Now that you have learned more about ticking areas, you could learn more about scoreboard operations or create a Complete the Monument challenge.
+Now that you have learned the basics of ticking areas, you can explore how they interact with simulation distance and render distance for more advanced use cases.
 
 > [!div class="nextstepaction"]
+> [Understanding Simulation Distance, Render Distance, and Ticking Areas](SimulationRenderDistanceGuide.md)
 > [Scoreboard Operations Tutorial](ScoreboardOperationsTutorial.md)
 > [Create an In-World Game](CreateAnInWorldGame.md)
