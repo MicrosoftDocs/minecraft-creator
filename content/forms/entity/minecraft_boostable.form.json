@@ -49,6 +49,7 @@
         "description": "List of items that can be used to boost while riding this entity. Each item has the following properties:",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "List of items that can be used to boost while riding this entity. Each item has the following properties:",
           "fields": [
             {

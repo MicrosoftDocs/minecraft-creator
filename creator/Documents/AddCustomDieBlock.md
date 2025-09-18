@@ -63,7 +63,7 @@ We'll begin by creating a Behavior Pack for the custom block:
 
     * Press **Win+R** to open **Run**.
     * If you are using main Minecraft releases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
-    * Alternatively, if you are using preview Minecraft preleases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\games\com.mojang`
+    * Alternatively, if you are using preview Minecraft versions, see more information about the folder to use in [this article](./GDKPCProjectFolder.md)
     * Click **OK**.
 
 2. Open the **development_behavior_packs** folder.

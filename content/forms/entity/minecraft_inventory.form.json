@@ -12,13 +12,13 @@
         "defaultValue": 0,
         "dataType": 0,
         "samples": {
-          "/vanilla/behavior_pack/entities/llama.json": [
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:inventory/",
               "content": 3
             }
           ],
-          "/vanilla/behavior_pack/entities/trader_llama.json": [
+          "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:inventory/",
               "content": 3
@@ -31,21 +31,7 @@
         "title": "Can Be Siphoned From",
         "description": "If true, the contents of this inventory can be removed by a hopper",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/chest_boat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:inventory/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/entities/chest_minecart.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:inventory/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "container_type",
@@ -54,34 +40,16 @@
         "defaultValue": "none",
         "dataType": 2,
         "samples": {
-          "/vanilla/behavior_pack/entities/camel.json": [
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:camel_adult/minecraft:inventory/",
+              "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:inventory/",
               "content": "horse"
             }
           ],
-          "/vanilla/behavior_pack/entities/chest_boat.json": [
+          "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:inventory/",
-              "content": "chest_boat"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/chest_minecart.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:inventory/",
-              "content": "minecart_chest"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/donkey.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:inventory/",
+              "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:inventory/",
               "content": "horse"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/hopper_minecart.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:inventory/",
-              "content": "minecart_hopper"
             }
           ]
         }
@@ -93,61 +61,19 @@
         "defaultValue": 5,
         "dataType": 0,
         "samples": {
-          "/vanilla/behavior_pack/entities/allay.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:inventory/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/chest_boat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:inventory/",
-              "content": 27
-            }
-          ],
-          "/vanilla/behavior_pack/entities/chest_minecart.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:inventory/",
-              "content": 27
-            }
-          ],
-          "/vanilla/behavior_pack/entities/donkey.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:inventory/",
-              "content": 16
-            }
-          ],
-          "/vanilla/behavior_pack/entities/hopper_minecart.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:inventory/",
-              "content": 5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/horse.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:horse_tamed/minecraft:inventory/",
-              "content": 2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/llama.json": [
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:inventory/",
               "content": 16
             }
           ],
-          "/vanilla/behavior_pack/entities/panda.json": [
+          "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:inventory/",
-              "content": 1
+              "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:inventory/",
+              "content": 16
             }
           ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:inventory/",
-              "content": 8
-            }
-          ],
-          "/vanilla/behavior_pack/entities/villager.json": [
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
             {
               "path": "/minecraft:entity/components/minecraft:inventory/",
               "content": 8
@@ -162,13 +88,7 @@
         "defaultValue": false,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/panda.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:inventory/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/entities/villager.json": [
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
             {
               "path": "/minecraft:entity/components/minecraft:inventory/",
               "content": true
@@ -185,140 +105,6 @@
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/allay.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:inventory/",
-          "content": {
-            "inventory_size": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/camel.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:camel_adult/minecraft:inventory/",
-          "content": {
-            "container_type": "horse"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/chest_boat.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:inventory/",
-          "content": {
-            "container_type": "chest_boat",
-            "inventory_size": 27,
-            "can_be_siphoned_from": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/chest_minecart.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:inventory/",
-          "content": {
-            "container_type": "minecart_chest",
-            "inventory_size": 27,
-            "can_be_siphoned_from": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/command_block_minecart.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:inventory/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/donkey.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:inventory/",
-          "content": {
-            "inventory_size": 16,
-            "container_type": "horse"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/hopper_minecart.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:inventory/",
-          "content": {
-            "container_type": "minecart_hopper",
-            "inventory_size": 5,
-            "can_be_siphoned_from": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/horse.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_tamed/minecraft:inventory/",
-          "content": {
-            "inventory_size": 2,
-            "container_type": "horse"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/llama.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:inventory/",
-          "content": {
-            "inventory_size": 16,
-            "container_type": "horse",
-            "additional_slots_per_strength": 3
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/mule.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:mule_tamed/minecraft:inventory/",
-          "content": {
-            "inventory_size": 16,
-            "container_type": "horse"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/panda.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:inventory/",
-          "content": {
-            "inventory_size": 1,
-            "private": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/piglin.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:inventory/",
-          "content": {
-            "inventory_size": 8
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/trader_llama.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:inventory/",
-          "content": {
-            "inventory_size": 16,
-            "container_type": "horse",
-            "additional_slots_per_strength": 3
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/villager.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:inventory/",
-          "content": {
-            "inventory_size": 8,
-            "private": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/villager_v2.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:inventory/",
-          "content": {
-            "inventory_size": 8,
-            "private": true
-          }
-        }
-      ],
       "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:inventory/",

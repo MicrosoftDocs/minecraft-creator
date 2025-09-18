@@ -10,9 +10,9 @@ description: Contents of the @minecraft/server.BlockVolumeBase class.
 # BlockVolumeBase Class
 
 ## Classes that extend BlockVolumeBase
+- [*@minecraft/server-editor.RelativeVolumeListBlockVolume*](../../../scriptapi/minecraft/server-editor/RelativeVolumeListBlockVolume.md)
 - [*BlockVolume*](BlockVolume.md)
 - [*ListBlockVolume*](ListBlockVolume.md)
-- [*@minecraft/server-editor.RelativeVolumeListBlockVolume*](../../../scriptapi/minecraft/server-editor/RelativeVolumeListBlockVolume.md)
 
 Base type for BlockVolumes.
 

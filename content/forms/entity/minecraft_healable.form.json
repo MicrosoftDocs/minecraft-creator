@@ -57,6 +57,7 @@
         "description": "The array of items that can be used to heal this entity.",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "The array of items that can be used to heal this entity.",
           "fields": [
             {

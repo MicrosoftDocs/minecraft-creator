@@ -14,174 +14,24 @@
         "id": "home_block_list",
         "title": "Home Block List",
         "description": "Optional list of blocks that can be considered a valid home. If no such block longer exists at that position,\n\t\t\t\t\t\t\t\t\t\t\tthe home restriction is removed. Example syntax: minecraft:sand. Not supported: minecraft:sand:1.",
-        "dataType": 17,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:home/",
-              "content": [
-                "minecraft:bee_nest",
-                "minecraft:beehive"
-              ]
-            }
-          ]
-        }
+        "dataType": 17
       },
       {
         "id": "restriction_radius",
         "title": "Restriction Radius",
         "description": "Optional radius that the entity will be restricted to in relation to its home.",
         "defaultValue": 0,
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:home/",
-              "content": 22
-            }
-          ],
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:home/",
-              "content": 32
-            }
-          ],
-          "/vanilla/behavior_pack/entities/elder_guardian.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:home/",
-              "content": 16
-            }
-          ],
-          "/vanilla/behavior_pack/entities/guardian.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:home/",
-              "content": 16
-            }
-          ],
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:home/",
-              "content": 32
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_unharnessed/minecraft:home/",
-              "content": 64
-            }
-          ]
-        }
+        "dataType": 0
       },
       {
         "id": "restriction_type",
         "title": "Restriction Type",
         "description": "Defines how the the entity will be restricted to its home position. The possible values are:\n\t\t\t\t\t\t\t\t\t\t\t\t\\n- \"none\", which poses no restriction.\n\t\t\t\t\t\t\t\t\t\t\t\t\\n- \"random_movement\", which restricts randomized movement to be around the home position.\n\t\t\t\t\t\t\t\t\t\t\t\t\\n- \"all_movement\", which restricts any kind of movement to be around the home position.\n\t\t\t\t\t\t\t\t\t\t\t\t\tHowever, entities that somehow got too far away from their home will always be able to move closer to it, if prompted to do so.",
         "defaultValue": "none",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:home/",
-              "content": "random_movement"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:home/",
-              "content": "all_movement"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/elder_guardian.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:home/",
-              "content": "random_movement"
-            }
-          ]
-        }
+        "dataType": 2
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/bee.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:home/",
-          "content": {
-            "restriction_type": "random_movement",
-            "restriction_radius": 22,
-            "home_block_list": [
-              "minecraft:bee_nest",
-              "minecraft:beehive"
-            ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/creaking.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:home/",
-          "content": {
-            "restriction_type": "all_movement",
-            "restriction_radius": 32
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/elder_guardian.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:home/",
-          "content": {
-            "restriction_type": "random_movement",
-            "restriction_radius": 16
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/guardian.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:home/",
-          "content": {
-            "restriction_type": "random_movement",
-            "restriction_radius": 16
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/happy_ghast.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:home/",
-          "content": {
-            "restriction_radius": 32,
-            "restriction_type": "random_movement"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_unharnessed/minecraft:home/",
-          "content": {
-            "restriction_radius": 64,
-            "restriction_type": "random_movement"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:home/",
-          "content": {
-            "restriction_radius": 32,
-            "restriction_type": "random_movement"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/piglin_brute.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:home/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/turtle.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:home/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wandering_trader.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:home/",
-          "content": {
-            "restriction_radius": 16
-          }
-        }
-      ],
       "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
         {
           "path": "/minecraft:entity/components/minecraft:home/",

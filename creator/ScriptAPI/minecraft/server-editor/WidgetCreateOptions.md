@@ -26,6 +26,11 @@ Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.
 
 Type: *number*
 
+### **collisionType**
+`collisionType?: WidgetCollisionType;`
+
+Type: [*WidgetCollisionType*](WidgetCollisionType.md)
+
 ### **lockToSurface**
 `lockToSurface?: boolean;`
 

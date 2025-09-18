@@ -27,6 +27,7 @@ ms.date: 02/11/2025
 | [query.armor_material_slot](queryfunctions/query_armor_material_slot.md)| Takes the armor slot index as a parameter, and returns the armor material type in the requested armor slot. |
 | [query.armor_texture_slot](queryfunctions/query_armor_texture_slot.md)| Takes the armor slot index as a parameter, and returns the texture type of the requested slot. |
 | [query.average_frame_time](queryfunctions/query_average_frame_time.md)| Returns the time in *seconds* of the average frame time over the last 'n' frames. |
+| [query.base_swing_duration](queryfunctions/query_base_swing_duration.md)| Returns the duration of the mob's swing/attack animation, determined by the carried item and unmodified by effects applied on the mob. |
 | [query.blocking](queryfunctions/query_blocking.md)| Returns 1.0 if the entity is blocking, else it returns 0.0. |
 | [query.block_face](queryfunctions/query_block_face.md)| Returns the block face for this (only valid for certain triggers such as placing blocks, or interacting with block) (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
 | [query.block_has_all_tags](queryfunctions/query_block_has_all_tags.md)| Takes a world-origin-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has all of the tags provided. |
@@ -36,11 +37,11 @@ ms.date: 02/11/2025
 | [query.block_state](queryfunctions/query_block_state.md)| Returns the value of the associated block's block state. |
 | [query.body_x_rotation](queryfunctions/query_body_x_rotation.md)| Returns the body pitch rotation if called on an entity, else it returns 0.0. |
 | [query.body_y_rotation](queryfunctions/query_body_y_rotation.md)| Returns the body yaw rotation if called on an entity, else it returns 0.0. |
-| [query.bone_aabb](queryfunctions/query_bone_aabb.md)| Returns the axis aligned bounding box of a bone as a struct with members '.min', '.max', along with '.x', '.y', and '.z' values for each. |
+| [query.bone_aabb](queryfunctions/query_bone_aabb.md)| Returns the axis aligned bounding box of a bone as a structure with members '.min', '.max', along with '.x', '.y', and '.z' values for each. |
 | [query.bone_orientation_matrix](queryfunctions/query_bone_orientation_matrix.md)| Returns the bone orientation (as a matrix) of the desired bone provided it exists in the queryable geometry of the mob, else this returns the identity matrix and throws a content error. |
 | [query.bone_orientation_trs](queryfunctions/query_bone_orientation_trs.md)| Returns the bone orientation matrix decomposed into the component translation/rotation/scale (TRS) parts of the desired bone provided it exists in the queryable geometry of the mob, else this returns the identity matrix and throws a content error. |
-| [query.bone_origin](queryfunctions/query_bone_origin.md)| Returns the initial (from the .geo) pivot of a bone as a struct with members '.x', '.y', and '.z'. |
-| [query.bone_rotation](queryfunctions/query_bone_rotation.md)| Returns the initial (from the .geo) rotation of a bone as a struct with members '.x', '.y', and '.z' in degrees. |
+| [query.bone_origin](queryfunctions/query_bone_origin.md)| Returns the initial (from the .geo) pivot of a bone as a structure with members '.x', '.y', and '.z'. |
+| [query.bone_rotation](queryfunctions/query_bone_rotation.md)| Returns the initial (from the .geo) rotation of a bone as a structure with members '.x', '.y', and '.z' in degrees. |
 | [query.camera_distance_range_lerp](queryfunctions/query_camera_distance_range_lerp.md)| Takes two distances (any order) and return a number from 0 to 1 based on the camera distance between the two ranges clamped to that range. |
 | [query.camera_rotation](queryfunctions/query_camera_rotation.md)| Returns the rotation of the camera. |
 | [query.can_climb](queryfunctions/query_can_climb.md)| Returns 1.0 if the entity can climb, else it returns 0.0. |
@@ -236,6 +237,7 @@ ms.date: 02/11/2025
 | [query.model_scale](queryfunctions/query_model_scale.md)| Returns the scale of the current entity. |
 | [query.modified_distance_moved](queryfunctions/query_modified_distance_moved.md)| Returns the total distance the entity has moved horizontally in meters (since the entity was last loaded, not necessarily since it was originally created). |
 | [query.modified_move_speed](queryfunctions/query_modified_move_speed.md)| Returns the current walk speed of the entity. |
+| [query.modified_swing_duration](queryfunctions/query_modified_swing_duration.md)| Returns the duration of the mob's swing/attack animation, determined by the carried item and modified by effects applied on the mob. |
 | [query.moon_brightness](queryfunctions/query_moon_brightness.md)| Returns the brightness of the moon (FULL_MOON=1.0, WANING_GIBBOUS=0.75, FIRST_QUARTER=0.5, WANING_CRESCENT=0.25, NEW_MOON=0.0, WAXING_CRESCENT=0.25, LAST_QUARTER=0.5, WAXING_GIBBOUS=0.75). |
 | [query.moon_phase](queryfunctions/query_moon_phase.md)| Returns the phase of the moon (FULL_MOON=0, WANING_GIBBOUS=1, FIRST_QUARTER=2, WANING_CRESCENT=3, NEW_MOON=4, WAXING_CRESCENT=5, LAST_QUARTER=6, WAXING_GIBBOUS=7). |
 | [query.movement_direction](queryfunctions/query_movement.direction.md)| Returns the specified axis of the normalized position delta of the entity. |
@@ -275,7 +277,7 @@ ms.date: 02/11/2025
 | [query.state_time](queryfunctions/query_state_time.md)| Returns the time in seconds in the current animation controller state. |
 | [query.structural_integrity](queryfunctions/query_structural_integrity.md)| Returns the structural integrity for the entity, otherwise returns 0. |
 | [query.surface_particle_color](queryfunctions/query_surface_particle_color.md)| Returns the particle color for the block located in the surface below the entity (scanned up to 10 blocks down). |
-| [query.surface_particle_texture_coordinate](queryfunctions/query_surface_particle_texture_coordinate.md)| Returns the texture coordinate for generating particles for the block located in the surface below the actor (scanned up to 10 blocks down) in a struct with 'u' and 'v' keys. |
+| [query.surface_particle_texture_coordinate](queryfunctions/query_surface_particle_texture_coordinate.md)| Returns the texture coordinate for generating particles for the block located in the surface below the entity (scanned up to 10 blocks down) in a structure with 'u' and 'v' keys. |
 | [query.surface_particle_texture_size](queryfunctions/query_surface_particle_texture_size.md)| Returns the texture size for generating particles for the block located in the surface below the entity (scanned up to 10 blocks down). |
 | [query.swelling_dir](queryfunctions/query_swelling_dir.md)| Returns the swelling direction of the entity if it makes sense, else it returns 0.0. |
 | [query.swell_amount](queryfunctions/query_swell_amount.md)| Returns how swollen an entity is. |

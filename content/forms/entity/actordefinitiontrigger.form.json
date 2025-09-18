@@ -1,0 +1,68 @@
+{
+  "id": "ActorDefinitionTrigger",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "ActorDefinitionTrigger",
+    "title": "Entity ActorDefinitionTrigger",
+    "fields": [
+      {
+        "id": "event",
+        "title": "Event",
+        "dataType": 2
+      },
+      {
+        "id": "filters",
+        "description": "Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.",
+        "dataType": 16,
+        "subForm": {
+          "id": "filters",
+          "title": "Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": 16
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": 16
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": 16
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": 2,
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": 16
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "filters",
+            "dataType": 16
+          }
+        ]
+      },
+      {
+        "id": "target",
+        "title": "FilterSubject",
+        "dataType": 2
+      }
+    ]
+  }
+}

@@ -17,6 +17,7 @@
         "description": "List of entity types that this entity can target if the potential target is hurt by this mob's owner",
         "dataType": 15,
         "subForm": {
+          "id": "",
           "description": "List of entity types that this entity can target if the potential target is hurt by this mob's owner",
           "fields": [
             {

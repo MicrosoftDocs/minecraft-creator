@@ -4,11 +4,15 @@
   "generatedFromSchema_doNotEdit": {
     "id": "Placement Position",
     "title": "Block Placement Position",
+    "description": "Adds the \"minecraft:block_face\" and/or \"minecraft:vertical_half\" states and setter function to the block.",
     "fields": [
       {
         "id": "enabled_states",
         "title": "Enabled States",
+        "description": "Which states to enable. Must specify at least one. Options: [\"minecraft:block_face\", \"minecraft:vertical_half\"].",
         "dataType": 17,
+        "minLength": 1,
+        "maxLength": 2,
         "isRequired": true
       }
     ]

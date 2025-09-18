@@ -9,11 +9,7 @@ ms-date: 04/29/2025
 
 # Jigsaw Structures
 
-Before taking a look at Jigsaw Structures, we should first start at structures themselves; as a reminder, a structure is a large decoration and arrangement of blocks, potentially covering many chunks of space.
-
-Jigsaw Structures are large structures comprised of multiple Structure Templates, each containing Jigsaw Blocks to determine their relative placement and constraints. Template Pools contain any number of Structure Templates, which can contain any number of Jigsaw Blocks, which may connect to one Template Pool.
-
-These structures also have rules guiding how and where they are generated within the world. Examples of Jigsaw Structures include Trail Ruins and Trial Chambers.
+Before taking a look at Jigsaw Structures, we should understand its component part: a Structure. A Structure is a large decoration and arrangement of blocks, potentially covering many chunks of space. It is saved as a Structure Template (.mcstructure in Bedrock, .nbt in Java) and can be created, loaded, and modified via Structure Blocks. See [Introduction to Structure Blocks](../../../../Documents/Structures/IntroductionToStructureBlocks.md).
 
 >[!IMPORTANT]
 > This feature is currently experimental, subject to change, and is only available when the **Data-Driven Jigsaw Structures** experiment is enabled for a world.
@@ -23,9 +19,12 @@ These structures also have rules guiding how and where they are generated within
 
 ## Construction
 
-At a high level, Jigsaw Structures are constructed by placing a single template; adding any Jigsaw Blocks within it, to a pending list. Then, if there is more depth that can be iterated, and there are pending Jigsaw Blocks to process, we will repeat. 
+A Jigsaw Structure is a dynamic, modular structure composed of multiple Structure Templates connected via Jigsaw Blocks. Each Structure Template contains Jigsaw Blocks that define how it can connect to other templates and where those connections should occur. These blocks act as connectors, enabling the structure to grow by attaching new pieces.
 
-Jigsaw Blocks act like connectors, allowing structures to grow by attaching new pieces. The `max_depth` sets a limit on how many times new pieces can be added through these connectors. Once the limit is reached, the structure stops expanding, preventing infinite growth.
+At a high level, the construction of a Jigsaw Structure begins by placing a single template. Any Jigsaw Blocks within it are added to a pending list. If there is additional depth available for iteration and pending blocks to process, the system continues expanding the structure by resolving those connections. This recursive process continues until the specified max_depth is reached, which limits how many times new pieces can be added—preventing infinite growth.
+
+The overall behavior and placement of a Jigsaw Structure in the world are governed by its Jigsaw Structure JSON, which defines generation rules and constraints. Examples of Jigsaw Structures include Trail Ruins and Trial Chambers.
+For more info, see [Introduction to Jigsaw Structures](../../../../Documents/Structures/IntroductionToJigsawStructures.md).
 
 > Note: This process can be relatively time consuming depending on the complexity and quantity of Jigsaw Blocks in any given template.
 
@@ -50,7 +49,6 @@ Jigsaw Blocks act like connectors, allowing structures to grow by attaching new 
 ## Example JSON
 
 The JSON below shows how to combine the properties above to make `trail_ruins`.
-
 ```json
 { 
   "format_version": "1.21.20", 
@@ -81,7 +79,7 @@ The JSON below shows how to combine the properties above to make `trail_ruins`.
 } 
 ```
 
-### Description
+### description
 
 Object containing the identifier of the Jigsaw Structure. This MUST contain an identifier.
 
@@ -97,8 +95,11 @@ Biomes in which the Jigsaw Structure can generate.
 
 Biome filters are just a type of Entity Filter that only iterative over biomes. As such, most of the available [tests](../../EntityReference/Examples/FilterList.md), while functional, may not be useful in the context of biomes.
 
+>[!IMPORTANT]
+> Jigsaw structures may behave unpredictably in dimensions other than the Overworld. We recommend targeting Jigsaw Structures to overworld-specific biomes there to prevent them from appearing, unintended, in other dimensions.
+
 > [!NOTE]
-> Generally speaking, the most useful `test` will be [`"has_biome_tag"`](../../EntityReference/Examples/Filters/has_biome_tag.md). With a `value` of the strings of the tags you're looking for. Here is a list of available [biome tags](../../entityreference/examples/definitions/nestedtables/biome_filter.md).
+> Generally speaking, the most useful `test` will be [`"has_biome_tag"`](../../EntityReference/Examples/Filters/has_biome_tag.md). With a `value` of the strings of the tags you're looking for. Here is a list of available [biome tags](../../EntityReference/Examples/Definitions/NestedTables/biome_filter.md).
 
 #### Properties
 
@@ -166,7 +167,7 @@ The height provider which gives us the offset at which the Jigsaw Structure's `s
 > [!NOTE]
 > This is an offset from the `heightmap_projection`. If `heightmap_projection` is set, it is recommended to use the [`"absolute"`](#absolute) Vertical Anchor for ease of use.
 
-##### height provider type
+#### Height Provider Type
 
 The `type` of the the height provider. These values determine the format of the `start_height` JSON Object. That is, the rest of properties of the object.
 
@@ -222,11 +223,12 @@ When the `type` is `"uniform"` it now also expects two vertical anchor points to
 
 ### Vertical Anchor
 
-A vertical anchor defines a point in the dimension to offset from. There are four types and each has it own individually named property:
+A vertical anchor defines a point in the dimension to offset from. These points are used to define the start height `"value"` or bounds (`"min"` and `"max"`).
+There are four types and each has it own individually named property:
 
-#### Absolute
+#### `"absolute"`
 
-An absolute height.
+An absolute height. 
 
 #### Properties
 
@@ -234,7 +236,7 @@ An absolute height.
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | absolute | *not set* | Required | Integer | An absolute height. |  trail_ruins: `-15` |
 
-#### Above Bottom
+#### `"above_bottom"`
 
 A relative height above the bottom of the dimension. Must be positive. 
 
@@ -244,7 +246,7 @@ A relative height above the bottom of the dimension. Must be positive.
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | above_bottom | *not set* | Required | Positive Integer | A relative height above the bottom of the dimension. |  |
 
-#### Below Top
+#### `"below_top"`
 
 A relative height below the top of the dimension. Must be positive. 
 
@@ -254,7 +256,7 @@ A relative height below the top of the dimension. Must be positive.
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | below_top | *not set* | Required | Positive Integer | A relative height below the top of the dimension. |  |
 
-#### From Sea
+#### `"from_sea"`
 
 A relative height starting at the dimension's sea level.
 
@@ -277,8 +279,7 @@ The heightmap that should be used when determining the starting height.
 | `"ocean_floor"` | Begin generating relative to the first motion-blocking block encountered from the top down. |
 | `"none"` | Doesn't perform any heightmap projection and begins generating from a Y of `0`. |
 
-For example, this:
-
+For example:
 ```json
 "heightmap_projection": "ocean_floor",
 "start_height": {
@@ -288,8 +289,7 @@ For example, this:
   }, 
 },
 ```
-
-means that the Jigsaw Structure will begin generating 10 blocks above the ocean floor.
+This JSON indicates that the Jigsaw Structure will begin generating 10 blocks above the ocean floor.
 
 ### dimension_padding
 
@@ -302,6 +302,13 @@ Used to specify the padding at the top and bottom of the dimension when placing 
 | bottom | `0` | Optional | Positive Integer | Distance in blocks from the bottom of the dimension that may not be used by the Jigsaw Structure. |  |
 | top | `0` | Optional | Positive Integer | Distance in blocks from the top of the dimension that may not be used by the Jigsaw Structure. | |
 
+```json
+"dimension_padding": {
+  "top": 20,
+  "bottom": 10
+}
+```
+
 ### max_distance_from_center
 
 Used to specify the max horizontal and vertical distances from the jigsaw pieces to the structure start.
@@ -312,15 +319,23 @@ Used to specify the max horizontal and vertical distances from the jigsaw pieces
 | horizontal | `80` | Required | Positive Integer | Max distance in blocks from the jigsaw pieces to the structure start on the horizontal plane. |  |
 | vertical | `<integer maximum>` | Optional | Positive Integer | Max distance in blocks from the jigsaw pieces to the structure start on the vertical axis. | |
 
+```json
+"max_distance_from_center": {
+  "horizontal": 80,
+  "vertical": 80
+}
+```
+
 ### pool_aliases 
 
 Used to rewire jigsaw pool connections by redirecting pool references in an individual structure. Done by specifying aliases for Template Pools.  This can allow for themes across a full structure. 
 
 For instance: an alias `chambers/melee`, can be replaced by `chambers/melee/normal`, `chambers/melee/poison` or `chambers/melee/wither` which are specialized Template Pools.
 
-##### pool alias type
+#### Pool Alias Type
 
 The `type` of the pool alias. These values determine the format of each individual pool alias JSON Object. That is, the rest of the properties on the object.
+There are three types:
 
 ##### Values
 
@@ -330,7 +345,7 @@ The `type` of the pool alias. These values determine the format of each individu
 | `"random"` | Pool alias for a Random list of targets.<br>[`pool_aliases`](#pool_aliases) now expects the rest of the parameters to match the [`"random"`](#random-pool-alias) format. |
 | `"random_group"` | Pool alias for a RandomGroup of aliases.<br>[`pool_aliases`](#pool_aliases) now expects the rest of the parameters to match the [`"random_group"`](#random_group-pool-alias) format. |
 
-#### direct pool alias
+#### `"direct"` pool alias
 
 Pool alias for a Direct target.
 
@@ -352,7 +367,7 @@ Pool alias for a Direct target.
 ],
 ```
 
-#### random pool alias
+#### `"random"` pool alias
 
 Pool alias for a Random list of targets.
 
@@ -383,7 +398,7 @@ Pool alias for a Random list of targets.
 ],
 ```
 
-#### random_group pool alias
+#### `"random_group"` pool alias
 
 Pool alias for a RandomGroup of aliases.
 
@@ -397,7 +412,7 @@ Pool alias for a RandomGroup of aliases.
 ```json
 "pool_aliases": [
   {
-	  "type": "random_group",
+	"type": "random_group",
     "groups": [
         {
           "data": [
@@ -440,7 +455,7 @@ Pool alias for a RandomGroup of aliases.
 
 ### Weighted Random List
 
-A weighted random list is a collection of items where each item is assigned a specific weight, representing its probability of being selected. The weights determine how likely each item is to be chosen when a random selection is made. Items with higher weights have a greater chance of being selected compared to items with lower weights.
+A weighted random list is a collection of [weighted random items](#weighted-random-item) where each item is assigned a specific weight, representing its probability of being selected. The weights determine how likely each item is to be chosen when a random selection is made. Items with higher weights have a greater chance of being selected compared to items with lower weights.
 
 Consider a list of fruits with associated weights:
 - Apple: 1
@@ -457,7 +472,7 @@ The probability of selecting each fruit is:
 
 #### Weighted Random Item
 
-A used by [Weighted Random Lists](#weighted-random-list). the `weight` property must be positive. The `data` property can be anything.
+Used by [Weighted Random Lists](#weighted-random-list). The `weight` property must be positive. The `data` property can be anything.
 
 ##### Properties
 
@@ -466,12 +481,18 @@ A used by [Weighted Random Lists](#weighted-random-list). the `weight` property 
 | data | *not set* | Required | JSON Object | The data used when randomly selected. |  |
 | weight | *not set* | Required | Positive Integer | The weight of the item relative to the total weight of all items in the list. |  |
 
+See [Weighted Random Lists](#weighted-random-list) for JSON example.
+
 ### liquid_settings
 
-How to handle waterloggable blocks overlapping with existing liquid.
+Determines how to handle waterloggable blocks submerged in liquid.
 
 #### Values
 |Value      |Description |
 |:----------|:-----------|
 | `"apply_waterlogging"` | Causes a waterloggable block to become waterlogged, if it overlaps with existing liquid. |
 | `"ignore_waterlogging"` | Do not waterlog any waterloggable blocks that overlap existing liquid. |
+
+```json
+"liquid_settings": "ignore_waterlogging"
+```

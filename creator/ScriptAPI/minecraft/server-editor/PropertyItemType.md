@@ -38,6 +38,8 @@ Type of item that can be added to the property pane
 `Image = editorUI:Image`
 ### **Link**
 `Link = editorUI:Link`
+### **Menu**
+`Menu = editorUI:Menu`
 ### **Number**
 `Number = editorUI:Number`
 ### **NumberTimeline**
@@ -54,5 +56,7 @@ Type of item that can be added to the property pane
 `Text = editorUI:Text`
 ### **ToggleGroup**
 `ToggleGroup = editorUI:ToggleGroup`
+### **Vector2**
+`Vector2 = editorUI:Vector2`
 ### **Vector3**
 `Vector3 = editorUI:Vector3`

@@ -1,5 +1,12 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "id": "face",
+      "title": "Facing",
+      "description": "Facing",
+      "dataType": 2
+    }
+  ],
   "generated_doNotEdit": {
     "title": "BlockCulling Contents",
     "description": "BlockCulling Contents",

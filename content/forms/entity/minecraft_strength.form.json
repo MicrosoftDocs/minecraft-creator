@@ -12,7 +12,7 @@
         "defaultValue": 5,
         "dataType": 0,
         "samples": {
-          "/vanilla/behavior_pack/entities/llama.json": [
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:strength_1/minecraft:strength/",
               "content": 5
@@ -31,7 +31,7 @@
         "defaultValue": 1,
         "dataType": 0,
         "samples": {
-          "/vanilla/behavior_pack/entities/llama.json": [
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:strength_1/minecraft:strength/",
               "content": 1
@@ -53,7 +53,7 @@
               "content": 5
             }
           ],
-          "/vanilla/behavior_pack/entities/trader_llama.json": [
+          "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:strength_1/minecraft:strength/",
               "content": 1
@@ -79,80 +79,6 @@
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/llama.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:strength_1/minecraft:strength/",
-          "content": {
-            "value": 1,
-            "max": 5
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:strength_2/minecraft:strength/",
-          "content": {
-            "value": 2,
-            "max": 5
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:strength_3/minecraft:strength/",
-          "content": {
-            "value": 3,
-            "max": 5
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:strength_4/minecraft:strength/",
-          "content": {
-            "value": 4,
-            "max": 5
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:strength_5/minecraft:strength/",
-          "content": {
-            "value": 5,
-            "max": 5
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/trader_llama.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:strength_1/minecraft:strength/",
-          "content": {
-            "value": 1,
-            "max": 5
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:strength_2/minecraft:strength/",
-          "content": {
-            "value": 2,
-            "max": 5
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:strength_3/minecraft:strength/",
-          "content": {
-            "value": 3,
-            "max": 5
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:strength_4/minecraft:strength/",
-          "content": {
-            "value": 4,
-            "max": 5
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:strength_5/minecraft:strength/",
-          "content": {
-            "value": 5,
-            "max": 5
-          }
-        }
-      ],
       "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:strength_1/minecraft:strength/",

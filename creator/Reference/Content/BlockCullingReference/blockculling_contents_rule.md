@@ -18,4 +18,4 @@ BlockCulling Contents Rule.
 |:----------|:-------------|:----|:-----------|:------------- |
 | bone | *not set* | String | bone |  | 
 | cube | *not set* | Integer number | cube |  | 
-| face | *not set* | String | enum SharedTypes_Facing |  | 
+| face | *not set* | String | Facing |  | 
