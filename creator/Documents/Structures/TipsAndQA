@@ -9,6 +9,15 @@ ms-date: 09/04/2025
 
 # Tips + Q & A
 
+## Save your structures with structure void blocks instead of air
+Air will override blocks at the location the structure places in, whereas 
+structure void allows existing blocks to remain unchanged.
+
+## How to best utilize 'weights'
+`weights` are used to determine the probability of an object. A large number does 
+not guarantee an increased probability. Rather, the denominator is determined by 
+all the weights added together. A smaller number (eg. 1) will suffice.
+
 ## Advice on Terrain-Matching
 
 ### Background
@@ -42,6 +51,7 @@ such unexpected collisions. With how terrain-matching is in Java / Bedrock, this
 happen regardless if there is collision detection. What this means for you: there 
 inevitably will need to be tweaking to minimize such collisions.
 
+Conclusion:
 The best way to approach this is from a design standpoint since the algorithm is 
 quite simple to keep it lightweight:
 Design:
@@ -57,11 +67,6 @@ Workaround (if needed):
   `"max_distance_from_center"`, the piece won't place
 * so increasing the height might actually prevent pieces that would normally place 
   from placing
-
-## How to best utilize 'weights'?
-`weights` are used to determine the probability of an object. A large number does 
-not guarantee an increased probability. Rather, the denominator is determined by 
-all the weights added together. A smaller number (eg. 1) will suffice.
 
 ## Common Questions
 ### How does terrain matching determine where to place?
@@ -79,3 +84,11 @@ tall structure height may exceed the bounds determined by your
 ### Will adjusting dimension padding help with making tweaks to terrain matching?
 Dimension padding wouldn't help here since that's mainly padding between the 
 structure and the vertical constraints of the world.
+
+### I'm still having trouble with terrain matching even after trying all of the above
+Some creators have found it helpful to have some jigsaws dedicated to "connecting"
+and other jigsaws dedicated to "placing". 
+
+### My structure looks unexpected when placed in water
+Applying waterlogging to your jigsaw might help.
+In the Structures json, you can add: `"liquid_settings": "apply_waterlogging"`
