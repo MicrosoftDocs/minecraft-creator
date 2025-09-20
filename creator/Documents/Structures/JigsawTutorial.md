@@ -13,6 +13,9 @@ In this tutorial, we're going to learn about how to create smaller structures an
 
 ## Demonstration: Working with Jigsaw Structures
 
+> [!WARNING]
+> The video tutorial is using an outdated folder structure. Jigsaw structures are now stored in the **worldgen/structures** folder instead of **worldgen/jigsaw_structures**.
+
 > [!VIDEO https://www.youtube.com/embed/57sLxXDkaA0]
 
 This video shows a way use jigsaw structures, and we are using it as a guide to help us learn the process.
