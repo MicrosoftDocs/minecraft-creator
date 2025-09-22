@@ -1,10 +1,10 @@
 ---
-author: iconicNurdle
-ms.author: mikeam
+author: cam-wilkerson
+ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Overview
 description: "An overview of the parts of Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 06/24/2025
+ms.date: 09/09/2025
 ---
 
 # Editor Overview
@@ -15,10 +15,8 @@ For a more in-depth experience using the tools to accomplish basic tasks, take a
 
 There's more information about Editor on the [Minecraft: Bedrock Editor GitHub site](https://github.com/Mojang/minecraft-editor)!
 
-> [!IMPORTANT]
-> The Editor is in beta and we're working to add more capabilities.
-> It will continue to change as we get feedback from creators like you.
-> Also, the images of Editor in this document might vary a little from what you have on your screen.
+> [!NOTE]
+> Images in this document may vary slightly from what you have on your screen.
 
 In this manual, you will learn the following:
 
@@ -96,7 +94,7 @@ If you do want to close the window, click the X in the corner. Some windows can 
 
 |Tab  |Content  |
 |:-------|:---------|
-| Introduction | Welcome to the Minecraft Editor Beta, a tool designed to help you create stunning worlds in Bedrock with ease. <br> <br> You may find these links helpful on your journey: <br> <br> <ul> <li> [Documentation](https://aka.ms/BedrockEditorDocs) </li> <li> [Report problems and give feedback](https://aka.ms/BedrockEditorFeedback) </li> <li> [Editor Community](https://aka.ms/BedrockEditorCommunity) </li></ul> <br>  To reopen Quick Start, you can find it under the 'Help' menu.|
+| Introduction | Welcome to Minecraft Editor, a tool designed to help you create stunning worlds in Bedrock with ease. <br> <br> You may find these links helpful on your journey: <br> <br> <ul> <li> [Documentation](https://aka.ms/BedrockEditorDocs) </li> <li> [Report problems and give feedback](https://aka.ms/BedrockEditorFeedback) </li> <li> [Editor Community](https://aka.ms/BedrockEditorCommunity) </li></ul> <br>  To reopen Quick Start, you can find it under the 'Help' menu.|
 | Movement | To navigate in the Editor, you'll need a keyboard and mouse. Trackpads or controllers aren't recommended. <br> <br> To move around in Editor: <br> <br><ul> <li> Hold down the right mouse button to look around. </li><li> While holding the right mouse button, move horizontally with `WASD` and vertically with `SHIFT` and `SPACE`. </li></ul> |
 |Tools|You can find tools on the left rail. Each tool allows you to edit your world in different ways. <br> <br>Click on the Information button ("i") at the top right corner of each tool to learn more about how it works.|
 |Actions|Actions are shortcuts that live at the top of your screen. Hit the “+” button in the Action Bar to customize which are displayed.<br> <br>At the top center of your screen is the Block Hotbar. Click once to change the active block, click twice to open the Block Picker to customize the Hotbar.<br> <br> You can create a new Hotbar by clicking the Hotbar Menu button to the right.
@@ -118,7 +116,7 @@ Before we dive into the Tool Mode UI, you might want to take a moment to familia
 
 ## Editor and Bedrock Dedicated Server
 
-Editor is only enabled in the preview version of Win32 Bedrock Dedicated Server.
+Editor is enabled in the Windows version of Bedrock Dedicated Server.
 There are two ways to launch it:
 
 ### Launch editor from the command line
@@ -153,7 +151,7 @@ If correctly set up, you should see the output say
 
 Editor Mode is controlled by a flag in the level data (not by the command line), so you need to launch the server either by having the server create a new Editor project, or by launching the server using an existing Editor project.
 
-When the server is up and running, any client connections from Minecraft Bedrock Edition will connect as editor sessions and present the editor interface.  If using a Preview version, connections from Non-Preview editions of Minecraft will be refused.
+When the server is up and running, any client connections from Minecraft Bedrock Edition will connect as editor sessions and present the editor interface. Clients must match the server’s edition/version&mdash;mismatched clients will be refused.
 
 ## What's Next?
 

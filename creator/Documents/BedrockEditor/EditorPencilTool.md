@@ -4,18 +4,23 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Pencil Tool
 description: "An overview of the Pencil Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 07/01/2025
+ms.date: 09/04/2025
 ---
 
 # Pencil Tool
 
-The Pencil tool lets creators easily place and remove single blocks and takes player position into account to ensure the tool works well with blocks that have permutations. The Pencil tool lets creators place multi-blocks like beds, doors, and double-tall plants, and can even detect which half of a block the cursor is on to help to determine the orientation of blocks like slabs, stairs, and trapdoors.
+The Pencil tool lets creators easily place and remove single blocks, greatly reducing the need to switch into Crosshair mode while building. It automatically accounts for player position to ensure the tool works well with blocks that have different permutations. 
 
-This tool should greatly reduce the need for creators to need to go into Crosshair mode to build.  
+![Pencil Tool selecting individual blocks](Media/GIFs/Pencil.gif)
 
-![Pencil Tool Selecting Individual Blocks](Media/GIFs/Pencil.gif)
+Creators can place multi-blocks like beds, doors, and double-tall plants, and can even detect which half of a block the cursor is on to help to determine the orientation of blocks like slabs, stairs, and trapdoors.
+
+> [!TIP]
+> Use the *By Camera* facing option for stairs, doors, trapdoors, and slabs to make them match your viewing direction when placed.
 
 ## Mode
+
+Use the Pencil to place or erase single blocks with the proper orientation quickly. It supports two edit modes (Draw and Erase), camera‑aware facing, and shares the standard cursor/target controls used for other Editor tools.
 
 -	**Draw**
 
@@ -26,7 +31,7 @@ This tool should greatly reduce the need for creators to need to go into Crossha
     Uses the Pencil to remove individual blocks from the world.
 
 
-## Block Facing
+## Block facing (orientation)
 
 -	**By Camera**
 
@@ -36,9 +41,9 @@ This tool should greatly reduce the need for creators to need to go into Crossha
 
     Places blocks that have rotation or permutations at their default position.
 
-![Gif demonstrating Block Facing categories](Media/blockfacing.gif)
+    ![Gif demonstrating Block Facing categories](Media/blockfacing.gif)
 
-## Cursor Settings
+## Cursor/Target settings
 
 ### Input Modes
 
@@ -53,9 +58,7 @@ This tool should greatly reduce the need for creators to need to go into Crossha
 - **Fixed Distance**
 
     Selects blocks, air, or a combination of both, based on your Selection Settings, at a fixed location at the center of the Editor screen.
-
-    ![Animation of how to use Fixed Distance Selection](Media/FixedDistance.gif)
-
+    
     > [!Tip]
     > Fixed distance is the easiest mode to use if you want to select only air blocks. You can use the scroll wheel on the mouse to increase or decrease the distance between you and the selection cube.
 
@@ -69,14 +72,24 @@ This tool should greatly reduce the need for creators to need to go into Crossha
 
     Selects the air next to, above, or below solid blocks that you highlight with the cursor.
 
+### Keyboard shortcuts
+|Name|Shortcut|
+|:----|:----|
+|Toggle Pencil|**Space Bar**|
+|Single-press paint|**Enter**|
+|Paint continuously|**Left‑click and hold** (release to stop)|
 
-## Pencil Settings
+> [!NOTE]
+> Cursor movement, targeting, and fixed‑distance toggles follow the standard Cursor Settings shortcuts documented in the Selection tool page.
+
+
+## Pencil settings
 
 ### Offset 
 
 Sets the Pencil's offset from the cursor's location.
 
-### Fill Constraints
+### Fill constraints
 
 Block Filters determine what type of blocks are included/excluded from the Pencil action and how your selection is filled.
 
@@ -94,3 +107,5 @@ Block Filters determine what type of blocks are included/excluded from the Penci
 
     Lets you specify what type of blocks to replace and the type of block to replace them with.
 
+> [!TIP]
+> Use Mask or Replace to avoid accidentally selecting certain blocks while drawing or erasing.

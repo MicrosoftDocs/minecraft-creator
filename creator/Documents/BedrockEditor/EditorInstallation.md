@@ -1,19 +1,18 @@
 ---
-author: iconicnurdle
-ms.author: mikeam
+author: cam-wilkerson
+ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Installation
 description: "A guide detailing the process of installing and testing Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
+ms.date: 09/08/2025
 ---
 
 # How to get Minecraft Editor
 
 Minecraft's Bedrock Editor is a multiblock editing experience that helps you easily craft high-quality worlds in Minecraft Bedrock. The Editor is available in Retail and Preview editions of Minecraft Bedrock. You can access the Editor either through the Minecraft Launcher or a shortcut you create on your computer desktop.
 
-> [!IMPORTANT]
-> The Editor is in Beta and we're working to add more capabilities.
-> It will change significantly as we get feedback from creators like you.
-> Also, the images of Editor in this document might vary a little from what you have on your screen.
+> [!NOTE]
+> Images in this document may vary slightly from what you have on your screen.
 
 First, we are going to install Minecraft Bedrock. 
 Then, we will create the shortcut that launches Editor. 
@@ -35,7 +34,7 @@ In this tutorial, you will learn the following:
 
 To get started, you need the following:
 
-- A Windows 10 (or higher) computer
+- A Windows 10 (or later) computer
 - Keyboard and mouse
 
 > [!IMPORTANT]
@@ -43,25 +42,25 @@ To get started, you need the following:
 
 ## Install Bedrock 
 
-The Bedrock Editor is a seperate mode of Bedrock. So if you already have Bedrock, you already have the Editor. If you do not, you will need the latest installation of Bedrock Retail and/or Preview. To learn more about what Preview is and where to get it, here is an [article about Preview on Minecraft.net](https://aka.ms/PreviewFAQ).
+The Bedrock Editor is a separate mode of Bedrock. If you already have Bedrock, you already have the Editor. If not, install the latest Bedrock Retail and/or Preview. To learn more about what Preview is and where to get it, check out the [Preview FAQ on Minecraft.net](https://aka.ms/PreviewFAQ).
 
 The easiest way to install either of these versions is from the Minecraft Launcher. You can get Minecraft Launcher from the Microsoft Store.
 
 ![Image of Minecraft Launcher app in the Microsoft Store](Media/editor_launcher_ms_store.png)
 
-Once you have the Minecraft Launcher installed, navigate to the "Creator Tools" tab. From here you can install Retail and Preview versions of Bedrock.
+Once the Minecraft Launcher is installed, navigate to the Creator Tools tab. From here you can install Retail and Preview versions of Bedrock.
 
 ![Image of Minecraft Launcher app to install versions of Bedrock](Media/editor_launcher_install.png)
 
-To switch what version you are targeting, select the version from the drop down.
+To switch the target version, select the version from the drop-down.
 
 ![Image of Minecraft Launcher app install versions](Media/editor_launcher_version.png)
 
-After you install Bedrock, the Launcher will update with a "Create" button under the "Creator Tools" tab.
+After you install Bedrock, a **Create** button appears under the Creator Tools tab in the Launcher.
 
 ![Image of Minecraft Launcher app to launch Editor](Media/editor_launcher_create.png)
 
-To Launch Editor simply click the "Create" button and the Launcher will open Bedrock in Editor mode.
+To launch Editor, click Create. The Launcher opens Bedrock in Editor mode.
 
 ## Make a Shortcut
 
@@ -77,7 +76,7 @@ Alternatively, if you already have Bedrock installed and want to create a shortc
 
     or
 
-    `minecraft-preview:?Editor=true`
+    `minecraft-preview://creator/?Editor=true`
 
     This is case-sensitive and needs to match exactly.
 
@@ -104,7 +103,7 @@ Great job! You're ready to create a project!
 
 ### I can't get into the Editor when I open Minecraft
 
-You can only access the Editor through the desktop shortcut and only if you have Bedrock. If you are attempting to access the Editor through Bedrock directly (not using the shortcut), it will not work.
+Use the Launcher’s Create button or the desktop shortcut to open Editor. Opening Bedrock normally will not launch the Editor.
 
 ### I added the desktop shortcut, but it won't open the Editor. What's going on?  
 

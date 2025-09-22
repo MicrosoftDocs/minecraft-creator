@@ -4,7 +4,7 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Hotkeys
 description: "An overview of the keyboard input shortcuts in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/09/2025
+ms.date: 09/08/2025
 ---
 
 # Editor Hotkeys
@@ -101,6 +101,7 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 
 ## Modal Tools
 
+
 ### Selection
 
 | Name | Shortcut | Exclusive |
@@ -136,6 +137,7 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
 | Brush Paint Tool | Ctrl+B | - |
+
 
 ### Paste Preview
 
@@ -195,20 +197,15 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Move Selected Right | Right Arrow | On |
 
 
-
 ### Terrain
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
 | Terrain Tool | Ctrl+T | - |
-| Toggle Smooth/Roughen| R | - |
-
-
-### Flatten Brush
-
-| Name | Shortcut | Exclusive |
-|:----|:----|:----|
-| Flatten Tool | Ctrl+Shift+H |  |
+| Cycle Terrain Modes (Flatten/Smooth/Roughen) | Ctrl+T | - |
+| Flatten: Both | Shift+F | - |
+| Flatten: Down | Shift+D | - |
+| Flatten: Up | Shift+U | - |
 
 
 ### Extrude
@@ -218,7 +215,18 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 |Extrude Tool| Ctrl+Shift+E | - |
 
 
-### Summon Tool
+### Workbench
+
+| Name | Shortcut | Exclusive |
+|:----|:----|:----|
+| Workbench Tool | Ctrl+W | - |
+| Primary Action (Left-click equivalent) | (Numpad +) | - |
+| Secondary Action (Shift+Left-click) | Shift+(Numpad +) | - |
+| Tertiary Action (Ctrl+Left-click) | Ctrl+(Numpad +) | - |
+| Quaternary Action (Ctrl+Shift+Left-click) | Ctrl+Shift+(Numpad +)
+
+
+### Summon
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|

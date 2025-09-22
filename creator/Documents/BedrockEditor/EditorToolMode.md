@@ -2,9 +2,9 @@
 author: cam-wilkerson
 ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Modes
-description: "An overview of the Tool Mode and Crosshair Modes in of Minecraft Bedrock Editor"
+description: "An overview of Tool Mode and Crosshair Mode in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/12/2025
+ms.date: 09/04/2025
 ---
 
 # Tool Mode and Crosshair Mode
@@ -29,7 +29,7 @@ If you're ever not sure which mode you are in, press **Esc**. If you're in Cross
 Think of the Tool Mode UI as a collection of containers. The menu bar contains menus. The action bar contains buttons that do simple functions like Undo and Redo. The toolrail contains more complicated tools that have their own configuration windows where you can change the settings.
 
 > [!NOTE]
-> The contents of these containers will change as Editor is developed.
+> The contents of these containers may change between versions of Editor.
 
 **Menu bar**: Located at the top of the screen. Currently has File, Edit, World Options, and Help.
 
@@ -53,11 +53,11 @@ When you're ready to share your project (or just see it in-game) select **File >
 > [!NOTE]
 > If you don't know how to find your com.mojang folder, there are instructions in the Bedrock [Getting Started](../GettingStarted.md) tutorial.
 
-Editor has its own filetype for projecrs: .mcproject. These files always open in Editor if it's installed on your computer. To **import** projects from the editor screen, select Create New Project, then click the button to the right of Create New Project.
+Editor has its own file type for projects: .mcproject. These files always open in Editor if it's installed on your computer. To **import** projects from the editor screen, select Create New Project, then click the button to the right of Create New Project.
 
 ![The import button has an arrow icon on it and is next to the Create New Project button](Media/editor_overview_import_button.png)
 
-Navigate to a .mcworld, .mctemplate, or .mcproject files.
+Navigate to a .mcworld, .mctemplate, or .mcproject file.
 After the file is imported, it is converted to an .mcproject file.
 
 Visit [Minecraft File Types](../MinecraftFileExtensions.md) to learn more about Minecraft file types like .mcproject and .mcworld.

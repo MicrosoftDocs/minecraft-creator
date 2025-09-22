@@ -1,34 +1,38 @@
 ---
-author: iconicNurdle
-ms.author: mikeam
+author: cam-wilkerson
+ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor World Options
 description: "An overview of the World Options in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/14/2025
+ms.date: 09/04/2025
 ---
 
 # Editor World Options
 
-## Pause
+World Options gives you quick, menu-driven controls for common world state tasks while editing, pausing entities, switching dimensions, testing your world, adjusting time of day, opening the Navigation Panel, and changing weather.
 
-If you want to pause or unpause entities.
+
+## Pause entities
+
+Toggles entity simulation on or off. When paused (on), entities stop moving and the AI is suspended. Pausing entities can be useful for precise placement and taking screenshots. Unpause entities to resume normal behavior.
 
 
 ## Change dimension
 
-You start in the Overworld by default. Go here to change to the Nether or the End.
+Changes the active editing dimension. Go here to switch to the Nether or the End.
+
+> [!NOTE]
+> You start in the Overworld by default. 
 
 
 ## Test World
 
-Opens the Test World panel, where you can test your Editor project as a playable Minecraft world. You can set the game mode and difficulty settings and use the **Advanced Settings** to set things like **Daylight Settings**, **Time of Day**, and **Weather**. **Show Coordinates** lets you display your current position.
-
-While you are playing, you can press **Esc** and click **Return to Editor** at any time to end your test and resume editing your project. No changes you make while testing will be saved to your project.
+Opens the Test World panel, where you can test your Editor project as a playable Minecraft world. While you are playing, you can press **Esc** and click **Return to Editor** at any time to end your test and resume editing your project. No changes you make while testing will be saved to your project.
 
 > [!Note]
-> Available only when hosting a single player world.
+> Test World is only available when hosting a single-player world.
 
- ![Editor selection tool window](Media/editor_test_settings.png)
+![Test world settings window](Media/editor_test_settings.png)
 
 - ### Game Mode
     
@@ -36,25 +40,29 @@ While you are playing, you can press **Esc** and click **Return to Editor** at a
 
 - ### Difficulty
 
-    Choose Peaceful, Easy, Normal, or Hard.
+    Choose from Peaceful, Easy, Normal, or Hard.
 
 - ### Spawn at Current Location
 
-    If unchecked, the player spawns at the usual spawnpoint for that world.
+    If unchecked, the player spawns at the world's default spawnpoint.
 
+- ### Show Coordinates
+
+    Displays your current position while testing.
+    
 - ### Advanced Settings
 
     - **Daylight Cycle**
 
         Normal, Always Day, or LockTime.
 
-    - **Custom Time** 
-
-        This will be enabled if you choose Custom from the Time of Day option.
-
-    - **Time of Day**
+     - **Time of Day**
 
         Choose Default, Day, Noon, Sunset, Night, Midnight, or Sunrise, or Custom.
+
+    - **Custom Time** 
+
+        This will be enabled if you choose Custom from the Time of Day option and lets you set an exact time.
 
     - **Weather Cycle**
 
@@ -63,23 +71,34 @@ While you are playing, you can press **Esc** and click **Return to Editor** at a
 
 ## Time of Day Settings
 
-Opens **Time Settings**, where you can set the **Clock Type** (24hr, 12hr, or Minecraft Clock) and choose whether the Daylight Cycle will be locked in the current position, always daytime, or proceed normally. You can also set the time of day to one of the available presets or use the slider to set a custom time.
+Opens **Time Settings**, where you can:
+
+- Set the **Clock Type** (24hr, 12hr, or Minecraft Clock).
+
+- Choose whether the **Daylight Cycle** will be locked in the current position, always daytime, or proceed normally.
+
+- Set the time of day to one of the available presets or use the slider to set a custom time.
 
 
 ## Navigation Panel
 
-Contains a toggle that shows a birds-eye view mini-map you can use to teleport to the coordinates you click. You can add markers to locations in your world and they will show up as colored flags within your mini-map in **Stored Locations**.
+Contains a toggle that reveals a birds-eye view mini-map that you can click to teleport to specific coordinates. You can add markers to locations in your world and they'll show up as colored flags within your mini-map in **Stored Locations**.
 
 
 ## Weather
 
 This option lets you instantly change the weather in your project to Clear, Rain, or Thunder.
 
+> [!NOTE]
+> If **Weather Cycle** is enabled, the weather will continue cycling after your change.
 
-## Practice: Test a world
 
-1. After selecting the options you want, click the Test World button.
+## Try it: Test a world
 
-2. Your world loads much as it will in regular Minecraft. 
+1. After selecting the options you want, open World Options and choose **Test World**.
 
-3. Whenever you're ready to continue editing, press **Esc**. From here, you can choose to Resume Testing or Return to Editor.
+2. Select a Game mode, Difficulty, and adjust Advanced Settings as needed.
+
+3. Click Test World to render your test. 
+
+4. Whenever you're done testing your world, press **Esc**. From here, you can choose to **Resume Testing** or to **Return to Editor**.
