@@ -28,15 +28,42 @@ An identifier that can be used to identify a player across sessions.
 Type: *string*
 
 ## Methods
+- [allowJoin](#allowjoin)
+- [disallowJoin](#disallowjoin)
 - [disconnect](#disconnect)
 - [isValid](#isvalid)
+
+### **allowJoin**
+`
+allowJoin(): void
+`
+
+Call this to explicitly allow the player to join the server.  This is useful when player joining is disabled (`allow-player-joining` is set to `false` when playing on dedicated server).
+  
+Notes:
+- This function can throw errors.
+  - Throws [*DisconnectedError*](DisconnectedError.md)
+
+### **disallowJoin**
+`
+disallowJoin(reason?: string): void
+`
+
+Deprecated - use {@link disallowJoin} instead.Call this to disconnect a player. They will be allowed to try to join again.
+
+#### **Parameters**
+- **reason**?: *string* = `null`
+  
+Notes:
+- This function can throw errors.
+  - Throws [*DisconnectedError*](DisconnectedError.md)
 
 ### **disconnect**
 `
 disconnect(reason?: string): void
 `
 
-Call this to disconnect a player. They will be allowed to try to join again.
+Call this to stop the player from joining the server. They will be allowed to try to join again.
 
 #### **Parameters**
 - **reason**?: *string* = `null`

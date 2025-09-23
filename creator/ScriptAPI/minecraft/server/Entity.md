@@ -202,6 +202,9 @@ Type: *string*
 - [clearVelocity](#clearvelocity)
 - [extinguishFire](#extinguishfire)
 ::: moniker range="=minecraft-bedrock-experimental"
+- [getAABB](#getaabb)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [getAllBlocksStandingOn](#getallblocksstandingon)
 ::: moniker-end
 - [getBlockFromViewDirection](#getblockfromviewdirection)
@@ -588,6 +591,24 @@ function setOnFire(log: (message: string, status?: number) => void, targetLocati
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setOnFire.ts) code sandbox.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getAABB**
+`
+getAABB(): AABB
+`
+
+Gets the entity's collision bounds.
+
+**Returns** [*AABB*](AABB.md) - An axis-aligned bounding box.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **getAllBlocksStandingOn**
@@ -1109,15 +1130,15 @@ Notes:
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **setDynamicProperties**
 `
-setDynamicProperties(values: Record<string, boolean | number | string | Vector3>): void
+setDynamicProperties(values: Record<string, boolean | number | string | Vector3 | undefined>): void
 `
 
 Sets multiple dynamic properties with specific values.
 
 #### **Parameters**
-- **values**: Record<*string*, *boolean* | *number* | *string* | [*Vector3*](Vector3.md)>
+- **values**: Record<*string*, *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined*>
   
-  A Record of key value pairs of the dynamic properties to set.
+  A Record of key value pairs of the dynamic properties to set. If the data value is null, it will remove that property instead.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -1140,7 +1161,7 @@ Sets a specified property to a value.
   The property identifier.
 - **value**?: *boolean* | *number* | *string* | [*Vector3*](Vector3.md) = `null`
   
-  Data value of the property to set.
+  Data value of the property to set. If the value is null, it will remove the property instead.
   
 Notes:
 - This function can throw errors.

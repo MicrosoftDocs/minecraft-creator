@@ -920,6 +920,8 @@
       href: minecraft/server/WorldLoadAfterEvent.md
     - name: WorldLoadAfterEventSignal
       href: minecraft/server/WorldLoadAfterEventSignal.md
+    - name: AABB
+      href: minecraft/server/AABB.md
     - name: BiomeSearchOptions
       href: minecraft/server/BiomeSearchOptions.md
     - name: BlockBoundingBox

@@ -36,6 +36,21 @@ Type: *number*
 Notes:
   - This property can throw errors when used.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **unbreakable**
+`unbreakable: boolean;`
+
+Whether an item breaks or loses durability. Setting to true temporarily removes item's durabilty HUD, and freezes durability loss on item.
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can't be edited in read-only mode.
+::: moniker-end
+
 ## Methods
 - [getDamageChance](#getdamagechance)
 - [getDamageChanceRange](#getdamagechancerange)

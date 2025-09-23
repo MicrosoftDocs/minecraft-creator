@@ -92,6 +92,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`EnchantWithLevelsFunction`](EnchantWithLevelsFunction.md)*
 #### Changed *[`Entity`](Entity.md)*
 - Added property *[`target`](Entity.md#target)*
+- Added function *[`getAABB`](Entity.md#getaabb)*
 - Added function *[`getAllBlocksStandingOn`](Entity.md#getallblocksstandingon)*
 - Added function *[`getBlockStandingOn`](Entity.md#getblockstandingon)*
 - Added function *[`setDynamicProperties`](Entity.md#setdynamicproperties)*
@@ -112,6 +113,8 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`GameRules`](GameRules.md)*
 - Added property *[`locatorBar`](GameRules.md#locatorbar)*
 #### Added *[`IsBabyCondition`](IsBabyCondition.md)*
+#### Changed *[`ItemDurabilityComponent`](ItemDurabilityComponent.md)*
+- Added property *[`unbreakable`](ItemDurabilityComponent.md#unbreakable)*
 #### Added *[`ItemInventoryComponent`](ItemInventoryComponent.md)*
 #### Added *[`ItemPotionComponent`](ItemPotionComponent.md)*
 #### Changed *[`ItemStack`](ItemStack.md)*
@@ -139,6 +142,8 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PackSettingChangeAfterEventSignal`](PackSettingChangeAfterEventSignal.md)*
 #### Added *[`PassengerOfEntityCondition`](PassengerOfEntityCondition.md)*
 #### Changed *[`Player`](Player.md)*
+- Changed function *[`clearPropertyOverridesForEntity`](Player.md#clearpropertyoverridesforentity)*
+  - Changed argument `targetEntity` type from [*Entity*](Entity.md) to [*Entity*](Entity.md) | *string*
 - Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`getAimAssist`](Player.md#getaimassist)*
 - Added function *[`getControlScheme`](Player.md#getcontrolscheme)*
