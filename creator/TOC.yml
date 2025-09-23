@@ -204,6 +204,8 @@
             href: Documents/PreparingRawTextForLocalization.md
         - name: Advanced Topics
           items:
+          - name: Understanding Simulation Distance, Render Distance, and Ticking Areas
+            href: Documents/SimulationRenderDistanceGuide.md
           - name: Designing Gameplay for Various Devices
             href: Documents/DesigningGameplayForVariousDevices.md
           - name: World Templates and Base Game Versioning
@@ -497,8 +499,6 @@
                 href: Documents/BedrockEditor/EditorFillTool.md
               - name: Terrain Tool
                 href: Documents/BedrockEditor/EditorTerrainTool.md
-              - name: Flatten Tool
-                href: Documents/BedrockEditor/EditorFlattenTool.md
               - name: Extrude Tool
                 href: Documents/BedrockEditor/EditorExtrudeTool.md
               - name: Repeater Tool

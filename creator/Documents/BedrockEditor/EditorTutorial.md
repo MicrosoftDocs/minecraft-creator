@@ -4,23 +4,21 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Tutorial
 description: "A step-by-step guide for using Minecraft Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/05/2025
+ms.date: 09/04/2025
 ---
 
 # Editor Tutorial
 
 This tutorial is intended to guide you through using Minecraft Bedrock Editor to accomplish a variety of tasks. Before you begin, you should know how to launch Editor, create a project, move around, and switch between the two modes.
 
-> [!IMPORTANT]
-> The Editor is in preview and we're working to add more capabilities.
-> It will change significantly as we get feedback from creators like you.
-> Also, the images of Editor in this document might vary a little from what you have on your screen.
+> [!NOTE]
+> Images in this document may vary slightly from what you have on your screen.
 
 ## Requirements
 
 To get started, you need the following:
 
-- A Windows 10 (or higher) computer with Minecraft Bedrock Editor
+- A Windows 10 or later computer with Minecraft Bedrock Editor
 - Keyboard and mouse
 
 > [!IMPORTANT]
@@ -73,11 +71,11 @@ In this tutorial, you're going to learn how to build the Arc de Triomphe and ins
 14. Double-click the selected block and drag the blue slider horizontally to the opposite corner, then press **CTRL**+**F** to fill the selection.
 ![Place the row of stairs](media/ArcScreenshots/PlaceStairs.png)
 
-15. Use the Workbench to hover over the stairs and **SHIFT**+**CTRL**+**CLICK** to properly orient them.
+15. Use the Workbench to hover over the stairs and **Ctrl**+**Shift**+**Click** to properly orient them.
 
 16. Copy the stairs and use Paste Preview to place a row of stairs at the bottom and near the center of the monument face.
 
-17. Use the Workbench to hover over the bottom row of stairs and **SHIFT**+**CTRL**+**CLICK** to properly orient them.
+17. Use the Workbench to hover over the bottom row of stairs and **Ctrl**+**Shift**+**Click** to properly orient them.
 
 18. Use the Selection tool and change your target to Block to select and copy the three rows of stairs you just placed.
 
@@ -87,12 +85,12 @@ In this tutorial, you're going to learn how to build the Arc de Triomphe and ins
 1. Choose the Brush and select a uniform cylinder brush with a height of 12.
 ![Cylinder brush tool](media/ArcScreenshots/ExtrudeCylinder.png)
 
-2. Use the Extrude tool to select Decrease Extrusion, then **CTRL**+ **CLICK** a monument face. Align the top of the preview with where you want the arc's apex to be.
+2. Use the Extrude tool to select Decrease Extrusion, then **Ctrl**+ **click** a monument face. Align the top of the preview with where you want the arc's apex to be.
 ![Extrude Preview](media/ArcScreenshots/ExtrudePreview.png)
 
 3. Use the Selection tool to make a rectangle that extends to the bottom of the monument, then drag the slider through the monument to the opposite face.
  
-4. Press **DELETE** to clear the rest of the blocks and complete the arc.
+4. Press **Delete** to clear the rest of the blocks and complete the arc.
 ![Complete the arc](media/ArcScreenshots/CompleteArc.png)
 
 5. Repeat steps 2-4 on the other faces. You'll need to change the axis of extrusion.
@@ -108,7 +106,7 @@ In this tutorial, you're going to learn how to build the Arc de Triomphe and ins
 
 4. Copy the smaller border and use Paste Preview to paste it on the other side of the monument.
 
-5. Set your target to block and select all three borders, then use Paste Preview to place the selection on the remaining three faces.
+5. Set your target to Block and select all three borders, then use Paste Preview to place the selection on the remaining three faces.
 ![Three borders selected](media/ArcScreenshots/CopyDetail1.png)
 
 6. Use the Brush to select Single Block and set your target to Adjacent, then add details inside the borders of your Arc De Triomphe.

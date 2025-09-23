@@ -16,6 +16,13 @@ Optional properties for Bool property item
 
 ## Properties
 
+### **checkboxIcon**
+`checkboxIcon?: string;`
+
+Changes checkbox variant to use a custom icon
+
+Type: *string*
+
 ### **hiddenLabel**
 `hiddenLabel?: boolean;`
 

@@ -2,14 +2,14 @@
 author: cam-wilkerson
 ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Vibrant Visuals
-description: "An overview of Vibrant Visuals in Minecraft Bedrock Editor"
+description: "Overview, settings, and usage of Vibrant Visuals in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 06/09/2025
+ms.date: 09/04/2025
 ---
 
 # Vibrant Visuals in Bedrock Editor
 
-Vibrant Visuals (previously Advanced Rendering: Deferred Lighting) is a complete overhaul to the Minecraft graphics system that officially rolled out in Editor v1.0.
+Vibrant Visuals (previously Advanced Rendering: Deferred Lighting) is a complete overhaul of the Minecraft graphics system, introduced with Editor v1.0. Use it to tune lighting, water, sky, color grading, tone mapping, shadows, and default PBR values for worlds you build in Editor.
 
 ![Vibrant Visuals Disabled](Media/VibrantVisualsScreenshots/VibrantVisualsDisabled.png)
 
@@ -18,21 +18,19 @@ Open Minecraft Editor and add Vibrant Visuals to the Action Bar to get started, 
 
 ![Vibrant Visuals Enabled](Media/VibrantVisualsScreenshots/VibrantVisualsEnabled.png)
 
-When you click **Generate Resource Pack**, a link appears beneath the button that takes you to a template on mctools.dev for a new resource pack with the Vibrant Visuals settings you've configured.
+- **Generate Resource Pack**: A template on mctools.dev for a new resource pack with the Vibrant Visuals settings you've configured.
 
-Selecting **Export to Clipboard** copys the JSON of the current visual setting to your device's clipboard. You can use this to quickly modify parts of a resource pack without the need to generate a completely new one.
+- **Export to Clipboard**: Copys the JSON of the current visual setting to your device's clipboard. You can use this to quickly modify parts of a resource pack without the need to generate a completely new one.
 
 > [!Tip]
 > You can reset the current visual settings to the Editor default by clicking **Revert Changes** near the top of the Vibrant Visuals menu at any time.
 
 
-## Water
+## Water settings
 
 ![Water Settings](Media/VibrantVisualsScreenshots/WaterSettings.png)
 
-### Water Settings
-
-#### Particle Concentration
+### Particle Concentration
 
 -	**Chromophoric Dissolved Organic Matter (CDOM)**
 
@@ -46,7 +44,7 @@ Selecting **Export to Clipboard** copys the JSON of the current visual setting t
 
     Represents the amount of sediment suspended in the water. Sediment absorbs blue and green light wavelengths, so adding more Suspended Sediment will turn the water red to red-brown (sediment values range from 1 – 300).
 
-#### Caustics
+### Caustics
 Enabling Caustics lets light rays project onto underwater surfaces.
 
 -	**Frame length**
@@ -72,7 +70,7 @@ Enabling Caustics lets light rays project onto underwater surfaces.
     Reveals the texture used for the caustics animation. 
 
 
-#### Waves
+### Waves
 When enabled, bodies of water in your world generate waves, which you can edit by adjusting the following settings:
 
 -	**Depth**

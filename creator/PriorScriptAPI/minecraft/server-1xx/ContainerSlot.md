@@ -356,7 +356,7 @@ Sets a specified property to a value.
   The property identifier.
 - **value**?: *boolean* | *number* | *string* | [*Vector3*](Vector3.md) = `null`
   
-  Data value of the property to set.
+  Data value of the property to set. If the value is null, it will remove the property instead.
   
 Notes:
 - This function can throw errors.

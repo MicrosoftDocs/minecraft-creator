@@ -1,10 +1,10 @@
 ---
-author: iconicNurdle
-ms.author: mikeam
+author: cam-wilkerson
+ms.author: v-cwilkerson
 title: Getting Started with Minecraft Bedrock Editor Extensions
 description: "How to get started creating Editor Extensions"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/14/2025
+ms.date: 09/08/2025
 ---
 
 # Getting Started with Editor Extensions
@@ -20,7 +20,7 @@ Wondering where to get started with Editor Extensions? Well, that depends on wha
 >- You have used Editor to edit a world. If not, you should start with the [Editor Tutorial](EditorTutorial.md).
 
 
-The Bedrock Editor is a framework that is built into certain platform versions of Minecraft: Bedrock Edition, designed to allow creators to use more complex tools than the ones found in simple gameplay to build, edit, and test worlds. In fact, the Editor framework even lets creators build their own tools to better suit your individual building style!
+The Bedrock Editor is a framework built into certain platform versions of Minecraft: Bedrock Edition, designed to allow creators to use more complex tools than the ones found in simple gameplay to build, edit, and test worlds. In fact, the Editor framework even lets creators build their own tools to better suit your individual building style!
 
 An Editor Extension is a catch-all for a set of Resource and Behavior Packs that contain script and binary assets that get loaded into Editor at start-up. Extensions are written in TypeScript and are compiled into JavaScript before loading into the game. The compiler tools and various libraries required to do this are supplied in the [Editor Extension Starter Kit](https://github.com/Mojang/minecraft-editor).
 
@@ -30,6 +30,6 @@ If you've never worked with APIs before, it's worth taking the time to learn abo
 
 Then, you could go through the [Scripting tutorial](../ScriptingGettingStarted.md).
 
-After you get all the prerequisites out of the way, you could take a look at some examples of Extensions - there is a [starter kit and GitHub repo](https://github.com/mojang/minecraft-editor).
+After you get all the prerequisites out of the way, you could take a look at some examples of Extensions&mdash;there is a [starter kit and GitHub repo](https://github.com/mojang/minecraft-editor).
 
 Now you're ready to try one of the examples or get started building your own!

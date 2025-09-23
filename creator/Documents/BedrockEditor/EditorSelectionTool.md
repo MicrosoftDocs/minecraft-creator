@@ -4,7 +4,7 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Selection Tool
 description: "An overview of the Selection Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/28/2025
+ms.date: 09/04/2025
 ---
 
 # Selection Tool
@@ -36,7 +36,7 @@ When you make a selection and click on one of the white corners, a blue, red, an
 
 You might have noticed another white box, hovering in the center of your selection &mdash; that's a **Move Gizmo**! You can click and drag the **Move Gizmo** around to move your selection with the mouse.
 
-![Selection with a move gizmo in the middle](Media/editor_overview_gizmo_move.png)
+![Selection with a move gizmo in the middle](Media/editor_overview_gizmo_move.gif)
 
 #### Practice using Marquee Selection:
 
@@ -49,8 +49,6 @@ You might have noticed another white box, hovering in the center of your selecti
 4. To add the Y coordinate, hold **Alt** and click somewhere above the square.
 
 5. Deselect the selection (**Ctrl+D**) before moving on to the next practice.
-
-    ![Image of a selection made in Freeform Selection mode](Media/editor_overview_selection_freeform.png)
 
 ### Freehand Brush Selection
 
@@ -153,7 +151,7 @@ Fills the selection with the block selected in the Block Picker.
     > [!Note]
     > The default Block Type is stone.
 
-3. Click Fill to fill the current selection with your chosen Block Type.
+3. Press Fill (**Ctrl+F**) to fill the current selection with your chosen Block Type.
 
 4. Deselect the shape before moving on.
 
@@ -170,10 +168,10 @@ Deletes the blocks in the current selection, leaving only air behind.
 ![Trim Actions Menu](media/SelectionScreenshots/TrimActions.png)
 
 ### Trim Selection
-???
+Trims the current selection to fit only the solid blocks within it.
 
 ### Remove Air
-???
+Removes air blocks from the selection, leaving only the specified blocks.
 
 ### Hollow Selection
 
@@ -196,11 +194,7 @@ Retains the outline of your selection while changing all interior blocks to air.
 
 - **Fixed Distance**
 
-    Selects blocks, air, or a combination of both, based on your Selection Settings, at a fixed location at the center of the Editor screen.
-    
-    ![Animation of how to use Fixed Distance Selection](Media/FixedDistance.gif)
-
-    You can use the scroll wheel on the mouse to increase or decrease the distance between you and the selection cube.
+    Selects blocks, air, or a combination of both, based on your Selection Settings, at a fixed location at the center of the Editor screen. You can use the scroll wheel on the mouse to increase or decrease the distance between you and the selection cube.
     
     > [!Tip]
     > Fixed distance is the easiest mode to use if you want to select only air blocks.
@@ -208,8 +202,6 @@ Retains the outline of your selection while changing all interior blocks to air.
     #### Practice using Fixed Distance:
 
     1. Select Fixed Distance from the Input Mode drop-down menu. You should see a thinly-outlined cube shape in front of you.
-    
-        ![Image of the preselect cube ](Media/editor_overview_selection_fixed_distance_preselect.png)
 
     2. Hold down the right mouse button while you move the mouse look around the world. Notice how the pre-selection cube stays in the center of the screen?
 
@@ -221,8 +213,6 @@ Retains the outline of your selection while changing all interior blocks to air.
 
     6. Click the Deselect button (or **Ctrl+D**) before moving on to the next practice.
 
-        ![A completed fixed distance selection](Media/editor_overview_selection_fixed_distance_selection.png)
-
 ### Target
 
 - **Block**
@@ -232,8 +222,6 @@ Retains the outline of your selection while changing all interior blocks to air.
 - **Adjacent**
 
     Selects the air next to, above, or below solid blocks that you highlight with the cursor.
-
-    ![Animation of Adjacent Selection](Media/Adjacent.gif)
 
     #### Practice using Adjacent:
 
@@ -272,8 +260,6 @@ Represents the world-coordinates for the center of your selection.
 ### Size
 
 Used to adjust the size of your selection based on the length of each axis.
-
-![Animation of how to use the Size function on the Selection tool window](Media/PanelResize.gif)
 
 #### Practice changing the selection's size:
 
