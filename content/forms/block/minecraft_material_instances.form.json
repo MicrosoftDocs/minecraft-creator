@@ -116,6 +116,13 @@
               "dataType": 3
             },
             {
+              "id": "emissive",
+              "title": "Emissive",
+              "description": "Should this material be rendered as emissive? Requires 'format_version' >= 1.21.120.",
+              "defaultValue": false,
+              "dataType": 1
+            },
+            {
               "id": "face_dimming",
               "title": "Face Dimming",
               "description": "Should this material be dimmed by the direction it's facing?",

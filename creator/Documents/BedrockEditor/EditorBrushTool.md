@@ -4,12 +4,12 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Brush Tool
 description: "An overview of the Brush Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/21/2025
+ms.date: 09/05/2025
 ---
 
 # Brush Tool
 
-Brush is used to draw shapes with a selected block type.
+Use the Brush to paint blocks in configurable shapes and sizes. Paint a single shape with one press or continuously while holding the mouse.
 
 ![Brush Paint Tool](media/BrushScreenshots/BrushPaint.png)
 
@@ -40,7 +40,6 @@ You can click once once to place one block shape, or click and drag to place blo
     > [!Tip]
     > You can use the scroll wheel on the mouse to increase or decrease the distance between you and the selection cube.
     
-
 ### Brush Target
 
 - **Block**
@@ -81,8 +80,8 @@ You can click once once to place one block shape, or click and drag to place blo
 
 Shape Settings apply to all Brush Types except for Single Block. Here, you'll find sliders that adjust the radius of each of the Brush's axes to fine-tune the shape to suit your needs.
 
-> [!Note]
-> Cylinder, Cone, and Pyramid Brushes also include an option to specify the axis of extrusion. 
+> [!NOTE]
+> Cylinder, Cone, and Pyramid brushes also include an axis of extrusion. 
 
 ![Shape Settings Menu](media/BrushScreenshots/ShapeSettings.png)
 
@@ -105,7 +104,7 @@ Shape Settings apply to all Brush Types except for Single Block. Here, you'll fi
 
 ## Fill Constraints
 
-Block Filters determine what type of blocks are included/excluded from the Brush Paint action and how your selection is filled.
+Block Filters determine what type of blocks are affected by the Brush Paint action and how your selection is filled.
 
 ![Fil Constraints Menu](media/BrushScreenshots/FillConstraints.png)
 
@@ -128,10 +127,10 @@ Block Filters determine what type of blocks are included/excluded from the Brush
 
 2. Switch to Brush by clicking the button in the toolbar on the left of the Editor.
 
-    > [!Tip]
+    > [!TIP]
     > Pressing **Ctrl+B** also switches to Brush. 
 
-3. Set the Brush Size to 1, check the box for Face Mode, and choose Log for the Block Type.
+3. Set the Brush to Uniform Cuboid with a Length of 1, then use the block picker to choose a type of log.
 
 4. Find a clear place on the ground and place one log block.
 
@@ -139,6 +138,16 @@ Block Filters determine what type of blocks are included/excluded from the Brush
 
     ![Brush tool was used to draw logs stacked up like a tree trunk](Media/editor_overview_brush_log.png)
 
-6. Change the Block Size to 3 and the Block Type to Leaves, then click the top of your log blocks to put leaves around the top of your tree.
+6. Change the Brush to Uniform Ellipsoid with a Length of 3, change the block type to Leaves, then click the top of your log stack to put leaves around the top of your tree.
 
     ![Brush tool was used to draw leaves at the top of the tree trunk](Media/editor_overview_brush_leaves.png)
+
+
+## Keyboard shortcuts
+
+For the full list, see [Editor Hotkeys](../BedrockEditor/EditorKeyboardInputs.md).
+
+| Name | Shortcut |
+|:----|:----|
+| Brush Tool | Ctrl+B |
+| Paint at Cursor (one‑shot) | Enter |

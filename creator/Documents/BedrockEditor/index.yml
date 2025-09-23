@@ -49,9 +49,7 @@ landingContent:
           - text: Farm Tool
             url: EditorFarmTool.md    
           - text: Fill Tool
-            url: EditorFillTool.md    
-          - text: Flatten Tool
-            url: EditorFlattenTool.md   
+            url: EditorFillTool.md 
           - text: Repeater Tool
             url: EditorRepeaterTool.md 
           - text: Terrain Tool

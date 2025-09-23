@@ -4,12 +4,12 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Extrude Tool
 description: "An overview of the Extrude Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/16/2025
+ms.date: 09/08/2025
 ---
 
 # Extrude Tool
 
-The extrude tool is used to add or subract blocks of the same type around the cursor.
+Use Extrude to add or subtract layers of blocks around the face you click. It grows or carves volumes outward from that face, constrained by your Face Size and Layer Count settings.
 
 ![Gif of Extrude Tool on Garden](Media/GIFs/Extrude.gif)
 
@@ -20,13 +20,22 @@ The extrude tool is used to add or subract blocks of the same type around the cu
 - **Contiguous Selection Type**: You can use this drop-down to set which types of blocks are added or subtracted.
 
 
-#### Use Extrude to adjust terrain elevation:
+#### Use Extrude
 
-1. Open Extrude by clicking the button from the toolbar on the left of the Editor.
-    > [!Tip]
-    > Pressing **Ctrl+Shift+E** also switches to Extrude.
+1. Select Extrude from the tool rail on the left of the Editor and add it to your action bar.
+    > [!TIP]
+    > Press **Ctrl+Shift+E** to switch to Extrude.
 
-2. Set the **Height Threshold** and the **Layer Count**.
+2. Set the **Face Size** and the **Layer Count**.
 
-3. Click the block you want to Extrude from.
+3. Click the block face you want to Extrude from to add or remove layers across the footprint..
     ![Animation of the extrude tool.](Media/editor_extrude_tool.gif)
+
+
+## Keyboard shortcuts
+
+For the full list, see [Editor Hotkeys](../BedrockEditor/EditorKeyboardInputs.md).
+
+|Command |Shortcut |
+|:-------|:-------|
+|Activate Extrude Tool|**Ctrl+Shift+E**|

@@ -4,39 +4,34 @@ ms.author: mikeam
 title: Exploring Custom Block Render Distance
 description: "An Advanced Tutorial Detailing the Use of Render Distance for Custom Blocks in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms.date: 09/09/2025
 ---
 
 # Custom Blocks: Render and Distance
 
-When creating a Custom Block you have a lot of things to consider about how it is displayed in the world. One of the important ones for making it feel like a seamless integration with existing blocks is getting the right render distance. 
+When creating a custom block, you have a lot of things to consider about how it is displayed in the world. One of the important ones for making it feel like a seamless integration with existing blocks is understanding how its rendering method affects render distance.
 
-If you're making a new crop you want it to stay visible as long as the existing vanilla crops do. To be able to control the render distance we first need to understand the relationship between render method and render distance. 
+> [!TIP]
+> For more about render distance, read the [Simulation Distance, Render Distance, and Ticking Areas](./SimulationRenderDistanceGuide.md) guide.
 
-## Render Method
+## Render method
 
-For a full walkthrough of the functionality of the different render methods, see the [Custom Block Render Lighting](CustomBlockRenderLighting.md) step. 
+For a full walkthrough of the functionality of the different render methods, see the [Custom Block Render Lighting](CustomBlockRenderLighting.md) step.
 
 There are 5 render methods to choose from for custom blocks:
 
-- opaque 
-- double_sided 
-- blend 
-- alpha_test 
-- alpha_test_single_sided
+- `opaque`
+- `double_sided`
+- `blend`
+- `alpha_test`
+- `alpha_test_single_sided`
 
-Each has its special functionality that could make it the right choice based on the level of transparency and translucency that you are trying to achieve for your block. 
+These methods affect the block's transparency and translucency; depending on what effect your block needs, some methods will be more appropriate than others. The render method also determines the maximum render distance that your custom block will be displayed at:
 
-The render method is also what determines the render distance where a block will be displayed. 
+- A block using the `opaque` method is considered a "far block"; it will be rendered all the way up to the maximum render distance in ideal conditions.
+- A block using any other method is considered a "near" block; it will be rendered up to _half_ the maximum render distance in ideal conditions.
 
-Use this table to find see the values for each of these under "perfect" conditions. We call it perfect because these values can skew if we are looking through something that could effect how ideal the scenario is, such as water or fog, that can effect the render distance of blocks independently. 
+By "ideal conditions," we mean not looking through an effect such as water or fog that reduces the render distance.
 
-| Groups | Render Methods | Render Distance Start (from player) | Render Distance End (from player) |
-|:----|:----|:----|:----|
-| Far | opaque | Render Distance / 2  | Render Distance |
-| Near | double_sided, blend, alpha_test, alpha_test_single_sided | 0 | Render Distance – Far Render Distance Start |
-
-Far blocks are also rendered in the near group, so there isn't a gap where far blocks aren't visible. 
-
-### Blend Exceptions 
-
-For Vanilla blocks, water is a special case. It can be inserted into the far group even though it uses a blend texture. This can't be currently replicated through Custom Blocks. 
+> [!NOTE]
+> Water blocks are a special case: they use the `blend` rendering method, but are still considered a "far" block. This functionality currently can't be replicated by custom blocks.

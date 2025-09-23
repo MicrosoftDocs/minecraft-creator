@@ -354,15 +354,15 @@ Notes:
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **setDynamicProperties**
 `
-setDynamicProperties(values: Record<string, boolean | number | string | Vector3>): void
+setDynamicProperties(values: Record<string, boolean | number | string | Vector3 | undefined>): void
 `
 
 Sets multiple dynamic properties with specific values.
 
 #### **Parameters**
-- **values**: Record<*string*, *boolean* | *number* | *string* | [*Vector3*](Vector3.md)>
+- **values**: Record<*string*, *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined*>
   
-  A Record of key value pairs of the dynamic properties to set.
+  A Record of key value pairs of the dynamic properties to set. If the data value is null, it will remove that property instead.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -385,7 +385,7 @@ Sets a specified property to a value.
   The property identifier.
 - **value**?: *boolean* | *number* | *string* | [*Vector3*](Vector3.md) = `null`
   
-  Data value of the property to set.
+  Data value of the property to set. If the value is null, it will remove the property instead.
   
 Notes:
 - This function can throw errors.

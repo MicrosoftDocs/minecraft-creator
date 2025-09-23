@@ -4,16 +4,16 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Line Tool
 description: "An overview of the Line Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/27/2025
+ms.date: 09/02/2025
 ---
 
 # Line Tool
-Use the Line to quickly draw borders, outlines, and other line-based shapes in your world.
+Use the Line tool to quickly draw borders, outlines, and other line-based shapes in your world.
 
 ![Line Tool in Action](media/GIFs/LineTool.gif)
 
 
-## Algorithm
+## Algorithms
 
 ![Direct algorithm options](media/LineScreenshots/LineTool.png)
 
@@ -22,17 +22,18 @@ Use the Line to quickly draw borders, outlines, and other line-based shapes in y
 
 -	### StaggeredCountour
     Draws a zig-zag line from your Start to End point.
-    > [!Note]
+    > [!NOTE]
     > Surface Contour is always enabled when using a Staggered Algorithm.
 
 
 ## Line Weight: 
+
 The Line Weight sliders let you adjust line thickness vertically and horizontally from 1 to 5. When you select Uniform Line Weight, the Editor compresses the sliders into a single option and applies the same value to both horizontal and vertical thickness.
 
-Line Weight sliders can be adjusted by dragging them with the mouse or pressing Shift+Up/Down/Left/Right keys.  Up/Down increases/decreases the Vertical Thickness, while Left/Right will increase/decrease the Horizontal Thickness.
+Line Weight sliders can be adjusted by dragging them with the mouse or pressing Shift+Up/Down/Left/Right keys.  Up/Down increases/decreases the Vertical Thickness, while Left/Right increases/decreases the Horizontal Thickness.
 
-> [!Note]
-> The line will grow in the positive axis direction when the weight is an even number, and in the negative axis direction when the weight is an odd number.
+> [!NOTE]
+> The line grows in the positive axis direction when the weight is an even number, and in the negative axis direction when the weight is an odd number.
 
 
 ## Quick Actions
@@ -71,13 +72,9 @@ Line Weight sliders can be adjusted by dragging them with the mouse or pressing 
 
 - **Fixed Distance**
 
-    Selects blocks, air, or a combination of both, based on your Selection Settings, at a fixed location at the center of the Editor screen.
+    Selects blocks, air, or a combination of both, based on your Selection Settings, at a fixed location at the center of the Editor screen. You can use the scroll wheel on the mouse to increase or decrease the distance between you and the selection cube.
     
-    ![Animation of how to use Fixed Distance Selection](Media/FixedDistance.gif)
-
-    You can use the scroll wheel on the mouse to increase or decrease the distance between you and the selection cube.
-    
-    > [!Tip]
+    > [!TIP]
     > Fixed distance is the easiest mode to use if you want to select only air blocks.
 
 ### Target
@@ -97,7 +94,7 @@ You can add new line segments by simply clicking where you'd like to place them.
 
 When multiple points are selected, you can click and drag with the mouse or use the hotkeys (**Ctrl+Shift+Up/Down/Left/Right/PgUp/PgDown**) to move the entire selection.
 
-  > [!Note]
+  > [!NOTE]
   > You can place up to 80 points at one time. Line segments between any two points must be under 100 blocks long.
 
 

@@ -126,6 +126,8 @@ Represents the unique type of network packet.
 `CreativeContentPacket = "CreativeContentPacket"`
 ### **CurrentStructureFeaturePacket**
 `CurrentStructureFeaturePacket = "CurrentStructureFeaturePacket"`
+### **DataStoreSyncPacket**
+`DataStoreSyncPacket = "DataStoreSyncPacket"`
 ### **DeathInfoPacket**
 `DeathInfoPacket = "DeathInfoPacket"`
 ### **DebugDrawerPacket**
