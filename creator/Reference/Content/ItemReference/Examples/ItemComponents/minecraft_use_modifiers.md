@@ -16,8 +16,9 @@ Determines how long an item takes to use in combination with components such as 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| movement_modifier | *not set* | Decimal number | Modifier value to scale the players movement speed when item is in use. Value must be <= 1. | Apple: `0.35` | 
-| use_duration | *not set* | Decimal number | How long the item takes to use in seconds. | Apple: `1.6` | 
+| emit_vibrations | *not set* | Boolean true/false | Whether vibrations are emitted when the item starts or stops being used. Default value: true. |  | 
+| movement_modifier | *not set* | Decimal number | Multiplier applied to the player's movement speed while the item is in use. Value must be <= 1. | Apple: `0.35` | 
+| use_duration | *not set* | Decimal number | Time, in seconds, that the item takes to use. Default value: 0. | Apple: `1.6` | 
 
 ## Samples
 

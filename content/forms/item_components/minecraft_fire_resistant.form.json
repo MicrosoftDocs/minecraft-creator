@@ -9,7 +9,7 @@
       {
         "id": "value",
         "title": "Value",
-        "description": "Determines whether the item is immune to burning when dropped in fire or lava.",
+        "description": "Determines whether the item is immune to burning when dropped in fire or lava. Default value: true.",
         "dataType": 1
       }
     ]

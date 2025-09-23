@@ -531,7 +531,7 @@
       {
         "id": "minecraft:use_modifiers",
         "title": "Minecraft Use Modifiers",
-        "description": "This component modifies use effects, including how long the item takes to use and the player's speed when used in combination with components like \"shooter\", \"throwable\", or \"food\".",
+        "description": "Modifies use behavior, including how long the item takes to use and the player's movement speed.",
         "dataType": 16,
         "subFormId": "item_components/minecraft_use_modifiers"
       },

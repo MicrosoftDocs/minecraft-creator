@@ -305,13 +305,13 @@ List of items or item tags that the entity wants to share. Items in-game will ma
   "singular_pickup": true,
   "items": [
     {
-      "item": "minecraft:nautilus_shell",
+      "item": "minecraft:trident",
       "want_amount": 1,
       "surplus_amount": 1,
       "priority": 0
     },
     {
-      "item": "minecraft:trident",
+      "item": "minecraft:nautilus_shell",
       "want_amount": 1,
       "surplus_amount": 1,
       "priority": 1

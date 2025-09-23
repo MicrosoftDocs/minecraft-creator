@@ -10,6 +10,12 @@
         "title": "Minecraft Display Name",
         "description": "Specifies the language file key that maps to what text will be displayed when you hover over the block in your inventory and hotbar. If the string given can not be resolved as a loc string, the raw string given will be displayed. If this component is omitted, the name of the block will be used as the display name.",
         "dataType": 16
+      },
+      {
+        "id": "minecraft:tags",
+        "title": "Minecraft Tags",
+        "description": "Use this component to define tags, vanilla or custom. Valid tags are of the format \"namespace:tag_name\". The array of tags must be non-empty.",
+        "dataType": 16
       }
     ]
   }

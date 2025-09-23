@@ -49,12 +49,18 @@
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:use_modifiers",
     "title": "Item Components Use Modifiers",
-    "description": "This component modifies use effects, including how long the item takes to use and the player's speed when used in combination with components like \"shooter\", \"throwable\", or \"food\".",
+    "description": "Modifies use behavior, including how long the item takes to use and the player's movement speed.",
     "fields": [
+      {
+        "id": "emit_vibrations",
+        "title": "Emit Vibrations",
+        "description": "Whether vibrations are emitted when the item starts or stops being used. Default value: true.",
+        "dataType": 1
+      },
       {
         "id": "movement_modifier",
         "title": "Movement Modifier",
-        "description": "Modifier value to scale the players movement speed when item is in use.",
+        "description": "Multiplier applied to the player's movement speed while the item is in use.",
         "dataType": 3,
         "validity": [
           {
@@ -66,7 +72,7 @@
       {
         "id": "use_duration",
         "title": "Use Duration",
-        "description": "How long the item takes to use in seconds.",
+        "description": "Time, in seconds, that the item takes to use. Default value: 0.",
         "dataType": 3
       }
     ]
