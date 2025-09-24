@@ -1,10 +1,10 @@
 ---
 author: emoteit
-ms.author: cam-wilkerson
+ms.author: v-cwilkerson
 title: Terrain Matching Tips & FAQ
 description: "A place to reference tips and common questions"
 ms.service: minecraft-bedrock-edition
-ms-date: 09/24/2025
+ms.date: 09/24/2025
 ---
 
 # Terrain Matching Tips & FAQ
