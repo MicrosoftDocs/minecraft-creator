@@ -56,6 +56,6 @@ The best way to mitigate the quirks of terrain matching is to design your struct
 
 - ### Why does my structure look odd when placed in water?
   Applying waterlogging to your jigsaw might help.
-  In the Structures json, you can add: `"liquid_settings": "apply_waterlogging"`
+  In the Structures JSON, you can add: `"liquid_settings": "apply_waterlogging"`
 
 Still having trouble with terrain matching even after trying all of the above? Some creators have found it helpful to have some jigsaws dedicated to "connecting"and other jigsaws dedicated to "placing". 
