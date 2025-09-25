@@ -66,4 +66,4 @@ The best way to mitigate the quirks of terrain matching is to design your struct
 
   Typically, air overrides blocks at the location a structure is placed. Saving your structures with structure void blocks lets existing blocks remain unchanged.
 
-Still having trouble with terrain matching and jigsaw structures? Some creators have found it helpful to have some jigsaws dedicated to "connecting"and other jigsaws dedicated to "placing".
+Still having trouble with terrain matching and jigsaw structures? Some creators have found it helpful to have some jigsaws dedicated to "connecting" and other jigsaws dedicated to "placing".
