@@ -30,3 +30,5 @@ landingContent:
             url: ../../Commands/commands/structure.md
           - text: More Fun with Structure Blocks
             url: MoreFunWithStructureBlocks.md
+          - text: Terrain Matching Tips & FAQ
+            url: TerrainMatchingTips.md
