@@ -34,9 +34,9 @@ highlightedContent:
       itemType: whats-new
       url: Documents/ControlSchemes.md
     #card
-    - title: "1.21.100 Update Summary"
+    - title: "1.21.110 Update Summary"
       itemType: whats-new
-      url: Documents/Update1.21.100.md
+      url: Documents/Update1.21.110.md
     #card
     - title: "Minecraft Bedrock Editor"
       itemType: whats-new
