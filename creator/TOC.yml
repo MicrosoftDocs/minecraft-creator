@@ -202,6 +202,8 @@
             href: Documents/AddOns/CustomPackSettings.md
           - name: Preparing Raw Text for Localization
             href: Documents/PreparingRawTextForLocalization.md
+          - name: Texture Budgets
+            href: Documents/TextureBudgets.md
         - name: Advanced Topics
           items:
           - name: Designing Gameplay for Various Devices
