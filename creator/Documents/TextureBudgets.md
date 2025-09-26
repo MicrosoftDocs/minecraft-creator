@@ -3,7 +3,7 @@ author: cam-wilkerson
 ms.author: v-cwilkerson
 title: Texture Budgets
 ms.topic: tutorial
-description: "A guide for creators on utilizing texture budgets to manage "
+description: "A guide for creators on utilizing texture budgets to manage add-on performance"
 ms.service: minecraft-bedrock-edition
 ms.date: 0/26/2025
 ---
