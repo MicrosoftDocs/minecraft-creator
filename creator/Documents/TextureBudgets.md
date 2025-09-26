@@ -22,7 +22,7 @@ Texture budgets are enforced for all content types to ensure consistent performa
 
 Use subpacks to scale content across platform tiers. Submissions that leverage Vibrant Visuals Enhanced must meet Tier 2 budgets to pass.
 
-> [!TIP] 
+> [!TIP]
 > Consider reducing texture resolution or limiting MERS adoption for lower tiers to stay within the texture budget.
 
 ## FAQ
