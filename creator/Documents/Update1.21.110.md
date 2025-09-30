@@ -9,7 +9,7 @@ ms.date: 09/30/2025 #Required; mm/dd/yyyy format.
 
 # Minecraft Bedrock 1.21.110 Update Notes for Creators
 
-> 
+> [!VIDEO https://www.youtube.com/embed/WQzKqgwhfhM]
 *Video version of this article from the Minecraft Creator Channel*
 
 Minecraft has entered the Copper Age! Minecraft Bedrock been updated to 1.21.110 and there are a number of changes of note for creators. The following features do not require experimental toggles.
