@@ -17,6 +17,12 @@
         "dataType": 16,
         "subFormId": "block/description",
         "isRequired": true
+      },
+      {
+        "id": "permutations",
+        "title": "Permutations",
+        "dataType": 16,
+        "subFormId": "block/permutation"
       }
     ]
   }

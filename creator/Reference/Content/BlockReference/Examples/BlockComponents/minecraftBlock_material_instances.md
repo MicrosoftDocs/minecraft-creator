@@ -21,17 +21,17 @@ The material instances for a block. Maps face or material_instance names in a ge
 |:----------|:-------------|:----|:-----------|:------------- |
 | * (Material Instance Face) | *not set* | [* (Material Instance Face)](#material-instance-face) item |  | Block Fabricator: `{"texture":"mikeamm_gwve_fabricator","render_method":"alpha_test","ambient_occlusion":1}`, Block Gray Ore: `{"texture":"mikeamm_gwve_gray_ore","render_method":"alpha_test","face_dimming":false}`, Block Frond Top: `{"texture":"frond_top","render_method":"alpha_test"}` | 
 | * (Alternate 1) | *not set* | String |  |  | 
-| down (Material Instance Face) | *not set* | [Down (Material Instance Face)](#material-instance-face) item |  |  | 
+| down (Material Instance Face) | *not set* | [Down (Material Instance Face)](#material-instance-face) item |  | Die: `{"texture":"die_6"}` | 
 | down (Alternate 1) | *not set* | String |  |  | 
-| east (Material Instance Face) | *not set* | [East (Material Instance Face)](#material-instance-face) item |  |  | 
+| east (Material Instance Face) | *not set* | [East (Material Instance Face)](#material-instance-face) item |  | Die: `{"texture":"die_2"}` | 
 | east (Alternate 1) | *not set* | String |  |  | 
-| north (Material Instance Face) | *not set* | [North (Material Instance Face)](#material-instance-face) item |  | Tuna Roll: `"sushi_side"` | 
+| north (Material Instance Face) | *not set* | [North (Material Instance Face)](#material-instance-face) item |  | Tuna Roll: `"sushi_side"`, Die: `{"texture":"die_3"}` | 
 | north (Alternate 1) | *not set* | String |  |  | 
-| south (Material Instance Face) | *not set* | [South (Material Instance Face)](#material-instance-face) item |  | Tuna Roll: `"sushi_side"` | 
+| south (Material Instance Face) | *not set* | [South (Material Instance Face)](#material-instance-face) item |  | Tuna Roll: `"sushi_side"`, Die: `{"texture":"die_4"}` | 
 | south (Alternate 1) | *not set* | String |  |  | 
-| up (Material Instance Face) | *not set* | [Up (Material Instance Face)](#material-instance-face) item |  |  | 
+| up (Material Instance Face) | *not set* | [Up (Material Instance Face)](#material-instance-face) item |  | Die: `{"texture":"die_1"}` | 
 | up (Alternate 1) | *not set* | String |  |  | 
-| west (Material Instance Face) | *not set* | [West (Material Instance Face)](#material-instance-face) item |  |  | 
+| west (Material Instance Face) | *not set* | [West (Material Instance Face)](#material-instance-face) item |  | Die: `{"texture":"die_5"}` | 
 | west (Alternate 1) | *not set* | String |  |  | 
 
 ## Material Instance Face

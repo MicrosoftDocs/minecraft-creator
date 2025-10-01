@@ -104,12 +104,6 @@
               "content": "geometry.bubble_fish"
             }
           ],
-          "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
-            {
-              "path": "/minecraft:block/components/minecraft:geometry/",
-              "content": "minecraft:geometry.full_block"
-            }
-          ],
           "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/green_bubble_fish.json": [
             {
               "path": "/minecraft:block/components/minecraft:geometry/",
@@ -221,9 +215,7 @@
       "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
         {
           "path": "/minecraft:block/components/minecraft:geometry/",
-          "content": {
-            "identifier": "minecraft:geometry.full_block"
-          }
+          "content": "minecraft:geometry.full_block"
         }
       ],
       "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/green_bubble_fish.json": [

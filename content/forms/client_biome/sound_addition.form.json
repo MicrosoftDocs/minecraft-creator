@@ -1,0 +1,30 @@
+{
+  "id": "Sound Addition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Sound Addition",
+    "title": "Client Biome Sound Addition",
+    "fields": [
+      {
+        "id": "asset",
+        "title": "Asset",
+        "description": "Name of the sound asset to play",
+        "dataType": 16,
+        "isRequired": true
+      },
+      {
+        "id": "chance",
+        "title": "Chance",
+        "description": "Probability of the sound playing each interval, between 0.0 and 1.0",
+        "dataType": 3,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  }
+}
