@@ -110,6 +110,13 @@
           "description": "A material instance definition to map to a material instance in a geometry file. The material instance \"*\" will be used for any materials that don't have a match.",
           "fields": [
             {
+              "id": "alpha_masked_tint",
+              "title": "Alpha Masked Tint",
+              "description": "Should the tint be multiplied by the alpha channel of texture (similar to grass_block's sides)? Requires 'format_version' >= 1.21.120, a \"tint_method\" other than \"none\" and a \"render_method\" set to \"opaque\"",
+              "defaultValue": false,
+              "dataType": 1
+            },
+            {
               "id": "ambient_occlusion",
               "title": "Ambient Occlusion",
               "description": "Should this material have ambient occlusion applied when lighting? If true, shadows will be created around and underneath the block. Optionally can be constructed with float to control exponent applied to ao value after lighting.",
@@ -455,6 +462,14 @@
               "path": "/minecraft:block/components/minecraft:material_instances/",
               "content": "sushi_side"
             }
+          ],
+          "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "die_3"
+              }
+            }
           ]
         }
       },
@@ -473,6 +488,150 @@
             {
               "path": "/minecraft:block/components/minecraft:material_instances/",
               "content": "sushi_side"
+            }
+          ],
+          "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "die_4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "east",
+        "title": "East",
+        "dataType": 16,
+        "subForm": {
+          "id": "east",
+          "title": "East",
+          "fields": [
+            {
+              "id": "texture",
+              "title": "Texture",
+              "dataType": 2,
+              "samples": {
+                "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
+                  {
+                    "path": "texture",
+                    "content": "die_2"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "samples": {
+          "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "die_2"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "west",
+        "title": "West",
+        "dataType": 16,
+        "subForm": {
+          "id": "west",
+          "title": "West",
+          "fields": [
+            {
+              "id": "texture",
+              "title": "Texture",
+              "dataType": 2,
+              "samples": {
+                "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
+                  {
+                    "path": "texture",
+                    "content": "die_5"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "samples": {
+          "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "die_5"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "up",
+        "title": "Up",
+        "dataType": 16,
+        "subForm": {
+          "id": "up",
+          "title": "Up",
+          "fields": [
+            {
+              "id": "texture",
+              "title": "Texture",
+              "dataType": 2,
+              "samples": {
+                "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
+                  {
+                    "path": "texture",
+                    "content": "die_1"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "samples": {
+          "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "die_1"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "down",
+        "title": "Down",
+        "dataType": 16,
+        "subForm": {
+          "id": "down",
+          "title": "Down",
+          "fields": [
+            {
+              "id": "texture",
+              "title": "Texture",
+              "dataType": 2,
+              "samples": {
+                "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
+                  {
+                    "path": "texture",
+                    "content": "die_6"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "samples": {
+          "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "die_6"
+              }
             }
           ]
         }
@@ -631,6 +790,31 @@
             },
             "sushi_side": {
               "texture": "california_roll"
+            }
+          }
+        }
+      ],
+      "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "north": {
+              "texture": "die_3"
+            },
+            "south": {
+              "texture": "die_4"
+            },
+            "east": {
+              "texture": "die_2"
+            },
+            "west": {
+              "texture": "die_5"
+            },
+            "up": {
+              "texture": "die_1"
+            },
+            "down": {
+              "texture": "die_6"
             }
           }
         }

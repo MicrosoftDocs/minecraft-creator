@@ -117,6 +117,7 @@ Water configurations are JSON files located in **water/water.json** in a resourc
     }
 }
 ```
+Learn more about customizing and applying color grading settings in your pack across different biomes in [Per-Biome Customization](BiomeCustomization.md).
 
 The following example JSON can be used as a starting point for an ocean:
 

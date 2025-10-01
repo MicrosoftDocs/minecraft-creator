@@ -198,6 +198,8 @@
       href: minecraft/server/BlockBoundingBoxUtils.md
     - name: BlockComponent
       href: minecraft/server/BlockComponent.md
+    - name: BlockComponentBlockBreakEvent
+      href: minecraft/server/BlockComponentBlockBreakEvent.md
     - name: BlockComponentEntityFallOnEvent
       href: minecraft/server/BlockComponentEntityFallOnEvent.md
     - name: BlockComponentOnPlaceEvent
@@ -266,6 +268,8 @@
       href: minecraft/server/ButtonPushAfterEventSignal.md
     - name: Camera
       href: minecraft/server/Camera.md
+    - name: CatmullRomSpline
+      href: minecraft/server/CatmullRomSpline.md
     - name: ChatSendAfterEvent
       href: minecraft/server/ChatSendAfterEvent.md
     - name: ChatSendAfterEventSignal
@@ -644,6 +648,8 @@
       href: minecraft/server/LeverActionAfterEvent.md
     - name: LeverActionAfterEventSignal
       href: minecraft/server/LeverActionAfterEventSignal.md
+    - name: LinearSpline
+      href: minecraft/server/LinearSpline.md
     - name: ListBlockVolume
       href: minecraft/server/ListBlockVolume.md
     - name: LootingEnchantFunction
@@ -922,6 +928,8 @@
       href: minecraft/server/WorldLoadAfterEventSignal.md
     - name: AABB
       href: minecraft/server/AABB.md
+    - name: AnimationOptions
+      href: minecraft/server/AnimationOptions.md
     - name: BiomeSearchOptions
       href: minecraft/server/BiomeSearchOptions.md
     - name: BlockBoundingBox
@@ -1040,6 +1048,8 @@
       href: minecraft/server/PlayerSoundOptions.md
     - name: PlayerSwingEventOptions
       href: minecraft/server/PlayerSwingEventOptions.md
+    - name: ProgressKeyFrame
+      href: minecraft/server/ProgressKeyFrame.md
     - name: ProjectileShootOptions
       href: minecraft/server/ProjectileShootOptions.md
     - name: RangeComparison
@@ -1054,12 +1064,16 @@
       href: minecraft/server/RGB.md
     - name: RGBA
       href: minecraft/server/RGBA.md
+    - name: RotationKeyFrame
+      href: minecraft/server/RotationKeyFrame.md
     - name: ScoreboardObjectiveDisplayOptions
       href: minecraft/server/ScoreboardObjectiveDisplayOptions.md
     - name: ScriptEventMessageFilterOptions
       href: minecraft/server/ScriptEventMessageFilterOptions.md
     - name: SpawnEntityOptions
       href: minecraft/server/SpawnEntityOptions.md
+    - name: SplineAnimation
+      href: minecraft/server/SplineAnimation.md
     - name: StructureCreateOptions
       href: minecraft/server/StructureCreateOptions.md
     - name: StructurePlaceOptions
