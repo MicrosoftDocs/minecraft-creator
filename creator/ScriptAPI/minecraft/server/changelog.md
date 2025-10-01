@@ -51,6 +51,7 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`getSkyLightLevel`](Block.md#getskylightlevel)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
+#### Added *[`BlockComponentBlockBreakEvent`](BlockComponentBlockBreakEvent.md)*
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
 - Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
 #### Added *[`BlockPrecipitationInteractionsComponent`](BlockPrecipitationInteractionsComponent.md)*
@@ -58,7 +59,9 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*
 - Added function *[`getBoundingBox`](BlockVolumeBase.md#getboundingbox)*
 #### Changed *[`Camera`](Camera.md)*
+- Added function *[`playAnimation`](Camera.md#playanimation)*
 - Added function *[`setCameraWithEase`](Camera.md#setcamerawithease)*
+#### Added *[`CatmullRomSpline`](CatmullRomSpline.md)*
 #### Added *[`ChatSendAfterEvent`](ChatSendAfterEvent.md)*
 #### Added *[`ChatSendAfterEventSignal`](ChatSendAfterEventSignal.md)*
 #### Added *[`ChatSendBeforeEvent`](ChatSendBeforeEvent.md)*
@@ -123,6 +126,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`KilledByEntityCondition`](KilledByEntityCondition.md)*
 #### Added *[`KilledByPlayerCondition`](KilledByPlayerCondition.md)*
 #### Added *[`KilledByPlayerOrPetsCondition`](KilledByPlayerOrPetsCondition.md)*
+#### Added *[`LinearSpline`](LinearSpline.md)*
 #### Added *[`LootingEnchantFunction`](LootingEnchantFunction.md)*
 #### Added *[`LootItem`](LootItem.md)*
 #### Added *[`LootItemCondition`](LootItemCondition.md)*

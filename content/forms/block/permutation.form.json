@@ -1,0 +1,23 @@
+{
+  "id": "Permutation",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Permutation",
+    "title": "Block Permutation",
+    "fields": [
+      {
+        "id": "components",
+        "title": "Components",
+        "dataType": 16,
+        "subFormId": "block_components/components",
+        "isRequired": true
+      },
+      {
+        "id": "condition",
+        "title": "Condition",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  }
+}

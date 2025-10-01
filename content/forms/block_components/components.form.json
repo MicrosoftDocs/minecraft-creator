@@ -12,6 +12,18 @@
         "dataType": 16
       },
       {
+        "id": "minecraft:light_dampening",
+        "title": "Minecraft Light Dampening",
+        "description": "The amount that light will be dampened when it passes through the block, in a range (0-15). Higher value means the light will be dampened more.",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:light_emission",
+        "title": "Minecraft Light Emission",
+        "description": "The amount of light this block will emit in a range (0-15). Higher value means more light will be emitted.",
+        "dataType": 16
+      },
+      {
         "id": "minecraft:tags",
         "title": "Minecraft Tags",
         "description": "Use this component to define tags, vanilla or custom. Valid tags are of the format \"namespace:tag_name\". The array of tags must be non-empty.",

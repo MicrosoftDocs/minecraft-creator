@@ -77,77 +77,81 @@ Sets a camera with override positions and facing at a particular entity.
 Sets a camera with override positions facing a particular position.
 
 ### Set camera with a target entity
-`/camera <players: target> target_entity <entity: target>`
+`/camera <players: target> attach_to_entity <entity: target>`
 
 Specifies a camera transition with target
 
 ### Set camera with a target entity and positional offset
-`/camera <players: target> target_entity <entity: target> target_center_offset <xTargetCenterOffset: float> <yTargetCenterOffset: float> <zTargetCenterOffset: float>`
+`/camera <players: target> detach_from_entity`
 
 
 ### Removes camera target
-`/camera <players: target> remove_target`
+`/camera <players: target> target_entity <entity: target>`
 
 Removes a camera target.
 
 ### Set camera with a view offset
-`/camera <players: target> set <preset: CameraPresets> view_offset <xViewOffset: float> <yViewOffset: float>`
+`/camera <players: target> target_entity <entity: target> target_center_offset <xTargetCenterOffset: float> <yTargetCenterOffset: float> <zTargetCenterOffset: float>`
 
 
 ### Set camera to default
-`/camera <players: target> set <preset: CameraPresets> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
+`/camera <players: target> remove_target`
 
 Sets a camera using the default settings for the camera preset.
 
 ### Sets a camera from a position
-`/camera <players: target> set <preset: CameraPresets> rot <xRot: rotation> <yRot: rotation> view_offset <xViewOffset: float> <yViewOffset: float>`
+`/camera <players: target> set <preset: CameraPresets> view_offset <xViewOffset: float> <yViewOffset: float>`
 
 Sets a camera from a position.
 
 ### Camera facing rotation
-`/camera <players: target> set <preset: CameraPresets> rot <xRot: rotation> <yRot: rotation> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
+`/camera <players: target> set <preset: CameraPresets> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
 
 Specifies a camera with a particular rotatoin
 
 ### Fade out to times
-`/camera <players: target> set <preset: CameraPresets> view_offset <xViewOffset: float> <yViewOffset: float> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
+`/camera <players: target> set <preset: CameraPresets> rot <xRot: rotation> <yRot: rotation> view_offset <xViewOffset: float> <yViewOffset: float>`
 
 Specifies a camera timed fade-out type operation.
 
 ### Camera preset facing/looking at a position
-`/camera <players: target> set <preset: CameraPresets> rot <xRot: rotation> <yRot: rotation> view_offset <xViewOffset: float> <yViewOffset: float> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
+`/camera <players: target> set <preset: CameraPresets> rot <xRot: rotation> <yRot: rotation> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
 
 Specifies a camera looking at a particular position.
 
 ### Fade
-`/camera <players: target> set <preset: CameraPresets> ease <easeTime: float> <easeType: Easing> view_offset <xViewOffset: float> <yViewOffset: float>`
+`/camera <players: target> set <preset: CameraPresets> view_offset <xViewOffset: float> <yViewOffset: float> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
 
 Specifies a general camera fade-out.
 
 ### Clear
-`/camera <players: target> set <preset: CameraPresets> ease <easeTime: float> <easeType: Easing> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
+`/camera <players: target> set <preset: CameraPresets> rot <xRot: rotation> <yRot: rotation> view_offset <xViewOffset: float> <yViewOffset: float> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
 
 Clears any active camera changes for the player.
 
 ### Timed color-tinted fade
-`/camera <players: target> set <preset: CameraPresets> ease <easeTime: float> <easeType: Easing> rot <xRot: rotation> <yRot: rotation> view_offset <xViewOffset: float> <yViewOffset: float>`
+`/camera <players: target> set <preset: CameraPresets> ease <easeTime: float> <easeType: Easing> view_offset <xViewOffset: float> <yViewOffset: float>`
 
 Applies a color tinted fade for the specified fade in, hold, and out time periods.
 
 ### Timed fade
-`/camera <players: target> set <preset: CameraPresets> ease <easeTime: float> <easeType: Easing> rot <xRot: rotation> <yRot: rotation> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
+`/camera <players: target> set <preset: CameraPresets> ease <easeTime: float> <easeType: Easing> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
 
 Applies a fade for the specified fade in, hold, and out time periods.
 
 ### Color-tinted fade
-`/camera <players: target> set <preset: CameraPresets> ease <easeTime: float> <easeType: Easing> view_offset <xViewOffset: float> <yViewOffset: float> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
+`/camera <players: target> set <preset: CameraPresets> ease <easeTime: float> <easeType: Easing> rot <xRot: rotation> <yRot: rotation> view_offset <xViewOffset: float> <yViewOffset: float>`
 
 Applies a color-tinted fade for the selected player(s).
 
 ### Fade
-`/camera <players: target> set <preset: CameraPresets> ease <easeTime: float> <easeType: Easing> rot <xRot: rotation> <yRot: rotation> view_offset <xViewOffset: float> <yViewOffset: float> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
+`/camera <players: target> set <preset: CameraPresets> ease <easeTime: float> <easeType: Easing> rot <xRot: rotation> <yRot: rotation> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
 
 Applies a fade for the selected player(s)
+
+### `/camera <players: target> set <preset: CameraPresets> ease <easeTime: float> <easeType: Easing> view_offset <xViewOffset: float> <yViewOffset: float> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
+
+### `/camera <players: target> set <preset: CameraPresets> ease <easeTime: float> <easeType: Easing> rot <xRot: rotation> <yRot: rotation> view_offset <xViewOffset: float> <yViewOffset: float> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
 
 ### `/camera <players: target> set <preset: CameraPresets> pos <position: x y z>`
 

@@ -38,6 +38,12 @@
               "path": "/minecraft:block/components/minecraft:item_visual/",
               "content": "geometry.mikeamm_gwve_fabricator_in_hand"
             }
+          ],
+          "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:item_visual/",
+              "content": "minecraft:geometry.full_block"
+            }
           ]
         }
       },
@@ -57,6 +63,17 @@
                 }
               }
             }
+          ],
+          "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:item_visual/",
+              "content": {
+                "*": {
+                  "texture": "die_red",
+                  "render_method": "opaque"
+                }
+              }
+            }
           ]
         }
       }
@@ -71,6 +88,20 @@
               "*": {
                 "texture": "mikeamm_gwve_fabricator_in_hand",
                 "render_method": "alpha_test"
+              }
+            }
+          }
+        }
+      ],
+      "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:item_visual/",
+          "content": {
+            "geometry": "minecraft:geometry.full_block",
+            "material_instances": {
+              "*": {
+                "texture": "die_red",
+                "render_method": "opaque"
               }
             }
           }
