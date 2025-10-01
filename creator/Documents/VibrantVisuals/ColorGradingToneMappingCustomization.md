@@ -118,6 +118,7 @@ Color grading configurations are JSON files located in the **color_grading** dir
   }
 }
 ```
+Learn more about customizing and applying color grading settings in your pack across different biomes in [Per-Biome Customization](BiomeCustomization.md).
 
 This sample **color_grading/color_grading.json** file can be used as a starting point. You can also download a sample at [https://github.com/microsoft/minecraft-samples/tree/main/deferred_lighting_starter](https://github.com/microsoft/minecraft-samples/tree/main/deferred_lighting_starter).
 

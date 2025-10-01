@@ -37,6 +37,8 @@ Because the assets required for RTX raytracing are a subset of the assets needed
 
 ## Vibrant Visuals JSON files
 
-Texture Sets define the surface properties of individual blocks or entities, but global lighting properties are defined with [Keyframe JSON files](./KeyFrameJSONSyntax.md). The folder structure for a Vibrant Visuals resource pack with all possible PBR and lighting JSON files looks like this:
+Texture Sets define the surface properties of individual blocks or entities, but Vibrant Visuals lighting and effects are defined with [Keyframe JSON files](./KeyFrameJSONSyntax.md). The folder structure for a Vibrant Visuals Resource Pack with PBR texture folders and multiple different Vibrant Visuals JSON files looks like this, although the specific files might change depending on your Resource Pack's needs:
 
-![Image of the file structure for a resource pack with a manifest file, an atmospherics folder containing an atmospherics.json file, a color_grading folder containing a color_grading.json, a lighting folder containing a global.json file, a pbr folder containing a global.json file, a point_lights folder containing a global.json, a textures folder containing a "blocks" folder, an "entities" folder, an "items" folder, a "particles" folder and a textures_list.json file, and a water folder containing a water.json.](Media/RP_file_structure2.png)
+![Image of the file structure for a resource pack with a manifest file, an atmospherics folder containing multiple atmospherics JSON files, a color_grading folder containing multiple color grading JSON files, a lighting folder containing multiple lighting JSON files, a textures folder containing a "blocks" folder, an "entities" folder, a water folder containing multiple water.json files, an "items" folder, and a textures_list.json file.](./Media/RP-file-structure3.png)
+
+The following sections cover what each of these set of files control and what parameters can be adjusted, how to set different values by time of day with keyframing, and how to customize for different biomes.

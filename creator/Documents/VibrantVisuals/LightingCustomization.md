@@ -12,11 +12,14 @@ ms.date: 08/05/2025
 
 The flip side of customizing materials in Minecraft: Bedrock Edition with [texture maps](./UseBlockbenchToCreateModelsWithTextures.md) is customizing the lighting in your world. You can use [lighting JSON schemas](#lighting-json-schemas) to define the light from directional lights (celestial bodies), point lights (torches, lamps, and other light-emitting blocks), and various kinds of ambient light, for full control over your scenes.
 
-Three JSON files define lighting in Vibrant Visuals:
+Three kinds of JSON files define lighting in Vibrant Visuals:
 
-- **lighting/global.json** defines directional lights, a global desaturation value for emissive lights, ambient lighting, and sky lighting.
+- **lighting/global.json** defines directional lights, a global desaturation value for emissive lights, ambient lighting, and sky lighting. Biome-specific global lighting files should also be placed in this directory as of Bedrock Edition 1.21.90; see the note below.
 - **local_lighting/local_lighting.json** assigns light colors and light type to specific block types such as torches.
 - **pbr/global.json** sets default fallback values when texture set details isn't provided for a block, entity, particle, or item.
+
+> [!IMPORTANT]
+> As of Bedrock Edition 1.21.90, **lighting/global.json** will not override the built-in Vanilla pack per-biome lighting; to do that, create multiple lighting JSON files within the **lighting/** directory and assign them specifically to different biomes. See [Per-Biome Customization](BiomeCustomization.md) for more details.
 
 ## Global lighting
 

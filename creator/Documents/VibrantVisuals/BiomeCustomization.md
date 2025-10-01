@@ -23,6 +23,14 @@ Vibrant Visuals Resource packs support a variety of JSON files that allow Creato
 
 Packs can provide multiple instances for each type of JSON as long as they have unique filenames and unique `identifier` fields in their JSON schema. Those identifiers can then be specified in [Client Biome JSONs](../../Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md) to customize the look and feel of a given biome(s).
 
+### Global vs. Biome JSONs
+
+Starting in Minecraft Bedrock Edition 1.21.90, per-biome configurations for Vibrant Visuals effects were added as part of the Vanilla base game pack. Previously, all effects were controlled globally using a single JSON file per category. As of this update, biome-specific settings included in the Vanilla base game pack now take precedence over both the built-in global default values and any global Vibrant Visual JSON files provided by custom packs.
+
+To apply custom visuals to a specific biome or across the world, you must specify your Vibrant Visuals custom configurations within each client biome JSON file using their respective namespaces. A Creator can reference a single Vibrant Visuals JSON file across multiple client biome files, or provide unique Vibrant Visuals configurations for various biomes. There are detailed examples below on how to add Vibrant Visuals JSONs to each biome client file.
+
+Note that global Vibrant Visuals JSON files (whether built-in or Creator-provided) will still apply to any custom biomes that do not have their own biome specific settings specified.
+
 ## Transitions between biomes
 
 In order to smoothly transition between different visual settings for different biomes, the game will automatically blend any customized settings in one of two ways:
