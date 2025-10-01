@@ -30,6 +30,7 @@ description: Contents of the @minecraft/server.BlockEvent class.
 - [*PressurePlatePushAfterEvent*](PressurePlatePushAfterEvent.md)
 - [*TargetBlockHitAfterEvent*](TargetBlockHitAfterEvent.md)
 - [*TripWireTripAfterEvent*](TripWireTripAfterEvent.md)
+- [*BlockComponentBlockBreakEvent*](BlockComponentBlockBreakEvent.md)
 - [*PlayerPlaceBlockBeforeEvent*](PlayerPlaceBlockBeforeEvent.md)
 
 Contains information regarding an event that impacts a specific block.

@@ -17,6 +17,8 @@ Represents a container that can hold sets of items. Used with entities such as P
 ### **containerRules**
 `read-only containerRules?: ContainerRules;`
 
+If these rules are defined other container operations will throw if they cause these rules to be invalidated. For example, adding a shulker box to a vanilla bundle.
+
 Type: [*ContainerRules*](ContainerRules.md)
 
 > [!CAUTION]

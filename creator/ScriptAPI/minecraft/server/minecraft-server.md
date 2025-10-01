@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.2.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.21.120-beta.23 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.21.120-beta.24 of Minecraft.
 
 ## Available Versions
 - `2.4.0-beta`
@@ -138,6 +138,7 @@ The following API versions are from a major version that is documented here: [*@
 - [Block](Block.md)
 - [BlockBoundingBoxUtils](BlockBoundingBoxUtils.md)
 - [BlockComponent](BlockComponent.md)
+- [BlockComponentBlockBreakEvent](BlockComponentBlockBreakEvent.md)
 - [BlockComponentEntityFallOnEvent](BlockComponentEntityFallOnEvent.md)
 - [BlockComponentOnPlaceEvent](BlockComponentOnPlaceEvent.md)
 - [BlockComponentPlayerBreakEvent](BlockComponentPlayerBreakEvent.md)
@@ -172,6 +173,7 @@ The following API versions are from a major version that is documented here: [*@
 - [ButtonPushAfterEvent](ButtonPushAfterEvent.md)
 - [ButtonPushAfterEventSignal](ButtonPushAfterEventSignal.md)
 - [Camera](Camera.md)
+- [CatmullRomSpline](CatmullRomSpline.md)
 - [ChatSendAfterEvent](ChatSendAfterEvent.md)
 - [ChatSendAfterEventSignal](ChatSendAfterEventSignal.md)
 - [ChatSendBeforeEvent](ChatSendBeforeEvent.md)
@@ -361,6 +363,7 @@ The following API versions are from a major version that is documented here: [*@
 - [KilledByPlayerOrPetsCondition](KilledByPlayerOrPetsCondition.md)
 - [LeverActionAfterEvent](LeverActionAfterEvent.md)
 - [LeverActionAfterEventSignal](LeverActionAfterEventSignal.md)
+- [LinearSpline](LinearSpline.md)
 - [ListBlockVolume](ListBlockVolume.md)
 - [LootingEnchantFunction](LootingEnchantFunction.md)
 - [LootItem](LootItem.md)
@@ -502,6 +505,7 @@ The following API versions are from a major version that is documented here: [*@
 
 ## Interfaces
 - [AABB](AABB.md)
+- [AnimationOptions](AnimationOptions.md)
 - [BiomeSearchOptions](BiomeSearchOptions.md)
 - [BlockBoundingBox](BlockBoundingBox.md)
 - [BlockCustomComponent](BlockCustomComponent.md)
@@ -561,6 +565,7 @@ The following API versions are from a major version that is documented here: [*@
 - [PlayerAimAssistSettings](PlayerAimAssistSettings.md)
 - [PlayerSoundOptions](PlayerSoundOptions.md)
 - [PlayerSwingEventOptions](PlayerSwingEventOptions.md)
+- [ProgressKeyFrame](ProgressKeyFrame.md)
 - [ProjectileShootOptions](ProjectileShootOptions.md)
 - [RangeComparison](RangeComparison.md)
 - [RawMessage](RawMessage.md)
@@ -568,9 +573,11 @@ The following API versions are from a major version that is documented here: [*@
 - [RawText](RawText.md)
 - [RGB](RGB.md)
 - [RGBA](RGBA.md)
+- [RotationKeyFrame](RotationKeyFrame.md)
 - [ScoreboardObjectiveDisplayOptions](ScoreboardObjectiveDisplayOptions.md)
 - [ScriptEventMessageFilterOptions](ScriptEventMessageFilterOptions.md)
 - [SpawnEntityOptions](SpawnEntityOptions.md)
+- [SplineAnimation](SplineAnimation.md)
 - [StructureCreateOptions](StructureCreateOptions.md)
 - [StructurePlaceOptions](StructurePlaceOptions.md)
 - [TeleportOptions](TeleportOptions.md)

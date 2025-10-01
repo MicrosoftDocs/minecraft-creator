@@ -156,6 +156,8 @@ Represents the unique type of network packet.
 `GameTestRequestPacket = "GameTestRequestPacket"`
 ### **GameTestResultsPacket**
 `GameTestResultsPacket = "GameTestResultsPacket"`
+### **GraphicsOverrideParameterPacket**
+`GraphicsOverrideParameterPacket = "GraphicsOverrideParameterPacket"`
 ### **GuiDataPickItemPacket**
 `GuiDataPickItemPacket = "GuiDataPickItemPacket"`
 ### **HurtArmorPacket**

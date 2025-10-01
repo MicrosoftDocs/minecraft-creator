@@ -20,6 +20,18 @@ This function will be called before a player places the block.
 
 Type: (arg0: [*BlockComponentPlayerPlaceBeforeEvent*](BlockComponentPlayerPlaceBeforeEvent.md), arg1: [*CustomComponentParameters*](CustomComponentParameters.md)) => *void*
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **onBreak**
+`onBreak?: (arg0: BlockComponentBlockBreakEvent, arg1: CustomComponentParameters) => void;`
+
+This function will be called when specific block is destroyed.
+
+Type: (arg0: [*BlockComponentBlockBreakEvent*](BlockComponentBlockBreakEvent.md), arg1: [*CustomComponentParameters*](CustomComponentParameters.md)) => *void*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **onEntityFallOn**
 `onEntityFallOn?: (arg0: BlockComponentEntityFallOnEvent, arg1: CustomComponentParameters) => void;`
 
