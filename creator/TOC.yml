@@ -178,6 +178,8 @@
             href: Documents/VibrantVisuals/VolumetricFogLightShaftsCustomization.md
           - name: Color Grading and Tone Mapping
             href: Documents/VibrantVisuals/ColorGradingToneMappingCustomization.md
+          - name: Cubemaps
+            href: Documents/VibrantVisuals/CubemapCustomization.md
           - name: Subsurface Scattering
             href: Documents/VibrantVisuals/SubSurfaceScatteringCustomization.md
           - name: Shadows

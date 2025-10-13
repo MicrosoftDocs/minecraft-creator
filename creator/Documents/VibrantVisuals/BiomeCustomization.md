@@ -18,6 +18,7 @@ Vibrant Visuals Resource packs support a variety of JSON files that allow Creato
 
 - [Atmospherics](AtmosphericsCustomization.md)
 - [Color Grading](ColorGradingToneMappingCustomization.md)
+- [Cubemaps](CubemapCustomization.md)
 - [Lighting](LightingCustomization.md)
 - [Water](WaterCustomization.md)
 
@@ -41,6 +42,7 @@ The following settings will smoothly transition as the player's camera moves thr
 
 - [Atmospherics](AtmosphericsCustomization.md)
 - [Color Grading](ColorGradingToneMappingCustomization.md)
+- [Cubemaps](CubemapCustomization.md)
 - [Lighting](LightingCustomization.md)
 
 For instance, imagine a player is located in a Plains biome configured with a yellow sun and blue sky. Next to this biome is a Forest biome, which is configured with a less intense sun, a blue-gray sky and a bit more saturation. As the player approaches the Forest biome, their lighting, atmospherics and color grading settings will interpolate between the Plains biome settings and the forest biome settings. So the sun will become slightly more dim, the color of the sky will slowly adjust and the overall scene will gradually saturate. Once the player has fully transitioned past the biome boundary and into the Forest, then they will see only the Forest biome settings. If the player were to reverse course, the visuals would smoothly return to those of the Plains configuration. If the player were to stop midway between the two biomes, the visuals would hold at the halfway interpolated point for all settings in question.
