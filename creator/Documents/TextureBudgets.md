@@ -12,7 +12,7 @@ ms.date: 09/26/2025
 
 Texture budgets are enforced for all content types to ensure consistent performance across platforms.
 
-| Memory Performance Tier | Add-On | Texture Pack | World |
+| Memory Performance Tier | Add-On | Resource Pack | World |
 |:--|:--|:--|:--|
 |1|150 MB|300 MB|750 MB|
 |2|225 MB|450 MB|1 GB|
@@ -23,7 +23,7 @@ Texture budgets are enforced for all content types to ensure consistent performa
 Use subpacks to scale content across platform tiers. Submissions that leverage Vibrant Visuals Enhanced must meet Tier 2 budgets to pass.
 
 > [!TIP]
-> Consider reducing texture resolution or limiting MERS adoption for lower tiers to stay within the texture budget.
+> Consider reducing texture resolution or limiting [vibrant visuals MERS texture usage](.//VibrantVisuals/VVResourcePacks.md) for lower tiers to stay within the texture budget.
 
 ## FAQ
 
@@ -34,10 +34,6 @@ Use subpacks to scale content across platform tiers. Submissions that leverage V
 - ### Can I review my content against texture budgets before submitting?
 
     Yes! Check out our [Creator Tools (mctools.dev) Overview](../Documents/MCToolsOverview.md) to learn more about how to run MCTools locally.
-
-- ### What happens if Enhanced pack exceeds Tier 1?
-
-    A submission failure will only occur if the Tier 2 budget is not met. Exceeding Tier 1 will result in an automatic greylist at that tier.
 
 - ### If my pack supports multiple Subpacks, which will players get?
 
