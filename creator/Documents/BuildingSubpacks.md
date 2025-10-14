@@ -10,12 +10,11 @@ ms.date: 08/19/2025
 
 # Building Sub-Packs
 
-One of the most wonderful aspects of being a Minecraft creator (and also, one of the most frustrating) is that no two players are the same: some are younger, some are older; some are on top-of-the-line gaming PCs, some are on muted mobile devices; the list goes on. 
+One of the most wonderful aspects of being a Minecraft creator (and also, one of the most frustrating) is that no two players are the same: some are younger, some are older; some are on top-of-the-line gaming PCs, some are on muted mobile devices; the list goes on.
 
 With such a vast range of factors to account for, how do you ensure that all of your players are having an amazing experience? That's where sub-packs come in!
 
 Sub-packs let players choose between different variations of a resource pack and switch between them at any time&mdash;there's no need to create separate packs! Creators can use sub-packs to offer multiple levels of fidelity, different content for different user types, and more. As with most features in Minecraft, the only limitation is what you can imagine.
-
 
 ## Creating a sub-pack
 
@@ -33,7 +32,6 @@ Sub-packs let players choose between different variations of a resource pack and
     > [!NOTE]
     > Files added to sub-packs will override the files in the main resource pack.
 
-
 ## Adding sub-packs to manifest.json
 
 Once you've created your sub-pack folders, it's time to edit the manifest.json file so the game knows that the files exist and pulls them in correctly. Use these components to create your own custom subpack, or copy and paste the example below into your manifest.json file.
@@ -45,7 +43,7 @@ Once you've created your sub-pack folders, it's time to edit the manifest.json f
 |**memory_tier**| Designates the minimum amount of RAM required to run the sub-pack (each tier represents 250 MB). In a future release, this component will be completely replaced by memory_performance_tier|
 |**memory_performance_tier**| Denotes the optimal platform for a subpack (values range 1&ndash;5). This component is still in experimental and requires manifest V3 to use|
 |**type**| Lets you enter a description of your pack and sub-packs|
-|**text**| The description players see when choosing your sub-pack
+|**text**| The description players see when choosing your sub-pack|
 
 > [!Note]
 > The `name` and `text` fields can't be translated and additional `type` and `text` combinations must be used for additional paragraphs.
@@ -101,10 +99,10 @@ Once you've created your sub-pack folders, it's time to edit the manifest.json f
       ]
     }
 ```
+
 Now that our manifest is complete, here is our example sub-pack in action!
 
 ![Animation of sub-pack selection](Media/UtilizingSubpacks/Subpackgif.gif)
-
 
 ## Subpack selection
 
@@ -125,7 +123,6 @@ By default, the system scans the list of subpacks in your manifest file for the 
 > [!Note]
 > In the case of a tie, the system selects the last subpack listed of that tier. We recommend you avoid including multiple subpacks of the same tier in a single manifest file to avoid those confusing conflicts.
 
-
 ## What's Next?
 
-Now that you know how sub-packs work, experiment with using them in different ways! Whatever you choose to create, sub-packs are a great tool for making sure you deliver an enjoyable experience for all users. Remove spiders from a spooky pack to help players with arachnophobia, let players choose the music they want to hear while they play your pack, or which biome they start in. Your worlds are your oysters! 
+Now that you know how sub-packs work, experiment with using them in different ways! Whatever you choose to create, sub-packs are a great tool for making sure you deliver an enjoyable experience for all users. Remove spiders from a spooky pack to help players with arachnophobia, let players choose the music they want to hear while they play your pack, or which biome they start in. Your worlds are your oysters!
