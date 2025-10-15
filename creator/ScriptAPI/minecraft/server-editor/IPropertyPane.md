@@ -44,6 +44,7 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 - [addDropdown](#adddropdown)
 - [addImage](#addimage)
 - [addLink](#addlink)
+- [addListPane](#addlistpane)
 - [addMenu](#addmenu)
 - [addNumber](#addnumber)
 - [addNumberTimeline](#addnumbertimeline)
@@ -225,6 +226,18 @@ Adds a Link item to the pane.
 - **options**?: *ILinkPropertyItemOptions*
 
 **Returns** *ILinkPropertyItem*
+
+### **addListPane**
+`
+addListPane(options: IListPanePropertyItemOptions): IListPanePropertyItem
+`
+
+Adds a pane for displaying list of items in a predefined layout.
+
+#### **Parameters**
+- **options**: *IListPanePropertyItemOptions*
+
+**Returns** *IListPanePropertyItem*
 
 ### **addMenu**
 `

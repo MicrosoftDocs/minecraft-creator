@@ -60,8 +60,10 @@ Rabbit
 Bat
 - `minecraft:iron_golem`
 Iron Golem
+- `minecraft:nautilus`
 - `minecraft:snow_golem`
 Snow Golem
+- `minecraft:zombie_nautilus`
 - `minecraft:ocelot`
 Ocelot
 - `minecraft:horse`
@@ -96,8 +98,6 @@ Cod
 Zombie Villager
 - `minecraft:pufferfish`
 Pufferfish
-- `minecraft:witch`
-Witch
 - `minecraft:salmon`
 Salmon
 - `minecraft:donkey`
@@ -110,8 +110,6 @@ Skeleton Horse
 Zombie Horse
 - `minecraft:zombie`
 Zombie
-- `minecraft:stray`
-Stray
 - `minecraft:drowned`
 Drowned
 - `minecraft:creeper`
@@ -136,6 +134,10 @@ Magma Cube
 Blaze
 - `minecraft:warden`
 Warden
+- `minecraft:witch`
+Witch
+- `minecraft:stray`
+Stray
 - `minecraft:husk`
 Husk
 - `minecraft:wither_skeleton`
@@ -259,8 +261,10 @@ Rabbit
 Bat
 - `iron_golem`
 Iron Golem
+- `nautilus`
 - `snow_golem`
 Snow Golem
+- `zombie_nautilus`
 - `ocelot`
 Ocelot
 - `horse`
@@ -295,8 +299,6 @@ Cod
 Zombie Villager
 - `pufferfish`
 Pufferfish
-- `witch`
-Witch
 - `salmon`
 Salmon
 - `donkey`
@@ -309,8 +311,6 @@ Skeleton Horse
 Zombie Horse
 - `zombie`
 Zombie
-- `stray`
-Stray
 - `drowned`
 Drowned
 - `creeper`
@@ -335,6 +335,10 @@ Magma Cube
 Blaze
 - `warden`
 Warden
+- `witch`
+Witch
+- `stray`
+Stray
 - `husk`
 Husk
 - `wither_skeleton`

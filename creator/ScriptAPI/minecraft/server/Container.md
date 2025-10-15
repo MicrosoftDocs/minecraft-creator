@@ -13,17 +13,12 @@ Represents a container that can hold sets of items. Used with entities such as P
 
 ## Properties
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **containerRules**
 `read-only containerRules?: ContainerRules;`
 
 If these rules are defined other container operations will throw if they cause these rules to be invalidated. For example, adding a shulker box to a vanilla bundle.
 
 Type: [*ContainerRules*](ContainerRules.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **emptySlotsCount**
 `read-only emptySlotsCount: number;`
@@ -54,7 +49,6 @@ Notes:
   - This property can throw errors when used.
     - Throws if the container is invalid.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **weight**
 `read-only weight: number;`
 
@@ -62,13 +56,9 @@ The combined weight of all items in the container.
 
 Type: *number*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can throw errors when used.
     - Throws [*InvalidContainerError*](InvalidContainerError.md)
-::: moniker-end
 
 ## Methods
 - [addItem](#additem)

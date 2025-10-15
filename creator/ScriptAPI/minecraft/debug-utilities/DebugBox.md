@@ -28,10 +28,10 @@ Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.
 
 ### **constructor**
 `
-new DebugBox(location: minecraftserver.Vector3)
+new DebugBox(location: minecraftserver.DimensionLocation | minecraftserver.Vector3)
 `
 
 #### **Parameters**
-- **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+- **location**: [*@minecraft/server.DimensionLocation*](../../../scriptapi/minecraft/server/DimensionLocation.md) | [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 **Returns** [*DebugBox*](DebugBox.md)

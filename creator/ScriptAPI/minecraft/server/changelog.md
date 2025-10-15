@@ -10,7 +10,8 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.4.0-beta](#240-beta)
+- [2.5.0-beta](#250-beta)
+- [2.3.0](#230)
 - [2.2.0](#220)
 - [2.1.0](#210)
 - [2.0.0](#200)
@@ -35,20 +36,17 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.4.0-beta
+## 2.5.0-beta
 #### Added *[`AimAssistCategory`](AimAssistCategory.md)*
 #### Added *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 #### Added *[`AimAssistPreset`](AimAssistPreset.md)*
 #### Added *[`AimAssistPresetSettings`](AimAssistPresetSettings.md)*
 #### Added *[`AimAssistRegistry`](AimAssistRegistry.md)*
-#### Added *[`BiomeType`](BiomeType.md)*
 #### Added *[`BiomeTypes`](BiomeTypes.md)*
 #### Changed *[`Block`](Block.md)*
 - Added property *[`isSolid`](Block.md#issolid)*
 - Added function *[`canPlace`](Block.md#canplace)*
-- Added function *[`getLightLevel`](Block.md#getlightlevel)*
 - Added function *[`getMapColor`](Block.md#getmapcolor)*
-- Added function *[`getSkyLightLevel`](Block.md#getskylightlevel)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
 #### Added *[`BlockComponentBlockBreakEvent`](BlockComponentBlockBreakEvent.md)*
@@ -67,20 +65,11 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`ChatSendBeforeEvent`](ChatSendBeforeEvent.md)*
 #### Added *[`ChatSendBeforeEventSignal`](ChatSendBeforeEventSignal.md)*
 #### Added *[`CompoundBlockVolume`](CompoundBlockVolume.md)*
-#### Changed *[`Container`](Container.md)*
-- Added property *[`containerRules`](Container.md#containerrules)*
-- Added property *[`weight`](Container.md#weight)*
-#### Changed *[`ContainerSlot`](ContainerSlot.md)*
-- Added function *[`setDynamicProperties`](ContainerSlot.md#setdynamicproperties)*
 #### Added *[`DamagedByEntityCondition`](DamagedByEntityCondition.md)*
 #### Changed *[`Dimension`](Dimension.md)*
 - Added function *[`findClosestBiome`](Dimension.md#findclosestbiome)*
-- Added function *[`getBiome`](Dimension.md#getbiome)*
 - Added function *[`getGeneratedStructures`](Dimension.md#getgeneratedstructures)*
-- Added function *[`getLightLevel`](Dimension.md#getlightlevel)*
-- Added function *[`getSkyLightLevel`](Dimension.md#getskylightlevel)*
 - Added function *[`getWeather`](Dimension.md#getweather)*
-- Added function *[`isChunkLoaded`](Dimension.md#ischunkloaded)*
 - Changed function *[`spawnEntity`](Dimension.md#spawnentity)*
   - Changed return type from [*Entity*](Entity.md) (throws exceptions) to *Entity* (throws exceptions)
   - Changed argument `identifier` type from [*EntityType*](EntityType.md) | *string* to *EntityIdentifierType<NoInfer<T>>*
@@ -98,7 +87,6 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`getAABB`](Entity.md#getaabb)*
 - Added function *[`getAllBlocksStandingOn`](Entity.md#getallblocksstandingon)*
 - Added function *[`getBlockStandingOn`](Entity.md#getblockstandingon)*
-- Added function *[`setDynamicProperties`](Entity.md#setdynamicproperties)*
 #### Changed *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
 - Added property *[`airSupply`](EntityBreathableComponent.md#airsupply)*
 - Added property *[`canBreathe`](EntityBreathableComponent.md#canbreathe)*
@@ -118,11 +106,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`IsBabyCondition`](IsBabyCondition.md)*
 #### Changed *[`ItemDurabilityComponent`](ItemDurabilityComponent.md)*
 - Added property *[`unbreakable`](ItemDurabilityComponent.md#unbreakable)*
-#### Added *[`ItemInventoryComponent`](ItemInventoryComponent.md)*
 #### Added *[`ItemPotionComponent`](ItemPotionComponent.md)*
-#### Changed *[`ItemStack`](ItemStack.md)*
-- Added property *[`weight`](ItemStack.md#weight)*
-- Added function *[`setDynamicProperties`](ItemStack.md#setdynamicproperties)*
 #### Added *[`KilledByEntityCondition`](KilledByEntityCondition.md)*
 #### Added *[`KilledByPlayerCondition`](KilledByPlayerCondition.md)*
 #### Added *[`KilledByPlayerOrPetsCondition`](KilledByPlayerOrPetsCondition.md)*
@@ -196,7 +180,6 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
 - Added function *[`getAimAssist`](World.md#getaimassist)*
 - Added function *[`getPackSettings`](World.md#getpacksettings)*
-- Added function *[`setDynamicProperties`](World.md#setdynamicproperties)*
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
@@ -209,7 +192,6 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`AimAssistTargetMode`](AimAssistTargetMode.md)
 #### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
 #### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
-#### Added enum [`ContainerRulesErrorReason`](ContainerRulesErrorReason.md)
 #### Added enum [`ControlScheme`](ControlScheme.md)
 #### Changed enum [`CustomCommandErrorReason`](CustomCommandErrorReason.md)
 - Added value `UnexpectedEnumName`
@@ -221,10 +203,35 @@ description: Changelog of the `@minecraft/server` module
 - Added value `LocatorBar`
 #### Added enum [`HeldItemOption`](HeldItemOption.md)
 #### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
-- Added value `Inventory`
 - Added value `Potion`
 #### Added enum [`LiquidSettings`](LiquidSettings.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
+## 2.3.0
+#### Added *[`BiomeType`](BiomeType.md)*
+#### Changed *[`Block`](Block.md)*
+- Added function *[`getLightLevel`](Block.md#getlightlevel)*
+- Added function *[`getSkyLightLevel`](Block.md#getskylightlevel)*
+#### Changed *[`Container`](Container.md)*
+- Added property *[`containerRules`](Container.md#containerrules)*
+- Added property *[`weight`](Container.md#weight)*
+#### Changed *[`ContainerSlot`](ContainerSlot.md)*
+- Added function *[`setDynamicProperties`](ContainerSlot.md#setdynamicproperties)*
+#### Changed *[`Dimension`](Dimension.md)*
+- Added function *[`getBiome`](Dimension.md#getbiome)*
+- Added function *[`getLightLevel`](Dimension.md#getlightlevel)*
+- Added function *[`getSkyLightLevel`](Dimension.md#getskylightlevel)*
+- Added function *[`isChunkLoaded`](Dimension.md#ischunkloaded)*
+#### Changed *[`Entity`](Entity.md)*
+- Added function *[`setDynamicProperties`](Entity.md#setdynamicproperties)*
+#### Added *[`ItemInventoryComponent`](ItemInventoryComponent.md)*
+#### Changed *[`ItemStack`](ItemStack.md)*
+- Added property *[`weight`](ItemStack.md#weight)*
+- Added function *[`setDynamicProperties`](ItemStack.md#setdynamicproperties)*
+#### Changed *[`World`](World.md)*
+- Added function *[`setDynamicProperties`](World.md#setdynamicproperties)*
+#### Added enum [`ContainerRulesErrorReason`](ContainerRulesErrorReason.md)
+#### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
+- Added value `Inventory`
 ## 2.2.0
 #### Changed *[`Camera`](Camera.md)*
 - Added function *[`setFov`](Camera.md#setfov)*

@@ -96,17 +96,12 @@ Identifier of the type of items for the stack. If a namespace is not specified, 
 
 Type: *string*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **weight**
 `read-only weight: number;`
 
 The total weight of all items in the stack plus the weight of all items in the items container which is defined with the `Storage Item` component. The weight per item can be modified by the `Storage Weight Modifier` component.
 
 Type: *number*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ## Methods
 - [constructor](#constructor)
@@ -128,9 +123,7 @@ Type: *number*
 - [matches](#matches)
 - [setCanDestroy](#setcandestroy)
 - [setCanPlaceOn](#setcanplaceon)
-::: moniker range="=minecraft-bedrock-experimental"
 - [setDynamicProperties](#setdynamicproperties)
-::: moniker-end
 - [setDynamicProperty](#setdynamicproperty)
 - [setLore](#setlore)
 
@@ -454,7 +447,6 @@ function givePlaceRestrictedGoldBlock(
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/givePlaceRestrictedGoldBlock.ts) code sandbox.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **setDynamicProperties**
 `
 setDynamicProperties(values: Record<string, boolean | number | string | Vector3 | undefined>): void
@@ -466,14 +458,10 @@ Sets multiple dynamic properties with specific values.
 - **values**: Record<*string*, *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined*>
   
   A Record of key value pairs of the dynamic properties to set. If the data value is null, it will remove that property instead.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
-::: moniker-end
 
 ### **setDynamicProperty**
 `

@@ -108,6 +108,8 @@ Entity sleeps
 Entity is an adult 
 - `minecraft:as_baby`
 Entity is a baby
+- `minecraft:as_ranged_adult`
+- `minecraft:as_rider`
 - `minecraft:ate_allium`
 Entity responds to eating an allium flower
 - `minecraft:ate_bluet`
@@ -386,6 +388,9 @@ Entity is calmed
 Entity is on a chest
 - `minecraft:on_deflate`
 Entity deflates
+- `minecraft:on_dismount`
+- `minecraft:on_drowned_dismount`
+- `minecraft:on_drowned_mount`
 - `minecraft:on_eat_block`
 Entity eats a block
 - `minecraft:on_full_puff`
@@ -399,18 +404,23 @@ Entity is hurt
 Entity is instantly primed
 - `minecraft:on_leash`
 Entity is on a leash
+- `minecraft:on_mount`
 - `minecraft:on_normal_puff`
 Entity is on a normal puff
 - `minecraft:on_not_riding_player`
 Entity is on a non-riding player
 - `minecraft:on_passenger_dismount`
 - `minecraft:on_passenger_mount`
+- `minecraft:on_player_dismount`
+- `minecraft:on_player_mount`
 - `minecraft:on_prime`
 Entity is primed
 - `minecraft:on_riding_player`
 Entity is on a riding player
 - `minecraft:on_saddled`
 Entity is saddled
+- `minecraft:on_saddled_in_water`
+- `minecraft:on_saddled_out_of_water`
 - `minecraft:on_scared`
 Entity is scared
 - `minecraft:on_sheared`
@@ -489,12 +499,14 @@ Entity sets a trap
 Entity sinks
 - `minecraft:spawn_adult`
 Entity spawns as an adult
+- `minecraft:spawn_adult_with_rider`
 - `minecraft:spawn_armorer`
 Entity spawns as an armorer
 - `minecraft:spawn_as_illager_captain`
 Entity spawns as an illager captain
 - `minecraft:spawn_as_patrol_follower`
 Entity spawns as a patrol follower
+- `minecraft:spawn_as_rider`
 - `minecraft:spawn_as_strider_jockey`
 Entity spawns as a strider jockey
 - `minecraft:spawn_baby`
@@ -552,6 +564,7 @@ Entity spawns with a vindicator rider
 Entity springs a trap
 - `minecraft:start_celebrating`
 Entity starts celebrating
+- `minecraft:start_charge`
 - `minecraft:start_death`
 Entity starts dying
 - `minecraft:start_despawn`
@@ -584,6 +597,7 @@ Entity starts transforming
 Entity stops being aggravated
 - `minecraft:stop_celebrating`
 Entity stops celebrating
+- `minecraft:stop_charge`
 - `minecraft:stop_exploding`
 Entity stops exploding
 - `minecraft:stop_johnny`

@@ -27,6 +27,13 @@ The color of the shape.
 
 Type: [*@minecraft/server.RGB*](../../../scriptapi/minecraft/server/RGB.md)
 
+### **dimension**
+`read-only dimension: minecraftserver.Dimension;`
+
+The dimension the shape is visible within. If the dimension is undefined, it will display in all dimensions.
+
+Type: [*@minecraft/server.Dimension*](../../../scriptapi/minecraft/server/Dimension.md)
+
 ### **hasDuration**
 `read-only hasDuration: boolean;`
 
@@ -35,9 +42,9 @@ Returns true if the shape has a limited time span before being removed.
 Type: *boolean*
 
 ### **location**
-`location: minecraftserver.Vector3;`
+`read-only location: minecraftserver.Vector3;`
 
-The location of the shape. For most shapes this is the centre of the shape, except DebugLine and DebugArrow where this represents the start point of the line.
+The location of the shape. For most shapes the location is the centre of the shape, except DebugLine and DebugArrow where this represents the start point of the line.
 
 Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
@@ -71,6 +78,7 @@ Type: *number*
 
 ## Methods
 - [remove](#remove)
+- [setLocation](#setlocation)
 
 ### **remove**
 `
@@ -78,3 +86,13 @@ remove(): void
 `
 
 Removes this shape from the world. The shape can be re-added via the DebugDrawer's addShape method.
+
+### **setLocation**
+`
+setLocation(location: minecraftserver.DimensionLocation | minecraftserver.Vector3): void
+`
+
+Set the location and dimension of the shape. If the dimension is undefined, it will display in all dimensions. For most shapes the location is the centre of the shape, except DebugLine and DebugArrow where this represents the start point of the line.
+
+#### **Parameters**
+- **location**: [*@minecraft/server.DimensionLocation*](../../../scriptapi/minecraft/server/DimensionLocation.md) | [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)

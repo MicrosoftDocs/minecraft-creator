@@ -17,13 +17,14 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "2.2.0"
+    "version": "2.3.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.21.120-beta.24 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.21.130-beta.20 of Minecraft.
 
 ## Available Versions
-- `2.4.0-beta`
+- `2.5.0-beta`
+- `2.3.0`
 - `2.2.0`
 - `2.1.0`
 - `2.0.0`

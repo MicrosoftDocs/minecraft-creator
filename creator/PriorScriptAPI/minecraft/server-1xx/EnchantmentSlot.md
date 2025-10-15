@@ -39,6 +39,8 @@ description: Contents of the @minecraft/server.EnchantmentSlot enumeration (Vers
 `Flintsteel = "Flintsteel"`
 ### **Hoe**
 `Hoe = "Hoe"`
+### **MeleeSpear**
+`MeleeSpear = "MeleeSpear"`
 ### **Pickaxe**
 `Pickaxe = "Pickaxe"`
 ### **Shears**

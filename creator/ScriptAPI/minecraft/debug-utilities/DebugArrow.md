@@ -42,11 +42,11 @@ Type: *number*
 
 ### **constructor**
 `
-new DebugArrow(location: minecraftserver.Vector3, endLocation: minecraftserver.Vector3)
+new DebugArrow(location: minecraftserver.DimensionLocation | minecraftserver.Vector3, endLocation: minecraftserver.Vector3)
 `
 
 #### **Parameters**
-- **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+- **location**: [*@minecraft/server.DimensionLocation*](../../../scriptapi/minecraft/server/DimensionLocation.md) | [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **endLocation**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 **Returns** [*DebugArrow*](DebugArrow.md)

@@ -16,7 +16,6 @@ Error thrown if [*@minecraft/server.ContainerRules*](../../../scriptapi/minecraf
 
 ## Properties
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **reason**
 `read-only reason: ContainerRulesErrorReason;`
 
@@ -24,9 +23,5 @@ The specific reason the error was thrown.
 
 Type: [*ContainerRulesErrorReason*](ContainerRulesErrorReason.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end

@@ -38,6 +38,12 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 
 #### Values
 - `*`
+- `minecraft:copper_spear`
+- `minecraft:diamond_spear`
+- `minecraft:golden_spear`
+- `minecraft:iron_spear`
+- `minecraft:stone_spear`
+- `minecraft:wooden_spear`
 - `minecraft:acacia_shelf_from_stripped_acacia_log`
 - `minecraft:bamboo_shelf_from_stripped_bamboo_block`
 - `minecraft:birch_shelf_from_stripped_birch_log`
