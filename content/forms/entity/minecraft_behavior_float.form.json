@@ -438,6 +438,14 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.float/",
+          "content": {
+            "priority": 0
+          }
+        }
+      ],
       "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.float/",

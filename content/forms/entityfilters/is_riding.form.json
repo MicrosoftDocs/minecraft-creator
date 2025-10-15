@@ -178,13 +178,13 @@
         "title": "Test",
         "dataType": 2,
         "samples": {
-          "/vanilla/behavior_pack/entities/enderman.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:riding/minecraft:environment_sensor/triggers/filters/",
+              "path": "/minecraft:entity/events/minecraft:has_target/filters/",
               "content": "is_riding"
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:not_riding/minecraft:environment_sensor/triggers/filters/",
+              "path": "/minecraft:entity/events/minecraft:lost_target/filters/",
               "content": "is_riding"
             }
           ]
@@ -200,6 +200,22 @@
         {
           "path": "Short (using Defaults)..",
           "content": "{ \"test\": \"is_riding\" }"
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:has_target/filters/",
+          "content": {
+            "test": "is_riding",
+            "value": false
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:lost_target/filters/",
+          "content": {
+            "test": "is_riding",
+            "value": false
+          }
         }
       ],
       "/vanilla/behavior_pack/entities/enderman.json": [

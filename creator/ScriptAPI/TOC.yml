@@ -1200,6 +1200,10 @@
       href: minecraft/server-editor/LayoutAlignment.md
     - name: LayoutDirection
       href: minecraft/server-editor/LayoutDirection.md
+    - name: ListPaneEntryType
+      href: minecraft/server-editor/ListPaneEntryType.md
+    - name: ListPaneViewSortType
+      href: minecraft/server-editor/ListPaneViewSortType.md
     - name: LogChannel
       href: minecraft/server-editor/LogChannel.md
     - name: MouseActionCategory
@@ -1524,6 +1528,24 @@
       href: minecraft/server-editor/ILinkPropertyItem.md
     - name: ILinkPropertyItemOptions
       href: minecraft/server-editor/ILinkPropertyItemOptions.md
+    - name: IListPaneBoolEntry
+      href: minecraft/server-editor/IListPaneBoolEntry.md
+    - name: IListPaneButtonEntry
+      href: minecraft/server-editor/IListPaneButtonEntry.md
+    - name: IListPaneEntry
+      href: minecraft/server-editor/IListPaneEntry.md
+    - name: IListPaneImageEntry
+      href: minecraft/server-editor/IListPaneImageEntry.md
+    - name: IListPanePropertyItem
+      href: minecraft/server-editor/IListPanePropertyItem.md
+    - name: IListPanePropertyItemOptions
+      href: minecraft/server-editor/IListPanePropertyItemOptions.md
+    - name: IListPaneSlot
+      href: minecraft/server-editor/IListPaneSlot.md
+    - name: IListPaneSlotOptions
+      href: minecraft/server-editor/IListPaneSlotOptions.md
+    - name: IListPaneTextEntry
+      href: minecraft/server-editor/IListPaneTextEntry.md
     - name: IMenu
       href: minecraft/server-editor/IMenu.md
     - name: IMenuContainer
@@ -1682,6 +1704,28 @@
       href: minecraft/server-editor/KeyBinding.md
     - name: KeyBindingInfo
       href: minecraft/server-editor/KeyBindingInfo.md
+    - name: LayoutSize
+      href: minecraft/server-editor/LayoutSize.md
+    - name: ListPaneBoolEntryParams
+      href: minecraft/server-editor/ListPaneBoolEntryParams.md
+    - name: ListPaneButtonEntryParams
+      href: minecraft/server-editor/ListPaneButtonEntryParams.md
+    - name: ListPaneEntryMap
+      href: minecraft/server-editor/ListPaneEntryMap.md
+    - name: ListPaneEntryParams
+      href: minecraft/server-editor/ListPaneEntryParams.md
+    - name: ListPaneImageEntryParams
+      href: minecraft/server-editor/ListPaneImageEntryParams.md
+    - name: ListPaneSlotCreationProps
+      href: minecraft/server-editor/ListPaneSlotCreationProps.md
+    - name: ListPaneSlotLayout
+      href: minecraft/server-editor/ListPaneSlotLayout.md
+    - name: ListPaneSlotLayoutEntry
+      href: minecraft/server-editor/ListPaneSlotLayoutEntry.md
+    - name: ListPaneTextEntryParams
+      href: minecraft/server-editor/ListPaneTextEntryParams.md
+    - name: ListPaneViewFilter
+      href: minecraft/server-editor/ListPaneViewFilter.md
     - name: LocalizedString
       href: minecraft/server-editor/LocalizedString.md
     - name: ModalToolLifecycleEventPayload

@@ -97,6 +97,18 @@ At /minecraft:entity/components/minecraft:behavior.nearest_attackable_target/ent
 }
 ```
 
+#### [Nautilus](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/nautilus.json)
+
+At /minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:environment_sensor/triggers/0/filters/: 
+
+```json
+{
+  "test": "in_water",
+  "operator": "==",
+  "value": false
+}
+```
+
 #### [Pillager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pillager.json)
 
 

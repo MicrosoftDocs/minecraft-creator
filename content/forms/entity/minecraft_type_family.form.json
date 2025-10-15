@@ -517,6 +517,16 @@
               ]
             }
           ],
+          "/vanilla/behavior_pack/entities/nautilus.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:type_family/",
+              "content": [
+                "aquatic",
+                "nautilus",
+                "mob"
+              ]
+            }
+          ],
           "/vanilla/behavior_pack/entities/npc.json": [
             {
               "path": "/minecraft:entity/components/minecraft:type_family/",
@@ -961,22 +971,22 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/zombie.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:type_family/",
-              "content": [
-                "zombie",
-                "undead",
-                "monster",
-                "mob"
-              ]
-            }
-          ],
           "/vanilla/behavior_pack/entities/zombie_horse.json": [
             {
               "path": "/minecraft:entity/components/minecraft:type_family/",
               "content": [
                 "zombiehorse",
+                "undead",
+                "mob"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:type_family/",
+              "content": [
+                "aquatic",
+                "zombienautilus",
                 "undead",
                 "mob"
               ]
@@ -2044,6 +2054,18 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:type_family/",
+          "content": {
+            "family": [
+              "aquatic",
+              "nautilus",
+              "mob"
+            ]
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/npc.json": [
         {
           "path": "/minecraft:entity/components/minecraft:type_family/",
@@ -2589,25 +2611,25 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:type_family/",
-          "content": {
-            "family": [
-              "zombie",
-              "undead",
-              "monster",
-              "mob"
-            ]
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/zombie_horse.json": [
         {
           "path": "/minecraft:entity/components/minecraft:type_family/",
           "content": {
             "family": [
               "zombiehorse",
+              "undead",
+              "mob"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:type_family/",
+          "content": {
+            "family": [
+              "aquatic",
+              "zombienautilus",
               "undead",
               "mob"
             ]

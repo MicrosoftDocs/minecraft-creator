@@ -50,6 +50,8 @@
   href: minecraftBlock_replaceable.md
 - name: minecraft:selection_box
   href: minecraftBlock_selection_box.md
+- name: minecraft:support
+  href: minecraftBlock_support.md
 - name: minecraft:tick
   href: minecraftBlock_tick.md
 - name: minecraft:transformation

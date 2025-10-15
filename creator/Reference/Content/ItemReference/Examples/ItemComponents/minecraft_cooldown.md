@@ -16,8 +16,9 @@ The duration of time (in seconds) items with a matching category will spend cool
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| category | *not set* | String | All items with the same "category" are put on cooldown when one is used. | Wind Charge: `"wind_charge"` | 
-| duration | *not set* | Decimal number | How long the item is on cooldown before being able to be used again. | Wind Charge: `0.5` | 
+| category | *not set* | String | All items sharing the same "category" are put on cooldown when an action of the specified "type" is performed. | Wind Charge: `"wind_charge"` | 
+| duration | *not set* | Decimal number | Duration of the cooldown, in seconds, before the item can perform an action of the specified "type" again. | Wind Charge: `0.5` | 
+| type | *not set* | String | The type of action the cooldown applies to. Options are mutually exclusive, so cooldown for one type of action does not affect the others. Values: "use" (when using an item), "attack" (when attack with an item). Default value: use. |  | 
 
 ## Samples
 

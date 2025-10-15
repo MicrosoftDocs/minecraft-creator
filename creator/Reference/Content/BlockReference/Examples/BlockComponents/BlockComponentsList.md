@@ -36,6 +36,7 @@ ms.date: 02/11/2025
 | [minecraft:redstone_conductivity](./minecraftBlock_redstone_conductivity.md)| The basic redstone properties of a block; if the component is not provided the default values are used. |
 | [minecraft:replaceable](./minecraftBlock_replaceable.md)| A block with this component can be replaced when another block is placed in the same block position.<br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.60) |
 | [minecraft:selection_box](./minecraftBlock_selection_box.md)| Defines the area of the block that is selected by the player's cursor. |
+| [minecraft:support](./minecraftBlock_support.md)| Defines the support shape of the block. |
 | [minecraft:tick](./minecraftBlock_tick.md)| Causes the block to tick based on a regular interval equal to a number of ticks randomly chosen from the internal_range parameter. |
 | [minecraft:transformation](./minecraftBlock_transformation.md)| The block's translation, rotation and scale with respect to the center of its world position |
 

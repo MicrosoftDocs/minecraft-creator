@@ -783,6 +783,25 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/",
+          "content": {
+            "damage_conditions": [
+              {
+                "filters": {
+                  "test": "in_lava",
+                  "subject": "self",
+                  "operator": "==",
+                  "value": true
+                },
+                "cause": "lava",
+                "damage_per_tick": 4
+              }
+            ]
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/ocelot.json": [
         {
           "path": "/minecraft:entity/components/minecraft:hurt_on_condition/",
@@ -883,10 +902,7 @@
             "damage_conditions": [
               {
                 "filters": {
-                  "test": "in_lava",
-                  "subject": "self",
-                  "operator": "==",
-                  "value": true
+                  "test": "in_lava"
                 },
                 "cause": "lava",
                 "damage_per_tick": 4
@@ -1090,10 +1106,7 @@
             "damage_conditions": [
               {
                 "filters": {
-                  "test": "in_lava",
-                  "subject": "self",
-                  "operator": "==",
-                  "value": true
+                  "test": "in_lava"
                 },
                 "cause": "lava",
                 "damage_per_tick": 4
@@ -1489,10 +1502,7 @@
             "damage_conditions": [
               {
                 "filters": {
-                  "test": "in_lava",
-                  "subject": "self",
-                  "operator": "==",
-                  "value": true
+                  "test": "in_lava"
                 },
                 "cause": "lava",
                 "damage_per_tick": 4
@@ -1502,6 +1512,22 @@
         }
       ],
       "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/",
+          "content": {
+            "damage_conditions": [
+              {
+                "filters": {
+                  "test": "in_lava"
+                },
+                "cause": "lava",
+                "damage_per_tick": 4
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
           "path": "/minecraft:entity/components/minecraft:hurt_on_condition/",
           "content": {

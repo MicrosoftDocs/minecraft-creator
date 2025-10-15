@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Jigsaw Processor List
 
-Processors are functions that run when placing a Structure Template in the world. Currently, the only supported processor is the Block Rules processor, which describes how individual blocks of Structure Templates should be modified when placed in the world. For example, you might want to randomly replace half of the Cobblestone blocks with Mossy Cobblestone. Or you might want to replace Gravel with Suspicious Gravel and add a loot table.
+Processors are functions that run when placing a Structure Template in the world. For example, you might want to randomly replace half of the Cobblestone blocks with Mossy Cobblestone. Or you might want to replace Gravel with Suspicious Gravel and add a loot table.
 
 A Processor List contains one or more Processors that are run in sequence on each block. Each Processor contains one or more Predicates with a given Filter. If all the filters pass, the placed block will be modified according to the Output State.
 
@@ -16,157 +16,400 @@ A Processor List contains one or more Processors that are run in sequence on eac
 > This feature is currently experimental, subject to change, and is only available when the **Data-driven Jigsaw Structures** experiment is enabled for a world.
 
 ## Properties
+|Name       |Default Value |Requirement Status |Type |Description |Example |
+|:----------|:-------------|:------------------|:----|:-----------|:------------- |
+| [description](#description) | *not set* | Required | JSON Object | Object containing the identifier of the Processor List. This MUST contain an identifier.  | `"description": { "identifier": "minecraft:trail_ruins_roads_archaeology" }` |
+| [processors](#processors) | *not set* | Required | List of JSON Objects | A list of processors that will be run when placing associated structures. Order of rules matter. | (go to section) |
 
-## Description
+### Description
 
-- `"identifier": "<string>"`: Identifier of the Processor List. This is referenced by Template Pools when pairing processors with Structure Templates.
+Identifier of the Processor List. This is referenced by Template Pools when pairing processors with Structure Templates.
+
+#### Description Properties
+
+|Name       |Default Value |Requirement Status |Type |Description |Example |
+|:----------|:-------------|:------------------|:----|:-----------|:------------- |
+| identifier | *not set* | Required | String | Identifier of the Jigsaw Processor list. |  `"identifier": "minecraft:trail_ruins_roads_archaeology"` | 
+
+```json
+"description": {
+  "identifier": "minecraft:trail_ruins_roads_archaeology"
+}
+```
 
 ## Processors
 
-- `"processors": [<Processor>, ...]`: A list of processors that will be run when placing associated structures.  Rules are run in order as defined in the list.
+A list of processors of [processor_type](#processor_type) that will be run when placing associated structures.  
 
-## Processor Types
+>[!NOTE]
+> Rules are run in order as defined in the list. See JSON example below for two JSON objects with different lists of rules.
 
-### Block Ignore (minecraft:block_ignore)
+```json
+"processors": [ 
+  { 
+    "processor_type": "minecraft:block_ignore", 
+    "blocks": ["<block_name>", ...]
+  },
+  { 
+    "processor_type": "minecraft:block_ignore", 
+    "value": "<block_tag>"
+  },
+  { 
+    "processor_type": "minecraft:capped",
+    "limit": <Int | IntProvider>,
+    "delegate": {
+      "processor_type": "minecraft:rule",
+      "rules": [...]
+    }
+  },
+  { 
+    "processor_type": "minecraft:rule", 
+    "rules": [<Rule>,...]
+  }
+]
+```
+
+## processor_type
+
+Different types of processors that can be run when placing associated structures. Click into each processor to see how they affect block placing differently.
+
+|Name       |Description |
+|:----------|:-----------|
+| [minecraft:block_ignore](#minecraftblock_ignore) | Removes specified blocks from the placed structure. |
+| [minecraft:protected_blocks](#minecraftprotected_blocks)  | Specifies which blocks in the world cannot be overridden by this structure. |
+| [minecraft:capped](#minecraftcapped)  | Applies a processor to some random blocks instead of applying it to all blocks, with a limit on the number of times it can be applied. |
+| [minecraft:rule](#minecraftrule) | A list of block rules that are applied per block. |
+
+### minecraft:block_ignore
 
 Removes specified blocks from the placed structure. The removed blocks are not replaced by air, but retain the blocks from the world.
 
-Fields:
+#### block_ignore Properties
+|Name       |Default Value |Requirement Status |Type |Description |Example Values |
+|:----------|:-------------|:------------------|:----|:-----------|:------------- |
+| [processor_type](#processor_type) | `"minecraft:block_ignore"` | Required | String | Identifier of [processor_type](#processor_type) | `"processor_type": "minecraft:block_ignore"` |
+| blocks | *not set* | Required | JSON Object | Blocks that, when found within the structure, will be filtered from the final output. | `"blocks": ["<block_name>", ...]` |
 
-- `"processor_type": "minecraft:block_ignore"`
-- `"blocks": ["<block_name>", ...]`
-  - Blocks that when found within the structure will be filtered from the final output.
+```json
+"processors": [ 
+  { 
+    "processor_type": "minecraft:block_ignore", 
+    "blocks": ["<block_name>", ...]
+  },
+]
+```
 
-### Protected Blocks (minecraft:protected_blocks)
+### minecraft:protected_blocks
 Specifies which blocks in the world cannot be overridden by this structure.
 
-- `"processor_type": "minecraft:protected_blocks"`
-- `"value": "<block_tag>"`
-  - Block tag for blocks already in the world that will be protected from replacement
+#### protected_blocks Properties
+|Name       |Default Value |Requirement Status |Type |Description |Example |
+|:----------|:-------------|:------------------|:----|:-----------|:------------- |
+| [processor_type](#processor_type) | `"minecraft:protected_blocks"` | Required | String | Identifier of [processor_type](#processor_type) | `"processor_type": "minecraft:protected_blocks"` |
+| value | *not set* | Required | String | Block tag for blocks already in the world that will be protected from replacement | `"value": "<block_tag>"` |
 
-### Capped (minecraft:capped)
+```json
+"processors": [ 
+  { 
+    "processor_type": "minecraft:block_ignore", 
+    "value": "<block_tag>"
+  },
+]
+```
+
+### minecraft:capped
 
 Applies a processor to some random blocks instead of applying it to all blocks, with a limit on the number of times it can be applied.
 
-- `"processor_type": "minecraft:capped"`
-- `"delegate": <Processor>`
-  - The processor to run (Can be any processor except a `minecraft:capped` processor)
-- `"limit": <Integer | IntProvider>`
+#### capped Properties
+|Name       |Default Value |Requirement Status |Type |Description |Example |
+|:----------|:-------------|:------------------|:----|:-----------|:------------- |
+| [processor_type](#processor_type) | `"minecraft:capped"` | Required | String | Identifier of [processor_type](#processor_type) | `"processor_type": "minecraft:capped"` |
+| limit | *not set* | Required | <Integer / [IntProvider](#intprovider)> | Number of blocks the processor can apply to. | `"limit": <Integer / IntProvider>` |
+| delegate | *not set* | Required | String | The processor to run (Can be any processor except a `minecraft:capped` processor) | `"delegate": <Processor>` |
 
-#### Int Provider
+```json
+"processors": [ 
+  { 
+    "processor_type": "minecraft:capped",
+    "limit": 2,
+    "delegate": {
+      "processor_type": "minecraft:rule",
+      "rules": [...]
+    }
+  },
+  { 
+    "processor_type": "minecraft:capped",
+    "limit": {
+      "type": "uniform",
+      "min_inclusive": <Int>,
+      "max_inclusive": <Int>
+    },
+    "delegate": {
+      "processor_type": "minecraft:rule",
+      "rules": [...]
+    }
+  }
+]
+```
 
-The IntProvider type provides dynamic integer values for the `Capped` processor type.
+### minecraft:rule
 
-- `"type": <type>`
-  - The type of the int provider. One of `constant` or `uniform`.
-
-If the type is `constant`
-
-- `"value": <Integer>`:
-  - Specifies the constant value to be returned.
-
-If the type is `uniform`, an integer is randomly selected between `min_inclusive` and `max_inclusive` based on a uniform distribution:
-
-- `"min_inclusive": <Integer>`
-  - The minimum possible value.
-
-- `"max_inclusive": <Integer>`
-  - The maximum possible value. (Must be greater than min_inclusive)
-
-### Block Rules (minecraft:rule)
-
-A list of rules that are applied per block. Only the first rule that all conditions are met takes effect.
+A list of block [rules](#rule) that will attempt to apply to the block. 
+>[!NOTE]
+> Only the first [rule](#rule) with all conditions met will take effect.
 
 Each block in the structure template is independently processed.
 
-- `"processor_type": "minecraft:rule"`
-- `"rules": [<Rule>,...]`
+#### rule Properties
+|Name       |Default Value |Requirement Status |Type |Description |Example|
+|:----------|:-------------|:------------------|:----|:-----------|:------------- |
+| [processor_type](#processor_type) | `"minecraft:rule"` | Required | String | Identifier of [processor_type](#processor_type) | `"processor_type": "minecraft:rule"` |
+| [rules](#rule) | *not set* | Required | JSON Object | A list of block [`"rules"`](#rule) that attempt to apply per block. | `"rules": [<Rule>,...]` |
 
-#### Rule
+```json
+"processors": [ 
+  { 
+    "processor_type": "minecraft:rule", 
+    "rules": [<Rule>,...]
+  },
+]
+```
 
-A rule is a set of conditions that determine if a block should be replaced or modified.
+## Rule
 
-- `"input_predicate": <BlockRule>`
-  - Optional
-  - Test to apply to the block that will be placed by the structure.
-- `"location_predicate": <BlockRule>`
-  - Optional
-  - Test to apply to the block in the world that will be overriden in the world.
-- `"position_predicate": <PositionRule>`
-  - Optional
-  - Test for block's positional relationship to the origin of the structure.
-- `"output_state": <BlockSpecifier>`
-  - The block that will be placed if the conditions are met.
-- `"block_entity_modifier": <BlockEntityModifier>`
-  - Optional
-  - Modifies the block's state if the conditions are met.
+A rule is a set of conditions that, if are all met, can replace or modify a block.
+The rule type determines how the block will be affected. See the table below for the different rule types.
 
-#### Block Rule
+### Types of Rule
+|Name       |Requirement Status |Type |Description |Example|
+|:----------|:------------------|:----|:-----------|:------------- |
+| input_predicate | Optional | [BlockRule](#blockrule) | A predicate evaluated on the Structure Template block, i.e test to apply to block that will be placed by the structure. | `"input_predicate": <BlockRule>` |
+| location_predicate | Optional | [BlockRule](#blockrule) | A predicate evaluated on the world block, i.e. test to apply to block in the world that will be overriden. | `"location_predicate": <BlockRule>` |
+| position_predicate | Optional | [PositionRule](#positionrule) | A predicate evaluated on the distance between the structure's world origin and the world block, i.e. test for block's positional relationship to the origin of the structure. | `"position_predicate": <PositionRule>` |
+| output_state | Required | [BlockSpecifier](#blockspecifier) | Block to replace the world block with if all predicates evaluate to true, i.e. the block that will be placed if the conditions are met. | `"output_state": <BlockSpecifier>` |
+| block_entity_modifier | Optional | [BlockEntityModifier](#blockentitymodifier) | A block state modifier for block entities when all predicate match, i.e. modifies the block's state if the conditions are met. | `"block_entity_modifier": <BlockEntityModifier>` |
 
-- `"predicate_type": <type>`
-  - The type of Block rule. One of the following `minecraft:always_true`, `minecraft:block_match`, `minecraft:random_block_match`, `minecraft:block_state_match`, `minecraft:random_block_state_match` and `minecraft:tag_match`
+```json
+{
+  "rules": [<Rule>,...]
+}
+```
 
-If the type is `minecraft:always_true` the test will be skipped and assumed true.
+### BlockRule
+A BlockRule is a predicate (i.e. test) applied to each block in the structure template. 
 
-If the type is `minecraft:block_match` the block will be matched based on it's name.
+The `"predicate_type"` of BlockRule specifies the type of test applied to each block. 
 
-- `"block": "<block_name>"`
+It can be one of the following: [minecraft:always_true](#minecraftalways_true), [minecraft:block_match](#minecraftblock_match), [minecraft:random_block_match](#minecraftrandom_block_match), [minecraft:block_state_match](#minecraftblock_state_match), [minecraft:random_block_state_match](#minecraftrandom_block_state_match) and [minecraft:tag_match](#minecrafttag_match).
 
-If the type is `minecraft:random_block_match` the block will be matched based on it's name
+See [rule](#rule) to understand where it's used.
 
-- `"block": "<block_name>"`
-- `"probability": <Number>`
-  - Must be between `[0, 1]` (Use `minecraft:block_match` if it should always be replaced if matched.)
+#### BlockRule Properties
+|Name       |Default Value |Requirement Status |Type |Description |Example |
+|:----------|:-------------|:------------------|:----|:-----------|:------------- |
+| predicate_type | `"minecraft:always_true"` | Required | String | The type of Block rule. | `"predicate_type": <type>` |
 
-If the type is `minecraft:block_state_match` the block will be matched based on it's block state specifier.
+### minecraft:always_true
+The test will be skipped and assumed true. Default predicate if none specified.
 
-- `"block_state": <BlockState>`
+```json
+{
+  "predicate_type": "minecraft:always_true"
+}
+```
 
-If the type is `minecraft:random_block_state_match` the block will be matched based on it's block state specifier.
+### minecraft:block_match
+Checks if the block in question matches the `"<block_name>"`. 
 
-- `"block_state": <BlockState>`
-- `"probability": <Number>`
-  - Must be between `[0, 1]` (Use `minecraft:block_state_match` if it should always be replaced if matched.)
+#### block_match Properties
+|Name       | Requirement Status | Description | Example |
+|:----------|:-----------|:-----------|:------------- |
+| block |Required| Block to be matched with. | `"block": "<block_name>"` |
 
-If the type is `minecraft:tag_match` the block will be matched based on it's tags
+```json
+{
+  "predicate_type": "minecraft:block_match",
+  "block": "<block_name>"
+}
+```
 
-- `"tag": "<block_tag>"`
+### minecraft:random_block_match
+Check if the block in question matches the `"<block_name>"`.
+The `"probability"` defines how likely the block wil be replaced if matched.
+>[!NOTE]
+> Use `minecraft:block_match` if it should always be replaced if matched.
 
-#### Block State
-- `"name": "<complex block state name>"`
-- `"states": { "<state_name>": <state value: string, number, boolean> } `
+#### random_block_match Properties
+|Name       | Requirement Status |Description | Example |
+|:----------|:------------------|:-----------|:------------- |
+| block |Required |Block to be matched with. | `"block": "<block_name>"` |
+| probability |Required | Must be between `[0, 1]` | `"probability": <Number>` |
+```json
+{
+  "predicate_type": "minecraft:random_block_match",
+  "block": "<block_name>",
+  "probability": <Number>
+}
+```
 
-#### Position Rule
+### minecraft:block_state_match
+The block will be matched based on it's [BlockSpecifier](#blockspecifier).
 
-- `"predicate_type": <type>`
-  - The type of positional rule. One of the following `minecraft:always_true` or `minecraft:axis_aligned_linear_pos`
+#### block_state_match Properties
+|Name       | Requirement Status | Description | Example |
+|:----------|:-----------|:-----------|:------------- |
+| block_state |Required| [BlockSpecifier](#blockspecifier) to match with. | `"block_state": <BlockSpecifier` |
+```json
+{
+  "predicate_type": "minecraft:random_block_match",
+  "block_state": <BlockSpecifier>
+}
+```
 
-If the type is `minecraft:always_true` the test will be skipped and assumed true.
+### minecraft:random_block_state_match
+The block will be matched based on it's [BlockSpecifier](#blockspecifier).
+The `"probability"` defines how likely the block wil be replaced if matched.
 
-If the type is `minecraft:axis_aligned_linear_pos` the block will be validated
-based on the linear distance along the provided axis from the structures origin.
+>[!NOTE]
+> Use `minecraft:block_state_match` if it should always be replaced if matched.
 
-- `"min_chance": <Number>`
-  - Must be between `[0, 1)`
-- `"max_chance": <Number>`
-  - Must be between `[0, 1)`. Must be greater than `min_chance`
-- `"min_dist": <Integer>`
-  - Must be greater than `0`
-- `"max_dist": <Integer>`
-  - Must be greater than `0`.
-- `"axis": "<axis>"`
-  - The axis can be one of the following: `x`, `y`, or `z`.
+#### random_block_state_match Properties
+|Name       | Requirement Status| Description | Example |
+|:----------|:-----------|:-----------|:------------- |
+| block_state |Required| [BlockSpecifier](#blockspecifier) to match with. | `"block_state": <BlockSpecifier` |
+| probability |Required| Must be between `[0, 1]` | `"probability": <Number>` |
+```json
+{
+  "predicate_type": "minecraft:random_block_match",
+  "block_state": <BlockSpecifier,
+  "probability": <Number>
+}
+```
 
-#### Block Entity Modifier
+### minecraft:tag_match
+The block will be matched based on it's tags.
 
-- `"type": <type>`
-  - The type of block entity modifier. One of the following `minecraft:passthrough` or `minecraft:append_loot`
+#### tag_match Properties
+|Name       | Requirement Status| Description | Example |
+|:----------|:-----------|:-----------|:------------- |
+| tag |Required| Block tag to match with. | `"tag": "<block_tag>"` |
 
-If the type is `minecraft:passthrough` no modification is performed (default)
+```json
+{
+  "predicate_type": "minecraft:tag_match",
+  "tag": "<block_tag>"
+}
+```
 
-If the type is `minecraft:append_loot` a loot table will be set on the output block.
+### PositionRule
+A PositionRule is a predicate (i.e. test) applied to the structure's position. One of the following: [minecraft:always_true](#minecraftalways_true) or [minecraft:axis_aligned_linear_pos](#minecraftaxis_aligned_linear_pos).
 
-- `"loot_table": "<path_to_loot_table.json>"`
+See [rule](#rule) to understand where it's used.
+
+#### PositionRule Properties
+|Name       |Requirement Status |Type |Description |Example |
+|:----------|:------------------|:----|:-----------|:------------- |
+| predicate_type | Required | String | The type of positional rule. | `"predicate_type": <type>` |
+
+### minecraft:always_true
+The test will be skipped and assumed true.
+
+```json
+{
+  "predicate_type": "minecraft:always_true"
+}
+```
+
+### minecraft:axis_aligned_linear_pos
+The block will be validated based on the linear distance along the provided axis from the structures origin.
+>[!NOTE]
+> `"max_chance"` must be greater than `"min_chance" `.
+
+#### axis_aligned_linear_pos Properties
+|Name       |Default Value |Requirement Status |Type |Description |Example|
+|:----------|:-------------|:------------------|:----|:-----------|:------------- |
+| min_chance | 0.0 | Optional | Float | Must be between `[0, 1)`. | `"min_chance": <Number>` |
+| max_chance | 1.0 | Optional | Float | Must be between `[0, 1)`. Must be greater than `min_chance`. | `"max_chance": <Number>` |
+| min_dist | 0 | Optional | int32_t | Must be greater than `0`. | `"min_dist": <Integer>` |
+| max_dist | 1 | Optional | int32_t | Must be greater than `0`. | `"max_dist": <Integer>` |
+| axis | *not set* | Optional | [Axis](#axis) | The axis can be one of the following: `x`, `y`, or `z`. | `"axis": "<axis>"` |
+
+## BlockSpecifier
+Specifies a particular block state. Can be a string block name or a JSON object.
+
+See [rule](#rule) to understand where it's used.
+
+### BlockSpecifier Properties
+|Name |Required |Type |Description |
+|:-----------|:-----------|:-------|:-----------|
+|name| Required| String| Name of the block|
+|states| Optional| Object| Properties that specify the specific block. Boolean, integer, or string values.|
+
+## BlockEntityModifier
+The type of block entity modifier. One of the following [minecraft:passthrough](#minecraftpassthrough) or [minecraft:append_loot](#minecraftappend_loot).
+
+See [rule](#rule) to understand where it's used.
+
+### BlockEntityModifierProperties
+|Name       |Default Value |Requirement Status |Type |Description |Example |
+|:----------|:-------------|:------------------|:----|:-----------|:------------- |
+| predicate_type | `"minecraft:passthrough"` | Required | String | The type of block entity modifier. | `"predicate_type": <type>` |
+
+### minecraft:passthrough
+No modification is performed. Default.
+
+### minecraft:append_loot
+A loot table will be set on the output block. This means the block in the world will be replaced by a block from the loot table.
+
+#### append_loot Properties
+
+|Name       |Type |Description |Example Values |
+|:----------|:----|:-----------|:------------- |
+| loot_table | Path to JSON file | Block will be replaced by block from the loot table. | `"loot_table": "<path_to_loot_table.json>"` |
+
+### IntProvider
+
+The IntProvider type provides dynamic integer values for the [minecraft:capped](#minecraftcapped) processor type.
+
+#### IntProvider Properties
+|Name       |Type |Description |Example |
+|:----------|:----|:-----------|:------------- |
+| type | String | The type of the int provider. One of [`"constant"`](#constant) or [`"uniform"`](#uniform). | `"type": <type>` |
+
+### Constant
+A constant integer value.
+
+#### constant Properties
+|Name       |Type |Description |Example |
+|:----------|:----|:-----------|:------------- |
+| value | Int | Constant value | `"value": <Integer>` |
+```json
+{
+  "type": "constant",
+  "value": <Int>
+}
+```
+
+## Uniform
+An integer is randomly selected between `min_inclusive` and `max_inclusive` based on a uniform distribution.
+
+### Uniform Properties
+|Name       |Type |Description |Example |
+|:----------|:----|:-----------|:------------- |
+| min_inclusive | Int | The minimum possible value. | `"min_inclusive": <Integer>` |
+| max_inclusive | Int | The maximum possible value. | `"max_inclusive": <Integer>` |
+
+>[!NOTE]
+> `"max_inclusive"` must be greater than `"min_inclusive"`.
+```json
+{
+  "type": "uniform",
+  "min_inclusive": <Int>,
+  "max_inclusive": <Int>
+}
+```
+
 
 ## Example JSON
 

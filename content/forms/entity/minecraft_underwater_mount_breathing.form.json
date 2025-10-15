@@ -1,0 +1,24 @@
+{
+  "id": "minecraft:underwater_mount_breathing",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:underwater_mount_breathing",
+    "title": "Underwater Mount Breathing",
+    "description": "Pauses this entity's breathing under water.",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:underwater_mount_breathing/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:underwater_mount_breathing/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

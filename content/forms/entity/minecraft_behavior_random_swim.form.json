@@ -57,6 +57,18 @@
               "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
               "content": 1
             }
+          ],
+          "/vanilla/behavior_pack/entities/nautilus.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 1.5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 1.5
+            }
           ]
         }
       },
@@ -85,7 +97,7 @@
               "content": 16
             }
           ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
+          "/vanilla/behavior_pack/entities/nautilus.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
               "content": 16
@@ -118,7 +130,7 @@
               "content": 4
             }
           ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
+          "/vanilla/behavior_pack/entities/nautilus.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
               "content": 4
@@ -169,6 +181,12 @@
               "content": 7
             }
           ],
+          "/vanilla/behavior_pack/entities/nautilus.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 6
+            }
+          ],
           "/vanilla/behavior_pack/entities/pufferfish.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
@@ -179,6 +197,12 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
               "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 4
             }
           ]
         }
@@ -239,6 +263,18 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+          "content": {
+            "priority": 6,
+            "speed_multiplier": 1.5,
+            "xz_dist": 16,
+            "y_dist": 4,
+            "interval": 0
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/pufferfish.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
@@ -292,6 +328,18 @@
             "interval": 0,
             "xz_dist": 30,
             "y_dist": 15
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 1.5,
+            "xz_dist": 16,
+            "y_dist": 4,
+            "interval": 0
           }
         }
       ],

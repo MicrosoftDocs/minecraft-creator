@@ -1,8 +1,8 @@
 {
   "fields": [],
   "generated_doNotEdit": {
-    "id": "minecraft:behavior.avoid_block",
-    "title": "Avoid Block Behavior",
+    "id": "minecraft:behavior.avoid_block (See JSON Schema since 1.21.120)",
+    "title": "Avoid Block (See JSON Schema Since 1.21.120) Behavior",
     "description": "Allows this entity to avoid certain blocks.",
     "fields": [
       {
@@ -105,8 +105,8 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
               "content": {
-                "range_min": 2,
-                "range_max": 5
+                "min": 2,
+                "max": 5
               }
             }
           ]
@@ -290,8 +290,8 @@
             ],
             "avoid_block_sound": "retreat",
             "sound_interval": {
-              "range_min": 2,
-              "range_max": 5
+              "min": 2,
+              "max": 5
             }
           }
         }

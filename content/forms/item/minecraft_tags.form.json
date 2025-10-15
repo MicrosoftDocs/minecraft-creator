@@ -20,6 +20,70 @@
               ]
             }
           ],
+          "/vanilla/behavior_pack/items/copper_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:tags/",
+              "content": [
+                "minecraft:copper_tier",
+                "minecraft:spear"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/items/diamond_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:tags/",
+              "content": [
+                "minecraft:diamond_tier",
+                "minecraft:transformable_items",
+                "minecraft:spear"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/items/golden_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:tags/",
+              "content": [
+                "minecraft:golden_tier",
+                "minecraft:spear"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/items/iron_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:tags/",
+              "content": [
+                "minecraft:iron_tier",
+                "minecraft:spear"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/items/netherite_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:tags/",
+              "content": [
+                "minecraft:netherite_tier",
+                "minecraft:spear"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/items/stone_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:tags/",
+              "content": [
+                "minecraft:stone_tier",
+                "minecraft:spear"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/items/wooden_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:tags/",
+              "content": [
+                "minecraft:wooden_tier",
+                "minecraft:spear"
+              ]
+            }
+          ],
           "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/items/cooked_dream_turkey.json": [
             {
               "path": "/minecraft:item/components/minecraft:tags/",
@@ -38,6 +102,84 @@
           "content": {
             "tags": [
               "minecraft:is_food"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/copper_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:tags/",
+          "content": {
+            "tags": [
+              "minecraft:copper_tier",
+              "minecraft:spear"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/diamond_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:tags/",
+          "content": {
+            "tags": [
+              "minecraft:diamond_tier",
+              "minecraft:transformable_items",
+              "minecraft:spear"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/golden_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:tags/",
+          "content": {
+            "tags": [
+              "minecraft:golden_tier",
+              "minecraft:spear"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/iron_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:tags/",
+          "content": {
+            "tags": [
+              "minecraft:iron_tier",
+              "minecraft:spear"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/netherite_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:tags/",
+          "content": {
+            "tags": [
+              "minecraft:netherite_tier",
+              "minecraft:spear"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/stone_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:tags/",
+          "content": {
+            "tags": [
+              "minecraft:stone_tier",
+              "minecraft:spear"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/wooden_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:tags/",
+          "content": {
+            "tags": [
+              "minecraft:wooden_tier",
+              "minecraft:spear"
             ]
           }
         }
@@ -123,6 +265,26 @@
         }
       ],
       "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/items/dream_turkey.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:tags/",
+          "content": {
+            "tags": [
+              "minecraft:is_food"
+            ]
+          }
+        }
+      ],
+      "/samples/starter_items/behavior_packs/starter_Items/items/hard_biscuit.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:tags/",
+          "content": {
+            "tags": [
+              "minecraft:is_food"
+            ]
+          }
+        }
+      ],
+      "/samples/starter_items/behavior_packs/starter_Items/items/pear.json": [
         {
           "path": "/minecraft:item/components/minecraft:tags/",
           "content": {

@@ -38,6 +38,8 @@ Type of item that can be added to the property pane
 `Image = editorUI:Image`
 ### **Link**
 `Link = editorUI:Link`
+### **ListPane**
+`ListPane = editorUI:ListPane`
 ### **Menu**
 `Menu = editorUI:Menu`
 ### **Number**

@@ -27,9 +27,10 @@ ms.date: 02/11/2025
 | [minecraft:barter](EntityComponents/minecraftComponent_barter.md)| Enables the component to drop an item as a barter exchange. |
 | [minecraft:block_climber](EntityComponents/minecraftComponent_block_climber.md)| Allows the player to detect and manuever on the scaffolding block. |
 | [minecraft:block_sensor](EntityComponents/minecraftComponent_block_sensor.md)| Fires off a specified event when a block in the block list is broken within the sensor range. |
-| [minecraft:body_rotation_always_follows_head](EntityComponents/minecraftComponent_body_rotation_always_follows_head.md)| Causes the entity's body to always be automatically rotated to align with the entity's head.<br>Does not override the "minecraft:body_rotation_blocked" component. |
+| [minecraft:body_rotation_always_follows_head](EntityComponents/minecraftComponent_body_rotation_always_follows_head.md)| Causes the entity's body rotation to match the one of their head.<br>Does not override the "minecraft:body_rotation_blocked" component. |
 | [minecraft:body_rotation_axis_aligned](EntityComponents/minecraftComponent_body_rotation_axis_aligned.md)| Causes the entity's body to automatically rotate to align with the nearest cardinal direction based on its current facing direction. <br>Combining this with the "minecraft:body_rotation_blocked" component will cause the entity to align to the nearest cardinal direction and remain fixed in that orientation, regardless of future changes in its facing direction. |
 | [minecraft:body_rotation_blocked](EntityComponents/minecraftComponent_body_rotation_blocked.md)| When set, the entity will no longer visually rotate their body to match their facing direction. |
+| [minecraft:body_rotation_locked_to_vehicle](EntityComponents/minecraftComponent_body_rotation_locked_to_vehicle.md)| Causes the entity's body rotation to match their vehicle's facing direction. |
 | [minecraft:boostable](EntityComponents/minecraftComponent_boostable.md)| Defines the conditions and behavior of a rideable entity's boost. |
 | [minecraft:boss](EntityComponents/minecraftComponent_boss.md)| Defines the current state of the boss for updating the boss HUD. |
 | [minecraft:break_blocks](EntityComponents/minecraftComponent_break_blocks.md)| Specifies the blocks that the entity can break as it moves around. |
@@ -193,6 +194,7 @@ ms.date: 02/11/2025
 | [Trust](EntityComponents/minecraftComponent_trust.md)| Allows this entity to trust multiple players. |
 | [minecraft:trusting](EntityComponents/minecraftComponent_trusting.md)| Defines the rules for a mob to trust players. |
 | [minecraft:type_family](EntityComponents/minecraftComponent_type_family.md)| Defines the families this entity belongs to. |
+| [minecraft:underwater_mount_breathing](EntityComponents/minecraftComponent_underwater_mount_breathing.md)| Pauses this entity's breathing under water. |
 | [minecraft:underwater_movement](EntityComponents/minecraftComponent_underwater_movement.md)| Defines the speed with which an entity can move through water. |
 | [minecraft:variable_max_auto_step](EntityComponents/minecraftComponent_variable_max_auto_step.md)| Entities with this component will have a maximum auto step height that is different depending on whether they are on a block that prevents jumping. |
 | [minecraft:variant](EntityComponents/minecraftComponent_variant.md)| Variant is typically used as a per-type way to express a different visual form of the same mob. |

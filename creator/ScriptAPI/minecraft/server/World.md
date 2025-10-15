@@ -123,9 +123,7 @@ Type: [*StructureManager*](StructureManager.md)
 - [setAbsoluteTime](#setabsolutetime)
 - [setDefaultSpawnLocation](#setdefaultspawnlocation)
 - [setDifficulty](#setdifficulty)
-::: moniker range="=minecraft-bedrock-experimental"
 - [setDynamicProperties](#setdynamicproperties)
-::: moniker-end
 - [setDynamicProperty](#setdynamicproperty)
 - [setTimeOfDay](#settimeofday)
 - [stopMusic](#stopmusic)
@@ -562,7 +560,6 @@ Sets the worlds difficulty.
 Notes:
 - This function can't be called in read-only mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **setDynamicProperties**
 `
 setDynamicProperties(values: Record<string, boolean | number | string | Vector3 | undefined>): void
@@ -574,14 +571,10 @@ Sets multiple dynamic properties with specific values.
 - **values**: Record<*string*, *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined*>
   
   A Record of key value pairs of the dynamic properties to set. If the data value is null, it will remove that property instead.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md)
-::: moniker-end
 
 ### **setDynamicProperty**
 `

@@ -8,6 +8,8 @@
   href: minecraftClientBiomes_biome_music.md
 - name: minecraft:color_grading_identifier
   href: minecraftClientBiomes_color_grading_identifier.md
+- name: minecraft:cubemap_identifier
+  href: minecraftClientBiomes_cubemap_identifier.md
 - name: minecraft:dry_foliage_color
   href: minecraftClientBiomes_dry_foliage_color.md
 - name: minecraft:fog_appearance

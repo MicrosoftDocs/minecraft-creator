@@ -587,6 +587,15 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable/",
+          "content": {
+            "is_pushable": true,
+            "is_pushable_by_piston": true
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/ocelot.json": [
         {
           "path": "/minecraft:entity/components/minecraft:pushable/",
@@ -1026,6 +1035,15 @@
         }
       ],
       "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable/",
+          "content": {
+            "is_pushable": true,
+            "is_pushable_by_piston": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
           "path": "/minecraft:entity/components/minecraft:pushable/",
           "content": {

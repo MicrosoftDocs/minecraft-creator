@@ -213,6 +213,15 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_adult/minecraft:behavior.breed/",
+          "content": {
+            "priority": 2,
+            "speed_multiplier": 1
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/ocelot.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:ocelot_trusting/minecraft:behavior.breed/",

@@ -178,6 +178,8 @@
             href: Documents/VibrantVisuals/VolumetricFogLightShaftsCustomization.md
           - name: Color Grading and Tone Mapping
             href: Documents/VibrantVisuals/ColorGradingToneMappingCustomization.md
+          - name: Cubemaps
+            href: Documents/VibrantVisuals/CubemapCustomization.md
           - name: Subsurface Scattering
             href: Documents/VibrantVisuals/SubSurfaceScatteringCustomization.md
           - name: Shadows
@@ -204,6 +206,8 @@
             href: Documents/AddOns/CustomPackSettings.md
           - name: Preparing Raw Text for Localization
             href: Documents/PreparingRawTextForLocalization.md
+          - name: Texture Budgets
+            href: Documents/TextureBudgets.md
         - name: Advanced Topics
           items:
           - name: Understanding Simulation Distance, Render Distance, and Ticking Areas

@@ -156,6 +156,17 @@
                 }
               ]
             }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_horse.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
+              "content": [
+                "minecraft:rail",
+                "minecraft:activator_rail",
+                "minecraft:detector_rail",
+                "minecraft:golden_rail"
+              ]
+            }
           ]
         }
       },
@@ -962,7 +973,14 @@
           "path": "/minecraft:entity/components/minecraft:navigation.walk/",
           "content": {
             "is_amphibious": true,
-            "avoid_water": true
+            "avoid_water": true,
+            "avoid_damage_blocks": true,
+            "blocks_to_avoid": [
+              "minecraft:rail",
+              "minecraft:activator_rail",
+              "minecraft:detector_rail",
+              "minecraft:golden_rail"
+            ]
           }
         }
       ],

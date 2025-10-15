@@ -88,3 +88,22 @@ At /minecraft:entity/component_groups/start_zombification/minecraft:environment_
   "value": true
 }
 ```
+
+#### [Piglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin.json)
+
+At /minecraft:entity/component_groups/zombification_sensor/minecraft:environment_sensor/triggers/filters/: 
+
+```json
+{
+  "test": "in_nether",
+  "value": false
+}
+```
+
+At /minecraft:entity/component_groups/start_zombification/minecraft:environment_sensor/triggers/filters/: 
+
+```json
+{
+  "test": "in_nether"
+}
+```

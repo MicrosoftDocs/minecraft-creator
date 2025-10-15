@@ -330,6 +330,19 @@
               }
             }
           ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:drowned_rider/minecraft:spawn_entity/",
+              "content": {
+                "min_wait_time": 0,
+                "max_wait_time": 0,
+                "num_to_spawn": 1,
+                "single_use": true,
+                "spawn_entity": "minecraft:zombie_nautilus",
+                "spawn_event": "minecraft:spawn_adult"
+              }
+            }
+          ],
           "/vanilla/behavior_pack/entities/ocelot.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:wild_child_ocelot_spawn/minecraft:spawn_entity/",
@@ -466,6 +479,21 @@
                 "domain": "minecraft:has_flower",
                 "value": true
               }
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:drowned_rider/minecraft:spawn_entity/",
+          "content": {
+            "entities": {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "num_to_spawn": 1,
+              "single_use": true,
+              "spawn_entity": "minecraft:zombie_nautilus",
+              "spawn_event": "minecraft:spawn_adult"
             }
           }
         }

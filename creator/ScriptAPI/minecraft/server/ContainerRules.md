@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.ContainerRules Interface
 description: Contents of the @minecraft/server.ContainerRules class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ContainerRules Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Rules that if broken on container operations will throw an error.
 

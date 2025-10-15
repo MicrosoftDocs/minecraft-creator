@@ -200,6 +200,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_baby/minecraft:is_baby/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/ocelot.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:ocelot_baby/minecraft:is_baby/",
@@ -320,12 +326,6 @@
       "/vanilla/behavior_pack/entities/zombie.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:zombie_baby/minecraft:is_baby/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_horse.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_baby/minecraft:is_baby/",
           "content": {}
         }
       ],

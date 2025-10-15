@@ -16,7 +16,7 @@ Returns true when the subject entity is a member of the named family.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Bee: `"!="`, Fox: `"=="`, Iron Golem: `"not"` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Bee: `"!="`, Fox: `"=="`, Husk: `"not"` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Arrow: `"other"`, Bee: `"self"`, Breeze: `"damager"` | 
 | test | *not set* | String |  | Arrow: `"is_family"` | 
 | value | *not set* | String | (Required) The Family name to look for | Arrow: `"player"`, `"pillager"`, Bee: `"pacified"` | 

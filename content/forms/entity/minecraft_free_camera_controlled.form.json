@@ -18,6 +18,12 @@
               "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:free_camera_controlled/",
               "content": 0.5
             }
+          ],
+          "/vanilla/behavior_pack/entities/nautilus.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:free_camera_controlled/",
+              "content": 0.5
+            }
           ]
         }
       },
@@ -33,6 +39,18 @@
               "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:free_camera_controlled/",
               "content": 1
             }
+          ],
+          "/vanilla/behavior_pack/entities/nautilus.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:free_camera_controlled/",
+              "content": 0.35
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:free_camera_controlled/",
+              "content": 0.35
+            }
           ]
         }
       }
@@ -43,6 +61,24 @@
           "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:free_camera_controlled/",
           "content": {
             "strafe_speed_modifier": 1,
+            "backwards_movement_modifier": 0.5
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:free_camera_controlled/",
+          "content": {
+            "strafe_speed_modifier": 0.35,
+            "backwards_movement_modifier": 0.5
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:free_camera_controlled/",
+          "content": {
+            "strafe_speed_modifier": 0.35,
             "backwards_movement_modifier": 0.5
           }
         }

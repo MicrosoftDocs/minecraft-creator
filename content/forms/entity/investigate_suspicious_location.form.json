@@ -1,0 +1,33 @@
+{
+  "id": "minecraft:behavior.investigate_suspicious_location",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.investigate_suspicious_location",
+    "title": "Entity Investigate Suspicious Location Behavior",
+    "description": "Allows this entity to move towards a \"suspicious\" position based on data gathered in minecraft:suspect_tracking",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17
+      },
+      {
+        "id": "goal_radius",
+        "title": "Goal Radius",
+        "description": "Distance in blocks within the entity considers it has reached it's target position. Default value: 1.5.",
+        "dataType": 3
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier Default value: 1.",
+        "dataType": 3
+      }
+    ]
+  }
+}

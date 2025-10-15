@@ -78,6 +78,18 @@
               "content": "equals"
             }
           ],
+          "/vanilla/behavior_pack/entities/nautilus.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:on_unsaddled/sequence/0/filters/",
+              "content": ">"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:on_unsaddled/sequence/0/filters/",
+              "content": ">"
+            }
+          ],
           "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
             {
               "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/entities/filters/",
@@ -216,6 +228,73 @@
             "test": "rider_count",
             "subject": "self",
             "operator": "equals",
+            "value": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:interact/interactions/1/on_interact/filters/all_of/0/",
+          "content": {
+            "test": "rider_count",
+            "subject": "self",
+            "operator": "equals",
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:interact/interactions/3/on_interact/filters/all_of/0/",
+          "content": {
+            "test": "rider_count",
+            "subject": "self",
+            "operator": "equals",
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_unsaddled/sequence/0/filters/",
+          "content": {
+            "test": "rider_count",
+            "subject": "self",
+            "operator": ">",
+            "value": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:interact/interactions/1/on_interact/filters/all_of/0/",
+          "content": {
+            "test": "rider_count",
+            "subject": "self",
+            "operator": "equals",
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:interact/interactions/3/on_interact/filters/all_of/0/",
+          "content": {
+            "test": "rider_count",
+            "subject": "self",
+            "operator": "equals",
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_with_drowned_rider/minecraft:environment_sensor/triggers/filters/",
+          "content": {
+            "test": "rider_count",
+            "subject": "self",
+            "operator": "equals",
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_unsaddled/sequence/0/filters/",
+          "content": {
+            "test": "rider_count",
+            "subject": "self",
+            "operator": ">",
             "value": 0
           }
         }

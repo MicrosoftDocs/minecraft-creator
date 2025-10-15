@@ -37,8 +37,11 @@ ms.date: 02/11/2025
 | [minecraft:icon](./ItemComponents/minecraft_icon.md)| Determines the icon to represent the item in the UI and elsewhere. |
 | [minecraft:interact_button](./ItemComponents/minecraft_interact_button.md)| A boolean or string that determines if the interact button is shown in touch controls, and what text is displayed on the button. |
 | [Minecraft Item Item](./ItemComponents/minecraft_item.md)| Refers to the item definition, which includes the 'description' and 'components' sections of the file. |
+| [minecraft:kinetic_weapon](./ItemComponents/minecraft_kinetic_weapon.md)| Allows an item to deal kinetic damage and its effects. |
+| [minecraft:kinetic_weapon kinetic_effect_conditions](./ItemComponents/minecraft_kinetic_weapon_kinetic_effect_conditions.md)| Conditions that need to be satisfied for a specific effect of a kinetic weapon to be applied. |
 | [minecraft:liquid_clipped](./ItemComponents/minecraft_liquid_clipped.md)| The liquid_clipped component determines whether the item interacts with liquid blocks on use. |
 | [minecraft:max_stack_size](./ItemComponents/minecraft_max_stack_size.md)| Determines how many of an item can be stacked together. |
+| [minecraft:piercing_weapon](./ItemComponents/minecraft_piercing_weapon.md)| Allows an item to deal damage to all entities detected in a straight line along the user's view vector. |
 | [minecraft:projectile](./ItemComponents/minecraft_projectile.md)| Compels the item to shoot, similarly to an arrow. |
 | [minecraft:rarity](./ItemComponents/minecraft_rarity.md)| Specifies the base rarity and subsequently color of the item name when the player hovers the cursor over the item. |
 | [minecraft:record](./ItemComponents/minecraft_record.md)| Used by record items to play music. |
@@ -50,6 +53,7 @@ ms.date: 02/11/2025
 | [minecraft:storage_weight_limit](./ItemComponents/minecraft_storage_weight_limit.md)| Specifies the maximum weight limit that a storage item can hold |
 | [minecraft:storage_weight_modifier](./ItemComponents/minecraft_storage_weight_modifier.md)| Specifies the maximum weight limit that a storage item can hold |
 | [minecraft:swing_duration](./ItemComponents/minecraft_swing_duration.md)| Duration, in seconds, of the item's swing animation played when mining or attacking. |
+| [minecraft:swing_sounds](./ItemComponents/minecraft_swing_sounds.md)| Overrides the swing sounds emitted by the user. |
 | [minecraft:tags](./ItemComponents/minecraft_tags.md)| Determines which tags are included on a given item |
 | [minecraft:throwable](./ItemComponents/minecraft_throwable.md)| Sets the throwable item component. |
 | [minecraft:use_animation](./ItemComponents/minecraft_use_animation.md)| Use_animation specifies which animation is played when the player uses the item. |

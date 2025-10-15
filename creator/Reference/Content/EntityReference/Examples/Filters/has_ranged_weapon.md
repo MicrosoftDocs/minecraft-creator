@@ -88,3 +88,22 @@ At /minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environme
   "value": true
 }
 ```
+
+#### [Skeleton](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton.json)
+
+At /minecraft:entity/component_groups/got_out_of_powder_snow_environment_sensor/minecraft:environment_sensor/triggers/1/filters/: 
+
+```json
+{
+  "test": "has_ranged_weapon",
+  "value": false
+}
+```
+
+At /minecraft:entity/component_groups/got_out_of_powder_snow_environment_sensor/minecraft:environment_sensor/triggers/2/filters/all_of/1/: 
+
+```json
+{
+  "test": "has_ranged_weapon"
+}
+```

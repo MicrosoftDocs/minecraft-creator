@@ -154,3 +154,37 @@ List of slots and the item that can be equipped.
   ]
 }
 ```
+
+#### [Nautilus](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/nautilus.json)
+
+
+```json
+"minecraft:equippable": {
+  "slots": [
+    {
+      "slot": 0,
+      "item": "saddle",
+      "accepted_items": [
+        "saddle"
+      ],
+      "on_equip": {
+        "event": "minecraft:on_saddled"
+      },
+      "on_unequip": {
+        "event": "minecraft:on_unsaddled"
+      }
+    },
+    {
+      "slot": 1,
+      "item": "nautilusarmor",
+      "accepted_items": [
+        "minecraft:copper_nautilus_armor",
+        "minecraft:iron_nautilus_armor",
+        "minecraft:golden_nautilus_armor",
+        "minecraft:diamond_nautilus_armor",
+        "minecraft:netherite_nautilus_armor"
+      ]
+    }
+  ]
+}
+```

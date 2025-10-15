@@ -22,7 +22,7 @@
         "title": "Delay Range",
         "description": "Minimum and maximum cooldown time-range (in seconds) between each attempted swoop attack. Default value: [10.0, 20.0].",
         "dataType": 16,
-        "subFormId": "entity/floatrange"
+        "subFormId": "item_components/floatrange"
       },
       {
         "id": "priority",

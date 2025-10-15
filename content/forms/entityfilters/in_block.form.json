@@ -73,15 +73,7 @@
           "/vanilla/behavior_pack/entities/skeleton.json": [
             {
               "path": "/minecraft:entity/component_groups/in_powder_snow/minecraft:environment_sensor/triggers/0/filters/",
-              "content": "!="
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/2/filters/",
-              "content": "=="
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/1/filters/",
-              "content": "=="
+              "content": "not"
             }
           ]
         }
@@ -195,7 +187,7 @@
           "content": {
             "test": "in_block",
             "subject": "self",
-            "operator": "!=",
+            "operator": "not",
             "value": "minecraft:powder_snow"
           }
         },
@@ -204,7 +196,6 @@
           "content": {
             "test": "in_block",
             "subject": "self",
-            "operator": "==",
             "value": "minecraft:powder_snow"
           }
         },
@@ -212,8 +203,6 @@
           "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/1/filters/",
           "content": {
             "test": "in_block",
-            "subject": "self",
-            "operator": "==",
             "value": "minecraft:powder_snow"
           }
         },
@@ -222,7 +211,6 @@
           "content": {
             "test": "in_block",
             "subject": "self",
-            "operator": "==",
             "value": "minecraft:powder_snow"
           }
         }

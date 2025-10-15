@@ -262,12 +262,96 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:environment_sensor/triggers/0/filters/",
+          "content": {
+            "test": "in_water",
+            "operator": "==",
+            "value": false
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_on_ground/minecraft:environment_sensor/triggers/0/filters/",
+          "content": {
+            "test": "in_water",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled/minecraft:environment_sensor/triggers/0/filters/",
+          "content": {
+            "test": "in_water",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled/minecraft:environment_sensor/triggers/1/filters/",
+          "content": {
+            "test": "in_water",
+            "operator": "==",
+            "value": false
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_saddled/sequence/1/filters/",
+          "content": {
+            "test": "in_water",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_saddled/sequence/2/filters/",
+          "content": {
+            "test": "in_water",
+            "operator": "==",
+            "value": false
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/pillager.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/filters/",
           "content": {
             "test": "in_water",
             "subject": "self",
+            "operator": "==",
+            "value": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:environment_sensor/triggers/0/filters/",
+          "content": {
+            "test": "in_water",
+            "operator": "==",
+            "value": false
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_on_ground/minecraft:environment_sensor/triggers/0/filters/",
+          "content": {
+            "test": "in_water",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_saddled/sequence/1/filters/",
+          "content": {
+            "test": "in_water",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_saddled/sequence/2/filters/",
+          "content": {
+            "test": "in_water",
             "operator": "==",
             "value": false
           }
