@@ -415,6 +415,47 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:horse_wild/minecraft:tamemount/",
+          "content": {
+            "min_temper": 0,
+            "max_temper": 100,
+            "feed_text": "action.interact.feed",
+            "ride_text": "action.interact.mount",
+            "feed_items": [
+              {
+                "item": "red_mushroom",
+                "temper_mod": 10
+              }
+            ],
+            "auto_reject_items": [
+              {
+                "item": "horsearmorleather"
+              },
+              {
+                "item": "horsearmoriron"
+              },
+              {
+                "item": "horsearmorgold"
+              },
+              {
+                "item": "horsearmordiamond"
+              },
+              {
+                "item": "minecraft:copper_horse_armor"
+              },
+              {
+                "item": "saddle"
+              }
+            ],
+            "tame_event": {
+              "event": "minecraft:on_tame",
+              "target": "self"
+            }
+          }
+        }
+      ],
       "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:tamemount/",

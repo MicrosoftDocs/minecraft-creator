@@ -180,6 +180,15 @@
             "start_delay": 15,
             "max_failed_attempts": 20
           }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_rider/minecraft:behavior.find_mount/",
+          "content": {
+            "priority": 1,
+            "within_radius": 16,
+            "start_delay": 15,
+            "max_failed_attempts": 20
+          }
         }
       ],
       "/vanilla/behavior_pack/entities/zombie_villager.json": [

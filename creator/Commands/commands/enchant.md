@@ -125,3 +125,4 @@ Swift Sneak level: 1, 2, or 3
 - `wind_burst`
 - `density`
 - `breach`
+- `lunge`

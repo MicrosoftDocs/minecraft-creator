@@ -119,3 +119,4 @@ Darkness
 - `oozing`
 - `infested`
 - `raid_omen`
+- `breath_of_the_nautilus`

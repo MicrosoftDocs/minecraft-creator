@@ -44,9 +44,7 @@ Type: *string*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [findClosestBiome](#findclosestbiome)
 ::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [getBiome](#getbiome)
-::: moniker-end
 - [getBlock](#getblock)
 - [getBlockAbove](#getblockabove)
 - [getBlockBelow](#getblockbelow)
@@ -58,20 +56,14 @@ Type: *string*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getGeneratedStructures](#getgeneratedstructures)
 ::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [getLightLevel](#getlightlevel)
-::: moniker-end
 - [getPlayers](#getplayers)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getSkyLightLevel](#getskylightlevel)
-::: moniker-end
 - [getTopmostBlock](#gettopmostblock)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getWeather](#getweather)
 ::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [isChunkLoaded](#ischunkloaded)
-::: moniker-end
 - [placeFeature](#placefeature)
 - [placeFeatureRule](#placefeaturerule)
 - [playSound](#playsound)
@@ -247,7 +239,6 @@ Notes:
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getBiome**
 `
 getBiome(location: Vector3): BiomeType
@@ -261,14 +252,10 @@ Returns the biome type at the specified location.
   Location at which to check the biome.
 
 **Returns** [*BiomeType*](BiomeType.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
 ### **getBlock**
 `
@@ -532,7 +519,6 @@ Notes:
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getLightLevel**
 `
 getLightLevel(location: Vector3): number
@@ -546,14 +532,10 @@ Returns the total brightness level of light shining on a certain block position.
   Location of the block we want to check the brightness of.
 
 **Returns** *number* - The brightness level on the block.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
-::: moniker-end
 
 ### **getPlayers**
 `
@@ -573,7 +555,6 @@ Notes:
 - This function can throw errors.
   - Throws [*CommandError*](CommandError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getSkyLightLevel**
 `
 getSkyLightLevel(location: Vector3): number
@@ -587,14 +568,10 @@ Returns the brightness level of light shining from the sky on a certain block po
   Position of the block we want to check the brightness of.
 
 **Returns** *number* - The brightness level on the block.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
-::: moniker-end
 
 ### **getTopmostBlock**
 `
@@ -630,7 +607,6 @@ Returns the current weather.
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **isChunkLoaded**
 `
 isChunkLoaded(location: Vector3): boolean
@@ -644,10 +620,6 @@ Returns true if the chunk at the given location is loaded (and valid for use wit
   Location to check if the chunk is loaded.
 
 **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **placeFeature**
 `

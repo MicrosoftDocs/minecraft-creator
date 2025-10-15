@@ -97,6 +97,15 @@
         "description": "Time range to look at the nearest player.",
         "dataType": 18,
         "samples": {
+          "/vanilla/behavior_pack/entities/zombie_horse.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+              "content": [
+                2,
+                4
+              ]
+            }
+          ],
           "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
@@ -954,7 +963,11 @@
           "content": {
             "priority": 7,
             "look_distance": 6,
-            "probability": 0.02
+            "probability": 0.02,
+            "look_time": [
+              2,
+              4
+            ]
           }
         }
       ],

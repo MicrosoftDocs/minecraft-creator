@@ -92,6 +92,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | [mooshroom](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/mooshroom.json) | 4880 | 16 |
 | moving_block | 67 | 67 |
 | [mule](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/mule.json) | 2118425 | 25 |
+| [nautilus](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/nautilus.json) | 9109 | 149 |
 | [npc](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/npc.json) | 307 | 51 |
 | [ocelot](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/ocelot.json) | 21270 | 22 |
 | [ominous_item_spawner](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/ominous_item_spawner.json) | 145 | 145 |
@@ -153,6 +154,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | [zoglin](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/zoglin.json) | 68478 | 126 |
 | [zombie](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/zombie.json) | 199456 | 32 |
 | [zombie_horse](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/zombie_horse.json) | 2186011 | 27 |
+| [zombie_nautilus](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/zombie_nautilus.json) | 76694 | 150 |
 | [zombie_pigman](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/zombie_pigman.json) | 68388 | 36 |
 | [zombie_villager](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/zombie_villager.json) | 199468 | 44 |
 | [zombie_villager_v2](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/zombie_villager_v2.json) | 199540 | 116 |

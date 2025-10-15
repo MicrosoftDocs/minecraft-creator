@@ -648,6 +648,48 @@ List of items or item tags that the entity wants to share. Items in-game will ma
       "priority": 6
     },
     {
+      "item": "minecraft:netherite_spear",
+      "want_amount": 1,
+      "surplus_amount": 1,
+      "priority": 0
+    },
+    {
+      "item": "minecraft:diamond_spear",
+      "want_amount": 1,
+      "surplus_amount": 1,
+      "priority": 1
+    },
+    {
+      "item": "minecraft:iron_spear",
+      "want_amount": 1,
+      "surplus_amount": 1,
+      "priority": 2
+    },
+    {
+      "item": "minecraft:golden_spear",
+      "want_amount": 1,
+      "surplus_amount": 1,
+      "priority": 3
+    },
+    {
+      "item": "minecraft:copper_spear",
+      "want_amount": 1,
+      "surplus_amount": 1,
+      "priority": 4
+    },
+    {
+      "item": "minecraft:stone_spear",
+      "want_amount": 1,
+      "surplus_amount": 1,
+      "priority": 5
+    },
+    {
+      "item": "minecraft:wooden_spear",
+      "want_amount": 1,
+      "surplus_amount": 1,
+      "priority": 6
+    },
+    {
       "item": "minecraft:netherite_helmet",
       "want_amount": 1,
       "surplus_amount": 1,
@@ -858,6 +900,13 @@ List of items or item tags that the entity wants to share. Items in-game will ma
       "stored_in_inventory": true
     },
     {
+      "item": "minecraft:golden_spear",
+      "priority": 2,
+      "admire": true,
+      "pickup_limit": 1,
+      "stored_in_inventory": true
+    },
+    {
       "item": "minecraft:golden_axe",
       "priority": 2,
       "admire": true,
@@ -990,6 +1039,13 @@ List of items or item tags that the entity wants to share. Items in-game will ma
     },
     {
       "item": "minecraft:horsearmorgold",
+      "priority": 2,
+      "admire": true,
+      "pickup_limit": 1,
+      "stored_in_inventory": true
+    },
+    {
+      "item": "minecraft:golden_nautilus_armor",
       "priority": 2,
       "admire": true,
       "pickup_limit": 1,

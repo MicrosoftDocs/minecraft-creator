@@ -1,0 +1,20 @@
+{
+  "id": "FloatRange",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "FloatRange",
+    "title": "Item FloatRange",
+    "fields": [
+      {
+        "id": "max",
+        "title": "Max",
+        "dataType": 3
+      },
+      {
+        "id": "min",
+        "title": "Min",
+        "dataType": 3
+      }
+    ]
+  }
+}

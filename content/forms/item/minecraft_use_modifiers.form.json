@@ -30,6 +30,18 @@
               "content": 0.35
             }
           ],
+          "/vanilla/behavior_pack/items/copper_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:use_modifiers/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/items/diamond_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:use_modifiers/",
+              "content": 1
+            }
+          ],
           "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/items/cooked_dream_turkey.json": [
             {
               "path": "/minecraft:item/components/minecraft:use_modifiers/",
@@ -50,6 +62,18 @@
               "content": 1.6
             }
           ],
+          "/vanilla/behavior_pack/items/copper_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:use_modifiers/",
+              "content": 72000
+            }
+          ],
+          "/vanilla/behavior_pack/items/diamond_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:use_modifiers/",
+              "content": 72000
+            }
+          ],
           "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/items/cooked_dream_turkey.json": [
             {
               "path": "/minecraft:item/components/minecraft:use_modifiers/",
@@ -67,6 +91,18 @@
               "path": "/minecraft:item/components/minecraft:use_modifiers/",
               "content": 3
             }
+          ],
+          "/samples/starter_items/behavior_packs/starter_Items/items/hard_biscuit.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:use_modifiers/",
+              "content": 3
+            }
+          ],
+          "/samples/starter_items/behavior_packs/starter_Items/items/pear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:use_modifiers/",
+              "content": 1.6
+            }
           ]
         }
       }
@@ -78,6 +114,76 @@
           "content": {
             "use_duration": 1.6,
             "movement_modifier": 0.35
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/copper_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 72000,
+            "emit_vibrations": false,
+            "movement_modifier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/diamond_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 72000,
+            "emit_vibrations": false,
+            "movement_modifier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/golden_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 72000,
+            "emit_vibrations": false,
+            "movement_modifier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/iron_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 72000,
+            "emit_vibrations": false,
+            "movement_modifier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/netherite_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 72000,
+            "emit_vibrations": false,
+            "movement_modifier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/stone_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 72000,
+            "emit_vibrations": false,
+            "movement_modifier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/wooden_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 72000,
+            "emit_vibrations": false,
+            "movement_modifier": 1
           }
         }
       ],
@@ -167,6 +273,32 @@
           "path": "/minecraft:item/components/minecraft:use_modifiers/",
           "content": {
             "use_duration": 3
+          }
+        }
+      ],
+      "/samples/starter_items/behavior_packs/starter_Items/items/elixir.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 4
+          }
+        }
+      ],
+      "/samples/starter_items/behavior_packs/starter_Items/items/hard_biscuit.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 3,
+            "movement_modifier": 0.35
+          }
+        }
+      ],
+      "/samples/starter_items/behavior_packs/starter_Items/items/pear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 1.6,
+            "movement_modifier": 0.35
           }
         }
       ]

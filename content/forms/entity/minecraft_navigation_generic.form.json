@@ -286,6 +286,19 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+          "content": {
+            "is_amphibious": false,
+            "can_path_over_water": false,
+            "can_swim": true,
+            "can_walk": false,
+            "can_breach": false,
+            "can_sink": false
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/pufferfish.json": [
         {
           "path": "/minecraft:entity/components/minecraft:navigation.generic/",
@@ -347,6 +360,19 @@
             "can_walk": true,
             "can_sink": false,
             "avoid_damage_blocks": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+          "content": {
+            "is_amphibious": false,
+            "can_path_over_water": false,
+            "can_swim": true,
+            "can_walk": false,
+            "can_breach": false,
+            "can_sink": false
           }
         }
       ],

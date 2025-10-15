@@ -1,0 +1,134 @@
+{
+  "id": "minecraft:swing_sounds",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:swing_sounds",
+    "title": "Item Swing Sounds",
+    "description": "Overrides the swing sounds emitted by the user.",
+    "fields": [
+      {
+        "id": "attack_critical_hit",
+        "title": "LevelSoundEvent",
+        "description": "Sound played when an attack hits and deals critical damage.",
+        "dataType": 2
+      },
+      {
+        "id": "attack_hit",
+        "title": "LevelSoundEvent",
+        "description": "Sound played when an attack hits.",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/items/copper_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:swing_sounds/",
+              "content": "item.spear.attack_hit"
+            }
+          ],
+          "/vanilla/behavior_pack/items/diamond_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:swing_sounds/",
+              "content": "item.spear.attack_hit"
+            }
+          ],
+          "/vanilla/behavior_pack/items/wooden_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:swing_sounds/",
+              "content": "item.wooden_spear.attack_hit"
+            }
+          ]
+        }
+      },
+      {
+        "id": "attack_miss",
+        "title": "LevelSoundEvent",
+        "description": "Sound played when an attack misses or deals no damage due to invulnerability.",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/items/copper_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:swing_sounds/",
+              "content": "item.spear.attack_miss"
+            }
+          ],
+          "/vanilla/behavior_pack/items/diamond_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:swing_sounds/",
+              "content": "item.spear.attack_miss"
+            }
+          ],
+          "/vanilla/behavior_pack/items/wooden_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:swing_sounds/",
+              "content": "item.wooden_spear.attack_miss"
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/items/copper_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:swing_sounds/",
+          "content": {
+            "attack_miss": "item.spear.attack_miss",
+            "attack_hit": "item.spear.attack_hit"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/diamond_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:swing_sounds/",
+          "content": {
+            "attack_miss": "item.spear.attack_miss",
+            "attack_hit": "item.spear.attack_hit"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/golden_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:swing_sounds/",
+          "content": {
+            "attack_miss": "item.spear.attack_miss",
+            "attack_hit": "item.spear.attack_hit"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/iron_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:swing_sounds/",
+          "content": {
+            "attack_miss": "item.spear.attack_miss",
+            "attack_hit": "item.spear.attack_hit"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/netherite_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:swing_sounds/",
+          "content": {
+            "attack_miss": "item.spear.attack_miss",
+            "attack_hit": "item.spear.attack_hit"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/stone_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:swing_sounds/",
+          "content": {
+            "attack_miss": "item.spear.attack_miss",
+            "attack_hit": "item.spear.attack_hit"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/wooden_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:swing_sounds/",
+          "content": {
+            "attack_miss": "item.wooden_spear.attack_miss",
+            "attack_hit": "item.wooden_spear.attack_hit"
+          }
+        }
+      ]
+    }
+  }
+}

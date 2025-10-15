@@ -2,9 +2,9 @@
   href: ../AIGoalList.md
 - name: minecraft:behavior.admire_item
   href: minecraftBehavior_admire_item.md
-- name: minecraft:behavior.avoid_block
+- name: minecraft:behavior.avoid_block (See JSON Schema since 1.21.120)
   href: minecraftBehavior_avoid_block.md
-- name: minecraft:behavior.avoid_mob_type
+- name: minecraft:behavior.avoid_mob_type (See JSON Schema since 1.21.120)
   href: minecraftBehavior_avoid_mob_type.md
 - name: minecraft:behavior.barter
   href: minecraftBehavior_barter.md
@@ -18,13 +18,13 @@
   href: minecraftBehavior_celebrate.md
 - name: minecraft:behavior.celebrate_survive
   href: minecraftBehavior_celebrate_survive.md
-- name: minecraft:behavior.charge_attack
+- name: minecraft:behavior.charge_attack (See JSON Schema since 1.21.100)
   href: minecraftBehavior_charge_attack.md
 - name: minecraft:behavior.charge_held_item
   href: minecraftBehavior_charge_held_item.md
-- name: minecraft:behavior.circle_around_anchor
+- name: minecraft:behavior.circle_around_anchor (See JSON Schema since 1.21.100)
   href: minecraftBehavior_circle_around_anchor.md
-- name: minecraft:behavior.controlled_by_player
+- name: minecraft:behavior.controlled_by_player (See JSON Schema since 1.21.100)
   href: minecraftBehavior_controlled_by_player.md
 - name: minecraft:behavior.croak
   href: minecraftBehavior_croak.md
@@ -34,7 +34,7 @@
   href: minecraftBehavior_defend_village_target.md
 - name: minecraft:behavior.delayed_attack
   href: minecraftBehavior_delayed_attack.md
-- name: minecraft:behavior.dig
+- name: minecraft:behavior.dig (See JSON Schema since 1.21.120)
   href: minecraftBehavior_dig.md
 - name: minecraft:behavior.door_interact
   href: minecraftBehavior_door_interact.md
@@ -42,7 +42,7 @@
   href: minecraftBehavior_dragonchargeplayer.md
 - name: minecraft:behavior.dragondeath
   href: minecraftBehavior_dragondeath.md
-- name: minecraft:behavior.dragonflaming
+- name: minecraft:behavior.dragonflaming (See JSON Schema since 1.21.100)
   href: minecraftBehavior_dragonflaming.md
 - name: minecraft:behavior.dragonholdingpattern
   href: minecraftBehavior_dragonholdingpattern.md
@@ -54,7 +54,7 @@
   href: minecraftBehavior_dragonstrafeplayer.md
 - name: minecraft:behavior.dragontakeoff
   href: minecraftBehavior_dragontakeoff.md
-- name: minecraft:behavior.drink_milk
+- name: minecraft:behavior.drink_milk (See JSON Schema since 1.21.120)
   href: minecraftBehavior_drink_milk.md
 - name: minecraft:behavior.drink_potion
   href: minecraftBehavior_drink_potion.md
@@ -64,7 +64,7 @@
   href: minecraftBehavior_eat_block.md
 - name: minecraft:behavior.eat_carried_item
   href: minecraftBehavior_eat_carried_item.md
-- name: minecraft:behavior.eat_mob
+- name: minecraft:behavior.eat_mob (See JSON Schema since 1.21.100)
   href: minecraftBehavior_eat_mob.md
 - name: minecraft:behavior.emerge
   href: minecraftBehavior_emerge.md
@@ -74,7 +74,7 @@
   href: minecraftBehavior_enderman_take_block.md
 - name: minecraft:behavior.equip_item
   href: minecraftBehavior_equip_item.md
-- name: minecraft:behavior.explore_outskirts
+- name: minecraft:behavior.explore_outskirts (See JSON Schema since 1.21.130)
   href: minecraftBehavior_explore_outskirts.md
 - name: minecraft:behavior.fertilize_farm_block
   href: minecraftBehavior_fertilize_farm_block.md
@@ -122,7 +122,7 @@
   href: minecraftBehavior_hurt_by_target.md
 - name: minecraft:behavior.inspect_bookshelf
   href: minecraftBehavior_inspect_bookshelf.md
-- name: minecraft:behavior.investigate_suspicious_location
+- name: minecraft:behavior.investigate_suspicious_location (See JSON Schema since 1.21.130)
   href: minecraftBehavior_investigate_suspicious_location.md
 - name: minecraft:behavior.jump_around_target
   href: minecraftBehavior_jump.around_target.md
@@ -248,7 +248,7 @@
   href: minecraftBehavior_restrict_sun.md
 - name: minecraft:behavior.rise_to_liquid_level
   href: minecraftBehavior_rise_to_liquid_level.md
-- name: minecraft:behavior.roar
+- name: minecraft:behavior.roar (See JSON Schema since 1.21.110)
   href: minecraftBehavior_roar.md
 - name: minecraft:behavior.roll
   href: minecraftBehavior_roll.md
@@ -268,21 +268,21 @@
   href: minecraftBehavior_skeleton_horse.trap.md
 - name: minecraft:behavior.sleep
   href: minecraftBehavior_sleep.md
-- name: minecraft:behavior.slime_attack
+- name: minecraft:behavior.slime_attack (See JSON Schema since 1.21.110)
   href: minecraftBehavior_slime_attack.md
-- name: minecraft:behavior.slime_float
+- name: minecraft:behavior.slime_float (See JSON Schema since 1.21.110)
   href: minecraftBehavior_slime_float.md
-- name: minecraft:behavior.slime_keep_on_jumping
+- name: minecraft:behavior.slime_keep_on_jumping (See JSON Schema since 1.21.110)
   href: minecraftBehavior_slime_keep_on_jumping.md
-- name: minecraft:behavior.slime_random_direction
+- name: minecraft:behavior.slime_random_direction (See JSON Schema since 1.21.110)
   href: minecraftBehavior_slime_random_direction.md
 - name: minecraft:behavior.snacking
   href: minecraftBehavior_snacking.md
 - name: minecraft:behavior.sneeze
   href: minecraftBehavior_sneeze.md
-- name: minecraft:behavior.sniff
+- name: minecraft:behavior.sniff (See JSON Schema since 1.21.110)
   href: minecraftBehavior_sniff.md
-- name: minecraft:behavior.sonic_boom
+- name: minecraft:behavior.sonic_boom (See JSON Schema since 1.21.110)
   href: minecraftBehavior_sonic_boom.md
 - name: minecraft:behavior.squid_dive
   href: minecraftBehavior_squid_dive.md
@@ -296,7 +296,7 @@
   href: minecraftBehavior_squid_out_of_water.md
 - name: minecraft:behavior.stalk_and_pounce_on_target
   href: minecraftBehavior_stalk_and_pounce_on_target.md
-- name: minecraft:behavior.stay_near_noteblock
+- name: minecraft:behavior.stay_near_noteblock (See JSON Schema since 1.21.110)
   href: minecraftBehavior_stay_near_noteblock.md
 - name: minecraft:behavior.stay_while_sitting
   href: minecraftBehavior_stay_while_sitting.md
@@ -310,15 +310,15 @@
   href: minecraftBehavior_summon_entity.md
 - name: minecraft:behavior.swell
   href: minecraftBehavior_swell.md
-- name: minecraft:behavior.swim_idle
+- name: minecraft:behavior.swim_idle (See JSON Schema since 1.21.110)
   href: minecraftBehavior_swim_idle.md
-- name: minecraft:behavior.swim_up_for_breath
+- name: minecraft:behavior.swim_up_for_breath (See JSON Schema since 1.21.110)
   href: minecraftBehavior_swim_up_for_breath.md
-- name: minecraft:behavior.swim_wander
+- name: minecraft:behavior.swim_wander (See JSON Schema since 1.21.110)
   href: minecraftBehavior_swim_wander.md
 - name: minecraft:behavior.swim_with_entity
   href: minecraftBehavior_swim_with_entity.md
-- name: minecraft:behavior.swoop_attack
+- name: minecraft:behavior.swoop_attack (See JSON Schema since 1.21.110)
   href: minecraftBehavior_swoop_attack.md
 - name: minecraft:behavior.take_block
   href: minecraftBehavior_take_block.md

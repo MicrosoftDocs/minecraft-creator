@@ -1,0 +1,35 @@
+{
+  "id": "Destruction Particles",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Destruction Particles",
+    "title": "Block Destruction Particles",
+    "description": "Sets the particles that will be used when block is destroyed. This component can be omitted.",
+    "fields": [
+      {
+        "id": "particle_count",
+        "title": "Particle Count",
+        "description": "Sets number of particles to spawn on block destruction. Default is 100.",
+        "dataType": 0,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 255
+          }
+        ]
+      },
+      {
+        "id": "texture",
+        "title": "Texture",
+        "description": "The texture name used for the particle.",
+        "dataType": 2
+      },
+      {
+        "id": "tint_method",
+        "title": "Tint Method",
+        "description": "Sets the tint method of the particle. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint. Supported tint methods are \"none\", \"default_foliage\", \"birch_foliage\", \"evergreen_foliage\", \"dry_foliage\", \"grass\" and \"water\"",
+        "dataType": 2
+      }
+    ]
+  }
+}

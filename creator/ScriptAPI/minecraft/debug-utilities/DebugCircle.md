@@ -19,10 +19,10 @@ A debug shape class that represents a circle (2D).
 
 ### **constructor**
 `
-new DebugCircle(location: minecraftserver.Vector3)
+new DebugCircle(location: minecraftserver.DimensionLocation | minecraftserver.Vector3)
 `
 
 #### **Parameters**
-- **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+- **location**: [*@minecraft/server.DimensionLocation*](../../../scriptapi/minecraft/server/DimensionLocation.md) | [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 **Returns** [*DebugCircle*](DebugCircle.md)

@@ -1,0 +1,29 @@
+{
+  "id": "minecraft:kinetic_weapon kinetic_effect_conditions",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:kinetic_weapon kinetic_effect_conditions",
+    "title": "Item Components Kinetic Weapon Kinetic Effect Conditions",
+    "description": "Conditions that need to be satisfied for a specific effect of a kinetic weapon to be applied.",
+    "fields": [
+      {
+        "id": "max_duration",
+        "title": "Max Duration",
+        "description": "Time, in ticks, during which the effect can be applied after \"delay\" elapses. If negative, the effect is applied indefinitely. Default value: -1.",
+        "dataType": 0
+      },
+      {
+        "id": "min_relative_speed",
+        "title": "Min Relative Speed",
+        "description": "Minimum relative speed of the user with respect to the target (projected onto the view vector via a dot product) required for the effect to be applied. Default value: 0.",
+        "dataType": 3
+      },
+      {
+        "id": "min_speed",
+        "title": "Min Speed",
+        "description": "Minimum user's speed (projected onto the view vector via a dot product) required for the effect to be applied. Default value: 0.",
+        "dataType": 3
+      }
+    ]
+  }
+}

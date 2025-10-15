@@ -28,11 +28,11 @@ Type: *string*
 
 ### **constructor**
 `
-new DebugText(location: minecraftserver.Vector3, text: string)
+new DebugText(location: minecraftserver.DimensionLocation | minecraftserver.Vector3, text: string)
 `
 
 #### **Parameters**
-- **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+- **location**: [*@minecraft/server.DimensionLocation*](../../../scriptapi/minecraft/server/DimensionLocation.md) | [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **text**: *string*
 
 **Returns** [*DebugText*](DebugText.md)

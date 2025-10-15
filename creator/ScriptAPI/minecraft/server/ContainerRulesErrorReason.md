@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.ContainerRulesErrorReason Enumeration
 description: Contents of the @minecraft/server.ContainerRulesErrorReason enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ContainerRulesErrorReason Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Reasons that the {@link @minecraft/server.ContainerRulesError} was thrown.
 

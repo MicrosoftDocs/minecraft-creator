@@ -4,6 +4,7 @@
   "generatedFromSchema_doNotEdit": {
     "id": "Range",
     "title": "Block Range",
+    "description": "Define a range of integer value using a \"min\" and \"max\" limit and must be assigned to \"values\"",
     "fields": [
       {
         "id": "max",

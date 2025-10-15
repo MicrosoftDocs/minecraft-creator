@@ -1,8 +1,8 @@
 {
   "fields": [],
   "generated_doNotEdit": {
-    "id": "minecraft:behavior.avoid_mob_type",
-    "title": "Avoid Mob Type Behavior",
+    "id": "minecraft:behavior.avoid_mob_type (See JSON Schema since 1.21.120)",
+    "title": "Avoid Mob Type (See JSON Schema Since 1.21.120) Behavior",
     "description": "Allows the entity to run away from other entities that meet the criteria specified.",
     "fields": [
       {
@@ -43,7 +43,7 @@
         "id": "entity_types",
         "title": "Entity Types",
         "description": "The list of conditions another entity must meet to be a valid target to avoid.",
-        "dataType": 20,
+        "dataType": 17,
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
@@ -389,8 +389,7 @@
                     "all_of": [
                       {
                         "test": "has_target",
-                        "subject": "other",
-                        "value": true
+                        "subject": "other"
                       },
                       {
                         "test": "is_family",
@@ -912,8 +911,8 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
               "content": {
-                "range_min": 2,
-                "range_max": 5
+                "min": 2,
+                "max": 5
               }
             }
           ]
@@ -1420,8 +1419,7 @@
                   "all_of": [
                     {
                       "test": "has_target",
-                      "subject": "other",
-                      "value": true
+                      "subject": "other"
                     },
                     {
                       "test": "is_family",
@@ -1440,8 +1438,8 @@
             },
             "avoid_mob_sound": "retreat",
             "sound_interval": {
-              "range_min": 2,
-              "range_max": 5
+              "min": 2,
+              "max": 5
             }
           }
         }

@@ -346,6 +346,20 @@
               ]
             }
           ],
+          "/vanilla/behavior_pack/entities/nautilus.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:nautilus_adult/minecraft:breedable/",
+              "content": [
+                "pufferfish",
+                "pufferfish_bucket",
+                "fish",
+                "salmon",
+                "clownfish",
+                "cooked_fish",
+                "cooked_salmon"
+              ]
+            }
+          ],
           "/vanilla/behavior_pack/entities/ocelot.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:ocelot_trusting/minecraft:breedable/",
@@ -1117,6 +1131,31 @@
               "min_variant": 0,
               "max_variant": 1
             }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_adult/minecraft:breedable/",
+          "content": {
+            "breed_items": [
+              "pufferfish",
+              "pufferfish_bucket",
+              "fish",
+              "salmon",
+              "clownfish",
+              "cooked_fish",
+              "cooked_salmon"
+            ],
+            "breeds_with": {
+              "mate_type": "minecraft:nautilus",
+              "baby_type": "minecraft:nautilus",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "require_tame": true
           }
         }
       ],

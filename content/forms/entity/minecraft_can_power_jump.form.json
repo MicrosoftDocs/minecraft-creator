@@ -29,6 +29,12 @@
           "path": "/minecraft:entity/components/minecraft:can_power_jump/",
           "content": {}
         }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:horse_saddled/minecraft:can_power_jump/",
+          "content": {}
+        }
       ]
     }
   }

@@ -59,7 +59,7 @@
               }
             }
           ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
+          "/vanilla/behavior_pack/entities/nautilus.json": [
             {
               "path": "/minecraft:entity/components/minecraft:despawn/",
               "content": {
@@ -506,6 +506,17 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {
+              "min_distance": 32,
+              "max_distance": 40
+            }
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/ocelot.json": [
         {
           "path": "/minecraft:entity/components/minecraft:despawn/",
@@ -891,6 +902,17 @@
           "path": "/minecraft:entity/components/minecraft:despawn/",
           "content": {
             "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {
+              "min_distance": 32,
+              "max_distance": 40
+            }
           }
         }
       ],

@@ -14,9 +14,15 @@
       {
         "id": "description",
         "title": "Description",
+        "description": "Information about the block, must have at minimum an \"identifier\" and can have also the following optional field \"menu_category\", \"states\" and/or \"traits\"",
         "dataType": 16,
         "subFormId": "block/description",
         "isRequired": true
+      },
+      {
+        "id": "mOrderedV1CustomComponents",
+        "title": "mOrderedV1CustomComponents",
+        "dataType": 17
       },
       {
         "id": "permutations",

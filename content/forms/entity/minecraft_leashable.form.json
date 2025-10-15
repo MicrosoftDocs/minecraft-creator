@@ -118,6 +118,15 @@
               }
             }
           ],
+          "/vanilla/behavior_pack/entities/nautilus.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:leashable/",
+              "content": {
+                "event": "minecraft:on_unleashed",
+                "target": "self"
+              }
+            }
+          ],
           "/vanilla/behavior_pack/entities/ocelot.json": [
             {
               "path": "/minecraft:entity/components/minecraft:leashable/",
@@ -471,6 +480,23 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:leashable/",
+          "content": {
+            "on_unleash": {
+              "event": "minecraft:on_unleashed",
+              "target": "self"
+            },
+            "presets": [
+              {
+                "hard_distance": 10,
+                "max_distance": 14
+              }
+            ]
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/ocelot.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
@@ -606,8 +632,12 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_horse.json": [
         {
-          "path": "/minecraft:entity/components/minecraft:leashable/",
+          "path": "/minecraft:entity/component_groups/minecraft:horse_tamed/minecraft:leashable/",
           "content": {
+            "on_unleash": {
+              "event": "minecraft:on_unleashed",
+              "target": "self"
+            },
             "presets": [
               {
                 "filter": {
@@ -616,6 +646,27 @@
                   "value": "happy_ghast"
                 },
                 "spring_type": "quad_dampened"
+              },
+              {
+                "hard_distance": 10,
+                "max_distance": 14
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:leashable/",
+          "content": {
+            "on_unleash": {
+              "event": "minecraft:on_unleashed",
+              "target": "self"
+            },
+            "presets": [
+              {
+                "hard_distance": 10,
+                "max_distance": 14
               }
             ]
           }

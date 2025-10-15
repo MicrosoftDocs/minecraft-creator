@@ -9,10 +9,7 @@ ms.date: 09/24/2025
 
 # Terrain Matching Tips & FAQ
 
-Terrain matching means the structure can adapt to the terrain. This is in contrast with Rigid, which means the structure doesn't adapt to the terrain.
-
-> [!TIP]
-> There's a bunch more information on terrain matching under `"projection"` in the [Jigsaw Template Pools](../../Reference/Content/WorldgenReference/Examples/JigsawTemplatePools.md) documentation.
+Terrain matching means the structure can adapt to the terrain. This is in contrast with Rigid, which means the structure doesn't adapt to the terrain. See `"Projection"` in [Jigsaw Template Pools](../../Reference/Content/WorldgenReference/Examples/JigsawTemplatePools.md).
 
 ## Dealing with verticality &mdash; the bane of terrain matching
 

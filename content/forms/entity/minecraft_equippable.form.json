@@ -193,6 +193,39 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equippable/",
+          "content": {
+            "slots": [
+              {
+                "slot": 0,
+                "item": "saddle",
+                "accepted_items": [
+                  "saddle"
+                ],
+                "on_equip": {
+                  "event": "minecraft:on_saddled"
+                },
+                "on_unequip": {
+                  "event": "minecraft:on_unsaddled"
+                }
+              },
+              {
+                "slot": 1,
+                "item": "nautilusarmor",
+                "accepted_items": [
+                  "minecraft:copper_nautilus_armor",
+                  "minecraft:iron_nautilus_armor",
+                  "minecraft:golden_nautilus_armor",
+                  "minecraft:diamond_nautilus_armor",
+                  "minecraft:netherite_nautilus_armor"
+                ]
+              }
+            ]
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/trader_llama.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:equippable/",
@@ -203,6 +236,72 @@
                 "item": "carpet",
                 "accepted_items": [
                   "carpet"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equippable/",
+          "content": {
+            "slots": [
+              {
+                "slot": 0,
+                "item": "saddle",
+                "accepted_items": [
+                  "saddle"
+                ],
+                "on_equip": {
+                  "event": "minecraft:horse_saddled"
+                },
+                "on_unequip": {
+                  "event": "minecraft:horse_unsaddled"
+                }
+              },
+              {
+                "slot": 1,
+                "item": "horsearmoriron",
+                "accepted_items": [
+                  "horsearmorleather",
+                  "horsearmoriron",
+                  "horsearmorgold",
+                  "horsearmordiamond",
+                  "minecraft:copper_horse_armor"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equippable/",
+          "content": {
+            "slots": [
+              {
+                "slot": 0,
+                "item": "saddle",
+                "accepted_items": [
+                  "saddle"
+                ],
+                "on_equip": {
+                  "event": "minecraft:on_saddled"
+                },
+                "on_unequip": {
+                  "event": "minecraft:on_unsaddled"
+                }
+              },
+              {
+                "slot": 1,
+                "item": "nautilusarmor",
+                "accepted_items": [
+                  "minecraft:copper_nautilus_armor",
+                  "minecraft:iron_nautilus_armor",
+                  "minecraft:golden_nautilus_armor",
+                  "minecraft:diamond_nautilus_armor",
+                  "minecraft:netherite_nautilus_armor"
                 ]
               }
             ]

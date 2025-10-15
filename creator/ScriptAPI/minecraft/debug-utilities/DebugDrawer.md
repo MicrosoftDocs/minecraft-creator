@@ -18,7 +18,7 @@ Debug Drawing class used to allow adding and removing wireframe shapes in world 
 
 ### **addShape**
 `
-addShape(shape: DebugShape): void
+addShape(shape: DebugShape, dimension?: minecraftserver.Dimension): void
 `
 
 Adds a new debug shape to the world.
@@ -27,6 +27,7 @@ Adds a new debug shape to the world.
 - **shape**: [*DebugShape*](DebugShape.md)
   
   The debug shape to be added. Should be of type DebugBox, DebugLine, DebugCircle, DebugSphere, DebugArrow or DebugText.
+- **dimension**?: [*@minecraft/server.Dimension*](../../../scriptapi/minecraft/server/Dimension.md) = `null`
 
 ### **removeAll**
 `

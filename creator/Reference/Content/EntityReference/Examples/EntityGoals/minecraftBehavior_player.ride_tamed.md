@@ -35,3 +35,12 @@ Allows the mob to be ridden by the player after being tamed.
   "priority": 1
 }
 ```
+
+#### [Nautilus](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/nautilus.json)
+
+
+```json
+"minecraft:behavior.player_ride_tamed": {
+  "priority": 0
+}
+```

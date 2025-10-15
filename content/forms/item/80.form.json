@@ -77,7 +77,7 @@
       {
         "id": "minecraft:cooldown",
         "title": "Minecraft Cooldown",
-        "description": "After you use an item, all items with a \"minecraft:cooldown\" component with the same \"category\" become unusable for the amount of seconds specified in \"duration\".",
+        "description": "Adds a cooldown to the item so that, after performing an action of the specified \"type\", all items with a \"minecraft:cooldown\" component in the same \"category\" become unable to perform that same type of action for the number of seconds defined in \"duration\".",
         "dataType": 16,
         "subFormId": "item_components/minecraft_cooldown"
       },

@@ -13,7 +13,6 @@ Contains additional options for spawning an Entity.
 
 ## Properties
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **initialPersistence**
 `initialPersistence?: boolean;`
 
@@ -21,21 +20,12 @@ Optional boolean which determines if this entity should persist in the game worl
 
 Type: *boolean*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **initialRotation**
 `initialRotation?: number;`
 
 Optional initial rotation, in degrees, to set on the entity when it spawns.
 
 Type: *number*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **spawnEvent**
 `spawnEvent?: string;`

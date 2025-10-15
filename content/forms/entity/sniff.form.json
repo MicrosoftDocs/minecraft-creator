@@ -16,7 +16,7 @@
         "title": "Cooldown Range",
         "description": "Cooldown range between sniffs in seconds Default value: [3.0, 10.0].",
         "dataType": 16,
-        "subFormId": "entity/floatrange"
+        "subFormId": "item_components/floatrange"
       },
       {
         "id": "duration",

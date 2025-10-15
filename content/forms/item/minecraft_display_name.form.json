@@ -24,10 +24,46 @@
               "content": "item.breeze_rod.name"
             }
           ],
+          "/vanilla/behavior_pack/items/copper_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.copper_spear.name"
+            }
+          ],
+          "/vanilla/behavior_pack/items/diamond_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.diamond_spear.name"
+            }
+          ],
+          "/vanilla/behavior_pack/items/golden_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.golden_spear.name"
+            }
+          ],
+          "/vanilla/behavior_pack/items/iron_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.iron_spear.name"
+            }
+          ],
+          "/vanilla/behavior_pack/items/netherite_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.netherite_spear.name"
+            }
+          ],
           "/vanilla/behavior_pack/items/ominous_trial_key.json": [
             {
               "path": "/minecraft:item/components/minecraft:display_name/",
               "content": "item.ominous_trial_key.name"
+            }
+          ],
+          "/vanilla/behavior_pack/items/stone_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.stone_spear.name"
             }
           ],
           "/vanilla/behavior_pack/items/trial_key.json": [
@@ -40,6 +76,12 @@
             {
               "path": "/minecraft:item/components/minecraft:display_name/",
               "content": "item.wind_charge.name"
+            }
+          ],
+          "/vanilla/behavior_pack/items/wooden_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.wooden_spear.name"
             }
           ],
           "/samples/creator_camp/behavior_packs/creator_camp/items/bag_o_leaves.json": [
@@ -113,6 +155,36 @@
               "path": "/minecraft:item/components/minecraft:display_name/",
               "content": "Really Just Wet Paper"
             }
+          ],
+          "/samples/starter_items/behavior_packs/starter_Items/items/elixir.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.elixir.name"
+            }
+          ],
+          "/samples/starter_items/behavior_packs/starter_Items/items/hard_biscuit.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.hard_biscuit.name"
+            }
+          ],
+          "/samples/starter_items/behavior_packs/starter_Items/items/key.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.key.name"
+            }
+          ],
+          "/samples/starter_items/behavior_packs/starter_Items/items/pear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.pear.name"
+            }
+          ],
+          "/samples/starter_items/behavior_packs/starter_Items/items/rod.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.rod.name"
+            }
           ]
         }
       }
@@ -134,11 +206,59 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/items/copper_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.copper_spear.name"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/diamond_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.diamond_spear.name"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/golden_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.golden_spear.name"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/iron_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.iron_spear.name"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/netherite_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.netherite_spear.name"
+          }
+        }
+      ],
       "/vanilla/behavior_pack/items/ominous_trial_key.json": [
         {
           "path": "/minecraft:item/components/minecraft:display_name/",
           "content": {
             "value": "item.ominous_trial_key.name"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/stone_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.stone_spear.name"
           }
         }
       ],
@@ -155,6 +275,14 @@
           "path": "/minecraft:item/components/minecraft:display_name/",
           "content": {
             "value": "item.wind_charge.name"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/wooden_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.wooden_spear.name"
           }
         }
       ],
@@ -251,6 +379,46 @@
           "path": "/minecraft:item/components/minecraft:display_name/",
           "content": {
             "value": "Really Just Wet Paper"
+          }
+        }
+      ],
+      "/samples/starter_items/behavior_packs/starter_Items/items/elixir.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.elixir.name"
+          }
+        }
+      ],
+      "/samples/starter_items/behavior_packs/starter_Items/items/hard_biscuit.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.hard_biscuit.name"
+          }
+        }
+      ],
+      "/samples/starter_items/behavior_packs/starter_Items/items/key.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.key.name"
+          }
+        }
+      ],
+      "/samples/starter_items/behavior_packs/starter_Items/items/pear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.pear.name"
+          }
+        }
+      ],
+      "/samples/starter_items/behavior_packs/starter_Items/items/rod.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.rod.name"
           }
         }
       ]
