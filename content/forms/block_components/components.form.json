@@ -6,6 +6,13 @@
     "title": "Block Components Components",
     "fields": [
       {
+        "id": "minecraft:destruction_particles",
+        "title": "Minecraft Destruction Particles",
+        "description": "Sets the particles that will be used when block is destroyed. This component can be omitted.",
+        "dataType": 16,
+        "subFormId": "block_components/destruction_particles"
+      },
+      {
         "id": "minecraft:display_name",
         "title": "Minecraft Display Name",
         "description": "Specifies the language file key that maps to what text will be displayed when you hover over the block in your inventory and hotbar. If the string given can not be resolved as a loc string, the raw string given will be displayed. If this component is omitted, the name of the block will be used as the display name.",
@@ -14,14 +21,21 @@
       {
         "id": "minecraft:light_dampening",
         "title": "Minecraft Light Dampening",
-        "description": "The amount that light will be dampened when it passes through the block, in a range (0-15). Higher value means the light will be dampened more.",
+        "description": "The amount that light will be dampened when it passes through the block. Higher value means the light will be dampened more.",
         "dataType": 16
       },
       {
         "id": "minecraft:light_emission",
         "title": "Minecraft Light Emission",
-        "description": "The amount of light this block will emit in a range (0-15). Higher value means more light will be emitted.",
+        "description": "The amount of light this block will emit. Higher value means more light will be emitted.",
         "dataType": 16
+      },
+      {
+        "id": "minecraft:map_color",
+        "title": "Minecraft Map Color",
+        "description": "Sets the color and optional tint of the block when rendered to a map.",
+        "dataType": 16,
+        "subFormId": "block_components/map_color"
       },
       {
         "id": "minecraft:tags",

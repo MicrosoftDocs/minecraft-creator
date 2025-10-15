@@ -19,7 +19,7 @@ Returns true when the subject entity is inside a specified Block type.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Skeleton: `"!="`, `"=="` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Skeleton: `"not"` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Skeleton: `"self"` | 
 | test | *not set* | String |  | Skeleton: `"in_block"` | 
 | value | *not set* | String | (Optional) A string value. | Skeleton: `"minecraft:powder_snow"` | 
@@ -73,7 +73,7 @@ At /minecraft:entity/component_groups/in_powder_snow/minecraft:environment_senso
 {
   "test": "in_block",
   "subject": "self",
-  "operator": "!=",
+  "operator": "not",
   "value": "minecraft:powder_snow"
 }
 ```
@@ -84,7 +84,15 @@ At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environm
 {
   "test": "in_block",
   "subject": "self",
-  "operator": "==",
+  "value": "minecraft:powder_snow"
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/1/filters/: 
+
+```json
+{
+  "test": "in_block",
   "value": "minecraft:powder_snow"
 }
 ```

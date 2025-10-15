@@ -297,6 +297,20 @@
               ]
             }
           ],
+          "/vanilla/behavior_pack/entities/nautilus.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:nautilus_baby/minecraft:ageable/",
+              "content": [
+                "pufferfish",
+                "pufferfish_bucket",
+                "fish",
+                "salmon",
+                "clownfish",
+                "cooked_fish",
+                "cooked_salmon"
+              ]
+            }
+          ],
           "/vanilla/behavior_pack/entities/panda.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:panda_baby/minecraft:ageable/",
@@ -892,6 +906,27 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "pufferfish",
+              "pufferfish_bucket",
+              "fish",
+              "salmon",
+              "clownfish",
+              "cooked_fish",
+              "cooked_salmon"
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/ocelot.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:ocelot_baby/minecraft:ageable/",
@@ -1119,18 +1154,6 @@
               "cooked_rabbit",
               "rotten_flesh"
             ],
-            "grow_up": {
-              "event": "minecraft:ageable_grow_up",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_horse.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_baby/minecraft:ageable/",
-          "content": {
-            "duration": 1200,
             "grow_up": {
               "event": "minecraft:ageable_grow_up",
               "target": "self"

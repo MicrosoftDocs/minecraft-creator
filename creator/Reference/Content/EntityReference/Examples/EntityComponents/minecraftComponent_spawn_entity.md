@@ -162,6 +162,22 @@ Adds a timer after which this entity will spawn another entity or item (similar 
 }
 ```
 
+#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
+
+
+```json
+"minecraft:spawn_entity": {
+  "entities": {
+    "min_wait_time": 0,
+    "max_wait_time": 0,
+    "num_to_spawn": 1,
+    "single_use": true,
+    "spawn_entity": "minecraft:zombie_nautilus",
+    "spawn_event": "minecraft:spawn_adult"
+  }
+}
+```
+
 #### [Ocelot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ocelot.json)
 
 

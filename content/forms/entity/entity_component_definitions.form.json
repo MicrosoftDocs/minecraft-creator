@@ -3353,6 +3353,12 @@
         "dataType": 16
       },
       {
+        "id": "minecraft:body_rotation_locked_to_vehicle",
+        "title": "Minecraft Body Rotation Locked To Vehicle",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
         "id": "minecraft:boostable",
         "title": "Minecraft Boostable",
         "description": "Dynamic value",
@@ -4393,6 +4399,12 @@
       {
         "id": "minecraft:type_family",
         "title": "Minecraft Type Family",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:underwater_mount_breathing",
+        "title": "Minecraft Underwater Mount Breathing",
         "description": "Dynamic value",
         "dataType": 16
       },

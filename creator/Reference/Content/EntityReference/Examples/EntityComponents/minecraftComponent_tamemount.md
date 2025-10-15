@@ -195,6 +195,48 @@ The list of items that can be used to increase the entity's temper and speed up 
 }
 ```
 
+#### [Zombie Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_horse.json)
+
+
+```json
+"minecraft:tamemount": {
+  "min_temper": 0,
+  "max_temper": 100,
+  "feed_text": "action.interact.feed",
+  "ride_text": "action.interact.mount",
+  "feed_items": [
+    {
+      "item": "red_mushroom",
+      "temper_mod": 10
+    }
+  ],
+  "auto_reject_items": [
+    {
+      "item": "horsearmorleather"
+    },
+    {
+      "item": "horsearmoriron"
+    },
+    {
+      "item": "horsearmorgold"
+    },
+    {
+      "item": "horsearmordiamond"
+    },
+    {
+      "item": "minecraft:copper_horse_armor"
+    },
+    {
+      "item": "saddle"
+    }
+  ],
+  "tame_event": {
+    "event": "minecraft:on_tame",
+    "target": "self"
+  }
+}
+```
+
 #### [Frost Moose](https://github.com/microsoft/minecraft-samples/tree/main/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json)
 
 

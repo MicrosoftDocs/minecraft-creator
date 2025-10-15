@@ -11,8 +11,26 @@
         "title": "Slot",
         "description": "Specifies which types of enchantments can be applied. For example, `bow` would allow this item to be enchanted as if it were a bow.",
         "dataType": 2,
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "none|all|g_armor|armor_head|armor_torso|armor_feet|armor_legs|sword|bow|spear|crossbow|melee_spear|g_tool|hoe|shears|flintsteel|shield|g_digging|axe|pickaxe|shovel|fishing_rod|carrot_stick|elytra|cosmetic_head"
+          }
+        ],
         "isRequired": true,
         "samples": {
+          "/vanilla/behavior_pack/items/copper_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:enchantable/",
+              "content": "melee_spear"
+            }
+          ],
+          "/vanilla/behavior_pack/items/diamond_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:enchantable/",
+              "content": "melee_spear"
+            }
+          ],
           "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/axe_turret_kit.item.json": [
             {
               "path": "/minecraft:item/components/minecraft:enchantable/",
@@ -58,13 +76,49 @@
         "dataType": 0,
         "isRequired": true,
         "samples": {
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/axe_turret_kit.item.json": [
+          "/vanilla/behavior_pack/items/copper_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:enchantable/",
+              "content": 13
+            }
+          ],
+          "/vanilla/behavior_pack/items/diamond_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:enchantable/",
+              "content": 10
+            }
+          ],
+          "/vanilla/behavior_pack/items/golden_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:enchantable/",
+              "content": 22
+            }
+          ],
+          "/vanilla/behavior_pack/items/iron_spear.json": [
             {
               "path": "/minecraft:item/components/minecraft:enchantable/",
               "content": 14
             }
           ],
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/bow_turret_kit.item.json": [
+          "/vanilla/behavior_pack/items/netherite_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:enchantable/",
+              "content": 15
+            }
+          ],
+          "/vanilla/behavior_pack/items/stone_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:enchantable/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/items/wooden_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:enchantable/",
+              "content": 15
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/axe_turret_kit.item.json": [
             {
               "path": "/minecraft:item/components/minecraft:enchantable/",
               "content": 14
@@ -75,17 +129,74 @@
               "path": "/minecraft:item/components/minecraft:enchantable/",
               "content": 10
             }
-          ],
-          "/samples/custom_items/behavior_packs/custom_item/items/my_boots.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:enchantable/",
-              "content": 10
-            }
           ]
         }
       }
     ],
     "samples": {
+      "/vanilla/behavior_pack/items/copper_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:enchantable/",
+          "content": {
+            "slot": "melee_spear",
+            "value": 13
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/diamond_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:enchantable/",
+          "content": {
+            "slot": "melee_spear",
+            "value": 10
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/golden_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:enchantable/",
+          "content": {
+            "slot": "melee_spear",
+            "value": 22
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/iron_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:enchantable/",
+          "content": {
+            "slot": "melee_spear",
+            "value": 14
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/netherite_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:enchantable/",
+          "content": {
+            "slot": "melee_spear",
+            "value": 15
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/stone_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:enchantable/",
+          "content": {
+            "slot": "melee_spear",
+            "value": 5
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/wooden_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:enchantable/",
+          "content": {
+            "slot": "melee_spear",
+            "value": 15
+          }
+        }
+      ],
       "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/axe_turret_kit.item.json": [
         {
           "path": "/minecraft:item/components/minecraft:enchantable/",

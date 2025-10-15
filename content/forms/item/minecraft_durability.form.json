@@ -58,6 +58,48 @@
         "dataType": 0,
         "isRequired": true,
         "samples": {
+          "/vanilla/behavior_pack/items/copper_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:durability/",
+              "content": 190
+            }
+          ],
+          "/vanilla/behavior_pack/items/diamond_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:durability/",
+              "content": 1560
+            }
+          ],
+          "/vanilla/behavior_pack/items/golden_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:durability/",
+              "content": 30
+            }
+          ],
+          "/vanilla/behavior_pack/items/iron_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:durability/",
+              "content": 250
+            }
+          ],
+          "/vanilla/behavior_pack/items/netherite_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:durability/",
+              "content": 2030
+            }
+          ],
+          "/vanilla/behavior_pack/items/stone_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:durability/",
+              "content": 130
+            }
+          ],
+          "/vanilla/behavior_pack/items/wooden_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:durability/",
+              "content": 60
+            }
+          ],
           "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/axe_turret_kit.item.json": [
             {
               "path": "/minecraft:item/components/minecraft:durability/",
@@ -116,6 +158,62 @@
       }
     ],
     "samples": {
+      "/vanilla/behavior_pack/items/copper_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:durability/",
+          "content": {
+            "max_durability": 190
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/diamond_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:durability/",
+          "content": {
+            "max_durability": 1560
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/golden_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:durability/",
+          "content": {
+            "max_durability": 30
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/iron_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:durability/",
+          "content": {
+            "max_durability": 250
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/netherite_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:durability/",
+          "content": {
+            "max_durability": 2030
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/stone_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:durability/",
+          "content": {
+            "max_durability": 130
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/wooden_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:durability/",
+          "content": {
+            "max_durability": 60
+          }
+        }
+      ],
       "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/axe_turret_kit.item.json": [
         {
           "path": "/minecraft:item/components/minecraft:durability/",

@@ -94,6 +94,15 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:horse_adult/minecraft:behavior.run_around_like_crazy/",
+          "content": {
+            "priority": 1,
+            "speed_multiplier": 1.2
+          }
+        }
+      ],
       "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.run_around_like_crazy/",

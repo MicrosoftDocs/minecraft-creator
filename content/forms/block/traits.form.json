@@ -4,6 +4,7 @@
   "generatedFromSchema_doNotEdit": {
     "id": "Traits",
     "title": "Block Traits",
+    "description": "Change the placement position and direction behavior of a block",
     "fields": [
       {
         "id": "minecraft:placement_direction",

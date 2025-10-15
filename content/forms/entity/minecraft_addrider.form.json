@@ -100,6 +100,12 @@
               "path": "/minecraft:entity/component_groups/minecraft:strider_parent_jockey/minecraft:addrider/",
               "content": "minecraft:strider"
             }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_horse.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:horse_wild_with_rider/minecraft:addrider/",
+              "content": "minecraft:zombie"
+            }
           ]
         }
       },
@@ -135,6 +141,12 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:strider_parent_jockey/minecraft:addrider/",
               "content": "minecraft:spawn_baby_strider_jockey"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_horse.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:horse_wild_with_rider/minecraft:addrider/",
+              "content": "minecraft:spawn_as_rider"
             }
           ]
         }
@@ -248,6 +260,15 @@
           "content": {
             "entity_type": "minecraft:strider",
             "spawn_event": "minecraft:spawn_baby_strider_jockey"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:horse_wild_with_rider/minecraft:addrider/",
+          "content": {
+            "entity_type": "minecraft:zombie",
+            "spawn_event": "minecraft:spawn_as_rider"
           }
         }
       ]

@@ -9,7 +9,7 @@ ms.date: 02/11/2025
 
 # Entity Documentation - minecraft:body_rotation_always_follows_head
 
-Causes the entity's body to always be automatically rotated to align with the entity's head.
+Causes the entity's body rotation to match the one of their head.
 Does not override the "minecraft:body_rotation_blocked" component.
 
 

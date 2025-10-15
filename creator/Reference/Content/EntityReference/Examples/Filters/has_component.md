@@ -16,7 +16,7 @@ Returns true when the subject entity contains the named component.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Axolotl: `"!="`, Panda: `"=="` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Axolotl: `"!="`, Husk: `"not"`, Panda: `"=="` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Axolotl: `"self"`, Panda: `"other"` | 
 | test | *not set* | String |  | Axolotl: `"has_component"` | 
 | value | *not set* | String | (Required) The component name to look for | Axolotl: `"minecraft:attack_cooldown"`, `"minecraft:variant"`, Cat: `"minecraft:is_baby"` | 
@@ -129,6 +129,16 @@ At /minecraft:entity/events/minecraft:start_exploding_forced/sequence/1/filters/
 
 #### [Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/husk.json)
 
+At /minecraft:entity/events/minecraft:convert_to_zombie/sequence/0/filters/: 
+
+```json
+{
+  "test": "has_component",
+  "operator": "not",
+  "value": "minecraft:is_baby"
+}
+```
+
 At /minecraft:entity/events/minecraft:convert_to_zombie/sequence/1/filters/: 
 
 ```json
@@ -157,28 +167,6 @@ At /minecraft:entity/events/minecraft:panda_weak/sequence/1/filters/:
 {
   "test": "has_component",
   "operator": "==",
-  "value": "minecraft:is_baby"
-}
-```
-
-#### [Sheep](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/sheep.json)
-
-At /minecraft:entity/components/minecraft:interact/interactions/0/on_interact/filters/all_of/3/: 
-
-```json
-{
-  "test": "has_component",
-  "value": "minecraft:is_dyeable"
-}
-```
-
-At /minecraft:entity/events/minecraft:on_eat_block/sequence/1/filters/: 
-
-```json
-{
-  "subject": "self",
-  "test": "has_component",
-  "operator": "!=",
   "value": "minecraft:is_baby"
 }
 ```

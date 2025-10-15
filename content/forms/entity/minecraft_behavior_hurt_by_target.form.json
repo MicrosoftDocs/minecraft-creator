@@ -305,7 +305,7 @@
                 "filters": {
                   "test": "is_family",
                   "subject": "other",
-                  "operator": "!=",
+                  "operator": "not",
                   "value": "breeze"
                 }
               }
@@ -319,6 +319,14 @@
           "content": {
             "priority": 1,
             "hurt_owner": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/",
+          "content": {
+            "priority": 1
           }
         }
       ],
@@ -423,7 +431,7 @@
                 "filters": {
                   "test": "is_family",
                   "subject": "other",
-                  "operator": "!=",
+                  "operator": "not",
                   "value": "breeze"
                 }
               }
@@ -567,11 +575,19 @@
                 "filters": {
                   "test": "is_family",
                   "subject": "other",
-                  "operator": "!=",
+                  "operator": "not",
                   "value": "breeze"
                 }
               }
             ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_hostile/minecraft:behavior.hurt_by_target/",
+          "content": {
+            "priority": 1
           }
         }
       ],

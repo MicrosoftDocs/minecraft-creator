@@ -1,0 +1,32 @@
+{
+  "id": "Map Color",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Map Color",
+    "title": "Block Components Map Color",
+    "description": "Sets the color and optional tint of the block when rendered to a map.",
+    "fields": [
+      {
+        "id": "color",
+        "title": "Color",
+        "description": "Sets the color of the block when rendered to a map. The color is represented as a hex value in the format \"#RRGGBB\". May also be expressed as an array of [R, G, B] from 0 to 255.",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "color",
+            "dataType": 32,
+            "minLength": 3,
+            "maxLength": 3
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "tint_method",
+        "title": "Tint Method",
+        "description": "Sets the tint method of the block when rendered to a map. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint. Supported tint methods are \"none\", \"default_foliage\", \"birch_foliage\", \"evergreen_foliage\", \"dry_foliage\", \"grass\" and \"water\"",
+        "dataType": 2
+      }
+    ]
+  }
+}

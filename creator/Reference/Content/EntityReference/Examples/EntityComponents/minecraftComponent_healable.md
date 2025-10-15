@@ -125,6 +125,40 @@ The array of items that can be used to heal this entity.
 }
 ```
 
+#### [Nautilus](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/nautilus.json)
+
+
+```json
+"minecraft:healable": {
+  "items": [
+    {
+      "item": "fish",
+      "heal_amount": 4
+    },
+    {
+      "item": "salmon",
+      "heal_amount": 4
+    },
+    {
+      "item": "clownfish",
+      "heal_amount": 2
+    },
+    {
+      "item": "pufferfish",
+      "heal_amount": 2
+    },
+    {
+      "item": "cooked_fish",
+      "heal_amount": 10
+    },
+    {
+      "item": "cooked_salmon",
+      "heal_amount": 12
+    }
+  ]
+}
+```
+
 #### [Parrot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parrot.json)
 
 
@@ -244,6 +278,20 @@ The array of items that can be used to heal this entity.
     {
       "item": "rabbit_stew",
       "heal_amount": 20
+    }
+  ]
+}
+```
+
+#### [Zombie Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_horse.json)
+
+
+```json
+"minecraft:healable": {
+  "items": [
+    {
+      "item": "red_mushroom",
+      "heal_amount": 3
     }
   ]
 }

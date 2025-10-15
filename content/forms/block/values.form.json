@@ -4,12 +4,12 @@
   "generatedFromSchema_doNotEdit": {
     "id": "Values",
     "title": "Block Values",
+    "description": "Must be assigned an array or a \"range\"",
     "fields": [
       {
         "id": "values",
         "title": "Values",
         "dataType": 16,
-        "subFormId": "block/range",
         "isRequired": true
       }
     ]

@@ -38,6 +38,8 @@
   href: minecraftComponent_body_rotation_axis_aligned.md
 - name: minecraft:body_rotation_blocked
   href: minecraftComponent_body_rotation_blocked.md
+- name: minecraft:body_rotation_locked_to_vehicle
+  href: minecraftComponent_body_rotation_locked_to_vehicle.md
 - name: minecraft:boostable
   href: minecraftComponent_boostable.md
 - name: minecraft:boss
@@ -364,6 +366,8 @@
   href: minecraftComponent_trusting.md
 - name: minecraft:type_family
   href: minecraftComponent_type_family.md
+- name: minecraft:underwater_mount_breathing
+  href: minecraftComponent_underwater_mount_breathing.md
 - name: minecraft:underwater_movement
   href: minecraftComponent_underwater_movement.md
 - name: minecraft:variable_max_auto_step

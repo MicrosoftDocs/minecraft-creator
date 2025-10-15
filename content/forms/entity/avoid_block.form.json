@@ -45,7 +45,7 @@
         "id": "sound_interval",
         "title": "Sound Interval",
         "dataType": 16,
-        "subFormId": "entity/floatrange"
+        "subFormId": "item_components/floatrange"
       },
       {
         "id": "sprint_speed_modifier",

@@ -762,8 +762,7 @@
                       {
                         "test": "in_water",
                         "subject": "other",
-                        "operator": "!=",
-                        "value": true
+                        "value": false
                       }
                     ]
                   },
@@ -960,13 +959,13 @@
                       {
                         "test": "has_component",
                         "subject": "other",
-                        "operator": "!=",
+                        "operator": "not",
                         "value": "minecraft:is_baby"
                       },
                       {
                         "test": "has_component",
                         "subject": "self",
-                        "operator": "!=",
+                        "operator": "not",
                         "value": "minecraft:attack_cooldown"
                       }
                     ]
@@ -985,28 +984,28 @@
                         "test": "has_equipment",
                         "subject": "other",
                         "domain": "head",
-                        "operator": "!=",
+                        "operator": "not",
                         "value": "golden_helmet"
                       },
                       {
                         "test": "has_equipment",
                         "subject": "other",
                         "domain": "torso",
-                        "operator": "!=",
+                        "operator": "not",
                         "value": "golden_chestplate"
                       },
                       {
                         "test": "has_equipment",
                         "subject": "other",
                         "domain": "leg",
-                        "operator": "!=",
+                        "operator": "not",
                         "value": "golden_leggings"
                       },
                       {
                         "test": "has_equipment",
                         "subject": "other",
                         "domain": "feet",
-                        "operator": "!=",
+                        "operator": "not",
                         "value": "golden_boots"
                       }
                     ]
@@ -1019,9 +1018,7 @@
                     "any_of": [
                       {
                         "test": "has_container_open",
-                        "subject": "other",
-                        "operator": "==",
-                        "value": true
+                        "subject": "other"
                       }
                     ]
                   },
@@ -1225,8 +1222,7 @@
                       {
                         "test": "in_water",
                         "subject": "other",
-                        "operator": "!=",
-                        "value": true
+                        "value": false
                       }
                     ]
                   },
@@ -1246,6 +1242,47 @@
                     "value": "monster"
                   },
                   "within_default": 6
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/stray.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  "max_dist": 16
+                },
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "irongolem"
+                  },
+                  "max_dist": 16
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "baby_turtle"
+                      },
+                      {
+                        "test": "in_water",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": true
+                      }
+                    ]
+                  },
+                  "max_dist": 16
                 }
               ]
             }
@@ -1644,6 +1681,70 @@
                       {
                         "test": "in_water",
                         "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  },
+                  "max_dist": 35
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_villager.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "snowgolem"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "irongolem"
+                      }
+                    ]
+                  },
+                  "max_dist": 35
+                },
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "villager"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "wandering_trader"
+                      }
+                    ]
+                  },
+                  "max_dist": 35,
+                  "must_see": false
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "baby_turtle"
+                      },
+                      {
+                        "test": "in_water",
+                        "subject": "other",
                         "operator": "!=",
                         "value": true
                       }
@@ -1838,6 +1939,71 @@
                 },
                 "max_dist": 16
               }
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "snowgolem"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "irongolem"
+                      }
+                    ]
+                  },
+                  "max_dist": 35
+                },
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "villager"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "wandering_trader"
+                      }
+                    ]
+                  },
+                  "max_dist": 35,
+                  "must_see": false
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "baby_turtle"
+                      },
+                      {
+                        "test": "in_water",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": true
+                      }
+                    ]
+                  },
+                  "max_dist": 35
+                }
+              ]
             }
           ]
         }
@@ -2993,8 +3159,7 @@
                     {
                       "test": "in_water",
                       "subject": "other",
-                      "operator": "!=",
-                      "value": true
+                      "value": false
                     }
                   ]
                 },
@@ -3223,13 +3388,13 @@
                     {
                       "test": "has_component",
                       "subject": "other",
-                      "operator": "!=",
+                      "operator": "not",
                       "value": "minecraft:is_baby"
                     },
                     {
                       "test": "has_component",
                       "subject": "self",
-                      "operator": "!=",
+                      "operator": "not",
                       "value": "minecraft:attack_cooldown"
                     }
                   ]
@@ -3248,28 +3413,28 @@
                       "test": "has_equipment",
                       "subject": "other",
                       "domain": "head",
-                      "operator": "!=",
+                      "operator": "not",
                       "value": "golden_helmet"
                     },
                     {
                       "test": "has_equipment",
                       "subject": "other",
                       "domain": "torso",
-                      "operator": "!=",
+                      "operator": "not",
                       "value": "golden_chestplate"
                     },
                     {
                       "test": "has_equipment",
                       "subject": "other",
                       "domain": "leg",
-                      "operator": "!=",
+                      "operator": "not",
                       "value": "golden_leggings"
                     },
                     {
                       "test": "has_equipment",
                       "subject": "other",
                       "domain": "feet",
-                      "operator": "!=",
+                      "operator": "not",
                       "value": "golden_boots"
                     }
                   ]
@@ -3282,9 +3447,7 @@
                   "any_of": [
                     {
                       "test": "has_container_open",
-                      "subject": "other",
-                      "operator": "==",
-                      "value": true
+                      "subject": "other"
                     }
                   ]
                 },
@@ -3554,8 +3717,7 @@
                     {
                       "test": "in_water",
                       "subject": "other",
-                      "operator": "!=",
-                      "value": true
+                      "value": false
                     }
                   ]
                 },
@@ -4141,14 +4303,32 @@
                     {
                       "test": "in_water",
                       "subject": "other",
-                      "operator": "!=",
-                      "value": true
+                      "value": false
                     }
                   ]
                 },
                 "max_dist": 35
               }
             ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_hostile/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 3,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 16
+              }
+            ],
+            "must_see": true
           }
         }
       ],

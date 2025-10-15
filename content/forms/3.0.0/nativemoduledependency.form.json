@@ -12,6 +12,11 @@
         "isRequired": true
       },
       {
+        "id": "optional",
+        "title": "Optional",
+        "dataType": 1
+      },
+      {
         "id": "version",
         "title": "Version",
         "dataType": 16,

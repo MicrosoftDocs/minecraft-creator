@@ -48,6 +48,18 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/zombie_villager.json": [
         {
           "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",

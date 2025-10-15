@@ -21,7 +21,7 @@ Returns true if the subject entity is riding on another entity.
 |:----------|:-------------|:----|:-----------|:------------- |
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Enderman: `"=="`, Parrot: `"equals"`, `"!="` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Enderman: `"self"` | 
-| test | *not set* | String |  | Enderman: `"is_riding"` | 
+| test | *not set* | String |  | Drowned: `"is_riding"` | 
 | value | true | Boolean true/false | (Optional) true or false. | Enderman: `true` | 
 
 ### Operator choices
@@ -63,6 +63,17 @@ At Short (using Defaults)..:
 
 ```json
 { "test": "is_riding" }
+```
+
+#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
+
+At /minecraft:entity/events/minecraft:has_target/filters/: 
+
+```json
+{
+  "test": "is_riding",
+  "value": false
+}
 ```
 
 #### [Enderman](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/enderman.json)

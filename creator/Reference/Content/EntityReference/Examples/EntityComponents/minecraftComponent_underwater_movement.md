@@ -65,6 +65,24 @@ Defines the speed with which an entity can move through water.
 }
 ```
 
+#### [Nautilus](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/nautilus.json)
+
+At /minecraft:entity/component_groups/minecraft:nautilus_mounted/minecraft:underwater_movement/: 
+
+```json
+"minecraft:underwater_movement": {
+  "value": 0.055
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:nautilus_unmounted/minecraft:underwater_movement/: 
+
+```json
+"minecraft:underwater_movement": {
+  "value": 0.07
+}
+```
+
 #### [Pufferfish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pufferfish.json)
 
 

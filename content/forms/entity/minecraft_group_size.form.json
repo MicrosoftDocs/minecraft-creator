@@ -36,7 +36,7 @@
                 "all_of": [
                   {
                     "test": "has_component",
-                    "operator": "!=",
+                    "operator": "not",
                     "value": "minecraft:is_baby"
                   },
                   {
@@ -102,7 +102,7 @@
               "all_of": [
                 {
                   "test": "has_component",
-                  "operator": "!=",
+                  "operator": "not",
                   "value": "minecraft:is_baby"
                 },
                 {

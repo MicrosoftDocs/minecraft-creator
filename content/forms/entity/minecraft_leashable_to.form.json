@@ -159,6 +159,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_adult/minecraft:leashable_to/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/ocelot.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:ocelot_adult/minecraft:leashable_to/",
@@ -246,6 +252,12 @@
       "/vanilla/behavior_pack/entities/zombie_horse.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:horse_adult/minecraft:leashable_to/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_adult/minecraft:leashable_to/",
           "content": {}
         }
       ]

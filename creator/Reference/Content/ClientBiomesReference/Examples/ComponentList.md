@@ -15,6 +15,7 @@ ms.date: 02/11/2025
 | [minecraft:atmosphere_identifier](Components/minecraftClientBiomes_atmosphere_identifier.md)| Set the identifier used for atmospherics in Vibrant Visuals mode. |
 | [minecraft:biome_music](Components/minecraftClientBiomes_biome_music.md)| Affects how music plays within the biome |
 | [minecraft:color_grading_identifier](Components/minecraftClientBiomes_color_grading_identifier.md)| Set the identifier used for color grading in Vibrant Visuals mode. |
+| [minecraft:cubemap_identifier](Components/minecraftClientBiomes_cubemap_identifier.md)| Set the identifier used for cubemap in Vibrant Visuals mode. |
 | [minecraft:dry_foliage_color](Components/minecraftClientBiomes_dry_foliage_color.md)| Set the dry foliage color used during rendering. |
 | [minecraft:fog_appearance](Components/minecraftClientBiomes_fog_appearance.md)| Sets the fog settings used during rendering. |
 | [minecraft:foliage_appearance](Components/minecraftClientBiomes_foliage_appearance.md)| Sets the foliage color or color map used during rendering. |

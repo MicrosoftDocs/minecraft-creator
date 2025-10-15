@@ -219,6 +219,24 @@
               "path": "/minecraft:item/components/minecraft:food/",
               "content": 0.6
             }
+          ],
+          "/samples/starter_items/behavior_packs/starter_Items/items/elixir.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 3
+            }
+          ],
+          "/samples/starter_items/behavior_packs/starter_Items/items/hard_biscuit.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 3
+            }
+          ],
+          "/samples/starter_items/behavior_packs/starter_Items/items/pear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 0.3
+            }
           ]
         }
       },
@@ -250,6 +268,12 @@
             {
               "path": "/minecraft:item/components/minecraft:food/",
               "content": "bowl"
+            }
+          ],
+          "/samples/starter_items/behavior_packs/starter_Items/items/elixir.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "glass_bottle"
             }
           ]
         }
@@ -955,6 +979,35 @@
             "can_always_eat": true,
             "nutrition": 2,
             "saturation_modifier": 0.2
+          }
+        }
+      ],
+      "/samples/starter_items/behavior_packs/starter_Items/items/elixir.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 6,
+            "saturation_modifier": 3,
+            "can_always_eat": true,
+            "using_converts_to": "glass_bottle"
+          }
+        }
+      ],
+      "/samples/starter_items/behavior_packs/starter_Items/items/hard_biscuit.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 6,
+            "saturation_modifier": 3
+          }
+        }
+      ],
+      "/samples/starter_items/behavior_packs/starter_Items/items/pear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 4,
+            "saturation_modifier": 0.3
           }
         }
       ]

@@ -1,0 +1,58 @@
+{
+  "id": "minecraft:behavior.aquatic_charge_attack",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.aquatic_charge_attack",
+    "title": "Entity Aquatic Charge Attack Behavior",
+    "description": "Enables an aquatic mob to dash at its target with knockback; includes overshoot and cooldown settings.",
+    "fields": [
+      {
+        "id": "attack_reach",
+        "title": "Attack Reach",
+        "description": "Horizontal reach grown around the mob's AABB to register a hit. Default value: 0.05.",
+        "dataType": 3
+      },
+      {
+        "id": "charge_cooldown_time",
+        "title": "Charge Cooldown Time",
+        "description": "Range of time in seconds to wait before starting another charge. Default value: [2.0, 6.0].",
+        "dataType": 16,
+        "subFormId": "item_components/floatrange"
+      },
+      {
+        "id": "charge_overshoot_distance",
+        "title": "Charge Overshoot Distance",
+        "description": "Distance beyond the target the mob aims during a charge. Default value: 1.5.",
+        "dataType": 3
+      },
+      {
+        "id": "charge_speed_multiplier",
+        "title": "Charge Speed Multiplier",
+        "description": "Speed multiplier applied during the charge. Default value: 10.",
+        "dataType": 3
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17
+      },
+      {
+        "id": "knockback_force",
+        "title": "Knockback Force",
+        "description": "Knockback force applied to the target on hit. Default value: 2.",
+        "dataType": 3
+      },
+      {
+        "id": "max_charge_distance",
+        "title": "Max Charge Distance",
+        "description": "Maximum distance at which the mob attempts a charge. Default value: 16.",
+        "dataType": 3
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0
+      }
+    ]
+  }
+}

@@ -84,13 +84,15 @@
               "content": "=="
             }
           ],
+          "/vanilla/behavior_pack/entities/husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/",
+              "content": "not"
+            }
+          ],
           "/vanilla/behavior_pack/entities/iron_golem.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:player_created/minecraft:behavior.hurt_by_target/entity_types/filters/all_of/0/",
-              "content": "not"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:player_created/minecraft:behavior.hurt_by_target/entity_types/filters/all_of/1/",
               "content": "not"
             }
           ],
@@ -1490,7 +1492,7 @@
           "content": {
             "test": "is_family",
             "subject": "other",
-            "operator": "!=",
+            "operator": "not",
             "value": "breeze"
           }
         },
@@ -1797,7 +1799,7 @@
           "content": {
             "test": "is_family",
             "subject": "other",
-            "operator": "!=",
+            "operator": "not",
             "value": "piglin"
           }
         },
@@ -2240,7 +2242,7 @@
           "content": {
             "test": "is_family",
             "subject": "other",
-            "operator": "!=",
+            "operator": "not",
             "value": "breeze"
           }
         },
@@ -3101,7 +3103,7 @@
           "content": {
             "test": "is_family",
             "subject": "other",
-            "operator": "!=",
+            "operator": "not",
             "value": "breeze"
           }
         },
@@ -3151,6 +3153,24 @@
             "test": "is_family",
             "subject": "other",
             "value": "baby_turtle"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_hostile/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:mob_effect/entity_filter/all_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
           }
         }
       ],

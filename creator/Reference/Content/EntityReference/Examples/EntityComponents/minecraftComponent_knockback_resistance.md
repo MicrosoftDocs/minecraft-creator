@@ -62,6 +62,15 @@ This item can also be represented as a `Decimal number`.
 }
 ```
 
+#### [Nautilus](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/nautilus.json)
+
+
+```json
+"minecraft:knockback_resistance": {
+  "value": 0.3
+}
+```
+
 #### [Ravager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ravager.json)
 
 

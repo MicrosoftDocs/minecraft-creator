@@ -610,6 +610,17 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/ocelot.json": [
         {
           "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
@@ -667,10 +678,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
           "content": {
-            "test": "in_lava",
-            "subject": "self",
-            "operator": "==",
-            "value": true
+            "test": "in_lava"
           }
         }
       ],
@@ -786,10 +794,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
           "content": {
-            "test": "in_lava",
-            "subject": "self",
-            "operator": "==",
-            "value": true
+            "test": "in_lava"
           }
         }
       ],
@@ -989,14 +994,19 @@
         {
           "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
           "content": {
-            "test": "in_lava",
-            "subject": "self",
-            "operator": "==",
-            "value": true
+            "test": "in_lava"
           }
         }
       ],
       "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
           "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
           "content": {

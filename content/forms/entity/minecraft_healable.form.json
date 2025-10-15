@@ -261,6 +261,39 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:healable/",
+          "content": {
+            "items": [
+              {
+                "item": "fish",
+                "heal_amount": 4
+              },
+              {
+                "item": "salmon",
+                "heal_amount": 4
+              },
+              {
+                "item": "clownfish",
+                "heal_amount": 2
+              },
+              {
+                "item": "pufferfish",
+                "heal_amount": 2
+              },
+              {
+                "item": "cooked_fish",
+                "heal_amount": 10
+              },
+              {
+                "item": "cooked_salmon",
+                "heal_amount": 12
+              }
+            ]
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/parrot.json": [
         {
           "path": "/minecraft:entity/components/minecraft:healable/",
@@ -394,6 +427,52 @@
               {
                 "item": "rabbit_stew",
                 "heal_amount": 20
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:healable/",
+          "content": {
+            "items": [
+              {
+                "item": "red_mushroom",
+                "heal_amount": 3
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:healable/",
+          "content": {
+            "items": [
+              {
+                "item": "fish",
+                "heal_amount": 4
+              },
+              {
+                "item": "salmon",
+                "heal_amount": 4
+              },
+              {
+                "item": "clownfish",
+                "heal_amount": 2
+              },
+              {
+                "item": "pufferfish",
+                "heal_amount": 2
+              },
+              {
+                "item": "cooked_fish",
+                "heal_amount": 10
+              },
+              {
+                "item": "cooked_salmon",
+                "heal_amount": 12
               }
             ]
           }

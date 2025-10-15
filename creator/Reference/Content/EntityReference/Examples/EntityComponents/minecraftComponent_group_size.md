@@ -16,7 +16,7 @@ Keeps track of entity group size in the given radius.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| filters | *not set* | Minecraft filter | The list of conditions that must be satisfied for other entities to be counted towards group size. | Hoglin: `{"all_of":[{"test":"has_component","operator":"!=","value":"minecraft:is_baby"},{"test":"is_family","value":"hoglin"}]}`, Piglin: `{"all_of":[{"test":"has_component","operator":"!=","value":"minecraft:is_baby"},{"test":"is_family","value":"piglin"}]}` | 
+| filters | *not set* | Minecraft filter | The list of conditions that must be satisfied for other entities to be counted towards group size. | Hoglin: `{"all_of":[{"test":"has_component","operator":"!=","value":"minecraft:is_baby"},{"test":"is_family","value":"hoglin"}]}`, Piglin: `{"all_of":[{"test":"has_component","operator":"not","value":"minecraft:is_baby"},{"test":"is_family","value":"piglin"}]}` | 
 | radius | 16 | Decimal number | Radius from center of entity. | Hoglin: `32` | 
 
 ## Samples
@@ -53,7 +53,7 @@ Keeps track of entity group size in the given radius.
     "all_of": [
       {
         "test": "has_component",
-        "operator": "!=",
+        "operator": "not",
         "value": "minecraft:is_baby"
       },
       {

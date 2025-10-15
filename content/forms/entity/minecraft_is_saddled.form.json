@@ -30,6 +30,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled/minecraft:is_saddled/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/pig.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:is_saddled/",
@@ -39,6 +45,18 @@
       "/vanilla/behavior_pack/entities/strider.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:strider_saddled/minecraft:is_saddled/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:horse_saddled/minecraft:is_saddled/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled/minecraft:is_saddled/",
           "content": {}
         }
       ]

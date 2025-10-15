@@ -666,7 +666,7 @@
                   "other_with_families": "lightning"
                 }
               },
-              "deals_damage": false
+              "deals_damage": "no"
             }
           }
         }

@@ -308,15 +308,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie_horse.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_baby/minecraft:behavior.follow_parent/",
-          "content": {
-            "priority": 4,
-            "speed_multiplier": 1
-          }
-        }
-      ],
       "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:behavior.follow_parent/",

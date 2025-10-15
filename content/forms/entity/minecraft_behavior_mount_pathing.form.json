@@ -363,6 +363,15 @@
             "target_dist": 0,
             "track_target": true
           }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:horse_wild/minecraft:behavior.mount_pathing/",
+          "content": {
+            "priority": 2,
+            "speed_multiplier": 1.5,
+            "target_dist": 0,
+            "track_target": true
+          }
         }
       ],
       "/vanilla/behavior_pack/entities/zombie_pigman.json": [

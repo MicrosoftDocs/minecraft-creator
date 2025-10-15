@@ -218,6 +218,10 @@ ms.date: 02/11/2025
 | [query.item_remaining_use_duration](queryfunctions/query_item_remaining_use_duration.md)| Returns the amount of time an item has left to use, else 0.0 if it doesn't make sense. |
 | [query.item_slot_to_bone_name](queryfunctions/query_item_slot_to_bone_name.md)| This function returns the name of the bone this entity has mapped to that slot. |
 | [query.key_frame_lerp_time](queryfunctions/query_key_frame_lerp_time.md)| Returns the ratio between the previous and next key frames. |
+| [query.kinetic_weapon_damage_duration](queryfunctions/query_kinetic_weapon_damage_duration.md)| Returns the "max_duration" value of "damage_conditions" from the main-hand item's "minecraft:kinetic_weapon" component, or 0 if the component is not present. |
+| [query.kinetic_weapon_delay](queryfunctions/query_kinetic_weapon_delay.md)| Returns the "delay" value from the main-hand item's "minecraft:kinetic_weapon" component, or 0 if the component is not present. |
+| [query.kinetic_weapon_dismount_duration](queryfunctions/query_kinetic_weapon_dismount_duration.md)| Returns the "max_duration" value of "dismount_conditions" from the main-hand item's "minecraft:kinetic_weapon" component, or 0 if the component is not present. |
+| [query.kinetic_weapon_knockback_duration](queryfunctions/query_kinetic_weapon_knockback_duration.md)| Returns the "max_duration" value of "knockback_conditions" from the main-hand item's "minecraft:kinetic_weapon" component, or 0 if the component is not present. |
 | [query.last_frame_time](queryfunctions/query_last_frame_time.md)| Returns the time in *seconds* of the last frame. |
 | [query.last_hit_by_player](queryfunctions/query_last_hit_by_player.md)| Returns 1.0 if the entity was last hit by the player, else it returns 0.0. |
 | [query.last_input_mode_is_any](queryfunctions/query_last_input_mode_is_any.md)| Takes one or more arguments ('keyboard_and_mouse', 'touch', or 'gamepad'). |
@@ -285,6 +289,7 @@ ms.date: 02/11/2025
 | [query.tail_angle](queryfunctions/query_tail_angle.md)| Returns the angle of the tail of the entity if it makes sense, else it returns 0.0. |
 | [query.target_x_rotation](queryfunctions/query_target_x_rotation.md)| Returns the x rotation required to aim at the entity's current target if it has one, else it returns 0.0. |
 | [query.target_y_rotation](queryfunctions/query_target_y_rotation.md)| Returns the y rotation required to aim at the entity's current target if it has one, else it returns 0.0. |
+| [query.ticks_since_last_kinetic_weapon_hit](queryfunctions/query_ticks_since_last_kinetic_weapon_hit.md)| Returns the number of ticks elapsed since the user last hit something while using a kinetic weapon. |
 | [query.timer_flag_1](queryfunctions/query_timer_flag_1.md)| Returns 1.0 if behavior.timer_flag_1 is running, else it returns 0.0. |
 | [query.timer_flag_2](queryfunctions/query_timer_flag_2.md)| Returns 1.0 if behavior.timer_flag_2 is running, else it returns 0.0. |
 | [query.timer_flag_3](queryfunctions/query_timer_flag_3.md)| Returns 1.0 if behavior.timer_flag_3 is running, else it returns 0.0. |

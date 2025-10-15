@@ -17,6 +17,11 @@
         "title": "Condition",
         "dataType": 2,
         "isRequired": true
+      },
+      {
+        "id": "mOrderedV1CustomComponents",
+        "title": "mOrderedV1CustomComponents",
+        "dataType": 17
       }
     ]
   }

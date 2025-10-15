@@ -52,10 +52,16 @@
   href: minecraft_interact_button.md
 - name: Minecraft Item Item
   href: minecraft_item.md
+- name: minecraft:kinetic_weapon
+  href: minecraft_kinetic_weapon.md
+- name: minecraft:kinetic_weapon kinetic_effect_conditions
+  href: minecraft_kinetic_weapon_kinetic_effect_conditions.md
 - name: minecraft:liquid_clipped
   href: minecraft_liquid_clipped.md
 - name: minecraft:max_stack_size
   href: minecraft_max_stack_size.md
+- name: minecraft:piercing_weapon
+  href: minecraft_piercing_weapon.md
 - name: minecraft:projectile
   href: minecraft_projectile.md
 - name: minecraft:rarity
@@ -78,6 +84,8 @@
   href: minecraft_storage_weight_modifier.md
 - name: minecraft:swing_duration
   href: minecraft_swing_duration.md
+- name: minecraft:swing_sounds
+  href: minecraft_swing_sounds.md
 - name: minecraft:tags
   href: minecraft_tags.md
 - name: minecraft:throwable

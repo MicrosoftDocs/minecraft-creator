@@ -48,11 +48,12 @@ A templated pool element object that depending on the element type will contain 
 | element_type | *not set* | Required | String | The type of element. Supported types include [minecraft:single_pool_element](#minecraftsingle_pool_element) and [minecraft:empty_pool_element](#minecraftempty_pool_element). |
 
 ## minecraft:single_pool_element
+
 ### Properties
 | Name| Default Value| Requirement Status| Type| Description|
 | ----| -------------| ------------------| ----| -----------|
 | location | *not set* | Required | String | The path of the structure file. This path is relative to the behavior pack's "structures" folder. |
-| [processors](../JigsawProcessors.md) | *not set* | Optional | String | The identifier of the processor list to use when placing the structure. See [Jigsaw Processor List Documentation](../JigsawProcessors.md)|
+| [processors](./JigsawProcessors.md) | *not set* | Optional | String | The identifier of the processor list to use when placing the structure. See [Jigsaw Processor List Documentation](./JigsawProcessors.md)|
 | [projection](#projection) | "minecraft:rigid" | Optional | String | Specifies how structures should be placed relative to the terrain. |
 
 ## minecraft:empty_pool_element
@@ -61,6 +62,7 @@ Will place nothing when it is chosen.
 ## Projection
 Projection determines if and how the structure will adjust according to the terrain when placed.
 See [Terrain Matching Tips & FAQ](../../../../Documents/Structures/TerrainMatchingTips.md) for more guidance.
+
 ### Properties
 | Name| Description|
 | ----| -------------|

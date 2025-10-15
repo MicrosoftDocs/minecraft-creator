@@ -610,6 +610,17 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_air": false,
+            "breathes_water": true
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/ocelot.json": [
         {
           "path": "/minecraft:entity/components/minecraft:breathable/",
@@ -1002,7 +1013,17 @@
           "path": "/minecraft:entity/components/minecraft:breathable/",
           "content": {
             "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
             "suffocate_time": 0,
+            "breathes_air": false,
             "breathes_water": true
           }
         }

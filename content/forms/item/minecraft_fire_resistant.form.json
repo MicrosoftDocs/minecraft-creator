@@ -10,8 +10,26 @@
         "id": "value",
         "title": "Value",
         "description": "Determines whether the item is immune to burning when dropped in fire or lava. Default value: true.",
-        "dataType": 1
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/items/netherite_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:fire_resistant/",
+              "content": true
+            }
+          ]
+        }
       }
-    ]
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/items/netherite_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:fire_resistant/",
+          "content": {
+            "value": true
+          }
+        }
+      ]
+    }
   }
 }

@@ -414,6 +414,14 @@
   href: query_item_slot_to_bone_name.md
 - name: query.key_frame_lerp_time
   href: query_key_frame_lerp_time.md
+- name: query.kinetic_weapon_damage_duration
+  href: query_kinetic_weapon_damage_duration.md
+- name: query.kinetic_weapon_delay
+  href: query_kinetic_weapon_delay.md
+- name: query.kinetic_weapon_dismount_duration
+  href: query_kinetic_weapon_dismount_duration.md
+- name: query.kinetic_weapon_knockback_duration
+  href: query_kinetic_weapon_knockback_duration.md
 - name: query.last_frame_time
   href: query_last_frame_time.md
 - name: query.last_hit_by_player
@@ -548,6 +556,8 @@
   href: query_target_x_rotation.md
 - name: query.target_y_rotation
   href: query_target_y_rotation.md
+- name: query.ticks_since_last_kinetic_weapon_hit
+  href: query_ticks_since_last_kinetic_weapon_hit.md
 - name: query.timer_flag_1
   href: query_timer_flag_1.md
 - name: query.timer_flag_2

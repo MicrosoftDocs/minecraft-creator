@@ -1,0 +1,144 @@
+{
+  "id": "minecraft:piercing_weapon",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:piercing_weapon",
+    "title": "Item Piercing Weapon",
+    "description": "Allows an item to deal damage to all entities detected in a straight line along the user's view vector. Items with this component cannot destroy blocks, as the attack action always takes priority, regardless of what the user is looking at.",
+    "fields": [
+      {
+        "id": "hitbox_margin",
+        "title": "Hitbox Margin",
+        "description": "Added tolerance to the view vector raycast for detecting entity collisions. Default value: 0.",
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/items/copper_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:piercing_weapon/",
+              "content": 0.25
+            }
+          ],
+          "/vanilla/behavior_pack/items/diamond_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:piercing_weapon/",
+              "content": 0.25
+            }
+          ]
+        }
+      },
+      {
+        "id": "reach",
+        "title": "Reach",
+        "description": "Defines the range (in blocks) along the user's view vector where entities can be hit. Only targets within this distance are considered. Block collisions between the user and target block damage and its effects. Default value: [0, 3].",
+        "dataType": 16,
+        "subFormId": "item_components/floatrange",
+        "samples": {
+          "/vanilla/behavior_pack/items/copper_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:piercing_weapon/",
+              "content": {
+                "min": 2,
+                "max": 4.5
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/items/diamond_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:piercing_weapon/",
+              "content": {
+                "min": 2,
+                "max": 4.5
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/items/copper_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:piercing_weapon/",
+          "content": {
+            "reach": {
+              "min": 2,
+              "max": 4.5
+            },
+            "hitbox_margin": 0.25
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/diamond_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:piercing_weapon/",
+          "content": {
+            "reach": {
+              "min": 2,
+              "max": 4.5
+            },
+            "hitbox_margin": 0.25
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/golden_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:piercing_weapon/",
+          "content": {
+            "reach": {
+              "min": 2,
+              "max": 4.5
+            },
+            "hitbox_margin": 0.25
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/iron_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:piercing_weapon/",
+          "content": {
+            "reach": {
+              "min": 2,
+              "max": 4.5
+            },
+            "hitbox_margin": 0.25
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/netherite_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:piercing_weapon/",
+          "content": {
+            "reach": {
+              "min": 2,
+              "max": 4.5
+            },
+            "hitbox_margin": 0.25
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/stone_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:piercing_weapon/",
+          "content": {
+            "reach": {
+              "min": 2,
+              "max": 4.5
+            },
+            "hitbox_margin": 0.25
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/wooden_spear.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:piercing_weapon/",
+          "content": {
+            "reach": {
+              "min": 2,
+              "max": 4.5
+            },
+            "hitbox_margin": 0.25
+          }
+        }
+      ]
+    }
+  }
+}

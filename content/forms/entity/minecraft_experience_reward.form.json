@@ -124,6 +124,12 @@
               "content": "query.last_hit_by_player ? query.variant : 0"
             }
           ],
+          "/vanilla/behavior_pack/entities/nautilus.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:experience_reward/",
+              "content": "query.last_hit_by_player && !query.is_baby ? Math.Random(1,3) : 0"
+            }
+          ],
           "/vanilla/behavior_pack/entities/piglin.json": [
             {
               "path": "/minecraft:entity/component_groups/piglin_baby/minecraft:experience_reward/",
@@ -494,6 +500,15 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:experience_reward/",
+          "content": {
+            "on_death": "query.last_hit_by_player && !query.is_baby ? Math.Random(1,3) : 0",
+            "on_bred": "Math.Random(1,7)"
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/ocelot.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:ocelot_adult/minecraft:experience_reward/",
@@ -816,6 +831,14 @@
       "/vanilla/behavior_pack/entities/zombie_horse.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:horse_adult/minecraft:experience_reward/",
+          "content": {
+            "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:experience_reward/",
           "content": {
             "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
           }
@@ -1265,6 +1288,12 @@
               "content": "query.last_hit_by_player ? query.variant : 0"
             }
           ],
+          "/vanilla/behavior_pack/entities/nautilus.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:experience_reward/",
+              "content": "query.last_hit_by_player && !query.is_baby ? Math.Random(1,3) : 0"
+            }
+          ],
           "/vanilla/behavior_pack/entities/piglin.json": [
             {
               "path": "/minecraft:entity/component_groups/piglin_baby/minecraft:experience_reward/",
@@ -1669,6 +1698,15 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:experience_reward/",
+          "content": {
+            "on_death": "query.last_hit_by_player && !query.is_baby ? Math.Random(1,3) : 0",
+            "on_bred": "Math.Random(1,7)"
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/ocelot.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:ocelot_adult/minecraft:experience_reward/",
@@ -1991,6 +2029,14 @@
       "/vanilla/behavior_pack/entities/zombie_horse.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:horse_adult/minecraft:experience_reward/",
+          "content": {
+            "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:experience_reward/",
           "content": {
             "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
           }
