@@ -119,8 +119,8 @@ Three things to check:
 
     5. In the pop-up, select **Minecraft** and click **OK**.
 
-![Apps > Default Apps window where you can set Minecraft Preview as the default app.](Media/editor_install_select_default_app.png)
+    ![Apps > Default Apps window where you can set Minecraft Preview as the default app.](Media/editor_install_select_default_app.png)
 
 - If you would like to open Editor a different way, you can open a file explorer window and enter **`minecraft://creator/?Editor=true`** into the path:
 
-![File explorer window with the Editor shortcut as the path](Media/editor_install_file_explorer_path.png)
+    ![File explorer window with the Editor shortcut as the path](Media/editor_install_file_explorer_path.png)
