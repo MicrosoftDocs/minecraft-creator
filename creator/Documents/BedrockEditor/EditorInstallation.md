@@ -14,8 +14,8 @@ Minecraft's Bedrock Editor is a multiblock editing experience that helps you eas
 > [!NOTE]
 > Images in this document may vary slightly from what you have on your screen.
 
-First, we are going to install Minecraft Bedrock. 
-Then, we will create the shortcut that launches Editor. 
+First, we are going to install Minecraft Bedrock.
+Then, we will create the shortcut that launches Editor.
 After that, we will open Editor and make sure it works.
 
 --------
@@ -40,7 +40,7 @@ To get started, you need the following:
 > [!IMPORTANT]
 > Editor is PC only and not available on mobile or console.
 
-## Install Bedrock 
+## Install Bedrock
 
 The Bedrock Editor is a separate mode of Bedrock. If you already have Bedrock, you already have the Editor. If not, install the latest Bedrock Retail and/or Preview. To learn more about what Preview is and where to get it, check out the [Preview FAQ on Minecraft.net](https://aka.ms/PreviewFAQ).
 
@@ -67,32 +67,26 @@ To launch Editor, click Create. The Launcher opens Bedrock in Editor mode.
 Alternatively, if you already have Bedrock installed and want to create a shortcut to make accessing Editor easier in the future, follow these steps.
 
 1. Right-click on your desktop, select **New** from the dropdown, and choose to create a new **Shortcut**.  
-
-![Windows new shortcut creation](Media/editor_install_create_shortcut.png)
+    ![Windows new shortcut creation](Media/editor_install_create_shortcut.png)
 
 2. For the location of the item, enter the following:
 
-    `minecraft:?Editor=true`
+    `minecraft://creator/?Editor=true`
 
     or
 
     `minecraft-preview://creator/?Editor=true`
 
     This is case-sensitive and needs to match exactly.
-
-![Editor create shortcut path](Media/editor_shortcut.png)
+    ![Editor create shortcut path](Media/editor_shortcut.png)
 
 3. Click **Next** and give your shortcut a name like **Minecraft Editor**.
 
-4. Click **Finish**. Your Editor shortcut has been created!
+4. Click **Finish**. Your Editor shortcut has been created! You should see the shortcut created on your desktop and it should automatically have the Minecraft icon if you set it up correctly. If the icon does not populate, don't worry.
 
-You should see the shortcut created on your desktop and it should automatically have the Minecraft icon if you set it up correctly. If the icon does not populate, don't worry.
+    ![Image of the Minecraft Editor desktop shortcut](Media/editor_shortcut_icon_retail.png)
 
-![Image of the Minecraft Editor desktop shortcut](Media/editor_shortcut_icon_retail.png)
-
-5. Double-click the shortcut to launch the Editor.
-
-You should see Editor launch and display the "Create New Project" screen.
+5. Double-click the shortcut to launch the Editor. You should see Editor launch and display the "Create New Project" screen.
 
 Great job! You're ready to create a project!
 
@@ -109,25 +103,24 @@ Use the Launcher’s Create button or the desktop shortcut to open Editor. Openi
 
 Three things to check:  
 
-- Is the desktop shortcut set up correctly? Remember it is case-sensitive and needs to match exactly. Ensure it says the following: **`minecraft:?Editor=true`**. 
+- Is the desktop shortcut set up correctly? Remember it is case-sensitive and needs to match exactly. Ensure it says the following: **`minecraft://creator/?Editor=true`**.
 
-- Did you install Bedrock? If not, you need to do that. 
+- Did you install Bedrock? If not, you need to do that.
 
 - Do you have both Bedrock Preview and Bedrock (Retail) installed? You may have selected a checkbox that says "Always open" for Bedrock (Retail) even if you are trying to open a Preview version. To fix this, perform the following steps:
 
     1. Press **Windows + I** to open the Settings app.
 
-    1. Select **Apps** and click **Default apps**.
+    2. Select **Apps** and click **Default apps**.
 
-    1. Scroll down to **Minecraft** and select it.
+    3. Scroll down to **Minecraft** and select it.
 
-    1. Scroll down and find the **MINECRAFT** entry (it should also say Minecraft | URL:minecraft) and click it.
+    4. Scroll down and find the **MINECRAFT** entry (it should also say Minecraft | URL:minecraft) and click it.
 
-    1. In the pop-up, select **Minecraft** and click **OK**.
+    5. In the pop-up, select **Minecraft** and click **OK**.
 
-![Apps > Default Apps window where you can set Minecraft Preview as the default app.](Media/editor_install_select_default_app.png)
+    ![Apps > Default Apps window where you can set Minecraft Preview as the default app.](Media/editor_install_select_default_app.png)
 
-- If you would like to open Editor a different way, you can open a file explorer window and enter **`minecraft:?Editor=true`** into the path:
+- If you would like to open Editor a different way, you can open a file explorer window and enter **`minecraft://creator/?Editor=true`** into the path:
 
-![File explorer window with the Editor shortcut as the path](Media/editor_install_file_explorer_path.png)
-
+    ![File explorer window with the Editor shortcut as the path](Media/editor_install_file_explorer_path.png)
