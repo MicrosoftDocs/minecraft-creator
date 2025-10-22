@@ -1168,10 +1168,14 @@
       href: minecraft/server-editor/CoreBrushShapeType.md
     - name: CoreMenuType
       href: minecraft/server-editor/CoreMenuType.md
+    - name: CoreModalDialogType
+      href: minecraft/server-editor/CoreModalDialogType.md
     - name: CursorControlMode
       href: minecraft/server-editor/CursorControlMode.md
     - name: CursorTargetMode
       href: minecraft/server-editor/CursorTargetMode.md
+    - name: DataPickerModalDialogVariant
+      href: minecraft/server-editor/DataPickerModalDialogVariant.md
     - name: DaylightCycle
       href: minecraft/server-editor/DaylightCycle.md
     - name: EditorInputContext
@@ -1206,6 +1210,10 @@
       href: minecraft/server-editor/ListPaneViewSortType.md
     - name: LogChannel
       href: minecraft/server-editor/LogChannel.md
+    - name: ModalDialogResponseType
+      href: minecraft/server-editor/ModalDialogResponseType.md
+    - name: ModalDialogType
+      href: minecraft/server-editor/ModalDialogType.md
     - name: MouseActionCategory
       href: minecraft/server-editor/MouseActionCategory.md
     - name: MouseActionType
@@ -1558,6 +1566,12 @@
       href: minecraft/server-editor/IMenuPropertyItemOptions.md
     - name: IModalControlPane
       href: minecraft/server-editor/IModalControlPane.md
+    - name: IModalDialog
+      href: minecraft/server-editor/IModalDialog.md
+    - name: IModalDialogActivationRequest
+      href: minecraft/server-editor/IModalDialogActivationRequest.md
+    - name: IModalDialogManager
+      href: minecraft/server-editor/IModalDialogManager.md
     - name: IModalOverlayPane
       href: minecraft/server-editor/IModalOverlayPane.md
     - name: IModalOverlayPaneOptions
@@ -1640,6 +1654,8 @@
       href: minecraft/server-editor/IVector3PropertyItemOptions.md
     - name: LogProperties
       href: minecraft/server-editor/LogProperties.md
+    - name: ModalDialogCreationParams
+      href: minecraft/server-editor/ModalDialogCreationParams.md
     - name: ModalToolCreationParameters
       href: minecraft/server-editor/ModalToolCreationParameters.md
     - name: ProjectExportOptions
@@ -1728,6 +1744,18 @@
       href: minecraft/server-editor/ListPaneViewFilter.md
     - name: LocalizedString
       href: minecraft/server-editor/LocalizedString.md
+    - name: ModalDialogActivationParams
+      href: minecraft/server-editor/ModalDialogActivationParams.md
+    - name: ModalDialogCoreResponseType
+      href: minecraft/server-editor/ModalDialogCoreResponseType.md
+    - name: ModalDialogCustomResponse
+      href: minecraft/server-editor/ModalDialogCustomResponse.md
+    - name: ModalDialogDataPickerResponse
+      href: minecraft/server-editor/ModalDialogDataPickerResponse.md
+    - name: ModalDialogDismissResponse
+      href: minecraft/server-editor/ModalDialogDismissResponse.md
+    - name: ModalDialogRequestData
+      href: minecraft/server-editor/ModalDialogRequestData.md
     - name: ModalToolLifecycleEventPayload
       href: minecraft/server-editor/ModalToolLifecycleEventPayload.md
     - name: MouseModifiers
@@ -1806,6 +1834,14 @@
       href: minecraft/server-gametest/PlayerPersonaPiece.md
     - name: PlayerSkinData
       href: minecraft/server-gametest/PlayerSkinData.md
+  - name: minecraft/server-graphics
+    items:
+    - name: minecraft/server-graphics
+      href: minecraft/server-graphics/minecraft-server-graphics.md
+    - name: minecraft/server-graphics Changelog
+      href: minecraft/server-graphics/changelog.md
+    - name: Atmospherics
+      href: minecraft/server-graphics/Atmospherics.md
   - name: minecraft/server-net
     items:
     - name: minecraft/server-net

@@ -24,7 +24,13 @@ Type: (arg0: [*BlockComponentPlayerPlaceBeforeEvent*](BlockComponentPlayerPlaceB
 ### **onBreak**
 `onBreak?: (arg0: BlockComponentBlockBreakEvent, arg1: CustomComponentParameters) => void;`
 
-This function will be called when specific block is destroyed.
+This function will be called when a specific block is destroyed. 
+
+Changes in block permutations will not trigger this event. 
+
+Fill Command and SetBlock Command can trigger this event when changing a block permutation only when using destroy mode. 
+
+Custom blocks with the "minecraft:replaceable" component will not trigger the event when replaced.
 
 Type: (arg0: [*BlockComponentBlockBreakEvent*](BlockComponentBlockBreakEvent.md), arg1: [*CustomComponentParameters*](CustomComponentParameters.md)) => *void*
 

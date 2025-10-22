@@ -19,6 +19,7 @@ The IPlayerUISession represents the editor user interface for a given player and
     readonly menuBar: IMenuContainer;
     readonly actionBar: IActionBar;
     readonly statusBar: IStatusBar;
+    readonly dialogManager: IModalDialogManager;
     readonly toolRail: IModalToolContainer;
     readonly log: IPlayerLogger;
     readonly extensionContext: ExtensionContext;

@@ -46,10 +46,12 @@ Type: *string*
 
 ## Methods
 - [constructor](#constructor)
-- [getExcludedTargets](#getexcludedtargets)
+- [getExcludedBlockTargets](#getexcludedblocktargets)
+- [getExcludedEntityTargets](#getexcludedentitytargets)
 - [getItemSettings](#getitemsettings)
 - [getLiquidTargetingItems](#getliquidtargetingitems)
-- [setExcludedTargets](#setexcludedtargets)
+- [setExcludedBlockTargets](#setexcludedblocktargets)
+- [setExcludedEntityTargets](#setexcludedentitytargets)
 - [setItemSettings](#setitemsettings)
 - [setLiquidTargetingItems](#setliquidtargetingitems)
 
@@ -65,14 +67,23 @@ Constructor that takes a unique Id to associate with the created AimAssistPreset
 
 **Returns** [*AimAssistPresetSettings*](AimAssistPresetSettings.md)
 
-### **getExcludedTargets**
+### **getExcludedBlockTargets**
 `
-getExcludedTargets(): string[] | undefined
+getExcludedBlockTargets(): string[] | undefined
 `
 
-Gets the list of block/entity Ids to exclude from aim assist targeting.
+Gets the list of block Ids to exclude from aim assist targeting.
 
-**Returns** *string*[] | *undefined* - The array of block/entity Ids.
+**Returns** *string*[] | *undefined* - The array of block Ids.
+
+### **getExcludedEntityTargets**
+`
+getExcludedEntityTargets(): string[] | undefined
+`
+
+Gets the list of entity Ids to exclude from aim assist targeting.
+
+**Returns** *string*[] | *undefined* - The array of entity Ids.
 
 ### **getItemSettings**
 `
@@ -92,17 +103,34 @@ Gets the list of item Ids that will target liquid blocks with aim-assist when be
 
 **Returns** *string*[] | *undefined* - The array of item Ids.
 
-### **setExcludedTargets**
+### **setExcludedBlockTargets**
 `
-setExcludedTargets(targets?: (minecraftvanilladata.MinecraftBlockTypes | minecraftvanilladata.MinecraftEntityTypes | string)[]): void
+setExcludedBlockTargets(targets?: (minecraftvanilladata.MinecraftBlockTypes | string)[]): void
 `
 
-Sets the list of block/entity Ids to exclude from aim assist targeting.
+Sets the list of block Ids to exclude from aim assist targeting.
 
 #### **Parameters**
-- **targets**?: (*minecraftvanilladata.MinecraftBlockTypes* | *minecraftvanilladata.MinecraftEntityTypes* | *string*)[]
+- **targets**?: (*minecraftvanilladata.MinecraftBlockTypes* | *string*)[]
   
-  An array of block/entity Ids.
+  An array of block Ids.
+
+**Returns** *void*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **setExcludedEntityTargets**
+`
+setExcludedEntityTargets(targets?: (minecraftvanilladata.MinecraftEntityTypes | string)[]): void
+`
+
+Sets the list of entity Ids to exclude from aim assist targeting.
+
+#### **Parameters**
+- **targets**?: (*minecraftvanilladata.MinecraftEntityTypes* | *string*)[]
+  
+  An array of entity Ids.
 
 **Returns** *void*
   
