@@ -144,6 +144,67 @@ In the above example, the custom component is attached alongside other component
 
 The same custom component can be used across multiple files. This `content:turn_to_air` component, for example, can be reused across multiple custom blocks to have easily aligned and composable behavior. In addition, a custom component can be registered in one behavior pack, and then used from another.
 
+## Parameters
+
+One of the new features to Custom Components Version 2 is usage of parameters from script that were defined in the component's JSON. Here is a quick example of a component using parameters and getting access to those parameters from script. In the example, the block will use the same component with different parameters based on what permutation of the block is being used:
+
+```JSON
+"minecraft:block": {
+  "description": {
+    "identifier": "content:my_block",
+    "states": {
+      "content:state_name": [ 0, 1 ]
+    }
+  },
+  "permutations": [
+    {
+      // Permutation Components
+      "condition": "query.block_state('content:state_name') == 1",
+      "components": {
+        "content:turn_to": {
+          "into": "minecraft:stone"
+        }
+      }
+    }
+  ],
+  // Base Components
+  "components": {
+    "content:turn_to": {
+      "into": "minecraft:dirt"
+    }
+  }
+}
+```
+
+In the above example JSON, the custom component is being used twice but with different parameters. The goal here is that this lets one component perform multiple types of actions dependent on the parameters the component is using. In this example, the two permutations of the block will turn into stone or dirt depending on the component. Just like other components, a component on a permutation overrides the component on the base block. Now lets see how to access the parameters in script:
+
+```typescript
+type TurnToComponentParameters = {
+  into?: string;
+};
+
+class TurnToComponent implements BlockCustomComponent {
+    constructor() {
+        this.onStepOn = this.onStepOn.bind(this);
+    }
+
+    onStepOn(e: BlockComponentStepOnEvent, p: CustomComponentParameters): void {
+        const params = p.params as TurnToComponentParameters;
+        if (params.into !== undefined) {
+            e.block.setPermutation(BlockPermutation.resolve(params.into));
+        }
+    }
+}
+
+system.beforeEvents.startup.subscribe((initEvent) => {
+    initEvent.blockComponentRegistry.registerCustomComponent('content:turn_to', new TurnToComponent());
+});
+```
+
+In the above example script, the custom component event function `onStepOn` can optionally take a second parameter for the `CustomComponentParameters` object which contains the JSON parameters from the block definition. These parameters can then change the behavior of the component to place whatever block the parameter's `into` value is set to.
+
+Just like in previous examples, the parameters feature are not only available to blocks, but work on item custom components as well.
+
 ## Workflow
 
 As you author custom components and their corresponding scripting code, you have the full power of hot reload to iterate on your changes while in a world.
