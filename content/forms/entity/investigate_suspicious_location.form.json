@@ -14,8 +14,9 @@
       {
         "id": "goal_radius",
         "title": "Goal Radius",
-        "description": "Distance in blocks within the entity considers it has reached it's target position. Default value: 1.5.",
-        "dataType": 3
+        "description": "Distance in blocks within the entity considers it has reached it's target position.",
+        "dataType": 3,
+        "defaultValue": 1.5
       },
       {
         "id": "priority",
@@ -25,8 +26,9 @@
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
-        "description": "Movement speed multiplier Default value: 1.",
-        "dataType": 3
+        "description": "Movement speed multiplier",
+        "dataType": 3,
+        "defaultValue": 1
       }
     ]
   }

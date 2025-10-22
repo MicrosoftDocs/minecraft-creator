@@ -24,26 +24,30 @@
       {
         "id": "set_persistent",
         "title": "Set Persistent",
-        "description": "Allows the actor to be set to persist upon targeting a player Default value: false.",
-        "dataType": 1
+        "description": "Allows the actor to be set to persist upon targeting a player",
+        "dataType": 1,
+        "defaultValue": false
       },
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
-        "description": "During attack behavior, this multiplier modifies the entity's speed when moving toward the target. Default value: 1.",
-        "dataType": 3
+        "description": "During attack behavior, this multiplier modifies the entity's speed when moving toward the target.",
+        "dataType": 3,
+        "defaultValue": 1
       },
       {
         "id": "x_max_rotation",
         "title": "x Max Rotation",
-        "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target. Default value: 10.",
-        "dataType": 3
+        "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target.",
+        "dataType": 3,
+        "defaultValue": 10
       },
       {
         "id": "y_max_rotation",
         "title": "y Max Rotation",
-        "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate while trying to look at the target. Default value: 10.",
-        "dataType": 3
+        "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate while trying to look at the target.",
+        "dataType": 3,
+        "defaultValue": 10
       }
     ]
   }

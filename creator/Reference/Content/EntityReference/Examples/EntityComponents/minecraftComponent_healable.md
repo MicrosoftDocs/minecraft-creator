@@ -132,6 +132,26 @@ The array of items that can be used to heal this entity.
 "minecraft:healable": {
   "items": [
     {
+      "item": "pufferfish_bucket",
+      "result_item": "water_bucket:0",
+      "heal_amount": 2
+    },
+    {
+      "item": "cod_bucket",
+      "result_item": "water_bucket:0",
+      "heal_amount": 4
+    },
+    {
+      "item": "salmon_bucket",
+      "result_item": "water_bucket:0",
+      "heal_amount": 4
+    },
+    {
+      "item": "tropical_fish_bucket",
+      "result_item": "water_bucket:0",
+      "heal_amount": 2
+    },
+    {
       "item": "fish",
       "heal_amount": 4
     },

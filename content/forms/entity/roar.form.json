@@ -14,8 +14,9 @@
       {
         "id": "duration",
         "title": "Duration",
-        "description": "The amount of time to roar for. Default value: 0.",
-        "dataType": 3
+        "description": "The amount of time to roar for.",
+        "dataType": 3,
+        "defaultValue": 0
       },
       {
         "id": "priority",

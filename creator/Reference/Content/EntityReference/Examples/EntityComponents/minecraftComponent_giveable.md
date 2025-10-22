@@ -19,9 +19,9 @@ Defines sets of items that can be used to trigger events when used on this entit
 | cooldown | 0 | Decimal number | An optional cool down in seconds to prevent spamming interactions. |  | 
 | items | *not set* | Array of strings | The list of items that can be given to the entity to place in their inventory. |  | 
 | on_give | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to fire when the correct item is given. |  | 
-| triggers | *not set* | [Triggers (Triggers)](#triggers-triggers) item |  | Panda: `{"cooldown":3,"items":["bamboo","cake"],"on_give":{"event":"minecraft:on_calm","target":"self"}}` | 
+| triggers | *not set* | [Triggers](#triggers) item |  | Panda: `{"cooldown":3,"items":["bamboo","cake"],"on_give":{"event":"minecraft:on_calm","target":"self"}}` | 
 
-## Triggers (Triggers)
+## Triggers
 
 #### Triggers Properties
 

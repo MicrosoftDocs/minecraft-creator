@@ -126,13 +126,25 @@
           "/vanilla/behavior_pack/entities/husk.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
-              "content": 4
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
+              "content": 5
             }
           ],
           "/vanilla/behavior_pack/entities/zombie_pigman.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
-              "content": 5
+              "content": 6
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_villager.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
+              "content": 4
             }
           ]
         }
@@ -156,7 +168,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
           "content": {
-            "priority": 4,
+            "priority": 5,
             "speed_multiplier": 1,
             "search_range": 10,
             "search_height": 2,
@@ -169,7 +181,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
           "content": {
-            "priority": 4,
+            "priority": 5,
             "speed_multiplier": 1,
             "search_range": 10,
             "search_height": 2,
@@ -182,7 +194,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
           "content": {
-            "priority": 5,
+            "priority": 6,
             "speed_multiplier": 1,
             "search_range": 10,
             "search_height": 2,

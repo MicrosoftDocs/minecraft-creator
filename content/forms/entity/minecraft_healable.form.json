@@ -267,6 +267,26 @@
           "content": {
             "items": [
               {
+                "item": "pufferfish_bucket",
+                "result_item": "water_bucket:0",
+                "heal_amount": 2
+              },
+              {
+                "item": "cod_bucket",
+                "result_item": "water_bucket:0",
+                "heal_amount": 4
+              },
+              {
+                "item": "salmon_bucket",
+                "result_item": "water_bucket:0",
+                "heal_amount": 4
+              },
+              {
+                "item": "tropical_fish_bucket",
+                "result_item": "water_bucket:0",
+                "heal_amount": 2
+              },
+              {
                 "item": "fish",
                 "heal_amount": 4
               },
@@ -450,6 +470,26 @@
           "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:healable/",
           "content": {
             "items": [
+              {
+                "item": "pufferfish_bucket",
+                "result_item": "water_bucket:0",
+                "heal_amount": 2
+              },
+              {
+                "item": "cod_bucket",
+                "result_item": "water_bucket:0",
+                "heal_amount": 4
+              },
+              {
+                "item": "salmon_bucket",
+                "result_item": "water_bucket:0",
+                "heal_amount": 4
+              },
+              {
+                "item": "tropical_fish_bucket",
+                "result_item": "water_bucket:0",
+                "heal_amount": 2
+              },
               {
                 "item": "fish",
                 "heal_amount": 4

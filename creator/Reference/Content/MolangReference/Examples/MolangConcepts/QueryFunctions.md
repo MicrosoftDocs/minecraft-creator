@@ -68,6 +68,9 @@ ms.date: 02/11/2025
 | [query.distance_from_camera](queryfunctions/query_distance_from_camera.md)| Returns the distance of the root of this entity or particle emitter from the camera. |
 | [query.effect_emitter_count](queryfunctions/query_effect_emitter_count.md)| Returns the total number of active emitters of the callee's particle effect type. |
 | [query.effect_particle_count](queryfunctions/query_effect_particle_count.md)| Returns the total number of active particles of the callee's particle effect type. |
+| [query.entity_biome_has_all_tags](queryfunctions/query_entity_biome_has_all_tags.md)| Compares the biome the entity is standing in with one or more tag names, and returns either 0 or 1 based on if all of the tag names match. |
+| [query.entity_biome_has_any_identifier](queryfunctions/query_entity_biome_has_any_identifier.md)| Compares the biome the entity is standing in with one or more identifier names, and returns either 0 or 1 based on if any of the identifier names match. |
+| [query.entity_biome_has_any_tags](queryfunctions/query_entity_biome_has_any_tags.md)| Compares the biome the entity is standing in with one or more tag names, and returns either 0 or 1 based on if any of the tag names match. |
 | [query.equipment_count](queryfunctions/query_equipment_count.md)| Returns the number of equipped armor pieces for an entity from 0 to 5, not counting items held in hands. |
 | [query.equipped_item_all_tags](queryfunctions/query_equipped_item_all_tags.md)| Takes a slot name followed by any tag you want to check for in the form of 'tag_name' and returns 1 if all of the tags are on that equipped item, 0 otherwise. |
 | [query.equipped_item_any_tag](queryfunctions/query_equipped_item_any_tag.md)| Takes a slot name followed by any tag you want to check for in the form of 'tag_name' and returns 0 if none of the tags are on that equipped item or 1 if at least 1 tag exists. |

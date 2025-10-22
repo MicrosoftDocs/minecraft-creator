@@ -519,7 +519,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
           "content": {
-            "priority": 6,
+            "priority": 7,
             "max_dist": 3,
             "goal_radius": 2,
             "speed_multiplier": 1,

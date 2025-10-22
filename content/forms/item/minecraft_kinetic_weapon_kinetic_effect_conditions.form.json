@@ -9,20 +9,23 @@
       {
         "id": "max_duration",
         "title": "Max Duration",
-        "description": "Time, in ticks, during which the effect can be applied after \"delay\" elapses. If negative, the effect is applied indefinitely. Default value: -1.",
-        "dataType": 0
+        "description": "Time, in ticks, during which the effect can be applied after \"delay\" elapses. If negative, the effect is applied indefinitely.",
+        "dataType": 0,
+        "defaultValue": -1
       },
       {
         "id": "min_relative_speed",
         "title": "Min Relative Speed",
-        "description": "Minimum relative speed of the user with respect to the target (projected onto the view vector via a dot product) required for the effect to be applied. Default value: 0.",
-        "dataType": 3
+        "description": "Minimum relative speed of the user with respect to the target (projected onto the view vector via a dot product) required for the effect to be applied.",
+        "dataType": 3,
+        "defaultValue": 0
       },
       {
         "id": "min_speed",
         "title": "Min Speed",
-        "description": "Minimum user's speed (projected onto the view vector via a dot product) required for the effect to be applied. Default value: 0.",
-        "dataType": 3
+        "description": "Minimum user's speed (projected onto the view vector via a dot product) required for the effect to be applied.",
+        "dataType": 3,
+        "defaultValue": 0
       }
     ]
   }

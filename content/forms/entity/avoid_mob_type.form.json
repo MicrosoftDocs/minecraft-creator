@@ -15,14 +15,16 @@
       {
         "id": "avoid_target_xz",
         "title": "Avoid Target Xz",
-        "description": "The next target position the entity chooses to avoid another entity will be chosen within this XZ Distance. Default value: 16.",
-        "dataType": 0
+        "description": "The next target position the entity chooses to avoid another entity will be chosen within this XZ Distance.",
+        "dataType": 0,
+        "defaultValue": 16
       },
       {
         "id": "avoid_target_y",
         "title": "Avoid Target Y",
-        "description": "The next target position the entity chooses to avoid another entity will be chosen within this Y Distance. Default value: 7.",
-        "dataType": 0
+        "description": "The next target position the entity chooses to avoid another entity will be chosen within this Y Distance.",
+        "dataType": 0,
+        "defaultValue": 7
       },
       {
         "id": "control_flags",
@@ -164,20 +166,23 @@
       {
         "id": "ignore_visibility",
         "title": "Ignore Visibility",
-        "description": "Whether or not to ignore direct line of sight while this entity is running away from other specified entities. Default value: false.",
-        "dataType": 1
+        "description": "Whether or not to ignore direct line of sight while this entity is running away from other specified entities.",
+        "dataType": 1,
+        "defaultValue": false
       },
       {
         "id": "max_dist",
         "title": "Max Dist",
-        "description": "Maximum distance to look for an avoid target for the entity. Default value: 3.",
-        "dataType": 3
+        "description": "Maximum distance to look for an avoid target for the entity.",
+        "dataType": 3,
+        "defaultValue": 3
       },
       {
         "id": "max_flee",
         "title": "Max Flee",
-        "description": "How many blocks away from its avoid target the entity must be for it to stop fleeing from the avoid target. Default value: 10.",
-        "dataType": 3
+        "description": "How many blocks away from its avoid target the entity must be for it to stop fleeing from the avoid target.",
+        "dataType": 3,
+        "defaultValue": 10
       },
       {
         "id": "on_escape_event",
@@ -194,8 +199,9 @@
       {
         "id": "probability_per_strength",
         "title": "Probability Per Strength",
-        "description": "Percent chance this entity will stop avoiding another entity based on that entity's strength, where 1.0 = 100%. Default value: 1.",
+        "description": "Percent chance this entity will stop avoiding another entity based on that entity's strength, where 1.0 = 100%.",
         "dataType": 3,
+        "defaultValue": 1,
         "validity": [
           {
             "comparison": "<=",
@@ -206,38 +212,48 @@
       {
         "id": "remove_target",
         "title": "Remove Target",
-        "description": "Determine if we should remove target when fleeing or not. Default value: false.",
-        "dataType": 1
+        "description": "Determine if we should remove target when fleeing or not.",
+        "dataType": 1,
+        "defaultValue": false
       },
       {
         "id": "river_speed_multiplier",
         "title": "River Speed Multiplier",
-        "description": "Multiplier for speed when following river. 1.0 means keep the regular speed, while higher numbers make the speed faster. Default value: 0.75.",
-        "dataType": 3
+        "description": "Multiplier for speed when following river. 1.0 means keep the regular speed, while higher numbers make the speed faster.",
+        "dataType": 3,
+        "defaultValue": 0.75
       },
       {
         "id": "sound_interval",
         "title": "Sound Interval",
+        "description": "The range of time in seconds to randomly wait before playing the sound again.",
         "dataType": 16,
+        "defaultValue": {
+          "max": 8,
+          "min": 3
+        },
         "subFormId": "item_components/floatrange"
       },
       {
         "id": "sprint_distance",
         "title": "Sprint Distance",
-        "description": "How many blocks within range of its avoid target the entity must be for it to begin sprinting away from the avoid target. Default value: 7.",
-        "dataType": 3
+        "description": "How many blocks within range of its avoid target the entity must be for it to begin sprinting away from the avoid target.",
+        "dataType": 3,
+        "defaultValue": 7
       },
       {
         "id": "sprint_speed_multiplier",
         "title": "Sprint Speed Multiplier",
-        "description": "Multiplier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster. Default value: 1.",
-        "dataType": 3
+        "description": "Multiplier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster.",
+        "dataType": 3,
+        "defaultValue": 1
       },
       {
         "id": "walk_speed_multiplier",
         "title": "Walk Speed Multiplier",
-        "description": "Multiplier for walking speed. 1.0 means keep the regular speed, while higher numbers make the walking speed faster. Default value: 1.",
-        "dataType": 3
+        "description": "Multiplier for walking speed. 1.0 means keep the regular speed, while higher numbers make the walking speed faster.",
+        "dataType": 3,
+        "defaultValue": 1
       }
     ]
   }

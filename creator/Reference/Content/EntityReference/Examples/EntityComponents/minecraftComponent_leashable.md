@@ -17,9 +17,9 @@ Describes how this mob can be leashed to other items.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | can_be_cut | true | Boolean true/false | If true, players can cut both incoming and outgoing leashes by using shears on the entity. |  | 
-| can_be_stolen | true | Boolean true/false | If true, players can leash this entity even if it is already leashed to another entity. | Frost Moose: `true` | 
+| can_be_stolen | false | Boolean true/false | If true, players can leash this entity even if it is already leashed to another entity. | Frost Moose: `true` | 
 | hard_distance | 6 | Integer number | Distance in blocks at which the leash stiffens, restricting movement. |  | 
-| max_distance | *not set* | Integer number | Distance in blocks it which the leash breaks. |  | 
+| max_distance | 0 | Integer number | Distance in blocks it which the leash breaks. |  | 
 | on_leash | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call when this entity is leashed. | Llama: `{"event":"minecraft:on_leash","target":"self"}` | 
 | on_unleash | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call when this entity is unleashed. | Happy Ghast: `{"event":"minecraft:on_unleashed","target":"self"}`, Llama: `{"event":"minecraft:on_unleash","target":"self"}` | 
 | on_unleash_interact_only | false | Boolean true/false | When set to true, "on_unleash" does not trigger when the entity gets unleashed for reasons other than the player directly interacting with it. |  | 

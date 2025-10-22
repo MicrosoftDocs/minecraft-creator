@@ -20,10 +20,10 @@ This item can also be represented as a `String`.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| textures | *not set* | [Textures (Textures)](#textures-textures) item | This map contains the different textures that can be used for the item's icon. Default will contain the actual icon texture. Armor trim textures and palettes can be specified here as well. The icon textures are the keys from the resource_pack/textures/item_texture.json 'texture_data' object associated with the texture file. | Black Bundle: `{"default":"bundle_black"}`, Blue Bundle: `{"default":"bundle_blue"}`, Brown Bundle: `{"default":"bundle_brown"}` | 
+| textures | *not set* | [Textures](#textures) item | This map contains the different textures that can be used for the item's icon. Default will contain the actual icon texture. Armor trim textures and palettes can be specified here as well. The icon textures are the keys from the resource_pack/textures/item_texture.json 'texture_data' object associated with the texture file. | Black Bundle: `{"default":"bundle_black"}`, Blue Bundle: `{"default":"bundle_blue"}`, Brown Bundle: `{"default":"bundle_brown"}` | 
 | texture | *not set* | String | Deprecated - no longer in use. This contains a single texture for the items icon. | Apple: `"apple"`, Breeze Rod: `"breeze_rod"`, Ominous Trial Key: `"ominous_trial_key"` | 
 
-## Textures (Textures)
+## Textures
 
 #### Textures Properties
 

@@ -4,8 +4,6 @@
   href: minecraftBlock_collision_box.md
 - name: minecraft:crafting_table
   href: minecraftBlock_crafting_table.md
-- name: minecraft:custom_components
-  href: minecraftBlock_custom_components.md
 - name: minecraft:destructible_by_explosion
   href: minecraftBlock_destructible_by_explosion.md
 - name: minecraft:destructible_by_mining

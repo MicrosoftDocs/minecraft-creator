@@ -82,7 +82,7 @@
       {
         "id": "feed_items",
         "title": "Feed Items",
-        "description": "List of items that can be fed to the entity. Includes 'item' for the item name and 'growth' to define how much time it grows up by.",
+        "description": "List of items that can be fed to the entity. Includes 'item' for the item name, 'growth' to define how much time it grows up by, and 'result_item' that defines what item the feed item will transform to upon successful interaction (Format: itemName:auxValue).",
         "dataType": 17,
         "samples": {
           "/vanilla/behavior_pack/entities/armadillo.json": [
@@ -94,7 +94,12 @@
           "/vanilla/behavior_pack/entities/axolotl.json": [
             {
               "path": "/minecraft:entity/component_groups/axolotl_baby/minecraft:ageable/",
-              "content": "tropical_fish_bucket"
+              "content": [
+                {
+                  "item": "tropical_fish_bucket",
+                  "result_item": "water_bucket:0"
+                }
+              ]
             }
           ],
           "/vanilla/behavior_pack/entities/bee.json": [
@@ -301,8 +306,23 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:nautilus_baby/minecraft:ageable/",
               "content": [
+                {
+                  "item": "pufferfish_bucket",
+                  "result_item": "water_bucket:0"
+                },
+                {
+                  "item": "cod_bucket",
+                  "result_item": "water_bucket:0"
+                },
+                {
+                  "item": "salmon_bucket",
+                  "result_item": "water_bucket:0"
+                },
+                {
+                  "item": "tropical_fish_bucket",
+                  "result_item": "water_bucket:0"
+                },
                 "pufferfish",
-                "pufferfish_bucket",
                 "fish",
                 "salmon",
                 "clownfish",
@@ -507,20 +527,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "transform_to_item",
-        "title": "Transform To Item",
-        "description": "The feed item used will transform to this item upon successful interaction. Format: itemName:auxValue",
-        "dataType": 17,
-        "samples": {
-          "/vanilla/behavior_pack/entities/axolotl.json": [
-            {
-              "path": "/minecraft:entity/component_groups/axolotl_baby/minecraft:ageable/",
-              "content": "water_bucket:0"
-            }
-          ]
-        }
       }
     ],
     "samples": {
@@ -547,8 +553,12 @@
           "path": "/minecraft:entity/component_groups/axolotl_baby/minecraft:ageable/",
           "content": {
             "duration": 1200,
-            "feed_items": "tropical_fish_bucket",
-            "transform_to_item": "water_bucket:0",
+            "feed_items": [
+              {
+                "item": "tropical_fish_bucket",
+                "result_item": "water_bucket:0"
+              }
+            ],
             "grow_up": {
               "event": "minecraft:ageable_grow_up",
               "target": "self"
@@ -912,8 +922,23 @@
           "content": {
             "duration": 1200,
             "feed_items": [
+              {
+                "item": "pufferfish_bucket",
+                "result_item": "water_bucket:0"
+              },
+              {
+                "item": "cod_bucket",
+                "result_item": "water_bucket:0"
+              },
+              {
+                "item": "salmon_bucket",
+                "result_item": "water_bucket:0"
+              },
+              {
+                "item": "tropical_fish_bucket",
+                "result_item": "water_bucket:0"
+              },
               "pufferfish",
-              "pufferfish_bucket",
               "fish",
               "salmon",
               "clownfish",
@@ -1154,6 +1179,18 @@
               "cooked_rabbit",
               "rotten_flesh"
             ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:horse_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
             "grow_up": {
               "event": "minecraft:ageable_grow_up",
               "target": "self"

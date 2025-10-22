@@ -14,20 +14,23 @@
       {
         "id": "cooldown_time",
         "title": "Cooldown Time",
-        "description": "Time (in seconds) between each start of the cycle to roar, then breath flame. Default value: 10.",
-        "dataType": 3
+        "description": "Time (in seconds) between each start of the cycle to roar, then breath flame.",
+        "dataType": 3,
+        "defaultValue": 10
       },
       {
         "id": "flame_time",
         "title": "Flame Time",
-        "description": "Time (in seconds), after roar, to breath flame. Default value: 0.5.",
-        "dataType": 3
+        "description": "Time (in seconds), after roar, to breath flame.",
+        "dataType": 3,
+        "defaultValue": 0.5
       },
       {
         "id": "ground_flame_count",
         "title": "Ground Flame Count",
-        "description": "Number of ground flame-breath attacks to use before flight-takeoff. Default value: 4.",
-        "dataType": 0
+        "description": "Number of ground flame-breath attacks to use before flight-takeoff.",
+        "dataType": 0,
+        "defaultValue": 4
       },
       {
         "id": "priority",
@@ -37,26 +40,27 @@
       {
         "id": "roar_time",
         "title": "Roar Time",
-        "description": "Time (in seconds) to roar, before breathing flame. Default value: 2.",
-        "dataType": 3
+        "description": "Time (in seconds) to roar, before breathing flame.",
+        "dataType": 3,
+        "defaultValue": 2
       },
       {
         "id": "smoke_color",
         "title": "Smoke Color",
-        "description": "Default value: #DC00EF.",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": "#DC00EF"
       },
       {
         "id": "smoke_radius",
         "title": "Smoke Radius",
-        "description": "Default value: 5.",
-        "dataType": 3
+        "dataType": 3,
+        "defaultValue": 5
       },
       {
         "id": "smoke_time",
         "title": "Smoke Time",
-        "description": "Default value: 10.",
-        "dataType": 3
+        "dataType": 3,
+        "defaultValue": 10
       }
     ]
   }

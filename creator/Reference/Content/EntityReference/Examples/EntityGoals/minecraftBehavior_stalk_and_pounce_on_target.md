@@ -36,10 +36,10 @@ Allows a mob to stalk a target, then once within range pounce onto a target, on 
 | set_persistent | false | Boolean true/false | Allows the actor to be set to persist upon targeting a player |  | 
 | stalk_speed | 1.2 | Decimal number | The movement speed in which you stalk your target | Fox: `1.2` | 
 | strike_dist | 2 | Decimal number | The max distance away from the target when landing from the pounce that will still result in damaging the target | Fox: `2` | 
-| stuck_blocks | *not set* | [Stuck Blocks (Stuck Blocks)](#stuck-blocks-stuck-blocks) item |  | Fox: `{"test":"is_block","subject":"block","operator":"==","value":"snow_layer"}` | 
+| stuck_blocks | *not set* | [Stuck Blocks](#stuck-blocks) item |  | Fox: `{"test":"is_block","subject":"block","operator":"==","value":"snow_layer"}` | 
 | stuck_time | 2 | Decimal number | The amount of time the mob will be stuck if they fail and land on a block they can be stuck on | Fox: `2` | 
 
-## Stuck Blocks (Stuck Blocks)
+## Stuck Blocks
 
 #### Stuck_blocks Properties
 

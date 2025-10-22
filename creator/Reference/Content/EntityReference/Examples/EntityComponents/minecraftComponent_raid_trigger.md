@@ -16,10 +16,10 @@ Attempts to trigger a raid at the entity's location.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| minecraft:raid_trigger | *not set* | [Raid Trigger (Minecraft Raid Trigger)](#raid-trigger-minecraft-raid-trigger) item |  | Player: `{"triggered_event":{"event":"minecraft:remove_raid_trigger","target":"self"}}` | 
+| minecraft:raid_trigger | *not set* | [Raid Trigger](#raid-trigger) item |  | Player: `{"triggered_event":{"event":"minecraft:remove_raid_trigger","target":"self"}}` | 
 | triggered_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to run when a raid is triggered on the village. |  | 
 
-## Raid Trigger (Minecraft Raid Trigger)
+## Raid Trigger
 
 ## Samples
 

@@ -27,7 +27,7 @@ Allows the entity to run away from other entities that meet the criteria specifi
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Bogged: `4`, Cat: `6`, Cave Spider: `2` | 
 | probability_per_strength | 1 | Decimal number | Percent chance this entity will stop avoiding another entity based on that entity's strength, where 1.0 = 100%. | Dolphin: `0.14` | 
 | remove_target | false | Boolean true/false | Determine if we should remove target when fleeing or not. | Hoglin: `true` | 
-| sound_interval | *not set* | Range of integers | The range of time in seconds to randomly wait before playing the sound again. | Hoglin: `{"range_min":2,"range_max":5}` | 
+| sound_interval | *not set* | Range of integers | The range of time in seconds to randomly wait before playing the sound again. | Hoglin: `{"range_min":2,"range_max":5}`, Piglin: `{"min":2,"max":5}` | 
 | sprint_distance | 7 | Decimal number | How many blocks within range of its avoid target the entity must be for it to begin sprinting away from the avoid target. |  | 
 | sprint_speed_multiplier | 1 | Decimal number | Multiplier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster. |  | 
 | walk_speed_multiplier | 1 | Decimal number | Multiplier for walking speed. 1.0 means keep the regular speed, while higher numbers make the walking speed faster. |  | 

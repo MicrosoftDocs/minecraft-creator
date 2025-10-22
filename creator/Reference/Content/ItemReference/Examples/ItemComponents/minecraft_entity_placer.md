@@ -16,15 +16,15 @@ Allows an item to place entities into the world. Additionally, in version 1.19.8
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| dispense_on (Dispense On) | *not set* | Array of [Dispense On (Dispense On)](#dispense-on-dispense-on) items | List of block descriptors of the blocks that this item can be dispensed on. If left empty, all blocks will be allowed. |  | 
+| dispense_on (Dispense On) | *not set* | Array of [Dispense On](#dispense-on) items | List of block descriptors of the blocks that this item can be dispensed on. If left empty, all blocks will be allowed. |  | 
 | dispense_on (Alternate 1) | *not set* | String |  |  | 
 | dispense_on (Alternate 2) | *not set* | Object |  |  | 
 | entity | *not set* | Object | The entity to be placed in the world. Value must match a regular expression pattern of "^(?:\w+(?:\.\w+)*:(?=\w))?(?:\w+(?:\.\w+)*)(?:<((?:\w+(?:\.\w+)*:(?=\w))?\w+(?:\.\w+)*)*>)?$". | My Sword Turtle: `"minecraft:turtle"` | 
-| use_on (Use On) | *not set* | Array of [Use On (Use On)](#use-on-use-on) items | List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed. | My Sword Turtle: `["minecraft:sand"]` | 
+| use_on (Use On) | *not set* | Array of [Use On](#use-on) items | List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed. | My Sword Turtle: `["minecraft:sand"]` | 
 | use_on (Alternate 1) | *not set* | String |  |  | 
 | use_on (Alternate 2) | *not set* | Object |  |  | 
 
-## Dispense On (Dispense On)
+## Dispense On
 
 #### Dispense On Properties
 
@@ -36,7 +36,7 @@ Allows an item to place entities into the world. Additionally, in version 1.19.8
 | states (Alternate 2) | *not set* | Boolean true/false |  |  | 
 | tags | *not set* | String |  |  | 
 
-## Use On (Use On)
+## Use On
 
 #### Use On Properties
 

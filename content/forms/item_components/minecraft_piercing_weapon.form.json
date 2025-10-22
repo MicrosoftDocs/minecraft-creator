@@ -9,14 +9,19 @@
       {
         "id": "hitbox_margin",
         "title": "Hitbox Margin",
-        "description": "Added tolerance to the view vector raycast for detecting entity collisions. Default value: 0.",
-        "dataType": 3
+        "description": "Added tolerance to the view vector raycast for detecting entity collisions.",
+        "dataType": 3,
+        "defaultValue": 0
       },
       {
         "id": "reach",
         "title": "Reach",
-        "description": "Defines the range (in blocks) along the user's view vector where entities can be hit. Only targets within this distance are considered. Block collisions between the user and target block damage and its effects. Default value: [0, 3].",
+        "description": "Defines the range (in blocks) along the user's view vector where entities can be hit. Only targets within this distance are considered. Block collisions between the user and target block damage and its effects.",
         "dataType": 16,
+        "defaultValue": {
+          "max": 3,
+          "min": 0
+        },
         "subFormId": "item_components/floatrange"
       }
     ]

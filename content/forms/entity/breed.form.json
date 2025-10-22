@@ -19,8 +19,9 @@
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
-        "description": "Movement speed multiplier applied to the mob when using this AI Goal. Default value: 1.",
-        "dataType": 3
+        "description": "Movement speed multiplier applied to the mob when using this AI Goal.",
+        "dataType": 3,
+        "defaultValue": 1
       }
     ]
   }

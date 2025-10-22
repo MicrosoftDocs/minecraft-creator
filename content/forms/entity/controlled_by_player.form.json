@@ -14,8 +14,9 @@
       {
         "id": "fractional_rotation",
         "title": "Fractional Rotation",
-        "description": "The entity will attempt to rotate to face where the player is facing each tick. The entity will target this percentage of their difference in their current facing angles each tick (from 0.0 to 1.0 where 1.0 = 100%). This is limited by \"fractional_rotation_limit\". A value of 0.0 will result in the entity no longer turning to where the player is facing. Default value: 0.5.",
+        "description": "The entity will attempt to rotate to face where the player is facing each tick. The entity will target this percentage of their difference in their current facing angles each tick (from 0.0 to 1.0 where 1.0 = 100%). This is limited by \"fractional_rotation_limit\". A value of 0.0 will result in the entity no longer turning to where the player is facing.",
         "dataType": 3,
+        "defaultValue": 0.5,
         "validity": [
           {
             "comparison": ">=",
@@ -30,14 +31,16 @@
       {
         "id": "fractional_rotation_limit",
         "title": "Fractional Rotation Limit",
-        "description": "Limits the total degrees the entity can rotate to face where the player is facing on each tick. Default value: 5.0.",
-        "dataType": 3
+        "description": "Limits the total degrees the entity can rotate to face where the player is facing on each tick.",
+        "dataType": 3,
+        "defaultValue": 5
       },
       {
         "id": "mount_speed_multiplier",
         "title": "Mount Speed Multiplier",
-        "description": "Speed multiplier of mount when controlled by player. Default value: 1.0.",
-        "dataType": 3
+        "description": "Speed multiplier of mount when controlled by player.",
+        "dataType": 3,
+        "defaultValue": 1
       },
       {
         "id": "priority",

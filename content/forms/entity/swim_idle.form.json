@@ -14,8 +14,9 @@
       {
         "id": "idle_time",
         "title": "Idle Time",
-        "description": "Amount of time (in seconds) to stay idle. Default value: 5.",
-        "dataType": 3
+        "description": "Amount of time (in seconds) to stay idle.",
+        "dataType": 3,
+        "defaultValue": 5
       },
       {
         "id": "priority",
@@ -25,8 +26,9 @@
       {
         "id": "success_rate",
         "title": "Success Rate",
-        "description": "Percent chance this entity will go idle, 1.0 = 100%. Default value: 0.1.",
-        "dataType": 3
+        "description": "Percent chance this entity will go idle, 1.0 = 100%.",
+        "dataType": 3,
+        "defaultValue": 0.10000000149011612
       }
     ]
   }

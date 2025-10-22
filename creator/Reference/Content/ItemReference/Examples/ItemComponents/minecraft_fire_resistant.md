@@ -16,4 +16,4 @@ Determines whether the item is immune to burning when dropped in fire or lava.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| value | *not set* | Boolean true/false | Determines whether the item is immune to burning when dropped in fire or lava. Default value: true. |  | 
+| value | true | Boolean true/false | Determines whether the item is immune to burning when dropped in fire or lava. |  | 

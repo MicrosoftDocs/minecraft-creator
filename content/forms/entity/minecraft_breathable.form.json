@@ -655,7 +655,7 @@
             "total_supply": 15,
             "suffocate_time": 0,
             "breathes_air": true,
-            "breathes_water": false
+            "breathes_water": true
           }
         }
       ],
@@ -964,7 +964,8 @@
           "path": "/minecraft:entity/components/minecraft:breathable/",
           "content": {
             "total_supply": 15,
-            "suffocate_time": 0
+            "suffocate_time": 0,
+            "breathes_water": true
           }
         }
       ],
@@ -1013,7 +1014,8 @@
           "path": "/minecraft:entity/components/minecraft:breathable/",
           "content": {
             "total_supply": 15,
-            "suffocate_time": 0
+            "suffocate_time": 0,
+            "breathes_water": true
           }
         }
       ],
@@ -1023,7 +1025,7 @@
           "content": {
             "total_supply": 15,
             "suffocate_time": 0,
-            "breathes_air": false,
+            "breathes_air": true,
             "breathes_water": true
           }
         }

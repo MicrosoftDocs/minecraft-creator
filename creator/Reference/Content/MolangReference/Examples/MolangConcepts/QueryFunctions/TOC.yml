@@ -114,6 +114,12 @@
   href: query_effect_emitter_count.md
 - name: query.effect_particle_count
   href: query_effect_particle_count.md
+- name: query.entity_biome_has_all_tags
+  href: query_entity_biome_has_all_tags.md
+- name: query.entity_biome_has_any_identifier
+  href: query_entity_biome_has_any_identifier.md
+- name: query.entity_biome_has_any_tags
+  href: query_entity_biome_has_any_tags.md
 - name: query.equipment_count
   href: query_equipment_count.md
 - name: query.equipped_item_all_tags

@@ -975,7 +975,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
           "content": {
-            "priority": 8,
+            "priority": 9,
             "look_distance": 6,
             "probability": 0.02
           }

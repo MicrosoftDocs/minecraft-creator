@@ -18,9 +18,9 @@ Feature Rule Definition.
 |:----------|:-------------|:----|:-----------|:------------- |
 | conditions | *not set* | Object | Parameters to control where and when the feature will be placed. |  | 
 | description | *not set* | Object | Identifier for the Feature Rule and Feture to place. |  | 
-| distribution | *not set* | [Distribution (Distribution)](#distribution-distribution) item | Parameters controlling the initial scatter of the feature. |  | 
+| distribution | *not set* | [Distribution](#distribution) item | Parameters controlling the initial scatter of the feature. |  | 
 
-## Distribution (Distribution)
+## Distribution
 Controls the scatter distribution of a particular object.
 
 

@@ -16,8 +16,8 @@ Contains a description and components to define a Biome.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| components | *not set* | [Components (Biome Components)](#biome-components) item | Components for this Biome. |  | 
-| description | *not set* | [Description (Biome Description)](#biome-description) item | Non-component settings, including the Biome name. |  | 
+| components | *not set* | [Components](#biome-components) item | Components for this Biome. |  | 
+| description | *not set* | [Description](#biome-description) item | Non-component settings, including the Biome name. |  | 
 
 ## Biome Components
 Any components that this Biome uses.
@@ -27,19 +27,19 @@ Any components that this Biome uses.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| minecraft:climate | *not set* | [Climate (Biome Climate)](#biome-climate) item | Describes temperature, humidity, precipitation, and similar. Biomes without this component will have default values. |  | 
-| minecraft:creature_spawn_probability | *not set* | [Creature Spawn Probability (Biome Creature Spawn Probability)](#biome-creature-spawn-probability) item | Probability that creatures will spawn within the biome when a chunk is generated. |  | 
-| minecraft:humidity | *not set* | [Humidity (Biome Humidity)](#biome-humidity) item | Forces a biome to ether always be humid or never humid. Humidity effects the spread chance, and spread rate of fire in the biome |  | 
-| minecraft:map_tints | *not set* | [Map Tints (Biome Map Tints)](#biome-map-tints) item | Sets the color grass and foliage will be tinted by in this biome on the map. |  | 
-| minecraft:mountain_parameters | *not set* | [Mountain Parameters (Biome Mountain Parameters)](#biome-mountain-parameters) item | Noise parameters used to drive mountain terrain generation in Overworld. |  | 
-| minecraft:multinoise_generation_rules | *not set* | [Multinoise Generation Rules (Biome Multinoise Generation Rules)](#biome-multinoise-generation-rules) item | Controls how this biome is instantiated (and then potentially modified) during world generation of the nether. |  | 
-| minecraft:overworld_generation_rules | *not set* | [Overworld Generation Rules (Biome Overworld Generation Rules)](#biome-overworld-generation-rules) item | Controls how this biome is instantiated (and then potentially modified) during world generation of the overworld. |  | 
-| minecraft:overworld_height | *not set* | [Overworld Height (Biome Overworld Height)](#biome-overworld-height) item | Noise parameters used to drive terrain height in the Overworld. |  | 
+| minecraft:climate | *not set* | [Climate](#biome-climate) item | Describes temperature, humidity, precipitation, and similar. Biomes without this component will have default values. |  | 
+| minecraft:creature_spawn_probability | *not set* | [Creature Spawn Probability](#biome-creature-spawn-probability) item | Probability that creatures will spawn within the biome when a chunk is generated. |  | 
+| minecraft:humidity | *not set* | [Humidity](#biome-humidity) item | Forces a biome to ether always be humid or never humid. Humidity effects the spread chance, and spread rate of fire in the biome |  | 
+| minecraft:map_tints | *not set* | [Map Tints](#biome-map-tints) item | Sets the color grass and foliage will be tinted by in this biome on the map. |  | 
+| minecraft:mountain_parameters | *not set* | [Mountain Parameters](#biome-mountain-parameters) item | Noise parameters used to drive mountain terrain generation in Overworld. |  | 
+| minecraft:multinoise_generation_rules | *not set* | [Multinoise Generation Rules](#biome-multinoise-generation-rules) item | Controls how this biome is instantiated (and then potentially modified) during world generation of the nether. |  | 
+| minecraft:overworld_generation_rules | *not set* | [Overworld Generation Rules](#biome-overworld-generation-rules) item | Controls how this biome is instantiated (and then potentially modified) during world generation of the overworld. |  | 
+| minecraft:overworld_height | *not set* | [Overworld Height](#biome-overworld-height) item | Noise parameters used to drive terrain height in the Overworld. |  | 
 | minecraft:partially_frozen | *not set* | Object | Component will impact the temperature in a frozen biome, causing some areas to not be frozen. Ex: patchy ice, patchy snow |  | 
-| minecraft:replace_biomes | *not set* | [Replace Biomes (Biome Replace Biomes)](#biome-replace-biomes) item | Replaces a specified portion of one or more Minecraft biomes. |  | 
-| minecraft:surface_builder | *not set* | [Surface Builder (Biome Surface Builder)](#biome-surface-builder) item | Controls the materials used for terrain generation. |  | 
-| minecraft:surface_material_adjustments | *not set* | [Surface Material Adjustments (Biome Surface Material Adjustments)](#biome-surface-material-adjustments) item | Specify fine-detail changes to blocks used in terrain generation (based on a noise function). |  | 
-| minecraft:tags | *not set* | [Tags (Biome Tags)](#biome-tags) item | Attach arbitrary string tags to this biome.<br>Most biome tags are referenced by JSON settings, but some meanings of tags are directly implemented in the game's code. These tags are listed here:<br>birch: Biome uses wildflowers (mutually exclusive with other flower biome tags). Does nothing if biome is tagged "hills".<br>cold: Villagers will be dressed for snowy weather.<br>deep: Pre-Caves and Cliffs, prevents an ocean from having islands or connected rivers and makes the biome less likely to have hills.<br>desert: Allows partially-buried ruined portals to be placed in the biome. Sand blocks will play ambient sounds when the player is nearby.<br>extreme_hills: Ruined portals can be placed higher than normal. Biomes tagged "forest" or "forest_generation" will use normal Overworld flowers instead of forest flowers.<br>flower_forest: Biome uses forest flowers (mutually exclusive with other flower biome tags).<br>forest: Biome uses forest flowers (mutually exclusive with other flower biome tags). Does nothing if biome is tagged tagged "taiga" or "extreme_hills".<br>forest_generation: Equivalent to "forest".<br>frozen: Villagers will be dressed for snowy weather. Prevents the biome from containing lava springs if it is also tagged "ocean".<br>ice: Around ruined portals, lava is always replaced by Netherrack and Netherrack cannot be replaced by magma.<br>ice_plains: Prevents the biome from containing lava springs if it is also tagged "mutated".<br>jungle: Ruined portals will be very mossy.<br>hills: Biomes tagged "meadow" or "birch" will use normal Overworld flowers instead of wildflowers.<br>meadow: Biome uses wildflowers (mutually exclusive with other flower biome tags). Does nothing if biome is tagged "hills".<br>mesa: Sand blocks will play ambient sounds when the player is nearby.<br>mountain: Ruined portals can be placed higher than normal.<br>mutated: Pre-Caves and Cliffs, prevents switching to the specified "mutate_transformation" as the biome is already considered mutated. Prevents the biome from containing lava springs if it is also tagged "ice_plains".<br>no_legacy_worldgen: Prevents biome from using legacy world generation behavior unless the biome is being placed in the Overworld.<br>ocean: Prevents the biome from containing lava springs if it is also tagged "frozen". Allows ruined portals to be found underwater. Pre-Caves and Cliffs, determines if shorelines and rivers should be placed at the edges of the biome and identifies the biome as a shallow ocean for placing islands, unless the "deep" tag is present.<br>pale_garden: Biome uses closed-eye blossoms (mutually exclusive with other flower biome tags).<br>plains: Biome uses plains flowers (mutually exclusive with other flower biome tags).<br>rare: Pre-Caves and Cliffs, this tag flags the biome as a special biome. Oceans cannot be special.<br>swamp: Allows ruined portals to be found underwater. Biome uses swamp flowers (mutually exclusive with other flower biome tags).<br>taiga: Biomes tagged "forest" or "forest_generation" will use normal Overworld flowers instead of forest flowers. |  | 
+| minecraft:replace_biomes | *not set* | [Replace Biomes](#biome-replace-biomes) item | Replaces a specified portion of one or more Minecraft biomes. |  | 
+| minecraft:surface_builder | *not set* | [Surface Builder](#biome-surface-builder) item | Controls the materials used for terrain generation. |  | 
+| minecraft:surface_material_adjustments | *not set* | [Surface Material Adjustments](#biome-surface-material-adjustments) item | Specify fine-detail changes to blocks used in terrain generation (based on a noise function). |  | 
+| minecraft:tags | *not set* | [Tags](#biome-tags) item | Attach arbitrary string tags to this biome.<br>Most biome tags are referenced by JSON settings, but some meanings of tags are directly implemented in the game's code. These tags are listed here:<br>birch: Biome uses wildflowers (mutually exclusive with other flower biome tags). Does nothing if biome is tagged "hills".<br>cold: Villagers will be dressed for snowy weather.<br>deep: Pre-Caves and Cliffs, prevents an ocean from having islands or connected rivers and makes the biome less likely to have hills.<br>desert: Allows partially-buried ruined portals to be placed in the biome. Sand blocks will play ambient sounds when the player is nearby.<br>extreme_hills: Ruined portals can be placed higher than normal. Biomes tagged "forest" or "forest_generation" will use normal Overworld flowers instead of forest flowers.<br>flower_forest: Biome uses forest flowers (mutually exclusive with other flower biome tags).<br>forest: Biome uses forest flowers (mutually exclusive with other flower biome tags). Does nothing if biome is tagged tagged "taiga" or "extreme_hills".<br>forest_generation: Equivalent to "forest".<br>frozen: Villagers will be dressed for snowy weather. Prevents the biome from containing lava springs if it is also tagged "ocean".<br>ice: Around ruined portals, lava is always replaced by Netherrack and Netherrack cannot be replaced by magma.<br>ice_plains: Prevents the biome from containing lava springs if it is also tagged "mutated".<br>jungle: Ruined portals will be very mossy.<br>hills: Biomes tagged "meadow" or "birch" will use normal Overworld flowers instead of wildflowers.<br>meadow: Biome uses wildflowers (mutually exclusive with other flower biome tags). Does nothing if biome is tagged "hills".<br>mesa: Sand blocks will play ambient sounds when the player is nearby.<br>mountain: Ruined portals can be placed higher than normal.<br>mutated: Pre-Caves and Cliffs, prevents switching to the specified "mutate_transformation" as the biome is already considered mutated. Prevents the biome from containing lava springs if it is also tagged "ice_plains".<br>no_legacy_worldgen: Prevents biome from using legacy world generation behavior unless the biome is being placed in the Overworld.<br>ocean: Prevents the biome from containing lava springs if it is also tagged "frozen". Allows ruined portals to be found underwater. Pre-Caves and Cliffs, determines if shorelines and rivers should be placed at the edges of the biome and identifies the biome as a shallow ocean for placing islands, unless the "deep" tag is present.<br>pale_garden: Biome uses closed-eye blossoms (mutually exclusive with other flower biome tags).<br>plains: Biome uses plains flowers (mutually exclusive with other flower biome tags).<br>rare: Pre-Caves and Cliffs, this tag flags the biome as a special biome. Oceans cannot be special.<br>swamp: Allows ruined portals to be found underwater. Biome uses swamp flowers (mutually exclusive with other flower biome tags).<br>taiga: Biomes tagged "forest" or "forest_generation" will use normal Overworld flowers instead of forest flowers. |  | 
 
 ## Biome Climate
 Describes temperature, humidity, precipitation, and similar. Biomes without this component will have default values.
@@ -97,11 +97,11 @@ Noise parameters used to drive mountain terrain generation in Overworld.
 | material | *not set* | Object | Block type use as steep material |  | 
 | north_slopes | *not set* | Boolean true/false | Enable for north-facing slopes |  | 
 | south_slopes | *not set* | Boolean true/false | Enable for south-facing slopes |  | 
-| steep_material_adjustment | *not set* | [Steep Material Adjustment (Mountain Parameters - Steep Material Adjustment Settings)](#steep-material-adjustment-mountain-parameters---steep-material-adjustment-settings) item | Defines surface material for steep slopes |  | 
-| top_slide | *not set* | [Top Slide (Mountain Parameters - Top Slide Settings)](#top-slide-mountain-parameters---top-slide-settings) item | Controls the density tapering that happens at the top of the world to prevent terrain from reaching too high |  | 
+| steep_material_adjustment | *not set* | [Steep Material Adjustment](#steep-material-adjustment) item | Defines surface material for steep slopes |  | 
+| top_slide | *not set* | [Top Slide](#top-slide) item | Controls the density tapering that happens at the top of the world to prevent terrain from reaching too high |  | 
 | west_slopes | *not set* | Boolean true/false | Enable for west-facing slopes |  | 
 
-## Steep Material Adjustment (Mountain Parameters - Steep Material Adjustment Settings)
+## Steep Material Adjustment
 Defines surface material for steep slopes.
 
 
@@ -111,12 +111,12 @@ Defines surface material for steep slopes.
 |:----------|:-------------|:----|:-----------|:------------- |
 | east_slopes | *not set* | Boolean true/false | Enable for east-facing slopes |  | 
 | material | *not set* | String | Block type use as steep material |  | 
-| material (Alternate 1) | *not set* | [Material (Material)](#material-material) item |  |  | 
+| material (Alternate 1) | *not set* | [Material](#material) item |  |  | 
 | north_slopes | *not set* | Boolean true/false | Enable for north-facing slopes |  | 
 | south_slopes | *not set* | Boolean true/false | Enable for south-facing slopes |  | 
 | west_slopes | *not set* | Boolean true/false | Enable for west-facing slopes |  | 
 
-## Material (Material)
+## Material
 
 #### Material Properties
 
@@ -127,7 +127,7 @@ Defines surface material for steep slopes.
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
-## Top Slide (Mountain Parameters - Top Slide Settings)
+## Top Slide
 Controls the density tapering that happens at the top of the world to prevent terrain from reaching too high.
 
 
@@ -197,7 +197,7 @@ Replaces a specified portion of one or more Minecraft biomes.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| replacements | *not set* | [Replacements (Biome Replacement)](#biome-replacement) item | List of biome replacement configurations. Retroactively adding a new replacement to the front of this list will cause the world generation to change. Please add any new replacements to the end of the list. |  | 
+| replacements | *not set* | [Replacements](#biome-replacement) item | List of biome replacement configurations. Retroactively adding a new replacement to the front of this list will cause the world generation to change. Please add any new replacements to the end of the list. |  | 
 
 ## Biome Replacement
 Represents the replacement information used to determine the placement of the overriding biome.
@@ -220,12 +220,12 @@ Controls the materials used for terrain generation.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| builder (Biome Overworld) | *not set* | [Builder (Biome Overworld)](#biome-overworld) item | Controls the block types used for terrain generation. |  | 
-| builder (Alternate 1) | *not set* | [Builder (Biome Frozen Ocean)](#biome-frozen-ocean) item |  |  | 
-| builder (Alternate 2) | *not set* | [Builder (Biome Mesa)](#biome-mesa) item |  |  | 
-| builder (Alternate 3) | *not set* | [Builder (Biome Swamp)](#biome-swamp) item |  |  | 
-| builder (Alternate 4) | *not set* | [Builder (Biome Capped)](#biome-capped) item |  |  | 
-| builder (Alternate 5) | *not set* | [Builder (Biome The End)](#biome-the-end) item |  |  | 
+| builder (Biome Overworld) | *not set* | [Builder](#biome-overworld) item | Controls the block types used for terrain generation. |  | 
+| builder (Alternate 1) | *not set* | [Builder](#biome-frozen-ocean) item |  |  | 
+| builder (Alternate 2) | *not set* | [Builder](#biome-mesa) item |  |  | 
+| builder (Alternate 3) | *not set* | [Builder](#biome-swamp) item |  |  | 
+| builder (Alternate 4) | *not set* | [Builder](#biome-capped) item |  |  | 
+| builder (Alternate 5) | *not set* | [Builder](#biome-the-end) item |  |  | 
 
 ## Biome Overworld
 Controls the blocks used for the default Minecraft Overworld terrain generation.
@@ -236,19 +236,19 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | foundation_material | *not set* | String | Controls the block type used deep underground in this biome |  | 
-| foundation_material (Alternate 1) | *not set* | [Foundation Material (Foundation Material)](#foundation-material-foundation-material) item |  |  | 
+| foundation_material (Alternate 1) | *not set* | [Foundation Material](#foundation-material) item |  |  | 
 | mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome |  | 
-| mid_material (Alternate 1) | *not set* | [Mid Material (Mid Material)](#mid-material-mid-material) item |  |  | 
+| mid_material (Alternate 1) | *not set* | [Mid Material](#mid-material) item |  |  | 
 | sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur Value must be <= 127. |  | 
 | sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome |  | 
-| sea_floor_material (Alternate 1) | *not set* | [Sea Floor Material (Sea Floor Material)](#sea-floor-material-sea-floor-material) item |  |  | 
+| sea_floor_material (Alternate 1) | *not set* | [Sea Floor Material](#sea-floor-material) item |  |  | 
 | sea_material | *not set* | String | Controls the block type used for the bodies of water in this biome |  | 
-| sea_material (Alternate 1) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  |  | 
+| sea_material (Alternate 1) | *not set* | [Sea Material](#sea-material) item |  |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome |  | 
-| top_material (Alternate 1) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  |  | 
+| top_material (Alternate 1) | *not set* | [Top Material](#top-material) item |  |  | 
 | type | *not set* | String | Controls the type of surface builder to use |  | 
 
-## Foundation Material (Foundation Material)
+## Foundation Material
 
 #### Foundation Material Properties
 
@@ -259,7 +259,7 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
-## Mid Material (Mid Material)
+## Mid Material
 
 #### Mid Material Properties
 
@@ -270,7 +270,7 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
-## Sea Floor Material (Sea Floor Material)
+## Sea Floor Material
 
 #### Sea Floor Material Properties
 
@@ -281,7 +281,7 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
-## Sea Material (Sea Material)
+## Sea Material
 
 #### Sea Material Properties
 
@@ -292,7 +292,7 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
-## Top Material (Top Material)
+## Top Material
 
 #### Top Material Properties
 
@@ -312,16 +312,16 @@ Similar to overworld_surface. Adds icebergs.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | foundation_material | *not set* | String | Controls the block type used deep underground in this biome |  | 
-| foundation_material (Alternate 1) | *not set* | [Foundation Material (Foundation Material)](#foundation-material-foundation-material) item |  |  | 
+| foundation_material (Alternate 1) | *not set* | [Foundation Material](#foundation-material) item |  |  | 
 | mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome |  | 
-| mid_material (Alternate 1) | *not set* | [Mid Material (Mid Material)](#mid-material-mid-material) item |  |  | 
+| mid_material (Alternate 1) | *not set* | [Mid Material](#mid-material) item |  |  | 
 | sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur Value must be <= 127. |  | 
 | sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome |  | 
-| sea_floor_material (Alternate 1) | *not set* | [Sea Floor Material (Sea Floor Material)](#sea-floor-material-sea-floor-material) item |  |  | 
+| sea_floor_material (Alternate 1) | *not set* | [Sea Floor Material](#sea-floor-material) item |  |  | 
 | sea_material | *not set* | String | Controls the block type used for the bodies of water in this biome |  | 
-| sea_material (Alternate 1) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  |  | 
+| sea_material (Alternate 1) | *not set* | [Sea Material](#sea-material) item |  |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome |  | 
-| top_material (Alternate 1) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  |  | 
+| top_material (Alternate 1) | *not set* | [Top Material](#top-material) item |  |  | 
 | type | *not set* | String | Controls the type of surface builder to use |  | 
 
 ## Biome Mesa
@@ -334,24 +334,24 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 |:----------|:-------------|:----|:-----------|:------------- |
 | bryce_pillars | *not set* | Boolean true/false | Whether the mesa generates with pillars |  | 
 | clay_material | *not set* | String | Base clay block to use |  | 
-| clay_material (Alternate 1) | *not set* | [Clay Material (Clay Material)](#clay-material-clay-material) item |  |  | 
+| clay_material (Alternate 1) | *not set* | [Clay Material](#clay-material) item |  |  | 
 | foundation_material | *not set* | String | Controls the block type used deep underground in this biome |  | 
-| foundation_material (Alternate 1) | *not set* | [Foundation Material (Foundation Material)](#foundation-material-foundation-material) item |  |  | 
+| foundation_material (Alternate 1) | *not set* | [Foundation Material](#foundation-material) item |  |  | 
 | hard_clay_material | *not set* | String | Hardened clay block to use |  | 
-| hard_clay_material (Alternate 1) | *not set* | [Hard Clay Material (Hard Clay Material)](#hard-clay-material-hard-clay-material) item |  |  | 
+| hard_clay_material (Alternate 1) | *not set* | [Hard Clay Material](#hard-clay-material) item |  |  | 
 | has_forest | *not set* | Boolean true/false | Places coarse dirt and grass at high altitudes |  | 
 | mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome |  | 
-| mid_material (Alternate 1) | *not set* | [Mid Material (Mid Material)](#mid-material-mid-material) item |  |  | 
+| mid_material (Alternate 1) | *not set* | [Mid Material](#mid-material) item |  |  | 
 | sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur Value must be <= 127. |  | 
 | sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome |  | 
-| sea_floor_material (Alternate 1) | *not set* | [Sea Floor Material (Sea Floor Material)](#sea-floor-material-sea-floor-material) item |  |  | 
+| sea_floor_material (Alternate 1) | *not set* | [Sea Floor Material](#sea-floor-material) item |  |  | 
 | sea_material | *not set* | String | Controls the block type used for the bodies of water in this biome |  | 
-| sea_material (Alternate 1) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  |  | 
+| sea_material (Alternate 1) | *not set* | [Sea Material](#sea-material) item |  |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome |  | 
-| top_material (Alternate 1) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  |  | 
+| top_material (Alternate 1) | *not set* | [Top Material](#top-material) item |  |  | 
 | type | *not set* | String | Controls the type of surface builder to use |  | 
 
-## Clay Material (Clay Material)
+## Clay Material
 
 #### Clay Material Properties
 
@@ -362,7 +362,7 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
-## Hard Clay Material (Hard Clay Material)
+## Hard Clay Material
 
 #### Hard Clay Material Properties
 
@@ -382,17 +382,17 @@ Used to add decoration to the surface of swamp biomes such as water lilies.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | foundation_material | *not set* | String | Controls the block type used deep underground in this biome. |  | 
-| foundation_material (Alternate 1) | *not set* | [Foundation Material (Foundation Material)](#foundation-material-foundation-material) item |  |  | 
+| foundation_material (Alternate 1) | *not set* | [Foundation Material](#foundation-material) item |  |  | 
 | max_puddle_depth_below_sea_level | *not set* | Integer number | Controls the depth at which surface level blocks can be replaced with water for puddles. The number represents the number of blocks (0, 127) below sea level that we will go down to look for a surface block. Value must be <= 127. |  | 
 | mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome. |  | 
-| mid_material (Alternate 1) | *not set* | [Mid Material (Mid Material)](#mid-material-mid-material) item |  |  | 
+| mid_material (Alternate 1) | *not set* | [Mid Material](#mid-material) item |  |  | 
 | sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur. Value must be <= 127. |  | 
 | sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome. |  | 
-| sea_floor_material (Alternate 1) | *not set* | [Sea Floor Material (Sea Floor Material)](#sea-floor-material-sea-floor-material) item |  |  | 
+| sea_floor_material (Alternate 1) | *not set* | [Sea Floor Material](#sea-floor-material) item |  |  | 
 | sea_material | *not set* | String | Controls the block type used for the bodies of water in this biome. |  | 
-| sea_material (Alternate 1) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  |  | 
+| sea_material (Alternate 1) | *not set* | [Sea Material](#sea-material) item |  |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome. |  | 
-| top_material (Alternate 1) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  |  | 
+| top_material (Alternate 1) | *not set* | [Top Material](#top-material) item |  |  | 
 | type | *not set* | String | Controls the type of surface builder to use |  | 
 
 ## Biome Capped
@@ -404,18 +404,18 @@ Generates surface on blocks with non-solid blocks above or below.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | beach_material | *not set* | String | Material used to decorate surface near sea level. |  | 
-| beach_material (Alternate 1) | *not set* | [Beach Material (Beach Material)](#beach-material-beach-material) item |  |  | 
+| beach_material (Alternate 1) | *not set* | [Beach Material](#beach-material) item |  |  | 
 | ceiling_materials | *not set* | String | Materials used for the surface ceiling. Value must have at least 1 items. |  | 
-| ceiling_materials (Alternate 1) | *not set* | [Ceiling Materials (Ceiling Materials)](#ceiling-materials-ceiling-materials) item |  |  | 
+| ceiling_materials (Alternate 1) | *not set* | [Ceiling Materials](#ceiling-materials) item |  |  | 
 | floor_materials | *not set* | String | Materials used for the surface floor. Value must have at least 1 items. |  | 
-| floor_materials (Alternate 1) | *not set* | [Floor Materials (Floor Materials)](#floor-materials-floor-materials) item |  |  | 
+| floor_materials (Alternate 1) | *not set* | [Floor Materials](#floor-materials) item |  |  | 
 | foundation_material | *not set* | String | Material used to replace solid blocks that are not surface blocks. |  | 
-| foundation_material (Alternate 1) | *not set* | [Foundation Material (Foundation Material)](#foundation-material-foundation-material) item |  |  | 
+| foundation_material (Alternate 1) | *not set* | [Foundation Material](#foundation-material) item |  |  | 
 | sea_material | *not set* | String | Material used to replace air blocks below sea level. |  | 
-| sea_material (Alternate 1) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  |  | 
+| sea_material (Alternate 1) | *not set* | [Sea Material](#sea-material) item |  |  | 
 | type | *not set* | String | Controls the type of surface builder to use |  | 
 
-## Beach Material (Beach Material)
+## Beach Material
 
 #### Beach Material Properties
 
@@ -426,7 +426,7 @@ Generates surface on blocks with non-solid blocks above or below.
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
-## Ceiling Materials (Ceiling Materials)
+## Ceiling Materials
 
 #### Ceiling Materials Properties
 
@@ -437,7 +437,7 @@ Generates surface on blocks with non-solid blocks above or below.
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
-## Floor Materials (Floor Materials)
+## Floor Materials
 
 #### Floor Materials Properties
 
@@ -464,9 +464,9 @@ Specify fine-detail changes to blocks used in terrain generation (based on a noi
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| adjustments | *not set* | Array of [Adjustments (Surface Material Adjustments - Surface Adjustment Settings)](#adjustments-surface-material-adjustments---surface-adjustment-settings) items | All adjustments that match the column's noise values will be applied in the order listed. |  | 
+| adjustments | *not set* | Array of [Adjustments](#adjustments) items | All adjustments that match the column's noise values will be applied in the order listed. |  | 
 
-## Adjustments (Surface Material Adjustments - Surface Adjustment Settings)
+## Adjustments
 An adjustment to generated terrain, replacing blocks based on the specified settings.
 
 
@@ -477,11 +477,11 @@ An adjustment to generated terrain, replacing blocks based on the specified sett
 | height_range | *not set* | Decimal number | Defines a range of noise values [min, max] for which this adjustment should be applied. Value must have at least 2 items. Value must have at most 2 items. |  | 
 | height_range (Alternate 1) | *not set* | Boolean true/false |  |  | 
 | height_range (Alternate 2) | *not set* | String |  |  | 
-| materials | *not set* | [Materials (Surface Material Adjustments - Surface Adjustment Materials Settings)](#materials-surface-material-adjustments---surface-adjustment-materials-settings) item | The specific blocks used for this surface adjustment |  | 
+| materials | *not set* | [Materials](#materials) item | The specific blocks used for this surface adjustment |  | 
 | noise_frequency_scale | *not set* | Decimal number | The scale to multiply by the position when accessing the noise value for the material adjustments. |  | 
 | noise_range | *not set* | Array of numbers | Defines a range of noise values [min, max] for which this adjustment should be applied. Value must have at least 2 items. Value must have at most 2 items. |  | 
 
-## Materials (Surface Material Adjustments - Surface Adjustment Materials Settings)
+## Materials
 The specific blocks used for this surface adjustment.
 
 
@@ -490,15 +490,15 @@ The specific blocks used for this surface adjustment.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | foundation_material | *not set* | String | Controls the block type used deep underground in this biome when this adjustment is active. |  | 
-| foundation_material (Alternate 1) | *not set* | [Foundation Material (Foundation Material)](#foundation-material-foundation-material) item |  |  | 
+| foundation_material (Alternate 1) | *not set* | [Foundation Material](#foundation-material) item |  |  | 
 | mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome when this adjustment is active. |  | 
-| mid_material (Alternate 1) | *not set* | [Mid Material (Mid Material)](#mid-material-mid-material) item |  |  | 
+| mid_material (Alternate 1) | *not set* | [Mid Material](#mid-material) item |  |  | 
 | sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome when this adjustment is active. |  | 
-| sea_floor_material (Alternate 1) | *not set* | [Sea Floor Material (Sea Floor Material)](#sea-floor-material-sea-floor-material) item |  |  | 
+| sea_floor_material (Alternate 1) | *not set* | [Sea Floor Material](#sea-floor-material) item |  |  | 
 | sea_material | *not set* | String | Controls the block type used in the bodies of water in this biome when this adjustment is active. |  | 
-| sea_material (Alternate 1) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  |  | 
+| sea_material (Alternate 1) | *not set* | [Sea Material](#sea-material) item |  |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome when this adjustment is active. |  | 
-| top_material (Alternate 1) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  |  | 
+| top_material (Alternate 1) | *not set* | [Top Material](#top-material) item |  |  | 
 
 ## Biome Tags
 Attach arbitrary string tags to this biome.

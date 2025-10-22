@@ -23,8 +23,9 @@
       {
         "id": "type",
         "title": "ItemCooldownType",
-        "description": "The type of action the cooldown applies to. Options are mutually exclusive, so cooldown for one type of action does not affect the others. Values: \"use\" (when using an item), \"attack\" (when attack with an item). Default value: use.",
-        "dataType": 2
+        "description": "The type of action the cooldown applies to. Options are mutually exclusive, so cooldown for one type of action does not affect the others. Values: \"use\" (when using an item), \"attack\" (when attack with an item).",
+        "dataType": 2,
+        "defaultValue": "use"
       }
     ],
     "samples": {}

@@ -42,8 +42,9 @@
       {
         "id": "distance_to_players",
         "title": "Distance To Players",
-        "description": "The distance at which the closest player has to be before this entity despawns. This option will be ignored if never_despawn is true. Default value: 128.",
+        "description": "The distance at which the closest player has to be before this entity despawns. This option will be ignored if never_despawn is true.",
         "dataType": 3,
+        "defaultValue": 128,
         "validity": [
           {
             "comparison": ">=",
@@ -54,14 +55,16 @@
       {
         "id": "never_despawn",
         "title": "Never Despawn",
-        "description": "If true, this entity will not despawn even if players are far away. If false, distance_to_players will be used to determine when to despawn. Default value: true.",
-        "dataType": 1
+        "description": "If true, this entity will not despawn even if players are far away. If false, distance_to_players will be used to determine when to despawn.",
+        "dataType": 1,
+        "defaultValue": true
       },
       {
         "id": "radius",
         "title": "Radius",
-        "description": "The area around the entity to tick. Allowed range: 2-6. Default value: 2.",
+        "description": "The area around the entity to tick. Allowed range: 2-6.",
         "dataType": 0,
+        "defaultValue": 2,
         "validity": [
           {
             "comparison": ">=",

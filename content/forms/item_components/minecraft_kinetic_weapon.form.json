@@ -16,20 +16,23 @@
       {
         "id": "damage_modifier",
         "title": "Damage Modifier",
-        "description": "Value added to the the scaled dot product (after applying \"damage_multiplier\"). Default value: 0.",
-        "dataType": 3
+        "description": "Value added to the the scaled dot product (after applying \"damage_multiplier\").",
+        "dataType": 3,
+        "defaultValue": 0
       },
       {
         "id": "damage_multiplier",
         "title": "Damage Multiplier",
-        "description": "Value multiplied to sum of the dot products of the user and target's velocity vectors projected onto the view vector. Default value: 1.",
-        "dataType": 3
+        "description": "Value multiplied to sum of the dot products of the user and target's velocity vectors projected onto the view vector.",
+        "dataType": 3,
+        "defaultValue": 1
       },
       {
         "id": "delay",
         "title": "Delay",
-        "description": "Time, in ticks, after which kinetic damage and its effects start being applied. Default value: 0.",
-        "dataType": 0
+        "description": "Time, in ticks, after which kinetic damage and its effects start being applied.",
+        "dataType": 0,
+        "defaultValue": 0
       },
       {
         "id": "dismount_conditions",
@@ -41,8 +44,9 @@
       {
         "id": "hitbox_margin",
         "title": "Hitbox Margin",
-        "description": "Added tolerance to the view vector raycast for detecting entity collisions. Default value: 0.",
-        "dataType": 3
+        "description": "Added tolerance to the view vector raycast for detecting entity collisions.",
+        "dataType": 3,
+        "defaultValue": 0
       },
       {
         "id": "knockback_conditions",
@@ -54,8 +58,12 @@
       {
         "id": "reach",
         "title": "Reach",
-        "description": "Defines the range (in blocks) along the user's view vector where entities can be hit. Only targets within this distance are considered. Block collisions between the user and target block damage and its effects. Default value: [0, 3].",
+        "description": "Defines the range (in blocks) along the user's view vector where entities can be hit. Only targets within this distance are considered. Block collisions between the user and target block damage and its effects.",
         "dataType": 16,
+        "defaultValue": {
+          "max": 3,
+          "min": 0
+        },
         "subFormId": "item_components/floatrange"
       }
     ]

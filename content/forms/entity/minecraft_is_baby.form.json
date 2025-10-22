@@ -329,6 +329,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:horse_baby/minecraft:is_baby/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/zombie_pigman.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:pig_zombie_baby/minecraft:is_baby/",

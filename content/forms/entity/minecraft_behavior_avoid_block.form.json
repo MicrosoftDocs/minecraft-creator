@@ -1,8 +1,8 @@
 {
   "fields": [],
   "generated_doNotEdit": {
-    "id": "minecraft:behavior.avoid_block (See JSON Schema since 1.21.120)",
-    "title": "Avoid Block (See JSON Schema Since 1.21.120) Behavior",
+    "id": "minecraft:behavior.avoid_block",
+    "title": "Avoid Block Behavior",
     "description": "Allows this entity to avoid certain blocks.",
     "fields": [
       {

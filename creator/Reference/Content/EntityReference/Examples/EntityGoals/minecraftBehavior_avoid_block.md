@@ -21,7 +21,7 @@ Allows this entity to avoid certain blocks.
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Hoglin: `1`, Piglin: `9` | 
 | search_height | 0 | Integer number | Maximum distance to look for a block in y. | Hoglin: `4` | 
 | search_range | 0 | Integer number | Maximum distance to look for a block in xz. | Hoglin: `8` | 
-| sound_interval | *not set* | Range of integers | The range of time in seconds to randomly wait before playing the sound again. | Hoglin: `{"range_min":2,"range_max":5}` | 
+| sound_interval | *not set* | Range of integers | The range of time in seconds to randomly wait before playing the sound again. | Hoglin: `{"range_min":2,"range_max":5}`, Piglin: `{"min":2,"max":5}` | 
 | sprint_speed_modifier | 1 | Decimal number | Modifier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster. | Hoglin: `1`, Piglin: `1.1` | 
 | target_blocks | *not set* | Array of strings | List of block types this mob avoids. | Hoglin: `["minecraft:warped_fungus","minecraft:portal","minecraft:respawn_anchor"]`, Piglin: `["minecraft:soul_fire","minecraft:soul_lantern","minecraft:soul_torch","minecraft:item.soul_campfire"]` | 
 | target_selection_method | nearest | String | Block search method. | Hoglin: `"nearest"` | 
@@ -80,8 +80,8 @@ Allows this entity to avoid certain blocks.
   ],
   "avoid_block_sound": "retreat",
   "sound_interval": {
-    "range_min": 2,
-    "range_max": 5
+    "min": 2,
+    "max": 5
   }
 }
 ```

@@ -14,8 +14,9 @@
       {
         "id": "material_type",
         "title": "Material Type",
-        "description": "The material the mob is traveling in. An air block will only be considered valid to move to with a block of this material below it. Options are: \"water\", \"lava\", or \"any\". Default value: water.",
-        "dataType": 2
+        "description": "The material the mob is traveling in. An air block will only be considered valid to move to with a block of this material below it. Options are: \"water\", \"lava\", or \"any\".",
+        "dataType": 2,
+        "defaultValue": "water"
       },
       {
         "id": "priority",
@@ -25,20 +26,23 @@
       {
         "id": "search_height",
         "title": "Search Height",
-        "description": "The height (in blocks) above the mob's current position that it will search for a valid air block to move to. If a valid block cannot be found, the mob will move to the position this many blocks above it. Default value: 16.",
-        "dataType": 0
+        "description": "The height (in blocks) above the mob's current position that it will search for a valid air block to move to. If a valid block cannot be found, the mob will move to the position this many blocks above it.",
+        "dataType": 0,
+        "defaultValue": 16
       },
       {
         "id": "search_radius",
         "title": "Search Radius",
-        "description": "The radius (in blocks) around the mob's current position that it will search for a valid air block to move to. Default value: 4.",
-        "dataType": 0
+        "description": "The radius (in blocks) around the mob's current position that it will search for a valid air block to move to.",
+        "dataType": 0,
+        "defaultValue": 4
       },
       {
         "id": "speed_mod",
         "title": "Speed Mod",
-        "description": "Movement speed multiplier of the mob when using this Goal. Default value: 1.4.",
-        "dataType": 3
+        "description": "Movement speed multiplier of the mob when using this Goal.",
+        "dataType": 3,
+        "defaultValue": 1.399999976158142
       }
     ]
   }

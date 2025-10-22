@@ -14,8 +14,9 @@
       {
         "id": "cooldown_seconds",
         "title": "Cooldown Seconds",
-        "description": "Time (in seconds) that the goal is on cooldown before it can be used again. Default value: 5.",
-        "dataType": 3
+        "description": "Time (in seconds) that the goal is on cooldown before it can be used again.",
+        "dataType": 3,
+        "defaultValue": 5
       },
       {
         "id": "filters",

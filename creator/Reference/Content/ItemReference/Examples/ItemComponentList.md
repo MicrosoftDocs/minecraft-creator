@@ -17,7 +17,6 @@ ms.date: 02/11/2025
 | [minecraft:can_destroy_in_creative](./ItemComponents/minecraft_can_destroy_in_creative.md)| The can_destroy_in_creative component determines if the item can be used by a player to break blocks when in creative mode. |
 | [minecraft:compostable](./ItemComponents/minecraft_compostable.md)| Specifies that an item is compostable and provides the chance of creating a composting layer in the composter |
 | [minecraft:cooldown](./ItemComponents/minecraft_cooldown.md)| The duration of time (in seconds) items with a matching category will spend cooling down before becoming usable again. |
-| [minecraft:custom_components](./ItemComponents/minecraft_custom_components.md)| Specifies an array of custom components defined in a script that should be added to this item. |
 | [minecraft:damage](./ItemComponents/minecraft_damage.md)| The damage component determines how much extra damage the item does on attack. |
 | [minecraft:damage_absorption](./ItemComponents/minecraft_damage_absorption.md)| It allows an item to absorb damage that would otherwise be dealt to its wearer. |
 | [minecraft:digger](./ItemComponents/minecraft_digger.md)| Allows a creator to determine how quickly an item can dig specific blocks. |
@@ -66,6 +65,7 @@ These components are either deprecated or internal to Minecraft and not usable i
 | Item Components | Description |
 |:-----|:----------|
 | [chargeable](./ItemComponents/minecraft_chargeable.md)| Event trigger for when the item has completed its use duration. |
+| [custom_components](./ItemComponents/minecraft_custom_components.md)| Specifies an array of custom components defined in a script that should be added to this item. |
 | [render_offsets](./ItemComponents/minecraft_render_offsets.md)| Render offsets component: optional values can be given to offset the way the item is rendered. |
 | [use_duration](./ItemComponents/minecraft_use_duration.md)| This component determines how long the item takes to use when used in combination with components like "shooter", "throwable", or "food". |
 | [weapon](./ItemComponents/minecraft_weapon.md)| Weapon Item Component. |

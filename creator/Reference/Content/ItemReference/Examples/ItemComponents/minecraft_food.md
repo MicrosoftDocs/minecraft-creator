@@ -24,7 +24,7 @@ Sets the item as a food component, allowing it to be edible to the player.
 | can_always_eat | *not set* | Boolean true/false | If true you can always eat this item (even when not hungry). Default is set to false. | AppleEnchanted: `true` | 
 | cooldown_time | *not set* | Decimal number |  |  | 
 | cooldown_type | *not set* | String |  |  | 
-| effects | *not set* | Array of [Effects (Effects)](#effects-effects) items |  | AppleEnchanted: `[{"name":"regeneration","chance":1,"duration":30,"amplifier":1},{"name":"absorption","chance":1,"duration":120,"amplifier":3},{"name":"resistance","chance":1,"duration":300,"amplifier":0},{"name":"fire_resistance","chance":1,"duration":300,"amplifier":0}]`, Chicken: `[{"name":"hunger","chance":0.3,"duration":30,"amplifier":0}]` | 
+| effects | *not set* | Array of [Effects](#effects) items |  | AppleEnchanted: `[{"name":"regeneration","chance":1,"duration":30,"amplifier":1},{"name":"absorption","chance":1,"duration":120,"amplifier":3},{"name":"resistance","chance":1,"duration":300,"amplifier":0},{"name":"fire_resistance","chance":1,"duration":300,"amplifier":0}]`, Chicken: `[{"name":"hunger","chance":0.3,"duration":30,"amplifier":0}]` | 
 | is_meat | *not set* | String |  |  | 
 | nutrition | *not set* | Integer number | Value that is added to the entity's nutrition when the item is used. Default is set to 0. | Apple: `4`, Baked Potato: `5`, Beef: `3` | 
 | on_use_action | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  |  | 
@@ -34,7 +34,7 @@ Sets the item as a food component, allowing it to be edible to the player.
 | using_converts_to (Using Converts To) | *not set* | String | When used, converts to the item specified by the string in this field. Default does not convert item. | Beetroot Soup: `"bowl"`, Honey Bottle: `"glass_bottle"` | 
 | using_converts_to (Alternate 1) | *not set* | Keyed set of strings |  |  | 
 
-## Effects (Effects)
+## Effects
 
 #### Effects Properties
 

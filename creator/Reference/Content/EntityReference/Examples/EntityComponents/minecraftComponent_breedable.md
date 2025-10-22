@@ -22,7 +22,7 @@ Allows an entity to establish a way to get into the love state used for breeding
 | allow_sitting | false | Boolean true/false | If true, entities can breed while sitting | Cat: `true` | 
 | blend_attributes | true | Boolean true/false | If true, the entities will blend their attributes in the offspring after they breed. For example, horses blend their health, movement, and jump_strength in their offspring. |  | 
 | breed_cooldown | 60 | Decimal number | Time in seconds before the Entity can breed again. |  | 
-| breed_items | *not set* | Array of strings | The list of items that can be used to get the entity into the 'love' state. | Armadillo: `["spider_eye"]`, Axolotl: `"tropical_fish_bucket"`, Bee: `["minecraft:poppy","minecraft:blue_orchid","minecraft:allium","minecraft:azure_bluet","minecraft:red_tulip","minecraft:orange_tulip","minecraft:white_tulip","minecraft:pink_tulip","minecraft:oxeye_daisy","minecraft:cornflower","minecraft:lily_of_the_valley","minecraft:dandelion","minecraft:wither_rose","minecraft:sunflower","minecraft:lilac","minecraft:rose_bush","minecraft:peony","minecraft:flowering_azalea","minecraft:azalea_leaves_flowered","minecraft:mangrove_propagule","minecraft:pitcher_plant","minecraft:torchflower","minecraft:cherry_leaves","minecraft:pink_petals","minecraft:wildflowers","minecraft:cactus_flower"]` | 
+| breed_items | *not set* | Array of strings | The list of items that can be used to get the entity into the 'love' state. | Armadillo: `["spider_eye"]`, Axolotl: `[{"item":"tropical_fish_bucket","result_item":"water_bucket:0"}]`, Bee: `["minecraft:poppy","minecraft:blue_orchid","minecraft:allium","minecraft:azure_bluet","minecraft:red_tulip","minecraft:orange_tulip","minecraft:white_tulip","minecraft:pink_tulip","minecraft:oxeye_daisy","minecraft:cornflower","minecraft:lily_of_the_valley","minecraft:dandelion","minecraft:wither_rose","minecraft:sunflower","minecraft:lilac","minecraft:rose_bush","minecraft:peony","minecraft:flowering_azalea","minecraft:azalea_leaves_flowered","minecraft:mangrove_propagule","minecraft:pitcher_plant","minecraft:torchflower","minecraft:cherry_leaves","minecraft:pink_petals","minecraft:wildflowers","minecraft:cactus_flower"]` | 
 | breeds_with | *not set* | Array of [Breeds With](#breeds-with) items | The list of entity definitions that this entity can breed with. | Armadillo: `[{"mate_type":"minecraft:armadillo","baby_type":"minecraft:armadillo","breed_event":{"event":"minecraft:entity_born","target":"baby"}}]`, Axolotl: `{"mate_type":"minecraft:axolotl","baby_type":"minecraft:axolotl","breed_event":{"event":"minecraft:entity_born","target":"baby"}}`, Bee: `{"mate_type":"minecraft:bee","baby_type":"minecraft:bee","breed_event":{"event":"minecraft:entity_born","target":"baby"}}` | 
 | causes_pregnancy | false | Boolean true/false | If true, the entity will become pregnant instead of spawning a baby. |  | 
 | combine_parent_colors | *not set* | String |  |  | 
@@ -39,7 +39,6 @@ Allows an entity to establish a way to get into the love state used for breeding
 | random_variant_mutation_interval | 0 | Range of integers | Range used to determine random variant. |  | 
 | require_full_health | false | Boolean true/false | If true, the entity needs to be at full health before it can breed. |  | 
 | require_tame | true | Boolean true/false | If true, the entities need to be tamed first before they can breed. |  | 
-| transform_to_item | *not set* | String | The breed item used will transform to this item upon successful interaction. Format: itemName:auxValue |  | 
 
 ## Breeds With
 The list of entity definitions that this entity can breed with.
@@ -125,8 +124,12 @@ Determines how likely the babies are to NOT inherit one of their parent's varian
 ```json
 "minecraft:breedable": {
   "require_tame": false,
-  "breed_items": "tropical_fish_bucket",
-  "transform_to_item": "water_bucket:0",
+  "breed_items": [
+    {
+      "item": "tropical_fish_bucket",
+      "result_item": "water_bucket:0"
+    }
+  ],
   "breeds_with": {
     "mate_type": "minecraft:axolotl",
     "baby_type": "minecraft:axolotl",

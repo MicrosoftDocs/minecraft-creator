@@ -19,10 +19,10 @@ ms.date: 02/11/2025
 | language | *not set* | String |  |  | 
 | type | *not set* | String |  |  | 
 | uuid | *not set* | Object |  |  | 
-| version (Version) | *not set* | [Version (Version)](#version-version) item |  |  | 
+| version (Version) | *not set* | [Version](#version) item |  |  | 
 | version (Alternate 1) | *not set* | String |  |  | 
 
-## Version (Version)
+## Version
 
 #### Version Properties
 

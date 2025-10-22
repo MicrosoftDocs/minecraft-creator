@@ -32,26 +32,34 @@
       {
         "id": "search_height",
         "title": "Search Height",
-        "description": "Maximum distance to look for a block in y. Default value: 0.",
-        "dataType": 0
+        "description": "Maximum distance to look for a block in y.",
+        "dataType": 0,
+        "defaultValue": 0
       },
       {
         "id": "search_range",
         "title": "Search Range",
-        "description": "Maximum distance to look for a block in xz. Default value: 0.",
-        "dataType": 0
+        "description": "Maximum distance to look for a block in xz.",
+        "dataType": 0,
+        "defaultValue": 0
       },
       {
         "id": "sound_interval",
         "title": "Sound Interval",
+        "description": "The range of time in seconds to randomly wait before playing the sound again.",
         "dataType": 16,
+        "defaultValue": {
+          "max": 8,
+          "min": 3
+        },
         "subFormId": "item_components/floatrange"
       },
       {
         "id": "sprint_speed_modifier",
         "title": "Sprint Speed Modifier",
-        "description": "Modifier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster. Default value: 1.",
-        "dataType": 3
+        "description": "Modifier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster.",
+        "dataType": 3,
+        "defaultValue": 1
       },
       {
         "id": "target_blocks",
@@ -68,20 +76,23 @@
       {
         "id": "target_selection_method",
         "title": "Target Selection Method",
-        "description": "Block search method. Default value: nearest.",
-        "dataType": 2
+        "description": "Block search method.",
+        "dataType": 2,
+        "defaultValue": "nearest"
       },
       {
         "id": "tick_interval",
         "title": "Tick Interval",
-        "description": "Should start tick interval. Default value: 1.",
-        "dataType": 0
+        "description": "Should start tick interval.",
+        "dataType": 0,
+        "defaultValue": 1
       },
       {
         "id": "walk_speed_modifier",
         "title": "Walk Speed Modifier",
-        "description": "Modifier for walking speed. 1.0 means keep the regular speed, while higher numbers make the walking speed faster. Default value: 1.",
-        "dataType": 3
+        "description": "Modifier for walking speed. 1.0 means keep the regular speed, while higher numbers make the walking speed faster.",
+        "dataType": 3,
+        "defaultValue": 1
       }
     ]
   }

@@ -14,14 +14,16 @@
       {
         "id": "interval",
         "title": "Interval",
-        "description": "Percent chance to start wandering, when not path-finding. 1 = 100% Default value: 0.00833.",
-        "dataType": 3
+        "description": "Percent chance to start wandering, when not path-finding. 1 = 100%",
+        "dataType": 3,
+        "defaultValue": 0.008329999633133411
       },
       {
         "id": "look_ahead",
         "title": "Look Ahead",
-        "description": "Distance to look ahead for obstacle avoidance, while wandering. Default value: 5.",
-        "dataType": 3
+        "description": "Distance to look ahead for obstacle avoidance, while wandering.",
+        "dataType": 3,
+        "defaultValue": 5
       },
       {
         "id": "priority",
@@ -31,14 +33,16 @@
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
-        "description": "This multiplier modifies the entity's speed when wandering. Default value: 1.",
-        "dataType": 3
+        "description": "This multiplier modifies the entity's speed when wandering.",
+        "dataType": 3,
+        "defaultValue": 1
       },
       {
         "id": "wander_time",
         "title": "Wander Time",
-        "description": "Amount of time (in seconds) to wander after wandering behavior was successfully started. Default value: 5.",
-        "dataType": 3
+        "description": "Amount of time (in seconds) to wander after wandering behavior was successfully started.",
+        "dataType": 3,
+        "defaultValue": 5
       }
     ]
   }

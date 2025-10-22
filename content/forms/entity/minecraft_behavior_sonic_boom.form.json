@@ -97,7 +97,7 @@
         "id": "duration",
         "title": "Duration",
         "description": "Goal duration in seconds",
-        "defaultValue": 3,
+        "defaultValue": 0,
         "dataType": 3,
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [

@@ -17,9 +17,9 @@ Struct PointLightConfig PointLightConfigSettings Client Deferred Rendering.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | format_version | *not set* | String | format_version |  | 
-| minecraft:point_light_settings | *not set* | [Point Light Settings (PointLightConfig PointLightConfigSettings PointLightSettings)](#point-light-settings-pointlightconfig-pointlightconfigsettings-pointlightsettings) item | minecraft:point_light_settings |  | 
+| minecraft:point_light_settings | *not set* | [Point Light Settings](#point-light-settings) item | minecraft:point_light_settings |  | 
 
-## Point Light Settings (PointLightConfig PointLightConfigSettings PointLightSettings)
+## Point Light Settings
 PointLightConfig PointLightConfigSettings PointLightSettings.
 
 
