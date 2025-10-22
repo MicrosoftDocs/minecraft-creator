@@ -16,7 +16,7 @@ Replaces a specified portion of one or more Minecraft biomes.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| replacements | *not set* | [Replacements (Biome Replacement)](#biome-replacement) item | List of biome replacement configurations. Retroactively adding a new replacement to the front of this list will cause the world generation to change. Please add any new replacements to the end of the list. |  | 
+| replacements | *not set* | [Replacements](#biome-replacement) item | List of biome replacement configurations. Retroactively adding a new replacement to the front of this list will cause the world generation to change. Please add any new replacements to the end of the list. |  | 
 
 ## Biome Replacement
 Represents the replacement information used to determine the placement of the overriding biome.

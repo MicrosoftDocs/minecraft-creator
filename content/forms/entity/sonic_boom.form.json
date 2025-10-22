@@ -9,26 +9,30 @@
       {
         "id": "attack_cooldown",
         "title": "Attack Cooldown",
-        "description": "Cooldown in seconds required after using this attack until the entity can use sonic boom again. Default value: 5.",
-        "dataType": 3
+        "description": "Cooldown in seconds required after using this attack until the entity can use sonic boom again.",
+        "dataType": 3,
+        "defaultValue": 5
       },
       {
         "id": "attack_damage",
         "title": "Attack Damage",
-        "description": "Attack damage of the sonic boom. Default value: 30.",
-        "dataType": 3
+        "description": "Attack damage of the sonic boom.",
+        "dataType": 3,
+        "defaultValue": 30
       },
       {
         "id": "attack_range_horizontal",
         "title": "Attack Range Horizontal",
-        "description": "Horizontal range (in blocks) at which the sonic boom can damage the target. Default value: 15.",
-        "dataType": 3
+        "description": "Horizontal range (in blocks) at which the sonic boom can damage the target.",
+        "dataType": 3,
+        "defaultValue": 15
       },
       {
         "id": "attack_range_vertical",
         "title": "Attack Range Vertical",
-        "description": "Vertical range (in blocks) at which the sonic boom can damage the target. Default value: 20.",
-        "dataType": 3
+        "description": "Vertical range (in blocks) at which the sonic boom can damage the target.",
+        "dataType": 3,
+        "defaultValue": 20
       },
       {
         "id": "attack_sound",
@@ -50,32 +54,37 @@
       {
         "id": "duration",
         "title": "Duration",
-        "description": "Goal duration in seconds Default value: 0.",
-        "dataType": 3
+        "description": "Goal duration in seconds",
+        "dataType": 3,
+        "defaultValue": 0
       },
       {
         "id": "duration_until_attack_sound",
         "title": "Duration Until Attack Sound",
-        "description": "Duration in seconds until the attack sound is played. Default value: 1.7.",
-        "dataType": 3
+        "description": "Duration in seconds until the attack sound is played.",
+        "dataType": 3,
+        "defaultValue": 1.7000000476837158
       },
       {
         "id": "knockback_height_cap",
         "title": "Knockback Height Cap",
-        "description": "Height cap of the attack knockback's vertical delta. Default value: 0.",
-        "dataType": 3
+        "description": "Height cap of the attack knockback's vertical delta.",
+        "dataType": 3,
+        "defaultValue": 0
       },
       {
         "id": "knockback_horizontal_strength",
         "title": "Knockback Horizontal Strength",
-        "description": "Horizontal strength of the attack's knockback applied to the attack target. Default value: 0.",
-        "dataType": 3
+        "description": "Horizontal strength of the attack's knockback applied to the attack target.",
+        "dataType": 3,
+        "defaultValue": 0
       },
       {
         "id": "knockback_vertical_strength",
         "title": "Knockback Vertical Strength",
-        "description": "Vertical strength of the attack's knockback applied to the attack target. Default value: 0.",
-        "dataType": 3
+        "description": "Vertical strength of the attack's knockback applied to the attack target.",
+        "dataType": 3,
+        "defaultValue": 0
       },
       {
         "id": "priority",
@@ -85,8 +94,9 @@
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
-        "description": "This multiplier modifies the attacking entity's speed when moving toward the target. Default value: 1.",
-        "dataType": 3
+        "description": "This multiplier modifies the attacking entity's speed when moving toward the target.",
+        "dataType": 3,
+        "defaultValue": 1
       }
     ]
   }

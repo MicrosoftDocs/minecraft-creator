@@ -123,13 +123,6 @@
               "dataType": 3
             },
             {
-              "id": "emissive",
-              "title": "Emissive",
-              "description": "Should this material be rendered as emissive? Requires 'format_version' >= 1.21.120.",
-              "defaultValue": false,
-              "dataType": 1
-            },
-            {
               "id": "face_dimming",
               "title": "Face Dimming",
               "description": "Should this material be dimmed by the direction it's facing?",
@@ -149,6 +142,13 @@
               "description": "The render method to use. Must be one of these options and must be the same for each:\n\"opaque\" - Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency.\n\"double_sided\" - Used for completely disabling backface culling.\n\"blend\" - Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures).\n\"alpha_test\" - Used for a block like the vanilla (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also disables backface culling.",
               "defaultValue": "opaque",
               "dataType": 2
+            },
+            {
+              "id": "shaded",
+              "title": "Shaded",
+              "description": "Should this material be rendered as shaded? If false then the material will ignore face dimming and ambient occlusion. Requires 'format_version' >= 1.21.120.",
+              "defaultValue": true,
+              "dataType": 1
             },
             {
               "id": "texture",

@@ -86,8 +86,11 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:nautilus_wild/minecraft:tameable/",
               "content": [
-                "pufferfish",
-                "pufferfish_bucket"
+                {
+                  "item": "pufferfish_bucket",
+                  "result_item": "water_bucket:0"
+                },
+                "pufferfish"
               ]
             }
           ],
@@ -114,8 +117,11 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:nautilus_wild/minecraft:tameable/",
               "content": [
-                "pufferfish",
-                "pufferfish_bucket"
+                {
+                  "item": "pufferfish_bucket",
+                  "result_item": "water_bucket:0"
+                },
+                "pufferfish"
               ]
             }
           ],
@@ -154,8 +160,11 @@
           "content": {
             "probability": 0.33,
             "tame_items": [
-              "pufferfish",
-              "pufferfish_bucket"
+              {
+                "item": "pufferfish_bucket",
+                "result_item": "water_bucket:0"
+              },
+              "pufferfish"
             ],
             "tame_event": {
               "event": "minecraft:on_tame",
@@ -203,8 +212,11 @@
           "content": {
             "probability": 0.33,
             "tame_items": [
-              "pufferfish",
-              "pufferfish_bucket"
+              {
+                "item": "pufferfish_bucket",
+                "result_item": "water_bucket:0"
+              },
+              "pufferfish"
             ],
             "tame_event": {
               "event": "minecraft:on_tame",

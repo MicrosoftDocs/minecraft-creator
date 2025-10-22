@@ -9,8 +9,14 @@ ms.date: 02/11/2025
 
 # Entity Documentation - minecraft:burns_in_daylight
 
-Specifies if a mob burns in daylight.
+.
 
+
+## Entity Burns In Daylight Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| protection_slot | *not set* | String |  | Zombie Horse: `"slot.armor.body"` | 
 
 ## Samples
 
@@ -26,4 +32,13 @@ Specifies if a mob burns in daylight.
 
 ```json
 "minecraft:burns_in_daylight": false
+```
+
+#### [Zombie Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_horse.json)
+
+
+```json
+"minecraft:burns_in_daylight": {
+  "protection_slot": "slot.armor.body"
+}
 ```

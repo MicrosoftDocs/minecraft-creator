@@ -222,6 +222,19 @@ At /minecraft:entity/component_groups/minecraft:rolled_up/minecraft:damage_senso
 }
 ```
 
+#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
+
+
+```json
+"minecraft:damage_sensor": {
+  "triggers": {
+    "cause": "fall",
+    "deals_damage": "yes",
+    "damage_modifier": -4
+  }
+}
+```
+
 #### [Copper Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/copper_golem.json)
 
 
@@ -322,25 +335,5 @@ At /minecraft:entity/component_groups/minecraft:rolled_up/minecraft:damage_senso
     },
     "deals_damage": false
   }
-}
-```
-
-#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
-
-
-```json
-"minecraft:damage_sensor": {
-  "triggers": [
-    {
-      "on_damage": {
-        "filters": {
-          "test": "is_block",
-          "subject": "block",
-          "value": "minecraft:sweet_berry_bush"
-        }
-      },
-      "deals_damage": "no"
-    }
-  ]
 }
 ```

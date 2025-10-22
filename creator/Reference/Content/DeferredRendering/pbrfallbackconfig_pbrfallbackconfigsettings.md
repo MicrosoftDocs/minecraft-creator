@@ -17,9 +17,9 @@ Struct PBRFallbackConfig PBRFallbackConfigSettings Client Deferred Rendering.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | format_version | *not set* | String | format_version |  | 
-| minecraft:pbr_fallback_settings | *not set* | [Pbr Fallback Settings (PBRFallbackConfig PBRFallbackConfigSettings PBRFallbackSettings)](#pbr-fallback-settings-pbrfallbackconfig-pbrfallbackconfigsettings-pbrfallbacksettings) item | minecraft:pbr_fallback_settings |  | 
+| minecraft:pbr_fallback_settings | *not set* | [Pbr Fallback Settings](#pbr-fallback-settings) item | minecraft:pbr_fallback_settings |  | 
 
-## Pbr Fallback Settings (PBRFallbackConfig PBRFallbackConfigSettings PBRFallbackSettings)
+## Pbr Fallback Settings
 PBRFallbackConfig PBRFallbackConfigSettings PBRFallbackSettings.
 
 
@@ -27,16 +27,16 @@ PBRFallbackConfig PBRFallbackConfigSettings PBRFallbackSettings.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| actors (Actors) | *not set* | [Actors (Actors)](#actors-actors) item | actors |  | 
-| actors (Alternate 1) | *not set* | [Actors (Actors)](#actors-actors) item |  |  | 
-| blocks (Blocks) | *not set* | [Blocks (Blocks)](#blocks-blocks) item | blocks |  | 
-| blocks (Alternate 1) | *not set* | [Blocks (Blocks)](#blocks-blocks) item |  |  | 
-| items (Items) | *not set* | [Items (Items)](#items-items) item | items |  | 
-| items (Alternate 1) | *not set* | [Items (Items)](#items-items) item |  |  | 
-| particles (Particles) | *not set* | [Particles (Particles)](#particles-particles) item | particles |  | 
-| particles (Alternate 1) | *not set* | [Particles (Particles)](#particles-particles) item |  |  | 
+| actors (Actors) | *not set* | [Actors](#actors) item | actors |  | 
+| actors (Alternate 1) | *not set* | [Actors](#actors) item |  |  | 
+| blocks (Blocks) | *not set* | [Blocks](#blocks) item | blocks |  | 
+| blocks (Alternate 1) | *not set* | [Blocks](#blocks) item |  |  | 
+| items (Items) | *not set* | [Items](#items) item | items |  | 
+| items (Alternate 1) | *not set* | [Items](#items) item |  |  | 
+| particles (Particles) | *not set* | [Particles](#particles) item | particles |  | 
+| particles (Alternate 1) | *not set* | [Particles](#particles) item |  |  | 
 
-## Actors (Actors)
+## Actors
 Actors
 
 
@@ -47,7 +47,7 @@ Actors
 | global_metalness_emissive_roughness | *not set* | String | global_metalness_emissive_roughness |  | 
 | global_metalness_emissive_roughness (Alternate 1) | *not set* | Array of numbers |  |  | 
 
-## Blocks (Blocks)
+## Blocks
 Blocks
 
 
@@ -58,7 +58,7 @@ Blocks
 | global_metalness_emissive_roughness | *not set* | String | global_metalness_emissive_roughness |  | 
 | global_metalness_emissive_roughness (Alternate 1) | *not set* | Array of numbers |  |  | 
 
-## Items (Items)
+## Items
 Items
 
 
@@ -69,7 +69,7 @@ Items
 | global_metalness_emissive_roughness | *not set* | String | global_metalness_emissive_roughness |  | 
 | global_metalness_emissive_roughness (Alternate 1) | *not set* | Array of numbers |  |  | 
 
-## Particles (Particles)
+## Particles
 Particles
 
 

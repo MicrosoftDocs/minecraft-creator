@@ -65,14 +65,14 @@ Type: *number*
 ### **timeLeft**
 `timeLeft?: number;`
 
-The time left (in seconds) until this shape is automatically removed. Returns 0 if the shape does not have a limited life-span.
+The time left (in seconds) until this shape is automatically removed. Returns undefined if the shape does not have a limited life-span.
 
 Type: *number*
 
 ### **totalTimeLeft**
 `read-only totalTimeLeft?: number;`
 
-The total initial time-span (in seconds) until this shape is automatically removed. Returns 0 if the shape does not have a limited life-span.
+The total initial time-span (in seconds) until this shape is automatically removed. Returns undefined if the shape does not have a limited life-span.
 
 Type: *number*
 

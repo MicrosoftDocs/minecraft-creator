@@ -80,6 +80,8 @@ Represents the unique type of network packet.
 `ClientboundCloseFormPacket = "ClientboundCloseFormPacket"`
 ### **ClientboundControlSchemeSetPacket**
 `ClientboundControlSchemeSetPacket = "ClientboundControlSchemeSetPacket"`
+### **ClientboundDataStorePacket**
+`ClientboundDataStorePacket = "ClientboundDataStorePacket"`
 ### **ClientboundDebugRendererPacket**
 `ClientboundDebugRendererPacket = "ClientboundDebugRendererPacket"`
 ### **ClientboundMapItemDataPacket**
@@ -126,8 +128,6 @@ Represents the unique type of network packet.
 `CreativeContentPacket = "CreativeContentPacket"`
 ### **CurrentStructureFeaturePacket**
 `CurrentStructureFeaturePacket = "CurrentStructureFeaturePacket"`
-### **DataStoreSyncPacket**
-`DataStoreSyncPacket = "DataStoreSyncPacket"`
 ### **DeathInfoPacket**
 `DeathInfoPacket = "DeathInfoPacket"`
 ### **DebugDrawerPacket**
@@ -306,6 +306,8 @@ Represents the unique type of network packet.
 `RespawnPacket = "RespawnPacket"`
 ### **ScriptMessagePacket**
 `ScriptMessagePacket = "ScriptMessagePacket"`
+### **ServerboundDataStorePacket**
+`ServerboundDataStorePacket = "ServerboundDataStorePacket"`
 ### **ServerboundDiagnosticsPacket**
 `ServerboundDiagnosticsPacket = "ServerboundDiagnosticsPacket"`
 ### **ServerboundLoadingScreenPacket**

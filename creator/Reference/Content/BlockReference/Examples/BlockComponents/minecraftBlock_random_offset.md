@@ -18,9 +18,9 @@ Culling for this block is performed without considering the random offset.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| x | *not set* | [x (Range Of Values Between Two Numbers)](#range-of-values-between-two-numbers) item | X coordinate |  | 
-| y | *not set* | [y (Range Of Values Between Two Numbers)](#range-of-values-between-two-numbers) item | Y coordinate |  | 
-| z | *not set* | [z (Range Of Values Between Two Numbers)](#range-of-values-between-two-numbers) item | Z coordinate |  | 
+| x | *not set* | [X](#range-of-values-between-two-numbers) item | X coordinate |  | 
+| y | *not set* | [Y](#range-of-values-between-two-numbers) item | Y coordinate |  | 
+| z | *not set* | [Z](#range-of-values-between-two-numbers) item | Z coordinate |  | 
 
 ## Range of values between two numbers
 Specifies a range of values between two numbers, with a defined number of steps. This is used to control the variation in block properties such as offset, color, or other attributes.
@@ -30,10 +30,10 @@ Specifies a range of values between two numbers, with a defined number of steps.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| range | *not set* | [Range (Range Of Values)](#range-range-of-values) item | Range of values |  | 
+| range | *not set* | [Range](#range) item | Range of values |  | 
 | steps | *not set* | Integer number | Number of steps between the range |  | 
 
-## Range (Range Of Values)
+## Range
 
 #### Range of values Properties
 

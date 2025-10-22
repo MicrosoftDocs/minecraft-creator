@@ -1348,7 +1348,7 @@
               "player",
               "zombie"
             ],
-            "interact_text": "action.interact.ride.horse",
+            "interact_text": "action.interact.mount",
             "seats": {
               "position": [
                 0,

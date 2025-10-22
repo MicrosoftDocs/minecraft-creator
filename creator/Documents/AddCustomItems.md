@@ -22,7 +22,7 @@ You should be familiar with these other tutorials before tackling custom items:
 - [How to Add a Simple Custom Block](AddCustomDieBlock.md)
 - [Minecraft Item Wizard](MinecraftItemWizard.md)
 
-_reYou might also want to take a look at the files and folder structure of the [Vanilla Minecraft Add-On Packs](https://aka.ms/resourcepacktemplate).
+You might also want to take a look at the files and folder structure of the [Vanilla Minecraft Add-On Packs](https://aka.ms/resourcepacktemplate).
 
 ## Make some items
 

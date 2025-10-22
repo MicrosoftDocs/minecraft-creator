@@ -19,12 +19,12 @@ Specifies hunt celebration behaviour.
 | broadcast | true | Boolean true/false | If true, celebration will be broadcasted to other entities in the radius. | Piglin: `true` | 
 | celeberation_targets | *not set* | Minecraft filter | The list of conditions that target of hunt must satisfy to initiate celebration. |  | 
 | celebrate_sound | *not set* | String | The sound event to play when the mob is celebrating | Piglin: `"celebrate"` | 
-| celebration_targets | *not set* | [Celebration Targets (Celebration Targets)](#celebration-targets-celebration-targets) item |  | Piglin: `{"all_of":[{"test":"is_family","value":"hoglin"}]}` | 
+| celebration_targets | *not set* | [Celebration Targets](#celebration-targets) item |  | Piglin: `{"all_of":[{"test":"is_family","value":"hoglin"}]}` | 
 | duration | 4 | Integer number | Duration, in seconds, of celebration | Piglin: `10` | 
 | radius | 16 | Decimal number | If broadcast is enabled, specifies the radius in which it will notify other entities for celebration. | Piglin: `16` | 
 | sound_interval | 0 | Range of integers | The range of time in seconds to randomly wait before playing the sound again | Piglin: `{"range_min":2,"range_max":5}` | 
 
-## Celebration Targets (Celebration Targets)
+## Celebration Targets
 
 #### Celebration_targets Properties
 

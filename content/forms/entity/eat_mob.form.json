@@ -14,8 +14,9 @@
       {
         "id": "eat_animation_time",
         "title": "Eat Animation Time",
-        "description": "Sets the time in seconds the eat animation should play for. Default value: 1.000000.",
-        "dataType": 3
+        "description": "Sets the time in seconds the eat animation should play for.",
+        "dataType": 3,
+        "defaultValue": 1
       },
       {
         "id": "eat_mob_sound",
@@ -37,20 +38,23 @@
       {
         "id": "pull_in_force",
         "title": "Pull In Force",
-        "description": "Sets the force which the mob-to-be-eaten is pulled towards the eating mob. Default value: 1.000000.",
-        "dataType": 3
+        "description": "Sets the force which the mob-to-be-eaten is pulled towards the eating mob.",
+        "dataType": 3,
+        "defaultValue": 1
       },
       {
         "id": "reach_mob_distance",
         "title": "Reach Mob Distance",
-        "description": "Sets the desired distance to be reached before eating the mob. Default value: 1.000000.",
-        "dataType": 3
+        "description": "Sets the desired distance to be reached before eating the mob.",
+        "dataType": 3,
+        "defaultValue": 1
       },
       {
         "id": "run_speed",
         "title": "Run Speed",
-        "description": "Sets the entity's speed when running toward the target. Default value: 1.000000.",
-        "dataType": 3
+        "description": "Sets the entity's speed when running toward the target.",
+        "dataType": 3,
+        "defaultValue": 1
       }
     ]
   }

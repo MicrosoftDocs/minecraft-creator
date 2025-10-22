@@ -556,7 +556,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
           "content": {
-            "priority": 9
+            "priority": 10
           }
         }
       ],

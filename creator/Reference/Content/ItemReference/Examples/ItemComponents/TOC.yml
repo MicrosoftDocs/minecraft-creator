@@ -12,8 +12,6 @@
   href: minecraft_compostable.md
 - name: minecraft:cooldown
   href: minecraft_cooldown.md
-- name: minecraft:custom_components
-  href: minecraft_custom_components.md
 - name: minecraft:damage
   href: minecraft_damage.md
 - name: minecraft:damage_absorption

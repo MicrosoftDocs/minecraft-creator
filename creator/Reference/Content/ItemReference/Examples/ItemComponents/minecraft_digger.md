@@ -16,7 +16,7 @@ Allows a creator to determine how quickly an item can dig specific blocks.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| destroy_speeds | *not set* | [Destroy Speeds (Item Components BlockInfo)](#item-components-blockinfo) item | A list of blocks to dig with correlating speeds of digging. |  | 
+| destroy_speeds | *not set* | [Destroy Speeds](#item-components-blockinfo) item | A list of blocks to dig with correlating speeds of digging. |  | 
 | use_efficiency | *not set* | Boolean true/false | Determines whether this item should be impacted if the efficiency enchantment is applied to it. |  | 
 
 ## Item Components BlockInfo
@@ -25,12 +25,12 @@ Allows a creator to determine how quickly an item can dig specific blocks.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| block (Block) | *not set* | [Block (Block)](#block-block) item | Block to be dug. |  | 
+| block (Block) | *not set* | [Block](#block) item | Block to be dug. |  | 
 | block (Alternate 1) | *not set* | String |  |  | 
 | block (Alternate 2) | *not set* | Object |  |  | 
 | speed | *not set* | Integer number | Digging speed for the correlating block(s). |  | 
 
-## Block (Block)
+## Block
 
 #### Block Properties
 

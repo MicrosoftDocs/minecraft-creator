@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.21.130-beta.20 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.21.130-beta.22 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -44,8 +44,10 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.130
 - [CoreActionBarItemType](CoreActionBarItemType.md)
 - [CoreBrushShapeType](CoreBrushShapeType.md)
 - [CoreMenuType](CoreMenuType.md)
+- [CoreModalDialogType](CoreModalDialogType.md)
 - [CursorControlMode](CursorControlMode.md)
 - [CursorTargetMode](CursorTargetMode.md)
+- [DataPickerModalDialogVariant](DataPickerModalDialogVariant.md)
 - [DaylightCycle](DaylightCycle.md)
 - [EditorInputContext](EditorInputContext.md)
 - [EditorMode](EditorMode.md)
@@ -63,6 +65,8 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.130
 - [ListPaneEntryType](ListPaneEntryType.md)
 - [ListPaneViewSortType](ListPaneViewSortType.md)
 - [LogChannel](LogChannel.md)
+- [ModalDialogResponseType](ModalDialogResponseType.md)
+- [ModalDialogType](ModalDialogType.md)
 - [MouseActionCategory](MouseActionCategory.md)
 - [MouseActionType](MouseActionType.md)
 - [MouseInputType](MouseInputType.md)
@@ -116,6 +120,12 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.130
 - [ListPaneTextEntryParams](ListPaneTextEntryParams.md)
 - [ListPaneViewFilter](ListPaneViewFilter.md)
 - [LocalizedString](LocalizedString.md)
+- [ModalDialogActivationParams](ModalDialogActivationParams.md)
+- [ModalDialogCoreResponseType](ModalDialogCoreResponseType.md)
+- [ModalDialogCustomResponse](ModalDialogCustomResponse.md)
+- [ModalDialogDataPickerResponse](ModalDialogDataPickerResponse.md)
+- [ModalDialogDismissResponse](ModalDialogDismissResponse.md)
+- [ModalDialogRequestData](ModalDialogRequestData.md)
 - [ModalToolLifecycleEventPayload](ModalToolLifecycleEventPayload.md)
 - [MouseModifiers](MouseModifiers.md)
 - [MouseProps](MouseProps.md)
@@ -291,6 +301,9 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.130
 - [IMenuPropertyItem](IMenuPropertyItem.md)
 - [IMenuPropertyItemOptions](IMenuPropertyItemOptions.md)
 - [IModalControlPane](IModalControlPane.md)
+- [IModalDialog](IModalDialog.md)
+- [IModalDialogActivationRequest](IModalDialogActivationRequest.md)
+- [IModalDialogManager](IModalDialogManager.md)
 - [IModalOverlayPane](IModalOverlayPane.md)
 - [IModalOverlayPaneOptions](IModalOverlayPaneOptions.md)
 - [IModalTool](IModalTool.md)
@@ -332,6 +345,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.130
 - [IVector3PropertyItem](IVector3PropertyItem.md)
 - [IVector3PropertyItemOptions](IVector3PropertyItemOptions.md)
 - [LogProperties](LogProperties.md)
+- [ModalDialogCreationParams](ModalDialogCreationParams.md)
 - [ModalToolCreationParameters](ModalToolCreationParameters.md)
 - [ProjectExportOptions](ProjectExportOptions.md)
 - [QuickExtrudeProperties](QuickExtrudeProperties.md)

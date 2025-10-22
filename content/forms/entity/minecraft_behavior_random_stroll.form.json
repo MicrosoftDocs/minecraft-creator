@@ -829,7 +829,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
           "content": {
-            "priority": 7,
+            "priority": 8,
             "speed_multiplier": 1
           }
         }

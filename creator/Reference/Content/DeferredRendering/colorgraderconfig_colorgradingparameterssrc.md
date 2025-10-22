@@ -17,9 +17,9 @@ Minecraft's color grading system allows for many degrees of customization of the
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | format_version | *not set* | String | format_version |  | 
-| minecraft:color_grading_settings | *not set* | [Color Grading Settings (ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings)](#color-grading-settings-colorgraderconfig-colorgradingparameterssrc-colorgradingsettings) item | minecraft:color_grading_settings |  | 
+| minecraft:color_grading_settings | *not set* | [Color Grading Settings](#color-grading-settings) item | minecraft:color_grading_settings |  | 
 
-## Color Grading Settings (ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings)
+## Color Grading Settings
 ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings.
 
 
@@ -27,11 +27,11 @@ ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| color_grading | *not set* | [Color Grading (ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ColorGrading)](#color-grading-colorgraderconfig-colorgradingparameterssrc-colorgradingsettings-colorgrading) item | color_grading |  | 
-| description | *not set* | [Description (ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ColorGradingDescription)](#description-colorgraderconfig-colorgradingparameterssrc-colorgradingsettings-colorgradingdescription) item | description |  | 
-| tone_mapping | *not set* | [Tone Mapping (ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ToneMapping)](#tone-mapping-colorgraderconfig-colorgradingparameterssrc-colorgradingsettings-tonemapping) item | tone_mapping |  | 
+| color_grading | *not set* | [Color Grading](#color-grading) item | color_grading |  | 
+| description | *not set* | [Description](#description) item | description |  | 
+| tone_mapping | *not set* | [Tone Mapping](#tone-mapping) item | tone_mapping |  | 
 
-## Color Grading (ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ColorGrading)
+## Color Grading
 ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ColorGrading.
 
 
@@ -39,11 +39,11 @@ ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ColorGrading.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| highlights | *not set* | [Highlights (ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Highlights)](#highlights-colorgraderconfig-colorgradingparameterssrc-colorgradingsettings-highlights) item | highlights |  | 
-| midtones | *not set* | [Midtones (ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Midtones)](#midtones-colorgraderconfig-colorgradingparameterssrc-colorgradingsettings-midtones) item | midtones |  | 
-| shadows | *not set* | [Shadows (ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Shadows)](#shadows-colorgraderconfig-colorgradingparameterssrc-colorgradingsettings-shadows) item | shadows |  | 
+| highlights | *not set* | [Highlights](#highlights) item | highlights |  | 
+| midtones | *not set* | [Midtones](#midtones) item | midtones |  | 
+| shadows | *not set* | [Shadows](#shadows) item | shadows |  | 
 
-## Highlights (ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Highlights)
+## Highlights
 ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Highlights.
 
 
@@ -52,19 +52,19 @@ ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Highlights.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | contrast | *not set* | Array of numbers | contrast Value must be <= 4. |  | 
-| contrast (Alternate 1) | *not set* | [Contrast (Contrast)](#contrast-contrast) item |  |  | 
+| contrast (Alternate 1) | *not set* | [Contrast](#contrast) item |  |  | 
 | enabled | *not set* | Boolean true/false | enabled |  | 
 | gain | *not set* | Array of numbers | gain Value must be <= 10. |  | 
-| gain (Alternate 1) | *not set* | [Gain (Gain)](#gain-gain) item |  |  | 
+| gain (Alternate 1) | *not set* | [Gain](#gain) item |  |  | 
 | gamma | *not set* | Array of numbers | gamma Value must be <= 4. |  | 
-| gamma (Alternate 1) | *not set* | [Gamma (Gamma)](#gamma-gamma) item |  |  | 
+| gamma (Alternate 1) | *not set* | [Gamma](#gamma) item |  |  | 
 | highlightsMin | *not set* | Decimal number | highlightsMin Value must be >= 1. Value must be <= 20. |  | 
 | offset | *not set* | Array of numbers | offset Value must be >= -1. Value must be <= 1. |  | 
-| offset (Alternate 1) | *not set* | [Offset (Offset)](#offset-offset) item |  |  | 
+| offset (Alternate 1) | *not set* | [Offset](#offset) item |  |  | 
 | saturation | *not set* | Array of numbers | saturation Value must be <= 10. |  | 
-| saturation (Alternate 1) | *not set* | [Saturation (Saturation)](#saturation-saturation) item |  |  | 
+| saturation (Alternate 1) | *not set* | [Saturation](#saturation) item |  |  | 
 
-## Contrast (Contrast)
+## Contrast
 Contrast
 
 
@@ -76,7 +76,7 @@ Contrast
 | y | *not set* | Decimal number | y |  | 
 | z | *not set* | Decimal number | z |  | 
 
-## Gain (Gain)
+## Gain
 Gain
 
 
@@ -88,7 +88,7 @@ Gain
 | y | *not set* | Decimal number | y |  | 
 | z | *not set* | Decimal number | z |  | 
 
-## Gamma (Gamma)
+## Gamma
 Gamma
 
 
@@ -100,7 +100,7 @@ Gamma
 | y | *not set* | Decimal number | y |  | 
 | z | *not set* | Decimal number | z |  | 
 
-## Offset (Offset)
+## Offset
 Offset
 
 
@@ -112,7 +112,7 @@ Offset
 | y | *not set* | Decimal number | y |  | 
 | z | *not set* | Decimal number | z |  | 
 
-## Saturation (Saturation)
+## Saturation
 Saturation
 
 
@@ -124,7 +124,7 @@ Saturation
 | y | *not set* | Decimal number | y |  | 
 | z | *not set* | Decimal number | z |  | 
 
-## Midtones (ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Midtones)
+## Midtones
 ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Midtones.
 
 
@@ -133,17 +133,17 @@ ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Midtones.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | contrast | *not set* | Array of numbers | contrast Value must be <= 4. |  | 
-| contrast (Alternate 1) | *not set* | [Contrast (Contrast)](#contrast-contrast) item |  |  | 
+| contrast (Alternate 1) | *not set* | [Contrast](#contrast) item |  |  | 
 | gain | *not set* | Array of numbers | gain Value must be <= 10. |  | 
-| gain (Alternate 1) | *not set* | [Gain (Gain)](#gain-gain) item |  |  | 
+| gain (Alternate 1) | *not set* | [Gain](#gain) item |  |  | 
 | gamma | *not set* | Array of numbers | gamma Value must be <= 4. |  | 
-| gamma (Alternate 1) | *not set* | [Gamma (Gamma)](#gamma-gamma) item |  |  | 
+| gamma (Alternate 1) | *not set* | [Gamma](#gamma) item |  |  | 
 | offset | *not set* | Array of numbers | offset Value must be >= -1. Value must be <= 1. |  | 
-| offset (Alternate 1) | *not set* | [Offset (Offset)](#offset-offset) item |  |  | 
+| offset (Alternate 1) | *not set* | [Offset](#offset) item |  |  | 
 | saturation | *not set* | Array of numbers | saturation Value must be <= 10. |  | 
-| saturation (Alternate 1) | *not set* | [Saturation (Saturation)](#saturation-saturation) item |  |  | 
+| saturation (Alternate 1) | *not set* | [Saturation](#saturation) item |  |  | 
 
-## Shadows (ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Shadows)
+## Shadows
 ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Shadows.
 
 
@@ -152,19 +152,19 @@ ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Shadows.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | contrast | *not set* | Array of numbers | contrast Value must be <= 4. |  | 
-| contrast (Alternate 1) | *not set* | [Contrast (Contrast)](#contrast-contrast) item |  |  | 
+| contrast (Alternate 1) | *not set* | [Contrast](#contrast) item |  |  | 
 | enabled | *not set* | Boolean true/false | enabled |  | 
 | gain | *not set* | Array of numbers | gain Value must be <= 10. |  | 
-| gain (Alternate 1) | *not set* | [Gain (Gain)](#gain-gain) item |  |  | 
+| gain (Alternate 1) | *not set* | [Gain](#gain) item |  |  | 
 | gamma | *not set* | Array of numbers | gamma Value must be <= 4. |  | 
-| gamma (Alternate 1) | *not set* | [Gamma (Gamma)](#gamma-gamma) item |  |  | 
+| gamma (Alternate 1) | *not set* | [Gamma](#gamma) item |  |  | 
 | offset | *not set* | Array of numbers | offset Value must be >= -1. Value must be <= 1. |  | 
-| offset (Alternate 1) | *not set* | [Offset (Offset)](#offset-offset) item |  |  | 
+| offset (Alternate 1) | *not set* | [Offset](#offset) item |  |  | 
 | saturation | *not set* | Array of numbers | saturation Value must be <= 10. |  | 
-| saturation (Alternate 1) | *not set* | [Saturation (Saturation)](#saturation-saturation) item |  |  | 
+| saturation (Alternate 1) | *not set* | [Saturation](#saturation) item |  |  | 
 | shadowsMax | *not set* | Decimal number | shadowsMax Value must be <= 1. |  | 
 
-## Description (ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ColorGradingDescription)
+## Description
 ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ColorGradingDescription.
 
 
@@ -174,7 +174,7 @@ ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ColorGradingDes
 |:----------|:-------------|:----|:-----------|:------------- |
 | identifier | *not set* | String | identifier |  | 
 
-## Tone Mapping (ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ToneMapping)
+## Tone Mapping
 ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ToneMapping.
 
 

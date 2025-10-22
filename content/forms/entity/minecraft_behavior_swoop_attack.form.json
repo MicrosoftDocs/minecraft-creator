@@ -29,10 +29,10 @@
           "/vanilla/behavior_pack/entities/phantom.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.swoop_attack/",
-              "content": [
-                10,
-                20
-              ]
+              "content": {
+                "min": 10,
+                "max": 20
+              }
             }
           ]
         }
@@ -76,10 +76,10 @@
             "priority": 2,
             "damage_reach": 0.2,
             "speed_multiplier": 1,
-            "delay_range": [
-              10,
-              20
-            ]
+            "delay_range": {
+              "min": 10,
+              "max": 20
+            }
           }
         }
       ]

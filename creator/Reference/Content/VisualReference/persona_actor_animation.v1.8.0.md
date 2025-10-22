@@ -31,9 +31,9 @@ ms.date: 02/11/2025
 | loop"<"hold_on_last_frame" | *not set* | String | should this animation stop, loop, or stay on the last frame when finished (true, false, "hold_on_last_frame" |  | 
 | override_previous_animation | *not set* | Boolean true/false | reset bones in this animation to the default pose before applying this animation |  | 
 | particle_effects | *not set* | Key/item pairs of [Particle Effects](#particle-effects) items |  |  | 
-| particle_effects (Alternate 1) | *not set* | Array of [Particle Effects (Alternate 1)](#particle-effects-alternate-1) items |  |  | 
+| particle_effects (Alternate 1) | *not set* | Array of [Particle Effects](#particle-effects) items |  |  | 
 | sound_effects | *not set* | Key/item pairs of [Sound Effects](#sound-effects) items | sound effects to trigger as this animation plays, keyed by time |  | 
-| sound_effects (Alternate 1) | *not set* | Array of [Sound Effects (Alternate 1)](#sound-effects-alternate-1) items |  |  | 
+| sound_effects (Alternate 1) | *not set* | Array of [Sound Effects](#sound-effects) items |  |  | 
 | start_delay | *not set* | Molang | How long to wait in seconds before playing this animation. Note that this expression is evaluated once before playing, and only re-evaluated if asked to play from the beginning again. A looping animation should use 'loop_delay' if it wants a delay between loops. |  | 
 | timeline | *not set* | Named set of objects |  |  | 
 | timeline (Alternate 1) | *not set* | Keyed set of strings |  |  | 
@@ -50,7 +50,7 @@ ms.date: 02/11/2025
 | position (Alternate 3) | *not set* | Keyed set of strings |  |  | 
 | relative_to | *not set* | [Relative To](#relative-to) item |  |  | 
 | rotation | *not set* | Key/item pairs of [Rotation](#rotation) items |  |  | 
-| rotation (Alternate 1) | *not set* | Array of [Rotation (Alternate 1)](#rotation-alternate-1) items |  |  | 
+| rotation (Alternate 1) | *not set* | Array of [Rotation](#rotation) items |  |  | 
 | rotation (Alternate 2) | *not set* | Molang array |  |  | 
 | rotation (Alternate 3) | *not set* | Molang |  |  | 
 | rotation (Alternate 4) | *not set* | Keyed set of strings |  |  | 
@@ -87,14 +87,6 @@ ms.date: 02/11/2025
 | post | *not set* | Molang array |  |  | 
 | pre | *not set* | Molang array |  |  | 
 
-## Rotation (Alternate 1)
-
-#### Rotation (Alternate 1) Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| [xyz] | *not set* | Molang |  |  | 
-
 ## Scale
 
 #### Scale Properties
@@ -116,29 +108,9 @@ ms.date: 02/11/2025
 | locator | *not set* | String | The name of a locator on the actor where the effect should be located |  | 
 | pre_effect_script | *not set* | Molang | A Molang script that will be run when the particle emitter is initialized |  | 
 
-## Particle Effects (Alternate 1)
-
-#### Particle Effects (Alternate 1) Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| bind_to_actor | *not set* | Boolean true/false | Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor). |  | 
-| effect | *not set* | String | The name of a particle effect that should be played |  | 
-| locator | *not set* | String | The name of a locator on the actor where the effect should be located |  | 
-| pre_effect_script | *not set* | Molang | A Molang script that will be run when the particle emitter is initialized |  | 
-
 ## Sound Effects
 
 #### Sound Effects Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| effect | *not set* | String | Valid sound effect names should be listed in the entity's resource_definition json file. |  | 
-| locator | *not set* | String | The name of a locator on the actor where the sound should originate from |  | 
-
-## Sound Effects (Alternate 1)
-
-#### Sound Effects (Alternate 1) Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

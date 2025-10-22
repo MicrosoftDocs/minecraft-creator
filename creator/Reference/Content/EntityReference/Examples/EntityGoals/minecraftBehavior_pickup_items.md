@@ -162,7 +162,7 @@ Allows the mob to pick up items on the ground.
 
 ```json
 "minecraft:behavior.pickup_items": {
-  "priority": 6,
+  "priority": 7,
   "max_dist": 3,
   "goal_radius": 2,
   "speed_multiplier": 1,

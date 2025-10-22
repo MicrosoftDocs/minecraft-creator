@@ -90,6 +90,8 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
 - Added property *[`airSupply`](EntityBreathableComponent.md#airsupply)*
 - Added property *[`canBreathe`](EntityBreathableComponent.md#canbreathe)*
+#### Changed *[`EntityDefinitionFeedItem`](EntityDefinitionFeedItem.md)*
+- Added property *[`resultItem`](EntityDefinitionFeedItem.md#resultitem)*
 #### Added *[`EntityHasMarkVariantCondition`](EntityHasMarkVariantCondition.md)*
 #### Added *[`EntityHasVariantCondition`](EntityHasVariantCondition.md)*
 #### Added *[`EntityKilledCondition`](EntityKilledCondition.md)*
@@ -100,6 +102,8 @@ description: Changelog of the `@minecraft/server` module
   - Changed argument `identifier` type from *string* to *EntityIdentifierType<NoInfer<T>>*
 #### Added *[`ExplorationMapFunction`](ExplorationMapFunction.md)*
 #### Added *[`ExplosionDecayFunction`](ExplosionDecayFunction.md)*
+#### Changed *[`FeedItem`](FeedItem.md)*
+- Added property *[`resultItem`](FeedItem.md#resultitem)*
 #### Added *[`FillContainerFunction`](FillContainerFunction.md)*
 #### Changed *[`GameRules`](GameRules.md)*
 - Added property *[`locatorBar`](GameRules.md#locatorbar)*

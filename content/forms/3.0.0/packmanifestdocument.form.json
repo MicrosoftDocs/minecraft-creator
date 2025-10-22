@@ -51,7 +51,8 @@
         "id": "settings",
         "title": "Settings",
         "dataType": 17,
-        "minLength": 1
+        "minLength": 1,
+        "maxLength": 50
       },
       {
         "id": "subpacks",

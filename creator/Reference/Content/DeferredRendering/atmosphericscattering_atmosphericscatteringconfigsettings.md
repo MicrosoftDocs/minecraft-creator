@@ -17,9 +17,9 @@ Customize atmospherics effects.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | format_version | *not set* | String | format_version |  | 
-| minecraft:atmosphere_settings | *not set* | [Atmosphere Settings (AtmosphericScattering AtmosphericScatteringConfigSettings AtmosphericScatteringSettings)](#atmosphere-settings-atmosphericscattering-atmosphericscatteringconfigsettings-atmosphericscatteringsettings) item | minecraft:atmosphere_settings |  | 
+| minecraft:atmosphere_settings | *not set* | [Atmosphere Settings](#atmosphere-settings) item | minecraft:atmosphere_settings |  | 
 
-## Atmosphere Settings (AtmosphericScattering AtmosphericScatteringConfigSettings AtmosphericScatteringSettings)
+## Atmosphere Settings
 AtmosphericScattering AtmosphericScatteringConfigSettings AtmosphericScatteringSettings.
 
 
@@ -27,8 +27,8 @@ AtmosphericScattering AtmosphericScatteringConfigSettings AtmosphericScatteringS
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description (AtmosphericScattering AtmosphericScatteringConfigSettings AtmosphericScatteringSettings AtmosphericScatteringDescription)](#description-atmosphericscattering-atmosphericscatteringconfigsettings-atmosphericscatteringsettings-atmosphericscatteringdescription) item | description |  | 
-| horizon_blend_stops | *not set* | [Horizon Blend Stops (AtmosphericScattering AtmosphericScatteringConfigSettings AtmosphericScatteringSettings HorizonBlendKeyFrames)](#horizon-blend-stops-atmosphericscattering-atmosphericscatteringconfigsettings-atmosphericscatteringsettings-horizonblendkeyframes) item | horizon_blend_stops |  | 
+| description | *not set* | [Description](#description) item | description |  | 
+| horizon_blend_stops | *not set* | [Horizon Blend Stops](#horizon-blend-stops) item | horizon_blend_stops |  | 
 | moon_mie_strength | *not set* | Decimal number | moon_mie_strength Value must be <= 20. |  | 
 | moon_mie_strength (Alternate 1) | *not set* | Keyed set of numbers |  |  | 
 | rayleigh_strength | *not set* | Decimal number | rayleigh_strength Value must be <= 11. |  | 
@@ -44,7 +44,7 @@ AtmosphericScattering AtmosphericScatteringConfigSettings AtmosphericScatteringS
 | sun_mie_strength | *not set* | Decimal number | sun_mie_strength Value must be <= 60. |  | 
 | sun_mie_strength (Alternate 1) | *not set* | Keyed set of numbers |  |  | 
 
-## Description (AtmosphericScattering AtmosphericScatteringConfigSettings AtmosphericScatteringSettings AtmosphericScatteringDescription)
+## Description
 AtmosphericScattering AtmosphericScatteringConfigSettings AtmosphericScatteringSettings AtmosphericScatteringDescription.
 
 
@@ -54,7 +54,7 @@ AtmosphericScattering AtmosphericScatteringConfigSettings AtmosphericScatteringS
 |:----------|:-------------|:----|:-----------|:------------- |
 | identifier | *not set* | String | identifier |  | 
 
-## Horizon Blend Stops (AtmosphericScattering AtmosphericScatteringConfigSettings AtmosphericScatteringSettings HorizonBlendKeyFrames)
+## Horizon Blend Stops
 AtmosphericScattering AtmosphericScatteringConfigSettings AtmosphericScatteringSettings HorizonBlendKeyFrames.
 
 
