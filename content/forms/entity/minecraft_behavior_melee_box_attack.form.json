@@ -373,10 +373,16 @@
           "/vanilla/behavior_pack/entities/piglin.json": [
             {
               "path": "/minecraft:entity/component_groups/melee_unit/minecraft:behavior.melee_box_attack/",
-              "content": 8
+              "content": 9
             }
           ],
           "/vanilla/behavior_pack/entities/wolf.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_pigman.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
               "content": 5
@@ -549,7 +555,7 @@
           "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
           "content": {
             "can_spread_on_fire": true,
-            "priority": 3
+            "priority": 4
           }
         }
       ],
@@ -583,7 +589,7 @@
         {
           "path": "/minecraft:entity/component_groups/melee_unit/minecraft:behavior.melee_box_attack/",
           "content": {
-            "priority": 8,
+            "priority": 9,
             "speed_multiplier": 1,
             "track_target": true
           }
@@ -697,7 +703,7 @@
           "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
           "content": {
             "can_spread_on_fire": true,
-            "priority": 3
+            "priority": 4
           }
         }
       ],
@@ -705,7 +711,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
           "content": {
-            "priority": 4,
+            "priority": 5,
             "speed_multiplier": 1.5
           }
         }

@@ -16,6 +16,6 @@ Conditions that need to be satisfied for a specific effect of a kinetic weapon t
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| max_duration | *not set* | Integer number | Time, in ticks, during which the effect can be applied after "delay" elapses. If negative, the effect is applied indefinitely. Default value: -1. |  | 
-| min_relative_speed | *not set* | Decimal number | Minimum relative speed of the user with respect to the target (projected onto the view vector via a dot product) required for the effect to be applied. Default value: 0. |  | 
-| min_speed | *not set* | Decimal number | Minimum user's speed (projected onto the view vector via a dot product) required for the effect to be applied. Default value: 0. |  | 
+| max_duration | -1 | Integer number | Time, in ticks, during which the effect can be applied after "delay" elapses. If negative, the effect is applied indefinitely. |  | 
+| min_relative_speed | 0 | Decimal number | Minimum relative speed of the user with respect to the target (projected onto the view vector via a dot product) required for the effect to be applied. |  | 
+| min_speed | 0 | Decimal number | Minimum user's speed (projected onto the view vector via a dot product) required for the effect to be applied. |  | 

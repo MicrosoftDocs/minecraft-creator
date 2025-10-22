@@ -14,14 +14,19 @@
       {
         "id": "damage_reach",
         "title": "Damage Reach",
-        "description": "Added to the base size of the entity, to determine the target's maximum allowable distance, when trying to deal attack damage. Default value: 0.2.",
-        "dataType": 3
+        "description": "Added to the base size of the entity, to determine the target's maximum allowable distance, when trying to deal attack damage.",
+        "dataType": 3,
+        "defaultValue": 0.20000000298023224
       },
       {
         "id": "delay_range",
         "title": "Delay Range",
-        "description": "Minimum and maximum cooldown time-range (in seconds) between each attempted swoop attack. Default value: [10.0, 20.0].",
+        "description": "Minimum and maximum cooldown time-range (in seconds) between each attempted swoop attack.",
         "dataType": 16,
+        "defaultValue": {
+          "max": 20,
+          "min": 10
+        },
         "subFormId": "item_components/floatrange"
       },
       {
@@ -32,8 +37,9 @@
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
-        "description": "During swoop attack behavior, this determines the multiplier the entity's speed is modified by when moving toward the target. Default value: 1.",
-        "dataType": 3
+        "description": "During swoop attack behavior, this determines the multiplier the entity's speed is modified by when moving toward the target.",
+        "dataType": 3,
+        "defaultValue": 1
       }
     ]
   }

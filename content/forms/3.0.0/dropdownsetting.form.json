@@ -28,6 +28,7 @@
         "title": "Options",
         "dataType": 16,
         "minLength": 2,
+        "maxLength": 20,
         "subFormId": "3.0.0/dropdownoption",
         "isRequired": true
       },

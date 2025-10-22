@@ -22,7 +22,7 @@ Allows this entity to perform a 'sonic boom' ranged attack.
 | attack_range_vertical | 20 | Decimal number | Vertical range (in blocks) at which the sonic boom can damage the target. | Warden: `20` | 
 | attack_sound | *not set* | String | Sound event for the attack. | Warden: `"sonic_boom"` | 
 | charge_sound | *not set* | String | Sound event for the charge up. | Warden: `"sonic_charge"` | 
-| duration | 3 | Decimal number | Goal duration in seconds | Warden: `3` | 
+| duration | 0 | Decimal number | Goal duration in seconds | Warden: `3` | 
 | duration_until_attack_sound | 1.7 | Decimal number | Duration in seconds until the attack sound is played. | Warden: `1.7` | 
 | knockback_height_cap | 0 | Decimal number | Height cap of the attack knockback's vertical delta. | Warden: `0.5` | 
 | knockback_horizontal_strength | 0 | Decimal number | Horizontal strength of the attack's knockback applied to the attack target. | Warden: `2.5` | 

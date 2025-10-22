@@ -13,7 +13,6 @@ ms.date: 02/11/2025
 |:-----|:----------|
 | [minecraft:collision_box](./minecraftBlock_collision_box.md)| Defines the area of the block that collides with entities. |
 | [minecraft:crafting_table](./minecraftBlock_crafting_table.md)| Makes your block into a custom crafting table which enables the crafting table UI and the ability to craft recipes. |
-| [minecraft:custom_components](./minecraftBlock_custom_components.md)| Sets an ordered list of custom component names which are bound in script to be executed upon a block event. |
 | [minecraft:destructible_by_explosion](./minecraftBlock_destructible_by_explosion.md)| Describes the destructible by explosion properties for this block. |
 | [minecraft:destructible_by_mining](./minecraftBlock_destructible_by_mining.md)| Describes the destructible by mining properties for this block. |
 | [minecraft:destruction_particles](./minecraftBlock_destruction_particles.md)| [Note: This component is currently experimental]. |
@@ -47,6 +46,7 @@ These components are either deprecated or internal to Minecraft and not usable i
 |:-----|:----------|
 | [bone_visibility](./minecraftBlock_bone_visibility.md)| A JSON object that contains a list of key/value pairs that map from bone name in the specified geometry file (key) to a boolean that tells whether the bone should be visible or not (value). |
 | [breathability](./minecraftBlock_breathability.md)| Determines whether the block is breathable by defining if the block is treated as a `solid` or as `air`. |
+| [custom_components](./minecraftBlock_custom_components.md)| Sets an ordered list of custom component names which are bound in script to be executed upon a block event. |
 | [queued_ticking](./minecraftBlock_queued_ticking.md)| Triggers the specified event, either once, or at a regular interval equal to a number of ticks randomly chosen from the interval_range provided. |
 | [random_ticking](./minecraftBlock_random_ticking.md)| Triggers the specified event randomly based on the random tick speed gamerule. |
 | [unit_cube](./minecraftBlock_unit_cube.md)| Specifies that a unit cube is to be used with tessellation. |

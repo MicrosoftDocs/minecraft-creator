@@ -18,11 +18,11 @@ ms.date: 02/11/2025
 | dependencies | *not set* | Array of strings |  |  | 
 | format_version | *not set* | Integer number |  |  | 
 | has_education_metadata | *not set* | Boolean true/false |  |  | 
-| header | *not set* | [0.0.Header) Header (3](#3.0.0.header) item |  |  | 
-| metadata | *not set* | [0.0.Metadata) Metadata (3](#3.0.0.metadata) item |  |  | 
-| modules | *not set* | [0.0.Module) Modules (3](#3.0.0.module) item |  |  | 
+| header | *not set* | [Header](#3.0.0.header) item |  |  | 
+| metadata | *not set* | [Metadata](#3.0.0.metadata) item |  |  | 
+| modules | *not set* | [Modules](#3.0.0.module) item |  |  | 
 | settings | *not set* | Array of strings |  |  | 
-| subpacks | *not set* | [0.0.Subpack) Subpacks (3](#3.0.0.subpack) item |  |  | 
+| subpacks | *not set* | [Subpacks](#3.0.0.subpack) item |  |  | 
 
 ## 3.0.0.Header
 
@@ -36,15 +36,15 @@ ms.date: 02/11/2025
 | lock_template_options | *not set* | Boolean true/false |  |  | 
 | min_engine_version | *not set* | String |  |  | 
 | name | *not set* | String |  |  | 
-| pack_optimization_version (Pack Optimization Version) | *not set* | [Pack Optimization Version (Pack Optimization Version)](#pack-optimization-version-pack-optimization-version) item |  |  | 
+| pack_optimization_version (Pack Optimization Version) | *not set* | [Pack Optimization Version](#pack-optimization-version) item |  |  | 
 | pack_optimization_version (Alternate 1) | *not set* | String |  |  | 
 | pack_scope | *not set* | String |  |  | 
 | platform_locked | *not set* | Boolean true/false |  |  | 
 | uuid | *not set* | Object |  |  | 
-| version (Version) | *not set* | [Version (Version)](#version-version) item |  |  | 
+| version (Version) | *not set* | [Version](#version) item |  |  | 
 | version (Alternate 1) | *not set* | String |  |  | 
 
-## Pack Optimization Version (Pack Optimization Version)
+## Pack Optimization Version
 
 #### Pack Optimization Version Properties
 
@@ -56,7 +56,7 @@ ms.date: 02/11/2025
 | patch | *not set* | Integer number |  |  | 
 | preRelease | *not set* | String |  |  | 
 
-## Version (Version)
+## Version
 
 #### Version Properties
 
@@ -91,7 +91,7 @@ ms.date: 02/11/2025
 | language | *not set* | String |  |  | 
 | type | *not set* | String |  |  | 
 | uuid | *not set* | Object |  |  | 
-| version (Version) | *not set* | [Version (Version)](#version-version) item |  |  | 
+| version (Version) | *not set* | [Version](#version) item |  |  | 
 | version (Alternate 1) | *not set* | String |  |  | 
 
 ## 3.0.0.Subpack

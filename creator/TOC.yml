@@ -412,6 +412,8 @@
           href: Documents/RecipeIntroduction.md
         - name: Adding Custom Items
           href: Documents/AddCustomItems.md
+        - name: Creating Custom Potions
+          href: Documents/create-custom-potions.md
         - name: Crafting Item Catalog Customization
           href: Documents/CraftingItemCatalogDocumentation.md
         - name: Introduction to Enchantments

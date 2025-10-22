@@ -54,8 +54,9 @@
       {
         "id": "emit_vibrations",
         "title": "Emit Vibrations",
-        "description": "Whether vibrations are emitted when the item starts or stops being used. Default value: true.",
-        "dataType": 1
+        "description": "Whether vibrations are emitted when the item starts or stops being used.",
+        "dataType": 1,
+        "defaultValue": true
       },
       {
         "id": "movement_modifier",
@@ -72,8 +73,9 @@
       {
         "id": "use_duration",
         "title": "Use Duration",
-        "description": "Time, in seconds, that the item takes to use. Default value: 0.",
-        "dataType": 3
+        "description": "Time, in seconds, that the item takes to use.",
+        "dataType": 3,
+        "defaultValue": 0
       }
     ]
   }

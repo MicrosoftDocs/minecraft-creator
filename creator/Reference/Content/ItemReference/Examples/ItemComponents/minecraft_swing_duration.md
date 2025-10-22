@@ -16,4 +16,4 @@ Duration, in seconds, of the item's swing animation played when mining or attack
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| value | *not set* | Decimal number | Duration, in seconds, of the item's swing animation played when mining or attacking. Affects visuals only and does not impact attack frequency or other gameplay mechanics. Default value: 0.3. |  | 
+| value | 0.30000001192092896 | Decimal number | Duration, in seconds, of the item's swing animation played when mining or attacking. Affects visuals only and does not impact attack frequency or other gameplay mechanics. |  | 

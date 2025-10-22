@@ -9,8 +9,9 @@
       {
         "id": "value",
         "title": "Value",
-        "description": "Determines whether the item is immune to burning when dropped in fire or lava. Default value: true.",
+        "description": "Determines whether the item is immune to burning when dropped in fire or lava.",
         "dataType": 1,
+        "defaultValue": true,
         "samples": {
           "/vanilla/behavior_pack/items/netherite_spear.json": [
             {

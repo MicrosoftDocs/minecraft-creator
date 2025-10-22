@@ -38,7 +38,7 @@ ms.date: 02/11/2025
 | [minecraft:breedable](EntityComponents/minecraftComponent_breedable.md)| Allows an entity to establish a way to get into the love state used for breeding. |
 | [minecraft:bribeable](EntityComponents/minecraftComponent_bribeable.md)| Defines the way an entity can get into the 'bribed' state. |
 | [minecraft:buoyant](EntityComponents/minecraftComponent_buoyant.md)| Enables an entity to float on the specified liquid blocks. |
-| [minecraft:burns_in_daylight](EntityComponents/minecraftComponent_burns_in_daylight.md)| Specifies if a mob burns in daylight. |
+| [minecraft:burns_in_daylight](EntityComponents/minecraftComponent_burns_in_daylight.md)| . |
 | [minecraft:cannot_be_attacked](EntityComponents/minecraftComponent_cannot_be_attacked.md)| When set, blocks entities from attacking the owner entity unless they have the "minecraft:ignore_cannot_be_attacked" component. |
 | [minecraft:can_climb](EntityComponents/minecraftComponent_can_climb.md)| Allows an entity to climb ladders. |
 | [minecraft:can_fly](EntityComponents/minecraftComponent_can_fly.md)| Marks the entity as being able to fly, the pathfinder won't be restricted to paths where a solid block is required underneath it. |

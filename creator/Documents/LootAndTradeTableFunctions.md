@@ -17,7 +17,7 @@ In this tutorial you will learn the following:
 >
 > - There are a variety of loot and trade table functions and they can modify a player's loot experience.
 
-### Requirements
+## Requirements
 
 It's recommended that the following be completed before beginning this tutorial.
 
@@ -51,11 +51,10 @@ This function sets the potion type of compatible items with a potion ID.
 
 This function lets you set a list of specific enchantments on an item. It also lets you apply enchantments to items that wouldn't normally be enchantable in-game.
 
-You can also define the enchantments as objects to specifically define an enchantment level. 
+You can also define the enchantments as objects to specifically define an enchantment level.
 
 > [!Note]
 > Max enchantment levels are hard-coded and can't be overwritten.
-
 
 ## Modifying items
 
@@ -75,7 +74,7 @@ Similar to `random_block_state`, this function lets you pick a random auxiliary 
 
 ### random_block_state
 
-Lets you randomize the block state of the resulting item. 
+Lets you randomize the block state of the resulting item.
 
 ### random_dye
 
@@ -87,7 +86,35 @@ This function only works with a spawn egg and is used to set the entity ID of th
 
 ### set_banner_details
 
-This function only works on banners and currently only supports a banner `type` of `1`. A banner `type` of `1` results in a villager banner.
+Determines banner type, banner color, and banner pattern. Banner type can be defined by string ("default" or "illager_captain"), or by integer (0 or 1, respectively). Only default banners can have custom patterns. Pattern count cannot exceed a maximum of 6 and this function only works on banners.
+
+```json
+{
+    "type": "item",
+    "name": "minecraft:banner",
+    "functions": [
+            {
+                "function": "set_banner_details",
+                "type": 0,
+                "base_color": "silver",
+                "patterns": [
+                {
+                    "color": "black",
+                    "pattern": "gradient"
+                },
+                {
+                    "color": "red",
+                    "pattern": "circle"
+                },
+                {
+                    "color": "green",
+                    "pattern": "flower"
+                }
+            ]
+        }
+    ]
+}
+```
 
 ### set_book_contents
 
@@ -120,6 +147,86 @@ This function lets you set the lore of an item. Each line within the lore object
 
 This function lets you set the name of an item. There's currently no support for `rawtext`.
 
+### explosion_decay
+
+If a loot drop is triggered by an explosion, this applies a flat chance (equal to 1/explosion radius) for each dropped item to be destroyed. Items that drop in stacks are processed individually.
+
+```json
+{
+    "type": "item",
+    "name": "minecraft:dirt",
+    "functions": [
+        {
+            "function": "explosion_decay"
+        }
+    ]
+}
+```
+
+### set_stew_effect
+
+Determines the effect applied when consuming a dropped suspicious stew. Randomly selects one effect from the provided array.
+
+```json
+{
+    "type": "item",
+    "name": "minecraft:suspicious_stew",
+    "functions": [
+        {
+            "function": "minecraft:set_stew_effect",
+            "effects": [
+                {
+                    "id": 0
+                },
+                {
+                    "id": 3
+                },
+                {
+                    "id": 7
+                }
+            ]
+        }
+    ]
+}
+```
+
+### set_ominous_bottle_amplifier
+
+Sets the amplifier value of the Bad Omen effect on a dropped ominous bottle. Value is chosen randomly from the provided range.
+
+```json
+{
+    "type": "item",
+    "name": "minecraft:ominous_bottle",
+    "functions": [
+        {
+            "function": "set_ominous_bottle_amplifier",
+            "amplifier": {
+                "min": 0,
+                "max": 3
+            }
+        }
+    ]
+}
+```
+
+### set_armor_trim
+
+Determines the material and pattern of an armor trim to apply to a dropped item. Only valid for items that can have trim applied to them.
+
+```json
+{
+    "type": "item",
+    "name": "minecraft:diamond_chestplate",
+    "functions": [
+        {
+            "function": "set_armor_trim",
+            "material": "netherite",
+            "pattern": "wayfinder"
+        }
+    ]
+}
+```
 
 ## Miscellaneous
 
@@ -161,7 +268,7 @@ This function lets you define the loot table for a chest. When the item is gener
 
 ### furnace_smelt (loot table only)
 
-The `"furnace_smelt"` function can be called on the loot dropping from an entity. If an entity is killed with fire (like if a player is hunting chickens with a sword that has a fire aspect enchantment), the dropped loot will be the cooked version of the item - as if you cooked the chicken in a furnace. 
+The `"furnace_smelt"` function can be called on the loot dropping from an entity. If an entity is killed with fire (like if a player is hunting chickens with a sword that has a fire aspect enchantment), the dropped loot will be the cooked version of the item - as if you cooked the chicken in a furnace.
 
 > [!Note]
 > This function will not work in villager trades or with chests.
@@ -173,4 +280,3 @@ This function affects the type of items a fisherman will trade for their wares.
 ### Multiple functions
 
 You can define multiple functions simultaneously, and these multiples can even be multiple of the same function. If there's a conflict between functions, the last to be defined will be the one expressed.
-

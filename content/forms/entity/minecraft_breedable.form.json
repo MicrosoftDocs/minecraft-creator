@@ -201,7 +201,7 @@
       {
         "id": "breed_items",
         "title": "Breed Items",
-        "description": "The list of items that can be used to get the entity into the 'love' state",
+        "description": "The list of items that can be used to get the entity into the 'love' state. Includes 'item' for the item name, and 'result_item' that defines what item the breed item will transform to upon successful interaction (Format: itemName:auxValue).",
         "dataType": 17,
         "samples": {
           "/vanilla/behavior_pack/entities/armadillo.json": [
@@ -215,7 +215,12 @@
           "/vanilla/behavior_pack/entities/axolotl.json": [
             {
               "path": "/minecraft:entity/component_groups/axolotl_adult/minecraft:breedable/",
-              "content": "tropical_fish_bucket"
+              "content": [
+                {
+                  "item": "tropical_fish_bucket",
+                  "result_item": "water_bucket:0"
+                }
+              ]
             }
           ],
           "/vanilla/behavior_pack/entities/bee.json": [
@@ -350,8 +355,23 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:nautilus_adult/minecraft:breedable/",
               "content": [
+                {
+                  "item": "pufferfish_bucket",
+                  "result_item": "water_bucket:0"
+                },
+                {
+                  "item": "cod_bucket",
+                  "result_item": "water_bucket:0"
+                },
+                {
+                  "item": "salmon_bucket",
+                  "result_item": "water_bucket:0"
+                },
+                {
+                  "item": "tropical_fish_bucket",
+                  "result_item": "water_bucket:0"
+                },
                 "pufferfish",
-                "pufferfish_bucket",
                 "fish",
                 "salmon",
                 "clownfish",
@@ -726,12 +746,6 @@
         "dataType": 1
       },
       {
-        "id": "transform_to_item",
-        "title": "Transform To Item",
-        "description": "The breed item used will transform to this item upon successful interaction. Format: itemName:auxValue",
-        "dataType": 2
-      },
-      {
         "id": "combine_parent_colors",
         "title": "Combine Parent Colors",
         "dataType": 2
@@ -769,8 +783,12 @@
           "path": "/minecraft:entity/component_groups/axolotl_adult/minecraft:breedable/",
           "content": {
             "require_tame": false,
-            "breed_items": "tropical_fish_bucket",
-            "transform_to_item": "water_bucket:0",
+            "breed_items": [
+              {
+                "item": "tropical_fish_bucket",
+                "result_item": "water_bucket:0"
+              }
+            ],
             "breeds_with": {
               "mate_type": "minecraft:axolotl",
               "baby_type": "minecraft:axolotl",
@@ -1139,8 +1157,23 @@
           "path": "/minecraft:entity/component_groups/minecraft:nautilus_adult/minecraft:breedable/",
           "content": {
             "breed_items": [
+              {
+                "item": "pufferfish_bucket",
+                "result_item": "water_bucket:0"
+              },
+              {
+                "item": "cod_bucket",
+                "result_item": "water_bucket:0"
+              },
+              {
+                "item": "salmon_bucket",
+                "result_item": "water_bucket:0"
+              },
+              {
+                "item": "tropical_fish_bucket",
+                "result_item": "water_bucket:0"
+              },
               "pufferfish",
-              "pufferfish_bucket",
               "fish",
               "salmon",
               "clownfish",

@@ -45,7 +45,7 @@
               "content": 0.1
             }
           ],
-          "/vanilla/behavior_pack/entities/salmon.json": [
+          "/vanilla/behavior_pack/entities/nautilus.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.swim_idle/",
               "content": 0.1
@@ -72,10 +72,22 @@
               "content": 5
             }
           ],
+          "/vanilla/behavior_pack/entities/nautilus.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.swim_idle/",
+              "content": 8
+            }
+          ],
           "/vanilla/behavior_pack/entities/salmon.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.swim_idle/",
               "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.swim_idle/",
+              "content": 6
             }
           ]
         }
@@ -102,6 +114,16 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.swim_idle/",
+          "content": {
+            "priority": 8,
+            "idle_time": 5,
+            "success_rate": 0.1
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/salmon.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.swim_idle/",
@@ -117,6 +139,16 @@
           "path": "/minecraft:entity/components/minecraft:behavior.swim_idle/",
           "content": {
             "priority": 5,
+            "idle_time": 5,
+            "success_rate": 0.1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.swim_idle/",
+          "content": {
+            "priority": 6,
             "idle_time": 5,
             "success_rate": 0.1
           }

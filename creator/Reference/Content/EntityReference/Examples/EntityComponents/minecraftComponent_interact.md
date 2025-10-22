@@ -24,9 +24,9 @@ Defines interactions with this entity.
 | health_amount | 0 | Integer number | The amount of health this entity will recover or lose when interacting with this item. Negative values will harm the entity. |  | 
 | hurt_item | 0 | Integer number | The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability. |  | 
 | interact_text | *not set* | String | Text to show when the player is able to interact in this way with this entity when playing with touch-screen controls. |  | 
-| interactions | *not set* | Array of [Interactions (Interactions)](#interactions-interactions) items |  | Sheepomelon: `[{"cooldown":2.5,"use_item":false,"hurt_item":1,"spawn_items":{"table":"loot_tables/entities/sheepomelon_shear.json"},"play_sounds":"shear","interact_text":"action.interact.shear","on_interact":{"filters":{"all_of":[{"test":"has_equipment","subject":"other","domain":"hand","value":"shears"},{"test":"is_family","subject":"other","value":"player"},{"test":"has_component","operator":"!=","value":"minecraft:is_baby"}]},"event":"minecraft:on_sheared","target":"self"}}]` | 
+| interactions | *not set* | Array of [Interactions](#interactions) items |  | Sheepomelon: `[{"cooldown":2.5,"use_item":false,"hurt_item":1,"spawn_items":{"table":"loot_tables/entities/sheepomelon_shear.json"},"play_sounds":"shear","interact_text":"action.interact.shear","on_interact":{"filters":{"all_of":[{"test":"has_equipment","subject":"other","domain":"hand","value":"shears"},{"test":"is_family","subject":"other","value":"player"},{"test":"has_component","operator":"!=","value":"minecraft:is_baby"}]},"event":"minecraft:on_sheared","target":"self"}}]` | 
 
-## Interactions (Interactions)
+## Interactions
 
 #### Interactions Properties
 
@@ -38,13 +38,13 @@ Defines interactions with this entity.
 | interact_text | *not set* | String |  | Sheepomelon: `"action.interact.shear"` | 
 | on_interact | *not set* | String |  | Sheepomelon: `{"filters":{"all_of":[{"test":"has_equipment","subject":"other","domain":"hand","value":"shears"},{"test":"is_family","subject":"other","value":"player"},{"test":"has_component","operator":"!=","value":"minecraft:is_baby"}]},"event":"minecraft:on_sheared","target":"self"}` | 
 | particle_on_start | *not set* | Array of [Particle On Start](#particle-on-start) items | Particle effect that will be triggered at the start of the interaction. |  | 
-| particle_on_start | *not set* | [Particle On Start (Particle On Start)](#particle-on-start-particle-on-start) item |  |  | 
+| particle_on_start | *not set* | [Particle On Start](#particle-on-start) item |  |  | 
 | play_sounds | *not set* | String | List of sounds to play when the interaction occurs. |  | 
 | play_sounds | *not set* | String |  | Sheepomelon: `"shear"` | 
 | repair_entity_item | *not set* | Array of [Repair Entity Item](#repair-entity-item) items | Allows to repair one of the entity's items. |  | 
 | spawn_entities | *not set* | String | List of entities to spawn when the interaction occurs. |  | 
 | spawn_items | *not set* | Array of [Spawn Items](#spawn-items) items | Loot table with items to drop on the ground upon successful interaction. |  | 
-| spawn_items | *not set* | [Spawn Items (Spawn Items)](#spawn-items-spawn-items) item |  | Sheepomelon: `{"table":"loot_tables/entities/sheepomelon_shear.json"}` | 
+| spawn_items | *not set* | [Spawn Items](#spawn-items) item |  | Sheepomelon: `{"table":"loot_tables/entities/sheepomelon_shear.json"}` | 
 | swing | false | Boolean true/false | If true, the player will do the 'swing' animation when interacting with this entity. |  | 
 | swing | *not set* | String |  |  | 
 | take_item | *not set* | String |  | Allay: `true` | 
@@ -64,14 +64,6 @@ Particle effect that will be triggered at the start of the interaction.
 | particle_offset_towards_interactor | false | Boolean true/false | Whether or not the particle will appear closer to who performed the interaction. |  | 
 | particle_type | *not set* | String | The type of particle that will be spawned. |  | 
 | particle_y_offset | 0 | Decimal number | Will offset the particle this amount in the y direction. |  | 
-
-## Particle On Start (Particle On Start)
-
-#### Particle_on_start Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| particle_type | *not set* | String |  | Bee: `"food"` | 
 
 ## Repair Entity Item
 Allows to repair one of the entity's items.
@@ -94,14 +86,6 @@ Loot table with items to drop on the ground upon successful interaction.
 |:----------|:-------------|:----|:-----------|:------------- |
 | table | *not set* | String | File path, relative to the Behavior Pack's path, to the loot table file. |  | 
 | y_offset | 1 | Decimal number | Will offset the items spawn position this amount in the y direction. |  | 
-
-## Spawn Items (Spawn Items)
-
-#### Spawn_items Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| table | *not set* | String |  | Armadillo: `"loot_tables/entities/armadillo_brush.json"` | 
 
 ## Samples
 

@@ -1,0 +1,10 @@
+{
+  "id": "query.entity_biome_has_all_tags",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.entity_biome_has_all_tags",
+    "title": "Entity Biome Has All Tags",
+    "description": "Compares the biome the entity is standing in with one or more tag names, and returns either 0 or 1 based on if all of the tag names match. Only supported in resource packs (client-side).",
+    "fields": []
+  }
+}

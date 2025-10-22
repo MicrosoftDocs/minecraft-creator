@@ -20,11 +20,11 @@ Noise parameters used to drive mountain terrain generation in Overworld.
 | material | *not set* | Object | Block type use as steep material |  | 
 | north_slopes | *not set* | Boolean true/false | Enable for north-facing slopes |  | 
 | south_slopes | *not set* | Boolean true/false | Enable for south-facing slopes |  | 
-| steep_material_adjustment | *not set* | [Steep Material Adjustment (Mountain Parameters - Steep Material Adjustment Settings)](#steep-material-adjustment-mountain-parameters---steep-material-adjustment-settings) item | Defines surface material for steep slopes |  | 
-| top_slide | *not set* | [Top Slide (Mountain Parameters - Top Slide Settings)](#top-slide-mountain-parameters---top-slide-settings) item | Controls the density tapering that happens at the top of the world to prevent terrain from reaching too high |  | 
+| steep_material_adjustment | *not set* | [Steep Material Adjustment](#steep-material-adjustment) item | Defines surface material for steep slopes |  | 
+| top_slide | *not set* | [Top Slide](#top-slide) item | Controls the density tapering that happens at the top of the world to prevent terrain from reaching too high |  | 
 | west_slopes | *not set* | Boolean true/false | Enable for west-facing slopes |  | 
 
-## Steep Material Adjustment (Mountain Parameters - Steep Material Adjustment Settings)
+## Steep Material Adjustment
 Defines surface material for steep slopes.
 
 
@@ -34,12 +34,12 @@ Defines surface material for steep slopes.
 |:----------|:-------------|:----|:-----------|:------------- |
 | east_slopes | *not set* | Boolean true/false | Enable for east-facing slopes |  | 
 | material | *not set* | String | Block type use as steep material |  | 
-| material (Alternate 1) | *not set* | [Material (Material)](#material-material) item |  |  | 
+| material (Alternate 1) | *not set* | [Material](#material) item |  |  | 
 | north_slopes | *not set* | Boolean true/false | Enable for north-facing slopes |  | 
 | south_slopes | *not set* | Boolean true/false | Enable for south-facing slopes |  | 
 | west_slopes | *not set* | Boolean true/false | Enable for west-facing slopes |  | 
 
-## Material (Material)
+## Material
 
 #### Material Properties
 
@@ -50,7 +50,7 @@ Defines surface material for steep slopes.
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
-## Top Slide (Mountain Parameters - Top Slide Settings)
+## Top Slide
 Controls the density tapering that happens at the top of the world to prevent terrain from reaching too high.
 
 

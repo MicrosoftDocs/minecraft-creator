@@ -16,7 +16,7 @@ ms.date: 02/11/2025
 |:----------|:-------------|:----|:-----------|:------------- |
 | default | *not set* | String |  |  | 
 | name | *not set* | String |  |  | 
-| options | *not set* | [0.0.DropdownOption) Options (3](#3.0.0.dropdownoption) item |  |  | 
+| options | *not set* | [Options](#3.0.0.dropdownoption) item |  |  | 
 | text | *not set* | String |  |  | 
 | type | *not set* | String |  |  | 
 

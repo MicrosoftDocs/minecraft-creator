@@ -9,27 +9,34 @@
       {
         "id": "attack_reach",
         "title": "Attack Reach",
-        "description": "Horizontal reach grown around the mob's AABB to register a hit. Default value: 0.05.",
-        "dataType": 3
+        "description": "Horizontal reach grown around the mob's AABB to register a hit.",
+        "dataType": 3,
+        "defaultValue": 0.05000000074505806
       },
       {
         "id": "charge_cooldown_time",
         "title": "Charge Cooldown Time",
-        "description": "Range of time in seconds to wait before starting another charge. Default value: [2.0, 6.0].",
+        "description": "Range of time in seconds to wait before starting another charge.",
         "dataType": 16,
+        "defaultValue": {
+          "max": 6,
+          "min": 2
+        },
         "subFormId": "item_components/floatrange"
       },
       {
         "id": "charge_overshoot_distance",
         "title": "Charge Overshoot Distance",
-        "description": "Distance beyond the target the mob aims during a charge. Default value: 1.5.",
-        "dataType": 3
+        "description": "Distance beyond the target the mob aims during a charge.",
+        "dataType": 3,
+        "defaultValue": 1.5
       },
       {
         "id": "charge_speed_multiplier",
         "title": "Charge Speed Multiplier",
-        "description": "Speed multiplier applied during the charge. Default value: 10.",
-        "dataType": 3
+        "description": "Speed multiplier applied during the charge.",
+        "dataType": 3,
+        "defaultValue": 10
       },
       {
         "id": "control_flags",
@@ -39,14 +46,16 @@
       {
         "id": "knockback_force",
         "title": "Knockback Force",
-        "description": "Knockback force applied to the target on hit. Default value: 2.",
-        "dataType": 3
+        "description": "Knockback force applied to the target on hit.",
+        "dataType": 3,
+        "defaultValue": 2
       },
       {
         "id": "max_charge_distance",
         "title": "Max Charge Distance",
-        "description": "Maximum distance at which the mob attempts a charge. Default value: 16.",
-        "dataType": 3
+        "description": "Maximum distance at which the mob attempts a charge.",
+        "dataType": 3,
+        "defaultValue": 16
       },
       {
         "id": "priority",

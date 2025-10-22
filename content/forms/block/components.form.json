@@ -38,6 +38,12 @@
         "subFormId": "block_components/map_color"
       },
       {
+        "id": "minecraft:material_instances",
+        "title": "Minecraft Material Instances",
+        "description": "The material instances for a block.\nMaps face or material_instance names in a geometry file to an actual material instance. Material instance can either be a full material instance or a name to another already defined instance.\nLimited to 64 instances.",
+        "dataType": 16
+      },
+      {
         "id": "minecraft:tags",
         "title": "Minecraft Tags",
         "description": "Use this component to define tags, vanilla or custom. Valid tags are of the format \"namespace:tag_name\". The array of tags must be non-empty.",
