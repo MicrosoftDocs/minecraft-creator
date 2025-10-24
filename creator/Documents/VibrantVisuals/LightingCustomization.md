@@ -58,7 +58,7 @@ The `"sky"` object controls some properties of the sky in terms of its contribut
 The sky's `"intensity"` value is a factor from 0.1 to 1.0 that controls how much sky light is factored into the indirect term for both diffuse and specular. A value of 1.0 causes the sky to contribute more to indirect light, and will result in shadows being less dark; a value of 0.1 will result in darker shadows, because less indirect light is contributed from the sky. The default value, if not provided, is 1.0.
 
 ## Local lights
-She sun and moon's directional lighting can be considered "global lighting" because they impact everything in the scene. Additionally, any light contribution that is constrained to some limited area can be considered "local lighting".
+The sun and moon's directional lighting can be considered "global lighting" because they impact everything in the scene. Additionally, any light contribution that is constrained to some limited area can be considered "local lighting".
 The `"local_lighting"` object alongside the [lightEmission block component](../../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md) allows you to specify 
 - Blocks that should be considered a local light
 - The type of local light those blocks should be (see below)
