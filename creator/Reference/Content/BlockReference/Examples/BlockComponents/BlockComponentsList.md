@@ -17,11 +17,13 @@ ms.date: 02/11/2025
 | [minecraft:destructible_by_mining](./minecraftBlock_destructible_by_mining.md)| Describes the destructible by mining properties for this block. |
 | [minecraft:destruction_particles](./minecraftBlock_destruction_particles.md)| [Note: This component is currently experimental]. |
 | [minecraft:display_name](./minecraftBlock_display_name.md)| Specifies the language file key that maps to what text will be displayed when you hover over the block in your inventory and hotbar. |
+| [minecraft:embedded_visual](./minecraftBlock_embedded_visual.md)| The description identifier of the geometry and material used to render this block when it it is embedded inside of another block (for example, a flower inside of a flower pot). |
 | [minecraft:entity_fall_on](./minecraftBlock_entity_fall_on.md)| Configures what distance an entity must fall onto this block to cause the `onEntityFallOn` block custom component event to be sent to script. |
 | [minecraft:flammable](./minecraftBlock_flammable.md)| Describes the flammable properties for this block. |
+| [minecraft:flower_pottable](./minecraftBlock_flower_pottable.md)| When added to a block type, indicates that this block can be placed inside a flower pot. |
 | [minecraft:friction](./minecraftBlock_friction.md)| Describes the friction for this block in a range of (0.0-0.9). |
 | [minecraft:geometry](./minecraftBlock_geometry.md)| The description identifier of the geometry to use to render this block. |
-| [minecraft:item_visual](./minecraftBlock_item_visual.md)| The description identifier of the geometry and material used to render the item of this block.<br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.50) |
+| [minecraft:item_visual](./minecraftBlock_item_visual.md)| The description identifier of the geometry and material used to render the item of this block. |
 | [minecraft:light_dampening](./minecraftBlock_light_dampening.md)| The amount that light will be dampened when it passes through the block, in a range (0-15). |
 | [minecraft:light_emission](./minecraftBlock_light_emission.md)| The amount of light this block will emit in a range (0-15). |
 | [minecraft:liquid_detection](./minecraftBlock_liquid_detection.md)| The definitions for how a block behaves when detecting liquid. |
@@ -33,6 +35,7 @@ ms.date: 02/11/2025
 | [minecraft:precipitation_interactions](./minecraftBlock_precipitation_interactions.md)| Component that determines how the block will interact with rain and snow |
 | [minecraft:random_offset](./minecraftBlock_random_offset.md)| This component defines a random offset for the block, seeded based on the block's position and the specified range and steps. |
 | [minecraft:redstone_conductivity](./minecraftBlock_redstone_conductivity.md)| The basic redstone properties of a block; if the component is not provided the default values are used. |
+| [minecraft:redstone_producer](./minecraftBlock_redstone_producer.md)| If added to a block, indicates that it produces a redstone signal. |
 | [minecraft:replaceable](./minecraftBlock_replaceable.md)| A block with this component can be replaced when another block is placed in the same block position.<br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.60) |
 | [minecraft:selection_box](./minecraftBlock_selection_box.md)| Defines the area of the block that is selected by the player's cursor. |
 | [minecraft:support](./minecraftBlock_support.md)| Defines the support shape of the block. |
