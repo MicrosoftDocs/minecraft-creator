@@ -10,9 +10,6 @@ ms.service: minecraft-bedrock-edition
 
 Template Pools are groups of related structure templates with assigned weights and processors. During world generation, the Jigsaw Structure "Start Pool" specifies which Template Pool to use first. A Structure Template is then randomly chosen from the pool and placed as the first structure piece. Jigsaw Blocks within the placed structure may also specify Template Pools from which subsequent structure pieces are placed recursively until the Jigsaw Structure becomes fully generated. 
 
->[!IMPORTANT]
-> This feature is currently experimental, subject to change, and is only available when the **Data-driven Jigsaw Structures** experiment is enabled for a world.
-
 ## Properties 
 
 | Name| Default Value| Requirement Status| Type| Description| 
