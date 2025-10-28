@@ -9,10 +9,15 @@ ms.date: 10/28/2025 #Required; mm/dd/yyyy format.
 
 # Minecraft Bedrock 1.21.120 Update Notes for Creators
 
-> 
+> [!VIDEO https://www.youtube.com/embed/wQB2kbaswSc]
 *Video version of this article from the Minecraft Creator Channel*
 
 Minecraft Bedrock been updated to 1.21.120 and there are a number of changes of note for creators. The following features do not require experimental toggles.
+
+## Minecraft Bedrock Platform Path Updates on Windows (GDK)
+
+> [!IMPORTANT]
+> In this release, the location where Minecraft is stored on Windows devices is changing, and this will impact how you create and edit items within Minecraft Bedrock Edition if you use the Windows platform. See [this article](./GDKPCProjectFolder.md) for more information on the updated paths.
 
 ## Editor
 
@@ -27,16 +32,16 @@ Editor has been updated with a number of features.
 [Get started with Editor!](./BedrockEditor/EditorInstallation.md)
 
 ## Blocks
-- 
-- Textures, variation - Randomization of textures on a block, per instance. (e.g. a single flower block that gets placed with a random visual rendering).
-  - [embedded_visual]()
+
+- [Textures + variation](./VariationsBlockTexture.md) - Randomization of textures on a block, per instance. (e.g. a single flower block that gets placed with a random visual rendering).
 - Light level API - Allows for reading of light level at any block position (check if sapling has enough light to grow).
   - [getLightLevel](../ScriptAPI/minecraft/server/Block.md#getlightlevel)
   - [getSkyLightLevel](../ScriptAPI/minecraft/server/Block.md#getskylightlevel)
-- Flowerpotable - Allows custom blocks to be placed in flowerpots, like custom flowers or saplings.
-  - [flower_pottable]()
+- flower_pottable - Allows custom blocks to be placed in flowerpots, like custom flowers or saplings.
+  - [flower_pottable](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_flower_pottable.md) - If present, the associated block can be placed in a flower pot.
+  - [embedded_visual](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_embedded_visual.md) - Defines the visual to use when a block is embedded in another block (e.g, a flower in a flower pot)
 - Redstone output - Allows custom blocks to generate redstone power, like a custom redstone block or redstone torch.
-  - [redstone_producer]()
+  - [redstone_producer](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_redstone_producer.md) - Defines how much redstone power the block can produce.
 
 ## World Gen
 Custom Biomes are now available!

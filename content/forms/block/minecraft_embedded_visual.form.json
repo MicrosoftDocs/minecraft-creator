@@ -1,0 +1,23 @@
+{
+  "tags": ["visual"],
+  "versionIntroduced": "1.21.120",
+  "id": "minecraft:embedded_visual",
+  "title": "Embedded Visual",
+  "description": "The description identifier of the geometry and material used to render this block when it it is embedded inside of another block (for example, a flower inside of a flower pot).",
+  "fields": [
+    {
+      "id": "geometry",
+      "title": "Geometry",
+      "description": "The \"minecraft:geometry\" component that will be used when rendered inside of another block.",
+      "dataType": 15,
+      "isRequired": true
+    },
+    {
+      "id": "material_instances",
+      "title": "Material Instances",
+      "description": "The \"minecraft:material_instances\" component that will be used when rendered inside of another block.",
+      "dataType": 15,
+      "isRequired": true
+    }
+  ]
+}

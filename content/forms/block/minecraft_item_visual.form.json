@@ -3,6 +3,7 @@
   "tags": [
     "visual"
   ],
+  "description": "The description identifier of the geometry and material used to render the item of this block.",
   "versionIntroduced": "1.21.60",
   "samples": {
     "sample": [

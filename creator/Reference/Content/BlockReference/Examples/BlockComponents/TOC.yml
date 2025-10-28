@@ -12,10 +12,14 @@
   href: minecraftBlock_destruction_particles.md
 - name: minecraft:display_name
   href: minecraftBlock_display_name.md
+- name: minecraft:embedded_visual
+  href: minecraftBlock_embedded_visual.md
 - name: minecraft:entity_fall_on
   href: minecraftBlock_entity_fall_on.md
 - name: minecraft:flammable
   href: minecraftBlock_flammable.md
+- name: minecraft:flower_pottable
+  href: minecraftBlock_flower_pottable.md
 - name: minecraft:friction
   href: minecraftBlock_friction.md
 - name: minecraft:geometry
@@ -44,6 +48,8 @@
   href: minecraftBlock_random_offset.md
 - name: minecraft:redstone_conductivity
   href: minecraftBlock_redstone_conductivity.md
+- name: minecraft:redstone_producer
+  href: minecraftBlock_redstone_producer.md
 - name: minecraft:replaceable
   href: minecraftBlock_replaceable.md
 - name: minecraft:selection_box

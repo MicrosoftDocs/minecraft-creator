@@ -1,0 +1,6 @@
+{
+  "id": "minecraft:flower_pottable",
+  "versionIntroduced": "1.21.120",
+  "description": "When added to a block type, indicates that this block can be placed inside a flower pot.",
+  "fields": []
+}

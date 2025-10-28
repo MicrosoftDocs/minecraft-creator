@@ -1,21 +1,21 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: GDK Migration on Windows (from September 2025)
-description: "An article that describes file locations and how to deploy your in-development files for Minecraft Preview."
+title: GDK Migration on Windows (from Minecraft version 1.21.120)
+description: "An article that describes file locations and how to deploy your in-development files for Minecraft Bedrock."
 ms.service: minecraft-bedrock-edition
-ms.date: 09/09/2025
+ms.date: 10/24/2025
 ---
 
-# GDK Migration on Windows (from September 2025)
+# GDK Migration on Windows (from Minecraft 1.21.120)
 
-As part of a migration from UWP to GDK (Game Development Kit) for Windows builds, current users of Minecraft Preview from 1.21.120.21-preview (from September 9th, 2025) *may* experience either a "UWP" version of Minecraft Preview (the existing style of Minecraft build) or a GDK version of Minecraft Preview (the new style of Minecraft build). Functionally these versions should work the same, but these versions do source files in different locations on your device's disk. As a creator, this will impact where you should deploy your pack and world resources.
+As part of a migration from UWP to GDK (Game Development Kit) for Windows builds, the location of Minecraft Bedrock storage for creator artifacts like behavior packs and worlds is moving locations. Functionally these folder locations should work the same (e.g., there is a development_behavior_packs folder, etc.), but you will need to place files in a different location on your device's disk. As a creator, this will impact where you should deploy your pack and world resources.
 
-## UWP Build (the existing style)
+## GDK migration (the new style)
 
-Minecraft Preview using UWP builds stores various pack and world folders in this location on your device:
+After migration, a users' content should be copied over to updated GDK Minecraft Bedrock folders. Moving forward, as a creator, you will want to deploy your development work for Minecraft Preview to the following folder:
 
-`%localappdata%\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\games\com.mojang`
+`%appdata%\Minecraft Bedrock\users\shared\games\com.mojang`
 
 Within this folder, you will see several subfolders where you can place your development resources:
 
@@ -25,22 +25,29 @@ Within this folder, you will see several subfolders where you can place your dev
 `behavior_packs`
 `resource_packs`
 
-Logs are stored at:
+For example, you can place your behavior packs in developement for Minecraft at:
 
-`%localappdata%\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\logs`
+`%appdata%\Minecraft Bedrock\users\shared\games\com.mojang\development_behavior_packs`
 
-## GDK migration (the new style)
+Content errors are logged at `%appdata%\Minecraft Bedrock\logs\` if that option has been enabled in the "Creator" tab of settings within your game.
 
-After migration, a users' content should be copied over to updated GDK Minecraft Preview folders. Moving forward, as a creator, you will want to deploy your development work for Minecraft Preview to the following folder:
+For Minecraft Preview, the folder paths are:
 
-`%appdata%\Minecraft Bedrock Preview\users\shared\games\com.mojang`
+`%appdata%\Minecraft Bedrock Preview\users\shared\games\com.mojang` for development artifacts and `%appdata%\Minecraft Bedrock Preview\logs\` for logs.
 
-For example, you can place your behavior packs in developement for Minecraft Preview at:
 
-`%appdata%\Minecraft Bedrock Preview\users\shared\games\com.mojang\development_behavior_packs`
+## UWP Build (the old style)
 
-Content errors are logged at `%appdata%\Minecraft Bedrock Preview\logs\` if that option has been enabled in the "Creator" tab of settings within your game.
+For reference, the previous Minecraft using UWP builds stored various pack and world folders in this location on your device:
 
-## Summary
+`%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
 
-As migration progresses, we expect more users of Minecraft Preview will see the move from UWP to GDK for Minecraft Preview. Ultimately, we expect that this change to GDK will also come to the "release"/full version of Minecraft for Windows. Stay tuned to [Minecraft Bedrock changelogs](https://feedback.minecraft.net/hc/sections/360001185332-Beta-and-Preview-Information-and-Changelogs) for more information on this. If you have any bugs or concerns, please log them at [bugs.mojang.com](https://bugs.mojang.com/projects/MCPE/summary).
+Logs were stored at:
+
+`%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\logs`
+
+## Tooling Updates
+
+Check with the providers of your tooling to see if you need to update tools to take into account the new paths. 
+
+For example, the `@minecraft/core-build-tasks` added support for the `BedrockGDK` folder in version 5.5.0 - if you use a NPM-based workflow that uses `@minecraft/core-build-tasks`, you will want to consider an update for that.
