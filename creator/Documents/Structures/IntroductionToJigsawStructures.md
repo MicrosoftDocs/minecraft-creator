@@ -13,9 +13,6 @@ In this overview, you will be learning about Jigsaw Structures. Jigsaw Structure
 
 Jigsaw Structures can generate randomly in the world. Examples of Vanilla Jigsaw Structures include Trail Ruins and Trial Chambers.
 
->[!IMPORTANT]
-> This feature is currently experimental, subject to change, and is only available when the **Data-driven Jigsaw Structures** experiment is enabled for a world.
-
 ## On the Minecraft Creator Channel
 
 An updated overview of working with Jigsaw Structures
