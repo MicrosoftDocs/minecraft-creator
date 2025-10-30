@@ -76,6 +76,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:jump.static/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/cat.json": [
         {
           "path": "/minecraft:entity/components/minecraft:jump.static/",
@@ -259,6 +265,12 @@
         }
       ],
       "/vanilla/behavior_pack/entities/panda.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:jump.static/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
         {
           "path": "/minecraft:entity/components/minecraft:jump.static/",
           "content": {}

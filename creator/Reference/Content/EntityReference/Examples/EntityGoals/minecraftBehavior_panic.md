@@ -21,7 +21,7 @@ Allows the mob to enter the panic state, which makes it run around and away from
 | ignore_mob_damage | false | Boolean true/false | If true, the mob will not panic in response to damage from other mobs. This overrides the damage types in "damage_sources" | Armadillo: `true` | 
 | panic_sound | *not set* | String |  | Strider: `"panic"` | 
 | prefer_water | false | Boolean true/false | If true, the mob will prefer water over land | Turtle: `true` | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `1`, Copper Golem: `2`, Horse: `3` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `1`, Camel Husk: `2`, Horse: `3` | 
 | sound_interval | *not set* | [Sound Interval](#sound-interval) item |  | Strider: `{"range_min":1,"range_max":3}` | 
 | speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Allay: `2`, Bee: `1.25`, Camel: `4` | 
 
@@ -75,6 +75,16 @@ At /minecraft:entity/component_groups/escape_fire/minecraft:behavior.panic/:
 ```json
 "minecraft:behavior.panic": {
   "priority": 1,
+  "speed_multiplier": 4
+}
+```
+
+#### [Camel Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel_husk.json)
+
+
+```json
+"minecraft:behavior.panic": {
+  "priority": 2,
   "speed_multiplier": 4
 }
 ```
@@ -147,15 +157,5 @@ At /minecraft:entity/component_groups/minecraft:defending_fox/minecraft:behavior
 "minecraft:behavior.panic": {
   "priority": 2,
   "speed_multiplier": 2
-}
-```
-
-#### [Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/horse.json)
-
-
-```json
-"minecraft:behavior.panic": {
-  "priority": 3,
-  "speed_multiplier": 1.2
 }
 ```

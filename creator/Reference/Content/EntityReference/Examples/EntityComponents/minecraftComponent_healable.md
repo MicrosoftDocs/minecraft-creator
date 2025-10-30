@@ -47,6 +47,20 @@ The array of items that can be used to heal this entity.
 }
 ```
 
+#### [Camel Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel_husk.json)
+
+
+```json
+"minecraft:healable": {
+  "items": [
+    {
+      "item": "rabbit_foot",
+      "heal_amount": 2
+    }
+  ]
+}
+```
+
 #### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
 
 

@@ -36,6 +36,12 @@
               "content": 2
             }
           ],
+          "/vanilla/behavior_pack/entities/parched.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.equip_item/",
+              "content": 4
+            }
+          ],
           "/vanilla/behavior_pack/entities/piglin.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.equip_item/",
@@ -83,6 +89,14 @@
           "path": "/minecraft:entity/components/minecraft:behavior.equip_item/",
           "content": {
             "priority": 2
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.equip_item/",
+          "content": {
+            "priority": 4
           }
         }
       ],

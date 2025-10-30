@@ -144,6 +144,8 @@
   href: query_get_default_bone_pivot.md
 - name: query.get_locator_offset
   href: query_get_locator_offset.md
+- name: query.get_pack_setting
+  href: query_get_pack_setting.md
 - name: query.get_root_locator_offset
   href: query_get_root_locator_offset.md
 - name: query.graphics_mode_is_any
@@ -332,6 +334,10 @@
   href: query_is_orphaned.md
 - name: query.is_owner_identifier_any
   href: query_is_owner_identifier_any.md
+- name: query.is_pack_setting_enabled
+  href: query_is_pack_setting_enabled.md
+- name: query.is_pack_setting_selected
+  href: query_is_pack_setting_selected.md
 - name: query.is_persona_or_premium_skin
   href: query_is_persona_or_premium_skin.md
 - name: query.is_playing_dead

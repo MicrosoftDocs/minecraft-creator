@@ -100,6 +100,28 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equippable/",
+          "content": {
+            "slots": [
+              {
+                "slot": 0,
+                "item": "saddle",
+                "accepted_items": [
+                  "saddle"
+                ],
+                "on_equip": {
+                  "event": "minecraft:camel_husk_saddled"
+                },
+                "on_unequip": {
+                  "event": "minecraft:camel_husk_unsaddled"
+                }
+              }
+            ]
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/donkey.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:equippable/",
@@ -195,7 +217,7 @@
       ],
       "/vanilla/behavior_pack/entities/nautilus.json": [
         {
-          "path": "/minecraft:entity/components/minecraft:equippable/",
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_adult/minecraft:equippable/",
           "content": {
             "slots": [
               {
@@ -277,7 +299,7 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
-          "path": "/minecraft:entity/components/minecraft:equippable/",
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:equippable/",
           "content": {
             "slots": [
               {

@@ -151,7 +151,7 @@
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/stray.json": [
+          "/vanilla/behavior_pack/entities/parched.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
               "content": true
@@ -189,6 +189,35 @@
         }
       ],
       "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/1/filters/",
+          "content": {
+            "test": "has_ranged_weapon",
+            "subject": "self",
+            "operator": "==",
+            "value": false
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
+          "content": {
+            "test": "has_ranged_weapon",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/1/filters/",
+          "content": {
+            "test": "has_ranged_weapon",
+            "subject": "self",
+            "operator": "==",
+            "value": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/1/filters/",
           "content": {

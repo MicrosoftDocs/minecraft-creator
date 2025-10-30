@@ -12,6 +12,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:camel_husk_saddled/minecraft:input_ground_controlled/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/donkey.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:donkey_saddled/minecraft:input_ground_controlled/",

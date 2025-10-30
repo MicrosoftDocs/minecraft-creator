@@ -332,6 +332,23 @@
               ]
             }
           ],
+          "/vanilla/behavior_pack/entities/parched.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "wolf"
+                  },
+                  "max_dist": 6,
+                  "walk_speed_multiplier": 1.2,
+                  "sprint_speed_multiplier": 1.2
+                }
+              ]
+            }
+          ],
           "/vanilla/behavior_pack/entities/phantom.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
@@ -506,23 +523,6 @@
                   "max_flee": 10,
                   "walk_speed_multiplier": 1.5,
                   "sprint_speed_multiplier": 2
-                }
-              ]
-            }
-          ],
-          "/vanilla/behavior_pack/entities/skeleton.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
-              "content": [
-                {
-                  "filters": {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "wolf"
-                  },
-                  "max_dist": 6,
-                  "walk_speed_multiplier": 1.2,
-                  "sprint_speed_multiplier": 1.2
                 }
               ]
             }
@@ -1349,6 +1349,26 @@
                 },
                 "max_dist": 16,
                 "sprint_speed_multiplier": 1.5
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
+          "content": {
+            "priority": 5,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "wolf"
+                },
+                "max_dist": 6,
+                "walk_speed_multiplier": 1.2,
+                "sprint_speed_multiplier": 1.2
               }
             ]
           }

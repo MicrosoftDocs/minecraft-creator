@@ -434,10 +434,6 @@ Glow Squid Spawn Egg
 Item Iron Door
 - `minecraft:cod`
 Cod
-- `minecraft:spruce_planks`
-- `minecraft:element_27`
-[Education Edition] Cobalt (Co)
-- `minecraft:wild_armor_trim_smithing_template`
 - `minecraft:beef`
 Beef
 - `minecraft:gray_stained_glass_pane`
@@ -576,6 +572,7 @@ Wooden Sword
 Netherite Boots
 - `minecraft:music_disc_mall`
 Music Disc Mall
+- `minecraft:camel_husk_spawn_egg`
 - `minecraft:hay_block`
 Hay Block
 - `minecraft:nautilus_shell`
@@ -891,8 +888,6 @@ Polished Granite Stairs
 - `minecraft:jungle_boat`
 Jungle Boat
 - `minecraft:lime_stained_glass_pane`
-- `minecraft:chemistry_table`
-Chemistry Table
 - `minecraft:copper_bulb`
 - `minecraft:silverfish_spawn_egg`
 Silverfish Spawn Egg
@@ -1711,6 +1706,10 @@ Ladder
 Unlit Redstone Torch
 - `minecraft:shelter_pottery_sherd`
 - `minecraft:sentry_armor_trim_smithing_template`
+- `minecraft:spruce_planks`
+- `minecraft:element_27`
+[Education Edition] Cobalt (Co)
+- `minecraft:wild_armor_trim_smithing_template`
 - `minecraft:ward_armor_trim_smithing_template`
 - `minecraft:waxed_copper_golem_statue`
 - `minecraft:chain_command_block`
@@ -1872,18 +1871,23 @@ Spruce Standing Sign
 Sticky Piston
 - `minecraft:black_wool`
 - `minecraft:brown_shulker_box`
-- `minecraft:waxed_oxidized_copper_grate`
-- `minecraft:copper_leggings`
-- `minecraft:tnt`
-TNT
 - `minecraft:double_stone_block_slab4`
 Double Stone Block Slab 4
+- `minecraft:waxed_oxidized_copper_grate`
+- `minecraft:tnt`
+TNT
+- `minecraft:copper_leggings`
 - `minecraft:copper_boots`
 - `minecraft:prismarine_brick_double_slab`
 - `minecraft:element_24`
 [Education Edition] Chromium (Cr)
 - `minecraft:nautilus_spawn_egg`
 - `minecraft:zombie_nautilus_spawn_egg`
+- `minecraft:barrier`
+Barrier
+- `minecraft:frosted_ice`
+[Education Edition] Frosted Ice
+- `minecraft:parched_spawn_egg`
 - `minecraft:iron_nautilus_armor`
 - `minecraft:acacia_double_slab`
 - `minecraft:golden_nautilus_armor`
@@ -2240,6 +2244,8 @@ Bell
 - `minecraft:music_disc_tears`
 - `minecraft:material_reducer`
 - `minecraft:lab_table`
+- `minecraft:chemistry_table`
+Chemistry Table
 - `minecraft:hard_white_stained_glass`
 - `minecraft:packed_ice`
 Packed Ice
@@ -2873,10 +2879,6 @@ Deadbush
 Wheat
 - `minecraft:item.spruce_door`
 Spruce Door
-- `minecraft:barrier`
-Barrier
-- `minecraft:frosted_ice`
-[Education Edition] Frosted Ice
 - `minecraft:suspicious_gravel`
 - `minecraft:brick_block`
 Brick Block

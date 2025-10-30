@@ -58,6 +58,29 @@ List of slots and the item that can be equipped.
 }
 ```
 
+#### [Camel Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel_husk.json)
+
+
+```json
+"minecraft:equippable": {
+  "slots": [
+    {
+      "slot": 0,
+      "item": "saddle",
+      "accepted_items": [
+        "saddle"
+      ],
+      "on_equip": {
+        "event": "minecraft:camel_husk_saddled"
+      },
+      "on_unequip": {
+        "event": "minecraft:camel_husk_unsaddled"
+      }
+    }
+  ]
+}
+```
+
 #### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
 
 

@@ -287,6 +287,14 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/cat.json": [
         {
           "path": "/minecraft:entity/components/minecraft:despawn/",
@@ -526,6 +534,14 @@
         }
       ],
       "/vanilla/behavior_pack/entities/panda.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
         {
           "path": "/minecraft:entity/components/minecraft:despawn/",
           "content": {

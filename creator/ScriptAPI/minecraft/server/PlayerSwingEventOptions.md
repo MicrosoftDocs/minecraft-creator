@@ -23,3 +23,10 @@ An interface that is passed into {@link @minecraft/Server.PlayerSwingStartAfterE
 The held item option that the callback should be called for. If undefined, the callback will be called whether or not the player is holding an item in their hand.
 
 Type: [*HeldItemOption*](HeldItemOption.md)
+
+### **swingSource**
+`swingSource?: EntitySwingSource;`
+
+The [*@minecraft/server.EntitySwingSource*](../../../scriptapi/minecraft/server/EntitySwingSource.md) that the callback should be called for. If undefined, the callback will be called for all swing sources.
+
+Type: [*EntitySwingSource*](EntitySwingSource.md)

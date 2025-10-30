@@ -97,7 +97,7 @@
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/dolphin.json": [
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
               "path": "/minecraft:entity/components/minecraft:breathable/",
               "content": true
@@ -141,6 +141,21 @@
             }
           ],
           "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:breathable/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "can_dehydrate",
+        "title": "Can Dehydrate",
+        "description": "If true, water-only breathers will take Dehydration damage when out of water.",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/nautilus.json": [
             {
               "path": "/minecraft:entity/components/minecraft:breathable/",
               "content": true
@@ -341,6 +356,17 @@
           "content": {
             "total_supply": 15,
             "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_air": true,
+            "breathes_water": true
           }
         }
       ],
@@ -554,15 +580,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/horse.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:breathable/",
-          "content": {
-            "total_supply": 15,
-            "suffocate_time": 0
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/husk.json": [
         {
           "path": "/minecraft:entity/components/minecraft:breathable/",
@@ -617,7 +634,8 @@
             "total_supply": 15,
             "suffocate_time": 0,
             "breathes_air": false,
-            "breathes_water": true
+            "breathes_water": true,
+            "can_dehydrate": true
           }
         }
       ],
@@ -636,6 +654,16 @@
           "content": {
             "total_supply": 15,
             "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_water": true
           }
         }
       ],

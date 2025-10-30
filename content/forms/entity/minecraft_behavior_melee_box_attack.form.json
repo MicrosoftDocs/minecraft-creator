@@ -250,7 +250,7 @@
               "content": 1
             }
           ],
-          "/vanilla/behavior_pack/entities/skeleton.json": [
+          "/vanilla/behavior_pack/entities/parched.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:behavior.melee_box_attack/",
               "content": 1.25
@@ -582,6 +582,16 @@
           "content": {
             "priority": 2,
             "track_target": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:behavior.melee_box_attack/",
+          "content": {
+            "priority": 4,
+            "track_target": true,
+            "speed_multiplier": 1.25
           }
         }
       ],

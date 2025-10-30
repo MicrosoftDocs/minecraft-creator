@@ -208,6 +208,16 @@
               "content": "minecraft:is_baby"
             }
           ],
+          "/vanilla/behavior_pack/entities/nautilus.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:ageable_grow_up/sequence/1/filters/",
+              "content": "minecraft:is_tamed"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:ageable_grow_up/sequence/2/filters/",
+              "content": "minecraft:is_tamed"
+            }
+          ],
           "/vanilla/behavior_pack/entities/rabbit.json": [
             {
               "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/",
@@ -231,14 +241,6 @@
             }
           ],
           "/vanilla/behavior_pack/entities/wolf.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
-              "content": "minecraft:is_tamed"
-            },
-            {
-              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/1/filters/all_of/2/",
-              "content": "minecraft:is_tamed"
-            },
             {
               "path": "/minecraft:entity/events/minecraft:upgrade_to_1_21_100/sequence/0/filters/",
               "content": "minecraft:angry"
@@ -379,6 +381,31 @@
           "path": "/minecraft:entity/events/minecraft:convert_to_zombie/sequence/1/filters/",
           "content": {
             "test": "has_component",
+            "value": "minecraft:is_baby"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:ageable_grow_up/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "value": "minecraft:is_tamed"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:ageable_grow_up/sequence/2/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:is_tamed"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_tame/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
             "value": "minecraft:is_baby"
           }
         }

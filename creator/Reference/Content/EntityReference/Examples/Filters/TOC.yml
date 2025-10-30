@@ -104,6 +104,8 @@
   href: is_humid.md
 - name: is_immobile
   href: is_immobile.md
+- name: is_in_same_vehicle
+  href: is_in_same_vehicle.md
 - name: is_in_village
   href: is_in_village.md
 - name: is_leashed

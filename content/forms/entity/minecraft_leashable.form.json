@@ -120,7 +120,7 @@
           ],
           "/vanilla/behavior_pack/entities/nautilus.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:leashable/",
+              "path": "/minecraft:entity/component_groups/minecraft:nautilus_leashable/minecraft:leashable/",
               "content": {
                 "event": "minecraft:on_unleashed",
                 "target": "self"
@@ -286,6 +286,23 @@
         }
       ],
       "/vanilla/behavior_pack/entities/camel.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:leashable/",
+          "content": {
+            "presets": [
+              {
+                "filter": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "happy_ghast"
+                },
+                "spring_type": "quad_dampened"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
           "content": {
@@ -482,7 +499,7 @@
       ],
       "/vanilla/behavior_pack/entities/nautilus.json": [
         {
-          "path": "/minecraft:entity/components/minecraft:leashable/",
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_leashable/minecraft:leashable/",
           "content": {
             "on_unleash": {
               "event": "minecraft:on_unleashed",
@@ -657,7 +674,7 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:leashable/",
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_leashable/minecraft:leashable/",
           "content": {
             "on_unleash": {
               "event": "minecraft:on_unleashed",

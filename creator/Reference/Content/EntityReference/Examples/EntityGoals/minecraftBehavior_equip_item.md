@@ -16,7 +16,7 @@ The entity puts on the desired equipment.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Bogged: `3`, Fox: `2`, Piglin: `5` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Bogged: `3`, Fox: `2`, Parched: `4` | 
 
 ## Samples
 
@@ -35,6 +35,15 @@ The entity puts on the desired equipment.
 ```json
 "minecraft:behavior.equip_item": {
   "priority": 2
+}
+```
+
+#### [Parched](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parched.json)
+
+
+```json
+"minecraft:behavior.equip_item": {
+  "priority": 4
 }
 ```
 

@@ -201,6 +201,7 @@ description: Changelog of the `@minecraft/server` module
 - Added value `UnexpectedEnumName`
 #### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
 - Added value `Npc`
+#### Added enum [`EntitySwingSource`](EntitySwingSource.md)
 #### Changed enum [`EquipmentSlot`](EquipmentSlot.md)
 - Added value `Body`
 #### Changed enum [`GameRule`](GameRule.md)
@@ -1017,6 +1018,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`EasingType`](EasingType.md)
 #### Changed enum [`EntityDamageCause`](EntityDamageCause.md)
 - Added value `campfire`
+- Added value `dehydration`
 - Added value `maceSmash`
 - Added value `ramAttack`
 - Added value `sonicBoom`

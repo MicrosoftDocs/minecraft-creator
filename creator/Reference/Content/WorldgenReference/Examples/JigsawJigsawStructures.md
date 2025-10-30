@@ -11,9 +11,6 @@ ms-date: 04/29/2025
 
 Before taking a look at Jigsaw Structures, we should understand its component part: a Structure. A Structure is a large decoration and arrangement of blocks, potentially covering many chunks of space. It is saved as a Structure Template (.mcstructure in Bedrock, .nbt in Java) and can be created, loaded, and modified via Structure Blocks. See [Introduction to Structure Blocks](../../../../Documents/Structures/IntroductionToStructureBlocks.md).
 
->[!IMPORTANT]
-> This feature is currently experimental, subject to change, and is only available when the **Data-Driven Jigsaw Structures** experiment is enabled for a world.
-
 > [!NOTE]
 > Currently only Trail Ruins can be modified via JSON with the Data-Driven Jigsaw Structure Experimental Toggle turned on. Other Jigsaw Structures such as Villages and Bastions use a legacy version of the Jigsaw Structure System and cannot be modified via JSON.
 

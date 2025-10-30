@@ -159,6 +159,16 @@
               ]
             }
           ],
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:type_family/",
+              "content": [
+                "camel",
+                "mob",
+                "undead"
+              ]
+            }
+          ],
           "/vanilla/behavior_pack/entities/cat.json": [
             {
               "path": "/minecraft:entity/components/minecraft:type_family/",
@@ -542,6 +552,18 @@
               "content": [
                 "ocelot",
                 "mob"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/parched.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:type_family/",
+              "content": [
+                "parched",
+                "skeleton",
+                "monster",
+                "mob",
+                "undead"
               ]
             }
           ],
@@ -1600,6 +1622,18 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:type_family/",
+          "content": {
+            "family": [
+              "camel",
+              "mob",
+              "undead"
+            ]
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/cat.json": [
         {
           "path": "/minecraft:entity/components/minecraft:type_family/",
@@ -2084,6 +2118,20 @@
             "family": [
               "ocelot",
               "mob"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:type_family/",
+          "content": {
+            "family": [
+              "parched",
+              "skeleton",
+              "monster",
+              "mob",
+              "undead"
             ]
           }
         }

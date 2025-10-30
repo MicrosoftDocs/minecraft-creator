@@ -13,7 +13,7 @@ As part of a migration from UWP to GDK (Game Development Kit) for Windows builds
 
 ## GDK migration (the new style)
 
-After migration, a users' content should be copied over to updated GDK Minecraft Bedrock folders. Moving forward, as a creator, you will want to deploy your development work for Minecraft Preview to the following folder:
+After migration, a user's content should be copied over to updated GDK Minecraft Bedrock folders. Moving forward, as a creator, you will want to deploy your development work for Minecraft to the following folder:
 
 `%appdata%\Minecraft Bedrock\users\shared\games\com.mojang`
 

@@ -246,6 +246,8 @@ Entity is born in default mode
 Entity is a born screamer
 - `minecraft:calm`
 Entity is calm
+- `minecraft:camel_husk_saddled`
+- `minecraft:camel_husk_unsaddled`
 - `minecraft:camel_saddled`
 - `minecraft:camel_unsaddled`
 - `minecraft:cat_gifted_owner`
@@ -556,6 +558,7 @@ Entity spawns as a skilled adult
 Entity spawns with a pillager captain rider
 - `minecraft:spawn_with_pillager_rider`
 Entity spawns with a pillager rider
+- `minecraft:spawn_with_rider`
 - `minecraft:spawn_with_vindicator_captain_rider`
 Entity spawns with a vindicator captain rider
 - `minecraft:spawn_with_vindicator_rider`

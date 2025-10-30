@@ -328,31 +328,25 @@
           "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:environment_sensor/triggers/0/filters/",
           "content": {
             "test": "in_water",
-            "operator": "==",
             "value": false
           }
         },
         {
           "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_on_ground/minecraft:environment_sensor/triggers/0/filters/",
           "content": {
-            "test": "in_water",
-            "operator": "==",
-            "value": true
+            "test": "in_water"
           }
         },
         {
           "path": "/minecraft:entity/events/minecraft:on_saddled/sequence/1/filters/",
           "content": {
-            "test": "in_water",
-            "operator": "==",
-            "value": true
+            "test": "in_water"
           }
         },
         {
           "path": "/minecraft:entity/events/minecraft:on_saddled/sequence/2/filters/",
           "content": {
             "test": "in_water",
-            "operator": "==",
             "value": false
           }
         }

@@ -192,6 +192,25 @@ List of entity types that this mob can target when hurt by them.
 }
 ```
 
+#### [Parched](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parched.json)
+
+
+```json
+"minecraft:behavior.hurt_by_target": {
+  "priority": 2,
+  "entity_types": [
+    {
+      "filters": {
+        "test": "is_family",
+        "subject": "other",
+        "operator": "!=",
+        "value": "breeze"
+      }
+    }
+  ]
+}
+```
+
 #### [Ravager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ravager.json)
 
 
@@ -234,23 +253,5 @@ List of entity types that this mob can target when hurt by them.
 "minecraft:behavior.hurt_by_target": {
   "priority": 1,
   "alert_same_type": true
-}
-```
-
-#### [Trader Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/trader_llama.json)
-
-
-```json
-"minecraft:behavior.hurt_by_target": {
-  "priority": 1,
-  "hurt_owner": true,
-  "entity_types": {
-    "filters": {
-      "test": "is_family",
-      "subject": "other",
-      "operator": "!=",
-      "value": "trader_llama"
-    }
-  }
 }
 ```

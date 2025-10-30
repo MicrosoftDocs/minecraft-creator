@@ -27,6 +27,12 @@
               "content": 26
             }
           ],
+          "/vanilla/behavior_pack/entities/parched.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/",
+              "content": 35
+            }
+          ],
           "/vanilla/behavior_pack/entities/witch.json": [
             {
               "path": "/minecraft:entity/components/minecraft:shooter/",
@@ -77,9 +83,9 @@
               "content": "minecraft:llama_spit"
             }
           ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
+          "/vanilla/behavior_pack/entities/parched.json": [
             {
-              "path": "/minecraft:entity/component_groups/ranged_unit/minecraft:shooter/",
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/",
               "content": "minecraft:arrow"
             }
           ],
@@ -306,6 +312,12 @@
               "content": "item.trident.throw"
             }
           ],
+          "/vanilla/behavior_pack/entities/parched.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/",
+              "content": "bow"
+            }
+          ],
           "/vanilla/behavior_pack/entities/witch.json": [
             {
               "path": "/minecraft:entity/components/minecraft:shooter/",
@@ -364,6 +376,16 @@
           "path": "/minecraft:entity/components/minecraft:shooter/",
           "content": {
             "def": "minecraft:llama_spit"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/",
+          "content": {
+            "def": "minecraft:arrow",
+            "sound": "bow",
+            "aux_val": 35
           }
         }
       ],
