@@ -108,7 +108,7 @@ Specifies which blocks in the world cannot be overridden by this structure.
 ```json
 "processors": [ 
   { 
-    "processor_type": "minecraft:block_ignore", 
+    "processor_type": "minecraft:protected_blocks", 
     "value": "<block_tag>"
   },
 ]
