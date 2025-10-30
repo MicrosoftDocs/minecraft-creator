@@ -106,6 +106,8 @@
       href: minecraft/server/EntityDamageCause.md
     - name: EntityInitializationCause
       href: minecraft/server/EntityInitializationCause.md
+    - name: EntitySwingSource
+      href: minecraft/server/EntitySwingSource.md
     - name: EquipmentSlot
       href: minecraft/server/EquipmentSlot.md
     - name: FluidType

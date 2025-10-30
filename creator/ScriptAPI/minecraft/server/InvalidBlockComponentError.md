@@ -15,3 +15,5 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 ## Extends
 - *Error*
+
+The error can occur when a block is invalid. This can also occur when accessing components on a block that doesn't have them.

@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.3.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.21.130-beta.22 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.21.130-beta.24 of Minecraft.
 
 ## Available Versions
 - `2.5.0-beta`
@@ -80,6 +80,7 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityComponentTypes](EntityComponentTypes.md)
 - [EntityDamageCause](EntityDamageCause.md)
 - [EntityInitializationCause](EntityInitializationCause.md)
+- [EntitySwingSource](EntitySwingSource.md)
 - [EquipmentSlot](EquipmentSlot.md)
 - [FluidType](FluidType.md)
 - [GameMode](GameMode.md)

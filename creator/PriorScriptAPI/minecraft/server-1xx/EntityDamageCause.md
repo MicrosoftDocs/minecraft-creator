@@ -35,6 +35,8 @@ Unused.
 `contact = "contact"`
 
 Damage caused by physically touching an Entity or Block. For example, touching a Sweet Berry bush or Pufferfish.
+### **dehydration**
+`dehydration = "dehydration"`
 ### **drowning**
 `drowning = "drowning"`
 

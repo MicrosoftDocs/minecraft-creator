@@ -3640,6 +3640,10 @@ Ravager Spawn Egg
 - `nautilus_spawn_egg`
 - `minecraft:zombie_nautilus_spawn_egg`
 - `zombie_nautilus_spawn_egg`
+- `minecraft:parched_spawn_egg`
+- `parched_spawn_egg`
+- `minecraft:camel_husk_spawn_egg`
+- `camel_husk_spawn_egg`
 - `editor:map_marker_spawn_egg`
 - `minecraft:chorus_fruit`
 Chorus Fruit
@@ -4885,8 +4889,6 @@ Dye
 Banner Pattern
 - `spawn_egg`
 Spawn Egg
-- `minecraft:chemistry_table`
-- `chemistry_table`
 - `minecraft:filled_map`
 Filled Map
 - `filled_map`
@@ -4903,6 +4905,8 @@ Filled Map
 Lodestone Compass
 - `lodestone_compass`
 Lodestone Compass
+- `minecraft:chemistry_table`
+- `chemistry_table`
 - `minecraft:dye`
 Dye
 - `minecraft:banner_pattern`

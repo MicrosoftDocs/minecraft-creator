@@ -12,7 +12,7 @@ Reloads all function and script files from all behavior packs.
 <table>
   <tr>
     <th>Permission Level</th>
-    <td>Game Directors</td>
+    <td>Admin</td>
   </tr>
   <tr>
     <th>Requires Cheats?</th>
@@ -22,6 +22,9 @@ Reloads all function and script files from all behavior packs.
 
 ## Usage
 ### Reload
-`/reload`
+`/reload [all: reload_all]`
 
 Reload all function and script files.
+
+## Arguments
+- `all`: reload_all

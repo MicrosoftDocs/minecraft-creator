@@ -178,6 +178,8 @@ Zoglin
 - `minecraft:bogged`
 - `minecraft:creaking`
 - `minecraft:copper_golem`
+- `minecraft:parched`
+- `minecraft:camel_husk`
 - `minecraft:minecart`
 Minecart
 - `minecraft:hopper_minecart`
@@ -379,6 +381,8 @@ Zoglin
 - `bogged`
 - `creaking`
 - `copper_golem`
+- `parched`
+- `camel_husk`
 - `minecart`
 Minecart
 - `hopper_minecart`

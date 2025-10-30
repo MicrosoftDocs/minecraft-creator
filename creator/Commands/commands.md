@@ -53,7 +53,7 @@ description: List and descriptions of Minecraft commands and enums
 | [`/playsound`](./commands/playsound.md) | Plays a sound. | Game Directors | Yes |
 | [`/project`](./commands/project.md) | This command contains additional tools for managing an Editor project. This command is available in Editor mode only. | Game Directors | No |
 | [`/recipe`](./commands/recipe.md) | Supports unlocking of built-in (vanilla) recipes that a particular player can craft with. | Game Directors | Yes |
-| [`/reload`](./commands/reload.md) | Reloads all function and script files from all behavior packs. | Game Directors | Yes |
+| [`/reload`](./commands/reload.md) | Reloads all function and script files from all behavior packs. | Admin | Yes |
 | [`/reloadconfig`](./commands/reloadconfig.md) | Reloads configuration files relating to variables, secrets, permissions, etc. | Owner | Yes |
 | [`/reloadpacketlimitconfig`](./commands/reloadpacketlimitconfig.md) | Reload packet limit config from file | Owner | Yes |
 | [`/replaceitem`](./commands/replaceitem.md) | Replaces items in inventories. | Game Directors | Yes |

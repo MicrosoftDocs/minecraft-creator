@@ -30,3 +30,10 @@ Type: [*ItemStack*](ItemStack.md)
 Source Player for this event.
 
 Type: [*Player*](Player.md)
+
+### **swingSource**
+`read-only swingSource: EntitySwingSource;`
+
+The source of the Player swing, see [*@minecraft/server.EntitySwingSource*](../../../scriptapi/minecraft/server/EntitySwingSource.md).
+
+Type: [*EntitySwingSource*](EntitySwingSource.md)
