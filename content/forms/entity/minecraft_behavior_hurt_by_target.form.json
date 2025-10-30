@@ -338,6 +338,24 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/parched.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/",
+          "content": {
+            "priority": 2,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "breeze"
+                }
+              }
+            ]
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/piglin.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/",
@@ -585,7 +603,7 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_hostile/minecraft:behavior.hurt_by_target/",
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_adult/minecraft:behavior.hurt_by_target/",
           "content": {
             "priority": 1
           }

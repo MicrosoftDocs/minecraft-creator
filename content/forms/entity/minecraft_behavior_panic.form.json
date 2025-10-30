@@ -126,6 +126,12 @@
               "content": 4
             }
           ],
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.panic/",
+              "content": 4
+            }
+          ],
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.panic/",
@@ -160,6 +166,16 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.panic/",
               "content": 1.2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/nautilus.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:nautilus_baby/minecraft:behavior.panic/",
+              "content": 1.6
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:behavior.panic/",
+              "content": 1.6
             }
           ],
           "/vanilla/behavior_pack/entities/piglin.json": [
@@ -213,15 +229,15 @@
               "content": 1
             }
           ],
-          "/vanilla/behavior_pack/entities/copper_golem.json": [
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.panic/",
               "content": 2
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:defending_fox/minecraft:behavior.panic/",
+              "path": "/minecraft:entity/components/minecraft:behavior.panic/",
               "content": 2
             }
           ],
@@ -356,6 +372,15 @@
           "path": "/minecraft:entity/components/minecraft:behavior.panic/",
           "content": {
             "priority": 1,
+            "speed_multiplier": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.panic/",
+          "content": {
+            "priority": 2,
             "speed_multiplier": 4
           }
         }
@@ -499,6 +524,22 @@
           "content": {
             "priority": 1,
             "speed_multiplier": 1.2
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_baby/minecraft:behavior.panic/",
+          "content": {
+            "priority": 1,
+            "speed_multiplier": 1.6
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:behavior.panic/",
+          "content": {
+            "priority": 1,
+            "speed_multiplier": 1.6
           }
         }
       ],
@@ -668,7 +709,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.panic/",
           "content": {
-            "priority": 1,
+            "priority": 2,
             "speed_multiplier": 1.2
           }
         }

@@ -199,6 +199,12 @@
               "content": 7
             }
           ],
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+              "content": 8
+            }
+          ],
           "/vanilla/behavior_pack/entities/cat.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
@@ -215,12 +221,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
               "content": 6
-            }
-          ],
-          "/vanilla/behavior_pack/entities/dolphin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/dolphin_swimming_navigation/minecraft:behavior.look_at_player/",
-              "content": 8
             }
           ],
           "/vanilla/behavior_pack/entities/evocation_illager.json": [
@@ -399,6 +399,16 @@
           "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
           "content": {
             "priority": 7,
+            "target_distance": 6,
+            "probability": 0.02
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+          "content": {
+            "priority": 8,
             "target_distance": 6,
             "probability": 0.02
           }
@@ -655,6 +665,15 @@
             "priority": 8,
             "look_distance": 6,
             "probability": 0.02
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+          "content": {
+            "priority": 8,
+            "look_distance": 8
           }
         }
       ],

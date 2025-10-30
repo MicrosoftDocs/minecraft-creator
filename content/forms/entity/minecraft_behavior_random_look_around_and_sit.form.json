@@ -17,6 +17,12 @@
               "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
               "content": true
             }
+          ],
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": true
+            }
           ]
         }
       },
@@ -32,6 +38,12 @@
               "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
               "content": true
             }
+          ],
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": true
+            }
           ]
         }
       },
@@ -43,6 +55,12 @@
         "dataType": 3,
         "samples": {
           "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": 30
+            }
+          ],
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
               "content": 30
@@ -63,7 +81,7 @@
               "content": 5
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
               "content": 5
@@ -84,7 +102,7 @@
               "content": 100
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
               "content": 100
@@ -100,6 +118,12 @@
         "dataType": 3,
         "samples": {
           "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": -30
+            }
+          ],
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
               "content": -30
@@ -120,7 +144,7 @@
               "content": 2
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
               "content": 2
@@ -141,7 +165,7 @@
               "content": 80
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
               "content": 80
@@ -162,7 +186,7 @@
               "content": 0.001
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
               "content": 0.001
@@ -178,6 +202,12 @@
         "dataType": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
               "content": 5
@@ -198,6 +228,12 @@
               "content": 4
             }
           ],
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": 5
+            }
+          ],
           "/vanilla/behavior_pack/entities/fox.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
@@ -213,6 +249,24 @@
           "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
           "content": {
             "priority": 4,
+            "continue_if_leashed": true,
+            "continue_sitting_on_reload": true,
+            "min_look_count": 2,
+            "max_look_count": 5,
+            "min_look_time": 80,
+            "max_look_time": 100,
+            "min_angle_of_view_horizontal": -30,
+            "max_angle_of_view_horizontal": 30,
+            "random_look_around_cooldown": 5,
+            "probability": 0.001
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+          "content": {
+            "priority": 5,
             "continue_if_leashed": true,
             "continue_sitting_on_reload": true,
             "min_look_count": 2,

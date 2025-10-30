@@ -37,6 +37,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | [breeze](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/breeze.json) | 2956 | 140 |
 | [breeze_wind_charge_projectile](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/breeze_wind_charge_projectile.json) | 4194445 | 141 |
 | [camel](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/camel.json) | 5002 | 138 |
+| [camel_husk](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/camel_husk.json) | 68504 | 152 |
 | [cat](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/cat.json) | 21323 | 75 |
 | [cave_spider](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/cave_spider.json) | 265000 | 40 |
 | chalkboard | 78 | 78 |
@@ -98,6 +99,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | [ominous_item_spawner](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/ominous_item_spawner.json) | 145 | 145 |
 | painting | 83 | 83 |
 | [panda](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/panda.json) | 4977 | 113 |
+| [parched](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/parched.json) | 1117079 | 151 |
 | [parrot](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/parrot.json) | 21278 | 30 |
 | [phantom](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/phantom.json) | 68410 | 58 |
 | [pig](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/pig.json) | 4876 | 12 |

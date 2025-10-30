@@ -25,7 +25,7 @@
               "path": "/minecraft:item/components/minecraft:tags/",
               "content": [
                 "minecraft:copper_tier",
-                "minecraft:spear"
+                "minecraft:is_spear"
               ]
             }
           ],
@@ -35,7 +35,7 @@
               "content": [
                 "minecraft:diamond_tier",
                 "minecraft:transformable_items",
-                "minecraft:spear"
+                "minecraft:is_spear"
               ]
             }
           ],
@@ -44,7 +44,7 @@
               "path": "/minecraft:item/components/minecraft:tags/",
               "content": [
                 "minecraft:golden_tier",
-                "minecraft:spear"
+                "minecraft:is_spear"
               ]
             }
           ],
@@ -53,7 +53,7 @@
               "path": "/minecraft:item/components/minecraft:tags/",
               "content": [
                 "minecraft:iron_tier",
-                "minecraft:spear"
+                "minecraft:is_spear"
               ]
             }
           ],
@@ -62,7 +62,7 @@
               "path": "/minecraft:item/components/minecraft:tags/",
               "content": [
                 "minecraft:netherite_tier",
-                "minecraft:spear"
+                "minecraft:is_spear"
               ]
             }
           ],
@@ -71,7 +71,7 @@
               "path": "/minecraft:item/components/minecraft:tags/",
               "content": [
                 "minecraft:stone_tier",
-                "minecraft:spear"
+                "minecraft:is_spear"
               ]
             }
           ],
@@ -80,7 +80,7 @@
               "path": "/minecraft:item/components/minecraft:tags/",
               "content": [
                 "minecraft:wooden_tier",
-                "minecraft:spear"
+                "minecraft:is_spear"
               ]
             }
           ],
@@ -112,7 +112,7 @@
           "content": {
             "tags": [
               "minecraft:copper_tier",
-              "minecraft:spear"
+              "minecraft:is_spear"
             ]
           }
         }
@@ -124,7 +124,7 @@
             "tags": [
               "minecraft:diamond_tier",
               "minecraft:transformable_items",
-              "minecraft:spear"
+              "minecraft:is_spear"
             ]
           }
         }
@@ -135,7 +135,7 @@
           "content": {
             "tags": [
               "minecraft:golden_tier",
-              "minecraft:spear"
+              "minecraft:is_spear"
             ]
           }
         }
@@ -146,7 +146,7 @@
           "content": {
             "tags": [
               "minecraft:iron_tier",
-              "minecraft:spear"
+              "minecraft:is_spear"
             ]
           }
         }
@@ -157,7 +157,7 @@
           "content": {
             "tags": [
               "minecraft:netherite_tier",
-              "minecraft:spear"
+              "minecraft:is_spear"
             ]
           }
         }
@@ -168,7 +168,7 @@
           "content": {
             "tags": [
               "minecraft:stone_tier",
-              "minecraft:spear"
+              "minecraft:is_spear"
             ]
           }
         }
@@ -179,7 +179,7 @@
           "content": {
             "tags": [
               "minecraft:wooden_tier",
-              "minecraft:spear"
+              "minecraft:is_spear"
             ]
           }
         }

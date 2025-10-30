@@ -23,7 +23,7 @@ Represents a block that can output a redstone signal.
 ### **power**
 `read-only power: number;`
 
-Gets the power that this block outputs to circuit system.
+Gets the power that this block outputs to circuit system. Returns error if block is no longer valid or if block doesn't have a 'minecraft:redstone_producer' component.
 
 Type: *number*
 
@@ -40,7 +40,7 @@ Notes:
 getConnectedFaces(): Direction[]
 `
 
-Gets the faces of this block that can connect to the circuit and output power.
+Gets the faces of this block that can connect to the circuit and output power. Returns error if block is no longer valid or if block doesn't have a 'minecraft:redstone_producer' component.
 
 **Returns** [*Direction*](Direction.md)[]
   
@@ -53,7 +53,7 @@ Notes:
 getStronglyPoweredFace(): Direction | undefined
 `
 
-Gets the block face that strongly powers the block touching it.
+Gets the block face that strongly powers the block touching it. If the 'minecraft:redstone_producer' block component hasn't defined a 'strongly_powered_face' then this method returns 'undefined'. Returns error if block is no longer valid or if block doesn't have a 'minecraft:redstone_producer' component.
 
 **Returns** [*Direction*](Direction.md) | *undefined*
   

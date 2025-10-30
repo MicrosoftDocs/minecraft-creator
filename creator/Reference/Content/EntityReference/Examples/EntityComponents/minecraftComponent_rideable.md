@@ -19,7 +19,7 @@ This entity can be ridden.
 | controlling_seat | 0 | Integer number | The seat that designates the driver of the entity. Entities with the "minecraft:behavior.controlled_by_player" goal ignore this field and give control to any player in any seat. |  | 
 | crouching_skip_interact | true | Boolean true/false | If true, this entity can't be interacted with if the entity interacting with it is crouching. | Camel: `true` | 
 | dismount_mode | default | [Dismount Mode](#dismount-mode-choices) choices | Defines where riders are placed when dismounting this entity:<br>- "default", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found.<br>- "on_top_center", riders are placed at the center of the top of the entity's collision box. | Happy Ghast: `"on_top_center"` | 
-| family_types | *not set* | Array of strings | List of entities that can ride this entity. | Camel: `["player"]`, Cat: `["zombie"]`, Chicken: `["baby_zombie"]` | 
+| family_types | *not set* | Array of strings | List of entities that can ride this entity. | Camel: `["player"]`, Camel Husk: `["player","parched","husk"]`, Cat: `["zombie"]` | 
 | interact_text | *not set* | String | The text to display when the player can interact with the entity when playing with touch-screen controls. | Camel: `"action.interact.ride.horse"`, Donkey: `"action.interact.mount"`, Minecart: `"action.interact.ride.minecart"` | 
 | on_rider_enter_event | *not set* | Minecraft Event Reference | Event to execute on the owner entity when an entity starts riding it. This item requires a format version of at least undefined. | Happy Ghast: `"minecraft:on_passenger_mount"`, Nautilus: `"minecraft:on_mount"`, Zombie Nautilus: `"minecraft:on_drowned_mount"`, `"minecraft:on_player_mount"` | 
 | on_rider_exit_event | *not set* | Minecraft Event Reference | Event to execute on the owner entity when an entity stops riding it. This item requires a format version of at least undefined. | Happy Ghast: `"minecraft:on_passenger_dismount"`, Nautilus: `"minecraft:on_dismount"`, Zombie Nautilus: `"minecraft:on_drowned_dismount"`, `"minecraft:on_player_dismount"` | 
@@ -28,7 +28,7 @@ This entity can be ridden.
 | pull_in_entities | false | Boolean true/false | If true, this entity will pull entities matching the specified "family_types" into any available seats. Entities that are leashed will only be pulled in if their distance to their leash holder is less than the "hard_distance" defined in their own "minecraft:leashable" component. | Camel: `true` | 
 | rider_can_interact | false | Boolean true/false | If true, this entity will be picked when looked at by the rider. |  | 
 | seat_count | 1 | Integer number | The number of entities that can ride this entity at the same time. | Camel: `2`, Cat: `1`, Happy Ghast: `4` | 
-| seats | *not set* | Array of [Seats](#seats) items | The list of positions and number of riders for each position for entities riding this entity. | Camel: `[{"min_rider_count":0,"max_rider_count":2,"position":[0,1.905,0.5]},{"min_rider_count":1,"max_rider_count":2,"position":[0,1.905,-0.5]}]`, Cat: `{"position":[0,0.35,0]}`, Chicken: `{"position":[0,0.48,0]}` | 
+| seats | *not set* | Array of [Seats](#seats) items | The list of positions and number of riders for each position for entities riding this entity. | Camel: `[{"min_rider_count":0,"max_rider_count":2,"position":[0,1.905,0.5]},{"min_rider_count":1,"max_rider_count":2,"position":[0,1.905,-0.5]}]` | 
 | pulls_in_entities | *not set* | Boolean true/false |  |  | 
 
 ### Dismount Mode choices
@@ -46,13 +46,13 @@ The list of positions and number of riders for each position for entities riding
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| camera_relax_distance_smoothing | *not set* | Decimal number |  |  | 
+| camera_relax_distance_smoothing | *not set* | String |  |  | 
 | lock_rider_rotation | 181 | Decimal number | Angle in degrees that a rider is allowed to rotate while riding this entity. Omit this property for no limit. |  | 
 | max_rider_count | 0 | Integer number | Defines the maximum number of riders that can be riding this entity for this seat to be valid. |  | 
 | min_rider_count | 0 | Integer number | Defines the minimum number of riders that need to be riding this entity before this seat can be used. |  | 
 | position | [0, 0, 0] | x, y, z coordinate array | Position of this seat relative to this entity's position. |  | 
 | rotate_rider_by | 0 | String | Offset to rotate riders by. |  | 
-| third_person_camera_radius | *not set* | Decimal number |  |  | 
+| third_person_camera_radius | *not set* | String |  |  | 
 
 ## Samples
 
@@ -66,6 +66,43 @@ The list of positions and number of riders for each position for entities riding
   "pull_in_entities": true,
   "family_types": [
     "player"
+  ],
+  "interact_text": "action.interact.ride.horse",
+  "seats": [
+    {
+      "min_rider_count": 0,
+      "max_rider_count": 2,
+      "position": [
+        0,
+        1.905,
+        0.5
+      ]
+    },
+    {
+      "min_rider_count": 1,
+      "max_rider_count": 2,
+      "position": [
+        0,
+        1.905,
+        -0.5
+      ]
+    }
+  ]
+}
+```
+
+#### [Camel Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel_husk.json)
+
+
+```json
+"minecraft:rideable": {
+  "seat_count": 2,
+  "crouching_skip_interact": true,
+  "pull_in_entities": true,
+  "family_types": [
+    "player",
+    "parched",
+    "husk"
   ],
   "interact_text": "action.interact.ride.horse",
   "seats": [
@@ -347,26 +384,6 @@ At /minecraft:entity/component_groups/minecraft:horse_tamed/minecraft:rideable/:
       1.1,
       -0.2
     ]
-  }
-}
-```
-
-#### [Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/husk.json)
-
-
-```json
-"minecraft:rideable": {
-  "seat_count": 1,
-  "family_types": [
-    "zombie"
-  ],
-  "seats": {
-    "position": [
-      0,
-      1.175,
-      -0.35
-    ],
-    "lock_rider_rotation": 0
   }
 }
 ```

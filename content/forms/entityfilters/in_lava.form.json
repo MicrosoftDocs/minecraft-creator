@@ -312,6 +312,15 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self"
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/cat.json": [
         {
           "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
@@ -611,10 +620,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
           "content": {
-            "test": "in_lava",
-            "subject": "self",
-            "operator": "==",
-            "value": true
+            "test": "in_lava"
           }
         }
       ],
@@ -630,6 +636,17 @@
         }
       ],
       "/vanilla/behavior_pack/entities/panda.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
         {
           "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
           "content": {
@@ -1007,10 +1024,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
           "content": {
-            "test": "in_lava",
-            "subject": "self",
-            "operator": "==",
-            "value": true
+            "test": "in_lava"
           }
         }
       ],

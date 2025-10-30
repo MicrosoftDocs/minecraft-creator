@@ -51,6 +51,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:leashable_to/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/cat.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:cat_adult/minecraft:leashable_to/",

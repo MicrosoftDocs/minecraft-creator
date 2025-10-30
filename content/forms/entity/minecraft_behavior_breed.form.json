@@ -217,7 +217,7 @@
         {
           "path": "/minecraft:entity/component_groups/minecraft:nautilus_adult/minecraft:behavior.breed/",
           "content": {
-            "priority": 2,
+            "priority": 3,
             "speed_multiplier": 1
           }
         }

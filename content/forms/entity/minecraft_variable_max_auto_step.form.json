@@ -18,6 +18,12 @@
               "content": 1.5625
             }
           ],
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:variable_max_auto_step/",
+              "content": 1.5625
+            }
+          ],
           "/vanilla/behavior_pack/entities/creaking.json": [
             {
               "path": "/minecraft:entity/components/minecraft:variable_max_auto_step/",
@@ -44,6 +50,12 @@
               "path": "/minecraft:entity/components/minecraft:variable_max_auto_step/",
               "content": 1.5625
             }
+          ],
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:variable_max_auto_step/",
+              "content": 1.5625
+            }
           ]
         }
       },
@@ -60,7 +72,7 @@
               "content": 0.5625
             }
           ],
-          "/vanilla/behavior_pack/entities/creaking.json": [
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
               "path": "/minecraft:entity/components/minecraft:variable_max_auto_step/",
               "content": 0.5625
@@ -71,6 +83,16 @@
     ],
     "samples": {
       "/vanilla/behavior_pack/entities/camel.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:variable_max_auto_step/",
+          "content": {
+            "base_value": 1.5625,
+            "controlled_value": 1.5625,
+            "jump_prevented_value": 0.5625
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
         {
           "path": "/minecraft:entity/components/minecraft:variable_max_auto_step/",
           "content": {

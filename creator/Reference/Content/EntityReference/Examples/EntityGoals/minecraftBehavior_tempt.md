@@ -113,6 +113,20 @@ Allows a mob to be tempted by a player holding a specific item. Uses pathfinding
 }
 ```
 
+#### [Camel Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel_husk.json)
+
+
+```json
+"minecraft:behavior.tempt": {
+  "priority": 4,
+  "speed_multiplier": 2.5,
+  "can_tempt_vertically": true,
+  "items": [
+    "rabbit_foot"
+  ]
+}
+```
+
 #### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
 
 At /minecraft:entity/component_groups/minecraft:cat_wild/minecraft:behavior.tempt/: 
@@ -221,19 +235,6 @@ At /minecraft:entity/component_groups/minecraft:cat_tame/minecraft:behavior.temp
   "can_tempt_vertically": true,
   "items": [
     "slime_ball"
-  ]
-}
-```
-
-#### [Goat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/goat.json)
-
-
-```json
-"minecraft:behavior.tempt": {
-  "priority": 4,
-  "speed_multiplier": 0.75,
-  "items": [
-    "wheat"
   ]
 }
 ```

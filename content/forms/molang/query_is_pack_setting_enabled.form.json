@@ -1,0 +1,10 @@
+{
+  "id": "query.is_pack_setting_enabled",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_pack_setting_enabled",
+    "title": "Is Pack Setting Enabled",
+    "description": "Returns 1.0 if the Pack Setting toggle is enabled, parameter is name of toggle. Available on the Client (Resource Packs) only.",
+    "fields": []
+  }
+}
