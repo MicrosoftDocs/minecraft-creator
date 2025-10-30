@@ -6,16 +6,58 @@
     "description": "Allows the mob to stay afloat while swimming. Passengers will be kicked out the moment the mob's head goes underwater, which may not happen for tall mobs.",
     "fields": [
       {
+        "id": "chance_per_tick_to_float",
+        "title": "Chance Per Tick To Float",
+        "description": "The chance per tick to cause an upward impulse.",
+        "defaultValue": 0.8,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.float/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/donkey.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.float/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
         "id": "sink_with_passengers",
         "title": "Sink With Passengers",
         "description": "If true, the mob will keep sinking as long as it has passengers.",
         "defaultValue": false,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/camel.json": [
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.float/",
               "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "time_under_water_to_dismount_passengers",
+        "title": "Time Under Water To Dismount Passengers",
+        "description": "Time in seconds that a floating vehicles head can be underwater before it causes its passengers to dismount.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.float/",
+              "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/donkey.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.float/",
+              "content": 2
             }
           ]
         }
@@ -114,6 +156,16 @@
           "path": "/minecraft:entity/components/minecraft:behavior.float/",
           "content": {
             "priority": 0,
+            "chance_per_tick_to_float": 1,
+            "time_under_water_to_dismount_passengers": 2
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.float/",
+          "content": {
+            "priority": 0,
             "sink_with_passengers": true
           }
         }
@@ -170,7 +222,9 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.float/",
           "content": {
-            "priority": 0
+            "priority": 0,
+            "chance_per_tick_to_float": 1,
+            "time_under_water_to_dismount_passengers": 2
           }
         }
       ],
@@ -234,7 +288,9 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.float/",
           "content": {
-            "priority": 0
+            "priority": 0,
+            "chance_per_tick_to_float": 1,
+            "time_under_water_to_dismount_passengers": 2
           }
         }
       ],
@@ -258,7 +314,9 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.float/",
           "content": {
-            "priority": 0
+            "priority": 0,
+            "chance_per_tick_to_float": 1,
+            "time_under_water_to_dismount_passengers": 2
           }
         }
       ],
@@ -442,7 +500,9 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.float/",
           "content": {
-            "priority": 0
+            "priority": 0,
+            "chance_per_tick_to_float": 1,
+            "time_under_water_to_dismount_passengers": 2
           }
         }
       ],

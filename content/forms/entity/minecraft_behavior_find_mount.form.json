@@ -42,6 +42,12 @@
         "defaultValue": 0,
         "dataType": 0,
         "samples": {
+          "/vanilla/behavior_pack/entities/parched.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.find_mount/",
+              "content": 15
+            }
+          ],
           "/vanilla/behavior_pack/entities/parrot.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:behavior.find_mount/",
@@ -51,12 +57,6 @@
           "/vanilla/behavior_pack/entities/piglin.json": [
             {
               "path": "/minecraft:entity/component_groups/piglin_jockey/minecraft:behavior.find_mount/",
-              "content": 15
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:zombie_jockey/minecraft:behavior.find_mount/",
               "content": 15
             }
           ]
@@ -80,11 +80,9 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:zombie_husk_jockey/minecraft:behavior.find_mount/",
               "content": 16
-            }
-          ],
-          "/vanilla/behavior_pack/entities/parrot.json": [
+            },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:behavior.find_mount/",
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_husk_rider/minecraft:behavior.find_mount/",
               "content": 16
             }
           ]
@@ -97,12 +95,6 @@
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
         "dataType": 0,
         "samples": {
-          "/vanilla/behavior_pack/entities/husk.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:zombie_husk_jockey/minecraft:behavior.find_mount/",
-              "content": 1
-            }
-          ],
           "/vanilla/behavior_pack/entities/parrot.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:behavior.find_mount/",
@@ -114,6 +106,12 @@
               "path": "/minecraft:entity/component_groups/piglin_jockey/minecraft:behavior.find_mount/",
               "content": 1
             }
+          ],
+          "/vanilla/behavior_pack/entities/zombie.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_jockey/minecraft:behavior.find_mount/",
+              "content": 1
+            }
           ]
         }
       },
@@ -122,15 +120,15 @@
         "title": "Max Failed Attempts",
         "dataType": 7,
         "samples": {
-          "/vanilla/behavior_pack/entities/piglin.json": [
+          "/vanilla/behavior_pack/entities/parched.json": [
             {
-              "path": "/minecraft:entity/component_groups/piglin_jockey/minecraft:behavior.find_mount/",
+              "path": "/minecraft:entity/components/minecraft:behavior.find_mount/",
               "content": 20
             }
           ],
-          "/vanilla/behavior_pack/entities/zombie.json": [
+          "/vanilla/behavior_pack/entities/piglin.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:zombie_jockey/minecraft:behavior.find_mount/",
+              "path": "/minecraft:entity/component_groups/piglin_jockey/minecraft:behavior.find_mount/",
               "content": 20
             }
           ]
@@ -142,8 +140,26 @@
         {
           "path": "/minecraft:entity/component_groups/minecraft:zombie_husk_jockey/minecraft:behavior.find_mount/",
           "content": {
-            "priority": 1,
+            "priority": 0,
             "within_radius": 16
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_husk_rider/minecraft:behavior.find_mount/",
+          "content": {
+            "priority": 0,
+            "within_radius": 16
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.find_mount/",
+          "content": {
+            "priority": 0,
+            "within_radius": 16,
+            "start_delay": 15,
+            "max_failed_attempts": 20
           }
         }
       ],

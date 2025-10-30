@@ -13,6 +13,12 @@
         "defaultValue": 1,
         "dataType": 3,
         "samples": {
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
+              "content": 4
+            }
+          ],
           "/vanilla/behavior_pack/entities/cat.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
@@ -61,13 +67,13 @@
         "defaultValue": false,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/cave_spider.json": [
+          "/vanilla/behavior_pack/entities/cat.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
               "content": true
@@ -82,6 +88,12 @@
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
         "dataType": 0,
         "samples": {
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
+              "content": 3
+            }
+          ],
           "/vanilla/behavior_pack/entities/cat.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
@@ -123,17 +135,22 @@
               "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
               "content": 3
             }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-              "content": 3
-            }
           ]
         }
       }
     ],
     "samples": {
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 4,
+            "target_dist": 0,
+            "track_target": true
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/cat.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",

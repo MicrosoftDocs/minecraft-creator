@@ -83,6 +83,7 @@ ms.date: 02/11/2025
 | [query.get_animation_frame](queryfunctions/query_get_animation_frame.md)| Returns the current texture of an item whose appearance can change (such as a drawn bow). |
 | [query.get_default_bone_pivot](queryfunctions/query_get_default_bone_pivot.md)| Gets specified axis of the specified bone orientation pivot. |
 | [query.get_locator_offset](queryfunctions/query_get_locator_offset.md)| Gets specified axis of the specified locator offset. |
+| [query.get_pack_setting](queryfunctions/query_get_pack_setting.md)| Returns value of Pack Setting slider, parameter is name of slider. |
 | [query.get_root_locator_offset](queryfunctions/query_get_root_locator_offset.md)| Gets specified axis of the specified locator offset of the root model. |
 | [query.graphics_mode_is_any](queryfunctions/query_graphics_mode_is_any.md)| If the graphics mode of the client matches any of the arguments, return 1.0. |
 | [query.ground_speed](queryfunctions/query_ground_speed.md)| Returns the ground speed of the entity in meters/second. |
@@ -177,6 +178,8 @@ ms.date: 02/11/2025
 | [query.is_on_screen](queryfunctions/query_is_on_screen.md)| Returns 1.0 if this is called on an entity at a time when it is known if it is on screen, else it returns 0.0. |
 | [query.is_orphaned](queryfunctions/query_is_orphaned.md)| Returns 1.0 if the entity is orphaned, else it returns 0.0. |
 | [query.is_owner_identifier_any](queryfunctions/query_is_owner_identifier_any.md)| Returns whether the root entity identifier is any of the specified strings. |
+| [query.is_pack_setting_enabled](queryfunctions/query_is_pack_setting_enabled.md)| Returns 1.0 if the Pack Setting toggle is enabled, parameter is name of toggle. |
+| [query.is_pack_setting_selected](queryfunctions/query_is_pack_setting_selected.md)| Returns 1.0 if the Pack Setting dropdown (first parameter) matches the string value of the second parameter (selection). |
 | [query.is_persona_or_premium_skin](queryfunctions/query_is_persona_or_premium_skin.md)| Returns 1.0 if the player has a persona or premium skin, else it returns 0.0. |
 | [query.is_playing_dead](queryfunctions/query_is_playing_dead.md)| Returns 1.0 if the entity is playing dead, else it returns 0.0. |
 | [query.is_powered](queryfunctions/query_is_powered.md)| Returns 1.0 if the entity is powered, else it returns 0.0. |

@@ -50,6 +50,12 @@
               "content": 5
             }
           ],
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
+              "content": 9
+            }
+          ],
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
@@ -72,12 +78,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
               "content": 6
-            }
-          ],
-          "/vanilla/behavior_pack/entities/drowned.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
-              "content": 9
             }
           ],
           "/vanilla/behavior_pack/entities/fox.json": [
@@ -196,6 +196,14 @@
           "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
           "content": {
             "priority": 8
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
+          "content": {
+            "priority": 9
           }
         }
       ],
@@ -360,6 +368,14 @@
         }
       ],
       "/vanilla/behavior_pack/entities/panda.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
+          "content": {
+            "priority": 9
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
           "content": {

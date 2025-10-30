@@ -66,6 +66,21 @@
         }
       },
       {
+        "id": "lunge",
+        "title": "Lunge",
+        "description": "Amount of exhaustion applied when triggering the lunge enchantment, multiplied by the enchantment level.",
+        "defaultValue": 4,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/player.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:exhaustion_values/",
+              "content": 4
+            }
+          ]
+        }
+      },
+      {
         "id": "mine",
         "title": "Mine",
         "description": "Amount of exhaustion applied when mining.",
@@ -146,7 +161,8 @@
             "damage": 0.1,
             "walk": 0,
             "sprint": 0.1,
-            "swim": 0.01
+            "swim": 0.01,
+            "lunge": 4
           }
         }
       ]

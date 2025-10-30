@@ -148,25 +148,23 @@ At /minecraft:entity/events/minecraft:convert_to_zombie/sequence/1/filters/:
 }
 ```
 
-#### [Panda](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/panda.json)
+#### [Nautilus](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/nautilus.json)
 
-At /minecraft:entity/component_groups/minecraft:panda_baby/minecraft:behavior.sneeze/entity_types/0/filters/all_of/0/: 
+At /minecraft:entity/events/minecraft:ageable_grow_up/sequence/1/filters/: 
 
 ```json
 {
   "test": "has_component",
-  "subject": "other",
-  "operator": "!=",
-  "value": "minecraft:is_baby"
+  "value": "minecraft:is_tamed"
 }
 ```
 
-At /minecraft:entity/events/minecraft:panda_weak/sequence/1/filters/: 
+At /minecraft:entity/events/minecraft:ageable_grow_up/sequence/2/filters/: 
 
 ```json
 {
   "test": "has_component",
-  "operator": "==",
-  "value": "minecraft:is_baby"
+  "operator": "!=",
+  "value": "minecraft:is_tamed"
 }
 ```

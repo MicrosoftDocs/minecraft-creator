@@ -22,9 +22,39 @@ Adds a rider to the entity.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | entity_type | *not set* | String from a list of choices | Type of entity to acquire as a rider | Cave Spider: `"minecraft:skeleton"`, `"minecraft:stray"`, `"minecraft:bogged"`, `"minecraft:wither_skeleton"` | 
+| riders | *not set* | [Riders](#entity-rider-data) item | List of riders to be added to the entity. Can only spawn as many riders as "minecraft:rideable" has "seat_count". | Camel Husk: `[{"entity_type":"minecraft:husk","spawn_event":"minecraft:spawn_as_rider"},{"entity_type":"minecraft:parched","spawn_event":"minecraft:ranged_mode"}]` | 
 | spawn_event | *not set* | Minecraft Event Reference | Trigger event when a rider is acquired | Ravager: `"minecraft:spawn_for_raid"`, `"minecraft:spawn_as_illager_captain"`, Strider: `"minecraft:spawn_as_strider_jockey"`, `"minecraft:spawn_baby_strider_jockey"` | 
 
+## Entity Rider Data
+List of riders to be added to the entity. Must have no more riders than "minecraft:rideable" has "seat_count".
+
+
+#### Entity Rider Data Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| entity_type | *not set* | String | The entity type that will be riding this entity. |  | 
+| spawn_event | *not set* | String | The spawn event that will be used when the riding entity is created. |  | 
+
 ## Samples
+
+#### [Camel Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel_husk.json)
+
+
+```json
+"minecraft:addrider": {
+  "riders": [
+    {
+      "entity_type": "minecraft:husk",
+      "spawn_event": "minecraft:spawn_as_rider"
+    },
+    {
+      "entity_type": "minecraft:parched",
+      "spawn_event": "minecraft:ranged_mode"
+    }
+  ]
+}
+```
 
 #### [Cave Spider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cave_spider.json)
 

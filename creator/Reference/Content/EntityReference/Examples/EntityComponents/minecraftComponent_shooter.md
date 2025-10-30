@@ -19,7 +19,7 @@ Defines the entity's ranged attack behavior. The "minecraft:behavior.ranged_atta
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| aux_val | -1 | Integer number | ID of the Potion effect for the default projectile to be applied on hit. | Bogged: `26`, Witch: `23` | 
+| aux_val | -1 | Integer number | ID of the Potion effect for the default projectile to be applied on hit. | Bogged: `26`, Parched: `35`, Witch: `23` | 
 | def | *not set* | String | Actor definition to use as the default projectile for the ranged attack. The actor definition must have the projectile component to be able to be shot as a projectile. | Blaze: `"minecraft:small_fireball"`, Bogged: `"minecraft:arrow"`, Drowned: `"minecraft:thrown_trident"` | 
 | magic | false | Boolean true/false | Sets whether the projectiles being used are flagged as magic. If set, the ranged attack goal will not be used at the same time as other magic goals, such as minecraft:behavior.drink_potion | Witch: `true` | 
 | power | 0 | Decimal number | Velocity in which the projectiles will be shot at. A power of 0 will be overwritten by the default projectile throw power. | Witch: `0.75`, Axe Turret: `10`, Bow Turret: `7` | 
@@ -82,6 +82,17 @@ Defines the entity's ranged attack behavior. The "minecraft:behavior.ranged_atta
 ```json
 "minecraft:shooter": {
   "def": "minecraft:llama_spit"
+}
+```
+
+#### [Parched](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parched.json)
+
+
+```json
+"minecraft:shooter": {
+  "def": "minecraft:arrow",
+  "sound": "bow",
+  "aux_val": 35
 }
 ```
 
@@ -238,15 +249,5 @@ Defines the entity's ranged attack behavior. The "minecraft:behavior.ranged_atta
 "minecraft:shooter": {
   "def": "minecraft:shulker_bullet",
   "power": 10
-}
-```
-
-#### [Bow Turret](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json)
-
-
-```json
-"minecraft:shooter": {
-  "def": "minecraft:arrow",
-  "power": 7
 }
 ```

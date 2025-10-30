@@ -51,6 +51,12 @@
               "content": 2
             }
           ],
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
+              "content": 2
+            }
+          ],
           "/vanilla/behavior_pack/entities/cat.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
@@ -186,6 +192,12 @@
               "content": 6
             }
           ],
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
+              "content": 7
+            }
+          ],
           "/vanilla/behavior_pack/entities/cat.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
@@ -208,12 +220,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
               "content": 5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/drowned.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
-              "content": 7
             }
           ],
           "/vanilla/behavior_pack/entities/evocation_illager.json": [
@@ -336,6 +342,15 @@
           "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
           "content": {
             "priority": 6,
+            "speed_multiplier": 2
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
+          "content": {
+            "priority": 7,
             "speed_multiplier": 2
           }
         }
@@ -553,6 +568,15 @@
           "content": {
             "priority": 14,
             "speed_multiplier": 0.8
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
+          "content": {
+            "priority": 7,
+            "speed_multiplier": 1
           }
         }
       ],

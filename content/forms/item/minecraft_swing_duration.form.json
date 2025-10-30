@@ -16,37 +16,37 @@
           "/vanilla/behavior_pack/items/copper_spear.json": [
             {
               "path": "/minecraft:item/components/minecraft:swing_duration/",
-              "content": 0.75
+              "content": 0.85
             }
           ],
           "/vanilla/behavior_pack/items/diamond_spear.json": [
             {
               "path": "/minecraft:item/components/minecraft:swing_duration/",
-              "content": 0.9
+              "content": 1.05
             }
           ],
           "/vanilla/behavior_pack/items/golden_spear.json": [
             {
               "path": "/minecraft:item/components/minecraft:swing_duration/",
-              "content": 0.8
+              "content": 0.95
             }
           ],
           "/vanilla/behavior_pack/items/iron_spear.json": [
             {
               "path": "/minecraft:item/components/minecraft:swing_duration/",
-              "content": 0.8
+              "content": 0.95
             }
           ],
           "/vanilla/behavior_pack/items/netherite_spear.json": [
             {
               "path": "/minecraft:item/components/minecraft:swing_duration/",
-              "content": 1
+              "content": 1.15
             }
           ],
           "/vanilla/behavior_pack/items/stone_spear.json": [
             {
               "path": "/minecraft:item/components/minecraft:swing_duration/",
-              "content": 0.7
+              "content": 0.75
             }
           ],
           "/vanilla/behavior_pack/items/wooden_spear.json": [
@@ -63,7 +63,7 @@
         {
           "path": "/minecraft:item/components/minecraft:swing_duration/",
           "content": {
-            "value": 0.75
+            "value": 0.85
           }
         }
       ],
@@ -71,7 +71,7 @@
         {
           "path": "/minecraft:item/components/minecraft:swing_duration/",
           "content": {
-            "value": 0.9
+            "value": 1.05
           }
         }
       ],
@@ -79,7 +79,7 @@
         {
           "path": "/minecraft:item/components/minecraft:swing_duration/",
           "content": {
-            "value": 0.8
+            "value": 0.95
           }
         }
       ],
@@ -87,7 +87,7 @@
         {
           "path": "/minecraft:item/components/minecraft:swing_duration/",
           "content": {
-            "value": 0.8
+            "value": 0.95
           }
         }
       ],
@@ -95,7 +95,7 @@
         {
           "path": "/minecraft:item/components/minecraft:swing_duration/",
           "content": {
-            "value": 1
+            "value": 1.15
           }
         }
       ],
@@ -103,7 +103,7 @@
         {
           "path": "/minecraft:item/components/minecraft:swing_duration/",
           "content": {
-            "value": 0.7
+            "value": 0.75
           }
         }
       ],

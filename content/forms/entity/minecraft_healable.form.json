@@ -104,6 +104,19 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:healable/",
+          "content": {
+            "items": [
+              {
+                "item": "rabbit_foot",
+                "heal_amount": 2
+              }
+            ]
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/cat.json": [
         {
           "path": "/minecraft:entity/components/minecraft:healable/",

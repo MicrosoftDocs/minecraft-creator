@@ -12,6 +12,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:is_tamed/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/cat.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:cat_tame/minecraft:is_tamed/",

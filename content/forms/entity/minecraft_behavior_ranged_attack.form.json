@@ -18,6 +18,12 @@
               "content": 3.5
             }
           ],
+          "/vanilla/behavior_pack/entities/parched.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:behavior.ranged_attack/",
+              "content": 3.5
+            }
+          ],
           "/vanilla/behavior_pack/entities/snow_golem.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
@@ -171,6 +177,12 @@
               "content": 64
             }
           ],
+          "/vanilla/behavior_pack/entities/parched.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:behavior.ranged_attack/",
+              "content": 15
+            }
+          ],
           "/vanilla/behavior_pack/entities/piglin.json": [
             {
               "path": "/minecraft:entity/component_groups/ranged_unit/minecraft:behavior.ranged_attack/",
@@ -181,12 +193,6 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:behavior.ranged_attack/",
               "content": 8
-            }
-          ],
-          "/vanilla/behavior_pack/entities/shulker.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
-              "content": 15
             }
           ],
           "/vanilla/behavior_pack/entities/snow_golem.json": [
@@ -470,6 +476,12 @@
               "content": 2
             }
           ],
+          "/vanilla/behavior_pack/entities/parched.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:behavior.ranged_attack/",
+              "content": 1
+            }
+          ],
           "/vanilla/behavior_pack/entities/piglin.json": [
             {
               "path": "/minecraft:entity/component_groups/ranged_unit/minecraft:behavior.ranged_attack/",
@@ -480,12 +492,6 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:behavior.ranged_attack/",
               "content": 4
-            }
-          ],
-          "/vanilla/behavior_pack/entities/snow_golem.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
-              "content": 1
             }
           ]
         }
@@ -557,6 +563,16 @@
             "attack_radius": 64,
             "charge_shoot_trigger": 2,
             "charge_charged_trigger": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 1,
+            "attack_interval": 3.5,
+            "attack_radius": 15
           }
         }
       ],

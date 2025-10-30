@@ -175,14 +175,15 @@ Defines the families this entity belongs to.
 }
 ```
 
-#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
+#### [Camel Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel_husk.json)
 
 
 ```json
 "minecraft:type_family": {
   "family": [
-    "cat",
-    "mob"
+    "camel",
+    "mob",
+    "undead"
   ]
 }
 ```

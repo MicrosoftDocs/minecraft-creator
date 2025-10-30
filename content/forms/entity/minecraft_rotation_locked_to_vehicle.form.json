@@ -1,0 +1,36 @@
+{
+  "id": "minecraft:rotation_locked_to_vehicle",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:rotation_locked_to_vehicle",
+    "title": "Rotation Locked To Vehicle",
+    "description": "Causes the entity's rotation to match their vehicle's facing direction.",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:rotation_locked_to_vehicle/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:rotation_locked_to_vehicle/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:rotation_locked_to_vehicle/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:rotation_locked_to_vehicle/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

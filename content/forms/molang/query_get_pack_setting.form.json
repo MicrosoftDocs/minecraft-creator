@@ -1,0 +1,10 @@
+{
+  "id": "query.get_pack_setting",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.get_pack_setting",
+    "title": "Get Pack Setting",
+    "description": "Returns value of Pack Setting slider, parameter is name of slider. Available on the Client (Resource Packs) only.",
+    "fields": []
+  }
+}

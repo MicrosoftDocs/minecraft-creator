@@ -101,6 +101,17 @@ At /minecraft:entity/component_groups/minecraft:llama_angry/minecraft:behavior.r
 }
 ```
 
+#### [Parched](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parched.json)
+
+
+```json
+"minecraft:behavior.ranged_attack": {
+  "priority": 1,
+  "attack_interval": 3.5,
+  "attack_radius": 15
+}
+```
+
 #### [Piglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin.json)
 
 
@@ -172,20 +183,6 @@ At /minecraft:entity/component_groups/minecraft:llama_angry/minecraft:behavior.r
   "attack_interval_min": 2.4,
   "attack_interval_max": 3.8,
   "attack_radius": 19,
-  "ranged_fov": 360,
-  "y_max_head_rotation": 360,
-  "x_max_rotation": 360
-}
-```
-
-#### [Crossbow Turret](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/crossbow_turret.behavior.json)
-
-
-```json
-"minecraft:behavior.ranged_attack": {
-  "attack_interval_min": 0.4,
-  "attack_interval_max": 0.8,
-  "attack_radius": 15,
   "ranged_fov": 360,
   "y_max_head_rotation": 360,
   "x_max_rotation": 360

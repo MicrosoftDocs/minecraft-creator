@@ -64,6 +64,16 @@ Allows a mob to randomly stroll around.
 }
 ```
 
+#### [Camel Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel_husk.json)
+
+
+```json
+"minecraft:behavior.random_stroll": {
+  "priority": 7,
+  "speed_multiplier": 2
+}
+```
+
 #### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
 
 
@@ -131,15 +141,5 @@ Allows a mob to randomly stroll around.
 "minecraft:behavior.random_stroll": {
   "priority": 7,
   "speed_multiplier": 1
-}
-```
-
-#### [Evocation Illager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/evocation_illager.json)
-
-
-```json
-"minecraft:behavior.random_stroll": {
-  "priority": 8,
-  "speed_multiplier": 0.6
 }
 ```

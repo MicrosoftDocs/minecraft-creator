@@ -168,6 +168,7 @@ ms.date: 02/11/2025
 | [minecraft:renders_when_invisible](EntityComponents/minecraftComponent_renders_when_invisible.md)| When set, the entity will render even when invisible. |
 | [minecraft:rideable](EntityComponents/minecraftComponent_rideable.md)| This entity can be ridden |
 | [minecraft:rotation_axis_aligned](EntityComponents/minecraftComponent_rotation_axis_aligned.md)| Causes the entity to automatically rotate to align with the nearest cardinal direction based on its current facing direction.<br>Combining this with the "minecraft:body_rotation_blocked" component will cause the entity's body to align with the nearest cardinal direction and remain fixed in that orientation, regardless of changes in its facing direction. |
+| [minecraft:rotation_locked_to_vehicle](EntityComponents/minecraftComponent_rotation_locked_to_vehicle.md)| Causes the entity's rotation to match their vehicle's facing direction. |
 | [minecraft:scale](EntityComponents/minecraftComponent_scale.md)| Sets the entity's visual size. |
 | [minecraft:scale_by_age](EntityComponents/minecraftComponent_scale_by_age.md)| Defines the entity's size interpolation based on the entity's age. |
 | [minecraft:scheduler](EntityComponents/minecraftComponent_scheduler.md)| Fires off scheduled mob events at time of day events. |

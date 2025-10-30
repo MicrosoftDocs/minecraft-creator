@@ -234,7 +234,7 @@
       ],
       "/vanilla/behavior_pack/entities/nautilus.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:interact/interactions/1/on_interact/filters/all_of/0/",
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_adult/minecraft:interact/interactions/1/on_interact/filters/all_of/0/",
           "content": {
             "test": "rider_count",
             "subject": "self",
@@ -243,7 +243,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:interact/interactions/3/on_interact/filters/all_of/0/",
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_adult/minecraft:interact/interactions/3/on_interact/filters/all_of/0/",
           "content": {
             "test": "rider_count",
             "subject": "self",
@@ -263,6 +263,15 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_wild_mounted/minecraft:environment_sensor/triggers/filters/",
+          "content": {
+            "test": "rider_count",
+            "subject": "self",
+            "operator": "equals",
+            "value": 0
+          }
+        },
+        {
           "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:interact/interactions/1/on_interact/filters/all_of/0/",
           "content": {
             "test": "rider_count",
@@ -273,15 +282,6 @@
         },
         {
           "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:interact/interactions/3/on_interact/filters/all_of/0/",
-          "content": {
-            "test": "rider_count",
-            "subject": "self",
-            "operator": "equals",
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_with_drowned_rider/minecraft:environment_sensor/triggers/filters/",
           "content": {
             "test": "rider_count",
             "subject": "self",

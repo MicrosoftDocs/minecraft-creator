@@ -401,6 +401,19 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/parched.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 6,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 1,
+            "pickup_based_on_chance": true,
+            "can_pickup_any_item": true
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/piglin.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
