@@ -46,10 +46,12 @@ Type: *string*
 
 ## Methods
 - [constructor](#constructor)
+- [getExcludedBlockTagTargets](#getexcludedblocktagtargets)
 - [getExcludedBlockTargets](#getexcludedblocktargets)
 - [getExcludedEntityTargets](#getexcludedentitytargets)
 - [getItemSettings](#getitemsettings)
 - [getLiquidTargetingItems](#getliquidtargetingitems)
+- [setExcludedBlockTagTargets](#setexcludedblocktagtargets)
 - [setExcludedBlockTargets](#setexcludedblocktargets)
 - [setExcludedEntityTargets](#setexcludedentitytargets)
 - [setItemSettings](#setitemsettings)
@@ -66,6 +68,15 @@ Constructor that takes a unique Id to associate with the created AimAssistPreset
 - **identifier**: *string*
 
 **Returns** [*AimAssistPresetSettings*](AimAssistPresetSettings.md)
+
+### **getExcludedBlockTagTargets**
+`
+getExcludedBlockTagTargets(): string[] | undefined
+`
+
+Gets the list of block tags to exclude from aim assist targeting.
+
+**Returns** *string*[] | *undefined* - The array of block tags.
 
 ### **getExcludedBlockTargets**
 `
@@ -102,6 +113,23 @@ getLiquidTargetingItems(): string[] | undefined
 Gets the list of item Ids that will target liquid blocks with aim-assist when being held.
 
 **Returns** *string*[] | *undefined* - The array of item Ids.
+
+### **setExcludedBlockTagTargets**
+`
+setExcludedBlockTagTargets(targets?: string[]): void
+`
+
+Sets the list of block tags to exclude from aim assist targeting.
+
+#### **Parameters**
+- **targets**?: *string*[]
+  
+  An array of block tags.
+
+**Returns** *void*
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **setExcludedBlockTargets**
 `

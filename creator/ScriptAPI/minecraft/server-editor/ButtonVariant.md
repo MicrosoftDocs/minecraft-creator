@@ -4,10 +4,10 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server-editor.ButtonPropertyItemVariant Enumeration
-description: Contents of the @minecraft/server-editor.ButtonPropertyItemVariant enumeration.
+title: minecraft/server-editor.ButtonVariant Enumeration
+description: Contents of the @minecraft/server-editor.ButtonVariant enumeration.
 ---
-# ButtonPropertyItemVariant Enumeration
+# ButtonVariant Enumeration
 
 The possible variants of a Button property item.
 

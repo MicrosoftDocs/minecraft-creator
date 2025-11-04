@@ -30,6 +30,13 @@ If true label text will be hidden. It will be visible by default.
 
 Type: *boolean*
 
+### **maxVisibleEntries**
+`maxVisibleEntries?: number;`
+
+Determines how many entries can be displayed before scrolling is enabled, based on available space.
+
+Type: *number*
+
 ### **onChange**
 `onChange?: (arg0: number, arg1: number, arg2: IDropdownPropertyItemEntry[]) => void;`
 

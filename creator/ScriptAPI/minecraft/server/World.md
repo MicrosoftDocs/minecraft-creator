@@ -92,6 +92,18 @@ Returns the manager for [*@minecraft/server.Structure*](../../../scriptapi/minec
 
 Type: [*StructureManager*](StructureManager.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **tickingAreaManager**
+`read-only tickingAreaManager: TickingAreaManager;`
+
+Manager for adding, removing and querying pack specific ticking areas.
+
+Type: [*TickingAreaManager*](TickingAreaManager.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ## Methods
 ::: moniker range="=minecraft-bedrock-experimental"
 - [broadcastClientMessage](#broadcastclientmessage)

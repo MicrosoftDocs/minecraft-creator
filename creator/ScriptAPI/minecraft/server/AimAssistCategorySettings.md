@@ -47,8 +47,10 @@ Type: *string*
 ## Methods
 - [constructor](#constructor)
 - [getBlockPriorities](#getblockpriorities)
+- [getBlockTagPriorities](#getblocktagpriorities)
 - [getEntityPriorities](#getentitypriorities)
 - [setBlockPriorities](#setblockpriorities)
+- [setBlockTagPriorities](#setblocktagpriorities)
 - [setEntityPriorities](#setentitypriorities)
 
 ### **constructor**
@@ -72,6 +74,15 @@ Gets the priority settings used for block targeting.
 
 **Returns** Record<*string*, *number*> - The record mapping block Ids to their priority settings. Larger numbers have greater priority.
 
+### **getBlockTagPriorities**
+`
+getBlockTagPriorities(): Record<string, number>
+`
+
+Gets the priority settings used for block targeting.
+
+**Returns** Record<*string*, *number*> - The record mapping block tags to their priority settings. Larger numbers have greater priority.
+
 ### **getEntityPriorities**
 `
 getEntityPriorities(): Record<string, number>
@@ -92,6 +103,21 @@ Sets the priority settings used for block targeting.
 - **blockPriorities**: *Record<keyof typeof minecraftvanilladata.MinecraftBlockTypes | string, number>*
   
   A record mapping block Ids to their priority settings. Larger numbers have greater priority.
+
+**Returns** *void*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **setBlockTagPriorities**
+`
+setBlockTagPriorities(blockTagPriorities: Record<string, number>): void
+`
+
+Sets the priority settings used for block targeting.
+
+#### **Parameters**
+- **blockTagPriorities**: *Record<string, number>*
 
 **Returns** *void*
   

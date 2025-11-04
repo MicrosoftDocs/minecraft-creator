@@ -108,6 +108,7 @@ Entity sleeps
 Entity is an adult 
 - `minecraft:as_baby`
 Entity is a baby
+- `minecraft:as_baby_jockey`
 - `minecraft:as_ranged_adult`
 - `minecraft:as_rider`
 - `minecraft:ate_allium`
@@ -348,6 +349,8 @@ Hopper is deactivated
 Horse is wearing a saddle
 - `minecraft:horse_unsaddled`
 Horse is not wearing a saddle
+- `minecraft:hostile_dismounted`
+- `minecraft:hostile_mounted`
 - `minecraft:increase_max_health`
 - `minecraft:increment_swaying_ticks`
 - `minecraft:join_caravan`
@@ -427,6 +430,10 @@ Entity is saddled
 Entity is scared
 - `minecraft:on_sheared`
 Entity is sheared
+- `minecraft:on_start_riding_camel_husk`
+- `minecraft:on_start_riding_zombie_horse`
+- `minecraft:on_stop_riding_camel_husk`
+- `minecraft:on_stop_riding_zombie_horse`
 - `minecraft:on_stop_tempting`
 - `minecraft:on_take_flower`
 - `minecraft:on_tame`
@@ -542,6 +549,7 @@ Entity spawns as a skilled adult
 - `minecraft:spawn_tame_baby`
 - `minecraft:spawn_temperate`
 - `minecraft:spawn_warm`
+- `minecraft:spawn_wild`
 - `minecraft:spawn_wild_adult`
 - `minecraft:spawn_wild_ashen`
 - `minecraft:spawn_wild_baby`
@@ -664,6 +672,7 @@ Entity turns white
 Entity turns yellow
 - `minecraft:unroll`
 - `minecraft:upgrade_to_1_21_100`
+- `minecraft:upgrade_to_1_21_130`
 - `minecraft:warm_color`
 - `minecraft:wax_off`
 - `minecraft:wax_on`

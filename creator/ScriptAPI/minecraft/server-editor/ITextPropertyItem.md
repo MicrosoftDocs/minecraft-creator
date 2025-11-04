@@ -26,6 +26,7 @@ Type: *Readonly<LocalizedString>*
 ## Methods
 - [setAlignment](#setalignment)
 - [setTitle](#settitle)
+- [setTooltip](#settooltip)
 
 ### **setAlignment**
 `
@@ -48,5 +49,19 @@ Sets title of the property item.
 
 #### **Parameters**
 - **title**: *LocalizedString* | *undefined*
+
+**Returns** *void*
+
+### **setTooltip**
+`
+setTooltip(tooltip: BasicTooltipContent | undefined): void
+`
+
+Updates tooltip description of property item.
+
+#### **Parameters**
+- **tooltip**: *BasicTooltipContent* | *undefined*
+  
+  New tooltip.
 
 **Returns** *void*

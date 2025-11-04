@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.3.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.21.130-beta.24 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.21.130-beta.26 of Minecraft.
 
 ## Available Versions
 - `2.5.0-beta`
@@ -113,6 +113,7 @@ The following API versions are from a major version that is documented here: [*@
 - [StructureMirrorAxis](StructureMirrorAxis.md)
 - [StructureRotation](StructureRotation.md)
 - [StructureSaveMode](StructureSaveMode.md)
+- [TickingAreaErrorReason](TickingAreaErrorReason.md)
 - [TimeOfDay](TimeOfDay.md)
 - [TintMethod](TintMethod.md)
 - [WatchdogTerminateReason](WatchdogTerminateReason.md)
@@ -490,6 +491,7 @@ The following API versions are from a major version that is documented here: [*@
 - [SystemInfo](SystemInfo.md)
 - [TargetBlockHitAfterEvent](TargetBlockHitAfterEvent.md)
 - [TargetBlockHitAfterEventSignal](TargetBlockHitAfterEventSignal.md)
+- [TickingAreaManager](TickingAreaManager.md)
 - [Trigger](Trigger.md)
 - [TripWireTripAfterEvent](TripWireTripAfterEvent.md)
 - [TripWireTripAfterEventSignal](TripWireTripAfterEventSignal.md)
@@ -583,6 +585,8 @@ The following API versions are from a major version that is documented here: [*@
 - [StructureCreateOptions](StructureCreateOptions.md)
 - [StructurePlaceOptions](StructurePlaceOptions.md)
 - [TeleportOptions](TeleportOptions.md)
+- [TickingArea](TickingArea.md)
+- [TickingAreaOptions](TickingAreaOptions.md)
 - [TitleDisplayOptions](TitleDisplayOptions.md)
 - [Vector2](Vector2.md)
 - [Vector3](Vector3.md)
@@ -623,6 +627,7 @@ The following API versions are from a major version that is documented here: [*@
 - [NamespaceNameError](NamespaceNameError.md)
 - [PlaceJigsawError](PlaceJigsawError.md)
 - [RawMessageError](RawMessageError.md)
+- [TickingAreaError](TickingAreaError.md)
 - [UnloadedChunksError](UnloadedChunksError.md)
 
 ## Constants

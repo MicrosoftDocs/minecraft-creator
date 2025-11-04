@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.21.130-beta.24 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.21.130-beta.26 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -36,7 +36,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.130
 - [BlockTableOperationType](BlockTableOperationType.md)
 - [BoolPropertyItemVariant](BoolPropertyItemVariant.md)
 - [BrushDirectionalPlacementMode](BrushDirectionalPlacementMode.md)
-- [ButtonPropertyItemVariant](ButtonPropertyItemVariant.md)
+- [ButtonVariant](ButtonVariant.md)
 - [ColorPickerPropertyItemVariant](ColorPickerPropertyItemVariant.md)
 - [ComboBoxPropertyItemDataType](ComboBoxPropertyItemDataType.md)
 - [ContiguousSelectionType](ContiguousSelectionType.md)

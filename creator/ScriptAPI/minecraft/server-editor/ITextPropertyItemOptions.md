@@ -36,3 +36,10 @@ Type: *boolean*
 Localized title of the text item.
 
 Type: *LocalizedString*
+
+### **tooltip**
+`tooltip?: BasicTooltipContent;`
+
+Tooltip description of the property item.
+
+Type: *BasicTooltipContent*

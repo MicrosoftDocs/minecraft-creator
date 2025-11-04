@@ -17,7 +17,7 @@ List Pane Button entry creation parameter
     onClick: (entry: IListPaneButtonEntry) => void;
     title?: LocalizedString;
     tooltip?: BasicTooltipContent;
-    variant?: ButtonPropertyItemVariant;
+    variant?: ButtonVariant;
     icon?: string;
     enabled?: boolean;
     visible?: boolean;
