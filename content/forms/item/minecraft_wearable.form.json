@@ -10,13 +10,15 @@
         "id": "hides_player_location",
         "title": "Hides Player Location",
         "description": "Determines whether the Player's location is hidden on Locator Maps and the Locator Bar when the wearable item is worn. Default is false.",
-        "dataType": 1
+        "dataType": 1,
+        "defaultValue": false
       },
       {
         "id": "protection",
         "title": "Protection",
         "description": "How much protection the wearable item provides. Default is set to 0.",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       },
       {
         "id": "slot",

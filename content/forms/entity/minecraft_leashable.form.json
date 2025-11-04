@@ -649,7 +649,7 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_horse.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_tamed/minecraft:leashable/",
+          "path": "/minecraft:entity/component_groups/minecraft:horse_can_be_leashed/minecraft:leashable/",
           "content": {
             "on_unleash": {
               "event": "minecraft:on_unleashed",
@@ -674,7 +674,7 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_leashable/minecraft:leashable/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_leashable/minecraft:leashable/",
           "content": {
             "on_unleash": {
               "event": "minecraft:on_unleashed",

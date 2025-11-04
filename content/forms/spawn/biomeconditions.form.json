@@ -10,6 +10,16 @@
         "id": "biome_filter",
         "description": "Filter to limit spawns to specific biomes.",
         "dataType": 16,
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
         "subForm": {
           "id": "biome_filter",
           "title": "Biome Filter",
@@ -59,19 +69,22 @@
         "title": "Herds",
         "description": "Configurations for size and events when spawning groups of entities",
         "dataType": 16,
+        "defaultValue": [],
         "subFormId": "spawn/herd"
       },
       {
         "id": "mob_event_filter",
         "title": "Mob Event Filter",
         "description": "Filter to exclude entities if the event is disabled.",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": ""
       },
       {
         "id": "permute_types",
         "title": "Permute Types",
         "description": "List of randomly choosable permutations of the entity",
         "dataType": 16,
+        "defaultValue": [],
         "subFormId": "spawn/permutetype"
       },
       {

@@ -10,24 +10,28 @@
         "id": "avoid_block_sound",
         "title": "LevelSoundEvent",
         "description": "The sound event to play when the mob is avoiding a block.",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": "undefined"
       },
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17
+        "dataType": 17,
+        "defaultValue": []
       },
       {
         "id": "on_escape",
         "title": "Escape",
         "description": "Escape triggers.",
         "dataType": 16,
+        "defaultValue": [],
         "subFormId": "entity/actordefinitiontrigger"
       },
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       },
       {
         "id": "search_height",
@@ -66,6 +70,7 @@
         "title": "Target Blocks",
         "description": "List of block types this mob avoids.",
         "dataType": 2,
+        "defaultValue": [],
         "alternates": [
           {
             "id": "target_blocks",

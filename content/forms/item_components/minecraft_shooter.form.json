@@ -133,25 +133,29 @@
         "title": "Ammunition",
         "description": "Ammunition.",
         "dataType": 16,
+        "defaultValue": [],
         "subFormId": "item_components/ammunition"
       },
       {
         "id": "charge_on_draw",
         "title": "Charge On Draw",
         "description": "Charge on draw? Default is set to false.",
-        "dataType": 1
+        "dataType": 1,
+        "defaultValue": false
       },
       {
         "id": "max_draw_duration",
         "title": "Max Draw Duration",
         "description": "Draw Duration. Default is set to 0.",
-        "dataType": 3
+        "dataType": 3,
+        "defaultValue": 0
       },
       {
         "id": "scale_power_by_draw_duration",
         "title": "Scale Power By Draw Duration",
         "description": "Scale power by draw duration? Default is set to false.",
-        "dataType": 1
+        "dataType": 1,
+        "defaultValue": false
       }
     ]
   }

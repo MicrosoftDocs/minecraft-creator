@@ -31,6 +31,7 @@
                   "title": "States",
                   "description": "Contains members named after each state, with boolean, integer, or string values.",
                   "dataType": 31,
+                  "defaultValue": {},
                   "alternates": [
                     {
                       "id": "states",
@@ -73,6 +74,7 @@
                   "title": "States",
                   "description": "Contains members named after each state, with boolean, integer, or string values.",
                   "dataType": 31,
+                  "defaultValue": {},
                   "alternates": [
                     {
                       "id": "states",
@@ -116,6 +118,7 @@
                   "title": "States",
                   "description": "Contains members named after each state, with boolean, integer, or string values.",
                   "dataType": 31,
+                  "defaultValue": {},
                   "alternates": [
                     {
                       "id": "states",
@@ -158,6 +161,7 @@
                   "title": "States",
                   "description": "Contains members named after each state, with boolean, integer, or string values.",
                   "dataType": 31,
+                  "defaultValue": {},
                   "alternates": [
                     {
                       "id": "states",
@@ -200,6 +204,7 @@
                   "title": "States",
                   "description": "Contains members named after each state, with boolean, integer, or string values.",
                   "dataType": 31,
+                  "defaultValue": {},
                   "alternates": [
                     {
                       "id": "states",

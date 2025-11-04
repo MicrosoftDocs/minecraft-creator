@@ -11,6 +11,10 @@
         "title": "Minecraft Placement Direction",
         "description": "Adds the \"minecraft:cardinal_direction\" and/or \"minecraft:facing_direction\" states and setter function to the block.",
         "dataType": 16,
+        "defaultValue": {
+          "enabled_states": [],
+          "y_rotation_offset": null
+        },
         "subFormId": "block/placement_direction"
       },
       {
@@ -18,6 +22,9 @@
         "title": "Minecraft Placement Position",
         "description": "Adds the \"minecraft:block_face\" and/or \"minecraft:vertical_half\" states and setter function to the block.",
         "dataType": 16,
+        "defaultValue": {
+          "enabled_states": []
+        },
         "subFormId": "block/placement_position"
       }
     ]

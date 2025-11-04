@@ -9,37 +9,43 @@
         "id": "event",
         "title": "Event",
         "description": "An event to run after M number of the herd have spawned",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": ""
       },
       {
         "id": "event_skip_count",
         "title": "Event Skip Count",
         "description": "Number of the herd to skip before running the event",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       },
       {
         "id": "initial_event",
         "title": "Initial Event",
         "description": "Event run for the first N of the herd are placed.",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": ""
       },
       {
         "id": "initial_event_count",
         "title": "Initial Event Count",
         "description": "Number of times that the initial event will run",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       },
       {
         "id": "max_size",
         "title": "Max Size",
         "description": "Maximum number in this group to attempt to spawn",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 1
       },
       {
         "id": "min_size",
         "title": "Min Size",
         "description": "Minimum number in this group to attempt to spawn",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 1
       }
     ]
   }

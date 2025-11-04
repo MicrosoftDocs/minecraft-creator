@@ -44,7 +44,8 @@
       {
         "id": "min_speed_threshold",
         "title": "Min Speed Threshold",
-        "dataType": 3
+        "dataType": 3,
+        "defaultValue": 0
       },
       {
         "id": "mode",

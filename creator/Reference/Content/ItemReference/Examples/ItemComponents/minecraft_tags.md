@@ -16,7 +16,7 @@ Determines which tags are included on a given item.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| tags | *not set* | Array of strings | An array that can contain multiple item tags. | Apple: `["minecraft:is_food"]` | 
+| tags | [] | Array of strings | An array that can contain multiple item tags. | Apple: `["minecraft:is_food"]` | 
 
 ## Samples
 

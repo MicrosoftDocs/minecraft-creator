@@ -36,7 +36,8 @@
         "id": "spread_type",
         "title": "SpreadType",
         "description": "Randomness algorithm used when placing structures.",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": "linear"
       },
       {
         "id": "type",

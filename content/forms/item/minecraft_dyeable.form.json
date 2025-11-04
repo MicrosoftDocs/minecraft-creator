@@ -9,6 +9,11 @@
         "id": "default_color",
         "title": "Default Color",
         "dataType": 2,
+        "defaultValue": [
+          255,
+          255,
+          255
+        ],
         "alternates": [
           {
             "id": "default_color",

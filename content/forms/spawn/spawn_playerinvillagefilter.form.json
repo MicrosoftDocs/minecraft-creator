@@ -14,7 +14,8 @@
       {
         "id": "village_border_tolerance",
         "title": "Village Border Tolerance",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 10
       }
     ]
   }

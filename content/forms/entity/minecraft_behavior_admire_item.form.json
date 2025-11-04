@@ -37,8 +37,8 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.admire_item/",
               "content": {
-                "min": 2,
-                "max": 5
+                "range_min": 8,
+                "range_max": 8
               }
             }
           ]
@@ -100,8 +100,8 @@
             "priority": 2,
             "admire_item_sound": "admire",
             "sound_interval": {
-              "min": 2,
-              "max": 5
+              "range_min": 8,
+              "range_max": 8
             },
             "on_admire_item_start": {
               "event": "admire_item_started_event",

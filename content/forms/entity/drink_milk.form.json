@@ -9,7 +9,8 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17
+        "dataType": 17,
+        "defaultValue": []
       },
       {
         "id": "cooldown_seconds",
@@ -22,6 +23,16 @@
         "id": "filters",
         "description": "Conditions that need to be met for the behavior to start.",
         "dataType": 16,
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
         "subForm": {
           "id": "filters",
           "title": "Filters",
@@ -69,7 +80,8 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       }
     ]
   }

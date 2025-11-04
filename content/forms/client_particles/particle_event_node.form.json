@@ -8,6 +8,7 @@
         "id": "expression",
         "title": "Expression",
         "dataType": 24,
+        "defaultValue": 0,
         "alternates": [
           {
             "id": "expression",
@@ -41,12 +42,18 @@
       {
         "id": "log",
         "title": "Log",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": ""
       },
       {
         "id": "particle_effect",
         "title": "Particle Effect",
         "dataType": 16,
+        "defaultValue": {
+          "effect": "",
+          "pre_effect_expression": 0,
+          "type": null
+        },
         "subFormId": "client_particles/particle_visual_effect_event"
       },
       {

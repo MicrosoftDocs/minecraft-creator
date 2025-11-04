@@ -856,7 +856,7 @@
           ],
           "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_wild_mounted/minecraft:environment_sensor/",
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild_mounted/minecraft:environment_sensor/",
               "content": {
                 "filters": {
                   "test": "rider_count",
@@ -868,7 +868,7 @@
               }
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:environment_sensor/",
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_in_water/minecraft:environment_sensor/",
               "content": [
                 {
                   "filters": {
@@ -880,7 +880,7 @@
               ]
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_on_ground/minecraft:environment_sensor/",
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_on_ground/minecraft:environment_sensor/",
               "content": [
                 {
                   "filters": {
@@ -1845,7 +1845,7 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_wild_mounted/minecraft:environment_sensor/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild_mounted/minecraft:environment_sensor/",
           "content": {
             "triggers": {
               "filters": {
@@ -1859,7 +1859,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:environment_sensor/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_in_water/minecraft:environment_sensor/",
           "content": {
             "triggers": [
               {
@@ -1873,7 +1873,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_on_ground/minecraft:environment_sensor/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_on_ground/minecraft:environment_sensor/",
           "content": {
             "triggers": [
               {

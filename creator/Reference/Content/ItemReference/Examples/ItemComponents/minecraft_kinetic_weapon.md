@@ -43,5 +43,5 @@ Conditions that need to be satisfied for a specific effect of a kinetic weapon t
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| max | *not set* | Decimal number |  |  | 
-| min | *not set* | Decimal number |  |  | 
+| max | 0 | Decimal number |  |  | 
+| min | 0 | Decimal number |  |  | 

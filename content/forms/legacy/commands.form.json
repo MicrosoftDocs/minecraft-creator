@@ -14,7 +14,8 @@
       {
         "id": "permission_levels",
         "title": "Permission Levels",
-        "dataType": 24
+        "dataType": 24,
+        "defaultValue": {}
       }
     ]
   }

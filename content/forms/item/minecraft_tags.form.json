@@ -11,6 +11,7 @@
         "title": "Tags",
         "description": "An array that can contain multiple item tags.",
         "dataType": 17,
+        "defaultValue": [],
         "samples": {
           "/vanilla/behavior_pack/items/apple.json": [
             {

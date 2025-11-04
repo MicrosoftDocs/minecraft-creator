@@ -44,12 +44,14 @@
       {
         "id": "frames_per_second",
         "title": "Frames Per Second",
-        "dataType": 3
+        "dataType": 3,
+        "defaultValue": 0
       },
       {
         "id": "loop",
         "title": "Loop",
-        "dataType": 1
+        "dataType": 1,
+        "defaultValue": false
       },
       {
         "id": "max_frame",
@@ -90,6 +92,10 @@
         "id": "size_UV",
         "title": "Size UV",
         "dataType": 32,
+        "defaultValue": [
+          1,
+          1
+        ],
         "minLength": 2,
         "maxLength": 2
       },
@@ -97,13 +103,18 @@
         "id": "step_UV",
         "title": "Step UV",
         "dataType": 32,
+        "defaultValue": [
+          0,
+          0
+        ],
         "minLength": 2,
         "maxLength": 2
       },
       {
         "id": "stretch_to_lifetime",
         "title": "Stretch To Lifetime",
-        "dataType": 1
+        "dataType": 1,
+        "defaultValue": false
       }
     ]
   }

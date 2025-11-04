@@ -1,0 +1,25 @@
+{
+  "id": "Detailed Mining Speed",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Detailed Mining Speed",
+    "title": "Block Components Detailed Mining Speed",
+    "fields": [
+      {
+        "id": "item_specific_speeds",
+        "title": "Item Specific Speeds",
+        "description": "Optional array with item specific mining speeds.",
+        "dataType": 16,
+        "defaultValue": [],
+        "subFormId": "block_components/item_specific_speed"
+      },
+      {
+        "id": "seconds_to_destroy",
+        "title": "Seconds To Destroy",
+        "description": "Sets the number of seconds it takes to mine the block with base equipment. Greater numbers result in greater mining times. A negative number means the block can't be mined",
+        "dataType": 3,
+        "isRequired": true
+      }
+    ]
+  }
+}

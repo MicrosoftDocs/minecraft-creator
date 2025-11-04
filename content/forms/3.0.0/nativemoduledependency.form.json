@@ -14,7 +14,8 @@
       {
         "id": "optional",
         "title": "Optional",
-        "dataType": 1
+        "dataType": 1,
+        "defaultValue": false
       },
       {
         "id": "version",

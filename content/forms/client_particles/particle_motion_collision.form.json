@@ -7,12 +7,14 @@
       {
         "id": "coefficient_of_restitution",
         "title": "Coefficient Of Restitution",
-        "dataType": 3
+        "dataType": 3,
+        "defaultValue": 0
       },
       {
         "id": "collision_drag",
         "title": "Collision Drag",
-        "dataType": 3
+        "dataType": 3,
+        "defaultValue": 0
       },
       {
         "id": "collision_radius",
@@ -30,6 +32,7 @@
         "id": "enabled",
         "title": "Enabled",
         "dataType": 24,
+        "defaultValue": 1,
         "alternates": [
           {
             "id": "enabled",
@@ -81,7 +84,8 @@
                 {
                   "id": "min_speed",
                   "title": "Min Speed",
-                  "dataType": 3
+                  "dataType": 3,
+                  "defaultValue": 2
                 }
               ]
             }
@@ -91,7 +95,8 @@
       {
         "id": "expire_on_contact",
         "title": "Expire On Contact",
-        "dataType": 1
+        "dataType": 1,
+        "defaultValue": false
       }
     ]
   }

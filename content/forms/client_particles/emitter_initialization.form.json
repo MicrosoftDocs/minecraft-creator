@@ -8,6 +8,7 @@
         "id": "creation_expression",
         "title": "Creation Expression",
         "dataType": 24,
+        "defaultValue": 0,
         "alternates": [
           {
             "id": "creation_expression",
@@ -42,6 +43,7 @@
         "id": "per_update_expression",
         "title": "Per Update Expression",
         "dataType": 24,
+        "defaultValue": 0,
         "alternates": [
           {
             "id": "per_update_expression",

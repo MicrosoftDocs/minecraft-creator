@@ -181,7 +181,7 @@ Defines the families this entity belongs to.
 ```json
 "minecraft:type_family": {
   "family": [
-    "camel",
+    "camel_husk",
     "mob",
     "undead"
   ]

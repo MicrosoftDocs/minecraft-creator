@@ -106,7 +106,8 @@
         "id": "minimum_critical_power",
         "title": "Minimum Critical Power",
         "description": "Specifies how long a player must charge a projectile for it to critically hit.",
-        "dataType": 3
+        "dataType": 3,
+        "defaultValue": 0
       },
       {
         "id": "projectile_entity",

@@ -13,7 +13,8 @@
       {
         "id": "cull_against_full_and_opaque",
         "title": "Cull Against Full And Opaque",
-        "dataType": 1
+        "dataType": 1,
+        "defaultValue": true
       },
       {
         "id": "direction",

@@ -9,7 +9,8 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17
+        "dataType": 17,
+        "defaultValue": []
       },
       {
         "id": "max_distance",
@@ -28,12 +29,14 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       },
       {
         "id": "sound_event",
         "title": "LevelSoundEvent",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": "charge"
       },
       {
         "id": "speed_multiplier",

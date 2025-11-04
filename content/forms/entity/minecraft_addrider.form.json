@@ -347,6 +347,7 @@
         "title": "Riders",
         "description": "List of riders to be added to the entity. Can only spawn as many riders as \"minecraft:rideable\" has \"seat_count\".",
         "dataType": 16,
+        "defaultValue": [],
         "subFormId": "entity/rider_data",
         "samples": {
           "/vanilla/behavior_pack/entities/camel_husk.json": [

@@ -173,7 +173,7 @@ Adds a timer after which this entity will spawn another entity or item (similar 
     "num_to_spawn": 1,
     "single_use": true,
     "spawn_entity": "minecraft:zombie_nautilus",
-    "spawn_event": "minecraft:spawn_wild_adult"
+    "spawn_event": "minecraft:spawn_wild"
   }
 }
 ```

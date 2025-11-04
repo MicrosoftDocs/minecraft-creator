@@ -14,7 +14,8 @@
       {
         "id": "rarity",
         "title": "Rarity",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       }
     ]
   }

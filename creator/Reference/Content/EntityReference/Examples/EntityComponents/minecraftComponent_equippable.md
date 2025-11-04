@@ -131,7 +131,8 @@ List of slots and the item that can be equipped.
         "horsearmoriron",
         "horsearmorgold",
         "horsearmordiamond",
-        "minecraft:copper_horse_armor"
+        "minecraft:copper_horse_armor",
+        "minecraft:netherite_horse_armor"
       ]
     }
   ]

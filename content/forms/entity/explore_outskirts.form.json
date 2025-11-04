@@ -9,7 +9,8 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17
+        "dataType": 17,
+        "defaultValue": []
       },
       {
         "id": "dist_from_boundary",
@@ -32,17 +33,20 @@
                 {
                   "id": "x",
                   "title": "X",
-                  "dataType": 3
+                  "dataType": 3,
+                  "defaultValue": 0
                 },
                 {
                   "id": "y",
                   "title": "Y",
-                  "dataType": 3
+                  "dataType": 3,
+                  "defaultValue": 0
                 },
                 {
                   "id": "z",
                   "title": "Z",
-                  "dataType": 3
+                  "dataType": 3,
+                  "defaultValue": 0
                 }
               ]
             }
@@ -108,7 +112,8 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       },
       {
         "id": "speed_multiplier",

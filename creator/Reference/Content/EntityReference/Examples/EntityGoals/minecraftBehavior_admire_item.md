@@ -25,7 +25,7 @@ Enables the mob to admire items that have been configured as admirable.
 | on_admire_item_start | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  | Piglin: `{"event":"admire_item_started_event","target":"self"}` | 
 | on_admire_item_stop | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  | Piglin: `{"event":"admire_item_stopped_event","target":"self"}` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Piglin: `2` | 
-| sound_interval | 0 | Range of integers | The range of time in seconds to randomly wait before playing the sound again. | Piglin: `{"min":2,"max":5}` | 
+| sound_interval | 0 | Range of integers | The range of time in seconds to randomly wait before playing the sound again. | Piglin: `{"range_min":8,"range_max":8}` | 
 
 ## Samples
 
@@ -37,8 +37,8 @@ Enables the mob to admire items that have been configured as admirable.
   "priority": 2,
   "admire_item_sound": "admire",
   "sound_interval": {
-    "min": 2,
-    "max": 5
+    "range_min": 8,
+    "range_max": 8
   },
   "on_admire_item_start": {
     "event": "admire_item_started_event",

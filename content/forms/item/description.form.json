@@ -17,6 +17,11 @@
         "title": "Menu Category",
         "description": "menu_category contains the creative group name and category for this item.",
         "dataType": 16,
+        "defaultValue": {
+          "category": "none",
+          "group": null,
+          "is_hidden_in_commands": null
+        },
         "subFormId": "item/menu_category"
       }
     ]

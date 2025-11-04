@@ -32,6 +32,8 @@
   href: has_equipment.md
 - name: has_equipment_tag
   href: has_equipment_tag.md
+- name: has_item_with_component
+  href: has_item_with_component.md
 - name: has_mob_effect
   href: has_mob_effect.md
 - name: has_nametag
@@ -92,6 +94,8 @@
   href: is_climbing.md
 - name: is_color
   href: is_color.md
+- name: is_controlling_passenger_family
+  href: is_controlling_passenger_family.md
 - name: is_daytime
   href: is_daytime.md
 - name: is_difficulty

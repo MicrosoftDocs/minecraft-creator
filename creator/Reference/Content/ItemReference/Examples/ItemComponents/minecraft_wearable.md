@@ -19,8 +19,8 @@ Sets the wearable item component.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| hides_player_location | *not set* | Boolean true/false | Determines whether the Player's location is hidden on Locator Maps and the Locator Bar when the wearable item is worn. Default is false. |  | 
-| protection | *not set* | Integer number | How much protection the wearable item provides. Default is set to 0. |  | 
+| hides_player_location | false | Boolean true/false | Determines whether the Player's location is hidden on Locator Maps and the Locator Bar when the wearable item is worn. Default is false. |  | 
+| protection | 0 | Integer number | How much protection the wearable item provides. Default is set to 0. |  | 
 | slot | *not set* | String | Specifies where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1. | Chestplate: `"slot.armor.chest"`, Crown: `"slot.armor.head"`, My Boots: `"slot.armor.feet"` | 
 | dispensable | *not set* | Boolean true/false |  | Chestplate: `true` | 
 

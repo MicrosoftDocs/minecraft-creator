@@ -9,6 +9,16 @@
         "id": "minecraft:biome_filter",
         "description": "Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.",
         "dataType": 16,
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
         "subForm": {
           "id": "minecraft:biome_filter",
           "title": "Biome Filter",
@@ -97,7 +107,8 @@
       {
         "id": "minecraft:herd",
         "title": "Minecraft Herd",
-        "dataType": 16
+        "dataType": 16,
+        "defaultValue": []
       },
       {
         "id": "minecraft:is_experimental",
@@ -118,7 +129,8 @@
       {
         "id": "minecraft:permute_type",
         "title": "Minecraft Permute Type",
-        "dataType": 16
+        "dataType": 16,
+        "defaultValue": []
       },
       {
         "id": "minecraft:player_in_village_filter",
@@ -130,12 +142,19 @@
         "id": "minecraft:spawn_event",
         "title": "Minecraft Spawn Event",
         "dataType": 16,
+        "defaultValue": {
+          "event": ""
+        },
         "subFormId": "spawn/spawn_mobeventfilter"
       },
       {
         "id": "minecraft:spawns_above_block_filter",
         "title": "Minecraft Spawns Above Block Filter",
         "dataType": 16,
+        "defaultValue": {
+          "blocks": [],
+          "distance": 1
+        },
         "subFormId": "spawn/spawn_spawnaboveblockfilter"
       },
       {
@@ -146,12 +165,14 @@
       {
         "id": "minecraft:spawns_on_block_filter",
         "title": "Minecraft Spawns On Block Filter",
-        "dataType": 16
+        "dataType": 16,
+        "defaultValue": []
       },
       {
         "id": "minecraft:spawns_on_block_prevented_filter",
         "title": "Minecraft Spawns On Block Prevented Filter",
-        "dataType": 16
+        "dataType": 16,
+        "defaultValue": []
       },
       {
         "id": "minecraft:spawns_on_surface",

@@ -16,9 +16,9 @@ Used by record items to play music.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| comparator_signal | *not set* | Integer number | Specifies signal strength for comparator blocks to use, from 1 - 13. | My Sword Singing: `1` | 
-| duration | *not set* | Decimal number | Specifies duration of sound event in seconds, float value. | My Sword Singing: `5` | 
-| sound_event | *not set* | String | Sound event type: 13, cat, blocks, chirp, far, mall, mellohi, stal, strad, ward, 11, wait, pigstep, otherside, 5, relic. | My Sword Singing: `"pre_ram.screamer"` | 
+| comparator_signal | 1 | Integer number | Specifies signal strength for comparator blocks to use, from 1 - 13. | My Sword Singing: `1` | 
+| duration | 0 | Decimal number | Specifies duration of sound event in seconds, float value. | My Sword Singing: `5` | 
+| sound_event | undefined | String | Sound event type: 13, cat, blocks, chirp, far, mall, mellohi, stal, strad, ward, 11, wait, pigstep, otherside, 5, relic. | My Sword Singing: `"pre_ram.screamer"` | 
 
 ## Samples
 

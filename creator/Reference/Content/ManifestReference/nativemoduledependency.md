@@ -15,5 +15,5 @@ ms.date: 02/11/2025
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | module_name | *not set* | String |  |  | 
-| optional | *not set* | Boolean true/false |  |  | 
+| optional | false | Boolean true/false |  |  | 
 | version | *not set* | Object |  |  | 

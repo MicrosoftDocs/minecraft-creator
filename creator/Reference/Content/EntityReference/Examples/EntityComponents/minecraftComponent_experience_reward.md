@@ -16,16 +16,16 @@ ms.date: 02/11/2025
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| on_bred | 0 | Molang | A Molang expression defining the amount of experience rewarded when this entity is successfully bred. | Armadillo: `"Math.Random(1,7)"` | 
+| on_bred | {"expression":"","version":-1} | Molang | A Molang expression defining the amount of experience rewarded when this entity is successfully bred. | Armadillo: `"Math.Random(1,7)"` | 
 | on_bred (Alternate 1) | *not set* | Key/item pairs of [Bred](#bred) items |  |  | 
 | on_bred (Alternate 2) | *not set* | Decimal number |  |  | 
-| on_bred_array | *not set* | Keyed set of strings |  |  | 
+| on_bred_array | [] | Keyed set of strings |  |  | 
 | on_bred_array (Alternate 1) | *not set* | Key/item pairs of [Bred Array](#bred-array) items |  |  | 
 | on_bred_array (Alternate 2) | *not set* | Decimal number |  |  | 
-| on_death | 0 | Molang | A Molang expression defining the amount of experience rewarded when this entity dies. | Armadillo: `"query.last_hit_by_player ? Math.Random(1,3) : 0"`, Blaze: `"query.last_hit_by_player ? 10 : 0"`, Bogged: `"query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0"` | 
+| on_death | {"expression":"","version":-1} | Molang | A Molang expression defining the amount of experience rewarded when this entity dies. | Armadillo: `"query.last_hit_by_player ? Math.Random(1,3) : 0"`, Blaze: `"query.last_hit_by_player ? 10 : 0"`, Bogged: `"query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0"` | 
 | on_death (Alternate 1) | *not set* | Key/item pairs of [Death](#death) items |  |  | 
 | on_death (Alternate 2) | *not set* | Decimal number |  |  | 
-| on_death_array | *not set* | Keyed set of strings |  |  | 
+| on_death_array | [] | Keyed set of strings |  |  | 
 | on_death_array (Alternate 1) | *not set* | Key/item pairs of [Death Array](#death-array) items |  |  | 
 | on_death_array (Alternate 2) | *not set* | Decimal number |  |  | 
 

@@ -46,27 +46,32 @@
             {
               "id": "buildMeta",
               "title": "BuildMeta",
-              "dataType": 2
+              "dataType": 2,
+              "defaultValue": ""
             },
             {
               "id": "major",
               "title": "Major",
-              "dataType": 0
+              "dataType": 0,
+              "defaultValue": 0
             },
             {
               "id": "minor",
               "title": "Minor",
-              "dataType": 0
+              "dataType": 0,
+              "defaultValue": 0
             },
             {
               "id": "patch",
               "title": "Patch",
-              "dataType": 0
+              "dataType": 0,
+              "defaultValue": 0
             },
             {
               "id": "preRelease",
               "title": "PreRelease",
-              "dataType": 2
+              "dataType": 2,
+              "defaultValue": ""
             }
           ]
         },
@@ -115,27 +120,32 @@
             {
               "id": "buildMeta",
               "title": "BuildMeta",
-              "dataType": 2
+              "dataType": 2,
+              "defaultValue": ""
             },
             {
               "id": "major",
               "title": "Major",
-              "dataType": 0
+              "dataType": 0,
+              "defaultValue": 0
             },
             {
               "id": "minor",
               "title": "Minor",
-              "dataType": 0
+              "dataType": 0,
+              "defaultValue": 0
             },
             {
               "id": "patch",
               "title": "Patch",
-              "dataType": 0
+              "dataType": 0,
+              "defaultValue": 0
             },
             {
               "id": "preRelease",
               "title": "PreRelease",
-              "dataType": 2
+              "dataType": 2,
+              "defaultValue": ""
             }
           ]
         },

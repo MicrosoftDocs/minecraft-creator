@@ -1,0 +1,51 @@
+{
+  "id": "Redstone Producer",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Redstone Producer",
+    "title": "Block Redstone Producer",
+    "description": "The definitions for how a block can produce a redstone signal.",
+    "fields": [
+      {
+        "id": "connected_faces",
+        "title": "Connected Faces",
+        "description": "The list of faces that are considered connected to the circuit. If a face is not connected, it will not provide power to the block touching that face.\nBy default, all faces are connected.",
+        "dataType": 17,
+        "defaultValue": [
+          "down",
+          "up",
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "id": "power",
+        "title": "Power",
+        "description": "The strength of the redstone signal produced by this block. 0 means no signal and higher numbers mean stronger signal.",
+        "dataType": 0,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 15
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "strongly_powered_face",
+        "title": "Facing",
+        "description": "The block touching this face will become strongly powered with the signal level strength of \"power\".\nStrongly powered blocks will power adjacent blocks.\nBy default, the block will not strongly power any face.",
+        "dataType": 2
+      },
+      {
+        "id": "transform_relative",
+        "title": "Transform Relative",
+        "description": "If true, the \"strongly_powered_face\" and \"connected_faces\" properties will be rotated according to the \"minecraft:transformation\" component.",
+        "dataType": 1,
+        "defaultValue": true
+      }
+    ]
+  }
+}

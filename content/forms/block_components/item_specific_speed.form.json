@@ -1,0 +1,30 @@
+{
+  "id": "Item Specific Speed",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Item Specific Speed",
+    "title": "Block Components Item Specific Speed",
+    "fields": [
+      {
+        "id": "destroy_speed",
+        "title": "Destroy Speed",
+        "description": "Mining speed for that specific item. A negative number means the block can't be mined with that item.",
+        "dataType": 3,
+        "isRequired": true
+      },
+      {
+        "id": "item",
+        "title": "Item",
+        "description": "The item with a specific mining speed.",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "item",
+            "dataType": 24
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  }
+}

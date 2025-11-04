@@ -23,8 +23,8 @@ Sets the item as a planter item component for blocks. Items with this component 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | block | *not set* | Object | Defines the block that will be placed. | My Sword Singing: `"minecraft:dirt"` | 
-| replace_block_item | *not set* | Boolean true/false | If true, the item will be registered as the item for this block. This item will be returned by default when the block is broken/picked. Note: the identifier for this item must match the block's identifier for this field to be valid. |  | 
-| use_on (Use On) | *not set* | Array of [Use On](#use-on) items | List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed. | My Sword Singing: `["dirt","grass","anvil"]` | 
+| replace_block_item | false | Boolean true/false | If true, the item will be registered as the item for this block. This item will be returned by default when the block is broken/picked. Note: the identifier for this item must match the block's identifier for this field to be valid. |  | 
+| use_on (Use On) | [] | Array of [Use On](#use-on) items | List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed. | My Sword Singing: `["dirt","grass","anvil"]` | 
 | use_on (Alternate 1) | *not set* | String |  |  | 
 | use_on (Alternate 2) | *not set* | Object |  |  | 
 
@@ -34,11 +34,11 @@ Sets the item as a planter item component for blocks. Items with this component 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | String |  |  | 
-| states | *not set* | Integer number |  |  | 
+| name |  | String |  |  | 
+| states | {} | Integer number |  |  | 
 | states (Alternate 1) | *not set* | String |  |  | 
 | states (Alternate 2) | *not set* | Boolean true/false |  |  | 
-| tags | *not set* | String |  |  | 
+| tags |  | String |  |  | 
 
 ## Samples
 

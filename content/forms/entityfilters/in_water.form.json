@@ -325,14 +325,14 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:environment_sensor/triggers/0/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_in_water/minecraft:environment_sensor/triggers/0/filters/",
           "content": {
             "test": "in_water",
             "value": false
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_on_ground/minecraft:environment_sensor/triggers/0/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_on_ground/minecraft:environment_sensor/triggers/0/filters/",
           "content": {
             "test": "in_water"
           }

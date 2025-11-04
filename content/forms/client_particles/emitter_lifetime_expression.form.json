@@ -8,6 +8,7 @@
         "id": "activation_expression",
         "title": "Activation Expression",
         "dataType": 24,
+        "defaultValue": 1,
         "alternates": [
           {
             "id": "activation_expression",
@@ -42,6 +43,7 @@
         "id": "expiration_expression",
         "title": "Expiration Expression",
         "dataType": 24,
+        "defaultValue": 0,
         "alternates": [
           {
             "id": "expiration_expression",

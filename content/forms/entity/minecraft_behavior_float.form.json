@@ -18,7 +18,7 @@
               "content": 1
             }
           ],
-          "/vanilla/behavior_pack/entities/donkey.json": [
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.float/",
               "content": 1
@@ -31,15 +31,7 @@
         "title": "Sink With Passengers",
         "description": "If true, the mob will keep sinking as long as it has passengers.",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/camel_husk.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.float/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "time_under_water_to_dismount_passengers",
@@ -54,7 +46,7 @@
               "content": 2
             }
           ],
-          "/vanilla/behavior_pack/entities/donkey.json": [
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.float/",
               "content": 2
@@ -166,7 +158,8 @@
           "path": "/minecraft:entity/components/minecraft:behavior.float/",
           "content": {
             "priority": 0,
-            "sink_with_passengers": true
+            "chance_per_tick_to_float": 1,
+            "time_under_water_to_dismount_passengers": 2
           }
         }
       ],

@@ -16,8 +16,9 @@ Allows an entity to attack the closest target within a given subset of specific 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| attack_interval | *not set* | Decimal number |  | Cave Spider: `5`, `10`, Llama: `16` | 
+| attack_interval | *not set* | Range of integers | Time range (in seconds) between searching for an attack target, range is in (0, "attack_interval"]. Only used if "attack_interval" is greater than 0, otherwise "scan_interval" is used. | Cave Spider: `5`, `10`, Llama: `16` | 
 | attack_interval_min | *not set* | Decimal number |  | Elder Guardian: `1` | 
+| attack_interval|attack_interval_min | *not set* | String |  |  | 
 | attack_owner | false | Boolean true/false | If true, this entity can attack its owner. |  | 
 | entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entity types that this mob considers valid targets | Axolotl: `[{"filters":{"all_of":[{"test":"in_water","subject":"other","value":true},{"test":"has_component","subject":"self","operator":"!=","value":"minecraft:attack_cooldown"},{"any_of":[{"test":"is_family","subject":"other","value":"squid"},{"test":"is_family","subject":"other","value":"fish"},{"test":"is_family","subject":"other","value":"tadpole"}]}]},"max_dist":8},{"filters":{"all_of":[{"test":"in_water","subject":"other","value":true},{"any_of":[{"test":"is_family","subject":"other","value":"drowned"},{"test":"is_family","subject":"other","value":"guardian"},{"test":"is_family","subject":"other","value":"guardian_elder"}]}]},"max_dist":8}]`, Bee: `[{"filters":{"test":"is_family","subject":"other","value":"player"},"max_dist":10}]`, Blaze: `[{"filters":{"test":"is_family","subject":"other","value":"player"},"max_dist":48}]` | 
 | must_reach | false | Boolean true/false | If true, this entity requires a path to the target. | Iron Golem: `true` | 
@@ -28,6 +29,7 @@ Allows an entity to attack the closest target within a given subset of specific 
 | reselect_targets | false | Boolean true/false | Allows the attacking entity to update the nearest target, otherwise a target is only reselected after each "scan_interval" or "attack_interval". | Axolotl: `true` | 
 | scan_interval | 10 | Integer number | If "attack_interval" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to "scan_interval", minimum value is 1. Values under 10 can affect performance. | Breeze: `10`, Phantom: `20` | 
 | set_persistent | false | Boolean true/false | Allows the actor to be set to persist upon targeting a player |  | 
+| target_acquisition_probability | 1 | Decimal number | Probability (0.0 to 1.0) that this entity will accept a found target. Checked each time a valid target is found during scanning. | Nautilus: `0.5` | 
 | target_invisible_multiplier | 0.7 | Decimal number | Multiplied with the target's armor coverage percentage to modify "max_dist" when detecting an invisible target. |  | 
 | target_search_height | -1 | Decimal number | Maximum vertical target-search distance, if it's greater than the target type's "max_dist". A negative value defaults to "entity_types" greatest "max_dist". | Phantom: `80` | 
 | target_sneak_visibility_multiplier | 0.8 | Decimal number | Multiplied with the target type's "max_dist" when trying to detect a sneaking target. |  | 

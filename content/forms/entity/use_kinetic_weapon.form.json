@@ -30,7 +30,8 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17
+        "dataType": 17,
+        "defaultValue": []
       },
       {
         "id": "cooldown_distance",
@@ -56,6 +57,13 @@
         "description": "Cooldown time, in seconds, between consecutive attacks.",
         "dataType": 3,
         "defaultValue": 1
+      },
+      {
+        "id": "hijack_mount_navigation",
+        "title": "Hijack Mount Navigation",
+        "description": "Allows the mob to override its mount's navigation behavior with the logic defined by this goal. Requires the mount to be running the \"minecraft:behavior.mount_pathing\" goal, which default behavior will be ignored.",
+        "dataType": 1,
+        "defaultValue": false
       },
       {
         "id": "inner_boundary_time_increase",
@@ -116,7 +124,8 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       },
       {
         "id": "random_stop_interval",

@@ -16,8 +16,8 @@ Allows a creator to determine how quickly an item can dig specific blocks.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| destroy_speeds | *not set* | [Destroy Speeds](#item-components-blockinfo) item | A list of blocks to dig with correlating speeds of digging. |  | 
-| use_efficiency | *not set* | Boolean true/false | Determines whether this item should be impacted if the efficiency enchantment is applied to it. |  | 
+| destroy_speeds | [] | [Destroy Speeds](#item-components-blockinfo) item | A list of blocks to dig with correlating speeds of digging. |  | 
+| use_efficiency | false | Boolean true/false | Determines whether this item should be impacted if the efficiency enchantment is applied to it. |  | 
 
 ## Item Components BlockInfo
 
@@ -36,11 +36,11 @@ Allows a creator to determine how quickly an item can dig specific blocks.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | String |  |  | 
-| states | *not set* | Integer number |  |  | 
+| name |  | String |  |  | 
+| states | {} | Integer number |  |  | 
 | states (Alternate 1) | *not set* | String |  |  | 
 | states (Alternate 2) | *not set* | Boolean true/false |  |  | 
-| tags | *not set* | String |  |  | 
+| tags |  | String |  |  | 
 
 ## Samples
 

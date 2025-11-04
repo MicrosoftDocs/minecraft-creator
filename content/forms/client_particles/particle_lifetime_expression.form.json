@@ -8,6 +8,7 @@
         "id": "expiration_expression",
         "title": "Expiration Expression",
         "dataType": 24,
+        "defaultValue": 0,
         "alternates": [
           {
             "id": "expiration_expression",

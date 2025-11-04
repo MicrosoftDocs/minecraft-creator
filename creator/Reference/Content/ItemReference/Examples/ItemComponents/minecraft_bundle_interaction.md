@@ -25,7 +25,7 @@ Enables the bundle-specific interaction scheme and tooltip for an item.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| num_viewable_slots | *not set* | Integer number | The maximum number of slots in the bundle viewable by the plater. Can be from 1 to 64. Default is 12. Value must be >= 1. Value must be <= 64. | Black Bundle: `12` | 
+| num_viewable_slots | 12 | Integer number | The maximum number of slots in the bundle viewable by the plater. Can be from 1 to 64. Default is 12. Value must be >= 1. Value must be <= 64. | Black Bundle: `12` | 
 
 ## Samples
 

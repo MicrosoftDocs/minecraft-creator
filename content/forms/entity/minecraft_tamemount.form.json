@@ -205,6 +205,9 @@
                 "item": "minecraft:copper_horse_armor"
               },
               {
+                "item": "minecraft:netherite_horse_armor"
+              },
+              {
                 "item": "saddle"
               }
             ],
@@ -268,6 +271,9 @@
               },
               {
                 "item": "minecraft:copper_horse_armor"
+              },
+              {
+                "item": "minecraft:netherite_horse_armor"
               },
               {
                 "item": "saddle"
@@ -360,6 +366,9 @@
                 "item": "minecraft:copper_horse_armor"
               },
               {
+                "item": "minecraft:netherite_horse_armor"
+              },
+              {
                 "item": "saddle"
               }
             ],
@@ -405,6 +414,9 @@
                 "item": "minecraft:copper_horse_armor"
               },
               {
+                "item": "minecraft:netherite_horse_armor"
+              },
+              {
                 "item": "saddle"
               }
             ],
@@ -444,6 +456,9 @@
               },
               {
                 "item": "minecraft:copper_horse_armor"
+              },
+              {
+                "item": "minecraft:netherite_horse_armor"
               },
               {
                 "item": "saddle"

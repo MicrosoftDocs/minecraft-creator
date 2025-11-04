@@ -234,7 +234,7 @@
       ],
       "/vanilla/behavior_pack/entities/nautilus.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_adult/minecraft:interact/interactions/1/on_interact/filters/all_of/0/",
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_adult/minecraft:interact/interactions/2/on_interact/filters/all_of/0/",
           "content": {
             "test": "rider_count",
             "subject": "self",
@@ -261,9 +261,33 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:horse_tamed/minecraft:interact/interactions/1/on_interact/filters/all_of/0/",
+          "content": {
+            "test": "rider_count",
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:horse_tamed/minecraft:interact/interactions/3/on_interact/filters/all_of/0/",
+          "content": {
+            "test": "rider_count",
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:horse_wild_with_rider/minecraft:environment_sensor/triggers/0/filters/",
+          "content": {
+            "test": "rider_count",
+            "subject": "self",
+            "value": 0
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_wild_mounted/minecraft:environment_sensor/triggers/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild_mounted/minecraft:environment_sensor/triggers/filters/",
           "content": {
             "test": "rider_count",
             "subject": "self",
@@ -272,7 +296,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:interact/interactions/1/on_interact/filters/all_of/0/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame/minecraft:interact/interactions/1/on_interact/filters/all_of/0/",
           "content": {
             "test": "rider_count",
             "subject": "self",
@@ -281,7 +305,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:interact/interactions/3/on_interact/filters/all_of/0/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame/minecraft:interact/interactions/3/on_interact/filters/all_of/0/",
           "content": {
             "test": "rider_count",
             "subject": "self",

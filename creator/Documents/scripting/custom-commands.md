@@ -1,10 +1,10 @@
 ---
 ms.author: mikeam
 author: mammerla
-title: Scripting Custom Commands (Preview)
-description: "Describes how you can take advantage of new custom command in scripting support, available in Preview"
+title: Scripting Custom Commands
+description: "Describes how you can take advantage of custom command in scripting support"
 ms.service: minecraft-bedrock-edition
-ms.date: 03/26/2025
+ms.date: 11/04/2025
 ---
 # Scripting Custom Commands Overview
 
@@ -16,22 +16,9 @@ There is also a video version available of this overview of Scripting Custom Com
 
 Commands are a critical part of nearly any Minecraft creator project. You can use them for bootstrapping and testing your projects, adding commands that reset environments or change configurations. For multiplayer servers, commands can be used to administer games. You can also use commands to provide helpful little builder functions, to further build out your world.
 
-Starting in Minecraft Bedrock Edition 1.21.80.22 Preview, you can now implement custom commands in script! These commands have the full capability of scripting APIs and custom logic, allowing you to implement sophisticated operations.
+With scripting in Minecraft, you can implement your own custom commands. These commands have the full capability of scripting APIs and custom logic, allowing you to implement sophisticated operations.
 
 You can view a sample project at [https://github.com/microsoft/minecraft-scripting-samples](https://github.com/microsoft/minecraft-scripting-samples/tree/main/custom-commands).
-
-### Using the 2.0.0-beta scripting environment
-
-To get started, we'll want to work with the 2.0.0-beta scripting environment. Custom commands and registration only run in [the v2.0.0 scripting environment](./v2-overview.md), which itself is currently in beta.
-
-You'll want to make sure you use `2.0.0-beta` as your scripting environment, in the manifest of your behavior pack:
-
-```json
-{
-  "module_name": "@minecraft/server",
-  "version": "2.0.0-beta"
-},
-```
 
 ### Registering commands
 
@@ -73,7 +60,7 @@ Commands can require executing contexts and players to have specific permissions
 
 #### Command enums
 
-As of the 1.21.80-preview.27 release you can  register custom enums for script-based commands, like so:
+You can register custom enums for script-based commands, like so:
 
 ```typescript
 system.beforeEvents.startup.subscribe((init: StartupEvent) => {

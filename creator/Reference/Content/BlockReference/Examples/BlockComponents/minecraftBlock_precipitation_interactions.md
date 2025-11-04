@@ -9,7 +9,8 @@ ms.date: 02/11/2025
 
 # Block Components Documentation - minecraft:precipitation_interactions
 
-Component that determines how the block will interact with rain and snow.
+Component that determines how the block will interact with rain and snow
+Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.120).
 
 
 ## Precipitation Interactions Properties

@@ -7,17 +7,20 @@
       {
         "id": "position",
         "title": "Position",
-        "dataType": 1
+        "dataType": 1,
+        "defaultValue": false
       },
       {
         "id": "rotation",
         "title": "Rotation",
-        "dataType": 1
+        "dataType": 1,
+        "defaultValue": false
       },
       {
         "id": "velocity",
         "title": "Velocity",
-        "dataType": 1
+        "dataType": 1,
+        "defaultValue": false
       }
     ]
   }

@@ -24,7 +24,8 @@
         "id": "fallback",
         "title": "Fallback",
         "description": "Fallback template pool to use if no element in the pool can be placed successfully.",
-        "dataType": 16
+        "dataType": 16,
+        "defaultValue": "minecraft:empty"
       }
     ]
   }

@@ -16,7 +16,7 @@ ms.date: 02/11/2025
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| protection_slot | *not set* | String |  | Zombie Horse: `"slot.armor.body"` | 
+| protection_slot | slot.armor.head | String |  | Zombie Horse: `"slot.armor.body"` | 
 
 ## Samples
 

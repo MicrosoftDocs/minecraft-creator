@@ -113,6 +113,9 @@ The list of items that can be used to increase the entity's temper and speed up 
       "item": "minecraft:copper_horse_armor"
     },
     {
+      "item": "minecraft:netherite_horse_armor"
+    },
+    {
       "item": "saddle"
     }
   ],
@@ -185,6 +188,9 @@ The list of items that can be used to increase the entity's temper and speed up 
       "item": "minecraft:copper_horse_armor"
     },
     {
+      "item": "minecraft:netherite_horse_armor"
+    },
+    {
       "item": "saddle"
     }
   ],
@@ -225,6 +231,9 @@ The list of items that can be used to increase the entity's temper and speed up 
     },
     {
       "item": "minecraft:copper_horse_armor"
+    },
+    {
+      "item": "minecraft:netherite_horse_armor"
     },
     {
       "item": "saddle"

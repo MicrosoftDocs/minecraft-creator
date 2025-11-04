@@ -1110,6 +1110,10 @@
         "title": "Bred",
         "description": "A Molang expression defining the amount of experience rewarded when this entity is successfully bred.",
         "dataType": 24,
+        "defaultValue": {
+          "expression": "",
+          "version": -1
+        },
         "alternates": [
           {
             "id": "on_bred",
@@ -1158,6 +1162,7 @@
         "id": "on_bred_array",
         "title": "Bred Array",
         "dataType": 24,
+        "defaultValue": [],
         "alternates": [
           {
             "id": "on_bred_array",
@@ -1193,6 +1198,10 @@
         "title": "Death",
         "description": "A Molang expression defining the amount of experience rewarded when this entity dies.",
         "dataType": 24,
+        "defaultValue": {
+          "expression": "",
+          "version": -1
+        },
         "alternates": [
           {
             "id": "on_death",
@@ -1383,6 +1392,7 @@
         "id": "on_death_array",
         "title": "Death Array",
         "dataType": 24,
+        "defaultValue": [],
         "alternates": [
           {
             "id": "on_death_array",

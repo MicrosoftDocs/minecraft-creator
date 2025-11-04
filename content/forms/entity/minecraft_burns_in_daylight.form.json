@@ -106,6 +106,7 @@
         "id": "protection_slot",
         "title": "EquipmentSlot",
         "dataType": 2,
+        "defaultValue": "slot.armor.head",
         "samples": {
           "/vanilla/behavior_pack/entities/zombie_horse.json": [
             {

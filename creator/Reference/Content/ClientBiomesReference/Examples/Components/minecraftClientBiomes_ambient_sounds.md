@@ -16,6 +16,6 @@ Sets the ambient sounds for the biome. These sounds must be in the 'individual_n
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| addition | *not set* | Object | Named sound that occasionally plays at the listener position |  | 
-| loop | *not set* | Object | Named sound that loops while the listener position is inside the biome |  | 
-| mood | *not set* | Object | Named sound that rarely plays at a nearby air block position when the light level is low. Biomes without an ambient mood sound will use the 'ambient.cave' sound. |  | 
+| addition |  | Object | Named sound that occasionally plays at the listener position |  | 
+| loop |  | Object | Named sound that loops while the listener position is inside the biome |  | 
+| mood |  | Object | Named sound that rarely plays at a nearby air block position when the light level is low. Biomes without an ambient mood sound will use the 'ambient.cave' sound. |  | 

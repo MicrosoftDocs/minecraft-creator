@@ -9,13 +9,15 @@
         "id": "entity_type",
         "title": "Entity Type",
         "description": "Specifies the entity type to spawn when selected",
-        "dataType": 16
+        "dataType": 16,
+        "defaultValue": ""
       },
       {
         "id": "min_guaranteed",
         "title": "Min Guaranteed",
         "description": "The minimum number of this permutation's entity to spawn",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       },
       {
         "id": "weight",

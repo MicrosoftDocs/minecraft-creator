@@ -9,27 +9,32 @@
       {
         "id": "axis",
         "title": "PositionalBlockRuleAxis",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": "y"
       },
       {
         "id": "max_chance",
         "title": "Max Chance",
-        "dataType": 3
+        "dataType": 3,
+        "defaultValue": 0
       },
       {
         "id": "max_dist",
         "title": "Max Dist",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       },
       {
         "id": "min_chance",
         "title": "Min Chance",
-        "dataType": 3
+        "dataType": 3,
+        "defaultValue": 0
       },
       {
         "id": "min_dist",
         "title": "Min Dist",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       },
       {
         "id": "predicate_type",

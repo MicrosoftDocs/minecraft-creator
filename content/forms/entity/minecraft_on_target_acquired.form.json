@@ -401,7 +401,7 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_wild_calm/minecraft:on_target_acquired/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild_calm/minecraft:on_target_acquired/",
           "content": {
             "event": "minecraft:become_angry",
             "target": "self"

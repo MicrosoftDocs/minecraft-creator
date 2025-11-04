@@ -10,6 +10,7 @@
         "id": "dispense_on",
         "description": "List of block descriptors of the blocks that this item can be dispensed on. If left empty, all blocks will be allowed.",
         "dataType": 15,
+        "defaultValue": [],
         "subForm": {
           "id": "dispense_on",
           "title": "Dispense On",
@@ -17,12 +18,14 @@
             {
               "id": "name",
               "title": "Name",
-              "dataType": 2
+              "dataType": 2,
+              "defaultValue": ""
             },
             {
               "id": "states",
               "title": "States",
               "dataType": 0,
+              "defaultValue": {},
               "alternates": [
                 {
                   "id": "states",
@@ -37,7 +40,8 @@
             {
               "id": "tags",
               "title": "Tags",
-              "dataType": 2
+              "dataType": 2,
+              "defaultValue": ""
             }
           ]
         },
@@ -57,6 +61,7 @@
         "title": "Entity",
         "description": "The entity to be placed in the world.",
         "dataType": 16,
+        "defaultValue": "",
         "validity": [
           {
             "comparison": "pattern",
@@ -112,6 +117,7 @@
         "id": "use_on",
         "description": "List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed.",
         "dataType": 15,
+        "defaultValue": [],
         "subForm": {
           "id": "use_on",
           "title": "Use On",
@@ -119,12 +125,14 @@
             {
               "id": "name",
               "title": "Name",
-              "dataType": 2
+              "dataType": 2,
+              "defaultValue": ""
             },
             {
               "id": "states",
               "title": "States",
               "dataType": 0,
+              "defaultValue": {},
               "alternates": [
                 {
                   "id": "states",
@@ -139,7 +147,8 @@
             {
               "id": "tags",
               "title": "Tags",
-              "dataType": 2
+              "dataType": 2,
+              "defaultValue": ""
             }
           ]
         },

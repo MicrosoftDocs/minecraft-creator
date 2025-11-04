@@ -16,7 +16,7 @@ Entities with this component will have an immunity to the provided mob effects.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| mob_effects | *not set* | Array of strings | List of names of effects the entity is immune to. | Nautilus: `["poison"]`, Silverfish: `["infested"]`, Slime: `["oozing"]` | 
+| mob_effects | *not set* | Array of strings | List of names of effects the entity is immune to. | Nautilus: `["poison"]`, Parched: `["weakness"]`, Silverfish: `["infested"]` | 
 
 ## Samples
 
@@ -27,6 +27,17 @@ Entities with this component will have an immunity to the provided mob effects.
 "minecraft:mob_effect_immunity": {
   "mob_effects": [
     "poison"
+  ]
+}
+```
+
+#### [Parched](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parched.json)
+
+
+```json
+"minecraft:mob_effect_immunity": {
+  "mob_effects": [
+    "weakness"
   ]
 }
 ```

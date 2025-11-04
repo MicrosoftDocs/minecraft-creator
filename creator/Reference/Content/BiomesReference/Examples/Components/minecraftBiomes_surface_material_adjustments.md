@@ -59,7 +59,7 @@ The specific blocks used for this surface adjustment.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
@@ -70,7 +70,7 @@ The specific blocks used for this surface adjustment.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
@@ -81,7 +81,7 @@ The specific blocks used for this surface adjustment.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
@@ -92,7 +92,7 @@ The specific blocks used for this surface adjustment.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
@@ -103,6 +103,6 @@ The specific blocks used for this surface adjustment.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 

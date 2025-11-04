@@ -9,6 +9,16 @@
         "id": "biome_filters",
         "description": "Biomes in which the Jigsaw Structure can generate.",
         "dataType": 16,
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
         "subForm": {
           "id": "biome_filters",
           "title": "Biome Filters",
@@ -71,13 +81,15 @@
         "id": "heightmap_projection",
         "title": "HeightmapProjection",
         "description": "Heightmap used to calculate the relative start height. For example, a heightmap_projection of ocean_floor and a start_height of 10 means the Jigsaw Structure will begin generating 10 blocks above the ocean floor. Defaults to 'none'",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": "none"
       },
       {
         "id": "liquid_settings",
         "title": "LiquidSettings",
         "description": "How to handle waterloggable blocks overlapping with existing liquid.",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": "apply_waterlogging"
       },
       {
         "id": "max_depth",
@@ -97,6 +109,10 @@
         "title": "Max Distance From Center",
         "description": "The max distances on the horizontal plane and optionally the vertical axis from the jigsaw pieces to the structure start.",
         "dataType": 0,
+        "defaultValue": {
+          "horizontal": 80,
+          "vertical": 2147483647
+        },
         "alternates": [
           {
             "id": "max_distance_from_center",
@@ -128,6 +144,7 @@
                   "title": "Vertical",
                   "description": "The max distance on the vertical axis (Y). Defaults to no limit.",
                   "dataType": 0,
+                  "defaultValue": 2147483647,
                   "validity": [
                     {
                       "comparison": ">=",
@@ -148,7 +165,8 @@
         "id": "pool_aliases",
         "title": "Pool Aliases",
         "description": "Pool Aliases are used to determine which template pool can be a substitute.",
-        "dataType": 17
+        "dataType": 17,
+        "defaultValue": []
       },
       {
         "id": "start_height",
@@ -161,7 +179,8 @@
         "id": "start_jigsaw_name",
         "title": "Start Jigsaw Name",
         "description": "The start jigsaw name is the name of the jigsaw block from the start pool to be placed first.",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": ""
       },
       {
         "id": "start_pool",
@@ -181,7 +200,8 @@
         "id": "terrain_adaptation",
         "title": "TerrainAdaptation",
         "description": "How the terrain should adapt relative to the generated Jigsaw Structure.",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": "none"
       }
     ]
   }

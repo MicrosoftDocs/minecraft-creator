@@ -138,7 +138,7 @@
               "content": [
                 "player",
                 "parched",
-                "husk"
+                "husk_rider"
               ]
             }
           ],
@@ -146,7 +146,8 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:rideable/",
               "content": [
-                "zombie"
+                "baby_zombie",
+                "baby_husk"
               ]
             }
           ],
@@ -154,15 +155,8 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:rideable/",
               "content": [
-                "baby_zombie"
-              ]
-            }
-          ],
-          "/vanilla/behavior_pack/entities/cow.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cow_baby/minecraft:rideable/",
-              "content": [
-                "zombie"
+                "baby_zombie",
+                "baby_husk"
               ]
             }
           ],
@@ -171,7 +165,8 @@
               "path": "/minecraft:entity/component_groups/minecraft:donkey_wild/minecraft:rideable/",
               "content": [
                 "player",
-                "zombie"
+                "baby_zombie",
+                "baby_husk"
               ]
             },
             {
@@ -194,7 +189,16 @@
               "path": "/minecraft:entity/component_groups/minecraft:horse_wild/minecraft:rideable/",
               "content": [
                 "player",
-                "zombie"
+                "baby_zombie",
+                "baby_husk"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/mooshroom.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cow_baby/minecraft:rideable/",
+              "content": [
+                "baby_zombie"
               ]
             }
           ],
@@ -231,19 +235,38 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/zombie.json": [
+          "/vanilla/behavior_pack/entities/zombie_horse.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:zombie_adult/minecraft:rideable/",
+              "path": "/minecraft:entity/component_groups/minecraft:horse_wild/minecraft:rideable/",
               "content": [
-                "baby_zombie"
+                "player",
+                "zombie_rider",
+                "baby_zombie",
+                "baby_husk"
               ]
             }
           ],
           "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_wild/minecraft:rideable/",
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild/minecraft:rideable/",
               "content": [
                 "drowned"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_villager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/adult/minecraft:rideable/",
+              "content": [
+                "zombie"
+              ]
+            }
+          ],
+          "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:rideable_sheared/minecraft:rideable/",
+              "content": [
+                "zombie"
               ]
             }
           ]
@@ -317,11 +340,11 @@
           ],
           "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_wild/minecraft:rideable/",
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild/minecraft:rideable/",
               "content": "minecraft:on_drowned_mount"
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled/minecraft:rideable/",
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled/minecraft:rideable/",
               "content": "minecraft:on_player_mount"
             }
           ]
@@ -347,11 +370,11 @@
           ],
           "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_wild/minecraft:rideable/",
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild/minecraft:rideable/",
               "content": "minecraft:on_drowned_dismount"
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled/minecraft:rideable/",
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled/minecraft:rideable/",
               "content": "minecraft:on_player_dismount"
             }
           ]
@@ -567,7 +590,7 @@
             "family_types": [
               "player",
               "parched",
-              "husk"
+              "husk_rider"
             ],
             "interact_text": "action.interact.ride.horse",
             "seats": [
@@ -599,7 +622,8 @@
           "content": {
             "seat_count": 1,
             "family_types": [
-              "zombie"
+              "baby_zombie",
+              "baby_husk"
             ],
             "seats": {
               "position": [
@@ -617,7 +641,8 @@
           "content": {
             "seat_count": 1,
             "family_types": [
-              "baby_zombie"
+              "baby_zombie",
+              "baby_husk"
             ],
             "seats": {
               "position": [
@@ -635,7 +660,8 @@
           "content": {
             "seat_count": 1,
             "family_types": [
-              "zombie"
+              "baby_zombie",
+              "baby_husk"
             ],
             "seats": {
               "position": [
@@ -651,7 +677,8 @@
           "content": {
             "seat_count": 1,
             "family_types": [
-              "zombie"
+              "baby_zombie",
+              "baby_husk"
             ],
             "seats": {
               "position": [
@@ -670,7 +697,8 @@
             "seat_count": 1,
             "family_types": [
               "player",
-              "zombie"
+              "baby_zombie",
+              "baby_husk"
             ],
             "interact_text": "action.interact.mount",
             "seats": {
@@ -806,7 +834,8 @@
             "seat_count": 1,
             "family_types": [
               "player",
-              "zombie"
+              "baby_zombie",
+              "baby_husk"
             ],
             "interact_text": "action.interact.mount",
             "seats": {
@@ -843,7 +872,8 @@
           "content": {
             "seat_count": 1,
             "family_types": [
-              "zombie"
+              "baby_zombie",
+              "baby_husk"
             ],
             "seats": {
               "position": [
@@ -916,7 +946,7 @@
           "content": {
             "seat_count": 1,
             "family_types": [
-              "zombie"
+              "baby_zombie"
             ],
             "seats": {
               "position": [
@@ -932,7 +962,8 @@
           "content": {
             "seat_count": 1,
             "family_types": [
-              "zombie"
+              "baby_zombie",
+              "baby_husk"
             ],
             "seats": {
               "position": [
@@ -951,7 +982,8 @@
             "seat_count": 1,
             "family_types": [
               "player",
-              "zombie"
+              "baby_zombie",
+              "baby_husk"
             ],
             "interact_text": "action.interact.mount",
             "seats": {
@@ -1011,7 +1043,8 @@
           "content": {
             "seat_count": 1,
             "family_types": [
-              "zombie"
+              "baby_zombie",
+              "baby_husk"
             ],
             "seats": {
               "position": [
@@ -1029,7 +1062,8 @@
           "content": {
             "seat_count": 1,
             "family_types": [
-              "zombie"
+              "baby_zombie",
+              "baby_husk"
             ],
             "seats": {
               "position": [
@@ -1047,7 +1081,8 @@
           "content": {
             "seat_count": 1,
             "family_types": [
-              "zombie"
+              "baby_zombie",
+              "baby_husk"
             ],
             "seats": {
               "position": [
@@ -1136,7 +1171,8 @@
           "content": {
             "seat_count": 1,
             "family_types": [
-              "zombie"
+              "baby_zombie",
+              "baby_husk"
             ],
             "seats": {
               "position": [
@@ -1152,7 +1188,8 @@
           "content": {
             "seat_count": 1,
             "family_types": [
-              "zombie"
+              "baby_zombie",
+              "baby_husk"
             ],
             "seats": {
               "position": [
@@ -1262,7 +1299,8 @@
           "content": {
             "seat_count": 1,
             "family_types": [
-              "zombie"
+              "baby_zombie",
+              "baby_husk"
             ],
             "seats": {
               "position": [
@@ -1278,7 +1316,8 @@
           "content": {
             "seat_count": 1,
             "family_types": [
-              "zombie"
+              "baby_zombie",
+              "baby_husk"
             ],
             "seats": {
               "position": [
@@ -1296,7 +1335,8 @@
           "content": {
             "seat_count": 1,
             "family_types": [
-              "baby_zombie"
+              "baby_zombie",
+              "baby_husk"
             ],
             "seats": {
               "position": [
@@ -1316,7 +1356,9 @@
             "seat_count": 1,
             "family_types": [
               "player",
-              "zombie"
+              "zombie_rider",
+              "baby_zombie",
+              "baby_husk"
             ],
             "interact_text": "action.interact.mount",
             "seats": {
@@ -1349,7 +1391,7 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_wild/minecraft:rideable/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild/minecraft:rideable/",
           "content": {
             "seat_count": 1,
             "pull_in_entities": true,
@@ -1368,7 +1410,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled/minecraft:rideable/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled/minecraft:rideable/",
           "content": {
             "seat_count": 1,
             "crouching_skip_interact": true,
@@ -1395,7 +1437,8 @@
           "content": {
             "seat_count": 1,
             "family_types": [
-              "zombie"
+              "baby_zombie",
+              "baby_husk"
             ],
             "seats": {
               "position": [
@@ -1432,7 +1475,8 @@
           "content": {
             "seat_count": 1,
             "family_types": [
-              "zombie"
+              "baby_zombie",
+              "baby_husk"
             ],
             "seats": {
               "position": [

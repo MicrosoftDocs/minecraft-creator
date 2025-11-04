@@ -13,7 +13,8 @@
       {
         "id": "min_speed",
         "title": "Min Speed",
-        "dataType": 3
+        "dataType": 3,
+        "defaultValue": 2
       }
     ]
   }

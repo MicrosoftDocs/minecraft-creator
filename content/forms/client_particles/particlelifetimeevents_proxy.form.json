@@ -9,6 +9,7 @@
         "id": "creation_event",
         "title": "Creation Event",
         "dataType": 15,
+        "defaultValue": [],
         "alternates": [
           {
             "id": "creation_event",
@@ -20,6 +21,7 @@
         "id": "expiration_event",
         "title": "Expiration Event",
         "dataType": 15,
+        "defaultValue": [],
         "alternates": [
           {
             "id": "expiration_event",

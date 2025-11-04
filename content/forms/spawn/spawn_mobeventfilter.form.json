@@ -8,7 +8,8 @@
       {
         "id": "event",
         "title": "Event",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": ""
       }
     ]
   }

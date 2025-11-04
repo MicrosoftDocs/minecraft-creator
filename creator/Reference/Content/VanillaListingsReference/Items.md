@@ -97,7 +97,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | bamboo_trapdoor | -520 |
 | bamboo_wall_sign | -519 |
 | banner | 577 |
-| banner_pattern | 810 |
+| banner_pattern | 811 |
 | barrel | -203 |
 | barrier | -161 |
 | basalt | -234 |
@@ -176,7 +176,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | blue_terracotta | -734 |
 | blue_wool | -563 |
 | board | 607 |
-| boat | 808 |
+| boat | 809 |
 | bogged_spawn_egg | 467 |
 | bolt_armor_trim_smithing_template | 713 |
 | bone | 418 |
@@ -243,7 +243,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | campfire | 601 |
 | candle | -412 |
 | candle_cake | -429 |
-| carpet | 765 |
+| carpet | 766 |
 | [carrot](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/items/carrot.json) | 279 |
 | carrot_on_a_stick | 527 |
 | carrots | 141 |
@@ -263,7 +263,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | chalkboard | 230 |
 | charcoal | 305 |
 | chemical_heat | 192 |
-| chemistry_table | 802 |
+| chemistry_table | 803 |
 | cherry_boat | 663 |
 | cherry_button | -530 |
 | cherry_chest_boat | 664 |
@@ -331,11 +331,11 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | cod_bucket | 367 |
 | cod_spawn_egg | 485 |
 | colored_torch_blue | 204 |
-| colored_torch_bp | 806 |
+| colored_torch_bp | 807 |
 | colored_torch_green | -963 |
 | colored_torch_purple | -964 |
 | colored_torch_red | 202 |
-| colored_torch_rg | 805 |
+| colored_torch_rg | 806 |
 | command_block | 137 |
 | command_block_minecart | 573 |
 | comparator | 532 |
@@ -343,8 +343,8 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | composter | -213 |
 | compound | 609 |
 | compound_creator | 238 |
-| concrete | 791 |
-| concrete_powder | 792 |
+| concrete | 792 |
+| concrete_powder | 793 |
 | conduit | -157 |
 | [cooked_beef](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/items/cooked_beef.json) | 274 |
 | [cooked_chicken](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/items/cooked_chicken.json) | 276 |
@@ -380,10 +380,10 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | copper_sword | 745 |
 | copper_torch | -1082 |
 | copper_trapdoor | -792 |
-| coral | 787 |
-| coral_block | 769 |
-| coral_fan | 778 |
-| coral_fan_dead | 779 |
+| coral | 788 |
+| coral_block | 770 |
+| coral_fan | 779 |
+| coral_fan_dead | 780 |
 | cornflower | -838 |
 | cow_spawn_egg | 440 |
 | cracked_deepslate_bricks | -410 |
@@ -548,11 +548,11 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | dolphin_spawn_egg | 489 |
 | donkey_spawn_egg | 470 |
 | double_cut_copper_slab | -368 |
-| double_plant | 785 |
-| double_stone_block_slab | 774 |
-| double_stone_block_slab2 | 775 |
-| double_stone_block_slab3 | 776 |
-| double_stone_block_slab4 | 777 |
+| double_plant | 786 |
+| double_stone_block_slab | 775 |
+| double_stone_block_slab2 | 776 |
+| double_stone_block_slab3 | 777 |
+| double_stone_block_slab4 | 778 |
 | dragon_breath | 570 |
 | dragon_egg | 122 |
 | dragon_head | -969 |
@@ -563,7 +563,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | dropper | 125 |
 | drowned_spawn_egg | 488 |
 | dune_armor_trim_smithing_template | 697 |
-| dye | 809 |
+| dye | 810 |
 | echo_shard | 661 |
 | egg | 393 |
 | elder_guardian_spawn_egg | 476 |
@@ -700,7 +700,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | enchanting_table | 116 |
 | end_brick_stairs | -178 |
 | end_bricks | 206 |
-| end_crystal | 812 |
+| end_crystal | 813 |
 | end_gateway | 209 |
 | end_portal | 119 |
 | end_portal_frame | 120 |
@@ -737,7 +737,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | eye_armor_trim_smithing_template | 701 |
 | farmland | 60 |
 | feather | 330 |
-| fence | 767 |
+| fence | 768 |
 | fence_gate | 107 |
 | fermented_spider_eye | 432 |
 | fern | -848 |
@@ -881,8 +881,8 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | hard_purple_stained_glass_pane | -667 |
 | hard_red_stained_glass | -701 |
 | hard_red_stained_glass_pane | -671 |
-| hard_stained_glass | 803 |
-| hard_stained_glass_pane | 804 |
+| hard_stained_glass | 804 |
+| hard_stained_glass_pane | 805 |
 | hard_white_stained_glass | 254 |
 | hard_white_stained_glass_pane | 191 |
 | hard_yellow_stained_glass | -691 |
@@ -1011,11 +1011,11 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | leather_helmet | 338 |
 | leather_horse_armor | 540 |
 | leather_leggings | 340 |
-| leaves | 781 |
-| leaves2 | 782 |
+| leaves | 782 |
+| leaves2 | 783 |
 | lectern | -194 |
 | lever | 69 |
-| light_block | 807 |
+| light_block | 808 |
 | light_block_0 | -215 |
 | light_block_1 | -929 |
 | light_block_10 | -938 |
@@ -1088,8 +1088,8 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | llama_spawn_egg | 478 |
 | lodestone | -222 |
 | lodestone_compass | 617 |
-| log | 766 |
-| log2 | 789 |
+| log | 767 |
+| log2 | 790 |
 | loom | -204 |
 | mace | 322 |
 | magenta_candle | -415 |
@@ -1142,7 +1142,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | miner_pottery_sherd | 685 |
 | mob_spawner | 52 |
 | mojang_banner_pattern | 594 |
-| monster_egg | 790 |
+| monster_egg | 791 |
 | mooshroom_spawn_egg | 444 |
 | moss_block | -320 |
 | moss_carpet | -335 |
@@ -1174,19 +1174,19 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | music_disc_blocks | 546 |
 | music_disc_cat | 545 |
 | music_disc_chirp | 547 |
-| music_disc_creator | 797 |
-| music_disc_creator_music_box | 798 |
+| music_disc_creator | 798 |
+| music_disc_creator_music_box | 799 |
 | music_disc_far | 548 |
-| music_disc_lava_chicken | 801 |
+| music_disc_lava_chicken | 802 |
 | music_disc_mall | 549 |
 | music_disc_mellohi | 550 |
 | music_disc_otherside | 640 |
 | music_disc_pigstep | 634 |
-| music_disc_precipice | 799 |
+| music_disc_precipice | 800 |
 | music_disc_relic | 714 |
 | music_disc_stal | 551 |
 | music_disc_strad | 552 |
-| music_disc_tears | 800 |
+| music_disc_tears | 801 |
 | music_disc_wait | 555 |
 | music_disc_ward | 553 |
 | mutton | 560 |
@@ -1212,6 +1212,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | netherite_chestplate | 625 |
 | netherite_helmet | 624 |
 | netherite_hoe | 622 |
+| netherite_horse_armor | 764 |
 | netherite_ingot | 623 |
 | netherite_leggings | 626 |
 | netherite_nautilus_armor | 763 |
@@ -1232,10 +1233,10 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | oak_double_slab | 157 |
 | oak_fence | 85 |
 | oak_hanging_sign | -500 |
-| oak_leaves | 18 |
 
 | Name | ID | 
 |:-----------|:-----------|
+| oak_leaves | 18 |
 | oak_log | 17 |
 | oak_planks | 5 |
 | oak_sapling | 6 |
@@ -1344,7 +1345,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | pitcher_crop | -574 |
 | pitcher_plant | -612 |
 | [pitcher_pod](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/items/pitcher_pod.json) | 297 |
-| planks | 786 |
+| planks | 787 |
 | player_head | -967 |
 | plenty_pottery_sherd | 687 |
 | podzol | 243 |
@@ -1435,10 +1436,10 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | purpur_slab | -884 |
 | purpur_stairs | 203 |
 | quartz | 534 |
-| quartz_block | 155 |
 
 | Name | ID | 
 |:-----------|:-----------|
+| quartz_block | 155 |
 | quartz_bricks | -304 |
 | quartz_double_slab | -882 |
 | quartz_ore | 153 |
@@ -1467,7 +1468,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | red_concrete | -641 |
 | red_concrete_powder | -722 |
 | red_dye | 399 |
-| red_flower | 784 |
+| red_flower | 785 |
 | red_glazed_terracotta | 234 |
 | red_harness | 741 |
 | red_mushroom | 40 |
@@ -1521,7 +1522,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | sandstone_slab | -872 |
 | sandstone_stairs | 128 |
 | sandstone_wall | -975 |
-| sapling | 780 |
+| sapling | 781 |
 | scaffolding | -165 |
 | scrape_pottery_sherd | 689 |
 | sculk | -458 |
@@ -1542,7 +1543,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | short_dry_grass | -1028 |
 | short_grass | 31 |
 | shroomlight | -230 |
-| shulker_box | 795 |
+| shulker_box | 796 |
 | shulker_shell | 576 |
 | shulker_spawn_egg | 474 |
 | silence_armor_trim_smithing_template | 707 |
@@ -1592,7 +1593,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | soul_soil | -236 |
 | soul_torch | -268 |
 | sparkler | 615 |
-| spawn_egg | 811 |
+| spawn_egg | 812 |
 | [spider_eye](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/items/spider_eye.json) | 278 |
 | spider_spawn_egg | 450 |
 | spire_armor_trim_smithing_template | 706 |
@@ -1622,8 +1623,8 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | spruce_wood | -814 |
 | spyglass | 639 |
 | squid_spawn_egg | 454 |
-| stained_glass | 793 |
-| stained_glass_pane | 794 |
+| stained_glass | 794 |
+| stained_glass_pane | 795 |
 | stained_hardened_clay | 716 |
 | standing_banner | 176 |
 | standing_sign | 63 |
@@ -1632,16 +1633,16 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | sticky_piston_arm_collision | -217 |
 | stone | 1 |
 | stone_axe | 317 |
-| stone_block_slab | 770 |
-| stone_block_slab2 | 771 |
-| stone_block_slab3 | 772 |
-| stone_block_slab4 | 773 |
+| stone_block_slab | 771 |
+| stone_block_slab2 | 772 |
+| stone_block_slab3 | 773 |
+| stone_block_slab4 | 774 |
 | stone_brick_double_slab | -881 |
 | stone_brick_slab | -875 |
-| stone_brick_stairs | 109 |
 
 | Name | ID | 
 |:-----------|:-----------|
+| stone_brick_stairs | 109 |
 | stone_brick_wall | -977 |
 | stone_bricks | 98 |
 | stone_button | 77 |
@@ -1651,7 +1652,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | stone_shovel | 315 |
 | stone_stairs | 67 |
 | stone_sword | 314 |
-| stonebrick | 768 |
+| stonebrick | 769 |
 | stonecutter | 245 |
 | stonecutter_block | -197 |
 | stray_spawn_egg | 466 |
@@ -1694,7 +1695,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | tadpole_spawn_egg | 643 |
 | tall_dry_grass | -1029 |
 | tall_grass | -864 |
-| tallgrass | 788 |
+| tallgrass | 789 |
 | target | -239 |
 | tide_armor_trim_smithing_template | 703 |
 | tinted_glass | -334 |
@@ -1841,10 +1842,10 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | waxed_weathered_cut_copper_slab | -367 |
 | waxed_weathered_cut_copper_stairs | -360 |
 | waxed_weathered_double_cut_copper_slab | -374 |
-| waxed_weathered_lightning_rod | -1064 |
 
 | Name | ID | 
 |:-----------|:-----------|
+| waxed_weathered_lightning_rod | -1064 |
 | wayfinder_armor_trim_smithing_template | 708 |
 | weathered_chiseled_copper | -762 |
 | weathered_copper | -342 |
@@ -1890,7 +1891,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | wither_spawn_egg | 513 |
 | wolf_armor | 719 |
 | wolf_spawn_egg | 443 |
-| wood | 796 |
+| wood | 797 |
 | wooden_axe | 313 |
 | wooden_button | 143 |
 | wooden_door | 362 |
@@ -1898,9 +1899,9 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | wooden_pickaxe | 312 |
 | wooden_pressure_plate | 72 |
 | wooden_shovel | 311 |
-| wooden_slab | 783 |
+| wooden_slab | 784 |
 | wooden_sword | 310 |
-| wool | 764 |
+| wool | 765 |
 | writable_book | 521 |
 | written_book | 522 |
 | yellow_candle | -417 |

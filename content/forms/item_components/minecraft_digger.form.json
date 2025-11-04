@@ -53,13 +53,15 @@
         "title": "Destroy Speeds",
         "description": "A list of blocks to dig with correlating speeds of digging.",
         "dataType": 16,
+        "defaultValue": [],
         "subFormId": "item_components/blockinfo"
       },
       {
         "id": "use_efficiency",
         "title": "Use Efficiency",
         "description": "Determines whether this item should be impacted if the efficiency enchantment is applied to it.",
-        "dataType": 1
+        "dataType": 1,
+        "defaultValue": false
       }
     ]
   }

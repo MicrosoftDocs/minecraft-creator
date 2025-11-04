@@ -9,17 +9,20 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17
+        "dataType": 17,
+        "defaultValue": []
       },
       {
         "id": "grow_tired_cooldown_time",
         "title": "Grow Tired Cooldown Time",
-        "dataType": 3
+        "dataType": 3,
+        "defaultValue": 15
       },
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       },
       {
         "id": "set_persistent",
