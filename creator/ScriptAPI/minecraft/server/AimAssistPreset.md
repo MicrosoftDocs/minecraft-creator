@@ -45,10 +45,23 @@ The unique Id associated with the preset.
 Type: *string*
 
 ## Methods
+- [getExcludedBlockTagTargets](#getexcludedblocktagtargets)
 - [getExcludedBlockTargets](#getexcludedblocktargets)
 - [getExcludedEntityTargets](#getexcludedentitytargets)
 - [getItemSettings](#getitemsettings)
 - [getLiquidTargetingItems](#getliquidtargetingitems)
+
+### **getExcludedBlockTagTargets**
+`
+getExcludedBlockTagTargets(): string[]
+`
+
+Gets the list of block tags to exclude from aim assist targeting.
+
+**Returns** *string*[] - The array of block tags.
+  
+Notes:
+- This function can throw errors.
 
 ### **getExcludedBlockTargets**
 `

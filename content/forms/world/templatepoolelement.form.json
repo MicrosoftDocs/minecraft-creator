@@ -17,6 +17,7 @@
         "title": "Weight",
         "description": "The weighted probability of choosing the element from the pool. For example, a template pool containing 2 structures with weights of 1 and 3 will have a 25% and 75% chance of being chosen respectively.",
         "dataType": 0,
+        "defaultValue": 1,
         "validity": [
           {
             "comparison": ">=",

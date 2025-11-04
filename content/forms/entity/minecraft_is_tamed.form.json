@@ -98,7 +98,7 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:is_tamed/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame/minecraft:is_tamed/",
           "content": {}
         }
       ],

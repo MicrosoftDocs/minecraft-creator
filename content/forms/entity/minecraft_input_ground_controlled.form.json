@@ -56,7 +56,7 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_on_ground/minecraft:input_ground_controlled/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_on_ground/minecraft:input_ground_controlled/",
           "content": {}
         }
       ]

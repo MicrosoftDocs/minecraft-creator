@@ -38,18 +38,21 @@
         "id": "attack_sound",
         "title": "Attack Sound",
         "description": "Sound event for the attack.",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": ""
       },
       {
         "id": "charge_sound",
         "title": "Charge Sound",
         "description": "Sound event for the charge up.",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": ""
       },
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17
+        "dataType": 17,
+        "defaultValue": []
       },
       {
         "id": "duration",
@@ -89,7 +92,8 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       },
       {
         "id": "speed_multiplier",

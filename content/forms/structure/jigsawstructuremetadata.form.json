@@ -24,7 +24,8 @@
         "id": "use_legacy_rotation",
         "title": "Use Legacy Rotation",
         "description": "Unused - Previously if true would use legacy size rotation.",
-        "dataType": 1
+        "dataType": 1,
+        "defaultValue": false
       }
     ]
   }

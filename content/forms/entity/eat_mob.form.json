@@ -9,7 +9,8 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17
+        "dataType": 17,
+        "defaultValue": []
       },
       {
         "id": "eat_animation_time",
@@ -22,18 +23,21 @@
         "id": "eat_mob_sound",
         "title": "Eat Mob Sound",
         "description": "Sets the sound that should play when eating a mob.",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": ""
       },
       {
         "id": "loot_table",
         "title": "Loot Table",
         "description": "The loot table for loot to be dropped when eating a mob.",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": ""
       },
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       },
       {
         "id": "pull_in_force",

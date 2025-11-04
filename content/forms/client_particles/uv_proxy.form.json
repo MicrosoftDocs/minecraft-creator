@@ -14,12 +14,14 @@
       {
         "id": "texture_height",
         "title": "Texture Height",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 1
       },
       {
         "id": "texture_width",
         "title": "Texture Width",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 1
       },
       {
         "id": "uv",

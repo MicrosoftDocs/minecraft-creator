@@ -8,6 +8,7 @@
         "id": "active_time",
         "title": "Active Time",
         "dataType": 24,
+        "defaultValue": 0,
         "alternates": [
           {
             "id": "active_time",

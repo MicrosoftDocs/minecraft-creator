@@ -143,6 +143,12 @@
               "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/2/filters/",
               "content": "minecraft:was_upgraded_to_1_21_100"
             }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_horse.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/",
+              "content": "minecraft:was_upgraded_to_1_21_130"
+            }
           ]
         }
       },
@@ -433,6 +439,16 @@
             "test": "bool_property",
             "operator": "!=",
             "domain": "minecraft:was_upgraded_to_1_21_100"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/",
+          "content": {
+            "test": "bool_property",
+            "operator": "!=",
+            "domain": "minecraft:was_upgraded_to_1_21_130"
           }
         }
       ]

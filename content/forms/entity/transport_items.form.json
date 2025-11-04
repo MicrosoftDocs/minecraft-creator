@@ -29,7 +29,8 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17
+        "dataType": 17,
+        "defaultValue": []
       },
       {
         "id": "destination_container_types",
@@ -43,12 +44,14 @@
             {
               "id": "name",
               "title": "Name",
-              "dataType": 2
+              "dataType": 2,
+              "defaultValue": ""
             },
             {
               "id": "states",
               "title": "States",
               "dataType": 0,
+              "defaultValue": {},
               "alternates": [
                 {
                   "id": "states",
@@ -63,7 +66,8 @@
             {
               "id": "tags",
               "title": "Tags",
-              "dataType": 2
+              "dataType": 2,
+              "defaultValue": ""
             }
           ]
         },
@@ -146,7 +150,8 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       },
       {
         "id": "search_distance",
@@ -168,12 +173,14 @@
                 {
                   "id": "x",
                   "title": "X",
-                  "dataType": 3
+                  "dataType": 3,
+                  "defaultValue": 0
                 },
                 {
                   "id": "y",
                   "title": "Y",
-                  "dataType": 3
+                  "dataType": 3,
+                  "defaultValue": 0
                 }
               ]
             }
@@ -199,12 +206,14 @@
             {
               "id": "name",
               "title": "Name",
-              "dataType": 2
+              "dataType": 2,
+              "defaultValue": ""
             },
             {
               "id": "states",
               "title": "States",
               "dataType": 0,
+              "defaultValue": {},
               "alternates": [
                 {
                   "id": "states",
@@ -219,7 +228,8 @@
             {
               "id": "tags",
               "title": "Tags",
-              "dataType": 2
+              "dataType": 2,
+              "defaultValue": ""
             }
           ]
         },

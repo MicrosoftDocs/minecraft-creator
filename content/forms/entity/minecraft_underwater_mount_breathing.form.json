@@ -15,7 +15,7 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:underwater_mount_breathing/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_in_water/minecraft:underwater_mount_breathing/",
           "content": {}
         }
       ]

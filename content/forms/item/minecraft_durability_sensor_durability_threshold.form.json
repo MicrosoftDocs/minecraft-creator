@@ -10,19 +10,22 @@
         "id": "durability",
         "title": "Durability",
         "description": "The effects are emitted when the item durability value is less than or equal to this value.",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       },
       {
         "id": "particle_type",
         "title": "ParticleType",
         "description": "Particle effect to emit when the threshold is met.",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": "none"
       },
       {
         "id": "sound_event",
         "title": "LevelSoundEvent",
         "description": "Sound effect to emit when the threshold is met.",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": "undefined"
       }
     ]
   }

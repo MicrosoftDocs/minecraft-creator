@@ -16,13 +16,19 @@
         "id": "input_predicate",
         "title": "Input Predicate",
         "description": "A predicate evaluated on the Structure Template block.",
-        "dataType": 16
+        "dataType": 16,
+        "defaultValue": {
+          "predicate_type": "minecraft:always_true"
+        }
       },
       {
         "id": "location_predicate",
         "title": "Location Predicate",
         "description": "A predicate evaluated on the world block.",
-        "dataType": 16
+        "dataType": 16,
+        "defaultValue": {
+          "predicate_type": "minecraft:always_true"
+        }
       },
       {
         "id": "output_state",
@@ -49,6 +55,7 @@
                   "title": "States",
                   "description": "Contains members named after each state, with boolean, integer, or string values.",
                   "dataType": 31,
+                  "defaultValue": {},
                   "alternates": [
                     {
                       "id": "states",

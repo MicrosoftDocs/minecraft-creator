@@ -10,7 +10,8 @@
         "id": "coordinate_eval_order",
         "title": "Coordinate Evaluation Order",
         "description": "The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to \"xzy\". Supported orders are defined by \"Coordinate Evaluation Order\".",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": "xzy"
       },
       {
         "id": "iterations",

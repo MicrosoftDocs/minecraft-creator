@@ -99,6 +99,27 @@ At /minecraft:entity/events/minecraft:on_unsaddled/sequence/0/filters/:
 }
 ```
 
+#### [Zombie Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_horse.json)
+
+At /minecraft:entity/component_groups/minecraft:horse_tamed/minecraft:interact/interactions/1/on_interact/filters/all_of/0/: 
+
+```json
+{
+  "test": "rider_count",
+  "value": 0
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:horse_wild_with_rider/minecraft:environment_sensor/triggers/0/filters/: 
+
+```json
+{
+  "test": "rider_count",
+  "subject": "self",
+  "value": 0
+}
+```
+
 #### [Dream Turkey](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json)
 
 

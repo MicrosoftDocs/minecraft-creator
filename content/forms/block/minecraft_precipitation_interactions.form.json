@@ -4,7 +4,7 @@
   "generated_doNotEdit": {
     "id": "minecraft:precipitation_interactions",
     "title": "Precipitation Interactions",
-    "description": "Component that determines how the block will interact with rain and snow",
+    "description": "Component that determines how the block will interact with rain and snow\nExperimental toggles required: Upcoming Creator Features (in format versions before 1.21.120)",
     "fields": [
       {
         "id": "precipitation_behavior",

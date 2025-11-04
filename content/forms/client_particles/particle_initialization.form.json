@@ -8,6 +8,7 @@
         "id": "per_render_expression",
         "title": "Per Render Expression",
         "dataType": 24,
+        "defaultValue": 0,
         "alternates": [
           {
             "id": "per_render_expression",
@@ -42,6 +43,7 @@
         "id": "per_update_expression",
         "title": "Per Update Expression",
         "dataType": 24,
+        "defaultValue": 0,
         "alternates": [
           {
             "id": "per_update_expression",

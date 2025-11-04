@@ -36,7 +36,7 @@
       {
         "id": "origin",
         "title": "Origin",
-        "description": "Minimal position of the bounds of the collision box. \"origin\" is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.",
+        "description": "Minimal position of the bounds of the collision box. \"origin\" is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 24, 8), inclusive. A max Y value above 16 requires 'format_version' >= 1.21.130 and the `Upcoming Creator Features` toggle",
         "defaultValue": [
           -8,
           0,
@@ -59,10 +59,10 @@
       {
         "id": "size",
         "title": "Size",
-        "description": "Size of each side of the collision box. Size is specified as [x, y, z]. \"origin\" + \"size\" must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.",
+        "description": "Size of each side of the collision box. Size is specified as [x, y, z]. \"origin\" + \"size\" must be in the range (-8, 0, -8) to (8, 24, 8), inclusive. A max Y value above 16 requires 'format_version' >= 1.21.130 and the `Upcoming Creator Features` toggle",
         "defaultValue": [
           16,
-          16,
+          24,
           16
         ],
         "dataType": 11,

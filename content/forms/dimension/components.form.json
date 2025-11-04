@@ -9,6 +9,10 @@
         "id": "minecraft:dimension_bounds",
         "title": "Minecraft Dimension Bounds",
         "dataType": 16,
+        "defaultValue": {
+          "max": 0,
+          "min": 0
+        },
         "subFormId": "dimension/bounds"
       },
       {

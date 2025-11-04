@@ -44,6 +44,11 @@
         "id": "offset",
         "title": "Offset",
         "dataType": 24,
+        "defaultValue": [
+          0,
+          0,
+          0
+        ],
         "minLength": 3,
         "maxLength": 3,
         "alternates": [

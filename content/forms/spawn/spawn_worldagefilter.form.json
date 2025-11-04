@@ -8,12 +8,14 @@
       {
         "id": "max",
         "title": "Max",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": -1
       },
       {
         "id": "min",
         "title": "Min",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       }
     ]
   }

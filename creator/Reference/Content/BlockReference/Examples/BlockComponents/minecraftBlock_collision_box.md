@@ -20,8 +20,8 @@ This item can also be represented as a `Boolean true/false`.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| origin | [-8, 0, -8] | x, y, z coordinate array | Minimal position of the bounds of the collision box. "origin" is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive. | Block Leaf Pile: `[-8,2,-8]` | 
-| size | [16, 16, 16] | x, y, z coordinate array | Size of each side of the collision box. Size is specified as [x, y, z]. "origin" + "size" must be in the range (-8, 0, -8) to (8, 16, 8), inclusive. | Block Leaf Pile: `[16,4,16]` | 
+| origin | [-8, 0, -8] | x, y, z coordinate array | Minimal position of the bounds of the collision box. "origin" is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 24, 8), inclusive. A max Y value above 16 requires 'format_version' >= 1.21.130 and the `Upcoming Creator Features` toggle | Block Leaf Pile: `[-8,2,-8]` | 
+| size | [16, 24, 16] | x, y, z coordinate array | Size of each side of the collision box. Size is specified as [x, y, z]. "origin" + "size" must be in the range (-8, 0, -8) to (8, 24, 8), inclusive. A max Y value above 16 requires 'format_version' >= 1.21.130 and the `Upcoming Creator Features` toggle | Block Leaf Pile: `[16,4,16]` | 
 
 ## Samples
 

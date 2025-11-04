@@ -19,6 +19,14 @@
               ]
             }
           ],
+          "/vanilla/behavior_pack/entities/parched.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:mob_effect_immunity/",
+              "content": [
+                "weakness"
+              ]
+            }
+          ],
           "/vanilla/behavior_pack/entities/silverfish.json": [
             {
               "path": "/minecraft:entity/components/minecraft:mob_effect_immunity/",
@@ -53,6 +61,16 @@
           "content": {
             "mob_effects": [
               "poison"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:mob_effect_immunity/",
+          "content": {
+            "mob_effects": [
+              "weakness"
             ]
           }
         }

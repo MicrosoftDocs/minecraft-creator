@@ -21,7 +21,8 @@
       {
         "id": "mOrderedV1CustomComponents",
         "title": "mOrderedV1CustomComponents",
-        "dataType": 17
+        "dataType": 17,
+        "defaultValue": []
       }
     ]
   }

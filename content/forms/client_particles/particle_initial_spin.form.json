@@ -8,6 +8,7 @@
         "id": "rotation",
         "title": "Rotation",
         "dataType": 24,
+        "defaultValue": 0,
         "alternates": [
           {
             "id": "rotation",
@@ -42,6 +43,7 @@
         "id": "rotation_rate",
         "title": "Rotation Rate",
         "dataType": 24,
+        "defaultValue": 0,
         "alternates": [
           {
             "id": "rotation_rate",

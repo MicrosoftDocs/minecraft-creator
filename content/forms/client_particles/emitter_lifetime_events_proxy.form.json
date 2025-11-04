@@ -8,6 +8,7 @@
         "id": "creation_event",
         "title": "Creation Event",
         "dataType": 15,
+        "defaultValue": [],
         "alternates": [
           {
             "id": "creation_event",
@@ -19,6 +20,7 @@
         "id": "expiration_event",
         "title": "Expiration Event",
         "dataType": 15,
+        "defaultValue": [],
         "alternates": [
           {
             "id": "expiration_event",
@@ -30,12 +32,14 @@
         "id": "looping_travel_distance_events",
         "title": "Looping Travel Distance Events",
         "dataType": 16,
+        "defaultValue": [],
         "subFormId": "client_particles/emitter_lifetime_events_travel_distance_events"
       },
       {
         "id": "timeline",
         "title": "Timeline",
         "dataType": 15,
+        "defaultValue": {},
         "alternates": [
           {
             "id": "timeline",
@@ -47,6 +51,7 @@
         "id": "travel_distance_events",
         "title": "Travel Distance Events",
         "dataType": 15,
+        "defaultValue": {},
         "alternates": [
           {
             "id": "travel_distance_events",

@@ -11,6 +11,7 @@
         "title": "Repair Items",
         "description": "List of repair item entries. Each entry needs to define a list of strings for `items` that can be used for the repair and an optional `repair_amount` for how much durability is gained.",
         "dataType": 2,
+        "defaultValue": [],
         "alternates": [
           {
             "id": "repair_items",
@@ -38,6 +39,10 @@
                   "title": "Repair Amount",
                   "description": "How much the item is repaired.",
                   "dataType": 24,
+                  "defaultValue": {
+                    "expression": "",
+                    "version": -1
+                  },
                   "alternates": [
                     {
                       "id": "repair_amount",

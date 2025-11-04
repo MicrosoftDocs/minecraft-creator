@@ -11,6 +11,7 @@
         "title": "Can Always Eat",
         "description": "If true you can always eat this item (even when not hungry). Default is set to false.",
         "dataType": 1,
+        "defaultValue": false,
         "samples": {
           "/vanilla/behavior_pack/items/appleEnchanted.json": [
             {
@@ -31,6 +32,7 @@
         "title": "Nutrition",
         "description": "Value that is added to the entity's nutrition when the item is used. Default is set to 0.",
         "dataType": 0,
+        "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/items/apple.json": [
             {
@@ -129,6 +131,7 @@
         "title": "Saturation Modifier",
         "description": "saturation_modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff. Default is set to 0.6.",
         "dataType": 3,
+        "defaultValue": 0.6000000238418579,
         "samples": {
           "/vanilla/behavior_pack/items/apple.json": [
             {
@@ -245,6 +248,7 @@
         "title": "Using Converts To",
         "description": "When used, converts to the item specified by the string in this field. Default does not convert item.",
         "dataType": 2,
+        "defaultValue": {},
         "alternates": [
           {
             "id": "using_converts_to",

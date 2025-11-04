@@ -8,12 +8,23 @@
       {
         "id": "event",
         "title": "Event",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": ""
       },
       {
         "id": "filters",
         "description": "Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.",
         "dataType": 16,
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
         "subForm": {
           "id": "filters",
           "title": "Filters",
@@ -61,7 +72,8 @@
       {
         "id": "target",
         "title": "FilterSubject",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": "self"
       }
     ]
   }

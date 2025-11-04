@@ -1,0 +1,17 @@
+{
+  "id": "Detailed Resistance",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Detailed Resistance",
+    "title": "Block Detailed Resistance",
+    "fields": [
+      {
+        "id": "explosion_resistance",
+        "title": "Explosion Resistance",
+        "description": "Sets the explosion resistance for the block. Greater values result in greater resistance to explosions. The scale will be different for different explosion power levels. A negative value or 0 means it will easily explode; larger numbers increase level of resistance.",
+        "dataType": 3,
+        "isRequired": true
+      }
+    ]
+  }
+}

@@ -80,26 +80,7 @@ At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environm
 
 #### [Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/husk.json)
 
-At /minecraft:entity/component_groups/minecraft:look_to_start_zombie_transformation/minecraft:environment_sensor/triggers/filters/: 
-
-```json
-{
-  "test": "is_underwater",
-  "subject": "self"
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:start_zombie_transformation/minecraft:environment_sensor/triggers/filters/: 
-
-```json
-{
-  "test": "is_underwater",
-  "subject": "self",
-  "value": false
-}
-```
-
-At /minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/: 
+At /minecraft:entity/component_groups/minecraft:look_to_start_zombie_transformation/minecraft:environment_sensor/triggers/0/filters/: 
 
 ```json
 {
@@ -107,9 +88,7 @@ At /minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/
 }
 ```
 
-#### [Zombie](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie.json)
-
-At /minecraft:entity/component_groups/minecraft:start_drowned_transformation/minecraft:environment_sensor/triggers/filters/: 
+At /minecraft:entity/component_groups/minecraft:start_zombie_transformation/minecraft:environment_sensor/triggers/0/filters/: 
 
 ```json
 {
