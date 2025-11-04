@@ -8,6 +8,11 @@
         "id": "linear_acceleration",
         "title": "Linear Acceleration",
         "dataType": 24,
+        "defaultValue": [
+          0,
+          0,
+          0
+        ],
         "minLength": 3,
         "maxLength": 3,
         "alternates": [
@@ -44,6 +49,7 @@
         "id": "linear_drag_coefficient",
         "title": "Linear Drag Coefficient",
         "dataType": 24,
+        "defaultValue": 0,
         "alternates": [
           {
             "id": "linear_drag_coefficient",
@@ -78,6 +84,7 @@
         "id": "rotation_acceleration",
         "title": "Rotation Acceleration",
         "dataType": 24,
+        "defaultValue": 0,
         "alternates": [
           {
             "id": "rotation_acceleration",
@@ -112,6 +119,7 @@
         "id": "rotation_drag_coefficient",
         "title": "Rotation Drag Coefficient",
         "dataType": 24,
+        "defaultValue": 0,
         "alternates": [
           {
             "id": "rotation_drag_coefficient",

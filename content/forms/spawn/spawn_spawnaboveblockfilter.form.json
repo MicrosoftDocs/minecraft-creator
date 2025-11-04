@@ -8,12 +8,14 @@
       {
         "id": "blocks",
         "title": "Blocks",
-        "dataType": 16
+        "dataType": 16,
+        "defaultValue": []
       },
       {
         "id": "distance",
         "title": "Distance",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 1
       }
     ]
   }

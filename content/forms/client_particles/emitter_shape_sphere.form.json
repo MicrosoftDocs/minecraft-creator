@@ -50,6 +50,11 @@
         "id": "offset",
         "title": "Offset",
         "dataType": 24,
+        "defaultValue": [
+          0,
+          0,
+          0
+        ],
         "minLength": 3,
         "maxLength": 3,
         "alternates": [
@@ -86,6 +91,7 @@
         "id": "radius",
         "title": "Radius",
         "dataType": 24,
+        "defaultValue": 1,
         "alternates": [
           {
             "id": "radius",
@@ -119,7 +125,8 @@
       {
         "id": "surface_only",
         "title": "Surface Only",
-        "dataType": 1
+        "dataType": 1,
+        "defaultValue": false
       }
     ]
   }

@@ -119,37 +119,43 @@
         "id": "do_swing_animation",
         "title": "Do Swing Animation",
         "description": "Determines whether the item should use the swing animation when thrown. Default is set to false.",
-        "dataType": 1
+        "dataType": 1,
+        "defaultValue": false
       },
       {
         "id": "launch_power_scale",
         "title": "Launch Power Scale",
         "description": "The scale at which the power of the throw increases. Default is set to 1.0.",
-        "dataType": 3
+        "dataType": 3,
+        "defaultValue": 1
       },
       {
         "id": "max_draw_duration",
         "title": "Max Draw Duration",
         "description": "The maximum duration to draw a throwable item. Default is set to 0.0.",
-        "dataType": 3
+        "dataType": 3,
+        "defaultValue": 0
       },
       {
         "id": "max_launch_power",
         "title": "Max Launch Power",
         "description": "The maximum power to launch the throwable item. Default is set to 1.0.",
-        "dataType": 3
+        "dataType": 3,
+        "defaultValue": 1
       },
       {
         "id": "min_draw_duration",
         "title": "Min Draw Duration",
         "description": "The minimum duration to draw a throwable item. Default is set to 0.0.",
-        "dataType": 3
+        "dataType": 3,
+        "defaultValue": 0
       },
       {
         "id": "scale_power_by_draw_duration",
         "title": "Scale Power By Draw Duration",
         "description": "Whether or not the power of the throw increases with duration charged. Default is set to false.",
-        "dataType": 1
+        "dataType": 1,
+        "defaultValue": false
       }
     ]
   }

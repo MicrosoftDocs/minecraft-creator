@@ -1512,6 +1512,9 @@ Piglin Banner Pattern
 - `minecraft:boat`
 Boat
 - `minecraft:guster_banner_pattern`
+- `minecraft:moss_carpet`
+Moss Carpet
+- `minecraft:netherite_horse_armor`
 - `minecraft:red_nether_brick`
 Red Nether Brick
 - `minecraft:honey_bottle`
@@ -2602,8 +2605,6 @@ Smooth Sandstone Stairs
 Packed Mud
 - `minecraft:light_blue_candle_cake`
 Light Blue Candle Cake
-- `minecraft:moss_carpet`
-Moss Carpet
 - `minecraft:oxidized_lightning_rod`
 - `minecraft:amethyst_block`
 Amethyst Block

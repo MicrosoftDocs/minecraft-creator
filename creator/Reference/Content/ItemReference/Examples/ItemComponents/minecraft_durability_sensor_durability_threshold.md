@@ -16,6 +16,6 @@ Defines both the durability threshold, and the effects emitted when that thresho
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| durability | *not set* | Integer number | The effects are emitted when the item durability value is less than or equal to this value. |  | 
-| particle_type | *not set* | String | Particle effect to emit when the threshold is met. |  | 
-| sound_event | *not set* | String | Sound effect to emit when the threshold is met. |  | 
+| durability | 0 | Integer number | The effects are emitted when the item durability value is less than or equal to this value. |  | 
+| particle_type | none | String | Particle effect to emit when the threshold is met. |  | 
+| sound_event | undefined | String | Sound effect to emit when the threshold is met. |  | 

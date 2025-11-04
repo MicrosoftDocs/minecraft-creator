@@ -115,7 +115,7 @@
           ],
           "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tameable/minecraft:tameable/",
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tameable/minecraft:tameable/",
               "content": [
                 {
                   "item": "pufferfish_bucket",
@@ -208,7 +208,7 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tameable/minecraft:tameable/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tameable/minecraft:tameable/",
           "content": {
             "probability": 0.33,
             "tame_items": [

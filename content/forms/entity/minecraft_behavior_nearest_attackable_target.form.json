@@ -82,11 +82,64 @@
     "description": "Allows an entity to attack the closest target within a given subset of specific target types.",
     "fields": [
       {
-        "id": "attack_interval|attack_interval_min",
-        "title": "Attack Interval|attack Interval Min",
+        "id": "attack_interval",
+        "title": "Attack Interval",
         "description": "Time range (in seconds) between searching for an attack target, range is in (0, \"attack_interval\"]. Only used if \"attack_interval\" is greater than 0, otherwise \"scan_interval\" is used.",
-        "defaultValue": 0,
-        "dataType": 0
+        "dataType": 18,
+        "samples": {
+          "/vanilla/behavior_pack/entities/cave_spider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/",
+              "content": 5
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.nearest_attackable_target/",
+              "content": 10
+            }
+          ],
+          "/vanilla/behavior_pack/entities/enderman.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 10
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 16
+            }
+          ],
+          "/vanilla/behavior_pack/entities/nautilus.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:nautilus_wild_adult_calm/minecraft:behavior.nearest_attackable_target/",
+              "content": {
+                "range_min": 120,
+                "range_max": 180
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/spider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 16
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild_unmounted/minecraft:behavior.nearest_attackable_target/",
+              "content": {
+                "range_min": 120,
+                "range_max": 180
+              }
+            }
+          ]
+        }
       },
       {
         "id": "attack_owner",
@@ -1711,7 +1764,7 @@
           ],
           "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_wild_unmounted/minecraft:behavior.nearest_attackable_target/",
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild_unmounted/minecraft:behavior.nearest_attackable_target/",
               "content": [
                 {
                   "filters": {
@@ -2202,6 +2255,27 @@
         "dataType": 1
       },
       {
+        "id": "target_acquisition_probability",
+        "title": "Target Acquisition Probability",
+        "description": "Probability (0.0 to 1.0) that this entity will accept a found target. Checked each time a valid target is found during scanning.",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/nautilus.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:nautilus_wild_adult_calm/minecraft:behavior.nearest_attackable_target/",
+              "content": 0.5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild_unmounted/minecraft:behavior.nearest_attackable_target/",
+              "content": 0.5
+            }
+          ]
+        }
+      },
+      {
         "id": "target_invisible_multiplier",
         "title": "Target Invisible Multiplier",
         "description": "Multiplied with the target's armor coverage percentage to modify \"max_dist\" when detecting an invisible target.",
@@ -2380,47 +2454,6 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:baby_wild/minecraft:behavior.nearest_attackable_target/",
               "content": 4
-            }
-          ]
-        }
-      },
-      {
-        "id": "attack_interval",
-        "title": "Attack Interval",
-        "dataType": 7,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cave_spider.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/",
-              "content": 5
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.nearest_attackable_target/",
-              "content": 10
-            }
-          ],
-          "/vanilla/behavior_pack/entities/enderman.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
-              "content": 10
-            }
-          ],
-          "/vanilla/behavior_pack/entities/llama.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
-              "content": 16
-            }
-          ],
-          "/vanilla/behavior_pack/entities/spider.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/",
-              "content": 5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/trader_llama.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
-              "content": 16
             }
           ]
         }
@@ -3339,6 +3372,11 @@
             "reselect_targets": true,
             "within_radius": 25,
             "must_see_forget_duration": 17,
+            "attack_interval": {
+              "range_min": 120,
+              "range_max": 180
+            },
+            "target_acquisition_probability": 0.5,
             "entity_types": [
               {
                 "filters": {
@@ -4425,13 +4463,18 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_wild_unmounted/minecraft:behavior.nearest_attackable_target/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild_unmounted/minecraft:behavior.nearest_attackable_target/",
           "content": {
             "priority": 5,
             "must_see": true,
             "reselect_targets": true,
             "within_radius": 25,
             "must_see_forget_duration": 17,
+            "attack_interval": {
+              "range_min": 120,
+              "range_max": 180
+            },
+            "target_acquisition_probability": 0.5,
             "entity_types": [
               {
                 "filters": {

@@ -13,6 +13,13 @@ Properties of toggle group property item list entry
 
 ## Properties
 
+### **enabled**
+`read-only enabled?: boolean;`
+
+Optional enabled state of the entry. If undefined it will be true.
+
+Type: *boolean*
+
 ### **icon**
 `read-only icon?: string;`
 

@@ -46,6 +46,7 @@ Type: *string*
 
 ## Methods
 - [getBlockPriorities](#getblockpriorities)
+- [getBlockTagPriorities](#getblocktagpriorities)
 - [getEntityPriorities](#getentitypriorities)
 
 ### **getBlockPriorities**
@@ -56,6 +57,18 @@ getBlockPriorities(): Record<string, number>
 Gets the priority settings used for block targeting.
 
 **Returns** Record<*string*, *number*> - The record mapping block Ids to their priority settings. Larger numbers have greater priority.
+  
+Notes:
+- This function can throw errors.
+
+### **getBlockTagPriorities**
+`
+getBlockTagPriorities(): Record<string, number>
+`
+
+Gets the priority settings used for block targeting.
+
+**Returns** Record<*string*, *number*> - The record mapping block tags to their priority settings. Larger numbers have greater priority.
   
 Notes:
 - This function can throw errors.

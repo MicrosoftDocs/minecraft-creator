@@ -14,8 +14,8 @@ ms.date: 02/11/2025
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| buildMeta | *not set* | String |  |  | 
-| major | *not set* | Integer number |  |  | 
-| minor | *not set* | Integer number |  |  | 
-| patch | *not set* | Integer number |  |  | 
-| preRelease | *not set* | String |  |  | 
+| buildMeta |  | String |  |  | 
+| major | 0 | Integer number |  |  | 
+| minor | 0 | Integer number |  |  | 
+| patch | 0 | Integer number |  |  | 
+| preRelease |  | String |  |  | 

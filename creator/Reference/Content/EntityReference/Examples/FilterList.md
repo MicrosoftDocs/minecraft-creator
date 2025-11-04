@@ -27,6 +27,7 @@ ms.date: 02/11/2025
 | [has_damaged_equipment](Filters/has_damaged_equipment.md)| Tests for the presence of a damaged named item in the designated slot of the subject entity. |
 | [has_equipment](Filters/has_equipment.md)| Tests for the presence of a named item in the designated slot of the subject entity. |
 | [has_equipment_tag](Filters/has_equipment_tag.md)| Tests for the presence of an item with the named tag in the designated slot of the subject entity. |
+| [has_item_with_component](Filters/has_item_with_component.md)| Returns true when the subject entity is holding a item with the specified component. |
 | [has_mob_effect](Filters/has_mob_effect.md)| Tests whether the Subject has the specified mob effect. |
 | [has_nametag](Filters/has_nametag.md)| Tests if the subject has been given a custom name. |
 | [has_property](Filters/has_property.md)| Tests for the presence of a property of the subject entity. |
@@ -57,6 +58,7 @@ ms.date: 02/11/2025
 | [is_brightness](Filters/is_brightness.md)| Tests the current brightness against a provided value in the range (0.0f, 1.0f). |
 | [is_climbing](Filters/is_climbing.md)| Returns true if the subject entity is climbing. |
 | [is_color](Filters/is_color.md)| Returns true if the subject entity is the named color. |
+| [is_controlling_passenger_family](Filters/is_controlling_passenger_family.md)| Returns true when the subject entity's controlling passenger is a member of the named family. |
 | [is_daytime](Filters/is_daytime.md)| Returns true during the daylight hours. |
 | [is_difficulty](Filters/is_difficulty.md)| Tests the current difficulty level of the game. |
 | [is_family](Filters/is_family.md)| Returns true when the subject entity is a member of the named family. |

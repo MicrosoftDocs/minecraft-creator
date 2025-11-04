@@ -4117,6 +4117,8 @@ Golden Horse Armor
 Diamond Horse Armor
 - `diamond_horse_armor`
 Diamond Horse Armor
+- `minecraft:netherite_horse_armor`
+- `netherite_horse_armor`
 - `minecraft:wolf_armor`
 - `wolf_armor`
 - `minecraft:copper_nautilus_armor`

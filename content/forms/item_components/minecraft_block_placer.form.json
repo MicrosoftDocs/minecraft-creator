@@ -93,12 +93,14 @@
         "id": "replace_block_item",
         "title": "Replace Block Item",
         "description": "If true, the item will be registered as the item for this block. This item will be returned by default when the block is broken/picked. Note: the identifier for this item must match the block's identifier for this field to be valid.",
-        "dataType": 1
+        "dataType": 1,
+        "defaultValue": false
       },
       {
         "id": "use_on",
         "description": "List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed.",
         "dataType": 15,
+        "defaultValue": [],
         "subForm": {
           "id": "use_on",
           "title": "Use On",
@@ -106,12 +108,14 @@
             {
               "id": "name",
               "title": "Name",
-              "dataType": 2
+              "dataType": 2,
+              "defaultValue": ""
             },
             {
               "id": "states",
               "title": "States",
               "dataType": 0,
+              "defaultValue": {},
               "alternates": [
                 {
                   "id": "states",
@@ -126,7 +130,8 @@
             {
               "id": "tags",
               "title": "Tags",
-              "dataType": 2
+              "dataType": 2,
+              "defaultValue": ""
             }
           ]
         },

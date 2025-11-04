@@ -112,7 +112,7 @@ Defines surface material for steep slopes.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
@@ -244,7 +244,7 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
@@ -255,7 +255,7 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
@@ -266,7 +266,7 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
@@ -277,7 +277,7 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
@@ -288,7 +288,7 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
@@ -347,7 +347,7 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
@@ -358,7 +358,7 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
@@ -411,7 +411,7 @@ Generates surface on blocks with non-solid blocks above or below.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
@@ -422,7 +422,7 @@ Generates surface on blocks with non-solid blocks above or below.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
@@ -433,7 +433,7 @@ Generates surface on blocks with non-solid blocks above or below.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 

@@ -9,7 +9,8 @@
         "id": "category",
         "title": "CreativeItemCategory",
         "description": "Creative category where this item belongs. Defaults to \"none\".",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": "none"
       },
       {
         "id": "group",

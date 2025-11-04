@@ -10,13 +10,15 @@
         "id": "bottom",
         "title": "Bottom",
         "description": "The padding from the bottom of the world",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       },
       {
         "id": "top",
         "title": "Top",
         "description": "The padding from the top of the world",
-        "dataType": 0
+        "dataType": 0,
+        "defaultValue": 0
       }
     ]
   }

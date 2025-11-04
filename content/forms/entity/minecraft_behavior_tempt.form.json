@@ -352,7 +352,7 @@
           ],
           "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tameable/minecraft:behavior.tempt/",
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tameable/minecraft:behavior.tempt/",
               "content": [
                 "pufferfish",
                 "pufferfish_bucket"
@@ -651,7 +651,7 @@
           ],
           "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tameable/minecraft:behavior.tempt/",
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tameable/minecraft:behavior.tempt/",
               "content": 2
             }
           ],
@@ -1187,7 +1187,7 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tameable/minecraft:behavior.tempt/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tameable/minecraft:behavior.tempt/",
           "content": {
             "priority": 2,
             "speed_multiplier": 2,
@@ -1201,7 +1201,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:behavior.tempt/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame/minecraft:behavior.tempt/",
           "content": {
             "priority": 2,
             "speed_multiplier": 2,

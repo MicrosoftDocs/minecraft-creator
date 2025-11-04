@@ -145,12 +145,12 @@ Notes:
 
 ### **addClipboardComponent**
 `
-addClipboardComponent(componentName: string, clipboardItem?: ClipboardItem, options?: WidgetComponentClipboardOptions): WidgetComponentClipboard
+addClipboardComponent(componentName: string, clipboardItem?: ClipboardItem | EditorStructure, options?: WidgetComponentClipboardOptions): WidgetComponentClipboard
 `
 
 #### **Parameters**
 - **componentName**: *string*
-- **clipboardItem**?: [*ClipboardItem*](ClipboardItem.md) = `null`
+- **clipboardItem**?: [*ClipboardItem*](ClipboardItem.md) | [*EditorStructure*](EditorStructure.md) = `null`
 - **options**?: [*WidgetComponentClipboardOptions*](WidgetComponentClipboardOptions.md) = `null`
 
 **Returns** [*WidgetComponentClipboard*](WidgetComponentClipboard.md)

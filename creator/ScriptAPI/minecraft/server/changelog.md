@@ -178,9 +178,11 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`SpecificEnchantFunction`](SpecificEnchantFunction.md)*
 #### Changed *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
 - Added property *[`watchdogTerminate`](SystemBeforeEvents.md#watchdogterminate)*
+#### Added *[`TickingAreaManager`](TickingAreaManager.md)*
 #### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
 #### Changed *[`World`](World.md)*
+- Added property *[`tickingAreaManager`](World.md#tickingareamanager)*
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
 - Added function *[`getAimAssist`](World.md#getaimassist)*
 - Added function *[`getPackSettings`](World.md#getpacksettings)*
@@ -210,6 +212,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
 - Added value `Potion`
 #### Added enum [`LiquidSettings`](LiquidSettings.md)
+#### Added enum [`TickingAreaErrorReason`](TickingAreaErrorReason.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
 ## 2.3.0
 #### Added *[`BiomeType`](BiomeType.md)*

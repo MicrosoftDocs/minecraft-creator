@@ -59,7 +59,8 @@
         "id": "tags",
         "title": "Tags",
         "description": "An array that can contain multiple item tags.",
-        "dataType": 17
+        "dataType": 17,
+        "defaultValue": []
       }
     ]
   }

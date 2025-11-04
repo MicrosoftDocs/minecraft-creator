@@ -170,7 +170,8 @@
                   "horsearmoriron",
                   "horsearmorgold",
                   "horsearmordiamond",
-                  "minecraft:copper_horse_armor"
+                  "minecraft:copper_horse_armor",
+                  "minecraft:netherite_horse_armor"
                 ]
               }
             ]
@@ -290,7 +291,8 @@
                   "horsearmoriron",
                   "horsearmorgold",
                   "horsearmordiamond",
-                  "minecraft:copper_horse_armor"
+                  "minecraft:copper_horse_armor",
+                  "minecraft:netherite_horse_armor"
                 ]
               }
             ]
@@ -299,7 +301,7 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame/minecraft:equippable/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame/minecraft:equippable/",
           "content": {
             "slots": [
               {

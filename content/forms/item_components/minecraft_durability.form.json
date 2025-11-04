@@ -231,6 +231,10 @@
         "title": "Damage Chance",
         "description": "Specifies the percentage chance of this item losing durability. Default is set to 100. Defined as an int range with min and max value.",
         "dataType": 16,
+        "defaultValue": {
+          "max": 100,
+          "min": 100
+        },
         "subFormId": "item_components/intrange"
       },
       {

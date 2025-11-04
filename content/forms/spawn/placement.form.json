@@ -10,25 +10,29 @@
         "id": "heightmap",
         "title": "Heightmap",
         "description": "Defines the heightmap filter for initial entity placement during chunk loading.",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": ""
       },
       {
         "id": "spawn_obstruction_predicate",
         "title": "Spawn Obstruction Predicate",
         "description": "Checks for obstructions that might prevent entity spawning.",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": ""
       },
       {
         "id": "spawn_predicate",
         "title": "Spawn Predicate",
         "description": "Determines if an entity is valid to spawn based on specific conditions.",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": ""
       },
       {
         "id": "type",
         "title": "Type",
         "description": "Specifies the environment where the entity can spawn (e.g., on ground, in water, etc.).",
-        "dataType": 2
+        "dataType": 2,
+        "defaultValue": ""
       }
     ]
   }

@@ -16,6 +16,7 @@ A component that applies a mob effect to entities that get within range.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
+| ambient | false | Boolean true/false | If the effect is considered an ambient effect (like the ones applied by Beacons or Conduits). |  | 
 | cooldown_time | 0 | Integer number | Time in seconds to wait between each application of the effect. |  | 
 | effect_range | 0.2 | Decimal number | How close a hostile entity must be to have the mob effect applied. |  | 
 | effect_time | 10 | Integer number | How long the applied mob effect lasts in seconds. Can also be set to "infinite" |  | 

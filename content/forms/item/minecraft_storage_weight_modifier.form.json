@@ -11,6 +11,7 @@
         "title": "Weight In Storage Item",
         "description": "The weight of this item when inside another Storage Item. Default is 4. 0 means item is not allowed in another Storage Item.",
         "dataType": 0,
+        "defaultValue": 4,
         "samples": {
           "/vanilla/behavior_pack/items/black_bundle.json": [
             {

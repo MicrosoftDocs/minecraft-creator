@@ -21,7 +21,7 @@
           ],
           "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:dash_action/",
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_in_water/minecraft:dash_action/",
               "content": true
             }
           ]
@@ -108,11 +108,11 @@
           ],
           "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:dash_action/",
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_in_water/minecraft:dash_action/",
               "content": 154
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_on_ground/minecraft:dash_action/",
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_on_ground/minecraft:dash_action/",
               "content": 42
             }
           ]
@@ -195,7 +195,7 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:dash_action/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_in_water/minecraft:dash_action/",
           "content": {
             "cooldown_time": 2,
             "horizontal_momentum": 154,
@@ -205,7 +205,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_on_ground/minecraft:dash_action/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_on_ground/minecraft:dash_action/",
           "content": {
             "cooldown_time": 2,
             "horizontal_momentum": 42,

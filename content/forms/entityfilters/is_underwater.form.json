@@ -208,17 +208,15 @@
       ],
       "/vanilla/behavior_pack/entities/husk.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:look_to_start_zombie_transformation/minecraft:environment_sensor/triggers/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:look_to_start_zombie_transformation/minecraft:environment_sensor/triggers/0/filters/",
           "content": {
-            "test": "is_underwater",
-            "subject": "self"
+            "test": "is_underwater"
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:start_zombie_transformation/minecraft:environment_sensor/triggers/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:start_zombie_transformation/minecraft:environment_sensor/triggers/0/filters/",
           "content": {
             "test": "is_underwater",
-            "subject": "self",
             "value": false
           }
         },
@@ -302,20 +300,20 @@
       ],
       "/vanilla/behavior_pack/entities/zombie.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:look_to_start_drowned_transformation/minecraft:environment_sensor/triggers/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:look_to_start_drowned_transformation/minecraft:environment_sensor/triggers/0/filters/",
           "content": {
             "test": "is_underwater"
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:start_drowned_transformation/minecraft:environment_sensor/triggers/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:start_drowned_transformation/minecraft:environment_sensor/triggers/0/filters/",
           "content": {
             "test": "is_underwater",
             "value": false
           }
         },
         {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/filters/",
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/",
           "content": {
             "test": "is_underwater"
           }

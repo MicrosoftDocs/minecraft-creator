@@ -30,6 +30,13 @@ Icon image of the property item.
 
 Type: *string*
 
+### **shrinkToIcon**
+`shrinkToIcon?: boolean;`
+
+Shrinks button to icon size if button has an icon.
+
+Type: *boolean*
+
 ### **title**
 `title?: LocalizedString;`
 
@@ -45,8 +52,8 @@ Tooltip description of the property item.
 Type: *BasicTooltipContent*
 
 ### **variant**
-`variant?: ButtonPropertyItemVariant;`
+`variant?: ButtonVariant;`
 
 The variant for the button. By default it is Primary.
 
-Type: *ButtonPropertyItemVariant*
+Type: *ButtonVariant*

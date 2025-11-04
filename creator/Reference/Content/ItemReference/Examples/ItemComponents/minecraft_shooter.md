@@ -27,10 +27,10 @@ Compels an item to shoot projectiles, similarly to a bow or crossbow. Must have 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| ammunition | *not set* | [Ammunition](#item-components-ammunition) item | Ammunition. | My Sword Shoot: `[{"item":"minecraft:snowball","use_offhand":true,"search_inventory":true,"use_in_creative":true}]` | 
-| charge_on_draw | *not set* | Boolean true/false | Charge on draw? Default is set to false. |  | 
-| max_draw_duration | *not set* | Decimal number | Draw Duration. Default is set to 0. | My Sword Shoot: `1` | 
-| scale_power_by_draw_duration | *not set* | Boolean true/false | Scale power by draw duration? Default is set to false. | My Sword Shoot: `true` | 
+| ammunition | [] | [Ammunition](#item-components-ammunition) item | Ammunition. | My Sword Shoot: `[{"item":"minecraft:snowball","use_offhand":true,"search_inventory":true,"use_in_creative":true}]` | 
+| charge_on_draw | false | Boolean true/false | Charge on draw? Default is set to false. |  | 
+| max_draw_duration | 0 | Decimal number | Draw Duration. Default is set to 0. | My Sword Shoot: `1` | 
+| scale_power_by_draw_duration | false | Boolean true/false | Scale power by draw duration? Default is set to false. | My Sword Shoot: `true` | 
 
 ## Item Components Ammunition
 
@@ -40,9 +40,9 @@ Compels an item to shoot projectiles, similarly to a bow or crossbow. Must have 
 |:----------|:-------------|:----|:-----------|:------------- |
 | item | *not set* | String | Ammunition item description identifier. |  | 
 | item (Alternate 1) | *not set* | Keyed set of strings |  |  | 
-| search_inventory | *not set* | Boolean true/false | Can search inventory? Default is set to false. |  | 
-| use_in_creative | *not set* | Boolean true/false | Can use in creative mode? Default is set to false. |  | 
-| use_offhand | *not set* | Boolean true/false | Can use off-hand? Default is set to false. |  | 
+| search_inventory | false | Boolean true/false | Can search inventory? Default is set to false. |  | 
+| use_in_creative | false | Boolean true/false | Can use in creative mode? Default is set to false. |  | 
+| use_offhand | false | Boolean true/false | Can use off-hand? Default is set to false. |  | 
 
 ## Samples
 

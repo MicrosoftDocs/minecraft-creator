@@ -8,6 +8,7 @@
         "id": "horizontal_range",
         "title": "Horizontal Range",
         "dataType": 24,
+        "defaultValue": 1,
         "alternates": [
           {
             "id": "horizontal_range",

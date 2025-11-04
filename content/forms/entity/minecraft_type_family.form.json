@@ -163,7 +163,7 @@
             {
               "path": "/minecraft:entity/components/minecraft:type_family/",
               "content": [
-                "camel",
+                "camel_husk",
                 "mob",
                 "undead"
               ]
@@ -457,18 +457,6 @@
               "path": "/minecraft:entity/components/minecraft:type_family/",
               "content": [
                 "horse",
-                "mob"
-              ]
-            }
-          ],
-          "/vanilla/behavior_pack/entities/husk.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:type_family/",
-              "content": [
-                "husk",
-                "zombie",
-                "undead",
-                "monster",
                 "mob"
               ]
             }
@@ -1008,7 +996,7 @@
               "path": "/minecraft:entity/components/minecraft:type_family/",
               "content": [
                 "aquatic",
-                "zombienautilus",
+                "zombie_nautilus",
                 "undead",
                 "mob"
               ]
@@ -1627,7 +1615,7 @@
           "path": "/minecraft:entity/components/minecraft:type_family/",
           "content": {
             "family": [
-              "camel",
+              "camel_husk",
               "mob",
               "undead"
             ]
@@ -1992,20 +1980,6 @@
           "content": {
             "family": [
               "horse",
-              "mob"
-            ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/husk.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:type_family/",
-          "content": {
-            "family": [
-              "husk",
-              "zombie",
-              "undead",
-              "monster",
               "mob"
             ]
           }
@@ -2677,7 +2651,7 @@
           "content": {
             "family": [
               "aquatic",
-              "zombienautilus",
+              "zombie_nautilus",
               "undead",
               "mob"
             ]

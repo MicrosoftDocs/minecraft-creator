@@ -9,6 +9,7 @@
         "id": "component_groups",
         "title": "Component Groups",
         "dataType": 16,
+        "defaultValue": {},
         "subFormId": "entity/entity_component_definitions"
       },
       {
