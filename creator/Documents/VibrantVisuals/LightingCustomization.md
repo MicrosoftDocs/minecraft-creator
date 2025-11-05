@@ -97,7 +97,7 @@ By default, the game will treat the following blocks as point lights. This funct
 
 To change the strength of a point light, refer to the [documentation for light emission block components](../../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md). Note that this light emission value is a separate concept from the "Emissive" value described in PBR or Texture Set documentation.
 
-The `light_color` value can be expressed either as an array of three numerical values in the range of 0&ndash;255, or as a six-digit hexadecimal string.
+The `light_color` value can be expressed either as an array of three numerical RGB values in the range of 0&ndash;255, or as a six-digit RGB hexadecimal string.
 
 ## PBR uniforms
 
