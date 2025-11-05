@@ -71,7 +71,7 @@ To change how far a static light can 'reach', in terms of blocks, refer to the [
 
 The `light_color` of a static light value can be expressed either as an array of three numerical values in the range of 0&ndash;255, or as a six-digit hexadecimal string. Any light-emitting block without a `static_light` entry in **local_lighting/local_lighting.json** will instead use the standard Minecraft light color. By default, the game will provide `static_light` colors for several blocks. This functionality can't be changed, but you can override their color if you include an entry for that block in your pack's **local_lighting/local_lighting.json**.
 
-It's best practice to select a handful of colors (16 at most) and assign only those colors to any `static_light`.
+For best practice and performance, reuse the same colors across multiple blocks where possible. While there currently isn't a limit on the number of colors that can be used, having a few unique colors reused across multiple blocks can help with performance compared to every block having its own unique color.
 
 ### Point lights
 A point light emits light from a singular point in space at the center of the block, thus the name "point" light. Like directional lights, they produce sophisticated lighting effects such as diffuse and specular highlights and dynamic shadows. This modeling works well for blocks such as torches, but isn't as good for conveying blocks with larger, discrete shapes, such as lava blocks or campfires. 
