@@ -59,7 +59,7 @@ The sky's `"intensity"` value is a factor from 0.1 to 1.0 that controls how much
 
 ## Local lights
 The sun and moon's directional lighting can be considered "global lighting" because they impact everything in the scene. Additionally, any light contribution that is constrained to some limited area can be considered "local lighting".
-The `"local_lighting"` object alongside the [lightEmission block component](../../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md) allows you to specify 
+The `"local_lighting"` object alongside the [light emission block component](../../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md) allows you to specify 
 - Blocks that should be considered a local light
 - The type of local light those blocks should be (see below)
 - The color of light the block should emit
@@ -67,7 +67,7 @@ The `"local_lighting"` object alongside the [lightEmission block component](../.
 ### Static lights
 A static light is part of a simpler lighting system that is baked into the scene. These lights don't provide specular highlights or dynamic shadows and are fixed in space and in brightness. All light-emitting blocks you’re familiar with such as torches, glowstone, and lanterns already use static lighting, with a uniform light color. 
 
-To change how far a static light can 'reach', in terms of blocks, refer to the [documentation for lightEmission block components](../../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md). Note that this lightEmission value is a separate concept from the "Emissive" value described in PBR or Texture Set documentation. Additionally, the [lightEmission block component](../../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md) is used during gameplay (eg. mob spawning).
+To change how far a static light can 'reach', in terms of blocks, refer to the [documentation for light emission block components](../../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md). Note that this light emission value is a separate concept from the "Emissive" value described in PBR or Texture Set documentation. Additionally, the [light emission block component](../../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md) is used during gameplay (eg. mob spawning).
 
 The `light_color` of a static light value can be expressed either as an array of three numerical values in the range of 0&ndash;255, or as a six-digit hexadecimal string. Any light-emitting block without a `static_light` entry in **local_lighting/local_lighting.json** will instead use the standard Minecraft light color. By default, the game will provide `static_light` colors for several blocks. This functionality can't be changed, but you can override their color if you include an entry for that block in your pack's **local_lighting/local_lighting.json**.
 
@@ -95,7 +95,7 @@ By default, the game will treat the following blocks as point lights. This funct
 - `minecraft:copper_lantern` as `#B8EF8D`
    - Includes all waxed, weather, and oxidized variants
 
-To change the strength of a point light, refer to the [documentation for lightEmission block components](../../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md). Note that this lightEmission value is a separate concept from the "Emissive" value described in PBR or Texture Set documentation.
+To change the strength of a point light, refer to the [documentation for light emission block components](../../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md). Note that this light emission value is a separate concept from the "Emissive" value described in PBR or Texture Set documentation.
 
 The `light_color` value can be expressed either as an array of three numerical values in the range of 0&ndash;255, or as a six-digit hexadecimal string.
 
