@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.21.130-beta.26 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.21.130-beta.27 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -36,6 +36,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.130
 - [BlockTableOperationType](BlockTableOperationType.md)
 - [BoolPropertyItemVariant](BoolPropertyItemVariant.md)
 - [BrushDirectionalPlacementMode](BrushDirectionalPlacementMode.md)
+- [BrushElevationMode](BrushElevationMode.md)
 - [ButtonVariant](ButtonVariant.md)
 - [ColorPickerPropertyItemVariant](ColorPickerPropertyItemVariant.md)
 - [ComboBoxPropertyItemDataType](ComboBoxPropertyItemDataType.md)
@@ -344,11 +345,14 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.130
 - [IVector2PropertyItemOptions](IVector2PropertyItemOptions.md)
 - [IVector3PropertyItem](IVector3PropertyItem.md)
 - [IVector3PropertyItemOptions](IVector3PropertyItemOptions.md)
+- [LocalizationEntry](LocalizationEntry.md)
 - [LogProperties](LogProperties.md)
 - [ModalDialogCreationParams](ModalDialogCreationParams.md)
 - [ModalToolCreationParameters](ModalToolCreationParameters.md)
 - [ProjectExportOptions](ProjectExportOptions.md)
 - [QuickExtrudeProperties](QuickExtrudeProperties.md)
+- [SelectionManifestData](SelectionManifestData.md)
+- [SelectionManifestEntry](SelectionManifestEntry.md)
 - [WeightedBlock](WeightedBlock.md)
 - [WidgetComponentBaseOptions](WidgetComponentBaseOptions.md)
 - [WidgetComponentBoundingBoxOptions](WidgetComponentBoundingBoxOptions.md)

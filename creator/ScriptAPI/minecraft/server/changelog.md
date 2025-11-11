@@ -50,6 +50,7 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
 #### Added *[`BlockComponentBlockBreakEvent`](BlockComponentBlockBreakEvent.md)*
+#### Added *[`BlockComponentRedstoneUpdateEvent`](BlockComponentRedstoneUpdateEvent.md)*
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
 - Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
 #### Added *[`BlockPrecipitationInteractionsComponent`](BlockPrecipitationInteractionsComponent.md)*
@@ -134,8 +135,6 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PackSettingChangeAfterEventSignal`](PackSettingChangeAfterEventSignal.md)*
 #### Added *[`PassengerOfEntityCondition`](PassengerOfEntityCondition.md)*
 #### Changed *[`Player`](Player.md)*
-- Changed function *[`clearPropertyOverridesForEntity`](Player.md#clearpropertyoverridesforentity)*
-  - Changed argument `targetEntity` type from [*Entity*](Entity.md) to [*Entity*](Entity.md) | *string*
 - Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`getAimAssist`](Player.md#getaimassist)*
 - Added function *[`getControlScheme`](Player.md#getcontrolscheme)*

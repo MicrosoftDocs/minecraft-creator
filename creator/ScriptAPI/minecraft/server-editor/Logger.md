@@ -21,7 +21,7 @@ The logger class presents 4 different output channels which can be used to send 
 
 ### **debug**
 `
-debug(message: string, properties?: LogProperties): void
+debug(message: LocalizationEntry | string, properties?: LogProperties): void
 `
 
 A `debug` output channel generally used during the development process of editor extensions.  This channel defaults to `hidden` in the log window (unless explicitly enabled).
@@ -29,7 +29,7 @@ A `debug` output channel generally used during the development process of editor
 Once your editor extension development process is complete, and you're ready to ship/share your extension - we generally recommend that you remove any references to this log channel to avoid a noisy experience for other users
 
 #### **Parameters**
-- **message**: *string*
+- **message**: [*LocalizationEntry*](LocalizationEntry.md) | *string*
   
   The message string to send to the log window
 - **properties**?: [*LogProperties*](LogProperties.md) = `null`
@@ -40,13 +40,13 @@ Notes:
 
 ### **error**
 `
-error(message: string, properties?: LogProperties): void
+error(message: LocalizationEntry | string, properties?: LogProperties): void
 `
 
 The error channel is generally used when the editor extension experiences an error (either a program error in executing logic unexpectedly, or an error in the input or output to/from a player).  Use this channel sparingly - it's meant to communicate important problems to the player
 
 #### **Parameters**
-- **message**: *string*
+- **message**: [*LocalizationEntry*](LocalizationEntry.md) | *string*
   
   The message string to send to the log window
 - **properties**?: [*LogProperties*](LogProperties.md) = `null`
@@ -57,13 +57,13 @@ Notes:
 
 ### **info**
 `
-info(message: string, properties?: LogProperties): void
+info(message: LocalizationEntry | string, properties?: LogProperties): void
 `
 
 The info channel is intended to communicate general, non-fatal or non-erroneous information to the player that can generally be safely ignored if they choose to do so.
 
 #### **Parameters**
-- **message**: *string*
+- **message**: [*LocalizationEntry*](LocalizationEntry.md) | *string*
   
   The message string to send to the log window
 - **properties**?: [*LogProperties*](LogProperties.md) = `null`
@@ -74,13 +74,13 @@ Notes:
 
 ### **warning**
 `
-warning(message: string, properties?: LogProperties): void
+warning(message: LocalizationEntry | string, properties?: LogProperties): void
 `
 
 The warning channel is intended to inform the user of "potential" issues (missing inputs, values out of range, things that cannot be found) but are not fatal and execution can still be completed.
 
 #### **Parameters**
-- **message**: *string*
+- **message**: [*LocalizationEntry*](LocalizationEntry.md) | *string*
   
   The message string to send to the log window
 - **properties**?: [*LogProperties*](LogProperties.md) = `null`

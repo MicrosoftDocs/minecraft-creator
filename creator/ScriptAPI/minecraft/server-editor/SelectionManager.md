@@ -22,3 +22,56 @@ Type: [*SelectionContainerEntity*](SelectionContainerEntity.md)
 `read-only volume: SelectionContainerVolume;`
 
 Type: [*SelectionContainerVolume*](SelectionContainerVolume.md)
+
+## Methods
+- [deselectBlocks](#deselectblocks)
+- [generateManifest](#generatemanifest)
+- [getCurrentManifest](#getcurrentmanifest)
+- [replaceBlocks](#replaceblocks)
+
+### **deselectBlocks**
+`
+deselectBlocks(blockIdentifier: string): Promise<number>
+`
+
+#### **Parameters**
+- **blockIdentifier**: *string*
+
+**Returns** Promise&lt;*number*&gt;
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **generateManifest**
+`
+generateManifest(): Promise<SelectionManifestData>
+`
+
+**Returns** Promise&lt;[*SelectionManifestData*](SelectionManifestData.md)&gt;
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **getCurrentManifest**
+`
+getCurrentManifest(): SelectionManifestData | undefined
+`
+
+**Returns** [*SelectionManifestData*](SelectionManifestData.md) | *undefined*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **replaceBlocks**
+`
+replaceBlocks(fromBlockIdentifier: string, toBlockIdentifier: string): Promise<number>
+`
+
+#### **Parameters**
+- **fromBlockIdentifier**: *string*
+- **toBlockIdentifier**: *string*
+
+**Returns** Promise&lt;*number*&gt;
+  
+Notes:
+- This function can't be called in read-only mode.

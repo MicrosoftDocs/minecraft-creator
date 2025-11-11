@@ -3336,10 +3336,6 @@ Spider Eye
 Chicken Spawn Egg
 - `chicken_spawn_egg`
 Chicken Spawn Egg
-- `minecraft:bee_spawn_egg`
-Bee Spawn Egg
-- `bee_spawn_egg`
-Bee Spawn Egg
 - `minecraft:cow_spawn_egg`
 Cow Spawn Egg
 - `cow_spawn_egg`
@@ -3352,70 +3348,92 @@ Pig Spawn Egg
 Sheep Spawn Egg
 - `sheep_spawn_egg`
 Sheep Spawn Egg
-- `minecraft:wolf_spawn_egg`
-Wolf Spawn Egg
-- `wolf_spawn_egg`
-Wolf Spawn Egg
-- `minecraft:polar_bear_spawn_egg`
-Polar Bear Spawn Egg
-- `polar_bear_spawn_egg`
-Polar Bear Spawn Egg
-- `minecraft:ocelot_spawn_egg`
-Ocelot Spawn Egg
-- `ocelot_spawn_egg`
-Ocelot Spawn Egg
-- `minecraft:cat_spawn_egg`
-Cat Spawn Egg
-- `cat_spawn_egg`
-Cat Spawn Egg
-- `minecraft:mooshroom_spawn_egg`
-Mooshroom Spawn Egg
-- `mooshroom_spawn_egg`
-Mooshroom Spawn Egg
-- `minecraft:bat_spawn_egg`
-Bat Spawn Egg
-- `bat_spawn_egg`
-Bat Spawn Egg
-- `minecraft:parrot_spawn_egg`
-Parrot Spawn Egg
-- `parrot_spawn_egg`
-Parrot Spawn Egg
-- `minecraft:rabbit_spawn_egg`
-Rabbit Spawn Egg
-- `rabbit_spawn_egg`
-Rabbit Spawn Egg
-- `minecraft:llama_spawn_egg`
-Llama Spawn Egg
-- `llama_spawn_egg`
-Llama Spawn Egg
-- `minecraft:horse_spawn_egg`
-Horse Spawn Egg
-- `horse_spawn_egg`
-Horse Spawn Egg
+- `minecraft:camel_spawn_egg`
+- `camel_spawn_egg`
 - `minecraft:donkey_spawn_egg`
 Donkey Spawn Egg
 - `donkey_spawn_egg`
 Donkey Spawn Egg
+- `minecraft:horse_spawn_egg`
+Horse Spawn Egg
+- `horse_spawn_egg`
+Horse Spawn Egg
 - `minecraft:mule_spawn_egg`
 Mule Spawn Egg
 - `mule_spawn_egg`
 Mule Spawn Egg
-- `minecraft:skeleton_horse_spawn_egg`
-Skeleton Horse Spawn Egg
-- `skeleton_horse_spawn_egg`
-Skeleton Horse Spawn Egg
-- `minecraft:zombie_horse_spawn_egg`
-Zombie Horse Spawn Egg
-- `zombie_horse_spawn_egg`
-Zombie Horse Spawn Egg
-- `minecraft:tropical_fish_spawn_egg`
-Tropical Fish Spawn Egg
-- `tropical_fish_spawn_egg`
-Tropical Fish Spawn Egg
+- `minecraft:cat_spawn_egg`
+Cat Spawn Egg
+- `cat_spawn_egg`
+Cat Spawn Egg
+- `minecraft:parrot_spawn_egg`
+Parrot Spawn Egg
+- `parrot_spawn_egg`
+Parrot Spawn Egg
+- `minecraft:wolf_spawn_egg`
+Wolf Spawn Egg
+- `wolf_spawn_egg`
+Wolf Spawn Egg
+- `minecraft:armadillo_spawn_egg`
+- `armadillo_spawn_egg`
+- `minecraft:bat_spawn_egg`
+Bat Spawn Egg
+- `bat_spawn_egg`
+Bat Spawn Egg
+- `minecraft:bee_spawn_egg`
+Bee Spawn Egg
+- `bee_spawn_egg`
+Bee Spawn Egg
+- `minecraft:fox_spawn_egg`
+Fox Spawn Egg
+- `fox_spawn_egg`
+Fox Spawn Egg
+- `minecraft:goat_spawn_egg`
+Goat Spawn Egg
+- `goat_spawn_egg`
+Goat Spawn Egg
+- `minecraft:llama_spawn_egg`
+Llama Spawn Egg
+- `llama_spawn_egg`
+Llama Spawn Egg
+- `minecraft:ocelot_spawn_egg`
+Ocelot Spawn Egg
+- `ocelot_spawn_egg`
+Ocelot Spawn Egg
+- `minecraft:panda_spawn_egg`
+Panda Spawn Egg
+- `panda_spawn_egg`
+Panda Spawn Egg
+- `minecraft:polar_bear_spawn_egg`
+Polar Bear Spawn Egg
+- `polar_bear_spawn_egg`
+Polar Bear Spawn Egg
+- `minecraft:rabbit_spawn_egg`
+Rabbit Spawn Egg
+- `rabbit_spawn_egg`
+Rabbit Spawn Egg
+- `minecraft:axolotl_spawn_egg`
+Axolotl Spawn Egg
+- `axolotl_spawn_egg`
+Axolotl Spawn Egg
 - `minecraft:cod_spawn_egg`
 Cod Spawn Egg
 - `cod_spawn_egg`
 Cod Spawn Egg
+- `minecraft:dolphin_spawn_egg`
+Dolphin Spawn Egg
+- `dolphin_spawn_egg`
+Dolphin Spawn Egg
+- `minecraft:frog_spawn_egg`
+Frog Spawn Egg
+- `frog_spawn_egg`
+Frog Spawn Egg
+- `minecraft:glow_squid_spawn_egg`
+Glow Squid Spawn Egg
+- `glow_squid_spawn_egg`
+Glow Squid Spawn Egg
+- `minecraft:nautilus_spawn_egg`
+- `nautilus_spawn_egg`
 - `minecraft:pufferfish_spawn_egg`
 Pufferfish Spawn Egg
 - `pufferfish_spawn_egg`
@@ -3424,176 +3442,42 @@ Pufferfish Spawn Egg
 Salmon Spawn Egg
 - `salmon_spawn_egg`
 Salmon Spawn Egg
-- `minecraft:dolphin_spawn_egg`
-Dolphin Spawn Egg
-- `dolphin_spawn_egg`
-Dolphin Spawn Egg
-- `minecraft:turtle_spawn_egg`
-Turtle Spawn Egg
-- `turtle_spawn_egg`
-Turtle Spawn Egg
-- `minecraft:panda_spawn_egg`
-Panda Spawn Egg
-- `panda_spawn_egg`
-Panda Spawn Egg
-- `minecraft:fox_spawn_egg`
-Fox Spawn Egg
-- `fox_spawn_egg`
-Fox Spawn Egg
-- `minecraft:creeper_spawn_egg`
-Creeper Spawn Egg
-- `creeper_spawn_egg`
-Creeper Spawn Egg
-- `minecraft:enderman_spawn_egg`
-Enderman Spawn Egg
-- `enderman_spawn_egg`
-Enderman Spawn Egg
-- `minecraft:silverfish_spawn_egg`
-Silverfish Spawn Egg
-- `silverfish_spawn_egg`
-Silverfish Spawn Egg
-- `minecraft:skeleton_spawn_egg`
-Skeleton Spawn Egg
-- `skeleton_spawn_egg`
-Skeleton Spawn Egg
-- `minecraft:wither_skeleton_spawn_egg`
-Wither Skeleton Spawn Egg
-- `wither_skeleton_spawn_egg`
-Wither Skeleton Spawn Egg
-- `minecraft:stray_spawn_egg`
-Stray Spawn Egg
-- `stray_spawn_egg`
-Stray Spawn Egg
-- `minecraft:slime_spawn_egg`
-Slime Spawn Egg
-- `slime_spawn_egg`
-Slime Spawn Egg
-- `minecraft:spider_spawn_egg`
-Spider Spawn Egg
-- `spider_spawn_egg`
-Spider Spawn Egg
-- `minecraft:zombie_spawn_egg`
-Zombie Spawn Egg
-- `zombie_spawn_egg`
-Zombie Spawn Egg
-- `minecraft:zombie_pigman_spawn_egg`
-Zombie Pigman Spawn Egg
-- `zombie_pigman_spawn_egg`
-Zombie Pigman Spawn Egg
-- `minecraft:husk_spawn_egg`
-Husk Spawn Egg
-- `husk_spawn_egg`
-Hust Spawn Egg
-- `minecraft:drowned_spawn_egg`
-Drowned Spawn Egg
-- `drowned_spawn_egg`
-Drowned Spawn Egg
 - `minecraft:squid_spawn_egg`
 Squid Spawn Egg
 - `squid_spawn_egg`
 Squid Spawn Egg
-- `minecraft:glow_squid_spawn_egg`
-Glow Squid Spawn Egg
-- `glow_squid_spawn_egg`
-Glow Squid Spawn Egg
-- `minecraft:cave_spider_spawn_egg`
-Cave Spider Spawn Egg
-- `cave_spider_spawn_egg`
-Cave Spider Spawn Egg
-- `minecraft:witch_spawn_egg`
-Witch Spawn Egg
-- `witch_spawn_egg`
-Witch Spawn Egg
-- `minecraft:guardian_spawn_egg`
-Guardian Spawn Egg
-- `guardian_spawn_egg`
-Guardian Spawn Egg
-- `minecraft:elder_guardian_spawn_egg`
-Elder Guardian Spawn Egg
-- `elder_guardian_spawn_egg`
-Elder Guardian Spawn Egg
-- `minecraft:endermite_spawn_egg`
-Endermite Spawn Egg
-- `endermite_spawn_egg`
-Endermite Spawn Egg
-- `minecraft:magma_cube_spawn_egg`
-Magma Cube Spawn Egg
-- `magma_cube_spawn_egg`
-Magma Cube Spawn Egg
-- `minecraft:strider_spawn_egg`
-Strider Spawn Egg
-- `strider_spawn_egg`
-Strider Spawn Egg
-- `minecraft:hoglin_spawn_egg`
-Hoglin Spawn Egg
-- `hoglin_spawn_egg`
-Hoglin Spawn Egg
-- `minecraft:piglin_spawn_egg`
-Piglin Spawn Egg
-- `piglin_spawn_egg`
-Piglin Spawn Egg
-- `minecraft:zoglin_spawn_egg`
-Zoglin Spawn Egg
-- `zoglin_spawn_egg`
-Zoglin Spawn Egg
-- `minecraft:piglin_brute_spawn_egg`
-Piglin Brute Spawn Egg
-- `piglin_brute_spawn_egg`
-Piglin Brute Spawn Egg
-- `minecraft:goat_spawn_egg`
-Goat Spawn Egg
-- `goat_spawn_egg`
-Goat Spawn Egg
-- `minecraft:axolotl_spawn_egg`
-Axolotl Spawn Egg
-- `axolotl_spawn_egg`
-Axolotl Spawn Egg
-- `minecraft:warden_spawn_egg`
-Warden Spawn Egg
-- `warden_spawn_egg`
-Warden Spawn Egg
-- `minecraft:allay_spawn_egg`
-Allay Spawn Egg
-- `allay_spawn_egg`
-Allay Spawn Egg
-- `minecraft:frog_spawn_egg`
-Frog Spawn Egg
-- `frog_spawn_egg`
-Frog Spawn Egg
 - `minecraft:tadpole_spawn_egg`
 Tadpole Spawn Egg
 - `tadpole_spawn_egg`
 Tadpole Spawn Egg
+- `minecraft:tropical_fish_spawn_egg`
+Tropical Fish Spawn Egg
+- `tropical_fish_spawn_egg`
+Tropical Fish Spawn Egg
+- `minecraft:turtle_spawn_egg`
+Turtle Spawn Egg
+- `turtle_spawn_egg`
+Turtle Spawn Egg
+- `minecraft:allay_spawn_egg`
+Allay Spawn Egg
+- `allay_spawn_egg`
+Allay Spawn Egg
+- `minecraft:mooshroom_spawn_egg`
+Mooshroom Spawn Egg
+- `mooshroom_spawn_egg`
+Mooshroom Spawn Egg
+- `minecraft:sniffer_spawn_egg`
+- `sniffer_spawn_egg`
+- `minecraft:copper_golem_spawn_egg`
+- `copper_golem_spawn_egg`
+- `minecraft:iron_golem_spawn_egg`
+- `iron_golem_spawn_egg`
+- `minecraft:snow_golem_spawn_egg`
+- `snow_golem_spawn_egg`
 - `minecraft:trader_llama_spawn_egg`
 Trader Llama Spawn Egg
 - `trader_llama_spawn_egg`
 Trader Llama Spawn Egg
-- `minecraft:camel_spawn_egg`
-- `camel_spawn_egg`
-- `minecraft:ghast_spawn_egg`
-Ghast Spawn Egg
-- `ghast_spawn_egg`
-Ghast Spawn Egg
-- `minecraft:blaze_spawn_egg`
-Blaze Spawn Egg
-- `blaze_spawn_egg`
-Blaze Spawn Egg
-- `minecraft:shulker_spawn_egg`
-Shulker Spawn Egg
-- `shulker_spawn_egg`
-Shulker Spawn Egg
-- `minecraft:vindicator_spawn_egg`
-Vindicator Spawn Egg
-- `vindicator_spawn_egg`
-Vindicator Spawn Egg
-- `minecraft:evoker_spawn_egg`
-Evoker Spawn Egg
-- `evoker_spawn_egg`
-Evoker Spawn Egg
-- `minecraft:vex_spawn_egg`
-Vex Spawn Egg
-- `vex_spawn_egg`
-Vex Spawn Egg
 - `minecraft:villager_spawn_egg`
 Villager Spawn Egg
 - `villager_spawn_egg`
@@ -3602,14 +3486,94 @@ Villager Spawn Egg
 Wandering Trader Spawn Egg
 - `wandering_trader_spawn_egg`
 Wandering Trader Spawn Egg
+- `minecraft:bogged_spawn_egg`
+- `bogged_spawn_egg`
+- `minecraft:camel_husk_spawn_egg`
+- `camel_husk_spawn_egg`
+- `minecraft:drowned_spawn_egg`
+Drowned Spawn Egg
+- `drowned_spawn_egg`
+Drowned Spawn Egg
+- `minecraft:husk_spawn_egg`
+Husk Spawn Egg
+- `husk_spawn_egg`
+Hust Spawn Egg
+- `minecraft:parched_spawn_egg`
+- `parched_spawn_egg`
+- `minecraft:skeleton_spawn_egg`
+Skeleton Spawn Egg
+- `skeleton_spawn_egg`
+Skeleton Spawn Egg
+- `minecraft:skeleton_horse_spawn_egg`
+Skeleton Horse Spawn Egg
+- `skeleton_horse_spawn_egg`
+Skeleton Horse Spawn Egg
+- `minecraft:stray_spawn_egg`
+Stray Spawn Egg
+- `stray_spawn_egg`
+Stray Spawn Egg
+- `minecraft:zombie_spawn_egg`
+Zombie Spawn Egg
+- `zombie_spawn_egg`
+Zombie Spawn Egg
+- `minecraft:zombie_horse_spawn_egg`
+Zombie Horse Spawn Egg
+- `zombie_horse_spawn_egg`
+Zombie Horse Spawn Egg
+- `minecraft:zombie_nautilus_spawn_egg`
+- `zombie_nautilus_spawn_egg`
 - `minecraft:zombie_villager_spawn_egg`
 Zombie Villager Spawn Egg
 - `zombie_villager_spawn_egg`
 Zombie Villager Spawn Egg
+- `minecraft:cave_spider_spawn_egg`
+Cave Spider Spawn Egg
+- `cave_spider_spawn_egg`
+Cave Spider Spawn Egg
+- `minecraft:spider_spawn_egg`
+Spider Spawn Egg
+- `spider_spawn_egg`
+Spider Spawn Egg
+- `minecraft:breeze_spawn_egg`
+- `breeze_spawn_egg`
+- `minecraft:creaking_spawn_egg`
+- `creaking_spawn_egg`
+- `minecraft:creeper_spawn_egg`
+Creeper Spawn Egg
+- `creeper_spawn_egg`
+Creeper Spawn Egg
+- `minecraft:elder_guardian_spawn_egg`
+Elder Guardian Spawn Egg
+- `elder_guardian_spawn_egg`
+Elder Guardian Spawn Egg
+- `minecraft:guardian_spawn_egg`
+Guardian Spawn Egg
+- `guardian_spawn_egg`
+Guardian Spawn Egg
 - `minecraft:phantom_spawn_egg`
 Phantom Spawn Egg
 - `phantom_spawn_egg`
 Phantom Spawn Egg
+- `minecraft:silverfish_spawn_egg`
+Silverfish Spawn Egg
+- `silverfish_spawn_egg`
+Silverfish Spawn Egg
+- `minecraft:slime_spawn_egg`
+Slime Spawn Egg
+- `slime_spawn_egg`
+Slime Spawn Egg
+- `minecraft:warden_spawn_egg`
+Warden Spawn Egg
+- `warden_spawn_egg`
+Warden Spawn Egg
+- `minecraft:witch_spawn_egg`
+Witch Spawn Egg
+- `witch_spawn_egg`
+Witch Spawn Egg
+- `minecraft:evoker_spawn_egg`
+Evoker Spawn Egg
+- `evoker_spawn_egg`
+Evoker Spawn Egg
 - `minecraft:pillager_spawn_egg`
 Pillager Spawn Egg
 - `pillager_spawn_egg`
@@ -3618,32 +3582,68 @@ Pillager Spawn Egg
 Ravager Spawn Egg
 - `ravager_spawn_egg`
 Ravager Spawn Egg
-- `minecraft:iron_golem_spawn_egg`
-- `iron_golem_spawn_egg`
-- `minecraft:copper_golem_spawn_egg`
-- `copper_golem_spawn_egg`
-- `minecraft:snow_golem_spawn_egg`
-- `snow_golem_spawn_egg`
-- `minecraft:sniffer_spawn_egg`
-- `sniffer_spawn_egg`
-- `minecraft:breeze_spawn_egg`
-- `breeze_spawn_egg`
-- `minecraft:armadillo_spawn_egg`
-- `armadillo_spawn_egg`
-- `minecraft:bogged_spawn_egg`
-- `bogged_spawn_egg`
-- `minecraft:creaking_spawn_egg`
-- `creaking_spawn_egg`
+- `minecraft:vex_spawn_egg`
+Vex Spawn Egg
+- `vex_spawn_egg`
+Vex Spawn Egg
+- `minecraft:vindicator_spawn_egg`
+Vindicator Spawn Egg
+- `vindicator_spawn_egg`
+Vindicator Spawn Egg
+- `minecraft:blaze_spawn_egg`
+Blaze Spawn Egg
+- `blaze_spawn_egg`
+Blaze Spawn Egg
+- `minecraft:ghast_spawn_egg`
+Ghast Spawn Egg
+- `ghast_spawn_egg`
+Ghast Spawn Egg
 - `minecraft:happy_ghast_spawn_egg`
 - `happy_ghast_spawn_egg`
-- `minecraft:nautilus_spawn_egg`
-- `nautilus_spawn_egg`
-- `minecraft:zombie_nautilus_spawn_egg`
-- `zombie_nautilus_spawn_egg`
-- `minecraft:parched_spawn_egg`
-- `parched_spawn_egg`
-- `minecraft:camel_husk_spawn_egg`
-- `camel_husk_spawn_egg`
+- `minecraft:hoglin_spawn_egg`
+Hoglin Spawn Egg
+- `hoglin_spawn_egg`
+Hoglin Spawn Egg
+- `minecraft:magma_cube_spawn_egg`
+Magma Cube Spawn Egg
+- `magma_cube_spawn_egg`
+Magma Cube Spawn Egg
+- `minecraft:piglin_brute_spawn_egg`
+Piglin Brute Spawn Egg
+- `piglin_brute_spawn_egg`
+Piglin Brute Spawn Egg
+- `minecraft:piglin_spawn_egg`
+Piglin Spawn Egg
+- `piglin_spawn_egg`
+Piglin Spawn Egg
+- `minecraft:strider_spawn_egg`
+Strider Spawn Egg
+- `strider_spawn_egg`
+Strider Spawn Egg
+- `minecraft:wither_skeleton_spawn_egg`
+Wither Skeleton Spawn Egg
+- `wither_skeleton_spawn_egg`
+Wither Skeleton Spawn Egg
+- `minecraft:zoglin_spawn_egg`
+Zoglin Spawn Egg
+- `zoglin_spawn_egg`
+Zoglin Spawn Egg
+- `minecraft:zombie_pigman_spawn_egg`
+Zombie Pigman Spawn Egg
+- `zombie_pigman_spawn_egg`
+Zombie Pigman Spawn Egg
+- `minecraft:enderman_spawn_egg`
+Enderman Spawn Egg
+- `enderman_spawn_egg`
+Enderman Spawn Egg
+- `minecraft:endermite_spawn_egg`
+Endermite Spawn Egg
+- `endermite_spawn_egg`
+Endermite Spawn Egg
+- `minecraft:shulker_spawn_egg`
+Shulker Spawn Egg
+- `shulker_spawn_egg`
+Shulker Spawn Egg
 - `editor:map_marker_spawn_egg`
 - `minecraft:chorus_fruit`
 Chorus Fruit

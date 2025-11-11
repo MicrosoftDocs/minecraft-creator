@@ -19,13 +19,13 @@ Log helper interface for Player.
 
 ### **debug**
 `
-debug(message: string, props?: IPlayerLoggerProperties): void
+debug(message: LocalizedString, props?: IPlayerLoggerProperties): void
 `
 
 Dispatch a player log message with Debug log level
 
 #### **Parameters**
-- **message**: *string*
+- **message**: *LocalizedString*
   
   Message content
 - **props**?: *IPlayerLoggerProperties*
@@ -36,13 +36,13 @@ Dispatch a player log message with Debug log level
 
 ### **error**
 `
-error(message: string, props?: IPlayerLoggerProperties): void
+error(message: LocalizedString, props?: IPlayerLoggerProperties): void
 `
 
 Dispatch a player log message with Error log level
 
 #### **Parameters**
-- **message**: *string*
+- **message**: *LocalizedString*
   
   Message content
 - **props**?: *IPlayerLoggerProperties*
@@ -53,13 +53,13 @@ Dispatch a player log message with Error log level
 
 ### **info**
 `
-info(message: string, props?: IPlayerLoggerProperties): void
+info(message: LocalizedString, props?: IPlayerLoggerProperties): void
 `
 
 Dispatch a player log message with Info log level
 
 #### **Parameters**
-- **message**: *string*
+- **message**: *LocalizedString*
   
   Message content
 - **props**?: *IPlayerLoggerProperties*
@@ -70,13 +70,13 @@ Dispatch a player log message with Info log level
 
 ### **warning**
 `
-warning(message: string, props?: IPlayerLoggerProperties): void
+warning(message: LocalizedString, props?: IPlayerLoggerProperties): void
 `
 
 Dispatch a player log message with Warning log level
 
 #### **Parameters**
-- **message**: *string*
+- **message**: *LocalizedString*
   
   Message content
 - **props**?: *IPlayerLoggerProperties*

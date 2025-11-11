@@ -21,8 +21,8 @@ A log channel mask, default is Message
 Type: *LogChannel*
 
 ### **subMessage**
-`subMessage?: string;`
+`subMessage?: LocalizedString;`
 
 A player log sub message for the toast channel
 
-Type: *string*
+Type: *LocalizedString*
