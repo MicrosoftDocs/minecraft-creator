@@ -408,6 +408,11 @@
       "source_path": "Reference/Content/AnimationsReference/Examples/AnimationController.md",
       "redirect_url": "/minecraft/creator/documents/animations/animationcontroller",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/BlockReference/Examples/BlockTraits.md",
+      "redirect_url": "/minecraft/creator/documents/intro-block-traits",
+      "redirect_document_id": false
     }
   ]
 }
