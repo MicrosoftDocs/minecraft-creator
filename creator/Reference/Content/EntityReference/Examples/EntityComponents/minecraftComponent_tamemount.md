@@ -28,7 +28,7 @@ Allows the Entity to be tamed by mounting it.
 
 ## Auto Reject Items
 
-#### Auto_reject_items Properties
+#### Auto reject items Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

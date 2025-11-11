@@ -231,19 +231,13 @@
         {
           "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/0/filters/",
           "content": {
-            "test": "is_underwater",
-            "subject": "self",
-            "operator": "==",
-            "value": true
+            "test": "is_underwater"
           }
         },
         {
           "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/",
           "content": {
-            "test": "is_underwater",
-            "subject": "self",
-            "operator": "==",
-            "value": true
+            "test": "is_underwater"
           }
         }
       ],

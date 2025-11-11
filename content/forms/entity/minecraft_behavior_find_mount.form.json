@@ -42,12 +42,6 @@
         "defaultValue": 0,
         "dataType": 0,
         "samples": {
-          "/vanilla/behavior_pack/entities/parched.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.find_mount/",
-              "content": 15
-            }
-          ],
           "/vanilla/behavior_pack/entities/parrot.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:behavior.find_mount/",
@@ -57,6 +51,12 @@
           "/vanilla/behavior_pack/entities/piglin.json": [
             {
               "path": "/minecraft:entity/component_groups/piglin_jockey/minecraft:behavior.find_mount/",
+              "content": 15
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_jockey/minecraft:behavior.find_mount/",
               "content": 15
             }
           ]
@@ -80,9 +80,11 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:zombie_husk_jockey/minecraft:behavior.find_mount/",
               "content": 16
-            },
+            }
+          ],
+          "/vanilla/behavior_pack/entities/parrot.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:zombie_husk_rider/minecraft:behavior.find_mount/",
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:behavior.find_mount/",
               "content": 16
             }
           ]
@@ -120,15 +122,15 @@
         "title": "Max Failed Attempts",
         "dataType": 7,
         "samples": {
-          "/vanilla/behavior_pack/entities/parched.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.find_mount/",
-              "content": 20
-            }
-          ],
           "/vanilla/behavior_pack/entities/piglin.json": [
             {
               "path": "/minecraft:entity/component_groups/piglin_jockey/minecraft:behavior.find_mount/",
+              "content": 20
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_jockey/minecraft:behavior.find_mount/",
               "content": 20
             }
           ]
@@ -142,24 +144,6 @@
           "content": {
             "priority": 0,
             "within_radius": 16
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:zombie_husk_rider/minecraft:behavior.find_mount/",
-          "content": {
-            "priority": 0,
-            "within_radius": 16
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/parched.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.find_mount/",
-          "content": {
-            "priority": 0,
-            "within_radius": 16,
-            "start_delay": 15,
-            "max_failed_attempts": 20
           }
         }
       ],

@@ -26,7 +26,7 @@ Generates surface on blocks with non-solid blocks above or below.
 | foundation_material (Alternate 1) | *not set* | [Foundation Material](#foundation-material) item |  |  | 
 | sea_material | *not set* | String | Material used to replace air blocks below sea level. |  | 
 | sea_material (Alternate 1) | *not set* | [Sea Material](#sea-material) item |  |  | 
-| type | *not set* | String | Controls the type of surface builder to use |  | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use |  | 
 
 ## Beach Material
 
@@ -82,3 +82,14 @@ Generates surface on blocks with non-solid blocks above or below.
 | states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+
+### Type choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| minecraft:capped | Minecraft:capped | |
+| minecraft:frozen_ocean | Minecraft:frozen ocean | |
+| minecraft:mesa | Minecraft:mesa | |
+| minecraft:overworld | Minecraft:overworld | |
+| minecraft:swamp | Minecraft:swamp | |
+| minecraft:the_end | Minecraft:the end | |

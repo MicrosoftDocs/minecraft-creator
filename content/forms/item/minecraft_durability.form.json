@@ -17,6 +17,24 @@
         },
         "subFormId": "item_components/intrange",
         "samples": {
+          "/vanilla/behavior_pack/items/copper_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:durability/",
+              "content": {
+                "min": 0,
+                "max": 100
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/items/diamond_spear.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:durability/",
+              "content": {
+                "min": 0,
+                "max": 100
+              }
+            }
+          ],
           "/samples/custom_items/behavior_packs/custom_item/items/my_sword.json": [
             {
               "path": "/minecraft:item/components/minecraft:durability/",
@@ -166,7 +184,11 @@
         {
           "path": "/minecraft:item/components/minecraft:durability/",
           "content": {
-            "max_durability": 190
+            "max_durability": 190,
+            "damage_chance": {
+              "min": 0,
+              "max": 100
+            }
           }
         }
       ],
@@ -174,7 +196,11 @@
         {
           "path": "/minecraft:item/components/minecraft:durability/",
           "content": {
-            "max_durability": 1560
+            "max_durability": 1560,
+            "damage_chance": {
+              "min": 0,
+              "max": 100
+            }
           }
         }
       ],
@@ -182,7 +208,11 @@
         {
           "path": "/minecraft:item/components/minecraft:durability/",
           "content": {
-            "max_durability": 30
+            "max_durability": 30,
+            "damage_chance": {
+              "min": 0,
+              "max": 100
+            }
           }
         }
       ],
@@ -190,7 +220,11 @@
         {
           "path": "/minecraft:item/components/minecraft:durability/",
           "content": {
-            "max_durability": 250
+            "max_durability": 250,
+            "damage_chance": {
+              "min": 0,
+              "max": 100
+            }
           }
         }
       ],
@@ -198,7 +232,11 @@
         {
           "path": "/minecraft:item/components/minecraft:durability/",
           "content": {
-            "max_durability": 2030
+            "max_durability": 2030,
+            "damage_chance": {
+              "min": 0,
+              "max": 100
+            }
           }
         }
       ],
@@ -206,7 +244,11 @@
         {
           "path": "/minecraft:item/components/minecraft:durability/",
           "content": {
-            "max_durability": 130
+            "max_durability": 130,
+            "damage_chance": {
+              "min": 0,
+              "max": 100
+            }
           }
         }
       ],
@@ -214,7 +256,11 @@
         {
           "path": "/minecraft:item/components/minecraft:durability/",
           "content": {
-            "max_durability": 60
+            "max_durability": 60,
+            "damage_chance": {
+              "min": 0,
+              "max": 100
+            }
           }
         }
       ],

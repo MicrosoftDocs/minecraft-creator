@@ -73,6 +73,48 @@
         "id": "target",
         "title": "FilterSubject",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "baby",
+            "title": "Baby"
+          },
+          {
+            "id": "block",
+            "title": "Block"
+          },
+          {
+            "id": "damager",
+            "title": "Damager"
+          },
+          {
+            "id": "holder",
+            "title": "Holder"
+          },
+          {
+            "id": "item",
+            "title": "Item"
+          },
+          {
+            "id": "other",
+            "title": "Other"
+          },
+          {
+            "id": "parent",
+            "title": "Parent"
+          },
+          {
+            "id": "player",
+            "title": "Player"
+          },
+          {
+            "id": "self",
+            "title": "Self"
+          },
+          {
+            "id": "target",
+            "title": "Target"
+          }
+        ],
         "defaultValue": "self"
       }
     ]

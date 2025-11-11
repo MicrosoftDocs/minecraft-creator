@@ -1,6 +1,33 @@
 {
   "id": "Rule",
-  "fields": [],
+  "fields": [
+    {
+      "id": "cull_against_full_and_opaque",
+      "description": "If set to false, then culling against full and opaque blocks will not be considered."
+    },
+    {
+      "id": "condition",
+      "choices": [
+        {
+          "id": "default",
+          "title": "Default",
+          "description": "The condition will succeed if the neighbor is a full and opaque block."
+        },
+        {
+          "id": "same_block",
+          "description": "The condition wil succeed if the neighbor block as the same identifier."
+        },
+        {
+          "id": "same_block_permutation",
+          "description": "The condition will succeed if the neighbor block has the same identifier and is the exact same permutation."
+        },
+        {
+          "id": "same_culling_layer",
+          "description": "The condition will succeed if if the neighbor block shares the same culling_layer as the block being occluded, defined in the geometry component."
+        }
+      ]
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "Rule",
     "title": "Client Block Rule",
@@ -8,7 +35,21 @@
       {
         "id": "condition",
         "title": "Rule Condition",
-        "dataType": 2
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "same_block",
+            "title": "Same block"
+          },
+          {
+            "id": "same_block_permutation",
+            "title": "Same block permutation"
+          },
+          {
+            "id": "same_culling_layer",
+            "title": "Same culling layer"
+          }
+        ]
       },
       {
         "id": "cull_against_full_and_opaque",
@@ -20,6 +61,32 @@
         "id": "direction",
         "title": "Facing",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "down",
+            "title": "Down"
+          },
+          {
+            "id": "east",
+            "title": "East"
+          },
+          {
+            "id": "north",
+            "title": "North"
+          },
+          {
+            "id": "south",
+            "title": "South"
+          },
+          {
+            "id": "up",
+            "title": "Up"
+          },
+          {
+            "id": "west",
+            "title": "West"
+          }
+        ],
         "isRequired": true
       },
       {

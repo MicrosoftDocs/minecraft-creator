@@ -28,7 +28,7 @@ Experimental toggles required: Upcoming Creator Features (in format versions bef
 
 ## Detection Rules
 
-#### Detection_rules Properties
+#### Detection rules Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

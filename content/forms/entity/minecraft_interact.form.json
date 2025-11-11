@@ -530,7 +530,7 @@
             },
             {
               "id": "use_item",
-              "title": "Use_item",
+              "title": "Use item",
               "dataType": 2,
               "samples": {
                 "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
@@ -543,7 +543,7 @@
             },
             {
               "id": "hurt_item",
-              "title": "Hurt_item",
+              "title": "Hurt item",
               "dataType": 7,
               "samples": {
                 "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
@@ -556,7 +556,7 @@
             },
             {
               "id": "spawn_items",
-              "title": "Spawn_items",
+              "title": "Spawn items",
               "dataType": 2,
               "samples": {
                 "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
@@ -571,7 +571,7 @@
             },
             {
               "id": "play_sounds",
-              "title": "Play_sounds",
+              "title": "Play sounds",
               "dataType": 2,
               "samples": {
                 "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
@@ -584,7 +584,7 @@
             },
             {
               "id": "interact_text",
-              "title": "Interact_text",
+              "title": "Interact text",
               "dataType": 2,
               "samples": {
                 "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
@@ -597,7 +597,7 @@
             },
             {
               "id": "on_interact",
-              "title": "On_interact",
+              "title": "On interact",
               "dataType": 2,
               "samples": {
                 "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [

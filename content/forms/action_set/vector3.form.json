@@ -1,0 +1,24 @@
+{
+  "id": "vector3",
+  "title": "Vector3",
+  "fields": [
+    {
+      "id": "x",
+      "title": "x",
+      "dataType": 3,
+      "required": true
+    },
+    {
+      "id": "y",
+      "title": "y",
+      "dataType": 3,
+      "required": true
+    },
+    {
+      "id": "z",
+      "title": "z",
+      "dataType": 3,
+      "required": true
+    }
+  ]
+}

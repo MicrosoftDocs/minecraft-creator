@@ -107,7 +107,13 @@
                   "title": "Value",
                   "description": "Specifies how much extra damage the item does, must be a positive number.",
                   "dataType": 0,
-                  "defaultValue": 0
+                  "defaultValue": 0,
+                  "validity": [
+                    {
+                      "comparison": "<=",
+                      "value": 32767
+                    }
+                  ]
                 }
               ]
             }
@@ -535,6 +541,48 @@
                   "title": "Animation",
                   "description": "Specifies which animation to play when the the item is used.",
                   "dataType": 2,
+                  "choices": [
+                    {
+                      "id": "block",
+                      "title": "Block"
+                    },
+                    {
+                      "id": "bow",
+                      "title": "Bow"
+                    },
+                    {
+                      "id": "brush",
+                      "title": "Brush"
+                    },
+                    {
+                      "id": "camera",
+                      "title": "Camera"
+                    },
+                    {
+                      "id": "crossbow",
+                      "title": "Crossbow"
+                    },
+                    {
+                      "id": "drink",
+                      "title": "Drink"
+                    },
+                    {
+                      "id": "eat",
+                      "title": "Eat"
+                    },
+                    {
+                      "id": "none",
+                      "title": "None"
+                    },
+                    {
+                      "id": "spear",
+                      "title": "Spear"
+                    },
+                    {
+                      "id": "spyglass",
+                      "title": "Spyglass"
+                    }
+                  ],
                   "defaultValue": "none"
                 }
               ]

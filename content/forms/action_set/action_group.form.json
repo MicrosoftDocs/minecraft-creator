@@ -1,0 +1,36 @@
+{
+  "id": "group",
+  "title": "Action Group",
+  "fields": [
+    {
+      "id": "id",
+      "title": "Group Identifier",
+      "dataType": 2
+    },
+    {
+      "id": "name",
+      "title": "Name",
+      "dataType": 2
+    },
+    {
+      "id": "name",
+      "title": "Name",
+      "dataType": 2
+    },
+    {
+      "id": "canvasX",
+      "title": "Canvas X",
+      "dataType": 3
+    },
+    {
+      "id": "canvasY",
+      "title": "Canvas Y",
+      "dataType": 3
+    },
+    {
+      "id": "actions",
+      "title": "Actions",
+      "dataType": 15
+    }
+  ]
+}

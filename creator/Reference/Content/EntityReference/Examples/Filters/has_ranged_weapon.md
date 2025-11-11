@@ -89,9 +89,9 @@ At /minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environme
 }
 ```
 
-#### [Skeleton](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton.json)
+#### [Parched](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parched.json)
 
-At /minecraft:entity/component_groups/got_out_of_powder_snow_environment_sensor/minecraft:environment_sensor/triggers/1/filters/: 
+At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/1/filters/: 
 
 ```json
 {
@@ -100,7 +100,7 @@ At /minecraft:entity/component_groups/got_out_of_powder_snow_environment_sensor/
 }
 ```
 
-At /minecraft:entity/component_groups/got_out_of_powder_snow_environment_sensor/minecraft:environment_sensor/triggers/2/filters/all_of/1/: 
+At /minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/0/filters/all_of/1/: 
 
 ```json
 {

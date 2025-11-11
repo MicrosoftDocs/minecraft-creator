@@ -20,4 +20,24 @@ Noise parameters used to drive terrain height in the Overworld.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | noise_params | *not set* | Array of numbers | First value is depth - more negative means deeper underwater, while more positive means higher. Second value is scale, which affects how much noise changes as it moves from the surface. Value must have at least 2 items. Value must have at most 2 items. |  | 
-| noise_type | *not set* | String | Specifies a preset based on a built-in setting rather than manually using noise_params |  | 
+| noise_type | *not set* | [Noise Type](#noise-type-choices) choices | Specifies a preset based on a built-in setting rather than manually using noise_params |  | 
+
+### Noise Type choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| beach | Beach | |
+| deep_ocean | Deep ocean | |
+| default | Default | |
+| default_mutated | Default mutated | |
+| extreme | Extreme | |
+| highlands | Highlands | |
+| less_extreme | Less extreme | |
+| lowlands | Lowlands | |
+| mountains | Mountains | |
+| mushroom | Mushroom | |
+| ocean | Ocean | |
+| river | River | |
+| stone_beach | Stone beach | |
+| swamp | Swamp | |
+| taiga | Taiga | |

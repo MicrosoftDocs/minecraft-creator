@@ -7,6 +7,13 @@
     "description": "Allows an item to deal kinetic damage and its effects. This happens every tick while in use, in a straight line along the user's view vector, with damage computed based on both the user's and the target's velocity projected onto the view vector (via a dot product). The more the user and target move toward each other, and the more this movement is aligned with the user's view vector, the higher the damage. After \"damage_multiplier\" and \"damage_modifier\" are applied, the resulting damage is floored to the nearest lower integer.",
     "fields": [
       {
+        "id": "creative_reach",
+        "title": "Creative Reach",
+        "description": "Defines the reach used when the user is in Creative Mode. Defaults to \"reach\" if unspecified.",
+        "dataType": 16,
+        "subFormId": "item_components/floatrange"
+      },
+      {
         "id": "damage_conditions",
         "title": "Damage Conditions",
         "description": "Conditions that need to be satisfied for damage to be applied. If not specified, damage is not applied.",
@@ -32,7 +39,17 @@
         "title": "Delay",
         "description": "Time, in ticks, after which kinetic damage and its effects start being applied.",
         "dataType": 0,
-        "defaultValue": 0
+        "defaultValue": 0,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": -32768
+          },
+          {
+            "comparison": "<=",
+            "value": 32767
+          }
+        ]
       },
       {
         "id": "dismount_conditions",

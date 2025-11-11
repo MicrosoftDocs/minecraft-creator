@@ -11,6 +11,32 @@
         "title": "Coordinate Evaluation Order",
         "description": "The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to \"xzy\". Supported orders are defined by \"Coordinate Evaluation Order\".",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "xyz",
+            "title": "Xyz"
+          },
+          {
+            "id": "xzy",
+            "title": "Xzy"
+          },
+          {
+            "id": "yxz",
+            "title": "Yxz"
+          },
+          {
+            "id": "yzx",
+            "title": "Yzx"
+          },
+          {
+            "id": "zxy",
+            "title": "Zxy"
+          },
+          {
+            "id": "zyx",
+            "title": "Zyx"
+          }
+        ],
         "defaultValue": "xzy"
       },
       {
@@ -37,6 +63,16 @@
                   "id": "version",
                   "title": "Version",
                   "dataType": 0,
+                  "validity": [
+                    {
+                      "comparison": ">=",
+                      "value": -32768
+                    },
+                    {
+                      "comparison": "<=",
+                      "value": 32767
+                    }
+                  ],
                   "isRequired": true
                 }
               ]
@@ -121,6 +157,32 @@
                   "title": "Random Distribution Type",
                   "description": "Type of distribution. Supported distributions are defined by \"Random Distribution Type\".",
                   "dataType": 2,
+                  "choices": [
+                    {
+                      "id": "fixed_grid",
+                      "title": "Fixed grid"
+                    },
+                    {
+                      "id": "gaussian",
+                      "title": "Gaussian"
+                    },
+                    {
+                      "id": "inverse_gaussian",
+                      "title": "Inverse gaussian"
+                    },
+                    {
+                      "id": "jittered_grid",
+                      "title": "Jittered grid"
+                    },
+                    {
+                      "id": "triangle",
+                      "title": "Triangle"
+                    },
+                    {
+                      "id": "uniform",
+                      "title": "Uniform"
+                    }
+                  ],
                   "isRequired": true
                 },
                 {
@@ -179,6 +241,32 @@
                   "title": "Random Distribution Type",
                   "description": "Type of distribution. Supported distributions are defined by \"Random Distribution Type\".",
                   "dataType": 2,
+                  "choices": [
+                    {
+                      "id": "fixed_grid",
+                      "title": "Fixed grid"
+                    },
+                    {
+                      "id": "gaussian",
+                      "title": "Gaussian"
+                    },
+                    {
+                      "id": "inverse_gaussian",
+                      "title": "Inverse gaussian"
+                    },
+                    {
+                      "id": "jittered_grid",
+                      "title": "Jittered grid"
+                    },
+                    {
+                      "id": "triangle",
+                      "title": "Triangle"
+                    },
+                    {
+                      "id": "uniform",
+                      "title": "Uniform"
+                    }
+                  ],
                   "isRequired": true
                 },
                 {
@@ -237,6 +325,32 @@
                   "title": "Random Distribution Type",
                   "description": "Type of distribution. Supported distributions are defined by \"Random Distribution Type\".",
                   "dataType": 2,
+                  "choices": [
+                    {
+                      "id": "fixed_grid",
+                      "title": "Fixed grid"
+                    },
+                    {
+                      "id": "gaussian",
+                      "title": "Gaussian"
+                    },
+                    {
+                      "id": "inverse_gaussian",
+                      "title": "Inverse gaussian"
+                    },
+                    {
+                      "id": "jittered_grid",
+                      "title": "Jittered grid"
+                    },
+                    {
+                      "id": "triangle",
+                      "title": "Triangle"
+                    },
+                    {
+                      "id": "uniform",
+                      "title": "Uniform"
+                    }
+                  ],
                   "isRequired": true
                 },
                 {

@@ -858,10 +858,7 @@
             "damage_conditions": [
               {
                 "filters": {
-                  "test": "in_lava",
-                  "subject": "self",
-                  "operator": "==",
-                  "value": true
+                  "test": "in_lava"
                 },
                 "cause": "lava",
                 "damage_per_tick": 4

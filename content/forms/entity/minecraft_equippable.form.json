@@ -102,7 +102,7 @@
       ],
       "/vanilla/behavior_pack/entities/camel_husk.json": [
         {
-          "path": "/minecraft:entity/components/minecraft:equippable/",
+          "path": "/minecraft:entity/component_groups/minecraft:camel_husk_with_no_hostile_rider/minecraft:equippable/",
           "content": {
             "slots": [
               {

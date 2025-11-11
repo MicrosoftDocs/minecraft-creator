@@ -338,7 +338,7 @@
           "fields": [
             {
               "id": "component_groups",
-              "title": "Component_groups",
+              "title": "Component groups",
               "dataType": 2,
               "samples": {
                 "/vanilla/behavior_pack/entities/fireball.json": [

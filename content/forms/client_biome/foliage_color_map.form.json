@@ -11,6 +11,32 @@
         "title": "Foliage Colormap",
         "description": "Color map from textures/colormap to determine color of foliage.",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "birch",
+            "title": "Birch"
+          },
+          {
+            "id": "dry_foliage",
+            "title": "Dry foliage"
+          },
+          {
+            "id": "evergreen",
+            "title": "Evergreen"
+          },
+          {
+            "id": "foliage",
+            "title": "Foliage"
+          },
+          {
+            "id": "mangrove_swamp_foliage",
+            "title": "Mangrove swamp foliage"
+          },
+          {
+            "id": "swamp_foliage",
+            "title": "Swamp foliage"
+          }
+        ],
         "isRequired": true
       }
     ]

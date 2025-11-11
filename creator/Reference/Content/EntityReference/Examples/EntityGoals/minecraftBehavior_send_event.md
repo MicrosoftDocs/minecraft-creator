@@ -24,7 +24,7 @@ Allows the mob to send an event to another mob.
 
 ## Event Choices
 
-#### Event_choices Properties
+#### Event choices Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

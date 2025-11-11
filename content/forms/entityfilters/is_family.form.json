@@ -434,10 +434,6 @@
           ],
           "/vanilla/behavior_pack/entities/husk.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/0/on_damage/filters/all_of/0/",
-              "content": "parched"
-            },
-            {
               "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/any_of/0/",
               "content": "villager"
             },
@@ -1491,14 +1487,6 @@
         }
       ],
       "/vanilla/behavior_pack/entities/husk.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/0/on_damage/filters/all_of/0/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "parched"
-          }
-        },
         {
           "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/",
           "content": {

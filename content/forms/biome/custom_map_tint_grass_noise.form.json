@@ -11,6 +11,16 @@
         "title": "GrassType",
         "description": "Controls the type of grass tint to use.",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "noise",
+            "title": "Noise"
+          },
+          {
+            "id": "tint",
+            "title": "Tint"
+          }
+        ],
         "isRequired": true
       }
     ]

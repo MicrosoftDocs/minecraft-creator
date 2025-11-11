@@ -16,7 +16,7 @@ Allows the mob to enter the panic state, which makes it run around and away from
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| damage_sources | [campfire, fire, fire_tick, freezing, lava, lightning, magma, soul_campfire, temperature, entity_attack, entity_explosion, fireworks, magic, projectile, ram_attack, sonic_boom, wither, mace_smash] | Array of strings | The list of Entity Damage Sources that will cause this mob to panic | Polar Bear: `["campfire","fire","fire_tick","freezing","lightning","lava","magma","temperature","soul_campfire"]` | 
+| damage_sources | [campfire, fire, fire_tick, freezing, lava, lightning, magma, soul_campfire, temperature, entity_attack, entity_explosion, fireworks, magic, projectile, ram_attack, sonic_boom, wither, mace_smash] | Array of strings | The list of Entity Damage Sources that will cause this mob to panic | Polar Bear: `["campfire","fire","fire_tick","freezing","lightning","lava","magma","temperature","soul_campfire"]`, Zombie Horse: `["campfire","fire","freezing","lava","lightning","magma","soul_campfire","temperature","entity_attack","entity_explosion","fireworks","magic","projectile","ram_attack","sonic_boom","wither","mace_smash"]` | 
 | force | false | Boolean true/false | If true, this mob will not stop panicking until it can't move anymore or the goal is removed from it | Bee: `true` | 
 | ignore_mob_damage | false | Boolean true/false | If true, the mob will not panic in response to damage from other mobs. This overrides the damage types in "damage_sources" | Armadillo: `true` | 
 | panic_sound | *not set* | String |  | Strider: `"panic"` | 
@@ -27,7 +27,7 @@ Allows the mob to enter the panic state, which makes it run around and away from
 
 ## Sound Interval
 
-#### Sound_interval Properties
+#### Sound interval Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

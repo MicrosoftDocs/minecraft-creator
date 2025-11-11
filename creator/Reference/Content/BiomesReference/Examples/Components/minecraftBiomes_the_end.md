@@ -14,4 +14,15 @@ ms.date: 02/11/2025
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| type | *not set* | String | Use default Minecraft End terrain generation. |  | 
+| type | *not set* | [Type](#type-choices) choices | Use default Minecraft End terrain generation. |  | 
+
+### Type choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| minecraft:capped | Minecraft:capped | |
+| minecraft:frozen_ocean | Minecraft:frozen ocean | |
+| minecraft:mesa | Minecraft:mesa | |
+| minecraft:overworld | Minecraft:overworld | |
+| minecraft:swamp | Minecraft:swamp | |
+| minecraft:the_end | Minecraft:the end | |

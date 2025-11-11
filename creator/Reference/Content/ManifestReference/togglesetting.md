@@ -17,4 +17,13 @@ ms.date: 02/11/2025
 | default | *not set* | Boolean true/false |  |  | 
 | name | *not set* | String |  |  | 
 | text | *not set* | String |  |  | 
-| type | *not set* | String |  |  | 
+| type | *not set* | [Type](#type-choices) choices |  |  | 
+
+### Type choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| dropdown | Dropdown | |
+| label | Label | |
+| slider | Slider | |
+| toggle | Toggle | |

@@ -16,4 +16,15 @@ Object specifying a color map for foliage instead of a specific color.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| color_map | *not set* | String | Color map from textures/colormap to determine color of foliage. |  | 
+| color_map | *not set* | [Color Map](#color-map-choices) choices | Color map from textures/colormap to determine color of foliage. |  | 
+
+### Color Map choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| birch | Birch | |
+| dry_foliage | Dry foliage | |
+| evergreen | Evergreen | |
+| foliage | Foliage | |
+| mangrove_swamp_foliage | Mangrove swamp foliage | |
+| swamp_foliage | Swamp foliage | |

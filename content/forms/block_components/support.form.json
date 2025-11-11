@@ -11,6 +11,16 @@
         "title": "Support Shape",
         "description": "Required field. The type of support shape for this block.",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "fence",
+            "title": "Fence"
+          },
+          {
+            "id": "stair",
+            "title": "Stair"
+          }
+        ],
         "isRequired": true
       }
     ]

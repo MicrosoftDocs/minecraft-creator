@@ -53,7 +53,7 @@
       ],
       "/vanilla/behavior_pack/entities/camel_husk.json": [
         {
-          "path": "/minecraft:entity/components/minecraft:leashable_to/",
+          "path": "/minecraft:entity/component_groups/minecraft:camel_husk_with_no_hostile_rider/minecraft:leashable_to/",
           "content": {}
         }
       ],

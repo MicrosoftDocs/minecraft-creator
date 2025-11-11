@@ -127,7 +127,7 @@
         "dataType": 16,
         "subForm": {
           "id": "minecraft:damage_sensor",
-          "title": "Minecraft:damage_sensor",
+          "title": "Minecraft:damage sensor",
           "fields": [
             {
               "id": "triggers",

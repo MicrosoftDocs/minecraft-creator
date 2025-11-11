@@ -37,7 +37,33 @@
         "id": "strongly_powered_face",
         "title": "Facing",
         "description": "The block touching this face will become strongly powered with the signal level strength of \"power\".\nStrongly powered blocks will power adjacent blocks.\nBy default, the block will not strongly power any face.",
-        "dataType": 2
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "down",
+            "title": "Down"
+          },
+          {
+            "id": "east",
+            "title": "East"
+          },
+          {
+            "id": "north",
+            "title": "North"
+          },
+          {
+            "id": "south",
+            "title": "South"
+          },
+          {
+            "id": "up",
+            "title": "Up"
+          },
+          {
+            "id": "west",
+            "title": "West"
+          }
+        ]
       },
       {
         "id": "transform_relative",

@@ -10,6 +10,20 @@
         "id": "axis",
         "title": "PositionalBlockRuleAxis",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "x",
+            "title": "X"
+          },
+          {
+            "id": "y",
+            "title": "Y"
+          },
+          {
+            "id": "z",
+            "title": "Z"
+          }
+        ],
         "defaultValue": "y"
       },
       {
@@ -40,6 +54,16 @@
         "id": "predicate_type",
         "title": "PosType",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "minecraft:always_true",
+            "title": "Minecraft:always true"
+          },
+          {
+            "id": "minecraft:axis_aligned_linear_pos",
+            "title": "Minecraft:axis aligned linear pos"
+          }
+        ],
         "isRequired": true
       }
     ]

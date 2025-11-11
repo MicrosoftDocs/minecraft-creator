@@ -10,6 +10,16 @@
         "id": "type",
         "title": "BlockEntityModifierType",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "minecraft:append_loot",
+            "title": "Minecraft:append loot"
+          },
+          {
+            "id": "minecraft:passthrough",
+            "title": "Minecraft:passthrough"
+          }
+        ],
         "isRequired": true
       }
     ]

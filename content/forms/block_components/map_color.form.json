@@ -26,6 +26,36 @@
         "title": "Tint Method",
         "description": "Sets the tint method of the block when rendered to a map. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint. Supported tint methods are \"none\", \"default_foliage\", \"birch_foliage\", \"evergreen_foliage\", \"dry_foliage\", \"grass\" and \"water\"",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "birch_foliage",
+            "title": "Birch foliage"
+          },
+          {
+            "id": "default_foliage",
+            "title": "Default foliage"
+          },
+          {
+            "id": "dry_foliage",
+            "title": "Dry foliage"
+          },
+          {
+            "id": "evergreen_foliage",
+            "title": "Evergreen foliage"
+          },
+          {
+            "id": "grass",
+            "title": "Grass"
+          },
+          {
+            "id": "none",
+            "title": "None"
+          },
+          {
+            "id": "water",
+            "title": "Water"
+          }
+        ],
         "defaultValue": "none"
       }
     ]

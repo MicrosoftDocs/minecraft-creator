@@ -70,11 +70,11 @@
         "dataType": 15,
         "subForm": {
           "id": "event_choices",
-          "title": "Event_choices",
+          "title": "Event choices",
           "fields": [
             {
               "id": "min_activation_range",
-              "title": "Min_activation_range",
+              "title": "Min activation range",
               "dataType": 7,
               "samples": {
                 "/vanilla/behavior_pack/entities/evocation_illager.json": [
@@ -87,7 +87,7 @@
             },
             {
               "id": "max_activation_range",
-              "title": "Max_activation_range",
+              "title": "Max activation range",
               "dataType": 7,
               "samples": {
                 "/vanilla/behavior_pack/entities/evocation_illager.json": [
@@ -100,7 +100,7 @@
             },
             {
               "id": "cooldown_time",
-              "title": "Cooldown_time",
+              "title": "Cooldown time",
               "dataType": 7,
               "samples": {
                 "/vanilla/behavior_pack/entities/evocation_illager.json": [
@@ -113,7 +113,7 @@
             },
             {
               "id": "cast_duration",
-              "title": "Cast_duration",
+              "title": "Cast duration",
               "dataType": 7,
               "samples": {
                 "/vanilla/behavior_pack/entities/evocation_illager.json": [
@@ -126,7 +126,7 @@
             },
             {
               "id": "particle_color",
-              "title": "Particle_color",
+              "title": "Particle color",
               "dataType": 2,
               "samples": {
                 "/vanilla/behavior_pack/entities/evocation_illager.json": [
@@ -178,7 +178,7 @@
             },
             {
               "id": "start_sound_event",
-              "title": "Start_sound_event",
+              "title": "Start sound event",
               "dataType": 2,
               "samples": {
                 "/vanilla/behavior_pack/entities/evocation_illager.json": [

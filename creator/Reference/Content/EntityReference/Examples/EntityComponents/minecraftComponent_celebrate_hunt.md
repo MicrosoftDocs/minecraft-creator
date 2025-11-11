@@ -26,7 +26,7 @@ Specifies hunt celebration behaviour.
 
 ## Celebration Targets
 
-#### Celebration_targets Properties
+#### Celebration targets Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

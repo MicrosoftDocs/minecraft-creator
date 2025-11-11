@@ -33,7 +33,7 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 | sea_material (Alternate 1) | *not set* | [Sea Material](#sea-material) item |  |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome |  | 
 | top_material (Alternate 1) | *not set* | [Top Material](#top-material) item |  |  | 
-| type | *not set* | String | Controls the type of surface builder to use |  | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use |  | 
 
 ## Clay Material
 
@@ -111,3 +111,14 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 | states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+
+### Type choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| minecraft:capped | Minecraft:capped | |
+| minecraft:frozen_ocean | Minecraft:frozen ocean | |
+| minecraft:mesa | Minecraft:mesa | |
+| minecraft:overworld | Minecraft:overworld | |
+| minecraft:swamp | Minecraft:swamp | |
+| minecraft:the_end | Minecraft:the end | |

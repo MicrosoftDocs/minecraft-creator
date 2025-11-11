@@ -94,11 +94,11 @@
         "dataType": 16,
         "subForm": {
           "id": "celebration_targets",
-          "title": "Celebration_targets",
+          "title": "Celebration targets",
           "fields": [
             {
               "id": "all_of",
-              "title": "All_of",
+              "title": "All of",
               "dataType": 2,
               "samples": {
                 "/vanilla/behavior_pack/entities/piglin.json": [

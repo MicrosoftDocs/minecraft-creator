@@ -144,13 +144,6 @@
               "dataType": 2
             },
             {
-              "id": "shaded",
-              "title": "Shaded",
-              "description": "Should this material be rendered as shaded? If false then the material will ignore face dimming and ambient occlusion. Requires 'format_version' >= 1.21.120.",
-              "defaultValue": true,
-              "dataType": 1
-            },
-            {
               "id": "texture",
               "title": "Texture",
               "description": "Texture name for the material.",
@@ -189,7 +182,7 @@
             },
             {
               "id": "render_method",
-              "title": "Render_method",
+              "title": "Render method",
               "dataType": 2,
               "samples": {
                 "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [
@@ -202,7 +195,7 @@
             },
             {
               "id": "ambient_occlusion",
-              "title": "Ambient_occlusion",
+              "title": "Ambient occlusion",
               "dataType": 7,
               "samples": {
                 "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [

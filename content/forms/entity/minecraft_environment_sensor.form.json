@@ -193,6 +193,47 @@
               ]
             }
           ],
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:environment_sensor/",
+              "content": [
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "bool_property",
+                        "domain": "minecraft:has_rider_mounted"
+                      },
+                      {
+                        "test": "rider_count",
+                        "subject": "self",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  "event": "minecraft:all_riders_dismounted"
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "bool_property",
+                        "domain": "minecraft:has_rider_mounted",
+                        "value": false
+                      },
+                      {
+                        "test": "rider_count",
+                        "subject": "self",
+                        "operator": ">",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  "event": "minecraft:rider_mounted"
+                }
+              ]
+            }
+          ],
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:environment_sensor/",
@@ -1125,6 +1166,49 @@
                   ]
                 },
                 "event": "minecraft:start_playing_idle_ground_sound"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/camel_husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/",
+          "content": {
+            "triggers": [
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "bool_property",
+                      "domain": "minecraft:has_rider_mounted"
+                    },
+                    {
+                      "test": "rider_count",
+                      "subject": "self",
+                      "value": 0
+                    }
+                  ]
+                },
+                "event": "minecraft:all_riders_dismounted"
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "bool_property",
+                      "domain": "minecraft:has_rider_mounted",
+                      "value": false
+                    },
+                    {
+                      "test": "rider_count",
+                      "subject": "self",
+                      "operator": ">",
+                      "value": 0
+                    }
+                  ]
+                },
+                "event": "minecraft:rider_mounted"
               }
             ]
           }

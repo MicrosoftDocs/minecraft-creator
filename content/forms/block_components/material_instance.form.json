@@ -27,13 +27,6 @@
         ]
       },
       {
-        "id": "emissive",
-        "title": "Emissive",
-        "description": "Should this material be rendered as emissive",
-        "dataType": 1,
-        "defaultValue": true
-      },
-      {
         "id": "face_dimming",
         "title": "Face Dimming",
         "description": "Is this material dimmed by the direction it's facing",
@@ -52,6 +45,40 @@
         "title": "Block Render Layer",
         "description": "The render method to use. Each material of the block must use the same. The render method can be one of these options:\n\"opaque\" - Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency.\n\"double_sided\" - Used for completely disabling backface culling.\n\"blend\" - Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures).\n\"alpha_test\" - Used for a block like the vanilla (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also disables backface culling.\n\"alpha_test_single_side\" - Same as \"alpha_test\" but with backface culling.\n\"blend_to_opaque\" - Same as \"blend\" but turn opaque in the distance.\n\"alpha_test_to_opaque\" - Same as \"alpha_test\" but turn opaque in the distance instead of disappearing.\n\"alpha_test_single_side_to_opaque\" - Same as \"alpha_test_single_side\" but turn opaque in the distance instead of disappearing.",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "alpha_test",
+            "title": "Alpha test"
+          },
+          {
+            "id": "alpha_test_single_side",
+            "title": "Alpha test single side"
+          },
+          {
+            "id": "alpha_test_single_side_to_opaque",
+            "title": "Alpha test single side to opaque"
+          },
+          {
+            "id": "alpha_test_to_opaque",
+            "title": "Alpha test to opaque"
+          },
+          {
+            "id": "blend",
+            "title": "Blend"
+          },
+          {
+            "id": "blend_to_opaque",
+            "title": "Blend to opaque"
+          },
+          {
+            "id": "double_sided",
+            "title": "Double sided"
+          },
+          {
+            "id": "opaque",
+            "title": "Opaque"
+          }
+        ],
         "defaultValue": "opaque"
       },
       {
@@ -66,6 +93,36 @@
         "title": "Tint Method",
         "description": "Tint multiplied to the color. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint. Supported tint methods are \"none\", \"default_foliage\", \"birch_foliage\", \"evergreen_foliage\", \"dry_foliage\", \"grass\" and \"water\"",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "birch_foliage",
+            "title": "Birch foliage"
+          },
+          {
+            "id": "default_foliage",
+            "title": "Default foliage"
+          },
+          {
+            "id": "dry_foliage",
+            "title": "Dry foliage"
+          },
+          {
+            "id": "evergreen_foliage",
+            "title": "Evergreen foliage"
+          },
+          {
+            "id": "grass",
+            "title": "Grass"
+          },
+          {
+            "id": "none",
+            "title": "None"
+          },
+          {
+            "id": "water",
+            "title": "Water"
+          }
+        ],
         "defaultValue": "none"
       }
     ]

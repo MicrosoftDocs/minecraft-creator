@@ -11,6 +11,16 @@
         "title": "Below Top",
         "description": "Offset from anchored vertical position",
         "dataType": 0,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": -32768
+          },
+          {
+            "comparison": "<=",
+            "value": 32767
+          }
+        ],
         "isRequired": true
       }
     ]

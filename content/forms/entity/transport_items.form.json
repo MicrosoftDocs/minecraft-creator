@@ -145,6 +145,20 @@
         "title": "Place Strategy",
         "description": "The strategy to use for placing the transported item. Any - always place if there is room, With matching - place if there is a matching item in the container, With matching or empty - like With matching but will also place in empty containers",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "any",
+            "title": "Any"
+          },
+          {
+            "id": "with_matching",
+            "title": "With matching"
+          },
+          {
+            "id": "with_matching_or_empty",
+            "title": "With matching or empty"
+          }
+        ],
         "defaultValue": "any"
       },
       {
@@ -192,6 +206,16 @@
         "title": "Search Strategy",
         "description": "The strategy to use for finding source or destination containers. The nearest valid container or a random valid container in range.",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "nearest",
+            "title": "Nearest"
+          },
+          {
+            "id": "random",
+            "title": "Random"
+          }
+        ],
         "defaultValue": "random"
       },
       {

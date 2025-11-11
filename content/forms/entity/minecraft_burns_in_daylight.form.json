@@ -106,6 +106,32 @@
         "id": "protection_slot",
         "title": "EquipmentSlot",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "slot.armor.body",
+            "title": "Slot.armor.body"
+          },
+          {
+            "id": "slot.armor.chest",
+            "title": "Slot.armor.chest"
+          },
+          {
+            "id": "slot.armor.feet",
+            "title": "Slot.armor.feet"
+          },
+          {
+            "id": "slot.armor.head",
+            "title": "Slot.armor.head"
+          },
+          {
+            "id": "slot.armor.legs",
+            "title": "Slot.armor.legs"
+          },
+          {
+            "id": "slot.weapon.offhand",
+            "title": "Slot.weapon.offhand"
+          }
+        ],
         "defaultValue": "slot.armor.head",
         "samples": {
           "/vanilla/behavior_pack/entities/zombie_horse.json": [

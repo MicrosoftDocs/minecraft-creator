@@ -19,7 +19,7 @@ Tests whether the biome the subject is in has the specified tag.
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Villager v2: `"!="`, Wolf: `"not"` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
 | test | *not set* | String |  | Cave Spider: `"has_biome_tag"` | 
-| value | *not set* | String | (Required) The tag to look for | Cave Spider: `"swamp"`, `"mangrove_swamp"`, `"nether"` | 
+| value | *not set* | String | (Required) The tag to look for | Cave Spider: `"swamp"`, `"mangrove_swamp"`, `"desert"`, `"nether"` | 
 
 ### Operator choices
 
@@ -82,7 +82,16 @@ At /minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/
 }
 ```
 
-At /minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/2/filters/: 
+At /minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/2/filters/all_of/2/: 
+
+```json
+{
+  "test": "has_biome_tag",
+  "value": "desert"
+}
+```
+
+At /minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/3/filters/: 
 
 ```json
 {
@@ -112,15 +121,6 @@ At /minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/1/fi
 ```
 
 #### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
-
-At /minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/any_of/0/: 
-
-```json
-{
-  "test": "has_biome_tag",
-  "value": "desert"
-}
-```
 
 At /minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/any_of/1/: 
 

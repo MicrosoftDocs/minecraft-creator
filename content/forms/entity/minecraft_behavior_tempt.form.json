@@ -129,7 +129,7 @@
           ],
           "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "path": "/minecraft:entity/component_groups/minecraft:camel_husk_with_no_hostile_rider/minecraft:behavior.tempt/",
               "content": [
                 "rabbit_foot"
               ]
@@ -474,7 +474,7 @@
           ],
           "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "path": "/minecraft:entity/component_groups/minecraft:camel_husk_with_no_hostile_rider/minecraft:behavior.tempt/",
               "content": 2.5
             }
           ],
@@ -633,7 +633,7 @@
           ],
           "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "path": "/minecraft:entity/component_groups/minecraft:camel_husk_with_no_hostile_rider/minecraft:behavior.tempt/",
               "content": 4
             }
           ],
@@ -769,7 +769,7 @@
       ],
       "/vanilla/behavior_pack/entities/camel_husk.json": [
         {
-          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "path": "/minecraft:entity/component_groups/minecraft:camel_husk_with_no_hostile_rider/minecraft:behavior.tempt/",
           "content": {
             "priority": 4,
             "speed_multiplier": 2.5,

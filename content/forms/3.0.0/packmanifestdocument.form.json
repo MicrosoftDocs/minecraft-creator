@@ -19,6 +19,12 @@
         "id": "format_version",
         "title": "Format Version",
         "dataType": 0,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 255
+          }
+        ],
         "isRequired": true
       },
       {

@@ -1,0 +1,43 @@
+{
+  "id": "block_volume",
+  "title": "Block volume",
+  "fields": [
+    {
+      "id": "southWestBottom",
+      "title": "South West Bottom of the volume",
+      "dataType": 16,
+      "subFormId": "action_set/vector3",
+      "required": true
+    },
+    {
+      "id": "size",
+      "title": "Size of the volume",
+      "dataType": 16,
+      "subFormId": "action_set/vector3",
+      "required": true
+    },
+    {
+      "id": "blockPlanes",
+      "title": "Block planes",
+      "description": "A 2D array representing planes of blocks within the volume, where each character represents a lookup into the key.",
+      "dataType": 43
+    },
+    {
+      "id": "key",
+      "title": "key",
+      "dataType": 14,
+      "subForm": {
+        "id": "key",
+        "title": "Key",
+        "fields": [
+          {
+            "id": "typeId",
+            "title": "Block Type Id",
+            "dataType": 2,
+            "defaultValue": ""
+          }
+        ]
+      }
+    }
+  ]
+}

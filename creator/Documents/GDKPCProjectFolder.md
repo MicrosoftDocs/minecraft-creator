@@ -25,7 +25,7 @@ Within this folder, you will see several subfolders where you can place your dev
 `behavior_packs`
 `resource_packs`
 
-For example, you can place your behavior packs in developement for Minecraft at:
+For example, you can place your behavior packs in development for Minecraft at:
 
 `%appdata%\Minecraft Bedrock\users\shared\games\com.mojang\development_behavior_packs`
 

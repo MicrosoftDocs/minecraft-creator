@@ -406,7 +406,7 @@
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/camel_husk.json": [
+          "/vanilla/behavior_pack/entities/minecart.json": [
             {
               "path": "/minecraft:entity/components/minecraft:rideable/",
               "content": true
@@ -586,7 +586,6 @@
           "content": {
             "seat_count": 2,
             "crouching_skip_interact": true,
-            "pull_in_entities": true,
             "family_types": [
               "player",
               "parched",

@@ -1,7 +1,10 @@
 {
   "id": "block_set",
   "title": "Set Block",
-  "tags": ["script", "action"],
+  "tags": [
+    "script",
+    "action"
+  ],
   "fields": [
     {
       "id": "location",

@@ -39,11 +39,11 @@
         "dataType": 15,
         "subForm": {
           "id": "detection_rules",
-          "title": "Detection_rules",
+          "title": "Detection rules",
           "fields": [
             {
               "id": "liquid_type",
-              "title": "Liquid_type",
+              "title": "Liquid type",
               "dataType": 2,
               "samples": {
                 "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [
@@ -56,7 +56,7 @@
             },
             {
               "id": "on_liquid_touches",
-              "title": "On_liquid_touches",
+              "title": "On liquid touches",
               "dataType": 2,
               "samples": {
                 "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [

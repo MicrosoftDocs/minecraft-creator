@@ -650,10 +650,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
           "content": {
-            "test": "in_lava",
-            "subject": "self",
-            "operator": "==",
-            "value": true
+            "test": "in_lava"
           }
         }
       ],

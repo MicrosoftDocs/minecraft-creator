@@ -20,4 +20,13 @@ ms.date: 02/11/2025
 | name | *not set* | String |  |  | 
 | step | *not set* | Decimal number |  |  | 
 | text | *not set* | String |  |  | 
-| type | *not set* | String |  |  | 
+| type | *not set* | [Type](#type-choices) choices |  |  | 
+
+### Type choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| dropdown | Dropdown | |
+| label | Label | |
+| slider | Slider | |
+| toggle | Toggle | |

@@ -16,7 +16,18 @@ ms.date: 02/11/2025
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| protection_slot | slot.armor.head | String |  | Zombie Horse: `"slot.armor.body"` | 
+| protection_slot | slot.armor.head | [Protection Slot](#protection-slot-choices) choices |  | Zombie Horse: `"slot.armor.body"` | 
+
+### Protection Slot choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| slot.armor.body | Slot.armor.body | |
+| slot.armor.chest | Slot.armor.chest | |
+| slot.armor.feet | Slot.armor.feet | |
+| slot.armor.head | Slot.armor.head | |
+| slot.armor.legs | Slot.armor.legs | |
+| slot.weapon.offhand | Slot.weapon.offhand | |
 
 ## Samples
 

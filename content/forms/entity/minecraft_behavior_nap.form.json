@@ -86,11 +86,11 @@
         "dataType": 16,
         "subForm": {
           "id": "can_nap_filters",
-          "title": "Can_nap_filters",
+          "title": "Can nap filters",
           "fields": [
             {
               "id": "all_of",
-              "title": "All_of",
+              "title": "All of",
               "dataType": 2,
               "samples": {
                 "/vanilla/behavior_pack/entities/fox.json": [
@@ -170,11 +170,11 @@
         "dataType": 16,
         "subForm": {
           "id": "wake_mob_exceptions",
-          "title": "Wake_mob_exceptions",
+          "title": "Wake mob exceptions",
           "fields": [
             {
               "id": "any_of",
-              "title": "Any_of",
+              "title": "Any of",
               "dataType": 2,
               "samples": {
                 "/vanilla/behavior_pack/entities/fox.json": [

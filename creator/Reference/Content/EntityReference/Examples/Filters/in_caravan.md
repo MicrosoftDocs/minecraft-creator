@@ -27,7 +27,7 @@ Returns true if the subject entity is in a caravan.
 
 ## Damage Sensor
 
-#### Minecraft:damage_sensor Properties
+#### Minecraft:damage sensor Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

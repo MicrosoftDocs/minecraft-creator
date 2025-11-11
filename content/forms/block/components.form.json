@@ -6,6 +6,13 @@
     "title": "Block Components",
     "fields": [
       {
+        "id": "minecraft:crafting_table",
+        "title": "Minecraft Crafting Table",
+        "description": "Makes your block into a custom crafting table which enables the crafting table UI and the ability to craft recipes.",
+        "dataType": 16,
+        "subFormId": "block_components/crafting_table"
+      },
+      {
         "id": "minecraft:destructible_by_explosion",
         "title": "Minecraft Destructible By Explosion",
         "description": "Describes the destructible by explosion properties for this block. If set to true, the block will have the default explosion resistance. If set to false, this block is indestructible by explosion. If the component is omitted, the block will have the default explosion resistance.",
@@ -77,6 +84,13 @@
         "dataType": 16
       },
       {
+        "id": "minecraft:entity_fall_on",
+        "title": "Minecraft Entity Fall On",
+        "description": "Configures the behavior of an entity falling on this block. The minimum distance in blocks that an actor needs to fall before events are triggered.",
+        "dataType": 16,
+        "subFormId": "block_components/entity_fall_on"
+      },
+      {
         "id": "minecraft:flammable",
         "title": "Minecraft Flammable",
         "description": "Describes the flammable properties for this block. If set to true, default values are used. If set to false, or if this component is omitted, the block will not be able to catch on fire naturally from neighbors, but it can still be directly ignited.",
@@ -95,19 +109,43 @@
                   "title": "Catch Chance Modifier",
                   "description": "A modifier affecting the chance that this block will catch flame when next to a fire. Values are greater than or equal to 0, with a higher number meaning more likely to catch on fire. For a catch_chance_modifier greater than 0, the fire will continue to burn until the block is destroyed (or it will burn forever if the destroy_chance_modifier is 0). If the catch_chance_modifier is 0, and the block is directly ignited, the fire will eventually burn out without destroying the block (or it will have a chance to be destroyed if destroy_chance_modifier is greater than 0). The default value of 5 is the same as that of Planks.",
                   "dataType": 0,
-                  "defaultValue": 5
+                  "defaultValue": 5,
+                  "validity": [
+                    {
+                      "comparison": "<=",
+                      "value": 65535
+                    }
+                  ]
                 },
                 {
                   "id": "destroy_chance_modifier",
                   "title": "Destroy Chance Modifier",
                   "description": "A modifier affecting the chance that this block will be destroyed by flames when on fire. Values are greater than or equal to 0, with a higher number meaning more likely to be destroyed by fire. For a destroy_chance_modifier of 0, the block will never be destroyed by fire, and the fire will burn forever if the catch_chance_modifier is greater than 0. The default value of 20 is the same as that of Planks.",
                   "dataType": 0,
-                  "defaultValue": 20
+                  "defaultValue": 20,
+                  "validity": [
+                    {
+                      "comparison": "<=",
+                      "value": 65535
+                    }
+                  ]
                 }
               ]
             }
           }
         ]
+      },
+      {
+        "id": "minecraft:flower_pottable",
+        "title": "Minecraft Flower Pottable",
+        "description": "This component allows the held item version of this block to be interacted with an empty flowerpot to place the block in it.",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:friction",
+        "title": "Minecraft Friction",
+        "description": "Describes the friction for this block in a range of (0.0-0.9). Friction affects an entity's movement speed when it travels on the block. Greater value results in more friction.",
+        "dataType": 16
       },
       {
         "id": "minecraft:geometry",
@@ -147,6 +185,16 @@
                             "id": "version",
                             "title": "Version",
                             "dataType": 0,
+                            "validity": [
+                              {
+                                "comparison": ">=",
+                                "value": -32768
+                              },
+                              {
+                                "comparison": "<=",
+                                "value": 32767
+                              }
+                            ],
                             "isRequired": true
                           }
                         ]
@@ -209,6 +257,12 @@
         "dataType": 16
       },
       {
+        "id": "minecraft:loot",
+        "title": "Minecraft Loot",
+        "description": "The path to the loot table, relative to the behavior pack. Path string is limited to 256 characters.",
+        "dataType": 16
+      },
+      {
         "id": "minecraft:map_color",
         "title": "Minecraft Map Color",
         "description": "Sets the color and optional tint of the block when rendered to a map.",
@@ -220,6 +274,13 @@
         "title": "Minecraft Material Instances",
         "description": "The material instances for a block.\nMaps face or material_instance names in a geometry file to an actual material instance. Material instance can either be a full material instance or a name to another already defined instance.\nLimited to 64 instances.",
         "dataType": 16
+      },
+      {
+        "id": "minecraft:movable",
+        "title": "Minecraft Movable",
+        "description": "This defines how a block reacts to being moved by another block like a piston.",
+        "dataType": 16,
+        "subFormId": "block_components/movable"
       },
       {
         "id": "minecraft:redstone_conductivity",

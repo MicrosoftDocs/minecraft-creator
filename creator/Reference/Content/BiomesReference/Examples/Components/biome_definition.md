@@ -187,7 +187,27 @@ Noise parameters used to drive terrain height in the Overworld.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | noise_params | *not set* | Array of numbers | First value is depth - more negative means deeper underwater, while more positive means higher. Second value is scale, which affects how much noise changes as it moves from the surface. Value must have at least 2 items. Value must have at most 2 items. |  | 
-| noise_type | *not set* | String | Specifies a preset based on a built-in setting rather than manually using noise_params |  | 
+| noise_type | *not set* | [Noise Type](#noise-type-choices) choices | Specifies a preset based on a built-in setting rather than manually using noise_params |  | 
+
+### Noise Type choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| beach | Beach | |
+| deep_ocean | Deep ocean | |
+| default | Default | |
+| default_mutated | Default mutated | |
+| extreme | Extreme | |
+| highlands | Highlands | |
+| less_extreme | Less extreme | |
+| lowlands | Lowlands | |
+| mountains | Mountains | |
+| mushroom | Mushroom | |
+| ocean | Ocean | |
+| river | River | |
+| stone_beach | Stone beach | |
+| swamp | Swamp | |
+| taiga | Taiga | |
 
 ## Biome Replace Biomes
 Replaces a specified portion of one or more Minecraft biomes.
@@ -246,7 +266,7 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 | sea_material (Alternate 1) | *not set* | [Sea Material](#sea-material) item |  |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome |  | 
 | top_material (Alternate 1) | *not set* | [Top Material](#top-material) item |  |  | 
-| type | *not set* | String | Controls the type of surface builder to use |  | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use |  | 
 
 ## Foundation Material
 
@@ -303,6 +323,17 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
+### Type choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| minecraft:capped | Minecraft:capped | |
+| minecraft:frozen_ocean | Minecraft:frozen ocean | |
+| minecraft:mesa | Minecraft:mesa | |
+| minecraft:overworld | Minecraft:overworld | |
+| minecraft:swamp | Minecraft:swamp | |
+| minecraft:the_end | Minecraft:the end | |
+
 ## Biome Frozen Ocean
 Similar to overworld_surface. Adds icebergs.
 
@@ -322,7 +353,18 @@ Similar to overworld_surface. Adds icebergs.
 | sea_material (Alternate 1) | *not set* | [Sea Material](#sea-material) item |  |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome |  | 
 | top_material (Alternate 1) | *not set* | [Top Material](#top-material) item |  |  | 
-| type | *not set* | String | Controls the type of surface builder to use |  | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use |  | 
+
+### Type choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| minecraft:capped | Minecraft:capped | |
+| minecraft:frozen_ocean | Minecraft:frozen ocean | |
+| minecraft:mesa | Minecraft:mesa | |
+| minecraft:overworld | Minecraft:overworld | |
+| minecraft:swamp | Minecraft:swamp | |
+| minecraft:the_end | Minecraft:the end | |
 
 ## Biome Mesa
 Similar to overworld_surface. Adds colored strata and optional pillars.
@@ -349,7 +391,7 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 | sea_material (Alternate 1) | *not set* | [Sea Material](#sea-material) item |  |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome |  | 
 | top_material (Alternate 1) | *not set* | [Top Material](#top-material) item |  |  | 
-| type | *not set* | String | Controls the type of surface builder to use |  | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use |  | 
 
 ## Clay Material
 
@@ -373,6 +415,17 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
+### Type choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| minecraft:capped | Minecraft:capped | |
+| minecraft:frozen_ocean | Minecraft:frozen ocean | |
+| minecraft:mesa | Minecraft:mesa | |
+| minecraft:overworld | Minecraft:overworld | |
+| minecraft:swamp | Minecraft:swamp | |
+| minecraft:the_end | Minecraft:the end | |
+
 ## Biome Swamp
 Used to add decoration to the surface of swamp biomes such as water lilies.
 
@@ -393,7 +446,18 @@ Used to add decoration to the surface of swamp biomes such as water lilies.
 | sea_material (Alternate 1) | *not set* | [Sea Material](#sea-material) item |  |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome. |  | 
 | top_material (Alternate 1) | *not set* | [Top Material](#top-material) item |  |  | 
-| type | *not set* | String | Controls the type of surface builder to use |  | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use |  | 
+
+### Type choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| minecraft:capped | Minecraft:capped | |
+| minecraft:frozen_ocean | Minecraft:frozen ocean | |
+| minecraft:mesa | Minecraft:mesa | |
+| minecraft:overworld | Minecraft:overworld | |
+| minecraft:swamp | Minecraft:swamp | |
+| minecraft:the_end | Minecraft:the end | |
 
 ## Biome Capped
 Generates surface on blocks with non-solid blocks above or below.
@@ -413,7 +477,7 @@ Generates surface on blocks with non-solid blocks above or below.
 | foundation_material (Alternate 1) | *not set* | [Foundation Material](#foundation-material) item |  |  | 
 | sea_material | *not set* | String | Material used to replace air blocks below sea level. |  | 
 | sea_material (Alternate 1) | *not set* | [Sea Material](#sea-material) item |  |  | 
-| type | *not set* | String | Controls the type of surface builder to use |  | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use |  | 
 
 ## Beach Material
 
@@ -448,13 +512,35 @@ Generates surface on blocks with non-solid blocks above or below.
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
+### Type choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| minecraft:capped | Minecraft:capped | |
+| minecraft:frozen_ocean | Minecraft:frozen ocean | |
+| minecraft:mesa | Minecraft:mesa | |
+| minecraft:overworld | Minecraft:overworld | |
+| minecraft:swamp | Minecraft:swamp | |
+| minecraft:the_end | Minecraft:the end | |
+
 ## Biome The End
 
 #### Biome The End Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| type | *not set* | String | Use default Minecraft End terrain generation. |  | 
+| type | *not set* | [Type](#type-choices) choices | Use default Minecraft End terrain generation. |  | 
+
+### Type choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| minecraft:capped | Minecraft:capped | |
+| minecraft:frozen_ocean | Minecraft:frozen ocean | |
+| minecraft:mesa | Minecraft:mesa | |
+| minecraft:overworld | Minecraft:overworld | |
+| minecraft:swamp | Minecraft:swamp | |
+| minecraft:the_end | Minecraft:the end | |
 
 ## Biome Surface Material Adjustments
 Specify fine-detail changes to blocks used in terrain generation (based on a noise function).

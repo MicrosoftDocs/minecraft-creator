@@ -1,0 +1,727 @@
+{
+  "id": "actor_resource_definition",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "actor_resource_definition",
+    "fields": [
+      {
+        "dataType": 25,
+        "id": "format_version",
+        "title": "Format Version",
+        "isRequired": true
+      },
+      {
+        "dataType": 16,
+        "id": "minecraft:client_entity",
+        "title": "Client Entity",
+        "isRequired": false,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 16,
+              "id": "description",
+              "title": "Description",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 2,
+                    "id": "identifier",
+                    "title": "Identifier",
+                    "isRequired": true
+                  },
+                  {
+                    "dataType": 25,
+                    "id": "min_engine_version",
+                    "title": "Min Engine Version",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "materials",
+                    "title": "Materials",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "materials",
+                        "title": "<identifier>",
+                        "isRequired": true,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "textures",
+                    "title": "Textures",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "textures",
+                        "title": "<identifier>",
+                        "isRequired": true,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "geometry",
+                    "title": "Geometry",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "geometry",
+                        "title": "<identifier>",
+                        "isRequired": true,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 2,
+                    "id": "queryable_geometry",
+                    "title": "Queryable Geometry",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "spawn_egg",
+                    "title": "Spawn Egg",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "texture",
+                          "title": "Texture",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 2,
+                          "id": "base_color",
+                          "title": "Base Color",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 2,
+                          "id": "overlay_color",
+                          "title": "Overlay Color",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 0,
+                          "id": "texture_index",
+                          "title": "Texture Index",
+                          "isRequired": false
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "scripts",
+                    "title": "Scripts",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 16,
+                          "id": "variables",
+                          "title": "Variables",
+                          "description": "A list of variables that need certain settings applied to them.  Currently, for the client, only \"public\" is supported.",
+                          "isRequired": false,
+                          "subForm": {
+                            "fields": [
+                              {
+                                "dataType": 2,
+                                "id": "variable.[a-zA-Z_][a-zA-Z0-9_]*\"<\"public\"",
+                                "title": "[a-zA-Z0-9 ]*\"<\"public\" Variable",
+                                "description": "If a variable is public, it can be read by other mobs.  See the molang '->' operator for details.",
+                                "isRequired": true
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "dataType": 35,
+                          "id": "initialize",
+                          "title": "Initialize",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 35,
+                          "id": "pre_animation",
+                          "title": "Pre Animation",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "scale",
+                          "title": "Scale",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "scale[xX]",
+                          "title": "Scale",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "scale[yY]",
+                          "title": "Scale",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "scale[zZ]",
+                          "title": "Scale",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "parent_setup",
+                          "title": "Parent Setup",
+                          "isRequired": false
+                        },
+                        {
+                          "id": "animate",
+                          "dataType": 15,
+                          "subForm": {
+                            "fields": []
+                          },
+                          "alternates": [
+                            {
+                              "dataType": 17,
+                              "id": "animate",
+                              "title": "Animate",
+                              "isRequired": false
+                            },
+                            {
+                              "dataType": 34,
+                              "id": "animate",
+                              "title": "<scope Identifier>",
+                              "isRequired": false,
+                              "keyDescription": "<scope_identifier>"
+                            }
+                          ]
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "should_update_bones_and_effects_offscreen",
+                          "title": "Should Update Bones And Effects Offscreen",
+                          "description": "Bones and effects will still be updated if the entity is off screen if this expression returns anything other than 0.0.",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "should_update_effects_offscreen",
+                          "title": "Should Update Effects Offscreen",
+                          "description": "Effects will still be updated if the entity is off screen if this expression or `should_update_bones_and_effects_offscreen` returns anything other than 0.0.",
+                          "isRequired": false
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "particle_effects",
+                    "title": "Particle Effects",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "particle_effects",
+                        "title": "<identifier>",
+                        "isRequired": false,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "particle_emitters",
+                    "title": "Particle Emitters",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "particle_emitters",
+                        "title": "<identifier>",
+                        "isRequired": false,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "animations",
+                    "title": "Animations",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "animations",
+                        "title": "<identifier>",
+                        "isRequired": false,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "render_controllers",
+                    "dataType": 15,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 17,
+                        "id": "render_controllers",
+                        "title": "Render Controllers",
+                        "isRequired": false
+                      },
+                      {
+                        "dataType": 34,
+                        "id": "render_controllers",
+                        "title": "<scope Identifier>",
+                        "isRequired": false,
+                        "keyDescription": "<scope_identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "sound_effects",
+                    "title": "Sound Effects",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "sound_effects",
+                        "title": "<identifier>",
+                        "isRequired": false,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 1,
+                    "id": "enable_attachables",
+                    "title": "Enable Attachables",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 1,
+                    "id": "held_item_ignores_lighting",
+                    "title": "Held Item Ignores Lighting",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 1,
+                    "id": "hide_armor",
+                    "title": "Hide Armor",
+                    "isRequired": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "dataType": 16,
+        "id": "minecraft:attachable",
+        "title": "Attachable",
+        "isRequired": false,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 16,
+              "id": "description",
+              "title": "Description",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 2,
+                    "id": "identifier",
+                    "title": "Identifier",
+                    "isRequired": true
+                  },
+                  {
+                    "dataType": 25,
+                    "id": "min_engine_version",
+                    "title": "Min Engine Version",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "materials",
+                    "title": "Materials",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "materials",
+                        "title": "<identifier>",
+                        "isRequired": true,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "textures",
+                    "title": "Textures",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "textures",
+                        "title": "<identifier>",
+                        "isRequired": true,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "geometry",
+                    "title": "Geometry",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "geometry",
+                        "title": "<identifier>",
+                        "isRequired": true,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 2,
+                    "id": "queryable_geometry",
+                    "title": "Queryable Geometry",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "spawn_egg",
+                    "title": "Spawn Egg",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "texture",
+                          "title": "Texture",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 2,
+                          "id": "base_color",
+                          "title": "Base Color",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 2,
+                          "id": "overlay_color",
+                          "title": "Overlay Color",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 0,
+                          "id": "texture_index",
+                          "title": "Texture Index",
+                          "isRequired": false
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "scripts",
+                    "title": "Scripts",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 16,
+                          "id": "variables",
+                          "title": "Variables",
+                          "description": "A list of variables that need certain settings applied to them.  Currently, for the client, only \"public\" is supported.",
+                          "isRequired": false,
+                          "subForm": {
+                            "fields": [
+                              {
+                                "dataType": 2,
+                                "id": "variable.[a-zA-Z_][a-zA-Z0-9_]*\"<\"public\"",
+                                "title": "[a-zA-Z0-9 ]*\"<\"public\" Variable",
+                                "description": "If a variable is public, it can be read by other mobs.  See the molang '->' operator for details.",
+                                "isRequired": true
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "dataType": 35,
+                          "id": "initialize",
+                          "title": "Initialize",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 35,
+                          "id": "pre_animation",
+                          "title": "Pre Animation",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "scale",
+                          "title": "Scale",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "scale[xX]",
+                          "title": "Scale",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "scale[yY]",
+                          "title": "Scale",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "scale[zZ]",
+                          "title": "Scale",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "parent_setup",
+                          "title": "Parent Setup",
+                          "isRequired": false
+                        },
+                        {
+                          "id": "animate",
+                          "dataType": 15,
+                          "subForm": {
+                            "fields": []
+                          },
+                          "alternates": [
+                            {
+                              "dataType": 17,
+                              "id": "animate",
+                              "title": "Animate",
+                              "isRequired": false
+                            },
+                            {
+                              "dataType": 34,
+                              "id": "animate",
+                              "title": "<scope Identifier>",
+                              "isRequired": false,
+                              "keyDescription": "<scope_identifier>"
+                            }
+                          ]
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "should_update_bones_and_effects_offscreen",
+                          "title": "Should Update Bones And Effects Offscreen",
+                          "description": "Bones and effects will still be updated if the entity is off screen if this expression returns anything other than 0.0.",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "should_update_effects_offscreen",
+                          "title": "Should Update Effects Offscreen",
+                          "description": "Effects will still be updated if the entity is off screen if this expression or `should_update_bones_and_effects_offscreen` returns anything other than 0.0.",
+                          "isRequired": false
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "particle_effects",
+                    "title": "Particle Effects",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "particle_effects",
+                        "title": "<identifier>",
+                        "isRequired": false,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "particle_emitters",
+                    "title": "Particle Emitters",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "particle_emitters",
+                        "title": "<identifier>",
+                        "isRequired": false,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "animations",
+                    "title": "Animations",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "animations",
+                        "title": "<identifier>",
+                        "isRequired": false,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "render_controllers",
+                    "dataType": 15,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 17,
+                        "id": "render_controllers",
+                        "title": "Render Controllers",
+                        "isRequired": false
+                      },
+                      {
+                        "dataType": 34,
+                        "id": "render_controllers",
+                        "title": "<scope Identifier>",
+                        "isRequired": false,
+                        "keyDescription": "<scope_identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "sound_effects",
+                    "title": "Sound Effects",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "sound_effects",
+                        "title": "<identifier>",
+                        "isRequired": false,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 1,
+                    "id": "enable_attachables",
+                    "title": "Enable Attachables",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 1,
+                    "id": "held_item_ignores_lighting",
+                    "title": "Held Item Ignores Lighting",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 1,
+                    "id": "hide_armor",
+                    "title": "Hide Armor",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "item",
+                    "title": "Item",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "item",
+                        "isRequired": false
+                      },
+                      {
+                        "dataType": 34,
+                        "id": "item",
+                        "title": "<scope Identifier>",
+                        "isRequired": true,
+                        "keyDescription": "<scope_identifier>"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "dataVersion": "1.10.0"
+  }
+}

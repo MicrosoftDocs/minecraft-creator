@@ -18,7 +18,69 @@
         "id": "noise_type",
         "title": "Noise Type",
         "description": "Specifies a preset based on a built-in setting rather than manually using noise_params",
-        "dataType": 2
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "beach",
+            "title": "Beach"
+          },
+          {
+            "id": "deep_ocean",
+            "title": "Deep ocean"
+          },
+          {
+            "id": "default",
+            "title": "Default"
+          },
+          {
+            "id": "default_mutated",
+            "title": "Default mutated"
+          },
+          {
+            "id": "extreme",
+            "title": "Extreme"
+          },
+          {
+            "id": "highlands",
+            "title": "Highlands"
+          },
+          {
+            "id": "less_extreme",
+            "title": "Less extreme"
+          },
+          {
+            "id": "lowlands",
+            "title": "Lowlands"
+          },
+          {
+            "id": "mountains",
+            "title": "Mountains"
+          },
+          {
+            "id": "mushroom",
+            "title": "Mushroom"
+          },
+          {
+            "id": "ocean",
+            "title": "Ocean"
+          },
+          {
+            "id": "river",
+            "title": "River"
+          },
+          {
+            "id": "stone_beach",
+            "title": "Stone beach"
+          },
+          {
+            "id": "swamp",
+            "title": "Swamp"
+          },
+          {
+            "id": "taiga",
+            "title": "Taiga"
+          }
+        ]
       }
     ]
   }

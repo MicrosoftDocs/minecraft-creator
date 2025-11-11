@@ -41,7 +41,7 @@ Allows a mob to stalk a target, then once within range pounce onto a target, on 
 
 ## Stuck Blocks
 
-#### Stuck_blocks Properties
+#### Stuck blocks Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

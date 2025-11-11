@@ -63,7 +63,7 @@
             },
             {
               "id": "on_give",
-              "title": "On_give",
+              "title": "On give",
               "dataType": 2,
               "samples": {
                 "/vanilla/behavior_pack/entities/panda.json": [

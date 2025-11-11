@@ -10,6 +10,32 @@
         "id": "predicate_type",
         "title": "BlockType",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "minecraft:always_true",
+            "title": "Minecraft:always true"
+          },
+          {
+            "id": "minecraft:block_match",
+            "title": "Minecraft:block match"
+          },
+          {
+            "id": "minecraft:blockstate_match",
+            "title": "Minecraft:blockstate match"
+          },
+          {
+            "id": "minecraft:random_block_match",
+            "title": "Minecraft:random block match"
+          },
+          {
+            "id": "minecraft:random_blockstate_match",
+            "title": "Minecraft:random blockstate match"
+          },
+          {
+            "id": "minecraft:tag_match",
+            "title": "Minecraft:tag match"
+          }
+        ],
         "isRequired": true
       }
     ]

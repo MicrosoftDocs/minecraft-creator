@@ -19,7 +19,33 @@
       {
         "id": "face",
         "title": "Facing",
-        "dataType": 2
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "down",
+            "title": "Down"
+          },
+          {
+            "id": "east",
+            "title": "East"
+          },
+          {
+            "id": "north",
+            "title": "North"
+          },
+          {
+            "id": "south",
+            "title": "South"
+          },
+          {
+            "id": "up",
+            "title": "Up"
+          },
+          {
+            "id": "west",
+            "title": "West"
+          }
+        ]
       }
     ]
   }

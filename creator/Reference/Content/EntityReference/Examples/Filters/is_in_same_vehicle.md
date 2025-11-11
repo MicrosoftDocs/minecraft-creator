@@ -9,7 +9,7 @@ ms.date: 02/11/2025
 
 # Entity Filters Documentation - minecraft:is_in_same_vehicle
 
-Returns whether the subject entity is in the same vehicle as the host entity.
+Returns whether the subject entity is in the same vehicle as the calling entity.
 
 
 ## Is In Same Vehicle Properties

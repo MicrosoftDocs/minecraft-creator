@@ -1,0 +1,293 @@
+{
+  "id": "actor_resource_definition",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "actor_resource_definition",
+    "fields": [
+      {
+        "dataType": 25,
+        "id": "format_version",
+        "title": "Format Version",
+        "isRequired": true
+      },
+      {
+        "dataType": 16,
+        "id": "minecraft:(client_entity|attachable)",
+        "title": "(client Entity|attachable)",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 16,
+              "id": "description",
+              "title": "Description",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 2,
+                    "id": "identifier",
+                    "title": "Identifier",
+                    "isRequired": true
+                  },
+                  {
+                    "dataType": 25,
+                    "id": "min_engine_version",
+                    "title": "Min Engine Version",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "materials",
+                    "title": "Materials",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "materials",
+                        "title": "<identifier>",
+                        "isRequired": true,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "textures",
+                    "title": "Textures",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "textures",
+                        "title": "<identifier>",
+                        "isRequired": true,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "geometry",
+                    "title": "Geometry",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "geometry",
+                        "title": "<identifier>",
+                        "isRequired": true,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "spawn_egg",
+                    "title": "Spawn Egg",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "texture",
+                          "title": "Texture",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 2,
+                          "id": "base_color",
+                          "title": "Base Color",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 2,
+                          "id": "overlay_color",
+                          "title": "Overlay Color",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 0,
+                          "id": "texture_index",
+                          "title": "Texture Index",
+                          "isRequired": false
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "scripts",
+                    "title": "Scripts",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 35,
+                          "id": "pre_animation",
+                          "title": "Pre Animation",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "scale",
+                          "title": "Scale",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "scale[xX]",
+                          "title": "Scale",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "scale[yY]",
+                          "title": "Scale",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "scale[zZ]",
+                          "title": "Scale",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "parent_setup",
+                          "title": "Parent Setup",
+                          "isRequired": false
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "particle_effects",
+                    "title": "Particle Effects",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "particle_effects",
+                        "title": "<identifier>",
+                        "isRequired": false,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "particle_emitters",
+                    "title": "Particle Emitters",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "particle_emitters",
+                        "title": "<identifier>",
+                        "isRequired": false,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "animations",
+                    "title": "Animations",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "animations",
+                        "title": "<identifier>",
+                        "isRequired": false,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "animation_controllers",
+                    "dataType": 15,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 17,
+                        "id": "animation_controllers",
+                        "title": "Animation Controllers",
+                        "isRequired": false
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 17,
+                    "id": "render_controllers",
+                    "title": "Render Controllers",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "sound_effects",
+                    "title": "Sound Effects",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 2,
+                        "id": "sound_effects",
+                        "title": "<identifier>",
+                        "isRequired": false,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 1,
+                    "id": "enable_attachables",
+                    "title": "Enable Attachables",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 1,
+                    "id": "held_item_ignores_lighting",
+                    "title": "Held Item Ignores Lighting",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 1,
+                    "id": "hide_armor",
+                    "title": "Hide Armor",
+                    "isRequired": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "dataVersion": "1.8.0"
+  }
+}

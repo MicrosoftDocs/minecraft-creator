@@ -11,6 +11,24 @@
         "title": "CraftingCatalogItemCategory",
         "description": "The category that the items will go to. This is restricted to construction, nature, equipment, or items.",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "construction",
+            "title": "Construction"
+          },
+          {
+            "id": "equipment",
+            "title": "Equipment"
+          },
+          {
+            "id": "items",
+            "title": "Items"
+          },
+          {
+            "id": "nature",
+            "title": "Nature"
+          }
+        ],
         "isRequired": true
       },
       {

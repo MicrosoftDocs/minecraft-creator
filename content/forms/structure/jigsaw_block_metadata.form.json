@@ -24,6 +24,16 @@
         "title": "Jigsaw Joint Type",
         "description": "The type of Jigsaw joint made with 'target'.",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "aligned",
+            "title": "Aligned"
+          },
+          {
+            "id": "rollable",
+            "title": "Rollable"
+          }
+        ],
         "isRequired": true
       },
       {

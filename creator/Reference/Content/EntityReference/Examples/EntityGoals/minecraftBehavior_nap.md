@@ -26,7 +26,7 @@ Allows mobs to occassionally stop and take a nap under certain conditions.
 
 ## Can Nap Filters
 
-#### Can_nap_filters Properties
+#### Can nap filters Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -34,7 +34,7 @@ Allows mobs to occassionally stop and take a nap under certain conditions.
 
 ## Wake Mob Exceptions
 
-#### Wake_mob_exceptions Properties
+#### Wake mob exceptions Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
