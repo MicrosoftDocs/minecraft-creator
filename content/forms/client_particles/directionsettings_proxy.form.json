@@ -30,6 +30,16 @@
                   "id": "version",
                   "title": "Version",
                   "dataType": 0,
+                  "validity": [
+                    {
+                      "comparison": ">=",
+                      "value": -32768
+                    },
+                    {
+                      "comparison": "<=",
+                      "value": 32767
+                    }
+                  ],
                   "isRequired": true
                 }
               ]
@@ -51,6 +61,16 @@
         "id": "mode",
         "title": "Particle Appearance Billboard Direction Settings Mode",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "custom",
+            "title": "Custom"
+          },
+          {
+            "id": "derive_from_velocity",
+            "title": "Derive from velocity"
+          }
+        ],
         "isRequired": true
       }
     ]

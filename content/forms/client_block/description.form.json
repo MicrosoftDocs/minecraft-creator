@@ -1,6 +1,11 @@
 {
   "id": "Description",
-  "fields": [],
+  "fields": [
+    {
+      "id": "identifier",
+      "description": "The namespace and identifier for this culling rule."
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "Description",
     "title": "Client Block Description",

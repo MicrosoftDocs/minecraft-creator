@@ -51,6 +51,24 @@
         "id": "type",
         "title": "SettingType",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "dropdown",
+            "title": "Dropdown"
+          },
+          {
+            "id": "label",
+            "title": "Label"
+          },
+          {
+            "id": "slider",
+            "title": "Slider"
+          },
+          {
+            "id": "toggle",
+            "title": "Toggle"
+          }
+        ],
         "isRequired": true
       }
     ]

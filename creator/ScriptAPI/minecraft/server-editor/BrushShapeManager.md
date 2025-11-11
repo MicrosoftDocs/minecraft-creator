@@ -35,6 +35,10 @@ Type: [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
 - [setBrushShapeOffset](#setbrushshapeoffset)
 - [setBrushShapeVisible](#setbrushshapevisible)
 - [setDirectionalPlacementMode](#setdirectionalplacementmode)
+- [setElevationBrushRadius](#setelevationbrushradius)
+- [setElevationFalloff](#setelevationfalloff)
+- [setElevationMode](#setelevationmode)
+- [setElevationSampleLayers](#setelevationsamplelayers)
 - [setFlattenMode](#setflattenmode)
 - [setFlattenSmoothing](#setflattensmoothing)
 - [setFloorBlockOverride](#setfloorblockoverride)
@@ -228,6 +232,50 @@ setDirectionalPlacementMode(directionalPlacementMode: BrushDirectionalPlacementM
 
 #### **Parameters**
 - **directionalPlacementMode**: [*BrushDirectionalPlacementMode*](BrushDirectionalPlacementMode.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **setElevationBrushRadius**
+`
+setElevationBrushRadius(elevationBrushRadius: number): void
+`
+
+#### **Parameters**
+- **elevationBrushRadius**: *number*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **setElevationFalloff**
+`
+setElevationFalloff(elevationFalloff: number): void
+`
+
+#### **Parameters**
+- **elevationFalloff**: *number*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **setElevationMode**
+`
+setElevationMode(elevationMode: BrushElevationMode): void
+`
+
+#### **Parameters**
+- **elevationMode**: [*BrushElevationMode*](BrushElevationMode.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **setElevationSampleLayers**
+`
+setElevationSampleLayers(elevationSampleLayers: number): void
+`
+
+#### **Parameters**
+- **elevationSampleLayers**: *number*
   
 Notes:
 - This function can't be called in read-only mode.

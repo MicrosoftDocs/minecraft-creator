@@ -1,0 +1,61 @@
+{
+  "id": "info_set.item",
+  "title": "Info Set Item",
+  "description": "Single entry from the generator output feed.",
+  "fields": [
+    {
+      "id": "iTp",
+      "title": "Item Type",
+      "description": "Numeric discriminator identifying the kind of item entry.",
+      "dataType": 0,
+      "isRequired": true
+    },
+    {
+      "id": "gId",
+      "title": "Group Id",
+      "description": "Identifier of the generator group responsible for this entry.",
+      "dataType": 2,
+      "isRequired": true
+    },
+    {
+      "id": "gIx",
+      "title": "Group Index",
+      "description": "Requirement or message code as emitted by the generator.",
+      "dataType": 0,
+      "isRequired": true
+    },
+    {
+      "id": "p",
+      "title": "Path",
+      "description": "Optional path that contextualises the item entry.",
+      "dataType": 2
+    },
+    {
+      "id": "d",
+      "title": "Data",
+      "description": "Supplemental data emitted with the item. Can be a string or an array of numbers.",
+      "dataType": 2,
+      "alternates": [
+        {
+          "id": "d",
+          "dataType": 32,
+          "description": "Numeric tuple representation when the generator emits version triples or coordinates."
+        }
+      ]
+    },
+    {
+      "id": "m",
+      "title": "Message",
+      "description": "Human readable context for the entry.",
+      "dataType": 13
+    },
+    {
+      "id": "fs",
+      "title": "Feature Sets",
+      "description": "Optional keyed metrics attached to this item entry.",
+      "dataType": 14,
+      "subFormId": "info_set/feature_set_entry",
+      "allowCreateDelete": true
+    }
+  ]
+}

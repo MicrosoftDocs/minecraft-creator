@@ -53,6 +53,10 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:small_dripstone_feature`
 - `minecraft:crimson_roots_feature`
 - `minecraft:warped_roots_feature`
+- `minecraft:bamboo_jungle_after_surface_bamboo_feature`
+- `minecraft:crimson_fungus_warped_feature`
+- `minecraft:crimson_roots_warped_feature`
+- `minecraft:savanna_surface_flowers_feature`
 - `minecraft:savanna_surface_tall_grass_feature`
 - `minecraft:overworld_surface_extra_brown_mushroom_feature`
 - `minecraft:birch_forest_before_surface_wildflowers_feature_rules`
@@ -90,7 +94,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:mega_taiga_after_surface_brown_mushroom_feature_rules`
 - `minecraft:plains_surface_tall_grass_feature`
 - `minecraft:overworld_underground_diamond_ore_large_feature`
-- `minecraft:savanna_surface_flowers_feature`
 - `minecraft:overworld_surface_flowers_feature`
 - `minecraft:overworld_surface_tall_grass_feature`
 - `minecraft:taiga_first_double_plant_fern_feature`
@@ -162,7 +165,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:desert_after_surface_dry_grass_feature_rules`
 - `minecraft:mesa_after_surface_dry_grass_feature_rules`
 - `minecraft:overworld_after_surface_bush_feature_rules`
-- `minecraft:bamboo_jungle_after_surface_bamboo_feature`
 - `minecraft:desert_or_swamp_after_surface_fossil_deepslate_feature`
 - `minecraft:savanna_after_surface_tall_grass_feature_rules`
 - `minecraft:plains_after_surface_double_plant_sunflower_feature_rules`
@@ -306,6 +308,7 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:beehive_west_feature`
 - `minecraft:crimson_fungus_feature`
 - `minecraft:warped_roots_scatter_feature`
+- `minecraft:crimson_roots_scatter_feature`
 - `minecraft:optional_mountain_spruce_tree_feature`
 - `minecraft:scatter_dry_grass_feature`
 - `minecraft:scatter_meadow_tall_grass_feature`
@@ -374,7 +377,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:underground_underwater_cave_carver_feature`
 - `minecraft:underwater_magma_underground_feature`
 - `minecraft:glow_lichen_feature`
-- `minecraft:crimson_roots_scatter_feature`
 - `minecraft:fossil_feature`
 - `minecraft:taiga_tall_grass_feature`
 - `minecraft:nether_soul_sand_underground_feature`
@@ -397,6 +399,7 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:optional_fallen_jungle_tree_feature`
 - `minecraft:jungle_tree_with_cocoa_feature`
 - `minecraft:noop_undecorated_jungle_tree_feature`
+- `minecraft:crimson_roots_feature`
 - `minecraft:random_dry_grass_block_feature`
 - `minecraft:bush_feature`
 - `minecraft:optional_podzol_feature`
@@ -412,7 +415,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:underwater_magma_feature`
 - `minecraft:small_dripstone_snap_to_surface_feature`
 - `minecraft:underwater_magma_snap_to_surface_feature`
-- `minecraft:crimson_roots_feature`
 - `minecraft:optional_tall_grass_feature`
 - `minecraft:nether_sprouts_feature`
 - `minecraft:random_roofed_forest_feature_with_leaf_litter_feature`

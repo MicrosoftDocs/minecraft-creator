@@ -82,6 +82,20 @@
         "title": "HeightmapProjection",
         "description": "Heightmap used to calculate the relative start height. For example, a heightmap_projection of ocean_floor and a start_height of 10 means the Jigsaw Structure will begin generating 10 blocks above the ocean floor. Defaults to 'none'",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "none",
+            "title": "None"
+          },
+          {
+            "id": "ocean_floor",
+            "title": "Ocean floor"
+          },
+          {
+            "id": "world_surface",
+            "title": "World surface"
+          }
+        ],
         "defaultValue": "none"
       },
       {
@@ -89,6 +103,16 @@
         "title": "LiquidSettings",
         "description": "How to handle waterloggable blocks overlapping with existing liquid.",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "apply_waterlogging",
+            "title": "Apply waterlogging"
+          },
+          {
+            "id": "ignore_waterlogging",
+            "title": "Ignore waterlogging"
+          }
+        ],
         "defaultValue": "apply_waterlogging"
       },
       {
@@ -149,10 +173,6 @@
                     {
                       "comparison": ">=",
                       "value": 1
-                    },
-                    {
-                      "comparison": "<=",
-                      "value": 2147483647
                     }
                   ]
                 }
@@ -194,6 +214,52 @@
         "title": "GenerationStep",
         "description": "Species the world generation phase in which the structure is generated.",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "fluid_springs",
+            "title": "Fluid springs"
+          },
+          {
+            "id": "lakes",
+            "title": "Lakes"
+          },
+          {
+            "id": "local_modifications",
+            "title": "Local modifications"
+          },
+          {
+            "id": "raw_generation",
+            "title": "Raw generation"
+          },
+          {
+            "id": "strongholds",
+            "title": "Strongholds"
+          },
+          {
+            "id": "surface_structures",
+            "title": "Surface structures"
+          },
+          {
+            "id": "top_layer_modification",
+            "title": "Top layer modification"
+          },
+          {
+            "id": "underground_decoration",
+            "title": "Underground decoration"
+          },
+          {
+            "id": "underground_ores",
+            "title": "Underground ores"
+          },
+          {
+            "id": "underground_structures",
+            "title": "Underground structures"
+          },
+          {
+            "id": "vegetal_decoration",
+            "title": "Vegetal decoration"
+          }
+        ],
         "isRequired": true
       },
       {
@@ -201,6 +267,28 @@
         "title": "TerrainAdaptation",
         "description": "How the terrain should adapt relative to the generated Jigsaw Structure.",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "beard_box",
+            "title": "Beard box"
+          },
+          {
+            "id": "beard_thin",
+            "title": "Beard thin"
+          },
+          {
+            "id": "bury",
+            "title": "Bury"
+          },
+          {
+            "id": "encapsulate",
+            "title": "Encapsulate"
+          },
+          {
+            "id": "none",
+            "title": "None"
+          }
+        ],
         "defaultValue": "none"
       }
     ]

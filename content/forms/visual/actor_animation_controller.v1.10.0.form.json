@@ -1,0 +1,211 @@
+{
+  "id": "actor_animation_controller",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "actor_animation_controller",
+    "fields": [
+      {
+        "dataType": 25,
+        "id": "format_version",
+        "title": "Format Version",
+        "isRequired": true
+      },
+      {
+        "dataType": 14,
+        "id": "animation_controllers",
+        "title": "Animation Controllers",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 14,
+              "id": "states",
+              "title": "States",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 14,
+                    "id": "variables",
+                    "title": "Variables",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 34,
+                          "id": "input",
+                          "title": "Input",
+                          "isRequired": true
+                        },
+                        {
+                          "dataType": 16,
+                          "id": "remap_curve",
+                          "title": "Remap Curve",
+                          "isRequired": false,
+                          "subForm": {
+                            "fields": []
+                          }
+                        }
+                      ]
+                    },
+                    "keyDescription": "<identifier>"
+                  },
+                  {
+                    "id": "animations",
+                    "dataType": 15,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 17,
+                        "id": "animations",
+                        "title": "Animations",
+                        "isRequired": false
+                      },
+                      {
+                        "dataType": 34,
+                        "id": "animations",
+                        "title": "<identifier>",
+                        "isRequired": true,
+                        "keyDescription": "<identifier>"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "transitions",
+                    "dataType": 15,
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 17,
+                        "id": "transitions",
+                        "title": "Transitions",
+                        "isRequired": false
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 1,
+                    "id": "blend_via_shortest_path",
+                    "title": "Blend Via Shortest Path",
+                    "description": "When blending a transition to another state, animate each euler axis through the shortest rotation, instead of by value",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "blend_transition",
+                    "title": "Blend Transition",
+                    "description": "Specifies the cross-fade time in seconds when transitioning to another state",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": []
+                    }
+                  },
+                  {
+                    "id": "particle_effects",
+                    "dataType": 15,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "effect",
+                          "title": "Effect",
+                          "description": "The name of a particle effect that should be played",
+                          "isRequired": true
+                        },
+                        {
+                          "dataType": 2,
+                          "id": "locator",
+                          "title": "Locator",
+                          "description": "The name of a locator on the actor where the effect should be located",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "pre_effect_script",
+                          "title": "Pre Effect Script",
+                          "description": "A Molang script that will be run when the particle emitter is initialized",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 1,
+                          "id": "bind_to_actor",
+                          "title": "Bind To Actor",
+                          "description": "Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor).",
+                          "isRequired": false
+                        }
+                      ]
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 17,
+                        "id": "particle_effects",
+                        "title": "Particle Effects",
+                        "isRequired": false
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": 17,
+                    "id": "on_entry",
+                    "title": "Entry",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 17,
+                    "id": "on_exit",
+                    "title": "Exit",
+                    "isRequired": false
+                  },
+                  {
+                    "id": "sound_effects",
+                    "dataType": 15,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "effect",
+                          "title": "Effect",
+                          "description": "Valid sound effect names should be listed in the entity's resource_definition json file.",
+                          "isRequired": true
+                        },
+                        {
+                          "dataType": 2,
+                          "id": "locator",
+                          "title": "Locator",
+                          "description": "The name of a locator on the actor where the sound should originate from",
+                          "isRequired": false
+                        }
+                      ]
+                    },
+                    "alternates": [
+                      {
+                        "dataType": 17,
+                        "id": "sound_effects",
+                        "title": "Sound Effects",
+                        "description": "Collection of sounds to trigger on entry to this animation state.",
+                        "isRequired": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              "keyDescription": "<identifier>"
+            },
+            {
+              "dataType": 2,
+              "id": "initial_state",
+              "title": "Initial State",
+              "isRequired": false
+            }
+          ]
+        },
+        "keyDescription": "controller.animation.<identifier>"
+      }
+    ],
+    "dataVersion": "1.10.0"
+  }
+}

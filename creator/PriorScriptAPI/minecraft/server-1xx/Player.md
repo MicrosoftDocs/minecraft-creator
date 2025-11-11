@@ -210,20 +210,20 @@ Notes:
 
 ### **clearPropertyOverridesForEntity**
 `
-clearPropertyOverridesForEntity(targetEntity: Entity): void
+clearPropertyOverridesForEntity(targetEntity: Entity | string): void
 `
 
 For this player, removes all overrides of any Entity Properties on the target Entity. This change is not applied until the next tick and will not apply to other players.
 
 #### **Parameters**
-- **targetEntity**: [*Entity*](Entity.md)
+- **targetEntity**: [*Entity*](Entity.md) | *string*
   
-  The Entity whose Entity Property overrides are being cleared.
+  The Entity or the ID of the Entity whose Entity Property overrides are being cleared.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws if the Entity is invalid.
+  - Throws if the Entity or Entity ID is invalid.
 
 ### **getGameMode**
 `

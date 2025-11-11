@@ -1,0 +1,326 @@
+{
+  "id": "render_controller",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "render_controller",
+    "fields": [
+      {
+        "dataType": 25,
+        "id": "format_version",
+        "title": "Format Version",
+        "isRequired": true
+      },
+      {
+        "dataType": 14,
+        "id": "render_controllers",
+        "title": "Render Controllers",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 1,
+              "id": "rebuild_animation_matrices",
+              "title": "Rebuild Animation Matrices",
+              "isRequired": false
+            },
+            {
+              "dataType": 16,
+              "id": "arrays",
+              "title": "Arrays",
+              "isRequired": false,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 14,
+                    "id": "geometries",
+                    "title": "Geometries",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 17,
+                          "id": "array.<scope_identifier>",
+                          "title": "<scope Identifier> Array",
+                          "isRequired": true
+                        }
+                      ]
+                    },
+                    "keyDescription": "array.<scope_identifier>"
+                  },
+                  {
+                    "dataType": 14,
+                    "id": "materials",
+                    "title": "Materials",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 17,
+                          "id": "array.<scope_identifier>",
+                          "title": "<scope Identifier> Array",
+                          "isRequired": true
+                        }
+                      ]
+                    },
+                    "keyDescription": "array.<scope_identifier>"
+                  },
+                  {
+                    "dataType": 14,
+                    "id": "textures",
+                    "title": "Textures",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 17,
+                          "id": "array.<scope_identifier>",
+                          "title": "<scope Identifier> Array",
+                          "isRequired": true
+                        }
+                      ]
+                    },
+                    "keyDescription": "array.<scope_identifier>"
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": 2,
+              "id": "geometry",
+              "title": "Geometry",
+              "isRequired": true
+            },
+            {
+              "id": "part_visibility",
+              "dataType": 15,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 34,
+                    "id": "[a-zA-Z0-9_.:*]+",
+                    "title": "+",
+                    "isRequired": true
+                  }
+                ]
+              },
+              "alternates": [
+                {
+                  "dataType": 17,
+                  "id": "part_visibility",
+                  "title": "Part Visibility",
+                  "isRequired": false
+                }
+              ]
+            },
+            {
+              "id": "materials",
+              "dataType": 15,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 34,
+                    "id": "[a-zA-Z0-9_.:*]+",
+                    "title": "+",
+                    "isRequired": true
+                  }
+                ]
+              },
+              "alternates": [
+                {
+                  "dataType": 17,
+                  "id": "materials",
+                  "title": "Materials",
+                  "isRequired": false
+                }
+              ]
+            },
+            {
+              "dataType": 17,
+              "id": "textures",
+              "title": "Textures",
+              "isRequired": false
+            },
+            {
+              "dataType": 16,
+              "id": "color",
+              "title": "Color",
+              "isRequired": false,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 34,
+                    "id": "r",
+                    "title": "R",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 34,
+                    "id": "g",
+                    "title": "G",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 34,
+                    "id": "b",
+                    "title": "B",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 34,
+                    "id": "a",
+                    "title": "A",
+                    "isRequired": false
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": 16,
+              "id": "overlay_color",
+              "title": "Overlay Color",
+              "isRequired": false,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 34,
+                    "id": "r",
+                    "title": "R",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 34,
+                    "id": "g",
+                    "title": "G",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 34,
+                    "id": "b",
+                    "title": "B",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 34,
+                    "id": "a",
+                    "title": "A",
+                    "isRequired": false
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": 16,
+              "id": "on_fire_color",
+              "title": "Fire Color",
+              "isRequired": false,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 34,
+                    "id": "r",
+                    "title": "R",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 34,
+                    "id": "g",
+                    "title": "G",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 34,
+                    "id": "b",
+                    "title": "B",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 34,
+                    "id": "a",
+                    "title": "A",
+                    "isRequired": false
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": 16,
+              "id": "is_hurt_color",
+              "title": "Is Hurt Color",
+              "isRequired": false,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 34,
+                    "id": "r",
+                    "title": "R",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 34,
+                    "id": "g",
+                    "title": "G",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 34,
+                    "id": "b",
+                    "title": "B",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 34,
+                    "id": "a",
+                    "title": "A",
+                    "isRequired": false
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": 16,
+              "id": "uv_anim",
+              "title": "Uv Anim",
+              "isRequired": false,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 35,
+                    "id": "offset",
+                    "title": "Offset",
+                    "isRequired": true
+                  },
+                  {
+                    "dataType": 35,
+                    "id": "scale",
+                    "title": "Scale",
+                    "isRequired": true
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": 34,
+              "id": "light_color_multiplier",
+              "title": "Light Color Multiplier",
+              "isRequired": false
+            },
+            {
+              "dataType": 1,
+              "id": "ignore_lighting",
+              "title": "Ignore Lighting",
+              "isRequired": false
+            },
+            {
+              "dataType": 1,
+              "id": "filter_lighting",
+              "title": "Filter Lighting",
+              "isRequired": false
+            }
+          ]
+        },
+        "keyDescription": "controller.render.<scope_identifier>"
+      }
+    ],
+    "dataVersion": "1.8.0"
+  }
+}

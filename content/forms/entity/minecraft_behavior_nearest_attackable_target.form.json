@@ -1015,8 +1015,7 @@
                       {
                         "test": "in_water",
                         "subject": "other",
-                        "operator": "!=",
-                        "value": true
+                        "value": false
                       }
                     ]
                   },
@@ -1355,6 +1354,47 @@
                     "value": "monster"
                   },
                   "within_default": 6
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/stray.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  "max_dist": 16
+                },
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "irongolem"
+                  },
+                  "max_dist": 16
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "baby_turtle"
+                      },
+                      {
+                        "test": "in_water",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": true
+                      }
+                    ]
+                  },
+                  "max_dist": 16
                 }
               ]
             }
@@ -3466,8 +3506,7 @@
                     {
                       "test": "in_water",
                       "subject": "other",
-                      "operator": "!=",
-                      "value": true
+                      "value": false
                     }
                   ]
                 },

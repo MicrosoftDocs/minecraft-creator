@@ -1,0 +1,32 @@
+{
+  "id": "info_set.summaryEntry",
+  "title": "Summary Entry",
+  "description": "Represents a single validation outcome keyed by requirement code.",
+  "fields": [
+    {
+      "id": "title",
+      "title": "Title",
+      "dataType": 2
+    },
+    {
+      "id": "defaultMessage",
+      "title": "Default Message",
+      "dataType": 13
+    },
+    {
+      "id": "errors",
+      "title": "Errors",
+      "dataType": 0
+    },
+    {
+      "id": "testCompleteFails",
+      "title": "Test Complete Fails",
+      "dataType": 0
+    },
+    {
+      "id": "testCompleteSuccesses",
+      "title": "Test Complete Successes",
+      "dataType": 0
+    }
+  ]
+}

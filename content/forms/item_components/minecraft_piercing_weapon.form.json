@@ -7,6 +7,13 @@
     "description": "Allows an item to deal damage to all entities detected in a straight line along the user's view vector. Items with this component cannot destroy blocks, as the attack action always takes priority, regardless of what the user is looking at.",
     "fields": [
       {
+        "id": "creative_reach",
+        "title": "Creative Reach",
+        "description": "Defines the reach used when the user is in Creative Mode. Defaults to \"reach\" if unspecified.",
+        "dataType": 16,
+        "subFormId": "item_components/floatrange"
+      },
+      {
         "id": "hitbox_margin",
         "title": "Hitbox Margin",
         "description": "Added tolerance to the view vector raycast for detecting entity collisions.",

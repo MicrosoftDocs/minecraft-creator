@@ -547,34 +547,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/husk.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
-          "content": {
-            "triggers": [
-              {
-                "on_damage": {
-                  "filters": {
-                    "all_of": [
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "parched"
-                      },
-                      {
-                        "test": "is_in_same_vehicle",
-                        "subject": "other",
-                        "value": true
-                      }
-                    ]
-                  }
-                },
-                "deals_damage": "no"
-              }
-            ]
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/iron_golem.json": [
         {
           "path": "/minecraft:entity/components/minecraft:damage_sensor/",

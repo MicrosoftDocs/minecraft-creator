@@ -1,7 +1,8 @@
 {
   "id": "`math.die_roll(num, low, high)`",
   "fields": [],
-  "note": " The difference between `math.die_roll` and `math.die_roll_integer` is that the former uses floating point and can return non-integer numbers; the latter works only with integers. If you're really trying to simulate actual dice, use `math.die_roll_integer`.",
+  "description": "Returns the sum of 'num' random numbers, each with a value from low to high. Note: the generated random numbers are not integers like normal dice.  For that, use `math.die_roll_integer`.",
+  "note": "The difference between `math.die_roll` and `math.die_roll_integer` is that the former uses floating point and can return non-integer numbers; the latter works only with integers. If you're really trying to simulate actual dice, use `math.die_roll_integer`.",
   "generated_doNotEdit": {
     "id": "math.die_roll(num, low, high)",
     "title": "Die Roll(num, Low, High)",

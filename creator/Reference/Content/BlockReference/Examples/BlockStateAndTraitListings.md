@@ -1,12 +1,15 @@
 ---
-author: iconicNurdle
+author: chipotle
 ms.author: mikeam
 title: Default Minecraft Block States and Traits
 description: A listing of default Minecraft block states and traits
 ms.service: minecraft-bedrock-edition
+ms.date: 11/06/2025
 ---
 
-# Block States
+# Default Block States and Traits
+
+## Block states
 
 | Block State Name| Type| Valid Values| Description |
 |:-----------|:-----------|:-----------|:-----------|
@@ -128,21 +131,33 @@ ms.service: minecraft-bedrock-edition
 | weirdo_direction| Integer | 0 - 3| Describes the rotation of stairs |
 | wood_type| String| oak, spruce, birch, jungle, acacia, dark_oak| Determines the wood type of a block |
 
-## Block Traits
+## Block traits
 
-List of all Block Traits and the Block States they include.
+### minecraft:placement\_direction
 
-| Block Trait| Type | Valid Values | Description |
-|:----------|:---------|:----------|:--------|
-| "minecraft:placement_direction"| JSON Object|  |Adds the "minecraft:cardinal_direction" and/or "minecraft:facing_direction" states and setter function to the block. The values of these states are set when the block is placed. `enabled_states` array specifies which states to enable. Must specify at least one.|
-| minecraft:cardinal_direction| String| north, south, east, west| Defines the cardinal placement direction of a block. |
-| minecraft:facing_direction| String| down, up, north, south, east, west | Defines all placement directions of a block. |
+Adds the `minecraft:cardinal_direction` , `minecraft:facing_direction`, and/or `minecraft:corner` states and setter function to the block. The values of these states are set when the block is placed.
+
+#### Placement direction properties
+
+| Name | Type | Default Value | Description |
+|:-----|:-----|:--------------|:------------|
+| enabled_states | Array | | Which states to enable. Must specify at least one. Valid values are `minecraft:cardinal_direction`, `minecraft:corner_and_cardinal_direction` (requires Beta APIs toggle and `use_beta_features` flag), and `minecraft:facing_direction`. |
 | y_rotation_offset| Decimal |0.0 - 360.0 | The y rotation offset to apply to the block. Must be [0.0, 90.0, 180.0, 270.0]. Default is 0, meaning if the player is facing north, the "minecraft:cardinal_direction" and/or minecraft:facing_direction state will be north. |
-| "minecraft:placement_position"| PlacementPosition| | Adds the "minecraft:block_face" and/or "minecraft:vertical_half" BlockStates. The value of these state(s) are set when the block is placed. `enabled_states` array specifies which states to enable. Must specify at least one.|
-| minecraft:block_face| String| down, up, north, south, east, west| Which block face the player placed the block on. |
-| minecraft:vertical_half| String| bottom, top| Which vertical half of the space the block is placed in. |
+| blocks_to_corner_with | Array | Same Block Name | A list of block descriptors that define the blocks to connect with the corner shape. Requires `minecraft:corner_and_cardinal_direction` to be enabled. |
 
-### Block trait example
+#### Placement direction block states
+
+These are the block states that can be enabled through `minecraft:placement_direction`:
+
+| Block State Name | Type | Valid Values | Description |
+|:-----------------|:-----|:-------------|:------------|
+| minecraft:cardinal_direction| String| north, south, east, west| Defines the cardinal placement direction of a block. Added when the `enabled_states` value `minecraft:cardinal_direction` or `minecraft:corner_and_cardinal_direction` are used.  |
+| minecraft:facing_direction| String| down, up, north, south, east, west | Defines all placement directions of a block. Added when the `enabled_states` value `minecraft:facing_direction` is used.  |
+| minecraft:corner| String| inner_left, inner_right, outer_left, outer_right, none| Defines the corner shape of a block. Added when `enabled_states` value `minecraft:corner_and_cardinal_direction` is used. |
+
+#### Placement direction examples
+
+Using `cardinal_direction`:
 
 ```json
 {
@@ -152,18 +167,151 @@ List of all Block Traits and the Block States they include.
       "identifier": "test:placement_direction_trait_block",
       "traits" : {
         "minecraft:placement_direction": {
-            "enabled_states": ["minecraft:cardinal_direction"], // 4 permutations
+            "enabled_states": ["minecraft:cardinal_direction"], 
             "y_rotation_offset": 0.0 // 0.0-360.0
           }
       }
     },
     "permutations": [
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+            // ... 
+        }
+      }
+    ]
+  }
+}
+```
+
+Using `corner_and_cardinal_direction`:
+
+```json
+{
+  "format_version": "1.21.130",
+  // Required to use minecraft:corner_and_cardinal_direction, along with Beta APIs toggle in Minecraft 1.21.130 or later
+  "use_beta_features": true,
+  "minecraft:block": {
+    "description": {
+      "identifier": "custom:custom_stairs_traits",
+      "menu_category": {
+        "category": "construction"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": ["minecraft:vertical_half"]
+        },
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:corner_and_cardinal_direction"],
+          // Default is to corner with same block name
+          "blocks_to_corner_with": [{"tags": "q.any_tag('minecraft:cornerable_stairs')"}]
+        }
+      }
+    },
+    "permutations": [
        {
-          "condition": "query.block_state('minecraft:cardinal_direction') == 1", // west
+          "condition": "query.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:corner') == 'inner_left'",
           "components": {
               // ... 
           }
         }
+    ]
+  }
+}
+```
+
+### minecraft:placement\_position
+
+Adds the "minecraft:block_face" and/or "minecraft:vertical_half" BlockStates. The value of these state(s) are set when the block is placed.
+
+#### Placement position properties
+
+| Name | Type | Default Value | Description |
+|:-----|:-----|:--------------|:------------|
+| enabled_states | Array | | Which states to enable. Must specify at least one. Valid values are `minecraft:block_face` and `minecraft:vertical_half`. |
+
+#### Placement position states
+
+These are the block states that can be enabled through `minecraft:placement_position`:
+
+| Block State Name | Type | Valid Values | Description |
+|:-----------------|:-----|:-------------|:------------|
+| minecraft:block_face| String| down, up, north, south, east, west| Which block face the player placed the block on. Added when the `enabled_states` value `minecraft:block_face` is used. |
+| minecraft:vertical_half| String| bottom, top| Which vertical half of the space the block is placed in. Added when the `enabled_states` value `minecraft:vertical_half` is used. |
+
+#### Placement position example
+
+```json
+{
+  "format_version": "1.21.70",
+  "minecraft:block": {
+    "description": {
+      "identifier": "test:placement_position_trait_block",
+      "traits": {
+        "minecraft:placement_position": { 
+          "enabled_states": ["minecraft:vertical_half"]
+        }
+      }
+    },
+
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:vertical_half') == 'bottom'",
+        "components": {
+          // ...
+        }
+      }
+    ]
+  }
+}
+```
+
+### minecraft:connection
+
+Adds the connection states to a block. The values of these states are updated when the block or neighboring blocks change. The values of these states are set when the block is placed.
+
+Requires Experimental Toggle "Upcoming Creator Features" and Minecraft version 1.21.130.
+
+#### Connection properties
+
+| Name | Type | Default Value | Description |
+|:----------|:-------------|:----|:-----------|
+| enabled_states | Array | | Which states to enable. Must specify at least one. Valid value is `minecraft:cardinal_connections`. |
+
+#### Connection block states
+
+These are the block states that can be enabled through `minecraft:connection`
+
+| Block State Name| Type | Valid Values | Description |
+|:----------|:---------|:----------|:--------|
+| minecraft:connection_north | Boolean | true/false | Whether the block is connected to another block to the north. Added when the `enabled_states` value `minecraft_cardinal_connections` is used. |
+| minecraft:connection_east | Boolean | true/false | Whether the block is connected to another block to the east. Added when the `enabled_states` value `minecraft_cardinal_connections` is used. |
+| minecraft:connection_south | Boolean | true/false | Whether the block is connected to another block to the south. Added when the `enabled_states` value `minecraft_cardinal_connections` is used. |
+| minecraft:connection_west | Boolean | true/false | Whether the block is connected to another block to the west. Added when the `enabled_states` value `minecraft_cardinal_connections` is used. |
+
+#### Connection example
+
+```json
+{
+  "format_version": "1.21.130",
+  "minecraft:block": {
+    "description": {
+        "identifier": "test:connection_trait_block",
+        "traits": {
+            "minecraft:connection": {
+                "enabled_states": [
+                    "minecraft:cardinal_connections"
+                ]
+            }
+        }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:connection_north') && !q.block_state('minecraft:connection_south')",
+        "components": {
+            // ...
+        }
+      }
     ]
   }
 }

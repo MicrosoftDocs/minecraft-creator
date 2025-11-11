@@ -10,6 +10,32 @@
         "title": "SurfaceBuilderType",
         "description": "Use default Minecraft End terrain generation.",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "minecraft:capped",
+            "title": "Minecraft:capped"
+          },
+          {
+            "id": "minecraft:frozen_ocean",
+            "title": "Minecraft:frozen ocean"
+          },
+          {
+            "id": "minecraft:mesa",
+            "title": "Minecraft:mesa"
+          },
+          {
+            "id": "minecraft:overworld",
+            "title": "Minecraft:overworld"
+          },
+          {
+            "id": "minecraft:swamp",
+            "title": "Minecraft:swamp"
+          },
+          {
+            "id": "minecraft:the_end",
+            "title": "Minecraft:the end"
+          }
+        ],
         "isRequired": true
       }
     ]

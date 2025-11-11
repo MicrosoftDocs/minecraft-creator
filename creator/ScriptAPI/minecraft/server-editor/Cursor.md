@@ -43,6 +43,14 @@ Type: *boolean*
 Notes:
   - This property can throw errors when used.
 
+### **maxViewBlockDistance**
+`read-only maxViewBlockDistance: number;`
+
+Type: *number*
+
+Notes:
+  - This property can throw errors when used.
+
 ## Methods
 - [getPosition](#getposition)
 - [getProperties](#getproperties)

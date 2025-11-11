@@ -10,6 +10,16 @@
         "title": "ElementType",
         "description": "The type of element",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "minecraft:empty_pool_element",
+            "title": "Minecraft:empty pool element"
+          },
+          {
+            "id": "minecraft:single_pool_element",
+            "title": "Minecraft:single pool element"
+          }
+        ],
         "isRequired": true
       }
     ]

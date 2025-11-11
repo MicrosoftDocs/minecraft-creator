@@ -30,12 +30,6 @@
               "path": "/minecraft:entity/component_groups/make_and_receive_love/minecraft:behavior.make_love/",
               "content": 5
             }
-          ],
-          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/adult/minecraft:behavior.make_love/",
-              "content": 5
-            }
           ]
         }
       }
@@ -52,14 +46,6 @@
       "/vanilla/behavior_pack/entities/villager_v2.json": [
         {
           "path": "/minecraft:entity/component_groups/make_and_receive_love/minecraft:behavior.make_love/",
-          "content": {
-            "priority": 5
-          }
-        }
-      ],
-      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/adult/minecraft:behavior.make_love/",
           "content": {
             "priority": 5
           }

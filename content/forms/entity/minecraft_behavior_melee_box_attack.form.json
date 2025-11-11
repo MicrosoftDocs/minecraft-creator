@@ -397,7 +397,7 @@
           "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-              "content": 6
+              "content": 7
             }
           ]
         }
@@ -740,7 +740,7 @@
           "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
           "content": {
             "can_spread_on_fire": true,
-            "priority": 6
+            "priority": 7
           }
         }
       ]

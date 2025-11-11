@@ -24,6 +24,16 @@
         "id": "type",
         "title": "IntProviderType",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "constant",
+            "title": "Constant"
+          },
+          {
+            "id": "uniform",
+            "title": "Uniform"
+          }
+        ],
         "isRequired": true
       }
     ]

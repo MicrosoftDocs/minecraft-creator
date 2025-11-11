@@ -1,0 +1,12 @@
+{
+  "id": "entity",
+  "title": "Entity",
+  "fields": [
+    {
+      "id": "typeId",
+      "title": "Entity Type Id",
+      "dataType": 2,
+      "defaultValue": ""
+    }
+  ]
+}

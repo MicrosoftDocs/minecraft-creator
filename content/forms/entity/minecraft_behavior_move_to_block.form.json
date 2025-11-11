@@ -268,7 +268,7 @@
         "dataType": 16,
         "subForm": {
           "id": "target_block_filters",
-          "title": "Target_block_filters",
+          "title": "Target block filters",
           "fields": [
             {
               "id": "test",

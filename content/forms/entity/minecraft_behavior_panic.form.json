@@ -27,6 +27,30 @@
                 "soul_campfire"
               ]
             }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_horse.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.panic/",
+              "content": [
+                "campfire",
+                "fire",
+                "freezing",
+                "lava",
+                "lightning",
+                "magma",
+                "soul_campfire",
+                "temperature",
+                "entity_attack",
+                "entity_explosion",
+                "fireworks",
+                "magic",
+                "projectile",
+                "ram_attack",
+                "sonic_boom",
+                "wither",
+                "mace_smash"
+              ]
+            }
           ]
         }
       },
@@ -128,7 +152,7 @@
           ],
           "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.panic/",
+              "path": "/minecraft:entity/component_groups/minecraft:camel_husk_with_no_rider/minecraft:behavior.panic/",
               "content": 4
             }
           ],
@@ -231,7 +255,7 @@
           ],
           "/vanilla/behavior_pack/entities/camel_husk.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.panic/",
+              "path": "/minecraft:entity/component_groups/minecraft:camel_husk_with_no_rider/minecraft:behavior.panic/",
               "content": 2
             }
           ],
@@ -286,11 +310,11 @@
         "dataType": 16,
         "subForm": {
           "id": "sound_interval",
-          "title": "Sound_interval",
+          "title": "Sound interval",
           "fields": [
             {
               "id": "range_min",
-              "title": "Range_min",
+              "title": "Range min",
               "dataType": 7,
               "samples": {
                 "/vanilla/behavior_pack/entities/strider.json": [
@@ -303,7 +327,7 @@
             },
             {
               "id": "range_max",
-              "title": "Range_max",
+              "title": "Range max",
               "dataType": 7,
               "samples": {
                 "/vanilla/behavior_pack/entities/strider.json": [
@@ -378,7 +402,7 @@
       ],
       "/vanilla/behavior_pack/entities/camel_husk.json": [
         {
-          "path": "/minecraft:entity/components/minecraft:behavior.panic/",
+          "path": "/minecraft:entity/component_groups/minecraft:camel_husk_with_no_rider/minecraft:behavior.panic/",
           "content": {
             "priority": 2,
             "speed_multiplier": 4
@@ -710,6 +734,25 @@
           "path": "/minecraft:entity/components/minecraft:behavior.panic/",
           "content": {
             "priority": 2,
+            "damage_sources": [
+              "campfire",
+              "fire",
+              "freezing",
+              "lava",
+              "lightning",
+              "magma",
+              "soul_campfire",
+              "temperature",
+              "entity_attack",
+              "entity_explosion",
+              "fireworks",
+              "magic",
+              "projectile",
+              "ram_attack",
+              "sonic_boom",
+              "wither",
+              "mace_smash"
+            ],
             "speed_multiplier": 1.2
           }
         }

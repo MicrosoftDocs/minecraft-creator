@@ -34,6 +34,16 @@
                   "id": "version",
                   "title": "Version",
                   "dataType": 0,
+                  "validity": [
+                    {
+                      "comparison": ">=",
+                      "value": -32768
+                    },
+                    {
+                      "comparison": "<=",
+                      "value": 32767
+                    }
+                  ],
                   "isRequired": true
                 }
               ]
@@ -49,6 +59,24 @@
         "id": "type",
         "title": "Particle Visual Effect Event Effect Type",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "emitter",
+            "title": "Emitter"
+          },
+          {
+            "id": "emitter_bound",
+            "title": "Emitter bound"
+          },
+          {
+            "id": "particle",
+            "title": "Particle"
+          },
+          {
+            "id": "particle_with_velocity",
+            "title": "Particle with velocity"
+          }
+        ],
         "isRequired": true
       }
     ]

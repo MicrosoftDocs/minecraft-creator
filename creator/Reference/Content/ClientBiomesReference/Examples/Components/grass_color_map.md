@@ -16,4 +16,11 @@ Object specifying a color map for grass instead of a specific color.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| color_map | *not set* | String | Color map from textures/colormap to determine color of grass. |  | 
+| color_map | *not set* | [Color Map](#color-map-choices) choices | Color map from textures/colormap to determine color of grass. |  | 
+
+### Color Map choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| grass | Grass | |
+| swamp_grass | Swamp grass | |

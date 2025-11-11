@@ -130,7 +130,7 @@
         "dataType": 15,
         "subForm": {
           "id": "auto_reject_items",
-          "title": "Auto_reject_items",
+          "title": "Auto reject items",
           "fields": [
             {
               "id": "item",

@@ -218,7 +218,7 @@ You can make your custom blocks behave like some vanilla blocks do when several 
 
 Culling the unseen, overlapping faces of your blocks can increase performance and decrease instances of graphical glitches.
 
-To use culling, you will need to add a few things to both the behavior pack and the resource pack.
+To use culling, you will need to add a few things to both the behavior pack and the resource pack. A reference of block culling rules is [here](./../Reference/Content/BlockCullingReference/Examples/BlockCullingRules/block_culling.md).
 
 To try this out with the "tuna roll" custom sushi block, add these directories and files to the packs:
 

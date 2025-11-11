@@ -81,6 +81,16 @@
         "title": "ItemCooldownType",
         "description": "The type of action the cooldown applies to. Options are mutually exclusive, so cooldown for one type of action does not affect the others. Values: \"use\" (when using an item), \"attack\" (when attack with an item).",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "attack",
+            "title": "Attack"
+          },
+          {
+            "id": "use",
+            "title": "Use"
+          }
+        ],
         "defaultValue": "use"
       }
     ]

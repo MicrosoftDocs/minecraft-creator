@@ -17,11 +17,11 @@
         "dataType": 16,
         "subForm": {
           "id": "minecraft:raid_trigger",
-          "title": "Minecraft:raid_trigger",
+          "title": "Minecraft:raid trigger",
           "fields": [
             {
               "id": "triggered_event",
-              "title": "Triggered_event",
+              "title": "Triggered event",
               "dataType": 2,
               "samples": {
                 "/vanilla/behavior_pack/entities/player.json": [
