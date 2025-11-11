@@ -10,6 +10,16 @@
         "title": "ElementType",
         "description": "The type of element.",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "minecraft:empty_pool_element",
+            "title": "Minecraft:empty pool element"
+          },
+          {
+            "id": "minecraft:single_pool_element",
+            "title": "Minecraft:single pool element"
+          }
+        ],
         "isRequired": true
       },
       {
@@ -31,6 +41,16 @@
         "title": "Projection",
         "description": "Specifies how structures should be placed relative to the terrain.",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "rigid",
+            "title": "Rigid"
+          },
+          {
+            "id": "terrain_matching",
+            "title": "Terrain matching"
+          }
+        ],
         "defaultValue": "rigid"
       }
     ]

@@ -18,7 +18,7 @@ ms.date: 02/11/2025
 | name | *not set* | String |  |  | 
 | options | *not set* | [Options](#3.0.0.dropdownoption) item |  |  | 
 | text | *not set* | String |  |  | 
-| type | *not set* | String |  |  | 
+| type | *not set* | [Type](#type-choices) choices |  |  | 
 
 ## 3.0.0.DropdownOption
 
@@ -28,3 +28,12 @@ ms.date: 02/11/2025
 |:----------|:-------------|:----|:-----------|:------------- |
 | name | *not set* | String |  |  | 
 | text | *not set* | String |  |  | 
+
+### Type choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| dropdown | Dropdown | |
+| label | Label | |
+| slider | Slider | |
+| toggle | Toggle | |

@@ -9,12 +9,48 @@
         "id": "max",
         "title": "SpawnDifficulty Legacy",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "easy",
+            "title": "Easy"
+          },
+          {
+            "id": "hard",
+            "title": "Hard"
+          },
+          {
+            "id": "normal",
+            "title": "Normal"
+          },
+          {
+            "id": "peaceful",
+            "title": "Peaceful"
+          }
+        ],
         "defaultValue": "hard"
       },
       {
         "id": "min",
         "title": "SpawnDifficulty Legacy",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "easy",
+            "title": "Easy"
+          },
+          {
+            "id": "hard",
+            "title": "Hard"
+          },
+          {
+            "id": "normal",
+            "title": "Normal"
+          },
+          {
+            "id": "peaceful",
+            "title": "Peaceful"
+          }
+        ],
         "defaultValue": "peaceful"
       }
     ]

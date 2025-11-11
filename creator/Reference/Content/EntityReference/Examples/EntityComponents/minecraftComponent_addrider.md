@@ -21,7 +21,7 @@ Adds a rider to the entity.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| entity_type | *not set* | String from a list of choices | Type of entity to acquire as a rider | Cave Spider: `"minecraft:skeleton"`, `"minecraft:stray"`, `"minecraft:bogged"`, `"minecraft:wither_skeleton"` | 
+| entity_type | *not set* | String from a list of choices | Type of entity to acquire as a rider | Ravager: `"minecraft:pillager"`, `"minecraft:evocation_illager"`, `"minecraft:vindicator"` | 
 | riders | [] | [Riders](#entity-rider-data) item | List of riders to be added to the entity. Can only spawn as many riders as "minecraft:rideable" has "seat_count". | Camel Husk: `[{"entity_type":"minecraft:husk","spawn_event":"minecraft:spawn_as_rider"},{"entity_type":"minecraft:parched","spawn_event":"minecraft:ranged_mode"}]` | 
 | spawn_event | *not set* | Minecraft Event Reference | Trigger event when a rider is acquired | Ravager: `"minecraft:spawn_for_raid"`, `"minecraft:spawn_as_illager_captain"`, Strider: `"minecraft:spawn_as_strider_jockey"`, `"minecraft:spawn_baby_strider_jockey"` | 
 
@@ -62,7 +62,11 @@ At /minecraft:entity/component_groups/minecraft:spider_jockey/minecraft:addrider
 
 ```json
 "minecraft:addrider": {
-  "entity_type": "minecraft:skeleton"
+  "riders": [
+    {
+      "entity_type": "minecraft:skeleton"
+    }
+  ]
 }
 ```
 
@@ -70,7 +74,11 @@ At /minecraft:entity/component_groups/minecraft:spider_stray_jockey/minecraft:ad
 
 ```json
 "minecraft:addrider": {
-  "entity_type": "minecraft:stray"
+  "riders": [
+    {
+      "entity_type": "minecraft:stray"
+    }
+  ]
 }
 ```
 
@@ -78,7 +86,23 @@ At /minecraft:entity/component_groups/minecraft:spider_bogged_jockey/minecraft:a
 
 ```json
 "minecraft:addrider": {
-  "entity_type": "minecraft:bogged"
+  "riders": [
+    {
+      "entity_type": "minecraft:bogged"
+    }
+  ]
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:spider_parched_jockey/minecraft:addrider/: 
+
+```json
+"minecraft:addrider": {
+  "riders": [
+    {
+      "entity_type": "minecraft:parched"
+    }
+  ]
 }
 ```
 
@@ -86,7 +110,11 @@ At /minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:a
 
 ```json
 "minecraft:addrider": {
-  "entity_type": "minecraft:wither_skeleton"
+  "riders": [
+    {
+      "entity_type": "minecraft:wither_skeleton"
+    }
+  ]
 }
 ```
 
@@ -141,25 +169,5 @@ At /minecraft:entity/component_groups/minecraft:vindicator_captain_rider/minecra
 "minecraft:addrider": {
   "entity_type": "minecraft:vindicator",
   "spawn_event": "minecraft:spawn_as_illager_captain"
-}
-```
-
-#### [Strider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/strider.json)
-
-At /minecraft:entity/component_groups/minecraft:strider_piglin_jockey/minecraft:addrider/: 
-
-```json
-"minecraft:addrider": {
-  "entity_type": "minecraft:zombie_pigman",
-  "spawn_event": "minecraft:spawn_as_strider_jockey"
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:strider_parent_jockey/minecraft:addrider/: 
-
-```json
-"minecraft:addrider": {
-  "entity_type": "minecraft:strider",
-  "spawn_event": "minecraft:spawn_baby_strider_jockey"
 }
 ```

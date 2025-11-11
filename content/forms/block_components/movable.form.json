@@ -1,0 +1,53 @@
+{
+  "id": "Movable",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Movable",
+    "title": "Block Components Movable",
+    "description": "This defines how a block reacts to being moved by another block like a piston.",
+    "fields": [
+      {
+        "id": "movement_type",
+        "title": "Movement Type",
+        "description": "How the block reacts to being pushed by another block like a piston. The options are: \"push_pull\" - The default value for this field. The block will be pushed and pulled by a piston. \"push\" - The block will only be pulled by a piston and will ignore a sticky piston. \"popped\" - The block is destroyed when moved by a piston. \"immovable\" - The block is unaffected by a piston.",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "immovable",
+            "title": "Immovable"
+          },
+          {
+            "id": "popped",
+            "title": "Popped"
+          },
+          {
+            "id": "push",
+            "title": "Push"
+          },
+          {
+            "id": "push_pull",
+            "title": "Push pull"
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "sticky",
+        "title": "Sticky Type",
+        "description": "How the block should handle adjacent blocks around it when being pushed by another block like a piston. The options are: \"same\" - Adjacent blocks to this block will be moved when moved. This excludes other blocks with the \"same\" property. This will only work with the movement_type: \"push_pull\". \"none\" - The default and will not move adjacent blocks.",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "none",
+            "title": "None"
+          },
+          {
+            "id": "same",
+            "title": "Same"
+          }
+        ],
+        "defaultValue": "none"
+      }
+    ]
+  }
+}

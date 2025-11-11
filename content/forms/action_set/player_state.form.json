@@ -1,0 +1,24 @@
+{
+  "id": "player_state",
+  "title": "Player state",
+  "fields": [
+    {
+      "id": "name",
+      "title": "Name",
+      "dataType": 2,
+      "required": true
+    },
+    {
+      "id": "blockPlanesInViewFrontToBack",
+      "title": "Block planes in view (front to back)",
+      "dataType": 16,
+      "subFormId": "action_set/block_volume"
+    },
+    {
+      "id": "entitiesAroundPlayer",
+      "title": "Entities around player",
+      "dataType": 15,
+      "subFormId": "action_set/entity"
+    }
+  ]
+}

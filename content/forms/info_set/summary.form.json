@@ -1,0 +1,57 @@
+{
+  "id": "info_set.summary",
+  "title": "Validation Summary",
+  "description": "Aggregated results grouped by validator.",
+  "fields": [
+    {
+      "id": "CADDONIREQ",
+      "title": "Cooperative Add-On Item Requirements",
+      "dataType": 14,
+      "subFormId": "info_set/summary_entry",
+      "allowCreateDelete": true,
+      "description": "Entries keyed by numeric requirement code."
+    },
+    {
+      "id": "CADDONREQ",
+      "title": "Cooperative Add-On Requirements",
+      "dataType": 14,
+      "subFormId": "info_set/summary_entry",
+      "allowCreateDelete": true
+    },
+    {
+      "id": "MINENGINEVER",
+      "title": "Minimum Engine Version",
+      "dataType": 14,
+      "subFormId": "info_set/summary_entry",
+      "allowCreateDelete": true
+    },
+    {
+      "id": "PACKSIZE",
+      "title": "Pack Size",
+      "dataType": 14,
+      "subFormId": "info_set/summary_entry",
+      "allowCreateDelete": true
+    },
+    {
+      "id": "STRICT",
+      "title": "Strict Platform Info",
+      "dataType": 14,
+      "subFormId": "info_set/summary_entry",
+      "allowCreateDelete": true
+    },
+    {
+      "id": "TEXTURE",
+      "title": "Texture Validation",
+      "dataType": 14,
+      "subFormId": "info_set/summary_entry",
+      "allowCreateDelete": true
+    },
+    {
+      "id": "WORLDDATA",
+      "title": "World Data Validation",
+      "dataType": 14,
+      "subFormId": "info_set/summary_entry",
+      "allowCreateDelete": true
+    }
+  ]
+}

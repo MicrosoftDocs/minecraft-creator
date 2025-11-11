@@ -1268,6 +1268,30 @@ List of items or item tags that the entity wants to share. Items in-game will ma
       "priority": 8
     },
     {
+      "item": "minecraft:netherite_spear",
+      "priority": 3
+    },
+    {
+      "item": "minecraft:diamond_spear",
+      "priority": 4
+    },
+    {
+      "item": "minecraft:iron_spear",
+      "priority": 5
+    },
+    {
+      "item": "minecraft:copper_spear",
+      "priority": 6
+    },
+    {
+      "item": "minecraft:stone_spear",
+      "priority": 7
+    },
+    {
+      "item": "minecraft:wooden_spear",
+      "priority": 8
+    },
+    {
       "item": "minecraft:shield",
       "priority": 9
     },

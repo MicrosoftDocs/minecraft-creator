@@ -65,7 +65,7 @@ ms.date: 02/11/2025
 | [is_game_rule](Filters/is_game_rule.md)| Tests whether a named game rule is active. |
 | [is_humid](Filters/is_humid.md)| Tests whether the Subject is in an area with humidity |
 | [is_immobile](Filters/is_immobile.md)| Returns true if the subject entity is immobile. |
-| [is_in_same_vehicle](Filters/is_in_same_vehicle.md)| Returns whether the subject entity is in the same vehicle as the host entity. |
+| [is_in_same_vehicle](Filters/is_in_same_vehicle.md)| Returns whether the subject entity is in the same vehicle as the calling entity. |
 | [is_in_village](Filters/is_in_village.md)| Tests whether the Subject is inside the bounds of a village. |
 | [is_leashed](Filters/is_leashed.md)| Returns true if the subject entity is leashed. |
 | [is_leashed_to](Filters/is_leashed_to.md)| Returns true if the subject entity leashed to the calling entity. |

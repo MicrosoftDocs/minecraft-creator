@@ -10,6 +10,28 @@
         "title": "CreativeItemCategory",
         "description": "Creative category where this item belongs. Defaults to \"none\".",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "construction",
+            "title": "Construction"
+          },
+          {
+            "id": "equipment",
+            "title": "Equipment"
+          },
+          {
+            "id": "items",
+            "title": "Items"
+          },
+          {
+            "id": "nature",
+            "title": "Nature"
+          },
+          {
+            "id": "none",
+            "title": "None"
+          }
+        ],
         "defaultValue": "none"
       },
       {

@@ -20,3 +20,5 @@ description: Contents of the @minecraft/server-editor.PaintMode enumeration.
 `Roughen = 3`
 ### **Flatten**
 `Flatten = 4`
+### **Elevation**
+`Elevation = 5`

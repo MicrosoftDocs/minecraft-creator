@@ -33,7 +33,7 @@ Allows mob to move towards a block.
 
 ## Target Block Filters
 
-#### Target_block_filters Properties
+#### Target block filters Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

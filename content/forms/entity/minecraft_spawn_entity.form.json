@@ -96,7 +96,7 @@
           "fields": [
             {
               "id": "min_wait_time",
-              "title": "Min_wait_time",
+              "title": "Min wait time",
               "dataType": 7,
               "samples": {
                 "/vanilla/behavior_pack/entities/armadillo.json": [
@@ -109,7 +109,7 @@
             },
             {
               "id": "max_wait_time",
-              "title": "Max_wait_time",
+              "title": "Max wait time",
               "dataType": 7,
               "samples": {
                 "/vanilla/behavior_pack/entities/armadillo.json": [
@@ -122,7 +122,7 @@
             },
             {
               "id": "spawn_sound",
-              "title": "Spawn_sound",
+              "title": "Spawn sound",
               "dataType": 2,
               "samples": {
                 "/vanilla/behavior_pack/entities/armadillo.json": [
@@ -135,7 +135,7 @@
             },
             {
               "id": "spawn_item",
-              "title": "Spawn_item",
+              "title": "Spawn item",
               "dataType": 2,
               "samples": {
                 "/vanilla/behavior_pack/entities/armadillo.json": [
@@ -339,7 +339,7 @@
                 "num_to_spawn": 1,
                 "single_use": true,
                 "spawn_entity": "minecraft:zombie_nautilus",
-                "spawn_event": "minecraft:spawn_wild"
+                "spawn_event": "minecraft:entity_spawned"
               }
             }
           ],
@@ -493,7 +493,7 @@
               "num_to_spawn": 1,
               "single_use": true,
               "spawn_entity": "minecraft:zombie_nautilus",
-              "spawn_event": "minecraft:spawn_wild"
+              "spawn_event": "minecraft:entity_spawned"
             }
           }
         }

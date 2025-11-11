@@ -10,6 +10,16 @@
         "id": "type",
         "title": "HeightProviderType",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "constant",
+            "title": "Constant"
+          },
+          {
+            "id": "uniform",
+            "title": "Uniform"
+          }
+        ],
         "isRequired": true
       },
       {

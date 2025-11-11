@@ -21,8 +21,19 @@ Sets the wearable item component.
 |:----------|:-------------|:----|:-----------|:------------- |
 | hides_player_location | false | Boolean true/false | Determines whether the Player's location is hidden on Locator Maps and the Locator Bar when the wearable item is worn. Default is false. |  | 
 | protection | 0 | Integer number | How much protection the wearable item provides. Default is set to 0. |  | 
-| slot | *not set* | String | Specifies where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1. | Chestplate: `"slot.armor.chest"`, Crown: `"slot.armor.head"`, My Boots: `"slot.armor.feet"` | 
+| slot | *not set* | [Slot](#slot-choices) choices | Specifies where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1. | Chestplate: `"slot.armor.chest"`, Crown: `"slot.armor.head"`, My Boots: `"slot.armor.feet"` | 
 | dispensable | *not set* | Boolean true/false |  | Chestplate: `true` | 
+
+### Slot choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| slot.armor.body | Slot.armor.body | |
+| slot.armor.chest | Slot.armor.chest | |
+| slot.armor.feet | Slot.armor.feet | |
+| slot.armor.head | Slot.armor.head | |
+| slot.armor.legs | Slot.armor.legs | |
+| slot.weapon.offhand | Slot.weapon.offhand | |
 
 ## Samples
 

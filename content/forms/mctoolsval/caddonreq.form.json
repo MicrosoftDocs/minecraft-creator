@@ -15,172 +15,504 @@
       "description": "Creator folders - e.g., <pack>/entities/<custom folder name> - should not be a 'common' name. It should probably be in the form <creator_short_name>_<game_shortName>. See attached list of creator names.",
       "dataType": 0,
       "choices": [
-        { "id": "abilities" },
-        { "id": "actions" },
-        { "id": "adventure" },
-        { "id": "animals" },
-        { "id": "anims" },
-        { "id": "armor" },
-        { "id": "assets" },
-        { "id": "attachables" },
-        { "id": "banners" },
-        { "id": "base" },
-        { "id": "blocks" },
-        { "id": "book" },
-        { "id": "boss" },
-        { "id": "bosses" },
-        { "id": "bridge" },
-        { "id": "camping" },
-        { "id": "cars" },
-        { "id": "characters" },
-        { "id": "chests" },
-        { "id": "cinema" },
-        { "id": "cinematics" },
-        { "id": "cloud" },
-        { "id": "collectables" },
-        { "id": "collectibles" },
-        { "id": "custom_ui" },
-        { "id": "cut_scene" },
-        { "id": "cutscene" },
-        { "id": "deco" },
-        { "id": "decor" },
-        { "id": "dev" },
-        { "id": "dialogue" },
-        { "id": "dinos" },
-        { "id": "dinosaurs" },
-        { "id": "doors" },
-        { "id": "dragon" },
-        { "id": "dragons" },
-        { "id": "dummy" },
-        { "id": "effects" },
-        { "id": "enemies" },
-        { "id": "enemy" },
-        { "id": "entities" },
-        { "id": "entity" },
-        { "id": "env" },
-        { "id": "equipment" },
-        { "id": "events" },
-        { "id": "food" },
-        { "id": "furniture" },
-        { "id": "furnitures" },
-        { "id": "fx" },
-        { "id": "game_menu" },
-        { "id": "gameplay" },
-        { "id": "general" },
-        { "id": "glow" },
-        { "id": "guide" },
-        { "id": "guidebook" },
-        { "id": "inanimate" },
-        { "id": "interface" },
-        { "id": "internal" },
-        { "id": "intro" },
-        { "id": "item" },
-        { "id": "items" },
-        { "id": "launchers" },
-        { "id": "machines" },
-        { "id": "magic" },
-        { "id": "markers" },
-        { "id": "market" },
-        { "id": "marketing_banners" },
-        { "id": "mastermind" },
-        { "id": "mechanics" },
-        { "id": "menu" },
-        { "id": "menus" },
-        { "id": "minigames" },
-        { "id": "misc" },
-        { "id": "miscellaneous" },
-        { "id": "mob" },
-        { "id": "mobs" },
-        { "id": "monsters" },
-        { "id": "morphs" },
-        { "id": "mutant" },
-        { "id": "neutral" },
-        { "id": "npc" },
-        { "id": "npcs" },
-        { "id": "objectives" },
-        { "id": "particles" },
-        { "id": "passive" },
-        { "id": "passive_mobs" },
-        { "id": "pets" },
-        { "id": "platform" },
-        { "id": "player" },
-        { "id": "players" },
-        { "id": "portal" },
-        { "id": "portals" },
-        { "id": "preset" },
-        { "id": "projectile" },
-        { "id": "projectiles" },
-        { "id": "properties" },
-        { "id": "props" },
-        { "id": "recipe_models" },
-        { "id": "scanner" },
-        { "id": "script" },
-        { "id": "security" },
-        { "id": "sequences" },
-        { "id": "sfx" },
-        { "id": "shop" },
-        { "id": "skills" },
-        { "id": "sounds" },
-        { "id": "static_entity" },
-        { "id": "store" },
-        { "id": "structure" },
-        { "id": "structures" },
-        { "id": "systems" },
-        { "id": "tasks" },
-        { "id": "teams" },
-        { "id": "teleporter" },
-        { "id": "tnt" },
-        { "id": "tools" },
-        { "id": "towers" },
-        { "id": "trinkets" },
-        { "id": "tutorial" },
-        { "id": "ui" },
-        { "id": "user_interface" },
-        { "id": "util" },
-        { "id": "utilities" },
-        { "id": "vanilla" },
-        { "id": "vanilla_mob" },
-        { "id": "vehicle" },
-        { "id": "vehicles" },
-        { "id": "vr" },
-        { "id": "weapon" },
-        { "id": "weapons" },
-        { "id": "wrench" },
-        { "id": "opaque" },
-        { "id": "map" },
-        { "id": "on" },
-        { "id": "item" },
-        { "id": "player" },
-        { "id": "map" },
-        { "id": "charged" },
-        { "id": "beacon" },
-        { "id": "conduit" },
-        { "id": "moving" },
-        { "id": "banner" },
-        { "id": "bed" },
-        { "id": "cow" },
-        { "id": "chicken" },
-        { "id": "dragon" },
-        { "id": "ender" },
-        { "id": "enderman" },
-        { "id": "fang" },
-        { "id": "fireball" },
-        { "id": "mob" },
-        { "id": "warden" },
-        { "id": "village" },
-        { "id": "pattern" },
-        { "id": "wandering" },
-        { "id": "trial" },
-        { "id": "stray" },
-        { "id": "spider" },
-        { "id": "slime" },
-        { "id": "chest" },
-        { "id": "silverfish" },
-        { "id": "polar" },
-        { "id": "shield" },
-        { "id": "husk" },
-        { "id": "blaze" },
-        { "id": "axolotl" }
+        {
+          "id": "abilities"
+        },
+        {
+          "id": "actions"
+        },
+        {
+          "id": "adventure"
+        },
+        {
+          "id": "animals"
+        },
+        {
+          "id": "anims"
+        },
+        {
+          "id": "armor"
+        },
+        {
+          "id": "assets"
+        },
+        {
+          "id": "attachables"
+        },
+        {
+          "id": "banners"
+        },
+        {
+          "id": "base"
+        },
+        {
+          "id": "blocks"
+        },
+        {
+          "id": "book"
+        },
+        {
+          "id": "boss"
+        },
+        {
+          "id": "bosses"
+        },
+        {
+          "id": "bridge"
+        },
+        {
+          "id": "camping"
+        },
+        {
+          "id": "cars"
+        },
+        {
+          "id": "characters"
+        },
+        {
+          "id": "chests"
+        },
+        {
+          "id": "cinema"
+        },
+        {
+          "id": "cinematics"
+        },
+        {
+          "id": "cloud"
+        },
+        {
+          "id": "collectables"
+        },
+        {
+          "id": "collectibles"
+        },
+        {
+          "id": "custom_ui"
+        },
+        {
+          "id": "cut_scene"
+        },
+        {
+          "id": "cutscene"
+        },
+        {
+          "id": "deco"
+        },
+        {
+          "id": "decor"
+        },
+        {
+          "id": "dev"
+        },
+        {
+          "id": "dialogue"
+        },
+        {
+          "id": "dinos"
+        },
+        {
+          "id": "dinosaurs"
+        },
+        {
+          "id": "doors"
+        },
+        {
+          "id": "dragon"
+        },
+        {
+          "id": "dragons"
+        },
+        {
+          "id": "dummy"
+        },
+        {
+          "id": "effects"
+        },
+        {
+          "id": "enemies"
+        },
+        {
+          "id": "enemy"
+        },
+        {
+          "id": "entities"
+        },
+        {
+          "id": "entity"
+        },
+        {
+          "id": "env"
+        },
+        {
+          "id": "equipment"
+        },
+        {
+          "id": "events"
+        },
+        {
+          "id": "food"
+        },
+        {
+          "id": "furniture"
+        },
+        {
+          "id": "furnitures"
+        },
+        {
+          "id": "fx"
+        },
+        {
+          "id": "game_menu"
+        },
+        {
+          "id": "gameplay"
+        },
+        {
+          "id": "general"
+        },
+        {
+          "id": "glow"
+        },
+        {
+          "id": "guide"
+        },
+        {
+          "id": "guidebook"
+        },
+        {
+          "id": "inanimate"
+        },
+        {
+          "id": "interface"
+        },
+        {
+          "id": "internal"
+        },
+        {
+          "id": "intro"
+        },
+        {
+          "id": "item"
+        },
+        {
+          "id": "items"
+        },
+        {
+          "id": "launchers"
+        },
+        {
+          "id": "machines"
+        },
+        {
+          "id": "magic"
+        },
+        {
+          "id": "markers"
+        },
+        {
+          "id": "market"
+        },
+        {
+          "id": "marketing_banners"
+        },
+        {
+          "id": "mastermind"
+        },
+        {
+          "id": "mechanics"
+        },
+        {
+          "id": "menu"
+        },
+        {
+          "id": "menus"
+        },
+        {
+          "id": "minigames"
+        },
+        {
+          "id": "misc"
+        },
+        {
+          "id": "miscellaneous"
+        },
+        {
+          "id": "mob"
+        },
+        {
+          "id": "mobs"
+        },
+        {
+          "id": "monsters"
+        },
+        {
+          "id": "morphs"
+        },
+        {
+          "id": "mutant"
+        },
+        {
+          "id": "neutral"
+        },
+        {
+          "id": "npc"
+        },
+        {
+          "id": "npcs"
+        },
+        {
+          "id": "objectives"
+        },
+        {
+          "id": "particles"
+        },
+        {
+          "id": "passive"
+        },
+        {
+          "id": "passive_mobs"
+        },
+        {
+          "id": "pets"
+        },
+        {
+          "id": "platform"
+        },
+        {
+          "id": "player"
+        },
+        {
+          "id": "players"
+        },
+        {
+          "id": "portal"
+        },
+        {
+          "id": "portals"
+        },
+        {
+          "id": "preset"
+        },
+        {
+          "id": "projectile"
+        },
+        {
+          "id": "projectiles"
+        },
+        {
+          "id": "properties"
+        },
+        {
+          "id": "props"
+        },
+        {
+          "id": "recipe_models"
+        },
+        {
+          "id": "scanner"
+        },
+        {
+          "id": "script"
+        },
+        {
+          "id": "security"
+        },
+        {
+          "id": "sequences"
+        },
+        {
+          "id": "sfx"
+        },
+        {
+          "id": "shop"
+        },
+        {
+          "id": "skills"
+        },
+        {
+          "id": "sounds"
+        },
+        {
+          "id": "static_entity"
+        },
+        {
+          "id": "store"
+        },
+        {
+          "id": "structure"
+        },
+        {
+          "id": "structures"
+        },
+        {
+          "id": "systems"
+        },
+        {
+          "id": "tasks"
+        },
+        {
+          "id": "teams"
+        },
+        {
+          "id": "teleporter"
+        },
+        {
+          "id": "tnt"
+        },
+        {
+          "id": "tools"
+        },
+        {
+          "id": "towers"
+        },
+        {
+          "id": "trinkets"
+        },
+        {
+          "id": "tutorial"
+        },
+        {
+          "id": "ui"
+        },
+        {
+          "id": "user_interface"
+        },
+        {
+          "id": "util"
+        },
+        {
+          "id": "utilities"
+        },
+        {
+          "id": "vanilla"
+        },
+        {
+          "id": "vanilla_mob"
+        },
+        {
+          "id": "vehicle"
+        },
+        {
+          "id": "vehicles"
+        },
+        {
+          "id": "vr"
+        },
+        {
+          "id": "weapon"
+        },
+        {
+          "id": "weapons"
+        },
+        {
+          "id": "wrench"
+        },
+        {
+          "id": "opaque"
+        },
+        {
+          "id": "map"
+        },
+        {
+          "id": "on"
+        },
+        {
+          "id": "item"
+        },
+        {
+          "id": "player"
+        },
+        {
+          "id": "map"
+        },
+        {
+          "id": "charged"
+        },
+        {
+          "id": "beacon"
+        },
+        {
+          "id": "conduit"
+        },
+        {
+          "id": "moving"
+        },
+        {
+          "id": "banner"
+        },
+        {
+          "id": "bed"
+        },
+        {
+          "id": "cow"
+        },
+        {
+          "id": "chicken"
+        },
+        {
+          "id": "dragon"
+        },
+        {
+          "id": "ender"
+        },
+        {
+          "id": "enderman"
+        },
+        {
+          "id": "fang"
+        },
+        {
+          "id": "fireball"
+        },
+        {
+          "id": "mob"
+        },
+        {
+          "id": "warden"
+        },
+        {
+          "id": "village"
+        },
+        {
+          "id": "pattern"
+        },
+        {
+          "id": "wandering"
+        },
+        {
+          "id": "trial"
+        },
+        {
+          "id": "stray"
+        },
+        {
+          "id": "spider"
+        },
+        {
+          "id": "slime"
+        },
+        {
+          "id": "chest"
+        },
+        {
+          "id": "silverfish"
+        },
+        {
+          "id": "polar"
+        },
+        {
+          "id": "shield"
+        },
+        {
+          "id": "husk"
+        },
+        {
+          "id": "blaze"
+        },
+        {
+          "id": "axolotl"
+        }
       ]
     },
     {

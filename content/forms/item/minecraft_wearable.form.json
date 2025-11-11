@@ -25,6 +25,32 @@
         "title": "EquipmentSlot",
         "description": "Specifies where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1.",
         "dataType": 2,
+        "choices": [
+          {
+            "id": "slot.armor.body",
+            "title": "Slot.armor.body"
+          },
+          {
+            "id": "slot.armor.chest",
+            "title": "Slot.armor.chest"
+          },
+          {
+            "id": "slot.armor.feet",
+            "title": "Slot.armor.feet"
+          },
+          {
+            "id": "slot.armor.head",
+            "title": "Slot.armor.head"
+          },
+          {
+            "id": "slot.armor.legs",
+            "title": "Slot.armor.legs"
+          },
+          {
+            "id": "slot.weapon.offhand",
+            "title": "Slot.weapon.offhand"
+          }
+        ],
         "isRequired": true,
         "samples": {
           "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/items/journal.json": [

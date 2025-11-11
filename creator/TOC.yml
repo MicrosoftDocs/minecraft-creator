@@ -144,6 +144,8 @@
               href: Documents/CommonlyUsedTools.md
     - name: Concepts
       items:
+        - name: World Generation Overview
+          href: Documents/world-generation.md
         - name: Getting Started with Add-Ons
           href: Documents/GettingStarted.md
         - name: "Create Custom Grass Blocks: An Introduction to Resource Packs"
@@ -296,8 +298,8 @@
           href: Reference/Content/SkinPacksReference/SkinPackJSONReference.md
     - name: Worlds and Cameras
       items:
-        - name: Survival Spawn Creation
-          href: Documents/SurvivalSpawnCreation.md
+        - name: World Generation Overview
+          href: Documents/world-generation.md
         - name: Building a Parkour Challenge World
           items:   
           - name: Parkour Introduction
@@ -330,12 +332,14 @@
             href: Documents/Biomes/BiomeOverview.md
           - name: Partial Biome Replacements
             href: Documents/Biomes/CustomPartialBiomeReplacement.md
-          - name: Overview
+          - name: Client Biomes Overview
             href: Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md
         - name: Data-Driven Overworld Height and Void Generation
           href: Documents/DataDrivenOverworldHeight.md
         - name: Fog in Resource Packs
           href: Documents/FogInResourcePacks.md
+        - name: Survival Spawn Creation
+          href: Documents/SurvivalSpawnCreation.md
         - name: Control Schemes
           href: Documents/ControlSchemes.md
         - name: Cameras
@@ -436,12 +440,12 @@
           href: Documents/CommandBlockSnowballFight.md
         - name: Building Custom Blocks
           items: 
-          - name: Block Traits
-            href: Reference/Content/blockreference/Examples/BlockTraits.md
           - name: Create a Custom Die Block 
             href: Documents/AddCustomDieBlock.md
           - name: 'Create a Sushi Block: Advanced Custom Blocks' 
             href: Documents/AdvancedCustomBlocks.md
+          - name: Using Block Traits
+            href: Documents/intro-block-traits.md
           - name: Item Display Transforms
             href: Reference/Content/blockreference/Examples/ItemDisplayTransforms.md
           - name: Customizing the Item for a Block
@@ -589,6 +593,8 @@
             href: Reference/Content/blockreference/Examples/AuxValueToBlockStateMap.md
           - name: Block Components
             href: Reference/Content/blockreference/Examples/BlockComponents/TOC.yml
+          - name: Block Culling
+            href: Reference/Content/BlockCullingReference/Examples/BlockCullingRules/block_culling.md
           - name: Vanilla Block Tags
             href: Reference/Content/blockreference/Examples/VanillaBlockTags.md
         - name: Entity JSON

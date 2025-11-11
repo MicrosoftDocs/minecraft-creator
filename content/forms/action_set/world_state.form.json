@@ -1,0 +1,13 @@
+{
+  "id": "world state",
+  "title": "World state",
+  "fields": [
+    {
+      "id": "players",
+      "title": "Players",
+      "dataType": 14,
+      "subFormId": "action_set/player_state",
+      "required": true
+    }
+  ]
+}

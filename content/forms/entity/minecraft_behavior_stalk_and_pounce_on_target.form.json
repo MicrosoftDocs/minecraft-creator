@@ -168,7 +168,7 @@
         "dataType": 16,
         "subForm": {
           "id": "stuck_blocks",
-          "title": "Stuck_blocks",
+          "title": "Stuck blocks",
           "fields": [
             {
               "id": "test",

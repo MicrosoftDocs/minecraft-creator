@@ -216,6 +216,8 @@
       href: minecraft/server/BlockComponentPlayerPlaceBeforeEvent.md
     - name: BlockComponentRandomTickEvent
       href: minecraft/server/BlockComponentRandomTickEvent.md
+    - name: BlockComponentRedstoneUpdateEvent
+      href: minecraft/server/BlockComponentRedstoneUpdateEvent.md
     - name: BlockComponentRegistry
       href: minecraft/server/BlockComponentRegistry.md
     - name: BlockComponentStepOffEvent
@@ -1162,6 +1164,8 @@
       href: minecraft/server-editor/BoolPropertyItemVariant.md
     - name: BrushDirectionalPlacementMode
       href: minecraft/server-editor/BrushDirectionalPlacementMode.md
+    - name: BrushElevationMode
+      href: minecraft/server-editor/BrushElevationMode.md
     - name: ButtonVariant
       href: minecraft/server-editor/ButtonVariant.md
     - name: ColorPickerPropertyItemVariant
@@ -1662,6 +1666,8 @@
       href: minecraft/server-editor/IVector3PropertyItem.md
     - name: IVector3PropertyItemOptions
       href: minecraft/server-editor/IVector3PropertyItemOptions.md
+    - name: LocalizationEntry
+      href: minecraft/server-editor/LocalizationEntry.md
     - name: LogProperties
       href: minecraft/server-editor/LogProperties.md
     - name: ModalDialogCreationParams
@@ -1672,6 +1678,10 @@
       href: minecraft/server-editor/ProjectExportOptions.md
     - name: QuickExtrudeProperties
       href: minecraft/server-editor/QuickExtrudeProperties.md
+    - name: SelectionManifestData
+      href: minecraft/server-editor/SelectionManifestData.md
+    - name: SelectionManifestEntry
+      href: minecraft/server-editor/SelectionManifestEntry.md
     - name: WeightedBlock
       href: minecraft/server-editor/WeightedBlock.md
     - name: WidgetComponentBaseOptions

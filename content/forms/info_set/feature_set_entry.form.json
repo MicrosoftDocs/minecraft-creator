@@ -1,0 +1,13 @@
+{
+  "id": "info_set.featureSetEntry",
+  "title": "Feature Set Metric",
+  "description": "Describes a single metric collected while processing a content feature set.",
+  "fields": [
+    {
+      "id": "count",
+      "title": "Count",
+      "dataType": 0,
+      "description": "Number of occurrences attributed to this feature."
+    }
+  ]
+}

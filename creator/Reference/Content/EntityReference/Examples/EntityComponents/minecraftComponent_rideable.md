@@ -98,7 +98,6 @@ The list of positions and number of riders for each position for entities riding
 "minecraft:rideable": {
   "seat_count": 2,
   "crouching_skip_interact": true,
-  "pull_in_entities": true,
   "family_types": [
     "player",
     "parched",

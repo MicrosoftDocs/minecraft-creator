@@ -4,7 +4,7 @@
   "generated_doNotEdit": {
     "id": "is_in_same_vehicle",
     "title": "Is In Same Vehicle",
-    "description": "Returns whether the subject entity is in the same vehicle as the host entity.",
+    "description": "Returns whether the subject entity is in the same vehicle as the calling entity.",
     "fields": [
       {
         "id": "operator",

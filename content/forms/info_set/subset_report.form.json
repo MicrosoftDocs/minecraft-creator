@@ -1,0 +1,40 @@
+{
+  "id": "info_set.subsetReport",
+  "title": "Subset Report",
+  "description": "Optional nested report emitted for a focused subset of content.",
+  "fields": [
+    {
+      "id": "id",
+      "title": "Identifier",
+      "dataType": 2
+    },
+    {
+      "id": "title",
+      "title": "Title",
+      "dataType": 2
+    },
+    {
+      "id": "status",
+      "title": "Status",
+      "dataType": 2
+    },
+    {
+      "id": "details",
+      "title": "Details",
+      "dataType": 13
+    },
+    {
+      "id": "metrics",
+      "title": "Metrics",
+      "dataType": 14,
+      "subFormId": "info_set/feature_set_entry",
+      "allowCreateDelete": true
+    },
+    {
+      "id": "items",
+      "title": "Items",
+      "dataType": 17,
+      "allowCreateDelete": true
+    }
+  ]
+}

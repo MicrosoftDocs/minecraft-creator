@@ -1,5 +1,124 @@
 {
   "fields": [],
+  "samples": {
+    "/block_culling/horizontal_glass.culling_rules.json": [
+      {
+        "path": "/",
+        "content": {
+          "format_version": "1.21.80",
+          "minecraft:block_culling_rules": {
+            "description": {
+              "identifier": "demo:horizontal_glass"
+            },
+            "rules": [
+              {
+                "geometry_part": {
+                  "bone": "block",
+                  "cube": 0,
+                  "face": "north"
+                },
+                "direction": "north",
+                "condition": "same_block"
+              },
+              {
+                "geometry_part": {
+                  "bone": "block",
+                  "cube": 0,
+                  "face": "south"
+                },
+                "direction": "south",
+                "condition": "same_block"
+              },
+              {
+                "geometry_part": {
+                  "bone": "block",
+                  "cube": 0,
+                  "face": "east"
+                },
+                "direction": "east",
+                "condition": "same_block"
+              },
+              {
+                "geometry_part": {
+                  "bone": "block",
+                  "cube": 0,
+                  "face": "west"
+                },
+                "direction": "west",
+                "condition": "same_block"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "/block_culling/leaves.culling_rules.json": [
+      {
+        "path": "/",
+        "content": {
+          "format_version": "1.21.80",
+          "minecraft:block_culling_rules": {
+            "description": {
+              "identifier": "demo:leaves"
+            },
+            "rules": [
+              {
+                "geometry_part": {
+                  "bone": "block",
+                  "cube": 0,
+                  "face": "north"
+                },
+                "direction": "north",
+                "condition": "same_culling_layer"
+              },
+              {
+                "geometry_part": {
+                  "bone": "block",
+                  "cube": 0,
+                  "face": "west"
+                },
+                "direction": "west",
+                "condition": "same_culling_layer"
+              },
+              {
+                "geometry_part": {
+                  "bone": "block",
+                  "cube": 0,
+                  "face": "up"
+                },
+                "direction": "up",
+                "condition": "same_culling_layer"
+              },
+              {
+                "geometry_part": {
+                  "bone": "block",
+                  "cube": 0,
+                  "face": "south"
+                },
+                "direction": "south"
+              },
+              {
+                "geometry_part": {
+                  "bone": "block",
+                  "cube": 0,
+                  "face": "east"
+                },
+                "direction": "east"
+              },
+              {
+                "geometry_part": {
+                  "bone": "block",
+                  "cube": 0,
+                  "face": "down"
+                },
+                "direction": "down"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
   "generatedFromSchema_doNotEdit": {
     "id": "Block Culling",
     "title": "Client Block Block Culling",

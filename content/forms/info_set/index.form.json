@@ -1,0 +1,20 @@
+{
+  "id": "info_set.index",
+  "title": "Info Set Index",
+  "description": "Lookup map that correlates files discovered during analysis.",
+  "fields": [
+    {
+      "id": "items",
+      "title": "Items",
+      "description": "Flattened list of file paths that were indexed for quick lookup.",
+      "dataType": 17,
+      "allowCreateDelete": true
+    },
+    {
+      "id": "trie",
+      "title": "Trie",
+      "description": "Sparse trie keyed by tokenised path segments for accelerated search. The structure is generator-specific and may contain deeply nested objects.",
+      "dataType": 16
+    }
+  ]
+}

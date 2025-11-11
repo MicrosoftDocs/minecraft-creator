@@ -71,6 +71,18 @@ This function will be called when a block randomly ticks.
 
 Type: (arg0: [*BlockComponentRandomTickEvent*](BlockComponentRandomTickEvent.md), arg1: [*CustomComponentParameters*](CustomComponentParameters.md)) => *void*
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **onRedstoneUpdate**
+`onRedstoneUpdate?: (arg0: BlockComponentRedstoneUpdateEvent, arg1: CustomComponentParameters) => void;`
+
+This function will be called when an 'onRedstoneUpdate' engine event occurs if the block has a `minecraft:redstone_consumer` component and the redstone signal strength is >= to the components `min_power` field.
+
+Type: (arg0: [*BlockComponentRedstoneUpdateEvent*](BlockComponentRedstoneUpdateEvent.md), arg1: [*CustomComponentParameters*](CustomComponentParameters.md)) => *void*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **onStepOff**
 `onStepOff?: (arg0: BlockComponentStepOffEvent, arg1: CustomComponentParameters) => void;`
 

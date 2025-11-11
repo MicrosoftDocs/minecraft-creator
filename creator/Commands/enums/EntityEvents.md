@@ -98,6 +98,7 @@ Entity is affected by biome and skin
 Entity can grow to adulthood
 - `minecraft:ageable_set_baby`
 Entity is set to the status of being a baby
+- `minecraft:all_riders_dismounted`
 - `minecraft:ambient_night`
 Entity responds to the environment being night
 - `minecraft:ambient_normal`
@@ -480,6 +481,7 @@ Raid trigger is removed
 - `minecraft:restart_oxidation_timer`
 - `minecraft:resupply_trades`
 Entities with a trade are having those trades resupplied
+- `minecraft:rider_mounted`
 - `minecraft:roll_up`
 - `minecraft:schedule_bed_villager`
 Villager is scheduled to go to bed
@@ -549,7 +551,6 @@ Entity spawns as a skilled adult
 - `minecraft:spawn_tame_baby`
 - `minecraft:spawn_temperate`
 - `minecraft:spawn_warm`
-- `minecraft:spawn_wild`
 - `minecraft:spawn_wild_adult`
 - `minecraft:spawn_wild_ashen`
 - `minecraft:spawn_wild_baby`

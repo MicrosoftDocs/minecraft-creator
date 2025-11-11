@@ -30,11 +30,11 @@ Direct a log message to a specific player.  If no player is specified, then all 
 Type: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
 
 ### **subMessage**
-`subMessage?: string;`
+`subMessage?: LocalizationEntry | string;`
 
 Message to be shown under the message when toast channel is selected.
 
-Type: *string*
+Type: [*LocalizationEntry*](LocalizationEntry.md) | *string*
 
 ### **tags**
 `tags?: string[];`

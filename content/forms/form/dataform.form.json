@@ -165,7 +165,10 @@
               {
                 "field": "dataType",
                 "comparison": "=",
-                "anyValues": [0, 3]
+                "anyValues": [
+                  0,
+                  3
+                ]
               }
             ]
           },
@@ -177,7 +180,10 @@
               {
                 "field": "dataType",
                 "comparison": "=",
-                "anyValues": [0, 3]
+                "anyValues": [
+                  0,
+                  3
+                ]
               }
             ]
           }

@@ -20,7 +20,7 @@ Determines what enchantments can be applied to the item. Not all enchantments wi
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | slot | *not set* | String | Specifies which types of enchantments can be applied. For example, `bow` would allow this item to be enchanted as if it were a bow. Value must match a regular expression pattern of "none|all|g_armor|armor_head|armor_torso|armor_feet|armor_legs|sword|bow|spear|crossbow|melee_spear|g_tool|hoe|shears|flintsteel|shield|g_digging|axe|pickaxe|shovel|fishing_rod|carrot_stick|elytra|cosmetic_head". | Chestplate: `"armor_torso"`, My Boots: `"armor_feet"`, My Helm: `"armor_head"` | 
-| value | *not set* | Integer number | Specifies the value of the enchantment (minimum of 0). | Chestplate: `10` | 
+| value | *not set* | Integer number | Specifies the value of the enchantment (minimum of 0). Value must be <= 32767. | Chestplate: `10` | 
 
 ## Samples
 

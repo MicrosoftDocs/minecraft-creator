@@ -1,0 +1,393 @@
+{
+  "id": "info_set.info",
+  "title": "Info Set Details",
+  "fields": [
+    {
+      "id": "capabilities",
+      "title": "Capabilities",
+      "dataType": 17,
+      "description": "Set of generator capabilities that were exercised while producing this report.",
+      "allowCreateDelete": true
+    },
+    {
+      "id": "behaviorPackManifestCount",
+      "title": "Behavior Pack Manifest Count",
+      "dataType": 0
+    },
+    {
+      "id": "unknownJsonCount",
+      "title": "Unknown JSON Count",
+      "dataType": 0
+    },
+    {
+      "id": "entityTypeManifestCount",
+      "title": "Entity Type Manifest Count",
+      "dataType": 0
+    },
+    {
+      "id": "itemTypeManifestCount",
+      "title": "Item Type Manifest Count",
+      "dataType": 0
+    },
+    {
+      "id": "blockTypeManifestCount",
+      "title": "Block Type Manifest Count",
+      "dataType": 0
+    },
+    {
+      "id": "resourcePackManifestCount",
+      "title": "Resource Pack Manifest Count",
+      "dataType": 0
+    },
+    {
+      "id": "worldCount",
+      "title": "World Count",
+      "dataType": 0
+    },
+    {
+      "id": "entityTypeResourceCount",
+      "title": "Entity Type Resource Count",
+      "dataType": 0
+    },
+    {
+      "id": "behaviorPackAnimationCount",
+      "title": "Behavior Pack Animation Count",
+      "dataType": 0
+    },
+    {
+      "id": "behaviorPackAnimationControllerCount",
+      "title": "Behavior Pack Animation Controller Count",
+      "dataType": 0
+    },
+    {
+      "id": "overallSize",
+      "title": "Overall Size (bytes)",
+      "dataType": 0
+    },
+    {
+      "id": "fileCounts",
+      "title": "File Count",
+      "dataType": 0
+    },
+    {
+      "id": "folderCounts",
+      "title": "Folder Count",
+      "dataType": 0
+    },
+    {
+      "id": "contentSize",
+      "title": "Content Size",
+      "dataType": 0
+    },
+    {
+      "id": "contentFileCounts",
+      "title": "Content File Count",
+      "dataType": 0
+    },
+    {
+      "id": "contentFolderCounts",
+      "title": "Content Folder Count",
+      "dataType": 0
+    },
+    {
+      "id": "minBehaviorPackMinEngineVersion",
+      "title": "Minimum Behavior Pack Engine Version",
+      "dataType": 0
+    },
+    {
+      "id": "minResourcePackMinEngineVersion",
+      "title": "Minimum Resource Pack Engine Version",
+      "dataType": 0
+    },
+    {
+      "id": "subpackCount",
+      "title": "Sub-pack Count",
+      "dataType": 0
+    },
+    {
+      "id": "entityTypeComponents",
+      "title": "Entity Type Components",
+      "dataType": 17,
+      "allowCreateDelete": true
+    },
+    {
+      "id": "blockTypeComponents",
+      "title": "Block Type Components",
+      "dataType": 17,
+      "allowCreateDelete": true
+    },
+    {
+      "id": "itemTypeComponents",
+      "title": "Item Type Components",
+      "dataType": 17,
+      "allowCreateDelete": true
+    },
+    {
+      "id": "apisUsed",
+      "title": "APIs Used",
+      "dataType": 17,
+      "allowCreateDelete": true
+    },
+    {
+      "id": "mctoolsVersion",
+      "title": "Minecraft Creator Tools Version",
+      "dataType": 0
+    },
+    {
+      "id": "itemTypes",
+      "title": "Item Types",
+      "dataType": 17,
+      "allowCreateDelete": true
+    },
+    {
+      "id": "completeVanillaCopy",
+      "title": "Complete Vanilla Copy",
+      "dataType": 0
+    },
+    {
+      "id": "partialVanillaCopy",
+      "title": "Partial Vanilla Copy",
+      "dataType": 0
+    },
+    {
+      "id": "animationCount",
+      "title": "Animation Count",
+      "dataType": 0
+    },
+    {
+      "id": "textureCount",
+      "title": "Texture Count",
+      "dataType": 0
+    },
+    {
+      "id": "textureTexelSize",
+      "title": "Texture Texel Size",
+      "dataType": 0
+    },
+    {
+      "id": "vanillaGameTextureCoverage",
+      "title": "Vanilla Game Texture Coverage",
+      "dataType": 0
+    },
+    {
+      "id": "vanillaGameTextureCount",
+      "title": "Vanilla Game Texture Count",
+      "dataType": 0
+    },
+    {
+      "id": "minimumSupportablePerformanceTier",
+      "title": "Minimum Supportable Performance Tier",
+      "dataType": 0
+    },
+    {
+      "id": "invalidCommandSyntaxCount",
+      "title": "Invalid Command Syntax Count",
+      "dataType": 0
+    },
+    {
+      "id": "linesWithSlashCount",
+      "title": "Lines With Slash Count",
+      "dataType": 0
+    },
+    {
+      "id": "multipleSoundsManifests",
+      "title": "Multiple Sounds Manifests",
+      "dataType": 0
+    },
+    {
+      "id": "soundsDefinitionManifestFormatIsValid",
+      "title": "Sounds Definition Manifest Format Is Valid",
+      "dataType": 0
+    },
+    {
+      "id": "soundsDefinitionManifestIsNotValidJson",
+      "title": "Sounds Definition Manifest Is Not Valid JSON",
+      "dataType": 0
+    },
+    {
+      "id": "flagIsOrWasTrue",
+      "title": "Flag Is Or Was True",
+      "dataType": 0
+    },
+    {
+      "id": "levelDatNotFound",
+      "title": "level.dat Not Found",
+      "dataType": 0
+    },
+    {
+      "id": "worldNotFound",
+      "title": "World Not Found",
+      "dataType": 0
+    },
+    {
+      "id": "deprecatedBlockOverride",
+      "title": "Deprecated Block Override",
+      "dataType": 0
+    },
+    {
+      "id": "deprecatedTerrainTexture",
+      "title": "Deprecated Terrain Texture",
+      "dataType": 0
+    },
+    {
+      "id": "deprecatedTexture",
+      "title": "Deprecated Texture",
+      "dataType": 0
+    },
+    {
+      "id": "restrictedPolyMeshFound",
+      "title": "Restricted Poly Mesh Found",
+      "dataType": 0
+    },
+    {
+      "id": "jsonParseError",
+      "title": "JSON Parse Error",
+      "dataType": 0
+    },
+    {
+      "id": "invalidManifestJson",
+      "title": "Invalid Manifest JSON",
+      "dataType": 0
+    },
+    {
+      "id": "missingResourcePackDependencies",
+      "title": "Missing Resource Pack Dependencies",
+      "dataType": 0
+    },
+    {
+      "id": "internalProcessingErrors",
+      "title": "Internal Processing Errors",
+      "dataType": 0
+    },
+    {
+      "id": "invalidWorldPackReferencesJson",
+      "title": "Invalid World Pack References JSON",
+      "dataType": 0
+    },
+    {
+      "id": "missingWorldPackReferencesFile",
+      "title": "Missing World Pack References File",
+      "dataType": 0
+    },
+    {
+      "id": "invalidPackIds",
+      "title": "Invalid Pack IDs",
+      "dataType": 0
+    },
+    {
+      "id": "missingManifestVersion",
+      "title": "Missing Manifest Version",
+      "dataType": 0
+    },
+    {
+      "id": "invalidManifestVersion",
+      "title": "Invalid Manifest Version",
+      "dataType": 0
+    },
+    {
+      "id": "packReferencesNotFound",
+      "title": "Pack References Not Found",
+      "dataType": 0
+    },
+    {
+      "id": "minBaseGameVersion",
+      "title": "Minimum Base Game Version",
+      "dataType": 0
+    },
+    {
+      "id": "chunkCount",
+      "title": "Chunk Count",
+      "dataType": 0
+    },
+    {
+      "id": "subchunkLessChunkCount",
+      "title": "Subchunk-less Chunk Count",
+      "dataType": 0
+    },
+    {
+      "id": "worldLoadErrors",
+      "title": "World Load Errors",
+      "dataType": 0
+    },
+    {
+      "id": "commands",
+      "title": "Commands",
+      "dataType": 17,
+      "allowCreateDelete": true
+    },
+    {
+      "id": "featureSets",
+      "title": "Feature Sets",
+      "dataType": 14,
+      "subFormId": "info_set/feature_set_entry",
+      "allowCreateDelete": true,
+      "description": "Keyed collection of feature metrics produced while scanning content."
+    },
+    {
+      "id": "errorCount",
+      "title": "Error Count",
+      "dataType": 0
+    },
+    {
+      "id": "internalProcessingErrorCount",
+      "title": "Internal Processing Error Count",
+      "dataType": 0
+    },
+    {
+      "id": "warningCount",
+      "title": "Warning Count",
+      "dataType": 0
+    },
+    {
+      "id": "testSuccessCount",
+      "title": "Test Success Count",
+      "dataType": 0
+    },
+    {
+      "id": "testFailCount",
+      "title": "Test Failure Count",
+      "dataType": 0
+    },
+    {
+      "id": "testNotApplicableCount",
+      "title": "Test Not Applicable Count",
+      "dataType": 0
+    },
+    {
+      "id": "errorSummary",
+      "title": "Error Summary",
+      "dataType": 13
+    },
+    {
+      "id": "internalProcessingErrorSummary",
+      "title": "Internal Processing Error Summary",
+      "dataType": 13
+    },
+    {
+      "id": "warningSummary",
+      "title": "Warning Summary",
+      "dataType": 13
+    },
+    {
+      "id": "testFailSummary",
+      "title": "Test Failure Summary",
+      "dataType": 13
+    },
+    {
+      "id": "infoGenerationTime",
+      "title": "Info Generation Time (ms)",
+      "dataType": 0
+    },
+    {
+      "id": "endToEndGenerationTime",
+      "title": "End-to-End Generation Time (ms)",
+      "dataType": 0
+    },
+    {
+      "id": "summary",
+      "title": "Summary",
+      "dataType": 16,
+      "subFormId": "info_set/summary"
+    }
+  ]
+}

@@ -53,19 +53,37 @@
               "id": "major",
               "title": "Major",
               "dataType": 0,
-              "defaultValue": 0
+              "defaultValue": 0,
+              "validity": [
+                {
+                  "comparison": "<=",
+                  "value": 65535
+                }
+              ]
             },
             {
               "id": "minor",
               "title": "Minor",
               "dataType": 0,
-              "defaultValue": 0
+              "defaultValue": 0,
+              "validity": [
+                {
+                  "comparison": "<=",
+                  "value": 65535
+                }
+              ]
             },
             {
               "id": "patch",
               "title": "Patch",
               "dataType": 0,
-              "defaultValue": 0
+              "defaultValue": 0,
+              "validity": [
+                {
+                  "comparison": "<=",
+                  "value": 65535
+                }
+              ]
             },
             {
               "id": "preRelease",
@@ -127,19 +145,37 @@
               "id": "major",
               "title": "Major",
               "dataType": 0,
-              "defaultValue": 0
+              "defaultValue": 0,
+              "validity": [
+                {
+                  "comparison": "<=",
+                  "value": 65535
+                }
+              ]
             },
             {
               "id": "minor",
               "title": "Minor",
               "dataType": 0,
-              "defaultValue": 0
+              "defaultValue": 0,
+              "validity": [
+                {
+                  "comparison": "<=",
+                  "value": 65535
+                }
+              ]
             },
             {
               "id": "patch",
               "title": "Patch",
               "dataType": 0,
-              "defaultValue": 0
+              "defaultValue": 0,
+              "validity": [
+                {
+                  "comparison": "<=",
+                  "value": 65535
+                }
+              ]
             },
             {
               "id": "preRelease",

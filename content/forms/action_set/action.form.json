@@ -1,0 +1,99 @@
+{
+  "id": "action",
+  "title": "Action",
+  "fields": [
+    {
+      "id": "id",
+      "title": "Action Identifier",
+      "dataType": 2,
+      "required": true
+    },
+    {
+      "id": "type",
+      "title": "Type",
+      "choices": [
+        {
+          "id": "block_break",
+          "title": "Block Break"
+        },
+        {
+          "id": "block_explode",
+          "title": "Block Explode"
+        },
+        {
+          "id": "block_set",
+          "title": "Block Set"
+        },
+        {
+          "id": "entity_die",
+          "title": "Entity Die"
+        },
+        {
+          "id": "entity_spawn",
+          "title": "Entity Spawn"
+        },
+        {
+          "id": "item_spawn",
+          "title": "Item Spawn"
+        },
+        {
+          "id": "music_play",
+          "title": "Music Play"
+        },
+        {
+          "id": "particle_spawn",
+          "title": "Particle Spawn"
+        },
+        {
+          "id": "player_join",
+          "title": "Player Join"
+        },
+        {
+          "id": "sound_play",
+          "title": "Sound Play"
+        },
+        {
+          "id": "test_idle",
+          "title": "Test Idle"
+        },
+        {
+          "id": "test_simulated_player_move",
+          "title": "Test Simulated Player Move"
+        },
+        {
+          "id": "test_simulated_player_spawn",
+          "title": "Test Simulated Player Spawn"
+        },
+        {
+          "id": "tick",
+          "title": "Tick"
+        },
+        {
+          "id": "world_send_message",
+          "title": "World Send Message"
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "args",
+      "title": "Arguments",
+      "dataType": 16
+    },
+    {
+      "id": "value",
+      "title": "Value",
+      "dataType": 2
+    },
+    {
+      "id": "withId",
+      "title": "With Id",
+      "dataType": 2
+    },
+    {
+      "id": "setId",
+      "title": "Set Id",
+      "dataType": 2
+    }
+  ]
+}
