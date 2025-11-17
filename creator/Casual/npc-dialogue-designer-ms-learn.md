@@ -36,7 +36,7 @@ The dialogue designer is made for Minecraft: Bedrock Edition and makes JSON dial
 
 To begin, you should see a screen like this:
 
-![](file:///C:/Users/Walke/Pictures/API%20ScreenShots/DialogueDesigner.png)
+![](media/dialogue-designer)
 
 Click the "New Dialogue" button to get started. If you have already have a dialogue file and want to edit it, click the open file button. You should now be taken to a menu like this:
 
