@@ -36,11 +36,11 @@ The dialogue designer is made for Minecraft: Bedrock Edition and makes JSON dial
 
 To begin, you should see a screen like this:
 
-![](media/dialogue-designer)
+![](Media/DialogueDesigner.png)
 
 Click the "New Dialogue" button to get started. If you have already have a dialogue file and want to edit it, click the open file button. You should now be taken to a menu like this:
 
-![](file:///C:/Users/Walke/Pictures/API%20ScreenShots/DialogueDesigner%20Menu.png)
+![](Media/DialogueDesigner-Menu.png)
 
 Your file name should go in the top left corner. And for the dialogue to work, you should click the "+" button under the "Scenes" tab in the sidebar. From there you should be able to add text in the text section, re-name the NPC, and add a button that can either execute a command or take you to another scene or both. For organization, you can rename the scene by double clicking them in the sidebar.
 
