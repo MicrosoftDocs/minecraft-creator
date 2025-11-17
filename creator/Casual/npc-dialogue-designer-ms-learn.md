@@ -4,13 +4,13 @@
 
 Whats in this article:
 
-[The Good Stuff](##the-good-stuff)
+[The Good Stuff](##-the-good-stuff)
 
-[How it works and the basics](##how-it-works-and-the-basics)
+[How it works and the basics](##-how-it-works-and-the-basics)
 
-[Navigation](##navigation)
+[Navigation](##-navigation)
 
-[Wrapping it up](##wrapping-it-up)
+[Wrapping it up](##-wrapping-it-up)
 
 
 
