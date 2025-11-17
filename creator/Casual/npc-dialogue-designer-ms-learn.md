@@ -40,7 +40,7 @@ To begin, you should see a screen like this:
 
 Click the "New Dialogue" button to get started. If you have already have a dialogue file and want to edit it, click the open file button. You should now be taken to a menu like this:
 
-![](Media/DialogueDesigner-Menu.png)
+![](Media/DialogueDesignerMenu.png)
 
 Your file name should go in the top left corner. And for the dialogue to work, you should click the "+" button under the "Scenes" tab in the sidebar. From there you should be able to add text in the text section, re-name the NPC, and add a button that can either execute a command or take you to another scene or both. For organization, you can rename the scene by double clicking them in the sidebar.
 
@@ -52,7 +52,7 @@ Your file name should go in the top left corner. And for the dialogue to work, y
 
 Once you have created all your scenes, you probably want them to be opened when you click certain buttons right? Well there is an easy way to do that. Simply add a button with the "+" button in the dialogue menu and click the six dots on the right. In the drop down menu, click on navigation.
 
-![](file:///C:/Users/Walke/Pictures/API%20ScreenShots/Navigation.png)
+![](Media/Navigation.png)
 
 You see my options are "Keep Open", "Close", and one that you will probably not see "OneButton". Unless you named any of your scenes this, you will not see it. Because the scenes show up in the navigation menu. Once you select a scene, when the button is pressed, it will take you to that scene. Under the commands tab, you can click which button to use (It will number them based on their position) and have a command execute when one is pressed. Alternatively, you can use "On Open" and "On Close" as well, and I think they are pretty self explanitory but if not, "On Open" is for when the dialogue is opened and "On Close" is for when the dialogue is closed.
 
@@ -64,6 +64,6 @@ You see my options are "Keep Open", "Close", and one that you will probably not 
 
 Once you are satisfied with the dialogue, you can export it with the button in the top right corner. It will download the file and give you the command to open it in game once the addon has been installed.
 
-![](file:///C:/Users/Walke/Pictures/API%20ScreenShots/Export.png)
+![](Media/Export.png)
 
 For more information on how to inport a dialogue into the game, check out [this page](https://learn.microsoft.com/en-us/minecraft/creator/documents/npcdialogue?view=minecraft-bedrock-stable).
