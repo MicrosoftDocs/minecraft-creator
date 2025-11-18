@@ -366,6 +366,8 @@
           href: Documents/IntroductionToEntityProperties.md
         - name: Entity Behavior Introduction
           href: Documents/EntityBehaviorIntroduction.md
+        - name: Entity Components Guide
+          href: Documents/EntityComponentsGuide.md
         - name: Entity Behavior (AI) Components
           href: Documents/EntityBehaviorComponents.md
         - name: Built-in Entity Events
