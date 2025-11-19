@@ -22,9 +22,16 @@ Saves a home position for when the the entity is spawned.
 
 ## Samples
 
-#### [Nardolphle](https://github.com/microsoft/minecraft-samples/tree/main/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json)
+#### [Bee](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/bee.json)
 
 
 ```json
-"minecraft:home": {}
+"minecraft:home": {
+  "restriction_type": "random_movement",
+  "restriction_radius": 22,
+  "home_block_list": [
+    "minecraft:bee_nest",
+    "minecraft:beehive"
+  ]
+},
 ```
