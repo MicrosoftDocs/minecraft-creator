@@ -114,7 +114,7 @@ Minecraft: Bedrock Edition uses entity.json files as a library of references to 
     }
 ```
 
-3. Finally, square off the logic in the entity behavior pack to set the trigger for the entity’s transformation and to randomize the new form your shapeshifter takes. You can use the files from our [sample](link to shapeshifter folder) as a reference to make sure you're on the right track.
+3. Finally, square off the logic in the entity behavior pack to set the trigger for the entity’s transformation and to randomize the new form your shapeshifter takes. You can use the files from our [sample](https://github.com/microsoft/minecraft-samples/tree/main/shapeshifter) as a reference to make sure you're on the right track.
 
 ## Testing the entity
 
