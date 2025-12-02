@@ -27,3 +27,5 @@ Minecraft Creator Tools has some additional content and knowledge that might be 
 If document files are moved, you should edit the .openpublishing.redirection.json file(s) to add redirects as necessary.
 
 New documents should have entries in the table of contents, either in the root TOC.yml at `creator/TOC.yml`, and/or in one of the more localized table of content TOC.yml files in a subfolder of `creator`.
+
+Look in the docs/ folder for .md files with more detailed documentation guidelines and standards.
