@@ -142,3 +142,157 @@ See [this article on client biomes](./../../Reference/Content/ClientBiomesRefere
   }
 }
 ```
+
+## Getting Started: Your First Custom Biome
+
+Here's a step-by-step guide to creating a simple custom biome by overriding an existing one.
+
+### Step 1: Set Up Your Behavior Pack
+
+Create a behavior pack with the standard structure. In your `manifest.json`, ensure you have:
+
+```json
+{
+    "format_version": 2,
+    "header": {
+        "name": "My Custom Biomes",
+        "description": "Custom biome modifications",
+        "uuid": "YOUR-UUID-HERE",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 20, 60]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "ANOTHER-UUID-HERE",
+            "version": [1, 0, 0]
+        }
+    ]
+}
+```
+
+### Step 2: Create the Biomes Folder
+
+Create a `biomes` folder in your behavior pack.
+
+### Step 3: Create a Biome Override
+
+To override the desert biome with custom surface materials, create `biomes/desert.json`:
+
+```json
+{
+    "format_version": "1.20.60",
+    "minecraft:biome": {
+        "description": {
+            "identifier": "desert"
+        },
+        "components": {
+            "minecraft:climate": {
+                "downfall": 0.0,
+                "snow_accumulation": [0.0, 0.0],
+                "temperature": 2.0
+            },
+            "minecraft:overworld_height": {
+                "noise_type": "default"
+            },
+            "minecraft:surface_parameters": {
+                "sea_floor_depth": 7,
+                "sea_floor_material": "minecraft:gravel",
+                "foundation_material": "minecraft:stone",
+                "mid_material": "minecraft:red_sandstone",
+                "top_material": "minecraft:red_sand"
+            },
+            "minecraft:tags": {
+                "tags": [
+                    "monster",
+                    "overworld",
+                    "desert"
+                ]
+            }
+        }
+    }
+}
+```
+
+This override changes the desert from yellow sand to red sand and red sandstone.
+
+### Step 4: Test Your Biome
+
+1. Apply your behavior pack to a new world
+2. Use `/locate biome desert` to find a desert
+3. Teleport there to see your changes
+
+## Common Biome Customizations
+
+### Changing Surface Blocks
+
+The `minecraft:surface_parameters` component controls what blocks appear at different depths:
+
+| Property | Description |
+|----------|-------------|
+| `top_material` | The block at the surface (grass, sand, etc.) |
+| `mid_material` | The block below the surface (dirt, sandstone) |
+| `foundation_material` | The base material (usually stone) |
+| `sea_floor_depth` | How deep the sea floor material extends |
+| `sea_floor_material` | The block at the sea floor |
+
+### Adjusting Climate
+
+The `minecraft:climate` component affects weather and environmental behavior:
+
+```json
+"minecraft:climate": {
+    "temperature": 0.8,
+    "downfall": 0.4,
+    "snow_accumulation": [0.0, 0.125]
+}
+```
+
+- **temperature**: Affects snow/rain behavior (< 0.15 = snow)
+- **downfall**: Precipitation frequency (0.0 = none, 1.0 = constant)
+- **snow_accumulation**: Range of snow layer heights
+
+### Controlling Mob Spawning with Tags
+
+Tags determine which mobs can spawn in a biome:
+
+```json
+"minecraft:tags": {
+    "tags": [
+        "animal",        // Passive mobs can spawn
+        "monster",       // Hostile mobs can spawn
+        "overworld",     // Standard overworld spawns
+        "forest"         // Biome-specific spawns (wolves, etc.)
+    ]
+}
+```
+
+## Troubleshooting Biome Issues
+
+### Biome Changes Don't Appear
+
+- Ensure the filename matches the biome identifier exactly (e.g., `desert.json` for `desert`)
+- Create a **new world** - existing chunks won't regenerate
+- Check the content log for JSON syntax errors
+- Verify your behavior pack is actually active
+
+### Surface Materials Look Wrong
+
+- Some blocks don't work well as surface materials
+- Test with vanilla blocks first before using custom blocks
+- Check that block identifiers include the `minecraft:` prefix
+
+### Climate Not Working as Expected
+
+- Temperature affects a larger area than you might expect
+- Snow requires both temperature < 0.15 AND downfall > 0
+- Some climate effects only apply in specific conditions
+
+## Next Steps
+
+Once you're comfortable with biome overrides, explore these advanced topics:
+
+- [Partial Biome Replacements](./CustomPartialBiomeReplacement.md) - Insert custom biomes that replace portions of vanilla biomes
+- [Client Biomes](./../../Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md) - Customize visual and audio aspects in resource packs
+- [Features](../FeaturesTaxonomy.md) - Add trees, flowers, ores, and other decorations to your biomes
+```
