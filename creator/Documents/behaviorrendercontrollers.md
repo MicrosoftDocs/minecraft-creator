@@ -9,9 +9,9 @@ ms.date: 11/25/2025
 
 # Custom Behaviors and Render Controllers
 
-Customizing mobs in Minecraft: Bedrock Edition is a great way to stretch your creative muscles, and leveraging the more advanced resource and behavior pack elements can help take your world building to the next level. In this tutorial, we’ll build on our introductory guides to resource and behavior packs by transforming an existing Minecraft entity into one of our own design.  
+Customizing mobs in Minecraft: Bedrock Edition is a great way to stretch your creative muscles, and leveraging the more advanced resource and behavior pack elements can help take your world building to the next level. In this tutorial, we'll build on our introductory guides to resource and behavior packs by transforming an existing Minecraft entity into one of our own design.  
 
-We’ll explore some of the more advanced applications of mob customization with an example of an entity that changes shape on certain cues you specify – the Shapeshifter! The Shapeshifter works like an enderman in most ways, because we’ll be starting with the vanilla enderman entity as a base, but you’ll learn how to tweak it to your liking so that it fits more neatly into your worlds.
+We'll explore some of the more advanced applications of mob customization with an example of an entity that changes shape on certain cues you specify – the Shapeshifter! The Shapeshifter works like an enderman in most ways, because we'll be starting with the vanilla enderman entity as a base, but you'll learn how to tweak it to your liking so that it fits more neatly into your worlds.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Before you begin this advanced tutorial, we strongly recommend you read through 
 
 The easiest way to create a custom entity is to start with one of the vanilla ones on [this public GitHub repository](https://github.com/microsoft/minecraft-samples). We recommend you use [Blockbench](https://www.blockbench.net/) to manage and edit custom Minecraft entity models and textures, as it has a number of helpful tools designed to streamline the creative process and remove some of the guess work involved for creators who are newer to setting up projects with Minecraft.
 
-1. Download and/or open [Blockbench](https://www.blockbench.net/), then update BlockBench and Minecraft: Bedrock Edition to the latest version available if you haven’t already done so.
+1. Download and/or open [Blockbench](https://www.blockbench.net/), then update BlockBench and Minecraft: Bedrock Edition to the latest version available if you haven't already done so.
 
 2. Install the Minecraft Entity Wizard plugin and use it to create a new entity.
 ![Entity Wizard](/creator/Documents/BedrockEditor/Media/AdvancedCustomMobs/entitywizard.png)
@@ -49,15 +49,15 @@ The easiest way to create a custom entity is to start with one of the vanilla on
 8. We changed the color of the blocks that make up the vanilla enderman entity from shades of black to shades of grey, but you can go wild with the edits you make at this stage. Check out the [Blockbench wiki](https://www.blockbench.net/wiki) for more information on how to get the most out of their tool.
 ![Blockbench Shapeshifter](/creator/Documents/BedrockEditor/Media/AdvancedCustomMobs/blockbench_shapeshifter.png)
 
-9. When you’re finished editing your new model, save the project to add your visual changes to the Shapeshifter.
+9. When you're finished editing your new model, save the project to add your visual changes to shapeshifter.entity.json.
 
 ## Altering entity behavior
 
-Now that the shapeshifter entity looks the way you want it to, it’s time to use render controllers and adjust the entity.json file to assign some rules for how and when it transforms. The first file we’ll adjust is shapeshifter.entity.json, which should automatically go to a folder called ‘entity’ in your custom mob’s resource pack folder.
+Now that the shapeshifter entity looks the way you want it to, it's time to use render controllers and adjust the entity.json file to assign some rules for how and when it transforms. The first file we'll adjust is shapeshifter.entity.json, which should automatically go to a folder called 'entity' in your custom mob's resource pack folder.
 
-Minecraft: Bedrock Edition uses entity.json files as a library of references to things like textures, geometries, animations, etc. that other files in a resource pack define for a mob. This, paired with the corresponding file in the behavior pack ‘entities’ folder, constitutes the bulk of every mob in Minecraft. In other words, a mob is the sum of all the references its entity.json folder points to and the behaviors outlined in the corresponding behavior pack file. That’s why it’s so important to know how to structure these files when creating a custom mob!
+Minecraft: Bedrock Edition uses entity.json files as a library of references to things like textures, geometries, animations, etc. that other files in a resource pack define for a mob. This, paired with the corresponding file in the behavior pack ‘entities' folder, constitutes the bulk of every mob in Minecraft. In other words, a mob is the sum of all the references its client (resource pack) entity.json file points to and the behaviors outlined in the corresponding behavior pack file. That's why it's so important to know how to structure these files when creating a custom mob!
 
-1. Open the shapeshifter.entity.json file placed in your resource pack in Visual Studio Code. Add textures and define geometry components for the mobs you want the shapeshifter to change into. In our sample, we’ll be creating a Shapeshifter that can transform into a chicken, cat, sheep, or a polar bear.
+1. Open the shapeshifter.entity.json file placed in your resource pack in Visual Studio Code. Add textures and define geometry components for the mobs you want the shapeshifter to change into. In our sample, we'll be creating a Shapeshifter that can transform into a chicken, cat, sheep, or a polar bear.
 
 ```json
 {
@@ -86,7 +86,7 @@ Minecraft: Bedrock Edition uses entity.json files as a library of references to 
         },
 ```
 
-2. Create a new folder in your resource pack named render_controllers and create a shapeshifter.render_controllers.json file with the following code.
+2. Create a new folder in your resource pack named render_controllers and create a shapeshifter.render_controllers.json file with the following.
 
 ```json
 {
@@ -114,11 +114,15 @@ Minecraft: Bedrock Edition uses entity.json files as a library of references to 
     }
 ```
 
-3. Finally, square off the logic in the entity behavior pack to set the trigger for the entity’s transformation and to randomize the new form your shapeshifter takes. You can use the files from our [sample](https://github.com/microsoft/minecraft-samples/tree/main/shapeshifter) as a reference to make sure you're on the right track.
+In the render controller above, we use an entity property to store the shapes the Shapeshifter can assume. The molang expressions for geometry, materials, and textures tell the game to select a different geometry and texture pair to broadcast to the player, based on the current shape of the Shapeshifter as defined in the behavior entity.json file.
+> [!NOTE]
+> Take a look at [shapeshifter.behavior.json](https://github.com/microsoft/minecraft-samples/tree/main/shapeshifter/behavior_pack/shapeshifter/entities/shapeshifter.behavior.json) in the shapeshifter sample. Notice anything interesting? This is where we define the property mentioned in the render controller called `minecraft:shape`, which sets values for the mobs our Shapeshifter can turn into.
+
+3. Finally, square off the logic in the entity behavior pack to set the trigger for the entity's transformation and to randomize the new form your shapeshifter takes. You can use the files from our [sample](https://github.com/microsoft/minecraft-samples/tree/main/shapeshifter) as a reference to make sure you're on the right track.
 
 ## Testing the entity
 
-With pack management out of the way, now all that’s left is to test your packs in-game to make sure the shapeshifter behaves and render the way you expect it to.
+With pack management out of the way, now all that's left is to test your packs in-game to make sure the shapeshifter behaves and render the way you expect it to.
 
 1. Open Minecraft: Bedrock Edition.
 
@@ -132,7 +136,7 @@ With pack management out of the way, now all that’s left is to test your packs
 
 ### What next?
 
-Now that you’ve successfully created a custom entity, try adding further complexity to it with animations and animation controllers to get more comfortable with entity customization.
+Now that you've successfully created a custom entity, try adding further complexity to it with animations and animation controllers to get more comfortable with entity customization.
 
 ### See Also
 
