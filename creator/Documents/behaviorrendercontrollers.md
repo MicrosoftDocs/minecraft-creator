@@ -59,64 +59,64 @@ Minecraft: Bedrock Edition uses entity.json files as a library of references to 
 
 1. Open the shapeshifter.entity.json file placed in your resource pack in Visual Studio Code. Add textures and define geometry components for the mobs you want the shapeshifter to change into. In our sample, we'll be creating a Shapeshifter that can transform into a chicken, cat, sheep, or a polar bear.
 
-```json
-{
-"format_version": "1.8.0",
-"minecraft:client_entity": {
-    "description": {
-        "identifier": "sample:shapeshifter",
-        "min_engine_version": "1.8.0",
-        "materials": {
-            "default": "entity_emissive_alpha",
-            "invisible": "enderman_invisible"
-        },
-        "textures": {
-            "default": "textures/entity/shapeshifter",
-            "chicken": "textures/entity/chicken",
-            "cat": "textures/entity/cat/calico",
-            "sheep": "textures/entity/sheep/sheep",
-            "polar_bear": "textures/entity/polarbear"
-        },
-        "geometry": {
-            "default": "geometry.shapeshifter",
-            "chicken": "geometry.chicken",
-            "cat": "geometry.cat",
-            "sheep": "geometry.sheep",
-            "polar_bear": "geometry.polarbear"
-        },
-```
+    ```json
+    {
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "sample:shapeshifter",
+            "min_engine_version": "1.8.0",
+            "materials": {
+                "default": "entity_emissive_alpha",
+                "invisible": "enderman_invisible"
+            },
+            "textures": {
+                "default": "textures/entity/shapeshifter",
+                "chicken": "textures/entity/chicken",
+                "cat": "textures/entity/cat/calico",
+                "sheep": "textures/entity/sheep/sheep",
+                "polar_bear": "textures/entity/polarbear"
+            },
+            "geometry": {
+                "default": "geometry.shapeshifter",
+                "chicken": "geometry.chicken",
+                "cat": "geometry.cat",
+                "sheep": "geometry.sheep",
+                "polar_bear": "geometry.polarbear"
+            },
+    ```
 
 2. Create a new folder in your resource pack named render_controllers and create a shapeshifter.render_controllers.json file with the following.
 
-```json
-{
-"format_version": "1.8.0",
-"render_controllers": {
-    "controller.render.shapeshifter": {
-        "arrays": {
-            "materials": {
-              "Array.materials": ["material.default", "material.invisible"]
-            },
-            "geometries": {
-              "Array.geos": ["geometry.default", "geometry.chicken", "geometry.cat", "geometry.sheep", "geometry.polar_bear"]
-            },
-            "textures": {
-              "Array.textures": ["texture.default", "texture.chicken", "texture.cat", "texture.sheep", "texture.polar_bear"]
+    ```json
+    {
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.shapeshifter": {
+            "arrays": {
+                "materials": {
+                  "Array.materials": ["material.default", "material.invisible"]
+                },
+                "geometries": {
+                  "Array.geos": ["geometry.default", "geometry.chicken", "geometry.cat", "geometry.sheep", "geometry.polar_bear"]
+                },
+                "textures": {
+                  "Array.textures": ["texture.default", "texture.chicken", "texture.cat", "texture.sheep", "texture.polar_bear"]
+                }
+              },
+              "geometry": "Array.geos[(q.property('minecraft:shape') == 'shapeshifter' ? 0 : (q.property('minecraft:shape') == 'chicken' ? 1  : (q.property('minecraft:shape') == 'cat' ? 2 : (q.property('minecraft:shape') == 'sheep' ? 3 : 4))))]",
+              "materials": [{ "*": "Array.materials[query.is_invisible]" }],
+              "textures": [
+                "Array.textures[(q.property('minecraft:shape') == 'shapeshifter' ? 0 : (q.property('minecraft:shape') == 'chicken' ? 1  : (q.property('minecraft:shape') == 'cat' ? 2 : (q.property('minecraft:shape') == 'sheep' ? 3 : 4))))]"
+              ]
             }
-          },
-          "geometry": "Array.geos[(q.property('minecraft:shape') == 'shapeshifter' ? 0 : (q.property('minecraft:shape') == 'chicken' ? 1  : (q.property('minecraft:shape') == 'cat' ? 2 : (q.property('minecraft:shape') == 'sheep' ? 3 : 4))))]",
-          "materials": [{ "*": "Array.materials[query.is_invisible]" }],
-          "textures": [
-            "Array.textures[(q.property('minecraft:shape') == 'shapeshifter' ? 0 : (q.property('minecraft:shape') == 'chicken' ? 1  : (q.property('minecraft:shape') == 'cat' ? 2 : (q.property('minecraft:shape') == 'sheep' ? 3 : 4))))]"
-          ]
+          }
         }
-      }
-    }
-```
-
-In the render controller above, we use an entity property to store the shapes the Shapeshifter can assume. The molang expressions for geometry, materials, and textures tell the game to select a different geometry and texture pair to broadcast to the player, based on the current shape of the Shapeshifter as defined in the behavior entity.json file.
-> [!NOTE]
-> Take a look at [shapeshifter.behavior.json](https://github.com/microsoft/minecraft-samples/tree/main/shapeshifter/behavior_pack/shapeshifter/entities/shapeshifter.behavior.json) in the shapeshifter sample. Notice anything interesting? This is where we define the property mentioned in the render controller called `minecraft:shape`, which sets values for the mobs our Shapeshifter can turn into.
+    ```
+    
+    In the render controller above, we use an entity property to store the shapes the Shapeshifter can assume. The molang expressions for geometry, materials, and textures tell the game to select a different geometry and texture pair to broadcast to the player, based on the current shape of the Shapeshifter as defined in the behavior entity.json file.
+    > [!NOTE]
+    > Take a look at [shapeshifter.behavior.json](https://github.com/microsoft/minecraft-samples/tree/main/shapeshifter/behavior_pack/shapeshifter/entities/shapeshifter.behavior.json) in the shapeshifter sample. Notice anything interesting? This is where we define the property mentioned in the render controller called `minecraft:shape`, which sets values for the mobs our Shapeshifter can turn into.
 
 3. Finally, square off the logic in the entity behavior pack to set the trigger for the entity's transformation and to randomize the new form your shapeshifter takes. You can use the files from our [sample](https://github.com/microsoft/minecraft-samples/tree/main/shapeshifter) as a reference to make sure you're on the right track.
 
