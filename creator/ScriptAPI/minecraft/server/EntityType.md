@@ -19,3 +19,15 @@ Represents information about a type of entity.
 Identifier of this entity type - for example, 'minecraft:skeleton'.
 
 Type: *string*
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **localizationKey**
+`read-only localizationKey: string;`
+
+Key for the localization of this EntityType's name used in .lang files.
+
+Type: *string*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end

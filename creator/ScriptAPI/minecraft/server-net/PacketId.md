@@ -80,6 +80,12 @@ Represents the unique type of network packet.
 `ClientboundCloseFormPacket = "ClientboundCloseFormPacket"`
 ### **ClientboundControlSchemeSetPacket**
 `ClientboundControlSchemeSetPacket = "ClientboundControlSchemeSetPacket"`
+### **ClientboundDataDrivenUICloseAllScreensPacket**
+`ClientboundDataDrivenUICloseAllScreensPacket = "ClientboundDataDrivenUICloseAllScreensPacket"`
+### **ClientboundDataDrivenUIReloadPacket**
+`ClientboundDataDrivenUIReloadPacket = "ClientboundDataDrivenUIReloadPacket"`
+### **ClientboundDataDrivenUIShowScreenPacket**
+`ClientboundDataDrivenUIShowScreenPacket = "ClientboundDataDrivenUIShowScreenPacket"`
 ### **ClientboundDataStorePacket**
 `ClientboundDataStorePacket = "ClientboundDataStorePacket"`
 ### **ClientboundDebugRendererPacket**

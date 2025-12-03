@@ -1133,16 +1133,6 @@
                   "id": "version",
                   "title": "Version",
                   "dataType": 0,
-                  "validity": [
-                    {
-                      "comparison": ">=",
-                      "value": -32768
-                    },
-                    {
-                      "comparison": "<=",
-                      "value": 32767
-                    }
-                  ],
                   "isRequired": true
                 }
               ]
@@ -1167,51 +1157,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "on_bred_array",
-        "title": "Bred Array",
-        "dataType": 24,
-        "defaultValue": [],
-        "alternates": [
-          {
-            "id": "on_bred_array",
-            "dataType": 14,
-            "readOnly": true,
-            "subForm": {
-              "id": "on_bred_array",
-              "title": "Bred Array",
-              "fields": [
-                {
-                  "id": "expression",
-                  "title": "Expression",
-                  "dataType": 2,
-                  "isRequired": true
-                },
-                {
-                  "id": "version",
-                  "title": "Version",
-                  "dataType": 0,
-                  "validity": [
-                    {
-                      "comparison": ">=",
-                      "value": -32768
-                    },
-                    {
-                      "comparison": "<=",
-                      "value": 32767
-                    }
-                  ],
-                  "isRequired": true
-                }
-              ]
-            }
-          },
-          {
-            "id": "on_bred_array",
-            "dataType": 3
-          }
-        ]
       },
       {
         "id": "on_death",
@@ -1241,16 +1186,6 @@
                   "id": "version",
                   "title": "Version",
                   "dataType": 0,
-                  "validity": [
-                    {
-                      "comparison": ">=",
-                      "value": -32768
-                    },
-                    {
-                      "comparison": "<=",
-                      "value": 32767
-                    }
-                  ],
                   "isRequired": true
                 }
               ]
@@ -1417,51 +1352,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "on_death_array",
-        "title": "Death Array",
-        "dataType": 24,
-        "defaultValue": [],
-        "alternates": [
-          {
-            "id": "on_death_array",
-            "dataType": 14,
-            "readOnly": true,
-            "subForm": {
-              "id": "on_death_array",
-              "title": "Death Array",
-              "fields": [
-                {
-                  "id": "expression",
-                  "title": "Expression",
-                  "dataType": 2,
-                  "isRequired": true
-                },
-                {
-                  "id": "version",
-                  "title": "Version",
-                  "dataType": 0,
-                  "validity": [
-                    {
-                      "comparison": ">=",
-                      "value": -32768
-                    },
-                    {
-                      "comparison": "<=",
-                      "value": 32767
-                    }
-                  ],
-                  "isRequired": true
-                }
-              ]
-            }
-          },
-          {
-            "id": "on_death_array",
-            "dataType": 3
-          }
-        ]
       }
     ],
     "samples": {

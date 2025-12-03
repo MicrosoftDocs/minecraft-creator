@@ -21,6 +21,9 @@ Returns whether the Camera is valid to access and use. A Camera is considered va
 Type: *boolean*
 
 ## Methods
+::: moniker range="=minecraft-bedrock-experimental"
+- [attachToEntity](#attachtoentity)
+::: moniker-end
 - [clear](#clear)
 - [fade](#fade)
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -32,6 +35,27 @@ Type: *boolean*
 ::: moniker-end
 - [setDefaultCamera](#setdefaultcamera)
 - [setFov](#setfov)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **attachToEntity**
+`
+attachToEntity(attachCameraOptions?: CameraAttachOptions): void
+`
+
+Attaches the camera to a non-player entity.
+
+#### **Parameters**
+- **attachCameraOptions**?: [*CameraAttachOptions*](CameraAttachOptions.md) = `null`
+  
+  Options for the entity the camera is attaching to. Contains the entity identifier and optional entity location.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+::: moniker-end
 
 ### **clear**
 `

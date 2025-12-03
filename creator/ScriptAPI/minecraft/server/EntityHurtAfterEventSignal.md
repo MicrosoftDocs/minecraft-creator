@@ -17,14 +17,14 @@ Manages callbacks that are connected to when an entity is hurt.
 
 ### **subscribe**
 `
-subscribe(callback: (arg0: EntityHurtAfterEvent) => void, options?: EntityEventOptions): (arg0: EntityHurtAfterEvent) => void
+subscribe(callback: (arg0: EntityHurtAfterEvent) => void, options?: EntityHurtAfterEventOptions): (arg0: EntityHurtAfterEvent) => void
 `
 
 Adds a callback that will be called when an entity is hurt.
 
 #### **Parameters**
 - **callback**: (arg0: [*EntityHurtAfterEvent*](EntityHurtAfterEvent.md)) => *void*
-- **options**?: [*EntityEventOptions*](EntityEventOptions.md) = `null`
+- **options**?: [*EntityHurtAfterEventOptions*](EntityHurtAfterEventOptions.md) = `null`
 
 **Returns** (arg0: [*EntityHurtAfterEvent*](EntityHurtAfterEvent.md)) => *void*
   

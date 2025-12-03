@@ -1,0 +1,93 @@
+{
+  "id": "Bounding Box Data",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Bounding Box Data",
+    "title": "Block Bounding Box Data",
+    "description": "Information for the collision box.",
+    "fields": [
+      {
+        "id": "origin",
+        "title": "Origin",
+        "description": "Minimal position of the bounds of the collision box.",
+        "dataType": 32,
+        "defaultValue": [
+          -8,
+          0,
+          -8
+        ],
+        "alternates": [
+          {
+            "id": "origin",
+            "dataType": 16,
+            "subForm": {
+              "id": "origin",
+              "title": "Origin",
+              "fields": [
+                {
+                  "id": "x",
+                  "title": "X",
+                  "dataType": 3,
+                  "defaultValue": 0
+                },
+                {
+                  "id": "y",
+                  "title": "Y",
+                  "dataType": 3,
+                  "defaultValue": 0
+                },
+                {
+                  "id": "z",
+                  "title": "Z",
+                  "dataType": 3,
+                  "defaultValue": 0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "size",
+        "title": "Size",
+        "description": "Size of each side of the collision box.",
+        "dataType": 32,
+        "defaultValue": [
+          16,
+          16,
+          16
+        ],
+        "alternates": [
+          {
+            "id": "size",
+            "dataType": 16,
+            "subForm": {
+              "id": "size",
+              "title": "Size",
+              "fields": [
+                {
+                  "id": "x",
+                  "title": "X",
+                  "dataType": 3,
+                  "defaultValue": 0
+                },
+                {
+                  "id": "y",
+                  "title": "Y",
+                  "dataType": 3,
+                  "defaultValue": 0
+                },
+                {
+                  "id": "z",
+                  "title": "Z",
+                  "dataType": 3,
+                  "defaultValue": 0
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

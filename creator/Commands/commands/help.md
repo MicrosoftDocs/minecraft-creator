@@ -137,6 +137,7 @@ Controls what mob events are allowed to run.
 Allows you to control playing music tracks.
 - `op`
 Grants operator status to a player.
+- `packstack`
 - `particle`
 Creates a particle emitter.
 - `reload`

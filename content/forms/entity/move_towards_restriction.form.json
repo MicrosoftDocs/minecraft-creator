@@ -1,0 +1,29 @@
+{
+  "id": "minecraft:behavior.move_towards_restriction",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.move_towards_restriction",
+    "title": "Entity Move Towards Restriction Behavior",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": []
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "This multiplier modifies the entity's speed when moving towards its restriction.",
+        "dataType": 3,
+        "defaultValue": 1
+      }
+    ]
+  }
+}

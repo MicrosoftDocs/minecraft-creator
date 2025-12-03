@@ -121,12 +121,6 @@
         "title": "Value",
         "description": "Specifies the value of the enchantment (minimum of 0).",
         "dataType": 0,
-        "validity": [
-          {
-            "comparison": "<=",
-            "value": 32767
-          }
-        ],
         "isRequired": true
       }
     ]

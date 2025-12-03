@@ -41,8 +41,10 @@ Type: *number*
 
 ## Methods
 - [constructor](#(constructor))
+- [applySetting](#applysetting)
 - [createSettingsPane](#createsettingspane)
 - [createShape](#createshape)
+- [getSettings](#getsettings)
 
 ### **constructor**
 `
@@ -78,6 +80,16 @@ Constructs a new instance of the `CylinderBrushShape` class
 
 **Returns** *CylinderBrushShape*
 
+### **applySetting**
+`
+applySetting(brushSettings: CylinderBrushShapeSettings): void
+`
+
+#### **Parameters**
+- **brushSettings**: *CylinderBrushShapeSettings*
+
+**Returns** *void*
+
 ### **createSettingsPane**
 `
 createSettingsPane(parentPane: IPropertyPane, onSettingsChange?: () => void): ISubPanePropertyItem
@@ -95,3 +107,10 @@ createShape(): RelativeVolumeListBlockVolume
 `
 
 **Returns** *RelativeVolumeListBlockVolume*
+
+### **getSettings**
+`
+getSettings(): CylinderBrushShapeSettings
+`
+
+**Returns** *CylinderBrushShapeSettings*

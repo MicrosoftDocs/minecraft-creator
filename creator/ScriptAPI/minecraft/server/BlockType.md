@@ -19,3 +19,15 @@ The type (or template) of a block. Does not contain permutation data (state) oth
 Block type name - for example, `minecraft:acacia_stairs`.
 
 Type: *string*
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **localizationKey**
+`read-only localizationKey: string;`
+
+Key for the localization of this BlockType's name used in .lang files.
+
+Type: *string*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end

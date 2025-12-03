@@ -31,7 +31,7 @@
       {
         "id": "on_end",
         "title": "End",
-        "description": "Event(s) to run when the goal end.",
+        "description": "Event(s) to run when the goal ends.",
         "dataType": 22,
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [

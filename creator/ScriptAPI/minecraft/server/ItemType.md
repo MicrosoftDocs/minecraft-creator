@@ -19,3 +19,15 @@ Represents the type of an item - for example, Wool.
 Returns the identifier of the item type - for example, 'minecraft:apple'.
 
 Type: *string*
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **localizationKey**
+`read-only localizationKey: string;`
+
+Key for the localization of this ItemType's name used in .lang files.
+
+Type: *string*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end

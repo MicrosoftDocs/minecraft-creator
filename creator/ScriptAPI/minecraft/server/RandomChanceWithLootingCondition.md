@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.RandomChanceWithLootingCondition Class
 description: Contents of the @minecraft/server.RandomChanceWithLootingCondition class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # RandomChanceWithLootingCondition Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*LootItemCondition*](LootItemCondition.md)

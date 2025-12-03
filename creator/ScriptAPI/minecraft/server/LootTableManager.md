@@ -17,12 +17,8 @@ Manager for Loot Table related APIs. Allows for generation of drops from blocks 
 - [generateLootFromBlockType](#generatelootfromblocktype)
 - [generateLootFromEntity](#generatelootfromentity)
 - [generateLootFromEntityType](#generatelootfromentitytype)
-::: moniker range="=minecraft-bedrock-experimental"
 - [generateLootFromTable](#generatelootfromtable)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [getLootTable](#getloottable)
-::: moniker-end
 
 ### **generateLootFromBlock**
 `
@@ -109,7 +105,6 @@ Generates loot from given a entity type as if it had been killed.
 
 **Returns** [*ItemStack*](ItemStack.md)[] | *undefined* - An array of item stacks dropped from the loot drop event. Can be empty if no loot dropped.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **generateLootFromTable**
 `
 generateLootFromTable(lootTable: LootTable, tool?: ItemStack): ItemStack[] | undefined
@@ -125,11 +120,6 @@ Generates loot from a given LootTable.
 
 **Returns** [*ItemStack*](ItemStack.md)[] | *undefined* - An array of item stacks dropped from the loot drop event. Can be empty if no loot dropped, or undefined if the provided tool is insufficient to mine the block.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getLootTable**
 `
 getLootTable(path: string): LootTable | undefined
@@ -143,7 +133,3 @@ Retrieves a single loot table from the level's current registry.
   Path to the table to retrieve. Does not include file extension, or 'loot_tables/' folder prefix. Example: `entities/creeper`.
 
 **Returns** [*LootTable*](LootTable.md) | *undefined* - Returns a LootTable if one is found, or `undefined` if the provided path does not correspond to an existing loot table.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end

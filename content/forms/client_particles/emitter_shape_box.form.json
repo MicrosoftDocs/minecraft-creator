@@ -33,16 +33,6 @@
                       "id": "version",
                       "title": "Version",
                       "dataType": 0,
-                      "validity": [
-                        {
-                          "comparison": ">=",
-                          "value": -32768
-                        },
-                        {
-                          "comparison": "<=",
-                          "value": 32767
-                        }
-                      ],
                       "isRequired": true
                     }
                   ]
@@ -81,16 +71,6 @@
                   "id": "version",
                   "title": "Version",
                   "dataType": 0,
-                  "validity": [
-                    {
-                      "comparison": ">=",
-                      "value": -32768
-                    },
-                    {
-                      "comparison": "<=",
-                      "value": 32767
-                    }
-                  ],
                   "isRequired": true
                 }
               ]
@@ -133,16 +113,6 @@
                   "id": "version",
                   "title": "Version",
                   "dataType": 0,
-                  "validity": [
-                    {
-                      "comparison": ">=",
-                      "value": -32768
-                    },
-                    {
-                      "comparison": "<=",
-                      "value": 32767
-                    }
-                  ],
                   "isRequired": true
                 }
               ]

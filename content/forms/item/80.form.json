@@ -107,13 +107,7 @@
                   "title": "Value",
                   "description": "Specifies how much extra damage the item does, must be a positive number.",
                   "dataType": 0,
-                  "defaultValue": 0,
-                  "validity": [
-                    {
-                      "comparison": "<=",
-                      "value": 32767
-                    }
-                  ]
+                  "defaultValue": 0
                 }
               ]
             }

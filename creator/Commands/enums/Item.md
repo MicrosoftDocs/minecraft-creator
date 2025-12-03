@@ -3608,14 +3608,14 @@ Hoglin Spawn Egg
 Magma Cube Spawn Egg
 - `magma_cube_spawn_egg`
 Magma Cube Spawn Egg
-- `minecraft:piglin_brute_spawn_egg`
-Piglin Brute Spawn Egg
-- `piglin_brute_spawn_egg`
-Piglin Brute Spawn Egg
 - `minecraft:piglin_spawn_egg`
 Piglin Spawn Egg
 - `piglin_spawn_egg`
 Piglin Spawn Egg
+- `minecraft:piglin_brute_spawn_egg`
+Piglin Brute Spawn Egg
+- `piglin_brute_spawn_egg`
+Piglin Brute Spawn Egg
 - `minecraft:strider_spawn_egg`
 Strider Spawn Egg
 - `strider_spawn_egg`
