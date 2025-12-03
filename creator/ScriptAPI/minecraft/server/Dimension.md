@@ -38,6 +38,9 @@ Key for the localization of a dimension's name used by language files.
 Type: *string*
 
 ## Methods
+::: moniker range="=minecraft-bedrock-experimental"
+- [containsBiomes](#containsbiomes)
+::: moniker-end
 - [containsBlock](#containsblock)
 - [createExplosion](#createexplosion)
 - [fillBlocks](#fillblocks)
@@ -79,6 +82,32 @@ Type: *string*
 ::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [stopSound](#stopsound)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **containsBiomes**
+`
+containsBiomes(volume: BlockVolumeBase, biomeFilter: BiomeFilter): boolean
+`
+
+Checks if an area contains the specified biomes. If the area is partially inside world boundaries, only the area that is in bounds will be searched. This operation takes longer proportional to both the area of the volume and the number of biomes to check.
+
+#### **Parameters**
+- **volume**: [*BlockVolumeBase*](BlockVolumeBase.md)
+  
+  Area to check biomes in.
+- **biomeFilter**: [*BiomeFilter*](BiomeFilter.md)
+  
+  A list of biomes to include and exclude. A list of tags to include and exclude. Will return false if a biome is found in the area that is in the excluded list or contains any of the excluded tags. If superset is set to true then the area must contain at least one biome in the included list or that contains all of the included tags. If superset is set to false then the area must contain only biomes in the included list and that contain all of the included tags
+
+**Returns** *boolean* - Returns true if the biomes in the area match the filter settings passed in. Otherwise, returns false.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md), [*UnloadedChunksError*](UnloadedChunksError.md)
 ::: moniker-end
 
 ### **containsBlock**

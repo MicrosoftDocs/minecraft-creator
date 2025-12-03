@@ -1,0 +1,72 @@
+{
+  "id": "minecraft:behavior.guardian_attack",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.guardian_attack",
+    "title": "Entity Guardian Attack Behavior",
+    "description": "Allows this entity to use a laser beam attack. Can only be used by Guardians and Elder Guardians.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": []
+      },
+      {
+        "id": "elder_extra_magic_damage",
+        "title": "Elder Extra Magic Damage",
+        "description": "Amount of additional damage dealt from an elder guardian's magic attack.",
+        "dataType": 0,
+        "defaultValue": 2
+      },
+      {
+        "id": "hard_mode_extra_magic_damage",
+        "title": "Hard Mode Extra Magic Damage",
+        "description": "In hard difficulty, amount of additional damage dealt from a guardian's magic attack.",
+        "dataType": 0,
+        "defaultValue": 2
+      },
+      {
+        "id": "magic_damage",
+        "title": "Magic Damage",
+        "description": "Amount of damage dealt from a guardian's magic attack. Magic attack damage is added to the guardian's base attack damage.",
+        "dataType": 0,
+        "defaultValue": 1
+      },
+      {
+        "id": "min_distance",
+        "title": "Min Distance",
+        "description": "Guardian attack behavior stops if the target is closer than this distance (doesn't apply to elders).",
+        "dataType": 3,
+        "defaultValue": 3
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "sound_delay_time",
+        "title": "Sound Delay Time",
+        "description": "Time (in seconds) to wait after starting an attack before playing the guardian attack sound.",
+        "dataType": 3,
+        "defaultValue": 0.5
+      },
+      {
+        "id": "x_max_rotation",
+        "title": "x Max Rotation",
+        "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target.",
+        "dataType": 3,
+        "defaultValue": 90
+      },
+      {
+        "id": "y_max_head_rotation",
+        "title": "y Max Head Rotation",
+        "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target.",
+        "dataType": 3,
+        "defaultValue": 90
+      }
+    ]
+  }
+}

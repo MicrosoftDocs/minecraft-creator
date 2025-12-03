@@ -38,8 +38,10 @@ Type: *string*
 
 ## Methods
 - [constructor](#(constructor))
+- [applySetting](#applysetting)
 - [createSettingsPane](#createsettingspane)
 - [createShape](#createshape)
+- [getSettings](#getsettings)
 
 ### **constructor**
 `
@@ -54,6 +56,16 @@ Constructs a new instance of the `BrushShape` class
 - **_icon**: *string*
 
 **Returns** *BrushShape*
+
+### **applySetting**
+`
+applySetting(brushSettings: BrushShapeSettings): void
+`
+
+#### **Parameters**
+- **brushSettings**: *BrushShapeSettings*
+
+**Returns** *void*
 
 ### **createSettingsPane**
 `
@@ -72,3 +84,10 @@ createShape(): RelativeVolumeListBlockVolume
 `
 
 **Returns** *RelativeVolumeListBlockVolume*
+
+### **getSettings**
+`
+getSettings(): BrushShapeSettings
+`
+
+**Returns** *BrushShapeSettings*

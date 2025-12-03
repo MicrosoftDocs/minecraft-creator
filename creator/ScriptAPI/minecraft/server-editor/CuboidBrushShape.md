@@ -14,8 +14,10 @@ description: Contents of the @minecraft/server-editor.CuboidBrushShape class.
 
 ## Methods
 - [constructor](#(constructor))
+- [applySetting](#applysetting)
 - [createSettingsPane](#createsettingspane)
 - [createShape](#createshape)
+- [getSettings](#getsettings)
 
 ### **constructor**
 `
@@ -49,6 +51,16 @@ Constructs a new instance of the `CuboidBrushShape` class
 
 **Returns** *CuboidBrushShape*
 
+### **applySetting**
+`
+applySetting(brushSettings: CuboidBrushShapeSettings): void
+`
+
+#### **Parameters**
+- **brushSettings**: *CuboidBrushShapeSettings*
+
+**Returns** *void*
+
 ### **createSettingsPane**
 `
 createSettingsPane(parentPane: IPropertyPane, onSettingsChange?: () => void): ISubPanePropertyItem
@@ -66,3 +78,10 @@ createShape(): RelativeVolumeListBlockVolume
 `
 
 **Returns** *RelativeVolumeListBlockVolume*
+
+### **getSettings**
+`
+getSettings(): CuboidBrushShapeSettings
+`
+
+**Returns** *CuboidBrushShapeSettings*

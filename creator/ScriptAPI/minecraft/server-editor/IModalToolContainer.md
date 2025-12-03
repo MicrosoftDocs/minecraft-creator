@@ -18,6 +18,13 @@ Tools within this container.
 
 Type: *IModalTool*[]
 
+### **onSelectedToolChanged**
+`onSelectedToolChanged: EventSink<SelectedModalToolChangedEventPayload>;`
+
+Provides events when the selected modal tool changes.
+
+Type: *EventSink<SelectedModalToolChangedEventPayload>*
+
 ## Methods
 - [addTool](#addtool)
 - [focusToolInputContext](#focustoolinputcontext)

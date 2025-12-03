@@ -16,6 +16,7 @@ description: Contents of the @minecraft/server.BlockEvent class.
 - [*BlockComponentPlayerInteractEvent*](BlockComponentPlayerInteractEvent.md)
 - [*BlockComponentPlayerPlaceBeforeEvent*](BlockComponentPlayerPlaceBeforeEvent.md)
 - [*BlockComponentRandomTickEvent*](BlockComponentRandomTickEvent.md)
+- [*BlockComponentRedstoneUpdateEvent*](BlockComponentRedstoneUpdateEvent.md)
 - [*BlockComponentStepOffEvent*](BlockComponentStepOffEvent.md)
 - [*BlockComponentStepOnEvent*](BlockComponentStepOnEvent.md)
 - [*BlockComponentTickEvent*](BlockComponentTickEvent.md)
@@ -31,7 +32,7 @@ description: Contents of the @minecraft/server.BlockEvent class.
 - [*TargetBlockHitAfterEvent*](TargetBlockHitAfterEvent.md)
 - [*TripWireTripAfterEvent*](TripWireTripAfterEvent.md)
 - [*BlockComponentBlockBreakEvent*](BlockComponentBlockBreakEvent.md)
-- [*BlockComponentRedstoneUpdateEvent*](BlockComponentRedstoneUpdateEvent.md)
+- [*BlockComponentEntityEvent*](BlockComponentEntityEvent.md)
 - [*PlayerPlaceBlockBeforeEvent*](PlayerPlaceBlockBeforeEvent.md)
 
 Contains information regarding an event that impacts a specific block.

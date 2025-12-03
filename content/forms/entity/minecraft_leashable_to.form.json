@@ -87,12 +87,6 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/dolphin.json": [
-        {
-          "path": "/minecraft:entity/component_groups/dolphin_adult/minecraft:leashable_to/",
-          "content": {}
-        }
-      ],
       "/vanilla/behavior_pack/entities/donkey.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:donkey_adult/minecraft:leashable_to/",

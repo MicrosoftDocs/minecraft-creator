@@ -46,6 +46,7 @@ description: List and descriptions of Minecraft commands and enums
 | [`/mobevent`](./commands/mobevent.md) | Controls what mob events are allowed to run. | Game Directors | Yes |
 | [`/music`](./commands/music.md) | Allows you to control playing music tracks. | Game Directors | Yes |
 | [`/op`](./commands/op.md) | Grants operator status to a player. | Admin | No |
+| [`/packstack`](./commands/packstack.md) | Prints client or server pack stack to chat | Any | No |
 | [`/particle`](./commands/particle.md) | Creates a particle emitter | Game Directors | Yes |
 | [`/permission`](./commands/permission.md) | Reloads and applies permissions. This command is for use on a dedicated server only. | Owner | Yes |
 | [`/place`](./commands/place.md) | Places a jigsaw structure, feature, or feature rule in the world. | Admin | Yes |

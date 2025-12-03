@@ -80,11 +80,9 @@
           ],
           "/vanilla/behavior_pack/entities/nautilus.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:on_unsaddled/sequence/0/filters/",
+              "path": "/minecraft:entity/events/minecraft:on_saddled/sequence/0/filters/",
               "content": ">"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+            },
             {
               "path": "/minecraft:entity/events/minecraft:on_unsaddled/sequence/0/filters/",
               "content": ">"
@@ -252,6 +250,15 @@
           }
         },
         {
+          "path": "/minecraft:entity/events/minecraft:on_saddled/sequence/0/filters/",
+          "content": {
+            "test": "rider_count",
+            "subject": "self",
+            "operator": ">",
+            "value": 0
+          }
+        },
+        {
           "path": "/minecraft:entity/events/minecraft:on_unsaddled/sequence/0/filters/",
           "content": {
             "test": "rider_count",
@@ -310,6 +317,15 @@
             "test": "rider_count",
             "subject": "self",
             "operator": "equals",
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_saddled/sequence/0/filters/",
+          "content": {
+            "test": "rider_count",
+            "subject": "self",
+            "operator": ">",
             "value": 0
           }
         },

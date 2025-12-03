@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.LootTable Class
 description: Contents of the @minecraft/server.LootTable class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # LootTable Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Represents a single Loot Table, which determines what items are generated when killing a mob, breaking a block, filling a container, and more.
 

@@ -198,7 +198,7 @@ A BlockRule is a predicate (i.e. test) applied to each block in the structure te
 
 The `"predicate_type"` of BlockRule specifies the type of test applied to each block. 
 
-It can be one of the following: [minecraft:always_true](#minecraftalways_true), [minecraft:block_match](#minecraftblock_match), [minecraft:random_block_match](#minecraftrandom_block_match), [minecraft:block_state_match](#minecraftblock_state_match), [minecraft:random_block_state_match](#minecraftrandom_block_state_match) and [minecraft:tag_match](#minecrafttag_match).
+It can be one of the following: [minecraft:always_true](#minecraftalways_true), [minecraft:block_match](#minecraftblock_match), [minecraft:random_block_match](#minecraftrandom_block_match), [minecraft:blockstate_match](#minecraftblockstate_match), [minecraft:random_blockstate_match](#minecraftrandom_blockstate_match) and [minecraft:tag_match](#minecrafttag_match).
 
 See [rule](#rule) to understand where it's used.
 
@@ -250,35 +250,35 @@ The `"probability"` defines how likely the block wil be replaced if matched.
 }
 ```
 
-### minecraft:block_state_match
+### minecraft:blockstate_match
 The block will be matched based on it's [BlockSpecifier](#blockspecifier).
 
-#### block_state_match Properties
+#### blockstate_match Properties
 |Name       | Requirement Status | Description | Example |
 |:----------|:-----------|:-----------|:------------- |
 | block_state |Required| [BlockSpecifier](#blockspecifier) to match with. | `"block_state": <BlockSpecifier` |
 ```json
 {
-  "predicate_type": "minecraft:random_block_match",
+  "predicate_type": "minecraft:random_blockstate_match",
   "block_state": <BlockSpecifier>
 }
 ```
 
-### minecraft:random_block_state_match
+### minecraft:random_blockstate_match
 The block will be matched based on it's [BlockSpecifier](#blockspecifier).
 The `"probability"` defines how likely the block wil be replaced if matched.
 
 >[!NOTE]
-> Use `minecraft:block_state_match` if it should always be replaced if matched.
+> Use `minecraft:blockstate_match` if it should always be replaced if matched.
 
-#### random_block_state_match Properties
+#### random_blockstate_match Properties
 |Name       | Requirement Status| Description | Example |
 |:----------|:-----------|:-----------|:------------- |
 | block_state |Required| [BlockSpecifier](#blockspecifier) to match with. | `"block_state": <BlockSpecifier` |
 | probability |Required| Must be between `[0, 1]` | `"probability": <Number>` |
 ```json
 {
-  "predicate_type": "minecraft:random_block_match",
+  "predicate_type": "minecraft:random_blockstate_match",
   "block_state": <BlockSpecifier,
   "probability": <Number>
 }

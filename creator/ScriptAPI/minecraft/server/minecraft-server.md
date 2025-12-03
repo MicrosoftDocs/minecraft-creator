@@ -17,13 +17,14 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "2.3.0"
+    "version": "2.4.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.21.130-beta.27 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.0-beta.24 of Minecraft.
 
 ## Available Versions
-- `2.5.0-beta`
+- `2.6.0-beta`
+- `2.4.0`
 - `2.3.0`
 - `2.2.0`
 - `2.1.0`
@@ -77,8 +78,10 @@ The following API versions are from a major version that is documented here: [*@
 - [DyeColor](DyeColor.md)
 - [EasingType](EasingType.md)
 - [EnchantmentSlot](EnchantmentSlot.md)
+- [EntityAttachPoint](EntityAttachPoint.md)
 - [EntityComponentTypes](EntityComponentTypes.md)
 - [EntityDamageCause](EntityDamageCause.md)
+- [EntityHealCause](EntityHealCause.md)
 - [EntityInitializationCause](EntityInitializationCause.md)
 - [EntitySwingSource](EntitySwingSource.md)
 - [EquipmentSlot](EquipmentSlot.md)
@@ -142,6 +145,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockBoundingBoxUtils](BlockBoundingBoxUtils.md)
 - [BlockComponent](BlockComponent.md)
 - [BlockComponentBlockBreakEvent](BlockComponentBlockBreakEvent.md)
+- [BlockComponentEntityEvent](BlockComponentEntityEvent.md)
 - [BlockComponentEntityFallOnEvent](BlockComponentEntityFallOnEvent.md)
 - [BlockComponentOnPlaceEvent](BlockComponentOnPlaceEvent.md)
 - [BlockComponentPlayerBreakEvent](BlockComponentPlayerBreakEvent.md)
@@ -235,6 +239,11 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityHasMarkVariantCondition](EntityHasMarkVariantCondition.md)
 - [EntityHasVariantCondition](EntityHasVariantCondition.md)
 - [EntityHealableComponent](EntityHealableComponent.md)
+- [EntityHealAfterEvent](EntityHealAfterEvent.md)
+- [EntityHealAfterEventSignal](EntityHealAfterEventSignal.md)
+- [EntityHealBeforeEvent](EntityHealBeforeEvent.md)
+- [EntityHealBeforeEventSignal](EntityHealBeforeEventSignal.md)
+- [EntityHealSource](EntityHealSource.md)
 - [EntityHealthChangedAfterEvent](EntityHealthChangedAfterEvent.md)
 - [EntityHealthChangedAfterEventSignal](EntityHealthChangedAfterEventSignal.md)
 - [EntityHealthComponent](EntityHealthComponent.md)
@@ -245,6 +254,8 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityHungerComponent](EntityHungerComponent.md)
 - [EntityHurtAfterEvent](EntityHurtAfterEvent.md)
 - [EntityHurtAfterEventSignal](EntityHurtAfterEventSignal.md)
+- [EntityHurtBeforeEvent](EntityHurtBeforeEvent.md)
+- [EntityHurtBeforeEventSignal](EntityHurtBeforeEventSignal.md)
 - [EntityInventoryComponent](EntityInventoryComponent.md)
 - [EntityIsBabyComponent](EntityIsBabyComponent.md)
 - [EntityIsChargedComponent](EntityIsChargedComponent.md)
@@ -511,6 +522,7 @@ The following API versions are from a major version that is documented here: [*@
 ## Interfaces
 - [AABB](AABB.md)
 - [AnimationOptions](AnimationOptions.md)
+- [BiomeFilter](BiomeFilter.md)
 - [BiomeSearchOptions](BiomeSearchOptions.md)
 - [BlockBoundingBox](BlockBoundingBox.md)
 - [BlockCustomComponent](BlockCustomComponent.md)
@@ -520,6 +532,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockHitInformation](BlockHitInformation.md)
 - [BlockRaycastHit](BlockRaycastHit.md)
 - [BlockRaycastOptions](BlockRaycastOptions.md)
+- [CameraAttachOptions](CameraAttachOptions.md)
 - [CameraFadeOptions](CameraFadeOptions.md)
 - [CameraFadeTimeOptions](CameraFadeTimeOptions.md)
 - [CameraFixedBoomOptions](CameraFixedBoomOptions.md)
@@ -545,7 +558,10 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityEffectOptions](EntityEffectOptions.md)
 - [EntityEventOptions](EntityEventOptions.md)
 - [EntityFilter](EntityFilter.md)
+- [EntityHealEventOptions](EntityHealEventOptions.md)
 - [EntityHitInformation](EntityHitInformation.md)
+- [EntityHurtAfterEventOptions](EntityHurtAfterEventOptions.md)
+- [EntityHurtBeforeEventOptions](EntityHurtBeforeEventOptions.md)
 - [EntityQueryOptions](EntityQueryOptions.md)
 - [EntityQueryPropertyOptions](EntityQueryPropertyOptions.md)
 - [EntityQueryScoreOptions](EntityQueryScoreOptions.md)

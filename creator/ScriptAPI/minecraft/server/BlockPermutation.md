@@ -13,6 +13,18 @@ Contains the combination of type [*@minecraft/server.BlockType*](../../../script
 
 ## Properties
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **localizationKey**
+`read-only localizationKey: string;`
+
+Key for the localization of this BlockPermutation's name used in .lang files.
+
+Type: *string*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **type**
 `read-only type: BlockType;`
 

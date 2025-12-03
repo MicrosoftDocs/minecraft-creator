@@ -24,6 +24,13 @@ Value to denote how far along the curve the camera will be. Values are [0.0, 1.0
 
 Type: *number*
 
+### **easingFunc**
+`easingFunc?: EasingType;`
+
+The optional easing type that the frame will use for position.
+
+Type: [*EasingType*](EasingType.md)
+
 ### **timeSeconds**
 `timeSeconds: number;`
 

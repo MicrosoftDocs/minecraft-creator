@@ -11,17 +11,7 @@
         "title": "Max Duration",
         "description": "Time, in ticks, during which the effect can be applied after \"delay\" elapses. If negative, the effect is applied indefinitely.",
         "dataType": 0,
-        "defaultValue": -1,
-        "validity": [
-          {
-            "comparison": ">=",
-            "value": -32768
-          },
-          {
-            "comparison": "<=",
-            "value": 32767
-          }
-        ]
+        "defaultValue": -1
       },
       {
         "id": "min_relative_speed",

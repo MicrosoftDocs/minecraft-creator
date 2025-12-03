@@ -19,7 +19,7 @@ Fires an event when this behavior starts, then waits for a duration before stopp
 | control_flags | *not set* | Array of strings |  | Sniffer: `["move","look"]` | 
 | cooldown_range | *not set* | Range of integers | Goal cooldown range in seconds. If specified, the cooldown will have to elapse even before the goal can be selected for the first time. | Armadillo: `2.5`, Sniffer: `[400,500]` | 
 | duration_range | *not set* | Range of integers | Goal duration range in seconds. | Armadillo: `[5,20]`, `1.5`, Bee: `[0.05,0.05]` | 
-| on_end | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event(s) to run when the goal end. | Armadillo: `{"event":"minecraft:start_peeking"}`, Bee: `{"event":"minecraft:on_poison_effect_added","target":"self"}`, `{"event":"minecraft:on_wither_effect_added","target":"self"}` | 
+| on_end | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event(s) to run when the goal ends. | Armadillo: `{"event":"minecraft:start_peeking"}`, Bee: `{"event":"minecraft:on_poison_effect_added","target":"self"}`, `{"event":"minecraft:on_wither_effect_added","target":"self"}` | 
 | on_start | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event(s) to run when the goal starts. | Armadillo: `{"event":"minecraft:stop_peeking"}`, `{"event":"minecraft:start_unrolling"}` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Sniffer: `6` | 
 

@@ -46,6 +46,7 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 - [addLink](#addlink)
 - [addListPane](#addlistpane)
 - [addMenu](#addmenu)
+- [addMinimap](#addminimap)
 - [addNumber](#addnumber)
 - [addNumberTimeline](#addnumbertimeline)
 - [addProgressIndicator](#addprogressindicator)
@@ -257,6 +258,19 @@ Adds a menu button property item to the pane.
 - **options**?: *IMenuPropertyItemOptions*
 
 **Returns** *IMenuPropertyItem*
+
+### **addMinimap**
+`
+addMinimap(mapId: string, options?: IMinimapPropertyItemOptions): IMinimapPropertyItem
+`
+
+Adds Map item to the pane.
+
+#### **Parameters**
+- **mapId**: *string*
+- **options**?: *IMinimapPropertyItemOptions*
+
+**Returns** *IMinimapPropertyItem*
 
 ### **addNumber**
 `

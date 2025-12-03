@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.PotionEffectType Class
 description: Contents of the @minecraft/server.PotionEffectType class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PotionEffectType Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Represents a type of potion effect - like healing or leaping.
 

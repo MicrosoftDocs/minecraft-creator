@@ -42,6 +42,8 @@ Type of item that can be added to the property pane
 `ListPane = editorUI:ListPane`
 ### **Menu**
 `Menu = editorUI:Menu`
+### **Minimap**
+`Minimap = editorUI:Minimap`
 ### **Number**
 `Number = editorUI:Number`
 ### **NumberTimeline**

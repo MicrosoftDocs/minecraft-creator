@@ -20,12 +20,6 @@
         "isRequired": true
       },
       {
-        "id": "mOrderedV1CustomComponents",
-        "title": "mOrderedV1CustomComponents",
-        "dataType": 17,
-        "defaultValue": []
-      },
-      {
         "id": "permutations",
         "title": "Permutations",
         "dataType": 16,

@@ -20,7 +20,7 @@ Allows an item to deal kinetic damage and its effects. This happens every tick w
 | damage_conditions | *not set* | [Damage Conditions](#item-components-kinetic-weapon-kinetic-effect-conditions) item | Conditions that need to be satisfied for damage to be applied. If not specified, damage is not applied. |  | 
 | damage_modifier | 0 | Decimal number | Value added to the the scaled dot product (after applying "damage_multiplier"). |  | 
 | damage_multiplier | 1 | Decimal number | Value multiplied to sum of the dot products of the user and target's velocity vectors projected onto the view vector. |  | 
-| delay | 0 | Integer number | Time, in ticks, after which kinetic damage and its effects start being applied. Value must be >= -32768. Value must be <= 32767. |  | 
+| delay | 0 | Integer number | Time, in ticks, after which kinetic damage and its effects start being applied. |  | 
 | dismount_conditions | *not set* | [Dismount Conditions](#item-components-kinetic-weapon-kinetic-effect-conditions) item | Conditions that need to be satisfied for riders to be dismounted. If not specified, riders cannot be dismounted. |  | 
 | hitbox_margin | 0 | Decimal number | Added tolerance to the view vector raycast for detecting entity collisions. |  | 
 | knockback_conditions | *not set* | [Knockback Conditions](#item-components-kinetic-weapon-kinetic-effect-conditions) item | Conditions that need to be satisfied for knockback to be applied. If not specified, knockback is not applied. |  | 
@@ -43,6 +43,6 @@ Conditions that need to be satisfied for a specific effect of a kinetic weapon t
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| max_duration | -1 | Integer number | Time, in ticks, during which the effect can be applied after "delay" elapses. If negative, the effect is applied indefinitely. Value must be >= -32768. Value must be <= 32767. |  | 
+| max_duration | -1 | Integer number | Time, in ticks, during which the effect can be applied after "delay" elapses. If negative, the effect is applied indefinitely. |  | 
 | min_relative_speed | 0 | Decimal number | Minimum relative speed of the user with respect to the target (projected onto the view vector via a dot product) required for the effect to be applied. |  | 
 | min_speed | 0 | Decimal number | Minimum user's speed (projected onto the view vector via a dot product) required for the effect to be applied. |  | 

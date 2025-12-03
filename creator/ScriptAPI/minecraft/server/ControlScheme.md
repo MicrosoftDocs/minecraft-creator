@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.ControlScheme Enumeration
 description: Contents of the @minecraft/server.ControlScheme enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ControlScheme Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Control Scheme types which define how the player moves in response to player inputs.
 
