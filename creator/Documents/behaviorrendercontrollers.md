@@ -141,9 +141,6 @@ Now that you've successfully created a custom entity, try adding further complex
 ### See Also
 
 - [Scripting with TypeScript](/creator/Documents/scripting/next-steps.md)
-
 - [Molang Query Functions](/creator/Reference/Content/MolangReference/Examples/MolangConcepts/QueryFunctions.md)
-
 - [Molang Math Functions](/creator/Reference/Content/MolangReference/Examples/MolangConcepts/MathFunctions.md)
-
 - [Molang Syntax Guide](/creator/Documents/molang/syntax-guide.md)
