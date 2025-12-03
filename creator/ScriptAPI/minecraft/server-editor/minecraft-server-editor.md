@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.21.130-beta.27 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.0-beta.24 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -66,6 +66,8 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.130
 - [ListPaneEntryType](ListPaneEntryType.md)
 - [ListPaneViewSortType](ListPaneViewSortType.md)
 - [LogChannel](LogChannel.md)
+- [MinimapMarkerType](MinimapMarkerType.md)
+- [MinimapViewType](MinimapViewType.md)
 - [ModalDialogResponseType](ModalDialogResponseType.md)
 - [ModalDialogType](ModalDialogType.md)
 - [MouseActionCategory](MouseActionCategory.md)
@@ -99,6 +101,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.130
 - [ActivationFunctionType](ActivationFunctionType.md)
 - [AudioSettingsPropertyTypeMap](AudioSettingsPropertyTypeMap.md)
 - [BasicTooltipContent](BasicTooltipContent.md)
+- [BrushShapeSettings](BrushShapeSettings.md)
 - [ButtonPropertyItemSupportedActionTypes](ButtonPropertyItemSupportedActionTypes.md)
 - [ContinuousAction](ContinuousAction.md)
 - [EventHandler](EventHandler.md)
@@ -136,6 +139,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.130
 - [PropertyPaneVisibilityUpdate](PropertyPaneVisibilityUpdate.md)
 - [Ray](Ray.md)
 - [RegisteredAction](RegisteredAction.md)
+- [SelectedModalToolChangedEventPayload](SelectedModalToolChangedEventPayload.md)
 - [ShutdownFunctionType](ShutdownFunctionType.md)
 - [SpeedSettingsPropertyTypeMap](SpeedSettingsPropertyTypeMap.md)
 - [StatefulAction](StatefulAction.md)
@@ -186,6 +190,8 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.130
 - [IBlockPaletteItem](IBlockPaletteItem.md)
 - [Logger](Logger.md)
 - [MinecraftEditor](MinecraftEditor.md)
+- [MinimapItem](MinimapItem.md)
+- [MinimapManager](MinimapManager.md)
 - [ModeChangeAfterEvent](ModeChangeAfterEvent.md)
 - [ModeChangeAfterEventSignal](ModeChangeAfterEventSignal.md)
 - [NumberLimitObservableValidator](NumberLimitObservableValidator.md)
@@ -244,11 +250,15 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.130
 - [BlockMaskList](BlockMaskList.md)
 - [BuiltInUIManager](BuiltInUIManager.md)
 - [ClipboardWriteOptions](ClipboardWriteOptions.md)
+- [ConeBrushShapeSettings](ConeBrushShapeSettings.md)
 - [ContiguousSelectionProperties](ContiguousSelectionProperties.md)
+- [CuboidBrushShapeSettings](CuboidBrushShapeSettings.md)
 - [CursorPosition](CursorPosition.md)
 - [CursorProperties](CursorProperties.md)
 - [CursorRay](CursorRay.md)
+- [CylinderBrushShapeSettings](CylinderBrushShapeSettings.md)
 - [EditorStructureSearchOptions](EditorStructureSearchOptions.md)
+- [EllipsoidBrushShapeSettings](EllipsoidBrushShapeSettings.md)
 - [EventSink](EventSink.md)
 - [ExtensionOptionalParameters](ExtensionOptionalParameters.md)
 - [GameOptions](GameOptions.md)
@@ -301,6 +311,8 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.130
 - [IMenuCreationParams](IMenuCreationParams.md)
 - [IMenuPropertyItem](IMenuPropertyItem.md)
 - [IMenuPropertyItemOptions](IMenuPropertyItemOptions.md)
+- [IMinimapPropertyItem](IMinimapPropertyItem.md)
+- [IMinimapPropertyItemOptions](IMinimapPropertyItemOptions.md)
 - [IModalControlPane](IModalControlPane.md)
 - [IModalDialog](IModalDialog.md)
 - [IModalDialogActivationRequest](IModalDialogActivationRequest.md)
@@ -350,6 +362,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.130
 - [ModalDialogCreationParams](ModalDialogCreationParams.md)
 - [ModalToolCreationParameters](ModalToolCreationParameters.md)
 - [ProjectExportOptions](ProjectExportOptions.md)
+- [PyramidBrushShapeSettings](PyramidBrushShapeSettings.md)
 - [QuickExtrudeProperties](QuickExtrudeProperties.md)
 - [SelectionManifestData](SelectionManifestData.md)
 - [SelectionManifestEntry](SelectionManifestEntry.md)

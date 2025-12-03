@@ -14,8 +14,10 @@ description: Contents of the @minecraft/server-editor.ConeBrushShape class.
 
 ## Methods
 - [constructor](#(constructor))
+- [applySetting](#applysetting)
 - [createSettingsPane](#createsettingspane)
 - [createShape](#createshape)
+- [getSettings](#getsettings)
 
 ### **constructor**
 `
@@ -47,6 +49,16 @@ Constructs a new instance of the `ConeBrushShape` class
 
 **Returns** *ConeBrushShape*
 
+### **applySetting**
+`
+applySetting(brushSettings: ConeBrushShapeSettings): void
+`
+
+#### **Parameters**
+- **brushSettings**: *ConeBrushShapeSettings*
+
+**Returns** *void*
+
 ### **createSettingsPane**
 `
 createSettingsPane(parentPane: IPropertyPane, onSettingsChange?: () => void): ISubPanePropertyItem
@@ -64,3 +76,10 @@ createShape(): RelativeVolumeListBlockVolume
 `
 
 **Returns** *RelativeVolumeListBlockVolume*
+
+### **getSettings**
+`
+getSettings(): ConeBrushShapeSettings
+`
+
+**Returns** *ConeBrushShapeSettings*

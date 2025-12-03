@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.LootPool Class
 description: Contents of the @minecraft/server.LootPool class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # LootPool Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 A collection of entries which individually determine loot drops. Can contain values determining drop outcomes, including rolls, bonus rolls and tiers.
 

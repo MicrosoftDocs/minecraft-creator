@@ -14,8 +14,10 @@ description: Contents of the @minecraft/server-editor.PyramidBrushShape class.
 
 ## Methods
 - [constructor](#(constructor))
+- [applySetting](#applysetting)
 - [createSettingsPane](#createsettingspane)
 - [createShape](#createshape)
+- [getSettings](#getsettings)
 
 ### **constructor**
 `
@@ -45,6 +47,16 @@ Constructs a new instance of the `PyramidBrushShape` class
 
 **Returns** *PyramidBrushShape*
 
+### **applySetting**
+`
+applySetting(brushSettings: PyramidBrushShapeSettings): void
+`
+
+#### **Parameters**
+- **brushSettings**: *PyramidBrushShapeSettings*
+
+**Returns** *void*
+
 ### **createSettingsPane**
 `
 createSettingsPane(parentPane: IPropertyPane, onSettingsChange?: () => void): ISubPanePropertyItem
@@ -62,3 +74,10 @@ createShape(): RelativeVolumeListBlockVolume
 `
 
 **Returns** *RelativeVolumeListBlockVolume*
+
+### **getSettings**
+`
+getSettings(): PyramidBrushShapeSettings
+`
+
+**Returns** *PyramidBrushShapeSettings*

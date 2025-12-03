@@ -100,10 +100,14 @@
       href: minecraft/server/EasingType.md
     - name: EnchantmentSlot
       href: minecraft/server/EnchantmentSlot.md
+    - name: EntityAttachPoint
+      href: minecraft/server/EntityAttachPoint.md
     - name: EntityComponentTypes
       href: minecraft/server/EntityComponentTypes.md
     - name: EntityDamageCause
       href: minecraft/server/EntityDamageCause.md
+    - name: EntityHealCause
+      href: minecraft/server/EntityHealCause.md
     - name: EntityInitializationCause
       href: minecraft/server/EntityInitializationCause.md
     - name: EntitySwingSource
@@ -204,6 +208,8 @@
       href: minecraft/server/BlockComponent.md
     - name: BlockComponentBlockBreakEvent
       href: minecraft/server/BlockComponentBlockBreakEvent.md
+    - name: BlockComponentEntityEvent
+      href: minecraft/server/BlockComponentEntityEvent.md
     - name: BlockComponentEntityFallOnEvent
       href: minecraft/server/BlockComponentEntityFallOnEvent.md
     - name: BlockComponentOnPlaceEvent
@@ -390,6 +396,16 @@
       href: minecraft/server/EntityHasVariantCondition.md
     - name: EntityHealableComponent
       href: minecraft/server/EntityHealableComponent.md
+    - name: EntityHealAfterEvent
+      href: minecraft/server/EntityHealAfterEvent.md
+    - name: EntityHealAfterEventSignal
+      href: minecraft/server/EntityHealAfterEventSignal.md
+    - name: EntityHealBeforeEvent
+      href: minecraft/server/EntityHealBeforeEvent.md
+    - name: EntityHealBeforeEventSignal
+      href: minecraft/server/EntityHealBeforeEventSignal.md
+    - name: EntityHealSource
+      href: minecraft/server/EntityHealSource.md
     - name: EntityHealthChangedAfterEvent
       href: minecraft/server/EntityHealthChangedAfterEvent.md
     - name: EntityHealthChangedAfterEventSignal
@@ -410,6 +426,10 @@
       href: minecraft/server/EntityHurtAfterEvent.md
     - name: EntityHurtAfterEventSignal
       href: minecraft/server/EntityHurtAfterEventSignal.md
+    - name: EntityHurtBeforeEvent
+      href: minecraft/server/EntityHurtBeforeEvent.md
+    - name: EntityHurtBeforeEventSignal
+      href: minecraft/server/EntityHurtBeforeEventSignal.md
     - name: EntityInventoryComponent
       href: minecraft/server/EntityInventoryComponent.md
     - name: EntityIsBabyComponent
@@ -938,6 +958,8 @@
       href: minecraft/server/AABB.md
     - name: AnimationOptions
       href: minecraft/server/AnimationOptions.md
+    - name: BiomeFilter
+      href: minecraft/server/BiomeFilter.md
     - name: BiomeSearchOptions
       href: minecraft/server/BiomeSearchOptions.md
     - name: BlockBoundingBox
@@ -956,6 +978,8 @@
       href: minecraft/server/BlockRaycastHit.md
     - name: BlockRaycastOptions
       href: minecraft/server/BlockRaycastOptions.md
+    - name: CameraAttachOptions
+      href: minecraft/server/CameraAttachOptions.md
     - name: CameraFadeOptions
       href: minecraft/server/CameraFadeOptions.md
     - name: CameraFadeTimeOptions
@@ -1006,8 +1030,14 @@
       href: minecraft/server/EntityEventOptions.md
     - name: EntityFilter
       href: minecraft/server/EntityFilter.md
+    - name: EntityHealEventOptions
+      href: minecraft/server/EntityHealEventOptions.md
     - name: EntityHitInformation
       href: minecraft/server/EntityHitInformation.md
+    - name: EntityHurtAfterEventOptions
+      href: minecraft/server/EntityHurtAfterEventOptions.md
+    - name: EntityHurtBeforeEventOptions
+      href: minecraft/server/EntityHurtBeforeEventOptions.md
     - name: EntityQueryOptions
       href: minecraft/server/EntityQueryOptions.md
     - name: EntityQueryPropertyOptions
@@ -1224,6 +1254,10 @@
       href: minecraft/server-editor/ListPaneViewSortType.md
     - name: LogChannel
       href: minecraft/server-editor/LogChannel.md
+    - name: MinimapMarkerType
+      href: minecraft/server-editor/MinimapMarkerType.md
+    - name: MinimapViewType
+      href: minecraft/server-editor/MinimapViewType.md
     - name: ModalDialogResponseType
       href: minecraft/server-editor/ModalDialogResponseType.md
     - name: ModalDialogType
@@ -1352,6 +1386,10 @@
       href: minecraft/server-editor/Logger.md
     - name: MinecraftEditor
       href: minecraft/server-editor/MinecraftEditor.md
+    - name: MinimapItem
+      href: minecraft/server-editor/MinimapItem.md
+    - name: MinimapManager
+      href: minecraft/server-editor/MinimapManager.md
     - name: ModeChangeAfterEvent
       href: minecraft/server-editor/ModeChangeAfterEvent.md
     - name: ModeChangeAfterEventSignal
@@ -1464,16 +1502,24 @@
       href: minecraft/server-editor/BuiltInUIManager.md
     - name: ClipboardWriteOptions
       href: minecraft/server-editor/ClipboardWriteOptions.md
+    - name: ConeBrushShapeSettings
+      href: minecraft/server-editor/ConeBrushShapeSettings.md
     - name: ContiguousSelectionProperties
       href: minecraft/server-editor/ContiguousSelectionProperties.md
+    - name: CuboidBrushShapeSettings
+      href: minecraft/server-editor/CuboidBrushShapeSettings.md
     - name: CursorPosition
       href: minecraft/server-editor/CursorPosition.md
     - name: CursorProperties
       href: minecraft/server-editor/CursorProperties.md
     - name: CursorRay
       href: minecraft/server-editor/CursorRay.md
+    - name: CylinderBrushShapeSettings
+      href: minecraft/server-editor/CylinderBrushShapeSettings.md
     - name: EditorStructureSearchOptions
       href: minecraft/server-editor/EditorStructureSearchOptions.md
+    - name: EllipsoidBrushShapeSettings
+      href: minecraft/server-editor/EllipsoidBrushShapeSettings.md
     - name: EventSink
       href: minecraft/server-editor/EventSink.md
     - name: ExtensionOptionalParameters
@@ -1578,6 +1624,10 @@
       href: minecraft/server-editor/IMenuPropertyItem.md
     - name: IMenuPropertyItemOptions
       href: minecraft/server-editor/IMenuPropertyItemOptions.md
+    - name: IMinimapPropertyItem
+      href: minecraft/server-editor/IMinimapPropertyItem.md
+    - name: IMinimapPropertyItemOptions
+      href: minecraft/server-editor/IMinimapPropertyItemOptions.md
     - name: IModalControlPane
       href: minecraft/server-editor/IModalControlPane.md
     - name: IModalDialog
@@ -1676,6 +1726,8 @@
       href: minecraft/server-editor/ModalToolCreationParameters.md
     - name: ProjectExportOptions
       href: minecraft/server-editor/ProjectExportOptions.md
+    - name: PyramidBrushShapeSettings
+      href: minecraft/server-editor/PyramidBrushShapeSettings.md
     - name: QuickExtrudeProperties
       href: minecraft/server-editor/QuickExtrudeProperties.md
     - name: SelectionManifestData
@@ -1720,6 +1772,8 @@
       href: minecraft/server-editor/AudioSettingsPropertyTypeMap.md
     - name: BasicTooltipContent
       href: minecraft/server-editor/BasicTooltipContent.md
+    - name: BrushShapeSettings
+      href: minecraft/server-editor/BrushShapeSettings.md
     - name: ButtonPropertyItemSupportedActionTypes
       href: minecraft/server-editor/ButtonPropertyItemSupportedActionTypes.md
     - name: ContinuousAction
@@ -1794,6 +1848,8 @@
       href: minecraft/server-editor/Ray.md
     - name: RegisteredAction
       href: minecraft/server-editor/RegisteredAction.md
+    - name: SelectedModalToolChangedEventPayload
+      href: minecraft/server-editor/SelectedModalToolChangedEventPayload.md
     - name: ShutdownFunctionType
       href: minecraft/server-editor/ShutdownFunctionType.md
     - name: SpeedSettingsPropertyTypeMap

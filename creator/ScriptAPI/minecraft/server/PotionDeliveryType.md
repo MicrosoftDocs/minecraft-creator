@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.PotionDeliveryType Class
 description: Contents of the @minecraft/server.PotionDeliveryType class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PotionDeliveryType Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Represents how the potion effect is delivered.
 

@@ -6,15 +6,13 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.BlockPrecipitationInteractionsComponent Class
 description: Contents of the @minecraft/server.BlockPrecipitationInteractionsComponent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockPrecipitationInteractionsComponent Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ## Extends
 - [*BlockComponent*](BlockComponent.md)
+
+Represents a how a block interacts with precipitation (such as rain or snow).
 
 ## Methods
 - [accumulatesSnow](#accumulatessnow)

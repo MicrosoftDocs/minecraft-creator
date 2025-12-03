@@ -111,6 +111,7 @@ Entity is an adult
 Entity is a baby
 - `minecraft:as_baby_jockey`
 - `minecraft:as_ranged_adult`
+- `minecraft:as_ranged_baby`
 - `minecraft:as_rider`
 - `minecraft:ate_allium`
 Entity responds to eating an allium flower
@@ -620,8 +621,10 @@ Entity stops Johnny action
 - `minecraft:stop_transforming`
 Entity stops transforming
 - `minecraft:stopped_riding`
+- `minecraft:switch_to_ai_controlled`
 - `minecraft:switch_to_melee`
 Entity switches to melee attack
+- `minecraft:switch_to_player_controlled`
 - `minecraft:switch_to_ranged`
 Entity switches to ranged attack
 - `minecraft:target_far_enough`

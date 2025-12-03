@@ -18,6 +18,13 @@ Unique identifier for the tool
 
 Type: *string*
 
+### **isActive**
+`read-only isActive: boolean;`
+
+Active state of the modal tool
+
+Type: *boolean*
+
 ### **onModalToolActivation**
 `onModalToolActivation: EventSink<ModalToolLifecycleEventPayload>;`
 

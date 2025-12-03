@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.GetBlocksStandingOnOptions Interface
 description: Contents of the @minecraft/server.GetBlocksStandingOnOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # GetBlocksStandingOnOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains additional options for getBlockStandingOn and getAllBlocksStandingOn.
 

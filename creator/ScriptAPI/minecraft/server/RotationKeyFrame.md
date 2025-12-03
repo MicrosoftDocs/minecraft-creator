@@ -17,6 +17,13 @@ Key frame that holds the rotation of the camera animation.
 
 ## Properties
 
+### **easingFunc**
+`easingFunc?: EasingType;`
+
+The optional easing type that the frame will use for rotation.
+
+Type: [*EasingType*](EasingType.md)
+
 ### **rotation**
 `rotation: Vector3;`
 

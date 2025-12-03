@@ -12,6 +12,8 @@ description: Contents of the @minecraft/server.BlockMovableComponent class.
 ## Extends
 - [*BlockComponent*](BlockComponent.md)
 
+Represents a block that can move (such as a piston).
+
 ## Properties
 
 ### **movementType**

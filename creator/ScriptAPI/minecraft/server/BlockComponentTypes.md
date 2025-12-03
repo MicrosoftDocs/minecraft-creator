@@ -18,14 +18,30 @@ The types of block components that are accessible via function Block.getComponen
 `Inventory = "minecraft:inventory"`
 
 Represents the inventory of a block in the world. Used with blocks like chests.
+### **MapColor**
+`MapColor = "minecraft:map_color"`
+
+Represents the color of a block when displayed on a map.
+### **Movable**
+`Movable = "minecraft:movable"`
+
+Represents a block that can move (such as a piston).
 ### **Piston**
 `Piston = "minecraft:piston"`
 
 When present, this block has piston-like behavior. Contains additional properties for discovering block piston state.
+### **PrecipitationInteractions**
+`PrecipitationInteractions = "minecraft:precipitation_interactions"`
+
+Represents a how a block interacts with precipitation (such as rain or snow).
 ### **RecordPlayer**
 `RecordPlayer = "minecraft:record_player"`
 
 Represents a block that can play a record.
+### **RedstoneProducer**
+`RedstoneProducer = "minecraft:redstone_producer"`
+
+Represents a block that can output a redstone signal.
 ### **Sign**
 `Sign = "minecraft:sign"`
 

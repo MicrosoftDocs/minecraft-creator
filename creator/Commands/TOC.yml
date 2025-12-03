@@ -74,6 +74,8 @@
   href: commands/music.md
 - name: op
   href: commands/op.md
+- name: packstack
+  href: commands/packstack.md
 - name: particle
   href: commands/particle.md
 - name: permission

@@ -14,8 +14,10 @@ description: Contents of the @minecraft/server-editor.EllipsoidBrushShape class.
 
 ## Methods
 - [constructor](#(constructor))
+- [applySetting](#applysetting)
 - [createSettingsPane](#createsettingspane)
 - [createShape](#createshape)
+- [getSettings](#getsettings)
 
 ### **constructor**
 `
@@ -49,6 +51,16 @@ Constructs a new instance of the `EllipsoidBrushShape` class
 
 **Returns** *EllipsoidBrushShape*
 
+### **applySetting**
+`
+applySetting(brushSettings: EllipsoidBrushShapeSettings): void
+`
+
+#### **Parameters**
+- **brushSettings**: *EllipsoidBrushShapeSettings*
+
+**Returns** *void*
+
 ### **createSettingsPane**
 `
 createSettingsPane(parentPane: IPropertyPane, onSettingsChange?: () => void): ISubPanePropertyItem
@@ -66,3 +78,10 @@ createShape(): RelativeVolumeListBlockVolume
 `
 
 **Returns** *RelativeVolumeListBlockVolume*
+
+### **getSettings**
+`
+getSettings(): EllipsoidBrushShapeSettings
+`
+
+**Returns** *EllipsoidBrushShapeSettings*

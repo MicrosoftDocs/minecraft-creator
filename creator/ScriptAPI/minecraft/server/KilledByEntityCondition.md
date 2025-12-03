@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.KilledByEntityCondition Class
 description: Contents of the @minecraft/server.KilledByEntityCondition class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # KilledByEntityCondition Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*LootItemCondition*](LootItemCondition.md)

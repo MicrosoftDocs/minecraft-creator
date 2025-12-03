@@ -14,8 +14,10 @@ description: Contents of the @minecraft/server-editor.SingleBlockBrushShape clas
 
 ## Methods
 - [constructor](#(constructor))
+- [applySetting](#applysetting)
 - [createSettingsPane](#createsettingspane)
 - [createShape](#createshape)
+- [getSettings](#getsettings)
 
 ### **constructor**
 `
@@ -25,6 +27,16 @@ new SingleBlockBrushShape()
 Constructs a new instance of the `SingleBlockBrushShape` class
 
 **Returns** *SingleBlockBrushShape*
+
+### **applySetting**
+`
+applySetting(_settings: BrushShapeSettings): void
+`
+
+#### **Parameters**
+- **_settings**: *BrushShapeSettings*
+
+**Returns** *void*
 
 ### **createSettingsPane**
 `
@@ -37,3 +49,10 @@ createShape(): RelativeVolumeListBlockVolume
 `
 
 **Returns** *RelativeVolumeListBlockVolume*
+
+### **getSettings**
+`
+getSettings(): BrushShapeSettings
+`
+
+**Returns** *BrushShapeSettings*

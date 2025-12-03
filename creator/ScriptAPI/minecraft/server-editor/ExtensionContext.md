@@ -67,6 +67,13 @@ Contains information about the registered extension instance.
 
 Type: [*Extension*](Extension.md)
 
+### **minimapManager**
+`read-only minimapManager: MinimapManager;`
+
+Manager for minimap functionality, providing interface for creating markers and controlling minimap displays.
+
+Type: [*MinimapManager*](MinimapManager.md)
+
 ### **player**
 `read-only player: minecraftserver.Player;`
 

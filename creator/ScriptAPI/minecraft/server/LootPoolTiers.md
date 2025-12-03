@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.LootPoolTiers Class
 description: Contents of the @minecraft/server.LootPoolTiers class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # LootPoolTiers Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Represents the values which determine loot drops in a tiered loot pool. Potential drops from tiered loot pools are ordered, and chosen via logic controlled by the values in this object.
 

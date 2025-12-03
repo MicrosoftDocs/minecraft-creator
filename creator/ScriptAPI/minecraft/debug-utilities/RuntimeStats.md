@@ -61,6 +61,11 @@ Type: *number*
 
 Type: *number*
 
+### **memoryAllocatedLimit**
+`memoryAllocatedLimit: number;`
+
+Type: *number*
+
 ### **memoryAllocatedSize**
 `memoryAllocatedSize: number;`
 
