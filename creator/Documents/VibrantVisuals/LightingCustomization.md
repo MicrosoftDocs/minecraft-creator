@@ -173,7 +173,7 @@ File location: **local_lighting/local_lighting.json**
 
 | Schema Version | Updates                                                        |
 | -------------- | -------------------------------------------------------------- |
-| `1.21.110`     | Renamed `point_lights/global.json` to `local_lighting/local_lighting.json`. Added support for additional `light_type` property |
+| `1.21.120`     | Renamed `point_lights/global.json` to `local_lighting/local_lighting.json`. Added support for additional `light_type` property |
 | `1.21.40`      | N/A                                                            |
 
 ```json
@@ -284,7 +284,7 @@ File location: **pbr/global.json**
 
 ```json
 {
-    "format_version": "1.21.110",
+    "format_version": "1.21.120",
     "minecraft:local_light_settings": {
         "minecraft:torch": {
             "light_color": "#EFE39D",

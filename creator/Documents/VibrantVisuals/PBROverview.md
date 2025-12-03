@@ -9,7 +9,7 @@ ms.date: 05/28/2025
 
 # Overview of Physically Based Rendering
 
-Physically Based Rendering, or PBR, simulates how materials would react to realistic light behavior. Metallic surfaces cast reflections; light bends and refracts through different types of glass. For objects you create to take advantage of PBR, you'll need to create special textures that capture properties of the material, such as metallic properties, emissive properties, and roughness (often abbreviated together as "MER").
+Physically Based Rendering, or PBR, simulates how materials would react to realistic light behavior. Metallic surfaces cast reflections; light bends and refracts through different types of glass. Minecraft's Vibrant Visuals and ray tracing graphics modes both utilize this modern graphics technique to enhance in-game visuals. For objects you create to take advantage of PBR, you'll need to create special textures that capture properties of the material, such as metallic properties, emissive properties, and roughness (often abbreviated together as "MER"). In Vibrant Visuals, an extra channel has been added for subsurface scattering properties; all together, these are known as "MERS."
 
 By the end of this overview, you'll learn:
 
@@ -23,13 +23,13 @@ By the end of this overview, you'll learn:
 
 It'll be helpful to have read the [Introduction to Resource Packs](../ResourcePack.md) before reading this document. You'll need a ready-to-go Resource Pack with the `textures/blocks` folder structure set up.
 
-While we'll provide textures to download, you'll need to have some digital painting software that has layers to create your textures, such as the Windows 11 version of Microsoft Paint, Adobe Photoshop, or PaintTool SAI.
+While we'll provide textures to download, you'll need to have some digital painting software that has layers to create your textures, such as the Windows 11 version of Microsoft Paint, Adobe Photoshop, or PaintTool SAI. Blockbench, a Minecraft favorite for creating 3D models, also has a PBR-specific plugin that makes creating and exporting MER textures a breeze.
 
 ## What makes a PBR texture?
 
-In Minecraft, 3D blocks are given detail by applying 2D images to them using a common rendering method called **Texture Mapping**. Standard Minecraft blocks use a single texture map, an image with four color channels: Red, Blue, Green, and Alpha (RGBA). Most image editors work with RGBA images: the first three channels provide the color for each image pixel, while the alpha channel controls that pixel's transparency level.
+In Minecraft, 3D models are given detail by applying 2D images to them using a common rendering method called **Texture Mapping**. Standard Minecraft blocks use a single texture map, an image with four color channels: Red, Blue, Green, and Alpha (RGBA). Most image editors work with RGBA images: the first three channels provide the color for each image pixel, while the alpha channel controls that pixel's transparency level.
 
-PBR introduces five _new_ maps for textures that set values for different kinds of properties for each pixel in the color map:
+PBR introduces _new_ maps for textures that set values for different kinds of properties for each pixel in the color map:
 
 - [Metalness Map](#metalness-map)
 - [Emissive Map](#emissive-map)
@@ -37,7 +37,11 @@ PBR introduces five _new_ maps for textures that set values for different kinds 
 - [Normal Map](#normal-map)
 - [Height Map](#height-map)
 
-Together, these maps give you a great deal of control over how blocks you add to your resource packs are rendered when placed in the world. Let's look at each kind of map in turn.
+And specifically in Vibrant Visuals, another property is available for:
+
+- [Subsurface Scattering](./SubSurfaceScatteringCustomization.md)
+
+Together, these maps give you a great deal of control over how models you add to your resource packs are rendered when placed in the world. Note that in ray traced modes, PBR textures are only supported for blocks; in Vibrant Visuals, these properties can also be applied to mobs, items, and particles. Let's look at each kind of map in turn.
 
 > [!IMPORTANT]
 > Not all PBR texture sets require all maps. Leaving empty maps will cause the texture set to use the default value.
@@ -130,6 +134,7 @@ For the Texture Set to work properly, you will need to define a JSON file to loa
       }
     }
     ```
+  More examples of texture set files with different configurations, specifying MERS properties with hardcoded values, or adding subsurface scattering properties to your object can also be found on the above mentioned [Introduction to Texture Sets](../../Reference/Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md) page.
 
 5. Save and close the file.
 
@@ -137,16 +142,16 @@ With the JSON file set up, you can now configure the textures for the `color` va
 
 ### Add the PBR capability
 
-The **manifest.json** file for the pack requires the value `"pbr"` to be added in a `capabilities` section below your existing `header` and `modules`:
+The **manifest.json** file for the pack requires the value `"pbr"` or `"raytraced"` to be added in a `capabilities` section below your existing `header` and `modules` in order to unlock compatability with Vibrant Visuals or ray traced rendering modes:
 
 ```json
 {
     "format_version": 1,
     "header": {
-        "name": "RTX Sample Resources",
+        "name": "My Sample Resources",
         "description": "",
         "uuid": "58d4560c-106d-4b0c-9847-eee47417fb05",
-        "min_engine_version": [1, 12, 0],
+        "min_engine_version": [1, 21, 120],
         "version": [1, 0, 0]
     },
     "modules": [
@@ -158,7 +163,8 @@ The **manifest.json** file for the pack requires the value `"pbr"` to be added i
         }
     ],
     "capabilities" : [
-        "pbr"
+        "pbr", // Add for support in Vibrant Visuals rendering mode
+        "raytraced" // Add for support in ray traced rendering mode
     ]
 }
 ```
@@ -176,7 +182,7 @@ Copy and paste both **.png** files into the **textures/blocks** folder.
 
 ## Run the texture pack
 
-With the JSON file properly set up and both textures in place, you can now load in your texture pack to test in Minecraft.
+With the JSON file properly set up and both textures in place, you can now load in your texture pack to test in Minecraft. Note that you will need a compatible machine to run Vibrant Visuals or ray traced graphics modes.
 
 :::image type="content" source="../Media/RTX/mirror.png" alt-text="iron block reflecting flowers from the environment":::
 

@@ -54,6 +54,9 @@ A **texture_set.json** file may specify several layers. Layers are references to
 - 1-channel layer image or a single value in the JSON file for a uniform heightmap.
 - This layer and the `normal` layer should not both be defined at the same time in a single Texture Set.
 
+> [!CAUTION]
+> In Vibrant Visuals, heightmaps cannot be applied to texture-based objects such as items; normals should be used for this instead.
+
 ### Metalness_emissive_roughness
 
 - This is a 3-channel image (or 4-channel where the 4th channel is ignored) or a 3-value array for a uniform MER.
@@ -79,6 +82,9 @@ The values in the JSON file can be specified in any of the following formats:
 
 - 0 to 255 numeric range, or as a vector of such integers for a multichannel layer.
 - Hexadecimal RGB or ARGB for 3 or 4 channels, or as 2 hex digits for a single channel layer.
+
+> [!CAUTION]
+> Texture variations using MERS uniform values in texture sets are not supported; an image-based MERS file must be provided for it to be applied properly.
 
 ## Examples of *.texture_set.json files
 
@@ -143,6 +149,7 @@ A Texture Set is invalid if:
 - JSON data cannot be parsed, or doesn't meet the Texture Set schema.
 - Color layer is not specified. Having a color layer in the **.texture_set.json** file is required.
 - Both height map and normal layers are defined.
+- A heightmap is being applied for a texture-based object.
 - Both MER and MERS layers are defined.
 - A referenced texture does not exist in the same resource pack or the referenced texture cannot be parsed.
 - Any layer is defined with an unexpected number of channels:
