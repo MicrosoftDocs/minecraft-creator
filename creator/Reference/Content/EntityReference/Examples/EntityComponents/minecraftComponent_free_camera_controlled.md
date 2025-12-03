@@ -17,7 +17,7 @@ When configured as a rideable entity, the entity will be controlled using WASD c
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | backwards_movement_modifier | 0.5 | Decimal number | Modifies speed going backwards. | Happy Ghast: `0.5` | 
-| strafe_speed_modifier | 0.4 | Decimal number | Modifies the strafe speed. | Happy Ghast: `1`, Nautilus: `0.35` | 
+| strafe_speed_modifier | 0.4 | Decimal number | Modifies the strafe speed. | Happy Ghast: `1`, Nautilus: `0.7` | 
 
 ## Samples
 
@@ -36,7 +36,7 @@ When configured as a rideable entity, the entity will be controlled using WASD c
 
 ```json
 "minecraft:free_camera_controlled": {
-  "strafe_speed_modifier": 0.35,
+  "strafe_speed_modifier": 0.7,
   "backwards_movement_modifier": 0.5
 }
 ```

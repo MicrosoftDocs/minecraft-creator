@@ -88,7 +88,7 @@ At /minecraft:entity/events/minecraft:on_passenger_mount/sequence/0/filters/:
 
 #### [Nautilus](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/nautilus.json)
 
-At /minecraft:entity/events/minecraft:on_unsaddled/sequence/0/filters/: 
+At /minecraft:entity/events/minecraft:on_saddled/sequence/0/filters/: 
 
 ```json
 {

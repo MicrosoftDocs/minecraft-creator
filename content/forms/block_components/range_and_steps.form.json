@@ -1,0 +1,25 @@
+{
+  "id": "Range And Steps",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Range And Steps",
+    "title": "Block Components Range And Steps",
+    "fields": [
+      {
+        "id": "range",
+        "title": "Range",
+        "description": "The range of the random offset.",
+        "dataType": 16,
+        "subFormId": "item_components/floatrange",
+        "isRequired": true
+      },
+      {
+        "id": "steps",
+        "title": "Steps",
+        "description": "The number of steps between the range. Specify 0 for all possible values between the range.",
+        "dataType": 0,
+        "defaultValue": 0
+      }
+    ]
+  }
+}

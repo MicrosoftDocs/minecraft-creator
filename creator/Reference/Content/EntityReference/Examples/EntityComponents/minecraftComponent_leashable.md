@@ -4,12 +4,13 @@ ms.author: mikeam
 title: "Entity Documentation - minecraft:leashable"
 description: "Describes the minecraft:leashable entity component"
 ms.service: minecraft-bedrock-edition
-ms.date: 11/17/2025
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:leashable
 
 Describes how this mob can be leashed to other items.
+
 
 ## Leashable Properties
 
@@ -25,12 +26,9 @@ Describes how this mob can be leashed to other items.
 | presets | *not set* | Array of [Presets](#presets) items | Defines how this entity behaves when leashed to another entity. The first preset which "filter" conditions are met will be applied; if none match, a default configuration is used instead. | Boat: `[{"filter":{"test":"is_family","subject":"other","value":"happy_ghast"},"spring_type":"quad_dampened","rotation_adjustment":90},{"rotation_adjustment":90,"soft_distance":2,"hard_distance":4}]` | 
 | soft_distance | 4 | Integer number | Distance in blocks at which the 'spring' effect starts acting to keep this entity close to the entity that leashed it. |  | 
 
-> [!NOTE]
-> Entity format version `1.21.80` changed the `on_unleash` trigger event to trigger on leash breaking. To keep the earlier behavior, set `on_unleash_interact_only` to `true`.
-
 ## Presets
-
 Defines how this entity behaves when leashed to another entity. The first preset which "filter" conditions are met will be applied; if none match, a default configuration is used instead.
+
 
 #### Presets Properties
 
@@ -89,6 +87,21 @@ Defines how this entity behaves when leashed to another entity. The first preset
         "value": "happy_ghast"
       },
       "spring_type": "quad_dampened"
+    }
+  ]
+}
+```
+
+#### [Dolphin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/dolphin.json)
+
+
+```json
+"minecraft:leashable": {
+  "presets": [
+    {
+      "soft_distance": 4,
+      "hard_distance": 6,
+      "max_distance": 10
     }
   ]
 }

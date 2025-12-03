@@ -484,7 +484,7 @@
         "id": "swing",
         "title": "Swing",
         "description": "If true, the player will do the 'swing' animation when interacting with this entity.",
-        "defaultValue": false,
+        "defaultValue": true,
         "dataType": 1
       },
       {

@@ -19,7 +19,7 @@ Allows the mob to pick up items on the ground.
 | can_pickup_any_item | false | Boolean true/false | If true, the mob can pickup any item | Bogged: `true` | 
 | can_pickup_to_hand_or_equipment | true | Boolean true/false | If true, the mob can pickup items to its hand or armor slots |  | 
 | cooldown_after_being_attacked | *not set* | Decimal number |  | Piglin: `20` | 
-| excluded_items | *not set* | Array of strings | List of items this mob will not pick up | Drowned: `["minecraft:glow_ink_sac"]` | 
+| excluded_items | *not set* | Array of strings | List of items this mob will not pick up | Bogged: `[{"tags":"q.all_tags('minecraft:is_spear')"}]`, Drowned: `["minecraft:glow_ink_sac",{"tags":"q.all_tags('minecraft:is_spear')"}]`, Husk: `["minecraft:glow_ink_sac"]` | 
 | goal_radius | 0.5 | Decimal number | Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot | Allay: `2.2`, Bogged: `2` | 
 | max_dist | 0 | Decimal number | Maximum distance this mob will look for items to pick up | Allay: `32`, Bogged: `3`, Piglin: `10` | 
 | pickup_based_on_chance | false | Boolean true/false | If true, depending on the difficulty, there is a random chance that the mob may not be able to pickup items | Bogged: `true` | 
@@ -58,7 +58,12 @@ Allows the mob to pick up items on the ground.
   "goal_radius": 2,
   "speed_multiplier": 1,
   "pickup_based_on_chance": true,
-  "can_pickup_any_item": true
+  "can_pickup_any_item": true,
+  "excluded_items": [
+    {
+      "tags": "q.all_tags('minecraft:is_spear')"
+    }
+  ]
 }
 ```
 
@@ -74,7 +79,10 @@ Allows the mob to pick up items on the ground.
   "pickup_based_on_chance": true,
   "can_pickup_any_item": true,
   "excluded_items": [
-    "minecraft:glow_ink_sac"
+    "minecraft:glow_ink_sac",
+    {
+      "tags": "q.all_tags('minecraft:is_spear')"
+    }
   ]
 }
 ```
@@ -103,6 +111,23 @@ Allows the mob to pick up items on the ground.
 }
 ```
 
+#### [Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/husk.json)
+
+
+```json
+"minecraft:behavior.pickup_items": {
+  "priority": 6,
+  "max_dist": 3,
+  "goal_radius": 2,
+  "speed_multiplier": 1,
+  "pickup_based_on_chance": true,
+  "can_pickup_any_item": true,
+  "excluded_items": [
+    "minecraft:glow_ink_sac"
+  ]
+}
+```
+
 #### [Parched](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parched.json)
 
 
@@ -113,7 +138,12 @@ Allows the mob to pick up items on the ground.
   "goal_radius": 2,
   "speed_multiplier": 1,
   "pickup_based_on_chance": true,
-  "can_pickup_any_item": true
+  "can_pickup_any_item": true,
+  "excluded_items": [
+    {
+      "tags": "q.all_tags('minecraft:is_spear')"
+    }
+  ]
 }
 ```
 
@@ -182,22 +212,5 @@ Allows the mob to pick up items on the ground.
   "speed_multiplier": 1,
   "pickup_based_on_chance": true,
   "can_pickup_any_item": true
-}
-```
-
-#### [Zombie Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_villager.json)
-
-
-```json
-"minecraft:behavior.pickup_items": {
-  "priority": 8,
-  "max_dist": 3,
-  "goal_radius": 2,
-  "speed_multiplier": 1,
-  "pickup_based_on_chance": false,
-  "can_pickup_any_item": true,
-  "excluded_items": [
-    "minecraft:glow_ink_sac"
-  ]
 }
 ```

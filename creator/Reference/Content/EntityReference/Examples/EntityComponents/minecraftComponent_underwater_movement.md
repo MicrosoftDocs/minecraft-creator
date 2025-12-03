@@ -67,7 +67,7 @@ Defines the speed with which an entity can move through water.
 
 #### [Nautilus](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/nautilus.json)
 
-At /minecraft:entity/component_groups/minecraft:nautilus_mounted/minecraft:underwater_movement/: 
+At /minecraft:entity/component_groups/minecraft:nautilus_player_controlled/minecraft:underwater_movement/: 
 
 ```json
 "minecraft:underwater_movement": {
@@ -75,7 +75,7 @@ At /minecraft:entity/component_groups/minecraft:nautilus_mounted/minecraft:under
 }
 ```
 
-At /minecraft:entity/component_groups/minecraft:nautilus_unmounted/minecraft:underwater_movement/: 
+At /minecraft:entity/component_groups/minecraft:nautilus_ai_controlled/minecraft:underwater_movement/: 
 
 ```json
 "minecraft:underwater_movement": {

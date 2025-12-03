@@ -17,12 +17,6 @@
         "title": "Separation",
         "description": "Padding (in chunks) within each grid cell. Structures will not generate within the padded area.",
         "dataType": 0,
-        "validity": [
-          {
-            "comparison": "<=",
-            "value": 65535
-          }
-        ],
         "isRequired": true
       },
       {
@@ -34,10 +28,6 @@
           {
             "comparison": ">=",
             "value": 1
-          },
-          {
-            "comparison": "<=",
-            "value": 65535
           }
         ],
         "isRequired": true

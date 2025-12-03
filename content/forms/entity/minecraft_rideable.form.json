@@ -334,7 +334,7 @@
           ],
           "/vanilla/behavior_pack/entities/nautilus.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled/minecraft:rideable/",
+              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_adult/minecraft:rideable/",
               "content": "minecraft:on_mount"
             }
           ],
@@ -344,7 +344,7 @@
               "content": "minecraft:on_drowned_mount"
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled/minecraft:rideable/",
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame/minecraft:rideable/",
               "content": "minecraft:on_player_mount"
             }
           ]
@@ -364,7 +364,7 @@
           ],
           "/vanilla/behavior_pack/entities/nautilus.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled/minecraft:rideable/",
+              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_adult/minecraft:rideable/",
               "content": "minecraft:on_dismount"
             }
           ],
@@ -374,7 +374,7 @@
               "content": "minecraft:on_drowned_dismount"
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled/minecraft:rideable/",
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame/minecraft:rideable/",
               "content": "minecraft:on_player_dismount"
             }
           ]
@@ -1015,7 +1015,7 @@
       ],
       "/vanilla/behavior_pack/entities/nautilus.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled/minecraft:rideable/",
+          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_adult/minecraft:rideable/",
           "content": {
             "seat_count": 1,
             "crouching_skip_interact": true,
@@ -1028,7 +1028,7 @@
             "seats": {
               "position": [
                 0,
-                1,
+                0.925,
                 0
               ],
               "third_person_camera_radius": 7
@@ -1402,14 +1402,14 @@
             "seats": {
               "position": [
                 0,
-                1,
+                0.925,
                 -0.2
               ]
             }
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled/minecraft:rideable/",
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame/minecraft:rideable/",
           "content": {
             "seat_count": 1,
             "crouching_skip_interact": true,
@@ -1422,7 +1422,7 @@
             "seats": {
               "position": [
                 0,
-                1,
+                0.925,
                 0
               ],
               "third_person_camera_radius": 7

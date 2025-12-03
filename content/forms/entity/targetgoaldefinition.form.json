@@ -1,0 +1,217 @@
+{
+  "id": "TargetGoalDefinition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "TargetGoalDefinition",
+    "title": "Entity TargetGoalDefinition",
+    "fields": [
+      {
+        "id": "attack_owner",
+        "title": "Attack Owner",
+        "description": "If true, this entity can attack its owner.",
+        "dataType": 1,
+        "defaultValue": false
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": []
+      },
+      {
+        "id": "entity_types",
+        "title": "Entity Types",
+        "description": "Filters which types of targets are valid for this entity.",
+        "dataType": 16,
+        "defaultValue": [],
+        "alternates": [
+          {
+            "id": "entity_types",
+            "dataType": 16,
+            "subForm": {
+              "id": "entity_types",
+              "title": "Entity Types",
+              "fields": [
+                {
+                  "id": "check_if_outnumbered",
+                  "title": "Check If Outnumbered",
+                  "description": "If true, the mob will check if its outnumbered",
+                  "dataType": 1,
+                  "defaultValue": false
+                },
+                {
+                  "id": "cooldown",
+                  "title": "Cooldown",
+                  "description": "The amount of time in seconds that the mob has to wait before selecting a target of the same type again",
+                  "dataType": 0,
+                  "defaultValue": 0
+                },
+                {
+                  "id": "filters",
+                  "description": "Conditions that make this entry in the list valid",
+                  "dataType": 16,
+                  "defaultValue": {
+                    "AND": null,
+                    "NOT": null,
+                    "OR": null,
+                    "all": null,
+                    "all_of": null,
+                    "any": null,
+                    "any_of": null,
+                    "none_of": null
+                  },
+                  "subForm": {
+                    "id": "filters",
+                    "title": "Filters",
+                    "fields": [
+                      {
+                        "id": "domain",
+                        "title": "Domain",
+                        "description": "The domain the test should be performed in.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "operator",
+                        "title": "Operator",
+                        "description": "The comparison to apply with 'value'.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "subject",
+                        "title": "Subject",
+                        "description": "The subject of this filter test.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "test",
+                        "title": "Test",
+                        "description": "The name of the test to apply.",
+                        "dataType": 2,
+                        "isRequired": true
+                      },
+                      {
+                        "id": "value",
+                        "title": "Value",
+                        "description": "The value being compared with the test.",
+                        "dataType": 16
+                      }
+                    ]
+                  },
+                  "alternates": [
+                    {
+                      "id": "filters",
+                      "dataType": 16
+                    }
+                  ]
+                },
+                {
+                  "id": "max_dist",
+                  "title": "Max Dist",
+                  "description": "Maximum distance this mob can be away to be a valid choice",
+                  "dataType": 3,
+                  "defaultValue": 16
+                },
+                {
+                  "id": "max_flee",
+                  "title": "Max Flee",
+                  "description": "Maximum distance this mob can be from the target to stop fleeing",
+                  "dataType": 3,
+                  "defaultValue": 10
+                },
+                {
+                  "id": "max_height",
+                  "title": "Max Height",
+                  "description": "Maximum height this mob can be away to be a valid choice",
+                  "dataType": 3,
+                  "defaultValue": -1
+                },
+                {
+                  "id": "must_see",
+                  "title": "Must See",
+                  "description": "If true, the mob has to be visible to be a valid choice",
+                  "dataType": 1
+                },
+                {
+                  "id": "must_see_forget_duration",
+                  "title": "Must See Forget Duration",
+                  "description": "Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more",
+                  "dataType": 0,
+                  "defaultValue": 3
+                },
+                {
+                  "id": "priority",
+                  "title": "Priority",
+                  "description": "Priority for this mob type",
+                  "dataType": 0,
+                  "defaultValue": 0
+                },
+                {
+                  "id": "reevaluate_description",
+                  "title": "Reevaluate Description",
+                  "description": "If true, the mob will stop being targeted if it stops meeting any conditions.",
+                  "dataType": 1,
+                  "defaultValue": false
+                },
+                {
+                  "id": "sprint_speed_multiplier",
+                  "title": "Sprint Speed Multiplier",
+                  "description": "Multiplier for the sprinting speed. A value of 1.0 means the speed is unchanged",
+                  "dataType": 3,
+                  "defaultValue": 1
+                },
+                {
+                  "id": "walk_speed_multiplier",
+                  "title": "Walk Speed Multiplier",
+                  "description": "Multiplier for the walking speed. A value of 1.0 means the speed is unchanged",
+                  "dataType": 3,
+                  "defaultValue": 1
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "must_reach",
+        "title": "Must Reach",
+        "description": "If true, this entity requires a path to the target.",
+        "dataType": 1,
+        "defaultValue": false
+      },
+      {
+        "id": "must_see",
+        "title": "Must See",
+        "description": "Determines if target-validity requires this entity to be in range only, or both in range and in sight.",
+        "dataType": 1,
+        "defaultValue": false
+      },
+      {
+        "id": "must_see_forget_duration",
+        "title": "Must See Forget Duration",
+        "description": "Time (in seconds) the target must not be seen by this entity to become invalid. Used only if \"must_see\" is true.",
+        "dataType": 3,
+        "defaultValue": 3
+      },
+      {
+        "id": "persist_time",
+        "title": "Persist Time",
+        "description": "Time (in seconds) this entity can continue attacking the target after the target is no longer valid.",
+        "dataType": 3,
+        "defaultValue": 0
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "within_radius",
+        "title": "Within Radius",
+        "description": "Maximum distance this entity can be from the target when following it, otherwise the target becomes invalid. This value is only used if the entity doesn't declare \"minecraft:follow_range\".",
+        "dataType": 3,
+        "defaultValue": 0
+      }
+    ]
+  }
+}

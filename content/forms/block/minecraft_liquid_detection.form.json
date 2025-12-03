@@ -34,6 +34,13 @@
         "dataType": 17
       },
       {
+        "id": "use_liquid_clipping",
+        "title": "Use Liquid Clipping",
+        "description": "Whether this block uses the collider to visually clip the liquid.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
         "id": "detection_rules",
         "title": "Detection Rules",
         "dataType": 15,

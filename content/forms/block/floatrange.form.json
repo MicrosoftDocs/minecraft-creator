@@ -1,0 +1,22 @@
+{
+  "id": "FloatRange",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "FloatRange",
+    "title": "Block FloatRange",
+    "fields": [
+      {
+        "id": "max",
+        "title": "Max",
+        "dataType": 3,
+        "defaultValue": 0
+      },
+      {
+        "id": "min",
+        "title": "Min",
+        "dataType": 3,
+        "defaultValue": 0
+      }
+    ]
+  }
+}

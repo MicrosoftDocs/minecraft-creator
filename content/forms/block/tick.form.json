@@ -1,0 +1,26 @@
+{
+  "id": "Tick",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Tick",
+    "title": "Block Tick",
+    "fields": [
+      {
+        "id": "interval_range",
+        "title": "Interval Range",
+        "description": "A range of values, specified in ticks, that will be used to decide the interval between times this block will tick. Each interval will be chosen randomly from the range, so the times between this block ticking will differ given an interval_range of two different values. If the values in the interval_range are the same, the block will always be ticked after that number of ticks.",
+        "dataType": 32,
+        "minLength": 2,
+        "maxLength": 2,
+        "isRequired": true
+      },
+      {
+        "id": "looping",
+        "title": "Looping",
+        "description": "Does the block tick continuously? If false, the block will only be ticked once, after a delay equal to a number of ticks randomly chosen from the interval_range. If true, the block will loop, and each interval between ticks will be equal to a number of ticks randomly chosen from the interval_range.",
+        "dataType": 1,
+        "defaultValue": true
+      }
+    ]
+  }
+}

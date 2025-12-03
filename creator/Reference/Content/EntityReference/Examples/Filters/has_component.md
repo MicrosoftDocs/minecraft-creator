@@ -168,3 +168,12 @@ At /minecraft:entity/events/minecraft:ageable_grow_up/sequence/2/filters/:
   "value": "minecraft:is_tamed"
 }
 ```
+
+At /minecraft:entity/events/minecraft:on_mount/filters/: 
+
+```json
+{
+  "test": "has_component",
+  "value": "minecraft:is_saddled"
+}
+```

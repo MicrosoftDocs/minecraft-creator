@@ -554,7 +554,7 @@
           ],
           "/vanilla/behavior_pack/entities/polar_bear.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_wild/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:baby_wild/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/",
               "content": "fox"
             }
           ],
@@ -2025,7 +2025,7 @@
           "content": {
             "test": "is_family",
             "subject": "other",
-            "value": "player"
+            "value": "fox"
           }
         },
         {

@@ -1,0 +1,72 @@
+{
+  "id": "minecraft:item v1.26.0",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:item v1.26.0",
+    "title": "Item 26.0 Item v1",
+    "description": "Item definition includes the \"description\" and \"components\" sections.",
+    "fields": [
+      {
+        "id": "components",
+        "title": "Components",
+        "description": "List of all components used in this item.",
+        "dataType": 16,
+        "defaultValue": {
+          "minecraft:allow_off_hand": null,
+          "minecraft:block_placer": null,
+          "minecraft:bundle_interaction": null,
+          "minecraft:can_destroy_in_creative": null,
+          "minecraft:compostable": null,
+          "minecraft:cooldown": null,
+          "minecraft:damage": null,
+          "minecraft:damage_absorption": null,
+          "minecraft:digger": null,
+          "minecraft:display_name": null,
+          "minecraft:durability": null,
+          "minecraft:durability_sensor": null,
+          "minecraft:dyeable": null,
+          "minecraft:enchantable": null,
+          "minecraft:entity_placer": null,
+          "minecraft:fire_resistant": null,
+          "minecraft:food": null,
+          "minecraft:fuel": null,
+          "minecraft:glint": null,
+          "minecraft:hand_equipped": null,
+          "minecraft:hover_text_color": null,
+          "minecraft:icon": null,
+          "minecraft:interact_button": null,
+          "minecraft:kinetic_weapon": null,
+          "minecraft:liquid_clipped": null,
+          "minecraft:max_stack_size": null,
+          "minecraft:piercing_weapon": null,
+          "minecraft:projectile": null,
+          "minecraft:rarity": null,
+          "minecraft:record": null,
+          "minecraft:repairable": null,
+          "minecraft:shooter": null,
+          "minecraft:should_despawn": null,
+          "minecraft:stacked_by_data": null,
+          "minecraft:storage_item": null,
+          "minecraft:storage_weight_limit": null,
+          "minecraft:storage_weight_modifier": null,
+          "minecraft:swing_duration": null,
+          "minecraft:swing_sounds": null,
+          "minecraft:tags": null,
+          "minecraft:throwable": null,
+          "minecraft:use_animation": null,
+          "minecraft:use_modifiers": null,
+          "minecraft:wearable": null
+        },
+        "subFormId": "item/components"
+      },
+      {
+        "id": "description",
+        "title": "Description",
+        "description": "Contains the required identifier for the item. May contain optional fields like menu_category.",
+        "dataType": 16,
+        "subFormId": "item/description",
+        "isRequired": true
+      }
+    ]
+  }
+}

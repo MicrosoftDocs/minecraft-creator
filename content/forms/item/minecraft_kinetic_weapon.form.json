@@ -169,16 +169,6 @@
         "description": "Time, in ticks, after which kinetic damage and its effects start being applied.",
         "dataType": 0,
         "defaultValue": 0,
-        "validity": [
-          {
-            "comparison": ">=",
-            "value": -32768
-          },
-          {
-            "comparison": "<=",
-            "value": 32767
-          }
-        ],
         "samples": {
           "/vanilla/behavior_pack/items/copper_spear.json": [
             {

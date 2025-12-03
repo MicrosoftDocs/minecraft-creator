@@ -15,37 +15,19 @@
         "id": "major",
         "title": "Major",
         "dataType": 0,
-        "defaultValue": 0,
-        "validity": [
-          {
-            "comparison": "<=",
-            "value": 65535
-          }
-        ]
+        "defaultValue": 0
       },
       {
         "id": "minor",
         "title": "Minor",
         "dataType": 0,
-        "defaultValue": 0,
-        "validity": [
-          {
-            "comparison": "<=",
-            "value": 65535
-          }
-        ]
+        "defaultValue": 0
       },
       {
         "id": "patch",
         "title": "Patch",
         "dataType": 0,
-        "defaultValue": 0,
-        "validity": [
-          {
-            "comparison": "<=",
-            "value": 65535
-          }
-        ]
+        "defaultValue": 0
       },
       {
         "id": "preRelease",

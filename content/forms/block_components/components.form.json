@@ -6,6 +6,112 @@
     "title": "Block Components Components",
     "fields": [
       {
+        "id": "minecraft:collision_box",
+        "title": "Minecraft Collision Box",
+        "description": "Defines the area of the block that collides with entities. If set to true, default values are used. If set to false, the block's collision with entities is disabled. If this component is omitted, default values are used.",
+        "dataType": 1,
+        "alternates": [
+          {
+            "id": "minecraft:collision_box",
+            "dataType": 16,
+            "subForm": {
+              "id": "minecraft:collision_box",
+              "title": "Collision Box",
+              "description": "Information for the collision box.",
+              "fields": [
+                {
+                  "id": "origin",
+                  "title": "Origin",
+                  "description": "Minimal position of the bounds of the collision box.",
+                  "dataType": 32,
+                  "defaultValue": [
+                    -8,
+                    0,
+                    -8
+                  ],
+                  "alternates": [
+                    {
+                      "id": "origin",
+                      "dataType": 16,
+                      "subForm": {
+                        "id": "origin",
+                        "title": "Origin",
+                        "fields": [
+                          {
+                            "id": "x",
+                            "title": "X",
+                            "dataType": 3,
+                            "defaultValue": 0
+                          },
+                          {
+                            "id": "y",
+                            "title": "Y",
+                            "dataType": 3,
+                            "defaultValue": 0
+                          },
+                          {
+                            "id": "z",
+                            "title": "Z",
+                            "dataType": 3,
+                            "defaultValue": 0
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "size",
+                  "title": "Size",
+                  "description": "Size of each side of the collision box.",
+                  "dataType": 32,
+                  "defaultValue": [
+                    16,
+                    16,
+                    16
+                  ],
+                  "alternates": [
+                    {
+                      "id": "size",
+                      "dataType": 16,
+                      "subForm": {
+                        "id": "size",
+                        "title": "Size",
+                        "fields": [
+                          {
+                            "id": "x",
+                            "title": "X",
+                            "dataType": 3,
+                            "defaultValue": 0
+                          },
+                          {
+                            "id": "y",
+                            "title": "Y",
+                            "dataType": 3,
+                            "defaultValue": 0
+                          },
+                          {
+                            "id": "z",
+                            "title": "Z",
+                            "dataType": 3,
+                            "defaultValue": 0
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "minecraft:collision_box",
+            "dataType": 16,
+            "maxLength": 16
+          }
+        ]
+      },
+      {
         "id": "minecraft:crafting_table",
         "title": "Minecraft Crafting Table",
         "description": "Makes your block into a custom crafting table which enables the crafting table UI and the ability to craft recipes.",
@@ -109,26 +215,14 @@
                   "title": "Catch Chance Modifier",
                   "description": "A modifier affecting the chance that this block will catch flame when next to a fire. Values are greater than or equal to 0, with a higher number meaning more likely to catch on fire. For a catch_chance_modifier greater than 0, the fire will continue to burn until the block is destroyed (or it will burn forever if the destroy_chance_modifier is 0). If the catch_chance_modifier is 0, and the block is directly ignited, the fire will eventually burn out without destroying the block (or it will have a chance to be destroyed if destroy_chance_modifier is greater than 0). The default value of 5 is the same as that of Planks.",
                   "dataType": 0,
-                  "defaultValue": 5,
-                  "validity": [
-                    {
-                      "comparison": "<=",
-                      "value": 65535
-                    }
-                  ]
+                  "defaultValue": 5
                 },
                 {
                   "id": "destroy_chance_modifier",
                   "title": "Destroy Chance Modifier",
                   "description": "A modifier affecting the chance that this block will be destroyed by flames when on fire. Values are greater than or equal to 0, with a higher number meaning more likely to be destroyed by fire. For a destroy_chance_modifier of 0, the block will never be destroyed by fire, and the fire will burn forever if the catch_chance_modifier is greater than 0. The default value of 20 is the same as that of Planks.",
                   "dataType": 0,
-                  "defaultValue": 20,
-                  "validity": [
-                    {
-                      "comparison": "<=",
-                      "value": 65535
-                    }
-                  ]
+                  "defaultValue": 20
                 }
               ]
             }
@@ -185,16 +279,6 @@
                             "id": "version",
                             "title": "Version",
                             "dataType": 0,
-                            "validity": [
-                              {
-                                "comparison": ">=",
-                                "value": -32768
-                              },
-                              {
-                                "comparison": "<=",
-                                "value": 32767
-                              }
-                            ],
                             "isRequired": true
                           }
                         ]
@@ -245,6 +329,13 @@
         ]
       },
       {
+        "id": "minecraft:item_visual",
+        "title": "Minecraft Item Visual",
+        "description": "The \"minecraft:geometry\" component and \"minecraft:material_instances\" component of an item. Can be used instead of having separated component for each.",
+        "dataType": 16,
+        "subFormId": "block_components/item_visual"
+      },
+      {
         "id": "minecraft:light_dampening",
         "title": "Minecraft Light Dampening",
         "description": "The amount that light will be dampened when it passes through the block. Higher value means the light will be dampened more.",
@@ -283,6 +374,13 @@
         "subFormId": "block_components/movable"
       },
       {
+        "id": "minecraft:random_offset",
+        "title": "Minecraft Random Offset",
+        "description": "This component defines a random offset for the block, seeded based on the block's position and the specified range and steps. It affects the block's rendered position, outline, and collision.\nIf the random offset causes the collision box to extend beyond the bounds of a cube, the offset range will automatically adjust to keep the collision box within the cube.\nCulling for this block is performed without considering the random offset.",
+        "dataType": 16,
+        "subFormId": "block_components/random_offset"
+      },
+      {
         "id": "minecraft:redstone_conductivity",
         "title": "Minecraft Redstone Conductivity",
         "description": "The basic redstone properties of a block. If the component is not provided the default values are used.",
@@ -297,6 +395,113 @@
         "subFormId": "block_components/redstone_producer"
       },
       {
+        "id": "minecraft:replaceable",
+        "title": "Minecraft Replaceable",
+        "description": "A block with this component can be replaced when another block is placed in the same block position.",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:selection_box",
+        "title": "Minecraft Selection Box",
+        "description": "Defines the area of the block that is selected by the player's cursor. If set to true, default values are used. If set to false, this block is not selectable by the player's cursor. If this component is omitted, default values are used.",
+        "dataType": 1,
+        "alternates": [
+          {
+            "id": "minecraft:selection_box",
+            "dataType": 16,
+            "subForm": {
+              "id": "minecraft:selection_box",
+              "title": "Selection Box",
+              "description": "Information for the collision box.",
+              "fields": [
+                {
+                  "id": "origin",
+                  "title": "Origin",
+                  "description": "Minimal position of the bounds of the collision box.",
+                  "dataType": 32,
+                  "defaultValue": [
+                    -8,
+                    0,
+                    -8
+                  ],
+                  "alternates": [
+                    {
+                      "id": "origin",
+                      "dataType": 16,
+                      "subForm": {
+                        "id": "origin",
+                        "title": "Origin",
+                        "fields": [
+                          {
+                            "id": "x",
+                            "title": "X",
+                            "dataType": 3,
+                            "defaultValue": 0
+                          },
+                          {
+                            "id": "y",
+                            "title": "Y",
+                            "dataType": 3,
+                            "defaultValue": 0
+                          },
+                          {
+                            "id": "z",
+                            "title": "Z",
+                            "dataType": 3,
+                            "defaultValue": 0
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "size",
+                  "title": "Size",
+                  "description": "Size of each side of the collision box.",
+                  "dataType": 32,
+                  "defaultValue": [
+                    16,
+                    16,
+                    16
+                  ],
+                  "alternates": [
+                    {
+                      "id": "size",
+                      "dataType": 16,
+                      "subForm": {
+                        "id": "size",
+                        "title": "Size",
+                        "fields": [
+                          {
+                            "id": "x",
+                            "title": "X",
+                            "dataType": 3,
+                            "defaultValue": 0
+                          },
+                          {
+                            "id": "y",
+                            "title": "Y",
+                            "dataType": 3,
+                            "defaultValue": 0
+                          },
+                          {
+                            "id": "z",
+                            "title": "Z",
+                            "dataType": 3,
+                            "defaultValue": 0
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
         "id": "minecraft:support",
         "title": "Minecraft Support",
         "description": "Defines the support shape of the block. Currently only allows for blocks to have the same shape as a Vanilla fence and Vanilla stair. To work with custom stairs, requires the use of \"minecraft:vertical_half\" and \"minecraft:cardinal_direction\" or \"minecraft:facing_direction\" which can be set through the \"minecraft:placement_direction\" block trait. Custom blocks without this component will default to unit cube support. The type of support shape for this block. Currently, the options are: \"fence\" and \"stair\".",
@@ -308,6 +513,18 @@
         "title": "Minecraft Tags",
         "description": "Use this component to define tags, vanilla or custom. Valid tags are of the format \"namespace:tag_name\". The array of tags must be non-empty.",
         "dataType": 16
+      },
+      {
+        "id": "minecraft:tick",
+        "title": "Minecraft Tick",
+        "dataType": 16,
+        "subFormId": "block_components/tick"
+      },
+      {
+        "id": "minecraft:transformation",
+        "title": "Minecraft Transformation",
+        "dataType": 16,
+        "subFormId": "block_components/transformation"
       }
     ]
   }
