@@ -372,6 +372,8 @@
           href: Documents/EntityBehaviorComponents.md
         - name: Built-in Entity Events
           href: Documents/EntityEvents.md
+        - name: Custom Behavior and Render Controllers
+          href: Documents/behaviorrendercontrollers.md
         - name: Creating a Goblin Chef Entity 
           href: Documents/MakerSeriesMakingTheGoblinChef.md
         - name: Animations and Rendering
