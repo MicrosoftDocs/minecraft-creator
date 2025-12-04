@@ -72,6 +72,14 @@ The following parameters can be used to control the appearance of caustics:
     5. The game will infer the number of frames in the animation based on the width and height of the overall texture, where # of frames = height / width.
     6. Like any other resource pack texture, the caustics texture should be located under the "`textures`" directory in the root of your pack, and must be declared in "`textures_list.json`".
 
+## Biome water color inclusion
+
+Version `1.26.0` introduces a new parameter to Vibrant Visuals water schemas that helps close the gap between non-Vibrant and Vibrant water. That parameter is a single factor from 0-1 called "`biome_water_color_contribution`", and it controls how much the `surface_color` value defined in *.client_biome.json files will be mixed into the base color of the water in Vibrant Visuals.
+
+Say you have an ocean biome where the "`surface_color`" value, in your biome's JSON under the "`minecraft:water_appearance`" object, is set to "`#1787D4`". When you go to an ocean in non-Vibrant Visuals modes, the color of the water will be "`#1787D4`". However, by default, this color is not utilized in ocean water when in Vibrant Visuals mode. That is because the color of water in Vibrant Visuals is derived primarily from the values defined in "`particle_concentrations`". By using "`biome_water_color_contribution`", packs can tint the water _prior_ to when the "`particle_concentrations`" are applied. Think of this as if the color defined in "`surface_color`" is a colored dye dropped into otherwise crystal-clear water. Then, the concentrations of CDOM, chlorophyll, and sediment further alter the appearance of the water.
+
+A value of 0 "`biome_water_color_contribution`" will result in no contribution from the "`surface_color`", while a value of 1 will result in maximum contribution of the color.
+
 ## Schema
 
 Water configurations are JSON files located in **water/water.json** in a resource pack. They follow this format:
@@ -113,7 +121,8 @@ Water configurations are JSON files located in **water/water.json** in a resourc
             int "power" <1 - 6> : opt, // Controls how bright the caustics effect appears
             float "scale" <0.1 - 5.0> : opt, // Controls how size of the repetition of the caustics texture
             string "texture" : opt // Resource location to a texture for controlling the shape of the caustics; if not used, a built-in Minecraft texture will be supplied automatically
-        }
+        },
+        float "biome_water_color_contribution" <0.0 - 1.0>: opt // Controls the contribution of surface_color water colors defined in *.client_biome.json files
     }
 }
 ```
@@ -123,7 +132,7 @@ The following example JSON can be used as a starting point for an ocean:
 
 ```json
 {
-    "format_version": "1.21.80",
+    "format_version": "1.26.0",
     "minecraft:water_settings": {
         "description": {
             "identifier": "my_pack:default_water"
@@ -152,7 +161,8 @@ The following example JSON can be used as a starting point for an ocean:
             "frame_length": 0.05,
             "power": 2,
             "scale": 0.5
-        }
+        },
+        "biome_water_color_contribution": 0.2
     }
 }
 ```
