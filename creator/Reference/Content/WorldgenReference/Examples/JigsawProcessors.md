@@ -257,9 +257,10 @@ The block will be matched based on it's [BlockSpecifier](#blockspecifier).
 |Name       | Requirement Status | Description | Example |
 |:----------|:-----------|:-----------|:------------- |
 | block_state |Required| [BlockSpecifier](#blockspecifier) to match with. | `"block_state": <BlockSpecifier` |
+
 ```json
 {
-  "predicate_type": "minecraft:random_blockstate_match",
+  "predicate_type": "minecraft:blockstate_match",
   "block_state": <BlockSpecifier>
 }
 ```
