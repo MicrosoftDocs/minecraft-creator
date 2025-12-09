@@ -6,7 +6,6 @@ description: "Advanced Custom Mobs: Custom Behaviors and Render Controllers"
 ms.service: minecraft-bedrock-edition
 ms.date: 11/25/2025
 ---
-
 # Custom Behaviors and Render Controllers
 
 Customizing mobs in Minecraft: Bedrock Edition is a great way to stretch your creative muscles, and leveraging the more advanced resource and behavior pack elements can help take your world building to the next level. In this tutorial, we'll build on our introductory guides to resource and behavior packs by transforming an existing Minecraft entity into one of our own design.  
@@ -17,10 +16,10 @@ We'll explore some of the more advanced applications of mob customization with a
 
 Before you begin this advanced tutorial, we strongly recommend you read through these guides until you can confidently complete the introductory resource and behavior pack tutorials.
 
-- [Intro to Resource Packs](/creator/Documents/ResourcePack.md)
-- [Intro to Behavior Packs](/creator/Documents/BehaviorPack.md)
-- [Create a New Entity](/creator/Documents/IntroductionToAddEntity.md)
-- [Client Entity JSON](/creator/Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md)
+- [Intro to Resource Packs](../Documents/ResourcePack.md)
+- [Intro to Behavior Packs](../Documents/BehaviorPack.md)
+- [Create a New Entity](../Documents/IntroductionToAddEntity.md)
+- [Client Entity JSON](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md)
 
 ## Customizing entity design
 
@@ -29,25 +28,25 @@ The easiest way to create a custom entity is to start with one of the vanilla on
 1. Download and/or open [Blockbench](https://www.blockbench.net/), then update BlockBench and Minecraft: Bedrock Edition to the latest version available if you haven't already done so.
 
 2. Install the Minecraft Entity Wizard plugin and use it to create a new entity.
-![Entity Wizard](/creator/Documents/BedrockEditor/Media/AdvancedCustomMobs/entitywizard.png)
+![Entity Wizard](../Documents/Media/AdvancedCustomMobs/entitywizard.png)
 
 3. Name the entity *shapeshifter* and create an entity identifier.
-![Entity Wizard Name](/creator/Documents/BedrockEditor/Media/AdvancedCustomMobs/entitywizard_name.png)
+![Entity Wizard Name](../Documents/Media/AdvancedCustomMobs/entitywizard_name.png)
 
 4. Select the **Enderman** in *Appearance*.
 
 5. Set the behavior to **Same Behavior** in *Behavior*.
 
 6. Navigate to **Export** and select **Export to Folder** to save your project as a new resource pack in the com.mojang folder. Set the pack name, author(s), and pack icon, then click **Export**.
-![Entity Wizard Export](/creator/Documents/BedrockEditor/Media/AdvancedCustomMobs/entitywizard_export.png)
+![Entity Wizard Export](../Documents/Media/AdvancedCustomMobs/entitywizard_export.png)
     > [!TIP]
     > If you already have a resource pack you want to add the entity to, you can alternatively select **Integrate into Pack**.
 
 7. Select **Edit Model**, then use the Blockbench canvas to paint and customize the vanilla shapeshifter.
-![Edit Model](/creator/Documents/BedrockEditor/Media/AdvancedCustomMobs/entitywizard_editmodel.png)
+![Edit Model](../Documents/Media/AdvancedCustomMobs/entitywizard_editmodel.png)
 
 8. We changed the color of the blocks that make up the vanilla enderman entity from shades of black to shades of grey, but you can go wild with the edits you make at this stage. Check out the [Blockbench wiki](https://www.blockbench.net/wiki) for more information on how to get the most out of their tool.
-![Blockbench Shapeshifter](/creator/Documents/BedrockEditor/Media/AdvancedCustomMobs/blockbench_shapeshifter.png)
+![Blockbench Shapeshifter](../Documents/Media/AdvancedCustomMobs/blockbench_shapeshifter.png)
 
 9. When you're finished editing your new model, save the project to add your visual changes to shapeshifter.entity.json.
 
@@ -150,13 +149,13 @@ With pack management out of the way, now all that's left is to test your packs i
     > [!TIP]
     > Type / to open the command line, then execute the command: summon[entity identifier] to summon the specified entity.
 
-### What next?
+## What next?
 
 Now that you've successfully created a custom entity, try adding further complexity to it with animations and animation controllers to get more comfortable with entity customization.
 
 ### See Also
 
-- [Scripting with TypeScript](/creator/Documents/scripting/next-steps.md)
-- [Molang Query Functions](/creator/Reference/Content/MolangReference/Examples/MolangConcepts/QueryFunctions.md)
-- [Molang Math Functions](/creator/Reference/Content/MolangReference/Examples/MolangConcepts/MathFunctions.md)
-- [Molang Syntax Guide](/creator/Documents/molang/syntax-guide.md)
+- [Scripting with TypeScript](../Documents/scripting/next-steps.md)
+- [Molang Query Functions](../Reference/Content/MolangReference/Examples/MolangConcepts/QueryFunctions.md)
+- [Molang Math Functions](../Reference/Content/MolangReference/Examples/MolangConcepts/MathFunctions.md)
+- [Molang Syntax Guide](../Documents/molang/syntax-guide.md)
