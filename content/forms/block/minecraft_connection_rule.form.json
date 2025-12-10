@@ -1,0 +1,25 @@
+{
+  "id": "minecraft:connection_rule",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:connection_rule",
+    "title": "Connection Rule",
+    "description": "Defines whether other blocks such as fences, walls, bars, and glass panes are allowed to connect to this block.\nExperimental toggles required: Upcoming Creator Features (in format versions before 1.26.0)",
+    "fields": [
+      {
+        "id": "accepts_connections_from",
+        "title": "Accepts Connections From",
+        "description": "The type of block allowed to connect to this block. Currently, the options are: `all` (default), `only_fences`, and `none`. Note that the `only_fences` option allows connections from all Vanilla fences excluding NetherBrick.",
+        "defaultValue": "all",
+        "dataType": 2
+      },
+      {
+        "id": "enabled_directions",
+        "title": "Enabled Directions",
+        "description": "The cardinal directions that connection is enabled for: `north`, `south`, `east`, and `west`. All directions are enabled by default. Note that if `none` is specified for `accepts_connections_from`, this field will not be used.",
+        "defaultValue": "['north', 'south', 'east', 'west']",
+        "dataType": 17
+      }
+    ]
+  }
+}

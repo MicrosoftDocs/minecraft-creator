@@ -149,21 +149,6 @@
         }
       },
       {
-        "id": "can_dehydrate",
-        "title": "Can Dehydrate",
-        "description": "If true, water-only breathers will take Dehydration damage when out of water.",
-        "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/nautilus.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:breathable/",
-              "content": true
-            }
-          ]
-        }
-      },
-      {
         "id": "generates_bubbles",
         "title": "Generates Bubbles",
         "description": "If true, this entity will have visible bubbles while in water.",
@@ -634,8 +619,7 @@
             "total_supply": 15,
             "suffocate_time": 0,
             "breathes_air": false,
-            "breathes_water": true,
-            "can_dehydrate": true
+            "breathes_water": true
           }
         }
       ],

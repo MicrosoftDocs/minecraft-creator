@@ -2,6 +2,8 @@
   href: BlockComponentsList.md
 - name: minecraft:collision_box
   href: minecraftBlock_collision_box.md
+- name: minecraft:connection_rule
+  href: minecraftBlock_connection_rule.md
 - name: minecraft:crafting_table
   href: minecraftBlock_crafting_table.md
 - name: minecraft:destructible_by_explosion

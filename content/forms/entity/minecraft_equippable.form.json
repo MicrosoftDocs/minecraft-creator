@@ -267,7 +267,7 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_horse.json": [
         {
-          "path": "/minecraft:entity/components/minecraft:equippable/",
+          "path": "/minecraft:entity/component_groups/minecraft:horse_adult/minecraft:equippable/",
           "content": {
             "slots": [
               {

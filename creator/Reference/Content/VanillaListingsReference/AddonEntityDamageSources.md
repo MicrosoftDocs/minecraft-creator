@@ -19,7 +19,6 @@ Listed below are the available Damage Sources that can be used when working with
 | campfire |
 | charging |
 | contact |
-| dehydration |
 | drowning |
 | entity_attack |
 | entity_explosion |

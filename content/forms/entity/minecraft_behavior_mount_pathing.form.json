@@ -42,6 +42,12 @@
               "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
               "content": 1.5
             }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild_mounted/minecraft:behavior.mount_pathing/",
+              "content": 1
+            }
           ]
         }
       },
@@ -56,6 +62,12 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
               "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild_mounted/minecraft:behavior.mount_pathing/",
+              "content": 2
             }
           ]
         }
@@ -130,9 +142,9 @@
               "content": 5
             }
           ],
-          "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
+              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild_mounted/minecraft:behavior.mount_pathing/",
               "content": 3
             }
           ]
@@ -387,6 +399,17 @@
             "priority": 2,
             "speed_multiplier": 1.5,
             "target_dist": 0,
+            "track_target": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild_mounted/minecraft:behavior.mount_pathing/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 1,
+            "target_dist": 2,
             "track_target": true
           }
         }
