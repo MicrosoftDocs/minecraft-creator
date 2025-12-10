@@ -24,7 +24,7 @@ Contains types related to administering a Bedrock Dedicated Server. These types 
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.0-beta.24 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.0-beta.25 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`
@@ -62,7 +62,7 @@ Transfer player to another server.
   Options for where to send the player.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ## Objects

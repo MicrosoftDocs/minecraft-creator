@@ -21,5 +21,5 @@ closeAllForms(player: minecraftserver.Player): void
 - **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

@@ -28,11 +28,13 @@ Adds a callback that will be called when a script runtime is being terminated du
 
 #### **Parameters**
 - **callback**: (arg0: [*WatchdogTerminateBeforeEvent*](WatchdogTerminateBeforeEvent.md)) => *void*
+  This closure is called with restricted-execution privilege.
 
 **Returns** (arg0: [*WatchdogTerminateBeforeEvent*](WatchdogTerminateBeforeEvent.md)) => *void*
+  The returned closure is called with restricted-execution privilege.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 ### **unsubscribe**
@@ -44,7 +46,8 @@ Removes a callback from being called when a script runtime is being terminated d
 
 #### **Parameters**
 - **callback**: (arg0: [*WatchdogTerminateBeforeEvent*](WatchdogTerminateBeforeEvent.md)) => *void*
+  This closure is called with restricted-execution privilege.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.

@@ -90,7 +90,7 @@ Adds an item to the container. The item is placed in the first available slot(s)
 **Returns** [*ItemStack*](ItemStack.md) | *undefined*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*ContainerRulesError*](ContainerRulesError.md), *Error*
 
@@ -102,7 +102,7 @@ clearAll(): void
 Clears all inventory items in the container.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws if the container is invalid.
 
@@ -267,7 +267,7 @@ Moves an item from one slot to another, potentially across containers.
   Target container to transfer to. Note this can be the same container as the source.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*ContainerRulesError*](ContainerRulesError.md), *Error*
 
@@ -321,7 +321,7 @@ Sets an item stack within a particular slot.
   Stack of items to place within the specified slot. Setting `itemStack` to undefined will clear the slot.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*ContainerRulesError*](ContainerRulesError.md), *Error*
 
@@ -344,7 +344,7 @@ Swaps items between two different slots within containers.
   Target container to swap with. Note this can be the same container as this source.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*ContainerRulesError*](ContainerRulesError.md), *Error*
 
@@ -366,7 +366,7 @@ Moves an item from one slot to another container, or to the first available slot
 **Returns** [*ItemStack*](ItemStack.md) | *undefined* - An itemStack with the items that couldn't be transferred. Returns undefined if all items were transferred.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*ContainerRulesError*](ContainerRulesError.md), *Error*
 

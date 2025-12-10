@@ -51,6 +51,7 @@ Any components that this Biome uses.
 | minecraft:surface_builder | *not set* | [Surface Builder](#biome-surface-builder) item | Controls the materials used for terrain generation. |  | 
 | minecraft:surface_material_adjustments | *not set* | [Surface Material Adjustments](#biome-surface-material-adjustments) item | Specify fine-detail changes to blocks used in terrain generation (based on a noise function). |  | 
 | minecraft:tags | *not set* | [Tags](#biome-tags) item | Attach arbitrary string tags to this biome.<br>Most biome tags are referenced by JSON settings, but some meanings of tags are directly implemented in the game's code. These tags are listed here:<br>birch: Biome uses wildflowers (mutually exclusive with other flower biome tags). Does nothing if biome is tagged "hills".<br>cold: Villagers will be dressed for snowy weather.<br>deep: Pre-Caves and Cliffs, prevents an ocean from having islands or connected rivers and makes the biome less likely to have hills.<br>desert: Allows partially-buried ruined portals to be placed in the biome. Sand blocks will play ambient sounds when the player is nearby.<br>extreme_hills: Ruined portals can be placed higher than normal. Biomes tagged "forest" or "forest_generation" will use normal Overworld flowers instead of forest flowers.<br>flower_forest: Biome uses forest flowers (mutually exclusive with other flower biome tags).<br>forest: Biome uses forest flowers (mutually exclusive with other flower biome tags). Does nothing if biome is tagged tagged "taiga" or "extreme_hills".<br>forest_generation: Equivalent to "forest".<br>frozen: Villagers will be dressed for snowy weather. Prevents the biome from containing lava springs if it is also tagged "ocean".<br>ice: Around ruined portals, lava is always replaced by Netherrack and Netherrack cannot be replaced by magma.<br>ice_plains: Prevents the biome from containing lava springs if it is also tagged "mutated".<br>jungle: Ruined portals will be very mossy.<br>hills: Biomes tagged "meadow" or "birch" will use normal Overworld flowers instead of wildflowers.<br>meadow: Biome uses wildflowers (mutually exclusive with other flower biome tags). Does nothing if biome is tagged "hills".<br>mesa: Sand blocks will play ambient sounds when the player is nearby.<br>mountain: Ruined portals can be placed higher than normal.<br>mutated: Pre-Caves and Cliffs, prevents switching to the specified "mutate_transformation" as the biome is already considered mutated. Prevents the biome from containing lava springs if it is also tagged "ice_plains".<br>no_legacy_worldgen: Prevents biome from using legacy world generation behavior unless the biome is being placed in the Overworld.<br>ocean: Prevents the biome from containing lava springs if it is also tagged "frozen". Allows ruined portals to be found underwater. Pre-Caves and Cliffs, determines if shorelines and rivers should be placed at the edges of the biome and identifies the biome as a shallow ocean for placing islands, unless the "deep" tag is present.<br>pale_garden: Biome uses closed-eye blossoms (mutually exclusive with other flower biome tags).<br>plains: Biome uses plains flowers (mutually exclusive with other flower biome tags).<br>rare: Pre-Caves and Cliffs, this tag flags the biome as a special biome. Oceans cannot be special.<br>swamp: Allows ruined portals to be found underwater. Biome uses swamp flowers (mutually exclusive with other flower biome tags).<br>taiga: Biomes tagged "forest" or "forest_generation" will use normal Overworld flowers instead of forest flowers. |  | 
+| minecraft:village_type | *not set* | [Village Type](#biome-village-type) item | Determines the type of village for the Biome |  | 
 
 ## Biome Climate
 Describes temperature, humidity, precipitation, and similar. Biomes without this component will have default values.
@@ -239,7 +240,7 @@ Represents the replacement information used to determine the placement of the ov
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | amount | *not set* | Decimal number | Noise value used to determine whether or not the replacement is attempted, similar to a percentage. Must be in the range (0.0, 1.0]. Value must be <= 1. |  | 
-| dimension | *not set* | String | Dimension in which this replacement can happen. Must be 'minecraft:overworld'. |  | 
+| dimension | *not set* | String | Dimension in which this replacement can happen. Can be either 'minecraft:overworld' or 'minecraft:nether'. |  | 
 | noise_frequency_scale | *not set* | Decimal number | Scaling value used to alter the frequency of replacement attempts. A lower frequency will mean a bigger contiguous biome area that occurs less often. A higher frequency will mean smaller contiguous biome areas that occur more often. Must be in the range (0.0, 100.0]. Value must be <= 100. |  | 
 | targets | *not set* | Array of objects | Biomes that are going to be replaced by the overriding biome. Target biomes must not contain namespaces. Value must have at least 1 items. |  | 
 
@@ -631,6 +632,26 @@ taiga: Biomes tagged "forest" or "forest_generation" will use normal Overworld f
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | tags | *not set* | Array of strings | Array of string tags used by other systems such as entity spawning |  | 
+
+## Biome Village Type
+Determines the type of village for the Biome.
+
+
+#### Biome Village Type Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| type | *not set* | [Type](#type-choices) choices |  |  | 
+
+### Type choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| default | Default | |
+| desert | Desert | |
+| ice | Ice | |
+| savanna | Savanna | |
+| taiga | Taiga | |
 
 ## Biome Description
 Contains non-component settings for a Biome.

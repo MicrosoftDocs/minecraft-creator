@@ -20,7 +20,7 @@ description: Contents of the @minecraft/server-editor.WidgetComponentRenderPrimi
 Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **color**
 `color: minecraftserver.RGBA;`
@@ -28,7 +28,7 @@ Notes:
 Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **radius**
 `radius: number;`
@@ -36,7 +36,7 @@ Notes:
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ## Methods
 - [constructor](#constructor)

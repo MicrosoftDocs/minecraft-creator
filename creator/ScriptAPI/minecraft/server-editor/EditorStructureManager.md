@@ -29,7 +29,7 @@ createEmpty(fullName: string, size: minecraftserver.Vector3): EditorStructure
 **Returns** [*EditorStructure*](EditorStructure.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **createFromClipboardItem**
@@ -44,7 +44,7 @@ createFromClipboardItem(item: ClipboardItem, fullName: string): EditorStructure
 **Returns** [*EditorStructure*](EditorStructure.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **deleteStructure**
@@ -56,7 +56,7 @@ deleteStructure(id: string): void
 - **id**: *string*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getExistingTags**
@@ -67,7 +67,7 @@ getExistingTags(): string[]
 **Returns** *string*[]
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getStructure**
@@ -81,7 +81,7 @@ getStructure(id: string): EditorStructure
 **Returns** [*EditorStructure*](EditorStructure.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **searchStructures**
@@ -95,5 +95,5 @@ searchStructures(options?: EditorStructureSearchOptions): EditorStructure[]
 **Returns** [*EditorStructure*](EditorStructure.md)[]
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

@@ -318,7 +318,7 @@
             {
               "path": "/minecraft:item/components/minecraft:kinetic_weapon/",
               "content": {
-                "max_duration": 100,
+                "max_duration": 165,
                 "min_speed": 5.1
               }
             }
@@ -327,7 +327,7 @@
             {
               "path": "/minecraft:item/components/minecraft:kinetic_weapon/",
               "content": {
-                "max_duration": 80,
+                "max_duration": 130,
                 "min_speed": 5.1
               }
             }
@@ -336,7 +336,7 @@
             {
               "path": "/minecraft:item/components/minecraft:kinetic_weapon/",
               "content": {
-                "max_duration": 110,
+                "max_duration": 170,
                 "min_speed": 5.1
               }
             }
@@ -345,7 +345,7 @@
             {
               "path": "/minecraft:item/components/minecraft:kinetic_weapon/",
               "content": {
-                "max_duration": 90,
+                "max_duration": 135,
                 "min_speed": 5.1
               }
             }
@@ -354,7 +354,7 @@
             {
               "path": "/minecraft:item/components/minecraft:kinetic_weapon/",
               "content": {
-                "max_duration": 70,
+                "max_duration": 110,
                 "min_speed": 5.1
               }
             }
@@ -363,7 +363,7 @@
             {
               "path": "/minecraft:item/components/minecraft:kinetic_weapon/",
               "content": {
-                "max_duration": 110,
+                "max_duration": 180,
                 "min_speed": 5.1
               }
             }
@@ -372,7 +372,7 @@
             {
               "path": "/minecraft:item/components/minecraft:kinetic_weapon/",
               "content": {
-                "max_duration": 120,
+                "max_duration": 200,
                 "min_speed": 5.1
               }
             }
@@ -432,7 +432,7 @@
               "min_relative_speed": 4.6
             },
             "knockback_conditions": {
-              "max_duration": 100,
+              "max_duration": 165,
               "min_speed": 5.1
             },
             "dismount_conditions": {
@@ -462,7 +462,7 @@
               "min_relative_speed": 4.6
             },
             "knockback_conditions": {
-              "max_duration": 80,
+              "max_duration": 130,
               "min_speed": 5.1
             },
             "dismount_conditions": {
@@ -492,7 +492,7 @@
               "min_relative_speed": 4.6
             },
             "knockback_conditions": {
-              "max_duration": 110,
+              "max_duration": 170,
               "min_speed": 5.1
             },
             "dismount_conditions": {
@@ -522,7 +522,7 @@
               "min_relative_speed": 4.6
             },
             "knockback_conditions": {
-              "max_duration": 90,
+              "max_duration": 135,
               "min_speed": 5.1
             },
             "dismount_conditions": {
@@ -552,7 +552,7 @@
               "min_relative_speed": 4.6
             },
             "knockback_conditions": {
-              "max_duration": 70,
+              "max_duration": 110,
               "min_speed": 5.1
             },
             "dismount_conditions": {
@@ -582,7 +582,7 @@
               "min_relative_speed": 4.6
             },
             "knockback_conditions": {
-              "max_duration": 110,
+              "max_duration": 180,
               "min_speed": 5.1
             },
             "dismount_conditions": {
@@ -612,7 +612,7 @@
               "min_relative_speed": 4.6
             },
             "knockback_conditions": {
-              "max_duration": 120,
+              "max_duration": 200,
               "min_speed": 5.1
             },
             "dismount_conditions": {

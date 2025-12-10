@@ -33,7 +33,7 @@ Type: *number*
 > This property is deprecated and will be removed in 2.0.0.
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ## Constants
 

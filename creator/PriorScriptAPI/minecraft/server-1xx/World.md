@@ -369,7 +369,7 @@ Plays a particular music track for all players.
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
 
@@ -423,7 +423,7 @@ Plays a sound for all players. DEPRECATED: Use Dimension.playSound.
 > This function is deprecated and will be removed in 2.0.0.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
 
@@ -477,7 +477,7 @@ Queues an additional music track for players. If a track is not playing, a music
   Additional options for the music track.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
 
@@ -510,7 +510,7 @@ Sets the world time.
   The world time, in ticks.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setDefaultSpawnLocation**
 `
@@ -525,7 +525,7 @@ Sets a default spawn location for all players.
   Location of the spawn point. Note that this is assumed to be within the overworld dimension.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
@@ -542,7 +542,7 @@ Sets the worlds difficulty.
   The difficulty we want to set the world to.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setDynamicProperty**
 `
@@ -652,7 +652,7 @@ Sets the time of day.
   The time of day, in ticks, between 0 and 24000.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws if the provided time of day is not within the valid range.
 
@@ -664,4 +664,4 @@ stopMusic(): void
 Stops any music tracks from playing.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.

@@ -94,7 +94,7 @@ clear(): void
 Clear the contents of the volume stack
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getBlockLocationIterator**
 `
@@ -112,7 +112,7 @@ Note that the Block Locations returned by this iterator are in absolute world sp
 **Returns** [*BlockLocationIterator*](BlockLocationIterator.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getBoundingBox**
 `
@@ -126,7 +126,7 @@ Note that the bounding box returned is represented in absolute world space  (irr
 **Returns** [*BlockBoundingBox*](BlockBoundingBox.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getMax**
 `
@@ -140,7 +140,7 @@ Note that the max location returned is in absolute world space (irrespective of 
 **Returns** [*Vector3*](Vector3.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getMin**
 `
@@ -154,7 +154,7 @@ Note that the min location returned is in absolute world space (irrespective of 
 **Returns** [*Vector3*](Vector3.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getOrigin**
 `
@@ -166,7 +166,7 @@ Fetch the origin in world space of the compound volume
 **Returns** [*Vector3*](Vector3.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **isEmpty**
 `
@@ -178,7 +178,7 @@ Return a boolean which signals if there are any volume items pushed to the volum
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **isInside**
 `
@@ -195,7 +195,7 @@ E.g. if the stack contains a large cube followed by a slightly smaller negative 
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **peekLastVolume**
 `
@@ -220,7 +220,7 @@ Inspect the last entry pushed to the volume stack without affecting the stack co
 **Returns** [*CompoundBlockVolumeItem*](CompoundBlockVolumeItem.md) | *undefined* - Returns undefined if the stack is empty
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **popVolume**
 `
@@ -232,7 +232,7 @@ Remove the last entry from the volume stack.  This will reduce the stack size by
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **pushVolume**
 `
@@ -249,7 +249,7 @@ The item also contains a `locationRelativity` which determines whether it is rel
   Item to push to the end of the stack
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **replaceOrAddLastVolume**
 `
@@ -268,7 +268,7 @@ If the volume stack is NOT empty, this function will replace the last item on th
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setOrigin**
 `
@@ -298,7 +298,7 @@ Set the origin of the compound volume to an absolute world space location
   Now, you can push the relative sphere locations again (this time they will be relative to the new origin) - resulting in 2 spheres next to each other.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **translateOrigin**
 `
@@ -314,4 +314,4 @@ Similar to [*@minecraft/server.CompoundBlockVolume.setOrigin*](../../../scriptap
   See the description for the arguments to [*@minecraft/server.CompoundBlockVolume.setOrigin*](../../../scriptapi/minecraft/server/CompoundBlockVolume.md#setorigin)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.

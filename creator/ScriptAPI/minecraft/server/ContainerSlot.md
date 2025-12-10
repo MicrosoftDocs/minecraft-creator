@@ -21,7 +21,7 @@ Number of the items in the stack. Valid values range between 1-255. The provided
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
   - This property can throw errors when used.
     - Throws if the value is outside the range of 1-255.
 
@@ -51,7 +51,7 @@ Gets or sets whether the item is kept on death.
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
   - This property can throw errors when used.
     - Throws if the slot's container is invalid.
 
@@ -63,7 +63,7 @@ Gets or sets the item's lock mode. The default value is `ItemLockMode.none`.
 Type: [*ItemLockMode*](ItemLockMode.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
   - This property can throw errors when used.
     - Throws if the slot's container is invalid.
 
@@ -86,7 +86,7 @@ Given name of this stack of items. The name tag is displayed when hovering over 
 Type: *string*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
   - This property can throw errors when used.
     - Throws if the slot's container is invalid. Also throws if the length exceeds 255 characters.
 
@@ -328,7 +328,7 @@ The list of block types this item can break in Adventure mode. The block names a
   The list of blocks, given by their identifiers.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws *Error*, [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
@@ -345,7 +345,7 @@ The list of block types this item can be placed on in Adventure mode. This is on
   The list of blocks, given by their identifiers.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws *Error*, [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
@@ -397,7 +397,7 @@ Sets the given ItemStack in the slot, replacing any existing item.
   The ItemStack to be placed in the slot.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*ContainerRulesError*](ContainerRulesError.md), [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
@@ -414,6 +414,6 @@ Sets the lore value - a secondary display string - for an ItemStack.
   A list of lore strings. Setting this argument to undefined will clear the lore.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), *Error*, [*InvalidContainerSlotError*](InvalidContainerSlotError.md)

@@ -108,7 +108,7 @@ Creates a copy of a Structure and saves it with a new name.
 **Returns** [*Structure*](Structure.md) - Returns the newly created structure.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
 
@@ -120,7 +120,7 @@ saveToWorld(): void
 Saves a modified Structure to the world file.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidStructureError*](InvalidStructureError.md)
 
@@ -143,6 +143,6 @@ Sets a BlockPermutation within a Structure.
   Specifies whether the block should be waterlogged. Air and undefined blocks cannot be waterlogged.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)

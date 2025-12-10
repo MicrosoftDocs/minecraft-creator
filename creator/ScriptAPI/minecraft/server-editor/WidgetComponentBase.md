@@ -47,7 +47,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **name**
 `read-only name: string;`
@@ -64,7 +64,7 @@ Notes:
 Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **valid**
 `read-only valid: boolean;`
@@ -94,6 +94,6 @@ Notes:
 `
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md)

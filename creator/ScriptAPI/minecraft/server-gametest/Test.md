@@ -566,7 +566,7 @@ Destroys a block at a particular location.
   Whether to add resources exposed with a particular drop.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -615,7 +615,7 @@ Gets a block at the specified block location.
 **Returns** [*@minecraft/server.Block*](../../../scriptapi/minecraft/server/Block.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -647,7 +647,7 @@ If the block at the specified block location is a fence, this returns a helper o
 **Returns** [*FenceConnectivity*](FenceConnectivity.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -666,7 +666,7 @@ Retrieves a sculk spreader object that can be used to control and manage how scu
 **Returns** [*SculkSpreader*](SculkSpreader.md) | *undefined* - Returns the SculkSpreader or undefined if no SculkSpreader is present on the block.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -698,7 +698,7 @@ This asynchronous function will wait for the specified time in ticks before cont
 **Returns** Promise&lt;*void*&gt;
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md)
 
@@ -712,7 +712,7 @@ Returns whether or not the test is currently in the Clean Up step after running.
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **isCompleted**
 `
@@ -724,7 +724,7 @@ Returns whether or not the test has already completed
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **killAllEntities**
 `
@@ -734,7 +734,7 @@ killAllEntities(): void
 Kills all entities within the GameTest structure.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -748,7 +748,7 @@ onPlayerJump(mob: minecraftserver.Entity, jumpAmount: number): void
 - **jumpAmount**: *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -765,7 +765,7 @@ Presses a button at a block location.
   Location to push the button at.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -782,7 +782,7 @@ Displays the specified message to all players.
   Message to display.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -799,7 +799,7 @@ Pulls a lever at a block location.
   Location to pull the lever at.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -819,7 +819,7 @@ Sends a Redstone pulse at a particular location by creating a temporary Redstone
   Number of ticks to pulse Redstone.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -856,7 +856,7 @@ From a location, returns a new location with coordinates relative to the current
 **Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md) - A location relative to the GameTest command block.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -873,7 +873,7 @@ Removes a simulated player from the world.
   Simulated player to remove.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md)
 
@@ -892,7 +892,7 @@ Returns a relative direction given the current rotation of the current test. Pas
 **Returns** [*@minecraft/server.Direction*](../../../scriptapi/minecraft/server/Direction.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -907,7 +907,7 @@ rotateVector(vector: minecraftserver.Vector3): minecraftserver.Vector3
 **Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -927,7 +927,7 @@ Runs a specific callback after a specified delay of ticks
   Callback function to execute.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **runAtTickTime**
@@ -946,7 +946,7 @@ Runs the given callback after a delay of _tick_ ticks from the start of the Game
   Callback function to execute.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **runOnFinish**
@@ -962,7 +962,7 @@ Runs the given callback after the GameTest has completed regardless if the test 
   Callback to execute.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -982,7 +982,7 @@ Sets a block to a particular configuration (a BlockPermutation) at the specified
   Location of the block to set.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -1002,7 +1002,7 @@ Sets a block to a particular type at the specified block location.
   Location of the block to set.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -1048,7 +1048,7 @@ For blocks that are fluid containers - like a cauldron - changes the type of flu
   Type of fluid to set. See [*@minecraft/server.FluidType*](../../../scriptapi/minecraft/server/FluidType.md) for a list of values.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -1068,7 +1068,7 @@ Sets the fuse of an explodable entity.
   Length of time, in ticks, before the entity explodes.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -1088,7 +1088,7 @@ Spawns an entity at a location.
 **Returns** [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md) - The spawned entity. If the entity cannot be spawned, returns undefined.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -1202,7 +1202,7 @@ Spawns an entity at a location.
 **Returns** [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md) - The spawned entity. If the entity cannot be spawned, returns undefined.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -1224,7 +1224,7 @@ Spawns an item entity at a specified location.
 **Returns** [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -1247,7 +1247,7 @@ Creates a new simulated player within the world.
 **Returns** [*SimulatedPlayer*](SimulatedPlayer.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -1267,7 +1267,7 @@ Spawns an entity at a location without any AI behaviors. This method is frequent
 **Returns** [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -1287,7 +1287,7 @@ Spawns an entity at a location without any AI behaviors. This method is frequent
 **Returns** [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -1310,7 +1310,7 @@ Tests that a particular item entity is present at a particular location. If not,
   Direction to spread. Use the Minecraft.Direction enum to specify a direction.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -1324,7 +1324,7 @@ Creates a new GameTestSequence - A set of steps that play out sequentially withi
 **Returns** [*GameTestSequence*](GameTestSequence.md) - A new GameTestSequence with chaining methods that facilitate creating a set of steps.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md)
 
@@ -1336,7 +1336,7 @@ succeed(): void
 Marks the current test as a success case.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **succeedIf**
@@ -1352,7 +1352,7 @@ Runs the given callback. If the callback does not throw an exception, the test i
   Callback function that runs. If the function runs successfully, the test is marked as a success. Typically, this function will have .assertXyz method calls within it.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **succeedOnTick**
@@ -1368,7 +1368,7 @@ Marks the test as a success at the specified tick.
   Tick after the start of the GameTest to mark the test as successful.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **succeedOnTickWhen**
@@ -1387,7 +1387,7 @@ Runs the given callback at _tick_ ticks after the start of the test. If the call
   Callback function that runs. If the function runs successfully, the test is marked as a success.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **succeedWhen**
@@ -1403,7 +1403,7 @@ Runs the given callback every tick. When the callback successfully executes, the
   Testing callback function that runs. If the function runs successfully, the test is marked as a success.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 #### Examples
@@ -1451,7 +1451,7 @@ Depending on the condition of isPresent, tests for the presence of a block of a 
   If true, this function tests whether a block of the specified type is present. If false, tests that a block of the specified type is not present.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -1477,7 +1477,7 @@ Tests for the presence of a component on every tick. Depending on the value of h
   If true, this function tests for the presence of a component. If false, this function tests for the lack of a component.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **succeedWhenEntityPresent**
@@ -1499,7 +1499,7 @@ Depending on the value of isPresent, tests for the presence of an entity on ever
   If true, this function tests whether an entity of the specified type is present. If false, tests that an entity of the specified type is not present.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 #### Examples
@@ -1562,7 +1562,7 @@ Triggers a block event from a fixed list of available block events.
 - **eventParameters**?: *number*[] = `[]`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -1581,7 +1581,7 @@ This asynchronous function will wait until the code in the specified callback su
 **Returns** Promise&lt;*void*&gt;
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md)
 
@@ -1604,7 +1604,7 @@ Forces a mob to walk to a particular location. Usually used in conjunction with 
   Adjustable modifier to the mob's walking speed.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
@@ -1627,7 +1627,7 @@ Forces a mob to walk to a particular location. Usually used in conjunction with 
   Adjustable modifier to the mob's walking speed.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 

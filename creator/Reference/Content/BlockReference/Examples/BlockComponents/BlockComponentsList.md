@@ -12,6 +12,7 @@ ms.date: 02/11/2025
 | Block Components | Description |
 |:-----|:----------|
 | [minecraft:collision_box](./minecraftBlock_collision_box.md)| Defines the area of the block that collides with entities. |
+| [minecraft:connection_rule](./minecraftBlock_connection_rule.md)| Defines whether other blocks such as fences, walls, bars, and glass panes are allowed to connect to this block.<br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.26.0) |
 | [minecraft:crafting_table](./minecraftBlock_crafting_table.md)| Makes your block into a custom crafting table which enables the crafting table UI and the ability to craft recipes. |
 | [minecraft:destructible_by_explosion](./minecraftBlock_destructible_by_explosion.md)| Describes the destructible by explosion properties for this block. |
 | [minecraft:destructible_by_mining](./minecraftBlock_destructible_by_mining.md)| Describes the destructible by mining properties for this block. |

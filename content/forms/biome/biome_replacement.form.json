@@ -21,7 +21,7 @@
       {
         "id": "dimension",
         "title": "Dimension",
-        "description": "Dimension in which this replacement can happen. Must be 'minecraft:overworld'.",
+        "description": "Dimension in which this replacement can happen. Can be either 'minecraft:overworld' or 'minecraft:nether'.",
         "dataType": 2,
         "isRequired": true
       },

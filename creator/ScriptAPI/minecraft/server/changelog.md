@@ -50,7 +50,9 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`Block`](Block.md)*
 - Added property *[`isSolid`](Block.md#issolid)*
 - Added function *[`canPlace`](Block.md#canplace)*
+- Added function *[`getComponents`](Block.md#getcomponents)*
 - Added function *[`getMapColor`](Block.md#getmapcolor)*
+- Added function *[`hasComponent`](Block.md#hascomponent)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
 #### Added *[`BlockComponentEntityEvent`](BlockComponentEntityEvent.md)*
@@ -101,6 +103,10 @@ description: Changelog of the `@minecraft/server` module
   - Changed argument `options` type from [*EntityEventOptions*](EntityEventOptions.md) to [*EntityHurtAfterEventOptions*](EntityHurtAfterEventOptions.md)
 #### Added *[`EntityHurtBeforeEvent`](EntityHurtBeforeEvent.md)*
 #### Added *[`EntityHurtBeforeEventSignal`](EntityHurtBeforeEventSignal.md)*
+#### Added *[`EntityItemPickupAfterEvent`](EntityItemPickupAfterEvent.md)*
+#### Added *[`EntityItemPickupAfterEventSignal`](EntityItemPickupAfterEventSignal.md)*
+#### Added *[`EntityItemPickupBeforeEvent`](EntityItemPickupBeforeEvent.md)*
+#### Added *[`EntityItemPickupBeforeEventSignal`](EntityItemPickupBeforeEventSignal.md)*
 #### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
 #### Changed *[`EntityType`](EntityType.md)*
 - Added property *[`localizationKey`](EntityType.md#localizationkey)*
@@ -145,6 +151,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
 #### Changed *[`World`](World.md)*
+- Added property *[`seed`](World.md#seed)*
 - Added property *[`tickingAreaManager`](World.md#tickingareamanager)*
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
 - Added function *[`getAimAssist`](World.md#getaimassist)*
@@ -152,6 +159,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
 - Added property *[`entityHeal`](WorldAfterEvents.md#entityheal)*
+- Added property *[`entityItemPickup`](WorldAfterEvents.md#entityitempickup)*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
 - Added property *[`packSettingChange`](WorldAfterEvents.md#packsettingchange)*
 - Added property *[`playerSwingStart`](WorldAfterEvents.md#playerswingstart)*
@@ -160,6 +168,7 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
 - Added property *[`entityHeal`](WorldBeforeEvents.md#entityheal)*
 - Added property *[`entityHurt`](WorldBeforeEvents.md#entityhurt)*
+- Added property *[`entityItemPickup`](WorldBeforeEvents.md#entityitempickup)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
 #### Added enum [`AimAssistTargetMode`](AimAssistTargetMode.md)
 #### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
@@ -1063,7 +1072,6 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`EasingType`](EasingType.md)
 #### Changed enum [`EntityDamageCause`](EntityDamageCause.md)
 - Added value `campfire`
-- Added value `dehydration`
 - Added value `maceSmash`
 - Added value `ramAttack`
 - Added value `sonicBoom`

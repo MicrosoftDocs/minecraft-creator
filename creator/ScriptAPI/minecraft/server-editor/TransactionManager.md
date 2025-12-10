@@ -45,7 +45,7 @@ addEntityOperation(entity: minecraftserver.Entity, type: EntityOperationType): b
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **addUserDefinedOperation**
@@ -59,7 +59,7 @@ addUserDefinedOperation(transactionHandlerId: UserDefinedTransactionHandlerId, o
 - **operationName**?: *string* = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **commitOpenTransaction**
@@ -74,7 +74,7 @@ The open record will be closed and all tracking operations will cease.
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **commitTrackedChanges**
@@ -89,7 +89,7 @@ Pending block changes from tracking operations will be added to the transaction 
 **Returns** *number* - Returns the number of change requests that were being tracked
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **createUserDefinedTransactionHandler**
@@ -104,7 +104,7 @@ createUserDefinedTransactionHandler(undoClosure: (arg0: string) => void, redoClo
 **Returns** [*UserDefinedTransactionHandlerId*](UserDefinedTransactionHandlerId.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **discardOpenTransaction**
@@ -119,7 +119,7 @@ All records within the transaction will be discarded, and any tracking requests 
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **discardTrackedChanges**
@@ -132,7 +132,7 @@ Discard any pending tracked changes.  This does not affect the current open tran
 **Returns** *number* - Returns the number of change requests that were discarded
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **isBusy**
@@ -143,7 +143,7 @@ isBusy(): boolean
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **openTransaction**
@@ -163,7 +163,7 @@ All transaction operations within a record are grouped and treated as a single a
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **redo**
@@ -178,7 +178,7 @@ Perform an redo operation.  This will take the last transaction record on the re
 The transaction record affected by this operation will be transferred to the undo stack in case the creator decides to undo it
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **redoSize**
@@ -191,7 +191,7 @@ Return the number of transaction records on the redo stack.
 **Returns** *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **trackBlockChangeArea**
@@ -214,7 +214,7 @@ The pending list will be added to the open transaction record when a commit has 
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **trackBlockChangeList**
@@ -232,7 +232,7 @@ Begin tracking block changes in a list of specified block locations.
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **trackBlockChangeVolume**
@@ -246,7 +246,7 @@ trackBlockChangeVolume(blockVolume: minecraftserver.BlockVolumeBase): boolean
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **undo**
@@ -261,7 +261,7 @@ Perform an undo operation.  This will take the last transaction record on the st
 The transaction record affected by this operation will be transferred to the redo stack in case the creator decides to reapply it
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **undoSize**
@@ -274,5 +274,5 @@ Return how many transactions records currently exist on the stack
 **Returns** *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

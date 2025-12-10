@@ -32,7 +32,7 @@ Adds a callback that will be called when new chat messages are sent.
 **Returns** (arg0: [*ChatSendAfterEvent*](ChatSendAfterEvent.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 ### **unsubscribe**
@@ -46,5 +46,5 @@ Removes a callback from being called when new chat messages are sent.
 - **callback**: (arg0: [*ChatSendAfterEvent*](ChatSendAfterEvent.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.

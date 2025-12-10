@@ -17,7 +17,7 @@ description: Contents of the @minecraft/server-editor.Widget class.
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **collisionOffset**
 `collisionOffset: minecraftserver.Vector3;`
@@ -25,7 +25,7 @@ Notes:
 Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **collisionRadius**
 `collisionRadius: number;`
@@ -33,7 +33,7 @@ Notes:
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **collisionType**
 `collisionType: WidgetCollisionType;`
@@ -41,7 +41,7 @@ Notes:
 Type: [*WidgetCollisionType*](WidgetCollisionType.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **group**
 `read-only group: WidgetGroup;`
@@ -58,7 +58,7 @@ Notes:
 Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **lockPositionToSurface**
 `lockPositionToSurface: boolean;`
@@ -66,7 +66,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **selectable**
 `read-only selectable: boolean;`
@@ -98,7 +98,7 @@ Type: *boolean*
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **visible**
 `visible: boolean;`
@@ -140,7 +140,7 @@ addBoundingBox(componentName: string, size: minecraftserver.Vector3, options?: W
 **Returns** [*WidgetComponentBoundingBox*](WidgetComponentBoundingBox.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **addClipboardComponent**
@@ -156,7 +156,7 @@ addClipboardComponent(componentName: string, clipboardItem?: ClipboardItem | Edi
 **Returns** [*WidgetComponentClipboard*](WidgetComponentClipboard.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **addEntityComponent**
@@ -172,7 +172,7 @@ addEntityComponent(componentName: string, actorNameId: string, options?: WidgetC
 **Returns** [*WidgetComponentEntity*](WidgetComponentEntity.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **addGizmoComponent**
@@ -187,7 +187,7 @@ addGizmoComponent(componentName: string, options?: WidgetComponentGizmoOptions):
 **Returns** [*WidgetComponentGizmo*](WidgetComponentGizmo.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **addGridComponent**
@@ -202,7 +202,7 @@ addGridComponent(componentName: string, options?: WidgetComponentGridOptions): W
 **Returns** [*WidgetComponentGrid*](WidgetComponentGrid.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **addGuideComponent**
@@ -217,7 +217,7 @@ addGuideComponent(componentName: string, options?: WidgetComponentGuideOptions):
 **Returns** [*WidgetComponentGuide*](WidgetComponentGuide.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **addRenderPrimitiveComponent**
@@ -233,7 +233,7 @@ addRenderPrimitiveComponent(componentName: string, primitiveType: WidgetComponen
 **Returns** [*WidgetComponentRenderPrimitive*](WidgetComponentRenderPrimitive.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **addSplineComponent**
@@ -248,7 +248,7 @@ addSplineComponent(componentName: string, options?: WidgetComponentSplineOptions
 **Returns** [*WidgetComponentSpline*](WidgetComponentSpline.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **addTextComponent**
@@ -264,7 +264,7 @@ addTextComponent(componentName: string, label: string, options?: WidgetComponent
 **Returns** [*WidgetComponentText*](WidgetComponentText.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **addVolumeOutline**
@@ -280,7 +280,7 @@ addVolumeOutline(componentName: string, volume?: minecraftserver.BlockVolumeBase
 **Returns** [*WidgetComponentVolumeOutline*](WidgetComponentVolumeOutline.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **delete**
@@ -289,7 +289,7 @@ Notes:
 `
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **deleteComponent**
@@ -301,7 +301,7 @@ deleteComponent(componentOrName: string | WidgetComponentBase): void
 - **componentOrName**: *string* | [*WidgetComponentBase*](WidgetComponentBase.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getComponent**
@@ -315,7 +315,7 @@ getComponent(componentName: string): WidgetComponentBase
 **Returns** [*WidgetComponentBase*](WidgetComponentBase.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getComponents**
@@ -326,7 +326,7 @@ getComponents(): WidgetComponentBase[]
 **Returns** [*WidgetComponentBase*](WidgetComponentBase.md)[]
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidWidgetError*](InvalidWidgetError.md)
 
@@ -339,6 +339,6 @@ setStateChangeEvent(eventFunction?: (arg0: WidgetStateChangeEventData) => void):
 - **eventFunction**?: (arg0: [*WidgetStateChangeEventData*](WidgetStateChangeEventData.md)) => *void* = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidWidgetError*](InvalidWidgetError.md)

@@ -20,7 +20,7 @@ description: Contents of the @minecraft/server-editor.WidgetComponentBoundingBox
 Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **enableResizeHandles**
 `enableResizeHandles: Axis;`
@@ -28,7 +28,7 @@ Notes:
 Type: [*Axis*](Axis.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **hullColor**
 `hullColor: minecraftserver.RGBA;`
@@ -36,7 +36,7 @@ Notes:
 Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **mirror**
 `mirror: minecraftserver.StructureMirrorAxis;`
@@ -44,7 +44,7 @@ Notes:
 Type: [*@minecraft/server.StructureMirrorAxis*](../../../scriptapi/minecraft/server/StructureMirrorAxis.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **normalizedOrigin**
 `normalizedOrigin: minecraftserver.Vector3;`
@@ -52,7 +52,7 @@ Notes:
 Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **outlineColor**
 `outlineColor: minecraftserver.RGBA;`
@@ -60,7 +60,7 @@ Notes:
 Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **rotation**
 `rotation: minecraftserver.StructureRotation;`
@@ -68,7 +68,7 @@ Notes:
 Type: [*@minecraft/server.StructureRotation*](../../../scriptapi/minecraft/server/StructureRotation.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **showWorldIntersections**
 `showWorldIntersections: boolean;`
@@ -76,7 +76,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **size**
 `size: minecraftserver.Vector3;`
@@ -84,7 +84,7 @@ Notes:
 Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **transformedWorldVolume**
 `read-only transformedWorldVolume: minecraftserver.BlockVolume;`
@@ -101,7 +101,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ## Methods
 - [deactivateHandles](#deactivatehandles)
@@ -113,7 +113,7 @@ deactivateHandles(): void
 `
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md)
 
@@ -126,6 +126,6 @@ setStateChangeEvent(eventFunction?: (arg0: WidgetComponentBoundingBoxStateChange
 - **eventFunction**?: (arg0: [*WidgetComponentBoundingBoxStateChangeEventParameters*](WidgetComponentBoundingBoxStateChangeEventParameters.md)) => *void* = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md)

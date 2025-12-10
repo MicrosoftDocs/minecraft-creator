@@ -250,16 +250,6 @@
               "content": "minecraft:angry"
             }
           ],
-          "/vanilla/behavior_pack/entities/zombie_horse.json": [
-            {
-              "path": "/minecraft:entity/events/minecraft:upgrade_to_1_21_130/sequence/0/filters/",
-              "content": "minecraft:rideable"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:upgrade_to_1_21_130/sequence/1/filters/",
-              "content": "minecraft:leashable"
-            }
-          ],
           "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
             {
               "path": "/minecraft:entity/events/minecraft:on_player_mount/filters/",
@@ -680,24 +670,6 @@
           "content": {
             "test": "has_component",
             "value": "minecraft:is_baby"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_horse.json": [
-        {
-          "path": "/minecraft:entity/events/minecraft:upgrade_to_1_21_130/sequence/0/filters/",
-          "content": {
-            "test": "has_component",
-            "operator": "!=",
-            "value": "minecraft:rideable"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:upgrade_to_1_21_130/sequence/1/filters/",
-          "content": {
-            "test": "has_component",
-            "operator": "!=",
-            "value": "minecraft:leashable"
           }
         }
       ],

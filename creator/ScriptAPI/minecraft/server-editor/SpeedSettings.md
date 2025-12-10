@@ -44,7 +44,7 @@ getAll(): SpeedSettingsPropertyTypeMap
 **Returns** *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setAll**
@@ -58,5 +58,5 @@ setAll(properties: SpeedSettingsPropertyTypeMap): void
 **Returns** *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

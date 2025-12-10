@@ -31,7 +31,7 @@ Adds a callback that will be called when a world.gameRules property is changed.
 **Returns** (arg0: [*GameRuleChangeAfterEvent*](GameRuleChangeAfterEvent.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 ### **unsubscribe**
@@ -45,5 +45,5 @@ Removes a callback from being called when a world.gameRules property is changed.
 - **callback**: (arg0: [*GameRuleChangeAfterEvent*](GameRuleChangeAfterEvent.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.

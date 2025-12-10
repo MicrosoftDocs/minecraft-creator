@@ -24,7 +24,7 @@ The @minecraft/server-gametest module provides scriptable APIs for scaffolding a
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.0-beta.24 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.0-beta.25 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`
@@ -73,7 +73,7 @@ Returns data about a player's skin.
 **Returns** [*PlayerSkinData*](PlayerSkinData.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
@@ -98,7 +98,7 @@ Registers a new GameTest function. This GameTest will become available in Minecr
 **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - Returns a [*@minecraft/server-gametest.RegistrationBuilder*](../../../scriptapi/minecraft/server-gametest/RegistrationBuilder.md) object where additional options for this test can be specified via builder methods.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 #### Examples
@@ -148,7 +148,7 @@ Registers a new GameTest function that is designed for asynchronous execution. T
 **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - Returns a [*@minecraft/server-gametest.RegistrationBuilder*](../../../scriptapi/minecraft/server-gametest/RegistrationBuilder.md) object where additional options for this test can be specified via builder methods.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 #### Examples
@@ -192,7 +192,7 @@ Sets a callback that is called after the batch gets called. This will overwrite 
 - **batchCallback**: () => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 - This function can throw errors.
   - Throws [*GameTestError*](GameTestError.md)
@@ -211,7 +211,7 @@ Sets a callback that is called before the batch gets called. This will overwrite
 - **batchCallback**: () => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 - This function can throw errors.
   - Throws [*GameTestError*](GameTestError.md)
@@ -237,7 +237,7 @@ Spawns a simulated player that isn't associated to a specific {@link Test}.  You
 **Returns** [*SimulatedPlayer*](SimulatedPlayer.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 

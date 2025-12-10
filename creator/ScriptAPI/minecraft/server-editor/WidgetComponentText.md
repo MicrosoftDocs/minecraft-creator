@@ -20,7 +20,7 @@ description: Contents of the @minecraft/server-editor.WidgetComponentText class.
 Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **label**
 `label: string;`
@@ -28,4 +28,4 @@ Notes:
 Type: *string*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.

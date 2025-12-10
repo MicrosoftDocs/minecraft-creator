@@ -64,4 +64,4 @@ Contains additional information about the block that was hit by the projectile.
 **Returns** [*BlockHitInformation*](BlockHitInformation.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.

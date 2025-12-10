@@ -101,7 +101,7 @@ Sets the text of the sign component.
   The side of the sign the message will be set on. If not provided, the message will be set on the front side of the sign.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws if the provided message is greater than 512 characters in length.
 
@@ -121,7 +121,7 @@ Sets the dye color of the text.
   The side of the sign the color will be set on. If not provided, the color will be set on the front side of the sign.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setWaxed**
@@ -135,7 +135,7 @@ Makes it so players cannot edit this sign.
 - **waxed**: *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ## Constants

@@ -28,7 +28,7 @@ Registers a new event receiver for this particular type of event.
 **Returns** (arg0: [*PlayerSpawnAfterEvent*](PlayerSpawnAfterEvent.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 ### **unsubscribe**
@@ -42,5 +42,5 @@ De-registers an event receiver for the player spawn event.
 - **callback**: (arg0: [*PlayerSpawnAfterEvent*](PlayerSpawnAfterEvent.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.

@@ -28,7 +28,7 @@ Type: *number*
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
   - This property can throw errors when used.
     - Will throw an error if the air supply is out of bounds [suffocationTime, maxAirSupply].
 ::: moniker-end

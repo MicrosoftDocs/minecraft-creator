@@ -32,7 +32,7 @@ Subscribes the specified callback to a player use name tag after event.
 **Returns** (arg0: [*PlayerUseNameTagAfterEvent*](PlayerUseNameTagAfterEvent.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 ### **unsubscribe**
@@ -46,5 +46,5 @@ Removes the specified callback from a player use name tag after event.
 - **callback**: (arg0: [*PlayerUseNameTagAfterEvent*](PlayerUseNameTagAfterEvent.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.

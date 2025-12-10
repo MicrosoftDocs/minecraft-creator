@@ -32,7 +32,7 @@ fillVolume(volume: minecraftserver.BlockVolumeBase | minecraftserver.CompoundBlo
 - **block**?: [*@minecraft/server.BlockPermutation*](../../../scriptapi/minecraft/server/BlockPermutation.md) | [*@minecraft/server.BlockType*](../../../scriptapi/minecraft/server/BlockType.md) | *string* = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **findObscuredBlocksWithinVolume**
@@ -46,7 +46,7 @@ findObscuredBlocksWithinVolume(volume: minecraftserver.BlockVolumeBase | Relativ
 **Returns** [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getContiguousSelection**
 `
@@ -59,7 +59,7 @@ getContiguousSelection(properties?: ContiguousSelectionProperties): minecraftser
 **Returns** [*@minecraft/server.CompoundBlockVolume*](../../../scriptapi/minecraft/server/CompoundBlockVolume.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getDimensionLocationBoundingBox**
@@ -70,7 +70,7 @@ getDimensionLocationBoundingBox(): minecraftserver.BlockBoundingBox
 **Returns** [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getDimensionMaxLocation**
 `
@@ -80,7 +80,7 @@ getDimensionMaxLocation(): minecraftserver.Vector3
 **Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getDimensionMinLocation**
 `
@@ -90,7 +90,7 @@ getDimensionMinLocation(): minecraftserver.Vector3
 **Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getFacePreviewSelection**
 `
@@ -103,7 +103,7 @@ getFacePreviewSelection(properties?: QuickExtrudeProperties): minecraftserver.Li
 **Returns** [*@minecraft/server.ListBlockVolume*](../../../scriptapi/minecraft/server/ListBlockVolume.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **isLocationInsideCurrentDimensionBounds**
@@ -117,7 +117,7 @@ isLocationInsideCurrentDimensionBounds(locationOrVolumeOrBounds: minecraftserver
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **quickExtrude**
 `
@@ -128,7 +128,7 @@ quickExtrude(properties?: QuickExtrudeProperties): void
 - **properties**?: [*QuickExtrudeProperties*](QuickExtrudeProperties.md) = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **shrinkWrapVolume**
@@ -142,7 +142,7 @@ shrinkWrapVolume(volume: minecraftserver.BlockVolumeBase | RelativeVolumeListBlo
 **Returns** [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **trimVolumeToFitContents**
 `
@@ -159,5 +159,5 @@ trimVolumeToFitContents(volume: minecraftserver.BlockVolumeBase | RelativeVolume
 **Returns** [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

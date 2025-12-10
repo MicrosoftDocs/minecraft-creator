@@ -32,7 +32,7 @@ Adds a callback that will be called when an entity is hurt.
 **Returns** (arg0: [*EntityHurtAfterEvent*](EntityHurtAfterEvent.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 ### **unsubscribe**
@@ -46,5 +46,5 @@ Removes a callback from being called when an entity is hurt.
 - **callback**: (arg0: [*EntityHurtAfterEvent*](EntityHurtAfterEvent.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.

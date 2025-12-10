@@ -163,6 +163,9 @@ Type: *number*
 - [center](#center)
 - [east](#east)
 - [getComponent](#getcomponent)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getComponents](#getcomponents)
+::: moniker-end
 - [getItemStack](#getitemstack)
 - [getLightLevel](#getlightlevel)
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -171,6 +174,9 @@ Type: *number*
 - [getRedstonePower](#getredstonepower)
 - [getSkyLightLevel](#getskylightlevel)
 - [getTags](#gettags)
+::: moniker range="=minecraft-bedrock-experimental"
+- [hasComponent](#hascomponent)
+::: moniker-end
 - [hasTag](#hastag)
 - [isLiquidBlocking](#isliquidblocking)
 - [liquidCanFlowFromDirection](#liquidcanflowfromdirection)
@@ -339,6 +345,24 @@ Notes:
 - This function can throw errors.
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **getComponents**
+`
+getComponents(): BlockComponent[]
+`
+
+Returns all scripting components that are present on this block.
+
+**Returns** [*BlockComponent*](BlockComponent.md)[]
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
+
 ### **getItemStack**
 `
 getItemStack(amount?: number, withData?: boolean): ItemStack | undefined
@@ -370,7 +394,7 @@ Returns the total brightness level of light shining on a certain block.
 **Returns** *number* - The brightness level on the block.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
 
@@ -413,7 +437,7 @@ Returns the brightness level of light shining from the sky on a certain block.
 **Returns** *number* - The brightness level on the block.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
 
@@ -429,6 +453,29 @@ Returns a set of tags for a block.
 Notes:
 - This function can throw errors.
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **hasComponent**
+`
+hasComponent(componentId: string): boolean
+`
+
+Returns true if the specified component is present on this block.
+
+#### **Parameters**
+- **componentId**: *string*
+  
+  The identifier of the component (e.g., 'minecraft:inventory') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed.
+
+**Returns** *boolean*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
 
 ### **hasTag**
 `
@@ -595,7 +642,7 @@ Sets the block in the dimension to the state of the permutation.
   Permutation that contains a set of property states for the Block.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
@@ -612,7 +659,7 @@ Sets the type of block.
   Identifier of the type of block to apply - for example, minecraft:powered_repeater.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
@@ -629,7 +676,7 @@ Sets whether this block has a water logged state - for example, whether stairs a
   true if the block should have water within it.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
@@ -670,7 +717,7 @@ Tries to set the block in the dimension to the state of the permutation by first
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 ::: moniker-end

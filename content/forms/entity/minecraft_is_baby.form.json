@@ -333,6 +333,20 @@
         {
           "path": "/minecraft:entity/component_groups/minecraft:horse_baby/minecraft:is_baby/",
           "content": {}
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:upgrade_to_1_21_130/sequence/0/filters/all_of/1/",
+          "content": {
+            "test": "is_baby",
+            "value": false
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:upgrade_to_1_21_130/sequence/1/filters/all_of/1/",
+          "content": {
+            "test": "is_baby",
+            "value": false
+          }
         }
       ],
       "/vanilla/behavior_pack/entities/zombie_pigman.json": [

@@ -70,7 +70,7 @@ Creates and shows this modal popup form. Returns asynchronously when the player 
 **Returns** Promise&lt;[*ActionFormResponse*](ActionFormResponse.md)&gt;
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/server.InvalidEntityError*](../../../priorscriptapi/minecraft/server-1xx/InvalidEntityError.md), [*@minecraft/server.RawMessageError*](../../../priorscriptapi/minecraft/server-1xx/RawMessageError.md)
 

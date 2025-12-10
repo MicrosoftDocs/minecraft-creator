@@ -33,7 +33,7 @@ Subscribes to an event that fires when an entity dies.
 **Returns** (arg0: [*EntityDieAfterEvent*](EntityDieAfterEvent.md)) => *void* - Returns the closure that can be used in future downstream calls to unsubscribe.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 ### **unsubscribe**
@@ -47,5 +47,5 @@ Stops this event from calling your function when an entity dies.
 - **callback**: (arg0: [*EntityDieAfterEvent*](EntityDieAfterEvent.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
