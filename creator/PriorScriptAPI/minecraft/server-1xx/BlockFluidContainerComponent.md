@@ -27,7 +27,7 @@ Relative fill level of the fluid container.
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **fluidColor**
 `fluidColor: RGBA;`
@@ -37,7 +37,7 @@ Custom color of the fluid in the container.
 Type: [*RGBA*](RGBA.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ## Methods
 - [addDye](#adddye)
@@ -56,7 +56,7 @@ Adds a dye to the fluid. The dye color is combined with any existing custom colo
 - **dye**: [*ItemType*](ItemType.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getFluidType**
@@ -69,7 +69,7 @@ Gets the current fluid type in the container.
 **Returns** [*FluidType*](FluidType.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setFluidType**
@@ -83,7 +83,7 @@ Sets the current fluid type in the container.
 - **fluidType**: [*FluidType*](FluidType.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setPotion**
@@ -97,7 +97,7 @@ Sets a potion item in the container. Changes the container's fluid type to potio
 - **itemStack**: [*ItemStack*](ItemStack.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ## Constants

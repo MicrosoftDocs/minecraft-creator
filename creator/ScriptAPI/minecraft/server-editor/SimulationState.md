@@ -35,5 +35,5 @@ Sets the state of mob simulation.  If set to `true`, mobs are paused.
 - **isPaused**: *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

@@ -460,6 +460,14 @@
       href: minecraft/server/EntityIsTamedComponent.md
     - name: EntityItemComponent
       href: minecraft/server/EntityItemComponent.md
+    - name: EntityItemPickupAfterEvent
+      href: minecraft/server/EntityItemPickupAfterEvent.md
+    - name: EntityItemPickupAfterEventSignal
+      href: minecraft/server/EntityItemPickupAfterEventSignal.md
+    - name: EntityItemPickupBeforeEvent
+      href: minecraft/server/EntityItemPickupBeforeEvent.md
+    - name: EntityItemPickupBeforeEventSignal
+      href: minecraft/server/EntityItemPickupBeforeEventSignal.md
     - name: EntityKilledCondition
       href: minecraft/server/EntityKilledCondition.md
     - name: EntityLavaMovementComponent
@@ -1038,6 +1046,8 @@
       href: minecraft/server/EntityHurtAfterEventOptions.md
     - name: EntityHurtBeforeEventOptions
       href: minecraft/server/EntityHurtBeforeEventOptions.md
+    - name: EntityItemPickupEventOptions
+      href: minecraft/server/EntityItemPickupEventOptions.md
     - name: EntityQueryOptions
       href: minecraft/server/EntityQueryOptions.md
     - name: EntityQueryPropertyOptions
@@ -1066,6 +1076,8 @@
       href: minecraft/server/InventoryItemEventOptions.md
     - name: ItemCustomComponent
       href: minecraft/server/ItemCustomComponent.md
+    - name: ItemFilter
+      href: minecraft/server/ItemFilter.md
     - name: JigsawPlaceOptions
       href: minecraft/server/JigsawPlaceOptions.md
     - name: JigsawStructurePlaceOptions

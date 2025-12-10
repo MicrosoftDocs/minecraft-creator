@@ -33,7 +33,7 @@ addNewTheme(id: string, name?: string, sourceThemeId?: string): void
 - **sourceThemeId**?: *string* = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **canThemeBeModified**
@@ -55,7 +55,7 @@ deleteTheme(id: string): void
 - **id**: *string*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getCurrentTheme**
@@ -114,7 +114,7 @@ setCurrentTheme(id: string): void
 - **id**: *string*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setThemeName**
@@ -127,7 +127,7 @@ setThemeName(id: string, name: string): void
 - **name**: *string*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **updateThemeColor**
@@ -141,5 +141,5 @@ updateThemeColor(id: string, key: ThemeSettingsColorKey, newColor: minecraftserv
 - **newColor**: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

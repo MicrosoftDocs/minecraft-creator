@@ -24,11 +24,13 @@ Adds a callback that will be called before an item is used.
 
 #### **Parameters**
 - **callback**: (arg0: [*ItemUseBeforeEvent*](ItemUseBeforeEvent.md)) => *void*
+  This closure is called with restricted-execution privilege.
 
 **Returns** (arg0: [*ItemUseBeforeEvent*](ItemUseBeforeEvent.md)) => *void*
+  The returned closure is called with restricted-execution privilege.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 ### **unsubscribe**
@@ -40,7 +42,8 @@ Removes a callback from being called before an item is used.
 
 #### **Parameters**
 - **callback**: (arg0: [*ItemUseBeforeEvent*](ItemUseBeforeEvent.md)) => *void*
+  This closure is called with restricted-execution privilege.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.

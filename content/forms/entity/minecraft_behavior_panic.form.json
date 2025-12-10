@@ -27,30 +27,6 @@
                 "soul_campfire"
               ]
             }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_horse.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.panic/",
-              "content": [
-                "campfire",
-                "fire",
-                "freezing",
-                "lava",
-                "lightning",
-                "magma",
-                "soul_campfire",
-                "temperature",
-                "entity_attack",
-                "entity_explosion",
-                "fireworks",
-                "magic",
-                "projectile",
-                "ram_attack",
-                "sonic_boom",
-                "wither",
-                "mace_smash"
-              ]
-            }
           ]
         }
       },
@@ -147,12 +123,6 @@
           "/vanilla/behavior_pack/entities/camel.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.panic/",
-              "content": 4
-            }
-          ],
-          "/vanilla/behavior_pack/entities/camel_husk.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:camel_husk_with_no_rider/minecraft:behavior.panic/",
               "content": 4
             }
           ],
@@ -253,15 +223,15 @@
               "content": 1
             }
           ],
-          "/vanilla/behavior_pack/entities/camel_husk.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:camel_husk_with_no_rider/minecraft:behavior.panic/",
-              "content": 2
-            }
-          ],
           "/vanilla/behavior_pack/entities/copper_golem.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.panic/",
+              "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:defending_fox/minecraft:behavior.panic/",
               "content": 2
             }
           ],
@@ -396,15 +366,6 @@
           "path": "/minecraft:entity/components/minecraft:behavior.panic/",
           "content": {
             "priority": 1,
-            "speed_multiplier": 4
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/camel_husk.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:camel_husk_with_no_rider/minecraft:behavior.panic/",
-          "content": {
-            "priority": 2,
             "speed_multiplier": 4
           }
         }
@@ -642,15 +603,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.panic/",
-          "content": {
-            "priority": 1,
-            "speed_multiplier": 1.2
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/sniffer.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.panic/",
@@ -726,34 +678,6 @@
           "content": {
             "priority": 1,
             "speed_multiplier": 0.6
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_horse.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.panic/",
-          "content": {
-            "priority": 2,
-            "damage_sources": [
-              "campfire",
-              "fire",
-              "freezing",
-              "lava",
-              "lightning",
-              "magma",
-              "soul_campfire",
-              "temperature",
-              "entity_attack",
-              "entity_explosion",
-              "fireworks",
-              "magic",
-              "projectile",
-              "ram_attack",
-              "sonic_boom",
-              "wither",
-              "mace_smash"
-            ],
-            "speed_multiplier": 1.2
           }
         }
       ],

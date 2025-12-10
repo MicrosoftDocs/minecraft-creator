@@ -27,7 +27,7 @@ Returns the current damage level of this particular item.
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **maxDurability**
 `read-only maxDurability: number;`
@@ -58,7 +58,7 @@ Returns the maximum chance that this item would be damaged using the damageRange
 **Returns** *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getDamageChanceRange**
@@ -71,7 +71,7 @@ A range of numbers that is used to calculate the damage chance for an item. The 
 **Returns** [*@minecraft/common.NumberRange*](../../../scriptapi/minecraft/common/NumberRange.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ## Constants

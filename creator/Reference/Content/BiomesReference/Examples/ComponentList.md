@@ -23,3 +23,4 @@ ms.date: 02/11/2025
 | [minecraft:surface_builder](Components/minecraftBiomes_surface_builder.md)| Controls the materials used for terrain generation. |
 | [minecraft:surface_material_adjustments](Components/minecraftBiomes_surface_material_adjustments.md)| Specify fine-detail changes to blocks used in terrain generation (based on a noise function). |
 | [minecraft:tags](Components/minecraftBiomes_tags.md)| Attach arbitrary string tags to this biome.<br>Most biome tags are referenced by JSON settings, but some meanings of tags are directly implemented in the game's code. |
+| [minecraft:village_type](Components/minecraftBiomes_village_type.md)| Determines the type of village for the Biome |

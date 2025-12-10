@@ -20,7 +20,7 @@ description: Contents of the @minecraft/server-editor.WidgetComponentGrid class.
 Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **gridCount**
 `gridCount: minecraftserver.Vector2;`
@@ -28,7 +28,7 @@ Notes:
 Type: [*@minecraft/server.Vector2*](../../../scriptapi/minecraft/server/Vector2.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **gridSize**
 `gridSize: minecraftserver.Vector2;`
@@ -36,7 +36,7 @@ Notes:
 Type: [*@minecraft/server.Vector2*](../../../scriptapi/minecraft/server/Vector2.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **plane**
 `plane: Plane;`
@@ -44,4 +44,4 @@ Notes:
 Type: [*Plane*](Plane.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.

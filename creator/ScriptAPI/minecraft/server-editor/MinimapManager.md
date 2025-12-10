@@ -34,7 +34,7 @@ Create a new minimap instance with the specified view type and dimensions.
 **Returns** [*MinimapItem*](MinimapItem.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **destroyMinimap**
@@ -48,7 +48,7 @@ Remove an existing minimap instance from the manager using its unique identifier
 - **minimapId**: *string*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getAllMinimapIds**
@@ -61,7 +61,7 @@ Retrieve a list of all active minimap identifiers currently managed by the syste
 **Returns** *string*[]
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getMinimap**
@@ -77,5 +77,5 @@ Retrieve a specific minimap instance using its unique identifier.
 **Returns** [*MinimapItem*](MinimapItem.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

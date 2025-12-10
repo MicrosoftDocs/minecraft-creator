@@ -38,7 +38,7 @@ Adds an aim-assist category to the registry.
 **Returns** [*AimAssistCategory*](AimAssistCategory.md) - The created category handle.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*, [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*NamespaceNameError*](NamespaceNameError.md)
 
@@ -57,7 +57,7 @@ Adds an aim-assist preset to the registry.
 **Returns** [*AimAssistPreset*](AimAssistPreset.md) - The created preset handle.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*, [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*NamespaceNameError*](NamespaceNameError.md)
 
@@ -83,7 +83,7 @@ Gets the category associated with the provided Id.
 **Returns** [*AimAssistCategory*](AimAssistCategory.md) | *undefined* - The category object if it exists, otherwise returns undefined.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getPreset**
 `
@@ -100,7 +100,7 @@ Gets the preset associated with the provided Id.
 **Returns** [*AimAssistPreset*](AimAssistPreset.md) | *undefined* - The preset object if it exists, otherwise returns undefined.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getPresets**
 `

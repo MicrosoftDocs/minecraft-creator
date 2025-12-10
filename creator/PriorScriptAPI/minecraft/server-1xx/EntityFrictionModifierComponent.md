@@ -27,7 +27,7 @@ Current value of the friction modifier of the associated entity.
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ## Constants
 

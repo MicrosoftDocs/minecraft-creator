@@ -131,6 +131,21 @@ Type: [*EntityHurtAfterEventSignal*](EntityHurtAfterEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **entityItemPickup**
+`read-only entityItemPickup: EntityItemPickupAfterEventSignal;`
+
+This event fires when an entity picks up items.
+
+Type: [*EntityItemPickupAfterEventSignal*](EntityItemPickupAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
+
 ### **entityLoad**
 `read-only entityLoad: EntityLoadAfterEventSignal;`
 

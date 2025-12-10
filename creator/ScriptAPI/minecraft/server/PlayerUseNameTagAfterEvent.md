@@ -25,7 +25,7 @@ The entity that was named by the player.
 Type: [*Entity*](Entity.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **newName**
 `newName: string;`
@@ -35,7 +35,7 @@ The new name that the player has given to the entity.
 Type: *string*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **player**
 `player: Player;`
@@ -45,7 +45,7 @@ Handle to the player that used the name tag.
 Type: [*Player*](Player.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **previousName**
 `previousName?: string;`
@@ -55,4 +55,4 @@ The previous name of the entity before the player used the name tag. This will b
 Type: *string*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.

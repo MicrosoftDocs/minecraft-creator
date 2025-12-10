@@ -25,7 +25,7 @@ Optional. Default aim-assist category Id used for items not provided to setItemS
 Type: *string*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **handSettings**
 `handSettings?: string;`
@@ -35,7 +35,7 @@ Optional. Aim-assist category Id used for an empty hand.
 Type: *string*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **identifier**
 `read-only identifier: string;`
@@ -129,7 +129,7 @@ Sets the list of block tags to exclude from aim assist targeting.
 **Returns** *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setExcludedBlockTargets**
 `
@@ -146,7 +146,7 @@ Sets the list of block Ids to exclude from aim assist targeting.
 **Returns** *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setExcludedEntityTargets**
 `
@@ -163,7 +163,7 @@ Sets the list of entity Ids to exclude from aim assist targeting.
 **Returns** *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setItemSettings**
 `
@@ -180,7 +180,7 @@ Sets the per-item aim-assist category Ids.
 **Returns** *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setLiquidTargetingItems**
 `
@@ -197,4 +197,4 @@ Sets the list of item Ids that will target liquid blocks with aim-assist when be
 **Returns** *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.

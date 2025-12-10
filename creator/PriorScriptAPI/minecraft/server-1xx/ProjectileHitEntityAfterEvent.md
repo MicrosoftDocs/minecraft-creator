@@ -64,4 +64,4 @@ Contains additional information about an entity that was hit.
 **Returns** [*EntityHitInformation*](EntityHitInformation.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.

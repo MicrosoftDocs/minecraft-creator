@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.4.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.0-beta.24 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.0-beta.25 of Minecraft.
 
 ## Available Versions
 - `2.6.0-beta`
@@ -271,6 +271,10 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityIsStunnedComponent](EntityIsStunnedComponent.md)
 - [EntityIsTamedComponent](EntityIsTamedComponent.md)
 - [EntityItemComponent](EntityItemComponent.md)
+- [EntityItemPickupAfterEvent](EntityItemPickupAfterEvent.md)
+- [EntityItemPickupAfterEventSignal](EntityItemPickupAfterEventSignal.md)
+- [EntityItemPickupBeforeEvent](EntityItemPickupBeforeEvent.md)
+- [EntityItemPickupBeforeEventSignal](EntityItemPickupBeforeEventSignal.md)
 - [EntityKilledCondition](EntityKilledCondition.md)
 - [EntityLavaMovementComponent](EntityLavaMovementComponent.md)
 - [EntityLeashableComponent](EntityLeashableComponent.md)
@@ -562,6 +566,7 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityHitInformation](EntityHitInformation.md)
 - [EntityHurtAfterEventOptions](EntityHurtAfterEventOptions.md)
 - [EntityHurtBeforeEventOptions](EntityHurtBeforeEventOptions.md)
+- [EntityItemPickupEventOptions](EntityItemPickupEventOptions.md)
 - [EntityQueryOptions](EntityQueryOptions.md)
 - [EntityQueryPropertyOptions](EntityQueryPropertyOptions.md)
 - [EntityQueryScoreOptions](EntityQueryScoreOptions.md)
@@ -576,6 +581,7 @@ The following API versions are from a major version that is documented here: [*@
 - [InputEventOptions](InputEventOptions.md)
 - [InventoryItemEventOptions](InventoryItemEventOptions.md)
 - [ItemCustomComponent](ItemCustomComponent.md)
+- [ItemFilter](ItemFilter.md)
 - [JigsawPlaceOptions](JigsawPlaceOptions.md)
 - [JigsawStructurePlaceOptions](JigsawStructurePlaceOptions.md)
 - [LessThanComparison](LessThanComparison.md)

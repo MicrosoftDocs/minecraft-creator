@@ -28,7 +28,7 @@ Subscribes the specified callback to an editor mode change after event.
 **Returns** (arg0: [*ModeChangeAfterEvent*](ModeChangeAfterEvent.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 ### **unsubscribe**
@@ -42,5 +42,5 @@ Removes the specified callback from an editor mode change after event.
 - **callback**: (arg0: [*ModeChangeAfterEvent*](ModeChangeAfterEvent.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.

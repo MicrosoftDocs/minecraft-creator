@@ -1,0 +1,39 @@
+{
+  "id": "minecraft:village_type",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:village_type",
+    "title": "Biome Village Type",
+    "description": "Determines the type of village for the Biome",
+    "fields": [
+      {
+        "id": "type",
+        "title": "VillageType",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "default",
+            "title": "Default"
+          },
+          {
+            "id": "desert",
+            "title": "Desert"
+          },
+          {
+            "id": "ice",
+            "title": "Ice"
+          },
+          {
+            "id": "savanna",
+            "title": "Savanna"
+          },
+          {
+            "id": "taiga",
+            "title": "Taiga"
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  }
+}

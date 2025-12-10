@@ -26,11 +26,13 @@ Adds a new subscriber callback to this event.
 - **callback**: (arg0: [*ShutdownEvent*](ShutdownEvent.md)) => *void*
   
   Function callback that is called when this event fires.
+  This closure is called with restricted-execution privilege.
 
 **Returns** (arg0: [*ShutdownEvent*](ShutdownEvent.md)) => *void*
+  The returned closure is called with restricted-execution privilege.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 ### **unsubscribe**
@@ -44,7 +46,8 @@ Removes a subscriber callback previously subscribed to via the subscribe method.
 - **callback**: (arg0: [*ShutdownEvent*](ShutdownEvent.md)) => *void*
   
   Function closure that was previously passed to the subscribe method.
+  This closure is called with restricted-execution privilege.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.

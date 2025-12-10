@@ -19,7 +19,7 @@ Validates min/max limits of observable objects that support Vector2
 Type: *boolean*
 
 Notes:
-  - This property can't be used in read-only mode.
+  - This property can't be used in restricted-execution mode.
 
 ### **_max**
 `_max: Partial<minecraftserver.Vector2>;`
@@ -27,7 +27,7 @@ Notes:
 Type: *Partial<minecraftserver.Vector2>*
 
 Notes:
-  - This property can't be used in read-only mode.
+  - This property can't be used in restricted-execution mode.
 
 ### **_min**
 `_min: Partial<minecraftserver.Vector2>;`
@@ -35,7 +35,7 @@ Notes:
 Type: *Partial<minecraftserver.Vector2>*
 
 Notes:
-  - This property can't be used in read-only mode.
+  - This property can't be used in restricted-execution mode.
 
 ## Methods
 - [constructor](#(constructor))

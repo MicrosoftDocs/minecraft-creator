@@ -79,7 +79,7 @@ resetToDefaultValue(): void
 Resets the current value of this attribute to the defined default value.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **resetToMaxValue**
@@ -90,7 +90,7 @@ resetToMaxValue(): void
 Resets the current value of this attribute to the maximum defined value.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **resetToMinValue**
@@ -101,7 +101,7 @@ resetToMinValue(): void
 Resets the current value of this attribute to the minimum defined value.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setCurrentValue**
@@ -117,6 +117,6 @@ Sets the current value of this attribute.
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*InvalidEntityError*](InvalidEntityError.md)

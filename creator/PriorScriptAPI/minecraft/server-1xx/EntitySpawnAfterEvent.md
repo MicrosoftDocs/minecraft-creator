@@ -31,7 +31,7 @@ Entity that was spawned.
 Type: [*Entity*](Entity.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 #### Examples
 

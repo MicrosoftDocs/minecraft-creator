@@ -97,7 +97,7 @@ Whether the entity is sneaking - that is, moving more slowly and more quietly.
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **isSprinting**
 `read-only isSprinting: boolean;`
@@ -158,7 +158,7 @@ Given name of the entity.
 Type: *string*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **scoreboardIdentity**
 `read-only scoreboardIdentity?: ScoreboardIdentity;`
@@ -260,7 +260,7 @@ Adds or updates an effect, like poison, to the entity.
 **Returns** [*Effect*](Effect.md) | *undefined* - Returns nothing if the effect was added or updated successfully. This can throw an error if the duration or amplifier are outside of the valid ranges, or if the effect does not exist.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -333,7 +333,7 @@ Adds a specified tag to an entity.
 **Returns** *boolean* - Returns true if the tag was added successfully. This can fail if the tag already exists on the entity.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -384,7 +384,7 @@ Applies a set of damage to an entity.
 **Returns** *boolean* - Whether the entity takes any damage. This can return false if the entity is invulnerable or if the damage applied is less than or equal to 0.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
@@ -428,7 +428,7 @@ Applies impulse vector to the current velocity of the entity.
   Impulse vector.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -466,7 +466,7 @@ Applies impulse vector to the current velocity of the entity.
   Knockback strength for the vertical vector.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
@@ -516,7 +516,7 @@ clearVelocity(): void
 Sets the current velocity of the Entity to zero.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -555,7 +555,7 @@ Extinguishes the fire if the entity is on fire. Note that you can call getCompon
 **Returns** *boolean* - Returns whether the entity was on fire.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -674,9 +674,9 @@ Notes:
 getComponents(): EntityComponent[]
 `
 
-Returns all components that are both present on this entity and supported by the API.
+Returns all scripting components that are present on this entity.
 
-**Returns** [*EntityComponent*](EntityComponent.md)[] - Returns all components that are both present on this entity and supported by the API.
+**Returns** [*EntityComponent*](EntityComponent.md)[]
   
 Notes:
 - This function can throw errors.
@@ -928,7 +928,7 @@ Kills this entity. The entity will drop loot as normal.
 **Returns** *boolean* - Returns true if entity can be killed (even if it is already dead), otherwise it returns false.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -974,7 +974,7 @@ Sets the rotation of the entity to face a target location. Both pitch and yaw wi
   The target location that this entity should face/look towards.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
@@ -1012,7 +1012,7 @@ Cause the entity to play the given animation.
   Additional options to control the playback and transitions of the animation.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -1024,7 +1024,7 @@ remove(): void
 Immediately removes the entity from the world. The removed entity will not perform a death animation or drop loot upon removal.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
@@ -1043,7 +1043,7 @@ Removes the specified EffectType on the entity, or returns false if the effect i
 **Returns** *boolean* - Returns true if the effect has been removed. Returns false if the effect is not found or does not exist.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -1062,7 +1062,7 @@ Removes a specified tag from an entity.
 **Returns** *boolean* - Returns whether the tag existed on the entity.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -1081,7 +1081,7 @@ Resets an Entity Property back to its default value, as specified in the Entity'
 **Returns** *boolean* | *number* | *string* - Returns the default property value. For enum properties, a string is returned. For float and int properties, a number is returned. For undefined properties, undefined is returned.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*, [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -1100,7 +1100,7 @@ Runs a synchronous command on the entity.
 **Returns** [*CommandResult*](CommandResult.md) - A command result containing whether the command was successful.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*CommandError*](CommandError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -1157,7 +1157,7 @@ Sets an entity on fire (if it is not in water or rain). Note that you can call g
 **Returns** *boolean* - Whether the entity was set on fire. This can fail if seconds is less than or equal to zero, the entity is wet or the entity is immune to fire.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -1202,7 +1202,7 @@ Sets an Entity Property to the provided value. This property change is not appli
   The property value. The provided type must be compatible with the type specified in the entity's definition. 
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -1219,7 +1219,7 @@ Sets the main rotation of the entity.
   The x and y rotation of the entity (in degrees). For most mobs, the x rotation controls the head tilt and the y rotation controls the body rotation.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -1239,7 +1239,7 @@ Teleports the selected entity to a new location
   Options regarding the teleport operation.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
@@ -1308,7 +1308,7 @@ Triggers an entity type event. For every entity, a number of events are defined 
   Name of the entity type event to trigger. If a namespace is not specified, minecraft: is assumed.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -1363,6 +1363,6 @@ Attempts to try a teleport, but may not complete the teleport operation (for exa
 **Returns** *boolean* - Returns whether the teleport succeeded. This can fail if the destination chunk is unloaded or if the teleport would result in intersecting with blocks.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)

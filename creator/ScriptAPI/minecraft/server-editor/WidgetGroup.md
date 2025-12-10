@@ -26,7 +26,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **visibleBounds**
 `visibleBounds: boolean;`
@@ -34,7 +34,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ## Methods
 - [createWidget](#createwidget)
@@ -55,7 +55,7 @@ createWidget(location: minecraftserver.Vector3, options?: WidgetCreateOptions): 
 **Returns** [*Widget*](Widget.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **delete**
@@ -64,7 +64,7 @@ Notes:
 `
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **deleteWidget**
 `
@@ -75,7 +75,7 @@ deleteWidget(widgetToDelete: Widget): void
 - **widgetToDelete**: [*Widget*](Widget.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **deselectAllWidgets**
@@ -84,7 +84,7 @@ deselectAllWidgets(): void
 `
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)
 
@@ -94,6 +94,6 @@ selectAllWidgets(): void
 `
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)

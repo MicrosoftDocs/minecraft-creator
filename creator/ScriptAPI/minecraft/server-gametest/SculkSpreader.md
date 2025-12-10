@@ -41,7 +41,7 @@ Adds a cursor - which is a notional waypoint that the sculk will spread in the d
 - **charge**: *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getCursorPosition**
 `
@@ -56,7 +56,7 @@ Retrieves the current position of the specified cursor.
 **Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getNumberOfCursors**
@@ -69,7 +69,7 @@ Returns a number of overall cursors for this sculk spreader.
 **Returns** *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getTotalCharge**
@@ -82,5 +82,5 @@ Gets the total current charge of the sculk spreader.
 **Returns** *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

@@ -24,7 +24,7 @@ Number of the items in the stack. Valid values range between 1-255. The provided
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
   - This property can throw errors when used.
     - Throws if the value is outside the range of 1-255.
 
@@ -43,7 +43,7 @@ Gets or sets whether the item is kept on death.
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **lockMode**
 `lockMode: ItemLockMode;`
@@ -53,7 +53,7 @@ Gets or sets the item's lock mode. The default value is `ItemLockMode.none`.
 Type: [*ItemLockMode*](ItemLockMode.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **maxAmount**
 `read-only maxAmount: number;`
@@ -70,7 +70,7 @@ Given name of this stack of items. The name tag is displayed when hovering over 
 Type: *string*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
   - This property can throw errors when used.
     - Throws if the length exceeds 255 characters.
 
@@ -157,7 +157,7 @@ Get the list of block types this item can break in Adventure mode.
 **Returns** *string*[]
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getCanPlaceOn**
 `
@@ -169,7 +169,7 @@ Get the list of block types this item can be placed on in Adventure mode.
 **Returns** *string*[]
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getComponent**
 `
@@ -220,7 +220,7 @@ function giveHurtDiamondSword(
 getComponents(): ItemComponent[]
 `
 
-Returns all components that are both present on this item stack and supported by the API.
+Returns all scripting components that are present on this item stack.
 
 **Returns** [*ItemComponent*](ItemComponent.md)[]
 
@@ -346,7 +346,7 @@ The list of block types this item can break in Adventure mode. The block names a
   String list of block types that the item can destroy.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws if any of the provided block identifiers are invalid.
 
@@ -390,7 +390,7 @@ The list of block types this item can be placed on in Adventure mode. This is on
   String list of block types that the item can be placed on.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws if any of the provided block identifiers are invalid.
 
@@ -453,7 +453,7 @@ Sets the lore value - a secondary display string - for an ItemStack. The lore li
   List of lore lines. Each element in the list represents a new line. The maximum lore line count is 20. The maximum lore line length is 50 characters.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), *Error*
 

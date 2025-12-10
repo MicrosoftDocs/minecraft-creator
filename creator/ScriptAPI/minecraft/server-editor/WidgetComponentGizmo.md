@@ -25,7 +25,7 @@ Type: *boolean*
 Type: [*Axis*](Axis.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **normalizedOffsetOverride**
 `normalizedOffsetOverride?: minecraftserver.Vector3;`
@@ -33,7 +33,7 @@ Notes:
 Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ## Methods
 - [setStateChangeEvent](#setstatechangeevent)
@@ -47,6 +47,6 @@ setStateChangeEvent(eventFunction?: (arg0: WidgetComponentGizmoStateChangeEventP
 - **eventFunction**?: (arg0: [*WidgetComponentGizmoStateChangeEventParameters*](WidgetComponentGizmoStateChangeEventParameters.md)) => *void* = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md)

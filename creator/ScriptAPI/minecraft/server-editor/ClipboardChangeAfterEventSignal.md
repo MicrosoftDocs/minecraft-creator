@@ -24,7 +24,7 @@ subscribe(callback: (arg0: ClipboardChangeAfterEvent) => void): (arg0: Clipboard
 **Returns** (arg0: [*ClipboardChangeAfterEvent*](ClipboardChangeAfterEvent.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 ### **unsubscribe**
@@ -36,5 +36,5 @@ unsubscribe(callback: (arg0: ClipboardChangeAfterEvent) => void): void
 - **callback**: (arg0: [*ClipboardChangeAfterEvent*](ClipboardChangeAfterEvent.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.

@@ -53,7 +53,7 @@ Attaches the camera to a non-player entity.
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 ::: moniker-end
 
@@ -65,7 +65,7 @@ clear(): void
 Clears the active camera for the specified player. Causes the specified players to end any in-progress camera perspectives, including any eased camera motions, and return to their normal perspective.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **fade**
@@ -81,7 +81,7 @@ Begins a camera fade transition. A fade transition is a full-screen color that f
   Additional options around camera fade operations.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -98,7 +98,7 @@ playAnimation(splineType: CatmullRomSpline | LinearSpline, cameraAnimationOption
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 ::: moniker-end
 
@@ -118,7 +118,7 @@ Sets the current active camera for the specified player.
   Additional options for the camera.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -141,7 +141,7 @@ Sets the current active camera with easing.
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws when easing to minecraft:first_person presets currently without the experimental cameras toggle enabled.
 ::: moniker-end
@@ -162,7 +162,7 @@ Sets the current active camera for the specified player and resets the position 
   Options to ease the camera back to its original position and rotation.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setFov**
@@ -174,5 +174,5 @@ setFov(fovCameraOptions?: CameraFovOptions): void
 - **fovCameraOptions**?: [*CameraFovOptions*](CameraFovOptions.md) = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

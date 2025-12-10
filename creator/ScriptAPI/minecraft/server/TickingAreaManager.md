@@ -54,7 +54,7 @@ Creates a ticking area. Promise will return when all the chunks in the area are 
 **Returns** Promise&lt;[*TickingArea*](TickingArea.md)&gt;
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*TickingAreaError*](TickingAreaError.md)
 
@@ -68,7 +68,7 @@ Gets all ticking areas added by this manager.
 **Returns** [*TickingArea*](TickingArea.md)[]
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
@@ -85,7 +85,7 @@ Tries to get specific ticking area by identifier.
 **Returns** [*TickingArea*](TickingArea.md) | *undefined*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
@@ -102,7 +102,7 @@ Returns true if the manager has enough chunk capacity for the ticking area and f
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **hasTickingArea**
 `
@@ -117,7 +117,7 @@ Returns true if the identifier is already in the manager and false otherwise.
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **removeAllTickingAreas**
 `
@@ -127,7 +127,7 @@ removeAllTickingAreas(): void
 Removes all ticking areas added by this manager.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
@@ -142,6 +142,6 @@ Removes specific ticking area by unique identifier.
 - **identifier**: *string* | [*TickingArea*](TickingArea.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*TickingAreaError*](TickingAreaError.md)

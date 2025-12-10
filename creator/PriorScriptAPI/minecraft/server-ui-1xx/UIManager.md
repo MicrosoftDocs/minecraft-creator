@@ -24,5 +24,5 @@ closeAllForms(player: minecraftserver.Player): void
 - **player**: [*@minecraft/server.Player*](../../../priorscriptapi/minecraft/server-1xx/Player.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

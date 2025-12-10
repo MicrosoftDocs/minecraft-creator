@@ -24,7 +24,7 @@ beginPlaytest(options: GameOptions): Promise<PlaytestSessionResult>
 **Returns** Promise&lt;[*PlaytestSessionResult*](PlaytestSessionResult.md)&gt;
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getPlaytestSessionAvailability**
@@ -35,5 +35,5 @@ getPlaytestSessionAvailability(): PlaytestSessionResult
 **Returns** [*PlaytestSessionResult*](PlaytestSessionResult.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

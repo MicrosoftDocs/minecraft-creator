@@ -20,7 +20,7 @@ description: Contents of the @minecraft/server-editor.WidgetComponentClipboard c
 Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **highlightHullColor**
 `highlightHullColor: minecraftserver.RGBA;`

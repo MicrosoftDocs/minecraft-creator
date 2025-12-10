@@ -25,7 +25,7 @@ Control points for the CatmullRom curve.
 Type: [*Vector3*](Vector3.md)[]
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ## Methods
 - [constructor](#constructor)

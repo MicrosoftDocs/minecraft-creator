@@ -25,7 +25,7 @@ Optional. Default targeting priority used for block types not provided to setBlo
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **defaultEntityPriority**
 `defaultEntityPriority: number;`
@@ -35,7 +35,7 @@ Optional. Default targeting priority used for entity types not provided to setEn
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **identifier**
 `read-only identifier: string;`
@@ -107,7 +107,7 @@ Sets the priority settings used for block targeting.
 **Returns** *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setBlockTagPriorities**
 `
@@ -122,7 +122,7 @@ Sets the priority settings used for block targeting.
 **Returns** *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setEntityPriorities**
 `
@@ -139,4 +139,4 @@ Sets the priority settings used for entity targeting.
 **Returns** *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.

@@ -76,7 +76,7 @@ Sets this rideable entity as tamed.
   Whether to show effect particles when this entity is tamed.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **tameToPlayer**
@@ -97,7 +97,7 @@ Sets this rideable entity as tamed by the given player.
 **Returns** *boolean* - Returns true if the entity was tamed.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ## Constants

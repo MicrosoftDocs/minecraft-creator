@@ -20,7 +20,7 @@ description: Contents of the @minecraft/server-editor.WidgetComponentSpline clas
 Type: [*SplineType*](SplineType.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ## Methods
 - [getControlPoints](#getcontrolpoints)
@@ -35,7 +35,7 @@ getControlPoints(): Widget[]
 **Returns** [*Widget*](Widget.md)[]
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws *Error*, [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md), [*InvalidWidgetError*](InvalidWidgetError.md)
 
@@ -50,7 +50,7 @@ getInterpolatedPoints(maxPointsPerControlSegment?: number): minecraftserver.Vect
 **Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)[]
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setControlPoints**
@@ -62,6 +62,6 @@ setControlPoints(widgetList: Widget[]): void
 - **widgetList**: [*Widget*](Widget.md)[]
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md), [*InvalidWidgetError*](InvalidWidgetError.md)

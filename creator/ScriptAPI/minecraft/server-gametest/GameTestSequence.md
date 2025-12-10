@@ -36,7 +36,7 @@ Runs the given callback as a step within a GameTest sequence. Exceptions thrown 
 **Returns** [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **thenExecuteAfter**
 `
@@ -56,7 +56,7 @@ After a delay, runs the given callback as a step within a GameTest sequence. Exc
 **Returns** [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **thenExecuteFor**
 `
@@ -74,7 +74,7 @@ Runs the given callback every tick for the given number of ticks.
 **Returns** [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **thenFail**
 `
@@ -89,7 +89,7 @@ Causes the test to fail if this step in the GameTest sequence is reached.
   Error message summarizing the failure condition.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **thenIdle**
 `
@@ -106,7 +106,7 @@ Idles the GameTest sequence for the specified delayTicks.
 **Returns** [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **thenSucceed**
 `
@@ -116,7 +116,7 @@ thenSucceed(): void
 Marks the GameTest a success if this step is reached in the GameTest sequence.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **thenWait**
 `
@@ -133,7 +133,7 @@ Executes the given callback every tick until it succeeds. Exceptions thrown with
 **Returns** [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **thenWaitAfter**
 `
@@ -153,4 +153,4 @@ After a delay from the previous step, executes the given callback every tick unt
 **Returns** [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.

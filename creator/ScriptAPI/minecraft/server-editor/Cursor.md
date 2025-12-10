@@ -71,7 +71,7 @@ Get the world position of the 3D block cursor
 **Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getProperties**
@@ -84,7 +84,7 @@ Get a property object which represents the current properties of the 3D block cu
 **Returns** [*CursorProperties*](CursorProperties.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getRay**
@@ -95,7 +95,7 @@ getRay(): CursorRay
 **Returns** [*CursorRay*](CursorRay.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **hide**
@@ -106,7 +106,7 @@ hide(): void
 Hide the 3D block cursor from view until the corresponding [*@minecraft/server-editor.Cursor.show*](../../../scriptapi/minecraft/server-editor/Cursor.md#show) function is called
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **moveBy**
@@ -124,7 +124,7 @@ Manually offset the 3D block cursor by given amount.  Depending on the [*@minecr
 **Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md) - Return the newly modified position (or previous position if movement was restricted)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **resetToDefaultState**
@@ -135,7 +135,7 @@ resetToDefaultState(): void
 Reset the 3D block cursor to the system default state
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setProperties**
@@ -151,7 +151,7 @@ Set the 3D block cursor properties to a given state
   A set of optional parameters within a property state which represent the intended 3D block cursor state
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **show**
@@ -162,5 +162,5 @@ show(): void
 Make the 3D block cursor visible on screen
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
