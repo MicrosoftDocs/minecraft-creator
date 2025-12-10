@@ -45,7 +45,7 @@ Creates an empty Structure in memory. Use [*@minecraft/server.Structure.setBlock
 **Returns** [*Structure*](Structure.md) - Returns the newly created Structure.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
@@ -72,7 +72,7 @@ Creates a new Structure from blocks in the world. This is functionally equivalen
 **Returns** [*Structure*](Structure.md) - Returns the newly created Structure.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
@@ -91,7 +91,7 @@ Deletes a structure from memory and from the world if it exists.
 **Returns** *boolean* - Returns whether the structure was removed.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
@@ -110,7 +110,7 @@ Gets a Structure that is saved to memory or the world.
 **Returns** [*Structure*](Structure.md) | *undefined* - Returns a Structure if it exists, otherwise undefined.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getWorldStructureIds**
 `
@@ -120,7 +120,7 @@ getWorldStructureIds(): string[]
 **Returns** *string*[]
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **place**
 `
@@ -144,7 +144,7 @@ Places a structure in the world. Structures placed in unloaded chunks will be qu
   Additional options for Structure placement.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
 
@@ -178,7 +178,7 @@ Places a partial jigsaw structure in the world. This is useful for debugging con
 **Returns** [*BlockBoundingBox*](BlockBoundingBox.md) - Returns a [*@minecraft/server.BlockBoundingBox*](../../../priorscriptapi/minecraft/server-1xx/BlockBoundingBox.md) object which represents the maximum bounds of the jigsaw structure.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*PlaceJigsawError*](PlaceJigsawError.md)
 
@@ -206,6 +206,6 @@ Places a jigsaw structure in the world.
 **Returns** [*BlockBoundingBox*](BlockBoundingBox.md) - Returns a [*@minecraft/server.BlockBoundingBox*](../../../priorscriptapi/minecraft/server-1xx/BlockBoundingBox.md) object which represents the maximum bounds of the jigsaw structure.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*PlaceJigsawError*](PlaceJigsawError.md)

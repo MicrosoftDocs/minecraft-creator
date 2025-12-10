@@ -168,7 +168,7 @@ setBlockPermutation(location: minecraftserver.Vector3, blockPermutation: minecra
 - **waterlogged**?: *boolean* = `false`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*@minecraft/server.InvalidStructureError*](../../../scriptapi/minecraft/server/InvalidStructureError.md)
 
@@ -181,6 +181,6 @@ setTags(tags: string[]): void
 - **tags**: *string*[]
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/server.InvalidStructureError*](../../../scriptapi/minecraft/server/InvalidStructureError.md)

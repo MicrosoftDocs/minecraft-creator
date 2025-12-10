@@ -24,7 +24,7 @@ createGroup(options?: WidgetGroupCreateOptions): WidgetGroup
 **Returns** [*WidgetGroup*](WidgetGroup.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **deleteGroup**
@@ -36,5 +36,5 @@ deleteGroup(groupToDelete: WidgetGroup): void
 - **groupToDelete**: [*WidgetGroup*](WidgetGroup.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

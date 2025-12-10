@@ -24,7 +24,7 @@ Sets and returns the current color of the item.
 Type: [*RGB*](RGB.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **defaultColor**
 `read-only defaultColor?: RGB;`

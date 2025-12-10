@@ -31,7 +31,7 @@ Registers a custom command that when executed triggers a script callback.
 **Returns** *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 - This function can throw errors.
   - Throws [*CustomCommandError*](CustomCommandError.md), [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*NamespaceNameError*](NamespaceNameError.md)
@@ -48,7 +48,7 @@ Registers a custom command enum.
 - **values**: *string*[]
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 - This function can throw errors.
   - Throws [*CustomCommandError*](CustomCommandError.md), [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*NamespaceNameError*](NamespaceNameError.md)

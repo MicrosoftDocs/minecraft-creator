@@ -24,4 +24,4 @@ Entity that was loaded.
 Type: [*Entity*](Entity.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.

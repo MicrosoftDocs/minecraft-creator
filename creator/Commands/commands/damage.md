@@ -112,4 +112,3 @@ Lightning
 Freezing
 - `temperature`
 Temperature
-- `dehydration`

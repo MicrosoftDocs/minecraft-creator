@@ -46,7 +46,7 @@ removeItemAt(index: number): void
 - **index**: *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md)
 
@@ -56,7 +56,7 @@ removeItems(): void
 `
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setItem**
 `
@@ -68,6 +68,6 @@ setItem(blockPaletteItem: IBlockPaletteItem, index: number): void
 - **index**: *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md)

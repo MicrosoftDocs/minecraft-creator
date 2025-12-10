@@ -26,7 +26,7 @@ The fraction of the projectile's speed maintained every tick while traveling thr
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **catchFireOnHurt**
 `catchFireOnHurt: boolean;`
@@ -36,7 +36,7 @@ If true, the entity will be set on fire when hurt. The default burn duration is 
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **critParticlesOnProjectileHurt**
 `critParticlesOnProjectileHurt: boolean;`
@@ -46,7 +46,7 @@ If true, the projectile will spawn crit particles when hit by a player. E.g. Pla
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **destroyOnProjectileHurt**
 `destroyOnProjectileHurt: boolean;`
@@ -56,7 +56,7 @@ If true, the projectile will be destroyed when it takes damage. E.g. Player atta
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **gravity**
 `gravity: number;`
@@ -66,7 +66,7 @@ The gravity applied to the projectile. When the entity is not on the ground, sub
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **hitEntitySound**
 `hitEntitySound?: string;`
@@ -76,7 +76,7 @@ The sound that plays when the projectile hits an entity.
 Type: *string*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **hitGroundSound**
 `hitGroundSound?: string;`
@@ -86,7 +86,7 @@ The sound that plays when the projectile hits a block.
 Type: *string*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **hitParticle**
 `hitParticle?: string;`
@@ -96,7 +96,7 @@ The particle that spawns when the projectile hits something.
 Type: *string*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **lightningStrikeOnHit**
 `lightningStrikeOnHit: boolean;`
@@ -106,7 +106,7 @@ If true and the weather is thunder and the entity has line of sight to the sky, 
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **liquidInertia**
 `liquidInertia: number;`
@@ -116,7 +116,7 @@ The fraction of the projectile's speed maintained every tick while traveling thr
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **onFireTime**
 `onFireTime: number;`
@@ -126,7 +126,7 @@ Duration in seconds that the entity hit will be on fire for when catchFireOnHurt
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **owner**
 `owner?: Entity;`
@@ -136,7 +136,7 @@ The owner of the projectile. This is used to determine what the projectile can c
 Type: [*Entity*](Entity.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **shouldBounceOnHit**
 `shouldBounceOnHit: boolean;`
@@ -146,7 +146,7 @@ If true, the projectile will bounce off mobs when no damage is taken. E.g. A spa
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **stopOnHit**
 `stopOnHit: boolean;`
@@ -156,7 +156,7 @@ If true, the projectile will stop moving when an entity is hit as thought it had
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ## Methods
 - [shoot](#shoot)
@@ -177,7 +177,7 @@ Shoots the projectile with a given velocity. The projectile will be shot from it
   Optional configuration for the shoot.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws if the component or entity no longer exist.
 

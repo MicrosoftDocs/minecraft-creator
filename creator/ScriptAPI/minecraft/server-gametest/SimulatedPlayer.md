@@ -34,7 +34,7 @@ Returns whether the simulated player is sprinting.
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ## Methods
 - [attack](#attack)
@@ -91,7 +91,7 @@ Causes the simulated player to make an attack 'swipe'. Returns true if the attac
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **attackEntity**
@@ -107,7 +107,7 @@ Causes the simulated player to attack the provided target. Returns true if the a
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **breakBlock**
@@ -128,7 +128,7 @@ Destroys the block at blockLocation, respecting the rules of the server player's
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestError*](GameTestError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
@@ -141,7 +141,7 @@ chat(message: string): void
 - **message**: *string*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **disconnect**
@@ -152,7 +152,7 @@ disconnect(): void
 Simulates and performs a disconnection of the simulated player from the world.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **dropSelectedItem**
@@ -165,7 +165,7 @@ Drops the simulated player's selected item
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **fly**
@@ -176,7 +176,7 @@ fly(): void
 Causes the simulated player to start flying as though they were flying in creative mode. For flying with Elytra, see function glide.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **giveItem**
@@ -197,7 +197,7 @@ Gives the simulated player a particular item stack.
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **glide**
@@ -210,7 +210,7 @@ Causes the simulated player to start gliding. Elytra must be equipped and the pl
 **Returns** *boolean* - Returns true if the simulated player begins to glide. Returns false if the player is already gliding, or the player does not have Elytra equipped, is in water or is on the ground.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **interact**
@@ -223,7 +223,7 @@ Performs a raycast from the player’s head and interacts with the first interse
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **interactWithBlock**
@@ -244,7 +244,7 @@ Causes the simulated player to interact with a block. The block at the specified
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestError*](GameTestError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
@@ -263,7 +263,7 @@ Causes the simulated player to interact with a mob. Returns true if the interact
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
@@ -277,7 +277,7 @@ Causes the simulated player to jump.
 **Returns** *boolean* - True if a jump was performed.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **lookAtBlock**
@@ -292,7 +292,7 @@ Rotates the simulated player's head/body to look at the given block location.
 - **duration**?: [*LookDuration*](LookDuration.md) = `2`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestError*](GameTestError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
@@ -308,7 +308,7 @@ Rotates the simulated player's head/body to look at the given entity.
 - **duration**?: [*LookDuration*](LookDuration.md) = `2`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **lookAtLocation**
@@ -323,7 +323,7 @@ Rotates the simulated player's head/body to look at the given location.
 - **duration**?: [*LookDuration*](LookDuration.md) = `2`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **move**
@@ -339,7 +339,7 @@ Orders the simulated player to walk in the given direction relative to the GameT
 - **speed**?: *number* = `1`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **moveRelative**
@@ -355,7 +355,7 @@ Orders the simulated player to walk in the given direction relative to the playe
 - **speed**?: *number* = `1`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **moveToBlock**
@@ -370,7 +370,7 @@ Orders the simulated player to move to the given block location in a straight li
 - **options**?: [*MoveToOptions*](MoveToOptions.md) = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **moveToLocation**
@@ -385,7 +385,7 @@ Orders the simulated player to move to the given location in a straight line. If
 - **options**?: [*MoveToOptions*](MoveToOptions.md) = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws *Error*, [*GameTestError*](GameTestError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
@@ -403,7 +403,7 @@ Orders the simulated player to move to a specific block location using navigatio
 **Returns** [*NavigationResult*](NavigationResult.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestError*](GameTestError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
@@ -421,7 +421,7 @@ Will use navigation to follow the selected entity to within a one block radius. 
 **Returns** [*NavigationResult*](NavigationResult.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
@@ -439,7 +439,7 @@ Orders the simulated player to move to a specific location using navigation. If 
 **Returns** [*NavigationResult*](NavigationResult.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestError*](GameTestError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
@@ -459,7 +459,7 @@ Use navigation to follow the route provided via the locations parameter. If a mo
   Net speed to use for doing the navigation.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestError*](GameTestError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
@@ -473,7 +473,7 @@ Respawns the particular simulated player.
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **rotateBody**
@@ -487,7 +487,7 @@ Causes the simulated player to turn by the provided angle, relative to the playe
 - **angleInDegrees**: *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setBodyRotation**
@@ -501,7 +501,7 @@ Causes the simulated player to turn to face the provided angle, relative to the 
 - **angleInDegrees**: *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setItem**
@@ -525,7 +525,7 @@ Sets a particular item for the simulated player.
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setSkin**
@@ -541,7 +541,7 @@ Updates information about the player's skin.
   Options for the skin to set on the player.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
@@ -554,7 +554,7 @@ startBuild(slot?: number): void
 - **slot**?: *number* = `0`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **stopBreakingBlock**
@@ -565,7 +565,7 @@ stopBreakingBlock(): void
 Stops destroying the block that is currently being hit.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **stopBuild**
@@ -574,7 +574,7 @@ stopBuild(): void
 `
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **stopFlying**
@@ -585,7 +585,7 @@ stopFlying(): void
 Causes the simulated player to stop flying.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **stopGliding**
@@ -596,7 +596,7 @@ stopGliding(): void
 Causes the simulated player to stop gliding.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **stopInteracting**
@@ -607,7 +607,7 @@ stopInteracting(): void
 Stops interacting with entities or blocks.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **stopMoving**
@@ -618,7 +618,7 @@ stopMoving(): void
 Stops moving/walking/following if the simulated player is moving.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **stopSwimming**
@@ -629,7 +629,7 @@ stopSwimming(): void
 Causes the simulated player to stop swimming.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **stopUsingItem**
@@ -642,7 +642,7 @@ Stops using the currently active item.
 **Returns** [*@minecraft/server.ItemStack*](../../../scriptapi/minecraft/server/ItemStack.md) | *undefined* - Returns the item that was in use. Undefined if no item was in use.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **swim**
@@ -653,7 +653,7 @@ swim(): void
 Causes the simulated player to start swimming.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **useItem**
@@ -671,7 +671,7 @@ Causes the simulated player to use an item. Does not consume the item. Returns f
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **useItemInSlot**
@@ -689,7 +689,7 @@ Causes the simulated player to hold and use an item in their inventory.
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **useItemInSlotOnBlock**
@@ -716,7 +716,7 @@ Causes the simulated player to use an item in their inventory on a block. The bl
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestError*](GameTestError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
@@ -744,6 +744,6 @@ Causes the simulated player to use an item on a block. The block at the specifie
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*GameTestError*](GameTestError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)

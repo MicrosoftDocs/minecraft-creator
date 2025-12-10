@@ -21,7 +21,7 @@ If true, this is the initial spawn of a player after joining the game.
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **player**
 `player: Player;`
@@ -31,4 +31,4 @@ Object that represents the player that joined the game.
 Type: [*Player*](Player.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.

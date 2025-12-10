@@ -147,7 +147,7 @@ Books have a maximum limit of 50 pages.
   The content to set for the page. Can be a single string or [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) or an array of strings and/or [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md)s
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*BookError*](BookError.md), [*BookPageContentError*](BookPageContentError.md), [*InvalidItemStackError*](InvalidItemStackError.md)
 
@@ -164,7 +164,7 @@ Removes a page at a given index. Existing pages following this page will be move
   The index of the page.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidItemStackError*](InvalidItemStackError.md)
 
@@ -185,7 +185,7 @@ Books have a maximum limit of 50 pages.
   An array of each page's contents. Each page can be a single string or [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) or an array of strings and/or [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md)s.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*BookError*](BookError.md), [*BookPageContentError*](BookPageContentError.md), [*InvalidItemStackError*](InvalidItemStackError.md)
 
@@ -209,7 +209,7 @@ Books have a maximum limit of 50 pages.
   The content to set for the page. Can be a single string or [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) or an array of strings and/or [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md)s
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*BookError*](BookError.md), [*BookPageContentError*](BookPageContentError.md), [*InvalidItemStackError*](InvalidItemStackError.md)
 
@@ -231,7 +231,7 @@ Titles have a maximum character limit of 16.
   The name of the book's author.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*BookError*](BookError.md), [*InvalidEntityError*](InvalidEntityError.md), [*InvalidItemStackError*](InvalidItemStackError.md)
 

@@ -50,7 +50,7 @@ Adds an enchantment to the item stack.
   The enchantment interface to be added.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*EnchantmentLevelOutOfBoundsError*](EnchantmentLevelOutOfBoundsError.md), [*EnchantmentTypeNotCompatibleError*](EnchantmentTypeNotCompatibleError.md), [*EnchantmentTypeUnknownIdError*](EnchantmentTypeUnknownIdError.md), *Error*
 
@@ -67,7 +67,7 @@ Adds a list of enchantments to the item stack.
   The list of enchantments to be added.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*EnchantmentLevelOutOfBoundsError*](EnchantmentLevelOutOfBoundsError.md), [*EnchantmentTypeNotCompatibleError*](EnchantmentTypeNotCompatibleError.md), [*EnchantmentTypeUnknownIdError*](EnchantmentTypeUnknownIdError.md), *Error*
 
@@ -145,7 +145,7 @@ removeAllEnchantments(): void
 Removes all enchantments applied to this item stack.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **removeEnchantment**
@@ -161,7 +161,7 @@ Removes an enchantment of the given type.
   The enchantment type to remove.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*EnchantmentTypeUnknownIdError*](EnchantmentTypeUnknownIdError.md), *Error*
 

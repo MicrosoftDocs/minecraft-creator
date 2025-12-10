@@ -45,7 +45,7 @@ Notes:
 Type: [*CommandPermissionLevel*](CommandPermissionLevel.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **graphicsMode**
 `read-only graphicsMode: GraphicsMode;`
@@ -157,7 +157,7 @@ Notes:
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **totalXpNeededForNextLevel**
 `read-only totalXpNeededForNextLevel: number;`
@@ -232,7 +232,7 @@ Adds/removes experience to/from the Player and returns the current experience of
 **Returns** *number* - Returns the current experience of the Player.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **addLevels**
@@ -250,7 +250,7 @@ Adds/removes level to/from the Player and returns the current level of the Playe
 **Returns** *number* - Returns the current level of the Player.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **clearPropertyOverridesForEntity**
@@ -266,7 +266,7 @@ For this player, removes all overrides of any Entity Properties on the target En
   The Entity or the ID of the Entity whose Entity Property overrides are being cleared.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws if the Entity or Entity ID is invalid.
 
@@ -287,7 +287,7 @@ Eats an item, providing the item's hunger and saturation effects to the player. 
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws if the item is not a food item.
 ::: moniker-end
@@ -388,7 +388,7 @@ Plays a music track that only this particular player can hear.
   Additional options for the music track.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **playSound**
@@ -405,7 +405,7 @@ Plays a sound that only this particular player can hear.
   Additional optional options for the sound.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 #### Examples
@@ -458,7 +458,7 @@ This is an internal-facing method for posting a system message to downstream cli
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 ::: moniker-end
 
@@ -478,7 +478,7 @@ Queues an additional music track that only this particular player can hear. If a
   Additional options for the music track.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - An error will be thrown if volume is less than 0.0.
   - An error will be thrown if fade is less than 0.0.
@@ -500,7 +500,7 @@ For this player, removes the override on an Entity Property. This change is not 
   The Entity Property identifier.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws if the entity is invalid.
   - Throws if an invalid identifier is provided.
@@ -514,7 +514,7 @@ resetLevel(): void
 Resets the level of the player.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **sendMessage**
@@ -642,7 +642,7 @@ Set a player's control scheme. The player's active camera preset must be set by 
   Control scheme type. If this argument is undefined, this method will clear the player's control scheme back to the player camera's default control scheme.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -659,7 +659,7 @@ Sets a gamemode override for this player.
   Active gamemode.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setPropertyOverrideForEntity**
@@ -681,7 +681,7 @@ For this player, overrides an Entity Property on the target Entity to the provid
   The override value. The provided type must be compatible with the type specified in the entity's definition. 
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws if the entity is invalid.
   - Throws if an invalid identifier is provided.
@@ -700,7 +700,7 @@ Sets the current starting spawn point for this particular player.
 - **spawnPoint**?: [*DimensionLocation*](DimensionLocation.md) = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
@@ -723,7 +723,7 @@ Creates a new particle emitter at a specified location in the world. Only visibl
   A set of optional, customizable variables that can be adjusted for this particle.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
@@ -773,7 +773,7 @@ Sets the item cooldown time for a particular cooldown category.
   Duration in ticks of the item cooldown.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -788,7 +788,7 @@ Stops all sounds from playing for this particular player.
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
 ::: moniker-end
@@ -801,7 +801,7 @@ stopMusic(): void
 Stops any music tracks from playing for this particular player.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -821,7 +821,7 @@ Stops a sound from playing for this particular player.
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
 ::: moniker-end

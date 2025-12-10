@@ -46,7 +46,7 @@ Create a validated instance of a [*@minecraft/server.BlockBoundingBox*](../../..
 **Returns** [*BlockBoundingBox*](BlockBoundingBox.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **dilate**
 `
@@ -66,7 +66,7 @@ Note: corners can be inverted if the contraction size is greater than the span, 
 **Returns** [*BlockBoundingBox*](BlockBoundingBox.md) - Return a new [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md) object representing the changes
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **equals**
 `
@@ -82,7 +82,7 @@ Check if two [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **expand**
 `
@@ -98,7 +98,7 @@ Expand the initial box object bounds to include the 2nd box argument.  The resul
 **Returns** [*BlockBoundingBox*](BlockBoundingBox.md) - A new [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md) instance representing the smallest possible bounding box which can encompass both
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getCenter**
 `
@@ -113,7 +113,7 @@ Calculate the center block of a given [*@minecraft/server.BlockBoundingBox*](../
 **Returns** [*Vector3*](Vector3.md) - Note that [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md) objects represent whole blocks, so the center of boxes which have odd numbered bounds are not mathematically centered...,i.e. a BlockBoundingBox( 0,0,0 -> 3,3,3 )  would have a center of (1,1,1)  (not (1.5, 1.5, 1.5) as expected) - Note that [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md) objects represent whole blocks, so the center of boxes which have odd numbered bounds are not mathematically centered...,i.e. a BlockBoundingBox( 0,0,0 -> 3,3,3 )  would have a center of (1,1,1)  (not (1.5, 1.5, 1.5) as expected)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getIntersection**
 `
@@ -129,7 +129,7 @@ Calculate the BlockBoundingBox which represents the union area of two intersecti
 **Returns** [*BlockBoundingBox*](BlockBoundingBox.md) | *undefined*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getSpan**
 `
@@ -144,7 +144,7 @@ Get the Span of each of the BlockBoundingBox Axis components
 **Returns** [*Vector3*](Vector3.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **intersects**
 `
@@ -160,7 +160,7 @@ Check to see if two BlockBoundingBox objects intersect
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **isInside**
 `
@@ -176,7 +176,7 @@ Check to see if a given coordinate is inside a BlockBoundingBox
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **isValid**
 `
@@ -191,7 +191,7 @@ Check to see if a BlockBoundingBox is valid (i.e. (min <= max))
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **translate**
 `
@@ -207,4 +207,4 @@ Move a BlockBoundingBox by a given amount
 **Returns** [*BlockBoundingBox*](BlockBoundingBox.md) - Return a new BlockBoundingBox object which represents the change
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.

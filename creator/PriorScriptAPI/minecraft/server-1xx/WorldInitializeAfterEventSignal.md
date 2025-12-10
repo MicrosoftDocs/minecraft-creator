@@ -37,7 +37,7 @@ Adds a callback that will be called when the scripting environment is initialize
 > This function is deprecated and will be removed in 2.0.0.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 ### **unsubscribe**
@@ -54,5 +54,5 @@ Removes a callback from being called the scripting environment is initialized fo
 > This function is deprecated and will be removed in 2.0.0.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.

@@ -33,7 +33,7 @@ getHiddenHudElements(): HudElement[]
 **Returns** [*HudElement*](HudElement.md)[]
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -46,7 +46,7 @@ hideAllExcept(hudElements?: HudElement[]): void
 - **hudElements**?: [*HudElement*](HudElement.md)[] = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -61,7 +61,7 @@ isForcedHidden(hudElement: HudElement): boolean
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -86,7 +86,7 @@ resetHudElements(): void
 > This function is deprecated and will be removed in 2.0.0.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -103,7 +103,7 @@ Set the action bar text - a piece of text that displays beneath the title and ab
   New value for the action bar text.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md), [*RawMessageError*](RawMessageError.md)
 
@@ -123,7 +123,7 @@ Sets visibility of a particular element of the heads up display (HUD).
   Optional list of HUD elements to configure visibility for.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
@@ -139,7 +139,7 @@ Will cause a title to show up on the player's on screen display. Will clear the 
 - **options**?: [*TitleDisplayOptions*](TitleDisplayOptions.md) = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*InvalidEntityError*](InvalidEntityError.md), [*RawMessageError*](RawMessageError.md)
 
@@ -223,7 +223,7 @@ Updates the subtitle if the subtitle was previously displayed via the setTitle m
 - **subtitle**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md), [*RawMessageError*](RawMessageError.md)
 

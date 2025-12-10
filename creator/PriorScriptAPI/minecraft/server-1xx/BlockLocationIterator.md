@@ -37,7 +37,7 @@ Unless otherwise specified by the parent shape - the BlockLocationIterator will 
 **Returns** Iterator&lt;[*Vector3*](Vector3.md)&gt;
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **next**
 `
@@ -47,4 +47,4 @@ next(): IteratorResult<Vector3>
 **Returns** IteratorResult&lt;[*Vector3*](Vector3.md)&gt;
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.

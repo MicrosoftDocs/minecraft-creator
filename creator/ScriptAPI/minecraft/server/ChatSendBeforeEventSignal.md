@@ -28,11 +28,13 @@ Adds a callback that will be called before new chat messages are sent.
 
 #### **Parameters**
 - **callback**: (arg0: [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)) => *void*
+  This closure is called with restricted-execution privilege.
 
 **Returns** (arg0: [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)) => *void*
+  The returned closure is called with restricted-execution privilege.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 ### **unsubscribe**
@@ -44,9 +46,10 @@ Removes a callback from being called before new chat messages are sent.
 
 #### **Parameters**
 - **callback**: (arg0: [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)) => *void*
+  This closure is called with restricted-execution privilege.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 #### Examples

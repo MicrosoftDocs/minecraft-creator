@@ -28,7 +28,7 @@ The DialogueScene that is opened when players first interact with the NPC.
 Type: *string*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **name**
 `name: string;`
@@ -38,7 +38,7 @@ The name of the NPC as it is displayed to players.
 Type: *string*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **skinIndex**
 `skinIndex: number;`
@@ -48,7 +48,7 @@ The index of the skin the NPC will use.
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ## Constants
 

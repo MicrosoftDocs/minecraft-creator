@@ -103,7 +103,7 @@ Leashes this entity to another entity.
   The entity to leash this entity to.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws if the entity to leash to is over the max distance, and if the player is dead or in spectator mode.
 
@@ -115,7 +115,7 @@ unleash(): void
 Unleashes this entity if it is leashed to another entity.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ## Constants

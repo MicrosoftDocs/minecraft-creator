@@ -40,7 +40,7 @@ Subscribes to the event.
 > This function is deprecated and will be removed in 2.0.0.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **unsubscribe**
 `
@@ -56,4 +56,4 @@ Unsubscribes from the event.
 > This function is deprecated and will be removed in 2.0.0.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.

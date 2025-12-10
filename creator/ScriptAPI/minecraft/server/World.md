@@ -85,6 +85,18 @@ Returns the general global scoreboard that applies to the world.
 
 Type: [*Scoreboard*](Scoreboard.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **seed**
+`read-only seed: string;`
+
+The world seed.
+
+Type: *string*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **structureManager**
 `read-only structureManager: StructureManager;`
 
@@ -160,7 +172,7 @@ A method that is internal-only, used for broadcasting specific messages between 
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 ::: moniker-end
 
 ### **clearDynamicProperties**
@@ -451,7 +463,7 @@ Plays a particular music track for all players.
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
 
@@ -505,7 +517,7 @@ Queues an additional music track for players. If a track is not playing, a music
   Additional options for the music track.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
 
@@ -538,7 +550,7 @@ Sets the world time.
   The world time, in ticks.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setDefaultSpawnLocation**
 `
@@ -553,7 +565,7 @@ Sets a default spawn location for all players.
   Location of the spawn point. Note that this is assumed to be within the overworld dimension.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
@@ -570,7 +582,7 @@ Sets the worlds difficulty.
   The difficulty we want to set the world to.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setDynamicProperties**
 `
@@ -696,7 +708,7 @@ Sets the time of day.
   The time of day, in ticks, between 0 and 24000.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws if the provided time of day is not within the valid range.
 
@@ -708,4 +720,4 @@ stopMusic(): void
 Stops any music tracks from playing.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.

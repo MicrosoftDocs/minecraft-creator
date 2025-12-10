@@ -95,7 +95,7 @@ Replaces the item in the given EquipmentSlot.
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ## Constants

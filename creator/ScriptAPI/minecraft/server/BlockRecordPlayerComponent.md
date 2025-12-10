@@ -30,7 +30,7 @@ ejectRecord(): void
 Ejects the currently set record of this record-playing block.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getRecord**
@@ -65,7 +65,7 @@ pauseRecord(): void
 Pauses the currently playing record of this record-playing block.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **playRecord**
@@ -76,7 +76,7 @@ playRecord(): void
 Plays the currently set record of this record-playing block.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setRecord**
@@ -91,7 +91,7 @@ Sets and plays a record based on an item type.
 - **startPlaying**?: *boolean* = `true`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ## Constants

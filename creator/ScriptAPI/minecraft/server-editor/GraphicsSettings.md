@@ -58,7 +58,7 @@ Modifies a graphics settings property value.
 **Returns** *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setAll**
@@ -76,5 +76,5 @@ Modify multiple graphics settings properties.
 **Returns** *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

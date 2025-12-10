@@ -25,7 +25,7 @@ Type: *boolean*
 Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **volumeCount**
 `read-only volumeCount: number;`
@@ -62,7 +62,7 @@ add(toAdd: minecraftserver.Vector3[] | minecraftserver.BlockVolume | minecraftse
 - **toAdd**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)[] | [*@minecraft/server.BlockVolume*](../../../scriptapi/minecraft/server/BlockVolume.md) | [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md) | [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **clear**
 `
@@ -70,7 +70,7 @@ clear(): void
 `
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getVolumeList**
 `
@@ -80,7 +80,7 @@ getVolumeList(): minecraftserver.BlockVolume[]
 **Returns** [*@minecraft/server.BlockVolume*](../../../scriptapi/minecraft/server/BlockVolume.md)[]
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **hasAdjacent**
 `
@@ -102,7 +102,7 @@ moveTo(location: minecraftserver.Vector3): void
 - **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **remove**
 `
@@ -113,7 +113,7 @@ remove(toRemove: minecraftserver.Vector3[] | minecraftserver.BlockVolume | minec
 - **toRemove**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)[] | [*@minecraft/server.BlockVolume*](../../../scriptapi/minecraft/server/BlockVolume.md) | [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md) | [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **set**
 `
@@ -124,7 +124,7 @@ Notes:
 - **toSet**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)[] | [*@minecraft/server.BlockVolume*](../../../scriptapi/minecraft/server/BlockVolume.md) | [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md) | [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **translate**
 `
@@ -135,4 +135,4 @@ translate(offset: minecraftserver.Vector3): void
 - **offset**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.

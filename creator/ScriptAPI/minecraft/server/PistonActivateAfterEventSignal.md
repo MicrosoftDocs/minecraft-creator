@@ -26,7 +26,7 @@ subscribe(callback: (arg0: PistonActivateAfterEvent) => void): (arg0: PistonActi
 **Returns** (arg0: [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 #### Examples
@@ -85,5 +85,5 @@ Removes a callback from being called when a piston expands or retracts.
 - **callback**: (arg0: [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.

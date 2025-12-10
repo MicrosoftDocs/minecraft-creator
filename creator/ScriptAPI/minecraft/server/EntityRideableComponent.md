@@ -109,7 +109,7 @@ Adds an entity to this entity as a rider.
 **Returns** *boolean* - True if the rider entity was successfully added.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 #### Examples
@@ -151,7 +151,7 @@ Ejects the specified rider of this entity.
   Entity that should be ejected from this entity.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **ejectRiders**
@@ -162,7 +162,7 @@ ejectRiders(): void
 Ejects all riders of this entity.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getFamilyTypes**

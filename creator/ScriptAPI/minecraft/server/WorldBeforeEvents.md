@@ -97,6 +97,21 @@ Notes:
   - This property can be read in early-execution mode.
 ::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **entityItemPickup**
+`read-only entityItemPickup: EntityItemPickupBeforeEventSignal;`
+
+This event fires before an entity picks up an item.
+
+Type: [*EntityItemPickupBeforeEventSignal*](EntityItemPickupBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
+
 ### **entityRemove**
 `read-only entityRemove: EntityRemoveBeforeEventSignal;`
 

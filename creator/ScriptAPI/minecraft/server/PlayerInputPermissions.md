@@ -28,7 +28,7 @@ Returns true if an input permission is enabled.
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setPermissionCategory**
@@ -43,5 +43,5 @@ Enable or disable an input permission. When enabled the input will work, when di
 - **isEnabled**: *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

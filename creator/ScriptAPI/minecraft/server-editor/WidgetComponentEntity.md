@@ -20,7 +20,7 @@ description: Contents of the @minecraft/server-editor.WidgetComponentEntity clas
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ## Methods
 - [playAnimation](#playanimation)
@@ -34,6 +34,6 @@ playAnimation(animationName: string): void
 - **animationName**: *string*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md)

@@ -32,7 +32,7 @@ addOrReplacePalette(paletteId: string, palette: BlockPalette): void
 - **palette**: [*BlockPalette*](BlockPalette.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getPalette**
 `
@@ -98,7 +98,7 @@ removePalette(paletteId: string): void
 - **paletteId**: *string*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setPaletteItem**
@@ -112,7 +112,7 @@ setPaletteItem(paletteId: string, index: number, item: IBlockPaletteItem): void
 - **item**: [*IBlockPaletteItem*](IBlockPaletteItem.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setPrimaryPalette**
@@ -124,7 +124,7 @@ setPrimaryPalette(paletteId: string): void
 - **paletteId**: *string*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setSelectedItem**
@@ -136,5 +136,5 @@ setSelectedItem(item: IBlockPaletteItem): void
 - **item**: [*IBlockPaletteItem*](IBlockPaletteItem.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

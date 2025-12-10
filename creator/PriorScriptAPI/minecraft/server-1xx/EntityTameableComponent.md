@@ -87,7 +87,7 @@ Set this entity as tamed by the given player.
 **Returns** *boolean* - Returns true if the entity was tamed.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ## Constants

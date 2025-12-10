@@ -40,7 +40,7 @@ clear(): void
 Clears the players cursor inventory.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ## Constants

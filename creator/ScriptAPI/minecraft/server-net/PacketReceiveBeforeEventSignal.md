@@ -20,12 +20,14 @@ subscribe(callback: (arg0: PacketReceivedBeforeEvent) => void, options?: PacketE
 
 #### **Parameters**
 - **callback**: (arg0: [*PacketReceivedBeforeEvent*](PacketReceivedBeforeEvent.md)) => *void*
+  This closure is called with restricted-execution privilege.
 - **options**?: [*PacketEventOptions*](PacketEventOptions.md) = `null`
 
 **Returns** (arg0: [*PacketReceivedBeforeEvent*](PacketReceivedBeforeEvent.md)) => *void*
+  The returned closure is called with restricted-execution privilege.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 ### **unsubscribe**
@@ -35,7 +37,8 @@ unsubscribe(callback: (arg0: PacketReceivedBeforeEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg0: [*PacketReceivedBeforeEvent*](PacketReceivedBeforeEvent.md)) => *void*
+  This closure is called with restricted-execution privilege.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.

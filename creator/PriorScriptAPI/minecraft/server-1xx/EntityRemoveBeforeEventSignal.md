@@ -29,11 +29,13 @@ Will call your function every time an entity is being removed from the game.
 - **callback**: (arg0: [*EntityRemoveBeforeEvent*](EntityRemoveBeforeEvent.md)) => *void*
   
   Function to call.
+  This closure is called with restricted-execution privilege.
 
 **Returns** (arg0: [*EntityRemoveBeforeEvent*](EntityRemoveBeforeEvent.md)) => *void* - Returns a closure that can be used in subsequent unsubscribe operations.
+  The returned closure is called with restricted-execution privilege.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 ### **unsubscribe**
@@ -45,7 +47,8 @@ Unsubscribes your function from subsequent calls when an entity is being removed
 
 #### **Parameters**
 - **callback**: (arg0: [*EntityRemoveBeforeEvent*](EntityRemoveBeforeEvent.md)) => *void*
+  This closure is called with restricted-execution privilege.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.

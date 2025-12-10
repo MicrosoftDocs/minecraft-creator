@@ -38,7 +38,7 @@ addBlock(block: minecraftserver.BlockPermutation | minecraftserver.BlockType | s
 - **weight**: *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getBlocks**
@@ -57,5 +57,5 @@ removeBlockAt(index: number): void
 - **index**: *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

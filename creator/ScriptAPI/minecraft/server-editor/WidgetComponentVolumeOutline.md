@@ -20,7 +20,7 @@ description: Contents of the @minecraft/server-editor.WidgetComponentVolumeOutli
 Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **highlightOutlineColor**
 `highlightOutlineColor: minecraftserver.RGBA;`
@@ -28,7 +28,7 @@ Notes:
 Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **hullColor**
 `hullColor: minecraftserver.RGBA;`
@@ -36,7 +36,7 @@ Notes:
 Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **mirror**
 `mirror: minecraftserver.StructureMirrorAxis;`
@@ -44,7 +44,7 @@ Notes:
 Type: [*@minecraft/server.StructureMirrorAxis*](../../../scriptapi/minecraft/server/StructureMirrorAxis.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **normalizedOrigin**
 `normalizedOrigin: minecraftserver.Vector3;`
@@ -52,7 +52,7 @@ Notes:
 Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **outlineColor**
 `outlineColor: minecraftserver.RGBA;`
@@ -60,7 +60,7 @@ Notes:
 Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **rotation**
 `rotation: minecraftserver.StructureRotation;`
@@ -68,7 +68,7 @@ Notes:
 Type: [*@minecraft/server.StructureRotation*](../../../scriptapi/minecraft/server/StructureRotation.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **showHighlightOutline**
 `showHighlightOutline: boolean;`
@@ -76,7 +76,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **showOutline**
 `showOutline: boolean;`
@@ -84,7 +84,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **transformedWorldVolume**
 `read-only transformedWorldVolume: minecraftserver.BlockVolume;`
@@ -101,7 +101,7 @@ Notes:
 Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ## Methods
 - [getVolume](#getvolume)
@@ -115,7 +115,7 @@ getVolume(): RelativeVolumeListBlockVolume | undefined
 **Returns** [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md) | *undefined*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md)
 
@@ -128,6 +128,6 @@ setVolume(volumeToSet?: minecraftserver.Vector3[] | minecraftserver.BlockVolume 
 - **volumeToSet**?: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)[] | [*@minecraft/server.BlockVolume*](../../../scriptapi/minecraft/server/BlockVolume.md) | [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md) | [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md) = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md)

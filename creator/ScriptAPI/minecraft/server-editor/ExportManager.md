@@ -26,7 +26,7 @@ beginExportProject(options: GameOptions): Promise<ExportResult>
 **Returns** Promise&lt;[*ExportResult*](ExportResult.md)&gt;
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **canExportProject**
@@ -37,7 +37,7 @@ canExportProject(): boolean
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getGameOptions**
@@ -51,7 +51,7 @@ getGameOptions(useDefault?: boolean): GameOptions
 **Returns** [*GameOptions*](GameOptions.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getGameVersion**
 `
@@ -61,5 +61,5 @@ getGameVersion(): string
 **Returns** *string*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

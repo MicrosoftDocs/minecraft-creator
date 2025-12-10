@@ -31,7 +31,7 @@ Subscribes the specified callback to a player dimension change after event.
 **Returns** (arg0: [*PlayerDimensionChangeAfterEvent*](PlayerDimensionChangeAfterEvent.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 
 ### **unsubscribe**
@@ -45,5 +45,5 @@ Removes the specified callback from a player dimension change after event.
 - **callback**: (arg0: [*PlayerDimensionChangeAfterEvent*](PlayerDimensionChangeAfterEvent.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.

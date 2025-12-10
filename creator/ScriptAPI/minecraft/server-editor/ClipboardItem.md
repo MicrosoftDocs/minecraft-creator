@@ -55,7 +55,7 @@ clear(): void
 Clear the contents of the item
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getPredictedWriteVolume**
@@ -70,7 +70,7 @@ getPredictedWriteVolume(location: minecraftserver.Vector3, options?: ClipboardWr
 **Returns** [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **readFromStructure**
@@ -82,7 +82,7 @@ readFromStructure(structure: EditorStructure): void
 - **structure**: [*EditorStructure*](EditorStructure.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **readFromWorld**
@@ -96,7 +96,7 @@ Copy the contents of a rectangular volume into the Clipboard Item
 - **source**: [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **writeToWorld**
@@ -117,5 +117,5 @@ Apply the contents of a ClipboardItem to the world at a given location using a s
 **Returns** *boolean* - Success or Failure
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

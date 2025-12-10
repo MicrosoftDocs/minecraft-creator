@@ -40,7 +40,7 @@ deselectBlocks(blockIdentifier: string): Promise<number>
 **Returns** Promise&lt;*number*&gt;
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **generateManifest**
 `
@@ -50,7 +50,7 @@ generateManifest(): Promise<SelectionManifestData>
 **Returns** Promise&lt;[*SelectionManifestData*](SelectionManifestData.md)&gt;
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getCurrentManifest**
 `
@@ -60,7 +60,7 @@ getCurrentManifest(): SelectionManifestData | undefined
 **Returns** [*SelectionManifestData*](SelectionManifestData.md) | *undefined*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **replaceBlocks**
 `
@@ -74,4 +74,4 @@ replaceBlocks(fromBlockIdentifier: string, toBlockIdentifier: string): Promise<n
 **Returns** Promise&lt;*number*&gt;
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.

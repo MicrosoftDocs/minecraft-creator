@@ -35,7 +35,7 @@ Once your editor extension development process is complete, and you're ready to 
 - **properties**?: [*LogProperties*](LogProperties.md) = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **error**
@@ -52,7 +52,7 @@ The error channel is generally used when the editor extension experiences an err
 - **properties**?: [*LogProperties*](LogProperties.md) = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **info**
@@ -69,7 +69,7 @@ The info channel is intended to communicate general, non-fatal or non-erroneous 
 - **properties**?: [*LogProperties*](LogProperties.md) = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **warning**
@@ -86,5 +86,5 @@ The warning channel is intended to inform the user of "potential" issues (missin
 - **properties**?: [*LogProperties*](LogProperties.md) = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

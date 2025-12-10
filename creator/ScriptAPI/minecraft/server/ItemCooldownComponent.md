@@ -52,7 +52,7 @@ getCooldownTicksRemaining(player: Player): number
 **Returns** *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **isCooldownCategory**
@@ -70,7 +70,7 @@ Will return true if the item is the cooldown category passed in and false otherw
 **Returns** *boolean* - True if the item is the given cooldown category.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **startCooldown**
@@ -84,7 +84,7 @@ Starts a new cooldown period for this item.
 - **player**: [*Player*](Player.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ## Constants

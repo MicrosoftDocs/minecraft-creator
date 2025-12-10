@@ -62,7 +62,7 @@ Adds a score to the given participant and objective.
 **Returns** *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getParticipants**
@@ -148,7 +148,7 @@ Removes a participant from this scoreboard objective.
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setScore**
@@ -167,5 +167,5 @@ Sets a score for a participant.
   New value of the score.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

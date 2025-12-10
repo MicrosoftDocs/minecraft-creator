@@ -24,7 +24,7 @@ Value of this particular color.
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ## Constants
 

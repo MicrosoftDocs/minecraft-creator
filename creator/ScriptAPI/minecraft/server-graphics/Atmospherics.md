@@ -46,7 +46,7 @@ Resets the horizon blend max to the value set by resource packs
   Biome Identifier. If the corresponding biome has had its horizon blend max overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
@@ -63,7 +63,7 @@ Resets the horizon blend mie start to the value set by resource packs
   Biome Identifier. If the corresponding biome has had its horizon blend mie start overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
@@ -80,7 +80,7 @@ Resets the horizon blend min to the value set by resource packs
   Biome Identifier. If the corresponding biome has had its horizon blend min overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
@@ -97,7 +97,7 @@ Resets the horizon blend start to the value set by resource packs
   Biome Identifier. If the corresponding biome has had its horizon blend start overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
@@ -114,7 +114,7 @@ Resets the moon mie strength to the value set by resource packs
   Biome Identifier. If the corresponding biome has had its moon mie strength overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
@@ -131,7 +131,7 @@ Resets the rayleigh strength to the value set by resource packs
   Biome Identifier. If the corresponding biome has had its rayleigh strength overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
@@ -148,7 +148,7 @@ Resets the sky horizon color to the color set by resource packs
   Biome Identifier. If the corresponding biome has had its sky horizon color overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
@@ -165,7 +165,7 @@ Resets the sky zenith color to the color set by resource packs
   Biome Identifier. If the corresponding biome has had its sky zenith color overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
@@ -182,7 +182,7 @@ Resets the sun glare shape to the value set by resource packs
   Biome Identifier. If the corresponding biome has had its sun glare shape overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
@@ -199,7 +199,7 @@ Resets the sun mie strength to the value set by resource packs
   Biome Identifier. If the corresponding biome has had its sun mie strength overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
@@ -219,7 +219,7 @@ Sets the horizon blend max for atmospheric scattering in Vibrant Visuals
   Biome Identifier. The horizon blend max will be set for the specified biome.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
@@ -239,7 +239,7 @@ Sets the horizon blend mie start for atmospheric scattering in Vibrant Visuals
   Biome Identifier. The horizon blend mie start will be set for the specified biome.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
@@ -259,7 +259,7 @@ Sets the horizon blend min for atmospheric scattering in Vibrant Visuals
   Biome Identifier. The horizon blend min will be set for the specified biome.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
@@ -279,7 +279,7 @@ Sets the horizon blend start for atmospheric scattering in Vibrant Visuals
   Biome Identifier. The horizon blend start will be set for the specified biome.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
@@ -299,7 +299,7 @@ Sets the moon mie strength for atmospheric scattering in Vibrant Visuals
   Biome Identifier. The moon mie strength will be set for the specified biome.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
@@ -319,7 +319,7 @@ Sets the rayleigh strength for atmospheric scattering in Vibrant Visuals
   Biome Identifier. The rayleigh strength will be set for the specified biome.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
@@ -339,7 +339,7 @@ Sets the sky horizon color for atmospheric scattering in Vibrant Visuals
   Biome Identifier. The sky horizon color will be set for the specified biome.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
@@ -359,7 +359,7 @@ Sets the sky zenith color for atmospheric scattering in Vibrant Visuals
   Biome Identifier. The sky zenith color will be set for the specified biome.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
@@ -379,7 +379,7 @@ Sets the sun glare shape for atmospheric scattering in Vibrant Visuals
   Biome Identifier. The sun glare shape will be set for the specified biome.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
@@ -399,6 +399,6 @@ Sets the sun mie strength for atmospheric scattering in Vibrant Visuals
   Biome Identifier. The sun mie will be set for the specified biome.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)

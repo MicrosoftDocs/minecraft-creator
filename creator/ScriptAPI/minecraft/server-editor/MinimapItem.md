@@ -44,7 +44,7 @@ Add a visual marker of the specified type to the minimap display.
 - **markerType**: [*MinimapMarkerType*](MinimapMarkerType.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getPlayerColor**
@@ -73,7 +73,7 @@ Remove a previously added marker of the specified type from the minimap.
 - **markerType**: [*MinimapMarkerType*](MinimapMarkerType.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setActive**
@@ -87,7 +87,7 @@ Control whether the minimap is currently active and visible to the player.
 - **active**: *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setSize**
@@ -102,7 +102,7 @@ Adjust the width and height dimensions of the minimap display.
 - **mapHeight**: *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setViewType**
@@ -116,5 +116,5 @@ Change the visual perspective or style of the minimap view.
 - **viewType**: [*MinimapViewType*](MinimapViewType.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.

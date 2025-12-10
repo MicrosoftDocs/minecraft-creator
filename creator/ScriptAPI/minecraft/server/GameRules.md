@@ -19,7 +19,7 @@ Represents the game rules for a world experience.
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **commandBlocksEnabled**
 `commandBlocksEnabled: boolean;`
@@ -27,7 +27,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **doDayLightCycle**
 `doDayLightCycle: boolean;`
@@ -35,7 +35,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **doEntityDrops**
 `doEntityDrops: boolean;`
@@ -43,7 +43,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **doFireTick**
 `doFireTick: boolean;`
@@ -51,7 +51,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **doImmediateRespawn**
 `doImmediateRespawn: boolean;`
@@ -59,7 +59,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **doInsomnia**
 `doInsomnia: boolean;`
@@ -67,7 +67,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **doLimitedCrafting**
 `doLimitedCrafting: boolean;`
@@ -75,7 +75,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **doMobLoot**
 `doMobLoot: boolean;`
@@ -83,7 +83,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **doMobSpawning**
 `doMobSpawning: boolean;`
@@ -91,7 +91,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **doTileDrops**
 `doTileDrops: boolean;`
@@ -99,7 +99,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **doWeatherCycle**
 `doWeatherCycle: boolean;`
@@ -107,7 +107,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **drowningDamage**
 `drowningDamage: boolean;`
@@ -115,7 +115,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **fallDamage**
 `fallDamage: boolean;`
@@ -123,7 +123,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **fireDamage**
 `fireDamage: boolean;`
@@ -131,7 +131,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **freezeDamage**
 `freezeDamage: boolean;`
@@ -139,7 +139,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **functionCommandLimit**
 `functionCommandLimit: number;`
@@ -147,7 +147,7 @@ Notes:
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **keepInventory**
 `keepInventory: boolean;`
@@ -155,7 +155,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **locatorBar**
@@ -167,7 +167,7 @@ Type: *boolean*
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 ::: moniker-end
 
 ### **maxCommandChainLength**
@@ -176,7 +176,7 @@ Notes:
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **mobGriefing**
 `mobGriefing: boolean;`
@@ -184,7 +184,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **naturalRegeneration**
 `naturalRegeneration: boolean;`
@@ -192,7 +192,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **playersSleepingPercentage**
 `playersSleepingPercentage: number;`
@@ -200,7 +200,7 @@ Notes:
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **projectilesCanBreakBlocks**
 `projectilesCanBreakBlocks: boolean;`
@@ -208,7 +208,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **pvp**
 `pvp: boolean;`
@@ -216,7 +216,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **randomTickSpeed**
 `randomTickSpeed: number;`
@@ -224,7 +224,7 @@ Notes:
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **recipesUnlock**
 `recipesUnlock: boolean;`
@@ -232,7 +232,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **respawnBlocksExplode**
 `respawnBlocksExplode: boolean;`
@@ -240,7 +240,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **sendCommandFeedback**
 `sendCommandFeedback: boolean;`
@@ -248,7 +248,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **showBorderEffect**
 `showBorderEffect: boolean;`
@@ -256,7 +256,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **showCoordinates**
 `showCoordinates: boolean;`
@@ -264,7 +264,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **showDaysPlayed**
 `showDaysPlayed: boolean;`
@@ -272,7 +272,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **showDeathMessages**
 `showDeathMessages: boolean;`
@@ -280,7 +280,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **showRecipeMessages**
 `showRecipeMessages: boolean;`
@@ -288,7 +288,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **showTags**
 `showTags: boolean;`
@@ -296,7 +296,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **spawnRadius**
 `spawnRadius: number;`
@@ -304,7 +304,7 @@ Notes:
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **tntExplodes**
 `tntExplodes: boolean;`
@@ -312,7 +312,7 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.
 
 ### **tntExplosionDropDecay**
 `tntExplosionDropDecay: boolean;`
@@ -320,4 +320,4 @@ Notes:
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be edited in restricted-execution mode.

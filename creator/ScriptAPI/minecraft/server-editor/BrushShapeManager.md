@@ -53,7 +53,7 @@ activateBrushTool(): void
 `
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **beginPainting**
 `
@@ -64,7 +64,7 @@ beginPainting(onComplete: (arg0: PaintCompletionState) => void): void
 - **onComplete**: (arg0: [*PaintCompletionState*](PaintCompletionState.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **clearBlockStateOverrides**
@@ -73,7 +73,7 @@ clearBlockStateOverrides(): void
 `
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **deactivateBrushTool**
 `
@@ -81,7 +81,7 @@ deactivateBrushTool(): void
 `
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **disableItemPlacement**
 `
@@ -89,7 +89,7 @@ disableItemPlacement(): void
 `
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **enableItemPlacement**
 `
@@ -101,7 +101,7 @@ enableItemPlacement(itemType: minecraftserver.ItemType, data?: number): void
 - **data**?: *number* = `null`
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **endPainting**
 `
@@ -112,7 +112,7 @@ endPainting(cancelled: boolean): void
 - **cancelled**: *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **getBrushShapeOffset**
@@ -123,7 +123,7 @@ getBrushShapeOffset(): minecraftserver.Vector3
 **Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getDirectionalPlacementMode**
 `
@@ -133,7 +133,7 @@ getDirectionalPlacementMode(): BrushDirectionalPlacementMode
 **Returns** [*BrushDirectionalPlacementMode*](BrushDirectionalPlacementMode.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getInverseEraseMode**
 `
@@ -143,7 +143,7 @@ getInverseEraseMode(): boolean
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **isBrushPaintBusy**
 `
@@ -153,7 +153,7 @@ isBrushPaintBusy(): boolean
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **pushBlockStateOverride**
 `
@@ -167,7 +167,7 @@ pushBlockStateOverride(blockStateName: T, blockStateValue: minecraftvanilladata.
 **Returns** *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setBlockFacePlacementBasedOnCamera**
 `
@@ -178,7 +178,7 @@ setBlockFacePlacementBasedOnCamera(enabled: boolean): void
 - **enabled**: *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setBrushMask**
 `
@@ -189,7 +189,7 @@ setBrushMask(mask: BlockMaskList): void
 - **mask**: [*BlockMaskList*](BlockMaskList.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setBrushShape**
@@ -201,7 +201,7 @@ setBrushShape(shape: minecraftserver.Vector3[] | RelativeVolumeListBlockVolume):
 - **shape**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)[] | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setBrushShapeOffset**
 `
@@ -212,7 +212,7 @@ setBrushShapeOffset(offset: minecraftserver.Vector3): void
 - **offset**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setBrushShapeVisible**
 `
@@ -223,7 +223,7 @@ setBrushShapeVisible(visible: boolean): void
 - **visible**: *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setDirectionalPlacementMode**
 `
@@ -234,7 +234,7 @@ setDirectionalPlacementMode(directionalPlacementMode: BrushDirectionalPlacementM
 - **directionalPlacementMode**: [*BrushDirectionalPlacementMode*](BrushDirectionalPlacementMode.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setElevationBrushRadius**
 `
@@ -245,7 +245,7 @@ setElevationBrushRadius(elevationBrushRadius: number): void
 - **elevationBrushRadius**: *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setElevationFalloff**
 `
@@ -256,7 +256,7 @@ setElevationFalloff(elevationFalloff: number): void
 - **elevationFalloff**: *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setElevationMode**
 `
@@ -267,7 +267,7 @@ setElevationMode(elevationMode: BrushElevationMode): void
 - **elevationMode**: [*BrushElevationMode*](BrushElevationMode.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setElevationSampleLayers**
 `
@@ -278,7 +278,7 @@ setElevationSampleLayers(elevationSampleLayers: number): void
 - **elevationSampleLayers**: *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setFlattenMode**
 `
@@ -289,7 +289,7 @@ setFlattenMode(flattenMode: FlattenMode): void
 - **flattenMode**: [*FlattenMode*](FlattenMode.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setFlattenSmoothing**
 `
@@ -300,7 +300,7 @@ setFlattenSmoothing(flattenSmoothing: number): void
 - **flattenSmoothing**: *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setFloorBlockOverride**
 `
@@ -311,7 +311,7 @@ setFloorBlockOverride(floorBlockOverride: boolean): void
 - **floorBlockOverride**: *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setInverseEraseMode**
 `
@@ -322,7 +322,7 @@ setInverseEraseMode(inverseEraseMode: boolean): void
 - **inverseEraseMode**: *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **setTerrainStrength**
 `
@@ -333,7 +333,7 @@ setTerrainStrength(terrainStrength: number): void
 - **terrainStrength**: *number*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **singlePaint**
 `
@@ -344,7 +344,7 @@ singlePaint(onComplete: (arg0: PaintCompletionState) => void): void
 - **onComplete**: (arg0: [*PaintCompletionState*](PaintCompletionState.md)) => *void*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **switchBrushPaintMode**
@@ -356,4 +356,4 @@ switchBrushPaintMode(paintMode: PaintMode): void
 - **paintMode**: [*PaintMode*](PaintMode.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.

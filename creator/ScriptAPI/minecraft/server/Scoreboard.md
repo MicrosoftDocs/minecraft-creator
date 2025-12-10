@@ -35,7 +35,7 @@ Adds a new objective to the scoreboard.
 **Returns** [*ScoreboardObjective*](ScoreboardObjective.md)
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 #### Examples
@@ -96,7 +96,7 @@ Clears the objective that occupies a display slot.
 **Returns** [*ScoreboardObjective*](ScoreboardObjective.md) | *undefined*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 
 ### **getObjective**
 `
@@ -155,7 +155,7 @@ Removes an objective from the scoreboard.
 **Returns** *boolean*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 ### **setObjectiveAtDisplaySlot**
@@ -172,7 +172,7 @@ Sets an objective into a display slot with specified additional display settings
 **Returns** [*ScoreboardObjective*](ScoreboardObjective.md) | *undefined* - Returns the previous `ScoreboardObjective` set at the display slot, if no objective was previously set it returns `undefined`.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
 #### Examples
