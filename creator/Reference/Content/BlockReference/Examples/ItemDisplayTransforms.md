@@ -11,7 +11,7 @@ ms.service: minecraft-bedrock-edition
 For custom blocks that do not use a basic 1x1x1 cube geometry or have multiple rotation states, the item representation of the block can look a bit odd with the standard block item orientation. To change how a custom block looks in any of the scenarios where the block is rendered as an item, the `"item_display_transforms"` field in the geometry can be used to configure a custom orientation to properly display the block geometry.
 
 > [!Note]
-> You must use geometry version `1.21.0` or greater and the `Upcoming Creator Features` toggle to use `"item_display_transforms"`.
+> You must use geometry version `1.21.0` or greater to use `"item_display_transforms"` or `1.21.110` to use the `"embedded"` item scenario.
 
 ## What are ItemDisplayTransforms
 
@@ -24,6 +24,7 @@ For custom blocks that do not use a basic 1x1x1 cube geometry or have multiple r
 - Item Frame - `"fixed"`
 - Floating Item Entity - `"ground"`
 - Inventory/Gui - `"gui"`
+- Embedded, used for blocks in flower pots with `"minecraft:flower_pottable"` component - `"embedded"`
 
 **Example**
 
@@ -111,9 +112,6 @@ The valid ranges for all parameters are:
 The "Display" tab in the Blockbench model editor will help you to figure out what your block model looks like with custom `"item_display_transforms"`. 
 
 ![Image of a player holding an umbrella in the Blockbench application](../../../Media/ItemDisplayTransforms/blockbench.png)
-
-> [!NOTE]
-> This feature is currently in development for Bedrock edition models. If you convert your model to a Java model, you should be able to use the values from the "Display" tab for your Bedrock model `"item_display_transforms"`. 
 
 ## Example - The Umbrella Block
 
