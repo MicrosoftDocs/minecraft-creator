@@ -38,3 +38,5 @@ landingContent:
             url: ./AddYourCatToMinecraft.md
           - text: Building Debug Tools
             url: ./DebugTools.md
+          - text: The Bedrock Dialogue Designer
+            url: ./TheBedrockDialogueDesigner.md
