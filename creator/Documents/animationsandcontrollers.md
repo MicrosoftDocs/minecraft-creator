@@ -6,6 +6,7 @@ description: "Advanced Custom Mobs: Custom Animations and Animation Controllers"
 ms.service: minecraft-bedrock-edition
 ms.date: 12/29/2025
 ---
+
 # Custom Animations and Animation Controllers
 
 This tutorial is a continuation of [Custom Behaviors and Render Controllers](../Documents/behaviorrendercontrollers.md). We're going to add a custom sound and explore how to customize animations, leveraging the behavior and resource packs we set up in the previous guide to introduce you to animation controllers in a familiar way.
@@ -27,16 +28,16 @@ First, we're going to create and add a custom sound for when the Shapeshifter ch
 
 1. Create a sound pack folder in the shapeshifter resource pack we created in the [previous tutorial](../Documents/behaviorrendercontrollers.md) to house the shapeshifter’s custom sounds.
 
-2. Record your custom sound and save it to the new sounds folder as an .ogg file. For this tutorial, our sample will leverage a custom sound we called change.ogg.
+2. Record your custom sound and save it to the new sounds folder as an .ogg file. For this tutorial, our sample will leverage a custom sound we called phase_change.ogg.
     > [!TIP]
     > Check out our article on [adding new sounds](../Documents/AddCustomSounds.md) for a refresher on how to structure your sound pack to customize sounds in Minecraft: Bedrock Edition.
 
 3. Tether the new sound to the shapeshifter mob by adding a new event to the resource pack’s sounds.json file.
 
     ```json
-    "change": {
+    "phase_change": {
         "pitch": 1,
-        "sound": "shapeshifter.change",
+        "sound": "shapeshifter.phase_change",
         "volume": 1
     } 
     ```
@@ -46,13 +47,13 @@ First, we're going to create and add a custom sound for when the Shapeshifter ch
     ```json
     "format_version" : "1.20.20",
     "sound_definitions" : {
-        "shapeshifter.change" : {
+        "shapeshifter.phase_change" : {
             "__use_legacy_max_distance" : "true",
             "category" : "block",
             "max_distance" : null,
             "min_distance" : null,
             "sounds" : [
-                "sounds/shapeshifter/change"
+                "sounds/shapeshifter/phase_change"
             ]
         }
     } 
@@ -63,7 +64,7 @@ First, we're going to create and add a custom sound for when the Shapeshifter ch
     ```json
     {
     "play_sound": {
-        "sound": "shapeshifter.change"
+        "sound": "shapeshifter.phase_change"
         }
     }
     ```
@@ -115,5 +116,5 @@ Now it's time to add a custom animation to the Shapeshifter to signal when it's 
 
 ### See Also
 
-- [Snowstorm](../Documents/scripting/next-steps.md)
+- [Snowstorm Documentation](../Documents/SnowstormOverview.md)
 - [Particle Effects](../Documents/ParticleEffects.md)
