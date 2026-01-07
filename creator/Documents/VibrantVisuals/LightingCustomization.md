@@ -51,11 +51,15 @@ The `"illuminance"` value corresponds to the strength, in lux (lx), of the ambie
 
 If not provided, a default color of `#FFFFFF` and illuminance of `0.02` will be used.
 
+As of version `1.26.0`, both `"color"` and `"illuminance"` can be specified using keyframes; see [Key Frame JSON Syntax](KeyFrameJSONSyntax.md) for details.
+
 ### Sky
 
 The `"sky"` object controls some properties of the sky in terms of its contribution as a light source. The sky contributes significantly to indirect lighting, both diffuse (bouncing light from the sky) and specular (reflections of the sky and clouds).
 
 The sky's `"intensity"` value is a factor from 0.1 to 1.0 that controls how much sky light is factored into the indirect term for both diffuse and specular. A value of 1.0 causes the sky to contribute more to indirect light, and will result in shadows being less dark; a value of 0.1 will result in darker shadows, because less indirect light is contributed from the sky. The default value, if not provided, is 1.0.
+
+As of version `1.26.0`, `"intensity"` can be specified using keyframes; see [Key Frame JSON Syntax](KeyFrameJSONSyntax.md) for details.
 
 ## Local lights
 The sun and moon's directional lighting can be considered "global lighting" because they impact everything in the scene. Additionally, any light contribution that is constrained to some limited area can be considered "local lighting".
@@ -117,6 +121,7 @@ File location: **lighting/global.json**
 
 | Schema Version | Updates                                                             |
 |----------------|---------------------------------------------------------------------|
+| `1.26.0`       | Added key framing support for sky and ambient parameters                   |
 | `1.21.80`      | Added support for controlling the End light flash                   |
 | `1.21.70`      | Added a new object for controlling the sky intensity                |
 | `1.21.60`      | Changed the data type for sun and moon colors from RGBA to RGB      |
@@ -157,12 +162,12 @@ File location: **lighting/global.json**
         },
         object "ambient"
         {
-            float "illuminance",  // How bright the ambient light is; measured in lux (lx)
-            color "color" // The RGB color that the ambient light contributes to surface lighting; supports RGB array or HEX string
+            float "illuminance" : optkeyframe,  // How bright the ambient light is; measured in lux (lx)
+            color "color" : optkeyframe // The RGB color that the ambient light contributes to surface lighting; supports RGB array or HEX string
         },
         object "sky"
         {
-            float "intensity" // Scales how much energy the sky contributes to lighting; values range from [0.1, 1.0]
+            float "intensity" : optkeyframe // Scales how much energy the sky contributes to lighting; values range from [0.1, 1.0]
         }
     }
 }
@@ -223,7 +228,7 @@ File location: **pbr/global.json**
 
 ```json
 {
-    "format_version": "1.21.80",
+    "format_version": "1.26.0",
     "minecraft:lighting_settings": {
         "description": {
             "identifier": "my_pack:default_lighting"
