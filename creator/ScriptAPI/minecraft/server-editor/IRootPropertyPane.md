@@ -14,6 +14,15 @@ description: Contents of the @minecraft/server-editor.IRootPropertyPane class.
 
 A root pane that can store property items.
 
+## Properties
+
+### **drawerPane**
+`read-only drawerPane: IPropertyPane;`
+
+Property pane that is displayed over the root pane content
+
+Type: *IPropertyPane*
+
 ## Methods
 - [createModalOverlayPane](#createmodaloverlaypane)
 - [getActiveModalOverlayId](#getactivemodaloverlayid)

@@ -23,6 +23,13 @@ This will be the height of the list withing the pane
 
 Type: *ListPaneSlotCreationProps*[]
 
+### **fixedHeight**
+`fixedHeight?: boolean;`
+
+If true, pane height will not change based on slot count. If undefined, it will default to false
+
+Type: *boolean*
+
 ### **height**
 `height?: number;`
 

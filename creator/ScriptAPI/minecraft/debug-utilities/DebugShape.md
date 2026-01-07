@@ -20,6 +20,13 @@ The base class for all debug shapes. Represents an object in the world and its b
 
 ## Properties
 
+### **attachedTo**
+`attachedTo?: minecraftserver.Entity;`
+
+The entity this shape is attached to. When set, this shape will copy the root location of the attached entity and the shape's position will be used as an offset.
+
+Type: [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md)
+
 ### **color**
 `color: minecraftserver.RGB;`
 
@@ -75,6 +82,13 @@ Type: *number*
 The total initial time-span (in seconds) until this shape is automatically removed. Returns undefined if the shape does not have a limited life-span.
 
 Type: *number*
+
+### **visibleTo**
+`visibleTo: minecraftserver.Player[];`
+
+The list of players that this shape will be visible to. If left empty, the shape will be visible to all players.
+
+Type: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)[]
 
 ## Methods
 - [remove](#remove)

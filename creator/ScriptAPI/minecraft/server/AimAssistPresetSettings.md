@@ -49,11 +49,13 @@ Type: *string*
 - [getExcludedBlockTagTargets](#getexcludedblocktagtargets)
 - [getExcludedBlockTargets](#getexcludedblocktargets)
 - [getExcludedEntityTargets](#getexcludedentitytargets)
+- [getExcludedEntityTypeFamilyTargets](#getexcludedentitytypefamilytargets)
 - [getItemSettings](#getitemsettings)
 - [getLiquidTargetingItems](#getliquidtargetingitems)
 - [setExcludedBlockTagTargets](#setexcludedblocktagtargets)
 - [setExcludedBlockTargets](#setexcludedblocktargets)
 - [setExcludedEntityTargets](#setexcludedentitytargets)
+- [setExcludedEntityTypeFamilyTargets](#setexcludedentitytypefamilytargets)
 - [setItemSettings](#setitemsettings)
 - [setLiquidTargetingItems](#setliquidtargetingitems)
 
@@ -95,6 +97,15 @@ getExcludedEntityTargets(): string[] | undefined
 Gets the list of entity Ids to exclude from aim assist targeting.
 
 **Returns** *string*[] | *undefined* - The array of entity Ids.
+
+### **getExcludedEntityTypeFamilyTargets**
+`
+getExcludedEntityTypeFamilyTargets(): string[] | undefined
+`
+
+Gets the list of entity type families to exclude from aim assist targeting.
+
+**Returns** *string*[] | *undefined* - The array of entity type families.
 
 ### **getItemSettings**
 `
@@ -159,6 +170,23 @@ Sets the list of entity Ids to exclude from aim assist targeting.
 - **targets**?: (*minecraftvanilladata.MinecraftEntityTypes* | *string*)[]
   
   An array of entity Ids.
+
+**Returns** *void*
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+
+### **setExcludedEntityTypeFamilyTargets**
+`
+setExcludedEntityTypeFamilyTargets(targets?: string[]): void
+`
+
+Sets the list of entity type families to exclude from aim assist targeting.
+
+#### **Parameters**
+- **targets**?: *string*[]
+  
+  An array of entity type families.
 
 **Returns** *void*
   

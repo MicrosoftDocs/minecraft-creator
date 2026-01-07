@@ -14,5 +14,5 @@ Layout size definition
 ## Declaration
 `export declare type LayoutSize = {
     value: number;
-    type?: 'default' | 'percentage';
+    type?: LayoutSizeType;
 };`

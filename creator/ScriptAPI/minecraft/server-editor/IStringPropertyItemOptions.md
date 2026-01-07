@@ -23,6 +23,13 @@ If true label text will be hidden. If undefined, the label will be visible by de
 
 Type: *boolean*
 
+### **inlineLabel**
+`inlineLabel?: boolean;`
+
+Displays label inline. If undefined, it will be true.
+
+Type: *boolean*
+
 ### **onChange**
 `onChange?: (arg0: string, arg1: string) => void;`
 

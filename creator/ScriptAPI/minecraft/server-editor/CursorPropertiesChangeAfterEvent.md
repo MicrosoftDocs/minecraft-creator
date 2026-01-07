@@ -11,6 +11,11 @@ description: Contents of the @minecraft/server-editor.CursorPropertiesChangeAfte
 
 ## Properties
 
+### **identifier**
+`read-only identifier?: string;`
+
+Type: *string*
+
 ### **position**
 `read-only position?: CursorPosition;`
 

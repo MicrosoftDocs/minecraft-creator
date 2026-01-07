@@ -35,14 +35,12 @@ Updates layout alignment of the sub pane.
 
 ### **setDirection**
 `
-setDirection(direction: LayoutDirection): void
+setDirection(layout: PaneLayoutType): void
 `
 
 Updates layout direction of the sub pane.
 
 #### **Parameters**
-- **direction**: *LayoutDirection*
-  
-  New layout direction.
+- **layout**: *PaneLayoutType*
 
 **Returns** *void*

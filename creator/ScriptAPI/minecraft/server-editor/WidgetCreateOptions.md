@@ -31,6 +31,16 @@ Type: *number*
 
 Type: [*WidgetCollisionType*](WidgetCollisionType.md)
 
+### **dimensionId**
+`dimensionId?: string;`
+
+Type: *string*
+
+### **ignoreEditorModeVisibilityOverride**
+`ignoreEditorModeVisibilityOverride?: boolean;`
+
+Type: *boolean*
+
 ### **lockToSurface**
 `lockToSurface?: boolean;`
 

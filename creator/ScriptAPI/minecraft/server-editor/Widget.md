@@ -43,6 +43,11 @@ Type: [*WidgetCollisionType*](WidgetCollisionType.md)
 Notes:
   - This property can't be edited in restricted-execution mode.
 
+### **dimensionId**
+`dimensionId?: string;`
+
+Type: *string*
+
 ### **group**
 `read-only group: WidgetGroup;`
 
@@ -51,6 +56,14 @@ Type: [*WidgetGroup*](WidgetGroup.md)
 Notes:
   - This property can throw errors when used.
     - Throws [*InvalidWidgetError*](InvalidWidgetError.md)
+
+### **ignoreEditorModeVisibilityOverride**
+`ignoreEditorModeVisibilityOverride: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in restricted-execution mode.
 
 ### **location**
 `location: minecraftserver.Vector3;`

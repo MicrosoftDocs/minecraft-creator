@@ -58,6 +58,8 @@ Represents the unique type of network packet.
 `BookEditPacket = "BookEditPacket"`
 ### **BossEventPacket**
 `BossEventPacket = "BossEventPacket"`
+### **CameraAimAssistActorPriorityPacket**
+`CameraAimAssistActorPriorityPacket = "CameraAimAssistActorPriorityPacket"`
 ### **CameraAimAssistPacket**
 `CameraAimAssistPacket = "CameraAimAssistPacket"`
 ### **CameraAimAssistPresetsPacket**
@@ -70,6 +72,8 @@ Represents the unique type of network packet.
 `CameraPresetsPacket = "CameraPresetsPacket"`
 ### **CameraShakePacket**
 `CameraShakePacket = "CameraShakePacket"`
+### **CameraSplinePacket**
+`CameraSplinePacket = "CameraSplinePacket"`
 ### **ChangeDimensionPacket**
 `ChangeDimensionPacket = "ChangeDimensionPacket"`
 ### **ChangeMobPropertyPacket**
@@ -92,6 +96,8 @@ Represents the unique type of network packet.
 `ClientboundDebugRendererPacket = "ClientboundDebugRendererPacket"`
 ### **ClientboundMapItemDataPacket**
 `ClientboundMapItemDataPacket = "ClientboundMapItemDataPacket"`
+### **ClientboundTextureShiftPacket**
+`ClientboundTextureShiftPacket = "ClientboundTextureShiftPacket"`
 ### **ClientCacheBlobStatusPacket**
 `ClientCacheBlobStatusPacket = "ClientCacheBlobStatusPacket"`
 ### **ClientCacheMissResponsePacket**
@@ -438,3 +444,5 @@ Represents the unique type of network packet.
 `UpdateSubChunkBlocksPacket = "UpdateSubChunkBlocksPacket"`
 ### **UpdateTradePacket**
 `UpdateTradePacket = "UpdateTradePacket"`
+### **VoxelShapesPacket**
+`VoxelShapesPacket = "VoxelShapesPacket"`

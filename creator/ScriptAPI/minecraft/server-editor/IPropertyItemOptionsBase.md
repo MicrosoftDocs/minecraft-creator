@@ -20,6 +20,13 @@ Initial enabled state of property item. If undefined, it will default to true.
 
 Type: *boolean*
 
+### **style**
+`style?: PaneItemStyle;`
+
+Optional styling overrides for the item.
+
+Type: *PaneItemStyle*
+
 ### **visible**
 `visible?: boolean;`
 

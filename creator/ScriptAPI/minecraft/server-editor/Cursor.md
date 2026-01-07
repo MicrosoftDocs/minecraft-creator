@@ -52,14 +52,29 @@ Notes:
   - This property can throw errors when used.
 
 ## Methods
+- [getDefaultProperties](#getdefaultproperties)
 - [getPosition](#getposition)
 - [getProperties](#getproperties)
 - [getRay](#getray)
 - [hide](#hide)
 - [moveBy](#moveby)
+- [popPropertiesById](#poppropertiesbyid)
+- [pushPropertiesById](#pushpropertiesbyid)
 - [resetToDefaultState](#resettodefaultstate)
 - [setProperties](#setproperties)
 - [show](#show)
+- [updatePropertiesById](#updatepropertiesbyid)
+
+### **getDefaultProperties**
+`
+getDefaultProperties(): CursorProperties
+`
+
+**Returns** [*CursorProperties*](CursorProperties.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
 
 ### **getPosition**
 `
@@ -127,6 +142,31 @@ Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
+### **popPropertiesById**
+`
+popPropertiesById(identifier: string): void
+`
+
+#### **Parameters**
+- **identifier**: *string*
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+
+### **pushPropertiesById**
+`
+pushPropertiesById(properties: CursorProperties, identifier: string): void
+`
+
+#### **Parameters**
+- **properties**: [*CursorProperties*](CursorProperties.md)
+- **identifier**: *string*
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+
 ### **resetToDefaultState**
 `
 resetToDefaultState(): void
@@ -160,6 +200,19 @@ show(): void
 `
 
 Make the 3D block cursor visible on screen
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+
+### **updatePropertiesById**
+`
+updatePropertiesById(properties: CursorProperties, identifier?: string): void
+`
+
+#### **Parameters**
+- **properties**: [*CursorProperties*](CursorProperties.md)
+- **identifier**?: *string* = `null`
   
 Notes:
 - This function can't be called in restricted-execution mode.

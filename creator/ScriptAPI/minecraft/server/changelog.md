@@ -56,6 +56,8 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
 #### Added *[`BlockComponentEntityEvent`](BlockComponentEntityEvent.md)*
+#### Changed *[`BlockComponentRedstoneUpdateEvent`](BlockComponentRedstoneUpdateEvent.md)*
+- Added property *[`previousPowerLevel`](BlockComponentRedstoneUpdateEvent.md#previouspowerlevel)*
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
 - Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
 #### Changed *[`BlockPermutation`](BlockPermutation.md)*
@@ -103,6 +105,8 @@ description: Changelog of the `@minecraft/server` module
   - Changed argument `options` type from [*EntityEventOptions*](EntityEventOptions.md) to [*EntityHurtAfterEventOptions*](EntityHurtAfterEventOptions.md)
 #### Added *[`EntityHurtBeforeEvent`](EntityHurtBeforeEvent.md)*
 #### Added *[`EntityHurtBeforeEventSignal`](EntityHurtBeforeEventSignal.md)*
+#### Added *[`EntityItemDropAfterEvent`](EntityItemDropAfterEvent.md)*
+#### Added *[`EntityItemDropAfterEventSignal`](EntityItemDropAfterEventSignal.md)*
 #### Added *[`EntityItemPickupAfterEvent`](EntityItemPickupAfterEvent.md)*
 #### Added *[`EntityItemPickupAfterEventSignal`](EntityItemPickupAfterEventSignal.md)*
 #### Added *[`EntityItemPickupBeforeEvent`](EntityItemPickupBeforeEvent.md)*
@@ -159,6 +163,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
 - Added property *[`entityHeal`](WorldAfterEvents.md#entityheal)*
+- Added property *[`entityItemDrop`](WorldAfterEvents.md#entityitemdrop)*
 - Added property *[`entityItemPickup`](WorldAfterEvents.md#entityitempickup)*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
 - Added property *[`packSettingChange`](WorldAfterEvents.md#packsettingchange)*

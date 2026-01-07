@@ -4,17 +4,15 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server-editor.LayoutAlignment Enumeration
-description: Contents of the @minecraft/server-editor.LayoutAlignment enumeration.
+title: minecraft/server-editor.LayoutSizeType Enumeration
+description: Contents of the @minecraft/server-editor.LayoutSizeType enumeration.
 ---
-# LayoutAlignment Enumeration
+# LayoutSizeType Enumeration
 
-Alignment options for UI elements
+Layout size types
 
 ## Constants
-### **Start**
-`Start = 0`
-### **Center**
-`Center = 1`
-### **End**
-`End = 2`
+### **Default**
+`Default = 0`
+### **Percentage**
+`Percentage = 1`
