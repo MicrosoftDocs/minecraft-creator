@@ -48,7 +48,7 @@ First, we're going to create and add a custom sound for when the Shapeshifter ch
     "format_version" : "1.20.20",
     "sound_definitions" : {
         "shapeshifter.phase_change" : {
-            "__use_legacy_max_distance" : "true",
+            "__use_legacy_max_distance" : true,
             "category" : "block",
             "max_distance" : null,
             "min_distance" : null,
