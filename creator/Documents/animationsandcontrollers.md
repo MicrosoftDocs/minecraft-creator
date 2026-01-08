@@ -18,7 +18,7 @@ Feel free to customize the shapeshifter entity in any way you want – these ste
 We strongly recommend that you read through these guides and can confidently complete the previous tutorial before you begin this advanced tutorial.
 
 - [Custom Behaviors and Render Controllers](../Documents/behaviorrendercontrollers.md)
-- [Animation Documentation](../Documents/Animations.md)
+- [Animation Documentation](../Documents/Animations/index.yml)
 - [Animations vs. Animation Controllers](../Documents/AnimationsVsControllers.md)
 - [Introduction to Particles](../Documents/BehaviorPack.md)
 
