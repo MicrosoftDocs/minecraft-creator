@@ -106,9 +106,12 @@ Now it's time to add a custom animation to the Shapeshifter to signal when it's 
 
     > [!TIP]
     > To save your animation, go to the Blokcbench file menu bar, select **Animation**, then click **Save All Animations**.
+
     ![Shapeshifter Animation](../Documents/Media/AdvancedCustomMobs/phase_change.gif)
 
-4. Finally, add an animation controller file to the shapeshifter behavior pack to define the conditions that trigger your animation to play.
+    We made our shapeshifter wave its arms as it begins to change phases for our sample, but feel free to let your creativity guide you!
+
+4. Finally, add an animation controller file to the shapeshifter behavior pack to define the conditions that trigger your animation to play. Then, copy the animation controller and paste it into the animations folder in your shapeshifter’s resource pack.
 
     ![Finished Shapeshifter](../Documents/Media/AdvancedCustomMobs/success.gif)
 
