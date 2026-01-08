@@ -1,4 +1,136 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "seconds_to_destroy",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "seconds_to_destroy",
+                    "comparison": ">=",
+                    "value": 50
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "is extremely hard to mine (obsidian-like, "
+                  },
+                  {
+                    "type": "value",
+                    "field": "seconds_to_destroy"
+                  },
+                  {
+                    "type": "literal",
+                    "text": "s)"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "seconds_to_destroy",
+                    "comparison": ">=",
+                    "value": 10
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "is hard to mine ("
+                  },
+                  {
+                    "type": "value",
+                    "field": "seconds_to_destroy"
+                  },
+                  {
+                    "type": "literal",
+                    "text": "s)"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "seconds_to_destroy",
+                    "comparison": ">=",
+                    "value": 1.5
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "has standard mining time (stone-like, "
+                  },
+                  {
+                    "type": "value",
+                    "field": "seconds_to_destroy"
+                  },
+                  {
+                    "type": "literal",
+                    "text": "s)"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "seconds_to_destroy",
+                    "comparison": ">",
+                    "value": 0
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "breaks quickly ("
+                  },
+                  {
+                    "type": "value",
+                    "field": "seconds_to_destroy"
+                  },
+                  {
+                    "type": "literal",
+                    "text": "s)"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "breaks instantly"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "item_specific_speeds",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has item-specific mining speeds"
+          }
+        ]
+      }
+    ]
+  },
   "versionIntroduced": "1.21.50",
   "fields": [
     {

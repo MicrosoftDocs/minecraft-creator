@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns time that the entity is on fire"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.on_fire_time",
   "fields": [],
   "generated_doNotEdit": {

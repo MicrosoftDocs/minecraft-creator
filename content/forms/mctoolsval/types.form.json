@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "aggregates content type definitions in the project"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "types",
+  "title": "Content Types",
+  "description": "Aggregates information about all content types defined in the project including entities, blocks, items, and other custom definitions.",
+  "fields": [
+    {
+      "id": "101",
+      "title": "Type Summary",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Summary of all custom content types (entities, blocks, items, etc.) defined across behavior and resource packs in the project.",
+      "technicalDescription": "Data contains the type identifier and definition summary"
+    }
+  ]
+}

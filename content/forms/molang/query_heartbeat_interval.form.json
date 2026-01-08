@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns heartbeat interval of the entity in seconds"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.heartbeat_interval",
   "fields": [],
   "description": "Returns the heartbeat interval of the entity in seconds. Returns 0 when the entity has no heartbeat.",

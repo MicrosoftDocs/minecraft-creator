@@ -1,6 +1,96 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:geode_feature",
   "description": "generates a rock formation to simulate a geode. Each layer of, and block within, the geode can be replaced. Succeeds if at least one block within the geode is placed. Fails if all blocks within the geode fail to be placed.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "generates a hollow geode with layered shells"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "inner_layer",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "inner layer uses "
+          },
+          {
+            "type": "value",
+            "field": "inner_layer",
+            "humanify": "minecraft"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "outer_layer",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "outer shell of "
+          },
+          {
+            "type": "value",
+            "field": "outer_layer",
+            "humanify": "minecraft"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "max_radius",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "up to "
+          },
+          {
+            "type": "value",
+            "field": "max_radius"
+          },
+          {
+            "type": "literal",
+            "text": " block radius"
+          }
+        ],
+        "priority": 3
+      },
+      {
+        "visibility": [
+          {
+            "field": "generate_crack_chance",
+            "comparison": ">",
+            "value": 0
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "may generate cracks in the shell"
+          }
+        ],
+        "priority": 3
+      }
+    ]
+  },
   "fields": [
     {
       "id": "format_version",

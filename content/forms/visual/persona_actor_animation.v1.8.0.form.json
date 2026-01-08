@@ -1,5 +1,20 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "persona_actor_animation",
+  "title": "Persona Actor Animation (v1.8.0)",
+  "description": "Defines a persona actor animation document with format_version 1.8.0.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "animates persona character bones with position, rotation, and scale keyframes"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "persona_actor_animation",

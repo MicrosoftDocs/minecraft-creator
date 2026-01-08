@@ -1,0 +1,115 @@
+{
+  "id": "cmd_dialogue",
+  "title": "dialogue",
+  "description": "Opens NPC dialogue for a player. See the page on the [Dialogue documentation](https://learn.microsoft.com/en-us/minecraft/creator/documents/npcdialogue#dialogue-command) for more information.",
+  "fields": [
+    {
+      "id": "open",
+      "title": "open",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "DIALOGUEOPENACTION"
+    },
+    {
+      "id": "npc",
+      "title": "npc",
+      "type": "string",
+      "isOptional": false,
+      "description": "Required. The target for the NPC menu. Must be a [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) for an entity with type NPC.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "player",
+      "title": "player",
+      "type": "string",
+      "isOptional": false,
+      "description": "Target to display menu. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "scenename",
+      "title": "sceneName",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `string` that specifies the scene file to run from the behavior pack.",
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "change",
+      "title": "change",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "DIALOGUECHANGEACTION"
+    },
+    {
+      "id": "players",
+      "title": "players",
+      "type": "string",
+      "isOptional": true,
+      "description": "Target to display menu. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Dialogue with NPC and player, optional sceneName",
+      "description": "Open a specific scene with an `npc` and `player` using an optional `sceneName`.",
+      "params": [
+        {
+          "name": "open",
+          "type": "DIALOGUEOPENACTION",
+          "isOptional": false
+        },
+        {
+          "name": "npc",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "scenename",
+          "type": "ID",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Dialogue with NPC and sceneName, optional player",
+      "description": "Change the dialogue `npc` and `sceneName`, with an optional `player`.",
+      "params": [
+        {
+          "name": "change",
+          "type": "DIALOGUECHANGEACTION",
+          "isOptional": false
+        },
+        {
+          "name": "npc",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "scenename",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

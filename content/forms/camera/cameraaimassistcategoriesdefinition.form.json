@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines aim assist targeting categories" }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "title": "CameraAimAssistCategoriesDefinition",

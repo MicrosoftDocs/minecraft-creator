@@ -1,4 +1,5 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "fields": [
     {
       "id": "vibration",
@@ -18,7 +19,18 @@
       ]
     }
   ],
-  "tags": ["entityevent"],
+  "tags": [
+    "entityevent"
+  ],
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "emits a vibration from the entity" }
+        ]
+      }
+    ]
+  },
   "description": "Allows the entity to emit a vibration having the entity itself as its source.",
   "id": "emit_vibration",
   "title": "Emit Vibration",

@@ -1,9 +1,22 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [{ "field": "value", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "uses " },
+          { "type": "value", "field": "value" },
+          { "type": "literal", "text": " animation" }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "value",
       "title": "Value",
-      "description": "Specifies which animation to play when the the item is used.",
+      "description": "Specifies which animation to play when the item is used.",
       "dataType": 2
     }
   ],

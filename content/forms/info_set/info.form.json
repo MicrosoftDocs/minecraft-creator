@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "provides detailed content metrics and counts"
+          }
+        ]
+      }
+    ]
+  },
   "id": "info_set.info",
   "title": "Info Set Details",
   "fields": [
@@ -389,5 +402,6 @@
       "dataType": 16,
       "subFormId": "info_set/summary"
     }
-  ]
+  ],
+  "description": "Provides detailed content metrics and counts."
 }

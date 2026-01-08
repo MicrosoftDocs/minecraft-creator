@@ -1,12 +1,26 @@
 {
-  "title": "True/False (Boolean) Block State",
-  "description": "This is a property that can be true or false.",
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has numeric block state values" }
+        ]
+      }
+    ]
+  },
+  "title": "Numeric (Integer) Block State",
+  "description": "This is a property that can be one of a set of defined numeric (integer) values.",
   "fields": [
     {
       "id": "values",
       "title": "Choices",
       "description": "The set of allowed text values for this state.",
-      "defaultValue": [0, 1, 2],
+      "defaultValue": [
+        0,
+        1,
+        2
+      ],
       "dataType": 32
     }
   ]

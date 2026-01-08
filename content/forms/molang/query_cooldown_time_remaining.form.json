@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns cooldown time remaining in seconds for specifie..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.cooldown_time_remaining",
   "fields": [],
   "generated_doNotEdit": {

@@ -1,0 +1,64 @@
+{
+  "id": "cmd_weather",
+  "title": "weather",
+  "description": "Sets the weather in the environment. See more in the [Popular Commands documentation](https://learn.microsoft.com/minecraft/creator/documents/commandspopularcommands#weather).",
+  "fields": [
+    {
+      "id": "type",
+      "title": "type",
+      "type": "string",
+      "isOptional": false,
+      "description": "An `enum` of `clear`, `rain` (will cause snow in cold biomes), or `thunder` (will cause blizzard in cold biomes).",
+      "commandType": "WEATHERTYPE"
+    },
+    {
+      "id": "duration",
+      "title": "duration",
+      "type": "string",
+      "isOptional": true,
+      "description": "An optional `integer` that will a random number between 300 and 900 seconds if not specified.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "query",
+      "title": "query",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "WEATHERQUERY"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Set weather",
+      "description": "`Set` a weather `type` for an optional `duration`.",
+      "params": [
+        {
+          "name": "type",
+          "type": "WEATHERTYPE",
+          "isOptional": false
+        },
+        {
+          "name": "duration",
+          "type": "INT",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Query weather",
+      "description": "`Query` the current `weather`.",
+      "params": [
+        {
+          "name": "query",
+          "type": "WEATHERQUERY",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

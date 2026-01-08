@@ -1,7 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns how much the offhand shield should translate do..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.shield_blocking_bob",
   "fields": [],
-  "description": "Returns the how much the offhand shield should translate down when blocking and being hit.",
   "generated_doNotEdit": {
     "id": "query.shield_blocking_bob",
     "title": "Shield Blocking Bob",

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if player has a persona or premium skin"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_persona_or_premium_skin",
   "fields": [],
   "generated_doNotEdit": {

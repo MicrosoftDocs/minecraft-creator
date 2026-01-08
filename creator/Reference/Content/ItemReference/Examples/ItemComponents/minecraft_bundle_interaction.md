@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Items Documentation - minecraft:bundle_interaction"
 description: "Describes the minecraft:bundle_interaction item component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

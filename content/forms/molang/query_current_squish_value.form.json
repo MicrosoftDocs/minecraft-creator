@@ -1,7 +1,20 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns squish value for the current entity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.current_squish_value",
   "fields": [],
-  "description": "Returns the squish value for the current entity, or 0.0 if this doesn't make sense.  Applies to slimes and magma cubes.",
+  "description": "Returns the squish value for the current entity, or 0.0 if this doesn't make sense. Applies to slimes and magma cubes.",
   "generated_doNotEdit": {
     "id": "query.current_squish_value",
     "title": "Current Squish Value",

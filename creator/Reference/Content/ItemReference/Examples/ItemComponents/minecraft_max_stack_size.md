@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Items Documentation - minecraft:max_stack_size"
 description: "Describes the minecraft:max_stack_size item component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns time in *seconds* of the least expensive frame ..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.minimum_frame_time",
   "fields": [],
   "generated_doNotEdit": {

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Feature Documentation - minecraft:scan_surface"
 description: "Describes the minecraft:scan_surface feature type"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -11,6 +12,8 @@ ms.date: 02/11/2025
 
 > [!IMPORTANT]
 > This type is internal to vanilla Minecraft usage, and is not functional or supported within custom Minecraft content.
+
+Searches for valid terrain surface positions before placing features. Scans downward from the generation height to find solid ground, then places the referenced feature at appropriate surface level. Essential for features like flowers, grass, and decorations that must sit on top of terrain regardless of elevation.
 
 
 ## Scan Surface Properties

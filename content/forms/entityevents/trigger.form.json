@@ -1,4 +1,5 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "fields": [],
   "tags": [
     "entityevent"
@@ -8,8 +9,18 @@
     "title": "Trigger Value",
     "dataType": 2
   },
-  "description": "Triggers additional entity events when hit. For example, you could use a randomize node in minecraft:entity_spawned to choose either an adult or baby event for adding component groups.",
-  "title": "Trigger",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "triggers another entity event"
+          }
+        ]
+      }
+    ]
+  },
   "samples": {
     "samples": [
       {

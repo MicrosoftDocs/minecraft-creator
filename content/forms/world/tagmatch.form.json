@@ -1,6 +1,20 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "TagMatch",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a predicate that evaluates to true if a block contains the specified tag"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
+  "description": "Predicate that evaluates to true if the block at the specified location contains the tag.",
   "generatedFromSchema_doNotEdit": {
     "id": "TagMatch",
     "title": "World TagMatch",

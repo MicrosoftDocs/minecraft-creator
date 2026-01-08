@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has custom render offsets" }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "isDeprecated": true,
   "generated_doNotEdit": {

@@ -1,0 +1,53 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates model geometry files and cube counts"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "geometry",
+  "title": "Model Geometry",
+  "description": "Validates and analyzes model geometry files (.geo.json) for blocks, entities, and items. Tracks cube counts and complexity to identify potential performance issues.",
+  "fields": [
+    {
+      "id": "101",
+      "title": "Block Geometry",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Tracks custom block geometry files found in /blocks/ folders. Reports cube counts for performance analysis.",
+      "technicalDescription": "Data contains the cube count for the block geometry"
+    },
+    {
+      "id": "102",
+      "title": "Entity Geometry",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Tracks custom entity geometry files found in /entity/ folders. Reports cube counts for complexity analysis.",
+      "technicalDescription": "Data contains the cube count for the entity geometry"
+    },
+    {
+      "id": "103",
+      "title": "Item Geometry",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Tracks custom item geometry files found in /items/ or /attachables/ folders. Reports cube counts for complexity analysis.",
+      "technicalDescription": "Data contains the cube count for the item geometry"
+    },
+    {
+      "id": "501",
+      "title": "Complex Block",
+      "messageType": 1,
+      "dataType": 6,
+      "description": "Warning when a custom block has more than 50 cubes in its geometry. High cube counts can cause performance degradation, especially on lower-end devices. Consider simplifying the model or using textures instead.",
+      "howToUse": "Simplify the model by reducing cube count, merging adjacent cubes, or using textures with transparency instead of modeled details. Target under 50 cubes for blocks.",
+      "technicalDescription": "Data contains the cube count exceeding the threshold"
+    }
+  ]
+}

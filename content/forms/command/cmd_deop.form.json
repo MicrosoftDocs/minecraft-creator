@@ -1,0 +1,32 @@
+{
+  "id": "cmd_deop",
+  "title": "deop",
+  "description": "Revokes operator status from a player.",
+  "fields": [
+    {
+      "id": "player",
+      "title": "player",
+      "type": "string",
+      "isOptional": false,
+      "description": "Required. Specifies which player to remove operator from. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Deop",
+      "description": "Revoke operator status from a player.",
+      "params": [
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 2,
+  "requiresCheats": false
+}

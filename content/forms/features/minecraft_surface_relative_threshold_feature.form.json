@@ -1,6 +1,73 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:surface_relative_threshold_feature",
   "description": "Determines whether the provided position is below the estimated surface level of the world, and places a feature if so. If the provided position is above the configured surface or the surface is not available, placement will fail. This feature only works for Overworld generators using world generation 1.18 or later.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "only places features underground below surface level"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "feature_to_place",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "places "
+          },
+          {
+            "type": "value",
+            "field": "feature_to_place"
+          },
+          {
+            "type": "literal",
+            "text": " when underground"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minimum_distance_below_surface",
+            "comparison": ">",
+            "value": 0
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "requires at least "
+          },
+          {
+            "type": "value",
+            "field": "minimum_distance_below_surface"
+          },
+          {
+            "type": "literal",
+            "text": " blocks below surface"
+          }
+        ]
+      },
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "only works with 1.18+ Overworld generation"
+          }
+        ],
+        "priority": 3
+      }
+    ]
+  },
   "fields": [
     {
       "id": "format_version",

@@ -1,0 +1,31 @@
+{
+  "$comment": "Index of generated JSON schemas for dataform types",
+  "generatedAt": "2025-12-30T14:21:58.831Z",
+  "schemas": [
+    {
+      "name": "condition",
+      "file": "condition.schema.json",
+      "path": "/schemas/dataform/condition.schema.json"
+    },
+    {
+      "name": "field",
+      "file": "field.schema.json",
+      "path": "/schemas/dataform/field.schema.json"
+    },
+    {
+      "name": "form-definition",
+      "file": "form-definition.schema.json",
+      "path": "/schemas/dataform/form-definition.schema.json"
+    },
+    {
+      "name": "summarizer-token",
+      "file": "summarizer-token.schema.json",
+      "path": "/schemas/dataform/summarizer-token.schema.json"
+    },
+    {
+      "name": "summarizer",
+      "file": "summarizer.schema.json",
+      "path": "/schemas/dataform/summarizer.schema.json"
+    }
+  ]
+}

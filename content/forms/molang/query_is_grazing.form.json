@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is grazing, or 0.0 if not"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_grazing",
   "fields": [],
   "description": "Returns 1.0 if the entity is grazing, or 0.0 if not. Applies to the horse and sheep grazing animations.",

@@ -555,6 +555,8 @@
           href: Documents/SnowstormOverview.md
         - name: Minecraft Creator Tools
           href: Documents/MCToolsOverview.md
+        - name: Minecraft Creator Tools Validation Rules
+          href: Reference/Content/MCToolsValReference/ValidationRulesIndex.md
         - name: "Chunker - World Conversion"
           items:
             - name: Chunker - Overview

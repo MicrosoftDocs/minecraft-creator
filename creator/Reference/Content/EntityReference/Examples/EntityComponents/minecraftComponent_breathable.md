@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:breathable"
 description: "Describes the minecraft:breathable entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -21,6 +22,7 @@ Defines what blocks this entity can breathe in and gives them the ability to suf
 | breathes_lava | true | Boolean true/false | If set, this entity can breathe in lava. | Magma Cube: `true` | 
 | breathes_solids | false | Boolean true/false | If set, this entity can breathe in solid blocks. |  | 
 | breathes_water | false | Boolean true/false | If set, this entity can breathe in water. | Axolotl: `true` | 
+| can_dehydrate | *not set* | String |  | Nautilus: `true` | 
 | generates_bubbles | true | Boolean true/false | If set, this entity will have visible bubbles while in water. |  | 
 | inhale_time | 0 | Decimal number | Time in seconds to recover breath to maximum. | Player: `3.75` | 
 | non_breathe_blocks | *not set* | Array of strings | List of blocks this entity cannot breathe in, in addition to the selected items above. |  | 

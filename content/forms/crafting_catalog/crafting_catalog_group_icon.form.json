@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines an icon and name for a crafting group"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Crafting Catalog Group Icon",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is rendered as a standard unit cube"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "tags": [
     "visual"

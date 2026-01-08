@@ -1,0 +1,94 @@
+{
+  "id": "cmd_setblock",
+  "title": "setblock",
+  "description": "Changes a block to another block.",
+  "fields": [
+    {
+      "id": "position",
+      "title": "position",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `vector` [x y z] that defines the position of the block to change.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "tilename",
+      "title": "tileName",
+      "type": "string",
+      "isOptional": false,
+      "description": "An block name from the `enum` that specifies the new block.",
+      "subFormId": "type_block",
+      "commandType": "BLOCK"
+    },
+    {
+      "id": "blockstates",
+      "title": "blockStates",
+      "type": "string",
+      "isOptional": false,
+      "description": "The block states from the `enum` to use for the block to be set.",
+      "commandType": "BLOCK_STATE_ARRAY"
+    },
+    {
+      "id": "oldblockhandling",
+      "title": "oldBlockHandling",
+      "type": "string",
+      "isOptional": true,
+      "description": "An `enum` of type `destroy`, `hollow`, `keep`, `outline`, or `replace`. Default: `replace`.",
+      "commandType": "SETBLOCKMODE"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "2",
+      "title": "Set block, block states",
+      "description": "Set a `block` in a `position` using `tile name` with optional `block states` and `old block handling` fill methods.",
+      "params": [
+        {
+          "name": "position",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "tilename",
+          "type": "BLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "blockstates",
+          "type": "BLOCK_STATE_ARRAY",
+          "isOptional": false
+        },
+        {
+          "name": "oldblockhandling",
+          "type": "SETBLOCKMODE",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Overload 3",
+      "description": "",
+      "params": [
+        {
+          "name": "position",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "tilename",
+          "type": "BLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "oldblockhandling",
+          "type": "SETBLOCKMODE",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

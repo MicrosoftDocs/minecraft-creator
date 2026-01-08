@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines entity behavior document structure" }
+        ]
+      }
+    ]
+  },
+  "id": "entity_behavior_document",
+  "title": "Entity Behavior Document",
+  "description": "A behavior pack entity definition document for Minecraft Bedrock Edition. This describes the complete JSON file structure including format_version and the minecraft:entity wrapper.",
+  "fields": [
+    {
+      "dataType": 25,
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of this entity behavior file. Determines which features and component schemas are available.",
+      "isRequired": true
+    },
+    {
+      "dataType": 16,
+      "id": "minecraft:entity",
+      "title": "Entity Definition",
+      "description": "The entity definition container with all behavior pack entity data.",
+      "isRequired": true,
+      "subFormId": "entity/actor_document"
+    }
+  ]
+}

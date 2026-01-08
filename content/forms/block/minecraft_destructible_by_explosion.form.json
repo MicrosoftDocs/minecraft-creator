@@ -1,4 +1,122 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "explosion_resistance",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "explosion_resistance",
+                    "comparison": ">=",
+                    "value": 1200
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "is nearly indestructible by explosions (resistance: "
+                  },
+                  {
+                    "type": "value",
+                    "field": "explosion_resistance"
+                  },
+                  {
+                    "type": "literal",
+                    "text": ")"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "explosion_resistance",
+                    "comparison": ">=",
+                    "value": 30
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "is very blast resistant (resistance: "
+                  },
+                  {
+                    "type": "value",
+                    "field": "explosion_resistance"
+                  },
+                  {
+                    "type": "literal",
+                    "text": ")"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "explosion_resistance",
+                    "comparison": ">=",
+                    "value": 6
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "has standard blast resistance (resistance: "
+                  },
+                  {
+                    "type": "value",
+                    "field": "explosion_resistance"
+                  },
+                  {
+                    "type": "literal",
+                    "text": ")"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "explosion_resistance",
+                    "comparison": ">",
+                    "value": 0
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "is fragile to explosions (resistance: "
+                  },
+                  {
+                    "type": "value",
+                    "field": "explosion_resistance"
+                  },
+                  {
+                    "type": "literal",
+                    "text": ")"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "is easily destroyed by explosions"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "scalarField": {
     "id": "boolean",

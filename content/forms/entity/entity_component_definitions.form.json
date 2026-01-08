@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "lists all entity component definitions"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Entity component definitions",
   "fields": [
     {
@@ -1158,10 +1171,16 @@
     },
     {
       "id": "minecraft:fire_immune",
-      "title": "Minecraft Fire Immune",
-      "description": "Dynamic value",
+      "title": "Fire Immune",
+      "description": "Sets that this entity doesn't take damage from fire. Can be an empty object {} or boolean true.",
       "dataType": 16,
-      "subFormId": "entity/minecraft_fire_immune"
+      "subFormId": "entity/minecraft_fire_immune",
+      "alternates": [
+        {
+          "id": "minecraft:fire_immune",
+          "dataType": 1
+        }
+      ]
     },
     {
       "id": "minecraft:floats_in_liquid",
@@ -2379,8 +2398,9 @@
       {
         "id": "minecraft:behavior.delayed_attack",
         "title": "Delayed Attack Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows an entity to attack, while also delaying the damage-dealt until a specific time in the attack animation.",
+        "dataType": 16,
+        "subFormId": "entity/delayed_attack"
       },
       {
         "id": "minecraft:behavior.dig",
@@ -2398,8 +2418,9 @@
       {
         "id": "minecraft:behavior.dragonchargeplayer",
         "title": "Dragonchargeplayer Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows this entity to attack a player by charging at them. The player is chosen by the \"minecraft:behavior.dragonscanning\". Can only be used by the Ender Dragon.",
+        "dataType": 16,
+        "subFormId": "entity/dragonchargeplayer"
       },
       {
         "id": "minecraft:behavior.dragondeath",
@@ -2435,8 +2456,9 @@
       {
         "id": "minecraft:behavior.dragonstrafeplayer",
         "title": "Dragonstrafeplayer Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows this entity to fly around looking for a player to shoot fireballs at. Can only be used by the Ender Dragon.",
+        "dataType": 16,
+        "subFormId": "entity/dragonstrafeplayer"
       },
       {
         "id": "minecraft:behavior.dragontakeoff",
@@ -2704,26 +2726,30 @@
       {
         "id": "minecraft:behavior.look_at_entity",
         "title": "Look At Entity Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to look at nearby entities.",
+        "dataType": 16,
+        "subFormId": "entity/look_at_entity"
       },
       {
         "id": "minecraft:behavior.look_at_player",
         "title": "Look At Player Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to look at the player when the player is nearby.",
+        "dataType": 16,
+        "subFormId": "entity/look_at_player"
       },
       {
         "id": "minecraft:behavior.look_at_target",
         "title": "Look At Target Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to look at the entity they are targeting.",
+        "dataType": 16,
+        "subFormId": "entity/look_at_target"
       },
       {
         "id": "minecraft:behavior.look_at_trading_player",
         "title": "Look At Trading Player Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to look at the player they are trading with.",
+        "dataType": 16,
+        "subFormId": "entity/look_at_trading_player"
       },
       {
         "id": "minecraft:behavior.make_love",
@@ -2734,14 +2760,16 @@
       {
         "id": "minecraft:behavior.melee_attack",
         "title": "Melee Attack Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows an entity to deal damage through a melee attack.",
+        "dataType": 16,
+        "subFormId": "entity/melee_attack"
       },
       {
         "id": "minecraft:behavior.melee_box_attack",
         "title": "Melee Box Attack Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows an entity to deal damage through a melee attack with reach calculations based on bounding boxes.",
+        "dataType": 16,
+        "subFormId": "entity/melee_box_attack"
       },
       {
         "id": "minecraft:behavior.mingle",
@@ -3207,8 +3235,9 @@
       {
         "id": "minecraft:behavior.stomp_attack",
         "title": "Stomp Attack Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows an entity to attack using stomp AoE damage behavior.",
+        "dataType": 16,
+        "subFormId": "entity/stomp_attack"
       },
       {
         "id": "minecraft:behavior.stomp_turtle_egg",
@@ -3950,6 +3979,24 @@
         "dataType": 16
       },
       {
+        "id": "minecraft:memory_behavior.collect_nectar",
+        "title": "Collect Nectar Minecraft Memory Behavior",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:memory_behavior.flee_threat",
+        "title": "Flee Threat Minecraft Memory Behavior",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:memory_behavior.follow_target",
+        "title": "Follow Target Minecraft Memory Behavior",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
         "id": "minecraft:mob_effect",
         "title": "Minecraft Mob Effect",
         "description": "Dynamic value",
@@ -4084,6 +4131,12 @@
       {
         "id": "minecraft:npc",
         "title": "Minecraft Npc",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:offspring",
+        "title": "Minecraft Offspring",
         "description": "Dynamic value",
         "dataType": 16
       },
@@ -4295,6 +4348,42 @@
         "dataType": 16
       },
       {
+        "id": "minecraft:sensor.find_nearest_block",
+        "title": "Find Nearest Block Minecraft Sensor",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:sensor.find_nearest_block_from",
+        "title": "Find Nearest Block From Minecraft Sensor",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:sensor.find_nearest_entity",
+        "title": "Find Nearest Entity Minecraft Sensor",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:sensor.find_nearest_entity_from",
+        "title": "Find Nearest Entity From Minecraft Sensor",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:sensor.in_range_of_block",
+        "title": "In Range Of Block Minecraft Sensor",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:sensor.in_range_of_entity",
+        "title": "In Range Of Entity Minecraft Sensor",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
         "id": "minecraft:shareables",
         "title": "Minecraft Shareables",
         "description": "Dynamic value",
@@ -4321,6 +4410,12 @@
       {
         "id": "minecraft:sound_volume",
         "title": "Minecraft Sound Volume",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:spawn_egg_interaction",
+        "title": "Minecraft Spawn Egg Interaction",
         "description": "Dynamic value",
         "dataType": 16
       },
@@ -4500,5 +4595,6 @@
         "dataType": 16
       }
     ]
-  }
+  },
+  "description": "Registry of all available entity components that define mob capabilities. Components cover health, movement, combat, AI goals, interactions, physics, sensing, and rendering. Entities combine components to create unique creatures—adding minecraft:health for durability, minecraft:behavior.melee_attack for combat, or minecraft:rideable for mounts."
 }

@@ -1,0 +1,55 @@
+{
+  "id": "type_gamemode",
+  "title": "Game Mode",
+  "description": "The player's game mode.",
+  "fields": [],
+  "formatHint": "survival, creative, adventure, or spectator",
+  "samples": {
+    "values": [
+      {
+        "path": "Survival mode - gather resources, hunger, health",
+        "content": "survival"
+      },
+      {
+        "path": "Creative mode - unlimited resources, flight, invincible",
+        "content": "creative"
+      },
+      {
+        "path": "Adventure mode - can't break/place blocks without tools",
+        "content": "adventure"
+      },
+      {
+        "path": "Spectator mode - fly through blocks, invisible",
+        "content": "spectator"
+      }
+    ],
+    "shorthands": [
+      {
+        "path": "Shorthand for survival",
+        "content": "s"
+      },
+      {
+        "path": "Shorthand for creative",
+        "content": "c"
+      },
+      {
+        "path": "Shorthand for adventure",
+        "content": "a"
+      }
+    ],
+    "numeric": [
+      {
+        "path": "Numeric: survival",
+        "content": "0"
+      },
+      {
+        "path": "Numeric: creative",
+        "content": "1"
+      },
+      {
+        "path": "Numeric: adventure",
+        "content": "2"
+      }
+    ]
+  }
+}

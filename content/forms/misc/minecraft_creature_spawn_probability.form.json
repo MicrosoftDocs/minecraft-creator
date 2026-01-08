@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines creature spawn probability component"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:creature_spawn_probability",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

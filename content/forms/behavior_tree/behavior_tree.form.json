@@ -1,0 +1,110 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines an experimental behavior tree for entity AI" }
+        ]
+      }
+    ]
+  },
+  "id": "behavior_tree",
+  "title": "Behavior Tree",
+  "description": "A behavior tree definition for Minecraft Bedrock Edition. Behavior trees define complex entity AI behaviors using a tree structure of nodes. This is an experimental/internal format.",
+  "isExperimental": true,
+  "isInternal": true,
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "behavior_tree",
+    "fields": [
+      {
+        "dataType": 16,
+        "id": "minecraft:behavior_tree",
+        "title": "Behavior Tree Definition",
+        "description": "The behavior tree definition container.",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 2,
+              "id": "minecraft:name",
+              "title": "Name",
+              "description": "The name of this behavior tree.",
+              "isRequired": true
+            },
+            {
+              "dataType": 16,
+              "id": "minecraft:root",
+              "title": "Root Node",
+              "description": "The root node of the behavior tree.",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 16,
+                    "id": "minecraft:sequence",
+                    "title": "Sequence",
+                    "description": "A sequence node that executes children in order until one fails.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 15,
+                          "id": "children",
+                          "title": "Children",
+                          "description": "Child nodes to execute in sequence.",
+                          "isRequired": true
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "minecraft:selector",
+                    "title": "Selector",
+                    "description": "A selector node that executes children until one succeeds.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 15,
+                          "id": "children",
+                          "title": "Children",
+                          "description": "Child nodes to select from.",
+                          "isRequired": true
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "minecraft:attack",
+                    "title": "Attack",
+                    "description": "An attack action node.",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "minecraft:interact",
+                    "title": "Interact",
+                    "description": "An interaction action node.",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "minecraft:look_at_entity",
+                    "title": "Look At Entity",
+                    "description": "A node that makes the entity look at another entity.",
+                    "isRequired": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "note": "Behavior trees are an experimental/internal AI system. The structure may change significantly between versions."
+}

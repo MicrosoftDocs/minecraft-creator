@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Items Documentation - minecraft:use_animation"
 description: "Describes the minecraft:use_animation item component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -20,7 +21,7 @@ This item can also be represented as a `String`.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| value | *not set* | String | Specifies which animation to play when the the item is used. |  | 
+| value | *not set* | String | Specifies which animation to play when the item is used. |  | 
 
 ## Samples
 

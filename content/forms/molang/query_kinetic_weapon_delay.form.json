@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns \"delay\" value from the main-hand item's \"minecr..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.kinetic_weapon_delay",
   "fields": [],
   "generated_doNotEdit": {

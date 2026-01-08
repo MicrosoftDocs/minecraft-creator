@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns total number of active emitters in the world"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.total_emitter_count",
   "fields": [],
   "generated_doNotEdit": {

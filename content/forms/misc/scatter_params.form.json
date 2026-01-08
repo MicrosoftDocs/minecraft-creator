@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines scatter params configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Scatter Params",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

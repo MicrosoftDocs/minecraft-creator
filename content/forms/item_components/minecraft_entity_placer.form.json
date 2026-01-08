@@ -1,4 +1,27 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "entity",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spawns "
+          },
+          {
+            "type": "value",
+            "field": "entity"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "description": "Allows an item to place entities into the world. Additionally, in version 1.19.80 and above, the component allows the item to set the spawn type of a monster spawner.",
   "samples": {

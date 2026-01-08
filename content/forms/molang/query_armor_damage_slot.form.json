@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns armor damage slot information"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.armor_damage_slot",
   "fields": [],
   "generated_doNotEdit": {

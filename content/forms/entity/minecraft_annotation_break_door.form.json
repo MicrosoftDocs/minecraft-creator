@@ -1,4 +1,39 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can break through doors"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "min_difficulty",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "requires "
+          },
+          {
+            "type": "value",
+            "field": "min_difficulty"
+          },
+          {
+            "type": "literal",
+            "text": " difficulty or higher"
+          }
+        ]
+      }
+    ]
+  },
   "title": "Break doors annotation",
   "note": "Requires the entity's `navigation` component to have the parameter `can_break_doors` set to `true`.",
   "description": "Allows an entity to break doors, assuming that that flags set up for the component to use in navigation.",

@@ -1,0 +1,65 @@
+{
+  "id": "type_slottype",
+  "title": "Equipment Slot Type",
+  "description": "Category of inventory or equipment slot.",
+  "fields": [],
+  "formatHint": "slot.weapon, slot.armor, slot.inventory, etc.",
+  "samples": {
+    "weapon": [
+      {
+        "path": "Main hand slot",
+        "content": "slot.weapon.mainhand"
+      },
+      {
+        "path": "Off hand slot",
+        "content": "slot.weapon.offhand"
+      }
+    ],
+    "armor": [
+      {
+        "path": "Helmet slot",
+        "content": "slot.armor.head"
+      },
+      {
+        "path": "Chestplate slot",
+        "content": "slot.armor.chest"
+      },
+      {
+        "path": "Leggings slot",
+        "content": "slot.armor.legs"
+      },
+      {
+        "path": "Boots slot",
+        "content": "slot.armor.feet"
+      }
+    ],
+    "containers": [
+      {
+        "path": "Player inventory (0-26)",
+        "content": "slot.inventory"
+      },
+      {
+        "path": "Hotbar (0-8)",
+        "content": "slot.hotbar"
+      },
+      {
+        "path": "Ender chest inventory",
+        "content": "slot.enderchest"
+      }
+    ],
+    "mount": [
+      {
+        "path": "Saddle slot on mount",
+        "content": "slot.saddle"
+      },
+      {
+        "path": "Horse armor slot",
+        "content": "slot.armor"
+      },
+      {
+        "path": "Chest slot on donkey/mule",
+        "content": "slot.chest"
+      }
+    ]
+  }
+}

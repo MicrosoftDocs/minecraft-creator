@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines actor document configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Actor Document",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -31,5 +44,6 @@
         "dataType": 16
       }
     ]
-  }
+  },
+  "description": "Defines actor document configuration."
 }

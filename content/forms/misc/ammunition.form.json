@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines ammunition configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Ammunition",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -37,5 +50,6 @@
         "dataType": 1
       }
     ]
-  }
+  },
+  "description": "Defines ammunition configuration."
 }

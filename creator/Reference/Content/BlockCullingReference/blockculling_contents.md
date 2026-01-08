@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Block Culling Documentation - minecraft:blockculling_contents"
 description: "Describes the minecraft:blockculling_contents block culling"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

@@ -1,4 +1,21 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "can join and migrate between dwellings" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "dwelling_type", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "dwells in " },
+          { "type": "value", "field": "dwelling_type" }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:dweller",
   "title": "Dweller",
   "description": "Compels an entity to join and migrate between villages and other dwellings.",

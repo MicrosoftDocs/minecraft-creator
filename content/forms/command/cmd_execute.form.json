@@ -1,0 +1,710 @@
+{
+  "id": "cmd_execute",
+  "title": "execute",
+  "description": "Executes a command on behalf of one or more entities. See more information in the [Popular Commands page](https://learn.microsoft.com/minecraft/creator/documents/commandspopularcommands#execute) and the [New Execute Syntax page](https://learn.microsoft.com/minecraft/creator/documents/commandsnewexecute).",
+  "fields": [
+    {
+      "id": "subcommand",
+      "title": "subcommand",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies the start of a section where a command to run is defined, using the context  previously provided",
+      "commandType": "OPTION_AS"
+    },
+    {
+      "id": "origin",
+      "title": "origin",
+      "type": "string",
+      "isOptional": false,
+      "description": "The target of the command to execute. Must be a player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors).",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "chainedcommand",
+      "title": "chainedCommand",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "EXECUTECHAINEDOPTION_0"
+    },
+    {
+      "id": "dimension",
+      "title": "dimension",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "DIMENSION"
+    },
+    {
+      "id": "position",
+      "title": "position",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `vector` of where to run the command from.",
+      "subFormId": "type_position_float",
+      "commandType": "POSITION_FLOAT"
+    },
+    {
+      "id": "secondary_subcommand",
+      "title": "secondary subcommand",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "OPTION_AS"
+    },
+    {
+      "id": "yaw",
+      "title": "yaw",
+      "type": "string",
+      "isOptional": false,
+      "description": "Left-to-right rotation context of the command",
+      "subFormId": "type_rval",
+      "commandType": "RVAL"
+    },
+    {
+      "id": "pitch",
+      "title": "pitch",
+      "type": "string",
+      "isOptional": false,
+      "description": "Up-and-down rotation of the command",
+      "subFormId": "type_rval",
+      "commandType": "RVAL"
+    },
+    {
+      "id": "anchor",
+      "title": "anchor",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "ACTORLOCATION"
+    },
+    {
+      "id": "axes",
+      "title": "axes",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "anchored",
+      "title": "anchored",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "ACTORLOCATION"
+    },
+    {
+      "id": "block",
+      "title": "block",
+      "type": "string",
+      "isOptional": false,
+      "description": "Compares block to a given block `id`.",
+      "subFormId": "type_block",
+      "commandType": "BLOCK"
+    },
+    {
+      "id": "blockstates",
+      "title": "blockStates",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "BLOCK_STATE_ARRAY"
+    },
+    {
+      "id": "begin",
+      "title": "begin",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "end",
+      "title": "end",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "destination",
+      "title": "destination",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "scan_mode",
+      "title": "scan mode",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "BLOCKSSCANMODE"
+    },
+    {
+      "id": "target",
+      "title": "target",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "objective",
+      "title": "objective",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "SCOREBOARDOBJECTIVES"
+    },
+    {
+      "id": "operation",
+      "title": "operation",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_compareoperator",
+      "commandType": "COMPAREOPERATOR"
+    },
+    {
+      "id": "source",
+      "title": "source",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "matches",
+      "title": "matches",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "SCORERANGEMODE"
+    },
+    {
+      "id": "range",
+      "title": "range",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_fullintegerrange",
+      "commandType": "FULLINTEGERRANGE"
+    },
+    {
+      "id": "command",
+      "title": "command",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `string` of the command to run. Must be a valid command.",
+      "commandType": "CODEBUILDERARGS"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "3",
+      "title": "As another entity",
+      "description": "Executes a command using the context of an entity returned by the chosen selector.",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "OPTION_AS",
+          "isOptional": false
+        },
+        {
+          "name": "origin",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "chainedcommand",
+          "type": "EXECUTECHAINEDOPTION_0",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "At the position of an entity",
+      "description": "Executes a command from the position of an entity returned via the selection.",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "OPTION_AT",
+          "isOptional": false
+        },
+        {
+          "name": "origin",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "chainedcommand",
+          "type": "EXECUTECHAINEDOPTION_0",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "In dimension",
+      "description": "Executes a command within a particular dimension.",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "OPTION_IN",
+          "isOptional": false
+        },
+        {
+          "name": "dimension",
+          "type": "DIMENSION",
+          "isOptional": false
+        },
+        {
+          "name": "chainedcommand",
+          "type": "EXECUTECHAINEDOPTION_0",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Positioned",
+      "description": "Execute a given command from a `position` and specified `origin` target, while checking for a specific `block` and block id.",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "OPTION_POSITIONED",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "chainedcommand",
+          "type": "EXECUTECHAINEDOPTION_0",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Positioned as a selected entity",
+      "description": "Execute a given command from a `position` and specified `origin` target.",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "OPTION_POSITIONED",
+          "isOptional": false
+        },
+        {
+          "name": "secondary_subcommand",
+          "type": "OPTION_AS",
+          "isOptional": false
+        },
+        {
+          "name": "origin",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "chainedcommand",
+          "type": "EXECUTECHAINEDOPTION_0",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Rotated with a specific yaw/pitch",
+      "description": "Runs a command with the specified rotation as yaw and pitch.",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "OPTION_ROTATED",
+          "isOptional": false
+        },
+        {
+          "name": "yaw",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "pitch",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "chainedcommand",
+          "type": "EXECUTECHAINEDOPTION_0",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Rotated as a another entity",
+      "description": "Runs a command using the rotation from another entity as specified by the selector",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "OPTION_ROTATED",
+          "isOptional": false
+        },
+        {
+          "name": "secondary_subcommand",
+          "type": "OPTION_AS",
+          "isOptional": false
+        },
+        {
+          "name": "origin",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "chainedcommand",
+          "type": "EXECUTECHAINEDOPTION_0",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Facing a position",
+      "description": "Runs a command with an entity facing a particular direction.",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "OPTION_FACING",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "chainedcommand",
+          "type": "EXECUTECHAINEDOPTION_0",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Facing a selected entity",
+      "description": "Runs a command with a contextual facing to another entity that is returned by a selection.",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "OPTION_FACING",
+          "isOptional": false
+        },
+        {
+          "name": "secondary_subcommand",
+          "type": "OPTION_ENTITY",
+          "isOptional": false
+        },
+        {
+          "name": "origin",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "anchor",
+          "type": "ACTORLOCATION",
+          "isOptional": false
+        },
+        {
+          "name": "chainedcommand",
+          "type": "EXECUTECHAINEDOPTION_0",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Align",
+      "description": "Runs a command where positions are aligned (floored) to block axes",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "OPTION_ALIGN",
+          "isOptional": false
+        },
+        {
+          "name": "axes",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "chainedcommand",
+          "type": "EXECUTECHAINEDOPTION_0",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Anchored",
+      "description": "Runs a command with a position anchored to a specific location - e.g., the toes or eyes - for an entity",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "OPTION_ANCHORED",
+          "isOptional": false
+        },
+        {
+          "name": "anchored",
+          "type": "ACTORLOCATION",
+          "isOptional": false
+        },
+        {
+          "name": "chainedcommand",
+          "type": "EXECUTECHAINEDOPTION_0",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "If/unless block matches type",
+      "description": "Runs a command if or unless there is a block at a position of a particular type",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "OPTION_IF_UNLESS",
+          "isOptional": false
+        },
+        {
+          "name": "secondary_subcommand",
+          "type": "OPTION_CONDITION_BLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "block",
+          "type": "BLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "chainedcommand",
+          "type": "EXECUTECHAINEDOPTION_0",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "If/unless block has block states",
+      "description": "Runs a command with if or unless there is a block with a set of block states that matches the specified set.",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "OPTION_IF_UNLESS",
+          "isOptional": false
+        },
+        {
+          "name": "secondary_subcommand",
+          "type": "OPTION_CONDITION_BLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "block",
+          "type": "BLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "blockstates",
+          "type": "BLOCK_STATE_ARRAY",
+          "isOptional": false
+        },
+        {
+          "name": "chainedcommand",
+          "type": "EXECUTECHAINEDOPTION_0",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "If unless a set of blocks matches scan criteria",
+      "description": "Runs a command if a particular set of blocks in a volume matches the scan mode criteria",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "OPTION_IF_UNLESS",
+          "isOptional": false
+        },
+        {
+          "name": "secondary_subcommand",
+          "type": "OPTION_CONDITION_BLOCKS",
+          "isOptional": false
+        },
+        {
+          "name": "begin",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "end",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "destination",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "scan_mode",
+          "type": "BLOCKSSCANMODE",
+          "isOptional": false
+        },
+        {
+          "name": "chainedcommand",
+          "type": "EXECUTECHAINEDOPTION_0",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "If/unless an entity matches",
+      "description": "Runs a command if (or unless) a selector returns at least one matching entity.",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "OPTION_IF_UNLESS",
+          "isOptional": false
+        },
+        {
+          "name": "secondary_subcommand",
+          "type": "OPTION_CONDITION_ENTITY",
+          "isOptional": false
+        },
+        {
+          "name": "target",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "chainedcommand",
+          "type": "EXECUTECHAINEDOPTION_0",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "If/unless score",
+      "description": "Runs a command if (or unless) a scoreboard objective for a selected entity successfully compares to a value",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "OPTION_IF_UNLESS",
+          "isOptional": false
+        },
+        {
+          "name": "secondary_subcommand",
+          "type": "OPTION_CONDITION_SCORE",
+          "isOptional": false
+        },
+        {
+          "name": "target",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "objective",
+          "type": "SCOREBOARDOBJECTIVES",
+          "isOptional": false
+        },
+        {
+          "name": "operation",
+          "type": "COMPAREOPERATOR",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "objective",
+          "type": "SCOREBOARDOBJECTIVES",
+          "isOptional": false
+        },
+        {
+          "name": "chainedcommand",
+          "type": "EXECUTECHAINEDOPTION_0",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Runs a command based on scoreboards",
+      "description": "Runs a command if the score matches particular value or range of values.",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "OPTION_IF_UNLESS",
+          "isOptional": false
+        },
+        {
+          "name": "secondary_subcommand",
+          "type": "OPTION_CONDITION_SCORE",
+          "isOptional": false
+        },
+        {
+          "name": "target",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "objective",
+          "type": "SCOREBOARDOBJECTIVES",
+          "isOptional": false
+        },
+        {
+          "name": "matches",
+          "type": "SCORERANGEMODE",
+          "isOptional": false
+        },
+        {
+          "name": "range",
+          "type": "FULLINTEGERRANGE",
+          "isOptional": false
+        },
+        {
+          "name": "chainedcommand",
+          "type": "EXECUTECHAINEDOPTION_0",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "title": "Simple run of a command",
+      "description": "",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "OPTION_RUN",
+          "isOptional": false
+        },
+        {
+          "name": "command",
+          "type": "CODEBUILDERARGS",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

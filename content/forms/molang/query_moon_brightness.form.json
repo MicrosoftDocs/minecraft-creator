@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns brightness of the moon (full_moon=1"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.moon_brightness",
   "fields": [],
   "generated_doNotEdit": {

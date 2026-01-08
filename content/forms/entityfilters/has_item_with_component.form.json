@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if the entity is holding an item with a specific component"
+          }
+        ]
+      }
+    ]
+  },
   "id": "has_item_with_component",
   "fields": [],
   "generated_doNotEdit": {

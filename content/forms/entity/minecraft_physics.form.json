@@ -1,4 +1,74 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "has_gravity",
+            "comparison": "==",
+            "value": false
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is not affected by gravity (floats or hovers)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "has_collision",
+            "comparison": "==",
+            "value": false
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has no collision (can pass through blocks and entities)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "push_towards_closest_space",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "will be pushed out when stuck inside blocks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "has_gravity",
+            "comparison": "!=",
+            "value": false
+          },
+          {
+            "field": "has_collision",
+            "comparison": "!=",
+            "value": false
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has standard physics with gravity and collision"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:physics",

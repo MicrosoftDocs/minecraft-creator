@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Client Biome Documentation - minecraft:ambient_sounds"
 description: "Describes the minecraft:ambient_sounds client biome"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

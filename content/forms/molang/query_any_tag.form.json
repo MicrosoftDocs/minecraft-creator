@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if item or block has any of the specified tags"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.any_tag",
   "fields": [],
   "generated_doNotEdit": {

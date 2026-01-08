@@ -1,0 +1,27 @@
+{
+  "id": "type_camerapresetid",
+  "title": "Camera Preset",
+  "description": "Named camera preset from behavior packs.",
+  "fields": [],
+  "formatHint": "namespace:preset_name",
+  "samples": {
+    "values": [
+      {
+        "path": "Free-moving camera",
+        "content": "minecraft:free"
+      },
+      {
+        "path": "First-person view",
+        "content": "minecraft:first_person"
+      },
+      {
+        "path": "Third-person behind player",
+        "content": "minecraft:third_person"
+      },
+      {
+        "path": "Third-person facing player",
+        "content": "minecraft:third_person_front"
+      }
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "cmd_playanimation",
+  "title": "playanimation",
+  "description": "Makes one or more entities play a one-off animation.",
+  "fields": [
+    {
+      "id": "entity",
+      "title": "entity",
+      "type": "string",
+      "isOptional": false,
+      "description": "Required. A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the entity.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "animation",
+      "title": "animation",
+      "type": "string",
+      "isOptional": false,
+      "description": "Required. A `string` that is a single word or quoted `string`  that refers to an animation name or an animation JSON file in a resource pack.",
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "next_state",
+      "title": "next_state",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "blend_out_time",
+      "title": "blend_out_time",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "stop_expression",
+      "title": "stop_expression",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "controller",
+      "title": "controller",
+      "type": "string",
+      "isOptional": true,
+      "description": "Optional. A `string` that is an animation controller name or a new file defined in a resource pack.",
+      "subFormId": "type_id",
+      "commandType": "ID"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Play animation",
+      "description": "Play an animation with an entity and animation chosen, and optional next state, blend out time, stop expression, and controller.",
+      "params": [
+        {
+          "name": "entity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "animation",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "next_state",
+          "type": "ID",
+          "isOptional": true
+        },
+        {
+          "name": "blend_out_time",
+          "type": "VAL",
+          "isOptional": true
+        },
+        {
+          "name": "stop_expression",
+          "type": "ID",
+          "isOptional": true
+        },
+        {
+          "name": "controller",
+          "type": "ID",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

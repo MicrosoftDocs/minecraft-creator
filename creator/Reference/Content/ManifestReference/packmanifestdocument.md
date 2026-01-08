@@ -3,11 +3,14 @@ author: mammerla
 ms.author: mikeam
 title: "Pack Manifest Documentation - minecraft:packmanifestdocument"
 description: "Describes the minecraft:packmanifestdocument pack manifest"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Pack Manifest Documentation - minecraft:packmanifestdocument
+
+The root structure of a manifest.json file that defines an add-on pack. Every behavior pack and resource pack requires a manifest with a unique UUID, version info, and module declarations. This is the entry point Minecraft uses to identify and load your content.
 
 
 ## 3.0.0.PackManifestDocument Properties
@@ -25,6 +28,8 @@ ms.date: 02/11/2025
 | subpacks | *not set* | [Subpacks](#3.0.0.subpack) item |  |  | 
 
 ## 3.0.0.Header
+The header section of manifest.json containing the pack's identity: its name shown in the UI, description, unique UUID, and version. The min_engine_version field specifies the minimum Minecraft version required to load the pack.
+
 
 #### 3.0.0.Header Properties
 
@@ -69,6 +74,8 @@ ms.date: 02/11/2025
 | preRelease |  | String |  |  | 
 
 ## 3.0.0.Metadata
+Optional metadata about the pack including author names, license information, and URL. Also includes generation tool info for debugging.
+
 
 #### 3.0.0.Metadata Properties
 
@@ -81,6 +88,8 @@ ms.date: 02/11/2025
 | url | *not set* | String |  |  | 
 
 ## 3.0.0.Module
+Declares a module within the pack. Modules define what the pack contains: 'data' for behavior packs, 'resources' for resource packs, or 'script' for packs with JavaScript/TypeScript code. Script modules require an entry point file path.
+
 
 #### 3.0.0.Module Properties
 
@@ -95,6 +104,8 @@ ms.date: 02/11/2025
 | version (Alternate 1) | *not set* | String |  |  | 
 
 ## 3.0.0.Subpack
+Defines a subpack option that players can choose in pack settings. Subpacks allow offering different quality levels (like HD vs SD textures) that map to memory tiers, letting players with lower-end devices select lighter alternatives.
+
 
 #### 3.0.0.Subpack Properties
 

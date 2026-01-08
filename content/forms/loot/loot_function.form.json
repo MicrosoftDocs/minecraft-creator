@@ -1,0 +1,141 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "LootFunction",
+  "title": "Loot Function",
+  "description": "Defines a function that modifies a loot table entry when selected.",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [{ "field": "function", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "applies function " },
+          { "type": "value", "field": "function" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "function",
+      "title": "Function",
+      "description": "The function type. Common values: 'set_count', 'set_data', 'set_damage', 'set_nbt', 'enchant_randomly', 'enchant_with_levels', 'looting_enchant', 'furnace_smelt', 'set_actor_id', 'set_book_contents', 'fill_container', 'exploration_map', 'set_banner_details', 'set_armor_trim'.",
+      "dataType": 2,
+      "isRequired": true
+    },
+    {
+      "id": "count",
+      "title": "Count",
+      "description": "For 'set_count' and 'looting_enchant': the count value or range.",
+      "dataType": 16,
+      "subForm": {
+        "id": "count_range",
+        "fields": [
+          {
+            "id": "min",
+            "title": "Minimum",
+            "dataType": 0
+          },
+          {
+            "id": "max",
+            "title": "Maximum",
+            "dataType": 0
+          }
+        ]
+      },
+      "alternates": [
+        {
+          "id": "count",
+          "dataType": 0
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "title": "Data",
+      "description": "For 'set_data': the data value or range to set.",
+      "dataType": 16,
+      "subForm": {
+        "id": "data_range",
+        "fields": [
+          {
+            "id": "min",
+            "title": "Minimum",
+            "dataType": 0
+          },
+          {
+            "id": "max",
+            "title": "Maximum",
+            "dataType": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "damage",
+      "title": "Damage",
+      "description": "For 'set_damage': the damage percentage or range (0.0-1.0).",
+      "dataType": 16,
+      "subForm": {
+        "id": "damage_range",
+        "fields": [
+          {
+            "id": "min",
+            "title": "Minimum",
+            "dataType": 3
+          },
+          {
+            "id": "max",
+            "title": "Maximum",
+            "dataType": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "treasure",
+      "title": "Treasure",
+      "description": "For 'enchant_randomly': whether to include treasure enchantments.",
+      "dataType": 1
+    },
+    {
+      "id": "levels",
+      "title": "Levels",
+      "description": "For 'enchant_with_levels': the enchantment level or range.",
+      "dataType": 16,
+      "subForm": {
+        "id": "levels_range",
+        "fields": [
+          {
+            "id": "min",
+            "title": "Minimum",
+            "dataType": 0
+          },
+          {
+            "id": "max",
+            "title": "Maximum",
+            "dataType": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "id",
+      "title": "Entity ID",
+      "description": "For 'set_actor_id': the entity identifier.",
+      "dataType": 2
+    },
+    {
+      "id": "destination",
+      "title": "Destination",
+      "description": "For 'exploration_map': the structure destination type.",
+      "dataType": 2
+    },
+    {
+      "id": "conditions",
+      "title": "Conditions",
+      "description": "Conditions that must be met for this function to apply.",
+      "dataType": 15,
+      "subFormId": "loot/loot_condition"
+    }
+  ]
+}

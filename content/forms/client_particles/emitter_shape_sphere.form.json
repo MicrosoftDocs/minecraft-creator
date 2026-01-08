@@ -1,5 +1,47 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "emits particles from a spherical region"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "direction",
+      "title": "Direction",
+      "description": "The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions.",
+      "dataType": 2,
+      "alternates": [
+        {
+          "id": "direction",
+          "dataType": 35,
+          "minLength": 3,
+          "maxLength": 3
+        }
+      ]
+    },
+    {
+      "id": "offset",
+      "title": "Offset",
+      "description": "The offset from the emitter position, as [x, y, z] Molang expressions or numbers.",
+      "dataType": 35,
+      "minLength": 3,
+      "maxLength": 3
+    },
+    {
+      "id": "radius",
+      "title": "Radius",
+      "description": "The radius of the sphere. Can be a number or Molang expression.",
+      "dataType": 34
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_shape_sphere",
     "title": "Client Particles Emitter Shape Sphere",
@@ -129,5 +171,6 @@
         "defaultValue": false
       }
     ]
-  }
+  },
+  "description": "Emits particles from random positions within a spherical volume. Configure the radius to set sphere size and surface_only to restrict spawns to the outer shell. Direction can be inward, outward, or custom. Ideal for explosions, magical orbs, bubble columns, mob spawn effects, and any effect needing uniform 3D distribution."
 }

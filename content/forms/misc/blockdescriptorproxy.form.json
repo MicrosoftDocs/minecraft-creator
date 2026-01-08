@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines blockdescriptorproxy configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "BlockDescriptorProxy",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -31,5 +44,6 @@
         "dataType": 2
       }
     ]
-  }
+  },
+  "description": "Defines blockdescriptorproxy configuration."
 }

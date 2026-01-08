@@ -3,13 +3,14 @@ author: mammerla
 ms.author: mikeam
 title: "Items Documentation - minecraft:projectile"
 description: "Describes the minecraft:projectile item component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Items Documentation - minecraft:projectile
 
-Compels the item to shoot, similarly to an arrow. Items with minecraft:projectile can be shot from dispensers or used as ammunition for items with the minecraft:shooter item component. Additionally, this component sets the entity that is spawned for items that also contain the minecraft:throwable component.
+Defines an item as a projectile that can be shot from dispensers or used as ammunition with minecraft:shooter. When combined with minecraft:throwable, this component specifies which entity is spawned when the item is thrown.
 
 
 ## Item Components Projectile Properties

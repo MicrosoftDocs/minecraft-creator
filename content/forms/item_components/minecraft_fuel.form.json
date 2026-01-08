@@ -1,6 +1,32 @@
 {
-  "title": "Fuel",
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "description": "Allows this item to be used as fuel in a furnace to 'cook' other items.",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "duration",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "burns for "
+          },
+          {
+            "type": "value",
+            "field": "duration"
+          },
+          {
+            "type": "literal",
+            "text": " seconds as fuel"
+          }
+        ]
+      }
+    ]
+  },
   "scalarFieldUpgradeName": "duration",
   "fields": [
     {

@@ -3,16 +3,17 @@ author: mammerla
 ms.author: mikeam
 title: "Items Documentation - minecraft:wearable"
 description: "Describes the minecraft:wearable item component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Items Documentation - minecraft:wearable
 
-Sets the wearable item component.
+Sets the wearable item component, which allows an item to be worn by a player in a specified equipment slot.
 
 > [!Note]
-> Here are the following equipment slots that can be set for the value of slot: slot.weapon.mainhand, slot.weapon.offhand, slot.armor.head, slot.armor.chest, slot.armor.legs, slot.armor.feet, slot.hotbar, slot.inventory, slot.enderchest, slot.saddle, slot.armor, slot.chest, slot.equippable.
+> Valid equipment slots are: slot.armor.head, slot.armor.chest, slot.armor.legs, slot.armor.feet, slot.armor.body, and slot.weapon.offhand. When a non-hand armor slot is used, the max stack size is automatically set to 1.
 
 
 ## Item Components Wearable Properties

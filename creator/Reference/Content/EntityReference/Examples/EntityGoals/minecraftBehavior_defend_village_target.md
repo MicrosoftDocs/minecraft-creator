@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:behavior.defend_village_target"
 description: "Describes the minecraft:behavior.defend_village_target ai behavior component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -10,6 +11,9 @@ ms.date: 02/11/2025
 # Entity Documentation - minecraft:behavior.defend_village_target
 
 Allows the entity to stay in a village and defend the village from aggressors. If a player is in bad standing with the village this goal will cause the entity to attack the player regardless of filter conditions.
+
+> [!Note]
+> This behavior is typically used with the minecraft:dweller component which defines the entity's role in a village. See iron_golem.json for a complete example.
 
 
 ## Defend Village Target Behavior Properties

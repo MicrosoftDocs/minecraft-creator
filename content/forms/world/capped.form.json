@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Capped",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "wraps a processor and limits the number of times it can be applied"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "processor_type",

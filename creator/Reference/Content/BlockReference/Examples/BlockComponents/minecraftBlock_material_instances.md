@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Block Components Documentation - minecraft:material_instances"
 description: "Describes the minecraft:material_instances block component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -35,13 +36,15 @@ The material instances for a block. Maps face or material_instance names in a ge
 | west (Alternate 1) | *not set* | String |  |  | 
 
 ## Material Instance Face
+Configures how a block face renders its texture, including transparency, culling, and lighting. Set the texture reference, choose render method (opaque, alpha_test, blend, or double_sided), control face culling, and configure ambient occlusion. Enables glass-like transparency, leaf rendering, and custom visual effects.
+
 
 #### Material Instance Face Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | ambient_occlusion | *not set* | Decimal number | If this material has ambient occlusion applied when lighting, shadows will be created around and underneath the block. Decimal value controls exponent applied to a value after lighting. |  | 
-| face_dimming | *not set* | String | This material should be dimmed by the direction it's facing. | Blue Bubble Fish: `true` | 
+| face_dimming | *not set* | String | This material should be dimmed by the direction its facing. | Blue Bubble Fish: `true` | 
 | isotropic | false | Boolean true/false | Should the faces that this material is applied to randomize their UVs? This item requires a format version of at least undefined. |  | 
 | render_method | *not set* | [Render Method](#render-method-choices) choices | The render method to use. | Blue Bubble Fish: `"blend"`, Block Orange Ore: `"opaque"`, Block Frond Top: `"alpha_test"` | 
 | texture | *not set* | String | Texture name for the material. | Blue Bubble Fish: `"bubble_fish_blue"`, California Roll: `"sushi_wrap"`, Green Bubble Fish: `"bubble_fish_green"` | 

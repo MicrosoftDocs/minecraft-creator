@@ -1,6 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "entity",
   "title": "Entity",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "references an entity type"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "typeId",
@@ -8,5 +21,6 @@
       "dataType": 2,
       "defaultValue": ""
     }
-  ]
+  ],
+  "description": "References an entity by type identifier for use in action sets. This allows actions to target specific entity types like 'minecraft:zombie' or custom entities from behavior packs when spawning, killing, or manipulating entities."
 }

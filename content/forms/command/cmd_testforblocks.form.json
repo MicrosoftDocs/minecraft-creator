@@ -1,0 +1,73 @@
+{
+  "id": "cmd_testforblocks",
+  "title": "testforblocks",
+  "description": "Tests whether the blocks in two regions match.",
+  "fields": [
+    {
+      "id": "begin",
+      "title": "begin",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `vector` [x y z] that along with `end` of two opposite corners of a rectangular region to test for.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "end",
+      "title": "end",
+      "type": "string",
+      "isOptional": false,
+      "description": "Required. A `vector` [x y z] that along with `begin` of two opposite corners of a rectangular region to test for.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "destination",
+      "title": "destination",
+      "type": "string",
+      "isOptional": false,
+      "description": "Required. A `vector` [x y z] of the lower northwest corner to test for.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "mode",
+      "title": "mode",
+      "type": "string",
+      "isOptional": true,
+      "description": "Optional. Either `masked` where air blocks will match any destination, or default `all` which matches all blocks including air.",
+      "commandType": "TESTFORBLOCKSMODE"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Test for blocks",
+      "description": "Test whether the blocks in one area defined by `begin` and `end` match the blocks in a `destination` with an optional `test for blocks mode`.",
+      "params": [
+        {
+          "name": "begin",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "end",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "destination",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "mode",
+          "type": "TESTFORBLOCKSMODE",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

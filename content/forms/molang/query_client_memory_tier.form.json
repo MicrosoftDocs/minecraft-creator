@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns a number representing the client ram memory tier"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.client_memory_tier",
   "fields": [],
   "generated_doNotEdit": {

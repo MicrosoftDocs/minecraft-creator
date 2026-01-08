@@ -3,14 +3,17 @@ author: mammerla
 ms.author: mikeam
 title: "Visuals Documentation - minecraft:actor_resource_definition.v1.10.0"
 description: "Describes the minecraft:actor_resource_definition.v1.10.0 visual element"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Visuals Documentation - minecraft:actor_resource_definition.v1.10.0
 
+Defines an entity client resource definition document with format_version 1.10.0.
 
-## Actor Resource Definition Properties
+
+## Actor Resource Definition (v1.10.0) Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -67,9 +70,7 @@ ms.date: 02/11/2025
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| animate | *not set* | Array of objects |  |  | 
-| animate (Alternate 1) | *not set* | Array of strings |  |  | 
-| animate (Alternate 2) | *not set* | Molang |  |  | 
+| animate | *not set* | String | List of animations to play. Each item can be a string animation name or an object mapping animation name to a Molang condition. |  | 
 | initialize | *not set* | Molang array |  |  | 
 | parent_setup | *not set* | Molang |  |  | 
 | pre_animation | *not set* | Molang array |  |  | 

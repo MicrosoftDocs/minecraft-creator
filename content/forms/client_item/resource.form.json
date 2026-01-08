@@ -1,4 +1,16 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "title": "Item Client Resources",
+  "description": "Defines resource pack rendering resources for an item (materials, textures, geometry, and animations), keyed by an identifier.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines visual and audio resources for an item" }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "identifier",

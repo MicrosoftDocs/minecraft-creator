@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is resting"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_resting",
   "fields": [],
   "description": "Returns 1.0 if the entity is resting, else it returns 0.0. Applies generally to the bat.",

@@ -1,4 +1,22 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "drops loot from "
+          },
+          {
+            "type": "value",
+            "field": "string"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Specifies the path to the loot table that determines what items are dropped when the block is destroyed. The path is relative to the behavior pack's root folder (e.g., 'loot_tables/blocks/my_block.json'). Path string is limited to 256 characters. If this component is omitted, the block drops itself.",
   "fields": [],
   "scalarField": {
     "id": "string",

@@ -1,5 +1,49 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "render_controller",
+  "title": "Render Controller (v1.8.0)",
+  "description": "Render controllers define how entities are visually rendered, including which geometry, textures, and materials to use. They support arrays for dynamic selection based on Molang expressions, part visibility toggling, UV animations, and color tinting.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines how an entity is rendered with geometry, textures, and materials" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "render_controllers", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "with " },
+          { "type": "value", "field": "render_controllers.length" },
+          {
+            "type": "plural",
+            "countField": "render_controllers.length",
+            "singular": [{ "type": "literal", "text": " controller" }],
+            "plural": [{ "type": "literal", "text": " controllers" }],
+            "includeCount": false
+          }
+        ]
+      },
+      {
+        "visibility": [{ "field": "render_controllers[0].arrays", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "using arrays for dynamic selection" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "render_controllers[0].part_visibility", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "with part visibility control" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "render_controllers[0].uv_anim", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "and UV animation" }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "render_controller",

@@ -1,0 +1,31 @@
+{
+  "id": "type_compareoperator",
+  "title": "Comparison Operator",
+  "description": "Operator for comparing values in scoreboard tests.",
+  "fields": [],
+  "formatHint": "<, <=, =, >=, or >",
+  "samples": {
+    "values": [
+      {
+        "path": "Less than",
+        "content": "<"
+      },
+      {
+        "path": "Less than or equal to",
+        "content": "<="
+      },
+      {
+        "path": "Equal to",
+        "content": "="
+      },
+      {
+        "path": "Greater than or equal to",
+        "content": ">="
+      },
+      {
+        "path": "Greater than",
+        "content": ">"
+      }
+    ]
+  }
+}

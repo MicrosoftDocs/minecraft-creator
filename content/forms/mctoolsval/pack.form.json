@@ -1,0 +1,164 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "extracts and validates pack manifest information"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "pack",
+  "title": "Pack Manifest Info",
+  "description": "Extracts and validates information from behavior pack and resource pack manifest.json files including names, descriptions, UUIDs, versions, and icons.",
+  "fields": [
+    {
+      "id": "104",
+      "title": "BP Name",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "The name field from the behavior pack manifest header. This is displayed in the game's pack selection UI.",
+      "technicalDescription": "Data contains the name string from manifest header"
+    },
+    {
+      "id": "105",
+      "title": "BP Description",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "The description field from the behavior pack manifest header. Provides a brief summary of the pack's contents.",
+      "technicalDescription": "Data contains the description string from manifest header"
+    },
+    {
+      "id": "106",
+      "title": "BP Custom ID",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "The custom identifier for the behavior pack, if specified. Used for internal referencing.",
+      "technicalDescription": "Data contains the custom id string if specified"
+    },
+    {
+      "id": "107",
+      "title": "BP Min Version",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "The minimum Minecraft version required to use this behavior pack. Format: [major, minor, patch].",
+      "technicalDescription": "Data contains the min_engine_version array as string"
+    },
+    {
+      "id": "108",
+      "title": "BP UUID",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "The unique identifier (UUID) for the behavior pack. Must be unique across all packs.",
+      "technicalDescription": "Data contains the UUID string from manifest header"
+    },
+    {
+      "id": "109",
+      "title": "BP Manifest",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "General information extracted from the behavior pack manifest.json file.",
+      "technicalDescription": "Data contains summarized manifest information"
+    },
+    {
+      "id": "111",
+      "title": "RP Min Version",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "The minimum Minecraft version required to use this resource pack. Format: [major, minor, patch].",
+      "technicalDescription": "Data contains the min_engine_version array as string"
+    },
+    {
+      "id": "112",
+      "title": "RP UUID",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "The unique identifier (UUID) for the resource pack. Must be unique across all packs.",
+      "technicalDescription": "Data contains the UUID string from manifest header"
+    },
+    {
+      "id": "113",
+      "title": "RP Manifest",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "General information extracted from the resource pack manifest.json file.",
+      "technicalDescription": "Data contains summarized manifest information"
+    },
+    {
+      "id": "114",
+      "title": "RP Name",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "The name field from the resource pack manifest header. This is displayed in the game's pack selection UI.",
+      "technicalDescription": "Data contains the name string from manifest header"
+    },
+    {
+      "id": "115",
+      "title": "RP Description",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "The description field from the resource pack manifest header. Provides a brief summary of the pack's contents.",
+      "technicalDescription": "Data contains the description string from manifest header"
+    },
+    {
+      "id": "116",
+      "title": "RP Custom ID",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "The custom identifier for the resource pack, if specified. Used for internal referencing.",
+      "technicalDescription": "Data contains the custom id string if specified"
+    },
+    {
+      "id": "117",
+      "title": "RP Format Version",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "The format_version field from the resource pack manifest. Determines which manifest features are available.",
+      "technicalDescription": "Data contains the format_version string"
+    },
+    {
+      "id": "118",
+      "title": "Sub Packs",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Information about subpacks defined in the manifest. Subpacks allow tiered content for different device capabilities.",
+      "technicalDescription": "Data contains subpack configuration summary"
+    },
+    {
+      "id": "121",
+      "title": "RP Icon",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "The pack_icon.png found in the resource pack root. Used to display the pack in selection screens.",
+      "technicalDescription": "Data contains pack icon path"
+    },
+    {
+      "id": "122",
+      "title": "BP Icon",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "The pack_icon.png found in the behavior pack root. Used to display the pack in selection screens.",
+      "technicalDescription": "Data contains pack icon path"
+    },
+    {
+      "id": "123",
+      "title": "Skin Pack Icon",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "The pack_icon.png found in the skin pack root. Used to display the pack in selection screens.",
+      "technicalDescription": "Data contains pack icon path"
+    },
+    {
+      "id": "245",
+      "title": "Subpack Tiers",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Analysis of subpack memory_tier configurations. Tiers should be properly ordered for device capability matching.",
+      "technicalDescription": "Data contains subpack tier configuration analysis"
+    }
+  ]
+}

@@ -11,7 +11,6 @@ If a world template relies on the behavior of certain entities, the world templa
 
 For example, when running a version 1.18 client while the `base_game_version` of a world template is set to 1.15, the game will load the resources for all versions up to 1.15 and will skip any new resources implemented in 1.16 through 1.18.
 
-Finally, the base game version can be updated at any time, including after content has been uploaded to the Minecraft Marketplace. Updating the base game version of a Marketplace world template will affect not only new world created from the template, but all worlds previously created from the template as well.
 
 > [!IMPORTANT]
 > Base game versioning was introduced in 1.13, and is the earliest version of the game that supports base game versioning. **Do not** try to set your `base_game_version` below 1.13.

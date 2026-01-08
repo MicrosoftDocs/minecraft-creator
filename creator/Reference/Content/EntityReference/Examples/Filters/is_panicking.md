@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Filters Documentation - minecraft:is_panicking"
 description: "Describes the minecraft:is_panicking entity filter element"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

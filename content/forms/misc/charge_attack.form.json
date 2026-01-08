@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines behavior.charge attack configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.charge_attack",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:is_baby"
 description: "Describes the minecraft:is_baby entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -52,16 +53,5 @@ At /minecraft:entity/component_groups/play_schedule_villager/minecraft:behavior.
   "subject": "other",
   "operator": "==",
   "value": true
-}
-```
-
-#### [Zombie Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_horse.json)
-
-At /minecraft:entity/events/minecraft:upgrade_to_1_21_130/sequence/0/filters/all_of/1/: 
-
-```json
-"minecraft:is_baby": {
-  "test": "is_baby",
-  "value": false
 }
 ```

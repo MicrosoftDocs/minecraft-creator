@@ -1,0 +1,155 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines global variables for UI screens"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "ui_global_variables",
+  "title": "UI Global Variables",
+  "description": "The _global_variables.json file that defines global variables used across all UI screens in Minecraft. Variables are defined with '$' prefix and can include colors, sizes, and other values.",
+  "fields": [
+    {
+      "id": "$button_text_color",
+      "title": "$button Text Color",
+      "dataType": 2,
+      "samples": {
+        "colors": [
+          {
+            "path": "Color variable examples",
+            "content": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "path": "Color variable examples",
+            "content": [
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "$background_color",
+      "title": "$background Color",
+      "dataType": 2,
+      "samples": {
+        "colors": [
+          {
+            "path": "Color variable examples",
+            "content": [
+              0.2,
+              0.2,
+              0.2,
+              0.8
+            ]
+          },
+          {
+            "path": "Color variable examples",
+            "content": [
+              0.2,
+              0.2,
+              0.2,
+              0.8
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "$highlight_color",
+      "title": "$highlight Color",
+      "dataType": 2,
+      "samples": {
+        "colors": [
+          {
+            "path": "Color variable examples",
+            "content": [
+              1,
+              0.84,
+              0
+            ]
+          },
+          {
+            "path": "Color variable examples",
+            "content": [
+              1,
+              0.84,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "samples": {
+    "colors": [
+      {
+        "path": "Color variable examples",
+        "content": {
+          "$button_text_color": [
+            1,
+            1,
+            1
+          ],
+          "$background_color": [
+            0.2,
+            0.2,
+            0.2,
+            0.8
+          ],
+          "$highlight_color": [
+            1,
+            0.84,
+            0
+          ]
+        }
+      }
+    ]
+  },
+  "note": "Variable names must start with '$'. Colors are typically specified as [r, g, b] or [r, g, b, a] arrays with values between 0.0 and 1.0.",
+  "customField": {
+    "id": "\\$[a-zA-Z0-9_]+",
+    "title": "Variable",
+    "description": "A global UI variable. Variable names start with '$' and can be referenced in any UI screen file. Common uses include color definitions, sizes, and configuration values.",
+    "isRequired": false,
+    "alternates": [
+      {
+        "dataType": 2,
+        "id": "string_variable",
+        "title": "String Variable",
+        "description": "A string-valued UI variable."
+      },
+      {
+        "dataType": 3,
+        "id": "number_variable",
+        "title": "Number Variable",
+        "description": "A numeric UI variable."
+      },
+      {
+        "dataType": 1,
+        "id": "boolean_variable",
+        "title": "Boolean Variable",
+        "description": "A boolean UI variable."
+      },
+      {
+        "dataType": 32,
+        "id": "array_variable",
+        "title": "Array Variable",
+        "description": "An array-valued UI variable, commonly used for colors [r, g, b] or [r, g, b, a]."
+      }
+    ]
+  }
+}

@@ -1,0 +1,2431 @@
+{
+  "$ref": "#/definitions/IField",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "ComparisonType": {
+      "enum": [
+        "=",
+        "<",
+        "<=",
+        ">",
+        ">=",
+        "defined",
+        "literallyDefined",
+        "nonempty",
+        "pattern"
+      ],
+      "type": "string"
+    },
+    "FieldDataType": {
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "type": "number"
+    },
+    "FieldExperienceType": {
+      "enum": [
+        1,
+        2,
+        3
+      ],
+      "type": "number"
+    },
+    "FieldMessageType": {
+      "description": "Describes the type of message for validator topic fields. This aligns with InfoItemType but is simplified for form field definitions.",
+      "enum": [
+        "info",
+        "warning",
+        "error",
+        "recommendation"
+      ],
+      "markdownDescription": "Describes the type of message for validator topic fields.\nThis aligns with InfoItemType but is simplified for form field definitions.",
+      "type": "string"
+    },
+    "FieldValueHumanify": {
+      "description": "Describes the way field values should be converted to a more human-readable format.",
+      "enum": [
+        0,
+        1,
+        2
+      ],
+      "markdownDescription": "Describes the way field values should be converted to a more human-readable format.",
+      "type": "number"
+    },
+    "FieldVisualExperience": {
+      "enum": [
+        0,
+        1
+      ],
+      "type": "number"
+    },
+    "ICondition": {
+      "description": "Represents a condition that can be evaluated against data.\n\nConditions are used to determine visibility of fields, validity of data, and for summarizer token switching logic.",
+      "examples": [
+        {
+          "comparison": "=",
+          "field": "max",
+          "value": 100
+        },
+        {
+          "comparison": "=",
+          "field": "can_fly",
+          "value": true
+        },
+        {
+          "comparison": ">",
+          "field": "health",
+          "value": 50
+        },
+        {
+          "comparison": "defined",
+          "field": "loot_table"
+        }
+      ],
+      "markdownDescription": "Represents a condition that can be evaluated against data.\n\nConditions are used to determine visibility of fields, validity of data,\nand for summarizer token switching logic.",
+      "properties": {
+        "anyValues": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "items": {
+                "type": "boolean"
+              },
+              "type": "array"
+            }
+          ],
+          "description": "Alternative: match if the field value equals ANY of these values. Useful for enum-like checks.",
+          "markdownDescription": "Alternative: match if the field value equals ANY of these values.\nUseful for enum-like checks."
+        },
+        "comparison": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/ComparisonType"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "description": "The comparison operation to perform.",
+          "markdownDescription": "The comparison operation to perform."
+        },
+        "field": {
+          "description": "The field path to check. Supports dot notation for nested fields.",
+          "markdownDescription": "The field path to check. Supports dot notation for nested fields.",
+          "type": "string"
+        },
+        "value": {
+          "description": "The value to compare against. Supports numbers, strings, and booleans.",
+          "markdownDescription": "The value to compare against.\nSupports numbers, strings, and booleans.",
+          "type": [
+            "number",
+            "string",
+            "boolean"
+          ]
+        }
+      },
+      "required": [
+        "comparison"
+      ],
+      "type": "object"
+    },
+    "IConjunctionToken": {
+      "description": "Conjunction token: joins child token arrays with a conjunction.",
+      "examples": [
+        {
+          "conjunction": "and",
+          "items": [
+            {
+              "tokens": [
+                {
+                  "text": "can fly",
+                  "type": "literal"
+                }
+              ]
+            },
+            {
+              "tokens": [
+                {
+                  "text": "can swim",
+                  "type": "literal"
+                }
+              ]
+            }
+          ],
+          "type": "conjunction"
+        },
+        {
+          "conjunction": "but",
+          "items": [
+            {
+              "tokens": [
+                {
+                  "text": "is immune to fire",
+                  "type": "literal"
+                }
+              ]
+            },
+            {
+              "tokens": [
+                {
+                  "text": "is weak to water",
+                  "type": "literal"
+                }
+              ]
+            }
+          ],
+          "type": "conjunction"
+        }
+      ],
+      "markdownDescription": "Conjunction token: joins child token arrays with a conjunction.",
+      "properties": {
+        "conjunction": {
+          "description": "The conjunction word to use.",
+          "markdownDescription": "The conjunction word to use.",
+          "type": "string"
+        },
+        "effects": {
+          "$ref": "#/definitions/ISummarizerEffects",
+          "description": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement. The summarizer always produces valid plain text regardless of effects.",
+          "examples": [
+            {
+              "effects": {
+                "emphasis": "strong",
+                "icon": "❤️",
+                "sentiment": "positive"
+              },
+              "field": "max",
+              "type": "value"
+            }
+          ],
+          "markdownDescription": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement.\nThe summarizer always produces valid plain text regardless of effects."
+        },
+        "items": {
+          "description": "Items to join with the conjunction.",
+          "items": {
+            "$ref": "#/definitions/IListItem"
+          },
+          "markdownDescription": "Items to join with the conjunction.",
+          "type": "array"
+        },
+        "priority": {
+          "default": 2,
+          "description": "Priority for truncation when space is limited. Lower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "markdownDescription": "Priority for truncation when space is limited.\nLower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "type": "number"
+        },
+        "type": {
+          "const": "conjunction",
+          "description": "The type of token. Determines how the token is evaluated.",
+          "markdownDescription": "The type of token. Determines how the token is evaluated.",
+          "type": "string"
+        },
+        "visibility": {
+          "description": "Optional conditions that must ALL be true for this token to appear. Uses the same ICondition format as field visibility in forms.",
+          "items": {
+            "$ref": "#/definitions/ICondition"
+          },
+          "markdownDescription": "Optional conditions that must ALL be true for this token to appear.\nUses the same ICondition format as field visibility in forms.",
+          "type": "array"
+        }
+      },
+      "required": [
+        "conjunction",
+        "items",
+        "type"
+      ],
+      "type": "object"
+    },
+    "IExistsToken": {
+      "description": "Exists token: outputs tokens only if a field is defined (or undefined).\n\nUseful for optional fields where presence/absence is meaningful.",
+      "examples": [
+        {
+          "field": "loot_table",
+          "type": "exists",
+          "whenDefined": [
+            {
+              "text": "has a custom loot table",
+              "type": "literal"
+            }
+          ],
+          "whenUndefined": [
+            {
+              "text": "uses default loot",
+              "type": "literal"
+            }
+          ]
+        },
+        {
+          "field": "on_death_event",
+          "type": "exists",
+          "whenDefined": [
+            {
+              "text": "triggers an event on death",
+              "type": "literal"
+            }
+          ]
+        }
+      ],
+      "markdownDescription": "Exists token: outputs tokens only if a field is defined (or undefined).\n\nUseful for optional fields where presence/absence is meaningful.",
+      "properties": {
+        "effects": {
+          "$ref": "#/definitions/ISummarizerEffects",
+          "description": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement. The summarizer always produces valid plain text regardless of effects.",
+          "examples": [
+            {
+              "effects": {
+                "emphasis": "strong",
+                "icon": "❤️",
+                "sentiment": "positive"
+              },
+              "field": "max",
+              "type": "value"
+            }
+          ],
+          "markdownDescription": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement.\nThe summarizer always produces valid plain text regardless of effects."
+        },
+        "field": {
+          "description": "Field to check for existence.",
+          "markdownDescription": "Field to check for existence.",
+          "type": "string"
+        },
+        "priority": {
+          "default": 2,
+          "description": "Priority for truncation when space is limited. Lower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "markdownDescription": "Priority for truncation when space is limited.\nLower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "type": "number"
+        },
+        "treatEmptyAsUndefined": {
+          "default": false,
+          "description": "If true, also treat empty strings, empty arrays, and empty objects as \"undefined\".",
+          "markdownDescription": "If true, also treat empty strings, empty arrays, and empty objects as \"undefined\".",
+          "type": "boolean"
+        },
+        "type": {
+          "const": "exists",
+          "description": "The type of token. Determines how the token is evaluated.",
+          "markdownDescription": "The type of token. Determines how the token is evaluated.",
+          "type": "string"
+        },
+        "visibility": {
+          "description": "Optional conditions that must ALL be true for this token to appear. Uses the same ICondition format as field visibility in forms.",
+          "items": {
+            "$ref": "#/definitions/ICondition"
+          },
+          "markdownDescription": "Optional conditions that must ALL be true for this token to appear.\nUses the same ICondition format as field visibility in forms.",
+          "type": "array"
+        },
+        "whenDefined": {
+          "description": "Tokens to output when the field IS defined.",
+          "items": {
+            "$ref": "#/definitions/ISummarizerToken"
+          },
+          "markdownDescription": "Tokens to output when the field IS defined.",
+          "type": "array"
+        },
+        "whenUndefined": {
+          "description": "Tokens to output when the field is NOT defined. If not provided, outputs nothing when undefined.",
+          "items": {
+            "$ref": "#/definitions/ISummarizerToken"
+          },
+          "markdownDescription": "Tokens to output when the field is NOT defined.\nIf not provided, outputs nothing when undefined.",
+          "type": "array"
+        }
+      },
+      "required": [
+        "field",
+        "type",
+        "whenDefined"
+      ],
+      "type": "object"
+    },
+    "IField": {
+      "properties": {
+        "additionalIndent": {
+          "description": "Specifies whether visual presentations of this data should have any additional indents",
+          "markdownDescription": "Specifies whether visual presentations of this data should have any additional indents",
+          "type": "number"
+        },
+        "additionalPropertiesOf": {
+          "$ref": "#/definitions/FieldDataType",
+          "description": "Specifies the data type for additional properties in a keyed collection. When set, this generates additionalProperties schema based on the specified FieldDataType. For example, additionalPropertiesOf: FieldDataType.molangArray would generate additionalProperties with the Molang array schema.",
+          "markdownDescription": "Specifies the data type for additional properties in a keyed collection.\nWhen set, this generates additionalProperties schema based on the specified FieldDataType.\nFor example, additionalPropertiesOf: FieldDataType.molangArray would generate\nadditionalProperties with the Molang array schema."
+        },
+        "allowCreateDelete": {
+          "description": "If this field is an array or keyed set, whether new items can be created or existing items can be deleted.",
+          "markdownDescription": "If this field is an array or keyed set, whether new items can be created or existing items can be deleted.",
+          "type": "boolean"
+        },
+        "allowedKeys": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "altId": {
+          "description": "Optional alternate identifier for the field.",
+          "markdownDescription": "Optional alternate identifier for the field.",
+          "type": "string"
+        },
+        "alternates": {
+          "description": "Specifies a list of alternate representation for data for this field. For example, a field that is a string can have an alternate representation as a number, and would have an alternate field for it.",
+          "items": {
+            "$ref": "#/definitions/IField"
+          },
+          "markdownDescription": "Specifies a list of alternate representation for data for this field. For example, a field that is a string can have an alternate representation as a number, and would have an alternate field for it.",
+          "type": "array"
+        },
+        "choices": {
+          "description": "Specifies a fixed list of choices for this field.",
+          "items": {
+            "$ref": "#/definitions/ISimpleReference"
+          },
+          "markdownDescription": "Specifies a fixed list of choices for this field.",
+          "type": "array"
+        },
+        "dataType": {
+          "$ref": "#/definitions/FieldDataType",
+          "description": "Specifies the data type of the field, which determines how the data is interpreted and validated.",
+          "markdownDescription": "Specifies the data type of the field, which determines how the data is interpreted and validated."
+        },
+        "defaultValue": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "boolean"
+            },
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "object"
+            },
+            {
+              "items": {
+                "type": "object"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Specifies what the default value of this field should be if it's not specified in the data.",
+          "markdownDescription": "Specifies what the default value of this field should be if it's not specified in the data."
+        },
+        "description": {
+          "description": "Optional human-readable description for the field. If the description is functionally equivalent to its title, the description can be omitted.",
+          "markdownDescription": "Optional human-readable description for the field.\nIf the description is functionally equivalent to its title, the description can be omitted.",
+          "type": "string"
+        },
+        "displayTitle": {
+          "description": "When displaying the field in a user interface, whether to display the title for the field.",
+          "markdownDescription": "When displaying the field in a user interface, whether to display the title for the field.",
+          "type": "boolean"
+        },
+        "experienceType": {
+          "$ref": "#/definitions/FieldExperienceType",
+          "description": "Specifies a particular visual experiene for the field.",
+          "markdownDescription": "Specifies a particular visual experiene for the field."
+        },
+        "fixedLength": {
+          "description": "For array types, this specifies that the sub-field should be an array of objects of a fixed length.",
+          "markdownDescription": "For array types, this specifies that the sub-field should be an array of objects of a fixed length.",
+          "type": "number"
+        },
+        "forceString": {
+          "description": "Whether to force the field to be treated as a string, even if it appears to be another type.",
+          "markdownDescription": "Whether to force the field to be treated as a string, even if it appears to be another type.",
+          "type": "boolean"
+        },
+        "groupId": {
+          "type": "string"
+        },
+        "hideSamples": {
+          "description": "Specifies whether the samples for this field should be hidden in the target source (UI or documentation). This is typically used for fields whether the samples are not interesting. Eg., \"priority\": 2 as an sample of a priority field.",
+          "markdownDescription": "Specifies whether the samples for this field should be hidden in the target source (UI or documentation).\nThis is typically used for fields whether the samples are not interesting. Eg., \"priority\": 2 as an sample of a priority field.",
+          "type": "boolean"
+        },
+        "howToUse": {
+          "description": "Optional human-readable guidance on how to use or fix issues related to this field. For validation rules, this contains tips for how to resolve validation errors or warnings.",
+          "markdownDescription": "Optional human-readable guidance on how to use or fix issues related to this field.\nFor validation rules, this contains tips for how to resolve validation errors or warnings.",
+          "type": "string"
+        },
+        "humanifyValues": {
+          "$ref": "#/definitions/FieldValueHumanify",
+          "description": "Specifies whether values of this field should be transformed via an algorithm to be more human-readable and \"friendly\".",
+          "markdownDescription": "Specifies whether values of this field should be transformed via an algorithm to be more human-readable and \"friendly\"."
+        },
+        "id": {
+          "description": "Unique identifier for the field.",
+          "markdownDescription": "Unique identifier for the field.",
+          "type": "string"
+        },
+        "isDeprecated": {
+          "description": "Specifies whether this field is deprecated and should not be used in new code.",
+          "markdownDescription": "Specifies whether this field is deprecated and should not be used in new code.",
+          "type": "boolean"
+        },
+        "isInternal": {
+          "description": "Specifies whether this field is internal and not intended for public use.",
+          "markdownDescription": "Specifies whether this field is internal and not intended for public use.",
+          "type": "boolean"
+        },
+        "isRemoved": {
+          "description": "A placeholder for internal content build processes to signify that this field should NOT be merged in via automatic processes and should not really exist in the final schema.",
+          "markdownDescription": "A placeholder for internal content build processes to signify that this field should NOT be merged in via automatic processes and should not really exist\nin the final schema.",
+          "type": "boolean"
+        },
+        "isRequired": {
+          "description": "Specifies whether this field is required to have a value.",
+          "markdownDescription": "Specifies whether this field is required to have a value.",
+          "type": "boolean"
+        },
+        "keyDescription": {
+          "description": "Description of the field that is used for human-readable purposes. This is typically used to provide a more user-friendly description of the key of this field.",
+          "markdownDescription": "Description of the field that is used for human-readable purposes.\nThis is typically used to provide a more user-friendly description of the key of this field.",
+          "type": "string"
+        },
+        "lookupId": {
+          "description": "Context-specfic identifier for data set to use for lookups for the field.",
+          "markdownDescription": "Context-specfic identifier for data set to use for lookups for the field.",
+          "type": "string"
+        },
+        "matchObjectArrayLengthToSubFieldLength": {
+          "description": "If this field references an array of objects, this is the key that maps the array length to its sub field length.",
+          "markdownDescription": "If this field references an array of objects, this is the key that maps the array length to its sub field length.",
+          "type": "boolean"
+        },
+        "matchObjectArrayToSubFieldKey": {
+          "description": "If this field references an array of objects, this specifies that objects in the array should map to its corresponding sub-field.",
+          "markdownDescription": "If this field references an array of objects, this specifies that objects in the array should map to its corresponding sub-field.",
+          "type": "boolean"
+        },
+        "matchedValues": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "Specifies matched values that reference project updaters. Used in mctoolsval forms to associate topic IDs with their corresponding updaters.",
+          "markdownDescription": "Specifies matched values that reference project updaters. Used in mctoolsval forms\nto associate topic IDs with their corresponding updaters.",
+          "type": "object"
+        },
+        "maxLength": {
+          "description": "If the field is a string related, the maximum length of the string.",
+          "markdownDescription": "If the field is a string related, the maximum length of the string.",
+          "type": "number"
+        },
+        "maxValue": {
+          "description": "If the field is a number, float, or integer, this specifies the maximum value that the field can take.",
+          "markdownDescription": "If the field is a number, float, or integer, this specifies the maximum value that the field can take.",
+          "type": "number"
+        },
+        "mergeSubForm": {
+          "description": "Used in override files to request merging of generated subForm content into the override's subForm. When set to true, the generated subForm fields will be merged into the override's existing subForm. Use this when you want to keep your override's subForm fields AND add generated fields. Contrast with having just subForm without mergeSubForm, which replaces the generated subForm entirely.",
+          "markdownDescription": "Used in override files to request merging of generated subForm content into the override's subForm.\nWhen set to true, the generated subForm fields will be merged into the override's existing subForm.\nUse this when you want to keep your override's subForm fields AND add generated fields.\nContrast with having just subForm without mergeSubForm, which replaces the generated subForm entirely.",
+          "type": "boolean"
+        },
+        "messageType": {
+          "$ref": "#/definitions/FieldMessageType",
+          "description": "For validator topic fields, specifies the type of message (info, warning, error, recommendation). This helps categorize the severity or nature of validation results.",
+          "markdownDescription": "For validator topic fields, specifies the type of message (info, warning, error, recommendation).\nThis helps categorize the severity or nature of validation results."
+        },
+        "minLength": {
+          "description": "If the field is a string related, the minimum length of the string.",
+          "markdownDescription": "If the field is a string related, the minimum length of the string.",
+          "type": "number"
+        },
+        "minValue": {
+          "description": "If the field is a number, float, or integer, this specifies the minimum value that the field can take.",
+          "markdownDescription": "If the field is a number, float, or integer, this specifies the minimum value that the field can take.",
+          "type": "number"
+        },
+        "mustMatchChoices": {
+          "description": "Specifies whether the data for this field must match the set of defined choices or lookup values.",
+          "markdownDescription": "Specifies whether the data for this field must match the set of defined choices or lookup values.",
+          "type": "boolean"
+        },
+        "newItemPrototype": {
+          "description": "Prototype example of the data structure for new items that are created",
+          "markdownDescription": "Prototype example of the data structure for new items that are created"
+        },
+        "note": {
+          "description": "Any additional English descriptions about notes for this data of this field definition. .note vs. .note2 vs. .note3 are expected to be different \"topics\" for notes.",
+          "markdownDescription": "Any additional English descriptions about notes for this data of this field definition.\n.note vs. .note2 vs. .note3 are expected to be different \"topics\" for notes.",
+          "type": "string"
+        },
+        "note2": {
+          "description": "Any additional English descriptions about notes for this data of this field definition. .note vs. .note2 vs. .note3 are expected to be different \"topics\" for notes.",
+          "markdownDescription": "Any additional English descriptions about notes for this data of this field definition.\n.note vs. .note2 vs. .note3 are expected to be different \"topics\" for notes.",
+          "type": "string"
+        },
+        "note3": {
+          "description": "Any additional English descriptions about notes for this data of this field definition. .note vs. .note2 vs. .note3 are expected to be different \"topics\" for notes.",
+          "markdownDescription": "Any additional English descriptions about notes for this data of this field definition.\n.note vs. .note2 vs. .note3 are expected to be different \"topics\" for notes.",
+          "type": "string"
+        },
+        "noun": {
+          "description": "Human-readable name for the field, which is used in the UI to display the field.",
+          "markdownDescription": "Human-readable name for the field, which is used in the UI to display the field.",
+          "type": "string"
+        },
+        "objectArrayTitleFieldKey": {
+          "description": "If this field references an array of objects, this is the key that maps the array to its corresponding title field.",
+          "markdownDescription": "If this field references an array of objects, this is the key that maps the array to its corresponding title field.",
+          "type": "string"
+        },
+        "objectArrayToSubFieldKey": {
+          "description": "If this field references an array of objects, this is the key that maps the array to its corresponding sub-field.",
+          "markdownDescription": "If this field references an array of objects, this is the key that maps the array to its corresponding sub-field.",
+          "type": "string"
+        },
+        "priority": {
+          "description": "When sorting this field amongst other fields, this is the priority of the field. Lower numbers are sorted first, and higher numbers are sorted last. If two numbers are tied, then fields are alphabetically sorted by their id.",
+          "markdownDescription": "When sorting this field amongst other fields, this is the priority of the field.\nLower numbers are sorted first, and higher numbers are sorted last.\nIf two numbers are tied, then fields are alphabetically sorted by their id.",
+          "type": "number"
+        },
+        "readOnly": {
+          "description": "Whether to display this field as read only.",
+          "markdownDescription": "Whether to display this field as read only.",
+          "type": "boolean"
+        },
+        "retainIfEmptyOrDefault": {
+          "description": "Whether this field should be defined if it's functionally empty (e.g., an empty string or a 0 item array).",
+          "markdownDescription": "Whether this field should be defined if it's functionally empty (e.g., an empty string or a 0 item array).",
+          "type": "boolean"
+        },
+        "samples": {
+          "additionalProperties": {
+            "items": {
+              "$ref": "#/definitions/IFormSample"
+            },
+            "type": "array"
+          },
+          "description": "Specifies a set of specific samples of data values for this field.",
+          "markdownDescription": "Specifies a set of specific samples of data values for this field.",
+          "type": "object"
+        },
+        "step": {
+          "description": "If the field is a range, this describes the standard step between numbers in the range. This is typically used for sliders or other input methods that allow users to select a value within a range. For example, a step of 5 between 0 and 100 would allow values like 0, 5, 10, ..., 100.",
+          "markdownDescription": "If the field is a range, this describes the standard step between numbers in the range.\nThis is typically used for sliders or other input methods that allow users to select a value within a range.\nFor example, a step of 5 between 0 and 100 would allow values like 0, 5, 10, ..., 100.",
+          "type": "number"
+        },
+        "subFields": {
+          "additionalProperties": {
+            "$ref": "#/definitions/IField"
+          },
+          "description": "Describes an override set of subFields for the sub form. This should only be supplied in rare cases.",
+          "markdownDescription": "Describes an override set of subFields for the sub form. This should only be supplied in rare cases.",
+          "type": "object"
+        },
+        "subForm": {
+          "$ref": "#/definitions/IFormDefinition",
+          "description": "If this field references an object (e.g., has a dataType of 16 - object or 15 - object Array), this describes the structure of that object.",
+          "markdownDescription": "If this field references an object (e.g., has a dataType of 16 - object or 15 - object Array), this describes the structure of that object."
+        },
+        "subFormId": {
+          "type": "string"
+        },
+        "suggestedMaxValue": {
+          "description": "If the field is a number, float, or integer, this specifies a soft, recommended maximum value that the field can take.",
+          "markdownDescription": "If the field is a number, float, or integer, this specifies a soft, recommended maximum value that the field can take.",
+          "type": "number"
+        },
+        "suggestedMinValue": {
+          "description": "If the field is a number, float, or integer, this specifies a soft, recommended minimum value that the field can take.",
+          "markdownDescription": "If the field is a number, float, or integer, this specifies a soft, recommended minimum value that the field can take.",
+          "type": "number"
+        },
+        "tags": {
+          "description": "A set of context dependent tag strings that can be used to filter or categorize the field.",
+          "items": {
+            "type": "string"
+          },
+          "markdownDescription": "A set of context dependent tag strings that can be used to filter or categorize the field.",
+          "type": "array"
+        },
+        "technicalDescription": {
+          "description": "Optional human-readable description of technical details of the field - for example, any notes on how the field is persisted in JSON, or other technical details. In practice, this is not shown in tools but is shown in technical documentation.",
+          "markdownDescription": "Optional human-readable description of technical details of the field - for example, any notes\non how the field is persisted in JSON, or other technical details.\nIn practice, this is not shown in tools but is shown in technical documentation.",
+          "type": "string"
+        },
+        "title": {
+          "description": "Optional human-readable title for the field. If the title is functionally equivalent to its Id, the title can be omitted.",
+          "markdownDescription": "Optional human-readable title for the field.\nIf the title is functionally equivalent to its Id, the title can be omitted.",
+          "type": "string"
+        },
+        "validity": {
+          "items": {
+            "$ref": "#/definitions/ICondition"
+          },
+          "type": "array"
+        },
+        "versionDeprecated": {
+          "description": "Optional version that this field was deprecated and no longer supported, maintained, or recommended in the respective object's data structure.",
+          "markdownDescription": "Optional version that this field was deprecated and no longer supported, maintained, or recommended in the respective object's data structure.",
+          "type": "string"
+        },
+        "versionIntroduced": {
+          "description": "Optional version that this field was introduced in the respective object's data structure.",
+          "markdownDescription": "Optional version that this field was introduced in the respective object's data structure.",
+          "type": "string"
+        },
+        "visibility": {
+          "items": {
+            "$ref": "#/definitions/ICondition"
+          },
+          "type": "array"
+        },
+        "visualExperience": {
+          "$ref": "#/definitions/FieldVisualExperience",
+          "description": "Specifies the visual experience for the field.",
+          "markdownDescription": "Specifies the visual experience for the field."
+        }
+      },
+      "required": [
+        "id",
+        "dataType"
+      ],
+      "type": "object"
+    },
+    "IFormDefinition": {
+      "description": "IFormDefinition represents a structured definition of a form that describes a data structure. It includes metadata, fields, dependencies, and other relevant information about the form. This interface is used to define the schema and structure of forms in the dataform system. For example, JSON documents can be represented at the top level as an IFormDefinition.",
+      "markdownDescription": "IFormDefinition represents a structured definition of a form that describes a data structure.\nIt includes metadata, fields, dependencies, and other relevant information about the form.\nThis interface is used to define the schema and structure of forms in the dataform system.\nFor example, JSON documents can be represented at the top level as an IFormDefinition.",
+      "properties": {
+        "customField": {
+          "$ref": "#/definitions/IField",
+          "description": "If this object has an open schema and supports arbitrary fields, this field can be used to define the format of those arbitrary fields.",
+          "markdownDescription": "If this object has an open schema and supports arbitrary fields, this field can be used to define the format of those arbitrary fields."
+        },
+        "dataVersion": {
+          "description": "Optional version of the form definition. This corresponds to the version of the data structure being described, if available.",
+          "markdownDescription": "Optional version of the form definition.\nThis corresponds to the version of the data structure being described, if available.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Optional human-readable description of the form definition. This should provide context and details about the form's purpose and usage.",
+          "markdownDescription": "Optional human-readable description of the form definition.\nThis should provide context and details about the form's purpose and usage.",
+          "type": "string"
+        },
+        "fields": {
+          "description": "Optional list of fields that are part of the form definition. Each field should conform to the IField interface. This is the fundamental structure of the form definition, detailing the data it can contain.",
+          "items": {
+            "$ref": "#/definitions/IField"
+          },
+          "markdownDescription": "Optional list of fields that are part of the form definition.\nEach field should conform to the IField interface.\nThis is the fundamental structure of the form definition, detailing the data it can contain.",
+          "type": "array"
+        },
+        "generatedFromSchema_doNotEdit": {
+          "$ref": "#/definitions/IFormDefinition",
+          "description": "A base definition of the data in this form that can be used as foundation for any annotations or modifications. The generated_doNotEdit and generatedFromSchema_doNotEdit properties are filled out using external build tools, so they should not be modified directly. Rather, if you want to modify, say, a field and its title and description, you should copy that field instance from generated_doNotEdit.fields or generatedFromSchema_doNotEdit.fields into the root .fields property. Any property of the  generated_doNotEdit?: IFormDefinition can be overridden in this way, by duplicating and modifying it into the root IFormDefinition.",
+          "markdownDescription": "A base definition of the data in this form that can be used as foundation for any annotations or modifications.\nThe generated_doNotEdit and generatedFromSchema_doNotEdit properties are filled out using external build tools,\nso they should not be modified directly. Rather, if you want to modify, say, a field and its title and description,\nyou should copy that field instance from generated_doNotEdit.fields or generatedFromSchema_doNotEdit.fields into\nthe root .fields property. Any property of the  generated_doNotEdit?: IFormDefinition can be overridden in this\nway, by duplicating and modifying it into the root IFormDefinition."
+        },
+        "generated_doNotEdit": {
+          "$ref": "#/definitions/IFormDefinition",
+          "description": "A base definition of the data in this form that can be used as foundation for any annotations or modifications. The generated_doNotEdit and generatedFromSchema_doNotEdit properties are filled out using external build tools, so they should not be modified directly. Rather, if you want to modify, say, a field and its title and description, you should copy that field instance from generated_doNotEdit.fields or generatedFromSchema_doNotEdit.fields into the root .fields property. Any property of the  generated_doNotEdit?: IFormDefinition can be overridden in this way, by duplicating and modifying it into the root IFormDefinition.",
+          "markdownDescription": "A base definition of the data in this form that can be used as foundation for any annotations or modifications.\nThe generated_doNotEdit and generatedFromSchema_doNotEdit properties are filled out using external build tools,\nso they should not be modified directly. Rather, if you want to modify, say, a field and its title and description,\nyou should copy that field instance from generated_doNotEdit.fields or generatedFromSchema_doNotEdit.fields into\nthe root .fields property. Any property of the  generated_doNotEdit?: IFormDefinition can be overridden in this\nway, by duplicating and modifying it into the root IFormDefinition."
+        },
+        "id": {
+          "description": "Unique identifier for the form definition. Typically, this will correspond to the identifier of the data structure being described.",
+          "markdownDescription": "Unique identifier for the form definition. Typically, this will correspond to the identifier of the data structure being described.",
+          "type": "string"
+        },
+        "isDeprecated": {
+          "description": "Optional boolean indicating if the form definition is deprecated and no longer recommended for use.",
+          "markdownDescription": "Optional boolean indicating if the form definition is deprecated and no longer recommended for use.",
+          "type": "boolean"
+        },
+        "isExperimental": {
+          "description": "Optional boolean indicating if the form definition is experimental and may change or may be removed in future versions.",
+          "markdownDescription": "Optional boolean indicating if the form definition is experimental and may change or may be removed in future versions.",
+          "type": "boolean"
+        },
+        "isInternal": {
+          "description": "Optional boolean indicating if the form definition is internal and not intended for public use.",
+          "markdownDescription": "Optional boolean indicating if the form definition is internal and not intended for public use.",
+          "type": "boolean"
+        },
+        "note": {
+          "description": "Any additional English descriptions about notes for this data of this form definition. .note vs. .note2 vs. .note3 are expected to be different \"topics\" for notes.",
+          "markdownDescription": "Any additional English descriptions about notes for this data of this form definition.\n.note vs. .note2 vs. .note3 are expected to be different \"topics\" for notes.",
+          "type": "string"
+        },
+        "note2": {
+          "description": "Any additional English descriptions about notes for this data of this form definition. .note vs. .note2 vs. .note3 are expected to be different \"topics\" for notes.",
+          "markdownDescription": "Any additional English descriptions about notes for this data of this form definition.\n.note vs. .note2 vs. .note3 are expected to be different \"topics\" for notes.",
+          "type": "string"
+        },
+        "note3": {
+          "description": "Any additional English descriptions about notes for this data of this form definition. .note vs. .note2 vs. .note3 are expected to be different \"topics\" for notes.",
+          "markdownDescription": "Any additional English descriptions about notes for this data of this form definition.\n.note vs. .note2 vs. .note3 are expected to be different \"topics\" for notes.",
+          "type": "string"
+        },
+        "requiredExperiment": {
+          "description": "Optional string indicating the name of the experiment that this form definition is associated with.",
+          "markdownDescription": "Optional string indicating the name of the experiment that this form definition is associated with.",
+          "type": "string"
+        },
+        "requires": {
+          "description": "Optional list of dependencies that this form definition requires. The concept of \"requires\" is context-specific and can vary based on the form's purpose.",
+          "items": {
+            "$ref": "#/definitions/IFormDependency"
+          },
+          "markdownDescription": "Optional list of dependencies that this form definition requires.\nThe concept of \"requires\" is context-specific and can vary based on the form's purpose.",
+          "type": "array"
+        },
+        "restrictions": {
+          "description": "Optional list of dependencies that this form definition requires. The concept of \"restrictions\" is context-specific and can vary based on the form's purpose.",
+          "items": {
+            "$ref": "#/definitions/IFormDependency"
+          },
+          "markdownDescription": "Optional list of dependencies that this form definition requires.\nThe concept of \"restrictions\" is context-specific and can vary based on the form's purpose.",
+          "type": "array"
+        },
+        "samples": {
+          "additionalProperties": {
+            "items": {
+              "$ref": "#/definitions/IFormSample"
+            },
+            "type": "array"
+          },
+          "description": "An optional set of samples that can be used to illustrate the form definition.",
+          "markdownDescription": "An optional set of samples that can be used to illustrate the form definition.",
+          "type": "object"
+        },
+        "scalarField": {
+          "$ref": "#/definitions/IField",
+          "description": "In some schemas, this object may be represented with a simpler scalar value, like a number or a string. This field provides a definition for what the simpler \"scalar\" representation should be.",
+          "markdownDescription": "In some schemas, this object may be represented with a simpler scalar value, like a number or a string. This field\nprovides a definition for what the simpler \"scalar\" representation should be."
+        },
+        "scalarFieldUpgradeName": {
+          "description": "In some schemas, this object may be represented with a simpler scalar value, like a number or a string. This field identifies a subfield that provides schema representation of that scalar value. For example, in some schemas you can represent a object reference as either {  \"model\": \"geometry:skeleton\" } OR {  \"model\": { \"id\": \"geometry:skeleton\", \"priority\" : 3 } } In this example a form representing the structure of the { id, priority } model reference object, the scalarFieldUpgradeName would be \"id\" since that field is the scalar representation of the object.",
+          "markdownDescription": "In some schemas, this object may be represented with a simpler scalar value, like a number or a string. This field\nidentifies a subfield that provides schema representation of that scalar value.\nFor example, in some schemas you can represent a object reference as either\n{\n \"model\": \"geometry:skeleton\"\n}\nOR\n{\n \"model\": { \"id\": \"geometry:skeleton\", \"priority\" : 3 }\n}\nIn this example a form representing the structure of the { id, priority } model reference object, the scalarFieldUpgradeName would be \"id\"\nsince that field is the scalar representation of the object.",
+          "type": "string"
+        },
+        "strictAdditionalProperties": {
+          "description": "Controls whether the validator should flag unexpected properties that are not defined in the form's fields. If true, the validator will report any properties that are not in the schema as validation errors. If false or undefined, unexpected properties will be allowed (default behavior for Minecraft content).",
+          "markdownDescription": "Controls whether the validator should flag unexpected properties that are not defined in the form's fields.\nIf true, the validator will report any properties that are not in the schema as validation errors.\nIf false or undefined, unexpected properties will be allowed (default behavior for Minecraft content).",
+          "type": "boolean"
+        },
+        "summarizer": {
+          "$ref": "#/definitions/ISummarizer",
+          "description": "Optional summarizer definition for generating natural language descriptions. When present, a summary card will be displayed at the top of the form showing a human-readable description of the current data values.\n\nSummarizers can be:\n- Inline: Full ISummarizer object embedded in the form\n- External: Loaded from a .summarizer.json file alongside the form",
+          "examples": [
+            {
+              "summarizer": {
+                "phrases": [
+                  {
+                    "tokens": [
+                      {
+                        "text": "has ",
+                        "type": "literal"
+                      },
+                      {
+                        "field": "max",
+                        "type": "value"
+                      },
+                      {
+                        "text": " HP",
+                        "type": "literal"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "markdownDescription": "Optional summarizer definition for generating natural language descriptions.\nWhen present, a summary card will be displayed at the top of the form showing\na human-readable description of the current data values.\n\nSummarizers can be:\n- Inline: Full ISummarizer object embedded in the form\n- External: Loaded from a .summarizer.json file alongside the form"
+        },
+        "summarizerId": {
+          "description": "ID of an external summarizer definition file. If provided, the summarizer will be loaded from this path. Format: \\\"category/name\\\" - always relative to the forms folder. Does NOT include the .summarizer.json suffix.",
+          "markdownDescription": "ID of an external summarizer definition file.\nIf provided, the summarizer will be loaded from this path.\nFormat: \\\"category/name\\\" - always relative to the forms folder.\nDoes NOT include the .summarizer.json suffix.",
+          "type": "string"
+        },
+        "tags": {
+          "description": "A set of topical annotations for this form definition.",
+          "items": {
+            "type": "string"
+          },
+          "markdownDescription": "A set of topical annotations for this form definition.",
+          "type": "array"
+        },
+        "technicalDescription": {
+          "description": "Optional human-readable description of technical details of the form definition. In practice, this is not shown in tools but is shown in technical documentation. This should provide context and details about the form's purpose and usage.",
+          "markdownDescription": "Optional human-readable description of technical details of the form definition.\nIn practice, this is not shown in tools but is shown in technical documentation.\nThis should provide context and details about the form's purpose and usage.",
+          "type": "string"
+        },
+        "title": {
+          "description": "Optional human-readable name for the form definition.",
+          "markdownDescription": "Optional human-readable name for the form definition.",
+          "type": "string"
+        },
+        "versionDeprecated": {
+          "description": "For the data object being described, the version that this schema was no longer maintained or supported.",
+          "markdownDescription": "For the data object being described, the version that this schema was no longer maintained or supported.",
+          "type": "string"
+        },
+        "versionIntroduced": {
+          "description": "For the data object being described, the version that this schema was introduced in.",
+          "markdownDescription": "For the data object being described, the version that this schema was introduced in.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "fields"
+      ],
+      "type": "object"
+    },
+    "IFormDependency": {
+      "properties": {
+        "description": {
+          "description": "Optional human-readable description of the dependency. This can help clarify the purpose and usage of the dependency.",
+          "markdownDescription": "Optional human-readable description of the dependency.\nThis can help clarify the purpose and usage of the dependency.",
+          "type": "string"
+        },
+        "id": {
+          "description": "Unique identifier for the dependency. This should correspond to the identifier of the data structure or form that this dependency relates to.",
+          "markdownDescription": "Unique identifier for the dependency.\nThis should correspond to the identifier of the data structure or form that this dependency relates to.",
+          "type": "string"
+        },
+        "type": {
+          "description": "A context-specific description of the type of dependency.",
+          "markdownDescription": "A context-specific description of the type of dependency.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ],
+      "type": "object"
+    },
+    "IFormSample": {
+      "properties": {
+        "content": {
+          "anyOf": [
+            {
+              "type": "object"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "boolean"
+            }
+          ],
+          "description": "Content of the sample, which can be a JSON object, string, number, or boolean.",
+          "markdownDescription": "Content of the sample, which can be a JSON object, string, number, or boolean."
+        },
+        "path": {
+          "description": "Path where the sample is exhibited, or simple description of the sample.",
+          "markdownDescription": "Path where the sample is exhibited, or simple description of the sample.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "content"
+      ],
+      "type": "object"
+    },
+    "IGroupToken": {
+      "description": "Group token: groups tokens together, useful for shared visibility.",
+      "markdownDescription": "Group token: groups tokens together, useful for shared visibility.",
+      "properties": {
+        "effects": {
+          "$ref": "#/definitions/ISummarizerEffects",
+          "description": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement. The summarizer always produces valid plain text regardless of effects.",
+          "examples": [
+            {
+              "effects": {
+                "emphasis": "strong",
+                "icon": "❤️",
+                "sentiment": "positive"
+              },
+              "field": "max",
+              "type": "value"
+            }
+          ],
+          "markdownDescription": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement.\nThe summarizer always produces valid plain text regardless of effects."
+        },
+        "priority": {
+          "default": 2,
+          "description": "Priority for truncation when space is limited. Lower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "markdownDescription": "Priority for truncation when space is limited.\nLower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "type": "number"
+        },
+        "tokens": {
+          "description": "Tokens in this group.",
+          "items": {
+            "$ref": "#/definitions/ISummarizerToken"
+          },
+          "markdownDescription": "Tokens in this group.",
+          "type": "array"
+        },
+        "type": {
+          "const": "group",
+          "description": "The type of token. Determines how the token is evaluated.",
+          "markdownDescription": "The type of token. Determines how the token is evaluated.",
+          "type": "string"
+        },
+        "visibility": {
+          "description": "Optional conditions that must ALL be true for this token to appear. Uses the same ICondition format as field visibility in forms.",
+          "items": {
+            "$ref": "#/definitions/ICondition"
+          },
+          "markdownDescription": "Optional conditions that must ALL be true for this token to appear.\nUses the same ICondition format as field visibility in forms.",
+          "type": "array"
+        }
+      },
+      "required": [
+        "tokens",
+        "type"
+      ],
+      "type": "object"
+    },
+    "IListItem": {
+      "description": "A single item in a list token.",
+      "markdownDescription": "A single item in a list token.",
+      "properties": {
+        "tokens": {
+          "description": "Tokens that make up this list item.",
+          "items": {
+            "$ref": "#/definitions/ISummarizerToken"
+          },
+          "markdownDescription": "Tokens that make up this list item.",
+          "type": "array"
+        },
+        "visibility": {
+          "description": "Conditions for this item to be included in the list.",
+          "items": {
+            "$ref": "#/definitions/ICondition"
+          },
+          "markdownDescription": "Conditions for this item to be included in the list.",
+          "type": "array"
+        }
+      },
+      "required": [
+        "tokens"
+      ],
+      "type": "object"
+    },
+    "IListToken": {
+      "description": "List token: renders items as a grammatically correct list.\n\nAutomatically handles:\n- Empty list: outputs emptyText or nothing\n- Single item: just the item\n- Two items: \"A and B\"\n- Three+ items: \"A, B, and C\"\n\nOnly items whose tokens produce non-empty output are included.",
+      "examples": [
+        {
+          "emptyText": "has no special movement abilities",
+          "items": [
+            {
+              "tokens": [
+                {
+                  "text": "fly",
+                  "type": "literal"
+                }
+              ],
+              "visibility": [
+                {
+                  "comparison": "=",
+                  "field": "can_fly",
+                  "value": true
+                }
+              ]
+            },
+            {
+              "tokens": [
+                {
+                  "text": "swim",
+                  "type": "literal"
+                }
+              ],
+              "visibility": [
+                {
+                  "comparison": "=",
+                  "field": "can_swim",
+                  "value": true
+                }
+              ]
+            },
+            {
+              "tokens": [
+                {
+                  "text": "teleport",
+                  "type": "literal"
+                }
+              ],
+              "visibility": [
+                {
+                  "comparison": "=",
+                  "field": "can_teleport",
+                  "value": true
+                }
+              ]
+            }
+          ],
+          "prefix": [
+            {
+              "text": "can ",
+              "type": "literal"
+            }
+          ],
+          "type": "list"
+        }
+      ],
+      "markdownDescription": "List token: renders items as a grammatically correct list.\n\nAutomatically handles:\n- Empty list: outputs emptyText or nothing\n- Single item: just the item\n- Two items: \"A and B\"\n- Three+ items: \"A, B, and C\"\n\nOnly items whose tokens produce non-empty output are included.",
+      "properties": {
+        "effects": {
+          "$ref": "#/definitions/ISummarizerEffects",
+          "description": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement. The summarizer always produces valid plain text regardless of effects.",
+          "examples": [
+            {
+              "effects": {
+                "emphasis": "strong",
+                "icon": "❤️",
+                "sentiment": "positive"
+              },
+              "field": "max",
+              "type": "value"
+            }
+          ],
+          "markdownDescription": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement.\nThe summarizer always produces valid plain text regardless of effects."
+        },
+        "emptyText": {
+          "description": "Text to output when no items are visible. If not provided, the entire list token outputs nothing.",
+          "markdownDescription": "Text to output when no items are visible.\nIf not provided, the entire list token outputs nothing.",
+          "type": "string"
+        },
+        "finalSeparator": {
+          "default": ", and ",
+          "description": "Separator before the last item when there are 3+ items.",
+          "markdownDescription": "Separator before the last item when there are 3+ items.",
+          "type": "string"
+        },
+        "items": {
+          "description": "Each item is an object with optional visibility and required tokens.",
+          "items": {
+            "$ref": "#/definitions/IListItem"
+          },
+          "markdownDescription": "Each item is an object with optional visibility and required tokens.",
+          "type": "array"
+        },
+        "prefix": {
+          "description": "Tokens to output before the list (only if list is non-empty).",
+          "items": {
+            "$ref": "#/definitions/ISummarizerToken"
+          },
+          "markdownDescription": "Tokens to output before the list (only if list is non-empty).",
+          "type": "array"
+        },
+        "priority": {
+          "default": 2,
+          "description": "Priority for truncation when space is limited. Lower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "markdownDescription": "Priority for truncation when space is limited.\nLower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "type": "number"
+        },
+        "separator": {
+          "default": ", ",
+          "description": "Separator between items (except the last two).",
+          "markdownDescription": "Separator between items (except the last two).",
+          "type": "string"
+        },
+        "suffix": {
+          "description": "Tokens to output after the list (only if list is non-empty).",
+          "items": {
+            "$ref": "#/definitions/ISummarizerToken"
+          },
+          "markdownDescription": "Tokens to output after the list (only if list is non-empty).",
+          "type": "array"
+        },
+        "twoItemSeparator": {
+          "default": " and ",
+          "description": "Separator when there are exactly 2 items.",
+          "markdownDescription": "Separator when there are exactly 2 items.",
+          "type": "string"
+        },
+        "type": {
+          "const": "list",
+          "description": "The type of token. Determines how the token is evaluated.",
+          "markdownDescription": "The type of token. Determines how the token is evaluated.",
+          "type": "string"
+        },
+        "visibility": {
+          "description": "Optional conditions that must ALL be true for this token to appear. Uses the same ICondition format as field visibility in forms.",
+          "items": {
+            "$ref": "#/definitions/ICondition"
+          },
+          "markdownDescription": "Optional conditions that must ALL be true for this token to appear.\nUses the same ICondition format as field visibility in forms.",
+          "type": "array"
+        }
+      },
+      "required": [
+        "items",
+        "type"
+      ],
+      "type": "object"
+    },
+    "ILiteralToken": {
+      "description": "Literal token: outputs static text.",
+      "examples": [
+        {
+          "text": "has ",
+          "type": "literal"
+        },
+        {
+          "priority": 3,
+          "text": " (that's incredibly powerful!)",
+          "type": "literal",
+          "visibility": [
+            {
+              "comparison": ">",
+              "field": "damage",
+              "value": 50
+            }
+          ]
+        }
+      ],
+      "markdownDescription": "Literal token: outputs static text.",
+      "properties": {
+        "effects": {
+          "$ref": "#/definitions/ISummarizerEffects",
+          "description": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement. The summarizer always produces valid plain text regardless of effects.",
+          "examples": [
+            {
+              "effects": {
+                "emphasis": "strong",
+                "icon": "❤️",
+                "sentiment": "positive"
+              },
+              "field": "max",
+              "type": "value"
+            }
+          ],
+          "markdownDescription": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement.\nThe summarizer always produces valid plain text regardless of effects."
+        },
+        "priority": {
+          "default": 2,
+          "description": "Priority for truncation when space is limited. Lower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "markdownDescription": "Priority for truncation when space is limited.\nLower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "type": "number"
+        },
+        "text": {
+          "description": "The literal text to output.",
+          "markdownDescription": "The literal text to output.",
+          "type": "string"
+        },
+        "type": {
+          "const": "literal",
+          "description": "The type of token. Determines how the token is evaluated.",
+          "markdownDescription": "The type of token. Determines how the token is evaluated.",
+          "type": "string"
+        },
+        "visibility": {
+          "description": "Optional conditions that must ALL be true for this token to appear. Uses the same ICondition format as field visibility in forms.",
+          "items": {
+            "$ref": "#/definitions/ICondition"
+          },
+          "markdownDescription": "Optional conditions that must ALL be true for this token to appear.\nUses the same ICondition format as field visibility in forms.",
+          "type": "array"
+        }
+      },
+      "required": [
+        "text",
+        "type"
+      ],
+      "type": "object"
+    },
+    "IPluralToken": {
+      "description": "Plural token: handles singular/plural forms based on a count.",
+      "examples": [
+        {
+          "countField": "item_count",
+          "includeCount": true,
+          "plural": [
+            {
+              "text": "items",
+              "type": "literal"
+            }
+          ],
+          "singular": [
+            {
+              "text": "item",
+              "type": "literal"
+            }
+          ],
+          "type": "plural"
+        },
+        {
+          "countField": "heart_count",
+          "includeCount": false,
+          "plural": [
+            {
+              "text": "hearts",
+              "type": "literal"
+            }
+          ],
+          "singular": [
+            {
+              "text": "heart",
+              "type": "literal"
+            }
+          ],
+          "type": "plural",
+          "zero": [
+            {
+              "text": "no hearts",
+              "type": "literal"
+            }
+          ]
+        }
+      ],
+      "markdownDescription": "Plural token: handles singular/plural forms based on a count.",
+      "properties": {
+        "countField": {
+          "description": "Field containing the count value.",
+          "markdownDescription": "Field containing the count value.",
+          "type": "string"
+        },
+        "effects": {
+          "$ref": "#/definitions/ISummarizerEffects",
+          "description": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement. The summarizer always produces valid plain text regardless of effects.",
+          "examples": [
+            {
+              "effects": {
+                "emphasis": "strong",
+                "icon": "❤️",
+                "sentiment": "positive"
+              },
+              "field": "max",
+              "type": "value"
+            }
+          ],
+          "markdownDescription": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement.\nThe summarizer always produces valid plain text regardless of effects."
+        },
+        "includeCount": {
+          "default": true,
+          "description": "Whether to prepend the count value.",
+          "markdownDescription": "Whether to prepend the count value.",
+          "type": "boolean"
+        },
+        "plural": {
+          "description": "Tokens for plural form (count !== 1).",
+          "items": {
+            "$ref": "#/definitions/ISummarizerToken"
+          },
+          "markdownDescription": "Tokens for plural form (count !== 1).",
+          "type": "array"
+        },
+        "priority": {
+          "default": 2,
+          "description": "Priority for truncation when space is limited. Lower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "markdownDescription": "Priority for truncation when space is limited.\nLower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "type": "number"
+        },
+        "singular": {
+          "description": "Tokens for singular form (count === 1).",
+          "items": {
+            "$ref": "#/definitions/ISummarizerToken"
+          },
+          "markdownDescription": "Tokens for singular form (count === 1).",
+          "type": "array"
+        },
+        "type": {
+          "const": "plural",
+          "description": "The type of token. Determines how the token is evaluated.",
+          "markdownDescription": "The type of token. Determines how the token is evaluated.",
+          "type": "string"
+        },
+        "visibility": {
+          "description": "Optional conditions that must ALL be true for this token to appear. Uses the same ICondition format as field visibility in forms.",
+          "items": {
+            "$ref": "#/definitions/ICondition"
+          },
+          "markdownDescription": "Optional conditions that must ALL be true for this token to appear.\nUses the same ICondition format as field visibility in forms.",
+          "type": "array"
+        },
+        "zero": {
+          "description": "Tokens for zero count. If not provided, uses plural.",
+          "items": {
+            "$ref": "#/definitions/ISummarizerToken"
+          },
+          "markdownDescription": "Tokens for zero count. If not provided, uses plural.",
+          "type": "array"
+        }
+      },
+      "required": [
+        "countField",
+        "plural",
+        "singular",
+        "type"
+      ],
+      "type": "object"
+    },
+    "ISampleToken": {
+      "description": "Sample token: pulls a sample value from form.json to use as a reference.\n\nThis encourages AI to create rich comparisons using real examples from the data. The form.json can contain samples like: ```json {   \"samples\": {     \"entities/warden\": { \"max\": 500, \"value\": 500 },     \"entities/zombie\": { \"max\": 20, \"value\": 20 }   } } ```",
+      "examples": [
+        {
+          "field": "max",
+          "samplePath": "entities/warden",
+          "template": [
+            {
+              "text": "like a Warden (",
+              "type": "literal"
+            },
+            {
+              "field": "__sampleValue",
+              "type": "value"
+            },
+            {
+              "text": " HP)",
+              "type": "literal"
+            }
+          ],
+          "type": "sample"
+        }
+      ],
+      "markdownDescription": "Sample token: pulls a sample value from form.json to use as a reference.\n\nThis encourages AI to create rich comparisons using real examples from the data.\nThe form.json can contain samples like:\n```json\n{\n  \"samples\": {\n    \"entities/warden\": { \"max\": 500, \"value\": 500 },\n    \"entities/zombie\": { \"max\": 20, \"value\": 20 }\n  }\n}\n```",
+      "properties": {
+        "effects": {
+          "$ref": "#/definitions/ISummarizerEffects",
+          "description": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement. The summarizer always produces valid plain text regardless of effects.",
+          "examples": [
+            {
+              "effects": {
+                "emphasis": "strong",
+                "icon": "❤️",
+                "sentiment": "positive"
+              },
+              "field": "max",
+              "type": "value"
+            }
+          ],
+          "markdownDescription": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement.\nThe summarizer always produces valid plain text regardless of effects."
+        },
+        "field": {
+          "description": "Field within the sample to extract.",
+          "markdownDescription": "Field within the sample to extract.",
+          "type": "string"
+        },
+        "humanifySampleName": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/SummarizerHumanifyType"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "default": "minecraft",
+          "description": "Humanify algorithm for the sample name (derived from samplePath).",
+          "markdownDescription": "Humanify algorithm for the sample name (derived from samplePath)."
+        },
+        "priority": {
+          "default": 2,
+          "description": "Priority for truncation when space is limited. Lower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "markdownDescription": "Priority for truncation when space is limited.\nLower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "type": "number"
+        },
+        "samplePath": {
+          "description": "Path to the sample in the form's samples collection. e.g., \"entities/warden\", \"items/diamond_sword\"",
+          "markdownDescription": "Path to the sample in the form's samples collection.\ne.g., \"entities/warden\", \"items/diamond_sword\"",
+          "type": "string"
+        },
+        "template": {
+          "description": "Tokens to output. Use { \"type\": \"value\", \"field\": \"__sampleValue\" } to insert the extracted sample value.",
+          "items": {
+            "$ref": "#/definitions/ISummarizerToken"
+          },
+          "markdownDescription": "Tokens to output. Use { \"type\": \"value\", \"field\": \"__sampleValue\" }\nto insert the extracted sample value.",
+          "type": "array"
+        },
+        "type": {
+          "const": "sample",
+          "description": "The type of token. Determines how the token is evaluated.",
+          "markdownDescription": "The type of token. Determines how the token is evaluated.",
+          "type": "string"
+        },
+        "visibility": {
+          "description": "Optional conditions that must ALL be true for this token to appear. Uses the same ICondition format as field visibility in forms.",
+          "items": {
+            "$ref": "#/definitions/ICondition"
+          },
+          "markdownDescription": "Optional conditions that must ALL be true for this token to appear.\nUses the same ICondition format as field visibility in forms.",
+          "type": "array"
+        }
+      },
+      "required": [
+        "field",
+        "samplePath",
+        "template",
+        "type"
+      ],
+      "type": "object"
+    },
+    "ISimpleReference": {
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "iconImage": {
+          "type": "string"
+        },
+        "id": {
+          "type": [
+            "string",
+            "number",
+            "boolean"
+          ]
+        },
+        "isDeprecated": {
+          "type": "boolean"
+        },
+        "title": {
+          "type": "string"
+        },
+        "versionDeprecated": {
+          "type": "string"
+        },
+        "versionIntroduced": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ],
+      "type": "object"
+    },
+    "ISummarizer": {
+      "description": "The main summarizer definition.\n\nA summarizer contains phrases that are evaluated against data to produce natural language descriptions.\n\n## Complete Example\n\n```json {   \"id\": \"minecraft_projectile\",   \"intent\": \"Describe projectile behavior and combat characteristics\",   \"description\": \"Summarizes how a projectile entity behaves when fired\",\n\n  \"phrases\": [     {       \"id\": \"damage\",       \"description\": \"How much damage the projectile deals\",       \"priority\": 1,       \"visibility\": [{ \"field\": \"power\", \"comparison\": \"defined\" }],       \"tokens\": [         { \"type\": \"literal\", \"text\": \"deals \" },         {           \"type\": \"switch\",           \"cases\": [             {               \"conditions\": [{ \"field\": \"power\", \"comparison\": \">\", \"value\": 10 }],               \"tokens\": [{ \"type\": \"literal\", \"text\": \"devastating damage\" }]             },             {               \"conditions\": [{ \"field\": \"power\", \"comparison\": \">\", \"value\": 5 }],               \"tokens\": [{ \"type\": \"literal\", \"text\": \"significant damage\" }]             }           ],           \"default\": [{ \"type\": \"literal\", \"text\": \"light damage\" }]         },         { \"type\": \"literal\", \"text\": \" on impact\" }       ]     },     {       \"id\": \"special_effects\",       \"description\": \"Special effects when hitting a target\",       \"priority\": 2,       \"tokens\": [         {           \"type\": \"list\",           \"items\": [             {               \"visibility\": [{ \"field\": \"catch_fire\", \"comparison\": \"=\", \"value\": true }],               \"tokens\": [{ \"type\": \"literal\", \"text\": \"sets targets on fire\" }]             },             {               \"visibility\": [{ \"field\": \"lightning\", \"comparison\": \"=\", \"value\": true }],               \"tokens\": [{ \"type\": \"literal\", \"text\": \"summons lightning\" }]             },             {               \"visibility\": [{ \"field\": \"knockback\", \"comparison\": \"=\", \"value\": true }],               \"tokens\": [{ \"type\": \"literal\", \"text\": \"knocks back targets\" }]             }           ],           \"emptyText\": \"\"         }       ]     }   ],\n\n  \"references\": {     \"arrow_damage\": { \"value\": 2, \"label\": \"a standard Arrow\" },     \"trident_damage\": { \"value\": 9, \"label\": \"a Trident\" }   },\n\n  \"examples\": [     {       \"description\": \"Powerful fire projectile\",       \"input\": { \"power\": 15, \"catch_fire\": true, \"lightning\": false, \"knockback\": true },       \"output\": [\"deals devastating damage on impact\", \"sets targets on fire and knocks back targets\"]     }   ] } ```",
+      "markdownDescription": "The main summarizer definition.\n\nA summarizer contains phrases that are evaluated against data to produce\nnatural language descriptions.\n\n## Complete Example\n\n```json\n{\n  \"id\": \"minecraft_projectile\",\n  \"intent\": \"Describe projectile behavior and combat characteristics\",\n  \"description\": \"Summarizes how a projectile entity behaves when fired\",\n\n  \"phrases\": [\n    {\n      \"id\": \"damage\",\n      \"description\": \"How much damage the projectile deals\",\n      \"priority\": 1,\n      \"visibility\": [{ \"field\": \"power\", \"comparison\": \"defined\" }],\n      \"tokens\": [\n        { \"type\": \"literal\", \"text\": \"deals \" },\n        {\n          \"type\": \"switch\",\n          \"cases\": [\n            {\n              \"conditions\": [{ \"field\": \"power\", \"comparison\": \">\", \"value\": 10 }],\n              \"tokens\": [{ \"type\": \"literal\", \"text\": \"devastating damage\" }]\n            },\n            {\n              \"conditions\": [{ \"field\": \"power\", \"comparison\": \">\", \"value\": 5 }],\n              \"tokens\": [{ \"type\": \"literal\", \"text\": \"significant damage\" }]\n            }\n          ],\n          \"default\": [{ \"type\": \"literal\", \"text\": \"light damage\" }]\n        },\n        { \"type\": \"literal\", \"text\": \" on impact\" }\n      ]\n    },\n    {\n      \"id\": \"special_effects\",\n      \"description\": \"Special effects when hitting a target\",\n      \"priority\": 2,\n      \"tokens\": [\n        {\n          \"type\": \"list\",\n          \"items\": [\n            {\n              \"visibility\": [{ \"field\": \"catch_fire\", \"comparison\": \"=\", \"value\": true }],\n              \"tokens\": [{ \"type\": \"literal\", \"text\": \"sets targets on fire\" }]\n            },\n            {\n              \"visibility\": [{ \"field\": \"lightning\", \"comparison\": \"=\", \"value\": true }],\n              \"tokens\": [{ \"type\": \"literal\", \"text\": \"summons lightning\" }]\n            },\n            {\n              \"visibility\": [{ \"field\": \"knockback\", \"comparison\": \"=\", \"value\": true }],\n              \"tokens\": [{ \"type\": \"literal\", \"text\": \"knocks back targets\" }]\n            }\n          ],\n          \"emptyText\": \"\"\n        }\n      ]\n    }\n  ],\n\n  \"references\": {\n    \"arrow_damage\": { \"value\": 2, \"label\": \"a standard Arrow\" },\n    \"trident_damage\": { \"value\": 9, \"label\": \"a Trident\" }\n  },\n\n  \"examples\": [\n    {\n      \"description\": \"Powerful fire projectile\",\n      \"input\": { \"power\": 15, \"catch_fire\": true, \"lightning\": false, \"knockback\": true },\n      \"output\": [\"deals devastating damage on impact\", \"sets targets on fire and knocks back targets\"]\n    }\n  ]\n}\n```",
+      "properties": {
+        "description": {
+          "description": "Detailed description of the summarizer's purpose and approach.",
+          "markdownDescription": "Detailed description of the summarizer's purpose and approach.",
+          "type": "string"
+        },
+        "examples": {
+          "description": "Example input/output pairs for AI learning and validation. AI should study these to understand the expected style and detail level.\n\n## Style Guide for Examples\n\n- Cover edge cases (very high, very low, typical values)\n- Show how comparisons should read\n- Demonstrate proper grammar for lists\n- Include examples with multiple phrases",
+          "items": {
+            "$ref": "#/definitions/ISummarizerExample"
+          },
+          "markdownDescription": "Example input/output pairs for AI learning and validation.\nAI should study these to understand the expected style and detail level.\n\n## Style Guide for Examples\n\n- Cover edge cases (very high, very low, typical values)\n- Show how comparisons should read\n- Demonstrate proper grammar for lists\n- Include examples with multiple phrases",
+          "type": "array"
+        },
+        "id": {
+          "description": "Unique identifier for this summarizer. Should match the form ID it describes (e.g., \"minecraft_health\").",
+          "markdownDescription": "Unique identifier for this summarizer.\nShould match the form ID it describes (e.g., \"minecraft_health\").",
+          "type": "string"
+        },
+        "intent": {
+          "description": "High-level intent of this summarizer. Helps AI understand what aspects of the data to focus on.",
+          "markdownDescription": "High-level intent of this summarizer.\nHelps AI understand what aspects of the data to focus on.",
+          "type": "string"
+        },
+        "phrases": {
+          "description": "The phrases that this summarizer can generate. Each phrase is evaluated independently and may or may not produce output based on the data and visibility conditions.",
+          "items": {
+            "$ref": "#/definitions/ISummarizerPhrase"
+          },
+          "markdownDescription": "The phrases that this summarizer can generate.\nEach phrase is evaluated independently and may or may not produce output\nbased on the data and visibility conditions.",
+          "type": "array"
+        },
+        "styleNotes": {
+          "description": "Style notes for AI generating or modifying this summarizer. Can include tone preferences, vocabulary choices, etc.",
+          "markdownDescription": "Style notes for AI generating or modifying this summarizer.\nCan include tone preferences, vocabulary choices, etc.",
+          "type": "string"
+        },
+        "version": {
+          "default": "1.0",
+          "description": "Version of the summarizer format.",
+          "markdownDescription": "Version of the summarizer format.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "phrases"
+      ],
+      "type": "object"
+    },
+    "ISummarizerEffects": {
+      "description": "Visual effects that can be applied to tokens for richer display.\n\nEffects are OPTIONAL and purely for enhanced rendering. The summarizer will always produce valid plain text output regardless of effects.\n\n## Design Philosophy\n\nEffects use SEMANTIC values (positive/negative, strong/subtle) rather than literal styling (red, bold) so that:\n- They adapt to light/dark themes\n- They work with accessibility requirements\n- They degrade gracefully to plain text\n\n## When to Use Effects\n\n- **emphasis: \"strong\"** - For key values you want to stand out\n- **emphasis: \"subtle\"** - For parenthetical context or units\n- **sentiment: \"positive\"** - High health, good stats, buffs\n- **sentiment: \"negative\"** - Low health, weaknesses, debuffs\n- **sentiment: \"warning\"** - Dangerous abilities, caution needed\n- **badge: true** - For categories, tags, or short labels\n- **icon** - For visual flair (emoji work well)",
+      "examples": [
+        {
+          "effects": {
+            "emphasis": "strong",
+            "icon": "❤️",
+            "sentiment": "positive"
+          },
+          "field": "max",
+          "type": "value"
+        }
+      ],
+      "markdownDescription": "Visual effects that can be applied to tokens for richer display.\n\nEffects are OPTIONAL and purely for enhanced rendering. The summarizer\nwill always produce valid plain text output regardless of effects.\n\n## Design Philosophy\n\nEffects use SEMANTIC values (positive/negative, strong/subtle) rather than\nliteral styling (red, bold) so that:\n- They adapt to light/dark themes\n- They work with accessibility requirements\n- They degrade gracefully to plain text\n\n## When to Use Effects\n\n- **emphasis: \"strong\"** - For key values you want to stand out\n- **emphasis: \"subtle\"** - For parenthetical context or units\n- **sentiment: \"positive\"** - High health, good stats, buffs\n- **sentiment: \"negative\"** - Low health, weaknesses, debuffs\n- **sentiment: \"warning\"** - Dangerous abilities, caution needed\n- **badge: true** - For categories, tags, or short labels\n- **icon** - For visual flair (emoji work well)",
+      "properties": {
+        "badge": {
+          "default": false,
+          "description": "Render as a badge/pill shape. Good for short categories or tags like \"ranged\", \"explosive\", \"boss\".",
+          "markdownDescription": "Render as a badge/pill shape.\nGood for short categories or tags like \"ranged\", \"explosive\", \"boss\".",
+          "type": "boolean"
+        },
+        "emphasis": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/SummarizerEmphasis"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "default": "normal",
+          "description": "Emphasis level for the token.",
+          "markdownDescription": "Emphasis level for the token."
+        },
+        "icon": {
+          "description": "Optional icon to display before the token text. Can be an emoji (❤️, ⚔️, 🏃) or an icon identifier.",
+          "markdownDescription": "Optional icon to display before the token text.\nCan be an emoji (❤️, ⚔️, 🏃) or an icon identifier.",
+          "type": "string"
+        },
+        "iconPosition": {
+          "default": "before",
+          "description": "Position of the icon relative to the text.",
+          "enum": [
+            "before",
+            "after"
+          ],
+          "markdownDescription": "Position of the icon relative to the text.",
+          "type": "string"
+        },
+        "role": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/SummarizerRole"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "default": "text",
+          "description": "Semantic role for consistent styling.",
+          "markdownDescription": "Semantic role for consistent styling."
+        },
+        "sentiment": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/SummarizerSentiment"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "default": "neutral",
+          "description": "Semantic sentiment for color-coding.",
+          "markdownDescription": "Semantic sentiment for color-coding."
+        }
+      },
+      "type": "object"
+    },
+    "ISummarizerExample": {
+      "description": "An example input/output pair for AI training and validation.",
+      "examples": [
+        {
+          "description": "High health entity",
+          "input": {
+            "max": 500,
+            "value": 500
+          },
+          "output": "has god-tier health (500 HP, tougher than an Ender Dragon)"
+        }
+      ],
+      "markdownDescription": "An example input/output pair for AI training and validation.",
+      "properties": {
+        "description": {
+          "description": "Optional description of what this example demonstrates.",
+          "markdownDescription": "Optional description of what this example demonstrates.",
+          "type": "string"
+        },
+        "input": {
+          "description": "The input data object.",
+          "markdownDescription": "The input data object.",
+          "type": "object"
+        },
+        "output": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          ],
+          "description": "The expected output phrase(s). Can be a single string or array of strings for multiple phrases.",
+          "markdownDescription": "The expected output phrase(s).\nCan be a single string or array of strings for multiple phrases."
+        }
+      },
+      "required": [
+        "input",
+        "output"
+      ],
+      "type": "object"
+    },
+    "ISummarizerPhrase": {
+      "description": "A single phrase that can be generated by the summarizer.\n\nPhrases are designed to complete \"This object ____\".",
+      "examples": [
+        {
+          "description": "Describes the entity's health level",
+          "id": "health_description",
+          "priority": 1,
+          "tokens": [
+            {
+              "text": "has ",
+              "type": "literal"
+            },
+            {
+              "field": "max",
+              "type": "value"
+            },
+            {
+              "text": " HP",
+              "type": "literal"
+            }
+          ]
+        }
+      ],
+      "markdownDescription": "A single phrase that can be generated by the summarizer.\n\nPhrases are designed to complete \"This object ____\".",
+      "properties": {
+        "category": {
+          "description": "Category for grouping related phrases. Useful for organizing output or filtering phrases.",
+          "markdownDescription": "Category for grouping related phrases.\nUseful for organizing output or filtering phrases.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Human-readable description of what this phrase describes. Helps AI understand the purpose when generating or modifying summarizers.",
+          "markdownDescription": "Human-readable description of what this phrase describes.\nHelps AI understand the purpose when generating or modifying summarizers.",
+          "type": "string"
+        },
+        "id": {
+          "description": "Optional identifier for this phrase, useful for debugging and documentation.",
+          "markdownDescription": "Optional identifier for this phrase, useful for debugging and documentation.",
+          "type": "string"
+        },
+        "priority": {
+          "default": 2,
+          "description": "Priority determines the order and importance of phrases. Lower numbers are more important and appear first.\n\n- Priority 1: Core identity (what this thing fundamentally is/does)\n- Priority 2: Primary characteristics (main stats, key behaviors)\n- Priority 3: Secondary characteristics (less important details)\n- Priority 4+: Flavor/additional context\n\nWhen truncation is needed, higher priority phrases are removed first.",
+          "markdownDescription": "Priority determines the order and importance of phrases.\nLower numbers are more important and appear first.\n\n- Priority 1: Core identity (what this thing fundamentally is/does)\n- Priority 2: Primary characteristics (main stats, key behaviors)\n- Priority 3: Secondary characteristics (less important details)\n- Priority 4+: Flavor/additional context\n\nWhen truncation is needed, higher priority phrases are removed first.",
+          "type": "number"
+        },
+        "tokens": {
+          "description": "The tokens that make up this phrase. Evaluated in order to produce the phrase text.",
+          "items": {
+            "$ref": "#/definitions/ISummarizerToken"
+          },
+          "markdownDescription": "The tokens that make up this phrase.\nEvaluated in order to produce the phrase text.",
+          "type": "array"
+        },
+        "visibility": {
+          "description": "Conditions that must ALL be true for this phrase to be generated. If not provided, the phrase is always considered (subject to token visibility).",
+          "items": {
+            "$ref": "#/definitions/ICondition"
+          },
+          "markdownDescription": "Conditions that must ALL be true for this phrase to be generated.\nIf not provided, the phrase is always considered (subject to token visibility).",
+          "type": "array"
+        }
+      },
+      "required": [
+        "tokens"
+      ],
+      "type": "object"
+    },
+    "ISummarizerToken": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/ILiteralToken"
+        },
+        {
+          "$ref": "#/definitions/IValueToken"
+        },
+        {
+          "$ref": "#/definitions/ISwitchToken"
+        },
+        {
+          "$ref": "#/definitions/IListToken"
+        },
+        {
+          "$ref": "#/definitions/ITemplateToken"
+        },
+        {
+          "$ref": "#/definitions/IPluralToken"
+        },
+        {
+          "$ref": "#/definitions/ISampleToken"
+        },
+        {
+          "$ref": "#/definitions/IUnitToken"
+        },
+        {
+          "$ref": "#/definitions/IExistsToken"
+        },
+        {
+          "$ref": "#/definitions/IGroupToken"
+        },
+        {
+          "$ref": "#/definitions/IConjunctionToken"
+        }
+      ],
+      "description": "Union type of all summarizer token types.",
+      "markdownDescription": "Union type of all summarizer token types."
+    },
+    "ISwitchCase": {
+      "description": "A single case in a switch token.",
+      "examples": [
+        {
+          "conditions": [
+            {
+              "comparison": ">",
+              "field": "max",
+              "value": 200
+            }
+          ],
+          "tokens": [
+            {
+              "text": "extremely high health",
+              "type": "literal"
+            }
+          ]
+        }
+      ],
+      "markdownDescription": "A single case in a switch token.",
+      "properties": {
+        "conditions": {
+          "description": "Conditions that must ALL be true for this case to be selected.",
+          "items": {
+            "$ref": "#/definitions/ICondition"
+          },
+          "markdownDescription": "Conditions that must ALL be true for this case to be selected.",
+          "type": "array"
+        },
+        "tokens": {
+          "description": "Tokens to output when this case is selected.",
+          "items": {
+            "$ref": "#/definitions/ISummarizerToken"
+          },
+          "markdownDescription": "Tokens to output when this case is selected.",
+          "type": "array"
+        }
+      },
+      "required": [
+        "conditions",
+        "tokens"
+      ],
+      "type": "object"
+    },
+    "ISwitchToken": {
+      "description": "Switch token: selects tokens based on conditions.\n\nCases are evaluated in order, and the first matching case is used. If no case matches, the default tokens are used (if provided).\n\n## Best Practice: Order Cases from Most to Least Specific",
+      "examples": [
+        {
+          "cases": [
+            {
+              "conditions": [
+                {
+                  "comparison": ">",
+                  "field": "max",
+                  "value": 500
+                }
+              ],
+              "tokens": [
+                {
+                  "text": "god-tier health, rivaling a Wither",
+                  "type": "literal"
+                }
+              ]
+            },
+            {
+              "conditions": [
+                {
+                  "comparison": ">",
+                  "field": "max",
+                  "value": 200
+                }
+              ],
+              "tokens": [
+                {
+                  "text": "extremely high health, tougher than an Ender Dragon",
+                  "type": "literal"
+                }
+              ]
+            },
+            {
+              "conditions": [
+                {
+                  "comparison": ">",
+                  "field": "max",
+                  "value": 100
+                }
+              ],
+              "tokens": [
+                {
+                  "text": "high health, like an Iron Golem",
+                  "type": "literal"
+                }
+              ]
+            },
+            {
+              "conditions": [
+                {
+                  "comparison": ">",
+                  "field": "max",
+                  "value": 40
+                }
+              ],
+              "tokens": [
+                {
+                  "text": "above-average health",
+                  "type": "literal"
+                }
+              ]
+            },
+            {
+              "conditions": [
+                {
+                  "comparison": "<",
+                  "field": "max",
+                  "value": 10
+                }
+              ],
+              "tokens": [
+                {
+                  "text": "very fragile, weaker than a Chicken",
+                  "type": "literal"
+                }
+              ]
+            }
+          ],
+          "default": [
+            {
+              "text": "typical health for a mob",
+              "type": "literal"
+            }
+          ],
+          "type": "switch"
+        }
+      ],
+      "markdownDescription": "Switch token: selects tokens based on conditions.\n\nCases are evaluated in order, and the first matching case is used.\nIf no case matches, the default tokens are used (if provided).\n\n## Best Practice: Order Cases from Most to Least Specific",
+      "properties": {
+        "cases": {
+          "description": "Ordered list of cases. First matching case wins.",
+          "items": {
+            "$ref": "#/definitions/ISwitchCase"
+          },
+          "markdownDescription": "Ordered list of cases. First matching case wins.",
+          "type": "array"
+        },
+        "default": {
+          "description": "Tokens to output if no case matches.",
+          "items": {
+            "$ref": "#/definitions/ISummarizerToken"
+          },
+          "markdownDescription": "Tokens to output if no case matches.",
+          "type": "array"
+        },
+        "effects": {
+          "$ref": "#/definitions/ISummarizerEffects",
+          "description": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement. The summarizer always produces valid plain text regardless of effects.",
+          "examples": [
+            {
+              "effects": {
+                "emphasis": "strong",
+                "icon": "❤️",
+                "sentiment": "positive"
+              },
+              "field": "max",
+              "type": "value"
+            }
+          ],
+          "markdownDescription": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement.\nThe summarizer always produces valid plain text regardless of effects."
+        },
+        "priority": {
+          "default": 2,
+          "description": "Priority for truncation when space is limited. Lower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "markdownDescription": "Priority for truncation when space is limited.\nLower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "type": "number"
+        },
+        "type": {
+          "const": "switch",
+          "description": "The type of token. Determines how the token is evaluated.",
+          "markdownDescription": "The type of token. Determines how the token is evaluated.",
+          "type": "string"
+        },
+        "visibility": {
+          "description": "Optional conditions that must ALL be true for this token to appear. Uses the same ICondition format as field visibility in forms.",
+          "items": {
+            "$ref": "#/definitions/ICondition"
+          },
+          "markdownDescription": "Optional conditions that must ALL be true for this token to appear.\nUses the same ICondition format as field visibility in forms.",
+          "type": "array"
+        }
+      },
+      "required": [
+        "cases",
+        "type"
+      ],
+      "type": "object"
+    },
+    "ITemplateToken": {
+      "description": "Template token: string interpolation with named placeholders.\n\nPlaceholders use {name} syntax and are replaced with evaluated token arrays.",
+      "examples": [
+        {
+          "template": "deals {damage} {damageType} damage per hit",
+          "type": "template",
+          "values": {
+            "damage": [
+              {
+                "field": "damage",
+                "type": "value"
+              }
+            ],
+            "damageType": [
+              {
+                "field": "damage_type",
+                "humanify": "minecraft",
+                "type": "value"
+              }
+            ]
+          }
+        }
+      ],
+      "markdownDescription": "Template token: string interpolation with named placeholders.\n\nPlaceholders use {name} syntax and are replaced with evaluated token arrays.",
+      "properties": {
+        "effects": {
+          "$ref": "#/definitions/ISummarizerEffects",
+          "description": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement. The summarizer always produces valid plain text regardless of effects.",
+          "examples": [
+            {
+              "effects": {
+                "emphasis": "strong",
+                "icon": "❤️",
+                "sentiment": "positive"
+              },
+              "field": "max",
+              "type": "value"
+            }
+          ],
+          "markdownDescription": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement.\nThe summarizer always produces valid plain text regardless of effects."
+        },
+        "priority": {
+          "default": 2,
+          "description": "Priority for truncation when space is limited. Lower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "markdownDescription": "Priority for truncation when space is limited.\nLower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "type": "number"
+        },
+        "template": {
+          "description": "Template string with {placeholder} syntax.",
+          "markdownDescription": "Template string with {placeholder} syntax.",
+          "type": "string"
+        },
+        "type": {
+          "const": "template",
+          "description": "The type of token. Determines how the token is evaluated.",
+          "markdownDescription": "The type of token. Determines how the token is evaluated.",
+          "type": "string"
+        },
+        "values": {
+          "additionalProperties": {
+            "items": {
+              "$ref": "#/definitions/ISummarizerToken"
+            },
+            "type": "array"
+          },
+          "description": "Map of placeholder names to token arrays.",
+          "markdownDescription": "Map of placeholder names to token arrays.",
+          "type": "object"
+        },
+        "visibility": {
+          "description": "Optional conditions that must ALL be true for this token to appear. Uses the same ICondition format as field visibility in forms.",
+          "items": {
+            "$ref": "#/definitions/ICondition"
+          },
+          "markdownDescription": "Optional conditions that must ALL be true for this token to appear.\nUses the same ICondition format as field visibility in forms.",
+          "type": "array"
+        }
+      },
+      "required": [
+        "template",
+        "type",
+        "values"
+      ],
+      "type": "object"
+    },
+    "IUnitToken": {
+      "description": "Unit token: formats a value with units and optional conversion.",
+      "examples": [
+        {
+          "field": "health",
+          "type": "unit",
+          "unit": "HP"
+        },
+        {
+          "conversion": {
+            "factor": 0.05,
+            "targetUnit": "seconds"
+          },
+          "field": "duration",
+          "showBoth": true,
+          "type": "unit",
+          "unit": "ticks"
+        },
+        {
+          "field": "range",
+          "pluralize": true,
+          "type": "unit",
+          "unit": "blocks"
+        }
+      ],
+      "markdownDescription": "Unit token: formats a value with units and optional conversion.",
+      "properties": {
+        "bothFormat": {
+          "default": "({value} {unit})",
+          "description": "Format for the parenthetical when showBoth is true.",
+          "markdownDescription": "Format for the parenthetical when showBoth is true.",
+          "type": "string"
+        },
+        "conversion": {
+          "description": "Optional conversion to another unit.",
+          "markdownDescription": "Optional conversion to another unit.",
+          "properties": {
+            "decimals": {
+              "default": 1,
+              "description": "Decimal places for converted value.",
+              "markdownDescription": "Decimal places for converted value.",
+              "type": "number"
+            },
+            "factor": {
+              "description": "Multiply original value by this factor to get converted value.",
+              "markdownDescription": "Multiply original value by this factor to get converted value.",
+              "type": "number"
+            },
+            "targetUnit": {
+              "description": "Name of the converted unit.",
+              "markdownDescription": "Name of the converted unit.",
+              "type": "string"
+            },
+            "targetUnitPlural": {
+              "description": "Plural form of target unit.",
+              "markdownDescription": "Plural form of target unit.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "targetUnit",
+            "factor"
+          ],
+          "type": "object"
+        },
+        "effects": {
+          "$ref": "#/definitions/ISummarizerEffects",
+          "description": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement. The summarizer always produces valid plain text regardless of effects.",
+          "examples": [
+            {
+              "effects": {
+                "emphasis": "strong",
+                "icon": "❤️",
+                "sentiment": "positive"
+              },
+              "field": "max",
+              "type": "value"
+            }
+          ],
+          "markdownDescription": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement.\nThe summarizer always produces valid plain text regardless of effects."
+        },
+        "field": {
+          "description": "Field containing the numeric value.",
+          "markdownDescription": "Field containing the numeric value.",
+          "type": "string"
+        },
+        "pluralize": {
+          "default": false,
+          "description": "Whether to pluralize the unit based on the value.",
+          "markdownDescription": "Whether to pluralize the unit based on the value.",
+          "type": "boolean"
+        },
+        "priority": {
+          "default": 2,
+          "description": "Priority for truncation when space is limited. Lower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "markdownDescription": "Priority for truncation when space is limited.\nLower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "type": "number"
+        },
+        "showBoth": {
+          "default": true,
+          "description": "If conversion is defined, whether to show both values.",
+          "markdownDescription": "If conversion is defined, whether to show both values.",
+          "type": "boolean"
+        },
+        "type": {
+          "const": "unit",
+          "description": "The type of token. Determines how the token is evaluated.",
+          "markdownDescription": "The type of token. Determines how the token is evaluated.",
+          "type": "string"
+        },
+        "unit": {
+          "description": "The unit name (e.g., \"HP\", \"blocks\", \"ticks\", \"seconds\").",
+          "markdownDescription": "The unit name (e.g., \"HP\", \"blocks\", \"ticks\", \"seconds\").",
+          "type": "string"
+        },
+        "unitPlural": {
+          "description": "Plural form of the unit (e.g., \"block\" → \"blocks\"). If not provided and pluralize is true, adds \"s\".",
+          "markdownDescription": "Plural form of the unit (e.g., \"block\" → \"blocks\").\nIf not provided and pluralize is true, adds \"s\".",
+          "type": "string"
+        },
+        "visibility": {
+          "description": "Optional conditions that must ALL be true for this token to appear. Uses the same ICondition format as field visibility in forms.",
+          "items": {
+            "$ref": "#/definitions/ICondition"
+          },
+          "markdownDescription": "Optional conditions that must ALL be true for this token to appear.\nUses the same ICondition format as field visibility in forms.",
+          "type": "array"
+        }
+      },
+      "required": [
+        "field",
+        "type",
+        "unit"
+      ],
+      "type": "object"
+    },
+    "IValueToken": {
+      "description": "Value token: inserts a field value from the data object.",
+      "examples": [
+        {
+          "field": "max",
+          "type": "value"
+        },
+        {
+          "field": "entity_type",
+          "humanify": "minecraft",
+          "type": "value"
+        },
+        {
+          "field": "chance",
+          "format": "percent",
+          "type": "value"
+        }
+      ],
+      "markdownDescription": "Value token: inserts a field value from the data object.",
+      "properties": {
+        "effects": {
+          "$ref": "#/definitions/ISummarizerEffects",
+          "description": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement. The summarizer always produces valid plain text regardless of effects.",
+          "examples": [
+            {
+              "effects": {
+                "emphasis": "strong",
+                "icon": "❤️",
+                "sentiment": "positive"
+              },
+              "field": "max",
+              "type": "value"
+            }
+          ],
+          "markdownDescription": "Visual effects for enhanced rendering.\n\nEffects are optional and purely for display enhancement.\nThe summarizer always produces valid plain text regardless of effects."
+        },
+        "fallback": {
+          "default": "\"\" (empty string)",
+          "description": "Fallback text if the field is undefined.",
+          "markdownDescription": "Fallback text if the field is undefined.",
+          "type": "string"
+        },
+        "field": {
+          "description": "The field path to get the value from. Supports dot notation for nested fields: \"damage.min\"",
+          "markdownDescription": "The field path to get the value from.\nSupports dot notation for nested fields: \"damage.min\"",
+          "type": "string"
+        },
+        "format": {
+          "description": "Optional format for the value.\n- \"number\": Format as locale number (1,000)\n- \"percent\": Multiply by 100 and add % (0.25 → \"25%\")\n- \"decimal:N\": Round to N decimal places",
+          "markdownDescription": "Optional format for the value.\n- \"number\": Format as locale number (1,000)\n- \"percent\": Multiply by 100 and add % (0.25 → \"25%\")\n- \"decimal:N\": Round to N decimal places",
+          "type": "string"
+        },
+        "humanify": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/SummarizerHumanifyType"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "default": "none",
+          "description": "Algorithm to make the value more human-readable.",
+          "markdownDescription": "Algorithm to make the value more human-readable."
+        },
+        "priority": {
+          "default": 2,
+          "description": "Priority for truncation when space is limited. Lower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "markdownDescription": "Priority for truncation when space is limited.\nLower numbers are more important and will be kept.\n- Priority 1: Essential information, always show\n- Priority 2: Important details\n- Priority 3: Nice-to-have comparisons\n- Priority 4+: Optional flavor text",
+          "type": "number"
+        },
+        "type": {
+          "const": "value",
+          "description": "The type of token. Determines how the token is evaluated.",
+          "markdownDescription": "The type of token. Determines how the token is evaluated.",
+          "type": "string"
+        },
+        "visibility": {
+          "description": "Optional conditions that must ALL be true for this token to appear. Uses the same ICondition format as field visibility in forms.",
+          "items": {
+            "$ref": "#/definitions/ICondition"
+          },
+          "markdownDescription": "Optional conditions that must ALL be true for this token to appear.\nUses the same ICondition format as field visibility in forms.",
+          "type": "array"
+        }
+      },
+      "required": [
+        "field",
+        "type"
+      ],
+      "type": "object"
+    },
+    "SummarizerEmphasis": {
+      "description": "Semantic emphasis level for token display.\n\nUse semantic emphasis rather than literal styling (bold, italic) so that the rendering can adapt to different themes and contexts.",
+      "enum": [
+        "normal",
+        "strong",
+        "subtle"
+      ],
+      "examples": [
+        {
+          "effects": {
+            "emphasis": "strong"
+          },
+          "field": "max",
+          "type": "value"
+        }
+      ],
+      "markdownDescription": "Semantic emphasis level for token display.\n\nUse semantic emphasis rather than literal styling (bold, italic) so that\nthe rendering can adapt to different themes and contexts.",
+      "type": "string"
+    },
+    "SummarizerHumanifyType": {
+      "description": "Algorithms for making values more human-readable.",
+      "enum": [
+        "none",
+        "general",
+        "minecraft",
+        "sentence"
+      ],
+      "examples": [
+        {
+          "field": "entity_type",
+          "humanify": "minecraft",
+          "type": "value"
+        }
+      ],
+      "markdownDescription": "Algorithms for making values more human-readable.",
+      "type": "string"
+    },
+    "SummarizerRole": {
+      "description": "Semantic role for consistent styling of different token types.\n\nThis provides a way to ensure consistent styling for similar content across different summarizers.",
+      "enum": [
+        "text",
+        "value",
+        "unit",
+        "label",
+        "comparison"
+      ],
+      "examples": [
+        {
+          "effects": {
+            "role": "value"
+          },
+          "field": "damage",
+          "type": "value"
+        }
+      ],
+      "markdownDescription": "Semantic role for consistent styling of different token types.\n\nThis provides a way to ensure consistent styling for similar content\nacross different summarizers.",
+      "type": "string"
+    },
+    "SummarizerSentiment": {
+      "description": "Semantic sentiment for color-coding tokens.\n\nSentiment indicates the \"meaning\" of a value, allowing the renderer to apply appropriate colors that work across themes.",
+      "enum": [
+        "neutral",
+        "positive",
+        "negative",
+        "warning",
+        "info"
+      ],
+      "markdownDescription": "Semantic sentiment for color-coding tokens.\n\nSentiment indicates the \"meaning\" of a value, allowing the renderer to\napply appropriate colors that work across themes.",
+      "type": "string"
+    }
+  },
+  "$id": "https://github.com/Mojang/minecraft-creator-tools/schemas/dataform/field.schema.json",
+  "$comment": "Generated from src/dataform/IField.ts - do not edit manually"
+}

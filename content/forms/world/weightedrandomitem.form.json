@@ -1,5 +1,15 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "WeightedRandomItem",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines a weighted random item with data and weight properties" }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "WeightedRandomItem",

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines experience reward component"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:experience_reward",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -144,5 +157,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Defines experience reward component."
 }

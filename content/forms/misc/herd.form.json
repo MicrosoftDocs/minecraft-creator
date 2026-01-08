@@ -1,6 +1,24 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines herd configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Herd",
-  "fields": [],
+  "fields": [
+    {
+      "id": "initial_event",
+      "description": "Event run when the first 'initial_event_count' entities in the group are placed."
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "Herd",
     "title": "Herd Misc",
@@ -42,5 +60,6 @@
         "dataType": 0
       }
     ]
-  }
+  },
+  "description": "Defines herd configuration."
 }

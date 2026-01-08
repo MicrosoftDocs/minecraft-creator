@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates that JSON files do not contain byte order marks"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "nobom",
+  "title": "BOM Validation",
+  "description": "Validates that JSON files do not contain byte order marks (BOM). BOMs can cause parsing failures in Minecraft.",
+  "fields": [
+    {
+      "id": "101",
+      "title": "BOM Detected",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a JSON file begins with a UTF-8 BOM (byte order mark). Minecraft cannot parse JSON files with BOMs. Re-save the file as UTF-8 without BOM using a text editor.",
+      "howToUse": "Open the file in VS Code or Notepad++ and save it as 'UTF-8' (not 'UTF-8 with BOM'). In VS Code, click the encoding in the status bar and select 'Save with Encoding' → 'UTF-8'.",
+      "technicalDescription": "Data contains the path to the file with BOM"
+    }
+  ]
+}

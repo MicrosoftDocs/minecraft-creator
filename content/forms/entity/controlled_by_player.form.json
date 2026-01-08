@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be controlled by a player"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.controlled_by_player",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -10,7 +23,21 @@
         "id": "control_flags",
         "title": "Control Flags",
         "dataType": 17,
-        "defaultValue": []
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
       },
       {
         "id": "fractional_rotation",

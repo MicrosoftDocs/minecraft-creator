@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Client Biome Documentation - minecraft:sky_color"
 description: "Describes the minecraft:sky_color client biome"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

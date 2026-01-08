@@ -1,6 +1,92 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:vegetation_patch_feature",
   "description": "Scatters vegetation in an area. The vegetation feature's appearance can be modified by adjusting the radius and depth that it will generate.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "creates a vegetation-covered patch replacing ground blocks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "vegetation_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "grows "
+          },
+          {
+            "type": "value",
+            "field": "vegetation_feature"
+          },
+          {
+            "type": "literal",
+            "text": " on the patch"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "ground_block",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "replaces ground with "
+          },
+          {
+            "type": "value",
+            "field": "ground_block",
+            "humanify": "minecraft"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "surface",
+            "comparison": "=",
+            "value": "ceiling"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "grows from ceiling downward"
+          }
+        ],
+        "priority": 3
+      },
+      {
+        "visibility": [
+          {
+            "field": "waterlogged",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "waterlogged patch"
+          }
+        ],
+        "priority": 3
+      }
+    ]
+  },
   "fields": [
     {
       "id": "format_version",
@@ -11,7 +97,7 @@
   "samples": {
     "example": [
       {
-        "path": "Adding a clay pool wtih drip leaf vegetation",
+        "path": "Adding a clay pool with dripleaf vegetation",
         "content": {
           "format_version": "1.13.0",
           "minecraft:vegetation_patch_feature": {

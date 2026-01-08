@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "3.0.0.DropdownSetting",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies a dropdown setting with options, default value, and display text"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "3.0.0.DropdownSetting",
@@ -63,5 +76,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "A dropdown selection setting that appears in the pack's world settings UI. Players choose from predefined options like game modes or difficulty presets. Each option has an internal ID and display text."
 }

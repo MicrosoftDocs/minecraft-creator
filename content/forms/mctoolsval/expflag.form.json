@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates experimental flags in world templates"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "expflag",
+  "title": "Experimental Flags",
+  "description": "Validates experimental flags in world templates. Experiments that were enabled can affect world behavior even after being disabled.",
+  "fields": [
+    {
+      "id": "101",
+      "title": "Experiment Active",
+      "messageType": 1,
+      "dataType": 2,
+      "description": "Warning when an experimental flag is or was enabled in the world. Some experiments permanently modify world data even after being turned off.",
+      "howToUse": "If the experimental feature is no longer needed, you can disable it in the world settings. Note that some experiments cannot be fully reverted. For publishing, create a new world without experiments enabled.",
+      "technicalDescription": "Data contains the name of the experimental flag"
+    },
+    {
+      "id": "102",
+      "title": "Missing Level.dat",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when the world's level.dat file could not be found. The world may be corrupted or incomplete.",
+      "howToUse": "Ensure the world template includes a complete world folder with level.dat. If the file is missing, try re-exporting the world from Minecraft.",
+      "technicalDescription": "Data contains the expected level.dat path"
+    },
+    {
+      "id": "103",
+      "title": "World Not Found",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when the world folder could not be located. Check that the world path is correct and accessible.",
+      "howToUse": "Verify the world template structure includes the correct world folder path. The world should be in a subfolder matching the manifest's world_template module entry.",
+      "technicalDescription": "Data contains the expected world path"
+    }
+  ]
+}

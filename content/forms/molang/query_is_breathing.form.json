@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is breathing"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_breathing",
   "fields": [],
   "generated_doNotEdit": {

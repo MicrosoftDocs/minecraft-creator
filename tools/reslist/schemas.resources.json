@@ -1,0 +1,25 @@
+{
+  "url": "https://github.com/Blockception/Minecraft-bedrock-json-schemas/archive/bf956fb8c7da55e40ff2d3b3c4d0e150325c938c.zip",
+  "replaceFirstFolderWith": "schemas",
+  "exclude": [
+    ".git",
+    ".vscode/",
+    "/src/",
+    "/test/",
+    ".mcignore",
+    "note.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "package.json",
+    "package-lock.json",
+    ".code-workspace",
+    "jest.config.ts",
+    "/tools/",
+    ".xlsm",
+    "/scripts/",
+    "/source/",
+    ".mocharc.json",
+    "vscode-settings.json",
+    "tsconfig.json"
+  ]
+}

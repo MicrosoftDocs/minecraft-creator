@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns armor material slot information"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.armor_material_slot",
   "fields": [],
   "generated_doNotEdit": {

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Behavior (AI) Components Documentation - Entity Behavior (AI) Components"
 description: "A reference document describing all current Entity Behavior (AI) Components"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -97,8 +98,6 @@ ms.date: 02/11/2025
 | [minecraft:behavior.move_towards_target](EntityGoals/minecraftBehavior_move_towards_target.md)| Allows mob to move towards its current target. |
 | [minecraft:behavior.move_to_block](EntityGoals/minecraftBehavior_move_to_block.md)| Allows mob to move towards a block. |
 | [minecraft:behavior.move_to_land](EntityGoals/minecraftBehavior_move_to_land.md)| Allows the mob to move back onto land when in water. |
-| [minecraft:behavior.move_to_lava](EntityGoals/minecraftBehavior_move_to_lava.md)| Allows the mob to move back into lava when on land. |
-| [minecraft:behavior.move_to_liquid](EntityGoals/minecraftBehavior_move_to_liquid.md)| Allows the mob to move into a liquid when on land. |
 | [minecraft:behavior.move_to_poi](EntityGoals/minecraftBehavior_move_to_poi.md)| Allows the mob to move to a POI if able to |
 | [minecraft:behavior.move_to_random_block](EntityGoals/minecraftBehavior_move_to_random_block.md)| Allows mob to move towards a random block. |
 | [minecraft:behavior.move_to_village](EntityGoals/minecraftBehavior_move_to_village.md)| Allows the mob to move into a random location within a village. |
@@ -115,7 +114,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.panic](EntityGoals/minecraftBehavior_panic.md)| Allows the mob to enter the panic state, which makes it run around and away from the damage source that made it enter this state. |
 | [minecraft:behavior.pet_sleep_with_owner](EntityGoals/minecraftBehavior_pet_sleep_with_owner.md)| Allows the pet mob to move onto a bed with its owner while sleeping. |
 | [minecraft:behavior.pickup_items](EntityGoals/minecraftBehavior_pickup_items.md)| Allows the mob to pick up items on the ground. |
-| [minecraft:behavior.place_block](EntityGoals/minecraftBehavior_place_block.md)|  |
+| [minecraft:behavior.place_block](EntityGoals/minecraftBehavior_place_block.md)| AI goal that makes entities place blocks into the world, like Endermen placing their carried block or snow golems leaving snow trails. |
 | [minecraft:behavior.play](EntityGoals/minecraftBehavior_play.md)| Allows the mob to play with other mobs by chasing each other and moving around randomly. |
 | [minecraft:behavior.player_ride_tamed](EntityGoals/minecraftBehavior_player.ride_tamed.md)| Allows the mob to be ridden by the player after being tamed. |
 | [minecraft:behavior.play_dead](EntityGoals/minecraftBehavior_play_dead.md)| Allows this entity to pretend to be dead to avoid being targeted by attackers. |
@@ -134,7 +133,6 @@ ms.date: 02/11/2025
 | [minecraft:behavior.receive_love](EntityGoals/minecraftBehavior_receive_love.md)| Allows the villager to stop so another villager can breed with it. |
 | [minecraft:behavior.restrict_open_door](EntityGoals/minecraftBehavior_restrict_open_door.md)| Allows the mob to stay indoors during night time. |
 | [minecraft:behavior.restrict_sun](EntityGoals/minecraftBehavior_restrict_sun.md)| Allows the mob to automatically start avoiding the sun when its a clear day out. |
-| [minecraft:behavior.rise_to_liquid_level](EntityGoals/minecraftBehavior_rise_to_liquid_level.md)| Allows the mob to stay at a certain level when in liquid. |
 | [minecraft:behavior.roar](EntityGoals/minecraftBehavior_roar.md)| Allows this entity to roar at another entity based on data in `minecraft:anger_level`. |
 | [minecraft:behavior.roll](EntityGoals/minecraftBehavior_roll.md)| This allows the mob to roll forward. |
 | [minecraft:behavior.run_around_like_crazy](EntityGoals/minecraftBehavior_run_around_like_crazy.md)| Allows the mob to run around aimlessly. |
@@ -171,7 +169,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.swim_wander](EntityGoals/minecraftBehavior_swim_wander.md)| Allows the entity to wander around while swimming, when not path-finding. |
 | [minecraft:behavior.swim_with_entity](EntityGoals/minecraftBehavior_swim_with_entity.md)| Allows the entity follow another entity. |
 | [minecraft:behavior.swoop_attack](EntityGoals/minecraftBehavior_swoop_attack.md)| Allows an entity to attack using swoop attack behavior; Ideal for use with flying mobs. |
-| [minecraft:behavior.take_block](EntityGoals/minecraftBehavior_take_block.md)|  |
+| [minecraft:behavior.take_block](EntityGoals/minecraftBehavior_take_block.md)| AI goal that makes entities pick up blocks from the world, like Endermen grabbing blocks to carry. |
 | [minecraft:behavior.take_flower](EntityGoals/minecraftBehavior_take_flower.md)| Allows the mob to accept flowers from another mob with the minecraft:offer_flower behavior. |
 | [minecraft:behavior.teleport_to_owner](EntityGoals/minecraftBehavior_teleport_to_owner.md)| Allows an entity to teleport to its owner. |
 | [minecraft:behavior.tempt](EntityGoals/minecraftBehavior_tempt.md)| Allows a mob to be tempted by a player holding a specific item. |
@@ -186,3 +184,12 @@ ms.date: 02/11/2025
 | [minecraft:behavior.wither_target_highest_damage](EntityGoals/minecraftBehavior_wither_target_highest_damage.md)| Allows the wither to focus its attacks on whichever mob has dealt the most damage to it. |
 | [minecraft:behavior.work](EntityGoals/minecraftBehavior_work.md)| Allows the NPC to use the POI |
 | [minecraft:behavior.work_composter](EntityGoals/minecraftBehavior_work_composter.md)| Allows the NPC to use the composter POI to convert excess seeds into bone meal. |
+
+## Internal/Deprecated Components
+These components are either deprecated or internal to Minecraft and not usable in custom content.
+
+| Entity Behavior (AI) Components | Description |
+|:-----|:----------|
+| [behavior.move_to_lava](EntityGoals/minecraftBehavior_move_to_lava.md)| Allows the mob to move back into lava when on land. |
+| [behavior.move_to_liquid](EntityGoals/minecraftBehavior_move_to_liquid.md)| Allows the mob to move into a liquid when on land. |
+| [behavior.rise_to_liquid_level](EntityGoals/minecraftBehavior_rise_to_liquid_level.md)| Allows the mob to stay at a certain level when in liquid. |

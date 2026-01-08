@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "can listen to vibration events" }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "id": "minecraft:vibration_listener",
   "title": "Vibration Listener",

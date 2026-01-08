@@ -1,0 +1,407 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "attachable",
+  "title": "Attachable",
+  "description": "An attachable definition for Minecraft Bedrock Edition. Attachables define how items render when equipped or held by entities, including armor, weapons, tools, and other wearable/holdable items.",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [{ "field": "minecraft:attachable.description.identifier", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "defines rendering for attachable '" },
+          { "type": "value", "field": "minecraft:attachable.description.identifier" },
+          { "type": "literal", "text": "'" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "minecraft:attachable.description.identifier", "comparison": "undefined" }],
+        "tokens": [
+          { "type": "literal", "text": "defines item rendering when equipped or held" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "minecraft:attachable.description.item", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "for item '" },
+          { "type": "value", "field": "minecraft:attachable.description.item" },
+          { "type": "literal", "text": "'" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "minecraft:attachable.description.textures", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "with textures" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "minecraft:attachable.description.geometry", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "and geometry" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "minecraft:attachable.description.animations", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "with animations" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "minecraft:attachable.description.scripts", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "and scripts" }
+        ]
+      }
+    ]
+  },
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "attachable",
+    "fields": [
+      {
+        "dataType": 25,
+        "id": "format_version",
+        "title": "Format Version",
+        "description": "The format version of this attachable file. Common versions include '1.8.0' and '1.10.0'.",
+        "isRequired": true
+      },
+      {
+        "dataType": 16,
+        "id": "minecraft:attachable",
+        "title": "Attachable Definition",
+        "description": "The attachable definition container.",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 16,
+              "id": "description",
+              "title": "Description",
+              "description": "The attachable description containing all configuration.",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 2,
+                    "id": "identifier",
+                    "title": "Identifier",
+                    "description": "The unique identifier for this attachable. Should match the item identifier it attaches to (e.g., 'minecraft:iron_chestplate').",
+                    "isRequired": true
+                  },
+                  {
+                    "dataType": 0,
+                    "id": "min_engine_version",
+                    "title": "Minimum Engine Version",
+                    "description": "The minimum engine version required for this attachable.",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 2,
+                    "id": "item",
+                    "title": "Item",
+                    "description": "The item identifier this attachable is associated with. If not specified, uses the attachable identifier.",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 14,
+                    "id": "materials",
+                    "title": "Materials",
+                    "description": "Material definitions for rendering the attachable. Keys are material names (e.g., 'default', 'enchanted'), values are material identifiers.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "[a-zA-Z0-9_]+",
+                          "title": "Material",
+                          "description": "A material identifier (e.g., 'armor', 'armor_enchanted', 'elytra').",
+                          "isRequired": true
+                        }
+                      ]
+                    },
+                    "keyDescription": "material_name"
+                  },
+                  {
+                    "dataType": 14,
+                    "id": "textures",
+                    "title": "Textures",
+                    "description": "Texture definitions for the attachable. Keys are texture names (e.g., 'default', 'enchanted'), values are texture paths.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "[a-zA-Z0-9_]+",
+                          "title": "Texture Path",
+                          "description": "A texture path relative to the resource pack (e.g., 'textures/models/armor/iron_1').",
+                          "isRequired": true
+                        }
+                      ]
+                    },
+                    "keyDescription": "texture_name"
+                  },
+                  {
+                    "dataType": 14,
+                    "id": "geometry",
+                    "title": "Geometry",
+                    "description": "Geometry definitions for the attachable. Keys are geometry names (e.g., 'default'), values are geometry identifiers.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "[a-zA-Z0-9_]+",
+                          "title": "Geometry Identifier",
+                          "description": "A geometry identifier (e.g., 'geometry.humanoid.armor.chestplate').",
+                          "isRequired": true
+                        }
+                      ]
+                    },
+                    "keyDescription": "geometry_name"
+                  },
+                  {
+                    "dataType": 14,
+                    "id": "animations",
+                    "title": "Animations",
+                    "description": "Animation and animation controller definitions. Keys are short names used in scripts, values are full animation/controller identifiers.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "[a-zA-Z0-9_]+",
+                          "title": "Animation Identifier",
+                          "description": "An animation or animation controller identifier (e.g., 'animation.elytra.gliding', 'controller.animation.elytra.default').",
+                          "isRequired": true
+                        }
+                      ]
+                    },
+                    "keyDescription": "animation_name"
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "scripts",
+                    "title": "Scripts",
+                    "description": "Script definitions for the attachable, including initialization and animation triggers.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 34,
+                          "id": "parent_setup",
+                          "title": "Parent Setup",
+                          "description": "Molang script executed when the attachable is set up on the parent entity. Used to set variables like 'variable.chest_layer_visible = 0.0;'.",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "pre_animation",
+                          "title": "Pre-Animation",
+                          "description": "Molang script executed before animations are processed.",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 34,
+                          "id": "scale",
+                          "title": "Scale",
+                          "description": "Molang expression for the scale of the attachable.",
+                          "isRequired": false
+                        },
+                        {
+                          "id": "animate",
+                          "title": "Animate",
+                          "description": "List of animations to play. Can be animation short names or objects with conditional playback.",
+                          "isRequired": false,
+                          "dataType": 15,
+                          "subForm": {
+                            "fields": [
+                              {
+                                "dataType": 2,
+                                "id": "animation_name",
+                                "title": "Animation Name",
+                                "description": "Short name of an animation defined in the animations section.",
+                                "isRequired": true
+                              }
+                            ]
+                          },
+                          "alternates": [
+                            {
+                              "dataType": 17,
+                              "id": "animate",
+                              "title": "Animate (Array)",
+                              "description": "Array of animation names to play."
+                            }
+                          ]
+                        },
+                        {
+                          "dataType": 1,
+                          "id": "should_update_bones_and_effects_offscreen",
+                          "title": "Should Update Bones And Effects Offscreen",
+                          "description": "Whether bones and effects should be updated when the entity is offscreen.",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 1,
+                          "id": "should_update_effects_offscreen",
+                          "title": "Should Update Effects Offscreen",
+                          "description": "Whether effects should be updated when the entity is offscreen.",
+                          "isRequired": false
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 17,
+                    "id": "render_controllers",
+                    "title": "Render Controllers",
+                    "description": "List of render controller identifiers or conditional render controllers.",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 1,
+                    "id": "enable_attachables",
+                    "title": "Enable Attachables",
+                    "description": "Whether to allow child attachables on this attachable.",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 14,
+                    "id": "particle_effects",
+                    "title": "Particle Effects",
+                    "description": "Particle effect definitions for the attachable.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "[a-zA-Z0-9_]+",
+                          "title": "Particle Effect",
+                          "description": "A particle effect identifier.",
+                          "isRequired": true
+                        }
+                      ]
+                    },
+                    "keyDescription": "particle_name"
+                  },
+                  {
+                    "dataType": 14,
+                    "id": "sound_effects",
+                    "title": "Sound Effects",
+                    "description": "Sound effect definitions for the attachable.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "[a-zA-Z0-9_]+",
+                          "title": "Sound Effect",
+                          "description": "A sound effect identifier.",
+                          "isRequired": true
+                        }
+                      ]
+                    },
+                    "keyDescription": "sound_name"
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "spawn_egg",
+                    "title": "Spawn Egg",
+                    "description": "Spawn egg configuration for this attachable, if applicable.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "texture",
+                          "title": "Texture",
+                          "description": "Texture path for the spawn egg.",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 0,
+                          "id": "texture_index",
+                          "title": "Texture Index",
+                          "description": "Index into the spawn egg texture atlas.",
+                          "isRequired": false
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "samples": {
+    "armor": [
+      {
+        "path": "Basic armor attachable",
+        "content": {
+          "format_version": "1.8.0",
+          "minecraft:attachable": {
+            "description": {
+              "identifier": "minecraft:iron_chestplate",
+              "materials": {
+                "default": "armor",
+                "enchanted": "armor_enchanted"
+              },
+              "textures": {
+                "default": "textures/models/armor/iron_1",
+                "enchanted": "textures/misc/enchanted_actor_glint"
+              },
+              "geometry": {
+                "default": "geometry.humanoid.armor.chestplate"
+              },
+              "scripts": {
+                "parent_setup": "variable.chest_layer_visible = 0.0;"
+              },
+              "render_controllers": [
+                "controller.render.armor"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "elytra": [
+      {
+        "path": "Elytra with animations",
+        "content": {
+          "format_version": "1.10.0",
+          "minecraft:attachable": {
+            "description": {
+              "identifier": "minecraft:elytra",
+              "materials": {
+                "default": "elytra",
+                "enchanted": "elytra_glint"
+              },
+              "textures": {
+                "default": "textures/models/armor/elytra",
+                "enchanted": "textures/misc/enchanted_actor_glint"
+              },
+              "geometry": {
+                "default": "geometry.elytra"
+              },
+              "animations": {
+                "default_controller": "controller.animation.elytra.default",
+                "gliding": "animation.elytra.gliding"
+              },
+              "scripts": {
+                "parent_setup": "variable.chest_layer_visible = 0.0;",
+                "animate": [
+                  "default_controller"
+                ]
+              },
+              "render_controllers": [
+                "controller.render.armor"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "note": "Attachables are used to define how items render when equipped. They reference materials, textures, geometry, and optionally animations and render controllers defined in other resource pack files."
+}

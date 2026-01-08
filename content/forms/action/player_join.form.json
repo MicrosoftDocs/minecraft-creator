@@ -1,10 +1,24 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "player_join",
   "title": "Player Join",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "triggers when a player joins the world"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "script",
     "trigger",
     "container"
   ],
-  "fields": []
+  "fields": [],
+  "description": "Simulates or responds to a player joining the world. This triggers the same events and initialization logic that occurs when a real player connects, allowing tests to verify join-time behaviors like welcome messages or starter kit distribution."
 }

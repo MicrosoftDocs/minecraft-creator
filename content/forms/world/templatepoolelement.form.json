@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "TemplatePoolElement",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a weighted template pool element with structure and processor references"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "TemplatePoolElement",
@@ -30,5 +43,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Defines a weighted template pool element with structure and processor references."
 }

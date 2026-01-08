@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "UV Proxy",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "controls UV texture mapping and flipbook animation for particles"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "UV Proxy",
@@ -96,5 +109,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Controls UV texture mapping and flipbook animation for particles."
 }

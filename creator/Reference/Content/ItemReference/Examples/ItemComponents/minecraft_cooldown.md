@@ -3,22 +3,23 @@ author: mammerla
 ms.author: mikeam
 title: "Items Documentation - minecraft:cooldown"
 description: "Describes the minecraft:cooldown item component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Items Documentation - minecraft:cooldown
 
-The duration of time (in seconds) items with a matching category will spend cooling down before becoming usable again.
+Adds a cooldown to an item, preventing it from being used again for a specified duration. Items sharing the same category will enter cooldown together when any one of them is used.
 
 
 ## Item Components Cooldown Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| category | *not set* | String | All items sharing the same "category" are put on cooldown when an action of the specified "type" is performed. | Wind Charge: `"wind_charge"` | 
-| duration | *not set* | Decimal number | Duration of the cooldown, in seconds, before the item can perform an action of the specified "type" again. | Wind Charge: `0.5` | 
-| type | use | [Type](#type-choices) choices | The type of action the cooldown applies to. Options are mutually exclusive, so cooldown for one type of action does not affect the others. Values: "use" (when using an item), "attack" (when attack with an item). |  | 
+| category | *not set* | String | A string identifier that groups items together. When an item with a cooldown is used, all items sharing the same category also enter cooldown. | Wind Charge: `"wind_charge"` | 
+| duration | *not set* | Decimal number | The duration of time in seconds that items with the matching category will spend cooling down before becoming usable again. | Wind Charge: `0.5` | 
+| type | use | [Type](#type-choices) choices | The type of action that triggers the cooldown. Use 'use' for items consumed on use, or 'attack' for weapons. Default is 'use'. |  | 
 
 ### Type choices
 

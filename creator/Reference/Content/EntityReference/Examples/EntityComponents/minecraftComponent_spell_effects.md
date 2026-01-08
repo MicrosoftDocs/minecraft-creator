@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:spell_effects"
 description: "Describes the minecraft:spell_effects entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -16,7 +17,7 @@ Allows an entity to add or remove status effects from itself. Similarly to `addr
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| add_effects | *not set* | Array of [Add Effects](#add-effects) items | List of effects to add to this entity after adding this component | Bee: `[{"effect":"poison","duration":25,"display_on_screen_animation":true}]` | 
+| add_effects | *not set* | Array of [Add Effects](#add-effects) items | List of effects to add to this entity after adding this component | Bee: `[{"effect":"poison","duration":25,"display_on_screen_animation":true}]`, `[{"effect":"wither","duration":40,"display_on_screen_animation":true}]` | 
 | remove_effects | *not set* | String | List of identifiers of effects to be removed from this entity after adding this component |  | 
 
 ## Add Effects

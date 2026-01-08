@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is at a critical level of damage"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_critical",
   "fields": [],
   "description": "Returns 1.0 if the entity is at a critical level of damage, else it returns 0.0.",

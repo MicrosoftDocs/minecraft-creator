@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines behavior.swim up for breath configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.swim_up_for_breath",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Items Documentation - minecraft:shooter"
 description: "Describes the minecraft:shooter item component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -27,12 +28,14 @@ Compels an item to shoot projectiles, similarly to a bow or crossbow. Must have 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| ammunition | [] | [Ammunition](#item-components-ammunition) item | Ammunition. | My Sword Shoot: `[{"item":"minecraft:snowball","use_offhand":true,"search_inventory":true,"use_in_creative":true}]` | 
-| charge_on_draw | false | Boolean true/false | Charge on draw? Default is set to false. |  | 
-| max_draw_duration | 0 | Decimal number | Draw Duration. Default is set to 0. | My Sword Shoot: `1` | 
-| scale_power_by_draw_duration | false | Boolean true/false | Scale power by draw duration? Default is set to false. | My Sword Shoot: `true` | 
+| ammunition | [] | [Ammunition](#item-components-ammunition) item | A list of ammunition entries that define which items can be used as projectiles for this shooter. Each entry specifies the item, whether to search the offhand, inventory, and whether to use in creative mode. | My Sword Shoot: `[{"item":"minecraft:snowball","use_offhand":true,"search_inventory":true,"use_in_creative":true}]` | 
+| charge_on_draw | false | Boolean true/false | When true, the shooter begins charging when the player starts drawing, similar to a crossbow. Default is false. |  | 
+| max_draw_duration | 0 | Decimal number | The maximum time in seconds that a player can draw the shooter before it automatically fires or reaches maximum power. Default is 0. | My Sword Shoot: `1` | 
+| scale_power_by_draw_duration | false | Boolean true/false | When true, the projectile's launch power increases based on how long the player holds the use button before releasing. Default is false. | My Sword Shoot: `true` | 
 
 ## Item Components Ammunition
+Is ammunition for a shooter item.
+
 
 #### Item Components Ammunition Properties
 

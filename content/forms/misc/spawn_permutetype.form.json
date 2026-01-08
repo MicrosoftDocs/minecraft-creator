@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines spawn permutetype settings"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Spawn PermuteType",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -25,5 +38,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines spawn permutetype settings."
 }

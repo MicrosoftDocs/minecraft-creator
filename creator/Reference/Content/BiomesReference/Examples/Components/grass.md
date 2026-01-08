@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Biome Documentation - minecraft:grass"
 description: "Describes the minecraft:grass biome"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

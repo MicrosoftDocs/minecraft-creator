@@ -1,6 +1,24 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines biome components configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Biome Components",
-  "fields": [],
+  "fields": [
+    {
+      "id": "minecraft:humidity",
+      "description": "Forces a biome to either always be humid or never humid. Humidity affects the spread chance and spread rate of fire in the biome."
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "Biome Components",
     "title": "Biome Components Misc",

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns true if the entity has an owner id else it retu..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.has_owner",
   "fields": [],
   "description": "Returns true if the entity has an owner ID else it returns false. Pertains to wolf.",

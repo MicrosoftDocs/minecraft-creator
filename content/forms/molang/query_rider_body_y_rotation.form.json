@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns body yaw world-rotation of a valid rider at the..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.rider_body_y_rotation",
   "fields": [],
   "generated_doNotEdit": {

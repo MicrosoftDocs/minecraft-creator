@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates texture references and handle limits"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "texture",
+  "title": "Texture Validation",
+  "description": "Validates texture references across entities, blocks, items, particles, and UI elements. Tracks texture handle usage to prevent exceeding platform limits.",
+  "fields": [
+    {
+      "id": "100",
+      "title": "Handle Limit Exceeded",
+      "messageType": 2,
+      "dataType": 6,
+      "description": "Error when the total number of unique texture handles exceeds platform limits. Mobile devices have lower limits than PC. Consider consolidating textures or using texture atlases.",
+      "howToUse": "Reduce the number of unique textures by combining small textures into texture atlases. Consider using flipbook animations instead of separate texture files. Remove unused textures from your pack.",
+      "technicalDescription": "Data contains the count of texture handles exceeding the limit"
+    },
+    {
+      "id": "101",
+      "title": "Textures",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Count of unique texture paths referenced in the project from entities, blocks, items, particles, terrain_texture.json, and UI definitions.",
+      "technicalDescription": "Data contains the count of unique texture references"
+    }
+  ]
+}

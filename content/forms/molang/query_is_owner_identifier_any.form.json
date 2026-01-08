@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns whether the root entity identifier is any of th..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_owner_identifier_any",
   "fields": [],
   "description": "Returns whether the root entity identifier is any of the specified strings. A preferred query to `query.owner_identifier`, as it can be adjusted by Mojang to avoid breaking content if names are changed. Takes one or more arguments.",

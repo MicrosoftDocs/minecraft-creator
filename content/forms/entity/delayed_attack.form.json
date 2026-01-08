@@ -1,0 +1,2441 @@
+{
+  "id": "minecraft:behavior.delayed_attack",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.delayed_attack",
+    "title": "Entity Delayed Attack Behavior",
+    "description": "Allows an entity to attack, while also delaying the damage-dealt until a specific time in the attack animation.",
+    "fields": [
+      {
+        "id": "attack_duration",
+        "title": "Attack Duration",
+        "description": "The entity's attack animation will play out over this duration (in seconds). Also controls attack cooldown.",
+        "dataType": 3,
+        "defaultValue": 0.75
+      },
+      {
+        "id": "attack_once",
+        "title": "Attack Once",
+        "description": "Allows the mob to perform this melee attack behavior only once during its lifetime.",
+        "dataType": 1,
+        "defaultValue": false
+      },
+      {
+        "id": "attack_types",
+        "title": "Attack Types",
+        "description": "Defines the entity types this entity will attack.",
+        "dataType": 2,
+        "defaultValue": ""
+      },
+      {
+        "id": "can_spread_on_fire",
+        "title": "Can Spread On Fire",
+        "description": "Allows the mob, if on fire and empty handed, to ignite its target upon a successful attack.",
+        "dataType": 1,
+        "defaultValue": false
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "hit_delay_pct",
+        "title": "Hit Delay Pct",
+        "description": "The percentage into the attack animation to apply the damage of the attack (1.0 = 100%).",
+        "dataType": 3,
+        "defaultValue": 0.5,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "inner_boundary_time_increase",
+        "title": "Inner Boundary Time Increase",
+        "description": "Time, in seconds, added to the attack path recalculation interval when the target is beyond \"path_inner_boundary\".",
+        "dataType": 3,
+        "defaultValue": 0.25
+      },
+      {
+        "id": "max_path_time",
+        "title": "Max Path Time",
+        "description": "Maximum base time, in seconds, before recalculating a new attack path to the target (before increases are applied).",
+        "dataType": 3,
+        "defaultValue": 0.550000011920929
+      },
+      {
+        "id": "melee_fov",
+        "title": "Melee Fov",
+        "description": "Field of view, in degrees, used by the hard-coded sensing component to detect a valid attack target.",
+        "dataType": 3,
+        "defaultValue": 90
+      },
+      {
+        "id": "min_path_time",
+        "title": "Min Path Time",
+        "description": "Minimum base time, in seconds, before recalculating a new attack path to the target (before increases are applied).",
+        "dataType": 3,
+        "defaultValue": 0.20000000298023224
+      },
+      {
+        "id": "on_attack",
+        "title": "Attack",
+        "description": "Defines the event to trigger when this entity successfully attacks.",
+        "dataType": 16,
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "on_kill",
+        "title": "Kill",
+        "description": "Defines the event to trigger when this entity kills the target.",
+        "dataType": 16,
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "outer_boundary_time_increase",
+        "title": "Outer Boundary Time Increase",
+        "description": "Time, in seconds, added to the attack path recalculation interval when the target is beyond \"path_outer_boundary\".",
+        "dataType": 3,
+        "defaultValue": 0.5
+      },
+      {
+        "id": "path_fail_time_increase",
+        "title": "Path Fail Time Increase",
+        "description": "Time, in seconds, added to the attack path recalculation interval when the mob cannot move along the current path.",
+        "dataType": 3,
+        "defaultValue": 0.75
+      },
+      {
+        "id": "path_inner_boundary",
+        "title": "Path Inner Boundary",
+        "description": "Distance at which to increase attack path recalculation by \"inner_boundary_time_increase\".",
+        "dataType": 3,
+        "defaultValue": 16
+      },
+      {
+        "id": "path_outer_boundary",
+        "title": "Path Outer Boundary",
+        "description": "Distance at which to increase attack path recalculation by \"outer_boundary_time_increase\".",
+        "dataType": 3,
+        "defaultValue": 32
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "random_stop_interval",
+        "title": "Random Stop Interval",
+        "description": "Defines a 1-in-N chance for the mob to stop its current attack, where N equals \"random_stop_interval\".",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "reach_multiplier",
+        "title": "Reach Multiplier",
+        "description": "Used with the base size of the entity to determine minimum target-distance before trying to deal attack damage.",
+        "dataType": 3,
+        "defaultValue": 1.5
+      },
+      {
+        "id": "require_complete_path",
+        "title": "Require Complete Path",
+        "description": "Specifies whether a full navigation path from the mob to the target is required.",
+        "dataType": 1,
+        "defaultValue": false
+      },
+      {
+        "id": "sound_event",
+        "title": "LevelSoundEvent",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "activate",
+            "title": "Activate"
+          },
+          {
+            "id": "add.chest",
+            "title": "Add.chest"
+          },
+          {
+            "id": "admire",
+            "title": "Admire"
+          },
+          {
+            "id": "agitated",
+            "title": "Agitated"
+          },
+          {
+            "id": "ambient",
+            "title": "Ambient"
+          },
+          {
+            "id": "ambient.aggressive",
+            "title": "Ambient.aggressive"
+          },
+          {
+            "id": "ambient.baby",
+            "title": "Ambient.baby"
+          },
+          {
+            "id": "ambient.basalt_deltas.additions",
+            "title": "Ambient.basalt deltas.additions"
+          },
+          {
+            "id": "ambient.basalt_deltas.loop",
+            "title": "Ambient.basalt deltas.loop"
+          },
+          {
+            "id": "ambient.basalt_deltas.mood",
+            "title": "Ambient.basalt deltas.mood"
+          },
+          {
+            "id": "ambient.candle",
+            "title": "Ambient.candle"
+          },
+          {
+            "id": "ambient.cave",
+            "title": "Ambient.cave"
+          },
+          {
+            "id": "ambient.crimson_forest.additions",
+            "title": "Ambient.crimson forest.additions"
+          },
+          {
+            "id": "ambient.crimson_forest.loop",
+            "title": "Ambient.crimson forest.loop"
+          },
+          {
+            "id": "ambient.crimson_forest.mood",
+            "title": "Ambient.crimson forest.mood"
+          },
+          {
+            "id": "ambient.in.air",
+            "title": "Ambient.in.air"
+          },
+          {
+            "id": "ambient.in.raid",
+            "title": "Ambient.in.raid"
+          },
+          {
+            "id": "ambient.in.water",
+            "title": "Ambient.in.water"
+          },
+          {
+            "id": "ambient.nether_wastes.additions",
+            "title": "Ambient.nether wastes.additions"
+          },
+          {
+            "id": "ambient.nether_wastes.loop",
+            "title": "Ambient.nether wastes.loop"
+          },
+          {
+            "id": "ambient.nether_wastes.mood",
+            "title": "Ambient.nether wastes.mood"
+          },
+          {
+            "id": "ambient.pollinate",
+            "title": "Ambient.pollinate"
+          },
+          {
+            "id": "ambient.screamer",
+            "title": "Ambient.screamer"
+          },
+          {
+            "id": "ambient.soulsand_valley.additions",
+            "title": "Ambient.soulsand valley.additions"
+          },
+          {
+            "id": "ambient.soulsand_valley.loop",
+            "title": "Ambient.soulsand valley.loop"
+          },
+          {
+            "id": "ambient.soulsand_valley.mood",
+            "title": "Ambient.soulsand valley.mood"
+          },
+          {
+            "id": "ambient.tame",
+            "title": "Ambient.tame"
+          },
+          {
+            "id": "ambient.underwater.enter",
+            "title": "Ambient.underwater.enter"
+          },
+          {
+            "id": "ambient.underwater.exit",
+            "title": "Ambient.underwater.exit"
+          },
+          {
+            "id": "ambient.warped_forest.additions",
+            "title": "Ambient.warped forest.additions"
+          },
+          {
+            "id": "ambient.warped_forest.loop",
+            "title": "Ambient.warped forest.loop"
+          },
+          {
+            "id": "ambient.warped_forest.mood",
+            "title": "Ambient.warped forest.mood"
+          },
+          {
+            "id": "ambient.weather.the_end_light_flash",
+            "title": "Ambient.weather.the end light flash"
+          },
+          {
+            "id": "ambient.worried",
+            "title": "Ambient.worried"
+          },
+          {
+            "id": "angry",
+            "title": "Angry"
+          },
+          {
+            "id": "apply_effect.bad_omen",
+            "title": "Apply effect.bad omen"
+          },
+          {
+            "id": "apply_effect.raid_omen",
+            "title": "Apply effect.raid omen"
+          },
+          {
+            "id": "apply_effect.trial_omen",
+            "title": "Apply effect.trial omen"
+          },
+          {
+            "id": "armor",
+            "title": "Armor"
+          },
+          {
+            "id": "armor.break_wolf",
+            "title": "Armor.break wolf"
+          },
+          {
+            "id": "armor.crack_wolf",
+            "title": "Armor.crack wolf"
+          },
+          {
+            "id": "armor.equip_chain",
+            "title": "Armor.equip chain"
+          },
+          {
+            "id": "armor.equip_copper",
+            "title": "Armor.equip copper"
+          },
+          {
+            "id": "armor.equip_diamond",
+            "title": "Armor.equip diamond"
+          },
+          {
+            "id": "armor.equip_elytra",
+            "title": "Armor.equip elytra"
+          },
+          {
+            "id": "armor.equip_generic",
+            "title": "Armor.equip generic"
+          },
+          {
+            "id": "armor.equip_gold",
+            "title": "Armor.equip gold"
+          },
+          {
+            "id": "armor.equip_iron",
+            "title": "Armor.equip iron"
+          },
+          {
+            "id": "armor.equip_leather",
+            "title": "Armor.equip leather"
+          },
+          {
+            "id": "armor.equip_netherite",
+            "title": "Armor.equip netherite"
+          },
+          {
+            "id": "armor.equip_wolf",
+            "title": "Armor.equip wolf"
+          },
+          {
+            "id": "armor.repair_wolf",
+            "title": "Armor.repair wolf"
+          },
+          {
+            "id": "armor.unequip_generic",
+            "title": "Armor.unequip generic"
+          },
+          {
+            "id": "armor.unequip_wolf",
+            "title": "Armor.unequip wolf"
+          },
+          {
+            "id": "attach",
+            "title": "Attach"
+          },
+          {
+            "id": "attack",
+            "title": "Attack"
+          },
+          {
+            "id": "attack.critical",
+            "title": "Attack.critical"
+          },
+          {
+            "id": "attack.nodamage",
+            "title": "Attack.nodamage"
+          },
+          {
+            "id": "attack.strong",
+            "title": "Attack.strong"
+          },
+          {
+            "id": "balloonpop",
+            "title": "Balloonpop"
+          },
+          {
+            "id": "beacon.activate",
+            "title": "Beacon.activate"
+          },
+          {
+            "id": "beacon.ambient",
+            "title": "Beacon.ambient"
+          },
+          {
+            "id": "beacon.deactivate",
+            "title": "Beacon.deactivate"
+          },
+          {
+            "id": "beacon.power",
+            "title": "Beacon.power"
+          },
+          {
+            "id": "blast",
+            "title": "Blast"
+          },
+          {
+            "id": "block.bamboo_sapling.place",
+            "title": "Block.bamboo sapling.place"
+          },
+          {
+            "id": "block.barrel.close",
+            "title": "Block.barrel.close"
+          },
+          {
+            "id": "block.barrel.open",
+            "title": "Block.barrel.open"
+          },
+          {
+            "id": "block.beehive.drip",
+            "title": "Block.beehive.drip"
+          },
+          {
+            "id": "block.beehive.enter",
+            "title": "Block.beehive.enter"
+          },
+          {
+            "id": "block.beehive.exit",
+            "title": "Block.beehive.exit"
+          },
+          {
+            "id": "block.beehive.shear",
+            "title": "Block.beehive.shear"
+          },
+          {
+            "id": "block.beehive.work",
+            "title": "Block.beehive.work"
+          },
+          {
+            "id": "block.bell.hit",
+            "title": "Block.bell.hit"
+          },
+          {
+            "id": "block.blastfurnace.fire_crackle",
+            "title": "Block.blastfurnace.fire crackle"
+          },
+          {
+            "id": "block.campfire.crackle",
+            "title": "Block.campfire.crackle"
+          },
+          {
+            "id": "block.cartography_table.use",
+            "title": "Block.cartography table.use"
+          },
+          {
+            "id": "block.click",
+            "title": "Block.click"
+          },
+          {
+            "id": "block.click.fail",
+            "title": "Block.click.fail"
+          },
+          {
+            "id": "block.composter.empty",
+            "title": "Block.composter.empty"
+          },
+          {
+            "id": "block.composter.fill",
+            "title": "Block.composter.fill"
+          },
+          {
+            "id": "block.composter.fill_success",
+            "title": "Block.composter.fill success"
+          },
+          {
+            "id": "block.composter.ready",
+            "title": "Block.composter.ready"
+          },
+          {
+            "id": "block.copper_bulb.turn_off",
+            "title": "Block.copper bulb.turn off"
+          },
+          {
+            "id": "block.copper_bulb.turn_on",
+            "title": "Block.copper bulb.turn on"
+          },
+          {
+            "id": "block.creaking_heart.trail",
+            "title": "Block.creaking heart.trail"
+          },
+          {
+            "id": "block.decorated_pot.insert",
+            "title": "Block.decorated pot.insert"
+          },
+          {
+            "id": "block.decorated_pot.insert_fail",
+            "title": "Block.decorated pot.insert fail"
+          },
+          {
+            "id": "block.enchanting_table.use",
+            "title": "Block.enchanting table.use"
+          },
+          {
+            "id": "block.end_portal.spawn",
+            "title": "Block.end portal.spawn"
+          },
+          {
+            "id": "block.end_portal_frame.fill",
+            "title": "Block.end portal frame.fill"
+          },
+          {
+            "id": "block.fletching_table.use",
+            "title": "Block.fletching table.use"
+          },
+          {
+            "id": "block.frog_spawn.break",
+            "title": "Block.frog spawn.break"
+          },
+          {
+            "id": "block.frog_spawn.hatch",
+            "title": "Block.frog spawn.hatch"
+          },
+          {
+            "id": "block.furnace.lit",
+            "title": "Block.furnace.lit"
+          },
+          {
+            "id": "block.grindstone.use",
+            "title": "Block.grindstone.use"
+          },
+          {
+            "id": "block.loom.use",
+            "title": "Block.loom.use"
+          },
+          {
+            "id": "block.scaffolding.climb",
+            "title": "Block.scaffolding.climb"
+          },
+          {
+            "id": "block.sculk.spread",
+            "title": "Block.sculk.spread"
+          },
+          {
+            "id": "block.sculk_catalyst.bloom",
+            "title": "Block.sculk catalyst.bloom"
+          },
+          {
+            "id": "block.sculk_sensor.place",
+            "title": "Block.sculk sensor.place"
+          },
+          {
+            "id": "block.sculk_shrieker.place",
+            "title": "Block.sculk shrieker.place"
+          },
+          {
+            "id": "block.sculk_shrieker.shriek",
+            "title": "Block.sculk shrieker.shriek"
+          },
+          {
+            "id": "block.sign.waxed_interact_fail",
+            "title": "Block.sign.waxed interact fail"
+          },
+          {
+            "id": "block.smithing_table.use",
+            "title": "Block.smithing table.use"
+          },
+          {
+            "id": "block.smoker.smoke",
+            "title": "Block.smoker.smoke"
+          },
+          {
+            "id": "block.sniffer_egg.crack",
+            "title": "Block.sniffer egg.crack"
+          },
+          {
+            "id": "block.sniffer_egg.hatch",
+            "title": "Block.sniffer egg.hatch"
+          },
+          {
+            "id": "block.stonecutter.use",
+            "title": "Block.stonecutter.use"
+          },
+          {
+            "id": "block.sweet_berry_bush.hurt",
+            "title": "Block.sweet berry bush.hurt"
+          },
+          {
+            "id": "block.sweet_berry_bush.pick",
+            "title": "Block.sweet berry bush.pick"
+          },
+          {
+            "id": "block.turtle_egg.attack",
+            "title": "Block.turtle egg.attack"
+          },
+          {
+            "id": "block.turtle_egg.break",
+            "title": "Block.turtle egg.break"
+          },
+          {
+            "id": "block.turtle_egg.crack",
+            "title": "Block.turtle egg.crack"
+          },
+          {
+            "id": "block.turtle_egg.hatch",
+            "title": "Block.turtle egg.hatch"
+          },
+          {
+            "id": "boost",
+            "title": "Boost"
+          },
+          {
+            "id": "born",
+            "title": "Born"
+          },
+          {
+            "id": "bottle.dragonbreath",
+            "title": "Bottle.dragonbreath"
+          },
+          {
+            "id": "bottle.empty",
+            "title": "Bottle.empty"
+          },
+          {
+            "id": "bottle.fill",
+            "title": "Bottle.fill"
+          },
+          {
+            "id": "bow",
+            "title": "Bow"
+          },
+          {
+            "id": "bow.hit",
+            "title": "Bow.hit"
+          },
+          {
+            "id": "break",
+            "title": "Break"
+          },
+          {
+            "id": "break.block",
+            "title": "Break.block"
+          },
+          {
+            "id": "break_pot",
+            "title": "Break pot"
+          },
+          {
+            "id": "breathe",
+            "title": "Breathe"
+          },
+          {
+            "id": "breeze_wind_charge.burst",
+            "title": "Breeze wind charge.burst"
+          },
+          {
+            "id": "brush",
+            "title": "Brush"
+          },
+          {
+            "id": "brush_completed",
+            "title": "Brush completed"
+          },
+          {
+            "id": "bubble.down",
+            "title": "Bubble.down"
+          },
+          {
+            "id": "bubble.downinside",
+            "title": "Bubble.downinside"
+          },
+          {
+            "id": "bubble.pop",
+            "title": "Bubble.pop"
+          },
+          {
+            "id": "bubble.up",
+            "title": "Bubble.up"
+          },
+          {
+            "id": "bubble.upinside",
+            "title": "Bubble.upinside"
+          },
+          {
+            "id": "bucket.empty.fish",
+            "title": "Bucket.empty.fish"
+          },
+          {
+            "id": "bucket.empty.lava",
+            "title": "Bucket.empty.lava"
+          },
+          {
+            "id": "bucket.empty.powder_snow",
+            "title": "Bucket.empty.powder snow"
+          },
+          {
+            "id": "bucket.empty.water",
+            "title": "Bucket.empty.water"
+          },
+          {
+            "id": "bucket.fill.fish",
+            "title": "Bucket.fill.fish"
+          },
+          {
+            "id": "bucket.fill.lava",
+            "title": "Bucket.fill.lava"
+          },
+          {
+            "id": "bucket.fill.powder_snow",
+            "title": "Bucket.fill.powder snow"
+          },
+          {
+            "id": "bucket.fill.water",
+            "title": "Bucket.fill.water"
+          },
+          {
+            "id": "bullet.hit",
+            "title": "Bullet.hit"
+          },
+          {
+            "id": "bundle.drop_contents",
+            "title": "Bundle.drop contents"
+          },
+          {
+            "id": "bundle.insert",
+            "title": "Bundle.insert"
+          },
+          {
+            "id": "bundle.insert_fail",
+            "title": "Bundle.insert fail"
+          },
+          {
+            "id": "bundle.remove_one",
+            "title": "Bundle.remove one"
+          },
+          {
+            "id": "burp",
+            "title": "Burp"
+          },
+          {
+            "id": "button.click_off",
+            "title": "Button.click off"
+          },
+          {
+            "id": "button.click_on",
+            "title": "Button.click on"
+          },
+          {
+            "id": "cake.add_candle",
+            "title": "Cake.add candle"
+          },
+          {
+            "id": "camera.take_picture",
+            "title": "Camera.take picture"
+          },
+          {
+            "id": "cant_breed",
+            "title": "Cant breed"
+          },
+          {
+            "id": "cast.spell",
+            "title": "Cast.spell"
+          },
+          {
+            "id": "cauldron_drip.lava.pointed_dripstone",
+            "title": "Cauldron drip.lava.pointed dripstone"
+          },
+          {
+            "id": "cauldron_drip.water.pointed_dripstone",
+            "title": "Cauldron drip.water.pointed dripstone"
+          },
+          {
+            "id": "celebrate",
+            "title": "Celebrate"
+          },
+          {
+            "id": "charge",
+            "title": "Charge"
+          },
+          {
+            "id": "charge.sculk",
+            "title": "Charge.sculk"
+          },
+          {
+            "id": "chest.closed",
+            "title": "Chest.closed"
+          },
+          {
+            "id": "chest.open",
+            "title": "Chest.open"
+          },
+          {
+            "id": "chime.amethyst_block",
+            "title": "Chime.amethyst block"
+          },
+          {
+            "id": "chorusdeath",
+            "title": "Chorusdeath"
+          },
+          {
+            "id": "chorusgrow",
+            "title": "Chorusgrow"
+          },
+          {
+            "id": "close",
+            "title": "Close"
+          },
+          {
+            "id": "close_long",
+            "title": "Close long"
+          },
+          {
+            "id": "conduit.activate",
+            "title": "Conduit.activate"
+          },
+          {
+            "id": "conduit.ambient",
+            "title": "Conduit.ambient"
+          },
+          {
+            "id": "conduit.attack",
+            "title": "Conduit.attack"
+          },
+          {
+            "id": "conduit.deactivate",
+            "title": "Conduit.deactivate"
+          },
+          {
+            "id": "conduit.short",
+            "title": "Conduit.short"
+          },
+          {
+            "id": "convert_mooshroom",
+            "title": "Convert mooshroom"
+          },
+          {
+            "id": "convert_to_drowned",
+            "title": "Convert to drowned"
+          },
+          {
+            "id": "convert_to_frog",
+            "title": "Convert to frog"
+          },
+          {
+            "id": "convert_to_stray",
+            "title": "Convert to stray"
+          },
+          {
+            "id": "converted_to_zombified",
+            "title": "Converted to zombified"
+          },
+          {
+            "id": "copper.wax.off",
+            "title": "Copper.wax.off"
+          },
+          {
+            "id": "copper.wax.on",
+            "title": "Copper.wax.on"
+          },
+          {
+            "id": "crafter.craft",
+            "title": "Crafter.craft"
+          },
+          {
+            "id": "crafter.disable_slot",
+            "title": "Crafter.disable slot"
+          },
+          {
+            "id": "crafter.fail",
+            "title": "Crafter.fail"
+          },
+          {
+            "id": "creaking_heart_spawn",
+            "title": "Creaking heart spawn"
+          },
+          {
+            "id": "crossbow.loading.end",
+            "title": "Crossbow.loading.end"
+          },
+          {
+            "id": "crossbow.loading.middle",
+            "title": "Crossbow.loading.middle"
+          },
+          {
+            "id": "crossbow.loading.start",
+            "title": "Crossbow.loading.start"
+          },
+          {
+            "id": "crossbow.quick_charge.end",
+            "title": "Crossbow.quick charge.end"
+          },
+          {
+            "id": "crossbow.quick_charge.middle",
+            "title": "Crossbow.quick charge.middle"
+          },
+          {
+            "id": "crossbow.quick_charge.start",
+            "title": "Crossbow.quick charge.start"
+          },
+          {
+            "id": "crossbow.shoot",
+            "title": "Crossbow.shoot"
+          },
+          {
+            "id": "dash_ready",
+            "title": "Dash ready"
+          },
+          {
+            "id": "deactivate",
+            "title": "Deactivate"
+          },
+          {
+            "id": "death",
+            "title": "Death"
+          },
+          {
+            "id": "death.baby",
+            "title": "Death.baby"
+          },
+          {
+            "id": "death.in.water",
+            "title": "Death.in.water"
+          },
+          {
+            "id": "death.mid.volume",
+            "title": "Death.mid.volume"
+          },
+          {
+            "id": "death.min.volume",
+            "title": "Death.min.volume"
+          },
+          {
+            "id": "death.screamer",
+            "title": "Death.screamer"
+          },
+          {
+            "id": "death.to.zombie",
+            "title": "Death.to.zombie"
+          },
+          {
+            "id": "default",
+            "title": "Default"
+          },
+          {
+            "id": "deny",
+            "title": "Deny"
+          },
+          {
+            "id": "detach",
+            "title": "Detach"
+          },
+          {
+            "id": "disappeared",
+            "title": "Disappeared"
+          },
+          {
+            "id": "door.close",
+            "title": "Door.close"
+          },
+          {
+            "id": "door.open",
+            "title": "Door.open"
+          },
+          {
+            "id": "drink",
+            "title": "Drink"
+          },
+          {
+            "id": "drink.honey",
+            "title": "Drink.honey"
+          },
+          {
+            "id": "drink.milk",
+            "title": "Drink.milk"
+          },
+          {
+            "id": "drip.lava.pointed_dripstone",
+            "title": "Drip.lava.pointed dripstone"
+          },
+          {
+            "id": "drip.water.pointed_dripstone",
+            "title": "Drip.water.pointed dripstone"
+          },
+          {
+            "id": "drop.slot",
+            "title": "Drop.slot"
+          },
+          {
+            "id": "eat",
+            "title": "Eat"
+          },
+          {
+            "id": "elderguardian.curse",
+            "title": "Elderguardian.curse"
+          },
+          {
+            "id": "elemconstruct.open",
+            "title": "Elemconstruct.open"
+          },
+          {
+            "id": "enderchest.closed",
+            "title": "Enderchest.closed"
+          },
+          {
+            "id": "enderchest.open",
+            "title": "Enderchest.open"
+          },
+          {
+            "id": "explode",
+            "title": "Explode"
+          },
+          {
+            "id": "extinguish.candle",
+            "title": "Extinguish.candle"
+          },
+          {
+            "id": "extinguish.fire",
+            "title": "Extinguish.fire"
+          },
+          {
+            "id": "fall",
+            "title": "Fall"
+          },
+          {
+            "id": "fall.big",
+            "title": "Fall.big"
+          },
+          {
+            "id": "fall.small",
+            "title": "Fall.small"
+          },
+          {
+            "id": "fang",
+            "title": "Fang"
+          },
+          {
+            "id": "fence_gate.close",
+            "title": "Fence gate.close"
+          },
+          {
+            "id": "fence_gate.open",
+            "title": "Fence gate.open"
+          },
+          {
+            "id": "fire",
+            "title": "Fire"
+          },
+          {
+            "id": "fizz",
+            "title": "Fizz"
+          },
+          {
+            "id": "flap",
+            "title": "Flap"
+          },
+          {
+            "id": "flop",
+            "title": "Flop"
+          },
+          {
+            "id": "fly",
+            "title": "Fly"
+          },
+          {
+            "id": "freeze",
+            "title": "Freeze"
+          },
+          {
+            "id": "fuse",
+            "title": "Fuse"
+          },
+          {
+            "id": "gallop",
+            "title": "Gallop"
+          },
+          {
+            "id": "glass",
+            "title": "Glass"
+          },
+          {
+            "id": "glow_squid.ink_squirt",
+            "title": "Glow squid.ink squirt"
+          },
+          {
+            "id": "glowstick.use",
+            "title": "Glowstick.use"
+          },
+          {
+            "id": "growl",
+            "title": "Growl"
+          },
+          {
+            "id": "haggle",
+            "title": "Haggle"
+          },
+          {
+            "id": "haggle.idle",
+            "title": "Haggle.idle"
+          },
+          {
+            "id": "haggle.no",
+            "title": "Haggle.no"
+          },
+          {
+            "id": "haggle.yes",
+            "title": "Haggle.yes"
+          },
+          {
+            "id": "heartbeat",
+            "title": "Heartbeat"
+          },
+          {
+            "id": "heavy.step",
+            "title": "Heavy.step"
+          },
+          {
+            "id": "hit",
+            "title": "Hit"
+          },
+          {
+            "id": "horn_break",
+            "title": "Horn break"
+          },
+          {
+            "id": "horn_call0",
+            "title": "Horn call0"
+          },
+          {
+            "id": "horn_call1",
+            "title": "Horn call1"
+          },
+          {
+            "id": "horn_call2",
+            "title": "Horn call2"
+          },
+          {
+            "id": "horn_call3",
+            "title": "Horn call3"
+          },
+          {
+            "id": "horn_call4",
+            "title": "Horn call4"
+          },
+          {
+            "id": "horn_call5",
+            "title": "Horn call5"
+          },
+          {
+            "id": "horn_call6",
+            "title": "Horn call6"
+          },
+          {
+            "id": "horn_call7",
+            "title": "Horn call7"
+          },
+          {
+            "id": "hurt",
+            "title": "Hurt"
+          },
+          {
+            "id": "hurt.baby",
+            "title": "Hurt.baby"
+          },
+          {
+            "id": "hurt.in.water",
+            "title": "Hurt.in.water"
+          },
+          {
+            "id": "hurt.reduced",
+            "title": "Hurt.reduced"
+          },
+          {
+            "id": "hurt.screamer",
+            "title": "Hurt.screamer"
+          },
+          {
+            "id": "icebomb.hit",
+            "title": "Icebomb.hit"
+          },
+          {
+            "id": "ignite",
+            "title": "Ignite"
+          },
+          {
+            "id": "imitate.blaze",
+            "title": "Imitate.blaze"
+          },
+          {
+            "id": "imitate.bogged",
+            "title": "Imitate.bogged"
+          },
+          {
+            "id": "imitate.breeze",
+            "title": "Imitate.breeze"
+          },
+          {
+            "id": "imitate.camel_husk",
+            "title": "Imitate.camel husk"
+          },
+          {
+            "id": "imitate.cave_spider",
+            "title": "Imitate.cave spider"
+          },
+          {
+            "id": "imitate.creaking",
+            "title": "Imitate.creaking"
+          },
+          {
+            "id": "imitate.creeper",
+            "title": "Imitate.creeper"
+          },
+          {
+            "id": "imitate.drowned",
+            "title": "Imitate.drowned"
+          },
+          {
+            "id": "imitate.elder_guardian",
+            "title": "Imitate.elder guardian"
+          },
+          {
+            "id": "imitate.ender_dragon",
+            "title": "Imitate.ender dragon"
+          },
+          {
+            "id": "imitate.enderman",
+            "title": "Imitate.enderman"
+          },
+          {
+            "id": "imitate.endermite",
+            "title": "Imitate.endermite"
+          },
+          {
+            "id": "imitate.evocation_illager",
+            "title": "Imitate.evocation illager"
+          },
+          {
+            "id": "imitate.ghast",
+            "title": "Imitate.ghast"
+          },
+          {
+            "id": "imitate.guardian",
+            "title": "Imitate.guardian"
+          },
+          {
+            "id": "imitate.happy_ghast",
+            "title": "Imitate.happy ghast"
+          },
+          {
+            "id": "imitate.husk",
+            "title": "Imitate.husk"
+          },
+          {
+            "id": "imitate.magma_cube",
+            "title": "Imitate.magma cube"
+          },
+          {
+            "id": "imitate.parched",
+            "title": "Imitate.parched"
+          },
+          {
+            "id": "imitate.phantom",
+            "title": "Imitate.phantom"
+          },
+          {
+            "id": "imitate.pillager",
+            "title": "Imitate.pillager"
+          },
+          {
+            "id": "imitate.polar_bear",
+            "title": "Imitate.polar bear"
+          },
+          {
+            "id": "imitate.ravager",
+            "title": "Imitate.ravager"
+          },
+          {
+            "id": "imitate.shulker",
+            "title": "Imitate.shulker"
+          },
+          {
+            "id": "imitate.silverfish",
+            "title": "Imitate.silverfish"
+          },
+          {
+            "id": "imitate.skeleton",
+            "title": "Imitate.skeleton"
+          },
+          {
+            "id": "imitate.slime",
+            "title": "Imitate.slime"
+          },
+          {
+            "id": "imitate.spider",
+            "title": "Imitate.spider"
+          },
+          {
+            "id": "imitate.stray",
+            "title": "Imitate.stray"
+          },
+          {
+            "id": "imitate.vex",
+            "title": "Imitate.vex"
+          },
+          {
+            "id": "imitate.vindication_illager",
+            "title": "Imitate.vindication illager"
+          },
+          {
+            "id": "imitate.warden",
+            "title": "Imitate.warden"
+          },
+          {
+            "id": "imitate.witch",
+            "title": "Imitate.witch"
+          },
+          {
+            "id": "imitate.wither",
+            "title": "Imitate.wither"
+          },
+          {
+            "id": "imitate.wither_skeleton",
+            "title": "Imitate.wither skeleton"
+          },
+          {
+            "id": "imitate.wolf",
+            "title": "Imitate.wolf"
+          },
+          {
+            "id": "imitate.zoglin",
+            "title": "Imitate.zoglin"
+          },
+          {
+            "id": "imitate.zombie",
+            "title": "Imitate.zombie"
+          },
+          {
+            "id": "imitate.zombie_pigman",
+            "title": "Imitate.zombie pigman"
+          },
+          {
+            "id": "imitate.zombie_villager",
+            "title": "Imitate.zombie villager"
+          },
+          {
+            "id": "insert",
+            "title": "Insert"
+          },
+          {
+            "id": "insert_enchanted",
+            "title": "Insert enchanted"
+          },
+          {
+            "id": "irongolem.crack",
+            "title": "Irongolem.crack"
+          },
+          {
+            "id": "irongolem.repair",
+            "title": "Irongolem.repair"
+          },
+          {
+            "id": "item.book.put",
+            "title": "Item.book.put"
+          },
+          {
+            "id": "item.copper_spear.attack_hit",
+            "title": "Item.copper spear.attack hit"
+          },
+          {
+            "id": "item.copper_spear.attack_miss",
+            "title": "Item.copper spear.attack miss"
+          },
+          {
+            "id": "item.copper_spear.use",
+            "title": "Item.copper spear.use"
+          },
+          {
+            "id": "item.diamond_spear.attack_hit",
+            "title": "Item.diamond spear.attack hit"
+          },
+          {
+            "id": "item.diamond_spear.attack_miss",
+            "title": "Item.diamond spear.attack miss"
+          },
+          {
+            "id": "item.diamond_spear.use",
+            "title": "Item.diamond spear.use"
+          },
+          {
+            "id": "item.enchant.lunge1",
+            "title": "Item.enchant.lunge1"
+          },
+          {
+            "id": "item.enchant.lunge2",
+            "title": "Item.enchant.lunge2"
+          },
+          {
+            "id": "item.enchant.lunge3",
+            "title": "Item.enchant.lunge3"
+          },
+          {
+            "id": "item.fizz",
+            "title": "Item.fizz"
+          },
+          {
+            "id": "item.golden_spear.attack_hit",
+            "title": "Item.golden spear.attack hit"
+          },
+          {
+            "id": "item.golden_spear.attack_miss",
+            "title": "Item.golden spear.attack miss"
+          },
+          {
+            "id": "item.golden_spear.use",
+            "title": "Item.golden spear.use"
+          },
+          {
+            "id": "item.iron_spear.attack_hit",
+            "title": "Item.iron spear.attack hit"
+          },
+          {
+            "id": "item.iron_spear.attack_miss",
+            "title": "Item.iron spear.attack miss"
+          },
+          {
+            "id": "item.iron_spear.use",
+            "title": "Item.iron spear.use"
+          },
+          {
+            "id": "item.netherite_spear.attack_hit",
+            "title": "Item.netherite spear.attack hit"
+          },
+          {
+            "id": "item.netherite_spear.attack_miss",
+            "title": "Item.netherite spear.attack miss"
+          },
+          {
+            "id": "item.netherite_spear.use",
+            "title": "Item.netherite spear.use"
+          },
+          {
+            "id": "item.shield.block",
+            "title": "Item.shield.block"
+          },
+          {
+            "id": "item.spear.attack_hit",
+            "title": "Item.spear.attack hit"
+          },
+          {
+            "id": "item.spear.attack_miss",
+            "title": "Item.spear.attack miss"
+          },
+          {
+            "id": "item.spear.use",
+            "title": "Item.spear.use"
+          },
+          {
+            "id": "item.spyglass.stop_using",
+            "title": "Item.spyglass.stop using"
+          },
+          {
+            "id": "item.spyglass.use",
+            "title": "Item.spyglass.use"
+          },
+          {
+            "id": "item.stone_spear.attack_hit",
+            "title": "Item.stone spear.attack hit"
+          },
+          {
+            "id": "item.stone_spear.attack_miss",
+            "title": "Item.stone spear.attack miss"
+          },
+          {
+            "id": "item.stone_spear.use",
+            "title": "Item.stone spear.use"
+          },
+          {
+            "id": "item.trident.hit",
+            "title": "Item.trident.hit"
+          },
+          {
+            "id": "item.trident.hit_ground",
+            "title": "Item.trident.hit ground"
+          },
+          {
+            "id": "item.trident.return",
+            "title": "Item.trident.return"
+          },
+          {
+            "id": "item.trident.riptide_1",
+            "title": "Item.trident.riptide 1"
+          },
+          {
+            "id": "item.trident.riptide_2",
+            "title": "Item.trident.riptide 2"
+          },
+          {
+            "id": "item.trident.riptide_3",
+            "title": "Item.trident.riptide 3"
+          },
+          {
+            "id": "item.trident.throw",
+            "title": "Item.trident.throw"
+          },
+          {
+            "id": "item.trident.thunder",
+            "title": "Item.trident.thunder"
+          },
+          {
+            "id": "item.use.on",
+            "title": "Item.use.on"
+          },
+          {
+            "id": "item.wooden_spear.attack_hit",
+            "title": "Item.wooden spear.attack hit"
+          },
+          {
+            "id": "item.wooden_spear.attack_miss",
+            "title": "Item.wooden spear.attack miss"
+          },
+          {
+            "id": "item.wooden_spear.use",
+            "title": "Item.wooden spear.use"
+          },
+          {
+            "id": "item_given",
+            "title": "Item given"
+          },
+          {
+            "id": "item_taken",
+            "title": "Item taken"
+          },
+          {
+            "id": "item_thrown",
+            "title": "Item thrown"
+          },
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "jump.prevent",
+            "title": "Jump.prevent"
+          },
+          {
+            "id": "jump_to_block",
+            "title": "Jump to block"
+          },
+          {
+            "id": "land",
+            "title": "Land"
+          },
+          {
+            "id": "large.blast",
+            "title": "Large.blast"
+          },
+          {
+            "id": "launch",
+            "title": "Launch"
+          },
+          {
+            "id": "lava",
+            "title": "Lava"
+          },
+          {
+            "id": "lava.pop",
+            "title": "Lava.pop"
+          },
+          {
+            "id": "lay_egg",
+            "title": "Lay egg"
+          },
+          {
+            "id": "lay_spawn",
+            "title": "Lay spawn"
+          },
+          {
+            "id": "lead.break",
+            "title": "Lead.break"
+          },
+          {
+            "id": "lead.leash",
+            "title": "Lead.leash"
+          },
+          {
+            "id": "lead.unleash",
+            "title": "Lead.unleash"
+          },
+          {
+            "id": "leashknot.break",
+            "title": "Leashknot.break"
+          },
+          {
+            "id": "leashknot.place",
+            "title": "Leashknot.place"
+          },
+          {
+            "id": "levelup",
+            "title": "Levelup"
+          },
+          {
+            "id": "listening",
+            "title": "Listening"
+          },
+          {
+            "id": "listening_angry",
+            "title": "Listening angry"
+          },
+          {
+            "id": "lodestone_compass.link_compass_to_lodestone",
+            "title": "Lodestone compass.link compass to lodestone"
+          },
+          {
+            "id": "lt.reaction.bleach",
+            "title": "Lt.reaction.bleach"
+          },
+          {
+            "id": "lt.reaction.epaste",
+            "title": "Lt.reaction.epaste"
+          },
+          {
+            "id": "lt.reaction.epaste2",
+            "title": "Lt.reaction.epaste2"
+          },
+          {
+            "id": "lt.reaction.fertilizer",
+            "title": "Lt.reaction.fertilizer"
+          },
+          {
+            "id": "lt.reaction.fire",
+            "title": "Lt.reaction.fire"
+          },
+          {
+            "id": "lt.reaction.fireball",
+            "title": "Lt.reaction.fireball"
+          },
+          {
+            "id": "lt.reaction.icebomb",
+            "title": "Lt.reaction.icebomb"
+          },
+          {
+            "id": "lt.reaction.mgsalt",
+            "title": "Lt.reaction.mgsalt"
+          },
+          {
+            "id": "lt.reaction.miscexplosion",
+            "title": "Lt.reaction.miscexplosion"
+          },
+          {
+            "id": "lt.reaction.miscfire",
+            "title": "Lt.reaction.miscfire"
+          },
+          {
+            "id": "lt.reaction.miscmystical",
+            "title": "Lt.reaction.miscmystical"
+          },
+          {
+            "id": "lt.reaction.miscmystical2",
+            "title": "Lt.reaction.miscmystical2"
+          },
+          {
+            "id": "lt.reaction.product",
+            "title": "Lt.reaction.product"
+          },
+          {
+            "id": "mace.heavy_smash_ground",
+            "title": "Mace.heavy smash ground"
+          },
+          {
+            "id": "mace.smash_air",
+            "title": "Mace.smash air"
+          },
+          {
+            "id": "mace.smash_ground",
+            "title": "Mace.smash ground"
+          },
+          {
+            "id": "mad",
+            "title": "Mad"
+          },
+          {
+            "id": "milk",
+            "title": "Milk"
+          },
+          {
+            "id": "milk.screamer",
+            "title": "Milk.screamer"
+          },
+          {
+            "id": "milk_suspiciously",
+            "title": "Milk suspiciously"
+          },
+          {
+            "id": "mob.armadillo.brush",
+            "title": "Mob.armadillo.brush"
+          },
+          {
+            "id": "mob.armadillo.scute_drop",
+            "title": "Mob.armadillo.scute drop"
+          },
+          {
+            "id": "mob.armor_stand.place",
+            "title": "Mob.armor stand.place"
+          },
+          {
+            "id": "mob.hoglin.converted_to_zombified",
+            "title": "Mob.hoglin.converted to zombified"
+          },
+          {
+            "id": "mob.husk.convert_to_zombie",
+            "title": "Mob.husk.convert to zombie"
+          },
+          {
+            "id": "mob.pig.death",
+            "title": "Mob.pig.death"
+          },
+          {
+            "id": "mob.player.hurt_drown",
+            "title": "Mob.player.hurt drown"
+          },
+          {
+            "id": "mob.player.hurt_freeze",
+            "title": "Mob.player.hurt freeze"
+          },
+          {
+            "id": "mob.player.hurt_on_fire",
+            "title": "Mob.player.hurt on fire"
+          },
+          {
+            "id": "mob.warning",
+            "title": "Mob.warning"
+          },
+          {
+            "id": "mob.warning.baby",
+            "title": "Mob.warning.baby"
+          },
+          {
+            "id": "multi_swap",
+            "title": "Multi swap"
+          },
+          {
+            "id": "nearby_close",
+            "title": "Nearby close"
+          },
+          {
+            "id": "nearby_closer",
+            "title": "Nearby closer"
+          },
+          {
+            "id": "nearby_closest",
+            "title": "Nearby closest"
+          },
+          {
+            "id": "note",
+            "title": "Note"
+          },
+          {
+            "id": "note.bass",
+            "title": "Note.bass"
+          },
+          {
+            "id": "ominous_bottle.end_use",
+            "title": "Ominous bottle.end use"
+          },
+          {
+            "id": "ominous_item_spawner.about_to_spawn_item",
+            "title": "Ominous item spawner.about to spawn item"
+          },
+          {
+            "id": "ominous_item_spawner.spawn_item",
+            "title": "Ominous item spawner.spawn item"
+          },
+          {
+            "id": "ominous_item_spawner.spawn_item_begin",
+            "title": "Ominous item spawner.spawn item begin"
+          },
+          {
+            "id": "open",
+            "title": "Open"
+          },
+          {
+            "id": "open_long",
+            "title": "Open long"
+          },
+          {
+            "id": "panic",
+            "title": "Panic"
+          },
+          {
+            "id": "pant",
+            "title": "Pant"
+          },
+          {
+            "id": "particle.soul_escape.loud",
+            "title": "Particle.soul escape.loud"
+          },
+          {
+            "id": "particle.soul_escape.quiet",
+            "title": "Particle.soul escape.quiet"
+          },
+          {
+            "id": "pick_berries.cave_vines",
+            "title": "Pick berries.cave vines"
+          },
+          {
+            "id": "pickup",
+            "title": "Pickup"
+          },
+          {
+            "id": "pickup_enchanted",
+            "title": "Pickup enchanted"
+          },
+          {
+            "id": "piston.in",
+            "title": "Piston.in"
+          },
+          {
+            "id": "piston.out",
+            "title": "Piston.out"
+          },
+          {
+            "id": "place",
+            "title": "Place"
+          },
+          {
+            "id": "place_in_water",
+            "title": "Place in water"
+          },
+          {
+            "id": "place_item",
+            "title": "Place item"
+          },
+          {
+            "id": "plop",
+            "title": "Plop"
+          },
+          {
+            "id": "pop",
+            "title": "Pop"
+          },
+          {
+            "id": "portal",
+            "title": "Portal"
+          },
+          {
+            "id": "portal.travel",
+            "title": "Portal.travel"
+          },
+          {
+            "id": "potion.brewed",
+            "title": "Potion.brewed"
+          },
+          {
+            "id": "power.off",
+            "title": "Power.off"
+          },
+          {
+            "id": "power.off.sculk_sensor",
+            "title": "Power.off.sculk sensor"
+          },
+          {
+            "id": "power.on",
+            "title": "Power.on"
+          },
+          {
+            "id": "power.on.sculk_sensor",
+            "title": "Power.on.sculk sensor"
+          },
+          {
+            "id": "pre_ram",
+            "title": "Pre ram"
+          },
+          {
+            "id": "pre_ram.screamer",
+            "title": "Pre ram.screamer"
+          },
+          {
+            "id": "prepare.attack",
+            "title": "Prepare.attack"
+          },
+          {
+            "id": "prepare.summon",
+            "title": "Prepare.summon"
+          },
+          {
+            "id": "prepare.wololo",
+            "title": "Prepare.wololo"
+          },
+          {
+            "id": "presneeze",
+            "title": "Presneeze"
+          },
+          {
+            "id": "pressure_plate.click_off",
+            "title": "Pressure plate.click off"
+          },
+          {
+            "id": "pressure_plate.click_on",
+            "title": "Pressure plate.click on"
+          },
+          {
+            "id": "pumpkin.carve",
+            "title": "Pumpkin.carve"
+          },
+          {
+            "id": "purr",
+            "title": "Purr"
+          },
+          {
+            "id": "purreow",
+            "title": "Purreow"
+          },
+          {
+            "id": "raid.horn",
+            "title": "Raid.horn"
+          },
+          {
+            "id": "ram_impact",
+            "title": "Ram impact"
+          },
+          {
+            "id": "ram_impact.screamer",
+            "title": "Ram impact.screamer"
+          },
+          {
+            "id": "random.anvil_use",
+            "title": "Random.anvil use"
+          },
+          {
+            "id": "reappeared",
+            "title": "Reappeared"
+          },
+          {
+            "id": "record.11",
+            "title": "Record.11"
+          },
+          {
+            "id": "record.13",
+            "title": "Record.13"
+          },
+          {
+            "id": "record.5",
+            "title": "Record.5"
+          },
+          {
+            "id": "record.blocks",
+            "title": "Record.blocks"
+          },
+          {
+            "id": "record.cat",
+            "title": "Record.cat"
+          },
+          {
+            "id": "record.chirp",
+            "title": "Record.chirp"
+          },
+          {
+            "id": "record.creator",
+            "title": "Record.creator"
+          },
+          {
+            "id": "record.creator_music_box",
+            "title": "Record.creator music box"
+          },
+          {
+            "id": "record.far",
+            "title": "Record.far"
+          },
+          {
+            "id": "record.lava_chicken",
+            "title": "Record.lava chicken"
+          },
+          {
+            "id": "record.mall",
+            "title": "Record.mall"
+          },
+          {
+            "id": "record.mellohi",
+            "title": "Record.mellohi"
+          },
+          {
+            "id": "record.otherside",
+            "title": "Record.otherside"
+          },
+          {
+            "id": "record.pigstep",
+            "title": "Record.pigstep"
+          },
+          {
+            "id": "record.precipice",
+            "title": "Record.precipice"
+          },
+          {
+            "id": "record.relic",
+            "title": "Record.relic"
+          },
+          {
+            "id": "record.stal",
+            "title": "Record.stal"
+          },
+          {
+            "id": "record.strad",
+            "title": "Record.strad"
+          },
+          {
+            "id": "record.tears",
+            "title": "Record.tears"
+          },
+          {
+            "id": "record.wait",
+            "title": "Record.wait"
+          },
+          {
+            "id": "record.ward",
+            "title": "Record.ward"
+          },
+          {
+            "id": "reflect",
+            "title": "Reflect"
+          },
+          {
+            "id": "remedy",
+            "title": "Remedy"
+          },
+          {
+            "id": "respawn_anchor.ambient",
+            "title": "Respawn anchor.ambient"
+          },
+          {
+            "id": "respawn_anchor.charge",
+            "title": "Respawn anchor.charge"
+          },
+          {
+            "id": "respawn_anchor.deplete",
+            "title": "Respawn anchor.deplete"
+          },
+          {
+            "id": "respawn_anchor.set_spawn",
+            "title": "Respawn anchor.set spawn"
+          },
+          {
+            "id": "retreat",
+            "title": "Retreat"
+          },
+          {
+            "id": "roar",
+            "title": "Roar"
+          },
+          {
+            "id": "saddle",
+            "title": "Saddle"
+          },
+          {
+            "id": "saddle_in_water",
+            "title": "Saddle in water"
+          },
+          {
+            "id": "scared",
+            "title": "Scared"
+          },
+          {
+            "id": "scrape",
+            "title": "Scrape"
+          },
+          {
+            "id": "screech",
+            "title": "Screech"
+          },
+          {
+            "id": "shake",
+            "title": "Shake"
+          },
+          {
+            "id": "shatter_pot",
+            "title": "Shatter pot"
+          },
+          {
+            "id": "shear",
+            "title": "Shear"
+          },
+          {
+            "id": "shoot",
+            "title": "Shoot"
+          },
+          {
+            "id": "shulker.close",
+            "title": "Shulker.close"
+          },
+          {
+            "id": "shulker.open",
+            "title": "Shulker.open"
+          },
+          {
+            "id": "shulkerbox.closed",
+            "title": "Shulkerbox.closed"
+          },
+          {
+            "id": "shulkerbox.open",
+            "title": "Shulkerbox.open"
+          },
+          {
+            "id": "single_swap",
+            "title": "Single swap"
+          },
+          {
+            "id": "sleep",
+            "title": "Sleep"
+          },
+          {
+            "id": "smithing_table.use",
+            "title": "Smithing table.use"
+          },
+          {
+            "id": "sneeze",
+            "title": "Sneeze"
+          },
+          {
+            "id": "sonic_boom",
+            "title": "Sonic boom"
+          },
+          {
+            "id": "sonic_charge",
+            "title": "Sonic charge"
+          },
+          {
+            "id": "sparkler.active",
+            "title": "Sparkler.active"
+          },
+          {
+            "id": "sparkler.use",
+            "title": "Sparkler.use"
+          },
+          {
+            "id": "spawn",
+            "title": "Spawn"
+          },
+          {
+            "id": "splash",
+            "title": "Splash"
+          },
+          {
+            "id": "sponge.absorb",
+            "title": "Sponge.absorb"
+          },
+          {
+            "id": "squid.ink_squirt",
+            "title": "Squid.ink squirt"
+          },
+          {
+            "id": "squish.big",
+            "title": "Squish.big"
+          },
+          {
+            "id": "squish.small",
+            "title": "Squish.small"
+          },
+          {
+            "id": "stare",
+            "title": "Stare"
+          },
+          {
+            "id": "state_change",
+            "title": "State change"
+          },
+          {
+            "id": "step",
+            "title": "Step"
+          },
+          {
+            "id": "step.baby",
+            "title": "Step.baby"
+          },
+          {
+            "id": "step_lava",
+            "title": "Step lava"
+          },
+          {
+            "id": "step_sand",
+            "title": "Step sand"
+          },
+          {
+            "id": "stun",
+            "title": "Stun"
+          },
+          {
+            "id": "swim",
+            "title": "Swim"
+          },
+          {
+            "id": "swoop",
+            "title": "Swoop"
+          },
+          {
+            "id": "takeoff",
+            "title": "Takeoff"
+          },
+          {
+            "id": "teleport",
+            "title": "Teleport"
+          },
+          {
+            "id": "tempt",
+            "title": "Tempt"
+          },
+          {
+            "id": "thorns",
+            "title": "Thorns"
+          },
+          {
+            "id": "throw",
+            "title": "Throw"
+          },
+          {
+            "id": "thunder",
+            "title": "Thunder"
+          },
+          {
+            "id": "tilt_down.big_dripleaf",
+            "title": "Tilt down.big dripleaf"
+          },
+          {
+            "id": "tilt_up.big_dripleaf",
+            "title": "Tilt up.big dripleaf"
+          },
+          {
+            "id": "tongue",
+            "title": "Tongue"
+          },
+          {
+            "id": "trapdoor.close",
+            "title": "Trapdoor.close"
+          },
+          {
+            "id": "trapdoor.open",
+            "title": "Trapdoor.open"
+          },
+          {
+            "id": "trial_spawner.ambient",
+            "title": "Trial spawner.ambient"
+          },
+          {
+            "id": "trial_spawner.ambient_ominous",
+            "title": "Trial spawner.ambient ominous"
+          },
+          {
+            "id": "trial_spawner.charge_activate",
+            "title": "Trial spawner.charge activate"
+          },
+          {
+            "id": "trial_spawner.close_shutter",
+            "title": "Trial spawner.close shutter"
+          },
+          {
+            "id": "trial_spawner.detect_player",
+            "title": "Trial spawner.detect player"
+          },
+          {
+            "id": "trial_spawner.eject_item",
+            "title": "Trial spawner.eject item"
+          },
+          {
+            "id": "trial_spawner.open_shutter",
+            "title": "Trial spawner.open shutter"
+          },
+          {
+            "id": "trial_spawner.spawn_mob",
+            "title": "Trial spawner.spawn mob"
+          },
+          {
+            "id": "tripod",
+            "title": "Tripod"
+          },
+          {
+            "id": "twinkle",
+            "title": "Twinkle"
+          },
+          {
+            "id": "ui.cartography_table.take_result",
+            "title": "Ui.cartography table.take result"
+          },
+          {
+            "id": "ui.loom.take_result",
+            "title": "Ui.loom.take result"
+          },
+          {
+            "id": "ui.stonecutter.take_result",
+            "title": "Ui.stonecutter.take result"
+          },
+          {
+            "id": "undefined",
+            "title": "Undefined"
+          },
+          {
+            "id": "unfect",
+            "title": "Unfect"
+          },
+          {
+            "id": "unfreeze",
+            "title": "Unfreeze"
+          },
+          {
+            "id": "unsaddle",
+            "title": "Unsaddle"
+          },
+          {
+            "id": "vault.activate",
+            "title": "Vault.activate"
+          },
+          {
+            "id": "vault.ambient",
+            "title": "Vault.ambient"
+          },
+          {
+            "id": "vault.close_shutter",
+            "title": "Vault.close shutter"
+          },
+          {
+            "id": "vault.deactivate",
+            "title": "Vault.deactivate"
+          },
+          {
+            "id": "vault.eject_item",
+            "title": "Vault.eject item"
+          },
+          {
+            "id": "vault.insert_item",
+            "title": "Vault.insert item"
+          },
+          {
+            "id": "vault.insert_item_fail",
+            "title": "Vault.insert item fail"
+          },
+          {
+            "id": "vault.open_shutter",
+            "title": "Vault.open shutter"
+          },
+          {
+            "id": "vault.reject_rewarded_player",
+            "title": "Vault.reject rewarded player"
+          },
+          {
+            "id": "warn",
+            "title": "Warn"
+          },
+          {
+            "id": "water",
+            "title": "Water"
+          },
+          {
+            "id": "whine",
+            "title": "Whine"
+          },
+          {
+            "id": "wind_charge.burst",
+            "title": "Wind charge.burst"
+          }
+        ],
+        "defaultValue": "attack.strong"
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Multiplier applied to the mob's movement speed when moving toward its target.",
+        "dataType": 3,
+        "defaultValue": 1
+      },
+      {
+        "id": "track_target",
+        "title": "Track Target",
+        "description": "Allows the mob to track its target even if it lacks a hard-coded sensing component.",
+        "dataType": 1,
+        "defaultValue": true
+      },
+      {
+        "id": "x_max_rotation",
+        "title": "x Max Rotation",
+        "description": "Maximum rotation, in degrees, on the X-axis while the mob is trying to look at its target.",
+        "dataType": 3,
+        "defaultValue": 30
+      },
+      {
+        "id": "y_max_head_rotation",
+        "title": "y Max Head Rotation",
+        "description": "Maximum rotation, in degrees, on the Y-axis while the mob is trying to look at its target.",
+        "dataType": 3,
+        "defaultValue": 30
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "cmd_testforblock",
+  "title": "testforblock",
+  "description": "Tests whether a certain block is in a specific location.",
+  "fields": [
+    {
+      "id": "position",
+      "title": "position",
+      "type": "string",
+      "isOptional": false,
+      "description": "Required. A `vector` of the location the block to test.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "tilename",
+      "title": "tileName",
+      "type": "string",
+      "isOptional": false,
+      "description": "Required. An `enum` of the block to test for.",
+      "subFormId": "type_block",
+      "commandType": "BLOCK"
+    },
+    {
+      "id": "blockstates",
+      "title": "blockStates",
+      "type": "string",
+      "isOptional": true,
+      "description": "Optional. The `block states` to match when testing.",
+      "commandType": "BLOCK_STATE_ARRAY"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "2",
+      "title": "Test for block, optional block state",
+      "description": "Test for a `block name` in a `vector` position with optional `block states`.",
+      "params": [
+        {
+          "name": "position",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "tilename",
+          "type": "BLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "blockstates",
+          "type": "BLOCK_STATE_ARRAY",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

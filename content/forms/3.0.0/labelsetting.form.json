@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "3.0.0.LabelSetting",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies a label setting with display text"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "3.0.0.LabelSetting",
@@ -36,5 +49,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "A read-only text label in the pack's world settings UI. Use labels to display instructions, section headers, or explanatory text between interactive settings. Labels don't have values—they're purely informational."
 }

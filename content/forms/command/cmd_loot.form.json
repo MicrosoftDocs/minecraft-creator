@@ -1,0 +1,993 @@
+{
+  "id": "cmd_loot",
+  "title": "loot",
+  "description": "Drops the given loot table into the specified inventory or into the world.",
+  "fields": [
+    {
+      "id": "target",
+      "title": "target",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies the `entity` that will be the source of the loot",
+      "commandType": "TARGETSPAWN"
+    },
+    {
+      "id": "position",
+      "title": "position",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `vector` made up of x y z coordinates with `float` numbers.",
+      "subFormId": "type_position_float",
+      "commandType": "POSITION_FLOAT"
+    },
+    {
+      "id": "source",
+      "title": "source",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "SOURCELOOT"
+    },
+    {
+      "id": "loot_table",
+      "title": "loot_table",
+      "type": "string",
+      "isOptional": false,
+      "description": "Path to the loot table",
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "<tool>|mainhand|offhand",
+      "title": "<tool>|mainhand|offhand",
+      "type": "string",
+      "isOptional": true,
+      "commandType": "TOOL"
+    },
+    {
+      "id": "entity",
+      "title": "entity",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies the `entity` that will be the source of the loot",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "targetblockposition",
+      "title": "TargetBlockPosition",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `vector` made up of x y z coordinates with `float` numbers.",
+      "subFormId": "type_position_float",
+      "commandType": "POSITION_FLOAT"
+    },
+    {
+      "id": "players",
+      "title": "players",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies the `player` or `players` to give loot to.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "slottype",
+      "title": "slotType",
+      "type": "string",
+      "isOptional": false,
+      "description": "Entity equipment slot",
+      "commandType": "ENTITYEQUIPMENTSLOT"
+    },
+    {
+      "id": "slotid",
+      "title": "slotId",
+      "type": "string",
+      "isOptional": false,
+      "description": "An `integer` to specify the slot.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "count",
+      "title": "count",
+      "type": "string",
+      "isOptional": false,
+      "description": "An `integer` that defines the number of slots to fill.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "block",
+      "title": "block",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "TARGETBLOCK"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Spawn loot into hand",
+      "description": "Spawn `loot` from a `position` using a `loot table` and a `hand` to spawn into.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETSPAWN",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCELOOT",
+          "isOptional": false
+        },
+        {
+          "name": "loot_table",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Spawn loot from position, kill entity with tool",
+      "description": "Spawn `loot` from a `position` using the `loot table` from killing an `entity` using a `tool`.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETSPAWN",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCEKILL",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Give loot to player, looting with tool",
+      "description": "Give `loot` to `player` using a `loot table` while `looting` using a `tool`.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETSPAWN",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCEMINE",
+          "isOptional": false
+        },
+        {
+          "name": "targetblockposition",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Give loot to player, killing entity using tool",
+      "description": "Give `loot` to `player` using the `loot table` from `killing` an `entity` using a `tool`.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETGIVE",
+          "isOptional": false
+        },
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCELOOT",
+          "isOptional": false
+        },
+        {
+          "name": "loot_table",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Give loot to player, mining a block using tool",
+      "description": "Give `loot` to `player` using the `loot table` from `mining` a block at `position` using a `tool`.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETGIVE",
+          "isOptional": false
+        },
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCEKILL",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Insert loot from position, looting with tool",
+      "description": "Insert `loot` from a `position` using the `loot table` from `looting` using a `tool`.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETGIVE",
+          "isOptional": false
+        },
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCEMINE",
+          "isOptional": false
+        },
+        {
+          "name": "targetblockposition",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Insert loot from position, killing entity with tool",
+      "description": "Insert `loot` from a `position` using a `loot table` from `killing` an `entity` using a `tool`.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETINSERT",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCELOOT",
+          "isOptional": false
+        },
+        {
+          "name": "loot_table",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Insert loot from position, mining a block with tool",
+      "description": "Insert `loot` from a `position` using a `loot table` from `mining` a block at `position` using a `tool`.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETINSERT",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCEKILL",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Replace loot, slot, count, looting with tool",
+      "description": "Replace `loot` for a `player` in a `slot` with a `count` while `looting` from a `loot table` using a `tool`.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETINSERT",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCEMINE",
+          "isOptional": false
+        },
+        {
+          "name": "targetblockposition",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Replace loot, slot, looting with tool",
+      "description": "Replace `loot` for a `player` in a `slot` while `looting` using a `tool`.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETREPLACE",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "TARGETENTITY",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "slottype",
+          "type": "ENTITYEQUIPMENTSLOT",
+          "isOptional": false
+        },
+        {
+          "name": "slotid",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "count",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCELOOT",
+          "isOptional": false
+        },
+        {
+          "name": "loot_table",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Replace loot, slot, count, killing entity with tool",
+      "description": "Replace `loot` for a `player` in a `slot` with a `count` from `killing` an `entity` using a `tool`.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETREPLACE",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "TARGETENTITY",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "slottype",
+          "type": "ENTITYEQUIPMENTSLOT",
+          "isOptional": false
+        },
+        {
+          "name": "slotid",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCELOOT",
+          "isOptional": false
+        },
+        {
+          "name": "loot_table",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Replace loot, slot, killing entity with tool",
+      "description": "Replace `loot` for a `player` in a `slot` from `killing` an `entity` using a `tool`.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETREPLACE",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "TARGETENTITY",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "slottype",
+          "type": "ENTITYEQUIPMENTSLOT",
+          "isOptional": false
+        },
+        {
+          "name": "slotid",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "count",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCEKILL",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Replace loot, slot, count, mining a block with tool",
+      "description": "Replace `loot` for a `player` in a `slot` with a `count` from `mining` a block at `position` using a `tool`.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETREPLACE",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "TARGETENTITY",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "slottype",
+          "type": "ENTITYEQUIPMENTSLOT",
+          "isOptional": false
+        },
+        {
+          "name": "slotid",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCEKILL",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Replace loot, slot, mining a block with tool",
+      "description": "Replace `loot` for a `player` in a `slot` from `mining` a block at `position` using a `tool`.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETREPLACE",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "TARGETENTITY",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "slottype",
+          "type": "ENTITYEQUIPMENTSLOT",
+          "isOptional": false
+        },
+        {
+          "name": "slotid",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "count",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCEMINE",
+          "isOptional": false
+        },
+        {
+          "name": "targetblockposition",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Replace loot, slot, count, looting with a tool",
+      "description": "Replace `loot` with a specified `int` amount of loot from a `block` at a `position` into a `slotId`.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETREPLACE",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "TARGETENTITY",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "slottype",
+          "type": "ENTITYEQUIPMENTSLOT",
+          "isOptional": false
+        },
+        {
+          "name": "slotid",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCEMINE",
+          "isOptional": false
+        },
+        {
+          "name": "targetblockposition",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Replace loot, slot, looting with `tool` ",
+      "description": "Replace `loot` from a `block` at a `position` into a `slot` from looting with a tool.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETREPLACE",
+          "isOptional": false
+        },
+        {
+          "name": "block",
+          "type": "TARGETBLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "slottype",
+          "type": "BLOCKEQUIPMENTSLOT",
+          "isOptional": false
+        },
+        {
+          "name": "slotid",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "count",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCELOOT",
+          "isOptional": false
+        },
+        {
+          "name": "loot_table",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Replace loot slot, count, killing `entity` with a tool",
+      "description": "Replace `loot` from a `block` at a `position` into a `slotID` in a specified amount, from killing an `entity` with a tool.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETREPLACE",
+          "isOptional": false
+        },
+        {
+          "name": "block",
+          "type": "TARGETBLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "slottype",
+          "type": "BLOCKEQUIPMENTSLOT",
+          "isOptional": false
+        },
+        {
+          "name": "slotid",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCELOOT",
+          "isOptional": false
+        },
+        {
+          "name": "loot_table",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Replace loot from block, killing `entity` with tool",
+      "description": "Replace `loot` from a `block` at a `position` from `killing` an `entity` using a `tool`.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETREPLACE",
+          "isOptional": false
+        },
+        {
+          "name": "block",
+          "type": "TARGETBLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "slottype",
+          "type": "BLOCKEQUIPMENTSLOT",
+          "isOptional": false
+        },
+        {
+          "name": "slotid",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "count",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCEKILL",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Replace loot slot, count, mining a block with a tool",
+      "description": "Replace `loot` from a `block` at a `position` into a `slotID` in a specified amount, from `mining` a block at `position` using a `tool`.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETREPLACE",
+          "isOptional": false
+        },
+        {
+          "name": "block",
+          "type": "TARGETBLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "slottype",
+          "type": "BLOCKEQUIPMENTSLOT",
+          "isOptional": false
+        },
+        {
+          "name": "slotid",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCEKILL",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Replace loot from block, mining a block with tool.",
+      "description": "Replace `loot` from a `block` at a `position` from `mining` a block at `position` using a `tool`.",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETREPLACE",
+          "isOptional": false
+        },
+        {
+          "name": "block",
+          "type": "TARGETBLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "slottype",
+          "type": "BLOCKEQUIPMENTSLOT",
+          "isOptional": false
+        },
+        {
+          "name": "slotid",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "count",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCEMINE",
+          "isOptional": false
+        },
+        {
+          "name": "targetblockposition",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "title": "Overload 21",
+      "description": "",
+      "params": [
+        {
+          "name": "target",
+          "type": "TARGETREPLACE",
+          "isOptional": false
+        },
+        {
+          "name": "block",
+          "type": "TARGETBLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "slottype",
+          "type": "BLOCKEQUIPMENTSLOT",
+          "isOptional": false
+        },
+        {
+          "name": "slotid",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "source",
+          "type": "SOURCEMINE",
+          "isOptional": false
+        },
+        {
+          "name": "targetblockposition",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "<tool>|mainhand|offhand",
+          "type": "TOOL",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

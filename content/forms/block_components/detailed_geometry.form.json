@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines detailed geometry settings with bone visibility"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Detailed Geometry",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -75,5 +88,6 @@
         "defaultValue": false
       }
     ]
-  }
+  },
+  "description": "Defines detailed geometry settings with bone visibility."
 }

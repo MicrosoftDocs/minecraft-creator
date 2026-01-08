@@ -1,7 +1,132 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:single_block_feature",
   "versionIntroduced": "1.21.40",
   "description": "Places a single block in the world. The places_block field supports a single block or a list of weighted blocks, where the weight defines how likely it is for that block to be selected. The may_attach_to and may_replace fields are allowlists which specify where the block can be placed. If these fields are omitted, the block can be placed anywhere. The may_not_attach_to field is a denylist that specifies what blocks can't be close to the placement location. The randomize_rotation field will randomize the block's cardinal orientation. The block's internal survivability and placement rules can optionally be enforced with the enforce_survivability_rules and enforce_placement_rules fields. These rules are specified per-block and are typically designed to produce high quality gameplay or natural behavior. However, enabling this enforcement may make it harder to debug placement failures. Succeeds if the block is successfully placed in the world. Fails if the block fails to be placed. Example use: Placing a single pumpkin or carved pumpkin block where carved pumpkins are less likely to appear.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "places a single block with weighted selection support"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "places_block",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "places "
+          },
+          {
+            "type": "value",
+            "field": "places_block",
+            "humanify": "minecraft"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "may_attach_to",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "requires specific adjacent blocks"
+          }
+        ],
+        "priority": 3
+      },
+      {
+        "visibility": [
+          {
+            "field": "may_replace",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "replaces certain existing blocks"
+          }
+        ],
+        "priority": 3
+      },
+      {
+        "visibility": [
+          {
+            "field": "may_not_attach_to",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "avoids attaching to blocked block types"
+          }
+        ],
+        "priority": 3
+      },
+      {
+        "visibility": [
+          {
+            "field": "randomize_rotation",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "randomly rotates the block"
+          }
+        ],
+        "priority": 3
+      },
+      {
+        "visibility": [
+          {
+            "field": "enforce_survivability_rules",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "enforces survivability rules"
+          }
+        ],
+        "priority": 3
+      },
+      {
+        "visibility": [
+          {
+            "field": "enforce_placement_rules",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "enforces placement rules"
+          }
+        ],
+        "priority": 3
+      }
+    ]
+  },
   "fields": [
     {
       "id": "format_version",

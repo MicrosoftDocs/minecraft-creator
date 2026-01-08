@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns last input mode is any information"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.last_input_mode_is_any",
   "fields": [],
   "generated_doNotEdit": {

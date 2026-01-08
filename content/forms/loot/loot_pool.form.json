@@ -1,0 +1,98 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "LootPool",
+  "title": "Loot Pool",
+  "description": "Defines a pool of loot entries that can be rolled one or more times.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "rolls " },
+          { "type": "value", "field": "rolls" },
+          { "type": "literal", "text": " times from a pool of entries" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "rolls",
+      "title": "Rolls",
+      "description": "Number of times to roll this pool. Can be a fixed number or a range object with min/max.",
+      "dataType": 0,
+      "defaultValue": 1,
+      "minValue": 1,
+      "alternates": [
+        {
+          "id": "rolls",
+          "dataType": 16,
+          "subForm": {
+            "id": "rolls_range",
+            "fields": [
+              {
+                "id": "min",
+                "title": "Minimum",
+                "dataType": 0,
+                "defaultValue": 1
+              },
+              {
+                "id": "max",
+                "title": "Maximum",
+                "dataType": 0,
+                "defaultValue": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bonus_rolls",
+      "title": "Bonus Rolls",
+      "description": "Additional rolls added based on luck attribute. Can be fixed or range.",
+      "dataType": 0,
+      "defaultValue": 0
+    },
+    {
+      "id": "entries",
+      "title": "Entries",
+      "description": "Array of possible entries to select from when rolling this pool.",
+      "dataType": 15,
+      "subFormId": "loot/loot_entry",
+      "isRequired": true
+    },
+    {
+      "id": "conditions",
+      "title": "Conditions",
+      "description": "Array of conditions that must be met for this pool to be rolled.",
+      "dataType": 15,
+      "subFormId": "loot/loot_condition"
+    },
+    {
+      "id": "tiers",
+      "title": "Tiers",
+      "description": "Tiered entry selection configuration.",
+      "dataType": 16,
+      "subForm": {
+        "id": "pool_tiers",
+        "fields": [
+          {
+            "id": "initial_range",
+            "title": "Initial Range",
+            "dataType": 0
+          },
+          {
+            "id": "bonus_rolls",
+            "title": "Bonus Rolls",
+            "dataType": 0
+          },
+          {
+            "id": "bonus_chance",
+            "title": "Bonus Chance",
+            "dataType": 3
+          }
+        ]
+      }
+    }
+  ]
+}

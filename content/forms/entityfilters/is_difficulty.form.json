@@ -1,4 +1,25 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "tests if the game difficulty is '"
+          },
+          {
+            "type": "value",
+            "field": "value"
+          },
+          {
+            "type": "literal",
+            "text": "'"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "tags": [
     "conditional",

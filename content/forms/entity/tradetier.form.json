@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a tier of trades that unlock with experience"
+          }
+        ]
+      }
+    ]
+  },
   "id": "TradeTier",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -19,5 +32,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines a tier of trades that unlock as the trading entity gains experience. Villagers start at tier 1 (novice) and unlock higher tiers through player trades, offering progressively better items. Each tier contains trade groups that determine available offers at that merchant level."
 }

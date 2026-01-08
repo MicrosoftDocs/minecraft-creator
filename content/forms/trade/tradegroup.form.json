@@ -1,5 +1,36 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "TradeGroup",
+  "title": "Trade Group",
+  "description": "A group of trades from which one or more can be randomly selected for a villager to offer.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "selects " },
+          { "type": "value", "field": "num_to_select" },
+          { "type": "literal", "text": " trade(s) randomly from a group of possible trades" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "num_to_select",
+      "title": "Number to Select",
+      "description": "The number of trades to randomly select from this group to offer to the player. Typically 1-2.",
+      "dataType": 0,
+      "defaultValue": 1,
+      "minValue": 1
+    },
+    {
+      "id": "trades",
+      "title": "Trades",
+      "description": "Array of possible trades in this group. The specified number will be randomly chosen.",
+      "dataType": 15,
+      "subFormId": "trade/tradesingle"
+    }
+  ],
   "generated_doNotEdit": {
     "title": "TradeGroup",
     "description": "TradeGroup",

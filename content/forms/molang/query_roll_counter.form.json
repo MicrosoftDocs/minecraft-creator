@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns roll counter of the entity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.roll_counter",
   "fields": [],
   "description": "Returns the roll counter of the entity. Generally applies to the panda.",

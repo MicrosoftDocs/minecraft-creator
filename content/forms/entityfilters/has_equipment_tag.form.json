@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if the entity has equipment with a specific tag"
+          }
+        ]
+      }
+    ]
+  },
   "id": "has_equipment_tag",
   "fields": [],
   "tags": [

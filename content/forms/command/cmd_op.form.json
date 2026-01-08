@@ -1,0 +1,32 @@
+{
+  "id": "cmd_op",
+  "title": "op",
+  "description": "Grants operator status to a player.",
+  "fields": [
+    {
+      "id": "player",
+      "title": "player",
+      "type": "string",
+      "isOptional": false,
+      "description": "Required. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Op",
+      "description": "Give a target `player` operator status.",
+      "params": [
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 2,
+  "requiresCheats": false
+}

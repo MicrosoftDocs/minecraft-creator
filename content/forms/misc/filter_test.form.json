@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines filter test configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Filter Test",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -37,5 +50,6 @@
         "dataType": 16
       }
     ]
-  }
+  },
+  "description": "Defines filter test configuration."
 }

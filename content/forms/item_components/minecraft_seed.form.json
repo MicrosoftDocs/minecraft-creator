@@ -1,0 +1,87 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "minecraft:seed",
+  "title": "Seed",
+  "description": "Sets the item as a seed that can be planted to grow crops. When used on valid ground, the seed will place the specified crop block.",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [{ "field": "crop_result", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "grows " },
+          { "type": "value", "field": "crop_result" },
+          { "type": "literal", "text": " when planted" }
+        ]
+      }
+    ]
+  },
+  "versionIntroduced": "1.10.0",
+  "fields": [
+    {
+      "id": "crop_result",
+      "title": "Crop Result",
+      "description": "The block identifier that will be placed when the seed is planted (e.g., 'wheat', 'beetroot', 'cave_vines').",
+      "dataType": 2,
+      "isRequired": true
+    },
+    {
+      "id": "plant_at",
+      "title": "Plant At",
+      "description": "Array of block identifiers that this seed can be planted on or attached to. If not specified, standard farmland rules apply.",
+      "dataType": 17
+    },
+    {
+      "id": "plant_at_any_solid_surface",
+      "title": "Plant At Any Solid Surface",
+      "description": "If true, the seed can be planted on any solid surface, not just farmland or specified blocks. This property was deprecated and removed in versions after 1.18.",
+      "dataType": 1,
+      "defaultValue": false,
+      "isDeprecated": true,
+      "versionDeprecated": "1.19.0",
+      "versionIntroduced": "1.16.0",
+      "note": "This property was available in versions 1.16.0 through 1.18.x for items like glow berries, but has been removed in later versions."
+    },
+    {
+      "id": "plant_at_face",
+      "title": "Plant At Face",
+      "description": "The face of a block where this seed can be planted. Values: 'UP' for top of blocks (normal crops), 'DOWN' for bottom (hanging plants like glow berries). This property was deprecated and removed in versions after 1.18.",
+      "dataType": 4,
+      "enumValues": [
+        "UP",
+        "DOWN",
+        "NORTH",
+        "SOUTH",
+        "EAST",
+        "WEST"
+      ],
+      "isDeprecated": true,
+      "versionDeprecated": "1.19.0",
+      "versionIntroduced": "1.16.0",
+      "note": "This property was available in versions 1.16.0 through 1.18.x for items like glow berries, but has been removed in later versions."
+    }
+  ],
+  "samples": {
+    "vanilla_data/behavior_packs/vanilla/items/beetroot_seeds.json": [
+      {
+        "path": "/minecraft:item/components/minecraft:seed/",
+        "content": {
+          "crop_result": "beetroot"
+        }
+      }
+    ],
+    "vanilla_data/behavior_packs/vanilla_1.17.0/items/glow_berries.json": [
+      {
+        "path": "/minecraft:item/components/minecraft:seed/",
+        "content": {
+          "crop_result": "cave_vines",
+          "plant_at": [
+            "cave_vines",
+            "cave_vines_head_with_berries"
+          ],
+          "plant_at_any_solid_surface": true,
+          "plant_at_face": "DOWN"
+        }
+      }
+    ]
+  }
+}

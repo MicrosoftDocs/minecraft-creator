@@ -1,5 +1,25 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "emits all particles instantly at once"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "num_particles",
+      "title": "Num Particles",
+      "description": "The number of particles to emit. Can be a number or Molang expression.",
+      "dataType": 34
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_rate_instant",
     "title": "Client Particles Emitter Rate Instant",
@@ -40,5 +60,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Spawns all particles in a single instant burst when the emitter activates. Unlike steady emission that spawns particles over time, this creates an immediate cloud of particles—perfect for explosions, block destruction debris, potion splash impacts, ender teleportation effects, and any effect that needs an instantaneous particle release."
 }

@@ -1,5 +1,38 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:repairable",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "repair_items",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be repaired using specified items"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "repair_items",
+            "comparison": "!defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be repaired"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:repairable",

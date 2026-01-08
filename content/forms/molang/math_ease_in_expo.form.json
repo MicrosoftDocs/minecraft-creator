@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "computes the ease in expo of the value"
+          }
+        ]
+      }
+    ]
+  },
   "id": "`math.ease_in_expo(start, end, 0_to_1)`",
   "fields": [],
   "generated_doNotEdit": {

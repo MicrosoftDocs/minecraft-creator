@@ -1,5 +1,49 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:weighted_random_feature",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "randomly selects one feature from a weighted list"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "features",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "chooses from "
+          },
+          {
+            "type": "value",
+            "field": "features.length"
+          },
+          {
+            "type": "literal",
+            "text": " weighted feature options"
+          }
+        ]
+      },
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "higher weights increase selection probability"
+          }
+        ],
+        "priority": 3
+      }
+    ]
+  },
   "fields": [
     {
       "id": "format_version",
@@ -68,5 +112,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Selects and places a feature randomly based on weighted probabilities."
 }

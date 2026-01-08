@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:dimension_bounds",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines the min and max height bounds for a dimension"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "versionIntroduced": "1.21.40",
   "generatedFromSchema_doNotEdit": {
@@ -37,5 +50,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Defines the min and max height bounds for a dimension."
 }

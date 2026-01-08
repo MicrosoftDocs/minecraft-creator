@@ -1,5 +1,26 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a unique identifier and category"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "identifier",
+      "title": "Identifier",
+      "description": "Unique name for the item that must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla item.",
+      "dataType": 2,
+      "isRequired": true
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "description",
     "title": "Item Description",

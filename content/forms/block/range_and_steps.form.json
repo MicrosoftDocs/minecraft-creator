@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has range with steps"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Range And Steps",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -10,6 +23,7 @@
         "title": "Range",
         "description": "The range of the random offset.",
         "dataType": 16,
+        "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
         "subFormId": "item_components/floatrange",
         "isRequired": true
       },
@@ -21,5 +35,6 @@
         "defaultValue": 0
       }
     ]
-  }
+  },
+  "description": "Defines an integer block state with a range of valid values and optional step increment. Used for block properties like growth stages (0-7 for crops), signal strength (0-15 for redstone), or rotation angles. The game only allows values within the specified min/max range at the given step intervals."
 }

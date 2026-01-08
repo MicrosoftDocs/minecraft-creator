@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if the entity's vehicle belongs to a specific family"
+          }
+        ]
+      }
+    ]
+  },
   "id": "is_vehicle_family",
   "fields": [],
   "tags": [

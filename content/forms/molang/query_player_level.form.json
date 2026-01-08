@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns players level if the entity is a player"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.player_level",
   "fields": [],
   "description": "Returns the players level if the entity is a player, otherwise returns 0.",

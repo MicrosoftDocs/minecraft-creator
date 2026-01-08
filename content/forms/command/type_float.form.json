@@ -1,0 +1,27 @@
+{
+  "id": "type_float",
+  "title": "Decimal Number",
+  "description": "A number that can include decimals.",
+  "fields": [],
+  "formatHint": "0, 1.5, -3.14, etc.",
+  "samples": {
+    "values": [
+      {
+        "path": "Zero",
+        "content": "0"
+      },
+      {
+        "path": "Half",
+        "content": "0.5"
+      },
+      {
+        "path": "One and a half",
+        "content": "1.5"
+      },
+      {
+        "path": "Negative quarter",
+        "content": "-0.25"
+      }
+    ]
+  }
+}

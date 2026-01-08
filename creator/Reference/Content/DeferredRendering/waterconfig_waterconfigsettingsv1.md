@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Deferred Rendering Documentation - minecraft:waterconfig_waterconfigsettingsv1"
 description: "Describes the minecraft:waterconfig_waterconfigsettingsv1 deferred rendering"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:behavior.admire_item"
 description: "Describes the minecraft:behavior.admire_item ai behavior component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -25,7 +26,18 @@ Enables the mob to admire items that have been configured as admirable.
 | on_admire_item_start | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  | Piglin: `{"event":"admire_item_started_event","target":"self"}` | 
 | on_admire_item_stop | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  | Piglin: `{"event":"admire_item_stopped_event","target":"self"}` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Piglin: `2` | 
-| sound_interval | 0 | Range of integers | The range of time in seconds to randomly wait before playing the sound again. | Piglin: `{"range_min":8,"range_max":8}` | 
+| sound_interval | 0 | Integer number | The range of time in seconds to randomly wait before playing the sound again. Can be a number, an array [min, max], or an object with range_min and range_max. | Piglin: `{"range_min":8,"range_max":8}` | 
+| sound_interval (Alternate 1) | *not set* | Array of [Sound Interval](#sound-interval) items |  |  | 
+| sound_interval (Alternate 2) | *not set* | [Sound Interval](#sound-interval) item |  |  | 
+
+## Sound Interval
+
+#### Sound Interval Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| 0 | *not set* | Integer number |  |  | 
+| 1 | *not set* | Integer number |  |  | 
 
 ## Samples
 

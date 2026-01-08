@@ -1,5 +1,15 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "description": "Determines whether the item has the enchanted glint render effect on it.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has an enchanted glint" }
+        ]
+      }
+    ]
+  },
   "scalarFieldUpgradeName": "value",
   "fields": [
     {

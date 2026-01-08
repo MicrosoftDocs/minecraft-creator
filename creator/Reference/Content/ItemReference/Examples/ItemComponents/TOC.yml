@@ -68,6 +68,8 @@
   href: minecraft_record.md
 - name: minecraft:repairable
   href: minecraft_repairable.md
+- name: minecraft:seed
+  href: minecraft_seed.md
 - name: minecraft:shooter
   href: minecraft_shooter.md
 - name: minecraft:should_despawn

@@ -1,5 +1,20 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "chance_information",
+  "title": "Chance Information (v1.14.0)",
+  "description": "Specifies a probability as a fraction with numerator and denominator (format_version 1.14.0).",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies a probability as a numerator and denominator fraction"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "chance_information",

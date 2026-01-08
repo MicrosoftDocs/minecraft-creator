@@ -1,5 +1,65 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:underwater_cave_carver_feature",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "carves flooded cave systems below sea level"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "fill_with",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "fills caves with "
+          },
+          {
+            "type": "value",
+            "field": "fill_with",
+            "humanify": "minecraft"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "replace_air_with",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "replaces air pockets with "
+          },
+          {
+            "type": "value",
+            "field": "replace_air_with",
+            "humanify": "minecraft"
+          }
+        ]
+      },
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "only runs in pregeneration_pass"
+          }
+        ],
+        "priority": 3
+      }
+    ]
+  },
   "fields": [
     {
       "id": "format_version",

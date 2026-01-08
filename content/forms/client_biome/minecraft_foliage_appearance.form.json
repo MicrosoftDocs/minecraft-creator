@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:foliage_appearance",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "controls foliage color appearance for rendering"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "title": "Minecraft Foliage Appearance",
   "description": "Sets the foliage color or color map used during rendering. Biomes without this component will have default foliage appearance.",

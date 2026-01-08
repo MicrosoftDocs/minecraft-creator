@@ -1,10 +1,21 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "fields": [],
   "tags": [
     "entityevent"
   ],
-  "description": "Removes component groups from the current entity. This can be any group you have defined in the 'component_groups' section of the file.",
-  "title": "Remove Component Group",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "removes component groups from the entity"
+          }
+        ]
+      }
+    ]
+  },
   "samples": {
     "samples": [
       {

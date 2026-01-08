@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is a block definition with description, components, and permutations"
+          }
+        ]
+      }
+    ]
+  },
   "id": "BlockDefinitionDocument",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -9,6 +22,7 @@
         "id": "components",
         "title": "Components",
         "dataType": 16,
+        "technicalDescription": "Block with \"geometry\" set at \"minecraft:geometry.full_block\" cannot have a \"random_offset\"",
         "subFormId": "block_components/components"
       },
       {
@@ -27,5 +41,6 @@
         "subFormId": "block/permutation"
       }
     ]
-  }
+  },
+  "description": "Is a block definition with description, components, and permutations."
 }

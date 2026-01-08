@@ -1,4 +1,115 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "width",
+            "comparison": ">=",
+            "value": 2
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a large collision box ("
+          },
+          {
+            "type": "value",
+            "field": "width"
+          },
+          {
+            "type": "literal",
+            "text": " x "
+          },
+          {
+            "type": "value",
+            "field": "height"
+          },
+          {
+            "type": "literal",
+            "text": " blocks)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "width",
+            "comparison": "<",
+            "value": 0.5
+          },
+          {
+            "field": "width",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a small collision box ("
+          },
+          {
+            "type": "value",
+            "field": "width"
+          },
+          {
+            "type": "literal",
+            "text": " x "
+          },
+          {
+            "type": "value",
+            "field": "height"
+          },
+          {
+            "type": "literal",
+            "text": " blocks)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "width",
+            "comparison": ">=",
+            "value": 0.5
+          },
+          {
+            "field": "width",
+            "comparison": "<",
+            "value": 2
+          },
+          {
+            "field": "height",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a "
+          },
+          {
+            "type": "value",
+            "field": "width"
+          },
+          {
+            "type": "literal",
+            "text": " x "
+          },
+          {
+            "type": "value",
+            "field": "height"
+          },
+          {
+            "type": "literal",
+            "text": " block collision box"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "height",

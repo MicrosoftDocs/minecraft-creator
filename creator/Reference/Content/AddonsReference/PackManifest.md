@@ -51,9 +51,6 @@ Note that in versions of preview Minecraft version 1.21.110 and higher, we have 
 | version| Vector [a, b, c] or [SemVer](https://semver.org/) String | This is the version of the module in the same format as the pack's version in the header. This can be used to further identify changes in your pack. In version 3, currently in preview, you must use a string for version. |
 |language| String| Only present if `type` is `script`.  This indicates the language in which scripts are written in the pack.  The only supported value is `javascript`. |
 
-> [!IMPORTANT]
-> In order to submit any content to the marketplace, the version `a` value will need to be set to a value greater than 0. e.g `"version": [1, 0, 0]` or `"version": "1.0.0"`
-
 ### dependencies
 
 | Name| Type| Description |

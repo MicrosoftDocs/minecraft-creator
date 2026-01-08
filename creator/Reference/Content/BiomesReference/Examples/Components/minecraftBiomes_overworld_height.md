@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Biome Documentation - minecraft:overworld_height"
 description: "Describes the minecraft:overworld_height biome"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

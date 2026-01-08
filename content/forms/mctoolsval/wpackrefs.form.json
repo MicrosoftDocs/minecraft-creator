@@ -1,0 +1,76 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates pack references in world templates"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "wpackrefs",
+  "title": "World Pack Refs",
+  "description": "Validates pack references in world templates. Ensures that behavior_packs.json and resource_packs.json correctly reference the packs bundled with the world.",
+  "fields": [
+    {
+      "id": "201",
+      "title": "Invalid JSON",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when behavior_packs.json or resource_packs.json contains invalid JSON syntax. Check for missing commas, brackets, or malformed entries.",
+      "technicalDescription": "Data contains the JSON parse error message"
+    },
+    {
+      "id": "202",
+      "title": "Missing References",
+      "messageType": 1,
+      "dataType": 2,
+      "description": "Warning when expected pack reference files are missing from the world folder. Packs may not load correctly without proper references.",
+      "technicalDescription": "Data contains the expected file name (behavior_packs.json or resource_packs.json)"
+    },
+    {
+      "id": "203",
+      "title": "Invalid Pack ID",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a pack reference contains an invalid or malformed UUID. Ensure pack_id matches the UUID in the referenced pack's manifest.",
+      "technicalDescription": "Data contains the invalid pack_id value"
+    },
+    {
+      "id": "204",
+      "title": "Missing Version",
+      "messageType": 1,
+      "dataType": 2,
+      "description": "Warning when a pack reference is missing the version field. Include the exact version array to ensure compatibility.",
+      "technicalDescription": "Data contains the pack_id missing the version"
+    },
+    {
+      "id": "205",
+      "title": "Invalid Version",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when the version field in a pack reference is not a valid version array [major, minor, patch]. Version must match the referenced pack.",
+      "technicalDescription": "Data contains the invalid version value"
+    },
+    {
+      "id": "206",
+      "title": "Pack Not Found",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a referenced pack UUID does not match any pack bundled with the world. Verify the pack exists and the UUID is correct.",
+      "technicalDescription": "Data contains the UUID of the missing pack"
+    },
+    {
+      "id": "207",
+      "title": "Processing Error",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "An internal error occurred while processing pack references. Check logs for details.",
+      "technicalDescription": "Data contains details about the internal error"
+    }
+  ]
+}

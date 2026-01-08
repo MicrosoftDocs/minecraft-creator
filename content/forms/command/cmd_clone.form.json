@@ -1,0 +1,145 @@
+{
+  "id": "cmd_clone",
+  "title": "clone",
+  "description": "Clones a set of blocks from one region to another.",
+  "fields": [
+    {
+      "id": "begin",
+      "title": "begin",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "end",
+      "title": "end",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "destination",
+      "title": "destination",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. The lower northwest corner of the region being cloned.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "maskmode",
+      "title": "maskMode",
+      "type": "string",
+      "isOptional": true,
+      "description": "An `enum` that filters the blocks being cloned. If type `masked`, copy non-air blocks.",
+      "commandType": "MASKMODE"
+    },
+    {
+      "id": "clonemode",
+      "title": "cloneMode",
+      "type": "string",
+      "isOptional": true,
+      "description": "An `enum` that is one of type `force`, `move`, or `normal`. Default: `normal`.",
+      "commandType": "CLONEMODE"
+    },
+    {
+      "id": "tilename",
+      "title": "tileName",
+      "type": "string",
+      "isOptional": false,
+      "description": "An `enum` that must be the `block name` of the blocks that are to be cloned.",
+      "subFormId": "type_block",
+      "commandType": "BLOCK"
+    },
+    {
+      "id": "blockstates",
+      "title": "blockStates",
+      "type": "string",
+      "isOptional": true,
+      "description": "An `array` of block states. Specifies the block  states to use for the cloned blocks.",
+      "commandType": "BLOCK_STATE_ARRAY"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Clone with optional `maskMode`, `cloneMode`",
+      "description": "Clone a set of blocks from one location to a destination with an optional `maskMode` and `cloneMode`.",
+      "params": [
+        {
+          "name": "begin",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "end",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "destination",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "maskmode",
+          "type": "MASKMODE",
+          "isOptional": true
+        },
+        {
+          "name": "clonemode",
+          "type": "CLONEMODE",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Clone with optional `maskMode`, `cloneMode`, `tileName`, `blockStates`",
+      "description": "Clone a set of blocks from one location to a destination with an optional `maskMode` and `cloneMode`, as well as optional `tileName` or `blockStates` data  to specify the blocks to clone.",
+      "params": [
+        {
+          "name": "begin",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "end",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "destination",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "maskmode",
+          "type": "MASKMODEFILTERED",
+          "isOptional": false
+        },
+        {
+          "name": "clonemode",
+          "type": "CLONEMODE",
+          "isOptional": false
+        },
+        {
+          "name": "tilename",
+          "type": "BLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "blockstates",
+          "type": "BLOCK_STATE_ARRAY",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

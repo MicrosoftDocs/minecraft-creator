@@ -1,5 +1,30 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Spawn HeightFilter",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spawns at height "
+          },
+          {
+            "type": "value",
+            "field": "min"
+          },
+          {
+            "type": "literal",
+            "text": " to "
+          },
+          {
+            "type": "value",
+            "field": "max"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn HeightFilter",
@@ -18,5 +43,6 @@
         "defaultValue": 24
       }
     ]
-  }
+  },
+  "description": "Restricts entity spawning to specific Y-coordinate ranges. Useful for creating depth-based mob distribution like slimes in swamps (below Y=40), or limiting surface mobs from spawning underground."
 }

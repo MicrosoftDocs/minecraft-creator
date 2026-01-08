@@ -1,4 +1,53 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "rewards experience points"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "on_death",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "grants XP on death: "
+          },
+          {
+            "type": "value",
+            "field": "on_death"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "on_bred",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "grants XP when bred: "
+          },
+          {
+            "type": "value",
+            "field": "on_bred"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "on_bred",

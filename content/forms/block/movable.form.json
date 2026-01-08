@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has piston movement behavior"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Movable",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

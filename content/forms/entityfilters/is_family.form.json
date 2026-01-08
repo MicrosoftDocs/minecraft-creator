@@ -1,4 +1,25 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if the entity is a member of the '"
+          },
+          {
+            "type": "value",
+            "field": "value"
+          },
+          {
+            "type": "literal",
+            "text": "' family"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "tags": [
     "conditional",

@@ -1,0 +1,68 @@
+{
+  "id": "cmd_gamerule",
+  "title": "gamerule",
+  "description": "Sets or queries a game rule value. See more in the [Popular Commands documentation](https://learn.microsoft.com/minecraft/creator/documents/commandspopularcommands#gamerule).",
+  "fields": [
+    {
+      "id": "rule",
+      "title": "rule",
+      "type": "string",
+      "isOptional": false,
+      "description": "Boolean game rule setting",
+      "commandType": "BOOLGAMERULE"
+    },
+    {
+      "id": "value",
+      "title": "value",
+      "type": "string",
+      "isOptional": true,
+      "description": "Boolean value",
+      "subFormId": "type_boolean",
+      "commandType": "BOOLEAN"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Check game rule",
+      "description": "Check the current game rule.",
+      "params": []
+    },
+    {
+      "id": "2",
+      "title": "Set game rule, Boolean",
+      "description": "Set a gamerule using a `Boolean`.",
+      "params": [
+        {
+          "name": "rule",
+          "type": "BOOLGAMERULE",
+          "isOptional": false
+        },
+        {
+          "name": "value",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Set game rule, integer",
+      "description": "Set a gamerule using an `integer`.",
+      "params": [
+        {
+          "name": "rule",
+          "type": "INTGAMERULE",
+          "isOptional": false
+        },
+        {
+          "name": "value",
+          "type": "INT",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": false
+}

@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "3.0.0.Dependency",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies a pack dependency with module name, UUID, and version"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "3.0.0.Dependency",
@@ -64,5 +77,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Declares that this pack requires another pack or native module to function. Dependencies can reference other add-ons by UUID/version or native Script API modules like '@minecraft/server'. Minecraft ensures dependencies are loaded first."
 }

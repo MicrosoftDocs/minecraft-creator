@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:behavior.avoid_mob_type"
 description: "Describes the minecraft:behavior.avoid_mob_type ai behavior component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -10,6 +11,9 @@ ms.date: 02/11/2025
 # Entity Documentation - minecraft:behavior.avoid_mob_type
 
 Allows the entity to run away from other entities that meet the criteria specified.
+
+> [!Note]
+> This behavior defines which entities cause this mob to flee. Use entity_types filters to specify which mobs to avoid, with optional speed multipliers for walking and sprinting away.
 
 
 ## Avoid Mob Type Behavior Properties

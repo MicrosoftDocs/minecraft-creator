@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns sneeze counter of the entity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.sneeze_counter",
   "fields": [],
   "description": "Returns the sneeze counter of the entity. Applies generally to the panda.",

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns texture size for generating particles for the b..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.surface_particle_texture_size",
   "fields": [],
   "description": "Returns the texture size for generating particles for the block located in the surface below the entity (scanned up to 10 blocks down). If no entity is specified or if no surface is found, each member value will be 0.0. Available on the Client (Resource Packs) only.",

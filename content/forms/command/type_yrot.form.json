@@ -1,0 +1,11 @@
+{
+  "id": "type_yrot",
+  "title": "Yaw Rotation",
+  "description": "Horizontal rotation (yaw) in degrees.",
+  "fields": [],
+  "formatHint": "-180 to 180, or ~",
+  "aliasOf": [
+    "type_rval"
+  ],
+  "note": "Yaw is horizontal rotation: 0=south, 90=west, 180/-180=north, -90=east"
+}

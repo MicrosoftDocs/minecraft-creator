@@ -1,5 +1,134 @@
 {
-  "title": "Rideable",
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "seat_count",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be ridden with "
+          },
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "seat_count",
+                    "comparison": "==",
+                    "value": 1
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "1 seat"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "seat_count",
+                    "comparison": ">",
+                    "value": 4
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "value",
+                    "field": "seat_count"
+                  },
+                  {
+                    "type": "literal",
+                    "text": " seats (multi-passenger)"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "value",
+                "field": "seat_count"
+              },
+              {
+                "type": "literal",
+                "text": " seats"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "seat_count",
+            "comparison": "undefined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be ridden by other entities"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "controlling_seat",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "controlled from seat "
+          },
+          {
+            "type": "value",
+            "field": "controlling_seat"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "pull_in_entities",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "and pulls nearby entities in"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "crouching_skip_interact",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "(crouch to skip mounting)"
+          }
+        ]
+      }
+    ]
+  },
   "description": "This entity can be ridden",
   "fields": [
     {
@@ -56,6 +185,13 @@
     {
       "id": "seats",
       "priority": 11,
+      "dataType": 15,
+      "alternates": [
+        {
+          "id": "seats",
+          "dataType": 16
+        }
+      ],
       "subForm": {
         "fields": [
           {
@@ -65,6 +201,20 @@
           {
             "id": "camera_relax_distance_smoothing",
             "versionIntroduced": "1.21.80"
+          },
+          {
+            "id": "rotate_rider_by",
+            "title": "Rotate Rider By",
+            "description": "Offset to rotate riders by. Can be a number or a Molang expression.",
+            "defaultValue": 0,
+            "dataType": 34
+          },
+          {
+            "id": "lock_rider_rotation",
+            "title": "Lock Rider Rotation",
+            "description": "Angle in degrees to rotate the rider by. Can be a number or a Molang expression.",
+            "defaultValue": 0,
+            "dataType": 34
           }
         ]
       }
@@ -513,6 +663,16 @@
               "description": "Offset to rotate riders by.",
               "defaultValue": "0",
               "dataType": 2
+            },
+            {
+              "id": "third_person_camera_radius",
+              "title": "Third Person Camera Radius",
+              "dataType": 7
+            },
+            {
+              "id": "camera_relax_distance_smoothing",
+              "title": "Camera Relax Distance Smoothing",
+              "dataType": 7
             }
           ]
         },
@@ -540,6 +700,99 @@
                   ]
                 }
               ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:rideable/",
+              "content": [
+                {
+                  "min_rider_count": 0,
+                  "max_rider_count": 2,
+                  "position": [
+                    0,
+                    1.905,
+                    0.5
+                  ]
+                },
+                {
+                  "min_rider_count": 1,
+                  "max_rider_count": 2,
+                  "position": [
+                    0,
+                    1.905,
+                    -0.5
+                  ]
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:rideable/",
+              "content": {
+                "position": [
+                  0,
+                  0.35,
+                  0
+                ]
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:rideable/",
+              "content": {
+                "position": [
+                  0,
+                  0.48,
+                  0
+                ]
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cow.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cow_baby/minecraft:rideable/",
+              "content": {
+                "position": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cow_adult/minecraft:rideable/",
+              "content": {
+                "position": [
+                  0,
+                  1.15,
+                  0
+                ]
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/donkey.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:donkey_wild/minecraft:rideable/",
+              "content": {
+                "position": [
+                  0,
+                  0.925,
+                  -0.2
+                ]
+              }
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:rideable/",
+              "content": {
+                "position": [
+                  0,
+                  0.925,
+                  -0.2
+                ]
+              }
             }
           ]
         }

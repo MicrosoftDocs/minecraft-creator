@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines behavior.sonic boom configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.sonic_boom",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

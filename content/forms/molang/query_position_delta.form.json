@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns position delta for an entity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.position_delta",
   "fields": [],
   "description": "Returns the position delta for an entity. Takes one argument that represents the desired axis (0 == x-axis, 1 == y-axis, 2 == z-axis). Applies to player animation.",

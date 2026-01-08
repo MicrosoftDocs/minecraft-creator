@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a voxel shape with boxes"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Shape",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -10,9 +23,11 @@
         "title": "Boxes",
         "dataType": 16,
         "minLength": 1,
+        "maxLength": 32,
         "subFormId": "voxel_shapes/box",
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines a voxel shape with boxes."
 }

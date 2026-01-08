@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "can trust multiple players" }
+        ]
+      }
+    ]
+  },
   "title": "Trust",
   "description": "Allows this entity to trust multiple players.",
   "fields": []

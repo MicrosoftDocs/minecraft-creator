@@ -172,10 +172,6 @@
   href: minecraftBehavior_move_to_block.md
 - name: minecraft:behavior.move_to_land
   href: minecraftBehavior_move_to_land.md
-- name: minecraft:behavior.move_to_lava
-  href: minecraftBehavior_move_to_lava.md
-- name: minecraft:behavior.move_to_liquid
-  href: minecraftBehavior_move_to_liquid.md
 - name: minecraft:behavior.move_to_poi
   href: minecraftBehavior_move_to_poi.md
 - name: minecraft:behavior.move_to_random_block
@@ -246,8 +242,6 @@
   href: minecraftBehavior_restrict_open_door.md
 - name: minecraft:behavior.restrict_sun
   href: minecraftBehavior_restrict_sun.md
-- name: minecraft:behavior.rise_to_liquid_level
-  href: minecraftBehavior_rise_to_liquid_level.md
 - name: minecraft:behavior.roar
   href: minecraftBehavior_roar.md
 - name: minecraft:behavior.roll

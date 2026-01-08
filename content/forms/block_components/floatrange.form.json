@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a min/max float range"
+          }
+        ]
+      }
+    ]
+  },
   "id": "FloatRange",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -18,5 +31,6 @@
         "defaultValue": 0
       }
     ]
-  }
+  },
+  "description": "Defines a min/max float range."
 }

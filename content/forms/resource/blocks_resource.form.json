@@ -1,0 +1,177 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "blocks_resource",
+  "title": "Blocks Resource Definition",
+  "description": "The blocks.json file in a resource pack defines texture and sound mappings for blocks. Each block entry maps a block identifier to its visual and audio properties.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "maps block identifiers to their textures and sound properties" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of the blocks.json file. Can be an array like [1, 1, 0] or a string like '1.1.0'.",
+      "dataType": 25
+    }
+  ],
+  "customField": {
+    "id": "block_entry",
+    "title": "Block Entry",
+    "description": "Defines texture and sound properties for a specific block. The key should match the block's identifier (e.g., 'stone', 'grass').",
+    "dataType": 16,
+    "subForm": {
+      "id": "block_resource_definition",
+      "title": "Block Resource Definition",
+      "description": "Texture and sound configuration for a block.",
+      "fields": [
+        {
+          "id": "textures",
+          "title": "Textures",
+          "description": "The texture(s) to use for this block. Can be a single texture name string for all faces, or an object specifying textures per face.",
+          "dataType": 16,
+          "subForm": {
+            "id": "block_textures",
+            "title": "Block Textures",
+            "scalarFieldUpgradeName": "all",
+            "fields": [
+              {
+                "id": "up",
+                "title": "Up",
+                "description": "Texture for the top face of the block.",
+                "dataType": 2
+              },
+              {
+                "id": "down",
+                "title": "Down",
+                "description": "Texture for the bottom face of the block.",
+                "dataType": 2
+              },
+              {
+                "id": "side",
+                "title": "Side",
+                "description": "Texture for the side faces of the block.",
+                "dataType": 2
+              },
+              {
+                "id": "north",
+                "title": "North",
+                "description": "Texture for the north face of the block.",
+                "dataType": 2
+              },
+              {
+                "id": "south",
+                "title": "South",
+                "description": "Texture for the south face of the block.",
+                "dataType": 2
+              },
+              {
+                "id": "east",
+                "title": "East",
+                "description": "Texture for the east face of the block.",
+                "dataType": 2
+              },
+              {
+                "id": "west",
+                "title": "West",
+                "description": "Texture for the west face of the block.",
+                "dataType": 2
+              }
+            ]
+          }
+        },
+        {
+          "id": "carried_textures",
+          "title": "Carried Textures",
+          "description": "Textures used when the block is being carried or displayed in the inventory. Structure is the same as textures.",
+          "dataType": 16,
+          "subForm": {
+            "id": "block_carried_textures",
+            "title": "Block Carried Textures",
+            "scalarFieldUpgradeName": "all",
+            "fields": [
+              {
+                "id": "up",
+                "title": "Up",
+                "description": "Carried texture for the top face.",
+                "dataType": 2
+              },
+              {
+                "id": "down",
+                "title": "Down",
+                "description": "Carried texture for the bottom face.",
+                "dataType": 2
+              },
+              {
+                "id": "side",
+                "title": "Side",
+                "description": "Carried texture for the side faces.",
+                "dataType": 2
+              }
+            ]
+          }
+        },
+        {
+          "id": "sound",
+          "title": "Sound",
+          "description": "The sound group to use for this block (e.g., 'stone', 'wood', 'grass', 'gravel', 'sand'). Determines sounds for walking, breaking, and placing.",
+          "dataType": 2
+        },
+        {
+          "id": "isotropic",
+          "title": "Isotropic",
+          "description": "Whether the block uses isotropic (orientation-independent) textures. Can be a boolean for all faces or an object specifying per-face.",
+          "dataType": 16,
+          "subForm": {
+            "id": "isotropic_config",
+            "scalarFieldUpgradeName": "all",
+            "fields": [
+              {
+                "id": "all",
+                "title": "All Faces",
+                "description": "Apply isotropic setting to all faces.",
+                "dataType": 1
+              },
+              {
+                "id": "up",
+                "title": "Up",
+                "description": "Isotropic setting for the top face.",
+                "dataType": 1
+              },
+              {
+                "id": "down",
+                "title": "Down",
+                "description": "Isotropic setting for the bottom face.",
+                "dataType": 1
+              },
+              {
+                "id": "side",
+                "title": "Side",
+                "description": "Isotropic setting for side faces.",
+                "dataType": 1
+              }
+            ]
+          }
+        },
+        {
+          "id": "brightness_gamma",
+          "title": "Brightness Gamma",
+          "description": "Gamma correction value for the block's brightness.",
+          "dataType": 3
+        },
+        {
+          "id": "ambient_occlusion_exponent",
+          "title": "Ambient Occlusion Exponent",
+          "description": "Controls the ambient occlusion effect strength. Lower values result in less shadow in corners.",
+          "dataType": 3
+        }
+      ]
+    }
+  },
+  "note": "This file uses block identifiers as dynamic keys. The format_version field is the only fixed field; all other properties are block-specific entries."
+}

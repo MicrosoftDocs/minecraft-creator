@@ -3,11 +3,14 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:behavior.place_block"
 description: "Describes the minecraft:behavior.place_block ai behavior component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.place_block
+
+AI goal that makes entities place blocks into the world, like Endermen placing their carried block or snow golems leaving snow trails. Configure which blocks can be placed, where they can be placed, and how often the entity attempts placement. Creates mobs that modify the environment.
 
 
 ## Place Block Behavior Properties

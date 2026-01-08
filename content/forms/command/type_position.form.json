@@ -1,0 +1,30 @@
+{
+  "id": "type_position",
+  "title": "Block Position",
+  "description": "A 3D block position (integer coordinates).",
+  "fields": [],
+  "formatHint": "x y z or ~ ~ ~",
+  "aliasOf": [
+    "type_position_float"
+  ],
+  "samples": {
+    "values": [
+      {
+        "path": "Absolute coordinates",
+        "content": "100 64 -200"
+      },
+      {
+        "path": "Relative to executor (10 blocks east)",
+        "content": "~10 ~ ~"
+      },
+      {
+        "path": "Relative (5 blocks up)",
+        "content": "~ ~5 ~"
+      },
+      {
+        "path": "Current position",
+        "content": "~ ~ ~"
+      }
+    ]
+  }
+}

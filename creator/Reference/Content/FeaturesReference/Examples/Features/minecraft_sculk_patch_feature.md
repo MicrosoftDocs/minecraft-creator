@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Feature Documentation - minecraft:sculk_patch_feature"
 description: "Describes the minecraft:sculk_patch_feature feature type"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -11,6 +12,8 @@ ms.date: 02/11/2025
 
 > [!IMPORTANT]
 > This type is internal to vanilla Minecraft usage, and is not functional or supported within custom Minecraft content.
+
+Generates clusters of sculk blocks with veins spreading across surfaces, as found in Deep Dark biomes and Ancient Cities. Configure patch size, spread pattern, and catalyst generation. Creates the distinctive dark blue organic growth that defines sculk-infected underground areas.
 
 
 ## Sculk Patch Feature Properties

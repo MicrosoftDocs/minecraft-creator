@@ -1,6 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "sound_play",
   "title": "Play Sound",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "plays a sound at a location"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "script",
     "action"
@@ -20,5 +33,6 @@
       "lookupId": "soundDefinition",
       "priority": 1
     }
-  ]
+  ],
+  "description": "Plays a sound effect at a location or for specific players. Sounds are short audio clips defined in sound_definitions.json and respect the player's Sound volume setting. Supports pitch and volume modifiers, and sounds attenuate with distance from the source location."
 }

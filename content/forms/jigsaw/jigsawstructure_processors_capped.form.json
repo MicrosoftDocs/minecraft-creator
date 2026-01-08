@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "limits how many times a delegated processor can be applied" }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "processor_type",

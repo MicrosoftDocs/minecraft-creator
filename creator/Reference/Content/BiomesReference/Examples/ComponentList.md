@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Biomes Documentation - Biomes"
 description: "A reference document describing all current Biomes"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -11,7 +12,7 @@ ms.date: 02/11/2025
 
 | Biomes | Description |
 |:-----|:----------|
-| [minecraft:climate](Components/minecraftBiomes_climate.md)| Describes temperature, humidity, precipitation, and similar. |
+| [minecraft:climate](Components/minecraftBiomes_climate.md)| Describes temperature, humidity, precipitation, and similar climate properties for a biome. |
 | [minecraft:creature_spawn_probability](Components/minecraftBiomes_creature_spawn_probability.md)| Probability that creatures will spawn within the biome when a chunk is generated. |
 | [minecraft:humidity](Components/minecraftBiomes_humidity.md)| Forces a biome to ether always be humid or never humid. |
 | [minecraft:map_tints](Components/minecraftBiomes_map_tints.md)| Sets the color grass and foliage will be tinted by in this biome on the map. |

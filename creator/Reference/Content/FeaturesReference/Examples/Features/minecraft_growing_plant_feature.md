@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Feature Documentation - minecraft:growing_plant_feature"
 description: "Describes the minecraft:growing_plant_feature feature type"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

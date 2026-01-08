@@ -1,5 +1,33 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "is a weapon (deprecated)" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "on_hurt_entity",
+      "title": "On Hurt Entity",
+      "description": "An event trigger that fires when this item successfully damages another entity."
+    },
+    {
+      "id": "on_not_hurt_entity",
+      "title": "On Not Hurt Entity", 
+      "description": "An event trigger that fires when this item hits an entity but deals no damage (e.g., due to invincibility frames or immunity)."
+    },
+    {
+      "id": "on_hit_block",
+      "title": "On Hit Block",
+      "description": "An event trigger that fires when this item is used to strike a block."
+    }
+  ],
+  "description": "Deprecated weapon item component. This component is automatically added to vanilla weapon items like swords, axes, and bows.",
+  "note": "This component is deprecated. For custom weapons, use minecraft:damage to set attack damage, minecraft:cooldown for attack speed, and minecraft:durability for durability.",
   "isDeprecated": true,
   "generated_doNotEdit": {
     "title": "Weapon",

@@ -1,0 +1,75 @@
+{
+  "id": "Placement Condition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Placement Condition",
+    "title": "Block Placement Condition",
+    "fields": [
+      {
+        "id": "allowed_faces",
+        "title": "Allowed Faces",
+        "description": "List of any of the following strings describing which face(s) this block can be placed on",
+        "dataType": 16,
+        "defaultValue": [
+          "down",
+          "up",
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      {
+        "id": "block_filter",
+        "description": "List of blocks that this block can be placed against in the \"allowed_faces\" direction. Each block in this list can either be specified as a String (block name) or as a BlockDescriptor.",
+        "dataType": 15,
+        "defaultValue": [],
+        "maxLength": 64,
+        "subForm": {
+          "id": "block_filter",
+          "title": "Block Filter",
+          "fields": [
+            {
+              "id": "name",
+              "title": "Name",
+              "dataType": 2,
+              "defaultValue": ""
+            },
+            {
+              "id": "states",
+              "title": "States",
+              "dataType": 0,
+              "defaultValue": {},
+              "alternates": [
+                {
+                  "id": "states",
+                  "dataType": 2
+                },
+                {
+                  "id": "states",
+                  "dataType": 1
+                }
+              ]
+            },
+            {
+              "id": "tags",
+              "title": "Tags",
+              "dataType": 2,
+              "defaultValue": ""
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "block_filter",
+            "dataType": 2
+          },
+          {
+            "id": "block_filter",
+            "dataType": 16
+          }
+        ]
+      }
+    ]
+  }
+}

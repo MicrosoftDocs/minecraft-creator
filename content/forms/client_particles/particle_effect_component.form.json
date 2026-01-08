@@ -1,5 +1,53 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines components for particle effect behavior"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "minecraft:particle_initial_speed",
+      "title": "Particle Initial Speed",
+      "description": "The initial speed of particles. Can be a number, Molang expression, or array of [x, y, z] speeds.",
+      "dataType": 34,
+      "alternates": [
+        {
+          "id": "minecraft:particle_initial_speed",
+          "dataType": 35,
+          "minLength": 3,
+          "maxLength": 3
+        }
+      ]
+    },
+    {
+      "id": "minecraft:particle_expire_if_in_blocks",
+      "title": "Particle Expire If In Blocks",
+      "description": "List of block identifiers. Particles will expire when they are in any of these blocks.",
+      "dataType": 17
+    },
+    {
+      "id": "minecraft:particle_expire_if_not_in_blocks",
+      "title": "Particle Expire If Not In Blocks",
+      "description": "List of block identifiers. Particles will expire when they are NOT in any of these blocks.",
+      "dataType": 17
+    },
+    {
+      "id": "minecraft:particle_kill_plane",
+      "title": "Particle Kill Plane",
+      "description": "A plane (A, B, C, D coefficients) that kills particles when they cross it. Defined as an array of 4 numbers [A, B, C, D] where Ax + By + Cz + D = 0.",
+      "dataType": 35,
+      "minLength": 4,
+      "maxLength": 4
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_effect component",
     "title": "Client Particles Particle Effect Component",
@@ -177,5 +225,6 @@
         "subFormId": "client_particles/particle_motion_parametric"
       }
     ]
-  }
+  },
+  "description": "Container for all particle effect components that define behavior and appearance. Components control every aspect of particle effects: emitter shape and rate, particle lifetime and motion, visual appearance and colors, collision responses, and event triggers. Combine components to build complex effects from reusable, modular pieces."
 }

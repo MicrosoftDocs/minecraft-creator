@@ -1,4 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "title": "Package.json",
+  "description": "Defines the structure of a Node.js package.json file.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines package.json metadata for a Node.js project"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "name",

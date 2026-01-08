@@ -1,0 +1,191 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "recipe_smithing_trim",
+  "title": "Smithing Trim Recipe",
+  "description": "A smithing table armor trim recipe for Minecraft Bedrock Edition. Smithing trim recipes define how armor items are decorated with trim patterns using trim templates and materials.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "applies a decorative trim pattern to armor using a template and material at a smithing table" }
+        ]
+      }
+    ]
+  },
+  "versionIntroduced": "1.20.0",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "recipe_smithing_trim",
+    "fields": [
+      {
+        "dataType": 25,
+        "id": "format_version",
+        "title": "Format Version",
+        "description": "The format version of this recipe file.",
+        "isRequired": true
+      },
+      {
+        "dataType": 16,
+        "id": "minecraft:recipe_smithing_trim",
+        "title": "Smithing Trim Recipe Definition",
+        "description": "The smithing trim recipe definition container.",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 16,
+              "id": "description",
+              "title": "Description",
+              "description": "The recipe description containing identifier.",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 2,
+                    "id": "identifier",
+                    "title": "Identifier",
+                    "description": "The unique identifier for this recipe.",
+                    "isRequired": true
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": 17,
+              "id": "tags",
+              "title": "Tags",
+              "description": "Tags that specify this is a smithing_table recipe.",
+              "isRequired": true
+            },
+            {
+              "dataType": 16,
+              "id": "template",
+              "title": "Template",
+              "description": "The trim template item or tag.",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 2,
+                    "id": "tag",
+                    "title": "Tag",
+                    "description": "An item tag for the template (e.g., 'minecraft:trim_templates').",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 2,
+                    "id": "item",
+                    "title": "Item",
+                    "description": "A specific item identifier for the template.",
+                    "isRequired": false
+                  }
+                ]
+              },
+              "alternates": [
+                {
+                  "dataType": 2,
+                  "id": "template",
+                  "title": "Template Item",
+                  "description": "A simple string item identifier."
+                }
+              ]
+            },
+            {
+              "dataType": 16,
+              "id": "base",
+              "title": "Base",
+              "description": "The base armor item or tag to be trimmed.",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 2,
+                    "id": "tag",
+                    "title": "Tag",
+                    "description": "An item tag for the base (e.g., 'minecraft:trimmable_armors').",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 2,
+                    "id": "item",
+                    "title": "Item",
+                    "description": "A specific item identifier for the base.",
+                    "isRequired": false
+                  }
+                ]
+              },
+              "alternates": [
+                {
+                  "dataType": 2,
+                  "id": "base",
+                  "title": "Base Item",
+                  "description": "A simple string item identifier."
+                }
+              ]
+            },
+            {
+              "dataType": 16,
+              "id": "addition",
+              "title": "Addition",
+              "description": "The trim material or tag to apply.",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 2,
+                    "id": "tag",
+                    "title": "Tag",
+                    "description": "An item tag for the addition (e.g., 'minecraft:trim_materials').",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 2,
+                    "id": "item",
+                    "title": "Item",
+                    "description": "A specific item identifier for the addition.",
+                    "isRequired": false
+                  }
+                ]
+              },
+              "alternates": [
+                {
+                  "dataType": 2,
+                  "id": "addition",
+                  "title": "Addition Item",
+                  "description": "A simple string item identifier."
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "samples": {
+    "armor_trim": [
+      {
+        "path": "Armor trim recipe",
+        "content": {
+          "format_version": "1.12",
+          "minecraft:recipe_smithing_trim": {
+            "description": {
+              "identifier": "minecraft:smithing_armor_trim"
+            },
+            "tags": [
+              "smithing_table"
+            ],
+            "template": {
+              "tag": "minecraft:trim_templates"
+            },
+            "base": {
+              "tag": "minecraft:trimmable_armors"
+            },
+            "addition": {
+              "tag": "minecraft:trim_materials"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

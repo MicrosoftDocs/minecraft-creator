@@ -1,6 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "entity_spawn",
   "title": "Spawn Entity",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spawns an entity at a location"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "script",
     "action"
@@ -20,5 +33,6 @@
       "lookupId": "entityType",
       "priority": 1
     }
-  ]
+  ],
+  "description": "Spawns a new entity of the specified type at a world location. The entity identifier can be any valid mob, item entity, or custom entity defined in behavior packs. Spawned entities initialize with their default components and can optionally be given a name tag or initial event."
 }

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns absolute position of an entity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.position",
   "fields": [],
   "description": "Returns the absolute position of an entity. Takes one argument that represents the desired axis (0 == x-axis, 1 == y-axis, 2 == z-axis).",

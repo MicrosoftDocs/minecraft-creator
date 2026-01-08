@@ -1,6 +1,40 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "geometry",
-  "fields": [],
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a 3D model using the legacy format with bones, cubes, and box UV mappings"
+          }
+        ]
+      }
+    ]
+  },
+  "title": "Geometry (v1.8.0)",
+  "description": "Legacy geometry format using box-mapped UVs. This format uses the 'geometry.<name>' pattern for model definitions. For newer projects, consider using format version 1.12.0 or later which supports per-face UV mapping.",
+  "fields": [
+    {
+      "id": "bones.reset",
+      "title": "Bone Reset",
+      "description": "When true, resets the bone to its bind pose before applying animations. This property has been deprecated in newer geometry format versions.",
+      "dataType": 1,
+      "isDeprecated": true,
+      "versionDeprecated": "1.16.0",
+      "note": "The reset property on bones was available in geometry v1.8.0 through v1.14.0 but is no longer used in modern formats."
+    },
+    {
+      "id": "bones.inflate",
+      "title": "Bone Inflate",
+      "description": "Expands or shrinks the bone's cubes. This property has been deprecated in newer geometry format versions.",
+      "dataType": 3,
+      "isDeprecated": true,
+      "versionDeprecated": "1.16.0",
+      "note": "The inflate property on bones was available in geometry v1.8.0 through v1.14.0 but is no longer used in modern formats. Use cube-level inflate instead."
+    }
+  ],
   "generated_doNotEdit": {
     "id": "geometry",
     "fields": [

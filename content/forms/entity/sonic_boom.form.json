@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can perform a sonic boom attack"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.sonic_boom",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -52,7 +65,21 @@
         "id": "control_flags",
         "title": "Control Flags",
         "dataType": 17,
-        "defaultValue": []
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
       },
       {
         "id": "duration",

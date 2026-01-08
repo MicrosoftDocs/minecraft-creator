@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can break down doors"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "note": "Not currently used by any entities within Minecraft: Bedrock Edition. In its place, the parameter `can_break_doors` has been added to the `minecraft:navigation` component to allow entities to break down doors.",
   "generated_doNotEdit": {

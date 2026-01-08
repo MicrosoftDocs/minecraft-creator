@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "picks up blocks from the world (enderman-specific)"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "restrictions": [
     {

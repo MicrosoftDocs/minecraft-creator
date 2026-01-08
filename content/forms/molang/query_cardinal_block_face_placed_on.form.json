@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns block face for this (only valid for on_placed_b..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.cardinal_block_face_placed_on",
   "fields": [],
   "isDeprecated": true,

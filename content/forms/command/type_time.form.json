@@ -1,0 +1,46 @@
+{
+  "id": "type_time",
+  "title": "Time",
+  "description": "Time value in ticks or named time.",
+  "fields": [],
+  "formatHint": "ticks or day/night/noon/midnight/sunrise/sunset",
+  "note": "A full day-night cycle is 24000 ticks (20 minutes real time). 1 tick = 0.05 seconds.",
+  "samples": {
+    "named": [
+      {
+        "path": "Start of day (1000 ticks)",
+        "content": "day"
+      },
+      {
+        "path": "Start of night (13000 ticks)",
+        "content": "night"
+      },
+      {
+        "path": "Midday (6000 ticks)",
+        "content": "noon"
+      },
+      {
+        "path": "Midnight (18000 ticks)",
+        "content": "midnight"
+      },
+      {
+        "path": "Sunrise (23000 ticks)",
+        "content": "sunrise"
+      },
+      {
+        "path": "Sunset (12000 ticks)",
+        "content": "sunset"
+      }
+    ],
+    "ticks": [
+      {
+        "path": "Dawn (tick 0)",
+        "content": "0"
+      },
+      {
+        "path": "Noon in ticks",
+        "content": "6000"
+      }
+    ]
+  }
+}

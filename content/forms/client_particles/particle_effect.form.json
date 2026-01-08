@@ -1,4 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a particle effect with emitters, appearance, and motion components"
+          }
+        ]
+      }
+    ]
+  },
+  "title": "Particle Effect",
+  "description": "Defines a particle effect that can be spawned by entities, blocks, or scripts. Particle effects use a component-based system with emitters (controlling spawn rate and shape), appearance (billboard rendering and colors), and motion (physics and collision).",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_effect",

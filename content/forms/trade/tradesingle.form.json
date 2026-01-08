@@ -1,0 +1,56 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "TradeSingle",
+  "title": "Trade",
+  "description": "Defines a single trade offered by a villager or wandering trader.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "exchanges items the villager wants for items the villager gives" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "wants",
+      "title": "Wants",
+      "description": "Array of items the villager wants to receive from the player in exchange. Usually 1-2 items.",
+      "dataType": 15,
+      "subFormId": "trade/tradeitem",
+      "isRequired": true
+    },
+    {
+      "id": "gives",
+      "title": "Gives",
+      "description": "Array of items the villager gives to the player in exchange. Usually 1 item.",
+      "dataType": 15,
+      "subFormId": "trade/tradeitem",
+      "isRequired": true
+    },
+    {
+      "id": "trader_exp",
+      "title": "Trader Experience",
+      "description": "Amount of experience the villager gains when this trade is used. Contributes to villager leveling up.",
+      "dataType": 0,
+      "defaultValue": 1,
+      "minValue": 0
+    },
+    {
+      "id": "max_uses",
+      "title": "Maximum Uses",
+      "description": "Maximum number of times this trade can be used before it becomes locked. Trade refreshes when villager restocks at workstation.",
+      "dataType": 0,
+      "defaultValue": 12,
+      "minValue": 1
+    },
+    {
+      "id": "reward_exp",
+      "title": "Reward Experience",
+      "description": "Whether the player receives experience orbs when completing this trade.",
+      "dataType": 1,
+      "defaultValue": true
+    }
+  ]
+}

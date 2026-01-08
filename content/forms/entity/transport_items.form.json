@@ -1,6 +1,94 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can transport items to storage blocks"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.transport_items",
-  "fields": [],
+  "fields": [
+    {
+      "id": "destination_container_types",
+      "title": "Destination Container Types",
+      "description": "A list of block descriptors that should be container types to put items in. Can be simple block identifier strings or objects with name, states, and tags.",
+      "dataType": 17,
+      "defaultValue": [],
+      "alternates": [
+        {
+          "id": "destination_container_types",
+          "dataType": 15,
+          "subForm": {
+            "id": "destination_container_type",
+            "title": "Destination Container Type",
+            "fields": [
+              {
+                "id": "name",
+                "title": "Name",
+                "description": "Block identifier like 'minecraft:chest'",
+                "dataType": 2
+              },
+              {
+                "id": "states",
+                "title": "States",
+                "description": "Block state values to match",
+                "dataType": 24
+              },
+              {
+                "id": "tags",
+                "title": "Tags",
+                "description": "Block tags to match",
+                "dataType": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "source_container_types",
+      "title": "Source Container Types",
+      "description": "A list of block descriptors that should be container types to take items from. Can be simple block identifier strings or objects with name, states, and tags.",
+      "dataType": 17,
+      "defaultValue": [],
+      "alternates": [
+        {
+          "id": "source_container_types",
+          "dataType": 15,
+          "subForm": {
+            "id": "source_container_type",
+            "title": "Source Container Type",
+            "fields": [
+              {
+                "id": "name",
+                "title": "Name",
+                "description": "Block identifier like 'minecraft:chest'",
+                "dataType": 2
+              },
+              {
+                "id": "states",
+                "title": "States",
+                "description": "Block state values to match",
+                "dataType": 24
+              },
+              {
+                "id": "tags",
+                "title": "Tags",
+                "description": "Block tags to match",
+                "dataType": 2
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.transport_items",
     "title": "Entity Transport Items Behavior",
@@ -30,7 +118,21 @@
         "id": "control_flags",
         "title": "Control Flags",
         "dataType": 17,
-        "defaultValue": []
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
       },
       {
         "id": "destination_container_types",

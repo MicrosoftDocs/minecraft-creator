@@ -1,5 +1,33 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "controls emitter activation and expiration via expressions"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "activation_expression",
+      "title": "Activation Expression",
+      "description": "When the expression is non-zero, the emitter is activated. Can be a number or Molang expression.",
+      "dataType": 34,
+      "defaultValue": 1
+    },
+    {
+      "id": "expiration_expression",
+      "title": "Expiration Expression",
+      "description": "When the expression is non-zero, the emitter expires. Can be a number or Molang expression.",
+      "dataType": 34,
+      "defaultValue": 0
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_lifetime_expression",
     "title": "Client Particles Emitter Lifetime Expression",
@@ -75,5 +103,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Controls when the emitter activates and expires using Molang expressions. The activation expression starts particle emission when it evaluates to non-zero, and the expiration expression stops it. This enables dynamic effects tied to entity state—like flames that only appear when an entity is on fire, or magic particles that pulse with the caster's mana."
 }

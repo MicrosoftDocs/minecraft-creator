@@ -1,8 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "fields": [],
   "id": "minecraft:atmosphere_settings",
   "title": "Atmospheric Scattering",
   "description": "Customize atmospherics effects",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "controls atmospheric scattering and sky appearance for Vibrant Visuals" }
+        ]
+      }
+    ]
+  },
   "generatedFromSchema_doNotEdit": {
     "title": "Struct AtmosphericScattering AtmosphericScatteringConfigSettings Client Deferred Rendering",
     "description": "Struct AtmosphericScattering AtmosphericScatteringConfigSettings Client Deferred Rendering",

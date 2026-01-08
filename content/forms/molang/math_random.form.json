@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns a random value between low and high"
+          }
+        ]
+      }
+    ]
+  },
   "id": "`math.random(low, high)`",
   "fields": [],
   "generated_doNotEdit": {

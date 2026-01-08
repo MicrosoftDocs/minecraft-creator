@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can open doors"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "title": "Open doors annotation",
   "note": "Requires the entity's `navigation` component to have the parameter `can_open_doors` set to `true`.",

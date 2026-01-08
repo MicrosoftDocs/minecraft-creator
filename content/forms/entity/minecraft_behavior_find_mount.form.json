@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "finds entities to ride"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.find_mount",
@@ -138,6 +151,7 @@
       }
     ],
     "samples": {
+      "/vanilla/behavior_pack/entities/drowned.json": [],
       "/vanilla/behavior_pack/entities/husk.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:zombie_husk_jockey/minecraft:behavior.find_mount/",
@@ -182,6 +196,7 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/zombie_pigman.json": [],
       "/vanilla/behavior_pack/entities/zombie_villager.json": [
         {
           "path": "/minecraft:entity/component_groups/jockey/minecraft:behavior.find_mount/",

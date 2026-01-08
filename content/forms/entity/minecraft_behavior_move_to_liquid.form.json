@@ -1,4 +1,22 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "moves toward liquids (deprecated)"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "minecraft:behavior.move_to_liquid",
+  "description": "Allows the mob to move into a liquid when on land. This behavior was deprecated and replaced with simpler movement behaviors.",
+  "isDeprecated": true,
+  "versionDeprecated": "1.18.20",
+  "note": "This behavior was used by striders in versions 1.16.100-1.18.10 but has been removed in favor of simpler movement patterns.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.move_to_liquid",

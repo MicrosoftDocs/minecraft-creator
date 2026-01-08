@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "title": "Render Controller Set",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines texture selection logic for entity rendering"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "render_controllers",
@@ -33,5 +46,6 @@
         ]
       }
     }
-  ]
+  ],
+  "description": "Defines texture selection logic for entity rendering."
 }

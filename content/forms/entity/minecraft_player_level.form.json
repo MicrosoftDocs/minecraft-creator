@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has a level system" }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:player.level",
   "title": "Player Level",
   "description": "Defines the player's level.",

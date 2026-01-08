@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "analyzes resource pack animation files"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "resourceanimation",
+  "title": "Animation Analysis",
+  "description": "Analyzes resource pack animation files to count animations and bone references. Used to assess animation complexity.",
+  "fields": [
+    {
+      "id": "101",
+      "title": "Animation Count",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Count of animation definitions in resource pack animation files.",
+      "technicalDescription": "Data contains the count of animations as a number"
+    },
+    {
+      "id": "102",
+      "title": "Bone Count",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Count of bone references used across animations. More bones generally means more complex animations.",
+      "technicalDescription": "Data contains the count of bone references as a number"
+    }
+  ]
+}

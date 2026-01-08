@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:horse.jump_strength"
 description: "Describes the minecraft:horse.jump_strength entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -16,8 +17,8 @@ Determines the jump height for a horse or similar entity, like a donkey.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| value | *not set* | Array of [Value](#value) items | Value of jump strength the entity has when spawned. | Donkey: `0.5`, Horse: `{"range_min":0.4,"range_max":1}`, Zombie Horse: `{"range_min":0.5,"range_max":0.7}` | 
-| value (Alternate 1) | *not set* | Integer number |  |  | 
+| value | *not set* | [Value](#value) item | Value of jump strength the entity has when spawned. | Donkey: `0.5`, Horse: `{"range_min":0.4,"range_max":1}`, Zombie Horse: `{"range_min":0.5,"range_max":0.7}` | 
+| value (Alternate 1) | *not set* | Decimal number |  |  | 
 
 ## Value
 Describes the range of jump strength.
@@ -27,8 +28,8 @@ Describes the range of jump strength.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| range_max | *not set* | Integer number | Defines the maximum strength level. |  | 
-| range_min | *not set* | Integer number | Defines the minimum strength level. |  | 
+| range_max | *not set* | Decimal number | Defines the maximum strength level. |  | 
+| range_min | *not set* | Decimal number | Defines the minimum strength level. |  | 
 
 ## Samples
 

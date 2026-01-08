@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Molang Math Functions Documentation - Molang Math Functions"
 description: "A reference document describing all current Molang Math Functions"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

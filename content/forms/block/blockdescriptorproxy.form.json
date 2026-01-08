@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has block name, states, and tags"
+          }
+        ]
+      }
+    ]
+  },
   "id": "BlockDescriptorProxy",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -34,5 +47,6 @@
         "defaultValue": ""
       }
     ]
-  }
+  },
+  "description": "Identifies a specific block by name, block states, and optional tags for matching. Used in block components and entity behaviors that need to reference other blocks—like specifying which blocks can support placement, what blocks drop when mined, or which blocks an entity can walk through."
 }

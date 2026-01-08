@@ -1,5 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines axisalignedlinear configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "AxisAlignedLinear",
+  "description": "Predicate that evaluates to true if the block is within the distance range along the provided axis and a random number is generated between the chance range.",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "AxisAlignedLinear",

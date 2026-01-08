@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns how swollen an entity is"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.swell_amount",
   "fields": [],
   "description": "Returns how swollen an entity is. Generally applies to the creeper and wither.",

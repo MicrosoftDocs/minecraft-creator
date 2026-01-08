@@ -1,6 +1,83 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:partially_exposed_blob_feature",
   "description": "Generates a blob of the specified block with the specified dimensions. For the most part, the blob is embedded in the specified surface, however a single side is allowed to be exposed.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "creates a semi-buried blob with one face exposed"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "places_block",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "places "
+          },
+          {
+            "type": "value",
+            "field": "places_block",
+            "humanify": "minecraft"
+          },
+          {
+            "type": "literal",
+            "text": " blobs"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "exposed_face",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "exposes "
+          },
+          {
+            "type": "value",
+            "field": "exposed_face"
+          },
+          {
+            "type": "literal",
+            "text": " face to air or water"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "placement_radius_around_floor",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "value",
+            "field": "placement_radius_around_floor"
+          },
+          {
+            "type": "literal",
+            "text": " block radius"
+          }
+        ],
+        "priority": 3
+      }
+    ]
+  },
   "fields": [
     {
       "id": "format_version",

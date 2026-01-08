@@ -1,0 +1,9 @@
+{
+  "id": "type_message",
+  "title": "Message",
+  "description": "A text message.",
+  "fields": [],
+  "aliasOf": [
+    "type_message_root"
+  ]
+}

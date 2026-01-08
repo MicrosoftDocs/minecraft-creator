@@ -1,0 +1,243 @@
+{
+  "id": "cmd_place",
+  "title": "place",
+  "description": "Places a jigsaw structure, feature, or feature rule in the world.",
+  "fields": [
+    {
+      "id": "action",
+      "title": "action",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "PLACESTRUCTUREACTION"
+    },
+    {
+      "id": "structure",
+      "title": "structure",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "JIGSAWSTRUCTURE"
+    },
+    {
+      "id": "pos",
+      "title": "pos",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "ignorestartheight",
+      "title": "ignoreStartHeight",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_boolean",
+      "commandType": "BOOLEAN"
+    },
+    {
+      "id": "keepjigsaws",
+      "title": "keepJigsaws",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_boolean",
+      "commandType": "BOOLEAN"
+    },
+    {
+      "id": "includeentities",
+      "title": "includeEntities",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_boolean",
+      "commandType": "BOOLEAN"
+    },
+    {
+      "id": "liquidsettings",
+      "title": "liquidSettings",
+      "type": "string",
+      "isOptional": true,
+      "commandType": "LIQUIDSETTINGS"
+    },
+    {
+      "id": "pool",
+      "title": "pool",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_pathcommand",
+      "commandType": "PATHCOMMAND"
+    },
+    {
+      "id": "jigsawtarget",
+      "title": "jigsawTarget",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "maxdepth",
+      "title": "maxDepth",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "feature",
+      "title": "feature",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "FEATURES"
+    },
+    {
+      "id": "position",
+      "title": "position",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "featurerule",
+      "title": "featurerule",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "FEATURERULES"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Overload 1",
+      "description": "",
+      "params": [
+        {
+          "name": "action",
+          "type": "PLACESTRUCTUREACTION",
+          "isOptional": false
+        },
+        {
+          "name": "structure",
+          "type": "JIGSAWSTRUCTURE",
+          "isOptional": false
+        },
+        {
+          "name": "pos",
+          "type": "POSITION",
+          "isOptional": true
+        },
+        {
+          "name": "ignorestartheight",
+          "type": "BOOLEAN",
+          "isOptional": true
+        },
+        {
+          "name": "keepjigsaws",
+          "type": "BOOLEAN",
+          "isOptional": true
+        },
+        {
+          "name": "includeentities",
+          "type": "BOOLEAN",
+          "isOptional": true
+        },
+        {
+          "name": "liquidsettings",
+          "type": "LIQUIDSETTINGS",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Overload 2",
+      "description": "",
+      "params": [
+        {
+          "name": "action",
+          "type": "PLACEJIGSAWACTION",
+          "isOptional": false
+        },
+        {
+          "name": "pool",
+          "type": "PATHCOMMAND",
+          "isOptional": false
+        },
+        {
+          "name": "jigsawtarget",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "maxdepth",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "pos",
+          "type": "POSITION",
+          "isOptional": true
+        },
+        {
+          "name": "keepjigsaws",
+          "type": "BOOLEAN",
+          "isOptional": true
+        },
+        {
+          "name": "includeentities",
+          "type": "BOOLEAN",
+          "isOptional": true
+        },
+        {
+          "name": "liquidsettings",
+          "type": "LIQUIDSETTINGS",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Overload 3",
+      "description": "",
+      "params": [
+        {
+          "name": "action",
+          "type": "PLACEFEATUREACTION",
+          "isOptional": false
+        },
+        {
+          "name": "feature",
+          "type": "FEATURES",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Overload 4",
+      "description": "",
+      "params": [
+        {
+          "name": "action",
+          "type": "PLACEFEATURERULEACTION",
+          "isOptional": false
+        },
+        {
+          "name": "featurerule",
+          "type": "FEATURERULES",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 2,
+  "requiresCheats": true
+}

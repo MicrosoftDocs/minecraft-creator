@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "interpolates between two angles taking the shortest path"
+          }
+        ]
+      }
+    ]
+  },
   "id": "`math.lerprotate(start, end, 0_to_1)`",
   "fields": [],
   "description": "Computes a linear interpolation around a circle in the shortest direction from `a` degrees to `b` degrees with interpolation weighting factor `t` (see `math.lerp`).",

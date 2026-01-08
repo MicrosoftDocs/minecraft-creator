@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns \"max_duration\" value of \"damage_conditions\" fro..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.kinetic_weapon_damage_duration",
   "fields": [],
   "generated_doNotEdit": {

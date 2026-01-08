@@ -1,4 +1,31 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "type",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "generates "
+          },
+          {
+            "type": "value",
+            "field": "type"
+          },
+          {
+            "type": "literal",
+            "text": " style villages"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:village_type",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

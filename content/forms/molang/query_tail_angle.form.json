@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns angle of the tail of the entity if it makes sense"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.tail_angle",
   "fields": [],
   "description": "Returns the angle of the tail of the entity if it makes sense, else it returns 0.0. Generally applies to the donkey, horse, mule, skeleton horse, wolf, zombie horse.",

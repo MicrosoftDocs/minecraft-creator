@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns trade tier of the entity if it makes sense"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.trade_tier",
   "fields": [],
   "description": "Returns the trade tier of the entity if it makes sense, else it returns 0.0. Generaly applies to the villager.",

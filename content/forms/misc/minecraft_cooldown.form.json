@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies cooldown properties"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:cooldown",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

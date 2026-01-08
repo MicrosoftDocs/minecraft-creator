@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns amount of time an item has been in use in secon..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.item_in_use_duration",
   "fields": [],
   "generated_doNotEdit": {

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Deferred Rendering Documentation - minecraft:pbrfallbackconfig_pbrfallbackconfigsettings"
 description: "Describes the minecraft:pbrfallbackconfig_pbrfallbackconfigsettings deferred rendering"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

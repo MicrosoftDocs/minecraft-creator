@@ -1,4 +1,48 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "boolean",
+            "comparison": "equals",
+            "compareTo": false
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is not selectable by cursor"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "boolean",
+            "comparison": "equals",
+            "compareTo": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has full block selection"
+          }
+        ]
+      },
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a custom selection box"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Defines the area of the block that is selected by the player's cursor (the outline shown when looking at the block). If set to true, default values are used (a full 16x16x16 block). If set to false, this block is not selectable by the player's cursor. If this component is omitted, default values are used.",
   "fields": [],
   "scalarField": {
     "id": "boolean",

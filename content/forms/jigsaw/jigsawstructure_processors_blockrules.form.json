@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "replaces and modifies blocks using a series of rules" }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "processor_type",

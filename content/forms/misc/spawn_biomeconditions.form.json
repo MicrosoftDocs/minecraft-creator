@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines spawn biomeconditions settings"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Spawn BiomeConditions",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -182,5 +195,6 @@
         "subFormId": "misc/spawn_worldagefilter"
       }
     ]
-  }
+  },
+  "description": "Defines spawn biomeconditions settings."
 }

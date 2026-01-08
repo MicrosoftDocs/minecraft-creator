@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns head x world-rotation of the ride of an entity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.ride_head_x_rotation",
   "fields": [],
   "generated_doNotEdit": {

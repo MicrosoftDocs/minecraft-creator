@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses multinoise generation for Nether world generation"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "note": "This is a pre-Caves and Cliffs component and is unused for custom biomes.",
   "generated_doNotEdit": {

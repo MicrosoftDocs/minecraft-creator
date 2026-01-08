@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns root entity identifier"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.owner_identifier",
   "fields": [],
   "isDeprecated": true,

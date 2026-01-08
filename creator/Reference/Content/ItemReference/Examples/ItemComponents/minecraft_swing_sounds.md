@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Items Documentation - minecraft:swing_sounds"
 description: "Describes the minecraft:swing_sounds item component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -328,16 +329,34 @@ Overrides the swing sounds emitted by the user.
 | irongolem.crack | Irongolem.crack | |
 | irongolem.repair | Irongolem.repair | |
 | item.book.put | Item.book.put | |
+| item.copper_spear.attack_hit | Item.copper spear.attack hit | |
+| item.copper_spear.attack_miss | Item.copper spear.attack miss | |
+| item.copper_spear.use | Item.copper spear.use | |
+| item.diamond_spear.attack_hit | Item.diamond spear.attack hit | |
+| item.diamond_spear.attack_miss | Item.diamond spear.attack miss | |
+| item.diamond_spear.use | Item.diamond spear.use | |
 | item.enchant.lunge1 | Item.enchant.lunge1 | |
 | item.enchant.lunge2 | Item.enchant.lunge2 | |
 | item.enchant.lunge3 | Item.enchant.lunge3 | |
 | item.fizz | Item.fizz | |
+| item.golden_spear.attack_hit | Item.golden spear.attack hit | |
+| item.golden_spear.attack_miss | Item.golden spear.attack miss | |
+| item.golden_spear.use | Item.golden spear.use | |
+| item.iron_spear.attack_hit | Item.iron spear.attack hit | |
+| item.iron_spear.attack_miss | Item.iron spear.attack miss | |
+| item.iron_spear.use | Item.iron spear.use | |
+| item.netherite_spear.attack_hit | Item.netherite spear.attack hit | |
+| item.netherite_spear.attack_miss | Item.netherite spear.attack miss | |
+| item.netherite_spear.use | Item.netherite spear.use | |
 | item.shield.block | Item.shield.block | |
 | item.spear.attack_hit | Item.spear.attack hit | |
 | item.spear.attack_miss | Item.spear.attack miss | |
 | item.spear.use | Item.spear.use | |
 | item.spyglass.stop_using | Item.spyglass.stop using | |
 | item.spyglass.use | Item.spyglass.use | |
+| item.stone_spear.attack_hit | Item.stone spear.attack hit | |
+| item.stone_spear.attack_miss | Item.stone spear.attack miss | |
+| item.stone_spear.use | Item.stone spear.use | |
 | item.trident.hit | Item.trident.hit | |
 | item.trident.hit_ground | Item.trident.hit ground | |
 | item.trident.return | Item.trident.return | |
@@ -482,6 +501,7 @@ Overrides the swing sounds emitted by the user.
 | retreat | Retreat | |
 | roar | Roar | |
 | saddle | Saddle | |
+| saddle_in_water | Saddle in water | |
 | scared | Scared | |
 | scrape | Scrape | |
 | screech | Screech | |
@@ -866,16 +886,34 @@ Overrides the swing sounds emitted by the user.
 | irongolem.crack | Irongolem.crack | |
 | irongolem.repair | Irongolem.repair | |
 | item.book.put | Item.book.put | |
+| item.copper_spear.attack_hit | Item.copper spear.attack hit | |
+| item.copper_spear.attack_miss | Item.copper spear.attack miss | |
+| item.copper_spear.use | Item.copper spear.use | |
+| item.diamond_spear.attack_hit | Item.diamond spear.attack hit | |
+| item.diamond_spear.attack_miss | Item.diamond spear.attack miss | |
+| item.diamond_spear.use | Item.diamond spear.use | |
 | item.enchant.lunge1 | Item.enchant.lunge1 | |
 | item.enchant.lunge2 | Item.enchant.lunge2 | |
 | item.enchant.lunge3 | Item.enchant.lunge3 | |
 | item.fizz | Item.fizz | |
+| item.golden_spear.attack_hit | Item.golden spear.attack hit | |
+| item.golden_spear.attack_miss | Item.golden spear.attack miss | |
+| item.golden_spear.use | Item.golden spear.use | |
+| item.iron_spear.attack_hit | Item.iron spear.attack hit | |
+| item.iron_spear.attack_miss | Item.iron spear.attack miss | |
+| item.iron_spear.use | Item.iron spear.use | |
+| item.netherite_spear.attack_hit | Item.netherite spear.attack hit | |
+| item.netherite_spear.attack_miss | Item.netherite spear.attack miss | |
+| item.netherite_spear.use | Item.netherite spear.use | |
 | item.shield.block | Item.shield.block | |
 | item.spear.attack_hit | Item.spear.attack hit | |
 | item.spear.attack_miss | Item.spear.attack miss | |
 | item.spear.use | Item.spear.use | |
 | item.spyglass.stop_using | Item.spyglass.stop using | |
 | item.spyglass.use | Item.spyglass.use | |
+| item.stone_spear.attack_hit | Item.stone spear.attack hit | |
+| item.stone_spear.attack_miss | Item.stone spear.attack miss | |
+| item.stone_spear.use | Item.stone spear.use | |
 | item.trident.hit | Item.trident.hit | |
 | item.trident.hit_ground | Item.trident.hit ground | |
 | item.trident.return | Item.trident.return | |
@@ -1020,6 +1058,7 @@ Overrides the swing sounds emitted by the user.
 | retreat | Retreat | |
 | roar | Roar | |
 | saddle | Saddle | |
+| saddle_in_water | Saddle in water | |
 | scared | Scared | |
 | scrape | Scrape | |
 | screech | Screech | |
@@ -1404,16 +1443,34 @@ Overrides the swing sounds emitted by the user.
 | irongolem.crack | Irongolem.crack | |
 | irongolem.repair | Irongolem.repair | |
 | item.book.put | Item.book.put | |
+| item.copper_spear.attack_hit | Item.copper spear.attack hit | |
+| item.copper_spear.attack_miss | Item.copper spear.attack miss | |
+| item.copper_spear.use | Item.copper spear.use | |
+| item.diamond_spear.attack_hit | Item.diamond spear.attack hit | |
+| item.diamond_spear.attack_miss | Item.diamond spear.attack miss | |
+| item.diamond_spear.use | Item.diamond spear.use | |
 | item.enchant.lunge1 | Item.enchant.lunge1 | |
 | item.enchant.lunge2 | Item.enchant.lunge2 | |
 | item.enchant.lunge3 | Item.enchant.lunge3 | |
 | item.fizz | Item.fizz | |
+| item.golden_spear.attack_hit | Item.golden spear.attack hit | |
+| item.golden_spear.attack_miss | Item.golden spear.attack miss | |
+| item.golden_spear.use | Item.golden spear.use | |
+| item.iron_spear.attack_hit | Item.iron spear.attack hit | |
+| item.iron_spear.attack_miss | Item.iron spear.attack miss | |
+| item.iron_spear.use | Item.iron spear.use | |
+| item.netherite_spear.attack_hit | Item.netherite spear.attack hit | |
+| item.netherite_spear.attack_miss | Item.netherite spear.attack miss | |
+| item.netherite_spear.use | Item.netherite spear.use | |
 | item.shield.block | Item.shield.block | |
 | item.spear.attack_hit | Item.spear.attack hit | |
 | item.spear.attack_miss | Item.spear.attack miss | |
 | item.spear.use | Item.spear.use | |
 | item.spyglass.stop_using | Item.spyglass.stop using | |
 | item.spyglass.use | Item.spyglass.use | |
+| item.stone_spear.attack_hit | Item.stone spear.attack hit | |
+| item.stone_spear.attack_miss | Item.stone spear.attack miss | |
+| item.stone_spear.use | Item.stone spear.use | |
 | item.trident.hit | Item.trident.hit | |
 | item.trident.hit_ground | Item.trident.hit ground | |
 | item.trident.return | Item.trident.return | |
@@ -1558,6 +1615,7 @@ Overrides the swing sounds emitted by the user.
 | retreat | Retreat | |
 | roar | Roar | |
 | saddle | Saddle | |
+| saddle_in_water | Saddle in water | |
 | scared | Scared | |
 | scrape | Scrape | |
 | screech | Screech | |

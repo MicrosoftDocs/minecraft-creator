@@ -1,7 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is sneaking"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_sneaking",
   "fields": [],
-  "description": "Returns 1.0 if the entity is sneaking, else it returns 0.0. Applies generally to the fox.",
   "generated_doNotEdit": {
     "id": "query.is_sneaking",
     "title": "Is Sneaking",

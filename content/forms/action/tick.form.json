@@ -1,6 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "tick",
   "title": "Tick",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "triggers every N game ticks"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "script",
     "trigger",
@@ -12,5 +25,6 @@
       "title": "Every N Ticks",
       "dataType": 0
     }
-  ]
+  ],
+  "description": "Advances the game by a specified number of ticks (each tick is 1/20th of a second). Each tick processes entity AI, physics, redstone updates, and scheduled events. Use this for precise timing control when testing tick-sensitive mechanics like hoppers, observers, or mob pathfinding."
 }

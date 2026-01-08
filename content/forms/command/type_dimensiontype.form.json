@@ -1,0 +1,23 @@
+{
+  "id": "type_dimensiontype",
+  "title": "Dimension",
+  "description": "A dimension identifier.",
+  "fields": [],
+  "formatHint": "dimension_name",
+  "samples": {
+    "values": [
+      {
+        "path": "The main world",
+        "content": "overworld"
+      },
+      {
+        "path": "The Nether dimension",
+        "content": "nether"
+      },
+      {
+        "path": "The End dimension",
+        "content": "the_end"
+      }
+    ]
+  }
+}

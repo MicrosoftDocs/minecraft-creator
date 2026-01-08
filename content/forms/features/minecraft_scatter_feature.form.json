@@ -1,6 +1,101 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:scatter_feature",
   "description": "Scatters a feature throughout a chunk. The x, y, and z fields are per-coordinate parameters. Coordinates represent an offset from the input position instead of an absolute position, and may be a single value, random distribution, or Molang expression that resolves to a numeric value. The coordinate_eval_order field is provided for finer control of coordinate resolution (particularly when using the grid distribution). iterations controls how many individual placements should occur if the scatter_chance check succeeds. The scatter_chance check happens once, so either all placements will run or none will. Succeeds if At least one feature placement succeeds. Fails if all feature placements fail",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "distributes features across a chunk with configurable spread"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "places_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "scatters "
+          },
+          {
+            "type": "value",
+            "field": "places_feature",
+            "humanify": "minecraft"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "iterations",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "attempts "
+          },
+          {
+            "type": "value",
+            "field": "iterations"
+          },
+          {
+            "type": "literal",
+            "text": " placement iterations"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "distribution.iterations",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "attempts "
+          },
+          {
+            "type": "value",
+            "field": "distribution.iterations"
+          },
+          {
+            "type": "literal",
+            "text": " placement iterations"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "scatter_chance",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "value",
+            "field": "scatter_chance"
+          },
+          {
+            "type": "literal",
+            "text": "% chance to scatter"
+          }
+        ],
+        "priority": 3
+      }
+    ]
+  },
   "fields": [
     {
       "id": "format_version",
@@ -12,12 +107,48 @@
       "versionIntroduced": "1.21.20"
     }
   ],
+  "note": "In format version 1.21.20 and later, the `distribution` field was introduced to consolidate scatter parameters. Prior versions use x, y, z, iterations, and scatter_chance fields directly at the root level of the feature.",
   "samples": {
     "example": [
       {
-        "path": "Uses `distribution` field to define the scattering settings.",
+        "path": "Legacy format (pre-1.21.20) with scatter parameters at root level",
         "content": {
-          "format_version": "1.21.10",
+          "format_version": "1.13.0",
+          "minecraft:scatter_feature": {
+            "description": {
+              "identifier": "example:scatter_tall_grass_feature"
+            },
+            "places_feature": "example:tall_grass_feature",
+            "iterations": 90,
+            "x": {
+              "distribution": "gaussian",
+              "extent": [
+                -8,
+                8
+              ]
+            },
+            "y": {
+              "distribution": "gaussian",
+              "extent": [
+                -4,
+                4
+              ]
+            },
+            "z": {
+              "distribution": "gaussian",
+              "extent": [
+                -8,
+                8
+              ]
+            },
+            "coordinate_eval_order": "zyx"
+          }
+        }
+      },
+      {
+        "path": "Modern format (1.21.20+) using the distribution field",
+        "content": {
+          "format_version": "1.21.20",
           "minecraft:scatter_feature": {
             "description": {
               "identifier": "example:scatter_flowers_feature"

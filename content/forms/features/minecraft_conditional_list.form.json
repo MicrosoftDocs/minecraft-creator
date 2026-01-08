@@ -1,5 +1,72 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:conditional_list",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "evaluates conditions to select which feature to place"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "conditional_features",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "tests "
+          },
+          {
+            "type": "value",
+            "field": "conditional_features.length"
+          },
+          {
+            "type": "literal",
+            "text": " conditional feature entries"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "early_out_scheme",
+            "comparison": "=",
+            "value": "condition_success"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "stops on first passing condition"
+          }
+        ],
+        "priority": 3
+      },
+      {
+        "visibility": [
+          {
+            "field": "early_out_scheme",
+            "comparison": "=",
+            "value": "placement_success"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "stops on first successful placement"
+          }
+        ],
+        "priority": 3
+      }
+    ]
+  },
   "fields": [
     {
       "id": "format_version",
@@ -61,5 +128,6 @@
         "isRequired": false
       }
     ]
-  }
+  },
+  "description": "Evaluates conditions and places features from the first matching entry. Each entry has a condition expression and associated feature—when the condition passes, that feature generates and later entries are skipped. Enables biome-dependent variants or terrain-responsive structure selection during world generation."
 }

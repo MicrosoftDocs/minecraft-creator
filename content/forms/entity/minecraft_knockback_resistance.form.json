@@ -1,19 +1,31 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [{ "field": "value", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "has knockback resistance of " },
+          { "type": "value", "field": "value" }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:knockback_resistance",
   "title": "Knockback Resistance",
-  "description": "Compels an entity to resist being knocked backwards by a melee attack.",
+  "description": "Determines an entity's resistance to knockback from melee attacks. A value of 0.0 means no resistance, while 1.0 provides full immunity to knockback (like iron golems).",
   "scalarFieldUpgradeName": "value",
   "fields": [
     {
       "id": "value",
       "title": "Value",
-      "description": "The amount of knockback resistance that an entity has.",
+      "description": "The amount of knockback resistance, from 0.0 (none) to 1.0 (full immunity).",
       "dataType": 3
     },
     {
       "id": "max",
       "title": "Maximum Value",
-      "description": "Maximum potential knockback resistence that this has.",
+      "description": "Maximum potential knockback resistance for this entity.",
       "dataType": 3
     }
   ]

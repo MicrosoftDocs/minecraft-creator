@@ -1,5 +1,42 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "evaluates blocks by axis-aligned distance and random chance" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "axis",
+      "title": "Axis",
+      "description": "The axis along which to measure distance."
+    },
+    {
+      "id": "min_chance",
+      "title": "Min Chance",
+      "description": "Minimum chance value for the random probability."
+    },
+    {
+      "id": "max_chance",
+      "title": "Max Chance",
+      "description": "Maximum chance value for the random probability."
+    },
+    {
+      "id": "min_dist",
+      "title": "Min Distance",
+      "description": "Minimum distance along the axis."
+    },
+    {
+      "id": "max_dist",
+      "title": "Max Distance",
+      "description": "Maximum distance along the axis."
+    }
+  ],
+  "description": "Predicate that evaluates to true if the block is within the distance range along the provided axis and a random number is generated between the chance range.",
   "generated_doNotEdit": {
     "title": "JigsawStructure ProcessorRule AxisAlignedLinear",
     "description": "Predicate that evalutes to true if the block is within the distance range along the provided axis and and random number is generated between chance range",

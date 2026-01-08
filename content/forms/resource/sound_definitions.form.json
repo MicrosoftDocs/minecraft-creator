@@ -1,0 +1,166 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "sound_definitions",
+  "title": "Sound Definitions",
+  "description": "Defines sound events and their associated audio files. This file maps sound event identifiers to one or more sound files that can play when that event is triggered. Located at sounds/sound_definitions.json in resource packs.",
+  "versionIntroduced": "1.14.0",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "maps sound event identifiers to their audio files and playback settings" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of the sound definitions file. Should be '1.14.0' or higher.",
+      "dataType": 25,
+      "defaultValue": "1.14.0",
+      "isRequired": true
+    },
+    {
+      "id": "sound_definitions",
+      "title": "Sound Definitions",
+      "description": "A collection of sound event definitions, where each key is a sound event identifier (e.g., 'mob.zombie.say') and the value defines which sounds can play for that event.",
+      "dataType": 14,
+      "subForm": {
+        "id": "sound_definition_entry",
+        "title": "Sound Definition Entry",
+        "description": "Defines a single sound event with its category and associated sound files.",
+        "fields": [
+          {
+            "id": "category",
+            "title": "Category",
+            "description": "The audio category this sound belongs to. Controls which volume slider affects this sound in settings.",
+            "dataType": 4,
+            "enumValues": [
+              "ambient",
+              "block",
+              "bottle",
+              "bucket",
+              "hostile",
+              "music",
+              "neutral",
+              "player",
+              "record",
+              "ui",
+              "weather"
+            ]
+          },
+          {
+            "id": "sounds",
+            "title": "Sounds",
+            "description": "Array of sound files or sound objects that can play for this event. When multiple sounds are defined, one is chosen randomly.",
+            "dataType": 15,
+            "isRequired": true,
+            "subForm": {
+              "id": "sound_entry",
+              "title": "Sound Entry",
+              "description": "A sound file reference with optional playback properties.",
+              "scalarFieldUpgradeName": "name",
+              "fields": [
+                {
+                  "id": "name",
+                  "title": "Name",
+                  "description": "Path to the sound file relative to the sounds folder, without the file extension (e.g., 'sounds/mob/zombie/say1').",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "volume",
+                  "title": "Volume",
+                  "description": "Volume multiplier for this sound. Can be a single value or a range [min, max]. Default is 1.0.",
+                  "dataType": 19,
+                  "defaultValue": 1
+                },
+                {
+                  "id": "pitch",
+                  "title": "Pitch",
+                  "description": "Pitch multiplier for this sound. Can be a single value or a range [min, max]. Default is 1.0.",
+                  "dataType": 19,
+                  "defaultValue": 1
+                },
+                {
+                  "id": "load_on_low_memory",
+                  "title": "Load on Low Memory",
+                  "description": "If true, this sound will be loaded even on devices with low memory. Use sparingly for critical sounds.",
+                  "dataType": 1,
+                  "defaultValue": false
+                },
+                {
+                  "id": "stream",
+                  "title": "Stream",
+                  "description": "If true, the sound will be streamed from disk rather than loaded into memory. Recommended for long sounds like music.",
+                  "dataType": 1,
+                  "defaultValue": false
+                },
+                {
+                  "id": "weight",
+                  "title": "Weight",
+                  "description": "Relative probability weight for this sound when multiple sounds are defined. Higher values make this sound more likely to be chosen.",
+                  "dataType": 0,
+                  "defaultValue": 1
+                },
+                {
+                  "id": "is3D",
+                  "title": "Is 3D",
+                  "description": "If true, this sound is positional and will have 3D audio properties.",
+                  "dataType": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "min_distance",
+            "title": "Minimum Distance",
+            "description": "The minimum distance in blocks at which the sound starts to attenuate.",
+            "dataType": 3,
+            "defaultValue": 0
+          },
+          {
+            "id": "max_distance",
+            "title": "Maximum Distance",
+            "description": "The maximum distance in blocks at which the sound can be heard.",
+            "dataType": 3
+          }
+        ]
+      },
+      "isRequired": true
+    }
+  ],
+  "samples": {
+    "vanilla_data/resource_packs/vanilla_1.21.120/sounds/sound_definitions.json": [
+      {
+        "path": "sound_definitions/mob.imitate.blaze",
+        "content": {
+          "category": "neutral",
+          "sounds": [
+            {
+              "name": "sounds/mob/blaze/breathe1",
+              "volume": 0.2
+            },
+            {
+              "name": "sounds/mob/blaze/breathe2",
+              "volume": 0.2
+            }
+          ]
+        }
+      },
+      {
+        "path": "sound_definitions/mob.imitate.bogged",
+        "content": {
+          "category": "neutral",
+          "sounds": [
+            "sounds/mob/bogged/ambient1",
+            "sounds/mob/bogged/ambient2",
+            "sounds/mob/bogged/ambient3"
+          ]
+        }
+      }
+    ]
+  }
+}

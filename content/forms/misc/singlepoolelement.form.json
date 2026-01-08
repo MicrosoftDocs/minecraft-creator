@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines singlepoolelement configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "SinglePoolElement",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -32,5 +45,6 @@
         "dataType": 2
       }
     ]
-  }
+  },
+  "description": "Defines singlepoolelement configuration."
 }

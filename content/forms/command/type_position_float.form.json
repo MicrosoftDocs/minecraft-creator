@@ -1,0 +1,52 @@
+{
+  "id": "type_position_float",
+  "title": "Position (x y z)",
+  "description": "A 3D position in the world. Can use absolute coordinates, relative coordinates (~), or local coordinates (^).",
+  "fields": [],
+  "formatHint": "x y z, ~ ~ ~, or ^ ^ ^",
+  "note": "Coordinate types: Absolute (world coordinates), Relative (~ offset from execution position), Local (^ offset relative to entity's facing direction: left/right, up/down, forward/back)",
+  "samples": {
+    "relative": [
+      {
+        "path": "Current position (where command executes)",
+        "content": "~ ~ ~"
+      },
+      {
+        "path": "One block above current position",
+        "content": "~ ~1 ~"
+      },
+      {
+        "path": "One block below current position",
+        "content": "~ ~-1 ~"
+      },
+      {
+        "path": "5 blocks east (positive X)",
+        "content": "~5 ~ ~"
+      },
+      {
+        "path": "Explicit relative (same as ~ ~ ~)",
+        "content": "~0 ~0 ~0"
+      }
+    ],
+    "local": [
+      {
+        "path": "One block in front (facing direction)",
+        "content": "^ ^ ^1"
+      },
+      {
+        "path": "One block behind",
+        "content": "^ ^ ^-1"
+      },
+      {
+        "path": "One block to the left",
+        "content": "^1 ^ ^"
+      }
+    ],
+    "absolute": [
+      {
+        "path": "World origin at sea level",
+        "content": "0 64 0"
+      }
+    ]
+  }
+}

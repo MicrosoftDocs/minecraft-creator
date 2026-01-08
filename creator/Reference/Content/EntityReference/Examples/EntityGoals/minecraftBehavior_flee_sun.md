@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:behavior.flee_sun"
 description: "Describes the minecraft:behavior.flee_sun ai behavior component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -10,6 +11,9 @@ ms.date: 02/11/2025
 # Entity Documentation - minecraft:behavior.flee_sun
 
 Allows the mob to run away from direct sunlight and seek shade.
+
+> [!Note]
+> This behavior is used by undead mobs like skeletons and zombies that burn in sunlight. The entity will seek shade or water during daytime to avoid sun damage.
 
 
 ## Flee Sun Behavior Properties

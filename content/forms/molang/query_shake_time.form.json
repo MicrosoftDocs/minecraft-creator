@@ -1,7 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns shake time of the entity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.shake_time",
   "fields": [],
-  "description": "Returns the shake time of the entity.",
   "generated_doNotEdit": {
     "id": "query.shake_time",
     "title": "Shake Time",

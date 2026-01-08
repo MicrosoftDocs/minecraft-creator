@@ -3,14 +3,17 @@ author: mammerla
 ms.author: mikeam
 title: "Visuals Documentation - minecraft:geometry.v1.12.0"
 description: "Describes the minecraft:geometry.v1.12.0 visual element"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Visuals Documentation - minecraft:geometry.v1.12.0
 
+Modern geometry format using the 'minecraft:geometry' array pattern. Supports per-face UV mapping, cube rotation, and improved locator definitions. This is the recommended format for new content.
 
-## Geometry Properties
+
+## Geometry (v1.12.0+) Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

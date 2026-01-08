@@ -3,13 +3,17 @@ author: mammerla
 ms.author: mikeam
 title: "Items Documentation - minecraft:throwable"
 description: "Describes the minecraft:throwable item component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Items Documentation - minecraft:throwable
 
-Sets the throwable item component.
+Makes an item throwable by the player, similar to a snowball or ender pearl. Use with minecraft:projectile to specify which entity is spawned when thrown.
+
+> [!Note]
+> Combine with minecraft:projectile to define the projectile entity. For charged throws (like tridents), set scale_power_by_draw_duration to true and configure min/max draw durations.
 
 
 ## Item Components Throwable Properties

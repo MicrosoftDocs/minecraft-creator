@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has custom rain and snow interactions"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:precipitation_interactions",
   "fields": [],
   "generated_doNotEdit": {

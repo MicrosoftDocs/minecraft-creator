@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines surface builder component"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:surface_builder",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

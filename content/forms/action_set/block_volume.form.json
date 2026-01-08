@@ -1,6 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "block_volume",
   "title": "Block volume",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a volume of blocks in the world"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "southWestBottom",
@@ -39,5 +52,6 @@
         ]
       }
     }
-  ]
+  ],
+  "description": "Defines a 3D volume of blocks in the world using a layered ASCII-art style format. Each character in the pattern maps to a block type through a key lookup, enabling efficient representation of structures like buildings, obstacles, or test arenas."
 }

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has connection rules for adjacent blocks"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:connection_rule",
   "fields": [],
   "generated_doNotEdit": {

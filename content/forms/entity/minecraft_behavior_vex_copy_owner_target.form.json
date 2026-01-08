@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "targets the same entity as its owner"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "note": "No longer used for the `vex` entity.",
   "generated_doNotEdit": {

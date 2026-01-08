@@ -1,0 +1,32 @@
+{
+  "id": "cmd_kill",
+  "title": "kill",
+  "description": "Kills entities like players and mobs.",
+  "fields": [
+    {
+      "id": "target",
+      "title": "target",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player or entity.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Kill entity",
+      "description": "Kill a `target` entity.",
+      "params": [
+        {
+          "name": "target",
+          "type": "SELECTION",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

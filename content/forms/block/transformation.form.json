@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has rotation, scale, or translation"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Transformation",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -211,5 +224,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Applies geometric transformations to the block's visual representation. Rotate the model in 90-degree increments, scale uniformly or per-axis, and translate position within the block space. Enables rotatable blocks like furnaces, scaled decorations, and precise positioning of custom geometry."
 }

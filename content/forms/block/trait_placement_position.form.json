@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has block face and vertical half states" }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "enabled_states",

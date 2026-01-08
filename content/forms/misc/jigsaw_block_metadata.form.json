@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines jigsaw block metadata configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Jigsaw Block Metadata",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -69,5 +82,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines jigsaw block metadata configuration."
 }

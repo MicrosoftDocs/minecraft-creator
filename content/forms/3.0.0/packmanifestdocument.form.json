@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "3.0.0.PackManifestDocument",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a complete pack manifest with header, modules, dependencies, and settings"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "3.0.0.PackManifestDocument",
@@ -67,5 +80,6 @@
         "subFormId": "3.0.0/subpack"
       }
     ]
-  }
+  },
+  "description": "The root structure of a manifest.json file that defines an add-on pack. Every behavior pack and resource pack requires a manifest with a unique UUID, version info, and module declarations. This is the entry point Minecraft uses to identify and load your content."
 }

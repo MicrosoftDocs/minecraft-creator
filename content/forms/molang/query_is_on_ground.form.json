@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is on the ground"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_on_ground",
   "fields": [],
   "generated_doNotEdit": {

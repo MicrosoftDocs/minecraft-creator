@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns height of the block immediately above the highe..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.above_top_solid",
   "fields": [],
   "samples": {

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can use a kinetic weapon to attack"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.use_kinetic_weapon",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -21,6 +34,13 @@
         "defaultValue": false
       },
       {
+        "id": "attack_types",
+        "title": "Attack Types",
+        "description": "Defines the entity types this entity will attack.",
+        "dataType": 2,
+        "defaultValue": ""
+      },
+      {
         "id": "can_spread_on_fire",
         "title": "Can Spread On Fire",
         "description": "Allows the mob, if on fire and empty handed, to ignite its target upon a successful attack.",
@@ -31,7 +51,21 @@
         "id": "control_flags",
         "title": "Control Flags",
         "dataType": 17,
-        "defaultValue": []
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
       },
       {
         "id": "cooldown_distance",
@@ -92,6 +126,48 @@
         "description": "Minimum base time, in seconds, before recalculating a new attack path to the target (before increases are applied).",
         "dataType": 3,
         "defaultValue": 0.20000000298023224
+      },
+      {
+        "id": "on_attack",
+        "title": "Attack",
+        "description": "Defines the event to trigger when this entity successfully attacks.",
+        "dataType": 16,
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "on_kill",
+        "title": "Kill",
+        "description": "Defines the event to trigger when this entity kills the target.",
+        "dataType": 16,
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
       },
       {
         "id": "outer_boundary_time_increase",

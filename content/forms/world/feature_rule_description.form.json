@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines the identifier and feature reference for a feature rule"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Feature Rule Description",
@@ -19,5 +32,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines the identifier and feature reference for a feature rule."
 }

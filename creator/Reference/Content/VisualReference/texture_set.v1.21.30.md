@@ -3,14 +3,17 @@ author: mammerla
 ms.author: mikeam
 title: "Visuals Documentation - minecraft:texture_set.v1.21.30"
 description: "Describes the minecraft:texture_set.v1.21.30 visual element"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Visuals Documentation - minecraft:texture_set.v1.21.30
 
+Defines a PBR texture set document with format_version 1.21.30.
 
-## Texture Set Properties
+
+## Texture Set (v1.21.30) Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is being rendered in first person mode"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_first_person",
   "fields": [],
   "generated_doNotEdit": {

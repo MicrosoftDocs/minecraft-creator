@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines spawn delayfilter settings"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Spawn DelayFilter",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -26,5 +39,6 @@
         "dataType": 0
       }
     ]
-  }
+  },
+  "description": "Defines spawn delayfilter settings."
 }

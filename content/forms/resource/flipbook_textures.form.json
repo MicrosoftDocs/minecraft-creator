@@ -1,0 +1,95 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "flipbook_textures",
+  "title": "Flipbook Textures",
+  "description": "The flipbook_textures.json file defines animated textures for blocks. Each entry specifies a texture that cycles through frames at a specified rate. Located at textures/flipbook_textures.json in resource packs.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines animated textures that cycle through frames over time" }
+        ]
+      }
+    ]
+  },
+  "fields": [],
+  "note": "This file is a JSON array at the root level, with each element being a flipbook texture definition.",
+  "subForm": {
+    "id": "flipbook_texture_entry",
+    "title": "Flipbook Texture Entry",
+    "description": "Defines an animated texture with frame timing.",
+    "fields": [
+      {
+        "id": "flipbook_texture",
+        "title": "Flipbook Texture",
+        "description": "Path to the texture file containing the animation frames, stacked vertically.",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "atlas_tile",
+        "title": "Atlas Tile",
+        "description": "The name of the texture in the terrain or item atlas that this animation applies to.",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "atlas_index",
+        "title": "Atlas Index",
+        "description": "Index in the atlas for textures with variants. Used when a single atlas tile has multiple texture options.",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "ticks_per_frame",
+        "title": "Ticks Per Frame",
+        "description": "Number of game ticks each frame is displayed before advancing to the next frame. 20 ticks = 1 second.",
+        "dataType": 0,
+        "isRequired": true,
+        "defaultValue": 1
+      },
+      {
+        "id": "frames",
+        "title": "Frames",
+        "description": "Optional array of frame indices to play in order. If not specified, frames play sequentially from top to bottom.",
+        "dataType": 15,
+        "subForm": {
+          "id": "frame_index",
+          "fields": [
+            {
+              "id": "index",
+              "title": "Frame Index",
+              "description": "Index of the frame to display (0-based, from top of texture).",
+              "dataType": 0
+            }
+          ]
+        }
+      },
+      {
+        "id": "replicate",
+        "title": "Replicate",
+        "description": "How many times to replicate the texture frames. Used for multi-tile textures.",
+        "dataType": 0
+      },
+      {
+        "id": "blend_frames",
+        "title": "Blend Frames",
+        "description": "If true, smoothly interpolates between frames. If false, frames switch instantly.",
+        "dataType": 1,
+        "defaultValue": true
+      }
+    ]
+  },
+  "samples": {
+    "vanilla_data/resource_packs/vanilla/textures/flipbook_textures.json": [
+      {
+        "path": "fire",
+        "content": {
+          "flipbook_texture": "textures/blocks/fire_0",
+          "atlas_tile": "fire_0",
+          "ticks_per_frame": 3
+        }
+      }
+    ]
+  }
+}

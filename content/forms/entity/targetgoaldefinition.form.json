@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has target goal conditions for AI behaviors"
+          }
+        ]
+      }
+    ]
+  },
   "id": "TargetGoalDefinition",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -16,7 +29,21 @@
         "id": "control_flags",
         "title": "Control Flags",
         "dataType": 17,
-        "defaultValue": []
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
       },
       {
         "id": "entity_types",
@@ -213,5 +240,6 @@
         "defaultValue": 0
       }
     ]
-  }
+  },
+  "description": "Configures conditions for AI targeting goals like nearest_attackable_target or hurt_by_target. Defines filters that potential targets must pass, reselection timing, and target persistence. Controls which entities the mob will aggro on, how long it remembers targets, and when it switches to new threats."
 }

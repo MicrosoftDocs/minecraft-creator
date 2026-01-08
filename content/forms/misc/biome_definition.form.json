@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "contains a description and components to define a biome"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Biome Definition",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

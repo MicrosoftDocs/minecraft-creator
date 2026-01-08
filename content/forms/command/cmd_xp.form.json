@@ -1,0 +1,63 @@
+{
+  "id": "cmd_xp",
+  "title": "xp",
+  "description": "Adds or removes player experience.",
+  "fields": [
+    {
+      "id": "amount",
+      "title": "amount",
+      "type": "string",
+      "isOptional": false,
+      "description": "An `integer` of the experience to add to the player. May only be negative to remove xp.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "player",
+      "title": "player",
+      "type": "string",
+      "isOptional": true,
+      "description": "A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player who should receive or lose xp.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Add XP",
+      "description": "`Add` a given positive `integer` amount of `xp` to the target `player`.",
+      "params": [
+        {
+          "name": "amount",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Remove XP",
+      "description": "`Remove` a given negative `integer` amount of `xp` from the target `player`.",
+      "params": [
+        {
+          "name": "amount",
+          "type": "postfix_l",
+          "isOptional": false
+        },
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

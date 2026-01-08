@@ -1,4 +1,21 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has breathability type "
+          },
+          {
+            "type": "value",
+            "field": "_breathability"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "isDeprecated": true,
   "scalarField": {

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines conditions for feature placement including biome filters and placement pass"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Feature Rule Conditions",
@@ -60,5 +73,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines conditions for feature placement including biome filters and placement pass."
 }

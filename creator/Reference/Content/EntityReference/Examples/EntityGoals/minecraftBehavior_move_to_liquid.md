@@ -3,14 +3,20 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:behavior.move_to_liquid"
 description: "Describes the minecraft:behavior.move_to_liquid ai behavior component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.move_to_liquid
 
-Allows the mob to move into a liquid when on land.
+> [!IMPORTANT]
+> This type is now deprecated, and no longer in use in the latest versions of Minecraft.
 
+Allows the mob to move into a liquid when on land. This behavior was deprecated and replaced with simpler movement behaviors.
+
+> [!Note]
+> This behavior was used by striders in versions 1.16.100-1.18.10 but has been removed in favor of simpler movement patterns.
 
 ## Move To Liquid Behavior Properties
 

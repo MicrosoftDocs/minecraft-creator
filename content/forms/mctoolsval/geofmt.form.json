@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates geometry file format compatibility"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "geofmt",
+  "title": "Geometry Format",
+  "description": "Validates model geometry files for format compatibility and restricted features. Identifies geometry features that may not work on all platforms.",
+  "fields": [
+    {
+      "id": "101",
+      "title": "Restricted Poly Mesh",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when geometry contains poly_mesh data. Poly meshes are a restricted feature that may not be available on all platforms.",
+      "technicalDescription": "Data contains the geometry identifier with poly_mesh"
+    },
+    {
+      "id": "102",
+      "title": "JSON Parse Error",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when the geometry JSON file could not be parsed. Check for syntax errors in the geometry definition.",
+      "technicalDescription": "Data contains the JSON parse error message"
+    }
+  ]
+}

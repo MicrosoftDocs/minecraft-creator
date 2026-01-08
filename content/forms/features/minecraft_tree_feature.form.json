@@ -1,6 +1,204 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:tree_feature",
   "description": "Places a tree in the world. A tree consists of a column that is anchored to a base block with set parameters for what it can be placed on and canopy that extends from the column. The trunk height can be randomized with a min and max value, as well as the canopy offset.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "generates a tree with trunk and canopy configuration"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "base_block",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "places "
+          },
+          {
+            "type": "value",
+            "field": "base_block",
+            "humanify": "minecraft"
+          },
+          {
+            "type": "literal",
+            "text": " as the base block"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "may_grow_on",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can grow on "
+          },
+          {
+            "type": "value",
+            "field": "may_grow_on.length"
+          },
+          {
+            "type": "literal",
+            "text": " different block types"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "acacia_trunk",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses acacia-style trunk with possible diagonal growth"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "cherry_trunk",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses cherry-style branching trunk"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "fallen_trunk",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "generates a fallen/horizontal trunk"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "fancy_trunk",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses fancy oak-style trunk"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "mangrove_trunk",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses mangrove-style trunk with roots"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "mega_trunk",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "generates a large multi-block trunk"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "random_spread_canopy",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a randomly spread canopy"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "fancy_canopy",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a fancy oak-style canopy"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "cherry_canopy",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a cherry blossom canopy"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "mangrove_canopy",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a mangrove canopy with propagules"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "format_version",

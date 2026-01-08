@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has minimum and maximum float values"
+          }
+        ]
+      }
+    ]
+  },
   "id": "FloatRange",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -18,5 +31,6 @@
         "defaultValue": 0
       }
     ]
-  }
+  },
+  "description": "Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior."
 }

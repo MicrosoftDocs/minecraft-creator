@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:addrider"
 description: "Describes the minecraft:addrider entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -22,7 +23,7 @@ Adds a rider to the entity.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | entity_type | *not set* | String from a list of choices | Type of entity to acquire as a rider | Ravager: `"minecraft:pillager"`, `"minecraft:evocation_illager"`, `"minecraft:vindicator"` | 
-| riders | [] | [Riders](#entity-rider-data) item | List of riders to be added to the entity. Can only spawn as many riders as "minecraft:rideable" has "seat_count". | Camel Husk: `[{"entity_type":"minecraft:husk","spawn_event":"minecraft:spawn_as_rider"},{"entity_type":"minecraft:parched","spawn_event":"minecraft:ranged_mode"}]` | 
+| riders | [] | [Riders](#entity-rider-data) item | List of riders to be added to the entity. Can only spawn as many riders as "minecraft:rideable" has "seat_count". | Camel Husk: `[{"entity_type":"minecraft:husk","spawn_event":"minecraft:spawn_as_rider"},{"entity_type":"minecraft:parched","spawn_event":"minecraft:ranged_mode"}]`, Cave Spider: `[{"entity_type":"minecraft:skeleton"}]` | 
 | spawn_event | *not set* | Minecraft Event Reference | Trigger event when a rider is acquired | Ravager: `"minecraft:spawn_for_raid"`, `"minecraft:spawn_as_illager_captain"`, Strider: `"minecraft:spawn_as_strider_jockey"`, `"minecraft:spawn_baby_strider_jockey"` | 
 
 ## Entity Rider Data

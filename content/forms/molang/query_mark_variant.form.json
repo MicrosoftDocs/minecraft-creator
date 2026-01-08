@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns entity's mark variant value"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.mark_variant",
   "fields": [],
   "description": "Returns the entity's mark variant value, if the entity has the `mark_variant` component.",

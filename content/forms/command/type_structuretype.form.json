@@ -1,0 +1,35 @@
+{
+  "id": "type_structuretype",
+  "title": "Structure Type",
+  "description": "A structure identifier for locate command.",
+  "fields": [],
+  "formatHint": "structure_name",
+  "samples": {
+    "values": [
+      {
+        "path": "Village structure",
+        "content": "village"
+      },
+      {
+        "path": "Stronghold",
+        "content": "stronghold"
+      },
+      {
+        "path": "Abandoned mineshaft",
+        "content": "mineshaft"
+      },
+      {
+        "path": "Ocean monument",
+        "content": "monument"
+      },
+      {
+        "path": "Nether fortress",
+        "content": "fortress"
+      },
+      {
+        "path": "Woodland mansion",
+        "content": "mansion"
+      }
+    ]
+  }
+}
