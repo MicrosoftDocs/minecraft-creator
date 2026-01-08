@@ -1,0 +1,53 @@
+{
+  "id": "type_gamerule",
+  "title": "Game Rule",
+  "description": "A world setting that can be changed.",
+  "fields": [],
+  "formatHint": "gamerule_name",
+  "samples": {
+    "boolean_rules": [
+      {
+        "path": "Whether time passes",
+        "content": "doDaylightCycle"
+      },
+      {
+        "path": "Whether weather changes",
+        "content": "doWeatherCycle"
+      },
+      {
+        "path": "Whether mobs spawn naturally",
+        "content": "doMobSpawning"
+      },
+      {
+        "path": "Keep items on death",
+        "content": "keepInventory"
+      },
+      {
+        "path": "Whether mobs can change blocks",
+        "content": "mobGriefing"
+      },
+      {
+        "path": "Whether fire spreads",
+        "content": "doFireTick"
+      },
+      {
+        "path": "Show command block output",
+        "content": "commandBlockOutput"
+      },
+      {
+        "path": "Show coordinates on screen",
+        "content": "showCoordinates"
+      }
+    ],
+    "integer_rules": [
+      {
+        "path": "Speed of random block updates (default 1)",
+        "content": "randomTickSpeed"
+      },
+      {
+        "path": "Radius around spawn for respawning",
+        "content": "spawnRadius"
+      }
+    ]
+  }
+}

@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "title": "MCWorld Properties",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines world properties including spawn location, difficulty, and game type"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "spawnX",
@@ -36,5 +49,6 @@
       "title": "Editor World",
       "dataType": 1
     }
-  ]
+  ],
+  "description": "Defines world properties including spawn location, difficulty, and game type."
 }

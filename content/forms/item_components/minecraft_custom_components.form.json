@@ -1,5 +1,15 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:custom_components",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has custom script components" }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "isDeprecated": true,
   "generatedFromSchema_doNotEdit": {

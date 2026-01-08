@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns nth head y rotation of the entity if it makes s..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.head_y_rotation",
   "fields": [],
   "description": "Returns the nth head y rotation of the entity if it makes sense, else it returns 0.0. Takes one argument as a parameter, but horses, zombie horses, skeleton horses, donkeys and mules require a second parameter that clamps rotation in degrees.",

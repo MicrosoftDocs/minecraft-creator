@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "controls scatter distribution for feature placement" }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "title": "Scatter Params",

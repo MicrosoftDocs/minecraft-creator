@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "LootTableEntry",
+  "title": "Loot Table Entry",
+  "description": "Defines an entry in a loot table pool that can be selected when the pool rolls.",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [{ "field": "name", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "drops " },
+          { "type": "value", "field": "name", "humanify": "minecraft" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "type",
+      "title": "Type",
+      "description": "The type of entry. Valid values: 'item' (drops an item), 'loot_table' (references another loot table), 'empty' (drops nothing).",
+      "dataType": 2,
+      "isRequired": true
+    },
+    {
+      "id": "name",
+      "title": "Name",
+      "description": "The item identifier (for type 'item') or loot table path (for type 'loot_table').",
+      "dataType": 2
+    },
+    {
+      "id": "weight",
+      "title": "Weight",
+      "description": "The relative weight of this entry being selected. Higher weights are more likely. Default is 1.",
+      "dataType": 0,
+      "defaultValue": 1,
+      "minValue": 1
+    },
+    {
+      "id": "functions",
+      "title": "Functions",
+      "description": "Array of functions to apply to the item when selected.",
+      "dataType": 15,
+      "subFormId": "loot/loot_function"
+    },
+    {
+      "id": "conditions",
+      "title": "Conditions",
+      "description": "Array of conditions that must be met for this entry to be considered.",
+      "dataType": 15,
+      "subFormId": "loot/loot_condition"
+    },
+    {
+      "id": "pools",
+      "title": "Pools",
+      "description": "Nested pools for type 'loot_table'. Allows inline loot table definition.",
+      "dataType": 15,
+      "subFormId": "loot/loot_pool"
+    }
+  ]
+}

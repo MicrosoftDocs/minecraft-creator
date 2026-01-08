@@ -1,5 +1,17 @@
 {
-  "title": "Is Hidden When Invisible",
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is completely hidden when invisible"
+          }
+        ]
+      }
+    ]
+  },
   "description": "The entity can hide from hostile mobs while invisible.",
   "fields": [],
   "generated_doNotEdit": {

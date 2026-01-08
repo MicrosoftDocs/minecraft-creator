@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is alive, and 0.0 if it is dead"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_alive",
   "fields": [],
   "generated_doNotEdit": {

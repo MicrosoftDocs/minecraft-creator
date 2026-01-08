@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be controlled on the ground when ridden"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:input_ground_controlled",

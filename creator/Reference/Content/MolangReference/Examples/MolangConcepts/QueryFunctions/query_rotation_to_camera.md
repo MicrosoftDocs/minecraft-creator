@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Molang Documentation - minecraft:query_rotation_to_camera"
 description: "Describes the minecraft:query_rotation_to_camera molang"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

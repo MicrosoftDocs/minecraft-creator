@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "hides inside stone blocks"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "restrictions": [
     {

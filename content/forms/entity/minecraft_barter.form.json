@@ -1,5 +1,35 @@
 {
-  "description": "Enables the component to drop an item as a barter exchange.",
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can barter with players"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "barter_table",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses loot table "
+          },
+          {
+            "type": "value",
+            "field": "barter_table"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "barter_table",

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns body pitch rotation if called on an entity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.body_x_rotation",
   "fields": [],
   "description": "Returns the body pitch rotation if called on an entity, else it returns 0.0.",

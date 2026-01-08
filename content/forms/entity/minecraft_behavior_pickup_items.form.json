@@ -1,4 +1,98 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "picks up items from the ground"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "max_dist",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "searches within "
+          },
+          {
+            "type": "value",
+            "field": "max_dist"
+          },
+          {
+            "type": "literal",
+            "text": " blocks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "can_pickup_any_item",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can pick up any item type"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "pickup_based_on_chance",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "pickup chance varies by difficulty"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "excluded_items",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "excludes certain items"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "track_target",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "tracks items as targets"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.pickup_items",

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines entity component definitions configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Entity component definitions",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -2293,5 +2306,6 @@
         "dataType": 16
       }
     ]
-  }
+  },
+  "description": "Defines entity component definitions configuration."
 }

@@ -1,0 +1,23 @@
+{
+  "id": "type_int",
+  "title": "Integer",
+  "description": "A whole number (no decimals).",
+  "fields": [],
+  "formatHint": "..., -2, -1, 0, 1, 2, ...",
+  "samples": {
+    "values": [
+      {
+        "path": "Zero",
+        "content": "0"
+      },
+      {
+        "path": "Positive integer",
+        "content": "64"
+      },
+      {
+        "path": "Negative integer",
+        "content": "-10"
+      }
+    ]
+  }
+}

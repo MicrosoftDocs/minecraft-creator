@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "dampens light by "
+          },
+          {
+            "type": "value",
+            "field": "integer"
+          },
+          {
+            "type": "literal",
+            "text": " levels"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Legacy component (format_version < 1.19.40). The amount light is dampened when passing through this block (0-15). Use minecraft:light_dampening in newer format versions.",
+  "fields": [],
+  "scalarField": {
+    "id": "integer",
+    "title": "Light Absorption Value",
+    "dataType": 0
+  },
+  "title": "Block Light Absorption (Legacy)",
+  "id": "minecraft:block_light_absorption"
+}

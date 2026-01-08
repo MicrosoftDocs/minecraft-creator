@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "absorbs damage when worn"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "title": "Damage Absorption",

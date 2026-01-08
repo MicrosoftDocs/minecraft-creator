@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has block digging configuration" }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "title": "DiggerItemComponent BlockInfo",

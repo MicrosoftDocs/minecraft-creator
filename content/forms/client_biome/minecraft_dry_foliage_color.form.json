@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:dry_foliage_color",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines the dry foliage color for rendering"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:dry_foliage_color",

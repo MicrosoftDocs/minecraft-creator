@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has its vibrations ignored by sensors"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:vibration_damper",

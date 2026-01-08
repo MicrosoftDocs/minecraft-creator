@@ -3,11 +3,14 @@ author: mammerla
 ms.author: mikeam
 title: "Client Biome Documentation - minecraft:sound_addition"
 description: "Describes the minecraft:sound_addition client biome"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Client Biome Documentation - minecraft:sound_addition
+
+Defines an occasional ambient sound effect.
 
 
 ## Client Biome Sound Addition Properties

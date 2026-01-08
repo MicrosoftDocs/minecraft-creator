@@ -1,0 +1,75 @@
+{
+  "id": "cmd_tag",
+  "title": "tag",
+  "description": "Manages tags stored in entities.",
+  "fields": [
+    {
+      "id": "entity",
+      "title": "entity",
+      "type": "string",
+      "isOptional": false,
+      "description": "The command's target.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "action",
+      "title": "action",
+      "type": "string",
+      "isOptional": false,
+      "description": "Change the `tags` on an `entity` using the `TagChangeAction` Enums.",
+      "commandType": "TAGCHANGEACTION"
+    },
+    {
+      "id": "name",
+      "title": "name",
+      "type": "string",
+      "isOptional": false,
+      "description": "The `tag` name.",
+      "commandType": "TAGVALUES"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Add or remove tag",
+      "description": "Add or remove a `tag` on an `entity`.",
+      "params": [
+        {
+          "name": "entity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "TAGCHANGEACTION",
+          "isOptional": false
+        },
+        {
+          "name": "name",
+          "type": "TAGVALUES",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "List tags",
+      "description": "List all `tags` on a given `entity`.",
+      "params": [
+        {
+          "name": "entity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "TAGLISTACTION",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

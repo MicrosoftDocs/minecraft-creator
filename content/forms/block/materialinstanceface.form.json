@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has material instance with texture and render method"
+          }
+        ]
+      }
+    ]
+  },
   "id": "material_instance_face",
   "title": "Material Instance Face",
   "fields": [
@@ -102,7 +115,7 @@
     {
       "id": "face_dimming",
       "title": "Face Dimming",
-      "description": "This material should be dimmed by the direction it's facing.",
+      "description": "This material should be dimmed by the direction its facing.",
       "dataType": 2,
       "samples": {
         "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/blue_bubble_fish.json": [
@@ -233,5 +246,6 @@
         }
       }
     ]
-  }
+  },
+  "description": "Configures how a block face renders its texture, including transparency, culling, and lighting. Set the texture reference, choose render method (opaque, alpha_test, blend, or double_sided), control face culling, and configure ambient occlusion. Enables glass-like transparency, leaf rendering, and custom visual effects."
 }

@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:durability_sensor",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "emits effects when damaged"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:durability_sensor",

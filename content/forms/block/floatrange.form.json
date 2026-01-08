@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has min and max float range"
+          }
+        ]
+      }
+    ]
+  },
   "id": "FloatRange",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -18,5 +31,6 @@
         "defaultValue": 0
       }
     ]
-  }
+  },
+  "description": "Specifies a range between minimum and maximum float values for randomized block properties. Used for features like random tick intervals, variable light flicker rates, or loot table quantities. The game picks a random value within the range when the property is evaluated."
 }

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines behavior.controlled by player configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.controlled_by_player",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

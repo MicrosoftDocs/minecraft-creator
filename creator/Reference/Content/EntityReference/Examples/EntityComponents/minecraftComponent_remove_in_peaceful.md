@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:remove_in_peaceful"
 description: "Describes the minecraft:remove_in_peaceful entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

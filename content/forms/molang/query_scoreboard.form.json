@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns specified scoreboard value for this entity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.scoreboard",
   "fields": [],
   "description": "Returns the specified scoreboard value for this entity. Available only with behavior packs. Takes one argument - the name of the scoreboard entry for this entity.",

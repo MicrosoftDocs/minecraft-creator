@@ -1,4 +1,31 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "max_durability",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has "
+          },
+          {
+            "type": "value",
+            "field": "max_durability"
+          },
+          {
+            "type": "literal",
+            "text": " durability"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "description": "Sets how much damage the item can take before breaking, and allows the item to be combined at an anvil, grindstone, or crafting table.",
   "samples": {
@@ -235,6 +262,7 @@
           "max": 100,
           "min": 100
         },
+        "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
         "subFormId": "item_components/intrange"
       },
       {

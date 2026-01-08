@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "lands on the ground (dragon-specific)"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "restrictions": [
     {

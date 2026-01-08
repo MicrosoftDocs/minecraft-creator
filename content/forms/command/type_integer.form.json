@@ -1,0 +1,9 @@
+{
+  "id": "type_integer",
+  "title": "Integer",
+  "description": "A whole number (no decimals). Alias for INT.",
+  "fields": [],
+  "aliasOf": [
+    "type_int"
+  ]
+}

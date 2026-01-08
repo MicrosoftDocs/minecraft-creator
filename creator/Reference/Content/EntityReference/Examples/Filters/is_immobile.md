@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Filters Documentation - minecraft:is_immobile"
 description: "Describes the minecraft:is_immobile entity filter element"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

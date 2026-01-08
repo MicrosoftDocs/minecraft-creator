@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:swing_sounds",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has custom swing sounds"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:swing_sounds",
@@ -1229,6 +1242,30 @@
             "title": "Item.book.put"
           },
           {
+            "id": "item.copper_spear.attack_hit",
+            "title": "Item.copper spear.attack hit"
+          },
+          {
+            "id": "item.copper_spear.attack_miss",
+            "title": "Item.copper spear.attack miss"
+          },
+          {
+            "id": "item.copper_spear.use",
+            "title": "Item.copper spear.use"
+          },
+          {
+            "id": "item.diamond_spear.attack_hit",
+            "title": "Item.diamond spear.attack hit"
+          },
+          {
+            "id": "item.diamond_spear.attack_miss",
+            "title": "Item.diamond spear.attack miss"
+          },
+          {
+            "id": "item.diamond_spear.use",
+            "title": "Item.diamond spear.use"
+          },
+          {
             "id": "item.enchant.lunge1",
             "title": "Item.enchant.lunge1"
           },
@@ -1243,6 +1280,42 @@
           {
             "id": "item.fizz",
             "title": "Item.fizz"
+          },
+          {
+            "id": "item.golden_spear.attack_hit",
+            "title": "Item.golden spear.attack hit"
+          },
+          {
+            "id": "item.golden_spear.attack_miss",
+            "title": "Item.golden spear.attack miss"
+          },
+          {
+            "id": "item.golden_spear.use",
+            "title": "Item.golden spear.use"
+          },
+          {
+            "id": "item.iron_spear.attack_hit",
+            "title": "Item.iron spear.attack hit"
+          },
+          {
+            "id": "item.iron_spear.attack_miss",
+            "title": "Item.iron spear.attack miss"
+          },
+          {
+            "id": "item.iron_spear.use",
+            "title": "Item.iron spear.use"
+          },
+          {
+            "id": "item.netherite_spear.attack_hit",
+            "title": "Item.netherite spear.attack hit"
+          },
+          {
+            "id": "item.netherite_spear.attack_miss",
+            "title": "Item.netherite spear.attack miss"
+          },
+          {
+            "id": "item.netherite_spear.use",
+            "title": "Item.netherite spear.use"
           },
           {
             "id": "item.shield.block",
@@ -1267,6 +1340,18 @@
           {
             "id": "item.spyglass.use",
             "title": "Item.spyglass.use"
+          },
+          {
+            "id": "item.stone_spear.attack_hit",
+            "title": "Item.stone spear.attack hit"
+          },
+          {
+            "id": "item.stone_spear.attack_miss",
+            "title": "Item.stone spear.attack miss"
+          },
+          {
+            "id": "item.stone_spear.use",
+            "title": "Item.stone spear.use"
           },
           {
             "id": "item.trident.hit",
@@ -1843,6 +1928,10 @@
           {
             "id": "saddle",
             "title": "Saddle"
+          },
+          {
+            "id": "saddle_in_water",
+            "title": "Saddle in water"
           },
           {
             "id": "scared",
@@ -3369,6 +3458,30 @@
             "title": "Item.book.put"
           },
           {
+            "id": "item.copper_spear.attack_hit",
+            "title": "Item.copper spear.attack hit"
+          },
+          {
+            "id": "item.copper_spear.attack_miss",
+            "title": "Item.copper spear.attack miss"
+          },
+          {
+            "id": "item.copper_spear.use",
+            "title": "Item.copper spear.use"
+          },
+          {
+            "id": "item.diamond_spear.attack_hit",
+            "title": "Item.diamond spear.attack hit"
+          },
+          {
+            "id": "item.diamond_spear.attack_miss",
+            "title": "Item.diamond spear.attack miss"
+          },
+          {
+            "id": "item.diamond_spear.use",
+            "title": "Item.diamond spear.use"
+          },
+          {
             "id": "item.enchant.lunge1",
             "title": "Item.enchant.lunge1"
           },
@@ -3383,6 +3496,42 @@
           {
             "id": "item.fizz",
             "title": "Item.fizz"
+          },
+          {
+            "id": "item.golden_spear.attack_hit",
+            "title": "Item.golden spear.attack hit"
+          },
+          {
+            "id": "item.golden_spear.attack_miss",
+            "title": "Item.golden spear.attack miss"
+          },
+          {
+            "id": "item.golden_spear.use",
+            "title": "Item.golden spear.use"
+          },
+          {
+            "id": "item.iron_spear.attack_hit",
+            "title": "Item.iron spear.attack hit"
+          },
+          {
+            "id": "item.iron_spear.attack_miss",
+            "title": "Item.iron spear.attack miss"
+          },
+          {
+            "id": "item.iron_spear.use",
+            "title": "Item.iron spear.use"
+          },
+          {
+            "id": "item.netherite_spear.attack_hit",
+            "title": "Item.netherite spear.attack hit"
+          },
+          {
+            "id": "item.netherite_spear.attack_miss",
+            "title": "Item.netherite spear.attack miss"
+          },
+          {
+            "id": "item.netherite_spear.use",
+            "title": "Item.netherite spear.use"
           },
           {
             "id": "item.shield.block",
@@ -3407,6 +3556,18 @@
           {
             "id": "item.spyglass.use",
             "title": "Item.spyglass.use"
+          },
+          {
+            "id": "item.stone_spear.attack_hit",
+            "title": "Item.stone spear.attack hit"
+          },
+          {
+            "id": "item.stone_spear.attack_miss",
+            "title": "Item.stone spear.attack miss"
+          },
+          {
+            "id": "item.stone_spear.use",
+            "title": "Item.stone spear.use"
           },
           {
             "id": "item.trident.hit",
@@ -3983,6 +4144,10 @@
           {
             "id": "saddle",
             "title": "Saddle"
+          },
+          {
+            "id": "saddle_in_water",
+            "title": "Saddle in water"
           },
           {
             "id": "scared",
@@ -5509,6 +5674,30 @@
             "title": "Item.book.put"
           },
           {
+            "id": "item.copper_spear.attack_hit",
+            "title": "Item.copper spear.attack hit"
+          },
+          {
+            "id": "item.copper_spear.attack_miss",
+            "title": "Item.copper spear.attack miss"
+          },
+          {
+            "id": "item.copper_spear.use",
+            "title": "Item.copper spear.use"
+          },
+          {
+            "id": "item.diamond_spear.attack_hit",
+            "title": "Item.diamond spear.attack hit"
+          },
+          {
+            "id": "item.diamond_spear.attack_miss",
+            "title": "Item.diamond spear.attack miss"
+          },
+          {
+            "id": "item.diamond_spear.use",
+            "title": "Item.diamond spear.use"
+          },
+          {
             "id": "item.enchant.lunge1",
             "title": "Item.enchant.lunge1"
           },
@@ -5523,6 +5712,42 @@
           {
             "id": "item.fizz",
             "title": "Item.fizz"
+          },
+          {
+            "id": "item.golden_spear.attack_hit",
+            "title": "Item.golden spear.attack hit"
+          },
+          {
+            "id": "item.golden_spear.attack_miss",
+            "title": "Item.golden spear.attack miss"
+          },
+          {
+            "id": "item.golden_spear.use",
+            "title": "Item.golden spear.use"
+          },
+          {
+            "id": "item.iron_spear.attack_hit",
+            "title": "Item.iron spear.attack hit"
+          },
+          {
+            "id": "item.iron_spear.attack_miss",
+            "title": "Item.iron spear.attack miss"
+          },
+          {
+            "id": "item.iron_spear.use",
+            "title": "Item.iron spear.use"
+          },
+          {
+            "id": "item.netherite_spear.attack_hit",
+            "title": "Item.netherite spear.attack hit"
+          },
+          {
+            "id": "item.netherite_spear.attack_miss",
+            "title": "Item.netherite spear.attack miss"
+          },
+          {
+            "id": "item.netherite_spear.use",
+            "title": "Item.netherite spear.use"
           },
           {
             "id": "item.shield.block",
@@ -5547,6 +5772,18 @@
           {
             "id": "item.spyglass.use",
             "title": "Item.spyglass.use"
+          },
+          {
+            "id": "item.stone_spear.attack_hit",
+            "title": "Item.stone spear.attack hit"
+          },
+          {
+            "id": "item.stone_spear.attack_miss",
+            "title": "Item.stone spear.attack miss"
+          },
+          {
+            "id": "item.stone_spear.use",
+            "title": "Item.stone spear.use"
           },
           {
             "id": "item.trident.hit",
@@ -6123,6 +6360,10 @@
           {
             "id": "saddle",
             "title": "Saddle"
+          },
+          {
+            "id": "saddle_in_water",
+            "title": "Saddle in water"
           },
           {
             "id": "scared",

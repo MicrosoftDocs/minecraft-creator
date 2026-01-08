@@ -1,5 +1,39 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can equip items from the ground"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "excluded_items",
+      "dataType": 15,
+      "subForm": {
+        "id": "excluded_item",
+        "fields": [
+          {
+            "id": "item",
+            "dataType": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "can_wear_armor",
+      "title": "Can Wear Armor",
+      "description": "If true, the entity can pick up and wear armor items from the ground.",
+      "defaultValue": false,
+      "dataType": 1
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:equip_item",
     "title": "Equip Item",

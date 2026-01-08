@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns the arc tangent of y/x in degrees"
+          }
+        ]
+      }
+    ]
+  },
   "id": "`math.atan2(y, x)`",
   "fields": [],
   "generated_doNotEdit": {

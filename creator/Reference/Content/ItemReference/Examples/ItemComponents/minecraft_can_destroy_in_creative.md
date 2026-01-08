@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Items Documentation - minecraft:can_destroy_in_creative"
 description: "Describes the minecraft:can_destroy_in_creative item component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

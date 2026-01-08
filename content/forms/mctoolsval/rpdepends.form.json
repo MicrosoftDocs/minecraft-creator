@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates resource pack dependencies in manifests"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "rpdepends",
+  "title": "Resource Pack Deps",
+  "description": "Validates that resource pack dependencies declared in behavior pack manifests are properly resolved and available.",
+  "fields": [
+    {
+      "id": "101",
+      "title": "Invalid Manifest JSON",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a pack manifest contains invalid JSON syntax. Check for missing commas, brackets, or malformed entries.",
+      "technicalDescription": "Data contains the path to the invalid manifest file"
+    },
+    {
+      "id": "102",
+      "title": "Missing Resource Pack",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a behavior pack declares a dependency on a resource pack that cannot be found. Ensure the resource pack is included and the UUID matches.",
+      "technicalDescription": "Data contains the UUID of the missing resource pack dependency"
+    },
+    {
+      "id": "103",
+      "title": "Processing Error",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "An internal error occurred while processing resource pack dependencies. Check logs for details.",
+      "technicalDescription": "Data contains details about the internal processing error"
+    }
+  ]
+}

@@ -1,4 +1,75 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be named with a name tag"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "always_show",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "always displays its name"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "allow_name_tag_renaming",
+            "comparison": "=",
+            "value": false
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "cannot be renamed once named"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "default_trigger",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "triggers an event when named"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "name_actions",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has special name triggers"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:nameable",

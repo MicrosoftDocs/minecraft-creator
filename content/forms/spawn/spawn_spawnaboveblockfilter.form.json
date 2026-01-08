@@ -1,5 +1,23 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Spawn SpawnAboveBlockFilter",
+  "title": "Spawns Above Block Filter",
+  "description": "Filters spawning based on blocks above the spawn location. This component appears to have been deprecated or changed in versions after 1.17.20.",
+  "isDeprecated": true,
+  "versionDeprecated": "1.18.0",
+  "note": "This spawn condition was used in versions 1.17.20 and earlier but appears to have been removed or replaced in newer versions.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "filters spawning based on blocks above"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn SpawnAboveBlockFilter",

@@ -1,0 +1,69 @@
+{
+  "id": "Detection Rule",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Detection Rule",
+    "title": "Block Components Detection Rule",
+    "fields": [
+      {
+        "id": "can_contain_liquid",
+        "title": "Can Contain Liquid",
+        "description": "Whether this block can contain the liquid. For example, if the liquid type is `water`, this means the block can be waterlogged.",
+        "dataType": 1,
+        "defaultValue": false
+      },
+      {
+        "id": "liquid_type",
+        "title": "Liquid Type",
+        "description": "The type of liquid this detection rule is for. Currently, `water` is the only supported liquid type. If this field is omitted, `water` will be the liquid type by default.",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "water",
+            "title": "Water"
+          }
+        ],
+        "defaultValue": "water"
+      },
+      {
+        "id": "on_liquid_touches",
+        "title": "Liquid Reaction",
+        "description": "How the block reacts to flowing water. Must be one of the following options:\n\"blocking\" - The default value for this field. The block stops the liquid from flowing.\n\"broken\" - The block is destroyed completely.\n\"popped\" - The block is destroyed and its item is spawned.\n\"no_reaction\" - The block is unaffected; visually, the liquid will flow through the block.",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "blocking",
+            "title": "Blocking"
+          },
+          {
+            "id": "broken",
+            "title": "Broken"
+          },
+          {
+            "id": "no_reaction",
+            "title": "No reaction"
+          },
+          {
+            "id": "popped",
+            "title": "Popped"
+          }
+        ],
+        "defaultValue": "blocking"
+      },
+      {
+        "id": "stops_liquid_flowing_from_direction",
+        "title": "Stops Liquid Flowing From Direction",
+        "description": "When a block contains a liquid, controls the directions in which the liquid can't flow out from the block. Also controls the directions in which a block can stop liquid flowing into it if `no_reaction` is set for the `on_liquid_touches` field. Can be a list of the following directions: \"up\", \"down\", \"north\", \"south\", \"east\", \"west\". The default is an empty list; this means that liquid can flow out of all directions by default.",
+        "dataType": 16,
+        "defaultValue": []
+      },
+      {
+        "id": "use_liquid_clipping",
+        "title": "Use Liquid Clipping",
+        "description": "Whether this block uses the encompassing collider to visually clip the liquid. The encompassing collider is the smallest single AABB that contains all of the block's colliders.",
+        "dataType": 1,
+        "defaultValue": false
+      }
+    ]
+  }
+}

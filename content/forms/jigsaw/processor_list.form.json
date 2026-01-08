@@ -1,0 +1,169 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "ProcessorList",
+  "title": "Processor List",
+  "description": "Defines a list of structure processors that modify blocks during structure generation.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines a list of block processors for structure generation" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of this processor list definition.",
+      "dataType": 2,
+      "isRequired": true
+    },
+    {
+      "id": "minecraft:processor_list",
+      "title": "Processor List Definition",
+      "description": "The processor list definition.",
+      "dataType": 16,
+      "isRequired": true,
+      "subForm": {
+        "id": "processor_list_definition",
+        "fields": [
+          {
+            "id": "description",
+            "title": "Description",
+            "description": "The description block containing the processor list identifier.",
+            "dataType": 16,
+            "isRequired": true,
+            "subFormId": "jigsaw/jigsawstructureprocessorlist_description"
+          },
+          {
+            "id": "processors",
+            "title": "Processors",
+            "description": "Array of processor configurations to apply in order.",
+            "dataType": 15,
+            "isRequired": true,
+            "subForm": {
+              "id": "processor_entry",
+              "fields": [
+                {
+                  "id": "processor_type",
+                  "title": "Processor Type",
+                  "description": "The type of processor. Valid values: 'minecraft:rule', 'minecraft:block_ignore', 'minecraft:block_rot', 'minecraft:protected_blocks', 'minecraft:capped', 'minecraft:gravity', 'minecraft:jigsaw_replacement', 'minecraft:blackstone_replace', 'minecraft:nop'.",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "rules",
+                  "title": "Rules",
+                  "description": "Array of processing rules (for 'minecraft:rule' processor type).",
+                  "dataType": 15,
+                  "subForm": {
+                    "id": "processor_rule",
+                    "fields": [
+                      {
+                        "id": "input_predicate",
+                        "title": "Input Predicate",
+                        "description": "Condition for matching input blocks to process.",
+                        "dataType": 16,
+                        "subForm": {
+                          "id": "block_predicate",
+                          "fields": [
+                            {
+                              "id": "predicate_type",
+                              "title": "Predicate Type",
+                              "description": "Type of block predicate. Valid values: 'minecraft:always_true', 'minecraft:block_match', 'minecraft:random_block_match', 'minecraft:tag_match', 'minecraft:axis_aligned_linear_pos'.",
+                              "dataType": 2,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "block",
+                              "title": "Block",
+                              "description": "Block identifier to match.",
+                              "dataType": 2
+                            },
+                            {
+                              "id": "probability",
+                              "title": "Probability",
+                              "description": "Probability of matching (0.0-1.0) for random predicates.",
+                              "dataType": 3
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "output_state",
+                        "title": "Output State",
+                        "description": "The block to replace matched blocks with.",
+                        "dataType": 16,
+                        "subForm": {
+                          "id": "block_state",
+                          "fields": [
+                            {
+                              "id": "name",
+                              "title": "Name",
+                              "description": "Block identifier for the output.",
+                              "dataType": 2,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "states",
+                              "title": "States",
+                              "description": "Block state values to set.",
+                              "dataType": 16
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "block_entity_modifier",
+                        "title": "Block Entity Modifier",
+                        "description": "Optional block entity data modification.",
+                        "dataType": 16,
+                        "subForm": {
+                          "id": "block_entity_modifier",
+                          "fields": [
+                            {
+                              "id": "type",
+                              "title": "Type",
+                              "description": "Modifier type. Valid values: 'minecraft:append_loot', 'minecraft:passthrough', 'minecraft:clear'.",
+                              "dataType": 2
+                            },
+                            {
+                              "id": "loot_table",
+                              "title": "Loot Table",
+                              "description": "Path to loot table for 'append_loot' type.",
+                              "dataType": 2
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "delegate",
+                  "title": "Delegate",
+                  "description": "Nested processor for 'minecraft:capped' processor type.",
+                  "dataType": 16
+                },
+                {
+                  "id": "limit",
+                  "title": "Limit",
+                  "description": "Maximum number of blocks to process (for 'minecraft:capped' processor type).",
+                  "dataType": 0
+                },
+                {
+                  "id": "blocks",
+                  "title": "Blocks",
+                  "description": "List of block identifiers (for 'minecraft:block_ignore' and 'minecraft:protected_blocks' types).",
+                  "dataType": 17
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

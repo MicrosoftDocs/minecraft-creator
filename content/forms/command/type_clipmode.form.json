@@ -1,0 +1,19 @@
+{
+  "id": "type_clipmode",
+  "title": "Clip Mode",
+  "description": "How to handle entity clipping during camera/spectator mode.",
+  "fields": [],
+  "formatHint": "player, camera, or default",
+  "samples": {
+    "values": [
+      {
+        "path": "Player clipping behavior",
+        "content": "player"
+      },
+      {
+        "path": "Camera clipping behavior",
+        "content": "camera"
+      }
+    ]
+  }
+}

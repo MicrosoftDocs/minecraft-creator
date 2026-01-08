@@ -1,0 +1,212 @@
+{
+  "id": "minecraft:behavior.melee_attack",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.melee_attack",
+    "title": "Entity Melee Attack Behavior",
+    "description": "Allows an entity to deal damage through a melee attack.",
+    "fields": [
+      {
+        "id": "attack_once",
+        "title": "Attack Once",
+        "description": "Allows the mob to perform this melee attack behavior only once during its lifetime.",
+        "dataType": 1,
+        "defaultValue": false
+      },
+      {
+        "id": "attack_types",
+        "title": "Attack Types",
+        "description": "Defines the entity types this entity will attack.",
+        "dataType": 2,
+        "defaultValue": ""
+      },
+      {
+        "id": "can_spread_on_fire",
+        "title": "Can Spread On Fire",
+        "description": "Allows the mob, if on fire and empty handed, to ignite its target upon a successful attack.",
+        "dataType": 1,
+        "defaultValue": false
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "cooldown_time",
+        "title": "Cooldown Time",
+        "description": "Cooldown time, in seconds, between consecutive attacks.",
+        "dataType": 3,
+        "defaultValue": 1
+      },
+      {
+        "id": "inner_boundary_time_increase",
+        "title": "Inner Boundary Time Increase",
+        "description": "Time, in seconds, added to the attack path recalculation interval when the target is beyond \"path_inner_boundary\".",
+        "dataType": 3,
+        "defaultValue": 0.25
+      },
+      {
+        "id": "max_path_time",
+        "title": "Max Path Time",
+        "description": "Maximum base time, in seconds, before recalculating a new attack path to the target (before increases are applied).",
+        "dataType": 3,
+        "defaultValue": 0.550000011920929
+      },
+      {
+        "id": "melee_fov",
+        "title": "Melee Fov",
+        "description": "Field of view, in degrees, used by the hard-coded sensing component to detect a valid attack target.",
+        "dataType": 3,
+        "defaultValue": 90
+      },
+      {
+        "id": "min_path_time",
+        "title": "Min Path Time",
+        "description": "Minimum base time, in seconds, before recalculating a new attack path to the target (before increases are applied).",
+        "dataType": 3,
+        "defaultValue": 0.20000000298023224
+      },
+      {
+        "id": "on_attack",
+        "title": "Attack",
+        "description": "Defines the event to trigger when this entity successfully attacks.",
+        "dataType": 16,
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "on_kill",
+        "title": "Kill",
+        "description": "Defines the event to trigger when this entity kills the target.",
+        "dataType": 16,
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "outer_boundary_time_increase",
+        "title": "Outer Boundary Time Increase",
+        "description": "Time, in seconds, added to the attack path recalculation interval when the target is beyond \"path_outer_boundary\".",
+        "dataType": 3,
+        "defaultValue": 0.5
+      },
+      {
+        "id": "path_fail_time_increase",
+        "title": "Path Fail Time Increase",
+        "description": "Time, in seconds, added to the attack path recalculation interval when the mob cannot move along the current path.",
+        "dataType": 3,
+        "defaultValue": 0.75
+      },
+      {
+        "id": "path_inner_boundary",
+        "title": "Path Inner Boundary",
+        "description": "Distance at which to increase attack path recalculation by \"inner_boundary_time_increase\".",
+        "dataType": 3,
+        "defaultValue": 16
+      },
+      {
+        "id": "path_outer_boundary",
+        "title": "Path Outer Boundary",
+        "description": "Distance at which to increase attack path recalculation by \"outer_boundary_time_increase\".",
+        "dataType": 3,
+        "defaultValue": 32
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "random_stop_interval",
+        "title": "Random Stop Interval",
+        "description": "Defines a 1-in-N chance for the mob to stop its current attack, where N equals \"random_stop_interval\".",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "reach_multiplier",
+        "title": "Reach Multiplier",
+        "description": "Used with the base size of the entity to determine minimum target-distance before trying to deal attack damage.",
+        "dataType": 3,
+        "defaultValue": 2
+      },
+      {
+        "id": "require_complete_path",
+        "title": "Require Complete Path",
+        "description": "Specifies whether a full navigation path from the mob to the target is required.",
+        "dataType": 1,
+        "defaultValue": false
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Multiplier applied to the mob's movement speed when moving toward its target.",
+        "dataType": 3,
+        "defaultValue": 1
+      },
+      {
+        "id": "track_target",
+        "title": "Track Target",
+        "description": "Allows the mob to track its target even if it lacks a hard-coded sensing component.",
+        "dataType": 1,
+        "defaultValue": false
+      },
+      {
+        "id": "x_max_rotation",
+        "title": "x Max Rotation",
+        "description": "Maximum rotation, in degrees, on the X-axis while the mob is trying to look at its target.",
+        "dataType": 3,
+        "defaultValue": 30
+      },
+      {
+        "id": "y_max_head_rotation",
+        "title": "y Max Head Rotation",
+        "description": "Maximum rotation, in degrees, on the Y-axis while the mob is trying to look at its target.",
+        "dataType": 3,
+        "defaultValue": 30
+      }
+    ]
+  }
+}

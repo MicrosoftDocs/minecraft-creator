@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be controlled by a player with an item"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "requires": [
     {

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns wing flap position of the entity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.wing_flap_position",
   "fields": [],
   "description": "Returns the wing flap position of the entity, or 0.0 if this doesn't make sense. Pertains to the dragon and parrot.",

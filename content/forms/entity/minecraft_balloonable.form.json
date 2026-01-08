@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "can have a balloon attached" }
+        ]
+      }
+    ]
+  },
   "title": "Balloonable",
   "description": "Allows this entity to have a balloon attached and defines the conditions and events for this entity when is ballooned.",
   "fields": [
@@ -7,7 +17,7 @@
       "description": "Distance in blocks at which the 'spring' effect that lifts it.",
       "dataType": 3,
       "experienceType": 3,
-      "defaultValue": 2.0,
+      "defaultValue": 2,
       "minValue": 0,
       "maxValue": 30
     },
@@ -15,7 +25,7 @@
       "id": "max_distance",
       "description": "Distance in blocks at which the balloon breaks.",
       "dataType": 3,
-      "defaultValue": 10.0,
+      "defaultValue": 10,
       "experienceType": 3,
       "minValue": 0,
       "maxValue": 30
@@ -36,7 +46,7 @@
       "id": "mass",
       "description": "Mass that this entity will have when computing balloon pull forces.",
       "dataType": 3,
-      "defaultValue": 1.0,
+      "defaultValue": 1,
       "experienceType": 3,
       "minValue": 0,
       "maxValue": 30

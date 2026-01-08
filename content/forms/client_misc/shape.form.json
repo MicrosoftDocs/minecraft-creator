@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Shape",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a shape composed of boxes"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Shape",
@@ -14,5 +27,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines a shape composed of boxes."
 }

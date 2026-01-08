@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has block textures and visual properties" }
+        ]
+      }
+    ]
+  },
   "title": "Block Resource Visuals",
   "description": "Defines properties related to a solid unit cube's visuals.",
   "fields": [

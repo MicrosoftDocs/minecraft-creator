@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has block and digging speed configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "BlockInfo",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -63,5 +76,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Has block and digging speed configuration."
 }

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:navigation.float"
 description: "Describes the minecraft:navigation.float entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

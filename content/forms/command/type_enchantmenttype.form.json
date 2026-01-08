@@ -1,0 +1,9 @@
+{
+  "id": "type_enchantmenttype",
+  "title": "Enchantment",
+  "description": "An enchantment identifier. Alias for ENCHANT.",
+  "fields": [],
+  "aliasOf": [
+    "type_enchant"
+  ]
+}

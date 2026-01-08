@@ -1,4 +1,108 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can trade with players using economy system"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "display_name",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "as '"
+          },
+          {
+            "type": "value",
+            "field": "display_name"
+          },
+          {
+            "type": "literal",
+            "text": "'"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "table",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "using trades from "
+          },
+          {
+            "type": "value",
+            "field": "table"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "cured_discount",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "offers cured zombie villager discount"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "max_cured_discount",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "up to "
+          },
+          {
+            "type": "value",
+            "field": "max_cured_discount"
+          },
+          {
+            "type": "literal",
+            "text": " max discount"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "show_trade_screen",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "displays trade screen"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:economy_trade_table",

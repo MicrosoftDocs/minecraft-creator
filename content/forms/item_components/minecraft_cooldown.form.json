@@ -1,6 +1,49 @@
 {
-  "fields": [],
-  "description": "The duration of time (in seconds) items with a matching category will spend cooling down before becoming usable again.",
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "duration",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a "
+          },
+          {
+            "type": "value",
+            "field": "duration"
+          },
+          {
+            "type": "literal",
+            "text": " second cooldown"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "category",
+      "title": "Category",
+      "description": "A string identifier that groups items together. When an item with a cooldown is used, all items sharing the same category also enter cooldown."
+    },
+    {
+      "id": "duration",
+      "title": "Duration",
+      "description": "The duration of time in seconds that items with the matching category will spend cooling down before becoming usable again."
+    },
+    {
+      "id": "type",
+      "title": "Type",
+      "description": "The type of action that triggers the cooldown. Use 'use' for items consumed on use, or 'attack' for weapons. Default is 'use'."
+    }
+  ],
+  "description": "Adds a cooldown to an item, preventing it from being used again for a specified duration. Items sharing the same category will enter cooldown together when any one of them is used.",
   "samples": {
     "sample": [
       {

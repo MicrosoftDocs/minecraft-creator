@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns number of ticks of invulnerability the entity h..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.invulnerable_ticks",
   "fields": [],
   "description": "Returns the number of ticks of invulnerability the entity has left if it makes sense, else it returns 0.0. Applies to wither.",

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines spawn rules settings"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Spawn Rules",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -19,5 +32,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines spawn rules settings."
 }

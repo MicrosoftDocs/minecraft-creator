@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has timer actor flag base configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "TimerActorFlagBaseDefinition",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -9,7 +22,21 @@
         "id": "control_flags",
         "title": "Control Flags",
         "dataType": 17,
-        "defaultValue": []
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
       },
       {
         "id": "cooldown_range",
@@ -82,5 +109,6 @@
         "defaultValue": 0
       }
     ]
-  }
+  },
+  "description": "Base configuration for timer-triggered actor flag changes. Flags are boolean states that track entity conditions like 'is_baby' or 'is_charged'. Timer-based flags enable automatic state transitions after duration expires—such as baby animals growing up, temporary buffs wearing off, or delayed transformations."
 }

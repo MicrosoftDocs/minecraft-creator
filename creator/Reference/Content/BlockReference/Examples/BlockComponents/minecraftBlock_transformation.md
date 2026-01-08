@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Block Components Documentation - minecraft:transformation"
 description: "Describes the minecraft:transformation block component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

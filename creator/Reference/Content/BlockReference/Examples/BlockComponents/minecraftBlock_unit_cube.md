@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Block Components Documentation - minecraft:unit_cube"
 description: "Describes the minecraft:unit_cube block component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

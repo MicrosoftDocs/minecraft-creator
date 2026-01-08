@@ -1,5 +1,50 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "value",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "scaled to "
+          },
+          {
+            "type": "value",
+            "field": "value"
+          },
+          {
+            "type": "literal",
+            "text": "x size"
+          }
+        ]
+      },
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a custom visual scale"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "minecraft:scale",
+  "description": "Sets the entity's visual size multiplier. A value of 1.0 means normal size, 0.5 is half size (commonly used for baby mobs), and values above 1.0 make the entity larger.",
+  "fields": [
+    {
+      "id": "value",
+      "title": "Value",
+      "description": "The scale multiplier for visual size. 1.0 = normal, 0.5 = half (babies), 2.0 = double size.",
+      "dataType": 3,
+      "defaultValue": 1
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:scale",
     "title": "Scale",

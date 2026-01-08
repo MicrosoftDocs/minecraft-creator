@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns block has all tags information"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.block_has_all_tags",
   "fields": [],
   "generated_doNotEdit": {

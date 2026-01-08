@@ -1,5 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines jigsawstructure configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "JigsawStructure",
+  "description": "A Jigsaw Structure is a group of Structure Templates that make up a larger structure. Jigsaw Structures are placed during world generation.",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "JigsawStructure",

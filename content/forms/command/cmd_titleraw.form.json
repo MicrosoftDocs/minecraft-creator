@@ -1,0 +1,173 @@
+{
+  "id": "cmd_titleraw",
+  "title": "titleraw",
+  "description": "Controls the text and behavior for screen titles using JSON messages.",
+  "fields": [
+    {
+      "id": "player",
+      "title": "player",
+      "type": "string",
+      "isOptional": false,
+      "description": "A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "clear",
+      "title": "clear",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "TITLERAWCLEAR"
+    },
+    {
+      "id": "reset",
+      "title": "reset",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "TITLERAWRESET"
+    },
+    {
+      "id": "titlelocation",
+      "title": "titleLocation",
+      "type": "string",
+      "isOptional": false,
+      "description": "The location where the raw title will display. Uses the `TitleRawSet` Enums `title`, `subtitle`, or `actionbar`.",
+      "commandType": "TITLERAWSET"
+    },
+    {
+      "id": "raw_json_titletext",
+      "title": "raw json titleText",
+      "type": "string",
+      "isOptional": false,
+      "description": "A JSON `string` for the raw title text.",
+      "subFormId": "type_json_object",
+      "commandType": "JSON_OBJECT"
+    },
+    {
+      "id": "times",
+      "title": "times",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "TITLERAWTIMES"
+    },
+    {
+      "id": "fadein",
+      "title": "fadeIn",
+      "type": "string",
+      "isOptional": false,
+      "description": "The number of gameticks for the raw title to fade in. Default: `0`.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "stay",
+      "title": "stay",
+      "type": "string",
+      "isOptional": false,
+      "description": "The number of gameticks for the raw title to stay. Default: `0`.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "fadeout",
+      "title": "fadeOut",
+      "type": "string",
+      "isOptional": false,
+      "description": "The number of gameticks for the raw title to fade out. Default: `0`.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Clear raw title",
+      "description": "`Clear` the raw title for a given `player`.",
+      "params": [
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "clear",
+          "type": "TITLERAWCLEAR",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Reset raw title",
+      "description": "`Reset` the raw subtitle text for a given `player` to blank text and sets the `fadeIn`, `stay`, and `fadeOut` times to their default values.",
+      "params": [
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "reset",
+          "type": "TITLERAWRESET",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Add raw title",
+      "description": "Add a raw title for a `player` at a given `location` with a `title message`.",
+      "params": [
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "titlelocation",
+          "type": "TITLERAWSET",
+          "isOptional": false
+        },
+        {
+          "name": "raw_json_titletext",
+          "type": "JSON_OBJECT",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Add raw title, fade in, fade out",
+      "description": "Add a raw title for a `player` with set `fadeIn`, `stay`, `fadeOut` times.",
+      "params": [
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "times",
+          "type": "TITLERAWTIMES",
+          "isOptional": false
+        },
+        {
+          "name": "fadein",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "stay",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "fadeout",
+          "type": "INT",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

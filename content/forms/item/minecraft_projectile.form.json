@@ -1,5 +1,28 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:projectile",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "projectile_entity",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "shoots "
+          },
+          {
+            "type": "value",
+            "field": "projectile_entity"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:projectile",

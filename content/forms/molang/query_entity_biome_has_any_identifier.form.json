@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns entity biome has any identifier information"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.entity_biome_has_any_identifier",
   "fields": [],
   "generated_doNotEdit": {

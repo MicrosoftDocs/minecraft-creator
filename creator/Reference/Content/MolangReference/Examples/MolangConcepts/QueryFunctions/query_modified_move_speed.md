@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Molang Documentation - minecraft:query_modified_move_speed"
 description: "Describes the minecraft:query_modified_move_speed molang"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

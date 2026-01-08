@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Feature Documentation - minecraft:surface_relative_threshold_feature"
 description: "Describes the minecraft:surface_relative_threshold_feature feature type"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

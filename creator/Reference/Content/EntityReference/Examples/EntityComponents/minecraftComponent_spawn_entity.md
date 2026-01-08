@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:spawn_entity"
 description: "Describes the minecraft:spawn_entity entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines overworld generation rules component"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:overworld_generation_rules",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

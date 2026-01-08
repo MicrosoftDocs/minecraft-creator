@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:navigation.walk"
 description: "Describes the minecraft:navigation.walk entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -20,7 +21,8 @@ Walking style of the mob.
 | avoid_portals | false | Boolean true/false | Tells the pathfinder to avoid portals (like nether portals) when finding a path | Zombie Pigman: `true` | 
 | avoid_sun | false | Boolean true/false | Whether or not the pathfinder should avoid tiles that are exposed to the sun when creating paths | Bogged: `true` | 
 | avoid_water | false | Boolean true/false | Tells the pathfinder to avoid water when creating a path | Armadillo: `true` | 
-| blocks_to_avoid | *not set* | Boolean true/false | Tells the pathfinder which blocks to avoid when creating a path | Breeze: `[{"tags":"query.any_tag('trapdoors')"}]`, Goat: `[{"name":"minecraft:powder_snow"}]`, Zombie Horse: `["minecraft:rail","minecraft:activator_rail","minecraft:detector_rail","minecraft:golden_rail"]` | 
+| blocks_to_avoid | *not set* | Array of strings | List of block descriptors that the pathfinder should avoid. Items can be block identifier strings or objects with name/tags properties. | Breeze: `[{"tags":"query.any_tag('trapdoors')"}]`, Goat: `[{"name":"minecraft:powder_snow"}]`, Zombie Horse: `["minecraft:rail","minecraft:activator_rail","minecraft:detector_rail","minecraft:golden_rail"]` | 
+| blocks_to_avoid (Alternate 1) | *not set* | Array of [Blocks To Avoid](#blocks-to-avoid) items |  |  | 
 | can_breach | false | Boolean true/false | Tells the pathfinder whether or not it can jump out of water (like a dolphin) |  | 
 | can_break_doors | false | Boolean true/false | Tells the pathfinder that it can path through a closed door and break it | Husk: `true` | 
 | can_float | *not set* | Boolean true/false |  | Cat: `true` | 
@@ -36,6 +38,15 @@ Walking style of the mob.
 | can_walk | true | Boolean true/false | Tells the pathfinder whether or not it can walk on the ground outside water | Villager: `true` | 
 | can_walk_in_lava | false | Boolean true/false | Tells the pathfinder whether or not it can travel in lava like walking on ground | Strider: `true` | 
 | is_amphibious | false | Boolean true/false | Tells the pathfinder whether or not it can walk on the ground underwater | Bogged: `true` | 
+
+## Blocks To Avoid
+
+#### Block to Avoid Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| name | *not set* | String | Block identifier to avoid. |  | 
+| tags | *not set* | Molang | Molang expression to match block tags, e.g. query.any_tag('trapdoors') |  | 
 
 ## Samples
 

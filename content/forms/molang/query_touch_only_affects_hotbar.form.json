@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if touch input only affects the touchbar..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.touch_only_affects_hotbar",
   "fields": [],
   "generated_doNotEdit": {

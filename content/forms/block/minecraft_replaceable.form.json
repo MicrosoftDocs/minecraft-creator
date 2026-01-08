@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be replaced by other blocks"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "versionIntroduced": "1.21.70",
   "generated_doNotEdit": {

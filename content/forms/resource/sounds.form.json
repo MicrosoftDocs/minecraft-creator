@@ -1,0 +1,368 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "sounds",
+  "title": "Sounds",
+  "description": "The sounds.json file defines sound events, entity sounds, block sounds, and interactive sounds for a resource pack. This is the legacy sound configuration file; for newer projects, consider using sound_definitions.json instead.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines sound configuration" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "entity_sounds", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "with entity sounds" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "entity_sounds.entities", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "for " },
+          { "type": "value", "field": "entity_sounds.entities.length" },
+          {
+            "type": "plural",
+            "countField": "entity_sounds.entities.length",
+            "singular": [{ "type": "literal", "text": " entity type" }],
+            "plural": [{ "type": "literal", "text": " entity types" }],
+            "includeCount": false
+          }
+        ]
+      },
+      {
+        "visibility": [{ "field": "block_sounds", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "with block sounds" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "individual_event_sounds", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "with individual event sounds" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "interactive_sounds", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "with interactive sounds" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "individual_event_sounds",
+      "title": "Individual Event Sounds",
+      "description": "Defines individual sound events that can be triggered by various game actions.",
+      "dataType": 16,
+      "subForm": {
+        "id": "individual_event_sounds_container",
+        "fields": [
+          {
+            "id": "events",
+            "title": "Events",
+            "description": "A collection of event sound definitions keyed by event name.",
+            "dataType": 14,
+            "subForm": {
+              "id": "event_sound",
+              "title": "Event Sound",
+              "description": "Defines a sound for a specific event.",
+              "fields": [
+                {
+                  "id": "sound",
+                  "title": "Sound",
+                  "description": "The sound identifier to play for this event.",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "volume",
+                  "title": "Volume",
+                  "description": "Volume multiplier for this sound. Can be a single value or a range [min, max].",
+                  "dataType": 19,
+                  "defaultValue": 1
+                },
+                {
+                  "id": "pitch",
+                  "title": "Pitch",
+                  "description": "Pitch multiplier for this sound. Can be a single value or a range [min, max].",
+                  "dataType": 19,
+                  "defaultValue": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "block_sounds",
+      "title": "Block Sounds",
+      "description": "Defines sounds that play when interacting with blocks (breaking, placing, stepping).",
+      "dataType": 16
+    },
+    {
+      "id": "entity_sounds",
+      "title": "Entity Sounds",
+      "description": "Defines sounds for entities, including defaults and entity-specific overrides.",
+      "dataType": 16,
+      "subForm": {
+        "id": "entity_sounds_container",
+        "fields": [
+          {
+            "id": "defaults",
+            "title": "Defaults",
+            "description": "Default sound settings that apply to all entities unless overridden.",
+            "dataType": 16,
+            "subForm": {
+              "id": "entity_sound_defaults",
+              "fields": [
+                {
+                  "id": "volume",
+                  "title": "Volume",
+                  "description": "Default volume for entity sounds.",
+                  "dataType": 19,
+                  "defaultValue": 1
+                },
+                {
+                  "id": "pitch",
+                  "title": "Pitch",
+                  "description": "Default pitch for entity sounds.",
+                  "dataType": 19,
+                  "defaultValue": 1
+                },
+                {
+                  "id": "events",
+                  "title": "Events",
+                  "description": "Default sounds for various entity events.",
+                  "dataType": 14,
+                  "subForm": {
+                    "id": "entity_event_sound",
+                    "fields": [
+                      {
+                        "id": "sound",
+                        "title": "Sound",
+                        "description": "The sound to play for this event.",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "volume",
+                        "title": "Volume",
+                        "description": "Volume for this event sound.",
+                        "dataType": 19
+                      },
+                      {
+                        "id": "pitch",
+                        "title": "Pitch",
+                        "description": "Pitch for this event sound.",
+                        "dataType": 19
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "entities",
+            "title": "Entities",
+            "description": "Entity-specific sound configurations that override defaults.",
+            "dataType": 14,
+            "subForm": {
+              "id": "entity_sound_config",
+              "title": "Entity Sound Configuration",
+              "description": "Sound configuration for a specific entity type.",
+              "fields": [
+                {
+                  "id": "volume",
+                  "title": "Volume",
+                  "description": "Volume multiplier for this entity's sounds.",
+                  "dataType": 19
+                },
+                {
+                  "id": "pitch",
+                  "title": "Pitch",
+                  "description": "Pitch multiplier for this entity's sounds. Can be a single value or a range [min, max].",
+                  "dataType": 19
+                },
+                {
+                  "id": "events",
+                  "title": "Events",
+                  "description": "Sound events for this entity, which can have material-based variations.",
+                  "dataType": 14,
+                  "subForm": {
+                    "id": "entity_event_with_materials",
+                    "fields": [
+                      {
+                        "id": "sound",
+                        "title": "Sound",
+                        "description": "The sound to play for this event.",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "default",
+                        "title": "Default",
+                        "description": "The default sound to play if no material-specific sound matches.",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "wood",
+                        "title": "Wood",
+                        "description": "Sound to play when on wood material.",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "gravel",
+                        "title": "Gravel",
+                        "description": "Sound to play when on gravel material.",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "grass",
+                        "title": "Grass",
+                        "description": "Sound to play when on grass material.",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "stone",
+                        "title": "Stone",
+                        "description": "Sound to play when on stone material.",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "snow",
+                        "title": "Snow",
+                        "description": "Sound to play when on snow material.",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "sand",
+                        "title": "Sand",
+                        "description": "Sound to play when on sand material.",
+                        "dataType": 2
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "interactive_sounds",
+      "title": "Interactive Sounds",
+      "description": "Defines sounds for interactive elements like UI and special blocks.",
+      "dataType": 16,
+      "subForm": {
+        "id": "interactive_sounds_container",
+        "fields": [
+          {
+            "id": "block_sounds",
+            "title": "Block Sounds",
+            "description": "Sounds for interactive block types.",
+            "dataType": 14,
+            "subForm": {
+              "id": "interactive_block_sound",
+              "fields": [
+                {
+                  "id": "volume",
+                  "title": "Volume",
+                  "description": "Volume for this block's sounds.",
+                  "dataType": 19
+                },
+                {
+                  "id": "pitch",
+                  "title": "Pitch",
+                  "description": "Pitch for this block's sounds.",
+                  "dataType": 19
+                },
+                {
+                  "id": "events",
+                  "title": "Events",
+                  "description": "Sound events for this interactive block.",
+                  "dataType": 14,
+                  "subForm": {
+                    "id": "block_event_sound",
+                    "fields": [
+                      {
+                        "id": "sound",
+                        "title": "Sound",
+                        "description": "The sound identifier to play.",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "volume",
+                        "title": "Volume",
+                        "description": "Volume for this event.",
+                        "dataType": 19
+                      },
+                      {
+                        "id": "pitch",
+                        "title": "Pitch",
+                        "description": "Pitch for this event.",
+                        "dataType": 19
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "entity_sounds",
+            "title": "Entity Sounds",
+            "description": "Sounds for interactive entity types.",
+            "dataType": 14
+          }
+        ]
+      }
+    },
+    {
+      "id": "individual_named_sounds",
+      "title": "Individual Named Sounds",
+      "description": "Defines named sounds that can be referenced directly.",
+      "dataType": 16,
+      "subForm": {
+        "id": "individual_named_sounds_container",
+        "fields": [
+          {
+            "id": "sounds",
+            "title": "Sounds",
+            "description": "A collection of named sound definitions.",
+            "dataType": 14,
+            "subForm": {
+              "id": "named_sound",
+              "fields": [
+                {
+                  "id": "sound",
+                  "title": "Sound",
+                  "description": "The sound identifier.",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "volume",
+                  "title": "Volume",
+                  "description": "Volume for this sound.",
+                  "dataType": 19,
+                  "defaultValue": 1
+                },
+                {
+                  "id": "pitch",
+                  "title": "Pitch",
+                  "description": "Pitch for this sound.",
+                  "dataType": 19,
+                  "defaultValue": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "note": "The sounds.json file is a comprehensive sound configuration file that has been used since early versions of Bedrock Edition. For newer sound definitions with format versioning, consider using sound_definitions.json instead."
+}

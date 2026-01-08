@@ -1,4 +1,53 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "drinks potions when conditions are met"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "potions",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has configured potion options with filters and chances"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "speed_modifier",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "moves at "
+          },
+          {
+            "type": "value",
+            "field": "speed_modifier"
+          },
+          {
+            "type": "literal",
+            "text": "x speed while drinking"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.drink_potion",
@@ -131,6 +180,112 @@
                 }
               ]
             }
+          ],
+          "/vanilla/behavior_pack/entities/witch.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.drink_potion/",
+              "content": [
+                {
+                  "id": 19,
+                  "chance": 0.15,
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_underwater",
+                        "subject": "self",
+                        "value": true
+                      },
+                      {
+                        "none_of": [
+                          {
+                            "test": "has_mob_effect",
+                            "subject": "self",
+                            "value": "water_breathing"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 12,
+                  "chance": 0.15,
+                  "filters": {
+                    "all_of": [
+                      {
+                        "any_of": [
+                          {
+                            "test": "on_fire",
+                            "subject": "self",
+                            "value": true
+                          },
+                          {
+                            "test": "on_hot_block",
+                            "subject": "self",
+                            "value": true
+                          },
+                          {
+                            "test": "taking_fire_damage",
+                            "subject": "self",
+                            "value": true
+                          }
+                        ]
+                      },
+                      {
+                        "none_of": [
+                          {
+                            "test": "has_mob_effect",
+                            "subject": "self",
+                            "value": "fire_resistance"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 21,
+                  "chance": 0.05,
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_missing_health",
+                        "subject": "self",
+                        "value": true
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 14,
+                  "chance": 0.25,
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_target",
+                        "subject": "self",
+                        "value": true
+                      },
+                      {
+                        "none_of": [
+                          {
+                            "test": "has_mob_effect",
+                            "subject": "self",
+                            "value": "speed"
+                          }
+                        ]
+                      },
+                      {
+                        "test": "target_distance",
+                        "subject": "self",
+                        "value": 11,
+                        "operator": ">="
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
           ]
         }
       },
@@ -139,14 +294,42 @@
         "title": "Speed Modifier",
         "description": "The movement speed modifier to apply to the entity while it is drinking a potion. A value of 0 represents no change in speed.",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/wandering_trader.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.drink_potion/",
+              "content": -0.2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/witch.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.drink_potion/",
+              "content": -0.25
+            }
+          ]
+        }
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/wandering_trader.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.drink_potion/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/witch.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.drink_potion/",
+              "content": 1
+            }
+          ]
+        }
       }
     ],
     "samples": {

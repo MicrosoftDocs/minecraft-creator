@@ -1,4 +1,96 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be interacted with by players"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "interactions.cooldown",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a "
+          },
+          {
+            "type": "value",
+            "field": "interactions.cooldown"
+          },
+          {
+            "type": "literal",
+            "text": " second interaction cooldown"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "interactions.use_item",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "consumes the held item when interacted with"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "interactions.spawn_entities",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spawns entities on interaction"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "interactions.transform_to_item",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "transforms the used item on interaction"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "interactions.play_sounds",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "plays sounds during interaction"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "add_items",
@@ -46,6 +138,15 @@
     },
     {
       "id": "interactions",
+      "dataType": 15,
+      "description": "The list of interactions for this entity.",
+      "alternates": [
+        {
+          "id": "interactions",
+          "dataType": 16,
+          "subFormId": "interactions"
+        }
+      ],
       "subForm": {
         "id": "interactions",
         "fields": [
@@ -168,8 +269,9 @@
           },
           {
             "id": "on_interact",
-            "title": "On_interact",
-            "dataType": 2,
+            "title": "On Interact",
+            "description": "Event to fire when the interaction occurs. Can be a string event name or an object with filters.",
+            "dataType": 22,
             "samples": {
               "/vanilla/behavior_pack/entities/allay.json": [
                 {
@@ -196,8 +298,10 @@
           },
           {
             "id": "give_item",
-            "title": "Give_item",
-            "dataType": 2,
+            "title": "Give Item",
+            "description": "If true, the player can give items to the entity during interaction.",
+            "defaultValue": false,
+            "dataType": 1,
             "samples": {
               "/vanilla/behavior_pack/entities/allay.json": [
                 {
@@ -209,8 +313,10 @@
           },
           {
             "id": "take_item",
-            "title": "Take_item",
-            "dataType": 2,
+            "title": "Take Item",
+            "description": "If true, the player can take items from the entity during interaction.",
+            "defaultValue": false,
+            "dataType": 1,
             "samples": {
               "/vanilla/behavior_pack/entities/allay.json": [
                 {
@@ -246,7 +352,9 @@
           {
             "id": "swing",
             "title": "Swing",
-            "dataType": 2
+            "description": "If true, the player will do the 'swing' animation when interacting with this entity.",
+            "defaultValue": false,
+            "dataType": 1
           },
           {
             "id": "spawn_items",
@@ -275,7 +383,9 @@
           {
             "id": "use_item",
             "title": "Use Item",
-            "dataType": 2
+            "description": "If true, the interaction will use an item.",
+            "defaultValue": false,
+            "dataType": 1
           },
           {
             "id": "particle_on_start",
@@ -671,6 +781,37 @@
                     "event": "minecraft:on_sheared",
                     "target": "self"
                   }
+                }
+              ]
+            }
+          ],
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_unchested/minecraft:interact/",
+              "content": [
+                {
+                  "play_sounds": "armor.equip_generic",
+                  "on_interact": {
+                    "filters": {
+                      "all_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "player"
+                        },
+                        {
+                          "test": "has_equipment",
+                          "domain": "hand",
+                          "subject": "other",
+                          "value": "chest"
+                        }
+                      ]
+                    },
+                    "event": "minecraft:on_chest",
+                    "target": "self"
+                  },
+                  "use_item": true,
+                  "interact_text": "action.interact.attachchest"
                 }
               ]
             }

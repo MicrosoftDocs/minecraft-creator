@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:drying_out_timer"
 description: "Describes the minecraft:drying_out_timer entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

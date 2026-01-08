@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if behavior.timer_flag_1 is running"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.timer_flag_1",
   "fields": [],
   "generated_doNotEdit": {

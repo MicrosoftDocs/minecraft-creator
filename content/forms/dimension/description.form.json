@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Description",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines the identifier for a dimension"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Description",
@@ -12,5 +25,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Declares the unique identifier for a custom dimension that players can travel to. The identifier must use namespace:name format (like 'mypack:custom_dimension') and is used by commands, portals, and scripts to reference this dimension. Every custom dimension requires a description with a valid identifier."
 }

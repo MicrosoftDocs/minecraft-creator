@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has its rotation locked to match its vehicle"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:rotation_locked_to_vehicle",
   "fields": [],
   "generated_doNotEdit": {

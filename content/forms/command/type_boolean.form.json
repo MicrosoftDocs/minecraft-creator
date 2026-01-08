@@ -1,0 +1,19 @@
+{
+  "id": "type_boolean",
+  "title": "Boolean",
+  "description": "A true or false value.",
+  "fields": [],
+  "formatHint": "true or false",
+  "samples": {
+    "values": [
+      {
+        "path": "Yes/on/enabled",
+        "content": "true"
+      },
+      {
+        "path": "No/off/disabled",
+        "content": "false"
+      }
+    ]
+  }
+}

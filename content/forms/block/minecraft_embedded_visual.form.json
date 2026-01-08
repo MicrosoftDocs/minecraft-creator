@@ -1,5 +1,17 @@
 {
-  "tags": ["visual"],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has custom visuals when embedded" }
+        ]
+      }
+    ]
+  },
+  "tags": [
+    "visual"
+  ],
   "versionIntroduced": "1.21.120",
   "id": "minecraft:embedded_visual",
   "title": "Embedded Visual",

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "moves vertically when the rider uses the jump action"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:vertical_movement_action",
   "fields": [],
   "generated_doNotEdit": {

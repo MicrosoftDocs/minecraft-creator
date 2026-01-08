@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:boostable"
 description: "Describes the minecraft:boostable entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -16,19 +17,17 @@ Defines the conditions and behavior of a rideable entity's boost.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| boost_items | *not set* | [Boost Items](#boost-items) item | List of items that can be used to boost while riding this entity. | Pig: `[{"item":"carrotOnAStick","damage":2,"replace_item":"fishing_rod"}]` | 
-| duration | 3 | Decimal number | Time in seconds for the boost. |  | 
-| speed_multiplier | 1 | Decimal number | Factor by which the entity's normal speed increases. E.g. 2.0 means go twice as fast. |  | 
+| boost_items | *not set* | [Boost Items](#boost-items) item | List of items that can be used to boost while riding this entity. | Pig: `[{"item":"carrotOnAStick","damage":2,"replace_item":"fishing_rod"}]`, Strider: `[{"item":"warped_fungus_on_a_stick","damage":1,"replace_item":"fishing_rod"}]` | 
+| duration | 3 | Decimal number | Time in seconds for the boost. | Pig: `3`, Strider: `16` | 
+| speed_multiplier | 1 | Decimal number | Factor by which the entity's normal speed increases. E.g. 2.0 means go twice as fast. | Pig: `1.35` | 
 
 ## Boost Items
-List of items that can be used to boost while riding this entity. Each item has the following properties:
-
 
 #### Boost Items Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| damage | 1 | Array of strings | This is the damage that the item will take each time it is used. |  | 
+| damage | *not set* | Array of strings | This is the damage that the item will take each time it is used. |  | 
 | item | *not set* | String | Name of the item that can be used to boost. |  | 
 | replace_item | *not set* | String | The item used to boost will become this item once it is used up. |  | 
 

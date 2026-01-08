@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Block Components Documentation - minecraft:replaceable"
 description: "Describes the minecraft:replaceable block component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

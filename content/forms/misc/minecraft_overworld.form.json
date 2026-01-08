@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines overworld component"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:overworld",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

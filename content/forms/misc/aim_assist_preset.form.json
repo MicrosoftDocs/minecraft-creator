@@ -1,0 +1,106 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines an aim assist preset that configures how aim assist behaves for a player"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "aim_assist_preset",
+  "title": "Aim Assist Preset",
+  "description": "Defines an aim assist preset that configures how aim assist behaves for a player. Presets specify which categories to use for different items and hands, as well as exclusion lists.",
+  "versionIntroduced": "1.21.50",
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of the aim assist preset file.",
+      "dataType": 25,
+      "isRequired": true
+    },
+    {
+      "id": "minecraft:aim_assist_preset",
+      "title": "Aim Assist Preset",
+      "description": "The root object containing the preset definition.",
+      "dataType": 16,
+      "isRequired": true,
+      "subForm": {
+        "id": "aim_assist_preset_root",
+        "fields": [
+          {
+            "id": "identifier",
+            "title": "Identifier",
+            "description": "The namespaced identifier for this preset (e.g., 'minecraft:aim_assist_default').",
+            "dataType": 2,
+            "isRequired": true
+          },
+          {
+            "id": "item_settings",
+            "title": "Item Settings",
+            "description": "Map of item identifiers to the aim assist category to use when holding that item.",
+            "dataType": 14,
+            "subForm": {
+              "id": "item_setting",
+              "scalarFieldUpgradeName": "category",
+              "fields": [
+                {
+                  "id": "category",
+                  "title": "Category",
+                  "description": "The aim assist category identifier to use for this item.",
+                  "dataType": 2
+                }
+              ]
+            }
+          },
+          {
+            "id": "default_item_settings",
+            "title": "Default Item Settings",
+            "description": "The aim assist category to use for items not explicitly listed in item_settings.",
+            "dataType": 2
+          },
+          {
+            "id": "hand_settings",
+            "title": "Hand Settings",
+            "description": "The aim assist category to use when the player has an empty hand.",
+            "dataType": 2
+          },
+          {
+            "id": "exclusion_settings",
+            "title": "Exclusion Settings",
+            "description": "Blocks and entities that should be excluded from aim assist targeting.",
+            "dataType": 16,
+            "subForm": {
+              "id": "exclusion_settings",
+              "fields": [
+                {
+                  "id": "blocks",
+                  "title": "Blocks",
+                  "description": "Array of block identifiers to exclude from targeting.",
+                  "dataType": 17
+                },
+                {
+                  "id": "entities",
+                  "title": "Entities",
+                  "description": "Array of entity identifiers to exclude from targeting.",
+                  "dataType": 17
+                }
+              ]
+            }
+          },
+          {
+            "id": "liquid_targeting_list",
+            "title": "Liquid Targeting List",
+            "description": "Array of item identifiers that should be able to target liquid blocks (water, lava).",
+            "dataType": 17
+          }
+        ]
+      }
+    }
+  ]
+}

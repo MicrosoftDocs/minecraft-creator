@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "tests if the distance to the nearest player matches a value"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "conditional",
     "entityevent"

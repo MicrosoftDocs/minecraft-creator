@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Biome Documentation - minecraft:frozen_ocean"
 description: "Describes the minecraft:frozen_ocean biome"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

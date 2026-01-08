@@ -1,4 +1,32 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is a boss mob with a health bar"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "should_darken_sky",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "darkens the sky when present"
+          }
+        ]
+      }
+    ]
+  },
   "description": "Defines the current state of the boss for updating the boss HUD.",
   "fields": [
     {

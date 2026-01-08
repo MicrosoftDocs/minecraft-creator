@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "BlockRules",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "replaces and modifies blocks based on a series of rules"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "processor_type",

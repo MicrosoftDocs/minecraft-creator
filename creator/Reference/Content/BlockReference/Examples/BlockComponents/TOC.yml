@@ -1,11 +1,17 @@
 - name: Block Components List
   href: BlockComponentsList.md
+- name: minecraft:block_light_absorption
+  href: minecraftBlock_block_light_absorption.md
+- name: minecraft:block_light_emission
+  href: minecraftBlock_block_light_emission.md
 - name: minecraft:collision_box
   href: minecraftBlock_collision_box.md
 - name: minecraft:connection_rule
   href: minecraftBlock_connection_rule.md
 - name: minecraft:crafting_table
   href: minecraftBlock_crafting_table.md
+- name: minecraft:destroy_time
+  href: minecraftBlock_destroy_time.md
 - name: minecraft:destructible_by_explosion
   href: minecraftBlock_destructible_by_explosion.md
 - name: minecraft:destructible_by_mining
@@ -18,6 +24,8 @@
   href: minecraftBlock_embedded_visual.md
 - name: minecraft:entity_fall_on
   href: minecraftBlock_entity_fall_on.md
+- name: minecraft:explosion_resistance
+  href: minecraftBlock_explosion_resistance.md
 - name: minecraft:flammable
   href: minecraftBlock_flammable.md
 - name: minecraft:flower_pottable

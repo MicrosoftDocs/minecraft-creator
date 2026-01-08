@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "JigsawStructureMetadata",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines jigsaw structure metadata including markers and size"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "JigsawStructureMetadata",
@@ -28,5 +41,6 @@
         "defaultValue": false
       }
     ]
-  }
+  },
+  "description": "Defines jigsaw structure metadata including markers and size."
 }

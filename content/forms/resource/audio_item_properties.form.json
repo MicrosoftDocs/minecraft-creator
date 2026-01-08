@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "title": "Audio Properties",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines audio volume and weight settings for sound playback"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "definitions",
@@ -36,5 +49,6 @@
         ]
       }
     }
-  ]
+  ],
+  "description": "Defines audio volume and weight settings for sound playback."
 }

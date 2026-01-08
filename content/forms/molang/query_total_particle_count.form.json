@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns total number of active particles in the world"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.total_particle_count",
   "fields": [],
   "generated_doNotEdit": {

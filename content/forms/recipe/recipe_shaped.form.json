@@ -1,0 +1,276 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "recipe_shaped",
+  "title": "Shaped Recipe",
+  "description": "A shaped crafting recipe for Minecraft Bedrock Edition. Shaped recipes require ingredients to be placed in a specific pattern on the crafting grid.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines a shaped crafting recipe" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "minecraft:recipe_shaped.result.item", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "crafts " },
+          { "type": "value", "field": "minecraft:recipe_shaped.result.item" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "minecraft:recipe_shaped.result.count", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": " (x" },
+          { "type": "value", "field": "minecraft:recipe_shaped.result.count" },
+          { "type": "literal", "text": ")" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "minecraft:recipe_shaped.pattern", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "uses a " },
+          { "type": "value", "field": "minecraft:recipe_shaped.pattern.length" },
+          { "type": "literal", "text": "-row pattern" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "minecraft:recipe_shaped.tags[0]", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "crafted at: " },
+          { "type": "value", "field": "minecraft:recipe_shaped.tags[0]" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "minecraft:recipe_shaped.assume_symmetry", "comparison": "=", "value": true }],
+        "tokens": [
+          { "type": "literal", "text": "pattern can be mirrored" }
+        ]
+      }
+    ]
+  },
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "recipe_shaped",
+    "fields": [
+      {
+        "dataType": 25,
+        "id": "format_version",
+        "title": "Format Version",
+        "description": "The format version of this recipe file. Common versions include '1.12' and '1.20.10'.",
+        "isRequired": true
+      },
+      {
+        "dataType": 16,
+        "id": "minecraft:recipe_shaped",
+        "title": "Shaped Recipe Definition",
+        "description": "The shaped recipe definition container.",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 16,
+              "id": "description",
+              "title": "Description",
+              "description": "The recipe description containing identifier.",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 2,
+                    "id": "identifier",
+                    "title": "Identifier",
+                    "description": "The unique identifier for this recipe (e.g., 'minecraft:anvil').",
+                    "isRequired": true
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": 17,
+              "id": "tags",
+              "title": "Tags",
+              "description": "Tags that specify which crafting stations can use this recipe (e.g., 'crafting_table', 'stonecutter').",
+              "isRequired": true
+            },
+            {
+              "dataType": 2,
+              "id": "group",
+              "title": "Group",
+              "description": "An optional group identifier for recipe book organization.",
+              "isRequired": false
+            },
+            {
+              "dataType": 17,
+              "id": "pattern",
+              "title": "Pattern",
+              "description": "The crafting pattern as an array of strings. Each string represents a row, and each character maps to a key. Use space for empty slots.",
+              "isRequired": true
+            },
+            {
+              "dataType": 14,
+              "id": "key",
+              "title": "Key",
+              "description": "Maps pattern characters to item definitions.",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 16,
+                    "id": "[A-Za-z#]",
+                    "title": "Item Key",
+                    "description": "An item definition for a pattern character.",
+                    "isRequired": true,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "item",
+                          "title": "Item",
+                          "description": "The item identifier.",
+                          "isRequired": true
+                        },
+                        {
+                          "dataType": 0,
+                          "id": "data",
+                          "title": "Data",
+                          "description": "The item data/aux value for items with variants.",
+                          "isRequired": false,
+                          "isDeprecated": true,
+                          "versionDeprecated": "1.20.0"
+                        },
+                        {
+                          "dataType": 2,
+                          "id": "tag",
+                          "title": "Tag",
+                          "description": "An item tag that matches multiple items (e.g., 'minecraft:planks').",
+                          "isRequired": false
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "keyDescription": "pattern_character"
+            },
+            {
+              "dataType": 16,
+              "id": "result",
+              "title": "Result",
+              "description": "The crafting result.",
+              "isRequired": true,
+              "alternates": [
+                {
+                  "dataType": 15,
+                  "id": "result",
+                  "title": "Results Array",
+                  "description": "An array of crafting results."
+                }
+              ],
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 2,
+                    "id": "item",
+                    "title": "Item",
+                    "description": "The result item identifier.",
+                    "isRequired": true
+                  },
+                  {
+                    "dataType": 0,
+                    "id": "data",
+                    "title": "Data",
+                    "description": "The result item data/aux value.",
+                    "isRequired": false,
+                    "isDeprecated": true,
+                    "versionDeprecated": "1.20.0"
+                  },
+                  {
+                    "dataType": 0,
+                    "id": "count",
+                    "title": "Count",
+                    "description": "The number of items produced.",
+                    "isRequired": false
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": 0,
+              "id": "priority",
+              "title": "Priority",
+              "description": "Recipe priority for conflict resolution. Lower values have higher priority.",
+              "isRequired": false
+            },
+            {
+              "dataType": 1,
+              "id": "assume_symmetry",
+              "title": "Assume Symmetry",
+              "description": "If true, the recipe pattern can be mirrored horizontally.",
+              "isRequired": false
+            },
+            {
+              "dataType": 15,
+              "id": "unlock",
+              "title": "Unlock",
+              "description": "Conditions that must be met to unlock this recipe in the recipe book.",
+              "isRequired": false,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 2,
+                    "id": "item",
+                    "title": "Item",
+                    "description": "The item that must be obtained to unlock this recipe.",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 2,
+                    "id": "context",
+                    "title": "Context",
+                    "description": "The context in which the recipe is unlocked (e.g., 'AlwaysUnlocked', 'PlayerInWater', 'PlayerHasManyItems', 'None').",
+                    "isRequired": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "samples": {
+    "anvil": [
+      {
+        "path": "Anvil recipe example",
+        "content": {
+          "format_version": "1.12",
+          "minecraft:recipe_shaped": {
+            "description": {
+              "identifier": "minecraft:anvil"
+            },
+            "tags": [
+              "crafting_table"
+            ],
+            "pattern": [
+              "III",
+              " i ",
+              "iii"
+            ],
+            "key": {
+              "I": {
+                "item": "minecraft:iron_block"
+              },
+              "i": {
+                "item": "minecraft:iron_ingot"
+              }
+            },
+            "result": {
+              "item": "minecraft:anvil"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "note": "The 'data' field for items is deprecated in versions 1.20.0 and later. Use flattened item identifiers instead."
+}

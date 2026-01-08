@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "generates frozen ocean surface with icebergs"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:frozen_ocean",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

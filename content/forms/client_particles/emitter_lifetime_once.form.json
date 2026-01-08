@@ -1,5 +1,26 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a one-shot emitter with a single active period"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "active_time",
+      "title": "Active Time",
+      "description": "The time in seconds that the emitter is active. Can be a number or Molang expression.",
+      "dataType": 34,
+      "defaultValue": 0
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_lifetime_once",
     "title": "Client Particles Emitter Lifetime Once",
@@ -40,5 +61,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Creates a single-burst particle effect that runs once and stops. The emitter activates for the specified active_time duration, emits particles, then terminates. Ideal for impact effects like explosions, block breaking, critical hits, potion splashes, and other momentary visual feedback."
 }

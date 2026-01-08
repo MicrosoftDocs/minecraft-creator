@@ -1,0 +1,102 @@
+{
+  "id": "cmd_playsound",
+  "title": "playsound",
+  "description": "Plays a sound.",
+  "fields": [
+    {
+      "id": "sound",
+      "title": "sound",
+      "type": "string",
+      "isOptional": false,
+      "description": "Required. A `string` that defines the sound. Should be defined in `sound.definitions.josn`.",
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "player",
+      "title": "player",
+      "type": "string",
+      "isOptional": true,
+      "description": "Optional. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "position",
+      "title": "position",
+      "type": "string",
+      "isOptional": true,
+      "description": "Optional. `Vector` [x y z] of the position sounds originate from.",
+      "subFormId": "type_position_float",
+      "commandType": "POSITION_FLOAT"
+    },
+    {
+      "id": "volume",
+      "title": "volume",
+      "type": "string",
+      "isOptional": true,
+      "description": "Optional. A `float` that specifies the volume. Between 0.0 and 1.0. Below 1.0 diminishes the sound. 0 is inaudible. Default: `1.0`.",
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "pitch",
+      "title": "pitch",
+      "type": "string",
+      "isOptional": true,
+      "description": "Optional. A `float` that specifies the pitch. Must bet between 0.0 and 256. Default: `1.0`.",
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "minimumvolume",
+      "title": "minimumVolume",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `float` that specifies the volume. Between 0.0 and 1.0. Default: `0.0`.",
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Play sound",
+      "description": "Play a `sound` with optional `player`, `position`, `volume`, `pitch`, and `minimum volume`.",
+      "params": [
+        {
+          "name": "sound",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": true
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": true
+        },
+        {
+          "name": "volume",
+          "type": "VAL",
+          "isOptional": true
+        },
+        {
+          "name": "pitch",
+          "type": "VAL",
+          "isOptional": true
+        },
+        {
+          "name": "minimumvolume",
+          "type": "VAL",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

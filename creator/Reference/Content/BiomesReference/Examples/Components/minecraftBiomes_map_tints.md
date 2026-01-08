@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Biome Documentation - minecraft:map_tints"
 description: "Describes the minecraft:map_tints biome"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines explosion resistance for a block"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Detailed Resistance",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -13,5 +26,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines explosion resistance for a block."
 }

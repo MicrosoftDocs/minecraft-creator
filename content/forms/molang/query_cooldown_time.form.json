@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns total cooldown time in seconds for the item held"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.cooldown_time",
   "fields": [],
   "generated_doNotEdit": {

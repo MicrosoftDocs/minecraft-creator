@@ -1,0 +1,115 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "recipe_smithing_transform",
+  "title": "Smithing Transform Recipe",
+  "description": "A smithing table transformation recipe for Minecraft Bedrock Edition. Smithing transform recipes define how items are upgraded using a smithing template, base item, and addition material.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "transforms a base item using a smithing template and addition material at a smithing table" }
+        ]
+      }
+    ]
+  },
+  "versionIntroduced": "1.20.0",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "recipe_smithing_transform",
+    "fields": [
+      {
+        "dataType": 25,
+        "id": "format_version",
+        "title": "Format Version",
+        "description": "The format version of this recipe file.",
+        "isRequired": true
+      },
+      {
+        "dataType": 16,
+        "id": "minecraft:recipe_smithing_transform",
+        "title": "Smithing Transform Recipe Definition",
+        "description": "The smithing transform recipe definition container.",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 16,
+              "id": "description",
+              "title": "Description",
+              "description": "The recipe description containing identifier.",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 2,
+                    "id": "identifier",
+                    "title": "Identifier",
+                    "description": "The unique identifier for this recipe.",
+                    "isRequired": true
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": 17,
+              "id": "tags",
+              "title": "Tags",
+              "description": "Tags that specify this is a smithing_table recipe.",
+              "isRequired": true
+            },
+            {
+              "dataType": 2,
+              "id": "template",
+              "title": "Template",
+              "description": "The smithing template item (e.g., 'minecraft:netherite_upgrade_smithing_template').",
+              "isRequired": true
+            },
+            {
+              "dataType": 2,
+              "id": "base",
+              "title": "Base",
+              "description": "The base item to be transformed (e.g., 'minecraft:diamond_axe').",
+              "isRequired": true
+            },
+            {
+              "dataType": 2,
+              "id": "addition",
+              "title": "Addition",
+              "description": "The addition material (e.g., 'minecraft:netherite_ingot').",
+              "isRequired": true
+            },
+            {
+              "dataType": 2,
+              "id": "result",
+              "title": "Result",
+              "description": "The resulting transformed item.",
+              "isRequired": true
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "samples": {
+    "netherite": [
+      {
+        "path": "Netherite axe upgrade",
+        "content": {
+          "format_version": "1.12",
+          "minecraft:recipe_smithing_transform": {
+            "description": {
+              "identifier": "minecraft:smithing_netherite_axe"
+            },
+            "tags": [
+              "smithing_table"
+            ],
+            "template": "minecraft:netherite_upgrade_smithing_template",
+            "base": "minecraft:diamond_axe",
+            "addition": "minecraft:netherite_ingot",
+            "result": "minecraft:netherite_axe"
+          }
+        }
+      }
+    ]
+  }
+}

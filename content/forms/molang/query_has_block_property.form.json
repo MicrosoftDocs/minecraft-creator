@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if associated block has the given block ..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.has_block_property",
   "fields": [],
   "isDeprecated": true,

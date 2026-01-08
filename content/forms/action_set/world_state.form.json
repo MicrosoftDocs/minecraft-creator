@@ -1,6 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "world state",
   "title": "World state",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "describes the current state of the world"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "players",
@@ -9,5 +22,6 @@
       "subFormId": "action_set/player_state",
       "required": true
     }
-  ]
+  ],
+  "description": "Captures the current state of the world including time of day, weather, game rules, and other global settings. Used in automated testing to verify world conditions or establish consistent test environments."
 }

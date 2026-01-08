@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if the entity was last hurt by the caller"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "tags": [
     "conditional",

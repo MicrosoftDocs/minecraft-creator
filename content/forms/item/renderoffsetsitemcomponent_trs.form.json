@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has position, rotation, and scale offsets" }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "title": "RenderOffsetsItemComponent TRS",

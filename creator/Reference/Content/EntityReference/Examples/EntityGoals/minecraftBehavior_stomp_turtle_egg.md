@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:behavior.stomp_turtle_egg"
 description: "Describes the minecraft:behavior.stomp_turtle_egg ai behavior component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

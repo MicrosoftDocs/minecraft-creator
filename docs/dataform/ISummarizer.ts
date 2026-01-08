@@ -1,0 +1,510 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+
+/**
+ * # Summarizer Definition
+ *
+ * A Summarizer produces natural language descriptions of structured data.
+ * It evaluates a tree of tokens against an object to generate phrases that
+ * describe the object's characteristics in human-readable form.
+ *
+ * ## Purpose
+ *
+ * Summarizers transform raw data like `{ "max": 500, "value": 500 }` into
+ * meaningful descriptions like "has god-tier health (500 HP, tougher than an Ender Dragon)".
+ *
+ * ## Design for "This object ____"
+ *
+ * Every phrase is designed to complete the sentence "This object ____".
+ * Phrases should:
+ * - Start with a verb (has, can, will, is, deals, takes, triggers, spawns)
+ * - Be grammatically complete
+ * - Provide context through comparisons when possible
+ *
+ * ## File Naming Convention
+ *
+ * Summarizers are stored alongside their form definitions:
+ * - Form: `minecraft_health.form.json`
+ * - Summarizer: `minecraft_health.summarizer.json`
+ *
+ * ## Example Summarizer
+ *
+ * ```json
+ * {
+ *   "id": "minecraft_health",
+ *   "intent": "Describe how survivable this entity is based on health",
+ *   "description": "Generates natural language descriptions of entity health",
+ *
+ *   "phrases": [
+ *     {
+ *       "id": "health_level",
+ *       "description": "Main health description with qualitative assessment",
+ *       "tokens": [
+ *         { "type": "literal", "text": "has " },
+ *         {
+ *           "type": "switch",
+ *           "cases": [
+ *             {
+ *               "conditions": [{ "field": "max", "comparison": ">", "value": 500 }],
+ *               "tokens": [
+ *                 { "type": "literal", "text": "god-tier health" }
+ *               ]
+ *             },
+ *             {
+ *               "conditions": [{ "field": "max", "comparison": ">", "value": 200 }],
+ *               "tokens": [
+ *                 { "type": "literal", "text": "extremely high health" }
+ *               ]
+ *             }
+ *           ],
+ *           "default": [{ "type": "literal", "text": "typical health" }]
+ *         },
+ *         { "type": "literal", "text": " (" },
+ *         { "type": "unit", "field": "max", "unit": "HP" },
+ *         { "type": "literal", "text": ")" }
+ *       ]
+ *     }
+ *   ],
+ *
+ *   "examples": [
+ *     {
+ *       "input": { "max": 500, "value": 500 },
+ *       "output": "has god-tier health (500 HP)"
+ *     },
+ *     {
+ *       "input": { "max": 20, "value": 20 },
+ *       "output": "has typical health (20 HP)"
+ *     }
+ *   ]
+ * }
+ * ```
+ */
+
+import ICondition from "./ICondition";
+import { ISummarizerEffects, ISummarizerToken } from "./ISummarizerToken";
+
+/**
+ * An evaluated token with resolved text and effects.
+ *
+ * This is the output of evaluateWithEffects() - each token becomes an
+ * evaluated token that can be rendered by the Summarizer component.
+ *
+ * @example
+ * // Evaluated token with effects
+ * {
+ *   text: "500",
+ *   effects: {
+ *     emphasis: "strong",
+ *     sentiment: "positive",
+ *     icon: "❤️"
+ *   }
+ * }
+ */
+export interface ISummarizerEvaluatedToken {
+  /**
+   * The evaluated text content of the token.
+   */
+  text: string;
+
+  /**
+   * Visual effects to apply when rendering.
+   * Undefined means no special styling (plain text).
+   */
+  effects?: ISummarizerEffects;
+}
+
+/**
+ * An evaluated phrase containing structured tokens.
+ *
+ * This preserves token boundaries and effects for rich rendering.
+ */
+export interface ISummarizerEvaluatedPhrase {
+  /**
+   * The phrase ID (if provided in the definition).
+   */
+  id?: string;
+
+  /**
+   * The phrase category (if provided in the definition).
+   */
+  category?: string;
+
+  /**
+   * The priority of this phrase (lower = more important).
+   */
+  priority: number;
+
+  /**
+   * The tokens that make up this phrase with evaluated text and effects.
+   */
+  tokens: ISummarizerEvaluatedToken[];
+
+  /**
+   * Plain text version of the phrase (all tokens joined).
+   */
+  plainText: string;
+}
+
+/**
+ * Extended result with structured tokens for rich rendering.
+ *
+ * This is returned by evaluateWithEffects() and provides both plain text
+ * and structured data for rich rendering.
+ */
+export interface ISummarizerEvaluatedResult {
+  /**
+   * Evaluated phrases with structured tokens.
+   */
+  evaluatedPhrases: ISummarizerEvaluatedPhrase[];
+
+  /**
+   * Plain text phrases (same as ISummarizerResult.phrases).
+   */
+  phrases: string[];
+
+  /**
+   * All phrases joined into a single sentence.
+   */
+  asSentence: string;
+
+  /**
+   * Formatted as a complete sentence with a prefix.
+   */
+  asCompleteSentence: string;
+
+  /**
+   * Debug information if debug mode was enabled.
+   */
+  debug?: {
+    includedPhrases: string[];
+    excludedPhrases: string[];
+    truncatedPhrases: string[];
+  };
+}
+
+/**
+ * A single phrase that can be generated by the summarizer.
+ *
+ * Phrases are designed to complete "This object ____".
+ *
+ * @example
+ * // A phrase describing health
+ * {
+ *   "id": "health_description",
+ *   "description": "Describes the entity's health level",
+ *   "priority": 1,
+ *   "tokens": [
+ *     { "type": "literal", "text": "has " },
+ *     { "type": "value", "field": "max" },
+ *     { "type": "literal", "text": " HP" }
+ *   ]
+ * }
+ */
+export interface ISummarizerPhrase {
+  /**
+   * Optional identifier for this phrase, useful for debugging and documentation.
+   */
+  id?: string;
+
+  /**
+   * Human-readable description of what this phrase describes.
+   */
+  description?: string;
+
+  /**
+   * Conditions that must ALL be true for this phrase to be generated.
+   * If not provided, the phrase is always considered (subject to token visibility).
+   *
+   * @example
+   * // Only generate this phrase when max health is defined
+   * "visibility": [{ "field": "max", "comparison": "defined" }]
+   */
+  visibility?: ICondition[];
+
+  /**
+   * Priority determines the order and importance of phrases.
+   * Lower numbers are more important and appear first.
+   *
+   * - Priority 1: Core identity (what this thing fundamentally is/does)
+   * - Priority 2: Primary characteristics (main stats, key behaviors)
+   * - Priority 3: Secondary characteristics (less important details)
+   * - Priority 4+: Flavor/additional context
+   *
+   * When truncation is needed, higher priority phrases are removed first.
+   *
+   * @default 2
+   */
+  priority?: number;
+
+  /**
+   * The tokens that make up this phrase.
+   * Evaluated in order to produce the phrase text.
+   */
+  tokens: ISummarizerToken[];
+
+  /**
+   * Category for grouping related phrases.
+   * Useful for organizing output or filtering phrases.
+   *
+   * @example "combat", "movement", "spawning", "drops"
+   */
+  category?: string;
+}
+
+/**
+ * An example input/output pair.
+ *
+ * @example
+ * {
+ *   "description": "High health entity",
+ *   "input": { "max": 500, "value": 500 },
+ *   "output": "has god-tier health (500 HP, tougher than an Ender Dragon)"
+ * }
+ */
+export interface ISummarizerExample {
+  /**
+   * Optional description of what this example demonstrates.
+   */
+  description?: string;
+
+  /**
+   * The input data object.
+   */
+  input: object;
+
+  /**
+   * The expected output phrase(s).
+   * Can be a single string or array of strings for multiple phrases.
+   */
+  output: string | string[];
+}
+
+/**
+ * Options for controlling summarizer evaluation.
+ */
+export interface ISummarizerOptions {
+  /**
+   * Maximum number of phrases to generate.
+   * Phrases are sorted by priority, then truncated.
+   *
+   * @default undefined (no limit)
+   */
+  maxPhrases?: number;
+
+  /**
+   * Maximum priority level to include.
+   * Phrases with priority > this value are excluded.
+   *
+   * @default undefined (include all priorities)
+   */
+  maxPriority?: number;
+
+  /**
+   * Categories to include. If provided, only phrases in these categories
+   * are generated.
+   *
+   * @default undefined (include all categories)
+   */
+  includeCategories?: string[];
+
+  /**
+   * Categories to exclude. Phrases in these categories are not generated.
+   *
+   * @default undefined (exclude no categories)
+   */
+  excludeCategories?: string[];
+
+  /**
+   * Locale for formatting numbers, dates, etc.
+   *
+   * @default "en-US"
+   */
+  locale?: string;
+
+  /**
+   * If true, include the phrase ID in debug output.
+   *
+   * @default false
+   */
+  debug?: boolean;
+}
+
+/**
+ * The main summarizer definition.
+ *
+ * A summarizer contains phrases that are evaluated against data to produce
+ * natural language descriptions.
+ *
+ * ## Complete Example
+ *
+ * ```json
+ * {
+ *   "id": "minecraft_projectile",
+ *   "intent": "Describe projectile behavior and combat characteristics",
+ *   "description": "Summarizes how a projectile entity behaves when fired",
+ *
+ *   "phrases": [
+ *     {
+ *       "id": "damage",
+ *       "description": "How much damage the projectile deals",
+ *       "priority": 1,
+ *       "visibility": [{ "field": "power", "comparison": "defined" }],
+ *       "tokens": [
+ *         { "type": "literal", "text": "deals " },
+ *         {
+ *           "type": "switch",
+ *           "cases": [
+ *             {
+ *               "conditions": [{ "field": "power", "comparison": ">", "value": 10 }],
+ *               "tokens": [{ "type": "literal", "text": "devastating damage" }]
+ *             },
+ *             {
+ *               "conditions": [{ "field": "power", "comparison": ">", "value": 5 }],
+ *               "tokens": [{ "type": "literal", "text": "significant damage" }]
+ *             }
+ *           ],
+ *           "default": [{ "type": "literal", "text": "light damage" }]
+ *         },
+ *         { "type": "literal", "text": " on impact" }
+ *       ]
+ *     },
+ *     {
+ *       "id": "special_effects",
+ *       "description": "Special effects when hitting a target",
+ *       "priority": 2,
+ *       "tokens": [
+ *         {
+ *           "type": "list",
+ *           "items": [
+ *             {
+ *               "visibility": [{ "field": "catch_fire", "comparison": "=", "value": true }],
+ *               "tokens": [{ "type": "literal", "text": "sets targets on fire" }]
+ *             },
+ *             {
+ *               "visibility": [{ "field": "lightning", "comparison": "=", "value": true }],
+ *               "tokens": [{ "type": "literal", "text": "summons lightning" }]
+ *             },
+ *             {
+ *               "visibility": [{ "field": "knockback", "comparison": "=", "value": true }],
+ *               "tokens": [{ "type": "literal", "text": "knocks back targets" }]
+ *             }
+ *           ],
+ *           "emptyText": ""
+ *         }
+ *       ]
+ *     }
+ *   ],
+ *
+ *   "references": {
+ *     "arrow_damage": { "value": 2, "label": "a standard Arrow" },
+ *     "trident_damage": { "value": 9, "label": "a Trident" }
+ *   },
+ *
+ *   "examples": [
+ *     {
+ *       "description": "Powerful fire projectile",
+ *       "input": { "power": 15, "catch_fire": true, "lightning": false, "knockback": true },
+ *       "output": ["deals devastating damage on impact", "sets targets on fire and knocks back targets"]
+ *     }
+ *   ]
+ * }
+ * ```
+ */
+export default interface ISummarizer {
+  /**
+   * Unique identifier for this summarizer.
+   * Should match the form ID it describes (e.g., "minecraft_health").
+   */
+  id?: string;
+
+  /**
+   * High-level intent of this summarizer.
+   *
+   * @example
+   * "Describe how survivable this entity is based on health configuration"
+   * "Explain the combat behavior and damage characteristics"
+   */
+  intent?: string;
+
+  /**
+   * Detailed description of the summarizer's purpose and approach.
+   */
+  description?: string;
+
+  /**
+   * The phrases that this summarizer can generate.
+   * Each phrase is evaluated independently and may or may not produce output
+   * based on the data and visibility conditions.
+   */
+  phrases: ISummarizerPhrase[];
+
+  /**
+   * Example input/output pairs for learning and validation.
+   *
+   * ## Style Guide for Examples
+   *
+   * - Cover edge cases (very high, very low, typical values)
+   * - Show how comparisons should read
+   * - Demonstrate proper grammar for lists
+   * - Include examples with multiple phrases
+   */
+  examples?: ISummarizerExample[];
+
+  /**
+   * Style notes for generating or modifying this summarizer.
+   * Can include tone preferences, vocabulary choices, etc.
+   *
+   * @example
+   * "Use dramatic language for extreme values. Prefer 'devastating' over 'high'.
+   * Always include a parenthetical with the raw value for precision."
+   */
+  styleNotes?: string;
+
+  /**
+   * Version of the summarizer format.
+   * @default "1.0"
+   */
+  version?: string;
+}
+
+/**
+ * Result of evaluating a summarizer against data.
+ */
+export interface ISummarizerResult {
+  /**
+   * The generated phrases.
+   */
+  phrases: string[];
+
+  /**
+   * All phrases joined into a single sentence.
+   * Uses proper grammar: "phrase1, phrase2, and phrase3".
+   */
+  asSentence: string;
+
+  /**
+   * Formatted as a complete sentence with a prefix.
+   * e.g., "This entity has high health, can fly, and deals fire damage."
+   */
+  asCompleteSentence: string;
+
+  /**
+   * Debug information if debug mode was enabled.
+   */
+  debug?: {
+    /**
+     * IDs of phrases that were generated.
+     */
+    includedPhrases: string[];
+
+    /**
+     * IDs of phrases that were excluded due to visibility conditions.
+     */
+    excludedPhrases: string[];
+
+    /**
+     * IDs of phrases that were truncated due to limits.
+     */
+    truncatedPhrases: string[];
+  };
+}

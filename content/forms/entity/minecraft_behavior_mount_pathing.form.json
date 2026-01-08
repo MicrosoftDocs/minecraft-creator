@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "paths toward entities to mount"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "description": "Allows the mob to move around on its own while mounted seeking a target to attack. Also will allow an entity to target another entity for an attack.",
   "generated_doNotEdit": {
@@ -42,12 +55,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
               "content": 1.5
             }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild_mounted/minecraft:behavior.mount_pathing/",
-              "content": 1
-            }
           ]
         }
       },
@@ -62,12 +69,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
               "content": 4
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild_mounted/minecraft:behavior.mount_pathing/",
-              "content": 2
             }
           ]
         }
@@ -142,9 +143,9 @@
               "content": 5
             }
           ],
-          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
+          "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild_mounted/minecraft:behavior.mount_pathing/",
+              "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
               "content": 3
             }
           ]
@@ -403,17 +404,7 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild_mounted/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 1,
-            "target_dist": 2,
-            "track_target": true
-          }
-        }
-      ],
+      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [],
       "/vanilla/behavior_pack/entities/zombie_pigman.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",

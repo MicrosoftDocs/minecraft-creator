@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "describes a mob for targeting"
+          }
+        ]
+      }
+    ]
+  },
   "id": "MobDescriptor",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -140,5 +153,6 @@
         "defaultValue": 1
       }
     ]
-  }
+  },
+  "description": "Identifies a mob type for AI targeting and interaction behaviors. Used in components like behavior.nearest_attackable_target to specify valid targets by family type, with optional filters for additional conditions. Configure which creature families an entity hunts, fears, follows, or interacts with."
 }

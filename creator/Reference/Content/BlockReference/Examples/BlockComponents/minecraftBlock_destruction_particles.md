@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Block Components Documentation - minecraft:destruction_particles"
 description: "Describes the minecraft:destruction_particles block component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

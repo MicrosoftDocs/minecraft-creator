@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "looks at its current target"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "requires": [
     {

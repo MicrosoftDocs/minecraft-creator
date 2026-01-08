@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines behavior.dragonflaming configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.dragonflaming",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

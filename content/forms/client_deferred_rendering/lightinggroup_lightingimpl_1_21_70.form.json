@@ -1,8 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "fields": [],
   "id": "minecraft:lighting_settings",
   "title": "Lighting Settings",
   "description": "Lighting Settings",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "controls sun, moon, and ambient lighting for Vibrant Visuals" }
+        ]
+      }
+    ]
+  },
   "generatedFromSchema_doNotEdit": {
     "title": "Struct LightingGroup LightingImpl<1,21,70> Client Deferred Rendering",
     "description": "Struct LightingGroup LightingImpl<1,21,70> Client Deferred Rendering",

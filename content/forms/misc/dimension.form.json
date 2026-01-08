@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines dimension configuration"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Dimension",
@@ -19,5 +32,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines dimension configuration."
 }

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is searching"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_searching",
   "fields": [],
   "generated_doNotEdit": {

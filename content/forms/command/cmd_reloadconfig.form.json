@@ -1,0 +1,16 @@
+{
+  "id": "cmd_reloadconfig",
+  "title": "reloadconfig",
+  "description": "Reloads configuration files relating to variables, secrets, permissions, etc.",
+  "fields": [],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Overload 1",
+      "description": "",
+      "params": []
+    }
+  ],
+  "permissionLevel": 4,
+  "requiresCheats": true
+}

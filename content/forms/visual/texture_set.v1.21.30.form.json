@@ -1,5 +1,20 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "texture_set",
+  "title": "Texture Set (v1.21.30)",
+  "description": "Defines a PBR texture set document with format_version 1.21.30.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines PBR texture layers including color, normal, and material maps"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "texture_set",

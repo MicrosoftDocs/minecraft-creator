@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Biome Documentation - minecraft:mountain_parameters"
 description: "Describes the minecraft:mountain_parameters biome"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies display name properties"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:display_name",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

@@ -1,0 +1,175 @@
+{
+  "id": "cmd_script",
+  "title": "script",
+  "description": "Debugging options for script within Minecraft.",
+  "fields": [
+    {
+      "id": "mode",
+      "title": "mode",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "SCRIPTDEBUGMODEDEBUGGER"
+    },
+    {
+      "id": "action",
+      "title": "action",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "SCRIPTDEBUGGERLISTEN"
+    },
+    {
+      "id": "port",
+      "title": "port",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "host",
+      "title": "host",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_id",
+      "commandType": "ID"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Start profiler",
+      "description": "Start profiler (that is, performance) tracking of script within Minecraft.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "SCRIPTDEBUGMODEDEBUGGER",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "SCRIPTDEBUGGERLISTEN",
+          "isOptional": false
+        },
+        {
+          "name": "port",
+          "type": "INT",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Stop profiler",
+      "description": "Stop profiler-performance tracking of script with Minecraft.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "SCRIPTDEBUGMODEDEBUGGER",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "SCRIPTDEBUGGERCONNECT",
+          "isOptional": false
+        },
+        {
+          "name": "host",
+          "type": "ID",
+          "isOptional": true
+        },
+        {
+          "name": "port",
+          "type": "INT",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Watchdog export stats",
+      "description": "Export watchdog statistics on script runtime behavior and memory consumption.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "SCRIPTDEBUGMODEDEBUGGER",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "SCRIPTDEBUGGERCLOSE",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Overload 4",
+      "description": "",
+      "params": [
+        {
+          "name": "mode",
+          "type": "SCRIPTDEBUGMODEPROFILER",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "SCRIPTPROFILERSTART",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Overload 5",
+      "description": "",
+      "params": [
+        {
+          "name": "mode",
+          "type": "SCRIPTDEBUGMODEPROFILER",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "SCRIPTPROFILERSTOP",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Overload 6",
+      "description": "",
+      "params": [
+        {
+          "name": "mode",
+          "type": "SCRIPTDEBUGMODEDIAGNOSTICS",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "SCRIPTDIAGNOSTICSSTARTCAPTURE",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Overload 7",
+      "description": "",
+      "params": [
+        {
+          "name": "mode",
+          "type": "SCRIPTDEBUGMODEDIAGNOSTICS",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "SCRIPTDIAGNOSTICSSTOPCAPTURE",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 2,
+  "requiresCheats": true
+}

@@ -1,5 +1,32 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:cooldown",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "duration",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a "
+          },
+          {
+            "type": "value",
+            "field": "duration"
+          },
+          {
+            "type": "literal",
+            "text": " second cooldown"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:cooldown",

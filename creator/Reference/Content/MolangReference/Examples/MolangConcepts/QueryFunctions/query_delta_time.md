@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Molang Documentation - minecraft:query_delta_time"
 description: "Describes the minecraft:query_delta_time molang"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

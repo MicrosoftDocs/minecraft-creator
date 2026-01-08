@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Protected Block",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "protects blocks from being replaced during structure placement"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "processor_type",

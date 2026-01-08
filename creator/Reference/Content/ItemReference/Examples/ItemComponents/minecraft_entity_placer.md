@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Items Documentation - minecraft:entity_placer"
 description: "Describes the minecraft:entity_placer item component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

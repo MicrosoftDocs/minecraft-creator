@@ -1,4 +1,76 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "in_water",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "swims in schools with others of the same type"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "in_water",
+            "comparison": "!=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "moves in a flock with others of the same type"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "match_variants",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "only flocks with matching color variants"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "high_flock_limit",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "forms groups of up to "
+          },
+          {
+            "type": "value",
+            "field": "high_flock_limit"
+          },
+          {
+            "type": "literal",
+            "text": " members"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:flocking",

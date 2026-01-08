@@ -1,5 +1,28 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:block_placer",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "block",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "places "
+          },
+          {
+            "type": "value",
+            "field": "block"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:block_placer",

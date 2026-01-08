@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines an event trigger with optional conditions" }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "target",

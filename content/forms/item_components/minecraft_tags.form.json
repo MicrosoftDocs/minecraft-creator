@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has item tags"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "description": "Determines which tags are included on a given item",
   "samples": {

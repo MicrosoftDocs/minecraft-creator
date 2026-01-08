@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "shares items with other villagers"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.share_items",
@@ -73,6 +86,20 @@
         },
         "samples": {
           "/vanilla/behavior_pack/entities/villager.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.share_items/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "villager"
+                  }
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.share_items/",
               "content": [

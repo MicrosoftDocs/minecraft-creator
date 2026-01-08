@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is shaking"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_shaking",
   "fields": [],
   "description": "Returns 1.0 if the entity is shaking, else it returns 0.0. Applies generally to a hoglin, piglin, piglin brute, skeleton, strider, villager, or zombie villager.",

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "compares the current 24-hour time against a value"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "tags": [
     "conditional",

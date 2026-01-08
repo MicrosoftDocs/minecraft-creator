@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "DirectionSettings Proxy",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "controls direction settings for particle motion"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "DirectionSettings Proxy",
@@ -64,5 +77,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Controls the initial direction and velocity of emitted particles. Direction settings determine whether particles spray outward from the emitter, inward toward its center, or follow a custom vector defined by Molang expressions. This affects effects like explosions (outward), implosions (inward), or directional streams like breath attacks and water flows."
 }

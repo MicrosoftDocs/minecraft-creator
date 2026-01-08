@@ -1,4 +1,27 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "value",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has mark variant "
+          },
+          {
+            "type": "value",
+            "field": "value"
+          }
+        ]
+      }
+    ]
+  },
   "description": "Mark Variant is typically used as an additional per-type way (besides `variant`) to express a different visual form of the same mob.",
   "fields": [
     {

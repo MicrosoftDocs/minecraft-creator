@@ -1,5 +1,26 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "matches blocks by type for processor rules" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "predicate_type",
+      "title": "Predicate Type",
+      "description": "The type of block predicate."
+    },
+    {
+      "id": "block",
+      "title": "Block",
+      "description": "The block to match against."
+    }
+  ],
   "generated_doNotEdit": {
     "title": "JigsawStructure ProcessorRule BlockMatch",
     "description": "Predicate that evaluates to true if the block at the specified location matches the specified block.",

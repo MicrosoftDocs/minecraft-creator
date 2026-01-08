@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a numeric range"
+          }
+        ]
+      }
+    ]
+  },
   "id": "FloatRange",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -18,5 +31,6 @@
         "defaultValue": 0
       }
     ]
-  }
+  },
+  "description": "Specifies a minimum and maximum numeric range for randomized values. Used throughout entity components for variable timing, distances, and quantities—like random attack cooldowns, spawn heights, or movement speeds. The game picks a random value within the range each time the property is evaluated."
 }

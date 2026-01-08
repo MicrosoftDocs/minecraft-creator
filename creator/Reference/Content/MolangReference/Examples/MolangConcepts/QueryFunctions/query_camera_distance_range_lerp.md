@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Molang Documentation - minecraft:query_camera_distance_range_lerp"
 description: "Describes the minecraft:query_camera_distance_range_lerp molang"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

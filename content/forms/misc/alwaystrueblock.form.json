@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines alwaystrueblock configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "AlwaysTrueBlock",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

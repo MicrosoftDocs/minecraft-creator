@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can have other entities leashed to it"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:leashable_to",
   "fields": [],
   "generated_doNotEdit": {

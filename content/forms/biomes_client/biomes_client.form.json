@@ -1,0 +1,93 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines client-side biome visuals including water and fog colors" }
+        ]
+      }
+    ]
+  },
+  "id": "biomes_client",
+  "title": "Biomes Client",
+  "description": "The biomes_client.json file defines client-side visual properties for biomes, including water colors, fog colors, and transparency settings.",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "biomes_client",
+    "fields": [
+      {
+        "dataType": 14,
+        "id": "biomes",
+        "title": "Biomes",
+        "description": "A collection of biome visual definitions. Keys are biome identifiers (e.g., 'minecraft:plains') or 'default' for fallback settings.",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 2,
+              "id": "water_surface_color",
+              "title": "Water Surface Color",
+              "description": "The color of water surfaces in this biome. Specified as a hex color string (e.g., '#44AFF5').",
+              "isRequired": false
+            },
+            {
+              "dataType": 3,
+              "id": "water_surface_transparency",
+              "title": "Water Surface Transparency",
+              "description": "The transparency of water surfaces. 0.0 is fully transparent, 1.0 is fully opaque.",
+              "isRequired": false
+            },
+            {
+              "dataType": 2,
+              "id": "water_fog_color",
+              "title": "Water Fog Color",
+              "description": "The color of fog when underwater in this biome. Specified as a hex color string.",
+              "isRequired": false
+            },
+            {
+              "dataType": 0,
+              "id": "water_fog_distance",
+              "title": "Water Fog Distance",
+              "description": "The distance at which underwater fog becomes fully opaque.",
+              "isRequired": false
+            },
+            {
+              "dataType": 2,
+              "id": "fog_color",
+              "title": "Fog Color",
+              "description": "The color of atmospheric fog in this biome. Specified as a hex color string.",
+              "isRequired": false
+            }
+          ]
+        },
+        "keyDescription": "biome_identifier"
+      }
+    ]
+  },
+  "samples": {
+    "basic": [
+      {
+        "path": "Basic biomes_client.json",
+        "content": {
+          "biomes": {
+            "default": {
+              "water_surface_color": "#44AFF5",
+              "water_surface_transparency": 0.65,
+              "water_fog_color": "#44AFF5",
+              "water_fog_distance": 15,
+              "fog_color": "#ABD2FF"
+            },
+            "minecraft:swampland": {
+              "water_surface_color": "#4c6559",
+              "water_surface_transparency": 1,
+              "water_fog_color": "#4c6559",
+              "water_fog_distance": 8
+            }
+          }
+        }
+      }
+    ]
+  },
+  "note": "The 'default' entry provides fallback values for any biome not explicitly defined. All color values use hex format with '#' prefix."
+}

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is casting"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_casting",
   "fields": [],
   "description": "Returns 1.0 if the entity is casting, else it returns 0.0. Pertains to evoker.",

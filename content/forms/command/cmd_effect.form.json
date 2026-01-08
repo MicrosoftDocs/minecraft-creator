@@ -1,0 +1,149 @@
+{
+  "id": "cmd_effect",
+  "title": "effect",
+  "description": "Add or clear status effects.",
+  "fields": [
+    {
+      "id": "player",
+      "title": "player",
+      "type": "string",
+      "isOptional": false,
+      "description": "The player to receive the effect. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "mode",
+      "title": "Mode",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "CLEAREFFECTS"
+    },
+    {
+      "id": "effect",
+      "title": "effect",
+      "type": "string",
+      "isOptional": true,
+      "description": "An `enum` to specify the effect being added or removed.",
+      "subFormId": "type_effect",
+      "commandType": "EFFECT"
+    },
+    {
+      "id": "seconds",
+      "title": "seconds",
+      "type": "string",
+      "isOptional": true,
+      "description": "An `integer` that specifies the duration, in seconds, of this effect. Default: `30`.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "amplifier",
+      "title": "amplifier",
+      "type": "string",
+      "isOptional": true,
+      "description": "An `integer` that may have been applied to this effect. Sample values range typically from 0 to 4. Default: `0`.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "hideparticles",
+      "title": "hideParticles",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `Boolean` that specifies the visual representation of the effect. Default: `false`.",
+      "subFormId": "type_boolean",
+      "commandType": "BOOLEAN"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Clear effect",
+      "description": "Clear the effect for a target player.",
+      "params": [
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "mode",
+          "type": "CLEAREFFECTS",
+          "isOptional": false
+        },
+        {
+          "name": "effect",
+          "type": "EFFECT",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Add effect",
+      "description": "Add effect to target player with optional `seconds`, `amplifier`, and `hideParticles`.",
+      "params": [
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "effect",
+          "type": "EFFECT",
+          "isOptional": false
+        },
+        {
+          "name": "seconds",
+          "type": "INT",
+          "isOptional": true
+        },
+        {
+          "name": "amplifier",
+          "type": "INT",
+          "isOptional": true
+        },
+        {
+          "name": "hideparticles",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Overload 3",
+      "description": "",
+      "params": [
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "effect",
+          "type": "EFFECT",
+          "isOptional": false
+        },
+        {
+          "name": "mode",
+          "type": "ADDINFINITEEFFECT",
+          "isOptional": false
+        },
+        {
+          "name": "amplifier",
+          "type": "INT",
+          "isOptional": true
+        },
+        {
+          "name": "hideparticles",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

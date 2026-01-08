@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity has collisions enabled"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.has_collision",
   "fields": [],
   "generated_doNotEdit": {

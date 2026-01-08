@@ -1,0 +1,68 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates world-level settings and metadata"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "world",
+  "title": "World Validation",
+  "description": "Validates world-level settings including experiments, version requirements, and metadata. These settings affect how the world loads and what features are available.",
+  "fields": [
+    {
+      "id": "101",
+      "title": "Beta APIs",
+      "messageType": 0,
+      "dataType": 1,
+      "description": "Indicates whether the Beta APIs experiment is enabled in the world. Required for using experimental script API features.",
+      "technicalDescription": "Data contains a boolean indicating experiment status"
+    },
+    {
+      "id": "102",
+      "title": "Data Driven Items",
+      "messageType": 0,
+      "dataType": 1,
+      "description": "Indicates whether the Data Driven Items experiment is enabled. Required for certain custom item features.",
+      "technicalDescription": "Data contains a boolean indicating experiment status"
+    },
+    {
+      "id": "103",
+      "title": "Deferred Preview",
+      "messageType": 0,
+      "dataType": 1,
+      "description": "Indicates whether the Deferred Technical Preview experiment is enabled. Used for testing upcoming rendering features.",
+      "technicalDescription": "Data contains a boolean indicating experiment status"
+    },
+    {
+      "id": "107",
+      "title": "Base Game Version",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "The base game version specified for the world. Determines which Minecraft features and behaviors are available.",
+      "technicalDescription": "Data contains the version array as a string [major, minor, patch]"
+    },
+    {
+      "id": "108",
+      "title": "World Name",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "The display name of the world shown to players.",
+      "technicalDescription": "Data contains the world name string"
+    },
+    {
+      "id": "109",
+      "title": "World Description",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "The description text for the world, shown in world selection screens.",
+      "technicalDescription": "Data contains the world description string"
+    }
+  ]
+}

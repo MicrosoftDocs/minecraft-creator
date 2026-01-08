@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "3.0.0.DropdownOption",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a dropdown option with a name and display text"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "3.0.0.DropdownOption",
@@ -18,5 +31,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "A single option within a dropdown setting. Contains a unique identifier used by scripts and localized display text shown to players. Options are presented in the order defined."
 }

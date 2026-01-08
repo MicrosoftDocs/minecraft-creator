@@ -1,0 +1,185 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "analyzes texture image files for dimensions and tiering"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "textureimage",
+  "title": "Texture Images",
+  "description": "Analyzes texture image files (PNG, JPG, TGA) for dimensions, memory usage, and tiering compatibility. Ensures textures fit within platform memory budgets for different device tiers.",
+  "fields": [
+    {
+      "id": "101",
+      "title": "Texture Images",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Count and analysis of all texture image files in the pack.",
+      "technicalDescription": "Data contains the count of texture images"
+    },
+    {
+      "id": "200",
+      "title": "Texture Images Tier0",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Textures assigned to tier 0 (lowest quality) for subpack-based tiering. Used on very low-end devices.",
+      "technicalDescription": "Data contains the count or size of tier 0 textures"
+    },
+    {
+      "id": "201",
+      "title": "Texture Images Tier1",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Textures assigned to tier 1 for subpack-based tiering. Used on low-end devices.",
+      "technicalDescription": "Data contains the count or size of tier 1 textures"
+    },
+    {
+      "id": "202",
+      "title": "Texture Images Tier2",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Textures assigned to tier 2 for subpack-based tiering. Used on mid-range devices.",
+      "technicalDescription": "Data contains the count or size of tier 2 textures"
+    },
+    {
+      "id": "203",
+      "title": "Texture Images Tier3",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Textures assigned to tier 3 for subpack-based tiering. Used on higher-end devices.",
+      "technicalDescription": "Data contains the count or size of tier 3 textures"
+    },
+    {
+      "id": "204",
+      "title": "Texture Images Tier4",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Textures assigned to tier 4 for subpack-based tiering. Used on high-end devices.",
+      "technicalDescription": "Data contains the count or size of tier 4 textures"
+    },
+    {
+      "id": "205",
+      "title": "Texture Images Tier5",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Textures assigned to tier 5 (highest quality) for subpack-based tiering. Used on premium devices.",
+      "technicalDescription": "Data contains the count or size of tier 5 textures"
+    },
+    {
+      "id": "401",
+      "title": "PNG/JPG Error",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a PNG or JPG image file could not be processed. The file may be corrupted or use an unsupported format variation.",
+      "howToUse": "Re-export the image from an image editor like Paint.net or Photoshop. Ensure you save as standard PNG-8/PNG-24 or baseline JPG without advanced compression features.",
+      "technicalDescription": "Data contains the path to the problematic image file"
+    },
+    {
+      "id": "402",
+      "title": "Texture Over Budget",
+      "messageType": 2,
+      "dataType": 6,
+      "description": "Error when a single texture exceeds the memory budget for its platform tier. Consider reducing texture dimensions or using compression.",
+      "howToUse": "Reduce texture dimensions (e.g., from 1024x1024 to 512x512) or use PNG compression. Consider using power-of-2 dimensions for better performance.",
+      "technicalDescription": "Data contains the memory size exceeding budget"
+    },
+    {
+      "id": "403",
+      "title": "Total Over Budget",
+      "messageType": 2,
+      "dataType": 6,
+      "description": "Error when the combined memory of all textures exceeds platform limits. Reduce texture sizes or consolidate textures.",
+      "howToUse": "Reduce overall texture memory by: lowering texture resolutions, removing unused textures, combining textures into atlases, or implementing texture tiering with subpacks.",
+      "technicalDescription": "Data contains the total memory exceeding budget"
+    },
+    {
+      "id": "404",
+      "title": "TGA Error",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a TGA image file could not be processed. The file may be corrupted or use an unsupported TGA format.",
+      "howToUse": "Re-export the TGA file using uncompressed or RLE compression. Avoid TGA 2.0 extensions. Consider converting to PNG for better compatibility.",
+      "technicalDescription": "Data contains the path to the problematic TGA file"
+    },
+    {
+      "id": "405",
+      "title": "Atlas Over Budget",
+      "messageType": 2,
+      "dataType": 6,
+      "description": "Error when a texture that will be atlased exceeds individual size limits. Atlas textures have stricter size requirements.",
+      "howToUse": "Reduce the size of textures that will be combined into atlases. Individual atlas source textures typically need to be 256x256 or smaller.",
+      "technicalDescription": "Data contains the atlas texture size exceeding budget"
+    },
+    {
+      "id": "406",
+      "title": "Atlas Budget Warning",
+      "messageType": 1,
+      "dataType": 6,
+      "description": "Warning when total atlas texture memory is approaching platform limits. Consider optimizing texture sizes.",
+      "technicalDescription": "Data contains the atlas memory approaching limit"
+    },
+    {
+      "id": "407",
+      "title": "Atlas Budget Error",
+      "messageType": 2,
+      "dataType": 6,
+      "description": "Error when total atlas texture memory exceeds platform limits. Reduce atlas texture sizes to ensure loading on target devices.",
+      "technicalDescription": "Data contains the atlas memory exceeding limit"
+    },
+    {
+      "id": "408",
+      "title": "Empty Image",
+      "messageType": 1,
+      "dataType": 2,
+      "description": "Warning when image processing completed but returned no usable data. The image may be empty or have zero dimensions.",
+      "technicalDescription": "Data contains the path to the empty image"
+    },
+    {
+      "id": "409",
+      "title": "Invalid Tiering",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when subpack tiering configuration is invalid. Verify tier memory_tier values in manifest subpacks section.",
+      "technicalDescription": "Data contains details about the tiering configuration error"
+    },
+    {
+      "id": "410",
+      "title": "Vibrant Visuals Error",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when tiering configuration is incompatible with Vibrant Visuals mode. Check subpack configuration.",
+      "technicalDescription": "Data contains details about the vibrant visuals configuration error"
+    },
+    {
+      "id": "460",
+      "title": "Missing Texture",
+      "messageType": 1,
+      "dataType": 2,
+      "description": "Warning when a texture pack (70%+ vanilla override) is missing coverage for a vanilla texture. For complete texture packs, cover all vanilla textures.",
+      "technicalDescription": "Data contains the vanilla texture path not overridden"
+    },
+    {
+      "id": "461",
+      "title": "Incomplete Override",
+      "messageType": 2,
+      "dataType": 6,
+      "description": "Error when a pack appears to be a texture pack but overrides less than 95% of vanilla textures. Add missing texture overrides.",
+      "technicalDescription": "Data contains the override percentage"
+    },
+    {
+      "id": "462",
+      "title": "Mashup Incomplete",
+      "messageType": 2,
+      "dataType": 6,
+      "description": "Error when a mashup pack's global resource pack overrides less than 60% of vanilla textures. Mashups should provide comprehensive visual theming.",
+      "technicalDescription": "Data contains the override percentage for mashup"
+    }
+  ]
+}

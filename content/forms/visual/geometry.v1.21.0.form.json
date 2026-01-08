@@ -1,5 +1,109 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "geometry",
+  "title": "Geometry (v1.21.0)",
+  "description": "Defines a geometry document (bones, cubes, and UV mappings) with format_version 1.21.0.",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "minecraft:geometry[0].description.identifier",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines 3D model '"
+          },
+          {
+            "type": "value",
+            "field": "minecraft:geometry[0].description.identifier"
+          },
+          {
+            "type": "literal",
+            "text": "'"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:geometry[0].description.identifier",
+            "comparison": "undefined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a 3D model"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:geometry[0].bones",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "with "
+          },
+          {
+            "type": "value",
+            "field": "minecraft:geometry[0].bones.length"
+          },
+          {
+            "type": "plural",
+            "countField": "minecraft:geometry[0].bones.length",
+            "singular": [
+              {
+                "type": "literal",
+                "text": " bone"
+              }
+            ],
+            "plural": [
+              {
+                "type": "literal",
+                "text": " bones"
+              }
+            ],
+            "includeCount": false
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:geometry[0].description.texture_width",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "for texture size "
+          },
+          {
+            "type": "value",
+            "field": "minecraft:geometry[0].description.texture_width"
+          },
+          {
+            "type": "literal",
+            "text": "x"
+          },
+          {
+            "type": "value",
+            "field": "minecraft:geometry[0].description.texture_height"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "geometry",

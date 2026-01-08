@@ -1,4 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "title": "Command Overload",
+  "description": "Defines a single overload (signature) for a command in command documentation.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a command overload with header and description"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "id",

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns duration of the mob's swing/attack animation"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.base_swing_duration",
   "fields": [],
   "generated_doNotEdit": {

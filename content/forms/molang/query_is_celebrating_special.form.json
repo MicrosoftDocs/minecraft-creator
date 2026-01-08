@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is doing a special celebration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_celebrating_special",
   "fields": [],
   "description": "Returns 1.0 if the entity is doing a special celebration, else it returns 0.0. Pertains to a piglin celebrating a special hunt.",

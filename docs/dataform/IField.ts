@@ -214,6 +214,32 @@ export enum FieldDataType {
    * Represents an array of Minecraft event triggers, which can be used to specify multiple identifiers and contexts for actions that should fire.
    */
   minecraftEventTriggerArray = 42,
+  /**
+   * Represents a two dimensional string array, i.e.., string[][], e.g., [ ["a", "b"], ["c", "d"] ]
+   */
+  twoDStringArray = 43,
+  /**
+   * Represents an array where each item can be either a string or an object.
+   * This is commonly used for animation references like ["animation.walk", { "animation.jump": "query.is_jumping" }]
+   * Each item in the array can be a simple string reference OR an object with conditional properties.
+   */
+  stringOrObjectArray = 44,
+  /**
+   * Represents an array of tuples where each tuple is [string, number].
+   * This is used for weighted lists like generate_for_climates: [["medium", 1], ["cold", 2]]
+   */
+  stringNumberTupleArray = 45,
+  /**
+   * Represents a single item that can be either a string or an object (not an array).
+   * Used when a field accepts "animation_name" OR { "animation_name": "condition" }
+   */
+  stringOrObject = 46,
+  /**
+   * Represents a two dimensional array where each inner array contains Molang values (string OR number).
+   * This is used for gradient colors like: [[1.0, 0.5, 0.5, 1.0], ["variable.color", 0.5, 0.5, 1.0]]
+   * Schema: Array<Array<string | number>>
+   */
+  twoDMolangArray = 47,
 }
 
 /**
@@ -223,6 +249,29 @@ export enum FieldValueHumanify {
   none = 0,
   general = 1,
   minecraft = 2,
+}
+
+/**
+ * Describes the type of message for validator topic fields.
+ * This aligns with InfoItemType but is simplified for form field definitions.
+ */
+export enum FieldMessageType {
+  /**
+   * Informational message - neutral status or aggregated data.
+   */
+  info = "info",
+  /**
+   * Warning message - potential issue that should be reviewed.
+   */
+  warning = "warning",
+  /**
+   * Error message - a definite problem that should be fixed.
+   */
+  error = "error",
+  /**
+   * Recommendation message - a suggestion for improvement.
+   */
+  recommendation = "recommendation",
 }
 
 export default interface IField {
@@ -250,6 +299,19 @@ export default interface IField {
   description?: string;
 
   /**
+   * Optional human-readable guidance on how to use or fix issues related to this field.
+   * For validation rules, this contains tips for how to resolve validation errors or warnings.
+   */
+  howToUse?: string;
+
+  /**
+   * Optional human-readable description of technical details of the field - for example, any notes
+   * on how the field is persisted in JSON, or other technical details.
+   * In practice, this is not shown in tools but is shown in technical documentation.
+   */
+  technicalDescription?: string;
+
+  /**
    * Any additional English descriptions about notes for this data of this field definition.
    * .note vs. .note2 vs. .note3 are expected to be different "topics" for notes.
    */
@@ -267,12 +329,20 @@ export default interface IField {
   /**
    * Whether this field should be defined if it's functionally empty (e.g., an empty string or a 0 item array).
    */
-  undefinedIfEmpty?: boolean;
+  retainIfEmptyOrDefault?: boolean;
 
   /**
    * If this field references an object (e.g., has a dataType of 16 - object or 15 - object Array), this describes the structure of that object.
    */
   subForm?: IFormDefinition;
+
+  /**
+   * Used in override files to request merging of generated subForm content into the override's subForm.
+   * When set to true, the generated subForm fields will be merged into the override's existing subForm.
+   * Use this when you want to keep your override's subForm fields AND add generated fields.
+   * Contrast with having just subForm without mergeSubForm, which replaces the generated subForm entirely.
+   */
+  mergeSubForm?: boolean;
 
   /*
    * If this field references an object (e.g., has a dataType of 16 - object or 15 - object Array), this is an the identifier of that sub-form.
@@ -462,7 +532,24 @@ export default interface IField {
    */
   choices?: ISimpleReference[];
   /**
+   * Specifies the data type for additional properties in a keyed collection.
+   * When set, this generates additionalProperties schema based on the specified FieldDataType.
+   * For example, additionalPropertiesOf: FieldDataType.molangArray would generate
+   * additionalProperties with the Molang array schema.
+   */
+  additionalPropertiesOf?: FieldDataType;
+  /**
    * Specifies a set of specific samples of data values for this field.
    */
   samples?: { [path: string]: IFormSample[] };
+  /**
+   * Specifies matched values that reference project updaters. Used in mctoolsval forms
+   * to associate topic IDs with their corresponding updaters.
+   */
+  matchedValues?: { [key: string]: string };
+  /**
+   * For validator topic fields, specifies the type of message (info, warning, error, recommendation).
+   * This helps categorize the severity or nature of validation results.
+   */
+  messageType?: FieldMessageType;
 }

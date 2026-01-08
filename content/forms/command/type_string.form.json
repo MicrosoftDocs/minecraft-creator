@@ -1,0 +1,19 @@
+{
+  "id": "type_string",
+  "title": "Text String",
+  "description": "A text value. May need quotes if it contains spaces.",
+  "fields": [],
+  "formatHint": "text or \"quoted text\"",
+  "samples": {
+    "values": [
+      {
+        "path": "Simple text without spaces",
+        "content": "MyName"
+      },
+      {
+        "path": "Text with spaces (requires quotes)",
+        "content": "\"My Name With Spaces\""
+      }
+    ]
+  }
+}

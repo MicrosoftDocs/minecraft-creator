@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is doing a jump goal jump"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_jump_goal_jumping",
   "fields": [],
   "generated_doNotEdit": {

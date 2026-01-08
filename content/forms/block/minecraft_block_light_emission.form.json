@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "emits light level "
+          },
+          {
+            "type": "value",
+            "field": "integer"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Legacy component (format_version < 1.19.40). The amount of light this block emits (0-15). Use minecraft:light_emission in newer format versions.",
+  "fields": [],
+  "scalarField": {
+    "id": "integer",
+    "title": "Light Emission Value",
+    "dataType": 0
+  },
+  "title": "Block Light Emission (Legacy)",
+  "id": "minecraft:block_light_emission"
+}

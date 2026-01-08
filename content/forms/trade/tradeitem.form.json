@@ -1,5 +1,75 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "TradeItem",
+  "title": "Trade Item",
+  "description": "Defines an item used in a trade, either as input (wants) or output (gives).",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "specifies " },
+          { "type": "value", "field": "item" },
+          { "type": "literal", "text": " as a trade item" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "item",
+      "title": "Item",
+      "description": "The item identifier, e.g., 'minecraft:emerald' or 'minecraft:coal'. Can include data value suffix like 'minecraft:coal:0'.",
+      "dataType": 2,
+      "isRequired": true
+    },
+    {
+      "id": "quantity",
+      "title": "Quantity",
+      "description": "Number of this item involved in the trade. Can be a fixed number or an object with min/max for random quantity.",
+      "dataType": 0,
+      "defaultValue": 1,
+      "minValue": 1,
+      "alternates": [
+        {
+          "id": "quantity",
+          "dataType": 16,
+          "subFormId": "trade/tradeitem_quantity"
+        }
+      ]
+    },
+    {
+      "id": "price_multiplier",
+      "title": "Price Multiplier",
+      "description": "Multiplier applied to price increases when supply/demand changes. Higher values mean prices fluctuate more. Typical value is 0.05.",
+      "dataType": 3,
+      "defaultValue": 0.05
+    },
+    {
+      "id": "filters",
+      "title": "Filters",
+      "description": "Optional filters that must pass for this item to be included in the trade.",
+      "dataType": 16,
+      "subFormId": "entityfilters/filter_group"
+    },
+    {
+      "id": "functions",
+      "title": "Functions",
+      "description": "Array of functions to apply to the trade item, such as enchantments. This property was deprecated and removed in newer versions of trade tables.",
+      "dataType": 15,
+      "isDeprecated": true,
+      "versionDeprecated": "1.19.0",
+      "note": "The functions property was available in versions 1.16 through 1.18 but has been removed. Use standard item properties instead."
+    },
+    {
+      "id": "choice",
+      "title": "Choice",
+      "description": "Alternative items that can be traded. This property was deprecated and removed in newer versions of trade tables.",
+      "dataType": 15,
+      "isDeprecated": true,
+      "versionDeprecated": "1.19.0",
+      "note": "The choice property was available in versions 1.16 through 1.18 but has been removed."
+    }
+  ],
   "generated_doNotEdit": {
     "title": "TradeItem",
     "description": "TradeItem",

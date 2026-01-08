@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines behavior.stay near noteblock configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.stay_near_noteblock",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

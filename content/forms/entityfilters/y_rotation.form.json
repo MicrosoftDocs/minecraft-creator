@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "compares the entity's Y rotation against a value"
+          }
+        ]
+      }
+    ]
+  },
   "id": "y_rotation",
   "fields": [],
   "generated_doNotEdit": {

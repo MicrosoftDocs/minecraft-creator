@@ -1,0 +1,46 @@
+{
+  "id": "cmd_particle",
+  "title": "particle",
+  "description": "Creates a particle emitter",
+  "fields": [
+    {
+      "id": "effect",
+      "title": "effect",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `string` that specifies the particle to create.",
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "position",
+      "title": "position",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `vector` with `[x y z]` coordinates that specifies where to make the particle. Default: the position of the executor.",
+      "subFormId": "type_position_float",
+      "commandType": "POSITION_FLOAT"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Particle",
+      "description": "Create a `particle` emitter with a required `effect` and optional `position`.",
+      "params": [
+        {
+          "name": "effect",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

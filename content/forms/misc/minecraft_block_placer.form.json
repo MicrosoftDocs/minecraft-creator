@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines block placer component"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:block_placer",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

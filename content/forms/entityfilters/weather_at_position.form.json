@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "compares the weather at the entity's position against a value"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "tags": [
     "conditional",

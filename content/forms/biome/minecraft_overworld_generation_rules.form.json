@@ -1,8 +1,23 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses Overworld generation rules"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "generate_for_climates",
-      "description": "Can be just the name of a biome, or an array of any size. If an array, each entry can be a biome name string, or an array of size 2, where the first entry is a biome name and the second entry is a positive integer representing how that biome is weighted against other entries. If no weight is provided, a weight of 1 is used."
+      "title": "Generate For Climates",
+      "description": "Controls the world generation climate categories that this biome can spawn for. Each entry is an array of [climate_name, weight] where climate_name is 'medium', 'warm', 'lukewarm', 'cold', or 'frozen'.",
+      "dataType": 45
     },
     {
       "id": "hills_transformation",

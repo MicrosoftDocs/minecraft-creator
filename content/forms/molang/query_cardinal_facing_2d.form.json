@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns current facing of the player ignoring up/down p..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.cardinal_facing_2d",
   "fields": [],
   "generated_doNotEdit": {

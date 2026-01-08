@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "jumps around its target"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "versionIntroduced": "1.21.30",
   "generated_doNotEdit": {

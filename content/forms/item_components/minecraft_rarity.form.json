@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [{ "field": "value", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "has " },
+          { "type": "value", "field": "value" },
+          { "type": "literal", "text": " rarity" }
+        ]
+      }
+    ]
+  },
   "versionIntroduced": "1.21.30",
   "fields": [
     {

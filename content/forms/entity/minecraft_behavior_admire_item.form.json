@@ -1,5 +1,72 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "will stop to admire valuable items"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "sound_interval",
+      "title": "Sound Interval",
+      "description": "The range of time in seconds to randomly wait before playing the sound again. Can be a number, an array [min, max], or an object with range_min and range_max.",
+      "defaultValue": 0,
+      "dataType": 0,
+      "alternates": [
+        {
+          "id": "sound_interval",
+          "dataType": 15,
+          "subForm": {
+            "fields": [
+              {
+                "id": "0",
+                "dataType": 0
+              },
+              {
+                "id": "1",
+                "dataType": 0
+              }
+            ]
+          }
+        },
+        {
+          "id": "sound_interval",
+          "dataType": 16,
+          "subForm": {
+            "fields": [
+              {
+                "id": "range_min",
+                "dataType": 0,
+                "description": "Minimum interval"
+              },
+              {
+                "id": "range_max",
+                "dataType": 0,
+                "description": "Maximum interval"
+              },
+              {
+                "id": "min",
+                "dataType": 0,
+                "description": "Minimum interval"
+              },
+              {
+                "id": "max",
+                "dataType": 0,
+                "description": "Maximum interval"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
   "requires": [
     {
       "id": "minecraft:admire_item",

@@ -1,0 +1,9 @@
+{
+  "id": "type_val",
+  "title": "Value",
+  "description": "A numeric value.",
+  "fields": [],
+  "aliasOf": [
+    "type_float"
+  ]
+}

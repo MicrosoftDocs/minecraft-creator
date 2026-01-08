@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "RandomSpreadPlacement",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines random spread placement parameters for structure generation"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "RandomSpreadPlacement",
@@ -63,5 +76,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines random spread placement parameters for structure generation."
 }

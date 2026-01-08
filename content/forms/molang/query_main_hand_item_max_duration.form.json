@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns use time maximum duration for the main hand ite..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.main_hand_item_max_duration",
   "fields": [],
   "description": "Returns the use time maximum duration for the main hand item if it makes sense, else it returns 0.0. Used for item use computations.",

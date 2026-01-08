@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a crafting catalog category with item groups"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Crafting Catalog Category",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

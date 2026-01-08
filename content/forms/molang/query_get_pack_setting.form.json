@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns value of pack setting slider"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.get_pack_setting",
   "fields": [],
   "generated_doNotEdit": {

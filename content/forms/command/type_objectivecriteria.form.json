@@ -1,0 +1,16 @@
+{
+  "id": "type_objectivecriteria",
+  "title": "Objective Criteria",
+  "description": "The criteria type for a scoreboard objective.",
+  "fields": [],
+  "formatHint": "dummy (most common)",
+  "note": "Bedrock Edition only supports 'dummy' criteria",
+  "samples": {
+    "values": [
+      {
+        "path": "Manual score changes only (most common)",
+        "content": "dummy"
+      }
+    ]
+  }
+}

@@ -3,11 +3,14 @@ author: mammerla
 ms.author: mikeam
 title: "Block Culling Documentation - minecraft:rule"
 description: "Describes the minecraft:rule block culling"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Block Culling Documentation - minecraft:rule
+
+Specifies a culling rule for block face visibility.
 
 
 ## Client Block Rule Properties
@@ -40,6 +43,8 @@ ms.date: 02/11/2025
 | west | West | |
 
 ## Client Block Rule Geometry Part
+Specifies a geometry part for culling.
+
 
 #### Client Block Rule Geometry Part Properties
 

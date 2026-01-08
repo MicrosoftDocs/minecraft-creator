@@ -1,5 +1,136 @@
 {
-  "description": "A component that does damage to entities that get within range.",
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "deals "
+          },
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "damage_per_tick",
+                    "comparison": ">=",
+                    "value": 5
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "heavy"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "damage_per_tick",
+                    "comparison": ">=",
+                    "value": 3
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "moderate"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "light"
+              }
+            ]
+          },
+          {
+            "type": "literal",
+            "text": " area damage ("
+          },
+          {
+            "type": "unit",
+            "field": "damage_per_tick",
+            "unit": "damage/tick"
+          },
+          {
+            "type": "literal",
+            "text": ")"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "damage_range",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "affects entities within "
+          },
+          {
+            "type": "unit",
+            "field": "damage_range",
+            "unit": "blocks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "cause",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "inflicts "
+          },
+          {
+            "type": "value",
+            "field": "cause"
+          },
+          {
+            "type": "literal",
+            "text": " damage"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "damage_cooldown",
+            "comparison": "defined"
+          },
+          {
+            "field": "damage_cooldown",
+            "comparison": ">",
+            "value": 0
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has "
+          },
+          {
+            "type": "unit",
+            "field": "damage_cooldown",
+            "unit": "second cooldown"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "cause",
@@ -20,7 +151,7 @@
     {
       "id": "damage_range",
       "description": "How close a hostile entity must be to have the damage applied.",
-      "dataType": 0.2
+      "dataType": 0
     }
   ],
   "generated_doNotEdit": {

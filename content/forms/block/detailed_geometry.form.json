@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has custom geometry with culling and visibility"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Detailed Geometry",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -75,5 +88,6 @@
         "defaultValue": false
       }
     ]
-  }
+  },
+  "description": "References custom block geometry with advanced rendering options. Specify the geometry identifier from models in the resource pack, configure bone visibility for multi-part models, and set up block culling rules to hide faces when adjacent to other blocks. Enables complex shapes like stairs, fences, and decorative blocks."
 }

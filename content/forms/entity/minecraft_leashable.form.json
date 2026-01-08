@@ -1,5 +1,89 @@
 {
-  "title": "Leashable",
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be leashed by players"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "max_distance",
+            "comparison": "defined"
+          },
+          {
+            "field": "max_distance",
+            "comparison": ">",
+            "value": 0
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "leash breaks at "
+          },
+          {
+            "type": "unit",
+            "field": "max_distance",
+            "unit": "blocks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "soft_distance",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "starts pulling at "
+          },
+          {
+            "type": "unit",
+            "field": "soft_distance",
+            "unit": "blocks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "can_be_stolen",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be stolen by other players"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "on_leash",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "triggers events when leashed"
+          }
+        ]
+      }
+    ]
+  },
   "description": "Describes how this mob can be leashed to other items",
   "fields": [
     {
@@ -215,6 +299,21 @@
                   "rotation_adjustment": 90,
                   "soft_distance": 2,
                   "hard_distance": 4
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:leashable/",
+              "content": [
+                {
+                  "filter": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "happy_ghast"
+                  },
+                  "spring_type": "quad_dampened"
                 }
               ]
             }

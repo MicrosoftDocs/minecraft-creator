@@ -1,0 +1,220 @@
+{
+  "id": "cmd_summon",
+  "title": "summon",
+  "description": "Summons an entity.",
+  "fields": [
+    {
+      "id": "entitytype",
+      "title": "entityType",
+      "type": "string",
+      "isOptional": false,
+      "description": "An `enum` of the entity to be summoned.",
+      "subFormId": "type_entitytype",
+      "commandType": "ENTITYTYPE"
+    },
+    {
+      "id": "spawnpos",
+      "title": "spawnPos",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `vector` of `float` numbers for the position of the summoned entity.",
+      "subFormId": "type_position_float",
+      "commandType": "POSITION_FLOAT"
+    },
+    {
+      "id": "yrot",
+      "title": "yRot",
+      "type": "string",
+      "isOptional": true,
+      "description": "The `float` degrees `y` to rotate a player when teleporting.",
+      "subFormId": "type_rval",
+      "commandType": "RVAL"
+    },
+    {
+      "id": "xrot",
+      "title": "xRot",
+      "type": "string",
+      "isOptional": true,
+      "description": "The `float` degrees `x` to rotate a player when teleporting.",
+      "subFormId": "type_rval",
+      "commandType": "RVAL"
+    },
+    {
+      "id": "spawnevent",
+      "title": "spawnEvent",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `string` of the in-game event for the entity.",
+      "commandType": "ENTITYEVENTS"
+    },
+    {
+      "id": "nametag",
+      "title": "nameTag",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `string` of the entity name tag.",
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "facing",
+      "title": "facing",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "TELEPORTFACING"
+    },
+    {
+      "id": "lookatposition",
+      "title": "lookAtPosition",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_position_float",
+      "commandType": "POSITION_FLOAT"
+    },
+    {
+      "id": "lookatentity",
+      "title": "lookAtEntity",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "2",
+      "title": "Summon entity with nametag",
+      "description": "Summon an `entity` with a `nametag` into an optional `spawn position`.",
+      "params": [
+        {
+          "name": "entitytype",
+          "type": "ENTITYTYPE",
+          "isOptional": false
+        },
+        {
+          "name": "spawnpos",
+          "type": "POSITION_FLOAT",
+          "isOptional": true
+        },
+        {
+          "name": "yrot",
+          "type": "RVAL",
+          "isOptional": true
+        },
+        {
+          "name": "xrot",
+          "type": "RVAL",
+          "isOptional": true
+        },
+        {
+          "name": "spawnevent",
+          "type": "ENTITYEVENTS",
+          "isOptional": true
+        },
+        {
+          "name": "nametag",
+          "type": "ID",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Overload 3",
+      "description": "",
+      "params": [
+        {
+          "name": "entitytype",
+          "type": "ENTITYTYPE",
+          "isOptional": false
+        },
+        {
+          "name": "nametag",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "spawnpos",
+          "type": "POSITION_FLOAT",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Overload 4",
+      "description": "",
+      "params": [
+        {
+          "name": "entitytype",
+          "type": "ENTITYTYPE",
+          "isOptional": false
+        },
+        {
+          "name": "spawnpos",
+          "type": "POSITION_FLOAT",
+          "isOptional": true
+        },
+        {
+          "name": "facing",
+          "type": "TELEPORTFACING",
+          "isOptional": false
+        },
+        {
+          "name": "lookatposition",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "spawnevent",
+          "type": "ENTITYEVENTS",
+          "isOptional": true
+        },
+        {
+          "name": "nametag",
+          "type": "ID",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Overload 5",
+      "description": "",
+      "params": [
+        {
+          "name": "entitytype",
+          "type": "ENTITYTYPE",
+          "isOptional": false
+        },
+        {
+          "name": "spawnpos",
+          "type": "POSITION_FLOAT",
+          "isOptional": true
+        },
+        {
+          "name": "facing",
+          "type": "TELEPORTFACING",
+          "isOptional": false
+        },
+        {
+          "name": "lookatentity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "spawnevent",
+          "type": "ENTITYEVENTS",
+          "isOptional": true
+        },
+        {
+          "name": "nametag",
+          "type": "ID",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

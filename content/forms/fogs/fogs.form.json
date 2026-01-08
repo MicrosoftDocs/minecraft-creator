@@ -1,5 +1,136 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "fogs",
+  "title": "Fog Settings",
+  "description": "Defines fog rendering settings used by resource packs.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines fog rendering settings"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:fog_settings.description.identifier",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "identified as "
+          },
+          {
+            "type": "value",
+            "field": "minecraft:fog_settings.description.identifier"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:fog_settings.distance.air",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "configures air fog distance"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:fog_settings.distance.water",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "configures underwater fog"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:fog_settings.distance.weather",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "configures weather fog (rain/snow)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:fog_settings.distance.lava",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "configures lava fog"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:fog_settings.distance.lava_resistance",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "configures lava fog with fire resistance"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:fog_settings.distance.powder_snow",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "configures powder snow fog"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:fog_settings.volumetric",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "includes volumetric fog effects"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "fogs",

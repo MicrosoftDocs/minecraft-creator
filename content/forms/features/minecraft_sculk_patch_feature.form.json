@@ -1,5 +1,68 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:sculk_patch_feature",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spreads sculk blocks and veins across surfaces"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "charge_amount",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses "
+          },
+          {
+            "type": "value",
+            "field": "charge_amount"
+          },
+          {
+            "type": "literal",
+            "text": " charge for spreading"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "spread_attempts",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "value",
+            "field": "spread_attempts"
+          },
+          {
+            "type": "literal",
+            "text": " spread attempts per cursor"
+          }
+        ],
+        "priority": 3
+      },
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "creates Deep Dark biome decoration"
+          }
+        ],
+        "priority": 3
+      }
+    ]
+  },
   "fields": [
     {
       "id": "format_version",
@@ -66,5 +129,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Generates clusters of sculk blocks with veins spreading across surfaces, as found in Deep Dark biomes and Ancient Cities. Configure patch size, spread pattern, and catalyst generation. Creates the distinctive dark blue organic growth that defines sculk-infected underground areas."
 }

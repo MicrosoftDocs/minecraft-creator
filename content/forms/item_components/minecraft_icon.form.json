@@ -1,6 +1,18 @@
 {
-  "title": "Icon",
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "description": "Determines the icon to represent the item in the UI and elsewhere.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a custom icon"
+          }
+        ]
+      }
+    ]
+  },
   "scalarField": {
     "id": "texture",
     "title": "Texture",

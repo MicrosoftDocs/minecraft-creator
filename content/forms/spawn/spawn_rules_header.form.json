@@ -1,4 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "spawn_rules_header",
+  "title": "Spawn Rules Header",
+  "description": "Defines the header fields for a spawn_rules document.",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [{ "field": "identifier", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "identifies as " },
+          { "type": "value", "field": "identifier", "humanify": "minecraft" }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "identifier",

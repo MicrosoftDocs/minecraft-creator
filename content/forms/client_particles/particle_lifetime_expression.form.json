@@ -1,5 +1,32 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "controls particle expiration and lifetime via expressions"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "expiration_expression",
+      "title": "Expiration Expression",
+      "description": "When the expression is non-zero, the particle expires. Can be a number or Molang expression.",
+      "dataType": 34,
+      "defaultValue": 0
+    },
+    {
+      "id": "max_lifetime",
+      "title": "Max Lifetime",
+      "description": "The maximum lifetime of the particle in seconds. Can be a number or Molang expression.",
+      "dataType": 34
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_lifetime_expression",
     "title": "Client Particles Particle Lifetime Expression",
@@ -74,5 +101,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Controls individual particle lifetimes using Molang expressions. The max_lifetime sets the absolute duration limit, while expiration_expression can terminate particles early when conditions are met (like leaving a certain area). Enables dynamic particle populations that respond to game state beyond simple time-based expiration."
 }

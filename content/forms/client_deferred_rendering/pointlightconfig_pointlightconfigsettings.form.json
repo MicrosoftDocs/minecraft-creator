@@ -1,7 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "fields": [],
   "id": "minecraft:point_light_settings",
   "title": "Point Light Settings",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "controls point light colors for Vibrant Visuals" }
+        ]
+      }
+    ]
+  },
   "generatedFromSchema_doNotEdit": {
     "title": "Struct PointLightConfig PointLightConfigSettings Client Deferred Rendering",
     "description": "Struct PointLightConfig PointLightConfigSettings Client Deferred Rendering",

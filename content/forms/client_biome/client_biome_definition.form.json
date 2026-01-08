@@ -1,5 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Client Biome Definition",
+  "description": "Defines the client-side visual and audio properties of a biome. Client biomes control fog, water color, grass tint, ambient sounds, and music within a biome. They are paired with server-side biome definitions that control gameplay behavior.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines client-side biome visuals, sounds, and atmosphere"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Client Biome Definition",

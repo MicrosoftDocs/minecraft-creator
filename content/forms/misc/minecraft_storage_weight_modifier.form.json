@@ -1,5 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies storage weight modifier properties"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:storage_weight_modifier",
+  "description": "Specifies the weight of this item when stored inside another Storage Item.",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:storage_weight_modifier",

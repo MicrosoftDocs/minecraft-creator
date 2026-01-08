@@ -1,4 +1,79 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "reacts to environmental conditions"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "triggers",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has "
+          },
+          {
+            "type": "value",
+            "field": "triggers.length"
+          },
+          {
+            "type": "plural",
+            "countField": "triggers.length",
+            "singular": [
+              {
+                "type": "literal",
+                "text": " environmental trigger"
+              }
+            ],
+            "plural": [
+              {
+                "type": "literal",
+                "text": " environmental triggers"
+              }
+            ],
+            "includeCount": false
+          },
+          {
+            "type": "literal",
+            "text": " that fire events based on filter conditions"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "triggers[0].event",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "triggers events like "
+          },
+          {
+            "type": "value",
+            "field": "triggers[0].event",
+            "humanify": "minecraft"
+          },
+          {
+            "type": "literal",
+            "text": " when conditions are met"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "triggers",

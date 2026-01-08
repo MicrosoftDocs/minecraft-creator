@@ -3,11 +3,14 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:behavior.take_block"
 description: "Describes the minecraft:behavior.take_block ai behavior component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.take_block
+
+AI goal that makes entities pick up blocks from the world, like Endermen grabbing blocks to carry. Configure which blocks the entity can take and the search radius. Works with place_block behavior to create entities that relocate blocks or harvest materials from the environment.
 
 
 ## Take Block Behavior Properties

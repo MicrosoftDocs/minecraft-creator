@@ -1,5 +1,119 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "will despawn when far from players"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "despawn_from_distance.min_distance",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "starting at "
+          },
+          {
+            "type": "value",
+            "field": "despawn_from_distance.min_distance"
+          },
+          {
+            "type": "literal",
+            "text": " blocks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "despawn_from_distance.max_distance",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "and instantly at "
+          },
+          {
+            "type": "value",
+            "field": "despawn_from_distance.max_distance"
+          },
+          {
+            "type": "literal",
+            "text": " blocks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "despawn_from_chance",
+            "comparison": "==",
+            "value": false
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "with no random chance"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "despawn_from_simulation_edge",
+            "comparison": "==",
+            "value": false
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "but persists at simulation edge"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "despawn_from_distance",
+      "title": "Despawn From Distance",
+      "description": "Specifies if the 'min_distance' and 'max_distance' are used in the standard despawn rules.",
+      "dataType": 16,
+      "subForm": {
+        "id": "despawn_from_distance",
+        "title": "Despawn From Distance",
+        "fields": [
+          {
+            "id": "max_distance",
+            "title": "Max Distance",
+            "description": "Maximum distance for standard despawn rules to instantly despawn the mob.",
+            "defaultValue": 128,
+            "dataType": 0
+          },
+          {
+            "id": "min_distance",
+            "title": "Min Distance",
+            "description": "Minimum distance for standard despawn rules to try to despawn the mob.",
+            "defaultValue": 32,
+            "dataType": 0
+          }
+        ]
+      }
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:despawn",
     "title": "Despawn",

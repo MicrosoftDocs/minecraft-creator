@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Default Minecraft Item Listings"
 description: "A reference document detailing the items and damage sources used in addons for Minecraft: Bedrock Edition"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

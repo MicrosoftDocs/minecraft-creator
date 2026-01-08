@@ -1,6 +1,91 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:structure_template_feature",
   "description": "Places a structure in the world. The structure must be stored as a .mcstructure file in the `structures` subdirectory of a behavior pack. It is possible to reference structures that are part of other behavior packs, they do not need to come from the same behavior pack as this feature. Constraints can be defined to specify where the structure is allowed to be placed. During placement, the feature will search for a position within the adjustment_radius that satisfies all constraints. If none are found, the structure will not be placed. Succeeds if the structure is placed in the world. Fails if the structure fails to be placed within the world.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "places an .mcstructure file from behavior pack"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "structure_name",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "loads structure "
+          },
+          {
+            "type": "value",
+            "field": "structure_name"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "adjustment_radius",
+            "comparison": ">",
+            "value": 0
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "searches up to "
+          },
+          {
+            "type": "value",
+            "field": "adjustment_radius"
+          },
+          {
+            "type": "literal",
+            "text": " blocks for valid placement"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "facing_direction",
+            "comparison": "=",
+            "value": "random"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "randomly rotates orientation"
+          }
+        ],
+        "priority": 3
+      },
+      {
+        "visibility": [
+          {
+            "field": "constraints",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "enforces placement constraints"
+          }
+        ],
+        "priority": 3
+      }
+    ]
+  },
   "samples": {
     "example": [
       {

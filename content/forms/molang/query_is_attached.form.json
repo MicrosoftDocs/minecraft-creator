@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is attached to another entity ..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_attached",
   "fields": [],
   "generated_doNotEdit": {

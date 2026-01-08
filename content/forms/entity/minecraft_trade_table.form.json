@@ -1,4 +1,87 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can trade with players"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "display_name",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "as '"
+          },
+          {
+            "type": "value",
+            "field": "display_name"
+          },
+          {
+            "type": "literal",
+            "text": "'"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "table",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "using trades from "
+          },
+          {
+            "type": "value",
+            "field": "table"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "convert_trades_economy",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "converts trades on transformation"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "persist_trades",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "persists trades when transformed"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:trade_table",

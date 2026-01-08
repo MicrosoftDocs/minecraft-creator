@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "is a custom item" }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "description": "Refers to the item definition, which includes the 'description' and 'components' sections of the file.",
   "generated_doNotEdit": {

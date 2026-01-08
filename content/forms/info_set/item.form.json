@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "represents a single generator output entry"
+          }
+        ]
+      }
+    ]
+  },
   "id": "info_set.item",
   "title": "Info Set Item",
   "description": "Single entry from the generator output feed.",

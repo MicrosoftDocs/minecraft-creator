@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "triggers events when entities fall on it"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Entity Fall On",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

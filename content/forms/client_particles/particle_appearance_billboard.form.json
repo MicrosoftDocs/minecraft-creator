@@ -1,5 +1,79 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "controls particle billboard appearance and camera facing"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "facing_camera_mode",
+      "title": "Facing Camera Mode",
+      "description": "The facing mode of the billboard. Controls how the particle faces the camera.",
+      "dataType": 2,
+      "choices": [
+        {
+          "id": "lookat_xyz",
+          "title": "Look At XYZ"
+        },
+        {
+          "id": "lookat_y",
+          "title": "Look At Y"
+        },
+        {
+          "id": "lookat_direction",
+          "title": "Look At Direction"
+        },
+        {
+          "id": "rotate_xyz",
+          "title": "Rotate XYZ"
+        },
+        {
+          "id": "rotate_y",
+          "title": "Rotate Y"
+        },
+        {
+          "id": "direction_x",
+          "title": "Direction X"
+        },
+        {
+          "id": "direction_y",
+          "title": "Direction Y"
+        },
+        {
+          "id": "direction_z",
+          "title": "Direction Z"
+        },
+        {
+          "id": "emitter_transform_xy",
+          "title": "Emitter Transform XY"
+        },
+        {
+          "id": "emitter_transform_xz",
+          "title": "Emitter Transform XZ"
+        },
+        {
+          "id": "emitter_transform_yz",
+          "title": "Emitter Transform YZ"
+        }
+      ]
+    },
+    {
+      "id": "size",
+      "title": "Size",
+      "description": "The size of the particle billboard, as [width, height] using Molang expressions or numbers.",
+      "dataType": 35,
+      "minLength": 2,
+      "maxLength": 2
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_appearance_billboard",
     "title": "Client Particles Particle Appearance Billboard",
@@ -57,5 +131,6 @@
         "dataType": 16
       }
     ]
-  }
+  },
+  "description": "Controls how particle sprites render and orient toward the camera. The facing_camera_mode determines billboard behavior: 'lookat_xyz' always faces the camera (classic sprites), 'rotate_y' only rotates vertically (tall flames), and direction modes align with particle velocity (arrows, sparks). Size controls particle dimensions using Molang for dynamic scaling."
 }

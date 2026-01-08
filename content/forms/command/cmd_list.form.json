@@ -1,0 +1,16 @@
+{
+  "id": "cmd_list",
+  "title": "list",
+  "description": "Lists players on the server.",
+  "fields": [],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "List players",
+      "description": "List players on the server.",
+      "params": []
+    }
+  ],
+  "permissionLevel": 0,
+  "requiresCheats": false
+}

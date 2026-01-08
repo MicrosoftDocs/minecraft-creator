@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defends trusted entities from attackers"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "note": "Requires a mob to be set to a trusted relationship in order for the behavior to work properly. The `minecraft:trust` component will set the entity state to trusted.",
   "generated_doNotEdit": {

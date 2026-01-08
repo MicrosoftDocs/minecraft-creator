@@ -1,0 +1,32 @@
+{
+  "id": "cmd_clearspawnpoint",
+  "title": "clearspawnpoint",
+  "description": "Removes the spawn point for a player.",
+  "fields": [
+    {
+      "id": "player",
+      "title": "player",
+      "type": "string",
+      "isOptional": true,
+      "description": "The player whose checkpoint should be cleared. When using this command in a command block, a [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) or player name must be specified. When using this command in chat, if no target is specified, then default target is the player using the command.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Clearspawnpoint",
+      "description": "Clear the spawn point of a given player.",
+      "params": [
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is an item used in trades"
+          }
+        ]
+      }
+    ]
+  },
   "id": "TradeItem",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -88,6 +101,7 @@
           "max": 1,
           "min": 1
         },
+        "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
         "alternates": [
           {
             "id": "quantity",
@@ -126,5 +140,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Specifies an item stack used in trading—either as input (what players pay) or output (what players receive). Configure the item type, quantity range, enchantment probability, and function modifiers. Supports emeralds, resources, tools, armor, enchanted books, and any registered item as tradeable goods."
 }

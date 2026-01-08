@@ -1,5 +1,26 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can stack on top of other entities"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "value",
+      "title": "Value",
+      "description": "Whether this entity is stackable.",
+      "defaultValue": true,
+      "dataType": 1
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:is_stackable",
     "title": "Is Stackable",

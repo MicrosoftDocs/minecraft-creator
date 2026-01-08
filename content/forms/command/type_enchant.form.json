@@ -1,0 +1,43 @@
+{
+  "id": "type_enchant",
+  "title": "Enchantment",
+  "description": "An enchantment identifier.",
+  "fields": [],
+  "formatHint": "enchantment_name",
+  "samples": {
+    "values": [
+      {
+        "path": "Increased melee damage",
+        "content": "sharpness"
+      },
+      {
+        "path": "Reduced damage from all sources",
+        "content": "protection"
+      },
+      {
+        "path": "Faster mining",
+        "content": "efficiency"
+      },
+      {
+        "path": "Increased durability",
+        "content": "unbreaking"
+      },
+      {
+        "path": "Increased block drops",
+        "content": "fortune"
+      },
+      {
+        "path": "Mine blocks directly",
+        "content": "silk_touch"
+      },
+      {
+        "path": "Repair with XP",
+        "content": "mending"
+      },
+      {
+        "path": "Increased mob drops",
+        "content": "looting"
+      }
+    ]
+  }
+}

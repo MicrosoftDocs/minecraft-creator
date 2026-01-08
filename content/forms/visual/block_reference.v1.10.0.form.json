@@ -1,5 +1,20 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "block_reference",
+  "title": "Block Reference (v1.10.0)",
+  "description": "Defines a block reference object as used by resource pack client definitions (format_version 1.10.0).",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "references a block by name and its state values"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "block_reference",

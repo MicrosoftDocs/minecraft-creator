@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is using a ram attack"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_ram_attacking",
   "fields": [],
   "description": "Returns 1.0 if the entity is using a ram attack, else it returns 0.0. Applies generally to goats.",

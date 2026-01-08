@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns total number of active emitters of the callee's..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.effect_emitter_count",
   "fields": [],
   "generated_doNotEdit": {

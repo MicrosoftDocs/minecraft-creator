@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns boolean whether an entity has an item in their ..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.has_head_gear",
   "fields": [],
   "description": "Returns boolean whether an entity has an item in their head armor slot or not, or false if no entity in current context",

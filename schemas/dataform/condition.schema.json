@@ -1,0 +1,103 @@
+{
+  "$ref": "#/definitions/ICondition",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "ComparisonType": {
+      "enum": [
+        "=",
+        "<",
+        "<=",
+        ">",
+        ">=",
+        "defined",
+        "literallyDefined",
+        "nonempty",
+        "pattern"
+      ],
+      "type": "string"
+    },
+    "ICondition": {
+      "description": "Represents a condition that can be evaluated against data.\n\nConditions are used to determine visibility of fields, validity of data, and for summarizer token switching logic.",
+      "examples": [
+        {
+          "comparison": "=",
+          "field": "max",
+          "value": 100
+        },
+        {
+          "comparison": "=",
+          "field": "can_fly",
+          "value": true
+        },
+        {
+          "comparison": ">",
+          "field": "health",
+          "value": 50
+        },
+        {
+          "comparison": "defined",
+          "field": "loot_table"
+        }
+      ],
+      "markdownDescription": "Represents a condition that can be evaluated against data.\n\nConditions are used to determine visibility of fields, validity of data,\nand for summarizer token switching logic.",
+      "properties": {
+        "anyValues": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "items": {
+                "type": "boolean"
+              },
+              "type": "array"
+            }
+          ],
+          "description": "Alternative: match if the field value equals ANY of these values. Useful for enum-like checks.",
+          "markdownDescription": "Alternative: match if the field value equals ANY of these values.\nUseful for enum-like checks."
+        },
+        "comparison": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/ComparisonType"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "description": "The comparison operation to perform.",
+          "markdownDescription": "The comparison operation to perform."
+        },
+        "field": {
+          "description": "The field path to check. Supports dot notation for nested fields.",
+          "markdownDescription": "The field path to check. Supports dot notation for nested fields.",
+          "type": "string"
+        },
+        "value": {
+          "description": "The value to compare against. Supports numbers, strings, and booleans.",
+          "markdownDescription": "The value to compare against.\nSupports numbers, strings, and booleans.",
+          "type": [
+            "number",
+            "string",
+            "boolean"
+          ]
+        }
+      },
+      "required": [
+        "comparison"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://github.com/Mojang/minecraft-creator-tools/schemas/dataform/condition.schema.json",
+  "$comment": "Generated from src/dataform/ICondition.ts - do not edit manually"
+}

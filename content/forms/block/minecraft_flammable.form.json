@@ -1,4 +1,82 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "boolean",
+            "comparison": "equals",
+            "compareTo": false
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "cannot catch fire from neighbors"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "boolean",
+            "comparison": "equals",
+            "compareTo": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is flammable (default values)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "catch_chance_modifier",
+            "comparison": "defined"
+          },
+          {
+            "field": "destroy_chance_modifier",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is flammable (catch: "
+          },
+          {
+            "type": "value",
+            "field": "catch_chance_modifier"
+          },
+          {
+            "type": "literal",
+            "text": ", destroy: "
+          },
+          {
+            "type": "value",
+            "field": "destroy_chance_modifier"
+          },
+          {
+            "type": "literal",
+            "text": ")"
+          }
+        ]
+      },
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is flammable"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Describes the flammable properties for this block. If set to true, default values are used (catch: 5, destroy: 20, same as planks). If set to false, or if this component is omitted, the block will not be able to catch on fire naturally from neighbors, but it can still be directly ignited.",
   "fields": [],
   "scalarField": {
     "id": "boolean",

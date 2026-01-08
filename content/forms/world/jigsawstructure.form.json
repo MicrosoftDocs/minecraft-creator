@@ -1,5 +1,154 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a procedurally-generated jigsaw structure"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "start_pool",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "starts from pool: "
+          },
+          {
+            "type": "value",
+            "field": "start_pool"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "max_depth",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "generates up to "
+          },
+          {
+            "type": "value",
+            "field": "max_depth"
+          },
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "max_depth",
+                    "comparison": ">=",
+                    "value": 10
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": " levels deep (large structure)"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "max_depth",
+                    "comparison": ">=",
+                    "value": 5
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": " levels deep (medium structure)"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": " levels deep (compact structure)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "biome_filters",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spawns in specific biomes"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "heightmap_projection",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses "
+          },
+          {
+            "type": "value",
+            "field": "heightmap_projection"
+          },
+          {
+            "type": "literal",
+            "text": " heightmap projection"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "terrain_adaptation",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "adapts terrain using "
+          },
+          {
+            "type": "value",
+            "field": "terrain_adaptation"
+          },
+          {
+            "type": "literal",
+            "text": " mode"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
+  "description": "A Jigsaw Structure is a group of Structure Templates that make up a larger structure. Jigsaw Structures are placed during world generation.",
   "generatedFromSchema_doNotEdit": {
     "id": "JigsawStructure",
     "title": "World JigsawStructure",

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns maximum trade tier of the entity if it can perf..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.max_trade_tier",
   "fields": [],
   "description": "Returns the maximum trade tier of the entity if it can perform trades, else it returns 0.0",

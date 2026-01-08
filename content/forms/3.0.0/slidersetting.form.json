@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "3.0.0.SliderSetting",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a slider setting with min, max, step, and default values"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "3.0.0.SliderSetting",
@@ -39,6 +52,12 @@
         "id": "step",
         "title": "Step",
         "dataType": 3,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ],
         "isRequired": true
       },
       {
@@ -72,5 +91,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "A numeric slider setting that appears in the pack's world settings UI. Allows players to adjust values like 'Difficulty Multiplier' or 'Spawn Rate' within defined min/max bounds. Scripts can read the chosen value at runtime."
 }

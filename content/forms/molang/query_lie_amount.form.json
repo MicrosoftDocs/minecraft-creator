@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns lie down amount for the entity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.lie_amount",
   "fields": [],
   "description": "Returns the lie down amount for the entity. Applies generally to the panda.",

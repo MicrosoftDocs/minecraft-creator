@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:behavior.move_to_water"
 description: "Describes the minecraft:behavior.move_to_water ai behavior component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -10,6 +11,9 @@ ms.date: 02/11/2025
 # Entity Documentation - minecraft:behavior.move_to_water
 
 Allows the mob to move back into water when on land.
+
+> [!Note]
+> This behavior is used by aquatic and semi-aquatic mobs like axolotl, dolphin, and pregnant frogs. The entity will search for and move toward water blocks when on land.
 
 
 ## Move To Water Behavior Properties

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Feature Documentation - minecraft:ore_feature"
 description: "Describes the minecraft:ore_feature feature type"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -91,6 +92,30 @@ At Oil deposits in the sand:
         "places_block": "example:oil_block",
         "may_replace": [
           "minecraft:sand"
+        ]
+      }
+    ]
+  }
+}
+```
+
+At Using block descriptor objects with name property (vanilla format): 
+
+```json
+"minecraft:ore_feature": {
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "example:coal_ore_feature"
+    },
+    "count": 17,
+    "replace_rules": [
+      {
+        "places_block": "minecraft:coal_ore",
+        "may_replace": [
+          {
+            "name": "minecraft:stone"
+          }
         ]
       }
     ]

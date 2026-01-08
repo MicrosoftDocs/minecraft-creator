@@ -1,6 +1,50 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:rect_layout",
   "isInternal": true,
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "arranges features in a rectangular grid pattern"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "feature_areas",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines "
+          },
+          {
+            "type": "value",
+            "field": "feature_areas.length"
+          },
+          {
+            "type": "literal",
+            "text": " feature areas in the layout"
+          }
+        ]
+      },
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "useful for repeating patterns like orchards or fields"
+          }
+        ],
+        "priority": 3
+      }
+    ]
+  },
   "fields": [
     {
       "id": "format_version",
@@ -65,5 +109,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Arranges features in a rectangular grid pattern during world generation. Configure the grid dimensions, spacing, and which features to place at each position. Useful for orderly structures like crop fields, orchard trees, gravestones, or any repeating pattern that should fill a defined area."
 }

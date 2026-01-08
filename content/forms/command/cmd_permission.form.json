@@ -1,0 +1,34 @@
+{
+  "id": "cmd_permission",
+  "title": "permission",
+  "description": "Reloads and applies permissions. This command is for use on a dedicated server only.",
+  "fields": [
+    {
+      "id": "action",
+      "title": "action",
+      "type": "string",
+      "isOptional": false,
+      "description": "Either `list` to list the permissions, `set` to set their permissions, or `reload` to reload a server's permissions file.",
+      "commandType": "PERMISSIONSACTION"
+    }
+  ],
+  "aliases": [
+    "ops"
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Permission",
+      "description": "Call a `permission` `action`.",
+      "params": [
+        {
+          "name": "action",
+          "type": "PERMISSIONSACTION",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 4,
+  "requiresCheats": true
+}

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:damage_sensor"
 description: "Describes the minecraft:damage_sensor entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -18,7 +19,8 @@ Defines what events to call when this entity is damaged by specific entities or 
 |:----------|:-------------|:----|:-----------|:------------- |
 | deals_damage | false | [Deals Damage](#deals-damage-choices) choices | Defines how received damage affects the entity. |  | 
 | deals_damage (Alternate 1) | false | Boolean true/false |  |  | 
-| triggers | *not set* | [Triggers](#triggers) item | List of triggers with the events to call when taking specific kinds of damage." | Allay: `[{"on_damage":{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"test":"is_owner","subject":"other"}]}},"deals_damage":"no"}]`, Armadillo: `{"on_damage":{"filters":{"any_of":[{"test":"is_family","subject":"other","value":"mob"},{"test":"is_family","subject":"other","value":"player"}]},"event":"minecraft:threat_detected"}}` | 
+| triggers (Damage Sensor Trigger) | *not set* | [Triggers](#triggers) item | List of triggers with the events to call when taking specific kinds of damage. | Allay: `[{"on_damage":{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"test":"is_owner","subject":"other"}]}},"deals_damage":"no"}]`, Armadillo: `{"on_damage":{"filters":{"any_of":[{"test":"is_family","subject":"other","value":"mob"},{"test":"is_family","subject":"other","value":"player"}]},"event":"minecraft:threat_detected"}}`, `[{"on_damage":{"filters":{"any_of":[{"test":"is_family","subject":"other","value":"mob"},{"test":"is_family","subject":"other","value":"player"}]},"event":"minecraft:threat_detected"},"damage_multiplier":0.5,"damage_modifier":-1},{"damage_multiplier":0.5,"damage_modifier":-1}]` | 
+| triggers (Alternate 1) | *not set* | Object |  |  | 
 
 ### Deals Damage choices
 
@@ -29,19 +31,20 @@ Defines what events to call when this entity is damaged by specific entities or 
 | no_but_side_effects_apply | No But Side Effects Apply | Received damage is not applied to the entity, but the side effects of the attack are. This means that the attacker's weapon loses durability, enchantment side effects are applied, and so on.|
 
 ## Triggers
-List of triggers with the events to call when taking specific kinds of damage.".
 
-
-#### Triggers Properties
+#### Damage Sensor Trigger Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | cause | none | String | Type of damage that triggers the events. |  | 
-| damage_modifier | 0 | Decimal number | A modifier that adds/removes to the base damage received from the specified damage cause. It does not reduce damage to less than 0. |  | 
-| damage_multiplier | 1 | Decimal number | A multiplier that modifies the base damage received from the specified damage cause. If "deals_damage" is true the multiplier can only reduce the damage the entity will take to a minimum of 1. |  | 
-| deals_damage | false | Boolean true/false | Defines how received damage affects the entity:<br>           <br>- "yes", received damage is applied to the entity.<br>           <br>- "no", received damage is not applied to the entity.<br>           <br>- "no_but_side_effects_apply", received damage is not applied to the entity, but the side effects of the attack are. This means that the attacker's weapon loses durability, enchantment side effects are applied, and so on. |  | 
-| on_damage | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Defines which entities the trigger applies to, and which, if any, event to emit when damaged. |  | 
-| on_damage_sound_event | *not set* | Minecraft Event Reference | Defines what sound to play, if any, when the "on_damage" filters are met. |  | 
+| damage_modifier | 0 | Decimal number | A modifier that adds/removes to the base damage received from the specified damage cause. |  | 
+| damage_multiplier | 1 | Decimal number | A multiplier that modifies the base damage received from the specified damage cause. |  | 
+| deals_damage | false | Boolean true/false | Defines how received damage affects the entity. |  | 
+| deals_damage (Alternate 1) | *not set* | String |  |  | 
+| event | *not set* | String | Event to emit when the trigger conditions are met. |  | 
+| filters | *not set* | Minecraft filter | Filter conditions for when this trigger applies. |  | 
+| on_damage | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Defines which entities the trigger applies to, and which event to emit when damaged. |  | 
+| on_damage_sound_event | *not set* | Minecraft Event Reference | Defines what sound to play when the on_damage filters are met. |  | 
 
 ## Samples
 

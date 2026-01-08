@@ -1,0 +1,50 @@
+{
+  "id": "cmd_tell",
+  "title": "tell",
+  "description": "Sends a private message to one or more players.",
+  "fields": [
+    {
+      "id": "target",
+      "title": "target",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player to tell.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "message",
+      "title": "message",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `string` of the message.",
+      "subFormId": "type_message_root",
+      "commandType": "MESSAGE_ROOT"
+    }
+  ],
+  "aliases": [
+    "w",
+    "msg"
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Tell",
+      "description": "`Tell` a target `player` a `message`.",
+      "params": [
+        {
+          "name": "target",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "message",
+          "type": "MESSAGE_ROOT",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 0,
+  "requiresCheats": false
+}

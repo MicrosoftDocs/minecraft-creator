@@ -1,6 +1,80 @@
 {
-  "title": "Max Stack Size",
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "description": "Determines how many of an item can be stacked together.",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "value",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "value",
+                    "comparison": "==",
+                    "value": 64
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "stacks normally (64)"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "value",
+                    "comparison": "==",
+                    "value": 1
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "does not stack"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "value",
+                    "comparison": "==",
+                    "value": 16
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "stacks in small quantities (16)"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "stacks up to "
+              },
+              {
+                "type": "value",
+                "field": "value"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "scalarFieldUpgradeName": "value",
   "fields": [
     {

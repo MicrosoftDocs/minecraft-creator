@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines the block color when rendered on maps"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Map Color",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

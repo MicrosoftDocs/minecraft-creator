@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines the root crafting catalog structure"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Crafting Catalog Document",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

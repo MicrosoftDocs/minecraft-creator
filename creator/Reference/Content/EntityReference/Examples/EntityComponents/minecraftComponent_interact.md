@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:interact"
 description: "Describes the minecraft:interact entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -24,7 +25,8 @@ Defines interactions with this entity.
 | health_amount | 0 | Integer number | The amount of health this entity will recover or lose when interacting with this item. Negative values will harm the entity. |  | 
 | hurt_item | 0 | Integer number | The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability. |  | 
 | interact_text | *not set* | String | Text to show when the player is able to interact in this way with this entity when playing with touch-screen controls. |  | 
-| interactions | *not set* | Array of [Interactions](#interactions) items |  | Sheepomelon: `[{"cooldown":2.5,"use_item":false,"hurt_item":1,"spawn_items":{"table":"loot_tables/entities/sheepomelon_shear.json"},"play_sounds":"shear","interact_text":"action.interact.shear","on_interact":{"filters":{"all_of":[{"test":"has_equipment","subject":"other","domain":"hand","value":"shears"},{"test":"is_family","subject":"other","value":"player"},{"test":"has_component","operator":"!=","value":"minecraft:is_baby"}]},"event":"minecraft:on_sheared","target":"self"}}]` | 
+| interactions (Interactions) | *not set* | Array of [Interactions](#interactions) items | The list of interactions for this entity. | Sheepomelon: `[{"cooldown":2.5,"use_item":false,"hurt_item":1,"spawn_items":{"table":"loot_tables/entities/sheepomelon_shear.json"},"play_sounds":"shear","interact_text":"action.interact.shear","on_interact":{"filters":{"all_of":[{"test":"has_equipment","subject":"other","domain":"hand","value":"shears"},{"test":"is_family","subject":"other","value":"player"},{"test":"has_component","operator":"!=","value":"minecraft:is_baby"}]},"event":"minecraft:on_sheared","target":"self"}}]`, Frost Moose: `[{"play_sounds":"armor.equip_generic","on_interact":{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"test":"has_equipment","domain":"hand","subject":"other","value":"chest"}]},"event":"minecraft:on_chest","target":"self"},"use_item":true,"interact_text":"action.interact.attachchest"}]` | 
+| interactions (Alternate 1) | *not set* | Object |  |  | 
 
 ## Interactions
 
@@ -32,25 +34,24 @@ Defines interactions with this entity.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| cooldown | *not set* | Decimal number |  | Sheepomelon: `2.5` | 
-| give_item | *not set* | String |  | Allay: `true` | 
-| hurt_item | *not set* | Decimal number |  | Sheepomelon: `1` | 
-| interact_text | *not set* | String |  | Sheepomelon: `"action.interact.shear"` | 
-| on_interact | *not set* | String |  | Sheepomelon: `{"filters":{"all_of":[{"test":"has_equipment","subject":"other","domain":"hand","value":"shears"},{"test":"is_family","subject":"other","value":"player"},{"test":"has_component","operator":"!=","value":"minecraft:is_baby"}]},"event":"minecraft:on_sheared","target":"self"}` | 
+| give_item | false | Boolean true/false | If true, the player can give items to the entity during interaction. | Allay: `true` | 
+| hurt_item | *not set* | Decimal number |  |  | 
+| interact_text | *not set* | String |  | Allay: `"action.interact.allay"` | 
+| on_interact | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to fire when the interaction occurs. Can be a string event name or an object with filters. | Allay: `{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"test":"is_sneak_held","subject":"other","value":false}]}}` | 
 | particle_on_start | *not set* | Array of [Particle On Start](#particle-on-start) items | Particle effect that will be triggered at the start of the interaction. |  | 
 | particle_on_start | *not set* | [Particle On Start](#particle-on-start) item |  |  | 
 | play_sounds | *not set* | String | List of sounds to play when the interaction occurs. |  | 
-| play_sounds | *not set* | String |  | Sheepomelon: `"shear"` | 
+| play_sounds | *not set* | String |  |  | 
 | repair_entity_item | *not set* | Array of [Repair Entity Item](#repair-entity-item) items | Allows to repair one of the entity's items. |  | 
 | spawn_entities | *not set* | String | List of entities to spawn when the interaction occurs. |  | 
 | spawn_items | *not set* | Array of [Spawn Items](#spawn-items) items | Loot table with items to drop on the ground upon successful interaction. |  | 
-| spawn_items | *not set* | [Spawn Items](#spawn-items) item |  | Sheepomelon: `{"table":"loot_tables/entities/sheepomelon_shear.json"}` | 
+| spawn_items | *not set* | [Spawn Items](#spawn-items) item |  |  | 
 | swing | false | Boolean true/false | If true, the player will do the 'swing' animation when interacting with this entity. |  | 
-| swing | *not set* | String |  |  | 
-| take_item | *not set* | String |  | Allay: `true` | 
+| swing | false | Boolean true/false | If true, the player will do the 'swing' animation when interacting with this entity. |  | 
+| take_item | false | Boolean true/false | If true, the player can take items from the entity during interaction. | Allay: `true` | 
 | transform_to_item | *not set* | String | The item used will transform to this item upon successful interaction. Format: itemName:auxValue |  | 
 | use_item | false | Boolean true/false | If true, the interaction will use an item. |  | 
-| use_item | *not set* | String |  | Sheepomelon: `false` | 
+| use_item | false | Boolean true/false | If true, the interaction will use an item. |  | 
 | vibration | entity_interact | String | Vibration to emit when the interaction occurs. Admitted values are none (no vibration emitted), shear, entity_die, entity_act, entity_interact. |  | 
 
 ## Particle On Start

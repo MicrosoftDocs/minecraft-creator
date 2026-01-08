@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "indexes file paths for lookup and search"
+          }
+        ]
+      }
+    ]
+  },
   "id": "info_set.index",
   "title": "Info Set Index",
   "description": "Lookup map that correlates files discovered during analysis.",

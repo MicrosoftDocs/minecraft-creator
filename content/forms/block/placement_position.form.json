@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has placement position states"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Placement Position",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

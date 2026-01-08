@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines spawn playerinvillagefilter settings"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Spawn PlayerInVillageFilter",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -17,5 +30,6 @@
         "dataType": 0
       }
     ]
-  }
+  },
+  "description": "Defines spawn playerinvillagefilter settings."
 }

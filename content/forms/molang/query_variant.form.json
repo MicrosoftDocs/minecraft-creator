@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns entity's variant index"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.variant",
   "fields": [],
   "description": "Returns the entity's variant index. Relates to `variant` component.",

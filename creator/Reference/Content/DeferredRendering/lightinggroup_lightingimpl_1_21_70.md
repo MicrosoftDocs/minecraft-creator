@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Deferred Rendering Documentation - minecraft:lightinggroup_lightingimpl_1_21_70"
 description: "Describes the minecraft:lightinggroup_lightingimpl_1_21_70 deferred rendering"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

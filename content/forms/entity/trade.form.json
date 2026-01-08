@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a trade offer available"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Trade",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -96,6 +109,7 @@
                 "max": 1,
                 "min": 1
               },
+              "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
               "alternates": [
                 {
                   "id": "quantity",
@@ -265,6 +279,7 @@
                 "max": 1,
                 "min": 1
               },
+              "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
               "alternates": [
                 {
                   "id": "quantity",
@@ -338,5 +353,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Defines a single trade offer an entity can present to players. Specifies the input items the player must provide and the output item received in exchange. Configure trade counts, XP rewards, and price adjustments. Used in villager-style trading systems with the minecraft:economy_trade_table component."
 }

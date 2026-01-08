@@ -1,4 +1,16 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [{ "field": "tint", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "has grass tint " },
+          { "type": "value", "field": "tint" }
+        ]
+      }
+    ]
+  },
   "id": "grass",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

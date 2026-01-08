@@ -1,0 +1,212 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a complete UI screen layout"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "ui_screen",
+  "title": "UI Screen",
+  "description": "A UI screen definition file for Minecraft Bedrock Edition. UI screens define complete interface layouts including namespaces, element definitions, and global variables.",
+  "fields": [
+    {
+      "dataType": 2,
+      "id": "namespace",
+      "title": "Namespace",
+      "description": "The namespace for this UI screen. Used to reference elements from other UI files using the 'namespace.element_name' syntax.",
+      "isRequired": false
+    }
+  ],
+  "note": "UI screen files use a namespace-based structure where each JSON key (except 'namespace') defines a UI element. Elements can inherit from other elements using the '@' syntax (e.g., 'my_button@common.button'). Variables are defined with '$' prefix and can be overridden.",
+  "customField": {
+    "dataType": 16,
+    "id": "[a-zA-Z0-9_]+",
+    "title": "UI Element",
+    "description": "A UI element definition. The key is the element name, which can include @base_element syntax for inheritance.",
+    "isRequired": false,
+    "subForm": {
+      "id": "ui_element_inline",
+      "fields": [
+        {
+          "dataType": 4,
+          "id": "type",
+          "title": "Type",
+          "description": "The type of UI element.",
+          "isRequired": false,
+          "choices": [
+            "panel",
+            "stack_panel",
+            "image",
+            "label",
+            "button",
+            "toggle",
+            "slider",
+            "slider_box",
+            "edit_box",
+            "grid",
+            "scroll_view",
+            "scrollbar_box",
+            "dropdown",
+            "input_panel",
+            "screen",
+            "custom",
+            "factory",
+            "selection_wheel"
+          ]
+        },
+        {
+          "dataType": 2,
+          "id": "renderer",
+          "title": "Renderer",
+          "description": "The renderer to use for custom element types.",
+          "isRequired": false
+        },
+        {
+          "dataType": 0,
+          "id": "layer",
+          "title": "Layer",
+          "description": "The rendering layer for this element.",
+          "isRequired": false
+        },
+        {
+          "dataType": 32,
+          "id": "size",
+          "title": "Size",
+          "description": "The size of the UI element as [width, height].",
+          "isRequired": false
+        },
+        {
+          "dataType": 32,
+          "id": "offset",
+          "title": "Offset",
+          "description": "The offset from anchor position as [x, y].",
+          "isRequired": false
+        },
+        {
+          "dataType": 4,
+          "id": "anchor_from",
+          "title": "Anchor From",
+          "description": "Parent anchor point.",
+          "isRequired": false,
+          "choices": [
+            "top_left",
+            "top_middle",
+            "top_right",
+            "left_middle",
+            "center",
+            "right_middle",
+            "bottom_left",
+            "bottom_middle",
+            "bottom_right"
+          ]
+        },
+        {
+          "dataType": 4,
+          "id": "anchor_to",
+          "title": "Anchor To",
+          "description": "Element anchor point.",
+          "isRequired": false,
+          "choices": [
+            "top_left",
+            "top_middle",
+            "top_right",
+            "left_middle",
+            "center",
+            "right_middle",
+            "bottom_left",
+            "bottom_middle",
+            "bottom_right"
+          ]
+        },
+        {
+          "dataType": 4,
+          "id": "orientation",
+          "title": "Orientation",
+          "description": "Stack panel layout direction.",
+          "isRequired": false,
+          "choices": [
+            "horizontal",
+            "vertical"
+          ]
+        },
+        {
+          "dataType": 2,
+          "id": "texture",
+          "title": "Texture",
+          "description": "Texture path for image elements.",
+          "isRequired": false
+        },
+        {
+          "dataType": 32,
+          "id": "color",
+          "title": "Color",
+          "description": "Color tint as [r, g, b] with values 0.0-1.0.",
+          "isRequired": false
+        },
+        {
+          "dataType": 3,
+          "id": "alpha",
+          "title": "Alpha",
+          "description": "Opacity from 0.0 to 1.0.",
+          "isRequired": false
+        },
+        {
+          "dataType": 1,
+          "id": "visible",
+          "title": "Visible",
+          "description": "Whether this element is visible.",
+          "isRequired": false
+        },
+        {
+          "dataType": 2,
+          "id": "text",
+          "title": "Text",
+          "description": "Text content for label elements.",
+          "isRequired": false
+        },
+        {
+          "dataType": 15,
+          "id": "controls",
+          "title": "Controls",
+          "description": "Child elements.",
+          "isRequired": false
+        },
+        {
+          "dataType": 15,
+          "id": "bindings",
+          "title": "Bindings",
+          "description": "Data bindings for connecting to game data.",
+          "isRequired": false
+        },
+        {
+          "dataType": 15,
+          "id": "button_mappings",
+          "title": "Button Mappings",
+          "description": "Input button to action mappings.",
+          "isRequired": false
+        },
+        {
+          "dataType": 17,
+          "id": "anims",
+          "title": "Animations",
+          "description": "Animation references.",
+          "isRequired": false
+        },
+        {
+          "dataType": 1,
+          "id": "clips_children",
+          "title": "Clips Children",
+          "description": "Whether to clip child elements to bounds.",
+          "isRequired": false
+        }
+      ]
+    }
+  }
+}

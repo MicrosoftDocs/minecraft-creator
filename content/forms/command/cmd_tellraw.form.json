@@ -1,0 +1,46 @@
+{
+  "id": "cmd_tellraw",
+  "title": "tellraw",
+  "description": "Sends a JSON message to players.",
+  "fields": [
+    {
+      "id": "target",
+      "title": "target",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player to tell.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "raw_json_message",
+      "title": "raw json message",
+      "type": "string",
+      "isOptional": false,
+      "description": "`JSON` that specifies the message to send.",
+      "subFormId": "type_json_object",
+      "commandType": "JSON_OBJECT"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Tell raw",
+      "description": "`Tell` a target `player` a JSON `message`.",
+      "params": [
+        {
+          "name": "target",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "raw_json_message",
+          "type": "JSON_OBJECT",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": false
+}

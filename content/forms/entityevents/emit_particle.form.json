@@ -1,4 +1,5 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "fields": [
     {
       "id": "particle",
@@ -6,7 +7,18 @@
       "dataType": 2
     }
   ],
-  "tags": ["entityevent"],
+  "tags": [
+    "entityevent"
+  ],
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "emits a particle effect from the entity" }
+        ]
+      }
+    ]
+  },
   "description": "Emits a particle specified via the particle attribute.",
   "id": "emit_particle",
   "versionIntroduced": "1.21.50",

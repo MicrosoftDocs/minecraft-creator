@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Items Documentation - minecraft:kinetic_weapon"
 description: "Describes the minecraft:kinetic_weapon item component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -27,6 +28,8 @@ Allows an item to deal kinetic damage and its effects. This happens every tick w
 | reach | {"max":3,"min":0} | [Reach](#item-components-floatrange) item | Defines the range (in blocks) along the user's view vector where entities can be hit. Only targets within this distance are considered. Block collisions between the user and target block damage and its effects. |  | 
 
 ## Item Components FloatRange
+Has minimum and maximum float values.
+
 
 #### Item Components FloatRange Properties
 

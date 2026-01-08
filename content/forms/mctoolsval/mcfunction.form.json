@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates mcfunction command syntax and formatting"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "mcfunction",
+  "title": "MC Functions",
+  "description": "Validates .mcfunction files for correct command syntax and formatting. MCFunction files contain Minecraft commands that execute in behavior packs.",
+  "fields": [
+    {
+      "id": "102",
+      "title": "Invalid Syntax",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a command in the .mcfunction file has invalid syntax. Verify the command follows Minecraft Bedrock Edition command format and all arguments are correct.",
+      "howToUse": "Check your command syntax against the Minecraft Bedrock command reference at docs.microsoft.com. Common issues include misspelled commands, wrong argument order, or using Java Edition syntax.",
+      "technicalDescription": "Data contains the invalid command text"
+    },
+    {
+      "id": "103",
+      "title": "Leading Slash",
+      "messageType": 1,
+      "dataType": 2,
+      "description": "Warning when a command line starts with a forward slash (/). Unlike in-game chat, .mcfunction files should not have leading slashes on commands.",
+      "howToUse": "Remove the leading slash (/) from the command. In .mcfunction files, commands should start directly with the command name, e.g., 'say Hello' instead of '/say Hello'.",
+      "technicalDescription": "Data contains the command with leading slash"
+    }
+  ]
+}

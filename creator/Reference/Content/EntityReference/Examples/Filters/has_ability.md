@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Filters Documentation - minecraft:has_ability"
 description: "Describes the minecraft:has_ability entity filter element"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "can resupply its trades" }
+        ]
+      }
+    ]
+  },
   "title": "Trade Resupply",
   "description": "Resupplies an entity's trade.",
   "fields": []

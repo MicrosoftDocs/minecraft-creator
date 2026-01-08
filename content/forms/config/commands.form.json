@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines command permission levels and access settings"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "commands",
@@ -16,5 +29,6 @@
         "dataType": 24
       }
     ]
-  }
+  },
+  "description": "Defines command permission levels and access settings."
 }

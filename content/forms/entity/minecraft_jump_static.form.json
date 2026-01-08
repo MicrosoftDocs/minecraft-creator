@@ -1,4 +1,93 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "jump_power",
+            "comparison": ">=",
+            "value": 0.6
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has powerful jumping ability ("
+          },
+          {
+            "type": "value",
+            "field": "jump_power"
+          },
+          {
+            "type": "literal",
+            "text": ", higher than standard)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "jump_power",
+            "comparison": "<",
+            "value": 0.42
+          },
+          {
+            "field": "jump_power",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has weak jumping ability ("
+          },
+          {
+            "type": "value",
+            "field": "jump_power"
+          },
+          {
+            "type": "literal",
+            "text": ", lower than standard)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "jump_power",
+            "comparison": ">=",
+            "value": 0.42
+          },
+          {
+            "field": "jump_power",
+            "comparison": "<",
+            "value": 0.6
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has standard jumping ability"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "jump_power",
+            "comparison": "undefined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can jump (standard height)"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:jump.static",
@@ -8,7 +97,7 @@
       {
         "id": "jump_power",
         "title": "Jump Power",
-        "description": "The initial vertical velocity for the jump",
+        "description": "The initial vertical velocity for the jump.",
         "defaultValue": 0.42,
         "dataType": 3,
         "samples": {

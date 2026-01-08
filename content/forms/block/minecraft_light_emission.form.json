@@ -1,4 +1,22 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "emits light level "
+          },
+          {
+            "type": "value",
+            "field": "integer"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "The amount of light this block will emit in a range of 0-15. Higher value means more light will be emitted. Reference values: torch (14), glowstone (15), redstone torch (7), soul torch (10). Monsters cannot spawn on blocks with light level 8 or higher.",
   "fields": [],
   "scalarField": {
     "id": "integer",

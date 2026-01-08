@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "rounds a value down to the nearest integer"
+          }
+        ]
+      }
+    ]
+  },
   "id": "`math.floor(value)`",
   "fields": [],
   "generated_doNotEdit": {

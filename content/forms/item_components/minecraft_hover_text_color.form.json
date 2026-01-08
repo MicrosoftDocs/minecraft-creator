@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "description": "Determines the color of the item name when hovering over it.",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [{ "field": "value", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "has " },
+          { "type": "value", "field": "value" },
+          { "type": "literal", "text": " hover text" }
+        ]
+      }
+    ]
+  },
   "scalarFieldUpgradeName": "value",
   "fields": [
     {

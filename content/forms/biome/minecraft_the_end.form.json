@@ -1,4 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "description": "Marks a biome as using End dimension terrain generation. Biomes with this component will use the characteristic End terrain style with end stone and void generation.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is an End dimension biome"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:the_end",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

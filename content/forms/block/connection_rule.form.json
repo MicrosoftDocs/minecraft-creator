@@ -1,0 +1,62 @@
+{
+  "id": "Connection Rule",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Connection Rule",
+    "title": "Block Connection Rule",
+    "description": "Defines whether other blocks such as fences, walls, bars, and glass panes are allowed to connect to this block.",
+    "fields": [
+      {
+        "id": "accepts_connections_from",
+        "title": "Connection Type",
+        "description": "The type of block allowed to connect to this block. Note that the \"only_fences\" option allows connections from all Vanilla fences excluding NetherBrick.",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "all",
+            "title": "All"
+          },
+          {
+            "id": "none",
+            "title": "None"
+          },
+          {
+            "id": "only_fences",
+            "title": "Only fences"
+          }
+        ],
+        "defaultValue": "all"
+      },
+      {
+        "id": "enabled_directions",
+        "title": "Enabled Directions",
+        "description": "The cardinal directions that connection is enabled for. Note that if \"none\" is specified for \"accepts_connections_from\", this field will not be used.",
+        "dataType": 17,
+        "defaultValue": [
+          "south",
+          "north",
+          "east",
+          "west"
+        ],
+        "choices": [
+          {
+            "id": "east",
+            "title": "East"
+          },
+          {
+            "id": "north",
+            "title": "North"
+          },
+          {
+            "id": "south",
+            "title": "South"
+          },
+          {
+            "id": "west",
+            "title": "West"
+          }
+        ]
+      }
+    ]
+  }
+}

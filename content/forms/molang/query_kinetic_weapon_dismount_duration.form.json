@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns \"max_duration\" value of \"dismount_conditions\" f..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.kinetic_weapon_dismount_duration",
   "fields": [],
   "generated_doNotEdit": {

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines box configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Box",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -72,5 +85,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines box configuration."
 }

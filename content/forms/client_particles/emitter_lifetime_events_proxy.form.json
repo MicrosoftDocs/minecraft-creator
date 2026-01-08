@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "controls emitter lifetime events like creation and expiration"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_lifetime_events proxy",
@@ -60,5 +73,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Controls emitter lifetime events like creation and expiration."
 }

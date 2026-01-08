@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns time in seconds in the current animation contro..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.state_time",
   "fields": [],
   "description": "Returns the time in seconds in the current animation controller state. Only valid in an animation controller.",

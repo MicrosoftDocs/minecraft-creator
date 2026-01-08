@@ -3,14 +3,17 @@ author: mammerla
 ms.author: mikeam
 title: "Visuals Documentation - minecraft:actor_resource_definition.v1.8.0"
 description: "Describes the minecraft:actor_resource_definition.v1.8.0 visual element"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Visuals Documentation - minecraft:actor_resource_definition.v1.8.0
 
+Defines an entity client resource definition document with format_version 1.8.0.
 
-## Actor Resource Definition Properties
+
+## Actor Resource Definition (v1.8.0) Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

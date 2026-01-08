@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can climb ladders"
+          }
+        ]
+      }
+    ]
+  },
   "title": "Can climb",
   "description": "Allows an entity to climb ladders.",
   "fields": [],

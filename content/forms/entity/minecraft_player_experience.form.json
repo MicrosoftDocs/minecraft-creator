@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has an experience system" }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:player.experience",
   "title": "Player Experience",
   "description": "Defines how much experience each player action should take.",

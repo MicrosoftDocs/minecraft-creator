@@ -1,4 +1,22 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "stays at a level in liquid"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "minecraft:behavior.rise_to_liquid_level",
+  "description": "Allows the mob to stay at a certain level when in liquid. This behavior was deprecated in 1.18.20 and replaced with minecraft:behavior.float.",
+  "isDeprecated": true,
+  "versionDeprecated": "1.18.20",
+  "note": "This behavior was used by striders in versions 1.16-1.18.10 but has been replaced with minecraft:behavior.float in newer versions.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.rise_to_liquid_level",

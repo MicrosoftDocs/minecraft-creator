@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns count information"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.count",
   "fields": [],
   "generated_doNotEdit": {

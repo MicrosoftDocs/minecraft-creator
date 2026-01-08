@@ -3,11 +3,14 @@ author: mammerla
 ms.author: mikeam
 title: "Feature Documentation - minecraft:weighted_random_feature"
 description: "Describes the minecraft:weighted_random_feature feature type"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Feature Documentation - minecraft:weighted_random_feature
+
+Selects and places a feature randomly based on weighted probabilities.
 
 
 ## Weighted Random Feature Properties

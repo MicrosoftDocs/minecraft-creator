@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Item Components Documentation - Item Components"
 description: "A reference document describing all current Item Components"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -16,10 +17,10 @@ ms.date: 02/11/2025
 | [minecraft:bundle_interaction](./ItemComponents/minecraft_bundle_interaction.md)| Enables the bundle-specific interaction scheme and tooltip for an item. |
 | [minecraft:can_destroy_in_creative](./ItemComponents/minecraft_can_destroy_in_creative.md)| The can_destroy_in_creative component determines if the item can be used by a player to break blocks when in creative mode. |
 | [minecraft:compostable](./ItemComponents/minecraft_compostable.md)| Specifies that an item is compostable and provides the chance of creating a composting layer in the composter |
-| [minecraft:cooldown](./ItemComponents/minecraft_cooldown.md)| The duration of time (in seconds) items with a matching category will spend cooling down before becoming usable again. |
+| [minecraft:cooldown](./ItemComponents/minecraft_cooldown.md)| Adds a cooldown to an item, preventing it from being used again for a specified duration. |
 | [minecraft:damage](./ItemComponents/minecraft_damage.md)| The damage component determines how much extra damage the item does on attack. |
 | [minecraft:damage_absorption](./ItemComponents/minecraft_damage_absorption.md)| It allows an item to absorb damage that would otherwise be dealt to its wearer. |
-| [minecraft:digger](./ItemComponents/minecraft_digger.md)| Allows a creator to determine how quickly an item can dig specific blocks. |
+| [minecraft:digger](./ItemComponents/minecraft_digger.md)| Configures an item as a digging tool, allowing it to break specific blocks faster than normal. |
 | [minecraft:display_name](./ItemComponents/minecraft_display_name.md)| Sets the item display name within Minecraft: Bedrock Edition. |
 | [minecraft:durability](./ItemComponents/minecraft_durability.md)| Sets how much damage the item can take before breaking, and allows the item to be combined at an anvil, grindstone, or crafting table. |
 | [minecraft:durability_sensor](./ItemComponents/minecraft_durability_sensor.md)| Enables an item to emit effects when it receives damage. |
@@ -41,10 +42,11 @@ ms.date: 02/11/2025
 | [minecraft:liquid_clipped](./ItemComponents/minecraft_liquid_clipped.md)| The liquid_clipped component determines whether the item interacts with liquid blocks on use. |
 | [minecraft:max_stack_size](./ItemComponents/minecraft_max_stack_size.md)| Determines how many of an item can be stacked together. |
 | [minecraft:piercing_weapon](./ItemComponents/minecraft_piercing_weapon.md)| Allows an item to deal damage to all entities detected in a straight line along the user's view vector. |
-| [minecraft:projectile](./ItemComponents/minecraft_projectile.md)| Compels the item to shoot, similarly to an arrow. |
+| [minecraft:projectile](./ItemComponents/minecraft_projectile.md)| Defines an item as a projectile that can be shot from dispensers or used as ammunition with minecraft:shooter. |
 | [minecraft:rarity](./ItemComponents/minecraft_rarity.md)| Specifies the base rarity and subsequently color of the item name when the player hovers the cursor over the item. |
 | [minecraft:record](./ItemComponents/minecraft_record.md)| Used by record items to play music. |
 | [minecraft:repairable](./ItemComponents/minecraft_repairable.md)| Defines the items that can be used to repair a defined item, and the amount of durability each item restores upon repair. |
+| [minecraft:seed](./ItemComponents/minecraft_seed.md)| Sets the item as a seed that can be planted to grow crops. |
 | [minecraft:shooter](./ItemComponents/minecraft_shooter.md)| Compels an item to shoot projectiles, similarly to a bow or crossbow. |
 | [minecraft:should_despawn](./ItemComponents/minecraft_should_despawn.md)| Should_despawn component determines if the item should eventually despawn while floating in the world |
 | [minecraft:stacked_by_data](./ItemComponents/minecraft_stacked_by_data.md)| The stacked_by_data component determines whether the same items with different aux values can stack. |
@@ -54,10 +56,10 @@ ms.date: 02/11/2025
 | [minecraft:swing_duration](./ItemComponents/minecraft_swing_duration.md)| Duration, in seconds, of the item's swing animation played when mining or attacking. |
 | [minecraft:swing_sounds](./ItemComponents/minecraft_swing_sounds.md)| Overrides the swing sounds emitted by the user. |
 | [minecraft:tags](./ItemComponents/minecraft_tags.md)| Determines which tags are included on a given item |
-| [minecraft:throwable](./ItemComponents/minecraft_throwable.md)| Sets the throwable item component. |
+| [minecraft:throwable](./ItemComponents/minecraft_throwable.md)| Makes an item throwable by the player, similar to a snowball or ender pearl. |
 | [minecraft:use_animation](./ItemComponents/minecraft_use_animation.md)| Use_animation specifies which animation is played when the player uses the item. |
 | [minecraft:use_modifiers](./ItemComponents/minecraft_use_modifiers.md)| Determines how long an item takes to use in combination with components such as Shooter, Throwable, or Food. |
-| [minecraft:wearable](./ItemComponents/minecraft_wearable.md)| Sets the wearable item component. |
+| [minecraft:wearable](./ItemComponents/minecraft_wearable.md)| Sets the wearable item component, which allows an item to be worn by a player in a specified equipment slot. |
 
 ## Internal/Deprecated Components
 These components are either deprecated or internal to Minecraft and not usable in custom content.
@@ -68,4 +70,4 @@ These components are either deprecated or internal to Minecraft and not usable i
 | [custom_components](./ItemComponents/minecraft_custom_components.md)| Specifies an array of custom components defined in a script that should be added to this item. |
 | [render_offsets](./ItemComponents/minecraft_render_offsets.md)| Render offsets component: optional values can be given to offset the way the item is rendered. |
 | [use_duration](./ItemComponents/minecraft_use_duration.md)| This component determines how long the item takes to use when used in combination with components like "shooter", "throwable", or "food". |
-| [weapon](./ItemComponents/minecraft_weapon.md)| Weapon Item Component. |
+| [weapon](./ItemComponents/minecraft_weapon.md)| Deprecated weapon item component. |

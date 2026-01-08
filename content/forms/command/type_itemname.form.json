@@ -1,0 +1,9 @@
+{
+  "id": "type_itemname",
+  "title": "Item Name",
+  "description": "An item type identifier. Alias for ITEM.",
+  "fields": [],
+  "aliasOf": [
+    "type_item"
+  ]
+}

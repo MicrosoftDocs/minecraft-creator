@@ -1,0 +1,132 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "number",
+                    "comparison": ">=",
+                    "value": 1200
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "is nearly indestructible by explosions (resistance: "
+                  },
+                  {
+                    "type": "value",
+                    "field": "number"
+                  },
+                  {
+                    "type": "literal",
+                    "text": ")"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "number",
+                    "comparison": ">=",
+                    "value": 30
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "is very blast resistant (resistance: "
+                  },
+                  {
+                    "type": "value",
+                    "field": "number"
+                  },
+                  {
+                    "type": "literal",
+                    "text": ")"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "number",
+                    "comparison": ">=",
+                    "value": 6
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "has standard blast resistance (resistance: "
+                  },
+                  {
+                    "type": "value",
+                    "field": "number"
+                  },
+                  {
+                    "type": "literal",
+                    "text": ")"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "number",
+                    "comparison": ">",
+                    "value": 0
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "is easily destroyed by explosions (resistance: "
+                  },
+                  {
+                    "type": "value",
+                    "field": "number"
+                  },
+                  {
+                    "type": "literal",
+                    "text": ")"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "number",
+                    "comparison": "==",
+                    "value": 0
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "has no explosion resistance"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Legacy component (format_version < 1.19.40). The block's resistance to explosions. Use minecraft:destructible_by_explosion in newer format versions.",
+  "fields": [],
+  "scalarField": {
+    "id": "number",
+    "title": "Explosion Resistance",
+    "dataType": 1
+  },
+  "title": "Explosion Resistance (Legacy)",
+  "id": "minecraft:explosion_resistance"
+}

@@ -1,4 +1,25 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if the entity's biome has the '"
+          },
+          {
+            "type": "value",
+            "field": "value"
+          },
+          {
+            "type": "literal",
+            "text": "' tag"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "conditional",
     "entityevent"

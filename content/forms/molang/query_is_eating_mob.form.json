@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is eating a mob"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_eating_mob",
   "fields": [],
   "generated_doNotEdit": {

@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has culling layer for grouped culling" }
+        ]
+      }
+    ]
+  },
   "id": "culling_layer",
   "fields": [],
   "generated_doNotEdit": {

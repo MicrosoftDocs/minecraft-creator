@@ -1,0 +1,208 @@
+{
+  "id": "cmd_fill",
+  "title": "fill",
+  "description": "Fills all or parts of a region with a specific block.",
+  "fields": [
+    {
+      "id": "from",
+      "title": "from",
+      "type": "string",
+      "isOptional": false,
+      "description": "A vector that specifies the location in `x`, `y`, and `z` coordinates of `float` type.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "to",
+      "title": "to",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "tilename",
+      "title": "tileName",
+      "type": "string",
+      "isOptional": false,
+      "description": "An `enum` of the block `id` of the block to fill the region with.",
+      "subFormId": "type_block",
+      "commandType": "BLOCK"
+    },
+    {
+      "id": "blockstates",
+      "title": "blockStates",
+      "type": "string",
+      "isOptional": false,
+      "description": "An array of block states.",
+      "commandType": "BLOCK_STATE_ARRAY"
+    },
+    {
+      "id": "oldblockhandling",
+      "title": "oldBlockHandling",
+      "type": "string",
+      "isOptional": true,
+      "commandType": "FILLMODE"
+    },
+    {
+      "id": "replacetilename",
+      "title": "replaceTileName",
+      "type": "string",
+      "isOptional": true,
+      "description": "An `enum` of the type of the block `id` to replace in the fill region.",
+      "subFormId": "type_block",
+      "commandType": "BLOCK"
+    },
+    {
+      "id": "replaceblockstates",
+      "title": "replaceBlockStates",
+      "type": "string",
+      "isOptional": true,
+      "description": "An `array` of block states to replace.",
+      "commandType": "BLOCK_STATE_ARRAY"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "3",
+      "title": "Fill with block state, optional fill mode",
+      "description": "Fill a region `from` one position `to` another of a particular `block state` with an optional fill mode.",
+      "params": [
+        {
+          "name": "from",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "to",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "tilename",
+          "type": "BLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "blockstates",
+          "type": "BLOCK_STATE_ARRAY",
+          "isOptional": false
+        },
+        {
+          "name": "oldblockhandling",
+          "type": "FILLMODE",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Fill, filter on block states, optional replace with tile name or block state",
+      "description": "Fill a region `from` one position `to` another of a particular `block name`, filtering on particular `block states`, and replacing with blocks using an optional `replacement tile name` and optional `replacement block states`.",
+      "params": [
+        {
+          "name": "from",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "to",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "tilename",
+          "type": "BLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "oldblockhandling",
+          "type": "FILLMODE",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Fill, filtering on block states, with replacement blocks and states",
+      "description": "",
+      "params": [
+        {
+          "name": "from",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "to",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "tilename",
+          "type": "BLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "blockstates",
+          "type": "BLOCK_STATE_ARRAY",
+          "isOptional": false
+        },
+        {
+          "name": "oldblockhandling",
+          "type": "REPLACE",
+          "isOptional": false
+        },
+        {
+          "name": "replacetilename",
+          "type": "BLOCK",
+          "isOptional": true
+        },
+        {
+          "name": "replaceblockstates",
+          "type": "BLOCK_STATE_ARRAY",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Fill with replacement blocks and states",
+      "description": "",
+      "params": [
+        {
+          "name": "from",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "to",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "tilename",
+          "type": "BLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "oldblockhandling",
+          "type": "REPLACE",
+          "isOptional": false
+        },
+        {
+          "name": "replacetilename",
+          "type": "BLOCK",
+          "isOptional": true
+        },
+        {
+          "name": "replaceblockstates",
+          "type": "BLOCK_STATE_ARRAY",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

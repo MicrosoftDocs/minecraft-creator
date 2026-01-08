@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has explosion resistance"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Detailed Resistance",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -13,5 +26,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Sets the block's resistance to explosions from TNT, creepers, and other sources. Higher values make blocks harder to destroy—bedrock has near-infinite resistance while glass shatters easily. Configure appropriate resistance to match the block's intended durability in survival gameplay."
 }

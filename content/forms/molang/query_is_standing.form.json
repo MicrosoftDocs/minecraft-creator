@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is standing"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_standing",
   "fields": [],
   "description": "Returns 1.0 if the entity is standing, else it returns 0.0. Applies generally to the non-grazing animations of the donkey, mule, horse, skeleton horse, and zombie horse.",

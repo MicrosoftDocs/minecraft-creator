@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines mountain parameters component"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:mountain_parameters",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

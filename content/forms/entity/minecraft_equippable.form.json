@@ -1,4 +1,88 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has equipment slots that accept items"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "slots",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "with "
+          },
+          {
+            "type": "value",
+            "field": "slots.length"
+          },
+          {
+            "type": "plural",
+            "countField": "slots.length",
+            "singular": [
+              {
+                "type": "literal",
+                "text": " slot"
+              }
+            ],
+            "plural": [
+              {
+                "type": "literal",
+                "text": " slots"
+              }
+            ],
+            "includeCount": false
+          },
+          {
+            "type": "literal",
+            "text": " available"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "slots[0].item",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "accepts "
+          },
+          {
+            "type": "value",
+            "field": "slots[0].item"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "slots[0].on_equip",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "triggers events when equipped"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:equippable",
@@ -69,6 +153,26 @@
                   },
                   "on_unequip": {
                     "event": "minecraft:camel_unsaddled"
+                  }
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:camel_husk_with_no_hostile_rider/minecraft:equippable/",
+              "content": [
+                {
+                  "slot": 0,
+                  "item": "saddle",
+                  "accepted_items": [
+                    "saddle"
+                  ],
+                  "on_equip": {
+                    "event": "minecraft:camel_husk_saddled"
+                  },
+                  "on_unequip": {
+                    "event": "minecraft:camel_husk_unsaddled"
                   }
                 }
               ]
@@ -267,7 +371,7 @@
       ],
       "/vanilla/behavior_pack/entities/zombie_horse.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_adult/minecraft:equippable/",
+          "path": "/minecraft:entity/components/minecraft:equippable/",
           "content": {
             "slots": [
               {

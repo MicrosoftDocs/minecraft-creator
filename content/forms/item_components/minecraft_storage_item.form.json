@@ -1,4 +1,31 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "max_slots",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can store up to "
+          },
+          {
+            "type": "value",
+            "field": "max_slots"
+          },
+          {
+            "type": "literal",
+            "text": " items"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "description": "Enables an item to store data of the dynamic container associated with it. A dynamic container is a container for storing items that is linked to an item instead of a block or an entity.",
   "note": "While this component can be defined on its own, to be able to interact with the item's storage container the item must have a `minecraft:bundle_interaction` item component defined.",

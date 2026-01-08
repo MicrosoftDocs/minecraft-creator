@@ -1,5 +1,108 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:multiface_feature",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "places blocks that attach to and spread across surfaces"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "places_block",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spreads "
+          },
+          {
+            "type": "value",
+            "field": "places_block",
+            "humanify": "minecraft"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "can_place_on_floor",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "attaches to floors"
+          }
+        ],
+        "priority": 3
+      },
+      {
+        "visibility": [
+          {
+            "field": "can_place_on_ceiling",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "attaches to ceilings"
+          }
+        ],
+        "priority": 3
+      },
+      {
+        "visibility": [
+          {
+            "field": "can_place_on_wall",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "attaches to walls"
+          }
+        ],
+        "priority": 3
+      },
+      {
+        "visibility": [
+          {
+            "field": "search_range",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "searches "
+          },
+          {
+            "type": "value",
+            "field": "search_range"
+          },
+          {
+            "type": "literal",
+            "text": " blocks for placement"
+          }
+        ],
+        "priority": 3
+      }
+    ]
+  },
   "fields": [
     {
       "id": "format_version",

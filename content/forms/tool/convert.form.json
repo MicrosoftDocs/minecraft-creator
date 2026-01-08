@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines conversion settings for targeting Java Edition versions"
+          }
+        ]
+      }
+    ]
+  },
   "title": "Conversion",
   "fields": [
     {
@@ -69,5 +82,6 @@
         }
       ]
     }
-  ]
+  ],
+  "description": "Defines conversion settings for targeting Java Edition versions."
 }

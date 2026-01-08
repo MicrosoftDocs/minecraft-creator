@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has conditional component permutation"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Permutation",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -9,6 +22,7 @@
         "id": "components",
         "title": "Components",
         "dataType": 16,
+        "technicalDescription": "Block with \"geometry\" set at \"minecraft:geometry.full_block\" cannot have a \"random_offset\"",
         "subFormId": "block_components/components",
         "isRequired": true
       },
@@ -19,5 +33,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines conditional component overrides based on block state values using Molang conditions. When the condition evaluates true, the permutation's components replace or merge with base components. Enables blocks that change appearance or behavior based on direction, power state, age, or custom properties."
 }

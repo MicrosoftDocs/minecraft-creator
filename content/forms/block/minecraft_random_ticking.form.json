@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "triggers events on random ticks"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "isDeprecated": true,
   "generated_doNotEdit": {

@@ -1,4 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "title": "Command Value",
+  "description": "Defines a value used in command documentation (for example, an enum-like set of possible values).",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a command value with name and description"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "name",

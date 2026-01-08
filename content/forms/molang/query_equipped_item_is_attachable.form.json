@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns equipped item is attachable information"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.equipped_item_is_attachable",
   "fields": [],
   "generated_doNotEdit": {

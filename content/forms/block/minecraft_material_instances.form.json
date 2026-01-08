@@ -1,4 +1,127 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "*.texture",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses texture '"
+          },
+          {
+            "type": "value",
+            "field": "*.texture"
+          },
+          {
+            "type": "literal",
+            "text": "'"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "*.render_method",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "*.render_method",
+                    "comparison": "=",
+                    "value": "blend"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "renders with transparency (blend)"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "*.render_method",
+                    "comparison": "=",
+                    "value": "alpha_test"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "renders with cutout transparency (alpha_test)"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "*.render_method",
+                    "comparison": "=",
+                    "value": "double_sided"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "renders double-sided"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "renders opaque"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "*.face_dimming",
+            "comparison": "=",
+            "value": false
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has face dimming disabled"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "*.ambient_occlusion",
+            "comparison": "=",
+            "value": false
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has ambient occlusion disabled"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "visual"
   ],

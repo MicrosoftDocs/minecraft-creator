@@ -1,0 +1,28 @@
+{
+  "id": "type_block",
+  "title": "Block ID",
+  "description": "A block type identifier. Can include namespace or use short form for vanilla blocks.",
+  "fields": [],
+  "formatHint": "namespace:block_name or block_name",
+  "note": "Vanilla blocks use 'minecraft:' namespace but it can be omitted.",
+  "samples": {
+    "values": [
+      {
+        "path": "Stone block (vanilla)",
+        "content": "stone"
+      },
+      {
+        "path": "Diamond block with namespace",
+        "content": "minecraft:diamond_block"
+      },
+      {
+        "path": "Oak planks",
+        "content": "oak_planks"
+      },
+      {
+        "path": "Custom block from addon",
+        "content": "mypack:custom_block"
+      }
+    ]
+  }
+}

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines the minimum and maximum vertical bounds for a dimension"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Bounds",
@@ -37,5 +50,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines the minimum and maximum vertical bounds for a dimension."
 }

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a particle event with effects and expressions"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_event_node",
@@ -75,5 +88,6 @@
         "subFormId": "client_particles/particle_sound_effect_event"
       }
     ]
-  }
+  },
+  "description": "Defines actions triggered by particle events like spawning, collision, or expiration. Event nodes can run Molang expressions to modify variables, spawn nested particle effects, play sounds, or control emitter state. Chain multiple effects together for complex reactions like explosions spawning secondary debris particles."
 }

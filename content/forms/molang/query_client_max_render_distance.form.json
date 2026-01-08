@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns max render distance in chunks (client only)"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.client_max_render_distance",
   "fields": [],
   "generated_doNotEdit": {

@@ -3,11 +3,14 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:water_movement"
 description: "Describes the minecraft:water_movement entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:water_movement
+
+Customizes how the entity moves through water by adjusting drag coefficient. Lower values let entities glide through water easily like fish, while higher values create resistance for entities that struggle in water. Essential for aquatic mobs, boats, and any entity needing custom underwater physics.
 
 
 ## Water Movement Properties

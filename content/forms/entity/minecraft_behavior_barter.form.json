@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "will barter items with players"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "note": "Requires the `minecraft:barter` component and `barter_table` loot table in order to work properly.",
   "requires": [

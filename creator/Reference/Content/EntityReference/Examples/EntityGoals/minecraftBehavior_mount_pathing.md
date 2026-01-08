@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:behavior.mount_pathing"
 description: "Describes the minecraft:behavior.mount_pathing ai behavior component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -18,7 +19,7 @@ Allows the mob to move around on its own while mounted seeking a target to attac
 |:----------|:-------------|:----|:-----------|:------------- |
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Camel Husk: `3`, Cat: `1`, Cave Spider: `5` | 
 | speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Camel Husk: `4`, Cat: `1.25`, Chicken: `1.5` | 
-| target_dist | 0 | Decimal number | The distance at which this mob wants to be away from its target | Skeleton Horse: `4`, Zombie Nautilus: `2` | 
+| target_dist | 0 | Decimal number | The distance at which this mob wants to be away from its target | Skeleton Horse: `4` | 
 | track_target | false | Boolean true/false | If true, this mob will chase after the target as long as it's a valid target | Camel Husk: `true` | 
 
 ## Samples
@@ -103,18 +104,6 @@ Allows the mob to move around on its own while mounted seeking a target to attac
   "priority": 2,
   "speed_multiplier": 1.5,
   "target_dist": 4,
-  "track_target": true
-}
-```
-
-#### [Zombie Nautilus](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_nautilus.json)
-
-
-```json
-"minecraft:behavior.mount_pathing": {
-  "priority": 3,
-  "speed_multiplier": 1,
-  "target_dist": 2,
   "track_target": true
 }
 ```

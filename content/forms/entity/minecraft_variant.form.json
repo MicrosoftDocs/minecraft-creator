@@ -1,4 +1,57 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has different visual variants"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "value",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "value",
+                    "comparison": "=",
+                    "value": 0
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "using default variant (0)"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "set to variant "
+              },
+              {
+                "type": "value",
+                "field": "value"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "description": "Variant is typically used as a per-type way to express a different visual form of the same mob. For example, for cats, variant is a number that defines the breed of cat.",
   "note": "This behavior is a requirement for setting up multiple types of variants for an entity.",
   "fields": [

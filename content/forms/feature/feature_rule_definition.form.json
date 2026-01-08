@@ -1,5 +1,70 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines feature placement rules with conditions and distribution" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "distribution",
+      "title": "Distribution",
+      "description": "Parameters controlling the initial scatter of the feature.",
+      "dataType": 16,
+      "subForm": {
+        "title": "Distribution",
+        "description": "Controls the scatter distribution of features during world generation.",
+        "fields": [
+          {
+            "id": "iterations",
+            "title": "Iterations",
+            "description": "Number of scattered positions to generate. Can be an integer or a Molang expression.",
+            "dataType": 0,
+            "defaultValue": 1
+          },
+          {
+            "id": "scatter_chance",
+            "title": "Scatter Chance",
+            "description": "Probability that this scatter will occur (0.0 to 1.0 or Molang expression). If not triggered, no iterations will run.",
+            "dataType": 3,
+            "defaultValue": 1.0
+          },
+          {
+            "id": "coordinate_eval_order",
+            "title": "Coordinate Evaluation Order",
+            "description": "The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. Defaults to 'xzy'.",
+            "dataType": 4,
+            "choices": ["xyz", "xzy", "yxz", "yzx", "zxy", "zyx"],
+            "defaultValue": "xzy"
+          },
+          {
+            "id": "x",
+            "title": "X Distribution",
+            "description": "Distribution for the X coordinate (evaluated each iteration). Can be an integer, range object, or Molang expression.",
+            "dataType": 0,
+            "defaultValue": 0
+          },
+          {
+            "id": "y",
+            "title": "Y Distribution",
+            "description": "Distribution for the Y coordinate (evaluated each iteration). Can be an integer, range object, or Molang expression.",
+            "dataType": 0,
+            "defaultValue": 0
+          },
+          {
+            "id": "z",
+            "title": "Z Distribution",
+            "description": "Distribution for the Z coordinate (evaluated each iteration). Can be an integer, range object, or Molang expression.",
+            "dataType": 0,
+            "defaultValue": 0
+          }
+        ]
+      }
+    }],
   "generated_doNotEdit": {
     "title": "Feature Rule Definition",
     "description": "Feature Rule Definition",

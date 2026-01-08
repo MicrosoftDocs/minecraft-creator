@@ -1,7 +1,20 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns y eye rotation of the entity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.eye_target_y_rotation",
   "fields": [],
-  "description": "Returns the Y eye rotation of the entity, else it returns 0.0.  Applies to the guardian.",
+  "description": "Returns the Y eye rotation of the entity, else it returns 0.0. Applies to the guardian.",
   "generated_doNotEdit": {
     "id": "query.eye_target_y_rotation",
     "title": "Eye Target y Rotation",

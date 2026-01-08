@@ -1,4 +1,128 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "looks at nearby players"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "look_distance",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "within "
+          },
+          {
+            "type": "value",
+            "field": "look_distance"
+          },
+          {
+            "type": "literal",
+            "text": " blocks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "probability",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "with "
+          },
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "probability",
+                    "comparison": ">=",
+                    "value": 0.5
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "high"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "probability",
+                    "comparison": ">=",
+                    "value": 0.1
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "moderate"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "low"
+              }
+            ]
+          },
+          {
+            "type": "literal",
+            "text": " probability ("
+          },
+          {
+            "type": "value",
+            "field": "probability"
+          },
+          {
+            "type": "literal",
+            "text": ")"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "target_distance",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "stops looking beyond "
+          },
+          {
+            "type": "value",
+            "field": "target_distance"
+          },
+          {
+            "type": "literal",
+            "text": " blocks"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "description": "Compels an entity to look at the player by rotating the `head` bone pose within a set limit.",
   "generated_doNotEdit": {

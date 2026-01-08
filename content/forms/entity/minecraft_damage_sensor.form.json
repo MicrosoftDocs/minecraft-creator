@@ -1,4 +1,185 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "reacts to specific damage types"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "triggers",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has "
+          },
+          {
+            "type": "value",
+            "field": "triggers.length"
+          },
+          {
+            "type": "plural",
+            "countField": "triggers.length",
+            "singular": [
+              {
+                "type": "literal",
+                "text": " damage trigger"
+              }
+            ],
+            "plural": [
+              {
+                "type": "literal",
+                "text": " damage triggers"
+              }
+            ],
+            "includeCount": false
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "triggers[0].cause",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "monitors "
+          },
+          {
+            "type": "value",
+            "field": "triggers[0].cause"
+          },
+          {
+            "type": "literal",
+            "text": " damage"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "triggers[0].damage_multiplier",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "triggers[0].damage_multiplier",
+                    "comparison": "=",
+                    "value": 0
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "is immune to this damage type"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "triggers[0].damage_multiplier",
+                    "comparison": "<",
+                    "value": 1
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "takes reduced damage ("
+                  },
+                  {
+                    "type": "value",
+                    "field": "triggers[0].damage_multiplier"
+                  },
+                  {
+                    "type": "literal",
+                    "text": "x multiplier)"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "triggers[0].damage_multiplier",
+                    "comparison": ">",
+                    "value": 1
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "takes increased damage ("
+                  },
+                  {
+                    "type": "value",
+                    "field": "triggers[0].damage_multiplier"
+                  },
+                  {
+                    "type": "literal",
+                    "text": "x multiplier)"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "takes normal damage"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "triggers[0].deals_damage",
+            "comparison": "=",
+            "value": false
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "blocks the damage from being applied"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "triggers[0].on_damage",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "triggers events when damaged"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "deals_damage",
@@ -34,15 +215,80 @@
     },
     {
       "id": "triggers",
+      "title": "Triggers",
+      "description": "List of triggers with the events to call when taking specific kinds of damage.",
       "dataType": 42,
       "subForm": {
+        "id": "damage_sensor_trigger",
+        "title": "Damage Sensor Trigger",
         "fields": [
           {
+            "id": "cause",
+            "title": "Cause",
+            "description": "Type of damage that triggers the events.",
+            "defaultValue": "none",
+            "dataType": 2
+          },
+          {
+            "id": "damage_modifier",
+            "title": "Damage Modifier",
+            "description": "A modifier that adds/removes to the base damage received from the specified damage cause.",
+            "defaultValue": 0,
+            "dataType": 3
+          },
+          {
+            "id": "damage_multiplier",
+            "title": "Damage Multiplier",
+            "description": "A multiplier that modifies the base damage received from the specified damage cause.",
+            "defaultValue": 1,
+            "dataType": 3
+          },
+          {
+            "id": "deals_damage",
+            "title": "Deals Damage",
+            "description": "Defines how received damage affects the entity.",
+            "defaultValue": false,
+            "dataType": 1,
+            "alternates": [
+              {
+                "id": "deals_damage",
+                "dataType": 2
+              }
+            ]
+          },
+          {
+            "id": "on_damage",
+            "title": "On Damage",
+            "description": "Defines which entities the trigger applies to, and which event to emit when damaged.",
+            "dataType": 22
+          },
+          {
             "id": "on_damage_sound_event",
+            "title": "Damage Sound Event",
+            "description": "Defines what sound to play when the on_damage filters are met.",
             "dataType": 39
+          },
+          {
+            "id": "filters",
+            "title": "Filters",
+            "description": "Filter conditions for when this trigger applies.",
+            "dataType": 20
+          },
+          {
+            "id": "event",
+            "title": "Event",
+            "description": "Event to emit when the trigger conditions are met.",
+            "dataType": 2
           }
         ]
-      }
+      },
+      "alternates": [
+        {
+          "id": "triggers",
+          "dataType": 16,
+          "subFormId": "damage_sensor_trigger"
+        }
+      ]
     }
   ],
   "description": "Defines what events to call when this entity is damaged by specific entities or items.",
@@ -149,6 +395,55 @@
                   },
                   "event": "minecraft:threat_detected"
                 }
+              }
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:rolled_up/minecraft:damage_sensor/",
+              "content": [
+                {
+                  "on_damage": {
+                    "filters": {
+                      "any_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "mob"
+                        },
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "player"
+                        }
+                      ]
+                    },
+                    "event": "minecraft:threat_detected"
+                  },
+                  "damage_multiplier": 0.5,
+                  "damage_modifier": -1
+                },
+                {
+                  "damage_multiplier": 0.5,
+                  "damage_modifier": -1
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+              "content": {
+                "cause": "lightning",
+                "deals_damage": "yes",
+                "damage_multiplier": 2000
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+              "content": {
+                "cause": "fall",
+                "deals_damage": false
               }
             }
           ]

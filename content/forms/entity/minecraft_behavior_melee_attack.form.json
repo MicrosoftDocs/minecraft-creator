@@ -1,4 +1,151 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "enables this entity to perform close-range melee attacks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "cooldown_time",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "attacks with a "
+          },
+          {
+            "type": "value",
+            "field": "cooldown_time"
+          },
+          {
+            "type": "literal",
+            "text": " second cooldown"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "reach_multiplier",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has "
+          },
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "reach_multiplier",
+                    "comparison": ">",
+                    "value": 1.5
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "extended"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "reach_multiplier",
+                    "comparison": "<",
+                    "value": 1
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "reduced"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "normal"
+              }
+            ]
+          },
+          {
+            "type": "literal",
+            "text": " attack reach ("
+          },
+          {
+            "type": "value",
+            "field": "reach_multiplier"
+          },
+          {
+            "type": "literal",
+            "text": "x)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "attack_once",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "only attacks once ever"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "can_spread_on_fire",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spreads fire to targets when on fire"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "require_complete_path",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "requires a complete path to target before attacking"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "attack_types",

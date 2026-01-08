@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "SinglePoolElement",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a single pool element with a structure location and processors"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "SinglePoolElement",
@@ -54,5 +67,6 @@
         "defaultValue": "rigid"
       }
     ]
-  }
+  },
+  "description": "Defines a single pool element with a structure location and processors."
 }

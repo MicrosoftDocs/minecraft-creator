@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines behavior.slime keep on jumping configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.slime_keep_on_jumping",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

@@ -1,4 +1,135 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "fires scheduled events based on time of day"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "min_delay_secs",
+            "comparison": "defined"
+          },
+          {
+            "field": "max_delay_secs",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a delay between "
+          },
+          {
+            "type": "value",
+            "field": "min_delay_secs"
+          },
+          {
+            "type": "literal",
+            "text": " and "
+          },
+          {
+            "type": "value",
+            "field": "max_delay_secs"
+          },
+          {
+            "type": "literal",
+            "text": " seconds"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "min_delay_secs",
+            "comparison": "defined"
+          },
+          {
+            "field": "max_delay_secs",
+            "comparison": "undefined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a minimum delay of "
+          },
+          {
+            "type": "value",
+            "field": "min_delay_secs"
+          },
+          {
+            "type": "literal",
+            "text": " seconds"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "scheduled_events",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has "
+          },
+          {
+            "type": "value",
+            "field": "scheduled_events.length"
+          },
+          {
+            "type": "plural",
+            "countField": "scheduled_events.length",
+            "singular": [
+              {
+                "type": "literal",
+                "text": " scheduled event"
+              }
+            ],
+            "plural": [
+              {
+                "type": "literal",
+                "text": " scheduled events"
+              }
+            ],
+            "includeCount": false
+          },
+          {
+            "type": "literal",
+            "text": " triggered by filter conditions"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "scheduled_events[0].event",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "triggers events like "
+          },
+          {
+            "type": "value",
+            "field": "scheduled_events[0].event",
+            "humanify": "minecraft"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "min_delay_secs",

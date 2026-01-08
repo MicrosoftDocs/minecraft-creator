@@ -272,6 +272,8 @@
   href: minecraftComponent_navigation.swim.md
 - name: minecraft:navigation.walk
   href: minecraftComponent_navigation.walk.md
+- name: minecraft:offspring
+  href: minecraftComponent_offspring.md
 - name: minecraft:out_of_control
   href: minecraftComponent_out_of_control.md
 - name: minecraft:peek
@@ -332,6 +334,8 @@
   href: minecraftComponent_skin_id.md
 - name: minecraft:sound_volume
   href: minecraftComponent_sound_volume.md
+- name: minecraft:spawn_egg_interaction
+  href: minecraftComponent_spawn_egg_interaction.md
 - name: minecraft:spawn_entity
   href: minecraftComponent_spawn_entity.md
 - name: minecraft:spell_effects

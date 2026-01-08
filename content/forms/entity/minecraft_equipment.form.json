@@ -1,5 +1,48 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spawns with equipment"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "slot_drop_chance",
+      "description": "A list of slots with the chance to drop an equipped item from that slot. Can be an array of slot name strings or an array of objects with slot and drop_chance properties.",
+      "dataType": 17,
+      "alternates": [
+        {
+          "id": "slot_drop_chance",
+          "dataType": 15,
+          "subForm": {
+            "id": "slot_drop_chance_item",
+            "title": "Slot Drop Chance Item",
+            "fields": [
+              {
+                "id": "slot",
+                "title": "Slot",
+                "description": "The equipment slot name.",
+                "dataType": 2
+              },
+              {
+                "id": "drop_chance",
+                "title": "Drop Chance",
+                "description": "The chance to drop the equipped item (0.0 to 1.0).",
+                "dataType": 3
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:equipment",
     "title": "Equipment",

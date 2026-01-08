@@ -1,0 +1,31 @@
+{
+  "id": "type_rgb",
+  "title": "RGB Color",
+  "description": "Color value as red, green, blue components.",
+  "fields": [],
+  "formatHint": "0-255 for each component",
+  "samples": {
+    "values": [
+      {
+        "path": "Red",
+        "content": "255 0 0"
+      },
+      {
+        "path": "Green",
+        "content": "0 255 0"
+      },
+      {
+        "path": "Blue",
+        "content": "0 0 255"
+      },
+      {
+        "path": "White",
+        "content": "255 255 255"
+      },
+      {
+        "path": "Black",
+        "content": "0 0 0"
+      }
+    ]
+  }
+}

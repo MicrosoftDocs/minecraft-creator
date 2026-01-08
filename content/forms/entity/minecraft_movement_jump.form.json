@@ -1,5 +1,59 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses jumping movement"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "jump_delay",
+      "title": "Jump Delay",
+      "description": "Delay in seconds after landing when using the slime move control. Can be a single number, an array [min, max], or an object with range_min and range_max.",
+      "dataType": 3,
+      "alternates": [
+        {
+          "id": "jump_delay",
+          "dataType": 15,
+          "subForm": {
+            "fields": [
+              {
+                "id": "0",
+                "dataType": 3
+              },
+              {
+                "id": "1",
+                "dataType": 3
+              }
+            ]
+          }
+        },
+        {
+          "id": "jump_delay",
+          "dataType": 16,
+          "subForm": {
+            "fields": [
+              {
+                "id": "range_min",
+                "dataType": 3
+              },
+              {
+                "id": "range_max",
+                "dataType": 3
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
   "note": "In order to follow targets, this entity must have the `minecraft:behavior.slime_attack` component, otherwise the entity will jump in the direction it's looking in.",
   "generated_doNotEdit": {
     "id": "minecraft:movement.jump",

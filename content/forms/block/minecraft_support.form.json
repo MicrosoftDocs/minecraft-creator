@@ -1,4 +1,27 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "shape",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has support shape "
+          },
+          {
+            "type": "value",
+            "field": "shape"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:support",
   "fields": [],
   "generated_doNotEdit": {

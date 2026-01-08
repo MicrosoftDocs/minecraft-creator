@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns integer id of an entity (actor) by its string name"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.get_actor_info_id",
   "fields": [],
   "description": "Returns the integer id of an entity (actor) by its string name. Relates to item data fields in recipes. Applies to game versions 1.19.80 and higher.",

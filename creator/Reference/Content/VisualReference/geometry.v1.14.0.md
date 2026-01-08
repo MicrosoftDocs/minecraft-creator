@@ -3,14 +3,17 @@ author: mammerla
 ms.author: mikeam
 title: "Visuals Documentation - minecraft:geometry.v1.14.0"
 description: "Describes the minecraft:geometry.v1.14.0 visual element"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Visuals Documentation - minecraft:geometry.v1.14.0
 
+Defines a geometry document (bones, cubes, and UV mappings) with format_version 1.14.0.
 
-## Geometry Properties
+
+## Geometry (v1.14.0) Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

@@ -1,5 +1,15 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "DirectPoolAlias",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines a pool alias for a direct target" }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "DirectPoolAlias",

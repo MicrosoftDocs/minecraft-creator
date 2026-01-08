@@ -1,5 +1,21 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "leaves block state unchanged during processing" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "type",
+      "title": "Block Entity Modifier Type",
+      "description": "The type of block entity modifier."
+    }
+  ],
   "generated_doNotEdit": {
     "title": "JigsawStructure ProcessorRule Passthrough",
     "description": "Modifier that leaves the state unchanged. This is the default block modifier if no other block modifier is specified.",

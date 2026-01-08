@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "looks at players it is trading with"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "note": "Requires the ability to trade in order to work properly.",
   "description": "Compels an entity to look at the player that is currently trading with the entity.",

@@ -1,6 +1,24 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines feature rule definition configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Feature Rule Definition",
-  "fields": [],
+  "fields": [
+    {
+      "id": "description",
+      "description": "Identifier for the Feature Rule and Feature to place."
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "Feature Rule Definition",
     "title": "Feature Rule Definition Misc",
@@ -29,5 +47,6 @@
         "subFormId": "misc/scatter_params"
       }
     ]
-  }
+  },
+  "description": "Defines feature rule definition configuration."
 }

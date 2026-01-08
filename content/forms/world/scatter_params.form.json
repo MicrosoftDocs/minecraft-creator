@@ -1,4 +1,133 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "controls scatter placement during world generation"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "iterations",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "places "
+          },
+          {
+            "type": "value",
+            "field": "iterations"
+          },
+          {
+            "type": "plural",
+            "countField": "iterations",
+            "singular": [
+              {
+                "type": "literal",
+                "text": " instance"
+              }
+            ],
+            "plural": [
+              {
+                "type": "literal",
+                "text": " instances"
+              }
+            ],
+            "includeCount": false
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "scatter_chance",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "scatter_chance.numerator",
+                    "comparison": "defined"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "has "
+                  },
+                  {
+                    "type": "value",
+                    "field": "scatter_chance.numerator"
+                  },
+                  {
+                    "type": "literal",
+                    "text": "/"
+                  },
+                  {
+                    "type": "value",
+                    "field": "scatter_chance.denominator"
+                  },
+                  {
+                    "type": "literal",
+                    "text": " chance to spawn"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "has "
+              },
+              {
+                "type": "value",
+                "field": "scatter_chance"
+              },
+              {
+                "type": "literal",
+                "text": " chance to spawn"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "coordinate_eval_order",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "evaluates coordinates in "
+          },
+          {
+            "type": "value",
+            "field": "coordinate_eval_order"
+          },
+          {
+            "type": "literal",
+            "text": " order"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Scatter Params",

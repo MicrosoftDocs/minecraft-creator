@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines behavior.transport items configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.transport_items",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

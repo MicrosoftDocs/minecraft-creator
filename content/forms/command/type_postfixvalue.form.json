@@ -1,0 +1,23 @@
+{
+  "id": "type_postfixvalue",
+  "title": "Suffixed Value",
+  "description": "A value with a unit suffix.",
+  "fields": [],
+  "formatHint": "number with suffix (e.g., 5s, 10t)",
+  "samples": {
+    "values": [
+      {
+        "path": "5 seconds",
+        "content": "5s"
+      },
+      {
+        "path": "100 ticks",
+        "content": "100t"
+      },
+      {
+        "path": "1 day (in-game)",
+        "content": "1d"
+      }
+    ]
+  }
+}

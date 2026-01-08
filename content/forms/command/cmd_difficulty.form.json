@@ -1,0 +1,44 @@
+{
+  "id": "cmd_difficulty",
+  "title": "difficulty",
+  "description": "Sets the difficulty level (Peaceful, Easy, Normal, Hard) using difficulty enum or integer.",
+  "fields": [
+    {
+      "id": "difficulty",
+      "title": "difficulty",
+      "type": "string",
+      "isOptional": false,
+      "description": "Set the difficulty using the Difficult enum: `p` or `peaceful`, `e` or `easy`, `n` or `normal`, `h` or `hard`.",
+      "subFormId": "type_difficulty",
+      "commandType": "DIFFICULTY"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Difficulty using difficulty enum: p, peaceful, e, easy, n, normal, h, hard",
+      "description": "Set the difficulty using the `Difficulty` `enum`",
+      "params": [
+        {
+          "name": "difficulty",
+          "type": "DIFFICULTY",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Difficulty using integer: 0 (Peaceful), 1 (Easy), 2 (Normal), 3 (Hard).",
+      "description": "Set the difficulty using an integer.",
+      "params": [
+        {
+          "name": "difficulty",
+          "type": "INT",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}
