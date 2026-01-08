@@ -1,4 +1,23 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "TradeItemList",
+  "title": "Trade Item List",
+  "description": "Defines a list of alternative items that can satisfy a trade requirement. When used with the choice property, any one of the listed items can be used to complete the trade. This provides flexibility in what items a player can offer or receive.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines alternative items that can be used in a trade" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "choice", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "offers a choice of items" }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "title": "TradeItemList",

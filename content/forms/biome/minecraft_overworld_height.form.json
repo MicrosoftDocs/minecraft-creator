@@ -1,4 +1,45 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "noise_type",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses "
+          },
+          {
+            "type": "value",
+            "field": "noise_type"
+          },
+          {
+            "type": "literal",
+            "text": " terrain height"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "noise_params",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has custom terrain height parameters"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "note": "This is a pre-Caves and Cliffs component. It does not change overworld height, and currently only affects map item rendering",
   "generatedFromSchema_doNotEdit": {

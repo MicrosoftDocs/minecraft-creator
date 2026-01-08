@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Molang Documentation - minecraft:query_ticks_since_last_kinetic_weapon_hit"
 description: "Describes the minecraft:query_ticks_since_last_kinetic_weapon_hit molang"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

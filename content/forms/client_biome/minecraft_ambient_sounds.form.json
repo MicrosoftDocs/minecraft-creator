@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:ambient_sounds",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "controls ambient sounds for a biome"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "title": "Minecraft Ambient Sounds",
   "description": "Sets the ambient sounds for the biome. These sounds must be in the 'individual_named_sounds' in a 'sounds.json' file.",

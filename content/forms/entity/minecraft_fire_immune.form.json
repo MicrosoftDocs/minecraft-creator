@@ -1,5 +1,24 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is immune to fire damage"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
+  "alternates": [
+    {
+      "id": "fire_immune",
+      "dataType": 1
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:fire_immune",
     "title": "Fire Immune",

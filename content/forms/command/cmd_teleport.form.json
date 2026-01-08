@@ -1,0 +1,334 @@
+{
+  "id": "cmd_teleport",
+  "title": "teleport",
+  "description": "Teleports entities  to specific locations. Can also be written as `/tp`.",
+  "fields": [
+    {
+      "id": "destination",
+      "title": "destination",
+      "type": "string",
+      "isOptional": false,
+      "description": "The `vector` [x y z] position to teleport entities to.",
+      "subFormId": "type_position_float",
+      "commandType": "POSITION_FLOAT"
+    },
+    {
+      "id": "checkforblocks",
+      "title": "checkForBlocks",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `Boolean` value to prevent teleporting the player if the location they would end up in is occupied by blocks if `true`. Default: `false`.",
+      "subFormId": "type_boolean",
+      "commandType": "BOOLEAN"
+    },
+    {
+      "id": "yrot",
+      "title": "yRot",
+      "type": "string",
+      "isOptional": true,
+      "description": "The `float` degrees `y` to rotate a player when teleporting.",
+      "subFormId": "type_rval",
+      "commandType": "RVAL"
+    },
+    {
+      "id": "xrot",
+      "title": "xRot",
+      "type": "string",
+      "isOptional": true,
+      "description": "The `float` degrees `x` to rotate a player when teleporting.",
+      "subFormId": "type_rval",
+      "commandType": "RVAL"
+    },
+    {
+      "id": "facing",
+      "title": "facing",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "TELEPORTFACING"
+    },
+    {
+      "id": "lookatposition",
+      "title": "lookAtPosition",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `vector` [x y z] of where teleported entities should face.",
+      "subFormId": "type_position_float",
+      "commandType": "POSITION_FLOAT"
+    },
+    {
+      "id": "lookatentity",
+      "title": "lookAtEntity",
+      "type": "string",
+      "isOptional": false,
+      "description": " A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which `entity` teleported entities should face.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "victim",
+      "title": "victim",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which player is teleported.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    }
+  ],
+  "aliases": [
+    "tp"
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Teleport self",
+      "description": "`Teleport` yourself to a `vector` destination with optional `check for blocks`.",
+      "params": [
+        {
+          "name": "destination",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "checkforblocks",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Teleport self, x y rotation",
+      "description": "`Teleport` yourself to a `vector` destination with optional `y rotation`, `x rotation`, and `check for blocks`.",
+      "params": [
+        {
+          "name": "destination",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "yrot",
+          "type": "RVAL",
+          "isOptional": true
+        },
+        {
+          "name": "xrot",
+          "type": "RVAL",
+          "isOptional": true
+        },
+        {
+          "name": "checkforblocks",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Teleport self, facing position",
+      "description": "`Teleport` yourself to a `vector` destination facing a `vector` position with an optional `check for blocks`.",
+      "params": [
+        {
+          "name": "destination",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "facing",
+          "type": "TELEPORTFACING",
+          "isOptional": false
+        },
+        {
+          "name": "lookatposition",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "checkforblocks",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Teleport self, facing entity",
+      "description": "`Teleport` yourself  to a `vector` destination facing an `entity` with an optional `check for blocks`.",
+      "params": [
+        {
+          "name": "destination",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "facing",
+          "type": "TELEPORTFACING",
+          "isOptional": false
+        },
+        {
+          "name": "lookatentity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "checkforblocks",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Teleport player, x y rotation",
+      "description": "`Teleport` a target `player`  to a `vector` destination with optional `y rotation`, `x rotation`, and `check for blocks`.",
+      "params": [
+        {
+          "name": "victim",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "destination",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "yrot",
+          "type": "RVAL",
+          "isOptional": true
+        },
+        {
+          "name": "xrot",
+          "type": "RVAL",
+          "isOptional": true
+        },
+        {
+          "name": "checkforblocks",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Teleport player",
+      "description": "`Teleport` a target `player` to a `vector` destination with optional `check for blocks`.",
+      "params": [
+        {
+          "name": "victim",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "destination",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "checkforblocks",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Teleport player, facing position",
+      "description": "`Teleport` a target `player` to a `vector` destination facing a `vector` position with an optional `check for blocks`.",
+      "params": [
+        {
+          "name": "victim",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "destination",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "facing",
+          "type": "TELEPORTFACING",
+          "isOptional": false
+        },
+        {
+          "name": "lookatposition",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "checkforblocks",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Teleport player, facing entity",
+      "description": "`Teleport` player to a `vector` destination facing a `entity` with an optional `check for blocks`.",
+      "params": [
+        {
+          "name": "victim",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "destination",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "facing",
+          "type": "TELEPORTFACING",
+          "isOptional": false
+        },
+        {
+          "name": "lookatentity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "checkforblocks",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Teleport player to entity destination",
+      "description": "`Teleport` a target `player` to an entity's destination with an optional `check for blocks`.",
+      "params": [
+        {
+          "name": "destination",
+          "type": "SELECTION",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Teleport player",
+      "description": "`Teleport` a target `player` to a `vector` destination with an optional `check for blocks`.",
+      "params": [
+        {
+          "name": "victim",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "destination",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "checkforblocks",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

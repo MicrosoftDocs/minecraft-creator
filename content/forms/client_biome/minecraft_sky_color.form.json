@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:sky_color",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines the sky color for rendering"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "title": "Minecraft Sky Color",
   "description": "Sets the sky color used during rendering. Biomes without this component will have default sky color behavior.",

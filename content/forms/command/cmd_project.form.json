@@ -1,0 +1,43 @@
+{
+  "id": "cmd_project",
+  "title": "project",
+  "description": "This command contains additional tools for managing an Editor project. This command is available in Editor mode only.",
+  "fields": [
+    {
+      "id": "subcommand",
+      "title": "subcommand",
+      "type": "string",
+      "isOptional": false,
+      "description": "Signifies the start of an export-subcommand operation.",
+      "commandType": "SUBCOMMANDEXPORT"
+    },
+    {
+      "id": "exporttype",
+      "title": "exportType",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "EXPORTTYPES"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Overload 1",
+      "description": "",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "SUBCOMMANDEXPORT",
+          "isOptional": false
+        },
+        {
+          "name": "exporttype",
+          "type": "EXPORTTYPES",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": false
+}

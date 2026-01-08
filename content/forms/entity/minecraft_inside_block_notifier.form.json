@@ -1,5 +1,66 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "detects when inside specific blocks"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "block_list",
+      "title": "Block List",
+      "description": "List of blocks, with certain block states, that we are monitoring to see if the entity is inside.",
+      "dataType": 15,
+      "subForm": {
+        "id": "inside_block_entry",
+        "title": "Block Entry",
+        "fields": [
+          {
+            "id": "block",
+            "title": "Block",
+            "description": "The block to monitor, including name and optional states.",
+            "dataType": 16,
+            "subForm": {
+              "id": "block_descriptor",
+              "fields": [
+                {
+                  "id": "name",
+                  "title": "Name",
+                  "description": "The block identifier.",
+                  "dataType": 2
+                },
+                {
+                  "id": "states",
+                  "title": "States",
+                  "description": "Block states to match.",
+                  "dataType": 27
+                }
+              ]
+            }
+          },
+          {
+            "id": "entered_block_event",
+            "title": "Entered Block Event",
+            "description": "Event to fire when the entity enters the block.",
+            "dataType": 22
+          },
+          {
+            "id": "exited_block_event",
+            "title": "Exited Block Event",
+            "description": "Event to fire when the entity exits the block.",
+            "dataType": 22
+          }
+        ]
+      }
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:inside_block_notifier",
     "title": "Inside Block Notifier",

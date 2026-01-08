@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns value between 0"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.cape_flap_amount",
   "fields": [],
   "generated_doNotEdit": {

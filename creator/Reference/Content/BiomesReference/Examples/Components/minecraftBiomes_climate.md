@@ -3,13 +3,14 @@ author: mammerla
 ms.author: mikeam
 title: "Biome Documentation - minecraft:climate"
 description: "Describes the minecraft:climate biome"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Biome Documentation - minecraft:climate
 
-Describes temperature, humidity, precipitation, and similar. Biomes without this component will have default values.
+Describes temperature, humidity, precipitation, and similar climate properties for a biome. Biomes without this component will use default values. Temperature affects visual effects like snow/ice placement, sponge drying, and sky color. Downfall controls precipitation frequency and intensity.
 
 
 ## Biome Climate Properties

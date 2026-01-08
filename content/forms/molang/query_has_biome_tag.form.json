@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns whether"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.has_biome_tag",
   "description": "Returns whether or not a block placement target has a specific biome tag.",
   "fields": [],

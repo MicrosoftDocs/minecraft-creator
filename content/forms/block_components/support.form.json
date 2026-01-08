@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines support shape for fence or stair blocks"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Support",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

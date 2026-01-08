@@ -3,14 +3,17 @@ author: mammerla
 ms.author: mikeam
 title: "Visuals Documentation - minecraft:render_controller.v1.8.0"
 description: "Describes the minecraft:render_controller.v1.8.0 visual element"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Visuals Documentation - minecraft:render_controller.v1.8.0
 
+Render controllers define how entities are visually rendered, including which geometry, textures, and materials to use. They support arrays for dynamic selection based on Molang expressions, part visibility toggling, UV animations, and color tinting.
 
-## Render Controller Properties
+
+## Render Controller (v1.8.0) Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

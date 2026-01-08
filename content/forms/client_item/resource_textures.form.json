@@ -1,4 +1,16 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "title": "Item Textures",
+  "description": "Defines texture references for an item's client resources.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines textures for an item" }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "textures",

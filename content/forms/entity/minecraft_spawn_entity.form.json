@@ -1,4 +1,183 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "spawn_entity",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "periodically spawns "
+          },
+          {
+            "type": "value",
+            "field": "spawn_entity",
+            "humanify": "minecraft"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "spawn_entity",
+            "comparison": "undefined"
+          },
+          {
+            "field": "spawn_item",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "periodically spawns "
+          },
+          {
+            "type": "value",
+            "field": "spawn_item",
+            "humanify": "minecraft"
+          },
+          {
+            "type": "literal",
+            "text": " items"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "spawn_entity",
+            "comparison": "undefined"
+          },
+          {
+            "field": "spawn_item",
+            "comparison": "undefined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "periodically spawns entities or items"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "min_wait_time",
+            "comparison": "defined"
+          },
+          {
+            "field": "max_wait_time",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "waits between "
+          },
+          {
+            "type": "value",
+            "field": "min_wait_time"
+          },
+          {
+            "type": "literal",
+            "text": " and "
+          },
+          {
+            "type": "value",
+            "field": "max_wait_time"
+          },
+          {
+            "type": "literal",
+            "text": " seconds between spawns"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "num_to_spawn",
+            "comparison": ">",
+            "value": 1
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spawns "
+          },
+          {
+            "type": "value",
+            "field": "num_to_spawn"
+          },
+          {
+            "type": "literal",
+            "text": " at a time"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "single_use",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "only spawns once (single use)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "should_leash",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "leashes spawned entities to itself"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "spawn_event",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "triggers "
+          },
+          {
+            "type": "value",
+            "field": "spawn_event",
+            "humanify": "minecraft"
+          },
+          {
+            "type": "literal",
+            "text": " on spawned entities"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:spawn_entity",
@@ -377,6 +556,67 @@
                   "target": "self"
                 },
                 "single_use": true
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wandering_trader.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:spawn_entity/",
+              "content": [
+                {
+                  "min_wait_time": 0,
+                  "max_wait_time": 0,
+                  "spawn_entity": "trader_llama",
+                  "spawn_event": "minecraft:from_wandering_trader",
+                  "single_use": true,
+                  "num_to_spawn": 2,
+                  "should_leash": true
+                }
+              ]
+            }
+          ],
+          "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/",
+              "content": {
+                "min_wait_time": 300,
+                "max_wait_time": 600,
+                "spawn_sound": "plop",
+                "spawn_item": "egg",
+                "filters": {
+                  "test": "rider_count",
+                  "subject": "self",
+                  "operator": "==",
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/",
+              "content": {
+                "min_wait_time": 300,
+                "max_wait_time": 600,
+                "spawn_sound": "plop",
+                "spawn_item": "egg",
+                "filters": {
+                  "test": "rider_count",
+                  "subject": "self",
+                  "operator": "==",
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/memory_jar.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:spawn_entity/",
+              "content": {
+                "min_wait_time": 300,
+                "max_wait_time": 600,
+                "spawn_sound": "place",
+                "spawn_item": "egg"
               }
             }
           ]

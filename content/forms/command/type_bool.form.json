@@ -1,0 +1,9 @@
+{
+  "id": "type_bool",
+  "title": "Boolean",
+  "description": "A true or false value. Alias for BOOLEAN.",
+  "fields": [],
+  "aliasOf": [
+    "type_boolean"
+  ]
+}

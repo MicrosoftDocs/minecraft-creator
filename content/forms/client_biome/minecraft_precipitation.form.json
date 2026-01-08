@@ -1,10 +1,41 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:precipitation",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "controls precipitation visual effects for a biome"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "red_spores",
       "title": "Red Spores",
-      "description": "Density of red spore precipitation visuals",
+      "description": "Density of red spore precipitation visuals. Used in the crimson forest biome.",
+      "dataType": 3
+    },
+    {
+      "id": "blue_spores",
+      "title": "Blue Spores",
+      "description": "Density of blue spore precipitation visuals. Used in the warped forest biome.",
+      "dataType": 3
+    },
+    {
+      "id": "ash",
+      "title": "Ash",
+      "description": "Density of ash precipitation visuals. Used in the soul sand valley biome.",
+      "dataType": 3
+    },
+    {
+      "id": "white_ash",
+      "title": "White Ash",
+      "description": "Density of white ash precipitation visuals. Used in the basalt deltas biome.",
       "dataType": 3
     }
   ],

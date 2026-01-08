@@ -1,0 +1,94 @@
+{
+  "id": "minecraft:behavior.look_at_target",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.look_at_target",
+    "title": "Entity Look At Target Behavior",
+    "description": "Allows the mob to look at the entity they are targeting.",
+    "fields": [
+      {
+        "id": "angle_of_view_horizontal",
+        "title": "Angle Of View Horizontal",
+        "description": "The angle in degrees that the mob can see rotated on the Y-axis (left-right).",
+        "dataType": 0,
+        "defaultValue": 360,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 360
+          }
+        ]
+      },
+      {
+        "id": "angle_of_view_vertical",
+        "title": "Angle Of View Vertical",
+        "description": "The angle in degrees that the mob can see rotated on the X-axis (up-down).",
+        "dataType": 0,
+        "defaultValue": 360,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 360
+          }
+        ]
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "look_distance",
+        "title": "Look Distance",
+        "description": "The distance in blocks from which the entity will look at the nearest entity.",
+        "dataType": 3,
+        "defaultValue": 8
+      },
+      {
+        "id": "look_time",
+        "title": "Look Time",
+        "description": "Time range to look at the nearest entity.",
+        "dataType": 16,
+        "defaultValue": {
+          "max": 4,
+          "min": 2
+        },
+        "subFormId": "item_components/floatrange"
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "probability",
+        "title": "Probability",
+        "description": "The probability of looking at the target. A value of 1.00 is 100%.",
+        "dataType": 3,
+        "defaultValue": 0.019999999552965164,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  }
+}

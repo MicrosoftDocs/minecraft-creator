@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns world height at specified X and Z coordinates"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.heightmap",
   "fields": [],
   "description": "Returns the world height (Y value) of the terrain at the specified position. Takes two arguments: X and Z world values.",

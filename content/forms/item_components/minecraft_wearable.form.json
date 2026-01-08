@@ -1,4 +1,27 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "slot",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be worn in "
+          },
+          {
+            "type": "value",
+            "field": "slot"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "slot",
@@ -11,8 +34,8 @@
       "isDeprecated": true
     }
   ],
-  "description": "Sets the wearable item component.",
-  "note": "Here are the following equipment slots that can be set for the value of slot: slot.weapon.mainhand, slot.weapon.offhand, slot.armor.head, slot.armor.chest, slot.armor.legs, slot.armor.feet, slot.hotbar, slot.inventory, slot.enderchest, slot.saddle, slot.armor, slot.chest, slot.equippable",
+  "description": "Sets the wearable item component, which allows an item to be worn by a player in a specified equipment slot.",
+  "note": "Valid equipment slots are: slot.armor.head, slot.armor.chest, slot.armor.legs, slot.armor.feet, slot.armor.body, and slot.weapon.offhand. When a non-hand armor slot is used, the max stack size is automatically set to 1.",
   "generated_doNotEdit": {
     "title": "Wearable",
     "description": "Wearable items can be worn by a player in the head, chest, legs, feet, or off-hand slots.",

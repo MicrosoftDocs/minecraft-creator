@@ -1,0 +1,27 @@
+{
+  "id": "type_player_selector",
+  "title": "Player Selector",
+  "description": "Targets one or more players. Similar to entity selector but only matches players.",
+  "fields": [],
+  "formatHint": "@a, @p, @r, or @s",
+  "samples": {
+    "values": [
+      {
+        "path": "All players",
+        "content": "@a"
+      },
+      {
+        "path": "Nearest player",
+        "content": "@p"
+      },
+      {
+        "path": "Random player",
+        "content": "@r"
+      },
+      {
+        "path": "Self (if executor is a player)",
+        "content": "@s"
+      }
+    ]
+  }
+}

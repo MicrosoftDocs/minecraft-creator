@@ -30,13 +30,6 @@ Initial expander state of sub pane. If undefined, it will default to false.
 
 Type: *boolean*
 
-### **direction**
-`direction?: LayoutDirection;`
-
-Determines layout direction of sub pane property items. If undefined, it will default to Vertical.
-
-Type: *LayoutDirection*
-
 ### **hasExpander**
 `hasExpander?: boolean;`
 
@@ -50,3 +43,31 @@ Type: *boolean*
 Adds additional margins to sub pane. If undefined, it will default to true.
 
 Type: *boolean*
+
+### **layout**
+`layout?: PaneLayoutType;`
+
+Determines layout of sub pane property items. If undefined, it will default to Vertical.
+
+Type: *PaneLayoutType*
+
+### **maxHeight**
+`maxHeight?: number;`
+
+Maximum height of the property item.
+
+Type: *number*
+
+### **scrollable**
+`scrollable?: boolean;`
+
+Enables scrolling for the pane if it has a max height defined.
+
+Type: *boolean*
+
+### **width**
+`width?: number | LayoutSize;`
+
+Custom width of the property item.
+
+Type: *number* | *LayoutSize*

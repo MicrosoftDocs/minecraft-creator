@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines jigsawstructuremetadata configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "JigsawStructureMetadata",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -27,5 +40,6 @@
         "dataType": 1
       }
     ]
-  }
+  },
+  "description": "Defines jigsawstructuremetadata configuration."
 }

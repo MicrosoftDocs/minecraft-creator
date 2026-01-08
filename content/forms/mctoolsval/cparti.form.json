@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates particle effect identifier formatting"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "cparti",
+  "title": "Particle Identifiers",
+  "description": "Validates particle effect identifiers for proper namespace formatting. Particle identifiers should follow the creator:name convention.",
+  "fields": [
+    {
+      "id": "101",
+      "title": "File Read Error",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when the particle JSON file could not be read. Check file permissions and format.",
+      "technicalDescription": "Data contains the path to the unreadable file"
+    },
+    {
+      "id": "102",
+      "title": "Version Read Error",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when the format_version field could not be read from the particle definition.",
+      "technicalDescription": "Data contains details about the version parsing failure"
+    },
+    {
+      "id": "103",
+      "title": "Invalid Identifier",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a particle identifier doesn't follow the expected namespace:name format. Use your creator namespace prefix (e.g., mypack:custom_particle).",
+      "technicalDescription": "Data contains the invalid particle identifier"
+    }
+  ]
+}

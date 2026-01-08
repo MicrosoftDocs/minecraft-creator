@@ -1,6 +1,61 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:fossil_feature",
   "description": "Generates a skeletal structure composed of bone blocks and parametric ore blocks. Succeeds if the fossil is placed. Fails if the fossil is not placed because it overlaps with another structure or because its bounding box has too many corners occupied by air or fluid.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "generates buried skeletal fossil formations"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "ore_block",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "replaces some bones with "
+          },
+          {
+            "type": "value",
+            "field": "ore_block",
+            "humanify": "minecraft"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "max_empty_corners",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "requires at least "
+          },
+          {
+            "type": "value",
+            "field": "max_empty_corners"
+          },
+          {
+            "type": "literal",
+            "text": " solid corners to generate"
+          }
+        ],
+        "priority": 3
+      }
+    ]
+  },
   "fields": [
     {
       "id": "format_version",

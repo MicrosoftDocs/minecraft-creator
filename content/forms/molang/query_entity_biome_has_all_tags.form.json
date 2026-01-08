@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns entity biome has all tags information"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.entity_biome_has_all_tags",
   "fields": [],
   "generated_doNotEdit": {

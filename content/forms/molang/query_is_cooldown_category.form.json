@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if held or worn item has specified cooldown category"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_cooldown_category",
   "fields": [],
   "generated_doNotEdit": {

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can climb scaffolding blocks"
+          }
+        ]
+      }
+    ]
+  },
   "description": "Allows the player to detect and manuever on the scaffolding block.",
   "fields": [],
   "generated_doNotEdit": {

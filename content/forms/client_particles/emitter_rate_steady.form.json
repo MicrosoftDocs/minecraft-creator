@@ -1,5 +1,31 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "emits particles at a steady spawn rate"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "max_particles",
+      "title": "Max Particles",
+      "description": "The maximum number of particles that can exist at once. Can be a number or Molang expression.",
+      "dataType": 34
+    },
+    {
+      "id": "spawn_rate",
+      "title": "Spawn Rate",
+      "description": "The number of particles to spawn per second. Can be a number or Molang expression.",
+      "dataType": 34
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_rate_steady",
     "title": "Client Particles Emitter Rate Steady",
@@ -75,5 +101,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Continuously spawns particles at a consistent rate over time. The spawn_rate controls how many particles appear per second, while max_particles limits the total active count. This is the most common emission mode, used for ongoing effects like torch flames, mob auras, weather effects, potion bubbles, and ambient environmental particles."
 }

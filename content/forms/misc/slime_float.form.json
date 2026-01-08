@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines behavior.slime float configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.slime_float",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

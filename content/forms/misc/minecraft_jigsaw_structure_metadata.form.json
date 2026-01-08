@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines jigsaw structure metadata component"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:jigsaw_structure_metadata",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -21,5 +34,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines jigsaw structure metadata component."
 }

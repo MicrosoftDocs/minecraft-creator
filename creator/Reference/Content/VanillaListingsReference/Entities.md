@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Default Minecraft Entity Listings"
 description: "A reference document detailing the entities and damage sources used in addons for Minecraft: Bedrock Edition"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -37,7 +38,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | [breeze](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/breeze.json) | 2956 | 140 |
 | [breeze_wind_charge_projectile](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/breeze_wind_charge_projectile.json) | 4194445 | 141 |
 | [camel](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/camel.json) | 5002 | 138 |
-| [camel_husk](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/camel_husk.json) | 68504 | 152 |
+| [camel_husk](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/camel_husk.json) | 70552 | 152 |
 | [cat](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/cat.json) | 21323 | 75 |
 | [cave_spider](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/cave_spider.json) | 265000 | 40 |
 | chalkboard | 78 | 78 |
@@ -118,7 +119,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | [shulker_bullet](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/shulker_bullet.json) | 4194380 | 76 |
 | [silverfish](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/silverfish.json) | 264999 | 39 |
 | [skeleton](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/skeleton.json) | 1116962 | 34 |
-| [skeleton_horse](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/skeleton_horse.json) | 2186010 | 26 |
+| [skeleton_horse](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/skeleton_horse.json) | 2183962 | 26 |
 | [slime](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/slime.json) | 2853 | 37 |
 | [small_fireball](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/small_fireball.json) | 4194398 | 94 |
 | [sniffer](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/sniffer.json) | 5003 | 139 |
@@ -155,8 +156,8 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | [xp_orb](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/xp_orb.json) | 69 | 69 |
 | [zoglin](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/zoglin.json) | 68478 | 126 |
 | [zombie](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/zombie.json) | 199456 | 32 |
-| [zombie_horse](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/zombie_horse.json) | 2186011 | 27 |
-| [zombie_nautilus](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/zombie_nautilus.json) | 76694 | 150 |
+| [zombie_horse](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/zombie_horse.json) | 2183963 | 27 |
+| [zombie_nautilus](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/zombie_nautilus.json) | 74646 | 150 |
 | [zombie_pigman](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/zombie_pigman.json) | 68388 | 36 |
 | [zombie_villager](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/zombie_villager.json) | 199468 | 44 |
 | [zombie_villager_v2](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/zombie_villager_v2.json) | 199540 | 116 |

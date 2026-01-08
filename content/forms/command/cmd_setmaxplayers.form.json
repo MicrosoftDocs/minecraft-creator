@@ -1,0 +1,32 @@
+{
+  "id": "cmd_setmaxplayers",
+  "title": "setmaxplayers",
+  "description": "Sets the maximum number of players for this game session.",
+  "fields": [
+    {
+      "id": "maxplayers",
+      "title": "maxPlayers",
+      "type": "string",
+      "isOptional": false,
+      "description": "An `integer` that defines the new max number of players. Subject to the maximum number of connections the game allows.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Set max players",
+      "description": "Set the maximum number of players for this game session.",
+      "params": [
+        {
+          "name": "maxplayers",
+          "type": "INT",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 3,
+  "requiresCheats": true
+}

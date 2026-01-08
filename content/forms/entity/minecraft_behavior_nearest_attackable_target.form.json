@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "targets the nearest attackable entity"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "attack_interval|attack_interval_min",
@@ -48,8 +61,8 @@
           },
           {
             "id": "reevaluate_description",
-            "title": "Reevaluate Description",
-            "description": "If true, the mob will stop being targeted if it stops meeting any conditions.",
+            "title": "Reevaluate Target",
+            "description": "If true, the targeting entity will continuously reevaluate the target and stop attacking if the target no longer meets the filter conditions.",
             "defaultValue": false,
             "dataType": 1
           },

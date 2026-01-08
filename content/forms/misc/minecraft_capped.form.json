@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines capped component"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:capped",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

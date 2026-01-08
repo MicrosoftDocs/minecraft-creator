@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines how the block reacts to pistons"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Movable",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

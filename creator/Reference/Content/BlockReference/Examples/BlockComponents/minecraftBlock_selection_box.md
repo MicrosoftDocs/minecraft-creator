@@ -3,13 +3,14 @@ author: mammerla
 ms.author: mikeam
 title: "Block Components Documentation - minecraft:selection_box"
 description: "Describes the minecraft:selection_box block component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Block Components Documentation - minecraft:selection_box
 
-Defines the area of the block that is selected by the player's cursor. If set to true, default values are used. If set to false, this block is not selectable by the player's cursor. If this component is omitted, default values are used.
+Defines the area of the block that is selected by the player's cursor (the outline shown when looking at the block). If set to true, default values are used (a full 16x16x16 block). If set to false, this block is not selectable by the player's cursor. If this component is omitted, default values are used.
 
 ## Alternate Simple Representations
 

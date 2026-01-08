@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "title": "Render Controller Set",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "controls part visibility for entity rendering"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "render_controllers",
@@ -18,5 +31,6 @@
         ]
       }
     }
-  ]
+  ],
+  "description": "Controls part visibility for entity rendering."
 }

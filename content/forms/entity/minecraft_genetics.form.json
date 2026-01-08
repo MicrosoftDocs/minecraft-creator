@@ -1,4 +1,115 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has genetic traits passed through breeding"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "genes",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "with "
+          },
+          {
+            "type": "value",
+            "field": "genes.length"
+          },
+          {
+            "type": "plural",
+            "countField": "genes.length",
+            "singular": [
+              {
+                "type": "literal",
+                "text": " gene"
+              }
+            ],
+            "plural": [
+              {
+                "type": "literal",
+                "text": " genes"
+              }
+            ],
+            "includeCount": false
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "genes[0].mutation_rate",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "genes[0].mutation_rate",
+                    "comparison": ">",
+                    "value": 0.5
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "with high mutation rate ("
+                  },
+                  {
+                    "type": "value",
+                    "field": "genes[0].mutation_rate"
+                  },
+                  {
+                    "type": "literal",
+                    "text": ")"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "genes[0].mutation_rate",
+                    "comparison": ">",
+                    "value": 0
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "with mutation rate of "
+                  },
+                  {
+                    "type": "value",
+                    "field": "genes[0].mutation_rate"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "with no mutations"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "genes",
@@ -10,8 +121,28 @@
           {
             "id": "allele_range",
             "title": "Allele Range",
-            "description": "The range of positive integer allele values for this gene. Spawned mobs will have a random number in this range assigned to them.",
-            "dataType": 0
+            "description": "The range of positive integer allele values for this gene. Spawned mobs will have a random number in this range assigned to them. Can be a single integer or an object with range_min and range_max properties.",
+            "dataType": 0,
+            "alternates": [
+              {
+                "id": "allele_range",
+                "dataType": 16,
+                "subForm": {
+                  "fields": [
+                    {
+                      "id": "range_min",
+                      "dataType": 0,
+                      "description": "Minimum allele value"
+                    },
+                    {
+                      "id": "range_max",
+                      "dataType": 0,
+                      "description": "Maximum allele value"
+                    }
+                  ]
+                }
+              }
+            ]
           },
           {
             "id": "genetic_variants",
@@ -32,28 +163,108 @@
                   "title": "Both Allele",
                   "description": "If this value is non-negative, compare both the mob's main and hidden alleles with this value for a match with both. Can also be a range of integers.",
                   "defaultValue": -1,
-                  "dataType": 0
+                  "dataType": 0,
+                  "alternates": [
+                    {
+                      "id": "both_allele",
+                      "dataType": 16,
+                      "subForm": {
+                        "fields": [
+                          {
+                            "id": "range_min",
+                            "dataType": 0,
+                            "description": "Minimum allele value"
+                          },
+                          {
+                            "id": "range_max",
+                            "dataType": 0,
+                            "description": "Maximum allele value"
+                          }
+                        ]
+                      }
+                    }
+                  ]
                 },
                 {
                   "id": "either_allele",
                   "title": "Either Allele",
                   "description": "If this value is non-negative, compare both the mob's main and hidden alleles with this value for a match with either. Can also be a range of integers.",
                   "defaultValue": -1,
-                  "dataType": 0
+                  "dataType": 0,
+                  "alternates": [
+                    {
+                      "id": "either_allele",
+                      "dataType": 16,
+                      "subForm": {
+                        "fields": [
+                          {
+                            "id": "range_min",
+                            "dataType": 0,
+                            "description": "Minimum allele value"
+                          },
+                          {
+                            "id": "range_max",
+                            "dataType": 0,
+                            "description": "Maximum allele value"
+                          }
+                        ]
+                      }
+                    }
+                  ]
                 },
                 {
                   "id": "hidden_allele",
                   "title": "Hidden Allele",
                   "description": "If this value is non-negative, compare the mob's hidden allele with this value for a match. Can also be a range of integers.",
                   "defaultValue": -1,
-                  "dataType": 0
+                  "dataType": 0,
+                  "alternates": [
+                    {
+                      "id": "hidden_allele",
+                      "dataType": 16,
+                      "subForm": {
+                        "fields": [
+                          {
+                            "id": "range_min",
+                            "dataType": 0,
+                            "description": "Minimum allele value"
+                          },
+                          {
+                            "id": "range_max",
+                            "dataType": 0,
+                            "description": "Maximum allele value"
+                          }
+                        ]
+                      }
+                    }
+                  ]
                 },
                 {
                   "id": "main_allele",
                   "title": "Main Allele",
                   "description": "If this value is non-negative, compare the mob's main allele with this value for a match. Can also be a range of integers.",
                   "defaultValue": -1,
-                  "dataType": 0
+                  "dataType": 0,
+                  "alternates": [
+                    {
+                      "id": "main_allele",
+                      "dataType": 16,
+                      "subForm": {
+                        "fields": [
+                          {
+                            "id": "range_min",
+                            "dataType": 0,
+                            "description": "Minimum allele value"
+                          },
+                          {
+                            "id": "range_max",
+                            "dataType": 0,
+                            "description": "Maximum allele value"
+                          }
+                        ]
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -75,7 +286,7 @@
             "id": "use_simplified_breeding",
             "title": "Use Simplified Breeding",
             "description": "If true, mobs spawned from breeding will always inherit main alleles from parents' main alleles and hidden alleles from the hidden ones.",
-            "dataType": 2
+            "dataType": 1
           }
         ]
       }
@@ -204,6 +415,70 @@
                 }
               ]
             }
+          ],
+          "/vanilla/behavior_pack/entities/panda.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:genetics/",
+              "content": [
+                {
+                  "name": "panda_variant",
+                  "allele_range": {
+                    "range_min": 0,
+                    "range_max": 15
+                  },
+                  "genetic_variants": [
+                    {
+                      "main_allele": 0,
+                      "birth_event": {
+                        "event": "minecraft:panda_lazy",
+                        "target": "self"
+                      }
+                    },
+                    {
+                      "main_allele": 1,
+                      "birth_event": {
+                        "event": "minecraft:panda_worried",
+                        "target": "self"
+                      }
+                    },
+                    {
+                      "main_allele": 2,
+                      "birth_event": {
+                        "event": "minecraft:panda_playful",
+                        "target": "self"
+                      }
+                    },
+                    {
+                      "main_allele": 3,
+                      "birth_event": {
+                        "event": "minecraft:panda_aggressive",
+                        "target": "self"
+                      }
+                    },
+                    {
+                      "both_allele": {
+                        "range_min": 4,
+                        "range_max": 7
+                      },
+                      "birth_event": {
+                        "event": "minecraft:panda_weak",
+                        "target": "self"
+                      }
+                    },
+                    {
+                      "both_allele": {
+                        "range_min": 8,
+                        "range_max": 9
+                      },
+                      "birth_event": {
+                        "event": "minecraft:panda_brown",
+                        "target": "self"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         }
       },
@@ -212,7 +487,21 @@
         "title": "Mutation Rate",
         "description": "Chance that an allele will be replaced with a random one instead of the parent's allele during birth.",
         "defaultValue": 0.03125,
-        "dataType": 3
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:genetics/",
+              "content": 0.02
+            }
+          ],
+          "/vanilla/behavior_pack/entities/panda.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:genetics/",
+              "content": 0.03125
+            }
+          ]
+        }
       }
     ],
     "samples": {

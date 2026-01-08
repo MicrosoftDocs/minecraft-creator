@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns structural integrity for the entity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.structural_integrity",
   "fields": [],
   "description": "Returns the structural integrity for the entity, otherwise returns 0. Generally applies to the minecart.",

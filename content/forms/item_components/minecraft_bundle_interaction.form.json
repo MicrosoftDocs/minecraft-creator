@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "functions as a bundle"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "versionIntroduced": "1.21.40",
   "description": "Enables the bundle-specific interaction scheme and tooltip for an item.",

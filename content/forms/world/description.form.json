@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Description",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines the identifier for a template pool used by Jigsaw Structures"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Description",
@@ -13,5 +26,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines the identifier for a template pool used by Jigsaw Structures."
 }

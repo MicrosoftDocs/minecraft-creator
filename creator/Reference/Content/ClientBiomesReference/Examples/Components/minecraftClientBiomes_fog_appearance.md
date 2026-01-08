@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Client Biome Documentation - minecraft:fog_appearance"
 description: "Describes the minecraft:fog_appearance client biome"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

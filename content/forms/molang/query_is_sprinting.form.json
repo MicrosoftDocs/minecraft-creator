@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is sprinting"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_sprinting",
   "fields": [],
   "description": "Returns 1.0 if the entity is sprinting, else it returns 0.0. Applies generally to players, piglins, and rabbits.",

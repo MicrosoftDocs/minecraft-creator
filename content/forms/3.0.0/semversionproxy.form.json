@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "3.0.0.SemVersionProxy",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies a semantic version with major, minor, patch, and pre-release components"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "3.0.0.SemVersionProxy",
@@ -36,5 +49,6 @@
         "defaultValue": ""
       }
     ]
-  }
+  },
+  "description": "Represents a semantic version number (major.minor.patch format). Minecraft uses these for pack versions, dependency version requirements, and API version targeting. Increment major for breaking changes, minor for features, patch for fixes."
 }

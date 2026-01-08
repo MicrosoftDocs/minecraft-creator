@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Rule Geometry Part",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies a geometry part for culling"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Rule Geometry Part",
@@ -48,5 +61,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Specifies a geometry part for culling."
 }

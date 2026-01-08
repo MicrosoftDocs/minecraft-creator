@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.0-beta.25 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.0-beta.27 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -62,7 +62,8 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.0-b
 - [KeyboardKey](KeyboardKey.md)
 - [KeyProcessingState](KeyProcessingState.md)
 - [LayoutAlignment](LayoutAlignment.md)
-- [LayoutDirection](LayoutDirection.md)
+- [LayoutFlex](LayoutFlex.md)
+- [LayoutSizeType](LayoutSizeType.md)
 - [ListPaneEntryType](ListPaneEntryType.md)
 - [ListPaneViewSortType](ListPaneViewSortType.md)
 - [LogChannel](LogChannel.md)
@@ -76,6 +77,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.0-b
 - [NumberPropertyItemVariant](NumberPropertyItemVariant.md)
 - [PaintCompletionState](PaintCompletionState.md)
 - [PaintMode](PaintMode.md)
+- [PaneLayoutType](PaneLayoutType.md)
 - [Plane](Plane.md)
 - [PlaytestSessionResult](PlaytestSessionResult.md)
 - [PrimitiveType](PrimitiveType.md)
@@ -135,6 +137,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.0-b
 - [MouseProps](MouseProps.md)
 - [MouseRayCastAction](MouseRayCastAction.md)
 - [NoArgsAction](NoArgsAction.md)
+- [PaneItemStyle](PaneItemStyle.md)
 - [PropertyBag](PropertyBag.md)
 - [PropertyPaneVisibilityUpdate](PropertyPaneVisibilityUpdate.md)
 - [Ray](Ray.md)

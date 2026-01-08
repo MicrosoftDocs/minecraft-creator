@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "aligns its rotation to the nearest cardinal direction"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:rotation_axis_aligned",
   "fields": [],
   "generated_doNotEdit": {

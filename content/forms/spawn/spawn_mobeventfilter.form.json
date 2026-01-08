@@ -1,5 +1,32 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Spawn MobEventFilter",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "event",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spawns when event "
+          },
+          {
+            "type": "value",
+            "field": "event"
+          },
+          {
+            "type": "literal",
+            "text": " is active"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn MobEventFilter",
@@ -12,5 +39,6 @@
         "defaultValue": ""
       }
     ]
-  }
+  },
+  "description": "Controls spawning based on whether a specific mob event is active. Mob events are world-level toggles (like raids or wandering traders) that can enable or disable certain spawn behaviors."
 }

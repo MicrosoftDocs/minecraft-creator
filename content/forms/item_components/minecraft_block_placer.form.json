@@ -1,4 +1,27 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "block",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "places "
+          },
+          {
+            "type": "value",
+            "field": "block"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "description": "Sets the item as a planter item component for blocks. Items with this component will place a block when used.",
   "note": "This component can also be used instead of the minecraft:icon component to render the block this item will place as the icon.",

@@ -1,4 +1,133 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "duration",
+            "comparison": ">=",
+            "value": 60
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can become angry and stays hostile for a long time ("
+          },
+          {
+            "type": "value",
+            "field": "duration"
+          },
+          {
+            "type": "literal",
+            "text": " seconds)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "duration",
+            "comparison": "<",
+            "value": 60
+          },
+          {
+            "field": "duration",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can become angry for "
+          },
+          {
+            "type": "value",
+            "field": "duration"
+          },
+          {
+            "type": "literal",
+            "text": " seconds"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "duration",
+            "comparison": "undefined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can become angry when provoked"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "broadcast_anger",
+            "comparison": "==",
+            "value": true
+          },
+          {
+            "field": "broadcast_range",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "alerts allies within "
+          },
+          {
+            "type": "value",
+            "field": "broadcast_range"
+          },
+          {
+            "type": "literal",
+            "text": " blocks when angered"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "broadcast_anger",
+            "comparison": "==",
+            "value": true
+          },
+          {
+            "field": "broadcast_range",
+            "comparison": "undefined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "alerts nearby allies when angered"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "angry_sound",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "makes an angry sound when provoked"
+          }
+        ]
+      }
+    ]
+  },
   "description": "Defines an entity's 'angry' state using a timer.",
   "fields": [
     {

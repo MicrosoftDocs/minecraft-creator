@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "grants regeneration when killing targets"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "description": "Gives `Regeneration I` and removes `Mining Fatigue` from the mob that kills the entity's attack target.",
   "generated_doNotEdit": {

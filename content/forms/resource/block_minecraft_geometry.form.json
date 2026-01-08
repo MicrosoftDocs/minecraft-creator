@@ -1,6 +1,16 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "title": "Geometry",
   "description": "Specifies the geometry description identifier to use to render this block.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "specifies the geometry model used to render this block" }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "identifier",

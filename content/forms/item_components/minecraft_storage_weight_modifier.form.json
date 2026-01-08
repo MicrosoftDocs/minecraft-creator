@@ -1,5 +1,32 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:storage_weight_modifier",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "weight_in_storage_item",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "weighs "
+          },
+          {
+            "type": "value",
+            "field": "weight_in_storage_item"
+          },
+          {
+            "type": "literal",
+            "text": " when stored"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:storage_weight_modifier",

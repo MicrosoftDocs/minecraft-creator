@@ -1,5 +1,104 @@
 {
-  "title": "Geometry",
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "identifier",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "identifier",
+                    "comparison": "=",
+                    "value": "minecraft:geometry.full_block"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "uses standard full block geometry"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "identifier",
+                    "comparison": "=",
+                    "value": "minecraft:geometry.cross"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "uses cross geometry (like flowers/grass)"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "uses custom geometry '"
+              },
+              {
+                "type": "value",
+                "field": "identifier"
+              },
+              {
+                "type": "literal",
+                "text": "'"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "bone_visibility",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has conditional bone visibility"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "culling",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses culling rule '"
+          },
+          {
+            "type": "value",
+            "field": "culling"
+          },
+          {
+            "type": "literal",
+            "text": "'"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "visual"
   ],

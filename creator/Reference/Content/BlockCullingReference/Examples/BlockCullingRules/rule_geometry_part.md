@@ -3,11 +3,14 @@ author: mammerla
 ms.author: mikeam
 title: "Block Culling Documentation - minecraft:rule_geometry_part"
 description: "Describes the minecraft:rule_geometry_part block culling"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Block Culling Documentation - minecraft:rule_geometry_part
+
+Specifies a geometry part for culling.
 
 
 ## Client Block Rule Geometry Part Properties

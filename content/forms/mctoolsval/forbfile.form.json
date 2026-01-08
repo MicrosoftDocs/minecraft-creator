@@ -1,0 +1,56 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates that packs contain only allowed file types"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "mctoolsval/forbfile",
+  "title": "Forbidden Files",
+  "description": "Validates that packs only contain files with allowed extensions and do not include blocked file names or invalid characters. Different pack types (behavior pack, resource pack, world template) have different allowed file type lists.",
+  "fields": [
+    {
+      "id": "101",
+      "title": "File Read Error",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "The validator was unable to read the file. This may indicate file corruption or access issues.",
+      "howToUse": "Check if the file is locked by another program or if you have read permissions. Try closing other applications that might be using the file, or check the file isn't corrupted.",
+      "technicalDescription": "Data contains the path to the unreadable file"
+    },
+    {
+      "id": "102",
+      "title": "Invalid Extension",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "The file has an extension that is not in the allowed list for this pack type. Remove the file or convert it to an allowed format. Behavior packs, resource packs, and world templates each have specific lists of allowed file extensions.",
+      "howToUse": "Either remove the file from your pack, or convert it to an allowed format. For behavior packs: .json, .js, .ts are allowed. For resource packs: .json, .png, .tga, .fsb, .ogg, etc. Check documentation for the complete list.",
+      "technicalDescription": "Data contains the file extension that is not allowed"
+    },
+    {
+      "id": "103",
+      "title": "Blocked Filename",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "The file name is on the blocked list and cannot be included in the pack. Certain file names are reserved or prohibited for security or compatibility reasons. Rename or remove the file.",
+      "howToUse": "Rename the file to avoid using reserved or prohibited names. Common blocked names include system files like Thumbs.db, .DS_Store, and desktop.ini.",
+      "technicalDescription": "Data contains the blocked file name"
+    },
+    {
+      "id": "104",
+      "title": "Invalid Character",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "The file path contains a '$' character which is not allowed in pack file paths. Rename the file or folder to remove the invalid character.",
+      "howToUse": "Rename the file or folder to remove the '$' character. Use only alphanumeric characters, underscores, and hyphens in file and folder names.",
+      "technicalDescription": "Data contains the file path with the invalid character"
+    }
+  ]
+}

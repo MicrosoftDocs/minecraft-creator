@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Actions Documentation - minecraft:remove_component_group"
 description: "Describes the minecraft:remove_component_group entity action types"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

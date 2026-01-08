@@ -1,0 +1,157 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "JigsawStructure",
+  "title": "Jigsaw Structure",
+  "description": "Defines a jigsaw structure that generates in the world using template pools and structure sets.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines a jigsaw structure using template pools and biome filters" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of this jigsaw structure definition.",
+      "dataType": 2,
+      "isRequired": true
+    },
+    {
+      "id": "minecraft:jigsaw",
+      "title": "Jigsaw Definition",
+      "description": "The jigsaw structure definition.",
+      "dataType": 16,
+      "isRequired": true,
+      "subForm": {
+        "id": "jigsaw_definition",
+        "fields": [
+          {
+            "id": "description",
+            "title": "Description",
+            "description": "The description block containing the structure identifier.",
+            "dataType": 16,
+            "isRequired": true,
+            "subFormId": "jigsaw/jigsawstructuredefinition_description"
+          },
+          {
+            "id": "biome_filters",
+            "title": "Biome Filters",
+            "description": "Array of filter conditions that determine which biomes can generate this structure.",
+            "dataType": 15,
+            "subFormId": "entityfilters/filter_test"
+          },
+          {
+            "id": "step",
+            "title": "Generation Step",
+            "description": "The world generation step during which this structure generates. Valid values: 'raw_generation', 'lakes', 'local_modifications', 'underground_structures', 'surface_structures', 'strongholds', 'underground_ores', 'underground_decoration', 'fluid_springs', 'vegetal_decoration', 'top_layer_modification'.",
+            "dataType": 2,
+            "isRequired": true
+          },
+          {
+            "id": "terrain_adaptation",
+            "title": "Terrain Adaptation",
+            "description": "How the structure adapts to terrain. Valid values: 'none', 'beard_thin', 'beard_box', 'bury', 'encapsulate'.",
+            "dataType": 2
+          },
+          {
+            "id": "start_pool",
+            "title": "Start Pool",
+            "description": "The identifier of the template pool to use as the starting point for structure generation.",
+            "dataType": 2,
+            "isRequired": true
+          },
+          {
+            "id": "max_depth",
+            "title": "Maximum Depth",
+            "description": "Maximum recursion depth for jigsaw piece connections. Higher values allow more complex structures.",
+            "dataType": 0,
+            "defaultValue": 7,
+            "minValue": 1,
+            "maxValue": 20
+          },
+          {
+            "id": "max_distance_from_center",
+            "title": "Maximum Distance From Center",
+            "description": "Maximum horizontal and vertical distance pieces can generate from the structure center.",
+            "dataType": 16,
+            "subForm": {
+              "id": "max_distance",
+              "fields": [
+                {
+                  "id": "horizontal",
+                  "title": "Horizontal",
+                  "description": "Maximum horizontal distance in blocks.",
+                  "dataType": 0,
+                  "defaultValue": 80
+                },
+                {
+                  "id": "vertical",
+                  "title": "Vertical",
+                  "description": "Maximum vertical distance in blocks.",
+                  "dataType": 0,
+                  "defaultValue": 80
+                }
+              ]
+            }
+          },
+          {
+            "id": "start_height",
+            "title": "Start Height",
+            "description": "The height at which the structure starts generating.",
+            "dataType": 16,
+            "subForm": {
+              "id": "start_height",
+              "fields": [
+                {
+                  "id": "type",
+                  "title": "Type",
+                  "description": "Height provider type. Valid values: 'constant', 'uniform', 'biased_to_bottom', 'very_biased_to_bottom', 'trapezoid', 'weighted_list'.",
+                  "dataType": 2
+                },
+                {
+                  "id": "value",
+                  "title": "Value",
+                  "description": "The height value or configuration.",
+                  "dataType": 16,
+                  "subForm": {
+                    "id": "height_value",
+                    "fields": [
+                      {
+                        "id": "absolute",
+                        "title": "Absolute",
+                        "description": "Fixed Y coordinate.",
+                        "dataType": 0
+                      },
+                      {
+                        "id": "above_bottom",
+                        "title": "Above Bottom",
+                        "description": "Distance above world bottom.",
+                        "dataType": 0
+                      },
+                      {
+                        "id": "below_top",
+                        "title": "Below Top",
+                        "description": "Distance below world top.",
+                        "dataType": 0
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "heightmap_projection",
+            "title": "Heightmap Projection",
+            "description": "Which heightmap to use for surface placement. Valid values: 'world_surface', 'world_surface_wg', 'ocean_floor', 'ocean_floor_wg', 'motion_blocking', 'motion_blocking_no_leaves'.",
+            "dataType": 2
+          }
+        ]
+      }
+    }
+  ]
+}

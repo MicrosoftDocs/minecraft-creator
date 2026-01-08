@@ -1,0 +1,95 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "analyzes pack file sizes and counts against platform limits"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "packsize",
+  "title": "Pack Size",
+  "description": "Analyzes pack file sizes and counts to ensure content fits within platform limits. Large packs can cause download issues and slow loading times on mobile devices.",
+  "fields": [
+    {
+      "id": "101",
+      "title": "Total Size",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Total size in bytes of all files in the pack, including non-content files.",
+      "technicalDescription": "Data contains the size in bytes as a number"
+    },
+    {
+      "id": "102",
+      "title": "File Count",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Total number of files in the pack.",
+      "technicalDescription": "Data contains the file count as a number"
+    },
+    {
+      "id": "103",
+      "title": "Folder Count",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Total number of folders in the pack.",
+      "technicalDescription": "Data contains the folder count as a number"
+    },
+    {
+      "id": "104",
+      "title": "Content Size",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Total size in bytes of content files only (JSON, images, sounds, etc.), excluding system files.",
+      "technicalDescription": "Data contains the content size in bytes as a number"
+    },
+    {
+      "id": "105",
+      "title": "Content Files",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Number of content files in the pack.",
+      "technicalDescription": "Data contains the content file count as a number"
+    },
+    {
+      "id": "106",
+      "title": "Content Folders",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Number of content folders in the pack.",
+      "technicalDescription": "Data contains the content folder count as a number"
+    },
+    {
+      "id": "401",
+      "title": "Addon Size Warning",
+      "messageType": 1,
+      "dataType": 6,
+      "description": "Warning when the add-on exceeds recommended size limits. Large add-ons may have issues on mobile platforms or with Realms uploads.",
+      "howToUse": "Reduce pack size by compressing textures, removing unused assets, or splitting into multiple packs. Target under 100MB for best mobile compatibility.",
+      "technicalDescription": "Data contains the size that exceeds the limit"
+    },
+    {
+      "id": "402",
+      "title": "Package Size Warning",
+      "messageType": 1,
+      "dataType": 6,
+      "description": "Warning when the packaged content (.mcaddon/.mcpack) exceeds recommended size limits for distribution.",
+      "howToUse": "Compress textures to reduce file size, use lower resolution for mobile targets, and remove any development/debug files before packaging.",
+      "technicalDescription": "Data contains the package size that exceeds the limit"
+    },
+    {
+      "id": "410",
+      "title": "Zip Processing Error",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a zip file within the pack could not be read or processed. May indicate corruption or unsupported compression.",
+      "howToUse": "The zip file may be corrupted. Try re-downloading or re-creating the zip. Ensure you're using standard ZIP compression without advanced features.",
+      "technicalDescription": "Data contains the path to the problematic zip file"
+    }
+  ]
+}

@@ -1,4 +1,54 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "adds a rider to this entity"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "entity_type",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spawns with a "
+          },
+          {
+            "type": "value",
+            "field": "entity_type",
+            "humanify": "minecraft"
+          },
+          {
+            "type": "literal",
+            "text": " rider"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "spawn_event",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "triggering event on spawn"
+          }
+        ]
+      }
+    ]
+  },
   "title": "Add Rider",
   "requires": [
     {
@@ -151,6 +201,16 @@
                 {
                   "entity_type": "minecraft:parched",
                   "spawn_event": "minecraft:ranged_mode"
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cave_spider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_jockey/minecraft:addrider/",
+              "content": [
+                {
+                  "entity_type": "minecraft:skeleton"
                 }
               ]
             }

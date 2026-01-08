@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Filters Documentation - minecraft:was_last_hurt_by"
 description: "Describes the minecraft:was_last_hurt_by entity filter element"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

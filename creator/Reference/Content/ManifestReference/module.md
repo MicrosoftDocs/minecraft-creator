@@ -3,11 +3,14 @@ author: mammerla
 ms.author: mikeam
 title: "Pack Manifest Documentation - minecraft:module"
 description: "Describes the minecraft:module pack manifest"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Pack Manifest Documentation - minecraft:module
+
+Declares a module within the pack. Modules define what the pack contains: 'data' for behavior packs, 'resources' for resource packs, or 'script' for packs with JavaScript/TypeScript code. Script modules require an entry point file path.
 
 
 ## 3.0.0.Module Properties

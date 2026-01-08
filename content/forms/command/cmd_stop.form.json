@@ -1,0 +1,16 @@
+{
+  "id": "cmd_stop",
+  "title": "stop",
+  "description": "Stops the server. This command is for use on a dedicated server only.",
+  "fields": [],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Stop server",
+      "description": "Stop the server.",
+      "params": []
+    }
+  ],
+  "permissionLevel": 4,
+  "requiresCheats": true
+}

@@ -1,5 +1,29 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "BlockDescriptorProxy",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "name",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "references block "
+          },
+          {
+            "type": "value",
+            "field": "name",
+            "humanify": "minecraft"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "BlockDescriptorProxy",
@@ -34,5 +58,6 @@
         "defaultValue": ""
       }
     ]
-  }
+  },
+  "description": "References a block type by name, states, or tags for use in spawn conditions. Used with spawn_above_block_filter to restrict spawning to locations above specific block types like grass_block or stone."
 }

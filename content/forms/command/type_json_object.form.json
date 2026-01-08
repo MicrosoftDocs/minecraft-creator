@@ -1,0 +1,15 @@
+{
+  "id": "type_json_object",
+  "title": "JSON Object",
+  "description": "A JSON object with key-value pairs.",
+  "fields": [],
+  "formatHint": "{\"key\": \"value\", ...}",
+  "samples": {
+    "values": [
+      {
+        "path": "Simple JSON object",
+        "content": "{\"key\":\"value\"}"
+      }
+    ]
+  }
+}

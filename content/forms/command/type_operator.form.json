@@ -1,0 +1,47 @@
+{
+  "id": "type_operator",
+  "title": "Scoreboard Operation",
+  "description": "Mathematical operation for scoreboard calculations.",
+  "fields": [],
+  "formatHint": "+=, -=, *=, /=, %=, =, <, >, or ><",
+  "samples": {
+    "values": [
+      {
+        "path": "Add value",
+        "content": "+="
+      },
+      {
+        "path": "Subtract value",
+        "content": "-="
+      },
+      {
+        "path": "Multiply by value",
+        "content": "*="
+      },
+      {
+        "path": "Divide by value (integer division)",
+        "content": "/="
+      },
+      {
+        "path": "Modulo (remainder)",
+        "content": "%="
+      },
+      {
+        "path": "Set to value",
+        "content": "="
+      },
+      {
+        "path": "Set to minimum of both values",
+        "content": "<"
+      },
+      {
+        "path": "Set to maximum of both values",
+        "content": ">"
+      },
+      {
+        "path": "Swap values between targets",
+        "content": "><"
+      }
+    ]
+  }
+}

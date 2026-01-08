@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines material rendering settings for block faces"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Material Instance",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

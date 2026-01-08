@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Filters Documentation - minecraft:on_fire"
 description: "Describes the minecraft:on_fire entity filter element"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

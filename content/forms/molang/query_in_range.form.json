@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns in range information"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.in_range",
   "fields": [],
   "description": "If the first argument is between the minimum and maximum (inclusive), returns 1.0. Otherwise returns 0.0. Requires 3 numerical arguments: a value, a minimum, and a maximum.",

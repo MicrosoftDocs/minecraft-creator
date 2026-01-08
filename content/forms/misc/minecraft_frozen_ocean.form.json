@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines frozen ocean component"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:frozen_ocean",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

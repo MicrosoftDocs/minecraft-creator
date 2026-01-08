@@ -1,10 +1,80 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has dynamic jump height that changes over time"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:jump.dynamic",
     "title": "Dynamic Jump",
-    "description": "Defines a dynamic type jump control that will change jump properties based on the speed modifier of the mob.",
-    "fields": [],
+    "description": "Defines a dynamic type jump control that will change jump properties based on the speed modifier of the mob. Requires `minecraft:movement.skip` to be used.",
+    "fields": [
+      {
+        "id": "fast_skip_data",
+        "title": "Fast Skip Data",
+        "description": "The jump data used for the fast skip.",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "animation_duration",
+            "title": "Animation Duration",
+            "description": "Duration of the jump animation."
+          },
+          {
+            "id": "distance_scale",
+            "title": "Distance Scale",
+            "description": "The multiplier applied to horizontal velocity when jumping."
+          },
+          {
+            "id": "height",
+            "title": "Height",
+            "description": "The force applied vertically when jumping."
+          },
+          {
+            "id": "jump_delay",
+            "title": "Jump Delay",
+            "description": "Amount of ticks between sequential jumps."
+          }
+        ]
+      },
+      {
+        "id": "regular_skip_data",
+        "title": "Regular Skip Data",
+        "description": "The jump data used for the regular skip.",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "animation_duration",
+            "title": "Animation Duration",
+            "description": "Duration of the jump animation."
+          },
+          {
+            "id": "distance_scale",
+            "title": "Distance Scale",
+            "description": "The multiplier applied to horizontal velocity when jumping."
+          },
+          {
+            "id": "height",
+            "title": "Height",
+            "description": "The force applied vertically when jumping."
+          },
+          {
+            "id": "jump_delay",
+            "title": "Jump Delay",
+            "description": "Amount of ticks between sequential jumps."
+          }
+        ]
+      }
+    ],
     "samples": {
       "/vanilla/behavior_pack/entities/rabbit.json": [
         {

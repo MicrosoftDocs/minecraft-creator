@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is emerging"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_emerging",
   "fields": [],
   "generated_doNotEdit": {

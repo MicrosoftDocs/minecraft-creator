@@ -1,0 +1,71 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates script module dependencies and versions"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "scriptmodule",
+  "title": "Script Modules",
+  "description": "Validates script module dependencies in behavior pack manifests and package.json files. Checks for version compatibility and can update module versions to the latest supported versions.",
+  "fields": [
+    {
+      "id": "100",
+      "title": "BP Module Dependency",
+      "description": "Reports a script module dependency declared in a behavior pack manifest. Shows the module name and version being used.",
+      "messageType": "info",
+      "dataType": 2,
+      "technicalDescription": "Data field contains the version string. Content field contains the module name."
+    },
+    {
+      "id": "101",
+      "title": "Package Dependency",
+      "description": "Reports a @minecraft/* package dependency in package.json. Shows the package name and version used for TypeScript development.",
+      "messageType": "info",
+      "dataType": 2,
+      "technicalDescription": "Data field contains the version string. Content field contains the package name."
+    },
+    {
+      "id": "102",
+      "title": "Package Dev Dependency",
+      "description": "Reports a @minecraft/* package devDependency in package.json. Shows the package name and version used for development tooling.",
+      "messageType": "info",
+      "dataType": 2,
+      "technicalDescription": "Data field contains the version string. Content field contains the package name."
+    },
+    {
+      "id": "110",
+      "title": "Missing Package Registration",
+      "description": "A script module is used in the behavior pack manifest but not registered in package.json. Add the dependency to package.json.",
+      "howToUse": "Run 'npm install @minecraft/[module-name]' to add the missing module to package.json, or manually add it to dependencies.",
+      "messageType": "error",
+      "dataType": 2,
+      "technicalDescription": "Data field contains the module name that is missing from package.json."
+    },
+    {
+      "id": "111",
+      "title": "Missing NPM Registration",
+      "description": "A script module is used but could not be found in the NPM registry. Check if the module name is correct.",
+      "howToUse": "Verify the module name is spelled correctly. Check the NPM registry or Minecraft documentation for valid @minecraft/* package names.",
+      "messageType": "error",
+      "dataType": 2,
+      "technicalDescription": "Data field contains the module name that could not be found."
+    },
+    {
+      "id": "114",
+      "title": "Beta Version Outdated",
+      "description": "The beta version of a script module is outdated compared to the current beta version. Update to the latest beta.",
+      "howToUse": "Update to the latest beta version by running 'npm update @minecraft/[module-name]@beta' or use the 'Fix' button.",
+      "messageType": "error",
+      "dataType": 2,
+      "technicalDescription": "Data field contains the outdated version string."
+    }
+  ]
+}

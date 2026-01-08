@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if pack setting dropdown (first paramete..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_pack_setting_selected",
   "fields": [],
   "generated_doNotEdit": {

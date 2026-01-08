@@ -19,7 +19,7 @@ Optional properties for Image property item
 ### **alignment**
 `alignment?: LayoutAlignment;`
 
-Alignment of the image in the container. If not defined, LayoutAlignment.Left is used.
+Alignment of the image in the container. If not defined, LayoutAlignment.Start is used.
 
 Type: *LayoutAlignment*
 

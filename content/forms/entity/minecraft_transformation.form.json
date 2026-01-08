@@ -1,4 +1,85 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "into",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can transform into "
+          },
+          {
+            "type": "value",
+            "field": "into"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "into",
+            "comparison": "undefined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can transform into another entity"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "keep_owner",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "remains owned by its owner after transformation"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "keep_level",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "preserves its trading level after transformation"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "transformation_sound",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "plays a sound when transformation completes"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:transformation",

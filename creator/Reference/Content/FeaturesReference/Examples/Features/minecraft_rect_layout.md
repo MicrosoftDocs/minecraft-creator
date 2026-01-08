@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Feature Documentation - minecraft:rect_layout"
 description: "Describes the minecraft:rect_layout feature type"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -11,6 +12,8 @@ ms.date: 02/11/2025
 
 > [!IMPORTANT]
 > This type is internal to vanilla Minecraft usage, and is not functional or supported within custom Minecraft content.
+
+Arranges features in a rectangular grid pattern during world generation. Configure the grid dimensions, spacing, and which features to place at each position. Useful for orderly structures like crop fields, orchard trees, gravestones, or any repeating pattern that should fill a defined area.
 
 
 ## Rect Layout Properties

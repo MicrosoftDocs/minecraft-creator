@@ -1,7 +1,22 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "actor_resource_definition",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines client-side entity rendering with materials, textures, and geometry"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
+    "title": "Actor Resource Definition (v1.8.0)",
+    "description": "Defines an entity client resource definition document with format_version 1.8.0.",
     "id": "actor_resource_definition",
     "fields": [
       {

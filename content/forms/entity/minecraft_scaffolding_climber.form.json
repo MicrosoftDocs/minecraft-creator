@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "can climb scaffolding blocks" }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:scaffolding_climber",
   "title": "Scaffolding Climber",
   "isDeprecated": true,

@@ -1,5 +1,20 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "geometry",
+  "title": "Geometry (v1.14.0)",
+  "description": "Defines a geometry document (bones, cubes, and UV mappings) with format_version 1.14.0.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a 3D model with bones, cubes, and UV mappings"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "geometry",

@@ -1,5 +1,49 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "emits particles from a box-shaped region"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "direction",
+      "title": "Direction",
+      "description": "The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions.",
+      "dataType": 2,
+      "alternates": [
+        {
+          "id": "direction",
+          "dataType": 35,
+          "minLength": 3,
+          "maxLength": 3
+        }
+      ]
+    },
+    {
+      "id": "offset",
+      "title": "Offset",
+      "description": "The offset from the emitter position, as [x, y, z] Molang expressions or numbers.",
+      "dataType": 35,
+      "minLength": 3,
+      "maxLength": 3
+    },
+    {
+      "id": "half_dimensions",
+      "title": "Half Dimensions",
+      "description": "The half dimensions of the box, as [x, y, z] Molang expressions or numbers.",
+      "dataType": 35,
+      "minLength": 3,
+      "maxLength": 3
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_shape_box",
     "title": "Client Particles Emitter Shape Box",
@@ -131,5 +175,6 @@
         "defaultValue": false
       }
     ]
-  }
+  },
+  "description": "Emits particles from random positions within a rectangular box volume. Define the box using half_dimensions (distance from center to each edge) and offset from the emitter. Particles can emit outward from spawn points, inward toward center, or in custom directions. Ideal for area effects like smoke filling a room, rain in a region, or magic barriers."
 }

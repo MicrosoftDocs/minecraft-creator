@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Event Actions Documentation - Event Actions"
 description: "A reference document describing all current Event Actions"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -19,7 +20,7 @@ ms.date: 02/11/2025
 | [randomize_node](EventActions/randomize_node.md)| The 'randomize' node is an array node that will pick one entry to execute, based on a weight. <br>		If no weight is specified, a node will have a weight of 1.0. <br>		If you add a weight of 4.0 in one node, and 8.0 in another, then those nodes will have a 33.33% (4 / (4 + 8)) and 66.66% (8 / (4 + 8)) chance of executing, respectively. |
 | [remove_component_group](EventActions/remove_component_group.md)| Removes component groups from the current entity. |
 | [reset_target](EventActions/reset_target.md)| Resets the entities' target (the focus of its gaze, attacking behavior, etc.). |
-| [sequence_node](EventActions/sequence_node.md)|  |
+| [sequence_node](EventActions/sequence_node.md)| Executes actions in sequence. |
 | [Set Entity Property](EventActions/set_entity_property.md)| Sets the value of an entity property. |
 | [set_property](EventActions/set_property.md)| Sets the value of an entity property. |
 | [trigger](EventActions/trigger.md)| Triggers additional entity events when hit. |

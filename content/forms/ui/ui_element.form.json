@@ -1,0 +1,1093 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "type",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is a "
+          },
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "type",
+                    "comparison": "=",
+                    "value": "panel"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "panel container"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "type",
+                    "comparison": "=",
+                    "value": "stack_panel"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "stack panel layout"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "type",
+                    "comparison": "=",
+                    "value": "image"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "image element"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "type",
+                    "comparison": "=",
+                    "value": "label"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "text label"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "type",
+                    "comparison": "=",
+                    "value": "button"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "clickable button"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "type",
+                    "comparison": "=",
+                    "value": "toggle"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "toggle switch"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "type",
+                    "comparison": "=",
+                    "value": "slider"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "slider control"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "type",
+                    "comparison": "=",
+                    "value": "edit_box"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "text input field"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "type",
+                    "comparison": "=",
+                    "value": "grid"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "grid layout"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "type",
+                    "comparison": "=",
+                    "value": "scroll_view"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "scrollable container"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "type",
+                    "comparison": "=",
+                    "value": "dropdown"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "dropdown selector"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "type",
+                    "comparison": "=",
+                    "value": "screen"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "screen root element"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "'"
+              },
+              {
+                "type": "value",
+                "field": "type"
+              },
+              {
+                "type": "literal",
+                "text": "' element"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "type",
+            "comparison": "undefined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a UI element"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "size",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "with custom size"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "anchor_from",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "anchored from "
+          },
+          {
+            "type": "value",
+            "field": "anchor_from"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "anchor_to",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": " to "
+          },
+          {
+            "type": "value",
+            "field": "anchor_to"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "controls",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "contains "
+          },
+          {
+            "type": "value",
+            "field": "controls.length"
+          },
+          {
+            "type": "plural",
+            "countField": "controls.length",
+            "singular": [
+              {
+                "type": "literal",
+                "text": " child control"
+              }
+            ],
+            "plural": [
+              {
+                "type": "literal",
+                "text": " child controls"
+              }
+            ],
+            "includeCount": false
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "texture",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "using texture '"
+          },
+          {
+            "type": "value",
+            "field": "texture"
+          },
+          {
+            "type": "literal",
+            "text": "'"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "ui_element",
+  "title": "UI Element",
+  "description": "A UI element definition in a Minecraft Bedrock UI screen file. UI elements define the visual and interactive components of Minecraft's user interface.",
+  "fields": [
+    {
+      "dataType": 4,
+      "id": "type",
+      "title": "Type",
+      "description": "The type of UI element. Determines how the element is rendered and behaves.",
+      "isRequired": false,
+      "choices": [
+        "panel",
+        "stack_panel",
+        "image",
+        "label",
+        "button",
+        "toggle",
+        "slider",
+        "slider_box",
+        "edit_box",
+        "grid",
+        "scroll_view",
+        "scrollbar_box",
+        "dropdown",
+        "input_panel",
+        "screen",
+        "custom",
+        "factory",
+        "selection_wheel"
+      ]
+    },
+    {
+      "dataType": 2,
+      "id": "renderer",
+      "title": "Renderer",
+      "description": "The renderer to use for custom element types. Examples include 'hud_player_renderer', 'inventory_item_renderer', etc.",
+      "isRequired": false
+    },
+    {
+      "dataType": 0,
+      "id": "layer",
+      "title": "Layer",
+      "description": "The rendering layer for this element. Higher values render on top of lower values.",
+      "isRequired": false
+    },
+    {
+      "id": "size",
+      "title": "Size",
+      "description": "The size of the UI element. Can be specified as [width, height] where each can be a number (pixels), percentage string ('100%'), or special value ('fill', '100%c', '100%cm').",
+      "dataType": 32,
+      "isRequired": false
+    },
+    {
+      "id": "offset",
+      "title": "Offset",
+      "description": "The offset of the UI element from its anchor position. Specified as [x, y] in pixels.",
+      "dataType": 32,
+      "isRequired": false
+    },
+    {
+      "id": "min_size",
+      "title": "Minimum Size",
+      "description": "The minimum size constraints for the UI element.",
+      "dataType": 32,
+      "isRequired": false
+    },
+    {
+      "id": "max_size",
+      "title": "Maximum Size",
+      "description": "The maximum size constraints for the UI element.",
+      "dataType": 32,
+      "isRequired": false
+    },
+    {
+      "dataType": 4,
+      "id": "anchor_from",
+      "title": "Anchor From",
+      "description": "The anchor point on the parent element from which this element is positioned.",
+      "isRequired": false,
+      "choices": [
+        "top_left",
+        "top_middle",
+        "top_right",
+        "left_middle",
+        "center",
+        "right_middle",
+        "bottom_left",
+        "bottom_middle",
+        "bottom_right"
+      ]
+    },
+    {
+      "dataType": 4,
+      "id": "anchor_to",
+      "title": "Anchor To",
+      "description": "The anchor point on this element used for positioning.",
+      "isRequired": false,
+      "choices": [
+        "top_left",
+        "top_middle",
+        "top_right",
+        "left_middle",
+        "center",
+        "right_middle",
+        "bottom_left",
+        "bottom_middle",
+        "bottom_right"
+      ]
+    },
+    {
+      "dataType": 4,
+      "id": "orientation",
+      "title": "Orientation",
+      "description": "The orientation for stack panels, determining the direction children are laid out.",
+      "isRequired": false,
+      "choices": [
+        "horizontal",
+        "vertical"
+      ]
+    },
+    {
+      "dataType": 2,
+      "id": "texture",
+      "title": "Texture",
+      "description": "The texture path for image elements. Relative to the resource pack textures folder.",
+      "isRequired": false
+    },
+    {
+      "id": "uv",
+      "title": "UV Coordinates",
+      "description": "UV coordinates for texture mapping, specified as [u, v].",
+      "dataType": 32,
+      "isRequired": false
+    },
+    {
+      "id": "uv_size",
+      "title": "UV Size",
+      "description": "The size of the UV region to sample from the texture.",
+      "dataType": 32,
+      "isRequired": false
+    },
+    {
+      "id": "color",
+      "title": "Color",
+      "description": "The color tint applied to the element, specified as [r, g, b] with values 0.0-1.0.",
+      "dataType": 32,
+      "isRequired": false
+    },
+    {
+      "dataType": 3,
+      "id": "alpha",
+      "title": "Alpha",
+      "description": "The opacity of the element, from 0.0 (transparent) to 1.0 (opaque).",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "visible",
+      "title": "Visible",
+      "description": "Whether this element is visible by default.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "enabled",
+      "title": "Enabled",
+      "description": "Whether this element is enabled and can be interacted with.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "ignored",
+      "title": "Ignored",
+      "description": "If true, this element is ignored during layout and rendering.",
+      "isRequired": false
+    },
+    {
+      "dataType": 2,
+      "id": "text",
+      "title": "Text",
+      "description": "The text content for label elements. Can include localization keys.",
+      "isRequired": false
+    },
+    {
+      "dataType": 4,
+      "id": "text_alignment",
+      "title": "Text Alignment",
+      "description": "The horizontal alignment of text within a label.",
+      "isRequired": false,
+      "choices": [
+        "left",
+        "center",
+        "right"
+      ]
+    },
+    {
+      "dataType": 1,
+      "id": "shadow",
+      "title": "Shadow",
+      "description": "Whether to render a shadow behind text.",
+      "isRequired": false
+    },
+    {
+      "dataType": 4,
+      "id": "font_type",
+      "title": "Font Type",
+      "description": "The font to use for text rendering.",
+      "isRequired": false,
+      "choices": [
+        "default",
+        "smooth",
+        "rune",
+        "unicode",
+        "MinecraftTen"
+      ]
+    },
+    {
+      "dataType": 4,
+      "id": "font_size",
+      "title": "Font Size",
+      "description": "The size of the font for text rendering.",
+      "isRequired": false,
+      "choices": [
+        "small",
+        "normal",
+        "large",
+        "extra_large"
+      ]
+    },
+    {
+      "dataType": 1,
+      "id": "font_scale_factor",
+      "title": "Font Scale Factor",
+      "description": "A multiplier for the font size.",
+      "isRequired": false
+    },
+    {
+      "dataType": 15,
+      "id": "controls",
+      "title": "Controls",
+      "description": "Child elements contained within this element.",
+      "isRequired": false,
+      "subForm": {
+        "fields": [
+          {
+            "dataType": 16,
+            "id": "[a-zA-Z0-9_.:@]+",
+            "title": "Child Element",
+            "description": "A child UI element. The key is the element name, optionally with @base_element syntax for inheritance.",
+            "isRequired": true
+          }
+        ]
+      }
+    },
+    {
+      "dataType": 15,
+      "id": "bindings",
+      "title": "Bindings",
+      "description": "Data bindings that connect UI element properties to game data.",
+      "isRequired": false,
+      "subForm": {
+        "fields": [
+          {
+            "dataType": 2,
+            "id": "binding_name",
+            "title": "Binding Name",
+            "description": "The name of the data source to bind to (e.g., '#player_name').",
+            "isRequired": false
+          },
+          {
+            "dataType": 2,
+            "id": "binding_name_override",
+            "title": "Binding Name Override",
+            "description": "The property on the UI element to bind the value to.",
+            "isRequired": false
+          },
+          {
+            "dataType": 4,
+            "id": "binding_type",
+            "title": "Binding Type",
+            "description": "The type of binding.",
+            "isRequired": false,
+            "choices": [
+              "global",
+              "collection",
+              "collection_details",
+              "view",
+              "none"
+            ]
+          },
+          {
+            "dataType": 2,
+            "id": "binding_collection_name",
+            "title": "Binding Collection Name",
+            "description": "The name of the collection when using collection bindings.",
+            "isRequired": false
+          },
+          {
+            "dataType": 4,
+            "id": "binding_condition",
+            "title": "Binding Condition",
+            "description": "When the binding should be evaluated.",
+            "isRequired": false,
+            "choices": [
+              "always",
+              "visible",
+              "once",
+              "always_when_visible",
+              "visibility_changed"
+            ]
+          },
+          {
+            "dataType": 2,
+            "id": "source_control_name",
+            "title": "Source Control Name",
+            "description": "The name of the source control for view bindings.",
+            "isRequired": false
+          },
+          {
+            "dataType": 2,
+            "id": "source_property_name",
+            "title": "Source Property Name",
+            "description": "The property name on the source control.",
+            "isRequired": false
+          },
+          {
+            "dataType": 2,
+            "id": "target_property_name",
+            "title": "Target Property Name",
+            "description": "The property name on the target element.",
+            "isRequired": false
+          }
+        ]
+      }
+    },
+    {
+      "dataType": 15,
+      "id": "button_mappings",
+      "title": "Button Mappings",
+      "description": "Mappings from input buttons to actions.",
+      "isRequired": false,
+      "subForm": {
+        "fields": [
+          {
+            "dataType": 2,
+            "id": "from_button_id",
+            "title": "From Button ID",
+            "description": "The input button that triggers the action.",
+            "isRequired": true
+          },
+          {
+            "dataType": 2,
+            "id": "to_button_id",
+            "title": "To Button ID",
+            "description": "The action button to trigger.",
+            "isRequired": true
+          },
+          {
+            "dataType": 4,
+            "id": "mapping_type",
+            "title": "Mapping Type",
+            "description": "The type of button mapping.",
+            "isRequired": false,
+            "choices": [
+              "pressed",
+              "double_pressed",
+              "global",
+              "focused"
+            ]
+          },
+          {
+            "dataType": 4,
+            "id": "input_mode_condition",
+            "title": "Input Mode Condition",
+            "description": "The input mode required for this mapping.",
+            "isRequired": false,
+            "choices": [
+              "not_gaze",
+              "gamepad_and_not_gaze"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "dataType": 17,
+      "id": "anims",
+      "title": "Animations",
+      "description": "Animation references to apply to this element.",
+      "isRequired": false
+    },
+    {
+      "dataType": 2,
+      "id": "animation_reset_name",
+      "title": "Animation Reset Name",
+      "description": "The name of the animation state to reset to.",
+      "isRequired": false
+    },
+    {
+      "dataType": 14,
+      "id": "variables",
+      "title": "Variables",
+      "description": "Variable definitions for conditional logic.",
+      "isRequired": false,
+      "subForm": {
+        "fields": [
+          {
+            "dataType": 1,
+            "id": "requires",
+            "title": "Requires",
+            "description": "The condition that must be met for this variable to be active.",
+            "isRequired": false
+          }
+        ]
+      },
+      "keyDescription": "variable_name"
+    },
+    {
+      "dataType": 1,
+      "id": "clips_children",
+      "title": "Clips Children",
+      "description": "Whether child elements are clipped to this element's bounds.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "allow_clipping",
+      "title": "Allow Clipping",
+      "description": "Whether this element can be clipped by parent elements.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "propagate_alpha",
+      "title": "Propagate Alpha",
+      "description": "Whether alpha transparency is propagated to child elements.",
+      "isRequired": false
+    },
+    {
+      "dataType": 4,
+      "id": "grid_rescaling_type",
+      "title": "Grid Rescaling Type",
+      "description": "How the grid resizes its cells.",
+      "isRequired": false,
+      "choices": [
+        "none",
+        "horizontal",
+        "vertical"
+      ]
+    },
+    {
+      "dataType": 0,
+      "id": "grid_item_template",
+      "title": "Grid Item Template",
+      "description": "The template element to use for grid items.",
+      "isRequired": false
+    },
+    {
+      "id": "grid_dimension_binding",
+      "title": "Grid Dimension Binding",
+      "description": "The binding for determining grid dimensions.",
+      "dataType": 2,
+      "isRequired": false
+    },
+    {
+      "dataType": 2,
+      "id": "collection_name",
+      "title": "Collection Name",
+      "description": "The name of the collection to use for grid or stack panel items.",
+      "isRequired": false
+    },
+    {
+      "dataType": 2,
+      "id": "factory",
+      "title": "Factory",
+      "description": "The factory configuration for dynamic element creation.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "focus_enabled",
+      "title": "Focus Enabled",
+      "description": "Whether this element can receive focus.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "default_focus_precedence",
+      "title": "Default Focus Precedence",
+      "description": "Priority for receiving default focus.",
+      "isRequired": false
+    },
+    {
+      "dataType": 4,
+      "id": "focus_change_up",
+      "title": "Focus Change Up",
+      "description": "The element to focus when navigating up.",
+      "isRequired": false
+    },
+    {
+      "dataType": 4,
+      "id": "focus_change_down",
+      "title": "Focus Change Down",
+      "description": "The element to focus when navigating down.",
+      "isRequired": false
+    },
+    {
+      "dataType": 4,
+      "id": "focus_change_left",
+      "title": "Focus Change Left",
+      "description": "The element to focus when navigating left.",
+      "isRequired": false
+    },
+    {
+      "dataType": 4,
+      "id": "focus_change_right",
+      "title": "Focus Change Right",
+      "description": "The element to focus when navigating right.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "tts_ignore_count",
+      "title": "TTS Ignore Count",
+      "description": "Whether to ignore this element when counting for text-to-speech.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "tts_skip_message",
+      "title": "TTS Skip Message",
+      "description": "Whether to skip this element in text-to-speech narration.",
+      "isRequired": false
+    },
+    {
+      "dataType": 2,
+      "id": "tts_control_type_order_priority",
+      "title": "TTS Control Type Order Priority",
+      "description": "The priority for ordering elements in text-to-speech.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "consume_event",
+      "title": "Consume Event",
+      "description": "Whether input events are consumed by this element.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "always_handle_pointer",
+      "title": "Always Handle Pointer",
+      "description": "Whether pointer events are always handled by this element.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "modal",
+      "title": "Modal",
+      "description": "Whether this element acts as a modal overlay.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "prevent_touch_input",
+      "title": "Prevent Touch Input",
+      "description": "Whether touch input is blocked by this element.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "locked_control",
+      "title": "Locked Control",
+      "description": "The control to display when this element is locked.",
+      "isRequired": false
+    },
+    {
+      "dataType": 3,
+      "id": "slider_range",
+      "title": "Slider Range",
+      "description": "The range for slider elements.",
+      "isRequired": false
+    },
+    {
+      "dataType": 3,
+      "id": "slider_steps",
+      "title": "Slider Steps",
+      "description": "The number of discrete steps in a slider.",
+      "isRequired": false
+    },
+    {
+      "dataType": 2,
+      "id": "slider_select_on_hover",
+      "title": "Slider Select On Hover",
+      "description": "Whether the slider value changes on hover.",
+      "isRequired": false
+    },
+    {
+      "dataType": 0,
+      "id": "max_length",
+      "title": "Max Length",
+      "description": "Maximum character length for text input elements.",
+      "isRequired": false
+    },
+    {
+      "dataType": 2,
+      "id": "text_box_name",
+      "title": "Text Box Name",
+      "description": "The name identifier for a text box.",
+      "isRequired": false
+    },
+    {
+      "dataType": 2,
+      "id": "place_holder_text",
+      "title": "Placeholder Text",
+      "description": "Placeholder text shown when an input is empty.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "virtual_keyboard_buffer_control",
+      "title": "Virtual Keyboard Buffer Control",
+      "description": "Whether this input uses a virtual keyboard buffer.",
+      "isRequired": false
+    },
+    {
+      "dataType": 0,
+      "id": "nine_slice_buttom",
+      "title": "Nine Slice Bottom",
+      "description": "The bottom size for nine-slice image rendering.",
+      "isRequired": false
+    },
+    {
+      "dataType": 0,
+      "id": "nine_slice_top",
+      "title": "Nine Slice Top",
+      "description": "The top size for nine-slice image rendering.",
+      "isRequired": false
+    },
+    {
+      "dataType": 0,
+      "id": "nine_slice_left",
+      "title": "Nine Slice Left",
+      "description": "The left size for nine-slice image rendering.",
+      "isRequired": false
+    },
+    {
+      "dataType": 0,
+      "id": "nine_slice_right",
+      "title": "Nine Slice Right",
+      "description": "The right size for nine-slice image rendering.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "tiled",
+      "title": "Tiled",
+      "description": "Whether the texture is tiled when rendering.",
+      "isRequired": false
+    },
+    {
+      "dataType": 4,
+      "id": "fill",
+      "title": "Fill",
+      "description": "Whether image fills its container.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "grayscale",
+      "title": "Grayscale",
+      "description": "Whether the element is rendered in grayscale.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "keep_ratio",
+      "title": "Keep Ratio",
+      "description": "Whether to maintain aspect ratio when scaling.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "bilinear",
+      "title": "Bilinear",
+      "description": "Whether to use bilinear filtering for textures.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "clip_pixelperfect",
+      "title": "Clip Pixel Perfect",
+      "description": "Whether clipping is pixel-perfect.",
+      "isRequired": false
+    },
+    {
+      "dataType": 4,
+      "id": "scroll_speed",
+      "title": "Scroll Speed",
+      "description": "The speed of scrolling in scroll views.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "scrollbar_touch_button",
+      "title": "Scrollbar Touch Button",
+      "description": "Whether the scrollbar responds to touch.",
+      "isRequired": false
+    },
+    {
+      "dataType": 1,
+      "id": "jump_to_bottom_on_update",
+      "title": "Jump To Bottom On Update",
+      "description": "Whether to auto-scroll to bottom when content updates.",
+      "isRequired": false
+    },
+    {
+      "dataType": 2,
+      "id": "scrollbar_box",
+      "title": "Scrollbar Box",
+      "description": "Reference to the scrollbar box element.",
+      "isRequired": false
+    },
+    {
+      "dataType": 2,
+      "id": "scrollbar_track",
+      "title": "Scrollbar Track",
+      "description": "Reference to the scrollbar track element.",
+      "isRequired": false
+    },
+    {
+      "dataType": 2,
+      "id": "scroll_view_port",
+      "title": "Scroll View Port",
+      "description": "Reference to the scroll viewport element.",
+      "isRequired": false
+    },
+    {
+      "dataType": 2,
+      "id": "scroll_content",
+      "title": "Scroll Content",
+      "description": "Reference to the scrollable content element.",
+      "isRequired": false
+    },
+    {
+      "dataType": 2,
+      "id": "scroll_box_and_track_panel",
+      "title": "Scroll Box And Track Panel",
+      "description": "Reference to the panel containing scrollbar box and track.",
+      "isRequired": false
+    }
+  ]
+}

@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "protects tagged blocks from being replaced during placement" }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "processor_type",

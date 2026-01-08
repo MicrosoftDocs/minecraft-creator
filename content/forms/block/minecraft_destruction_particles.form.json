@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has custom destruction particles"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "tint_method",

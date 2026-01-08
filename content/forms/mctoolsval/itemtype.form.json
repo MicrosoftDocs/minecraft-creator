@@ -1,0 +1,158 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates item type definitions and format versions"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "itemtype",
+  "title": "Item Types",
+  "description": "Validates behavior pack item type definitions including format versions, identifiers, and metadata. Can automatically update format versions to the latest.",
+  "fields": [
+    {
+      "id": "53",
+      "title": "Identifier",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "The identifier of the item type (e.g., mypack:custom_sword). Should follow namespace:name format.",
+      "technicalDescription": "Data contains the item type identifier"
+    },
+    {
+      "id": "54",
+      "title": "Metadata",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Additional metadata associated with the item type definition.",
+      "technicalDescription": "Data contains the metadata value"
+    },
+    {
+      "id": "55",
+      "title": "Category",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "The category of the item type (equipment, items, nature, etc.) for creative inventory placement.",
+      "technicalDescription": "Data contains the category name"
+    },
+    {
+      "id": "100",
+      "title": "Version Defined",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Confirms that a format_version field is defined in the item type JSON. Required for proper parsing.",
+      "technicalDescription": "Data contains the format_version value"
+    },
+    {
+      "id": "110",
+      "title": "Major Version Low",
+      "messageType": 1,
+      "dataType": 2,
+      "description": "Warning when the item's format_version major number is below the current version. Consider updating to access new features.",
+      "technicalDescription": "Data contains the current format_version",
+      "matchedValues": [
+        {
+          "updaterId": "ITEMTYPE",
+          "updaterIndex": 1,
+          "action": "Set behavior pack item type format version to latest version."
+        }
+      ]
+    },
+    {
+      "id": "111",
+      "title": "Major Version High",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when the item's format_version major number is above the current version. The item may not load correctly.",
+      "technicalDescription": "Data contains the format_version exceeding current",
+      "matchedValues": [
+        {
+          "updaterId": "ITEMTYPE",
+          "updaterIndex": 1,
+          "action": "Set behavior pack item type format version to latest version."
+        }
+      ]
+    },
+    {
+      "id": "120",
+      "title": "Minor Version Low",
+      "messageType": 1,
+      "dataType": 2,
+      "description": "Warning when the item's format_version minor number is below the current version.",
+      "technicalDescription": "Data contains the current format_version",
+      "matchedValues": [
+        {
+          "updaterId": "ITEMTYPE",
+          "updaterIndex": 1,
+          "action": "Set behavior pack item type format version to latest version."
+        }
+      ]
+    },
+    {
+      "id": "121",
+      "title": "Minor Version High",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when the item's format_version minor number is above the current version.",
+      "technicalDescription": "Data contains the format_version exceeding current",
+      "matchedValues": [
+        {
+          "updaterId": "ITEMTYPE",
+          "updaterIndex": 1,
+          "action": "Set behavior pack item type format version to latest version."
+        }
+      ]
+    },
+    {
+      "id": "130",
+      "title": "Patch Version Low",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Information when the item's format_version patch number is below the current version.",
+      "technicalDescription": "Data contains the current format_version",
+      "matchedValues": [
+        {
+          "updaterId": "ITEMTYPE",
+          "updaterIndex": 1,
+          "action": "Set behavior pack item type format version to latest version."
+        }
+      ]
+    },
+    {
+      "id": "131",
+      "title": "Patch Version High",
+      "messageType": 1,
+      "dataType": 2,
+      "description": "Warning when the item's format_version patch number is above the current version.",
+      "technicalDescription": "Data contains the format_version exceeding current",
+      "matchedValues": [
+        {
+          "updaterId": "ITEMTYPE",
+          "updaterIndex": 1,
+          "action": "Set behavior pack item type format version to latest version."
+        }
+      ]
+    },
+    {
+      "id": "500",
+      "title": "Version Fetch Error",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when the current Minecraft version could not be determined for comparison.",
+      "technicalDescription": "Data contains the error message"
+    },
+    {
+      "id": "501",
+      "title": "Version Parse Error",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when the Minecraft version string could not be parsed into version numbers.",
+      "technicalDescription": "Data contains the unparseable version string"
+    }
+  ]
+}

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:behavior.nearest_attackable_target"
 description: "Describes the minecraft:behavior.nearest_attackable_target ai behavior component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -49,7 +50,7 @@ List of entity types that this mob considers valid targets.
 | must_see | false | Boolean true/false | If true, the mob has to be visible to be a valid choice |  | 
 | must_see_forget_duration | 3 | Decimal number | Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more |  | 
 | priority | *not set* | Decimal number |  |  | 
-| reevaluate_description | false | Boolean true/false | If true, the mob will stop being targeted if it stops meeting any conditions. |  | 
+| reevaluate_description | false | Boolean true/false | If true, the targeting entity will continuously reevaluate the target and stop attacking if the target no longer meets the filter conditions. |  | 
 | sprint_speed_multiplier | 1 | Decimal number | Multiplier for the running speed. A value of 1.0 means the speed is unchanged |  | 
 | walk_speed_multiplier | 1 | Decimal number | Multiplier for the walking speed. A value of 1.0 means the speed is unchanged |  | 
 

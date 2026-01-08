@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "triggers tick events on an interval"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Tick",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -12,6 +25,7 @@
         "dataType": 32,
         "minLength": 2,
         "maxLength": 2,
+        "technicalDescription": "The first value must be equal or lower than the second value",
         "isRequired": true
       },
       {
@@ -22,5 +36,6 @@
         "defaultValue": true
       }
     ]
-  }
+  },
+  "description": "Schedules periodic tick events for the block, similar to how crops grow or ice melts over time. Configure the interval range in ticks (20 ticks = 1 second) and whether looping continues. Tick events trigger custom logic for growth stages, decay, spreading, random animation, or any time-based block behavior."
 }

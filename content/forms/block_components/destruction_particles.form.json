@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines particle effects when a block is destroyed"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Destruction Particles",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

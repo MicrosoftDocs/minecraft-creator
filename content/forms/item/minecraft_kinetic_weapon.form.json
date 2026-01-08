@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:kinetic_weapon",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "deals kinetic damage based on velocity"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:kinetic_weapon",
@@ -318,7 +331,7 @@
             {
               "path": "/minecraft:item/components/minecraft:kinetic_weapon/",
               "content": {
-                "max_duration": 165,
+                "max_duration": 100,
                 "min_speed": 5.1
               }
             }
@@ -327,7 +340,7 @@
             {
               "path": "/minecraft:item/components/minecraft:kinetic_weapon/",
               "content": {
-                "max_duration": 130,
+                "max_duration": 80,
                 "min_speed": 5.1
               }
             }
@@ -336,7 +349,7 @@
             {
               "path": "/minecraft:item/components/minecraft:kinetic_weapon/",
               "content": {
-                "max_duration": 170,
+                "max_duration": 110,
                 "min_speed": 5.1
               }
             }
@@ -345,7 +358,7 @@
             {
               "path": "/minecraft:item/components/minecraft:kinetic_weapon/",
               "content": {
-                "max_duration": 135,
+                "max_duration": 90,
                 "min_speed": 5.1
               }
             }
@@ -354,7 +367,7 @@
             {
               "path": "/minecraft:item/components/minecraft:kinetic_weapon/",
               "content": {
-                "max_duration": 110,
+                "max_duration": 70,
                 "min_speed": 5.1
               }
             }
@@ -363,7 +376,7 @@
             {
               "path": "/minecraft:item/components/minecraft:kinetic_weapon/",
               "content": {
-                "max_duration": 180,
+                "max_duration": 110,
                 "min_speed": 5.1
               }
             }
@@ -372,7 +385,7 @@
             {
               "path": "/minecraft:item/components/minecraft:kinetic_weapon/",
               "content": {
-                "max_duration": 200,
+                "max_duration": 120,
                 "min_speed": 5.1
               }
             }
@@ -432,7 +445,7 @@
               "min_relative_speed": 4.6
             },
             "knockback_conditions": {
-              "max_duration": 165,
+              "max_duration": 100,
               "min_speed": 5.1
             },
             "dismount_conditions": {
@@ -462,7 +475,7 @@
               "min_relative_speed": 4.6
             },
             "knockback_conditions": {
-              "max_duration": 130,
+              "max_duration": 80,
               "min_speed": 5.1
             },
             "dismount_conditions": {
@@ -492,7 +505,7 @@
               "min_relative_speed": 4.6
             },
             "knockback_conditions": {
-              "max_duration": 170,
+              "max_duration": 110,
               "min_speed": 5.1
             },
             "dismount_conditions": {
@@ -522,7 +535,7 @@
               "min_relative_speed": 4.6
             },
             "knockback_conditions": {
-              "max_duration": 135,
+              "max_duration": 90,
               "min_speed": 5.1
             },
             "dismount_conditions": {
@@ -552,7 +565,7 @@
               "min_relative_speed": 4.6
             },
             "knockback_conditions": {
-              "max_duration": 110,
+              "max_duration": 70,
               "min_speed": 5.1
             },
             "dismount_conditions": {
@@ -582,7 +595,7 @@
               "min_relative_speed": 4.6
             },
             "knockback_conditions": {
-              "max_duration": 180,
+              "max_duration": 110,
               "min_speed": 5.1
             },
             "dismount_conditions": {
@@ -612,7 +625,7 @@
               "min_relative_speed": 4.6
             },
             "knockback_conditions": {
-              "max_duration": 200,
+              "max_duration": 120,
               "min_speed": 5.1
             },
             "dismount_conditions": {

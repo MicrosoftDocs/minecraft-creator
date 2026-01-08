@@ -1,0 +1,102 @@
+{
+  "id": "cmd_spreadplayers",
+  "title": "spreadplayers",
+  "description": "Teleports entities to random locations.",
+  "fields": [
+    {
+      "id": "x",
+      "title": "x",
+      "type": "string",
+      "isOptional": false,
+      "description": "The initial `x` position of the player.",
+      "subFormId": "type_rval",
+      "commandType": "RVAL"
+    },
+    {
+      "id": "z",
+      "title": "z",
+      "type": "string",
+      "isOptional": false,
+      "description": "The initial `z` position of the player.",
+      "subFormId": "type_rval",
+      "commandType": "RVAL"
+    },
+    {
+      "id": "spreaddistance",
+      "title": "spreadDistance",
+      "type": "string",
+      "isOptional": false,
+      "description": "The distance between players when they spawn. Default: `0.0`.",
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "maxrange",
+      "title": "maxRange",
+      "type": "string",
+      "isOptional": false,
+      "description": "The furthest distance that players can spawn from each other. Default: `0.0`.",
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "victim",
+      "title": "victim",
+      "type": "string",
+      "isOptional": false,
+      "description": "A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "maxheight",
+      "title": "maxHeight",
+      "type": "string",
+      "isOptional": true,
+      "description": "The maximum height that players can spawn. Default: `0.0`.",
+      "subFormId": "type_rval",
+      "commandType": "RVAL"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Spread players",
+      "description": "Spawn players at a particular `x` and `z` rotation with a defined `distance`, `max range`, and `players`.",
+      "params": [
+        {
+          "name": "x",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "z",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "spreaddistance",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "maxrange",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "victim",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "maxheight",
+          "type": "RVAL",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

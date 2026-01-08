@@ -1,12 +1,98 @@
 {
-  "description": "Allows an entity to define an entity's melee attack and any additional effects on it's attack.",
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "damage",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "deals "
+          },
+          {
+            "type": "value",
+            "field": "damage"
+          },
+          {
+            "type": "literal",
+            "text": " melee damage"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "effect_name",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "applies "
+          },
+          {
+            "type": "value",
+            "field": "effect_name",
+            "humanify": "minecraft"
+          },
+          {
+            "type": "literal",
+            "text": " on hit"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Defines an entity's melee attack damage and any additional status effects applied on hit. Typical damage values range from 3 (zombie, creeper) to 7-21 (iron golem).",
   "fields": [
     {
       "id": "damage",
-      "description": "Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it.",
-      "dataType": 19,
+      "description": "Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it. Can be a number, an array [min, max], or an object with range_min and range_max properties.",
+      "dataType": 3,
       "minValue": -50,
-      "maxValue": 50
+      "maxValue": 50,
+      "alternates": [
+        {
+          "id": "damage",
+          "dataType": 15,
+          "subForm": {
+            "fields": [
+              {
+                "id": "0",
+                "dataType": 3
+              },
+              {
+                "id": "1",
+                "dataType": 3
+              }
+            ]
+          }
+        },
+        {
+          "id": "damage",
+          "dataType": 16,
+          "subForm": {
+            "fields": [
+              {
+                "id": "range_min",
+                "dataType": 3,
+                "description": "Minimum damage value"
+              },
+              {
+                "id": "range_max",
+                "dataType": 3,
+                "description": "Maximum damage value"
+              }
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "effect_duration",

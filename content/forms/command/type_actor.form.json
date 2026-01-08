@@ -1,0 +1,10 @@
+{
+  "id": "type_actor",
+  "title": "Entity Selector",
+  "description": "Targets entities. Alias for SELECTION.",
+  "fields": [],
+  "formatHint": "@a, @e, @p, @r, @s",
+  "aliasOf": [
+    "type_selection"
+  ]
+}

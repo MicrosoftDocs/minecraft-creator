@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:custom_hit_test"
 description: "Describes the minecraft:custom_hit_test entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -16,7 +17,7 @@ List of hitboxes for melee and ranged hits against the entity.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| hitboxes | *not set* | Array of strings | Comma seperated list of hitboxes. | Hoglin: `[{"width":1,"height":0.85,"pivot":[0,0.5,0]}]`, `[{"width":2,"height":1.75,"pivot":[0,1,0]}]` | 
+| hitboxes | *not set* | Array of strings | Comma-separated list of hitboxes. | Hoglin: `[{"width":1,"height":0.85,"pivot":[0,0.5,0]}]`, `[{"width":2,"height":1.75,"pivot":[0,1,0]}]` | 
 
 ## Samples
 

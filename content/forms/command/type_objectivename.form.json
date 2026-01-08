@@ -1,0 +1,27 @@
+{
+  "id": "type_objectivename",
+  "title": "Scoreboard Objective",
+  "description": "Name of a scoreboard objective.",
+  "fields": [],
+  "formatHint": "alphanumeric with underscores, max 16 characters",
+  "samples": {
+    "values": [
+      {
+        "path": "Track player kills",
+        "content": "kills"
+      },
+      {
+        "path": "Track player deaths",
+        "content": "deaths"
+      },
+      {
+        "path": "General score tracking",
+        "content": "score"
+      },
+      {
+        "path": "Currency tracking",
+        "content": "money"
+      }
+    ]
+  }
+}

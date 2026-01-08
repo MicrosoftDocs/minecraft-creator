@@ -1,5 +1,107 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:food",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "nutrition",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is a "
+          },
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "nutrition",
+                    "comparison": ">=",
+                    "value": 8
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "hearty meal"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "nutrition",
+                    "comparison": ">=",
+                    "value": 5
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "filling food"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "nutrition",
+                    "comparison": ">=",
+                    "value": 3
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "light snack"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "small nibble"
+              }
+            ]
+          },
+          {
+            "type": "literal",
+            "text": " ("
+          },
+          {
+            "type": "value",
+            "field": "nutrition"
+          },
+          {
+            "type": "literal",
+            "text": " hunger)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "can_always_eat",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be eaten even when full"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:food",
@@ -384,6 +486,25 @@
                   "name": "hunger",
                   "chance": 0.3,
                   "duration": 30,
+                  "amplifier": 0
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/items/golden_apple.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": [
+                {
+                  "name": "regeneration",
+                  "chance": 1,
+                  "duration": 5,
+                  "amplifier": 1
+                },
+                {
+                  "name": "absorption",
+                  "chance": 1,
+                  "duration": 120,
                   "amplifier": 0
                 }
               ]

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity has any of the specified type families"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.has_any_family",
   "fields": [],
   "description": "Returns 1 if the entity has any of the specified type families, else 0.",

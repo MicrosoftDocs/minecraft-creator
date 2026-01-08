@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies durability properties"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:durability",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

@@ -1,6 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "test_simulated_player_move",
   "title": "Move Entity",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "moves a simulated player to a location"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "test",
     "action"
@@ -11,5 +24,6 @@
       "title": "Location",
       "dataType": 11
     }
-  ]
+  ],
+  "description": "Commands a simulated player to navigate to a target location using pathfinding. The simulated player moves like a real player, triggering pressure plates, opening doors, and interacting with the world. Used in GameTest Framework to verify player-centric behaviors."
 }

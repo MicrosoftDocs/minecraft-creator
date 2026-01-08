@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines spawn densitylimit settings"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Spawn DensityLimit",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -28,5 +41,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Defines spawn densitylimit settings."
 }

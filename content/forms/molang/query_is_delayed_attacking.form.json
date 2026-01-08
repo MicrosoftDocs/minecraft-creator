@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is attacking using the delayed..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_delayed_attacking",
   "fields": [],
   "description": "Returns 1.0 if the entity is attacking using the delayed attack, else it returns 0.0. Applies to ravager.",

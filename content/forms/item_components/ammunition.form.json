@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is ammunition for a shooter item"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Ammunition",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -40,5 +53,6 @@
         "defaultValue": false
       }
     ]
-  }
+  },
+  "description": "Is ammunition for a shooter item."
 }

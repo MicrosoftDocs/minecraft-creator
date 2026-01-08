@@ -1,5 +1,83 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:cave_carver_feature",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "carves cave tunnels through terrain in pregeneration pass"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "fill_with",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "fills carved space with "
+          },
+          {
+            "type": "value",
+            "field": "fill_with",
+            "humanify": "minecraft"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "width_modifier",
+            "comparison": ">",
+            "value": 0
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "widens caves by "
+          },
+          {
+            "type": "value",
+            "field": "width_modifier"
+          },
+          {
+            "type": "literal",
+            "text": " blocks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "skip_carve_chance",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "1/"
+          },
+          {
+            "type": "value",
+            "field": "skip_carve_chance"
+          },
+          {
+            "type": "literal",
+            "text": " chance to skip carving"
+          }
+        ],
+        "priority": 3
+      }
+    ]
+  },
   "fields": [
     {
       "id": "format_version",

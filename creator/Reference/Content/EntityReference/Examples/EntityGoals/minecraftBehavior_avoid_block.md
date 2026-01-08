@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:behavior.avoid_block"
 description: "Describes the minecraft:behavior.avoid_block ai behavior component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -17,7 +18,7 @@ Allows this entity to avoid certain blocks.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | avoid_block_sound | *not set* | String | The sound event to play when the mob is avoiding a block. | Hoglin: `"retreat"` | 
-| on_escape | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Escape trigger. | Hoglin: `[{"event":"escaped_event","target":"self"}]` | 
+| on_escape | *not set* | Array of Minecraft Event Triggers | Event triggers that fire when the entity escapes from the avoided block. Can be a single trigger or an array of triggers. | Hoglin: `[{"event":"escaped_event","target":"self"}]` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Hoglin: `1`, Piglin: `9` | 
 | search_height | 0 | Integer number | Maximum distance to look for a block in y. | Hoglin: `4` | 
 | search_range | 0 | Integer number | Maximum distance to look for a block in xz. | Hoglin: `8` | 

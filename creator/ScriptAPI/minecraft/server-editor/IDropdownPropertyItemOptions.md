@@ -30,6 +30,13 @@ If true label text will be hidden. It will be visible by default.
 
 Type: *boolean*
 
+### **inlineLabel**
+`inlineLabel?: boolean;`
+
+Displays label inline. If undefined, it will be true.
+
+Type: *boolean*
+
 ### **maxVisibleEntries**
 `maxVisibleEntries?: number;`
 

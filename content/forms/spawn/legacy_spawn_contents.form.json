@@ -1,4 +1,37 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines legacy spawn rules for entity spawning" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "description.identifier", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "spawns " },
+          { "type": "value", "field": "description.identifier", "humanify": "minecraft" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "description.population_control", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "uses " },
+          { "type": "value", "field": "description.population_control" },
+          { "type": "literal", "text": " population control" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "conditions", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "has " },
+          { "type": "value", "field": "conditions.length" },
+          { "type": "literal", "text": " spawn condition(s)" }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "title": "Struct Legacy Spawn Contents Spawn",

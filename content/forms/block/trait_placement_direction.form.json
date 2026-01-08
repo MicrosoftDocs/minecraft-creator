@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has player rotation states on placement" }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "enabled_states",

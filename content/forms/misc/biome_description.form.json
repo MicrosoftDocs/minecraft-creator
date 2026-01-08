@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "contains non-component settings for a biome"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Biome Description",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

@@ -1,6 +1,50 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Spawn Rules",
-  "fields": [],
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines spawn rules for an entity"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "conditions",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "with "
+          },
+          {
+            "type": "count",
+            "field": "conditions"
+          },
+          {
+            "type": "literal",
+            "text": " spawn condition(s)"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "conditions",
+      "title": "Conditions",
+      "description": "Array of spawn condition objects that define when and how this entity spawns.",
+      "dataType": 15,
+      "defaultValue": [],
+      "subFormId": "spawn/spawn_biomeconditions"
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn Rules",
     "title": "Spawn Rules",
@@ -20,5 +64,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines the complete spawn rules for an entity type, including population control group, spawn conditions (biome, light, difficulty, etc.), and herd configuration. This is the root structure of a spawn_rules JSON file in behavior packs."
 }

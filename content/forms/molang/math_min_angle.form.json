@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "normalizes an angle to the range [-180, 180)"
+          }
+        ]
+      }
+    ]
+  },
   "id": "`math.min_angle(value)`",
   "fields": [],
   "generated_doNotEdit": {

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "destroys blocks as it moves"
+          }
+        ]
+      }
+    ]
+  },
   "description": "Specifies the blocks that the entity can break as it moves around.",
   "fields": [
     {

@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "specifies a single block culling rule" }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "face",

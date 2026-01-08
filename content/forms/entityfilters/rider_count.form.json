@@ -1,4 +1,94 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "tests if the number of riders on the entity is "
+          },
+          {
+            "type": "switch",
+            "field": "operator",
+            "cases": [
+              {
+                "conditions": [
+                  "<"
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "less than"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  "<="
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "at most"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  ">"
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "greater than"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  ">="
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "at least"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  "!=",
+                  "<>",
+                  "not"
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "not equal to"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "equal to"
+              }
+            ]
+          },
+          {
+            "type": "literal",
+            "text": " "
+          },
+          {
+            "type": "value",
+            "field": "value"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "tags": [
     "conditional",

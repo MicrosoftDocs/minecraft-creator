@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns e raised to the specified power"
+          }
+        ]
+      }
+    ]
+  },
   "id": "`math.exp(value)`",
   "fields": [],
   "description": "Returns _e_ raised to the `value` power",

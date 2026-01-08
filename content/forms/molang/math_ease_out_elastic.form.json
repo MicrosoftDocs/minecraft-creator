@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "computes the ease out elastic of the value"
+          }
+        ]
+      }
+    ]
+  },
   "id": "`math.ease_out_elastic(start, end, 0_to_1)`",
   "fields": [],
   "generated_doNotEdit": {

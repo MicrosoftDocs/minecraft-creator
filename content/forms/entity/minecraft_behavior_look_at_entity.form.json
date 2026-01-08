@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "looks at nearby entities"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "description": "Compels an entity to look at a specific entity by rotating the `head` bone pose within a set limit.",
   "generated_doNotEdit": {

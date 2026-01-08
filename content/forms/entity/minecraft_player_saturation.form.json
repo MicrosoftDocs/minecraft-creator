@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has a saturation level for hunger" }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:player.saturation",
   "title": "Player Saturation",
   "description": "Defines the player's need for food.",

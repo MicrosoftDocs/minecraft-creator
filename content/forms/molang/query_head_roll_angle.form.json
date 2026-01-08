@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns roll angle of the head of the entity if it make..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.head_roll_angle",
   "fields": [],
   "description": "Returns the roll angle of the head of the entity if it makes sense, else it returns 0.0. Applies to how a wolf looks at a player holding food.",

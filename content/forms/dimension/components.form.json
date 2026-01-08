@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Components",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies the components that define dimension properties such as bounds and generation"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Components",
@@ -23,5 +36,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Specifies the components that define dimension properties such as bounds and generation."
 }

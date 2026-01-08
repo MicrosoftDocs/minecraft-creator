@@ -1,0 +1,131 @@
+{
+  "id": "cmd_aimassist",
+  "title": "aimassist",
+  "description": "Enable Aim Assist",
+  "fields": [
+    {
+      "id": "players",
+      "title": "players",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "set",
+      "title": "set",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "AIMASSISTACTIONSET"
+    },
+    {
+      "id": "x_angle",
+      "title": "x angle",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "y_angle",
+      "title": "y angle",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "max_distance",
+      "title": "max distance",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "target_mode",
+      "title": "target mode",
+      "type": "string",
+      "isOptional": true,
+      "commandType": "AIMASSISTTARGETMODE"
+    },
+    {
+      "id": "preset_id",
+      "title": "preset id",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "clear",
+      "title": "clear",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "AIMASSISTACTIONCLEAR"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Overload 1",
+      "description": "",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "AIMASSISTACTIONSET",
+          "isOptional": false
+        },
+        {
+          "name": "x_angle",
+          "type": "VAL",
+          "isOptional": true
+        },
+        {
+          "name": "y_angle",
+          "type": "VAL",
+          "isOptional": true
+        },
+        {
+          "name": "max_distance",
+          "type": "VAL",
+          "isOptional": true
+        },
+        {
+          "name": "target_mode",
+          "type": "AIMASSISTTARGETMODE",
+          "isOptional": true
+        },
+        {
+          "name": "preset_id",
+          "type": "ID",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Overload 2",
+      "description": "",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "clear",
+          "type": "AIMASSISTACTIONCLEAR",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

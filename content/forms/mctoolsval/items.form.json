@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "counts content types found in the project"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "items",
+  "title": "Content Counts",
+  "description": "Provides counts of various content types found in the project including packs, entities, blocks, items, and other definitions.",
+  "fields": [
+    {
+      "id": "102",
+      "title": "Behavior Pack",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Indicates a behavior pack manifest.json was found in the project.",
+      "technicalDescription": "Data contains a count (1) indicating a behavior pack exists"
+    },
+    {
+      "id": "103",
+      "title": "Resource Pack",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Indicates a resource pack manifest.json was found in the project.",
+      "technicalDescription": "Data contains a count (1) indicating a resource pack exists"
+    }
+  ]
+}

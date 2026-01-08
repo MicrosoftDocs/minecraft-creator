@@ -3,13 +3,20 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:behavior.rise_to_liquid_level"
 description: "Describes the minecraft:behavior.rise_to_liquid_level ai behavior component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.rise_to_liquid_level
 
-Allows the mob to stay at a certain level when in liquid.
+> [!IMPORTANT]
+> This type is now deprecated, and no longer in use in the latest versions of Minecraft.
+
+Allows the mob to stay at a certain level when in liquid. This behavior was deprecated in 1.18.20 and replaced with minecraft:behavior.float.
+
+> [!Note]
+> This behavior was used by striders in versions 1.16-1.18.10 but has been replaced with minecraft:behavior.float in newer versions.
 
 
 ## Rise To Liquid Level Behavior Properties

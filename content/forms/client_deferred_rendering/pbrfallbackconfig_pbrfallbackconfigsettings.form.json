@@ -1,7 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "fields": [],
   "id": "minecraft:pbr_fallback_settings",
   "title": "PBR Fallback Settings",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines fallback PBR material properties for blocks and actors" }
+        ]
+      }
+    ]
+  },
   "generatedFromSchema_doNotEdit": {
     "title": "Struct PBRFallbackConfig PBRFallbackConfigSettings Client Deferred Rendering",
     "description": "Struct PBRFallbackConfig PBRFallbackConfigSettings Client Deferred Rendering",

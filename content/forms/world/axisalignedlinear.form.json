@@ -1,6 +1,20 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "AxisAlignedLinear",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a positional predicate based on axis distance and random chance"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
+  "description": "Predicate that evaluates to true if the block is within the distance range along the provided axis and a random number is generated between the chance range.",
   "generatedFromSchema_doNotEdit": {
     "id": "AxisAlignedLinear",
     "title": "World AxisAlignedLinear",
@@ -30,7 +44,13 @@
         "id": "max_chance",
         "title": "Max Chance",
         "dataType": 3,
-        "defaultValue": 0
+        "defaultValue": 0,
+        "validity": [
+          {
+            "comparison": "<",
+            "value": 1
+          }
+        ]
       },
       {
         "id": "max_dist",
@@ -42,7 +62,13 @@
         "id": "min_chance",
         "title": "Min Chance",
         "dataType": 3,
-        "defaultValue": 0
+        "defaultValue": 0,
+        "validity": [
+          {
+            "comparison": "<",
+            "value": 1
+          }
+        ]
       },
       {
         "id": "min_dist",

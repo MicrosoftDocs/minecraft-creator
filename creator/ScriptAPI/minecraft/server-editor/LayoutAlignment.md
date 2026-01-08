@@ -12,9 +12,9 @@ description: Contents of the @minecraft/server-editor.LayoutAlignment enumeratio
 Alignment options for UI elements
 
 ## Constants
-### **Left**
-`Left = 0`
+### **Start**
+`Start = 0`
 ### **Center**
 `Center = 1`
-### **Right**
-`Right = 2`
+### **End**
+`End = 2`

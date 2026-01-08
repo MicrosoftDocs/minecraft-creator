@@ -1,0 +1,31 @@
+{
+  "id": "cmd_save",
+  "title": "save",
+  "description": "Control or check how the game saves data to disk. This command is for use on a dedicated server only.",
+  "fields": [
+    {
+      "id": "mode",
+      "title": "mode",
+      "type": "string",
+      "isOptional": false,
+      "description": "Either `save-all` or `save-all flush` to save chunks to server immediately. This freezes the servers.",
+      "commandType": "SAVEMODE"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Save",
+      "description": "Save the current game.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "SAVEMODE",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 4,
+  "requiresCheats": true
+}

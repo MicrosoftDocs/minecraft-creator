@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Actions Documentation - minecraft:randomize_node"
 description: "Describes the minecraft:randomize_node entity action types"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

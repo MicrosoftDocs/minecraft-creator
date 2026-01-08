@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Items Documentation - minecraft:item"
 description: "Describes the minecraft:item item component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -27,16 +28,16 @@ List of all components used in this item.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| minecraft:allow_off_hand (Allow Off Hand) | *not set* | Boolean true/false | The allow_off_hand component determines whether the item can be placed in the off hand slot of the inventory. |  | 
+| minecraft:allow_off_hand | *not set* | Boolean true/false | The allow_off_hand component determines whether the item can be placed in the off hand slot of the inventory. |  | 
 | minecraft:allow_off_hand (Alternate 1) | *not set* | [Allow Off Hand](#allow-off-hand) item |  |  | 
 | minecraft:block_placer | *not set* | [Block Placer](#block-placer) item | Items with the block_placer component will place a block when used. <br>This component can also be used instead of the "minecraft:icon" component to render the referenced block as the item icon. |  | 
 | minecraft:bundle_interaction | *not set* | [Bundle Interaction](#bundle-interaction) item | [EXPERIMENTAL] Adds bundle-specific interactions and tooltip to the item. Requires a "minecraft:storage_item" component. |  | 
-| minecraft:can_destroy_in_creative (Can Destroy In Creative) | *not set* | Boolean true/false | The can_destroy_in_creative component determines if the item can be used by a player to break blocks when in creative mode. |  | 
+| minecraft:can_destroy_in_creative | *not set* | Boolean true/false | The can_destroy_in_creative component determines if the item can be used by a player to break blocks when in creative mode. |  | 
 | minecraft:can_destroy_in_creative (Alternate 1) | *not set* | [Can Destroy In Creative](#can-destroy-in-creative) item |  |  | 
 | minecraft:compostable | *not set* | [Compostable](#compostable) item | Specifies that an item is compostable and provides the chance of creating a composting layer in the composter |  | 
 | minecraft:cooldown | *not set* | [Cooldown](#cooldown) item | After you use an item, all items specified with the same `cool down category` setting becomes unusable for the duration specified by the 'cool down time' setting in this component. |  | 
 | minecraft:custom_components | *not set* | Object | Specifies an array of custom components defined in a script that should be added to this item. |  | 
-| minecraft:damage (Damage) | *not set* | Integer number | The damage component determines how much extra damage the item does on attack. |  | 
+| minecraft:damage | *not set* | Integer number | The damage component determines how much extra damage the item does on attack. |  | 
 | minecraft:damage (Alternate 1) | *not set* | [Damage](#damage) item |  |  | 
 | minecraft:damage_absorption | *not set* | [Damage Absorption](#damage-absorption) item | It allows an item to absorb damage that would otherwise be dealt to its wearer. For this to happen, the item needs to be equipped in an armor slot. The absorbed damage reduces the item's durability, with any excess damage being ignored. Because of this, the item also needs a `minecraft:durability` component. |  | 
 | minecraft:digger | *not set* | [Digger](#digger) item | Digger item component specifies how quickly this item can dig specific blocks. |  | 
@@ -47,38 +48,38 @@ List of all components used in this item.
 | minecraft:enchantable | *not set* | [Enchantable](#enchantable) item | The enchantable component specifies what enchantments can be applied to the item. Not all enchantments will have an effect on all item components. |  | 
 | minecraft:entity_placer | *not set* | [Entity Placer](#entity-placer) item | The entity_placer item component specifies the blocks that the item can be placed on. |  | 
 | minecraft:food | *not set* | [Food](#food) item | When an item has a food component, it becomes edible to the player. Must have the 'minecraft:use_duration' component in order to function properly. |  | 
-| minecraft:fuel (Fuel) | *not set* | Decimal number | Fuel item component allows this item to be used as fuel in a furnace to 'cook' other items. |  | 
+| minecraft:fuel | *not set* | Decimal number | Fuel item component allows this item to be used as fuel in a furnace to 'cook' other items. |  | 
 | minecraft:fuel (Alternate 1) | *not set* | [Fuel](#fuel) item |  |  | 
-| minecraft:glint (Glint) | *not set* | Boolean true/false | The glint component determines whether the item has the enchanted glint render effect on it. |  | 
+| minecraft:glint | *not set* | Boolean true/false | The glint component determines whether the item has the enchanted glint render effect on it. |  | 
 | minecraft:glint (Alternate 1) | *not set* | [Glint](#glint) item |  |  | 
-| minecraft:hand_equipped (Hand Equipped) | *not set* | Boolean true/false | The hand_equipped component determines if an item is rendered like a tool while it is in a player's hand. |  | 
+| minecraft:hand_equipped | *not set* | Boolean true/false | The hand_equipped component determines if an item is rendered like a tool while it is in a player's hand. |  | 
 | minecraft:hand_equipped (Alternate 1) | *not set* | [Hand Equipped](#hand-equipped) item |  |  | 
-| minecraft:hover_text_color (Hover Text Color) | *not set* | String | The hover_text_color component specifies the color of the item name when the players hovers the cursor over the item. |  | 
+| minecraft:hover_text_color | *not set* | String | The hover_text_color component specifies the color of the item name when the players hovers the cursor over the item. |  | 
 | minecraft:hover_text_color (Alternate 1) | *not set* | [Hover Text Color](#hover-text-color) item |  |  | 
-| minecraft:icon (Icon) | *not set* | String | Icon item component determines which icon graphic will be used to represent the item in the UI and elsewhere. |  | 
+| minecraft:icon | *not set* | String | Icon item component determines which icon graphic will be used to represent the item in the UI and elsewhere. |  | 
 | minecraft:icon (Alternate 1) | *not set* | [Icon](#icon) item |  |  | 
-| minecraft:interact_button (Interact Button) | *not set* | Boolean true/false | This component is a boolean or string that determines if the interact button is shown in touch controls and what text is displayed on the button. When set as true, default "Use Item" text will be displayed. |  | 
+| minecraft:interact_button | *not set* | Boolean true/false | This component is a boolean or string that determines if the interact button is shown in touch controls and what text is displayed on the button. When set as true, default "Use Item" text will be displayed. |  | 
 | minecraft:interact_button (Alternate 1) | *not set* | String |  |  | 
-| minecraft:liquid_clipped (Liquid Clipped) | *not set* | Boolean true/false | The liquid_clipped component determines whether the item interacts with liquid blocks on use. |  | 
+| minecraft:liquid_clipped | *not set* | Boolean true/false | The liquid_clipped component determines whether the item interacts with liquid blocks on use. |  | 
 | minecraft:liquid_clipped (Alternate 1) | *not set* | [Liquid Clipped](#liquid-clipped) item |  |  | 
-| minecraft:max_stack_size (Max Stack Size) | *not set* | Integer number | The max_stack_size component specifies how many of the item can be stacked together. |  | 
+| minecraft:max_stack_size | *not set* | Integer number | The max_stack_size component specifies how many of the item can be stacked together. |  | 
 | minecraft:max_stack_size (Alternate 1) | *not set* | [Max Stack Size](#max-stack-size) item |  |  | 
 | minecraft:projectile | *not set* | [Projectile](#projectile) item | Projectile items shoot out, like an arrow. |  | 
-| minecraft:rarity (Rarity) | *not set* | String | Specifies the base rarity and subsequently color of the item name when the player hovers the cursor over the item. |  | 
+| minecraft:rarity | *not set* | String | Specifies the base rarity and subsequently color of the item name when the player hovers the cursor over the item. |  | 
 | minecraft:rarity (Alternate 1) | *not set* | [Rarity](#rarity) item |  |  | 
 | minecraft:record | *not set* | [Record](#record) item | Record Item Component. Used by record items to play music. |  | 
 | minecraft:repairable | *not set* | [Repairable](#repairable) item | The repairable item component specifies which items can be used to repair this item, along with how much durability is gained. |  | 
 | minecraft:shooter | *not set* | [Shooter](#shooter) item | Shooter Item Component. |  | 
-| minecraft:should_despawn (Should Despawn) | *not set* | Boolean true/false | Should_despawn component determines if the item should eventually despawn while floating in the world |  | 
+| minecraft:should_despawn | *not set* | Boolean true/false | Should_despawn component determines if the item should eventually despawn while floating in the world |  | 
 | minecraft:should_despawn (Alternate 1) | *not set* | [Should Despawn](#should-despawn) item |  |  | 
-| minecraft:stacked_by_data (Stacked By Data) | *not set* | Boolean true/false | The stacked_by_data component determines whether the same items with different aux values can stack. Also defines whether the item entities can merge while floating in the world. |  | 
+| minecraft:stacked_by_data | *not set* | Boolean true/false | The stacked_by_data component determines whether the same items with different aux values can stack. Also defines whether the item entities can merge while floating in the world. |  | 
 | minecraft:stacked_by_data (Alternate 1) | *not set* | [Stacked By Data](#stacked-by-data) item |  |  | 
 | minecraft:storage_item | *not set* | [Storage Item](#storage-item) item | [EXPERIMENTAL] Storage Items can be used by other components to store other items within this item. |  | 
 | minecraft:storage_weight_limit | *not set* | [Storage Weight Limit](#storage-weight-limit) item | Specifies the maximum weight limit that a storage item can hold |  | 
 | minecraft:storage_weight_modifier | *not set* | [Storage Weight Modifier](#storage-weight-modifier) item | Specifies the maximum weight limit that a storage item can hold |  | 
 | minecraft:tags | *not set* | [Tags](#tags) item | The tags component specifies which tags an item has on it. |  | 
 | minecraft:throwable | *not set* | [Throwable](#throwable) item | Throwable items can be thrown by the player, such as a snowball. |  | 
-| minecraft:use_animation (Use Animation) | *not set* | String | Use_animation specifies which animation is played when the player uses the item. |  | 
+| minecraft:use_animation | *not set* | String | Use_animation specifies which animation is played when the player uses the item. |  | 
 | minecraft:use_animation (Alternate 1) | *not set* | [Use Animation](#use-animation) item |  |  | 
 | minecraft:use_modifiers | *not set* | [Use Modifiers](#use-modifiers) item | This component modifies use effects, including how long the item takes to use and the player's speed when used in combination with components like "shooter", "throwable", or "food". |  | 
 | minecraft:wearable | *not set* | [Wearable](#wearable) item | Wearable items can be worn by a player in the head, chest, legs, feet, or off-hand slots. |  | 
@@ -338,7 +339,7 @@ When an item has a food component, it becomes edible to the player. Must have th
 | can_always_eat | *not set* | Boolean true/false | If true you can always eat this item (even when not hungry). Default is set to false. |  | 
 | nutrition | *not set* | Integer number | Value that is added to the entity's nutrition when the item is used. Default is set to 0. |  | 
 | saturation_modifier | *not set* | Decimal number | saturation_modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff. Default is set to 0.6. |  | 
-| using_converts_to (Using Converts To) | *not set* | String | When used, converts to the item specified by the string in this field. Default does not convert item. |  | 
+| using_converts_to | *not set* | String | When used, converts to the item specified by the string in this field. Default does not convert item. |  | 
 | using_converts_to (Alternate 1) | *not set* | Keyed set of strings |  |  | 
 
 ## Fuel

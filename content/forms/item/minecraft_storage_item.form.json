@@ -1,5 +1,92 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:storage_item",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "max_slots",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "provides "
+          },
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "max_slots",
+                    "comparison": ">=",
+                    "value": 54
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "large"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "max_slots",
+                    "comparison": ">=",
+                    "value": 27
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "medium"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "max_slots",
+                    "comparison": ">=",
+                    "value": 9
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "small"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "minimal"
+              }
+            ]
+          },
+          {
+            "type": "literal",
+            "text": " storage ("
+          },
+          {
+            "type": "value",
+            "field": "max_slots"
+          },
+          {
+            "type": "literal",
+            "text": " slots)"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:storage_item",

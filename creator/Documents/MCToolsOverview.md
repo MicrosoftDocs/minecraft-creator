@@ -56,6 +56,8 @@ To use the validator, use "Choose file" in the Validate/Inspect Tool to select a
 
 Validation results are displayed in the "Inspector" section of the application. Note that there are different suites of tests that you can use. You can also opt to download the results in comma-separated-value (CSV) format or web page (HTML) format.
 
+See [the validation rules index](./../Reference/Content/MCToolsValReference/ValidationRulesIndex.md) for more information on validation rules and fixes.
+
 ## What's next?
 
 MCTools.dev is one of many tools you can use to work on facets of your project. See the other major Minecraft tools [listed here](./CommonlyUsedTools.md).

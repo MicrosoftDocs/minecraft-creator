@@ -1,4 +1,150 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "attacks by charging and ramming into targets"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "knockback_force",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "with "
+          },
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "knockback_force",
+                    "comparison": ">=",
+                    "value": 5
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "powerful"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "knockback_force",
+                    "comparison": ">=",
+                    "value": 2
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "moderate"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "light"
+              }
+            ]
+          },
+          {
+            "type": "literal",
+            "text": " knockback ("
+          },
+          {
+            "type": "value",
+            "field": "knockback_force"
+          },
+          {
+            "type": "literal",
+            "text": ")"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "run_speed",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "charges at "
+          },
+          {
+            "type": "value",
+            "field": "run_speed"
+          },
+          {
+            "type": "literal",
+            "text": "x run speed"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "knockback_height",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "launches targets "
+          },
+          {
+            "type": "value",
+            "field": "knockback_height"
+          },
+          {
+            "type": "literal",
+            "text": " units upward"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "baby_knockback_modifier",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "baby entities have reduced knockback ("
+          },
+          {
+            "type": "value",
+            "field": "baby_knockback_modifier"
+          },
+          {
+            "type": "literal",
+            "text": "x)"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "on_start",

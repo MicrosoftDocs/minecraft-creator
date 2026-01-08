@@ -1,0 +1,151 @@
+{
+  "id": "cmd_music",
+  "title": "music",
+  "description": "Allows you to control playing music tracks.",
+  "fields": [
+    {
+      "id": "action",
+      "title": "action",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "MUSICQUEUEACTION"
+    },
+    {
+      "id": "trackname",
+      "title": "trackName",
+      "type": "string",
+      "isOptional": false,
+      "description": "Required. A `string` to specify the track to play. Must be a single word such as `record.cat`.",
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "volume",
+      "title": "volume",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `float` number to specify the volume of the music track.",
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "fadeseconds",
+      "title": "fadeSeconds",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `float` number that specifies the duration the track fades in or out.",
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "repeatmode",
+      "title": "repeatMode",
+      "type": "string",
+      "isOptional": true,
+      "description": "Optional. An `enum`  that specifies how the music is played. Must be `play_once` (default) or `loop`.",
+      "commandType": "MUSICREPEATMODE"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Queue track",
+      "description": "Queue a `track name` with an optional `volume`, `fade seconds`, and `repeat mode`.",
+      "params": [
+        {
+          "name": "action",
+          "type": "MUSICQUEUEACTION",
+          "isOptional": false
+        },
+        {
+          "name": "trackname",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "volume",
+          "type": "VAL",
+          "isOptional": true
+        },
+        {
+          "name": "fadeseconds",
+          "type": "VAL",
+          "isOptional": true
+        },
+        {
+          "name": "repeatmode",
+          "type": "MUSICREPEATMODE",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Play track",
+      "description": "Play a `track name` with an optional `volume`, `fade seconds`, and `repeat mode`.",
+      "params": [
+        {
+          "name": "action",
+          "type": "MUSICPLAYACTION",
+          "isOptional": false
+        },
+        {
+          "name": "trackname",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "volume",
+          "type": "VAL",
+          "isOptional": true
+        },
+        {
+          "name": "fadeseconds",
+          "type": "VAL",
+          "isOptional": true
+        },
+        {
+          "name": "repeatmode",
+          "type": "MUSICREPEATMODE",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Stop music",
+      "description": "Stop the music with optional `fade seconds` value.",
+      "params": [
+        {
+          "name": "action",
+          "type": "MUSICSTOPACTION",
+          "isOptional": false
+        },
+        {
+          "name": "fadeseconds",
+          "type": "VAL",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Adjust volume",
+      "description": "Adjust the volume with required `volume` value.",
+      "params": [
+        {
+          "name": "action",
+          "type": "MUSICVOLUMEACTION",
+          "isOptional": false
+        },
+        {
+          "name": "volume",
+          "type": "VAL",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies the padding for the top and bottom of the world"
+          }
+        ]
+      }
+    ]
+  },
   "id": "DimensionPaddingRange",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

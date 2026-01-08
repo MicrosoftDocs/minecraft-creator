@@ -1,15 +1,29 @@
 {
   "devDependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
     "del": "^8.0.0",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "typescript": "^5.3.0"
   },
   "dependencies": {
-    "@minecraft/creator-tools": "^0.13.0"
+    "@minecraft/creator-tools": "^0.15.2",
+    "@modelcontextprotocol/sdk": "^1.25.1",
+    "mctools-int": "file:packages/mctools-int-0.0.1.tgz"
   },
   "scripts": {
+    "all": "npm ci && npm run-script preparedevenv && npm run-script build",
+    "dlres": "npx gulp dlres --max_old_space_size=16384",
     "preparedevenv": "npx gulp preparedevenv --max_old_space_size=16384",
-    "updateformsource": "npx mct docsupdateformsource --base-path ./build/workcontent/public/ -o ./out/",
-    "processcontent": "npx mct docsgenerateformjson --base-path ./build/workcontent/public/ -i ./../content/forms/ -o ./build/workcontent/public/data/forms/",
-    "build": "npm run-script updateformsource && npm run-script processcontent && npx mct docsgeneratemarkdown --base-path ./build/workcontent/public/ -i ./build/workcontent/public/data/forms/ -o ./out/msdocs/"
+    "updateformsource": "npx mct docsupdateformsource --base-path ./build/workcontent/public/  -i ./../content/forms/ -o ./out/postupdate",
+    "updateformsource-int": "npx mctools-int docsupdateformsource --base-path ./build/workcontent/public/ -i ./../content/forms/ -o ./out/postupdate-int",
+    "processcontent": "npx mct docsgenerateformjson --base-path ./build/workcontent/public/ -i ./out/postupdate -o ./build/workcontent/public/data/forms/",
+    "processcontent-int": "npx mctools-int docsgenerateformjson --base-path ./build/workcontent/public/ -i ./out/postupdate-int/forms -o ./build/workcontent/public/data/forms/",
+    "build": "npm run-script updateformsource && npm run-script processcontent && npx mct docsgeneratemarkdown --base-path ./build/workcontent/public/ -i ./build/workcontent/public/data/forms/ -o ./out/msdocs/",
+    "build-int": "npm run-script syncres && npm run-script updateformsource-int && npm run-script processcontent-int && npm run-script syncres && npx mctools-int docsgeneratemarkdown --base-path ./build/workcontent/public/ -i ./build/workcontent/public/data/forms/ -o ./out/msdocs/ && npm run-script generatetypes-int && npm run-script generateschema-int",
+    "generatetypes-int": "npx mctools-int docsgeneratetypes --base-path ./build/workcontent/public/ -i ./build/workcontent/public/data/forms/ -o ./out/types/",
+    "generateschema-int": "npx mctools-int docsgeneratejsonschema --base-path ./build/workcontent/public/ -i ./build/workcontent/public/data/forms/ -o ./out/schema/",
+    "installlocalmct": "cd ../../minecraft-creator-tools-internal/app/toolbuild/jsn && npm pack && mkdir -p ../../../../minecraft-creator-pr/tools/packages && mv mctools-int-*.tgz ../../../../minecraft-creator-pr/tools/packages/ && cd ../../../../minecraft-creator-pr/tools && npm i ./packages/mctools-int-*.tgz",
+    "syncres": "cp -r ../../minecraft-creator-tools-internal/app/reslist/* ./reslist/ && cp ../../minecraft-creator-tools-internal/app/public/data/mccat.json ./build/workcontent/public/data/ && mkdir -p ./build/workcontent/public/data/mci && cp ../../minecraft-creator-tools-internal/app/public/data/mci/preview.mci.json ./build/workcontent/public/data/mci/"
   }
 }

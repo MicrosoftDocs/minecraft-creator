@@ -1,0 +1,300 @@
+{
+  "id": "cmd_structure",
+  "title": "structure",
+  "description": "Saves or loads a structure in the world. See examples of this command in use in the [Structure Blocks documentation](https://learn.microsoft.com/minecraft/creator/documents/structureblockstutorial#creating-structures-using-the-structure-command).",
+  "fields": [
+    {
+      "id": "action",
+      "title": "action",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "STRUCTURESAVEACTION"
+    },
+    {
+      "id": "name",
+      "title": "name",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `string` that specifies the name of the structure. May include a namespace.",
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "from",
+      "title": "from",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `vector` used with `to` that specifies the opposing corners of a structure.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "to",
+      "title": "to",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `vector` used with `from` that specifies the opposing corners of a structure.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "includeentities",
+      "title": "includeEntities",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `Boolean` that specifies whether to save or load entities inside the structure. Default: `true`.",
+      "subFormId": "type_boolean",
+      "commandType": "BOOLEAN"
+    },
+    {
+      "id": "includeblocks",
+      "title": "includeBlocks",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `Boolean` that specifies whether to save or load blocks inside the structure. Default: `true`.",
+      "subFormId": "type_boolean",
+      "commandType": "BOOLEAN"
+    },
+    {
+      "id": "rotation",
+      "title": "rotation",
+      "type": "string",
+      "isOptional": true,
+      "description": "An `enum` of the rotation when loading in a structure. Must be one of `0_degrees`, `90_degrees`, `180_degrees`, or `270_degrees`. Default: `none`.",
+      "commandType": "ROTATION"
+    },
+    {
+      "id": "mirror",
+      "title": "mirror",
+      "type": "string",
+      "isOptional": true,
+      "description": "An `enum` that specifies the axis to mirror when loading a structure. Either `0_degrees`, `90_degrees`, `180_degrees`, or `270_degrees`. Default: `none`.",
+      "commandType": "MIRROR"
+    },
+    {
+      "id": "waterlogged",
+      "title": "waterlogged",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_boolean",
+      "commandType": "BOOLEAN"
+    },
+    {
+      "id": "integrity",
+      "title": "integrity",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `float` that specifies the percentage likelihood a block will load. 100 loads all blocks, 0 loads none. Default: 100.",
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "seed",
+      "title": "seed",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `string` that specifies the seed when loading in a block with variable integrity.",
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "animationmode",
+      "title": "animationMode",
+      "type": "string",
+      "isOptional": true,
+      "description": "An `enum` of `block_by_block` to load blocks in one at a time or `layer_by_layer` to load them in in layers. Default: `none`.",
+      "commandType": "STRUCTUREANIMATIONMODE"
+    },
+    {
+      "id": "animationseconds",
+      "title": "animationSeconds",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `float` of the duration of the time to animate the structure loading in. Default: `0.0`.",
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Save structure, optional save mode",
+      "description": "`Save` a `structure` with required structure `name`, `from`, and `to`, and an optional `save mode`.",
+      "params": [
+        {
+          "name": "action",
+          "type": "STRUCTURESAVEACTION",
+          "isOptional": false
+        },
+        {
+          "name": "name",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "from",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "to",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "includeentities",
+          "type": "BOOLEAN",
+          "isOptional": true
+        },
+        {
+          "name": "includeblocks",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Save structure, optional entities, blocks, save mode",
+      "description": "`Save` a `structure` with required structure `name`, `from`, and `to`, and optional `entities`, `blocks`, and `save mode`.",
+      "params": [
+        {
+          "name": "action",
+          "type": "STRUCTUREDELETEACTION",
+          "isOptional": false
+        },
+        {
+          "name": "name",
+          "type": "ID",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Load structure, optional animation mode, animation seconds",
+      "description": "`Load` a `structure` with required structure `name` and `to`, and optional `rotation`, `mirror`, `animation mode`, `animation seconds`, `entities`, `blocks`, `integrity`, and `seed`.",
+      "params": [
+        {
+          "name": "action",
+          "type": "STRUCTURELOADACTION",
+          "isOptional": false
+        },
+        {
+          "name": "name",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "to",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "rotation",
+          "type": "ROTATION",
+          "isOptional": true
+        },
+        {
+          "name": "mirror",
+          "type": "MIRROR",
+          "isOptional": true
+        },
+        {
+          "name": "includeentities",
+          "type": "BOOLEAN",
+          "isOptional": true
+        },
+        {
+          "name": "includeblocks",
+          "type": "BOOLEAN",
+          "isOptional": true
+        },
+        {
+          "name": "waterlogged",
+          "type": "BOOLEAN",
+          "isOptional": true
+        },
+        {
+          "name": "integrity",
+          "type": "VAL",
+          "isOptional": true
+        },
+        {
+          "name": "seed",
+          "type": "ID",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Overload 6",
+      "description": "",
+      "params": [
+        {
+          "name": "action",
+          "type": "STRUCTURELOADACTION",
+          "isOptional": false
+        },
+        {
+          "name": "name",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "to",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "rotation",
+          "type": "ROTATION",
+          "isOptional": true
+        },
+        {
+          "name": "mirror",
+          "type": "MIRROR",
+          "isOptional": true
+        },
+        {
+          "name": "animationmode",
+          "type": "STRUCTUREANIMATIONMODE",
+          "isOptional": true
+        },
+        {
+          "name": "animationseconds",
+          "type": "VAL",
+          "isOptional": true
+        },
+        {
+          "name": "includeentities",
+          "type": "BOOLEAN",
+          "isOptional": true
+        },
+        {
+          "name": "includeblocks",
+          "type": "BOOLEAN",
+          "isOptional": true
+        },
+        {
+          "name": "waterlogged",
+          "type": "BOOLEAN",
+          "isOptional": true
+        },
+        {
+          "name": "integrity",
+          "type": "VAL",
+          "isOptional": true
+        },
+        {
+          "name": "seed",
+          "type": "ID",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

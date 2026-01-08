@@ -1,5 +1,50 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "controls particle acceleration and drag"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "linear_acceleration",
+      "title": "Linear Acceleration",
+      "description": "The linear acceleration of particles, as [x, y, z] Molang expressions or numbers.",
+      "dataType": 35,
+      "defaultValue": [
+        0,
+        0,
+        0
+      ],
+      "minLength": 3,
+      "maxLength": 3
+    },
+    {
+      "id": "linear_drag_coefficient",
+      "title": "Linear Drag Coefficient",
+      "description": "The drag coefficient applied to particle motion. Can be a number or Molang expression.",
+      "dataType": 34
+    },
+    {
+      "id": "rotation_acceleration",
+      "title": "Rotation Acceleration",
+      "description": "The rotation acceleration. Can be a number or Molang expression.",
+      "dataType": 34
+    },
+    {
+      "id": "rotation_drag_coefficient",
+      "title": "Rotation Drag Coefficient",
+      "description": "The rotation drag coefficient. Can be a number or Molang expression.",
+      "dataType": 34
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_motion_dynamic",
     "title": "Client Particles Particle Motion Dynamic",
@@ -151,5 +196,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Applies physics simulation to particle movement including gravity, acceleration, and air resistance. Linear acceleration adds constant force (gravity pulls down, wind pushes sideways), while drag slows particles over time. Rotation acceleration and drag control spinning. Creates natural-feeling motion for smoke rising, debris falling, or leaves drifting."
 }

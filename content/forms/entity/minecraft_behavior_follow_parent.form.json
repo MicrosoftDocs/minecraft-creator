@@ -1,4 +1,99 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "allows baby entities to follow their parent"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "speed_multiplier",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "follows at "
+          },
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "speed_multiplier",
+                    "comparison": ">=",
+                    "value": 2
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "very fast"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "speed_multiplier",
+                    "comparison": ">",
+                    "value": 1
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "fast"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "speed_multiplier",
+                    "comparison": "<",
+                    "value": 1
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "slow"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "normal"
+              }
+            ]
+          },
+          {
+            "type": "literal",
+            "text": " speed ("
+          },
+          {
+            "type": "value",
+            "field": "speed_multiplier"
+          },
+          {
+            "type": "literal",
+            "text": "x)"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "requires": [
     {

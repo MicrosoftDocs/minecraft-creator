@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can produce redstone signal"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Redstone Producer",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -18,6 +31,32 @@
           "south",
           "west",
           "east"
+        ],
+        "choices": [
+          {
+            "id": "down",
+            "title": "Down"
+          },
+          {
+            "id": "east",
+            "title": "East"
+          },
+          {
+            "id": "north",
+            "title": "North"
+          },
+          {
+            "id": "south",
+            "title": "South"
+          },
+          {
+            "id": "up",
+            "title": "Up"
+          },
+          {
+            "id": "west",
+            "title": "West"
+          }
         ]
       },
       {

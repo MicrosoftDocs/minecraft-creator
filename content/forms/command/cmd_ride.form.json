@@ -1,0 +1,231 @@
+{
+  "id": "cmd_ride",
+  "title": "ride",
+  "description": "Makes entities ride other entities, stops entities from riding, makes rides evict their riders, or summons rides or riders.",
+  "fields": [
+    {
+      "id": "riders",
+      "title": "riders",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies riders using player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors)s.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "mode",
+      "title": "mode",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "RIDEMODESTART"
+    },
+    {
+      "id": "ride",
+      "title": "ride",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies the entity to ride on. A player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors).",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "teleportrules",
+      "title": "teleportRules",
+      "type": "string",
+      "isOptional": true,
+      "description": "Either `teleport_ride` or `teleport_rider` (default).",
+      "commandType": "TELEPORTRULES"
+    },
+    {
+      "id": "howtofill",
+      "title": "howToFill",
+      "type": "string",
+      "isOptional": true,
+      "description": "One of `if_group_fits` to check whether riders can ride and only makes them ride if possible. Or `until_full` which makes them ride until rides is full. Default: `until_full`.",
+      "commandType": "FILLTYPE"
+    },
+    {
+      "id": "rides",
+      "title": "rides",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies the ridden entities. Must be a player name or entity selector.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "entitytype",
+      "title": "entityType",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies entities to summon. Must be the name`ID`of something that can be summoned.",
+      "subFormId": "type_entitytype",
+      "commandType": "ENTITYTYPE"
+    },
+    {
+      "id": "spawnevent",
+      "title": "spawnEvent",
+      "type": "string",
+      "isOptional": true,
+      "description": "Specifies the in-game event to call the summoned entities. Must be a spawn event in behavior pack.",
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "nametag",
+      "title": "nameTag",
+      "type": "string",
+      "isOptional": true,
+      "description": "Specifies the name of summoned entities.",
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "riderules",
+      "title": "rideRules",
+      "type": "string",
+      "isOptional": true,
+      "description": "Ride rules",
+      "commandType": "RIDERULES"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Start ride",
+      "description": "Start `ride` with `riders`, something to `ride`, and optional `teleport rules` and `fill type`.",
+      "params": [
+        {
+          "name": "riders",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "mode",
+          "type": "RIDEMODESTART",
+          "isOptional": false
+        },
+        {
+          "name": "ride",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "teleportrules",
+          "type": "TELEPORTRULES",
+          "isOptional": true
+        },
+        {
+          "name": "howtofill",
+          "type": "FILLTYPE",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Stop riding",
+      "description": "Stop `riders` from riding.",
+      "params": [
+        {
+          "name": "riders",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "mode",
+          "type": "RIDEMODESTOP",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Evict rider",
+      "description": "Evict riders from ride.",
+      "params": [
+        {
+          "name": "rides",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "mode",
+          "type": "RIDEMODEEVICT",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Summon ride, optional spawn event",
+      "description": "Summon an `entity` to ride with optional `spawn event` and `nametag`.",
+      "params": [
+        {
+          "name": "rides",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "mode",
+          "type": "RIDEMODESUMMONRIDER",
+          "isOptional": false
+        },
+        {
+          "name": "entitytype",
+          "type": "ENTITYTYPE",
+          "isOptional": false
+        },
+        {
+          "name": "spawnevent",
+          "type": "ID",
+          "isOptional": true
+        },
+        {
+          "name": "nametag",
+          "type": "ID",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Summon rider, optional ride rules, spawn event",
+      "description": "Summon a ride of `entity` type with optional `ride rules`, `spawn event`, and `nametag`.",
+      "params": [
+        {
+          "name": "riders",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "mode",
+          "type": "RIDEMODESUMMONRIDE",
+          "isOptional": false
+        },
+        {
+          "name": "entitytype",
+          "type": "ENTITYTYPE",
+          "isOptional": false
+        },
+        {
+          "name": "riderules",
+          "type": "RIDERULES",
+          "isOptional": true
+        },
+        {
+          "name": "spawnevent",
+          "type": "ID",
+          "isOptional": true
+        },
+        {
+          "name": "nametag",
+          "type": "ID",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

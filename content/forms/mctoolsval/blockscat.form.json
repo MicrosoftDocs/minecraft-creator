@@ -1,0 +1,58 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates blocks catalog files in resource packs"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "blockscat",
+  "title": "Blocks Catalog",
+  "description": "Validates blocks.json catalog files in resource packs. Checks for unused block resource identifiers and vanilla overrides. Can remove unused block resource identifiers.",
+  "fields": [
+    {
+      "id": "53",
+      "title": "Block Resource Identifier",
+      "description": "Aggregates information about block resource identifiers defined in the blocks catalog.",
+      "messageType": "info",
+      "dataType": 2,
+      "technicalDescription": "Data field contains the block identifier string."
+    },
+    {
+      "id": "100",
+      "title": "Unused Block Resource",
+      "description": "A block resource identifier is defined in blocks.json but not referenced by any block in the project. Consider removing it to reduce file size.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "technicalDescription": "Data field contains the unused block identifier string.",
+      "matchedValues": [
+        {
+          "updaterId": "BLOCKSCAT",
+          "updaterIndex": 1051,
+          "action": "Remove unused block resource identifiers."
+        }
+      ]
+    },
+    {
+      "id": "101",
+      "title": "Block Catalog Found",
+      "description": "A blocks catalog resource file (blocks.json) was found in the resource pack.",
+      "messageType": "info",
+      "dataType": 2
+    },
+    {
+      "id": "102",
+      "title": "Vanilla Override Block",
+      "description": "A block resource identifier overrides a vanilla Minecraft block, which is not recommended as it may cause unexpected behavior.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "technicalDescription": "Data field contains the block identifier that overrides a vanilla block."
+    }
+  ]
+}

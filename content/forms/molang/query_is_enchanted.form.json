@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is enchanted"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_enchanted",
   "fields": [],
   "description": "Returns 1.0 if the entity is enchanted, else it returns 0.0. Applies to armor, bows, crossbows, and shields.",

@@ -1,5 +1,73 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "retaliates against entities that damage it"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "alert_same_type",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "alerts nearby mobs of the same type when hurt"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "hurt_owner",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "will target its owner if hurt by them"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "entity_types",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has entity type filters for valid targets"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "entity_types",
+      "dataType": 15,
+      "alternates": [
+        {
+          "id": "entity_types",
+          "dataType": 16
+        }
+      ]
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.hurt_by_target",
     "title": "Hurt By Target Behavior",
@@ -97,6 +165,61 @@
                     "subject": "other",
                     "operator": "!=",
                     "value": "breeze"
+                  }
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/",
+              "content": [
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "skeleton"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "stray"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "zombie"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "husk"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "spider"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "cavespider"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "slime"
+                      }
+                    ]
                   }
                 }
               ]

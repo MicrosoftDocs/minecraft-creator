@@ -1,0 +1,23 @@
+{
+  "id": "type_weather",
+  "title": "Weather Type",
+  "description": "The weather condition.",
+  "fields": [],
+  "formatHint": "clear, rain, or thunder",
+  "samples": {
+    "values": [
+      {
+        "path": "Clear skies, sunny",
+        "content": "clear"
+      },
+      {
+        "path": "Raining (snowing in cold biomes)",
+        "content": "rain"
+      },
+      {
+        "path": "Thunderstorm with lightning",
+        "content": "thunder"
+      }
+    ]
+  }
+}

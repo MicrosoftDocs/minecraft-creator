@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has riders that spawn with it"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Rider Data",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

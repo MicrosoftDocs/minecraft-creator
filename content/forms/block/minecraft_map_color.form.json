@@ -1,4 +1,27 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "color",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has map color "
+          },
+          {
+            "type": "value",
+            "field": "color"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "tint_method",

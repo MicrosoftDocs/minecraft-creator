@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:ambient_sound_interval"
 description: "Describes the minecraft:ambient_sound_interval entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -17,9 +18,9 @@ Delay for an entity playing its sound.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | event_name | ambient | String | Level sound event to be played as the ambient sound. | Allay: `"ambient"`, Bee: `"ambient.pollinate"`, Creaking: `"undefined"` | 
-| event_names | *not set* | Array of [Event Names](#event-names) items | List of dynamic level sound events, with conditions for choosing between them. Evaluated in order, first one wins. If none evaluate to true, 'event_name' will take precedence. | Allay: `[{"event_name":"ambient.tame","condition":"query.is_using_item"},{"event_name":"ambient","condition":"!query.is_using_item"}]` | 
-| range | 16 | Decimal number | Maximum time in seconds to randomly add to the ambient sound delay time. |  | 
-| value | 8 | Decimal number | Minimum time in seconds before the entity plays its ambient sound again. |  | 
+| event_names | *not set* | Array of [Event Names](#event-names) items | List of dynamic level sound events, with conditions for choosing between them. Evaluated in order, first one wins. If none evaluate to true, 'event_name' will take precedence. | Allay: `[{"event_name":"ambient.tame","condition":"query.is_using_item"},{"event_name":"ambient","condition":"!query.is_using_item"}]`, Warden: `[{"event_name":"angry","condition":"query.anger_level(this) >= 80"},{"event_name":"agitated","condition":"query.anger_level(this) >= 40"}]` | 
+| range | 16 | Decimal number | Maximum time in seconds to randomly add to the ambient sound delay time. | Allay: `5`, Bee: `3`, Evocation Illager: `4` | 
+| value | 8 | Decimal number | Minimum time in seconds before the entity plays its ambient sound again. | Allay: `5`, Bee: `2`, Fox: `80` | 
 
 ## Event Names
 List of dynamic level sound events, with conditions for choosing between them. Evaluated in order, first one wins. If none evaluate to true, 'event_name' will take precedence.

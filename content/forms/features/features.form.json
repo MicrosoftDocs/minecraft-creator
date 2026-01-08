@@ -1,5 +1,300 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "features",
+  "title": "Features",
+  "description": "Defines a world generation feature document and its feature-specific properties.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines world generation feature configuration"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:aggregate_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "groups multiple features at the same position (aggregate)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:sequence_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "chains features with output-to-input positioning (sequence)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:cave_carver_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "carves cave tunnels through terrain (cave carver)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:ore_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "generates clustered block veins (ore)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:scatter_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "distributes features across a chunk (scatter)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:search_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "sweeps a volume for valid placements (search)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:snap_to_surface_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "adjusts Y position to floor or ceiling (snap to surface)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:structure_template_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "places .mcstructure files (structure template)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:growing_plant_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "generates vertical plant columns (growing plant)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:tree_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "generates trees with trunk and canopy (tree)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:vegetation_patch_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "creates vegetation-covered ground patches (vegetation patch)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:weighted_random_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "randomly selects from weighted feature options (weighted random)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:geode_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "generates hollow geode with layered shells (geode)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:fossil_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "generates buried skeletal formations (fossil)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:single_block_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "places a single block with weighted selection (single block)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:multiface_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "places and spreads blocks across surfaces (multiface)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:nether_cave_carver_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "carves cave systems through Nether terrain (nether cave carver)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:underwater_cave_carver_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "carves flooded caves below sea level (underwater cave carver)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:partially_exposed_blob_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "creates semi-buried blobs with one exposed face (partially exposed blob)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:surface_relative_threshold_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "places features only underground below surface (surface relative threshold)"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "features",

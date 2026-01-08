@@ -1,4 +1,39 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "is_humid",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is a humid biome"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "is_humid",
+            "comparison": "==",
+            "value": false
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is a dry biome"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:humidity",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

@@ -1,0 +1,57 @@
+{
+  "id": "cmd_event",
+  "title": "event",
+  "description": "Triggers an event for the specified entity or entities.",
+  "fields": [
+    {
+      "id": "entity",
+      "title": "entity",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "EVENTENTITYACTION"
+    },
+    {
+      "id": "target",
+      "title": "target",
+      "type": "string",
+      "isOptional": false,
+      "description": "Required. A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which entity the event is happening to.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "eventname",
+      "title": "eventName",
+      "type": "string",
+      "isOptional": false,
+      "description": "Required. A `string` that specifies the in-game event.",
+      "commandType": "ENTITYEVENTS"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Event triggered for target",
+      "description": "Trigger an event of type `eventName` for a `target`.",
+      "params": [
+        {
+          "name": "entity",
+          "type": "EVENTENTITYACTION",
+          "isOptional": false
+        },
+        {
+          "name": "target",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "eventname",
+          "type": "ENTITYEVENTS",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

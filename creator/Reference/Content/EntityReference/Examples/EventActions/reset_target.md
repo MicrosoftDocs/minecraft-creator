@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Actions Documentation - minecraft:reset_target"
 description: "Describes the minecraft:reset_target entity action types"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

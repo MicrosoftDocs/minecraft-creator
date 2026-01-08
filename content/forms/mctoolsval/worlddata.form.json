@@ -1,0 +1,164 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "analyzes world data including chunks and command blocks"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "worlddata",
+  "title": "World Data",
+  "description": "Analyzes world data including LevelDB chunks, command blocks, level.dat settings, and coordinates. Identifies command usage patterns and potential issues in saved world data.",
+  "fields": [
+    {
+      "id": "101",
+      "title": "Function Command",
+      "messageType": 1,
+      "dataType": 2,
+      "description": "Warning when a potentially problematic command is found in an MCFunction file. Some commands may have unintended effects in certain contexts.",
+      "technicalDescription": "Data contains the problematic command text"
+    },
+    {
+      "id": "102",
+      "title": "Block Command",
+      "messageType": 1,
+      "dataType": 2,
+      "description": "Warning when a potentially problematic command is found in a command block. Some commands may cause issues when run from command blocks.",
+      "technicalDescription": "Data contains the command block command text"
+    },
+    {
+      "id": "103",
+      "title": "Min X",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "The minimum X coordinate of loaded chunks in the world. Used to determine world boundaries.",
+      "technicalDescription": "Data contains the minimum X coordinate as a number"
+    },
+    {
+      "id": "104",
+      "title": "Min Z",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "The minimum Z coordinate of loaded chunks in the world. Used to determine world boundaries.",
+      "technicalDescription": "Data contains the minimum Z coordinate as a number"
+    },
+    {
+      "id": "105",
+      "title": "Max X",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "The maximum X coordinate of loaded chunks in the world. Used to determine world boundaries.",
+      "technicalDescription": "Data contains the maximum X coordinate as a number"
+    },
+    {
+      "id": "106",
+      "title": "Max Z",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "The maximum Z coordinate of loaded chunks in the world. Used to determine world boundaries.",
+      "technicalDescription": "Data contains the maximum Z coordinate as a number"
+    },
+    {
+      "id": "112",
+      "title": "World Command",
+      "messageType": 1,
+      "dataType": 2,
+      "description": "Warning when commands that affect the entire world are detected, such as weather, time, or gamerule commands.",
+      "technicalDescription": "Data contains the world-impacting command text"
+    },
+    {
+      "id": "121",
+      "title": "Block Types",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Tracks block types found in the world data for content analysis.",
+      "technicalDescription": "Data contains the block type identifier"
+    },
+    {
+      "id": "122",
+      "title": "Block States",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Tracks block data values and states found in the world.",
+      "technicalDescription": "Data contains the block state data"
+    },
+    {
+      "id": "123",
+      "title": "Command",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Tracks individual commands found in the world (from command blocks, etc.) for analysis.",
+      "technicalDescription": "Data contains the command text"
+    },
+    {
+      "id": "124",
+      "title": "Execute Subcommand",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Tracks subcommands used within /execute commands for complexity analysis.",
+      "technicalDescription": "Data contains the execute subcommand text"
+    },
+    {
+      "id": "125",
+      "title": "Level.dat Info",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Information extracted from the level.dat file, including world settings and properties.",
+      "technicalDescription": "Data contains level.dat property information"
+    },
+    {
+      "id": "126",
+      "title": "Experiments",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Experiments enabled in the world's level.dat file.",
+      "technicalDescription": "Data contains the experiment name"
+    },
+    {
+      "id": "127",
+      "title": "Empty Chunks",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Count of chunks that have no subchunk data. May indicate empty or corrupted chunks.",
+      "technicalDescription": "Data contains the count of empty chunks"
+    },
+    {
+      "id": "128",
+      "title": "Chunk Count",
+      "messageType": 0,
+      "dataType": 6,
+      "description": "Total number of chunks in the world.",
+      "technicalDescription": "Data contains the total chunk count"
+    },
+    {
+      "id": "212",
+      "title": "Outdated Command",
+      "messageType": 1,
+      "dataType": 2,
+      "description": "Warning when a command uses syntax from an older Minecraft version. Consider updating to current command syntax.",
+      "technicalDescription": "Data contains the outdated command text"
+    },
+    {
+      "id": "400",
+      "title": "Processing Error",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when the world data could not be fully processed. May indicate corruption or unsupported format.",
+      "technicalDescription": "Data contains details about the processing error"
+    },
+    {
+      "id": "401",
+      "title": "Unexpected Error",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "An unexpected error occurred while processing world data. Check logs for details.",
+      "technicalDescription": "Data contains the error message"
+    }
+  ]
+}

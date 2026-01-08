@@ -49,9 +49,11 @@ Type: *string*
 - [getBlockPriorities](#getblockpriorities)
 - [getBlockTagPriorities](#getblocktagpriorities)
 - [getEntityPriorities](#getentitypriorities)
+- [getEntityTypeFamilyPriorities](#getentitytypefamilypriorities)
 - [setBlockPriorities](#setblockpriorities)
 - [setBlockTagPriorities](#setblocktagpriorities)
 - [setEntityPriorities](#setentitypriorities)
+- [setEntityTypeFamilyPriorities](#setentitytypefamilypriorities)
 
 ### **constructor**
 `
@@ -91,6 +93,15 @@ getEntityPriorities(): Record<string, number>
 Gets the priority settings used for entity targeting.
 
 **Returns** Record<*string*, *number*> - The record mapping entity Ids to their priority settings. Larger numbers have greater priority.
+
+### **getEntityTypeFamilyPriorities**
+`
+getEntityTypeFamilyPriorities(): Record<string, number>
+`
+
+Gets the priority settings used for entity targeting.
+
+**Returns** Record<*string*, *number*> - Map entity type families to their priority settings in a Record. Larger numbers have greater priority.
 
 ### **setBlockPriorities**
 `
@@ -135,6 +146,21 @@ Sets the priority settings used for entity targeting.
 - **entityPriorities**: *Record<keyof typeof minecraftvanilladata.MinecraftEntityTypes | string, number>*
   
   A record mapping entity Ids to their priority settings. Larger numbers have greater priority.
+
+**Returns** *void*
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+
+### **setEntityTypeFamilyPriorities**
+`
+setEntityTypeFamilyPriorities(entityTypeFamilyPriorities: Record<string, number>): void
+`
+
+Sets the priority settings used for entity targeting.
+
+#### **Parameters**
+- **entityTypeFamilyPriorities**: *Record<string, number>*
 
 **Returns** *void*
   

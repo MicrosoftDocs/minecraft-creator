@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "ticks on a regular interval" }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:tick",
   "title": "Tick",
   "description": "Causes the block to tick based on a regular interval equal to a number of ticks randomly chosen from the internal_range parameter. This ticking will send the onTick event to blocks with custom components subscribed for the event. Custom components listening to the onTick event that are added to a block that does not have the minecraft:tick component will cause a content error.",
@@ -6,7 +16,10 @@
     {
       "id": "interval_range",
       "title": "Interval Range",
-      "defaultValue": [0, 0],
+      "defaultValue": [
+        0,
+        0
+      ],
       "description": "A range of values, specified in ticks, to decide the next tick interval for a block. After each block tick, a new value will be chosen from within the range to determine the next tick interval. If the values in the interval_range are the same, the block will always be ticked after that number of ticks. The first value must be lower or equal to the second value in the array.",
       "dataType": 32
     },
@@ -23,7 +36,10 @@
       {
         "path": "default",
         "content": {
-          "interval_range": [20, 60],
+          "interval_range": [
+            20,
+            60
+          ],
           "looping": true
         }
       }

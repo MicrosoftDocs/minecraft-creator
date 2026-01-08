@@ -1,5 +1,21 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines a position predicate that always evaluates to true" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "predicate_type",
+      "title": "Predicate Type",
+      "description": "The type of position predicate."
+    }
+  ],
   "generated_doNotEdit": {
     "title": "JigsawStructure ProcessorRule AlwaysTruePos",
     "description": "Predicate that always evaluates to true. This is the default predicate if no other predicate is specified.",

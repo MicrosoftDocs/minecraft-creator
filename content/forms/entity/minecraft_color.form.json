@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a dyeable color"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "note": "This attribute only works on vanilla entities that have predefined color values (sheep, llama, shulker).",
   "description": "Defines the entity's main color.",

@@ -1,0 +1,24 @@
+{
+  "id": "type_message_root",
+  "title": "Message",
+  "description": "A text message that will be displayed to players. Can include selector mentions that expand to entity names.",
+  "fields": [],
+  "formatHint": "Any text, optionally with @selectors",
+  "note": "When using selectors in messages, they are replaced with the names of matching entities.",
+  "samples": {
+    "values": [
+      {
+        "path": "Simple text message",
+        "content": "Hello World!"
+      },
+      {
+        "path": "Message with nearest player's name",
+        "content": "Welcome, @p!"
+      },
+      {
+        "path": "Lists all player names",
+        "content": "@a has joined the game"
+      }
+    ]
+  }
+}

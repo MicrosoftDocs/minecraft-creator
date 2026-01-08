@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "combines entity references from arguments into a single array"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.combine_entities",
   "fields": [],
   "generated_doNotEdit": {

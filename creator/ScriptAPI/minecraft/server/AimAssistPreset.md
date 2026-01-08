@@ -48,6 +48,7 @@ Type: *string*
 - [getExcludedBlockTagTargets](#getexcludedblocktagtargets)
 - [getExcludedBlockTargets](#getexcludedblocktargets)
 - [getExcludedEntityTargets](#getexcludedentitytargets)
+- [getExcludedEntityTypeFamilyTargets](#getexcludedentitytypefamilytargets)
 - [getItemSettings](#getitemsettings)
 - [getLiquidTargetingItems](#getliquidtargetingitems)
 
@@ -62,6 +63,7 @@ Gets the list of block tags to exclude from aim assist targeting.
   
 Notes:
 - This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
 ### **getExcludedBlockTargets**
 `
@@ -86,6 +88,19 @@ Gets the list of entity Ids to exclude from aim assist targeting.
   
 Notes:
 - This function can throw errors.
+
+### **getExcludedEntityTypeFamilyTargets**
+`
+getExcludedEntityTypeFamilyTargets(): string[]
+`
+
+Gets the list of entity type families to exclude from aim assist targeting.
+
+**Returns** *string*[] - The array of entity type families.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
 ### **getItemSettings**
 `

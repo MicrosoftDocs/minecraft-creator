@@ -1,0 +1,470 @@
+{
+  "id": "cmd_scoreboard",
+  "title": "scoreboard",
+  "description": "Tracks and displays scores for various objectives. See more information about its use in the [Scoreboards Objectives Commands documentation](/creator/documents/scoreboardintroduction#scoreboard-objectives-commands) page.",
+  "fields": [
+    {
+      "id": "category",
+      "title": "category",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "SCOREBOARDOBJECTIVESCATEGORY"
+    },
+    {
+      "id": "action",
+      "title": "action",
+      "type": "string",
+      "isOptional": false,
+      "description": "Scoreboard players num action",
+      "commandType": "SCOREBOARDADDACTION"
+    },
+    {
+      "id": "objective",
+      "title": "objective",
+      "type": "string",
+      "isOptional": false,
+      "description": "Objective for the game to track",
+      "commandType": "SCOREBOARDOBJECTIVES"
+    },
+    {
+      "id": "criteria",
+      "title": "criteria",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "SCOREBOARDCRITERIA"
+    },
+    {
+      "id": "displayname",
+      "title": "displayName",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `string` for the display name. Default: `<objective>`.",
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "displayslot",
+      "title": "displaySlot",
+      "type": "string",
+      "isOptional": false,
+      "description": "Scoreboard display slot sortable",
+      "commandType": "SCOREBOARDDISPLAYSLOTSORTABLE"
+    },
+    {
+      "id": "sortorder",
+      "title": "sortOrder",
+      "type": "string",
+      "isOptional": true,
+      "description": "An `enum` of `ascending` or `descending`.",
+      "commandType": "SCOREBOARDSORTORDER"
+    },
+    {
+      "id": "playername",
+      "title": "playername",
+      "type": "string",
+      "isOptional": true,
+      "description": "A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the score havers.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "player",
+      "title": "player",
+      "type": "string",
+      "isOptional": false,
+      "description": "A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "min",
+      "title": "min",
+      "type": "string",
+      "isOptional": false,
+      "description": "Min wildcard int",
+      "commandType": "WILDCARDINT"
+    },
+    {
+      "id": "max",
+      "title": "max",
+      "type": "string",
+      "isOptional": true,
+      "description": "Max wildcard int",
+      "commandType": "WILDCARDINT"
+    },
+    {
+      "id": "count",
+      "title": "count",
+      "type": "string",
+      "isOptional": false,
+      "description": "An `integer` to set the score to.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "targetname",
+      "title": "targetName",
+      "type": "string",
+      "isOptional": false,
+      "description": "A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the score havers.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "targetobjective",
+      "title": "targetObjective",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "SCOREBOARDOBJECTIVES"
+    },
+    {
+      "id": "operation",
+      "title": "operation",
+      "type": "string",
+      "isOptional": false,
+      "description": "A command operator of the `operation` to be applied. Must be `=`, `+=`, `-=`, `*=`, `/=`, `*/`, `<>`, `<`, or. `>`.",
+      "subFormId": "type_operator",
+      "commandType": "OPERATOR"
+    },
+    {
+      "id": "selector",
+      "title": "selector",
+      "type": "string",
+      "isOptional": false,
+      "description": "A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the source score havers to use as source inputs.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Add objective",
+      "description": "Add an objective for the game to track. This example adds `dummy` for the game to track and `displayName` for the players.",
+      "params": [
+        {
+          "name": "category",
+          "type": "SCOREBOARDOBJECTIVESCATEGORY",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "SCOREBOARDADDACTION",
+          "isOptional": false
+        },
+        {
+          "name": "objective",
+          "type": "SCOREBOARDOBJECTIVES",
+          "isOptional": false
+        },
+        {
+          "name": "criteria",
+          "type": "SCOREBOARDCRITERIA",
+          "isOptional": false
+        },
+        {
+          "name": "displayname",
+          "type": "ID",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Remove objectives",
+      "description": "Remove objectives.",
+      "params": [
+        {
+          "name": "category",
+          "type": "SCOREBOARDOBJECTIVESCATEGORY",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "SCOREBOARDREMOVEACTION",
+          "isOptional": false
+        },
+        {
+          "name": "objective",
+          "type": "SCOREBOARDOBJECTIVES",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "List objectives",
+      "description": "List objectives.",
+      "params": [
+        {
+          "name": "category",
+          "type": "SCOREBOARDOBJECTIVESCATEGORY",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "SCOREBOARDLISTACTION",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Set display",
+      "description": "`Set display` to add scoreboard to the game in a way that players can view.",
+      "params": [
+        {
+          "name": "category",
+          "type": "SCOREBOARDOBJECTIVESCATEGORY",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "SCOREBOARDSETDISPLAYACTION",
+          "isOptional": false
+        },
+        {
+          "name": "displayslot",
+          "type": "SCOREBOARDDISPLAYSLOTSORTABLE",
+          "isOptional": false
+        },
+        {
+          "name": "objective",
+          "type": "SCOREBOARDOBJECTIVES",
+          "isOptional": true
+        },
+        {
+          "name": "sortorder",
+          "type": "SCOREBOARDSORTORDER",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Set display below name",
+      "description": "Use `setdisplay` `belowname` `[objective]` to display objective information below player names.  ",
+      "params": [
+        {
+          "name": "category",
+          "type": "SCOREBOARDOBJECTIVESCATEGORY",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "SCOREBOARDSETDISPLAYACTION",
+          "isOptional": false
+        },
+        {
+          "name": "displayslot",
+          "type": "SCOREBOARDDISPLAYSLOTNONSORTABLE",
+          "isOptional": false
+        },
+        {
+          "name": "objective",
+          "type": "SCOREBOARDOBJECTIVES",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "List players",
+      "description": "List players on scoreboard.",
+      "params": [
+        {
+          "name": "category",
+          "type": "SCOREBOARDPLAYERSCATEGORY",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "SCOREBOARDLISTACTION",
+          "isOptional": false
+        },
+        {
+          "name": "playername",
+          "type": "SELECTION",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Reset player objective",
+      "description": "`Reset` one `player`'s chosen `objective`.",
+      "params": [
+        {
+          "name": "category",
+          "type": "SCOREBOARDPLAYERSCATEGORY",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "SCOREBOARDRESETACTION",
+          "isOptional": false
+        },
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "objective",
+          "type": "SCOREBOARDOBJECTIVES",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Test score",
+      "description": "`Test` whether a `player`'s `score` is within a specified range.",
+      "params": [
+        {
+          "name": "category",
+          "type": "SCOREBOARDPLAYERSCATEGORY",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "SCOREBOARDTESTACTION",
+          "isOptional": false
+        },
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "objective",
+          "type": "SCOREBOARDOBJECTIVES",
+          "isOptional": false
+        },
+        {
+          "name": "min",
+          "type": "WILDCARDINT",
+          "isOptional": false
+        },
+        {
+          "name": "max",
+          "type": "WILDCARDINT",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Give random score",
+      "description": "Give a player a random score within a range.",
+      "params": [
+        {
+          "name": "category",
+          "type": "SCOREBOARDPLAYERSCATEGORY",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "SCOREBOARDRANDOMACTION",
+          "isOptional": false
+        },
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "objective",
+          "type": "SCOREBOARDOBJECTIVES",
+          "isOptional": false
+        },
+        {
+          "name": "min",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "max",
+          "type": "INT",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Change score, count",
+      "description": "Change a `player`'s `score` using a math `operation` by a `count`.",
+      "params": [
+        {
+          "name": "category",
+          "type": "SCOREBOARDPLAYERSCATEGORY",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "SCOREBOARDPLAYERSNUMACTION",
+          "isOptional": false
+        },
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "objective",
+          "type": "SCOREBOARDOBJECTIVES",
+          "isOptional": false
+        },
+        {
+          "name": "count",
+          "type": "INT",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Change score, math operation",
+      "description": "Change a `player`'s `score` using a math `operation` on another player's score.",
+      "params": [
+        {
+          "name": "category",
+          "type": "SCOREBOARDPLAYERSCATEGORY",
+          "isOptional": false
+        },
+        {
+          "name": "action",
+          "type": "SCOREBOARDOPERATIONACTION",
+          "isOptional": false
+        },
+        {
+          "name": "targetname",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "targetobjective",
+          "type": "SCOREBOARDOBJECTIVES",
+          "isOptional": false
+        },
+        {
+          "name": "operation",
+          "type": "OPERATOR",
+          "isOptional": false
+        },
+        {
+          "name": "selector",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "objective",
+          "type": "SCOREBOARDOBJECTIVES",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

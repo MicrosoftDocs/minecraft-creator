@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has custom bounding box origin and size"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Bounding Box Data",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -16,6 +29,7 @@
           0,
           -8
         ],
+        "technicalDescription": "There are different constraints for different indexes, please refer to member help for more details",
         "alternates": [
           {
             "id": "origin",
@@ -57,6 +71,7 @@
           16,
           16
         ],
+        "technicalDescription": "There are different constraints for different indexes, please refer to member help for more details",
         "alternates": [
           {
             "id": "size",

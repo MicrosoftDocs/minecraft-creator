@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Jigsaw Structure Metadata Registry",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "registers jigsaw structure metadata by location"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Jigsaw Structure Metadata Registry",
@@ -13,5 +26,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Registers jigsaw structure metadata by location."
 }

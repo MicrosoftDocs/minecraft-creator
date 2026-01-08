@@ -1,7 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "fields": [],
   "id": "minecraft:water_settings",
   "title": "Water Settings",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "controls water rendering, caustics, and appearance for Vibrant Visuals" }
+        ]
+      }
+    ]
+  },
   "generatedFromSchema_doNotEdit": {
     "title": "Struct WaterConfig WaterConfigSettingsV1 Client Deferred Rendering",
     "description": "Struct WaterConfig WaterConfigSettingsV1 Client Deferred Rendering",

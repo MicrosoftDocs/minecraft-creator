@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Biome Documentation - minecraft:surface_builder"
 description: "Describes the minecraft:surface_builder biome"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -300,6 +301,8 @@ Generates surface on blocks with non-solid blocks above or below.
 | minecraft:the_end | Minecraft:the end | |
 
 ## Biome The End
+Marks a biome as using End dimension terrain generation. Biomes with this component will use the characteristic End terrain style with end stone and void generation.
+
 
 #### Biome The End Properties
 

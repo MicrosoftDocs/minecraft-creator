@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:healable"
 description: "Describes the minecraft:healable entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -18,7 +19,7 @@ How entities heal.
 |:----------|:-------------|:----|:-----------|:------------- |
 | filters | *not set* | Minecraft filter | The filter group that defines the conditions for using this item to heal the entity. | Parrot: `{"test":"is_riding","operator":"!=","value":true}` | 
 | force_use | false | Boolean true/false | Determines if item can be used regardless of entity being at full health. | Parrot: `true` | 
-| items | *not set* | Array of [Items](#items) items | The array of items that can be used to heal this entity. | Camel: `[{"item":"cactus","heal_amount":2}]` | 
+| items | *not set* | Array of [Items](#items) items | The array of items that can be used to heal this entity. | Camel: `[{"item":"cactus","heal_amount":2}]`, Camel Husk: `[{"item":"rabbit_foot","heal_amount":2}]` | 
 
 ## Items
 The array of items that can be used to heal this entity.

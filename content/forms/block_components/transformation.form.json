@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines rotation, scale, and translation transforms"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Transformation",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -211,5 +224,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Defines rotation, scale, and translation transforms."
 }

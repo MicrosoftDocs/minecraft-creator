@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies surface material adjustments properties"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:surface_material_adjustments",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

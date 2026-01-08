@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "3.0.0.Metadata",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "includes pack metadata such as authors, license, and generation info"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "3.0.0.Metadata",
@@ -31,5 +44,6 @@
         "dataType": 2
       }
     ]
-  }
+  },
+  "description": "Optional metadata about the pack including author names, license information, and URL. This information may be displayed in marketplace listings or pack details screens. Also includes generation tool info for debugging."
 }

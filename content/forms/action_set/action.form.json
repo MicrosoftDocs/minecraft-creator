@@ -1,6 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "action",
   "title": "Action",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines an action to perform"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "id",
@@ -95,5 +108,6 @@
       "title": "Set Id",
       "dataType": 2
     }
-  ]
+  ],
+  "description": "Represents a single action that can be executed as part of an action set. Actions include spawning entities, breaking blocks, playing sounds, and other world modifications. Each action has a type that determines its behavior and required arguments."
 }

@@ -1,5 +1,107 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:durability",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "max_durability",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is "
+          },
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "max_durability",
+                    "comparison": ">=",
+                    "value": 1500
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "extremely durable"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "max_durability",
+                    "comparison": ">=",
+                    "value": 500
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "very durable"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "max_durability",
+                    "comparison": ">=",
+                    "value": 200
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "moderately durable"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "max_durability",
+                    "comparison": ">=",
+                    "value": 60
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "somewhat fragile"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "fragile"
+              }
+            ]
+          },
+          {
+            "type": "literal",
+            "text": " ("
+          },
+          {
+            "type": "value",
+            "field": "max_durability"
+          },
+          {
+            "type": "literal",
+            "text": " uses)"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:durability",
@@ -15,6 +117,7 @@
           "max": 100,
           "min": 100
         },
+        "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
         "subFormId": "item_components/intrange",
         "samples": {
           "/vanilla/behavior_pack/items/copper_spear.json": [

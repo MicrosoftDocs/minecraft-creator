@@ -3,14 +3,17 @@ author: mammerla
 ms.author: mikeam
 title: "Fogs Documentation - minecraft:fogs"
 description: "Describes the minecraft:fogs fog element"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Fogs Documentation - minecraft:fogs
 
+Defines fog rendering settings used by resource packs.
 
-## Fogs Properties
+
+## Fog Settings Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

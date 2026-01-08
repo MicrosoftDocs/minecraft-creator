@@ -1,0 +1,10 @@
+{
+  "id": "type_target",
+  "title": "Target Selector",
+  "description": "Targets entities or players.",
+  "fields": [],
+  "formatHint": "@a, @e, @p, @r, @s",
+  "aliasOf": [
+    "type_selection"
+  ]
+}

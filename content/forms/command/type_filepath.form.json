@@ -1,0 +1,7 @@
+{
+  "id": "type_filepath",
+  "title": "File Path",
+  "description": "A path to a file or resource.",
+  "fields": [],
+  "formatHint": "path/to/file"
+}

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines blockinfo configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "BlockInfo",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -61,5 +74,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines blockinfo configuration."
 }

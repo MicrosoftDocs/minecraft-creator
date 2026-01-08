@@ -1,5 +1,19 @@
 {
-  "tags": ["visual"],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [{ "field": "power", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "produces redstone power level " },
+          { "type": "value", "field": "power" }
+        ]
+      }
+    ]
+  },
+  "tags": [
+    "visual"
+  ],
   "versionIntroduced": "1.21.120",
   "id": "minecraft:redstone_producer",
   "title": "Redstone Producer",

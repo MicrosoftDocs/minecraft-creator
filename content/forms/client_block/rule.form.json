@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Rule",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies a culling rule for block face visibility"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "cull_against_full_and_opaque",
@@ -97,5 +110,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Specifies a culling rule for block face visibility."
 }

@@ -1,0 +1,120 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines aim assist targeting categories for different items and situations"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "aim_assist_categories",
+  "title": "Aim Assist Categories",
+  "description": "Defines aim assist targeting categories for different items and situations. Categories specify priority values for targeting blocks and entities based on the item being held.",
+  "versionIntroduced": "1.21.50",
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of the aim assist categories file.",
+      "dataType": 25,
+      "isRequired": true
+    },
+    {
+      "id": "minecraft:aim_assist_categories",
+      "title": "Aim Assist Categories",
+      "description": "The root object containing the category definitions.",
+      "dataType": 16,
+      "isRequired": true,
+      "subForm": {
+        "id": "aim_assist_categories_root",
+        "fields": [
+          {
+            "id": "categories",
+            "title": "Categories",
+            "description": "Array of aim assist category definitions.",
+            "dataType": 15,
+            "isRequired": true,
+            "subForm": {
+              "id": "aim_assist_category",
+              "title": "Aim Assist Category",
+              "description": "Defines targeting priorities for a specific category of items.",
+              "fields": [
+                {
+                  "id": "name",
+                  "title": "Name",
+                  "description": "The namespaced identifier for this category (e.g., 'minecraft:bucket').",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "priorities",
+                  "title": "Priorities",
+                  "description": "Priority values for targeting different types of targets.",
+                  "dataType": 16,
+                  "subForm": {
+                    "id": "aim_assist_priorities",
+                    "fields": [
+                      {
+                        "id": "entity_default",
+                        "title": "Entity Default",
+                        "description": "Default priority for targeting entities. Higher values mean higher priority.",
+                        "dataType": 0
+                      },
+                      {
+                        "id": "block_default",
+                        "title": "Block Default",
+                        "description": "Default priority for targeting blocks. Higher values mean higher priority.",
+                        "dataType": 0
+                      },
+                      {
+                        "id": "blocks",
+                        "title": "Blocks",
+                        "description": "Map of block identifiers to their targeting priority values.",
+                        "dataType": 14,
+                        "subForm": {
+                          "id": "block_priority",
+                          "scalarFieldUpgradeName": "priority",
+                          "fields": [
+                            {
+                              "id": "priority",
+                              "title": "Priority",
+                              "description": "Priority value for targeting this block.",
+                              "dataType": 0
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "entities",
+                        "title": "Entities",
+                        "description": "Map of entity identifiers to their targeting priority values.",
+                        "dataType": 14,
+                        "subForm": {
+                          "id": "entity_priority",
+                          "scalarFieldUpgradeName": "priority",
+                          "fields": [
+                            {
+                              "id": "priority",
+                              "title": "Priority",
+                              "description": "Priority value for targeting this entity.",
+                              "dataType": 0
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

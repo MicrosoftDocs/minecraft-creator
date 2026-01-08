@@ -1,6 +1,24 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies bundle interaction properties"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:bundle_interaction",
-  "fields": [],
+  "fields": [
+    {
+      "id": "num_viewable_slots",
+      "description": "The maximum number of slots in the bundle viewable by the player. Can be from 1 to 64. Default is 12."
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:bundle_interaction",
     "title": "Minecraft Bundle Interaction Misc",

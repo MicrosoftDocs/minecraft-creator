@@ -1,0 +1,106 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "recipe_brewing_mix",
+  "title": "Brewing Mix Recipe",
+  "description": "A brewing recipe for Minecraft Bedrock Edition. Brewing recipes define how potions are created by combining a base potion with a reagent in a brewing stand.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "brews a potion by combining an input potion with a reagent in a brewing stand" }
+        ]
+      }
+    ]
+  },
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "recipe_brewing_mix",
+    "fields": [
+      {
+        "dataType": 25,
+        "id": "format_version",
+        "title": "Format Version",
+        "description": "The format version of this recipe file.",
+        "isRequired": true
+      },
+      {
+        "dataType": 16,
+        "id": "minecraft:recipe_brewing_mix",
+        "title": "Brewing Mix Recipe Definition",
+        "description": "The brewing mix recipe definition container.",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 16,
+              "id": "description",
+              "title": "Description",
+              "description": "The recipe description containing identifier.",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 2,
+                    "id": "identifier",
+                    "title": "Identifier",
+                    "description": "The unique identifier for this recipe.",
+                    "isRequired": true
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": 17,
+              "id": "tags",
+              "title": "Tags",
+              "description": "Tags that specify this is a brewing_stand recipe.",
+              "isRequired": true
+            },
+            {
+              "dataType": 2,
+              "id": "input",
+              "title": "Input",
+              "description": "The input potion type (e.g., 'minecraft:potion_type:awkward').",
+              "isRequired": true
+            },
+            {
+              "dataType": 2,
+              "id": "reagent",
+              "title": "Reagent",
+              "description": "The reagent item that modifies the potion (e.g., 'minecraft:blaze_powder').",
+              "isRequired": true
+            },
+            {
+              "dataType": 2,
+              "id": "output",
+              "title": "Output",
+              "description": "The output potion type (e.g., 'minecraft:potion_type:strength').",
+              "isRequired": true
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "samples": {
+    "strength": [
+      {
+        "path": "Strength potion recipe",
+        "content": {
+          "format_version": "1.12",
+          "minecraft:recipe_brewing_mix": {
+            "description": {
+              "identifier": "minecraft:brew_awkward_blaze_powder"
+            },
+            "tags": [
+              "brewing_stand"
+            ],
+            "input": "minecraft:potion_type:awkward",
+            "reagent": "minecraft:blaze_powder",
+            "output": "minecraft:potion_type:strength"
+          }
+        }
+      }
+    ]
+  }
+}

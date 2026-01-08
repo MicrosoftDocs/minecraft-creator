@@ -1,5 +1,125 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "optimizes network bandwidth for spatial updates"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "default_values.max_optimized_distance",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "optimizes updates within "
+          },
+          {
+            "type": "value",
+            "field": "default_values.max_optimized_distance"
+          },
+          {
+            "type": "literal",
+            "text": " blocks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "default_values.max_dropped_ticks",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can skip up to "
+          },
+          {
+            "type": "value",
+            "field": "default_values.max_dropped_ticks"
+          },
+          {
+            "type": "literal",
+            "text": " ticks between updates"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "default_values.use_motion_prediction_hints",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses motion prediction hints"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "conditional_values",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has conditional optimization rules"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "default_values",
+      "title": "Default Values",
+      "description": "The object containing the default bandwidth optimization values.",
+      "dataType": 16,
+      "subForm": {
+        "id": "default_values",
+        "title": "Default Values",
+        "fields": [
+          {
+            "id": "max_optimized_distance",
+            "title": "Max Optimized Distance",
+            "description": "The maximum distance considered during bandwidth optimizations.",
+            "defaultValue": 80,
+            "dataType": 3
+          },
+          {
+            "id": "max_dropped_ticks",
+            "title": "Max Dropped Ticks",
+            "description": "Determines the maximum ticks spatial update packets can be not sent.",
+            "defaultValue": 10,
+            "dataType": 0
+          },
+          {
+            "id": "use_motion_prediction_hints",
+            "title": "Use Motion Prediction Hints",
+            "description": "When true, smaller motion packets will be sent during drop packet intervals.",
+            "defaultValue": false,
+            "dataType": 1
+          }
+        ]
+      }
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:conditional_bandwidth_optimization",
     "title": "Conditional Bandwidth Optimization",
@@ -51,6 +171,24 @@
         },
         "samples": {
           "/vanilla/behavior_pack/entities/boat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:conditional_bandwidth_optimization/",
+              "content": [
+                {
+                  "max_optimized_distance": 0,
+                  "max_dropped_ticks": 0,
+                  "use_motion_prediction_hints": true,
+                  "conditional_values": [
+                    {
+                      "test": "is_moving",
+                      "subject": "self"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/chest_boat.json": [
             {
               "path": "/minecraft:entity/components/minecraft:conditional_bandwidth_optimization/",
               "content": [

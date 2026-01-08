@@ -1,0 +1,31 @@
+{
+  "id": "type_easetype",
+  "title": "Easing Type",
+  "description": "Animation easing function for camera transitions.",
+  "fields": [],
+  "formatHint": "linear, ease_in, ease_out, ease_in_out, etc.",
+  "samples": {
+    "values": [
+      {
+        "path": "Constant speed",
+        "content": "linear"
+      },
+      {
+        "path": "Start slow, accelerate",
+        "content": "ease_in"
+      },
+      {
+        "path": "Start fast, decelerate",
+        "content": "ease_out"
+      },
+      {
+        "path": "Smooth start and end",
+        "content": "ease_in_out"
+      },
+      {
+        "path": "Bouncy spring effect",
+        "content": "spring"
+      }
+    ]
+  }
+}

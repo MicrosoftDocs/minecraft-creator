@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "can break blocks in creative mode" }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "scalarFieldUpgradeName": "value",
   "generated_doNotEdit": {

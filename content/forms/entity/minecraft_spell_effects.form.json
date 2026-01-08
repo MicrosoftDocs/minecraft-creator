@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can add or remove status effects"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "description": "Allows an entity to add or remove status effects from itself. Similarly to `addrider`, this component performs a one-time operation on the entity when added. Removing the component will not change the entity's current effects. Adding different versions of the component multiple times will perform each one in turn. Once the component has been added, it will not provide any further functionality. There is one exception to this behavior: if this component is present on a player, its effects will be re-applied every time the player enters the world. To avoid this, remove the component shortly after adding it, or add an empty component to replace it.",
   "generated_doNotEdit": {
@@ -41,6 +54,16 @@
                 {
                   "effect": "poison",
                   "duration": 25,
+                  "display_on_screen_animation": true
+                }
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/add_wither_effect/minecraft:spell_effects/",
+              "content": [
+                {
+                  "effect": "wither",
+                  "duration": 40,
                   "display_on_screen_animation": true
                 }
               ]

@@ -3,14 +3,17 @@ author: mammerla
 ms.author: mikeam
 title: "Visuals Documentation - minecraft:actor_animation_controller.v1.10.0"
 description: "Describes the minecraft:actor_animation_controller.v1.10.0 visual element"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Visuals Documentation - minecraft:actor_animation_controller.v1.10.0
 
+Animation controllers are state machines that control which animations play and when. They support states with animations, transitions based on Molang conditions, particle effects, and sound effects. Each state can blend between animations and trigger events on entry and exit.
 
-## Actor Animation Controller Properties
+
+## Animation Controller (v1.10.0) Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

@@ -1,0 +1,81 @@
+{
+  "id": "cmd_locate",
+  "title": "locate",
+  "description": "Finds the nearest specified biome or structure if it exists in the current dimension. Prints an error if it does not. See more in the [Popular Commands documentation](https://learn.microsoft.com/minecraft/creator/documents/commandspopularcommands#locate).",
+  "fields": [
+    {
+      "id": "subcommand",
+      "title": "subcommand",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "LOCATESUBCOMMANDSTRUCTURE"
+    },
+    {
+      "id": "structure",
+      "title": "structure",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "STRUCTUREFEATURE"
+    },
+    {
+      "id": "usenewchunksonly",
+      "title": "useNewChunksOnly",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `Boolean` to specify whether to use new chunks only. Default: `false`.",
+      "subFormId": "type_boolean",
+      "commandType": "BOOLEAN"
+    },
+    {
+      "id": "biome",
+      "title": "biome",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_biome",
+      "commandType": "BIOME"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "2",
+      "title": "Overload 2",
+      "description": "",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "LOCATESUBCOMMANDSTRUCTURE",
+          "isOptional": false
+        },
+        {
+          "name": "structure",
+          "type": "STRUCTUREFEATURE",
+          "isOptional": false
+        },
+        {
+          "name": "usenewchunksonly",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Overload 3",
+      "description": "",
+      "params": [
+        {
+          "name": "subcommand",
+          "type": "LOCATESUBCOMMANDBIOME",
+          "isOptional": false
+        },
+        {
+          "name": "biome",
+          "type": "BIOME",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

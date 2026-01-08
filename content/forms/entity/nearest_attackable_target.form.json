@@ -1,6 +1,69 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "targets the nearest attackable entity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.nearest_attackable_target",
-  "fields": [],
+  "fields": [
+    {
+      "id": "entity_types",
+      "title": "Entity Types",
+      "description": "Filters which types of targets are valid for this entity.",
+      "dataType": 15,
+      "defaultValue": [],
+      "subForm": {
+        "fields": [
+          {
+            "id": "filters",
+            "title": "Filters",
+            "description": "Conditions that make this entry in the list valid",
+            "dataType": 20
+          },
+          {
+            "id": "max_dist",
+            "title": "Max Dist",
+            "description": "Maximum distance this mob can be away to be a valid choice",
+            "dataType": 3,
+            "defaultValue": 16
+          },
+          {
+            "id": "must_see",
+            "title": "Must See",
+            "description": "If true, the target must be in sight",
+            "dataType": 1,
+            "defaultValue": false
+          },
+          {
+            "id": "must_see_forget_duration",
+            "title": "Must See Forget Duration",
+            "description": "Time (in seconds) that target must be out of sight before forgetting them",
+            "dataType": 3,
+            "defaultValue": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "attack_interval",
+      "dataType": 0,
+      "alternates": [
+        {
+          "id": "attack_interval",
+          "dataType": 16,
+          "subFormId": "item_components/floatrange"
+        }
+      ]
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.nearest_attackable_target",
     "title": "Entity Nearest Attackable Target Behavior",
@@ -28,7 +91,21 @@
         "id": "control_flags",
         "title": "Control Flags",
         "dataType": 17,
-        "defaultValue": []
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
       },
       {
         "id": "entity_types",

@@ -1,5 +1,36 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Spawn Herd",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "min_size",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spawns in groups of "
+          },
+          {
+            "type": "value",
+            "field": "min_size"
+          },
+          {
+            "type": "literal",
+            "text": " to "
+          },
+          {
+            "type": "value",
+            "field": "max_size"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn Herd",
@@ -48,5 +79,6 @@
         "defaultValue": 1
       }
     ]
-  }
+  },
+  "description": "Configures group spawning behavior, including minimum and maximum herd size. Mobs like wolves, chickens, and zombies spawn in groups rather than individually. Also allows running events on the first N spawns or after M spawns."
 }

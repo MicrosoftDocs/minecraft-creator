@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be used on specified blocks"
+          }
+        ]
+      }
+    ]
+  },
   "id": "use_on",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -34,5 +47,6 @@
         "defaultValue": ""
       }
     ]
-  }
+  },
+  "description": "Can be used on specified blocks."
 }

@@ -1,5 +1,13 @@
 {
-  "fields": [
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "uses gliding movement" }
+        ]
+      }
+    ]
+  },  "fields": [
     {
       "id": "max_turn",
       "title": "Max Turn",

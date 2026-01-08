@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is currently stunned"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_stunned",
   "fields": [],
   "description": "Returns 1.0 if the entity is currently stunned, else it returns 0.0. Applies generally to the ravager.",

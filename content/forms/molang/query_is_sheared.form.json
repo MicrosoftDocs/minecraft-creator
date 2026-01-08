@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is able to be sheared and is s..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_sheared",
   "fields": [],
   "description": "Returns 1.0 if the entity is able to be sheared and is sheared, else it returns 0.0. Applies generally to sheep and the snow golem.",

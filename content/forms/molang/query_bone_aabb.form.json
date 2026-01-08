@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns axis aligned bounding box of a bone as a struct..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.bone_aabb",
   "fields": [],
   "description": "Returns the axis aligned bounding box of a bone as a structure with members '.min', '.max', along with '.x', '.y', and '.z' values for each.",

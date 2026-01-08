@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Feature Documentation - minecraft:conditional_list"
 description: "Describes the minecraft:conditional_list feature type"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -11,6 +12,8 @@ ms.date: 02/11/2025
 
 > [!IMPORTANT]
 > This type is internal to vanilla Minecraft usage, and is not functional or supported within custom Minecraft content.
+
+Evaluates conditions and places features from the first matching entry. Each entry has a condition expression and associated feature—when the condition passes, that feature generates and later entries are skipped. Enables biome-dependent variants or terrain-responsive structure selection during world generation.
 
 
 ## Conditional List Properties

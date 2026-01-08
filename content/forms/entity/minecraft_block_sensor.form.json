@@ -1,5 +1,49 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "detects when specific blocks are broken nearby"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "on_break",
+      "title": "Break",
+      "description": "List of blocks to watch for being broken to fire off a specified event. If a block is in multiple lists, multiple events will fire.",
+      "dataType": 15,
+      "subForm": {
+        "id": "on_break_item",
+        "title": "Block Break Entry",
+        "fields": [
+          {
+            "id": "block_list",
+            "title": "Block List",
+            "description": "List of blocks that trigger the on_block_broken event.",
+            "dataType": 17
+          },
+          {
+            "id": "on_block_broken",
+            "title": "On Block Broken",
+            "description": "Event to call when a block in block_list is broken.",
+            "dataType": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "sources",
+      "title": "Sources",
+      "description": "List of sources that break the block to listen for. If none are specified, all block breaks will be detected.",
+      "dataType": 20
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:block_sensor",
     "title": "Block Sensor",

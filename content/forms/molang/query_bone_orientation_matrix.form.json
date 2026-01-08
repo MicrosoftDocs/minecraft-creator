@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns bone orientation (as a matrix) of the desired b..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.bone_orientation_matrix",
   "fields": [],
   "description": "Returns the bone orientation (as a matrix) of the desired bone provided it exists in the queryable geometry of the mob, else this returns the identity matrix and throws a content error. Takes the name of the bone as an argument.",

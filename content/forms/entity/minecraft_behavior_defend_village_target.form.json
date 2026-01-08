@@ -1,4 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defends villages from hostile mobs"
+          }
+        ]
+      }
+    ]
+  },
+  "note": "This behavior is typically used with the minecraft:dweller component which defines the entity's role in a village. See iron_golem.json for a complete example.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.defend_village_target",

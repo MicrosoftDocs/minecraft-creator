@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates content for sharing and marketplace requirements"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "sharing",
+  "title": "Sharing Validation",
+  "description": "Validates content for sharing and marketplace requirements. Identifies custom capabilities and potentially problematic content that may affect distribution.",
+  "fields": [
+    {
+      "id": "100",
+      "title": "Custom Capabilities",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Information about custom capabilities the pack requires (experiments, Beta APIs, etc.). Some capabilities may limit where content can be shared.",
+      "technicalDescription": "Data contains the name of the custom capability required"
+    },
+    {
+      "id": "101",
+      "title": "Strong Language",
+      "messageType": 1,
+      "dataType": 2,
+      "description": "Warning when content may contain strong language.",
+      "technicalDescription": "Data contains the text or location where strong language was detected"
+    }
+  ]
+}

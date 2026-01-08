@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines templatepoolelement configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "TemplatePoolElement",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -29,5 +42,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Defines templatepoolelement configuration."
 }

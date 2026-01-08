@@ -1,0 +1,58 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines UI screen files to load"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "ui_defs",
+  "title": "UI Definitions",
+  "description": "The _ui_defs.json file that lists all UI screen files that should be loaded by Minecraft. This file is required for custom UI screens to be recognized.",
+  "fields": [
+    {
+      "dataType": 17,
+      "id": "ui_defs",
+      "title": "UI Definitions",
+      "description": "An array of paths to UI JSON files that should be loaded. Paths are relative to the resource pack root and typically start with 'ui/'.",
+      "isRequired": true,
+      "samples": {
+        "basic": [
+          {
+            "path": "Basic _ui_defs.json",
+            "content": [
+              "ui/my_screen.json",
+              "ui/my_common_elements.json"
+            ]
+          },
+          {
+            "path": "Basic _ui_defs.json",
+            "content": [
+              "ui/my_screen.json",
+              "ui/my_common_elements.json"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "samples": {
+    "basic": [
+      {
+        "path": "Basic _ui_defs.json",
+        "content": {
+          "ui_defs": [
+            "ui/my_screen.json",
+            "ui/my_common_elements.json"
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -87,13 +87,26 @@ function copyWorkContentPublicLatest() {
     .pipe(gulp.dest("build/workcontent/public/res/latest"));
 }
 
-gulp.task("preparedevenv", gulp.parallel("dlres"));
+// Copy essential data files from the @minecraft/creator-tools npm package
+// These include typedefs, mci files, and libs that are required by the mct CLI
+function copyNpmPackageData() {
+  return gulp
+    .src([
+      "node_modules/@minecraft/creator-tools/data/typedefs*.json",
+      "node_modules/@minecraft/creator-tools/data/libs.json",
+      "node_modules/@minecraft/creator-tools/data/mci/**/*",
+      "node_modules/@minecraft/creator-tools/data/mch/**/*"
+    ], { base: "node_modules/@minecraft/creator-tools/data" })
+    .pipe(gulp.dest("build/workcontent/public/data"));
+}
 
 gulp.task(
   "build",
   gulp.series(
     "clean-build",
     copyWorkContentPublicBase,
-    gulp.parallel(copyWorkContentPublicSamples, copyWorkContentPublicLatest)
+    gulp.parallel(copyWorkContentPublicSamples, copyWorkContentPublicLatest, copyNpmPackageData)
   )
 );
+
+gulp.task("preparedevenv", gulp.series("dlres", "build"));

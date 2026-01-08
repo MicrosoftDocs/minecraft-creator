@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is in lava"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_in_lava",
   "fields": [],
   "generated_doNotEdit": {

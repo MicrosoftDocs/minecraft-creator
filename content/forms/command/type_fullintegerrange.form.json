@@ -1,0 +1,27 @@
+{
+  "id": "type_fullintegerrange",
+  "title": "Integer Range",
+  "description": "A range of integers, or a single integer.",
+  "fields": [],
+  "formatHint": "min..max, ..max, min.., or single value",
+  "samples": {
+    "values": [
+      {
+        "path": "Between 1 and 10 inclusive",
+        "content": "1..10"
+      },
+      {
+        "path": "5 or less",
+        "content": "..5"
+      },
+      {
+        "path": "10 or more",
+        "content": "10.."
+      },
+      {
+        "path": "Exactly 5",
+        "content": "5"
+      }
+    ]
+  }
+}

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Features Documentation - Features"
 description: "A reference document describing all current Features"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -30,15 +31,15 @@ ms.date: 02/11/2025
 | [minecraft:tree_feature](Features/minecraft_tree_feature.md)| Places a tree in the world. |
 | [minecraft:underwater_cave_carver_feature](Features/minecraft_underwater_cave_carver_feature.md)| Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8-block radial pattern. |
 | [minecraft:vegetation_patch_feature](Features/minecraft_vegetation_patch_feature.md)| Scatters vegetation in an area. |
-| [minecraft:weighted_random_feature](Features/minecraft_weighted_random_feature.md)|  |
+| [minecraft:weighted_random_feature](Features/minecraft_weighted_random_feature.md)| Selects and places a feature randomly based on weighted probabilities. |
 
 ## Internal/Deprecated Components
 These components are either deprecated or internal to Minecraft and not usable in custom content.
 
 | Features | Description |
 |:-----|:----------|
-| [beards_and_shavers](Features/minecraft_beards_and_shavers.md)|  |
-| [conditional_list](Features/minecraft_conditional_list.md)|  |
-| [rect_layout](Features/minecraft_rect_layout.md)|  |
-| [scan_surface](Features/minecraft_scan_surface.md)|  |
-| [sculk_patch_feature](Features/minecraft_sculk_patch_feature.md)|  |
+| [beards_and_shavers](Features/minecraft_beards_and_shavers.md)| Carves or fills terrain within a defined bounding box during world generation. |
+| [conditional_list](Features/minecraft_conditional_list.md)| Evaluates conditions and places features from the first matching entry. |
+| [rect_layout](Features/minecraft_rect_layout.md)| Arranges features in a rectangular grid pattern during world generation. |
+| [scan_surface](Features/minecraft_scan_surface.md)| Searches for valid terrain surface positions before placing features. |
+| [sculk_patch_feature](Features/minecraft_sculk_patch_feature.md)| Generates clusters of sculk blocks with veins spreading across surfaces, as found in Deep Dark biomes and Ancient Cities. |

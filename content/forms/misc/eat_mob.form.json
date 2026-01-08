@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines behavior.eat mob configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.eat_mob",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

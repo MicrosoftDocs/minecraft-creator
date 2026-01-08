@@ -1,4 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "moves toward water"
+          }
+        ]
+      }
+    ]
+  },
+  "note": "This behavior is used by aquatic and semi-aquatic mobs like axolotl, dolphin, and pregnant frogs. The entity will search for and move toward water blocks when on land.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.move_to_water",

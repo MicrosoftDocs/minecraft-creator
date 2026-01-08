@@ -1,12 +1,25 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has string block state values" }
+        ]
+      }
+    ]
+  },
   "title": "Text (String) Block State",
-  "description": "This is a property that can be true or false.",
+  "description": "This is a property that can be one of a set of defined text (string) values.",
   "fields": [
     {
       "id": "values",
       "title": "Choices",
       "description": "The set of allowed text values for this state.",
-      "defaultValue": ["value1", "value2"],
+      "defaultValue": [
+        "value1",
+        "value2"
+      ],
       "dataType": 17
     }
   ]

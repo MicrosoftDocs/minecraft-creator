@@ -1,0 +1,18 @@
+{
+  "id": "Liquid Detection",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Liquid Detection",
+    "title": "Block Liquid Detection",
+    "description": "The definitions for how a block behaves when detecting liquid. Only one rule definition is allowed per liquid type - if multiple are specified, the first will be used and the rest will be ignored.",
+    "fields": [
+      {
+        "id": "detection_rules",
+        "title": "Detection Rules",
+        "dataType": 16,
+        "subFormId": "block_components/detection_rule",
+        "isRequired": true
+      }
+    ]
+  }
+}

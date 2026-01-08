@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Default Minecraft Block Listings"
 description: "A reference document listing the available blocks for use in Minecraft: Bedrock Edition"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

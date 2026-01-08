@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Client Biome Documentation - minecraft:client_biome_json_file"
 description: "Describes the minecraft:client_biome_json_file client biome"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -20,7 +21,7 @@ Contains a format version and a Client Biome definition.
 | minecraft:client_biome | *not set* | [Client Biome](#client-biome-definition) item | A single Client Biome definition, containing rendering or sound settings related to a Biome defined by the game or a behavior pack |  | 
 
 ## Client Biome Definition
-Contains a description and components to define a Client Biome.
+Defines the client-side visual and audio properties of a biome. Client biomes control fog, water color, grass tint, ambient sounds, and music within a biome. They are paired with server-side biome definitions that control gameplay behavior.
 
 
 #### Client Biome Definition Properties
@@ -48,7 +49,7 @@ Any components that this Client Biome uses.
 | minecraft:grass_appearance | *not set* | [Grass Appearance](#client-biome-grass-appearance) item | Set the grass color or color map used during rendering. Biomes without this component will have default grass appearance. |  | 
 | minecraft:lighting_identifier | *not set* | [Lighting Identifier](#client-biome-lighting-identifier) item | Set the identifier used for lighting in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Lighting JSON schemas under the "lighting" directory. Biomes without this component will have default lighting settings. |  | 
 | minecraft:sky_color | *not set* | [Sky Color](#minecraft-sky-color) item | Set the sky color used during rendering. Biomes without this component will have default sky color behavior. |  | 
-| minecraft:water_appearance | *not set* | [Water Appearance](#client-biome-water-appearance) item | Set the water surface color used during rendering. Biomes without this component will have default water surface color behavior. |  | 
+| minecraft:water_appearance | *not set* | [Water Appearance](#client-biome-water-appearance) item | Set the water surface color used during rendering. Biomes without this component will have default water surface color behavior. Make sure that at least either the surface color or the opacity is specified |  | 
 | minecraft:water_identifier | *not set* | [Water Identifier](#client-biome-water-identifier) item | Set the identifier used for rendering water in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Water JSON schemas under the "water" directory. Biomes without this component will have default water settings. |  | 
 
 ## Minecraft Ambient Sounds

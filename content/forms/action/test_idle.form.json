@@ -1,6 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "test_idle",
   "title": "Idle",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "waits for a specified number of ticks"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "test",
     "action"
@@ -11,5 +24,6 @@
       "title": "Ticks",
       "dataType": 2
     }
-  ]
+  ],
+  "description": "Pauses test execution for a specified number of ticks, allowing time for world state to update. Essential for tests that need to wait for entity AI decisions, block updates, redstone propagation, or animation completion before asserting results."
 }

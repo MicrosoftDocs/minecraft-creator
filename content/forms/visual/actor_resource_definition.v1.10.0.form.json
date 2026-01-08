@@ -1,5 +1,56 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "actor_resource_definition",
+  "title": "Actor Resource Definition (v1.10.0)",
+  "description": "Defines an entity client resource definition document with format_version 1.10.0.",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [{ "field": "minecraft:client_entity.description.identifier", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "defines client visuals for '" },
+          { "type": "value", "field": "minecraft:client_entity.description.identifier" },
+          { "type": "literal", "text": "'" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "minecraft:client_entity.description.identifier", "comparison": "undefined" }],
+        "tokens": [
+          { "type": "literal", "text": "defines client-side entity rendering" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "minecraft:client_entity.description.textures", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "with textures" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "minecraft:client_entity.description.geometry", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "and geometry" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "minecraft:client_entity.description.animations", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "with animations" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "minecraft:client_entity.description.render_controllers", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "and render controllers" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "minecraft:client_entity.description.spawn_egg", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "has spawn egg configuration" }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "actor_resource_definition",
@@ -199,25 +250,9 @@
                         },
                         {
                           "id": "animate",
-                          "dataType": 15,
-                          "subForm": {
-                            "fields": []
-                          },
-                          "alternates": [
-                            {
-                              "dataType": 17,
-                              "id": "animate",
-                              "title": "Animate",
-                              "isRequired": false
-                            },
-                            {
-                              "dataType": 34,
-                              "id": "animate",
-                              "title": "<scope Identifier>",
-                              "isRequired": false,
-                              "keyDescription": "<scope_identifier>"
-                            }
-                          ]
+                          "dataType": 44,
+                          "title": "Animate",
+                          "description": "List of animations to play. Each item can be a string animation name or an object mapping animation name to a Molang condition."
                         },
                         {
                           "dataType": 34,
@@ -543,25 +578,9 @@
                         },
                         {
                           "id": "animate",
-                          "dataType": 15,
-                          "subForm": {
-                            "fields": []
-                          },
-                          "alternates": [
-                            {
-                              "dataType": 17,
-                              "id": "animate",
-                              "title": "Animate",
-                              "isRequired": false
-                            },
-                            {
-                              "dataType": 34,
-                              "id": "animate",
-                              "title": "<scope Identifier>",
-                              "isRequired": false,
-                              "keyDescription": "<scope_identifier>"
-                            }
-                          ]
+                          "dataType": 44,
+                          "title": "Animate",
+                          "description": "List of animations to play. Each item can be a string animation name or an object mapping animation name to a Molang condition."
                         },
                         {
                           "dataType": 34,

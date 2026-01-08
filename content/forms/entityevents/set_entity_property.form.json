@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "fields": [],
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "sets an entity property value"
+          }
+        ]
+      }
+    ]
+  },
   "generated_doNotEdit": {
     "id": "Set Entity Property",
     "title": "Set Entity Property",

@@ -3,14 +3,17 @@ author: mammerla
 ms.author: mikeam
 title: "Visuals Documentation - minecraft:actor_animation.v1.8.0"
 description: "Describes the minecraft:actor_animation.v1.8.0 visual element"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Visuals Documentation - minecraft:actor_animation.v1.8.0
 
+Defines keyframe animations for entity bones. Animations can transform bones with position, rotation, and scale changes over time. They support timeline-based keyframes, Molang expressions, looping, and can be blended together using animation controllers.
 
-## Actor Animation Properties
+
+## Actor Animation (v1.8.0) Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

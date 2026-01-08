@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines spawn difficultyfilter settings"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Spawn DifficultyFilter",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -16,5 +29,6 @@
         "dataType": 2
       }
     ]
-  }
+  },
+  "description": "Defines spawn difficultyfilter settings."
 }

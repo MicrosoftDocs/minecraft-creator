@@ -1,0 +1,51 @@
+{
+  "id": "type_effect",
+  "title": "Effect",
+  "description": "A status effect (potion effect) identifier.",
+  "fields": [],
+  "formatHint": "effect_name",
+  "samples": {
+    "values": [
+      {
+        "path": "Speed boost",
+        "content": "speed"
+      },
+      {
+        "path": "Increased attack damage",
+        "content": "strength"
+      },
+      {
+        "path": "Become invisible",
+        "content": "invisibility"
+      },
+      {
+        "path": "See in the dark",
+        "content": "night_vision"
+      },
+      {
+        "path": "Heal over time",
+        "content": "regeneration"
+      },
+      {
+        "path": "Reduced damage",
+        "content": "resistance"
+      },
+      {
+        "path": "Immune to fire damage",
+        "content": "fire_resistance"
+      },
+      {
+        "path": "Breathe underwater",
+        "content": "water_breathing"
+      },
+      {
+        "path": "Jump higher",
+        "content": "jump_boost"
+      },
+      {
+        "path": "Fall slowly",
+        "content": "slow_falling"
+      }
+    ]
+  }
+}

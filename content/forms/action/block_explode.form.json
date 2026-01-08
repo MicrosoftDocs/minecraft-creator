@@ -1,10 +1,24 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "block_explode",
   "title": "Block Explode",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "creates an explosion at a block"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "script",
     "trigger",
     "container"
   ],
-  "fields": []
+  "fields": [],
+  "description": "Creates an explosion centered on a block location, destroying nearby blocks based on explosion power and applying knockback and damage to entities within the blast radius. Similar to TNT or creeper explosions but triggered programmatically."
 }

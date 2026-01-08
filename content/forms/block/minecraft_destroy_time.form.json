@@ -1,0 +1,132 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "number",
+                    "comparison": ">=",
+                    "value": 50
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "is extremely hard to mine (obsidian-like, "
+                  },
+                  {
+                    "type": "value",
+                    "field": "number"
+                  },
+                  {
+                    "type": "literal",
+                    "text": "s)"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "number",
+                    "comparison": ">=",
+                    "value": 10
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "is hard to mine ("
+                  },
+                  {
+                    "type": "value",
+                    "field": "number"
+                  },
+                  {
+                    "type": "literal",
+                    "text": "s)"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "number",
+                    "comparison": ">=",
+                    "value": 1.5
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "has standard mining time (stone-like, "
+                  },
+                  {
+                    "type": "value",
+                    "field": "number"
+                  },
+                  {
+                    "type": "literal",
+                    "text": "s)"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "number",
+                    "comparison": ">",
+                    "value": 0
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "breaks quickly ("
+                  },
+                  {
+                    "type": "value",
+                    "field": "number"
+                  },
+                  {
+                    "type": "literal",
+                    "text": "s)"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "number",
+                    "comparison": "==",
+                    "value": 0
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "breaks instantly"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Legacy component (format_version < 1.19.40). Time in seconds to destroy the block with base equipment. Use minecraft:destructible_by_mining in newer format versions.",
+  "fields": [],
+  "scalarField": {
+    "id": "number",
+    "title": "Destroy Time (seconds)",
+    "dataType": 1
+  },
+  "title": "Destroy Time (Legacy)",
+  "id": "minecraft:destroy_time"
+}

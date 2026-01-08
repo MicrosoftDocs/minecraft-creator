@@ -1,5 +1,38 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "table",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "drops loot from "
+          },
+          {
+            "type": "value",
+            "field": "table",
+            "humanify": "path"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "minecraft:loot",
+  "description": "Specifies the loot table that determines what items this entity drops upon death. The table path is relative to the behavior pack's root folder.",
+  "fields": [
+    {
+      "id": "table",
+      "title": "Table",
+      "description": "Path to the loot table JSON file, relative to the behavior pack's root (e.g., 'loot_tables/entities/zombie.json').",
+      "dataType": 2
+    }
+  ],
   "note": "Requires a loot table to be used when dropping items upon death.",
   "generated_doNotEdit": {
     "id": "minecraft:loot",

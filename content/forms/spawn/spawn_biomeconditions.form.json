@@ -1,6 +1,270 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Spawn BiomeConditions",
-  "fields": [],
+  "title": "Spawn Biome Conditions",
+  "description": "Defines the conditions under which an entity can spawn, including biome filters, brightness, height, and herd settings.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines biome-based spawn conditions"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:biome_filter",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "filters spawning by biome type"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:spawns_on_block_filter",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "requires specific blocks for spawning"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:spawns_on_block_prevented_filter",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "prevents spawning on specific blocks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:herd",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spawns in herds or groups"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:permute_type",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can permute into variant types"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:brightness_filter",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "requires specific light levels"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:height_filter",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "restricted to specific Y-levels"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "minecraft:density_limit",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has density limits for population control"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "minecraft:spawns_lava",
+      "title": "Spawns In Lava",
+      "description": "Indicates the entity can spawn in lava. This condition was deprecated in version 1.16.100 and replaced with more general spawning conditions.",
+      "dataType": 16,
+      "isDeprecated": true,
+      "versionDeprecated": "1.16.100",
+      "note": "This spawn condition was used in version 1.16 but has been removed in favor of other spawn conditions like minecraft:spawns_on_block_filter."
+    },
+    {
+      "id": "minecraft:disallow_spawns_in_bubble",
+      "title": "Disallow Spawns In Bubble",
+      "description": "Prevents spawning inside bubble columns. This condition appears to have been deprecated after version 1.18.0.",
+      "dataType": 16,
+      "isDeprecated": true,
+      "versionDeprecated": "1.19.0",
+      "note": "This spawn condition was used in versions 1.17.20-1.18.0 but has been removed in newer versions."
+    },
+    {
+      "id": "minecraft:biome_filter",
+      "description": "Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.",
+      "dataType": 20,
+      "note": "This uses the Minecraft filter dataType (20) which properly handles the complex filter structure including string operators and values.",
+      "subForm": {
+        "id": "minecraft:biome_filter",
+        "title": "Biome Filter",
+        "fields": [
+          {
+            "id": "domain",
+            "title": "Domain",
+            "description": "The domain the test should be performed in.",
+            "dataType": 2
+          },
+          {
+            "id": "operator",
+            "title": "Operator",
+            "description": "The comparison to apply with 'value'.",
+            "dataType": 2
+          },
+          {
+            "id": "subject",
+            "title": "Subject",
+            "description": "The subject of this filter test.",
+            "dataType": 2
+          },
+          {
+            "id": "test",
+            "title": "Test",
+            "description": "The name of the test to apply.",
+            "dataType": 2,
+            "isRequired": true
+          },
+          {
+            "id": "value",
+            "title": "Value",
+            "description": "The value being compared with the test.",
+            "dataType": 0
+          },
+          {
+            "id": "all_of",
+            "title": "All Of",
+            "description": "All of these tests must pass.",
+            "dataType": 15
+          },
+          {
+            "id": "any_of",
+            "title": "Any Of",
+            "description": "Any of these tests must pass.",
+            "dataType": 15
+          },
+          {
+            "id": "none_of",
+            "title": "None Of",
+            "description": "None of these tests must pass.",
+            "dataType": 15
+          }
+        ]
+      },
+      "alternates": [
+        {
+          "id": "minecraft:biome_filter",
+          "description": "Array of filter objects.",
+          "dataType": 15
+        }
+      ]
+    },
+    {
+      "id": "minecraft:spawns_on_block_filter",
+      "title": "Spawns On Block Filter",
+      "description": "Specifies blocks on which this entity can spawn. Can be a single block name string, an array of block objects with name property, or an array of strings representing block names.",
+      "dataType": 15,
+      "alternates": [
+        {
+          "id": "minecraft:spawns_on_block_filter",
+          "description": "A single block name string",
+          "dataType": 2
+        },
+        {
+          "id": "minecraft:spawns_on_block_filter",
+          "description": "An array of block name strings",
+          "dataType": 17
+        }
+      ]
+    },
+    {
+      "id": "minecraft:spawns_on_block_prevented_filter",
+      "title": "Spawns On Block Prevented Filter",
+      "description": "Specifies blocks on which this entity cannot spawn. Can be an array of block name strings.",
+      "dataType": 17
+    },
+    {
+      "id": "minecraft:herd",
+      "title": "Herd",
+      "description": "Specifies herd spawning configuration. Can be a single herd object or an array of herd objects.",
+      "dataType": 16,
+      "alternates": [
+        {
+          "id": "minecraft:herd",
+          "description": "Array of herd configurations.",
+          "dataType": 15
+        }
+      ]
+    },
+    {
+      "id": "minecraft:permute_type",
+      "title": "Permute Type",
+      "description": "Specifies permutation types for spawning. Can be a single object or an array of permutation objects.",
+      "dataType": 16,
+      "alternates": [
+        {
+          "id": "minecraft:permute_type",
+          "description": "Array of permutation configurations.",
+          "dataType": 15
+        }
+      ]
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn BiomeConditions",
     "title": "Spawn BiomeConditions",

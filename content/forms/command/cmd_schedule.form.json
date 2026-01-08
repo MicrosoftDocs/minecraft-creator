@@ -1,0 +1,438 @@
+{
+  "id": "cmd_schedule",
+  "title": "schedule",
+  "description": "Schedules an action to be executed once an area is loaded, or after a certain amount of time.",
+  "fields": [
+    {
+      "id": "mode",
+      "title": "mode",
+      "type": "string",
+      "isOptional": false,
+      "description": "An `enum` of either `append` to allow multiple schedules or `replace` to replace the default schedule.",
+      "commandType": "SCHEDULEACTIONDELAY"
+    },
+    {
+      "id": "condition",
+      "title": "condition",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "REQUESTACTIONADD"
+    },
+    {
+      "id": "function",
+      "title": "function",
+      "type": "string",
+      "isOptional": false,
+      "description": "Required. The function to run.",
+      "subFormId": "type_pathcommand",
+      "commandType": "PATHCOMMAND"
+    },
+    {
+      "id": "time",
+      "title": "time",
+      "type": "string",
+      "isOptional": false,
+      "description": "Time integer",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "delaymode",
+      "title": "DelayMode",
+      "type": "string",
+      "isOptional": true,
+      "description": "An `enum` of either `append` to allow multiple schedules or `replace` to replace the default schedule.",
+      "commandType": "DELAYMODE"
+    },
+    {
+      "id": "from",
+      "title": "from",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `vector` [x y z] that specifies the rectangular area to load, along with `to`.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "to",
+      "title": "to",
+      "type": "string",
+      "isOptional": false,
+      "description": "A vector [x y z] that specifies the rectangular area to load, along with `from`.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "type",
+      "title": "type",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "CIRCLEAREA"
+    },
+    {
+      "id": "center",
+      "title": "center",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `vector` [x y z] that specifies the center of a defined loaded area.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "radius",
+      "title": "radius",
+      "type": "string",
+      "isOptional": false,
+      "description": "An `integer` that specifies the area as the number of chunks loaded in. Default: `0`.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "name",
+      "title": "name",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `string` that defines the `tickingarea` where the command is added.",
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "cleartype",
+      "title": "cleartype",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "TICKINGAREANAME"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Schedule function call, delay time ticks",
+      "description": "Schedule a function call with a delay using a time in game ticks.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "SCHEDULEACTIONDELAY",
+          "isOptional": false
+        },
+        {
+          "name": "condition",
+          "type": "REQUESTACTIONADD",
+          "isOptional": false
+        },
+        {
+          "name": "function",
+          "type": "PATHCOMMAND",
+          "isOptional": false
+        },
+        {
+          "name": "time",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "delaymode",
+          "type": "DELAYMODE",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Schedule function call, delay time ticks",
+      "description": "Schedule a function call with a delay using a time in game ticks.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "SCHEDULEACTIONDELAY",
+          "isOptional": false
+        },
+        {
+          "name": "condition",
+          "type": "REQUESTACTIONADD",
+          "isOptional": false
+        },
+        {
+          "name": "function",
+          "type": "PATHCOMMAND",
+          "isOptional": false
+        },
+        {
+          "name": "time",
+          "type": "postfix_t",
+          "isOptional": false
+        },
+        {
+          "name": "delaymode",
+          "type": "DELAYMODE",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Schedule function call, delay time seconds",
+      "description": "Schedule a function call with a delay using a time in seconds.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "SCHEDULEACTIONDELAY",
+          "isOptional": false
+        },
+        {
+          "name": "condition",
+          "type": "REQUESTACTIONADD",
+          "isOptional": false
+        },
+        {
+          "name": "function",
+          "type": "PATHCOMMAND",
+          "isOptional": false
+        },
+        {
+          "name": "time",
+          "type": "postfix_s",
+          "isOptional": false
+        },
+        {
+          "name": "delaymode",
+          "type": "DELAYMODE",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Schedule function call, delay time days",
+      "description": "Schedule a function call with a delay using a time in game days.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "SCHEDULEACTIONDELAY",
+          "isOptional": false
+        },
+        {
+          "name": "condition",
+          "type": "REQUESTACTIONADD",
+          "isOptional": false
+        },
+        {
+          "name": "function",
+          "type": "PATHCOMMAND",
+          "isOptional": false
+        },
+        {
+          "name": "time",
+          "type": "postfix_d",
+          "isOptional": false
+        },
+        {
+          "name": "delaymode",
+          "type": "DELAYMODE",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Clear Scheduled delay functions",
+      "description": "Clear previously scheduled delay functions by name.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "SCHEDULEACTIONDELAY",
+          "isOptional": false
+        },
+        {
+          "name": "condition",
+          "type": "REQUESTACTIONCLEAR",
+          "isOptional": false
+        },
+        {
+          "name": "function",
+          "type": "PATHCOMMAND",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Clear Scheduled functions",
+      "description": "Clear previously scheduled functions by name",
+      "params": [
+        {
+          "name": "mode",
+          "type": "SCHEDULEACTIONCLEAR",
+          "isOptional": false
+        },
+        {
+          "name": "function",
+          "type": "PATHCOMMAND",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Schedule function call when area loaded, location",
+      "description": "Schedule a function when an area is loaded from a location to another location.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "SCHEDULEACTIONONAREALOADED",
+          "isOptional": false
+        },
+        {
+          "name": "condition",
+          "type": "REQUESTACTIONADD",
+          "isOptional": false
+        },
+        {
+          "name": "from",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "to",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "function",
+          "type": "PATHCOMMAND",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Schedule function call when area loaded, radius",
+      "description": "Schedule a function when an area is loaded in a radius.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "SCHEDULEACTIONONAREALOADED",
+          "isOptional": false
+        },
+        {
+          "name": "condition",
+          "type": "REQUESTACTIONADD",
+          "isOptional": false
+        },
+        {
+          "name": "type",
+          "type": "CIRCLEAREA",
+          "isOptional": false
+        },
+        {
+          "name": "center",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "radius",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "function",
+          "type": "PATHCOMMAND",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Schedule function call when area loaded, ticking area",
+      "description": "Schedule a function when an area is loaded in a ticking area.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "SCHEDULEACTIONONAREALOADED",
+          "isOptional": false
+        },
+        {
+          "name": "condition",
+          "type": "REQUESTACTIONADD",
+          "isOptional": false
+        },
+        {
+          "name": "type",
+          "type": "TICKINGAREA",
+          "isOptional": false
+        },
+        {
+          "name": "name",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "function",
+          "type": "PATHCOMMAND",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Clear scheduled area loaded functions, ticking area name",
+      "description": "Clear previously scheduled area loaded functions by ticking area name and optionally also by function name.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "SCHEDULEACTIONONAREALOADED",
+          "isOptional": false
+        },
+        {
+          "name": "condition",
+          "type": "REQUESTACTIONCLEAR",
+          "isOptional": false
+        },
+        {
+          "name": "cleartype",
+          "type": "TICKINGAREANAME",
+          "isOptional": false
+        },
+        {
+          "name": "name",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "function",
+          "type": "PATHCOMMAND",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Clear scheduled area loaded functions, function name",
+      "description": "Clear previously scheduled area loaded functions by function name.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "SCHEDULEACTIONONAREALOADED",
+          "isOptional": false
+        },
+        {
+          "name": "condition",
+          "type": "REQUESTACTIONCLEAR",
+          "isOptional": false
+        },
+        {
+          "name": "cleartype",
+          "type": "FUNCTIONNAME",
+          "isOptional": false
+        },
+        {
+          "name": "function",
+          "type": "PATHCOMMAND",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

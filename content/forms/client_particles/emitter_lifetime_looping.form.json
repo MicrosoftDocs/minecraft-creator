@@ -1,5 +1,33 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines looping emitter with active and sleep times"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "active_time",
+      "title": "Active Time",
+      "description": "The time in seconds that the emitter is active. Can be a number or Molang expression.",
+      "dataType": 34,
+      "defaultValue": 0
+    },
+    {
+      "id": "sleep_time",
+      "title": "Sleep Time",
+      "description": "The time in seconds that the emitter sleeps between active periods. Can be a number or Molang expression.",
+      "dataType": 34,
+      "defaultValue": 0
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_lifetime_looping",
     "title": "Client Particles Emitter Lifetime Looping",
@@ -75,5 +103,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Creates repeating particle effects that cycle between active and dormant phases. The emitter runs for the active_time duration, pauses for sleep_time, then repeats indefinitely. Perfect for ambient effects like bubbling cauldrons, flickering torches, pulsing enchantment glows, or creature breathing animations."
 }

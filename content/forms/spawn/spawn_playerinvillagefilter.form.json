@@ -1,5 +1,26 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Spawn PlayerInVillageFilter",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spawns when player is within "
+          },
+          {
+            "type": "value",
+            "field": "distance"
+          },
+          {
+            "type": "literal",
+            "text": " blocks of village"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn PlayerInVillageFilter",
@@ -18,5 +39,6 @@
         "defaultValue": 10
       }
     ]
-  }
+  },
+  "description": "Restricts spawning based on whether a player is within village boundaries. Used for village-specific spawns like iron golems, cats, and raid mobs that should only appear when players are near villages."
 }

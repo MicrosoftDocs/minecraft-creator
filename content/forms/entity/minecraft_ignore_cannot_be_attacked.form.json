@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "ignores the cannot_be_attacked component on targets"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "versionIntroduced": "1.21.50",
   "generated_doNotEdit": {

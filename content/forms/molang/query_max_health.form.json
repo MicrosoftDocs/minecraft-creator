@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns maximum health of the entity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.max_health",
   "fields": [],
   "generated_doNotEdit": {

@@ -1,5 +1,37 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Spawn PermuteType",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "entity_type",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spawns "
+          },
+          {
+            "type": "value",
+            "field": "entity_type",
+            "humanify": "minecraft"
+          },
+          {
+            "type": "literal",
+            "text": " with weight "
+          },
+          {
+            "type": "value",
+            "field": "weight"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn PermuteType",
@@ -27,5 +59,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Weighted spawn permutation that selects which entity variant to spawn. Each permutation has an entity identifier and weight—the game randomly chooses between permutations based on relative weights when the spawn rule activates. Creates natural mob variety in spawn distributions."
 }

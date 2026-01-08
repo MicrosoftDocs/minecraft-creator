@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "holds its ground in combat"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "within_radius_event",

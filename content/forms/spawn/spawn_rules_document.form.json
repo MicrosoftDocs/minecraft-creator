@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "spawn_rules_document",
+  "title": "Spawn Rules Document",
+  "description": "A spawn rules definition document for Minecraft Bedrock Edition. This describes the complete JSON file structure including format_version and the minecraft:spawn_rules wrapper.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines a spawn rules document" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "dataType": 25,
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of this spawn rules file.",
+      "isRequired": true
+    },
+    {
+      "dataType": 16,
+      "id": "minecraft:spawn_rules",
+      "title": "Spawn Rules Definition",
+      "description": "The spawn rules definition container.",
+      "isRequired": true,
+      "subFormId": "spawn/spawn_rules"
+    }
+  ]
+}

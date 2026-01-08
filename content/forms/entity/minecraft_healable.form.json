@@ -1,5 +1,46 @@
 {
-  "title": "Healable",
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be healed by feeding it items"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "force_use",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "accepts healing items even at full health"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "filters",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has conditional healing requirements"
+          }
+        ]
+      }
+    ]
+  },
   "description": "How entities heal",
   "fields": [
     {
@@ -82,6 +123,17 @@
               "content": [
                 {
                   "item": "cactus",
+                  "heal_amount": 2
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/camel_husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:healable/",
+              "content": [
+                {
+                  "item": "rabbit_foot",
                   "heal_amount": 2
                 }
               ]

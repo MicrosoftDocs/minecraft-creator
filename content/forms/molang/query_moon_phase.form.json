@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns phase of the moon (full_moon=0"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.moon_phase",
   "fields": [],
   "generated_doNotEdit": {

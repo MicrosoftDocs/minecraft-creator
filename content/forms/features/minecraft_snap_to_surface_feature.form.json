@@ -1,6 +1,94 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:snap_to_surface_feature",
   "description": "Snaps the y-value of a feature placement pos to the floor or the ceiling within the provided vertical_search_range. The placement biome is preserved. If the snap position goes outside of the placement biome, placement will fail.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "adjusts Y position to snap features to floor or ceiling"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "feature_to_snap",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "snaps "
+          },
+          {
+            "type": "value",
+            "field": "feature_to_snap"
+          },
+          {
+            "type": "literal",
+            "text": " to surface"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "surface",
+            "comparison": "=",
+            "value": "ceiling"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "targets ceiling surface"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "surface",
+            "comparison": "=",
+            "value": "floor"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "targets floor surface"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "vertical_search_range",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "searches "
+          },
+          {
+            "type": "value",
+            "field": "vertical_search_range"
+          },
+          {
+            "type": "literal",
+            "text": " blocks vertically"
+          }
+        ],
+        "priority": 3
+      }
+    ]
+  },
   "fields": [
     {
       "id": "format_version",

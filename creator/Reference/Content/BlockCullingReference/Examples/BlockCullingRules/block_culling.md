@@ -3,14 +3,17 @@ author: mammerla
 ms.author: mikeam
 title: "Block Culling Documentation - minecraft:block_culling"
 description: "Describes the minecraft:block_culling block culling"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Block Culling Documentation - minecraft:block_culling
 
+Block culling rules allow custom blocks with geometry to have specific faces hidden when adjacent to other blocks. This improves rendering performance by not drawing faces that aren't visible. Culling conditions include 'same_block' (hide when adjacent to same block type) and 'same_culling_layer' (hide when adjacent to blocks in the same layer, useful for glass-like blocks).
 
-## Client Block Block Culling Properties
+
+## Block Culling Rules Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -18,6 +21,8 @@ ms.date: 02/11/2025
 | rules | *not set* | [Rules](#client-block-rule) item |  |  | 
 
 ## Client Block Description
+Defines the identifier for a block culling rule.
+
 
 #### Client Block Description Properties
 
@@ -26,6 +31,8 @@ ms.date: 02/11/2025
 | identifier | *not set* | String | The namespace and identifier for this culling rule. |  | 
 
 ## Client Block Rule
+Specifies a culling rule for block face visibility.
+
 
 #### Client Block Rule Properties
 
@@ -57,6 +64,8 @@ ms.date: 02/11/2025
 | west | West | |
 
 ## Client Block Rule Geometry Part
+Specifies a geometry part for culling.
+
 
 #### Client Block Rule Geometry Part Properties
 

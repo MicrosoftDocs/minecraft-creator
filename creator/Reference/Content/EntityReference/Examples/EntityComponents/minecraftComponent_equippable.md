@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:equippable"
 description: "Describes the minecraft:equippable entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -16,7 +17,7 @@ Defines an entity's behavior for having items equipped to it.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| slots | *not set* | Array of [Slots](#slots) items | List of slots and the item that can be equipped. | Camel: `[{"slot":0,"item":"saddle","accepted_items":["saddle"],"on_equip":{"event":"minecraft:camel_saddled"},"on_unequip":{"event":"minecraft:camel_unsaddled"}}]` | 
+| slots | *not set* | Array of [Slots](#slots) items | List of slots and the item that can be equipped. | Camel: `[{"slot":0,"item":"saddle","accepted_items":["saddle"],"on_equip":{"event":"minecraft:camel_saddled"},"on_unequip":{"event":"minecraft:camel_unsaddled"}}]`, Camel Husk: `[{"slot":0,"item":"saddle","accepted_items":["saddle"],"on_equip":{"event":"minecraft:camel_husk_saddled"},"on_unequip":{"event":"minecraft:camel_husk_unsaddled"}}]` | 
 
 ## Slots
 List of slots and the item that can be equipped.

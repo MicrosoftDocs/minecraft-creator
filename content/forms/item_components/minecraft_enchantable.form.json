@@ -1,4 +1,27 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "slot",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be enchanted as "
+          },
+          {
+            "type": "value",
+            "field": "slot"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "description": "Determines what enchantments can be applied to the item. Not all enchantments will have an effect on all item components.",
   "note": "The following enchantment slot types that can be set for the value of `slot`: sword, bow, pickaxe, armor_head, armor_torso, armor_legs, armor_feet",

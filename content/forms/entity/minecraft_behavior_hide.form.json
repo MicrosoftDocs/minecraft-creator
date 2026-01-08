@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "hides when threatened"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "note": "Requires a point of interest to be set in order to work properly.",
   "generated_doNotEdit": {

@@ -1,7 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "reset_target",
   "title": "Reset Target",
-  "tags": ["entityevent"],
+  "tags": [
+    "entityevent"
+  ],
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "resets the entity's current target" }
+        ]
+      }
+    ]
+  },
   "description": "Resets the entities' target (the focus of its gaze, attacking behavior, etc.).",
   "fields": [],
   "samples": {

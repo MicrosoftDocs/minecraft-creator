@@ -1,4 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "title": "Data Form Definition",
+  "description": "Defines the schema for a form definition document used to describe and document JSON structures.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a data form schema"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "id",

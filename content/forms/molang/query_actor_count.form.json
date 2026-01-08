@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns number of entities (actors) rendered in the las..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.actor_count",
   "fields": [],
   "description": "Returns the number of entities (actors) rendered in the last frame.",

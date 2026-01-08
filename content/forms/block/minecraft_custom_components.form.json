@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has script custom components"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "isDeprecated": true,
   "note": "See the [Scripting 2.0.0 Overview](https://learn.microsoft.com/minecraft/creator/documents/scriptingv2.0.0overview) article for an overview of upcoming changes to custom components functionality.",

@@ -1,5 +1,23 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a feature rule with conditions, description, and distribution parameters"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "description",
+      "description": "Identifier for the Feature Rule and Feature to place."
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "Feature Rule Definition",
     "title": "World Feature Rule Definition",
@@ -28,5 +46,6 @@
         "subFormId": "world_components/scatter_params"
       }
     ]
-  }
+  },
+  "description": "Defines a feature rule with conditions, description, and distribution parameters."
 }

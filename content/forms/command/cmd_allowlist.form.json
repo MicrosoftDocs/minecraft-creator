@@ -1,0 +1,48 @@
+{
+  "id": "cmd_allowlist",
+  "title": "allowlist",
+  "description": "Manages the server allowlist.",
+  "fields": [
+    {
+      "id": "action",
+      "title": "action",
+      "type": "string",
+      "isOptional": false,
+      "description": "Required. Adding a player, removing a player, reloading the allowlist, or listing all players on it.",
+      "commandType": "ALLOWLISTACTION"
+    },
+    {
+      "id": "name",
+      "title": "name",
+      "type": "string",
+      "isOptional": true,
+      "description": "Optional. The players on the allowlist. Must be a valid player name.",
+      "subFormId": "type_id",
+      "commandType": "ID"
+    }
+  ],
+  "aliases": [
+    "whitelist"
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Action",
+      "description": "The overload must include an action.",
+      "params": [
+        {
+          "name": "action",
+          "type": "ALLOWLISTACTION",
+          "isOptional": false
+        },
+        {
+          "name": "name",
+          "type": "ID",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 4,
+  "requiresCheats": true
+}

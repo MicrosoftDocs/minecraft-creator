@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns entity's yaw speed"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.yaw_speed",
   "fields": [],
   "description": "Returns the entity's yaw speed.",

@@ -1,0 +1,173 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates JSON files against form-based structure schemas"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "jsonf",
+  "title": "JSON Form Structure Validation",
+  "description": "Validates JSON files against Minecraft documentation-derived form schemas. These schemas define the expected structure, types, and constraints for Minecraft content files like entity definitions, block definitions, spawn rules, etc. The validator checks type compatibility, value ranges, string lengths, required fields, enum values, and more based on metadata in form.json files.",
+  "technicalDescription": "This validator uses DataFormValidator to check JSON data against IFormDefinition schemas loaded from the public/data/forms/ directory. Forms are matched to content types via ProjectItemUtilities.getFormPathForType(). The validator recursively checks nested objects and keyed collections.",
+  "fields": [
+    {
+      "id": "101",
+      "title": "Unexpected String Where Object Expected",
+      "messageType": "error",
+      "dataType": 2,
+      "description": "A string value was found where an object was expected. The form schema expects this field to be an object with properties, not a scalar string.",
+      "howToUse": "Replace the string value with an object containing the expected properties. Check the Minecraft Creator documentation for the correct structure."
+    },
+    {
+      "id": "102",
+      "title": "Unexpected Boolean Where Object Expected",
+      "messageType": "error",
+      "dataType": 2,
+      "description": "A boolean value was found where an object was expected. The form schema expects this field to be an object with properties, not a true/false value.",
+      "howToUse": "Replace the boolean value with an object containing the expected properties. Check the Minecraft Creator documentation for the correct structure."
+    },
+    {
+      "id": "103",
+      "title": "Unexpected Number Where Object Expected",
+      "messageType": "error",
+      "dataType": 2,
+      "description": "A number value was found where an object was expected. The form schema expects this field to be an object with properties, not a numeric value.",
+      "howToUse": "Replace the numeric value with an object containing the expected properties. Check the Minecraft Creator documentation for the correct structure."
+    },
+    {
+      "id": "110",
+      "title": "Data Type Mismatch",
+      "messageType": "warning",
+      "dataType": 2,
+      "description": "The data type of a field does not match what the schema expects. For example, a string was provided where a number was expected, or an array was provided where an object was expected.",
+      "howToUse": "Check the expected type in the Minecraft Creator documentation and update your value accordingly. Common type issues include: using strings for numeric values, using numbers for version strings, or using single values where arrays are expected.",
+      "technicalDescription": "This is triggered when DataFormValidator.getDataMismatchError() finds the JavaScript typeof the data doesn't match any of the expected FieldDataType values for the field or its alternates."
+    },
+    {
+      "id": "111",
+      "title": "Value Below Minimum",
+      "messageType": "warning",
+      "dataType": 2,
+      "description": "A numeric value is below the minimum allowed value defined in the schema. The field has a minValue constraint that this value violates.",
+      "howToUse": "Increase the value to at least the minimum allowed. Check the Minecraft Creator documentation for valid value ranges.",
+      "technicalDescription": "Triggered when field.minValue is defined and the data value is less than minValue."
+    },
+    {
+      "id": "112",
+      "title": "Value Above Maximum",
+      "messageType": "warning",
+      "dataType": 2,
+      "description": "A numeric value exceeds the maximum allowed value defined in the schema. The field has a maxValue constraint that this value violates.",
+      "howToUse": "Decrease the value to at most the maximum allowed. Check the Minecraft Creator documentation for valid value ranges.",
+      "technicalDescription": "Triggered when field.maxValue is defined and the data value is greater than maxValue."
+    },
+    {
+      "id": "113",
+      "title": "String Too Short",
+      "messageType": "warning",
+      "dataType": 2,
+      "description": "A string value is shorter than the minimum length required by the schema. The field has a minLength constraint that this value violates.",
+      "howToUse": "Provide a longer string value that meets the minimum length requirement.",
+      "technicalDescription": "Triggered when field.minLength is defined and data.length is less than minLength."
+    },
+    {
+      "id": "114",
+      "title": "String Too Long",
+      "messageType": "warning",
+      "dataType": 2,
+      "description": "A string value exceeds the maximum length allowed by the schema. The field has a maxLength constraint that this value violates.",
+      "howToUse": "Shorten the string value to meet the maximum length requirement. Very long strings may cause issues in Minecraft.",
+      "technicalDescription": "Triggered when field.maxLength is defined and data.length is greater than maxLength."
+    },
+    {
+      "id": "115",
+      "title": "Value Not in Choices",
+      "messageType": "warning",
+      "dataType": 2,
+      "description": "The value is not one of the allowed choices defined in the schema. The field has a fixed set of valid values and the provided value is not among them.",
+      "howToUse": "Use one of the allowed values listed in the error message. Check the Minecraft Creator documentation for the complete list of valid options for this field.",
+      "technicalDescription": "Triggered when field.choices is defined, field.mustMatchChoices is not false, and the value is not found in the choices array."
+    },
+    {
+      "id": "116",
+      "title": "Pattern Mismatch",
+      "messageType": "warning",
+      "dataType": 2,
+      "description": "A string value does not match the required pattern defined in the schema. The field has a validity condition with a regex pattern that the value must match.",
+      "howToUse": "Update the string to match the required format. Common patterns include namespace:identifier format (e.g., 'minecraft:zombie'), version strings, or specific naming conventions.",
+      "technicalDescription": "Triggered when field.validity contains a condition with comparison=ComparisonType.matchesPattern and the regex test fails."
+    },
+    {
+      "id": "117",
+      "title": "Array Length Mismatch",
+      "messageType": "warning",
+      "dataType": 2,
+      "description": "An array has a different number of elements than required by the schema. The field has a fixedLength constraint specifying exactly how many elements are expected.",
+      "howToUse": "Add or remove elements from the array to match the required length.",
+      "technicalDescription": "Triggered when field.fixedLength is defined and the array length doesn't match."
+    },
+    {
+      "id": "118",
+      "title": "Point/Range Size Mismatch",
+      "messageType": "warning",
+      "dataType": 2,
+      "description": "A point or range array has the wrong number of elements. Point2 requires exactly 2 elements [x, y], Point3 requires exactly 3 elements [x, y, z], and ranges require exactly 2 elements [min, max].",
+      "howToUse": "Ensure the array has the correct number of elements for the point or range type.",
+      "technicalDescription": "Triggered when the field dataType is point2 (expects 2), point3 (expects 3), floatRange (expects 2), or intRange (expects 2) and the array length doesn't match."
+    },
+    {
+      "id": "119",
+      "title": "Key Not Allowed",
+      "messageType": "warning",
+      "dataType": 2,
+      "description": "A key in a keyed collection is not in the allowed keys list. The schema defines a specific set of valid keys for this collection.",
+      "howToUse": "Use one of the allowed keys. Check the Minecraft Creator documentation for valid key names for this component or property collection.",
+      "technicalDescription": "Triggered when field.allowedKeys is defined for a keyed collection (keyedObjectCollection, keyedStringCollection, etc.) and a key in the data is not in the allowedKeys array."
+    },
+    {
+      "id": "120",
+      "title": "Unexpected Property",
+      "messageType": "warning",
+      "dataType": 2,
+      "description": "An object contains a property that is not defined in the schema. This may indicate a typo, deprecated property, or use of an undocumented feature.",
+      "howToUse": "Check the property name for typos. If intentional, this may be a custom or experimental property that works but is not officially documented.",
+      "technicalDescription": "Triggered when form.strictAdditionalProperties is true and the data object contains a key not defined in form.fields. By default, this check is disabled for Minecraft content since many formats allow additional properties."
+    },
+    {
+      "id": "121",
+      "title": "Missing Required Field",
+      "messageType": "warning",
+      "dataType": 2,
+      "description": "A required field is missing from the object. The schema indicates this field must be present for the content to work correctly.",
+      "howToUse": "Add the missing required field with an appropriate value. Check the Minecraft Creator documentation for the expected format and valid values.",
+      "technicalDescription": "Triggered when field.isRequired is true and the data for this field is undefined or null."
+    },
+    {
+      "id": "401",
+      "title": "JSON Parse Error",
+      "messageType": "error",
+      "dataType": 2,
+      "description": "Error when a JSON file could not be parsed for form validation. The file may have syntax errors such as missing commas, unquoted keys, trailing commas, or invalid escape sequences.",
+      "howToUse": "Open the file in an editor with JSON validation to find and fix syntax errors. Common issues include: missing commas between properties, trailing commas after the last property, unquoted property names, and invalid Unicode escape sequences.",
+      "technicalDescription": "Triggered when StorageUtilities.getJsonObject() returns null due to a JSON.parse() failure."
+    },
+    {
+      "id": "402",
+      "title": "Form Not Found",
+      "messageType": "info",
+      "dataType": 2,
+      "description": "No documentation form schema was found for this JSON file type. The file format may not yet be documented in form.json files, or this project item type may not have a form path mapping.",
+      "howToUse": "This is informational only. The file may still be valid - it just couldn't be validated against documentation-based form schemas. JSON Schema validation may still apply separately.",
+      "technicalDescription": "Triggered when Database.ensureFormLoadedByPath() returns undefined for the form path returned by ProjectItemUtilities.getFormPathForType()."
+    }
+  ],
+  "note": "Form schemas are derived from Minecraft Creator documentation and may not cover all valid content patterns. Some Minecraft features support multiple value formats (e.g., damage can be a number or a range) that may not be fully represented in the schema alternates.",
+  "note2": "The unexpectedProperty (120) check is disabled by default since Minecraft content formats generally allow additional properties not explicitly defined in documentation."
+}

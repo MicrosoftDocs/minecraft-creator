@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Biome Documentation - minecraft:biome_components"
 description: "Describes the minecraft:biome_components biome"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -32,7 +33,7 @@ Any components that this Biome uses.
 | minecraft:village_type | *not set* | [Village Type](#biome-village-type) item | Determines the type of village for the Biome |  | 
 
 ## Biome Climate
-Describes temperature, humidity, precipitation, and similar. Biomes without this component will have default values.
+Describes temperature, humidity, precipitation, and similar climate properties for a biome. Biomes without this component will use default values. Temperature affects visual effects like snow/ice placement, sponge drying, and sky color. Downfall controls precipitation frequency and intensity.
 
 
 #### Biome Climate Properties
@@ -155,7 +156,7 @@ Controls how this biome is instantiated (and then potentially modified) during w
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| generate_for_climates | *not set* | Array of objects | Can be just the name of a biome, or an array of any size. If an array, each entry can be a biome name string, or an array of size 2, where the first entry is a biome name and the second entry is a positive integer representing how that biome is weighted against other entries. If no weight is provided, a weight of 1 is used. |  | 
+| generate_for_climates | *not set* | String | Controls the world generation climate categories that this biome can spawn for. Each entry is an array of [climate_name, weight] where climate_name is 'medium', 'warm', 'lukewarm', 'cold', or 'frozen'. |  | 
 | hills_transformation | *not set* | Array of strings | An array of any size containing arrays of exactly two elements. For each contained array, the first element is a climate category string ('medium', 'warm', 'lukewarm', 'cold', or 'frozen'). The second element is a positive integer for how much that entry is weighted relative to other entries. |  | 
 | hills_transformation (Alternate 1) | *not set* | String |  |  | 
 | mutate_transformation | *not set* | Array of strings | What biome to switch to when converting to a mutated biome |  | 
@@ -207,7 +208,7 @@ Replaces a specified portion of one or more Minecraft biomes.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| replacements | *not set* | [Replacements](#biome-replacement) item | List of biome replacement configurations. Retroactively adding a new replacement to the front of this list will cause the world generation to change. Please add any new replacements to the end of the list. |  | 
+| replacements | *not set* | [Replacements](#biome-replacement) item | List of biome replacement configurations. Retroactively adding a new replacement to the front of this list will cause the world generation to change. Please add any new replacements to the end of the list. Check that there is at least one value in the array, that there are no duplicates, and that the dimension is either minecraft:overworld or minecraft:nether |  | 
 
 ## Biome Replacement
 Represents the replacement information used to determine the placement of the overriding biome.
@@ -217,9 +218,9 @@ Represents the replacement information used to determine the placement of the ov
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| amount | *not set* | Decimal number | Noise value used to determine whether or not the replacement is attempted, similar to a percentage. Must be in the range (0.0, 1.0]. Value must be <= 1. |  | 
+| amount | *not set* | Decimal number | Noise value used to determine whether or not the replacement is attempted, similar to a percentage. Must be in the range (0.0, 1.0]. Value must be <= 1. Value must be > 0. |  | 
 | dimension | *not set* | String | Dimension in which this replacement can happen. Can be either 'minecraft:overworld' or 'minecraft:nether'. |  | 
-| noise_frequency_scale | *not set* | Decimal number | Scaling value used to alter the frequency of replacement attempts. A lower frequency will mean a bigger contiguous biome area that occurs less often. A higher frequency will mean smaller contiguous biome areas that occur more often. Must be in the range (0.0, 100.0]. Value must be <= 100. |  | 
+| noise_frequency_scale | *not set* | Decimal number | Scaling value used to alter the frequency of replacement attempts. A lower frequency will mean a bigger contiguous biome area that occurs less often. A higher frequency will mean smaller contiguous biome areas that occur more often. Must be in the range (0.0, 100.0]. Value must be <= 100. Value must be > 0. |  | 
 | targets | *not set* | Array of objects | Biomes that are going to be replaced by the overriding biome. Target biomes must not contain namespaces. Value must have at least 1 items. |  | 
 
 ## Biome Surface Builder
@@ -514,6 +515,8 @@ Generates surface on blocks with non-solid blocks above or below.
 | minecraft:the_end | Minecraft:the end | |
 
 ## Biome The End
+Marks a biome as using End dimension terrain generation. Biomes with this component will use the characteristic End terrain style with end stone and void generation.
+
 
 #### Biome The End Properties
 

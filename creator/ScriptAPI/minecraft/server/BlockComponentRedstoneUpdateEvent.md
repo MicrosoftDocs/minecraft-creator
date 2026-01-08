@@ -22,3 +22,15 @@ Contains information regarding a specific block redstone update event.
 The redstone signal strength passing through this block. It is guaranteed to be >= the `min_power` of the block's 'minecraft:redstone_consumer' component.
 
 Type: *number*
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **previousPowerLevel**
+`read-only previousPowerLevel: number;`
+
+The redstone signal strength from the last tick that was passing through this block. It is guaranteed to be >= the `min_power` of the block's 'minecraft:redstone_consumer' component.
+
+Type: *number*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end

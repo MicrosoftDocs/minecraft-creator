@@ -1,0 +1,58 @@
+{
+  "id": "cmd_hud",
+  "title": "hud",
+  "description": "Configures whether elements of the on-screen display (alternately known as the 'heads up display', or 'HUD') are visible on the screen.",
+  "fields": [
+    {
+      "id": "target",
+      "title": "target",
+      "type": "string",
+      "isOptional": false,
+      "description": "Selector of the player(s) to toggle visibility for.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "visible",
+      "title": "visible",
+      "type": "string",
+      "isOptional": false,
+      "description": "State to change the HUD element visibility to.",
+      "commandType": "HUDVISIBILITY"
+    },
+    {
+      "id": "hud_element",
+      "title": "hud_element",
+      "type": "string",
+      "isOptional": true,
+      "description": "Specific HUD element to configure visibility for.",
+      "commandType": "HUDELEMENT"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Configures HUD element visibility for a selection of players.",
+      "description": "Configures HUD element visibility for a selection of players.",
+      "params": [
+        {
+          "name": "target",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "visible",
+          "type": "HUDVISIBILITY",
+          "isOptional": false
+        },
+        {
+          "name": "hud_element",
+          "type": "HUDELEMENT",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:biome_music",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "controls music playback within a biome"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "title": "Minecraft Biome Music",
   "description": "Affects how music plays within the biome",

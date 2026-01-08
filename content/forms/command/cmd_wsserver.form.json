@@ -1,0 +1,35 @@
+{
+  "id": "cmd_wsserver",
+  "title": "wsserver",
+  "description": "Attempts to connect to the websocket server on the provided URL.",
+  "fields": [
+    {
+      "id": "serveruri",
+      "title": "serverUri",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `URI` of the server to connect to. Or use an empty `string`  to disconnect.",
+      "subFormId": "type_rawtext",
+      "commandType": "RAWTEXT"
+    }
+  ],
+  "aliases": [
+    "connect"
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "WSServer",
+      "description": "`Connect` to a given `websocket server URI`.",
+      "params": [
+        {
+          "name": "serveruri",
+          "type": "RAWTEXT",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 2,
+  "requiresCheats": true
+}

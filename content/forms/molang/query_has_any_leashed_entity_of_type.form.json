@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns whether"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.has_any_leashed_entity_of_type",
   "fields": [],
   "generated_doNotEdit": {

@@ -1,0 +1,156 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates cooperative add-on item naming conventions"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "caddonireq",
+  "title": "Coop Item Naming",
+  "description": "Validates individual content items against Cooperative Add-On naming conventions and structure requirements. Ensures items use properly namespaced identifiers to avoid conflicts with other add-ons.",
+  "fields": [
+    {
+      "id": "100",
+      "title": "BAC ID Format",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a behavior animation controller ID doesn't follow the format 'controller.animation.xyz'. Use the correct prefix structure.",
+      "technicalDescription": "Data contains the invalid behavior animation controller ID"
+    },
+    {
+      "id": "101",
+      "title": "BAC Name Format",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when the name portion of a behavior animation controller doesn't follow 'creatorshortname_projectshortname' format. Use namespaced naming.",
+      "technicalDescription": "Data contains the invalid BAC name portion"
+    },
+    {
+      "id": "110",
+      "title": "BA ID Format",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a behavior animation ID doesn't follow the format 'animation.xyz.animation_name'. Use the correct prefix structure.",
+      "technicalDescription": "Data contains the invalid behavior animation ID"
+    },
+    {
+      "id": "111",
+      "title": "BA Name Format",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when the name portion of a behavior animation doesn't follow namespaced naming conventions.",
+      "technicalDescription": "Data contains the invalid BA name portion"
+    },
+    {
+      "id": "112",
+      "title": "JSON ID Format",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a JSON file's identifier doesn't follow the expected namespace:name format for cooperative add-ons.",
+      "technicalDescription": "Data contains the invalid JSON identifier"
+    },
+    {
+      "id": "120",
+      "title": "RAC ID Format",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a resource animation controller ID doesn't follow the format 'controller.animation.xyz'.",
+      "technicalDescription": "Data contains the invalid resource animation controller ID"
+    },
+    {
+      "id": "121",
+      "title": "RAC Name Format",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when the name portion of a resource animation controller doesn't follow namespaced naming conventions.",
+      "technicalDescription": "Data contains the invalid RAC name portion"
+    },
+    {
+      "id": "130",
+      "title": "RA ID Format",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a resource animation ID doesn't follow the expected format.",
+      "technicalDescription": "Data contains the invalid resource animation ID"
+    },
+    {
+      "id": "131",
+      "title": "RA Name Format",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when the name portion of a resource animation doesn't follow namespaced naming conventions.",
+      "technicalDescription": "Data contains the invalid RA name portion"
+    },
+    {
+      "id": "140",
+      "title": "RC ID Format",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a render controller ID doesn't follow the format 'controller.render.xyz'.",
+      "technicalDescription": "Data contains the invalid render controller ID"
+    },
+    {
+      "id": "141",
+      "title": "RC Name Format",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when the name portion of a render controller doesn't follow namespaced naming conventions.",
+      "technicalDescription": "Data contains the invalid RC name portion"
+    },
+    {
+      "id": "150",
+      "title": "Geometry ID Format",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a geometry ID doesn't follow the format 'geometry.creatorshortname_projectshortname.name'.",
+      "technicalDescription": "Data contains the invalid geometry ID"
+    },
+    {
+      "id": "151",
+      "title": "Geometry Name",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when the name portion of a geometry identifier doesn't follow namespaced naming conventions.",
+      "technicalDescription": "Data contains the invalid geometry name portion"
+    },
+    {
+      "id": "160",
+      "title": "Material ID Format",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a material identifier doesn't use proper namespacing. Use 'namespace:material_name' format.",
+      "technicalDescription": "Data contains the invalid material identifier"
+    },
+    {
+      "id": "161",
+      "title": "Material Namespace",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when the first segment of a material identifier isn't properly namespaced.",
+      "technicalDescription": "Data contains the material namespace issue"
+    },
+    {
+      "id": "170",
+      "title": "Missing Pack Scope",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a resource pack manifest is missing 'pack_scope': 'world' in the header. Required for cooperative add-ons.",
+      "technicalDescription": "Data contains the manifest path missing pack_scope"
+    },
+    {
+      "id": "191",
+      "title": "Dimension Found",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when dimension definition files are found in the pack. Custom dimensions are not permitted in cooperative add-ons.",
+      "technicalDescription": "Data contains the path to the dimension definition"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "cmd_transfer",
+  "title": "transfer",
+  "description": "Transfers a player to another server.",
+  "fields": [
+    {
+      "id": "pfidormsa",
+      "title": "pfidOrMSA",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "server",
+      "title": "server",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "port",
+      "title": "port",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_int",
+      "commandType": "INT"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Overload 1",
+      "description": "",
+      "params": [
+        {
+          "name": "pfidormsa",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "server",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "port",
+          "type": "INT",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 4,
+  "requiresCheats": true
+}

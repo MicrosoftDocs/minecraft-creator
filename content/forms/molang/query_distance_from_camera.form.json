@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns distance of the root of this entity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.distance_from_camera",
   "fields": [],
   "description": "Returns the distance of the root of this entity or particle emitter from the camera.",

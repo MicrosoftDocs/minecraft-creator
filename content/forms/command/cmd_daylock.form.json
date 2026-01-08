@@ -1,0 +1,35 @@
+{
+  "id": "cmd_daylock",
+  "title": "daylock",
+  "description": "Locks and unlocks the day-night cycle.",
+  "fields": [
+    {
+      "id": "lock",
+      "title": "lock",
+      "type": "string",
+      "isOptional": true,
+      "description": "Default `true`. An `enum` of default `true` which locks daytime or `false`.",
+      "subFormId": "type_boolean",
+      "commandType": "BOOLEAN"
+    }
+  ],
+  "aliases": [
+    "alwaysday"
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Daylock",
+      "description": "Lock daylight with an optional `Boolean`.",
+      "params": [
+        {
+          "name": "lock",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

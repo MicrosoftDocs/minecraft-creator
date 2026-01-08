@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "is a custom item definition" }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:item v1.21.90",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

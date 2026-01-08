@@ -1,4 +1,21 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has display name "
+          },
+          {
+            "type": "value",
+            "field": "string"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "scalarField": {
     "id": "string",

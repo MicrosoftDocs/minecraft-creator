@@ -1,5 +1,60 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:entity_placer",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "entity",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "places entity '"
+          },
+          {
+            "type": "value",
+            "field": "entity"
+          },
+          {
+            "type": "literal",
+            "text": "' into the world"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "use_on",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be used on specific blocks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "dispense_on",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be dispensed on specific blocks"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:entity_placer",

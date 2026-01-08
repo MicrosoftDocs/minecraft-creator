@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies wearable properties"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:wearable",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

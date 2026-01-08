@@ -1,0 +1,30 @@
+{
+  "id": "cmd_reload",
+  "title": "reload",
+  "description": "Reloads all function and script files from all behavior packs.",
+  "fields": [
+    {
+      "id": "all",
+      "title": "all",
+      "type": "string",
+      "isOptional": true,
+      "commandType": "RELOAD_ALL"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Reload",
+      "description": "Reload all function and script files.",
+      "params": [
+        {
+          "name": "all",
+          "type": "RELOAD_ALL",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 2,
+  "requiresCheats": true
+}

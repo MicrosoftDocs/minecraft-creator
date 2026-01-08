@@ -1,5 +1,37 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "targets entities that hurt its owner"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "entity_types",
+      "title": "Entity Types",
+      "description": "List of entity types that this mob can target if they hurt their owner",
+      "dataType": 15,
+      "subForm": {
+        "description": "List of entity types that this mob can target if they hurt their owner",
+        "fields": [
+          {
+            "id": "reevaluate_description",
+            "title": "Reevaluate Target",
+            "description": "If true, the targeting entity will continuously reevaluate the target and stop attacking if the target no longer meets the filter conditions.",
+            "defaultValue": false,
+            "dataType": 1
+          }
+        ]
+      }
+    }
+  ],
   "requires": [
     {
       "id": "tame_owner",

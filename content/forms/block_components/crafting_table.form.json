@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a custom crafting table with recipe tags"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Crafting Table",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

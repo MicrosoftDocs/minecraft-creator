@@ -1,4 +1,16 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "title": "Behavior Pack Header",
+  "description": "Defines the header section of a behavior pack manifest or metadata document.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines the name, description, and version for a behavior pack header" }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "name",

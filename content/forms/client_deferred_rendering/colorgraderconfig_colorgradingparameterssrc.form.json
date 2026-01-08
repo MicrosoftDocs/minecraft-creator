@@ -1,8 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "fields": [],
   "id": "minecraft:color_grading_settings",
   "title": "Color Grading Settings",
   "description": "Minecraft's color grading system allows for many degrees of customization of the final image. You can control the saturation, contrast, gain, and offset of pixels per RGB channel. This can be done on a global scale regardless of pixel luminance, or it can be done on a more fine-grained scale with unique sets of parameters for shadows, midtones and highlights.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "controls color grading and post-processing effects for Vibrant Visuals" }
+        ]
+      }
+    ]
+  },
   "generatedFromSchema_doNotEdit": {
     "title": "Struct ColorGraderConfig ColorGradingParametersSrc Client Deferred Rendering",
     "description": "Struct ColorGraderConfig ColorGradingParametersSrc Client Deferred Rendering",

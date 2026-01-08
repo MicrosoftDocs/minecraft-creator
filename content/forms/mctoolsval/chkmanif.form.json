@@ -1,0 +1,312 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates pack manifest.json file format and structure"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "mctoolsval/chkmanif",
+  "title": "Manifest Validation",
+  "description": "Comprehensive validation of pack manifest.json files. Validates format version, UUIDs, header properties, modules, dependencies, subpacks, capabilities, and settings. Ensures manifests comply with Minecraft Bedrock Edition requirements.",
+  "fields": [
+    {
+      "id": "101",
+      "title": "Invalid Format",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "The manifest format_version is not a recognized value. Valid format versions are 1, 2, or 3. Use format_version 2 for most modern packs.",
+      "howToUse": "Change format_version to 2 in your manifest.json. This is the recommended version for modern packs: \"format_version\": 2",
+      "technicalDescription": "Data contains the invalid format_version value"
+    },
+    {
+      "id": "102",
+      "title": "Schema Error",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "The manifest.json file does not conform to the expected JSON schema. Check for missing required properties, incorrect property types, or structural errors.",
+      "howToUse": "Review your manifest.json structure against the documentation at docs.microsoft.com. Common issues include missing commas, incorrect property names, or wrong value types.",
+      "technicalDescription": "Data contains details about the schema violation"
+    },
+    {
+      "id": "103",
+      "title": "Manifest Count",
+      "messageType": 2,
+      "dataType": 6,
+      "description": "Each pack must have exactly one manifest.json file at its root. Multiple manifests or missing manifests indicate a pack structure problem.",
+      "howToUse": "Ensure your pack has exactly one manifest.json file at its root directory. Remove duplicate manifests or add one if missing.",
+      "technicalDescription": "Data contains the number of manifests found"
+    },
+    {
+      "id": "104",
+      "title": "Missing Property",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "A required property is missing from the manifest header section. Common required properties include name, description, uuid, and version.",
+      "howToUse": "Add the missing required property to your manifest header. Required properties include: name, description, uuid, and version.",
+      "technicalDescription": "Data contains the name of the missing property"
+    },
+    {
+      "id": "105",
+      "title": "Required Property",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "A header property that is optional in format_version 1 is required in format_version 2 and above. Update your manifest to include all required header properties.",
+      "howToUse": "Add the now-required property to your manifest header. If using format_version 2+, more properties are required than in version 1.",
+      "technicalDescription": "Data contains the property name now required"
+    },
+    {
+      "id": "106",
+      "title": "Version Mismatch",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "The min_engine_version specified requires format_version 2. Either lower the min_engine_version or upgrade to format_version 2.",
+      "howToUse": "Either upgrade format_version to 2, or lower the min_engine_version. Format version 2 is required for higher engine versions.",
+      "technicalDescription": "Data contains the conflicting version values"
+    },
+    {
+      "id": "107",
+      "title": "Invalid Scope",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "The pack_scope property must be one of: 'global', 'world', or 'any'. Other values are not recognized.",
+      "howToUse": "Set pack_scope to one of: 'global', 'world', or 'any'. Remove or correct any other value.",
+      "technicalDescription": "Data contains the invalid pack_scope value"
+    },
+    {
+      "id": "108",
+      "title": "Multiple Templates",
+      "messageType": 2,
+      "dataType": 6,
+      "description": "The manifest modules array can contain at most one world_template module. Remove extra world_template entries.",
+      "howToUse": "Remove extra world_template entries from the modules array. Only one world_template module is allowed per manifest.",
+      "technicalDescription": "Data contains the count of world_template modules"
+    },
+    {
+      "id": "109",
+      "title": "Invalid Module",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "A module has an unrecognized type. Valid module types include: persona_piece, world_template, skin_pack, data, script, and resources.",
+      "howToUse": "Change the module type to a valid value: data, resources, script, skin_pack, world_template, or persona_piece.",
+      "technicalDescription": "Data contains the invalid module type"
+    },
+    {
+      "id": "110",
+      "title": "Duplicate UUID",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "A UUID is used more than once in the manifest. All UUIDs must be unique across header, modules, and dependencies. Generate new unique UUIDs for duplicates.",
+      "howToUse": "Generate a new unique UUID for each duplicate. Use an online UUID generator or your IDE's UUID generation feature.",
+      "technicalDescription": "Data contains the duplicate UUID"
+    },
+    {
+      "id": "111",
+      "title": "Invalid UUID",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "A UUID does not conform to the standard UUID format (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx). Generate a valid UUID using a UUID generator tool.",
+      "howToUse": "Replace the invalid UUID with a properly formatted one: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx. Use an online UUID generator.",
+      "technicalDescription": "Data contains the invalid UUID value"
+    },
+    {
+      "id": "112",
+      "title": "Missing Dep ID",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "A dependency entry is missing both 'module_name' and 'uuid'. Each dependency must have at least one identifier to specify which module it depends on.",
+      "howToUse": "Add either a 'uuid' or 'module_name' property to the dependency entry to identify which module it depends on.",
+      "technicalDescription": "Data contains the dependency index missing an ID"
+    },
+    {
+      "id": "113",
+      "title": "Duplicate Dep ID",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "A dependency has both 'module_name' and 'uuid' specified. Use only one identifier per dependency - either module_name (for script modules) or uuid (for packs).",
+      "technicalDescription": "Data contains the dependency with duplicate IDs"
+    },
+    {
+      "id": "114",
+      "title": "Invalid Module Name",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "The specified module_name is not in the list of allowed script modules. Valid module names include @minecraft/server, @minecraft/server-ui, etc.",
+      "technicalDescription": "Data contains the invalid module_name"
+    },
+    {
+      "id": "115",
+      "title": "Version Parse Error",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "A version number could not be parsed. Versions should be arrays of 3 numbers [major, minor, patch] or semantic version strings.",
+      "technicalDescription": "Data contains the unparseable version"
+    },
+    {
+      "id": "116",
+      "title": "Version Too Low",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "The specified version is lower than the minimum required version for this module or dependency. Update to a supported version.",
+      "technicalDescription": "Data contains the version and minimum required"
+    },
+    {
+      "id": "117",
+      "title": "Invalid Capability",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "An unrecognized capability is listed. Currently, 'pbr' is the only allowed capability for declaring Vibrant Visuals support.",
+      "technicalDescription": "Data contains the invalid capability name"
+    },
+    {
+      "id": "118",
+      "title": "Duplicate Folder",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "The same folder name is used by multiple subpacks. Each subpack must reference a unique folder path.",
+      "technicalDescription": "Data contains the duplicate folder name"
+    },
+    {
+      "id": "119",
+      "title": "Duplicate Subpack",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "The same name is used by multiple subpacks. Each subpack must have a unique identifier name.",
+      "technicalDescription": "Data contains the duplicate subpack name"
+    },
+    {
+      "id": "120",
+      "title": "Invalid Subpack",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "A subpack name is invalid or empty. Provide a valid name for each subpack entry.",
+      "technicalDescription": "Data contains the invalid subpack name"
+    },
+    {
+      "id": "121",
+      "title": "Invalid Tier",
+      "messageType": 2,
+      "dataType": 6,
+      "description": "A subpack memory_tier value is below the minimum allowed. Memory tiers must meet or exceed the baseline requirement.",
+      "technicalDescription": "Data contains the invalid memory_tier value"
+    },
+    {
+      "id": "122",
+      "title": "Settings Missing",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "A settings entry is missing a required property. Settings require name, type, and other properties depending on the setting type.",
+      "technicalDescription": "Data contains the missing settings property name"
+    },
+    {
+      "id": "123",
+      "title": "Invalid Setting",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "A settings entry has an unrecognized type. Valid types include 'slider' and 'dropdown'.",
+      "technicalDescription": "Data contains the invalid setting type"
+    },
+    {
+      "id": "124",
+      "title": "Invalid Min/Max",
+      "messageType": 2,
+      "dataType": 6,
+      "description": "For slider settings, the 'min' value must be less than the 'max' value.",
+      "technicalDescription": "Data contains the invalid min/max values"
+    },
+    {
+      "id": "125",
+      "title": "Slider Default",
+      "messageType": 2,
+      "dataType": 6,
+      "description": "For slider settings, the default value must be a number between min and max (inclusive).",
+      "technicalDescription": "Data contains the invalid default value"
+    },
+    {
+      "id": "126",
+      "title": "Dropdown Default",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "For dropdown settings, the default value must be one of the values in the options list.",
+      "technicalDescription": "Data contains the invalid dropdown default"
+    },
+    {
+      "id": "127",
+      "title": "Invalid Step",
+      "messageType": 2,
+      "dataType": 6,
+      "description": "For slider settings, the step value must be greater than 0 and less than (max - min).",
+      "technicalDescription": "Data contains the invalid step value"
+    },
+    {
+      "id": "128",
+      "title": "Duplicate Setting",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Multiple settings share the same name. Each setting must have a unique name identifier.",
+      "technicalDescription": "Data contains the duplicate setting name"
+    },
+    {
+      "id": "129",
+      "title": "Missing Namespace",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Settings names must be namespaced using the format 'namespace:setting_name'. Add a namespace prefix with a colon separator.",
+      "technicalDescription": "Data contains the setting name missing namespace"
+    },
+    {
+      "id": "130",
+      "title": "Few Options",
+      "messageType": 2,
+      "dataType": 6,
+      "description": "Dropdown settings must have at least 2 options to choose from.",
+      "technicalDescription": "Data contains the number of options found"
+    },
+    {
+      "id": "131",
+      "title": "Duplicate Option",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "A dropdown setting has duplicate values in its options list. Each option must be unique.",
+      "technicalDescription": "Data contains the duplicate option value"
+    },
+    {
+      "id": "132",
+      "title": "Base Version Error",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "The base_game_version property requires format_version 2 or higher. Either remove base_game_version or upgrade to format_version 2.",
+      "technicalDescription": "Data contains the conflicting version info"
+    },
+    {
+      "id": "133",
+      "title": "Wildcard Version",
+      "messageType": 1,
+      "dataType": 2,
+      "description": "Using wildcards (like [1, 21, *]) in base_game_version is not recommended. Specify an exact version for more predictable behavior.",
+      "technicalDescription": "Data contains the version with wildcard"
+    },
+    {
+      "id": "134",
+      "title": "PBR Engine Version",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Packs declaring the 'pbr' capability for Vibrant Visuals must have min_engine_version of at least 1.21.120.",
+      "technicalDescription": "Data contains the current min_engine_version"
+    },
+    {
+      "id": "135",
+      "title": "Missing PBR Cap",
+      "messageType": 1,
+      "dataType": 2,
+      "description": "The pack contains PBR-related files (like .texture_set.json or *_mer.png) but does not declare the 'pbr' capability in the manifest. Add 'capabilities': ['pbr'] to your manifest.",
+      "technicalDescription": "Data contains the PBR file path found"
+    }
+  ]
+}

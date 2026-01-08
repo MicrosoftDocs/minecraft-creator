@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is a baby"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "description": "Sets that this entity is a baby. This is used to set the is_baby value for use in query functions like Molang and Filters.",
   "generated_doNotEdit": {
@@ -333,20 +346,6 @@
         {
           "path": "/minecraft:entity/component_groups/minecraft:horse_baby/minecraft:is_baby/",
           "content": {}
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:upgrade_to_1_21_130/sequence/0/filters/all_of/1/",
-          "content": {
-            "test": "is_baby",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:upgrade_to_1_21_130/sequence/1/filters/all_of/1/",
-          "content": {
-            "test": "is_baby",
-            "value": false
-          }
         }
       ],
       "/vanilla/behavior_pack/entities/zombie_pigman.json": [

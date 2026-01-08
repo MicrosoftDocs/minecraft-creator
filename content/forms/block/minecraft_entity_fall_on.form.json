@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [{ "field": "minimum_fall_distance", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "triggers fall events after " },
+          { "type": "value", "field": "minimum_fall_distance" },
+          { "type": "literal", "text": " blocks" }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:entity_fall_on",
   "title": "Entity Fall On",
   "description": "Configures what distance an entity must fall onto this block to cause the `onEntityFallOn` block custom component event to be sent to script. Custom components subscribed to the `onEntityFallOn` event on a block without the `minecraft:entity_fall_on` component use the default fall distance of 1 block.",
@@ -16,7 +29,7 @@
       {
         "path": "default",
         "content": {
-          "minimum_fall_distance": 2.0
+          "minimum_fall_distance": 2
         }
       }
     ]

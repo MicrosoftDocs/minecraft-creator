@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Client Biome Documentation - minecraft:biome_music"
 description: "Describes the minecraft:biome_music client biome"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

@@ -1,0 +1,46 @@
+{
+  "id": "cmd_stopsound",
+  "title": "stopsound",
+  "description": "Stops a sound.",
+  "fields": [
+    {
+      "id": "player",
+      "title": "player",
+      "type": "string",
+      "isOptional": false,
+      "description": "A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "sound",
+      "title": "sound",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `string` from the sound `enum` of the sound to stop.",
+      "subFormId": "type_id",
+      "commandType": "ID"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Stop sound",
+      "description": "Stop a sound for a `player` with an optional `sound` `string` .",
+      "params": [
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "sound",
+          "type": "ID",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

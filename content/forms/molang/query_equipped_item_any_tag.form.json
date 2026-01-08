@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns equipped item any tag information"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.equipped_item_any_tag",
   "fields": [],
   "generated_doNotEdit": {

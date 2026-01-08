@@ -1,4 +1,22 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "can dash when ridden" }
+        ]
+      },
+      {
+        "visibility": [{ "field": "cooldown_time", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "dash cooldown of " },
+          { "type": "value", "field": "cooldown_time" },
+          { "type": "literal", "text": " seconds" }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:dash",

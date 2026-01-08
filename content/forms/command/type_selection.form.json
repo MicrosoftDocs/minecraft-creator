@@ -1,0 +1,109 @@
+{
+  "id": "type_selection",
+  "title": "Entity Selector",
+  "description": "Targets one or more entities using selector syntax. Selectors start with @ followed by a letter indicating the type of selection.",
+  "fields": [],
+  "formatHint": "@a, @e, @p, @r, @s, or @e[type=...]",
+  "samples": {
+    "values": [
+      {
+        "path": "All players in the world",
+        "content": "@a"
+      },
+      {
+        "path": "All entities (players, mobs, items, etc.)",
+        "content": "@e"
+      },
+      {
+        "path": "Nearest player to the command's execution point",
+        "content": "@p"
+      },
+      {
+        "path": "Random player",
+        "content": "@r"
+      },
+      {
+        "path": "The entity executing the command (self)",
+        "content": "@s"
+      },
+      {
+        "path": "All pigs",
+        "content": "@e[type=minecraft:pig]"
+      },
+      {
+        "path": "All players within 10 blocks",
+        "content": "@a[r=10]"
+      },
+      {
+        "path": "All entities named Bob",
+        "content": "@e[name=\"Bob\"]"
+      },
+      {
+        "path": "All non-player entities",
+        "content": "@e[type=!minecraft:player]"
+      }
+    ],
+    "filters": [
+      {
+        "path": "Filter by entity type identifier",
+        "content": "type=minecraft:zombie"
+      },
+      {
+        "path": "Filter by entity's custom name",
+        "content": "name=\"MyPet\""
+      },
+      {
+        "path": "Maximum distance (radius) from execution point",
+        "content": "r=10"
+      },
+      {
+        "path": "Minimum distance from execution point",
+        "content": "rm=5"
+      },
+      {
+        "path": "Center point for distance calculations",
+        "content": "x=0,y=64,z=0"
+      },
+      {
+        "path": "Volume dimensions for area selection",
+        "content": "dx=10,dy=5,dz=10"
+      },
+      {
+        "path": "Filter by scoreboard values",
+        "content": "scores={score1=10,score2=5..10}"
+      },
+      {
+        "path": "Filter by entity tag",
+        "content": "tag=marked"
+      },
+      {
+        "path": "Limit number of entities selected",
+        "content": "c=3"
+      },
+      {
+        "path": "Filter by experience level (max/min)",
+        "content": "l=30,lm=10"
+      },
+      {
+        "path": "Filter by game mode",
+        "content": "m=survival"
+      },
+      {
+        "path": "Filter by X rotation (pitch) max/min",
+        "content": "rx=90,rxm=-90"
+      },
+      {
+        "path": "Filter by Y rotation (yaw) max/min",
+        "content": "ry=180,rym=-180"
+      },
+      {
+        "path": "Filter by entity family type",
+        "content": "family=monster"
+      },
+      {
+        "path": "Filter by inventory contents",
+        "content": "hasitem={item=diamond,quantity=1..}"
+      }
+    ]
+  }
+}

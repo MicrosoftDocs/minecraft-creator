@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Components Documentation - Entity Components"
 description: "A reference document describing all current Entity Components"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -20,7 +21,7 @@ ms.date: 02/11/2025
 | [minecraft:annotation.break_door](EntityComponents/minecraftComponent_annotation_break_door.md)| Allows an entity to break doors, assuming that that flags set up for the component to use in navigation. |
 | [minecraft:annotation.open_door](EntityComponents/minecraftComponent_annotation_open_door.md)| Allows the entity to open doors. |
 | [minecraft:area_attack](EntityComponents/minecraftComponent_area_attack.md)| A component that does damage to entities that get within range. |
-| [minecraft:attack](EntityComponents/minecraftComponent_attack.md)| Allows an entity to define an entity's melee attack and any additional effects on it's attack. |
+| [minecraft:attack](EntityComponents/minecraftComponent_attack.md)| Defines an entity's melee attack damage and any additional status effects applied on hit. |
 | [minecraft:attack_cooldown](EntityComponents/minecraftComponent_attack_cooldown.md)| Adds a cooldown to an entity. |
 | [Attack Damage](EntityComponents/minecraftComponent_attack_damage.md)| Specifies how much damage is dealt by the entity when it attacks. |
 | [Balloonable](EntityComponents/minecraftComponent_balloonable.md)| Allows this entity to have a balloon attached and defines the conditions and events for this entity when is ballooned. |
@@ -38,7 +39,7 @@ ms.date: 02/11/2025
 | [minecraft:breedable](EntityComponents/minecraftComponent_breedable.md)| Allows an entity to establish a way to get into the love state used for breeding. |
 | [minecraft:bribeable](EntityComponents/minecraftComponent_bribeable.md)| Defines the way an entity can get into the 'bribed' state. |
 | [minecraft:buoyant](EntityComponents/minecraftComponent_buoyant.md)| Enables an entity to float on the specified liquid blocks. |
-| [minecraft:burns_in_daylight](EntityComponents/minecraftComponent_burns_in_daylight.md)| . |
+| [minecraft:burns_in_daylight](EntityComponents/minecraftComponent_burns_in_daylight.md)| Specifies that this entity takes fire damage when exposed to direct sunlight. |
 | [minecraft:cannot_be_attacked](EntityComponents/minecraftComponent_cannot_be_attacked.md)| When set, blocks entities from attacking the owner entity unless they have the "minecraft:ignore_cannot_be_attacked" component. |
 | [minecraft:can_climb](EntityComponents/minecraftComponent_can_climb.md)| Allows an entity to climb ladders. |
 | [minecraft:can_fly](EntityComponents/minecraftComponent_can_fly.md)| Marks the entity as being able to fly, the pathfinder won't be restricted to paths where a solid block is required underneath it. |
@@ -74,7 +75,7 @@ ms.date: 02/11/2025
 | [minecraft:floats_in_liquid](EntityComponents/minecraftComponent_floats_in_liquid.md)| Sets that this entity can float in liquid blocks. |
 | [minecraft:flocking](EntityComponents/minecraftComponent_flocking.md)| Allows entities to flock in groups in water or not. |
 | [minecraft:flying_speed](EntityComponents/minecraftComponent_flying_speed.md)| Speed in Blocks that this entity flies at. |
-| [minecraft:follow_range](EntityComponents/minecraftComponent_follow_range.md)| Defines the range, in blocks, that a mob will pursue a target. |
+| [minecraft:follow_range](EntityComponents/minecraftComponent_follow_range.md)| Defines the maximum range, in blocks, that a mob will pursue a target. |
 | [minecraft:free_camera_controlled](EntityComponents/minecraftComponent_free_camera_controlled.md)| When configured as a rideable entity, the entity will be controlled using WASD controls and mouse to move in three dimensions. |
 | [minecraft:friction_modifier](EntityComponents/minecraftComponent_friction_modifier.md)| Defines how much friction affects this entity. |
 | [minecraft:game_event_movement_tracking](EntityComponents/minecraftComponent_game_event_movement_tracking.md)| Allows an entity to emit `entityMove`, `swim` and `flap` game events, depending on the block the entity is moving through. |
@@ -84,10 +85,10 @@ ms.date: 02/11/2025
 | [minecraft:group_size](EntityComponents/minecraftComponent_group_size.md)| Keeps track of entity group size in the given radius. |
 | [minecraft:grows_crop](EntityComponents/minecraftComponent_grows_crop.md)| Could increase crop growth when entity walks over crop |
 | [minecraft:healable](EntityComponents/minecraftComponent_healable.md)| How entities heal |
-| [Health](EntityComponents/minecraftComponent_health.md)| Default and maximum health settings |
+| [Health](EntityComponents/minecraftComponent_health.md)| Defines the health pool for an entity, measured in health points (1 point = half a heart). |
 | [minecraft:heartbeat](EntityComponents/minecraftComponent_heartbeat.md)| Defines the entity's heartbeat. |
 | [minecraft:hide](EntityComponents/minecraftComponent_hide.md)| Moves to and hides at their owned POI or the closest nearby. |
-| [minecraft:home](EntityComponents/minecraftComponent_home.md)| Saves a home position for when the the entity is spawned. |
+| [minecraft:home](EntityComponents/minecraftComponent_home.md)| Saves a home position for when the entity is spawned. |
 | [minecraft:horse.jump_strength](EntityComponents/minecraftComponent_horse.jump_strength.md)| Determines the jump height for a horse or similar entity, like a donkey. |
 | [minecraft:hurt_on_condition](EntityComponents/minecraftComponent_hurt_on_condition.md)| Defines a set of conditions under which an entity should take damage. |
 | [minecraft:ignore_cannot_be_attacked](EntityComponents/minecraftComponent_ignore_cannot_be_attacked.md)| When set, blocks entities from attacking the owner entity unless they have the "minecraft:ignore_cannot_be_attacked" component. |
@@ -117,17 +118,17 @@ ms.date: 02/11/2025
 | [minecraft:item_hopper](EntityComponents/minecraftComponent_item_hopper.md)| Determines that this entity is an item hopper. |
 | [minecraft:jump.dynamic](EntityComponents/minecraftComponent_jump.dynamic.md)| Defines a dynamic type jump control that will change jump properties based on the speed modifier of the mob. |
 | [minecraft:jump.static](EntityComponents/minecraftComponent_jump.static.md)| Gives the entity the ability to jump. |
-| [minecraft:knockback_resistance](EntityComponents/minecraftComponent_knockback_resistance.md)| Compels an entity to resist being knocked backwards by a melee attack. |
+| [minecraft:knockback_resistance](EntityComponents/minecraftComponent_knockback_resistance.md)| Determines an entity's resistance to knockback from melee attacks. |
 | [minecraft:lava_movement](EntityComponents/minecraftComponent_lava_movement.md)| Allows a custom movement speed across lava blocks. |
 | [minecraft:leashable](EntityComponents/minecraftComponent_leashable.md)| Describes how this mob can be leashed to other items |
 | [minecraft:leashable_to](EntityComponents/minecraftComponent_leashable_to.md)| Allows players to leash entities to this entity, retrieve entities already leashed to it, or free them using shears. |
 | [minecraft:looked_at](EntityComponents/minecraftComponent_looked_at.md)| Defines the behavior when another entity looks at the owner entity. |
-| [minecraft:loot](EntityComponents/minecraftComponent_loot.md)| Sets the loot table for what items this entity drops upon death. |
+| [minecraft:loot](EntityComponents/minecraftComponent_loot.md)| Specifies the loot table that determines what items this entity drops upon death. |
 | [minecraft:managed_wandering_trader](EntityComponents/minecraftComponent_managed_wandering_trader.md)| Manages the entity's ability to trade. |
 | [minecraft:mark_variant](EntityComponents/minecraftComponent_mark_variant.md)| Mark Variant is typically used as an additional per-type way (besides `variant`) to express a different visual form of the same mob. |
 | [minecraft:mob_effect](EntityComponents/minecraftComponent_mob_effect.md)| A component that applies a mob effect to entities that get within range. |
 | [minecraft:mob_effect_immunity](EntityComponents/minecraftComponent_mob_effect_immunity.md)| Entities with this component will have an immunity to the provided mob effects. |
-| [minecraft:movement](EntityComponents/minecraftComponent_movement.md)| This component represents the foundational movement of an entity. |
+| [minecraft:movement](EntityComponents/minecraftComponent_movement.md)| Defines the base movement speed of an entity. |
 | [minecraft:movement.amphibious](EntityComponents/minecraftComponent_movement.amphibious.md)| This move control allows the mob to swim in water and walk on land. |
 | [minecraft:movement.basic](EntityComponents/minecraftComponent_movement.basic.md)| This component accents the movement of an entity. |
 | [Dolphin Movement](EntityComponents/minecraftComponent_movement.dolphin.md)| This component can control how dolphins move, in a dolphin-esque style. |
@@ -147,6 +148,7 @@ ms.date: 02/11/2025
 | [minecraft:navigation.hover](EntityComponents/minecraftComponent_navigation.hover.md)| Allows this entity to generate paths in the air like the vanilla Bees do. |
 | [minecraft:navigation.swim](EntityComponents/minecraftComponent_navigation.swim.md)| Allows this entity to generate paths that include water. |
 | [minecraft:navigation.walk](EntityComponents/minecraftComponent_navigation.walk.md)| Walking style of the mob |
+| [minecraft:offspring](EntityComponents/minecraftComponent_offspring.md)| Defines the way an entity can create a born offspring. |
 | [minecraft:out_of_control](EntityComponents/minecraftComponent_out_of_control.md)| Defines the entity's 'out of control' state. |
 | [minecraft:peek](EntityComponents/minecraftComponent_peek.md)| Defines the entity's 'peek' behavior, defining the events that should be called during it. |
 | [minecraft:persistent](EntityComponents/minecraftComponent_persistent.md)| Defines whether an entity should be persistent in the game world. |
@@ -161,7 +163,7 @@ ms.date: 02/11/2025
 | [minecraft:push_through](EntityComponents/minecraftComponent_push_through.md)| Sets the distance through which the entity can push through. |
 | [minecraft:raid_trigger](EntityComponents/minecraftComponent_raid_trigger.md)| Attempts to trigger a raid at the entity's location. |
 | [minecraft:rail_movement](EntityComponents/minecraftComponent_rail_movement.md)| Defines the entity's movement on the rails. |
-| [minecraft:rail_sensor](EntityComponents/minecraftComponent_rail_sensor.md)|  |
+| [minecraft:rail_sensor](EntityComponents/minecraftComponent_rail_sensor.md)| Enables minecart-type entities to detect powered rails and respond to activation state changes. |
 | [minecraft:ravager_blocked](EntityComponents/minecraftComponent_ravager_blocked.md)| Defines the ravager's response to their melee attack being blocked. |
 | [minecraft:reflect_projectiles](EntityComponents/minecraftComponent_reflect_projectiles.md)| [EXPERIMENTAL] Allows an entity to reflect projectiles. |
 | [minecraft:remove_in_peaceful](EntityComponents/minecraftComponent_remove_in_peaceful.md)| Denotes entities that are not allowed to exist in "Peaceful" difficulty. |
@@ -169,14 +171,15 @@ ms.date: 02/11/2025
 | [minecraft:rideable](EntityComponents/minecraftComponent_rideable.md)| This entity can be ridden |
 | [minecraft:rotation_axis_aligned](EntityComponents/minecraftComponent_rotation_axis_aligned.md)| Causes the entity to automatically rotate to align with the nearest cardinal direction based on its current facing direction.<br>Combining this with the "minecraft:body_rotation_blocked" component will cause the entity's body to align with the nearest cardinal direction and remain fixed in that orientation, regardless of changes in its facing direction. |
 | [minecraft:rotation_locked_to_vehicle](EntityComponents/minecraftComponent_rotation_locked_to_vehicle.md)| Causes the entity's rotation to match their vehicle's facing direction. |
-| [minecraft:scale](EntityComponents/minecraftComponent_scale.md)| Sets the entity's visual size. |
+| [minecraft:scale](EntityComponents/minecraftComponent_scale.md)| Sets the entity's visual size multiplier. |
 | [minecraft:scale_by_age](EntityComponents/minecraftComponent_scale_by_age.md)| Defines the entity's size interpolation based on the entity's age. |
 | [minecraft:scheduler](EntityComponents/minecraftComponent_scheduler.md)| Fires off scheduled mob events at time of day events. |
-| [minecraft:shareables](EntityComponents/minecraftComponent_shareables.md)| Defines a list of items the mob wants to share. |
+| [minecraft:shareables](EntityComponents/minecraftComponent_shareables.md)| Defines a list of items the mob wants to share or pick up. |
 | [minecraft:shooter](EntityComponents/minecraftComponent_shooter.md)| Defines the entity's ranged attack behavior. |
 | [minecraft:sittable](EntityComponents/minecraftComponent_sittable.md)| Defines the entity's 'sit' state. |
 | [minecraft:skin_id](EntityComponents/minecraftComponent_skin_id.md)| Skin ID value. |
 | [minecraft:sound_volume](EntityComponents/minecraftComponent_sound_volume.md)| Sets the entity's base volume for sound effects. |
+| [minecraft:spawn_egg_interaction](EntityComponents/minecraftComponent_spawn_egg_interaction.md)| Enables interacting with this entity using its own spawn egg to spawn a born child. |
 | [minecraft:spawn_entity](EntityComponents/minecraftComponent_spawn_entity.md)| Adds a timer after which this entity will spawn another entity or item (similar to vanilla's chicken's egg-laying behavior). |
 | [minecraft:spell_effects](EntityComponents/minecraftComponent_spell_effects.md)| Allows an entity to add or remove status effects from itself. |
 | [minecraft:strength](EntityComponents/minecraftComponent_strength.md)| Defines the entity's strength to carry items. |
@@ -194,7 +197,7 @@ ms.date: 02/11/2025
 | [minecraft:transient](EntityComponents/minecraftComponent_transient.md)| An entity with this component will NEVER persist, and forever disappear when unloaded. |
 | [Trust](EntityComponents/minecraftComponent_trust.md)| Allows this entity to trust multiple players. |
 | [minecraft:trusting](EntityComponents/minecraftComponent_trusting.md)| Defines the rules for a mob to trust players. |
-| [minecraft:type_family](EntityComponents/minecraftComponent_type_family.md)| Defines the families this entity belongs to. |
+| [minecraft:type_family](EntityComponents/minecraftComponent_type_family.md)| Defines the family categories this entity belongs to. |
 | [minecraft:underwater_mount_breathing](EntityComponents/minecraftComponent_underwater_mount_breathing.md)| Pauses this entity's breathing under water. |
 | [minecraft:underwater_movement](EntityComponents/minecraftComponent_underwater_movement.md)| Defines the speed with which an entity can move through water. |
 | [minecraft:variable_max_auto_step](EntityComponents/minecraftComponent_variable_max_auto_step.md)| Entities with this component will have a maximum auto step height that is different depending on whether they are on a block that prevents jumping. |
@@ -204,7 +207,7 @@ ms.date: 02/11/2025
 | [minecraft:vibration_listener](EntityComponents/minecraftComponent_vibration_listener.md)| Allows the entity to listen to vibration events. |
 | [minecraft:walk_animation_speed](EntityComponents/minecraftComponent_walk_animation_speed.md)| Sets the speed multiplier for this entity's walk animation speed. |
 | [minecraft:wants_jockey](EntityComponents/minecraftComponent_wants_jockey.md)| Sets that this entity wants to become a jockey. |
-| [minecraft:water_movement](EntityComponents/minecraftComponent_water_movement.md)|  |
+| [minecraft:water_movement](EntityComponents/minecraftComponent_water_movement.md)| Customizes how the entity moves through water by adjusting drag coefficient. |
 
 ## Internal/Deprecated Components
 These components are either deprecated or internal to Minecraft and not usable in custom content.

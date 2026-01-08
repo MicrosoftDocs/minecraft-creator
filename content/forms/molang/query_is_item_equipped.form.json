@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if there is an item in the requested hand slot"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_item_equipped",
   "fields": [],
   "generated_doNotEdit": {

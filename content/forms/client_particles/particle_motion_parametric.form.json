@@ -1,5 +1,35 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "controls particle motion via parametric equations"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "relative_position",
+      "title": "Relative Position",
+      "description": "Position offset relative to the particle emitter, as [x, y, z] Molang expressions.",
+      "dataType": 35,
+      "minLength": 3,
+      "maxLength": 3
+    },
+    {
+      "id": "direction",
+      "title": "Direction",
+      "description": "Direction of particle motion, as [x, y, z] Molang expressions.",
+      "dataType": 35,
+      "minLength": 3,
+      "maxLength": 3
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_motion_parametric",
     "title": "Client Particles Particle Motion Parametric",
@@ -111,5 +141,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Controls particle position and rotation using Molang expressions evaluated each frame, overriding physics simulation. Position is relative to emitter origin, allowing mathematical motion patterns like orbits, waves, spirals, or any path describable through equations. Ideal for magical effects, precise choreographed motion, or synchronized particle formations."
 }

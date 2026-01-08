@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns y rotation required to aim at the entity's curr..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.target_y_rotation",
   "fields": [],
   "generated_doNotEdit": {

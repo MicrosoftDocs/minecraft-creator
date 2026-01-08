@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "contains a format version and a biome definition"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Biome JSON File",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

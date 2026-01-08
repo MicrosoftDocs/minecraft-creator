@@ -1,4 +1,75 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be tamed by repeatedly mounting it"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "min_temper",
+            "comparison": "defined"
+          },
+          {
+            "field": "max_temper",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has temper range "
+          },
+          {
+            "type": "value",
+            "field": "min_temper"
+          },
+          {
+            "type": "literal",
+            "text": "-"
+          },
+          {
+            "type": "value",
+            "field": "max_temper"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "feed_items",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be fed items to speed up taming"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "auto_reject_items",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "rejects certain items when untamed"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:tamemount",
@@ -58,6 +129,41 @@
           "/vanilla/behavior_pack/entities/donkey.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:donkey_wild/minecraft:tamemount/",
+              "content": [
+                {
+                  "item": "wheat",
+                  "temper_mod": 3
+                },
+                {
+                  "item": "sugar",
+                  "temper_mod": 3
+                },
+                {
+                  "item": "apple",
+                  "temper_mod": 3
+                },
+                {
+                  "item": "carrot",
+                  "temper_mod": 3
+                },
+                {
+                  "item": "golden_carrot",
+                  "temper_mod": 5
+                },
+                {
+                  "item": "golden_apple",
+                  "temper_mod": 10
+                },
+                {
+                  "item": "appleEnchanted",
+                  "temper_mod": 10
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/horse.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:horse_wild/minecraft:tamemount/",
               "content": [
                 {
                   "item": "wheat",
