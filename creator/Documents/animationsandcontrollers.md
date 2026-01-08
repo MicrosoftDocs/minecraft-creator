@@ -111,11 +111,44 @@ Now it's time to add a custom animation to the Shapeshifter to signal when it's 
 
     We made our shapeshifter wave its arms as it begins to change phases for our sample, but feel free to let your creativity guide you!
 
-4. Finally, add an animation controller file to the shapeshifter behavior pack to define the conditions that trigger your animation to play. Then, copy the animation controller and paste it into the animations folder in your shapeshifter’s resource pack.
+4. Finally, add an animation_controller file to the animation_controllers folder in your shapeshifter’s resource pack.
+
+    ```json
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.shapeshifter.phase_change": {
+          "initial_state": "default",
+          "states": {
+            "default": {
+              "animations": ["phase_change"],
+              "transitions": [
+                {
+                  "phase_changing": "q.property('minecraft:shape') != 'shapeshifter'"
+                }
+              ]
+            },
+            "phase_changing": {
+              "animations": ["phase_change"],
+              "sound_effects": [
+                {
+                  "effect": "phase_change"
+                }
+              ],
+              "transitions": [
+                {
+                  "default": "q.property('minecraft:shape') == 'shapeshifter'"
+                }
+              ],
+              "blend_transition": 0.2
+            }
+          }
+        }
+      }
+    ```
 
     ![Finished Shapeshifter](../Documents/Media/AdvancedCustomMobs/success.gif)
 
-    We associated our animation to the component that’s controlled by the minecraft:become_angry event, but feel free to get creative to give your shapeshifter even more unique parameters!
+    We associated our animation with the component that controls the shapeshifter's geometry, but feel free to get creative to give your shapeshifter even more unique parameters!
 
 ### See Also
 
