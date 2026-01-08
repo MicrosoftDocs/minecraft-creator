@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has body rotation locked to vehicle direction" }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:body_rotation_locked_to_vehicle",
   "fields": [],
   "generated_doNotEdit": {

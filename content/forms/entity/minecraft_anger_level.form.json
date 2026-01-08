@@ -1,5 +1,106 @@
 {
-  "title": "Anger Level",
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "tracks anger levels toward nuisances"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "max_anger",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "up to "
+          },
+          {
+            "type": "value",
+            "field": "max_anger"
+          },
+          {
+            "type": "literal",
+            "text": " max anger"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "angry_threshold",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "becomes hostile at "
+          },
+          {
+            "type": "value",
+            "field": "angry_threshold"
+          },
+          {
+            "type": "literal",
+            "text": " anger"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "remove_targets_below_angry_threshold",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "loses target when anger drops"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "broadcast_anger",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "broadcasts anger to nearby allies"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "broadcast_anger_on_attack",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "allies get angry when this mob attacks"
+          }
+        ]
+      }
+    ]
+  },
   "description": "Compels the entity to track anger towards a set of nuisances.",
   "fields": [
     {

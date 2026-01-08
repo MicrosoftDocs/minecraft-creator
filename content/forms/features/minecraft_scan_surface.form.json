@@ -1,5 +1,49 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:scan_surface",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "finds terrain surface before placing features"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "scan_surface_feature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "places "
+          },
+          {
+            "type": "value",
+            "field": "scan_surface_feature"
+          },
+          {
+            "type": "literal",
+            "text": " on discovered surface"
+          }
+        ]
+      },
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "scans downward to find solid ground"
+          }
+        ],
+        "priority": 3
+      }
+    ]
+  },
   "fields": [
     {
       "id": "format_version",
@@ -30,5 +74,6 @@
         }
       }
     ]
-  }
+  },
+  "description": "Searches for valid terrain surface positions before placing features. Scans downward from the generation height to find solid ground, then places the referenced feature at appropriate surface level. Essential for features like flowers, grass, and decorations that must sit on top of terrain regardless of elevation."
 }

@@ -1,5 +1,110 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "sends events to other entities"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "event_choices",
+      "title": "Event Choices",
+      "description": "List of possible events to send with conditions, weights, and targeting parameters.",
+      "dataType": 15,
+      "subForm": {
+        "id": "event_choice",
+        "title": "Event Choice",
+        "fields": [
+          {
+            "id": "min_activation_range",
+            "title": "Min Activation Range",
+            "description": "Minimum distance from target to activate this event choice.",
+            "dataType": 3
+          },
+          {
+            "id": "max_activation_range",
+            "title": "Max Activation Range",
+            "description": "Maximum distance from target to activate this event choice.",
+            "dataType": 3
+          },
+          {
+            "id": "cooldown_time",
+            "title": "Cooldown Time",
+            "description": "Time in seconds before this choice can be used again.",
+            "dataType": 3
+          },
+          {
+            "id": "cast_duration",
+            "title": "Cast Duration",
+            "description": "Time in seconds for the casting animation.",
+            "dataType": 3
+          },
+          {
+            "id": "particle_color",
+            "title": "Particle Color",
+            "description": "Color of particles during casting, in hex format like '#RRGGBBAA'.",
+            "dataType": 2
+          },
+          {
+            "id": "weight",
+            "title": "Weight",
+            "description": "Relative weight for random selection among event choices.",
+            "dataType": 3
+          },
+          {
+            "id": "filters",
+            "title": "Filters",
+            "description": "Conditions that must be met for this event choice to be valid.",
+            "dataType": 16,
+            "subFormId": "entity/actordefinitiontrigger_filters"
+          },
+          {
+            "id": "start_sound_event",
+            "title": "Start Sound Event",
+            "description": "Sound event to play when casting starts.",
+            "dataType": 2
+          },
+          {
+            "id": "sequence",
+            "title": "Sequence",
+            "description": "List of events to send in order with timing.",
+            "dataType": 15,
+            "subForm": {
+              "id": "sequence_step",
+              "title": "Sequence Step",
+              "fields": [
+                {
+                  "id": "base_delay",
+                  "title": "Base Delay",
+                  "description": "Delay in seconds before this step executes.",
+                  "dataType": 3
+                },
+                {
+                  "id": "event",
+                  "title": "Event",
+                  "description": "Event to send to the target entity.",
+                  "dataType": 2
+                },
+                {
+                  "id": "sound_event",
+                  "title": "Sound Event",
+                  "description": "Sound event to play when this step executes.",
+                  "dataType": 2
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.send_event",
     "title": "Send Event Behavior",

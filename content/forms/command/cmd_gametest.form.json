@@ -1,0 +1,270 @@
+{
+  "id": "cmd_gametest",
+  "title": "gametest",
+  "description": "[Requires the Beta APIs experiment].  Configures various parameters for managing built-in or custom gametest framework tests.",
+  "fields": [
+    {
+      "id": "mode",
+      "title": "mode",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "GAMETESTMODERUNTHIS"
+    },
+    {
+      "id": "testname",
+      "title": "testName",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "GAMETESTNAME"
+    },
+    {
+      "id": "rotationsteps",
+      "title": "rotationSteps",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "stoponfailure",
+      "title": "stopOnFailure",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_boolean",
+      "commandType": "BOOLEAN"
+    },
+    {
+      "id": "repeatcount",
+      "title": "repeatCount",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "tag",
+      "title": "tag",
+      "type": "string",
+      "isOptional": true,
+      "commandType": "GAMETESTTAG"
+    },
+    {
+      "id": "width",
+      "title": "width",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "height",
+      "title": "height",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "depth",
+      "title": "depth",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_int",
+      "commandType": "INT"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Run block test",
+      "description": "Internal command variant that is used to run the command associated with a command block.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "GAMETESTMODERUNTHIS",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Run gametest",
+      "description": "Runs a particular gametest with a particular number of rotation steps.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "GAMETESTMODERUN",
+          "isOptional": false
+        },
+        {
+          "name": "testname",
+          "type": "GAMETESTNAME",
+          "isOptional": false
+        },
+        {
+          "name": "rotationsteps",
+          "type": "INT",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Run gametest with custom stop",
+      "description": "Runs a gametest with additional controls on stop behavior, repeat count, and rotation steps.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "GAMETESTMODERUN",
+          "isOptional": false
+        },
+        {
+          "name": "testname",
+          "type": "GAMETESTNAME",
+          "isOptional": false
+        },
+        {
+          "name": "stoponfailure",
+          "type": "BOOLEAN",
+          "isOptional": false
+        },
+        {
+          "name": "repeatcount",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "rotationsteps",
+          "type": "INT",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Run gametest with a tag",
+      "description": "Runs a set of gametests with a particular tag.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "GAMETESTMODERUNSET",
+          "isOptional": false
+        },
+        {
+          "name": "tag",
+          "type": "GAMETESTTAG",
+          "isOptional": true
+        },
+        {
+          "name": "rotationsteps",
+          "type": "INT",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Run gametest until failure",
+      "description": "Runs a set of gametests until a failure is detected, using a particular tag.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "GAMETESTMODERUNSETUNTILFAIL",
+          "isOptional": false
+        },
+        {
+          "name": "tag",
+          "type": "GAMETESTTAG",
+          "isOptional": true
+        },
+        {
+          "name": "rotationsteps",
+          "type": "INT",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Clear all tests",
+      "description": "Clears out existing gametests and potentially any side effects.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "GAMETESTMODECLEARALL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Show gametest origin",
+      "description": "Shows the relative position of the origin of a gametest in the world.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "GAMETESTMODESHOWPOSITION",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Creates a new gametest",
+      "description": "Creates a new gametest with the specified name, width, height, and depth.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "GAMETESTMODECREATETEST",
+          "isOptional": false
+        },
+        {
+          "name": "testname",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "isOptional": true
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "isOptional": true
+        },
+        {
+          "name": "depth",
+          "type": "INT",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Run nearby tests",
+      "description": "Runs nearby tests.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "GAMETESTRUNNEARBYTESTS",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Stop all tests",
+      "description": "Stops all currently-running gametests.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "GAMETESTSTOPTESTS",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "identifies files with unrecognized extensions"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "unkfile",
+  "title": "Unknown Files",
+  "description": "Identifies files with unrecognized extensions that are not standard Minecraft content types. Unknown files may indicate misplaced assets or incompatible content.",
+  "fields": [
+    {
+      "id": "102",
+      "title": "Unknown File Type",
+      "messageType": 2,
+      "dataType": 2,
+      "description": "Error when a file with an unrecognized extension is found in the pack. Minecraft only supports specific file types (JSON, PNG, TGA, OGG, FSB, etc.). Remove or relocate unknown files.",
+      "technicalDescription": "Data contains the file extension or path of the unknown file"
+    }
+  ]
+}

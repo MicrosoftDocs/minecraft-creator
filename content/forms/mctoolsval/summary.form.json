@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "provides project manifest summary information"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "summary",
+  "title": "Project Summary",
+  "description": "Provides high-level summary information about the project's manifests and pack configuration.",
+  "fields": [
+    {
+      "id": "101",
+      "title": "Resource Manifest",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Summary of the resource pack manifest.json including name, description, UUID, and version information.",
+      "technicalDescription": "Data contains formatted manifest details including name, description, UUID, and version"
+    },
+    {
+      "id": "102",
+      "title": "Behavior Manifest",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Summary of the behavior pack manifest.json including name, description, UUID, version, and script module dependencies.",
+      "technicalDescription": "Data contains formatted manifest details including name, description, UUID, version, and dependencies"
+    }
+  ]
+}

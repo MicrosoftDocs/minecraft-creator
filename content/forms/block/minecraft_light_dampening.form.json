@@ -1,4 +1,26 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "dampens light by "
+          },
+          {
+            "type": "value",
+            "field": "integer"
+          },
+          {
+            "type": "literal",
+            "text": " levels"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "The amount that light will be dampened when it passes through the block, in a range of 0-15. Higher value means the light will be dampened more. A value of 15 means fully opaque (like stone), while 0 means fully transparent (like glass). Leaves use 1, water uses 2.",
   "fields": [],
   "scalarField": {
     "id": "integer",

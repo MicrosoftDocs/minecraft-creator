@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines use modifiers component"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:use_modifiers",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

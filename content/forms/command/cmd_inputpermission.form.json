@@ -1,0 +1,94 @@
+{
+  "id": "cmd_inputpermission",
+  "title": "inputpermission",
+  "description": "Optionally enables or disables input permissions for a player.",
+  "fields": [
+    {
+      "id": "option",
+      "title": "option",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "OPTION_SET"
+    },
+    {
+      "id": "targets",
+      "title": "targets",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "permission",
+      "title": "permission",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "PERMISSION"
+    },
+    {
+      "id": "state",
+      "title": "state",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "STATE"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Set input permission",
+      "description": "Sets the input permission for the selection to a state.",
+      "params": [
+        {
+          "name": "option",
+          "type": "OPTION_SET",
+          "isOptional": false
+        },
+        {
+          "name": "targets",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "permission",
+          "type": "PERMISSION",
+          "isOptional": false
+        },
+        {
+          "name": "state",
+          "type": "STATE",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Query input permission",
+      "description": "Retrieves the permissions of entities that match the selection.",
+      "params": [
+        {
+          "name": "option",
+          "type": "OPTION_QUERY",
+          "isOptional": false
+        },
+        {
+          "name": "targets",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "permission",
+          "type": "PERMISSION",
+          "isOptional": false
+        },
+        {
+          "name": "state",
+          "type": "STATE",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

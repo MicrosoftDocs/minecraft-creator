@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines trade configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Trade",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -324,5 +337,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Defines trade configuration."
 }

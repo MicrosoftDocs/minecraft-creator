@@ -112,6 +112,7 @@ Entity is a baby
 - `minecraft:as_baby_jockey`
 - `minecraft:as_ranged_adult`
 - `minecraft:as_ranged_baby`
+- `minecraft:as_ranged_baby_jockey`
 - `minecraft:as_rider`
 - `minecraft:ate_allium`
 Entity responds to eating an allium flower
@@ -389,6 +390,7 @@ Mule is not wearing a saddle
 - `minecraft:no_threat_detected`
 - `minecraft:on_anger`
 Entity is angered
+- `minecraft:on_armor_equip`
 - `minecraft:on_calm`
 Entity is calmed
 - `minecraft:on_chest`
@@ -548,10 +550,12 @@ Entity spawns as a librarian
 Entity spawns as a midnight cat
 - `minecraft:spawn_skilled_adult`
 Entity spawns as a skilled adult
+- `minecraft:spawn_tame`
 - `minecraft:spawn_tame_adult`
 - `minecraft:spawn_tame_baby`
 - `minecraft:spawn_temperate`
 - `minecraft:spawn_warm`
+- `minecraft:spawn_wild`
 - `minecraft:spawn_wild_adult`
 - `minecraft:spawn_wild_ashen`
 - `minecraft:spawn_wild_baby`
@@ -577,7 +581,6 @@ Entity spawns with a vindicator rider
 Entity springs a trap
 - `minecraft:start_celebrating`
 Entity starts celebrating
-- `minecraft:start_charge`
 - `minecraft:start_death`
 Entity starts dying
 - `minecraft:start_despawn`
@@ -610,7 +613,6 @@ Entity starts transforming
 Entity stops being aggravated
 - `minecraft:stop_celebrating`
 Entity stops celebrating
-- `minecraft:stop_charge`
 - `minecraft:stop_exploding`
 Entity stops exploding
 - `minecraft:stop_johnny`

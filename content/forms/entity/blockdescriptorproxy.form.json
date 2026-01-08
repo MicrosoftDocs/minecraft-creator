@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "describes a block type"
+          }
+        ]
+      }
+    ]
+  },
   "id": "BlockDescriptorProxy",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -34,5 +47,6 @@
         "defaultValue": ""
       }
     ]
-  }
+  },
+  "description": "References a specific block type for entity components that interact with blocks. Used by behaviors like dig, place, or break blocks to specify which blocks the entity targets. Can match by block identifier or by block state properties for precise block selection."
 }

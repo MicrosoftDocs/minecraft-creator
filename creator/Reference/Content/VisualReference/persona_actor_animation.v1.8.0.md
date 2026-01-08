@@ -3,14 +3,17 @@ author: mammerla
 ms.author: mikeam
 title: "Visuals Documentation - minecraft:persona_actor_animation.v1.8.0"
 description: "Describes the minecraft:persona_actor_animation.v1.8.0 visual element"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Visuals Documentation - minecraft:persona_actor_animation.v1.8.0
 
+Defines a persona actor animation document with format_version 1.8.0.
 
-## Persona Actor Animation Properties
+
+## Persona Actor Animation (v1.8.0) Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

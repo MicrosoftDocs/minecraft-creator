@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns value of the associated block's block state"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.block_state",
   "fields": [],
   "description": "Returns the value of the associated block's block state.",

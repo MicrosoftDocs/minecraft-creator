@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:rideable"
 description: "Describes the minecraft:rideable entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -28,7 +29,8 @@ This entity can be ridden.
 | pull_in_entities | false | Boolean true/false | If true, this entity will pull entities matching the specified "family_types" into any available seats. Entities that are leashed will only be pulled in if their distance to their leash holder is less than the "hard_distance" defined in their own "minecraft:leashable" component. | Camel: `true` | 
 | rider_can_interact | false | Boolean true/false | If true, this entity will be picked when looked at by the rider. |  | 
 | seat_count | 1 | Integer number | The number of entities that can ride this entity at the same time. | Camel: `2`, Cat: `1`, Happy Ghast: `4` | 
-| seats | *not set* | Array of [Seats](#seats) items | The list of positions and number of riders for each position for entities riding this entity. | Camel: `[{"min_rider_count":0,"max_rider_count":2,"position":[0,1.905,0.5]},{"min_rider_count":1,"max_rider_count":2,"position":[0,1.905,-0.5]}]` | 
+| seats | *not set* | Array of [Seats](#seats) items | The list of positions and number of riders for each position for entities riding this entity. | Camel: `[{"min_rider_count":0,"max_rider_count":2,"position":[0,1.905,0.5]},{"min_rider_count":1,"max_rider_count":2,"position":[0,1.905,-0.5]}]`, Cat: `{"position":[0,0.35,0]}`, Chicken: `{"position":[0,0.48,0]}` | 
+| seats (Alternate 1) | *not set* | Object |  |  | 
 | pulls_in_entities | *not set* | Boolean true/false |  |  | 
 
 ### Dismount Mode choices
@@ -39,19 +41,14 @@ This entity can be ridden.
 | on_top_center | On Top Center | |
 
 ## Seats
-The list of positions and number of riders for each position for entities riding this entity.
-
 
 #### Seats Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | camera_relax_distance_smoothing | *not set* | String |  |  | 
-| lock_rider_rotation | 181 | Decimal number | Angle in degrees that a rider is allowed to rotate while riding this entity. Omit this property for no limit. |  | 
-| max_rider_count | 0 | Integer number | Defines the maximum number of riders that can be riding this entity for this seat to be valid. |  | 
-| min_rider_count | 0 | Integer number | Defines the minimum number of riders that need to be riding this entity before this seat can be used. |  | 
-| position | [0, 0, 0] | x, y, z coordinate array | Position of this seat relative to this entity's position. |  | 
-| rotate_rider_by | 0 | String | Offset to rotate riders by. |  | 
+| lock_rider_rotation | 0 | Molang | Angle in degrees to rotate the rider by. Can be a number or a Molang expression. |  | 
+| rotate_rider_by | 0 | Molang | Offset to rotate riders by. Can be a number or a Molang expression. |  | 
 | third_person_camera_radius | *not set* | String |  |  | 
 
 ## Samples

@@ -1,0 +1,88 @@
+{
+  "id": "cmd_give",
+  "title": "give",
+  "description": "Gives an item to a player.",
+  "fields": [
+    {
+      "id": "player",
+      "title": "player",
+      "type": "string",
+      "isOptional": false,
+      "description": "A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "itemname",
+      "title": "itemName",
+      "type": "string",
+      "isOptional": false,
+      "description": "An `enum` of the type of item to give.",
+      "subFormId": "type_item",
+      "commandType": "ITEM"
+    },
+    {
+      "id": "amount",
+      "title": "amount",
+      "type": "string",
+      "isOptional": true,
+      "description": "Amount to give to player. Default: `1`.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "data",
+      "title": "data",
+      "type": "string",
+      "isOptional": true,
+      "description": "Optional. Fireworks related `data` required to give a firework type item.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "components",
+      "title": "components",
+      "type": "string",
+      "isOptional": true,
+      "description": "Optional. Specify if the item has components to call required component events.",
+      "subFormId": "type_json_object",
+      "commandType": "JSON_OBJECT"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Give item to target",
+      "description": "Give a set of players selected via a target selector an item.",
+      "params": [
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "itemname",
+          "type": "ITEM",
+          "isOptional": false
+        },
+        {
+          "name": "amount",
+          "type": "INT",
+          "isOptional": true
+        },
+        {
+          "name": "data",
+          "type": "INT",
+          "isOptional": true
+        },
+        {
+          "name": "components",
+          "type": "JSON_OBJECT",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

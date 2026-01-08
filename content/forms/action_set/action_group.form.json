@@ -1,6 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "group",
   "title": "Action Group",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "groups multiple actions together"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "id",
@@ -32,5 +45,6 @@
       "title": "Actions",
       "dataType": 15
     }
-  ]
+  ],
+  "description": "Groups multiple actions together to be executed as a sequence. Action groups enable complex multi-step behaviors by chaining actions like entity spawns, block modifications, and effects into a single reusable unit."
 }

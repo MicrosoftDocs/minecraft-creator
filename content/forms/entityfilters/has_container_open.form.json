@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if the player has a container open"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "conditional",
     "entityevent"

@@ -1,10 +1,44 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "family",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "belongs to type families: "
+          },
+          {
+            "type": "value",
+            "field": "family"
+          }
+        ]
+      },
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "belongs to one or more type families"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "minecraft:type_family",
+  "description": "Defines the family categories this entity belongs to. Type families are used by filters and other game systems to group entities (e.g., 'mob', 'monster', 'undead', 'zombie').",
   "fields": [
     {
       "id": "family",
       "title": "Type Family (Tag)",
       "description": "A set of tags that describe the categories of this entity. In addition to typically having a tag for the type of mob, entities frequently have additional type family tags that modify how the rest of the Minecraft world reacts to them.",
-      "minLength": 2,
+      "dataType": 17,
+      "mustMatchChoices": false,
       "choices": [
         {
           "id": "mob"

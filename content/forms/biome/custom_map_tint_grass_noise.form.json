@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses noise-based grass tinting on maps"
+          }
+        ]
+      }
+    ]
+  },
   "id": "custom_map_tint_grass_noise",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

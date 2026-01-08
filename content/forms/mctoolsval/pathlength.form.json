@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates file path length and format compatibility"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "pathlength",
+  "title": "Path Length",
+  "description": "Validates file paths for length and format compatibility across platforms. Long paths can cause issues on some operating systems and storage systems.",
+  "fields": [
+    {
+      "id": "102",
+      "title": "Deep Nesting",
+      "messageType": 1,
+      "dataType": 6,
+      "description": "Warning when a file path has more than 8 nested folder levels. Very deep folder structures can cause compatibility issues on some systems.",
+      "howToUse": "Flatten your folder structure by removing unnecessary subfolders. Move files closer to the pack root while keeping logical organization.",
+      "technicalDescription": "Data contains the depth count (number of directory segments)"
+    },
+    {
+      "id": "103",
+      "title": "Path Too Long",
+      "messageType": 2,
+      "dataType": 6,
+      "description": "Error when a file's full path exceeds platform limits (typically 255 characters). Shorten folder and file names to ensure compatibility.",
+      "howToUse": "Shorten folder and file names to keep the total path under 255 characters. Use abbreviations where possible and avoid deeply nested structures.",
+      "technicalDescription": "Data contains the path length in characters"
+    },
+    {
+      "id": "104",
+      "title": "Mixed Case Path",
+      "messageType": 3,
+      "dataType": 2,
+      "description": "Recommendation to use only lowercase letters in file and folder names. Mixed case can cause issues on case-sensitive file systems.",
+      "howToUse": "Rename files and folders to use only lowercase letters. This prevents issues on case-sensitive systems like Linux. Example: 'MyTexture.png' → 'mytexture.png'",
+      "technicalDescription": "Data contains the path with mixed case characters"
+    }
+  ]
+}

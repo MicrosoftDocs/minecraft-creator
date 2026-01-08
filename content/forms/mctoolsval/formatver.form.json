@@ -1,0 +1,631 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates format_version fields across JSON definition files"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "formatver",
+  "title": "Format Version",
+  "description": "Validates format_version fields across various Minecraft JSON definition files including block types, item types, recipes, animations, and animation controllers. Compares versions against the current Minecraft version and can update them to the latest.",
+  "technicalDescription": "Topic IDs follow a pattern where each file type has a base offset. Within each offset: +0 = undefined, +2 = major low, +4 = major high, +6 = minor low, +8 = minor high, +10 = patch low, +12 = patch high. Topic IDs 600+ report format version info (info type) as 600 + ProjectItemType.",
+  "fields": [
+    {
+      "id": "100",
+      "title": "Format Undefined",
+      "description": "Checks that a format_version field is defined in the JSON definition file.",
+      "messageType": "error",
+      "dataType": 2
+    },
+    {
+      "id": "110",
+      "title": "Block Major Low",
+      "description": "The block type format_version major version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "112",
+      "title": "Block Major High",
+      "description": "The block type format_version major version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "114",
+      "title": "Block Minor Low",
+      "description": "The block type format_version minor version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "116",
+      "title": "Block Minor High",
+      "description": "The block type format_version minor version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "118",
+      "title": "Block Patch Low",
+      "description": "The block type format_version patch version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "120",
+      "title": "Block Patch High",
+      "description": "The block type format_version patch version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "130",
+      "title": "Item Major Low",
+      "description": "The item type format_version major version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "132",
+      "title": "Item Major High",
+      "description": "The item type format_version major version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "134",
+      "title": "Item Minor Low",
+      "description": "The item type format_version minor version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "136",
+      "title": "Item Minor High",
+      "description": "The item type format_version minor version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "138",
+      "title": "Item Patch Low",
+      "description": "The item type format_version patch version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "140",
+      "title": "Item Patch High",
+      "description": "The item type format_version patch version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "150",
+      "title": "Recipe Major Low",
+      "description": "The recipe format_version major version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "152",
+      "title": "Recipe Major High",
+      "description": "The recipe format_version major version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "154",
+      "title": "Recipe Minor Low",
+      "description": "The recipe format_version minor version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "156",
+      "title": "Recipe Minor High",
+      "description": "The recipe format_version minor version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "158",
+      "title": "Recipe Patch Low",
+      "description": "The recipe format_version patch version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "160",
+      "title": "Recipe Patch High",
+      "description": "The recipe format_version patch version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "170",
+      "title": "BP Anim Major Low",
+      "description": "The behavior pack animation format_version major version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "172",
+      "title": "BP Anim Major High",
+      "description": "The behavior pack animation format_version major version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "174",
+      "title": "BP Anim Minor Low",
+      "description": "The behavior pack animation format_version minor version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "176",
+      "title": "BP Anim Minor High",
+      "description": "The behavior pack animation format_version minor version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "178",
+      "title": "BP Anim Patch Low",
+      "description": "The behavior pack animation format_version patch version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "180",
+      "title": "BP Anim Patch High",
+      "description": "The behavior pack animation format_version patch version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "190",
+      "title": "BP AnimCtrl Major Low",
+      "description": "The behavior pack animation controller format_version major version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "192",
+      "title": "BP AnimCtrl Major High",
+      "description": "The behavior pack animation controller format_version major version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "194",
+      "title": "BP AnimCtrl Minor Low",
+      "description": "The behavior pack animation controller format_version minor version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "196",
+      "title": "BP AnimCtrl Minor High",
+      "description": "The behavior pack animation controller format_version minor version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "198",
+      "title": "BP AnimCtrl Patch Low",
+      "description": "The behavior pack animation controller format_version patch version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "200",
+      "title": "BP AnimCtrl Patch High",
+      "description": "The behavior pack animation controller format_version patch version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "210",
+      "title": "RP Anim Major Low",
+      "description": "The resource pack animation format_version major version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "212",
+      "title": "RP Anim Major High",
+      "description": "The resource pack animation format_version major version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "214",
+      "title": "RP Anim Minor Low",
+      "description": "The resource pack animation format_version minor version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "216",
+      "title": "RP Anim Minor High",
+      "description": "The resource pack animation format_version minor version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "218",
+      "title": "RP Anim Patch Low",
+      "description": "The resource pack animation format_version patch version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "220",
+      "title": "RP Anim Patch High",
+      "description": "The resource pack animation format_version patch version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "230",
+      "title": "RP AnimCtrl Major Low",
+      "description": "The resource pack animation controller format_version major version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "232",
+      "title": "RP AnimCtrl Major High",
+      "description": "The resource pack animation controller format_version major version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "234",
+      "title": "RP AnimCtrl Minor Low",
+      "description": "The resource pack animation controller format_version minor version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "236",
+      "title": "RP AnimCtrl Minor High",
+      "description": "The resource pack animation controller format_version minor version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "238",
+      "title": "RP AnimCtrl Patch Low",
+      "description": "The resource pack animation controller format_version patch version is lower than the current Minecraft version.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "240",
+      "title": "RP AnimCtrl Patch High",
+      "description": "The resource pack animation controller format_version patch version is higher than the current Minecraft version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "FORMATVER",
+          "updaterIndex": 1,
+          "action": "Set format_versions to latest version."
+        }
+      ]
+    },
+    {
+      "id": "500",
+      "title": "Version Retrieval Failed",
+      "description": "Internal error: Could not retrieve the latest Minecraft version from the database.",
+      "messageType": "error",
+      "dataType": 2
+    },
+    {
+      "id": "501",
+      "title": "Version Parse Failed",
+      "description": "Internal error: Could not parse a version string into version components.",
+      "messageType": "error",
+      "dataType": 2,
+      "technicalDescription": "Data field contains the version string that failed to parse."
+    }
+  ]
+}

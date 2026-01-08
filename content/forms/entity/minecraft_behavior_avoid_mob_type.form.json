@@ -1,4 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "runs away from specific mob types"
+          }
+        ]
+      }
+    ]
+  },
+  "note": "This behavior defines which entities cause this mob to flee. Use entity_types filters to specify which mobs to avoid, with optional speed multipliers for walking and sprinting away.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.avoid_mob_type",

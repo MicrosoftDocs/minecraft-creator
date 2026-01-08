@@ -1,106 +1,53 @@
 {
-  "fields": [
-    {
-      "id": "pools",
-      "description": "A set of loot table outcomes.",
-      "dataType": 15,
-      "defaultValue": false,
-      "newItemPrototype": {
-        "pool": 1,
-        "entries": []
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "LootTable",
+  "title": "Loot Table",
+  "description": "Defines the loot that can be generated when an entity is killed, a chest is opened, fishing is performed, or other gameplay events occur. Loot tables consist of one or more pools, each containing entries with items or references to other loot tables.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines loot drops and rewards" }
+        ]
       },
-      "noun": "Pool",
-      "subForm": {
-        "fields": [
+      {
+        "visibility": [{ "field": "pools", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "contains " },
+          { "type": "value", "field": "pools.length" },
           {
-            "id": "rolls",
-            "description": "How many times the pool will be rolled to select an entry.",
-            "dataType": 0
-          },
+            "type": "plural",
+            "countField": "pools.length",
+            "singular": [{ "type": "literal", "text": " loot pool" }],
+            "plural": [{ "type": "literal", "text": " loot pools" }],
+            "includeCount": false
+          }
+        ]
+      },
+      {
+        "visibility": [{ "field": "pools[0].rolls", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "first pool rolls " },
+          { "type": "value", "field": "pools[0].rolls" },
           {
-            "id": "conditions",
-            "dataType": 15,
-            "defaultValue": false,
-            "newItemPrototype": {
-              "condition": "random_difficulty_change",
-              "default_chance": 0.5,
-              "peaceful": 0,
-              "hard": 6
-            },
-            "noun": "Condition",
-            "subForm": {
-              "fields": [
-                {
-                  "id": "default_chance",
-                  "description": "Default percent chance.",
-                  "dataType": 3
-                },
-                {
-                  "id": "peaceful",
-                  "description": "Percent chance under peaceful mode.",
-                  "dataType": 3
-                },
-                {
-                  "id": "hard",
-                  "description": "Percent chance under hard mode.",
-                  "dataType": 3
-                },
-                {
-                  "id": "condition",
-                  "description": "How this condition is evaluated.",
-                  "dataType": 5,
-                  "choices": [
-                    {
-                      "id": "random_difficulty_chance",
-                      "title": "Random Difficulty Chance"
-                    },
-                    {
-                      "id": "default_chance",
-                      "title": "Default Chance"
-                    }
-                  ]
-                }
-              ]
-            },
-            "description": "Conditions for this item to be considered."
-          },
-          {
-            "id": "entries",
-            "dataType": 15,
-            "defaultValue": false,
-            "newItemPrototype": {
-              "id": "newfield",
-              "dataType": 2
-            },
-            "description": "The sub-items within this form.",
-            "noun": "Choice",
-            "subForm": {
-              "fields": [
-                {
-                  "id": "name",
-                  "description": "Item in the loot table.",
-                  "dataType": 2
-                },
-                {
-                  "id": "type",
-                  "description": "Type of choice.",
-                  "dataType": 5,
-                  "choices": [
-                    {
-                      "id": "item",
-                      "title": "Item"
-                    },
-                    {
-                      "id": "loot_table",
-                      "title": "Loot Table"
-                    }
-                  ]
-                }
-              ]
-            }
+            "type": "plural",
+            "countField": "pools[0].rolls",
+            "singular": [{ "type": "literal", "text": " time" }],
+            "plural": [{ "type": "literal", "text": " times" }],
+            "includeCount": false
           }
         ]
       }
+    ]
+  },
+  "fields": [
+    {
+      "id": "pools",
+      "title": "Pools",
+      "description": "A list of loot pools. Each pool is rolled independently to select entries.",
+      "dataType": 15,
+      "noun": "Pool",
+      "subFormId": "loot/loot_pool"
     }
   ]
 }

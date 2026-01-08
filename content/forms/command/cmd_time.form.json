@@ -1,0 +1,102 @@
+{
+  "id": "cmd_time",
+  "title": "time",
+  "description": "Changes or queries the world's game time. See more in the [Popular Commands documentation](https://learn.microsoft.com/minecraft/creator/documents/commandspopularcommands#time).",
+  "fields": [
+    {
+      "id": "mode",
+      "title": "mode",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "TIMEMODEADD"
+    },
+    {
+      "id": "amount",
+      "title": "amount",
+      "type": "string",
+      "isOptional": false,
+      "description": "An `integer` of the time to add or set. Default: `0`.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "time",
+      "title": "time",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "TIMESPEC"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Add time, integer",
+      "description": "`Add` an `integer` `amount` of `time` in-game.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "TIMEMODEADD",
+          "isOptional": false
+        },
+        {
+          "name": "amount",
+          "type": "INT",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Set time, integer",
+      "description": "`Set` an `integer` `amount` of `time` in-game.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "TIMEMODESET",
+          "isOptional": false
+        },
+        {
+          "name": "amount",
+          "type": "INT",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Set time spec",
+      "description": "`Set` a `time spec` `time` in-game.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "TIMEMODESET",
+          "isOptional": false
+        },
+        {
+          "name": "time",
+          "type": "TIMESPEC",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Query time",
+      "description": "`Query` a `time` in `time query`.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "TIMEMODEQUERY",
+          "isOptional": false
+        },
+        {
+          "name": "time",
+          "type": "TIMEQUERY",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

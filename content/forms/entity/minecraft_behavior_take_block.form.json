@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "takes blocks from the world"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.take_block",
   "fields": [],
   "generated_doNotEdit": {
@@ -217,5 +230,6 @@
         }
       ]
     }
-  }
+  },
+  "description": "AI goal that makes entities pick up blocks from the world, like Endermen grabbing blocks to carry. Configure which blocks the entity can take and the search radius. Works with place_block behavior to create entities that relocate blocks or harvest materials from the environment."
 }

@@ -1,4 +1,107 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "navigates by walking on land"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "avoid_water",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "avoids walking through water"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "avoid_damage_blocks",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "avoids damaging blocks like lava and cacti"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "can_break_doors",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can break through doors to reach targets"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "can_open_doors",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can open doors to navigate through buildings"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "can_swim",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can swim through water"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "can_breach",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can jump out of water like a dolphin"
+          }
+        ]
+      }
+    ]
+  },
   "title": "Walk navigation",
   "description": "Walking style of the mob",
   "fields": [
@@ -10,7 +113,32 @@
     {
       "id": "blocks_to_avoid",
       "title": "Tells the pathfinder which blocks to avoid when creating a path.",
-      "dataType": 1
+      "description": "List of block descriptors that the pathfinder should avoid. Items can be block identifier strings or objects with name/tags properties.",
+      "dataType": 17,
+      "alternates": [
+        {
+          "id": "blocks_to_avoid",
+          "dataType": 15,
+          "subForm": {
+            "id": "block_to_avoid",
+            "title": "Block to Avoid",
+            "fields": [
+              {
+                "id": "tags",
+                "title": "Tags",
+                "description": "Molang expression to match block tags, e.g. query.any_tag('trapdoors')",
+                "dataType": 34
+              },
+              {
+                "id": "name",
+                "title": "Name",
+                "description": "Block identifier to avoid.",
+                "dataType": 2
+              }
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "can_breach",

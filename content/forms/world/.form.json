@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Rules used by Jigsaw Structures to determine which blocks to modify or replace when placing a Structure Template in the world.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "pairs block rules with Structure Templates and randomly places Structure Templates using a weighted list"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Used to pair block rules with Structure Templates and to randomly place Structure Templates using a weighted list.",
@@ -28,5 +41,6 @@
         "defaultValue": "minecraft:empty"
       }
     ]
-  }
+  },
+  "description": "Pairs block rules with Structure Templates and randomly places Structure Templates using a weighted list."
 }

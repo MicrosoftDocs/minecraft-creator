@@ -1,0 +1,272 @@
+{
+  "id": "cmd_tickingarea",
+  "title": "tickingarea",
+  "description": "Add, remove, or list ticking areas. See more information in the [Ticking Area documentation](https://learn.microsoft.com/minecraft/creator/documents/tickingareacommand).",
+  "fields": [
+    {
+      "id": "mode",
+      "title": "mode",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "TICKINGAREAMODEADD"
+    },
+    {
+      "id": "from",
+      "title": "from",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `vector` [x y z] that along with `to` of two opposite corners of a rectangular region to test for.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "to",
+      "title": "to",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `vector` [x y z] that along with `from` of two opposite corners of a rectangular region to test for.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "name",
+      "title": "name",
+      "type": "string",
+      "isOptional": true,
+      "description": "An optional `string` to specify the name of a ticking area.",
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "preload",
+      "title": "preload",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `Boolean` that queries the preload value. Default: `false`.",
+      "subFormId": "type_boolean",
+      "commandType": "BOOLEAN"
+    },
+    {
+      "id": "circle",
+      "title": "circle",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "ADDTICKINGAREATYPE"
+    },
+    {
+      "id": "center",
+      "title": "center",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `vector` [x y z] that specifies the center of a defined loaded area.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "radius",
+      "title": "radius",
+      "type": "string",
+      "isOptional": false,
+      "description": "An `integer` that specifies the area as the number of chunks loaded in. Between 0 and 4.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "position",
+      "title": "position",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `vector` [x y z] of a point within the ticking area.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "all-dimensions",
+      "title": "all-dimensions",
+      "type": "string",
+      "isOptional": true,
+      "description": "Specify `all-dimensions` to determine whether ticking areas in other dimensions are listed.",
+      "commandType": "ALLDIMENSIONS"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Add ticking area, rectangle",
+      "description": "`Add` a `ticking area` `from` one vector `to` another with an optional `name` and `preload` value.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "TICKINGAREAMODEADD",
+          "isOptional": false
+        },
+        {
+          "name": "from",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "to",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "name",
+          "type": "ID",
+          "isOptional": true
+        },
+        {
+          "name": "preload",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Add ticking area, circle",
+      "description": "`Add` a `circle` `ticking area` with a vector `center` and `radius`, as well as an optional `preload`.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "TICKINGAREAMODEADD",
+          "isOptional": false
+        },
+        {
+          "name": "circle",
+          "type": "ADDTICKINGAREATYPE",
+          "isOptional": false
+        },
+        {
+          "name": "center",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "radius",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "name",
+          "type": "ID",
+          "isOptional": true
+        },
+        {
+          "name": "preload",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Remove ticking area, vector",
+      "description": "`Remove` a `ticking area` from a vector `position`.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "TICKINGAREAMODEREMOVE",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Remove ticking area, named",
+      "description": "`Remove` a `ticking area` with a given `name`.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "TICKINGAREAMODEREMOVE",
+          "isOptional": false
+        },
+        {
+          "name": "name",
+          "type": "ID",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Remove all ticking areas",
+      "description": "`Remove` all `ticking areas`.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "TICKINGAREAMODEREMOVEALL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "List all ticking areas",
+      "description": "`List` all `ticking areas` with optional `all dimensions`.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "TICKINGAREAMODELIST",
+          "isOptional": false
+        },
+        {
+          "name": "all-dimensions",
+          "type": "ALLDIMENSIONS",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Preload ticking area, position",
+      "description": "`Preload` a `ticking area` of `position` vector with optional `preload`.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "TICKINGAREAMODEPRELOAD",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "preload",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Preload ticking area, named",
+      "description": "`Preload` a `ticking area` of `name` with optional `preload`.",
+      "params": [
+        {
+          "name": "mode",
+          "type": "TICKINGAREAMODEPRELOAD",
+          "isOptional": false
+        },
+        {
+          "name": "name",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "preload",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

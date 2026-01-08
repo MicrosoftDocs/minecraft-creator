@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Molang Query Functions Documentation - Molang Query Functions"
 description: "A reference document describing all current Molang Query Functions"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

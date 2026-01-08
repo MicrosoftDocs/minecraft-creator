@@ -1,0 +1,23 @@
+{
+  "id": "type_slotid",
+  "title": "Slot Number",
+  "description": "Numeric slot index within a slot type.",
+  "fields": [],
+  "formatHint": "0-26 for inventory, 0-8 for hotbar",
+  "samples": {
+    "values": [
+      {
+        "path": "First slot in the container",
+        "content": "0"
+      },
+      {
+        "path": "Last hotbar slot",
+        "content": "8"
+      },
+      {
+        "path": "Last inventory slot",
+        "content": "26"
+      }
+    ]
+  }
+}

@@ -1,4 +1,79 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "shoots "
+          },
+          {
+            "type": "exists",
+            "field": "def",
+            "tokens": [
+              {
+                "type": "value",
+                "field": "def"
+              }
+            ],
+            "elseTokens": [
+              {
+                "type": "literal",
+                "text": "projectiles"
+              }
+            ]
+          },
+          {
+            "type": "literal",
+            "text": " for ranged attacks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "magic",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses magic projectiles"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "aux_val",
+            "comparison": "defined"
+          },
+          {
+            "field": "aux_val",
+            "comparison": ">=",
+            "value": 0
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "applies potion effect "
+          },
+          {
+            "type": "value",
+            "field": "aux_val"
+          },
+          {
+            "type": "literal",
+            "text": " on hit"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "sound",

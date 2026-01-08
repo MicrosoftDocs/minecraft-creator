@@ -39,9 +39,17 @@ Unique identifier for the dialog
 
 Type: *string*
 
+### **title**
+`read-only title: LocalizedString | undefined;`
+
+Title of the dialog
+
+Type: *LocalizedString* | *undefined*
+
 ## Methods
 - [sendDismiss](#senddismiss)
 - [sendResponse](#sendresponse)
+- [setTitle](#settitle)
 
 ### **sendDismiss**
 `
@@ -63,5 +71,19 @@ Dispatches a response message to the active request if it is available
 - **response**: *ModalDialogCustomResponse*
   
   Response message to be handled by the active request
+
+**Returns** *void*
+
+### **setTitle**
+`
+setTitle(title: LocalizedString | undefined): void
+`
+
+Updates the title of the modal dialog
+
+#### **Parameters**
+- **title**: *LocalizedString* | *undefined*
+  
+  New title
 
 **Returns** *void*

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines swamp component"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:swamp",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

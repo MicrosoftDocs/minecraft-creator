@@ -1,5 +1,36 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "controls particle collision behavior and events"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "events",
+      "dataType": 15,
+      "subForm": {
+        "id": "collision_event",
+        "fields": [
+          {
+            "id": "event",
+            "dataType": 2
+          },
+          {
+            "id": "min_speed",
+            "dataType": 3
+          }
+        ]
+      }
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "particle_motion_collision",
     "title": "Client Particles Particle Motion Collision",
@@ -99,5 +130,6 @@
         "defaultValue": false
       }
     ]
-  }
+  },
+  "description": "Enables particle collision with world geometry. Configure collision radius, bounce coefficient (how much velocity is retained), friction to slow sliding, and whether to expire on impact. Essential for physical particles like rain hitting ground, debris bouncing off surfaces, or arrows embedding in blocks."
 }

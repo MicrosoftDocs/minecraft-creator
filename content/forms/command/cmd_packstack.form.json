@@ -1,0 +1,54 @@
+{
+  "id": "cmd_packstack",
+  "title": "packstack",
+  "description": "Prints client or server pack stack to chat",
+  "fields": [
+    {
+      "id": "stacktype",
+      "title": "stackType",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "STACKTYPE"
+    },
+    {
+      "id": "verbose",
+      "title": "verbose",
+      "type": "string",
+      "isOptional": true,
+      "commandType": "VERBOSE"
+    },
+    {
+      "id": "exclude-vanilla",
+      "title": "exclude-vanilla",
+      "type": "string",
+      "isOptional": true,
+      "commandType": "EXCLUDE-VANILLA"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Overload 1",
+      "description": "",
+      "params": [
+        {
+          "name": "stacktype",
+          "type": "STACKTYPE",
+          "isOptional": false
+        },
+        {
+          "name": "verbose",
+          "type": "VERBOSE",
+          "isOptional": true
+        },
+        {
+          "name": "exclude-vanilla",
+          "type": "EXCLUDE-VANILLA",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 0,
+  "requiresCheats": false
+}

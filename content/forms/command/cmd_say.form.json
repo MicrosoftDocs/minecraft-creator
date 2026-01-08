@@ -1,0 +1,32 @@
+{
+  "id": "cmd_say",
+  "title": "say",
+  "description": "Sends a message in the chat to other players.",
+  "fields": [
+    {
+      "id": "message",
+      "title": "message",
+      "type": "string",
+      "isOptional": false,
+      "description": "Plain text that can include spaces and selectors.",
+      "subFormId": "type_message_root",
+      "commandType": "MESSAGE_ROOT"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Say",
+      "description": "Send a `message`.",
+      "params": [
+        {
+          "name": "message",
+          "type": "MESSAGE_ROOT",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": false
+}

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns max durability an item can take"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.max_durability",
   "fields": [],
   "generated_doNotEdit": {

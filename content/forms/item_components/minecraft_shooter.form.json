@@ -1,15 +1,39 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can shoot projectiles"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
+      "id": "ammunition",
+      "title": "Ammunition",
+      "description": "A list of ammunition entries that define which items can be used as projectiles for this shooter. Each entry specifies the item, whether to search the offhand, inventory, and whether to use in creative mode."
+    },
+    {
       "id": "scale_power_by_draw_duration",
+      "title": "Scale Power By Draw Duration",
+      "description": "When true, the projectile's launch power increases based on how long the player holds the use button before releasing. Default is false.",
       "isRequired": true
     },
     {
       "id": "max_draw_duration",
+      "title": "Max Draw Duration",
+      "description": "The maximum time in seconds that a player can draw the shooter before it automatically fires or reaches maximum power. Default is 0.",
       "isRequired": true
     },
     {
       "id": "charge_on_draw",
+      "title": "Charge On Draw",
+      "description": "When true, the shooter begins charging when the player starts drawing, similar to a crossbow. Default is false.",
       "isRequired": true
     }
   ],

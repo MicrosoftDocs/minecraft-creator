@@ -1,5 +1,181 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "prefers walking on certain block types for pathfinding"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "max_fall_blocks",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can safely fall up to "
+          },
+          {
+            "type": "value",
+            "field": "max_fall_blocks"
+          },
+          {
+            "type": "plural",
+            "countField": "max_fall_blocks",
+            "singular": [
+              {
+                "type": "literal",
+                "text": " block"
+              }
+            ],
+            "plural": [
+              {
+                "type": "literal",
+                "text": " blocks"
+              }
+            ],
+            "includeCount": false
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "jump_cost",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "jump_cost",
+                    "comparison": ">=",
+                    "value": 10
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "strongly avoids jumping (cost: "
+                  },
+                  {
+                    "type": "value",
+                    "field": "jump_cost"
+                  },
+                  {
+                    "type": "literal",
+                    "text": ")"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "jump_cost",
+                    "comparison": ">=",
+                    "value": 5
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "prefers not to jump (cost: "
+                  },
+                  {
+                    "type": "value",
+                    "field": "jump_cost"
+                  },
+                  {
+                    "type": "literal",
+                    "text": ")"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "has low jump cost ("
+              },
+              {
+                "type": "value",
+                "field": "jump_cost"
+              },
+              {
+                "type": "literal",
+                "text": ")"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "default_block_cost",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a default block cost of "
+          },
+          {
+            "type": "value",
+            "field": "default_block_cost"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "preferred_path_blocks",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has preferred block types defined for pathfinding"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "preferred_path_blocks",
+      "title": "Preferred Path Blocks",
+      "description": "A list of block types with their associated pathfinding costs. Each entry specifies blocks and their cost value.",
+      "dataType": 15,
+      "subForm": {
+        "fields": [
+          {
+            "id": "cost",
+            "dataType": 0,
+            "description": "The cost value for these blocks during pathfinding. Lower costs make paths more preferred."
+          },
+          {
+            "id": "blocks",
+            "dataType": 17,
+            "description": "Array of block identifiers that share this cost value."
+          }
+        ]
+      }
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:preferred_path",
     "title": "Preferred Path",

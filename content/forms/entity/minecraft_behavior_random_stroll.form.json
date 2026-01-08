@@ -1,4 +1,150 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "allows this entity to wander randomly when idle"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "xz_dist",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "wanders up to "
+          },
+          {
+            "type": "value",
+            "field": "xz_dist"
+          },
+          {
+            "type": "literal",
+            "text": " blocks horizontally"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "y_dist",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "and "
+          },
+          {
+            "type": "value",
+            "field": "y_dist"
+          },
+          {
+            "type": "literal",
+            "text": " blocks vertically"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "speed_multiplier",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "moves at "
+          },
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "speed_multiplier",
+                    "comparison": ">",
+                    "value": 1
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "fast"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "speed_multiplier",
+                    "comparison": "<",
+                    "value": 0.6
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "slow"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "normal"
+              }
+            ]
+          },
+          {
+            "type": "literal",
+            "text": " speed ("
+          },
+          {
+            "type": "value",
+            "field": "speed_multiplier"
+          },
+          {
+            "type": "literal",
+            "text": "x)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "interval",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has a 1/"
+          },
+          {
+            "type": "value",
+            "field": "interval"
+          },
+          {
+            "type": "literal",
+            "text": " chance per tick to start strolling"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.random_stroll",

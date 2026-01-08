@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "moves around randomly like a vex"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "note": "No longer used for the `vex` entity. Instead, `minecraft:navigation.walk` and `minecraft:behavior.float` allow the `vex` entity to navigate.",
   "generated_doNotEdit": {

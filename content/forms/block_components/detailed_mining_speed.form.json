@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines mining speed with item-specific overrides"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Detailed Mining Speed",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -21,5 +34,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines mining speed with item-specific overrides."
 }

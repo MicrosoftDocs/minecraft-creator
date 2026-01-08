@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is invisible (using render con..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_invisible",
   "fields": [],
   "description": "Returns 1.0 if the entity is invisible (using render controllers), else it returns 0.0. Applies typically to the spider, Enderman, and phantom.",

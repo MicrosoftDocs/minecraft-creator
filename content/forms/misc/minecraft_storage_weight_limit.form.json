@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies storage weight limit properties"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:storage_weight_limit",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

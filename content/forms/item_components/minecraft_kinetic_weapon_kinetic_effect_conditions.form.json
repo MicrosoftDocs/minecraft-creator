@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has kinetic effect speed and duration conditions"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:kinetic_weapon kinetic_effect_conditions",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

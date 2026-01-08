@@ -1,0 +1,303 @@
+{
+  "id": "cmd_replaceitem",
+  "title": "replaceitem",
+  "description": "Replaces items in inventories.",
+  "fields": [
+    {
+      "id": "block",
+      "title": "block",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "REPLACEITEMBLOCK"
+    },
+    {
+      "id": "position",
+      "title": "position",
+      "type": "string",
+      "isOptional": false,
+      "description": "`Vector` [x y z] of the position of the block to modify.",
+      "subFormId": "type_position",
+      "commandType": "POSITION"
+    },
+    {
+      "id": "slottype",
+      "title": "slotType",
+      "type": "string",
+      "isOptional": false,
+      "description": "Entity equipment slot",
+      "commandType": "BLOCKEQUIPMENTSLOT"
+    },
+    {
+      "id": "slotid",
+      "title": "slotId",
+      "type": "string",
+      "isOptional": false,
+      "description": "An `integer` that sets the slot to be modified. Default: `0`.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "itemname",
+      "title": "itemName",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies the item to be placed in the entity or block inventory slot.",
+      "subFormId": "type_item",
+      "commandType": "ITEM"
+    },
+    {
+      "id": "amount",
+      "title": "amount",
+      "type": "string",
+      "isOptional": true,
+      "description": "An `integer` to specify the number of items to place in inventory. Default: `1`.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "data",
+      "title": "data",
+      "type": "string",
+      "isOptional": true,
+      "description": "An `integer` that specifies the item data for the items in the inventory. Default: `0`.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "components",
+      "title": "components",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `JSON` object that supports `minecraft:can_place_on`, `minecraft:can_destroy`, `minecraft:item_lock`, and `minecraft:keep_on_death`. Default: `false`.",
+      "subFormId": "type_json_object",
+      "commandType": "JSON_OBJECT"
+    },
+    {
+      "id": "entity",
+      "title": "entity",
+      "type": "string",
+      "isOptional": false,
+      "description": "Entity equipment slot",
+      "commandType": "REPLACEITEMENTITY"
+    },
+    {
+      "id": "target",
+      "title": "target",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies the entity to modify, either a player name or a [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors).",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "olditemhandling",
+      "title": "oldItemHandling",
+      "type": "string",
+      "isOptional": false,
+      "description": "Either `destroy` to replace items in slot or `keep` to keep items instead of replacing them.",
+      "commandType": "REPLACEMODE"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Replace item",
+      "description": "Replace an `item` at a required `position` into the slot with type `slot id`, `item name`, `amount`, `data`, and `components`.",
+      "params": [
+        {
+          "name": "block",
+          "type": "REPLACEITEMBLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "slottype",
+          "type": "BLOCKEQUIPMENTSLOT",
+          "isOptional": false
+        },
+        {
+          "name": "slotid",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "itemname",
+          "type": "ITEM",
+          "isOptional": false
+        },
+        {
+          "name": "amount",
+          "type": "INT",
+          "isOptional": true
+        },
+        {
+          "name": "data",
+          "type": "INT",
+          "isOptional": true
+        },
+        {
+          "name": "components",
+          "type": "JSON_OBJECT",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Replace entity",
+      "description": "Replace item on an `entity` `target` into the slot with type `slot id` or `slot type`, `item name`,  with optional `amount`, `data`, and `components`.",
+      "params": [
+        {
+          "name": "entity",
+          "type": "REPLACEITEMENTITY",
+          "isOptional": false
+        },
+        {
+          "name": "target",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "slottype",
+          "type": "ENTITYEQUIPMENTSLOT",
+          "isOptional": false
+        },
+        {
+          "name": "slotid",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "itemname",
+          "type": "ITEM",
+          "isOptional": false
+        },
+        {
+          "name": "amount",
+          "type": "INT",
+          "isOptional": true
+        },
+        {
+          "name": "data",
+          "type": "INT",
+          "isOptional": true
+        },
+        {
+          "name": "components",
+          "type": "JSON_OBJECT",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Replace block, old item handling",
+      "description": "Replace `item` at a required `position` into the slot with type `slot id`, using old item handling to replace with an `item name`, `amount`, `data`, and `components`.",
+      "params": [
+        {
+          "name": "block",
+          "type": "REPLACEITEMBLOCK",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION",
+          "isOptional": false
+        },
+        {
+          "name": "slottype",
+          "type": "BLOCKEQUIPMENTSLOT",
+          "isOptional": false
+        },
+        {
+          "name": "slotid",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "olditemhandling",
+          "type": "REPLACEMODE",
+          "isOptional": false
+        },
+        {
+          "name": "itemname",
+          "type": "ITEM",
+          "isOptional": false
+        },
+        {
+          "name": "amount",
+          "type": "INT",
+          "isOptional": true
+        },
+        {
+          "name": "data",
+          "type": "INT",
+          "isOptional": true
+        },
+        {
+          "name": "components",
+          "type": "JSON_OBJECT",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Replace entity, old item handling",
+      "description": "Replace an `entity` with required `target`, into the slot with type `slot id` or `slot type`, `item name`, using `old item handling` to replace with optional `amount`, `data`, and `components`.",
+      "params": [
+        {
+          "name": "entity",
+          "type": "REPLACEITEMENTITY",
+          "isOptional": false
+        },
+        {
+          "name": "target",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "slottype",
+          "type": "ENTITYEQUIPMENTSLOT",
+          "isOptional": false
+        },
+        {
+          "name": "slotid",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "olditemhandling",
+          "type": "REPLACEMODE",
+          "isOptional": false
+        },
+        {
+          "name": "itemname",
+          "type": "ITEM",
+          "isOptional": false
+        },
+        {
+          "name": "amount",
+          "type": "INT",
+          "isOptional": true
+        },
+        {
+          "name": "data",
+          "type": "INT",
+          "isOptional": true
+        },
+        {
+          "name": "components",
+          "type": "JSON_OBJECT",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

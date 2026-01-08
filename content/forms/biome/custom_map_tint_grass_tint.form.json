@@ -1,4 +1,31 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "tint",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses custom grass tint "
+          },
+          {
+            "type": "value",
+            "field": "tint"
+          },
+          {
+            "type": "literal",
+            "text": " on maps"
+          }
+        ]
+      }
+    ]
+  },
   "id": "custom_map_tint_grass_tint",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

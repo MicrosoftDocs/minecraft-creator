@@ -1,4 +1,149 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "takes damage when certain conditions are met"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "damage_conditions",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has "
+          },
+          {
+            "type": "value",
+            "field": "damage_conditions.length"
+          },
+          {
+            "type": "plural",
+            "countField": "damage_conditions.length",
+            "singular": [
+              {
+                "type": "literal",
+                "text": " damage condition"
+              }
+            ],
+            "plural": [
+              {
+                "type": "literal",
+                "text": " damage conditions"
+              }
+            ],
+            "includeCount": false
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "damage_conditions[0].cause",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be hurt by "
+          },
+          {
+            "type": "value",
+            "field": "damage_conditions[0].cause"
+          },
+          {
+            "type": "literal",
+            "text": " damage"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "damage_conditions[0].damage_per_tick",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "damage_conditions[0].damage_per_tick",
+                    "comparison": ">=",
+                    "value": 4
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "takes heavy damage ("
+                  },
+                  {
+                    "type": "value",
+                    "field": "damage_conditions[0].damage_per_tick"
+                  },
+                  {
+                    "type": "literal",
+                    "text": " per tick)"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "damage_conditions[0].damage_per_tick",
+                    "comparison": ">=",
+                    "value": 2
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "takes moderate damage ("
+                  },
+                  {
+                    "type": "value",
+                    "field": "damage_conditions[0].damage_per_tick"
+                  },
+                  {
+                    "type": "literal",
+                    "text": " per tick)"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "takes light damage ("
+              },
+              {
+                "type": "value",
+                "field": "damage_conditions[0].damage_per_tick"
+              },
+              {
+                "type": "literal",
+                "text": " per tick)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:hurt_on_condition",
@@ -37,6 +182,21 @@
         },
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:hurt_on_condition/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "in_lava",
+                    "subject": "self"
+                  },
+                  "cause": "lava",
+                  "damage_per_tick": 4
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/armadillo.json": [
             {
               "path": "/minecraft:entity/components/minecraft:hurt_on_condition/",
               "content": [

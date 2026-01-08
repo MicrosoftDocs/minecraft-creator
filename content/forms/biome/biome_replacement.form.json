@@ -1,4 +1,45 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "dimension",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "replaces biomes in "
+          },
+          {
+            "type": "value",
+            "field": "dimension"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "amount",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "with amount "
+          },
+          {
+            "type": "value",
+            "field": "amount"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Biome Replacement",
@@ -14,6 +55,10 @@
           {
             "comparison": "<=",
             "value": 1
+          },
+          {
+            "comparison": ">",
+            "value": 0
           }
         ],
         "isRequired": true
@@ -34,6 +79,10 @@
           {
             "comparison": "<=",
             "value": 100
+          },
+          {
+            "comparison": ">",
+            "value": 0
           }
         ],
         "isRequired": true

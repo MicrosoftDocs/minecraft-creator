@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies a uniformly distributed integer"
+          }
+        ]
+      }
+    ]
+  },
   "id": "UniformIntProvider",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

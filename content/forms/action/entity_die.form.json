@@ -1,10 +1,24 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "entity_die",
   "title": "Entity Die",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "triggers when an entity dies"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "script",
     "trigger",
     "container"
   ],
-  "fields": []
+  "fields": [],
+  "description": "Immediately kills a target entity, triggering its death sequence including death animations, loot drops from loot tables, and any on_death events defined in the entity's behavior. The entity is removed from the world after processing."
 }

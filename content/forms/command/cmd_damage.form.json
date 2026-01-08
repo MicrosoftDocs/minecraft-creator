@@ -1,0 +1,107 @@
+{
+  "id": "cmd_damage",
+  "title": "damage",
+  "description": "Apply damage to the specified entities. See more in the [Damage Command documentation](https://learn.microsoft.com/minecraft/creator/documents/commandsdamageintroduction).",
+  "fields": [
+    {
+      "id": "target",
+      "title": "target",
+      "type": "string",
+      "isOptional": false,
+      "description": "Required. The target to damage. A player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors).",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "amount",
+      "title": "amount",
+      "type": "string",
+      "isOptional": false,
+      "description": "Required. Default `0`. An `integer` that specifies the amount of damage.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "cause",
+      "title": "cause",
+      "type": "string",
+      "isOptional": true,
+      "description": "Optional. Default `none`. An `enum` of the damage cause.",
+      "commandType": "DAMAGECAUSE"
+    },
+    {
+      "id": "origin",
+      "title": "origin",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "DAMAGEORIGINACTOR"
+    },
+    {
+      "id": "damager",
+      "title": "damager",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `selector` that specifies which entity will be treated as dealing the damage to the target. Should be one entity or player.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Damage with optional cause",
+      "description": "Damage a target with an amount of damage. Optionally include a cause.",
+      "params": [
+        {
+          "name": "target",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "amount",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "cause",
+          "type": "DAMAGECAUSE",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Damage with optional cause, entity, damager",
+      "description": "Damage a target with an amount of damage. Optionally include a cause, entity, and damager.",
+      "params": [
+        {
+          "name": "target",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "amount",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "cause",
+          "type": "DAMAGECAUSE",
+          "isOptional": false
+        },
+        {
+          "name": "origin",
+          "type": "DAMAGEORIGINACTOR",
+          "isOptional": false
+        },
+        {
+          "name": "damager",
+          "type": "SELECTION",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

@@ -1,5 +1,223 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "allows this entity to be tempted by players holding specific items"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "items",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is tempted by "
+          },
+          {
+            "type": "value",
+            "field": "items"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "within_radius",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "detects tempting items within "
+          },
+          {
+            "type": "value",
+            "field": "within_radius"
+          },
+          {
+            "type": "literal",
+            "text": " blocks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "speed_multiplier",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "follows at "
+          },
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "speed_multiplier",
+                    "comparison": ">",
+                    "value": 1.5
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "very fast"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "speed_multiplier",
+                    "comparison": ">",
+                    "value": 1
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "fast"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "speed_multiplier",
+                    "comparison": "<",
+                    "value": 1
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "slow"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "normal"
+              }
+            ]
+          },
+          {
+            "type": "literal",
+            "text": " speed ("
+          },
+          {
+            "type": "value",
+            "field": "speed_multiplier"
+          },
+          {
+            "type": "literal",
+            "text": "x)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "can_get_scared",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can get scared if the player moves too fast"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "can_tempt_vertically",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "considers vertical distance when detecting tempting items"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "sound_interval",
+      "title": "Sound Interval",
+      "description": "Range of random ticks to wait between tempt sounds. Can be a number, an array [min, max], or an object with range_min/range_max or min/max.",
+      "dataType": 0,
+      "alternates": [
+        {
+          "id": "sound_interval",
+          "dataType": 15,
+          "subForm": {
+            "fields": [
+              {
+                "id": "0",
+                "dataType": 0
+              },
+              {
+                "id": "1",
+                "dataType": 0
+              }
+            ]
+          }
+        },
+        {
+          "id": "sound_interval",
+          "dataType": 16,
+          "subForm": {
+            "fields": [
+              {
+                "id": "range_min",
+                "dataType": 0,
+                "description": "Minimum interval"
+              },
+              {
+                "id": "range_max",
+                "dataType": 0,
+                "description": "Maximum interval"
+              },
+              {
+                "id": "min",
+                "dataType": 0,
+                "description": "Minimum interval"
+              },
+              {
+                "id": "max",
+                "dataType": 0,
+                "description": "Maximum interval"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.tempt",
     "title": "Tempt Behavior",

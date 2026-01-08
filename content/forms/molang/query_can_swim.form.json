@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity can swim"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.can_swim",
   "fields": [],
   "generated_doNotEdit": {

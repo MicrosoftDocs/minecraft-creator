@@ -3,20 +3,21 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:type_family"
 description: "Describes the minecraft:type_family entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:type_family
 
-Defines the families this entity belongs to.
+Defines the family categories this entity belongs to. Type families are used by filters and other game systems to group entities (e.g., 'mob', 'monster', 'undead', 'zombie').
 
 
 ## Type Family Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| family | *not set* | [Family](#family-choices) choices | A set of tags that describe the categories of this entity. In addition to typically having a tag for the type of mob, entities frequently have additional type family tags that modify how the rest of the Minecraft world reacts to them. Value must have at least 2 items. | Allay: `["allay","mob"]`, Armadillo: `["armadillo","mob"]`, Armor Stand: `["armor_stand","inanimate","mob"]` | 
+| family | *not set* | [Family](#family-choices) choices | A set of tags that describe the categories of this entity. In addition to typically having a tag for the type of mob, entities frequently have additional type family tags that modify how the rest of the Minecraft world reacts to them. | Allay: `["allay","mob"]`, Armadillo: `["armadillo","mob"]`, Armor Stand: `["armor_stand","inanimate","mob"]` | 
 
 ### Family choices
 

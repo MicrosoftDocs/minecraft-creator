@@ -12,6 +12,6 @@ description: Contents of the @minecraft/server-editor.ListPaneSlotLayoutEntry ty
 ## Declaration
 `export declare type ListPaneSlotLayoutEntry = {
     type: ListPaneEntryType;
-    size?: number | LayoutSize | 'shrink' | 'grow';
+    size?: number | LayoutSize | LayoutFlex;
     alignment?: LayoutAlignment;
 };`

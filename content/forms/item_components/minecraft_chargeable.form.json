@@ -1,7 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "isDeprecated": true,
   "title": "Chargeable",
   "description": "Event trigger for when the item has completed its use duration.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "can be charged" }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "on_complete",

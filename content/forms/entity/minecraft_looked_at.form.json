@@ -1,5 +1,161 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "reacts when looked at by entities"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "search_radius",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "within "
+          },
+          {
+            "type": "value",
+            "field": "search_radius"
+          },
+          {
+            "type": "literal",
+            "text": " blocks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "find_players_only",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "detecting players only"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "set_target",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "set_target",
+                    "comparison": "=",
+                    "value": "once_and_stop_scanning"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "targets looker once then stops"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "set_target",
+                    "comparison": "=",
+                    "value": "once_and_keep_scanning"
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "targets looker and continues scanning"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "never targets lookers"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "looked_at_event",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "triggers events when spotted"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "filters",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "with entity filters"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "set_target",
+      "dataType": 2,
+      "description": "Defines if and how the owner entity will set entities that are looking at it as its combat targets. Valid values: 'never', 'once_and_stop_scanning', 'once_and_keep_scanning'.",
+      "choices": [
+        {
+          "id": "never",
+          "title": "Never"
+        },
+        {
+          "id": "once_and_stop_scanning",
+          "title": "Once And Stop Scanning"
+        },
+        {
+          "id": "once_and_keep_scanning",
+          "title": "Once And Keep Scanning"
+        }
+      ],
+      "alternates": [
+        {
+          "id": "set_target",
+          "dataType": 5,
+          "description": "Set to true/false for legacy boolean targeting behavior."
+        }
+      ]
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:looked_at",
     "title": "Looked At",

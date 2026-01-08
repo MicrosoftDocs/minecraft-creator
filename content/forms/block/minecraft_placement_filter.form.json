@@ -1,4 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has placement restrictions"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Sets rules for under what conditions the block can be placed and survive. If the placement conditions are not met, the block cannot be placed. If the block is already placed and the conditions become invalid (e.g., the supporting block is removed), the block will pop off and drop as an item.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:placement_filter",

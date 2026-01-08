@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines behavior.slime attack configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.slime_attack",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

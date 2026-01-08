@@ -1,4 +1,16 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "title": "Entity Core Properties",
+  "description": "Defines common entity component properties that are frequently exposed as core flags or values.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines core entity properties" }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "burns_in_daylight",

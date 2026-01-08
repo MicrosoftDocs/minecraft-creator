@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if behavior.timer_flag_2 is running"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_feeling_happy",
   "fields": [],
   "isDeprecated": true,

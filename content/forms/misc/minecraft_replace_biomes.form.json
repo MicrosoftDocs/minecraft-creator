@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies replace biomes properties"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:replace_biomes",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

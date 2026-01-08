@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "restricts a value to within a specified range"
+          }
+        ]
+      }
+    ]
+  },
   "id": "`math.clamp(value, min, max)`",
   "fields": [],
   "generated_doNotEdit": {

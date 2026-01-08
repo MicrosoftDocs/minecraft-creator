@@ -1,0 +1,9 @@
+{
+  "id": "type_blockname",
+  "title": "Block Name",
+  "description": "A block type identifier. Alias for BLOCK.",
+  "fields": [],
+  "aliasOf": [
+    "type_block"
+  ]
+}

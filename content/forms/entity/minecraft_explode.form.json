@@ -1,4 +1,157 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "power",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can create "
+          },
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "power",
+                    "comparison": ">",
+                    "value": 6
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "a devastating explosion"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "power",
+                    "comparison": ">",
+                    "value": 4
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "a powerful explosion"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "power",
+                    "comparison": "<",
+                    "value": 2
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "a small explosion"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "an explosion"
+              }
+            ]
+          },
+          {
+            "type": "literal",
+            "text": " (power: "
+          },
+          {
+            "type": "value",
+            "field": "power"
+          },
+          {
+            "type": "literal",
+            "text": ")"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "power",
+            "comparison": "undefined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can explode"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "fuse_length",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "with a "
+          },
+          {
+            "type": "value",
+            "field": "fuse_length"
+          },
+          {
+            "type": "literal",
+            "text": " second fuse"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "causes_fire",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "that causes fire"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "breaks_blocks",
+            "comparison": "==",
+            "value": false
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "without destroying blocks"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "toggles_blocks",

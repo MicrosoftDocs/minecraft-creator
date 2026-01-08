@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has block components"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Components",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -29,6 +42,7 @@
                     0,
                     -8
                   ],
+                  "technicalDescription": "There are different constraints for different indexes, please refer to member help for more details",
                   "alternates": [
                     {
                       "id": "origin",
@@ -70,6 +84,7 @@
                     16,
                     16
                   ],
+                  "technicalDescription": "There are different constraints for different indexes, please refer to member help for more details",
                   "alternates": [
                     {
                       "id": "size",
@@ -107,9 +122,17 @@
           {
             "id": "minecraft:collision_box",
             "dataType": 16,
-            "maxLength": 16
+            "maxLength": 16,
+            "technicalDescription": "\"origin\" + \"size\", must be inside the following limit: Vec3(-8,0,-8) and Vec3(8,24,8)"
           }
         ]
+      },
+      {
+        "id": "minecraft:connection_rule",
+        "title": "Minecraft Connection Rule",
+        "description": "Defines whether other blocks such as fences, walls, bars, and glass panes are allowed to connect to this block.",
+        "dataType": 16,
+        "subFormId": "block_components/connection_rule"
       },
       {
         "id": "minecraft:crafting_table",
@@ -348,6 +371,13 @@
         "dataType": 16
       },
       {
+        "id": "minecraft:liquid_detection",
+        "title": "Minecraft Liquid Detection",
+        "description": "The definitions for how a block behaves when detecting liquid. Only one rule definition is allowed per liquid type - if multiple are specified, the first will be used and the rest will be ignored.",
+        "dataType": 16,
+        "subFormId": "block_components/liquid_detection"
+      },
+      {
         "id": "minecraft:loot",
         "title": "Minecraft Loot",
         "description": "The path to the loot table, relative to the behavior pack. Path string is limited to 256 characters.",
@@ -372,6 +402,12 @@
         "description": "This defines how a block reacts to being moved by another block like a piston.",
         "dataType": 16,
         "subFormId": "block_components/movable"
+      },
+      {
+        "id": "minecraft:placement_filter",
+        "title": "Minecraft Placement Filter",
+        "dataType": 16,
+        "subFormId": "block_components/placement_filter"
       },
       {
         "id": "minecraft:random_offset",
@@ -424,6 +460,7 @@
                     0,
                     -8
                   ],
+                  "technicalDescription": "There are different constraints for different indexes, please refer to member help for more details",
                   "alternates": [
                     {
                       "id": "origin",
@@ -465,6 +502,7 @@
                     16,
                     16
                   ],
+                  "technicalDescription": "There are different constraints for different indexes, please refer to member help for more details",
                   "alternates": [
                     {
                       "id": "size",
@@ -527,5 +565,6 @@
         "subFormId": "block_components/transformation"
       }
     ]
-  }
+  },
+  "description": "Container for all components that define custom block behavior and properties. Components control collision, selection boxes, destruction time, light emission, flammability, placement rules, crafting table functionality, and more. Combine components to create unique blocks with specific gameplay characteristics."
 }

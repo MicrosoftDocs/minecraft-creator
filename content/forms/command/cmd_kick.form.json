@@ -1,0 +1,46 @@
+{
+  "id": "cmd_kick",
+  "title": "kick",
+  "description": "Kicks a player from the server.",
+  "fields": [
+    {
+      "id": "name",
+      "title": "name",
+      "type": "string",
+      "isOptional": false,
+      "description": "A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "reason",
+      "title": "reason",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `message` in plain text that explains why player was kicked. Default: `Kicked by an operator`.",
+      "subFormId": "type_message_root",
+      "commandType": "MESSAGE_ROOT"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Kick player, with reason",
+      "description": "Kick a player with `name` and `reason`.",
+      "params": [
+        {
+          "name": "name",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "reason",
+          "type": "MESSAGE_ROOT",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": false
+}

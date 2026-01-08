@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns camera distance range lerp information"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.camera_distance_range_lerp",
   "fields": [],
   "generated_doNotEdit": {

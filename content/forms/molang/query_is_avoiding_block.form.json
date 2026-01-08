@@ -1,7 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is fleeing from a block"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_avoiding_block",
   "fields": [],
-  "description": "Returns 1.0 if the entity is fleeing from a block, else it returns 0.0.",
   "generated_doNotEdit": {
     "id": "query.is_avoiding_block",
     "title": "Is Avoiding Block",

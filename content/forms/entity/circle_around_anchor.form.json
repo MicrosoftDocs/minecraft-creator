@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "circles around an anchor point"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.circle_around_anchor",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -17,7 +30,21 @@
         "id": "control_flags",
         "title": "Control Flags",
         "dataType": 17,
-        "defaultValue": []
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
       },
       {
         "id": "goal_radius",
@@ -35,6 +62,7 @@
           "max": 0,
           "min": 0
         },
+        "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
         "subFormId": "item_components/floatrange"
       },
       {
@@ -84,6 +112,7 @@
           "max": 15,
           "min": 5
         },
+        "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
         "subFormId": "item_components/floatrange"
       },
       {

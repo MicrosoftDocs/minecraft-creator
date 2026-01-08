@@ -1,0 +1,45 @@
+{
+  "id": "cmd_mobevent",
+  "title": "mobevent",
+  "description": "Controls what mob events are allowed to run.",
+  "fields": [
+    {
+      "id": "event",
+      "title": "event",
+      "type": "string",
+      "isOptional": false,
+      "description": "Required. An `enum` that specifies the events to control or query. Must be one of the following: `minecraft:ender_dragon_event`, `minecraft:pillager_patrols_event`, `minecraft:wandering_trader_event`, or `events_enabled`.",
+      "commandType": "MOBEVENT"
+    },
+    {
+      "id": "value",
+      "title": "value",
+      "type": "string",
+      "isOptional": true,
+      "description": "Optional. A `Boolean` that enables events (`true`) or disables them (`false`). Default: `false`.",
+      "subFormId": "type_boolean",
+      "commandType": "BOOLEAN"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Mob event",
+      "description": "Call a `mob event` with an optional `Boolean` `value` to enable or disable the event.",
+      "params": [
+        {
+          "name": "event",
+          "type": "MOBEVENT",
+          "isOptional": false
+        },
+        {
+          "name": "value",
+          "type": "BOOLEAN",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

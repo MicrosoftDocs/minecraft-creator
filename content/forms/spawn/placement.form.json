@@ -1,5 +1,28 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Placement",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "type",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spawns using placement type "
+          },
+          {
+            "type": "value",
+            "field": "type"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Placement",

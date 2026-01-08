@@ -3,11 +3,14 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:rail_sensor"
 description: "Describes the minecraft:rail_sensor entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:rail_sensor
+
+Enables minecart-type entities to detect powered rails and respond to activation state changes. Triggers events when the entity passes over activated or deactivated rails, enabling custom minecart behaviors like launching at boosted speed, stopping at braking rails, or triggering special effects at detector rails.
 
 
 ## Rail Sensor Properties

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns hurt time for the entity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.hurt_time",
   "fields": [],
   "description": "Returns the hurt time for the entity, otherwise returns 0.",

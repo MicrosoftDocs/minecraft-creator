@@ -1,0 +1,77 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "item_texture",
+  "title": "Item Texture Atlas",
+  "description": "The item_texture.json file defines the texture atlas for item textures. It maps texture names to texture file paths, allowing items to reference textures by name. Located at textures/item_texture.json in resource packs.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "maps item texture names to their file paths in the atlas" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "resource_pack_name",
+      "title": "Resource Pack Name",
+      "description": "The name of the resource pack this atlas belongs to.",
+      "dataType": 2,
+      "isRequired": true
+    },
+    {
+      "id": "texture_name",
+      "title": "Texture Name",
+      "description": "The name of the texture atlas. Typically 'atlas.items' for item textures.",
+      "dataType": 2,
+      "defaultValue": "atlas.items",
+      "isRequired": true
+    },
+    {
+      "id": "padding",
+      "title": "Padding",
+      "description": "The padding in pixels between textures in the atlas to prevent bleeding.",
+      "dataType": 0
+    },
+    {
+      "id": "num_mip_levels",
+      "title": "Number of Mip Levels",
+      "description": "The number of mipmap levels to generate for the atlas.",
+      "dataType": 0
+    },
+    {
+      "id": "texture_data",
+      "title": "Texture Data",
+      "description": "A collection of texture definitions keyed by texture name. Each entry maps a texture name to its source file(s).",
+      "dataType": 14,
+      "isRequired": true,
+      "subForm": {
+        "id": "item_texture_entry",
+        "title": "Texture Entry",
+        "description": "Defines a texture that can be referenced by items.",
+        "fields": [
+          {
+            "id": "textures",
+            "title": "Textures",
+            "description": "Array of texture file paths. Multiple paths can be provided for variants (used with aux values in older versions).",
+            "dataType": 17,
+            "isRequired": true
+          }
+        ]
+      }
+    }
+  ],
+  "samples": {
+    "vanilla_data/resource_packs/vanilla/textures/item_texture.json": [
+      {
+        "path": "apple",
+        "content": {
+          "textures": [
+            "textures/items/apple"
+          ]
+        }
+      }
+    ]
+  }
+}

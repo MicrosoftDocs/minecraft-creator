@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "can hide at nearby points of interest" }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:hide",
   "title": "Hide",
   "description": "Moves to and hides at their owned POI or the closest nearby.",

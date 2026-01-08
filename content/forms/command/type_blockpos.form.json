@@ -1,0 +1,19 @@
+{
+  "id": "type_blockpos",
+  "title": "Block Position",
+  "description": "Block coordinates as integers. Does not accept decimal values.",
+  "fields": [],
+  "formatHint": "x y z or ~ ~ ~",
+  "samples": {
+    "values": [
+      {
+        "path": "Current block position",
+        "content": "~ ~ ~"
+      },
+      {
+        "path": "Absolute block coordinates",
+        "content": "0 64 0"
+      }
+    ]
+  }
+}

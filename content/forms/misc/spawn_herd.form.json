@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines spawn herd settings"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Spawn Herd",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -42,5 +55,6 @@
         "dataType": 0
       }
     ]
-  }
+  },
+  "description": "Defines spawn herd settings."
 }

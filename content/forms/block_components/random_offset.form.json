@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines random position offset for block rendering"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Random Offset",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

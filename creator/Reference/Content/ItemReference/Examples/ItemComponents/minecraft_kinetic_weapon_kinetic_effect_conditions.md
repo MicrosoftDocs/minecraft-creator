@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Items Documentation - minecraft:kinetic_weapon_kinetic_effect_conditions"
 description: "Describes the minecraft:kinetic_weapon_kinetic_effect_conditions item component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

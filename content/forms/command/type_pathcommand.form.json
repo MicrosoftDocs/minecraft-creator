@@ -1,0 +1,24 @@
+{
+  "id": "type_pathcommand",
+  "title": "Function Path",
+  "description": "Path to a function file within a behavior pack. Uses namespace:path format.",
+  "fields": [],
+  "formatHint": "namespace:path/to/function",
+  "note": "Functions are .mcfunction files in the behavior pack's functions folder.",
+  "samples": {
+    "values": [
+      {
+        "path": "Function 'setup' in namespace 'mypack'",
+        "content": "mypack:setup"
+      },
+      {
+        "path": "Function in a subfolder",
+        "content": "mypack:utils/helper"
+      },
+      {
+        "path": "Function in default namespace",
+        "content": "tick"
+      }
+    ]
+  }
+}

@@ -1,6 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "item_spawn",
   "title": "Spawn Particle",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spawns an item at a location"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "script",
     "action"
@@ -19,5 +32,6 @@
       "isRequired": true,
       "priority": 1
     }
-  ]
+  ],
+  "description": "Creates a dropped item entity at a specified world location. The item appears as a floating, collectible object that players or hoppers can pick up. Supports specifying item type, stack count, and custom data values."
 }

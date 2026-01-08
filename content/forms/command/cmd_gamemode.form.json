@@ -1,0 +1,63 @@
+{
+  "id": "cmd_gamemode",
+  "title": "gamemode",
+  "description": "Sets a player's game mode. See more in the [Popular Commands documentation](https://learn.microsoft.com/minecraft/creator/documents/commandspopularcommands#gamemode).",
+  "fields": [
+    {
+      "id": "gamemode",
+      "title": "gameMode",
+      "type": "string",
+      "isOptional": false,
+      "description": "Game mode enum",
+      "subFormId": "type_gamemode",
+      "commandType": "GAMEMODE"
+    },
+    {
+      "id": "player",
+      "title": "player",
+      "type": "string",
+      "isOptional": true,
+      "description": "A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Set game mode with enum",
+      "description": "Set a player's game mode using the gamemode `enum`.",
+      "params": [
+        {
+          "name": "gamemode",
+          "type": "GAMEMODE",
+          "isOptional": false
+        },
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Set game mode with integer",
+      "description": "Set a player's game mode using an `integer`.",
+      "params": [
+        {
+          "name": "gamemode",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

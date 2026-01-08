@@ -1,4 +1,59 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses basic ground movement"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "max_turn",
+            "comparison": ">=",
+            "value": 180
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can turn instantly in any direction"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "max_turn",
+            "comparison": "<",
+            "value": 30
+          },
+          {
+            "field": "max_turn",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "turns slowly (max "
+          },
+          {
+            "type": "value",
+            "field": "max_turn"
+          },
+          {
+            "type": "literal",
+            "text": " degrees per tick)"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:movement.basic",

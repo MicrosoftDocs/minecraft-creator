@@ -1,5 +1,177 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "summons other entities"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "summon_choices",
+      "title": "Summon Choices",
+      "description": "List of spells for the mob to use to summon entities.",
+      "dataType": 15,
+      "subForm": {
+        "id": "summon_choice",
+        "title": "Summon Choice",
+        "fields": [
+          {
+            "id": "cast_duration",
+            "title": "Cast Duration",
+            "description": "Time in seconds the spell casting will take.",
+            "dataType": 3
+          },
+          {
+            "id": "cooldown_time",
+            "title": "Cooldown Time",
+            "description": "Time in seconds the mob has to wait before using the spell again.",
+            "defaultValue": 0,
+            "dataType": 3
+          },
+          {
+            "id": "do_casting",
+            "title": "Do Casting",
+            "description": "If true, the mob will do the casting animations and render spell particles.",
+            "defaultValue": true,
+            "dataType": 1
+          },
+          {
+            "id": "filters",
+            "title": "Filters",
+            "description": "Conditions that must be met for this summon choice to be valid.",
+            "dataType": 16,
+            "subFormId": "entity/actordefinitiontrigger_filters"
+          },
+          {
+            "id": "max_activation_range",
+            "title": "Max Activation Range",
+            "description": "Upper bound of the activation distance in blocks for this spell.",
+            "defaultValue": 32,
+            "dataType": 3
+          },
+          {
+            "id": "min_activation_range",
+            "title": "Min Activation Range",
+            "description": "Lower bound of the activation distance in blocks for this spell.",
+            "defaultValue": 1,
+            "dataType": 3
+          },
+          {
+            "id": "particle_color",
+            "title": "Particle Color",
+            "description": "The color of the particles for this spell. Can be an integer (ARGB) or a hex string like '#AARRGGBB'.",
+            "dataType": 2,
+            "alternates": [
+              {
+                "id": "particle_color",
+                "dataType": 0
+              }
+            ]
+          },
+          {
+            "id": "sequence",
+            "title": "Sequence",
+            "description": "List of summon steps for the spell.",
+            "dataType": 15,
+            "subForm": {
+              "id": "summon_step",
+              "title": "Summon Step",
+              "fields": [
+                {
+                  "id": "base_delay",
+                  "title": "Base Delay",
+                  "description": "Delay in seconds before this step starts.",
+                  "defaultValue": 0,
+                  "dataType": 3
+                },
+                {
+                  "id": "delay_per_summon",
+                  "title": "Delay Per Summon",
+                  "description": "Delay in seconds between each entity summon.",
+                  "defaultValue": 0,
+                  "dataType": 3
+                },
+                {
+                  "id": "entity_type",
+                  "title": "Entity Type",
+                  "description": "The entity type to summon.",
+                  "dataType": 2
+                },
+                {
+                  "id": "num_entities_spawned",
+                  "title": "Num Entities Spawned",
+                  "description": "Number of entities to spawn in this step.",
+                  "defaultValue": 1,
+                  "dataType": 0
+                },
+                {
+                  "id": "shape",
+                  "title": "Shape",
+                  "description": "Shape of the summon pattern: 'circle' or 'line'.",
+                  "defaultValue": "circle",
+                  "dataType": 2
+                },
+                {
+                  "id": "size",
+                  "title": "Size",
+                  "description": "Size of the summon pattern.",
+                  "defaultValue": 1,
+                  "dataType": 3
+                },
+                {
+                  "id": "sound_event",
+                  "title": "Sound Event",
+                  "description": "Sound event to play when summoning.",
+                  "dataType": 2
+                },
+                {
+                  "id": "summon_cap",
+                  "title": "Summon Cap",
+                  "description": "Maximum number of entities that can be summoned.",
+                  "defaultValue": 0,
+                  "dataType": 0
+                },
+                {
+                  "id": "summon_cap_radius",
+                  "title": "Summon Cap Radius",
+                  "description": "Radius to check for existing summoned entities.",
+                  "defaultValue": 0,
+                  "dataType": 3
+                },
+                {
+                  "id": "target",
+                  "title": "Target",
+                  "description": "Target for the summon: 'self' or 'other'.",
+                  "defaultValue": "self",
+                  "dataType": 2
+                }
+              ]
+            }
+          },
+          {
+            "id": "start_sound_event",
+            "title": "Start Sound Event",
+            "description": "Sound event to play when casting starts.",
+            "dataType": 2
+          },
+          {
+            "id": "weight",
+            "title": "Weight",
+            "description": "Relative weight for random selection among summon choices.",
+            "defaultValue": 1,
+            "dataType": 3
+          }
+        ]
+      }
+    }
+  ],
   "versionIntroduced": "1.21.50",
   "generated_doNotEdit": {
     "id": "minecraft:behavior.summon_entity",

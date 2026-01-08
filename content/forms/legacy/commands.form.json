@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines legacy command permission levels"
+          }
+        ]
+      }
+    ]
+  },
   "id": "commands",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -44,5 +57,6 @@
         "defaultValue": {}
       }
     ]
-  }
+  },
+  "description": "Defines legacy command permission levels."
 }

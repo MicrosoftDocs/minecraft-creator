@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if the controlling passenger belongs to a specific family"
+          }
+        ]
+      }
+    ]
+  },
   "id": "is_controlling_passenger_family",
   "fields": [],
   "generated_doNotEdit": {

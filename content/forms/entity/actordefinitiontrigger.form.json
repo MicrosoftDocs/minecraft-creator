@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines an entity event trigger"
+          }
+        ]
+      }
+    ]
+  },
   "id": "ActorDefinitionTrigger",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -118,5 +131,6 @@
         "defaultValue": "self"
       }
     ]
-  }
+  },
+  "description": "Triggers an entity event when specified conditions are met. Events activate component groups that change entity behavior—transforming villagers into zombie villagers, switching mobs to aggressive mode, or triggering growth stages. Combine with filters to create conditional state machines that respond to gameplay."
 }

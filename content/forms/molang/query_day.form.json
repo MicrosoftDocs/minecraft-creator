@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns day of the current world"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.day",
   "fields": [],
   "description": "Returns the day of the current world. When the world is first created, that is day `1`.",

@@ -1,0 +1,46 @@
+{
+  "id": "cmd_scriptevent",
+  "title": "scriptevent",
+  "description": "Causes an event to fire within script with the specified message ID and payload. This can be used to connect scripting with any location where commands are used.",
+  "fields": [
+    {
+      "id": "messageid",
+      "title": "messageId",
+      "type": "string",
+      "isOptional": false,
+      "description": "Identifier of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world.",
+      "subFormId": "type_id",
+      "commandType": "ID"
+    },
+    {
+      "id": "message",
+      "title": "message",
+      "type": "string",
+      "isOptional": false,
+      "description": "Data component of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world. Message may not exceed 2048 characters in length.",
+      "subFormId": "type_message_root",
+      "commandType": "MESSAGE_ROOT"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Send script event message",
+      "description": "Passes a message with the specified ID and payload.",
+      "params": [
+        {
+          "name": "messageid",
+          "type": "ID",
+          "isOptional": false
+        },
+        {
+          "name": "message",
+          "type": "MESSAGE_ROOT",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

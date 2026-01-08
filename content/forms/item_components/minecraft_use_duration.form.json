@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [{ "field": "value", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "takes " },
+          { "type": "value", "field": "value" },
+          { "type": "literal", "text": " seconds to use" }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "scalarFieldUpgradeName": "value",
   "isDeprecated": true,

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns the name of the equipped item (deprecated)"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.get_equipped_item_name",
   "fields": [],
   "isDeprecated": true,

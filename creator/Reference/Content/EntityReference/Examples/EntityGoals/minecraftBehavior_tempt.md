@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:behavior.tempt"
 description: "Describes the minecraft:behavior.tempt ai behavior component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -22,11 +23,22 @@ Allows a mob to be tempted by a player holding a specific item. Uses pathfinding
 | items | [] | Array of strings | List of items that can tempt the mob. | Armadillo: `["spider_eye"]`, Axolotl: `["tropical_fish_bucket"]`, Bee: `["minecraft:poppy","minecraft:blue_orchid","minecraft:allium","minecraft:azure_bluet","minecraft:red_tulip","minecraft:orange_tulip","minecraft:white_tulip","minecraft:pink_tulip","minecraft:oxeye_daisy","minecraft:cornflower","minecraft:lily_of_the_valley","minecraft:dandelion","minecraft:wither_rose","minecraft:sunflower","minecraft:lilac","minecraft:rose_bush","minecraft:peony","minecraft:flowering_azalea","minecraft:azalea_leaves_flowered","minecraft:mangrove_propagule","minecraft:pitcher_plant","minecraft:torchflower","minecraft:cherry_leaves","minecraft:pink_petals","minecraft:open_eyeblossom","minecraft:wildflowers","minecraft:cactus_flower"]` | 
 | on_tempt_end | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  | Happy Ghast: `{"event":"minecraft:on_stop_tempting"}` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Armadillo: `3`, Axolotl: `2`, Bee: `5` | 
-| sound_interval | *not set* | Range of integers | Range of random ticks to wait between tempt sounds. | Cat: `[0,100]`, Strider: `{"range_min":2,"range_max":5}` | 
+| sound_interval | *not set* | Integer number | Range of random ticks to wait between tempt sounds. Can be a number, an array [min, max], or an object with range_min/range_max or min/max. | Cat: `[0,100]`, Strider: `{"range_min":2,"range_max":5}` | 
+| sound_interval (Alternate 1) | *not set* | Array of [Sound Interval](#sound-interval) items |  |  | 
+| sound_interval (Alternate 2) | *not set* | [Sound Interval](#sound-interval) item |  |  | 
 | speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Armadillo: `1.25`, Axolotl: `1.1`, Camel: `2.5` | 
 | stop_distance | 1.5 | Decimal number | The distance at which the mob will stop following the player. |  | 
 | tempt_sound | *not set* | String | Sound to play while the mob is being tempted. | Cat: `"tempt"` | 
 | within_radius | 0 | Decimal number | Distance in blocks this mob can get tempted by a player holding an item they like. | Bee: `8`, Cat: `16`, Robot: `7` | 
+
+## Sound Interval
+
+#### Sound Interval Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| 0 | *not set* | Integer number |  |  | 
+| 1 | *not set* | Integer number |  |  | 
 
 ## Samples
 

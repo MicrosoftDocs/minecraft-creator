@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns rotation of the camera"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.camera_rotation",
   "fields": [],
   "generated_doNotEdit": {

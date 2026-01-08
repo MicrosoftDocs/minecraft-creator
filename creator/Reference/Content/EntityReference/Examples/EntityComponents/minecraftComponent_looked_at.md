@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:looked_at"
 description: "Describes the minecraft:looked_at entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -27,7 +28,16 @@ Defines the behavior when another entity looks at the owner entity.
 | not_looked_at_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Defines the event to trigger when no entity is found looking at the owner entity. | Creaking: `{"event":"minecraft:on_target_stop_looking","filter":"self"}` | 
 | scale_fov_by_distance | true | Boolean true/false | When true, the field of view narrows as the distance between the owner entity and the entity looking at it increases. This ensures that the width of the view cone remains somewhat constant towards the owner entity position, regardless of distance. |  | 
 | search_radius | 10 | Decimal number | Maximum distance the owner entity will search for entities looking at it. | Creaking: `12`, `24`, Enderman: `64` | 
-| set_target | false | Boolean true/false | Defines if and how the owner entity will set entities that are looking at it as its combat targets. Valid values:<br>           <br>- "never", looking entities are never set as targets, but events are emitted.<br>           <br>- "once_and_stop_scanning", the first detected looking entity is set as target. Scanning and event emission is suspended if and until the owner entity has a target.<br>           <br>- "once_and_keep_scanning", the first detected looking entity is set as target. Scanning and event emission continues.s | Creaking: `"once_and_keep_scanning"`, `"never"`, Enderman: `"once_and_stop_scanning"` | 
+| set_target | false | [Set Target](#set-target-choices) choices | Defines if and how the owner entity will set entities that are looking at it as its combat targets. Valid values: 'never', 'once_and_stop_scanning', 'once_and_keep_scanning'. | Creaking: `"once_and_keep_scanning"`, `"never"`, Enderman: `"once_and_stop_scanning"` | 
+| set_target (Alternate 1) | *not set* | Integer number from a list of choices | Set to true/false for legacy boolean targeting behavior. |  | 
+
+### Set Target choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| never | Never | |
+| once_and_stop_scanning | Once And Stop Scanning | |
+| once_and_keep_scanning | Once And Keep Scanning | |
 
 ## Samples
 

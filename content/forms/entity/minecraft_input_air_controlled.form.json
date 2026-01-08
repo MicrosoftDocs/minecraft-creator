@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "can be controlled in the air when ridden" }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "isExperimental": true,
   "generated_doNotEdit": {

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines behavior.breed configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.breed",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

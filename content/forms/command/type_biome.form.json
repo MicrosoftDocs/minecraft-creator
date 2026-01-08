@@ -1,0 +1,23 @@
+{
+  "id": "type_biome",
+  "title": "Biome",
+  "description": "A biome identifier.",
+  "fields": [],
+  "formatHint": "biome_name",
+  "samples": {
+    "values": [
+      {
+        "path": "Plains biome",
+        "content": "plains"
+      },
+      {
+        "path": "Desert biome",
+        "content": "desert"
+      },
+      {
+        "path": "Forest biome",
+        "content": "forest"
+      }
+    ]
+  }
+}

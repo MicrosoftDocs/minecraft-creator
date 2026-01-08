@@ -1,0 +1,32 @@
+{
+  "id": "cmd_function",
+  "title": "function",
+  "description": "Runs commands found in the corresponding function file.",
+  "fields": [
+    {
+      "id": "name",
+      "title": "name",
+      "type": "string",
+      "isOptional": false,
+      "description": "Required. A command file path to a function located in a behavior pack.",
+      "subFormId": "type_pathcommand",
+      "commandType": "PATHCOMMAND"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Function with file path",
+      "description": "Call the `function` at a particular `file path`.",
+      "params": [
+        {
+          "name": "name",
+          "type": "PATHCOMMAND",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

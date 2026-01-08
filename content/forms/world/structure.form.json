@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "ure",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a weighted structure reference for Jigsaw Structure sets"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Structure",
@@ -30,5 +43,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines a weighted structure reference for Jigsaw Structure sets."
 }

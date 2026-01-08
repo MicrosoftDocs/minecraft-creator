@@ -1,5 +1,171 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "actor_animation",
+  "title": "Actor Animation (v1.8.0)",
+  "description": "Defines keyframe animations for entity bones. Animations can transform bones with position, rotation, and scale changes over time. They support timeline-based keyframes, Molang expressions, looping, and can be blended together using animation controllers.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines keyframe animation for entity bones"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "animations",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "with "
+          },
+          {
+            "type": "value",
+            "field": "animations.length"
+          },
+          {
+            "type": "plural",
+            "countField": "animations.length",
+            "singular": [
+              {
+                "type": "literal",
+                "text": " animation"
+              }
+            ],
+            "plural": [
+              {
+                "type": "literal",
+                "text": " animations"
+              }
+            ],
+            "includeCount": false
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "animations[0].loop",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "animations[0].loop",
+                    "comparison": "=",
+                    "value": true
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "that loops continuously"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "animations[0].loop",
+                    "comparison": "=",
+                    "value": false
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "that plays once"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "with loop mode '"
+              },
+              {
+                "type": "value",
+                "field": "animations[0].loop"
+              },
+              {
+                "type": "literal",
+                "text": "'"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "animations[0].animation_length",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "duration: "
+          },
+          {
+            "type": "value",
+            "field": "animations[0].animation_length"
+          },
+          {
+            "type": "literal",
+            "text": "s"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "animations[0].bones",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "animating "
+          },
+          {
+            "type": "value",
+            "field": "animations[0].bones.length"
+          },
+          {
+            "type": "plural",
+            "countField": "animations[0].bones.length",
+            "singular": [
+              {
+                "type": "literal",
+                "text": " bone"
+              }
+            ],
+            "plural": [
+              {
+                "type": "literal",
+                "text": " bones"
+              }
+            ],
+            "includeCount": false
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "actor_animation",

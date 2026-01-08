@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "specifies a block by name and states" }
+        ]
+      }
+    ]
+  },
   "title": "Block Specifier",
   "description": "Specifies a particular block. Can be a string block name or a JSON object",
   "fields": [

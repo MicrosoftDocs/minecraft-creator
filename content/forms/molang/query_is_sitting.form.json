@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is sitting"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_sitting",
   "fields": [],
   "description": "Returns 1.0 if the entity is sitting, else it returns 0.0. Applies generally to the fox, parrot, and wolf.",

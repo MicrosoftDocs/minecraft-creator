@@ -1,0 +1,63 @@
+{
+  "id": "type_difficulty",
+  "title": "Difficulty",
+  "description": "The world difficulty level.",
+  "fields": [],
+  "formatHint": "peaceful, easy, normal, or hard",
+  "samples": {
+    "values": [
+      {
+        "path": "No hostile mobs, health regenerates quickly",
+        "content": "peaceful"
+      },
+      {
+        "path": "Hostile mobs deal less damage",
+        "content": "easy"
+      },
+      {
+        "path": "Standard difficulty",
+        "content": "normal"
+      },
+      {
+        "path": "Hostile mobs deal more damage, hunger can kill",
+        "content": "hard"
+      }
+    ],
+    "shorthands": [
+      {
+        "path": "Shorthand for peaceful",
+        "content": "p"
+      },
+      {
+        "path": "Shorthand for easy",
+        "content": "e"
+      },
+      {
+        "path": "Shorthand for normal",
+        "content": "n"
+      },
+      {
+        "path": "Shorthand for hard",
+        "content": "h"
+      }
+    ],
+    "numeric": [
+      {
+        "path": "Numeric: peaceful",
+        "content": "0"
+      },
+      {
+        "path": "Numeric: easy",
+        "content": "1"
+      },
+      {
+        "path": "Numeric: normal",
+        "content": "2"
+      },
+      {
+        "path": "Numeric: hard",
+        "content": "3"
+      }
+    ]
+  }
+}

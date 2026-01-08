@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Items Documentation - minecraft:durability"
 description: "Describes the minecraft:durability item component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -16,10 +17,12 @@ Sets how much damage the item can take before breaking, and allows the item to b
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| damage_chance | {"max":100,"min":100} | [Damage Chance](#item-components-intrange) item | Specifies the percentage chance of this item losing durability. Default is set to 100. Defined as an int range with min and max value. | My Sword Chuck: `{"min":10,"max":50}`, My Sword Singing: `{"min":0,"max":0}`, My Sword Weak: `{"min":100,"max":100}` | 
+| damage_chance | {"max":100,"min":100} | [Damage Chance](#item-components-intrange) item | Specifies the percentage chance of this item losing durability. Default is set to 100. Defined as an int range with min and max value. Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected | My Sword Chuck: `{"min":10,"max":50}`, My Sword Singing: `{"min":0,"max":0}`, My Sword Weak: `{"min":100,"max":100}` | 
 | max_durability | *not set* | Integer number | Max durability is the amount of damage that this item can take before breaking. This is a required parameter and has a minimum of 0. | Chestplate: `200`, My Sword Chuck: `10`, My Sword Singing: `1000` | 
 
 ## Item Components IntRange
+Has minimum and maximum integer values.
+
 
 #### Item Components IntRange Properties
 

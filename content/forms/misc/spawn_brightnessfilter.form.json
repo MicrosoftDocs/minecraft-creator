@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines spawn brightnessfilter settings"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Spawn BrightnessFilter",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -33,5 +46,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Defines spawn brightnessfilter settings."
 }

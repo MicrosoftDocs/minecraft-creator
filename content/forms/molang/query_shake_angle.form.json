@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns shaking angle of the entity if it makes sense"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.shake_angle",
   "fields": [],
   "description": "Returns the shaking angle of the entity if it makes sense, else it returns 0.0. Generally applies to the wolf.",

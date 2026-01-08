@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines components configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Components",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -19,5 +32,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines components configuration."
 }

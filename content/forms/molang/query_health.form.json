@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns health of the entity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.health",
   "fields": [],
   "generated_doNotEdit": {

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "aggregates validation results by validator"
+          }
+        ]
+      }
+    ]
+  },
   "id": "info_set.summary",
   "title": "Validation Summary",
   "description": "Aggregated results grouped by validator.",

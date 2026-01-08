@@ -1,4 +1,64 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "description": "Describes temperature, humidity, precipitation, and similar climate properties for a biome. Biomes without this component will use default values. Temperature affects visual effects like snow/ice placement, sponge drying, and sky color. Downfall controls precipitation frequency and intensity.",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "temperature",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has temperature "
+          },
+          {
+            "type": "value",
+            "field": "temperature"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "downfall",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has precipitation level "
+          },
+          {
+            "type": "value",
+            "field": "downfall"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "snow_accumulation",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has snow accumulation "
+          },
+          {
+            "type": "value",
+            "field": "snow_accumulation"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:climate",

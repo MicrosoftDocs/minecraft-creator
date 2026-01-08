@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns noise information"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.noise",
   "fields": [],
   "description": "Queries a Perlin Noise Map. Pertains to terrain generation. Takes x and z coordinates and generates a number that emulates a random noise pattern seen in nature.",

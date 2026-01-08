@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns number of entities for which this entity is the..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.leashed_entity_count",
   "fields": [],
   "generated_doNotEdit": {

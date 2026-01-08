@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "texture_list",
+  "title": "Texture List",
+  "description": "The texture_list.json file is a simple array of texture paths that should be included in the resource pack. This file helps the game identify which textures are available. Located at textures/texture_list.json in resource packs.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "lists all texture paths available in this resource pack" }
+        ]
+      }
+    ]
+  },
+  "fields": [],
+  "note": "This file is a JSON array at the root level, containing string paths to texture files relative to the resource pack root. File extensions are typically omitted.",
+  "samples": {
+    "vanilla_data/resource_packs/vanilla/textures/texture_list.json": [
+      {
+        "path": "example",
+        "content": [
+          "textures/blocks/stone",
+          "textures/items/apple",
+          "textures/entity/pig/pig"
+        ]
+      }
+    ]
+  }
+}

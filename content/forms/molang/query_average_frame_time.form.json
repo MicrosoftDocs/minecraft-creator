@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns time in *seconds* of the average frame time ove..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.average_frame_time",
   "fields": [],
   "generated_doNotEdit": {

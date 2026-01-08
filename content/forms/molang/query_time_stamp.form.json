@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns current time stamp of the level"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.time_stamp",
   "fields": [],
   "description": "Returns the current time stamp of the level. Generally applies to cod, piglin, pufferfish, tropical fish, salmon.",

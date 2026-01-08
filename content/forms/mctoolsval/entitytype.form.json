@@ -1,0 +1,155 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates entity type definitions and format versions"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "entitytype",
+  "title": "Entity Type",
+  "description": "Validates entity type definitions in behavior packs. Checks format_version against the current Minecraft version and can update format versions to the latest.",
+  "fields": [
+    {
+      "id": "52",
+      "title": "Runtime Identifier",
+      "description": "Aggregates runtime_identifier values from entity type definitions. Runtime identifiers inherit behavior from vanilla entities.",
+      "messageType": "info",
+      "dataType": 2,
+      "technicalDescription": "Data field contains the runtime_identifier string."
+    },
+    {
+      "id": "53",
+      "title": "Entity Identifier",
+      "description": "Aggregates identifier values from entity type definitions. Shows which vanilla entity identifiers are being overridden.",
+      "messageType": "info",
+      "dataType": 2,
+      "technicalDescription": "Data field contains the entity identifier string."
+    },
+    {
+      "id": "54",
+      "title": "Entity Metadata",
+      "description": "Aggregates metadata about entity types including aliases and properties defined in entity descriptions.",
+      "messageType": "info",
+      "dataType": 2
+    },
+    {
+      "id": "100",
+      "title": "Format Version Undefined",
+      "description": "Checks that the entity type definition has a format_version field defined.",
+      "howToUse": "Add a format_version field to the root of your entity JSON file. Example: \"format_version\": \"1.21.0\". Use the latest Minecraft version number.",
+      "messageType": "error",
+      "dataType": 2
+    },
+    {
+      "id": "110",
+      "title": "Major Version Low",
+      "description": "The entity type format_version major version is lower than the current Minecraft version. Consider updating to access new features.",
+      "howToUse": "Update the format_version to use the latest Minecraft version. You can use the 'Fix' button to automatically update this, or manually change it in the JSON file.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "ENTITYTYPE",
+          "updaterIndex": 1051,
+          "action": "Set behavior pack entity type format to latest version."
+        }
+      ]
+    },
+    {
+      "id": "111",
+      "title": "Major Version High",
+      "description": "The entity type format_version major version is higher than the current Minecraft version. This indicates an invalid future version.",
+      "howToUse": "Lower the format_version to match the current Minecraft version. Future versions are not supported. Check docs.microsoft.com for the latest valid version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "ENTITYTYPE",
+          "updaterIndex": 1051,
+          "action": "Set behavior pack entity type format to latest version."
+        }
+      ]
+    },
+    {
+      "id": "120",
+      "title": "Minor Version Low",
+      "description": "The entity type format_version minor version is lower than the current Minecraft version. Consider updating for compatibility.",
+      "howToUse": "Update the format_version minor version to the current Minecraft version. Use the 'Fix' button for automatic update.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "ENTITYTYPE",
+          "updaterIndex": 1051,
+          "action": "Set behavior pack entity type format to latest version."
+        }
+      ]
+    },
+    {
+      "id": "121",
+      "title": "Minor Version High",
+      "description": "The entity type format_version minor version is higher than the current Minecraft version. This indicates an invalid future version.",
+      "howToUse": "The minor version is ahead of the current Minecraft release. Update to a valid current version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "ENTITYTYPE",
+          "updaterIndex": 1051,
+          "action": "Set behavior pack entity type format to latest version."
+        }
+      ]
+    },
+    {
+      "id": "130",
+      "title": "Patch Version Low",
+      "description": "The entity type format_version patch version is lower than the current Minecraft version. Consider updating for the latest fixes.",
+      "howToUse": "Update the format_version patch number to the current version. This ensures you have the latest bug fixes and features.",
+      "messageType": "recommendation",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "ENTITYTYPE",
+          "updaterIndex": 1051,
+          "action": "Set behavior pack entity type format to latest version."
+        }
+      ]
+    },
+    {
+      "id": "131",
+      "title": "Patch Version High",
+      "description": "The entity type format_version patch version is higher than the current Minecraft version. This indicates an invalid future version.",
+      "messageType": "error",
+      "dataType": 2,
+      "matchedValues": [
+        {
+          "updaterId": "ENTITYTYPE",
+          "updaterIndex": 1051,
+          "action": "Set behavior pack entity type format to latest version."
+        }
+      ]
+    },
+    {
+      "id": "500",
+      "title": "Version Retrieval Failed",
+      "description": "Internal error: Could not retrieve the latest Minecraft version from the database.",
+      "messageType": "error",
+      "dataType": 2
+    },
+    {
+      "id": "501",
+      "title": "Version Parse Failed",
+      "description": "Internal error: Could not parse the latest Minecraft version string into version components.",
+      "messageType": "error",
+      "dataType": 2,
+      "technicalDescription": "Data field contains the version string that failed to parse."
+    }
+  ]
+}

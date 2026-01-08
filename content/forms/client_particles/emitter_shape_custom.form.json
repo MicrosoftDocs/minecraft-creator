@@ -1,5 +1,45 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "emits particles from a custom-defined shape"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "direction",
+      "title": "Direction",
+      "description": "The direction of particle emission, as [x, y, z] Molang expressions or numbers.",
+      "dataType": 35,
+      "defaultValue": [
+        0,
+        0,
+        0
+      ],
+      "minLength": 3,
+      "maxLength": 3
+    },
+    {
+      "id": "offset",
+      "title": "Offset",
+      "description": "The offset from the emitter position, as [x, y, z] Molang expressions or numbers.",
+      "dataType": 35,
+      "defaultValue": [
+        0,
+        0,
+        0
+      ],
+      "minLength": 3,
+      "maxLength": 3
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_shape_custom",
     "title": "Client Particles Emitter Shape Custom",
@@ -87,5 +127,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Emits particles from positions calculated by custom Molang expressions. Unlike preset shapes, this gives complete control over spawn locations using math expressions that can create rings, spirals, waves, or any procedural pattern. Use the offset expressions to define X, Y, Z coordinates relative to the emitter for complex artistic effects."
 }

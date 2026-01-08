@@ -1,0 +1,9 @@
+{
+  "id": "type_entitytype",
+  "title": "Entity Type",
+  "description": "An entity type identifier. Alias for ENTITY_TYPE.",
+  "fields": [],
+  "aliasOf": [
+    "type_entity_type"
+  ]
+}

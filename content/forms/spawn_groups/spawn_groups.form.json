@@ -1,0 +1,276 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines spawn groups for coordinated entity spawning" }
+        ]
+      }
+    ]
+  },
+  "id": "spawn_groups",
+  "title": "Spawn Groups",
+  "description": "A spawn groups definition for Minecraft Bedrock Edition. Spawn groups define collections of entities that spawn together under specific conditions, such as during raid events.",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "spawn_groups",
+    "fields": [
+      {
+        "dataType": 25,
+        "id": "format_version",
+        "title": "Format Version",
+        "description": "The format version of this spawn groups file. Typically '1.11.0'.",
+        "isRequired": true
+      },
+      {
+        "dataType": 16,
+        "id": "minecraft:spawn_groups",
+        "title": "Spawn Groups Definition",
+        "description": "The spawn groups definition container.",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 16,
+              "id": "description",
+              "title": "Description",
+              "description": "The spawn group description containing identifier information.",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 2,
+                    "id": "identifier",
+                    "title": "Identifier",
+                    "description": "The unique identifier for this spawn group (e.g., 'minecraft:raid_group_0').",
+                    "isRequired": true
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": 15,
+              "id": "conditions",
+              "title": "Conditions",
+              "description": "Array of condition sets that determine when and how entities spawn.",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 16,
+                    "id": "minecraft:mob_event_filter",
+                    "title": "Mob Event Filter",
+                    "description": "Filters based on mob events.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "event",
+                          "title": "Event",
+                          "description": "The mob event that triggers this spawn group (e.g., 'minecraft:village_raid').",
+                          "isRequired": true
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "minecraft:distance_filter",
+                    "title": "Distance Filter",
+                    "description": "Filters based on distance from a reference point.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 0,
+                          "id": "min",
+                          "title": "Minimum Distance",
+                          "description": "The minimum distance for spawning.",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 0,
+                          "id": "max",
+                          "title": "Maximum Distance",
+                          "description": "The maximum distance for spawning.",
+                          "isRequired": false
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "minecraft:spawns_on_surface",
+                    "title": "Spawns On Surface",
+                    "description": "Indicates entities should spawn on surface blocks.",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "minecraft:spawns_underground",
+                    "title": "Spawns Underground",
+                    "description": "Indicates entities should spawn underground.",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "minecraft:spawns_underwater",
+                    "title": "Spawns Underwater",
+                    "description": "Indicates entities should spawn underwater.",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "minecraft:difficulty_filter",
+                    "title": "Difficulty Filter",
+                    "description": "Filters based on game difficulty.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 4,
+                          "id": "min",
+                          "title": "Minimum Difficulty",
+                          "description": "The minimum difficulty level.",
+                          "isRequired": false,
+                          "choices": [
+                            "peaceful",
+                            "easy",
+                            "normal",
+                            "hard"
+                          ]
+                        },
+                        {
+                          "dataType": 4,
+                          "id": "max",
+                          "title": "Maximum Difficulty",
+                          "description": "The maximum difficulty level.",
+                          "isRequired": false,
+                          "choices": [
+                            "peaceful",
+                            "easy",
+                            "normal",
+                            "hard"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "minecraft:herd",
+                    "title": "Herd",
+                    "description": "Defines the group size and spawn event for the herd.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 0,
+                          "id": "min_size",
+                          "title": "Minimum Size",
+                          "description": "Minimum number of entities in the herd.",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 0,
+                          "id": "max_size",
+                          "title": "Maximum Size",
+                          "description": "Maximum number of entities in the herd.",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 2,
+                          "id": "event",
+                          "title": "Event",
+                          "description": "The event to trigger on spawned entities.",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 2,
+                          "id": "event_skip_count",
+                          "title": "Event Skip Count",
+                          "description": "Number of entities to skip before triggering the event.",
+                          "isRequired": false
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 15,
+                    "id": "minecraft:permute_type",
+                    "title": "Permute Type",
+                    "description": "Defines weighted entity type options for spawning.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 0,
+                          "id": "weight",
+                          "title": "Weight",
+                          "description": "The relative weight of this entity type.",
+                          "isRequired": true
+                        },
+                        {
+                          "dataType": 2,
+                          "id": "entity_type",
+                          "title": "Entity Type",
+                          "description": "The entity type identifier to spawn.",
+                          "isRequired": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "samples": {
+    "raid": [
+      {
+        "path": "Raid spawn group example",
+        "content": {
+          "format_version": "1.11.0",
+          "minecraft:spawn_groups": {
+            "description": {
+              "identifier": "minecraft:raid_group_0"
+            },
+            "conditions": [
+              {
+                "minecraft:mob_event_filter": {
+                  "event": "minecraft:village_raid"
+                },
+                "minecraft:distance_filter": {
+                  "min": 0,
+                  "max": 1024
+                },
+                "minecraft:spawns_on_surface": {},
+                "minecraft:difficulty_filter": {
+                  "min": "easy",
+                  "max": "hard"
+                },
+                "minecraft:herd": {
+                  "min_size": 4,
+                  "max_size": 4,
+                  "event": "minecraft:spawn_for_raid"
+                },
+                "minecraft:permute_type": [
+                  {
+                    "weight": 100,
+                    "entity_type": "minecraft:pillager"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "versionIntroduced": "1.11.0"
+}

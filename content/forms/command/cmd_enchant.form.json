@@ -1,0 +1,91 @@
+{
+  "id": "cmd_enchant",
+  "title": "enchant",
+  "description": "Adds an enchantment to a player's selected item.",
+  "fields": [
+    {
+      "id": "player",
+      "title": "player",
+      "type": "string",
+      "isOptional": false,
+      "description": "A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "enchantmentname",
+      "title": "enchantmentName",
+      "type": "string",
+      "isOptional": false,
+      "description": "An enum for the enchantment that is applied.",
+      "subFormId": "type_enchant",
+      "commandType": "ENCHANT"
+    },
+    {
+      "id": "level",
+      "title": "level",
+      "type": "string",
+      "isOptional": true,
+      "description": "Optional. An `integer` that specifies the enchantment level.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "enchantmentid",
+      "title": "enchantmentId",
+      "type": "string",
+      "isOptional": false,
+      "description": "An integer ID for the enchantment that is applied.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Enchant player using enum",
+      "description": "Enchant a target player using and `enchantmentName` from the `enum`.",
+      "params": [
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "enchantmentname",
+          "type": "ENCHANT",
+          "isOptional": false
+        },
+        {
+          "name": "level",
+          "type": "INT",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Enchant player using integer ID",
+      "description": "Enchant a target player using `enchantmentId`.",
+      "params": [
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "enchantmentid",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "level",
+          "type": "INT",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

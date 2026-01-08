@@ -1,4 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "flees from sunlight"
+          }
+        ]
+      }
+    ]
+  },
+  "note": "This behavior is used by undead mobs like skeletons and zombies that burn in sunlight. The entity will seek shade or water during daytime to avoid sun damage.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.flee_sun",

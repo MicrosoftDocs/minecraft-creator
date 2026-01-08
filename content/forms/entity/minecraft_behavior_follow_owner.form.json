@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "follows its owner"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "note": "Requires the entity to be marked as an owner through taming.",
   "generated_doNotEdit": {

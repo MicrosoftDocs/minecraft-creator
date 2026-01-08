@@ -3,11 +3,14 @@ author: mammerla
 ms.author: mikeam
 title: "Block Culling Documentation - minecraft:description"
 description: "Describes the minecraft:description block culling"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Block Culling Documentation - minecraft:description
+
+Defines the identifier for a block culling rule.
 
 
 ## Client Block Description Properties

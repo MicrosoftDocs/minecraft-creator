@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has a custom underwater movement speed" }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:underwater_movement",
   "title": "Underwater Movement",
   "description": "Defines the speed with which an entity can move through water.",

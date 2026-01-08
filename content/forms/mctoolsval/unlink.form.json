@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "identifies content items that are not referenced"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "unlink",
+  "title": "Unlinked Items",
+  "description": "Identifies content items that are defined but not referenced anywhere in the project. Also detects dependencies on vanilla Minecraft content that may change.",
+  "fields": [
+    {
+      "id": "191",
+      "title": "Unused Item",
+      "messageType": 1,
+      "dataType": 2,
+      "description": "Warning when a defined resource (entity, block, item, etc.) is not referenced by any other content. The item may be unused or the reference may be missing.",
+      "technicalDescription": "Data contains the identifier of the unused item"
+    },
+    {
+      "id": "205",
+      "title": "Vanilla Reference",
+      "messageType": 3,
+      "dataType": 2,
+      "description": "Recommendation to avoid direct references to vanilla Minecraft items. Vanilla content may change between game versions, potentially breaking your add-on.",
+      "technicalDescription": "Data contains the vanilla item identifier being referenced"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "type_item",
+  "title": "Item ID",
+  "description": "An item type identifier.",
+  "fields": [],
+  "formatHint": "namespace:item_name or item_name",
+  "samples": {
+    "values": [
+      {
+        "path": "Diamond item",
+        "content": "diamond"
+      },
+      {
+        "path": "Iron sword with namespace",
+        "content": "minecraft:iron_sword"
+      },
+      {
+        "path": "Golden apple",
+        "content": "golden_apple"
+      }
+    ]
+  }
+}

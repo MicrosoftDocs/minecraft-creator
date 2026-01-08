@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns overlay alpha information"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.overlay_alpha",
   "fields": [],
   "isDeprecated": true,

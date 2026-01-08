@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines randomgrouppoolalias configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "RandomGroupPoolAlias",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

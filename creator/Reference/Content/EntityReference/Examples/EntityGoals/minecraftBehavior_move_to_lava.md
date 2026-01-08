@@ -3,17 +3,20 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:behavior.move_to_lava"
 description: "Describes the minecraft:behavior.move_to_lava ai behavior component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.move_to_lava
 
-Allows the mob to move back into lava when on land.
+> [!IMPORTANT]
+> This type is now deprecated, and no longer in use in the latest versions of Minecraft.
+
+Allows the mob to move back into lava when on land. This behavior has been replaced by minecraft:behavior.move_to_liquid.
 
 > [!Note]
-> Not currently used by any entities within Minecraft: Bedrock Edition.
-
+> This behavior was introduced in 1.16 but replaced by minecraft:behavior.move_to_liquid in 1.16.100 which supports any liquid type.
 
 ## Move To Lava Behavior Properties
 

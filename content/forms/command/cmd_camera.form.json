@@ -1,0 +1,2165 @@
+{
+  "id": "cmd_camera",
+  "title": "camera",
+  "description": "Transforms the camera for the selected player(s) to a different perspective.",
+  "fields": [
+    {
+      "id": "players",
+      "title": "players",
+      "type": "string",
+      "isOptional": false,
+      "description": "A target selector of players.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "set",
+      "title": "set",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "SET"
+    },
+    {
+      "id": "preset",
+      "title": "preset",
+      "type": "string",
+      "isOptional": false,
+      "description": "A camera preset defined in a camera JSON file.",
+      "commandType": "CAMERAPRESETS"
+    },
+    {
+      "id": "ease",
+      "title": "ease",
+      "type": "string",
+      "isOptional": false,
+      "description": "Signifies the start of a section for defining ease override parameters.",
+      "commandType": "EASE"
+    },
+    {
+      "id": "easetime",
+      "title": "easeTime",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specified time for the easing.",
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "easetype",
+      "title": "easeType",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specified type of the easing to use.",
+      "commandType": "EASING"
+    },
+    {
+      "id": "pos",
+      "title": "pos",
+      "type": "string",
+      "isOptional": false,
+      "description": "A subsection of the command for defining a position.",
+      "commandType": "POS"
+    },
+    {
+      "id": "position",
+      "title": "position",
+      "type": "string",
+      "isOptional": false,
+      "description": "The position to locate the camera at.",
+      "subFormId": "type_position_float",
+      "commandType": "POSITION_FLOAT"
+    },
+    {
+      "id": "rot",
+      "title": "rot",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies a subsection of the command for defining a rotation.",
+      "commandType": "ROT"
+    },
+    {
+      "id": "xrot",
+      "title": "xRot",
+      "type": "string",
+      "isOptional": false,
+      "description": "x Rotation value",
+      "subFormId": "type_rval",
+      "commandType": "RVAL"
+    },
+    {
+      "id": "yrot",
+      "title": "yRot",
+      "type": "string",
+      "isOptional": false,
+      "description": "y Rotation value",
+      "subFormId": "type_rval",
+      "commandType": "RVAL"
+    },
+    {
+      "id": "facing",
+      "title": "facing",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies a facing section of the camera command.",
+      "commandType": "FACING"
+    },
+    {
+      "id": "lookatentity",
+      "title": "lookAtEntity",
+      "type": "string",
+      "isOptional": false,
+      "description": "A target selector to use for looking at an entity.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "lookatposition",
+      "title": "lookAtPosition",
+      "type": "string",
+      "isOptional": false,
+      "description": "A position to look at.",
+      "subFormId": "type_position_float",
+      "commandType": "POSITION_FLOAT"
+    },
+    {
+      "id": "default",
+      "title": "default",
+      "type": "string",
+      "isOptional": true,
+      "description": "Specifies that the camera movement should be reset to its default parameters.",
+      "commandType": "DEFAULT"
+    },
+    {
+      "id": "attach_to_entity",
+      "title": "attach_to_entity",
+      "type": "string",
+      "isOptional": false,
+      "description": "Related entity",
+      "commandType": "ATTACH_TO_ENTITY"
+    },
+    {
+      "id": "entity",
+      "title": "entity",
+      "type": "string",
+      "isOptional": false,
+      "description": "Related entity",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "detach_from_entity",
+      "title": "detach_from_entity",
+      "type": "string",
+      "isOptional": false,
+      "description": "Related entity",
+      "commandType": "DETACH_FROM_ENTITY"
+    },
+    {
+      "id": "targetentity",
+      "title": "targetEntity",
+      "type": "string",
+      "isOptional": false,
+      "description": "Targeted entity that the camera should focus on",
+      "commandType": "TARGET_ENTITY"
+    },
+    {
+      "id": "targetcenteroffset",
+      "title": "targetCenterOffset",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies that there should be offset coordinates for cameras that have a particular coordinate",
+      "commandType": "TARGET_CENTER_OFFSET"
+    },
+    {
+      "id": "xtargetcenteroffset",
+      "title": "xTargetCenterOffset",
+      "type": "string",
+      "isOptional": false,
+      "description": "X offset from the center of a targeted entity",
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "ytargetcenteroffset",
+      "title": "yTargetCenterOffset",
+      "type": "string",
+      "isOptional": false,
+      "description": "Y offset from the center of a targeted entity",
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "ztargetcenteroffset",
+      "title": "zTargetCenterOffset",
+      "type": "string",
+      "isOptional": false,
+      "description": "Z offset from the center of a targeted entity",
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "removetarget",
+      "title": "removeTarget",
+      "type": "string",
+      "isOptional": false,
+      "description": "Value that indicates a target should be removed",
+      "commandType": "REMOVE_TARGET"
+    },
+    {
+      "id": "view_offset",
+      "title": "view_offset",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies that there should be offset coordinates of a view",
+      "commandType": "VIEW_OFFSET"
+    },
+    {
+      "id": "xviewoffset",
+      "title": "xViewOffset",
+      "type": "string",
+      "isOptional": false,
+      "description": "X component of a view offset",
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "yviewoffset",
+      "title": "yViewOffset",
+      "type": "string",
+      "isOptional": false,
+      "description": "Y component of a view offset",
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "entity_offset",
+      "title": "entity_offset",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "ENTITY_OFFSET"
+    },
+    {
+      "id": "xentityoffset",
+      "title": "xEntityOffset",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "yentityoffset",
+      "title": "yEntityOffset",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "zentityoffset",
+      "title": "zEntityOffset",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "clear",
+      "title": "clear",
+      "type": "string",
+      "isOptional": false,
+      "description": "Clears any existing camera update documentation.",
+      "commandType": "CLEAR"
+    },
+    {
+      "id": "fade",
+      "title": "fade",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies the start of a fade definition section of the command.",
+      "commandType": "FADE"
+    },
+    {
+      "id": "time",
+      "title": "time",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies the start of a time section of a camera command.",
+      "subFormId": "type_time",
+      "commandType": "TIME"
+    },
+    {
+      "id": "fadeinseconds",
+      "title": "fadeInSeconds",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies a fade-in time value.",
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "holdseconds",
+      "title": "holdSeconds",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies the amount of time to hold the camera view.",
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "fadeoutseconds",
+      "title": "fadeOutSeconds",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies the number of seconds to fade out the camera.",
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "color",
+      "title": "color",
+      "type": "string",
+      "isOptional": false,
+      "description": "Specifies the start of a color section of a camera set command.",
+      "commandType": "COLOR"
+    },
+    {
+      "id": "red",
+      "title": "red",
+      "type": "string",
+      "isOptional": false,
+      "description": "Red component of a color value. Valid values are between 0 and 255.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "green",
+      "title": "green",
+      "type": "string",
+      "isOptional": false,
+      "description": "Green component of a color value. Valid values are between 0 and 255.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "blue",
+      "title": "blue",
+      "type": "string",
+      "isOptional": false,
+      "description": "Blue component of a color value. Valid values are between 0 and 255.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "fov_set",
+      "title": "fov_set",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "FOV_SET"
+    },
+    {
+      "id": "fov_value",
+      "title": "fov_value",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "foveasetime",
+      "title": "fovEaseTime",
+      "type": "string",
+      "isOptional": true,
+      "subFormId": "type_val",
+      "commandType": "VAL"
+    },
+    {
+      "id": "foveasetype",
+      "title": "fovEaseType",
+      "type": "string",
+      "isOptional": true,
+      "commandType": "EASING"
+    },
+    {
+      "id": "fov_clear",
+      "title": "fov_clear",
+      "type": "string",
+      "isOptional": false,
+      "description": "Clears any existing camera update documentation.",
+      "commandType": "FOV_CLEAR"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Sets camera with easing overrides and initial position and x/y rotation",
+      "description": "Sets a camera with a specified preset and a fixed x/y rotation.",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "ease",
+          "type": "EASE",
+          "isOptional": false
+        },
+        {
+          "name": "easetime",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "easetype",
+          "type": "EASING",
+          "isOptional": false
+        },
+        {
+          "name": "pos",
+          "type": "POS",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "rot",
+          "type": "ROT",
+          "isOptional": false
+        },
+        {
+          "name": "xrot",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "yrot",
+          "type": "RVAL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Sets camera with easing overrides and initial position, looking at a selected entity",
+      "description": "Sets a camera with a specified preset while looking at a selected entity.",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "ease",
+          "type": "EASE",
+          "isOptional": false
+        },
+        {
+          "name": "easetime",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "easetype",
+          "type": "EASING",
+          "isOptional": false
+        },
+        {
+          "name": "pos",
+          "type": "POS",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "facing",
+          "type": "FACING",
+          "isOptional": false
+        },
+        {
+          "name": "lookatentity",
+          "type": "SELECTION",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Sets camera with easing overrides and a initial position, looking at a particular position",
+      "description": "Sets a camera with a specified preset while looking at a particular position.",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "ease",
+          "type": "EASE",
+          "isOptional": false
+        },
+        {
+          "name": "easetime",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "easetype",
+          "type": "EASING",
+          "isOptional": false
+        },
+        {
+          "name": "pos",
+          "type": "POS",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "facing",
+          "type": "FACING",
+          "isOptional": false
+        },
+        {
+          "name": "lookatposition",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Sets camera with easing overrides and a position",
+      "description": "Sets a camera with a specified preset, easing, and position.",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "ease",
+          "type": "EASE",
+          "isOptional": false
+        },
+        {
+          "name": "easetime",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "easetype",
+          "type": "EASING",
+          "isOptional": false
+        },
+        {
+          "name": "pos",
+          "type": "POS",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Sets camera with easing overrides and rotation",
+      "description": "Sets a camera with a specified preset and rotation.",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "ease",
+          "type": "EASE",
+          "isOptional": false
+        },
+        {
+          "name": "easetime",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "easetype",
+          "type": "EASING",
+          "isOptional": false
+        },
+        {
+          "name": "rot",
+          "type": "ROT",
+          "isOptional": false
+        },
+        {
+          "name": "xrot",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "yrot",
+          "type": "RVAL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Sets camera with easing overrides and looking at an entity",
+      "description": "Sets a camera with a specified easing and time, facing an entity",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "ease",
+          "type": "EASE",
+          "isOptional": false
+        },
+        {
+          "name": "easetime",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "easetype",
+          "type": "EASING",
+          "isOptional": false
+        },
+        {
+          "name": "facing",
+          "type": "FACING",
+          "isOptional": false
+        },
+        {
+          "name": "lookatentity",
+          "type": "SELECTION",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Sets camera looking at a position, with easing",
+      "description": "Sets a camera with a specified easing and time, facing a position",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "ease",
+          "type": "EASE",
+          "isOptional": false
+        },
+        {
+          "name": "easetime",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "easetype",
+          "type": "EASING",
+          "isOptional": false
+        },
+        {
+          "name": "facing",
+          "type": "FACING",
+          "isOptional": false
+        },
+        {
+          "name": "lookatposition",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Sets camera with an easing",
+      "description": "Sets a camera with a specified easing.",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "ease",
+          "type": "EASE",
+          "isOptional": false
+        },
+        {
+          "name": "easetime",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "easetype",
+          "type": "EASING",
+          "isOptional": false
+        },
+        {
+          "name": "default",
+          "type": "DEFAULT",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Sets camera with a position and rotation",
+      "description": "Sets a camera with an override position and a specific x/y rotation.",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "pos",
+          "type": "POS",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "rot",
+          "type": "ROT",
+          "isOptional": false
+        },
+        {
+          "name": "xrot",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "yrot",
+          "type": "RVAL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Set camera with override facings, looking at an entity",
+      "description": "Sets a camera with override positions and facing at a particular entity.",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "pos",
+          "type": "POS",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "facing",
+          "type": "FACING",
+          "isOptional": false
+        },
+        {
+          "name": "lookatentity",
+          "type": "SELECTION",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Set camera with override facings, looking at a position",
+      "description": "Sets a camera with override positions facing a particular position.",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "pos",
+          "type": "POS",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        },
+        {
+          "name": "facing",
+          "type": "FACING",
+          "isOptional": false
+        },
+        {
+          "name": "lookatposition",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Set camera with a target entity",
+      "description": "Specifies a camera transition with target",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "attach_to_entity",
+          "type": "ATTACH_TO_ENTITY",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "SELECTION",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Set camera with a target entity and positional offset",
+      "description": "",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "detach_from_entity",
+          "type": "DETACH_FROM_ENTITY",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Removes camera target",
+      "description": "Removes a camera target.",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "targetentity",
+          "type": "TARGET_ENTITY",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "SELECTION",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Set camera with a view offset",
+      "description": "",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "targetentity",
+          "type": "TARGET_ENTITY",
+          "isOptional": false
+        },
+        {
+          "name": "entity",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "targetcenteroffset",
+          "type": "TARGET_CENTER_OFFSET",
+          "isOptional": false
+        },
+        {
+          "name": "xtargetcenteroffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "ytargetcenteroffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "ztargetcenteroffset",
+          "type": "VAL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Set camera to default",
+      "description": "Sets a camera using the default settings for the camera preset.",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "removetarget",
+          "type": "REMOVE_TARGET",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Sets a camera from a position",
+      "description": "Sets a camera from a position.",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "view_offset",
+          "type": "VIEW_OFFSET",
+          "isOptional": false
+        },
+        {
+          "name": "xviewoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "yviewoffset",
+          "type": "VAL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Camera facing rotation",
+      "description": "Specifies a camera with a particular rotatoin",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "entity_offset",
+          "type": "ENTITY_OFFSET",
+          "isOptional": false
+        },
+        {
+          "name": "xentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "yentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "zentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Fade out to times",
+      "description": "Specifies a camera timed fade-out type operation.",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "rot",
+          "type": "ROT",
+          "isOptional": false
+        },
+        {
+          "name": "xrot",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "yrot",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "view_offset",
+          "type": "VIEW_OFFSET",
+          "isOptional": false
+        },
+        {
+          "name": "xviewoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "yviewoffset",
+          "type": "VAL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Camera preset facing/looking at a position",
+      "description": "Specifies a camera looking at a particular position.",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "rot",
+          "type": "ROT",
+          "isOptional": false
+        },
+        {
+          "name": "xrot",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "yrot",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "entity_offset",
+          "type": "ENTITY_OFFSET",
+          "isOptional": false
+        },
+        {
+          "name": "xentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "yentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "zentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "title": "Fade",
+      "description": "Specifies a general camera fade-out.",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "view_offset",
+          "type": "VIEW_OFFSET",
+          "isOptional": false
+        },
+        {
+          "name": "xviewoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "yviewoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "entity_offset",
+          "type": "ENTITY_OFFSET",
+          "isOptional": false
+        },
+        {
+          "name": "xentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "yentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "zentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "title": "Clear",
+      "description": "Clears any active camera changes for the player.",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "rot",
+          "type": "ROT",
+          "isOptional": false
+        },
+        {
+          "name": "xrot",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "yrot",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "view_offset",
+          "type": "VIEW_OFFSET",
+          "isOptional": false
+        },
+        {
+          "name": "xviewoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "yviewoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "entity_offset",
+          "type": "ENTITY_OFFSET",
+          "isOptional": false
+        },
+        {
+          "name": "xentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "yentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "zentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "title": "Timed color-tinted fade",
+      "description": "Applies a color tinted fade for the specified fade in, hold, and out time periods.",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "ease",
+          "type": "EASE",
+          "isOptional": false
+        },
+        {
+          "name": "easetime",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "easetype",
+          "type": "EASING",
+          "isOptional": false
+        },
+        {
+          "name": "view_offset",
+          "type": "VIEW_OFFSET",
+          "isOptional": false
+        },
+        {
+          "name": "xviewoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "yviewoffset",
+          "type": "VAL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "title": "Timed fade",
+      "description": "Applies a fade for the specified fade in, hold, and out time periods.",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "ease",
+          "type": "EASE",
+          "isOptional": false
+        },
+        {
+          "name": "easetime",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "easetype",
+          "type": "EASING",
+          "isOptional": false
+        },
+        {
+          "name": "entity_offset",
+          "type": "ENTITY_OFFSET",
+          "isOptional": false
+        },
+        {
+          "name": "xentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "yentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "zentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "title": "Color-tinted fade",
+      "description": "Applies a color-tinted fade for the selected player(s).",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "ease",
+          "type": "EASE",
+          "isOptional": false
+        },
+        {
+          "name": "easetime",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "easetype",
+          "type": "EASING",
+          "isOptional": false
+        },
+        {
+          "name": "rot",
+          "type": "ROT",
+          "isOptional": false
+        },
+        {
+          "name": "xrot",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "yrot",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "view_offset",
+          "type": "VIEW_OFFSET",
+          "isOptional": false
+        },
+        {
+          "name": "xviewoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "yviewoffset",
+          "type": "VAL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "title": "Fade",
+      "description": "Applies a fade for the selected player(s)",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "ease",
+          "type": "EASE",
+          "isOptional": false
+        },
+        {
+          "name": "easetime",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "easetype",
+          "type": "EASING",
+          "isOptional": false
+        },
+        {
+          "name": "rot",
+          "type": "ROT",
+          "isOptional": false
+        },
+        {
+          "name": "xrot",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "yrot",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "entity_offset",
+          "type": "ENTITY_OFFSET",
+          "isOptional": false
+        },
+        {
+          "name": "xentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "yentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "zentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "title": "Overload 27",
+      "description": "",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "ease",
+          "type": "EASE",
+          "isOptional": false
+        },
+        {
+          "name": "easetime",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "easetype",
+          "type": "EASING",
+          "isOptional": false
+        },
+        {
+          "name": "view_offset",
+          "type": "VIEW_OFFSET",
+          "isOptional": false
+        },
+        {
+          "name": "xviewoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "yviewoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "entity_offset",
+          "type": "ENTITY_OFFSET",
+          "isOptional": false
+        },
+        {
+          "name": "xentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "yentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "zentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "title": "Overload 28",
+      "description": "",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "ease",
+          "type": "EASE",
+          "isOptional": false
+        },
+        {
+          "name": "easetime",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "easetype",
+          "type": "EASING",
+          "isOptional": false
+        },
+        {
+          "name": "rot",
+          "type": "ROT",
+          "isOptional": false
+        },
+        {
+          "name": "xrot",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "yrot",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "view_offset",
+          "type": "VIEW_OFFSET",
+          "isOptional": false
+        },
+        {
+          "name": "xviewoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "yviewoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "entity_offset",
+          "type": "ENTITY_OFFSET",
+          "isOptional": false
+        },
+        {
+          "name": "xentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "yentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "zentityoffset",
+          "type": "VAL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "title": "Overload 29",
+      "description": "",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "pos",
+          "type": "POS",
+          "isOptional": false
+        },
+        {
+          "name": "position",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "title": "Overload 30",
+      "description": "",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "rot",
+          "type": "ROT",
+          "isOptional": false
+        },
+        {
+          "name": "xrot",
+          "type": "RVAL",
+          "isOptional": false
+        },
+        {
+          "name": "yrot",
+          "type": "RVAL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "31",
+      "title": "Overload 31",
+      "description": "",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "facing",
+          "type": "FACING",
+          "isOptional": false
+        },
+        {
+          "name": "lookatentity",
+          "type": "SELECTION",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "32",
+      "title": "Overload 32",
+      "description": "",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "facing",
+          "type": "FACING",
+          "isOptional": false
+        },
+        {
+          "name": "lookatposition",
+          "type": "POSITION_FLOAT",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "33",
+      "title": "Overload 33",
+      "description": "",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "SET",
+          "isOptional": false
+        },
+        {
+          "name": "preset",
+          "type": "CAMERAPRESETS",
+          "isOptional": false
+        },
+        {
+          "name": "default",
+          "type": "DEFAULT",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "34",
+      "title": "Overload 34",
+      "description": "",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "clear",
+          "type": "CLEAR",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "35",
+      "title": "Overload 35",
+      "description": "",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "fade",
+          "type": "FADE",
+          "isOptional": false
+        },
+        {
+          "name": "time",
+          "type": "TIME",
+          "isOptional": false
+        },
+        {
+          "name": "fadeinseconds",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "holdseconds",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "fadeoutseconds",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "color",
+          "type": "COLOR",
+          "isOptional": false
+        },
+        {
+          "name": "red",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "green",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "blue",
+          "type": "INT",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "36",
+      "title": "Overload 36",
+      "description": "",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "fade",
+          "type": "FADE",
+          "isOptional": false
+        },
+        {
+          "name": "time",
+          "type": "TIME",
+          "isOptional": false
+        },
+        {
+          "name": "fadeinseconds",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "holdseconds",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "fadeoutseconds",
+          "type": "VAL",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "37",
+      "title": "Overload 37",
+      "description": "",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "fade",
+          "type": "FADE",
+          "isOptional": false
+        },
+        {
+          "name": "color",
+          "type": "COLOR",
+          "isOptional": false
+        },
+        {
+          "name": "red",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "green",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "blue",
+          "type": "INT",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "38",
+      "title": "Overload 38",
+      "description": "",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "fade",
+          "type": "FADE",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "39",
+      "title": "Overload 39",
+      "description": "",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "fov_set",
+          "type": "FOV_SET",
+          "isOptional": false
+        },
+        {
+          "name": "fov_value",
+          "type": "VAL",
+          "isOptional": false
+        },
+        {
+          "name": "foveasetime",
+          "type": "VAL",
+          "isOptional": true
+        },
+        {
+          "name": "foveasetype",
+          "type": "EASING",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "id": "40",
+      "title": "Overload 40",
+      "description": "",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "fov_clear",
+          "type": "FOV_CLEAR",
+          "isOptional": false
+        },
+        {
+          "name": "foveasetime",
+          "type": "VAL",
+          "isOptional": true
+        },
+        {
+          "name": "foveasetype",
+          "type": "EASING",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

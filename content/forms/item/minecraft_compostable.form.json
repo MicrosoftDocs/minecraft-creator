@@ -1,5 +1,32 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:compostable",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "composting_chance",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has "
+          },
+          {
+            "type": "value",
+            "field": "composting_chance"
+          },
+          {
+            "type": "literal",
+            "text": "% chance to compost"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:compostable",

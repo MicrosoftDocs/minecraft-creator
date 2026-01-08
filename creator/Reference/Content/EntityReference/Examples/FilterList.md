@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Filter Types Documentation - Entity Filter Types"
 description: "A reference document describing all current Entity Filter Types"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

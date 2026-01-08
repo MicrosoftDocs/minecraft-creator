@@ -1,0 +1,19 @@
+{
+  "id": "type_id",
+  "title": "Identifier",
+  "description": "A unique identifier string. Usually lowercase with underscores.",
+  "fields": [],
+  "formatHint": "lowercase_name",
+  "samples": {
+    "values": [
+      {
+        "path": "Scoreboard objective name",
+        "content": "my_objective"
+      },
+      {
+        "path": "A score identifier",
+        "content": "player_score"
+      }
+    ]
+  }
+}

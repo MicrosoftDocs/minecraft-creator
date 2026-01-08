@@ -1,6 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "player_state",
   "title": "Player state",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "describes a player's current state"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "name",
@@ -20,5 +33,6 @@
       "dataType": 15,
       "subFormId": "action_set/entity"
     }
-  ]
+  ],
+  "description": "Captures information about a player's current state including position, rotation, inventory, and game mode. Used in automated testing to verify player conditions or to set up test scenarios with specific player configurations."
 }

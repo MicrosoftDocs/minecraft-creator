@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "controls whether particles inherit emitter position and rotation"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "emitter_local_space proxy",
@@ -23,5 +36,6 @@
         "defaultValue": false
       }
     ]
-  }
+  },
+  "description": "Controls whether particles inherit emitter position and rotation."
 }

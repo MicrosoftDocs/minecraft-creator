@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines record component"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:record",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

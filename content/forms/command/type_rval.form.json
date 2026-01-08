@@ -1,0 +1,36 @@
+{
+  "id": "type_rval",
+  "title": "Rotation Value",
+  "description": "A rotation angle in degrees. Can be absolute or relative.",
+  "fields": [],
+  "formatHint": "0-360 or ~offset",
+  "note": "For yaw (horizontal): 0=South, 90=West, 180=North, -90=East. For pitch (vertical): -90=up, 0=forward, 90=down.",
+  "samples": {
+    "values": [
+      {
+        "path": "South (0°)",
+        "content": "0"
+      },
+      {
+        "path": "West (90°)",
+        "content": "90"
+      },
+      {
+        "path": "North (180°)",
+        "content": "180"
+      },
+      {
+        "path": "East (-90° or 270°)",
+        "content": "-90"
+      },
+      {
+        "path": "Keep current rotation",
+        "content": "~"
+      },
+      {
+        "path": "Rotate 90° from current",
+        "content": "~90"
+      }
+    ]
+  }
+}

@@ -3,13 +3,14 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:knockback_resistance"
 description: "Describes the minecraft:knockback_resistance entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:knockback_resistance
 
-Compels an entity to resist being knocked backwards by a melee attack.
+Determines an entity's resistance to knockback from melee attacks. A value of 0.0 means no resistance, while 1.0 provides full immunity to knockback (like iron golems).
 
 ## Alternate Simple Representations
 
@@ -20,8 +21,8 @@ This item can also be represented as a `Decimal number`.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| max | *not set* | Decimal number | Maximum potential knockback resistence that this has. | Ender Dragon: `100` | 
-| value | *not set* | Decimal number | The amount of knockback resistance that an entity has. | Armor Stand: `1`, Ender Dragon: `100`, Hoglin: `0.6` | 
+| max | *not set* | Decimal number | Maximum potential knockback resistance for this entity. | Ender Dragon: `100` | 
+| value | *not set* | Decimal number | The amount of knockback resistance, from 0.0 (none) to 1.0 (full immunity). | Armor Stand: `1`, Ender Dragon: `100`, Hoglin: `0.6` | 
 
 ## Samples
 

@@ -48,6 +48,7 @@ Type: *string*
 - [getBlockPriorities](#getblockpriorities)
 - [getBlockTagPriorities](#getblocktagpriorities)
 - [getEntityPriorities](#getentitypriorities)
+- [getEntityTypeFamilyPriorities](#getentitytypefamilypriorities)
 
 ### **getBlockPriorities**
 `
@@ -72,6 +73,7 @@ Gets the priority settings used for block targeting.
   
 Notes:
 - This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
 ### **getEntityPriorities**
 `
@@ -84,3 +86,16 @@ Gets the priority settings used for entity targeting.
   
 Notes:
 - This function can throw errors.
+
+### **getEntityTypeFamilyPriorities**
+`
+getEntityTypeFamilyPriorities(): Record<string, number>
+`
+
+Gets the priority settings used for entity targeting.
+
+**Returns** Record<*string*, *number*> - Map entity type families to their priority settings in a Record. Larger numbers have greater priority.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)

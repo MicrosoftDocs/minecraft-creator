@@ -1,6 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "test_simulated_player_spawn",
   "title": "Spawn Entity",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spawns a simulated player at a location"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "test",
     "action"
@@ -11,5 +24,6 @@
       "title": "Location",
       "dataType": 11
     }
-  ]
+  ],
+  "description": "Creates a simulated player entity for automated testing. Simulated players can move, interact with blocks, attack entities, and use items just like real players, but are controlled programmatically. Essential for testing player-facing features in the GameTest Framework."
 }

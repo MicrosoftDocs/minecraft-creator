@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "places blocks in the world"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.place_block",
   "fields": [],
   "generated_doNotEdit": {
@@ -397,5 +410,6 @@
         }
       ]
     }
-  }
+  },
+  "description": "AI goal that makes entities place blocks into the world, like Endermen placing their carried block or snow golems leaving snow trails. Configure which blocks can be placed, where they can be placed, and how often the entity attempts placement. Creates mobs that modify the environment."
 }

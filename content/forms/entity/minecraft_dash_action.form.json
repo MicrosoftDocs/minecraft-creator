@@ -1,4 +1,32 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can perform dash actions"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "can_dash_underwater",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can dash underwater"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:dash_action",
   "fields": [],
   "generated_doNotEdit": {

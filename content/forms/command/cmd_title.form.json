@@ -1,0 +1,173 @@
+{
+  "id": "cmd_title",
+  "title": "title",
+  "description": "Controls the text and behavior for screen titles using plain text.",
+  "fields": [
+    {
+      "id": "player",
+      "title": "player",
+      "type": "string",
+      "isOptional": false,
+      "description": "A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "clear",
+      "title": "clear",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "TITLECLEAR"
+    },
+    {
+      "id": "reset",
+      "title": "reset",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "TITLERESET"
+    },
+    {
+      "id": "titlelocation",
+      "title": "titleLocation",
+      "type": "string",
+      "isOptional": false,
+      "description": "An `enum` of `title`, `subtitle`, or `actionbar`.",
+      "commandType": "TITLESET"
+    },
+    {
+      "id": "titletext",
+      "title": "titleText",
+      "type": "string",
+      "isOptional": false,
+      "description": "A `plain text` `string`  for the title text.",
+      "subFormId": "type_message_root",
+      "commandType": "MESSAGE_ROOT"
+    },
+    {
+      "id": "times",
+      "title": "times",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "TITLETIMES"
+    },
+    {
+      "id": "fadein",
+      "title": "fadeIn",
+      "type": "string",
+      "isOptional": false,
+      "description": "The number of gameticks for the title to fade in. Default: `10`.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "stay",
+      "title": "stay",
+      "type": "string",
+      "isOptional": false,
+      "description": "The number of gameticks for the title to stay. Default: `70`.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    },
+    {
+      "id": "fadeout",
+      "title": "fadeOut",
+      "type": "string",
+      "isOptional": false,
+      "description": "The number of gameticks for the title to fade out. Default: `20`.",
+      "subFormId": "type_int",
+      "commandType": "INT"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Clear title",
+      "description": "`Clear` the `title` for a given `player`.",
+      "params": [
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "clear",
+          "type": "TITLECLEAR",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Reset title",
+      "description": "`Reset` the subtitle text for a given `player` to blank text and sets the `fadeIn`, `stay`, and `fadeOut` times to their default values.",
+      "params": [
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "reset",
+          "type": "TITLERESET",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Add title, location, message",
+      "description": "Add a `title` for a `player` at a given `location` with a `title message`.",
+      "params": [
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "titlelocation",
+          "type": "TITLESET",
+          "isOptional": false
+        },
+        {
+          "name": "titletext",
+          "type": "MESSAGE_ROOT",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Add title, fade in, fade out",
+      "description": "Add a `title` for a `player` with set `fade in`, `stay`, and `fade out` times.",
+      "params": [
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "times",
+          "type": "TITLETIMES",
+          "isOptional": false
+        },
+        {
+          "name": "fadein",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "stay",
+          "type": "INT",
+          "isOptional": false
+        },
+        {
+          "name": "fadeout",
+          "type": "INT",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

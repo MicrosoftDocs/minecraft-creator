@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns block neighbor has any tag information"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.block_neighbor_has_any_tag",
   "fields": [],
   "generated_doNotEdit": {

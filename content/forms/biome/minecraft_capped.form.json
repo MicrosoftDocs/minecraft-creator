@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "generates capped surfaces on non-solid blocks"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:capped",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

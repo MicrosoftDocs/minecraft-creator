@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns ratio between the previous and next key frames"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.key_frame_lerp_time",
   "fields": [],
   "generated_doNotEdit": {

@@ -1,4 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "stays in place while sitting"
+          }
+        ]
+      }
+    ]
+  },
+  "note": "This behavior works with the minecraft:sittable component. When the entity is commanded to sit, this goal prevents other behaviors from moving the entity.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.stay_while_sitting",

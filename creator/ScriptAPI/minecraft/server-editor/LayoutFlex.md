@@ -4,15 +4,15 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server-editor.LayoutDirection Enumeration
-description: Contents of the @minecraft/server-editor.LayoutDirection enumeration.
+title: minecraft/server-editor.LayoutFlex Enumeration
+description: Contents of the @minecraft/server-editor.LayoutFlex enumeration.
 ---
-# LayoutDirection Enumeration
+# LayoutFlex Enumeration
 
-Layout directions for property panes.
+Flexible layout types
 
 ## Constants
-### **Vertical**
-`Vertical = 0`
-### **Horizontal**
-`Horizontal = 1`
+### **Grow**
+`Grow = Grow`
+### **Shrink**
+`Shrink = Shrink`

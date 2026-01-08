@@ -1,5 +1,39 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "TradeItemQuantity",
+  "title": "Trade Item Quantity",
+  "description": "Defines a random quantity range for a trade item.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "requires between " },
+          { "type": "value", "field": "min" },
+          { "type": "literal", "text": " and " },
+          { "type": "value", "field": "max" },
+          { "type": "literal", "text": " items" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "min",
+      "title": "Minimum",
+      "description": "Minimum number of items for this trade.",
+      "dataType": 0,
+      "defaultValue": 1,
+      "minValue": 1
+    },
+    {
+      "id": "max",
+      "title": "Maximum",
+      "description": "Maximum number of items for this trade.",
+      "dataType": 0,
+      "defaultValue": 1,
+      "minValue": 1
+    }
+  ],
   "generated_doNotEdit": {
     "title": ":Quantity",
     "description": ":Quantity",

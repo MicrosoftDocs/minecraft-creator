@@ -1,5 +1,29 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Spawn Description",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "identifier",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines spawn rules for "
+          },
+          {
+            "type": "value",
+            "field": "identifier",
+            "humanify": "minecraft"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn Description",
@@ -18,5 +42,6 @@
         "defaultValue": ""
       }
     ]
-  }
+  },
+  "description": "The description block that identifies which entity these spawn rules apply to, via the entity identifier (e.g., 'minecraft:zombie'). Also specifies the population control group for managing spawn caps."
 }

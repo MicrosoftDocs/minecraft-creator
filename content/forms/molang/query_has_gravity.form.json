@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is affected by gravity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.has_gravity",
   "fields": [],
   "generated_doNotEdit": {

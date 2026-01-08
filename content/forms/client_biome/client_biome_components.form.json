@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Client Biome Components",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines visual and audio components for a biome"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Client Biome Components",
@@ -81,6 +94,7 @@
         "title": "Minecraft Water Appearance",
         "description": "Set the water surface color used during rendering. Biomes without this component will have default water surface color behavior.",
         "dataType": 16,
+        "technicalDescription": "Make sure that at least either the surface color or the opacity is specified",
         "subFormId": "client_biome/minecraft_water_appearance"
       },
       {

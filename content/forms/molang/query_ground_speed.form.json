@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns ground speed of the entity in meters/second"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.ground_speed",
   "fields": [],
   "generated_doNotEdit": {

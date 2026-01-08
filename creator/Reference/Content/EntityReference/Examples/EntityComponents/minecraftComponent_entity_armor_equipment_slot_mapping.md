@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:entity_armor_equipment_slot_mapping"
 description: "Describes the minecraft:entity_armor_equipment_slot_mapping entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

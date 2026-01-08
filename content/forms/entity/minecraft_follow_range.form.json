@@ -1,18 +1,31 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [{ "field": "value", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "has a follow range of " },
+          { "type": "value", "field": "value" },
+          { "type": "literal", "text": " blocks" }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:follow_range",
   "title": "Follow Range",
-  "description": "Defines the range, in blocks, that a mob will pursue a target.",
+  "description": "Defines the maximum range, in blocks, that a mob will pursue a target. This affects AI behaviors like chasing players or attacking.",
   "fields": [
     {
       "id": "value",
       "title": "Value",
-      "description": "The radius of the area of blocks the entity will attempt to stay within around a target.",
+      "description": "The default follow range in blocks. Entities will attempt to stay within this radius of their target.",
       "dataType": 0
     },
     {
       "id": "max",
       "title": "Max",
-      "description": "Maximum distance the mob will go from a target.",
+      "description": "Maximum follow distance in blocks. The entity will not pursue targets beyond this range.",
       "dataType": 0
     }
   ]

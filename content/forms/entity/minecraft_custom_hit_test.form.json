@@ -1,5 +1,24 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has custom hitboxes for combat"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "hitboxes",
+      "title": "Hitboxes",
+      "description": "Comma-separated list of hitboxes."
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:custom_hit_test",
     "title": "Custom Hit Test",

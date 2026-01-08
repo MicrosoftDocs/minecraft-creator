@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "takes off from the ground (dragon-specific)"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "restrictions": [
     {

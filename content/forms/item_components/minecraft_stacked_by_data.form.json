@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "stacks based on data values" }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "scalarFieldUpgradeName": "value",
   "generated_doNotEdit": {

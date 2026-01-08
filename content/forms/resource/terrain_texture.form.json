@@ -1,0 +1,85 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "terrain_texture",
+  "title": "Terrain Texture Atlas",
+  "description": "The terrain_texture.json file defines the texture atlas for block textures. It maps texture names to texture file paths, allowing blocks to reference textures by name. Located at textures/terrain_texture.json in resource packs.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "maps block texture names to their file paths in the terrain atlas" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "resource_pack_name",
+      "title": "Resource Pack Name",
+      "description": "The name of the resource pack this atlas belongs to.",
+      "dataType": 2,
+      "isRequired": true
+    },
+    {
+      "id": "texture_name",
+      "title": "Texture Name",
+      "description": "The name of the texture atlas. Typically 'atlas.terrain' for block textures.",
+      "dataType": 2,
+      "defaultValue": "atlas.terrain",
+      "isRequired": true
+    },
+    {
+      "id": "padding",
+      "title": "Padding",
+      "description": "The padding in pixels between textures in the atlas to prevent bleeding.",
+      "dataType": 0,
+      "defaultValue": 8
+    },
+    {
+      "id": "num_mip_levels",
+      "title": "Number of Mip Levels",
+      "description": "The number of mipmap levels to generate for the atlas.",
+      "dataType": 0,
+      "defaultValue": 4
+    },
+    {
+      "id": "texture_data",
+      "title": "Texture Data",
+      "description": "A collection of texture definitions keyed by texture name. Each entry maps a texture name to its source file(s).",
+      "dataType": 14,
+      "isRequired": true,
+      "subForm": {
+        "id": "terrain_texture_entry",
+        "title": "Texture Entry",
+        "description": "Defines a texture that can be referenced by blocks.",
+        "fields": [
+          {
+            "id": "textures",
+            "title": "Textures",
+            "description": "Array of texture file paths. Multiple paths can be provided for variants (used with aux values in older versions).",
+            "dataType": 17,
+            "isRequired": true
+          },
+          {
+            "id": "overlay_color",
+            "title": "Overlay Color",
+            "description": "A color to overlay on top of the texture, specified as a hex color code.",
+            "dataType": 2
+          }
+        ]
+      }
+    }
+  ],
+  "samples": {
+    "vanilla_data/resource_packs/vanilla/textures/terrain_texture.json": [
+      {
+        "path": "stone",
+        "content": {
+          "textures": [
+            "textures/blocks/stone"
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "cmd_changesetting",
+  "title": "changesetting",
+  "description": "Changes a setting on the dedicated server while it's running.",
+  "fields": [
+    {
+      "id": "setting",
+      "title": "setting",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "BOOLSETTINGNAME"
+    },
+    {
+      "id": "value",
+      "title": "value",
+      "type": "string",
+      "isOptional": false,
+      "description": "Boolean value",
+      "subFormId": "type_boolean",
+      "commandType": "BOOLEAN"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Allow-cheats",
+      "description": "Allows cheats using `Boolean` .",
+      "params": [
+        {
+          "name": "setting",
+          "type": "BOOLSETTINGNAME",
+          "isOptional": false
+        },
+        {
+          "name": "value",
+          "type": "BOOLEAN",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Difficulty (difficulty value)",
+      "description": "Changes difficulty using difficulty value from the [Difficulty enum](../enums/Difficulty.md).",
+      "params": [
+        {
+          "name": "setting",
+          "type": "DIFFICULTYSETTINGNAME",
+          "isOptional": false
+        },
+        {
+          "name": "value",
+          "type": "DIFFICULTY",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Difficulty (integer value)",
+      "description": "Changes difficulty using difficulty `integer` from the [Difficulty enum](../enums/Difficulty.md).",
+      "params": [
+        {
+          "name": "setting",
+          "type": "DIFFICULTYSETTINGNAME",
+          "isOptional": false
+        },
+        {
+          "name": "value",
+          "type": "INT",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 4,
+  "requiresCheats": true
+}

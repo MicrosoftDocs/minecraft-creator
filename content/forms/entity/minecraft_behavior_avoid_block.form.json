@@ -1,5 +1,25 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "avoids certain block types"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "on_escape",
+      "title": "On Escape",
+      "description": "Event triggers that fire when the entity escapes from the avoided block. Can be a single trigger or an array of triggers.",
+      "dataType": 42
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.avoid_block",
     "title": "Avoid Block Behavior",

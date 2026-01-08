@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has custom mining speed"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Detailed Mining Speed",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -21,5 +34,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Customizes how quickly players can mine the block with different tools. Configure base destruction time and per-item speed modifiers so pickaxes mine stone faster, axes break wood faster, and so on. Essential for creating blocks that follow Minecraft's tool progression and harvesting conventions."
 }

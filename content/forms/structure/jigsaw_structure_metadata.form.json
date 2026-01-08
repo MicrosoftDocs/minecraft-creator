@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Jigsaw Structure Metadata",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines jigsaw structure markers and bounding size"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Jigsaw Structure Metadata",
@@ -21,5 +34,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines jigsaw structure markers and bounding size."
 }

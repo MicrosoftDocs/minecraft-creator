@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "tracks validation outcome for a requirement"
+          }
+        ]
+      }
+    ]
+  },
   "id": "info_set.summaryEntry",
   "title": "Summary Entry",
   "description": "Represents a single validation outcome keyed by requirement code.",

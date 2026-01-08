@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Client Biomes Documentation - Client Biomes"
 description: "A reference document describing all current Client Biomes"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

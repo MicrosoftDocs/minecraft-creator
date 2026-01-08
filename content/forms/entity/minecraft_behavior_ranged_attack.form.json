@@ -1,4 +1,135 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "enables this entity to attack targets from a distance with projectiles"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "attack_radius",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can shoot targets within "
+          },
+          {
+            "type": "value",
+            "field": "attack_radius"
+          },
+          {
+            "type": "literal",
+            "text": " blocks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "attack_interval_min",
+            "comparison": "defined"
+          },
+          {
+            "field": "attack_interval_max",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "fires every "
+          },
+          {
+            "type": "value",
+            "field": "attack_interval_min"
+          },
+          {
+            "type": "literal",
+            "text": " to "
+          },
+          {
+            "type": "value",
+            "field": "attack_interval_max"
+          },
+          {
+            "type": "literal",
+            "text": " seconds"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "attack_interval",
+            "comparison": "defined"
+          },
+          {
+            "field": "attack_interval_min",
+            "comparison": "undefined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "fires every "
+          },
+          {
+            "type": "value",
+            "field": "attack_interval"
+          },
+          {
+            "type": "literal",
+            "text": " seconds"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "charge_charged_trigger",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can perform charged burst-shot attacks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "burst_shots",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "fires "
+          },
+          {
+            "type": "value",
+            "field": "burst_shots"
+          },
+          {
+            "type": "literal",
+            "text": " shots in a burst"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.ranged_attack",

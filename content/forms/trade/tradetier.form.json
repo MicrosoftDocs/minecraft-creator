@@ -1,5 +1,43 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "TradeTier",
+  "title": "Trade Tier",
+  "description": "Defines a tier of trades that becomes available as a villager levels up.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "unlocks at " },
+          { "type": "value", "field": "total_exp_required" },
+          { "type": "literal", "text": " experience points and contains trade groups or direct trades" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "total_exp_required",
+      "title": "Total Experience Required",
+      "description": "The total experience points required for this tier to unlock. For novice (tier 1), this is typically 0. Higher tiers require more XP (e.g., 10, 70, 150, 250).",
+      "dataType": 0,
+      "defaultValue": 0,
+      "minValue": 0
+    },
+    {
+      "id": "groups",
+      "title": "Trade Groups",
+      "description": "Array of trade groups available at this tier. Each group can randomly select one or more trades to offer.",
+      "dataType": 15,
+      "subFormId": "trade/tradegroup"
+    },
+    {
+      "id": "trades",
+      "title": "Trades (Direct)",
+      "description": "Array of trades directly in this tier, without grouping. Alternative to using groups.",
+      "dataType": 15,
+      "subFormId": "trade/tradesingle"
+    }
+  ],
   "generated_doNotEdit": {
     "title": "TradeTier",
     "description": "TradeTier",

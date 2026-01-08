@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns scale of how standing up the entity is"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.standing_scale",
   "description": "Returns the scale of how standing up the entity is. Generally applies to the polar bear.",
   "fields": [],

@@ -3,11 +3,14 @@ author: mammerla
 ms.author: mikeam
 title: "Pack Manifest Documentation - minecraft:header"
 description: "Describes the minecraft:header pack manifest"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Pack Manifest Documentation - minecraft:header
+
+The header section of manifest.json containing the pack's identity: its name shown in the UI, description, unique UUID, and version. The min_engine_version field specifies the minimum Minecraft version required to load the pack.
 
 
 ## 3.0.0.Header Properties

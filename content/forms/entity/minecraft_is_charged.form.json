@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "is charged"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "description": "Sets that this entity is charged. This is used to set the is_charged value for use in query functions like Molang and Filters.",
   "generated_doNotEdit": {

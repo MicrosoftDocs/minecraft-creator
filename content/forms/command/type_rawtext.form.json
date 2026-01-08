@@ -1,0 +1,28 @@
+{
+  "id": "type_rawtext",
+  "title": "Raw JSON Text",
+  "description": "A JSON text component for rich formatting. Used for titleraw, tellraw, etc.",
+  "fields": [],
+  "formatHint": "{\"rawtext\":[{\"text\":\"...\"}]}",
+  "note": "Raw text supports: text, translate, selector, score, and with (for parameters).",
+  "samples": {
+    "values": [
+      {
+        "path": "Simple raw text",
+        "content": "{\"rawtext\":[{\"text\":\"Hello World\"}]}"
+      },
+      {
+        "path": "Translated text with parameter",
+        "content": "{\"rawtext\":[{\"translate\":\"commands.op.success\",\"with\":[\"PlayerName\"]}]}"
+      },
+      {
+        "path": "Display selector result as text",
+        "content": "{\"rawtext\":[{\"selector\":\"@p\"}]}"
+      },
+      {
+        "path": "Display a scoreboard value",
+        "content": "{\"rawtext\":[{\"score\":{\"name\":\"@p\",\"objective\":\"score\"}}]}"
+      }
+    ]
+  }
+}

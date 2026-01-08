@@ -2,6 +2,7 @@
 // Licensed under the MIT License.
 
 import IField from "./IField";
+import ISummarizer from "./ISummarizer";
 
 export interface IFormSample {
   /**
@@ -55,6 +56,13 @@ export default interface IFormDefinition {
    * This should provide context and details about the form's purpose and usage.
    */
   description?: string;
+
+  /**
+   * Optional human-readable description of technical details of the form definition.
+   * In practice, this is not shown in tools but is shown in technical documentation.
+   * This should provide context and details about the form's purpose and usage.
+   */
+  technicalDescription?: string;
 
   /**
    * Optional version of the form definition.
@@ -186,4 +194,42 @@ export default interface IFormDefinition {
    * If this object has an open schema and supports arbitrary fields, this field can be used to define the format of those arbitrary fields.
    */
   customField?: IField;
+
+  /**
+   * Controls whether the validator should flag unexpected properties that are not defined in the form's fields.
+   * If true, the validator will report any properties that are not in the schema as validation errors.
+   * If false or undefined, unexpected properties will be allowed (default behavior for Minecraft content).
+   */
+  strictAdditionalProperties?: boolean;
+
+  /**
+   * Optional summarizer definition for generating natural language descriptions.
+   * When present, a summary card will be displayed at the top of the form showing
+   * a human-readable description of the current data values.
+   *
+   * Summarizers can be:
+   * - Inline: Full ISummarizer object embedded in the form
+   * - External: Loaded from a .summarizer.json file alongside the form
+   *
+   * @example
+   * // Inline summarizer
+   * {
+   *   "summarizer": {
+   *     "phrases": [
+   *       { "tokens": [{ "type": "literal", "text": "has " }, { "type": "value", "field": "max" }, { "type": "literal", "text": " HP" }] }
+   *     ]
+   *   }
+   * }
+   */
+  summarizer?: ISummarizer;
+
+  /**
+   * ID of an external summarizer definition file.
+   * If provided, the summarizer will be loaded from this path.
+   * Format: \"category/name\" - always relative to the forms folder.
+   * Does NOT include the .summarizer.json suffix.
+   *
+   * @example \"entity/minecraft_health\"
+   */
+  summarizerId?: string;
 }

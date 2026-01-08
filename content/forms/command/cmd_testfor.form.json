@@ -1,0 +1,32 @@
+{
+  "id": "cmd_testfor",
+  "title": "testfor",
+  "description": "Counts entities (players, mobs, items, etc.) matching specified conditions.",
+  "fields": [
+    {
+      "id": "victim",
+      "title": "victim",
+      "type": "string",
+      "isOptional": false,
+      "description": "A name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify who or what is being counted.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Test for",
+      "description": "`Test for` a `player` or `entity`.",
+      "params": [
+        {
+          "name": "victim",
+          "type": "SELECTION",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

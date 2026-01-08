@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a filter test condition"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Filter Test",
@@ -36,5 +49,6 @@
         "dataType": 16
       }
     ]
-  }
+  },
+  "description": "A single condition test used in entity filters to evaluate entity state or environment. Tests check properties like health level, time of day, biome type, or nearby entities. Combine tests with AND/OR logic to create complex conditions that control when events fire, which targets are valid, or when behaviors activate."
 }

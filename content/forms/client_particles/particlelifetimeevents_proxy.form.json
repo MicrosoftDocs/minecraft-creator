@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "ParticleLifetimeEvents Proxy",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "controls particle lifetime events like creation and expiration"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "ParticleLifetimeEvents Proxy",
@@ -41,5 +54,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Controls particle lifetime events like creation and expiration."
 }

@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates VS Code configuration files"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "vscodefile",
+  "title": "VS Code Files",
+  "description": "Validates VS Code configuration files (tasks.json, launch.json) in projects. Checks for proper Minecraft-related task and debug configurations.",
+  "fields": [
+    {
+      "id": "100",
+      "title": "No Deploy Tasks",
+      "description": "The project contains a .vscode/tasks.json file but does not have any Minecraft deployment tasks configured. Consider adding tasks for deploying to Minecraft.",
+      "messageType": "recommendation",
+      "dataType": 2
+    },
+    {
+      "id": "101",
+      "title": "No Debug Config",
+      "description": "The project contains a .vscode/launch.json file but is not configured for launching a Minecraft Dedicated Server debug session. Consider adding a debug configuration.",
+      "messageType": "recommendation",
+      "dataType": 2
+    }
+  ]
+}

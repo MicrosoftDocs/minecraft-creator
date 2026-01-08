@@ -1,4 +1,69 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "stays afloat while swimming in water"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "sink_with_passengers",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "sinks when carrying passengers"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "sink_with_passengers",
+            "comparison": "==",
+            "value": false
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "floats even with passengers"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "time_under_water_to_dismount_passengers",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "dismounts passengers after "
+          },
+          {
+            "type": "value",
+            "field": "time_under_water_to_dismount_passengers"
+          },
+          {
+            "type": "literal",
+            "text": "s underwater"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.float",

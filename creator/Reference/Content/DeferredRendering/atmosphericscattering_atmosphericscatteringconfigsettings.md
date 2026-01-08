@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Deferred Rendering Documentation - minecraft:atmosphericscattering_atmosphericscatteringconfigsettings"
 description: "Describes the minecraft:atmosphericscattering_atmosphericscatteringconfigsettings deferred rendering"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

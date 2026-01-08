@@ -1,5 +1,24 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [{ "field": "value", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "deals " },
+          { "type": "value", "field": "value" },
+          { "type": "literal", "text": " extra damage" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "value",
+      "title": "Damage Value",
+      "description": "The amount of extra damage this item deals when attacking. This value is added to the base attack damage. Must be a positive integer."
+    }
+  ],
   "scalarFieldUpgradeName": "value",
   "samples": {
     "sample": [

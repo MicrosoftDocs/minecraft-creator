@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity was last hit by the player"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.last_hit_by_player",
   "fields": [],
   "description": "Returns 1.0 if the entity was last hit by the player, else it returns 0.0. If called by the client always returns 0.0. Relates to the `on_death` component.",

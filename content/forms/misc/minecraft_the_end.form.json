@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines the end component"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:the_end",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -13,5 +26,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines the end component."
 }

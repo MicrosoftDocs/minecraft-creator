@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "Specifies the cubemap identifier used for skybox rendering in Vibrant Visuals mode."
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:cubemap_identifier",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

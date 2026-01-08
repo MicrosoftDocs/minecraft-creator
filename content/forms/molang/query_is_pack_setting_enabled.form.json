@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if pack setting toggle is enabled, param..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_pack_setting_enabled",
   "fields": [],
   "generated_doNotEdit": {

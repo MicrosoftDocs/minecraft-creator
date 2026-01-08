@@ -1,0 +1,16 @@
+{
+  "id": "cmd_toggledownfall",
+  "title": "toggledownfall",
+  "description": "Toggles the weather.",
+  "fields": [],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Toggle downfall",
+      "description": "Turns precipitation on and off.",
+      "params": []
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

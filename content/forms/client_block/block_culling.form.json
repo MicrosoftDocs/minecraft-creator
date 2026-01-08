@@ -1,4 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines block face culling rules to optimize rendering performance"
+          }
+        ]
+      }
+    ]
+  },
+  "title": "Block Culling Rules",
+  "description": "Block culling rules allow custom blocks with geometry to have specific faces hidden when adjacent to other blocks. This improves rendering performance by not drawing faces that aren't visible. Culling conditions include 'same_block' (hide when adjacent to same block type) and 'same_culling_layer' (hide when adjacent to blocks in the same layer, useful for glass-like blocks).",
   "fields": [],
   "samples": {
     "/block_culling/horizontal_glass.culling_rules.json": [

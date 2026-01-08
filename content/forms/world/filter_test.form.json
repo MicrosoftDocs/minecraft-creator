@@ -1,5 +1,35 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a filter test with domain, operator, subject, and value comparisons"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "domain",
+      "dataType": 2
+    },
+    {
+      "id": "operator",
+      "dataType": 2
+    },
+    {
+      "id": "subject",
+      "dataType": 2
+    },
+    {
+      "id": "value",
+      "dataType": 0
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "Filter Test",
     "title": "World Filter Test",
@@ -36,5 +66,6 @@
         "dataType": 16
       }
     ]
-  }
+  },
+  "description": "Defines a filter test with domain, operator, subject, and value comparisons."
 }

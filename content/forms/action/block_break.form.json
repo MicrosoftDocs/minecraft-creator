@@ -1,6 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "block_break",
   "title": "Block Break",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "breaks a block at a location"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "script",
     "action"
@@ -11,5 +24,6 @@
       "title": "Location Offset",
       "dataType": 41
     }
-  ]
+  ],
+  "description": "Triggers the destruction of a block at a specified world location. When executed, the block is removed and any associated loot tables or block events are processed. Commonly used in automated testing scenarios or scripted world modifications."
 }

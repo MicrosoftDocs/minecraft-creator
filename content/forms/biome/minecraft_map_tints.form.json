@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has custom map tints for grass and foliage"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:map_tints",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "provides comprehensive content analysis output"
+          }
+        ]
+      }
+    ]
+  },
   "id": "info_set.infoSet",
   "title": "Info Set",
   "description": "Comprehensive view of the generator output captured by Minecraft Creator Tools.",

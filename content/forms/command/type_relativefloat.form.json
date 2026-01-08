@@ -1,0 +1,27 @@
+{
+  "id": "type_relativefloat",
+  "title": "Relative Number",
+  "description": "A number that can be relative to current value using ~.",
+  "fields": [],
+  "formatHint": "value or ~offset",
+  "samples": {
+    "values": [
+      {
+        "path": "Absolute value of 10",
+        "content": "10"
+      },
+      {
+        "path": "Add 5 to current value",
+        "content": "~5"
+      },
+      {
+        "path": "Subtract 3 from current value",
+        "content": "~-3"
+      },
+      {
+        "path": "Keep current value (same as ~0)",
+        "content": "~"
+      }
+    ]
+  }
+}

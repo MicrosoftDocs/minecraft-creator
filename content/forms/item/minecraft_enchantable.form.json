@@ -1,5 +1,110 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:enchantable",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "slot",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be enchanted as "
+          },
+          {
+            "type": "value",
+            "field": "slot"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "value",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has "
+          },
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "value",
+                    "comparison": ">=",
+                    "value": 20
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "excellent"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "value",
+                    "comparison": ">=",
+                    "value": 14
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "good"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "value",
+                    "comparison": ">=",
+                    "value": 10
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "average"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "low"
+              }
+            ]
+          },
+          {
+            "type": "literal",
+            "text": " enchantability ("
+          },
+          {
+            "type": "value",
+            "field": "value"
+          },
+          {
+            "type": "literal",
+            "text": ")"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:enchantable",

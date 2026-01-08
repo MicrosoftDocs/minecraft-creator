@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns value A with the sign of value B"
+          }
+        ]
+      }
+    ]
+  },
   "id": "`math.copy_sign(A, B)`",
   "fields": [],
   "description": "Compose a floating-point value with the magnitude of `x` and the sign of `y`.",

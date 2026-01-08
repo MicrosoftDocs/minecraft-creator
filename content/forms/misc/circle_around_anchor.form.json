@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines behavior.circle around anchor configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.circle_around_anchor",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

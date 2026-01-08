@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if all equipment slots are empty"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "conditional",
     "entityevent"

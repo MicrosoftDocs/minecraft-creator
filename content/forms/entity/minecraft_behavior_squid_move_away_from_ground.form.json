@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "swims upward away from the ground"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "restrictions": [
     {

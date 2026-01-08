@@ -1,0 +1,84 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "tracks content types and component usage across JSON files"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "jsontags",
+  "title": "Content Tags",
+  "description": "Tracks content types and component usage across JSON files in the project. Used to build content indexes for cross-referencing.",
+  "fields": [
+    {
+      "id": "101",
+      "title": "Entity Type",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Tracks entity type identifiers defined in behavior pack entity JSON files.",
+      "technicalDescription": "Data contains the entity type identifier"
+    },
+    {
+      "id": "102",
+      "title": "Block Type",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Tracks custom block type identifiers defined in behavior pack block JSON files.",
+      "technicalDescription": "Data contains the block type identifier"
+    },
+    {
+      "id": "103",
+      "title": "Item Type",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Tracks custom item type identifiers defined in behavior pack item JSON files.",
+      "technicalDescription": "Data contains the item type identifier"
+    },
+    {
+      "id": "104",
+      "title": "Terrain Texture",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Tracks terrain texture short names defined in terrain_texture.json.",
+      "technicalDescription": "Data contains the terrain texture short name"
+    },
+    {
+      "id": "105",
+      "title": "Item Texture",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Tracks item texture short names defined in item_texture.json.",
+      "technicalDescription": "Data contains the item texture short name"
+    },
+    {
+      "id": "106",
+      "title": "Sound Definition",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Tracks sound definition identifiers defined in sound_definitions.json.",
+      "technicalDescription": "Data contains the sound definition identifier"
+    },
+    {
+      "id": "107",
+      "title": "Music Definition",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Tracks music definition identifiers defined in music_definitions.json.",
+      "technicalDescription": "Data contains the music definition identifier"
+    },
+    {
+      "id": "108",
+      "title": "Sound File",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Tracks individual sound file references across sound definitions.",
+      "technicalDescription": "Data contains the sound file path"
+    }
+  ]
+}

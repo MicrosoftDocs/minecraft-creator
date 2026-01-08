@@ -1,5 +1,180 @@
 {
-  "title": "Breathable",
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "breathes_air",
+            "comparison": "==",
+            "value": false
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "cannot breathe in air"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "breathes_water",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can breathe underwater"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "breathes_lava",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can breathe in lava"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "breathes_solids",
+            "comparison": "==",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can breathe inside solid blocks"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "total_supply",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "with "
+          },
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "total_supply",
+                    "comparison": ">",
+                    "value": 60
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "high breath capacity"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "total_supply",
+                    "comparison": "<",
+                    "value": 10
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "low breath capacity"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "moderate breath capacity"
+              }
+            ]
+          },
+          {
+            "type": "literal",
+            "text": " ("
+          },
+          {
+            "type": "value",
+            "field": "total_supply"
+          },
+          {
+            "type": "literal",
+            "text": "s)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "suffocate_time",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "taking damage every "
+          },
+          {
+            "type": "value",
+            "field": "suffocate_time"
+          },
+          {
+            "type": "literal",
+            "text": "s when suffocating"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "inhale_time",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "recovering breath in "
+          },
+          {
+            "type": "value",
+            "field": "inhale_time"
+          },
+          {
+            "type": "literal",
+            "text": "s"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "total_supply",
@@ -262,6 +437,19 @@
             {
               "path": "/minecraft:entity/components/minecraft:breathable/",
               "content": -1
+            }
+          ]
+        }
+      },
+      {
+        "id": "can_dehydrate",
+        "title": "Can Dehydrate",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/nautilus.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:breathable/",
+              "content": true
             }
           ]
         }
@@ -619,7 +807,8 @@
             "total_supply": 15,
             "suffocate_time": 0,
             "breathes_air": false,
-            "breathes_water": true
+            "breathes_water": true,
+            "can_dehydrate": true
           }
         }
       ],

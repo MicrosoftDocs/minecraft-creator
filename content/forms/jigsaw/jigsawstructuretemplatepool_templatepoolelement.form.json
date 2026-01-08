@@ -1,5 +1,22 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines a weighted template pool element" }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "projection",
+      "title": "Projection",
+      "description": "Specifies how structures should be placed relative to the terrain."
+    }
+  ],
+  "description": "Defines a weighted template pool element with structure and processor references.",
   "generated_doNotEdit": {
     "title": "JigsawStructureTemplatePool TemplatePoolElement",
     "description": "JigsawStructureTemplatePool TemplatePoolElement",

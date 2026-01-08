@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "provides a nested report for content subsets"
+          }
+        ]
+      }
+    ]
+  },
   "id": "info_set.subsetReport",
   "title": "Subset Report",
   "description": "Optional nested report emitted for a focused subset of content.",

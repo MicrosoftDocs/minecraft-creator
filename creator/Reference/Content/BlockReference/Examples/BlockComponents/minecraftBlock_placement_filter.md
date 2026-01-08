@@ -3,13 +3,14 @@ author: mammerla
 ms.author: mikeam
 title: "Block Components Documentation - minecraft:placement_filter"
 description: "Describes the minecraft:placement_filter block component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
 # Block Components Documentation - minecraft:placement_filter
 
-Sets rules for under what conditions the block can be placed/survive.
+Sets rules for under what conditions the block can be placed and survive. If the placement conditions are not met, the block cannot be placed. If the block is already placed and the conditions become invalid (e.g., the supporting block is removed), the block will pop off and drop as an item.
 
 
 ## Placement Filter Properties

@@ -1,4 +1,104 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "is_pushable",
+                    "comparison": "=",
+                    "value": true
+                  },
+                  {
+                    "field": "is_pushable_by_piston",
+                    "comparison": "=",
+                    "value": true
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "can be pushed by other entities and pistons"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "is_pushable",
+                    "comparison": "=",
+                    "value": true
+                  },
+                  {
+                    "field": "is_pushable_by_piston",
+                    "comparison": "=",
+                    "value": false
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "can be pushed by other entities but not by pistons"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "is_pushable",
+                    "comparison": "=",
+                    "value": false
+                  },
+                  {
+                    "field": "is_pushable_by_piston",
+                    "comparison": "=",
+                    "value": true
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "cannot be pushed by other entities but can be pushed by pistons"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "is_pushable",
+                    "comparison": "=",
+                    "value": false
+                  },
+                  {
+                    "field": "is_pushable_by_piston",
+                    "comparison": "=",
+                    "value": false
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "cannot be pushed by entities or pistons (immovable)"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "can be pushed by entities and pistons"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:pushable",

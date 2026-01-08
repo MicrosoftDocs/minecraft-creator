@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "dashes at targets with knockback"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.aquatic_charge_attack",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -22,6 +35,7 @@
           "max": 6,
           "min": 2
         },
+        "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
         "subFormId": "item_components/floatrange"
       },
       {
@@ -32,17 +46,37 @@
         "defaultValue": 1.5
       },
       {
-        "id": "charge_speed_multiplier",
-        "title": "Charge Speed Multiplier",
-        "description": "Speed multiplier applied during the charge.",
+        "id": "charge_speed",
+        "title": "Charge Speed",
+        "description": "Absolute speed used during the charge attack.",
         "dataType": 3,
-        "defaultValue": 10
+        "defaultValue": 0.05999999865889549,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 0.05000000074505806
+          }
+        ]
       },
       {
         "id": "control_flags",
         "title": "Control Flags",
         "dataType": 17,
-        "defaultValue": []
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
       },
       {
         "id": "knockback_force",

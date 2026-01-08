@@ -1,7 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "fields": [],
   "id": "minecraft:shadow_settings",
   "title": "Shadow settings",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "controls shadow stylization and rendering" }
+        ]
+      }
+    ]
+  },
   "generatedFromSchema_doNotEdit": {
     "title": "Struct ShadowStylizationConfig ShadowStylizationConfigSettings Client Deferred Rendering",
     "description": "Struct ShadowStylizationConfig ShadowStylizationConfigSettings Client Deferred Rendering",

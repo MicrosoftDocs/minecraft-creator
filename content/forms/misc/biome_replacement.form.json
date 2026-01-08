@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines biome replacement configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Biome Replacement",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

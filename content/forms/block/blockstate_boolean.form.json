@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has boolean block state" }
+        ]
+      }
+    ]
+  },
   "title": "True/False (Boolean) Block State",
   "description": "This is a property that can be true or false.",
   "fields": []

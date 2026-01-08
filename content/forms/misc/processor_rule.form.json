@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines processor rule configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Processor Rule",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

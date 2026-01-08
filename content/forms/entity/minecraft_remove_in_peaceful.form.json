@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "is removed in peaceful difficulty" }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:remove_in_peaceful",
   "fields": [],
   "generated_doNotEdit": {

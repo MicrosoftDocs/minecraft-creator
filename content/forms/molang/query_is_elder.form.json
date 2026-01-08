@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is an elder version of it"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_elder",
   "fields": [],
   "description": "Returns 1.0 if the entity is an elder version of it, else it returns 0.0. Applies to the guardian.",

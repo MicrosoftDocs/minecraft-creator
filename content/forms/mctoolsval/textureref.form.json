@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "collects and aggregates texture references"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "textureref",
+  "title": "Texture References",
+  "description": "Collects and aggregates all texture references from across the project including entity textures, block textures, particle effects, and UI elements.",
+  "fields": [
+    {
+      "id": "101",
+      "title": "Reference List",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Aggregated list of all texture file references found in the project. Used to verify that referenced textures exist and are properly formatted.",
+      "technicalDescription": "Data contains the texture path being referenced"
+    }
+  ]
+}

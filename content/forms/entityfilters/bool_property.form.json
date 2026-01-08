@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if a boolean actor property matches a value"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "conditional",
     "entityevent"

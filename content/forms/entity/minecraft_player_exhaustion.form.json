@@ -1,4 +1,14 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has an exhaustion level" }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:player.exhaustion",
   "title": "Player Exhaustion",
   "description": "Defines the player's exhaustion level.",

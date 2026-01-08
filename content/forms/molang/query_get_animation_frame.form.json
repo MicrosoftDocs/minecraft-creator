@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns current texture of an item whose appearance can..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.get_animation_frame",
   "fields": [],
   "description": "Returns the current texture of an item whose appearance can change (such as a drawn bow).",

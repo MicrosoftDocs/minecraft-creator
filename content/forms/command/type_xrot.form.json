@@ -1,0 +1,11 @@
+{
+  "id": "type_xrot",
+  "title": "Pitch Rotation",
+  "description": "Vertical rotation (pitch) in degrees. -90 = looking up, 90 = looking down.",
+  "fields": [],
+  "formatHint": "-90 to 90, or ~",
+  "aliasOf": [
+    "type_rval"
+  ],
+  "note": "Pitch is vertical look: 0=horizon, -90=up, 90=down"
+}

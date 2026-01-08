@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns time in seconds since the previous frame"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.delta_time",
   "fields": [],
   "generated_doNotEdit": {

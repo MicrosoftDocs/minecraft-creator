@@ -1,24 +1,57 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [{ "field": "value", "comparison": "defined" }],
+        "tokens": [
+          { "type": "literal", "text": "has " },
+          { "type": "value", "field": "value" },
+          { "type": "literal", "text": " health points" }
+        ]
+      }
+    ]
+  },
   "title": "Health",
-  "description": "Default and maximum health settings",
+  "description": "Defines the health pool for an entity, measured in health points (1 point = half a heart). Typical values: cow (10), zombie (20), iron golem (100), wither (600).",
   "fields": [
     {
       "id": "value",
       "title": "Value",
+      "description": "Starting health for this entity in health points (1 point = half a heart).",
       "dataType": 0,
       "experienceType": 3,
       "minValue": 0,
       "suggestedMaxValue": 120,
-      "defaultValue": 100
+      "defaultValue": 20,
+      "alternates": [
+        {
+          "id": "value",
+          "dataType": 16,
+          "subForm": {
+            "fields": [
+              {
+                "id": "range_min",
+                "dataType": 0
+              },
+              {
+                "id": "range_max",
+                "dataType": 0
+              }
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "max",
-      "title": "Maximum health possible for this mob.",
+      "title": "Max",
+      "description": "Maximum health this entity can have. Can be higher than the starting value to allow healing beyond initial health.",
       "dataType": 0,
       "experienceType": 3,
       "minValue": 0,
       "suggestedMaxValue": 120,
-      "defaultValue": 100
+      "defaultValue": 20
     }
   ]
 }

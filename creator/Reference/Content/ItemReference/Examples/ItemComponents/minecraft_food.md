@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Items Documentation - minecraft:food"
 description: "Describes the minecraft:food item component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -29,10 +30,10 @@ Sets the item as a food component, allowing it to be edible to the player.
 | nutrition | 0 | Integer number | Value that is added to the entity's nutrition when the item is used. Default is set to 0. | Apple: `4`, Baked Potato: `5`, Beef: `3` | 
 | on_use_action | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  |  | 
 | on_use_range | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  |  | 
-| remove_effects | *not set* | Array of strings |  |  | 
 | saturation_modifier | 0.6000000238418579 | Decimal number | saturation_modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff. Default is set to 0.6. | Apple: `0.3`, AppleEnchanted: `"supernatural"`, Baked Potato: `"normal"` | 
 | using_converts_to (Using Converts To) | {} | String | When used, converts to the item specified by the string in this field. Default does not convert item. | Beetroot Soup: `"bowl"`, Honey Bottle: `"glass_bottle"` | 
 | using_converts_to (Alternate 1) | *not set* | Keyed set of strings |  |  | 
+| remove_effects | *not set* | Array of strings | Deprecated - no longer in use. Array of effect names to remove when eating this food. This property was deprecated and is no longer supported in newer versions. This property was available in versions 1.14 through 1.18 but has been removed in later versions. |  | 
 
 ## Effects
 

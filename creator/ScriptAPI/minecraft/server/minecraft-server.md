@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.4.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.0-beta.25 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.0-beta.27 of Minecraft.
 
 ## Available Versions
 - `2.6.0-beta`
@@ -271,6 +271,8 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityIsStunnedComponent](EntityIsStunnedComponent.md)
 - [EntityIsTamedComponent](EntityIsTamedComponent.md)
 - [EntityItemComponent](EntityItemComponent.md)
+- [EntityItemDropAfterEvent](EntityItemDropAfterEvent.md)
+- [EntityItemDropAfterEventSignal](EntityItemDropAfterEventSignal.md)
 - [EntityItemPickupAfterEvent](EntityItemPickupAfterEvent.md)
 - [EntityItemPickupAfterEventSignal](EntityItemPickupAfterEventSignal.md)
 - [EntityItemPickupBeforeEvent](EntityItemPickupBeforeEvent.md)
@@ -566,6 +568,7 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityHitInformation](EntityHitInformation.md)
 - [EntityHurtAfterEventOptions](EntityHurtAfterEventOptions.md)
 - [EntityHurtBeforeEventOptions](EntityHurtBeforeEventOptions.md)
+- [EntityItemDropEventOptions](EntityItemDropEventOptions.md)
 - [EntityItemPickupEventOptions](EntityItemPickupEventOptions.md)
 - [EntityQueryOptions](EntityQueryOptions.md)
 - [EntityQueryPropertyOptions](EntityQueryPropertyOptions.md)

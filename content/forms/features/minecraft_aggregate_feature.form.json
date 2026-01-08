@@ -1,6 +1,50 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:aggregate_feature",
   "description": "Places a collection of features in an arbitrary order. All features in the collection use the same input position. Features should not depend on each other, as there is no guarantee in which order the features will be placed. Succeeds if at least one feature is placed successfully. Fails if all features fail to be placed.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "groups multiple features to place at the same position"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "features",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "combines "
+          },
+          {
+            "type": "value",
+            "field": "features.length"
+          },
+          {
+            "type": "literal",
+            "text": " features into one placement"
+          }
+        ]
+      },
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "features execute in no guaranteed order"
+          }
+        ],
+        "priority": 3
+      }
+    ]
+  },
   "fields": [
     {
       "id": "format_version",

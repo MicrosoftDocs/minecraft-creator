@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has custom sound event definitions"
+          }
+        ]
+      }
+    ]
+  },
   "title": "Entity Sound Event",
   "fields": [
     {
@@ -23,5 +36,6 @@
       "dataType": 24,
       "description": "A set of associated events."
     }
-  ]
+  ],
+  "description": "Maps gameplay events to sound effects for the entity, enabling custom audio for actions like attacking, being hurt, dying, or ambient idle sounds. Reference sounds defined in sound_definitions.json to give custom mobs distinctive audio identities that match their visual design and behavior."
 }

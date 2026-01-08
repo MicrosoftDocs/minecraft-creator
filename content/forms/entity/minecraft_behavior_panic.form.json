@@ -1,4 +1,147 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "causes this entity to panic and flee when damaged"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "speed_multiplier",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "flees at "
+          },
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "speed_multiplier",
+                    "comparison": ">=",
+                    "value": 2
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "very fast"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "speed_multiplier",
+                    "comparison": ">",
+                    "value": 1
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "fast"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "normal"
+              }
+            ]
+          },
+          {
+            "type": "literal",
+            "text": " speed ("
+          },
+          {
+            "type": "value",
+            "field": "speed_multiplier"
+          },
+          {
+            "type": "literal",
+            "text": "x)"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "prefer_water",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "prefers fleeing into water"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "force",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "will not stop panicking until unable to move"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "ignore_mob_damage",
+            "comparison": "=",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "ignores damage from other mobs"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "damage_sources",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "triggers panic from specific damage sources: "
+          },
+          {
+            "type": "value",
+            "field": "damage_sources"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.panic",

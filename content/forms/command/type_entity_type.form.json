@@ -1,0 +1,27 @@
+{
+  "id": "type_entity_type",
+  "title": "Entity Type",
+  "description": "An entity type identifier (mob, item, projectile, etc.).",
+  "fields": [],
+  "formatHint": "namespace:entity_type or entity_type",
+  "samples": {
+    "values": [
+      {
+        "path": "Pig mob",
+        "content": "pig"
+      },
+      {
+        "path": "Zombie with namespace",
+        "content": "minecraft:zombie"
+      },
+      {
+        "path": "Armor stand entity",
+        "content": "armor_stand"
+      },
+      {
+        "path": "Custom entity from addon",
+        "content": "mypack:custom_mob"
+      }
+    ]
+  }
+}

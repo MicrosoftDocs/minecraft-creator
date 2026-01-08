@@ -16,6 +16,13 @@ Optional properties for Vector3 property item
 
 ## Properties
 
+### **hasClearButton**
+`hasClearButton?: boolean;`
+
+Shows clear button for the item. If undefined, it will be true.
+
+Type: *boolean*
+
 ### **hiddenLabel**
 `hiddenLabel?: boolean;`
 

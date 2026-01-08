@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines randomspreadplacement configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "RandomSpreadPlacement",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -46,5 +59,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines randomspreadplacement configuration."
 }

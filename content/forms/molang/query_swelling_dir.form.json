@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns swelling direction of the entity if it makes sense"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.swelling_dir",
   "fields": [],
   "description": "Returns the swelling direction of the entity if it makes sense, else it returns 0.0. Applies generally to the overlay color of creeper preparing to explode.",

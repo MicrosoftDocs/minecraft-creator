@@ -1,4 +1,126 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "generates swamp biome surface terrain"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "top_material",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses "
+          },
+          {
+            "type": "value",
+            "field": "top_material",
+            "humanify": "minecraft"
+          },
+          {
+            "type": "literal",
+            "text": " as the surface block"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "mid_material",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has "
+          },
+          {
+            "type": "value",
+            "field": "mid_material",
+            "humanify": "minecraft"
+          },
+          {
+            "type": "literal",
+            "text": " below the surface"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "sea_floor_material",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "uses "
+          },
+          {
+            "type": "value",
+            "field": "sea_floor_material",
+            "humanify": "minecraft"
+          },
+          {
+            "type": "literal",
+            "text": " for the water floor"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "sea_floor_depth",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has water floor at depth "
+          },
+          {
+            "type": "value",
+            "field": "sea_floor_depth"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "max_puddle_depth_below_sea_level",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "creates puddles up to "
+          },
+          {
+            "type": "value",
+            "field": "max_puddle_depth_below_sea_level"
+          },
+          {
+            "type": "literal",
+            "text": " blocks below sea level"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:swamp",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

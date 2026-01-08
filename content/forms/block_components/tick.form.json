@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines tick interval behavior for a block"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Tick",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -12,6 +25,7 @@
         "dataType": 32,
         "minLength": 2,
         "maxLength": 2,
+        "technicalDescription": "The first value must be equal or lower than the second value",
         "isRequired": true
       },
       {
@@ -22,5 +36,6 @@
         "defaultValue": true
       }
     ]
-  }
+  },
+  "description": "Defines tick interval behavior for a block."
 }

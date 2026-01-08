@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines traits configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Traits",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -18,5 +31,6 @@
         "subFormId": "misc/placement_position"
       }
     ]
-  }
+  },
+  "description": "Defines traits configuration."
 }

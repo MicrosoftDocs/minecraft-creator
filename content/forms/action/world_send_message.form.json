@@ -1,6 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "world_send_message",
   "title": "Send Message",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "sends a message to all players"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "script",
     "action"
@@ -11,5 +24,6 @@
       "title": "Message",
       "dataType": 2
     }
-  ]
+  ],
+  "description": "Broadcasts a chat message to all players in the world. The message appears in the chat log and can include formatting codes for colors and styles. Useful for debugging, test status updates, or simulating in-game announcements during automated testing."
 }

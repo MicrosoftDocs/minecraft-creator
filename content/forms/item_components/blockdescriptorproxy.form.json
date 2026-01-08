@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has block reference with states and tags"
+          }
+        ]
+      }
+    ]
+  },
   "id": "BlockDescriptorProxy",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -34,5 +47,6 @@
         "defaultValue": ""
       }
     ]
-  }
+  },
+  "description": "Has block reference with states and tags."
 }

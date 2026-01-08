@@ -1,5 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "actor_animation_controller",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines a state machine for controlling animation playback and transitions" }
+        ]
+      }
+    ]
+  },
+  "title": "Animation Controller (v1.10.0)",
+  "description": "Animation controllers are state machines that control which animations play and when. They support states with animations, transitions based on Molang conditions, particle effects, and sound effects. Each state can blend between animations and trigger events on entry and exit.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "actor_animation_controller",

@@ -49,7 +49,7 @@ Notes:
 disallowJoin(reason?: string): void
 `
 
-Deprecated - use {@link disallowJoin} instead.Call this to disconnect a player. They will be allowed to try to join again.
+Call this to disallow the player from joining the server. This is useful for preventing unauthorized access to the server.
 
 #### **Parameters**
 - **reason**?: *string* = `null`
@@ -63,7 +63,7 @@ Notes:
 disconnect(reason?: string): void
 `
 
-Call this to stop the player from joining the server. They will be allowed to try to join again.
+Deprecated - use {@link disallowJoin} instead.Call this to disconnect a player. They will be allowed to try to join again. They will be allowed to try to join again after being disconnected.
 
 #### **Parameters**
 - **reason**?: *string* = `null`

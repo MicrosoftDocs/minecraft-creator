@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns time since last vibration detected by entity"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.time_since_last_vibration_detection",
   "fields": [],
   "description": "Returns the time in seconds since the last vibration detected by the entity. On errors or if no vibration has been detected yet, returns -1. Available on the Client (Resource Packs) only.",

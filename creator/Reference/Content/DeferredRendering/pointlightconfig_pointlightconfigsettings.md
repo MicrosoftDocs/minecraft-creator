@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Deferred Rendering Documentation - minecraft:pointlightconfig_pointlightconfigsettings"
 description: "Describes the minecraft:pointlightconfig_pointlightconfigsettings deferred rendering"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---

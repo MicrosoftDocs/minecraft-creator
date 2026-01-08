@@ -1,5 +1,29 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "wanders while floating"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "float_duration",
+      "dataType": 32,
+      "alternates": [
+        {
+          "id": "float_duration",
+          "dataType": 3
+        }
+      ]
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.float_wander",
     "title": "Float Wander Behavior",

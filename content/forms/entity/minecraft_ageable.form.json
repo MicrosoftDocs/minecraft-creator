@@ -1,5 +1,135 @@
 {
-  "title": "Ageable",
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can grow from baby to adult"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "duration",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "switch",
+            "cases": [
+              {
+                "conditions": [
+                  {
+                    "field": "duration",
+                    "comparison": "<",
+                    "value": 0
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "but always stays a baby"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "duration",
+                    "comparison": ">",
+                    "value": 1800
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "with a very long growth time ("
+                  },
+                  {
+                    "type": "value",
+                    "field": "duration"
+                  },
+                  {
+                    "type": "literal",
+                    "text": "s)"
+                  }
+                ]
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "duration",
+                    "comparison": "<",
+                    "value": 600
+                  }
+                ],
+                "tokens": [
+                  {
+                    "type": "literal",
+                    "text": "with a quick growth time ("
+                  },
+                  {
+                    "type": "value",
+                    "field": "duration"
+                  },
+                  {
+                    "type": "literal",
+                    "text": "s)"
+                  }
+                ]
+              }
+            ],
+            "default": [
+              {
+                "type": "literal",
+                "text": "in "
+              },
+              {
+                "type": "value",
+                "field": "duration"
+              },
+              {
+                "type": "literal",
+                "text": " seconds"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "feed_items",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "and can be fed to speed growth"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "drop_items",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "dropping items when grown"
+          }
+        ]
+      }
+    ]
+  },
   "description": "Adds a timer for the entity to grow up. It can be accelerated by giving the entity the items it likes as defined by feed_items.",
   "fields": [
     {

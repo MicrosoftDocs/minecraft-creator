@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a documented API class"
+          }
+        ]
+      }
+    ]
+  },
   "title": "Documented Class",
   "fields": [
     {
@@ -11,5 +24,6 @@
       "title": "Name",
       "dataType": 2
     }
-  ]
+  ],
+  "description": "Defines a documented API class."
 }

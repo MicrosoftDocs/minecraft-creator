@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is ignited (has the `is_ignite..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_ignited",
   "fields": [],
   "description": "Returns 1.0 if the entity is ignited (has the `is_ignited` component), else it returns 0.0.",

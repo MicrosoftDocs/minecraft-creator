@@ -1,5 +1,17 @@
 {
-  "title": "Tameable",
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be tamed by players"
+          }
+        ]
+      }
+    ]
+  },
   "description": "This entity can be tamed",
   "fields": [
     {

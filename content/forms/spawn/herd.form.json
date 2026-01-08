@@ -1,5 +1,30 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Herd",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spawns in groups of "
+          },
+          {
+            "type": "value",
+            "field": "min"
+          },
+          {
+            "type": "literal",
+            "text": " to "
+          },
+          {
+            "type": "value",
+            "field": "max"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Herd",
@@ -48,5 +73,6 @@
         "defaultValue": 1
       }
     ]
-  }
+  },
+  "description": "Configures group spawning behavior with min/max herd sizes. Allows running events on the first N entities spawned (initial_event) or after skipping M entities (event). Common for pack animals like wolves or swarm mobs like silverfish."
 }

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns time of day (midnight=0"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.time_of_day",
   "fields": [],
   "generated_doNotEdit": {

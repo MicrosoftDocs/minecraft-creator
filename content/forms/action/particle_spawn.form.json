@@ -1,6 +1,19 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "particle_spawn",
   "title": "Spawn Particle",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "spawns a particle effect at a location"
+          }
+        ]
+      }
+    ]
+  },
   "tags": [
     "script",
     "action"
@@ -19,5 +32,6 @@
       "isRequired": true,
       "priority": 1
     }
-  ]
+  ],
+  "description": "Emits a particle effect at a specified world location. Particle effects are defined in resource pack particle JSON files and can include complex behaviors like physics, color gradients, and collision. Common uses include visual feedback for abilities, environmental effects, and UI highlights."
 }

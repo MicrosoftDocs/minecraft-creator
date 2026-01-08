@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity has chests attached to it (has..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_chested",
   "fields": [],
   "description": "Returns 1.0 if the entity has chests attached to it (has the `is_chested` component), else it returns 0.0.",

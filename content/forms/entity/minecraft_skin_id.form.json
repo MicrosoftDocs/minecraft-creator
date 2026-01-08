@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has different skin variations"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "note": "Requires multiple texture sets to be set up for the entity.",
   "generated_doNotEdit": {

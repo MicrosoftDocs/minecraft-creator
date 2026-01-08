@@ -282,6 +282,8 @@
             href: Documents/scripting/v2-overview.md
           - name: Script Module Versioning
             href: Documents/scripting/versioning.md
+          - name: Scripting Execution Privilege
+            href: Documents/scripting/execution-privilege.md
           - name: Open-Source Scripting Libraries
             href: Documents/scripting/libraries.md
         - name: Introduction to Scoreboards
@@ -553,6 +555,8 @@
           href: Documents/SnowstormOverview.md
         - name: Minecraft Creator Tools
           href: Documents/MCToolsOverview.md
+        - name: Minecraft Creator Tools Validation Rules
+          href: Reference/Content/MCToolsValReference/ValidationRulesIndex.md
         - name: "Chunker - World Conversion"
           items:
             - name: Chunker - Overview

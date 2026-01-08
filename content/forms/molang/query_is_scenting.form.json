@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if behavior.timer_flag_1 is running"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_scenting",
   "fields": [],
   "description": "Returns 1.0 if behavior.timer_flag_1 is running, else it returns 0.0. Deprecated; no longer available in packs with a `min_engine_version` >= 1.20.50.",

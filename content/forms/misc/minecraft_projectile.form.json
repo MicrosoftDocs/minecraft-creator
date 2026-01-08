@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines projectile component"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:projectile",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

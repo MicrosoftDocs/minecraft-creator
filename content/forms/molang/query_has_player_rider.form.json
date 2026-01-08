@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity has a player riding it in any ..."
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.has_player_rider",
   "fields": [],
   "generated_doNotEdit": {

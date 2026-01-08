@@ -1,0 +1,46 @@
+{
+  "id": "cmd_spawnpoint",
+  "title": "spawnpoint",
+  "description": "Sets the spawn point for a player.",
+  "fields": [
+    {
+      "id": "player",
+      "title": "player",
+      "type": "string",
+      "isOptional": true,
+      "description": "A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "spawnpos",
+      "title": "spawnPos",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `vector` [x y z] of `floats` that defines the player's new spawn point.",
+      "subFormId": "type_position_float",
+      "commandType": "POSITION_FLOAT"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Spawn point",
+      "description": "Sets the `spawn position` for a `player`.",
+      "params": [
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": true
+        },
+        {
+          "name": "spawnpos",
+          "type": "POSITION_FLOAT",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

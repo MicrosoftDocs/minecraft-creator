@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity has cooldown on its dash"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.has_dash_cooldown",
   "fields": [],
   "generated_doNotEdit": {

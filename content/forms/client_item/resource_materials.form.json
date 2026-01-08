@@ -1,4 +1,16 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "title": "Item Materials",
+  "description": "Defines material references for an item's client resources.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines materials for an item" }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "materials",

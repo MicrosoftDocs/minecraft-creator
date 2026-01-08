@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "performs linear interpolation between two values"
+          }
+        ]
+      }
+    ]
+  },
   "id": "`math.lerp(start, end, 0_to_1)`",
   "fields": [],
   "description": "Computes the linear interpolation between `a` and `b` with interpolation weighting factor `t` in the range `[0, 1]`, where `0 = a` and `1 = b`.",

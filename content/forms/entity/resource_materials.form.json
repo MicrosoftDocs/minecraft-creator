@@ -1,4 +1,16 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "title": "Entity Materials",
+  "description": "Defines material references for an entity's client resources.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "has material resources" }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "materials",

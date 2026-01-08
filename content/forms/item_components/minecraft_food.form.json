@@ -1,5 +1,42 @@
 {
-  "fields": [],
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "visibility": [
+          {
+            "field": "nutrition",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "restores "
+          },
+          {
+            "type": "value",
+            "field": "nutrition"
+          },
+          {
+            "type": "literal",
+            "text": " hunger"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "remove_effects",
+      "title": "Remove Effects",
+      "description": "Array of effect names to remove when eating this food. This property was deprecated and is no longer supported in newer versions.",
+      "dataType": 17,
+      "isDeprecated": true,
+      "versionDeprecated": "1.20.0",
+      "note": "This property was available in versions 1.14 through 1.18 but has been removed in later versions."
+    }
+  ],
   "description": "Sets the item as a food component, allowing it to be edible to the player.",
   "requires": [
     {

@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "BlockIgnore",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies block types in a template that should be ignored by other processors"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "processor_type",

@@ -1,4 +1,16 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "title": "Entity Instance",
+  "description": "Defines a single entity instance entry used in documentation and tooling.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          { "type": "literal", "text": "defines entity instance properties" }
+        ]
+      }
+    ]
+  },
   "fields": [
     {
       "id": "fallDistance",

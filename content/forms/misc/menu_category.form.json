@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "contains the creative group name and category for this item"
+          }
+        ]
+      }
+    ]
+  },
   "id": "menu_category",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

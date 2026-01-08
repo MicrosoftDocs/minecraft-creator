@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a world test area location for automated testing"
+          }
+        ]
+      }
+    ]
+  },
   "title": "World Test Area",
   "fields": [
     {
@@ -6,5 +19,6 @@
       "title": "Location",
       "dataType": 11
     }
-  ]
+  ],
+  "description": "Defines a world test area location for automated testing. Used by automated test definitions."
 }

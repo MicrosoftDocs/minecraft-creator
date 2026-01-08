@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: "Entity Documentation - minecraft:jump.static"
 description: "Describes the minecraft:jump.static entity component"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -16,7 +17,7 @@ Gives the entity the ability to jump.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| jump_power | 0.42 | Decimal number | The initial vertical velocity for the jump | Dolphin: `0.6` | 
+| jump_power | 0.42 | Decimal number | The initial vertical velocity for the jump. | Dolphin: `0.6` | 
 
 ## Samples
 

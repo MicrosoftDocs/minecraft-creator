@@ -1,0 +1,32 @@
+{
+  "id": "cmd_setworldspawn",
+  "title": "setworldspawn",
+  "description": "Sets the location where new players or players who die will spawn in the world.",
+  "fields": [
+    {
+      "id": "spawnpoint",
+      "title": "spawnPoint",
+      "type": "string",
+      "isOptional": true,
+      "description": "A `vector` [x y z] with `float` numbers that defines the world spawn.",
+      "subFormId": "type_position_float",
+      "commandType": "POSITION_FLOAT"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Set world spawn",
+      "description": "Set the `world spawn` at an `[x y z]` location.",
+      "params": [
+        {
+          "name": "spawnpoint",
+          "type": "POSITION_FLOAT",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

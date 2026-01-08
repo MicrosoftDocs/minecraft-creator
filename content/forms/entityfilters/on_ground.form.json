@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if the entity is on the ground"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "note": "Does not require any parameters to work properly. It can be used as a standalone filter.",
   "tags": [

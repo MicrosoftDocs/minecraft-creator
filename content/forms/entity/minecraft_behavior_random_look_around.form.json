@@ -1,4 +1,45 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "randomly looks around when idle"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "look_time",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "looks in each direction for a set duration"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "max_angle_of_view_horizontal",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "with limited horizontal viewing angle"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.random_look_around",

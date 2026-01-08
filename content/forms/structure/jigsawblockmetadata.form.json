@@ -1,5 +1,18 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "JigsawBlockMetadata",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines jigsaw block properties for structure connections"
+          }
+        ]
+      }
+    ]
+  },
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "JigsawBlockMetadata",
@@ -79,5 +92,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "description": "Defines jigsaw block properties for structure connections."
 }

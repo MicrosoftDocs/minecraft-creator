@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines behavior.slime random direction configuration"
+          }
+        ]
+      }
+    ]
+  },
   "id": "minecraft:behavior.slime_random_direction",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

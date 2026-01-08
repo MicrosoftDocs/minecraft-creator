@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has custom map color"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Map Color",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

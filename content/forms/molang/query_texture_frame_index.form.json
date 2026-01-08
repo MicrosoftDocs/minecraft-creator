@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "returns icon index of the experience orb"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.texture_frame_index",
   "fields": [],
   "generated_doNotEdit": {

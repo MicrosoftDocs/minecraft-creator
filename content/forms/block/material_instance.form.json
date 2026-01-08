@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "has material instance for geometry rendering"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Material Instance",
   "fields": [],
   "generatedFromSchema_doNotEdit": {

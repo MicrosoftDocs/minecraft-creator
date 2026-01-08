@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a value range with discrete steps"
+          }
+        ]
+      }
+    ]
+  },
   "id": "Range And Steps",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
@@ -10,6 +23,7 @@
         "title": "Range",
         "description": "The range of the random offset.",
         "dataType": 16,
+        "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
         "subFormId": "item_components/floatrange",
         "isRequired": true
       },
@@ -21,5 +35,6 @@
         "defaultValue": 0
       }
     ]
-  }
+  },
+  "description": "Defines a value range with discrete steps."
 }

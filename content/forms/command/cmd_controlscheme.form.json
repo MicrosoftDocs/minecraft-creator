@@ -1,0 +1,81 @@
+{
+  "id": "cmd_controlscheme",
+  "title": "controlscheme",
+  "description": "Sets or clears control schemes for the camera(s) of selected player(s).",
+  "fields": [
+    {
+      "id": "players",
+      "title": "players",
+      "type": "string",
+      "isOptional": false,
+      "description": "A target selector of player(s).",
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "set",
+      "title": "set",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "CAMERACONTROLSCHEMESET"
+    },
+    {
+      "id": "control_scheme",
+      "title": "control scheme",
+      "type": "string",
+      "isOptional": false,
+      "description": "The control scheme to apply.",
+      "commandType": "CONTROLSCHEME"
+    },
+    {
+      "id": "clear",
+      "title": "clear",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "CAMERACONTROLSCHEMECLEAR"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Sets control scheme",
+      "description": "Sets the specified control scheme for the camera(s) of selected player(s).",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "set",
+          "type": "CAMERACONTROLSCHEMESET",
+          "isOptional": false
+        },
+        {
+          "name": "control_scheme",
+          "type": "CONTROLSCHEME",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Clears control scheme",
+      "description": "Clears the current control scheme for the camera(s) of selected player(s), resetting it to the default.",
+      "params": [
+        {
+          "name": "players",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "clear",
+          "type": "CAMERACONTROLSCHEMECLEAR",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

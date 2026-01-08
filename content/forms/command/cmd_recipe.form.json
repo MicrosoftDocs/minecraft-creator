@@ -1,0 +1,84 @@
+{
+  "id": "cmd_recipe",
+  "title": "recipe",
+  "description": "Supports unlocking of built-in (vanilla) recipes that a particular player can craft with.",
+  "fields": [
+    {
+      "id": "give",
+      "title": "give",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "GIVE"
+    },
+    {
+      "id": "player",
+      "title": "player",
+      "type": "string",
+      "isOptional": false,
+      "subFormId": "type_selection",
+      "commandType": "SELECTION"
+    },
+    {
+      "id": "recipe",
+      "title": "recipe",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "UNLOCKABLERECIPEVALUES"
+    },
+    {
+      "id": "take",
+      "title": "take",
+      "type": "string",
+      "isOptional": false,
+      "commandType": "TAKE"
+    }
+  ],
+  "overloads": [
+    {
+      "id": "1",
+      "title": "Gives a player a particular vanilla item that they are allowed to craft via recipe.",
+      "description": "",
+      "params": [
+        {
+          "name": "give",
+          "type": "GIVE",
+          "isOptional": false
+        },
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "recipe",
+          "type": "UNLOCKABLERECIPEVALUES",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Removes a particular vanilla item that a player can craft via a recipe.",
+      "description": "",
+      "params": [
+        {
+          "name": "take",
+          "type": "TAKE",
+          "isOptional": false
+        },
+        {
+          "name": "player",
+          "type": "SELECTION",
+          "isOptional": false
+        },
+        {
+          "name": "recipe",
+          "type": "UNLOCKABLERECIPEVALUES",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "permissionLevel": 1,
+  "requiresCheats": true
+}

@@ -1,4 +1,17 @@
 {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "checks if entity is a ghost"
+          }
+        ]
+      }
+    ]
+  },
   "id": "query.is_ghost",
   "fields": [],
   "description": "Returns 1.0 if an entity is a ghost, else it returns 0.0. Applies to the guardian.",
