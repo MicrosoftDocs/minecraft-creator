@@ -14,7 +14,7 @@ Understanding how entities spawn is crucial for creating balanced and immersive 
 > [!TIP]
 > A complete working sample demonstrating spawn rules with different spawn conditions is available in the [Spawn Rules sample](https://github.com/microsoft/minecraft-samples/tree/main/spawn_rules_sample).
 
-## In This Tutorial
+## In this tutorial
 
 You will learn:
 
@@ -33,15 +33,15 @@ You will learn:
 - Understanding of behavior pack structure
 - Familiarity with JSON syntax
 
-## How Entity Spawning Works
+## Entity spawning
 
-### The Spawning Cycle
+### The spawning cycle
 
 Minecraft continuously evaluates whether to spawn entities based on several factors:
 
 ![Spawn cycle diagram showing the six steps: check spawn conditions, find valid spawn locations, check population caps, evaluate spawn weight, spawn entity, and run spawn event](Media/EntitySpawning/spawn-cycle-diagram.svg)
 
-### Spawn Rule Files
+### Spawn rule files
 
 Spawn rules are defined in the behavior pack's `spawn_rules` folder:
 
@@ -53,9 +53,9 @@ behavior_pack/
     └── cave_dweller.json
 ```
 
-## Basic Spawn Rule Structure
+## Basic spawn rule structure
 
-### Minimal Spawn Rule
+### Minimal spawn rule
 
 ```json
 {
@@ -82,7 +82,7 @@ behavior_pack/
 }
 ```
 
-### Understanding the Components
+### Understanding the components
 
 | Component | Purpose |
 |-----------|---------|
@@ -90,9 +90,9 @@ behavior_pack/
 | `population_control` | Which population cap applies |
 | `conditions` | Array of spawn condition sets |
 
-## Population Control
+## Population control
 
-### Population Types
+### Population types
 
 Different population types have different caps:
 
@@ -105,7 +105,7 @@ Different population types have different caps:
 | `ambient` | Bats and similar | ~15 in caves |
 | `pillager` | Pillagers and related | Limited by patrols |
 
-### Custom Population Limits
+### Custom population limits
 
 You can use density limits for finer control:
 
@@ -118,32 +118,32 @@ You can use density limits for finer control:
 }
 ```
 
-## Spawn Conditions
+## Spawn conditions
 
-### Location Conditions
+### Location conditions
 
-**Surface Spawning:**
+**Surface spawning:**
 ```json
 {
   "minecraft:spawns_on_surface": {}
 }
 ```
 
-**Underground Spawning:**
+**Underground spawning:**
 ```json
 {
   "minecraft:spawns_underground": {}
 }
 ```
 
-**Underwater Spawning:**
+**Underwater spawning:**
 ```json
 {
   "minecraft:spawns_underwater": {}
 }
 ```
 
-**On Block Types:**
+**On block types:**
 ```json
 {
   "minecraft:spawns_on_block_filter": {
@@ -152,7 +152,7 @@ You can use density limits for finer control:
 }
 ```
 
-**Prevent On Block Types:**
+**Prevent on block types:**
 ```json
 {
   "minecraft:spawns_on_block_prevented_filter": {
@@ -161,9 +161,9 @@ You can use density limits for finer control:
 }
 ```
 
-### Environmental Conditions
+### Environmental conditions
 
-**Light Level:**
+**Light level:**
 ```json
 {
   "minecraft:brightness_filter": {
@@ -174,7 +174,7 @@ You can use density limits for finer control:
 }
 ```
 
-**Height Range:**
+**Height range:**
 ```json
 {
   "minecraft:height_filter": {
@@ -194,7 +194,7 @@ You can use density limits for finer control:
 }
 ```
 
-**Distance from Player:**
+**Distance from player:**
 ```json
 {
   "minecraft:distance_filter": {
@@ -204,9 +204,9 @@ You can use density limits for finer control:
 }
 ```
 
-### Biome Filtering
+### Biome filtering
 
-**Spawn in Specific Biomes:**
+**Spawn in specific biomes:**
 ```json
 {
   "minecraft:biome_filter": {
@@ -217,7 +217,7 @@ You can use density limits for finer control:
 }
 ```
 
-**Multiple Biome Tags (Any):**
+**Multiple biome tags (Any):**
 ```json
 {
   "minecraft:biome_filter": {
@@ -230,7 +230,7 @@ You can use density limits for finer control:
 }
 ```
 
-**Complex Biome Logic:**
+**Complex biome logic:**
 ```json
 {
   "minecraft:biome_filter": {
@@ -248,7 +248,7 @@ You can use density limits for finer control:
 }
 ```
 
-### Common Biome Tags
+### Common biome tags
 
 | Tag | Biomes |
 |-----|--------|
@@ -267,9 +267,9 @@ You can use density limits for finer control:
 | `warm` | Warm-temperature biomes |
 | `frozen` | Frozen/snowy biomes |
 
-## Spawn Weights
+## Spawn weights
 
-### Understanding Weight
+### Understanding weight
 
 Weight determines how likely an entity is to spawn relative to others:
 
@@ -285,7 +285,7 @@ Weight determines how likely an entity is to spawn relative to others:
 - Total weights in a biome determine relative spawn rates
 - A weight of 100 in a biome with total weight 1000 = 10% chance
 
-### Example Weights (Vanilla Reference)
+### Example weights (Vanilla Reference)
 
 | Entity | Approximate Weight |
 |--------|-------------------|
@@ -300,11 +300,11 @@ Weight determines how likely an entity is to spawn relative to others:
 | Sheep | 12 |
 | Chicken | 10 |
 
-## Time-Based Spawning
+## Time-based spawning
 
-### Day/Night Spawning
+### Day/Night spawning
 
-**Night Only (Hostile Mobs):**
+**Night only (Hostile Mobs):**
 ```json
 {
   "minecraft:brightness_filter": {
@@ -315,7 +315,7 @@ Weight determines how likely an entity is to spawn relative to others:
 }
 ```
 
-**Day Only (Passive Mobs):**
+**Day only (Passive Mobs):**
 ```json
 {
   "minecraft:brightness_filter": {
@@ -326,7 +326,7 @@ Weight determines how likely an entity is to spawn relative to others:
 }
 ```
 
-### Using Spawn Events for Time Checks
+### Using spawn events for time checks
 
 In your entity behavior, use spawn events:
 
@@ -363,9 +363,9 @@ In your entity behavior, use spawn events:
 }
 ```
 
-## Spawn Events
+## Spawn events
 
-### The entity_spawned Event
+### The entity_spawned event
 
 Runs when an entity first spawns:
 
@@ -387,7 +387,7 @@ Runs when an entity first spawns:
 }
 ```
 
-### Conditional Spawn Variants
+### Conditional spawn variants
 
 ```json
 {
@@ -429,9 +429,9 @@ Runs when an entity first spawns:
 }
 ```
 
-## Herd and Pack Spawning
+## Herd and pack spawning
 
-### Spawn Groups
+### Spawn groups
 
 Make entities spawn in groups:
 
@@ -446,7 +446,7 @@ Make entities spawn in groups:
 }
 ```
 
-### Leader-Follower Pattern
+### Leader-follower pattern
 
 ```json
 {
@@ -479,11 +479,11 @@ Entity events:
 }
 ```
 
-## Spawn Rule Examples
+## Spawn rule examples
 
 ### Example 1: Cave Monster
 
-Only spawns underground in darkness:
+These spawn rules make sure the cave monster only spawns underground in darkness:
 
 ```json
 {
@@ -525,9 +525,9 @@ Only spawns underground in darkness:
 }
 ```
 
-### Example 2: Rare Biome-Specific Creature
+### Example 2: Rare biome-specific creature
 
-Spawns rarely in specific biomes:
+These spawn rules make sure the creature rarely spawns in specific biomes:
 
 ```json
 {
@@ -572,7 +572,7 @@ Spawns rarely in specific biomes:
 
 ### Example 3: Water Creature
 
-Spawns in ocean biomes underwater:
+These spawn rules make sure the creature only spawns in ocean biomes underwater:
 
 ```json
 {
@@ -609,7 +609,9 @@ Spawns in ocean biomes underwater:
 }
 ```
 
-### Example 4: Nether-Only Spawn
+### Example 4: Nether-only spawn
+
+These spawn rules make sure the creature only spawns in The Nether:
 
 ```json
 {
@@ -642,9 +644,9 @@ Spawns in ocean biomes underwater:
 }
 ```
 
-### Example 5: Multi-Condition Spawn
+### Example 5: Multi-condition spawn
 
-Different conditions for different situations:
+These spawn rules set different spawn conditions for different situations:
 
 ```json
 {
@@ -698,9 +700,9 @@ Different conditions for different situations:
 }
 ```
 
-## Script-Controlled Spawning
+## Script-controlled spawning
 
-For complete control, spawn entities via script:
+For complete control, spawn entities via the script object:
 
 ```javascript
 import { world, system } from "@minecraft/server";
@@ -761,9 +763,9 @@ function findValidSpawnLocation(dimension, center, minDist, maxDist) {
 }
 ```
 
-## Troubleshooting Spawn Issues
+## Troubleshooting spawn issues
 
-### Entity Won't Spawn
+### Entity won't spawn
 
 | Issue | Check | Solution |
 |-------|-------|----------|
@@ -775,7 +777,7 @@ function findValidSpawnLocation(dimension, center, minDist, maxDist) {
 | Missing spawn rules file | File exists in spawn_rules folder | Create spawn_rules JSON |
 | Format version | Using correct format | Use "1.8.0" for spawn rules |
 
-### Entity Spawns Too Often
+### Entity spawns too often
 
 | Issue | Solution |
 |-------|----------|
@@ -784,7 +786,7 @@ function findValidSpawnLocation(dimension, center, minDist, maxDist) {
 | Herd size too large | Reduce max_size in minecraft:herd |
 | Multiple condition sets | Reduce conditions or lower weights |
 
-### Entity Spawns in Wrong Places
+### Entity spawns in the wrong place(s)
 
 | Issue | Solution |
 |-------|----------|
@@ -793,41 +795,40 @@ function findValidSpawnLocation(dimension, center, minDist, maxDist) {
 | Wrong surface | Use correct spawns_on_surface/underground/underwater |
 | Wrong blocks | Update spawns_on_block_filter |
 
-### Debug Spawning
+### Debug spawning
 
-Use commands to test:
+Use the following commands to test:
 
-```
-# Force spawn to check rules
-/summon custom:my_entity ~ ~ ~
+- Force spawn to check rules: `/summon custom:my_entity ~ ~ ~`
 
-# Check current biome
-/locate biome <biome_name>
+- Check current biome: `/locate biome <biome_name>`
 
-# Clear area for testing
-/kill @e[type=custom:my_entity]
-```
+- Clear area for testing: `/kill @e[type=custom:my_entity]`
 
-## Best Practices
+## Best practices
 
-1. **Start with low weights** - Increase gradually if entity is too rare
-2. **Use density limits** - Prevent overpopulation
-3. **Test in target biomes** - Don't just test in creative flat worlds
-4. **Consider performance** - Too many spawning entities impacts performance
-5. **Use population control wisely** - Match the entity type to appropriate cap
-6. **Document your spawn rules** - Note the intended spawn behavior
-7. **Test multiplayer** - Spawning behaves differently with multiple players
+1. Start with low weights and increase them gradually until the entity is to your liking.
+
+2. Use density limits whenever possible to prevent world overpopulation. When controlling for population, match the entity type to the appropriate cap.
+
+3. Test your entities in their target biomes, not just creative flat worlds.
+
+4. Consider performance when customizing your worlds. Too many  entities spawning in an area negatively impacts performance.
+
+5. Document your spawn rules and note the intended spawn behavior to cross-reference when testing your customizations.
+
+6. Test your add-ons in multiplayer if you plan to play with others&mdash;spawning behaves differently with multiple players present.
 
 ## Next Steps
 
 > [!div class="nextstepaction"]
-> [Entity Behavior Introduction](EntityBehaviorIntroduction.md)
+> [Entity Behavior Introduction](../EntityBehaviorIntroduction.md)
 
 > [!div class="nextstepaction"]
-> [Creating Boss Entities](CreatingBossEntities.md)
+> [Custom Behaviors and Render Controllers](../behaviorrendercontrollers.md)
 
 ## See Also
 
-- [Introduction to Add Entity](IntroductionToAddEntity.md)
-- [Biome Overview](Biomes/BiomeOverview.md)
+- [Introduction to Add Entity](../IntroductionToAddEntity.md)
+- [Biome Overview](../Biomes/BiomeOverview.md)
 - [Spawn Rules Reference](../Reference/Content/EntityReference/Examples/EntitySpawnRules.md)
