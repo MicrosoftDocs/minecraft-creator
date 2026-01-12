@@ -702,7 +702,10 @@ These spawn rules set different spawn conditions for different situations:
 
 ## Script-controlled spawning
 
-For complete control, spawn entities via the script object:
+Use the script object for complete control over entity spawning:
+
+> [!TIP]
+> Check out our [Scripting Documentation](../scripting/introduction.md) for more on how to leverage scripts in your add-ons.
 
 ```javascript
 import { world, system } from "@minecraft/server";
