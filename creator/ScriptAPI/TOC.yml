@@ -1760,6 +1760,8 @@
       href: minecraft/server-editor/WeightedBlock.md
     - name: WidgetComponentBaseOptions
       href: minecraft/server-editor/WidgetComponentBaseOptions.md
+    - name: WidgetComponentBoundingBoxLimit
+      href: minecraft/server-editor/WidgetComponentBoundingBoxLimit.md
     - name: WidgetComponentBoundingBoxOptions
       href: minecraft/server-editor/WidgetComponentBoundingBoxOptions.md
     - name: WidgetComponentClipboardOptions

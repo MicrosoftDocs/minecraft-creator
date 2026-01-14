@@ -29,15 +29,10 @@ Type: [*Axis*](Axis.md)
 
 Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
-### **maxSize**
-`maxSize?: minecraftserver.Vector3;`
+### **limit**
+`limit?: WidgetComponentBoundingBoxLimit;`
 
-Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
-
-### **minSize**
-`minSize?: minecraftserver.Vector3;`
-
-Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+Type: [*WidgetComponentBoundingBoxLimit*](WidgetComponentBoundingBoxLimit.md)
 
 ### **mirror**
 `mirror?: minecraftserver.StructureMirrorAxis;`

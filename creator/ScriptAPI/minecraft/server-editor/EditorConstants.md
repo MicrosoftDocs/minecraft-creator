@@ -11,6 +11,16 @@ description: Contents of the @minecraft/server-editor.EditorConstants class.
 
 ## Properties
 
+### **maxBlockVolume**
+`read-only maxBlockVolume: number;`
+
+Type: *number*
+
+### **maxDynamicSelectionSize**
+`read-only maxDynamicSelectionSize: minecraftserver.Vector3;`
+
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
 ### **maxSelectionSize**
 `read-only maxSelectionSize: minecraftserver.Vector3;`
 

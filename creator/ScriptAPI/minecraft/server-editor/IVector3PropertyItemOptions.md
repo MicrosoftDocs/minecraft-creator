@@ -30,6 +30,13 @@ If true label text will be hidden. It will be visible by default.
 
 Type: *boolean*
 
+### **hideYAxis**
+`hideYAxis?: boolean;`
+
+Hides Y axis input field. If undefined, it will be false.
+
+Type: *boolean*
+
 ### **isInteger**
 `isInteger?: boolean;`
 
