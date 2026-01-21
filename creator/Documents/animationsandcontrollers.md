@@ -20,7 +20,7 @@ We strongly recommend that you read through these guides and can confidently com
 - [Custom Behaviors and Render Controllers](../Documents/behaviorrendercontrollers.md)
 - [Animation Documentation](../Documents/Animations/index.yml)
 - [Animations vs. Animation Controllers](../Documents/AnimationsVsControllers.md)
-- [Introduction to Particles](../Documents/BehaviorPack.md)
+- [Particle Effects](../Documents/ParticleEffects.md)
 
 ## Customizing mob sounds
 
@@ -32,14 +32,12 @@ First, we're going to create and add a custom sound for when the Shapeshifter ch
     > [!TIP]
     > Check out our article on [adding new sounds](../Documents/AddCustomSounds.md) for a refresher on how to structure your sound pack to customize sounds in Minecraft: Bedrock Edition.
 
-3. Tether the new sound to the shapeshifter mob by adding a new event to the resource pack’s sounds.json file.
+3. Tether the new sound to the shapeshifter mob by adding a `sound_effects` object to the client entity file (i.e. shapeshifter.entity.json) description. This maps the short name used in the animation controller to the full sound identifier.
 
     ```json
-    "phase_change": {
-        "pitch": 1,
-        "sound": "shapeshifter.phase_change",
-        "volume": 1
-    } 
+    "sound_effects": {
+        "phase_change": "shapeshifter.phase_change"
+    }
     ```
 
 4. Add the following in a sound_definitions.json file in the sounds folder:
@@ -59,7 +57,7 @@ First, we're going to create and add a custom sound for when the Shapeshifter ch
     } 
     ```
 
-5. Finally, add a `play_sound` object to the client behavior file (i.e. shapeshifter.behavior.json) description, before the `randomize` component we created in the first tutorial:
+5. Finally, add a `play_sound` object to the server-side behavior file (i.e. shapeshifter.behavior.json) description, before the `randomize` component we created in the first tutorial:
 
     ```json
     {
@@ -83,7 +81,7 @@ Next, we're going to leverage the [witchspell particle](https://github.com/Mojan
     }, 
     ```
 
-3. Add the `emit_particle` object to the client behavior file (i.e. shapeshifter.behavior.json) description, before the `play_sound` component we created in the previous section:
+3. Add the `emit_particle` object to the server-side behavior file (i.e. shapeshifter.behavior.json) description, before the `play_sound` component we created in the previous section:
 
     ```json
     {
@@ -105,7 +103,7 @@ Now it's time to add a custom animation to the Shapeshifter to signal when it's 
 3. Use Blockbench to create a custom animation for the shapeshifter, then save your animation to update the shapeshifter’s file.
 
     > [!TIP]
-    > To save your animation, go to the Blokcbench file menu bar, select **Animation**, then click **Save All Animations**.
+    > To save your animation, go to the Blockbench file menu bar, select **Animation**, then click **Save All Animations**.
 
     ![Shapeshifter Animation](../Documents/Media/AdvancedCustomMobs/phase_change.gif)
 
@@ -146,11 +144,8 @@ Now it's time to add a custom animation to the Shapeshifter to signal when it's 
       }
     ```
 
-    ![Finished Shapeshifter](../Documents/Media/AdvancedCustomMobs/success.gif)
-
     We associated our animation with the component that controls the shapeshifter's geometry, but feel free to get creative to give your shapeshifter even more unique parameters!
 
 ### See Also
 
 - [Snowstorm Documentation](../Documents/SnowstormOverview.md)
-- [Particle Effects](../Documents/ParticleEffects.md)
