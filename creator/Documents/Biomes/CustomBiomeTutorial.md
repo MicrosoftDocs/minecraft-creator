@@ -11,7 +11,7 @@ ms.date: 01/20/2025
 
 This tutorial walks you through creating a custom biome from scratch—including surface generation, features, mobs, fog, and ambient effects. By the end, you'll have a unique "Crystal Caverns" biome that generates in your world.
 
-## In This Tutorial
+## In this tutorial
 
 You will learn:
 
@@ -20,7 +20,7 @@ You will learn:
 > - How to structure biome definition files
 > - How to configure surface materials and terrain
 > - How to add custom features like ores and vegetation
-> - How to set-up biome-specific mob spawning
+> - How to set up biome-specific mob spawning
 > - How to create atmosphere with fog and particles
 > - How to register and test your biome
 
@@ -33,7 +33,7 @@ Before starting, you should:
 - Have a development environment set up for testing
 
 > [!TIP]
-> A completed version of this tutorial is available in the [Crystal Caverns Biome sample](https://github.com/microsoft/minecraft-samples/tree/main/crystal_caverns_biome) on GitHub.
+> A completed version of a custom biome is available in the [Chill Oasis Biome sample](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features) on GitHub.
 
 ## Manifest files
 
@@ -105,7 +105,7 @@ The definition JSON file in your behavior pack is the core file that houses the 
 
 ```
 crystal_caverns_pack/
-├── behavior_pack/
+└── behavior_pack/
    ├── manifest.json
    ├── pack_icon.png
    ├── biomes/
@@ -122,7 +122,7 @@ crystal_caverns_pack/
 
 ### Biome JSON file
 
-Create a file called crystal_caverns.json in the biomes folder of your new behavior pack and populate it with the following:  
+Create a file called **crystal_caverns.json** in the biomes folder of your new behavior pack and populate it with the following:  
 
 ```json
 { 
@@ -173,7 +173,7 @@ Create a file called crystal_caverns.json in the biomes folder of your new behav
 
 This file defines your custom biome and ties everything else in the behavior pack back to the identifier used at the beginning of the file so that it can be referenced in-world as needed. It’s generally a good idea to name the file whatever you choose for the identifier name to make it easier to find/summon when testing the pack.
 
-### Component Breakdown
+### Component breakdown
 
 As you probably noticed, most biome generation settings are handled within the components section in the file mentioned above. This table lists supported component types and provides a brief description about what they control.
 
@@ -198,7 +198,7 @@ Now, let's update `minecraft:surface_parameters` to make the surface more intere
 }
 ```
 
-We're using deepslate blocks as the foundation of our biome, with stone and calcite blocks layered beneath. We made the ocean floor 7 subchunks deep and made of gravel–things already feel a lot more like a cave!
+We're using deepslate blocks as the foundation of our biome, with stone and calcite blocks layered above. We made the ocean floor 7 blocks deep and made of gravel&mdash;things already feel a lot more like a cave!
 
 ### Adding custom features
 
@@ -251,7 +251,7 @@ Now that our biome surface is to our liking, we should consider the features we 
 
     The code above sets scatter conditions for our special glowing mushroom to create patches of the features around the biome, but we still need to define the glowing mushroom itself.  
 
-3. Create another file in the features folder called single_glowing_mushroom.json with the code below to define the special mushroom feature we used previous step.
+3. Create another file in the features folder called single_glowing_mushroom.json with the code below to define the special mushroom feature we used in the previous step.
     
     ```json
     { 
@@ -309,7 +309,7 @@ Now that our biome has some custom features to help distinguish it, we should se
     }
     ```
 
-    And just like that, we’ve set rules for how and when our crystal cluster feature spawns in the Crystal Cavern.
+    And just like that, we’ve set rules for how and when our crystal cluster feature spawns in the Crystal Caverns.
 
 2. Now we need to adjust the mushrooms we used in the last section to make them special in the way we intended. Create a new file in `feature_rules` called `glowing_mushroom_rule.json` and save it with the following code.
     
@@ -345,13 +345,16 @@ Now that our biome has some custom features to help distinguish it, we should se
     }
     ```
 
-    Now the mushrooms in Crystal Caverns glow like they only could there!
+    Now the mushrooms in Crystal Caverns cluster together like they only could there!
 
 ### Biome-specific spawning
 
-Use biome-specific spawn rules to create custom rules for entities that only apply in your biome. First, you'll need to choose an entity (either a custom or a vanilla one). We'll use a spawn rule for a (hypothetical) crystal golem.
+Use biome-specific spawn rules to create custom rules for entities that only apply in your biome. First, you'll need to choose an entity (either a custom or a vanilla one).
 
-1. Create a new file in spawn_rules called `crystal_golem.json` and specify when and where in the Crystal Caverns the golem should appear.
+> [!NOTE]
+> We use a spawn rule for a crystal golem that we modified from the vanilla iron golem entity, so this rule won't work for you unless you have a similarly named entity in the pack as well.
+
+1. Create a new file in the spawn_rules folder called `crystal_golem.json` and specify when and where in the Crystal Caverns the golem should appear.
 
     ```json
         { 
@@ -413,9 +416,9 @@ Custom biomes require content in both a behavior pack and a resource pack. The r
 > The biome identifier between your behavior pack biome definition and any resource pack client biome files must match. Minecraft uses this identifier to link the server-side gameplay with client-side visuals. Start by creating the following folder structure.
 
 ```
-crystal_caverns_pack/ 
-├── resource_pack/ 
-    ├── manifest.json 
+crystal_caverns_pack/
+└── resource_pack/
+    ├── manifest.json
     ├── pack_icon.png 
     ├── biomes_client/ 
     │   └── crystal_caverns.biome_client.json 
@@ -575,11 +578,11 @@ Fog gives your biome a unique atmosphere, so it's only right to let you customiz
     - Correct surface blocks (calcite on top)
     - Crystal clusters that group correctly underground
     - Proper fog coloring
-    - Custom mob(s) that spawns correctly (if referenced entity exists)
+    - Custom mob(s) that spawn correctly (if referenced entity exists)
 
-## Common Customizations
+## Common customizations
 
-- ### Adjusting Biome Rarity
+- ### Adjusting biome rarity
 
     Change the weight in `generate_for_climates`:
     
@@ -653,7 +656,7 @@ Now that you've created a custom biome, try:
 
 ## See also
 
-- [Biome Overview](../Biormes/BiomeOverview.md)
+- [Biome Overview](../Biomes/BiomeOverview.md)
 - [Feature Reference](../../Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md)
 - [Fog Reference](../FogInResourcePacks.md)
 - [Client Biomes Overview](../../Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md)
