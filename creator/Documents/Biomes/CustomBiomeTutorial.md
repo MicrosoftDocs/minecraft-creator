@@ -103,22 +103,7 @@ Custom biomes require content in both a behavior pack and a resource pack. The b
 
 The definition JSON file in your behavior pack is the core file that houses the definitions for your biome's core properties. Most of the climate and terrain-based features of a biome are handled here, so you're well on your way to molding your worlds to your liking once you're familiar with this process. Start by creating the following folder structure:
 
-```
-crystal_caverns_pack/
-└── behavior_pack/
-   ├── manifest.json
-   ├── pack_icon.png
-   ├── biomes/
-   │   └── crystal_caverns.json
-   ├── features/
-   │   ├── crystal_cluster.json
-   │   └── glowing_mushroom.json
-   ├── feature_rules/
-   │   ├── crystal_cluster_rule.json
-   │   └── glowing_mushroom_rule.json
-   └── spawn_rules/
-       └── crystal_golem.json
-```
+![Crystal caverns bp](../Media/CustomBiome/caverns_bp.png)
 
 ### Biome JSON file
 
@@ -415,16 +400,7 @@ Custom biomes require content in both a behavior pack and a resource pack. The r
 > [!NOTE]
 > The biome identifier between your behavior pack biome definition and any resource pack client biome files must match. Minecraft uses this identifier to link the server-side gameplay with client-side visuals. Start by creating the following folder structure.
 
-```
-crystal_caverns_pack/
-└── resource_pack/
-    ├── manifest.json
-    ├── pack_icon.png 
-    ├── biomes_client/ 
-    │   └── crystal_caverns.biome_client.json 
-    └── fogs/ 
-        └── crystal_caverns_fog.json 
-```
+![Crystal caverns rp](../Media/CustomBiome/caverns_rp.png)
 
 ### Biome fogs
 
