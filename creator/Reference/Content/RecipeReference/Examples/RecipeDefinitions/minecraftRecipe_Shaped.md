@@ -14,7 +14,6 @@ Represents a crafting recipe that is to be used with a crafting table. The key u
 
 |Name |Type| Default| Description |
 |:-----------|:-----------|------------|:-----------|
-|assume_symmetry| Boolean| Determines if the recipe should assume symmetry or not.|
 |key| array of key and item pairs| *not set*| Pattern key character mapped to item names. |
 |pattern|String array|*not set*| Characters that represent a pattern to be defined by keys. |
 | priority| Integer|*not set*| Sets the priority order of the recipe. Lower numbers represent a higher priority. |
