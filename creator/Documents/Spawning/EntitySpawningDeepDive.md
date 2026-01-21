@@ -39,19 +39,13 @@ You will learn:
 
 Minecraft continuously evaluates whether to spawn entities based on several factors:
 
-![Spawn cycle diagram showing the six steps: check spawn conditions, find valid spawn locations, check population caps, evaluate spawn weight, spawn entity, and run spawn event](Media/EntitySpawning/spawn-cycle-diagram.svg)
+![Spawn cycle diagram showing the six steps: check spawn conditions, find valid spawn locations, check population caps, evaluate spawn weight, spawn entity, and run spawn event](../Media/EntitySpawning/spawn-cycle-diagram.svg)
 
 ### Spawn rule files
 
 Spawn rules are defined in the behavior pack's `spawn_rules` folder:
 
-```
-behavior_pack/
-└── spawn_rules/
-    ├── custom_entity.json
-    ├── night_creature.json
-    └── cave_dweller.json
-```
+![Spawn Rules BP](../Media/EntitySpawning/spawn_rules.png)
 
 ## Basic spawn rule structure
 
