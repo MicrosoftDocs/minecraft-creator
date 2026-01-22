@@ -1,6 +1,7 @@
 ---
 author: mammerla
 ms.author: mikeam
+ai-usage: ai-assisted
 title: Entity Spawning Deep Dive
 description: "A comprehensive guide to entity spawn rules, biome filtering, density limits, spawn events, and controlling when and where entities appear in Minecraft: Bedrock Edition."
 ms.service: minecraft-bedrock-edition
