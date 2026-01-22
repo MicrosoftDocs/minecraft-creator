@@ -1,6 +1,7 @@
 ---
 author: cam-wilkerson
 ms.author: v-cwilkerson
+ai-usage: ai-assisted
 title: Custom Biome Tutorial
 description: "A step-by-step tutorial for creating custom biomes in Minecraft: Bedrock Edition, covering both behavior pack and resource pack components."
 ms.service: minecraft-bedrock-edition
