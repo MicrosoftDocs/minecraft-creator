@@ -144,6 +144,8 @@
               href: Documents/Blockbench.md
             - name: Other Commonly Used Tools
               href: Documents/CommonlyUsedTools.md
+        - name: Add-On Development Workflow
+          href: Documents/AddonDevelopmentWorkflow.md
     - name: Concepts
       items:
         - name: World Generation Overview
@@ -777,6 +779,8 @@
         href: Reference/Content/VersionDisambiguation.md
     - name: Best Practices & Tips
       items:
+      - name: "Troubleshooting and Fixing Add-On Bugs"
+        href: Documents/TroubleshootingAddons.md
       - name: "Use the Latest Platform Version"
         href: Documents/Practices/LatestPlatformVersion.md
       - name: "Building Cooperative Add-Ons"
