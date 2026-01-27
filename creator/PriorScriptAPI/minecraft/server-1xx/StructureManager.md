@@ -163,6 +163,7 @@ Places a partial jigsaw structure in the world. This is useful for debugging con
   
   The name of the jigsaw block to start from. This block must be included in at least one of the starting pool structure templates.
 - **maxDepth**: *number*
+  * Bounds: [`1`, `20`]
   
   The maximum recursion depth for the jigsaw structure.
 - **dimension**: [*Dimension*](Dimension.md)

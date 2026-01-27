@@ -21,6 +21,7 @@ Number of the items in the stack. Valid values range between 1-255. The provided
 Type: *number*
 
 Notes:
+  - This property has a bounds of [`1`, `255`]
   - This property can't be edited in restricted-execution mode.
   - This property can throw errors when used.
     - Throws if the value is outside the range of 1-255.

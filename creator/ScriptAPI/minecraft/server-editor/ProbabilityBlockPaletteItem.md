@@ -36,6 +36,7 @@ addBlock(block: minecraftserver.BlockPermutation | minecraftserver.BlockType | s
 #### **Parameters**
 - **block**: [*@minecraft/server.BlockPermutation*](../../../scriptapi/minecraft/server/BlockPermutation.md) | [*@minecraft/server.BlockType*](../../../scriptapi/minecraft/server/BlockType.md) | *string*
 - **weight**: *number*
+  * Bounds: [`1`, `100`]
   
 Notes:
 - This function can't be called in restricted-execution mode.

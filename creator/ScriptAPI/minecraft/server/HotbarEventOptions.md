@@ -19,3 +19,6 @@ Contains additional filtering options for hotbar events.
 The slot indexes to consider. Values should be between 0 and 8, inclusive. If not specified, all slots are considered.
 
 Type: *number*[]
+
+Notes:
+  - This property has a bounds of [`0`, `8`]

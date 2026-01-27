@@ -20,6 +20,9 @@ The slot indexes to consider. Values should be positive numbers. If not specifie
 
 Type: *number*[]
 
+Notes:
+  - This property has a bounds of [`0`, `1000`]
+
 ### **excludeItems**
 `excludeItems?: string[];`
 

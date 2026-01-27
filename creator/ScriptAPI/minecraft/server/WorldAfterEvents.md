@@ -121,6 +121,7 @@ Type: [*EntityHitEntityAfterEventSignal*](EntityHitEntityAfterEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **entityHurt**
 `read-only entityHurt: EntityHurtAfterEventSignal;`
 
@@ -128,8 +129,12 @@ This event fires when an entity is hurt (takes damage).
 
 Type: [*EntityHurtAfterEventSignal*](EntityHurtAfterEventSignal.md)
 
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 Notes:
   - This property can be read in early-execution mode.
+::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **entityItemDrop**
@@ -477,18 +482,13 @@ Type: [*PlayerSpawnAfterEventSignal*](PlayerSpawnAfterEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playerSwingStart**
 `read-only playerSwingStart: PlayerSwingStartAfterEventSignal;`
 
 Type: [*PlayerSwingStartAfterEventSignal*](PlayerSwingStartAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **playerUseNameTag**

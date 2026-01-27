@@ -19,7 +19,7 @@ Optional properties for List Pane property item
 ### **defaultSlots**
 `defaultSlots?: ListPaneSlotCreationProps[];`
 
-This will be the height of the list withing the pane
+Default slots to initialize the list with. If undefined, the list will be empty.
 
 Type: *ListPaneSlotCreationProps*[]
 
@@ -33,16 +33,9 @@ Type: *boolean*
 ### **height**
 `height?: number;`
 
-This will be the height of the list withing the pane
+This will be the height of the list within the pane
 
 Type: *number*
-
-### **layout**
-`layout: ListPaneSlotLayout;`
-
-Layout for the list will need to be predefined, and using wrong layout shape while creating slots will throw
-
-Type: *ListPaneSlotLayout*
 
 ### **onSlotClicked**
 `onSlotClicked?: (arg0: IListPaneSlot) => void;`
@@ -57,6 +50,13 @@ Type: (arg0: *IListPaneSlot*) => *void*
 This callback is fired whenever selected state of a slot is changed
 
 Type: (arg0: *IListPaneSlot*, arg1: *boolean*) => *void*
+
+### **slotConfig**
+`slotConfig: ListPaneSlotConfiguration;`
+
+Slot configuration for the list. The slot entry layout must be predefined, and using an incorrect layout while creating slots will throw an error.
+
+Type: *ListPaneSlotConfiguration*
 
 ### **title**
 `title?: LocalizedString;`

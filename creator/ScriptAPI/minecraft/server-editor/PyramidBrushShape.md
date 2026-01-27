@@ -15,8 +15,11 @@ description: Contents of the @minecraft/server-editor.PyramidBrushShape class.
 ## Methods
 - [constructor](#(constructor))
 - [applySetting](#applysetting)
+- [calculateBounds](#calculatebounds)
 - [createSettingsPane](#createsettingspane)
 - [createShape](#createshape)
+- [createShapeAsync](#createshapeasync)
+- [estimateBlockCount](#estimateblockcount)
 - [getSettings](#getsettings)
 
 ### **constructor**
@@ -57,6 +60,13 @@ applySetting(brushSettings: PyramidBrushShapeSettings): void
 
 **Returns** *void*
 
+### **calculateBounds**
+`
+calculateBounds(): minecraftserver.BlockBoundingBox
+`
+
+**Returns** *minecraftserver.BlockBoundingBox*
+
 ### **createSettingsPane**
 `
 createSettingsPane(parentPane: IPropertyPane, onSettingsChange?: () => void): ISubPanePropertyItem
@@ -74,6 +84,28 @@ createShape(): RelativeVolumeListBlockVolume
 `
 
 **Returns** *RelativeVolumeListBlockVolume*
+
+### **createShapeAsync**
+`
+createShapeAsync(cancelToken?: {
+        cancelled: boolean;
+    }, yieldInterval?: number): Promise<RelativeVolumeListBlockVolume>
+`
+
+#### **Parameters**
+- **cancelToken**?: *{
+        cancelled: boolean;
+    }*
+- **yieldInterval**?: *number*
+
+**Returns** *Promise<RelativeVolumeListBlockVolume>*
+
+### **estimateBlockCount**
+`
+estimateBlockCount(): number
+`
+
+**Returns** *number*
 
 ### **getSettings**
 `

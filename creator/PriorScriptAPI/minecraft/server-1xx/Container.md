@@ -89,6 +89,7 @@ Gets an [*@minecraft/server.ItemStack*](../../../priorscriptapi/minecraft/server
 
 #### **Parameters**
 - **slot**: *number*
+  * Minimum Bound: `0`
   
   Zero-based index of the slot to retrieve items from.
 
@@ -133,6 +134,7 @@ Returns a container slot. This acts as a reference to a slot at the given index 
 
 #### **Parameters**
 - **slot**: *number*
+  * Minimum Bound: `0`
   
   The index of the slot to return. This index must be within the bounds of the container.
 
@@ -163,9 +165,11 @@ Moves an item from one slot to another, potentially across containers.
 
 #### **Parameters**
 - **fromSlot**: *number*
+  * Minimum Bound: `0`
   
   Zero-based index of the slot to transfer an item from, on this container.
 - **toSlot**: *number*
+  * Minimum Bound: `0`
   
   Zero-based index of the slot to transfer an item to, on `toContainer`.
 - **toContainer**: [*Container*](Container.md)
@@ -220,6 +224,7 @@ Sets an item stack within a particular slot.
 
 #### **Parameters**
 - **slot**: *number*
+  * Minimum Bound: `0`
   
   Zero-based index of the slot to set an item at.
 - **itemStack**?: [*ItemStack*](ItemStack.md) = `null`
@@ -240,9 +245,11 @@ Swaps items between two different slots within containers.
 
 #### **Parameters**
 - **slot**: *number*
+  * Minimum Bound: `0`
   
   Zero-based index of the slot to swap from this container.
 - **otherSlot**: *number*
+  * Minimum Bound: `0`
   
   Zero-based index of the slot to swap with.
 - **otherContainer**: [*Container*](Container.md)
@@ -263,6 +270,7 @@ Moves an item from one slot to another container, or to the first available slot
 
 #### **Parameters**
 - **fromSlot**: *number*
+  * Minimum Bound: `0`
   
   Zero-based index of the slot to transfer an item from, on this container.
 - **toContainer**: [*Container*](Container.md)

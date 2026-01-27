@@ -337,6 +337,7 @@ Orders the simulated player to walk in the given direction relative to the GameT
 - **westEast**: *number*
 - **northSouth**: *number*
 - **speed**?: *number* = `1`
+  * Bounds: [`0`, `1`]
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -353,6 +354,7 @@ Orders the simulated player to walk in the given direction relative to the playe
 - **leftRight**: *number*
 - **backwardForward**: *number*
 - **speed**?: *number* = `1`
+  * Bounds: [`0`, `1`]
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -399,6 +401,7 @@ Orders the simulated player to move to a specific block location using navigatio
 #### **Parameters**
 - **blockLocation**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **speed**?: *number* = `1`
+  * Bounds: [`0`, `1`]
 
 **Returns** [*NavigationResult*](NavigationResult.md)
   
@@ -417,6 +420,7 @@ Will use navigation to follow the selected entity to within a one block radius. 
 #### **Parameters**
 - **entity**: [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md)
 - **speed**?: *number* = `1`
+  * Bounds: [`0`, `1`]
 
 **Returns** [*NavigationResult*](NavigationResult.md)
   
@@ -435,6 +439,7 @@ Orders the simulated player to move to a specific location using navigation. If 
 #### **Parameters**
 - **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **speed**?: *number* = `1`
+  * Bounds: [`0`, `1`]
 
 **Returns** [*NavigationResult*](NavigationResult.md)
   
@@ -455,6 +460,7 @@ Use navigation to follow the route provided via the locations parameter. If a mo
   
   A list of locations to use for routing.
 - **speed**?: *number* = `1`
+  * Bounds: [`0`, `1`]
   
   Net speed to use for doing the navigation.
   

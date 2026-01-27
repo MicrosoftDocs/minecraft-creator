@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.EntitySwingSource Enumeration
 description: Contents of the @minecraft/server.EntitySwingSource enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntitySwingSource Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Enumerator describing the source of an Entity swing. Sent as part of [*@minecraft/server.PlayerSwingStartAfterEvent*](../../../scriptapi/minecraft/server/PlayerSwingStartAfterEvent.md)
 

@@ -131,6 +131,11 @@ Type: *boolean*
 
 Type: *boolean*
 
+### **keepPlayerData**
+`keepPlayerData?: boolean;`
+
+Type: *boolean*
+
 ### **lanVisibility**
 `lanVisibility?: boolean;`
 

@@ -10,7 +10,8 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.6.0-beta](#260-beta)
+- [2.7.0-beta](#270-beta)
+- [2.5.0](#250)
 - [2.4.0](#240)
 - [2.3.0](#230)
 - [2.2.0](#220)
@@ -37,7 +38,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.6.0-beta
+## 2.7.0-beta
 #### Added *[`AimAssistCategory`](AimAssistCategory.md)*
 #### Added *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 #### Added *[`AimAssistPreset`](AimAssistPreset.md)*
@@ -100,9 +101,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`EntityHealBeforeEvent`](EntityHealBeforeEvent.md)*
 #### Added *[`EntityHealBeforeEventSignal`](EntityHealBeforeEventSignal.md)*
 #### Added *[`EntityHealSource`](EntityHealSource.md)*
-#### Changed *[`EntityHurtAfterEventSignal`](EntityHurtAfterEventSignal.md)*
-- Changed function *[`subscribe`](EntityHurtAfterEventSignal.md#subscribe)*
-  - Changed argument `options` type from [*EntityEventOptions*](EntityEventOptions.md) to [*EntityHurtAfterEventOptions*](EntityHurtAfterEventOptions.md)
+#### Added *[`EntityHurtAfterEventSignal`](EntityHurtAfterEventSignal.md)*
 #### Added *[`EntityHurtBeforeEvent`](EntityHurtBeforeEvent.md)*
 #### Added *[`EntityHurtBeforeEventSignal`](EntityHurtBeforeEventSignal.md)*
 #### Added *[`EntityItemDropAfterEvent`](EntityItemDropAfterEvent.md)*
@@ -139,8 +138,6 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PlayerAimAssist`](PlayerAimAssist.md)*
 #### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
 #### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
-#### Added *[`PlayerSwingStartAfterEvent`](PlayerSwingStartAfterEvent.md)*
-#### Added *[`PlayerSwingStartAfterEventSignal`](PlayerSwingStartAfterEventSignal.md)*
 #### Added *[`PlayerUseNameTagAfterEvent`](PlayerUseNameTagAfterEvent.md)*
 #### Added *[`PlayerUseNameTagAfterEventSignal`](PlayerUseNameTagAfterEventSignal.md)*
 #### Changed *[`Potions`](Potions.md)*
@@ -163,11 +160,11 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
 - Added property *[`entityHeal`](WorldAfterEvents.md#entityheal)*
+- Added property *[`entityHurt`](WorldAfterEvents.md#entityhurt)*
 - Added property *[`entityItemDrop`](WorldAfterEvents.md#entityitemdrop)*
 - Added property *[`entityItemPickup`](WorldAfterEvents.md#entityitempickup)*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
 - Added property *[`packSettingChange`](WorldAfterEvents.md#packsettingchange)*
-- Added property *[`playerSwingStart`](WorldAfterEvents.md#playerswingstart)*
 - Added property *[`playerUseNameTag`](WorldAfterEvents.md#playerusenametag)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
@@ -176,11 +173,6 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`entityItemPickup`](WorldBeforeEvents.md#entityitempickup)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
 #### Added enum [`AimAssistTargetMode`](AimAssistTargetMode.md)
-#### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
-- Added value `MapColor`
-- Added value `Movable`
-- Added value `PrecipitationInteractions`
-- Added value `RedstoneProducer`
 #### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
 #### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
 #### Changed enum [`CustomCommandErrorReason`](CustomCommandErrorReason.md)
@@ -189,14 +181,24 @@ description: Changelog of the `@minecraft/server` module
 #### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
 - Added value `Npc`
 #### Added enum [`EntityHealCause`](EntityHealCause.md)
-#### Added enum [`EntitySwingSource`](EntitySwingSource.md)
 #### Changed enum [`EquipmentSlot`](EquipmentSlot.md)
 - Added value `Body`
 #### Changed enum [`GameRule`](GameRule.md)
 - Added value `LocatorBar`
-#### Added enum [`HeldItemOption`](HeldItemOption.md)
 #### Added enum [`TickingAreaErrorReason`](TickingAreaErrorReason.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
+## 2.5.0
+#### Added *[`PlayerSwingStartAfterEvent`](PlayerSwingStartAfterEvent.md)*
+#### Added *[`PlayerSwingStartAfterEventSignal`](PlayerSwingStartAfterEventSignal.md)*
+#### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
+- Added property *[`playerSwingStart`](WorldAfterEvents.md#playerswingstart)*
+#### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
+- Added value `MapColor`
+- Added value `Movable`
+- Added value `PrecipitationInteractions`
+- Added value `RedstoneProducer`
+#### Added enum [`EntitySwingSource`](EntitySwingSource.md)
+#### Added enum [`HeldItemOption`](HeldItemOption.md)
 ## 2.4.0
 #### Added *[`BlockComponentBlockBreakEvent`](BlockComponentBlockBreakEvent.md)*
 #### Added *[`BlockPrecipitationInteractionsComponent`](BlockPrecipitationInteractionsComponent.md)*
@@ -424,6 +426,7 @@ description: Changelog of the `@minecraft/server` module
 - Changed read-only flag for *[`value`](EntityFrictionModifierComponent.md#value)* from `false` to `true`
 - Changed type for *[`value`](EntityFrictionModifierComponent.md#value)* from *number* to *number* (throws exceptions)
 #### Removed *EntityGroundOffsetComponent*
+#### Removed *EntityHurtAfterEventSignal*
 #### Changed *[`EntityInventoryComponent`](EntityInventoryComponent.md)*
 - Changed type for *[`container`](EntityInventoryComponent.md#container)* from [*Container*](Container.md) to [*Container*](Container.md) (throws exceptions)
 #### Changed *[`EntityMarkVariantComponent`](EntityMarkVariantComponent.md)*
@@ -495,10 +498,13 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`System`](System.md)*
 - Added property *[`beforeEvents`](System.md#beforeevents)*
 - Added property *[`isEditorWorld`](System.md#iseditorworld)*
+- Changed function *[`waitTicks`](System.md#waitticks)*
+  - Removed minimum bound of `1` from argument `ticks`
 #### Added *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
 #### Changed *[`World`](World.md)*
 - Removed function *playSound*
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
+- Removed property *entityHurt*
 - Removed property *itemUseOn*
 - Removed property *worldInitialize*
 - Added property *[`worldLoad`](WorldAfterEvents.md#worldload)*
@@ -1031,6 +1037,8 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`EntitySpawnAfterEventSignal`](EntitySpawnAfterEventSignal.md)*
 #### Changed *[`ItemStack`](ItemStack.md)*
 - Changed read-only flag for *[`amount`](ItemStack.md#amount)* from `true` to `false`
+- Added minimum bound of `1` for property *[`amount`](ItemStack.md#amount)* 
+- Added maximum bound of `255` for property *[`amount`](ItemStack.md#amount)* 
 - Changed read-only flag for *[`keepOnDeath`](ItemStack.md#keepondeath)* from `true` to `false`
 - Changed read-only flag for *[`lockMode`](ItemStack.md#lockmode)* from `true` to `false`
 - Changed read-only flag for *[`nameTag`](ItemStack.md#nametag)* from `true` to `false`
