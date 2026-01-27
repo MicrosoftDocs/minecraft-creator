@@ -22,7 +22,7 @@ You can find more information about the camera command in the [Camera Command In
 
 ## Free Camera Overview
 
-The free camera preset can be used to accomplish many gameplay scenarios by setting the camera at a distance away from players and entities, showing more of the environment. You can even set up cutscenes and use easing methods to have the camera flyover a scene.
+The free camera preset can be used to accomplish many gameplay scenarios by setting the camera at a distance away from players and entities, showing more of the environment. You can even set up cutscenes and use easing methods to have the camera fly over a scene.
 
 You can use JSON to have the free camera preset execute in-game with the exact parameters and settings you choose. In this tutorial we'll focus on how the commands work in the game first.
 
