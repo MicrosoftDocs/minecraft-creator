@@ -34,7 +34,7 @@ Before starting, you should:
 - Have a development environment set up for testing
 
 > [!TIP]
-> A completed version of a custom biome is available in the [Chill Oasis Biome sample](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features) on GitHub.
+> The completed resource and behavior packs for this biome are available in the [Crystal Caverns biome sample](https://github.com/microsoft/minecraft-samples/tree/main/crystal_caverns) on GitHub.
 
 ## Manifest files
 
@@ -258,7 +258,7 @@ Now that our biome surface is to our liking, we should consider the features we 
 
 Now that our biome has some custom features to help distinguish it, we should set some feature rules to make sure they appear and behave as expected. Feature rules determine where and when features generate, so let's use one to define how our features spawn in our biome.
 
-1. Create a file in the feature_rules folder in the behavior pack called crystal_cluster_rule.json and save it with the following code.
+1. Create a JSON file in the behavior pack's feature_rules folder called crystal_cluster_rule and save it with the following code.
     
     ```json
     {
@@ -460,85 +460,85 @@ Fog gives your biome a unique atmosphere, so it's only right to let you customiz
 
 2. Update your biome definition to reference the custom fog.
 
-```json
-{
-  "format_version": "1.21.40",
-  "minecraft:biome": {
-    "description": {
-      "identifier": "custom:crystal_caverns"
-    },
-    "components": {
-      "minecraft:climate": {
-        "temperature": 0.5,
-        "downfall": 0.0,
-        "snow_accumulation": [0.0, 0.0],
-        "ash": 0.0,
-        "red_spores": 0.0,
-        "white_ash": 0.0
-      },
-      "minecraft:overworld_height": {
-        "noise_type": "lowlands"
-      },
-      "minecraft:surface_parameters": {
-        "sea_floor_depth": 7,
-        "sea_floor_material": "minecraft:gravel",
-        "foundation_material": "minecraft:deepslate",
-        "mid_material": "minecraft:stone",
-        "top_material": "minecraft:calcite",
-        "sea_material": "minecraft:water"
-      },
-      "minecraft:overworld_generation_rules": {
-        "hills_transformation": "custom:crystal_caverns",
-        "generate_for_climates": [
-          ["cold", 1],
-          ["medium", 1]
-        ]
-      },
-      "minecraft:fog_appearance": {
-        "fog_identifier": "custom:crystal_caverns_fog"
-      },
-      "minecraft:tags": {
-        "tags": [
-          "overworld",
-          "custom",
-          "crystal_caverns",
-          "no_legacy_worldgen"
-        ]
+    ```json
+    {
+      "format_version": "1.21.40",
+      "minecraft:biome": {
+        "description": {
+          "identifier": "custom:crystal_caverns"
+        },
+        "components": {
+          "minecraft:climate": {
+            "temperature": 0.5,
+            "downfall": 0.0,
+            "snow_accumulation": [0.0, 0.0],
+            "ash": 0.0,
+            "red_spores": 0.0,
+            "white_ash": 0.0
+          },
+          "minecraft:overworld_height": {
+            "noise_type": "lowlands"
+          },
+          "minecraft:surface_parameters": {
+            "sea_floor_depth": 7,
+            "sea_floor_material": "minecraft:gravel",
+            "foundation_material": "minecraft:deepslate",
+            "mid_material": "minecraft:stone",
+            "top_material": "minecraft:calcite",
+            "sea_material": "minecraft:water"
+          },
+          "minecraft:overworld_generation_rules": {
+            "hills_transformation": "custom:crystal_caverns",
+            "generate_for_climates": [
+              ["cold", 1],
+              ["medium", 1]
+            ]
+          },
+          "minecraft:fog_appearance": {
+            "fog_identifier": "custom:crystal_caverns_fog"
+          },
+          "minecraft:tags": {
+            "tags": [
+              "overworld",
+              "custom",
+              "crystal_caverns",
+              "no_legacy_worldgen"
+            ]
+          }
+        }
       }
     }
-  }
-}
-```
+    ```
 
 3. For control of water appearance, the ambient sounds, and the music that plays in your biome, create a new file in the resource pack's biomes_client folder called `crystal_caverns.biome_client.json` and save it with the following code.
-
-```json
-{
-  "format_version": "1.21.40",
-  "minecraft:client_biome": {
-    "description": {
-      "identifier": "custom:crystal_caverns"
-    },
-    "components": {
-      "minecraft:water_appearance": {
-        "surface_color": "#4a2882",
-        "surface_transparency": 0.8
-      },
-      "minecraft:ambient_sounds": {
-        "ambient_loop": "ambient.cave"
-      },
-      "minecraft:music": {
-        "volume": 0.5,
-        "music": "music.game.creative"
+    
+    ```json
+    {
+      "format_version": "1.21.40",
+      "minecraft:client_biome": {
+        "description": {
+          "identifier": "custom:crystal_caverns"
+        },
+        "components": {
+          "minecraft:water_appearance": {
+            "surface_color": "#4a2882",
+            "surface_transparency": 0.8
+          },
+          "minecraft:ambient_sounds": {
+            "ambient_loop": "ambient.cave"
+          },
+          "minecraft:music": {
+            "volume": 0.5,
+            "music": "music.game.creative"
+          }
+        }
       }
     }
-  }
-}
-```
+    ```
 
 ## Testing the biome
 
-1. Start by creating a new world and enabling both add-on packs for your custom biome.
+1. Start by creating a new world and enabling cheats and both add-on packs for your custom biome.
 
     > [!NOTE]
     > You may need to enable Custom Biomes in Experiments for your biome to render correctly. If the biome still doesn’t render, ensure that both packs are properly structured in their respective development folders.
