@@ -143,7 +143,7 @@ To practice these features and see how they work in the game, let's try out a cu
 
     #### Fade time
     
-    To set the time the fade takes to complete, you need to include how many seconds for each of the three phases of the fade&mdash;**fade-in**, **hold**, and **fade-out**.
+    Set the time the fade takes to complete by specifying a duration for each of the three phases of the fade&mdash;**fade-in**, **hold**, and **fade-out**.
         
     - **Fade-in**: dims the scene and replaces it with the color.
     - **Hold**: keeps the color on the screen.
