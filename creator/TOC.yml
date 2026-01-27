@@ -430,6 +430,8 @@
           href: Reference/Content/ParticlesReference/ParticlesIntroduction.md
         - name: Particle Effects
           href: Documents/ParticleEffects.md
+        - name: Materials and Material Files
+          href: Documents/material-files.md
     - name: Items and Recipes
       items:    
         - name: Introduction to Recipes
