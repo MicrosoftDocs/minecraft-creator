@@ -68,31 +68,13 @@ To use debugger capabilities, you'll want to install the Minecraft Bedrock Editi
 > [!div class="nextstepaction"]
 > [Minecraft Bedrock Edition Debugger](https://aka.ms/vscodescriptdebugger)
 
-#### Step 2: Ensure that the Minecraft Bedrock Edition client can make "loopback" requests
-
-If you want to connect Minecraft Bedrock Edition client to Visual Studio Code running on the same machine (this is the most common scenario), you will need to exempt the Minecraft client from UWP loopback restrictions. To do this, run the following from a command prompt or the Start | Run app.
-
-Minecraft Bedrock Edition:
-
-```powershell
-CheckNetIsolation.exe LoopbackExempt -a -p=S-1-15-2-1958404141-86561845-1752920682-3514627264-368642714-62675701-733520436
-```
-
-Minecraft Bedrock Edition Preview:
-
-```powershell
-CheckNetIsolation.exe LoopbackExempt -a -p=S-1-15-2-424268864-5579737-879501358-346833251-474568803-887069379-4040235476
-```
-
-![checknetisolation command being run](media/tools/commandprompt.png)
-
-#### Step 3: Open Visual Studio Code within your development_behavior_packs folder
+#### Step 2: Open Visual Studio Code within your development_behavior_packs folder
 
 In order for the debugger to know where to find your source JavaScript or TypeScript files, you'll need to specifically open up a window of Visual Studio Code relative to the behavior pack where your JavaScript or TypeScript source files are. This may be inside of Minecraft's development behavior packs folder (e.g., `%APPDATA%\Minecraft Bedrock\users\shared\games\com.mojang\development_behavior_packs` for GDK builds), or you may have your source code located in a separate folder (e.g., `c:\projects\myaddon`). (See [GDK Migration on Windows](./../GDKPCProjectFolder.md) for more details on folder locations, including pre-GDK builds.)
 
 Open up a Visual Studio Code window pointed at the folder with your add-on script source.
 
-#### Step 4: Prepare Visual Studio Code for a connection
+#### Step 3: Prepare Visual Studio Code for a connection
 
 To debug with Minecraft Bedrock Edition, you'll need to connect from Minecraft and into Visual Studio Code. This set of steps assumes you are debugging on the same Windows machine that you are running Minecraft from, but you can also debug across machines and across clients if you want to. If you are debugging across devices, you may need to open up a port within your firewall on the machine that you are running Visual Studio Code within.
 

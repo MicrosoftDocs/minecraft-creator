@@ -36,12 +36,6 @@
               "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:behavior.move_to_land/",
               "content": 0.5
             }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:behavior.move_to_land/",
-              "content": 0.5
-            }
           ]
         }
       },
@@ -78,12 +72,6 @@
               "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:behavior.move_to_land/",
               "content": 5
             }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:behavior.move_to_land/",
-              "content": 5
-            }
           ]
         }
       },
@@ -101,12 +89,6 @@
             }
           ],
           "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:behavior.move_to_land/",
-              "content": 16
-            }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:behavior.move_to_land/",
               "content": 16
@@ -157,28 +139,6 @@
         }
       ],
       "/vanilla/behavior_pack/entities/turtle.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:behavior.move_to_land/",
-          "content": {
-            "priority": 6,
-            "search_range": 16,
-            "search_height": 5,
-            "goal_radius": 0.5
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:behavior.move_to_land/",
-          "content": {
-            "priority": 6,
-            "search_range": 16,
-            "search_height": 5,
-            "goal_radius": 0.5
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:behavior.move_to_land/",
           "content": {

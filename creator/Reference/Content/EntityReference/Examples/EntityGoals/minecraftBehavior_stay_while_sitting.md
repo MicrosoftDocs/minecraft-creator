@@ -20,18 +20,9 @@ Allows the mob to stay put while it is in a sitting state instead of doing somet
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Cat: `3`, Parrot: `2` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Parrot: `2` | 
 
 ## Samples
-
-#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
-
-
-```json
-"minecraft:behavior.stay_while_sitting": {
-  "priority": 3
-}
-```
 
 #### [Parrot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parrot.json)
 

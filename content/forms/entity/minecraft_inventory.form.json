@@ -45,21 +45,7 @@
         "title": "Additional Slots Per Strength",
         "description": "Number of slots that this entity can gain per extra strength",
         "defaultValue": 0,
-        "dataType": 0,
-        "samples": {
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:inventory/",
-              "content": 3
-            }
-          ],
-          "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:inventory/",
-              "content": 3
-            }
-          ]
-        }
+        "dataType": 0
       },
       {
         "id": "can_be_siphoned_from",
@@ -73,63 +59,21 @@
         "title": "Container Type",
         "description": "Type of container this entity has. Can be horse, minecart_chest, chest_boat, minecart_hopper, inventory, container or hopper",
         "defaultValue": "none",
-        "dataType": 2,
-        "samples": {
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:inventory/",
-              "content": "horse"
-            }
-          ],
-          "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:inventory/",
-              "content": "horse"
-            }
-          ]
-        }
+        "dataType": 2
       },
       {
         "id": "inventory_size",
         "title": "Inventory Size",
         "description": "Number of slots the container has",
         "defaultValue": 5,
-        "dataType": 0,
-        "samples": {
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:inventory/",
-              "content": 16
-            }
-          ],
-          "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:inventory/",
-              "content": 16
-            }
-          ],
-          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:inventory/",
-              "content": 8
-            }
-          ]
-        }
+        "dataType": 0
       },
       {
         "id": "private",
         "title": "Private",
         "description": "If true, the entity will not drop its inventory on death",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:inventory/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "restrict_to_owner",
@@ -139,36 +83,6 @@
         "dataType": 1
       }
     ],
-    "samples": {
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:inventory/",
-          "content": {
-            "inventory_size": 16,
-            "container_type": "horse",
-            "additional_slots_per_strength": 3
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:inventory/",
-          "content": {
-            "inventory_size": 16,
-            "container_type": "horse",
-            "additional_slots_per_strength": 3
-          }
-        }
-      ],
-      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:inventory/",
-          "content": {
-            "inventory_size": 8,
-            "private": true
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

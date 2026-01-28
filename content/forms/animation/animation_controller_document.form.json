@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines an animation controller document structure"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "animation_controller_document",
+  "title": "Animation Controller Document",
+  "description": "A Minecraft Bedrock Edition animation controller definition document. Animation controllers use a state machine to control which animations play based on conditions. They can transition between states based on Molang queries.",
+  "fields": [
+    {
+      "dataType": 25,
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of this animation controller file. Use '1.10.0' or later.",
+      "isRequired": true
+    },
+    {
+      "dataType": 16,
+      "id": "animation_controllers",
+      "title": "Animation Controllers",
+      "description": "A dictionary of animation controller definitions. Keys are controller identifiers like 'controller.animation.entity.controller_name', values are controller objects with initial_state and states properties.",
+      "isRequired": true
+    }
+  ]
+}

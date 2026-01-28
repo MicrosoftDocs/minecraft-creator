@@ -206,21 +206,7 @@
         "title": "Broadcast Anger",
         "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
-              "content": true
-            }
-          ],
-          "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "broadcast_anger_on_attack",
@@ -254,29 +240,7 @@
         "title": "Broadcast Range",
         "description": "Distance in blocks within which other entities of the same entity definition will become angry",
         "defaultValue": 20,
-        "dataType": 0,
-        "samples": {
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
-              "content": 41
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:angry/",
-              "content": 20
-            }
-          ],
-          "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
-              "content": 41
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:angry/",
-              "content": 20
-            }
-          ]
-        }
+        "dataType": 0
       },
       {
         "id": "broadcast_targets",
@@ -288,100 +252,14 @@
         "id": "calm_event",
         "title": "Calm Event",
         "description": "Event to run after the number of seconds specified in duration expires (when the entity stops being 'angry')",
-        "dataType": 22,
-        "samples": {
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
-              "content": {
-                "event": "minecraft:baby_on_calm",
-                "target": "self"
-              }
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:angry/",
-              "content": {
-                "event": "minecraft:on_calm",
-                "target": "self"
-              }
-            }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:angry/",
-              "content": {
-                "event": "minecraft:on_calm",
-                "target": "self"
-              }
-            }
-          ],
-          "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
-              "content": {
-                "event": "minecraft:baby_on_calm",
-                "target": "self"
-              }
-            }
-          ]
-        }
+        "dataType": 22
       },
       {
         "id": "duration",
         "title": "Duration",
         "description": "The amount of time in seconds that the entity will be angry",
         "defaultValue": 25,
-        "dataType": 0,
-        "samples": {
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
-              "content": 1
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:angry/",
-              "content": 500
-            }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:angry/",
-              "content": 4
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:llama_angry_wolf/minecraft:angry/",
-              "content": -1
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:llama_defend_trader/minecraft:angry/",
-              "content": 10
-            }
-          ],
-          "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
-              "content": 1
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:angry/",
-              "content": 500
-            }
-          ],
-          "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:angry/",
-              "content": 4
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:llama_angry_wolf/minecraft:angry/",
-              "content": -1
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:llama_defend_trader/minecraft:angry/",
-              "content": 10
-            }
-          ]
-        }
+        "dataType": 0
       },
       {
         "id": "duration_delta",
@@ -404,127 +282,6 @@
         "dataType": 18
       }
     ],
-    "samples": {
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
-          "content": {
-            "duration": 1,
-            "broadcast_anger": true,
-            "broadcast_range": 41,
-            "calm_event": {
-              "event": "minecraft:baby_on_calm",
-              "target": "self"
-            }
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:angry/",
-          "content": {
-            "duration": 500,
-            "broadcast_anger": false,
-            "broadcast_range": 20,
-            "calm_event": {
-              "event": "minecraft:on_calm",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:angry/",
-          "content": {
-            "duration": 4,
-            "broadcast_anger": false,
-            "calm_event": {
-              "event": "minecraft:on_calm",
-              "target": "self"
-            }
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_angry_wolf/minecraft:angry/",
-          "content": {
-            "duration": -1,
-            "broadcast_anger": false,
-            "calm_event": {
-              "event": "minecraft:on_calm",
-              "target": "self"
-            }
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_defend_trader/minecraft:angry/",
-          "content": {
-            "duration": 10,
-            "calm_event": {
-              "event": "minecraft:on_calm",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
-          "content": {
-            "duration": 1,
-            "broadcast_anger": true,
-            "broadcast_range": 41,
-            "calm_event": {
-              "event": "minecraft:baby_on_calm",
-              "target": "self"
-            }
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:angry/",
-          "content": {
-            "duration": 500,
-            "broadcast_anger": false,
-            "broadcast_range": 20,
-            "calm_event": {
-              "event": "minecraft:on_calm",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:angry/",
-          "content": {
-            "duration": 4,
-            "broadcast_anger": false,
-            "calm_event": {
-              "event": "minecraft:on_calm",
-              "target": "self"
-            }
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_angry_wolf/minecraft:angry/",
-          "content": {
-            "duration": -1,
-            "broadcast_anger": false,
-            "calm_event": {
-              "event": "minecraft:on_calm",
-              "target": "self"
-            }
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_defend_trader/minecraft:angry/",
-          "content": {
-            "duration": 10,
-            "calm_event": {
-              "event": "minecraft:on_calm",
-              "target": "self"
-            }
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

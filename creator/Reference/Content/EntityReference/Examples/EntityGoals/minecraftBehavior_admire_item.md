@@ -22,11 +22,9 @@ Enables the mob to admire items that have been configured as admirable.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| admire_item_sound | *not set* | String | The sound event to play when admiring the item | Piglin: `"admire"` | 
-| on_admire_item_start | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  | Piglin: `{"event":"admire_item_started_event","target":"self"}` | 
-| on_admire_item_stop | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  | Piglin: `{"event":"admire_item_stopped_event","target":"self"}` | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Piglin: `2` | 
-| sound_interval | 0 | Integer number | The range of time in seconds to randomly wait before playing the sound again. Can be a number, an array [min, max], or an object with range_min and range_max. | Piglin: `{"range_min":8,"range_max":8}` | 
+| admire_item_sound | *not set* | String | The sound event to play when admiring the item |  | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
+| sound_interval | 0 | Integer number | The range of time in seconds to randomly wait before playing the sound again. Can be a number, an array [min, max], or an object with range_min and range_max. |  | 
 | sound_interval (Alternate 1) | *not set* | Array of [Sound Interval](#sound-interval) items |  |  | 
 | sound_interval (Alternate 2) | *not set* | [Sound Interval](#sound-interval) item |  |  | 
 
@@ -40,25 +38,3 @@ Enables the mob to admire items that have been configured as admirable.
 | 1 | *not set* | Integer number |  |  | 
 
 ## Samples
-
-#### [Piglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin.json)
-
-
-```json
-"minecraft:behavior.admire_item": {
-  "priority": 2,
-  "admire_item_sound": "admire",
-  "sound_interval": {
-    "range_min": 8,
-    "range_max": 8
-  },
-  "on_admire_item_start": {
-    "event": "admire_item_started_event",
-    "target": "self"
-  },
-  "on_admire_item_stop": {
-    "event": "admire_item_stopped_event",
-    "target": "self"
-  }
-}
-```

@@ -83,21 +83,21 @@
         "samples": {
           "/vanilla/behavior_pack/entities/boat.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence/0/filters/",
+              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence[0]/filters/",
               "content": "!="
             },
             {
-              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence/1/filters/",
+              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence[1]/filters/",
               "content": "=="
             }
           ],
           "/vanilla/behavior_pack/entities/chest_boat.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence/0/filters/",
+              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence[0]/filters/",
               "content": "!="
             },
             {
-              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence/1/filters/",
+              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence[1]/filters/",
               "content": "=="
             }
           ]
@@ -149,11 +149,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/chest_boat.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence/0/filters/",
+              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence[0]/filters/",
               "content": "self"
             },
             {
-              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence/1/filters/",
+              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence[1]/filters/",
               "content": "self"
             }
           ]
@@ -167,22 +167,12 @@
         "samples": {
           "/vanilla/behavior_pack/entities/boat.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence/0/filters/",
+              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence[0]/filters/",
               "content": 7
             },
             {
-              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence/1/filters/",
+              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence[1]/filters/",
               "content": 7
-            }
-          ],
-          "/vanilla/behavior_pack/entities/panda.json": [
-            {
-              "path": "/minecraft:entity/events/minecraft:ageable_grow_up/sequence/2/filters/",
-              "content": 3
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:ageable_grow_up/sequence/3/filters/",
-              "content": 6
             }
           ]
         }
@@ -194,11 +184,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/boat.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence/0/filters/",
+              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence[0]/filters/",
               "content": "is_variant"
             },
             {
-              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence/1/filters/",
+              "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence[1]/filters/",
               "content": "is_variant"
             }
           ]
@@ -218,7 +208,7 @@
       ],
       "/vanilla/behavior_pack/entities/boat.json": [
         {
-          "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence/0/filters/",
+          "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence[0]/filters/",
           "content": {
             "test": "is_variant",
             "operator": "!=",
@@ -226,7 +216,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence/1/filters/",
+          "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence[1]/filters/",
           "content": {
             "test": "is_variant",
             "operator": "==",
@@ -236,7 +226,7 @@
       ],
       "/vanilla/behavior_pack/entities/chest_boat.json": [
         {
-          "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence/0/filters/",
+          "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence[0]/filters/",
           "content": {
             "test": "is_variant",
             "subject": "self",
@@ -245,32 +235,12 @@
           }
         },
         {
-          "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence/1/filters/",
+          "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence[1]/filters/",
           "content": {
             "test": "is_variant",
             "subject": "self",
             "operator": "==",
             "value": 7
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/panda.json": [
-        {
-          "path": "/minecraft:entity/events/minecraft:ageable_grow_up/sequence/2/filters/",
-          "content": {
-            "test": "is_variant",
-            "subject": "self",
-            "operator": "==",
-            "value": 3
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:ageable_grow_up/sequence/3/filters/",
-          "content": {
-            "test": "is_variant",
-            "subject": "self",
-            "operator": "==",
-            "value": 6
           }
         }
       ]

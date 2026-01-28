@@ -17,10 +17,3 @@ When set, blocks entities from attacking the owner entity unless they have the "
 
 
 ## Samples
-
-#### [Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ghast.json)
-
-
-```json
-"minecraft:cannot_be_attacked": {}
-```

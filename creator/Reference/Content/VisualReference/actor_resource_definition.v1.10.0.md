@@ -17,9 +17,9 @@ Defines an entity client resource definition document with format_version 1.10.0
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| format_version | *not set* | Version |  |  | 
+| format_version | *not set* | Version | Specifies the format version of this client entity definition. Determines which features and syntax are available. |  | 
 | minecraft:attachable | *not set* | [Attachable](#attachable) item |  |  | 
-| minecraft:client_entity | *not set* | [Client Entity](#client-entity) item |  |  | 
+| minecraft:client_entity | *not set* | [Client Entity](#client-entity) item | Defines the client-side rendering properties for an entity, including textures, geometry, animations, and render controllers. |  | 
 
 ## Attachable
 
@@ -107,4 +107,4 @@ Defines an entity client resource definition document with format_version 1.10.0
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description) item |  |  | 
+| description | *not set* | [Description](#description) item | Contains all the visual definition properties for this entity, including identifier, textures, geometry, materials, animations, and spawn egg settings. |  | 

@@ -17,7 +17,7 @@ Tests whether the biome the subject is in has the specified tag.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Villager v2: `"!="`, Wolf: `"not"` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
 | test | *not set* | String |  | Cave Spider: `"has_biome_tag"` | 
 | value | *not set* | String | (Required) The tag to look for | Cave Spider: `"swamp"`, `"mangrove_swamp"`, `"desert"`, `"nether"` | 
@@ -65,7 +65,7 @@ At Short (using Defaults)..:
 
 #### [Cave Spider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cave_spider.json)
 
-At /minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/0/: 
+At /minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid[1]/filters/all_of[2]/any_of[0]/: 
 
 ```json
 {
@@ -74,7 +74,7 @@ At /minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/
 }
 ```
 
-At /minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/1/: 
+At /minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid[1]/filters/all_of[2]/any_of[1]/: 
 
 ```json
 {
@@ -83,7 +83,7 @@ At /minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/
 }
 ```
 
-At /minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/2/filters/all_of/2/: 
+At /minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid[2]/filters/all_of[2]/: 
 
 ```json
 {
@@ -92,7 +92,7 @@ At /minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/
 }
 ```
 
-At /minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/3/filters/: 
+At /minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid[3]/filters/: 
 
 ```json
 {
@@ -103,7 +103,7 @@ At /minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/
 
 #### [Chicken](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chicken.json)
 
-At /minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/0/filters/: 
+At /minecraft:entity/events/minecraft:entity_spawned/sequence[1]/first_valid[0]/filters/: 
 
 ```json
 {
@@ -112,96 +112,11 @@ At /minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/0/fi
 }
 ```
 
-At /minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/1/filters/: 
+At /minecraft:entity/events/minecraft:entity_spawned/sequence[1]/first_valid[1]/filters/: 
 
 ```json
 {
   "test": "has_biome_tag",
   "value": "spawns_cold_variant_farm_animals"
-}
-```
-
-#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
-
-At /minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/any_of/1/: 
-
-```json
-{
-  "test": "has_biome_tag",
-  "value": "mesa"
-}
-```
-
-At /minecraft:entity/events/minecraft:entity_spawned/sequence/3/filters/: 
-
-```json
-{
-  "test": "has_biome_tag",
-  "value": "jungle"
-}
-```
-
-At /minecraft:entity/events/minecraft:entity_spawned/sequence/4/filters/: 
-
-```json
-{
-  "test": "has_biome_tag",
-  "value": "savanna"
-}
-```
-
-At /minecraft:entity/events/minecraft:entity_spawned/sequence/5/filters/any_of/0/all_of/0/: 
-
-```json
-{
-  "test": "has_biome_tag",
-  "value": "cold"
-}
-```
-
-At /minecraft:entity/events/minecraft:entity_spawned/sequence/5/filters/any_of/0/all_of/1/: 
-
-```json
-{
-  "test": "has_biome_tag",
-  "operator": "!=",
-  "value": "ocean"
-}
-```
-
-At /minecraft:entity/events/minecraft:entity_spawned/sequence/5/filters/any_of/1/: 
-
-```json
-{
-  "test": "has_biome_tag",
-  "value": "frozen"
-}
-```
-
-At /minecraft:entity/events/minecraft:entity_spawned/sequence/7/filters/all_of/0/any_of/0/: 
-
-```json
-{
-  "test": "has_biome_tag",
-  "value": "taiga"
-}
-```
-
-At /minecraft:entity/events/minecraft:entity_spawned/sequence/7/filters/all_of/0/any_of/1/: 
-
-```json
-{
-  "test": "has_biome_tag",
-  "value": "extreme_hills"
-}
-```
-
-At /minecraft:entity/events/minecraft:entity_spawned/sequence/7/filters/all_of/1/: 
-
-```json
-{
-  "test": "has_biome_tag",
-  "operator": "!=",
-  "value": "cold"
 }
 ```

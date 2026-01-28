@@ -24,48 +24,14 @@
         "title": "Creative Reach",
         "description": "Defines the reach used when the user is in Creative Mode. Defaults to \"reach\" if unspecified.",
         "dataType": 16,
-        "subFormId": "item_components/floatrange",
-        "samples": {
-          "/vanilla/behavior_pack/items/copper_spear.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:piercing_weapon/",
-              "content": {
-                "min": 2,
-                "max": 7.5
-              }
-            }
-          ],
-          "/vanilla/behavior_pack/items/diamond_spear.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:piercing_weapon/",
-              "content": {
-                "min": 2,
-                "max": 7.5
-              }
-            }
-          ]
-        }
+        "subFormId": "item_components/floatrange"
       },
       {
         "id": "hitbox_margin",
         "title": "Hitbox Margin",
         "description": "Added tolerance to the view vector raycast for detecting entity collisions.",
         "dataType": 3,
-        "defaultValue": 0,
-        "samples": {
-          "/vanilla/behavior_pack/items/copper_spear.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:piercing_weapon/",
-              "content": 0.25
-            }
-          ],
-          "/vanilla/behavior_pack/items/diamond_spear.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:piercing_weapon/",
-              "content": 0.25
-            }
-          ]
-        }
+        "defaultValue": 0
       },
       {
         "id": "reach",
@@ -76,142 +42,9 @@
           "max": 3,
           "min": 0
         },
-        "subFormId": "item_components/floatrange",
-        "samples": {
-          "/vanilla/behavior_pack/items/copper_spear.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:piercing_weapon/",
-              "content": {
-                "min": 2,
-                "max": 4.5
-              }
-            }
-          ],
-          "/vanilla/behavior_pack/items/diamond_spear.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:piercing_weapon/",
-              "content": {
-                "min": 2,
-                "max": 4.5
-              }
-            }
-          ]
-        }
+        "subFormId": "item_components/floatrange"
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/items/copper_spear.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:piercing_weapon/",
-          "content": {
-            "reach": {
-              "min": 2,
-              "max": 4.5
-            },
-            "creative_reach": {
-              "min": 2,
-              "max": 7.5
-            },
-            "hitbox_margin": 0.25
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/items/diamond_spear.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:piercing_weapon/",
-          "content": {
-            "reach": {
-              "min": 2,
-              "max": 4.5
-            },
-            "creative_reach": {
-              "min": 2,
-              "max": 7.5
-            },
-            "hitbox_margin": 0.25
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/items/golden_spear.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:piercing_weapon/",
-          "content": {
-            "reach": {
-              "min": 2,
-              "max": 4.5
-            },
-            "creative_reach": {
-              "min": 2,
-              "max": 7.5
-            },
-            "hitbox_margin": 0.25
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/items/iron_spear.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:piercing_weapon/",
-          "content": {
-            "reach": {
-              "min": 2,
-              "max": 4.5
-            },
-            "creative_reach": {
-              "min": 2,
-              "max": 7.5
-            },
-            "hitbox_margin": 0.25
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/items/netherite_spear.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:piercing_weapon/",
-          "content": {
-            "reach": {
-              "min": 2,
-              "max": 4.5
-            },
-            "creative_reach": {
-              "min": 2,
-              "max": 7.5
-            },
-            "hitbox_margin": 0.25
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/items/stone_spear.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:piercing_weapon/",
-          "content": {
-            "reach": {
-              "min": 2,
-              "max": 4.5
-            },
-            "creative_reach": {
-              "min": 2,
-              "max": 7.5
-            },
-            "hitbox_margin": 0.25
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/items/wooden_spear.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:piercing_weapon/",
-          "content": {
-            "reach": {
-              "min": 2,
-              "max": 4.5
-            },
-            "creative_reach": {
-              "min": 2,
-              "max": 7.5
-            },
-            "hitbox_margin": 0.25
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

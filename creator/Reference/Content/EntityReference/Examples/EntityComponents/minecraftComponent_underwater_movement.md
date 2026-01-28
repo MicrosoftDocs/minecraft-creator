@@ -17,18 +17,9 @@ Defines the speed with which an entity can move through water.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| value | *not set* | Decimal number | Movement speed of the entity under water. | Axolotl: `0.2`, Dolphin: `0.15`, Elder Guardian: `0.3` | 
+| value | *not set* | Decimal number | Movement speed of the entity under water. | Dolphin: `0.15`, Elder Guardian: `0.3`, Guardian: `0.12` | 
 
 ## Samples
-
-#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
-
-
-```json
-"minecraft:underwater_movement": {
-  "value": 0.2
-}
-```
 
 #### [Dolphin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/dolphin.json)
 
@@ -48,15 +39,6 @@ Defines the speed with which an entity can move through water.
 }
 ```
 
-#### [Fish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fish.json)
-
-
-```json
-"minecraft:underwater_movement": {
-  "value": 0.1
-}
-```
-
 #### [Guardian](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/guardian.json)
 
 
@@ -66,48 +48,11 @@ Defines the speed with which an entity can move through water.
 }
 ```
 
-#### [Nautilus](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/nautilus.json)
-
-At /minecraft:entity/component_groups/minecraft:nautilus_player_controlled/minecraft:underwater_movement/: 
-
-```json
-"minecraft:underwater_movement": {
-  "value": 0.055
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:nautilus_ai_controlled/minecraft:underwater_movement/: 
-
-```json
-"minecraft:underwater_movement": {
-  "value": 0.07
-}
-```
-
-#### [Pufferfish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pufferfish.json)
-
-
-```json
-"minecraft:underwater_movement": {
-  "value": 0.13
-}
-```
-
 #### [Skeleton Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton_horse.json)
 
 
 ```json
 "minecraft:underwater_movement": {
   "value": 0.08
-}
-```
-
-#### [Turtle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/turtle.json)
-
-At /minecraft:entity/component_groups/minecraft:baby/minecraft:underwater_movement/: 
-
-```json
-"minecraft:underwater_movement": {
-  "value": 0.06
 }
 ```

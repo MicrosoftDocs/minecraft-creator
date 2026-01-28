@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a complete voxel shape document"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "voxel_shape_document",
+  "title": "Voxel Shape Document",
+  "description": "A behavior pack voxel shape document for Minecraft Bedrock Edition. This describes the complete JSON file structure including format_version and the minecraft:voxel_shape wrapper.",
+  "fields": [
+    {
+      "dataType": 25,
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of this voxel shape file. Currently 1.21.110.",
+      "isRequired": true
+    },
+    {
+      "dataType": 16,
+      "id": "minecraft:voxel_shape",
+      "title": "Voxel Shape Definition",
+      "description": "The voxel shape definition container with description and shape data.",
+      "isRequired": true,
+      "subFormId": "voxel_shapes/voxelshapefile"
+    }
+  ]
+}

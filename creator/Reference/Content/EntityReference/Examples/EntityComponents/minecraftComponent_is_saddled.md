@@ -15,7 +15,7 @@ Sets that this entity is currently saddled.
 
 ## Samples
 
-#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
+#### [Pig](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pig.json)
 
 
 ```json

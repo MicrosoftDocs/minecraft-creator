@@ -17,7 +17,7 @@ Specifies that this entity takes fire damage when exposed to direct sunlight. Th
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| protection_slot | slot.armor.head | [Protection Slot](#protection-slot-choices) choices | The equipment slot that provides protection from burning in sunlight. If armor is equipped in this slot, the entity will not burn. Commonly set to 'slot.armor.head' for helmets or 'slot.armor.body' for horse armor. | Zombie Horse: `"slot.armor.body"` | 
+| protection_slot | slot.armor.head | [Protection Slot](#protection-slot-choices) choices | The equipment slot that provides protection from burning in sunlight. If armor is equipped in this slot, the entity will not burn. Commonly set to 'slot.armor.head' for helmets or 'slot.armor.body' for horse armor. |  | 
 
 ### Protection Slot choices
 
@@ -44,13 +44,4 @@ Specifies that this entity takes fire damage when exposed to direct sunlight. Th
 
 ```json
 "minecraft:burns_in_daylight": false
-```
-
-#### [Zombie Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_horse.json)
-
-
-```json
-"minecraft:burns_in_daylight": {
-  "protection_slot": "slot.armor.body"
-}
 ```

@@ -29,12 +29,3 @@ This move control causes the mob to sway side to side giving the impression it i
 ```json
 "minecraft:movement.sway": {}
 ```
-
-#### [Fish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fish.json)
-
-
-```json
-"minecraft:movement.sway": {
-  "sway_amplitude": 0
-}
-```

@@ -17,8 +17,8 @@ Defines the way a mob's genes and alleles are passed on to its offspring, and ho
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| genes | *not set* | Array of [Genes](#genes) items | The list of genes that this entity has and will cross with a partner during breeding. | Goat: `[{"name":"goat_variant","use_simplified_breeding":true,"allele_range":{"range_min":1,"range_max":100},"genetic_variants":[{"main_allele":{"range_min":1,"range_max":2},"birth_event":{"event":"minecraft:born_screamer","target":"self"}},{"main_allele":{"range_min":3,"range_max":100},"birth_event":{"event":"minecraft:born_default","target":"self"}}]}]`, Panda: `[{"name":"panda_variant","allele_range":{"range_min":0,"range_max":15},"genetic_variants":[{"main_allele":0,"birth_event":{"event":"minecraft:panda_lazy","target":"self"}},{"main_allele":1,"birth_event":{"event":"minecraft:panda_worried","target":"self"}},{"main_allele":2,"birth_event":{"event":"minecraft:panda_playful","target":"self"}},{"main_allele":3,"birth_event":{"event":"minecraft:panda_aggressive","target":"self"}},{"both_allele":{"range_min":4,"range_max":7},"birth_event":{"event":"minecraft:panda_weak","target":"self"}},{"both_allele":{"range_min":8,"range_max":9},"birth_event":{"event":"minecraft:panda_brown","target":"self"}}]}]` | 
-| mutation_rate | 0.03125 | Decimal number | Chance that an allele will be replaced with a random one instead of the parent's allele during birth. | Goat: `0.02`, Panda: `0.03125` | 
+| genes | *not set* | Array of [Genes](#genes) items | The list of genes that this entity has and will cross with a partner during breeding. | Goat: `[{"name":"goat_variant","use_simplified_breeding":true,"allele_range":{"range_min":1,"range_max":100},"genetic_variants":[{"main_allele":{"range_min":1,"range_max":2},"birth_event":{"event":"minecraft:born_screamer","target":"self"}},{"main_allele":{"range_min":3,"range_max":100},"birth_event":{"event":"minecraft:born_default","target":"self"}}]}]` | 
+| mutation_rate | 0.03125 | Decimal number | Chance that an allele will be replaced with a random one instead of the parent's allele during birth. | Goat: `0.02` | 
 
 ## Genes
 The list of genes that this entity has and will cross with a partner during breeding.
@@ -132,74 +132,6 @@ The list of genetic variants for this gene. These check for particular allele co
           },
           "birth_event": {
             "event": "minecraft:born_default",
-            "target": "self"
-          }
-        }
-      ]
-    }
-  ]
-}
-```
-
-#### [Panda](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/panda.json)
-
-
-```json
-"minecraft:genetics": {
-  "mutation_rate": 0.03125,
-  "genes": [
-    {
-      "name": "panda_variant",
-      "allele_range": {
-        "range_min": 0,
-        "range_max": 15
-      },
-      "genetic_variants": [
-        {
-          "main_allele": 0,
-          "birth_event": {
-            "event": "minecraft:panda_lazy",
-            "target": "self"
-          }
-        },
-        {
-          "main_allele": 1,
-          "birth_event": {
-            "event": "minecraft:panda_worried",
-            "target": "self"
-          }
-        },
-        {
-          "main_allele": 2,
-          "birth_event": {
-            "event": "minecraft:panda_playful",
-            "target": "self"
-          }
-        },
-        {
-          "main_allele": 3,
-          "birth_event": {
-            "event": "minecraft:panda_aggressive",
-            "target": "self"
-          }
-        },
-        {
-          "both_allele": {
-            "range_min": 4,
-            "range_max": 7
-          },
-          "birth_event": {
-            "event": "minecraft:panda_weak",
-            "target": "self"
-          }
-        },
-        {
-          "both_allele": {
-            "range_min": 8,
-            "range_max": 9
-          },
-          "birth_event": {
-            "event": "minecraft:panda_brown",
             "target": "self"
           }
         }

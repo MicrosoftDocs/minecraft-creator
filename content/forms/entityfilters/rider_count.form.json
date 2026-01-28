@@ -156,41 +156,7 @@
             "title": "Not",
             "description": "Test for inequality."
           }
-        ],
-        "samples": {
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
-              "content": "equals"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:on_passenger_mount/sequence/0/filters/",
-              "content": "equals"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/nautilus.json": [
-            {
-              "path": "/minecraft:entity/events/minecraft:on_saddled/sequence/0/filters/",
-              "content": ">"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:on_unsaddled/sequence/0/filters/",
-              "content": ">"
-            }
-          ],
-          "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/entities/filters/",
-              "content": "=="
-            }
-          ],
-          "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/entities/filters/",
-              "content": "=="
-            }
-          ]
-        }
+        ]
       },
       {
         "id": "subject",
@@ -234,50 +200,13 @@
             "title": "Target",
             "description": "The caller's current target."
           }
-        ],
-        "samples": {
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
-              "content": "self"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:on_passenger_mount/sequence/0/filters/",
-              "content": "self"
-            }
-          ]
-        }
+        ]
       },
       {
         "id": "value",
         "title": "Value",
         "description": "(Required) An integer value.",
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/events/minecraft:on_passenger_mount/sequence/0/filters/",
-              "content": 1
-            }
-          ]
-        }
-      },
-      {
-        "id": "test",
-        "title": "Test",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
-              "content": "rider_count"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:on_passenger_mount/sequence/0/filters/",
-              "content": "rider_count"
-            }
-          ]
-        }
+        "dataType": 0
       }
     ],
     "samples": {
@@ -289,177 +218,6 @@
         {
           "path": "Short (using Defaults)..",
           "content": "{ \"test\": \"rider_count\", \"value\": \"0\" }"
-        }
-      ],
-      "/vanilla/behavior_pack/entities/happy_ghast.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
-          "content": {
-            "test": "rider_count",
-            "subject": "self",
-            "operator": "equals",
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:on_passenger_mount/sequence/0/filters/",
-          "content": {
-            "test": "rider_count",
-            "subject": "self",
-            "operator": "equals",
-            "value": 1
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:on_passenger_dismount/sequence/0/filters/",
-          "content": {
-            "test": "rider_count",
-            "subject": "self",
-            "operator": "equals",
-            "value": 0
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/nautilus.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_adult/minecraft:interact/interactions/2/on_interact/filters/all_of/0/",
-          "content": {
-            "test": "rider_count",
-            "subject": "self",
-            "operator": "equals",
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_adult/minecraft:interact/interactions/3/on_interact/filters/all_of/0/",
-          "content": {
-            "test": "rider_count",
-            "subject": "self",
-            "operator": "equals",
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:on_saddled/sequence/0/filters/",
-          "content": {
-            "test": "rider_count",
-            "subject": "self",
-            "operator": ">",
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:on_unsaddled/sequence/0/filters/",
-          "content": {
-            "test": "rider_count",
-            "subject": "self",
-            "operator": ">",
-            "value": 0
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_horse.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_tamed/minecraft:interact/interactions/1/on_interact/filters/all_of/0/",
-          "content": {
-            "test": "rider_count",
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_tamed/minecraft:interact/interactions/3/on_interact/filters/all_of/0/",
-          "content": {
-            "test": "rider_count",
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_wild_with_rider/minecraft:environment_sensor/triggers/0/filters/",
-          "content": {
-            "test": "rider_count",
-            "subject": "self",
-            "value": 0
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_wild_mounted/minecraft:environment_sensor/triggers/filters/",
-          "content": {
-            "test": "rider_count",
-            "subject": "self",
-            "operator": "equals",
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame/minecraft:interact/interactions/1/on_interact/filters/all_of/0/",
-          "content": {
-            "test": "rider_count",
-            "subject": "self",
-            "operator": "equals",
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame/minecraft:interact/interactions/3/on_interact/filters/all_of/0/",
-          "content": {
-            "test": "rider_count",
-            "subject": "self",
-            "operator": "equals",
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:on_saddled/sequence/0/filters/",
-          "content": {
-            "test": "rider_count",
-            "subject": "self",
-            "operator": ">",
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:on_unsaddled/sequence/0/filters/",
-          "content": {
-            "test": "rider_count",
-            "subject": "self",
-            "operator": ">",
-            "value": 0
-          }
-        }
-      ],
-      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
-        {
-          "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/entities/filters/",
-          "content": {
-            "test": "rider_count",
-            "subject": "self",
-            "operator": "==",
-            "value": 0
-          }
-        }
-      ],
-      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
-        {
-          "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/entities/filters/",
-          "content": {
-            "test": "rider_count",
-            "subject": "self",
-            "operator": "==",
-            "value": 0
-          }
-        }
-      ],
-      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/dream_turkey.json": [
-        {
-          "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/entities/filters/",
-          "content": {
-            "test": "rider_count",
-            "subject": "self",
-            "operator": "==",
-            "value": 0
-          }
         }
       ]
     }

@@ -89,24 +89,6 @@
               "path": "/minecraft:entity/components/minecraft:flocking/",
               "content": 1
             }
-          ],
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/salmon.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 1
-            }
           ]
         }
       },
@@ -115,48 +97,14 @@
         "title": "Block Weight",
         "description": "The weight of the push back away from blocks.",
         "defaultValue": 0,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 0.85
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 0.85
-            }
-          ],
-          "/vanilla/behavior_pack/entities/salmon.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 0.75
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "breach_influence",
         "title": "Breach Influence",
         "description": "The amount of push back given to a flocker that breaches out of the water.",
         "defaultValue": 0,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 7
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 7
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "cohesion_threshold",
@@ -169,30 +117,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:flocking/",
               "content": 6.5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 1.95
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 1.95
-            }
-          ],
-          "/vanilla/behavior_pack/entities/salmon.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 1.5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/tropicalfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 1.5
             }
           ]
         }
@@ -209,30 +133,6 @@
               "path": "/minecraft:entity/components/minecraft:flocking/",
               "content": 1.85
             }
-          ],
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/salmon.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 2.25
-            }
-          ],
-          "/vanilla/behavior_pack/entities/tropicalfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 2.75
-            }
           ]
         }
       },
@@ -244,12 +144,6 @@
         "dataType": 3,
         "samples": {
           "/vanilla/behavior_pack/entities/dolphin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/fish.json": [
             {
               "path": "/minecraft:entity/components/minecraft:flocking/",
               "content": 2
@@ -269,12 +163,6 @@
               "path": "/minecraft:entity/components/minecraft:flocking/",
               "content": 8
             }
-          ],
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 8
-            }
           ]
         }
       },
@@ -283,21 +171,7 @@
         "title": "In Water",
         "description": "Tells the Flocking Component if the entity exists in water.",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "influence_radius",
@@ -310,18 +184,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:flocking/",
               "content": 6
-            }
-          ],
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 3
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 3
             }
           ]
         }
@@ -338,30 +200,6 @@
               "path": "/minecraft:entity/components/minecraft:flocking/",
               "content": 3.5
             }
-          ],
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 1.25
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 1.25
-            }
-          ],
-          "/vanilla/behavior_pack/entities/salmon.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 1.5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/tropicalfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 1.5
-            }
           ]
         }
       },
@@ -373,12 +211,6 @@
         "dataType": 3,
         "samples": {
           "/vanilla/behavior_pack/entities/dolphin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 0.1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/fish.json": [
             {
               "path": "/minecraft:entity/components/minecraft:flocking/",
               "content": 0.1
@@ -398,12 +230,6 @@
               "path": "/minecraft:entity/components/minecraft:flocking/",
               "content": 4
             }
-          ],
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 4
-            }
           ]
         }
       },
@@ -412,15 +238,7 @@
         "title": "Match Variants",
         "description": "Tells the flockers that they can only match similar entities that also match the variant, mark variants, and color data of the other potential flockers.",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/tropicalfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "max_height",
@@ -430,24 +248,6 @@
         "dataType": 3,
         "samples": {
           "/vanilla/behavior_pack/entities/dolphin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 4
-            }
-          ],
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 6
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 6
-            }
-          ],
-          "/vanilla/behavior_pack/entities/salmon.json": [
             {
               "path": "/minecraft:entity/components/minecraft:flocking/",
               "content": 4
@@ -467,24 +267,6 @@
               "path": "/minecraft:entity/components/minecraft:flocking/",
               "content": 4
             }
-          ],
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 1.5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 1.5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/salmon.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 4
-            }
           ]
         }
       },
@@ -499,30 +281,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:flocking/",
               "content": 3
-            }
-          ],
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 0.95
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 0.95
-            }
-          ],
-          "/vanilla/behavior_pack/entities/salmon.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 0.15
-            }
-          ],
-          "/vanilla/behavior_pack/entities/tropicalfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 0.15
             }
           ]
         }
@@ -539,24 +297,6 @@
               "path": "/minecraft:entity/components/minecraft:flocking/",
               "content": 1.75
             }
-          ],
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 1.75
-            }
-          ],
-          "/vanilla/behavior_pack/entities/salmon.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 0.65
-            }
-          ],
-          "/vanilla/behavior_pack/entities/tropicalfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": 0.65
-            }
           ]
         }
       },
@@ -565,21 +305,7 @@
         "title": "Use Center Of Mass",
         "description": "Tells the flockers that they will follow flocks based on the center of mass.",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:flocking/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       }
     ],
     "samples": {
@@ -605,106 +331,6 @@
             "max_height": 4,
             "block_distance": 1,
             "block_weight": 0
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/fish.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:flocking/",
-          "content": {
-            "in_water": true,
-            "match_variants": false,
-            "use_center_of_mass": true,
-            "low_flock_limit": 4,
-            "high_flock_limit": 8,
-            "goal_weight": 2,
-            "loner_chance": 0.1,
-            "influence_radius": 3,
-            "breach_influence": 7,
-            "separation_weight": 1.75,
-            "separation_threshold": 0.95,
-            "cohesion_weight": 2,
-            "cohesion_threshold": 1.95,
-            "innner_cohesion_threshold": 1.25,
-            "min_height": 1.5,
-            "max_height": 6,
-            "block_distance": 2,
-            "block_weight": 0.85
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/pufferfish.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:flocking/",
-          "content": {
-            "in_water": true,
-            "match_variants": false,
-            "use_center_of_mass": true,
-            "low_flock_limit": 4,
-            "high_flock_limit": 8,
-            "goal_weight": 2,
-            "loner_chance": 0.1,
-            "influence_radius": 3,
-            "breach_influence": 7,
-            "separation_weight": 1.75,
-            "separation_threshold": 0.95,
-            "cohesion_weight": 2,
-            "cohesion_threshold": 1.95,
-            "innner_cohesion_threshold": 1.25,
-            "min_height": 1.5,
-            "max_height": 6,
-            "block_distance": 2,
-            "block_weight": 0.85
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/salmon.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:flocking/",
-          "content": {
-            "in_water": true,
-            "match_variants": false,
-            "use_center_of_mass": false,
-            "low_flock_limit": 4,
-            "high_flock_limit": 8,
-            "goal_weight": 2,
-            "loner_chance": 0.1,
-            "influence_radius": 3,
-            "breach_influence": 7,
-            "separation_weight": 0.65,
-            "separation_threshold": 0.15,
-            "cohesion_weight": 2.25,
-            "cohesion_threshold": 1.5,
-            "innner_cohesion_threshold": 1.5,
-            "min_height": 4,
-            "max_height": 4,
-            "block_distance": 1,
-            "block_weight": 0.75
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/tropicalfish.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:flocking/",
-          "content": {
-            "in_water": true,
-            "match_variants": true,
-            "use_center_of_mass": false,
-            "low_flock_limit": 4,
-            "high_flock_limit": 8,
-            "goal_weight": 2,
-            "loner_chance": 0.1,
-            "influence_radius": 3,
-            "breach_influence": 7,
-            "separation_weight": 0.65,
-            "separation_threshold": 0.15,
-            "cohesion_weight": 2.75,
-            "cohesion_threshold": 1.5,
-            "innner_cohesion_threshold": 1.5,
-            "min_height": 1.5,
-            "max_height": 6,
-            "block_distance": 2,
-            "block_weight": 0.85
           }
         }
       ]

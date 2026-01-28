@@ -24,12 +24,6 @@
         "description": "The text that will display when interacting with this entity with a dye when playing with Touch-screen controls.",
         "dataType": 2,
         "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_tame/minecraft:is_dyeable/",
-              "content": "action.interact.dye"
-            }
-          ],
           "/vanilla/behavior_pack/entities/sheep.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:sheep_dyeable/minecraft:is_dyeable/",
@@ -40,33 +34,9 @@
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/cat.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:cat_tame/minecraft:is_dyeable/",
-          "content": {
-            "interact_text": "action.interact.dye"
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/sheep.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:sheep_dyeable/minecraft:is_dyeable/",
-          "content": {
-            "interact_text": "action.interact.dye"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wolf.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_tame/minecraft:is_dyeable/",
-          "content": {
-            "interact_text": "action.interact.dye"
-          }
-        }
-      ],
-      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-        {
-          "path": "/minecraft:entity/component_groups/mike_eliz:eliza_tame/minecraft:is_dyeable/",
           "content": {
             "interact_text": "action.interact.dye"
           }

@@ -18,8 +18,8 @@ Fires an event when this behavior starts, then waits for a duration before stopp
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | control_flags | *not set* | Array of strings |  | Sniffer: `["move"]` | 
-| cooldown_range | *not set* | Range of integers | Goal cooldown range in seconds. If specified, the cooldown will have to elapse even before the goal can be selected for the first time. |  | 
-| duration_range | *not set* | Range of integers | Goal duration range in seconds. | Sniffer: `[2,5]` | 
+| cooldown_range | *not set* | Range of integers | Goal cooldown range in seconds. If specified, the cooldown will have to elapse even before the goal can be selected for the first time. | Sniffer: `{"min":0,"max":0}` | 
+| duration_range | *not set* | Range of integers | Goal duration range in seconds. | Sniffer: `{"min":2,"max":5}` | 
 | on_end | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event(s) to run when the goal ends. | Sniffer: `{"event":"on_rising_end","target":"self"}` | 
 | on_start | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event(s) to run when the goal starts. |  | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Sniffer: `2` | 
@@ -35,11 +35,14 @@ Fires an event when this behavior starts, then waits for a duration before stopp
   "control_flags": [
     "move"
   ],
-  "cooldown_range": 0,
-  "duration_range": [
-    2,
-    5
-  ],
+  "cooldown_range": {
+    "min": 0,
+    "max": 0
+  },
+  "duration_range": {
+    "min": 2,
+    "max": 5
+  },
   "on_end": {
     "event": "on_rising_end",
     "target": "self"

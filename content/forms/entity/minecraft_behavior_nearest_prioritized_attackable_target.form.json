@@ -291,14 +291,38 @@
         "title": "Priority",
         "description": "Specifies the priority in which filtered enemy types should be attacked. Lower number means higher priority.",
         "defaultValue": 0,
-        "dataType": 0
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_red/minecraft:behavior.nearest_prioritized_attackable_target/",
+              "content": 6
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_arctic/minecraft:behavior.nearest_prioritized_attackable_target/",
+              "content": 6
+            }
+          ]
+        }
       },
       {
         "id": "reselect_targets",
         "title": "Reselect Targets",
         "description": "If true, the target will change to the current closest entity whenever a different entity is closer",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_red/minecraft:behavior.nearest_prioritized_attackable_target/",
+              "content": true
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_arctic/minecraft:behavior.nearest_prioritized_attackable_target/",
+              "content": true
+            }
+          ]
+        }
       },
       {
         "id": "scan_interval",
@@ -319,7 +343,19 @@
         "title": "Target Search Height",
         "description": "Height in blocks to search for a target mob. -1.0f means the height does not matter.",
         "defaultValue": -1,
-        "dataType": 3
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_red/minecraft:behavior.nearest_prioritized_attackable_target/",
+              "content": 5
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_arctic/minecraft:behavior.nearest_prioritized_attackable_target/",
+              "content": 5
+            }
+          ]
+        }
       },
       {
         "id": "within_radius",
@@ -479,99 +515,6 @@
                 "priority": 1
               }
             ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/piglin_brute.json": [
-        {
-          "path": "/minecraft:entity/component_groups/alert_for_attack_targets/minecraft:behavior.nearest_prioritized_attackable_target/",
-          "content": {
-            "priority": 3,
-            "within_radius": 12,
-            "persist_time": 2,
-            "must_see": true,
-            "entity_types": [
-              {
-                "filters": {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "player"
-                },
-                "max_dist": 12,
-                "priority": 0
-              },
-              {
-                "filters": {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "wither"
-                },
-                "max_dist": 12,
-                "priority": 1
-              }
-            ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/witch.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_prioritized_attackable_target/",
-          "content": {
-            "priority": 2,
-            "entity_types": [
-              {
-                "filters": {
-                  "any_of": [
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "player"
-                    },
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "snowgolem"
-                    },
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "irongolem"
-                    }
-                  ]
-                },
-                "priority": 1,
-                "max_dist": 10
-              },
-              {
-                "filters": {
-                  "all_of": [
-                    {
-                      "test": "is_raider",
-                      "subject": "other",
-                      "value": true
-                    },
-                    {
-                      "test": "is_raider",
-                      "subject": "self",
-                      "value": true
-                    },
-                    {
-                      "none_of": [
-                        {
-                          "test": "is_family",
-                          "subject": "other",
-                          "value": "witch"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "priority": 2,
-                "cooldown": 10,
-                "max_dist": 10
-              }
-            ],
-            "must_reach": true
           }
         }
       ]

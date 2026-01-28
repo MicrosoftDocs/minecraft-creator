@@ -85,11 +85,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/0/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
               "content": "=="
             },
             {
-              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/",
+              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
               "content": "=="
             }
           ]
@@ -141,11 +141,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/0/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
               "content": "self"
             },
             {
-              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/",
+              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
               "content": "self"
             }
           ]
@@ -160,11 +160,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/0/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
               "content": true
             },
             {
-              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/",
+              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
               "content": true
             }
           ]
@@ -177,11 +177,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/0/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
               "content": "is_underwater"
             },
             {
-              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/",
+              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
               "content": "is_underwater"
             }
           ]
@@ -201,7 +201,7 @@
       ],
       "/vanilla/behavior_pack/entities/bogged.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/0/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
           "content": {
             "test": "is_underwater",
             "subject": "self",
@@ -210,76 +210,44 @@
           }
         },
         {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/",
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
           "content": {
             "test": "is_underwater",
             "subject": "self",
             "operator": "==",
             "value": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/husk.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:look_to_start_zombie_transformation/minecraft:environment_sensor/triggers/0/filters/",
-          "content": {
-            "test": "is_underwater"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:start_zombie_transformation/minecraft:environment_sensor/triggers/0/filters/",
-          "content": {
-            "test": "is_underwater",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/",
-          "content": {
-            "test": "is_underwater"
           }
         }
       ],
       "/vanilla/behavior_pack/entities/parched.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/0/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
           "content": {
             "test": "is_underwater"
           }
         },
         {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/",
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
           "content": {
             "test": "is_underwater"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/pillager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/filters/",
-          "content": {
-            "test": "is_underwater",
-            "subject": "self",
-            "operator": "==",
-            "value": true
           }
         }
       ],
       "/vanilla/behavior_pack/entities/skeleton.json": [
         {
-          "path": "/minecraft:entity/component_groups/got_out_of_powder_snow_environment_sensor/minecraft:environment_sensor/triggers/0/filters/",
+          "path": "/minecraft:entity/component_groups/got_out_of_powder_snow_environment_sensor/minecraft:environment_sensor/triggers[0]/filters/",
           "content": {
             "test": "is_underwater"
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/0/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
           "content": {
             "test": "is_underwater"
           }
         },
         {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/",
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
           "content": {
             "test": "is_underwater"
           }
@@ -287,7 +255,7 @@
       ],
       "/vanilla/behavior_pack/entities/stray.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/0/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
           "content": {
             "test": "is_underwater",
             "subject": "self",
@@ -296,59 +264,10 @@
           }
         },
         {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/",
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
           "content": {
             "test": "is_underwater",
             "subject": "self",
-            "operator": "==",
-            "value": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:look_to_start_drowned_transformation/minecraft:environment_sensor/triggers/0/filters/",
-          "content": {
-            "test": "is_underwater"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:start_drowned_transformation/minecraft:environment_sensor/triggers/0/filters/",
-          "content": {
-            "test": "is_underwater",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/",
-          "content": {
-            "test": "is_underwater"
-          }
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:look_to_start_drowned_transformation/minecraft:environment_sensor/triggers/filters/",
-          "content": {
-            "test": "is_underwater",
-            "subject": "self",
-            "operator": "==",
-            "value": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:start_drowned_transformation/minecraft:environment_sensor/triggers/filters/",
-          "content": {
-            "test": "is_underwater",
-            "subject": "self",
-            "operator": "==",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/filters/",
-          "content": {
-            "test": "is_underwater",
             "operator": "==",
             "value": true
           }

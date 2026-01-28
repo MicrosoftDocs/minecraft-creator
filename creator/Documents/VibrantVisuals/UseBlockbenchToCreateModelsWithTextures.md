@@ -68,7 +68,7 @@ Make sure you now save out your textures! Press **Ctrl+S**. You'll be given the 
 
 We need to set the resource pack that Blockbench generated as being compatible with Vibrant Visuals. It should be in your development resource pack folder. If you saved your new pack to the regular version of Minecraft: Bedrock Edition, the folder path will be:
 
-%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\development_resource_packs\ShinyPanda
+%appdata%\Minecraft Bedrock\users\shared\games\com.mojang\development_resource_packs\ShinyPanda
 
 Inside the **ShinyPanda** folder, open **manifest.json** with Visual Studio code or another text editor. At the bottom of the manifest, under the `"modules"` array, add a `"capabilities"` array with the `"pbr"` capability specified:
 

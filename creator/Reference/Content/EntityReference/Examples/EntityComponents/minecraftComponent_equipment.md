@@ -19,7 +19,7 @@ Sets the Equipment table to use for this Entity.
 |:----------|:-------------|:----|:-----------|:------------- |
 | slot_drop_chance | *not set* | Array of strings | A list of slots with the chance to drop an equipped item from that slot. Can be an array of slot name strings or an array of objects with slot and drop_chance properties. |  | 
 | slot_drop_chance (Alternate 1) | *not set* | Array of [Slot Drop Chance](#slot-drop-chance) items |  |  | 
-| table | *not set* | String | The file path to the equipment table, relative to the behavior pack's root. | Gray Zombie Leader: `"loot_tables/entities/zombie_equipment.json"` | 
+| table | *not set* | String | The file path to the equipment table, relative to the behavior pack's root. |  | 
 
 ## Slot Drop Chance
 
@@ -31,12 +31,3 @@ Sets the Equipment table to use for this Entity.
 | slot | *not set* | String | The equipment slot name. |  | 
 
 ## Samples
-
-#### [Gray Zombie Leader](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json)
-
-
-```json
-"minecraft:equipment": {
-  "table": "loot_tables/entities/zombie_equipment.json"
-}
-```

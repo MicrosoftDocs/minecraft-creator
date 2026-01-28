@@ -98,7 +98,7 @@ At Short (using Defaults)..:
 
 #### [Rabbit](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/rabbit.json)
 
-At /minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/: 
+At /minecraft:entity/events/minecraft:entity_spawned/sequence[2]/filters/: 
 
 ```json
 {

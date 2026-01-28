@@ -1,0 +1,67 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a dimension document structure"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "dimension_document",
+  "title": "Dimension Document",
+  "description": "A Minecraft Bedrock Edition dimension definition document. Dimensions define custom world spaces with configurable bounds and world generation settings. Custom dimensions can have their own terrain generation, height limits, and properties.",
+  "fields": [
+    {
+      "dataType": 25,
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of this dimension file. Use '1.20.0' or later.",
+      "isRequired": true
+    },
+    {
+      "dataType": 16,
+      "id": "minecraft:dimension_type",
+      "title": "Dimension Type",
+      "description": "The dimension type definition containing description and components.",
+      "isRequired": true,
+      "subForm": {
+        "id": "dimension_wrapper",
+        "title": "Dimension Type Definition",
+        "fields": [
+          {
+            "id": "description",
+            "title": "Description",
+            "description": "Contains the dimension's unique identifier.",
+            "dataType": 16,
+            "isRequired": true,
+            "subForm": {
+              "id": "dimension_description",
+              "title": "Dimension Description",
+              "fields": [
+                {
+                  "id": "identifier",
+                  "title": "Identifier",
+                  "description": "The unique identifier for this dimension, e.g., 'custom:my_dimension'.",
+                  "dataType": 1,
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "components",
+            "title": "Components",
+            "description": "Components that define the dimension's properties.",
+            "dataType": 16,
+            "isRequired": true
+          }
+        ]
+      }
+    }
+  ]
+}

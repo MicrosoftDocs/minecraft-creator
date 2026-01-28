@@ -32,18 +32,6 @@
         "defaultValue": 0.5,
         "dataType": 3,
         "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/",
-              "content": 1.2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/piglin_brute.json": [
-            {
-              "path": "/minecraft:entity/component_groups/go_back_to_spawn/minecraft:behavior.go_home/",
-              "content": 4
-            }
-          ],
           "/vanilla/behavior_pack/entities/turtle.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:pregnant/minecraft:behavior.go_home/",
@@ -59,25 +47,7 @@
         "defaultValue": 120,
         "dataType": 0,
         "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/piglin_brute.json": [
-            {
-              "path": "/minecraft:entity/component_groups/go_back_to_spawn/minecraft:behavior.go_home/",
-              "content": 200
-            }
-          ],
           "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:pregnant/minecraft:behavior.go_home/",
-              "content": 700
-            }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:pregnant/minecraft:behavior.go_home/",
               "content": 700
@@ -89,31 +59,7 @@
         "id": "on_failed",
         "title": "Failed",
         "description": "Event(s) to run when this goal fails.",
-        "dataType": 22,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/",
-              "content": [
-                {
-                  "event": "find_hive_event",
-                  "target": "self"
-                }
-              ]
-            }
-          ],
-          "/vanilla/behavior_pack/entities/piglin_brute.json": [
-            {
-              "path": "/minecraft:entity/component_groups/go_back_to_spawn/minecraft:behavior.go_home/",
-              "content": [
-                {
-                  "event": "go_back_to_spawn_failed",
-                  "target": "self"
-                }
-              ]
-            }
-          ]
-        }
+        "dataType": 22
       },
       {
         "id": "on_home",
@@ -121,51 +67,6 @@
         "description": "Event(s) to run when this mob gets home.",
         "dataType": 22,
         "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/",
-              "content": [
-                {
-                  "filters": {
-                    "any_of": [
-                      {
-                        "test": "is_block",
-                        "subject": "block",
-                        "value": "minecraft:bee_nest"
-                      },
-                      {
-                        "test": "is_block",
-                        "subject": "block",
-                        "value": "minecraft:beehive"
-                      }
-                    ]
-                  },
-                  "event": "minecraft:bee_returned_to_hive",
-                  "target": "block"
-                },
-                {
-                  "filters": {
-                    "all_of": [
-                      {
-                        "test": "is_block",
-                        "subject": "block",
-                        "operator": "!=",
-                        "value": "minecraft:bee_nest"
-                      },
-                      {
-                        "test": "is_block",
-                        "subject": "block",
-                        "operator": "!=",
-                        "value": "minecraft:beehive"
-                      }
-                    ]
-                  },
-                  "event": "find_hive_event",
-                  "target": "self"
-                }
-              ]
-            }
-          ],
           "/vanilla/behavior_pack/entities/turtle.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:pregnant/minecraft:behavior.go_home/",
@@ -175,24 +76,6 @@
                   "target": "self"
                 }
               ]
-            }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:pregnant/minecraft:behavior.go_home/",
-              "content": {
-                "event": "minecraft:go_lay_egg",
-                "target": "self"
-              }
-            }
-          ],
-          "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:pregnant/minecraft:behavior.go_home/",
-              "content": {
-                "event": "minecraft:go_lay_egg",
-                "target": "self"
-              }
             }
           ]
         }
@@ -204,18 +87,6 @@
         "defaultValue": 1,
         "dataType": 3,
         "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/piglin_brute.json": [
-            {
-              "path": "/minecraft:entity/component_groups/go_back_to_spawn/minecraft:behavior.go_home/",
-              "content": 0.6
-            }
-          ],
           "/vanilla/behavior_pack/entities/turtle.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:pregnant/minecraft:behavior.go_home/",
@@ -231,25 +102,7 @@
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
         "dataType": 0,
         "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/",
-              "content": 4
-            }
-          ],
-          "/vanilla/behavior_pack/entities/piglin_brute.json": [
-            {
-              "path": "/minecraft:entity/component_groups/go_back_to_spawn/minecraft:behavior.go_home/",
-              "content": 6
-            }
-          ],
           "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:pregnant/minecraft:behavior.go_home/",
-              "content": 1
-            }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:pregnant/minecraft:behavior.go_home/",
               "content": 1
@@ -259,80 +112,6 @@
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/bee.json": [
-        {
-          "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/",
-          "content": {
-            "priority": 4,
-            "speed_multiplier": 1,
-            "interval": 1,
-            "goal_radius": 1.2,
-            "on_home": [
-              {
-                "filters": {
-                  "any_of": [
-                    {
-                      "test": "is_block",
-                      "subject": "block",
-                      "value": "minecraft:bee_nest"
-                    },
-                    {
-                      "test": "is_block",
-                      "subject": "block",
-                      "value": "minecraft:beehive"
-                    }
-                  ]
-                },
-                "event": "minecraft:bee_returned_to_hive",
-                "target": "block"
-              },
-              {
-                "filters": {
-                  "all_of": [
-                    {
-                      "test": "is_block",
-                      "subject": "block",
-                      "operator": "!=",
-                      "value": "minecraft:bee_nest"
-                    },
-                    {
-                      "test": "is_block",
-                      "subject": "block",
-                      "operator": "!=",
-                      "value": "minecraft:beehive"
-                    }
-                  ]
-                },
-                "event": "find_hive_event",
-                "target": "self"
-              }
-            ],
-            "on_failed": [
-              {
-                "event": "find_hive_event",
-                "target": "self"
-              }
-            ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/piglin_brute.json": [
-        {
-          "path": "/minecraft:entity/component_groups/go_back_to_spawn/minecraft:behavior.go_home/",
-          "content": {
-            "priority": 6,
-            "interval": 200,
-            "speed_multiplier": 0.6,
-            "goal_radius": 4,
-            "on_failed": [
-              {
-                "event": "go_back_to_spawn_failed",
-                "target": "self"
-              }
-            ]
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/turtle.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:pregnant/minecraft:behavior.go_home/",
@@ -347,36 +126,6 @@
                 "target": "self"
               }
             ]
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:pregnant/minecraft:behavior.go_home/",
-          "content": {
-            "priority": 1,
-            "speed_multiplier": 1,
-            "interval": 700,
-            "goal_radius": 4,
-            "on_home": {
-              "event": "minecraft:go_lay_egg",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:pregnant/minecraft:behavior.go_home/",
-          "content": {
-            "priority": 1,
-            "speed_multiplier": 1,
-            "interval": 700,
-            "goal_radius": 4,
-            "on_home": {
-              "event": "minecraft:go_lay_egg",
-              "target": "self"
-            }
           }
         }
       ]

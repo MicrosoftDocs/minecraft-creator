@@ -18,9 +18,8 @@ Returns true when the subject entity's controlling passenger is a member of the 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Zombie Horse: `"self"` | 
-| test | *not set* | String |  | Zombie Horse: `"is_controlling_passenger_family"` | 
-| value | *not set* | String | (Required) The Family name to look for | Zombie Horse: `"zombie"` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | *not set* | String | (Required) The Family name to look for |  | 
 
 ### Operator choices
 
@@ -61,15 +60,4 @@ At Short (using Defaults)..:
 
 ```json
 { "test": "is_controlling_passenger_family", "value": "player" }
-```
-
-#### [Zombie Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_horse.json)
-
-
-```json
-{
-  "test": "is_controlling_passenger_family",
-  "subject": "self",
-  "value": "zombie"
-}
 ```

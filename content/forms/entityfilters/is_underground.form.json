@@ -136,7 +136,7 @@
         "samples": {
           "/vanilla/behavior_pack/entities/stray.json": [
             {
-              "path": "/minecraft:entity/events/change_to_skeleton/sequence/0/filters/",
+              "path": "/minecraft:entity/events/change_to_skeleton/sequence[0]/filters/",
               "content": true
             }
           ]
@@ -149,7 +149,7 @@
         "samples": {
           "/vanilla/behavior_pack/entities/stray.json": [
             {
-              "path": "/minecraft:entity/events/change_to_skeleton/sequence/0/filters/",
+              "path": "/minecraft:entity/events/change_to_skeleton/sequence[0]/filters/",
               "content": "is_underground"
             }
           ]
@@ -169,7 +169,7 @@
       ],
       "/vanilla/behavior_pack/entities/stray.json": [
         {
-          "path": "/minecraft:entity/events/change_to_skeleton/sequence/0/filters/",
+          "path": "/minecraft:entity/events/change_to_skeleton/sequence[0]/filters/",
           "content": {
             "test": "is_underground",
             "value": true

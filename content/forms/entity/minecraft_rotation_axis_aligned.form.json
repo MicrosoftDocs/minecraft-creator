@@ -19,13 +19,6 @@
     "title": "Rotation Axis Aligned",
     "description": "Causes the entity to automatically rotate to align with the nearest cardinal direction based on its current facing direction.\nCombining this with the \"minecraft:body_rotation_blocked\" component will cause the entity's body to align with the nearest cardinal direction and remain fixed in that orientation, regardless of changes in its facing direction.",
     "fields": [],
-    "samples": {
-      "/vanilla/behavior_pack/entities/happy_ghast.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_immobile/minecraft:rotation_axis_aligned/",
-          "content": {}
-        }
-      ]
-    }
+    "samples": {}
   }
 }

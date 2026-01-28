@@ -1,0 +1,10 @@
+{
+  "id": "query.get_level_seed_based_fraction",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.get_level_seed_based_fraction",
+    "title": "Get Level Seed Based Fraction",
+    "description": "Returns a value in range [0.0, 1.0] based on the level seed.",
+    "fields": []
+  }
+}

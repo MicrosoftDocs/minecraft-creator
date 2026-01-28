@@ -25,19 +25,7 @@
         "id": "domain",
         "title": "Domain",
         "description": "(Required) The property name to look for",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/3/filters/all_of/0/",
-              "content": "minecraft:creaking_swaying_ticks"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/3/filters/all_of/1/",
-              "content": "minecraft:creaking_swaying_ticks"
-            }
-          ]
-        }
+        "dataType": 2
       },
       {
         "id": "operator",
@@ -96,23 +84,7 @@
             "title": "Not",
             "description": "Test for inequality."
           }
-        ],
-        "samples": {
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/3/filters/all_of/0/",
-              "content": ">"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/3/filters/all_of/1/",
-              "content": "<="
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/4/filters/",
-              "content": ">"
-            }
-          ]
-        }
+        ]
       },
       {
         "id": "subject",
@@ -162,36 +134,7 @@
         "id": "value",
         "title": "Value",
         "description": "(Required) An integer value.",
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/3/filters/all_of/1/",
-              "content": 5
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/4/filters/",
-              "content": 5
-            }
-          ]
-        }
-      },
-      {
-        "id": "test",
-        "title": "Test",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/3/filters/all_of/0/",
-              "content": "int_property"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/3/filters/all_of/1/",
-              "content": "int_property"
-            }
-          ]
-        }
+        "dataType": 0
       }
     ],
     "samples": {
@@ -203,35 +146,6 @@
         {
           "path": "Short (using Defaults)..",
           "content": "{ \"test\": \"int_property\", \"domain\": \"minecraft:can_climb\", \"value\": \"0\" }"
-        }
-      ],
-      "/vanilla/behavior_pack/entities/creaking.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/3/filters/all_of/0/",
-          "content": {
-            "test": "int_property",
-            "domain": "minecraft:creaking_swaying_ticks",
-            "operator": ">",
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/3/filters/all_of/1/",
-          "content": {
-            "test": "int_property",
-            "domain": "minecraft:creaking_swaying_ticks",
-            "operator": "<=",
-            "value": 5
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/4/filters/",
-          "content": {
-            "test": "int_property",
-            "domain": "minecraft:creaking_swaying_ticks",
-            "operator": ">",
-            "value": 5
-          }
         }
       ]
     }

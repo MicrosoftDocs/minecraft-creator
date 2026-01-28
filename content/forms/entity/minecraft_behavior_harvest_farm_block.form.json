@@ -53,14 +53,14 @@
       {
         "id": "search_count",
         "title": "Search Count",
-        "description": "The number of randomly selected blocks each tick that the entity will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick.",
+        "description": "The number of randomly selected blocks each tick that the mob will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick.",
         "defaultValue": 0,
         "dataType": 0
       },
       {
         "id": "search_height",
         "title": "Search Height",
-        "description": "The Height in blocks the entity will search within to find a valid target position.",
+        "description": "The height in blocks the entity will search within to find a valid target position.",
         "defaultValue": 1,
         "dataType": 0
       },
@@ -81,68 +81,18 @@
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
-        "description": "Movement speed multiplier of the entity when using this Goal.",
+        "description": "Movement speed multiplier of the mob when using this goal.",
         "defaultValue": 0.5,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/villager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/behavior_peasant/minecraft:behavior.harvest_farm_block/",
-              "content": 0.5
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/villager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/behavior_peasant/minecraft:behavior.harvest_farm_block/",
-              "content": 9
-            }
-          ],
-          "/vanilla/behavior_pack/entities/villager_v2.json": [
-            {
-              "path": "/minecraft:entity/component_groups/work_schedule_farmer/minecraft:behavior.harvest_farm_block/",
-              "content": 7
-            }
-          ]
-        }
+        "dataType": 0
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/villager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/behavior_peasant/minecraft:behavior.harvest_farm_block/",
-          "content": {
-            "priority": 9,
-            "speed_multiplier": 0.5
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/villager_v2.json": [
-        {
-          "path": "/minecraft:entity/component_groups/job_specific_goals/minecraft:behavior.harvest_farm_block/",
-          "content": {}
-        },
-        {
-          "path": "/minecraft:entity/component_groups/work_schedule_farmer/minecraft:behavior.harvest_farm_block/",
-          "content": {
-            "priority": 7
-          }
-        }
-      ],
-      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/job_specific_goals/minecraft:behavior.harvest_farm_block/",
-          "content": {}
-        }
-      ]
-    }
+    "samples": {}
   }
 }

@@ -32,15 +32,6 @@
                 4
               ]
             }
-          ],
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.random_hover/",
-              "content": [
-                1,
-                4
-              ]
-            }
           ]
         }
       },
@@ -52,12 +43,6 @@
         "dataType": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.random_hover/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/bee.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_hover/",
               "content": 1
@@ -84,12 +69,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.random_hover/",
               "content": 8
             }
-          ],
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.random_hover/",
-              "content": 8
-            }
           ]
         }
       },
@@ -101,12 +80,6 @@
         "dataType": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.random_hover/",
-              "content": 8
-            }
-          ],
-          "/vanilla/behavior_pack/entities/bee.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_hover/",
               "content": 8
@@ -126,12 +99,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.random_hover/",
               "content": -1
             }
-          ],
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.random_hover/",
-              "content": -1
-            }
           ]
         }
       },
@@ -147,18 +114,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.random_hover/",
               "content": 9
             }
-          ],
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.random_hover/",
-              "content": 12
-            }
-          ],
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:behavior.random_hover/",
-              "content": 8
-            }
           ]
         }
       }
@@ -169,38 +124,6 @@
           "path": "/minecraft:entity/components/minecraft:behavior.random_hover/",
           "content": {
             "priority": 9,
-            "xz_dist": 8,
-            "y_dist": 8,
-            "y_offset": -1,
-            "interval": 1,
-            "hover_height": [
-              1,
-              4
-            ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/bee.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.random_hover/",
-          "content": {
-            "priority": 12,
-            "xz_dist": 8,
-            "y_dist": 8,
-            "y_offset": -1,
-            "interval": 1,
-            "hover_height": [
-              1,
-              4
-            ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/happy_ghast.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:behavior.random_hover/",
-          "content": {
-            "priority": 8,
             "xz_dist": 8,
             "y_dist": 8,
             "y_offset": -1,

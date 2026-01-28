@@ -108,21 +108,7 @@
         "id": "begin_transform_sound",
         "title": "Begin Transform Sound",
         "description": "Sound to play when the transformation starts",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/zombie_villager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/to_villager/minecraft:transformation/",
-              "content": "remedy"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-            {
-              "path": "/minecraft:entity/component_groups/to_villager/minecraft:transformation/",
-              "content": "remedy"
-            }
-          ]
-        }
+        "dataType": 2
       },
       {
         "id": "delay",
@@ -191,20 +177,6 @@
           ]
         },
         "samples": {
-          "/vanilla/behavior_pack/entities/husk.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:convert_to_zombie/minecraft:transformation/",
-              "content": {
-                "value": 15
-              }
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:convert_to_baby_zombie/minecraft:transformation/",
-              "content": {
-                "value": 15
-              }
-            }
-          ],
           "/vanilla/behavior_pack/entities/pig.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:pig_transform/minecraft:transformation/",
@@ -216,38 +188,6 @@
               "path": "/minecraft:entity/component_groups/minecraft:revert_to_skeleton/minecraft:transformation/",
               "content": 0.5
             }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_villager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/to_villager/minecraft:transformation/",
-              "content": {
-                "value": 100,
-                "block_assist_chance": 0.01,
-                "block_radius": 4,
-                "block_chance": 0.3,
-                "block_types": [
-                  "minecraft:bed",
-                  "minecraft:iron_bars"
-                ]
-              }
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-            {
-              "path": "/minecraft:entity/component_groups/to_villager/minecraft:transformation/",
-              "content": {
-                "value": 100,
-                "range_min": 80,
-                "range_max": 200,
-                "block_assist_chance": 0.01,
-                "block_radius": 4,
-                "block_chance": 0.3,
-                "block_types": [
-                  "minecraft:bed",
-                  "minecraft:iron_bars"
-                ]
-              }
-            }
           ]
         }
       },
@@ -256,19 +196,7 @@
         "title": "Drop Equipment",
         "description": "Cause the entity to drop all equipment upon transformation",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/husk.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:convert_to_zombie/minecraft:transformation/",
-              "content": true
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:convert_to_baby_zombie/minecraft:transformation/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "drop_inventory",
@@ -277,12 +205,6 @@
         "defaultValue": false,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/piglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
-              "content": true
-            }
-          ],
           "/vanilla/behavior_pack/entities/skeleton.json": [
             {
               "path": "/minecraft:entity/component_groups/become_stray/minecraft:transformation/",
@@ -303,38 +225,10 @@
               "content": "minecraft:zoglin"
             }
           ],
-          "/vanilla/behavior_pack/entities/husk.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:convert_to_zombie/minecraft:transformation/",
-              "content": "minecraft:zombie<minecraft:as_adult>"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:convert_to_baby_zombie/minecraft:transformation/",
-              "content": "minecraft:zombie<minecraft:as_baby>"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/mooshroom.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:mooshroom_become_cow/minecraft:transformation/",
-              "content": "minecraft:cow"
-            }
-          ],
           "/vanilla/behavior_pack/entities/pig.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:pig_transform/minecraft:transformation/",
               "content": "minecraft:pig_zombie"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
-              "content": "minecraft:zombie_pigman"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/piglin_brute.json": [
-            {
-              "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
-              "content": "minecraft:zombie_pigman"
             }
           ],
           "/vanilla/behavior_pack/entities/skeleton.json": [
@@ -347,68 +241,6 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:revert_to_skeleton/minecraft:transformation/",
               "content": "minecraft:skeleton"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/tadpole.json": [
-            {
-              "path": "/minecraft:entity/component_groups/grow_up/minecraft:transformation/",
-              "content": "minecraft:frog"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/villager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/become_witch/minecraft:transformation/",
-              "content": "minecraft:witch"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/become_villager_v2/minecraft:transformation/",
-              "content": "minecraft:villager_v2"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
-              "content": "minecraft:zombie_villager"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/villager_v2.json": [
-            {
-              "path": "/minecraft:entity/component_groups/become_witch/minecraft:transformation/",
-              "content": "minecraft:witch"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
-              "content": "minecraft:zombie_villager_v2"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:convert_to_drowned/minecraft:transformation/",
-              "content": "minecraft:drowned<minecraft:as_adult>"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:convert_to_baby_drowned/minecraft:transformation/",
-              "content": "minecraft:drowned<minecraft:as_baby>"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_villager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/become_zombie_villager_v2/minecraft:transformation/",
-              "content": "minecraft:zombie_villager_v2"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/to_villager/minecraft:transformation/",
-              "content": "minecraft:villager"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-            {
-              "path": "/minecraft:entity/component_groups/to_villager/minecraft:transformation/",
-              "content": "minecraft:villager_v2"
-            }
-          ],
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:convert_to_drowned/minecraft:transformation/",
-              "content": "minecraft:drowned<minecraft:as_adult>"
             }
           ]
         }
@@ -426,9 +258,9 @@
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
+          "/vanilla/behavior_pack/entities/skeleton.json": [
             {
-              "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
+              "path": "/minecraft:entity/component_groups/become_stray/minecraft:transformation/",
               "content": true
             }
           ]
@@ -448,15 +280,9 @@
         "defaultValue": false,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/piglin.json": [
+          "/vanilla/behavior_pack/entities/skeleton.json": [
             {
-              "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/entities/piglin_brute.json": [
-            {
-              "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
+              "path": "/minecraft:entity/component_groups/become_stray/minecraft:transformation/",
               "content": true
             }
           ]
@@ -474,66 +300,16 @@
               "content": "mob.hoglin.converted_to_zombified"
             }
           ],
-          "/vanilla/behavior_pack/entities/husk.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:convert_to_zombie/minecraft:transformation/",
-              "content": "mob.husk.convert_to_zombie"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:convert_to_baby_zombie/minecraft:transformation/",
-              "content": "mob.husk.convert_to_zombie"
-            }
-          ],
           "/vanilla/behavior_pack/entities/pig.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:pig_transform/minecraft:transformation/",
               "content": "mob.pig.death"
             }
           ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
-              "content": "converted_to_zombified"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/piglin_brute.json": [
-            {
-              "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
-              "content": "converted_to_zombified"
-            }
-          ],
           "/vanilla/behavior_pack/entities/skeleton.json": [
             {
               "path": "/minecraft:entity/component_groups/become_stray/minecraft:transformation/",
               "content": "convert_to_stray"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/tadpole.json": [
-            {
-              "path": "/minecraft:entity/component_groups/grow_up/minecraft:transformation/",
-              "content": "convert_to_frog"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:convert_to_drowned/minecraft:transformation/",
-              "content": "convert_to_drowned"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:convert_to_baby_drowned/minecraft:transformation/",
-              "content": "convert_to_drowned"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_villager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/to_villager/minecraft:transformation/",
-              "content": "unfect"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-            {
-              "path": "/minecraft:entity/component_groups/to_villager/minecraft:transformation/",
-              "content": "unfect"
             }
           ]
         }
@@ -550,38 +326,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/husk.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:convert_to_zombie/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:zombie<minecraft:as_adult>",
-            "transformation_sound": "mob.husk.convert_to_zombie",
-            "drop_equipment": true,
-            "delay": {
-              "value": 15
-            }
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:convert_to_baby_zombie/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:zombie<minecraft:as_baby>",
-            "transformation_sound": "mob.husk.convert_to_zombie",
-            "drop_equipment": true,
-            "delay": {
-              "value": 15
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/mooshroom.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:mooshroom_become_cow/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:cow"
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/pig.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:pig_transform/minecraft:transformation/",
@@ -589,29 +333,6 @@
             "into": "minecraft:pig_zombie",
             "transformation_sound": "mob.pig.death",
             "delay": 0.5
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/piglin.json": [
-        {
-          "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:zombie_pigman",
-            "transformation_sound": "converted_to_zombified",
-            "keep_level": true,
-            "drop_inventory": true,
-            "preserve_equipment": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/piglin_brute.json": [
-        {
-          "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:zombie_pigman",
-            "transformation_sound": "converted_to_zombified",
-            "keep_level": true,
-            "preserve_equipment": true
           }
         }
       ],
@@ -633,157 +354,6 @@
           "content": {
             "into": "minecraft:skeleton",
             "delay": 0.5
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/tadpole.json": [
-        {
-          "path": "/minecraft:entity/component_groups/grow_up/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:frog",
-            "transformation_sound": "convert_to_frog"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/villager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/become_witch/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:witch",
-            "delay": 0.5
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/become_villager_v2/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:villager_v2",
-            "keep_level": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:zombie_villager"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/villager_v2.json": [
-        {
-          "path": "/minecraft:entity/component_groups/become_witch/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:witch",
-            "delay": 0.5
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:zombie_villager_v2",
-            "keep_level": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:convert_to_drowned/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:drowned<minecraft:as_adult>",
-            "transformation_sound": "convert_to_drowned",
-            "drop_equipment": true,
-            "delay": {
-              "value": 15
-            }
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:convert_to_baby_drowned/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:drowned<minecraft:as_baby>",
-            "transformation_sound": "convert_to_drowned",
-            "drop_equipment": true,
-            "delay": {
-              "value": 15
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/become_zombie_villager_v2/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:zombie_villager_v2",
-            "keep_level": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/to_villager/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:villager",
-            "begin_transform_sound": "remedy",
-            "transformation_sound": "unfect",
-            "delay": {
-              "value": 100,
-              "block_assist_chance": 0.01,
-              "block_radius": 4,
-              "block_chance": 0.3,
-              "block_types": [
-                "minecraft:bed",
-                "minecraft:iron_bars"
-              ]
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-        {
-          "path": "/minecraft:entity/component_groups/to_villager/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:villager_v2",
-            "begin_transform_sound": "remedy",
-            "transformation_sound": "unfect",
-            "drop_equipment": true,
-            "keep_level": true,
-            "delay": {
-              "value": 100,
-              "range_min": 80,
-              "range_max": 200,
-              "block_assist_chance": 0.01,
-              "block_radius": 4,
-              "block_chance": 0.3,
-              "block_types": [
-                "minecraft:bed",
-                "minecraft:iron_bars"
-              ]
-            }
-          }
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:convert_to_drowned/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:drowned<minecraft:as_adult>",
-            "transformation_sound": "convert_to_drowned",
-            "drop_equipment": true,
-            "delay": {
-              "value": 15
-            }
-          }
-        }
-      ],
-      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/become_witch/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:witch",
-            "delay": 0.5
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:zombie_villager_v2",
-            "keep_level": true
           }
         }
       ]

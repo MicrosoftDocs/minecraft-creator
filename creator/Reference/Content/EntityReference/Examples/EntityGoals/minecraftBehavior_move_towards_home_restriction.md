@@ -23,19 +23,10 @@ Allows entities with a `minecraft:home` component to move towards their home pos
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Bee: `9`, Elder Guardian: `5`, Wandering Trader: `6` | 
-| speed_multiplier | 1 | Decimal number | This multiplier modifies the entity's speed when moving towards its restriction. | Elder Guardian: `1`, Wandering Trader: `0.6` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Elder Guardian: `5` | 
+| speed_multiplier | 1 | Decimal number | This multiplier modifies the entity's speed when moving towards its restriction. | Elder Guardian: `1` | 
 
 ## Samples
-
-#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
-
-
-```json
-"minecraft:behavior.move_towards_home_restriction": {
-  "priority": 9
-}
-```
 
 #### [Elder Guardian](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/elder_guardian.json)
 
@@ -44,15 +35,5 @@ Allows entities with a `minecraft:home` component to move towards their home pos
 "minecraft:behavior.move_towards_home_restriction": {
   "priority": 5,
   "speed_multiplier": 1
-}
-```
-
-#### [Wandering Trader](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wandering_trader.json)
-
-
-```json
-"minecraft:behavior.move_towards_home_restriction": {
-  "priority": 6,
-  "speed_multiplier": 0.6
 }
 ```

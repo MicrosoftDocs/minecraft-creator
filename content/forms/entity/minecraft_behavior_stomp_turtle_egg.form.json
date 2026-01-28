@@ -30,12 +30,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
               "content": 1.14
             }
-          ],
-          "/vanilla/behavior_pack/entities/husk.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
-              "content": 1.14
-            }
           ]
         }
       },
@@ -47,12 +41,6 @@
         "dataType": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/drowned.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
-              "content": 20
-            }
-          ],
-          "/vanilla/behavior_pack/entities/husk.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
               "content": 20
@@ -72,12 +60,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
               "content": 2
             }
-          ],
-          "/vanilla/behavior_pack/entities/husk.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
-              "content": 2
-            }
           ]
         }
       },
@@ -89,12 +71,6 @@
         "dataType": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/drowned.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
-              "content": 10
-            }
-          ],
-          "/vanilla/behavior_pack/entities/husk.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
               "content": 10
@@ -114,12 +90,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
               "content": 1
             }
-          ],
-          "/vanilla/behavior_pack/entities/husk.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
-              "content": 1
-            }
           ]
         }
       },
@@ -135,114 +105,12 @@
               "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
               "content": 4
             }
-          ],
-          "/vanilla/behavior_pack/entities/husk.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
-              "content": 5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
-              "content": 5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_pigman.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
-              "content": 6
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_villager.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
-              "content": 4
-            }
           ]
         }
       }
     ],
     "samples": {
       "/vanilla/behavior_pack/entities/drowned.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
-          "content": {
-            "priority": 4,
-            "speed_multiplier": 1,
-            "search_range": 10,
-            "search_height": 2,
-            "goal_radius": 1.14,
-            "interval": 20
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/husk.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
-          "content": {
-            "priority": 5,
-            "speed_multiplier": 1,
-            "search_range": 10,
-            "search_height": 2,
-            "goal_radius": 1.14,
-            "interval": 20
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
-          "content": {
-            "priority": 5,
-            "speed_multiplier": 1,
-            "search_range": 10,
-            "search_height": 2,
-            "goal_radius": 1.14,
-            "interval": 20
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_pigman.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
-          "content": {
-            "priority": 6,
-            "speed_multiplier": 1,
-            "search_range": 10,
-            "search_height": 2,
-            "goal_radius": 1.14,
-            "interval": 20
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
-          "content": {
-            "priority": 4,
-            "speed_multiplier": 1,
-            "search_range": 10,
-            "search_height": 2,
-            "goal_radius": 1.14,
-            "interval": 20
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
-          "content": {
-            "priority": 4,
-            "speed_multiplier": 1,
-            "search_range": 10,
-            "search_height": 2,
-            "goal_radius": 1.14,
-            "interval": 20
-          }
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
           "content": {

@@ -19,37 +19,13 @@
     "description": "Sets that this entity is currently carrying a chest.",
     "fields": [],
     "samples": {
-      "/vanilla/behavior_pack/entities/donkey.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:donkey_chested/minecraft:is_chested/",
-          "content": {}
-        }
-      ],
       "/vanilla/behavior_pack/entities/llama.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:llama_chested/minecraft:is_chested/",
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/mule.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:mule_chested/minecraft:is_chested/",
-          "content": {}
-        }
-      ],
       "/vanilla/behavior_pack/entities/trader_llama.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_chested/minecraft:is_chested/",
-          "content": {}
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_chested/minecraft:is_chested/",
-          "content": {}
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:llama_chested/minecraft:is_chested/",
           "content": {}

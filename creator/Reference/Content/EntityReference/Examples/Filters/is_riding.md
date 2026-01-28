@@ -20,10 +20,10 @@ Returns true if the subject entity is riding on another entity.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Enderman: `"=="`, Parrot: `"equals"`, `"!="` | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Enderman: `"self"` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Parrot: `"equals"`, `"!="` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Parrot: `"self"` | 
 | test | *not set* | String |  | Drowned: `"is_riding"` | 
-| value | true | Boolean true/false | (Optional) true or false. | Enderman: `true` | 
+| value | true | Boolean true/false | (Optional) true or false. | Parrot: `true` | 
 
 ### Operator choices
 
@@ -77,33 +77,9 @@ At /minecraft:entity/events/minecraft:has_target/filters/:
 }
 ```
 
-#### [Enderman](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/enderman.json)
-
-At /minecraft:entity/component_groups/minecraft:riding/minecraft:environment_sensor/triggers/filters/: 
-
-```json
-{
-  "test": "is_riding",
-  "subject": "self",
-  "operator": "==",
-  "value": false
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:not_riding/minecraft:environment_sensor/triggers/filters/: 
-
-```json
-{
-  "test": "is_riding",
-  "subject": "self",
-  "operator": "==",
-  "value": true
-}
-```
-
 #### [Parrot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parrot.json)
 
-At /minecraft:entity/component_groups/minecraft:parrot_not_riding_player/minecraft:entity_sensor/subsensors/0/event_filters/all_of/0/: 
+At /minecraft:entity/component_groups/minecraft:parrot_not_riding_player/minecraft:entity_sensor/subsensors[0]/event_filters/all_of[0]/: 
 
 ```json
 {
@@ -114,7 +90,7 @@ At /minecraft:entity/component_groups/minecraft:parrot_not_riding_player/minecra
 }
 ```
 
-At /minecraft:entity/component_groups/minecraft:parrot_riding_player/minecraft:entity_sensor/subsensors/0/event_filters/all_of/0/: 
+At /minecraft:entity/component_groups/minecraft:parrot_riding_player/minecraft:entity_sensor/subsensors[0]/event_filters/all_of[0]/: 
 
 ```json
 {

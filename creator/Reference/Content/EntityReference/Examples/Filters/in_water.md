@@ -20,10 +20,10 @@ Returns true when the subject entity is in water.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Axolotl: `"!="`, `"=="` | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Axolotl: `"other"`, Pillager: `"self"` | 
-| test | *not set* | String |  | Axolotl: `"in_water"` | 
-| value | true | Boolean true/false | (Optional) true or false. | Axolotl: `true` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Dolphin: `"!="`, `"=="` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| test | *not set* | String |  | Dolphin: `"in_water"` | 
+| value | true | Boolean true/false | (Optional) true or false. | Dolphin: `true` | 
 
 ### Operator choices
 
@@ -66,9 +66,9 @@ At Short (using Defaults)..:
 { "test": "in_water" }
 ```
 
-#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
+#### [Dolphin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/dolphin.json)
 
-At /minecraft:entity/component_groups/axolotl_in_water/minecraft:environment_sensor/triggers/0/filters/: 
+At /minecraft:entity/component_groups/dolphin_swimming_navigation/minecraft:environment_sensor/triggers[0]/filters/all_of[1]/: 
 
 ```json
 {
@@ -78,53 +78,12 @@ At /minecraft:entity/component_groups/axolotl_in_water/minecraft:environment_sen
 }
 ```
 
-At /minecraft:entity/component_groups/axolotl_on_land_in_rain/minecraft:environment_sensor/triggers/1/filters/: 
+At /minecraft:entity/component_groups/dolphin_on_land_in_rain/minecraft:environment_sensor/triggers[0]/filters/: 
 
 ```json
 {
   "test": "in_water",
   "operator": "==",
   "value": true
-}
-```
-
-At /minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/all_of/0/: 
-
-```json
-{
-  "test": "in_water",
-  "subject": "other",
-  "value": true
-}
-```
-
-#### [Nautilus](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/nautilus.json)
-
-At /minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:environment_sensor/triggers/0/filters/: 
-
-```json
-{
-  "test": "in_water",
-  "value": false
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_on_ground/minecraft:environment_sensor/triggers/0/filters/: 
-
-```json
-{
-  "test": "in_water"
-}
-```
-
-#### [Pillager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pillager.json)
-
-
-```json
-{
-  "test": "in_water",
-  "subject": "self",
-  "operator": "==",
-  "value": false
 }
 ```

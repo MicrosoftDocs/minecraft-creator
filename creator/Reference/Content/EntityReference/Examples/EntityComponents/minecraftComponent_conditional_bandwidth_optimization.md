@@ -17,8 +17,8 @@ Defines the Conditional Spatial Update Bandwidth Optimizations of this entity.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| conditional_values | *not set* | Array of [Conditional Values](#conditional-values) items | The object containing the conditional bandwidth optimization values. | Boat: `[{"max_optimized_distance":0,"max_dropped_ticks":0,"use_motion_prediction_hints":true,"conditional_values":[{"test":"is_moving","subject":"self"}]}]` | 
-| default_values | *not set* | [Default Values](#default-values) item | The object containing the default bandwidth optimization values. |  | 
+| conditional_values | *not set* | Array of [Conditional Values](#conditional-values) items | The object containing the conditional bandwidth optimization values. |  | 
+| default_values | *not set* | [Default Values](#default-values) item | The object containing the default bandwidth optimization values. | Arrow: `{"max_optimized_distance":80,"max_dropped_ticks":7,"use_motion_prediction_hints":true}` | 
 
 ## Conditional Values
 The object containing the conditional bandwidth optimization values.
@@ -59,98 +59,6 @@ The object containing the conditional bandwidth optimization values.
 "minecraft:conditional_bandwidth_optimization": {
   "default_values": {
     "max_optimized_distance": 80,
-    "max_dropped_ticks": 7,
-    "use_motion_prediction_hints": true
-  }
-}
-```
-
-#### [Boat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/boat.json)
-
-
-```json
-"minecraft:conditional_bandwidth_optimization": {
-  "default_values": {
-    "max_optimized_distance": 60,
-    "max_dropped_ticks": 20,
-    "use_motion_prediction_hints": true
-  },
-  "conditional_values": [
-    {
-      "max_optimized_distance": 0,
-      "max_dropped_ticks": 0,
-      "use_motion_prediction_hints": true,
-      "conditional_values": [
-        {
-          "test": "is_moving",
-          "subject": "self"
-        }
-      ]
-    }
-  ]
-}
-```
-
-#### [Chest Minecart](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chest_minecart.json)
-
-
-```json
-"minecraft:conditional_bandwidth_optimization": {
-  "default_values": {
-    "max_optimized_distance": 60,
-    "max_dropped_ticks": 20,
-    "use_motion_prediction_hints": true
-  },
-  "conditional_values": [
-    {
-      "max_optimized_distance": 0,
-      "max_dropped_ticks": 0,
-      "conditional_values": [
-        {
-          "test": "is_moving",
-          "subject": "self",
-          "operator": "==",
-          "value": true
-        }
-      ]
-    }
-  ]
-}
-```
-
-#### [Enderman](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/enderman.json)
-
-
-```json
-"minecraft:conditional_bandwidth_optimization": {
-  "default_values": {
-    "max_optimized_distance": 80,
-    "max_dropped_ticks": 10,
-    "use_motion_prediction_hints": true
-  }
-}
-```
-
-#### [Lingering Potion](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/lingering_potion.json)
-
-
-```json
-"minecraft:conditional_bandwidth_optimization": {
-  "default_values": {
-    "max_optimized_distance": 80,
-    "max_dropped_ticks": 5,
-    "use_motion_prediction_hints": true
-  }
-}
-```
-
-#### [Snowball](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/snowball.json)
-
-
-```json
-"minecraft:conditional_bandwidth_optimization": {
-  "default_values": {
-    "max_optimized_distance": 100,
     "max_dropped_ticks": 7,
     "use_motion_prediction_hints": true
   }

@@ -68,7 +68,7 @@ At Short (using Defaults)..:
 
 #### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
 
-At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/0/filters/: 
+At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/: 
 
 ```json
 {
@@ -79,44 +79,12 @@ At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environm
 }
 ```
 
-#### [Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/husk.json)
+#### [Parched](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parched.json)
 
-At /minecraft:entity/component_groups/minecraft:look_to_start_zombie_transformation/minecraft:environment_sensor/triggers/0/filters/: 
+At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/: 
 
 ```json
 {
   "test": "is_underwater"
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:start_zombie_transformation/minecraft:environment_sensor/triggers/0/filters/: 
-
-```json
-{
-  "test": "is_underwater",
-  "value": false
-}
-```
-
-#### [Gray Zombie Leader](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json)
-
-At /minecraft:entity/component_groups/minecraft:start_drowned_transformation/minecraft:environment_sensor/triggers/filters/: 
-
-```json
-{
-  "test": "is_underwater",
-  "subject": "self",
-  "operator": "==",
-  "value": false
-}
-```
-
-At /minecraft:entity/components/minecraft:environment_sensor/triggers/filters/: 
-
-```json
-{
-  "test": "is_underwater",
-  "operator": "==",
-  "value": true
 }
 ```

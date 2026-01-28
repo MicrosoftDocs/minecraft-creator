@@ -45,82 +45,15 @@
         "id": "geometry",
         "title": "Geometry",
         "description": "[Required] The \"minecraft:geometry\" component that will be used for the item.",
-        "dataType": 15,
-        "samples": {
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [
-            {
-              "path": "/minecraft:block/components/minecraft:item_visual/",
-              "content": "geometry.mikeamm_gwve_fabricator_in_hand"
-            }
-          ],
-          "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
-            {
-              "path": "/minecraft:block/components/minecraft:item_visual/",
-              "content": "minecraft:geometry.full_block"
-            }
-          ]
-        }
+        "dataType": 15
       },
       {
         "id": "material_instances",
         "title": "Material Instances",
         "description": "[Required] The \"minecraft:material_instances\" component that will be used for the item.",
-        "dataType": 15,
-        "samples": {
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [
-            {
-              "path": "/minecraft:block/components/minecraft:item_visual/",
-              "content": {
-                "*": {
-                  "texture": "mikeamm_gwve_fabricator_in_hand",
-                  "render_method": "alpha_test"
-                }
-              }
-            }
-          ],
-          "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
-            {
-              "path": "/minecraft:block/components/minecraft:item_visual/",
-              "content": {
-                "*": {
-                  "texture": "die_red",
-                  "render_method": "opaque"
-                }
-              }
-            }
-          ]
-        }
+        "dataType": 15
       }
     ],
-    "samples": {
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [
-        {
-          "path": "/minecraft:block/components/minecraft:item_visual/",
-          "content": {
-            "geometry": "geometry.mikeamm_gwve_fabricator_in_hand",
-            "material_instances": {
-              "*": {
-                "texture": "mikeamm_gwve_fabricator_in_hand",
-                "render_method": "alpha_test"
-              }
-            }
-          }
-        }
-      ],
-      "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
-        {
-          "path": "/minecraft:block/components/minecraft:item_visual/",
-          "content": {
-            "geometry": "minecraft:geometry.full_block",
-            "material_instances": {
-              "*": {
-                "texture": "die_red",
-                "render_method": "opaque"
-              }
-            }
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

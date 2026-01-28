@@ -25,13 +25,6 @@
     "title": "Managed Wandering Trader",
     "description": "This component is used to implement part of the Wandering Trader behavior",
     "fields": [],
-    "samples": {
-      "/vanilla/behavior_pack/entities/wandering_trader.json": [
-        {
-          "path": "/minecraft:entity/component_groups/managed/minecraft:managed_wandering_trader/",
-          "content": {}
-        }
-      ]
-    }
+    "samples": {}
   }
 }

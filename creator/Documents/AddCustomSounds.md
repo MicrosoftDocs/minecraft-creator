@@ -36,7 +36,7 @@ Now that the Resource Pack has been created, it's time to set up a place for our
 1. In **File Explorer**, navigate to the **com.mojang** folder.
 
      - Press **Win+R** to open **Run**.
-     - If you are using main Minecraft releases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
+     - If you are using main Minecraft releases, copy and paste the following into the **Open** field: `%appdata%\Minecraft Bedrock\users\shared\games\com.mojang`
      - Alternatively, if you are using preview Minecraft versions, see more information about the folder to use in [this article](./GDKPCProjectFolder.md)
      - Click **OK**.
 

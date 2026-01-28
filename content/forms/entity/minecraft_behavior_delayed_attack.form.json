@@ -23,15 +23,7 @@
         "title": "Attack Duration",
         "description": "The entity's attack animation will play out over this duration (in seconds). Also controls attack cooldown.",
         "defaultValue": 0.75,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:behavior.delayed_attack/",
-              "content": 0.75
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "attack_once",
@@ -58,15 +50,7 @@
         "title": "Hit Delay Pct",
         "description": "The percentage into the attack animation to apply the damage of the attack (1.0 = 100%).",
         "defaultValue": 0.5,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:behavior.delayed_attack/",
-              "content": 0.5
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "inner_boundary_time_increase",
@@ -148,15 +132,7 @@
         "title": "Reach Multiplier",
         "description": "Used with the base size of the entity to determine minimum target-distance before trying to deal attack damage.",
         "defaultValue": 1.5,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:behavior.delayed_attack/",
-              "content": 1.5
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "require_complete_path",
@@ -170,30 +146,14 @@
         "title": "Speed Multiplier",
         "description": "This multiplier modifies the attacking entity's speed when moving toward the target.",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:behavior.delayed_attack/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "track_target",
         "title": "Track Target",
         "description": "Allows the entity to track the attack target, even if the entity has no sensing.",
         "defaultValue": true,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:behavior.delayed_attack/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "x_max_rotation",
@@ -214,34 +174,9 @@
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:behavior.delayed_attack/",
-              "content": 4
-            }
-          ]
-        }
+        "dataType": 0
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/ravager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:behavior.delayed_attack/",
-          "content": {
-            "priority": 4,
-            "attack_once": false,
-            "track_target": true,
-            "require_complete_path": false,
-            "random_stop_interval": 0,
-            "reach_multiplier": 1.5,
-            "speed_multiplier": 1,
-            "attack_duration": 0.75,
-            "hit_delay_pct": 0.5
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

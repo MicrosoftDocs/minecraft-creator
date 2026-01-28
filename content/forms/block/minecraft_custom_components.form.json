@@ -19,30 +19,7 @@
     "id": "minecraft:custom_components",
     "title": "Custom Components",
     "description": "Sets an ordered list of custom component names which are bound in script to be executed upon a block event.",
-    "fields": [
-      {
-        "id": "0",
-        "title": "0",
-        "dataType": 2,
-        "samples": {
-          "/samples/lucky_block/version_1/behavior_packs/mike_luck/blocks/luckyblock.json": [
-            {
-              "path": "/minecraft:block/components/minecraft:custom_components/",
-              "content": "mike_luck:luckyblock_actions"
-            }
-          ]
-        }
-      }
-    ],
-    "samples": {
-      "/samples/lucky_block/version_1/behavior_packs/mike_luck/blocks/luckyblock.json": [
-        {
-          "path": "/minecraft:block/components/minecraft:custom_components/",
-          "content": [
-            "mike_luck:luckyblock_actions"
-          ]
-        }
-      ]
-    }
+    "fields": [],
+    "samples": {}
   }
 }

@@ -225,15 +225,7 @@
             "title": "Not",
             "description": "Test for inequality."
           }
-        ],
-        "samples": {
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:neutral/minecraft:looked_at/filters/",
-              "content": ">"
-            }
-          ]
-        }
+        ]
       },
       {
         "id": "subject",
@@ -277,46 +269,13 @@
             "title": "Target",
             "description": "The caller's current target."
           }
-        ],
-        "samples": {
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_player/minecraft:environment_sensor/triggers/0/filters/all_of/1/any_of/1/",
-              "content": "target"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/0/filters/all_of/1/any_of/1/",
-              "content": "target"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:neutral/minecraft:looked_at/filters/",
-              "content": "other"
-            }
-          ]
-        }
+        ]
       },
       {
         "id": "value",
         "title": "Value",
         "description": "(Required) An integer value.",
         "dataType": 0
-      },
-      {
-        "id": "test",
-        "title": "Test",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_player/minecraft:environment_sensor/triggers/0/filters/all_of/1/any_of/1/",
-              "content": "actor_health"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/0/filters/all_of/1/any_of/1/",
-              "content": "actor_health"
-            }
-          ]
-        }
       }
     ],
     "samples": {
@@ -328,41 +287,6 @@
         {
           "path": "Short (using Defaults)..",
           "content": "{ \"test\": \"actor_health\", \"value\": \"0\" }"
-        }
-      ],
-      "/vanilla/behavior_pack/entities/creaking.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:spawned_by_player/minecraft:environment_sensor/triggers/0/filters/all_of/1/any_of/1/",
-          "content": {
-            "test": "actor_health",
-            "subject": "target",
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/0/filters/all_of/1/any_of/1/",
-          "content": {
-            "test": "actor_health",
-            "subject": "target",
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:neutral/minecraft:looked_at/filters/",
-          "content": {
-            "test": "actor_health",
-            "subject": "other",
-            "operator": ">",
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:looked_at/filters/none_of/0/",
-          "content": {
-            "test": "actor_health",
-            "subject": "target",
-            "value": 0
-          }
         }
       ]
     }

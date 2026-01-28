@@ -99,71 +99,7 @@
         "id": "domain",
         "title": "Domain",
         "description": "(Required) The property name to look for",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/shelter_detection/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
-              "content": "minecraft:has_nectar"
-            },
-            {
-              "path": "/minecraft:entity/events/find_hive_timeout/sequence/0/filters/",
-              "content": "minecraft:has_nectar"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/copper_golem.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.take_flower/filters/all_of/1/",
-              "content": "minecraft:has_flower"
-            },
-            {
-              "path": "/minecraft:entity/components/minecraft:interact/interactions/0/on_interact/filters/all_of/0/",
-              "content": "minecraft:is_waxed"
-            },
-            {
-              "path": "/minecraft:entity/components/minecraft:interact/interactions/1/on_interact/filters/all_of/0/",
-              "content": "minecraft:is_waxed"
-            },
-            {
-              "path": "/minecraft:entity/components/minecraft:interact/interactions/4/on_interact/filters/all_of/0/",
-              "content": "minecraft:has_flower"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:becoming_statue/minecraft:behavior.place_block/can_place/",
-              "content": "minecraft:is_becoming_statue"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/events/minecraft:become_immobile/filters/",
-              "content": "minecraft:can_move"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:become_mobile/filters/",
-              "content": "minecraft:can_move"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/wolf.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/all_of/0/",
-              "content": "minecraft:has_increased_max_health"
-            },
-            {
-              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/1/filters/all_of/0/",
-              "content": "minecraft:is_armorable"
-            },
-            {
-              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/2/filters/",
-              "content": "minecraft:was_upgraded_to_1_21_100"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_horse.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/",
-              "content": "minecraft:was_upgraded_to_1_21_130"
-            }
-          ]
-        }
+        "dataType": 2
       },
       {
         "id": "operator",
@@ -222,19 +158,7 @@
             "title": "Not",
             "description": "Test for inequality."
           }
-        ],
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/shelter_detection/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
-              "content": "!="
-            },
-            {
-              "path": "/minecraft:entity/events/find_hive_timeout/sequence/0/filters/",
-              "content": "!="
-            }
-          ]
-        }
+        ]
       },
       {
         "id": "subject",
@@ -285,36 +209,7 @@
         "title": "Value",
         "description": "(Optional) true or false.",
         "defaultValue": true,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/copper_golem.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:interact/interactions/2/on_interact/filters/all_of/0/",
-              "content": true
-            },
-            {
-              "path": "/minecraft:entity/components/minecraft:interact/interactions/4/on_interact/filters/all_of/0/",
-              "content": true
-            }
-          ]
-        }
-      },
-      {
-        "id": "test",
-        "title": "Test",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/shelter_detection/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
-              "content": "bool_property"
-            },
-            {
-              "path": "/minecraft:entity/events/find_hive_timeout/sequence/0/filters/",
-              "content": "bool_property"
-            }
-          ]
-        }
+        "dataType": 1
       }
     ],
     "samples": {
@@ -326,143 +221,6 @@
         {
           "path": "Short (using Defaults)..",
           "content": "{ \"test\": \"bool_property\", \"domain\": \"minecraft:can_climb\" }"
-        }
-      ],
-      "/vanilla/behavior_pack/entities/bee.json": [
-        {
-          "path": "/minecraft:entity/component_groups/shelter_detection/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
-          "content": {
-            "test": "bool_property",
-            "domain": "minecraft:has_nectar",
-            "operator": "!="
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/find_hive_timeout/sequence/0/filters/",
-          "content": {
-            "test": "bool_property",
-            "operator": "!=",
-            "domain": "minecraft:has_nectar"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/find_hive_timeout/sequence/1/filters/",
-          "content": {
-            "test": "bool_property",
-            "domain": "minecraft:has_nectar"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/copper_golem.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.take_flower/filters/all_of/1/",
-          "content": {
-            "test": "bool_property",
-            "domain": "minecraft:has_flower",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:interact/interactions/0/on_interact/filters/all_of/0/",
-          "content": {
-            "test": "bool_property",
-            "domain": "minecraft:is_waxed",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:interact/interactions/1/on_interact/filters/all_of/0/",
-          "content": {
-            "test": "bool_property",
-            "domain": "minecraft:is_waxed",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:interact/interactions/2/on_interact/filters/all_of/0/",
-          "content": {
-            "test": "bool_property",
-            "domain": "minecraft:is_waxed",
-            "value": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:interact/interactions/4/on_interact/filters/all_of/0/",
-          "content": {
-            "test": "bool_property",
-            "domain": "minecraft:has_flower",
-            "value": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:becoming_statue/minecraft:behavior.place_block/can_place/",
-          "content": {
-            "test": "bool_property",
-            "domain": "minecraft:is_becoming_statue",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:became_statue/minecraft:spawn_entity/entities/filters/",
-          "content": {
-            "test": "bool_property",
-            "domain": "minecraft:has_flower",
-            "value": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/happy_ghast.json": [
-        {
-          "path": "/minecraft:entity/events/minecraft:become_immobile/filters/",
-          "content": {
-            "test": "bool_property",
-            "domain": "minecraft:can_move",
-            "value": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:become_mobile/filters/",
-          "content": {
-            "test": "bool_property",
-            "domain": "minecraft:can_move",
-            "value": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wolf.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/all_of/0/",
-          "content": {
-            "test": "bool_property",
-            "operator": "!=",
-            "domain": "minecraft:has_increased_max_health"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/1/filters/all_of/0/",
-          "content": {
-            "test": "bool_property",
-            "operator": "!=",
-            "domain": "minecraft:is_armorable"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/2/filters/",
-          "content": {
-            "test": "bool_property",
-            "operator": "!=",
-            "domain": "minecraft:was_upgraded_to_1_21_100"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_horse.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/",
-          "content": {
-            "test": "bool_property",
-            "operator": "!=",
-            "domain": "minecraft:was_upgraded_to_1_21_130"
-          }
         }
       ]
     }

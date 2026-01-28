@@ -31,7 +31,7 @@
       {
         "id": "value",
         "title": "Value",
-        "description": "The higher the number, the more the friction affects this entity. A value of 1.0 means regular friction, while 2.0 means twice as much.",
+        "description": "The higher the number, the more friction affects this entity. A value of 1.0 means regular friction, while 2.0 means twice as much.",
         "defaultValue": 1,
         "dataType": 3
       }

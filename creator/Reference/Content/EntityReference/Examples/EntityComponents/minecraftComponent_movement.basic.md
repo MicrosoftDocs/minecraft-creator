@@ -17,22 +17,13 @@ This component accents the movement of an entity.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| max_turn | 30 | Decimal number | The maximum number in degrees the mob can turn per tick. | Wither: `180` | 
+| max_turn | 30 | Decimal number | The maximum number in degrees the mob can turn per tick. |  | 
 
 ## Samples
 
-#### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
+#### [Bat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bat.json)
 
 
 ```json
 "minecraft:movement.basic": {}
-```
-
-#### [Wither](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wither.json)
-
-
-```json
-"minecraft:movement.basic": {
-  "max_turn": 180
-}
 ```

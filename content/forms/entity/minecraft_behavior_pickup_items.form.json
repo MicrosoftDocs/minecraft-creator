@@ -154,14 +154,6 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/husk.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-              "content": [
-                "minecraft:glow_ink_sac"
-              ]
-            }
-          ],
           "/vanilla/behavior_pack/entities/parched.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
@@ -169,14 +161,6 @@
                 {
                   "tags": "q.all_tags('minecraft:is_spear')"
                 }
-              ]
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-              "content": [
-                "minecraft:glow_ink_sac"
               ]
             }
           ]
@@ -233,12 +217,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": 3
             }
-          ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-              "content": 10
-            }
           ]
         }
       },
@@ -293,18 +271,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": 0.5
             }
-          ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-              "content": 0.8
-            }
-          ],
-          "/vanilla/behavior_pack/entities/villager.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-              "content": 0.5
-            }
           ]
         }
       },
@@ -340,64 +306,16 @@
               "content": 6
             }
           ],
-          "/vanilla/behavior_pack/entities/evocation_illager.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-              "content": 7
-            }
-          ],
           "/vanilla/behavior_pack/entities/fox.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": 11
             }
           ],
-          "/vanilla/behavior_pack/entities/husk.json": [
+          "/vanilla/behavior_pack/entities/parched.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": 6
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pillager.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-              "content": 7
-            }
-          ],
-          "/vanilla/behavior_pack/entities/skeleton.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-              "content": 5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/villager.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-              "content": 9
-            }
-          ],
-          "/vanilla/behavior_pack/entities/villager_v2.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-              "content": 4
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_villager.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-              "content": 8
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-              "content": 8
-            }
-          ],
-          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-              "content": 4
             }
           ]
         }
@@ -424,19 +342,6 @@
             {
               "path": "/minecraft:entity/component_groups/pickup_item/minecraft:behavior.pickup_items/",
               "content": true
-            }
-          ]
-        }
-      },
-      {
-        "id": "cooldown_after_being_attacked",
-        "title": "Cooldown After Being Attacked",
-        "dataType": 7,
-        "samples": {
-          "/vanilla/behavior_pack/entities/piglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-              "content": 20
             }
           ]
         }
@@ -496,17 +401,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/evocation_illager.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-          "content": {
-            "priority": 7,
-            "max_dist": 3,
-            "goal_radius": 2,
-            "speed_multiplier": 1
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/fox.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
@@ -515,22 +409,6 @@
             "max_dist": 3,
             "goal_radius": 2,
             "speed_multiplier": 0.5
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/husk.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-          "content": {
-            "priority": 6,
-            "max_dist": 3,
-            "goal_radius": 2,
-            "speed_multiplier": 1,
-            "pickup_based_on_chance": true,
-            "can_pickup_any_item": true,
-            "excluded_items": [
-              "minecraft:glow_ink_sac"
-            ]
           }
         }
       ],
@@ -549,200 +427,6 @@
                 "tags": "q.all_tags('minecraft:is_spear')"
               }
             ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/piglin.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-          "content": {
-            "priority": 6,
-            "max_dist": 10,
-            "goal_radius": 2,
-            "speed_multiplier": 0.8,
-            "pickup_based_on_chance": false,
-            "can_pickup_any_item": false,
-            "cooldown_after_being_attacked": 20
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/pillager.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-          "content": {
-            "priority": 7,
-            "max_dist": 3,
-            "goal_radius": 2,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/skeleton.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-          "content": {
-            "priority": 5,
-            "max_dist": 3,
-            "goal_radius": 2,
-            "speed_multiplier": 1,
-            "pickup_based_on_chance": true,
-            "can_pickup_any_item": true,
-            "excluded_items": [
-              {
-                "tags": "q.all_tags('minecraft:is_spear')"
-              }
-            ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/stray.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-          "content": {
-            "priority": 5,
-            "max_dist": 3,
-            "goal_radius": 2,
-            "speed_multiplier": 1,
-            "pickup_based_on_chance": true,
-            "can_pickup_any_item": true,
-            "excluded_items": [
-              {
-                "tags": "q.all_tags('minecraft:is_spear')"
-              }
-            ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/villager.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-          "content": {
-            "priority": 9,
-            "max_dist": 3,
-            "goal_radius": 2,
-            "speed_multiplier": 0.5,
-            "can_pickup_to_hand_or_equipment": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/villager_v2.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-          "content": {
-            "priority": 4,
-            "max_dist": 3,
-            "goal_radius": 2,
-            "speed_multiplier": 0.5,
-            "can_pickup_to_hand_or_equipment": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/vindicator.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-          "content": {
-            "priority": 7,
-            "max_dist": 3,
-            "goal_radius": 2,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-          "content": {
-            "priority": 5,
-            "max_dist": 3,
-            "goal_radius": 2,
-            "speed_multiplier": 1,
-            "pickup_based_on_chance": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-          "content": {
-            "priority": 6,
-            "max_dist": 3,
-            "goal_radius": 2,
-            "speed_multiplier": 1,
-            "pickup_based_on_chance": true,
-            "can_pickup_any_item": true,
-            "excluded_items": [
-              "minecraft:glow_ink_sac"
-            ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_pigman.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-          "content": {
-            "priority": 7,
-            "max_dist": 3,
-            "goal_radius": 2,
-            "speed_multiplier": 1,
-            "pickup_based_on_chance": true,
-            "can_pickup_any_item": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-          "content": {
-            "priority": 8,
-            "max_dist": 3,
-            "goal_radius": 2,
-            "speed_multiplier": 1,
-            "pickup_based_on_chance": false,
-            "can_pickup_any_item": true,
-            "excluded_items": [
-              "minecraft:glow_ink_sac"
-            ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-          "content": {
-            "priority": 8,
-            "max_dist": 3,
-            "goal_radius": 2,
-            "speed_multiplier": 1,
-            "pickup_based_on_chance": true,
-            "can_pickup_any_item": true,
-            "excluded_items": [
-              "minecraft:glow_ink_sac"
-            ]
-          }
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-          "content": {
-            "priority": 6,
-            "max_dist": 3,
-            "goal_radius": 2,
-            "speed_multiplier": 1,
-            "pickup_based_on_chance": true,
-            "can_pickup_any_item": true
-          }
-        }
-      ],
-      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-          "content": {
-            "priority": 4,
-            "max_dist": 3,
-            "goal_radius": 2,
-            "speed_multiplier": 0.5,
-            "can_pickup_to_hand_or_equipment": false
           }
         }
       ]

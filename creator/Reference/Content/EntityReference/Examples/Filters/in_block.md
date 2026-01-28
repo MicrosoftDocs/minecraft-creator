@@ -68,7 +68,7 @@ At Short (using Defaults)..:
 
 #### [Skeleton](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton.json)
 
-At /minecraft:entity/component_groups/in_powder_snow/minecraft:environment_sensor/triggers/0/filters/: 
+At /minecraft:entity/component_groups/in_powder_snow/minecraft:environment_sensor/triggers[0]/filters/: 
 
 ```json
 {
@@ -79,7 +79,7 @@ At /minecraft:entity/component_groups/in_powder_snow/minecraft:environment_senso
 }
 ```
 
-At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/2/filters/: 
+At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[2]/filters/: 
 
 ```json
 {
@@ -89,7 +89,7 @@ At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environm
 }
 ```
 
-At /minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/1/filters/: 
+At /minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers[1]/filters/: 
 
 ```json
 {

@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines block behavior document structure"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "block_behavior_document",
+  "title": "Block Behavior Document",
+  "description": "A behavior pack block definition document for Minecraft Bedrock Edition. This describes the complete JSON file structure including format_version and the minecraft:block wrapper.",
+  "fields": [
+    {
+      "dataType": 25,
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of this block behavior file. Determines which features and component schemas are available.",
+      "isRequired": true
+    },
+    {
+      "dataType": 16,
+      "id": "minecraft:block",
+      "title": "Block Definition",
+      "description": "The block definition container with all behavior pack block data.",
+      "isRequired": true,
+      "subFormId": "block/blockdefinitiondocument"
+    }
+  ]
+}

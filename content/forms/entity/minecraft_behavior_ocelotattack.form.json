@@ -23,288 +23,79 @@
         "title": "Cooldown Time",
         "description": "Time (in seconds) between attacks.",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/ocelot.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "max_distance",
         "title": "Max Distance",
         "description": "Max distance from the target, this entity will use this attack behavior.",
         "defaultValue": 15,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 15
-            }
-          ],
-          "/vanilla/behavior_pack/entities/ocelot.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 15
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "max_sneak_range",
         "title": "Max Sneak Range",
         "description": "Max distance from the target, this entity starts sneaking.",
         "defaultValue": 15,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 15
-            }
-          ],
-          "/vanilla/behavior_pack/entities/ocelot.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 15
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "max_sprint_range",
         "title": "Max Sprint Range",
         "description": "Max distance from the target, this entity starts sprinting (sprinting takes priority over sneaking).",
         "defaultValue": 4,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 4
-            }
-          ],
-          "/vanilla/behavior_pack/entities/ocelot.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 4
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "reach_multiplier",
         "title": "Reach Multiplier",
         "description": "Used with the base size of the entity to determine minimum target-distance before trying to deal attack damage.",
         "defaultValue": 2,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/ocelot.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 2
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "sneak_speed_multiplier",
         "title": "Sneak Speed Multiplier",
         "description": "Modifies the attacking entity's movement speed while sneaking.",
         "defaultValue": 0.6,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 0.6
-            }
-          ],
-          "/vanilla/behavior_pack/entities/ocelot.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 0.6
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "sprint_speed_multiplier",
         "title": "Sprint Speed Multiplier",
         "description": "Modifies the attacking entity's movement speed while sprinting.",
         "defaultValue": 1.33,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 1.33
-            }
-          ],
-          "/vanilla/behavior_pack/entities/ocelot.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 1.33
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "walk_speed_multiplier",
         "title": "Walk Speed Multiplier",
         "description": "Modifies the attacking entity's movement speed when not sneaking or sprinting, but still within attack range.",
         "defaultValue": 0.8,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 0.8
-            }
-          ],
-          "/vanilla/behavior_pack/entities/ocelot.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 0.8
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "x_max_rotation",
         "title": "x Max Rotation",
         "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target.",
         "defaultValue": 30,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 30
-            }
-          ],
-          "/vanilla/behavior_pack/entities/ocelot.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 30
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "y_max_head_rotation",
         "title": "y Max Head Rotation",
         "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target.",
         "defaultValue": 30,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 30
-            }
-          ],
-          "/vanilla/behavior_pack/entities/ocelot.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 30
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 4
-            }
-          ],
-          "/vanilla/behavior_pack/entities/ocelot.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-              "content": 4
-            }
-          ]
-        }
+        "dataType": 0
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/cat.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-          "content": {
-            "priority": 4,
-            "cooldown_time": 1,
-            "x_max_rotation": 30,
-            "y_max_head_rotation": 30,
-            "max_distance": 15,
-            "max_sneak_range": 15,
-            "max_sprint_range": 4,
-            "reach_multiplier": 2,
-            "sneak_speed_multiplier": 0.6,
-            "sprint_speed_multiplier": 1.33,
-            "walk_speed_multiplier": 0.8
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/ocelot.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-          "content": {
-            "priority": 4,
-            "cooldown_time": 1,
-            "x_max_rotation": 30,
-            "y_max_head_rotation": 30,
-            "max_distance": 15,
-            "max_sneak_range": 15,
-            "max_sprint_range": 4,
-            "reach_multiplier": 2,
-            "sneak_speed_multiplier": 0.6,
-            "sprint_speed_multiplier": 1.33,
-            "walk_speed_multiplier": 0.8
-          }
-        }
-      ],
-      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.ocelotattack/",
-          "content": {
-            "priority": 4,
-            "cooldown_time": 1,
-            "x_max_rotation": 30,
-            "y_max_head_rotation": 30,
-            "max_distance": 15,
-            "max_sneak_range": 15,
-            "max_sprint_range": 4,
-            "reach_multiplier": 2,
-            "sneak_speed_multiplier": 0.6,
-            "sprint_speed_multiplier": 1.33,
-            "walk_speed_multiplier": 0.8
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

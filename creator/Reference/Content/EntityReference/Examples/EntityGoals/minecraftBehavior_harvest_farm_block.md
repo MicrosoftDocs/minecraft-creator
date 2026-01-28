@@ -25,38 +25,12 @@ Allows the entity to search within an area for farmland with air above it. If fo
 |:----------|:-------------|:----|:-----------|:------------- |
 | goal_radius | 1.5 | Decimal number | Distance in blocks within the entity considers it has reached it's target position. |  | 
 | max_seconds_before_search | 1 | Decimal number | The maximum amount of time in seconds that the goal can take before searching for the first harvest block. The time is chosen between 0 and this number. |  | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager: `9`, Villager v2: `7` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
 | search_cooldown_max_seconds | 8 | Decimal number | The maximum amount of time in seconds that the goal can take before searching again, after failing to find a a harvest block already. The time is chosen between 0 and this number. |  | 
-| search_count | 0 | Integer number | The number of randomly selected blocks each tick that the entity will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick. |  | 
-| search_height | 1 | Integer number | The Height in blocks the entity will search within to find a valid target position. |  | 
+| search_count | 0 | Integer number | The number of randomly selected blocks each tick that the mob will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick. |  | 
+| search_height | 1 | Integer number | The height in blocks the entity will search within to find a valid target position. |  | 
 | search_range | 16 | Integer number | The distance in blocks the entity will search within to find a valid target position. |  | 
 | seconds_until_new_task | 0.5 | Decimal number | The amount of time in seconds that the goal will cooldown after a successful reap/sow, before it can start again. |  | 
-| speed_multiplier | 0.5 | Decimal number | Movement speed multiplier of the entity when using this Goal. | Villager: `0.5` | 
+| speed_multiplier | 0.5 | Decimal number | Movement speed multiplier of the mob when using this goal. |  | 
 
 ## Samples
-
-#### [Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager.json)
-
-
-```json
-"minecraft:behavior.harvest_farm_block": {
-  "priority": 9,
-  "speed_multiplier": 0.5
-}
-```
-
-#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
-
-At /minecraft:entity/component_groups/job_specific_goals/minecraft:behavior.harvest_farm_block/: 
-
-```json
-"minecraft:behavior.harvest_farm_block": {}
-```
-
-At /minecraft:entity/component_groups/work_schedule_farmer/minecraft:behavior.harvest_farm_block/: 
-
-```json
-"minecraft:behavior.harvest_farm_block": {
-  "priority": 7
-}
-```

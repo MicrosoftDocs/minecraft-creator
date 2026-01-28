@@ -66,12 +66,6 @@
               "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
               "content": 1.5
             }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
-              "content": 1.5
-            }
           ]
         }
       },
@@ -128,15 +122,6 @@
                 "target": "self"
               }
             }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
-              "content": {
-                "event": "minecraft:laid_egg",
-                "target": "self"
-              }
-            }
           ]
         }
       },
@@ -158,12 +143,6 @@
               "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
               "content": 4
             }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
-              "content": 4
-            }
           ]
         }
       },
@@ -181,12 +160,6 @@
             }
           ],
           "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
-              "content": 16
-            }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
               "content": 16
@@ -274,12 +247,6 @@
               "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
               "content": 1
             }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
-              "content": 1
-            }
           ]
         }
       }
@@ -313,38 +280,6 @@
         }
       ],
       "/vanilla/behavior_pack/entities/turtle.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
-          "content": {
-            "priority": 1,
-            "speed_multiplier": 1,
-            "search_range": 16,
-            "search_height": 4,
-            "goal_radius": 1.5,
-            "on_lay": {
-              "event": "minecraft:laid_egg",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
-          "content": {
-            "priority": 1,
-            "speed_multiplier": 1,
-            "search_range": 16,
-            "search_height": 4,
-            "goal_radius": 1.5,
-            "on_lay": {
-              "event": "minecraft:laid_egg",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
           "content": {

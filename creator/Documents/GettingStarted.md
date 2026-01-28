@@ -92,7 +92,7 @@ To locate the **com.mojang** folder on your computer, you'll need to have the **
 ### Locating com.mojang on a Windows device
 
 1. Press **Win+R** to open **Run**.
-1. If you are using the main Minecraft releases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
+1. If you are using the main Minecraft releases, copy and paste the following into the **Open** field: `%appdata%\Minecraft Bedrock\users\shared\games\com.mojang`
 1. Alternatively, if you are using preview Minecraft versions, see more information about the folder to use in [this article](./GDKPCProjectFolder.md)
 1. Click **OK**.
 

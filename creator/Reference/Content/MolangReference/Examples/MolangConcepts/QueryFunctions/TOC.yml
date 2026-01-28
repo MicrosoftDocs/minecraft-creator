@@ -142,6 +142,8 @@
   href: query_get_animation_frame.md
 - name: query.get_default_bone_pivot
   href: query_get_default_bone_pivot.md
+- name: query.get_level_seed_based_fraction
+  href: query_get_level_seed_based_fraction.md
 - name: query.get_locator_offset
   href: query_get_locator_offset.md
 - name: query.get_pack_setting

@@ -61,75 +61,20 @@
         "title": "Break Time",
         "description": "The time in seconds required to break through doors.",
         "defaultValue": 12,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/vindicator.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:annotation.break_door/",
-              "content": 30
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "min_difficulty",
         "title": "Min Difficulty",
         "description": "The minimum difficulty that the world must be on for this entity to break doors.",
         "defaultValue": "hard",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/vindicator.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:annotation.break_door/",
-              "content": "normal"
-            }
-          ]
-        }
+        "dataType": 2
       }
     ],
     "samples": {
       "/vanilla/behavior_pack/entities/drowned.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:can_break_doors/minecraft:annotation.break_door/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/husk.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:can_break_doors/minecraft:annotation.break_door/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/vindicator.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:annotation.break_door/",
-          "content": {
-            "break_time": 30,
-            "min_difficulty": "normal"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:can_break_doors/minecraft:annotation.break_door/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/can_break_doors/minecraft:annotation.break_door/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-        {
-          "path": "/minecraft:entity/component_groups/can_break_doors/minecraft:annotation.break_door/",
-          "content": {}
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:annotation.break_door/",
           "content": {}
         }
       ]

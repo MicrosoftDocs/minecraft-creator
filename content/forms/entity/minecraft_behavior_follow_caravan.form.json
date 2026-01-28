@@ -209,40 +209,6 @@
             }
           }
         }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 2.1,
-            "entity_count": 10,
-            "entity_types": {
-              "filters": {
-                "test": "is_family",
-                "subject": "other",
-                "value": "llama"
-              }
-            }
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 2.1,
-            "entity_count": 10,
-            "entity_types": {
-              "filters": {
-                "test": "is_family",
-                "subject": "other",
-                "value": "llama"
-              }
-            }
-          }
-        }
       ]
     }
   }

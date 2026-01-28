@@ -6,7 +6,7 @@
         "tokens": [
           {
             "type": "literal",
-            "text": "validates JSON files against their corresponding schemas"
+            "text": "validates JSON files against official schemas"
           }
         ]
       }
@@ -14,7 +14,7 @@
   },
   "id": "json",
   "title": "JSON Schema Validation",
-  "description": "Validates JSON files against their corresponding schemas based on item type. Reports schema validation errors and warns when files are not at a current format version. Topic IDs 100+ are computed as JsonSchemaErrorBase (100) + ProjectItemType. Topic IDs 1100+ are computed as NotCurrentFormatVersionBase (1100) + ProjectItemType.",
+  "description": "Validates JSON files against official JSON schemas located at public/schemas. Reports schema validation errors and warns when files are not at a current format version. Topic IDs 100+ are computed as JsonSchemaErrorBase (100) + ProjectItemType. Topic IDs 1100+ are computed as NotCurrentFormatVersionBase (1100) + ProjectItemType.",
   "fields": [
     {
       "id": "1",

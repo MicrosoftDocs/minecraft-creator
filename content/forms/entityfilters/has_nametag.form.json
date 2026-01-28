@@ -131,23 +131,6 @@
         "description": "(Optional) true or false.",
         "defaultValue": true,
         "dataType": 1
-      },
-      {
-        "id": "test",
-        "title": "Test",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/evocation_illager.json": [
-            {
-              "path": "/minecraft:entity/events/minecraft:start_celebrating/sequence/1/filters/",
-              "content": "has_nametag"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:raid_expired/sequence/0/filters/",
-              "content": "has_nametag"
-            }
-          ]
-        }
       }
     ],
     "samples": {
@@ -159,86 +142,6 @@
         {
           "path": "Short (using Defaults)..",
           "content": "{ \"test\": \"has_nametag\" }"
-        }
-      ],
-      "/vanilla/behavior_pack/entities/evocation_illager.json": [
-        {
-          "path": "/minecraft:entity/events/minecraft:start_celebrating/sequence/1/filters/",
-          "content": {
-            "test": "has_nametag",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:raid_expired/sequence/0/filters/",
-          "content": {
-            "test": "has_nametag",
-            "value": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/pillager.json": [
-        {
-          "path": "/minecraft:entity/events/minecraft:start_celebrating/sequence/1/filters/",
-          "content": {
-            "test": "has_nametag",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:raid_expired/sequence/0/filters/",
-          "content": {
-            "test": "has_nametag",
-            "value": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/ravager.json": [
-        {
-          "path": "/minecraft:entity/events/minecraft:start_celebrating/sequence/1/filters/",
-          "content": {
-            "test": "has_nametag",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:raid_expired/sequence/0/filters/",
-          "content": {
-            "test": "has_nametag",
-            "value": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/vindicator.json": [
-        {
-          "path": "/minecraft:entity/events/minecraft:start_celebrating/sequence/1/filters/",
-          "content": {
-            "test": "has_nametag",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:raid_expired/sequence/0/filters/",
-          "content": {
-            "test": "has_nametag",
-            "value": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/witch.json": [
-        {
-          "path": "/minecraft:entity/events/minecraft:start_celebrating/sequence/1/filters/",
-          "content": {
-            "test": "has_nametag",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:raid_expired/sequence/0/filters/",
-          "content": {
-            "test": "has_nametag",
-            "value": false
-          }
         }
       ]
     }

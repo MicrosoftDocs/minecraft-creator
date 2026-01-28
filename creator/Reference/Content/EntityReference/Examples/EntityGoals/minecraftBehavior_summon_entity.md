@@ -20,8 +20,8 @@ Allows the mob to attack the player by summoning other entities.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Evocation Illager: `2` | 
-| summon_choices | *not set* | Array of [Summon Choices](#summon-choices) items | List of spells for the mob to use to summon entities. | Evocation Illager: `[{"min_activation_range":0,"max_activation_range":3,"cooldown_time":5,"weight":3,"cast_duration":2,"particle_color":"#FF664D59","start_sound_event":"cast.spell","sequence":[{"shape":"circle","target":"self","base_delay":1,"delay_per_summon":0,"num_entities_spawned":5,"entity_type":"minecraft:evocation_fang","size":1.5,"entity_lifespan":1.1,"sound_event":"prepare.attack"},{"shape":"circle","target":"self","base_delay":0.15,"delay_per_summon":0,"num_entities_spawned":8,"entity_type":"minecraft:evocation_fang","size":2.5,"entity_lifespan":1.1}]},{"min_activation_range":3,"weight":3,"cooldown_time":5,"cast_duration":2,"particle_color":"#FF664D59","start_sound_event":"cast.spell","sequence":[{"shape":"line","target":"self","base_delay":1,"delay_per_summon":0.05,"num_entities_spawned":16,"entity_type":"minecraft:evocation_fang","size":20,"entity_lifespan":1.1}]},{"weight":1,"cooldown_time":17,"cast_duration":5,"particle_color":"#FFB3B3CC","sequence":[{"shape":"circle","target":"self","base_delay":5,"num_entities_spawned":3,"entity_type":"minecraft:vex","summon_cap":8,"summon_cap_radius":16,"size":1,"sound_event":"prepare.summon","summon_event":"minecraft:add_damage_timer"}]}]` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
+| summon_choices | *not set* | Array of [Summon Choices](#summon-choices) items | List of spells for the mob to use to summon entities. |  | 
 
 ## Summon Choices
 
@@ -59,86 +59,3 @@ Allows the mob to attack the player by summoning other entities.
 | target | self | String | Target for the summon: 'self' or 'other'. |  | 
 
 ## Samples
-
-#### [Evocation Illager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/evocation_illager.json)
-
-
-```json
-"minecraft:behavior.summon_entity": {
-  "priority": 2,
-  "summon_choices": [
-    {
-      "min_activation_range": 0,
-      "max_activation_range": 3,
-      "cooldown_time": 5,
-      "weight": 3,
-      "cast_duration": 2,
-      "particle_color": "#FF664D59",
-      "start_sound_event": "cast.spell",
-      "sequence": [
-        {
-          "shape": "circle",
-          "target": "self",
-          "base_delay": 1,
-          "delay_per_summon": 0,
-          "num_entities_spawned": 5,
-          "entity_type": "minecraft:evocation_fang",
-          "size": 1.5,
-          "entity_lifespan": 1.1,
-          "sound_event": "prepare.attack"
-        },
-        {
-          "shape": "circle",
-          "target": "self",
-          "base_delay": 0.15,
-          "delay_per_summon": 0,
-          "num_entities_spawned": 8,
-          "entity_type": "minecraft:evocation_fang",
-          "size": 2.5,
-          "entity_lifespan": 1.1
-        }
-      ]
-    },
-    {
-      "min_activation_range": 3,
-      "weight": 3,
-      "cooldown_time": 5,
-      "cast_duration": 2,
-      "particle_color": "#FF664D59",
-      "start_sound_event": "cast.spell",
-      "sequence": [
-        {
-          "shape": "line",
-          "target": "self",
-          "base_delay": 1,
-          "delay_per_summon": 0.05,
-          "num_entities_spawned": 16,
-          "entity_type": "minecraft:evocation_fang",
-          "size": 20,
-          "entity_lifespan": 1.1
-        }
-      ]
-    },
-    {
-      "weight": 1,
-      "cooldown_time": 17,
-      "cast_duration": 5,
-      "particle_color": "#FFB3B3CC",
-      "sequence": [
-        {
-          "shape": "circle",
-          "target": "self",
-          "base_delay": 5,
-          "num_entities_spawned": 3,
-          "entity_type": "minecraft:vex",
-          "summon_cap": 8,
-          "summon_cap_radius": 16,
-          "size": 1,
-          "sound_event": "prepare.summon",
-          "summon_event": "minecraft:add_damage_timer"
-        }
-      ]
-    }
-  ]
-}
-```

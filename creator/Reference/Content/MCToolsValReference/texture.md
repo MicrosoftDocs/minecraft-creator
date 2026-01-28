@@ -1,40 +1,42 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "MCTools Validation Rules Documentation - minecraft:texture"
-description: "Describes the minecraft:texture mctools validation rules"
+title: "Validation Rules - Texture Validation"
+description: "Documentation for Texture Validation validation rules in Minecraft Creator Tools"
 ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
-
-# MCTools Validation Rules Documentation - minecraft:texture
-
+# Texture Validation Validation Rules
 Validates texture references across entities, blocks, items, particles, and UI elements. Tracks texture handle usage to prevent exceeding platform limits.
+## Rules Summary
+| Rule ID | Rule | Severity | Auto-Fix |
+|:--------|:-----|:---------|:---------|
+| [TEXTURE100](#texture100) | Handle Limit Exceeded | 🔴 Error |  |
+| [TEXTURE101](#texture101) | Textures | ℹ️ Info |  |
 
+---
+## Rule Details
 
-## Texture Validation Validation Rules
+### TEXTURE100
+**🔴 Handle Limit Exceeded**  
+**Severity**: Error
 
+#### What This Checks
+Error when the total number of unique texture handles exceeds platform limits. Mobile devices have lower limits than PC. Consider consolidating textures or using texture atlases.
 
-### TEXTURE100: Handle Limit Exceeded
+#### How to Fix
+Reduce the number of unique textures by combining small textures into texture atlases. Consider using flipbook animations instead of separate texture files. Remove unused textures from your pack.
 
-**Rule ID:** `TEXTURE100`
+#### Technical Details
+Data contains the count of texture handles exceeding the limit.
 
-**Severity:** Info
+### TEXTURE101
+**ℹ️ Textures**  
+**Severity**: Info
 
-**What it checks:** Error when the total number of unique texture handles exceeds platform limits. Mobile devices have lower limits than PC. Consider consolidating textures or using texture atlases.
+#### What This Checks
+Count of unique texture paths referenced in the project from entities, blocks, items, particles, terrain_texture.json, and UI definitions.
 
-**How to fix:** Reduce the number of unique textures by combining small textures into texture atlases. Consider using flipbook animations instead of separate texture files. Remove unused textures from your pack.
-
-**Technical details:** Data contains the count of texture handles exceeding the limit.
-
-
-### TEXTURE101: Textures
-
-**Rule ID:** `TEXTURE101`
-
-**Severity:** Info
-
-**What it checks:** Count of unique texture paths referenced in the project from entities, blocks, items, particles, terrain_texture.json, and UI definitions.
-
-**Technical details:** Data contains the count of unique texture references.
+#### Technical Details
+Data contains the count of unique texture references.

@@ -39,15 +39,15 @@
         "defaultValue": 1,
         "dataType": 0,
         "samples": {
-          "/vanilla/behavior_pack/entities/axolotl.json": [
-            {
-              "path": "/minecraft:entity/component_groups/axolotl_dried/minecraft:damage_over_time/",
-              "content": 1
-            }
-          ],
           "/vanilla/behavior_pack/entities/dolphin.json": [
             {
               "path": "/minecraft:entity/component_groups/dolphin_dried/minecraft:damage_over_time/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/vex.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:periodic_damage/minecraft:damage_over_time/",
               "content": 1
             }
           ]
@@ -70,15 +70,6 @@
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/axolotl.json": [
-        {
-          "path": "/minecraft:entity/component_groups/axolotl_dried/minecraft:damage_over_time/",
-          "content": {
-            "damage_per_hurt": 1,
-            "time_between_hurt": 0
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/dolphin.json": [
         {
           "path": "/minecraft:entity/component_groups/dolphin_dried/minecraft:damage_over_time/",

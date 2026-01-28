@@ -17,7 +17,7 @@ Determines the jump height for a horse or similar entity, like a donkey.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| value | *not set* | [Value](#value) item | Value of jump strength the entity has when spawned. | Donkey: `0.5`, Horse: `{"range_min":0.4,"range_max":1}`, Zombie Horse: `{"range_min":0.5,"range_max":0.7}` | 
+| value | *not set* | [Value](#value) item | Value of jump strength the entity has when spawned. | Skeleton Horse: `{"range_min":0.4,"range_max":1}` | 
 | value (Alternate 1) | *not set* | Decimal number |  |  | 
 
 ## Value
@@ -33,16 +33,7 @@ Describes the range of jump strength.
 
 ## Samples
 
-#### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
-
-
-```json
-"minecraft:horse.jump_strength": {
-  "value": 0.5
-}
-```
-
-#### [Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/horse.json)
+#### [Skeleton Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton_horse.json)
 
 
 ```json
@@ -50,18 +41,6 @@ Describes the range of jump strength.
   "value": {
     "range_min": 0.4,
     "range_max": 1
-  }
-}
-```
-
-#### [Zombie Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_horse.json)
-
-
-```json
-"minecraft:horse.jump_strength": {
-  "value": {
-    "range_min": 0.5,
-    "range_max": 0.7
   }
 }
 ```

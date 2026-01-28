@@ -19,10 +19,3 @@ Manages the entity's ability to trade.
 > 
 
 ## Samples
-
-#### [Wandering Trader](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wandering_trader.json)
-
-
-```json
-"minecraft:managed_wandering_trader": {}
-```

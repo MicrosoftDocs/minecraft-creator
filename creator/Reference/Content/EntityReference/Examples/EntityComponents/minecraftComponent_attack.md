@@ -17,7 +17,7 @@ Defines an entity's melee attack damage and any additional status effects applie
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| damage | *not set* | Decimal number | Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it. Can be a number, an array [min, max], or an object with range_min and range_max properties. | Biceson: `6`, Sheepomelon: `3`, Axe Turret: `400` | 
+| damage | *not set* | Decimal number | Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it. Can be a number, an array [min, max], or an object with range_min and range_max properties. |  | 
 | damage (Alternate 1) | *not set* | Array of [Damage](#damage) items |  |  | 
 | damage (Alternate 2) | *not set* | [Damage](#damage) item |  |  | 
 | effect_duration | 0 | Decimal number | Duration in seconds of the status ailment applied to the damaged entity. |  | 
@@ -33,30 +33,3 @@ Defines an entity's melee attack damage and any additional status effects applie
 | 1 | *not set* | Decimal number |  |  | 
 
 ## Samples
-
-#### [Biceson](https://github.com/microsoft/minecraft-samples/tree/main/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json)
-
-
-```json
-"minecraft:attack": {
-  "damage": 6
-}
-```
-
-#### [Sheepomelon](https://github.com/microsoft/minecraft-samples/tree/main/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json)
-
-
-```json
-"minecraft:attack": {
-  "damage": 3
-}
-```
-
-#### [Axe Turret](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json)
-
-
-```json
-"minecraft:attack": {
-  "damage": 400
-}
-```

@@ -8,10 +8,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 # MCTools Validation Rules Reference
-
 This reference documents all validation rules used by Minecraft Creator Tools to check your add-on content.
 Each rule helps identify potential issues in your Minecraft content before deployment.
-
 ## Validation Categories
 | Category | Description | Rules |
 |:---------|:------------|:------|
@@ -22,9 +20,10 @@ Each rule helps identify potential issues in your Minecraft content before deplo
 | [Beta Features](cbfg.md) | Validates that add-on content does not use beta features flags. The... | 3 |
 | [Deprecated Features](checkfeaturedeprecation.md) | Checks for deprecated features, blocks, and textures that may be removed in... | 4 |
 | [Manifest Validation](chkmanif.md) | Comprehensive validation of pack manifest.json files. Validates format version,... | 35 |
+| [Community JSON Schema Validation](comjson.md) | Validates JSON files against their corresponding schemas based on item type.... | 1 |
 | [Pack Icon](cpackicon.md) | Validates behavior and resource pack icons (pack_icon.png) for correct format,... | 4 |
 | [Particle Identifiers](cparti.md) | Validates particle effect identifiers for proper namespace formatting. Particle... | 3 |
-| [Skin Pack](cspj.md) | Validates skin pack content including skins.json structure, skin textures,... | 20 |
+| [Skin Pack](cspj.md) | Validates skin pack content including skins.json structure, skin textures,... | 18 |
 | [World Icon](cwi.md) | Validates world template icons (world_icon.jpeg) for correct format, size, and... | 4 |
 | [Entity Type](entitytype.md) | Validates entity type definitions in behavior packs. Checks format_version... | 12 |
 | [Experimental Flags](expflag.md) | Validates experimental flags in world templates. Experiments that were enabled... | 3 |
@@ -34,7 +33,7 @@ Each rule helps identify potential issues in your Minecraft content before deplo
 | [Model Geometry](geometry.md) | Validates and analyzes model geometry files (.geo.json) for blocks, entities,... | 4 |
 | [Content Counts](items.md) | Provides counts of various content types found in the project including packs,... | 2 |
 | [Item Types](itemtype.md) | Validates behavior pack item type definitions including format versions,... | 12 |
-| [JSON Schema Validation](json.md) | Validates JSON files against their corresponding schemas based on item type.... | 1 |
+| [JSON Schema Validation](json.md) | Validates JSON files against official JSON schemas located at public/schemas.... | 1 |
 | [JSON Form Structure Validation](jsonf.md) | Validates JSON files against Minecraft documentation-derived form schemas.... | 17 |
 | [Content Tags](jsontags.md) | Tracks content types and component usage across JSON files in the project. Used... | 8 |
 | [Language Files](langfiles.md) | Validates that localization files (.lang) and the languages.json catalog are... | 5 |
@@ -43,6 +42,7 @@ Each rule helps identify potential issues in your Minecraft content before deplo
 | [Min Engine Version](minenginever.md) | Validates and updates the min_engine_version field in pack manifests. This... | 18 |
 | [BOM Validation](nobom.md) | Validates that JSON files do not contain byte order marks (BOM). BOMs can cause... | 1 |
 | [Pack Manifest Info](pack.md) | Extracts and validates information from behavior pack and resource pack... | 18 |
+| [Pack Metadata Info](packmetadata.md) | Extracts and validates a project summary. | 23 |
 | [Pack Size](packsize.md) | Analyzes pack file sizes and counts to ensure content fits within platform... | 9 |
 | [Path Length](pathlength.md) | Validates file paths for length and format compatibility across platforms. Long... | 3 |
 | [Project Integrity](prjint.md) | Validates the structural integrity of the project, checking for orphaned files... | 2 |
@@ -67,3 +67,10 @@ Each rule helps identify potential issues in your Minecraft content before deplo
 | [World Validation](world.md) | Validates world-level settings including experiments, version requirements, and... | 6 |
 | [World Data](worlddata.md) | Analyzes world data including LevelDB chunks, command blocks, level.dat... | 18 |
 | [World Pack Refs](wpackrefs.md) | Validates pack references in world templates. Ensures that behavior_packs.json... | 7 |
+
+## Understanding Severity Levels
+Validation rules have different severity levels:
+- 🔴 **Error**: Must be fixed. These issues will cause problems in Minecraft.
+- 🟡 **Warning**: Should be reviewed. These may cause issues or indicate problems.
+- 🔵 **Recommendation**: Consider addressing. These are best practices.
+- ℹ️ **Info**: Informational. Aggregated data or neutral status.

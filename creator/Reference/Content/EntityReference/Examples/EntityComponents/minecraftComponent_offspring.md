@@ -21,9 +21,9 @@ Defines the way an entity can create a born offspring.
 | deny_parents_variant | *not set* | Array of [Deny Parents Variant](#deny-parents-variant) items | Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead. |  | 
 | inherit_tamed | true | Boolean true/false | If true, the babies will be automatically tamed if its parents are |  | 
 | mutation_factor | *not set* | Array of [Mutation Factor](#mutation-factor) items | Determines how likely the babies are to NOT inherit one of their parent's variances. Values are between 0.0 and 1.0, with a higher number meaning more likely to mutate. |  | 
-| offspring_pairs | *not set* | Array of strings | The map of entity to offspring definitions that this entity can make offspring with. |  | 
+| offspring_pairs | *not set* | Array of strings | The map of entity to offspring definitions that this entity can make offspring with. | Cow: `{"minecraft:cow":"minecraft:cow"}`, Dolphin: `{"minecraft:dolphin":"minecraft:dolphin"}`, Drowned: `{"minecraft:drowned":"minecraft:drowned"}` | 
 | parent_centric_attribute_blending | *not set* | Array of strings | List of attributes that should benefit from parent centric attribute blending. For example, horses blend their health, movement, and jump_strength in their offspring. |  | 
-| property_inheritance | *not set* | Array of strings | List of Entity Properties that should be inherited from the parent entities and potentially mutated. |  | 
+| property_inheritance | *not set* | Array of strings | List of Entity Properties that should be inherited from the parent entities and potentially mutated. | Cow: `{"minecraft:climate_variant":{}}` | 
 | random_extra_variant_mutation_interval | 0 | Range of integers | Range used to determine random extra variant. |  | 
 | random_variant_mutation_interval | 0 | Range of integers | Range used to determine random variant. |  | 
 
@@ -52,3 +52,61 @@ Determines how likely the babies are to NOT inherit one of their parent's varian
 | variant | 0 | Decimal number | The percentage chance of a mutation on the entity's variant type. |  | 
 
 ## Samples
+
+#### [Cow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cow.json)
+
+
+```json
+"minecraft:offspring": {
+  "offspring_pairs": {
+    "minecraft:cow": "minecraft:cow"
+  },
+  "property_inheritance": {
+    "minecraft:climate_variant": {}
+  }
+}
+```
+
+#### [Dolphin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/dolphin.json)
+
+
+```json
+"minecraft:offspring": {
+  "offspring_pairs": {
+    "minecraft:dolphin": "minecraft:dolphin"
+  }
+}
+```
+
+#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
+
+
+```json
+"minecraft:offspring": {
+  "offspring_pairs": {
+    "minecraft:drowned": "minecraft:drowned"
+  }
+}
+```
+
+#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
+
+
+```json
+"minecraft:offspring": {
+  "offspring_pairs": {
+    "minecraft:fox": "minecraft:fox"
+  }
+}
+```
+
+#### [Frog](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/frog.json)
+
+
+```json
+"minecraft:offspring": {
+  "offspring_pairs": {
+    "minecraft:frog": "minecraft:tadpole"
+  }
+}
+```

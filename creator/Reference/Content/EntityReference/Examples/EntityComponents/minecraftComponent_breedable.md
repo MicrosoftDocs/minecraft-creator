@@ -20,27 +20,21 @@ Allows an entity to establish a way to get into the love state used for breeding
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| allow_sitting | false | Boolean true/false | If true, entities can breed while sitting | Cat: `true` | 
+| allow_sitting | false | Boolean true/false | If true, entities can breed while sitting |  | 
 | blend_attributes | true | Boolean true/false | If true, the entities will blend their attributes in the offspring after they breed. For example, horses blend their health, movement, and jump_strength in their offspring. |  | 
 | breed_cooldown | 60 | Decimal number | Time in seconds before the Entity can breed again. |  | 
-| breed_items | *not set* | Array of strings | The list of items that can be used to get the entity into the 'love' state. | Armadillo: `["spider_eye"]`, Axolotl: `[{"item":"tropical_fish_bucket","result_item":"water_bucket:0"}]`, Bee: `["minecraft:poppy","minecraft:blue_orchid","minecraft:allium","minecraft:azure_bluet","minecraft:red_tulip","minecraft:orange_tulip","minecraft:white_tulip","minecraft:pink_tulip","minecraft:oxeye_daisy","minecraft:cornflower","minecraft:lily_of_the_valley","minecraft:dandelion","minecraft:wither_rose","minecraft:sunflower","minecraft:lilac","minecraft:rose_bush","minecraft:peony","minecraft:flowering_azalea","minecraft:azalea_leaves_flowered","minecraft:mangrove_propagule","minecraft:pitcher_plant","minecraft:torchflower","minecraft:cherry_leaves","minecraft:pink_petals","minecraft:wildflowers","minecraft:cactus_flower"]` | 
-| breeds_with | *not set* | Array of [Breeds With](#breeds-with) items | The entity definitions that this entity can breed with. Can be a single object or an array. | Armadillo: `[{"mate_type":"minecraft:armadillo","baby_type":"minecraft:armadillo","breed_event":{"event":"minecraft:entity_born","target":"baby"}}]`, Axolotl: `{"mate_type":"minecraft:axolotl","baby_type":"minecraft:axolotl","breed_event":{"event":"minecraft:entity_born","target":"baby"}}`, Bee: `{"mate_type":"minecraft:bee","baby_type":"minecraft:bee","breed_event":{"event":"minecraft:entity_born","target":"baby"}}` | 
+| breed_items | *not set* | Array of strings | The list of items that can be used to get the entity into the 'love' state. | Chicken: `["wheat_seeds","beetroot_seeds","melon_seeds","pumpkin_seeds","pitcher_pod","torchflower_seeds"]`, Cow: `["wheat"]`, Fox: `["sweet_berries","glow_berries"]` | 
+| breeds_with | *not set* | Array of [Breeds With](#breeds-with) items | The entity definitions that this entity can breed with. Can be a single object or an array. | Chicken: `{"minecraft:chicken":{}}`, Cow: `{"minecraft:cow":{}}`, Fox: `{"minecraft:fox":{}}` | 
 | breeds_with (Alternate 1) | *not set* | [Breeds With](#breeds-with) item |  |  | 
 | causes_pregnancy | false | Boolean true/false | If true, the entity will become pregnant instead of spawning a baby. | Frog: `true` | 
-| combine_parent_colors | *not set* | String |  | Cat: `true` | 
-| deny_parents_variant | *not set* | [Deny Parents Variant](#deny-parents-variant) item | Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead. | Mooshroom: `{"chance":0.00098,"min_variant":0,"max_variant":1}` | 
-| environment_requirements | *not set* | Array of [Environment Requirements](#environment-requirements) items | The list of nearby block requirements to get the entity into the 'love' state. | Panda: `{"blocks":"bamboo","count":8,"radius":5}` | 
+| deny_parents_variant | *not set* | [Deny Parents Variant](#deny-parents-variant) item | Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead. |  | 
+| environment_requirements | *not set* | Array of [Environment Requirements](#environment-requirements) items | The list of nearby block requirements to get the entity into the 'love' state. |  | 
 | extra_baby_chance | 0 | Percent Range | Chance that up to 16 babies will spawn. |  | 
 | inherit_tamed | *not set* | Boolean true/false | If true, the babies will be automatically tamed if its parents are. |  | 
-| love_filters | *not set* | Minecraft filter | The filters to run when attempting to fall in love. | Armadillo: `{"test":"enum_property","domain":"minecraft:armadillo_state","value":"unrolled"}`, Hoglin: `{"test":"has_component","subject":"self","operator":"not","value":"minecraft:attack_cooldown"}`, Frost Moose: `{"test":"is_mark_variant","subject":"self","operator":"!=","value":1}` | 
-| mutation_factor | *not set* | [Mutation Factor](#mutation-factor) item | Determines how likely the babies are to NOT inherit one of their parent's variances. | Axolotl: `{"variant":0.00083}`, Goat: `{"variant":0}`, Horse: `{"extra_variant":0.2,"variant":0.111}` | 
-| mutation_strategy | *not set* | String |  | Horse: `"random"` | 
-| parent_centric_attribute_blending | *not set* | Array of strings |  | Donkey: `["minecraft:health"]`, Horse: `["minecraft:health","minecraft:movement","minecraft:horse.jump_strength"]` | 
-| property_inheritance | *not set* | [Property Inheritance](#property-inheritance) item |  | Chicken: `{"minecraft:climate_variant":{}}` | 
-| random_extra_variant_mutation_interval | *not set* | String |  | Horse: `[0,5]` | 
-| random_variant_mutation_interval | *not set* | String |  | Horse: `[0,7]` | 
-| require_full_health | false | Boolean true/false | If true, the entity needs to be at full health before it can breed. | Cat: `true` | 
-| require_tame | true | Boolean true/false | If true, the entities need to be tamed first before they can breed. | Cat: `true` | 
+| love_filters | *not set* | Minecraft filter | The filters to run when attempting to fall in love. |  | 
+| mutation_factor | *not set* | [Mutation Factor](#mutation-factor) item | Determines how likely the babies are to NOT inherit one of their parent's variances. |  | 
+| require_full_health | false | Boolean true/false | If true, the entity needs to be at full health before it can breed. |  | 
+| require_tame | true | Boolean true/false | If true, the entities need to be tamed first before they can breed. |  | 
 
 ## Breeds With
 
@@ -83,159 +77,7 @@ Allows an entity to establish a way to get into the love state used for breeding
 | extra_variant | *not set* | Percent Range | The percentage chance of a mutation on the entity's extra variant type. |  | 
 | variant | *not set* | Percent Range | The percentage chance of a mutation on the entity's variant type. |  | 
 
-## Property Inheritance
-
-#### Property inheritance Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| minecraft:climate_variant | *not set* | String |  | Chicken: `{}` | 
-
 ## Samples
-
-#### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
-
-
-```json
-"minecraft:breedable": {
-  "love_filters": {
-    "test": "enum_property",
-    "domain": "minecraft:armadillo_state",
-    "value": "unrolled"
-  },
-  "require_tame": false,
-  "breeds_with": [
-    {
-      "mate_type": "minecraft:armadillo",
-      "baby_type": "minecraft:armadillo",
-      "breed_event": {
-        "event": "minecraft:entity_born",
-        "target": "baby"
-      }
-    }
-  ],
-  "breed_items": [
-    "spider_eye"
-  ]
-}
-```
-
-#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
-
-
-```json
-"minecraft:breedable": {
-  "require_tame": false,
-  "breed_items": [
-    {
-      "item": "tropical_fish_bucket",
-      "result_item": "water_bucket:0"
-    }
-  ],
-  "breeds_with": {
-    "mate_type": "minecraft:axolotl",
-    "baby_type": "minecraft:axolotl",
-    "breed_event": {
-      "event": "minecraft:entity_born",
-      "target": "baby"
-    }
-  },
-  "mutation_factor": {
-    "variant": 0.00083
-  }
-}
-```
-
-#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
-
-
-```json
-"minecraft:breedable": {
-  "require_tame": false,
-  "breeds_with": {
-    "mate_type": "minecraft:bee",
-    "baby_type": "minecraft:bee",
-    "breed_event": {
-      "event": "minecraft:entity_born",
-      "target": "baby"
-    }
-  },
-  "breed_items": [
-    "minecraft:poppy",
-    "minecraft:blue_orchid",
-    "minecraft:allium",
-    "minecraft:azure_bluet",
-    "minecraft:red_tulip",
-    "minecraft:orange_tulip",
-    "minecraft:white_tulip",
-    "minecraft:pink_tulip",
-    "minecraft:oxeye_daisy",
-    "minecraft:cornflower",
-    "minecraft:lily_of_the_valley",
-    "minecraft:dandelion",
-    "minecraft:wither_rose",
-    "minecraft:sunflower",
-    "minecraft:lilac",
-    "minecraft:rose_bush",
-    "minecraft:peony",
-    "minecraft:flowering_azalea",
-    "minecraft:azalea_leaves_flowered",
-    "minecraft:mangrove_propagule",
-    "minecraft:pitcher_plant",
-    "minecraft:torchflower",
-    "minecraft:cherry_leaves",
-    "minecraft:pink_petals",
-    "minecraft:wildflowers",
-    "minecraft:cactus_flower"
-  ]
-}
-```
-
-#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
-
-
-```json
-"minecraft:breedable": {
-  "require_tame": false,
-  "breeds_with": [
-    {
-      "mate_type": "minecraft:camel",
-      "baby_type": "minecraft:camel",
-      "breed_event": {
-        "event": "minecraft:entity_born",
-        "target": "baby"
-      }
-    }
-  ],
-  "breed_items": [
-    "cactus"
-  ]
-}
-```
-
-#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
-
-
-```json
-"minecraft:breedable": {
-  "require_tame": true,
-  "require_full_health": true,
-  "allow_sitting": true,
-  "combine_parent_colors": true,
-  "breeds_with": {
-    "mate_type": "minecraft:cat",
-    "baby_type": "minecraft:cat",
-    "breed_event": {
-      "event": "minecraft:entity_born",
-      "target": "baby"
-    }
-  },
-  "breed_items": [
-    "fish",
-    "salmon"
-  ]
-}
-```
 
 #### [Chicken](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chicken.json)
 
@@ -244,12 +86,7 @@ Allows an entity to establish a way to get into the love state used for breeding
 "minecraft:breedable": {
   "require_tame": false,
   "breeds_with": {
-    "mate_type": "minecraft:chicken",
-    "baby_type": "minecraft:chicken",
-    "breed_event": {
-      "event": "minecraft:entity_born",
-      "target": "baby"
-    }
+    "minecraft:chicken": {}
   },
   "breed_items": [
     "wheat_seeds",
@@ -258,10 +95,7 @@ Allows an entity to establish a way to get into the love state used for breeding
     "pumpkin_seeds",
     "pitcher_pod",
     "torchflower_seeds"
-  ],
-  "property_inheritance": {
-    "minecraft:climate_variant": {}
-  }
+  ]
 }
 ```
 
@@ -271,53 +105,11 @@ Allows an entity to establish a way to get into the love state used for breeding
 ```json
 "minecraft:breedable": {
   "require_tame": false,
-  "breed_items": "wheat",
   "breeds_with": {
-    "mate_type": "minecraft:cow",
-    "baby_type": "minecraft:cow",
-    "breed_event": {
-      "event": "minecraft:entity_born",
-      "target": "baby"
-    }
+    "minecraft:cow": {}
   },
-  "property_inheritance": {
-    "minecraft:climate_variant": {}
-  }
-}
-```
-
-#### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
-
-
-```json
-"minecraft:breedable": {
-  "parent_centric_attribute_blending": [
-    "minecraft:health"
-  ],
-  "require_tame": true,
-  "inherit_tamed": false,
-  "breeds_with": [
-    {
-      "mate_type": "minecraft:donkey",
-      "baby_type": "minecraft:donkey",
-      "breed_event": {
-        "event": "minecraft:entity_born",
-        "target": "baby"
-      }
-    },
-    {
-      "mate_type": "minecraft:horse",
-      "baby_type": "minecraft:mule",
-      "breed_event": {
-        "event": "minecraft:entity_born",
-        "target": "baby"
-      }
-    }
-  ],
   "breed_items": [
-    "golden_carrot",
-    "golden_apple",
-    "appleEnchanted"
+    "wheat"
   ]
 }
 ```
@@ -333,12 +125,7 @@ Allows an entity to establish a way to get into the love state used for breeding
     "glow_berries"
   ],
   "breeds_with": {
-    "mate_type": "minecraft:fox",
-    "baby_type": "minecraft:fox",
-    "breed_event": {
-      "event": "minecraft:entity_born",
-      "target": "baby"
-    }
+    "minecraft:fox": {}
   }
 }
 ```
@@ -351,10 +138,9 @@ Allows an entity to establish a way to get into the love state used for breeding
   "require_tame": false,
   "causes_pregnancy": true,
   "breeds_with": {
-    "mate_type": "minecraft:frog",
-    "baby_type": "minecraft:tadpole",
-    "breed_event": {
-      "event": "become_pregnant"
+    "minecraft:frog": {
+      "event": "become_pregnant",
+      "target": "self"
     }
   },
   "breed_items": [
@@ -369,43 +155,11 @@ Allows an entity to establish a way to get into the love state used for breeding
 ```json
 "minecraft:breedable": {
   "require_tame": false,
-  "breed_items": "wheat",
-  "breeds_with": {
-    "mate_type": "minecraft:goat",
-    "baby_type": "minecraft:goat",
-    "breed_event": {
-      "event": "minecraft:entity_born",
-      "target": "baby"
-    }
-  },
-  "mutation_factor": {
-    "variant": 0
-  }
-}
-```
-
-#### [Hoglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/hoglin.json)
-
-
-```json
-"minecraft:breedable": {
-  "require_tame": false,
-  "love_filters": {
-    "test": "has_component",
-    "subject": "self",
-    "operator": "not",
-    "value": "minecraft:attack_cooldown"
-  },
-  "breeds_with": {
-    "mate_type": "minecraft:hoglin",
-    "baby_type": "minecraft:hoglin",
-    "breed_event": {
-      "event": "minecraft:entity_born",
-      "target": "baby"
-    }
-  },
   "breed_items": [
-    "crimson_fungus"
-  ]
+    "wheat"
+  ],
+  "breeds_with": {
+    "minecraft:goat": {}
+  }
 }
 ```

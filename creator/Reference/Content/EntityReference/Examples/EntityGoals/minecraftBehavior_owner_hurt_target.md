@@ -20,7 +20,7 @@ Allows the mob to target a mob that is hurt by their owner.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entity types that this entity can target if the potential target is hurt by this mob's owner |  | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Wolf: `2` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
 
 ## Entity Types
 List of entity types that this entity can target if the potential target is hurt by this mob's owner.
@@ -40,12 +40,3 @@ List of entity types that this entity can target if the potential target is hurt
 | walk_speed_multiplier | 1 | Decimal number | Multiplier for the walking speed. A value of 1.0 means the speed is unchanged |  | 
 
 ## Samples
-
-#### [Wolf](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wolf.json)
-
-
-```json
-"minecraft:behavior.owner_hurt_target": {
-  "priority": 2
-}
-```

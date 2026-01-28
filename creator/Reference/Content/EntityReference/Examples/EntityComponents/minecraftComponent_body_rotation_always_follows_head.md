@@ -15,10 +15,3 @@ Does not override the "minecraft:body_rotation_blocked" component.
 
 
 ## Samples
-
-#### [Happy Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/happy_ghast.json)
-
-
-```json
-"minecraft:body_rotation_always_follows_head": {}
-```

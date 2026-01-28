@@ -17,17 +17,7 @@ Allows an entity to ignore attackable targets for a given duration.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| cooldown_after_being_attacked | 0 | Integer number | Duration, in seconds, for which mob won't admire items if it was hurt | Piglin: `20` | 
-| duration | 10 | Integer number | Duration, in seconds, that the mob is pacified. | Piglin: `8` | 
+| cooldown_after_being_attacked | 0 | Integer number | Duration, in seconds, for which mob won't admire items if it was hurt |  | 
+| duration | 10 | Integer number | Duration, in seconds, that the mob is pacified. |  | 
 
 ## Samples
-
-#### [Piglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin.json)
-
-
-```json
-"minecraft:admire_item": {
-  "duration": 8,
-  "cooldown_after_being_attacked": 20
-}
-```

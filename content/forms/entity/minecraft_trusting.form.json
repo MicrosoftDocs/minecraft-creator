@@ -23,68 +23,21 @@
         "title": "Probability",
         "description": "The chance of the entity trusting with each item use between 0.0 and 1.0, where 1.0 is 100%.",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ocelot.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:ocelot_wild/minecraft:trusting/",
-              "content": 0.33
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "trust_event",
         "title": "Trust Event",
         "description": "Event to run when this entity becomes trusting.",
-        "dataType": 22,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ocelot.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:ocelot_wild/minecraft:trusting/",
-              "content": {
-                "event": "minecraft:on_trust",
-                "target": "self"
-              }
-            }
-          ]
-        }
+        "dataType": 22
       },
       {
         "id": "trust_items",
         "title": "Trust Items",
         "description": "The list of items that can be used to get the entity to trust players.",
-        "dataType": 17,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ocelot.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:ocelot_wild/minecraft:trusting/",
-              "content": [
-                "fish",
-                "salmon"
-              ]
-            }
-          ]
-        }
+        "dataType": 17
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/ocelot.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:ocelot_wild/minecraft:trusting/",
-          "content": {
-            "probability": 0.33,
-            "trust_items": [
-              "fish",
-              "salmon"
-            ],
-            "trust_event": {
-              "event": "minecraft:on_trust",
-              "target": "self"
-            }
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

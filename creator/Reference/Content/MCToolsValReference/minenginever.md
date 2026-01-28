@@ -1,238 +1,263 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "MCTools Validation Rules Documentation - minecraft:minenginever"
-description: "Describes the minecraft:minenginever mctools validation rules"
+title: "Validation Rules - Min Engine Version"
+description: "Documentation for Min Engine Version validation rules in Minecraft Creator Tools"
 ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
-
-# MCTools Validation Rules Documentation - minecraft:minenginever
-
+# Min Engine Version Validation Rules
 Validates and updates the min_engine_version field in pack manifests. This version specifies the minimum Minecraft version required to use the pack.
+## Rules Summary
+| Rule ID | Rule | Severity | Auto-Fix |
+|:--------|:-----|:---------|:---------|
+| [MINENGINEVER100](#minenginever100) | BP Version Defined | ℹ️ Info |  |
+| [MINENGINEVER110](#minenginever110) | BP Major Low | 🟡 Warning | ✅ |
+| [MINENGINEVER111](#minenginever111) | BP Major High | 🔴 Error | ✅ |
+| [MINENGINEVER120](#minenginever120) | BP Minor Low | 🟡 Warning | ✅ |
+| [MINENGINEVER121](#minenginever121) | BP Minor High | 🔴 Error | ✅ |
+| [MINENGINEVER130](#minenginever130) | BP Patch Low | ℹ️ Info | ✅ |
+| [MINENGINEVER131](#minenginever131) | BP Patch High | 🟡 Warning | ✅ |
+| [MINENGINEVER180](#minenginever180) | No Manifest | 🔴 Error |  |
+| [MINENGINEVER181](#minenginever181) | Version Errors | 🔴 Error |  |
+| [MINENGINEVER200](#minenginever200) | RP Version Defined | ℹ️ Info |  |
+| [MINENGINEVER210](#minenginever210) | RP Major Low | 🟡 Warning | ✅ |
+| [MINENGINEVER211](#minenginever211) | RP Major High | 🔴 Error | ✅ |
+| [MINENGINEVER220](#minenginever220) | RP Minor Low | 🟡 Warning | ✅ |
+| [MINENGINEVER221](#minenginever221) | RP Minor High | 🔴 Error | ✅ |
+| [MINENGINEVER230](#minenginever230) | RP Patch Low | ℹ️ Info | ✅ |
+| [MINENGINEVER231](#minenginever231) | RP Patch High | 🟡 Warning | ✅ |
+| [MINENGINEVER500](#minenginever500) | Version Retrieved | ℹ️ Info |  |
+| [MINENGINEVER501](#minenginever501) | Version Parsed | ℹ️ Info |  |
+
+---
+## Rule Details
+
+### MINENGINEVER100
+**ℹ️ BP Version Defined**  
+**Severity**: Info
+
+#### What This Checks
+Confirms that min_engine_version is defined in the behavior pack manifest header.
+
+#### Technical Details
+Data contains the min_engine_version value.
+
+### MINENGINEVER110
+**🟡 BP Major Low**  
+**Severity**: Warning
+
+#### What This Checks
+Warning when the behavior pack's min_engine_version major number is below the current Minecraft version. Update to access newer features.
+
+> [!TIP]
+> **Auto-Fix Available**: This issue can be automatically fixed.
+> - Set min_engine_version to latest version.
+
+#### Technical Details
+Data contains the current min_engine_version.
 
+### MINENGINEVER111
+**🔴 BP Major High**  
+**Severity**: Error
 
-## Min Engine Version Validation Rules
+#### What This Checks
+Error when the behavior pack's min_engine_version major number is above the current Minecraft version. The pack may not load.
 
+> [!TIP]
+> **Auto-Fix Available**: This issue can be automatically fixed.
+> - Set min_engine_version to latest version.
 
-### MINENGINEVER100: BP Version Defined
+#### Technical Details
+Data contains the min_engine_version exceeding current.
 
-**Rule ID:** `MINENGINEVER100`
+### MINENGINEVER120
+**🟡 BP Minor Low**  
+**Severity**: Warning
 
-**Severity:** Info
+#### What This Checks
+Warning when the behavior pack's min_engine_version minor number is below the current Minecraft version.
 
-**What it checks:** Confirms that min_engine_version is defined in the behavior pack manifest header.
+> [!TIP]
+> **Auto-Fix Available**: This issue can be automatically fixed.
+> - Set min_engine_version to latest version.
 
-**Technical details:** Data contains the min_engine_version value.
+#### Technical Details
+Data contains the current min_engine_version.
 
+### MINENGINEVER121
+**🔴 BP Minor High**  
+**Severity**: Error
 
-### MINENGINEVER110: BP Major Low
+#### What This Checks
+Error when the behavior pack's min_engine_version minor number is above the current Minecraft version.
 
-**Rule ID:** `MINENGINEVER110`
+> [!TIP]
+> **Auto-Fix Available**: This issue can be automatically fixed.
+> - Set min_engine_version to latest version.
 
-**Severity:** Info
+#### Technical Details
+Data contains the min_engine_version exceeding current.
 
-**What it checks:** Warning when the behavior pack's min_engine_version major number is below the current Minecraft version. Update to access newer features.
+### MINENGINEVER130
+**ℹ️ BP Patch Low**  
+**Severity**: Info
 
-**Technical details:** Data contains the current min_engine_version.
+#### What This Checks
+Information when the behavior pack's min_engine_version patch number is below the current Minecraft version.
 
-**Auto-fix available:** Yes - This issue can be automatically fixed by MCTools.
+> [!TIP]
+> **Auto-Fix Available**: This issue can be automatically fixed.
+> - Set min_engine_version to latest version.
 
+#### Technical Details
+Data contains the current min_engine_version.
 
-### MINENGINEVER111: BP Major High
+### MINENGINEVER131
+**🟡 BP Patch High**  
+**Severity**: Warning
 
-**Rule ID:** `MINENGINEVER111`
+#### What This Checks
+Warning when the behavior pack's min_engine_version patch number is above the current Minecraft version.
 
-**Severity:** Info
+> [!TIP]
+> **Auto-Fix Available**: This issue can be automatically fixed.
+> - Set min_engine_version to latest version.
 
-**What it checks:** Error when the behavior pack's min_engine_version major number is above the current Minecraft version. The pack may not load.
+#### Technical Details
+Data contains the min_engine_version exceeding current.
 
-**Technical details:** Data contains the min_engine_version exceeding current.
+### MINENGINEVER180
+**🔴 No Manifest**  
+**Severity**: Error
 
-**Auto-fix available:** Yes - This issue can be automatically fixed by MCTools.
+#### What This Checks
+Error when no manifest.json file was found in the pack root.
 
+#### Technical Details
+Data contains the expected manifest path.
 
-### MINENGINEVER120: BP Minor Low
+### MINENGINEVER181
+**🔴 Version Errors**  
+**Severity**: Error
 
-**Rule ID:** `MINENGINEVER120`
+#### What This Checks
+Error when the min_engine_version field could not be parsed or validated.
 
-**Severity:** Info
+#### Technical Details
+Data contains the version processing error.
 
-**What it checks:** Warning when the behavior pack's min_engine_version minor number is below the current Minecraft version.
+### MINENGINEVER200
+**ℹ️ RP Version Defined**  
+**Severity**: Info
 
-**Technical details:** Data contains the current min_engine_version.
+#### What This Checks
+Confirms that min_engine_version is defined in the resource pack manifest header.
 
-**Auto-fix available:** Yes - This issue can be automatically fixed by MCTools.
+#### Technical Details
+Data contains the min_engine_version value.
 
+### MINENGINEVER210
+**🟡 RP Major Low**  
+**Severity**: Warning
 
-### MINENGINEVER121: BP Minor High
+#### What This Checks
+Warning when the resource pack's min_engine_version major number is below the current Minecraft version.
 
-**Rule ID:** `MINENGINEVER121`
+> [!TIP]
+> **Auto-Fix Available**: This issue can be automatically fixed.
+> - Set min_engine_version to latest version.
 
-**Severity:** Info
+#### Technical Details
+Data contains the current min_engine_version.
 
-**What it checks:** Error when the behavior pack's min_engine_version minor number is above the current Minecraft version.
+### MINENGINEVER211
+**🔴 RP Major High**  
+**Severity**: Error
 
-**Technical details:** Data contains the min_engine_version exceeding current.
+#### What This Checks
+Error when the resource pack's min_engine_version major number is above the current Minecraft version.
 
-**Auto-fix available:** Yes - This issue can be automatically fixed by MCTools.
+> [!TIP]
+> **Auto-Fix Available**: This issue can be automatically fixed.
+> - Set min_engine_version to latest version.
 
+#### Technical Details
+Data contains the min_engine_version exceeding current.
 
-### MINENGINEVER130: BP Patch Low
+### MINENGINEVER220
+**🟡 RP Minor Low**  
+**Severity**: Warning
 
-**Rule ID:** `MINENGINEVER130`
+#### What This Checks
+Warning when the resource pack's min_engine_version minor number is below the current Minecraft version.
 
-**Severity:** Info
+> [!TIP]
+> **Auto-Fix Available**: This issue can be automatically fixed.
+> - Set min_engine_version to latest version.
 
-**What it checks:** Information when the behavior pack's min_engine_version patch number is below the current Minecraft version.
+#### Technical Details
+Data contains the current min_engine_version.
 
-**Technical details:** Data contains the current min_engine_version.
+### MINENGINEVER221
+**🔴 RP Minor High**  
+**Severity**: Error
 
-**Auto-fix available:** Yes - This issue can be automatically fixed by MCTools.
+#### What This Checks
+Error when the resource pack's min_engine_version minor number is above the current Minecraft version.
 
+> [!TIP]
+> **Auto-Fix Available**: This issue can be automatically fixed.
+> - Set min_engine_version to latest version.
 
-### MINENGINEVER131: BP Patch High
+#### Technical Details
+Data contains the min_engine_version exceeding current.
 
-**Rule ID:** `MINENGINEVER131`
+### MINENGINEVER230
+**ℹ️ RP Patch Low**  
+**Severity**: Info
 
-**Severity:** Info
+#### What This Checks
+Information when the resource pack's min_engine_version patch number is below the current Minecraft version.
 
-**What it checks:** Warning when the behavior pack's min_engine_version patch number is above the current Minecraft version.
+> [!TIP]
+> **Auto-Fix Available**: This issue can be automatically fixed.
+> - Set min_engine_version to latest version.
 
-**Technical details:** Data contains the min_engine_version exceeding current.
+#### Technical Details
+Data contains the current min_engine_version.
 
-**Auto-fix available:** Yes - This issue can be automatically fixed by MCTools.
+### MINENGINEVER231
+**🟡 RP Patch High**  
+**Severity**: Warning
 
+#### What This Checks
+Warning when the resource pack's min_engine_version patch number is above the current Minecraft version.
 
-### MINENGINEVER180: No Manifest
+> [!TIP]
+> **Auto-Fix Available**: This issue can be automatically fixed.
+> - Set min_engine_version to latest version.
 
-**Rule ID:** `MINENGINEVER180`
+#### Technical Details
+Data contains the min_engine_version exceeding current.
 
-**Severity:** Info
+### MINENGINEVER500
+**ℹ️ Version Retrieved**  
+**Severity**: Info
 
-**What it checks:** Error when no manifest.json file was found in the pack root.
+#### What This Checks
+Status indicating the current Minecraft version was retrieved for comparison.
 
-**Technical details:** Data contains the expected manifest path.
+#### Technical Details
+Data contains the retrieved Minecraft version.
 
+### MINENGINEVER501
+**ℹ️ Version Parsed**  
+**Severity**: Info
 
-### MINENGINEVER181: Version Errors
+#### What This Checks
+Status indicating the Minecraft version string was parsed into version numbers.
 
-**Rule ID:** `MINENGINEVER181`
-
-**Severity:** Info
-
-**What it checks:** Error when the min_engine_version field could not be parsed or validated.
-
-**Technical details:** Data contains the version processing error.
-
-
-### MINENGINEVER200: RP Version Defined
-
-**Rule ID:** `MINENGINEVER200`
-
-**Severity:** Info
-
-**What it checks:** Confirms that min_engine_version is defined in the resource pack manifest header.
-
-**Technical details:** Data contains the min_engine_version value.
-
-
-### MINENGINEVER210: RP Major Low
-
-**Rule ID:** `MINENGINEVER210`
-
-**Severity:** Info
-
-**What it checks:** Warning when the resource pack's min_engine_version major number is below the current Minecraft version.
-
-**Technical details:** Data contains the current min_engine_version.
-
-**Auto-fix available:** Yes - This issue can be automatically fixed by MCTools.
-
-
-### MINENGINEVER211: RP Major High
-
-**Rule ID:** `MINENGINEVER211`
-
-**Severity:** Info
-
-**What it checks:** Error when the resource pack's min_engine_version major number is above the current Minecraft version.
-
-**Technical details:** Data contains the min_engine_version exceeding current.
-
-**Auto-fix available:** Yes - This issue can be automatically fixed by MCTools.
-
-
-### MINENGINEVER220: RP Minor Low
-
-**Rule ID:** `MINENGINEVER220`
-
-**Severity:** Info
-
-**What it checks:** Warning when the resource pack's min_engine_version minor number is below the current Minecraft version.
-
-**Technical details:** Data contains the current min_engine_version.
-
-**Auto-fix available:** Yes - This issue can be automatically fixed by MCTools.
-
-
-### MINENGINEVER221: RP Minor High
-
-**Rule ID:** `MINENGINEVER221`
-
-**Severity:** Info
-
-**What it checks:** Error when the resource pack's min_engine_version minor number is above the current Minecraft version.
-
-**Technical details:** Data contains the min_engine_version exceeding current.
-
-**Auto-fix available:** Yes - This issue can be automatically fixed by MCTools.
-
-
-### MINENGINEVER230: RP Patch Low
-
-**Rule ID:** `MINENGINEVER230`
-
-**Severity:** Info
-
-**What it checks:** Information when the resource pack's min_engine_version patch number is below the current Minecraft version.
-
-**Technical details:** Data contains the current min_engine_version.
-
-**Auto-fix available:** Yes - This issue can be automatically fixed by MCTools.
-
-
-### MINENGINEVER231: RP Patch High
-
-**Rule ID:** `MINENGINEVER231`
-
-**Severity:** Info
-
-**What it checks:** Warning when the resource pack's min_engine_version patch number is above the current Minecraft version.
-
-**Technical details:** Data contains the min_engine_version exceeding current.
-
-**Auto-fix available:** Yes - This issue can be automatically fixed by MCTools.
-
-
-### MINENGINEVER500: Version Retrieved
-
-**Rule ID:** `MINENGINEVER500`
-
-**Severity:** Info
-
-**What it checks:** Status indicating the current Minecraft version was retrieved for comparison.
-
-**Technical details:** Data contains the retrieved Minecraft version.
-
-
-### MINENGINEVER501: Version Parsed
-
-**Rule ID:** `MINENGINEVER501`
-
-**Severity:** Info
-
-**What it checks:** Status indicating the Minecraft version string was parsed into version numbers.
-
-**Technical details:** Data contains the parsed version components.
+#### Technical Details
+Data contains the parsed version components.

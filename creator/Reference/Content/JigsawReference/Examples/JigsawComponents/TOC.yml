@@ -1,0 +1,64 @@
+- name: Jigsaw List
+  href: ../JigsawList.md
+- name: JigsawBlockMetadata
+  href: jigsawblockmetadata.md
+- name: JigsawStructureDefinition Description
+  href: jigsawstructuredefinition_description.md
+- name: JigsawStructureMetadata
+  href: jigsawstructuremetadata.md
+- name: JigsawStructureMetadataRegistry
+  href: jigsawstructuremetadataregistry.md
+- name: JigsawStructureProcessorList Description
+  href: jigsawstructureprocessorlist_description.md
+- name: JigsawStructureSet Description
+  href: jigsawstructureset_description.md
+- name: JigsawStructureSet RandomSpreadPlacement
+  href: jigsawstructureset_randomspreadplacement.md
+- name: JigsawStructureSet Structure
+  href: jigsawstructureset_structure.md
+- name: JigsawStructureTemplatePool Description
+  href: jigsawstructuretemplatepool_description.md
+- name: JigsawStructureTemplatePool SinglePoolElement
+  href: jigsawstructuretemplatepool_singlepoolelement.md
+- name: JigsawStructureTemplatePool TemplatePoolElement
+  href: jigsawstructuretemplatepool_templatepoolelement.md
+- name: JigsawStructure ProcessorRule AlwaysTrueBlock
+  href: jigsawstructure_processorrule_alwaystrueblock.md
+- name: JigsawStructure ProcessorRule AlwaysTruePos
+  href: jigsawstructure_processorrule_alwaystruepos.md
+- name: JigsawStructure ProcessorRule AppendLoot
+  href: jigsawstructure_processorrule_appendloot.md
+- name: JigsawStructure ProcessorRule AxisAlignedLinear
+  href: jigsawstructure_processorrule_axisalignedlinear.md
+- name: JigsawStructure ProcessorRule BlockMatch
+  href: jigsawstructure_processorrule_blockmatch.md
+- name: JigsawStructure ProcessorRule Passthrough
+  href: jigsawstructure_processorrule_passthrough.md
+- name: JigsawStructure ProcessorRule RandomBlockMatch
+  href: jigsawstructure_processorrule_randomblockmatch.md
+- name: JigsawStructure ProcessorRule TagMatch
+  href: jigsawstructure_processorrule_tagmatch.md
+- name: JigsawStructure Processors BlockIgnore
+  href: jigsawstructure_processors_blockignore.md
+- name: JigsawStructure Processors BlockRules
+  href: jigsawstructure_processors_blockrules.md
+- name: JigsawStructure Processors Capped
+  href: jigsawstructure_processors_capped.md
+- name: JigsawStructure Processors ProtectedBlock
+  href: jigsawstructure_processors_protectedblock.md
+- name: JigsawStructure Rule
+  href: jigsawstructure_rule.md
+- name: JigsawStructure
+  href: jigsaw_structure.md
+- name: Jigsaw Structure Metadata
+  href: minecraft_jigsaw_structure_metadata.md
+- name: ProcessorList
+  href: processor_list.md
+- name: Scatter Chance
+  href: scatter_chance.md
+- name: Scatter Params
+  href: scatter_params.md
+- name: StructureSet
+  href: structure_set.md
+- name: TemplatePool
+  href: template_pool.md

@@ -17,16 +17,16 @@ Allows the mob to stop and sneeze possibly startling nearby mobs and dropping an
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| cooldown_time | 0 | Decimal number | Time in seconds the mob has to wait before using the goal again | Panda: `1` | 
-| drop_item_chance | 1 | Decimal number | The probability that the mob will drop an item when it sneezes. | Panda: `0.001` | 
-| entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entity types this mob will startle (cause to jump) when it sneezes. | Panda: `[{"filters":{"all_of":[{"test":"has_component","subject":"other","operator":"!=","value":"minecraft:is_baby"},{"test":"is_family","subject":"other","value":"panda"},{"test":"in_water","subject":"other","operator":"!=","value":true},{"test":"on_ground","operator":"==","value":true}]},"max_dist":10}]` | 
-| loot_table | *not set* | String | Loot table to select dropped items from. | Panda: `"loot_tables/entities/panda_sneeze.json"` | 
-| prepare_sound | *not set* | String | Sound to play when the sneeze is about to happen. | Panda: `"presneeze"` | 
-| prepare_time | 1 | Decimal number | The time in seconds that the mob takes to prepare to sneeze (while the prepare_sound is playing). | Panda: `1` | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Panda: `7` | 
-| probability | 0.02 | Decimal number | The probability of sneezing. A value of 1.00 is 100% | Panda: `0.0001666`, `0.002` | 
-| sound | *not set* | String | Sound to play when the sneeze occurs. | Panda: `"sneeze"` | 
-| within_radius | 0 | Decimal number | Distance in blocks that mobs will be startled. | Panda: `10` | 
+| cooldown_time | 0 | Decimal number | Time in seconds the mob has to wait before using the goal again |  | 
+| drop_item_chance | 1 | Decimal number | The probability that the mob will drop an item when it sneezes. |  | 
+| entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entity types this mob will startle (cause to jump) when it sneezes. |  | 
+| loot_table | *not set* | String | Loot table to select dropped items from. |  | 
+| prepare_sound | *not set* | String | Sound to play when the sneeze is about to happen. |  | 
+| prepare_time | 1 | Decimal number | The time in seconds that the mob takes to prepare to sneeze (while the prepare_sound is playing). |  | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
+| probability | 0.02 | Decimal number | The probability of sneezing. A value of 1.00 is 100% |  | 
+| sound | *not set* | String | Sound to play when the sneeze occurs. |  | 
+| within_radius | 0 | Decimal number | Distance in blocks that mobs will be startled. |  | 
 
 ## Entity Types
 List of entity types this mob will startle (cause to jump) when it sneezes.
@@ -46,99 +46,3 @@ List of entity types this mob will startle (cause to jump) when it sneezes.
 | walk_speed_multiplier | 1 | Decimal number | Multiplier for the walking speed. A value of 1.0 means the speed is unchanged |  | 
 
 ## Samples
-
-#### [Panda](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/panda.json)
-
-At /minecraft:entity/component_groups/minecraft:panda_baby/minecraft:behavior.sneeze/: 
-
-```json
-"minecraft:behavior.sneeze": {
-  "priority": 7,
-  "probability": 0.0001666,
-  "cooldown_time": 1,
-  "within_radius": 10,
-  "entity_types": [
-    {
-      "filters": {
-        "all_of": [
-          {
-            "test": "has_component",
-            "subject": "other",
-            "operator": "!=",
-            "value": "minecraft:is_baby"
-          },
-          {
-            "test": "is_family",
-            "subject": "other",
-            "value": "panda"
-          },
-          {
-            "test": "in_water",
-            "subject": "other",
-            "operator": "!=",
-            "value": true
-          },
-          {
-            "test": "on_ground",
-            "operator": "==",
-            "value": true
-          }
-        ]
-      },
-      "max_dist": 10
-    }
-  ],
-  "drop_item_chance": 0.001,
-  "loot_table": "loot_tables/entities/panda_sneeze.json",
-  "prepare_sound": "presneeze",
-  "prepare_time": 1,
-  "sound": "sneeze"
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:panda_sneezing/minecraft:behavior.sneeze/: 
-
-```json
-"minecraft:behavior.sneeze": {
-  "priority": 7,
-  "probability": 0.002,
-  "cooldown_time": 1,
-  "within_radius": 10,
-  "entity_types": [
-    {
-      "filters": {
-        "all_of": [
-          {
-            "test": "has_component",
-            "subject": "other",
-            "operator": "!=",
-            "value": "minecraft:is_baby"
-          },
-          {
-            "test": "is_family",
-            "subject": "other",
-            "value": "panda"
-          },
-          {
-            "test": "in_water",
-            "subject": "other",
-            "operator": "!=",
-            "value": true
-          },
-          {
-            "test": "on_ground",
-            "operator": "==",
-            "value": true
-          }
-        ]
-      },
-      "max_dist": 10
-    }
-  ],
-  "drop_item_chance": 0.001,
-  "loot_table": "loot_tables/entities/panda_sneeze.json",
-  "prepare_sound": "presneeze",
-  "prepare_time": 1,
-  "sound": "sneeze"
-}
-```

@@ -22,24 +22,6 @@ Allows the villager to look for a mate to spawn other villagers with.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager: `6`, Villager v2: `5` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
 
 ## Samples
-
-#### [Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager.json)
-
-
-```json
-"minecraft:behavior.make_love": {
-  "priority": 6
-}
-```
-
-#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
-
-
-```json
-"minecraft:behavior.make_love": {
-  "priority": 5
-}
-```

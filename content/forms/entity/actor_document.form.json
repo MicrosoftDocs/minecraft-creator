@@ -13,7 +13,38 @@
     ]
   },
   "id": "Actor Document",
-  "fields": [],
+  "fields": [
+    {
+      "id": "component_groups",
+      "title": "Component Groups",
+      "description": "Named groups of components that can be dynamically added/removed via events. Each key is a group name (e.g., 'minecraft:baby'), and the value contains components for that state.",
+      "dataType": 14,
+      "subFormId": "entity/entity_component_definitions",
+      "defaultValue": {}
+    },
+    {
+      "id": "components",
+      "title": "Components",
+      "description": "The base components always active on this entity, defining its default behavior, attributes, and AI.",
+      "dataType": 16,
+      "subFormId": "entity/entity_component_definitions"
+    },
+    {
+      "id": "description",
+      "title": "Description",
+      "description": "Contains the entity's unique identifier and runtime_identifier for spawn egg and other behaviors.",
+      "dataType": 16,
+      "isRequired": true
+    },
+    {
+      "id": "events",
+      "title": "Events",
+      "description": "Named events that can add/remove component groups and trigger actions. Events are invoked by component logic or spawning.",
+      "dataType": 14
+    }
+  ],
+  "description": "The root structure for entity behavior definitions in behavior packs. Contains the entity's unique identifier, components that define its capabilities, component groups for state variations, and events that trigger state changes. Every custom mob, NPC, or creature requires an actor document defining its AI, health, movement, and interactions.",
+  "title": "Entity Actor Document",
   "generatedFromSchema_doNotEdit": {
     "id": "Actor Document",
     "title": "Entity Actor Document",
@@ -45,6 +76,5 @@
         "dataType": 16
       }
     ]
-  },
-  "description": "The root structure for entity behavior definitions in behavior packs. Contains the entity's unique identifier, components that define its capabilities, component groups for state variations, and events that trigger state changes. Every custom mob, NPC, or creature requires an actor document defining its AI, health, movement, and interactions."
+  }
 }

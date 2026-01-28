@@ -36,7 +36,7 @@ You can see these tools in the [`minecraft-samples` GitHub repository](https://g
 
 For the rest of this article, though, we're going to focus on the "in-game" debug tools packs.
 
-To get started, select Download from the [samples repository](https://github.com/microsoft/minecraft-samples). Ensure you have Node Package Manager (npm) installed and run `npm install` to ensure all the tools and dependencies are deployed. Assuming you want to deploy these packs to a Minecraft Preview instance, run `npm run local-deploy`. (If you want to use these packs with the "main", non-preview version of Minecraft, edit the .env-ingame file and change MINECRAFT_PRODUCT="PreviewUWP" to MINECRAFT_PRODUCT="BedrockUWP". Then run `npm run local-deploy`.)
+To get started, select Download from the [samples repository](https://github.com/microsoft/minecraft-samples). Ensure you have Node Package Manager (npm) installed and run `npm install` to ensure all the tools and dependencies are deployed. Assuming you want to deploy these packs to a Minecraft Preview instance, run `npm run local-deploy`. (If you want to use these packs with the "main", non-preview version of Minecraft, edit the .env-ingame file and change MINECRAFT_PRODUCT="PreviewGDK" to MINECRAFT_PRODUCT="BedrockGDK". Then run `npm run local-deploy`.)
 
 After adding the Debug Tools packs to your worlds, you can get started with them by `/give`-ing yourself two debug tools: `/give @s debug_tools:magnifying_glass` and `/give @s debug_tools:wrench`.
 

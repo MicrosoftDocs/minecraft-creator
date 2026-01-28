@@ -14,10 +14,3 @@ Sets that this entity is currently stunned.
 
 
 ## Samples
-
-#### [Ravager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ravager.json)
-
-
-```json
-"minecraft:is_stunned": {}
-```

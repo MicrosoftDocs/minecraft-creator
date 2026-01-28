@@ -19,7 +19,7 @@ Defines what events to call when this entity is damaged by specific entities or 
 |:----------|:-------------|:----|:-----------|:------------- |
 | deals_damage | false | [Deals Damage](#deals-damage-choices) choices | Defines how received damage affects the entity. |  | 
 | deals_damage (Alternate 1) | false | Boolean true/false |  |  | 
-| triggers (Damage Sensor Trigger) | *not set* | [Triggers](#triggers) item | List of triggers with the events to call when taking specific kinds of damage. | Allay: `[{"on_damage":{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"test":"is_owner","subject":"other"}]}},"deals_damage":"no"}]`, Armadillo: `{"on_damage":{"filters":{"any_of":[{"test":"is_family","subject":"other","value":"mob"},{"test":"is_family","subject":"other","value":"player"}]},"event":"minecraft:threat_detected"}}`, `[{"on_damage":{"filters":{"any_of":[{"test":"is_family","subject":"other","value":"mob"},{"test":"is_family","subject":"other","value":"player"}]},"event":"minecraft:threat_detected"},"damage_multiplier":0.5,"damage_modifier":-1},{"damage_multiplier":0.5,"damage_modifier":-1}]` | 
+| triggers (Damage Sensor Trigger) | *not set* | [Triggers](#triggers) item | List of triggers with the events to call when taking specific kinds of damage. | Allay: `[{"on_damage":{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"test":"is_owner","subject":"other"}]}},"deals_damage":"no"}]`, Bat: `{"cause":"fall","deals_damage":false}`, Blaze: `{"cause":"fall","deals_damage":"no"}` | 
 | triggers (Alternate 1) | *not set* | Object |  |  | 
 
 ### Deals Damage choices
@@ -76,81 +76,6 @@ Defines what events to call when this entity is damaged by specific entities or 
 }
 ```
 
-#### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
-
-At /minecraft:entity/component_groups/minecraft:unrolled/minecraft:damage_sensor/: 
-
-```json
-"minecraft:damage_sensor": {
-  "triggers": {
-    "on_damage": {
-      "filters": {
-        "any_of": [
-          {
-            "test": "is_family",
-            "subject": "other",
-            "value": "mob"
-          },
-          {
-            "test": "is_family",
-            "subject": "other",
-            "value": "player"
-          }
-        ]
-      },
-      "event": "minecraft:threat_detected"
-    }
-  }
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:rolled_up/minecraft:damage_sensor/: 
-
-```json
-"minecraft:damage_sensor": {
-  "triggers": [
-    {
-      "on_damage": {
-        "filters": {
-          "any_of": [
-            {
-              "test": "is_family",
-              "subject": "other",
-              "value": "mob"
-            },
-            {
-              "test": "is_family",
-              "subject": "other",
-              "value": "player"
-            }
-          ]
-        },
-        "event": "minecraft:threat_detected"
-      },
-      "damage_multiplier": 0.5,
-      "damage_modifier": -1
-    },
-    {
-      "damage_multiplier": 0.5,
-      "damage_modifier": -1
-    }
-  ]
-}
-```
-
-#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
-
-
-```json
-"minecraft:damage_sensor": {
-  "triggers": {
-    "cause": "lightning",
-    "deals_damage": "yes",
-    "damage_multiplier": 2000
-  }
-}
-```
-
 #### [Bat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bat.json)
 
 
@@ -160,30 +85,6 @@ At /minecraft:entity/component_groups/minecraft:rolled_up/minecraft:damage_senso
     "cause": "fall",
     "deals_damage": false
   }
-}
-```
-
-#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
-
-
-```json
-"minecraft:damage_sensor": {
-  "triggers": [
-    {
-      "cause": "fall",
-      "deals_damage": "no"
-    },
-    {
-      "on_damage": {
-        "filters": {
-          "test": "is_block",
-          "subject": "block",
-          "value": "minecraft:sweet_berry_bush"
-        }
-      },
-      "deals_damage": "no"
-    }
-  ]
 }
 ```
 
@@ -222,121 +123,5 @@ At /minecraft:entity/component_groups/minecraft:rolled_up/minecraft:damage_senso
       "deals_damage": false
     }
   ]
-}
-```
-
-#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
-
-
-```json
-"minecraft:damage_sensor": {
-  "triggers": {
-    "cause": "fall",
-    "deals_damage": "yes",
-    "damage_modifier": -4
-  }
-}
-```
-
-#### [Copper Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/copper_golem.json)
-
-
-```json
-"minecraft:damage_sensor": {
-  "triggers": [
-    {
-      "cause": "fall",
-      "deals_damage": "no"
-    },
-    {
-      "on_damage": {
-        "filters": {
-          "all_of": [
-            {
-              "test": "is_family",
-              "subject": "other",
-              "value": "lightning"
-            },
-            {
-              "test": "is_variant",
-              "subject": "self",
-              "operator": "==",
-              "value": 0
-            }
-          ]
-        },
-        "event": "minecraft:remove_oxidation_layer"
-      },
-      "deals_damage": "no"
-    }
-  ]
-}
-```
-
-#### [Creaking](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creaking.json)
-
-
-```json
-"minecraft:damage_sensor": {
-  "triggers": [
-    {
-      "cause": "void",
-      "deals_damage": "yes"
-    },
-    {
-      "on_damage": {
-        "filters": {
-          "test": "is_family",
-          "subject": "other",
-          "value": "player"
-        },
-        "event": "minecraft:damaged_by_player"
-      },
-      "cause": "all",
-      "deals_damage": "no_but_side_effects_apply"
-    },
-    {
-      "on_damage": {
-        "filters": {
-          "test": "is_family",
-          "subject": "other",
-          "value": "mob"
-        },
-        "event": "minecraft:damaged_by_entity"
-      },
-      "cause": "all",
-      "deals_damage": "no_but_side_effects_apply"
-    },
-    {
-      "on_damage": {
-        "event": "minecraft:damaged_by_entity"
-      },
-      "cause": "projectile",
-      "deals_damage": "no_but_side_effects_apply"
-    },
-    {
-      "cause": "all",
-      "deals_damage": "no_but_side_effects_apply"
-    }
-  ]
-}
-```
-
-#### [Creeper](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creeper.json)
-
-
-```json
-"minecraft:damage_sensor": {
-  "triggers": {
-    "on_damage": {
-      "filters": {
-        "test": "is_family",
-        "subject": "other",
-        "value": "lightning"
-      },
-      "event": "minecraft:become_charged"
-    },
-    "deals_damage": false
-  }
 }
 ```

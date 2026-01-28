@@ -24,78 +24,16 @@
         "title": "Backwards Movement Modifier",
         "description": "Modifies speed going backwards.",
         "defaultValue": 0.5,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:free_camera_controlled/",
-              "content": 0.5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/nautilus.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:free_camera_controlled/",
-              "content": 0.5
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "strafe_speed_modifier",
         "title": "Strafe Speed Modifier",
         "description": "Modifies the strafe speed.",
         "defaultValue": 0.4,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:free_camera_controlled/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/nautilus.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:free_camera_controlled/",
-              "content": 0.7
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_in_water/minecraft:free_camera_controlled/",
-              "content": 0.7
-            }
-          ]
-        }
+        "dataType": 3
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/happy_ghast.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:free_camera_controlled/",
-          "content": {
-            "strafe_speed_modifier": 1,
-            "backwards_movement_modifier": 0.5
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/nautilus.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:free_camera_controlled/",
-          "content": {
-            "strafe_speed_modifier": 0.7,
-            "backwards_movement_modifier": 0.5
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_in_water/minecraft:free_camera_controlled/",
-          "content": {
-            "strafe_speed_modifier": 0.7,
-            "backwards_movement_modifier": 0.5
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

@@ -17,9 +17,8 @@ Tests the health of the subject.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Creaking: `">"` | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Creaking: `"target"`, `"other"` | 
-| test | *not set* | String |  | Creaking: `"actor_health"` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
 | value | *not set* | Integer number | (Required) An integer value. |  | 
 
 ### Operator choices
@@ -61,27 +60,4 @@ At Short (using Defaults)..:
 
 ```json
 { "test": "actor_health", "value": "0" }
-```
-
-#### [Creaking](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creaking.json)
-
-At /minecraft:entity/component_groups/minecraft:spawned_by_player/minecraft:environment_sensor/triggers/0/filters/all_of/1/any_of/1/: 
-
-```json
-{
-  "test": "actor_health",
-  "subject": "target",
-  "value": 0
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:neutral/minecraft:looked_at/filters/: 
-
-```json
-{
-  "test": "actor_health",
-  "subject": "other",
-  "operator": ">",
-  "value": 0
-}
 ```

@@ -97,11 +97,11 @@ This is best done with MCTools, either on the web or on the command line (with `
 npm i
 ```
 
-Make sure the **.env** file in your new project is set up correctly, with `PROJECT_NAME` specifying the folder name for the assets when they're deployed to Minecraft's actual game directories, and `MINECRAFT_PRODUCT` specifying either `BedrockUWP` or `PreviewUWP` for standard install locations. You can also specify a custom deployment path for a Minecraft installation that's installed somewhere non-standard.
+Make sure the **.env** file in your new project is set up correctly, with `PROJECT_NAME` specifying the folder name for the assets when they're deployed to Minecraft's actual game directories, and `MINECRAFT_PRODUCT` specifying either `BedrockGDK` or `PreviewGDK` for standard install locations. You can also specify a custom deployment path for a Minecraft installation that's installed somewhere non-standard.
 
 ```ini
 PROJECT_NAME="my_addon"
-MINECRAFT_PRODUCT="BedrockUWP"
+MINECRAFT_PRODUCT="BedrockGDK"
 CUSTOM_DEPLOYMENT_PATH=""
 ```
 

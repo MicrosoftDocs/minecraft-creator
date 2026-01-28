@@ -18,37 +18,6 @@
     "title": "Can Join Raid",
     "description": "Determines that this entity can join an existing raid.",
     "fields": [],
-    "samples": {
-      "/vanilla/behavior_pack/entities/evocation_illager.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:can_join_raid/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/pillager.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:can_join_raid/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/ravager.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:can_join_raid/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/vindicator.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:can_join_raid/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/witch.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:can_join_raid/",
-          "content": {}
-        }
-      ]
-    }
+    "samples": {}
   }
 }

@@ -188,13 +188,13 @@
         "defaultValue": false,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/armadillo.json": [
+          "/vanilla/behavior_pack/entities/blaze.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.walk/",
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/blaze.json": [
+          "/vanilla/behavior_pack/entities/chicken.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.walk/",
               "content": true
@@ -207,15 +207,7 @@
         "title": "Avoid Portals",
         "description": "Tells the pathfinder to avoid portals (like nether portals) when finding a path",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/zombie_pigman.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "avoid_sun",
@@ -225,12 +217,6 @@
         "dataType": 1,
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/entities/parched.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.walk/",
               "content": true
@@ -245,13 +231,13 @@
         "defaultValue": false,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/armadillo.json": [
+          "/vanilla/behavior_pack/entities/blaze.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.walk/",
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/blaze.json": [
+          "/vanilla/behavior_pack/entities/bogged.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.walk/",
               "content": true
@@ -274,27 +260,6 @@
                 }
               ]
             }
-          ],
-          "/vanilla/behavior_pack/entities/goat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-              "content": [
-                {
-                  "name": "minecraft:powder_snow"
-                }
-              ]
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_horse.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-              "content": [
-                "minecraft:rail",
-                "minecraft:activator_rail",
-                "minecraft:detector_rail",
-                "minecraft:golden_rail"
-              ]
-            }
           ]
         }
       },
@@ -310,21 +275,7 @@
         "title": "Can Break Doors",
         "description": "Tells the pathfinder that it can path through a closed door and break it",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/husk.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "can_jump",
@@ -338,21 +289,7 @@
         "title": "Can Open Doors",
         "description": "Tells the pathfinder that it can path through a closed door assuming the AI will open the door",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/copper_golem.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/entities/evocation_illager.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "can_open_iron_doors",
@@ -366,21 +303,7 @@
         "title": "Can Pass Doors",
         "description": "Whether a path can be created through a door",
         "defaultValue": true,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/copper_golem.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/entities/evocation_illager.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "can_path_from_air",
@@ -394,21 +317,7 @@
         "title": "Can Path Over Lava",
         "description": "Tells the pathfinder whether or not it can travel on the surface of the lava",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:navigation.walk/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/entities/strider.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "can_path_over_water",
@@ -417,13 +326,13 @@
         "defaultValue": false,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/armadillo.json": [
+          "/vanilla/behavior_pack/entities/blaze.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.walk/",
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/blaze.json": [
+          "/vanilla/behavior_pack/entities/chicken.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.walk/",
               "content": true
@@ -450,36 +359,14 @@
         "title": "Can Walk",
         "description": "Tells the pathfinder whether or not it can walk on the ground outside water",
         "defaultValue": true,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/villager.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "can_walk_in_lava",
         "title": "Can Walk In Lava",
         "description": "Tells the pathfinder whether or not it can travel in lava like walking on ground",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/strider.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "is_amphibious",
@@ -493,46 +380,11 @@
               "path": "/minecraft:entity/components/minecraft:navigation.walk/",
               "content": true
             }
-          ],
-          "/vanilla/behavior_pack/entities/husk.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-              "content": true
-            }
-          ]
-        }
-      },
-      {
-        "id": "can_float",
-        "title": "Can Float",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/entities/panda.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-              "content": true
-            }
           ]
         }
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/armadillo.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_damage_blocks": true,
-            "avoid_water": true
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/blaze.json": [
         {
           "path": "/minecraft:entity/components/minecraft:navigation.walk/",
@@ -565,51 +417,12 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/camel.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/camel_husk.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/cat.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_float": true,
-            "avoid_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/chicken.json": [
         {
           "path": "/minecraft:entity/components/minecraft:navigation.walk/",
           "content": {
             "can_path_over_water": true,
             "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/copper_golem.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "avoid_water": true,
-            "avoid_damage_blocks": true,
-            "can_pass_doors": true,
-            "can_open_doors": true
           }
         }
       ],
@@ -620,718 +433,6 @@
             "can_path_over_water": true,
             "avoid_water": true,
             "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/creaking.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:spawned_by_player/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "can_path_over_lava": false,
-            "avoid_damage_blocks": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "can_path_over_lava": true,
-            "avoid_damage_blocks": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/creeper.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/donkey.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/enderman.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": false,
-            "avoid_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/endermite.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/evocation_illager.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "can_pass_doors": true,
-            "can_open_doors": true,
-            "avoid_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/fox.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/glow_squid.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "can_sink": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/goat.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": true,
-            "avoid_damage_blocks": true,
-            "blocks_to_avoid": [
-              {
-                "name": "minecraft:powder_snow"
-              }
-            ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/hoglin.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/horse.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/husk.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "is_amphibious": true,
-            "can_pass_doors": true,
-            "can_break_doors": true,
-            "avoid_portals": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/iron_golem.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": false,
-            "avoid_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/llama.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/magma_cube.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/mooshroom.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/mule.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/ocelot.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/panda.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_float": true,
-            "avoid_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/parched.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "is_amphibious": true,
-            "avoid_sun": true,
-            "avoid_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/pig.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/piglin.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "can_open_doors": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/piglin_brute.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "can_open_doors": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/pillager.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/polar_bear.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/rabbit.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/ravager.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "avoid_damage_blocks": true,
-            "can_path_over_water": true,
-            "can_sink": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/sheep.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/shulker.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/silverfish.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/skeleton.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "is_amphibious": true,
-            "avoid_sun": true,
-            "avoid_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "is_amphibious": true,
-            "avoid_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/slime.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/sniffer.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/snow_golem.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "avoid_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/squid.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "can_sink": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/stray.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "is_amphibious": true,
-            "avoid_sun": true,
-            "avoid_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/strider.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_lava": true,
-            "avoid_water": true,
-            "can_sink": false,
-            "can_walk_in_lava": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/trader_llama.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/vex.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/villager.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "is_amphibious": true,
-            "can_path_over_water": true,
-            "can_pass_doors": true,
-            "can_open_doors": true,
-            "can_walk": true,
-            "avoid_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/villager_v2.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "can_pass_doors": true,
-            "can_open_doors": true,
-            "avoid_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wandering_trader.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "can_pass_doors": true,
-            "can_open_doors": false,
-            "avoid_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/warden.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "can_path_over_lava": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/witch.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wither.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "is_amphibious": true,
-            "avoid_sun": true,
-            "avoid_water": true,
-            "can_path_over_lava": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wolf.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zoglin.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "is_amphibious": true,
-            "can_path_over_water": false,
-            "avoid_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "is_amphibious": true,
-            "can_pass_doors": true,
-            "can_walk": true,
-            "can_break_doors": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_horse.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "is_amphibious": true,
-            "avoid_water": true,
-            "avoid_damage_blocks": true,
-            "avoid_sun": true,
-            "blocks_to_avoid": [
-              "minecraft:rail",
-              "minecraft:activator_rail",
-              "minecraft:detector_rail",
-              "minecraft:golden_rail"
-            ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_pigman.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "is_amphibious": true,
-            "can_pass_doors": true,
-            "can_open_doors": true,
-            "avoid_water": true,
-            "avoid_portals": true,
-            "can_path_over_lava": true
-          }
-        }
-      ],
-      "/samples/add_entity_robot/full/robot_example_full_behavior/entities/robot.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "avoid_water": true
-          }
-        }
-      ],
-      "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": true
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": true
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": true
-          }
-        }
-      ],
-      "/samples/behavior_pack_sample/entities/cow.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/dream_turkey.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_float": true,
-            "avoid_water": true,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {}
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {}
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/crossbow_turret.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {}
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {}
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave_generator.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {}
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "is_amphibious": true,
-            "can_pass_doors": true,
-            "can_walk": true,
-            "can_break_doors": true
-          }
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/shbullet_turret.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {}
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/smfireball_turret.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {}
-        }
-      ],
-      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true,
-            "can_pass_doors": true,
-            "can_open_doors": true,
-            "avoid_water": true
-          }
-        }
-      ],
-      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
-          "content": {
-            "can_path_over_water": true
           }
         }
       ]

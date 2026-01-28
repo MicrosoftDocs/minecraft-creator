@@ -24,23 +24,13 @@
         "description": "Goal cooldown range in seconds. If specified, the cooldown will have to elapse even before the goal can be selected for the first time.",
         "dataType": 18,
         "samples": {
-          "/vanilla/behavior_pack/entities/armadillo.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:rolled_up_with_threats/minecraft:behavior.timer_flag_1/",
-              "content": 2.5
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:rolled_up_without_threats/minecraft:behavior.timer_flag_1/",
-              "content": 2.5
-            }
-          ],
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.timer_flag_1/",
-              "content": [
-                400,
-                500
-              ]
+              "content": {
+                "min": 400,
+                "max": 500
+              }
             }
           ]
         }
@@ -51,48 +41,13 @@
         "description": "Goal duration range in seconds.",
         "dataType": 18,
         "samples": {
-          "/vanilla/behavior_pack/entities/armadillo.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:rolled_up_with_threats/minecraft:behavior.timer_flag_1/",
-              "content": [
-                5,
-                20
-              ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:rolled_up_without_threats/minecraft:behavior.timer_flag_1/",
-              "content": 1.5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/add_poison_effect/minecraft:behavior.timer_flag_1/",
-              "content": [
-                0.05,
-                0.05
-              ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/add_wither_effect/minecraft:behavior.timer_flag_1/",
-              "content": [
-                0.05,
-                0.05
-              ]
-            }
-          ],
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:twitching/minecraft:behavior.timer_flag_1/",
-              "content": [
-                2.25,
-                2.25
-              ]
-            }
-          ],
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.timer_flag_1/",
-              "content": 2
+              "content": {
+                "min": 2,
+                "max": 2
+              }
             }
           ]
         }
@@ -103,39 +58,6 @@
         "description": "Event(s) to run when the goal ends.",
         "dataType": 22,
         "samples": {
-          "/vanilla/behavior_pack/entities/armadillo.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:rolled_up_with_threats/minecraft:behavior.timer_flag_1/",
-              "content": {
-                "event": "minecraft:start_peeking"
-              }
-            }
-          ],
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/add_poison_effect/minecraft:behavior.timer_flag_1/",
-              "content": {
-                "event": "minecraft:on_poison_effect_added",
-                "target": "self"
-              }
-            },
-            {
-              "path": "/minecraft:entity/component_groups/add_wither_effect/minecraft:behavior.timer_flag_1/",
-              "content": {
-                "event": "minecraft:on_wither_effect_added",
-                "target": "self"
-              }
-            }
-          ],
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:twitching/minecraft:behavior.timer_flag_1/",
-              "content": {
-                "event": "minecraft:crumble",
-                "target": "self"
-              }
-            }
-          ],
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.timer_flag_1/",
@@ -151,23 +73,7 @@
         "id": "on_start",
         "title": "Start",
         "description": "Event(s) to run when the goal starts.",
-        "dataType": 22,
-        "samples": {
-          "/vanilla/behavior_pack/entities/armadillo.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:rolled_up_with_threats/minecraft:behavior.timer_flag_1/",
-              "content": {
-                "event": "minecraft:stop_peeking"
-              }
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:rolled_up_without_threats/minecraft:behavior.timer_flag_1/",
-              "content": {
-                "event": "minecraft:start_unrolling"
-              }
-            }
-          ]
-        }
+        "dataType": 22
       },
       {
         "id": "priority",
@@ -202,85 +108,6 @@
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/armadillo.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:rolled_up_with_threats/minecraft:behavior.timer_flag_1/",
-          "content": {
-            "priority": 0,
-            "cooldown_range": 2.5,
-            "duration_range": [
-              5,
-              20
-            ],
-            "on_start": {
-              "event": "minecraft:stop_peeking"
-            },
-            "on_end": {
-              "event": "minecraft:start_peeking"
-            }
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:rolled_up_without_threats/minecraft:behavior.timer_flag_1/",
-          "content": {
-            "priority": 0,
-            "cooldown_range": 2.5,
-            "duration_range": 1.5,
-            "on_start": {
-              "event": "minecraft:start_unrolling"
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/bee.json": [
-        {
-          "path": "/minecraft:entity/component_groups/add_poison_effect/minecraft:behavior.timer_flag_1/",
-          "content": {
-            "priority": 0,
-            "cooldown_range": 0,
-            "duration_range": [
-              0.05,
-              0.05
-            ],
-            "on_end": {
-              "event": "minecraft:on_poison_effect_added",
-              "target": "self"
-            }
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/add_wither_effect/minecraft:behavior.timer_flag_1/",
-          "content": {
-            "priority": 0,
-            "cooldown_range": 0,
-            "duration_range": [
-              0.05,
-              0.05
-            ],
-            "on_end": {
-              "event": "minecraft:on_wither_effect_added",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/creaking.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:twitching/minecraft:behavior.timer_flag_1/",
-          "content": {
-            "priority": 0,
-            "cooldown_range": 0,
-            "duration_range": [
-              2.25,
-              2.25
-            ],
-            "on_end": {
-              "event": "minecraft:crumble",
-              "target": "self"
-            }
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/sniffer.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.timer_flag_1/",
@@ -290,11 +117,14 @@
               "move",
               "look"
             ],
-            "cooldown_range": [
-              400,
-              500
-            ],
-            "duration_range": 2,
+            "cooldown_range": {
+              "min": 400,
+              "max": 500
+            },
+            "duration_range": {
+              "min": 2,
+              "max": 2
+            },
             "on_end": {
               "event": "on_scenting_success",
               "target": "self"

@@ -1,55 +1,59 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "MCTools Validation Rules Documentation - minecraft:expflag"
-description: "Describes the minecraft:expflag mctools validation rules"
+title: "Validation Rules - Experimental Flags"
+description: "Documentation for Experimental Flags validation rules in Minecraft Creator Tools"
 ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
-
-# MCTools Validation Rules Documentation - minecraft:expflag
-
+# Experimental Flags Validation Rules
 Validates experimental flags in world templates. Experiments that were enabled can affect world behavior even after being disabled.
+## Rules Summary
+| Rule ID | Rule | Severity | Auto-Fix |
+|:--------|:-----|:---------|:---------|
+| [EXPFLAG101](#expflag101) | Experiment Active | 🟡 Warning |  |
+| [EXPFLAG102](#expflag102) | Missing Level.dat | 🔴 Error |  |
+| [EXPFLAG103](#expflag103) | World Not Found | 🔴 Error |  |
 
+---
+## Rule Details
 
-## Experimental Flags Validation Rules
+### EXPFLAG101
+**🟡 Experiment Active**  
+**Severity**: Warning
 
+#### What This Checks
+Warning when an experimental flag is or was enabled in the world. Some experiments permanently modify world data even after being turned off.
 
-### EXPFLAG101: Experiment Active
+#### How to Fix
+If the experimental feature is no longer needed, you can disable it in the world settings. Note that some experiments cannot be fully reverted. For publishing, create a new world without experiments enabled.
 
-**Rule ID:** `EXPFLAG101`
+#### Technical Details
+Data contains the name of the experimental flag.
 
-**Severity:** Info
+### EXPFLAG102
+**🔴 Missing Level.dat**  
+**Severity**: Error
 
-**What it checks:** Warning when an experimental flag is or was enabled in the world. Some experiments permanently modify world data even after being turned off.
+#### What This Checks
+Error when the world's level.dat file could not be found. The world may be corrupted or incomplete.
 
-**How to fix:** If the experimental feature is no longer needed, you can disable it in the world settings. Note that some experiments cannot be fully reverted. For publishing, create a new world without experiments enabled.
+#### How to Fix
+Ensure the world template includes a complete world folder with level.dat. If the file is missing, try re-exporting the world from Minecraft.
 
-**Technical details:** Data contains the name of the experimental flag.
+#### Technical Details
+Data contains the expected level.dat path.
 
+### EXPFLAG103
+**🔴 World Not Found**  
+**Severity**: Error
 
-### EXPFLAG102: Missing Level.dat
+#### What This Checks
+Error when the world folder could not be located. Check that the world path is correct and accessible.
 
-**Rule ID:** `EXPFLAG102`
+#### How to Fix
+Verify the world template structure includes the correct world folder path. The world should be in a subfolder matching the manifest's world_template module entry.
 
-**Severity:** Info
-
-**What it checks:** Error when the world's level.dat file could not be found. The world may be corrupted or incomplete.
-
-**How to fix:** Ensure the world template includes a complete world folder with level.dat. If the file is missing, try re-exporting the world from Minecraft.
-
-**Technical details:** Data contains the expected level.dat path.
-
-
-### EXPFLAG103: World Not Found
-
-**Rule ID:** `EXPFLAG103`
-
-**Severity:** Info
-
-**What it checks:** Error when the world folder could not be located. Check that the world path is correct and accessible.
-
-**How to fix:** Verify the world template structure includes the correct world folder path. The world should be in a subfolder matching the manifest's world_template module entry.
-
-**Technical details:** Data contains the expected world path.
+#### Technical Details
+Data contains the expected world path.

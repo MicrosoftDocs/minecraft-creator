@@ -31,19 +31,7 @@
         "title": "Can Tempt Vertically",
         "description": "If true, vertical distance to the player will be considered when tempting.",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_unharnessed/minecraft:behavior.float_tempt/",
-              "content": true
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:behavior.float_tempt/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "can_tempt_while_ridden",
@@ -57,39 +45,7 @@
         "title": "Items",
         "description": "List of items that can tempt the mob.",
         "defaultValue": "[]",
-        "dataType": 17,
-        "samples": {
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_unharnessed/minecraft:behavior.float_tempt/",
-              "content": [
-                "minecraft:snowball",
-                "minecraft:black_harness",
-                "minecraft:blue_harness",
-                "minecraft:brown_harness",
-                "minecraft:cyan_harness",
-                "minecraft:gray_harness",
-                "minecraft:green_harness",
-                "minecraft:light_blue_harness",
-                "minecraft:light_gray_harness",
-                "minecraft:lime_harness",
-                "minecraft:magenta_harness",
-                "minecraft:orange_harness",
-                "minecraft:pink_harness",
-                "minecraft:purple_harness",
-                "minecraft:red_harness",
-                "minecraft:white_harness",
-                "minecraft:yellow_harness"
-              ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:behavior.float_tempt/",
-              "content": [
-                "minecraft:snowball"
-              ]
-            }
-          ]
-        }
+        "dataType": 17
       },
       {
         "id": "sound_interval",
@@ -109,19 +65,7 @@
         "title": "Stop Distance",
         "description": "The distance at which the mob will stop following the player.",
         "defaultValue": 1.5,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_unharnessed/minecraft:behavior.float_tempt/",
-              "content": 7
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:behavior.float_tempt/",
-              "content": 7
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "tempt_sound",
@@ -134,110 +78,16 @@
         "title": "Within Radius",
         "description": "Distance in blocks this mob can get tempted by a player holding an item they like.",
         "defaultValue": 0,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_unharnessed/minecraft:behavior.float_tempt/",
-              "content": 16
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:behavior.float_tempt/",
-              "content": 16
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_unharnessed/minecraft:behavior.float_tempt/",
-              "content": 4
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:behavior.float_tempt/",
-              "content": 5
-            }
-          ]
-        }
-      },
-      {
-        "id": "on_tempt_end",
-        "title": "Tempt End",
-        "dataType": 22,
-        "samples": {
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_unharnessed/minecraft:behavior.float_tempt/",
-              "content": {
-                "event": "minecraft:on_stop_tempting"
-              }
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:behavior.float_tempt/",
-              "content": {
-                "event": "minecraft:on_stop_tempting"
-              }
-            }
-          ]
-        }
+        "dataType": 0
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/happy_ghast.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_unharnessed/minecraft:behavior.float_tempt/",
-          "content": {
-            "priority": 4,
-            "can_tempt_vertically": true,
-            "items": [
-              "minecraft:snowball",
-              "minecraft:black_harness",
-              "minecraft:blue_harness",
-              "minecraft:brown_harness",
-              "minecraft:cyan_harness",
-              "minecraft:gray_harness",
-              "minecraft:green_harness",
-              "minecraft:light_blue_harness",
-              "minecraft:light_gray_harness",
-              "minecraft:lime_harness",
-              "minecraft:magenta_harness",
-              "minecraft:orange_harness",
-              "minecraft:pink_harness",
-              "minecraft:purple_harness",
-              "minecraft:red_harness",
-              "minecraft:white_harness",
-              "minecraft:yellow_harness"
-            ],
-            "within_radius": 16,
-            "stop_distance": 7,
-            "on_tempt_end": {
-              "event": "minecraft:on_stop_tempting"
-            }
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:behavior.float_tempt/",
-          "content": {
-            "priority": 5,
-            "can_tempt_vertically": true,
-            "items": [
-              "minecraft:snowball"
-            ],
-            "within_radius": 16,
-            "stop_distance": 7,
-            "on_tempt_end": {
-              "event": "minecraft:on_stop_tempting"
-            }
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

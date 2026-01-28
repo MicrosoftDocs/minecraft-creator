@@ -22,105 +22,29 @@
         "id": "items",
         "title": "Items",
         "description": "List of items that this mob likes",
-        "dataType": 17,
-        "samples": {
-          "/vanilla/behavior_pack/entities/wolf.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.beg/",
-              "content": [
-                "bone",
-                "porkchop",
-                "cooked_porkchop",
-                "chicken",
-                "cooked_chicken",
-                "beef",
-                "cooked_beef",
-                "rotten_flesh",
-                "muttonraw",
-                "muttoncooked",
-                "rabbit",
-                "cooked_rabbit"
-              ]
-            }
-          ]
-        }
+        "dataType": 17
       },
       {
         "id": "look_distance",
         "title": "Look Distance",
         "description": "Distance in blocks the mob will beg from",
         "defaultValue": 8,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/wolf.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.beg/",
-              "content": 8
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "look_time",
         "title": "Look Time",
         "description": "The range of time in seconds this mob will stare at the player holding a food they like, begging for it",
-        "dataType": 18,
-        "samples": {
-          "/vanilla/behavior_pack/entities/wolf.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.beg/",
-              "content": [
-                2,
-                4
-              ]
-            }
-          ]
-        }
+        "dataType": 18
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/wolf.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.beg/",
-              "content": 9
-            }
-          ]
-        }
+        "dataType": 0
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/wolf.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.beg/",
-          "content": {
-            "priority": 9,
-            "look_distance": 8,
-            "look_time": [
-              2,
-              4
-            ],
-            "items": [
-              "bone",
-              "porkchop",
-              "cooked_porkchop",
-              "chicken",
-              "cooked_chicken",
-              "beef",
-              "cooked_beef",
-              "rotten_flesh",
-              "muttonraw",
-              "muttoncooked",
-              "rabbit",
-              "cooked_rabbit"
-            ]
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

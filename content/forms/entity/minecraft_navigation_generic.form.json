@@ -25,13 +25,13 @@
         "defaultValue": false,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/axolotl.json": [
+          "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.generic/",
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/frog.json": [
+          "/vanilla/behavior_pack/entities/turtle.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.generic/",
               "content": true
@@ -143,12 +143,6 @@
         "defaultValue": false,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/axolotl.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.generic/",
-              "content": true
-            }
-          ],
           "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.generic/",
@@ -171,13 +165,13 @@
         "defaultValue": false,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/axolotl.json": [
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.generic/",
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/elder_guardian.json": [
+          "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.generic/",
               "content": true
@@ -192,13 +186,13 @@
         "defaultValue": true,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/axolotl.json": [
+          "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.generic/",
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/frog.json": [
+          "/vanilla/behavior_pack/entities/turtle.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.generic/",
               "content": true
@@ -220,13 +214,13 @@
         "defaultValue": false,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/axolotl.json": [
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.generic/",
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/elder_guardian.json": [
+          "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.generic/",
               "content": true
@@ -236,19 +230,6 @@
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/axolotl.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
-          "content": {
-            "is_amphibious": true,
-            "can_path_over_water": true,
-            "can_swim": true,
-            "can_walk": true,
-            "can_sink": false,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/elder_guardian.json": [
         {
           "path": "/minecraft:entity/components/minecraft:navigation.generic/",
@@ -258,19 +239,6 @@
             "can_swim": true,
             "can_walk": false,
             "can_breach": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/fish.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
-          "content": {
-            "is_amphibious": false,
-            "can_path_over_water": false,
-            "can_swim": true,
-            "can_walk": false,
-            "can_breach": false,
-            "can_sink": false
           }
         }
       ],
@@ -299,110 +267,7 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/nautilus.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
-          "content": {
-            "is_amphibious": false,
-            "can_path_over_water": false,
-            "can_swim": true,
-            "can_walk": false,
-            "can_breach": false,
-            "can_sink": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/pufferfish.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
-          "content": {
-            "is_amphibious": false,
-            "can_path_over_water": false,
-            "can_swim": true,
-            "can_walk": false,
-            "can_breach": false,
-            "can_sink": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/salmon.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
-          "content": {
-            "is_amphibious": false,
-            "can_path_over_water": false,
-            "can_swim": true,
-            "can_walk": false,
-            "can_breach": false,
-            "can_sink": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/tadpole.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
-          "content": {
-            "can_path_over_water": true,
-            "can_swim": true,
-            "can_walk": false,
-            "can_sink": false,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/tropicalfish.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
-          "content": {
-            "is_amphibious": false,
-            "can_path_over_water": false,
-            "can_swim": true,
-            "can_walk": false,
-            "can_breach": false,
-            "can_sink": false
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/turtle.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
-          "content": {
-            "is_amphibious": true,
-            "can_path_over_water": false,
-            "can_swim": true,
-            "can_walk": true,
-            "can_sink": false,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
-          "content": {
-            "is_amphibious": false,
-            "can_path_over_water": false,
-            "can_swim": true,
-            "can_walk": false,
-            "can_breach": false,
-            "can_sink": false
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
-          "content": {
-            "is_amphibious": true,
-            "can_path_over_water": false,
-            "can_swim": true,
-            "can_walk": true,
-            "can_sink": false,
-            "avoid_damage_blocks": true
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
         {
           "path": "/minecraft:entity/components/minecraft:navigation.generic/",
           "content": {

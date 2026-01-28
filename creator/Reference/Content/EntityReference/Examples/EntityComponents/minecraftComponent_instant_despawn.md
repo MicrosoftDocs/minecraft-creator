@@ -20,10 +20,3 @@ Despawns the Actor immediately.
 | remove_child_entities | false | Boolean true/false | If true, all entities linked to this entity in a child relationship (eg. leashed) will also be despawned. |  | 
 
 ## Samples
-
-#### [Copper Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/copper_golem.json)
-
-
-```json
-"minecraft:instant_despawn": {}
-```

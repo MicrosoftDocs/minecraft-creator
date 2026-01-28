@@ -15,7 +15,7 @@ Allows the entity to power jump like the Horse does in Vanilla.
 
 ## Samples
 
-#### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
+#### [Skeleton Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton_horse.json)
 
 
 ```json

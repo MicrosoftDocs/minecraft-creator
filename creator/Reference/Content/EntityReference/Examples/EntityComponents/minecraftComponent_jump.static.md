@@ -17,7 +17,7 @@ Gives the entity the ability to jump.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| jump_power | 0.42 | Decimal number | The initial vertical velocity for the jump. | Dolphin: `0.6` | 
+| jump_power | 0.42 | Decimal number | The initial vertical velocity for the jump. |  | 
 
 ## Samples
 
@@ -26,13 +26,4 @@ Gives the entity the ability to jump.
 
 ```json
 "minecraft:jump.static": {}
-```
-
-#### [Dolphin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/dolphin.json)
-
-
-```json
-"minecraft:jump.static": {
-  "jump_power": 0.6
-}
 ```

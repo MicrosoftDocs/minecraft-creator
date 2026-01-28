@@ -42,32 +42,10 @@
               "content": "minecraft:become_calm"
             }
           ],
-          "/vanilla/behavior_pack/entities/panda.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:panda_adult/minecraft:on_target_escape/",
-              "content": "minecraft:on_calm"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pillager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:patrol_captain/minecraft:on_target_escape/",
-              "content": "minecraft:calm"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:patrol_follower/minecraft:on_target_escape/",
-              "content": "minecraft:calm"
-            }
-          ],
           "/vanilla/behavior_pack/entities/slime.json": [
             {
               "path": "/minecraft:entity/components/minecraft:on_target_escape/",
               "content": "minecraft:become_calm"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/vindicator.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:on_target_escape/",
-              "content": "minecraft:stop_aggro"
             }
           ]
         }
@@ -79,26 +57,6 @@
         "dataType": 20,
         "samples": {
           "/vanilla/behavior_pack/entities/llama.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:on_target_escape/",
-              "content": {
-                "all_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "target",
-                    "value": "wolf"
-                  },
-                  {
-                    "test": "has_component",
-                    "subject": "target",
-                    "operator": "!=",
-                    "value": "minecraft:is_tamed"
-                  }
-                ]
-              }
-            }
-          ],
-          "/vanilla/behavior_pack/entities/trader_llama.json": [
             {
               "path": "/minecraft:entity/components/minecraft:on_target_escape/",
               "content": {
@@ -193,117 +151,11 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/panda.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:panda_adult/minecraft:on_target_escape/",
-          "content": {
-            "event": "minecraft:on_calm",
-            "target": "self"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/pillager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:patrol_captain/minecraft:on_target_escape/",
-          "content": {
-            "event": "minecraft:calm",
-            "target": "self"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:patrol_follower/minecraft:on_target_escape/",
-          "content": {
-            "event": "minecraft:calm",
-            "target": "self"
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/slime.json": [
         {
           "path": "/minecraft:entity/components/minecraft:on_target_escape/",
           "content": {
             "event": "minecraft:become_calm",
-            "target": "self"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/trader_llama.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:on_target_escape/",
-          "content": {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "is_family",
-                  "subject": "target",
-                  "value": "wolf"
-                },
-                {
-                  "test": "has_component",
-                  "subject": "target",
-                  "operator": "!=",
-                  "value": "minecraft:is_tamed"
-                }
-              ]
-            },
-            "event": "minecraft:on_calm",
-            "target": "self"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/vindicator.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:on_target_escape/",
-          "content": {
-            "event": "minecraft:stop_aggro",
-            "target": "self"
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:on_target_escape/",
-          "content": {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "is_family",
-                  "subject": "target",
-                  "value": "wolf"
-                },
-                {
-                  "test": "has_component",
-                  "subject": "target",
-                  "operator": "!=",
-                  "value": "minecraft:is_tamed"
-                }
-              ]
-            },
-            "event": "minecraft:on_calm",
-            "target": "self"
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:on_target_escape/",
-          "content": {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "is_family",
-                  "subject": "target",
-                  "value": "wolf"
-                },
-                {
-                  "test": "has_component",
-                  "subject": "target",
-                  "operator": "!=",
-                  "value": "minecraft:is_tamed"
-                }
-              ]
-            },
-            "event": "minecraft:on_calm",
             "target": "self"
           }
         }

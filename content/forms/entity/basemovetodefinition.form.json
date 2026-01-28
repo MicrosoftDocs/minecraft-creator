@@ -1,0 +1,43 @@
+{
+  "id": "BaseMoveToDefinition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "BaseMoveToDefinition",
+    "title": "Entity BaseMoveToDefinition",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this goal.",
+        "dataType": 3,
+        "defaultValue": 1
+      }
+    ]
+  }
+}

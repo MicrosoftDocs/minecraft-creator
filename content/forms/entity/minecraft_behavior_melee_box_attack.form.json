@@ -23,21 +23,7 @@
         "title": "Attack Once",
         "description": "Allows the entity to use this attack behavior, only once EVER.",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/angry_bee/minecraft:behavior.melee_box_attack/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/entities/panda.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:panda_adult/minecraft:behavior.melee_box_attack/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "attack_types",
@@ -57,12 +43,6 @@
               "path": "/minecraft:entity/component_groups/minecraft:melee_mode/minecraft:behavior.melee_box_attack/",
               "content": true
             }
-          ],
-          "/vanilla/behavior_pack/entities/husk.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-              "content": true
-            }
           ]
         }
       },
@@ -71,25 +51,7 @@
         "title": "Cooldown Time",
         "description": "Cooldown time (in seconds) between attacks.",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hostile_unobserved/minecraft:behavior.melee_box_attack/",
-              "content": 2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:behavior.melee_box_attack/",
-              "content": 0.75
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:behavior.melee_box_attack/",
-              "content": 2
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "horizontal_reach",
@@ -117,15 +79,7 @@
         "title": "Melee Fov",
         "description": "Field of view (in degrees) when using the sensing component to detect an attack target.",
         "defaultValue": 90,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/warden.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-              "content": 360
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "min_path_time",
@@ -138,35 +92,13 @@
         "id": "on_attack",
         "title": "Attack",
         "description": "Defines the event to trigger when this entity successfully attacks.",
-        "dataType": 22,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/angry_bee/minecraft:behavior.melee_box_attack/",
-              "content": {
-                "event": "countdown_to_perish_event",
-                "target": "self"
-              }
-            }
-          ]
-        }
+        "dataType": 22
       },
       {
         "id": "on_kill",
         "title": "Kill",
         "description": "Defines the event to trigger when this entity kills the target.",
-        "dataType": 22,
-        "samples": {
-          "/vanilla/behavior_pack/entities/axolotl.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-              "content": {
-                "event": "killed_enemy_event",
-                "target": "self"
-              }
-            }
-          ]
-        }
+        "dataType": 22
       },
       {
         "id": "outer_boundary_time_increase",
@@ -223,12 +155,6 @@
               "path": "/minecraft:entity/component_groups/minecraft:melee_mode/minecraft:behavior.melee_box_attack/",
               "content": true
             }
-          ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:docile_fox/minecraft:behavior.melee_box_attack/",
-              "content": true
-            }
           ]
         }
       },
@@ -239,12 +165,6 @@
         "defaultValue": 1,
         "dataType": 3,
         "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/angry_bee/minecraft:behavior.melee_box_attack/",
-              "content": 1.4
-            }
-          ],
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:behavior.melee_box_attack/",
@@ -255,36 +175,6 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:melee_mode/minecraft:behavior.melee_box_attack/",
               "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:behavior.melee_box_attack/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/parched.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:behavior.melee_box_attack/",
-              "content": 1.25
-            }
-          ],
-          "/vanilla/behavior_pack/entities/warden.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-              "content": 1.2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-              "content": 1.15
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_pigman.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-              "content": 1.5
             }
           ]
         }
@@ -331,18 +221,6 @@
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
         "dataType": 0,
         "samples": {
-          "/vanilla/behavior_pack/entities/axolotl.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-              "content": 4
-            }
-          ],
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/angry_bee/minecraft:behavior.melee_box_attack/",
-              "content": 2
-            }
-          ],
           "/vanilla/behavior_pack/entities/blaze.json": [
             {
               "path": "/minecraft:entity/component_groups/melee_mode/minecraft:behavior.melee_box_attack/",
@@ -361,88 +239,16 @@
               "content": 3
             }
           ],
-          "/vanilla/behavior_pack/entities/creaking.json": [
+          "/vanilla/behavior_pack/entities/dolphin.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:hostile_unobserved/minecraft:behavior.melee_box_attack/",
+              "path": "/minecraft:entity/component_groups/dolphin_adult/minecraft:behavior.melee_box_attack/",
               "content": 2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:docile_fox/minecraft:behavior.melee_box_attack/",
-              "content": 10
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:defending_fox/minecraft:behavior.melee_box_attack/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/iron_golem.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/melee_unit/minecraft:behavior.melee_box_attack/",
-              "content": 9
-            }
-          ],
-          "/vanilla/behavior_pack/entities/wolf.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-              "content": 5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_pigman.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-              "content": 5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_villager.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-              "content": 6
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-              "content": 7
             }
           ]
         }
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/axolotl.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 4,
-            "on_kill": {
-              "event": "killed_enemy_event",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/bee.json": [
-        {
-          "path": "/minecraft:entity/component_groups/angry_bee/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 2,
-            "attack_once": true,
-            "speed_multiplier": 1.4,
-            "on_attack": {
-              "event": "countdown_to_perish_event",
-              "target": "self"
-            }
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/blaze.json": [
         {
           "path": "/minecraft:entity/component_groups/melee_mode/minecraft:behavior.melee_box_attack/",
@@ -478,15 +284,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/creaking.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:hostile_unobserved/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 2,
-            "cooldown_time": 2
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/dolphin.json": [
         {
           "path": "/minecraft:entity/component_groups/dolphin_adult/minecraft:behavior.melee_box_attack/",
@@ -505,255 +302,6 @@
             "speed_multiplier": 1,
             "track_target": false,
             "require_complete_path": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/enderman.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:enderman_angry/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 2
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/endermite.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 3,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/fox.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:docile_fox/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 10,
-            "track_target": true,
-            "require_complete_path": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:defending_fox/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 1,
-            "track_target": true,
-            "require_complete_path": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/hoglin.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 4,
-            "speed_multiplier": 1,
-            "track_target": true,
-            "cooldown_time": 0.75
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 4,
-            "speed_multiplier": 1,
-            "track_target": true,
-            "cooldown_time": 2
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/husk.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "can_spread_on_fire": true,
-            "priority": 4
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/iron_golem.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 1,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/panda.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:panda_adult/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 2,
-            "attack_once": true,
-            "track_target": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:panda_aggressive/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 2,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/parched.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 4,
-            "track_target": true,
-            "speed_multiplier": 1.25
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/piglin.json": [
-        {
-          "path": "/minecraft:entity/component_groups/melee_unit/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 9,
-            "speed_multiplier": 1,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/piglin_brute.json": [
-        {
-          "path": "/minecraft:entity/component_groups/melee_unit/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 4,
-            "speed_multiplier": 1,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/pillager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 4,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/silverfish.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:silverfish_angry/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 4,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/skeleton.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 4,
-            "track_target": true,
-            "speed_multiplier": 1.25
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/spider.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 3,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/stray.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 4,
-            "track_target": true,
-            "speed_multiplier": 1.25
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/vindicator.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 3
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/warden.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 4,
-            "speed_multiplier": 1.2,
-            "melee_fov": 360
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 4,
-            "track_target": true,
-            "speed_multiplier": 1.25
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wolf.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 5
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zoglin.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 4,
-            "speed_multiplier": 1.15,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "can_spread_on_fire": true,
-            "priority": 4
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_pigman.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "priority": 5,
-            "speed_multiplier": 1.5
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "can_spread_on_fire": true,
-            "priority": 6
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-          "content": {
-            "can_spread_on_fire": true,
-            "priority": 7
           }
         }
       ]

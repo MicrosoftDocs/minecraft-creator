@@ -18,9 +18,9 @@ Allows the mob to send an event to another mob.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | cast_duration | *not set* | Decimal number | Time in seconds for the entire event sending process |  | 
-| event_choices | *not set* | Array of [Event Choices](#event-choices) items | List of possible events to send with conditions, weights, and targeting parameters. | Evocation Illager: `[{"min_activation_range":0,"max_activation_range":16,"cooldown_time":5,"cast_duration":3,"particle_color":"#FFB38033","weight":3,"filters":{"all_of":[{"test":"is_family","subject":"other","value":"sheep"},{"test":"is_color","subject":"other","value":"blue"}]},"start_sound_event":"cast.spell","sequence":[{"base_delay":2,"event":"wololo","sound_event":"prepare.wololo"}]}]` | 
+| event_choices | *not set* | Array of [Event Choices](#event-choices) items | List of possible events to send with conditions, weights, and targeting parameters. |  | 
 | look_at_target | true | Boolean true/false | If true, the mob will face the entity it sends an event to |  | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Evocation Illager: `3` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
 | sequence | *not set* | Array of [Sequence](#sequence) items | List of events to send |  | 
 
 ## Event Choices
@@ -50,44 +50,3 @@ Allows the mob to send an event to another mob.
 | sound_event | *not set* | String | Sound event to play when this step executes. |  | 
 
 ## Samples
-
-#### [Evocation Illager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/evocation_illager.json)
-
-
-```json
-"minecraft:behavior.send_event": {
-  "priority": 3,
-  "event_choices": [
-    {
-      "min_activation_range": 0,
-      "max_activation_range": 16,
-      "cooldown_time": 5,
-      "cast_duration": 3,
-      "particle_color": "#FFB38033",
-      "weight": 3,
-      "filters": {
-        "all_of": [
-          {
-            "test": "is_family",
-            "subject": "other",
-            "value": "sheep"
-          },
-          {
-            "test": "is_color",
-            "subject": "other",
-            "value": "blue"
-          }
-        ]
-      },
-      "start_sound_event": "cast.spell",
-      "sequence": [
-        {
-          "base_delay": 2,
-          "event": "wololo",
-          "sound_event": "prepare.wololo"
-        }
-      ]
-    }
-  ]
-}
-```

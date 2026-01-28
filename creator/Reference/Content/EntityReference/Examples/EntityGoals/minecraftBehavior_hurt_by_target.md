@@ -17,7 +17,7 @@ Allows the mob to target another mob that hurts them.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| alert_same_type | false | Boolean true/false | If true, nearby mobs of the same type will be alerted about the damage | Silverfish: `true` | 
+| alert_same_type | false | Boolean true/false | If true, nearby mobs of the same type will be alerted about the damage |  | 
 | entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entity types that this mob can target when hurt by them | Bogged: `[{"filters":{"test":"is_family","subject":"other","operator":"!=","value":"breeze"}}]`, Breeze: `[{"filters":{"all_of":[{"test":"is_family","subject":"other","operator":"!=","value":"skeleton"},{"test":"is_family","subject":"other","operator":"!=","value":"stray"},{"test":"is_family","subject":"other","operator":"!=","value":"zombie"},{"test":"is_family","subject":"other","operator":"!=","value":"husk"},{"test":"is_family","subject":"other","operator":"!=","value":"spider"},{"test":"is_family","subject":"other","operator":"!=","value":"cavespider"},{"test":"is_family","subject":"other","operator":"!=","value":"slime"}]}}]` | 
 | entity_types (Alternate 1) | *not set* | Object |  |  | 
 | hurt_owner | false | Boolean true/false | If true, the mob will hurt its owner and other mobs with the same owner as itself |  | 
@@ -42,7 +42,7 @@ List of entity types that this mob can target when hurt by them.
 
 ## Samples
 
-#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
+#### [Blaze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/blaze.json)
 
 
 ```json
@@ -126,134 +126,5 @@ List of entity types that this mob can target when hurt by them.
       }
     }
   ]
-}
-```
-
-#### [Creeper](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creeper.json)
-
-
-```json
-"minecraft:behavior.hurt_by_target": {
-  "priority": 2
-}
-```
-
-#### [Enderman](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/enderman.json)
-
-
-```json
-"minecraft:behavior.hurt_by_target": {
-  "priority": 3
-}
-```
-
-#### [Evocation Illager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/evocation_illager.json)
-
-
-```json
-"minecraft:behavior.hurt_by_target": {
-  "priority": 1,
-  "entity_types": {
-    "filters": {
-      "test": "is_family",
-      "subject": "other",
-      "operator": "!=",
-      "value": "illager"
-    },
-    "max_dist": 64
-  }
-}
-```
-
-#### [Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/husk.json)
-
-
-```json
-"minecraft:behavior.hurt_by_target": {
-  "priority": 1,
-  "entity_types": [
-    {
-      "filters": {
-        "test": "is_family",
-        "subject": "other",
-        "operator": "not",
-        "value": "breeze"
-      }
-    }
-  ]
-}
-```
-
-#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
-
-
-```json
-"minecraft:behavior.hurt_by_target": {
-  "priority": 1,
-  "hurt_owner": true
-}
-```
-
-#### [Parched](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parched.json)
-
-
-```json
-"minecraft:behavior.hurt_by_target": {
-  "priority": 2,
-  "entity_types": [
-    {
-      "filters": {
-        "test": "is_family",
-        "subject": "other",
-        "operator": "!=",
-        "value": "breeze"
-      }
-    }
-  ]
-}
-```
-
-#### [Ravager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ravager.json)
-
-
-```json
-"minecraft:behavior.hurt_by_target": {
-  "priority": 2,
-  "entity_types": {
-    "filters": {
-      "test": "is_family",
-      "subject": "other",
-      "operator": "!=",
-      "value": "illager"
-    },
-    "max_dist": 64
-  }
-}
-```
-
-#### [Shulker](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/shulker.json)
-
-
-```json
-"minecraft:behavior.hurt_by_target": {
-  "priority": 2,
-  "entity_types": {
-    "filters": {
-      "test": "is_family",
-      "subject": "other",
-      "operator": "!=",
-      "value": "shulker"
-    }
-  }
-}
-```
-
-#### [Silverfish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/silverfish.json)
-
-
-```json
-"minecraft:behavior.hurt_by_target": {
-  "priority": 1,
-  "alert_same_type": true
 }
 ```

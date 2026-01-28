@@ -1,0 +1,77 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "world_packs",
+  "title": "World Pack List",
+  "description": "The world_behavior_packs.json and world_resource_packs.json files define which add-on packs are active for a world. Located in the root of a world folder.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines active packs for this world"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "packs",
+      "title": "Packs",
+      "description": "An array of pack registrations defining which packs are active.",
+      "dataType": 17,
+      "subForm": {
+        "id": "pack_registration",
+        "title": "Pack Registration",
+        "description": "A reference to an add-on pack by UUID and version.",
+        "fields": [
+          {
+            "id": "pack_id",
+            "title": "Pack ID",
+            "description": "The UUID of the pack from its manifest.json header.uuid field.",
+            "dataType": 2,
+            "isRequired": true
+          },
+          {
+            "id": "version",
+            "title": "Version",
+            "description": "The version of the pack as an array of three integers [major, minor, patch].",
+            "dataType": 17,
+            "subForm": {
+              "id": "version_number",
+              "fields": [
+                {
+                  "id": "value",
+                  "title": "Version Component",
+                  "dataType": 0
+                }
+              ]
+            },
+            "isRequired": true
+          },
+          {
+            "id": "priority",
+            "title": "Priority",
+            "description": "Optional priority for pack loading order. Lower values load first.",
+            "dataType": 0
+          }
+        ]
+      }
+    }
+  ],
+  "note": "This file is a JSON array at the root level. Each element is a pack registration with pack_id (UUID) and version (array of integers). The world_behavior_packs.json file lists behavior packs, while world_resource_packs.json lists resource packs.",
+  "samples": {
+    "sample_world/world_behavior_packs.json": [
+      {
+        "path": "example",
+        "content": [
+          {
+            "pack_id": "12345678-1234-1234-1234-123456789abc",
+            "version": [1, 0, 0]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -85,7 +85,7 @@
         "samples": {
           "/vanilla/behavior_pack/entities/snow_golem.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/2/filters/",
+              "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions[2]/filters/",
               "content": "=="
             }
           ]
@@ -144,7 +144,7 @@
         "samples": {
           "/vanilla/behavior_pack/entities/snow_golem.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/2/filters/",
+              "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions[2]/filters/",
               "content": true
             }
           ]
@@ -157,13 +157,13 @@
         "samples": {
           "/vanilla/behavior_pack/entities/blaze.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+              "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions[0]/filters/",
               "content": "in_contact_with_water"
             }
           ],
-          "/vanilla/behavior_pack/entities/enderman.json": [
+          "/vanilla/behavior_pack/entities/snow_golem.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/1/filters/",
+              "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions[2]/filters/",
               "content": "in_contact_with_water"
             }
           ]
@@ -183,15 +183,7 @@
       ],
       "/vanilla/behavior_pack/entities/blaze.json": [
         {
-          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
-          "content": {
-            "test": "in_contact_with_water"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/enderman.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/1/filters/",
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions[0]/filters/",
           "content": {
             "test": "in_contact_with_water"
           }
@@ -199,7 +191,7 @@
       ],
       "/vanilla/behavior_pack/entities/snow_golem.json": [
         {
-          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/2/filters/",
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions[2]/filters/",
           "content": {
             "test": "in_contact_with_water",
             "operator": "==",
@@ -209,7 +201,7 @@
       ],
       "/vanilla/behavior_pack/entities/strider.json": [
         {
-          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions[0]/filters/",
           "content": {
             "test": "in_contact_with_water"
           }

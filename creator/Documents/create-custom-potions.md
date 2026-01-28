@@ -298,7 +298,7 @@ From this point on, we're going to be editing TypeScript files directly. You can
 
 ### Testing
 
-Open the **.env** configuration file in Visual Studio Code. Change the `PROJECT_NAME` variable to something like `"fire_resistance_potion"` (this needs to be a valid folder name, so no spaces). If you want to test your new add-on in the production release of Minecraft: Bedrock Edition, leave the `MINECRAFT_PRODUCT` variable set to `"BedrockUWP"`; change it to `"PreviewUWP"` if you want to test in the Preview release.
+Open the **.env** configuration file in Visual Studio Code. Change the `PROJECT_NAME` variable to something like `"fire_resistance_potion"` (this needs to be a valid folder name, so no spaces). If you want to test your new add-on in the production release of Minecraft: Bedrock Edition, leave the `MINECRAFT_PRODUCT` variable set to `"BedrockGDK"`; change it to `"PreviewGDK"` if you want to test in the Preview release.
 
 > [!NOTE]
 > These instructions assume you've installed Minecraft in a standard location, and that you've taken other system configuration steps like setting execution policy properly. Read [Scripting with TypeScript](./scripting/next-steps.md) for help with those.

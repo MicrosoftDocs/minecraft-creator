@@ -17,31 +17,13 @@ Allows the mob to be ridden by the player after being tamed.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Camel Husk: `1` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
 
 ## Samples
 
-#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
+#### [Skeleton Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton_horse.json)
 
 
 ```json
 "minecraft:behavior.player_ride_tamed": {}
-```
-
-#### [Camel Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel_husk.json)
-
-
-```json
-"minecraft:behavior.player_ride_tamed": {
-  "priority": 1
-}
-```
-
-#### [Nautilus](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/nautilus.json)
-
-
-```json
-"minecraft:behavior.player_ride_tamed": {
-  "priority": 0
-}
 ```

@@ -14,10 +14,3 @@ Determines that this entity can join an existing raid.
 
 
 ## Samples
-
-#### [Evocation Illager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/evocation_illager.json)
-
-
-```json
-"minecraft:can_join_raid": {}
-```

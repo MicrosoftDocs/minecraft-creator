@@ -31,12 +31,6 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/happy_ghast.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_immobile/minecraft:is_collidable/",
-          "content": {}
-        }
-      ],
       "/vanilla/behavior_pack/entities/shulker.json": [
         {
           "path": "/minecraft:entity/components/minecraft:is_collidable/",

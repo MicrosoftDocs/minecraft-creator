@@ -17,10 +17,10 @@ Tests the current difficulty level of the game.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Villager v2: `"!="` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
 | test | *not set* | String |  | Arrow: `"is_difficulty"` | 
-| value | *not set* | [Value](#value-choices) choices | (Required) The game's difficulty level to test | Arrow: `"hard"`, Bee: `"easy"`, `"normal"` | 
+| value | *not set* | [Value](#value-choices) choices | (Required) The game's difficulty level to test | Arrow: `"hard"`, Cave Spider: `"easy"`, `"normal"` | 
 
 ### Operator choices
 
@@ -82,9 +82,9 @@ At Short (using Defaults)..:
 }
 ```
 
-#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
+#### [Cave Spider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cave_spider.json)
 
-At /minecraft:entity/events/attacked/sequence/1/filters/: 
+At /minecraft:entity/events/minecraft:become_hostile/sequence[1]/filters/: 
 
 ```json
 {
@@ -93,23 +93,11 @@ At /minecraft:entity/events/attacked/sequence/1/filters/:
 }
 ```
 
-At /minecraft:entity/events/attacked/sequence/2/filters/: 
+At /minecraft:entity/events/minecraft:become_hostile/sequence[2]/filters/: 
 
 ```json
 {
   "test": "is_difficulty",
   "value": "normal"
-}
-```
-
-#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
-
-At /minecraft:entity/components/minecraft:damage_sensor/triggers/0/on_damage/filters/1/: 
-
-```json
-{
-  "test": "is_difficulty",
-  "operator": "!=",
-  "value": "peaceful"
 }
 ```

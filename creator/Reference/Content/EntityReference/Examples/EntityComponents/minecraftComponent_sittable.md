@@ -22,7 +22,7 @@ Defines the entity's 'sit' state.
 
 ## Samples
 
-#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
+#### [Parrot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parrot.json)
 
 
 ```json

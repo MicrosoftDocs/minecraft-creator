@@ -17,7 +17,7 @@ Defines a set of conditions under which an entity should take damage.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| damage_conditions | *not set* | Array of [Damage Conditions](#damage-conditions) items | List of damage conditions that when met can cause damage to the entity. | Allay: `[{"filters":{"test":"in_lava","subject":"self"},"cause":"lava","damage_per_tick":4}]` | 
+| damage_conditions | *not set* | Array of [Damage Conditions](#damage-conditions) items | List of damage conditions that when met can cause damage to the entity. | Allay: `[{"filters":{"test":"in_lava","subject":"self"},"cause":"lava","damage_per_tick":4}]`, Armor Stand: `[{"filters":{"test":"in_lava","subject":"self","operator":"==","value":true},"cause":"lava","damage_per_tick":4}]` | 
 
 ## Damage Conditions
 List of damage conditions that when met can cause damage to the entity.
@@ -80,96 +80,6 @@ List of damage conditions that when met can cause damage to the entity.
     {
       "filters": {
         "test": "in_contact_with_water"
-      },
-      "cause": "drowning",
-      "damage_per_tick": 1
-    }
-  ]
-}
-```
-
-#### [Creaking](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creaking.json)
-
-
-```json
-"minecraft:hurt_on_condition": {
-  "damage_conditions": [
-    {
-      "filters": {
-        "test": "in_lava"
-      },
-      "cause": "lava",
-      "damage_per_tick": 4
-    }
-  ]
-}
-```
-
-#### [Enderman](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/enderman.json)
-
-
-```json
-"minecraft:hurt_on_condition": {
-  "damage_conditions": [
-    {
-      "filters": {
-        "test": "in_lava",
-        "subject": "self"
-      },
-      "cause": "lava",
-      "damage_per_tick": 4
-    },
-    {
-      "filters": {
-        "test": "in_contact_with_water"
-      },
-      "cause": "drowning",
-      "damage_per_tick": 1
-    }
-  ]
-}
-```
-
-#### [Snow Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/snow_golem.json)
-
-
-```json
-"minecraft:hurt_on_condition": {
-  "damage_conditions": [
-    {
-      "filters": {
-        "test": "in_lava",
-        "subject": "self",
-        "operator": "==",
-        "value": true
-      },
-      "cause": "lava",
-      "damage_per_tick": 4
-    },
-    {
-      "filters": {
-        "all_of": [
-          {
-            "test": "is_temperature_value",
-            "operator": ">",
-            "value": 1
-          },
-          {
-            "test": "has_component",
-            "subject": "self",
-            "operator": "!=",
-            "value": "minecraft:effect.fire_resistance"
-          }
-        ]
-      },
-      "cause": "temperature",
-      "damage_per_tick": 1
-    },
-    {
-      "filters": {
-        "test": "in_contact_with_water",
-        "operator": "==",
-        "value": true
       },
       "cause": "drowning",
       "damage_per_tick": 1

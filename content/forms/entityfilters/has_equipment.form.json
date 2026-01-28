@@ -71,19 +71,13 @@
           }
         ],
         "samples": {
-          "/vanilla/behavior_pack/entities/enderman.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:looked_at/filters/",
-              "content": "head"
-            }
-          ],
           "/vanilla/behavior_pack/entities/pig.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:interact/interactions/0/on_interact/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:interact/interactions[0]/on_interact/filters/",
               "content": "hand"
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:interact/interactions/0/on_interact/filters/all_of/1/",
+              "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:interact/interactions[0]/on_interact/filters/all_of[1]/",
               "content": "hand"
             }
           ]
@@ -146,15 +140,7 @@
             "title": "Not",
             "description": "Test for inequality."
           }
-        ],
-        "samples": {
-          "/vanilla/behavior_pack/entities/enderman.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:looked_at/filters/",
-              "content": "not"
-            }
-          ]
-        }
+        ]
       },
       {
         "id": "subject",
@@ -200,15 +186,13 @@
           }
         ],
         "samples": {
-          "/vanilla/behavior_pack/entities/enderman.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:looked_at/filters/",
-              "content": "other"
-            }
-          ],
           "/vanilla/behavior_pack/entities/pig.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:interact/interactions/0/on_interact/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:interact/interactions[0]/on_interact/filters/",
+              "content": "other"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:interact/interactions[0]/on_interact/filters/all_of[1]/",
               "content": "other"
             }
           ]
@@ -220,29 +204,23 @@
         "description": "(Required) The item name to look for",
         "dataType": 2,
         "samples": {
-          "/vanilla/behavior_pack/entities/enderman.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:looked_at/filters/",
-              "content": "carved_pumpkin"
-            }
-          ],
           "/vanilla/behavior_pack/entities/pig.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:interact/interactions/0/on_interact/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:interact/interactions[0]/on_interact/filters/",
               "content": "saddle"
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:interact/interactions/0/on_interact/filters/all_of/1/",
+              "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:interact/interactions[0]/on_interact/filters/all_of[1]/",
               "content": "shears"
             }
           ],
           "/vanilla/behavior_pack/entities/strider.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:strider_saddled/minecraft:interact/interactions/0/on_interact/filters/all_of/1/",
+              "path": "/minecraft:entity/component_groups/minecraft:strider_saddled/minecraft:interact/interactions[0]/on_interact/filters/all_of[1]/",
               "content": "shears"
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:strider_unsaddled/minecraft:interact/interactions/0/on_interact/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:strider_unsaddled/minecraft:interact/interactions[0]/on_interact/filters/",
               "content": "saddle"
             }
           ]
@@ -253,15 +231,13 @@
         "title": "Test",
         "dataType": 2,
         "samples": {
-          "/vanilla/behavior_pack/entities/enderman.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:looked_at/filters/",
-              "content": "has_equipment"
-            }
-          ],
           "/vanilla/behavior_pack/entities/pig.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:interact/interactions/0/on_interact/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:interact/interactions[0]/on_interact/filters/",
+              "content": "has_equipment"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:interact/interactions[0]/on_interact/filters/all_of[1]/",
               "content": "has_equipment"
             }
           ]
@@ -279,21 +255,9 @@
           "content": "{ \"test\": \"has_equipment\", \"value\": \"dirt\" }"
         }
       ],
-      "/vanilla/behavior_pack/entities/enderman.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:looked_at/filters/",
-          "content": {
-            "test": "has_equipment",
-            "domain": "head",
-            "subject": "other",
-            "operator": "not",
-            "value": "carved_pumpkin"
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/pig.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:interact/interactions/0/on_interact/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:interact/interactions[0]/on_interact/filters/",
           "content": {
             "test": "has_equipment",
             "subject": "other",
@@ -302,7 +266,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:interact/interactions/0/on_interact/filters/all_of/1/",
+          "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:interact/interactions[0]/on_interact/filters/all_of[1]/",
           "content": {
             "test": "has_equipment",
             "subject": "other",
@@ -313,7 +277,7 @@
       ],
       "/vanilla/behavior_pack/entities/strider.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:strider_saddled/minecraft:interact/interactions/0/on_interact/filters/all_of/1/",
+          "path": "/minecraft:entity/component_groups/minecraft:strider_saddled/minecraft:interact/interactions[0]/on_interact/filters/all_of[1]/",
           "content": {
             "test": "has_equipment",
             "subject": "other",
@@ -322,7 +286,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:strider_unsaddled/minecraft:interact/interactions/0/on_interact/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:strider_unsaddled/minecraft:interact/interactions[0]/on_interact/filters/",
           "content": {
             "test": "has_equipment",
             "subject": "other",

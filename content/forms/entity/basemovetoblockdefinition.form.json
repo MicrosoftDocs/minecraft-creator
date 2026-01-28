@@ -1,0 +1,50 @@
+{
+  "id": "BaseMoveToBlockDefinition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "BaseMoveToBlockDefinition",
+    "title": "Entity BaseMoveToBlockDefinition",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "search_count",
+        "title": "Search Count",
+        "description": "The number of randomly selected blocks each tick that the mob will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick.",
+        "dataType": 0,
+        "defaultValue": 10
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this goal.",
+        "dataType": 3,
+        "defaultValue": 1
+      }
+    ]
+  }
+}

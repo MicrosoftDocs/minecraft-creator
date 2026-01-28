@@ -46,19 +46,6 @@
         "dataType": 2
       }
     ],
-    "samples": {
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:home/",
-          "content": {}
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:home/",
-          "content": {}
-        }
-      ]
-    }
+    "samples": {}
   }
 }

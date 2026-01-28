@@ -83,11 +83,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/fox.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers/0/filters/all_of/0/",
+              "path": "/minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers[0]/filters/all_of[0]/",
               "content": "!="
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers/1/filters/all_of/0/",
+              "path": "/minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers[1]/filters/all_of[0]/",
               "content": "!="
             }
           ]
@@ -139,7 +139,7 @@
         "samples": {
           "/vanilla/behavior_pack/entities/fox.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_day/minecraft:behavior.nap/can_nap_filters/all_of/3/",
+              "path": "/minecraft:entity/component_groups/minecraft:fox_day/minecraft:behavior.nap/can_nap_filters/all_of[3]/",
               "content": "self"
             }
           ]
@@ -153,11 +153,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/fox.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers/0/filters/all_of/0/",
+              "path": "/minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers[0]/filters/all_of[0]/",
               "content": "thunderstorm"
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers/1/filters/all_of/0/",
+              "path": "/minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers[1]/filters/all_of[0]/",
               "content": "thunderstorm"
             }
           ]
@@ -170,11 +170,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/fox.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers/0/filters/all_of/0/",
+              "path": "/minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers[0]/filters/all_of[0]/",
               "content": "weather_at_position"
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers/1/filters/all_of/0/",
+              "path": "/minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers[1]/filters/all_of[0]/",
               "content": "weather_at_position"
             }
           ]
@@ -194,7 +194,7 @@
       ],
       "/vanilla/behavior_pack/entities/fox.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers/0/filters/all_of/0/",
+          "path": "/minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers[0]/filters/all_of[0]/",
           "content": {
             "test": "weather_at_position",
             "operator": "!=",
@@ -202,7 +202,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers/1/filters/all_of/0/",
+          "path": "/minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers[1]/filters/all_of[0]/",
           "content": {
             "test": "weather_at_position",
             "operator": "!=",
@@ -210,14 +210,14 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:fox_day/minecraft:environment_sensor/triggers/0/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:fox_day/minecraft:environment_sensor/triggers[0]/filters/",
           "content": {
             "test": "weather_at_position",
             "value": "thunderstorm"
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:fox_day/minecraft:behavior.nap/can_nap_filters/all_of/3/",
+          "path": "/minecraft:entity/component_groups/minecraft:fox_day/minecraft:behavior.nap/can_nap_filters/all_of[3]/",
           "content": {
             "test": "weather_at_position",
             "subject": "self",
@@ -226,7 +226,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:fox_night/minecraft:environment_sensor/triggers/0/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:fox_night/minecraft:environment_sensor/triggers[0]/filters/",
           "content": {
             "test": "weather_at_position",
             "value": "thunderstorm"

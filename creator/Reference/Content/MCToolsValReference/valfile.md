@@ -1,49 +1,50 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "MCTools Validation Rules Documentation - minecraft:valfile"
-description: "Describes the minecraft:valfile mctools validation rules"
+title: "Validation Rules - File Validation"
+description: "Documentation for File Validation validation rules in Minecraft Creator Tools"
 ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
-
-# MCTools Validation Rules Documentation - minecraft:valfile
-
+# File Validation Validation Rules
 Validates that content files are properly formatted and parseable. Catches JSON syntax errors and encoding issues that would prevent content from loading.
+## Rules Summary
+| Rule ID | Rule | Severity | Auto-Fix |
+|:--------|:-----|:---------|:---------|
+| [VALFILE102](#valfile102) | Invalid JSON | 🔴 Error |  |
+| [VALFILE103](#valfile103) | Empty File | 🟡 Warning |  |
+| [VALFILE104](#valfile104) | Binary Content | 🔴 Error |  |
 
+---
+## Rule Details
 
-## File Validation Validation Rules
+### VALFILE102
+**🔴 Invalid JSON**  
+**Severity**: Error
 
+#### What This Checks
+Error when a JSON file contains syntax errors and cannot be parsed. Check for missing commas, brackets, quotes, or invalid escape sequences.
 
-### VALFILE102: Invalid JSON
+#### Technical Details
+Data contains the JSON parse error message.
 
-**Rule ID:** `VALFILE102`
+### VALFILE103
+**🟡 Empty File**  
+**Severity**: Warning
 
-**Severity:** Info
+#### What This Checks
+Warning when a JSON file is empty or contains only whitespace. The file may be incomplete or accidentally cleared.
 
-**What it checks:** Error when a JSON file contains syntax errors and cannot be parsed. Check for missing commas, brackets, quotes, or invalid escape sequences.
+#### Technical Details
+Data contains the path to the empty file.
 
-**Technical details:** Data contains the JSON parse error message.
+### VALFILE104
+**🔴 Binary Content**  
+**Severity**: Error
 
+#### What This Checks
+Error when a file expected to contain text/JSON data contains binary or non-string content. The file may be corrupted or the wrong type.
 
-### VALFILE103: Empty File
-
-**Rule ID:** `VALFILE103`
-
-**Severity:** Info
-
-**What it checks:** Warning when a JSON file is empty or contains only whitespace. The file may be incomplete or accidentally cleared.
-
-**Technical details:** Data contains the path to the empty file.
-
-
-### VALFILE104: Binary Content
-
-**Rule ID:** `VALFILE104`
-
-**Severity:** Info
-
-**What it checks:** Error when a file expected to contain text/JSON data contains binary or non-string content. The file may be corrupted or the wrong type.
-
-**Technical details:** Data contains the path to the file with binary content.
+#### Technical Details
+Data contains the path to the file with binary content.

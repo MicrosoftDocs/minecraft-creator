@@ -15,7 +15,7 @@ Sets that this entity is currently tamed.
 
 ## Samples
 
-#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
+#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
 
 
 ```json

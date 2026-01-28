@@ -57,6 +57,6 @@ The content log file is stored in the `logging` folder. You can find the exact l
 
 ### Example paths
 
-- Windows UWP: `%APPDATA%\Minecraft Bedrock\logs\`
+- Windows: `%APPDATA%\Minecraft Bedrock\logs\`
 - Android: `*root storage location*/games/com.mojang/logs` *(varies whether the app is installed on the phone or SD card)*
 - iOS:`*root storage location*/Minecraft/game/com.mojang/logs` *(varies based on where the external storage is located for the app)*

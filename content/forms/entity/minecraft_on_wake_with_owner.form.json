@@ -24,21 +24,7 @@
         "id": "event",
         "title": "Event",
         "description": "The event to run when the conditions for this trigger are met.",
-        "dataType": 22,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_tame/minecraft:on_wake_with_owner/",
-              "content": "minecraft:pet_slept_with_owner"
-            }
-          ],
-          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_tame/minecraft:on_wake_with_owner/",
-              "content": "minecraft:pet_slept_with_owner"
-            }
-          ]
-        }
+        "dataType": 22
       },
       {
         "id": "filters",
@@ -51,42 +37,9 @@
         "title": "Target",
         "description": "The target of the event.",
         "defaultValue": "self",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_tame/minecraft:on_wake_with_owner/",
-              "content": "self"
-            }
-          ],
-          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_tame/minecraft:on_wake_with_owner/",
-              "content": "self"
-            }
-          ]
-        }
+        "dataType": 2
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/cat.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:cat_tame/minecraft:on_wake_with_owner/",
-          "content": {
-            "event": "minecraft:pet_slept_with_owner",
-            "target": "self"
-          }
-        }
-      ],
-      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-        {
-          "path": "/minecraft:entity/component_groups/mike_eliz:eliza_tame/minecraft:on_wake_with_owner/",
-          "content": {
-            "event": "minecraft:pet_slept_with_owner",
-            "target": "self"
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

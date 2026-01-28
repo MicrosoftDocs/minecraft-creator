@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a feature document structure"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "feature_document",
+  "title": "Feature Document",
+  "description": "A Minecraft Bedrock Edition feature definition document. Features are world generation elements like ore deposits, trees, geodes, and other placeable structures. They define the blocks to place and how to arrange them.",
+  "fields": [
+    {
+      "dataType": 25,
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of this feature file. Use '1.13.0' or later.",
+      "isRequired": true
+    }
+  ]
+}

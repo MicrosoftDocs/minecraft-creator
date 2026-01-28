@@ -114,39 +114,7 @@
         "id": "damage",
         "title": "Damage",
         "description": "Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it",
-        "dataType": 18,
-        "samples": {
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:attack/",
-              "content": 6
-            }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:sheep_sheared/minecraft:attack/",
-              "content": 3
-            }
-          ],
-          "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:attack/",
-              "content": 6
-            }
-          ],
-          "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:sheep_sheared/minecraft:attack/",
-              "content": 3
-            }
-          ],
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:attack/",
-              "content": 400
-            }
-          ]
-        }
+        "dataType": 18
       },
       {
         "id": "effect_duration",
@@ -162,71 +130,6 @@
         "dataType": 2
       }
     ],
-    "samples": {
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:attack/",
-          "content": {
-            "damage": 6
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:sheep_sheared/minecraft:attack/",
-          "content": {
-            "damage": 3
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:attack/",
-          "content": {
-            "damage": 6
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:sheep_sheared/minecraft:attack/",
-          "content": {
-            "damage": 3
-          }
-        }
-      ],
-      "/samples/behavior_pack_sample/entities/cow.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:attack/",
-          "content": {
-            "damage": 3
-          }
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:attack/",
-          "content": {
-            "damage": 400
-          }
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:attack/",
-          "content": {
-            "damage": 6
-          }
-        }
-      ],
-      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:attack/",
-          "content": {
-            "damage": 3
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

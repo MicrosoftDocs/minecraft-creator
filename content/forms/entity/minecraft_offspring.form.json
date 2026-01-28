@@ -90,7 +90,49 @@
         "id": "offspring_pairs",
         "title": "Offspring Pairs",
         "description": "The map of entity to offspring definitions that this entity can make offspring with.",
-        "dataType": 17
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/cow.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:offspring/",
+              "content": {
+                "minecraft:cow": "minecraft:cow"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:offspring/",
+              "content": {
+                "minecraft:dolphin": "minecraft:dolphin"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:offspring/",
+              "content": {
+                "minecraft:drowned": "minecraft:drowned"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:offspring/",
+              "content": {
+                "minecraft:fox": "minecraft:fox"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:offspring/",
+              "content": {
+                "minecraft:frog": "minecraft:tadpole"
+              }
+            }
+          ]
+        }
       },
       {
         "id": "parent_centric_attribute_blending",
@@ -102,7 +144,17 @@
         "id": "property_inheritance",
         "title": "Property Inheritance",
         "description": "List of Entity Properties that should be inherited from the parent entities and potentially mutated.",
-        "dataType": 17
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/cow.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:offspring/",
+              "content": {
+                "minecraft:climate_variant": {}
+              }
+            }
+          ]
+        }
       },
       {
         "id": "random_extra_variant_mutation_interval",
@@ -120,48 +172,59 @@
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/armadillo.json": [],
-      "/vanilla/behavior_pack/entities/axolotl.json": [],
-      "/vanilla/behavior_pack/entities/bee.json": [],
-      "/vanilla/behavior_pack/entities/camel.json": [],
-      "/vanilla/behavior_pack/entities/cat.json": [],
-      "/vanilla/behavior_pack/entities/chicken.json": [],
-      "/vanilla/behavior_pack/entities/cow.json": [],
-      "/vanilla/behavior_pack/entities/dolphin.json": [],
-      "/vanilla/behavior_pack/entities/donkey.json": [],
-      "/vanilla/behavior_pack/entities/drowned.json": [],
-      "/vanilla/behavior_pack/entities/fox.json": [],
-      "/vanilla/behavior_pack/entities/frog.json": [],
-      "/vanilla/behavior_pack/entities/glow_squid.json": [],
-      "/vanilla/behavior_pack/entities/goat.json": [],
-      "/vanilla/behavior_pack/entities/happy_ghast.json": [],
-      "/vanilla/behavior_pack/entities/hoglin.json": [],
-      "/vanilla/behavior_pack/entities/horse.json": [],
-      "/vanilla/behavior_pack/entities/husk.json": [],
-      "/vanilla/behavior_pack/entities/llama.json": [],
-      "/vanilla/behavior_pack/entities/mooshroom.json": [],
-      "/vanilla/behavior_pack/entities/mule.json": [],
-      "/vanilla/behavior_pack/entities/nautilus.json": [],
-      "/vanilla/behavior_pack/entities/ocelot.json": [],
-      "/vanilla/behavior_pack/entities/panda.json": [],
-      "/vanilla/behavior_pack/entities/pig.json": [],
-      "/vanilla/behavior_pack/entities/piglin.json": [],
-      "/vanilla/behavior_pack/entities/polar_bear.json": [],
-      "/vanilla/behavior_pack/entities/rabbit.json": [],
-      "/vanilla/behavior_pack/entities/sheep.json": [],
-      "/vanilla/behavior_pack/entities/skeleton_horse.json": [],
-      "/vanilla/behavior_pack/entities/sniffer.json": [],
-      "/vanilla/behavior_pack/entities/squid.json": [],
-      "/vanilla/behavior_pack/entities/strider.json": [],
-      "/vanilla/behavior_pack/entities/trader_llama.json": [],
-      "/vanilla/behavior_pack/entities/turtle.json": [],
-      "/vanilla/behavior_pack/entities/villager_v2.json": [],
-      "/vanilla/behavior_pack/entities/wolf.json": [],
-      "/vanilla/behavior_pack/entities/zoglin.json": [],
-      "/vanilla/behavior_pack/entities/zombie.json": [],
-      "/vanilla/behavior_pack/entities/zombie_horse.json": [],
-      "/vanilla/behavior_pack/entities/zombie_pigman.json": [],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": []
+      "/vanilla/behavior_pack/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:offspring/",
+          "content": {
+            "offspring_pairs": {
+              "minecraft:cow": "minecraft:cow"
+            },
+            "property_inheritance": {
+              "minecraft:climate_variant": {}
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:offspring/",
+          "content": {
+            "offspring_pairs": {
+              "minecraft:dolphin": "minecraft:dolphin"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:offspring/",
+          "content": {
+            "offspring_pairs": {
+              "minecraft:drowned": "minecraft:drowned"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:offspring/",
+          "content": {
+            "offspring_pairs": {
+              "minecraft:fox": "minecraft:fox"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/frog.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:offspring/",
+          "content": {
+            "offspring_pairs": {
+              "minecraft:frog": "minecraft:tadpole"
+            }
+          }
+        }
+      ]
     }
   }
 }

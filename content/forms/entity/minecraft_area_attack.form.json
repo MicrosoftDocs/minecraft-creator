@@ -174,12 +174,6 @@
               "path": "/minecraft:entity/component_groups/minecraft:slime_medium/minecraft:area_attack/",
               "content": "entity_attack"
             }
-          ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:full_puff/minecraft:area_attack/",
-              "content": "contact"
-            }
           ]
         }
       },
@@ -223,12 +217,6 @@
               "content": 3
             }
           ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:full_puff/minecraft:area_attack/",
-              "content": 2
-            }
-          ],
           "/vanilla/behavior_pack/entities/slime.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:slime_large/minecraft:area_attack/",
@@ -256,12 +244,6 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:slime_medium/minecraft:area_attack/",
               "content": 0.15
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:full_puff/minecraft:area_attack/",
-              "content": 0.2
             }
           ]
         }
@@ -303,54 +285,6 @@
                     "test": "is_family",
                     "subject": "other",
                     "value": "irongolem"
-                  }
-                ]
-              }
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:full_puff/minecraft:area_attack/",
-              "content": {
-                "any_of": [
-                  {
-                    "all_of": [
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "mob"
-                      },
-                      {
-                        "any_of": [
-                          {
-                            "test": "is_family",
-                            "subject": "other",
-                            "value": "axolotl"
-                          },
-                          {
-                            "test": "is_family",
-                            "subject": "other",
-                            "operator": "not",
-                            "value": "aquatic"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "all_of": [
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "player"
-                      },
-                      {
-                        "test": "has_ability",
-                        "subject": "other",
-                        "operator": "not",
-                        "value": "instabuild"
-                      }
-                    ]
                   }
                 ]
               }
@@ -478,60 +412,6 @@
                   "test": "is_family",
                   "subject": "other",
                   "value": "irongolem"
-                }
-              ]
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/pufferfish.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:full_puff/minecraft:area_attack/",
-          "content": {
-            "damage_range": 0.2,
-            "damage_per_tick": 2,
-            "damage_cooldown": 0.5,
-            "cause": "contact",
-            "entity_filter": {
-              "any_of": [
-                {
-                  "all_of": [
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "mob"
-                    },
-                    {
-                      "any_of": [
-                        {
-                          "test": "is_family",
-                          "subject": "other",
-                          "value": "axolotl"
-                        },
-                        {
-                          "test": "is_family",
-                          "subject": "other",
-                          "operator": "not",
-                          "value": "aquatic"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "all_of": [
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "player"
-                    },
-                    {
-                      "test": "has_ability",
-                      "subject": "other",
-                      "operator": "not",
-                      "value": "instabuild"
-                    }
-                  ]
                 }
               ]
             }

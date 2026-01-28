@@ -20,8 +20,8 @@ Legacy geometry format using box-mapped UVs. This format uses the 'geometry.<nam
 | debug | *not set* | Boolean true/false |  |  | 
 | format_version | *not set* | Version |  |  | 
 | geometry.[a-zA-Z0-9_.'-:]+ | *not set* | [+ Geometry](#+-geometry) item |  |  | 
-| bones.inflate | *not set* | Decimal number | Deprecated - no longer in use. Expands or shrinks the bone's cubes. This property has been deprecated in newer geometry format versions. The inflate property on bones was available in geometry v1.8.0 through v1.14.0 but is no longer used in modern formats. Use cube-level inflate instead. |  | 
-| bones.reset | *not set* | Boolean true/false | Deprecated - no longer in use. When true, resets the bone to its bind pose before applying animations. This property has been deprecated in newer geometry format versions. The reset property on bones was available in geometry v1.8.0 through v1.14.0 but is no longer used in modern formats. |  | 
+| bones.inflate | *not set* | Decimal number | Deprecated - no longer in use. Expands or shrinks the bone's cubes. This property has been deprecated in newer geometry format versions. This property no longer works after format versions of at least 1.16.0. The inflate property on bones was available in geometry v1.8.0 through v1.14.0 but is no longer used in modern formats. Use cube-level inflate instead. |  | 
+| bones.reset | *not set* | Boolean true/false | Deprecated - no longer in use. When true, resets the bone to its bind pose before applying animations. This property has been deprecated in newer geometry format versions. This property no longer works after format versions of at least 1.16.0. The reset property on bones was available in geometry v1.8.0 through v1.14.0 but is no longer used in modern formats. |  | 
 
 ## + Geometry
 

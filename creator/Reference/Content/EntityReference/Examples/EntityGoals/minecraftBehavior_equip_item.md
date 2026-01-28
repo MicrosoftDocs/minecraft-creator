@@ -47,12 +47,3 @@ The entity puts on the desired equipment.
   "priority": 4
 }
 ```
-
-#### [Piglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin.json)
-
-
-```json
-"minecraft:behavior.equip_item": {
-  "priority": 5
-}
-```

@@ -30,259 +30,81 @@
         "title": "Cooldown",
         "description": "Total time that the goal is on cooldown before it can be used again.",
         "defaultValue": 0.2,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 0.25
-            }
-          ],
-          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 0.25
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "drop_item_chance",
         "title": "Drop Item Chance",
         "description": "The percent chance the entity will drop an item when using this goal.",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 0.7
-            }
-          ],
-          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 0.7
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "entity_types",
         "title": "Entity Types",
         "description": "The list of conditions another entity must meet to be a valid target to drop an item for.",
-        "dataType": 20,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": [
-                {
-                  "filters": {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "player"
-                  },
-                  "max_dist": 6
-                }
-              ]
-            }
-          ],
-          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": [
-                {
-                  "filters": {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "player"
-                  },
-                  "max_dist": 6
-                }
-              ]
-            }
-          ]
-        }
+        "dataType": 20
       },
       {
         "id": "goal_radius",
         "title": "Goal Radius",
-        "description": "Distance in blocks within the entity considers it has reached it's target position.",
+        "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot.",
         "defaultValue": 0.5,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 1
-            }
-          ],
-          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "loot_table",
         "title": "Loot Table",
         "description": "The loot table that contains the possible loot the entity can drop with this goal.",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": "loot_tables/entities/cat_gift.json"
-            }
-          ],
-          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": "loot_tables/entities/eliza_gift.json"
-            }
-          ]
-        }
+        "dataType": 2
       },
       {
         "id": "max_head_look_at_height",
         "title": "Max Head Look At Height",
         "description": "The maximum height the entities head will look at when dropping the item. The entity will always be looking at its target.",
         "defaultValue": 10,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 10
-            }
-          ],
-          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 10
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "minimum_teleport_distance",
         "title": "Minimum Teleport Distance",
         "description": "If the target position is farther away than this distance on any tick, the entity will teleport to the target position.",
         "defaultValue": 2,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 2
-            }
-          ],
-          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 2
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "offering_distance",
         "title": "Offering Distance",
         "description": "The preferred distance the entity tries to be from the target it is dropping an item for.",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 5
-            }
-          ],
-          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 5
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "on_drop_attempt",
         "title": "Drop Attempt",
         "description": "The event to trigger when the entity attempts to drop an item.",
-        "dataType": 22,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": {
-                "event": "minecraft:cat_gifted_owner",
-                "target": "self"
-              }
-            }
-          ],
-          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": {
-                "event": "mike_eliz:eliza_gifted_owner",
-                "target": "self"
-              }
-            }
-          ]
-        }
+        "dataType": 22
       },
       {
         "id": "search_count",
         "title": "Search Count",
-        "description": "The number of blocks each tick that the entity will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick.",
+        "description": "The number of randomly selected blocks each tick that the mob will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick.",
         "defaultValue": 0,
         "dataType": 0
       },
       {
         "id": "search_height",
         "title": "Search Height",
-        "description": "The Height in blocks the entity will search within to find a valid target position.",
+        "description": "The height in blocks the entity will search within to find a valid target position.",
         "defaultValue": 1,
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 2
-            }
-          ],
-          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 2
-            }
-          ]
-        }
+        "dataType": 0
       },
       {
         "id": "search_range",
         "title": "Search Range",
         "description": "The distance in blocks the entity will search within to find a valid target position.",
         "defaultValue": 0,
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 5
-            }
-          ],
-          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 5
-            }
-          ]
-        }
+        "dataType": 0
       },
       {
         "id": "seconds_before_pickup",
@@ -294,23 +116,9 @@
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
-        "description": "Movement speed multiplier of the entity when using this Goal.",
+        "description": "Movement speed multiplier of the mob when using this goal.",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 1
-            }
-          ],
-          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "target_range",
@@ -321,29 +129,7 @@
           1,
           1
         ],
-        "dataType": 11,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": [
-                5,
-                5,
-                5
-              ]
-            }
-          ],
-          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": [
-                5,
-                5,
-                5
-              ]
-            }
-          ]
-        }
+        "dataType": 11
       },
       {
         "id": "teleport_offset",
@@ -354,175 +140,22 @@
           1,
           0
         ],
-        "dataType": 11,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": [
-                0,
-                1,
-                0
-              ]
-            }
-          ],
-          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": [
-                0,
-                1,
-                0
-              ]
-            }
-          ]
-        }
+        "dataType": 11
       },
       {
         "id": "time_of_day_range",
         "title": "Time Of Day Range",
         "description": "The valid times of day that this goal can be used. For reference: noon is 0.0, sunset is 0.25, midnight is 0.5, and sunrise is 0.75, and back to noon for 1.0.",
-        "dataType": 18,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": [
-                0.74999,
-                0.8
-              ]
-            }
-          ],
-          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": [
-                0.74999,
-                0.8
-              ]
-            }
-          ]
-        }
+        "dataType": 18
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 1
-            }
-          ],
-          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_gift_for_owner/minecraft:behavior.drop_item_for/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": 0
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/cat.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:cat_gift_for_owner/minecraft:behavior.drop_item_for/",
-          "content": {
-            "priority": 1,
-            "seconds_before_pickup": 0,
-            "cooldown": 0.25,
-            "drop_item_chance": 0.7,
-            "offering_distance": 5,
-            "minimum_teleport_distance": 2,
-            "max_head_look_at_height": 10,
-            "target_range": [
-              5,
-              5,
-              5
-            ],
-            "teleport_offset": [
-              0,
-              1,
-              0
-            ],
-            "time_of_day_range": [
-              0.74999,
-              0.8
-            ],
-            "speed_multiplier": 1,
-            "search_range": 5,
-            "search_height": 2,
-            "search_count": 0,
-            "goal_radius": 1,
-            "entity_types": [
-              {
-                "filters": {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "player"
-                },
-                "max_dist": 6
-              }
-            ],
-            "loot_table": "loot_tables/entities/cat_gift.json",
-            "on_drop_attempt": {
-              "event": "minecraft:cat_gifted_owner",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-        {
-          "path": "/minecraft:entity/component_groups/mike_eliz:eliza_gift_for_owner/minecraft:behavior.drop_item_for/",
-          "content": {
-            "priority": 1,
-            "seconds_before_pickup": 0,
-            "cooldown": 0.25,
-            "drop_item_chance": 0.7,
-            "offering_distance": 5,
-            "minimum_teleport_distance": 2,
-            "max_head_look_at_height": 10,
-            "target_range": [
-              5,
-              5,
-              5
-            ],
-            "teleport_offset": [
-              0,
-              1,
-              0
-            ],
-            "time_of_day_range": [
-              0.74999,
-              0.8
-            ],
-            "speed_multiplier": 1,
-            "search_range": 5,
-            "search_height": 2,
-            "search_count": 0,
-            "goal_radius": 1,
-            "entity_types": [
-              {
-                "filters": {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "player"
-                },
-                "max_dist": 6
-              }
-            ],
-            "loot_table": "loot_tables/entities/eliza_gift.json",
-            "on_drop_attempt": {
-              "event": "mike_eliz:eliza_gifted_owner",
-              "target": "self"
-            }
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

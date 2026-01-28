@@ -46,28 +46,6 @@
                 }
               ]
             }
-          ],
-          "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
-              "content": [
-                {
-                  "eat_block": "melon_block",
-                  "replace_block": "air"
-                }
-              ]
-            }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
-              "content": [
-                {
-                  "eat_block": "melon_block",
-                  "replace_block": "air"
-                }
-              ]
-            }
           ]
         }
       },
@@ -78,15 +56,6 @@
         "dataType": 22,
         "samples": {
           "/vanilla/behavior_pack/entities/sheep.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
-              "content": {
-                "event": "minecraft:on_eat_block",
-                "target": "self"
-              }
-            }
-          ],
-          "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
               "content": {
@@ -109,12 +78,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
               "content": "query.is_baby ? 0.02 : 0.001"
             }
-          ],
-          "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
-              "content": "query.is_baby ? 0.02 : 0.001"
-            }
           ]
         }
       },
@@ -130,12 +93,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
               "content": 1.8
             }
-          ],
-          "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
-              "content": 1.8
-            }
           ]
         }
       },
@@ -147,12 +104,6 @@
         "dataType": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/sheep.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
-              "content": 6
-            }
-          ],
-          "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
               "content": 6
@@ -184,66 +135,6 @@
               },
               {
                 "eat_block": "tall_dry_grass",
-                "replace_block": "air"
-              }
-            ],
-            "on_eat": {
-              "event": "minecraft:on_eat_block",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
-          "content": {
-            "priority": 6,
-            "success_chance": "query.is_baby ? 0.02 : 0.001",
-            "time_until_eat": 1.8,
-            "eat_and_replace_block_pairs": [
-              {
-                "eat_block": "melon_block",
-                "replace_block": "air"
-              }
-            ],
-            "on_eat": {
-              "event": "minecraft:on_eat_block",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
-          "content": {
-            "priority": 6,
-            "success_chance": "query.is_baby ? 0.02 : 0.001",
-            "time_until_eat": 1.8,
-            "eat_and_replace_block_pairs": [
-              {
-                "eat_block": "melon_block",
-                "replace_block": "air"
-              }
-            ],
-            "on_eat": {
-              "event": "minecraft:on_eat_block",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
-          "content": {
-            "priority": 6,
-            "success_chance": "query.is_baby ? 0.02 : 0.001",
-            "time_until_eat": 1.8,
-            "eat_and_replace_block_pairs": [
-              {
-                "eat_block": "melon_block",
                 "replace_block": "air"
               }
             ],

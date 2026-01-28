@@ -121,7 +121,7 @@ Worlds created by Minecraft: Bedrock Edition can be copied to Bedrock Dedicated 
 > [!TIP]
 > You should have started Bedrock Dedicated Server at least once before using an existing world to let it create the necessary folders.
 
-Worlds in (non-server) Bedrock Edition are saved as folders under **AppData\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\minecraftWorlds**. It's not obvious from the folder names which worlds are which, as they'll have cryptic names like **eplC8tYRD04=**. However, you can find out what world the folder belongs to by going into the folder and looking at the contents of the **levelname.txt** file: it will show the name that you gave the world when you created it.
+Worlds in (non-server) Bedrock Edition are saved as folders under **%appdata%\Minecraft Bedrock\users\<user id>\games\com.mojang\minecraftWorlds**. It's not obvious from the folder names which worlds are which, as they'll have cryptic names like **eplC8tYRD04=**. However, you can find out what world the folder belongs to by going into the folder and looking at the contents of the **levelname.txt** file: it will show the name that you gave the world when you created it.
 
 If your Bedrock Dedicated Server is running on the _same_ computer that your Minecraft world already exists on, you can simply copy the world folder into the **worlds/** folder on Bedrock Dedicated Server.
 

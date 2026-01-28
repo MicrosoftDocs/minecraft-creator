@@ -1,0 +1,73 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "languages",
+  "title": "Languages",
+  "description": "The languages.json file is a simple array of locale codes that specifies which language translations are available in this resource pack. Located at texts/languages.json in resource packs.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines available language translations for this resource pack"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "0",
+      "title": "Language Code",
+      "description": "A locale code identifying a language translation (e.g., en_US, de_DE, ja_JP).",
+      "dataType": 2,
+      "samples": {
+        "vanilla_data/resource_packs/vanilla/texts/languages.json": [
+          {
+            "path": "example",
+            "content": "en_US"
+          }
+        ]
+      }
+    }
+  ],
+  "note": "This file is a JSON array at the root level, containing string locale codes. Each locale code corresponds to a .lang file in the texts/ folder that provides translations.",
+  "samples": {
+    "vanilla_data/resource_packs/vanilla/texts/languages.json": [
+      {
+        "path": "example",
+        "content": [
+          "en_US",
+          "en_GB",
+          "de_DE",
+          "es_ES",
+          "es_MX",
+          "fr_FR",
+          "fr_CA",
+          "it_IT",
+          "ja_JP",
+          "ko_KR",
+          "pt_BR",
+          "pt_PT",
+          "ru_RU",
+          "zh_CN",
+          "zh_TW",
+          "nl_NL",
+          "bg_BG",
+          "cs_CZ",
+          "da_DK",
+          "el_GR",
+          "fi_FI",
+          "hu_HU",
+          "id_ID",
+          "nb_NO",
+          "pl_PL",
+          "sk_SK",
+          "sv_SE",
+          "tr_TR",
+          "uk_UA"
+        ]
+      }
+    ]
+  }
+}

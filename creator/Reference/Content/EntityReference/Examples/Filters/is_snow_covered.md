@@ -68,7 +68,7 @@ At Short (using Defaults)..:
 
 #### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
 
-At /minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/: 
+At /minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/: 
 
 ```json
 {
@@ -77,7 +77,7 @@ At /minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/:
 }
 ```
 
-At /minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/: 
+At /minecraft:entity/events/minecraft:entity_spawned/sequence[2]/filters/: 
 
 ```json
 {
