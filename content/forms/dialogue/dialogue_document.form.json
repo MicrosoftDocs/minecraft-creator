@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines an NPC dialogue document structure"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "dialogue_document",
+  "title": "NPC Dialogue Document",
+  "description": "A Minecraft Bedrock Edition NPC dialogue definition document. Dialogue files define conversation scenes for NPCs, including dialogue text, buttons, and commands that execute when players interact with NPCs.",
+  "fields": [
+    {
+      "dataType": 25,
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of this dialogue file. Use '1.20.80' or later.",
+      "isRequired": true
+    },
+    {
+      "dataType": 16,
+      "id": "minecraft:npc_dialogue",
+      "title": "NPC Dialogue",
+      "description": "The NPC dialogue definition containing scenes.",
+      "isRequired": true,
+      "subForm": {
+        "id": "npc_dialogue_wrapper",
+        "title": "NPC Dialogue",
+        "fields": [
+          {
+            "id": "scenes",
+            "title": "Scenes",
+            "description": "Array of dialogue scene definitions. Each scene has a scene_tag, optional text, npc_name, buttons, and commands.",
+            "dataType": 17,
+            "isRequired": true
+          }
+        ]
+      }
+    }
+  ]
+}

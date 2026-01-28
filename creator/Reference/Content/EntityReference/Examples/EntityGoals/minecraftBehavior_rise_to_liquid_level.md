@@ -18,6 +18,9 @@ Allows the mob to stay at a certain level when in liquid. This behavior was depr
 > [!Note]
 > This behavior was used by striders in versions 1.16-1.18.10 but has been replaced with minecraft:behavior.float in newer versions.
 
+> [!Note]
+> This item no longer works after format versions of at least 1.18.20.
+
 
 ## Rise To Liquid Level Behavior Properties
 

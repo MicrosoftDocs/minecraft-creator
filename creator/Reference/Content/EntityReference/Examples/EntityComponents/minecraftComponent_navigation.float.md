@@ -17,10 +17,10 @@ Allows this entity to generate paths by flying around the air like the regular G
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| avoid_damage_blocks | false | Boolean true/false | Tells the pathfinder to avoid blocks that cause damage when finding a path | Happy Ghast: `true` | 
+| avoid_damage_blocks | false | Boolean true/false | Tells the pathfinder to avoid blocks that cause damage when finding a path |  | 
 | avoid_portals | false | Boolean true/false | Tells the pathfinder to avoid portals (like nether portals) when finding a path |  | 
 | avoid_sun | false | Boolean true/false | Whether or not the pathfinder should avoid tiles that are exposed to the sun when creating paths |  | 
-| avoid_water | false | Boolean true/false | Tells the pathfinder to avoid water when creating a path | Happy Ghast: `true` | 
+| avoid_water | false | Boolean true/false | Tells the pathfinder to avoid water when creating a path |  | 
 | blocks_to_avoid | *not set* | Array of strings | Tells the pathfinder which blocks to avoid when creating a path |  | 
 | can_breach | false | Boolean true/false | Tells the pathfinder whether or not it can jump out of water (like a dolphin) |  | 
 | can_break_doors | false | Boolean true/false | Tells the pathfinder that it can path through a closed door and break it |  | 
@@ -45,16 +45,5 @@ Allows this entity to generate paths by flying around the air like the regular G
 ```json
 "minecraft:navigation.float": {
   "can_path_over_water": true
-}
-```
-
-#### [Happy Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/happy_ghast.json)
-
-
-```json
-"minecraft:navigation.float": {
-  "can_path_over_water": true,
-  "avoid_damage_blocks": true,
-  "avoid_water": true
 }
 ```

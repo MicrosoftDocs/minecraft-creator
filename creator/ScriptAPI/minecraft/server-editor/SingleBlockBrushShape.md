@@ -15,8 +15,11 @@ description: Contents of the @minecraft/server-editor.SingleBlockBrushShape clas
 ## Methods
 - [constructor](#(constructor))
 - [applySetting](#applysetting)
+- [calculateBounds](#calculatebounds)
 - [createSettingsPane](#createsettingspane)
 - [createShape](#createshape)
+- [createShapeAsync](#createshapeasync)
+- [estimateBlockCount](#estimateblockcount)
 - [getSettings](#getsettings)
 
 ### **constructor**
@@ -38,6 +41,13 @@ applySetting(_settings: BrushShapeSettings): void
 
 **Returns** *void*
 
+### **calculateBounds**
+`
+calculateBounds(): minecraftserver.BlockBoundingBox
+`
+
+**Returns** *minecraftserver.BlockBoundingBox*
+
 ### **createSettingsPane**
 `
 createSettingsPane(): void
@@ -49,6 +59,28 @@ createShape(): RelativeVolumeListBlockVolume
 `
 
 **Returns** *RelativeVolumeListBlockVolume*
+
+### **createShapeAsync**
+`
+createShapeAsync(_cancelToken?: {
+        cancelled: boolean;
+    }, _yieldInterval?: number): Promise<RelativeVolumeListBlockVolume>
+`
+
+#### **Parameters**
+- **_cancelToken**?: *{
+        cancelled: boolean;
+    }*
+- **_yieldInterval**?: *number*
+
+**Returns** *Promise<RelativeVolumeListBlockVolume>*
+
+### **estimateBlockCount**
+`
+estimateBlockCount(): number
+`
+
+**Returns** *number*
 
 ### **getSettings**
 `

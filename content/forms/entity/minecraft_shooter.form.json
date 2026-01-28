@@ -101,18 +101,6 @@
               "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/",
               "content": 26
             }
-          ],
-          "/vanilla/behavior_pack/entities/parched.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/",
-              "content": 35
-            }
-          ],
-          "/vanilla/behavior_pack/entities/witch.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:shooter/",
-              "content": 23
-            }
           ]
         }
       },
@@ -146,58 +134,10 @@
               "content": "minecraft:dragon_fireball"
             }
           ],
-          "/vanilla/behavior_pack/entities/ghast.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:shooter/",
-              "content": "minecraft:fireball"
-            }
-          ],
           "/vanilla/behavior_pack/entities/llama.json": [
             {
               "path": "/minecraft:entity/components/minecraft:shooter/",
               "content": "minecraft:llama_spit"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/parched.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/",
-              "content": "minecraft:arrow"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/shulker.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:shooter/",
-              "content": "minecraft:shulker_bullet"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/snow_golem.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:shooter/",
-              "content": "minecraft:snowball"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/trader_llama.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:shooter/",
-              "content": "minecraft:llama_spit"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/witch.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:shooter/",
-              "content": "minecraft:splash_potion"
-            }
-          ],
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:shooter/",
-              "content": "minecraft:shulker_bullet"
-            }
-          ],
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/smfireball_turret.behavior.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:shooter/",
-              "content": "minecraft:small_fireball"
             }
           ]
         }
@@ -207,167 +147,20 @@
         "title": "Magic",
         "description": "Sets whether the projectiles being used are flagged as magic. If set, the ranged attack goal will not be used at the same time as other magic goals, such as minecraft:behavior.drink_potion",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/witch.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:shooter/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "power",
         "title": "Power",
         "description": "Velocity in which the projectiles will be shot at. A power of 0 will be overwritten by the default projectile throw power.",
         "defaultValue": 0,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/witch.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:shooter/",
-              "content": 0.75
-            }
-          ],
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:shooter/",
-              "content": 10
-            }
-          ],
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:shooter/",
-              "content": 7
-            }
-          ],
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/crossbow_turret.behavior.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:shooter/",
-              "content": 10
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "projectiles",
         "title": "Projectiles",
         "description": "List of projectiles that can be used by the shooter. Projectiles are evaluated in the order of the list; After a projectile is chosen, the rest of the list is ignored.",
-        "dataType": 17,
-        "samples": {
-          "/vanilla/behavior_pack/entities/witch.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:shooter/",
-              "content": [
-                {
-                  "def": "minecraft:splash_potion",
-                  "aux_val": 21,
-                  "filters": {
-                    "all_of": [
-                      {
-                        "test": "is_raider",
-                        "subject": "other",
-                        "value": true
-                      },
-                      {
-                        "test": "actor_health",
-                        "subject": "other",
-                        "value": 4,
-                        "operator": "<="
-                      }
-                    ]
-                  },
-                  "lose_target": true
-                },
-                {
-                  "def": "minecraft:splash_potion",
-                  "aux_val": 28,
-                  "filters": {
-                    "all_of": [
-                      {
-                        "test": "is_raider",
-                        "subject": "other",
-                        "value": true
-                      }
-                    ]
-                  },
-                  "lose_target": true
-                },
-                {
-                  "def": "minecraft:splash_potion",
-                  "aux_val": 17,
-                  "filters": {
-                    "all_of": [
-                      {
-                        "test": "target_distance",
-                        "subject": "self",
-                        "value": 8,
-                        "operator": ">="
-                      },
-                      {
-                        "none_of": [
-                          {
-                            "test": "has_mob_effect",
-                            "subject": "other",
-                            "value": "slowness"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                },
-                {
-                  "def": "minecraft:splash_potion",
-                  "aux_val": 25,
-                  "filters": {
-                    "all_of": [
-                      {
-                        "test": "actor_health",
-                        "subject": "other",
-                        "value": 8,
-                        "operator": ">="
-                      },
-                      {
-                        "none_of": [
-                          {
-                            "test": "has_mob_effect",
-                            "subject": "other",
-                            "value": "poison"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                },
-                {
-                  "def": "minecraft:splash_potion",
-                  "aux_val": 34,
-                  "filters": {
-                    "all_of": [
-                      {
-                        "test": "target_distance",
-                        "subject": "self",
-                        "value": 3,
-                        "operator": "<="
-                      },
-                      {
-                        "none_of": [
-                          {
-                            "test": "has_mob_effect",
-                            "subject": "other",
-                            "value": "weakness"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  "chance": 0.25
-                }
-              ]
-            }
-          ]
-        }
+        "dataType": 17
       },
       {
         "id": "sound",
@@ -385,18 +178,6 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:shooter/",
               "content": "item.trident.throw"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/parched.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/",
-              "content": "bow"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/witch.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:shooter/",
-              "content": "throw"
             }
           ]
         }
@@ -438,256 +219,11 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/ghast.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:shooter/",
-          "content": {
-            "def": "minecraft:fireball"
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/llama.json": [
         {
           "path": "/minecraft:entity/components/minecraft:shooter/",
           "content": {
             "def": "minecraft:llama_spit"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/parched.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/",
-          "content": {
-            "def": "minecraft:arrow",
-            "sound": "bow",
-            "aux_val": 35
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/piglin.json": [
-        {
-          "path": "/minecraft:entity/component_groups/ranged_unit/minecraft:shooter/",
-          "content": {
-            "def": "minecraft:arrow"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/pillager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/",
-          "content": {
-            "def": "minecraft:arrow"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/shulker.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:shooter/",
-          "content": {
-            "def": "minecraft:shulker_bullet"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/snow_golem.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:shooter/",
-          "content": {
-            "def": "minecraft:snowball"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/trader_llama.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:shooter/",
-          "content": {
-            "def": "minecraft:llama_spit"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/witch.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:shooter/",
-          "content": {
-            "power": 0.75,
-            "def": "minecraft:splash_potion",
-            "aux_val": 23,
-            "sound": "throw",
-            "projectiles": [
-              {
-                "def": "minecraft:splash_potion",
-                "aux_val": 21,
-                "filters": {
-                  "all_of": [
-                    {
-                      "test": "is_raider",
-                      "subject": "other",
-                      "value": true
-                    },
-                    {
-                      "test": "actor_health",
-                      "subject": "other",
-                      "value": 4,
-                      "operator": "<="
-                    }
-                  ]
-                },
-                "lose_target": true
-              },
-              {
-                "def": "minecraft:splash_potion",
-                "aux_val": 28,
-                "filters": {
-                  "all_of": [
-                    {
-                      "test": "is_raider",
-                      "subject": "other",
-                      "value": true
-                    }
-                  ]
-                },
-                "lose_target": true
-              },
-              {
-                "def": "minecraft:splash_potion",
-                "aux_val": 17,
-                "filters": {
-                  "all_of": [
-                    {
-                      "test": "target_distance",
-                      "subject": "self",
-                      "value": 8,
-                      "operator": ">="
-                    },
-                    {
-                      "none_of": [
-                        {
-                          "test": "has_mob_effect",
-                          "subject": "other",
-                          "value": "slowness"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              },
-              {
-                "def": "minecraft:splash_potion",
-                "aux_val": 25,
-                "filters": {
-                  "all_of": [
-                    {
-                      "test": "actor_health",
-                      "subject": "other",
-                      "value": 8,
-                      "operator": ">="
-                    },
-                    {
-                      "none_of": [
-                        {
-                          "test": "has_mob_effect",
-                          "subject": "other",
-                          "value": "poison"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              },
-              {
-                "def": "minecraft:splash_potion",
-                "aux_val": 34,
-                "filters": {
-                  "all_of": [
-                    {
-                      "test": "target_distance",
-                      "subject": "self",
-                      "value": 3,
-                      "operator": "<="
-                    },
-                    {
-                      "none_of": [
-                        {
-                          "test": "has_mob_effect",
-                          "subject": "other",
-                          "value": "weakness"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "chance": 0.25
-              }
-            ],
-            "magic": true
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:shooter/",
-          "content": {
-            "def": "minecraft:llama_spit"
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:shooter/",
-          "content": {
-            "def": "minecraft:llama_spit"
-          }
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:shooter/",
-          "content": {
-            "def": "minecraft:shulker_bullet",
-            "power": 10
-          }
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:shooter/",
-          "content": {
-            "def": "minecraft:arrow",
-            "power": 7
-          }
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/crossbow_turret.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:shooter/",
-          "content": {
-            "def": "minecraft:arrow",
-            "power": 10
-          }
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave_generator.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:shooter/",
-          "content": {
-            "def": "minecraft:arrow"
-          }
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/shbullet_turret.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:shooter/",
-          "content": {
-            "def": "minecraft:shulker_bullet",
-            "power": 10
-          }
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/smfireball_turret.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:shooter/",
-          "content": {
-            "def": "minecraft:small_fireball",
-            "power": 10
           }
         }
       ]

@@ -83,15 +83,9 @@
           }
         ],
         "samples": {
-          "/vanilla/behavior_pack/entities/axolotl.json": [
-            {
-              "path": "/minecraft:entity/component_groups/axolotl_on_land_in_rain/minecraft:environment_sensor/triggers/0/filters/",
-              "content": "!="
-            }
-          ],
           "/vanilla/behavior_pack/entities/dolphin.json": [
             {
-              "path": "/minecraft:entity/component_groups/dolphin_on_land_in_rain/minecraft:environment_sensor/triggers/1/filters/",
+              "path": "/minecraft:entity/component_groups/dolphin_on_land_in_rain/minecraft:environment_sensor/triggers[1]/filters/",
               "content": "!="
             }
           ]
@@ -148,15 +142,9 @@
         "defaultValue": true,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/axolotl.json": [
-            {
-              "path": "/minecraft:entity/component_groups/axolotl_on_land_in_rain/minecraft:environment_sensor/triggers/0/filters/",
-              "content": true
-            }
-          ],
           "/vanilla/behavior_pack/entities/dolphin.json": [
             {
-              "path": "/minecraft:entity/component_groups/dolphin_on_land_in_rain/minecraft:environment_sensor/triggers/1/filters/",
+              "path": "/minecraft:entity/component_groups/dolphin_on_land_in_rain/minecraft:environment_sensor/triggers[1]/filters/",
               "content": true
             }
           ]
@@ -167,15 +155,9 @@
         "title": "Test",
         "dataType": 2,
         "samples": {
-          "/vanilla/behavior_pack/entities/axolotl.json": [
-            {
-              "path": "/minecraft:entity/component_groups/axolotl_on_land_in_rain/minecraft:environment_sensor/triggers/0/filters/",
-              "content": "in_water_or_rain"
-            }
-          ],
           "/vanilla/behavior_pack/entities/dolphin.json": [
             {
-              "path": "/minecraft:entity/component_groups/dolphin_on_land_in_rain/minecraft:environment_sensor/triggers/1/filters/",
+              "path": "/minecraft:entity/component_groups/dolphin_on_land_in_rain/minecraft:environment_sensor/triggers[1]/filters/",
               "content": "in_water_or_rain"
             }
           ]
@@ -193,19 +175,9 @@
           "content": "{ \"test\": \"in_water_or_rain\" }"
         }
       ],
-      "/vanilla/behavior_pack/entities/axolotl.json": [
-        {
-          "path": "/minecraft:entity/component_groups/axolotl_on_land_in_rain/minecraft:environment_sensor/triggers/0/filters/",
-          "content": {
-            "test": "in_water_or_rain",
-            "operator": "!=",
-            "value": true
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/dolphin.json": [
         {
-          "path": "/minecraft:entity/component_groups/dolphin_on_land_in_rain/minecraft:environment_sensor/triggers/1/filters/",
+          "path": "/minecraft:entity/component_groups/dolphin_on_land_in_rain/minecraft:environment_sensor/triggers[1]/filters/",
           "content": {
             "test": "in_water_or_rain",
             "operator": "!=",

@@ -79,19 +79,7 @@
             "title": "Not",
             "description": "Test for inequality."
           }
-        ],
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/1/filters/all_of/0/",
-              "content": "!="
-            },
-            {
-              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/1/filters/all_of/1/",
-              "content": "!="
-            }
-          ]
-        }
+        ]
       },
       {
         "id": "subject",
@@ -135,66 +123,13 @@
             "title": "Target",
             "description": "The caller's current target."
           }
-        ],
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/0/",
-              "content": "block"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/1/",
-              "content": "block"
-            }
-          ]
-        }
+        ]
       },
       {
         "id": "value",
         "title": "Value",
         "description": "(Required) The Family name to look for",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/0/",
-              "content": "minecraft:bee_nest"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/1/",
-              "content": "minecraft:beehive"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/1/filters/all_of/0/",
-              "content": "minecraft:bee_nest"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/1/filters/all_of/1/",
-              "content": "minecraft:beehive"
-            },
-            {
-              "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/1/on_damage/filters/",
-              "content": "minecraft:sweet_berry_bush"
-            }
-          ]
-        }
-      },
-      {
-        "id": "test",
-        "title": "Test",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/0/",
-              "content": "is_block"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/1/",
-              "content": "is_block"
-            }
-          ]
-        }
+        "dataType": 2
       }
     ],
     "samples": {
@@ -206,50 +141,6 @@
         {
           "path": "Short (using Defaults)..",
           "content": "{ \"test\": \"is_block\", \"value\": \"player\" }"
-        }
-      ],
-      "/vanilla/behavior_pack/entities/bee.json": [
-        {
-          "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/0/",
-          "content": {
-            "test": "is_block",
-            "subject": "block",
-            "value": "minecraft:bee_nest"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/1/",
-          "content": {
-            "test": "is_block",
-            "subject": "block",
-            "value": "minecraft:beehive"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/1/filters/all_of/0/",
-          "content": {
-            "test": "is_block",
-            "subject": "block",
-            "operator": "!=",
-            "value": "minecraft:bee_nest"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/1/filters/all_of/1/",
-          "content": {
-            "test": "is_block",
-            "subject": "block",
-            "operator": "!=",
-            "value": "minecraft:beehive"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/1/on_damage/filters/",
-          "content": {
-            "test": "is_block",
-            "subject": "block",
-            "value": "minecraft:sweet_berry_bush"
-          }
         }
       ]
     }

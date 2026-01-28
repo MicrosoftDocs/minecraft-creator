@@ -37,6 +37,9 @@ The number of segments for the base circle of the arrow's head/tip (default: 4).
 
 Type: *number*
 
+Notes:
+  - This property has a bounds of [`3`, `128`]
+
 ## Methods
 - [constructor](#constructor)
 

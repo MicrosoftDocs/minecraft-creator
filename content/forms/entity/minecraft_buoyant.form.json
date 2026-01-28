@@ -21,35 +21,42 @@
       {
         "id": "apply_gravity",
         "title": "Apply Gravity",
-        "description": "Applies gravity each tick. Causes more of a wave simulation, but will cause more gravity to be applied outside liquids.",
+        "description": "Applies gravity each tick. Causes \"movement_type\" to be more impactful, but also gravity to be applied more intensely outside liquids.",
         "defaultValue": true,
         "dataType": 1
       },
       {
         "id": "base_buoyancy",
         "title": "Base Buoyancy",
-        "description": "Base buoyancy used to calculate how much will a mob float.",
+        "description": "Base buoyancy used to calculate how much will a entity float.",
         "defaultValue": 1,
         "dataType": 3
       },
       {
         "id": "big_wave_probability",
         "title": "Big Wave Probability",
-        "description": "Probability for a big wave hitting the entity. Only used if `simulate_waves` is true.",
+        "description": "Probability for a big wave hitting the entity. Only used if \"movement_type\" is \"waves\".",
         "defaultValue": 0.03,
         "dataType": 3
       },
       {
         "id": "big_wave_speed",
         "title": "Big Wave Speed",
-        "description": "Multiplier for the speed to make a big wave. Triggered depending on 'big_wave_probability'.",
+        "description": "Multiplier for the speed to make a big wave. Triggered depending on \"big_wave_probability\".",
         "defaultValue": 10,
         "dataType": 3
       },
       {
+        "id": "can_auto_step_from_liquid",
+        "title": "Can Auto Step From Liquid",
+        "description": "Whether the entity can move out of a liquid block to a neighboring solid block if pushed against it.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
         "id": "drag_down_on_buoyancy_removed",
         "title": "Drag Down On Buoyancy Removed",
-        "description": "How much an actor will be dragged down when the Buoyancy Component is removed.",
+        "description": "How much an entity will be dragged down when the component is removed.",
         "defaultValue": 0,
         "dataType": 3
       },
@@ -71,11 +78,11 @@
         }
       },
       {
-        "id": "simulate_waves",
-        "title": "Simulate Waves",
-        "description": "Should the movement simulate waves going through.",
-        "defaultValue": true,
-        "dataType": 1
+        "id": "movement_type",
+        "title": "Movement Type",
+        "description": "Type of vertical movement applied to the entity:\n\"waves\", simulates wave movement based on the entity speed.\n\"bobbing\", simulates waves going through.\n\"none\", simulates waves going through.",
+        "defaultValue": "waves",
+        "dataType": 2
       }
     ],
     "samples": {

@@ -20,8 +20,8 @@ Allows an entity to break doors, assuming that that flags set up for the compone
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| break_time | 12 | Integer number | The time in seconds required to break through doors. | Vindicator: `30` | 
-| min_difficulty | hard | String from a list of choices | The minimum difficulty that the world must be on for this entity to break doors. | Vindicator: `"normal"` | 
+| break_time | 12 | Integer number | The time in seconds required to break through doors. |  | 
+| min_difficulty | hard | String from a list of choices | The minimum difficulty that the world must be on for this entity to break doors. |  | 
 
 ## Samples
 
@@ -30,14 +30,4 @@ Allows an entity to break doors, assuming that that flags set up for the compone
 
 ```json
 "minecraft:annotation.break_door": {}
-```
-
-#### [Vindicator](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/vindicator.json)
-
-
-```json
-"minecraft:annotation.break_door": {
-  "break_time": 30,
-  "min_difficulty": "normal"
-}
 ```

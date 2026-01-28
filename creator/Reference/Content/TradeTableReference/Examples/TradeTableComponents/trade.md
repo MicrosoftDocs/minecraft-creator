@@ -1,0 +1,97 @@
+---
+author: mammerla
+ms.author: mikeam
+title: "Trade Tables Documentation - minecraft:trade"
+description: "Describes the minecraft:trade trade table component"
+ai-usage: ai-assisted
+ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
+---
+
+# Trade Tables Documentation - minecraft:trade
+
+Defines a trade table with tiers of trades for villagers or other trading entities.
+
+
+## Trade Table Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| 1088251937 | *not set* | Object | Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects. |  | 
+| 1093643626 | *not set* | Object | struct SharedTypes_v1_21_30_TradeItemList |  | 
+| 2298823339 | *not set* | Object | struct SharedTypes_v1_21_30_TradeItem_Quantity |  | 
+| 3153354884 | *not set* | Object | struct SharedTypes_v1_21_30_TradeGroup |  | 
+| 315535208 | *not set* | Object | class Json_Value |  | 
+| 3738829565 | *not set* | Object | struct SharedTypes_v1_21_30_Trade |  | 
+| 4150989894 | *not set* | Object | Filter Test |  | 
+| 56017534 | *not set* | Object | struct SharedTypes_v1_21_30_TradeItem |  | 
+| 943617905 | *not set* | Object | struct SharedTypes_v1_21_30_TradeTier |  | 
+| tiers | *not set* | Array of [Tiers](#trade-tier) items | Array of trade tiers. Each tier unlocks as the villager gains experience. Novice (tier 1) is always available. |  | 
+| format_version | *not set* | String | Deprecated - no longer in use. The format version of this trade table. This property was used in older versions. This property no longer works after format versions of at least 1.20.0. Trade tables no longer require a format_version field in newer versions. |  | 
+| weight | *not set* | Integer number | Deprecated - no longer in use. The weight/probability of this trade being selected. This property was deprecated and removed in newer versions. This property no longer works after format versions of at least 1.19.0. The weight property was available in versions 1.16 through 1.18 but has been removed. |  | 
+
+## Trade Tier
+Defines a tier of trades that becomes available as a villager levels up.
+
+
+#### Trade Tier Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| groups | *not set* | Array of [Groups](#trade-group) items | Array of trade groups available at this tier. Each group can randomly select one or more trades to offer. |  | 
+| total_exp_required | 0 | Integer number | The total experience points required for this tier to unlock. For novice (tier 1), this is typically 0. Higher tiers require more XP (e.g., 10, 70, 150, 250). |  | 
+| trades | *not set* | Array of [Trades](#trade) items | Array of trades directly in this tier, without grouping. Alternative to using groups. |  | 
+
+## Trade Group
+A group of trades from which one or more can be randomly selected for a villager to offer.
+
+
+#### Trade Group Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| num_to_select | 1 | Integer number | The number of trades to randomly select from this group to offer to the player. Typically 1-2. |  | 
+| trades | *not set* | Array of [Trades](#trade) items | Array of possible trades in this group. The specified number will be randomly chosen. |  | 
+
+## Trade
+Defines a single trade offered by a villager or wandering trader.
+
+
+#### Trade Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| gives | *not set* | Array of [Gives](#trade-item) items | Array of items the villager gives to the player in exchange. Usually 1 item. |  | 
+| max_uses | 12 | Integer number | Maximum number of times this trade can be used before it becomes locked. Trade refreshes when villager restocks at workstation. |  | 
+| reward_exp | true | Boolean true/false | Whether the player receives experience orbs when completing this trade. |  | 
+| trader_exp | 1 | Integer number | Amount of experience the villager gains when this trade is used. Contributes to villager leveling up. |  | 
+| wants | *not set* | Array of [Wants](#trade-item) items | Array of items the villager wants to receive from the player in exchange. Usually 1-2 items. |  | 
+
+## Trade Item
+Defines an item used in a trade, either as input (wants) or output (gives).
+
+
+#### Trade Item Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| __DEP_fltrs | *not set* | Object | __DEP_fltrs |  | 
+| __DEP_fnctns | *not set* | Object | __DEP_fnctns |  | 
+| filters | *not set* | Object | Optional filters that must pass for this item to be included in the trade. |  | 
+| item | *not set* | String | The item identifier, e.g., 'minecraft:emerald' or 'minecraft:coal'. Can include data value suffix like 'minecraft:coal:0'. |  | 
+| price_multiplier | 0.05 | Decimal number | Multiplier applied to price increases when supply/demand changes. Higher values mean prices fluctuate more. Typical value is 0.05. |  | 
+| quantity | 1 | Integer number | Number of this item involved in the trade. Can be a fixed number or an object with min/max for random quantity. |  | 
+| quantity (Alternate 1) | *not set* | [Quantity](#trade-item-quantity) item |  |  | 
+| choice | *not set* | Array of objects | Deprecated - no longer in use. Alternative items that can be traded. This property was deprecated and removed in newer versions of trade tables. This property no longer works after format versions of at least 1.19.0. The choice property was available in versions 1.16 through 1.18 but has been removed. |  | 
+| functions | *not set* | Array of objects | Deprecated - no longer in use. Array of functions to apply to the trade item, such as enchantments. This property was deprecated and removed in newer versions of trade tables. This property no longer works after format versions of at least 1.19.0. The functions property was available in versions 1.16 through 1.18 but has been removed. Use standard item properties instead. |  | 
+
+## Trade Item Quantity
+Defines a random quantity range for a trade item.
+
+
+#### Trade Item Quantity Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| max | 1 | Integer number | Maximum number of items for this trade. |  | 
+| min | 1 | Integer number | Minimum number of items for this trade. |  | 

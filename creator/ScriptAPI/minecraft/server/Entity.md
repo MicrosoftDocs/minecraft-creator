@@ -251,6 +251,7 @@ Adds or updates an effect, like poison, to the entity.
   
   Type of effect to add to the entity.
 - **duration**: *number*
+  * Bounds: [`1`, `20000000`]
   
   Amount of time, in ticks, for the effect to apply. There are 20 ticks per second. Use [*@minecraft/server.TicksPerSecond*](../../../scriptapi/minecraft/server/minecraft-server.md#tickspersecond) constant to convert between ticks and seconds. The value must be within the range [0, 20000000].
 - **options**?: [*EntityEffectOptions*](EntityEffectOptions.md) = `null`

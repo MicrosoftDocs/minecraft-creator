@@ -10,7 +10,7 @@ ms.date: 02/11/2025
 
 # Pack Manifest Documentation - minecraft:metadata
 
-Optional metadata about the pack including author names, license information, and URL. Also includes generation tool info for debugging.
+Optional metadata about the pack including author names, license information, and URL. This information may be displayed in marketplace listings or pack details screens. Also includes generation tool info for debugging.
 
 
 ## 3.0.0.Metadata Properties

@@ -14,10 +14,3 @@ When set, the entity will no longer visually rotate their body to match their fa
 
 
 ## Samples
-
-#### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
-
-
-```json
-"minecraft:body_rotation_blocked": {}
-```

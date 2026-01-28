@@ -17,8 +17,8 @@ Allows an entity to add or remove status effects from itself. Similarly to `addr
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| add_effects | *not set* | Array of [Add Effects](#add-effects) items | List of effects to add to this entity after adding this component | Bee: `[{"effect":"poison","duration":25,"display_on_screen_animation":true}]`, `[{"effect":"wither","duration":40,"display_on_screen_animation":true}]` | 
-| remove_effects | *not set* | String | List of identifiers of effects to be removed from this entity after adding this component |  | 
+| add_effects | *not set* | Array of [Add Effects](#add-effects) items | List of effects to add to this entity after adding this component | Player: `[{"effect":"raid_omen","duration":30,"display_on_screen_animation":true}]` | 
+| remove_effects | *not set* | String | List of identifiers of effects to be removed from this entity after adding this component | Player: `"bad_omen"` | 
 
 ## Add Effects
 List of effects to add to this entity after adding this component.
@@ -33,38 +33,6 @@ List of effects to add to this entity after adding this component.
 | effect | *not set* | String | Effect to add to this entity. Includes 'duration' in seconds, 'amplifier' level, 'ambient' if it is to be considered an ambient effect, and 'visible' if the effect should be visible |  | 
 
 ## Samples
-
-#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
-
-At /minecraft:entity/component_groups/add_poison_effect/minecraft:spell_effects/: 
-
-```json
-"minecraft:spell_effects": {
-  "add_effects": [
-    {
-      "effect": "poison",
-      "duration": 25,
-      "display_on_screen_animation": true
-    }
-  ],
-  "remove_effects": "poison"
-}
-```
-
-At /minecraft:entity/component_groups/add_wither_effect/minecraft:spell_effects/: 
-
-```json
-"minecraft:spell_effects": {
-  "add_effects": [
-    {
-      "effect": "wither",
-      "duration": 40,
-      "display_on_screen_animation": true
-    }
-  ],
-  "remove_effects": "wither"
-}
-```
 
 #### [Player](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/player.json)
 
@@ -87,42 +55,4 @@ At /minecraft:entity/component_groups/minecraft:clear_raid_omen_spell_effect/min
 
 ```json
 "minecraft:spell_effects": {}
-```
-
-#### [Zombie Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_villager.json)
-
-
-```json
-"minecraft:spell_effects": {
-  "add_effects": [
-    {
-      "effect": "strength",
-      "duration": 100
-    },
-    {
-      "effect": "heal",
-      "duration": 100
-    }
-  ],
-  "remove_effects": "weakness"
-}
-```
-
-#### [Zombie Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_villager_v2.json)
-
-
-```json
-"minecraft:spell_effects": {
-  "add_effects": [
-    {
-      "effect": "strength",
-      "duration": 300
-    },
-    {
-      "effect": "heal",
-      "duration": 300
-    }
-  ],
-  "remove_effects": "weakness"
-}
 ```

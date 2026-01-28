@@ -26,18 +26,6 @@
         "defaultValue": 1,
         "dataType": 3,
         "samples": {
-          "/vanilla/behavior_pack/entities/camel_husk.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-              "content": 4
-            }
-          ],
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-              "content": 1.25
-            }
-          ],
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
@@ -55,6 +43,12 @@
               "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
               "content": 1.5
             }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
+              "content": 1.25
+            }
           ]
         }
       },
@@ -63,15 +57,7 @@
         "title": "Target Dist",
         "description": "The distance at which this mob wants to be away from its target",
         "defaultValue": 0,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/skeleton_horse.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-              "content": 4
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "track_target",
@@ -80,13 +66,13 @@
         "defaultValue": false,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/camel_husk.json": [
+          "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/cat.json": [
+          "/vanilla/behavior_pack/entities/chicken.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
               "content": true
@@ -101,18 +87,6 @@
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
         "dataType": 0,
         "samples": {
-          "/vanilla/behavior_pack/entities/camel_husk.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-              "content": 3
-            }
-          ],
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-              "content": 1
-            }
-          ],
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
@@ -137,44 +111,16 @@
               "content": 1
             }
           ],
-          "/vanilla/behavior_pack/entities/panda.json": [
+          "/vanilla/behavior_pack/entities/pig.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-              "content": 5
-            }
-          ],
-          "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-              "content": 3
+              "content": 1
             }
           ]
         }
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/camel_husk.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 4,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/cat.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 1,
-            "speed_multiplier": 1.25,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/cave_spider.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
@@ -208,39 +154,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/donkey.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:donkey_wild/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1.5,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/horse.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_wild/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1.5,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/husk.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:zombie_husk_adult/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1.25,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/llama.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
@@ -252,307 +165,11 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/mooshroom.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1.5,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/mule.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:mule_wild/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1.5,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/ocelot.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 1,
-            "speed_multiplier": 1.25,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/panda.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 5,
-            "speed_multiplier": 1.5,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/pig.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
           "content": {
             "priority": 1,
-            "speed_multiplier": 1.25,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/ravager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 5,
-            "speed_multiplier": 1.25,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/sheep.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1.5,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1.5,
-            "target_dist": 4,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/spider.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 5,
-            "speed_multiplier": 1.25,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/trader_llama.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 1,
-            "speed_multiplier": 1.25,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wolf.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 1,
-            "speed_multiplier": 1.25,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:zombie_adult/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1.25,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_horse.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_adult/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1.5,
-            "target_dist": 0,
-            "track_target": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_wild/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1.5,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [],
-      "/vanilla/behavior_pack/entities/zombie_pigman.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1.25,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/adult/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 5,
-            "speed_multiplier": 1.25,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-        {
-          "path": "/minecraft:entity/component_groups/adult/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 5,
-            "speed_multiplier": 1.25,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 1.5,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 1,
-            "speed_multiplier": 1.25,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 1.5,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 1,
-            "speed_multiplier": 1.25,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 1.5,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/samples/behavior_pack_sample/entities/cow.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1.5,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1.5,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1.5,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/dream_turkey.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1.5,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 1,
-            "speed_multiplier": 1.25,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:zombie_adult/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 2,
             "speed_multiplier": 1.25,
             "target_dist": 0,
             "track_target": true

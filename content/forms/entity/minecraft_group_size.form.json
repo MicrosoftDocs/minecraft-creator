@@ -41,24 +41,6 @@
                 ]
               }
             }
-          ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:group_size/",
-              "content": {
-                "all_of": [
-                  {
-                    "test": "has_component",
-                    "operator": "not",
-                    "value": "minecraft:is_baby"
-                  },
-                  {
-                    "test": "is_family",
-                    "value": "piglin"
-                  }
-                ]
-              }
-            }
           ]
         }
       },
@@ -72,12 +54,6 @@
           "/vanilla/behavior_pack/entities/hoglin.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:group_size/",
-              "content": 32
-            }
-          ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:group_size/",
               "content": 32
             }
           ]
@@ -100,27 +76,6 @@
                 {
                   "test": "is_family",
                   "value": "hoglin"
-                }
-              ]
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/piglin.json": [
-        {
-          "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:group_size/",
-          "content": {
-            "radius": 32,
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_component",
-                  "operator": "not",
-                  "value": "minecraft:is_baby"
-                },
-                {
-                  "test": "is_family",
-                  "value": "piglin"
                 }
               ]
             }

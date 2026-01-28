@@ -89,6 +89,7 @@ Retrieves a prototype item stack based on this block permutation that can be use
 
 #### **Parameters**
 - **amount**?: *number* = `1`
+  * Bounds: [`1`, `255`]
   
   Number of instances of this block to place in the prototype item stack.
 

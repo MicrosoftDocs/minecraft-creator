@@ -22,7 +22,18 @@
         "id": "cooldown_range",
         "title": "Cooldown Range",
         "description": "Goal cooldown range in seconds. If specified, the cooldown will have to elapse even before the goal can be selected for the first time.",
-        "dataType": 18
+        "dataType": 18,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/feeling_happy/minecraft:behavior.timer_flag_3/",
+              "content": {
+                "min": 0,
+                "max": 0
+              }
+            }
+          ]
+        }
       },
       {
         "id": "duration_range",
@@ -33,10 +44,10 @@
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
               "path": "/minecraft:entity/component_groups/feeling_happy/minecraft:behavior.timer_flag_3/",
-              "content": [
-                2,
-                5
-              ]
+              "content": {
+                "min": 2,
+                "max": 5
+              }
             }
           ]
         }
@@ -86,11 +97,14 @@
           "path": "/minecraft:entity/component_groups/feeling_happy/minecraft:behavior.timer_flag_3/",
           "content": {
             "priority": 5,
-            "cooldown_range": 0,
-            "duration_range": [
-              2,
-              5
-            ],
+            "cooldown_range": {
+              "min": 0,
+              "max": 0
+            },
+            "duration_range": {
+              "min": 2,
+              "max": 5
+            },
             "on_end": {
               "event": "on_feeling_happy_end",
               "target": "self"

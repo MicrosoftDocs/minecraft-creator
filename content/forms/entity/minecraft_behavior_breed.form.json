@@ -98,15 +98,15 @@
         "defaultValue": 1,
         "dataType": 3,
         "samples": {
-          "/vanilla/behavior_pack/entities/armadillo.json": [
+          "/vanilla/behavior_pack/entities/chicken.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_unrolled/minecraft:behavior.breed/",
+              "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:behavior.breed/",
               "content": 1
             }
           ],
-          "/vanilla/behavior_pack/entities/axolotl.json": [
+          "/vanilla/behavior_pack/entities/fox.json": [
             {
-              "path": "/minecraft:entity/component_groups/axolotl_adult/minecraft:behavior.breed/",
+              "path": "/minecraft:entity/component_groups/minecraft:fox_adult/minecraft:behavior.breed/",
               "content": 1
             }
           ],
@@ -131,39 +131,15 @@
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
         "dataType": 0,
         "samples": {
-          "/vanilla/behavior_pack/entities/armadillo.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_unrolled/minecraft:behavior.breed/",
-              "content": 2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/axolotl.json": [
-            {
-              "path": "/minecraft:entity/component_groups/axolotl_adult/minecraft:behavior.breed/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/bee_adult/minecraft:behavior.breed/",
-              "content": 4
-            }
-          ],
-          "/vanilla/behavior_pack/entities/camel.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:camel_adult/minecraft:behavior.breed/",
-              "content": 2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_adult/minecraft:behavior.breed/",
-              "content": 3
-            }
-          ],
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:behavior.breed/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_adult/minecraft:behavior.breed/",
               "content": 3
             }
           ],
@@ -177,65 +153,11 @@
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/armadillo.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_unrolled/minecraft:behavior.breed/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/axolotl.json": [
-        {
-          "path": "/minecraft:entity/component_groups/axolotl_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 1,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/bee.json": [
-        {
-          "path": "/minecraft:entity/component_groups/bee_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 4,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/camel.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:camel_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/cat.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:cat_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 1
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/chicken.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:behavior.breed/",
           "content": {
             "priority": 3,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/donkey.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:donkey_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 2,
             "speed_multiplier": 1
           }
         }
@@ -272,204 +194,6 @@
           "content": {
             "priority": 3,
             "speed_multiplier": 0.6
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/horse.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/llama.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 4,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/nautilus.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/ocelot.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:ocelot_trusting/minecraft:behavior.breed/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/pig.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:pig_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 4,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/sheep.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:sheep_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/sniffer.json": [
-        {
-          "path": "/minecraft:entity/component_groups/sniffer_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/strider.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:strider_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 4,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/trader_llama.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 4,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/turtle.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wolf.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_tame/minecraft:behavior.breed/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:sheep_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 4,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:sheep_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 4,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 2,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:sheep_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
-        {
-          "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
-        {
-          "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/dream_turkey.json": [
-        {
-          "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-        {
-          "path": "/minecraft:entity/component_groups/mike_eliz:eliza_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 1
           }
         }
       ]

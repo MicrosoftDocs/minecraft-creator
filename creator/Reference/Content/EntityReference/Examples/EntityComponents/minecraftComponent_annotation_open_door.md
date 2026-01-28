@@ -17,10 +17,3 @@ Allows the entity to open doors.
 
 
 ## Samples
-
-#### [Copper Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/copper_golem.json)
-
-
-```json
-"minecraft:annotation.open_door": {}
-```

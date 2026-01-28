@@ -166,220 +166,58 @@
         "title": "Field Of View",
         "description": "Defines, in degrees, the width of the field of view for entities looking at the owner entity. If \"scale_fov_by_distance\" is set to true, this value corresponds to the field of view at a distance of one block between the entities.",
         "defaultValue": 26,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:neutral/minecraft:looked_at/",
-              "content": 120
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:looked_at/",
-              "content": 120
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "filters",
         "title": "Filters",
         "description": "Defines which entities are considered when searching for entities looking at the owner entity.",
-        "dataType": 20,
-        "samples": {
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:neutral/minecraft:looked_at/",
-              "content": {
-                "test": "actor_health",
-                "subject": "other",
-                "operator": ">",
-                "value": 0
-              }
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:looked_at/",
-              "content": {
-                "none_of": [
-                  {
-                    "test": "actor_health",
-                    "subject": "target",
-                    "value": 0
-                  },
-                  {
-                    "test": "has_equipment",
-                    "subject": "other",
-                    "domain": "head",
-                    "value": "carved_pumpkin"
-                  }
-                ]
-              }
-            }
-          ],
-          "/vanilla/behavior_pack/entities/enderman.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:looked_at/",
-              "content": {
-                "test": "has_equipment",
-                "domain": "head",
-                "subject": "other",
-                "operator": "not",
-                "value": "carved_pumpkin"
-              }
-            }
-          ]
-        }
+        "dataType": 20
       },
       {
         "id": "find_players_only",
         "title": "Find Players Only",
         "description": "Limits the search to only the nearest Player that meets the specified \"filters\" rather than all nearby entities.",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:neutral/minecraft:looked_at/",
-              "content": true
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:looked_at/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "line_of_sight_obstruction_type",
         "title": "Line Of Sight Obstruction Type",
         "description": "Defines the type of block shape used to check for line of sight obstructions. Valid values: \"outline\", \"collision\", \"collision_for_camera\".",
         "defaultValue": "collision",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:neutral/minecraft:looked_at/",
-              "content": "collision_for_camera"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:looked_at/",
-              "content": "collision_for_camera"
-            }
-          ]
-        }
+        "dataType": 2
       },
       {
         "id": "look_at_locations",
         "title": "Look At Locations",
         "description": "A list of locations on the owner entity towards which line of sight checks are performed. At least one location must be unobstructed for the entity to be considered as looked at.",
-        "dataType": 17,
-        "samples": {
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:neutral/minecraft:looked_at/",
-              "content": [
-                {
-                  "location": "head"
-                },
-                {
-                  "location": "body"
-                },
-                {
-                  "location": "feet",
-                  "vertical_offset": 0.5
-                }
-              ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:looked_at/",
-              "content": [
-                {
-                  "location": "head"
-                },
-                {
-                  "location": "body"
-                },
-                {
-                  "location": "feet",
-                  "vertical_offset": 0.5
-                }
-              ]
-            }
-          ]
-        }
+        "dataType": 17
       },
       {
         "id": "looked_at_cooldown",
         "title": "Looked At Cooldown",
         "description": "Specifies the range for the random number of seconds that must pass before the owner entity can check again for entities looking at it, after detecting an entity looking at it.",
-        "dataType": 18,
-        "samples": {
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:neutral/minecraft:looked_at/",
-              "content": 0.1
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:looked_at/",
-              "content": 0.1
-            }
-          ]
-        }
+        "dataType": 18
       },
       {
         "id": "looked_at_event",
         "title": "Looked At Event",
         "description": "Defines the event to trigger when an entity is detected looking at the owner entity.",
-        "dataType": 22,
-        "samples": {
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:neutral/minecraft:looked_at/",
-              "content": {
-                "event": "minecraft:become_hostile",
-                "filter": "self"
-              }
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:looked_at/",
-              "content": {
-                "event": "minecraft:on_target_start_looking",
-                "filter": "self"
-              }
-            }
-          ]
-        }
+        "dataType": 22
       },
       {
         "id": "min_looked_at_duration",
         "title": "Min Looked At Duration",
         "description": "Defines the minimum, continuous time the owner entity has to be looked at before being considered as such. Defaults to 0 if not explicitly specified.",
         "defaultValue": 0,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/enderman.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:looked_at/",
-              "content": 0.25
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "not_looked_at_event",
         "title": "Not Looked At Event",
         "description": "Defines the event to trigger when no entity is found looking at the owner entity.",
-        "dataType": 22,
-        "samples": {
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:looked_at/",
-              "content": {
-                "event": "minecraft:on_target_stop_looking",
-                "filter": "self"
-              }
-            }
-          ]
-        }
+        "dataType": 22
       },
       {
         "id": "scale_fov_by_distance",
@@ -393,154 +231,16 @@
         "title": "Search Radius",
         "description": "Maximum distance the owner entity will search for entities looking at it.",
         "defaultValue": 10,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:neutral/minecraft:looked_at/",
-              "content": 12
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:looked_at/",
-              "content": 24
-            }
-          ],
-          "/vanilla/behavior_pack/entities/enderman.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:looked_at/",
-              "content": 64
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "set_target",
         "title": "Set Target",
         "description": "Defines if and how the owner entity will set entities that are looking at it as its combat targets. Valid values:\n                                          \\n- \"never\", looking entities are never set as targets, but events are emitted.\n                                          \\n- \"once_and_stop_scanning\", the first detected looking entity is set as target. Scanning and event emission is suspended if and until the owner entity has a target.\n                                          \\n- \"once_and_keep_scanning\", the first detected looking entity is set as target. Scanning and event emission continues.s",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:neutral/minecraft:looked_at/",
-              "content": "once_and_keep_scanning"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:looked_at/",
-              "content": "never"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/enderman.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:looked_at/",
-              "content": "once_and_stop_scanning"
-            }
-          ]
-        }
+        "dataType": 1
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/creaking.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:neutral/minecraft:looked_at/",
-          "content": {
-            "search_radius": 12,
-            "look_at_locations": [
-              {
-                "location": "head"
-              },
-              {
-                "location": "body"
-              },
-              {
-                "location": "feet",
-                "vertical_offset": 0.5
-              }
-            ],
-            "set_target": "once_and_keep_scanning",
-            "find_players_only": true,
-            "looked_at_cooldown": 0.1,
-            "field_of_view": 120,
-            "scale_fov_by_distance": false,
-            "line_of_sight_obstruction_type": "collision_for_camera",
-            "looked_at_event": {
-              "event": "minecraft:become_hostile",
-              "filter": "self"
-            },
-            "filters": {
-              "test": "actor_health",
-              "subject": "other",
-              "operator": ">",
-              "value": 0
-            }
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:looked_at/",
-          "content": {
-            "search_radius": 24,
-            "look_at_locations": [
-              {
-                "location": "head"
-              },
-              {
-                "location": "body"
-              },
-              {
-                "location": "feet",
-                "vertical_offset": 0.5
-              }
-            ],
-            "set_target": "never",
-            "find_players_only": true,
-            "looked_at_cooldown": 0.1,
-            "field_of_view": 120,
-            "scale_fov_by_distance": false,
-            "line_of_sight_obstruction_type": "collision_for_camera",
-            "looked_at_event": {
-              "event": "minecraft:on_target_start_looking",
-              "filter": "self"
-            },
-            "not_looked_at_event": {
-              "event": "minecraft:on_target_stop_looking",
-              "filter": "self"
-            },
-            "filters": {
-              "none_of": [
-                {
-                  "test": "actor_health",
-                  "subject": "target",
-                  "value": 0
-                },
-                {
-                  "test": "has_equipment",
-                  "subject": "other",
-                  "domain": "head",
-                  "value": "carved_pumpkin"
-                }
-              ]
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/enderman.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:looked_at/",
-          "content": {
-            "search_radius": 64,
-            "set_target": "once_and_stop_scanning",
-            "find_players_only": true,
-            "min_looked_at_duration": 0.25,
-            "filters": {
-              "test": "has_equipment",
-              "domain": "head",
-              "subject": "other",
-              "operator": "not",
-              "value": "carved_pumpkin"
-            }
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

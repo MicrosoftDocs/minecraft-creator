@@ -20,7 +20,7 @@ Returns true if the subject entity is in a caravan.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| minecraft:damage_sensor | *not set* | [Damage Sensor](#damage-sensor) item |  | Llama: `{"triggers":{"cause":"all","deals_damage":"yes"}}`, Frost Moose: `{"triggers":{"cause":"all","deals_damage":true}}` | 
+| minecraft:damage_sensor | *not set* | [Damage Sensor](#damage-sensor) item |  | Llama: `{"triggers":{"cause":"all","deals_damage":"yes"}}` | 
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
 | test | *not set* | String |  | Llama: `"in_caravan"` | 
@@ -96,20 +96,5 @@ At /minecraft:entity/components/minecraft:damage_sensor/triggers/on_damage/filte
 {
   "test": "in_caravan",
   "value": false
-}
-```
-
-#### [Frost Moose](https://github.com/microsoft/minecraft-samples/tree/main/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json)
-
-At /minecraft:entity/component_groups/minecraft:in_caravan/: 
-
-```json
-{
-  "minecraft:damage_sensor": {
-    "triggers": {
-      "cause": "all",
-      "deals_damage": true
-    }
-  }
 }
 ```

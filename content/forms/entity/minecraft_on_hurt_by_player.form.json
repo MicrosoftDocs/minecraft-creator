@@ -29,16 +29,6 @@
               "path": "/minecraft:entity/components/minecraft:on_hurt_by_player/",
               "content": "minecraft:on_hurt_event"
             }
-          ],
-          "/vanilla/behavior_pack/entities/pillager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:illager_squad_captain/minecraft:on_hurt_by_player/",
-              "content": "minecraft:ranged_mode"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:patrol_captain/minecraft:on_hurt_by_player/",
-              "content": "minecraft:ranged_mode"
-            }
           ]
         }
       },
@@ -60,12 +50,6 @@
               "path": "/minecraft:entity/components/minecraft:on_hurt_by_player/",
               "content": "self"
             }
-          ],
-          "/vanilla/behavior_pack/entities/pillager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:illager_squad_captain/minecraft:on_hurt_by_player/",
-              "content": "self"
-            }
           ]
         }
       }
@@ -76,29 +60,6 @@
           "path": "/minecraft:entity/components/minecraft:on_hurt_by_player/",
           "content": {
             "event": "minecraft:on_hurt_event",
-            "target": "self"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/pillager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:illager_squad_captain/minecraft:on_hurt_by_player/",
-          "content": {
-            "event": "minecraft:ranged_mode",
-            "target": "self"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:patrol_captain/minecraft:on_hurt_by_player/",
-          "content": {
-            "event": "minecraft:ranged_mode",
-            "target": "self"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:patrol_follower/minecraft:on_hurt_by_player/",
-          "content": {
-            "event": "minecraft:ranged_mode",
             "target": "self"
           }
         }

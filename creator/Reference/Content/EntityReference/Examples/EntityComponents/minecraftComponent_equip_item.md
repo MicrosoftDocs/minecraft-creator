@@ -43,13 +43,6 @@ The entity puts on the desired equipment.
 }
 ```
 
-#### [Evocation Illager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/evocation_illager.json)
-
-
-```json
-"minecraft:equip_item": {}
-```
-
 #### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
 
 

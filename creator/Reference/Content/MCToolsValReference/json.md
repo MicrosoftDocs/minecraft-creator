@@ -1,27 +1,28 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "MCTools Validation Rules Documentation - minecraft:json"
-description: "Describes the minecraft:json mctools validation rules"
+title: "Validation Rules - JSON Schema Validation"
+description: "Documentation for JSON Schema Validation validation rules in Minecraft Creator Tools"
 ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
+# JSON Schema Validation Validation Rules
+Validates JSON files against official JSON schemas located at public/schemas. Reports schema validation errors and warns when files are not at a current format version. Topic IDs 100+ are computed as JsonSchemaErrorBase (100) + ProjectItemType. Topic IDs 1100+ are computed as NotCurrentFormatVersionBase (1100) + ProjectItemType.
+## Rules Summary
+| Rule ID | Rule | Severity | Auto-Fix |
+|:--------|:-----|:---------|:---------|
+| [JSON1](#json1) | JSON Parse Error | 🔴 Error |  |
 
-# MCTools Validation Rules Documentation - minecraft:json
+---
+## Rule Details
 
-Validates JSON files against their corresponding schemas based on item type. Reports schema validation errors and warns when files are not at a current format version. Topic IDs 100+ are computed as JsonSchemaErrorBase (100) + ProjectItemType. Topic IDs 1100+ are computed as NotCurrentFormatVersionBase (1100) + ProjectItemType.
+### JSON1
+**🔴 JSON Parse Error**  
+**Severity**: Error
 
+#### What This Checks
+The file could not be parsed as valid JSON. Check for syntax errors like missing commas, brackets, or quotes.
 
-## JSON Schema Validation Validation Rules
-
-
-### JSON1: JSON Parse Error
-
-**Rule ID:** `JSON1`
-
-**Severity:** Error
-
-**What it checks:** The file could not be parsed as valid JSON. Check for syntax errors like missing commas, brackets, or quotes.
-
-**How to fix:** Use a JSON validator or your editor's JSON mode to find syntax errors. Common issues include: missing or extra commas, unclosed brackets or braces, unquoted property names, and trailing commas before closing brackets.
+#### How to Fix
+Use a JSON validator or your editor's JSON mode to find syntax errors. Common issues include: missing or extra commas, unclosed brackets or braces, unquoted property names, and trailing commas before closing brackets.

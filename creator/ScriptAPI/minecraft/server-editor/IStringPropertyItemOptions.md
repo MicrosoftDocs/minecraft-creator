@@ -16,6 +16,13 @@ Optional properties for String property item
 
 ## Properties
 
+### **hasClearButton**
+`hasClearButton?: boolean;`
+
+Shows clear button for the item. If undefined, it will be true.
+
+Type: *boolean*
+
 ### **hiddenLabel**
 `hiddenLabel?: boolean;`
 
@@ -29,6 +36,13 @@ Type: *boolean*
 Displays label inline. If undefined, it will be true.
 
 Type: *boolean*
+
+### **multilineHeight**
+`multilineHeight?: number;`
+
+If defined, string will be handled as multiline input.
+
+Type: *number*
 
 ### **onChange**
 `onChange?: (arg0: string, arg1: string) => void;`

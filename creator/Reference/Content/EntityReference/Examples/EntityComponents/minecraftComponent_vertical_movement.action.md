@@ -17,15 +17,6 @@ When configured as a rideable entity, the entity will move upwards or downwards 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| vertical_velocity | 0.5 | Decimal number | Vertical velocity to apply when jump action is issued. | Happy Ghast: `0.5` | 
+| vertical_velocity | 0.5 | Decimal number | Vertical velocity to apply when jump action is issued. |  | 
 
 ## Samples
-
-#### [Happy Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/happy_ghast.json)
-
-
-```json
-"minecraft:vertical_movement_action": {
-  "vertical_velocity": 0.5
-}
-```

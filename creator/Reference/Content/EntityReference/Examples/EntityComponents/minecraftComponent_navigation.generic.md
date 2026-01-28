@@ -17,7 +17,7 @@ Allows this entity to generate paths by walking, swimming, flying and/or climbin
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| avoid_damage_blocks | false | Boolean true/false | Tells the pathfinder to avoid blocks that cause damage when finding a path | Axolotl: `true` | 
+| avoid_damage_blocks | false | Boolean true/false | Tells the pathfinder to avoid blocks that cause damage when finding a path | Frog: `true` | 
 | avoid_portals | false | Boolean true/false | Tells the pathfinder to avoid portals (like nether portals) when finding a path |  | 
 | avoid_sun | false | Boolean true/false | Whether or not the pathfinder should avoid tiles that are exposed to the sun when creating paths |  | 
 | avoid_water | false | Boolean true/false | Tells the pathfinder to avoid water when creating a path |  | 
@@ -30,28 +30,14 @@ Allows this entity to generate paths by walking, swimming, flying and/or climbin
 | can_pass_doors | true | Boolean true/false | Whether a path can be created through a door |  | 
 | can_path_from_air | false | Boolean true/false | Tells the pathfinder that it can start pathing when in the air |  | 
 | can_path_over_lava | false | Boolean true/false | Tells the pathfinder whether or not it can travel on the surface of the lava |  | 
-| can_path_over_water | false | Boolean true/false | Tells the pathfinder whether or not it can travel on the surface of the water | Axolotl: `true` | 
+| can_path_over_water | false | Boolean true/false | Tells the pathfinder whether or not it can travel on the surface of the water | Frog: `true` | 
 | can_sink | true | Boolean true/false | Tells the pathfinder whether or not it will be pulled down by gravity while in water |  | 
-| can_swim | false | Boolean true/false | Tells the pathfinder whether or not it can path anywhere through water and plays swimming animation along that path | Axolotl: `true` | 
-| can_walk | true | Boolean true/false | Tells the pathfinder whether or not it can walk on the ground outside water | Axolotl: `true` | 
+| can_swim | false | Boolean true/false | Tells the pathfinder whether or not it can path anywhere through water and plays swimming animation along that path | Elder Guardian: `true` | 
+| can_walk | true | Boolean true/false | Tells the pathfinder whether or not it can walk on the ground outside water | Frog: `true` | 
 | can_walk_in_lava | false | Boolean true/false | Tells the pathfinder whether or not it can travel in lava like walking on ground |  | 
-| is_amphibious | false | Boolean true/false | Tells the pathfinder whether or not it can walk on the ground underwater | Axolotl: `true` | 
+| is_amphibious | false | Boolean true/false | Tells the pathfinder whether or not it can walk on the ground underwater | Elder Guardian: `true` | 
 
 ## Samples
-
-#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
-
-
-```json
-"minecraft:navigation.generic": {
-  "is_amphibious": true,
-  "can_path_over_water": true,
-  "can_swim": true,
-  "can_walk": true,
-  "can_sink": false,
-  "avoid_damage_blocks": true
-}
-```
 
 #### [Elder Guardian](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/elder_guardian.json)
 
@@ -66,28 +52,15 @@ Allows this entity to generate paths by walking, swimming, flying and/or climbin
 }
 ```
 
-#### [Fish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fish.json)
+#### [Frog](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/frog.json)
 
 
 ```json
 "minecraft:navigation.generic": {
-  "is_amphibious": false,
-  "can_path_over_water": false,
-  "can_swim": true,
-  "can_walk": false,
-  "can_breach": false,
-  "can_sink": false
-}
-```
-
-#### [Tadpole](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/tadpole.json)
-
-
-```json
-"minecraft:navigation.generic": {
+  "is_amphibious": true,
   "can_path_over_water": true,
   "can_swim": true,
-  "can_walk": false,
+  "can_walk": true,
   "can_sink": false,
   "avoid_damage_blocks": true
 }

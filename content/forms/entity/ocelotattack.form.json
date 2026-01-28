@@ -1,0 +1,167 @@
+{
+  "id": "minecraft:behavior.ocelotattack",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.ocelotattack",
+    "title": "Entity Ocelotattack Behavior",
+    "description": "Controls specific attack behavior for Ocelots.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "cooldown_time",
+        "title": "Cooldown Time",
+        "description": "Time (in seconds) between attacks.",
+        "dataType": 3,
+        "defaultValue": 1,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": "max_distance",
+        "title": "Max Distance",
+        "description": "Max distance from the target, this entity will use this attack behavior.",
+        "dataType": 3,
+        "defaultValue": 15,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": "max_sneak_range",
+        "title": "Max Sneak Range",
+        "description": "Max distance from the target, this entity starts sneaking.",
+        "dataType": 3,
+        "defaultValue": 15,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": "max_sprint_range",
+        "title": "Max Sprint Range",
+        "description": "Max distance from the target, this entity starts sprinting (sprinting takes priority over sneaking).",
+        "dataType": 3,
+        "defaultValue": 4,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "reach_multiplier",
+        "title": "Reach Multiplier",
+        "description": "Used with the base size of the entity to determine minimum target-distance before trying to deal attack damage.",
+        "dataType": 3,
+        "defaultValue": 2,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": "sneak_speed_multiplier",
+        "title": "Sneak Speed Multiplier",
+        "description": "Modifies the attacking entity's movement speed while sneaking.",
+        "dataType": 3,
+        "defaultValue": 0.6000000238418579,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": "sprint_speed_multiplier",
+        "title": "Sprint Speed Multiplier",
+        "description": "Modifies the attacking entity's movement speed while sprinting.",
+        "dataType": 3,
+        "defaultValue": 1.3300000429153442,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": "walk_speed_multiplier",
+        "title": "Walk Speed Multiplier",
+        "description": "Modifies the attacking entity's movement speed when not sneaking or sprinting, but still within attack range.",
+        "dataType": 3,
+        "defaultValue": 0.800000011920929,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": "x_max_rotation",
+        "title": "x Max Rotation",
+        "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target.",
+        "dataType": 3,
+        "defaultValue": 30,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": "y_max_head_rotation",
+        "title": "y Max Head Rotation",
+        "description": "Maximum rotation (in degrees), on the Y-axis, this entity's head can rotate while trying to look at the target.",
+        "dataType": 3,
+        "defaultValue": 30,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ]
+      }
+    ]
+  }
+}

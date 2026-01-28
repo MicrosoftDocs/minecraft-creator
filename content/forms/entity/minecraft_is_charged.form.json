@@ -19,19 +19,6 @@
     "title": "Is Charged",
     "description": "Sets that this entity is charged.",
     "fields": [],
-    "samples": {
-      "/vanilla/behavior_pack/entities/creeper.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:charged_creeper/minecraft:is_charged/",
-          "content": {}
-        }
-      ],
-      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:charged_creeper/minecraft:is_charged/",
-          "content": {}
-        }
-      ]
-    }
+    "samples": {}
   }
 }

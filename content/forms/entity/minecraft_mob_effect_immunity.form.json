@@ -24,14 +24,6 @@
         "description": "List of names of effects the entity is immune to.",
         "dataType": 17,
         "samples": {
-          "/vanilla/behavior_pack/entities/nautilus.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:mob_effect_immunity/",
-              "content": [
-                "poison"
-              ]
-            }
-          ],
           "/vanilla/behavior_pack/entities/parched.json": [
             {
               "path": "/minecraft:entity/components/minecraft:mob_effect_immunity/",
@@ -55,29 +47,11 @@
                 "oozing"
               ]
             }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:mob_effect_immunity/",
-              "content": [
-                "poison"
-              ]
-            }
           ]
         }
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/nautilus.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:mob_effect_immunity/",
-          "content": {
-            "mob_effects": [
-              "poison"
-            ]
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/parched.json": [
         {
           "path": "/minecraft:entity/components/minecraft:mob_effect_immunity/",
@@ -104,16 +78,6 @@
           "content": {
             "mob_effects": [
               "oozing"
-            ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:mob_effect_immunity/",
-          "content": {
-            "mob_effects": [
-              "poison"
             ]
           }
         }

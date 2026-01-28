@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.0-beta.27 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.10-beta.20 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -65,6 +65,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.0-b
 - [LayoutFlex](LayoutFlex.md)
 - [LayoutSizeType](LayoutSizeType.md)
 - [ListPaneEntryType](ListPaneEntryType.md)
+- [ListPaneSlotVariant](ListPaneSlotVariant.md)
 - [ListPaneViewSortType](ListPaneViewSortType.md)
 - [LogChannel](LogChannel.md)
 - [MinimapMarkerType](MinimapMarkerType.md)
@@ -120,9 +121,10 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.0-b
 - [ListPaneEntryMap](ListPaneEntryMap.md)
 - [ListPaneEntryParams](ListPaneEntryParams.md)
 - [ListPaneImageEntryParams](ListPaneImageEntryParams.md)
+- [ListPaneSlotConfiguration](ListPaneSlotConfiguration.md)
 - [ListPaneSlotCreationProps](ListPaneSlotCreationProps.md)
-- [ListPaneSlotLayout](ListPaneSlotLayout.md)
 - [ListPaneSlotLayoutEntry](ListPaneSlotLayoutEntry.md)
+- [ListPaneSlotLayoutSections](ListPaneSlotLayoutSections.md)
 - [ListPaneTextEntryParams](ListPaneTextEntryParams.md)
 - [ListPaneViewFilter](ListPaneViewFilter.md)
 - [LocalizedString](LocalizedString.md)
@@ -371,6 +373,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.0-b
 - [SelectionManifestEntry](SelectionManifestEntry.md)
 - [WeightedBlock](WeightedBlock.md)
 - [WidgetComponentBaseOptions](WidgetComponentBaseOptions.md)
+- [WidgetComponentBoundingBoxLimit](WidgetComponentBoundingBoxLimit.md)
 - [WidgetComponentBoundingBoxOptions](WidgetComponentBoundingBoxOptions.md)
 - [WidgetComponentClipboardOptions](WidgetComponentClipboardOptions.md)
 - [WidgetComponentEntityOptions](WidgetComponentEntityOptions.md)

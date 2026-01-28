@@ -34,15 +34,7 @@
         "title": "Block",
         "description": "Defines the block that will be placed.",
         "dataType": 16,
-        "isRequired": true,
-        "samples": {
-          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:block_placer/",
-              "content": "minecraft:dirt"
-            }
-          ]
-        }
+        "isRequired": true
       },
       {
         "id": "replace_block_item",
@@ -99,47 +91,9 @@
             "id": "use_on",
             "dataType": 16
           }
-        ],
-        "samples": {
-          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:block_placer/",
-              "content": [
-                {
-                  "name": "minecraft:dirt"
-                },
-                {
-                  "name": "minecraft:grass_block"
-                },
-                {
-                  "name": "minecraft:anvil"
-                }
-              ]
-            }
-          ]
-        }
+        ]
       }
     ],
-    "samples": {
-      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:block_placer/",
-          "content": {
-            "block": "minecraft:dirt",
-            "use_on": [
-              {
-                "name": "minecraft:dirt"
-              },
-              {
-                "name": "minecraft:grass_block"
-              },
-              {
-                "name": "minecraft:anvil"
-              }
-            ]
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

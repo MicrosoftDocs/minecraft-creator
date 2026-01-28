@@ -17,10 +17,9 @@ Returns true when the block has the given name.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Bee: `"!="` | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Bee: `"block"` | 
-| test | *not set* | String |  | Bee: `"is_block"` | 
-| value | *not set* | String | (Required) The Family name to look for | Bee: `"minecraft:bee_nest"`, `"minecraft:beehive"`, `"minecraft:sweet_berry_bush"` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | *not set* | String | (Required) The Family name to look for |  | 
 
 ### Operator choices
 
@@ -61,58 +60,4 @@ At Short (using Defaults)..:
 
 ```json
 { "test": "is_block", "value": "player" }
-```
-
-#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
-
-At /minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/0/: 
-
-```json
-{
-  "test": "is_block",
-  "subject": "block",
-  "value": "minecraft:bee_nest"
-}
-```
-
-At /minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/1/: 
-
-```json
-{
-  "test": "is_block",
-  "subject": "block",
-  "value": "minecraft:beehive"
-}
-```
-
-At /minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/1/filters/all_of/0/: 
-
-```json
-{
-  "test": "is_block",
-  "subject": "block",
-  "operator": "!=",
-  "value": "minecraft:bee_nest"
-}
-```
-
-At /minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/1/filters/all_of/1/: 
-
-```json
-{
-  "test": "is_block",
-  "subject": "block",
-  "operator": "!=",
-  "value": "minecraft:beehive"
-}
-```
-
-At /minecraft:entity/components/minecraft:damage_sensor/triggers/1/on_damage/filters/: 
-
-```json
-{
-  "test": "is_block",
-  "subject": "block",
-  "value": "minecraft:sweet_berry_bush"
-}
 ```

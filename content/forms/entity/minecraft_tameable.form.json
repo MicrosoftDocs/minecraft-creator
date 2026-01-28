@@ -39,15 +39,9 @@
         "defaultValue": 1,
         "dataType": 3,
         "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
+          "/vanilla/behavior_pack/entities/parrot.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:tameable/",
-              "content": 0.33
-            }
-          ],
-          "/vanilla/behavior_pack/entities/nautilus.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_wild_adult_calm/minecraft:tameable/",
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:tameable/",
               "content": 0.33
             }
           ]
@@ -59,18 +53,9 @@
         "description": "Event to run when this entity becomes tamed",
         "dataType": 22,
         "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
+          "/vanilla/behavior_pack/entities/parrot.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:tameable/",
-              "content": {
-                "event": "minecraft:on_tame",
-                "target": "self"
-              }
-            }
-          ],
-          "/vanilla/behavior_pack/entities/nautilus.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_wild_adult_calm/minecraft:tameable/",
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:tameable/",
               "content": {
                 "event": "minecraft:on_tame",
                 "target": "self"
@@ -85,27 +70,6 @@
         "description": "The list of items that can be used to tame this entity",
         "dataType": 17,
         "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:tameable/",
-              "content": [
-                "fish",
-                "salmon"
-              ]
-            }
-          ],
-          "/vanilla/behavior_pack/entities/nautilus.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_wild_adult_calm/minecraft:tameable/",
-              "content": [
-                {
-                  "item": "pufferfish_bucket",
-                  "result_item": "water_bucket:0"
-                },
-                "pufferfish"
-              ]
-            }
-          ],
           "/vanilla/behavior_pack/entities/parrot.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:tameable/",
@@ -118,73 +82,11 @@
                 "torchflower_seeds"
               ]
             }
-          ],
-          "/vanilla/behavior_pack/entities/wolf.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:tameable/",
-              "content": "bone"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tameable/minecraft:tameable/",
-              "content": [
-                {
-                  "item": "pufferfish_bucket",
-                  "result_item": "water_bucket:0"
-                },
-                "pufferfish"
-              ]
-            }
-          ],
-          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-            {
-              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_wild/minecraft:tameable/",
-              "content": [
-                "fish",
-                "salmon"
-              ]
-            }
           ]
         }
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/cat.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:tameable/",
-          "content": {
-            "probability": 0.33,
-            "tame_items": [
-              "fish",
-              "salmon"
-            ],
-            "tame_event": {
-              "event": "minecraft:on_tame",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/nautilus.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_wild_adult_calm/minecraft:tameable/",
-          "content": {
-            "probability": 0.33,
-            "tame_items": [
-              {
-                "item": "pufferfish_bucket",
-                "result_item": "water_bucket:0"
-              },
-              "pufferfish"
-            ],
-            "tame_event": {
-              "event": "minecraft:on_tame",
-              "target": "self"
-            }
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/parrot.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:tameable/",
@@ -197,54 +99,6 @@
               "beetroot_seeds",
               "pitcher_pod",
               "torchflower_seeds"
-            ],
-            "tame_event": {
-              "event": "minecraft:on_tame",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wolf.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:tameable/",
-          "content": {
-            "probability": 0.33,
-            "tame_items": "bone",
-            "tame_event": {
-              "event": "minecraft:on_tame",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tameable/minecraft:tameable/",
-          "content": {
-            "probability": 0.33,
-            "tame_items": [
-              {
-                "item": "pufferfish_bucket",
-                "result_item": "water_bucket:0"
-              },
-              "pufferfish"
-            ],
-            "tame_event": {
-              "event": "minecraft:on_tame",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-        {
-          "path": "/minecraft:entity/component_groups/mike_eliz:eliza_wild/minecraft:tameable/",
-          "content": {
-            "probability": 0.33,
-            "tame_items": [
-              "fish",
-              "salmon"
             ],
             "tame_event": {
               "event": "minecraft:on_tame",

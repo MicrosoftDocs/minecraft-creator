@@ -1,0 +1,73 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a spawn rules document structure"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "spawn_rules_document",
+  "title": "Spawn Rules Document",
+  "description": "A Minecraft Bedrock Edition spawn rules definition document. Spawn rules control how, where, and when entities naturally spawn in the world. They define conditions based on biome, height, light level, population density, and other factors.",
+  "fields": [
+    {
+      "dataType": 25,
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of this spawn rules file. Use '1.8.0' or later.",
+      "isRequired": true
+    },
+    {
+      "dataType": 16,
+      "id": "minecraft:spawn_rules",
+      "title": "Spawn Rules",
+      "description": "The spawn rules definition containing description and conditions.",
+      "isRequired": true,
+      "subForm": {
+        "id": "spawn_rules_wrapper",
+        "title": "Spawn Rules Definition",
+        "fields": [
+          {
+            "id": "description",
+            "title": "Description",
+            "description": "Contains the entity's identifier and population control type.",
+            "dataType": 16,
+            "isRequired": true,
+            "subForm": {
+              "id": "spawn_rules_description",
+              "title": "Spawn Rules Description",
+              "fields": [
+                {
+                  "id": "identifier",
+                  "title": "Identifier",
+                  "description": "The entity type identifier, e.g., 'minecraft:zombie' or 'custom:my_entity'.",
+                  "dataType": 1,
+                  "isRequired": true
+                },
+                {
+                  "id": "population_control",
+                  "title": "Population Control",
+                  "description": "Controls spawn density. Options: 'animal', 'water_animal', 'monster', 'ambient', 'cat', 'pillager'.",
+                  "dataType": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "conditions",
+            "title": "Conditions",
+            "description": "Array of spawn condition sets. Each condition set can have weight, herd, density, height, biome filters, etc.",
+            "dataType": 17,
+            "isRequired": true
+          }
+        ]
+      }
+    }
+  ]
+}

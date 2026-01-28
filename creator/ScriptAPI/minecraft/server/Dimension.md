@@ -146,6 +146,7 @@ Creates an explosion at the specified location.
   
   The location of the explosion.
 - **radius**: *number*
+  * Bounds: [`0`, `1000`]
   
   Radius, in blocks, of the explosion to create.
 - **explosionOptions**?: [*ExplosionOptions*](ExplosionOptions.md) = `null`
@@ -793,6 +794,7 @@ Sets the current weather within the dimension
   
   Set the type of weather to apply.
 - **duration**?: *number* = `null`
+  * Bounds: [`1`, `1000000`]
   
   Sets the duration of the weather (in ticks). If no duration is provided, the duration will be set to a random duration between 300 and 900 seconds.
   

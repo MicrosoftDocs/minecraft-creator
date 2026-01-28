@@ -41,13 +41,6 @@
         "dataType": 0
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/axolotl.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:combat_regeneration/",
-          "content": {}
-        }
-      ]
-    }
+    "samples": {}
   }
 }

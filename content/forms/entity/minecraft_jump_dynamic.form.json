@@ -44,7 +44,20 @@
             "title": "Jump Delay",
             "description": "Amount of ticks between sequential jumps."
           }
-        ]
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/rabbit.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:jump.dynamic/",
+              "content": {
+                "distance_scale": 1.75,
+                "height": 0.25,
+                "jump_delay": 7,
+                "animation_duration": 15
+              }
+            }
+          ]
+        }
       },
       {
         "id": "regular_skip_data",
@@ -72,14 +85,40 @@
             "title": "Jump Delay",
             "description": "Amount of ticks between sequential jumps."
           }
-        ]
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/rabbit.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:jump.dynamic/",
+              "content": {
+                "distance_scale": 0.8,
+                "height": 0.25,
+                "jump_delay": 15,
+                "animation_duration": 18
+              }
+            }
+          ]
+        }
       }
     ],
     "samples": {
       "/vanilla/behavior_pack/entities/rabbit.json": [
         {
           "path": "/minecraft:entity/components/minecraft:jump.dynamic/",
-          "content": {}
+          "content": {
+            "regular_skip_data": {
+              "distance_scale": 0.8,
+              "height": 0.25,
+              "jump_delay": 15,
+              "animation_duration": 18
+            },
+            "fast_skip_data": {
+              "distance_scale": 1.75,
+              "height": 0.25,
+              "jump_delay": 7,
+              "animation_duration": 15
+            }
+          }
         }
       ]
     }

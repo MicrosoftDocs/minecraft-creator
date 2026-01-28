@@ -14,10 +14,3 @@ Sets that this entity is charged. This is used to set the is_charged value for u
 
 
 ## Samples
-
-#### [Creeper](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creeper.json)
-
-
-```json
-"minecraft:is_charged": {}
-```

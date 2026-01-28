@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a particle effect document structure"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "particle_document",
+  "title": "Particle Effect Document",
+  "description": "A resource pack particle effect definition document for Minecraft Bedrock Edition. This describes the complete JSON file structure including format_version and the particle_effect wrapper. Particles use a component-based system with emitters controlling spawn rate and shape, and particle components controlling appearance and motion.",
+  "fields": [
+    {
+      "dataType": 25,
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of this particle effect file. Use '1.10.0' or later for the modern particle system.",
+      "isRequired": true
+    },
+    {
+      "dataType": 16,
+      "id": "particle_effect",
+      "title": "Particle Effect",
+      "description": "The particle effect definition containing description and components.",
+      "isRequired": true,
+      "subFormId": "client_particles/particle_effect"
+    }
+  ]
+}

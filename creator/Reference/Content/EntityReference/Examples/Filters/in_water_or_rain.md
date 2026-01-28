@@ -20,10 +20,10 @@ Returns true when the subject entity is in water or rain.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Axolotl: `"!="` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Dolphin: `"!="` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| test | *not set* | String |  | Axolotl: `"in_water_or_rain"` | 
-| value | true | Boolean true/false | (Optional) true or false. | Axolotl: `true` | 
+| test | *not set* | String |  | Dolphin: `"in_water_or_rain"` | 
+| value | true | Boolean true/false | (Optional) true or false. | Dolphin: `true` | 
 
 ### Operator choices
 
@@ -66,7 +66,7 @@ At Short (using Defaults)..:
 { "test": "in_water_or_rain" }
 ```
 
-#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
+#### [Dolphin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/dolphin.json)
 
 
 ```json

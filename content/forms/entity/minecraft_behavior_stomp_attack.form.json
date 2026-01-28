@@ -78,12 +78,6 @@
               "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:behavior.stomp_attack/",
               "content": 2
             }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:behavior.stomp_attack/",
-              "content": 2
-            }
           ]
         }
       },
@@ -153,12 +147,6 @@
               "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:behavior.stomp_attack/",
               "content": true
             }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:behavior.stomp_attack/",
-              "content": true
-            }
           ]
         }
       },
@@ -181,12 +169,6 @@
               "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:behavior.stomp_attack/",
               "content": 2
             }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:behavior.stomp_attack/",
-              "content": 2
-            }
           ]
         }
       },
@@ -198,12 +180,6 @@
         "dataType": 1,
         "samples": {
           "/vanilla/behavior_pack/entities/polar_bear.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:behavior.stomp_attack/",
-              "content": true
-            }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:behavior.stomp_attack/",
               "content": true
@@ -237,42 +213,12 @@
               "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:behavior.stomp_attack/",
               "content": 1
             }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:behavior.stomp_attack/",
-              "content": 1
-            }
           ]
         }
       }
     ],
     "samples": {
       "/vanilla/behavior_pack/entities/polar_bear.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:behavior.stomp_attack/",
-          "content": {
-            "priority": 1,
-            "track_target": true,
-            "require_complete_path": true,
-            "stomp_range_multiplier": 2,
-            "no_damage_range_multiplier": 2
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:behavior.stomp_attack/",
-          "content": {
-            "priority": 1,
-            "track_target": true,
-            "require_complete_path": true,
-            "stomp_range_multiplier": 2,
-            "no_damage_range_multiplier": 2
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:behavior.stomp_attack/",
           "content": {

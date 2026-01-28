@@ -68,7 +68,7 @@ At Short (using Defaults)..:
 
 #### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
 
-At /minecraft:entity/component_groups/minecraft:defending_fox/minecraft:environment_sensor/triggers/0/filters/all_of/0/: 
+At /minecraft:entity/component_groups/minecraft:defending_fox/minecraft:environment_sensor/triggers[0]/filters/all_of[0]/: 
 
 ```json
 {
@@ -77,7 +77,7 @@ At /minecraft:entity/component_groups/minecraft:defending_fox/minecraft:environm
 }
 ```
 
-At /minecraft:entity/component_groups/minecraft:defending_fox/minecraft:environment_sensor/triggers/1/filters/all_of/0/: 
+At /minecraft:entity/component_groups/minecraft:defending_fox/minecraft:environment_sensor/triggers[1]/filters/all_of[0]/: 
 
 ```json
 {

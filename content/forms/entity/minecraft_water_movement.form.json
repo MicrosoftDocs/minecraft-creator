@@ -24,12 +24,6 @@
         "defaultValue": 0.8,
         "dataType": 3,
         "samples": {
-          "/vanilla/behavior_pack/entities/panda.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:water_movement/",
-              "content": 0.98
-            }
-          ],
           "/vanilla/behavior_pack/entities/polar_bear.json": [
             {
               "path": "/minecraft:entity/components/minecraft:water_movement/",
@@ -41,25 +35,11 @@
               "path": "/minecraft:entity/components/minecraft:water_movement/",
               "content": 0.9
             }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:water_movement/",
-              "content": 0.9
-            }
           ]
         }
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/panda.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:water_movement/",
-          "content": {
-            "drag_factor": 0.98
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/polar_bear.json": [
         {
           "path": "/minecraft:entity/components/minecraft:water_movement/",
@@ -69,38 +49,6 @@
         }
       ],
       "/vanilla/behavior_pack/entities/turtle.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:water_movement/",
-          "content": {
-            "drag_factor": 0.9
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:water_movement/",
-          "content": {
-            "drag_factor": 0.98
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:water_movement/",
-          "content": {
-            "drag_factor": 0.9
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:water_movement/",
-          "content": {
-            "drag_factor": 0.98
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
         {
           "path": "/minecraft:entity/components/minecraft:water_movement/",
           "content": {

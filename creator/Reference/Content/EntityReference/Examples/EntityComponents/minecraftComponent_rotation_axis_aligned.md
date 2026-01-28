@@ -15,10 +15,3 @@ Combining this with the "minecraft:body_rotation_blocked" component will cause t
 
 
 ## Samples
-
-#### [Happy Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/happy_ghast.json)
-
-
-```json
-"minecraft:rotation_axis_aligned": {}
-```

@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "validates JSON files against their corresponding schemas"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "comjson",
+  "title": "Community JSON Schema Validation",
+  "description": "Validates JSON files against their corresponding schemas based on item type. Reports schema validation errors and warns when files are not at a current format version. Topic IDs 100+ are computed as JsonSchemaErrorBase (100) + ProjectItemType. Topic IDs 1100+ are computed as NotCurrentFormatVersionBase (1100) + ProjectItemType.",
+  "fields": [
+    {
+      "id": "1",
+      "title": "JSON Parse Error",
+      "description": "The file could not be parsed as valid JSON. Check for syntax errors like missing commas, brackets, or quotes.",
+      "howToUse": "Use a JSON validator or your editor's JSON mode to find syntax errors. Common issues include: missing or extra commas, unclosed brackets or braces, unquoted property names, and trailing commas before closing brackets.",
+      "messageType": "error",
+      "dataType": 2
+    }
+  ]
+}

@@ -312,6 +312,8 @@ Represents the unique type of network packet.
 `ResourcePackDataInfoPacket = "ResourcePackDataInfoPacket"`
 ### **ResourcePacksInfoPacket**
 `ResourcePacksInfoPacket = "ResourcePacksInfoPacket"`
+### **ResourcePacksReadyForValidationPacket**
+`ResourcePacksReadyForValidationPacket = "ResourcePacksReadyForValidationPacket"`
 ### **ResourcePackStackPacket**
 `ResourcePackStackPacket = "ResourcePackStackPacket"`
 ### **RespawnPacket**

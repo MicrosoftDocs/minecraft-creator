@@ -15,7 +15,7 @@ When configured as a rideable entity, the entity will be controlled using WASD c
 
 ## Samples
 
-#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
+#### [Skeleton Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton_horse.json)
 
 
 ```json

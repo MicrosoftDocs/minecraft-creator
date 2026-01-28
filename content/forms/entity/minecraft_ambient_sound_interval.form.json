@@ -52,29 +52,11 @@
               "content": "ambient"
             }
           ],
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/look_for_food/minecraft:ambient_sound_interval/",
-              "content": "ambient.pollinate"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/default_sound/minecraft:ambient_sound_interval/",
-              "content": "ambient"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:ambient_sound_interval/",
-              "content": "undefined"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/evocation_illager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:ambient_sound_interval/",
-              "content": "ambient.in.raid"
-            }
-          ],
           "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_ambient_normal/minecraft:ambient_sound_interval/",
+              "content": "ambient"
+            },
             {
               "path": "/minecraft:entity/component_groups/minecraft:fox_ambient_sleep/minecraft:ambient_sound_interval/",
               "content": "sleep"
@@ -86,12 +68,6 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:fox_ambient_defending_target/minecraft:ambient_sound_interval/",
               "content": "mad"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pillager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:ambient_sound_interval/",
-              "content": "ambient.in.raid"
             }
           ]
         }
@@ -165,34 +141,16 @@
               "content": 5
             }
           ],
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/look_for_food/minecraft:ambient_sound_interval/",
-              "content": 3
-            }
-          ],
-          "/vanilla/behavior_pack/entities/evocation_illager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:ambient_sound_interval/",
-              "content": 4
-            }
-          ],
           "/vanilla/behavior_pack/entities/fox.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:fox_ambient_night/minecraft:ambient_sound_interval/",
               "content": 160
             }
           ],
-          "/vanilla/behavior_pack/entities/pillager.json": [
+          "/vanilla/behavior_pack/entities/warden.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:ambient_sound_interval/",
+              "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
               "content": 4
-            }
-          ],
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:ambient_sound_interval/",
-              "content": 8
             }
           ]
         }
@@ -210,38 +168,16 @@
               "content": 5
             }
           ],
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/look_for_food/minecraft:ambient_sound_interval/",
-              "content": 2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/evocation_illager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:ambient_sound_interval/",
-              "content": 2
-            }
-          ],
           "/vanilla/behavior_pack/entities/fox.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:fox_ambient_night/minecraft:ambient_sound_interval/",
               "content": 80
             }
           ],
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+          "/vanilla/behavior_pack/entities/warden.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_with_passengers/minecraft:ambient_sound_interval/",
-              "content": 30
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_without_passengers/minecraft:ambient_sound_interval/",
-              "content": 5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:ambient_sound_interval/",
-              "content": 4
+              "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
+              "content": 2
             }
           ]
         }
@@ -265,58 +201,6 @@
                 "condition": "!query.is_using_item"
               }
             ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/armadillo.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:unrolled/minecraft:ambient_sound_interval/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/bee.json": [
-        {
-          "path": "/minecraft:entity/component_groups/look_for_food/minecraft:ambient_sound_interval/",
-          "content": {
-            "event_name": "ambient.pollinate",
-            "range": 3,
-            "value": 2
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/default_sound/minecraft:ambient_sound_interval/",
-          "content": {
-            "event_name": "ambient",
-            "range": 0,
-            "value": 0
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/creaking.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:neutral/minecraft:ambient_sound_interval/",
-          "content": {}
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:ambient_sound_interval/",
-          "content": {
-            "event_name": "undefined"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/donkey.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/evocation_illager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:ambient_sound_interval/",
-          "content": {
-            "value": 2,
-            "range": 4,
-            "event_name": "ambient.in.raid"
           }
         }
       ],
@@ -348,66 +232,10 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/happy_ghast.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_with_passengers/minecraft:ambient_sound_interval/",
-          "content": {
-            "value": 30
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_without_passengers/minecraft:ambient_sound_interval/",
-          "content": {
-            "value": 5
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/horse.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/mule.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/pillager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:ambient_sound_interval/",
-          "content": {
-            "value": 2,
-            "range": 4,
-            "event_name": "ambient.in.raid"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/ravager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:ambient_sound_interval/",
-          "content": {
-            "value": 4,
-            "range": 8,
-            "event_name": "ambient.in.raid"
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/skeleton_horse.json": [
         {
           "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
           "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/vindicator.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:ambient_sound_interval/",
-          "content": {
-            "value": 2,
-            "range": 4,
-            "event_name": "ambient.in.raid"
-          }
         }
       ],
       "/vanilla/behavior_pack/entities/warden.json": [
@@ -428,22 +256,6 @@
               }
             ]
           }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/witch.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:ambient_sound_interval/",
-          "content": {
-            "value": 2,
-            "range": 4,
-            "event_name": "ambient.in.raid"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_horse.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
-          "content": {}
         }
       ]
     }

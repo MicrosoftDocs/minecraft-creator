@@ -84,7 +84,7 @@
                 {
                   "id": "gradient",
                   "title": "Gradient",
-                  "dataType": 24,
+                  "dataType": 16,
                   "alternates": [],
                   "isRequired": true
                 },

@@ -85,11 +85,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/1/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[1]/filters/",
               "content": "=="
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
+              "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers[0]/filters/all_of[1]/",
               "content": "=="
             }
           ]
@@ -141,11 +141,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/1/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[1]/filters/",
               "content": "self"
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
+              "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers[0]/filters/all_of[1]/",
               "content": "self"
             }
           ]
@@ -160,13 +160,13 @@
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
+              "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers[0]/filters/all_of[1]/",
               "content": true
             }
           ],
           "/vanilla/behavior_pack/entities/stray.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
+              "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers[0]/filters/all_of[1]/",
               "content": true
             }
           ]
@@ -179,11 +179,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/1/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[1]/filters/",
               "content": "has_ranged_weapon"
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
+              "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers[0]/filters/all_of[1]/",
               "content": "has_ranged_weapon"
             }
           ]
@@ -203,7 +203,7 @@
       ],
       "/vanilla/behavior_pack/entities/bogged.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/1/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[1]/filters/",
           "content": {
             "test": "has_ranged_weapon",
             "subject": "self",
@@ -212,7 +212,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
+          "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers[0]/filters/all_of[1]/",
           "content": {
             "test": "has_ranged_weapon",
             "subject": "self",
@@ -221,7 +221,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/1/filters/",
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[1]/filters/",
           "content": {
             "test": "has_ranged_weapon",
             "subject": "self",
@@ -232,20 +232,20 @@
       ],
       "/vanilla/behavior_pack/entities/parched.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/1/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[1]/filters/",
           "content": {
             "test": "has_ranged_weapon",
             "value": false
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
+          "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers[0]/filters/all_of[1]/",
           "content": {
             "test": "has_ranged_weapon"
           }
         },
         {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/1/filters/",
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[1]/filters/",
           "content": {
             "test": "has_ranged_weapon",
             "value": false
@@ -254,33 +254,33 @@
       ],
       "/vanilla/behavior_pack/entities/skeleton.json": [
         {
-          "path": "/minecraft:entity/component_groups/got_out_of_powder_snow_environment_sensor/minecraft:environment_sensor/triggers/1/filters/",
+          "path": "/minecraft:entity/component_groups/got_out_of_powder_snow_environment_sensor/minecraft:environment_sensor/triggers[1]/filters/",
           "content": {
             "test": "has_ranged_weapon",
             "value": false
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/got_out_of_powder_snow_environment_sensor/minecraft:environment_sensor/triggers/2/filters/all_of/1/",
+          "path": "/minecraft:entity/component_groups/got_out_of_powder_snow_environment_sensor/minecraft:environment_sensor/triggers[2]/filters/all_of[1]/",
           "content": {
             "test": "has_ranged_weapon"
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/1/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[1]/filters/",
           "content": {
             "test": "has_ranged_weapon",
             "value": false
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
+          "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers[0]/filters/all_of[1]/",
           "content": {
             "test": "has_ranged_weapon"
           }
         },
         {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/1/filters/",
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[1]/filters/",
           "content": {
             "test": "has_ranged_weapon",
             "value": false
@@ -289,7 +289,7 @@
       ],
       "/vanilla/behavior_pack/entities/stray.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/1/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[1]/filters/",
           "content": {
             "test": "has_ranged_weapon",
             "subject": "self",
@@ -298,7 +298,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
+          "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers[0]/filters/all_of[1]/",
           "content": {
             "test": "has_ranged_weapon",
             "subject": "self",
@@ -307,7 +307,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/1/filters/",
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[1]/filters/",
           "content": {
             "test": "has_ranged_weapon",
             "subject": "self",

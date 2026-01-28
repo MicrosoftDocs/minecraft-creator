@@ -1,0 +1,55 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a world template manifest"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "world_template_manifest",
+  "title": "World Template Manifest",
+  "description": "The manifest.json file for a Minecraft Bedrock Edition world template. World templates package a complete world that players can use as a starting point for new worlds. They can include custom terrain, structures, and associated resource/behavior packs.",
+  "fields": [
+    {
+      "dataType": 0,
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of this manifest file. Use 2 for modern templates.",
+      "isRequired": true,
+      "defaultValue": 2
+    },
+    {
+      "dataType": 16,
+      "id": "header",
+      "title": "Header",
+      "description": "The header section containing the template's identity: name, description, unique UUID, version, and base_game_version.",
+      "isRequired": true,
+      "subFormId": "pack/behavior_pack_rest_of_file"
+    },
+    {
+      "dataType": 17,
+      "id": "modules",
+      "title": "Modules",
+      "description": "Declares modules within the template. For world templates, use type 'world_template'.",
+      "isRequired": true
+    },
+    {
+      "dataType": 17,
+      "id": "dependencies",
+      "title": "Dependencies",
+      "description": "Optional list of behavior and resource packs this template depends on."
+    },
+    {
+      "dataType": 16,
+      "id": "metadata",
+      "title": "Metadata",
+      "description": "Optional metadata about the template including author names and license."
+    }
+  ]
+}

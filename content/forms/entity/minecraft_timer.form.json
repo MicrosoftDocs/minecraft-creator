@@ -43,46 +43,15 @@
         "id": "time",
         "title": "Time",
         "description": "Amount of time in seconds for the timer. Can be specified as a number or a pair of numbers (min and max). Incompatible with random_time_choices.",
-        "dataType": 18,
-        "samples": {
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:start_drowned_transformation/minecraft:timer/",
-              "content": 30
-            }
-          ]
-        }
+        "dataType": 18
       },
       {
         "id": "time_down_event",
         "title": "Time Down Event",
         "description": "Event to fire when the time on the timer runs out.",
-        "dataType": 22,
-        "samples": {
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:start_drowned_transformation/minecraft:timer/",
-              "content": {
-                "event": "minecraft:convert_to_drowned"
-              }
-            }
-          ]
-        }
+        "dataType": 22
       }
     ],
-    "samples": {
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:start_drowned_transformation/minecraft:timer/",
-          "content": {
-            "looping": false,
-            "time": 30,
-            "time_down_event": {
-              "event": "minecraft:convert_to_drowned"
-            }
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

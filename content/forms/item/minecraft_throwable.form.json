@@ -31,12 +31,6 @@
               "path": "/minecraft:item/components/minecraft:throwable/",
               "content": true
             }
-          ],
-          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:throwable/",
-              "content": true
-            }
           ]
         }
       },
@@ -51,12 +45,6 @@
             {
               "path": "/minecraft:item/components/minecraft:throwable/",
               "content": 1.5
-            }
-          ],
-          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:throwable/",
-              "content": 1
             }
           ]
         }
@@ -79,12 +67,6 @@
             {
               "path": "/minecraft:item/components/minecraft:throwable/",
               "content": 1.5
-            }
-          ],
-          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:throwable/",
-              "content": 1
             }
           ]
         }
@@ -112,19 +94,6 @@
             "do_swing_animation": true,
             "launch_power_scale": 1.5,
             "max_launch_power": 1.5
-          }
-        }
-      ],
-      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:throwable/",
-          "content": {
-            "do_swing_animation": true,
-            "launch_power_scale": 1,
-            "max_draw_duration": 0,
-            "max_launch_power": 1,
-            "min_draw_duration": 0,
-            "scale_power_by_draw_duration": false
           }
         }
       ]

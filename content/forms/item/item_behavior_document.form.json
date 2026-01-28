@@ -1,0 +1,54 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines an item behavior document structure"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "item_behavior_document",
+  "title": "Item Behavior Document",
+  "description": "A behavior pack item definition document for Minecraft Bedrock Edition. This describes the complete JSON file structure including format_version and the minecraft:item wrapper. Items define the properties, components, and behaviors of custom items that can be obtained and used by players.",
+  "fields": [
+    {
+      "dataType": 25,
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of this item behavior file. Determines which features and component schemas are available. Use '1.20.20' or later for the latest item component system.",
+      "isRequired": true
+    },
+    {
+      "dataType": 16,
+      "id": "minecraft:item",
+      "title": "Item Definition",
+      "description": "The item definition container with description and components sections.",
+      "isRequired": true,
+      "subForm": {
+        "id": "minecraft_item",
+        "title": "Item Definition",
+        "fields": [
+          {
+            "id": "description",
+            "title": "Description",
+            "description": "Contains the item's unique identifier and optional menu category placement.",
+            "dataType": 16,
+            "isRequired": true,
+            "subFormId": "item/description"
+          },
+          {
+            "id": "components",
+            "title": "Components",
+            "description": "The components that define this item's behavior, appearance, and interactions.",
+            "dataType": 16
+          }
+        ]
+      }
+    }
+  ]
+}

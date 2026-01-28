@@ -24,30 +24,14 @@
         "title": "Comparator Signal",
         "description": "Specifies signal strength for comparator blocks to use, from 1 - 13.",
         "dataType": 0,
-        "defaultValue": 1,
-        "samples": {
-          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:record/",
-              "content": 1
-            }
-          ]
-        }
+        "defaultValue": 1
       },
       {
         "id": "duration",
         "title": "Duration",
         "description": "Specifies duration of sound event in seconds, float value.",
         "dataType": 3,
-        "defaultValue": 0,
-        "samples": {
-          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:record/",
-              "content": 5
-            }
-          ]
-        }
+        "defaultValue": 0
       },
       {
         "id": "sound_event",
@@ -2264,28 +2248,9 @@
             "title": "Wind charge.burst"
           }
         ],
-        "defaultValue": "undefined",
-        "samples": {
-          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:record/",
-              "content": "pre_ram.screamer"
-            }
-          ]
-        }
+        "defaultValue": "undefined"
       }
     ],
-    "samples": {
-      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:record/",
-          "content": {
-            "comparator_signal": 1,
-            "duration": 5,
-            "sound_event": "pre_ram.screamer"
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

@@ -34,21 +34,7 @@
         "title": "Minimum Critical Power",
         "description": "Specifies how long a player must charge a projectile for it to critically hit.",
         "dataType": 3,
-        "defaultValue": 0,
-        "samples": {
-          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:projectile/",
-              "content": 1.25
-            }
-          ],
-          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:projectile/",
-              "content": 1.25
-            }
-          ]
-        }
+        "defaultValue": 0
       },
       {
         "id": "projectile_entity",
@@ -61,42 +47,9 @@
             "value": "^(?:\\w+(?:\\.\\w+)*:(?=\\w))?(?:\\w+(?:\\.\\w+)*)(?:<((?:\\w+(?:\\.\\w+)*:(?=\\w))?\\w+(?:\\.\\w+)*)*>)?$"
           }
         ],
-        "isRequired": true,
-        "samples": {
-          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:projectile/",
-              "content": "minecraft:snowball"
-            }
-          ],
-          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:projectile/",
-              "content": "minecraft:snowball"
-            }
-          ]
-        }
+        "isRequired": true
       }
     ],
-    "samples": {
-      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:projectile/",
-          "content": {
-            "minimum_critical_power": 1.25,
-            "projectile_entity": "minecraft:snowball"
-          }
-        }
-      ],
-      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:projectile/",
-          "content": {
-            "minimum_critical_power": 1.25,
-            "projectile_entity": "minecraft:snowball"
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

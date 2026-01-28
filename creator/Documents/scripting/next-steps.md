@@ -73,13 +73,13 @@ In Visual Studio Code, open the file **.env**. You can use this file to configur
 
 ```ini
 PROJECT_NAME="starter"
-MINECRAFT_PRODUCT="BedrockUWP"
+MINECRAFT_PRODUCT="BedrockGDK"
 CUSTOM_DEPLOYMENT_PATH=""
 ```
 
 - **PROJECT_NAME** is used as the folder name under all the assets are going to be deployed inside the game directories (e.g., **development_behavior_packs\\PROJECT_NAME**, **development_resource_packs\\PROJECT_NAME**).
 
-- **MINECRAFT_PRODUCT** selects between Minecraft or Minecraft Preview to debug and work with your scripts. You can set this to **BedrockUWP**, **PreviewUWP**, or **Custom**.  The first two expect Minecraft or Minecraft Preview to be installed at standard locations; if you want to use a Minecraft installation in another directory, specify **Custom**, and put the path to the asset folder in your custom installation in **CUSTOM_DEPLOYMENT_PATH**.
+- **MINECRAFT_PRODUCT** selects between Minecraft or Minecraft Preview to debug and work with your scripts. You can set this to **BedrockGDK**, **PreviewGDK**, or **Custom**.  The first two expect Minecraft or Minecraft Preview to be installed at standard locations; if you want to use a Minecraft installation in another directory, specify **Custom**, and put the path to the asset folder in your custom installation in **CUSTOM_DEPLOYMENT_PATH**.
 
 - **CUSTOM_DEPLOYMENT_PATH** is used with **Custom**, above.
 

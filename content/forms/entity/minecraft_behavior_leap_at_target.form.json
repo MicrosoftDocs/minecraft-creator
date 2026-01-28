@@ -64,12 +64,6 @@
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
         "dataType": 0,
         "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.leap_at_target/",
-              "content": 3
-            }
-          ],
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.leap_at_target/",
@@ -79,45 +73,11 @@
               "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.leap_at_target/",
               "content": 4
             }
-          ],
-          "/vanilla/behavior_pack/entities/ocelot.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.leap_at_target/",
-              "content": 3
-            }
-          ]
-        }
-      },
-      {
-        "id": "target_dist",
-        "title": "Target Dist",
-        "dataType": 7,
-        "samples": {
-          "/vanilla/behavior_pack/entities/cat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.leap_at_target/",
-              "content": 0.3
-            }
-          ],
-          "/vanilla/behavior_pack/entities/ocelot.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.leap_at_target/",
-              "content": 0.3
-            }
           ]
         }
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/cat.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.leap_at_target/",
-          "content": {
-            "priority": 3,
-            "target_dist": 0.3
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/cave_spider.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.leap_at_target/",
@@ -136,15 +96,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/ocelot.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.leap_at_target/",
-          "content": {
-            "priority": 3,
-            "target_dist": 0.3
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/spider.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.leap_at_target/",
@@ -152,24 +103,6 @@
             "priority": 4,
             "yd": 0.4,
             "must_be_on_ground": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wolf.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.leap_at_target/",
-          "content": {
-            "priority": 4,
-            "yd": 0.4
-          }
-        }
-      ],
-      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.leap_at_target/",
-          "content": {
-            "priority": 3,
-            "target_dist": 0.3
           }
         }
       ]

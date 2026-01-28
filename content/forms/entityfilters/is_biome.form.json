@@ -207,17 +207,17 @@
         "samples": {
           "/vanilla/behavior_pack/entities/fishing_hook.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/0/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[0]/filters/",
               "content": "jungle"
             }
           ],
           "/vanilla/behavior_pack/entities/rabbit.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[2]/filters/",
               "content": "desert"
             },
             {
-              "path": "/minecraft:entity/events/minecraft:entity_born/sequence/2/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_born/sequence[2]/filters/",
               "content": "desert"
             }
           ]
@@ -230,13 +230,13 @@
         "samples": {
           "/vanilla/behavior_pack/entities/fishing_hook.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/0/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[0]/filters/",
               "content": "is_biome"
             }
           ],
           "/vanilla/behavior_pack/entities/rabbit.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[2]/filters/",
               "content": "is_biome"
             }
           ]
@@ -256,7 +256,7 @@
       ],
       "/vanilla/behavior_pack/entities/fishing_hook.json": [
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/0/filters/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[0]/filters/",
           "content": {
             "test": "is_biome",
             "value": "jungle"
@@ -265,14 +265,14 @@
       ],
       "/vanilla/behavior_pack/entities/rabbit.json": [
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[2]/filters/",
           "content": {
             "test": "is_biome",
             "value": "desert"
           }
         },
         {
-          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/2/filters/",
+          "path": "/minecraft:entity/events/minecraft:entity_born/sequence[2]/filters/",
           "content": {
             "test": "is_biome",
             "value": "desert"

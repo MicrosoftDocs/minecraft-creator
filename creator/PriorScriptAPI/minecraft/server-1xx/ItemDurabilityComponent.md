@@ -52,6 +52,7 @@ Returns the maximum chance that this item would be damaged using the damageRange
 
 #### **Parameters**
 - **unbreakingEnchantmentLevel**?: *number* = `0`
+  * Bounds: [`0`, `3`]
   
   Unbreaking factor to consider in factoring the damage chance. Incoming unbreaking parameter must be within the range [0, 3].
 

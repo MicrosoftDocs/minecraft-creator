@@ -17,17 +17,7 @@ Allows the a mob to become scared when the weather outside is thundering.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Panda: `1` | 
-| sound_interval | 0 | Integer number | The interval in which a sound will play when active in a 1/delay chance to kick off | Panda: `20` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
+| sound_interval | 0 | Integer number | The interval in which a sound will play when active in a 1/delay chance to kick off |  | 
 
 ## Samples
-
-#### [Panda](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/panda.json)
-
-
-```json
-"minecraft:behavior.scared": {
-  "priority": 1,
-  "sound_interval": 20
-}
-```

@@ -33,19 +33,6 @@
       "title": "Integer",
       "dataType": 0
     },
-    "samples": {
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [
-        {
-          "path": "/minecraft:block/components/minecraft:light_emission/",
-          "content": 7
-        }
-      ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/gray_ore.block.json": [
-        {
-          "path": "/minecraft:block/components/minecraft:light_emission/",
-          "content": 15
-        }
-      ]
-    }
+    "samples": {}
   }
 }

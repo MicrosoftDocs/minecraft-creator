@@ -1,0 +1,12 @@
+- name: Loot Table List
+  href: ../LootTableList.md
+- name: LootCondition
+  href: loot_condition.md
+- name: LootTableEntry
+  href: loot_entry.md
+- name: LootFunction
+  href: loot_function.md
+- name: LootPool
+  href: loot_pool.md
+- name: LootTable
+  href: loot_table.md

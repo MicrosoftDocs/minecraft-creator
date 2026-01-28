@@ -30,12 +30,6 @@
               "path": "/minecraft:entity/components/minecraft:navigation.hover/",
               "content": true
             }
-          ],
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.hover/",
-              "content": true
-            }
           ]
         }
       },
@@ -61,12 +55,6 @@
         "dataType": 1,
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.hover/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/entities/bee.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.hover/",
               "content": true
@@ -134,12 +122,6 @@
               "path": "/minecraft:entity/components/minecraft:navigation.hover/",
               "content": true
             }
-          ],
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.hover/",
-              "content": true
-            }
           ]
         }
       },
@@ -158,12 +140,6 @@
         "dataType": 1,
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.hover/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/entities/bee.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.hover/",
               "content": true
@@ -219,31 +195,6 @@
             "avoid_water": true,
             "avoid_damage_blocks": true,
             "avoid_sun": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/bee.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.hover/",
-          "content": {
-            "can_path_over_water": true,
-            "can_sink": false,
-            "can_pass_doors": false,
-            "can_path_from_air": true,
-            "avoid_water": true,
-            "avoid_damage_blocks": true,
-            "avoid_sun": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/happy_ghast.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:navigation.hover/",
-          "content": {
-            "can_path_over_water": true,
-            "avoid_damage_blocks": true,
-            "can_path_from_air": true,
-            "avoid_water": true
           }
         }
       ]

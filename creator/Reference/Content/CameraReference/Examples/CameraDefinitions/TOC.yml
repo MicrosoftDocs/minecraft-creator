@@ -1,0 +1,14 @@
+- name: Camera List
+  href: ../CameraList.md
+- name: CameraAimAssistCategoriesDefinition
+  href: cameraaimassistcategoriesdefinition.md
+- name: CameraAimAssistCategoryDefinition
+  href: cameraaimassistcategorydefinition.md
+- name: CameraAimAssistCategoryPriorities
+  href: cameraaimassistcategorypriorities.md
+- name: CameraAimAssistPresetDefinition
+  href: cameraaimassistpresetdefinition.md
+- name: Aim Assist Categories
+  href: minecraft_aim_assist_categories.md
+- name: Aim Assist Preset
+  href: minecraft_aim_assist_preset.md

@@ -23,246 +23,37 @@
         "title": "Interval",
         "description": "Percent chance to start wandering, when not path-finding. 1 = 100%",
         "defaultValue": 0.00833,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 0.1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/nautilus.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 10
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/salmon.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 0.0166
-            }
-          ],
-          "/vanilla/behavior_pack/entities/tropicalfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 0.1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 10
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "look_ahead",
         "title": "Look Ahead",
         "description": "Distance to look ahead for obstacle avoidance, while wandering.",
         "defaultValue": 5,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/nautilus.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/salmon.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 5
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "This multiplier modifies the entity's speed when wandering.",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/nautilus.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 1.5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/salmon.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 0.014
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 1.5
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "wander_time",
         "title": "Wander Time",
         "description": "Amount of time (in seconds) to wander after wandering behavior was successfully started.",
         "defaultValue": 5,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/nautilus.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 5
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/fish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 4
-            }
-          ],
-          "/vanilla/behavior_pack/entities/nautilus.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 7
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/salmon.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 4
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-              "content": 5
-            }
-          ]
-        }
+        "dataType": 0
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/fish.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-          "content": {
-            "priority": 4,
-            "interval": 0.1,
-            "look_ahead": 2,
-            "speed_multiplier": 1,
-            "wander_time": 5
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/nautilus.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-          "content": {
-            "priority": 7,
-            "interval": 10,
-            "look_ahead": 2,
-            "speed_multiplier": 1.5,
-            "wander_time": 5
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/pufferfish.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-          "content": {
-            "priority": 5,
-            "interval": 1,
-            "look_ahead": 2,
-            "speed_multiplier": 1,
-            "wander_time": 5
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/salmon.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-          "content": {
-            "priority": 4,
-            "interval": 0.0166,
-            "look_ahead": 5,
-            "speed_multiplier": 0.014,
-            "wander_time": 5
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/tropicalfish.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-          "content": {
-            "priority": 4,
-            "interval": 0.1,
-            "look_ahead": 2,
-            "speed_multiplier": 1,
-            "wander_time": 5
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.swim_wander/",
-          "content": {
-            "priority": 5,
-            "interval": 10,
-            "look_ahead": 2,
-            "speed_multiplier": 1.5,
-            "wander_time": 5
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

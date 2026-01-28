@@ -1270,6 +1270,8 @@
       href: minecraft/server-editor/LayoutSizeType.md
     - name: ListPaneEntryType
       href: minecraft/server-editor/ListPaneEntryType.md
+    - name: ListPaneSlotVariant
+      href: minecraft/server-editor/ListPaneSlotVariant.md
     - name: ListPaneViewSortType
       href: minecraft/server-editor/ListPaneViewSortType.md
     - name: LogChannel
@@ -1760,6 +1762,8 @@
       href: minecraft/server-editor/WeightedBlock.md
     - name: WidgetComponentBaseOptions
       href: minecraft/server-editor/WidgetComponentBaseOptions.md
+    - name: WidgetComponentBoundingBoxLimit
+      href: minecraft/server-editor/WidgetComponentBoundingBoxLimit.md
     - name: WidgetComponentBoundingBoxOptions
       href: minecraft/server-editor/WidgetComponentBoundingBoxOptions.md
     - name: WidgetComponentClipboardOptions
@@ -1828,12 +1832,14 @@
       href: minecraft/server-editor/ListPaneEntryParams.md
     - name: ListPaneImageEntryParams
       href: minecraft/server-editor/ListPaneImageEntryParams.md
+    - name: ListPaneSlotConfiguration
+      href: minecraft/server-editor/ListPaneSlotConfiguration.md
     - name: ListPaneSlotCreationProps
       href: minecraft/server-editor/ListPaneSlotCreationProps.md
-    - name: ListPaneSlotLayout
-      href: minecraft/server-editor/ListPaneSlotLayout.md
     - name: ListPaneSlotLayoutEntry
       href: minecraft/server-editor/ListPaneSlotLayoutEntry.md
+    - name: ListPaneSlotLayoutSections
+      href: minecraft/server-editor/ListPaneSlotLayoutSections.md
     - name: ListPaneTextEntryParams
       href: minecraft/server-editor/ListPaneTextEntryParams.md
     - name: ListPaneViewFilter

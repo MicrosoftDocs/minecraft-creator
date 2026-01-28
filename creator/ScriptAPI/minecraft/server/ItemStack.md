@@ -21,6 +21,7 @@ Number of the items in the stack. Valid values range between 1-255. The provided
 Type: *number*
 
 Notes:
+  - This property has a bounds of [`1`, `255`]
   - This property can't be edited in restricted-execution mode.
   - This property can throw errors when used.
     - Throws if the value is outside the range of 1-255.
@@ -139,6 +140,7 @@ Creates a new instance of a stack of items for use in the world.
   
   Type of item to create. See the {@link @minecraft/vanilla-data.MinecraftItemTypes} enumeration for a list of standard item types in Minecraft experiences.
 - **amount**?: *number* = `1`
+  * Bounds: [`1`, `255`]
   
   Number of items to place in the stack, between 1-255. The provided value will be clamped to the item's maximum stack size. Note that certain items can only have one item in the stack.
 

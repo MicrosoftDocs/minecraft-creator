@@ -17,8 +17,8 @@ Defines a dynamic type jump control that will change jump properties based on th
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| fast_skip_data | *not set* | [Fast Skip Data](#fast-skip-data-choices) choices | The jump data used for the fast skip. |  | 
-| regular_skip_data | *not set* | [Regular Skip Data](#regular-skip-data-choices) choices | The jump data used for the regular skip. |  | 
+| fast_skip_data | *not set* | [Fast Skip Data](#fast-skip-data-choices) choices | The jump data used for the fast skip. | Rabbit: `{"distance_scale":1.75,"height":0.25,"jump_delay":7,"animation_duration":15}` | 
+| regular_skip_data | *not set* | [Regular Skip Data](#regular-skip-data-choices) choices | The jump data used for the regular skip. | Rabbit: `{"distance_scale":0.8,"height":0.25,"jump_delay":15,"animation_duration":18}` | 
 
 ### Fast Skip Data choices
 
@@ -44,5 +44,18 @@ Defines a dynamic type jump control that will change jump properties based on th
 
 
 ```json
-"minecraft:jump.dynamic": {}
+"minecraft:jump.dynamic": {
+  "regular_skip_data": {
+    "distance_scale": 0.8,
+    "height": 0.25,
+    "jump_delay": 15,
+    "animation_duration": 18
+  },
+  "fast_skip_data": {
+    "distance_scale": 1.75,
+    "height": 0.25,
+    "jump_delay": 7,
+    "animation_duration": 15
+  }
+}
 ```

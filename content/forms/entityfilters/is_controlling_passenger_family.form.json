@@ -120,42 +120,13 @@
             "title": "Target",
             "description": "The caller's current target."
           }
-        ],
-        "samples": {
-          "/vanilla/behavior_pack/entities/zombie_horse.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:horse_can_be_leashed/minecraft:environment_sensor/triggers/0/filters/",
-              "content": "self"
-            }
-          ]
-        }
+        ]
       },
       {
         "id": "value",
         "title": "Value",
         "description": "(Required) The Family name to look for",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/zombie_horse.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:horse_can_be_leashed/minecraft:environment_sensor/triggers/0/filters/",
-              "content": "zombie"
-            }
-          ]
-        }
-      },
-      {
-        "id": "test",
-        "title": "Test",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/zombie_horse.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:horse_can_be_leashed/minecraft:environment_sensor/triggers/0/filters/",
-              "content": "is_controlling_passenger_family"
-            }
-          ]
-        }
+        "dataType": 2
       }
     ],
     "samples": {
@@ -167,16 +138,6 @@
         {
           "path": "Short (using Defaults)..",
           "content": "{ \"test\": \"is_controlling_passenger_family\", \"value\": \"player\" }"
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_horse.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_can_be_leashed/minecraft:environment_sensor/triggers/0/filters/",
-          "content": {
-            "test": "is_controlling_passenger_family",
-            "subject": "self",
-            "value": "zombie"
-          }
         }
       ]
     }

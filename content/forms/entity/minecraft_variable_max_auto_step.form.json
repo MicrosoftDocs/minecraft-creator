@@ -23,116 +23,23 @@
         "title": "Base Value",
         "description": "The maximum auto step height when on any other block.",
         "defaultValue": 0.5625,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/camel.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:variable_max_auto_step/",
-              "content": 1.5625
-            }
-          ],
-          "/vanilla/behavior_pack/entities/camel_husk.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:variable_max_auto_step/",
-              "content": 1.5625
-            }
-          ],
-          "/vanilla/behavior_pack/entities/creaking.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:variable_max_auto_step/",
-              "content": 1.0625
-            }
-          ],
-          "/vanilla/behavior_pack/entities/enderman.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:variable_max_auto_step/",
-              "content": 1.0625
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "controlled_value",
         "title": "Controlled Value",
         "description": "The maximum auto step height when on any other block and controlled by the player.",
         "defaultValue": 0.5625,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/camel.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:variable_max_auto_step/",
-              "content": 1.5625
-            }
-          ],
-          "/vanilla/behavior_pack/entities/camel_husk.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:variable_max_auto_step/",
-              "content": 1.5625
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "jump_prevented_value",
         "title": "Jump Prevented Value",
         "description": "The maximum auto step height when on a block that prevents jumping.",
         "defaultValue": 0.5625,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/camel.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:variable_max_auto_step/",
-              "content": 0.5625
-            }
-          ],
-          "/vanilla/behavior_pack/entities/camel_husk.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:variable_max_auto_step/",
-              "content": 0.5625
-            }
-          ]
-        }
+        "dataType": 3
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/camel.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:variable_max_auto_step/",
-          "content": {
-            "base_value": 1.5625,
-            "controlled_value": 1.5625,
-            "jump_prevented_value": 0.5625
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/camel_husk.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:variable_max_auto_step/",
-          "content": {
-            "base_value": 1.5625,
-            "controlled_value": 1.5625,
-            "jump_prevented_value": 0.5625
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/creaking.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:variable_max_auto_step/",
-          "content": {
-            "base_value": 1.0625,
-            "jump_prevented_value": 0.5625
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/enderman.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:variable_max_auto_step/",
-          "content": {
-            "base_value": 1.0625,
-            "jump_prevented_value": 0.5625
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

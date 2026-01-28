@@ -14,11 +14,3 @@ Sets that this entity is an Illager Captain.
 
 
 ## Samples
-
-#### [Pillager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pillager.json)
-
-At /minecraft:entity/component_groups/minecraft:illager_squad_captain/minecraft:is_illager_captain/: 
-
-```json
-"minecraft:is_illager_captain": {}
-```

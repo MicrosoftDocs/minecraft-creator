@@ -17,11 +17,11 @@ Returns true when the actor property matches the value provided.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| domain | *not set* | String | (Required) The property name to look for | Armadillo: `"minecraft:armadillo_state"`, Copper Golem: `"minecraft:oxidation_level"`, Creaking: `"minecraft:creaking_state"` | 
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Armadillo: `"not"` | 
+| domain | *not set* | String | (Required) The property name to look for | Egg: `"minecraft:climate_variant"` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Egg: `"other"` | 
-| test | *not set* | String |  | Armadillo: `"enum_property"` | 
-| value | *not set* | String | (Required) A string value. | Armadillo: `"unrolled"`, `"rolled_up"`, `"rolled_up_peeking"`, `"rolled_up_relaxing"`, `"rolled_up_unrolling"` | 
+| test | *not set* | String |  | Egg: `"enum_property"` | 
+| value | *not set* | String | (Required) A string value. | Egg: `"warm"`, `"cold"` | 
 
 ### Operator choices
 
@@ -64,140 +64,46 @@ At Short (using Defaults)..:
 { "test": "enum_property", "domain": "minecraft:can_climb", "value": "" }
 ```
 
-#### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
+#### [Egg](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/egg.json)
 
-At /minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/interact_filters/: 
+At /minecraft:entity/components/minecraft:projectile/on_hit/spawn_chance/on_spawn[0]/filters/: 
 
 ```json
 {
   "test": "enum_property",
-  "domain": "minecraft:armadillo_state",
-  "value": "unrolled"
+  "subject": "other",
+  "domain": "minecraft:climate_variant",
+  "value": "warm"
 }
 ```
 
-At /minecraft:entity/events/minecraft:no_threat_detected/sequence/0/filters/all_of/0/any_of/0/: 
+At /minecraft:entity/components/minecraft:projectile/on_hit/spawn_chance/on_spawn[1]/filters/: 
 
 ```json
 {
   "test": "enum_property",
-  "domain": "minecraft:armadillo_state",
-  "value": "rolled_up"
+  "subject": "other",
+  "domain": "minecraft:climate_variant",
+  "value": "cold"
 }
 ```
 
-At /minecraft:entity/events/minecraft:no_threat_detected/sequence/0/filters/all_of/0/any_of/1/: 
+At /minecraft:entity/components/minecraft:projectile/on_hit/particle_on_hit/particle_item_name/brown_egg/: 
 
 ```json
 {
   "test": "enum_property",
-  "domain": "minecraft:armadillo_state",
-  "value": "rolled_up_peeking"
+  "domain": "minecraft:climate_variant",
+  "value": "warm"
 }
 ```
 
-At /minecraft:entity/events/minecraft:threat_detected/sequence/1/filters/any_of/0/: 
+At /minecraft:entity/components/minecraft:projectile/on_hit/particle_on_hit/particle_item_name/blue_egg/: 
 
 ```json
 {
   "test": "enum_property",
-  "domain": "minecraft:armadillo_state",
-  "value": "rolled_up_relaxing"
-}
-```
-
-At /minecraft:entity/events/minecraft:threat_detected/sequence/1/filters/any_of/1/: 
-
-```json
-{
-  "test": "enum_property",
-  "domain": "minecraft:armadillo_state",
-  "value": "rolled_up_unrolling"
-}
-```
-
-At /minecraft:entity/events/minecraft:unroll/sequence/0/filters/all_of/0/: 
-
-```json
-{
-  "test": "enum_property",
-  "domain": "minecraft:armadillo_state",
-  "operator": "not",
-  "value": "unrolled"
-}
-```
-
-At /minecraft:entity/events/minecraft:roll_up/sequence/0/filters/all_of/0/: 
-
-```json
-{
-  "test": "enum_property",
-  "domain": "minecraft:armadillo_state",
-  "operator": "not",
-  "value": "rolled_up"
-}
-```
-
-At /minecraft:entity/events/minecraft:roll_up/sequence/0/filters/all_of/1/: 
-
-```json
-{
-  "test": "enum_property",
-  "domain": "minecraft:armadillo_state",
-  "operator": "not",
-  "value": "rolled_up_peeking"
-}
-```
-
-#### [Copper Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/copper_golem.json)
-
-At /minecraft:entity/components/minecraft:interact/interactions/1/on_interact/filters/all_of/1/: 
-
-```json
-{
-  "test": "enum_property",
-  "domain": "minecraft:oxidation_level",
-  "operator": "not",
-  "value": "unoxidized"
-}
-```
-
-At /minecraft:entity/events/minecraft:wax_off/sequence/0/first_valid/0/filters/: 
-
-```json
-{
-  "test": "enum_property",
-  "domain": "minecraft:oxidation_level",
-  "value": "oxidized"
-}
-```
-
-At /minecraft:entity/events/minecraft:oxidize_copper/first_valid/0/filters/: 
-
-```json
-{
-  "test": "enum_property",
-  "domain": "minecraft:oxidation_level",
-  "value": "unoxidized"
-}
-```
-
-At /minecraft:entity/events/minecraft:oxidize_copper/first_valid/1/filters/: 
-
-```json
-{
-  "test": "enum_property",
-  "domain": "minecraft:oxidation_level",
-  "value": "exposed"
-}
-```
-
-At /minecraft:entity/events/minecraft:oxidize_copper/first_valid/2/filters/: 
-
-```json
-{
-  "test": "enum_property",
-  "domain": "minecraft:oxidation_level",
-  "value": "weathered"
+  "domain": "minecraft:climate_variant",
+  "value": "cold"
 }
 ```

@@ -15,7 +15,7 @@ Sets that this entity is currently carrying a chest.
 
 ## Samples
 
-#### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
+#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
 
 
 ```json

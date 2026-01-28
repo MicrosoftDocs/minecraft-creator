@@ -16,13 +16,15 @@
   "title": "Format Version",
   "description": "Validates format_version fields across various Minecraft JSON definition files including block types, item types, recipes, animations, and animation controllers. Compares versions against the current Minecraft version and can update them to the latest.",
   "technicalDescription": "Topic IDs follow a pattern where each file type has a base offset. Within each offset: +0 = undefined, +2 = major low, +4 = major high, +6 = minor low, +8 = minor high, +10 = patch low, +12 = patch high. Topic IDs 600+ report format version info (info type) as 600 + ProjectItemType.",
+  "suggestedLineToken": "format_version",
   "fields": [
     {
       "id": "100",
       "title": "Format Undefined",
       "description": "Checks that a format_version field is defined in the JSON definition file.",
       "messageType": "error",
-      "dataType": 2
+      "dataType": 2,
+      "suggestedLineToken": "format_version"
     },
     {
       "id": "110",
@@ -30,6 +32,8 @@
       "description": "The block type format_version major version is lower than the current Minecraft version.",
       "messageType": "recommendation",
       "dataType": 2,
+      "suggestedLineToken": "format_version",
+      "suggestedLineShouldHaveData": true,
       "matchedValues": [
         {
           "updaterId": "FORMATVER",
@@ -44,6 +48,8 @@
       "description": "The block type format_version major version is higher than the current Minecraft version.",
       "messageType": "error",
       "dataType": 2,
+      "suggestedLineToken": "format_version",
+      "suggestedLineShouldHaveData": true,
       "matchedValues": [
         {
           "updaterId": "FORMATVER",
@@ -58,6 +64,8 @@
       "description": "The block type format_version minor version is lower than the current Minecraft version.",
       "messageType": "recommendation",
       "dataType": 2,
+      "suggestedLineToken": "format_version",
+      "suggestedLineShouldHaveData": true,
       "matchedValues": [
         {
           "updaterId": "FORMATVER",
@@ -72,6 +80,8 @@
       "description": "The block type format_version minor version is higher than the current Minecraft version.",
       "messageType": "error",
       "dataType": 2,
+      "suggestedLineToken": "format_version",
+      "suggestedLineShouldHaveData": true,
       "matchedValues": [
         {
           "updaterId": "FORMATVER",
@@ -86,6 +96,8 @@
       "description": "The block type format_version patch version is lower than the current Minecraft version.",
       "messageType": "recommendation",
       "dataType": 2,
+      "suggestedLineToken": "format_version",
+      "suggestedLineShouldHaveData": true,
       "matchedValues": [
         {
           "updaterId": "FORMATVER",
@@ -100,6 +112,8 @@
       "description": "The block type format_version patch version is higher than the current Minecraft version.",
       "messageType": "error",
       "dataType": 2,
+      "suggestedLineToken": "format_version",
+      "suggestedLineShouldHaveData": true,
       "matchedValues": [
         {
           "updaterId": "FORMATVER",
@@ -114,6 +128,8 @@
       "description": "The item type format_version major version is lower than the current Minecraft version.",
       "messageType": "recommendation",
       "dataType": 2,
+      "suggestedLineToken": "format_version",
+      "suggestedLineShouldHaveData": true,
       "matchedValues": [
         {
           "updaterId": "FORMATVER",
@@ -128,6 +144,8 @@
       "description": "The item type format_version major version is higher than the current Minecraft version.",
       "messageType": "error",
       "dataType": 2,
+      "suggestedLineToken": "format_version",
+      "suggestedLineShouldHaveData": true,
       "matchedValues": [
         {
           "updaterId": "FORMATVER",
@@ -142,6 +160,8 @@
       "description": "The item type format_version minor version is lower than the current Minecraft version.",
       "messageType": "recommendation",
       "dataType": 2,
+      "suggestedLineToken": "format_version",
+      "suggestedLineShouldHaveData": true,
       "matchedValues": [
         {
           "updaterId": "FORMATVER",
@@ -156,6 +176,8 @@
       "description": "The item type format_version minor version is higher than the current Minecraft version.",
       "messageType": "error",
       "dataType": 2,
+      "suggestedLineToken": "format_version",
+      "suggestedLineShouldHaveData": true,
       "matchedValues": [
         {
           "updaterId": "FORMATVER",

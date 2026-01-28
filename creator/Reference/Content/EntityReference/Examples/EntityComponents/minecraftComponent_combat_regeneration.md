@@ -22,10 +22,3 @@ Gives `Regeneration I` and removes `Mining Fatigue` from the mob that kills the 
 | regeneration_duration | 5 | Integer number | The duration in seconds of Regeneration I added to the mob. Can also be set to "infinite" |  | 
 
 ## Samples
-
-#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
-
-
-```json
-"minecraft:combat_regeneration": {}
-```

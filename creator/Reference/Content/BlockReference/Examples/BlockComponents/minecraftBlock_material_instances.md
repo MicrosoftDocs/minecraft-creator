@@ -20,19 +20,19 @@ The material instances for a block. Maps face or material_instance names in a ge
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| * (Material Instance Face) | *not set* | [*](#material-instance-face) item |  | Block Fabricator: `{"texture":"mikeamm_gwve_fabricator","render_method":"alpha_test","ambient_occlusion":1}`, Block Gray Ore: `{"texture":"mikeamm_gwve_gray_ore","render_method":"alpha_test","face_dimming":false}`, Block Frond Top: `{"texture":"frond_top","render_method":"alpha_test"}` | 
+| * (Material Instance Face) | *not set* | [*](#material-instance-face) item |  |  | 
 | * (Alternate 1) | *not set* | String |  |  | 
-| down (Material Instance Face) | *not set* | [Down](#material-instance-face) item |  | Die: `{"texture":"die_6"}` | 
+| down (Material Instance Face) | *not set* | [Down](#material-instance-face) item |  |  | 
 | down (Alternate 1) | *not set* | String |  |  | 
-| east (Material Instance Face) | *not set* | [East](#material-instance-face) item |  | Die: `{"texture":"die_2"}` | 
+| east (Material Instance Face) | *not set* | [East](#material-instance-face) item |  |  | 
 | east (Alternate 1) | *not set* | String |  |  | 
-| north (Material Instance Face) | *not set* | [North](#material-instance-face) item |  | Tuna Roll: `"sushi_side"`, Die: `{"texture":"die_3"}` | 
+| north (Material Instance Face) | *not set* | [North](#material-instance-face) item |  |  | 
 | north (Alternate 1) | *not set* | String |  |  | 
-| south (Material Instance Face) | *not set* | [South](#material-instance-face) item |  | Tuna Roll: `"sushi_side"`, Die: `{"texture":"die_4"}` | 
+| south (Material Instance Face) | *not set* | [South](#material-instance-face) item |  |  | 
 | south (Alternate 1) | *not set* | String |  |  | 
-| up (Material Instance Face) | *not set* | [Up](#material-instance-face) item |  | Die: `{"texture":"die_1"}` | 
+| up (Material Instance Face) | *not set* | [Up](#material-instance-face) item |  |  | 
 | up (Alternate 1) | *not set* | String |  |  | 
-| west (Material Instance Face) | *not set* | [West](#material-instance-face) item |  | Die: `{"texture":"die_5"}` | 
+| west (Material Instance Face) | *not set* | [West](#material-instance-face) item |  |  | 
 | west (Alternate 1) | *not set* | String |  |  | 
 
 ## Material Instance Face
@@ -45,10 +45,10 @@ Configures how a block face renders its texture, including transparency, culling
 |:----------|:-------------|:----|:-----------|:------------- |
 | ambient_occlusion | *not set* | Decimal number | If this material has ambient occlusion applied when lighting, shadows will be created around and underneath the block. Decimal value controls exponent applied to a value after lighting. |  | 
 | face_dimming | *not set* | String | This material should be dimmed by the direction its facing. | Blue Bubble Fish: `true` | 
-| isotropic | false | Boolean true/false | Should the faces that this material is applied to randomize their UVs? This item requires a format version of at least undefined. |  | 
+| isotropic | false | Boolean true/false | Should the faces that this material is applied to randomize their UVs? This item requires a format version of at least 1.21.80. |  | 
 | render_method | *not set* | [Render Method](#render-method-choices) choices | The render method to use. | Blue Bubble Fish: `"blend"`, Block Orange Ore: `"opaque"`, Block Frond Top: `"alpha_test"` | 
 | texture | *not set* | String | Texture name for the material. | Blue Bubble Fish: `"bubble_fish_blue"`, California Roll: `"sushi_wrap"`, Green Bubble Fish: `"bubble_fish_green"` | 
-| tint_method | false | Boolean true/false | Tint multiplied to the color. Tint method logic varies, but often refers to the "rain" and "temperature" of the biome the block is placed in to compute the tint. Supported tint methods are "none", "default_foliage", "birch_foliage", "evergreen_foliage", "dry_foliage", "grass" and "water" This item requires a format version of at least undefined. |  | 
+| tint_method | false | Boolean true/false | Tint multiplied to the color. Tint method logic varies, but often refers to the "rain" and "temperature" of the biome the block is placed in to compute the tint. Supported tint methods are "none", "default_foliage", "birch_foliage", "evergreen_foliage", "dry_foliage", "grass" and "water" This item requires a format version of at least 1.21.80. |  | 
 
 ### Render Method choices
 
@@ -64,156 +64,3 @@ Configures how a block face renders its texture, including transparency, culling
 | alpha_test_single_sided_to_opaque | Alpha Test (Single Sided) to Opaque | Used for a block like the sugar cane. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also enables backface culling.|
 
 ## Samples
-
-#### [Block Fabricator](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json)
-
-
-```json
-"minecraft:material_instances": {
-  "*": {
-    "texture": "mikeamm_gwve_fabricator",
-    "render_method": "alpha_test",
-    "ambient_occlusion": 1
-  }
-}
-```
-
-#### [Block Gray Ore](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/gray_ore.block.json)
-
-
-```json
-"minecraft:material_instances": {
-  "*": {
-    "texture": "mikeamm_gwve_gray_ore",
-    "render_method": "alpha_test",
-    "face_dimming": false
-  }
-}
-```
-
-#### [Block Frond Top](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/frond_top.block.json)
-
-
-```json
-"minecraft:material_instances": {
-  "*": {
-    "texture": "frond_top",
-    "render_method": "alpha_test"
-  }
-}
-```
-
-#### [Block Palm Leave](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json)
-
-
-```json
-"minecraft:material_instances": {
-  "*": {
-    "texture": "palm_leave",
-    "render_method": "alpha_test"
-  }
-}
-```
-
-#### [Block Palm Leave Corner](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_corner.block.json)
-
-
-```json
-"minecraft:material_instances": {
-  "*": {
-    "texture": "palm_leave_corner",
-    "render_method": "alpha_test"
-  }
-}
-```
-
-#### [Block Palm Leave Tip](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_tip.block.json)
-
-
-```json
-"minecraft:material_instances": {
-  "*": {
-    "texture": "palm_leave_tip",
-    "render_method": "alpha_test"
-  }
-}
-```
-
-#### [Block Palm Tree Top](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_tree_top.block.json)
-
-
-```json
-"minecraft:material_instances": {
-  "*": {
-    "texture": "chill_oasis_top",
-    "render_method": "alpha_test"
-  }
-}
-```
-
-#### [Block Palm Trunk](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_trunk.block.json)
-
-
-```json
-"minecraft:material_instances": {
-  "*": {
-    "texture": "palm_trunk",
-    "render_method": "alpha_test"
-  }
-}
-```
-
-#### [Block White Sand](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/white_sand.block.json)
-
-
-```json
-"minecraft:material_instances": {
-  "*": {
-    "texture": "white_sand",
-    "render_method": "alpha_test"
-  }
-}
-```
-
-#### [Block Leaf Pile](https://github.com/microsoft/minecraft-samples/tree/main/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json)
-
-
-```json
-"minecraft:material_instances": {
-  "*": {
-    "texture": "leaf_pile",
-    "render_method": "alpha_test",
-    "tint_method": "default_foliage"
-  }
-}
-```
-
-#### [Tuna Roll](https://github.com/microsoft/minecraft-samples/tree/main/culled_block_sample/culled_block_behavior_pack/blocks/tuna_roll.json)
-
-
-```json
-"minecraft:material_instances": {
-  "north": "sushi_side",
-  "south": "sushi_side",
-  "*": {
-    "texture": "sushi_wrap"
-  },
-  "sushi_side": {
-    "texture": "tuna_roll"
-  }
-}
-```
-
-#### [Blue Bubble Fish](https://github.com/microsoft/minecraft-samples/tree/main/custom_blocks/behavior_packs/custom_blocks/blocks/blue_bubble_fish.json)
-
-
-```json
-"minecraft:material_instances": {
-  "*": {
-    "texture": "bubble_fish_blue",
-    "render_method": "blend",
-    "face_dimming": true,
-    "ambient_occlusion": 1
-  }
-}
-```

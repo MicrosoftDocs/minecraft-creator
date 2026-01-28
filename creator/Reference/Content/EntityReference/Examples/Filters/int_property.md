@@ -17,11 +17,10 @@ Returns true when the int actor property matches the value provided.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| domain | *not set* | String | (Required) The property name to look for | Creaking: `"minecraft:creaking_swaying_ticks"` | 
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Creaking: `">"`, `"<="` | 
+| domain | *not set* | String | (Required) The property name to look for |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| test | *not set* | String |  | Creaking: `"int_property"` | 
-| value | *not set* | Integer number | (Required) An integer value. | Creaking: `5` | 
+| value | *not set* | Integer number | (Required) An integer value. |  | 
 
 ### Operator choices
 
@@ -62,39 +61,4 @@ At Short (using Defaults)..:
 
 ```json
 { "test": "int_property", "domain": "minecraft:can_climb", "value": "0" }
-```
-
-#### [Creaking](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creaking.json)
-
-At /minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/3/filters/all_of/0/: 
-
-```json
-{
-  "test": "int_property",
-  "domain": "minecraft:creaking_swaying_ticks",
-  "operator": ">",
-  "value": 0
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/3/filters/all_of/1/: 
-
-```json
-{
-  "test": "int_property",
-  "domain": "minecraft:creaking_swaying_ticks",
-  "operator": "<=",
-  "value": 5
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/4/filters/: 
-
-```json
-{
-  "test": "int_property",
-  "domain": "minecraft:creaking_swaying_ticks",
-  "operator": ">",
-  "value": 5
-}
 ```

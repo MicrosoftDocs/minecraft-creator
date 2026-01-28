@@ -30,7 +30,7 @@
         "samples": {
           "/vanilla/behavior_pack/entities/ender_pearl.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/0/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[0]/filters/",
               "content": "domobspawning"
             }
           ]
@@ -153,7 +153,7 @@
         "samples": {
           "/vanilla/behavior_pack/entities/ender_pearl.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/0/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[0]/filters/",
               "content": "is_game_rule"
             }
           ]
@@ -173,7 +173,7 @@
       ],
       "/vanilla/behavior_pack/entities/ender_pearl.json": [
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/0/filters/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[0]/filters/",
           "content": {
             "test": "is_game_rule",
             "domain": "domobspawning",

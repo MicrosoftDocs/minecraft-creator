@@ -87,29 +87,7 @@
             "title": "Not",
             "description": "Test for inequality."
           }
-        ],
-        "samples": {
-          "/vanilla/behavior_pack/entities/villager_v2.json": [
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/5/filters/any_of/0/all_of/1/",
-              "content": "!="
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/7/filters/all_of/1/",
-              "content": "!="
-            }
-          ],
-          "/vanilla/behavior_pack/entities/wolf.json": [
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/all_of/1/",
-              "content": "not"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/all_of/2/",
-              "content": "not"
-            }
-          ]
-        }
+        ]
       },
       {
         "id": "subject",
@@ -163,166 +141,40 @@
         "samples": {
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/0/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid[1]/filters/all_of[2]/any_of[0]/",
               "content": "swamp"
             },
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/1/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid[1]/filters/all_of[2]/any_of[1]/",
               "content": "mangrove_swamp"
             },
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/2/filters/all_of/2/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid[2]/filters/all_of[2]/",
               "content": "desert"
             },
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/3/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid[3]/filters/",
               "content": "nether"
             }
           ],
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/0/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/first_valid[0]/filters/",
               "content": "spawns_warm_variant_farm_animals"
             },
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/1/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/first_valid[1]/filters/",
               "content": "spawns_cold_variant_farm_animals"
             }
           ],
           "/vanilla/behavior_pack/entities/cow.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/0/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/first_valid[0]/filters/",
               "content": "spawns_warm_variant_farm_animals"
             },
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/1/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/first_valid[1]/filters/",
               "content": "spawns_cold_variant_farm_animals"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/spider.json": [
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/0/",
-              "content": "swamp"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/1/",
-              "content": "mangrove_swamp"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/2/filters/all_of/2/",
-              "content": "desert"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/3/filters/",
-              "content": "nether"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/villager_v2.json": [
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/any_of/1/",
-              "content": "mesa"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/3/filters/",
-              "content": "jungle"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/4/filters/",
-              "content": "savanna"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/5/filters/any_of/0/all_of/0/",
-              "content": "cold"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/5/filters/any_of/0/all_of/1/",
-              "content": "ocean"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/5/filters/any_of/1/",
-              "content": "frozen"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/7/filters/all_of/0/any_of/0/",
-              "content": "taiga"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/7/filters/all_of/0/any_of/1/",
-              "content": "extreme_hills"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/7/filters/all_of/1/",
-              "content": "cold"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/2/filters/any_of/1/",
-              "content": "mesa"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/3/filters/",
-              "content": "jungle"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/4/filters/",
-              "content": "savanna"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/5/filters/any_of/0/all_of/1/",
-              "content": "ocean"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/5/filters/any_of/1/",
-              "content": "frozen"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/7/filters/all_of/0/any_of/0/",
-              "content": "taiga"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/7/filters/all_of/0/any_of/1/",
-              "content": "extreme_hills"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/wolf.json": [
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/all_of/2/",
-              "content": "mega"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/all_of/3/",
-              "content": "mutated"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/3/filters/all_of/0/",
-              "content": "mega"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/3/filters/all_of/2/",
-              "content": "forest"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/3/filters/all_of/3/",
-              "content": "mutated"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/4/filters/all_of/2/",
-              "content": "forest"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/6/filters/",
-              "content": "grove"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/9/filters/all_of/1/",
-              "content": "birch"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/9/filters/all_of/3/",
-              "content": "roofed"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/9/filters/all_of/5/",
-              "content": "mountain"
             }
           ]
         }
@@ -334,11 +186,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/0/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid[1]/filters/all_of[2]/any_of[0]/",
               "content": "has_biome_tag"
             },
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/1/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid[1]/filters/all_of[2]/any_of[1]/",
               "content": "has_biome_tag"
             }
           ]
@@ -358,28 +210,28 @@
       ],
       "/vanilla/behavior_pack/entities/cave_spider.json": [
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/0/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid[1]/filters/all_of[2]/any_of[0]/",
           "content": {
             "test": "has_biome_tag",
             "value": "swamp"
           }
         },
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/1/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid[1]/filters/all_of[2]/any_of[1]/",
           "content": {
             "test": "has_biome_tag",
             "value": "mangrove_swamp"
           }
         },
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/2/filters/all_of/2/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid[2]/filters/all_of[2]/",
           "content": {
             "test": "has_biome_tag",
             "value": "desert"
           }
         },
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/3/filters/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid[3]/filters/",
           "content": {
             "test": "has_biome_tag",
             "value": "nether"
@@ -388,14 +240,14 @@
       ],
       "/vanilla/behavior_pack/entities/chicken.json": [
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/0/filters/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/first_valid[0]/filters/",
           "content": {
             "test": "has_biome_tag",
             "value": "spawns_warm_variant_farm_animals"
           }
         },
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/1/filters/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/first_valid[1]/filters/",
           "content": {
             "test": "has_biome_tag",
             "value": "spawns_cold_variant_farm_animals"
@@ -404,14 +256,14 @@
       ],
       "/vanilla/behavior_pack/entities/cow.json": [
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/0/filters/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/first_valid[0]/filters/",
           "content": {
             "test": "has_biome_tag",
             "value": "spawns_warm_variant_farm_animals"
           }
         },
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/1/filters/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/first_valid[1]/filters/",
           "content": {
             "test": "has_biome_tag",
             "value": "spawns_cold_variant_farm_animals"
@@ -420,14 +272,14 @@
       ],
       "/vanilla/behavior_pack/entities/pig.json": [
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/0/filters/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/first_valid[0]/filters/",
           "content": {
             "test": "has_biome_tag",
             "value": "spawns_warm_variant_farm_animals"
           }
         },
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/1/filters/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/first_valid[1]/filters/",
           "content": {
             "test": "has_biome_tag",
             "value": "spawns_cold_variant_farm_animals"
@@ -436,918 +288,17 @@
       ],
       "/vanilla/behavior_pack/entities/sheep.json": [
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/0/filters/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/first_valid[0]/filters/",
           "content": {
             "test": "has_biome_tag",
             "value": "spawns_cold_variant_farm_animals"
           }
         },
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/1/filters/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/first_valid[1]/filters/",
           "content": {
             "test": "has_biome_tag",
             "value": "spawns_warm_variant_farm_animals"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/spider.json": [
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "swamp"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "mangrove_swamp"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/2/filters/all_of/2/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "desert"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/3/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "nether"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/villager_v2.json": [
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "desert"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "mesa"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/3/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "jungle"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/4/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "savanna"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/5/filters/any_of/0/all_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "cold"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/5/filters/any_of/0/all_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "!=",
-            "value": "ocean"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/5/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "frozen"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/6/filters/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "swamp"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/6/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "mangrove_swamp"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/7/filters/all_of/0/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "taiga"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/7/filters/all_of/0/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "extreme_hills"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/7/filters/all_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "!=",
-            "value": "cold"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/2/filters/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "desert"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/2/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "mesa"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/3/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "jungle"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/4/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "savanna"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/5/filters/any_of/0/all_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "cold"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/5/filters/any_of/0/all_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "!=",
-            "value": "ocean"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/5/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "frozen"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/6/filters/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "swamp"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/6/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "mangrove_swamp"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/7/filters/all_of/0/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "taiga"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/7/filters/all_of/0/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "extreme_hills"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/7/filters/all_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "!=",
-            "value": "cold"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/1/filters/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "desert"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/1/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "mesa"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/2/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "jungle"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/3/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "savanna"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/4/filters/any_of/0/all_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "cold"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/4/filters/any_of/0/all_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "!=",
-            "value": "ocean"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/4/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "frozen"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/5/filters/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "swamp"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/5/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "mangrove_swamp"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/6/filters/all_of/0/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "taiga"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/6/filters/all_of/0/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "extreme_hills"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/6/filters/all_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "!=",
-            "value": "cold"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/2/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "desert"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/3/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "jungle"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/4/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "savanna"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/5/filters/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "cold"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/5/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "frozen"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/6/filters/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "swamp"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/6/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "mangrove_swamp"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/7/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "taiga"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wolf.json": [
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/all_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "taiga"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/all_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "not",
-            "value": "cold"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/all_of/2/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "not",
-            "value": "mega"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/all_of/3/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "not",
-            "value": "mutated"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/all_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "taiga"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/all_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "cold"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/3/filters/all_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "mega"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/3/filters/all_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "taiga"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/3/filters/all_of/2/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "forest"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/3/filters/all_of/3/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "not",
-            "value": "mutated"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/4/filters/all_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "mega"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/4/filters/all_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "taiga"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/4/filters/all_of/2/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "forest"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/4/filters/all_of/3/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "mutated"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/5/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "jungle"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/6/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "grove"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/7/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "savanna"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/8/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "mesa"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/9/filters/all_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "forest"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/9/filters/all_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "not",
-            "value": "birch"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/9/filters/all_of/2/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "not",
-            "value": "taiga"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/9/filters/all_of/3/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "not",
-            "value": "roofed"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/9/filters/all_of/4/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "not",
-            "value": "mutated"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/9/filters/all_of/5/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "not",
-            "value": "mountain"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-        {
-          "path": "/minecraft:entity/events/minecraft:add_biome_and_skin/sequence/1/filters/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "desert"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:add_biome_and_skin/sequence/1/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "mesa"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:add_biome_and_skin/sequence/2/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "jungle"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:add_biome_and_skin/sequence/3/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "savanna"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:add_biome_and_skin/sequence/4/filters/any_of/0/all_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "cold"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:add_biome_and_skin/sequence/4/filters/any_of/0/all_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "!=",
-            "value": "ocean"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:add_biome_and_skin/sequence/4/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "frozen"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:add_biome_and_skin/sequence/5/filters/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "swamp"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:add_biome_and_skin/sequence/5/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "mangrove_swamp"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:add_biome_and_skin/sequence/6/filters/all_of/0/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "taiga"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:add_biome_and_skin/sequence/6/filters/all_of/0/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "extreme_hills"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:add_biome_and_skin/sequence/6/filters/all_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "!=",
-            "value": "cold"
-          }
-        }
-      ],
-      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "desert"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "mesa"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/3/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "jungle"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/4/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "savanna"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/5/filters/any_of/0/all_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "cold"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/5/filters/any_of/0/all_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "!=",
-            "value": "ocean"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/5/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "frozen"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/6/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "swamp"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/7/filters/all_of/0/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "taiga"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/7/filters/all_of/0/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "extreme_hills"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/7/filters/all_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "!=",
-            "value": "cold"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/2/filters/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "desert"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/2/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "mesa"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/3/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "jungle"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/4/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "savanna"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/5/filters/any_of/0/all_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "cold"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/5/filters/any_of/0/all_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "!=",
-            "value": "ocean"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/5/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "frozen"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/6/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "swamp"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/7/filters/all_of/0/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "taiga"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/7/filters/all_of/0/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "extreme_hills"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/7/filters/all_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "!=",
-            "value": "cold"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/1/filters/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "desert"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/1/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "mesa"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/2/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "jungle"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/3/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "savanna"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/4/filters/any_of/0/all_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "cold"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/4/filters/any_of/0/all_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "!=",
-            "value": "ocean"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/4/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "frozen"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/5/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "swamp"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/6/filters/all_of/0/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "taiga"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/6/filters/all_of/0/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "extreme_hills"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/sequence/6/filters/all_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "operator": "!=",
-            "value": "cold"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/2/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "desert"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/3/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "jungle"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/4/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "savanna"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/5/filters/any_of/0/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "cold"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/5/filters/any_of/1/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "frozen"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/6/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "swamp"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/7/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "taiga"
           }
         }
       ]

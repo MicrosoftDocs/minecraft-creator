@@ -37,12 +37,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
               "content": 1
             }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_horse.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
-              "content": 1.2
-            }
           ]
         }
       },
@@ -69,24 +63,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
               "content": 3
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_horse.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_villager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/from_abandoned_village/minecraft:behavior.flee_sun/",
-              "content": 4
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-            {
-              "path": "/minecraft:entity/component_groups/from_abandoned_village/minecraft:behavior.flee_sun/",
-              "content": 4
             }
           ]
         }
@@ -134,33 +110,6 @@
           "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
           "content": {
             "priority": 2,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_horse.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
-          "content": {
-            "priority": 1,
-            "speed_multiplier": 1.2
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/from_abandoned_village/minecraft:behavior.flee_sun/",
-          "content": {
-            "priority": 4,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-        {
-          "path": "/minecraft:entity/component_groups/from_abandoned_village/minecraft:behavior.flee_sun/",
-          "content": {
-            "priority": 4,
             "speed_multiplier": 1
           }
         }

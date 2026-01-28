@@ -18,7 +18,7 @@ description: Contents of the @minecraft/common module
     "version": "1.2.0"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.0-beta.27 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.10-beta.20 of Minecraft.
 
 ## Available Versions
 - `1.2.0`

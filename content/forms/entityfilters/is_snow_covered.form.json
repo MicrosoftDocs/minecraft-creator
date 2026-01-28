@@ -136,13 +136,13 @@
         "samples": {
           "/vanilla/behavior_pack/entities/fox.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/",
               "content": true
             }
           ],
           "/vanilla/behavior_pack/entities/rabbit.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/3/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[3]/filters/",
               "content": true
             }
           ]
@@ -155,11 +155,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/fox.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/",
               "content": "is_snow_covered"
             },
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[2]/filters/",
               "content": "is_snow_covered"
             }
           ]
@@ -179,14 +179,14 @@
       ],
       "/vanilla/behavior_pack/entities/fox.json": [
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/",
           "content": {
             "test": "is_snow_covered",
             "value": true
           }
         },
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[2]/filters/",
           "content": {
             "test": "is_snow_covered",
             "value": false
@@ -195,14 +195,14 @@
       ],
       "/vanilla/behavior_pack/entities/rabbit.json": [
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/3/filters/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[3]/filters/",
           "content": {
             "test": "is_snow_covered",
             "value": true
           }
         },
         {
-          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/3/filters/",
+          "path": "/minecraft:entity/events/minecraft:entity_born/sequence[3]/filters/",
           "content": {
             "test": "is_snow_covered",
             "value": true
