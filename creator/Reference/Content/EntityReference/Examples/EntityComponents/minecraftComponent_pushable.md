@@ -41,21 +41,3 @@ Defines what can push an entity between other entities and pistons.
   "is_pushable_by_piston": true
 }
 ```
-
-#### [Creaking](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creaking.json)
-
-At /minecraft:entity/component_groups/minecraft:immobile/minecraft:pushable/: 
-
-```json
-"minecraft:pushable": {
-  "is_pushable": false,
-  "is_pushable_by_piston": false
-}
-```
-
-#### [Frog](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/frog.json)
-
-
-```json
-"minecraft:pushable": {}
-```

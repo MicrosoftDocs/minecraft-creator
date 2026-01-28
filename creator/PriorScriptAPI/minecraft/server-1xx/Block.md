@@ -281,6 +281,7 @@ Creates a prototype item stack based on this block that can be used with Contain
 
 #### **Parameters**
 - **amount**?: *number* = `1`
+  * Bounds: [`1`, `255`]
   
   Number of instances of this block to place in the item stack.
 - **withData**?: *boolean* = `false`

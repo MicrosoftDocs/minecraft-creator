@@ -18,6 +18,10 @@ Allows the mob to move into a liquid when on land. This behavior was deprecated 
 > [!Note]
 > This behavior was used by striders in versions 1.16.100-1.18.10 but has been removed in favor of simpler movement patterns.
 
+> [!Note]
+> This item no longer works after format versions of at least 1.18.20.
+
+
 ## Move To Liquid Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |

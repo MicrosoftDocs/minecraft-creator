@@ -14,10 +14,3 @@ Pauses this entity's breathing under water.
 
 
 ## Samples
-
-#### [Nautilus](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/nautilus.json)
-
-
-```json
-"minecraft:underwater_mount_breathing": {}
-```

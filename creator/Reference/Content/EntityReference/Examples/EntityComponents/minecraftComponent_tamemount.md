@@ -20,12 +20,12 @@ Allows the Entity to be tamed by mounting it.
 | attempt_temper_mod | 5 | Integer number | The amount the entity's temper will increase when mounted. |  | 
 | auto_reject_items | *not set* | Array of [Auto Reject Items](#auto-reject-items) items |  |  | 
 | autoRejectItems | *not set* | Array of [AutoRejectItems](#autorejectitems) items | The list of items that, if carried while interacting with the entity, will anger it. |  | 
-| feed_items | *not set* | Array of [Feed Items](#feed-items) items | The list of items that can be used to increase the entity's temper and speed up the taming process. | Donkey: `[{"item":"wheat","temper_mod":3},{"item":"sugar","temper_mod":3},{"item":"apple","temper_mod":3},{"item":"carrot","temper_mod":3},{"item":"golden_carrot","temper_mod":5},{"item":"golden_apple","temper_mod":10},{"item":"appleEnchanted","temper_mod":10}]` | 
-| feed_text | *not set* | String | The text that shows in the feeding interact button. |  | 
-| max_temper | 100 | Integer number | The maximum value for the entity's random starting temper. |  | 
+| feed_items | *not set* | Array of [Feed Items](#feed-items) items | The list of items that can be used to increase the entity's temper and speed up the taming process. | Llama: `[{"item":"wheat","temper_mod":3},{"item":"hay_block","temper_mod":6}]` | 
+| feed_text | *not set* | String | The text that shows in the feeding interact button. | Llama: `"action.interact.feed"` | 
+| max_temper | 100 | Integer number | The maximum value for the entity's random starting temper. | Llama: `30` | 
 | min_temper | 0 | Integer number | The minimum value for the entity's random starting temper. |  | 
-| ride_text | *not set* | String | The text that shows in the riding interact button. |  | 
-| tame_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event that triggers when the entity becomes tamed. |  | 
+| ride_text | *not set* | String | The text that shows in the riding interact button. | Llama: `"action.interact.mount"` | 
+| tame_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event that triggers when the entity becomes tamed. | Llama: `{"event":"minecraft:on_tame","target":"self"}` | 
 
 ## Auto Reject Items
 
@@ -33,7 +33,7 @@ Allows the Entity to be tamed by mounting it.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| item | *not set* | String |  | Donkey: `"horsearmorleather"` | 
+| item | *not set* | String |  | Trader Llama: `"horsearmorleather"` | 
 
 ## AutoRejectItems
 The list of items that, if carried while interacting with the entity, will anger it.
@@ -57,75 +57,6 @@ The list of items that can be used to increase the entity's temper and speed up 
 | temper_mod | 0 | Integer number | The amount of temper this entity gains when fed this item. |  | 
 
 ## Samples
-
-#### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
-
-
-```json
-"minecraft:tamemount": {
-  "min_temper": 0,
-  "max_temper": 100,
-  "feed_text": "action.interact.feed",
-  "ride_text": "action.interact.mount",
-  "feed_items": [
-    {
-      "item": "wheat",
-      "temper_mod": 3
-    },
-    {
-      "item": "sugar",
-      "temper_mod": 3
-    },
-    {
-      "item": "apple",
-      "temper_mod": 3
-    },
-    {
-      "item": "carrot",
-      "temper_mod": 3
-    },
-    {
-      "item": "golden_carrot",
-      "temper_mod": 5
-    },
-    {
-      "item": "golden_apple",
-      "temper_mod": 10
-    },
-    {
-      "item": "appleEnchanted",
-      "temper_mod": 10
-    }
-  ],
-  "auto_reject_items": [
-    {
-      "item": "horsearmorleather"
-    },
-    {
-      "item": "horsearmoriron"
-    },
-    {
-      "item": "horsearmorgold"
-    },
-    {
-      "item": "horsearmordiamond"
-    },
-    {
-      "item": "minecraft:copper_horse_armor"
-    },
-    {
-      "item": "minecraft:netherite_horse_armor"
-    },
-    {
-      "item": "saddle"
-    }
-  ],
-  "tame_event": {
-    "event": "minecraft:on_tame",
-    "target": "self"
-  }
-}
-```
 
 #### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
 
@@ -190,94 +121,6 @@ The list of items that can be used to increase the entity's temper and speed up 
     },
     {
       "item": "minecraft:netherite_horse_armor"
-    },
-    {
-      "item": "saddle"
-    }
-  ],
-  "tame_event": {
-    "event": "minecraft:on_tame",
-    "target": "self"
-  }
-}
-```
-
-#### [Zombie Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_horse.json)
-
-
-```json
-"minecraft:tamemount": {
-  "min_temper": 0,
-  "max_temper": 100,
-  "feed_text": "action.interact.feed",
-  "ride_text": "action.interact.mount",
-  "feed_items": [
-    {
-      "item": "red_mushroom",
-      "temper_mod": 10
-    }
-  ],
-  "auto_reject_items": [
-    {
-      "item": "horsearmorleather"
-    },
-    {
-      "item": "horsearmoriron"
-    },
-    {
-      "item": "horsearmorgold"
-    },
-    {
-      "item": "horsearmordiamond"
-    },
-    {
-      "item": "minecraft:copper_horse_armor"
-    },
-    {
-      "item": "minecraft:netherite_horse_armor"
-    },
-    {
-      "item": "saddle"
-    }
-  ],
-  "tame_event": {
-    "event": "minecraft:on_tame",
-    "target": "self"
-  }
-}
-```
-
-#### [Frost Moose](https://github.com/microsoft/minecraft-samples/tree/main/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json)
-
-
-```json
-"minecraft:tamemount": {
-  "min_temper": 0,
-  "max_temper": 30,
-  "feed_text": "action.interact.feed",
-  "ride_text": "action.interact.mount",
-  "feed_items": [
-    {
-      "item": "wheat",
-      "temper_mod": 3
-    },
-    {
-      "item": "hay_block",
-      "temper_mod": 6
-    }
-  ],
-  "auto_reject_items": [
-    {
-      "item": "horsearmorleather"
-    },
-    {
-      "item": "horsearmoriron"
-    },
-    {
-      "item": "horsearmorgold"
-    },
-    {
-      "item": "horsearmordiamond"
     },
     {
       "item": "saddle"

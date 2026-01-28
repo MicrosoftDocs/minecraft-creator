@@ -74,7 +74,7 @@ The header section of manifest.json containing the pack's identity: its name sho
 | preRelease |  | String |  |  | 
 
 ## 3.0.0.Metadata
-Optional metadata about the pack including author names, license information, and URL. Also includes generation tool info for debugging.
+Optional metadata about the pack including author names, license information, and URL. This information may be displayed in marketplace listings or pack details screens. Also includes generation tool info for debugging.
 
 
 #### 3.0.0.Metadata Properties

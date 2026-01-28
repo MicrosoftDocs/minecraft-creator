@@ -58,26 +58,9 @@
         "id": "table",
         "title": "Table",
         "description": "The file path to the equipment table, relative to the behavior pack's root.",
-        "dataType": 2,
-        "samples": {
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:can_have_equipment/minecraft:equipment/",
-              "content": "loot_tables/entities/zombie_equipment.json"
-            }
-          ]
-        }
+        "dataType": 2
       }
     ],
-    "samples": {
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:can_have_equipment/minecraft:equipment/",
-          "content": {
-            "table": "loot_tables/entities/zombie_equipment.json"
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

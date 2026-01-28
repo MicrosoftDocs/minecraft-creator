@@ -144,6 +144,8 @@
               href: Documents/Blockbench.md
             - name: Other Commonly Used Tools
               href: Documents/CommonlyUsedTools.md
+        - name: Add-On Development Workflow
+          href: Documents/AddonDevelopmentWorkflow.md
     - name: Concepts
       items:
         - name: World Generation Overview
@@ -278,6 +280,12 @@
             href: Documents/scripting/custom-commands.md
           - name: Game Loops and Timed Callbacks
             href: Documents/scripting/system-run-guide.md
+          - name: Building Multiplayer-Aware Scripts
+            href: Documents/scripting/multiplayer-scripts.md
+          - name: Debugging Scripts
+            href: Documents/scripting/debugging-scripts.md
+          - name: Error Handling Best Practices
+            href: Documents/scripting/error-handling.md
           - name: Scripting V2 Overview
             href: Documents/scripting/v2-overview.md
           - name: Script Module Versioning
@@ -378,6 +386,8 @@
           href: Documents/EntityEvents.md
         - name: Custom Behavior and Render Controllers
           href: Documents/behaviorrendercontrollers.md
+        - name: Custom Animations and Animation Controllers
+          href: Documents/animationsandcontrollers.md
         - name: Creating a Goblin Chef Entity 
           href: Documents/MakerSeriesMakingTheGoblinChef.md
         - name: Animations and Rendering
@@ -420,6 +430,8 @@
           href: Reference/Content/ParticlesReference/ParticlesIntroduction.md
         - name: Particle Effects
           href: Documents/ParticleEffects.md
+        - name: Materials and Material Files
+          href: Documents/material-files.md
     - name: Items and Recipes
       items:    
         - name: Introduction to Recipes
@@ -627,6 +639,8 @@
             href: Reference/Content/featuresreference/Examples/Features/TOC.yml
           - name: Feature Example Schema
             href: Reference/Content/FeaturesReference/Examples/ExampleFeatureSchema.md
+          - name: Feature Rules JSON
+            href: Reference/Content/FeatureRulesReference/Examples/FeatureRulesList.md
         - name: Item JSON
           items:
           - name: Item Definitions
@@ -697,6 +711,16 @@
             href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/weight.md
           - name: World Age Filter
             href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/world_age_filter.md
+        - name: Attachable JSON
+          href: Reference/Content/AttachableReference/Examples/AttachableList.md
+        - name: Camera JSON
+          href: Reference/Content/CameraReference/Examples/CameraList.md
+        - name: Dialogue JSON
+          href: Reference/Content/DialogueReference/Examples/DialogueList.md
+        - name: Trade Table JSON
+          href: Reference/Content/TradeTableReference/Examples/TradeTableList.md
+        - name: Voxel Shapes JSON
+          href: Reference/Content/VoxelShapesReference/Examples/VoxelShapesList.md
       - name: Resource Pack JSON Files
         items:
         - name: Client Entity JSON
@@ -769,6 +793,8 @@
         href: Reference/Content/VersionDisambiguation.md
     - name: Best Practices & Tips
       items:
+      - name: "Troubleshooting and Fixing Add-On Bugs"
+        href: Documents/TroubleshootingAddons.md
       - name: "Use the Latest Platform Version"
         href: Documents/Practices/LatestPlatformVersion.md
       - name: "Building Cooperative Add-Ons"

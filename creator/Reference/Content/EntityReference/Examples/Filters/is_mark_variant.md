@@ -18,9 +18,8 @@ Returns true if the subject entity is the mark variant number provided.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Villager v2: `"other"` | 
-| test | *not set* | String |  | Villager v2: `"is_mark_variant"` | 
-| value | *not set* | Integer number | (Required) An integer value. | Villager v2: `1`, `2`, `3`, `4`, `5`, `6` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | *not set* | Integer number | (Required) An integer value. |  | 
 
 ### Operator choices
 
@@ -61,66 +60,4 @@ At Short (using Defaults)..:
 
 ```json
 { "test": "is_mark_variant", "value": "0" }
-```
-
-#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
-
-At /minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/6/filters/: 
-
-```json
-{
-  "test": "is_mark_variant",
-  "subject": "other",
-  "value": 1
-}
-```
-
-At /minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/7/filters/: 
-
-```json
-{
-  "test": "is_mark_variant",
-  "subject": "other",
-  "value": 2
-}
-```
-
-At /minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/8/filters/: 
-
-```json
-{
-  "test": "is_mark_variant",
-  "subject": "other",
-  "value": 3
-}
-```
-
-At /minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/9/filters/: 
-
-```json
-{
-  "test": "is_mark_variant",
-  "subject": "other",
-  "value": 4
-}
-```
-
-At /minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/10/filters/: 
-
-```json
-{
-  "test": "is_mark_variant",
-  "subject": "other",
-  "value": 5
-}
-```
-
-At /minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/11/filters/: 
-
-```json
-{
-  "test": "is_mark_variant",
-  "subject": "other",
-  "value": 6
-}
 ```

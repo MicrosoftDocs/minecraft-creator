@@ -1,214 +1,215 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "MCTools Validation Rules Documentation - minecraft:pack"
-description: "Describes the minecraft:pack mctools validation rules"
+title: "Validation Rules - Pack Manifest Info"
+description: "Documentation for Pack Manifest Info validation rules in Minecraft Creator Tools"
 ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
-
-# MCTools Validation Rules Documentation - minecraft:pack
-
+# Pack Manifest Info Validation Rules
 Extracts and validates information from behavior pack and resource pack manifest.json files including names, descriptions, UUIDs, versions, and icons.
+## Rules Summary
+| Rule ID | Rule | Severity | Auto-Fix |
+|:--------|:-----|:---------|:---------|
+| [PACK104](#pack104) | BP Name | ℹ️ Info |  |
+| [PACK105](#pack105) | BP Description | ℹ️ Info |  |
+| [PACK106](#pack106) | BP Custom ID | ℹ️ Info |  |
+| [PACK107](#pack107) | BP Min Version | ℹ️ Info |  |
+| [PACK108](#pack108) | BP UUID | ℹ️ Info |  |
+| [PACK109](#pack109) | BP Manifest | ℹ️ Info |  |
+| [PACK111](#pack111) | RP Min Version | ℹ️ Info |  |
+| [PACK112](#pack112) | RP UUID | ℹ️ Info |  |
+| [PACK113](#pack113) | RP Manifest | ℹ️ Info |  |
+| [PACK114](#pack114) | RP Name | ℹ️ Info |  |
+| [PACK115](#pack115) | RP Description | ℹ️ Info |  |
+| [PACK116](#pack116) | RP Custom ID | ℹ️ Info |  |
+| [PACK117](#pack117) | RP Format Version | ℹ️ Info |  |
+| [PACK118](#pack118) | Sub Packs | ℹ️ Info |  |
+| [PACK121](#pack121) | RP Icon | ℹ️ Info |  |
+| [PACK122](#pack122) | BP Icon | ℹ️ Info |  |
+| [PACK123](#pack123) | Skin Pack Icon | ℹ️ Info |  |
+| [PACK245](#pack245) | Subpack Tiers | ℹ️ Info |  |
+
+---
+## Rule Details
 
+### PACK104
+**ℹ️ BP Name**  
+**Severity**: Info
 
-## Pack Manifest Info Validation Rules
+#### What This Checks
+The name field from the behavior pack manifest header. This is displayed in the game's pack selection UI.
 
+#### Technical Details
+Data contains the name string from manifest header.
 
-### PACK104: BP Name
+### PACK105
+**ℹ️ BP Description**  
+**Severity**: Info
 
-**Rule ID:** `PACK104`
+#### What This Checks
+The description field from the behavior pack manifest header. Provides a brief summary of the pack's contents.
 
-**Severity:** Info
+#### Technical Details
+Data contains the description string from manifest header.
 
-**What it checks:** The name field from the behavior pack manifest header. This is displayed in the game's pack selection UI.
+### PACK106
+**ℹ️ BP Custom ID**  
+**Severity**: Info
 
-**Technical details:** Data contains the name string from manifest header.
+#### What This Checks
+The custom identifier for the behavior pack, if specified. Used for internal referencing.
 
+#### Technical Details
+Data contains the custom id string if specified.
 
-### PACK105: BP Description
+### PACK107
+**ℹ️ BP Min Version**  
+**Severity**: Info
 
-**Rule ID:** `PACK105`
+#### What This Checks
+The minimum Minecraft version required to use this behavior pack. Format: [major, minor, patch].
 
-**Severity:** Info
+#### Technical Details
+Data contains the min_engine_version array as string.
 
-**What it checks:** The description field from the behavior pack manifest header. Provides a brief summary of the pack's contents.
+### PACK108
+**ℹ️ BP UUID**  
+**Severity**: Info
 
-**Technical details:** Data contains the description string from manifest header.
+#### What This Checks
+The unique identifier (UUID) for the behavior pack. Must be unique across all packs.
 
+#### Technical Details
+Data contains the UUID string from manifest header.
 
-### PACK106: BP Custom ID
+### PACK109
+**ℹ️ BP Manifest**  
+**Severity**: Info
 
-**Rule ID:** `PACK106`
+#### What This Checks
+General information extracted from the behavior pack manifest.json file.
 
-**Severity:** Info
+#### Technical Details
+Data contains summarized manifest information.
 
-**What it checks:** The custom identifier for the behavior pack, if specified. Used for internal referencing.
+### PACK111
+**ℹ️ RP Min Version**  
+**Severity**: Info
 
-**Technical details:** Data contains the custom id string if specified.
+#### What This Checks
+The minimum Minecraft version required to use this resource pack. Format: [major, minor, patch].
 
+#### Technical Details
+Data contains the min_engine_version array as string.
 
-### PACK107: BP Min Version
+### PACK112
+**ℹ️ RP UUID**  
+**Severity**: Info
 
-**Rule ID:** `PACK107`
+#### What This Checks
+The unique identifier (UUID) for the resource pack. Must be unique across all packs.
 
-**Severity:** Info
+#### Technical Details
+Data contains the UUID string from manifest header.
 
-**What it checks:** The minimum Minecraft version required to use this behavior pack. Format: [major, minor, patch].
+### PACK113
+**ℹ️ RP Manifest**  
+**Severity**: Info
 
-**Technical details:** Data contains the min_engine_version array as string.
+#### What This Checks
+General information extracted from the resource pack manifest.json file.
 
+#### Technical Details
+Data contains summarized manifest information.
 
-### PACK108: BP UUID
+### PACK114
+**ℹ️ RP Name**  
+**Severity**: Info
 
-**Rule ID:** `PACK108`
+#### What This Checks
+The name field from the resource pack manifest header. This is displayed in the game's pack selection UI.
 
-**Severity:** Info
+#### Technical Details
+Data contains the name string from manifest header.
 
-**What it checks:** The unique identifier (UUID) for the behavior pack. Must be unique across all packs.
+### PACK115
+**ℹ️ RP Description**  
+**Severity**: Info
 
-**Technical details:** Data contains the UUID string from manifest header.
+#### What This Checks
+The description field from the resource pack manifest header. Provides a brief summary of the pack's contents.
 
+#### Technical Details
+Data contains the description string from manifest header.
 
-### PACK109: BP Manifest
+### PACK116
+**ℹ️ RP Custom ID**  
+**Severity**: Info
 
-**Rule ID:** `PACK109`
+#### What This Checks
+The custom identifier for the resource pack, if specified. Used for internal referencing.
 
-**Severity:** Info
+#### Technical Details
+Data contains the custom id string if specified.
 
-**What it checks:** General information extracted from the behavior pack manifest.json file.
+### PACK117
+**ℹ️ RP Format Version**  
+**Severity**: Info
 
-**Technical details:** Data contains summarized manifest information.
+#### What This Checks
+The format_version field from the resource pack manifest. Determines which manifest features are available.
 
+#### Technical Details
+Data contains the format_version string.
 
-### PACK111: RP Min Version
+### PACK118
+**ℹ️ Sub Packs**  
+**Severity**: Info
 
-**Rule ID:** `PACK111`
+#### What This Checks
+Information about subpacks defined in the manifest. Subpacks allow tiered content for different device capabilities.
 
-**Severity:** Info
+#### Technical Details
+Data contains subpack configuration summary.
 
-**What it checks:** The minimum Minecraft version required to use this resource pack. Format: [major, minor, patch].
+### PACK121
+**ℹ️ RP Icon**  
+**Severity**: Info
 
-**Technical details:** Data contains the min_engine_version array as string.
+#### What This Checks
+The pack_icon.png found in the resource pack root. Used to display the pack in selection screens.
 
+#### Technical Details
+Data contains pack icon path.
 
-### PACK112: RP UUID
+### PACK122
+**ℹ️ BP Icon**  
+**Severity**: Info
 
-**Rule ID:** `PACK112`
+#### What This Checks
+The pack_icon.png found in the behavior pack root. Used to display the pack in selection screens.
 
-**Severity:** Info
+#### Technical Details
+Data contains pack icon path.
 
-**What it checks:** The unique identifier (UUID) for the resource pack. Must be unique across all packs.
+### PACK123
+**ℹ️ Skin Pack Icon**  
+**Severity**: Info
 
-**Technical details:** Data contains the UUID string from manifest header.
+#### What This Checks
+The pack_icon.png found in the skin pack root. Used to display the pack in selection screens.
 
+#### Technical Details
+Data contains pack icon path.
 
-### PACK113: RP Manifest
+### PACK245
+**ℹ️ Subpack Tiers**  
+**Severity**: Info
 
-**Rule ID:** `PACK113`
+#### What This Checks
+Analysis of subpack memory_tier configurations. Tiers should be properly ordered for device capability matching.
 
-**Severity:** Info
-
-**What it checks:** General information extracted from the resource pack manifest.json file.
-
-**Technical details:** Data contains summarized manifest information.
-
-
-### PACK114: RP Name
-
-**Rule ID:** `PACK114`
-
-**Severity:** Info
-
-**What it checks:** The name field from the resource pack manifest header. This is displayed in the game's pack selection UI.
-
-**Technical details:** Data contains the name string from manifest header.
-
-
-### PACK115: RP Description
-
-**Rule ID:** `PACK115`
-
-**Severity:** Info
-
-**What it checks:** The description field from the resource pack manifest header. Provides a brief summary of the pack's contents.
-
-**Technical details:** Data contains the description string from manifest header.
-
-
-### PACK116: RP Custom ID
-
-**Rule ID:** `PACK116`
-
-**Severity:** Info
-
-**What it checks:** The custom identifier for the resource pack, if specified. Used for internal referencing.
-
-**Technical details:** Data contains the custom id string if specified.
-
-
-### PACK117: RP Format Version
-
-**Rule ID:** `PACK117`
-
-**Severity:** Info
-
-**What it checks:** The format_version field from the resource pack manifest. Determines which manifest features are available.
-
-**Technical details:** Data contains the format_version string.
-
-
-### PACK118: Sub Packs
-
-**Rule ID:** `PACK118`
-
-**Severity:** Info
-
-**What it checks:** Information about subpacks defined in the manifest. Subpacks allow tiered content for different device capabilities.
-
-**Technical details:** Data contains subpack configuration summary.
-
-
-### PACK121: RP Icon
-
-**Rule ID:** `PACK121`
-
-**Severity:** Info
-
-**What it checks:** The pack_icon.png found in the resource pack root. Used to display the pack in selection screens.
-
-**Technical details:** Data contains pack icon path.
-
-
-### PACK122: BP Icon
-
-**Rule ID:** `PACK122`
-
-**Severity:** Info
-
-**What it checks:** The pack_icon.png found in the behavior pack root. Used to display the pack in selection screens.
-
-**Technical details:** Data contains pack icon path.
-
-
-### PACK123: Skin Pack Icon
-
-**Rule ID:** `PACK123`
-
-**Severity:** Info
-
-**What it checks:** The pack_icon.png found in the skin pack root. Used to display the pack in selection screens.
-
-**Technical details:** Data contains pack icon path.
-
-
-### PACK245: Subpack Tiers
-
-**Rule ID:** `PACK245`
-
-**Severity:** Info
-
-**What it checks:** Analysis of subpack memory_tier configurations. Tiers should be properly ordered for device capability matching.
-
-**Technical details:** Data contains subpack tier configuration analysis.
+#### Technical Details
+Data contains subpack tier configuration analysis.

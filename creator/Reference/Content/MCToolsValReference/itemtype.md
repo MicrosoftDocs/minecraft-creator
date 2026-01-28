@@ -1,160 +1,173 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "MCTools Validation Rules Documentation - minecraft:itemtype"
-description: "Describes the minecraft:itemtype mctools validation rules"
+title: "Validation Rules - Item Types"
+description: "Documentation for Item Types validation rules in Minecraft Creator Tools"
 ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
-
-# MCTools Validation Rules Documentation - minecraft:itemtype
-
+# Item Types Validation Rules
 Validates behavior pack item type definitions including format versions, identifiers, and metadata. Can automatically update format versions to the latest.
+## Rules Summary
+| Rule ID | Rule | Severity | Auto-Fix |
+|:--------|:-----|:---------|:---------|
+| [ITEMTYPE53](#itemtype53) | Identifier | ℹ️ Info |  |
+| [ITEMTYPE54](#itemtype54) | Metadata | ℹ️ Info |  |
+| [ITEMTYPE55](#itemtype55) | Category | ℹ️ Info |  |
+| [ITEMTYPE100](#itemtype100) | Version Defined | ℹ️ Info |  |
+| [ITEMTYPE110](#itemtype110) | Major Version Low | 🟡 Warning | ✅ |
+| [ITEMTYPE111](#itemtype111) | Major Version High | 🔴 Error | ✅ |
+| [ITEMTYPE120](#itemtype120) | Minor Version Low | 🟡 Warning | ✅ |
+| [ITEMTYPE121](#itemtype121) | Minor Version High | 🔴 Error | ✅ |
+| [ITEMTYPE130](#itemtype130) | Patch Version Low | ℹ️ Info | ✅ |
+| [ITEMTYPE131](#itemtype131) | Patch Version High | 🟡 Warning | ✅ |
+| [ITEMTYPE500](#itemtype500) | Version Fetch Error | 🔴 Error |  |
+| [ITEMTYPE501](#itemtype501) | Version Parse Error | 🔴 Error |  |
 
+---
+## Rule Details
 
-## Item Types Validation Rules
+### ITEMTYPE53
+**ℹ️ Identifier**  
+**Severity**: Info
 
+#### What This Checks
+The identifier of the item type (e.g., mypack:custom_sword). Should follow namespace:name format.
 
-### ITEMTYPE100: Version Defined
+#### Technical Details
+Data contains the item type identifier.
 
-**Rule ID:** `ITEMTYPE100`
+### ITEMTYPE54
+**ℹ️ Metadata**  
+**Severity**: Info
 
-**Severity:** Info
+#### What This Checks
+Additional metadata associated with the item type definition.
 
-**What it checks:** Confirms that a format_version field is defined in the item type JSON. Required for proper parsing.
+#### Technical Details
+Data contains the metadata value.
 
-**Technical details:** Data contains the format_version value.
+### ITEMTYPE55
+**ℹ️ Category**  
+**Severity**: Info
 
+#### What This Checks
+The category of the item type (equipment, items, nature, etc.) for creative inventory placement.
 
-### ITEMTYPE110: Major Version Low
+#### Technical Details
+Data contains the category name.
 
-**Rule ID:** `ITEMTYPE110`
+### ITEMTYPE100
+**ℹ️ Version Defined**  
+**Severity**: Info
 
-**Severity:** Info
+#### What This Checks
+Confirms that a format_version field is defined in the item type JSON. Required for proper parsing.
 
-**What it checks:** Warning when the item's format_version major number is below the current version. Consider updating to access new features.
+#### Technical Details
+Data contains the format_version value.
 
-**Technical details:** Data contains the current format_version.
+### ITEMTYPE110
+**🟡 Major Version Low**  
+**Severity**: Warning
 
-**Auto-fix available:** Yes - This issue can be automatically fixed by MCTools.
+#### What This Checks
+Warning when the item's format_version major number is below the current version. Consider updating to access new features.
 
+> [!TIP]
+> **Auto-Fix Available**: This issue can be automatically fixed.
+> - Set behavior pack item type format version to latest version.
 
-### ITEMTYPE111: Major Version High
+#### Technical Details
+Data contains the current format_version.
 
-**Rule ID:** `ITEMTYPE111`
+### ITEMTYPE111
+**🔴 Major Version High**  
+**Severity**: Error
 
-**Severity:** Info
+#### What This Checks
+Error when the item's format_version major number is above the current version. The item may not load correctly.
 
-**What it checks:** Error when the item's format_version major number is above the current version. The item may not load correctly.
+> [!TIP]
+> **Auto-Fix Available**: This issue can be automatically fixed.
+> - Set behavior pack item type format version to latest version.
 
-**Technical details:** Data contains the format_version exceeding current.
+#### Technical Details
+Data contains the format_version exceeding current.
 
-**Auto-fix available:** Yes - This issue can be automatically fixed by MCTools.
+### ITEMTYPE120
+**🟡 Minor Version Low**  
+**Severity**: Warning
 
+#### What This Checks
+Warning when the item's format_version minor number is below the current version.
 
-### ITEMTYPE120: Minor Version Low
+> [!TIP]
+> **Auto-Fix Available**: This issue can be automatically fixed.
+> - Set behavior pack item type format version to latest version.
 
-**Rule ID:** `ITEMTYPE120`
+#### Technical Details
+Data contains the current format_version.
 
-**Severity:** Info
+### ITEMTYPE121
+**🔴 Minor Version High**  
+**Severity**: Error
 
-**What it checks:** Warning when the item's format_version minor number is below the current version.
+#### What This Checks
+Error when the item's format_version minor number is above the current version.
 
-**Technical details:** Data contains the current format_version.
+> [!TIP]
+> **Auto-Fix Available**: This issue can be automatically fixed.
+> - Set behavior pack item type format version to latest version.
 
-**Auto-fix available:** Yes - This issue can be automatically fixed by MCTools.
+#### Technical Details
+Data contains the format_version exceeding current.
 
+### ITEMTYPE130
+**ℹ️ Patch Version Low**  
+**Severity**: Info
 
-### ITEMTYPE121: Minor Version High
+#### What This Checks
+Information when the item's format_version patch number is below the current version.
 
-**Rule ID:** `ITEMTYPE121`
+> [!TIP]
+> **Auto-Fix Available**: This issue can be automatically fixed.
+> - Set behavior pack item type format version to latest version.
 
-**Severity:** Info
+#### Technical Details
+Data contains the current format_version.
 
-**What it checks:** Error when the item's format_version minor number is above the current version.
+### ITEMTYPE131
+**🟡 Patch Version High**  
+**Severity**: Warning
 
-**Technical details:** Data contains the format_version exceeding current.
+#### What This Checks
+Warning when the item's format_version patch number is above the current version.
 
-**Auto-fix available:** Yes - This issue can be automatically fixed by MCTools.
+> [!TIP]
+> **Auto-Fix Available**: This issue can be automatically fixed.
+> - Set behavior pack item type format version to latest version.
 
+#### Technical Details
+Data contains the format_version exceeding current.
 
-### ITEMTYPE130: Patch Version Low
+### ITEMTYPE500
+**🔴 Version Fetch Error**  
+**Severity**: Error
 
-**Rule ID:** `ITEMTYPE130`
+#### What This Checks
+Error when the current Minecraft version could not be determined for comparison.
 
-**Severity:** Info
+#### Technical Details
+Data contains the error message.
 
-**What it checks:** Information when the item's format_version patch number is below the current version.
+### ITEMTYPE501
+**🔴 Version Parse Error**  
+**Severity**: Error
 
-**Technical details:** Data contains the current format_version.
+#### What This Checks
+Error when the Minecraft version string could not be parsed into version numbers.
 
-**Auto-fix available:** Yes - This issue can be automatically fixed by MCTools.
-
-
-### ITEMTYPE131: Patch Version High
-
-**Rule ID:** `ITEMTYPE131`
-
-**Severity:** Info
-
-**What it checks:** Warning when the item's format_version patch number is above the current version.
-
-**Technical details:** Data contains the format_version exceeding current.
-
-**Auto-fix available:** Yes - This issue can be automatically fixed by MCTools.
-
-
-### ITEMTYPE500: Version Fetch Error
-
-**Rule ID:** `ITEMTYPE500`
-
-**Severity:** Info
-
-**What it checks:** Error when the current Minecraft version could not be determined for comparison.
-
-**Technical details:** Data contains the error message.
-
-
-### ITEMTYPE501: Version Parse Error
-
-**Rule ID:** `ITEMTYPE501`
-
-**Severity:** Info
-
-**What it checks:** Error when the Minecraft version string could not be parsed into version numbers.
-
-**Technical details:** Data contains the unparseable version string.
-
-
-### ITEMTYPE53: Identifier
-
-**Rule ID:** `ITEMTYPE53`
-
-**Severity:** Info
-
-**What it checks:** The identifier of the item type (e.g., mypack:custom_sword). Should follow namespace:name format.
-
-**Technical details:** Data contains the item type identifier.
-
-
-### ITEMTYPE54: Metadata
-
-**Rule ID:** `ITEMTYPE54`
-
-**Severity:** Info
-
-**What it checks:** Additional metadata associated with the item type definition.
-
-**Technical details:** Data contains the metadata value.
-
-
-### ITEMTYPE55: Category
-
-**Rule ID:** `ITEMTYPE55`
-
-**Severity:** Info
-
-**What it checks:** The category of the item type (equipment, items, nature, etc.) for creative inventory placement.
-
-**Technical details:** Data contains the category name.
+#### Technical Details
+Data contains the unparseable version string.

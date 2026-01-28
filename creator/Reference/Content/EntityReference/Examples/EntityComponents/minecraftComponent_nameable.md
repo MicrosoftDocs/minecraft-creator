@@ -18,9 +18,9 @@ Allows this entity to be named (e.g. using a name tag).
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | allow_name_tag_renaming | true | Boolean true/false | If true, this entity can be renamed with name tags |  | 
-| always_show | false | Boolean true/false | If true, the name will always be shown | Player: `true` | 
-| default_trigger | *not set* | String | Trigger to run when the entity gets named | Vindicator: `{"event":"minecraft:stop_johnny","target":"self"}` | 
-| name_actions | *not set* | Array of [Name Actions](#name-actions) items | Describes the special names for this entity and the events to call when the entity acquires those names | Vindicator: `[{"name_filter":"Johnny","on_named":{"event":"minecraft:start_johnny","target":"self"}}]` | 
+| always_show | false | Boolean true/false | If true, the name will always be shown |  | 
+| default_trigger | *not set* | String | Trigger to run when the entity gets named |  | 
+| name_actions | *not set* | Array of [Name Actions](#name-actions) items | Describes the special names for this entity and the events to call when the entity acquires those names |  | 
 
 ## Name Actions
 Describes the special names for this entity and the events to call when the entity acquires those names.
@@ -40,45 +40,4 @@ Describes the special names for this entity and the events to call when the enti
 
 ```json
 "minecraft:nameable": {}
-```
-
-#### [Npc](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/npc.json)
-
-
-```json
-"minecraft:nameable": {
-  "always_show": false,
-  "allow_name_tag_renaming": false
-}
-```
-
-#### [Player](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/player.json)
-
-
-```json
-"minecraft:nameable": {
-  "always_show": true,
-  "allow_name_tag_renaming": false
-}
-```
-
-#### [Vindicator](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/vindicator.json)
-
-
-```json
-"minecraft:nameable": {
-  "default_trigger": {
-    "event": "minecraft:stop_johnny",
-    "target": "self"
-  },
-  "name_actions": [
-    {
-      "name_filter": "Johnny",
-      "on_named": {
-        "event": "minecraft:start_johnny",
-        "target": "self"
-      }
-    }
-  ]
-}
 ```

@@ -17,10 +17,10 @@ Returns true when the subject entity is a member of the named family.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Bee: `"!="`, Fox: `"=="`, Husk: `"not"` | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Arrow: `"other"`, Bee: `"self"`, Breeze: `"damager"` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Bogged: `"!="` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Arrow: `"other"`, Breeze: `"damager"` | 
 | test | *not set* | String |  | Arrow: `"is_family"` | 
-| value | *not set* | String | (Required) The Family name to look for | Arrow: `"player"`, `"pillager"`, Bee: `"pacified"` | 
+| value | *not set* | String | (Required) The Family name to look for | Arrow: `"player"`, `"pillager"`, Bogged: `"breeze"`, `"irongolem"`, `"baby_turtle"`, `"wolf"` | 
 
 ### Operator choices
 
@@ -65,7 +65,7 @@ At Short (using Defaults)..:
 
 #### [Arrow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/arrow.json)
 
-At /minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/: 
+At /minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/: 
 
 ```json
 {
@@ -75,7 +75,7 @@ At /minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/:
 }
 ```
 
-At /minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/: 
+At /minecraft:entity/events/minecraft:entity_spawned/sequence[2]/filters/: 
 
 ```json
 {
@@ -85,32 +85,9 @@ At /minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/:
 }
 ```
 
-#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
-
-At /minecraft:entity/component_groups/angry_bee/minecraft:angry/broadcast_filters/: 
-
-```json
-{
-  "test": "is_family",
-  "operator": "!=",
-  "value": "pacified"
-}
-```
-
-At /minecraft:entity/events/hive_destroyed/sequence/0/filters/: 
-
-```json
-{
-  "test": "is_family",
-  "subject": "self",
-  "operator": "!=",
-  "value": "pacified"
-}
-```
-
 #### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
 
-At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/: 
+At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/: 
 
 ```json
 {
@@ -121,7 +98,7 @@ At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0
 }
 ```
 
-At /minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/: 
+At /minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types[1]/filters/: 
 
 ```json
 {
@@ -131,7 +108,7 @@ At /minecraft:entity/components/minecraft:behavior.nearest_attackable_target/ent
 }
 ```
 
-At /minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/2/filters/all_of/0/: 
+At /minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types[2]/filters/all_of[0]/: 
 
 ```json
 {
@@ -141,7 +118,7 @@ At /minecraft:entity/components/minecraft:behavior.nearest_attackable_target/ent
 }
 ```
 
-At /minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/: 
+At /minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types[0]/filters/: 
 
 ```json
 {
@@ -153,7 +130,7 @@ At /minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0
 
 #### [Breeze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze.json)
 
-At /minecraft:entity/components/minecraft:damage_sensor/triggers/1/on_damage/filters/: 
+At /minecraft:entity/components/minecraft:damage_sensor/triggers[1]/on_damage/filters/: 
 
 ```json
 {
@@ -164,7 +141,7 @@ At /minecraft:entity/components/minecraft:damage_sensor/triggers/1/on_damage/fil
 }
 ```
 
-At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/all_of/0/: 
+At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/all_of[0]/: 
 
 ```json
 {
@@ -175,7 +152,7 @@ At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0
 }
 ```
 
-At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/all_of/1/: 
+At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/all_of[1]/: 
 
 ```json
 {
@@ -186,7 +163,7 @@ At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0
 }
 ```
 
-At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/all_of/2/: 
+At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/all_of[2]/: 
 
 ```json
 {
@@ -197,7 +174,7 @@ At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0
 }
 ```
 
-At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/all_of/3/: 
+At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/all_of[3]/: 
 
 ```json
 {
@@ -208,7 +185,7 @@ At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0
 }
 ```
 
-At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/all_of/4/: 
+At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/all_of[4]/: 
 
 ```json
 {
@@ -219,7 +196,7 @@ At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0
 }
 ```
 
-At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/all_of/5/: 
+At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/all_of[5]/: 
 
 ```json
 {
@@ -230,7 +207,7 @@ At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0
 }
 ```
 
-At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/all_of/6/: 
+At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/all_of[6]/: 
 
 ```json
 {

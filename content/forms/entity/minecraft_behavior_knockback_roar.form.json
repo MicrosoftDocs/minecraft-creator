@@ -29,98 +29,40 @@
         "title": "Attack Time",
         "description": "The delay after which the knockback occurs (in seconds).",
         "defaultValue": 0.5,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/roaring/minecraft:behavior.knockback_roar/",
-              "content": 0.5
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "cooldown_time",
         "title": "Cooldown Time",
         "description": "Time (in seconds) the mob has to wait before using the goal again.",
         "defaultValue": 0.1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/roaring/minecraft:behavior.knockback_roar/",
-              "content": 0.1
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "damage_filters",
         "title": "Damage Filters",
         "description": "The list of conditions another entity must meet to be a valid target to apply damage to.",
-        "dataType": 20,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/roaring/minecraft:behavior.knockback_roar/",
-              "content": {
-                "test": "is_family",
-                "subject": "other",
-                "operator": "!=",
-                "value": "illager"
-              }
-            }
-          ]
-        }
+        "dataType": 20
       },
       {
         "id": "duration",
         "title": "Duration",
         "description": "The max duration of the roar (in seconds).",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/roaring/minecraft:behavior.knockback_roar/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "knockback_damage",
         "title": "Knockback Damage",
         "description": "The damage dealt by the knockback roar.",
         "defaultValue": 6,
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/roaring/minecraft:behavior.knockback_roar/",
-              "content": 6
-            }
-          ]
-        }
+        "dataType": 0
       },
       {
         "id": "knockback_filters",
         "title": "Knockback Filters",
         "description": "The list of conditions another entity must meet to be a valid target to apply knockback to.",
-        "dataType": 20,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/roaring/minecraft:behavior.knockback_roar/",
-              "content": {
-                "test": "is_family",
-                "subject": "other",
-                "operator": "!=",
-                "value": "ravager"
-              }
-            }
-          ]
-        }
+        "dataType": 20
       },
       {
         "id": "knockback_height_cap",
@@ -134,109 +76,36 @@
         "title": "Knockback Horizontal Strength",
         "description": "The strength of the horizontal knockback.",
         "defaultValue": 4,
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/roaring/minecraft:behavior.knockback_roar/",
-              "content": 3
-            }
-          ]
-        }
+        "dataType": 0
       },
       {
         "id": "knockback_range",
         "title": "Knockback Range",
         "description": "The radius (in blocks) of the knockback effect.",
         "defaultValue": 4,
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/roaring/minecraft:behavior.knockback_roar/",
-              "content": 4
-            }
-          ]
-        }
+        "dataType": 0
       },
       {
         "id": "knockback_vertical_strength",
         "title": "Knockback Vertical Strength",
         "description": "The strength of the vertical knockback.",
         "defaultValue": 4,
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/roaring/minecraft:behavior.knockback_roar/",
-              "content": 3
-            }
-          ]
-        }
+        "dataType": 0
       },
       {
         "id": "on_roar_end",
         "title": "Roar End",
         "description": "Event that is triggered when the roar ends.",
-        "dataType": 22,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/roaring/minecraft:behavior.knockback_roar/",
-              "content": {
-                "event": "minecraft:end_roar"
-              }
-            }
-          ]
-        }
+        "dataType": 22
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/ravager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/roaring/minecraft:behavior.knockback_roar/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": 0
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/ravager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/roaring/minecraft:behavior.knockback_roar/",
-          "content": {
-            "priority": 1,
-            "duration": 1,
-            "attack_time": 0.5,
-            "knockback_damage": 6,
-            "knockback_horizontal_strength": 3,
-            "knockback_vertical_strength": 3,
-            "knockback_range": 4,
-            "knockback_filters": {
-              "test": "is_family",
-              "subject": "other",
-              "operator": "!=",
-              "value": "ravager"
-            },
-            "damage_filters": {
-              "test": "is_family",
-              "subject": "other",
-              "operator": "!=",
-              "value": "illager"
-            },
-            "on_roar_end": {
-              "event": "minecraft:end_roar"
-            },
-            "cooldown_time": 0.1
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

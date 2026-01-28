@@ -72,12 +72,6 @@
           "path": "/minecraft:entity/components/minecraft:is_stackable/",
           "content": {}
         }
-      ],
-      "/vanilla/behavior_pack/entities/tnt_minecart.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:is_stackable/",
-          "content": {}
-        }
       ]
     }
   }

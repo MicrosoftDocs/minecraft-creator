@@ -25,19 +25,7 @@
         "defaultValue": 30,
         "dataType": 3,
         "samples": {
-          "/vanilla/behavior_pack/entities/axolotl.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:movement.amphibious/",
-              "content": 15
-            }
-          ],
           "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:movement.amphibious/",
-              "content": 5
-            }
-          ],
-          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
             {
               "path": "/minecraft:entity/components/minecraft:movement.amphibious/",
               "content": 5
@@ -47,14 +35,6 @@
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/axolotl.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:movement.amphibious/",
-          "content": {
-            "max_turn": 15
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/frog.json": [
         {
           "path": "/minecraft:entity/components/minecraft:movement.amphibious/",
@@ -62,22 +42,6 @@
         }
       ],
       "/vanilla/behavior_pack/entities/turtle.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:movement.amphibious/",
-          "content": {
-            "max_turn": 5
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:movement.amphibious/",
-          "content": {
-            "max_turn": 5
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
         {
           "path": "/minecraft:entity/components/minecraft:movement.amphibious/",
           "content": {

@@ -126,72 +126,32 @@
           ]
         },
         "samples": {
-          "/vanilla/behavior_pack/entities/donkey.json": [
+          "/vanilla/behavior_pack/entities/llama.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:donkey_wild/minecraft:tamemount/",
+              "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:tamemount/",
               "content": [
                 {
                   "item": "wheat",
                   "temper_mod": 3
                 },
                 {
-                  "item": "sugar",
-                  "temper_mod": 3
-                },
-                {
-                  "item": "apple",
-                  "temper_mod": 3
-                },
-                {
-                  "item": "carrot",
-                  "temper_mod": 3
-                },
-                {
-                  "item": "golden_carrot",
-                  "temper_mod": 5
-                },
-                {
-                  "item": "golden_apple",
-                  "temper_mod": 10
-                },
-                {
-                  "item": "appleEnchanted",
-                  "temper_mod": 10
+                  "item": "hay_block",
+                  "temper_mod": 6
                 }
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/horse.json": [
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:horse_wild/minecraft:tamemount/",
+              "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:tamemount/",
               "content": [
                 {
                   "item": "wheat",
                   "temper_mod": 3
                 },
                 {
-                  "item": "sugar",
-                  "temper_mod": 3
-                },
-                {
-                  "item": "apple",
-                  "temper_mod": 3
-                },
-                {
-                  "item": "carrot",
-                  "temper_mod": 3
-                },
-                {
-                  "item": "golden_carrot",
-                  "temper_mod": 5
-                },
-                {
-                  "item": "golden_apple",
-                  "temper_mod": 10
-                },
-                {
-                  "item": "appleEnchanted",
-                  "temper_mod": 10
+                  "item": "hay_block",
+                  "temper_mod": 6
                 }
               ]
             }
@@ -202,14 +162,42 @@
         "id": "feed_text",
         "title": "Feed Text",
         "description": "The text that shows in the feeding interact button.",
-        "dataType": 2
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:tamemount/",
+              "content": "action.interact.feed"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:tamemount/",
+              "content": "action.interact.feed"
+            }
+          ]
+        }
       },
       {
         "id": "max_temper",
         "title": "Max Temper",
         "description": "The maximum value for the entity's random starting temper.",
         "defaultValue": 100,
-        "dataType": 0
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:tamemount/",
+              "content": 30
+            }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:tamemount/",
+              "content": 30
+            }
+          ]
+        }
       },
       {
         "id": "min_temper",
@@ -222,13 +210,47 @@
         "id": "ride_text",
         "title": "Ride Text",
         "description": "The text that shows in the riding interact button.",
-        "dataType": 2
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:tamemount/",
+              "content": "action.interact.mount"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:tamemount/",
+              "content": "action.interact.mount"
+            }
+          ]
+        }
       },
       {
         "id": "tame_event",
         "title": "Tame Event",
         "description": "Event that triggers when the entity becomes tamed.",
-        "dataType": 22
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:tamemount/",
+              "content": {
+                "event": "minecraft:on_tame",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:tamemount/",
+              "content": {
+                "event": "minecraft:on_tame",
+                "target": "self"
+              }
+            }
+          ]
+        }
       },
       {
         "id": "auto_reject_items",
@@ -243,7 +265,7 @@
               "title": "Item",
               "dataType": 2,
               "samples": {
-                "/vanilla/behavior_pack/entities/donkey.json": [
+                "/vanilla/behavior_pack/entities/trader_llama.json": [
                   {
                     "path": "item",
                     "content": "horsearmorleather"
@@ -252,146 +274,11 @@
               }
             }
           ]
-        }
+        },
+        "samples": {}
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/donkey.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:donkey_wild/minecraft:tamemount/",
-          "content": {
-            "min_temper": 0,
-            "max_temper": 100,
-            "feed_text": "action.interact.feed",
-            "ride_text": "action.interact.mount",
-            "feed_items": [
-              {
-                "item": "wheat",
-                "temper_mod": 3
-              },
-              {
-                "item": "sugar",
-                "temper_mod": 3
-              },
-              {
-                "item": "apple",
-                "temper_mod": 3
-              },
-              {
-                "item": "carrot",
-                "temper_mod": 3
-              },
-              {
-                "item": "golden_carrot",
-                "temper_mod": 5
-              },
-              {
-                "item": "golden_apple",
-                "temper_mod": 10
-              },
-              {
-                "item": "appleEnchanted",
-                "temper_mod": 10
-              }
-            ],
-            "auto_reject_items": [
-              {
-                "item": "horsearmorleather"
-              },
-              {
-                "item": "horsearmoriron"
-              },
-              {
-                "item": "horsearmorgold"
-              },
-              {
-                "item": "horsearmordiamond"
-              },
-              {
-                "item": "minecraft:copper_horse_armor"
-              },
-              {
-                "item": "minecraft:netherite_horse_armor"
-              },
-              {
-                "item": "saddle"
-              }
-            ],
-            "tame_event": {
-              "event": "minecraft:on_tame",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/horse.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_wild/minecraft:tamemount/",
-          "content": {
-            "min_temper": 0,
-            "max_temper": 100,
-            "feed_text": "action.interact.feed",
-            "ride_text": "action.interact.mount",
-            "feed_items": [
-              {
-                "item": "wheat",
-                "temper_mod": 3
-              },
-              {
-                "item": "sugar",
-                "temper_mod": 3
-              },
-              {
-                "item": "apple",
-                "temper_mod": 3
-              },
-              {
-                "item": "carrot",
-                "temper_mod": 3
-              },
-              {
-                "item": "golden_carrot",
-                "temper_mod": 5
-              },
-              {
-                "item": "golden_apple",
-                "temper_mod": 10
-              },
-              {
-                "item": "appleEnchanted",
-                "temper_mod": 10
-              }
-            ],
-            "auto_reject_items": [
-              {
-                "item": "horsearmorleather"
-              },
-              {
-                "item": "horsearmoriron"
-              },
-              {
-                "item": "horsearmorgold"
-              },
-              {
-                "item": "horsearmordiamond"
-              },
-              {
-                "item": "minecraft:copper_horse_armor"
-              },
-              {
-                "item": "minecraft:netherite_horse_armor"
-              },
-              {
-                "item": "saddle"
-              }
-            ],
-            "tame_event": {
-              "event": "minecraft:on_tame",
-              "target": "self"
-            }
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/llama.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:tamemount/",
@@ -408,74 +295,6 @@
               {
                 "item": "hay_block",
                 "temper_mod": 6
-              }
-            ],
-            "tame_event": {
-              "event": "minecraft:on_tame",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/mule.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:mule_wild/minecraft:tamemount/",
-          "content": {
-            "min_temper": 0,
-            "max_temper": 100,
-            "feed_text": "action.interact.feed",
-            "ride_text": "action.interact.mount",
-            "feed_items": [
-              {
-                "item": "wheat",
-                "temper_mod": 3
-              },
-              {
-                "item": "sugar",
-                "temper_mod": 3
-              },
-              {
-                "item": "apple",
-                "temper_mod": 3
-              },
-              {
-                "item": "carrot",
-                "temper_mod": 3
-              },
-              {
-                "item": "golden_carrot",
-                "temper_mod": 5
-              },
-              {
-                "item": "golden_apple",
-                "temper_mod": 10
-              },
-              {
-                "item": "appleEnchanted",
-                "temper_mod": 10
-              }
-            ],
-            "auto_reject_items": [
-              {
-                "item": "horsearmorleather"
-              },
-              {
-                "item": "horsearmoriron"
-              },
-              {
-                "item": "horsearmorgold"
-              },
-              {
-                "item": "horsearmordiamond"
-              },
-              {
-                "item": "minecraft:copper_horse_armor"
-              },
-              {
-                "item": "minecraft:netherite_horse_armor"
-              },
-              {
-                "item": "saddle"
               }
             ],
             "tame_event": {
@@ -521,134 +340,6 @@
               },
               {
                 "item": "minecraft:netherite_horse_armor"
-              },
-              {
-                "item": "saddle"
-              }
-            ],
-            "tame_event": {
-              "event": "minecraft:on_tame",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_horse.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_wild/minecraft:tamemount/",
-          "content": {
-            "min_temper": 0,
-            "max_temper": 100,
-            "feed_text": "action.interact.feed",
-            "ride_text": "action.interact.mount",
-            "feed_items": [
-              {
-                "item": "red_mushroom",
-                "temper_mod": 10
-              }
-            ],
-            "auto_reject_items": [
-              {
-                "item": "horsearmorleather"
-              },
-              {
-                "item": "horsearmoriron"
-              },
-              {
-                "item": "horsearmorgold"
-              },
-              {
-                "item": "horsearmordiamond"
-              },
-              {
-                "item": "minecraft:copper_horse_armor"
-              },
-              {
-                "item": "minecraft:netherite_horse_armor"
-              },
-              {
-                "item": "saddle"
-              }
-            ],
-            "tame_event": {
-              "event": "minecraft:on_tame",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:tamemount/",
-          "content": {
-            "min_temper": 0,
-            "max_temper": 30,
-            "feed_text": "action.interact.feed",
-            "ride_text": "action.interact.mount",
-            "feed_items": [
-              {
-                "item": "wheat",
-                "temper_mod": 3
-              },
-              {
-                "item": "hay_block",
-                "temper_mod": 6
-              }
-            ],
-            "auto_reject_items": [
-              {
-                "item": "horsearmorleather"
-              },
-              {
-                "item": "horsearmoriron"
-              },
-              {
-                "item": "horsearmorgold"
-              },
-              {
-                "item": "horsearmordiamond"
-              },
-              {
-                "item": "saddle"
-              }
-            ],
-            "tame_event": {
-              "event": "minecraft:on_tame",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:tamemount/",
-          "content": {
-            "min_temper": 0,
-            "max_temper": 30,
-            "feed_text": "action.interact.feed",
-            "ride_text": "action.interact.mount",
-            "feed_items": [
-              {
-                "item": "wheat",
-                "temper_mod": 3
-              },
-              {
-                "item": "hay_block",
-                "temper_mod": 6
-              }
-            ],
-            "auto_reject_items": [
-              {
-                "item": "horsearmorleather"
-              },
-              {
-                "item": "horsearmoriron"
-              },
-              {
-                "item": "horsearmorgold"
-              },
-              {
-                "item": "horsearmordiamond"
               },
               {
                 "item": "saddle"

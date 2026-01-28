@@ -83,23 +83,13 @@
           }
         ],
         "samples": {
-          "/vanilla/behavior_pack/entities/enderman.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:riding/minecraft:environment_sensor/triggers/filters/",
-              "content": "=="
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:not_riding/minecraft:environment_sensor/triggers/filters/",
-              "content": "=="
-            }
-          ],
           "/vanilla/behavior_pack/entities/parrot.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:parrot_not_riding_player/minecraft:entity_sensor/subsensors/0/event_filters/all_of/0/",
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_not_riding_player/minecraft:entity_sensor/subsensors[0]/event_filters/all_of[0]/",
               "content": "equals"
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:parrot_riding_player/minecraft:entity_sensor/subsensors/0/event_filters/all_of/0/",
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_riding_player/minecraft:entity_sensor/subsensors[0]/event_filters/all_of[0]/",
               "content": "equals"
             },
             {
@@ -153,13 +143,13 @@
           }
         ],
         "samples": {
-          "/vanilla/behavior_pack/entities/enderman.json": [
+          "/vanilla/behavior_pack/entities/parrot.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:riding/minecraft:environment_sensor/triggers/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_not_riding_player/minecraft:entity_sensor/subsensors[0]/event_filters/all_of[0]/",
               "content": "self"
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:not_riding/minecraft:environment_sensor/triggers/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_riding_player/minecraft:entity_sensor/subsensors[0]/event_filters/all_of[0]/",
               "content": "self"
             }
           ]
@@ -172,15 +162,13 @@
         "defaultValue": true,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/enderman.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:not_riding/minecraft:environment_sensor/triggers/filters/",
-              "content": true
-            }
-          ],
           "/vanilla/behavior_pack/entities/parrot.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:parrot_not_riding_player/minecraft:entity_sensor/subsensors/0/event_filters/all_of/0/",
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_not_riding_player/minecraft:entity_sensor/subsensors[0]/event_filters/all_of[0]/",
+              "content": true
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:healable/filters/",
               "content": true
             }
           ]
@@ -231,29 +219,9 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/enderman.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:riding/minecraft:environment_sensor/triggers/filters/",
-          "content": {
-            "test": "is_riding",
-            "subject": "self",
-            "operator": "==",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:not_riding/minecraft:environment_sensor/triggers/filters/",
-          "content": {
-            "test": "is_riding",
-            "subject": "self",
-            "operator": "==",
-            "value": true
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/parrot.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:parrot_not_riding_player/minecraft:entity_sensor/subsensors/0/event_filters/all_of/0/",
+          "path": "/minecraft:entity/component_groups/minecraft:parrot_not_riding_player/minecraft:entity_sensor/subsensors[0]/event_filters/all_of[0]/",
           "content": {
             "test": "is_riding",
             "subject": "self",
@@ -262,7 +230,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:parrot_riding_player/minecraft:entity_sensor/subsensors/0/event_filters/all_of/0/",
+          "path": "/minecraft:entity/component_groups/minecraft:parrot_riding_player/minecraft:entity_sensor/subsensors[0]/event_filters/all_of[0]/",
           "content": {
             "test": "is_riding",
             "subject": "self",

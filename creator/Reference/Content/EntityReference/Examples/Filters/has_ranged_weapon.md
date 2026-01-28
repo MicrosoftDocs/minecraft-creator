@@ -68,7 +68,7 @@ At Short (using Defaults)..:
 
 #### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
 
-At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/1/filters/: 
+At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[1]/filters/: 
 
 ```json
 {
@@ -79,7 +79,7 @@ At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environm
 }
 ```
 
-At /minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/0/filters/all_of/1/: 
+At /minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers[0]/filters/all_of[1]/: 
 
 ```json
 {
@@ -92,7 +92,7 @@ At /minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environme
 
 #### [Parched](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parched.json)
 
-At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/1/filters/: 
+At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[1]/filters/: 
 
 ```json
 {
@@ -101,7 +101,7 @@ At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environm
 }
 ```
 
-At /minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/0/filters/all_of/1/: 
+At /minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers[0]/filters/all_of[1]/: 
 
 ```json
 {

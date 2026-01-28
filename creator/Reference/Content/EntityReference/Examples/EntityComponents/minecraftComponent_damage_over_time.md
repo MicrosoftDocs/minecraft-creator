@@ -17,12 +17,12 @@ Applies defined amount of damage to the entity at specified intervals.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| damage_per_hurt | 1 | Integer number | Amount of damage caused each hurt. | Axolotl: `1` | 
+| damage_per_hurt | 1 | Integer number | Amount of damage caused each hurt. | Dolphin: `1` | 
 | time_between_hurt | 0 | Decimal number | Time in seconds between damage. | Vex: `1` | 
 
 ## Samples
 
-#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
+#### [Dolphin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/dolphin.json)
 
 
 ```json

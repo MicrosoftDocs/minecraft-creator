@@ -32,19 +32,6 @@
       "title": "String",
       "dataType": 2
     },
-    "samples": {
-      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/white_sand.block.json": [
-        {
-          "path": "/minecraft:block/components/minecraft:display_name/",
-          "content": "White Sand"
-        }
-      ],
-      "/samples/lucky_block/version_1/behavior_packs/mike_luck/blocks/luckyblock.json": [
-        {
-          "path": "/minecraft:block/components/minecraft:display_name/",
-          "content": "Lucky Block"
-        }
-      ]
-    }
+    "samples": {}
   }
 }

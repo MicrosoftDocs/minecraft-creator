@@ -87,23 +87,3 @@ At Short (using Defaults)..:
   "value": true
 }
 ```
-
-#### [Breeze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze.json)
-
-At /minecraft:entity/components/minecraft:behavior.jump_around_target/filters/all_of/2/: 
-
-```json
-{
-  "test": "in_lava",
-  "value": false
-}
-```
-
-#### [Creaking](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creaking.json)
-
-
-```json
-{
-  "test": "in_lava"
-}
-```

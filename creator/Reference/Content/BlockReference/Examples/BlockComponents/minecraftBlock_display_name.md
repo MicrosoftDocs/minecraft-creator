@@ -18,17 +18,3 @@ This item can also be represented as a `String`.
 
 
 ## Samples
-
-#### [Block White Sand](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/white_sand.block.json)
-
-
-```json
-"minecraft:display_name": "White Sand"
-```
-
-#### [Luckyblock](https://github.com/microsoft/minecraft-samples/tree/main/lucky_block/version_1/behavior_packs/mike_luck/blocks/luckyblock.json)
-
-
-```json
-"minecraft:display_name": "Lucky Block"
-```

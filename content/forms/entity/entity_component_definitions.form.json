@@ -2482,8 +2482,9 @@
       {
         "id": "minecraft:behavior.drop_item_for",
         "title": "Drop Item For Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the entity to move toward a target, and drop an item near the target. This goal requires a \"minecraft:navigation\" to execute.",
+        "dataType": 16,
+        "subFormId": "entity/drop_item_for"
       },
       {
         "id": "minecraft:behavior.eat_block",
@@ -2538,8 +2539,9 @@
       {
         "id": "minecraft:behavior.fertilize_farm_block",
         "title": "Fertilize Farm Block Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to search within an area for a growable crop block. If found, the mob will use any available fertilizer in their inventory on the crop. This goal will not execute if the mob does not have a fertilizer item in its inventory.",
+        "dataType": 16,
+        "subFormId": "entity/fertilize_farm_block"
       },
       {
         "id": "minecraft:behavior.find_cover",
@@ -2647,8 +2649,9 @@
       {
         "id": "minecraft:behavior.harvest_farm_block",
         "title": "Harvest Farm Block Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the entity to search within an area for farmland with air above it. If found, the entity will replace the air block by planting a seed item from its inventory on the farmland block. This goal requires \"minecraft:inventory\" and \"minecraft:navigation\" to execute. This goal will not execute if the entity does not have an item in its inventory.",
+        "dataType": 16,
+        "subFormId": "entity/harvest_farm_block"
       },
       {
         "id": "minecraft:behavior.hide",
@@ -2677,8 +2680,9 @@
       {
         "id": "minecraft:behavior.inspect_bookshelf",
         "title": "Inspect Bookshelf Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to inspect bookshelves.",
+        "dataType": 16,
+        "subFormId": "entity/inspect_bookshelf"
       },
       {
         "id": "minecraft:behavior.investigate_suspicious_location",
@@ -2714,8 +2718,9 @@
       {
         "id": "minecraft:behavior.lay_egg",
         "title": "Lay Egg Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to lay an egg block on certain types of blocks if the mob is pregnant.",
+        "dataType": 16,
+        "subFormId": "entity/lay_egg"
       },
       {
         "id": "minecraft:behavior.leap_at_target",
@@ -2903,8 +2908,9 @@
       {
         "id": "minecraft:behavior.ocelotattack",
         "title": "Ocelotattack Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Controls specific attack behavior for Ocelots.",
+        "dataType": 16,
+        "subFormId": "entity/ocelotattack"
       },
       {
         "id": "minecraft:behavior.offer_flower",
@@ -4368,6 +4374,12 @@
       {
         "id": "minecraft:sensor.find_nearest_entity_from",
         "title": "Find Nearest Entity From Minecraft Sensor",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:sensor.find_nearest_poi",
+        "title": "Find Nearest Poi Minecraft Sensor",
         "description": "Dynamic value",
         "dataType": 16
       },

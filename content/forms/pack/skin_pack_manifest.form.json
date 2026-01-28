@@ -1,0 +1,49 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a skin pack manifest"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "skin_pack_manifest",
+  "title": "Skin Pack Manifest",
+  "description": "The manifest.json file for a Minecraft Bedrock Edition skin pack. Skin packs contain custom player skins that can be applied in-game. The manifest identifies the pack and its contents.",
+  "fields": [
+    {
+      "dataType": 0,
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of this manifest file. Use 1 or 2.",
+      "isRequired": true,
+      "defaultValue": 1
+    },
+    {
+      "dataType": 16,
+      "id": "header",
+      "title": "Header",
+      "description": "The header section containing the pack's identity: name, description, unique UUID, and version.",
+      "isRequired": true,
+      "subFormId": "pack/behavior_pack_rest_of_file"
+    },
+    {
+      "dataType": 17,
+      "id": "modules",
+      "title": "Modules",
+      "description": "Declares modules within the pack. For skin packs, use type 'skin_pack'.",
+      "isRequired": true
+    },
+    {
+      "dataType": 16,
+      "id": "metadata",
+      "title": "Metadata",
+      "description": "Optional metadata about the pack including author names and license."
+    }
+  ]
+}

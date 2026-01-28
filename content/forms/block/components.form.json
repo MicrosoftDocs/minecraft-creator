@@ -333,6 +333,19 @@
                   ]
                 },
                 {
+                  "id": "culling_shape",
+                  "title": "Culling Shape",
+                  "description": "Currently only available with the VoxelShape experiment on. The voxel shape used for culling adjacent block faces. Voxel shapes work together with culling rules and will not function if there is no culling rule defined for the block. Only adjacent blocks with voxel shapes will occlude using this shape. Blocks using \\\"minecraft:geometry.full_block\\\" always use the unit cube shape and will ignore custom shapes if specified. When using the minecraft namespace, the only currently available culling shape identifiers are : \\\"minecraft:empty\\\" or \\\"minecraft:unit_cube\\\". When using no namespaces or a custom one, the names must start and end with an alpha-numeric character.",
+                  "dataType": 2,
+                  "defaultValue": "",
+                  "validity": [
+                    {
+                      "comparison": "pattern",
+                      "value": "^(?:minecraft:empty|minecraft:unit_cube|(?!minecraft:)[a-z0-9].*[a-z0-9])$"
+                    }
+                  ]
+                },
+                {
                   "id": "identifier",
                   "title": "Identifier",
                   "description": "The description identifier of the geometry to use to render this block. This identifier must either match an existing geometry identifier in any of the loaded resource packs or be one of the currently supported Vanilla identifiers: \"minecraft:geometry.full_block\" or \"minecraft:geometry.cross\".",
@@ -402,6 +415,48 @@
         "description": "This defines how a block reacts to being moved by another block like a piston.",
         "dataType": 16,
         "subFormId": "block_components/movable"
+      },
+      {
+        "id": "minecraft:on_fall_on",
+        "title": "Minecraft On Fall On",
+        "dataType": 16,
+        "isDeprecated": true
+      },
+      {
+        "id": "minecraft:on_interact",
+        "title": "Minecraft On Interact",
+        "dataType": 16,
+        "isDeprecated": true
+      },
+      {
+        "id": "minecraft:on_placed",
+        "title": "Minecraft On Placed",
+        "dataType": 16,
+        "isDeprecated": true
+      },
+      {
+        "id": "minecraft:on_player_destroyed",
+        "title": "Minecraft On Player Destroyed",
+        "dataType": 16,
+        "isDeprecated": true
+      },
+      {
+        "id": "minecraft:on_player_placing",
+        "title": "Minecraft On Player Placing",
+        "dataType": 16,
+        "isDeprecated": true
+      },
+      {
+        "id": "minecraft:on_step_off",
+        "title": "Minecraft On Step Off",
+        "dataType": 16,
+        "isDeprecated": true
+      },
+      {
+        "id": "minecraft:on_step_on",
+        "title": "Minecraft On Step On",
+        "dataType": 16,
+        "isDeprecated": true
       },
       {
         "id": "minecraft:placement_filter",

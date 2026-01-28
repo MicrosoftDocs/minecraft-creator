@@ -17,11 +17,11 @@ Allows dyes to be used on this entity to change its color.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| interact_text | *not set* | String | The text that will display when interacting with this entity with a dye when playing with Touch-screen controls. | Cat: `"action.interact.dye"` | 
+| interact_text | *not set* | String | The text that will display when interacting with this entity with a dye when playing with Touch-screen controls. | Sheep: `"action.interact.dye"` | 
 
 ## Samples
 
-#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
+#### [Sheep](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/sheep.json)
 
 
 ```json

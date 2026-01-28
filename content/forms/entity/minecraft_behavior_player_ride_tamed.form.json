@@ -23,90 +23,14 @@
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/camel_husk.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:camel_husk_saddled/minecraft:behavior.player_ride_tamed/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:behavior.player_ride_tamed/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": 0
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/camel.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:camel_saddled/minecraft:behavior.player_ride_tamed/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/camel_husk.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:camel_husk_saddled/minecraft:behavior.player_ride_tamed/",
-          "content": {
-            "priority": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/donkey.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:behavior.player_ride_tamed/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/happy_ghast.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:behavior.player_ride_tamed/",
-          "content": {
-            "priority": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/horse.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_saddled/minecraft:behavior.player_ride_tamed/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/mule.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:mule_saddled/minecraft:behavior.player_ride_tamed/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/nautilus.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled/minecraft:behavior.player_ride_tamed/",
-          "content": {
-            "priority": 0
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/skeleton_horse.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.player_ride_tamed/",
           "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_horse.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_saddled/minecraft:behavior.player_ride_tamed/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled/minecraft:behavior.player_ride_tamed/",
-          "content": {
-            "priority": 0
-          }
         }
       ]
     }

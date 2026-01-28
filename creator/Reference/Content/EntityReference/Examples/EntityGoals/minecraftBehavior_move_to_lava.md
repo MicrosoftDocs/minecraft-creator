@@ -18,6 +18,10 @@ Allows the mob to move back into lava when on land. This behavior has been repla
 > [!Note]
 > This behavior was introduced in 1.16 but replaced by minecraft:behavior.move_to_liquid in 1.16.100 which supports any liquid type.
 
+> [!Note]
+> This item no longer works after format versions of at least 1.16.100.
+
+
 ## Move To Lava Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |

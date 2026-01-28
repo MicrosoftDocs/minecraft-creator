@@ -4,16 +4,17 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server-editor.ListPaneSlotLayout Type Alias
-description: Contents of the @minecraft/server-editor.ListPaneSlotLayout type alias.
+title: minecraft/server-editor.ListPaneSlotConfiguration Type Alias
+description: Contents of the @minecraft/server-editor.ListPaneSlotConfiguration type alias.
 ---
-# ListPaneSlotLayout Type Alias
+# ListPaneSlotConfiguration Type Alias
 
 ## Declaration
-`export declare type ListPaneSlotLayout = {
+`export declare type ListPaneSlotConfiguration = {
     height: number;
     columns?: number;
     clickable?: boolean;
     outline?: boolean;
-    entryLayout: ListPaneSlotLayoutEntry[];
+    variant?: ListPaneSlotVariant;
+    entryLayout: ListPaneSlotLayoutEntry[] | ListPaneSlotLayoutSections;
 };`

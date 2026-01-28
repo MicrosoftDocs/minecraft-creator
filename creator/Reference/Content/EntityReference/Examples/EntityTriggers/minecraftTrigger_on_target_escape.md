@@ -76,34 +76,3 @@ Adds a trigger to call when this entity loses the target it currently has.
   "target": "self"
 }
 ```
-
-#### [Panda](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/panda.json)
-
-
-```json
-"minecraft:on_target_escape": {
-  "event": "minecraft:on_calm",
-  "target": "self"
-}
-```
-
-#### [Pillager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pillager.json)
-
-At /minecraft:entity/component_groups/minecraft:patrol_captain/minecraft:on_target_escape/: 
-
-```json
-"minecraft:on_target_escape": {
-  "event": "minecraft:calm",
-  "target": "self"
-}
-```
-
-#### [Vindicator](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/vindicator.json)
-
-
-```json
-"minecraft:on_target_escape": {
-  "event": "minecraft:stop_aggro",
-  "target": "self"
-}
-```

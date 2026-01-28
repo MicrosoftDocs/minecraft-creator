@@ -1,0 +1,82 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "tick",
+  "title": "Tick Configuration",
+  "description": "The tick.json file specifies which mcfunction files should run every game tick (20 times per second). Located at functions/tick.json in behavior packs. Functions listed here run at origin (0, 0, 0) in the overworld as soon as the world is initialized.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies functions to run every tick"
+          }
+        ]
+      },
+      {
+        "visibility": [
+          {
+            "field": "values",
+            "comparison": "defined"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": " - "
+          },
+          {
+            "type": "value",
+            "field": "values.length"
+          },
+          {
+            "type": "plural",
+            "countField": "values.length",
+            "singular": [
+              {
+                "type": "literal",
+                "text": " function"
+              }
+            ],
+            "plural": [
+              {
+                "type": "literal",
+                "text": " functions"
+              }
+            ],
+            "includeCount": false
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "values",
+      "title": "Values",
+      "description": "An array of function paths to execute every tick. Function paths are relative to the functions folder without the .mcfunction extension (e.g., 'namespace/function_name').",
+      "dataType": 17,
+      "subForm": {
+        "id": "function_path",
+        "fields": [
+          {
+            "id": "value",
+            "title": "Function Path",
+            "description": "Path to a .mcfunction file relative to the functions folder, without file extension.",
+            "dataType": 2
+          }
+        ]
+      },
+      "isRequired": true
+    }
+  ],
+  "note": "Functions in this file run server-side on every game tick. They execute at origin (0, 0, 0) in the overworld and run as soon as the world is initialized, regardless of whether a player has loaded.",
+  "samples": {
+    "sample_behavior_pack/functions/tick.json": [
+      {
+        "path": "values",
+        "content": ["wiki/function_1", "wiki/function_2"]
+      }
+    ]
+  }
+}

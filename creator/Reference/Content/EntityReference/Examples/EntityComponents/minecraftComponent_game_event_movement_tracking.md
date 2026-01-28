@@ -31,13 +31,3 @@ Allows an entity to emit `entityMove`, `swim` and `flap` game events, depending 
   "emit_flap": true
 }
 ```
-
-#### [Vex](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/vex.json)
-
-
-```json
-"minecraft:game_event_movement_tracking": {
-  "emit_move": false,
-  "emit_swim": false
-}
-```

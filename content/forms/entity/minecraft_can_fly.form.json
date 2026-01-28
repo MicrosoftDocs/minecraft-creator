@@ -31,24 +31,6 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/bee.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:can_fly/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/ghast.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:can_fly/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/happy_ghast.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:can_fly/",
-          "content": {}
-        }
-      ],
       "/vanilla/behavior_pack/entities/parrot.json": [
         {
           "path": "/minecraft:entity/components/minecraft:can_fly/",

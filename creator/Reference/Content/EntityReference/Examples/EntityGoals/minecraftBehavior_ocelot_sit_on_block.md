@@ -17,27 +17,7 @@ Allows to mob to be able to sit in place like the ocelot.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Cat: `7`, Ocelot: `6` | 
-| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Cat: `1` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal |  | 
 
 ## Samples
-
-#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
-
-
-```json
-"minecraft:behavior.ocelot_sit_on_block": {
-  "priority": 7,
-  "speed_multiplier": 1
-}
-```
-
-#### [Ocelot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ocelot.json)
-
-
-```json
-"minecraft:behavior.ocelot_sit_on_block": {
-  "priority": 6,
-  "speed_multiplier": 1
-}
-```

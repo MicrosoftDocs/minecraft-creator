@@ -1,0 +1,74 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines a feature rules document structure"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "feature_rules_document",
+  "title": "Feature Rules Document",
+  "description": "A Minecraft Bedrock Edition feature rules definition document. Feature rules control where world generation features (like trees, ores, and structures) are placed in the world based on biome conditions.",
+  "fields": [
+    {
+      "dataType": 25,
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of this feature rules file. Use '1.13.0' or later.",
+      "isRequired": true
+    },
+    {
+      "dataType": 16,
+      "id": "minecraft:feature_rules",
+      "title": "Feature Rules",
+      "description": "The feature rules definition containing description and conditions.",
+      "isRequired": true,
+      "subForm": {
+        "id": "feature_rules_wrapper",
+        "title": "Feature Rules Definition",
+        "fields": [
+          {
+            "id": "description",
+            "title": "Description",
+            "description": "Contains the identifier and the feature to place.",
+            "dataType": 16,
+            "isRequired": true,
+            "subForm": {
+              "id": "feature_rules_description",
+              "title": "Feature Rules Description",
+              "fields": [
+                {
+                  "id": "identifier",
+                  "title": "Identifier",
+                  "description": "The unique identifier for this feature rule.",
+                  "dataType": 1,
+                  "isRequired": true
+                },
+                {
+                  "id": "places_feature",
+                  "title": "Places Feature",
+                  "description": "The identifier of the feature to place.",
+                  "dataType": 1,
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "conditions",
+            "title": "Conditions",
+            "description": "Conditions that control where the feature is placed.",
+            "dataType": 16,
+            "isRequired": true
+          }
+        ]
+      }
+    }
+  ]
+}

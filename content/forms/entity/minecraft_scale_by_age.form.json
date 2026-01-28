@@ -23,42 +23,15 @@
         "title": "End Scale",
         "description": "Ending scale of the entity when it's fully grown.",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/skeleton_horse.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:skeleton_horse_baby/minecraft:scale_by_age/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "start_scale",
         "title": "Start Scale",
         "description": "Initial scale of the newborn entity.",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/skeleton_horse.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:skeleton_horse_baby/minecraft:scale_by_age/",
-              "content": 0.5
-            }
-          ]
-        }
+        "dataType": 3
       }
-    ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:skeleton_horse_baby/minecraft:scale_by_age/",
-          "content": {
-            "start_scale": 0.5,
-            "end_scale": 1
-          }
-        }
-      ]
-    }
+    ]
   }
 }

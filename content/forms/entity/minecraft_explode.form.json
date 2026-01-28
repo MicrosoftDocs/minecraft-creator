@@ -240,13 +240,15 @@
         "defaultValue": false,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/creeper.json": [
+          "/vanilla/behavior_pack/entities/ender_crystal.json": [
+            {
+              "path": "/minecraft:entity/component_groups/crystal_exploding/minecraft:explode/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fireball.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/",
-              "content": true
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:charged_exploding/minecraft:explode/",
               "content": true
             }
           ]
@@ -273,16 +275,6 @@
         "description": "The range for the random amount of time the fuse will be lit before exploding, a negative value means the explosion will be immediate.",
         "dataType": 18,
         "samples": {
-          "/vanilla/behavior_pack/entities/creeper.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/",
-              "content": 1.5
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:charged_exploding/minecraft:explode/",
-              "content": 1.5
-            }
-          ],
           "/vanilla/behavior_pack/entities/tnt_minecart.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:primed_tnt/minecraft:explode/",
@@ -298,13 +290,15 @@
         "defaultValue": false,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/creeper.json": [
+          "/vanilla/behavior_pack/entities/ender_crystal.json": [
+            {
+              "path": "/minecraft:entity/component_groups/crystal_exploding/minecraft:explode/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fireball.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/",
-              "content": true
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:charged_exploding/minecraft:explode/",
               "content": true
             }
           ]
@@ -336,15 +330,7 @@
         "title": "Max Resistance",
         "description": "A blocks explosion resistance will be capped at this value when an explosion occurs.",
         "defaultValue": 3.40282e+38,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/wither_skull_dangerous.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/",
-              "content": 4
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "negates_fall_damage",
@@ -395,17 +381,9 @@
               "content": 3
             }
           ],
-          "/vanilla/behavior_pack/entities/creeper.json": [
+          "/vanilla/behavior_pack/entities/ender_crystal.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/",
-              "content": 3
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:charged_exploding/minecraft:explode/",
-              "content": 6
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:forced_charged_exploding/minecraft:explode/",
+              "path": "/minecraft:entity/component_groups/crystal_exploding/minecraft:explode/",
               "content": 6
             }
           ],
@@ -415,16 +393,16 @@
               "content": 1
             }
           ],
+          "/vanilla/behavior_pack/entities/tnt_minecart.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:primed_tnt/minecraft:explode/",
+              "content": 3
+            }
+          ],
           "/vanilla/behavior_pack/entities/wind_charge_projectile.json": [
             {
               "path": "/minecraft:entity/components/minecraft:explode/",
               "content": 1.2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/wither_skull.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/",
-              "content": 1
             }
           ]
         }
@@ -446,16 +424,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:explode/",
               "content": "wind_charge.burst"
-            }
-          ],
-          "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/",
-              "content": "scary"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:charged_exploding/minecraft:explode/",
-              "content": "scary"
             }
           ]
         }
@@ -516,16 +484,6 @@
                 ]
               }
             }
-          ],
-          "/vanilla/behavior_pack/entities/wither_skull.json": [
-            {
-              "path": "/minecraft:entity/events/minecraft:explode/",
-              "content": {
-                "component_groups": [
-                  "minecraft:exploding"
-                ]
-              }
-            }
           ]
         }
       }
@@ -546,48 +504,6 @@
             "toggles_blocks": true,
             "damage_scaling": 0,
             "max_resistance": 0
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/creeper.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/",
-          "content": {
-            "fuse_length": 1.5,
-            "fuse_lit": true,
-            "power": 3,
-            "causes_fire": false,
-            "destroy_affected_by_griefing": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:charged_exploding/minecraft:explode/",
-          "content": {
-            "fuse_length": 1.5,
-            "fuse_lit": true,
-            "power": 6,
-            "causes_fire": false,
-            "destroy_affected_by_griefing": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:forced_exploding/minecraft:explode/",
-          "content": {
-            "fuse_length": 1.5,
-            "fuse_lit": true,
-            "power": 3,
-            "causes_fire": false,
-            "destroy_affected_by_griefing": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:forced_charged_exploding/minecraft:explode/",
-          "content": {
-            "fuse_length": 1.5,
-            "fuse_lit": true,
-            "power": 6,
-            "causes_fire": false,
-            "destroy_affected_by_griefing": true
           }
         }
       ],
@@ -661,97 +577,6 @@
             "toggles_blocks": true,
             "damage_scaling": 0,
             "max_resistance": 0
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wither_skull.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/",
-          "content": {
-            "fuse_length": 0,
-            "fuse_lit": true,
-            "power": 1,
-            "causes_fire": false,
-            "destroy_affected_by_griefing": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:explode/",
-          "content": {
-            "add": {
-              "component_groups": [
-                "minecraft:exploding"
-              ]
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wither_skull_dangerous.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/",
-          "content": {
-            "fuse_length": 0,
-            "fuse_lit": true,
-            "power": 1,
-            "causes_fire": false,
-            "max_resistance": 4,
-            "destroy_affected_by_griefing": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:explode/",
-          "content": {
-            "add": {
-              "component_groups": [
-                "minecraft:exploding"
-              ]
-            }
-          }
-        }
-      ],
-      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/",
-          "content": {
-            "fuse_length": 1.5,
-            "fuse_lit": true,
-            "power": 3,
-            "causes_fire": false,
-            "destroy_affected_by_griefing": true,
-            "sound_effect": "scary"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:charged_exploding/minecraft:explode/",
-          "content": {
-            "fuse_length": 1.5,
-            "fuse_lit": true,
-            "power": 6,
-            "causes_fire": false,
-            "destroy_affected_by_griefing": true,
-            "sound_effect": "scary"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:forced_exploding/minecraft:explode/",
-          "content": {
-            "fuse_length": 1.5,
-            "fuse_lit": true,
-            "power": 3,
-            "causes_fire": false,
-            "destroy_affected_by_griefing": true,
-            "sound_effect": "scary"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:forced_charged_exploding/minecraft:explode/",
-          "content": {
-            "fuse_length": 1.5,
-            "fuse_lit": true,
-            "power": 6,
-            "causes_fire": false,
-            "destroy_affected_by_griefing": true,
-            "sound_effect": "scary"
           }
         }
       ]

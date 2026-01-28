@@ -17,11 +17,11 @@ Tests for the presence of a named item in the designated slot of the subject ent
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| domain | any | [Domain](#domain-choices) choices | (Optional) The equipment location to test | Enderman: `"head"`, Pig: `"hand"` | 
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Enderman: `"not"` | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Enderman: `"other"` | 
-| test | *not set* | String |  | Enderman: `"has_equipment"` | 
-| value | *not set* | String | (Required) The item name to look for | Enderman: `"carved_pumpkin"`, Pig: `"saddle"`, `"shears"` | 
+| domain | any | [Domain](#domain-choices) choices | (Optional) The equipment location to test | Pig: `"hand"` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Pig: `"other"` | 
+| test | *not set* | String |  | Pig: `"has_equipment"` | 
+| value | *not set* | String | (Required) The item name to look for | Pig: `"saddle"`, `"shears"` | 
 
 ### Domain choices
 
@@ -79,22 +79,9 @@ At Short (using Defaults)..:
 { "test": "has_equipment", "value": "dirt" }
 ```
 
-#### [Enderman](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/enderman.json)
-
-
-```json
-{
-  "test": "has_equipment",
-  "domain": "head",
-  "subject": "other",
-  "operator": "not",
-  "value": "carved_pumpkin"
-}
-```
-
 #### [Pig](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pig.json)
 
-At /minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:interact/interactions/0/on_interact/filters/: 
+At /minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:interact/interactions[0]/on_interact/filters/: 
 
 ```json
 {
@@ -105,7 +92,7 @@ At /minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:interact
 }
 ```
 
-At /minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:interact/interactions/0/on_interact/filters/all_of/1/: 
+At /minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:interact/interactions[0]/on_interact/filters/all_of[1]/: 
 
 ```json
 {

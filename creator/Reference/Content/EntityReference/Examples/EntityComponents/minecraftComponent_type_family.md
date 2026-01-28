@@ -17,7 +17,7 @@ Defines the family categories this entity belongs to. Type families are used by 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| family | *not set* | [Family](#family-choices) choices | A set of tags that describe the categories of this entity. In addition to typically having a tag for the type of mob, entities frequently have additional type family tags that modify how the rest of the Minecraft world reacts to them. | Allay: `["allay","mob"]`, Armadillo: `["armadillo","mob"]`, Armor Stand: `["armor_stand","inanimate","mob"]` | 
+| family | *not set* | [Family](#family-choices) choices | A set of tags that describe the categories of this entity. In addition to typically having a tag for the type of mob, entities frequently have additional type family tags that modify how the rest of the Minecraft world reacts to them. | Allay: `["allay","mob"]`, Armor Stand: `["armor_stand","inanimate","mob"]`, Bat: `["bat","mob"]` | 
 
 ### Family choices
 
@@ -49,18 +49,6 @@ Defines the family categories this entity belongs to. Type families are used by 
 }
 ```
 
-#### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
-
-
-```json
-"minecraft:type_family": {
-  "family": [
-    "armadillo",
-    "mob"
-  ]
-}
-```
-
 #### [Armor Stand](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armor_stand.json)
 
 
@@ -69,19 +57,6 @@ Defines the family categories this entity belongs to. Type families are used by 
   "family": [
     "armor_stand",
     "inanimate",
-    "mob"
-  ]
-}
-```
-
-#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
-
-
-```json
-"minecraft:type_family": {
-  "family": [
-    "aquatic",
-    "axolotl",
     "mob"
   ]
 }
@@ -120,71 +95,6 @@ Defines the family categories this entity belongs to. Type families are used by 
   "family": [
     "boat",
     "inanimate"
-  ]
-}
-```
-
-#### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
-
-
-```json
-"minecraft:type_family": {
-  "family": [
-    "bogged",
-    "skeleton",
-    "monster",
-    "mob",
-    "undead"
-  ]
-}
-```
-
-#### [Breeze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze.json)
-
-
-```json
-"minecraft:type_family": {
-  "family": [
-    "breeze",
-    "monster",
-    "mob"
-  ]
-}
-```
-
-#### [Breeze Wind Charge Projectile](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze_wind_charge_projectile.json)
-
-
-```json
-"minecraft:type_family": {
-  "family": [
-    "wind_charge",
-    "wind_charge_projectile"
-  ]
-}
-```
-
-#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
-
-
-```json
-"minecraft:type_family": {
-  "family": [
-    "camel",
-    "mob"
-  ]
-}
-```
-
-#### [Camel Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel_husk.json)
-
-
-```json
-"minecraft:type_family": {
-  "family": [
-    "camel_husk",
-    "mob",
-    "undead"
   ]
 }
 ```

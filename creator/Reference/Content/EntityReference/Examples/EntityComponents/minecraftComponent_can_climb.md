@@ -15,7 +15,7 @@ Allows an entity to climb ladders.
 
 ## Samples
 
-#### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
+#### [Blaze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/blaze.json)
 
 
 ```json

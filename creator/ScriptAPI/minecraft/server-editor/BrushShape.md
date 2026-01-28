@@ -39,8 +39,11 @@ Type: *string*
 ## Methods
 - [constructor](#(constructor))
 - [applySetting](#applysetting)
+- [calculateBounds](#calculatebounds)
 - [createSettingsPane](#createsettingspane)
 - [createShape](#createshape)
+- [createShapeAsync](#createshapeasync)
+- [estimateBlockCount](#estimateblockcount)
 - [getSettings](#getsettings)
 
 ### **constructor**
@@ -67,6 +70,15 @@ applySetting(brushSettings: BrushShapeSettings): void
 
 **Returns** *void*
 
+### **calculateBounds**
+`
+calculateBounds(): minecraftserver.BlockBoundingBox
+`
+
+Calculates the bounding box of the shape in local coordinates. Used for region allocation before shape placement.
+
+**Returns** *minecraftserver.BlockBoundingBox* - Object with min and max Vector3 bounds
+
 ### **createSettingsPane**
 `
 createSettingsPane(parentPane: IPropertyPane, onSettingsChange?: () => void): ISubPanePropertyItem | undefined
@@ -84,6 +96,36 @@ createShape(): RelativeVolumeListBlockVolume
 `
 
 **Returns** *RelativeVolumeListBlockVolume*
+
+### **createShapeAsync**
+`
+createShapeAsync(cancelToken?: {
+        cancelled: boolean;
+    }, yieldInterval?: number): Promise<RelativeVolumeListBlockVolume>
+`
+
+Asynchronously creates the shape, yielding control periodically to avoid timeouts. Use this for large shapes where createShape() may timeout.
+
+#### **Parameters**
+- **cancelToken**?: *{
+        cancelled: boolean;
+    }*
+  
+  Optional token to cancel the operation. Set cancelled to true to abort.
+- **yieldInterval**?: *number*
+  
+  Number of blocks to process before yielding. Default is 10000.
+
+**Returns** *Promise<RelativeVolumeListBlockVolume>* - Promise that resolves to the shape positions as Vector3 array.
+
+### **estimateBlockCount**
+`
+estimateBlockCount(): number
+`
+
+Returns a mathematical estimate of the number of blocks in the shape. Used for UI display and validation before shape creation.
+
+**Returns** *number* - Estimated block count
 
 ### **getSettings**
 `

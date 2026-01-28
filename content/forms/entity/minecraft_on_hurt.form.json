@@ -35,16 +35,6 @@
               "path": "/minecraft:entity/components/minecraft:on_hurt/",
               "content": "minecraft:crystal_explode"
             }
-          ],
-          "/vanilla/behavior_pack/entities/pillager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:illager_squad_captain/minecraft:on_hurt/",
-              "content": "minecraft:ranged_mode"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:patrol_captain/minecraft:on_hurt/",
-              "content": "minecraft:ranged_mode"
-            }
           ]
         }
       },
@@ -91,29 +81,6 @@
           "path": "/minecraft:entity/components/minecraft:on_hurt/",
           "content": {
             "event": "minecraft:crystal_explode",
-            "target": "self"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/pillager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:illager_squad_captain/minecraft:on_hurt/",
-          "content": {
-            "event": "minecraft:ranged_mode",
-            "target": "self"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:patrol_captain/minecraft:on_hurt/",
-          "content": {
-            "event": "minecraft:ranged_mode",
-            "target": "self"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:patrol_follower/minecraft:on_hurt/",
-          "content": {
-            "event": "minecraft:ranged_mode",
             "target": "self"
           }
         }

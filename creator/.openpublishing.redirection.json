@@ -413,6 +413,11 @@
       "source_path": "Reference/Content/BlockReference/Examples/BlockTraits.md",
       "redirect_url": "/minecraft/creator/documents/intro-block-traits",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/ParticlesReference/Examples/Materials.md",
+      "redirect_url": "/minecraft/creator/documents/material-files",
+      "redirect_document_id": false
     }
   ]
 }

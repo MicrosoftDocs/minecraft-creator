@@ -4,7 +4,7 @@ ms.author: mikeam
 title: Developer Tools for Minecraft
 description: "Using tools for enhanced editing, debugging, and profiling of JavaScript within Visual Studio Code"
 ms.service: minecraft-bedrock-edition
-ms.date: 07/11/2025
+ms.date: 12/09/2025
 ---
 
 # Developer Tools for Minecraft
@@ -68,31 +68,13 @@ To use debugger capabilities, you'll want to install the Minecraft Bedrock Editi
 > [!div class="nextstepaction"]
 > [Minecraft Bedrock Edition Debugger](https://aka.ms/vscodescriptdebugger)
 
-#### Step 2: Ensure that the Minecraft Bedrock Edition client can make "loopback" requests
+#### Step 2: Open Visual Studio Code within your development_behavior_packs folder
 
-If you want to connect Minecraft Bedrock Edition client to Visual Studio Code running on the same machine (this is the most common scenario), you will need to exempt the Minecraft client from UWP loopback restrictions. To do this, run the following from a command prompt or the Start | Run app.
-
-Minecraft Bedrock Edition:
-
-```powershell
-CheckNetIsolation.exe LoopbackExempt -a -p=S-1-15-2-1958404141-86561845-1752920682-3514627264-368642714-62675701-733520436
-```
-
-Minecraft Bedrock Edition Preview:
-
-```powershell
-CheckNetIsolation.exe LoopbackExempt -a -p=S-1-15-2-424268864-5579737-879501358-346833251-474568803-887069379-4040235476
-```
-
-![checknetisolation command being run](media/tools/commandprompt.png)
-
-#### Step 3: Open Visual Studio Code within your development_behavior_packs folder
-
-In order for the debugger to know where to find your source JavaScript or TypeScript files, you'll need to specifically open up a window of Visual Studio Code relative to the behavior pack where your JavaScript or TypeScript source files are. This may be inside of Minecraft's development behavior packs folder (e.g., `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\development_behavior_packs`) - or you may have your source code located in a separate folder (e.g., `c:\projects\myaddon`).
+In order for the debugger to know where to find your source JavaScript or TypeScript files, you'll need to specifically open up a window of Visual Studio Code relative to the behavior pack where your JavaScript or TypeScript source files are. This may be inside of Minecraft's development behavior packs folder (e.g., `%APPDATA%\Minecraft Bedrock\users\shared\games\com.mojang\development_behavior_packs` for GDK builds), or you may have your source code located in a separate folder (e.g., `c:\projects\myaddon`). (See [GDK Migration on Windows](./../GDKPCProjectFolder.md) for more details on folder locations, including pre-GDK builds.)
 
 Open up a Visual Studio Code window pointed at the folder with your add-on script source.
 
-#### Step 4: Prepare Visual Studio Code for a connection
+#### Step 3: Prepare Visual Studio Code for a connection
 
 To debug with Minecraft Bedrock Edition, you'll need to connect from Minecraft and into Visual Studio Code. This set of steps assumes you are debugging on the same Windows machine that you are running Minecraft from, but you can also debug across machines and across clients if you want to. If you are debugging across devices, you may need to open up a port within your firewall on the machine that you are running Visual Studio Code within.
 
@@ -244,11 +226,11 @@ This will create a **.cpuprofile** file with a timestamp within your Minecraft l
 
 ![Results after saving a new profile](media/tools/profilerstop.png)
 
-If you are using the retail version of Minecraft, the log folder is located at:
+For GDK builds of Minecraft (version 1.21.120+), the log folder is located at:
 
-`%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\logs\`
+`%APPDATA%\Minecraft Bedrock\logs\`
 
-If you are using Minecraft Preview, see [this article](./../GDKPCProjectFolder.md) for more information on folders to use for Minecraft Preview.
+For Minecraft Preview or legacy UWP builds, see [GDK Migration on Windows](./../GDKPCProjectFolder.md) for folder locations.
 
 To view a CPUProfile, simply open it within Visual Studio Code. The first time you open a CPUProfile file, your operating system will ask you how you wish to open the file. Select Open in [Visual Studio Code](https://code.visualstudio.com):
 
@@ -335,6 +317,61 @@ try {
 
 For more details, consult the [`diagnostics` reference page](../../ScriptAPI/minecraft/diagnostics/minecraft-diagnostics.md).
 
+## Troubleshooting common issues
+
+### Debugger won't connect
+
+If running `/script debugger connect` gives "Failed to connect" or times out, check the following:
+
+1. Verify VS Code is in "listening" mode (you should see "Waiting for debugger to connect..." in the Debug Console)
+2. Ensure you ran the loopback exemption command as the administrator.
+3. Check that port 19144 isn't blocked by firewall or antivirus software.
+4. Verify **launch.json** has the correct port number.
+5. Try restarting both Minecraft and VS Code.
+
+### Breakpoints not triggering
+
+If you've set breakpoints but they don't seem to be doing anything, check the following:
+
+1. If you're using TypeScript, verify `sourceMapRoot` and `generatedSourceRoot` paths in **launch.json** are correct.
+2. Ensure you're setting breakpoints in the source file, not the compiled output.
+3. Add a `console.warn()` debugging statement to verify the code path is actually being run.
+4. If you have multiple behavior packs with scripts, specify a `targetModuleUuid` in **launch.json**.
+5. **Reload needed**: Run `/reload` after connecting the debugger if scripts were already running
+
+### Profiler not generating output
+
+If `/script profiler stop` doesn't create a **.cpuprofile** file, check the following:
+
+1. Ensure you have write permissions to the logs folder.
+2. Wait a few seconds after stopping before looking for the file.
+3. Check both the logs folder and the root of your Minecraft data folder.
+4. Verify there's a script actually running (profiles are empty without script activity).
+
+### Console messages not generating output
+
+If your `console.warn()` calls aren't showing up anywhere, try the following:
+
+1. Enable **Content Log File** in Settings > Creator.
+2. Enable **Content Log GUI** to see messages in-game.
+3. Check the log file in the logs folder (not just **content_log.txt**).
+4. Ensure your script is actually loading (check for errors at the top of the log).
+
+### Type definitions not working
+
+If Visual Studio Code doesn't show autocomplete for Minecraft APIs, make sure that `@minecraft/server` is installed in your project's **node_modules** directory. If it isn't, run `npm_install` in your project folder, and restart Code's TypeScript server. If there are still problems, check that `@minecraft/server` is listed as a package dependency.
+
+### Script changes not taking effect
+
+If it doesn't look like your script changes are being reflected in the world, check the following:
+
+1. Run `/reload` to reload scripts without leaving the world.
+2. Exit and re-enter the world for manifest changes.
+3. Clear **development\_behavior\_packs** and redeploy for stubborn issues.
+4. Verify your build process completed successfully (check for TypeScript errors).
+
 ## Summary
 
 That's it! Between updated code helpers as you add lines of JavaScript or TypeScript, the extensive debugging and profiling capabilities within Visual Studio Code, and the visual debugging and diagnostics tools, we hope you'll be able to build, debug, and optimize complex creations in Minecraft: Bedrock Edition much more quickly.
+
+For more debugging strategies and common error patterns, see [Debugging Scripts in Minecraft](./debugging-scripts.md).

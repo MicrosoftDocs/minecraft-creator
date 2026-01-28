@@ -65,7 +65,7 @@ At Short (using Defaults)..:
 
 #### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
 
-At /minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers/0/filters/all_of/0/: 
+At /minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers[0]/filters/all_of[0]/: 
 
 ```json
 {
@@ -75,7 +75,7 @@ At /minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:envir
 }
 ```
 
-At /minecraft:entity/component_groups/minecraft:fox_day/minecraft:environment_sensor/triggers/0/filters/: 
+At /minecraft:entity/component_groups/minecraft:fox_day/minecraft:environment_sensor/triggers[0]/filters/: 
 
 ```json
 {
@@ -84,7 +84,7 @@ At /minecraft:entity/component_groups/minecraft:fox_day/minecraft:environment_se
 }
 ```
 
-At /minecraft:entity/component_groups/minecraft:fox_day/minecraft:behavior.nap/can_nap_filters/all_of/3/: 
+At /minecraft:entity/component_groups/minecraft:fox_day/minecraft:behavior.nap/can_nap_filters/all_of[3]/: 
 
 ```json
 {

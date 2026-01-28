@@ -53,7 +53,7 @@
     },
     "resource": [
       {
-        "files": ["**/*.png", "**/*.gif", "**/*.jpg", "**/*.pdf"],
+        "files": ["**/*.png", "**/*.gif", "**/*.jpg", "**/*.pdf", "**/*.svg"],
         "exclude": [
           "**/obj/**",
           "**/server-net/**",

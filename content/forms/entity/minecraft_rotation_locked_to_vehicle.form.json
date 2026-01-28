@@ -26,19 +26,7 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/husk.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:rotation_locked_to_vehicle/",
-          "content": {}
-        }
-      ],
       "/vanilla/behavior_pack/entities/skeleton.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:rotation_locked_to_vehicle/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
         {
           "path": "/minecraft:entity/components/minecraft:rotation_locked_to_vehicle/",
           "content": {}

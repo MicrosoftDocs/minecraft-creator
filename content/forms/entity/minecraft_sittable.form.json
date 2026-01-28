@@ -32,33 +32,9 @@
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/cat.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:cat_tame/minecraft:sittable/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/ocelot.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:ocelot_tame/minecraft:sittable/",
-          "content": {}
-        }
-      ],
       "/vanilla/behavior_pack/entities/parrot.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:sittable/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wolf.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_tame/minecraft:sittable/",
-          "content": {}
-        }
-      ],
-      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
-        {
-          "path": "/minecraft:entity/component_groups/mike_eliz:eliza_tame/minecraft:sittable/",
           "content": {}
         }
       ]

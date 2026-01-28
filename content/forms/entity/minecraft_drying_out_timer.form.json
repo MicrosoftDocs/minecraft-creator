@@ -24,14 +24,6 @@
         "description": "Event to fire when the drying out time runs out.",
         "dataType": 22,
         "samples": {
-          "/vanilla/behavior_pack/entities/axolotl.json": [
-            {
-              "path": "/minecraft:entity/component_groups/axolotl_on_land/minecraft:drying_out_timer/",
-              "content": {
-                "event": "dried_out"
-              }
-            }
-          ],
           "/vanilla/behavior_pack/entities/dolphin.json": [
             {
               "path": "/minecraft:entity/component_groups/dolphin_on_land/minecraft:drying_out_timer/",
@@ -48,14 +40,6 @@
         "description": "Event to fire when entity was already dried out but received increase in water supply.",
         "dataType": 22,
         "samples": {
-          "/vanilla/behavior_pack/entities/axolotl.json": [
-            {
-              "path": "/minecraft:entity/component_groups/axolotl_on_land/minecraft:drying_out_timer/",
-              "content": {
-                "event": "recover_after_dried_out"
-              }
-            }
-          ],
           "/vanilla/behavior_pack/entities/dolphin.json": [
             {
               "path": "/minecraft:entity/component_groups/dolphin_on_land/minecraft:drying_out_timer/",
@@ -72,14 +56,6 @@
         "description": "Event to fire when entity stopped drying out, for example got into water or under rain.",
         "dataType": 22,
         "samples": {
-          "/vanilla/behavior_pack/entities/axolotl.json": [
-            {
-              "path": "/minecraft:entity/component_groups/axolotl_on_land/minecraft:drying_out_timer/",
-              "content": {
-                "event": "stop_drying_out"
-              }
-            }
-          ],
           "/vanilla/behavior_pack/entities/dolphin.json": [
             {
               "path": "/minecraft:entity/component_groups/dolphin_on_land/minecraft:drying_out_timer/",
@@ -97,12 +73,6 @@
         "defaultValue": 0,
         "dataType": 3,
         "samples": {
-          "/vanilla/behavior_pack/entities/axolotl.json": [
-            {
-              "path": "/minecraft:entity/component_groups/axolotl_on_land/minecraft:drying_out_timer/",
-              "content": 300
-            }
-          ],
           "/vanilla/behavior_pack/entities/dolphin.json": [
             {
               "path": "/minecraft:entity/component_groups/dolphin_on_land/minecraft:drying_out_timer/",
@@ -116,36 +86,10 @@
         "title": "Water Bottle Refill Time",
         "description": "Optional amount of additional time in seconds given by using splash water bottle on entity.",
         "defaultValue": 0,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/axolotl.json": [
-            {
-              "path": "/minecraft:entity/component_groups/axolotl_on_land/minecraft:drying_out_timer/",
-              "content": 90
-            }
-          ]
-        }
+        "dataType": 3
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/axolotl.json": [
-        {
-          "path": "/minecraft:entity/component_groups/axolotl_on_land/minecraft:drying_out_timer/",
-          "content": {
-            "total_time": 300,
-            "water_bottle_refill_time": 90,
-            "dried_out_event": {
-              "event": "dried_out"
-            },
-            "stopped_drying_out_event": {
-              "event": "stop_drying_out"
-            },
-            "recover_after_dried_out_event": {
-              "event": "recover_after_dried_out"
-            }
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/dolphin.json": [
         {
           "path": "/minecraft:entity/component_groups/dolphin_on_land/minecraft:drying_out_timer/",

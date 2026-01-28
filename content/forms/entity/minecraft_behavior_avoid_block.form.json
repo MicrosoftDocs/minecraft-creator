@@ -36,12 +36,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
               "content": "retreat"
             }
-          ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": "retreat"
-            }
           ]
         }
       },
@@ -76,12 +70,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
               "content": 4
             }
-          ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": 4
-            }
           ]
         }
       },
@@ -97,12 +85,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
               "content": 8
             }
-          ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": 8
-            }
           ]
         }
       },
@@ -113,15 +95,6 @@
         "dataType": 18,
         "samples": {
           "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": {
-                "range_min": 2,
-                "range_max": 5
-              }
-            }
-          ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
               "content": {
@@ -144,12 +117,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
               "content": 1
             }
-          ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": 1.1
-            }
           ]
         }
       },
@@ -168,17 +135,6 @@
                 "minecraft:respawn_anchor"
               ]
             }
-          ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": [
-                "minecraft:soul_fire",
-                "minecraft:soul_lantern",
-                "minecraft:soul_torch",
-                "minecraft:item.soul_campfire"
-              ]
-            }
           ]
         }
       },
@@ -194,12 +150,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
               "content": "nearest"
             }
-          ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": "nearest"
-            }
           ]
         }
       },
@@ -211,12 +161,6 @@
         "dataType": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": 5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
               "content": 5
@@ -251,12 +195,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
               "content": 1
             }
-          ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": 9
-            }
           ]
         }
       }
@@ -274,8 +212,8 @@
             "sprint_speed_modifier": 1,
             "avoid_block_sound": "retreat",
             "sound_interval": {
-              "range_min": 2,
-              "range_max": 5
+              "min": 2,
+              "max": 5
             },
             "target_selection_method": "nearest",
             "target_blocks": [
@@ -289,30 +227,6 @@
                 "target": "self"
               }
             ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/piglin.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-          "content": {
-            "priority": 9,
-            "tick_interval": 5,
-            "search_range": 8,
-            "search_height": 4,
-            "sprint_speed_modifier": 1.1,
-            "target_selection_method": "nearest",
-            "target_blocks": [
-              "minecraft:soul_fire",
-              "minecraft:soul_lantern",
-              "minecraft:soul_torch",
-              "minecraft:item.soul_campfire"
-            ],
-            "avoid_block_sound": "retreat",
-            "sound_interval": {
-              "min": 2,
-              "max": 5
-            }
           }
         }
       ]

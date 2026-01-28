@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines an animation document structure"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "animation_document",
+  "title": "Animation Document",
+  "description": "A Minecraft Bedrock Edition animation definition document. Animations define bone transformations (position, rotation, scale) over time for entities. They can be used in both behavior packs (for server-side animations) and resource packs (for client-side visual animations).",
+  "fields": [
+    {
+      "dataType": 25,
+      "id": "format_version",
+      "title": "Format Version",
+      "description": "The format version of this animation file. Use '1.8.0' or later.",
+      "isRequired": true
+    },
+    {
+      "dataType": 16,
+      "id": "animations",
+      "title": "Animations",
+      "description": "A dictionary of animation definitions. Keys are animation identifiers like 'animation.entity.anim_name', values are animation objects with loop, animation_length, timeline, and bones properties.",
+      "isRequired": true
+    }
+  ]
+}

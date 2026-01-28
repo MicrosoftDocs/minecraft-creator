@@ -17,19 +17,18 @@ Allows a mob to be tempted by a player holding a specific item. Uses pathfinding
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| can_get_scared | false | Boolean true/false | If true, the mob can stop being tempted if the player moves too fast while close to this mob. | Cat: `true` | 
-| can_tempt_vertically | false | Boolean true/false | If true, vertical distance to the player will be considered when tempting. | Armadillo: `true` | 
-| can_tempt_while_ridden | false | Boolean true/false | If true, the mob can be tempted even if it has a passenger (i.e. if being ridden). | Strider: `true` | 
-| items | [] | Array of strings | List of items that can tempt the mob. | Armadillo: `["spider_eye"]`, Axolotl: `["tropical_fish_bucket"]`, Bee: `["minecraft:poppy","minecraft:blue_orchid","minecraft:allium","minecraft:azure_bluet","minecraft:red_tulip","minecraft:orange_tulip","minecraft:white_tulip","minecraft:pink_tulip","minecraft:oxeye_daisy","minecraft:cornflower","minecraft:lily_of_the_valley","minecraft:dandelion","minecraft:wither_rose","minecraft:sunflower","minecraft:lilac","minecraft:rose_bush","minecraft:peony","minecraft:flowering_azalea","minecraft:azalea_leaves_flowered","minecraft:mangrove_propagule","minecraft:pitcher_plant","minecraft:torchflower","minecraft:cherry_leaves","minecraft:pink_petals","minecraft:open_eyeblossom","minecraft:wildflowers","minecraft:cactus_flower"]` | 
-| on_tempt_end | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  | Happy Ghast: `{"event":"minecraft:on_stop_tempting"}` | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Armadillo: `3`, Axolotl: `2`, Bee: `5` | 
-| sound_interval | *not set* | Integer number | Range of random ticks to wait between tempt sounds. Can be a number, an array [min, max], or an object with range_min/range_max or min/max. | Cat: `[0,100]`, Strider: `{"range_min":2,"range_max":5}` | 
+| can_get_scared | false | Boolean true/false | If true, the mob can stop being tempted if the player moves too fast while close to this mob. | Fox: `true` | 
+| can_tempt_vertically | false | Boolean true/false | If true, vertical distance to the player will be considered when tempting. | Frog: `true` | 
+| can_tempt_while_ridden | false | Boolean true/false | If true, the mob can be tempted even if it has a passenger (i.e. if being ridden). |  | 
+| items | [] | Array of strings | List of items that can tempt the mob. | Chicken: `["wheat_seeds","beetroot_seeds","melon_seeds","pumpkin_seeds","pitcher_pod","torchflower_seeds"]`, Cow: `["wheat"]`, Fox: `["sweet_berries","glow_berries"]` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Chicken: `4`, Fox: `3`, Frog: `5` | 
+| sound_interval | *not set* | Integer number | Range of random ticks to wait between tempt sounds. Can be a number, an array [min, max], or an object with range_min/range_max or min/max. |  | 
 | sound_interval (Alternate 1) | *not set* | Array of [Sound Interval](#sound-interval) items |  |  | 
 | sound_interval (Alternate 2) | *not set* | [Sound Interval](#sound-interval) item |  |  | 
-| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Armadillo: `1.25`, Axolotl: `1.1`, Camel: `2.5` | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Chicken: `1`, Cow: `1.25`, Fox: `0.5` | 
 | stop_distance | 1.5 | Decimal number | The distance at which the mob will stop following the player. |  | 
-| tempt_sound | *not set* | String | Sound to play while the mob is being tempted. | Cat: `"tempt"` | 
-| within_radius | 0 | Decimal number | Distance in blocks this mob can get tempted by a player holding an item they like. | Bee: `8`, Cat: `16`, Robot: `7` | 
+| tempt_sound | *not set* | String | Sound to play while the mob is being tempted. |  | 
+| within_radius | 0 | Decimal number | Distance in blocks this mob can get tempted by a player holding an item they like. | Fox: `16` | 
 
 ## Sound Interval
 
@@ -41,139 +40,6 @@ Allows a mob to be tempted by a player holding a specific item. Uses pathfinding
 | 1 | *not set* | Integer number |  |  | 
 
 ## Samples
-
-#### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
-
-
-```json
-"minecraft:behavior.tempt": {
-  "priority": 3,
-  "speed_multiplier": 1.25,
-  "can_tempt_vertically": true,
-  "items": [
-    "spider_eye"
-  ]
-}
-```
-
-#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
-
-
-```json
-"minecraft:behavior.tempt": {
-  "priority": 2,
-  "speed_multiplier": 1.1,
-  "can_tempt_vertically": true,
-  "items": [
-    "tropical_fish_bucket"
-  ]
-}
-```
-
-#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
-
-
-```json
-"minecraft:behavior.tempt": {
-  "priority": 5,
-  "speed_multiplier": 1.25,
-  "within_radius": 8,
-  "can_tempt_vertically": true,
-  "items": [
-    "minecraft:poppy",
-    "minecraft:blue_orchid",
-    "minecraft:allium",
-    "minecraft:azure_bluet",
-    "minecraft:red_tulip",
-    "minecraft:orange_tulip",
-    "minecraft:white_tulip",
-    "minecraft:pink_tulip",
-    "minecraft:oxeye_daisy",
-    "minecraft:cornflower",
-    "minecraft:lily_of_the_valley",
-    "minecraft:dandelion",
-    "minecraft:wither_rose",
-    "minecraft:sunflower",
-    "minecraft:lilac",
-    "minecraft:rose_bush",
-    "minecraft:peony",
-    "minecraft:flowering_azalea",
-    "minecraft:azalea_leaves_flowered",
-    "minecraft:mangrove_propagule",
-    "minecraft:pitcher_plant",
-    "minecraft:torchflower",
-    "minecraft:cherry_leaves",
-    "minecraft:pink_petals",
-    "minecraft:open_eyeblossom",
-    "minecraft:wildflowers",
-    "minecraft:cactus_flower"
-  ]
-}
-```
-
-#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
-
-
-```json
-"minecraft:behavior.tempt": {
-  "priority": 3,
-  "speed_multiplier": 2.5,
-  "can_tempt_vertically": true,
-  "items": [
-    "cactus"
-  ]
-}
-```
-
-#### [Camel Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel_husk.json)
-
-
-```json
-"minecraft:behavior.tempt": {
-  "priority": 4,
-  "speed_multiplier": 2.5,
-  "can_tempt_vertically": true,
-  "items": [
-    "rabbit_foot"
-  ]
-}
-```
-
-#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
-
-At /minecraft:entity/component_groups/minecraft:cat_wild/minecraft:behavior.tempt/: 
-
-```json
-"minecraft:behavior.tempt": {
-  "priority": 5,
-  "speed_multiplier": 0.5,
-  "within_radius": 16,
-  "can_get_scared": true,
-  "tempt_sound": "tempt",
-  "sound_interval": [
-    0,
-    100
-  ],
-  "items": [
-    "fish",
-    "salmon"
-  ]
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:cat_tame/minecraft:behavior.tempt/: 
-
-```json
-"minecraft:behavior.tempt": {
-  "priority": 5,
-  "speed_multiplier": 0.5,
-  "within_radius": 16,
-  "items": [
-    "fish",
-    "salmon"
-  ]
-}
-```
 
 #### [Chicken](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chicken.json)
 
@@ -206,21 +72,6 @@ At /minecraft:entity/component_groups/minecraft:cat_tame/minecraft:behavior.temp
 }
 ```
 
-#### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
-
-
-```json
-"minecraft:behavior.tempt": {
-  "priority": 5,
-  "speed_multiplier": 1.2,
-  "items": [
-    "golden_apple",
-    "appleEnchanted",
-    "golden_carrot"
-  ]
-}
-```
-
 #### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
 
 
@@ -247,6 +98,19 @@ At /minecraft:entity/component_groups/minecraft:cat_tame/minecraft:behavior.temp
   "can_tempt_vertically": true,
   "items": [
     "slime_ball"
+  ]
+}
+```
+
+#### [Goat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/goat.json)
+
+
+```json
+"minecraft:behavior.tempt": {
+  "priority": 4,
+  "speed_multiplier": 0.75,
+  "items": [
+    "wheat"
   ]
 }
 ```

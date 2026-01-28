@@ -23,27 +23,7 @@
     "id": "minecraft:burns_in_daylight",
     "title": "Burns In Daylight",
     "description": ".",
-    "fields": [
-      {
-        "id": "protection_slot",
-        "title": "Protection Slot",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/zombie_horse.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-              "content": "slot.armor.body"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-              "content": "slot.armor.body"
-            }
-          ]
-        }
-      }
-    ],
+    "fields": [],
     "samples": {
       "/vanilla/behavior_pack/entities/bogged.json": [
         {
@@ -70,46 +50,6 @@
         }
       ],
       "/vanilla/behavior_pack/entities/skeleton.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/stray.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_horse.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-          "content": {
-            "protection_slot": "slot.armor.body"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-          "content": {
-            "protection_slot": "slot.armor.body"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
         {
           "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
           "content": {}
@@ -151,21 +91,7 @@
             "title": "Slot.weapon.offhand"
           }
         ],
-        "defaultValue": "slot.armor.head",
-        "samples": {
-          "/vanilla/behavior_pack/entities/zombie_horse.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-              "content": "slot.armor.body"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-              "content": "slot.armor.body"
-            }
-          ]
-        }
+        "defaultValue": "slot.armor.head"
       }
     ],
     "samples": {
@@ -194,46 +120,6 @@
         }
       ],
       "/vanilla/behavior_pack/entities/skeleton.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/stray.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_horse.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-          "content": {
-            "protection_slot": "slot.armor.body"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-          "content": {
-            "protection_slot": "slot.armor.body"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
         {
           "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
           "content": {}

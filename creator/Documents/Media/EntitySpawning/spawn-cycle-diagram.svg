@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340" font-family="'Noto Sans', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <!-- Minecraft-inspired colors -->
+    <linearGradient id="grassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3C8527"/>
+      <stop offset="100%" style="stop-color:#2D6A1E"/>
+    </linearGradient>
+    <linearGradient id="diamondGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5B9BD5"/>
+      <stop offset="100%" style="stop-color:#4A8BC9"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#50C878"/>
+      <stop offset="100%" style="stop-color:#3CB371"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700"/>
+      <stop offset="100%" style="stop-color:#DAA520"/>
+    </linearGradient>
+    
+    <!-- Block shadow -->
+    <filter id="blockShadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#1D1D1D" flood-opacity="0.25"/>
+    </filter>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#3C8527"/>
+    </marker>
+  </defs>
+  
+  <!-- Background - Parchment/map style -->
+  <rect width="640" height="340" fill="#F5F0E6"/>
+  
+  <!-- Subtle grid -->
+  <defs>
+    <pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="none" stroke="#E8E0D0" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="340" fill="url(#grid)" opacity="0.5"/>
+  
+  <!-- Main container - Stone block style -->
+  <rect x="20" y="20" width="600" height="300" rx="4" fill="#E8E8E8" stroke="#6D6D6D" stroke-width="2" filter="url(#blockShadow)"/>
+  
+  <!-- Header - Grass block -->
+  <rect x="20" y="20" width="600" height="42" rx="4" fill="url(#grassGrad)"/>
+  <rect x="20" y="50" width="600" height="12" fill="#2D6A1E"/>
+  
+  <!-- Spawn egg icon -->
+  <g transform="translate(42, 32)">
+    <ellipse cx="10" cy="12" rx="8" ry="10" fill="#E8E8E8" stroke="#6D6D6D" stroke-width="1.5"/>
+    <ellipse cx="8" cy="9" rx="3" ry="4" fill="#50C878"/>
+    <ellipse cx="13" cy="14" rx="2" ry="3" fill="#50C878"/>
+    <ellipse cx="7" cy="16" rx="2" ry="2" fill="#50C878"/>
+  </g>
+  <text x="68" y="48" fill="white" font-size="16" font-weight="700" letter-spacing="0.5">Spawn Cycle</text>
+  <text x="600" y="48" text-anchor="end" fill="rgba(255,255,255,0.85)" font-size="11" font-weight="500">Entity spawning process flow</text>
+  
+  <!-- Step 1 - Diamond blue -->
+  <g transform="translate(40, 75)">
+    <rect width="250" height="44" rx="3" fill="#E3F2FD" stroke="#5B9BD5" stroke-width="2"/>
+    <rect x="6" y="6" width="32" height="32" rx="2" fill="url(#diamondGrad)" stroke="#3D7AB5" stroke-width="1"/>
+    <text x="22" y="28" text-anchor="middle" fill="white" font-size="14" font-weight="700">1</text>
+    <text x="50" y="28" fill="#1A365D" font-size="13" font-weight="600">Check spawn conditions</text>
+  </g>
+  
+  <!-- Arrow 1→2 -->
+  <line x1="165" y1="119" x2="165" y2="130" stroke="#3C8527" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  
+  <!-- Step 2 -->
+  <g transform="translate(40, 135)">
+    <rect width="250" height="44" rx="3" fill="#E3F2FD" stroke="#5B9BD5" stroke-width="2"/>
+    <rect x="6" y="6" width="32" height="32" rx="2" fill="url(#diamondGrad)" stroke="#3D7AB5" stroke-width="1"/>
+    <text x="22" y="28" text-anchor="middle" fill="white" font-size="14" font-weight="700">2</text>
+    <text x="50" y="28" fill="#1A365D" font-size="13" font-weight="600">Find valid spawn locations</text>
+  </g>
+  
+  <!-- Arrow 2→3 -->
+  <line x1="165" y1="179" x2="165" y2="190" stroke="#3C8527" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  
+  <!-- Step 3 -->
+  <g transform="translate(40, 195)">
+    <rect width="250" height="44" rx="3" fill="#E3F2FD" stroke="#5B9BD5" stroke-width="2"/>
+    <rect x="6" y="6" width="32" height="32" rx="2" fill="url(#diamondGrad)" stroke="#3D7AB5" stroke-width="1"/>
+    <text x="22" y="28" text-anchor="middle" fill="white" font-size="14" font-weight="700">3</text>
+    <text x="50" y="28" fill="#1A365D" font-size="13" font-weight="600">Check population caps</text>
+  </g>
+  
+  <!-- Curved arrow 3→4 -->
+  <path d="M 290 217 Q 320 217, 320 140 Q 320 97, 350 97" stroke="#3C8527" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+  
+  <!-- Step 4 -->
+  <g transform="translate(350, 75)">
+    <rect width="250" height="44" rx="3" fill="#E3F2FD" stroke="#5B9BD5" stroke-width="2"/>
+    <rect x="6" y="6" width="32" height="32" rx="2" fill="url(#diamondGrad)" stroke="#3D7AB5" stroke-width="1"/>
+    <text x="22" y="28" text-anchor="middle" fill="white" font-size="14" font-weight="700">4</text>
+    <text x="50" y="28" fill="#1A365D" font-size="13" font-weight="600">Evaluate spawn weight</text>
+  </g>
+  
+  <!-- Arrow 4→5 -->
+  <line x1="475" y1="119" x2="475" y2="130" stroke="#3C8527" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  
+  <!-- Step 5 - Emerald green (success) -->
+  <g transform="translate(350, 135)">
+    <rect width="250" height="44" rx="3" fill="#E8F5E9" stroke="#50C878" stroke-width="2"/>
+    <rect x="6" y="6" width="32" height="32" rx="2" fill="url(#emeraldGrad)" stroke="#2E8B57" stroke-width="1"/>
+    <text x="22" y="28" text-anchor="middle" fill="white" font-size="14" font-weight="700">5</text>
+    <text x="50" y="28" fill="#1B4332" font-size="13" font-weight="600">Spawn entity</text>
+  </g>
+  
+  <!-- Arrow 5→6 -->
+  <line x1="475" y1="179" x2="475" y2="190" stroke="#3C8527" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  
+  <!-- Step 6 - Gold (event) -->
+  <g transform="translate(350, 195)">
+    <rect width="250" height="44" rx="3" fill="#FFF8E1" stroke="#DAA520" stroke-width="2"/>
+    <rect x="6" y="6" width="32" height="32" rx="2" fill="url(#goldGrad)" stroke="#B8860B" stroke-width="1"/>
+    <text x="22" y="28" text-anchor="middle" fill="#5D4E37" font-size="14" font-weight="700">6</text>
+    <text x="50" y="28" fill="#5D4E37" font-size="13" font-weight="600">Run spawn event</text>
+  </g>
+  
+  <!-- Condition hint - Book style -->
+  <rect x="40" y="252" width="560" height="30" rx="3" fill="#8B4513" stroke="#5D2E0C" stroke-width="2"/>
+  <rect x="43" y="255" width="554" height="24" rx="2" fill="#D4A574"/>
+  <text x="320" y="272" text-anchor="middle" fill="#3D2314" font-size="11" font-weight="600">
+    <tspan font-weight="700">Spawn conditions:</tspan>
+    <tspan> Time of day • Light level • Biome • Block type • Player distance</tspan>
+  </text>
+  
+  <!-- Legend - Inventory bar style -->
+  <rect x="40" y="295" width="560" height="20" rx="2" fill="#C6C6C6" stroke="#8B8B8B" stroke-width="1"/>
+  <g transform="translate(55, 299)">
+    <rect width="12" height="12" rx="1" fill="url(#diamondGrad)" stroke="#3D7AB5" stroke-width="1"/>
+    <text x="18" y="10" fill="#3D3D3D" font-size="10" font-weight="600">Condition check</text>
+    
+    <rect x="130" y="0" width="12" height="12" rx="1" fill="url(#emeraldGrad)" stroke="#2E8B57" stroke-width="1"/>
+    <text x="148" y="10" fill="#3D3D3D" font-size="10" font-weight="600">Success</text>
+    
+    <rect x="225" y="0" width="12" height="12" rx="1" fill="url(#goldGrad)" stroke="#B8860B" stroke-width="1"/>
+    <text x="243" y="10" fill="#3D3D3D" font-size="10" font-weight="600">Event trigger</text>
+    
+    <rect x="345" y="0" width="12" height="12" rx="1" fill="#D4A574" stroke="#5D2E0C" stroke-width="1"/>
+    <text x="363" y="10" fill="#3D3D3D" font-size="10" font-weight="600">Info</text>
+  </g>
+</svg>

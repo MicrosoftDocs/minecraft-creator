@@ -39,210 +39,37 @@
         "title": "Can Dash Underwater",
         "description": "Whether the entity can dash underwater. Default value is false.",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/nautilus.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:dash_action/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_in_water/minecraft:dash_action/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": 1
       },
       {
         "id": "cooldown_time",
         "title": "Cooldown Time",
         "description": "The dash cooldown in seconds. Default value is 1.000000.",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/camel.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:camel_saddled/minecraft:dash_action/",
-              "content": 2.75
-            }
-          ],
-          "/vanilla/behavior_pack/entities/camel_husk.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:camel_husk_saddled/minecraft:dash_action/",
-              "content": 2.75
-            }
-          ],
-          "/vanilla/behavior_pack/entities/nautilus.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:dash_action/",
-              "content": 2
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_on_ground/minecraft:dash_action/",
-              "content": 2
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "direction",
         "title": "Direction",
         "description": "Should the momentum be applied in the direction of the 'entity' or 'passenger'. When 'entity' is used the momentum is applied horizontally according to the direction the entity is looking, using only the entity's yaw. When 'passenger' is used the momentum will be applied in the direction the controlling passenger is looking, using the passenger's pitch and yaw.",
         "defaultValue": "entity",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/nautilus.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:dash_action/",
-              "content": "passenger"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_on_ground/minecraft:dash_action/",
-              "content": "passenger"
-            }
-          ]
-        }
+        "dataType": 2
       },
       {
         "id": "horizontal_momentum",
         "title": "Horizontal Momentum",
         "description": "Horizontal momentum of the dash.",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/camel.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:camel_saddled/minecraft:dash_action/",
-              "content": 20
-            }
-          ],
-          "/vanilla/behavior_pack/entities/camel_husk.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:camel_husk_saddled/minecraft:dash_action/",
-              "content": 20
-            }
-          ],
-          "/vanilla/behavior_pack/entities/nautilus.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:dash_action/",
-              "content": 154
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_on_ground/minecraft:dash_action/",
-              "content": 42
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_in_water/minecraft:dash_action/",
-              "content": 154
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_on_ground/minecraft:dash_action/",
-              "content": 42
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "vertical_momentum",
         "title": "Vertical Momentum",
         "description": "Vertical momentum of the dash.",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/camel.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:camel_saddled/minecraft:dash_action/",
-              "content": 0.6
-            }
-          ],
-          "/vanilla/behavior_pack/entities/camel_husk.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:camel_husk_saddled/minecraft:dash_action/",
-              "content": 0.6
-            }
-          ],
-          "/vanilla/behavior_pack/entities/nautilus.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:dash_action/",
-              "content": 0.1
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_on_ground/minecraft:dash_action/",
-              "content": 0.1
-            }
-          ]
-        }
+        "dataType": 3
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/camel.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:camel_saddled/minecraft:dash_action/",
-          "content": {
-            "cooldown_time": 2.75,
-            "horizontal_momentum": 20,
-            "vertical_momentum": 0.6
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/camel_husk.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:camel_husk_saddled/minecraft:dash_action/",
-          "content": {
-            "cooldown_time": 2.75,
-            "horizontal_momentum": 20,
-            "vertical_momentum": 0.6
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/nautilus.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_in_water/minecraft:dash_action/",
-          "content": {
-            "cooldown_time": 2,
-            "horizontal_momentum": 154,
-            "vertical_momentum": 0.1,
-            "can_dash_underwater": true,
-            "direction": "passenger"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled_on_ground/minecraft:dash_action/",
-          "content": {
-            "cooldown_time": 2,
-            "horizontal_momentum": 42,
-            "vertical_momentum": 0.1,
-            "can_dash_underwater": false,
-            "direction": "passenger"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_in_water/minecraft:dash_action/",
-          "content": {
-            "cooldown_time": 2,
-            "horizontal_momentum": 154,
-            "vertical_momentum": 0.1,
-            "can_dash_underwater": true,
-            "direction": "passenger"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled_on_ground/minecraft:dash_action/",
-          "content": {
-            "cooldown_time": 2,
-            "horizontal_momentum": 42,
-            "vertical_momentum": 0.1,
-            "can_dash_underwater": false,
-            "direction": "passenger"
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

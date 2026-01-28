@@ -1,0 +1,83 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "music_definitions",
+  "title": "Music Definitions",
+  "description": "The music_definitions.json file defines which music tracks play in different biomes and game states. Each key is a biome or game state identifier that maps to music event configuration. Located at sounds/music_definitions.json in resource packs.",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines music tracks for biomes and game states"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "biome_music",
+      "title": "Biome/State Music",
+      "description": "Music configuration keyed by biome identifier or game state (e.g., 'forest', 'desert', 'menu', 'creative', 'credits').",
+      "dataType": 14,
+      "subForm": {
+        "id": "music_definition_entry",
+        "title": "Music Definition",
+        "description": "Defines the music event and playback timing for a biome or game state.",
+        "fields": [
+          {
+            "id": "event_name",
+            "title": "Event Name",
+            "description": "The sound event identifier that plays music for this biome/state (e.g., 'music.overworld.forest', 'music.game.nether').",
+            "dataType": 2,
+            "isRequired": true
+          },
+          {
+            "id": "min_delay",
+            "title": "Minimum Delay",
+            "description": "The minimum delay in seconds before the music starts playing after entering this biome or after the previous track ends.",
+            "dataType": 0,
+            "defaultValue": 60
+          },
+          {
+            "id": "max_delay",
+            "title": "Maximum Delay",
+            "description": "The maximum delay in seconds before the music starts playing. The actual delay is randomly chosen between min_delay and max_delay.",
+            "dataType": 0,
+            "defaultValue": 180
+          }
+        ]
+      }
+    }
+  ],
+  "note": "This file is a JSON object where each key is a biome identifier (e.g., 'forest', 'desert', 'hell') or game state ('menu', 'creative', 'credits') and each value contains event_name, min_delay, and max_delay properties.",
+  "samples": {
+    "vanilla_data/resource_packs/vanilla/sounds/music_definitions.json": [
+      {
+        "path": "forest",
+        "content": {
+          "event_name": "music.overworld.forest",
+          "max_delay": 180,
+          "min_delay": 60
+        }
+      },
+      {
+        "path": "menu",
+        "content": {
+          "event_name": "music.menu",
+          "max_delay": 30,
+          "min_delay": 0
+        }
+      },
+      {
+        "path": "credits",
+        "content": {
+          "event_name": "music.game.credits",
+          "max_delay": 0,
+          "min_delay": 0
+        }
+      }
+    ]
+  }
+}

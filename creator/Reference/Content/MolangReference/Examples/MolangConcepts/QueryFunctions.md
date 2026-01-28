@@ -83,6 +83,7 @@ ms.date: 02/11/2025
 | [query.get_actor_info_id](queryfunctions/query_get_actor_info_id.md)| Returns the integer id of an entity (actor) by its string name. |
 | [query.get_animation_frame](queryfunctions/query_get_animation_frame.md)| Returns the current texture of an item whose appearance can change (such as a drawn bow). |
 | [query.get_default_bone_pivot](queryfunctions/query_get_default_bone_pivot.md)| Gets specified axis of the specified bone orientation pivot. |
+| [query.get_level_seed_based_fraction](queryfunctions/query_get_level_seed_based_fraction.md)| Returns a value in range [0.0, 1.0] based on the level seed. |
 | [query.get_locator_offset](queryfunctions/query_get_locator_offset.md)| Gets specified axis of the specified locator offset. |
 | [query.get_pack_setting](queryfunctions/query_get_pack_setting.md)| Returns value of Pack Setting slider, parameter is name of slider. |
 | [query.get_root_locator_offset](queryfunctions/query_get_root_locator_offset.md)| Gets specified axis of the specified locator offset of the root model. |

@@ -23,95 +23,33 @@
         "title": "Goal Radius",
         "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
         "defaultValue": 0.5,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/look_for_food/minecraft:behavior.move_to_block/",
-              "content": 1
-            },
-            {
-              "path": "/minecraft:entity/component_groups/find_hive/minecraft:behavior.move_to_block/",
-              "content": 0.633
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "on_reach",
         "title": "Reach",
         "description": "Event to run on block reached.",
-        "dataType": 22,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/find_hive/minecraft:behavior.move_to_block/",
-              "content": [
-                {
-                  "event": "minecraft:bee_returned_to_hive",
-                  "target": "block"
-                }
-              ]
-            }
-          ]
-        }
+        "dataType": 22
       },
       {
         "id": "on_stay_completed",
         "title": "Stay Completed",
         "description": "Event to run on completing a stay of stay_duration at the block.",
-        "dataType": 22,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/look_for_food/minecraft:behavior.move_to_block/",
-              "content": [
-                {
-                  "event": "collected_nectar",
-                  "target": "self"
-                }
-              ]
-            }
-          ]
-        }
+        "dataType": 22
       },
       {
         "id": "search_height",
         "title": "Search Height",
         "description": "The height in blocks that the mob will look for the block.",
         "defaultValue": 1,
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/look_for_food/minecraft:behavior.move_to_block/",
-              "content": 4
-            },
-            {
-              "path": "/minecraft:entity/component_groups/find_hive/minecraft:behavior.move_to_block/",
-              "content": 10
-            }
-          ]
-        }
+        "dataType": 0
       },
       {
         "id": "search_range",
         "title": "Search Range",
         "description": "The distance in blocks that the mob will look for the block.",
         "defaultValue": 0,
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/look_for_food/minecraft:behavior.move_to_block/",
-              "content": 6
-            },
-            {
-              "path": "/minecraft:entity/component_groups/find_hive/minecraft:behavior.move_to_block/",
-              "content": 16
-            }
-          ]
-        }
+        "dataType": 0
       },
       {
         "id": "speed_multiplier",
@@ -125,79 +63,20 @@
         "title": "Start Chance",
         "description": "Chance to start the behavior (applied after each random tick_interval).",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/look_for_food/minecraft:behavior.move_to_block/",
-              "content": 0.5
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "stay_duration",
         "title": "Stay Duration",
         "description": "Number of ticks needed to complete a stay at the block.",
         "defaultValue": 0,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/look_for_food/minecraft:behavior.move_to_block/",
-              "content": 20
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "target_blocks",
         "title": "Target Blocks",
         "description": "Block types to move to.",
-        "dataType": 17,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/look_for_food/minecraft:behavior.move_to_block/",
-              "content": [
-                "minecraft:poppy",
-                "minecraft:blue_orchid",
-                "minecraft:allium",
-                "minecraft:azure_bluet",
-                "minecraft:red_tulip",
-                "minecraft:orange_tulip",
-                "minecraft:white_tulip",
-                "minecraft:pink_tulip",
-                "minecraft:oxeye_daisy",
-                "minecraft:cornflower",
-                "minecraft:lily_of_the_valley",
-                "minecraft:dandelion",
-                "minecraft:wither_rose",
-                "minecraft:sunflower",
-                "minecraft:lilac",
-                "minecraft:rose_bush",
-                "minecraft:peony",
-                "minecraft:flowering_azalea",
-                "minecraft:azalea_leaves_flowered",
-                "minecraft:mangrove_propagule",
-                "minecraft:pitcher_plant",
-                "minecraft:torchflower",
-                "minecraft:cherry_leaves",
-                "minecraft:pink_petals",
-                "minecraft:open_eyeblossom",
-                "minecraft:wildflowers",
-                "minecraft:cactus_flower"
-              ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/find_hive/minecraft:behavior.move_to_block/",
-              "content": [
-                "bee_nest",
-                "beehive"
-              ]
-            }
-          ]
-        }
+        "dataType": 17
       },
       {
         "id": "target_offset",
@@ -208,232 +87,30 @@
           0,
           0
         ],
-        "dataType": 11,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/look_for_food/minecraft:behavior.move_to_block/",
-              "content": [
-                0,
-                0.25,
-                0
-              ]
-            }
-          ]
-        }
+        "dataType": 11
       },
       {
         "id": "target_selection_method",
         "title": "Target Selection Method",
         "description": "Kind of block to find fitting the specification. Valid values are \"random\" and \"nearest\".",
         "defaultValue": "nearest",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/look_for_food/minecraft:behavior.move_to_block/",
-              "content": "random"
-            }
-          ]
-        }
+        "dataType": 2
       },
       {
         "id": "tick_interval",
         "title": "Tick Interval",
         "description": "Average interval in ticks to try to run this behavior.",
         "defaultValue": 20,
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/look_for_food/minecraft:behavior.move_to_block/",
-              "content": 1
-            },
-            {
-              "path": "/minecraft:entity/component_groups/find_hive/minecraft:behavior.move_to_block/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": 0
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/look_for_food/minecraft:behavior.move_to_block/",
-              "content": 10
-            },
-            {
-              "path": "/minecraft:entity/component_groups/find_hive/minecraft:behavior.move_to_block/",
-              "content": 10
-            }
-          ]
-        }
-      },
-      {
-        "id": "target_block_filters",
-        "title": "Target Block Filters",
-        "dataType": 16,
-        "subForm": {
-          "id": "target_block_filters",
-          "title": "Target block filters",
-          "fields": [
-            {
-              "id": "test",
-              "title": "Test",
-              "dataType": 2,
-              "samples": {
-                "/vanilla/behavior_pack/entities/bee.json": [
-                  {
-                    "path": "test",
-                    "content": "is_waterlogged"
-                  }
-                ]
-              }
-            },
-            {
-              "id": "subject",
-              "title": "Subject",
-              "dataType": 2,
-              "samples": {
-                "/vanilla/behavior_pack/entities/bee.json": [
-                  {
-                    "path": "subject",
-                    "content": "block"
-                  }
-                ]
-              }
-            },
-            {
-              "id": "operator",
-              "title": "Operator",
-              "dataType": 2,
-              "samples": {
-                "/vanilla/behavior_pack/entities/bee.json": [
-                  {
-                    "path": "operator",
-                    "content": "=="
-                  }
-                ]
-              }
-            },
-            {
-              "id": "value",
-              "title": "Value",
-              "dataType": 2,
-              "samples": {
-                "/vanilla/behavior_pack/entities/bee.json": [
-                  {
-                    "path": "value",
-                    "content": false
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        "samples": {
-          "/vanilla/behavior_pack/entities/bee.json": [
-            {
-              "path": "/minecraft:entity/component_groups/look_for_food/minecraft:behavior.move_to_block/",
-              "content": {
-                "test": "is_waterlogged",
-                "subject": "block",
-                "operator": "==",
-                "value": false
-              }
-            }
-          ]
-        }
+        "dataType": 0
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/bee.json": [
-        {
-          "path": "/minecraft:entity/component_groups/look_for_food/minecraft:behavior.move_to_block/",
-          "content": {
-            "priority": 10,
-            "tick_interval": 1,
-            "start_chance": 0.5,
-            "search_range": 6,
-            "search_height": 4,
-            "goal_radius": 1,
-            "stay_duration": 20,
-            "target_selection_method": "random",
-            "target_offset": [
-              0,
-              0.25,
-              0
-            ],
-            "target_block_filters": {
-              "test": "is_waterlogged",
-              "subject": "block",
-              "operator": "==",
-              "value": false
-            },
-            "target_blocks": [
-              "minecraft:poppy",
-              "minecraft:blue_orchid",
-              "minecraft:allium",
-              "minecraft:azure_bluet",
-              "minecraft:red_tulip",
-              "minecraft:orange_tulip",
-              "minecraft:white_tulip",
-              "minecraft:pink_tulip",
-              "minecraft:oxeye_daisy",
-              "minecraft:cornflower",
-              "minecraft:lily_of_the_valley",
-              "minecraft:dandelion",
-              "minecraft:wither_rose",
-              "minecraft:sunflower",
-              "minecraft:lilac",
-              "minecraft:rose_bush",
-              "minecraft:peony",
-              "minecraft:flowering_azalea",
-              "minecraft:azalea_leaves_flowered",
-              "minecraft:mangrove_propagule",
-              "minecraft:pitcher_plant",
-              "minecraft:torchflower",
-              "minecraft:cherry_leaves",
-              "minecraft:pink_petals",
-              "minecraft:open_eyeblossom",
-              "minecraft:wildflowers",
-              "minecraft:cactus_flower"
-            ],
-            "on_stay_completed": [
-              {
-                "event": "collected_nectar",
-                "target": "self"
-              }
-            ]
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/find_hive/minecraft:behavior.move_to_block/",
-          "content": {
-            "priority": 10,
-            "search_range": 16,
-            "search_height": 10,
-            "tick_interval": 1,
-            "goal_radius": 0.633,
-            "target_blocks": [
-              "bee_nest",
-              "beehive"
-            ],
-            "on_reach": [
-              {
-                "event": "minecraft:bee_returned_to_hive",
-                "target": "block"
-              }
-            ]
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

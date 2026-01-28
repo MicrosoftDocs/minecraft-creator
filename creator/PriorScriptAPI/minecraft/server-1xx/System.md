@@ -257,6 +257,7 @@ waitTicks returns a promise that resolves after the requested number of ticks.
 
 #### **Parameters**
 - **ticks**: *number*
+  * Minimum Bound: `1`
   
   The amount of ticks to wait. Minimum value is 1.
 

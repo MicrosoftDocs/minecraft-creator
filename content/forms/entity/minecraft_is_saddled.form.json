@@ -19,42 +19,6 @@
     "description": "Sets that this entity is currently saddled.",
     "fields": [],
     "samples": {
-      "/vanilla/behavior_pack/entities/camel.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:camel_saddled/minecraft:is_saddled/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/camel_husk.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:camel_husk_saddled/minecraft:is_saddled/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/donkey.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:donkey_saddled/minecraft:is_saddled/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/horse.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_saddled/minecraft:is_saddled/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/mule.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:mule_saddled/minecraft:is_saddled/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/nautilus.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:nautilus_tame_saddled/minecraft:is_saddled/",
-          "content": {}
-        }
-      ],
       "/vanilla/behavior_pack/entities/pig.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:is_saddled/",
@@ -64,18 +28,6 @@
       "/vanilla/behavior_pack/entities/strider.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:strider_saddled/minecraft:is_saddled/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_horse.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:horse_saddled/minecraft:is_saddled/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_nautilus.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:zombie_nautilus_tame_saddled/minecraft:is_saddled/",
           "content": {}
         }
       ]

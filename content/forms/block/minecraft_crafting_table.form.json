@@ -36,45 +36,15 @@
         "id": "crafting_tags",
         "title": "Crafting Tags",
         "description": "Defines the tags recipes should define to be crafted on this table. Limited to 64 tags. Each tag is limited to 64 characters.",
-        "dataType": 17,
-        "samples": {
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [
-            {
-              "path": "/minecraft:block/components/minecraft:crafting_table/",
-              "content": [
-                "graywave_fabricator"
-              ]
-            }
-          ]
-        }
+        "dataType": 17
       },
       {
         "id": "table_name",
         "title": "Table Name",
         "description": "Specifies the language file key that maps to what text will be displayed in the UI of this table. If the string given can not be resolved as a loc string, the raw string given will be displayed. If this field is omitted, the name displayed will default to the name specified in the \"display_name\" component. If this block has no \"display_name\" component, the name displayed will default to the name of the block.",
-        "dataType": 37,
-        "samples": {
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [
-            {
-              "path": "/minecraft:block/components/minecraft:crafting_table/",
-              "content": "Fabricator"
-            }
-          ]
-        }
+        "dataType": 37
       }
     ],
-    "samples": {
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [
-        {
-          "path": "/minecraft:block/components/minecraft:crafting_table/",
-          "content": {
-            "crafting_tags": [
-              "graywave_fabricator"
-            ],
-            "table_name": "Fabricator"
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }
