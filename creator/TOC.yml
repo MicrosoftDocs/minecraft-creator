@@ -294,6 +294,8 @@
             href: Documents/scripting/execution-privilege.md
           - name: Open-Source Scripting Libraries
             href: Documents/scripting/libraries.md
+          - name: Introduction to the Data-Driven UI
+            href: Documents/scripting/intro-to-ddui.md
         - name: Introduction to Scoreboards
           href: Documents/ScoreboardIntroduction.md
         - name: Scoreboard Operations Tutorial
@@ -476,6 +478,8 @@
             href: Documents/CustomBlockRenderDistance.md
           - name: Advanced Custom Block Oversized 
             href: Documents/CustomBlockOversized.md
+        - name: Voxel Shapes
+          href: Documents/VoxelShapes.md
     - name: Tools and Libraries
       items:
         - name: Commonly Used Tools
