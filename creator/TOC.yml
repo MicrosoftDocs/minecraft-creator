@@ -478,6 +478,8 @@
             href: Documents/CustomBlockRenderDistance.md
           - name: Advanced Custom Block Oversized 
             href: Documents/CustomBlockOversized.md
+        - name: Voxel Shapes
+          href: Documents/VoxelShapes.md
     - name: Tools and Libraries
       items:
         - name: Commonly Used Tools
