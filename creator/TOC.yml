@@ -294,6 +294,8 @@
             href: Documents/scripting/execution-privilege.md
           - name: Open-Source Scripting Libraries
             href: Documents/scripting/libraries.md
+          - name: Introduction to the Data-Driven UI
+            href: Documents/scripting/intro-to-ddui.md
         - name: Introduction to Scoreboards
           href: Documents/ScoreboardIntroduction.md
         - name: Scoreboard Operations Tutorial
