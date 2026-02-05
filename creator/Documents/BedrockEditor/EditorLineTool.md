@@ -104,14 +104,14 @@ When multiple points are selected, you can click and drag with the mouse or use 
 |Command  |Shortcut  |
 |:-------|:---------|
 | Toggle line tool | **Ctrl+L** |
+| Place/Select point at cursor | **Enter** |
 | Clear all points | **Ctrl+Backspace** |
 | Clear selected | **Ctrl+Shift+Backspace** |
 | Fill selected |  **Ctrl+F**|
 | Delete selected | **Delete** |
 | Add to selection | **Alt+S** |
-| Adjust line thickness | **Shift+Up/Down/Left/Right**
+| Adjust line thickness | **Shift+Up/Down/Left/Right** |
 | Select all points | **Ctrl+A** |
-| Undo | **Ctrl+Z**|
-| Redo | **Ctrl+Y** |
-
-Check out [Keyboard Inputs](EditorKeyboardInputs.md) for a complete list of Editor keyboard shortcuts.
+| Move selected forward/back | **Ctrl+Shift+Up/Down** |
+| Move selected left/right | **Ctrl+Shift+Left/Right** |
+| Move selected up/down | **Ctrl+Shift+PgUp/PgDn** |

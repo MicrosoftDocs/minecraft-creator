@@ -11,6 +11,13 @@ ms.date: 09/04/2025
 
 Place entities into your world quickly. Some entities have random visual or variant traits (for example, horses or sheep) — each placement can spawn a random variant. While entities are paused, you can adjust their facing direction using rotation controls.
 
+## Settings
+
+- **Entity Type**: Choose the type of entity to place from the drop-down.
+- **Entity Offset** (0–8 per axis): Shifts the placement position relative to the cursor in X, Y, and Z.
+- **Grid Alignment** (1–8 per axis): Snaps entity placement to a grid with the specified spacing in each axis.
+- **Rotation** (-360 to 360): Sets the entity's facing direction in degrees. You can also use the **Shift+Mouse Wheel** to rotate in 10° increments.
+
 ## Using the summon tool
 
 1. Select Summon by clicking the button in the toolbar on the left side of the Editor.
@@ -35,6 +42,7 @@ The following are the default key bindings for the Summon Tool.
 | Summon Tool | Ctrl+Shift+S | - |
 | Clear Selection | Ctrl+D | - |
 | Delete Entity | Delete | On |
+| Rotate Entity (10° steps) | Shift+Mouse Wheel | On |
 | Move Selected Back | Down Arrow | On |
 | Move Selected Down | PgDn | On |
 | Move Selected Forward | Up Arrow | On |
