@@ -85,6 +85,6 @@ For the full list of Editor shortcuts, see [Editor Hotkeys](../BedrockEditor/Edi
 > [!NOTE]
 > The following command only works while the Camera Tool is active.
 
-| Command | Shortcut |
+|Command|Shortcut|
 |:--------|:---------|
-| Delete selected control point | **Delete** |
+|Delete selected control point|**Delete**|

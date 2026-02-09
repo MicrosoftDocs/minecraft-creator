@@ -35,7 +35,7 @@ The Scale Tool resizes your current selection in the world. It uses nearest-neig
 ## Limits
 
 | Limit | Value |
-|:------|:------|
+| :------ | :------ |
 | Minimum scale factor | 0.1 |
 | Maximum scale factor | 5.0 |
 | Maximum block volume | 200,000 blocks |
