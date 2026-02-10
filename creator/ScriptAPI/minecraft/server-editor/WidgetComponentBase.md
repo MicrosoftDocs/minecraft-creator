@@ -90,7 +90,7 @@ Notes:
 
 ### **delete**
 `
-"delete"(): void
+delete(): void
 `
   
 Notes:

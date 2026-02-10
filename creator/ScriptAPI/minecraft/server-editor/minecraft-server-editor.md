@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.10-beta.20 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.10-beta.22 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -38,6 +38,8 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.10-
 - [BrushDirectionalPlacementMode](BrushDirectionalPlacementMode.md)
 - [BrushElevationMode](BrushElevationMode.md)
 - [ButtonVariant](ButtonVariant.md)
+- [CollectionTreeEntryItemType](CollectionTreeEntryItemType.md)
+- [CollectionTreeSortType](CollectionTreeSortType.md)
 - [ColorPickerPropertyItemVariant](ColorPickerPropertyItemVariant.md)
 - [ComboBoxPropertyItemDataType](ComboBoxPropertyItemDataType.md)
 - [ContiguousSelectionType](ContiguousSelectionType.md)
@@ -109,6 +111,13 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.10-
 - [ContinuousAction](ContinuousAction.md)
 - [EventHandler](EventHandler.md)
 - [GraphicsSettingsPropertyTypeMap](GraphicsSettingsPropertyTypeMap.md)
+- [ICollectionTreeEntryDropdownItemMenuOption](ICollectionTreeEntryDropdownItemMenuOption.md)
+- [ICollectionTreeEntryDropdownItemParams](ICollectionTreeEntryDropdownItemParams.md)
+- [ICollectionTreeEntryNumberItemParams](ICollectionTreeEntryNumberItemParams.md)
+- [ICollectionTreeEntryOptions](ICollectionTreeEntryOptions.md)
+- [ICollectionTreeEntryStringItemParams](ICollectionTreeEntryStringItemParams.md)
+- [ICollectionTreeFolderHeaderActionParams](ICollectionTreeFolderHeaderActionParams.md)
+- [ICollectionTreeFolderOptions](ICollectionTreeFolderOptions.md)
 - [ImageAnimationData](ImageAnimationData.md)
 - [ImageResourceData](ImageResourceData.md)
 - [IObservableProp](IObservableProp.md)
@@ -240,8 +249,13 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.10-
 - [WidgetComponentRenderPrimitiveTypeAxialSphere](WidgetComponentRenderPrimitiveTypeAxialSphere.md)
 - [WidgetComponentRenderPrimitiveTypeBase](WidgetComponentRenderPrimitiveTypeBase.md)
 - [WidgetComponentRenderPrimitiveTypeBox](WidgetComponentRenderPrimitiveTypeBox.md)
+- [WidgetComponentRenderPrimitiveTypeCone](WidgetComponentRenderPrimitiveTypeCone.md)
+- [WidgetComponentRenderPrimitiveTypeCuboid](WidgetComponentRenderPrimitiveTypeCuboid.md)
+- [WidgetComponentRenderPrimitiveTypeCylinder](WidgetComponentRenderPrimitiveTypeCylinder.md)
 - [WidgetComponentRenderPrimitiveTypeDisc](WidgetComponentRenderPrimitiveTypeDisc.md)
+- [WidgetComponentRenderPrimitiveTypeEllipsoid](WidgetComponentRenderPrimitiveTypeEllipsoid.md)
 - [WidgetComponentRenderPrimitiveTypeLine](WidgetComponentRenderPrimitiveTypeLine.md)
+- [WidgetComponentRenderPrimitiveTypePyramid](WidgetComponentRenderPrimitiveTypePyramid.md)
 - [WidgetComponentSpline](WidgetComponentSpline.md)
 - [WidgetComponentText](WidgetComponentText.md)
 - [WidgetComponentVolumeOutline](WidgetComponentVolumeOutline.md)
@@ -281,6 +295,14 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.10-
 - [IButtonPanePropertyItemOptions](IButtonPanePropertyItemOptions.md)
 - [IButtonPropertyItem](IButtonPropertyItem.md)
 - [IButtonPropertyItemOptions](IButtonPropertyItemOptions.md)
+- [ICollectionTreeEntry](ICollectionTreeEntry.md)
+- [ICollectionTreeEntryDropdownItem](ICollectionTreeEntryDropdownItem.md)
+- [ICollectionTreeEntryItem](ICollectionTreeEntryItem.md)
+- [ICollectionTreeEntryNumberItem](ICollectionTreeEntryNumberItem.md)
+- [ICollectionTreeEntryStringItem](ICollectionTreeEntryStringItem.md)
+- [ICollectionTreeFolder](ICollectionTreeFolder.md)
+- [ICollectionTreePropertyItem](ICollectionTreePropertyItem.md)
+- [ICollectionTreePropertyItemOptions](ICollectionTreePropertyItemOptions.md)
 - [IColorPickerPropertyItem](IColorPickerPropertyItem.md)
 - [IColorPickerPropertyItemOptions](IColorPickerPropertyItemOptions.md)
 - [IColorTimelinePropertyItem](IColorTimelinePropertyItem.md)
@@ -362,6 +384,9 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.10-
 - [IVector2PropertyItemOptions](IVector2PropertyItemOptions.md)
 - [IVector3PropertyItem](IVector3PropertyItem.md)
 - [IVector3PropertyItemOptions](IVector3PropertyItemOptions.md)
+- [IVector3TimelinePropertyItem](IVector3TimelinePropertyItem.md)
+- [IVector3TimelinePropertyItemEntry](IVector3TimelinePropertyItemEntry.md)
+- [IVector3TimelinePropertyItemOptions](IVector3TimelinePropertyItemOptions.md)
 - [LocalizationEntry](LocalizationEntry.md)
 - [LogProperties](LogProperties.md)
 - [ModalDialogCreationParams](ModalDialogCreationParams.md)

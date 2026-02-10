@@ -29,7 +29,7 @@ Notes:
 
 ### **get**
 `
-"get"(uri: string): Promise<HttpResponse>
+get(uri: string): Promise<HttpResponse>
 `
 
 Performs a simple HTTP get request.

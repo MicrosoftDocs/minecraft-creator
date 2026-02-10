@@ -17,7 +17,7 @@ description: Contents of the @minecraft/server-editor.SpeedSettings class.
 
 ### **get**
 `
-"get"(property: T): SpeedSettingsPropertyTypeMap[T] | undefined
+get(property: T): SpeedSettingsPropertyTypeMap[T] | undefined
 `
 
 #### **Parameters**
@@ -34,7 +34,7 @@ getAll(): SpeedSettingsPropertyTypeMap
 
 ### **set**
 `
-"set"(property: T, value: SpeedSettingsPropertyTypeMap[T]): void
+set(property: T, value: SpeedSettingsPropertyTypeMap[T]): void
 `
 
 #### **Parameters**

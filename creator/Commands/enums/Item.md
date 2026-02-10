@@ -298,6 +298,8 @@ Polished Deeplate Stairs
 Small Amethyst Bud
 - `small_amethyst_bud`
 Small Amethyst Bud
+- `minecraft:golden_dandelion`
+- `golden_dandelion`
 - `minecraft:activator_rail`
 Activator Rail
 - `activator_rail`

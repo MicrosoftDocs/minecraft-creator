@@ -38,6 +38,7 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 
 #### Values
 - `*`
+- `minecraft:golden_dandelion`
 - `minecraft:name_tag`
 - `minecraft:copper_spear`
 - `minecraft:diamond_spear`

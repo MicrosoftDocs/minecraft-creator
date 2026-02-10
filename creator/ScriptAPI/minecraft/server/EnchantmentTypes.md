@@ -17,7 +17,7 @@ Contains a catalog of Minecraft Enchantment Types that are available in this wor
 
 ### **get**
 `
-static "get"(enchantmentId: string): EnchantmentType | undefined
+static get(enchantmentId: string): EnchantmentType | undefined
 `
 
 Retrieves an enchantment with the specified identifier.

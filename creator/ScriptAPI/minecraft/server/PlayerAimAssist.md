@@ -29,7 +29,7 @@ Type: [*PlayerAimAssistSettings*](PlayerAimAssistSettings.md)
 
 ### **set**
 `
-"set"(settings?: PlayerAimAssistSettings): void
+set(settings?: PlayerAimAssistSettings): void
 `
 
 Sets the player's aim-assist settings.

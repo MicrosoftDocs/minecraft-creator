@@ -34,8 +34,3 @@ Type: *string*[]
 `includeTags?: string[];`
 
 Type: *string*[]
-
-### **superset**
-`superset: boolean;`
-
-Type: *boolean*

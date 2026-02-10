@@ -17,7 +17,7 @@ Returns the set of item types registered within Minecraft.
 
 ### **get**
 `
-static "get"(itemId: string): ItemType | undefined
+static get(itemId: string): ItemType | undefined
 `
 
 Returns a specific item type, if available within Minecraft.

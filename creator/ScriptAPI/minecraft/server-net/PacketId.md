@@ -84,8 +84,8 @@ Represents the unique type of network packet.
 `ClientboundCloseFormPacket = "ClientboundCloseFormPacket"`
 ### **ClientboundControlSchemeSetPacket**
 `ClientboundControlSchemeSetPacket = "ClientboundControlSchemeSetPacket"`
-### **ClientboundDataDrivenUICloseAllScreensPacket**
-`ClientboundDataDrivenUICloseAllScreensPacket = "ClientboundDataDrivenUICloseAllScreensPacket"`
+### **ClientboundDataDrivenUICloseScreenPacket**
+`ClientboundDataDrivenUICloseScreenPacket = "ClientboundDataDrivenUICloseScreenPacket"`
 ### **ClientboundDataDrivenUIReloadPacket**
 `ClientboundDataDrivenUIReloadPacket = "ClientboundDataDrivenUIReloadPacket"`
 ### **ClientboundDataDrivenUIShowScreenPacket**
@@ -206,6 +206,8 @@ Represents the unique type of network packet.
 `LevelEventPacket = "LevelEventPacket"`
 ### **LevelSoundEventPacket**
 `LevelSoundEventPacket = "LevelSoundEventPacket"`
+### **LocatorBarPacket**
+`LocatorBarPacket = "LocatorBarPacket"`
 ### **LoginPacket**
 `LoginPacket = "LoginPacket"`
 ### **MapCreateLockedCopyPacket**
@@ -250,6 +252,8 @@ Represents the unique type of network packet.
 `OpenSignPacket = "OpenSignPacket"`
 ### **PacketViolationWarningPacket**
 `PacketViolationWarningPacket = "PacketViolationWarningPacket"`
+### **PartyChangedPacket**
+`PartyChangedPacket = "PartyChangedPacket"`
 ### **PhotoTransferPacket**
 `PhotoTransferPacket = "PhotoTransferPacket"`
 ### **PlayerActionPacket**
@@ -320,6 +324,8 @@ Represents the unique type of network packet.
 `RespawnPacket = "RespawnPacket"`
 ### **ScriptMessagePacket**
 `ScriptMessagePacket = "ScriptMessagePacket"`
+### **ServerboundDataDrivenScreenClosedPacket**
+`ServerboundDataDrivenScreenClosedPacket = "ServerboundDataDrivenScreenClosedPacket"`
 ### **ServerboundDataStorePacket**
 `ServerboundDataStorePacket = "ServerboundDataStorePacket"`
 ### **ServerboundDiagnosticsPacket**

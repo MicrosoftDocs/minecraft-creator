@@ -21,7 +21,7 @@ Supports a catalog of available biome types registered within Minecraft.
 
 ### **get**
 `
-static "get"(typeName: string): BiomeType | undefined
+static get(typeName: string): BiomeType | undefined
 `
 
 Returns a specific biome type.

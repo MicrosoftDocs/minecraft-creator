@@ -2361,6 +2361,7 @@ Diamond Block
 [Education Edition] Oxygen (O)
 - `minecraft:element_12`
 [Education Edition] Magnesium (Mg)
+- `minecraft:golden_dandelion`
 - `minecraft:element_14`
 [Education Edition] Silicon (Si)
 - `minecraft:pale_oak_standing_sign`

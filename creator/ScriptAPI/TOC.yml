@@ -196,6 +196,8 @@
       href: minecraft/server/AimAssistPresetSettings.md
     - name: AimAssistRegistry
       href: minecraft/server/AimAssistRegistry.md
+    - name: BannerPattern
+      href: minecraft/server/BannerPattern.md
     - name: BiomeType
       href: minecraft/server/BiomeType.md
     - name: BiomeTypes
@@ -1216,6 +1218,10 @@
       href: minecraft/server-editor/BrushElevationMode.md
     - name: ButtonVariant
       href: minecraft/server-editor/ButtonVariant.md
+    - name: CollectionTreeEntryItemType
+      href: minecraft/server-editor/CollectionTreeEntryItemType.md
+    - name: CollectionTreeSortType
+      href: minecraft/server-editor/CollectionTreeSortType.md
     - name: ColorPickerPropertyItemVariant
       href: minecraft/server-editor/ColorPickerPropertyItemVariant.md
     - name: ComboBoxPropertyItemDataType
@@ -1500,10 +1506,20 @@
       href: minecraft/server-editor/WidgetComponentRenderPrimitiveTypeBase.md
     - name: WidgetComponentRenderPrimitiveTypeBox
       href: minecraft/server-editor/WidgetComponentRenderPrimitiveTypeBox.md
+    - name: WidgetComponentRenderPrimitiveTypeCone
+      href: minecraft/server-editor/WidgetComponentRenderPrimitiveTypeCone.md
+    - name: WidgetComponentRenderPrimitiveTypeCuboid
+      href: minecraft/server-editor/WidgetComponentRenderPrimitiveTypeCuboid.md
+    - name: WidgetComponentRenderPrimitiveTypeCylinder
+      href: minecraft/server-editor/WidgetComponentRenderPrimitiveTypeCylinder.md
     - name: WidgetComponentRenderPrimitiveTypeDisc
       href: minecraft/server-editor/WidgetComponentRenderPrimitiveTypeDisc.md
+    - name: WidgetComponentRenderPrimitiveTypeEllipsoid
+      href: minecraft/server-editor/WidgetComponentRenderPrimitiveTypeEllipsoid.md
     - name: WidgetComponentRenderPrimitiveTypeLine
       href: minecraft/server-editor/WidgetComponentRenderPrimitiveTypeLine.md
+    - name: WidgetComponentRenderPrimitiveTypePyramid
+      href: minecraft/server-editor/WidgetComponentRenderPrimitiveTypePyramid.md
     - name: WidgetComponentSpline
       href: minecraft/server-editor/WidgetComponentSpline.md
     - name: WidgetComponentText
@@ -1578,6 +1594,22 @@
       href: minecraft/server-editor/IButtonPropertyItem.md
     - name: IButtonPropertyItemOptions
       href: minecraft/server-editor/IButtonPropertyItemOptions.md
+    - name: ICollectionTreeEntry
+      href: minecraft/server-editor/ICollectionTreeEntry.md
+    - name: ICollectionTreeEntryDropdownItem
+      href: minecraft/server-editor/ICollectionTreeEntryDropdownItem.md
+    - name: ICollectionTreeEntryItem
+      href: minecraft/server-editor/ICollectionTreeEntryItem.md
+    - name: ICollectionTreeEntryNumberItem
+      href: minecraft/server-editor/ICollectionTreeEntryNumberItem.md
+    - name: ICollectionTreeEntryStringItem
+      href: minecraft/server-editor/ICollectionTreeEntryStringItem.md
+    - name: ICollectionTreeFolder
+      href: minecraft/server-editor/ICollectionTreeFolder.md
+    - name: ICollectionTreePropertyItem
+      href: minecraft/server-editor/ICollectionTreePropertyItem.md
+    - name: ICollectionTreePropertyItemOptions
+      href: minecraft/server-editor/ICollectionTreePropertyItemOptions.md
     - name: IColorPickerPropertyItem
       href: minecraft/server-editor/IColorPickerPropertyItem.md
     - name: IColorPickerPropertyItemOptions
@@ -1740,6 +1772,12 @@
       href: minecraft/server-editor/IVector3PropertyItem.md
     - name: IVector3PropertyItemOptions
       href: minecraft/server-editor/IVector3PropertyItemOptions.md
+    - name: IVector3TimelinePropertyItem
+      href: minecraft/server-editor/IVector3TimelinePropertyItem.md
+    - name: IVector3TimelinePropertyItemEntry
+      href: minecraft/server-editor/IVector3TimelinePropertyItemEntry.md
+    - name: IVector3TimelinePropertyItemOptions
+      href: minecraft/server-editor/IVector3TimelinePropertyItemOptions.md
     - name: LocalizationEntry
       href: minecraft/server-editor/LocalizationEntry.md
     - name: LogProperties
@@ -1808,6 +1846,20 @@
       href: minecraft/server-editor/EventHandler.md
     - name: GraphicsSettingsPropertyTypeMap
       href: minecraft/server-editor/GraphicsSettingsPropertyTypeMap.md
+    - name: ICollectionTreeEntryDropdownItemMenuOption
+      href: minecraft/server-editor/ICollectionTreeEntryDropdownItemMenuOption.md
+    - name: ICollectionTreeEntryDropdownItemParams
+      href: minecraft/server-editor/ICollectionTreeEntryDropdownItemParams.md
+    - name: ICollectionTreeEntryNumberItemParams
+      href: minecraft/server-editor/ICollectionTreeEntryNumberItemParams.md
+    - name: ICollectionTreeEntryOptions
+      href: minecraft/server-editor/ICollectionTreeEntryOptions.md
+    - name: ICollectionTreeEntryStringItemParams
+      href: minecraft/server-editor/ICollectionTreeEntryStringItemParams.md
+    - name: ICollectionTreeFolderHeaderActionParams
+      href: minecraft/server-editor/ICollectionTreeFolderHeaderActionParams.md
+    - name: ICollectionTreeFolderOptions
+      href: minecraft/server-editor/ICollectionTreeFolderOptions.md
     - name: ImageAnimationData
       href: minecraft/server-editor/ImageAnimationData.md
     - name: ImageResourceData
@@ -1992,8 +2044,12 @@
       href: minecraft/server-ui/ActionFormData.md
     - name: ActionFormResponse
       href: minecraft/server-ui/ActionFormResponse.md
+    - name: CustomForm
+      href: minecraft/server-ui/CustomForm.md
     - name: FormResponse
       href: minecraft/server-ui/FormResponse.md
+    - name: MessageBox
+      href: minecraft/server-ui/MessageBox.md
     - name: MessageFormData
       href: minecraft/server-ui/MessageFormData.md
     - name: MessageFormResponse
@@ -2002,8 +2058,22 @@
       href: minecraft/server-ui/ModalFormData.md
     - name: ModalFormResponse
       href: minecraft/server-ui/ModalFormResponse.md
+    - name: Observable
+      href: minecraft/server-ui/Observable.md
     - name: UIManager
       href: minecraft/server-ui/UIManager.md
+    - name: ButtonOptions
+      href: minecraft/server-ui/ButtonOptions.md
+    - name: DividerOptions
+      href: minecraft/server-ui/DividerOptions.md
+    - name: DropdownItem
+      href: minecraft/server-ui/DropdownItem.md
+    - name: DropdownOptions
+      href: minecraft/server-ui/DropdownOptions.md
+    - name: LabelOptions
+      href: minecraft/server-ui/LabelOptions.md
+    - name: MessageBoxResult
+      href: minecraft/server-ui/MessageBoxResult.md
     - name: ModalFormDataDropdownOptions
       href: minecraft/server-ui/ModalFormDataDropdownOptions.md
     - name: ModalFormDataSliderOptions
@@ -2012,3 +2082,15 @@
       href: minecraft/server-ui/ModalFormDataTextFieldOptions.md
     - name: ModalFormDataToggleOptions
       href: minecraft/server-ui/ModalFormDataToggleOptions.md
+    - name: ObservableOptions
+      href: minecraft/server-ui/ObservableOptions.md
+    - name: SliderOptions
+      href: minecraft/server-ui/SliderOptions.md
+    - name: SpacingOptions
+      href: minecraft/server-ui/SpacingOptions.md
+    - name: TextFieldOptions
+      href: minecraft/server-ui/TextFieldOptions.md
+    - name: ToggleOptions
+      href: minecraft/server-ui/ToggleOptions.md
+    - name: UIRawMessage
+      href: minecraft/server-ui/UIRawMessage.md

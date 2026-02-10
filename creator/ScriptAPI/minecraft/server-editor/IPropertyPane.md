@@ -36,6 +36,7 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 - [addBool](#addbool)
 - [addButton](#addbutton)
 - [addButtonPane](#addbuttonpane)
+- [addCollectionTree](#addcollectiontree)
 - [addColorPicker](#addcolorpicker)
 - [addColorTimeline](#addcolortimeline)
 - [addComboBox](#addcombobox)
@@ -56,6 +57,7 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 - [addToggleGroup](#addtogglegroup)
 - [addVector2](#addvector2)
 - [addVector3](#addvector3)
+- [addVector3Timeline](#addvector3timeline)
 - [beginConstruct](#beginconstruct)
 - [collapse](#collapse)
 - [createSubPane](#createsubpane)
@@ -128,6 +130,18 @@ Adds a pane for grouped button layout.
 - **options**?: *IButtonPanePropertyItemOptions*
 
 **Returns** *IButtonPanePropertyItem*
+
+### **addCollectionTree**
+`
+addCollectionTree(options: ICollectionTreePropertyItemOptions): ICollectionTreePropertyItem
+`
+
+Adds a tree view for collections with folders and entries.
+
+#### **Parameters**
+- **options**: *ICollectionTreePropertyItemOptions*
+
+**Returns** *ICollectionTreePropertyItem*
 
 ### **addColorPicker**
 `
@@ -386,6 +400,19 @@ Adds a Vector3 item to the pane.
 - **options**?: *IVector3PropertyItemOptions*
 
 **Returns** *IVector3PropertyItem*
+
+### **addVector3Timeline**
+`
+addVector3Timeline(value: IObservableProp<number>, options?: IVector3TimelinePropertyItemOptions): IVector3TimelinePropertyItem
+`
+
+Adds a Vector3 Timeline item to the pane.
+
+#### **Parameters**
+- **value**: *IObservableProp<number>*
+- **options**?: *IVector3TimelinePropertyItemOptions*
+
+**Returns** *IVector3TimelinePropertyItem*
 
 ### **beginConstruct**
 `

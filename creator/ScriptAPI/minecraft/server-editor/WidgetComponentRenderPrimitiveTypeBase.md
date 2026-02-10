@@ -12,8 +12,13 @@ description: Contents of the @minecraft/server-editor.WidgetComponentRenderPrimi
 ## Classes that extend WidgetComponentRenderPrimitiveTypeBase
 - [*WidgetComponentRenderPrimitiveTypeAxialSphere*](WidgetComponentRenderPrimitiveTypeAxialSphere.md)
 - [*WidgetComponentRenderPrimitiveTypeBox*](WidgetComponentRenderPrimitiveTypeBox.md)
+- [*WidgetComponentRenderPrimitiveTypeCone*](WidgetComponentRenderPrimitiveTypeCone.md)
+- [*WidgetComponentRenderPrimitiveTypeCuboid*](WidgetComponentRenderPrimitiveTypeCuboid.md)
+- [*WidgetComponentRenderPrimitiveTypeCylinder*](WidgetComponentRenderPrimitiveTypeCylinder.md)
 - [*WidgetComponentRenderPrimitiveTypeDisc*](WidgetComponentRenderPrimitiveTypeDisc.md)
+- [*WidgetComponentRenderPrimitiveTypeEllipsoid*](WidgetComponentRenderPrimitiveTypeEllipsoid.md)
 - [*WidgetComponentRenderPrimitiveTypeLine*](WidgetComponentRenderPrimitiveTypeLine.md)
+- [*WidgetComponentRenderPrimitiveTypePyramid*](WidgetComponentRenderPrimitiveTypePyramid.md)
 
 ## Properties
 

@@ -25,7 +25,7 @@ Type: *string*[]
 
 ### **get**
 `
-"get"(name: string): unknown | undefined
+get(name: string): unknown | undefined
 `
 
 Returns the value of variable that has been configured in a dedicated server configuration JSON file.

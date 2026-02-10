@@ -20,3 +20,13 @@ description: Contents of the @minecraft/server-editor.PrimitiveType enumeration.
 `Disc = 4`
 ### **AxialSphere**
 `AxialSphere = 5`
+### **Cylinder**
+`Cylinder = 7`
+### **Pyramid**
+`Pyramid = 8`
+### **Ellipsoid**
+`Ellipsoid = 9`
+### **Cuboid**
+`Cuboid = 10`
+### **Cone**
+`Cone = 11`
