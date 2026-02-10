@@ -28,7 +28,7 @@ The `@minecraft/server-ui` module contains types for expressing simple dialog-ba
     "version": "2.0.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.10-beta.20 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.10-beta.22 of Minecraft.
 
 ## Available Versions
 - `2.1.0-beta`
@@ -50,18 +50,33 @@ The following API versions are from a major version that is documented here: [*@
 ## Classes
 - [ActionFormData](ActionFormData.md)
 - [ActionFormResponse](ActionFormResponse.md)
+- [CustomForm](CustomForm.md)
 - [FormResponse](FormResponse.md)
+- [MessageBox](MessageBox.md)
 - [MessageFormData](MessageFormData.md)
 - [MessageFormResponse](MessageFormResponse.md)
 - [ModalFormData](ModalFormData.md)
 - [ModalFormResponse](ModalFormResponse.md)
+- [Observable](Observable.md)
 - [UIManager](UIManager.md)
 
 ## Interfaces
+- [ButtonOptions](ButtonOptions.md)
+- [DividerOptions](DividerOptions.md)
+- [DropdownItem](DropdownItem.md)
+- [DropdownOptions](DropdownOptions.md)
+- [LabelOptions](LabelOptions.md)
+- [MessageBoxResult](MessageBoxResult.md)
 - [ModalFormDataDropdownOptions](ModalFormDataDropdownOptions.md)
 - [ModalFormDataSliderOptions](ModalFormDataSliderOptions.md)
 - [ModalFormDataTextFieldOptions](ModalFormDataTextFieldOptions.md)
 - [ModalFormDataToggleOptions](ModalFormDataToggleOptions.md)
+- [ObservableOptions](ObservableOptions.md)
+- [SliderOptions](SliderOptions.md)
+- [SpacingOptions](SpacingOptions.md)
+- [TextFieldOptions](TextFieldOptions.md)
+- [ToggleOptions](ToggleOptions.md)
+- [UIRawMessage](UIRawMessage.md)
 
 ## Errors
 - [FormRejectError](FormRejectError.md)

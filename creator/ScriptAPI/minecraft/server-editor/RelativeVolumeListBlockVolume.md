@@ -117,7 +117,7 @@ Notes:
 
 ### **set**
 `
-"set"(toSet: minecraftserver.Vector3[] | minecraftserver.BlockVolume | minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume | minecraftserver.Vector3): void
+set(toSet: minecraftserver.Vector3[] | minecraftserver.BlockVolume | minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume | minecraftserver.Vector3): void
 `
 
 #### **Parameters**

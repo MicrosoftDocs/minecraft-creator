@@ -12,7 +12,33 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "trust_event",
+      "title": "Trust Event",
+      "description": "Event to run when this entity becomes trusting. Can be an object with event and target properties, or a simple event string.",
+      "dataType": 16,
+      "subFormId": "ActorDefinitionTrigger",
+      "alternates": [
+        {
+          "id": "trust_event",
+          "dataType": 2
+        }
+      ]
+    },
+    {
+      "id": "trust_items",
+      "title": "Trust Items",
+      "description": "The list of items that can be used to get the entity to trust players. Can be an array or a single item string.",
+      "dataType": 17,
+      "alternates": [
+        {
+          "id": "trust_items",
+          "dataType": 2
+        }
+      ]
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:trusting",
     "title": "Trusting",

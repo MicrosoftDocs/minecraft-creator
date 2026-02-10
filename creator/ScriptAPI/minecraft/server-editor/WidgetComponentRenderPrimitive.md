@@ -28,11 +28,11 @@ Notes:
 
 ### **setPrimitive**
 `
-setPrimitive(primitive: WidgetComponentRenderPrimitiveTypeAxialSphere | WidgetComponentRenderPrimitiveTypeBox | WidgetComponentRenderPrimitiveTypeDisc | WidgetComponentRenderPrimitiveTypeLine): void
+setPrimitive(primitive: WidgetComponentRenderPrimitiveTypeAxialSphere | WidgetComponentRenderPrimitiveTypeBox | WidgetComponentRenderPrimitiveTypeCone | WidgetComponentRenderPrimitiveTypeCuboid | WidgetComponentRenderPrimitiveTypeCylinder | WidgetComponentRenderPrimitiveTypeDisc | WidgetComponentRenderPrimitiveTypeEllipsoid | WidgetComponentRenderPrimitiveTypeLine | WidgetComponentRenderPrimitiveTypePyramid): void
 `
 
 #### **Parameters**
-- **primitive**: [*WidgetComponentRenderPrimitiveTypeAxialSphere*](WidgetComponentRenderPrimitiveTypeAxialSphere.md) | [*WidgetComponentRenderPrimitiveTypeBox*](WidgetComponentRenderPrimitiveTypeBox.md) | [*WidgetComponentRenderPrimitiveTypeDisc*](WidgetComponentRenderPrimitiveTypeDisc.md) | [*WidgetComponentRenderPrimitiveTypeLine*](WidgetComponentRenderPrimitiveTypeLine.md)
+- **primitive**: [*WidgetComponentRenderPrimitiveTypeAxialSphere*](WidgetComponentRenderPrimitiveTypeAxialSphere.md) | [*WidgetComponentRenderPrimitiveTypeBox*](WidgetComponentRenderPrimitiveTypeBox.md) | [*WidgetComponentRenderPrimitiveTypeCone*](WidgetComponentRenderPrimitiveTypeCone.md) | [*WidgetComponentRenderPrimitiveTypeCuboid*](WidgetComponentRenderPrimitiveTypeCuboid.md) | [*WidgetComponentRenderPrimitiveTypeCylinder*](WidgetComponentRenderPrimitiveTypeCylinder.md) | [*WidgetComponentRenderPrimitiveTypeDisc*](WidgetComponentRenderPrimitiveTypeDisc.md) | [*WidgetComponentRenderPrimitiveTypeEllipsoid*](WidgetComponentRenderPrimitiveTypeEllipsoid.md) | [*WidgetComponentRenderPrimitiveTypeLine*](WidgetComponentRenderPrimitiveTypeLine.md) | [*WidgetComponentRenderPrimitiveTypePyramid*](WidgetComponentRenderPrimitiveTypePyramid.md)
   
 Notes:
 - This function can't be called in restricted-execution mode.

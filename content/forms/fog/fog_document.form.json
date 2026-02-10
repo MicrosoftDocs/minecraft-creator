@@ -57,7 +57,55 @@
             "id": "distance",
             "title": "Distance",
             "description": "Distance-based fog settings for air, water, lava, and weather conditions.",
-            "dataType": 16
+            "dataType": 16,
+            "subForm": {
+              "id": "fog_distance",
+              "title": "Fog Distance Settings",
+              "fields": [
+                {
+                  "id": "air",
+                  "title": "Air",
+                  "description": "Fog settings when the player is in air.",
+                  "dataType": 16,
+                  "subFormId": "fog/fog_distance_settings"
+                },
+                {
+                  "id": "water",
+                  "title": "Water",
+                  "description": "Fog settings when the player is in water.",
+                  "dataType": 16,
+                  "subFormId": "fog/fog_distance_settings_with_transition"
+                },
+                {
+                  "id": "lava",
+                  "title": "Lava",
+                  "description": "Fog settings when the player is in lava.",
+                  "dataType": 16,
+                  "subFormId": "fog/fog_distance_settings"
+                },
+                {
+                  "id": "lava_resistance",
+                  "title": "Lava Resistance",
+                  "description": "Fog settings when the player is in lava with fire resistance.",
+                  "dataType": 16,
+                  "subFormId": "fog/fog_distance_settings"
+                },
+                {
+                  "id": "weather",
+                  "title": "Weather",
+                  "description": "Fog settings during weather conditions.",
+                  "dataType": 16,
+                  "subFormId": "fog/fog_distance_settings"
+                },
+                {
+                  "id": "powder_snow",
+                  "title": "Powder Snow",
+                  "description": "Fog settings when the player is in powder snow.",
+                  "dataType": 16,
+                  "subFormId": "fog/fog_distance_settings"
+                }
+              ]
+            }
           },
           {
             "id": "volumetric",

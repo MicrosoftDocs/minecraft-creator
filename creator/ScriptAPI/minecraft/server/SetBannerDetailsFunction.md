@@ -16,6 +16,30 @@ Loot item function that modifies the type of a banner that drops.
 
 ## Properties
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **baseColor**
+`read-only baseColor: string;`
+
+The base color for the dropped banner.
+
+Type: *string*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **patterns**
+`read-only patterns: BannerPattern[];`
+
+An array of [*@minecraft/server.BannerPattern*](../../../scriptapi/minecraft/server/BannerPattern.md) objects used to decorate the banner, including color and pattern type.
+
+Type: [*BannerPattern*](BannerPattern.md)[]
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **type**
 `read-only type: number;`
 

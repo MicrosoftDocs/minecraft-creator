@@ -178,7 +178,20 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "entities",
+      "title": "Entities",
+      "description": "List of entity spawn definitions. Can be a single object or an array of objects.",
+      "dataType": 15,
+      "alternates": [
+        {
+          "id": "entities",
+          "dataType": 16
+        }
+      ]
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:spawn_entity",
     "title": "Spawn Entity",

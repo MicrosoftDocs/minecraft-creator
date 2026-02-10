@@ -44,6 +44,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`AimAssistPreset`](AimAssistPreset.md)*
 #### Added *[`AimAssistPresetSettings`](AimAssistPresetSettings.md)*
 #### Added *[`AimAssistRegistry`](AimAssistRegistry.md)*
+#### Added *[`BannerPattern`](BannerPattern.md)*
 #### Changed *[`BiomeType`](BiomeType.md)*
 - Added function *[`getTags`](BiomeType.md#gettags)*
 - Added function *[`hasTags`](BiomeType.md#hastags)*
@@ -130,6 +131,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PackSettingChangeAfterEvent`](PackSettingChangeAfterEvent.md)*
 #### Added *[`PackSettingChangeAfterEventSignal`](PackSettingChangeAfterEventSignal.md)*
 #### Changed *[`Player`](Player.md)*
+- Added property *[`partyId`](Player.md#partyid)*
 - Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`getAimAssist`](Player.md#getaimassist)*
 - Added function *[`postClientMessage`](Player.md#postclientmessage)*
@@ -146,6 +148,9 @@ description: Changelog of the `@minecraft/server` module
   - Changed argument `potionEffectType` type from [*PotionEffectType*](PotionEffectType.md) | *string* to *PotionEffectType* | *T*
   - Changed argument `potionDeliveryType` type from [*PotionDeliveryType*](PotionDeliveryType.md) | *string* to *PotionDeliveryType* | *U*
 #### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
+#### Changed *[`SetBannerDetailsFunction`](SetBannerDetailsFunction.md)*
+- Added property *[`baseColor`](SetBannerDetailsFunction.md#basecolor)*
+- Added property *[`patterns`](SetBannerDetailsFunction.md#patterns)*
 #### Changed *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
 - Added property *[`watchdogTerminate`](SystemBeforeEvents.md#watchdogterminate)*
 #### Added *[`TickingAreaManager`](TickingAreaManager.md)*

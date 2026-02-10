@@ -55,7 +55,7 @@ Notes:
 
 ### **get**
 `
-"get"(): RelativeVolumeListBlockVolume
+get(): RelativeVolumeListBlockVolume
 `
 
 **Returns** [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
@@ -94,7 +94,7 @@ Notes:
 
 ### **set**
 `
-"set"(volume: minecraftserver.Vector3[] | minecraftserver.BlockVolume | minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume | minecraftserver.Vector3): void
+set(volume: minecraftserver.Vector3[] | minecraftserver.BlockVolume | minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume | minecraftserver.Vector3): void
 `
 
 #### **Parameters**

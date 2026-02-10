@@ -16,16 +16,28 @@
   "fields": [
     {
       "id": "attack_cooldown_complete_event",
-      "description": "Event to be run when the cooldown is complete.",
-      "dataType": 8,
-      "lookupId": "entityTypeEvents"
+      "description": "Event to be run when the cooldown is complete. Can be an object with event and target properties, or a simple event string.",
+      "dataType": 16,
+      "subFormId": "ActorDefinitionTrigger",
+      "alternates": [
+        {
+          "id": "attack_cooldown_complete_event",
+          "dataType": 2
+        }
+      ]
     },
     {
       "id": "attack_cooldown_time",
       "description": "Amount of time in seconds for the cooldown. Can be specified as a number or a pair of numbers (min and max).",
       "dataType": 19,
       "minValue": 0,
-      "maxValue": 1
+      "maxValue": 1,
+      "alternates": [
+        {
+          "id": "attack_cooldown_time",
+          "dataType": 3
+        }
+      ]
     }
   ],
   "generated_doNotEdit": {

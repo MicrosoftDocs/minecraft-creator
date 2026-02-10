@@ -20,7 +20,7 @@ Enumerates all [*@minecraft/server.BlockStateType*](../../../priorscriptapi/mine
 
 ### **get**
 `
-static "get"(stateName: string): BlockStateType | undefined
+static get(stateName: string): BlockStateType | undefined
 `
 
 Retrieves a specific block state instance.

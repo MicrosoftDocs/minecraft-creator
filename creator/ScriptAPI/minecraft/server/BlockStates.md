@@ -17,7 +17,7 @@ Enumerates all [*@minecraft/server.BlockStateType*](../../../scriptapi/minecraft
 
 ### **get**
 `
-static "get"(stateName: string): BlockStateType | undefined
+static get(stateName: string): BlockStateType | undefined
 `
 
 Retrieves a specific block state instance.

@@ -17,7 +17,7 @@ Contains a catalog of Minecraft Block Types that are available in this world.
 
 ### **get**
 `
-static "get"(typeName: string): BlockType | undefined
+static get(typeName: string): BlockType | undefined
 `
 
 Returns a BlockType object for the specified identifier.

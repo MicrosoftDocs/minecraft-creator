@@ -17,7 +17,7 @@ Used for accessing all available dimension types.
 
 ### **get**
 `
-static "get"(dimensionTypeId: string): DimensionType | undefined
+static get(dimensionTypeId: string): DimensionType | undefined
 `
 
 Retrieves a dimension type using a string-based identifier.

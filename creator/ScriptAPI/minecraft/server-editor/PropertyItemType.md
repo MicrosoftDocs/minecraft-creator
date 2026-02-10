@@ -22,6 +22,8 @@ Type of item that can be added to the property pane
 `Button = editorUI:Button`
 ### **ButtonPane**
 `ButtonPane = editorUI:ButtonPane`
+### **CollectionTree**
+`CollectionTree = editorUI:CollectionTree`
 ### **ColorPicker**
 `ColorPicker = editorUI:ColorPicker`
 ### **ColorTimeline**
@@ -64,3 +66,5 @@ Type of item that can be added to the property pane
 `Vector2 = editorUI:Vector2`
 ### **Vector3**
 `Vector3 = editorUI:Vector3`
+### **Vector3Timeline**
+`Vector3Timeline = editorUI:Vector3Timeline`

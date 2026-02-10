@@ -24,7 +24,16 @@
     },
     {
       "id": "tame_event",
-      "title": "Event to fire when the entity is tamed"
+      "title": "Event to fire when the entity is tamed",
+      "description": "Event to fire when the entity is tamed. Can be an object with event and target properties, or a simple event string.",
+      "dataType": 16,
+      "subFormId": "ActorDefinitionTrigger",
+      "alternates": [
+        {
+          "id": "tame_event",
+          "dataType": 2
+        }
+      ]
     }
   ],
   "generated_doNotEdit": {

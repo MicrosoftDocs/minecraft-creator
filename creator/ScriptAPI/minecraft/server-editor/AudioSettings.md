@@ -17,7 +17,7 @@ description: Contents of the @minecraft/server-editor.AudioSettings class.
 
 ### **get**
 `
-"get"(property: T): AudioSettingsPropertyTypeMap[T] | undefined
+get(property: T): AudioSettingsPropertyTypeMap[T] | undefined
 `
 
 #### **Parameters**
@@ -34,7 +34,7 @@ getAll(): AudioSettingsPropertyTypeMap
 
 ### **set**
 `
-"set"(property: T, value: AudioSettingsPropertyTypeMap[T]): void
+set(property: T, value: AudioSettingsPropertyTypeMap[T]): void
 `
 
 #### **Parameters**
