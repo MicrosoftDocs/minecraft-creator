@@ -12,7 +12,33 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "items",
+      "title": "Items",
+      "description": "The list of items that can be given to the entity to place in their inventory. Can be an array or a single item string.",
+      "dataType": 17,
+      "alternates": [
+        {
+          "id": "items",
+          "dataType": 2
+        }
+      ]
+    },
+    {
+      "id": "on_give",
+      "title": "Give Event",
+      "description": "Event to fire when the correct item is given. Can be an object with event and target properties, or a simple event string.",
+      "dataType": 16,
+      "subFormId": "ActorDefinitionTrigger",
+      "alternates": [
+        {
+          "id": "on_give",
+          "dataType": 2
+        }
+      ]
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:giveable",
     "title": "Giveable",

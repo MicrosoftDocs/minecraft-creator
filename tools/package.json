@@ -4,11 +4,11 @@
     "ajv-formats": "^2.1.1",
     "del": "^8.0.0",
     "gulp": "^4.0.2",
+    "shx": "^0.4.0",
     "typescript": "^5.3.0"
   },
   "dependencies": {
     "@minecraft/creator-tools": "^0.15.2",
-    "@modelcontextprotocol/sdk": "^1.25.1",
     "mctools-int": "file:packages/mctools-int-0.0.1.tgz"
   },
   "scripts": {
@@ -23,7 +23,7 @@
     "build-int": "npm run-script syncres && npm run-script updateformsource-int && npm run-script processcontent-int && npm run-script syncres && npx mctools-int docsgeneratemarkdown --base-path ./build/workcontent/public/ -i ./build/workcontent/public/data/forms/ -o ./out/msdocs/ && npm run-script generatetypes-int && npm run-script generateschema-int",
     "generatetypes-int": "npx mctools-int docsgeneratetypes --base-path ./build/workcontent/public/ -i ./build/workcontent/public/data/forms/ -o ./out/types/",
     "generateschema-int": "npx mctools-int docsgeneratejsonschema --base-path ./build/workcontent/public/ -i ./build/workcontent/public/data/forms/ -o ./out/schema/",
-    "installlocalmct": "cd ../../minecraft-creator-tools-internal/app/toolbuild/jsn && npm pack && mkdir -p ../../../../minecraft-creator-pr/tools/packages && mv mctools-int-*.tgz ../../../../minecraft-creator-pr/tools/packages/ && cd ../../../../minecraft-creator-pr/tools && npm i ./packages/mctools-int-*.tgz",
-    "syncres": "cp -r ../../minecraft-creator-tools-internal/app/reslist/* ./reslist/ && cp ../../minecraft-creator-tools-internal/app/public/data/mccat.json ./build/workcontent/public/data/ && mkdir -p ./build/workcontent/public/data/mci && cp ../../minecraft-creator-tools-internal/app/public/data/mci/preview.mci.json ./build/workcontent/public/data/mci/"
+    "installlocalmct": "npx shx rm -rf packages && npx shx rm -rf ../../minecraft-creator-tools-internal/app/toolbuild/jsn/*.tgz && cd ../../minecraft-creator-tools-internal/app/toolbuild/jsn && npm pack && cd ../../../../minecraft-creator-pr/tools && npx shx mkdir -p packages && npx shx cp ../../minecraft-creator-tools-internal/app/toolbuild/jsn/mctools-int-0.0.1.tgz packages/ && npm i ./packages/mctools-int-0.0.1.tgz",
+    "syncres": "npx shx cp -r ../../minecraft-creator-tools-internal/app/reslist/* ./reslist/ && npx shx cp ../../minecraft-creator-tools-internal/app/public/data/mccat.json ./build/workcontent/public/data/ && npx shx mkdir -p ./build/workcontent/public/data/mci && npx shx cp ../../minecraft-creator-tools-internal/app/public/data/mci/preview.mci.json ./build/workcontent/public/data/mci/"
   }
 }

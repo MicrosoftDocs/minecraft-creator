@@ -54,45 +54,9 @@
     {
       "id": "damage",
       "description": "Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it. Can be a number, an array [min, max], or an object with range_min and range_max properties.",
-      "dataType": 3,
+      "dataType": 19,
       "minValue": -50,
-      "maxValue": 50,
-      "alternates": [
-        {
-          "id": "damage",
-          "dataType": 15,
-          "subForm": {
-            "fields": [
-              {
-                "id": "0",
-                "dataType": 3
-              },
-              {
-                "id": "1",
-                "dataType": 3
-              }
-            ]
-          }
-        },
-        {
-          "id": "damage",
-          "dataType": 16,
-          "subForm": {
-            "fields": [
-              {
-                "id": "range_min",
-                "dataType": 3,
-                "description": "Minimum damage value"
-              },
-              {
-                "id": "range_max",
-                "dataType": 3,
-                "description": "Maximum damage value"
-              }
-            ]
-          }
-        }
-      ]
+      "maxValue": 50
     },
     {
       "id": "effect_duration",

@@ -138,9 +138,16 @@
       "dataType": 3
     },
     {
-      "id": "feedItems",
-      "description": "List of items that can be fed to an entity to age them up",
-      "dataType": 17
+      "id": "feed_items",
+      "title": "Feed Items",
+      "description": "List of items that can be fed to an entity to age them up. Can be a single item string or an array of items.",
+      "dataType": 17,
+      "alternates": [
+        {
+          "id": "feed_items",
+          "dataType": 2
+        }
+      ]
     },
     {
       "id": "drop_items",
@@ -150,7 +157,15 @@
     {
       "id": "grow_up",
       "title": "Grow up event",
-      "description": "Event to fire when an entity grows up"
+      "description": "Event to fire when an entity grows up. Can be an object with event and target properties, or a simple event string.",
+      "dataType": 16,
+      "subFormId": "ActorDefinitionTrigger",
+      "alternates": [
+        {
+          "id": "grow_up",
+          "dataType": 2
+        }
+      ]
     }
   ],
   "generated_doNotEdit": {

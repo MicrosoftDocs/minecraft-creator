@@ -12,7 +12,33 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "time",
+      "title": "Time",
+      "description": "Amount of time in seconds for the timer. Can be specified as a number or a pair of numbers (min and max). Incompatible with random_time_choices.",
+      "dataType": 19,
+      "alternates": [
+        {
+          "id": "time",
+          "dataType": 3
+        }
+      ]
+    },
+    {
+      "id": "time_down_event",
+      "title": "Time Down Event",
+      "description": "Event to fire when the time on the timer runs out. Can be an object with event and target properties, or a simple event string.",
+      "dataType": 16,
+      "subFormId": "ActorDefinitionTrigger",
+      "alternates": [
+        {
+          "id": "time_down_event",
+          "dataType": 2
+        }
+      ]
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:timer",
     "title": "Timer",

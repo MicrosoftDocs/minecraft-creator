@@ -100,7 +100,59 @@
       "id": "block_sounds",
       "title": "Block Sounds",
       "description": "Defines sounds that play when interacting with blocks (breaking, placing, stepping).",
-      "dataType": 16
+      "dataType": 14,
+      "subForm": {
+        "id": "block_sound_definition",
+        "fields": [
+          {
+            "id": "base",
+            "title": "Base",
+            "description": "Parent sound category to inherit sound settings from.",
+            "dataType": 2
+          },
+          {
+            "id": "volume",
+            "title": "Volume",
+            "description": "Volume multiplier for block sounds.",
+            "dataType": 19
+          },
+          {
+            "id": "pitch",
+            "title": "Pitch",
+            "description": "Pitch multiplier for block sounds. Can be a single value or a range [min, max].",
+            "dataType": 19
+          },
+          {
+            "id": "events",
+            "title": "Events",
+            "description": "Sound events for this block type (break, place, step, hit, fall, etc.).",
+            "dataType": 14,
+            "subForm": {
+              "id": "block_sound_event",
+              "fields": [
+                {
+                  "id": "sound",
+                  "title": "Sound",
+                  "description": "The sound identifier to play for this event.",
+                  "dataType": 2
+                },
+                {
+                  "id": "volume",
+                  "title": "Volume",
+                  "description": "Volume for this event.",
+                  "dataType": 19
+                },
+                {
+                  "id": "pitch",
+                  "title": "Pitch",
+                  "description": "Pitch for this event.",
+                  "dataType": 19
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     {
       "id": "entity_sounds",
@@ -267,6 +319,12 @@
             "subForm": {
               "id": "interactive_block_sound",
               "fields": [
+                {
+                  "id": "base",
+                  "title": "Base",
+                  "description": "Parent sound category to inherit from.",
+                  "dataType": 2
+                },
                 {
                   "id": "volume",
                   "title": "Volume",

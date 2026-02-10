@@ -143,7 +143,15 @@
     },
     {
       "id": "scheduled_events",
-      "dataType": 42
+      "title": "Scheduled Events",
+      "description": "The list of triggers that fire when the conditions match the given filter criteria. Can be an array of event objects or a single event object.",
+      "dataType": 15,
+      "alternates": [
+        {
+          "id": "scheduled_events",
+          "dataType": 16
+        }
+      ]
     }
   ],
   "generated_doNotEdit": {
