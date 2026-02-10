@@ -78,7 +78,7 @@ Notes:
 
 ### **delete**
 `
-"delete"(structure: string | Structure): boolean
+delete(structure: string | Structure): boolean
 `
 
 Deletes a structure from memory and from the world if it exists.
@@ -97,7 +97,7 @@ Notes:
 
 ### **get**
 `
-"get"(identifier: string): Structure | undefined
+get(identifier: string): Structure | undefined
 `
 
 Gets a Structure that is saved to memory or the world.

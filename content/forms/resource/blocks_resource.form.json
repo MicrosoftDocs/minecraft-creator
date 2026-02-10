@@ -123,6 +123,12 @@
           "dataType": 2
         },
         {
+          "id": "sounds",
+          "title": "Sounds",
+          "description": "The sound group to use for this block. Alias for 'sound' property.",
+          "dataType": 2
+        },
+        {
           "id": "isotropic",
           "title": "Isotropic",
           "description": "Whether the block uses isotropic (orientation-independent) textures. Can be a boolean for all faces or an object specifying per-face.",

@@ -87,7 +87,7 @@ Type: *string*
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **containsBiomes**
 `
-containsBiomes(volume: BlockVolumeBase, biomeFilter: BiomeFilter): boolean
+containsBiomes(volume: BlockVolumeBase, biomeFilter: BiomeFilter, isSuperset: boolean): boolean
 `
 
 Checks if an area contains the specified biomes. If the area is partially inside world boundaries, only the area that is in bounds will be searched. This operation takes longer proportional to both the area of the volume and the number of biomes to check.
@@ -98,7 +98,10 @@ Checks if an area contains the specified biomes. If the area is partially inside
   Area to check biomes in.
 - **biomeFilter**: [*BiomeFilter*](BiomeFilter.md)
   
-  A list of biomes to include and exclude. A list of tags to include and exclude. Will return false if a biome is found in the area that is in the excluded list or contains any of the excluded tags. If superset is set to true then the area must contain at least one biome in the included list or that contains all of the included tags. If superset is set to false then the area must contain only biomes in the included list and that contain all of the included tags
+  A list of biomes to include and exclude. A list of tags to include and exclude. Will return false if a biome is found in the area that is in the excluded list or contains any of the excluded tags.
+- **isSuperset**: *boolean*
+  
+  Superset is used to determine the strictness of the filter. If superset is set to true then the area must contain one or more biomes in the included list or that contains all of the included tags. If superset is set to false then the area must contain only biomes in the included list and that contain all of the included tags
 
 **Returns** *boolean* - Returns true if the biomes in the area match the filter settings passed in. Otherwise, returns false.
 

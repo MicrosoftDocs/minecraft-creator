@@ -23,7 +23,7 @@ Used for accessing all entity types currently available for use within the world
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **get**
 `
-static "get"(identifier: EntityIdentifierType<NoInfer<T>>): EntityType | undefined
+static get(identifier: EntityIdentifierType<NoInfer<T>>): EntityType | undefined
 `
 
 Retrieves an entity type using a string-based identifier.
@@ -49,7 +49,7 @@ Retrieves a set of all entity types within this world.
 ::: moniker range="=minecraft-bedrock-stable"
 ### **get**
 `
-static "get"(identifier: string): EntityType | undefined
+static get(identifier: string): EntityType | undefined
 `
 
 Retrieves an entity type using a string-based identifier.

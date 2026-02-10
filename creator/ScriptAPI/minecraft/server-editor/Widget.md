@@ -235,12 +235,12 @@ Notes:
 
 ### **addRenderPrimitiveComponent**
 `
-addRenderPrimitiveComponent(componentName: string, primitiveType: WidgetComponentRenderPrimitiveTypeAxialSphere | WidgetComponentRenderPrimitiveTypeBox | WidgetComponentRenderPrimitiveTypeDisc | WidgetComponentRenderPrimitiveTypeLine, options?: WidgetComponentRenderPrimitiveOptions): WidgetComponentRenderPrimitive
+addRenderPrimitiveComponent(componentName: string, primitiveType: WidgetComponentRenderPrimitiveTypeAxialSphere | WidgetComponentRenderPrimitiveTypeBox | WidgetComponentRenderPrimitiveTypeCone | WidgetComponentRenderPrimitiveTypeCuboid | WidgetComponentRenderPrimitiveTypeCylinder | WidgetComponentRenderPrimitiveTypeDisc | WidgetComponentRenderPrimitiveTypeEllipsoid | WidgetComponentRenderPrimitiveTypeLine | WidgetComponentRenderPrimitiveTypePyramid, options?: WidgetComponentRenderPrimitiveOptions): WidgetComponentRenderPrimitive
 `
 
 #### **Parameters**
 - **componentName**: *string*
-- **primitiveType**: [*WidgetComponentRenderPrimitiveTypeAxialSphere*](WidgetComponentRenderPrimitiveTypeAxialSphere.md) | [*WidgetComponentRenderPrimitiveTypeBox*](WidgetComponentRenderPrimitiveTypeBox.md) | [*WidgetComponentRenderPrimitiveTypeDisc*](WidgetComponentRenderPrimitiveTypeDisc.md) | [*WidgetComponentRenderPrimitiveTypeLine*](WidgetComponentRenderPrimitiveTypeLine.md)
+- **primitiveType**: [*WidgetComponentRenderPrimitiveTypeAxialSphere*](WidgetComponentRenderPrimitiveTypeAxialSphere.md) | [*WidgetComponentRenderPrimitiveTypeBox*](WidgetComponentRenderPrimitiveTypeBox.md) | [*WidgetComponentRenderPrimitiveTypeCone*](WidgetComponentRenderPrimitiveTypeCone.md) | [*WidgetComponentRenderPrimitiveTypeCuboid*](WidgetComponentRenderPrimitiveTypeCuboid.md) | [*WidgetComponentRenderPrimitiveTypeCylinder*](WidgetComponentRenderPrimitiveTypeCylinder.md) | [*WidgetComponentRenderPrimitiveTypeDisc*](WidgetComponentRenderPrimitiveTypeDisc.md) | [*WidgetComponentRenderPrimitiveTypeEllipsoid*](WidgetComponentRenderPrimitiveTypeEllipsoid.md) | [*WidgetComponentRenderPrimitiveTypeLine*](WidgetComponentRenderPrimitiveTypeLine.md) | [*WidgetComponentRenderPrimitiveTypePyramid*](WidgetComponentRenderPrimitiveTypePyramid.md)
 - **options**?: [*WidgetComponentRenderPrimitiveOptions*](WidgetComponentRenderPrimitiveOptions.md) = `null`
 
 **Returns** [*WidgetComponentRenderPrimitive*](WidgetComponentRenderPrimitive.md)
@@ -298,7 +298,7 @@ Notes:
 
 ### **delete**
 `
-"delete"(): void
+delete(): void
 `
   
 Notes:

@@ -19,7 +19,7 @@ Settings category that manages [*@minecraft/server-editor.GraphicsSettingsProper
 
 ### **get**
 `
-"get"(property: T): GraphicsSettingsPropertyTypeMap[T] | undefined
+get(property: T): GraphicsSettingsPropertyTypeMap[T] | undefined
 `
 
 Retrieves a graphics settings property value.
@@ -42,7 +42,7 @@ Retrieves all graphics settings properties and their values.
 
 ### **set**
 `
-"set"(property: T, value: GraphicsSettingsPropertyTypeMap[T]): void
+set(property: T, value: GraphicsSettingsPropertyTypeMap[T]): void
 `
 
 Modifies a graphics settings property value.

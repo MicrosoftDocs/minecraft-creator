@@ -117,6 +117,32 @@
       "minValue": 0,
       "suggestedMaxValue": 20,
       "defaultValue": 0
+    },
+    {
+      "id": "on_leash",
+      "title": "Leash Event",
+      "description": "Event to call when this entity is leashed. Can be an object with event and target properties, or a simple event string.",
+      "dataType": 16,
+      "subFormId": "ActorDefinitionTrigger",
+      "alternates": [
+        {
+          "id": "on_leash",
+          "dataType": 2
+        }
+      ]
+    },
+    {
+      "id": "on_unleash",
+      "title": "Unleash Event",
+      "description": "Event to call when this entity is unleashed. Can be an object with event and target properties, or a simple event string.",
+      "dataType": 16,
+      "subFormId": "ActorDefinitionTrigger",
+      "alternates": [
+        {
+          "id": "on_unleash",
+          "dataType": 2
+        }
+      ]
     }
   ],
   "generated_doNotEdit": {

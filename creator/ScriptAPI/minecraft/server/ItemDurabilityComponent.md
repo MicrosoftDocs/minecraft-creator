@@ -40,7 +40,7 @@ Notes:
 ### **unbreakable**
 `unbreakable: boolean;`
 
-Whether an item breaks or loses durability. Setting to true temporarily removes item's durabilty HUD, and freezes durability loss on item.
+Whether an item breaks or loses durability. Setting to true temporarily removes item's durability HUD, and freezes durability loss on item.
 
 Type: *boolean*
 

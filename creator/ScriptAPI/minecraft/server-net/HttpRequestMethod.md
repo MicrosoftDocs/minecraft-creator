@@ -22,6 +22,10 @@ Represents the method for an HTTP GET request. GET requests are commonly used to
 `Head = "Head"`
 
 Represents the method for an HTTP HEAD request. HEAD requests are similar to a GET request, but are commonly used to retrieve just the HTTP response headers from the specified URI, and not the body contents.
+### **Patch**
+`Patch = "Patch"`
+
+Represents the method for an HTTP PATCH request. PATCH requests are commonly used to apply partial modifications to a resource.
 ### **Post**
 `Post = "Post"`
 

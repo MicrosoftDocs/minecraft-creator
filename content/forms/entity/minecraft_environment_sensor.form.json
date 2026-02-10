@@ -77,7 +77,15 @@
   "fields": [
     {
       "id": "triggers",
-      "dataType": 42
+      "title": "Triggers",
+      "description": "The list of triggers that fire when the environment conditions match the given filter criteria. Can be an array of trigger objects or a single trigger object.",
+      "dataType": 15,
+      "alternates": [
+        {
+          "id": "triggers",
+          "dataType": 16
+        }
+      ]
     }
   ],
   "generated_doNotEdit": {

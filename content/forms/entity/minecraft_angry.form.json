@@ -186,8 +186,15 @@
     },
     {
       "id": "calm_event",
-      "description": "Event to fire when this entity is calmed down",
-      "dataType": 39
+      "description": "Event to fire when this entity is calmed down. Can be a simple event name string or an object with event and target properties.",
+      "dataType": 16,
+      "subFormId": "ActorDefinitionTrigger",
+      "alternates": [
+        {
+          "id": "calm_event",
+          "dataType": 2
+        }
+      ]
     }
   ],
   "generated_doNotEdit": {

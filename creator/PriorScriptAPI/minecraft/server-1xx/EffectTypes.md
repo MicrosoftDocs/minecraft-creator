@@ -20,7 +20,7 @@ Represents a type of effect - like poison - that can be applied to an entity.
 
 ### **get**
 `
-static "get"(identifier: string): EffectType | undefined
+static get(identifier: string): EffectType | undefined
 `
 
 Effect type for the given identifier.

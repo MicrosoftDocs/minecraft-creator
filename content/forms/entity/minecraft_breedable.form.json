@@ -147,8 +147,14 @@
     },
     {
       "id": "breed_items",
-      "description": "The list of items that can be used to get the entity into the 'love' state.",
-      "dataType": 17
+      "description": "The list of items that can be used to get the entity into the 'love' state. Can be a single item or an array.",
+      "dataType": 17,
+      "alternates": [
+        {
+          "id": "breed_items",
+          "dataType": 2
+        }
+      ]
     },
     {
       "id": "breeds_with",
@@ -296,17 +302,35 @@
           {
             "id": "color",
             "description": "The percentage chance of denying the parents' variant.",
-            "dataType": 21
+            "dataType": 21,
+            "alternates": [
+              {
+                "id": "color",
+                "dataType": 3
+              }
+            ]
           },
           {
             "id": "variant",
             "description": "The percentage chance of a mutation on the entity's variant type.",
-            "dataType": 21
+            "dataType": 21,
+            "alternates": [
+              {
+                "id": "variant",
+                "dataType": 3
+              }
+            ]
           },
           {
             "id": "extra_variant",
             "description": "The percentage chance of a mutation on the entity's extra variant type.",
-            "dataType": 21
+            "dataType": 21,
+            "alternates": [
+              {
+                "id": "extra_variant",
+                "dataType": 3
+              }
+            ]
           }
         ]
       }

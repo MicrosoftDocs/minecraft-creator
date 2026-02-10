@@ -12,7 +12,32 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "cooldown_range",
+      "title": "Cooldown Range",
+      "description": "Goal cooldown range in seconds. Can be a range object or a single number.",
+      "dataType": 19,
+      "alternates": [
+        {
+          "id": "cooldown_range",
+          "dataType": 3
+        }
+      ]
+    },
+    {
+      "id": "duration_range",
+      "title": "Duration Range",
+      "description": "Goal duration range in seconds. Can be a range object or a single number.",
+      "dataType": 19,
+      "alternates": [
+        {
+          "id": "duration_range",
+          "dataType": 3
+        }
+      ]
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.timer_flag_3",
     "title": "Timer Flag 3 Behavior",

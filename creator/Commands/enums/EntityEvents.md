@@ -604,6 +604,7 @@ Entity starts tp land
 - `minecraft:start_roar`
 Entity starts roaring
 - `minecraft:start_sitting`
+- `minecraft:start_sitting_baby`
 - `minecraft:start_transforming`
 Entity starts transforming
 - `minecraft:start_twitching`
@@ -620,6 +621,7 @@ Entity stops Johnny action
 - `minecraft:stop_peeking`
 - `minecraft:stop_playing_idle_ground_sound`
 - `minecraft:stop_sitting`
+- `minecraft:stop_sitting_baby`
 - `minecraft:stop_transforming`
 Entity stops transforming
 - `minecraft:stopped_riding`
