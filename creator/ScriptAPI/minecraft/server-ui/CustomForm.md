@@ -22,6 +22,7 @@ A customizable form that lets you put buttons, labels, toggles, dropdowns, slide
 - [closeButton](#closebutton)
 - [divider](#divider)
 - [dropdown](#dropdown)
+- [header](#header)
 - [label](#label)
 - [show](#show)
 - [slider](#slider)
@@ -32,13 +33,13 @@ A customizable form that lets you put buttons, labels, toggles, dropdowns, slide
 
 ### **button**
 `
-button(label: Observable<string> | string | UIRawMessage, onClick: () => void, options?: ButtonOptions): CustomForm
+button(label: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, onClick: () => void, options?: ButtonOptions): CustomForm
 `
 
 Inserts a button into the Custom form. onClick is called when the button is pressed.
 
 #### **Parameters**
-- **label**: *Observable<string>* | *string* | *UIRawMessage*
+- **label**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
 - **onClick**: () => *void*
 - **options**?: *ButtonOptions*
 
@@ -85,29 +86,42 @@ Inserts a divider (i.e. a line) into the Custom form.
 
 ### **dropdown**
 `
-dropdown(label: Observable<string> | string | UIRawMessage, value: Observable<number>, items: DropdownItem[], options?: DropdownOptions): CustomForm
+dropdown(label: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, value: Observable<number>, items: DropdownItem[], options?: DropdownOptions): CustomForm
 `
 
 Inserts a dropdown into the Custom form with the provided items. The value is based on the items value that selected.
 
 #### **Parameters**
-- **label**: *Observable<string>* | *string* | *UIRawMessage*
+- **label**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
 - **value**: *Observable<number>*
 - **items**: *DropdownItem*[]
 - **options**?: *DropdownOptions*
 
 **Returns** *CustomForm*
 
+### **header**
+`
+header(text: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, options?: TextOptions): CustomForm
+`
+
+Inserts a header (i.e. large sized text) into the Custom form.
+
+#### **Parameters**
+- **text**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
+- **options**?: *TextOptions*
+
+**Returns** *CustomForm*
+
 ### **label**
 `
-label(text: Observable<string> | string | UIRawMessage, options?: LabelOptions): CustomForm
+label(text: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, options?: TextOptions): CustomForm
 `
 
 Inserts a label (i.e. medium sized text) into the Custom form.
 
 #### **Parameters**
-- **text**: *Observable<string>* | *string* | *UIRawMessage*
-- **options**?: *LabelOptions*
+- **text**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
+- **options**?: *TextOptions*
 
 **Returns** *CustomForm*
 
@@ -122,13 +136,13 @@ Shows the form to the player. Will throw errors if the form is currently being s
 
 ### **slider**
 `
-slider(label: Observable<string> | string | UIRawMessage, value: Observable<number>, minValue: Observable<number> | number, maxValue: Observable<number> | number, options?: SliderOptions): CustomForm
+slider(label: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, value: Observable<number>, minValue: Observable<number> | number, maxValue: Observable<number> | number, options?: SliderOptions): CustomForm
 `
 
 Creates a slider that lets players pick a number between minValue and maxValue. value must be client writable.
 
 #### **Parameters**
-- **label**: *Observable<string>* | *string* | *UIRawMessage*
+- **label**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
 - **value**: *Observable<number>*
 - **minValue**: *Observable<number>* | *number*
 - **maxValue**: *Observable<number>* | *number*
@@ -150,13 +164,13 @@ Inserts a space into the Custom form.
 
 ### **textField**
 `
-textField(label: Observable<string> | string | UIRawMessage, text: Observable<string>, options?: TextFieldOptions): CustomForm
+textField(label: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, text: Observable<string>, options?: TextFieldOptions): CustomForm
 `
 
 Inserts a text field into the Custom for that players can enter text into.
 
 #### **Parameters**
-- **label**: *Observable<string>* | *string* | *UIRawMessage*
+- **label**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
 - **text**: *Observable<string>*
 - **options**?: *TextFieldOptions*
 
@@ -164,13 +178,13 @@ Inserts a text field into the Custom for that players can enter text into.
 
 ### **toggle**
 `
-toggle(label: Observable<string> | string | UIRawMessage, toggled: Observable<boolean>, options?: ToggleOptions): CustomForm
+toggle(label: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, toggled: Observable<boolean>, options?: ToggleOptions): CustomForm
 `
 
 Inserts an on/off toggle that players can interact with into the Custom form.
 
 #### **Parameters**
-- **label**: *Observable<string>* | *string* | *UIRawMessage*
+- **label**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
 - **toggled**: *Observable<boolean>*
 - **options**?: *ToggleOptions*
 
@@ -178,13 +192,13 @@ Inserts an on/off toggle that players can interact with into the Custom form.
 
 ### **create**
 `
-static create(player: minecraftserver.Player, title: Observable<string> | string | UIRawMessage): CustomForm
+static create(player: minecraftserver.Player, title: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage): CustomForm
 `
 
 Creates a Custom form to show to the player. Use this instead of a constructor.
 
 #### **Parameters**
 - **player**: *minecraftserver.Player*
-- **title**: *Observable<string>* | *string* | *UIRawMessage*
+- **title**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
 
 **Returns** *CustomForm*

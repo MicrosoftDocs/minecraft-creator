@@ -31,9 +31,13 @@ new CuboidBrushShape(settings?: {
         height?: number;
         depth?: number;
         minLength?: number;
+        maxLength?: number;
         xRotation?: number;
         yRotation?: number;
         zRotation?: number;
+        hollow?: boolean;
+        thickness?: number;
+        enableHollowSettings?: boolean;
     })
 `
 
@@ -47,9 +51,13 @@ Constructs a new instance of the `CuboidBrushShape` class
         height?: number;
         depth?: number;
         minLength?: number;
+        maxLength?: number;
         xRotation?: number;
         yRotation?: number;
         zRotation?: number;
+        hollow?: boolean;
+        thickness?: number;
+        enableHollowSettings?: boolean;
     }*
 
 **Returns** *CuboidBrushShape*

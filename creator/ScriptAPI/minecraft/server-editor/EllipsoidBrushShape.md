@@ -31,9 +31,13 @@ new EllipsoidBrushShape(settings?: {
         height?: number;
         depth?: number;
         minRadius?: number;
+        maxRadius?: number;
         xRotation?: number;
         yRotation?: number;
         zRotation?: number;
+        hollow?: boolean;
+        thickness?: number;
+        enableHollowSettings?: boolean;
     })
 `
 
@@ -47,9 +51,13 @@ Constructs a new instance of the `EllipsoidBrushShape` class
         height?: number;
         depth?: number;
         minRadius?: number;
+        maxRadius?: number;
         xRotation?: number;
         yRotation?: number;
         zRotation?: number;
+        hollow?: boolean;
+        thickness?: number;
+        enableHollowSettings?: boolean;
     }*
 
 **Returns** *EllipsoidBrushShape*

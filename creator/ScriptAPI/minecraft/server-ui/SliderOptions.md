@@ -18,11 +18,11 @@ The options for including a slider in {@link CustomForm}.
 ## Properties
 
 ### **description**
-`description?: Observable<string> | string | UIRawMessage;`
+`description?: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage;`
 
 The description of the slider, shown in the UI.
 
-Type: *Observable<string>* | *string* | *UIRawMessage*
+Type: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
 
 ### **disabled**
 `disabled?: Observable<boolean> | boolean;`

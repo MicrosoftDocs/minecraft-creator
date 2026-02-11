@@ -40,6 +40,7 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `*`
 - `minecraft:golden_dandelion`
 - `minecraft:name_tag`
+- `minecraft:yellow_dye_from_golden_dandelion`
 - `minecraft:copper_spear`
 - `minecraft:diamond_spear`
 - `minecraft:golden_spear`

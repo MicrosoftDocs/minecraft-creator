@@ -58,10 +58,15 @@ new CylinderBrushShape(settings?: {
         height?: number;
         depth?: number;
         minRadius?: number;
+        maxRadius?: number;
+        maxHeight?: number;
         xRotation?: number;
         yRotation?: number;
         zRotation?: number;
         hideRotation?: boolean;
+        hollow?: boolean;
+        thickness?: number;
+        enableHollowSettings?: boolean;
     })
 `
 
@@ -75,10 +80,15 @@ Constructs a new instance of the `CylinderBrushShape` class
         height?: number;
         depth?: number;
         minRadius?: number;
+        maxRadius?: number;
+        maxHeight?: number;
         xRotation?: number;
         yRotation?: number;
         zRotation?: number;
         hideRotation?: boolean;
+        hollow?: boolean;
+        thickness?: number;
+        enableHollowSettings?: boolean;
     }*
 
 **Returns** *CylinderBrushShape*

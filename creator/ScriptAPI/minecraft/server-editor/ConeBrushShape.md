@@ -30,9 +30,14 @@ new ConeBrushShape(settings?: {
         width?: number;
         height?: number;
         depth?: number;
+        maxRadius?: number;
+        maxHeight?: number;
         xRotation?: number;
         yRotation?: number;
         zRotation?: number;
+        hollow?: boolean;
+        thickness?: number;
+        enableHollowSettings?: boolean;
     })
 `
 
@@ -45,9 +50,14 @@ Constructs a new instance of the `ConeBrushShape` class
         width?: number;
         height?: number;
         depth?: number;
+        maxRadius?: number;
+        maxHeight?: number;
         xRotation?: number;
         yRotation?: number;
         zRotation?: number;
+        hollow?: boolean;
+        thickness?: number;
+        enableHollowSettings?: boolean;
     }*
 
 **Returns** *ConeBrushShape*

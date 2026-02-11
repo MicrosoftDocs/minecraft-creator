@@ -23,6 +23,16 @@ Type: *number*
 
 Type: *number*
 
+### **hollow**
+`hollow: boolean;`
+
+Type: *boolean*
+
+### **thickness**
+`thickness: number;`
+
+Type: *number*
+
 ### **uniform**
 `uniform: boolean;`
 

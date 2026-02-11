@@ -25,11 +25,11 @@ Whether or not this button is disabled.
 Type: *Observable<boolean>* | *boolean*
 
 ### **tooltip**
-`tooltip?: Observable<string> | string | UIRawMessage;`
+`tooltip?: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage;`
 
 The tooltip for this button, shown when hovering the button.
 
-Type: *Observable<string>* | *string* | *UIRawMessage*
+Type: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
 
 ### **visible**
 `visible?: Observable<boolean> | boolean;`
