@@ -4,7 +4,7 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Camera Tool
 description: "An overview of the Camera Tool (Cinematic Tool) in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 02/05/2026
+ms.date: 02/09/2026
 ---
 
 # Camera Tool
@@ -17,13 +17,13 @@ The Camera Tool (also known as the Cinematic Tool) lets you create camera path a
 
 Choose the interpolation method for the camera path:
 
-- **CatmullRom**: Produces smooth curves through the control points. Requires a minimum of **4** control points.
+- **Catmull-Rom**: Produces smooth curves through the control points. Requires a minimum of **4** control points.
 
 - **Linear**: Connects control points with straight-line segments. Requires a minimum of **3** control points.
 
 ### Total duration
 
-Sets the total animation time in seconds. Range: **1–300** seconds (default: **10**). Changing this value redistributes the time values across all control points evenly.
+Sets the total animation time in seconds (**range: 1–300s; default: 10s**). Changing this value redistributes the time values across all control points evenly.
 
 ## Control points
 
@@ -64,9 +64,9 @@ Click **Play Animation** to preview the camera path. The camera follows the spli
 
 Click **Export Code** to copy a TypeScript function to your clipboard. The generated code uses the `@minecraft/server` Camera API and can be pasted directly into a script project. It includes the spline definition, progress keyframes, rotation keyframes, and animation options.
 
-## Using the Camera Tool
+## Using the camera
 
-1. Select Camera by clicking the button in the tool rail on the left side of the Editor.
+1. Select the Camera by clicking the button in the tool rail on the left side of the Editor.
 
 2. Navigate to the starting position for your camera path and click **+** to add the first control point.
 

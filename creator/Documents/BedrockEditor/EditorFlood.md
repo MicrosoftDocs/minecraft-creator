@@ -4,20 +4,14 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Flood
 description: "An overview of the Flood Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 02/05/2026
+ms.date: 02/10/2026
 ---
 
 # Flood Tool
 
 The Flood Tool fills areas of your world with water or lava. Click a surface block to place a water level indicator, then raise or lower it to control the fluid height. The tool uses a breadth-first search to calculate which blocks the fluid will reach, respecting terrain boundaries and block-level waterlogging.
 
-## Tool configuration
-
-- **Fluid Type**: Choose between **Water** and **Lava**.
-
-- **Ignore Block Limit**: When enabled, allows flooding to proceed even if the calculated area exceeds the block limit. By default, the tool caps flood calculations at 120,000 blocks to prevent performance issues.
-
-## Using the Flood Tool
+## Using Flood
 
 1. Select Flood by clicking the button in the tool rail on the left side of the Editor.
     > [!TIP]
@@ -32,17 +26,17 @@ The Flood Tool fills areas of your world with water or lava. Click a surface blo
     > [!NOTE]
     > A bounding box visualization shows the calculated flood extent. If the boundary turns yellow, the 120,000-block limit has been reached and some area may be excluded. Enable **Ignore Block Limit** to override this restriction.
 
-5. Press **Ctrl+F** or click the **Apply** button to commit the flood. A progress dialog shows the operation status.
+5. Press **Ctrl+F** or click **Apply** to commit the flood. A progress dialog shows the operation status.
 
     > [!NOTE]
     > The flood operation supports undo. If you need to revert, use the standard undo command.
 
 ## Limits
 
-| Limit | Value |
+|Limit|Value|
 |:------|:------|
-| Maximum BFS flood size | 120,000 blocks |
-| Flood region extent | 1,024 blocks in each direction from the origin |
+|Maximum BFS flood size|120,000 blocks|
+|Flood region extent|1,024 blocks in each direction from the origin|
 
 ## Keyboard shortcuts
 
@@ -52,7 +46,7 @@ For the full list of Editor shortcuts, see [Editor Hotkeys](../BedrockEditor/Edi
 > The following commands only work while the Flood Tool is active.
 
 | Command | Shortcut |
-|:--------|:---------|
+| :-------- | :--------- |
 | Activate Flood Tool | **Ctrl+Shift+F** |
 | Raise water level | **Page Up** |
 | Lower water level | **Page Down** |
