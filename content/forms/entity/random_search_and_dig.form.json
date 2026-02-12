@@ -1,0 +1,298 @@
+{
+  "id": "minecraft:behavior.random_search_and_dig",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.random_search_and_dig",
+    "title": "Entity Random Search And Dig Behavior",
+    "description": "Allows this entity to locate a random target block that it can path find to. Once found, the entity will move towards it and dig up an item. [Default target block types: Dirt, Grass, Podzol, DirtWithRoots, MossBlock, Mud, MuddyMangroveRoots].",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "cooldown_range",
+        "title": "Cooldown Range",
+        "description": "Goal cooldown range in seconds.",
+        "dataType": 16,
+        "defaultValue": {
+          "max": 0,
+          "min": 0
+        },
+        "subFormId": "item_components/floatrange"
+      },
+      {
+        "id": "digging_duration_range",
+        "title": "Digging Duration Range",
+        "description": "Digging duration in seconds.",
+        "dataType": 16,
+        "defaultValue": {
+          "max": 10,
+          "min": 8
+        },
+        "subFormId": "item_components/floatrange"
+      },
+      {
+        "id": "find_valid_position_retries",
+        "title": "Find Valid Position Retries",
+        "description": "Amount of retries to find a valid target position within search range.",
+        "dataType": 0,
+        "defaultValue": 5
+      },
+      {
+        "id": "goal_radius",
+        "title": "Goal Radius",
+        "description": "Distance in blocks within the entity to considers it has reached it's target position.",
+        "dataType": 3,
+        "defaultValue": 1.5
+      },
+      {
+        "id": "item_table",
+        "title": "Item Table",
+        "description": "File path relative to the resource pack root for items to spawn list (loot table format).",
+        "dataType": 2,
+        "defaultValue": ""
+      },
+      {
+        "id": "on_digging_start",
+        "title": "Digging Start",
+        "description": "Event to run when the goal ends searching has begins digging.",
+        "dataType": 16,
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "on_fail_during_digging",
+        "title": "Fail During Digging",
+        "description": "Event to run when the goal failed while in digging state.",
+        "dataType": 16,
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "on_fail_during_searching",
+        "title": "Fail During Searching",
+        "description": "Event to run when the goal failed while in searching state.",
+        "dataType": 16,
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "on_item_found",
+        "title": "Item Found",
+        "description": "Event to run when the goal find a item.",
+        "dataType": 16,
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "on_searching_start",
+        "title": "Searching Start",
+        "description": "Event to run when the goal starts searching.",
+        "dataType": 16,
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "on_success",
+        "title": "Success",
+        "description": "Event to run when searching and digging has ended.",
+        "dataType": 16,
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "search_range_xz",
+        "title": "Search Range Xz",
+        "description": "Width and length of the volume around the entity used to find a valid target position",
+        "dataType": 0,
+        "defaultValue": 10
+      },
+      {
+        "id": "search_range_y",
+        "title": "Search Range Y",
+        "description": "Height of the volume around the entity used to find a valid target position",
+        "dataType": 0,
+        "defaultValue": 7
+      },
+      {
+        "id": "spawn_item_after_seconds",
+        "title": "Spawn Item After Seconds",
+        "description": "Digging duration before spawning item in seconds.",
+        "dataType": 3,
+        "defaultValue": 0
+      },
+      {
+        "id": "spawn_item_pos_offset",
+        "title": "Spawn Item Pos Offset",
+        "description": "Distance to offset the item's spawn location in the direction the mob is facing.",
+        "dataType": 3,
+        "defaultValue": 0
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Searching movement speed multiplier.",
+        "dataType": 3,
+        "defaultValue": 1
+      },
+      {
+        "id": "target_blocks",
+        "description": "List of target block types the goal will look to dig on. Overrides the default list.",
+        "dataType": 15,
+        "defaultValue": [],
+        "subForm": {
+          "id": "target_blocks",
+          "title": "Target Blocks",
+          "fields": [
+            {
+              "id": "name",
+              "title": "Name",
+              "dataType": 2,
+              "defaultValue": ""
+            },
+            {
+              "id": "states",
+              "title": "States",
+              "dataType": 0,
+              "defaultValue": {},
+              "alternates": [
+                {
+                  "id": "states",
+                  "dataType": 2
+                },
+                {
+                  "id": "states",
+                  "dataType": 1
+                }
+              ]
+            },
+            {
+              "id": "tags",
+              "title": "Tags",
+              "dataType": 2,
+              "defaultValue": ""
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "target_blocks",
+            "dataType": 2
+          },
+          {
+            "id": "target_blocks",
+            "dataType": 16
+          }
+        ]
+      },
+      {
+        "id": "target_dig_position_offset",
+        "title": "Target Dig Position Offset",
+        "description": "Dig target position offset from the feet position of the mob in their facing direction.",
+        "dataType": 3,
+        "defaultValue": 2.25
+      }
+    ]
+  }
+}

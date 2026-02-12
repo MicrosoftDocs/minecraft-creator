@@ -1942,10 +1942,25 @@
                                       "subForm": {
                                         "fields": [
                                           {
+                                            "id": "decoration_blocks_sequence",
+                                            "dataType": 15,
+                                            "subForm": {
+                                              "fields": []
+                                            },
+                                            "alternates": [
+                                              {
+                                                "dataType": 17,
+                                                "id": "decoration_blocks_sequence",
+                                                "title": "Decoration Blocks Sequence",
+                                                "isRequired": false
+                                              }
+                                            ]
+                                          },
+                                          {
                                             "dataType": 0,
                                             "id": "num_steps",
                                             "title": "Num Steps",
-                                            "description": "Number of decoration blocks to place.",
+                                            "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                                             "isRequired": false
                                           },
                                           {
@@ -2031,10 +2046,25 @@
                                       "subForm": {
                                         "fields": [
                                           {
+                                            "id": "decoration_blocks_sequence",
+                                            "dataType": 15,
+                                            "subForm": {
+                                              "fields": []
+                                            },
+                                            "alternates": [
+                                              {
+                                                "dataType": 17,
+                                                "id": "decoration_blocks_sequence",
+                                                "title": "Decoration Blocks Sequence",
+                                                "isRequired": false
+                                              }
+                                            ]
+                                          },
+                                          {
                                             "dataType": 0,
                                             "id": "num_steps",
                                             "title": "Num Steps",
-                                            "description": "Number of decoration blocks to place.",
+                                            "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                                             "isRequired": false
                                           },
                                           {
@@ -2185,10 +2215,25 @@
                     "subForm": {
                       "fields": [
                         {
+                          "id": "decoration_blocks_sequence",
+                          "dataType": 15,
+                          "subForm": {
+                            "fields": []
+                          },
+                          "alternates": [
+                            {
+                              "dataType": 17,
+                              "id": "decoration_blocks_sequence",
+                              "title": "Decoration Blocks Sequence",
+                              "isRequired": false
+                            }
+                          ]
+                        },
+                        {
                           "dataType": 0,
                           "id": "num_steps",
                           "title": "Num Steps",
-                          "description": "Number of decoration blocks to place.",
+                          "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                           "isRequired": false
                         },
                         {
@@ -2386,10 +2431,25 @@
                                       "subForm": {
                                         "fields": [
                                           {
+                                            "id": "decoration_blocks_sequence",
+                                            "dataType": 15,
+                                            "subForm": {
+                                              "fields": []
+                                            },
+                                            "alternates": [
+                                              {
+                                                "dataType": 17,
+                                                "id": "decoration_blocks_sequence",
+                                                "title": "Decoration Blocks Sequence",
+                                                "isRequired": false
+                                              }
+                                            ]
+                                          },
+                                          {
                                             "dataType": 0,
                                             "id": "num_steps",
                                             "title": "Num Steps",
-                                            "description": "Number of decoration blocks to place.",
+                                            "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                                             "isRequired": false
                                           },
                                           {
@@ -2475,10 +2535,25 @@
                                       "subForm": {
                                         "fields": [
                                           {
+                                            "id": "decoration_blocks_sequence",
+                                            "dataType": 15,
+                                            "subForm": {
+                                              "fields": []
+                                            },
+                                            "alternates": [
+                                              {
+                                                "dataType": 17,
+                                                "id": "decoration_blocks_sequence",
+                                                "title": "Decoration Blocks Sequence",
+                                                "isRequired": false
+                                              }
+                                            ]
+                                          },
+                                          {
                                             "dataType": 0,
                                             "id": "num_steps",
                                             "title": "Num Steps",
-                                            "description": "Number of decoration blocks to place.",
+                                            "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                                             "isRequired": false
                                           },
                                           {
@@ -2639,10 +2714,25 @@
                     "subForm": {
                       "fields": [
                         {
+                          "id": "decoration_blocks_sequence",
+                          "dataType": 15,
+                          "subForm": {
+                            "fields": []
+                          },
+                          "alternates": [
+                            {
+                              "dataType": 17,
+                              "id": "decoration_blocks_sequence",
+                              "title": "Decoration Blocks Sequence",
+                              "isRequired": false
+                            }
+                          ]
+                        },
+                        {
                           "dataType": 0,
                           "id": "num_steps",
                           "title": "Num Steps",
-                          "description": "Number of decoration blocks to place.",
+                          "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                           "isRequired": false
                         },
                         {
@@ -2775,10 +2865,25 @@
                     "subForm": {
                       "fields": [
                         {
+                          "id": "decoration_blocks_sequence",
+                          "dataType": 15,
+                          "subForm": {
+                            "fields": []
+                          },
+                          "alternates": [
+                            {
+                              "dataType": 17,
+                              "id": "decoration_blocks_sequence",
+                              "title": "Decoration Blocks Sequence",
+                              "isRequired": false
+                            }
+                          ]
+                        },
+                        {
                           "dataType": 0,
                           "id": "num_steps",
                           "title": "Num Steps",
-                          "description": "Number of decoration blocks to place.",
+                          "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                           "isRequired": false
                         },
                         {
@@ -2841,10 +2946,25 @@
                     "subForm": {
                       "fields": [
                         {
+                          "id": "decoration_blocks_sequence",
+                          "dataType": 15,
+                          "subForm": {
+                            "fields": []
+                          },
+                          "alternates": [
+                            {
+                              "dataType": 17,
+                              "id": "decoration_blocks_sequence",
+                              "title": "Decoration Blocks Sequence",
+                              "isRequired": false
+                            }
+                          ]
+                        },
+                        {
                           "dataType": 0,
                           "id": "num_steps",
                           "title": "Num Steps",
-                          "description": "Number of decoration blocks to place.",
+                          "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                           "isRequired": false
                         },
                         {
@@ -2993,10 +3113,25 @@
                                       "subForm": {
                                         "fields": [
                                           {
+                                            "id": "decoration_blocks_sequence",
+                                            "dataType": 15,
+                                            "subForm": {
+                                              "fields": []
+                                            },
+                                            "alternates": [
+                                              {
+                                                "dataType": 17,
+                                                "id": "decoration_blocks_sequence",
+                                                "title": "Decoration Blocks Sequence",
+                                                "isRequired": false
+                                              }
+                                            ]
+                                          },
+                                          {
                                             "dataType": 0,
                                             "id": "num_steps",
                                             "title": "Num Steps",
-                                            "description": "Number of decoration blocks to place.",
+                                            "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                                             "isRequired": false
                                           },
                                           {
@@ -3082,10 +3217,25 @@
                                       "subForm": {
                                         "fields": [
                                           {
+                                            "id": "decoration_blocks_sequence",
+                                            "dataType": 15,
+                                            "subForm": {
+                                              "fields": []
+                                            },
+                                            "alternates": [
+                                              {
+                                                "dataType": 17,
+                                                "id": "decoration_blocks_sequence",
+                                                "title": "Decoration Blocks Sequence",
+                                                "isRequired": false
+                                              }
+                                            ]
+                                          },
+                                          {
                                             "dataType": 0,
                                             "id": "num_steps",
                                             "title": "Num Steps",
-                                            "description": "Number of decoration blocks to place.",
+                                            "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                                             "isRequired": false
                                           },
                                           {
@@ -3272,10 +3422,25 @@
                     "subForm": {
                       "fields": [
                         {
+                          "id": "decoration_blocks_sequence",
+                          "dataType": 15,
+                          "subForm": {
+                            "fields": []
+                          },
+                          "alternates": [
+                            {
+                              "dataType": 17,
+                              "id": "decoration_blocks_sequence",
+                              "title": "Decoration Blocks Sequence",
+                              "isRequired": false
+                            }
+                          ]
+                        },
+                        {
                           "dataType": 0,
                           "id": "num_steps",
                           "title": "Num Steps",
-                          "description": "Number of decoration blocks to place.",
+                          "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                           "isRequired": false
                         },
                         {
@@ -3394,10 +3559,25 @@
                     "subForm": {
                       "fields": [
                         {
+                          "id": "decoration_blocks_sequence",
+                          "dataType": 15,
+                          "subForm": {
+                            "fields": []
+                          },
+                          "alternates": [
+                            {
+                              "dataType": 17,
+                              "id": "decoration_blocks_sequence",
+                              "title": "Decoration Blocks Sequence",
+                              "isRequired": false
+                            }
+                          ]
+                        },
+                        {
                           "dataType": 0,
                           "id": "num_steps",
                           "title": "Num Steps",
-                          "description": "Number of decoration blocks to place.",
+                          "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                           "isRequired": false
                         },
                         {
@@ -3483,10 +3663,25 @@
                     "subForm": {
                       "fields": [
                         {
+                          "id": "decoration_blocks_sequence",
+                          "dataType": 15,
+                          "subForm": {
+                            "fields": []
+                          },
+                          "alternates": [
+                            {
+                              "dataType": 17,
+                              "id": "decoration_blocks_sequence",
+                              "title": "Decoration Blocks Sequence",
+                              "isRequired": false
+                            }
+                          ]
+                        },
+                        {
                           "dataType": 0,
                           "id": "num_steps",
                           "title": "Num Steps",
-                          "description": "Number of decoration blocks to place.",
+                          "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                           "isRequired": false
                         },
                         {
@@ -3692,10 +3887,25 @@
                     "subForm": {
                       "fields": [
                         {
+                          "id": "decoration_blocks_sequence",
+                          "dataType": 15,
+                          "subForm": {
+                            "fields": []
+                          },
+                          "alternates": [
+                            {
+                              "dataType": 17,
+                              "id": "decoration_blocks_sequence",
+                              "title": "Decoration Blocks Sequence",
+                              "isRequired": false
+                            }
+                          ]
+                        },
+                        {
                           "dataType": 0,
                           "id": "num_steps",
                           "title": "Num Steps",
-                          "description": "Number of decoration blocks to place.",
+                          "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                           "isRequired": false
                         },
                         {

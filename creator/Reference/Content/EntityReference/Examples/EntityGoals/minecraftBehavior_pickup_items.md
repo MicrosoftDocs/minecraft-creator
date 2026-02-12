@@ -23,7 +23,7 @@ Allows the mob to pick up items on the ground.
 | goal_radius | 0.5 | Decimal number | Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot | Allay: `2.2`, Bogged: `2` | 
 | max_dist | 0 | Decimal number | Maximum distance this mob will look for items to pick up | Allay: `32`, Bogged: `3` | 
 | pickup_based_on_chance | false | Boolean true/false | If true, depending on the difficulty, there is a random chance that the mob may not be able to pickup items | Bogged: `true` | 
-| pickup_same_items_as_in_hand | *not set* | String |  | Allay: `true` | 
+| pickup_same_items_as_in_hand | *not set* | Boolean true/false | If true, the mob will only pick up items that match what it is already holding. | Allay: `true` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `2`, Bogged: `5`, Drowned: `6` | 
 | search_height | *not set* | Decimal number |  | Allay: `32` | 
 | speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Allay: `6`, Bogged: `1`, Fox: `0.5` | 

@@ -19,7 +19,8 @@ Fires off scheduled mob events at time of day events.
 |:----------|:-------------|:----|:-----------|:------------- |
 | max_delay_secs | *not set* | Decimal number |  |  | 
 | min_delay_secs | *not set* | Decimal number |  |  | 
-| scheduled_events | *not set* | Array of Minecraft Event Triggers | The list of triggers that fire when the conditions match the given filter criteria. If any filter criteria overlap the first defined event will be picked. | Fox: `[{"filters":[{"test":"is_sleeping","value":true}],"event":"minecraft:ambient_sleep"},{"filters":{"all_of":[{"test":"is_daytime","value":false},{"test":"distance_to_nearest_player","operator":">","value":16}]},"event":"minecraft:ambient_night"},{"filters":{"all_of":[{"test":"is_sleeping","value":false},{"any_of":[{"test":"is_daytime","value":true},{"test":"distance_to_nearest_player","operator":"<=","value":16}]}]},"event":"minecraft:ambient_normal"}]` | 
+| scheduled_events | *not set* | Array of objects | The list of triggers that fire when the conditions match the given filter criteria. Can be an array of event objects or a single event object. | Fox: `[{"filters":[{"test":"is_sleeping","value":true}],"event":"minecraft:ambient_sleep"},{"filters":{"all_of":[{"test":"is_daytime","value":false},{"test":"distance_to_nearest_player","operator":">","value":16}]},"event":"minecraft:ambient_night"},{"filters":{"all_of":[{"test":"is_sleeping","value":false},{"any_of":[{"test":"is_daytime","value":true},{"test":"distance_to_nearest_player","operator":"<=","value":16}]}]},"event":"minecraft:ambient_normal"}]` | 
+| scheduled_events (Alternate 1) | *not set* | Object |  |  | 
 
 ## Samples
 

@@ -23,7 +23,7 @@
     ]
   },
   "fields": [],
-  "description": "Sets the item as a planter item component for blocks. Items with this component will place a block when used.",
+  "description": "Sets the item as a placer item component for blocks. Items with this component will place a block when used.",
   "note": "This component can also be used instead of the minecraft:icon component to render the block this item will place as the icon.",
   "versionIntroduced": "1.21.50",
   "samples": {
@@ -106,6 +106,13 @@
     "description": "Items with the block_placer component will place a block when used. \nThis component can also be used instead of the \"minecraft:icon\" component to render the referenced block as the item icon.",
     "fields": [
       {
+        "id": "aligned_placement",
+        "title": "Aligned Placement",
+        "description": "If true, block placement through this item will be aligned while holding the interaction button down. Defaults to false.",
+        "dataType": 1,
+        "defaultValue": false
+      },
+      {
         "id": "block",
         "title": "Block",
         "description": "Defines the block that will be placed.",
@@ -115,7 +122,7 @@
       {
         "id": "replace_block_item",
         "title": "Replace Block Item",
-        "description": "If true, the item will be registered as the item for this block. This item will be returned by default when the block is broken/picked. Note: the identifier for this item must match the block's identifier for this field to be valid.",
+        "description": "If true, the item will be registered as the item for this block. This item will be returned by default when the block is broken/picked. Note: the identifier for this item must match the block's identifier for this field to be valid. Defaults to false.",
         "dataType": 1,
         "defaultValue": false
       },
@@ -124,6 +131,7 @@
         "description": "List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed.",
         "dataType": 15,
         "defaultValue": [],
+        "maxLength": 256,
         "subForm": {
           "id": "use_on",
           "title": "Use On",

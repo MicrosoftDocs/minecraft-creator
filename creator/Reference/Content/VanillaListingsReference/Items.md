@@ -799,6 +799,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | golden_boots | 357 |
 | [golden_carrot](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/items/golden_carrot.json) | 283 |
 | golden_chestplate | 355 |
+| golden_dandelion | -1091 |
 | golden_helmet | 354 |
 | golden_hoe | 336 |
 | golden_horse_armor | 542 |
@@ -827,10 +828,10 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | gray_shulker_box | -619 |
 | gray_stained_glass | -679 |
 | gray_stained_glass_pane | -649 |
-| gray_terracotta | -730 |
 
 | Name | ID | 
 |:-----------|:-----------|
+| gray_terracotta | -730 |
 | gray_wool | -553 |
 | green_candle | -426 |
 | green_candle_cake | -443 |
@@ -1030,10 +1031,10 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | light_block_4 | -932 |
 | light_block_5 | -933 |
 | light_block_6 | -934 |
-| light_block_7 | -935 |
 
 | Name | ID | 
 |:-----------|:-----------|
+| light_block_7 | -935 |
 | light_block_8 | -936 |
 | light_block_9 | -937 |
 | light_blue_candle | -416 |
@@ -1233,10 +1234,10 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | oak_chest_boat | 652 |
 | oak_double_slab | 157 |
 | oak_fence | 85 |
-| oak_hanging_sign | -500 |
 
 | Name | ID | 
 |:-----------|:-----------|
+| oak_hanging_sign | -500 |
 | oak_leaves | 18 |
 | oak_log | 17 |
 | oak_planks | 5 |
@@ -1436,10 +1437,10 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | purpur_pillar | -951 |
 | purpur_slab | -884 |
 | purpur_stairs | 203 |
-| quartz | 534 |
 
 | Name | ID | 
 |:-----------|:-----------|
+| quartz | 534 |
 | quartz_block | 155 |
 | quartz_bricks | -304 |
 | quartz_double_slab | -882 |
@@ -1639,10 +1640,10 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | stone_block_slab3 | 773 |
 | stone_block_slab4 | 774 |
 | stone_brick_double_slab | -881 |
-| stone_brick_slab | -875 |
 
 | Name | ID | 
 |:-----------|:-----------|
+| stone_brick_slab | -875 |
 | stone_brick_stairs | 109 |
 | stone_brick_wall | -977 |
 | stone_bricks | 98 |
@@ -1842,10 +1843,10 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | waxed_weathered_cut_copper | -353 |
 | waxed_weathered_cut_copper_slab | -367 |
 | waxed_weathered_cut_copper_stairs | -360 |
-| waxed_weathered_double_cut_copper_slab | -374 |
 
 | Name | ID | 
 |:-----------|:-----------|
+| waxed_weathered_double_cut_copper_slab | -374 |
 | waxed_weathered_lightning_rod | -1064 |
 | wayfinder_armor_trim_smithing_template | 708 |
 | weathered_chiseled_copper | -762 |

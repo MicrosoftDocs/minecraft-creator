@@ -20,7 +20,7 @@ Allows the entity follow another entity. Both entities must be swimming [ie, in 
 | catch_up_multiplier | 2.5 | Decimal number | The multiplier this entity's speed is modified by when matching another entity's direction. | Dolphin: `2.5` | 
 | catch_up_threshold | 12 | Decimal number | Distance, from the entity being followed, at which this entity will speed up to reach that entity. | Dolphin: `12` | 
 | chance_to_stop | 0.0333 | Decimal number | Percent chance to stop following the current entity, if they're riding another entity or they're not swimming. 1.0 = 100% | Dolphin: `0.0333` | 
-| entity_types | *not set* | Minecraft filter | Filters which types of entities are valid to follow. | Dolphin: `[{"filters":{"test":"is_family","subject":"other","value":"player"}}]` | 
+| entity_types | *not set* | Array of strings | Filters which types of entities are valid to follow. | Dolphin: `[{"filters":{"test":"is_family","subject":"other","value":"player"}}]` | 
 | match_direction_threshold | 2 | Decimal number | Distance, from the entity being followed, at which this entity will try to match that entity's direction | Dolphin: `2` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Dolphin: `4` | 
 | search_range | 20 | Decimal number | Radius around this entity to search for another entity to follow. | Dolphin: `20` | 

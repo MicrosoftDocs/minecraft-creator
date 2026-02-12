@@ -17,9 +17,12 @@ Adds a timer for drying out that will count down and fire 'dried_out_event' or w
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| dried_out_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to fire when the drying out time runs out. | Dolphin: `{"event":"dried_out"}` | 
-| recover_after_dried_out_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to fire when entity was already dried out but received increase in water supply. | Dolphin: `{"event":"recover_after_dried_out"}` | 
-| stopped_drying_out_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to fire when entity stopped drying out, for example got into water or under rain. | Dolphin: `{"event":"stop_dryingout"}` | 
+| dried_out_event | *not set* | Object | Event to fire when the drying out time runs out. Can be an object with event and target properties, or a simple event string. | Dolphin: `{"event":"dried_out"}` | 
+| dried_out_event (Alternate 1) | *not set* | String |  |  | 
+| recover_after_dried_out_event | *not set* | Object | Event to fire when entity was already dried out but received increase in water supply. Can be an object with event and target properties, or a simple event string. | Dolphin: `{"event":"recover_after_dried_out"}` | 
+| recover_after_dried_out_event (Alternate 1) | *not set* | String |  |  | 
+| stopped_drying_out_event | *not set* | Object | Event to fire when entity stopped drying out. Can be an object with event and target properties, or a simple event string. | Dolphin: `{"event":"stop_dryingout"}` | 
+| stopped_drying_out_event (Alternate 1) | *not set* | String |  |  | 
 | total_time | 0 | Decimal number | Amount of time in seconds to dry out fully. | Dolphin: `120` | 
 | water_bottle_refill_time | 0 | Decimal number | Optional amount of additional time in seconds given by using splash water bottle on entity. |  | 
 

@@ -18,7 +18,9 @@ Defines sets of items that can be used to trigger events when used on this entit
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | cooldown | 0 | Decimal number | An optional cool down in seconds to prevent spamming interactions. |  | 
-| items | *not set* | Array of strings | The list of items that can be given to the entity to place in their inventory. |  | 
-| on_give | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to fire when the correct item is given. |  | 
+| items | *not set* | Array of strings | The list of items that can be given to the entity to place in their inventory. Can be an array or a single item string. |  | 
+| items (Alternate 1) | *not set* | String |  |  | 
+| on_give | *not set* | Object | Event to fire when the correct item is given. Can be an object with event and target properties, or a simple event string. |  | 
+| on_give (Alternate 1) | *not set* | String |  |  | 
 
 ## Samples

@@ -23,7 +23,8 @@ Allows an entity to establish a way to get into the love state used for breeding
 | allow_sitting | false | Boolean true/false | If true, entities can breed while sitting |  | 
 | blend_attributes | true | Boolean true/false | If true, the entities will blend their attributes in the offspring after they breed. For example, horses blend their health, movement, and jump_strength in their offspring. |  | 
 | breed_cooldown | 60 | Decimal number | Time in seconds before the Entity can breed again. |  | 
-| breed_items | *not set* | Array of strings | The list of items that can be used to get the entity into the 'love' state. | Chicken: `["wheat_seeds","beetroot_seeds","melon_seeds","pumpkin_seeds","pitcher_pod","torchflower_seeds"]`, Cow: `["wheat"]`, Fox: `["sweet_berries","glow_berries"]` | 
+| breed_items | *not set* | Array of strings | The list of items that can be used to get the entity into the 'love' state. Can be a single item or an array. | Chicken: `["wheat_seeds","beetroot_seeds","melon_seeds","pumpkin_seeds","pitcher_pod","torchflower_seeds"]`, Cow: `["wheat"]`, Fox: `["sweet_berries","glow_berries"]` | 
+| breed_items (Alternate 1) | *not set* | String |  |  | 
 | breeds_with | *not set* | Array of [Breeds With](#breeds-with) items | The entity definitions that this entity can breed with. Can be a single object or an array. | Chicken: `{"minecraft:chicken":{}}`, Cow: `{"minecraft:cow":{}}`, Fox: `{"minecraft:fox":{}}` | 
 | breeds_with (Alternate 1) | *not set* | [Breeds With](#breeds-with) item |  |  | 
 | causes_pregnancy | false | Boolean true/false | If true, the entity will become pregnant instead of spawning a baby. | Frog: `true` | 
@@ -74,8 +75,11 @@ Allows an entity to establish a way to get into the love state used for breeding
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | color | *not set* | Percent Range | The percentage chance of denying the parents' variant. |  | 
+| color (Alternate 1) | *not set* | Decimal number |  |  | 
 | extra_variant | *not set* | Percent Range | The percentage chance of a mutation on the entity's extra variant type. |  | 
+| extra_variant (Alternate 1) | *not set* | Decimal number |  |  | 
 | variant | *not set* | Percent Range | The percentage chance of a mutation on the entity's variant type. |  | 
+| variant (Alternate 1) | *not set* | Decimal number |  |  | 
 
 ## Samples
 

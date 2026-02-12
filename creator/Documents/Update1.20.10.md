@@ -16,7 +16,7 @@ Several Item Components have released and are now available without using the Ho
 
 - [cooldown](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_cooldown.md)
 - [repairable](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_repairable.md)
-- [planter](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_entity_placer.md)
+- [placer](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_entity_placer.md)
 - [record](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_record.md)
 - [shooter](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_shooter.md)
 - [projectile](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_projectile.md)

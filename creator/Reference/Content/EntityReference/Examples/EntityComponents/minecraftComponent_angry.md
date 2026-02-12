@@ -25,7 +25,8 @@ Defines an entity's 'angry' state using a timer.
 | broadcast_filters | *not set* | Minecraft filter | Conditions that make this entry in the list valid |  | 
 | broadcast_range | 20 | Integer number | Distance in blocks within which other entities of the same entity type will become angry |  | 
 | broadcast_targets | *not set* | Array of strings | A list of entity families to broadcast anger to |  | 
-| calm_event | *not set* | Minecraft Event Reference | Event to fire when this entity is calmed down |  | 
+| calm_event | *not set* | Object | Event to fire when this entity is calmed down. Can be a simple event name string or an object with event and target properties. |  | 
+| calm_event (Alternate 1) | *not set* | String |  |  | 
 | duration | 25 | Integer number | The amount of time in seconds that the entity will be angry. |  | 
 | duration_delta | 0 | Integer number | Variance in seconds added to the duration [-delta, delta]. |  | 
 | filters | *not set* | Minecraft filter | Filter out mob types that it should not attack while angry (other Piglins) |  | 
