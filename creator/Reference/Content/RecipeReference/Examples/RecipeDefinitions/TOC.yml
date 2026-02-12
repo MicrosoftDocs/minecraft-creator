@@ -1,23 +1,14 @@
- - name: Introduction to Recipes 
-   href: RecipeIntroduction.md
- - name: Recipe Definition List
-   href: ../RecipeDefinitionList.md
- - name: Recipe Tag List
-   href: RecipeTagList.md
- - name: Furnace Recipe
-   href: minecraftRecipe_Furnace.md
- - name: Shaped Recipe
-   href: minecraftRecipe_Shaped.md
- - name: Shapeless Recipe
-   href: minecraftRecipe_Shapeless.md
- - name: Potion Brewing Recipe
-   href: minecraftRecipe_PotionBrewing.md
- - name: Potion Brewing Mix
-   href: minecraftRecipe_PotionBrewingMix.md
- - name: Smithing Transform Recipe
-   href: minecraftRecipe_SmithingTransform.md
- - name: Smithing Trim Recipe
-   href: minecraftRecipe_SmithingTrim.md
- - name: Tags as Recipe Input
-   href: TagsRecipeInput.md
- 
+- name: Recipe List
+  href: ../RecipeList.md
+- name: recipe_brewing_mix
+  href: recipe_brewing_mix.md
+- name: recipe_furnace
+  href: recipe_furnace.md
+- name: recipe_shaped
+  href: recipe_shaped.md
+- name: recipe_shapeless
+  href: recipe_shapeless.md
+- name: recipe_smithing_transform
+  href: recipe_smithing_transform.md
+- name: recipe_smithing_trim
+  href: recipe_smithing_trim.md

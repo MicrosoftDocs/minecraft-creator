@@ -2340,14 +2340,16 @@
       {
         "id": "minecraft:behavior.celebrate",
         "title": "Celebrate Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows this entity to celebrate surviving a raid by making celebration sounds and jumping.",
+        "dataType": 16,
+        "subFormId": "entity/celebrate"
       },
       {
         "id": "minecraft:behavior.celebrate_survive",
         "title": "Celebrate Survive Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the player to trade with this mob. When the goal starts, it will stop the mob's navigation.",
+        "dataType": 16,
+        "subFormId": "entity/celebrate_survive"
       },
       {
         "id": "minecraft:behavior.charge_attack",
@@ -2987,8 +2989,9 @@
       {
         "id": "minecraft:behavior.ram_attack",
         "title": "Ram Attack Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows this entity to damage a target by using a running attack.",
+        "dataType": 16,
+        "subFormId": "entity/ram_attack"
       },
       {
         "id": "minecraft:behavior.random_breach",
@@ -3023,8 +3026,9 @@
       {
         "id": "minecraft:behavior.random_search_and_dig",
         "title": "Random Search And Dig Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows this entity to locate a random target block that it can path find to. Once found, the entity will move towards it and dig up an item. [Default target block types: Dirt, Grass, Podzol, DirtWithRoots, MossBlock, Mud, MuddyMangroveRoots].",
+        "dataType": 16,
+        "subFormId": "entity/random_search_and_dig"
       },
       {
         "id": "minecraft:behavior.random_sitting",
@@ -3293,8 +3297,9 @@
       {
         "id": "minecraft:behavior.swim_with_entity",
         "title": "Swim With Entity Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows this entity to locate a random target block that it can path find to. Once found, the entity will move towards it and dig up an item. [Default target block types: Dirt, Grass, Podzol, DirtWithRoots, MossBlock, Mud, MuddyMangroveRoots].",
+        "dataType": 16,
+        "subFormId": "entity/swim_with_entity"
       },
       {
         "id": "minecraft:behavior.swoop_attack",
@@ -3312,8 +3317,9 @@
       {
         "id": "minecraft:behavior.take_flower",
         "title": "Take Flower Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to accept flowers from another mob with the minecraft:offer_flower behavior.",
+        "dataType": 16,
+        "subFormId": "entity/take_flower"
       },
       {
         "id": "minecraft:behavior.target_when_pushed",
@@ -3324,8 +3330,9 @@
       {
         "id": "minecraft:behavior.teleport_to_owner",
         "title": "Teleport To Owner Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows an entity to teleport to its owner.",
+        "dataType": 16,
+        "subFormId": "entity/teleport_to_owner"
       },
       {
         "id": "minecraft:behavior.tempt",
@@ -3363,8 +3370,9 @@
       {
         "id": "minecraft:behavior.trade_with_player",
         "title": "Trade With Player Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the player to trade with this mob. When the goal starts, it will stop the mob's navigation.",
+        "dataType": 16,
+        "subFormId": "entity/trade_with_player"
       },
       {
         "id": "minecraft:behavior.transport_items",
@@ -3407,14 +3415,16 @@
       {
         "id": "minecraft:behavior.work",
         "title": "Work Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the NPC to use the POI",
+        "dataType": 16,
+        "subFormId": "entity/work"
       },
       {
         "id": "minecraft:behavior.work_composter",
         "title": "Work Composter Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the NPC to use the composter POI to convert excess seeds into bone meal.",
+        "dataType": 16,
+        "subFormId": "entity/work_composter"
       },
       {
         "id": "minecraft:block_climber",

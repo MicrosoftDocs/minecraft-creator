@@ -488,7 +488,7 @@ Looking ahead, here's what you can expect coming in future releases.
  - splines
  - attach to non-player entity, aim assist
 
-### More modal UI presets 
+More modal UI presets 
 
 ### Stabilizing APIs 
  - Adding unbreakable to item durability

@@ -1,0 +1,76 @@
+{
+  "id": "minecraft:behavior.celebrate_survive",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.celebrate_survive",
+    "title": "Entity Celebrate Survive Behavior",
+    "description": "Allows the player to trade with this mob. When the goal starts, it will stop the mob's navigation.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "The duration in seconds that the celebration lasts for.",
+        "dataType": 3,
+        "defaultValue": 30
+      },
+      {
+        "id": "fireworks_interval",
+        "title": "Fireworks Interval",
+        "description": "Minimum and maximum time between firework (positive, in seconds).",
+        "dataType": 16,
+        "defaultValue": {
+          "max": 20,
+          "min": 10
+        },
+        "subFormId": "item_components/floatrange"
+      },
+      {
+        "id": "on_celebration_end_event",
+        "title": "Celebration End Event",
+        "description": "The event to trigger when the goal's duration expires.",
+        "dataType": 16,
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      }
+    ]
+  }
+}

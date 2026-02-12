@@ -58,6 +58,8 @@
   href: minecraftBlock_random_offset.md
 - name: minecraft:redstone_conductivity
   href: minecraftBlock_redstone_conductivity.md
+- name: minecraft:redstone_consumer
+  href: minecraftBlock_redstone_consumer.md
 - name: minecraft:redstone_producer
   href: minecraftBlock_redstone_producer.md
 - name: minecraft:replaceable

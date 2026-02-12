@@ -291,6 +291,54 @@
         "title": "Interact Filters",
         "description": "List of conditions to meet so that the entity can be fed.",
         "dataType": 20
+      },
+      {
+        "id": "pause_growth_items",
+        "title": "Pause Growth Items",
+        "description": "List of items that can be fed to the entity to pause growth for baby entities.",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:chicken_baby/minecraft:ageable/",
+              "content": [
+                "golden_dandelion"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cow.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cow_baby/minecraft:ageable/",
+              "content": [
+                "golden_dandelion"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "reset_growth_items",
+        "title": "Reset Growth Items",
+        "description": "List of items that can be used to reset growth for baby entities.",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:chicken_baby/minecraft:ageable/",
+              "content": [
+                "golden_dandelion"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cow.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cow_baby/minecraft:ageable/",
+              "content": [
+                "golden_dandelion"
+              ]
+            }
+          ]
+        }
       }
     ],
     "samples": {
@@ -307,6 +355,12 @@
               "pitcher_pod",
               "torchflower_seeds"
             ],
+            "pause_growth_items": [
+              "golden_dandelion"
+            ],
+            "reset_growth_items": [
+              "golden_dandelion"
+            ],
             "grow_up": {
               "event": "minecraft:ageable_grow_up",
               "target": "self"
@@ -320,6 +374,12 @@
           "content": {
             "duration": 1200,
             "feed_items": "wheat",
+            "pause_growth_items": [
+              "golden_dandelion"
+            ],
+            "reset_growth_items": [
+              "golden_dandelion"
+            ],
             "grow_up": {
               "event": "minecraft:ageable_grow_up",
               "target": "self"
@@ -335,6 +395,12 @@
             "feed_items": [
               "fish",
               "salmon"
+            ],
+            "pause_growth_items": [
+              "golden_dandelion"
+            ],
+            "reset_growth_items": [
+              "golden_dandelion"
             ],
             "grow_up": {
               "event": "ageable_grow_up",
@@ -352,6 +418,12 @@
               "sweet_berries",
               "glow_berries"
             ],
+            "pause_growth_items": [
+              "golden_dandelion"
+            ],
+            "reset_growth_items": [
+              "golden_dandelion"
+            ],
             "grow_up": {
               "event": "minecraft:ageable_grow_up",
               "target": "self"
@@ -365,6 +437,12 @@
           "content": {
             "duration": 1200,
             "feed_items": "wheat",
+            "pause_growth_items": [
+              "golden_dandelion"
+            ],
+            "reset_growth_items": [
+              "golden_dandelion"
+            ],
             "grow_up": {
               "event": "minecraft:ageable_grow_up",
               "target": "self"

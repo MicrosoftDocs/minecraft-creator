@@ -17,19 +17,8 @@ Defines an entity's melee attack damage and any additional status effects applie
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| damage | *not set* | Decimal number | Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it. Can be a number, an array [min, max], or an object with range_min and range_max properties. |  | 
-| damage (Alternate 1) | *not set* | Array of [Damage](#damage) items |  |  | 
-| damage (Alternate 2) | *not set* | [Damage](#damage) item |  |  | 
+| damage | *not set* | Range of floats | Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it. Can be a number, an array [min, max], or an object with range_min and range_max properties. |  | 
 | effect_duration | 0 | Decimal number | Duration in seconds of the status ailment applied to the damaged entity. |  | 
 | effect_name | *not set* | String | Identifier of the status ailment to apply to an entity attacked by this entity's melee attack. |  | 
-
-## Damage
-
-#### Damage Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| 0 | *not set* | Decimal number |  |  | 
-| 1 | *not set* | Decimal number |  |  | 
 
 ## Samples

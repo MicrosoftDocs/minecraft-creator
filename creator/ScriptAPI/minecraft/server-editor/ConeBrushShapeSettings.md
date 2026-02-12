@@ -23,8 +23,18 @@ Type: *number*
 
 Type: *number*
 
+### **hollow**
+`hollow: boolean;`
+
+Type: *boolean*
+
 ### **radius**
 `radius: number;`
+
+Type: *number*
+
+### **thickness**
+`thickness: number;`
 
 Type: *number*
 

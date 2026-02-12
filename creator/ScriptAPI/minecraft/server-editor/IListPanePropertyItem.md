@@ -24,6 +24,13 @@ Count of the slots managed by the list.
 
 Type: *number*
 
+### **viewControlPane**
+`read-only viewControlPane: IListPaneViewControlPane | undefined;`
+
+View control pane for the list
+
+Type: *IListPaneViewControlPane* | *undefined*
+
 ### **viewSortType**
 `read-only viewSortType: ListPaneViewSortType;`
 
@@ -33,6 +40,7 @@ Type: *ListPaneViewSortType*
 
 ## Methods
 - [addSlot](#addslot)
+- [buildViewControl](#buildviewcontrol)
 - [getSlotById](#getslotbyid)
 - [getSlotByIndex](#getslotbyindex)
 - [getViewFilter](#getviewfilter)
@@ -53,6 +61,18 @@ Adds a new slot to the list.
 - **params**: *ListPaneSlotCreationProps*
 
 **Returns** *IListPaneSlot*
+
+### **buildViewControl**
+`
+buildViewControl(options: IListPaneViewControlPaneOptions): IListPaneViewControlPane
+`
+
+Creates a pane that displays view and filtering configurations for the list if the parent container supports it.
+
+#### **Parameters**
+- **options**: *IListPaneViewControlPaneOptions*
+
+**Returns** *IListPaneViewControlPane*
 
 ### **getSlotById**
 `

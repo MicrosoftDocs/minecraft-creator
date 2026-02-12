@@ -52,6 +52,9 @@
         "description": "Change the placement position and direction behavior of a block",
         "dataType": 16,
         "defaultValue": {
+          "minecraft:connection": {
+            "enabled_states": []
+          },
           "minecraft:placement_direction": {
             "enabled_states": [],
             "y_rotation_offset": null

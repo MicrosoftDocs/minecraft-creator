@@ -108,7 +108,9 @@ Places a tree in the world. A tree consists of a column that is anchored to a ba
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| num_steps | *not set* | Integer number | Number of decoration blocks to place. |  | 
+| decoration_blocks_sequence | *not set* | Array of objects |  |  | 
+| decoration_blocks_sequence (Alternate 1) | *not set* | Array of strings |  |  | 
+| num_steps | *not set* | Integer number | Number of decoration blocks to place. (Will not be used if "decoration_blocks_sequence" given) |  | 
 | step_direction"<"down", "up", "out", "away" | *not set* | String | Directions to spread decoration blocks. |  | 
 
 ## Canopy Offset
@@ -200,7 +202,9 @@ Places a tree in the world. A tree consists of a column that is anchored to a ba
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| num_steps | *not set* | Integer number | Number of decoration blocks to place. |  | 
+| decoration_blocks_sequence | *not set* | Array of objects |  |  | 
+| decoration_blocks_sequence (Alternate 1) | *not set* | Array of strings |  |  | 
+| num_steps | *not set* | Integer number | Number of decoration blocks to place. (Will not be used if "decoration_blocks_sequence" given) |  | 
 | step_direction"<"down", "up", "out", "away" | *not set* | String | Directions to spread decoration blocks. |  | 
 
 ## Trunk Height
@@ -284,7 +288,9 @@ Places a tree in the world. A tree consists of a column that is anchored to a ba
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| num_steps | *not set* | Integer number | Number of decoration blocks to place. |  | 
+| decoration_blocks_sequence | *not set* | Array of objects |  |  | 
+| decoration_blocks_sequence (Alternate 1) | *not set* | Array of strings |  |  | 
+| num_steps | *not set* | Integer number | Number of decoration blocks to place. (Will not be used if "decoration_blocks_sequence" given) |  | 
 | step_direction"<"down", "up", "out", "away" | *not set* | String | Directions to spread decoration blocks. |  | 
 
 ## Mangrove Trunk

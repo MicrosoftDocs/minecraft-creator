@@ -18,7 +18,8 @@ This entity can be tamed.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | probability | 1 | Decimal number | The chance of taming the entity with each item use between 0.0 and 1.0, where 1.0 is 100% | Parrot: `0.33` | 
-| tame_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to run when this entity becomes tamed | Parrot: `{"event":"minecraft:on_tame","target":"self"}` | 
+| tame_event | *not set* | Object | Event to fire when the entity is tamed. Can be an object with event and target properties, or a simple event string. | Parrot: `{"event":"minecraft:on_tame","target":"self"}` | 
+| tame_event (Alternate 1) | *not set* | String |  |  | 
 | tame_items | *not set* | Array of strings | The list of items that can be used to tame this entity | Parrot: `["wheat_seeds","pumpkin_seeds","melon_seeds","beetroot_seeds","pitcher_pod","torchflower_seeds"]` | 
 | tameItems | *not set* | String |  |  | 
 
