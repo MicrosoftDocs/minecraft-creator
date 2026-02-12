@@ -29,9 +29,14 @@ new PyramidBrushShape(settings?: {
         width?: number;
         height?: number;
         depth?: number;
+        maxSide?: number;
+        maxHeight?: number;
         xRotation?: number;
         yRotation?: number;
         zRotation?: number;
+        hollow?: boolean;
+        thickness?: number;
+        enableHollowSettings?: boolean;
     })
 `
 
@@ -43,9 +48,14 @@ Constructs a new instance of the `PyramidBrushShape` class
         width?: number;
         height?: number;
         depth?: number;
+        maxSide?: number;
+        maxHeight?: number;
         xRotation?: number;
         yRotation?: number;
         zRotation?: number;
+        hollow?: boolean;
+        thickness?: number;
+        enableHollowSettings?: boolean;
     }*
 
 **Returns** *PyramidBrushShape*

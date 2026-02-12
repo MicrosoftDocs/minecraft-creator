@@ -1280,6 +1280,8 @@
       href: minecraft/server-editor/ListPaneSlotVariant.md
     - name: ListPaneViewSortType
       href: minecraft/server-editor/ListPaneViewSortType.md
+    - name: ListViewControlFilterFlags
+      href: minecraft/server-editor/ListViewControlFilterFlags.md
     - name: LogChannel
       href: minecraft/server-editor/LogChannel.md
     - name: MinimapMarkerType
@@ -1670,6 +1672,10 @@
       href: minecraft/server-editor/IListPaneSlotOptions.md
     - name: IListPaneTextEntry
       href: minecraft/server-editor/IListPaneTextEntry.md
+    - name: IListPaneViewControlPane
+      href: minecraft/server-editor/IListPaneViewControlPane.md
+    - name: IListPaneViewControlPaneOptions
+      href: minecraft/server-editor/IListPaneViewControlPaneOptions.md
     - name: IMenu
       href: minecraft/server-editor/IMenu.md
     - name: IMenuContainer
@@ -1896,6 +1902,10 @@
       href: minecraft/server-editor/ListPaneTextEntryParams.md
     - name: ListPaneViewFilter
       href: minecraft/server-editor/ListPaneViewFilter.md
+    - name: ListViewControlAction
+      href: minecraft/server-editor/ListViewControlAction.md
+    - name: ListViewControlActionState
+      href: minecraft/server-editor/ListViewControlActionState.md
     - name: LocalizedString
       href: minecraft/server-editor/LocalizedString.md
     - name: ModalDialogActivationParams
@@ -2070,8 +2080,6 @@
       href: minecraft/server-ui/DropdownItem.md
     - name: DropdownOptions
       href: minecraft/server-ui/DropdownOptions.md
-    - name: LabelOptions
-      href: minecraft/server-ui/LabelOptions.md
     - name: MessageBoxResult
       href: minecraft/server-ui/MessageBoxResult.md
     - name: ModalFormDataDropdownOptions
@@ -2090,6 +2098,8 @@
       href: minecraft/server-ui/SpacingOptions.md
     - name: TextFieldOptions
       href: minecraft/server-ui/TextFieldOptions.md
+    - name: TextOptions
+      href: minecraft/server-ui/TextOptions.md
     - name: ToggleOptions
       href: minecraft/server-ui/ToggleOptions.md
     - name: UIRawMessage

@@ -1,0 +1,217 @@
+{
+  "id": "minecraft:behavior.take_flower",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.take_flower",
+    "title": "Entity Take Flower Behavior",
+    "description": "Allows the mob to accept flowers from another mob with the minecraft:offer_flower behavior.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "filters",
+        "description": "Conditions that need to be met for the behavior to start.",
+        "dataType": 16,
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "filters",
+          "title": "Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": 16
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": 16
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": 16
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": 2,
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": 16
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "filters",
+            "dataType": 16
+          }
+        ]
+      },
+      {
+        "id": "max_head_rotation_y",
+        "title": "Max Head Rotation Y",
+        "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target.",
+        "dataType": 3,
+        "defaultValue": 30,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": "max_rotation_x",
+        "title": "Max Rotation X",
+        "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target.",
+        "dataType": 3,
+        "defaultValue": 30,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": "max_wait_time",
+        "title": "Max Wait Time",
+        "description": "The maximum amount of time (in seconds) for the mob to randomly wait for before taking the flower.",
+        "dataType": 3,
+        "defaultValue": 20
+      },
+      {
+        "id": "min_distance_to_target",
+        "title": "Min Distance To Target",
+        "description": "Minimum distance (in blocks) for the entity to be considered having reached its target.",
+        "dataType": 3,
+        "defaultValue": 2,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": "min_wait_time",
+        "title": "Min Wait Time",
+        "description": "The minimum amount of time (in seconds) for the mob to randomly wait for before taking the flower.",
+        "dataType": 3,
+        "defaultValue": 4
+      },
+      {
+        "id": "on_take_flower",
+        "title": "Take Flower",
+        "description": "Event triggered when the entity takes a flower from another entity.",
+        "dataType": 16,
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "search_area",
+        "title": "Search Area",
+        "description": "The dimensions of the AABB used to search for a potential mob to take a flower from.",
+        "dataType": 32,
+        "defaultValue": [
+          6,
+          2,
+          6
+        ],
+        "alternates": [
+          {
+            "id": "search_area",
+            "dataType": 16,
+            "subForm": {
+              "id": "search_area",
+              "title": "Search Area",
+              "fields": [
+                {
+                  "id": "x",
+                  "title": "X",
+                  "dataType": 3,
+                  "defaultValue": 0
+                },
+                {
+                  "id": "y",
+                  "title": "Y",
+                  "dataType": 3,
+                  "defaultValue": 0
+                },
+                {
+                  "id": "z",
+                  "title": "Z",
+                  "dataType": 3,
+                  "defaultValue": 0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal.",
+        "dataType": 3,
+        "defaultValue": 0.5
+      }
+    ]
+  }
+}

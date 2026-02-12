@@ -21,8 +21,10 @@ Describes how this mob can be leashed to other items.
 | can_be_stolen | false | Boolean true/false | If true, players can leash this entity even if it is already leashed to another entity. |  | 
 | hard_distance | 6 | Integer number | Distance in blocks at which the leash stiffens, restricting movement. |  | 
 | max_distance | 0 | Integer number | Distance in blocks it which the leash breaks. |  | 
-| on_leash | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call when this entity is leashed. |  | 
-| on_unleash | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call when this entity is unleashed. |  | 
+| on_leash | *not set* | Object | Event to call when this entity is leashed. Can be an object with event and target properties, or a simple event string. |  | 
+| on_leash (Alternate 1) | *not set* | String |  |  | 
+| on_unleash | *not set* | Object | Event to call when this entity is unleashed. Can be an object with event and target properties, or a simple event string. |  | 
+| on_unleash (Alternate 1) | *not set* | String |  |  | 
 | on_unleash_interact_only | false | Boolean true/false | When set to true, "on_unleash" does not trigger when the entity gets unleashed for reasons other than the player directly interacting with it. |  | 
 | presets | *not set* | Array of [Presets](#presets) items | Defines how this entity behaves when leashed to another entity. The first preset which "filter" conditions are met will be applied; if none match, a default configuration is used instead. | Boat: `[{"filter":{"test":"is_family","subject":"other","value":"happy_ghast"},"spring_type":"quad_dampened","rotation_adjustment":90},{"rotation_adjustment":90,"soft_distance":2,"hard_distance":4}]` | 
 | soft_distance | 4 | Integer number | Distance in blocks at which the 'spring' effect starts acting to keep this entity close to the entity that leashed it. |  | 

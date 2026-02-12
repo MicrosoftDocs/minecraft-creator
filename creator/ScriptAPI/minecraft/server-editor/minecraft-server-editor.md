@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.10-beta.22 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.10-beta.23 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -69,6 +69,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.10-
 - [ListPaneEntryType](ListPaneEntryType.md)
 - [ListPaneSlotVariant](ListPaneSlotVariant.md)
 - [ListPaneViewSortType](ListPaneViewSortType.md)
+- [ListViewControlFilterFlags](ListViewControlFilterFlags.md)
 - [LogChannel](LogChannel.md)
 - [MinimapMarkerType](MinimapMarkerType.md)
 - [MinimapViewType](MinimapViewType.md)
@@ -136,6 +137,8 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.10-
 - [ListPaneSlotLayoutSections](ListPaneSlotLayoutSections.md)
 - [ListPaneTextEntryParams](ListPaneTextEntryParams.md)
 - [ListPaneViewFilter](ListPaneViewFilter.md)
+- [ListViewControlAction](ListViewControlAction.md)
+- [ListViewControlActionState](ListViewControlActionState.md)
 - [LocalizedString](LocalizedString.md)
 - [ModalDialogActivationParams](ModalDialogActivationParams.md)
 - [ModalDialogCoreResponseType](ModalDialogCoreResponseType.md)
@@ -333,6 +336,8 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.10-
 - [IListPaneSlot](IListPaneSlot.md)
 - [IListPaneSlotOptions](IListPaneSlotOptions.md)
 - [IListPaneTextEntry](IListPaneTextEntry.md)
+- [IListPaneViewControlPane](IListPaneViewControlPane.md)
+- [IListPaneViewControlPaneOptions](IListPaneViewControlPaneOptions.md)
 - [IMenu](IMenu.md)
 - [IMenuContainer](IMenuContainer.md)
 - [IMenuCreationParams](IMenuCreationParams.md)

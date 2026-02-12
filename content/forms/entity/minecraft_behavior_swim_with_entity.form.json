@@ -67,7 +67,7 @@
         "id": "entity_types",
         "title": "Entity Types",
         "description": "Filters which types of entities are valid to follow.",
-        "dataType": 20,
+        "dataType": 17,
         "samples": {
           "/vanilla/behavior_pack/entities/dolphin.json": [
             {

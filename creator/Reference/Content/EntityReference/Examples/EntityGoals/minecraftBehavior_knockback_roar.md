@@ -27,7 +27,8 @@ Allows the mob to perform a damaging knockback that affects all nearby entities.
 | knockback_horizontal_strength | 4 | Integer number | The strength of the horizontal knockback. |  | 
 | knockback_range | 4 | Integer number | The radius (in blocks) of the knockback effect. |  | 
 | knockback_vertical_strength | 4 | Integer number | The strength of the vertical knockback. |  | 
-| on_roar_end | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event that is triggered when the roar ends. |  | 
+| on_roar_end | *not set* | Object | Event that is triggered when the roar ends. Can be an object with event and target properties, or a simple event string. |  | 
+| on_roar_end (Alternate 1) | *not set* | String |  |  | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
 
 ## Samples

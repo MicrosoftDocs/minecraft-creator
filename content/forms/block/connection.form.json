@@ -1,0 +1,24 @@
+{
+  "id": "Connection",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Connection",
+    "title": "Block Connection",
+    "description": "Adds connection states to the block. The values of these states are updated when the block or neighboring blocks change.",
+    "fields": [
+      {
+        "id": "enabled_states",
+        "title": "Enabled States",
+        "description": "Which connection states to enable. Options: [\"minecraft:cardinal_connections\"]. Must specify at least one.",
+        "dataType": 17,
+        "choices": [
+          {
+            "id": "minecraft:cardinal_connections",
+            "title": "Minecraft:cardinal connections"
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  }
+}

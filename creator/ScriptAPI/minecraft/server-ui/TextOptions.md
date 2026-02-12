@@ -4,16 +4,16 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server-ui.LabelOptions Interface
-description: Contents of the @minecraft/server-ui.LabelOptions class.
+title: minecraft/server-ui.TextOptions Interface
+description: Contents of the @minecraft/server-ui.TextOptions class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# LabelOptions Interface
+# TextOptions Interface
 
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-The options for including a label in {@link CustomForm}.
+The options for including a label or header in {@link CustomForm}.
 
 ## Properties
 

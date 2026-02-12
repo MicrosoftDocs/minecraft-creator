@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 | Item Components | Description |
 |:-----|:----------|
 | [minecraft:allow_off_hand](./ItemComponents/minecraft_allow_off_hand.md)| The allow_off_hand component determines whether the item can be placed in the off hand slot of the inventory. |
-| [minecraft:block_placer](./ItemComponents/minecraft_block_placer.md)| Sets the item as a planter item component for blocks. |
+| [minecraft:block_placer](./ItemComponents/minecraft_block_placer.md)| Sets the item as a placer item component for blocks. |
 | [minecraft:bundle_interaction](./ItemComponents/minecraft_bundle_interaction.md)| Enables the bundle-specific interaction scheme and tooltip for an item. |
 | [minecraft:can_destroy_in_creative](./ItemComponents/minecraft_can_destroy_in_creative.md)| The can_destroy_in_creative component determines if the item can be used by a player to break blocks when in creative mode. |
 | [minecraft:compostable](./ItemComponents/minecraft_compostable.md)| Specifies that an item is compostable and provides the chance of creating a composting layer in the composter |

@@ -41,6 +41,7 @@ ms.date: 02/11/2025
 | [minecraft:precipitation_interactions](./minecraftBlock_precipitation_interactions.md)| Component that determines how the block will interact with rain and snow<br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.120) |
 | [minecraft:random_offset](./minecraftBlock_random_offset.md)| This component defines a random offset for the block, seeded based on the block's position and the specified range and steps. |
 | [minecraft:redstone_conductivity](./minecraftBlock_redstone_conductivity.md)| The basic redstone properties of a block; if the component is not provided the default values are used. |
+| [minecraft:redstone_consumer](./minecraftBlock_redstone_consumer.md)| A component describing how a block can consume and potentially propogate a redstone signal. |
 | [minecraft:redstone_producer](./minecraftBlock_redstone_producer.md)| If added to a block, indicates that it produces a redstone signal. |
 | [minecraft:replaceable](./minecraftBlock_replaceable.md)| A block with this component can be replaced when another block is placed in the same block position.<br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.60) |
 | [minecraft:selection_box](./minecraftBlock_selection_box.md)| Defines the area of the block that is selected by the player's cursor (the outline shown when looking at the block). |

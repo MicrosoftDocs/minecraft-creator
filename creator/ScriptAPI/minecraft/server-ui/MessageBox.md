@@ -21,44 +21,43 @@ A simple message form UI, 2 buttons and a text body.
 - [button2](#button2)
 - [close](#close)
 - [show](#show)
-- [title](#title)
 - [create](#create)
 
 ### **body**
 `
-body(text: Observable<string> | string | UIRawMessage): MessageBox
+body(text: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage): MessageBox
 `
 
 Sets the data for the text in the body of the form. It is contained within a scroll view to allow for lots of text.
 
 #### **Parameters**
-- **text**: *Observable<string>* | *string* | *UIRawMessage*
+- **text**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
 
 **Returns** *MessageBox*
 
 ### **button1**
 `
-button1(label: Observable<string> | string | UIRawMessage, tooltip?: Observable<string> | string | UIRawMessage): MessageBox
+button1(label: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, tooltip?: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage): MessageBox
 `
 
 Sets the data for the top button in the form.
 
 #### **Parameters**
-- **label**: *Observable<string>* | *string* | *UIRawMessage*
-- **tooltip**?: *Observable<string>* | *string* | *UIRawMessage*
+- **label**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
+- **tooltip**?: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
 
 **Returns** *MessageBox*
 
 ### **button2**
 `
-button2(label: Observable<string> | string | UIRawMessage, tooltip?: Observable<string> | string | UIRawMessage): MessageBox
+button2(label: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, tooltip?: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage): MessageBox
 `
 
 Sets the data for the bottom button in the form.
 
 #### **Parameters**
-- **label**: *Observable<string>* | *string* | *UIRawMessage*
-- **tooltip**?: *Observable<string>* | *string* | *UIRawMessage*
+- **label**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
+- **tooltip**?: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
 
 **Returns** *MessageBox*
 
@@ -80,26 +79,15 @@ Show this modal to the player. Will throw an error if the modal is already showi
 
 **Returns** *Promise<MessageBoxResult>*
 
-### **title**
-`
-title(text: Observable<string> | string | UIRawMessage): MessageBox
-`
-
-Sets the title of form.
-
-#### **Parameters**
-- **text**: *Observable<string>* | *string* | *UIRawMessage*
-
-**Returns** *MessageBox*
-
 ### **create**
 `
-static create(player: minecraftserver.Player): MessageBox
+static create(player: minecraftserver.Player, title: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage): MessageBox
 `
 
 Creates a message form for a certain player. Use this instead of a constructor.
 
 #### **Parameters**
 - **player**: *minecraftserver.Player*
+- **title**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
 
 **Returns** *MessageBox*

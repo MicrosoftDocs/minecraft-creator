@@ -572,6 +572,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:glowstone |  |
 | minecraft:gold_block |  |
 | minecraft:gold_ore |  |
+| minecraft:golden_dandelion |  |
 | minecraft:golden_rail | rail_data_bit, rail_direction |
 | minecraft:granite |  |
 | minecraft:granite_double_slab | minecraft:vertical_half |
@@ -624,10 +625,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:hard_light_gray_stained_glass |  |
 | minecraft:hard_light_gray_stained_glass_pane |  |
 | minecraft:hard_lime_stained_glass |  |
-| minecraft:hard_lime_stained_glass_pane |  |
 
 | Name | States |
 |:-----------|:-----------|
+| minecraft:hard_lime_stained_glass_pane |  |
 | minecraft:hard_magenta_stained_glass |  |
 | minecraft:hard_magenta_stained_glass_pane |  |
 | minecraft:hard_orange_stained_glass |  |
@@ -827,10 +828,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:nether_sprouts |  |
 | minecraft:nether_wart | age |
 | minecraft:nether_wart_block |  |
-| minecraft:netherite_block |  |
 
 | Name | States |
 |:-----------|:-----------|
+| minecraft:netherite_block |  |
 | minecraft:netherrack |  |
 | minecraft:normal_stone_double_slab | minecraft:vertical_half |
 | minecraft:normal_stone_slab | minecraft:vertical_half |
@@ -1030,10 +1031,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:red_stained_glass |  |
 | minecraft:red_stained_glass_pane |  |
 | minecraft:red_terracotta |  |
-| minecraft:red_tulip |  |
 
 | Name | States |
 |:-----------|:-----------|
+| minecraft:red_tulip |  |
 | minecraft:red_wool |  |
 | minecraft:redstone_block |  |
 | minecraft:redstone_lamp |  |
@@ -1233,10 +1234,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:waxed_copper_bars |  |
 | minecraft:waxed_copper_bulb | lit, powered_bit |
 | minecraft:waxed_copper_chain | pillar_axis |
-| minecraft:waxed_copper_chest | minecraft:cardinal_direction |
 
 | Name | States |
 |:-----------|:-----------|
+| minecraft:waxed_copper_chest | minecraft:cardinal_direction |
 | minecraft:waxed_copper_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:waxed_copper_golem_statue | minecraft:cardinal_direction |
 | minecraft:waxed_copper_grate |  |
