@@ -15,7 +15,7 @@ Enables interacting with this entity using its own spawn egg to spawn a born chi
 
 ## Samples
 
-#### [Cow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cow.json)
+#### [Chicken](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chicken.json)
 
 
 ```json

@@ -27,7 +27,7 @@ Defines the player's level.
 
 ```json
 "minecraft:player.level": {
-  "value": 0,
-  "max": 24791
+  "max": 24791,
+  "value": 0
 }
 ```

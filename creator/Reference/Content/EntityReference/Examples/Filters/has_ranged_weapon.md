@@ -68,13 +68,13 @@ At Short (using Defaults)..:
 
 #### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
 
-At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[1]/filters/: 
+At /minecraft:entity/components/minecraft:environment_sensor/triggers[1]/filters/: 
 
 ```json
 {
+  "operator": "==",
   "test": "has_ranged_weapon",
   "subject": "self",
-  "operator": "==",
   "value": false
 }
 ```
@@ -83,16 +83,16 @@ At /minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environme
 
 ```json
 {
+  "operator": "==",
   "test": "has_ranged_weapon",
   "subject": "self",
-  "operator": "==",
   "value": true
 }
 ```
 
 #### [Parched](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parched.json)
 
-At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[1]/filters/: 
+At /minecraft:entity/components/minecraft:environment_sensor/triggers[1]/filters/: 
 
 ```json
 {

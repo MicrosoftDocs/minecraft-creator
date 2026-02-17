@@ -17,10 +17,10 @@ Returns true when the subject entity contains the named component.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Rabbit: `"!="` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Sheep: `"!="` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Sheep: `"self"`, Zoglin: `"other"` | 
-| test | *not set* | String |  | Rabbit: `"has_component"` | 
-| value | *not set* | String | (Required) The component name to look for | Rabbit: `"minecraft:variant"`, Sheep: `"minecraft:is_baby"`, `"minecraft:is_dyeable"` | 
+| test | *not set* | String |  | Sheep: `"has_component"` | 
+| value | *not set* | String | (Required) The component name to look for | Sheep: `"minecraft:is_baby"`, `"minecraft:is_dyeable"` | 
 
 ### Operator choices
 
@@ -61,18 +61,6 @@ At Short (using Defaults)..:
 
 ```json
 { "test": "has_component", "value": "minecraft:explode" }
-```
-
-#### [Rabbit](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/rabbit.json)
-
-At /minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/: 
-
-```json
-{
-  "test": "has_component",
-  "operator": "!=",
-  "value": "minecraft:variant"
-}
 ```
 
 #### [Sheep](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/sheep.json)
@@ -125,8 +113,8 @@ At /minecraft:entity/events/minecraft:entity_transformed/sequence[0]/filters/:
 
 ```json
 {
-  "test": "has_component",
   "subject": "other",
+  "test": "has_component",
   "value": "minecraft:is_baby"
 }
 ```
@@ -136,8 +124,8 @@ At /minecraft:entity/events/minecraft:entity_transformed/sequence[1]/filters/:
 ```json
 {
   "test": "has_component",
-  "subject": "other",
   "operator": "!=",
+  "subject": "other",
   "value": "minecraft:is_baby"
 }
 ```

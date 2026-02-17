@@ -105,7 +105,7 @@
                 "/vanilla/behavior_pack/entities/cave_spider.json": [
                   {
                     "path": "entity_type",
-                    "content": "minecraft:skeleton"
+                    "content": "minecraft:bogged"
                   }
                 ]
               }
@@ -115,18 +115,18 @@
         "samples": {
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_jockey/minecraft:addrider/",
+              "path": "/minecraft:entity/component_groups/minecraft:spider_bogged_jockey/minecraft:addrider/",
               "content": [
                 {
-                  "entity_type": "minecraft:skeleton"
+                  "entity_type": "minecraft:bogged"
                 }
               ]
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_stray_jockey/minecraft:addrider/",
+              "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
               "content": [
                 {
-                  "entity_type": "minecraft:stray"
+                  "entity_type": "minecraft:wither_skeleton"
                 }
               ]
             }
@@ -137,31 +137,31 @@
     "samples": {
       "/vanilla/behavior_pack/entities/cave_spider.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_jockey/minecraft:addrider/",
-          "content": {
-            "riders": [
-              {
-                "entity_type": "minecraft:skeleton"
-              }
-            ]
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_stray_jockey/minecraft:addrider/",
-          "content": {
-            "riders": [
-              {
-                "entity_type": "minecraft:stray"
-              }
-            ]
-          }
-        },
-        {
           "path": "/minecraft:entity/component_groups/minecraft:spider_bogged_jockey/minecraft:addrider/",
           "content": {
             "riders": [
               {
                 "entity_type": "minecraft:bogged"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
+          "content": {
+            "riders": [
+              {
+                "entity_type": "minecraft:wither_skeleton"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_jockey/minecraft:addrider/",
+          "content": {
+            "riders": [
+              {
+                "entity_type": "minecraft:skeleton"
               }
             ]
           }
@@ -177,11 +177,11 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
+          "path": "/minecraft:entity/component_groups/minecraft:spider_stray_jockey/minecraft:addrider/",
           "content": {
             "riders": [
               {
-                "entity_type": "minecraft:wither_skeleton"
+                "entity_type": "minecraft:stray"
               }
             ]
           }
@@ -189,6 +189,26 @@
       ],
       "/vanilla/behavior_pack/entities/spider.json": [
         {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_bogged_jockey/minecraft:addrider/",
+          "content": {
+            "riders": [
+              {
+                "entity_type": "minecraft:bogged"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
+          "content": {
+            "riders": [
+              {
+                "entity_type": "minecraft:wither_skeleton"
+              }
+            ]
+          }
+        },
+        {
           "path": "/minecraft:entity/component_groups/minecraft:spider_jockey/minecraft:addrider/",
           "content": {
             "riders": [
@@ -209,31 +229,11 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_bogged_jockey/minecraft:addrider/",
-          "content": {
-            "riders": [
-              {
-                "entity_type": "minecraft:bogged"
-              }
-            ]
-          }
-        },
-        {
           "path": "/minecraft:entity/component_groups/minecraft:spider_parched_jockey/minecraft:addrider/",
           "content": {
             "riders": [
               {
                 "entity_type": "minecraft:parched"
-              }
-            ]
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
-          "content": {
-            "riders": [
-              {
-                "entity_type": "minecraft:wither_skeleton"
               }
             ]
           }
@@ -280,26 +280,26 @@
         "samples": {
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_jockey/minecraft:addrider/",
-              "content": [
-                {
-                  "entity_type": "minecraft:skeleton"
-                }
-              ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_stray_jockey/minecraft:addrider/",
-              "content": [
-                {
-                  "entity_type": "minecraft:stray"
-                }
-              ]
-            },
-            {
               "path": "/minecraft:entity/component_groups/minecraft:spider_bogged_jockey/minecraft:addrider/",
               "content": [
                 {
                   "entity_type": "minecraft:bogged"
+                }
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
+              "content": [
+                {
+                  "entity_type": "minecraft:wither_skeleton"
+                }
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_jockey/minecraft:addrider/",
+              "content": [
+                {
+                  "entity_type": "minecraft:skeleton"
                 }
               ]
             },
@@ -312,16 +312,32 @@
               ]
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
+              "path": "/minecraft:entity/component_groups/minecraft:spider_stray_jockey/minecraft:addrider/",
               "content": [
                 {
-                  "entity_type": "minecraft:wither_skeleton"
+                  "entity_type": "minecraft:stray"
                 }
               ]
             }
           ],
           "/vanilla/behavior_pack/entities/spider.json": [
             {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_bogged_jockey/minecraft:addrider/",
+              "content": [
+                {
+                  "entity_type": "minecraft:bogged"
+                }
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
+              "content": [
+                {
+                  "entity_type": "minecraft:wither_skeleton"
+                }
+              ]
+            },
+            {
               "path": "/minecraft:entity/component_groups/minecraft:spider_jockey/minecraft:addrider/",
               "content": [
                 {
@@ -338,26 +354,10 @@
               ]
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_bogged_jockey/minecraft:addrider/",
-              "content": [
-                {
-                  "entity_type": "minecraft:bogged"
-                }
-              ]
-            },
-            {
               "path": "/minecraft:entity/component_groups/minecraft:spider_parched_jockey/minecraft:addrider/",
               "content": [
                 {
                   "entity_type": "minecraft:parched"
-                }
-              ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
-              "content": [
-                {
-                  "entity_type": "minecraft:wither_skeleton"
                 }
               ]
             }
@@ -388,31 +388,31 @@
     "samples": {
       "/vanilla/behavior_pack/entities/cave_spider.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_jockey/minecraft:addrider/",
-          "content": {
-            "riders": [
-              {
-                "entity_type": "minecraft:skeleton"
-              }
-            ]
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_stray_jockey/minecraft:addrider/",
-          "content": {
-            "riders": [
-              {
-                "entity_type": "minecraft:stray"
-              }
-            ]
-          }
-        },
-        {
           "path": "/minecraft:entity/component_groups/minecraft:spider_bogged_jockey/minecraft:addrider/",
           "content": {
             "riders": [
               {
                 "entity_type": "minecraft:bogged"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
+          "content": {
+            "riders": [
+              {
+                "entity_type": "minecraft:wither_skeleton"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_jockey/minecraft:addrider/",
+          "content": {
+            "riders": [
+              {
+                "entity_type": "minecraft:skeleton"
               }
             ]
           }
@@ -428,11 +428,11 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
+          "path": "/minecraft:entity/component_groups/minecraft:spider_stray_jockey/minecraft:addrider/",
           "content": {
             "riders": [
               {
-                "entity_type": "minecraft:wither_skeleton"
+                "entity_type": "minecraft:stray"
               }
             ]
           }
@@ -440,6 +440,26 @@
       ],
       "/vanilla/behavior_pack/entities/spider.json": [
         {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_bogged_jockey/minecraft:addrider/",
+          "content": {
+            "riders": [
+              {
+                "entity_type": "minecraft:bogged"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
+          "content": {
+            "riders": [
+              {
+                "entity_type": "minecraft:wither_skeleton"
+              }
+            ]
+          }
+        },
+        {
           "path": "/minecraft:entity/component_groups/minecraft:spider_jockey/minecraft:addrider/",
           "content": {
             "riders": [
@@ -460,31 +480,11 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_bogged_jockey/minecraft:addrider/",
-          "content": {
-            "riders": [
-              {
-                "entity_type": "minecraft:bogged"
-              }
-            ]
-          }
-        },
-        {
           "path": "/minecraft:entity/component_groups/minecraft:spider_parched_jockey/minecraft:addrider/",
           "content": {
             "riders": [
               {
                 "entity_type": "minecraft:parched"
-              }
-            ]
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
-          "content": {
-            "riders": [
-              {
-                "entity_type": "minecraft:wither_skeleton"
               }
             ]
           }

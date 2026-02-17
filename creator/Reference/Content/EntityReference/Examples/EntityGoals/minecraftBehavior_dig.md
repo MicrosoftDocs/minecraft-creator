@@ -21,7 +21,7 @@ Allows this entity to dig into the ground before despawning.
 | digs_in_daylight | false | Boolean true/false | Indicates that the actor should start digging when it sees daylight |  | 
 | duration | 0 | Decimal number | Goal duration in seconds | Warden: `5.5` | 
 | idle_time | 0 | Decimal number | The minimum idle time in seconds between the last detected disturbance to the start of digging. | Warden: `60` | 
-| on_start | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event(s) to run when the goal starts. | Warden: `{"event":"on_digging_event","target":"self"}` | 
+| on_start | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event(s) to run when the goal starts. | Warden: `{"event":"on_digging_event"}` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Warden: `1` | 
 | suspicion_is_disturbance | false | Boolean true/false | If true, finding new suspicious locations count as disturbances that may delay the start of this goal. | Warden: `true` | 
 | vibration_is_disturbance | false | Boolean true/false | If true, vibrations count as disturbances that may delay the start of this goal. | Warden: `true` | 
@@ -33,15 +33,13 @@ Allows this entity to dig into the ground before despawning.
 
 ```json
 "minecraft:behavior.dig": {
-  "priority": 1,
   "duration": 5.5,
   "idle_time": 60,
   "vibration_is_disturbance": true,
   "suspicion_is_disturbance": true,
-  "digs_in_daylight": false,
   "on_start": {
-    "event": "on_digging_event",
-    "target": "self"
-  }
+    "event": "on_digging_event"
+  },
+  "priority": 1
 }
 ```

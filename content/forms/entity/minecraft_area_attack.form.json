@@ -260,13 +260,13 @@
               "content": {
                 "any_of": [
                   {
-                    "test": "is_family",
                     "subject": "other",
+                    "test": "is_family",
                     "value": "player"
                   },
                   {
-                    "test": "is_family",
                     "subject": "other",
+                    "test": "is_family",
                     "value": "irongolem"
                   }
                 ]
@@ -277,13 +277,13 @@
               "content": {
                 "any_of": [
                   {
-                    "test": "is_family",
                     "subject": "other",
+                    "test": "is_family",
                     "value": "player"
                   },
                   {
-                    "test": "is_family",
                     "subject": "other",
+                    "test": "is_family",
                     "value": "irongolem"
                   }
                 ]
@@ -296,18 +296,18 @@
               "content": {
                 "any_of": [
                   {
-                    "test": "is_family",
                     "subject": "other",
+                    "test": "is_family",
                     "value": "player"
                   },
                   {
-                    "test": "is_family",
                     "subject": "other",
+                    "test": "is_family",
                     "value": "irongolem"
                   },
                   {
-                    "test": "is_family",
                     "subject": "other",
+                    "test": "is_family",
                     "value": "snowgolem"
                   }
                 ]
@@ -318,18 +318,18 @@
               "content": {
                 "any_of": [
                   {
-                    "test": "is_family",
                     "subject": "other",
+                    "test": "is_family",
                     "value": "player"
                   },
                   {
-                    "test": "is_family",
                     "subject": "other",
+                    "test": "is_family",
                     "value": "irongolem"
                   },
                   {
-                    "test": "is_family",
                     "subject": "other",
+                    "test": "is_family",
                     "value": "snowgolem"
                   }
                 ]
@@ -351,20 +351,20 @@
         {
           "path": "/minecraft:entity/component_groups/minecraft:slime_large/minecraft:area_attack/",
           "content": {
-            "damage_range": 0.15,
-            "damage_per_tick": 6,
-            "damage_cooldown": 0.5,
             "cause": "entity_attack",
+            "damage_cooldown": 0.5,
+            "damage_per_tick": 6,
+            "damage_range": 0.15,
             "entity_filter": {
               "any_of": [
                 {
-                  "test": "is_family",
                   "subject": "other",
+                  "test": "is_family",
                   "value": "player"
                 },
                 {
-                  "test": "is_family",
                   "subject": "other",
+                  "test": "is_family",
                   "value": "irongolem"
                 }
               ]
@@ -374,20 +374,20 @@
         {
           "path": "/minecraft:entity/component_groups/minecraft:slime_medium/minecraft:area_attack/",
           "content": {
-            "damage_range": 0.15,
-            "damage_per_tick": 4,
-            "damage_cooldown": 0.5,
             "cause": "entity_attack",
+            "damage_cooldown": 0.5,
+            "damage_per_tick": 4,
+            "damage_range": 0.15,
             "entity_filter": {
               "any_of": [
                 {
-                  "test": "is_family",
                   "subject": "other",
+                  "test": "is_family",
                   "value": "player"
                 },
                 {
-                  "test": "is_family",
                   "subject": "other",
+                  "test": "is_family",
                   "value": "irongolem"
                 }
               ]
@@ -397,20 +397,20 @@
         {
           "path": "/minecraft:entity/component_groups/minecraft:slime_small/minecraft:area_attack/",
           "content": {
-            "damage_range": 0.15,
-            "damage_per_tick": 3,
-            "damage_cooldown": 0.5,
             "cause": "entity_attack",
+            "damage_cooldown": 0.5,
+            "damage_per_tick": 3,
+            "damage_range": 0.15,
             "entity_filter": {
               "any_of": [
                 {
-                  "test": "is_family",
                   "subject": "other",
+                  "test": "is_family",
                   "value": "player"
                 },
                 {
-                  "test": "is_family",
                   "subject": "other",
+                  "test": "is_family",
                   "value": "irongolem"
                 }
               ]
@@ -422,25 +422,25 @@
         {
           "path": "/minecraft:entity/component_groups/minecraft:slime_large/minecraft:area_attack/",
           "content": {
-            "damage_range": 0.15,
-            "damage_per_tick": 4,
-            "damage_cooldown": 0.5,
             "cause": "entity_attack",
+            "damage_cooldown": 0.5,
+            "damage_per_tick": 4,
+            "damage_range": 0.15,
             "entity_filter": {
               "any_of": [
                 {
-                  "test": "is_family",
                   "subject": "other",
+                  "test": "is_family",
                   "value": "player"
                 },
                 {
-                  "test": "is_family",
                   "subject": "other",
+                  "test": "is_family",
                   "value": "irongolem"
                 },
                 {
-                  "test": "is_family",
                   "subject": "other",
+                  "test": "is_family",
                   "value": "snowgolem"
                 }
               ]
@@ -450,25 +450,25 @@
         {
           "path": "/minecraft:entity/component_groups/minecraft:slime_medium/minecraft:area_attack/",
           "content": {
-            "damage_range": 0.15,
-            "damage_per_tick": 2,
-            "damage_cooldown": 0.5,
             "cause": "entity_attack",
+            "damage_cooldown": 0.5,
+            "damage_per_tick": 2,
+            "damage_range": 0.15,
             "entity_filter": {
               "any_of": [
                 {
-                  "test": "is_family",
                   "subject": "other",
+                  "test": "is_family",
                   "value": "player"
                 },
                 {
-                  "test": "is_family",
                   "subject": "other",
+                  "test": "is_family",
                   "value": "irongolem"
                 },
                 {
-                  "test": "is_family",
                   "subject": "other",
+                  "test": "is_family",
                   "value": "snowgolem"
                 }
               ]

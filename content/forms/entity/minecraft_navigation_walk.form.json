@@ -382,6 +382,25 @@
             }
           ]
         }
+      },
+      {
+        "id": "using_door_annotation",
+        "title": "Using Door Annotation",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/blaze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:navigation.walk/",
+              "content": true
+            }
+          ]
+        }
       }
     ],
     "samples": {
@@ -389,9 +408,10 @@
         {
           "path": "/minecraft:entity/components/minecraft:navigation.walk/",
           "content": {
-            "can_path_over_water": true,
+            "avoid_damage_blocks": true,
             "avoid_water": true,
-            "avoid_damage_blocks": true
+            "can_path_over_water": true,
+            "using_door_annotation": true
           }
         }
       ],
@@ -399,8 +419,8 @@
         {
           "path": "/minecraft:entity/components/minecraft:navigation.walk/",
           "content": {
-            "is_amphibious": true,
             "avoid_sun": true,
+            "is_amphibious": true,
             "avoid_water": true
           }
         }
@@ -413,7 +433,8 @@
               {
                 "tags": "query.any_tag('trapdoors')"
               }
-            ]
+            ],
+            "using_door_annotation": true
           }
         }
       ],

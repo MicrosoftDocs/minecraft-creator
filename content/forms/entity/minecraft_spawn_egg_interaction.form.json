@@ -7,6 +7,12 @@
     "description": "Enables interacting with this entity using its own spawn egg to spawn a born child. Runs the \"minecraft:entity_born\" event on the created entity as well as the defined \"on_spawn\" event.",
     "fields": [],
     "samples": {
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:spawn_egg_interaction/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/cow.json": [
         {
           "path": "/minecraft:entity/components/minecraft:spawn_egg_interaction/",
@@ -26,12 +32,6 @@
         }
       ],
       "/vanilla/behavior_pack/entities/fox.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:spawn_egg_interaction/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/frog.json": [
         {
           "path": "/minecraft:entity/components/minecraft:spawn_egg_interaction/",
           "content": {}

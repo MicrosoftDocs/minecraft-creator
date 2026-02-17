@@ -128,15 +128,15 @@
       ],
       "/vanilla/behavior_pack/entities/frog.json": [
         {
-          "path": "/minecraft:entity/component_groups/temperate_frog/minecraft:variant/",
-          "content": {
-            "value": 0
-          }
-        },
-        {
           "path": "/minecraft:entity/component_groups/cold_frog/minecraft:variant/",
           "content": {
             "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/temperate_frog/minecraft:variant/",
+          "content": {
+            "value": 0
           }
         },
         {

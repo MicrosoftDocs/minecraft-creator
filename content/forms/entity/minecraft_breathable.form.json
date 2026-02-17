@@ -344,6 +344,11 @@
         }
       },
       {
+        "id": "suffocateTime",
+        "title": "SuffocateTime",
+        "dataType": 7
+      },
+      {
         "id": "totalSupply",
         "title": "TotalSupply",
         "dataType": 7,
@@ -355,11 +360,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "suffocateTime",
-        "title": "SuffocateTime",
-        "dataType": 7
       }
     ],
     "samples": {
@@ -367,8 +367,8 @@
         {
           "path": "/minecraft:entity/components/minecraft:breathable/",
           "content": {
-            "totalSupply": 15,
-            "suffocateTime": 0
+            "suffocateTime": 0,
+            "totalSupply": 15
           }
         }
       ],
@@ -376,8 +376,8 @@
         {
           "path": "/minecraft:entity/components/minecraft:breathable/",
           "content": {
-            "total_supply": 15,
-            "suffocate_time": 0
+            "suffocate_time": 0,
+            "total_supply": 15
           }
         }
       ],
@@ -385,9 +385,9 @@
         {
           "path": "/minecraft:entity/components/minecraft:breathable/",
           "content": {
-            "total_supply": 15,
+            "breathes_water": true,
             "suffocate_time": 0,
-            "breathes_water": true
+            "total_supply": 15
           }
         }
       ],
@@ -395,8 +395,8 @@
         {
           "path": "/minecraft:entity/components/minecraft:breathable/",
           "content": {
-            "total_supply": 15,
-            "suffocate_time": 0
+            "suffocate_time": 0,
+            "total_supply": 15
           }
         }
       ],
@@ -404,8 +404,8 @@
         {
           "path": "/minecraft:entity/components/minecraft:breathable/",
           "content": {
-            "total_supply": 15,
-            "suffocate_time": 0
+            "suffocate_time": 0,
+            "total_supply": 15
           }
         }
       ]

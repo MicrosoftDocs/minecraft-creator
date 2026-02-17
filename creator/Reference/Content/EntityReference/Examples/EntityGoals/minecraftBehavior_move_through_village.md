@@ -28,8 +28,8 @@ Can only be used by Villagers. Allows the villagers to create paths around the v
 
 ```json
 "minecraft:behavior.move_through_village": {
+  "only_at_night": true,
   "priority": 3,
-  "speed_multiplier": 0.6,
-  "only_at_night": true
+  "speed_multiplier": 0.6
 }
 ```

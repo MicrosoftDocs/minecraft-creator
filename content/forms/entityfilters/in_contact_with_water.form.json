@@ -193,8 +193,8 @@
         {
           "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions[2]/filters/",
           "content": {
-            "test": "in_contact_with_water",
             "operator": "==",
+            "test": "in_contact_with_water",
             "value": true
           }
         }

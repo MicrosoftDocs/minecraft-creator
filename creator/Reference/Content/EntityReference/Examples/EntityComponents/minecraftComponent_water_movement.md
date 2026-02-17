@@ -17,7 +17,7 @@ Customizes how the entity moves through water by adjusting drag coefficient. Low
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| drag_factor | 0.8 | Decimal number | Drag factor to determine movement speed when in water. | Polar Bear: `0.98`, Turtle: `0.9` | 
+| drag_factor | 0.8 | Decimal number | Drag factor to determine movement speed when in water. | Polar Bear: `0.98` | 
 
 ## Samples
 
@@ -27,14 +27,5 @@ Customizes how the entity moves through water by adjusting drag coefficient. Low
 ```json
 "minecraft:water_movement": {
   "drag_factor": 0.98
-}
-```
-
-#### [Turtle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/turtle.json)
-
-
-```json
-"minecraft:water_movement": {
-  "drag_factor": 0.9
 }
 ```

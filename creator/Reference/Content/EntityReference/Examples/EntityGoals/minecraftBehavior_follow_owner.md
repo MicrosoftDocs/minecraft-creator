@@ -36,12 +36,12 @@ Allows a mob to follow the player that owns it.
 
 ```json
 "minecraft:behavior.follow_owner": {
+  "can_teleport": false,
   "priority": 6,
+  "ignore_vibration": false,
   "speed_multiplier": 8,
   "start_distance": 16,
-  "stop_distance": 4,
-  "can_teleport": false,
-  "ignore_vibration": false
+  "stop_distance": 4
 }
 ```
 

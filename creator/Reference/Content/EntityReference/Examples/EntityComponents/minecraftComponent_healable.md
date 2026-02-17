@@ -17,9 +17,9 @@ How entities heal.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| filters | *not set* | Minecraft filter | The filter group that defines the conditions for using this item to heal the entity. | Parrot: `{"test":"is_riding","operator":"!=","value":true}` | 
+| filters | *not set* | Minecraft filter | The filter group that defines the conditions for using this item to heal the entity. | Parrot: `{"operator":"!=","test":"is_riding","value":true}` | 
 | force_use | false | Boolean true/false | Determines if item can be used regardless of entity being at full health. | Parrot: `true` | 
-| items | *not set* | Array of [Items](#items) items | The array of items that can be used to heal this entity. | Llama: `[{"item":"wheat","heal_amount":2},{"item":"hay_block","heal_amount":10}]`, Parrot: `[{"item":"cookie","heal_amount":0,"effects":[{"name":"fatal_poison","chance":1,"duration":1000,"amplifier":0}]}]` | 
+| items | *not set* | Array of [Items](#items) items | The array of items that can be used to heal this entity. | Llama: `[{"item":"wheat","heal_amount":2},{"item":"hay_block","heal_amount":10}]`, Parrot: `[{"effects":[{"amplifier":0,"chance":1,"duration":1000,"name":"fatal_poison"}],"heal_amount":0,"item":"cookie"}]` | 
 
 ## Items
 The array of items that can be used to heal this entity.
@@ -69,24 +69,24 @@ The array of items that can be used to heal this entity.
 
 ```json
 "minecraft:healable": {
-  "force_use": true,
   "filters": {
-    "test": "is_riding",
     "operator": "!=",
+    "test": "is_riding",
     "value": true
   },
+  "force_use": true,
   "items": [
     {
-      "item": "cookie",
-      "heal_amount": 0,
       "effects": [
         {
-          "name": "fatal_poison",
+          "amplifier": 0,
           "chance": 1,
           "duration": 1000,
-          "amplifier": 0
+          "name": "fatal_poison"
         }
-      ]
+      ],
+      "heal_amount": 0,
+      "item": "cookie"
     }
   ]
 }

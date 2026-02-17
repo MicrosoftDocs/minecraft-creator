@@ -20,10 +20,3 @@ This move control causes the mob to hop as it moves.
 | max_turn | 30 | Decimal number | The maximum number in degrees the mob can turn per tick. |  | 
 
 ## Samples
-
-#### [Rabbit](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/rabbit.json)
-
-
-```json
-"minecraft:movement.skip": {}
-```

@@ -32,14 +32,14 @@ Allows the mob to hover around randomly, close to the surface.
 
 ```json
 "minecraft:behavior.random_hover": {
-  "priority": 9,
-  "xz_dist": 8,
-  "y_dist": 8,
-  "y_offset": -1,
-  "interval": 1,
   "hover_height": [
     1,
     4
-  ]
+  ],
+  "y_dist": 8,
+  "interval": 1,
+  "xz_dist": 8,
+  "priority": 9,
+  "y_offset": -1
 }
 ```

@@ -32,8 +32,8 @@ Compels the entity to track anger towards a set of nuisances.
 | duration_delta | *not set* | Integer number | Variance in seconds added to the duration [-delta, delta]. |  | 
 | filters | *not set* | Minecraft filter | Filter out mob types that it should not attack while angry (other Piglins) |  | 
 | max_anger | 100 | Integer number | The maximum anger level that can be reached. Applies to any nuisance Value must be >= 0. | Warden: `150` | 
-| nuisance_filter | *not set* | Minecraft filter | Filter that is applied to determine if a mob can be a nuisance | Warden: `{"all_of":[{"test":"is_family","subject":"other","operator":"not","value":"warden"},{"test":"is_family","subject":"other","operator":"not","value":"inanimate"}]}` | 
-| on_increase_sounds | *not set* | Array of [Increase Sounds](#increase-sounds) items | Sounds to play when the entity is getting provoked. Evaluated in order. First matching condition wins | Warden: `[{"sound":"listening_angry","condition":"query.anger_level(this) >= 40"},{"sound":"listening","condition":"query.anger_level(this) >= 0"}]` | 
+| nuisance_filter | *not set* | Minecraft filter | Filter that is applied to determine if a mob can be a nuisance | Warden: `{"all_of":[{"operator":"not","test":"is_family","subject":"other","value":"warden"},{"operator":"not","test":"is_family","subject":"other","value":"inanimate"}]}` | 
+| on_increase_sounds | *not set* | Array of [Increase Sounds](#increase-sounds) items | Sounds to play when the entity is getting provoked. Evaluated in order. First matching condition wins | Warden: `[{"condition":"query.anger_level(this) >= 40","sound":"listening_angry"},{"condition":"query.anger_level(this) >= 0","sound":"listening"}]` | 
 | remove_targets_below_angry_threshold | true | Boolean true/false | Defines if the mob should remove target if it falls below 'angry' threshold | Warden: `true` | 
 | sound_interval | *not set* | Range of integers | Anger boost applied to angry threshold when the entity gets angry. |  | 
 
@@ -55,38 +55,38 @@ Sounds to play when the entity is getting provoked. Evaluated in order. First ma
 
 ```json
 "minecraft:anger_level": {
-  "max_anger": 150,
   "angry_threshold": 80,
-  "remove_targets_below_angry_threshold": true,
   "angry_boost": 20,
   "anger_decrement_interval": 1,
   "default_annoyingness": 35,
   "default_projectile_annoyingness": 10,
+  "max_anger": 150,
   "on_increase_sounds": [
     {
-      "sound": "listening_angry",
-      "condition": "query.anger_level(this) >= 40"
+      "condition": "query.anger_level(this) >= 40",
+      "sound": "listening_angry"
     },
     {
-      "sound": "listening",
-      "condition": "query.anger_level(this) >= 0"
+      "condition": "query.anger_level(this) >= 0",
+      "sound": "listening"
     }
   ],
   "nuisance_filter": {
     "all_of": [
       {
+        "operator": "not",
         "test": "is_family",
         "subject": "other",
-        "operator": "not",
         "value": "warden"
       },
       {
+        "operator": "not",
         "test": "is_family",
         "subject": "other",
-        "operator": "not",
         "value": "inanimate"
       }
     ]
-  }
+  },
+  "remove_targets_below_angry_threshold": true
 }
 ```

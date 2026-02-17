@@ -42,14 +42,14 @@ Allows an entity to attack by using ranged shots. "charge_shoot_trigger" must be
 
 ```json
 "minecraft:behavior.ranged_attack": {
-  "priority": 3,
-  "burst_shots": 3,
-  "burst_interval": 0.3,
-  "charge_charged_trigger": 0,
   "charge_shoot_trigger": 4,
-  "attack_interval_min": 3,
   "attack_interval_max": 5,
-  "attack_radius": 48
+  "attack_interval_min": 3,
+  "attack_radius": 48,
+  "burst_interval": 0.3,
+  "burst_shots": 3,
+  "priority": 3,
+  "charge_charged_trigger": 0
 }
 ```
 
@@ -58,9 +58,9 @@ Allows an entity to attack by using ranged shots. "charge_shoot_trigger" must be
 
 ```json
 "minecraft:behavior.ranged_attack": {
-  "priority": 0,
   "attack_interval": 3.5,
-  "attack_radius": 15
+  "attack_radius": 15,
+  "priority": 0
 }
 ```
 
@@ -69,10 +69,10 @@ Allows an entity to attack by using ranged shots. "charge_shoot_trigger" must be
 
 ```json
 "minecraft:behavior.ranged_attack": {
-  "priority": 3,
-  "attack_interval_min": 1,
   "attack_interval_max": 3,
+  "attack_interval_min": 1,
   "attack_radius": 10,
+  "priority": 3,
   "swing": true
 }
 ```
@@ -95,8 +95,8 @@ At /minecraft:entity/component_groups/minecraft:llama_angry/minecraft:behavior.r
 
 ```json
 "minecraft:behavior.ranged_attack": {
-  "priority": 1,
   "attack_interval": 3.5,
-  "attack_radius": 15
+  "attack_radius": 15,
+  "priority": 1
 }
 ```

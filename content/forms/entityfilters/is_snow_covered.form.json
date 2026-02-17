@@ -139,12 +139,6 @@
               "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/",
               "content": true
             }
-          ],
-          "/vanilla/behavior_pack/entities/rabbit.json": [
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[3]/filters/",
-              "content": true
-            }
           ]
         }
       },
@@ -190,22 +184,6 @@
           "content": {
             "test": "is_snow_covered",
             "value": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/rabbit.json": [
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[3]/filters/",
-          "content": {
-            "test": "is_snow_covered",
-            "value": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_born/sequence[3]/filters/",
-          "content": {
-            "test": "is_snow_covered",
-            "value": true
           }
         }
       ]

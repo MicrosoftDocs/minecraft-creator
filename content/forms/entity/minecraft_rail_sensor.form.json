@@ -80,17 +80,17 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:inactive/minecraft:rail_sensor/",
               "content": {
+                "event": "minecraft:on_prime",
                 "filters": {
                   "all_of": [
                     {
-                      "test": "is_game_rule",
                       "domain": "tntexplodes",
                       "operator": "==",
+                      "test": "is_game_rule",
                       "value": true
                     }
                   ]
-                },
-                "event": "minecraft:on_prime"
+                }
               }
             }
           ]
@@ -153,13 +153,13 @@
           "path": "/minecraft:entity/component_groups/minecraft:command_block_active/minecraft:rail_sensor/",
           "content": {
             "check_block_types": true,
+            "on_deactivate": {
+              "event": "minecraft:command_block_deactivate"
+            },
             "eject_on_activate": false,
             "eject_on_deactivate": false,
             "tick_command_block_on_activate": true,
-            "tick_command_block_on_deactivate": false,
-            "on_deactivate": {
-              "event": "minecraft:command_block_deactivate"
-            }
+            "tick_command_block_on_deactivate": false
           }
         },
         {
@@ -168,11 +168,11 @@
             "check_block_types": false,
             "eject_on_activate": false,
             "eject_on_deactivate": false,
-            "tick_command_block_on_activate": true,
-            "tick_command_block_on_deactivate": false,
             "on_activate": {
               "event": "minecraft:command_block_activate"
-            }
+            },
+            "tick_command_block_on_activate": true,
+            "tick_command_block_on_deactivate": false
           }
         }
       ],
@@ -204,30 +204,30 @@
       ],
       "/vanilla/behavior_pack/entities/tnt_minecart.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:primed_tnt/minecraft:rail_sensor/",
-          "content": {}
+          "path": "/minecraft:entity/component_groups/minecraft:inactive/minecraft:rail_sensor/",
+          "content": {
+            "on_activate": {
+              "event": "minecraft:on_prime",
+              "filters": {
+                "all_of": [
+                  {
+                    "domain": "tntexplodes",
+                    "operator": "==",
+                    "test": "is_game_rule",
+                    "value": true
+                  }
+                ]
+              }
+            }
+          }
         },
         {
           "path": "/minecraft:entity/component_groups/minecraft:instant_explode_tnt/minecraft:rail_sensor/",
           "content": {}
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:inactive/minecraft:rail_sensor/",
-          "content": {
-            "on_activate": {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "is_game_rule",
-                    "domain": "tntexplodes",
-                    "operator": "==",
-                    "value": true
-                  }
-                ]
-              },
-              "event": "minecraft:on_prime"
-            }
-          }
+          "path": "/minecraft:entity/component_groups/minecraft:primed_tnt/minecraft:rail_sensor/",
+          "content": {}
         }
       ]
     }

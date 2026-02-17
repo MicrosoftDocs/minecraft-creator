@@ -18,7 +18,7 @@ Defines the Conditional Spatial Update Bandwidth Optimizations of this entity.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | conditional_values | *not set* | Array of [Conditional Values](#conditional-values) items | The object containing the conditional bandwidth optimization values. |  | 
-| default_values | *not set* | [Default Values](#default-values) item | The object containing the default bandwidth optimization values. | Arrow: `{"max_optimized_distance":80,"max_dropped_ticks":7,"use_motion_prediction_hints":true}` | 
+| default_values | *not set* | [Default Values](#default-values) item | The object containing the default bandwidth optimization values. | Arrow: `{"max_dropped_ticks":7,"max_optimized_distance":80,"use_motion_prediction_hints":true}` | 
 
 ## Conditional Values
 The object containing the conditional bandwidth optimization values.
@@ -58,8 +58,8 @@ The object containing the conditional bandwidth optimization values.
 ```json
 "minecraft:conditional_bandwidth_optimization": {
   "default_values": {
-    "max_optimized_distance": 80,
     "max_dropped_ticks": 7,
+    "max_optimized_distance": 80,
     "use_motion_prediction_hints": true
   }
 }

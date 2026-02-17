@@ -27,7 +27,7 @@
         "validity": [
           {
             "comparison": "pattern",
-            "value": "^(?![^:]*\\b[mM][iI][nN][eE][cC][rR][aA][fF][tT]\\b)[^:\\s]+:[^:\\s]+$"
+            "value": "^\\S+$"
           }
         ],
         "isRequired": true
@@ -56,6 +56,7 @@
             "enabled_states": []
           },
           "minecraft:placement_direction": {
+            "blocks_to_corner_with": [],
             "enabled_states": [],
             "y_rotation_offset": null
           },

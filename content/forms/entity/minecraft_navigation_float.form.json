@@ -157,6 +157,19 @@
         "description": "Tells the pathfinder whether or not it can walk on the ground underwater",
         "defaultValue": false,
         "dataType": 1
+      },
+      {
+        "id": "using_door_annotation",
+        "title": "Using Door Annotation",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:navigation.float/",
+              "content": true
+            }
+          ]
+        }
       }
     ],
     "samples": {
@@ -164,7 +177,8 @@
         {
           "path": "/minecraft:entity/components/minecraft:navigation.float/",
           "content": {
-            "can_path_over_water": true
+            "can_path_over_water": true,
+            "using_door_annotation": true
           }
         }
       ]

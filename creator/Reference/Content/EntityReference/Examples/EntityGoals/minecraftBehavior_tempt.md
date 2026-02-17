@@ -93,12 +93,12 @@ Allows a mob to be tempted by a player holding a specific item. Uses pathfinding
 
 ```json
 "minecraft:behavior.tempt": {
-  "priority": 5,
-  "speed_multiplier": 1.25,
   "can_tempt_vertically": true,
   "items": [
     "slime_ball"
-  ]
+  ],
+  "priority": 5,
+  "speed_multiplier": 1.25
 }
 ```
 

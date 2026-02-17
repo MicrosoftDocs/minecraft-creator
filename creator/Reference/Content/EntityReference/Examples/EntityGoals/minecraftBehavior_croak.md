@@ -29,11 +29,6 @@ Allows the entity to croak at a random time interval with configurable condition
 
 ```json
 "minecraft:behavior.croak": {
-  "priority": 9,
-  "interval": [
-    10,
-    20
-  ],
   "duration": 4.5,
   "filters": {
     "all_of": [
@@ -46,6 +41,11 @@ Allows the entity to croak at a random time interval with configurable condition
         "value": false
       }
     ]
-  }
+  },
+  "interval": [
+    10,
+    20
+  ],
+  "priority": 9
 }
 ```

@@ -19,7 +19,7 @@ Defines what events to call when this entity is damaged by specific entities or 
 |:----------|:-------------|:----|:-----------|:------------- |
 | deals_damage | false | [Deals Damage](#deals-damage-choices) choices | Defines how received damage affects the entity. |  | 
 | deals_damage (Alternate 1) | false | Boolean true/false |  |  | 
-| triggers (Damage Sensor Trigger) | *not set* | [Triggers](#triggers) item | List of triggers with the events to call when taking specific kinds of damage. | Allay: `[{"on_damage":{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"test":"is_owner","subject":"other"}]}},"deals_damage":"no"}]`, Bat: `{"cause":"fall","deals_damage":false}`, Blaze: `{"cause":"fall","deals_damage":"no"}` | 
+| triggers (Damage Sensor Trigger) | *not set* | [Triggers](#triggers) item | List of triggers with the events to call when taking specific kinds of damage. | Allay: `[{"deals_damage":"no","on_damage":{"filters":{"all_of":[{"subject":"other","test":"is_family","value":"player"},{"subject":"other","test":"is_owner"}]}}}]`, Bat: `{"cause":"fall","deals_damage":"no"}`, Breeze: `[{"cause":"fall","deals_damage":"no"},{"cause":"projectile","on_damage":{"filters":{"operator":"!=","test":"is_family","subject":"damager","value":"wind_charge"}},"deals_damage":"no"}]` | 
 | triggers (Alternate 1) | *not set* | Object |  |  | 
 
 ### Deals Damage choices
@@ -55,40 +55,28 @@ Defines what events to call when this entity is damaged by specific entities or 
 "minecraft:damage_sensor": {
   "triggers": [
     {
+      "deals_damage": "no",
       "on_damage": {
         "filters": {
           "all_of": [
             {
-              "test": "is_family",
               "subject": "other",
+              "test": "is_family",
               "value": "player"
             },
             {
-              "test": "is_owner",
-              "subject": "other"
+              "subject": "other",
+              "test": "is_owner"
             }
           ]
         }
-      },
-      "deals_damage": "no"
+      }
     }
   ]
 }
 ```
 
 #### [Bat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bat.json)
-
-
-```json
-"minecraft:damage_sensor": {
-  "triggers": {
-    "cause": "fall",
-    "deals_damage": false
-  }
-}
-```
-
-#### [Blaze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/blaze.json)
 
 
 ```json
@@ -108,19 +96,19 @@ Defines what events to call when this entity is damaged by specific entities or 
   "triggers": [
     {
       "cause": "fall",
-      "deals_damage": false
+      "deals_damage": "no"
     },
     {
+      "cause": "projectile",
       "on_damage": {
         "filters": {
+          "operator": "!=",
           "test": "is_family",
           "subject": "damager",
-          "operator": "!=",
           "value": "wind_charge"
         }
       },
-      "cause": "projectile",
-      "deals_damage": false
+      "deals_damage": "no"
     }
   ]
 }

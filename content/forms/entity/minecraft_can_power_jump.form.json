@@ -18,13 +18,6 @@
     "title": "Can Power Jump",
     "description": "Allows the entity to power jump like the Horse does in Vanilla.",
     "fields": [],
-    "samples": {
-      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:can_power_jump/",
-          "content": {}
-        }
-      ]
-    }
+    "samples": {}
   }
 }

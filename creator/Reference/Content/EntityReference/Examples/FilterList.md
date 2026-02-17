@@ -87,6 +87,7 @@ ms.date: 02/11/2025
 | [is_sneak_held](Filters/is_sneak_held.md)| Returns true if the subject entity has the sneak input held. |
 | [is_snow_covered](Filters/is_snow_covered.md)| Tests whether the Subject is in an area with snow cover |
 | [is_sprinting](Filters/is_sprinting.md)| Tests if the subject is sprinting. |
+| [is_tamed](Filters/is_tamed.md)| Tests whether the Subject is tamed. |
 | [is_target](Filters/is_target.md)| Returns true if the subject entity is the target of the calling entity. |
 | [is_temperature_type](Filters/is_temperature_type.md)| Tests whether the current temperature is a given type. |
 | [is_temperature_value](Filters/is_temperature_value.md)| Tests the current temperature against a provided value in the range (0.0, 1.0) where 0.0f is the coldest temp and 1.0f is the hottest. |

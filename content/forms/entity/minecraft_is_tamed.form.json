@@ -31,12 +31,6 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:is_tamed/",
-          "content": {}
-        }
-      ],
       "/vanilla/behavior_pack/entities/trader_llama.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:is_tamed/",

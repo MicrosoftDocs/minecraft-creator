@@ -23,7 +23,7 @@ Allows entities with the "minecraft:dweller" component to move toward their Vill
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Iron Golem: `4` | 
-| speed_multiplier | 1 | Decimal number | This multiplier modifies the entity's speed when moving towards its restriction. | Iron Golem: `1` | 
+| speed_multiplier | 1 | Decimal number | This multiplier modifies the entity's speed when moving towards its restriction. |  | 
 
 ## Samples
 
@@ -32,7 +32,6 @@ Allows entities with the "minecraft:dweller" component to move toward their Vill
 
 ```json
 "minecraft:behavior.move_towards_dwelling_restriction": {
-  "priority": 4,
-  "speed_multiplier": 1
+  "priority": 4
 }
 ```

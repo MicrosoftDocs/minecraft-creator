@@ -153,9 +153,9 @@
               "content": [
                 {
                   "filters": {
+                    "operator": "!=",
                     "test": "is_family",
                     "subject": "other",
-                    "operator": "!=",
                     "value": "breeze"
                   }
                 }
@@ -170,45 +170,45 @@
                   "filters": {
                     "all_of": [
                       {
+                        "operator": "!=",
                         "test": "is_family",
                         "subject": "other",
-                        "operator": "!=",
                         "value": "skeleton"
                       },
                       {
+                        "operator": "!=",
                         "test": "is_family",
                         "subject": "other",
-                        "operator": "!=",
                         "value": "stray"
                       },
                       {
+                        "operator": "!=",
                         "test": "is_family",
                         "subject": "other",
-                        "operator": "!=",
                         "value": "zombie"
                       },
                       {
+                        "operator": "!=",
                         "test": "is_family",
                         "subject": "other",
-                        "operator": "!=",
                         "value": "husk"
                       },
                       {
+                        "operator": "!=",
                         "test": "is_family",
                         "subject": "other",
-                        "operator": "!=",
                         "value": "spider"
                       },
                       {
+                        "operator": "!=",
                         "test": "is_family",
                         "subject": "other",
-                        "operator": "!=",
                         "value": "cavespider"
                       },
                       {
+                        "operator": "!=",
                         "test": "is_family",
                         "subject": "other",
-                        "operator": "!=",
                         "value": "slime"
                       }
                     ]
@@ -247,17 +247,17 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/",
           "content": {
-            "priority": 1,
             "entity_types": [
               {
                 "filters": {
+                  "operator": "!=",
                   "test": "is_family",
                   "subject": "other",
-                  "operator": "!=",
                   "value": "breeze"
                 }
               }
-            ]
+            ],
+            "priority": 1
           }
         }
       ],
@@ -265,57 +265,57 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/",
           "content": {
-            "priority": 4,
             "entity_types": [
               {
                 "filters": {
                   "all_of": [
                     {
+                      "operator": "!=",
                       "test": "is_family",
                       "subject": "other",
-                      "operator": "!=",
                       "value": "skeleton"
                     },
                     {
+                      "operator": "!=",
                       "test": "is_family",
                       "subject": "other",
-                      "operator": "!=",
                       "value": "stray"
                     },
                     {
+                      "operator": "!=",
                       "test": "is_family",
                       "subject": "other",
-                      "operator": "!=",
                       "value": "zombie"
                     },
                     {
+                      "operator": "!=",
                       "test": "is_family",
                       "subject": "other",
-                      "operator": "!=",
                       "value": "husk"
                     },
                     {
+                      "operator": "!=",
                       "test": "is_family",
                       "subject": "other",
-                      "operator": "!=",
                       "value": "spider"
                     },
                     {
+                      "operator": "!=",
                       "test": "is_family",
                       "subject": "other",
-                      "operator": "!=",
                       "value": "cavespider"
                     },
                     {
+                      "operator": "!=",
                       "test": "is_family",
                       "subject": "other",
-                      "operator": "!=",
                       "value": "slime"
                     }
                   ]
                 }
               }
-            ]
+            ],
+            "priority": 4
           }
         }
       ],
@@ -323,17 +323,17 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/",
           "content": {
-            "priority": 1,
             "entity_types": [
               {
                 "filters": {
+                  "operator": "!=",
                   "test": "is_family",
                   "subject": "other",
-                  "operator": "!=",
                   "value": "breeze"
                 }
               }
-            ]
+            ],
+            "priority": 1
           }
         }
       ],

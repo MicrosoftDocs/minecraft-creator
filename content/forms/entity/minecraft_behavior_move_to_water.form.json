@@ -127,10 +127,10 @@
         {
           "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.move_to_water/",
           "content": {
+            "goal_radius": 1.5,
             "priority": 3,
-            "search_range": 20,
             "search_height": 5,
-            "goal_radius": 1.5
+            "search_range": 20
           }
         }
       ]

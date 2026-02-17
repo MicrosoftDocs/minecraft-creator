@@ -32,12 +32,14 @@
       {
         "id": "minecraft:placement_direction",
         "title": "Minecraft Placement Direction",
-        "description": "Adds the \"minecraft:cardinal_direction\" and/or \"minecraft:facing_direction\" states and setter function to the block.",
+        "description": "Adds the \"minecraft:cardinal_direction\", \"minecraft:facing_direction\" and/or \"minecraft:corner_and_cardinal_direction\" states and setter function to the block.",
         "dataType": 16,
         "defaultValue": {
+          "blocks_to_corner_with": [],
           "enabled_states": [],
           "y_rotation_offset": null
         },
+        "technicalDescription": "\"y_rotation_offset\" can only be used when \"minecraft:cardinal_direction\" and/or \"minecraft:facing_direction\" are enabled in \"enabled_states\". and \"blocks_to_corner_with\" can only be used when \"minecraft:corner_and_cardinal_direction\" is enabled in \"enabled_states\".",
         "subFormId": "block/placement_direction"
       },
       {

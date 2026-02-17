@@ -242,17 +242,17 @@
               "content": [
                 {
                   "filter": {
-                    "test": "is_family",
                     "subject": "other",
+                    "test": "is_family",
                     "value": "happy_ghast"
                   },
-                  "spring_type": "quad_dampened",
-                  "rotation_adjustment": 90
+                  "rotation_adjustment": 90,
+                  "spring_type": "quad_dampened"
                 },
                 {
+                  "hard_distance": 4,
                   "rotation_adjustment": 90,
-                  "soft_distance": 2,
-                  "hard_distance": 4
+                  "soft_distance": 2
                 }
               ]
             }
@@ -263,17 +263,17 @@
               "content": [
                 {
                   "filter": {
-                    "test": "is_family",
                     "subject": "other",
+                    "test": "is_family",
                     "value": "happy_ghast"
                   },
-                  "spring_type": "quad_dampened",
-                  "rotation_adjustment": 90
+                  "rotation_adjustment": 90,
+                  "spring_type": "quad_dampened"
                 },
                 {
+                  "hard_distance": 4,
                   "rotation_adjustment": 90,
-                  "soft_distance": 2,
-                  "hard_distance": 4
+                  "soft_distance": 2
                 }
               ]
             }
@@ -295,17 +295,17 @@
             "presets": [
               {
                 "filter": {
-                  "test": "is_family",
                   "subject": "other",
+                  "test": "is_family",
                   "value": "happy_ghast"
                 },
-                "spring_type": "quad_dampened",
-                "rotation_adjustment": 90
+                "rotation_adjustment": 90,
+                "spring_type": "quad_dampened"
               },
               {
+                "hard_distance": 4,
                 "rotation_adjustment": 90,
-                "soft_distance": 2,
-                "hard_distance": 4
+                "soft_distance": 2
               }
             ]
           }
@@ -318,17 +318,17 @@
             "presets": [
               {
                 "filter": {
-                  "test": "is_family",
                   "subject": "other",
+                  "test": "is_family",
                   "value": "happy_ghast"
                 },
-                "spring_type": "quad_dampened",
-                "rotation_adjustment": 90
+                "rotation_adjustment": 90,
+                "spring_type": "quad_dampened"
               },
               {
+                "hard_distance": 4,
                 "rotation_adjustment": 90,
-                "soft_distance": 2,
-                "hard_distance": 4
+                "soft_distance": 2
               }
             ]
           }

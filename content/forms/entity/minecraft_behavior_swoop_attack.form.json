@@ -23,47 +23,20 @@
         "title": "Damage Reach",
         "description": "Added to the base size of the entity, to determine the target's maximum allowable distance, when trying to deal attack damage.",
         "defaultValue": 0.2,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/phantom.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swoop_attack/",
-              "content": 0.2
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "delay_range",
         "title": "Delay Range",
         "description": "Minimum and maximum cooldown time-range (in seconds) between each attempted swoop attack.",
-        "dataType": 18,
-        "samples": {
-          "/vanilla/behavior_pack/entities/phantom.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swoop_attack/",
-              "content": {
-                "min": 10,
-                "max": 20
-              }
-            }
-          ]
-        }
+        "dataType": 18
       },
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "During swoop attack behavior, this determines the multiplier the entity's speed is modified by when moving toward the target.",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/phantom.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.swoop_attack/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "priority",
@@ -86,13 +59,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.swoop_attack/",
           "content": {
-            "priority": 2,
-            "damage_reach": 0.2,
-            "speed_multiplier": 1,
-            "delay_range": {
-              "min": 10,
-              "max": 20
-            }
+            "priority": 2
           }
         }
       ]

@@ -36,25 +36,25 @@ Allows an entity to jump to another random block.
 
 ```json
 "minecraft:behavior.jump_to_block": {
-  "priority": 10,
-  "search_width": 8,
-  "search_height": 4,
-  "minimum_path_length": 2,
-  "minimum_distance": 1,
-  "scale_factor": 0.6,
-  "max_velocity": 1,
   "cooldown_range": [
     5,
     7
   ],
+  "priority": 10,
+  "max_velocity": 1,
+  "forbidden_blocks": [
+    "minecraft:water"
+  ],
+  "minimum_distance": 1,
+  "minimum_path_length": 2,
   "preferred_blocks": [
     "minecraft:waterlily",
     "minecraft:big_dripleaf"
   ],
   "preferred_blocks_chance": 0.5,
-  "forbidden_blocks": [
-    "minecraft:water"
-  ]
+  "scale_factor": 0.6,
+  "search_height": 4,
+  "search_width": 8
 }
 ```
 

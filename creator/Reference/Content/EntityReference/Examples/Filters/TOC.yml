@@ -150,6 +150,8 @@
   href: is_snow_covered.md
 - name: is_sprinting
   href: is_sprinting.md
+- name: is_tamed
+  href: is_tamed.md
 - name: is_target
   href: is_target.md
 - name: is_temperature_type

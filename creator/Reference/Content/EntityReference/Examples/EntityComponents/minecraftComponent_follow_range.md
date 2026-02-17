@@ -36,8 +36,8 @@ Defines the maximum range, in blocks, that a mob will pursue a target. This affe
 
 ```json
 "minecraft:follow_range": {
-  "value": 48,
-  "max": 48
+  "max": 48,
+  "value": 48
 }
 ```
 
@@ -50,12 +50,22 @@ Defines the maximum range, in blocks, that a mob will pursue a target. This affe
 }
 ```
 
+#### [Dolphin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/dolphin.json)
+
+
+```json
+"minecraft:follow_range": {
+  "value": 48,
+  "max": 48
+}
+```
+
 #### [Elder Guardian](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/elder_guardian.json)
 
 
 ```json
 "minecraft:follow_range": {
-  "value": 16,
-  "max": 16
+  "max": 16,
+  "value": 16
 }
 ```

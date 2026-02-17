@@ -1,0 +1,44 @@
+{
+  "id": "minecraft:behavior.ocelot_sit_on_block",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.ocelot_sit_on_block",
+    "title": "Entity Ocelot Sit On Block Behavior",
+    "description": "Allows to mob to be able to sit in place like the ocelot.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this goal.",
+        "dataType": 3,
+        "defaultValue": 1
+      }
+    ]
+  }
+}

@@ -97,7 +97,7 @@
           ],
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers[1]/on_damage/filters/",
+              "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/all_of[0]/",
               "content": "!="
             }
           ]
@@ -159,6 +159,14 @@
           ],
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types[0]/filters/AND[0]/",
+              "content": 1
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types[1]/filters/AND[0]/",
+              "content": 1
+            },
+            {
               "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers[1]/on_damage/filters/",
               "content": "damager"
             }
@@ -181,16 +189,18 @@
               "content": "pillager"
             }
           ],
-          "/vanilla/behavior_pack/entities/blaze.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types[0]/filters/",
-              "content": "player"
-            }
-          ],
           "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types[0]/filters/",
+              "content": "wolf"
+            },
             {
               "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/",
               "content": "breeze"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types[0]/filters/",
+              "content": "player"
             },
             {
               "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types[1]/filters/",
@@ -199,21 +209,9 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types[2]/filters/all_of[0]/",
               "content": "baby_turtle"
-            },
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types[0]/filters/",
-              "content": "wolf"
             }
           ],
           "/vanilla/behavior_pack/entities/breeze.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers[1]/on_damage/filters/",
-              "content": "wind_charge"
-            },
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types[1]/filters/",
-              "content": "irongolem"
-            },
             {
               "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/all_of[0]/",
               "content": "skeleton"
@@ -241,17 +239,17 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/all_of[6]/",
               "content": "slime"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types[1]/filters/AND[0]/",
+              "content": "irongolem"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers[1]/on_damage/filters/",
+              "content": "wind_charge"
             }
           ],
           "/vanilla/behavior_pack/entities/cave_spider.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/entity_types[0]/filters/any_of[1]/",
-              "content": "snowgolem"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.nearest_attackable_target/entity_types[0]/filters/any_of[1]/",
-              "content": "snowgolem"
-            },
             {
               "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types[0]/filters/all_of[0]/",
               "content": "armadillo"
@@ -259,6 +257,24 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/",
               "content": "breeze"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.nearest_attackable_target/entity_types[0]/filters/any_of[1]/",
+              "content": "snowgolem"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/entity_types[0]/filters/any_of[1]/",
+              "content": "snowgolem"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types[0]/filters/any_of[0]/",
+              "content": "guardian_elder"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types[0]/filters/any_of[1]/",
+              "content": "guardian"
             }
           ]
         }
@@ -296,37 +312,35 @@
         {
           "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/",
           "content": {
-            "test": "is_family",
             "subject": "other",
+            "test": "is_family",
             "value": "player"
           }
         },
         {
           "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[2]/filters/",
           "content": {
-            "test": "is_family",
             "subject": "other",
+            "test": "is_family",
             "value": "pillager"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/blaze.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types[0]/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "player"
           }
         }
       ],
       "/vanilla/behavior_pack/entities/bogged.json": [
         {
-          "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/",
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types[0]/filters/",
           "content": {
             "test": "is_family",
             "subject": "other",
+            "value": "wolf"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/",
+          "content": {
             "operator": "!=",
+            "test": "is_family",
+            "subject": "other",
             "value": "breeze"
           }
         },
@@ -353,129 +367,116 @@
             "subject": "other",
             "value": "baby_turtle"
           }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types[0]/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "wolf"
-          }
         }
       ],
       "/vanilla/behavior_pack/entities/breeze.json": [
         {
-          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers[1]/on_damage/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "damager",
-            "operator": "!=",
-            "value": "wind_charge"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types[0]/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "player"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types[1]/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "irongolem"
-          }
-        },
-        {
           "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/all_of[0]/",
           "content": {
+            "operator": "!=",
             "test": "is_family",
             "subject": "other",
-            "operator": "!=",
             "value": "skeleton"
           }
         },
         {
           "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/all_of[1]/",
           "content": {
+            "operator": "!=",
             "test": "is_family",
             "subject": "other",
-            "operator": "!=",
             "value": "stray"
           }
         },
         {
           "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/all_of[2]/",
           "content": {
+            "operator": "!=",
             "test": "is_family",
             "subject": "other",
-            "operator": "!=",
             "value": "zombie"
           }
         },
         {
           "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/all_of[3]/",
           "content": {
+            "operator": "!=",
             "test": "is_family",
             "subject": "other",
-            "operator": "!=",
             "value": "husk"
           }
         },
         {
           "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/all_of[4]/",
           "content": {
+            "operator": "!=",
             "test": "is_family",
             "subject": "other",
-            "operator": "!=",
             "value": "spider"
           }
         },
         {
           "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/all_of[5]/",
           "content": {
+            "operator": "!=",
             "test": "is_family",
             "subject": "other",
-            "operator": "!=",
             "value": "cavespider"
           }
         },
         {
           "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/all_of[6]/",
           "content": {
+            "operator": "!=",
             "test": "is_family",
             "subject": "other",
-            "operator": "!=",
             "value": "slime"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types[0]/filters/AND[0]/",
+          "content": {
+            "test": "is_family",
+            "subject": 1,
+            "operator": 0,
+            "value": "player"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types[1]/filters/AND[0]/",
+          "content": {
+            "test": "is_family",
+            "subject": 1,
+            "operator": 0,
+            "value": "irongolem"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers[1]/on_damage/filters/",
+          "content": {
+            "operator": "!=",
+            "test": "is_family",
+            "subject": "damager",
+            "value": "wind_charge"
           }
         }
       ],
       "/vanilla/behavior_pack/entities/cave_spider.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/entity_types[0]/filters/any_of[0]/",
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types[0]/filters/all_of[0]/",
           "content": {
             "test": "is_family",
             "subject": "other",
-            "value": "player"
+            "value": "armadillo"
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/entity_types[0]/filters/any_of[1]/",
+          "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/",
           "content": {
+            "operator": "!=",
             "test": "is_family",
             "subject": "other",
-            "value": "snowgolem"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/entity_types[0]/filters/any_of[2]/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "irongolem"
+            "value": "breeze"
           }
         },
         {
@@ -503,20 +504,53 @@
           }
         },
         {
-          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types[0]/filters/all_of[0]/",
+          "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/entity_types[0]/filters/any_of[0]/",
           "content": {
             "test": "is_family",
             "subject": "other",
-            "value": "armadillo"
+            "value": "player"
           }
         },
         {
-          "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/entity_types[0]/filters/any_of[1]/",
           "content": {
             "test": "is_family",
             "subject": "other",
-            "operator": "!=",
-            "value": "breeze"
+            "value": "snowgolem"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/entity_types[0]/filters/any_of[2]/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "irongolem"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.swim_with_entity/entity_types[0]/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types[0]/filters/any_of[0]/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "guardian_elder"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types[0]/filters/any_of[1]/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "guardian"
           }
         }
       ]

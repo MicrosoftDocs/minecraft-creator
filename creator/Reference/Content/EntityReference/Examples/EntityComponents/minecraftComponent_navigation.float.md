@@ -36,6 +36,7 @@ Allows this entity to generate paths by flying around the air like the regular G
 | can_walk | true | Boolean true/false | Tells the pathfinder whether or not it can walk on the ground outside water |  | 
 | can_walk_in_lava | false | Boolean true/false | Tells the pathfinder whether or not it can travel in lava like walking on ground |  | 
 | is_amphibious | false | Boolean true/false | Tells the pathfinder whether or not it can walk on the ground underwater |  | 
+| using_door_annotation | *not set* | String |  | Bat: `true` | 
 
 ## Samples
 
@@ -44,6 +45,7 @@ Allows this entity to generate paths by flying around the air like the regular G
 
 ```json
 "minecraft:navigation.float": {
-  "can_path_over_water": true
+  "can_path_over_water": true,
+  "using_door_annotation": true
 }
 ```

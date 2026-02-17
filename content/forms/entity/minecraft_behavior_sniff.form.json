@@ -33,10 +33,10 @@
           "/vanilla/behavior_pack/entities/warden.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.sniff/",
-              "content": [
-                5,
-                10
-              ]
+              "content": {
+                "min": 5,
+                "max": 10
+              }
             }
           ]
         }
@@ -122,15 +122,15 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.sniff/",
           "content": {
-            "priority": 6,
             "duration": 4.16,
             "sniffing_radius": 24,
             "suspicion_radius_horizontal": 6,
             "suspicion_radius_vertical": 20,
-            "cooldown_range": [
-              5,
-              10
-            ]
+            "cooldown_range": {
+              "min": 5,
+              "max": 10
+            },
+            "priority": 6
           }
         }
       ]

@@ -71,8 +71,8 @@ At Short (using Defaults)..:
 
 ```json
 {
-  "test": "in_lava",
-  "subject": "self"
+  "subject": "self",
+  "test": "in_lava"
 }
 ```
 
@@ -81,9 +81,9 @@ At Short (using Defaults)..:
 
 ```json
 {
+  "operator": "==",
   "test": "in_lava",
   "subject": "self",
-  "operator": "==",
   "value": true
 }
 ```

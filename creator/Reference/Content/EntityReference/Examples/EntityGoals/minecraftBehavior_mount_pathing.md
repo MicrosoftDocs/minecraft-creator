@@ -30,8 +30,8 @@ Allows the mob to move around on its own while mounted seeking a target to attac
 ```json
 "minecraft:behavior.mount_pathing": {
   "priority": 5,
-  "speed_multiplier": 1.25,
   "target_dist": 0,
+  "speed_multiplier": 1.25,
   "track_target": true
 }
 ```

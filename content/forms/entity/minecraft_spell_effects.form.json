@@ -35,14 +35,14 @@
               "dataType": 2
             },
             {
-              "id": "duration",
-              "title": "Duration",
-              "dataType": 7
-            },
-            {
               "id": "display_on_screen_animation",
               "title": "Display On Screen Animation",
               "dataType": 2
+            },
+            {
+              "id": "duration",
+              "title": "Duration",
+              "dataType": 7
             }
           ]
         },
@@ -52,9 +52,9 @@
               "path": "/minecraft:entity/component_groups/minecraft:add_raid_omen/minecraft:spell_effects/",
               "content": [
                 {
-                  "effect": "raid_omen",
+                  "display_on_screen_animation": true,
                   "duration": 30,
-                  "display_on_screen_animation": true
+                  "effect": "raid_omen"
                 }
               ]
             }
@@ -83,9 +83,9 @@
           "content": {
             "add_effects": [
               {
-                "effect": "raid_omen",
+                "display_on_screen_animation": true,
                 "duration": 30,
-                "display_on_screen_animation": true
+                "effect": "raid_omen"
               }
             ],
             "remove_effects": "bad_omen"

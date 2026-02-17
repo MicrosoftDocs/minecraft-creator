@@ -186,12 +186,12 @@
               "path": "/minecraft:entity/components/minecraft:hurt_on_condition/",
               "content": [
                 {
-                  "filters": {
-                    "test": "in_lava",
-                    "subject": "self"
-                  },
                   "cause": "lava",
-                  "damage_per_tick": 4
+                  "damage_per_tick": 4,
+                  "filters": {
+                    "subject": "self",
+                    "test": "in_lava"
+                  }
                 }
               ]
             }
@@ -201,14 +201,14 @@
               "path": "/minecraft:entity/components/minecraft:hurt_on_condition/",
               "content": [
                 {
+                  "cause": "lava",
+                  "damage_per_tick": 4,
                   "filters": {
+                    "operator": "==",
                     "test": "in_lava",
                     "subject": "self",
-                    "operator": "==",
                     "value": true
-                  },
-                  "cause": "lava",
-                  "damage_per_tick": 4
+                  }
                 }
               ]
             }
@@ -223,12 +223,12 @@
           "content": {
             "damage_conditions": [
               {
-                "filters": {
-                  "test": "in_lava",
-                  "subject": "self"
-                },
                 "cause": "lava",
-                "damage_per_tick": 4
+                "damage_per_tick": 4,
+                "filters": {
+                  "subject": "self",
+                  "test": "in_lava"
+                }
               }
             ]
           }
@@ -240,14 +240,14 @@
           "content": {
             "damage_conditions": [
               {
+                "cause": "lava",
+                "damage_per_tick": 4,
                 "filters": {
+                  "operator": "==",
                   "test": "in_lava",
                   "subject": "self",
-                  "operator": "==",
                   "value": true
-                },
-                "cause": "lava",
-                "damage_per_tick": 4
+                }
               }
             ]
           }
@@ -259,14 +259,14 @@
           "content": {
             "damage_conditions": [
               {
+                "cause": "lava",
+                "damage_per_tick": 4,
                 "filters": {
+                  "operator": "==",
                   "test": "in_lava",
                   "subject": "self",
-                  "operator": "==",
                   "value": true
-                },
-                "cause": "lava",
-                "damage_per_tick": 4
+                }
               }
             ]
           }
@@ -278,14 +278,14 @@
           "content": {
             "damage_conditions": [
               {
+                "cause": "lava",
+                "damage_per_tick": 4,
                 "filters": {
+                  "operator": "==",
                   "test": "in_lava",
                   "subject": "self",
-                  "operator": "==",
                   "value": true
-                },
-                "cause": "lava",
-                "damage_per_tick": 4
+                }
               }
             ]
           }
@@ -297,11 +297,11 @@
           "content": {
             "damage_conditions": [
               {
+                "cause": "drowning",
+                "damage_per_tick": 1,
                 "filters": {
                   "test": "in_contact_with_water"
-                },
-                "cause": "drowning",
-                "damage_per_tick": 1
+                }
               }
             ]
           }

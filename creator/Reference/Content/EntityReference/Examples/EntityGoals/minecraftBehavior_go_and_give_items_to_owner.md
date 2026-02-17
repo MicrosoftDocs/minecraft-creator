@@ -32,14 +32,14 @@ The entity will attempt to toss the items from its inventory to its owner.
 
 ```json
 "minecraft:behavior.go_and_give_items_to_owner": {
-  "priority": 4,
-  "run_speed": 8,
-  "throw_sound": "item_thrown",
   "on_item_throw": [
     {
       "event": "pickup_item_delay",
       "target": "self"
     }
-  ]
+  ],
+  "priority": 4,
+  "run_speed": 8,
+  "throw_sound": "item_thrown"
 }
 ```

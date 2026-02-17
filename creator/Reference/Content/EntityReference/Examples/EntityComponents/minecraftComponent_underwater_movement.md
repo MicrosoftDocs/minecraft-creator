@@ -47,12 +47,3 @@ Defines the speed with which an entity can move through water.
   "value": 0.12
 }
 ```
-
-#### [Skeleton Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton_horse.json)
-
-
-```json
-"minecraft:underwater_movement": {
-  "value": 0.08
-}
-```

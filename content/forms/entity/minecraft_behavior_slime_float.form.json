@@ -34,42 +34,14 @@
         "title": "Jump Chance Percentage",
         "description": "Percent chance a slime or magma cube has to jump while in water / lava.",
         "defaultValue": 0.8,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/magma_cube.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.slime_float/",
-              "content": 0.8
-            }
-          ],
-          "/vanilla/behavior_pack/entities/slime.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.slime_float/",
-              "content": 0.8
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Determines the multiplier the entity's speed is modified by when moving through water / lava.",
         "defaultValue": 1.2,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/magma_cube.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.slime_float/",
-              "content": 1.2
-            }
-          ],
-          "/vanilla/behavior_pack/entities/slime.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.slime_float/",
-              "content": 1.2
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "priority",
@@ -98,9 +70,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.slime_float/",
           "content": {
-            "priority": 1,
-            "jump_chance_percentage": 0.8,
-            "speed_multiplier": 1.2
+            "priority": 1
           }
         }
       ],
@@ -108,9 +78,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.slime_float/",
           "content": {
-            "priority": 1,
-            "jump_chance_percentage": 0.8,
-            "speed_multiplier": 1.2
+            "priority": 1
           }
         }
       ]

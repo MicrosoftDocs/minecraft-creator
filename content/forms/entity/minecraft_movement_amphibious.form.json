@@ -23,15 +23,7 @@
         "title": "Max Turn",
         "description": "The maximum number in degrees the mob can turn per tick.",
         "defaultValue": 30,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:movement.amphibious/",
-              "content": 5
-            }
-          ]
-        }
+        "dataType": 3
       }
     ],
     "samples": {
@@ -39,14 +31,6 @@
         {
           "path": "/minecraft:entity/components/minecraft:movement.amphibious/",
           "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/turtle.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:movement.amphibious/",
-          "content": {
-            "max_turn": 5
-          }
         }
       ]
     }

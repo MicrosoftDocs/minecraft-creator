@@ -53,30 +53,14 @@
         "title": "Attack Range Horizontal",
         "description": "Horizontal range (in blocks) at which the sonic boom can damage the target.",
         "defaultValue": 15,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/warden.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.sonic_boom/",
-              "content": 15
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "attack_range_vertical",
         "title": "Attack Range Vertical",
         "description": "Vertical range (in blocks) at which the sonic boom can damage the target.",
         "defaultValue": 20,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/warden.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.sonic_boom/",
-              "content": 20
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "attack_sound",
@@ -126,15 +110,7 @@
         "title": "Duration Until Attack Sound",
         "description": "Duration in seconds until the attack sound is played.",
         "defaultValue": 1.7,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/warden.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.sonic_boom/",
-              "content": 1.7
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "knockback_height_cap",
@@ -217,19 +193,16 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.sonic_boom/",
           "content": {
-            "priority": 3,
             "duration": 3,
             "speed_multiplier": 1.2,
             "attack_damage": 10,
-            "attack_range_horizontal": 15,
-            "attack_range_vertical": 20,
             "attack_cooldown": 2,
             "knockback_vertical_strength": 0.5,
             "knockback_horizontal_strength": 2.5,
             "knockback_height_cap": 0.5,
-            "duration_until_attack_sound": 1.7,
+            "attack_sound": "sonic_boom",
             "charge_sound": "sonic_charge",
-            "attack_sound": "sonic_boom"
+            "priority": 3
           }
         }
       ]

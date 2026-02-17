@@ -26,13 +26,6 @@
         "dataType": 0
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.player_ride_tamed/",
-          "content": {}
-        }
-      ]
-    }
+    "samples": {}
   }
 }

@@ -29,15 +29,7 @@
         "title": "Speed Multiplier",
         "description": "This multiplier modifies the entity's speed when moving towards its restriction.",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/iron_golem.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.move_towards_dwelling_restriction/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "priority",
@@ -60,8 +52,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.move_towards_dwelling_restriction/",
           "content": {
-            "priority": 4,
-            "speed_multiplier": 1
+            "priority": 4
           }
         }
       ]

@@ -194,9 +194,9 @@ At /minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:rideable/:
 
 ```json
 "minecraft:rideable": {
-  "seat_count": 1,
   "interact_text": "action.interact.ride.minecart",
   "pull_in_entities": true,
+  "seat_count": 1,
   "seats": {
     "position": [
       0,

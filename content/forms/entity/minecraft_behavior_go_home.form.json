@@ -30,30 +30,14 @@
         "title": "Goal Radius",
         "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot.",
         "defaultValue": 0.5,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:pregnant/minecraft:behavior.go_home/",
-              "content": 4
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "interval",
         "title": "Interval",
         "description": "A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal.",
         "defaultValue": 120,
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:pregnant/minecraft:behavior.go_home/",
-              "content": 700
-            }
-          ]
-        }
+        "dataType": 0
       },
       {
         "id": "on_failed",
@@ -65,70 +49,23 @@
         "id": "on_home",
         "title": "Home",
         "description": "Event(s) to run when this mob gets home.",
-        "dataType": 22,
-        "samples": {
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:pregnant/minecraft:behavior.go_home/",
-              "content": [
-                {
-                  "event": "minecraft:go_lay_egg",
-                  "target": "self"
-                }
-              ]
-            }
-          ]
-        }
+        "dataType": 22
       },
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Movement speed multiplier of the mob when using this AI Goal.",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:pregnant/minecraft:behavior.go_home/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:pregnant/minecraft:behavior.go_home/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": 0
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/turtle.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:pregnant/minecraft:behavior.go_home/",
-          "content": {
-            "priority": 1,
-            "speed_multiplier": 1,
-            "interval": 700,
-            "goal_radius": 4,
-            "on_home": [
-              {
-                "event": "minecraft:go_lay_egg",
-                "target": "self"
-              }
-            ]
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

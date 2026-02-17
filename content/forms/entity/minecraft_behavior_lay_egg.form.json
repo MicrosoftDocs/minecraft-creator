@@ -60,12 +60,6 @@
               "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
               "content": 1.7
             }
-          ],
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
-              "content": 1.5
-            }
           ]
         }
       },
@@ -113,15 +107,6 @@
                 "target": "self"
               }
             }
-          ],
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
-              "content": {
-                "event": "minecraft:laid_egg",
-                "target": "self"
-              }
-            }
           ]
         }
       },
@@ -136,12 +121,6 @@
             {
               "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
               "content": 3
-            }
-          ],
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
-              "content": 4
             }
           ]
         }
@@ -158,12 +137,6 @@
               "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
               "content": 10
             }
-          ],
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
-              "content": 16
-            }
           ]
         }
       },
@@ -177,12 +150,6 @@
           "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
               "content": 1
             }
           ]
@@ -241,12 +208,6 @@
               "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
               "content": 2
             }
-          ],
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
-              "content": 1
-            }
           ]
         }
       }
@@ -256,42 +217,26 @@
         {
           "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
           "content": {
-            "priority": 2,
-            "speed_multiplier": 1,
-            "search_range": 10,
+            "allow_laying_from_below": true,
+            "lay_seconds": 2,
+            "egg_type": "minecraft:frog_spawn",
             "search_height": 3,
+            "priority": 2,
             "goal_radius": 1.7,
+            "lay_egg_sound": "lay_spawn",
+            "on_lay": {
+              "event": "laid_egg",
+              "target": "self"
+            },
+            "search_range": 10,
+            "use_default_animation": false,
+            "speed_multiplier": 1,
             "target_blocks": [
               "minecraft:water"
             ],
             "target_materials_above_block": [
               "Air"
-            ],
-            "allow_laying_from_below": true,
-            "use_default_animation": false,
-            "lay_seconds": 2,
-            "egg_type": "minecraft:frog_spawn",
-            "lay_egg_sound": "lay_spawn",
-            "on_lay": {
-              "event": "laid_egg",
-              "target": "self"
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/turtle.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
-          "content": {
-            "priority": 1,
-            "speed_multiplier": 1,
-            "search_range": 16,
-            "search_height": 4,
-            "goal_radius": 1.5,
-            "on_lay": {
-              "event": "minecraft:laid_egg",
-              "target": "self"
-            }
+            ]
           }
         }
       ]

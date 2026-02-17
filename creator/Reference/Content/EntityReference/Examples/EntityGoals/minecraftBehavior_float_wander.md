@@ -40,13 +40,15 @@ Allows the mob to float around like the Ghast.
 
 ```json
 "minecraft:behavior.float_wander": {
-  "xz_dist": 10,
-  "y_dist": 7,
-  "y_offset": -2,
-  "random_reselect": true,
   "float_duration": [
     0.1,
     0.35
-  ]
+  ],
+  "float_wander_has_move_control": false,
+  "random_reselect": true,
+  "y_offset": -2,
+  "use_home_position_restriction": false,
+  "xz_dist": 10,
+  "y_dist": 7
 }
 ```

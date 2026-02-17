@@ -44,12 +44,12 @@ Allows this entity to generate paths in the air like the vanilla Bees do. Keeps 
 
 ```json
 "minecraft:navigation.hover": {
-  "can_path_over_water": true,
-  "can_sink": false,
+  "avoid_damage_blocks": true,
   "can_pass_doors": false,
   "can_path_from_air": true,
+  "avoid_sun": false,
   "avoid_water": true,
-  "avoid_damage_blocks": true,
-  "avoid_sun": false
+  "can_path_over_water": true,
+  "can_sink": false
 }
 ```

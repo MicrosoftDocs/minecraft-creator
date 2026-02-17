@@ -43,7 +43,6 @@ Allows the entity to run away from other entities that meet the criteria specifi
 
 ```json
 "minecraft:behavior.avoid_mob_type": {
-  "priority": 4,
   "entity_types": [
     {
       "filters": {
@@ -55,7 +54,8 @@ Allows the entity to run away from other entities that meet the criteria specifi
       "walk_speed_multiplier": 1.2,
       "sprint_speed_multiplier": 1.2
     }
-  ]
+  ],
+  "priority": 4
 }
 ```
 
@@ -64,7 +64,6 @@ Allows the entity to run away from other entities that meet the criteria specifi
 
 ```json
 "minecraft:behavior.avoid_mob_type": {
-  "priority": 2,
   "entity_types": [
     {
       "filters": {
@@ -85,7 +84,8 @@ Allows the entity to run away from other entities that meet the criteria specifi
       "max_dist": 6,
       "sprint_speed_multiplier": 1.2
     }
-  ]
+  ],
+  "priority": 2
 }
 ```
 
@@ -176,18 +176,21 @@ Allows the entity to run away from other entities that meet the criteria specifi
 
 ```json
 "minecraft:behavior.avoid_mob_type": {
-  "priority": 1,
   "entity_types": [
     {
       "filters": {
-        "test": "is_family",
-        "subject": "other",
-        "value": "player"
+        "AND": [
+          {
+            "test": "is_family",
+            "subject": 1,
+            "operator": 0,
+            "value": "player"
+          }
+        ]
       },
-      "max_dist": 8,
-      "walk_speed_multiplier": 1,
-      "sprint_speed_multiplier": 1
+      "max_dist": 8
     }
-  ]
+  ],
+  "priority": 1
 }
 ```

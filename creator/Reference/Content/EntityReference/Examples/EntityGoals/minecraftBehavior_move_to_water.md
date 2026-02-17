@@ -45,9 +45,9 @@ Allows the mob to move back into water when on land.
 
 ```json
 "minecraft:behavior.move_to_water": {
+  "goal_radius": 1.5,
   "priority": 3,
-  "search_range": 20,
   "search_height": 5,
-  "goal_radius": 1.5
+  "search_range": 20
 }
 ```

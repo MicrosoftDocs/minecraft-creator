@@ -20,10 +20,3 @@ Allows the mob to be ridden by the player after being tamed.
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
 
 ## Samples
-
-#### [Skeleton Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton_horse.json)
-
-
-```json
-"minecraft:behavior.player_ride_tamed": {}
-```

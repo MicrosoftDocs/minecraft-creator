@@ -170,12 +170,6 @@
               "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:behavior.melee_box_attack/",
               "content": 1.25
             }
-          ],
-          "/vanilla/behavior_pack/entities/drowned.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:melee_mode/minecraft:behavior.melee_box_attack/",
-              "content": 1
-            }
           ]
         }
       },
@@ -194,7 +188,7 @@
           ],
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.melee_box_attack/",
+              "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.melee_box_attack/",
               "content": true
             }
           ]
@@ -235,7 +229,7 @@
           ],
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.melee_box_attack/",
+              "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.melee_box_attack/",
               "content": 3
             }
           ],
@@ -261,26 +255,26 @@
         {
           "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:behavior.melee_box_attack/",
           "content": {
-            "priority": 4,
+            "speed_multiplier": 1.25,
             "track_target": true,
-            "speed_multiplier": 1.25
+            "priority": 4
           }
         }
       ],
       "/vanilla/behavior_pack/entities/cave_spider.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.melee_box_attack/",
+          "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.melee_box_attack/",
           "content": {
-            "priority": 3,
             "track_target": true,
-            "random_stop_interval": 100
+            "priority": 3
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.melee_box_attack/",
+          "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.melee_box_attack/",
           "content": {
-            "priority": 3,
-            "track_target": true
+            "random_stop_interval": 100,
+            "track_target": true,
+            "priority": 3
           }
         }
       ],
@@ -298,10 +292,8 @@
           "path": "/minecraft:entity/component_groups/minecraft:melee_mode/minecraft:behavior.melee_box_attack/",
           "content": {
             "can_spread_on_fire": true,
-            "priority": 3,
-            "speed_multiplier": 1,
-            "track_target": false,
-            "require_complete_path": true
+            "require_complete_path": true,
+            "priority": 3
           }
         }
       ]

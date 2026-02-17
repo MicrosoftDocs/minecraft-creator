@@ -27,7 +27,7 @@ Defines the player's need for food.
 
 ```json
 "minecraft:player.saturation": {
-  "value": 5,
-  "max": 20
+  "max": 20,
+  "value": 5
 }
 ```

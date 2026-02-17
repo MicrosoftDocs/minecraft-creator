@@ -2823,20 +2823,23 @@
       {
         "id": "minecraft:behavior.move_to_land",
         "title": "Move To Land Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to move back onto land when in water.",
+        "dataType": 16,
+        "subFormId": "entity/move_to_land"
       },
       {
         "id": "minecraft:behavior.move_to_lava",
         "title": "Move To Lava Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to move back into lava when on land.",
+        "dataType": 16,
+        "subFormId": "entity/move_to_lava"
       },
       {
         "id": "minecraft:behavior.move_to_liquid",
         "title": "Move To Liquid Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to move into a liquid when on land.",
+        "dataType": 16,
+        "subFormId": "entity/move_to_liquid"
       },
       {
         "id": "minecraft:behavior.move_to_poi",
@@ -2859,8 +2862,9 @@
       {
         "id": "minecraft:behavior.move_to_water",
         "title": "Move To Water Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to move back into water when on land.",
+        "dataType": 16,
+        "subFormId": "entity/move_to_water"
       },
       {
         "id": "minecraft:behavior.move_towards_dwelling_restriction",
@@ -2904,8 +2908,9 @@
       {
         "id": "minecraft:behavior.ocelot_sit_on_block",
         "title": "Ocelot Sit On Block Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows to mob to be able to sit in place like the ocelot.",
+        "dataType": 16,
+        "subFormId": "entity/ocelot_sit_on_block"
       },
       {
         "id": "minecraft:behavior.ocelotattack",
@@ -2917,8 +2922,9 @@
       {
         "id": "minecraft:behavior.offer_flower",
         "title": "Offer Flower Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to offer a flower to another mob with the minecraft:take_flower behavior.",
+        "dataType": 16,
+        "subFormId": "entity/offer_flower"
       },
       {
         "id": "minecraft:behavior.open_door",
@@ -2965,14 +2971,16 @@
       {
         "id": "minecraft:behavior.play",
         "title": "Play Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to offer a flower to another mob with the minecraft:take_flower behavior.",
+        "dataType": 16,
+        "subFormId": "entity/play"
       },
       {
         "id": "minecraft:behavior.play_dead",
         "title": "Play Dead Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows this entity to pretend to be dead to avoid being targeted by attackers.",
+        "dataType": 16,
+        "subFormId": "entity/play_dead"
       },
       {
         "id": "minecraft:behavior.player_ride_tamed",
@@ -2983,8 +2991,9 @@
       {
         "id": "minecraft:behavior.raid_garden",
         "title": "Raid Garden Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to eat/raid crops out of farms until they are full.",
+        "dataType": 16,
+        "subFormId": "entity/raid_garden"
       },
       {
         "id": "minecraft:behavior.ram_attack",
@@ -3252,8 +3261,9 @@
       {
         "id": "minecraft:behavior.stomp_turtle_egg",
         "title": "Stomp Turtle Egg Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows this mob to stomp turtle eggs",
+        "dataType": 16,
+        "subFormId": "entity/stomp_turtle_egg"
       },
       {
         "id": "minecraft:behavior.stroll_towards_village",

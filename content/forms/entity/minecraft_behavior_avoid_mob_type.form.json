@@ -167,13 +167,16 @@
               "content": [
                 {
                   "filters": {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "player"
+                    "AND": [
+                      {
+                        "test": "is_family",
+                        "subject": 1,
+                        "operator": 0,
+                        "value": "player"
+                      }
+                    ]
                   },
-                  "max_dist": 8,
-                  "walk_speed_multiplier": 1,
-                  "sprint_speed_multiplier": 1
+                  "max_dist": 8
                 }
               ]
             }
@@ -301,7 +304,6 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
           "content": {
-            "priority": 4,
             "entity_types": [
               {
                 "filters": {
@@ -313,7 +315,8 @@
                 "walk_speed_multiplier": 1.2,
                 "sprint_speed_multiplier": 1.2
               }
-            ]
+            ],
+            "priority": 4
           }
         }
       ],
@@ -321,7 +324,6 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
           "content": {
-            "priority": 2,
             "entity_types": [
               {
                 "filters": {
@@ -342,7 +344,8 @@
                 "max_dist": 6,
                 "sprint_speed_multiplier": 1.2
               }
-            ]
+            ],
+            "priority": 2
           }
         }
       ],
@@ -430,19 +433,22 @@
         {
           "path": "/minecraft:entity/component_groups/minecraft:guardian_passive/minecraft:behavior.avoid_mob_type/",
           "content": {
-            "priority": 1,
             "entity_types": [
               {
                 "filters": {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "player"
+                  "AND": [
+                    {
+                      "test": "is_family",
+                      "subject": 1,
+                      "operator": 0,
+                      "value": "player"
+                    }
+                  ]
                 },
-                "max_dist": 8,
-                "walk_speed_multiplier": 1,
-                "sprint_speed_multiplier": 1
+                "max_dist": 8
               }
-            ]
+            ],
+            "priority": 1
           }
         }
       ]

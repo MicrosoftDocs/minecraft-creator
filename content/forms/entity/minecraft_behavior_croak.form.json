@@ -95,11 +95,6 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.croak/",
           "content": {
-            "priority": 9,
-            "interval": [
-              10,
-              20
-            ],
             "duration": 4.5,
             "filters": {
               "all_of": [
@@ -112,7 +107,12 @@
                   "value": false
                 }
               ]
-            }
+            },
+            "interval": [
+              10,
+              20
+            ],
+            "priority": 9
           }
         }
       ]

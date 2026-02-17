@@ -32,7 +32,7 @@ Allows this entity to roar at another entity based on data in `minecraft:anger_l
 
 ```json
 "minecraft:behavior.roar": {
-  "priority": 2,
-  "duration": 4.2
+  "duration": 4.2,
+  "priority": 2
 }
 ```

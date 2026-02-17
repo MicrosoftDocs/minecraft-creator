@@ -34,13 +34,13 @@
       "/vanilla/behavior_pack/entities/ender_crystal.json": [
         {
           "path": "/minecraft:entity/components/minecraft:fire_immune/",
-          "content": true
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/ender_dragon.json": [
         {
           "path": "/minecraft:entity/components/minecraft:fire_immune/",
-          "content": true
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/magma_cube.json": [
@@ -52,7 +52,7 @@
       "/vanilla/behavior_pack/entities/npc.json": [
         {
           "path": "/minecraft:entity/components/minecraft:fire_immune/",
-          "content": true
+          "content": {}
         }
       ]
     }

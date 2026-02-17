@@ -14,10 +14,3 @@ When configured as a rideable entity, the entity will be controlled using WASD c
 
 
 ## Samples
-
-#### [Skeleton Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton_horse.json)
-
-
-```json
-"minecraft:input_ground_controlled": {}
-```

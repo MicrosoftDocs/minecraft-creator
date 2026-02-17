@@ -63,7 +63,6 @@
         {
           "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:behavior.teleport_to_owner/",
           "content": {
-            "priority": 0,
             "filters": {
               "all_of": [
                 {
@@ -75,7 +74,8 @@
                   "test": "is_panicking"
                 }
               ]
-            }
+            },
+            "priority": 0
           }
         }
       ]

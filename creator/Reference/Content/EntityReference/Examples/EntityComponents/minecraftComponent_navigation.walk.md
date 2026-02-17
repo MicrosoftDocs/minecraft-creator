@@ -38,6 +38,7 @@ Walking style of the mob.
 | can_walk | true | Boolean true/false | Tells the pathfinder whether or not it can walk on the ground outside water |  | 
 | can_walk_in_lava | false | Boolean true/false | Tells the pathfinder whether or not it can travel in lava like walking on ground |  | 
 | is_amphibious | false | Boolean true/false | Tells the pathfinder whether or not it can walk on the ground underwater | Bogged: `true` | 
+| using_door_annotation | *not set* | String |  | Blaze: `true` | 
 
 ## Blocks To Avoid
 
@@ -55,9 +56,10 @@ Walking style of the mob.
 
 ```json
 "minecraft:navigation.walk": {
-  "can_path_over_water": true,
+  "avoid_damage_blocks": true,
   "avoid_water": true,
-  "avoid_damage_blocks": true
+  "can_path_over_water": true,
+  "using_door_annotation": true
 }
 ```
 
@@ -66,8 +68,8 @@ Walking style of the mob.
 
 ```json
 "minecraft:navigation.walk": {
-  "is_amphibious": true,
   "avoid_sun": true,
+  "is_amphibious": true,
   "avoid_water": true
 }
 ```
@@ -81,7 +83,8 @@ Walking style of the mob.
     {
       "tags": "query.any_tag('trapdoors')"
     }
-  ]
+  ],
+  "using_door_annotation": true
 }
 ```
 
@@ -91,6 +94,17 @@ Walking style of the mob.
 ```json
 "minecraft:navigation.walk": {
   "can_path_over_water": true,
+  "avoid_damage_blocks": true
+}
+```
+
+#### [Cow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cow.json)
+
+
+```json
+"minecraft:navigation.walk": {
+  "can_path_over_water": true,
+  "avoid_water": true,
   "avoid_damage_blocks": true
 }
 ```

@@ -1678,6 +1678,10 @@
             "title": "Particle.soul escape.quiet"
           },
           {
+            "id": "pause_growth",
+            "title": "Pause growth"
+          },
+          {
             "id": "pick_berries.cave_vines",
             "title": "Pick berries.cave vines"
           },
@@ -1900,6 +1904,10 @@
           {
             "id": "remedy",
             "title": "Remedy"
+          },
+          {
+            "id": "reset_growth",
+            "title": "Reset growth"
           },
           {
             "id": "respawn_anchor.ambient",
@@ -3894,6 +3902,10 @@
             "title": "Particle.soul escape.quiet"
           },
           {
+            "id": "pause_growth",
+            "title": "Pause growth"
+          },
+          {
             "id": "pick_berries.cave_vines",
             "title": "Pick berries.cave vines"
           },
@@ -4116,6 +4128,10 @@
           {
             "id": "remedy",
             "title": "Remedy"
+          },
+          {
+            "id": "reset_growth",
+            "title": "Reset growth"
           },
           {
             "id": "respawn_anchor.ambient",
@@ -6110,6 +6126,10 @@
             "title": "Particle.soul escape.quiet"
           },
           {
+            "id": "pause_growth",
+            "title": "Pause growth"
+          },
+          {
             "id": "pick_berries.cave_vines",
             "title": "Pick berries.cave vines"
           },
@@ -6332,6 +6352,10 @@
           {
             "id": "remedy",
             "title": "Remedy"
+          },
+          {
+            "id": "reset_growth",
+            "title": "Reset growth"
           },
           {
             "id": "respawn_anchor.ambient",

@@ -92,8 +92,8 @@ At /minecraft:entity/events/minecraft:add_can_ride/sequence[0]/filters/:
 ```json
 {
   "test": "is_variant",
-  "subject": "self",
   "operator": "!=",
+  "subject": "self",
   "value": 7
 }
 ```
@@ -103,8 +103,8 @@ At /minecraft:entity/events/minecraft:add_can_ride/sequence[1]/filters/:
 ```json
 {
   "test": "is_variant",
-  "subject": "self",
   "operator": "==",
+  "subject": "self",
   "value": 7
 }
 ```

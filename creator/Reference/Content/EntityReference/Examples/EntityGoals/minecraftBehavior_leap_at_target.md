@@ -31,12 +31,12 @@ Allows monsters to jump at and attack their target. Can only be used by hostile 
 
 #### [Cave Spider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cave_spider.json)
 
-At /minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.leap_at_target/: 
+At /minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.leap_at_target/: 
 
 ```json
 "minecraft:behavior.leap_at_target": {
+  "must_be_on_ground": false,
   "priority": 4,
-  "yd": 0.4,
-  "must_be_on_ground": false
+  "yd": 0.4
 }
 ```

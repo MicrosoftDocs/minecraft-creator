@@ -682,9 +682,9 @@
         {
           "path": "/minecraft:entity/components/minecraft:rideable/",
           "content": {
-            "seat_count": 1,
             "interact_text": "action.interact.ride.minecart",
             "pull_in_entities": true,
+            "seat_count": 1,
             "seats": {
               "position": [
                 0,

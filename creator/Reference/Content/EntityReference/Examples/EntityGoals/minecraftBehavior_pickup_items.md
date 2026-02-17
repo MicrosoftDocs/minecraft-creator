@@ -36,15 +36,15 @@ Allows the mob to pick up items on the ground.
 
 ```json
 "minecraft:behavior.pickup_items": {
-  "priority": 2,
-  "max_dist": 32,
-  "search_height": 32,
-  "goal_radius": 2.2,
-  "speed_multiplier": 6,
-  "pickup_based_on_chance": false,
   "can_pickup_any_item": false,
+  "search_height": 32,
+  "priority": 2,
+  "goal_radius": 2.2,
   "can_pickup_to_hand_or_equipment": false,
-  "pickup_same_items_as_in_hand": true
+  "max_dist": 32,
+  "pickup_based_on_chance": false,
+  "pickup_same_items_as_in_hand": true,
+  "speed_multiplier": 6
 }
 ```
 
@@ -53,17 +53,17 @@ Allows the mob to pick up items on the ground.
 
 ```json
 "minecraft:behavior.pickup_items": {
-  "priority": 5,
-  "max_dist": 3,
-  "goal_radius": 2,
-  "speed_multiplier": 1,
-  "pickup_based_on_chance": true,
   "can_pickup_any_item": true,
   "excluded_items": [
     {
       "tags": "q.all_tags('minecraft:is_spear')"
     }
-  ]
+  ],
+  "pickup_based_on_chance": true,
+  "goal_radius": 2,
+  "priority": 5,
+  "max_dist": 3,
+  "speed_multiplier": 1
 }
 ```
 
@@ -72,18 +72,18 @@ Allows the mob to pick up items on the ground.
 
 ```json
 "minecraft:behavior.pickup_items": {
-  "priority": 6,
-  "max_dist": 3,
-  "goal_radius": 2,
-  "speed_multiplier": 1,
-  "pickup_based_on_chance": true,
   "can_pickup_any_item": true,
   "excluded_items": [
     "minecraft:glow_ink_sac",
     {
       "tags": "q.all_tags('minecraft:is_spear')"
     }
-  ]
+  ],
+  "pickup_based_on_chance": true,
+  "goal_radius": 2,
+  "priority": 6,
+  "max_dist": 3,
+  "speed_multiplier": 1
 }
 ```
 
@@ -104,16 +104,16 @@ Allows the mob to pick up items on the ground.
 
 ```json
 "minecraft:behavior.pickup_items": {
-  "priority": 6,
-  "max_dist": 3,
-  "goal_radius": 2,
-  "speed_multiplier": 1,
-  "pickup_based_on_chance": true,
   "can_pickup_any_item": true,
   "excluded_items": [
     {
       "tags": "q.all_tags('minecraft:is_spear')"
     }
-  ]
+  ],
+  "pickup_based_on_chance": true,
+  "goal_radius": 2,
+  "priority": 6,
+  "max_dist": 3,
+  "speed_multiplier": 1
 }
 ```

@@ -42,8 +42,12 @@ Allows an entity to attack by firing a shot with a delay. Anchor and offset para
 
 ```json
 "minecraft:behavior.fire_at_target": {
-  "projectile_def": "minecraft:breeze_wind_charge_projectile",
-  "priority": 2,
+  "post_shoot_delay": 0.2,
+  "attack_cooldown": 0.5,
+  "attack_range": [
+    0,
+    16
+  ],
   "filters": {
     "all_of": [
       {
@@ -52,20 +56,16 @@ Allows an entity to attack by firing a shot with a delay. Anchor and offset para
       }
     ]
   },
-  "attack_range": [
-    0,
-    16
-  ],
-  "attack_cooldown": 0.5,
-  "pre_shoot_delay": 0.75,
-  "post_shoot_delay": 0.2,
-  "ranged_fov": 90,
   "owner_anchor": 2,
   "owner_offset": [
     0,
     0.3,
     0
   ],
+  "pre_shoot_delay": 0.75,
+  "priority": 2,
+  "projectile_def": "minecraft:breeze_wind_charge_projectile",
+  "ranged_fov": 90,
   "target_anchor": 0,
   "target_offset": [
     0,

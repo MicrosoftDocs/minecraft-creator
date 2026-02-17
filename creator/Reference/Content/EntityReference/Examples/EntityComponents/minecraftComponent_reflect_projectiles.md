@@ -30,6 +30,7 @@ ms.date: 02/11/2025
 
 ```json
 "minecraft:reflect_projectiles": {
+  "azimuth_angle": "180.0 + Math.random(-20.0, 20.0)",
   "reflected_projectiles": [
     "xp_bottle",
     "thrown_trident",
@@ -49,7 +50,6 @@ ms.date: 02/11/2025
     "fireworks_rocket",
     "fishing_hook"
   ],
-  "azimuth_angle": "180.0 + Math.random(-20.0, 20.0)",
   "reflection_scale": "0.5"
 }
 ```

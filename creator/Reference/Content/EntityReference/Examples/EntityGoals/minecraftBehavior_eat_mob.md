@@ -32,12 +32,12 @@ Allows the entity to eat a specified Mob.
 
 ```json
 "minecraft:behavior.eat_mob": {
-  "priority": 7,
   "run_speed": 2,
   "eat_animation_time": 0.3,
   "pull_in_force": 0.75,
   "reach_mob_distance": 1.75,
   "eat_mob_sound": "tongue",
-  "loot_table": "loot_tables/entities/frog.json"
+  "loot_table": "loot_tables/entities/frog.json",
+  "priority": 7
 }
 ```

@@ -17,7 +17,7 @@ Creates a trigger based on environment conditions.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| triggers | *not set* | Array of objects | The list of triggers that fire when the environment conditions match the given filter criteria. Can be an array of trigger objects or a single trigger object. | Breeze: `[{"filters":{"all_of":[{"test":"on_ground","subject":"self","value":true},{"test":"has_target","subject":"self","value":true},{"test":"bool_property","operator":"==","domain":"minecraft:is_playing_idle_ground_sound"}]},"event":"minecraft:stop_playing_idle_ground_sound"},{"filters":{"all_of":[{"test":"bool_property","operator":"!=","domain":"minecraft:is_playing_idle_ground_sound"},{"any_of":[{"test":"on_ground","subject":"self","value":false},{"test":"has_target","subject":"self","value":false}]}]},"event":"minecraft:start_playing_idle_ground_sound"}]`, Cave Spider: `{"filters":{"test":"is_brightness","operator":"<","value":0.49},"event":"minecraft:become_hostile"}`, `{"filters":{"test":"is_brightness","operator":">","value":0.49},"event":"minecraft:become_neutral"}` | 
+| triggers | *not set* | Array of objects | The list of triggers that fire when the environment conditions match the given filter criteria. Can be an array of trigger objects or a single trigger object. | Breeze: `[{"event":"minecraft:stop_playing_idle_ground_sound","filters":{"all_of":[{"subject":"self","test":"on_ground","value":true},{"subject":"self","test":"has_target","value":true},{"domain":"minecraft:is_playing_idle_ground_sound","operator":"==","test":"bool_property"}]}},{"event":"minecraft:start_playing_idle_ground_sound","filters":{"all_of":[{"domain":"minecraft:is_playing_idle_ground_sound","operator":"!=","test":"bool_property"},{"any_of":[{"subject":"self","test":"on_ground","value":false},{"subject":"self","test":"has_target","value":false}]}]}}]`, Cave Spider: `{"event":"minecraft:become_neutral","filters":{"operator":">","test":"is_brightness","value":0.49}}`, `{"event":"minecraft:become_hostile","filters":{"operator":"<","test":"is_brightness","value":0.49}}` | 
 | triggers (Alternate 1) | *not set* | Object |  |  | 
 
 ## Samples
@@ -29,52 +29,52 @@ Creates a trigger based on environment conditions.
 "minecraft:environment_sensor": {
   "triggers": [
     {
+      "event": "minecraft:stop_playing_idle_ground_sound",
       "filters": {
         "all_of": [
           {
+            "subject": "self",
             "test": "on_ground",
-            "subject": "self",
             "value": true
           },
           {
+            "subject": "self",
             "test": "has_target",
-            "subject": "self",
             "value": true
           },
           {
-            "test": "bool_property",
+            "domain": "minecraft:is_playing_idle_ground_sound",
             "operator": "==",
-            "domain": "minecraft:is_playing_idle_ground_sound"
+            "test": "bool_property"
           }
         ]
-      },
-      "event": "minecraft:stop_playing_idle_ground_sound"
+      }
     },
     {
+      "event": "minecraft:start_playing_idle_ground_sound",
       "filters": {
         "all_of": [
           {
-            "test": "bool_property",
+            "domain": "minecraft:is_playing_idle_ground_sound",
             "operator": "!=",
-            "domain": "minecraft:is_playing_idle_ground_sound"
+            "test": "bool_property"
           },
           {
             "any_of": [
               {
-                "test": "on_ground",
                 "subject": "self",
+                "test": "on_ground",
                 "value": false
               },
               {
-                "test": "has_target",
                 "subject": "self",
+                "test": "has_target",
                 "value": false
               }
             ]
           }
         ]
-      },
-      "event": "minecraft:start_playing_idle_ground_sound"
+      }
     }
   ]
 }
@@ -82,32 +82,32 @@ Creates a trigger based on environment conditions.
 
 #### [Cave Spider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cave_spider.json)
 
-At /minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:environment_sensor/: 
-
-```json
-"minecraft:environment_sensor": {
-  "triggers": {
-    "filters": {
-      "test": "is_brightness",
-      "operator": "<",
-      "value": 0.49
-    },
-    "event": "minecraft:become_hostile"
-  }
-}
-```
-
 At /minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:environment_sensor/: 
 
 ```json
 "minecraft:environment_sensor": {
   "triggers": {
+    "event": "minecraft:become_neutral",
     "filters": {
-      "test": "is_brightness",
       "operator": ">",
+      "test": "is_brightness",
       "value": 0.49
-    },
-    "event": "minecraft:become_neutral"
+    }
+  }
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:environment_sensor/: 
+
+```json
+"minecraft:environment_sensor": {
+  "triggers": {
+    "event": "minecraft:become_hostile",
+    "filters": {
+      "operator": "<",
+      "test": "is_brightness",
+      "value": 0.49
+    }
   }
 }
 ```
@@ -205,21 +205,21 @@ At /minecraft:entity/component_groups/start_zombification/minecraft:environment_
 ```json
 "minecraft:environment_sensor": {
   "triggers": {
+    "event": "minecraft:gain_raid_omen",
     "filters": {
       "all_of": [
         {
-          "test": "has_mob_effect",
           "subject": "self",
+          "test": "has_mob_effect",
           "value": "bad_omen"
         },
         {
-          "test": "is_in_village",
           "subject": "self",
+          "test": "is_in_village",
           "value": true
         }
       ]
-    },
-    "event": "minecraft:gain_raid_omen"
+    }
   }
 }
 ```

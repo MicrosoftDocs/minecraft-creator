@@ -20,7 +20,7 @@ Enables minecart-type entities to detect powered rails and respond to activation
 | check_block_types | false | Boolean true/false | If true, on tick this entity will trigger its on_deactivate behavior | Command Block Minecart: `true` | 
 | eject_on_activate | true | Boolean true/false | If true, this entity will eject all of its riders when it passes over an activated rail | Minecart: `true` | 
 | eject_on_deactivate | false | Boolean true/false | If true, this entity will eject all of its riders when it passes over a deactivated rail |  | 
-| on_activate | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call when the rail is activated | Command Block Minecart: `{"event":"minecraft:command_block_activate"}`, Hopper Minecart: `{"event":"minecraft:hopper_deactivate"}`, Tnt Minecart: `{"filters":{"all_of":[{"test":"is_game_rule","domain":"tntexplodes","operator":"==","value":true}]},"event":"minecraft:on_prime"}` | 
+| on_activate | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call when the rail is activated | Command Block Minecart: `{"event":"minecraft:command_block_activate"}`, Hopper Minecart: `{"event":"minecraft:hopper_deactivate"}`, Tnt Minecart: `{"event":"minecraft:on_prime","filters":{"all_of":[{"domain":"tntexplodes","operator":"==","test":"is_game_rule","value":true}]}}` | 
 | on_deactivate | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call when the rail is deactivated | Command Block Minecart: `{"event":"minecraft:command_block_deactivate"}`, Hopper Minecart: `{"event":"minecraft:hopper_activate"}` | 
 | tick_command_block_on_activate | true | Boolean true/false | If true, command blocks will start ticking when passing over an activated rail | Command Block Minecart: `true` | 
 | tick_command_block_on_deactivate | false | Boolean true/false | If false, command blocks will stop ticking when passing over a deactivated rail |  | 
@@ -34,13 +34,13 @@ At /minecraft:entity/component_groups/minecraft:command_block_active/minecraft:r
 ```json
 "minecraft:rail_sensor": {
   "check_block_types": true,
+  "on_deactivate": {
+    "event": "minecraft:command_block_deactivate"
+  },
   "eject_on_activate": false,
   "eject_on_deactivate": false,
   "tick_command_block_on_activate": true,
-  "tick_command_block_on_deactivate": false,
-  "on_deactivate": {
-    "event": "minecraft:command_block_deactivate"
-  }
+  "tick_command_block_on_deactivate": false
 }
 ```
 
@@ -51,11 +51,11 @@ At /minecraft:entity/component_groups/minecraft:command_block_inactive/minecraft
   "check_block_types": false,
   "eject_on_activate": false,
   "eject_on_deactivate": false,
-  "tick_command_block_on_activate": true,
-  "tick_command_block_on_deactivate": false,
   "on_activate": {
     "event": "minecraft:command_block_activate"
-  }
+  },
+  "tick_command_block_on_activate": true,
+  "tick_command_block_on_deactivate": false
 }
 ```
 
@@ -92,28 +92,28 @@ At /minecraft:entity/component_groups/minecraft:hopper_inactive/minecraft:rail_s
 
 #### [Tnt Minecart](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/tnt_minecart.json)
 
-At /minecraft:entity/component_groups/minecraft:primed_tnt/minecraft:rail_sensor/: 
-
-```json
-"minecraft:rail_sensor": {}
-```
-
 At /minecraft:entity/component_groups/minecraft:inactive/minecraft:rail_sensor/: 
 
 ```json
 "minecraft:rail_sensor": {
   "on_activate": {
+    "event": "minecraft:on_prime",
     "filters": {
       "all_of": [
         {
-          "test": "is_game_rule",
           "domain": "tntexplodes",
           "operator": "==",
+          "test": "is_game_rule",
           "value": true
         }
       ]
-    },
-    "event": "minecraft:on_prime"
+    }
   }
 }
+```
+
+At /minecraft:entity/component_groups/minecraft:instant_explode_tnt/minecraft:rail_sensor/: 
+
+```json
+"minecraft:rail_sensor": {}
 ```

@@ -28,11 +28,11 @@ Defines the entity's 'peek' behavior, defining the events that should be called 
 
 ```json
 "minecraft:peek": {
-  "on_open": {
-    "event": "minecraft:on_open"
-  },
   "on_close": {
     "event": "minecraft:on_close"
+  },
+  "on_open": {
+    "event": "minecraft:on_open"
   },
   "on_target_open": {
     "event": "minecraft:on_open"

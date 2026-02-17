@@ -101,10 +101,10 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.offer_flower/",
           "content": {
-            "priority": 5,
             "filters": {
               "test": "is_daytime"
-            }
+            },
+            "priority": 5
           }
         }
       ]

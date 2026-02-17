@@ -21,11 +21,11 @@
     "samples": {
       "/vanilla/behavior_pack/entities/tnt_minecart.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:primed_tnt/minecraft:is_ignited/",
+          "path": "/minecraft:entity/component_groups/minecraft:instant_explode_tnt/minecraft:is_ignited/",
           "content": {}
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:instant_explode_tnt/minecraft:is_ignited/",
+          "path": "/minecraft:entity/component_groups/minecraft:primed_tnt/minecraft:is_ignited/",
           "content": {}
         }
       ]

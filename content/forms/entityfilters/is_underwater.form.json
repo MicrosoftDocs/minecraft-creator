@@ -85,11 +85,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
+              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
               "content": "=="
             },
             {
-              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
               "content": "=="
             }
           ]
@@ -141,11 +141,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
+              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
               "content": "self"
             },
             {
-              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
               "content": "self"
             }
           ]
@@ -160,11 +160,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
+              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
               "content": true
             },
             {
-              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
               "content": true
             }
           ]
@@ -177,11 +177,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
+              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
               "content": "is_underwater"
             },
             {
-              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
               "content": "is_underwater"
             }
           ]
@@ -201,39 +201,45 @@
       ],
       "/vanilla/behavior_pack/entities/bogged.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
           "content": {
+            "operator": "==",
             "test": "is_underwater",
             "subject": "self",
-            "operator": "==",
             "value": true
           }
         },
         {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
           "content": {
+            "operator": "==",
             "test": "is_underwater",
             "subject": "self",
-            "operator": "==",
             "value": true
           }
         }
       ],
       "/vanilla/behavior_pack/entities/parched.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
           "content": {
             "test": "is_underwater"
           }
         },
         {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
           "content": {
             "test": "is_underwater"
           }
         }
       ],
       "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
+          "content": {
+            "test": "is_underwater"
+          }
+        },
         {
           "path": "/minecraft:entity/component_groups/got_out_of_powder_snow_environment_sensor/minecraft:environment_sensor/triggers[0]/filters/",
           "content": {
@@ -245,30 +251,24 @@
           "content": {
             "test": "is_underwater"
           }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
-          "content": {
-            "test": "is_underwater"
-          }
         }
       ],
       "/vanilla/behavior_pack/entities/stray.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
           "content": {
+            "operator": "==",
             "test": "is_underwater",
             "subject": "self",
-            "operator": "==",
             "value": true
           }
         },
         {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/",
           "content": {
+            "operator": "==",
             "test": "is_underwater",
             "subject": "self",
-            "operator": "==",
             "value": true
           }
         }

@@ -102,17 +102,17 @@
         "samples": {
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/",
-              "content": {
-                "min": 5,
-                "max": 5
-              }
-            },
-            {
               "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.nearest_attackable_target/",
               "content": {
                 "min": 10,
                 "max": 10
+              }
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/",
+              "content": {
+                "min": 5,
+                "max": 5
               }
             }
           ]
@@ -137,9 +137,14 @@
               "content": [
                 {
                   "filters": {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "player"
+                    "AND": [
+                      {
+                        "test": "is_family",
+                        "subject": 1,
+                        "operator": 0,
+                        "value": "player"
+                      }
+                    ]
                   },
                   "max_dist": 48
                 }
@@ -155,16 +160,14 @@
                     "test": "is_family",
                     "subject": "other",
                     "value": "player"
-                  },
-                  "max_dist": 16
+                  }
                 },
                 {
                   "filters": {
                     "test": "is_family",
                     "subject": "other",
                     "value": "irongolem"
-                  },
-                  "max_dist": 16
+                  }
                 },
                 {
                   "filters": {
@@ -181,8 +184,7 @@
                         "value": true
                       }
                     ]
-                  },
-                  "max_dist": 16
+                  }
                 }
               ]
             }
@@ -193,17 +195,27 @@
               "content": [
                 {
                   "filters": {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "player"
+                    "AND": [
+                      {
+                        "test": "is_family",
+                        "subject": 1,
+                        "operator": 0,
+                        "value": "player"
+                      }
+                    ]
                   },
                   "max_dist": 24
                 },
                 {
                   "filters": {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "irongolem"
+                    "AND": [
+                      {
+                        "test": "is_family",
+                        "subject": 1,
+                        "operator": 0,
+                        "value": "irongolem"
+                      }
+                    ]
                   },
                   "max_dist": 24
                 }
@@ -211,33 +223,6 @@
             }
           ],
           "/vanilla/behavior_pack/entities/cave_spider.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/",
-              "content": [
-                {
-                  "filters": {
-                    "any_of": [
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "player"
-                      },
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "snowgolem"
-                      },
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "irongolem"
-                      }
-                    ]
-                  },
-                  "max_dist": 16
-                }
-              ]
-            },
             {
               "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.nearest_attackable_target/",
               "content": [
@@ -260,8 +245,33 @@
                         "value": "irongolem"
                       }
                     ]
-                  },
-                  "max_dist": 16
+                  }
+                }
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "snowgolem"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "irongolem"
+                      }
+                    ]
+                  }
                 }
               ]
             }
@@ -456,15 +466,7 @@
         "title": "Scan Interval",
         "description": "If \"attack_interval\" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to \"scan_interval\", minimum value is 1. Values under 10 can affect performance.",
         "defaultValue": 10,
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/breeze.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
-              "content": 10
-            }
-          ]
-        }
+        "dataType": 0
       },
       {
         "id": "set_persistent",
@@ -555,18 +557,23 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
           "content": {
-            "priority": 2,
             "must_see": true,
             "entity_types": [
               {
                 "filters": {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "player"
+                  "AND": [
+                    {
+                      "test": "is_family",
+                      "subject": 1,
+                      "operator": 0,
+                      "value": "player"
+                    }
+                  ]
                 },
                 "max_dist": 48
               }
-            ]
+            ],
+            "priority": 2
           }
         }
       ],
@@ -574,25 +581,22 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
           "content": {
-            "priority": 2,
-            "must_see": true,
             "reselect_targets": true,
+            "must_see": true,
             "entity_types": [
               {
                 "filters": {
                   "test": "is_family",
                   "subject": "other",
                   "value": "player"
-                },
-                "max_dist": 16
+                }
               },
               {
                 "filters": {
                   "test": "is_family",
                   "subject": "other",
                   "value": "irongolem"
-                },
-                "max_dist": 16
+                }
               },
               {
                 "filters": {
@@ -609,10 +613,10 @@
                       "value": true
                     }
                   ]
-                },
-                "max_dist": 16
+                }
               }
-            ]
+            ],
+            "priority": 2
           }
         }
       ],
@@ -620,76 +624,49 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
           "content": {
-            "priority": 1,
+            "must_see": true,
             "within_radius": 24,
-            "scan_interval": 10,
             "entity_types": [
               {
                 "filters": {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "player"
+                  "AND": [
+                    {
+                      "test": "is_family",
+                      "subject": 1,
+                      "operator": 0,
+                      "value": "player"
+                    }
+                  ]
                 },
                 "max_dist": 24
               },
               {
                 "filters": {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "irongolem"
+                  "AND": [
+                    {
+                      "test": "is_family",
+                      "subject": 1,
+                      "operator": 0,
+                      "value": "irongolem"
+                    }
+                  ]
                 },
                 "max_dist": 24
               }
             ],
-            "must_see": true
+            "priority": 1
           }
         }
       ],
       "/vanilla/behavior_pack/entities/cave_spider.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/",
-          "content": {
-            "priority": 2,
-            "must_see": true,
-            "attack_interval": {
-              "min": 5,
-              "max": 5
-            },
-            "entity_types": [
-              {
-                "filters": {
-                  "any_of": [
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "player"
-                    },
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "snowgolem"
-                    },
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "irongolem"
-                    }
-                  ]
-                },
-                "max_dist": 16
-              }
-            ]
-          }
-        },
-        {
           "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.nearest_attackable_target/",
           "content": {
-            "priority": 2,
-            "must_see": true,
             "attack_interval": {
               "min": 10,
               "max": 10
             },
+            "must_see": true,
             "entity_types": [
               {
                 "filters": {
@@ -710,10 +687,44 @@
                       "value": "irongolem"
                     }
                   ]
-                },
-                "max_dist": 16
+                }
               }
-            ]
+            ],
+            "priority": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "attack_interval": {
+              "min": 5,
+              "max": 5
+            },
+            "must_see": true,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "snowgolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "irongolem"
+                    }
+                  ]
+                }
+              }
+            ],
+            "priority": 2
           }
         }
       ],
@@ -721,7 +732,6 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
           "content": {
-            "priority": 2,
             "reselect_targets": true,
             "must_see": true,
             "within_radius": 12,
@@ -825,7 +835,8 @@
                 },
                 "max_dist": 20
               }
-            ]
+            ],
+            "priority": 2
           }
         }
       ]

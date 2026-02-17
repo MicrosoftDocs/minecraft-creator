@@ -17,7 +17,7 @@ Sets that this entity is currently on fire.
 
 #### [Tnt Minecart](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/tnt_minecart.json)
 
-At /minecraft:entity/component_groups/minecraft:primed_tnt/minecraft:is_ignited/: 
+At /minecraft:entity/component_groups/minecraft:instant_explode_tnt/minecraft:is_ignited/: 
 
 ```json
 "minecraft:is_ignited": {}

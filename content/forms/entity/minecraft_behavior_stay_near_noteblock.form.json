@@ -91,10 +91,10 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.stay_near_noteblock/",
           "content": {
-            "priority": 5,
             "speed": 8,
             "start_distance": 16,
-            "stop_distance": 4
+            "stop_distance": 4,
+            "priority": 5
           }
         }
       ]

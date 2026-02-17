@@ -175,8 +175,8 @@
         {
           "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[0]/filters/",
           "content": {
-            "test": "is_game_rule",
             "domain": "domobspawning",
+            "test": "is_game_rule",
             "value": false
           }
         }
