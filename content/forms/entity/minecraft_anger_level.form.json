@@ -298,15 +298,15 @@
               "content": {
                 "all_of": [
                   {
+                    "operator": "not",
                     "test": "is_family",
                     "subject": "other",
-                    "operator": "not",
                     "value": "warden"
                   },
                   {
+                    "operator": "not",
                     "test": "is_family",
                     "subject": "other",
-                    "operator": "not",
                     "value": "inanimate"
                   }
                 ]
@@ -344,12 +344,12 @@
               "path": "/minecraft:entity/components/minecraft:anger_level/",
               "content": [
                 {
-                  "sound": "listening_angry",
-                  "condition": "query.anger_level(this) >= 40"
+                  "condition": "query.anger_level(this) >= 40",
+                  "sound": "listening_angry"
                 },
                 {
-                  "sound": "listening",
-                  "condition": "query.anger_level(this) >= 0"
+                  "condition": "query.anger_level(this) >= 0",
+                  "sound": "listening"
                 }
               ]
             }
@@ -390,39 +390,39 @@
         {
           "path": "/minecraft:entity/components/minecraft:anger_level/",
           "content": {
-            "max_anger": 150,
             "angry_threshold": 80,
-            "remove_targets_below_angry_threshold": true,
             "angry_boost": 20,
             "anger_decrement_interval": 1,
             "default_annoyingness": 35,
             "default_projectile_annoyingness": 10,
+            "max_anger": 150,
             "on_increase_sounds": [
               {
-                "sound": "listening_angry",
-                "condition": "query.anger_level(this) >= 40"
+                "condition": "query.anger_level(this) >= 40",
+                "sound": "listening_angry"
               },
               {
-                "sound": "listening",
-                "condition": "query.anger_level(this) >= 0"
+                "condition": "query.anger_level(this) >= 0",
+                "sound": "listening"
               }
             ],
             "nuisance_filter": {
               "all_of": [
                 {
+                  "operator": "not",
                   "test": "is_family",
                   "subject": "other",
-                  "operator": "not",
                   "value": "warden"
                 },
                 {
+                  "operator": "not",
                   "test": "is_family",
                   "subject": "other",
-                  "operator": "not",
                   "value": "inanimate"
                 }
               ]
-            }
+            },
+            "remove_targets_below_angry_threshold": true
           }
         }
       ]

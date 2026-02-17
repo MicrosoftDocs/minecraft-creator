@@ -44,6 +44,13 @@ Adds additional margins to sub pane. If undefined, it will default to true.
 
 Type: *boolean*
 
+### **icon**
+`icon?: string;`
+
+Pane icon shown in front of the pane header
+
+Type: *string*
+
 ### **layout**
 `layout?: PaneLayoutType;`
 

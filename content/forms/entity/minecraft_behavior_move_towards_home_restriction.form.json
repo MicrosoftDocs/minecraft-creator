@@ -30,21 +30,7 @@
         "title": "Speed Multiplier",
         "description": "This multiplier modifies the entity's speed when moving towards its restriction.",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/elder_guardian.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.move_towards_home_restriction/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/guardian.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.move_towards_home_restriction/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "priority",
@@ -73,8 +59,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.move_towards_home_restriction/",
           "content": {
-            "priority": 5,
-            "speed_multiplier": 1
+            "priority": 5
           }
         }
       ],
@@ -82,8 +67,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.move_towards_home_restriction/",
           "content": {
-            "priority": 5,
-            "speed_multiplier": 1
+            "priority": 5
           }
         }
       ]

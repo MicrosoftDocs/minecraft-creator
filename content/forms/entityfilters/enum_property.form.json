@@ -171,12 +171,12 @@
               "content": "cold"
             },
             {
-              "path": "/minecraft:entity/components/minecraft:projectile/on_hit/particle_on_hit/particle_item_name/brown_egg/",
-              "content": "warm"
-            },
-            {
               "path": "/minecraft:entity/components/minecraft:projectile/on_hit/particle_on_hit/particle_item_name/blue_egg/",
               "content": "cold"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:projectile/on_hit/particle_on_hit/particle_item_name/brown_egg/",
+              "content": "warm"
             }
           ]
         }
@@ -214,35 +214,35 @@
         {
           "path": "/minecraft:entity/components/minecraft:projectile/on_hit/spawn_chance/on_spawn[0]/filters/",
           "content": {
-            "test": "enum_property",
-            "subject": "other",
             "domain": "minecraft:climate_variant",
+            "subject": "other",
+            "test": "enum_property",
             "value": "warm"
           }
         },
         {
           "path": "/minecraft:entity/components/minecraft:projectile/on_hit/spawn_chance/on_spawn[1]/filters/",
           "content": {
-            "test": "enum_property",
-            "subject": "other",
             "domain": "minecraft:climate_variant",
+            "subject": "other",
+            "test": "enum_property",
+            "value": "cold"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:projectile/on_hit/particle_on_hit/particle_item_name/blue_egg/",
+          "content": {
+            "domain": "minecraft:climate_variant",
+            "test": "enum_property",
             "value": "cold"
           }
         },
         {
           "path": "/minecraft:entity/components/minecraft:projectile/on_hit/particle_on_hit/particle_item_name/brown_egg/",
           "content": {
-            "test": "enum_property",
             "domain": "minecraft:climate_variant",
+            "test": "enum_property",
             "value": "warm"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:projectile/on_hit/particle_on_hit/particle_item_name/blue_egg/",
-          "content": {
-            "test": "enum_property",
-            "domain": "minecraft:climate_variant",
-            "value": "cold"
           }
         }
       ]

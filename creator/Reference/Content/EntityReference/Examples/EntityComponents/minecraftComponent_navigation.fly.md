@@ -44,7 +44,7 @@ Allows this entity to generate paths in the air like the vanilla Parrots do.
 
 ```json
 "minecraft:navigation.fly": {
-  "can_path_over_water": true,
-  "can_path_from_air": true
+  "can_path_from_air": true,
+  "can_path_over_water": true
 }
 ```

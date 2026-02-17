@@ -17,7 +17,7 @@ Defines a set of conditions under which an entity should take damage.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| damage_conditions | *not set* | Array of [Damage Conditions](#damage-conditions) items | List of damage conditions that when met can cause damage to the entity. | Allay: `[{"filters":{"test":"in_lava","subject":"self"},"cause":"lava","damage_per_tick":4}]`, Armor Stand: `[{"filters":{"test":"in_lava","subject":"self","operator":"==","value":true},"cause":"lava","damage_per_tick":4}]` | 
+| damage_conditions | *not set* | Array of [Damage Conditions](#damage-conditions) items | List of damage conditions that when met can cause damage to the entity. | Allay: `[{"cause":"lava","damage_per_tick":4,"filters":{"subject":"self","test":"in_lava"}}]`, Armor Stand: `[{"cause":"lava","damage_per_tick":4,"filters":{"operator":"==","test":"in_lava","subject":"self","value":true}}]` | 
 
 ## Damage Conditions
 List of damage conditions that when met can cause damage to the entity.
@@ -40,12 +40,12 @@ List of damage conditions that when met can cause damage to the entity.
 "minecraft:hurt_on_condition": {
   "damage_conditions": [
     {
-      "filters": {
-        "test": "in_lava",
-        "subject": "self"
-      },
       "cause": "lava",
-      "damage_per_tick": 4
+      "damage_per_tick": 4,
+      "filters": {
+        "subject": "self",
+        "test": "in_lava"
+      }
     }
   ]
 }
@@ -58,14 +58,14 @@ List of damage conditions that when met can cause damage to the entity.
 "minecraft:hurt_on_condition": {
   "damage_conditions": [
     {
+      "cause": "lava",
+      "damage_per_tick": 4,
       "filters": {
+        "operator": "==",
         "test": "in_lava",
         "subject": "self",
-        "operator": "==",
         "value": true
-      },
-      "cause": "lava",
-      "damage_per_tick": 4
+      }
     }
   ]
 }
@@ -78,11 +78,11 @@ List of damage conditions that when met can cause damage to the entity.
 "minecraft:hurt_on_condition": {
   "damage_conditions": [
     {
+      "cause": "drowning",
+      "damage_per_tick": 1,
       "filters": {
         "test": "in_contact_with_water"
-      },
-      "cause": "drowning",
-      "damage_per_tick": 1
+      }
     }
   ]
 }

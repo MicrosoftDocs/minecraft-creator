@@ -1178,10 +1178,18 @@
       href: minecraft/server-admin/changelog.md
     - name: AdminBeforeEvents
       href: minecraft/server-admin/AdminBeforeEvents.md
+    - name: AllowList
+      href: minecraft/server-admin/AllowList.md
     - name: AsyncPlayerJoinBeforeEvent
       href: minecraft/server-admin/AsyncPlayerJoinBeforeEvent.md
     - name: AsyncPlayerJoinBeforeEventSignal
       href: minecraft/server-admin/AsyncPlayerJoinBeforeEventSignal.md
+    - name: DedicatedServerUtils
+      href: minecraft/server-admin/DedicatedServerUtils.md
+    - name: LevelStorage
+      href: minecraft/server-admin/LevelStorage.md
+    - name: LevelStorageQuerySnapshotFile
+      href: minecraft/server-admin/LevelStorageQuerySnapshotFile.md
     - name: SecretString
       href: minecraft/server-admin/SecretString.md
     - name: ServerSecrets
@@ -1328,6 +1336,8 @@
       href: minecraft/server-editor/StatusBarAlignment.md
     - name: StructureSource
       href: minecraft/server-editor/StructureSource.md
+    - name: TagContainerVariant
+      href: minecraft/server-editor/TagContainerVariant.md
     - name: ThemeSettingsColorKey
       href: minecraft/server-editor/ThemeSettingsColorKey.md
     - name: WidgetCollisionType
@@ -1760,6 +1770,10 @@
       href: minecraft/server-editor/ISubPanePropertyItem.md
     - name: ISubPanePropertyItemOptions
       href: minecraft/server-editor/ISubPanePropertyItemOptions.md
+    - name: ITagContainerPropertyItem
+      href: minecraft/server-editor/ITagContainerPropertyItem.md
+    - name: ITagContainerPropertyItemOptions
+      href: minecraft/server-editor/ITagContainerPropertyItemOptions.md
     - name: ITextPropertyItem
       href: minecraft/server-editor/ITextPropertyItem.md
     - name: ITextPropertyItemOptions

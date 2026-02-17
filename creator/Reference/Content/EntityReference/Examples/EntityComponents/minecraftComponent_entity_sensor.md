@@ -19,7 +19,7 @@ A component that owns multiple subsensors, each one firing an event when a set o
 |:----------|:-------------|:----|:-----------|:------------- |
 | find_players_only | false | Boolean true/false | Limits the search to Players only for all subsensors. |  | 
 | relative_range | true | Boolean true/false | If true the subsensors' range is additive on top of the entity's size. |  | 
-| subsensors | *not set* | Array of [Subsensors](#subsensors) items | The list of subsensors which sense for entities and emit events when all their conditions are met. | Parrot: `[{"range":[2,2],"event_filters":{"all_of":[{"test":"is_riding","subject":"self","operator":"equals","value":true},{"test":"has_component","subject":"self","operator":"equals","value":"minecraft:behavior.look_at_player"}]},"event":"minecraft:on_riding_player"}]`, `[{"range":[2,2],"event_filters":{"all_of":[{"test":"is_riding","subject":"self","operator":"equals","value":false},{"test":"has_component","subject":"self","operator":"not","value":"minecraft:behavior.look_at_player"}]},"event":"minecraft:on_not_riding_player"}]` | 
+| subsensors | *not set* | Array of [Subsensors](#subsensors) items | The list of subsensors which sense for entities and emit events when all their conditions are met. | Parrot: `[{"event":"minecraft:on_riding_player","event_filters":{"all_of":[{"test":"is_riding","operator":"equals","subject":"self","value":true},{"test":"has_component","operator":"equals","subject":"self","value":"minecraft:behavior.look_at_player"}]},"range":[2,2]}]`, `[{"event":"minecraft:on_not_riding_player","event_filters":{"all_of":[{"test":"is_riding","operator":"equals","subject":"self","value":false},{"test":"has_component","operator":"not","subject":"self","value":"minecraft:behavior.look_at_player"}]},"range":[2,2]}]` | 
 
 ## Subsensors
 The list of subsensors which sense for entities and emit events when all their conditions are met.
@@ -49,27 +49,27 @@ At /minecraft:entity/component_groups/minecraft:parrot_not_riding_player/minecra
   "relative_range": false,
   "subsensors": [
     {
-      "range": [
-        2,
-        2
-      ],
+      "event": "minecraft:on_riding_player",
       "event_filters": {
         "all_of": [
           {
             "test": "is_riding",
-            "subject": "self",
             "operator": "equals",
+            "subject": "self",
             "value": true
           },
           {
             "test": "has_component",
-            "subject": "self",
             "operator": "equals",
+            "subject": "self",
             "value": "minecraft:behavior.look_at_player"
           }
         ]
       },
-      "event": "minecraft:on_riding_player"
+      "range": [
+        2,
+        2
+      ]
     }
   ]
 }
@@ -82,27 +82,27 @@ At /minecraft:entity/component_groups/minecraft:parrot_riding_player/minecraft:e
   "relative_range": false,
   "subsensors": [
     {
-      "range": [
-        2,
-        2
-      ],
+      "event": "minecraft:on_not_riding_player",
       "event_filters": {
         "all_of": [
           {
             "test": "is_riding",
-            "subject": "self",
             "operator": "equals",
+            "subject": "self",
             "value": false
           },
           {
             "test": "has_component",
-            "subject": "self",
             "operator": "not",
+            "subject": "self",
             "value": "minecraft:behavior.look_at_player"
           }
         ]
       },
-      "event": "minecraft:on_not_riding_player"
+      "range": [
+        2,
+        2
+      ]
     }
   ]
 }

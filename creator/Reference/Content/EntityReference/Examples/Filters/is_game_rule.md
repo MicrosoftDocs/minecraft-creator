@@ -69,8 +69,8 @@ At Short (using Defaults)..:
 
 ```json
 {
-  "test": "is_game_rule",
   "domain": "domobspawning",
+  "test": "is_game_rule",
   "value": false
 }
 ```

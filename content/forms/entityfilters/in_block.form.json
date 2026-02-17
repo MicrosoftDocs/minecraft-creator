@@ -137,11 +137,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/skeleton.json": [
             {
-              "path": "/minecraft:entity/component_groups/in_powder_snow/minecraft:environment_sensor/triggers[0]/filters/",
+              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[2]/filters/",
               "content": "self"
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[2]/filters/",
+              "path": "/minecraft:entity/component_groups/in_powder_snow/minecraft:environment_sensor/triggers[0]/filters/",
               "content": "self"
             }
           ]
@@ -155,11 +155,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/skeleton.json": [
             {
-              "path": "/minecraft:entity/component_groups/in_powder_snow/minecraft:environment_sensor/triggers[0]/filters/",
+              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[2]/filters/",
               "content": "minecraft:powder_snow"
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[2]/filters/",
+              "path": "/minecraft:entity/component_groups/in_powder_snow/minecraft:environment_sensor/triggers[0]/filters/",
               "content": "minecraft:powder_snow"
             }
           ]
@@ -172,11 +172,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/skeleton.json": [
             {
-              "path": "/minecraft:entity/component_groups/in_powder_snow/minecraft:environment_sensor/triggers[0]/filters/",
+              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[2]/filters/",
               "content": "in_block"
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[2]/filters/",
+              "path": "/minecraft:entity/component_groups/in_powder_snow/minecraft:environment_sensor/triggers[0]/filters/",
               "content": "in_block"
             }
           ]
@@ -196,17 +196,17 @@
       ],
       "/vanilla/behavior_pack/entities/skeleton.json": [
         {
-          "path": "/minecraft:entity/component_groups/in_powder_snow/minecraft:environment_sensor/triggers[0]/filters/",
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[2]/filters/",
           "content": {
-            "test": "in_block",
             "subject": "self",
-            "operator": "not",
+            "test": "in_block",
             "value": "minecraft:powder_snow"
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[2]/filters/",
+          "path": "/minecraft:entity/component_groups/in_powder_snow/minecraft:environment_sensor/triggers[0]/filters/",
           "content": {
+            "operator": "not",
             "test": "in_block",
             "subject": "self",
             "value": "minecraft:powder_snow"
@@ -220,10 +220,10 @@
           }
         },
         {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[2]/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[2]/filters/",
           "content": {
-            "test": "in_block",
             "subject": "self",
+            "test": "in_block",
             "value": "minecraft:powder_snow"
           }
         }

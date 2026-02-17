@@ -29,12 +29,6 @@
               "path": "/minecraft:entity/components/minecraft:water_movement/",
               "content": 0.98
             }
-          ],
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:water_movement/",
-              "content": 0.9
-            }
           ]
         }
       }
@@ -45,14 +39,6 @@
           "path": "/minecraft:entity/components/minecraft:water_movement/",
           "content": {
             "drag_factor": 0.98
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/turtle.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:water_movement/",
-          "content": {
-            "drag_factor": 0.9
           }
         }
       ]

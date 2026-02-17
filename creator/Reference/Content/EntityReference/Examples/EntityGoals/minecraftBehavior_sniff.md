@@ -17,7 +17,7 @@ Allows this entity to detect the nearest player within "sniffing_radius" and upd
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| cooldown_range | *not set* | Range of integers | Cooldown range between sniffs in seconds | Warden: `[5,10]` | 
+| cooldown_range | *not set* | Range of integers | Cooldown range between sniffs in seconds | Warden: `{"min":5,"max":10}` | 
 | duration | 1 | Decimal number | Sniffing duration in seconds | Warden: `4.16` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Warden: `6` | 
 | sniffing_radius | 5 | Decimal number | Mob detection radius | Warden: `24` | 
@@ -31,14 +31,14 @@ Allows this entity to detect the nearest player within "sniffing_radius" and upd
 
 ```json
 "minecraft:behavior.sniff": {
-  "priority": 6,
   "duration": 4.16,
   "sniffing_radius": 24,
   "suspicion_radius_horizontal": 6,
   "suspicion_radius_vertical": 20,
-  "cooldown_range": [
-    5,
-    10
-  ]
+  "cooldown_range": {
+    "min": 5,
+    "max": 10
+  },
+  "priority": 6
 }
 ```

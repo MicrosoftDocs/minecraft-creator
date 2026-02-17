@@ -38,10 +38,3 @@ Specifies that this entity takes fire damage when exposed to direct sunlight. Th
 ```json
 "minecraft:burns_in_daylight": {}
 ```
-
-#### [Magma Cube](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/magma_cube.json)
-
-
-```json
-"minecraft:burns_in_daylight": false
-```

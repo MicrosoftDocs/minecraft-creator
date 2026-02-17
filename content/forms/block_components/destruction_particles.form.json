@@ -22,7 +22,7 @@
       {
         "id": "particle_count",
         "title": "Particle Count",
-        "description": "Sets number of particles to spawn on block destruction. Default is 100.",
+        "description": "Sets number of particles to spawn on block destruction.",
         "dataType": 0,
         "defaultValue": 100,
         "validity": [

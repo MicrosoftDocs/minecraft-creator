@@ -68,20 +68,20 @@ At Short (using Defaults)..:
 
 #### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
 
-At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/: 
+At /minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/: 
 
 ```json
 {
+  "operator": "==",
   "test": "is_underwater",
   "subject": "self",
-  "operator": "==",
   "value": true
 }
 ```
 
 #### [Parched](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parched.json)
 
-At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[0]/filters/: 
+At /minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/: 
 
 ```json
 {

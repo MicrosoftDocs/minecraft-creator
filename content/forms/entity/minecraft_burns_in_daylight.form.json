@@ -40,7 +40,7 @@
       "/vanilla/behavior_pack/entities/magma_cube.json": [
         {
           "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-          "content": false
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/phantom.json": [
@@ -110,7 +110,7 @@
       "/vanilla/behavior_pack/entities/magma_cube.json": [
         {
           "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-          "content": false
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/phantom.json": [

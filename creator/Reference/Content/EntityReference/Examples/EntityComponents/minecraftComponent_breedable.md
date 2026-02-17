@@ -109,12 +109,12 @@ Allows an entity to establish a way to get into the love state used for breeding
 ```json
 "minecraft:breedable": {
   "require_tame": false,
-  "breeds_with": {
-    "minecraft:cow": {}
-  },
   "breed_items": [
     "wheat"
-  ]
+  ],
+  "breeds_with": {
+    "minecraft:cow": {}
+  }
 }
 ```
 
@@ -139,17 +139,17 @@ Allows an entity to establish a way to get into the love state used for breeding
 
 ```json
 "minecraft:breedable": {
-  "require_tame": false,
-  "causes_pregnancy": true,
+  "breed_items": [
+    "slime_ball"
+  ],
   "breeds_with": {
     "minecraft:frog": {
       "event": "become_pregnant",
       "target": "self"
     }
   },
-  "breed_items": [
-    "slime_ball"
-  ]
+  "causes_pregnancy": true,
+  "require_tame": false
 }
 ```
 

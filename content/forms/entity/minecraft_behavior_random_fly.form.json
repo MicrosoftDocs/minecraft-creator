@@ -94,11 +94,6 @@
         }
       },
       {
-        "id": "y_offset",
-        "title": "y Offset",
-        "dataType": 7
-      },
-      {
         "id": "avoid_damage_blocks",
         "title": "Avoid Damage Blocks",
         "dataType": 2,
@@ -110,6 +105,11 @@
             }
           ]
         }
+      },
+      {
+        "id": "y_offset",
+        "title": "y Offset",
+        "dataType": 7
       }
     ],
     "samples": {
@@ -118,12 +118,12 @@
           "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:behavior.random_fly/",
           "content": {
             "priority": 3,
-            "xz_dist": 15,
-            "y_dist": 1,
+            "avoid_damage_blocks": true,
+            "can_land_on_trees": true,
             "y_offset": 0,
             "speed_multiplier": 1,
-            "can_land_on_trees": true,
-            "avoid_damage_blocks": true
+            "xz_dist": 15,
+            "y_dist": 1
           }
         }
       ]

@@ -27,8 +27,8 @@ Sets the width and height of the Entity's collision box.
 
 ```json
 "minecraft:collision_box": {
-  "width": 0.35,
-  "height": 0.6
+  "height": 0.6,
+  "width": 0.35
 }
 ```
 
@@ -37,8 +37,8 @@ Sets the width and height of the Entity's collision box.
 
 ```json
 "minecraft:collision_box": {
-  "width": 0.5,
-  "height": 1.975
+  "height": 1.975,
+  "width": 0.5
 }
 ```
 
@@ -47,8 +47,8 @@ Sets the width and height of the Entity's collision box.
 
 ```json
 "minecraft:collision_box": {
-  "width": 0.25,
-  "height": 0.25
+  "height": 0.25,
+  "width": 0.25
 }
 ```
 
@@ -57,8 +57,8 @@ Sets the width and height of the Entity's collision box.
 
 ```json
 "minecraft:collision_box": {
-  "width": 0.5,
-  "height": 0.9
+  "height": 0.9,
+  "width": 0.5
 }
 ```
 
@@ -67,7 +67,7 @@ Sets the width and height of the Entity's collision box.
 
 ```json
 "minecraft:collision_box": {
-  "width": 0.5,
-  "height": 1.8
+  "height": 1.8,
+  "width": 0.5
 }
 ```

@@ -211,8 +211,8 @@
         {
           "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions[0]/filters/",
           "content": {
-            "test": "in_lava",
-            "subject": "self"
+            "subject": "self",
+            "test": "in_lava"
           }
         }
       ],
@@ -220,9 +220,9 @@
         {
           "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions[0]/filters/",
           "content": {
+            "operator": "==",
             "test": "in_lava",
             "subject": "self",
-            "operator": "==",
             "value": true
           }
         }
@@ -231,9 +231,9 @@
         {
           "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions[0]/filters/",
           "content": {
+            "operator": "==",
             "test": "in_lava",
             "subject": "self",
-            "operator": "==",
             "value": true
           }
         }
@@ -242,9 +242,9 @@
         {
           "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions[0]/filters/",
           "content": {
+            "operator": "==",
             "test": "in_lava",
             "subject": "self",
-            "operator": "==",
             "value": true
           }
         }
@@ -253,8 +253,8 @@
         {
           "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions[0]/filters/",
           "content": {
-            "test": "in_lava",
-            "subject": "self"
+            "subject": "self",
+            "test": "in_lava"
           }
         }
       ]

@@ -172,8 +172,8 @@
         {
           "path": "/minecraft:entity/components/minecraft:navigation.fly/",
           "content": {
-            "can_path_over_water": true,
-            "can_path_from_air": true
+            "can_path_from_air": true,
+            "can_path_over_water": true
           }
         }
       ]

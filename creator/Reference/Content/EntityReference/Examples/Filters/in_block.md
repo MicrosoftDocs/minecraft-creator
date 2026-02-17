@@ -68,21 +68,21 @@ At Short (using Defaults)..:
 
 #### [Skeleton](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton.json)
 
-At /minecraft:entity/component_groups/in_powder_snow/minecraft:environment_sensor/triggers[0]/filters/: 
+At /minecraft:entity/components/minecraft:environment_sensor/triggers[2]/filters/: 
 
 ```json
 {
-  "test": "in_block",
   "subject": "self",
-  "operator": "not",
+  "test": "in_block",
   "value": "minecraft:powder_snow"
 }
 ```
 
-At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[2]/filters/: 
+At /minecraft:entity/component_groups/in_powder_snow/minecraft:environment_sensor/triggers[0]/filters/: 
 
 ```json
 {
+  "operator": "not",
   "test": "in_block",
   "subject": "self",
   "value": "minecraft:powder_snow"

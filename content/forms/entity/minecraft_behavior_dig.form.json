@@ -72,8 +72,7 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.dig/",
               "content": {
-                "event": "on_digging_event",
-                "target": "self"
+                "event": "on_digging_event"
               }
             }
           ]
@@ -130,16 +129,14 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.dig/",
           "content": {
-            "priority": 1,
             "duration": 5.5,
             "idle_time": 60,
             "vibration_is_disturbance": true,
             "suspicion_is_disturbance": true,
-            "digs_in_daylight": false,
             "on_start": {
-              "event": "on_digging_event",
-              "target": "self"
-            }
+              "event": "on_digging_event"
+            },
+            "priority": 1
           }
         }
       ]

@@ -30,9 +30,9 @@ The entity will attempt to toss the items from its inventory to a nearby recentl
 
 ```json
 "minecraft:behavior.stay_near_noteblock": {
-  "priority": 5,
   "speed": 8,
   "start_distance": 16,
-  "stop_distance": 4
+  "stop_distance": 4,
+  "priority": 5
 }
 ```

@@ -438,8 +438,8 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:drowned_rider/minecraft:spawn_entity/",
               "content": {
-                "min_wait_time": 0,
                 "max_wait_time": 0,
+                "min_wait_time": 0,
                 "num_to_spawn": 1,
                 "single_use": true,
                 "spawn_entity": "minecraft:zombie_nautilus",
@@ -541,8 +541,8 @@
           "path": "/minecraft:entity/component_groups/minecraft:drowned_rider/minecraft:spawn_entity/",
           "content": {
             "entities": {
-              "min_wait_time": 0,
               "max_wait_time": 0,
+              "min_wait_time": 0,
               "num_to_spawn": 1,
               "single_use": true,
               "spawn_entity": "minecraft:zombie_nautilus",

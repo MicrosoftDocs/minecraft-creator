@@ -69,8 +69,8 @@
             {
               "path": "/minecraft:entity/components/minecraft:healable/",
               "content": {
-                "test": "is_riding",
                 "operator": "!=",
+                "test": "is_riding",
                 "value": true
               }
             }
@@ -123,14 +123,14 @@
                 "title": "Effects",
                 "fields": [
                   {
-                    "id": "name",
-                    "title": "Name",
-                    "dataType": 2,
+                    "id": "amplifier",
+                    "title": "Amplifier",
+                    "dataType": 7,
                     "samples": {
                       "/vanilla/behavior_pack/entities/parrot.json": [
                         {
-                          "path": "name",
-                          "content": "fatal_poison"
+                          "path": "amplifier",
+                          "content": 0
                         }
                       ]
                     }
@@ -162,14 +162,14 @@
                     }
                   },
                   {
-                    "id": "amplifier",
-                    "title": "Amplifier",
-                    "dataType": 7,
+                    "id": "name",
+                    "title": "Name",
+                    "dataType": 2,
                     "samples": {
                       "/vanilla/behavior_pack/entities/parrot.json": [
                         {
-                          "path": "amplifier",
-                          "content": 0
+                          "path": "name",
+                          "content": "fatal_poison"
                         }
                       ]
                     }
@@ -200,16 +200,16 @@
               "path": "/minecraft:entity/components/minecraft:healable/",
               "content": [
                 {
-                  "item": "cookie",
-                  "heal_amount": 0,
                   "effects": [
                     {
-                      "name": "fatal_poison",
+                      "amplifier": 0,
                       "chance": 1,
                       "duration": 1000,
-                      "amplifier": 0
+                      "name": "fatal_poison"
                     }
-                  ]
+                  ],
+                  "heal_amount": 0,
+                  "item": "cookie"
                 }
               ]
             }
@@ -239,24 +239,24 @@
         {
           "path": "/minecraft:entity/components/minecraft:healable/",
           "content": {
-            "force_use": true,
             "filters": {
-              "test": "is_riding",
               "operator": "!=",
+              "test": "is_riding",
               "value": true
             },
+            "force_use": true,
             "items": [
               {
-                "item": "cookie",
-                "heal_amount": 0,
                 "effects": [
                   {
-                    "name": "fatal_poison",
+                    "amplifier": 0,
                     "chance": 1,
                     "duration": 1000,
-                    "amplifier": 0
+                    "name": "fatal_poison"
                   }
-                ]
+                ],
+                "heal_amount": 0,
+                "item": "cookie"
               }
             ]
           }

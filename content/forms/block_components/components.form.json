@@ -575,6 +575,13 @@
         "subFormId": "block_components/placement_filter"
       },
       {
+        "id": "minecraft:precipitation_interactions",
+        "title": "Minecraft Precipitation Interactions",
+        "description": "Determines interactions the block will have with different precipitations. Three possible values: obrain, obstruct_rain_accumulate_snow and none",
+        "dataType": 16,
+        "subFormId": "block_components/precipitation_interactions"
+      },
+      {
         "id": "minecraft:queued_ticking",
         "title": "Minecraft Queued Ticking",
         "dataType": 16,

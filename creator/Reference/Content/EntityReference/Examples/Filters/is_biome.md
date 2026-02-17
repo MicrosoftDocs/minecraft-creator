@@ -20,7 +20,7 @@ Tests whether the Subject is currently in the named biome.
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
 | test | *not set* | String |  | Fishing Hook: `"is_biome"` | 
-| value | *not set* | [Value](#value-choices) choices | (Required) The Biome type to test | Fishing Hook: `"jungle"`, Rabbit: `"desert"` | 
+| value | *not set* | [Value](#value-choices) choices | (Required) The Biome type to test | Fishing Hook: `"jungle"` | 
 
 ### Operator choices
 
@@ -93,16 +93,5 @@ At Short (using Defaults)..:
 {
   "test": "is_biome",
   "value": "jungle"
-}
-```
-
-#### [Rabbit](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/rabbit.json)
-
-At /minecraft:entity/events/minecraft:entity_spawned/sequence[2]/filters/: 
-
-```json
-{
-  "test": "is_biome",
-  "value": "desert"
 }
 ```

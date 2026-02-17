@@ -37,8 +37,8 @@ Defines what blocks this entity can breathe in and gives them the ability to suf
 
 ```json
 "minecraft:breathable": {
-  "totalSupply": 15,
-  "suffocateTime": 0
+  "suffocateTime": 0,
+  "totalSupply": 15
 }
 ```
 
@@ -47,8 +47,8 @@ Defines what blocks this entity can breathe in and gives them the ability to suf
 
 ```json
 "minecraft:breathable": {
-  "total_supply": 15,
-  "suffocate_time": 0
+  "suffocate_time": 0,
+  "total_supply": 15
 }
 ```
 
@@ -57,8 +57,8 @@ Defines what blocks this entity can breathe in and gives them the ability to suf
 
 ```json
 "minecraft:breathable": {
-  "total_supply": 15,
+  "breathes_water": true,
   "suffocate_time": 0,
-  "breathes_water": true
+  "total_supply": 15
 }
 ```

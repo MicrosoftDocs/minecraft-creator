@@ -30,12 +30,6 @@
               "path": "/minecraft:entity/components/minecraft:navigation.generic/",
               "content": true
             }
-          ],
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.generic/",
-              "content": true
-            }
           ]
         }
       },
@@ -191,12 +185,6 @@
               "path": "/minecraft:entity/components/minecraft:navigation.generic/",
               "content": true
             }
-          ],
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:navigation.generic/",
-              "content": true
-            }
           ]
         }
       },
@@ -227,6 +215,25 @@
             }
           ]
         }
+      },
+      {
+        "id": "using_door_annotation",
+        "title": "Using Door Annotation",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+              "content": true
+            }
+          ]
+        }
       }
     ],
     "samples": {
@@ -234,11 +241,12 @@
         {
           "path": "/minecraft:entity/components/minecraft:navigation.generic/",
           "content": {
-            "is_amphibious": true,
+            "can_breach": true,
+            "can_walk": false,
             "can_path_over_water": false,
             "can_swim": true,
-            "can_walk": false,
-            "can_breach": true
+            "is_amphibious": true,
+            "using_door_annotation": true
           }
         }
       ],
@@ -246,12 +254,12 @@
         {
           "path": "/minecraft:entity/components/minecraft:navigation.generic/",
           "content": {
-            "is_amphibious": true,
+            "avoid_damage_blocks": true,
             "can_path_over_water": true,
+            "can_sink": false,
             "can_swim": true,
             "can_walk": true,
-            "can_sink": false,
-            "avoid_damage_blocks": true
+            "is_amphibious": true
           }
         }
       ],
@@ -259,24 +267,12 @@
         {
           "path": "/minecraft:entity/components/minecraft:navigation.generic/",
           "content": {
-            "is_amphibious": true,
-            "can_path_over_water": false,
-            "can_swim": true,
+            "can_breach": true,
             "can_walk": false,
-            "can_breach": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/turtle.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
-          "content": {
-            "is_amphibious": true,
             "can_path_over_water": false,
             "can_swim": true,
-            "can_walk": true,
-            "can_sink": false,
-            "avoid_damage_blocks": true
+            "is_amphibious": true,
+            "using_door_annotation": true
           }
         }
       ]

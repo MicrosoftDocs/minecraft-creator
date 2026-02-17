@@ -229,8 +229,8 @@
           "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence[0]/filters/",
           "content": {
             "test": "is_variant",
-            "subject": "self",
             "operator": "!=",
+            "subject": "self",
             "value": 7
           }
         },
@@ -238,8 +238,8 @@
           "path": "/minecraft:entity/events/minecraft:add_can_ride/sequence[1]/filters/",
           "content": {
             "test": "is_variant",
-            "subject": "self",
             "operator": "==",
+            "subject": "self",
             "value": 7
           }
         }

@@ -26,13 +26,6 @@
         "dataType": 3
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/rabbit.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:movement.skip/",
-          "content": {}
-        }
-      ]
-    }
+    "samples": {}
   }
 }

@@ -33,7 +33,7 @@ Allows this entity to move towards a "suspicious" position based on data gathere
 
 ```json
 "minecraft:behavior.investigate_suspicious_location": {
-  "priority": 5,
-  "speed_multiplier": 0.7
+  "speed_multiplier": 0.7,
+  "priority": 5
 }
 ```

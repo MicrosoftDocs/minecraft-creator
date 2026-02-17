@@ -30,7 +30,7 @@
         "title": "Damage Sources",
         "description": "The list of Entity Damage Sources that will cause this mob to play dead.",
         "defaultValue": "all",
-        "dataType": 17
+        "dataType": 2
       },
       {
         "id": "duration",

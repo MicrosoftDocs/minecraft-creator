@@ -73,12 +73,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
               "content": 20
             }
-          ],
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
-              "content": 30
-            }
           ]
         }
       },
@@ -87,15 +81,7 @@
         "title": "y Dist",
         "description": "Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1",
         "defaultValue": 7,
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
-              "content": 15
-            }
-          ]
-        }
+        "dataType": 0
       },
       {
         "id": "priority",
@@ -140,9 +126,9 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
           "content": {
-            "priority": 7,
+            "avoid_surface": false,
             "speed_multiplier": 0.5,
-            "avoid_surface": false
+            "priority": 7
           }
         }
       ],
@@ -150,21 +136,10 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
           "content": {
-            "priority": 7,
+            "avoid_surface": false,
             "speed_multiplier": 1,
             "interval": 80,
-            "avoid_surface": false
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/turtle.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
-          "content": {
-            "priority": 7,
-            "interval": 0,
-            "xz_dist": 30,
-            "y_dist": 15
+            "priority": 7
           }
         }
       ]

@@ -82,10 +82,12 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | note | Note | |
 | obsidiantear | Obsidiantear | |
 | paleoakleaves | Paleoakleaves | |
+| pausemobgrowth | Pausemobgrowth | |
 | portal | Portal | |
 | portalreverse | Portalreverse | |
 | rainsplash | Rainsplash | |
 | reddust | Reddust | |
+| resetmobgrowth | Resetmobgrowth | |
 | risingborderdust | Risingborderdust | |
 | sculksoul | Sculksoul | |
 | shriek | Shriek | |
@@ -534,6 +536,7 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | pant | Pant | |
 | particle.soul_escape.loud | Particle.soul escape.loud | |
 | particle.soul_escape.quiet | Particle.soul escape.quiet | |
+| pause_growth | Pause growth | |
 | pick_berries.cave_vines | Pick berries.cave vines | |
 | pickup | Pickup | |
 | pickup_enchanted | Pickup enchanted | |
@@ -590,6 +593,7 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | record.ward | Record.ward | |
 | reflect | Reflect | |
 | remedy | Remedy | |
+| reset_growth | Reset growth | |
 | respawn_anchor.ambient | Respawn anchor.ambient | |
 | respawn_anchor.charge | Respawn anchor.charge | |
 | respawn_anchor.deplete | Respawn anchor.deplete | |

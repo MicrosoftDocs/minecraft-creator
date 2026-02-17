@@ -67,10 +67,10 @@
                     "value": true
                   },
                   {
+                    "operator": "<=",
                     "test": "target_distance",
                     "subject": "self",
-                    "value": 24,
-                    "operator": "<="
+                    "value": 24
                   }
                 ]
               }
@@ -135,13 +135,12 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.move_around_target/",
           "content": {
-            "priority": 3,
+            "destination_pos_spread_degrees": 360,
             "destination_position_range": [
               4,
               8
             ],
-            "movement_speed": 1.2,
-            "destination_pos_spread_degrees": 360,
+            "priority": 3,
             "filters": {
               "all_of": [
                 {
@@ -149,13 +148,14 @@
                   "value": true
                 },
                 {
+                  "operator": "<=",
                   "test": "target_distance",
                   "subject": "self",
-                  "value": 24,
-                  "operator": "<="
+                  "value": 24
                 }
               ]
-            }
+            },
+            "movement_speed": 1.2
           }
         }
       ]

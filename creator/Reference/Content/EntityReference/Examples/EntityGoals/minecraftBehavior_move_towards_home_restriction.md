@@ -24,7 +24,7 @@ Allows entities with a `minecraft:home` component to move towards their home pos
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Elder Guardian: `5` | 
-| speed_multiplier | 1 | Decimal number | This multiplier modifies the entity's speed when moving towards its restriction. | Elder Guardian: `1` | 
+| speed_multiplier | 1 | Decimal number | This multiplier modifies the entity's speed when moving towards its restriction. |  | 
 
 ## Samples
 
@@ -33,7 +33,6 @@ Allows entities with a `minecraft:home` component to move towards their home pos
 
 ```json
 "minecraft:behavior.move_towards_home_restriction": {
-  "priority": 5,
-  "speed_multiplier": 1
+  "priority": 5
 }
 ```

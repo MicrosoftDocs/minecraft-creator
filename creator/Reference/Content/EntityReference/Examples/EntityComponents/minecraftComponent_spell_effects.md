@@ -17,7 +17,7 @@ Allows an entity to add or remove status effects from itself. Similarly to `addr
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| add_effects | *not set* | Array of [Add Effects](#add-effects) items | List of effects to add to this entity after adding this component | Player: `[{"effect":"raid_omen","duration":30,"display_on_screen_animation":true}]` | 
+| add_effects | *not set* | Array of [Add Effects](#add-effects) items | List of effects to add to this entity after adding this component | Player: `[{"display_on_screen_animation":true,"duration":30,"effect":"raid_omen"}]` | 
 | remove_effects | *not set* | String | List of identifiers of effects to be removed from this entity after adding this component | Player: `"bad_omen"` | 
 
 ## Add Effects
@@ -42,9 +42,9 @@ At /minecraft:entity/component_groups/minecraft:add_raid_omen/minecraft:spell_ef
 "minecraft:spell_effects": {
   "add_effects": [
     {
-      "effect": "raid_omen",
+      "display_on_screen_animation": true,
       "duration": 30,
-      "display_on_screen_animation": true
+      "effect": "raid_omen"
     }
   ],
   "remove_effects": "bad_omen"

@@ -20,9 +20,9 @@ Allows the entity to stay in a village and defend the village from aggressors. I
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| attack_chance | 0.05 | Decimal number | The percentage chance that the entity has to attack aggressors of its village, where 1.0 = 100%. | Iron Golem: `0.05` | 
+| attack_chance | 0.05 | Decimal number | The percentage chance that the entity has to attack aggressors of its village, where 1.0 = 100%. |  | 
 | attack_owner | false | Boolean true/false | If true, this entity can attack its owner. |  | 
-| entity_types | *not set* | Minecraft filter | Filters which types of targets are valid for this entity. | Iron Golem: `{"filters":{"any_of":[{"test":"is_family","subject":"other","value":"mob"},{"test":"is_family","subject":"other","value":"player"}]}}` | 
+| entity_types | *not set* | Minecraft filter | Filters which types of targets are valid for this entity. | Iron Golem: `[{"filters":{"AND":[{"OR":[{"test":"is_family","subject":1,"operator":0,"value":"mob"},{"test":"is_family","subject":1,"operator":0,"value":"player"}]}]}}]` | 
 | must_reach | false | Boolean true/false | If true, this entity requires a path to the target. | Iron Golem: `true` | 
 | must_see | false | Boolean true/false | Determines if target-validity requires this entity to be in range only, or both in range and in sight. |  | 
 | must_see_forget_duration | 3 | Decimal number | Time (in seconds) the target must not be seen by this entity to become invalid. Used only if "must_see" is true. |  | 
@@ -37,24 +37,31 @@ Allows the entity to stay in a village and defend the village from aggressors. I
 
 ```json
 "minecraft:behavior.defend_village_target": {
-  "priority": 1,
   "must_reach": true,
-  "attack_chance": 0.05,
-  "entity_types": {
-    "filters": {
-      "any_of": [
-        {
-          "test": "is_family",
-          "subject": "other",
-          "value": "mob"
-        },
-        {
-          "test": "is_family",
-          "subject": "other",
-          "value": "player"
-        }
-      ]
+  "entity_types": [
+    {
+      "filters": {
+        "AND": [
+          {
+            "OR": [
+              {
+                "test": "is_family",
+                "subject": 1,
+                "operator": 0,
+                "value": "mob"
+              },
+              {
+                "test": "is_family",
+                "subject": 1,
+                "operator": 0,
+                "value": "player"
+              }
+            ]
+          }
+        ]
+      }
     }
-  }
+  ],
+  "priority": 1
 }
 ```

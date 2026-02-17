@@ -61,8 +61,8 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.roar/",
           "content": {
-            "priority": 2,
-            "duration": 4.2
+            "duration": 4.2,
+            "priority": 2
           }
         }
       ]

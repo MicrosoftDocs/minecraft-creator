@@ -18,9 +18,9 @@ Returns true when the subject entity is a member of the named family.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Bogged: `"!="` | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Arrow: `"other"`, Breeze: `"damager"` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Arrow: `"other"`, Breeze: `1`, `"damager"` | 
 | test | *not set* | String |  | Arrow: `"is_family"` | 
-| value | *not set* | String | (Required) The Family name to look for | Arrow: `"player"`, `"pillager"`, Bogged: `"breeze"`, `"irongolem"`, `"baby_turtle"`, `"wolf"` | 
+| value | *not set* | String | (Required) The Family name to look for | Arrow: `"player"`, `"pillager"`, Bogged: `"wolf"`, `"breeze"`, `"irongolem"`, `"baby_turtle"` | 
 
 ### Operator choices
 
@@ -69,8 +69,8 @@ At /minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/:
 
 ```json
 {
-  "test": "is_family",
   "subject": "other",
+  "test": "is_family",
   "value": "player"
 }
 ```
@@ -79,22 +79,42 @@ At /minecraft:entity/events/minecraft:entity_spawned/sequence[2]/filters/:
 
 ```json
 {
-  "test": "is_family",
   "subject": "other",
+  "test": "is_family",
   "value": "pillager"
 }
 ```
 
 #### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
 
-At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/: 
+At /minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types[0]/filters/: 
 
 ```json
 {
   "test": "is_family",
   "subject": "other",
+  "value": "wolf"
+}
+```
+
+At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/: 
+
+```json
+{
   "operator": "!=",
+  "test": "is_family",
+  "subject": "other",
   "value": "breeze"
+}
+```
+
+At /minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types[0]/filters/: 
+
+```json
+{
+  "test": "is_family",
+  "subject": "other",
+  "value": "player"
 }
 ```
 
@@ -118,36 +138,15 @@ At /minecraft:entity/components/minecraft:behavior.nearest_attackable_target/ent
 }
 ```
 
-At /minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types[0]/filters/: 
-
-```json
-{
-  "test": "is_family",
-  "subject": "other",
-  "value": "wolf"
-}
-```
-
 #### [Breeze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze.json)
-
-At /minecraft:entity/components/minecraft:damage_sensor/triggers[1]/on_damage/filters/: 
-
-```json
-{
-  "test": "is_family",
-  "subject": "damager",
-  "operator": "!=",
-  "value": "wind_charge"
-}
-```
 
 At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0]/filters/all_of[0]/: 
 
 ```json
 {
+  "operator": "!=",
   "test": "is_family",
   "subject": "other",
-  "operator": "!=",
   "value": "skeleton"
 }
 ```
@@ -156,9 +155,9 @@ At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0
 
 ```json
 {
+  "operator": "!=",
   "test": "is_family",
   "subject": "other",
-  "operator": "!=",
   "value": "stray"
 }
 ```
@@ -167,9 +166,9 @@ At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0
 
 ```json
 {
+  "operator": "!=",
   "test": "is_family",
   "subject": "other",
-  "operator": "!=",
   "value": "zombie"
 }
 ```
@@ -178,9 +177,9 @@ At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0
 
 ```json
 {
+  "operator": "!=",
   "test": "is_family",
   "subject": "other",
-  "operator": "!=",
   "value": "husk"
 }
 ```
@@ -189,9 +188,9 @@ At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0
 
 ```json
 {
+  "operator": "!=",
   "test": "is_family",
   "subject": "other",
-  "operator": "!=",
   "value": "spider"
 }
 ```
@@ -200,9 +199,9 @@ At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0
 
 ```json
 {
+  "operator": "!=",
   "test": "is_family",
   "subject": "other",
-  "operator": "!=",
   "value": "cavespider"
 }
 ```
@@ -211,9 +210,42 @@ At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types[0
 
 ```json
 {
+  "operator": "!=",
   "test": "is_family",
   "subject": "other",
-  "operator": "!=",
   "value": "slime"
+}
+```
+
+At /minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types[0]/filters/AND[0]/: 
+
+```json
+{
+  "test": "is_family",
+  "subject": 1,
+  "operator": 0,
+  "value": "player"
+}
+```
+
+At /minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types[1]/filters/AND[0]/: 
+
+```json
+{
+  "test": "is_family",
+  "subject": 1,
+  "operator": 0,
+  "value": "irongolem"
+}
+```
+
+At /minecraft:entity/components/minecraft:damage_sensor/triggers[1]/on_damage/filters/: 
+
+```json
+{
+  "operator": "!=",
+  "test": "is_family",
+  "subject": "damager",
+  "value": "wind_charge"
 }
 ```

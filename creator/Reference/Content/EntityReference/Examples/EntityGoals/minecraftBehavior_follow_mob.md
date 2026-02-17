@@ -33,8 +33,8 @@ Allows the mob to follow other mobs.
 ```json
 "minecraft:behavior.follow_mob": {
   "priority": 4,
+  "search_range": 20,
   "speed_multiplier": 1,
-  "stop_distance": 3,
-  "search_range": 20
+  "stop_distance": 3
 }
 ```

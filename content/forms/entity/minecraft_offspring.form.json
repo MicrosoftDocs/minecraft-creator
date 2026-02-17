@@ -92,6 +92,14 @@
         "description": "The map of entity to offspring definitions that this entity can make offspring with.",
         "dataType": 17,
         "samples": {
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:offspring/",
+              "content": {
+                "minecraft:chicken": "minecraft:chicken"
+              }
+            }
+          ],
           "/vanilla/behavior_pack/entities/cow.json": [
             {
               "path": "/minecraft:entity/components/minecraft:offspring/",
@@ -123,14 +131,6 @@
                 "minecraft:fox": "minecraft:fox"
               }
             }
-          ],
-          "/vanilla/behavior_pack/entities/frog.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:offspring/",
-              "content": {
-                "minecraft:frog": "minecraft:tadpole"
-              }
-            }
           ]
         }
       },
@@ -146,6 +146,14 @@
         "description": "List of Entity Properties that should be inherited from the parent entities and potentially mutated.",
         "dataType": 17,
         "samples": {
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:offspring/",
+              "content": {
+                "minecraft:climate_variant": {}
+              }
+            }
+          ],
           "/vanilla/behavior_pack/entities/cow.json": [
             {
               "path": "/minecraft:entity/components/minecraft:offspring/",
@@ -172,6 +180,19 @@
       }
     ],
     "samples": {
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:offspring/",
+          "content": {
+            "offspring_pairs": {
+              "minecraft:chicken": "minecraft:chicken"
+            },
+            "property_inheritance": {
+              "minecraft:climate_variant": {}
+            }
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/cow.json": [
         {
           "path": "/minecraft:entity/components/minecraft:offspring/",
@@ -211,16 +232,6 @@
           "content": {
             "offspring_pairs": {
               "minecraft:fox": "minecraft:fox"
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/frog.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:offspring/",
-          "content": {
-            "offspring_pairs": {
-              "minecraft:frog": "minecraft:tadpole"
             }
           }
         }

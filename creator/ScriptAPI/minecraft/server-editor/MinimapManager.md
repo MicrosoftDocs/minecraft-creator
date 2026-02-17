@@ -21,7 +21,7 @@ Manage minimap instances within the editor, providing functionality to create, d
 
 ### **createMinimap**
 `
-createMinimap(viewType: MinimapViewType, mapWidth: number, mapHeight: number): MinimapItem
+createMinimap(viewType: MinimapViewType, mapWidth: number, mapHeight: number, dataId?: string): MinimapItem
 `
 
 Create a new minimap instance with the specified view type and dimensions.
@@ -30,6 +30,7 @@ Create a new minimap instance with the specified view type and dimensions.
 - **viewType**: [*MinimapViewType*](MinimapViewType.md)
 - **mapWidth**: *number*
 - **mapHeight**: *number*
+- **dataId**?: *string* = `null`
 
 **Returns** [*MinimapItem*](MinimapItem.md)
   

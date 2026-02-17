@@ -243,13 +243,12 @@
               "path": "/minecraft:entity/components/minecraft:preferred_path/",
               "content": [
                 {
-                  "cost": 0,
                   "blocks": [
                     "grass_path"
-                  ]
+                  ],
+                  "cost": 0
                 },
                 {
-                  "cost": 1,
                   "blocks": [
                     "cobblestone",
                     "stone",
@@ -390,10 +389,10 @@
                     "green_glazed_terracotta",
                     "red_glazed_terracotta",
                     "black_glazed_terracotta"
-                  ]
+                  ],
+                  "cost": 1
                 },
                 {
-                  "cost": 50,
                   "blocks": [
                     "bed",
                     "lectern",
@@ -409,7 +408,8 @@
                     "barrel",
                     "loom",
                     "stonecutter"
-                  ]
+                  ],
+                  "cost": 50
                 }
               ]
             }
@@ -422,18 +422,16 @@
         {
           "path": "/minecraft:entity/components/minecraft:preferred_path/",
           "content": {
-            "max_fall_blocks": 1,
-            "jump_cost": 5,
             "default_block_cost": 1.5,
+            "jump_cost": 5,
             "preferred_path_blocks": [
               {
-                "cost": 0,
                 "blocks": [
                   "grass_path"
-                ]
+                ],
+                "cost": 0
               },
               {
-                "cost": 1,
                 "blocks": [
                   "cobblestone",
                   "stone",
@@ -574,10 +572,10 @@
                   "green_glazed_terracotta",
                   "red_glazed_terracotta",
                   "black_glazed_terracotta"
-                ]
+                ],
+                "cost": 1
               },
               {
-                "cost": 50,
                 "blocks": [
                   "bed",
                   "lectern",
@@ -593,9 +591,11 @@
                   "barrel",
                   "loom",
                   "stonecutter"
-                ]
+                ],
+                "cost": 50
               }
-            ]
+            ],
+            "max_fall_blocks": 1
           }
         }
       ],

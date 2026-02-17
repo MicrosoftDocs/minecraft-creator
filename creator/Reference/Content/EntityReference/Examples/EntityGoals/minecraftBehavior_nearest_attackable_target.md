@@ -17,17 +17,17 @@ Allows an entity to attack the closest target within a given subset of specific 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| attack_interval | *not set* | Range of integers | Time range (in seconds) between searching for an attack target, range is in (0, "attack_interval"]. Only used if "attack_interval" is greater than 0, otherwise "scan_interval" is used. | Cave Spider: `{"min":5,"max":5}`, `{"min":10,"max":10}` | 
+| attack_interval | *not set* | Range of integers | Time range (in seconds) between searching for an attack target, range is in (0, "attack_interval"]. Only used if "attack_interval" is greater than 0, otherwise "scan_interval" is used. | Cave Spider: `{"min":10,"max":10}`, `{"min":5,"max":5}` | 
 | attack_interval|attack_interval_min | *not set* | String |  |  | 
 | attack_owner | false | Boolean true/false | If true, this entity can attack its owner. |  | 
-| entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entity types that this mob considers valid targets | Blaze: `[{"filters":{"test":"is_family","subject":"other","value":"player"},"max_dist":48}]`, Bogged: `[{"filters":{"test":"is_family","subject":"other","value":"player"},"max_dist":16},{"filters":{"test":"is_family","subject":"other","value":"irongolem"},"max_dist":16},{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"baby_turtle"},{"test":"in_water","subject":"other","operator":"!=","value":true}]},"max_dist":16}]`, Breeze: `[{"filters":{"test":"is_family","subject":"other","value":"player"},"max_dist":24},{"filters":{"test":"is_family","subject":"other","value":"irongolem"},"max_dist":24}]` | 
+| entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entity types that this mob considers valid targets | Blaze: `[{"filters":{"AND":[{"test":"is_family","subject":1,"operator":0,"value":"player"}]},"max_dist":48}]`, Bogged: `[{"filters":{"test":"is_family","subject":"other","value":"player"}},{"filters":{"test":"is_family","subject":"other","value":"irongolem"}},{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"baby_turtle"},{"test":"in_water","subject":"other","operator":"!=","value":true}]}}]`, Breeze: `[{"filters":{"AND":[{"test":"is_family","subject":1,"operator":0,"value":"player"}]},"max_dist":24},{"filters":{"AND":[{"test":"is_family","subject":1,"operator":0,"value":"irongolem"}]},"max_dist":24}]` | 
 | must_reach | false | Boolean true/false | If true, this entity requires a path to the target. |  | 
 | must_see | false | Boolean true/false | Determines if target-validity requires this entity to be in range only, or both in range and in sight. | Blaze: `true` | 
 | must_see_forget_duration | 3 | Decimal number | Time (in seconds) the target must not be seen by this entity to become invalid. Used only if "must_see" is true. | Drowned: `17` | 
 | persist_time | 0 | Decimal number | Time (in seconds) this entity can continue attacking the target after the target is no longer valid. | Drowned: `0.5` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Blaze: `2`, Breeze: `1` | 
 | reselect_targets | false | Boolean true/false | Allows the attacking entity to update the nearest target, otherwise a target is only reselected after each "scan_interval" or "attack_interval". | Bogged: `true` | 
-| scan_interval | 10 | Integer number | If "attack_interval" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to "scan_interval", minimum value is 1. Values under 10 can affect performance. | Breeze: `10` | 
+| scan_interval | 10 | Integer number | If "attack_interval" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to "scan_interval", minimum value is 1. Values under 10 can affect performance. |  | 
 | set_persistent | false | Boolean true/false | Allows the actor to be set to persist upon targeting a player |  | 
 | target_acquisition_probability | 1 | Decimal number | Probability (0.0 to 1.0) that this entity will accept a found target. Checked each time a valid target is found during scanning. |  | 
 | target_invisible_multiplier | 0.7 | Decimal number | Multiplied with the target's armor coverage percentage to modify "max_dist" when detecting an invisible target. |  | 
@@ -60,18 +60,23 @@ List of entity types that this mob considers valid targets.
 
 ```json
 "minecraft:behavior.nearest_attackable_target": {
-  "priority": 2,
   "must_see": true,
   "entity_types": [
     {
       "filters": {
-        "test": "is_family",
-        "subject": "other",
-        "value": "player"
+        "AND": [
+          {
+            "test": "is_family",
+            "subject": 1,
+            "operator": 0,
+            "value": "player"
+          }
+        ]
       },
       "max_dist": 48
     }
-  ]
+  ],
+  "priority": 2
 }
 ```
 
@@ -80,25 +85,22 @@ List of entity types that this mob considers valid targets.
 
 ```json
 "minecraft:behavior.nearest_attackable_target": {
-  "priority": 2,
-  "must_see": true,
   "reselect_targets": true,
+  "must_see": true,
   "entity_types": [
     {
       "filters": {
         "test": "is_family",
         "subject": "other",
         "value": "player"
-      },
-      "max_dist": 16
+      }
     },
     {
       "filters": {
         "test": "is_family",
         "subject": "other",
         "value": "irongolem"
-      },
-      "max_dist": 16
+      }
     },
     {
       "filters": {
@@ -115,10 +117,10 @@ List of entity types that this mob considers valid targets.
             "value": true
           }
         ]
-      },
-      "max_dist": 16
+      }
     }
-  ]
+  ],
+  "priority": 2
 }
 ```
 
@@ -127,80 +129,51 @@ List of entity types that this mob considers valid targets.
 
 ```json
 "minecraft:behavior.nearest_attackable_target": {
-  "priority": 1,
+  "must_see": true,
   "within_radius": 24,
-  "scan_interval": 10,
   "entity_types": [
     {
       "filters": {
-        "test": "is_family",
-        "subject": "other",
-        "value": "player"
+        "AND": [
+          {
+            "test": "is_family",
+            "subject": 1,
+            "operator": 0,
+            "value": "player"
+          }
+        ]
       },
       "max_dist": 24
     },
     {
       "filters": {
-        "test": "is_family",
-        "subject": "other",
-        "value": "irongolem"
+        "AND": [
+          {
+            "test": "is_family",
+            "subject": 1,
+            "operator": 0,
+            "value": "irongolem"
+          }
+        ]
       },
       "max_dist": 24
     }
   ],
-  "must_see": true
+  "priority": 1
 }
 ```
 
 #### [Cave Spider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cave_spider.json)
 
-At /minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/: 
-
-```json
-"minecraft:behavior.nearest_attackable_target": {
-  "priority": 2,
-  "must_see": true,
-  "attack_interval": {
-    "min": 5,
-    "max": 5
-  },
-  "entity_types": [
-    {
-      "filters": {
-        "any_of": [
-          {
-            "test": "is_family",
-            "subject": "other",
-            "value": "player"
-          },
-          {
-            "test": "is_family",
-            "subject": "other",
-            "value": "snowgolem"
-          },
-          {
-            "test": "is_family",
-            "subject": "other",
-            "value": "irongolem"
-          }
-        ]
-      },
-      "max_dist": 16
-    }
-  ]
-}
-```
-
 At /minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.nearest_attackable_target/: 
 
 ```json
 "minecraft:behavior.nearest_attackable_target": {
-  "priority": 2,
-  "must_see": true,
   "attack_interval": {
     "min": 10,
     "max": 10
   },
+  "must_see": true,
   "entity_types": [
     {
       "filters": {
@@ -221,10 +194,46 @@ At /minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.
             "value": "irongolem"
           }
         ]
-      },
-      "max_dist": 16
+      }
     }
-  ]
+  ],
+  "priority": 2
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/: 
+
+```json
+"minecraft:behavior.nearest_attackable_target": {
+  "attack_interval": {
+    "min": 5,
+    "max": 5
+  },
+  "must_see": true,
+  "entity_types": [
+    {
+      "filters": {
+        "any_of": [
+          {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
+          },
+          {
+            "test": "is_family",
+            "subject": "other",
+            "value": "snowgolem"
+          },
+          {
+            "test": "is_family",
+            "subject": "other",
+            "value": "irongolem"
+          }
+        ]
+      }
+    }
+  ],
+  "priority": 2
 }
 ```
 
@@ -233,7 +242,6 @@ At /minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.
 
 ```json
 "minecraft:behavior.nearest_attackable_target": {
-  "priority": 2,
   "reselect_targets": true,
   "must_see": true,
   "within_radius": 12,
@@ -337,6 +345,7 @@ At /minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.
       },
       "max_dist": 20
     }
-  ]
+  ],
+  "priority": 2
 }
 ```

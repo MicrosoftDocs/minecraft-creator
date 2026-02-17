@@ -10,6 +10,8 @@
         "id": "detection_rules",
         "title": "Detection Rules",
         "dataType": 16,
+        "minLength": 1,
+        "maxLength": 1,
         "subFormId": "block_components/detection_rule",
         "isRequired": true
       }

@@ -32,10 +32,10 @@ Allows the mob to look around for another mob to ride atop it.
 
 ```json
 "minecraft:behavior.find_mount": {
+  "max_failed_attempts": 20,
   "priority": 1,
-  "within_radius": 16,
   "start_delay": 15,
-  "max_failed_attempts": 20
+  "within_radius": 16
 }
 ```
 
@@ -44,11 +44,11 @@ Allows the mob to look around for another mob to ride atop it.
 
 ```json
 "minecraft:behavior.find_mount": {
-  "priority": 4,
-  "within_radius": 16,
   "avoid_water": true,
+  "mount_distance": 2,
+  "priority": 4,
   "start_delay": 100,
   "target_needed": false,
-  "mount_distance": 2
+  "within_radius": 16
 }
 ```

@@ -69,9 +69,9 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.move_through_village/",
           "content": {
+            "only_at_night": true,
             "priority": 3,
-            "speed_multiplier": 0.6,
-            "only_at_night": true
+            "speed_multiplier": 0.6
           }
         }
       ]

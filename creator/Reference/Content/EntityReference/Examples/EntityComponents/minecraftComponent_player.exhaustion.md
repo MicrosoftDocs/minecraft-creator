@@ -27,7 +27,7 @@ Defines the player's exhaustion level.
 
 ```json
 "minecraft:player.exhaustion": {
-  "value": 0,
-  "max": 20
+  "max": 20,
+  "value": 0
 }
 ```

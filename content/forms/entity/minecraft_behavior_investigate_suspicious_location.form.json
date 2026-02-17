@@ -68,8 +68,8 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.investigate_suspicious_location/",
           "content": {
-            "priority": 5,
-            "speed_multiplier": 0.7
+            "speed_multiplier": 0.7,
+            "priority": 5
           }
         }
       ]

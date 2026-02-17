@@ -414,6 +414,8 @@ Represents the unique type of network packet.
 `SubClientLoginPacket = "SubClientLoginPacket"`
 ### **SyncActorPropertyPacket**
 `SyncActorPropertyPacket = "SyncActorPropertyPacket"`
+### **SyncWorldClocksPacket**
+`SyncWorldClocksPacket = "SyncWorldClocksPacket"`
 ### **TakeItemActorPacket**
 `TakeItemActorPacket = "TakeItemActorPacket"`
 ### **TextPacket**

@@ -18,7 +18,7 @@ Allows this entity to pretend to be dead to avoid being targeted by attackers.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | apply_regeneration | false | Boolean true/false | Whether the mob will receive the regeneration effect while playing dead. |  | 
-| damage_sources | all | Array of strings | The list of Entity Damage Sources that will cause this mob to play dead. |  | 
+| damage_sources | all | String | The list of Entity Damage Sources that will cause this mob to play dead. |  | 
 | duration | 1 | Decimal number | The amount of time the mob will remain playing dead (in seconds). |  | 
 | filters | *not set* | Minecraft filter | The list of other triggers that are required for the mob to activate play dead |  | 
 | force_below_health | 0 | Integer number | The amount of health at which damage will cause the mob to play dead. |  | 

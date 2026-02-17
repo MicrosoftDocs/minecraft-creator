@@ -101,12 +101,12 @@
               "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
               "content": [
                 {
-                  "event_name": "ambient.tame",
-                  "condition": "query.is_using_item"
+                  "condition": "query.is_using_item",
+                  "event_name": "ambient.tame"
                 },
                 {
-                  "event_name": "ambient",
-                  "condition": "!query.is_using_item"
+                  "condition": "!query.is_using_item",
+                  "event_name": "ambient"
                 }
               ]
             }
@@ -116,12 +116,12 @@
               "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
               "content": [
                 {
-                  "event_name": "angry",
-                  "condition": "query.anger_level(this) >= 80"
+                  "condition": "query.anger_level(this) >= 80",
+                  "event_name": "angry"
                 },
                 {
-                  "event_name": "agitated",
-                  "condition": "query.anger_level(this) >= 40"
+                  "condition": "query.anger_level(this) >= 40",
+                  "event_name": "agitated"
                 }
               ]
             }
@@ -188,19 +188,19 @@
         {
           "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
           "content": {
-            "value": 5,
-            "range": 5,
             "event_name": "ambient",
             "event_names": [
               {
-                "event_name": "ambient.tame",
-                "condition": "query.is_using_item"
+                "condition": "query.is_using_item",
+                "event_name": "ambient.tame"
               },
               {
-                "event_name": "ambient",
-                "condition": "!query.is_using_item"
+                "condition": "!query.is_using_item",
+                "event_name": "ambient"
               }
-            ]
+            ],
+            "range": 5,
+            "value": 5
           }
         }
       ],
@@ -232,29 +232,23 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
-          "content": {}
-        }
-      ],
       "/vanilla/behavior_pack/entities/warden.json": [
         {
           "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
           "content": {
-            "value": 2,
-            "range": 4,
             "event_name": "ambient",
             "event_names": [
               {
-                "event_name": "angry",
-                "condition": "query.anger_level(this) >= 80"
+                "condition": "query.anger_level(this) >= 80",
+                "event_name": "angry"
               },
               {
-                "event_name": "agitated",
-                "condition": "query.anger_level(this) >= 40"
+                "condition": "query.anger_level(this) >= 40",
+                "event_name": "agitated"
               }
-            ]
+            ],
+            "range": 4,
+            "value": 2
           }
         }
       ]
