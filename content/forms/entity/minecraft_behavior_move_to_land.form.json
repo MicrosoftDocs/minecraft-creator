@@ -30,12 +30,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.move_to_land/",
               "content": 2
             }
-          ],
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:behavior.move_to_land/",
-              "content": 0.5
-            }
           ]
         }
       },
@@ -66,12 +60,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.move_to_land/",
               "content": 8
             }
-          ],
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:behavior.move_to_land/",
-              "content": 5
-            }
           ]
         }
       },
@@ -86,12 +74,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.move_to_land/",
               "content": 30
-            }
-          ],
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:behavior.move_to_land/",
-              "content": 16
             }
           ]
         }
@@ -115,12 +97,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.move_to_land/",
               "content": 6
             }
-          ],
-          "/vanilla/behavior_pack/entities/turtle.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:behavior.move_to_land/",
-              "content": 6
-            }
           ]
         }
       }
@@ -130,22 +106,11 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.move_to_land/",
           "content": {
+            "goal_radius": 2,
             "priority": 6,
-            "search_range": 30,
-            "search_height": 8,
             "search_count": 80,
-            "goal_radius": 2
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/turtle.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:behavior.move_to_land/",
-          "content": {
-            "priority": 6,
-            "search_range": 16,
-            "search_height": 5,
-            "goal_radius": 0.5
+            "search_height": 8,
+            "search_range": 30
           }
         }
       ]

@@ -80,8 +80,8 @@ At Short (using Defaults)..:
 
 ```json
 {
-  "test": "in_contact_with_water",
   "operator": "==",
+  "test": "in_contact_with_water",
   "value": true
 }
 ```

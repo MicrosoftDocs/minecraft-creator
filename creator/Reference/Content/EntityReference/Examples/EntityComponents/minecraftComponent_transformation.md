@@ -84,11 +84,11 @@ Defines the properties of the delay for the transformation.
 
 ```json
 "minecraft:transformation": {
-  "into": "minecraft:stray",
-  "transformation_sound": "convert_to_stray",
-  "keep_level": true,
   "drop_inventory": true,
-  "preserve_equipment": true
+  "into": "minecraft:stray",
+  "keep_level": true,
+  "preserve_equipment": true,
+  "transformation_sound": "convert_to_stray"
 }
 ```
 
@@ -97,7 +97,7 @@ Defines the properties of the delay for the transformation.
 
 ```json
 "minecraft:transformation": {
-  "into": "minecraft:skeleton",
-  "delay": 0.5
+  "delay": 0.5,
+  "into": "minecraft:skeleton"
 }
 ```

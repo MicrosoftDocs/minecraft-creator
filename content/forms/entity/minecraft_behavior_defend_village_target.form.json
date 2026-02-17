@@ -24,15 +24,7 @@
         "title": "Attack Chance",
         "description": "The percentage chance that the entity has to attack aggressors of its village, where 1.0 = 100%.",
         "defaultValue": 0.05,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/iron_golem.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:village_created/minecraft:behavior.defend_village_target/",
-              "content": 0.05
-            }
-          ]
-        }
+        "dataType": 3
       },
       {
         "id": "attack_owner",
@@ -50,22 +42,30 @@
           "/vanilla/behavior_pack/entities/iron_golem.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:village_created/minecraft:behavior.defend_village_target/",
-              "content": {
-                "filters": {
-                  "any_of": [
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "mob"
-                    },
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "player"
-                    }
-                  ]
+              "content": [
+                {
+                  "filters": {
+                    "AND": [
+                      {
+                        "OR": [
+                          {
+                            "test": "is_family",
+                            "subject": 1,
+                            "operator": 0,
+                            "value": "mob"
+                          },
+                          {
+                            "test": "is_family",
+                            "subject": 1,
+                            "operator": 0,
+                            "value": "player"
+                          }
+                        ]
+                      }
+                    ]
+                  }
                 }
-              }
+              ]
             }
           ]
         }
@@ -134,25 +134,32 @@
         {
           "path": "/minecraft:entity/component_groups/minecraft:village_created/minecraft:behavior.defend_village_target/",
           "content": {
-            "priority": 1,
             "must_reach": true,
-            "attack_chance": 0.05,
-            "entity_types": {
-              "filters": {
-                "any_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "mob"
-                  },
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "player"
-                  }
-                ]
+            "entity_types": [
+              {
+                "filters": {
+                  "AND": [
+                    {
+                      "OR": [
+                        {
+                          "test": "is_family",
+                          "subject": 1,
+                          "operator": 0,
+                          "value": "mob"
+                        },
+                        {
+                          "test": "is_family",
+                          "subject": 1,
+                          "operator": 0,
+                          "value": "player"
+                        }
+                      ]
+                    }
+                  ]
+                }
               }
-            }
+            ],
+            "priority": 1
           }
         }
       ]

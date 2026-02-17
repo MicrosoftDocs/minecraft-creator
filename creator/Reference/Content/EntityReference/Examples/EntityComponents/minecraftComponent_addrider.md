@@ -23,7 +23,7 @@ Adds a rider to the entity.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | entity_type | *not set* | String from a list of choices | Type of entity to acquire as a rider |  | 
-| riders | [] | [Riders](#entity-rider-data) item | List of riders to be added to the entity. Can only spawn as many riders as "minecraft:rideable" has "seat_count". | Cave Spider: `[{"entity_type":"minecraft:skeleton"}]`, `[{"entity_type":"minecraft:stray"}]` | 
+| riders | [] | [Riders](#entity-rider-data) item | List of riders to be added to the entity. Can only spawn as many riders as "minecraft:rideable" has "seat_count". | Cave Spider: `[{"entity_type":"minecraft:bogged"}]`, `[{"entity_type":"minecraft:wither_skeleton"}]` | 
 | spawn_event | *not set* | Minecraft Event Reference | Trigger event when a rider is acquired |  | 
 
 ## Entity Rider Data
@@ -41,30 +41,6 @@ List of riders to be added to the entity. Must have no more riders than "minecra
 
 #### [Cave Spider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cave_spider.json)
 
-At /minecraft:entity/component_groups/minecraft:spider_jockey/minecraft:addrider/: 
-
-```json
-"minecraft:addrider": {
-  "riders": [
-    {
-      "entity_type": "minecraft:skeleton"
-    }
-  ]
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:spider_stray_jockey/minecraft:addrider/: 
-
-```json
-"minecraft:addrider": {
-  "riders": [
-    {
-      "entity_type": "minecraft:stray"
-    }
-  ]
-}
-```
-
 At /minecraft:entity/component_groups/minecraft:spider_bogged_jockey/minecraft:addrider/: 
 
 ```json
@@ -72,6 +48,30 @@ At /minecraft:entity/component_groups/minecraft:spider_bogged_jockey/minecraft:a
   "riders": [
     {
       "entity_type": "minecraft:bogged"
+    }
+  ]
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/: 
+
+```json
+"minecraft:addrider": {
+  "riders": [
+    {
+      "entity_type": "minecraft:wither_skeleton"
+    }
+  ]
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:spider_jockey/minecraft:addrider/: 
+
+```json
+"minecraft:addrider": {
+  "riders": [
+    {
+      "entity_type": "minecraft:skeleton"
     }
   ]
 }
@@ -89,13 +89,13 @@ At /minecraft:entity/component_groups/minecraft:spider_parched_jockey/minecraft:
 }
 ```
 
-At /minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/: 
+At /minecraft:entity/component_groups/minecraft:spider_stray_jockey/minecraft:addrider/: 
 
 ```json
 "minecraft:addrider": {
   "riders": [
     {
-      "entity_type": "minecraft:wither_skeleton"
+      "entity_type": "minecraft:stray"
     }
   ]
 }

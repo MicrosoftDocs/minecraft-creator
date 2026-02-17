@@ -49,8 +49,8 @@ This item can also be represented as a `Decimal number`.
 
 ```json
 "minecraft:knockback_resistance": {
-  "value": 100,
-  "max": 100
+  "max": 100,
+  "value": 100
 }
 ```
 

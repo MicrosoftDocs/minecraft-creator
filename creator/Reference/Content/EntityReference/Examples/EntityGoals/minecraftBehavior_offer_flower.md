@@ -40,9 +40,9 @@ Allows the mob to offer a flower to another mob with the minecraft:take_flower b
 
 ```json
 "minecraft:behavior.offer_flower": {
-  "priority": 5,
   "filters": {
     "test": "is_daytime"
-  }
+  },
+  "priority": 5
 }
 ```

@@ -25,19 +25,8 @@ Allows Equine mobs to be Horse Traps and be triggered like them, spawning a ligh
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| duration | 1 | Decimal number | Amount of time in seconds the trap exists. After this amount of time is elapsed, the trap is removed from the world if it hasn't been activated | Skeleton Horse: `900` | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Skeleton Horse: `2` | 
-| within_radius | 0 | Decimal number | Distance in blocks that the player has to be within to trigger the horse trap | Skeleton Horse: `10` | 
+| duration | 1 | Decimal number | Amount of time in seconds the trap exists. After this amount of time is elapsed, the trap is removed from the world if it hasn't been activated |  | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
+| within_radius | 0 | Decimal number | Distance in blocks that the player has to be within to trigger the horse trap |  | 
 
 ## Samples
-
-#### [Skeleton Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton_horse.json)
-
-
-```json
-"minecraft:behavior.skeleton_horse_trap": {
-  "within_radius": 10,
-  "duration": 900,
-  "priority": 2
-}
-```

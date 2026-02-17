@@ -35,7 +35,7 @@ Allows an entity to deal damage through a melee attack with reach calculations b
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Blaze: `3`, Bogged: `4`, Dolphin: `2` | 
 | random_stop_interval | 0 | Integer number | This entity will have a 1 in N chance to stop it's current attack, where N = "random_stop_interval". | Cave Spider: `100` | 
 | require_complete_path | false | Boolean true/false | Toggles (on/off) the need to have a full path from the entity to the target when using this melee attack behavior. | Drowned: `true` | 
-| speed_multiplier | 1 | Decimal number | This multiplier modifies the attacking entity's speed when moving toward the target. | Bogged: `1.25`, Drowned: `1` | 
+| speed_multiplier | 1 | Decimal number | This multiplier modifies the attacking entity's speed when moving toward the target. | Bogged: `1.25` | 
 | track_target | false | Boolean true/false | Allows the entity to track the attack target, even if the entity has no sensing. | Bogged: `true` | 
 | x_max_rotation | 30 | Decimal number | Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target. |  | 
 | y_max_head_rotation | 30 | Decimal number | Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target. |  | 
@@ -56,30 +56,30 @@ Allows an entity to deal damage through a melee attack with reach calculations b
 
 ```json
 "minecraft:behavior.melee_box_attack": {
-  "priority": 4,
+  "speed_multiplier": 1.25,
   "track_target": true,
-  "speed_multiplier": 1.25
+  "priority": 4
 }
 ```
 
 #### [Cave Spider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cave_spider.json)
 
-At /minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.melee_box_attack/: 
-
-```json
-"minecraft:behavior.melee_box_attack": {
-  "priority": 3,
-  "track_target": true,
-  "random_stop_interval": 100
-}
-```
-
 At /minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.melee_box_attack/: 
 
 ```json
 "minecraft:behavior.melee_box_attack": {
-  "priority": 3,
-  "track_target": true
+  "track_target": true,
+  "priority": 3
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.melee_box_attack/: 
+
+```json
+"minecraft:behavior.melee_box_attack": {
+  "random_stop_interval": 100,
+  "track_target": true,
+  "priority": 3
 }
 ```
 
@@ -99,9 +99,7 @@ At /minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.
 ```json
 "minecraft:behavior.melee_box_attack": {
   "can_spread_on_fire": true,
-  "priority": 3,
-  "speed_multiplier": 1,
-  "track_target": false,
-  "require_complete_path": true
+  "require_complete_path": true,
+  "priority": 3
 }
 ```

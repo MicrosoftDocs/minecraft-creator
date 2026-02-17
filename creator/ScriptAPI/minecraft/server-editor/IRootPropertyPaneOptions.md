@@ -22,3 +22,10 @@ The options to create a root pane.
 Optional action button to be displayed on the header.
 
 Type: *IRootPropertyPaneHeaderAction*
+
+### **icon**
+`icon?: string;`
+
+Pane icon shown in front of the pane header
+
+Type: *string*

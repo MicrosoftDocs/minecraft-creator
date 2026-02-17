@@ -165,23 +165,23 @@
           ],
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:become_hostile/sequence[1]/filters/",
-              "content": "easy"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:become_hostile/sequence[2]/filters/",
-              "content": "normal"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:become_hostile/sequence[3]/filters/",
-              "content": "hard"
-            },
-            {
               "path": "/minecraft:entity/events/minecraft:become_angry/sequence[1]/filters/",
               "content": "easy"
             },
             {
               "path": "/minecraft:entity/events/minecraft:become_angry/sequence[2]/filters/",
+              "content": "normal"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:become_angry/sequence[3]/filters/",
+              "content": "hard"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:become_hostile/sequence[1]/filters/",
+              "content": "easy"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:become_hostile/sequence[2]/filters/",
               "content": "normal"
             }
           ]
@@ -200,7 +200,7 @@
           ],
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:become_hostile/sequence[1]/filters/",
+              "path": "/minecraft:entity/events/minecraft:become_angry/sequence[1]/filters/",
               "content": "is_difficulty"
             }
           ]
@@ -229,27 +229,6 @@
       ],
       "/vanilla/behavior_pack/entities/cave_spider.json": [
         {
-          "path": "/minecraft:entity/events/minecraft:become_hostile/sequence[1]/filters/",
-          "content": {
-            "test": "is_difficulty",
-            "value": "easy"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:become_hostile/sequence[2]/filters/",
-          "content": {
-            "test": "is_difficulty",
-            "value": "normal"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:become_hostile/sequence[3]/filters/",
-          "content": {
-            "test": "is_difficulty",
-            "value": "hard"
-          }
-        },
-        {
           "path": "/minecraft:entity/events/minecraft:become_angry/sequence[1]/filters/",
           "content": {
             "test": "is_difficulty",
@@ -265,6 +244,27 @@
         },
         {
           "path": "/minecraft:entity/events/minecraft:become_angry/sequence[3]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:become_hostile/sequence[1]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "value": "easy"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:become_hostile/sequence[2]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "value": "normal"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:become_hostile/sequence[3]/filters/",
           "content": {
             "test": "is_difficulty",
             "value": "hard"

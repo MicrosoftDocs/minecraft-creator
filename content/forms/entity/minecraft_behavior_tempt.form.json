@@ -471,12 +471,12 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
           "content": {
-            "priority": 5,
-            "speed_multiplier": 1.25,
             "can_tempt_vertically": true,
             "items": [
               "slime_ball"
-            ]
+            ],
+            "priority": 5,
+            "speed_multiplier": 1.25
           }
         }
       ],

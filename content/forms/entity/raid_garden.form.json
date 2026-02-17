@@ -1,0 +1,118 @@
+{
+  "id": "minecraft:behavior.raid_garden",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.raid_garden",
+    "title": "Entity Raid Garden Behavior",
+    "description": "Allows the mob to eat/raid crops out of farms until they are full.",
+    "fields": [
+      {
+        "id": "blocks",
+        "title": "Blocks",
+        "description": "Blocks that the mob is looking for to eat/raid",
+        "dataType": 17,
+        "defaultValue": []
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "eat_delay",
+        "title": "Eat Delay",
+        "description": "Time in seconds between each time it eats/raids",
+        "dataType": 0,
+        "defaultValue": 2
+      },
+      {
+        "id": "full_delay",
+        "title": "Full Delay",
+        "description": "Amount of time in seconds before this mob wants to eat/raid again after eating its maximum",
+        "dataType": 0,
+        "defaultValue": 100
+      },
+      {
+        "id": "goal_radius",
+        "title": "Goal Radius",
+        "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot.",
+        "dataType": 3,
+        "defaultValue": 0.5,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": "initial_eat_delay",
+        "title": "Initial Eat Delay",
+        "description": "Time in seconds before starting to eat/raid once it arrives at it",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "max_to_eat",
+        "title": "Max To Eat",
+        "description": "Maximum number of crops this entity wants to eat/raid. If set to zero or less then it doesn't have a maximum",
+        "dataType": 0,
+        "defaultValue": 6
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "search_height",
+        "title": "Search Height",
+        "description": "Height in blocks the mob will look for crops to eat",
+        "dataType": 0,
+        "defaultValue": 1,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": "search_range",
+        "title": "Search Range",
+        "description": "Distance in blocks the mob will look for crops to eat",
+        "dataType": 0,
+        "defaultValue": 0,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this goal.",
+        "dataType": 3,
+        "defaultValue": 1
+      }
+    ]
+  }
+}

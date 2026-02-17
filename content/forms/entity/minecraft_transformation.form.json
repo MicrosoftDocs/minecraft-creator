@@ -340,11 +340,11 @@
         {
           "path": "/minecraft:entity/component_groups/become_stray/minecraft:transformation/",
           "content": {
-            "into": "minecraft:stray",
-            "transformation_sound": "convert_to_stray",
-            "keep_level": true,
             "drop_inventory": true,
-            "preserve_equipment": true
+            "into": "minecraft:stray",
+            "keep_level": true,
+            "preserve_equipment": true,
+            "transformation_sound": "convert_to_stray"
           }
         }
       ],
@@ -352,8 +352,8 @@
         {
           "path": "/minecraft:entity/component_groups/minecraft:revert_to_skeleton/minecraft:transformation/",
           "content": {
-            "into": "minecraft:skeleton",
-            "delay": 0.5
+            "delay": 0.5,
+            "into": "minecraft:skeleton"
           }
         }
       ]

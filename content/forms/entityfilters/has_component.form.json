@@ -89,13 +89,13 @@
           }
         ],
         "samples": {
-          "/vanilla/behavior_pack/entities/rabbit.json": [
+          "/vanilla/behavior_pack/entities/sheep.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/",
+              "path": "/minecraft:entity/components/minecraft:interact/interactions[0]/on_interact/filters/all_of[2]/",
               "content": "!="
             },
             {
-              "path": "/minecraft:entity/events/minecraft:entity_born/sequence[1]/filters/",
+              "path": "/minecraft:entity/events/minecraft:on_eat_block/sequence[1]/filters/",
               "content": "!="
             }
           ]
@@ -175,16 +175,6 @@
         "description": "(Required) The component name to look for",
         "dataType": 2,
         "samples": {
-          "/vanilla/behavior_pack/entities/rabbit.json": [
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/",
-              "content": "minecraft:variant"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_born/sequence[1]/filters/",
-              "content": "minecraft:variant"
-            }
-          ],
           "/vanilla/behavior_pack/entities/sheep.json": [
             {
               "path": "/minecraft:entity/components/minecraft:interact/interactions[0]/on_interact/filters/all_of[2]/",
@@ -206,13 +196,13 @@
         "title": "Test",
         "dataType": 2,
         "samples": {
-          "/vanilla/behavior_pack/entities/rabbit.json": [
+          "/vanilla/behavior_pack/entities/sheep.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/",
+              "path": "/minecraft:entity/components/minecraft:interact/interactions[0]/on_interact/filters/all_of[2]/",
               "content": "has_component"
             },
             {
-              "path": "/minecraft:entity/events/minecraft:entity_born/sequence[1]/filters/",
+              "path": "/minecraft:entity/components/minecraft:interact/interactions[0]/on_interact/filters/all_of[3]/",
               "content": "has_component"
             }
           ]
@@ -228,24 +218,6 @@
         {
           "path": "Short (using Defaults)..",
           "content": "{ \"test\": \"has_component\", \"value\": \"minecraft:explode\" }"
-        }
-      ],
-      "/vanilla/behavior_pack/entities/rabbit.json": [
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/",
-          "content": {
-            "test": "has_component",
-            "operator": "!=",
-            "value": "minecraft:variant"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_born/sequence[1]/filters/",
-          "content": {
-            "test": "has_component",
-            "operator": "!=",
-            "value": "minecraft:variant"
-          }
         }
       ],
       "/vanilla/behavior_pack/entities/sheep.json": [
@@ -289,8 +261,8 @@
         {
           "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence[0]/filters/",
           "content": {
-            "test": "has_component",
             "subject": "other",
+            "test": "has_component",
             "value": "minecraft:is_baby"
           }
         },
@@ -298,8 +270,8 @@
           "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence[1]/filters/",
           "content": {
             "test": "has_component",
-            "subject": "other",
             "operator": "!=",
+            "subject": "other",
             "value": "minecraft:is_baby"
           }
         }

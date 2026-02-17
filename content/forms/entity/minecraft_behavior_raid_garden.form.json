@@ -33,14 +33,6 @@
                 "minecraft:cave_vines_body_with_berries"
               ]
             }
-          ],
-          "/vanilla/behavior_pack/entities/rabbit.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.raid_garden/",
-              "content": [
-                "minecraft:carrots"
-              ]
-            }
           ]
         }
       },
@@ -69,12 +61,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.raid_garden/",
               "content": 0.8
-            }
-          ],
-          "/vanilla/behavior_pack/entities/rabbit.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.raid_garden/",
-              "content": 1
             }
           ]
         }
@@ -113,12 +99,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.raid_garden/",
               "content": 12
             }
-          ],
-          "/vanilla/behavior_pack/entities/rabbit.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.raid_garden/",
-              "content": 16
-            }
           ]
         }
       },
@@ -134,12 +114,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.raid_garden/",
               "content": 1.2
             }
-          ],
-          "/vanilla/behavior_pack/entities/rabbit.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.raid_garden/",
-              "content": 0.6
-            }
           ]
         }
       },
@@ -154,12 +128,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.raid_garden/",
               "content": 12
-            }
-          ],
-          "/vanilla/behavior_pack/entities/rabbit.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.raid_garden/",
-              "content": 5
             }
           ]
         }
@@ -195,20 +163,6 @@
             "goal_radius": 0.8,
             "max_to_eat": 0,
             "initial_eat_delay": 2
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/rabbit.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.raid_garden/",
-          "content": {
-            "priority": 5,
-            "blocks": [
-              "minecraft:carrots"
-            ],
-            "search_range": 16,
-            "goal_radius": 1,
-            "speed_multiplier": 0.6
           }
         }
       ]

@@ -23,9 +23,9 @@ Allow slimes to float in water / lava.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| jump_chance_percentage | 0.8 | Decimal number | Percent chance a slime or magma cube has to jump while in water / lava. | Magma Cube: `0.8` | 
+| jump_chance_percentage | 0.8 | Decimal number | Percent chance a slime or magma cube has to jump while in water / lava. |  | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Magma Cube: `1` | 
-| speed_multiplier | 1.2 | Decimal number | Determines the multiplier the entity's speed is modified by when moving through water / lava. | Magma Cube: `1.2` | 
+| speed_multiplier | 1.2 | Decimal number | Determines the multiplier the entity's speed is modified by when moving through water / lava. |  | 
 
 ## Samples
 
@@ -34,8 +34,6 @@ Allow slimes to float in water / lava.
 
 ```json
 "minecraft:behavior.slime_float": {
-  "priority": 1,
-  "jump_chance_percentage": 0.8,
-  "speed_multiplier": 1.2
+  "priority": 1
 }
 ```

@@ -27,7 +27,7 @@ Defines how much experience each player action should take.
 
 ```json
 "minecraft:player.experience": {
-  "value": 0,
-  "max": 1
+  "max": 1,
+  "value": 0
 }
 ```

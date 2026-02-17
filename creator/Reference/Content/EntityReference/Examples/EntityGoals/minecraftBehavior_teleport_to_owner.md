@@ -28,7 +28,6 @@ Allows an entity to teleport to its owner.
 
 ```json
 "minecraft:behavior.teleport_to_owner": {
-  "priority": 0,
   "filters": {
     "all_of": [
       {
@@ -40,6 +39,7 @@ Allows an entity to teleport to its owner.
         "test": "is_panicking"
       }
     ]
-  }
+  },
+  "priority": 0
 }
 ```

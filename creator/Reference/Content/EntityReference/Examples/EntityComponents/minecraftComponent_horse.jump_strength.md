@@ -17,7 +17,7 @@ Determines the jump height for a horse or similar entity, like a donkey.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| value | *not set* | [Value](#value) item | Value of jump strength the entity has when spawned. | Skeleton Horse: `{"range_min":0.4,"range_max":1}` | 
+| value | *not set* | [Value](#value) item | Value of jump strength the entity has when spawned. |  | 
 | value (Alternate 1) | *not set* | Decimal number |  |  | 
 
 ## Value
@@ -32,15 +32,3 @@ Describes the range of jump strength.
 | range_min | *not set* | Decimal number | Defines the minimum strength level. |  | 
 
 ## Samples
-
-#### [Skeleton Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton_horse.json)
-
-
-```json
-"minecraft:horse.jump_strength": {
-  "value": {
-    "range_min": 0.4,
-    "range_max": 1
-  }
-}
-```

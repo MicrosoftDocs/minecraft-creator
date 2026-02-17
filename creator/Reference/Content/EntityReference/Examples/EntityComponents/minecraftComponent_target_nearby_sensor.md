@@ -33,13 +33,13 @@ Defines the entity's range within which it can see or sense other entities to ta
 
 ```json
 "minecraft:target_nearby_sensor": {
-  "inside_range": 2,
-  "outside_range": 3,
-  "must_see": true,
   "on_inside_range": {
     "event": "switch_to_melee",
     "target": "self"
   },
+  "inside_range": 2,
+  "must_see": true,
+  "outside_range": 3,
   "on_outside_range": {
     "event": "switch_to_ranged",
     "target": "self"
@@ -53,7 +53,6 @@ Defines the entity's range within which it can see or sense other entities to ta
 ```json
 "minecraft:target_nearby_sensor": {
   "inside_range": 3,
-  "outside_range": 5,
   "on_inside_range": {
     "event": "minecraft:switch_to_melee",
     "target": "self"
@@ -61,6 +60,7 @@ Defines the entity's range within which it can see or sense other entities to ta
   "on_outside_range": {
     "event": "minecraft:switch_to_ranged",
     "target": "self"
-  }
+  },
+  "outside_range": 5
 }
 ```

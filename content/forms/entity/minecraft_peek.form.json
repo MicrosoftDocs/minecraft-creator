@@ -72,11 +72,11 @@
         {
           "path": "/minecraft:entity/components/minecraft:peek/",
           "content": {
-            "on_open": {
-              "event": "minecraft:on_open"
-            },
             "on_close": {
               "event": "minecraft:on_close"
+            },
+            "on_open": {
+              "event": "minecraft:on_open"
             },
             "on_target_open": {
               "event": "minecraft:on_open"

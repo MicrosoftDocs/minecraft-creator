@@ -354,22 +354,22 @@
               "path": "/minecraft:entity/components/minecraft:damage_sensor/",
               "content": [
                 {
+                  "deals_damage": "no",
                   "on_damage": {
                     "filters": {
                       "all_of": [
                         {
-                          "test": "is_family",
                           "subject": "other",
+                          "test": "is_family",
                           "value": "player"
                         },
                         {
-                          "test": "is_owner",
-                          "subject": "other"
+                          "subject": "other",
+                          "test": "is_owner"
                         }
                       ]
                     }
-                  },
-                  "deals_damage": "no"
+                  }
                 }
               ]
             }
@@ -379,7 +379,7 @@
               "path": "/minecraft:entity/components/minecraft:damage_sensor/",
               "content": {
                 "cause": "fall",
-                "deals_damage": false
+                "deals_damage": "no"
               }
             }
           ],
@@ -398,30 +398,21 @@
               "content": [
                 {
                   "cause": "fall",
-                  "deals_damage": false
+                  "deals_damage": "no"
                 },
                 {
+                  "cause": "projectile",
                   "on_damage": {
                     "filters": {
+                      "operator": "!=",
                       "test": "is_family",
                       "subject": "damager",
-                      "operator": "!=",
                       "value": "wind_charge"
                     }
                   },
-                  "cause": "projectile",
-                  "deals_damage": false
+                  "deals_damage": "no"
                 }
               ]
-            }
-          ],
-          "/vanilla/behavior_pack/entities/chicken.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:damage_sensor/",
-              "content": {
-                "cause": "fall",
-                "deals_damage": "no"
-              }
             }
           ]
         }
@@ -434,22 +425,22 @@
           "content": {
             "triggers": [
               {
+                "deals_damage": "no",
                 "on_damage": {
                   "filters": {
                     "all_of": [
                       {
-                        "test": "is_family",
                         "subject": "other",
+                        "test": "is_family",
                         "value": "player"
                       },
                       {
-                        "test": "is_owner",
-                        "subject": "other"
+                        "subject": "other",
+                        "test": "is_owner"
                       }
                     ]
                   }
-                },
-                "deals_damage": "no"
+                }
               }
             ]
           }
@@ -461,7 +452,7 @@
           "content": {
             "triggers": {
               "cause": "fall",
-              "deals_damage": false
+              "deals_damage": "no"
             }
           }
         }
@@ -484,19 +475,19 @@
             "triggers": [
               {
                 "cause": "fall",
-                "deals_damage": false
+                "deals_damage": "no"
               },
               {
+                "cause": "projectile",
                 "on_damage": {
                   "filters": {
+                    "operator": "!=",
                     "test": "is_family",
                     "subject": "damager",
-                    "operator": "!=",
                     "value": "wind_charge"
                   }
                 },
-                "cause": "projectile",
-                "deals_damage": false
+                "deals_damage": "no"
               }
             ]
           }

@@ -33,11 +33,11 @@ Allows a mob to randomly fly around.
 ```json
 "minecraft:behavior.random_fly": {
   "priority": 3,
-  "xz_dist": 15,
-  "y_dist": 1,
+  "avoid_damage_blocks": true,
+  "can_land_on_trees": true,
   "y_offset": 0,
   "speed_multiplier": 1,
-  "can_land_on_trees": true,
-  "avoid_damage_blocks": true
+  "xz_dist": 15,
+  "y_dist": 1
 }
 ```

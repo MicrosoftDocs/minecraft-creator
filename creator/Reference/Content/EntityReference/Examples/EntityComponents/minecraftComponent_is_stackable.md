@@ -18,7 +18,7 @@ Stackable behavior is closely related to collidable behavior. While the "minecra
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| value | true | Boolean true/false | Whether this entity is stackable. | Chest Minecart: `true` | 
+| value | true | Boolean true/false | Whether this entity is stackable. |  | 
 
 ## Samples
 
@@ -27,13 +27,4 @@ Stackable behavior is closely related to collidable behavior. While the "minecra
 
 ```json
 "minecraft:is_stackable": {}
-```
-
-#### [Chest Minecart](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chest_minecart.json)
-
-
-```json
-"minecraft:is_stackable": {
-  "value": true
-}
 ```

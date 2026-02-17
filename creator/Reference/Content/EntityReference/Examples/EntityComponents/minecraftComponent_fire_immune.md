@@ -21,10 +21,3 @@ Sets that this entity doesn't take damage from fire.
 ```json
 "minecraft:fire_immune": {}
 ```
-
-#### [Ender Crystal](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ender_crystal.json)
-
-
-```json
-"minecraft:fire_immune": true
-```

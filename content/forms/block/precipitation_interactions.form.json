@@ -1,0 +1,32 @@
+{
+  "id": "Precipitation Interactions",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Precipitation Interactions",
+    "title": "Block Precipitation Interactions",
+    "description": "Determines interactions the block will have with different precipitations. Three possible values: obrain, obstruct_rain_accumulate_snow and none",
+    "fields": [
+      {
+        "id": "precipitation_behavior",
+        "title": "Precipitation Behavior",
+        "description": "What behavior should the block have. Three possible values: obrain, obstruct_rain_accumulate_snow and none",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "none",
+            "title": "None"
+          },
+          {
+            "id": "obstruct_rain",
+            "title": "Obstruct rain"
+          },
+          {
+            "id": "obstruct_rain_accumulate_snow",
+            "title": "Obstruct rain accumulate snow"
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  }
+}

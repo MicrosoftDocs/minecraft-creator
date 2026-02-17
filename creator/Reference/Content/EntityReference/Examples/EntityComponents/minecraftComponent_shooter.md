@@ -43,9 +43,9 @@ Defines the entity's ranged attack behavior. The "minecraft:behavior.ranged_atta
 
 ```json
 "minecraft:shooter": {
+  "aux_val": 26,
   "def": "minecraft:arrow",
-  "sound": "bow",
-  "aux_val": 26
+  "sound": "bow"
 }
 ```
 

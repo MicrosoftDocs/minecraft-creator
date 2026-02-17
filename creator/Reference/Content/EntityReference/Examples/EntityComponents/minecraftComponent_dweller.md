@@ -36,11 +36,11 @@ Compels an entity to join and migrate between villages and other dwellings.
 ```json
 "minecraft:dweller": {
   "dwelling_type": "village",
-  "dweller_role": "defender",
-  "update_interval_base": 60,
-  "update_interval_variant": 40,
   "can_find_poi": false,
   "can_migrate": true,
-  "first_founding_reward": 0
+  "dweller_role": "defender",
+  "first_founding_reward": 0,
+  "update_interval_base": 60,
+  "update_interval_variant": 40
 }
 ```

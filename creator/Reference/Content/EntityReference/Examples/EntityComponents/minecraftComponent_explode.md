@@ -49,17 +49,17 @@ Defines how the entity explodes.
 
 ```json
 "minecraft:explode": {
-  "power": 3,
-  "particle_effect": "breeze_wind_burst",
-  "sound_effect": "breeze_wind_charge.burst",
   "knockback_scaling": 0.6,
-  "negates_fall_damage": false,
-  "causes_fire": false,
-  "breaks_blocks": false,
-  "allow_underwater": true,
-  "toggles_blocks": true,
   "damage_scaling": 0,
-  "max_resistance": 0
+  "allow_underwater": true,
+  "breaks_blocks": false,
+  "causes_fire": false,
+  "max_resistance": 0,
+  "negates_fall_damage": false,
+  "particle_effect": "breeze_wind_burst",
+  "toggles_blocks": true,
+  "power": 3,
+  "sound_effect": "breeze_wind_charge.burst"
 }
 ```
 
@@ -68,11 +68,11 @@ Defines how the entity explodes.
 
 ```json
 "minecraft:explode": {
-  "fuse_length": 0,
+  "causes_fire": false,
   "fuse_lit": true,
   "power": 6,
-  "causes_fire": false,
-  "destroy_affected_by_griefing": true
+  "destroy_affected_by_griefing": true,
+  "fuse_length": 0
 }
 ```
 
@@ -82,12 +82,12 @@ At /minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/:
 
 ```json
 "minecraft:explode": {
-  "fuse_length": 0,
-  "fuse_lit": true,
-  "power": 1,
   "causes_fire": true,
   "fire_affected_by_griefing": true,
-  "destroy_affected_by_griefing": true
+  "fuse_lit": true,
+  "power": 1,
+  "destroy_affected_by_griefing": true,
+  "fuse_length": 0
 }
 ```
 
@@ -105,25 +105,25 @@ At /minecraft:entity/events/minecraft:explode/:
 
 #### [Tnt Minecart](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/tnt_minecart.json)
 
-At /minecraft:entity/component_groups/minecraft:primed_tnt/minecraft:explode/: 
-
-```json
-"minecraft:explode": {
-  "fuse_length": 4,
-  "fuse_lit": true,
-  "power": 3,
-  "causes_fire": false
-}
-```
-
 At /minecraft:entity/component_groups/minecraft:instant_explode_tnt/minecraft:explode/: 
 
 ```json
 "minecraft:explode": {
-  "fuse_length": 0,
+  "causes_fire": false,
   "fuse_lit": true,
   "power": 3,
-  "causes_fire": false
+  "fuse_length": 0
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:primed_tnt/minecraft:explode/: 
+
+```json
+"minecraft:explode": {
+  "causes_fire": false,
+  "fuse_lit": true,
+  "power": 3,
+  "fuse_length": 4
 }
 ```
 
@@ -132,16 +132,16 @@ At /minecraft:entity/component_groups/minecraft:instant_explode_tnt/minecraft:ex
 
 ```json
 "minecraft:explode": {
-  "power": 1.2,
-  "particle_effect": "wind_burst",
-  "sound_effect": "wind_charge.burst",
   "knockback_scaling": 1.22,
-  "negates_fall_damage": true,
-  "causes_fire": false,
-  "breaks_blocks": false,
-  "allow_underwater": true,
-  "toggles_blocks": true,
   "damage_scaling": 0,
-  "max_resistance": 0
+  "allow_underwater": true,
+  "breaks_blocks": false,
+  "causes_fire": false,
+  "max_resistance": 0,
+  "negates_fall_damage": true,
+  "particle_effect": "wind_burst",
+  "toggles_blocks": true,
+  "power": 1.2,
+  "sound_effect": "wind_charge.burst"
 }
 ```

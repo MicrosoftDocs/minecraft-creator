@@ -70,9 +70,9 @@ At /minecraft:entity/components/minecraft:projectile/on_hit/spawn_chance/on_spaw
 
 ```json
 {
-  "test": "enum_property",
-  "subject": "other",
   "domain": "minecraft:climate_variant",
+  "subject": "other",
+  "test": "enum_property",
   "value": "warm"
 }
 ```
@@ -81,9 +81,19 @@ At /minecraft:entity/components/minecraft:projectile/on_hit/spawn_chance/on_spaw
 
 ```json
 {
-  "test": "enum_property",
-  "subject": "other",
   "domain": "minecraft:climate_variant",
+  "subject": "other",
+  "test": "enum_property",
+  "value": "cold"
+}
+```
+
+At /minecraft:entity/components/minecraft:projectile/on_hit/particle_on_hit/particle_item_name/blue_egg/: 
+
+```json
+{
+  "domain": "minecraft:climate_variant",
+  "test": "enum_property",
   "value": "cold"
 }
 ```
@@ -92,18 +102,8 @@ At /minecraft:entity/components/minecraft:projectile/on_hit/particle_on_hit/part
 
 ```json
 {
-  "test": "enum_property",
   "domain": "minecraft:climate_variant",
+  "test": "enum_property",
   "value": "warm"
-}
-```
-
-At /minecraft:entity/components/minecraft:projectile/on_hit/particle_on_hit/particle_item_name/blue_egg/: 
-
-```json
-{
-  "test": "enum_property",
-  "domain": "minecraft:climate_variant",
-  "value": "cold"
 }
 ```

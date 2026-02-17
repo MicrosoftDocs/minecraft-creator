@@ -85,16 +85,16 @@
         "samples": {
           "/vanilla/behavior_pack/entities/parrot.json": [
             {
+              "path": "/minecraft:entity/components/minecraft:healable/filters/",
+              "content": "!="
+            },
+            {
               "path": "/minecraft:entity/component_groups/minecraft:parrot_not_riding_player/minecraft:entity_sensor/subsensors[0]/event_filters/all_of[0]/",
               "content": "equals"
             },
             {
               "path": "/minecraft:entity/component_groups/minecraft:parrot_riding_player/minecraft:entity_sensor/subsensors[0]/event_filters/all_of[0]/",
               "content": "equals"
-            },
-            {
-              "path": "/minecraft:entity/components/minecraft:healable/filters/",
-              "content": "!="
             }
           ]
         }
@@ -164,11 +164,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/parrot.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:parrot_not_riding_player/minecraft:entity_sensor/subsensors[0]/event_filters/all_of[0]/",
+              "path": "/minecraft:entity/components/minecraft:healable/filters/",
               "content": true
             },
             {
-              "path": "/minecraft:entity/components/minecraft:healable/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_not_riding_player/minecraft:entity_sensor/subsensors[0]/event_filters/all_of[0]/",
               "content": true
             }
           ]
@@ -221,11 +221,19 @@
       ],
       "/vanilla/behavior_pack/entities/parrot.json": [
         {
+          "path": "/minecraft:entity/components/minecraft:healable/filters/",
+          "content": {
+            "operator": "!=",
+            "test": "is_riding",
+            "value": true
+          }
+        },
+        {
           "path": "/minecraft:entity/component_groups/minecraft:parrot_not_riding_player/minecraft:entity_sensor/subsensors[0]/event_filters/all_of[0]/",
           "content": {
             "test": "is_riding",
-            "subject": "self",
             "operator": "equals",
+            "subject": "self",
             "value": true
           }
         },
@@ -233,17 +241,9 @@
           "path": "/minecraft:entity/component_groups/minecraft:parrot_riding_player/minecraft:entity_sensor/subsensors[0]/event_filters/all_of[0]/",
           "content": {
             "test": "is_riding",
-            "subject": "self",
             "operator": "equals",
+            "subject": "self",
             "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:healable/filters/",
-          "content": {
-            "test": "is_riding",
-            "operator": "!=",
-            "value": true
           }
         }
       ]

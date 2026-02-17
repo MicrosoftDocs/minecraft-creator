@@ -44,7 +44,8 @@ Allows an entity to jump around a target.
 
 ```json
 "minecraft:behavior.jump_around_target": {
-  "priority": 5,
+  "jump_cooldown_duration": 0.5,
+  "check_collision": false,
   "filters": {
     "all_of": [
       {
@@ -69,31 +70,30 @@ Allows an entity to jump around a target.
       }
     ]
   },
-  "jump_cooldown_duration": 0.5,
-  "jump_cooldown_when_hurt_duration": 0.1,
-  "last_hurt_duration": 2,
-  "prepare_jump_duration": 0.5,
-  "max_jump_velocity": 1.4,
-  "check_collision": false,
   "entity_bounding_box_scale": 0.7,
-  "line_of_sight_obstruction_height_ignore": 4,
-  "valid_distance_to_target": [
-    4,
-    20
-  ],
   "landing_position_spread_degrees": 90,
-  "landing_distance_from_target": [
-    4,
-    8
-  ],
   "required_vertical_space": 4,
-  "snap_to_surface_block_range": 10,
   "jump_angles": [
     40,
     55,
     60,
     75,
     80
+  ],
+  "jump_cooldown_when_hurt_duration": 0.1,
+  "landing_distance_from_target": [
+    4,
+    8
+  ],
+  "last_hurt_duration": 2,
+  "line_of_sight_obstruction_height_ignore": 4,
+  "max_jump_velocity": 1.4,
+  "prepare_jump_duration": 0.5,
+  "priority": 5,
+  "snap_to_surface_block_range": 10,
+  "valid_distance_to_target": [
+    4,
+    20
   ]
 }
 ```

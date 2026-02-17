@@ -196,9 +196,9 @@
         {
           "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/",
           "content": {
+            "aux_val": 26,
             "def": "minecraft:arrow",
-            "sound": "bow",
-            "aux_val": 26
+            "sound": "bow"
           }
         }
       ],

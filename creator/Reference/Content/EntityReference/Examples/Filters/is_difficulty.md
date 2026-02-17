@@ -84,7 +84,7 @@ At Short (using Defaults)..:
 
 #### [Cave Spider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cave_spider.json)
 
-At /minecraft:entity/events/minecraft:become_hostile/sequence[1]/filters/: 
+At /minecraft:entity/events/minecraft:become_angry/sequence[1]/filters/: 
 
 ```json
 {
@@ -93,7 +93,7 @@ At /minecraft:entity/events/minecraft:become_hostile/sequence[1]/filters/:
 }
 ```
 
-At /minecraft:entity/events/minecraft:become_hostile/sequence[2]/filters/: 
+At /minecraft:entity/events/minecraft:become_angry/sequence[2]/filters/: 
 
 ```json
 {

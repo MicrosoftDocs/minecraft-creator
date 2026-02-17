@@ -137,12 +137,12 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.follow_owner/",
           "content": {
+            "can_teleport": false,
             "priority": 6,
+            "ignore_vibration": false,
             "speed_multiplier": 8,
             "start_distance": 16,
-            "stop_distance": 4,
-            "can_teleport": false,
-            "ignore_vibration": false
+            "stop_distance": 4
           }
         }
       ],

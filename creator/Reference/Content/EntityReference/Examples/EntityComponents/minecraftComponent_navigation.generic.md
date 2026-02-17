@@ -36,6 +36,7 @@ Allows this entity to generate paths by walking, swimming, flying and/or climbin
 | can_walk | true | Boolean true/false | Tells the pathfinder whether or not it can walk on the ground outside water | Frog: `true` | 
 | can_walk_in_lava | false | Boolean true/false | Tells the pathfinder whether or not it can travel in lava like walking on ground |  | 
 | is_amphibious | false | Boolean true/false | Tells the pathfinder whether or not it can walk on the ground underwater | Elder Guardian: `true` | 
+| using_door_annotation | *not set* | String |  | Elder Guardian: `true` | 
 
 ## Samples
 
@@ -44,11 +45,12 @@ Allows this entity to generate paths by walking, swimming, flying and/or climbin
 
 ```json
 "minecraft:navigation.generic": {
-  "is_amphibious": true,
+  "can_breach": true,
+  "can_walk": false,
   "can_path_over_water": false,
   "can_swim": true,
-  "can_walk": false,
-  "can_breach": true
+  "is_amphibious": true,
+  "using_door_annotation": true
 }
 ```
 
@@ -57,25 +59,11 @@ Allows this entity to generate paths by walking, swimming, flying and/or climbin
 
 ```json
 "minecraft:navigation.generic": {
-  "is_amphibious": true,
+  "avoid_damage_blocks": true,
   "can_path_over_water": true,
+  "can_sink": false,
   "can_swim": true,
   "can_walk": true,
-  "can_sink": false,
-  "avoid_damage_blocks": true
-}
-```
-
-#### [Turtle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/turtle.json)
-
-
-```json
-"minecraft:navigation.generic": {
-  "is_amphibious": true,
-  "can_path_over_water": false,
-  "can_swim": true,
-  "can_walk": true,
-  "can_sink": false,
-  "avoid_damage_blocks": true
+  "is_amphibious": true
 }
 ```

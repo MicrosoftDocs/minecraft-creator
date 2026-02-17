@@ -83,22 +83,22 @@
         "samples": {
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:environment_sensor/triggers/filters/",
-              "content": "<"
-            },
-            {
               "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:environment_sensor/triggers/filters/",
               "content": ">"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:environment_sensor/triggers/filters/",
+              "content": "<"
             }
           ],
           "/vanilla/behavior_pack/entities/spider.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:environment_sensor/triggers/filters/",
-              "content": "<"
-            },
-            {
               "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:environment_sensor/triggers/filters/",
               "content": ">"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:environment_sensor/triggers/filters/",
+              "content": "<"
             }
           ]
         }
@@ -155,11 +155,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:environment_sensor/triggers/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:environment_sensor/triggers/filters/",
               "content": 0.49
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:environment_sensor/triggers/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:environment_sensor/triggers/filters/",
               "content": 0.49
             }
           ]
@@ -172,11 +172,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:environment_sensor/triggers/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:environment_sensor/triggers/filters/",
               "content": "is_brightness"
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:environment_sensor/triggers/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:environment_sensor/triggers/filters/",
               "content": "is_brightness"
             }
           ]
@@ -196,36 +196,36 @@
       ],
       "/vanilla/behavior_pack/entities/cave_spider.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:environment_sensor/triggers/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:environment_sensor/triggers/filters/",
           "content": {
+            "operator": ">",
             "test": "is_brightness",
-            "operator": "<",
             "value": 0.49
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:environment_sensor/triggers/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:environment_sensor/triggers/filters/",
           "content": {
+            "operator": "<",
             "test": "is_brightness",
-            "operator": ">",
             "value": 0.49
           }
         }
       ],
       "/vanilla/behavior_pack/entities/spider.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:environment_sensor/triggers/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:environment_sensor/triggers/filters/",
           "content": {
+            "operator": ">",
             "test": "is_brightness",
-            "operator": "<",
             "value": 0.49
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:environment_sensor/triggers/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:environment_sensor/triggers/filters/",
           "content": {
+            "operator": "<",
             "test": "is_brightness",
-            "operator": ">",
             "value": 0.49
           }
         }
