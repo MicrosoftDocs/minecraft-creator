@@ -53,6 +53,7 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 - [addProgressIndicator](#addprogressindicator)
 - [addProxyPane](#addproxypane)
 - [addString](#addstring)
+- [addTagContainer](#addtagcontainer)
 - [addText](#addtext)
 - [addToggleGroup](#addtogglegroup)
 - [addVector2](#addvector2)
@@ -348,6 +349,18 @@ Adds an editable string item to the pane
 - **options**?: *IStringPropertyItemOptions*
 
 **Returns** *IStringPropertyItem*
+
+### **addTagContainer**
+`
+addTagContainer(options?: ITagContainerPropertyItemOptions): ITagContainerPropertyItem
+`
+
+Adds a tag container to the pane.
+
+#### **Parameters**
+- **options**?: *ITagContainerPropertyItemOptions*
+
+**Returns** *ITagContainerPropertyItem*
 
 ### **addText**
 `

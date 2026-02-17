@@ -38,6 +38,7 @@ new CuboidBrushShape(settings?: {
         hollow?: boolean;
         thickness?: number;
         enableHollowSettings?: boolean;
+        hideRotation?: boolean;
     })
 `
 
@@ -58,6 +59,7 @@ Constructs a new instance of the `CuboidBrushShape` class
         hollow?: boolean;
         thickness?: number;
         enableHollowSettings?: boolean;
+        hideRotation?: boolean;
     }*
 
 **Returns** *CuboidBrushShape*

@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.5.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.10-beta.23 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.10-beta.24 of Minecraft.
 
 ## Available Versions
 - `2.7.0-beta`
@@ -640,6 +640,7 @@ The following API versions are from a major version that is documented here: [*@
 - [InvalidBlockComponentError](InvalidBlockComponentError.md)
 - [InvalidContainerError](InvalidContainerError.md)
 - [InvalidContainerSlotError](InvalidContainerSlotError.md)
+- [InvalidEntityComponentError](InvalidEntityComponentError.md)
 - [InvalidEntityError](InvalidEntityError.md)
 - [InvalidItemStackError](InvalidItemStackError.md)
 - [InvalidIteratorError](InvalidIteratorError.md)

@@ -20,6 +20,7 @@ A simple message form UI, 2 buttons and a text body.
 - [button1](#button1)
 - [button2](#button2)
 - [close](#close)
+- [isShowing](#isshowing)
 - [show](#show)
 - [create](#create)
 
@@ -28,7 +29,7 @@ A simple message form UI, 2 buttons and a text body.
 body(text: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage): MessageBox
 `
 
-Sets the data for the text in the body of the form. It is contained within a scroll view to allow for lots of text.
+Sets the data for the text in the body of the message box. It is contained within a scroll view to allow for lots of text.
 
 #### **Parameters**
 - **text**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
@@ -40,7 +41,7 @@ Sets the data for the text in the body of the form. It is contained within a scr
 button1(label: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, tooltip?: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage): MessageBox
 `
 
-Sets the data for the top button in the form.
+Sets the data for the top button in the message box.
 
 #### **Parameters**
 - **label**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
@@ -53,7 +54,7 @@ Sets the data for the top button in the form.
 button2(label: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, tooltip?: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage): MessageBox
 `
 
-Sets the data for the bottom button in the form.
+Sets the data for the bottom button in the message box.
 
 #### **Parameters**
 - **label**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
@@ -66,16 +67,25 @@ Sets the data for the bottom button in the form.
 close(): void
 `
 
-Closes the form. Will throw an error if the form is not open.
+Tell the client to close the message box. Throws {@link FormCloseError} if the message box is not open.
 
 **Returns** *void*
+
+### **isShowing**
+`
+isShowing(): boolean
+`
+
+Returns true if the message box is currently being shown to the player.
+
+**Returns** *boolean*
 
 ### **show**
 `
 show(): Promise<MessageBoxResult>
 `
 
-Show this modal to the player. Will throw an error if the modal is already showing.
+Show this message box to the player. Will return a result even if the client was busy (i.e. in another menu). Will throw if the user disconnects.
 
 **Returns** *Promise<MessageBoxResult>*
 
@@ -84,7 +94,7 @@ Show this modal to the player. Will throw an error if the modal is already showi
 static create(player: minecraftserver.Player, title: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage): MessageBox
 `
 
-Creates a message form for a certain player. Use this instead of a constructor.
+Creates a message box for a certain player. Use this instead of a constructor.
 
 #### **Parameters**
 - **player**: *minecraftserver.Player*

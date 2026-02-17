@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.10-beta.23 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.10-beta.24 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -93,6 +93,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.10-
 - [SplineType](SplineType.md)
 - [StatusBarAlignment](StatusBarAlignment.md)
 - [StructureSource](StructureSource.md)
+- [TagContainerVariant](TagContainerVariant.md)
 - [ThemeSettingsColorKey](ThemeSettingsColorKey.md)
 - [WidgetCollisionType](WidgetCollisionType.md)
 - [WidgetComponentType](WidgetComponentType.md)
@@ -380,6 +381,8 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.10-
 - [IStringPropertyItemOptions](IStringPropertyItemOptions.md)
 - [ISubPanePropertyItem](ISubPanePropertyItem.md)
 - [ISubPanePropertyItemOptions](ISubPanePropertyItemOptions.md)
+- [ITagContainerPropertyItem](ITagContainerPropertyItem.md)
+- [ITagContainerPropertyItemOptions](ITagContainerPropertyItemOptions.md)
 - [ITextPropertyItem](ITextPropertyItem.md)
 - [ITextPropertyItemOptions](ITextPropertyItemOptions.md)
 - [IToggleGroupPropertyItem](IToggleGroupPropertyItem.md)

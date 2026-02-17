@@ -28,7 +28,7 @@ Returns permutation information about the block receiving the event.
 Type: [*BlockPermutation*](BlockPermutation.md)
 
 ### **entitySource**
-`read-only entitySource?: Entity;`
+`read-only entitySource: Entity;`
 
 The entity that sent the event.
 

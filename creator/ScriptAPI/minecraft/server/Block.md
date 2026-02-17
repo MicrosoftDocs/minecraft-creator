@@ -171,6 +171,9 @@ Type: *number*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getMapColor](#getmapcolor)
 ::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [getParts](#getparts)
+::: moniker-end
 - [getRedstonePower](#getredstonepower)
 - [getSkyLightLevel](#getskylightlevel)
 - [getTags](#gettags)
@@ -406,6 +409,24 @@ getMapColor(): RGBA
 `
 
 **Returns** [*RGBA*](RGBA.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getParts**
+`
+getParts(): Block[] | undefined
+`
+
+Returns array of all loaded block parts if this block has the 'minecraft:multi_block' trait. If it does not have the trait returns undefined
+
+**Returns** [*Block*](Block.md)[] | *undefined*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

@@ -14,3 +14,5 @@ description: Contents of the @minecraft/server-editor.MinimapViewType enumeratio
 `BlockView = 0`
 
 One-to-one mapping where each block equals one pixel on the minimap.
+### **CustomBiomeView**
+`CustomBiomeView = 1`

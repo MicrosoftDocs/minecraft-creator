@@ -58,6 +58,8 @@ Type of item that can be added to the property pane
 `String = editorUI:String`
 ### **SubPane**
 `SubPane = editorUI:SubPane`
+### **TagContainer**
+`TagContainer = editorUI:TagContainer`
 ### **Text**
 `Text = editorUI:Text`
 ### **ToggleGroup**

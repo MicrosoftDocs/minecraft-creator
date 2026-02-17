@@ -194,6 +194,9 @@ Type: *string*
 
 ## Methods
 - [addEffect](#addeffect)
+::: moniker range="=minecraft-bedrock-experimental"
+- [addItem](#additem)
+::: moniker-end
 - [addTag](#addtag)
 - [applyDamage](#applydamage)
 - [applyImpulse](#applyimpulse)
@@ -318,6 +321,28 @@ function quickFoxLazyDog(log: (message: string, status?: number) => void, target
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/quickFoxLazyDog.ts) code sandbox.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **addItem**
+`
+addItem(itemStack: ItemStack): ItemStack | undefined
+`
+
+Adds an item to the entity's inventory.
+
+#### **Parameters**
+- **itemStack**: [*ItemStack*](ItemStack.md)
+
+**Returns** [*ItemStack*](ItemStack.md) | *undefined* - Returns undefined if the item was fully added or returns an ItemStack with the remaining count.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*ContainerRulesError*](ContainerRulesError.md), *Error*, [*InvalidEntityComponentError*](InvalidEntityComponentError.md), [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
 
 ### **addTag**
 `

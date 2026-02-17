@@ -24,15 +24,19 @@ Contains types related to administering a Bedrock Dedicated Server. These types 
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.10-beta.23 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.10-beta.24 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`
 
 ## Classes
 - [AdminBeforeEvents](AdminBeforeEvents.md)
+- [AllowList](AllowList.md)
 - [AsyncPlayerJoinBeforeEvent](AsyncPlayerJoinBeforeEvent.md)
 - [AsyncPlayerJoinBeforeEventSignal](AsyncPlayerJoinBeforeEventSignal.md)
+- [DedicatedServerUtils](DedicatedServerUtils.md)
+- [LevelStorage](LevelStorage.md)
+- [LevelStorageQuerySnapshotFile](LevelStorageQuerySnapshotFile.md)
 - [SecretString](SecretString.md)
 - [ServerSecrets](ServerSecrets.md)
 - [ServerVariables](ServerVariables.md)
@@ -42,7 +46,10 @@ This is version 1.x.x of this module, which is the latest as of version 1.26.10-
 - [TransferPlayerNetherNetOptions](TransferPlayerNetherNetOptions.md)
 
 ## Errors
+- [AllowListFileReloadError](AllowListFileReloadError.md)
+- [AllowListModificationError](AllowListModificationError.md)
 - [DisconnectedError](DisconnectedError.md)
+- [LevelStorageSaveStateChangeError](LevelStorageSaveStateChangeError.md)
 
 ## Functions
 
@@ -71,6 +78,13 @@ Notes:
 `static read-only beforeEvents: AdminBeforeEvents;`
 
 Type: [*AdminBeforeEvents*](AdminBeforeEvents.md)
+  
+### **dedicatedServer**
+`static read-only dedicatedServer: DedicatedServerUtils | undefined;`
+
+A globally available, optional object that contains dedicated-server only apis.
+
+Type: [*DedicatedServerUtils*](DedicatedServerUtils.md)
   
 ### **secrets**
 `static read-only secrets: ServerSecrets;`

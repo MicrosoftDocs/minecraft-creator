@@ -17,12 +17,12 @@ A customizable form that lets you put buttons, labels, toggles, dropdowns, slide
 
 ## Methods
 - [button](#button)
-- [canShow](#canshow)
 - [close](#close)
 - [closeButton](#closebutton)
 - [divider](#divider)
 - [dropdown](#dropdown)
 - [header](#header)
+- [isShowing](#isshowing)
 - [label](#label)
 - [show](#show)
 - [slider](#slider)
@@ -45,21 +45,12 @@ Inserts a button into the Custom form. onClick is called when the button is pres
 
 **Returns** *CustomForm*
 
-### **canShow**
-`
-canShow(): boolean
-`
-
-Can this form be shown to the player right now?
-
-**Returns** *boolean*
-
 ### **close**
 `
 close(): void
 `
 
-Closes the form. Throws an error if the form is not open.
+Tell the client to close the form. Throws an error if the form is not open.
 
 **Returns** *void*
 
@@ -112,6 +103,15 @@ Inserts a header (i.e. large sized text) into the Custom form.
 
 **Returns** *CustomForm*
 
+### **isShowing**
+`
+isShowing(): boolean
+`
+
+Returns true if the form is currently being shown to the player.
+
+**Returns** *boolean*
+
 ### **label**
 `
 label(text: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, options?: TextOptions): CustomForm
@@ -127,12 +127,12 @@ Inserts a label (i.e. medium sized text) into the Custom form.
 
 ### **show**
 `
-show(): Promise<void>
+show(): Promise<boolean>
 `
 
-Shows the form to the player. Will throw errors if the form is currently being shown or if another behavior pack is showing a form.
+Shows the form to the player. Will return false if the client was busy (i.e. in another menu or this one is open). Will throw if the user disconnects.
 
-**Returns** *Promise<void>*
+**Returns** *Promise<boolean>*
 
 ### **slider**
 `

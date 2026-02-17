@@ -54,6 +54,7 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`canPlace`](Block.md#canplace)*
 - Added function *[`getComponents`](Block.md#getcomponents)*
 - Added function *[`getMapColor`](Block.md#getmapcolor)*
+- Added function *[`getParts`](Block.md#getparts)*
 - Added function *[`hasComponent`](Block.md#hascomponent)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
@@ -92,6 +93,7 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`stopSound`](Dimension.md#stopsound)*
 #### Changed *[`Entity`](Entity.md)*
 - Added property *[`target`](Entity.md#target)*
+- Added function *[`addItem`](Entity.md#additem)*
 #### Changed *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
 - Added property *[`airSupply`](EntityBreathableComponent.md#airsupply)*
 - Added property *[`canBreathe`](EntityBreathableComponent.md#canbreathe)*
