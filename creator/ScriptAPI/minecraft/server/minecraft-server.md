@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.5.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.10-beta.24 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.10-beta.0 of Minecraft.
 
 ## Available Versions
 - `2.7.0-beta`
@@ -100,6 +100,7 @@ The following API versions are from a major version that is documented here: [*@
 - [ItemLockMode](ItemLockMode.md)
 - [LiquidSettings](LiquidSettings.md)
 - [LiquidType](LiquidType.md)
+- [LocatorBarErrorReason](LocatorBarErrorReason.md)
 - [MemoryTier](MemoryTier.md)
 - [MoonPhase](MoonPhase.md)
 - [MovementType](MovementType.md)
@@ -121,6 +122,7 @@ The following API versions are from a major version that is documented here: [*@
 - [TimeOfDay](TimeOfDay.md)
 - [TintMethod](TintMethod.md)
 - [WatchdogTerminateReason](WatchdogTerminateReason.md)
+- [WaypointTexture](WaypointTexture.md)
 - [WeatherType](WeatherType.md)
 
 # Type Aliases
@@ -326,6 +328,7 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityUnderwaterMovementComponent](EntityUnderwaterMovementComponent.md)
 - [EntityVariantComponent](EntityVariantComponent.md)
 - [EntityWantsJockeyComponent](EntityWantsJockeyComponent.md)
+- [EntityWaypoint](EntityWaypoint.md)
 - [ExplorationMapFunction](ExplorationMapFunction.md)
 - [ExplosionAfterEvent](ExplosionAfterEvent.md)
 - [ExplosionAfterEventSignal](ExplosionAfterEventSignal.md)
@@ -388,6 +391,8 @@ The following API versions are from a major version that is documented here: [*@
 - [LeverActionAfterEventSignal](LeverActionAfterEventSignal.md)
 - [LinearSpline](LinearSpline.md)
 - [ListBlockVolume](ListBlockVolume.md)
+- [LocationWaypoint](LocationWaypoint.md)
+- [LocatorBar](LocatorBar.md)
 - [LootingEnchantFunction](LootingEnchantFunction.md)
 - [LootItem](LootItem.md)
 - [LootItemCondition](LootItemCondition.md)
@@ -457,6 +462,7 @@ The following API versions are from a major version that is documented here: [*@
 - [PlayerSwingStartAfterEventSignal](PlayerSwingStartAfterEventSignal.md)
 - [PlayerUseNameTagAfterEvent](PlayerUseNameTagAfterEvent.md)
 - [PlayerUseNameTagAfterEventSignal](PlayerUseNameTagAfterEventSignal.md)
+- [PlayerWaypoint](PlayerWaypoint.md)
 - [PotionDeliveryType](PotionDeliveryType.md)
 - [PotionEffectType](PotionEffectType.md)
 - [Potions](Potions.md)
@@ -517,6 +523,7 @@ The following API versions are from a major version that is documented here: [*@
 - [TripWireTripAfterEventSignal](TripWireTripAfterEventSignal.md)
 - [WatchdogTerminateBeforeEvent](WatchdogTerminateBeforeEvent.md)
 - [WatchdogTerminateBeforeEventSignal](WatchdogTerminateBeforeEventSignal.md)
+- [Waypoint](Waypoint.md)
 - [WeatherChangeAfterEvent](WeatherChangeAfterEvent.md)
 - [WeatherChangeAfterEventSignal](WeatherChangeAfterEventSignal.md)
 - [WeatherChangeBeforeEvent](WeatherChangeBeforeEvent.md)
@@ -577,6 +584,7 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityQueryScoreOptions](EntityQueryScoreOptions.md)
 - [EntityRaycastHit](EntityRaycastHit.md)
 - [EntityRaycastOptions](EntityRaycastOptions.md)
+- [EntityVisibilityRules](EntityVisibilityRules.md)
 - [EqualsComparison](EqualsComparison.md)
 - [ExplosionOptions](ExplosionOptions.md)
 - [GetBlocksStandingOnOptions](GetBlocksStandingOnOptions.md)
@@ -597,6 +605,7 @@ The following API versions are from a major version that is documented here: [*@
 - [PlayerAimAssistSettings](PlayerAimAssistSettings.md)
 - [PlayerSoundOptions](PlayerSoundOptions.md)
 - [PlayerSwingEventOptions](PlayerSwingEventOptions.md)
+- [PlayerVisibilityRules](PlayerVisibilityRules.md)
 - [ProgressKeyFrame](ProgressKeyFrame.md)
 - [ProjectileShootOptions](ProjectileShootOptions.md)
 - [RangeComparison](RangeComparison.md)
@@ -619,6 +628,8 @@ The following API versions are from a major version that is documented here: [*@
 - [Vector2](Vector2.md)
 - [Vector3](Vector3.md)
 - [VectorXZ](VectorXZ.md)
+- [WaypointTextureBounds](WaypointTextureBounds.md)
+- [WaypointTextureSelector](WaypointTextureSelector.md)
 - [WorldSoundOptions](WorldSoundOptions.md)
 
 ## Errors
@@ -647,12 +658,15 @@ The following API versions are from a major version that is documented here: [*@
 - [InvalidPotionDeliveryTypeError](InvalidPotionDeliveryTypeError.md)
 - [InvalidPotionEffectTypeError](InvalidPotionEffectTypeError.md)
 - [InvalidStructureError](InvalidStructureError.md)
+- [InvalidWaypointError](InvalidWaypointError.md)
+- [InvalidWaypointTextureSelectorError](InvalidWaypointTextureSelectorError.md)
 - [ItemCustomComponentAlreadyRegisteredError](ItemCustomComponentAlreadyRegisteredError.md)
 - [ItemCustomComponentReloadNewComponentError](ItemCustomComponentReloadNewComponentError.md)
 - [ItemCustomComponentReloadNewEventError](ItemCustomComponentReloadNewEventError.md)
 - [ItemCustomComponentReloadVersionError](ItemCustomComponentReloadVersionError.md)
 - [LocationInUnloadedChunkError](LocationInUnloadedChunkError.md)
 - [LocationOutOfWorldBoundariesError](LocationOutOfWorldBoundariesError.md)
+- [LocatorBarError](LocatorBarError.md)
 - [NamespaceNameError](NamespaceNameError.md)
 - [PlaceJigsawError](PlaceJigsawError.md)
 - [RawMessageError](RawMessageError.md)

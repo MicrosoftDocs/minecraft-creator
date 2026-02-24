@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.10-beta.24 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.10-beta.0 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -424,6 +424,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.10-
 - [InvalidWidgetComponentError](InvalidWidgetComponentError.md)
 - [InvalidWidgetError](InvalidWidgetError.md)
 - [InvalidWidgetGroupError](InvalidWidgetGroupError.md)
+- [TransactionManagerNoChangesError](TransactionManagerNoChangesError.md)
 
 ## Functions
 

@@ -42,7 +42,7 @@ Type: *number*
 
 ### **createTickingArea**
 `
-createTickingArea(identifier: string, options: TickingAreaOptions): Promise<TickingArea>
+createTickingArea(identifier: string, options: TickingAreaOptions): Promise<void>
 `
 
 Creates a ticking area. Promise will return when all the chunks in the area are loaded and ticking.
@@ -51,7 +51,7 @@ Creates a ticking area. Promise will return when all the chunks in the area are 
 - **identifier**: *string*
 - **options**: [*TickingAreaOptions*](TickingAreaOptions.md)
 
-**Returns** Promise&lt;[*TickingArea*](TickingArea.md)&gt;
+**Returns** Promise&lt;*void*&gt;
   
 Notes:
 - This function can't be called in restricted-execution mode.

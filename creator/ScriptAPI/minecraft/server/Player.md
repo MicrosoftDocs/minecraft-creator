@@ -122,6 +122,18 @@ Type: *number*
 Notes:
   - This property can throw errors when used.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **locatorBar**
+`read-only locatorBar: LocatorBar;`
+
+The player's Locator Bar. This property is used for managing waypoints displayed on the HUD.
+
+Type: [*LocatorBar*](LocatorBar.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **name**
 `read-only name: string;`
 
