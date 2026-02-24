@@ -25,7 +25,16 @@
         "description": "Which states to enable. Must specify at least one. Options: [\"minecraft:block_face\", \"minecraft:vertical_half\"].",
         "dataType": 17,
         "minLength": 1,
-        "maxLength": 2,
+        "choices": [
+          {
+            "id": "minecraft:block_face",
+            "title": "Minecraft:block face"
+          },
+          {
+            "id": "minecraft:vertical_half",
+            "title": "Minecraft:vertical half"
+          }
+        ],
         "isRequired": true
       }
     ]

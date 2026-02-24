@@ -120,6 +120,7 @@ description: Changelog of the `@minecraft/server` module
 - Changed function *[`get`](EntityTypes.md#get)*
   - Changed return type from [*EntityType*](EntityType.md) to *EntityType* | *undefined*
   - Changed argument `identifier` type from *string* to *EntityIdentifierType<NoInfer<T>>*
+#### Added *[`EntityWaypoint`](EntityWaypoint.md)*
 #### Changed *[`FeedItem`](FeedItem.md)*
 - Added property *[`resultItem`](FeedItem.md#resultitem)*
 #### Changed *[`GameRules`](GameRules.md)*
@@ -129,10 +130,13 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`ItemType`](ItemType.md)*
 - Added property *[`localizationKey`](ItemType.md#localizationkey)*
 #### Added *[`LinearSpline`](LinearSpline.md)*
+#### Added *[`LocationWaypoint`](LocationWaypoint.md)*
+#### Added *[`LocatorBar`](LocatorBar.md)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
 #### Added *[`PackSettingChangeAfterEvent`](PackSettingChangeAfterEvent.md)*
 #### Added *[`PackSettingChangeAfterEventSignal`](PackSettingChangeAfterEventSignal.md)*
 #### Changed *[`Player`](Player.md)*
+- Added property *[`locatorBar`](Player.md#locatorbar)*
 - Added property *[`partyId`](Player.md#partyid)*
 - Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`getAimAssist`](Player.md#getaimassist)*
@@ -144,6 +148,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
 #### Added *[`PlayerUseNameTagAfterEvent`](PlayerUseNameTagAfterEvent.md)*
 #### Added *[`PlayerUseNameTagAfterEventSignal`](PlayerUseNameTagAfterEventSignal.md)*
+#### Added *[`PlayerWaypoint`](PlayerWaypoint.md)*
 #### Changed *[`Potions`](Potions.md)*
 - Changed function *[`resolve`](Potions.md#resolve)*
   - Changed return type from [*ItemStack*](ItemStack.md) (throws exceptions) to *ItemStack* (throws exceptions)
@@ -158,6 +163,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`TickingAreaManager`](TickingAreaManager.md)*
 #### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
+#### Added *[`Waypoint`](Waypoint.md)*
 #### Changed *[`World`](World.md)*
 - Added property *[`seed`](World.md#seed)*
 - Added property *[`tickingAreaManager`](World.md#tickingareamanager)*
@@ -192,8 +198,10 @@ description: Changelog of the `@minecraft/server` module
 - Added value `Body`
 #### Changed enum [`GameRule`](GameRule.md)
 - Added value `LocatorBar`
+#### Added enum [`LocatorBarErrorReason`](LocatorBarErrorReason.md)
 #### Added enum [`TickingAreaErrorReason`](TickingAreaErrorReason.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
+#### Added enum [`WaypointTexture`](WaypointTexture.md)
 ## 2.5.0
 #### Added *[`PlayerSwingStartAfterEvent`](PlayerSwingStartAfterEvent.md)*
 #### Added *[`PlayerSwingStartAfterEventSignal`](PlayerSwingStartAfterEventSignal.md)*

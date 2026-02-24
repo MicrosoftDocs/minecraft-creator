@@ -1,0 +1,42 @@
+{
+  "id": "minecraft:pushable_by_block",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:pushable_by_block",
+    "title": "Pushable By Block",
+    "description": "Allows the entity to be pushed by certain blocks, like Shulker Boxes and Pistons.",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable_by_block/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable_by_block/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable_by_block/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable_by_block/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/goat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable_by_block/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

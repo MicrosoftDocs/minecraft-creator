@@ -22,7 +22,7 @@
         "id": "components",
         "title": "Components",
         "dataType": 16,
-        "technicalDescription": "Block with \"geometry\" set at \"minecraft:geometry.full_block\" cannot have a \"random_offset\"",
+        "technicalDescription": "Block cannot have both \"minecraft:redstone_producer\" and \"minecraft:redstone_consumer\" components.",
         "subFormId": "block_components/components"
       },
       {

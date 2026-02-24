@@ -4,6 +4,8 @@
   href: minecraftBlock_block_light_absorption.md
 - name: minecraft:block_light_emission
   href: minecraftBlock_block_light_emission.md
+- name: minecraft:chest_obstruction
+  href: minecraftBlock_chest_obstruction.md
 - name: minecraft:collision_box
   href: minecraftBlock_collision_box.md
 - name: minecraft:connection_rule

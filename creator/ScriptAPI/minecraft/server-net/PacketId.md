@@ -80,6 +80,8 @@ Represents the unique type of network packet.
 `ChangeMobPropertyPacket = "ChangeMobPropertyPacket"`
 ### **ChunkRadiusUpdatedPacket**
 `ChunkRadiusUpdatedPacket = "ChunkRadiusUpdatedPacket"`
+### **ClientboundAttributeLayerSyncPacket**
+`ClientboundAttributeLayerSyncPacket = "ClientboundAttributeLayerSyncPacket"`
 ### **ClientboundCloseFormPacket**
 `ClientboundCloseFormPacket = "ClientboundCloseFormPacket"`
 ### **ClientboundControlSchemeSetPacket**

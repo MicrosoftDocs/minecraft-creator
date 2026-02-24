@@ -160,6 +160,8 @@ ms.date: 02/11/2025
 | [minecraft:preferred_path](EntityComponents/minecraftComponent_preferred_path.md)| Specifies costing information for mobs that prefer to walk on preferred paths. |
 | [minecraft:projectile](EntityComponents/minecraftComponent_projectile.md)| Allows the entity to be a thrown entity. |
 | [minecraft:pushable](EntityComponents/minecraftComponent_pushable.md)| Defines what can push an entity between other entities and pistons. |
+| [minecraft:pushable_by_block](EntityComponents/minecraftComponent_pushable_by_block.md)| Allows the entity to be pushed by certain blocks, like Shulker Boxes and Pistons. |
+| [minecraft:pushable_by_entity](EntityComponents/minecraftComponent_pushable_by_entity.md)| Allows an entity to be pushed by other entities. |
 | [minecraft:push_through](EntityComponents/minecraftComponent_push_through.md)| Sets the distance through which the entity can push through. |
 | [minecraft:raid_trigger](EntityComponents/minecraftComponent_raid_trigger.md)| Attempts to trigger a raid at the entity's location. |
 | [minecraft:rail_movement](EntityComponents/minecraftComponent_rail_movement.md)| Defines the entity's movement on the rails. |

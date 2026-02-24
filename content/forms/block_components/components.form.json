@@ -129,6 +129,13 @@
         "isDeprecated": true
       },
       {
+        "id": "minecraft:chest_obstruction",
+        "title": "Minecraft Chest Obstruction",
+        "description": "This defines how a block reacts to a chest being opened underneath it.",
+        "dataType": 16,
+        "subFormId": "block_components/chest_obstruction"
+      },
+      {
         "id": "minecraft:collision_box",
         "title": "Minecraft Collision Box",
         "description": "Defines the area of the block that collides with entities. If set to true, default values are used. If set to false, the block's collision with entities is disabled. If this component is omitted, default values are used.",
@@ -323,6 +330,13 @@
         "dataType": 16
       },
       {
+        "id": "minecraft:embedded_visual",
+        "title": "Minecraft Embedded Visual",
+        "description": "This defines how a block embedded into an other block renders. Eg. a block in a flowerpot.",
+        "dataType": 16,
+        "subFormId": "block_components/embedded_visual"
+      },
+      {
         "id": "minecraft:entity_fall_on",
         "title": "Minecraft Entity Fall On",
         "description": "Configures the behavior of an entity falling on this block. The minimum distance in blocks that an actor needs to fall before events are triggered.",
@@ -509,9 +523,71 @@
       {
         "id": "minecraft:map_color",
         "title": "Minecraft Map Color",
-        "description": "Sets the color and optional tint of the block when rendered to a map.",
-        "dataType": 16,
-        "subFormId": "block_components/map_color"
+        "description": "Sets the color of the block when rendered to a map.Can be a direct color representation or an object with a \"color\" and \"tint_method\" field.",
+        "dataType": 24,
+        "alternates": [
+          {
+            "id": "minecraft:map_color",
+            "dataType": 38,
+            "minLength": 3,
+            "maxLength": 3
+          },
+          {
+            "id": "minecraft:map_color",
+            "dataType": 16,
+            "subForm": {
+              "id": "minecraft:map_color",
+              "title": "Map Color",
+              "description": "Sets the color and optional tint of the block.",
+              "fields": [
+                {
+                  "id": "color",
+                  "title": "Color",
+                  "description": "Sets the color of the block when rendered to a map.",
+                  "dataType": 16,
+                  "isRequired": true
+                },
+                {
+                  "id": "tint_method",
+                  "title": "Tint Method",
+                  "description": "Sets the tint method of the block when rendered to a map. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint. Supported tint methods are \"none\", \"default_foliage\", \"birch_foliage\", \"evergreen_foliage\", \"dry_foliage\", \"grass\" and \"water\"",
+                  "dataType": 2,
+                  "choices": [
+                    {
+                      "id": "birch_foliage",
+                      "title": "Birch foliage"
+                    },
+                    {
+                      "id": "default_foliage",
+                      "title": "Default foliage"
+                    },
+                    {
+                      "id": "dry_foliage",
+                      "title": "Dry foliage"
+                    },
+                    {
+                      "id": "evergreen_foliage",
+                      "title": "Evergreen foliage"
+                    },
+                    {
+                      "id": "grass",
+                      "title": "Grass"
+                    },
+                    {
+                      "id": "none",
+                      "title": "None"
+                    },
+                    {
+                      "id": "water",
+                      "title": "Water"
+                    }
+                  ],
+                  "defaultValue": "none"
+                }
+              ]
+            }
+          }
+        ]
       },
       {
         "id": "minecraft:material_instances",
@@ -606,6 +682,13 @@
         "description": "The basic redstone properties of a block. If the component is not provided the default values are used.",
         "dataType": 16,
         "subFormId": "block_components/redstone_conductivity"
+      },
+      {
+        "id": "minecraft:redstone_consumer",
+        "title": "Minecraft Redstone Consumer",
+        "description": "A component describing how a block can consume and potentially propagate a redstone signal. This component is not available for block permutations.",
+        "dataType": 16,
+        "subFormId": "block_components/redstone_consumer"
       },
       {
         "id": "minecraft:redstone_producer",

@@ -1,0 +1,31 @@
+{
+  "id": "Redstone Consumer",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Redstone Consumer",
+    "title": "Block Components Redstone Consumer",
+    "description": "A component describing how a block can consume and potentially propagate a redstone signal. This component is not available for block permutations.",
+    "fields": [
+      {
+        "id": "min_power",
+        "title": "Min Power",
+        "description": "Optional minimum value for incoming signal strength. If signal strength is greater than or equal to this value then the 'onRedstoneUpdate' event is sent to Scripts. Defaults to 0 meaning event is always emitted.",
+        "dataType": 0,
+        "defaultValue": 0,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 15
+          }
+        ]
+      },
+      {
+        "id": "propagates_power",
+        "title": "Propagates Power",
+        "description": "Optional Boolean to control whether a signal can pass through this block or not, defaults to false.",
+        "dataType": 1,
+        "defaultValue": false
+      }
+    ]
+  }
+}
