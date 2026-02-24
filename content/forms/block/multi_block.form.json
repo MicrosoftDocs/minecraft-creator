@@ -1,0 +1,59 @@
+{
+  "id": "Multi Block",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Multi Block",
+    "title": "Block Multi Block",
+    "description": "Adds the \"minecraft:multi_block_part\" state and multi block functionality to the block.",
+    "fields": [
+      {
+        "id": "direction",
+        "title": "Facing",
+        "description": "The direction the block parts are placed starting from 'minecraft:multi_block_part' permutation '0' to permutation 'parts'. Default value is 'up'.",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "down",
+            "title": "Down"
+          },
+          {
+            "id": "up",
+            "title": "Up"
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "enabled_states",
+        "title": "Enabled States",
+        "description": "Which state to enable. Must specify at least one. Options: [\"minecraft:multi_block_part\"].",
+        "dataType": 17,
+        "minLength": 1,
+        "choices": [
+          {
+            "id": "minecraft:multi_block_part",
+            "title": "Minecraft:multi block part"
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "parts",
+        "title": "Parts",
+        "description": "The number of block parts, this sets the value for state 'minecraft:multi_block_part'. Default value is '2'.",
+        "dataType": 0,
+        "defaultValue": 2,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 2
+          },
+          {
+            "comparison": "<=",
+            "value": 4
+          }
+        ]
+      }
+    ]
+  }
+}

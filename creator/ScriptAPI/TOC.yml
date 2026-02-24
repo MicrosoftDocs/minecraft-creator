@@ -142,6 +142,8 @@
       href: minecraft/server/LiquidSettings.md
     - name: LiquidType
       href: minecraft/server/LiquidType.md
+    - name: LocatorBarErrorReason
+      href: minecraft/server/LocatorBarErrorReason.md
     - name: MemoryTier
       href: minecraft/server/MemoryTier.md
     - name: MoonPhase
@@ -184,6 +186,8 @@
       href: minecraft/server/TintMethod.md
     - name: WatchdogTerminateReason
       href: minecraft/server/WatchdogTerminateReason.md
+    - name: WaypointTexture
+      href: minecraft/server/WaypointTexture.md
     - name: WeatherType
       href: minecraft/server/WeatherType.md
     - name: AimAssistCategory
@@ -568,6 +572,8 @@
       href: minecraft/server/EntityVariantComponent.md
     - name: EntityWantsJockeyComponent
       href: minecraft/server/EntityWantsJockeyComponent.md
+    - name: EntityWaypoint
+      href: minecraft/server/EntityWaypoint.md
     - name: ExplorationMapFunction
       href: minecraft/server/ExplorationMapFunction.md
     - name: ExplosionAfterEvent
@@ -692,6 +698,10 @@
       href: minecraft/server/LinearSpline.md
     - name: ListBlockVolume
       href: minecraft/server/ListBlockVolume.md
+    - name: LocationWaypoint
+      href: minecraft/server/LocationWaypoint.md
+    - name: LocatorBar
+      href: minecraft/server/LocatorBar.md
     - name: LootingEnchantFunction
       href: minecraft/server/LootingEnchantFunction.md
     - name: LootItem
@@ -830,6 +840,8 @@
       href: minecraft/server/PlayerUseNameTagAfterEvent.md
     - name: PlayerUseNameTagAfterEventSignal
       href: minecraft/server/PlayerUseNameTagAfterEventSignal.md
+    - name: PlayerWaypoint
+      href: minecraft/server/PlayerWaypoint.md
     - name: PotionDeliveryType
       href: minecraft/server/PotionDeliveryType.md
     - name: PotionEffectType
@@ -950,6 +962,8 @@
       href: minecraft/server/WatchdogTerminateBeforeEvent.md
     - name: WatchdogTerminateBeforeEventSignal
       href: minecraft/server/WatchdogTerminateBeforeEventSignal.md
+    - name: Waypoint
+      href: minecraft/server/Waypoint.md
     - name: WeatherChangeAfterEvent
       href: minecraft/server/WeatherChangeAfterEvent.md
     - name: WeatherChangeAfterEventSignal
@@ -1066,6 +1080,8 @@
       href: minecraft/server/EntityRaycastHit.md
     - name: EntityRaycastOptions
       href: minecraft/server/EntityRaycastOptions.md
+    - name: EntityVisibilityRules
+      href: minecraft/server/EntityVisibilityRules.md
     - name: EqualsComparison
       href: minecraft/server/EqualsComparison.md
     - name: ExplosionOptions
@@ -1106,6 +1122,8 @@
       href: minecraft/server/PlayerSoundOptions.md
     - name: PlayerSwingEventOptions
       href: minecraft/server/PlayerSwingEventOptions.md
+    - name: PlayerVisibilityRules
+      href: minecraft/server/PlayerVisibilityRules.md
     - name: ProgressKeyFrame
       href: minecraft/server/ProgressKeyFrame.md
     - name: ProjectileShootOptions
@@ -1150,6 +1168,10 @@
       href: minecraft/server/Vector3.md
     - name: VectorXZ
       href: minecraft/server/VectorXZ.md
+    - name: WaypointTextureBounds
+      href: minecraft/server/WaypointTextureBounds.md
+    - name: WaypointTextureSelector
+      href: minecraft/server/WaypointTextureSelector.md
     - name: WorldSoundOptions
       href: minecraft/server/WorldSoundOptions.md
     - name: BlockComponentReturnType

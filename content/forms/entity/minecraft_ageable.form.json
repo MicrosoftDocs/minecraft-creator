@@ -242,12 +242,6 @@
                 "glow_berries"
               ]
             }
-          ],
-          "/vanilla/behavior_pack/entities/goat.json": [
-            {
-              "path": "/minecraft:entity/component_groups/goat_baby/minecraft:ageable/",
-              "content": "wheat"
-            }
           ]
         }
       },
@@ -431,12 +425,11 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/goat.json": [
+      "/vanilla/behavior_pack/entities/glow_squid.json": [
         {
-          "path": "/minecraft:entity/component_groups/goat_baby/minecraft:ageable/",
+          "path": "/minecraft:entity/component_groups/minecraft:squid_baby/minecraft:ageable/",
           "content": {
             "duration": 1200,
-            "feed_items": "wheat",
             "pause_growth_items": [
               "golden_dandelion"
             ],
