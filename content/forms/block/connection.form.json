@@ -11,6 +11,7 @@
         "title": "Enabled States",
         "description": "Which connection states to enable. Options: [\"minecraft:cardinal_connections\"]. Must specify at least one.",
         "dataType": 17,
+        "minLength": 1,
         "choices": [
           {
             "id": "minecraft:cardinal_connections",

@@ -1,0 +1,31 @@
+{
+  "id": "chest_obstruction",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "chest_obstruction",
+    "title": "Block Components Chest Obstruction",
+    "description": "This defines how a block reacts to a chest being opened underneath it.",
+    "fields": [
+      {
+        "id": "obstruction_rule",
+        "title": "Chest Obstruction Rule",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "always",
+            "title": "Always"
+          },
+          {
+            "id": "never",
+            "title": "Never"
+          },
+          {
+            "id": "shape",
+            "title": "Shape"
+          }
+        ],
+        "defaultValue": "shape"
+      }
+    ]
+  }
+}

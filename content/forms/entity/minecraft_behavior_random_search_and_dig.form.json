@@ -22,7 +22,18 @@
         "id": "cooldown_range",
         "title": "Cooldown Range",
         "description": "Goal cooldown range in seconds.",
-        "dataType": 18
+        "dataType": 18,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
+              "content": {
+                "min": 0,
+                "max": 0
+              }
+            }
+          ]
+        }
       },
       {
         "id": "digging_duration_range",
@@ -33,10 +44,10 @@
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
               "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
-              "content": [
-                8,
-                10
-              ]
+              "content": {
+                "min": 8,
+                "max": 10
+              }
             }
           ]
         }
@@ -331,11 +342,14 @@
             "goal_radius": 2,
             "search_range_xz": 20,
             "search_range_y": 3,
-            "cooldown_range": 0,
-            "digging_duration_range": [
-              8,
-              10
-            ],
+            "cooldown_range": {
+              "min": 0,
+              "max": 0
+            },
+            "digging_duration_range": {
+              "min": 8,
+              "max": 10
+            },
             "item_table": "loot_tables/gameplay/entities/sniffer_seeds.json",
             "spawn_item_after_seconds": 6,
             "spawn_item_pos_offset": 2.25,

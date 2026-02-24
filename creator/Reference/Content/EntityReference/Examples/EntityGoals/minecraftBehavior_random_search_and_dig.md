@@ -17,8 +17,8 @@ Allows this entity to locate a random target block that it can path find to. Onc
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| cooldown_range | *not set* | Range of integers | Goal cooldown range in seconds. |  | 
-| digging_duration_range | *not set* | Range of integers | Digging duration in seconds. | Sniffer: `[8,10]` | 
+| cooldown_range | *not set* | Range of integers | Goal cooldown range in seconds. | Sniffer: `{"min":0,"max":0}` | 
+| digging_duration_range | *not set* | Range of integers | Digging duration in seconds. | Sniffer: `{"min":8,"max":10}` | 
 | find_valid_position_retries | 5 | Integer number | Amount of retries to find a valid target position within search range. | Sniffer: `5` | 
 | goal_radius | 1.5 | Decimal number | Distance in blocks within the entity to considers it has reached it's target position. | Sniffer: `2` | 
 | item_table | *not set* | String | File path relative to the resource pack root for items to spawn list (loot table format). | Sniffer: `"loot_tables/gameplay/entities/sniffer_seeds.json"` | 
@@ -61,11 +61,14 @@ Allows this entity to locate a random target block that it can path find to. Onc
   "goal_radius": 2,
   "search_range_xz": 20,
   "search_range_y": 3,
-  "cooldown_range": 0,
-  "digging_duration_range": [
-    8,
-    10
-  ],
+  "cooldown_range": {
+    "min": 0,
+    "max": 0
+  },
+  "digging_duration_range": {
+    "min": 8,
+    "max": 10
+  },
   "item_table": "loot_tables/gameplay/entities/sniffer_seeds.json",
   "spawn_item_after_seconds": 6,
   "spawn_item_pos_offset": 2.25,

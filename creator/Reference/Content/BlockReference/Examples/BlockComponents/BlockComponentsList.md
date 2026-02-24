@@ -14,6 +14,7 @@ ms.date: 02/11/2025
 |:-----|:----------|
 | [minecraft:block_light_absorption](./minecraftBlock_block_light_absorption.md)| Legacy component (format_version < 1.19.40). |
 | [minecraft:block_light_emission](./minecraftBlock_block_light_emission.md)| Legacy component (format_version < 1.19.40). |
+| [minecraft:chest_obstruction](./minecraftBlock_chest_obstruction.md)| The description identifier of the chest obstruction component<br>Experimental toggles required: Upcoming Creator Features |
 | [minecraft:collision_box](./minecraftBlock_collision_box.md)| Defines the area of the block that collides with entities. |
 | [minecraft:connection_rule](./minecraftBlock_connection_rule.md)| Defines whether other blocks such as fences, walls, bars, and glass panes are allowed to connect to this block.<br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.26.0) |
 | [minecraft:crafting_table](./minecraftBlock_crafting_table.md)| Makes your block into a custom crafting table which enables the crafting table UI and the ability to craft recipes. |

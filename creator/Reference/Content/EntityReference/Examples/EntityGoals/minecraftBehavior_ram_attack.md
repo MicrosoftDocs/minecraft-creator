@@ -18,7 +18,7 @@ Allows this entity to damage a target by using a running attack.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | baby_knockback_modifier | 0.333333 | Decimal number | The modifier to knockback that babies have. |  | 
-| cooldown_range | *not set* | Range of integers | Minimum and maximum cooldown time-range (positive, in seconds) between each attempted ram attack. | Goat: `[30,300]`, `[5,15]` | 
+| cooldown_range | *not set* | Range of integers | Minimum and maximum cooldown time-range (positive, in seconds) between each attempted ram attack. | Goat: `{"min":30,"max":300}`, `{"min":5,"max":15}` | 
 | knockback_force | 5 | Decimal number | The force of the knockback of the ram attack. | Goat: `2.5` | 
 | knockback_height | 0.1 | Decimal number | The height of the knockback of the ram attack. | Goat: `0.04` | 
 | min_ram_distance | 4 | Integer number | The minimum distance at which the mob can start a ram attack. | Goat: `4` | 
@@ -47,10 +47,10 @@ At /minecraft:entity/component_groups/ram_default/minecraft:behavior.ram_attack/
   "knockback_height": 0.04,
   "pre_ram_sound": "pre_ram",
   "ram_impact_sound": "ram_impact",
-  "cooldown_range": [
-    30,
-    300
-  ],
+  "cooldown_range": {
+    "min": 30,
+    "max": 300
+  },
   "on_start": [
     {
       "event": "start_event",
@@ -73,10 +73,10 @@ At /minecraft:entity/component_groups/ram_screamer/minecraft:behavior.ram_attack
   "knockback_height": 0.04,
   "pre_ram_sound": "pre_ram.screamer",
   "ram_impact_sound": "ram_impact.screamer",
-  "cooldown_range": [
-    5,
-    15
-  ],
+  "cooldown_range": {
+    "min": 5,
+    "max": 15
+  },
   "on_start": [
     {
       "event": "start_event",

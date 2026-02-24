@@ -121,3 +121,22 @@ Adds a timer for the entity to grow up. It can be accelerated by giving the enti
   }
 }
 ```
+
+#### [Glow Squid](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/glow_squid.json)
+
+
+```json
+"minecraft:ageable": {
+  "duration": 1200,
+  "pause_growth_items": [
+    "golden_dandelion"
+  ],
+  "reset_growth_items": [
+    "golden_dandelion"
+  ],
+  "grow_up": {
+    "event": "minecraft:ageable_grow_up",
+    "target": "self"
+  }
+}
+```

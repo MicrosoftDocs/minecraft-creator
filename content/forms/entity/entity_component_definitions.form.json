@@ -4299,8 +4299,14 @@
         "dataType": 16
       },
       {
-        "id": "minecraft:pushable",
-        "title": "Minecraft Pushable",
+        "id": "minecraft:pushable_by_block",
+        "title": "Minecraft Pushable By Block",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:pushable_by_entity",
+        "title": "Minecraft Pushable By Entity",
         "description": "Dynamic value",
         "dataType": 16
       },

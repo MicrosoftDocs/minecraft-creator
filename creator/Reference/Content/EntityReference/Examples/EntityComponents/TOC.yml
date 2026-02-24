@@ -296,6 +296,10 @@
   href: minecraftComponent_projectile.md
 - name: minecraft:pushable
   href: minecraftComponent_pushable.md
+- name: minecraft:pushable_by_block
+  href: minecraftComponent_pushable_by_block.md
+- name: minecraft:pushable_by_entity
+  href: minecraftComponent_pushable_by_entity.md
 - name: minecraft:push_through
   href: minecraftComponent_push_through.md
 - name: minecraft:raid_trigger

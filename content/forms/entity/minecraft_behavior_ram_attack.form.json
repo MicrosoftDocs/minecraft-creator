@@ -172,17 +172,17 @@
           "/vanilla/behavior_pack/entities/goat.json": [
             {
               "path": "/minecraft:entity/component_groups/ram_default/minecraft:behavior.ram_attack/",
-              "content": [
-                30,
-                300
-              ]
+              "content": {
+                "min": 30,
+                "max": 300
+              }
             },
             {
               "path": "/minecraft:entity/component_groups/ram_screamer/minecraft:behavior.ram_attack/",
-              "content": [
-                5,
-                15
-              ]
+              "content": {
+                "min": 5,
+                "max": 15
+              }
             }
           ]
         }
@@ -399,10 +399,10 @@
             "knockback_height": 0.04,
             "pre_ram_sound": "pre_ram",
             "ram_impact_sound": "ram_impact",
-            "cooldown_range": [
-              30,
-              300
-            ],
+            "cooldown_range": {
+              "min": 30,
+              "max": 300
+            },
             "on_start": [
               {
                 "event": "start_event",
@@ -423,10 +423,10 @@
             "knockback_height": 0.04,
             "pre_ram_sound": "pre_ram.screamer",
             "ram_impact_sound": "ram_impact.screamer",
-            "cooldown_range": [
-              5,
-              15
-            ],
+            "cooldown_range": {
+              "min": 5,
+              "max": 15
+            },
             "on_start": [
               {
                 "event": "start_event",

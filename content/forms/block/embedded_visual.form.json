@@ -1,0 +1,119 @@
+{
+  "id": "Embedded Visual",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Embedded Visual",
+    "title": "Block Embedded Visual",
+    "description": "This defines how a block embedded into an other block renders. Eg. a block in a flowerpot.",
+    "fields": [
+      {
+        "id": "geometry",
+        "title": "Geometry",
+        "description": "The \"minecraft:geometry\" component of the embedded block.",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "geometry",
+            "dataType": 16,
+            "subForm": {
+              "id": "geometry",
+              "title": "Geometry",
+              "fields": [
+                {
+                  "id": "bone_visibility",
+                  "title": "Bone Visibility",
+                  "description": "A JSON object that contains a list of key/value pairs that map from bone name in the specified geometry file (key) to a Molang expression that tells whether the bone should be visible or not (value). The expression is limited to using the \"query.block_state()\" query. When using \"bone_visibility\" in geometry components in the \"permutations\" section, you must also have a default version of the geometry component with \"bone_visibility\" in the \"components\" section.",
+                  "dataType": 24,
+                  "defaultValue": {},
+                  "alternates": [
+                    {
+                      "id": "bone_visibility",
+                      "dataType": 14,
+                      "readOnly": true,
+                      "subForm": {
+                        "id": "bone_visibility",
+                        "title": "Bone Visibility",
+                        "fields": [
+                          {
+                            "id": "expression",
+                            "title": "Expression",
+                            "dataType": 2,
+                            "isRequired": true
+                          },
+                          {
+                            "id": "version",
+                            "title": "Version",
+                            "dataType": 0,
+                            "isRequired": true
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": "bone_visibility",
+                      "dataType": 3
+                    }
+                  ]
+                },
+                {
+                  "id": "culling",
+                  "title": "Culling",
+                  "description": "Which block_culling .json file to use when rendering this block.",
+                  "dataType": 2,
+                  "defaultValue": ""
+                },
+                {
+                  "id": "culling_layer",
+                  "title": "Culling Layer",
+                  "description": "A string that allows culling rule to group multiple blocks together when comparing them. When using the minecraft namespace, the only allowed culling layer identifiers are : \"minecraft:culling_layer.undefined\" or \"minecraft:culling_layer.leaves\". When using no namespaces or a custom one, the names must start and end with an alpha-numeric character.",
+                  "dataType": 2,
+                  "validity": [
+                    {
+                      "comparison": "pattern",
+                      "value": "^(?:minecraft:culling_layer.undefined|minecraft:culling_layer.leaves|(?!minecraft:)[a-z0-9].*[a-z0-9])$"
+                    }
+                  ]
+                },
+                {
+                  "id": "culling_shape",
+                  "title": "Culling Shape",
+                  "description": "Currently only available with the VoxelShape experiment on. The voxel shape used for culling adjacent block faces. Voxel shapes work together with culling rules and will not function if there is no culling rule defined for the block. Only adjacent blocks with voxel shapes will occlude using this shape. Blocks using \\\"minecraft:geometry.full_block\\\" always use the unit cube shape and will ignore custom shapes if specified. When using the minecraft namespace, the only currently available culling shape identifiers are : \\\"minecraft:empty\\\" or \\\"minecraft:unit_cube\\\". When using no namespaces or a custom one, the names must start and end with an alpha-numeric character.",
+                  "dataType": 2,
+                  "defaultValue": "",
+                  "validity": [
+                    {
+                      "comparison": "pattern",
+                      "value": "^(?:minecraft:empty|minecraft:unit_cube|(?!minecraft:)[a-z0-9].*[a-z0-9])$"
+                    }
+                  ]
+                },
+                {
+                  "id": "identifier",
+                  "title": "Identifier",
+                  "description": "The description identifier of the geometry to use to render this block. This identifier must either match an existing geometry identifier in any of the loaded resource packs or be one of the currently supported Vanilla identifiers: \"minecraft:geometry.full_block\" or \"minecraft:geometry.cross\".",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "uv_lock",
+                  "title": "Uv Lock",
+                  "description": "A field that is either a Boolean or an array of strings, max size 64 strings. This field locks UV orientation for all/some bones in the geometry, regardless of how the block is rotated using \"minecraft:transformation\" component. For performance reasons it's recommended to use the Boolean.",
+                  "dataType": 16,
+                  "defaultValue": false
+                }
+              ]
+            }
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "material_instances",
+        "title": "Material Instances",
+        "description": "The \"minecraft:material_instances\" component of the embedded block.",
+        "dataType": 16,
+        "isRequired": true
+      }
+    ]
+  }
+}

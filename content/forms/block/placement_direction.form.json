@@ -75,7 +75,20 @@
         "description": "Which states to enable. Must specify at least one. Options: [\"minecraft:cardinal_direction\", \"minecraft:facing_direction\", \"minecraft:corner_and_cardinal_direction\"].",
         "dataType": 17,
         "minLength": 1,
-        "maxLength": 3,
+        "choices": [
+          {
+            "id": "minecraft:cardinal_direction",
+            "title": "Minecraft:cardinal direction"
+          },
+          {
+            "id": "minecraft:corner_and_cardinal_direction",
+            "title": "Minecraft:corner and cardinal direction"
+          },
+          {
+            "id": "minecraft:facing_direction",
+            "title": "Minecraft:facing direction"
+          }
+        ],
         "isRequired": true
       },
       {

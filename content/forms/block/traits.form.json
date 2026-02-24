@@ -17,7 +17,7 @@
   "generatedFromSchema_doNotEdit": {
     "id": "Traits",
     "title": "Block Traits",
-    "description": "Change the placement position and direction behavior of a block",
+    "description": "Change the connection, multiblock state, placement position and/or direction behaviors of a block",
     "fields": [
       {
         "id": "minecraft:connection",
@@ -28,6 +28,18 @@
           "enabled_states": []
         },
         "subFormId": "block/connection"
+      },
+      {
+        "id": "minecraft:multi_block",
+        "title": "Minecraft Multi Block",
+        "description": "Adds the \"minecraft:multi_block_part\" state and multi block functionality to the block.",
+        "dataType": 16,
+        "defaultValue": {
+          "direction": "up",
+          "enabled_states": [],
+          "parts": 2
+        },
+        "subFormId": "block/multi_block"
       },
       {
         "id": "minecraft:placement_direction",

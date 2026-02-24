@@ -1,0 +1,18 @@
+{
+  "id": "minecraft:chest_obstruction",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:chest_obstruction",
+    "title": "Chest Obstruction",
+    "description": "The description identifier of the chest obstruction component\nExperimental toggles required: Upcoming Creator Features",
+    "fields": [
+      {
+        "id": "obstruction_rule",
+        "title": "Obstruction Rule",
+        "description": "[optional] How the block should be evaluated by a chest during chest opening. Must be one of the following options:\n\"always\" - Will always oba chest from opening when directly above it.\n\"never\" - Will never obstruct a chest from opening when directly above it.\n\"shape\" - Will use the Blocks AABB shape to determine if the chest is obstructed from opening when directly above it; this is the default value if no rule is provided.",
+        "defaultValue": "shape",
+        "dataType": 2
+      }
+    ]
+  }
+}

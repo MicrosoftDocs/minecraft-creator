@@ -1,0 +1,42 @@
+{
+  "id": "minecraft:pushable_by_entity",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:pushable_by_entity",
+    "title": "Pushable By Entity",
+    "description": "Allows an entity to be pushed by other entities.",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable_by_entity/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable_by_entity/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable_by_entity/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable_by_entity/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/goat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable_by_entity/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}
