@@ -54,20 +54,14 @@
     {
       "id": "functions",
       "title": "Functions",
-      "description": "Array of functions to apply to the trade item, such as enchantments. This property was deprecated and removed in newer versions of trade tables.",
-      "dataType": 15,
-      "isDeprecated": true,
-      "versionDeprecated": "1.19.0",
-      "note": "The functions property was available in versions 1.16 through 1.18 but has been removed. Use standard item properties instead."
+      "description": "Array of functions to apply to the trade item, such as enchantments.",
+      "dataType": 15
     },
     {
       "id": "choice",
       "title": "Choice",
-      "description": "Alternative items that can be traded. This property was deprecated and removed in newer versions of trade tables.",
-      "dataType": 15,
-      "isDeprecated": true,
-      "versionDeprecated": "1.19.0",
-      "note": "The choice property was available in versions 1.16 through 1.18 but has been removed."
+      "description": "Alternative items that can be traded.",
+      "dataType": 15
     }
   ],
   "generated_doNotEdit": {

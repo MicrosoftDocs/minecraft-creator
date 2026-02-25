@@ -98,6 +98,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.move_towards_target](EntityGoals/minecraftBehavior_move_towards_target.md)| Allows mob to move towards its current target. |
 | [minecraft:behavior.move_to_block](EntityGoals/minecraftBehavior_move_to_block.md)| Allows mob to move towards a block. |
 | [minecraft:behavior.move_to_land](EntityGoals/minecraftBehavior_move_to_land.md)| Allows the mob to move back onto land when in water. |
+| [minecraft:behavior.move_to_liquid](EntityGoals/minecraftBehavior_move_to_liquid.md)| Allows the mob to move into a liquid when on land. |
 | [minecraft:behavior.move_to_poi](EntityGoals/minecraftBehavior_move_to_poi.md)| Allows the mob to move to a POI if able to |
 | [minecraft:behavior.move_to_random_block](EntityGoals/minecraftBehavior_move_to_random_block.md)| Allows mob to move towards a random block. |
 | [minecraft:behavior.move_to_village](EntityGoals/minecraftBehavior_move_to_village.md)| Allows the mob to move into a random location within a village. |
@@ -133,6 +134,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.receive_love](EntityGoals/minecraftBehavior_receive_love.md)| Allows the villager to stop so another villager can breed with it. |
 | [minecraft:behavior.restrict_open_door](EntityGoals/minecraftBehavior_restrict_open_door.md)| Allows the mob to stay indoors during night time. |
 | [minecraft:behavior.restrict_sun](EntityGoals/minecraftBehavior_restrict_sun.md)| Allows the mob to automatically start avoiding the sun when its a clear day out. |
+| [minecraft:behavior.rise_to_liquid_level](EntityGoals/minecraftBehavior_rise_to_liquid_level.md)| Allows the mob to stay at a certain level when in liquid. |
 | [minecraft:behavior.roar](EntityGoals/minecraftBehavior_roar.md)| Allows this entity to roar at another entity based on data in `minecraft:anger_level`. |
 | [minecraft:behavior.roll](EntityGoals/minecraftBehavior_roll.md)| This allows the mob to roll forward. |
 | [minecraft:behavior.run_around_like_crazy](EntityGoals/minecraftBehavior_run_around_like_crazy.md)| Allows the mob to run around aimlessly. |
@@ -191,5 +193,3 @@ These components are either deprecated or internal to Minecraft and not usable i
 | Entity Behavior (AI) Components | Description |
 |:-----|:----------|
 | [behavior.move_to_lava](EntityGoals/minecraftBehavior_move_to_lava.md)| Allows the mob to move back into lava when on land. |
-| [behavior.move_to_liquid](EntityGoals/minecraftBehavior_move_to_liquid.md)| Allows the mob to move into a liquid when on land. |
-| [behavior.rise_to_liquid_level](EntityGoals/minecraftBehavior_rise_to_liquid_level.md)| Allows the mob to stay at a certain level when in liquid. |

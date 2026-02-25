@@ -24,20 +24,14 @@
     {
       "id": "weight",
       "title": "Weight",
-      "description": "The weight/probability of this trade being selected. This property was deprecated and removed in newer versions.",
-      "dataType": 0,
-      "isDeprecated": true,
-      "versionDeprecated": "1.19.0",
-      "note": "The weight property was available in versions 1.16 through 1.18 but has been removed."
+      "description": "The weight/probability of this trade being selected.",
+      "dataType": 0
     },
     {
       "id": "format_version",
       "title": "Format Version",
-      "description": "The format version of this trade table. This property was used in older versions.",
-      "dataType": 2,
-      "isDeprecated": true,
-      "versionDeprecated": "1.20.0",
-      "note": "Trade tables no longer require a format_version field in newer versions."
+      "description": "The format version of this trade table.",
+      "dataType": 2
     }
   ],
   "generated_doNotEdit": {
