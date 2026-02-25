@@ -23,6 +23,7 @@ Defines the conditions under which an entity can spawn, including biome filters,
 | minecraft:delay_filter | *not set* | [Delay Filter](#spawn-delayfilter) item |  |  | 
 | minecraft:density_limit | *not set* | [Density Limit](#spawn-densitylimit) item |  |  | 
 | minecraft:difficulty_filter | *not set* | [Difficulty Filter](#spawn-difficultyfilter) item |  |  | 
+| minecraft:disallow_spawns_in_bubble | *not set* | Object | Prevents spawning inside bubble columns. |  | 
 | minecraft:distance_filter | *not set* | [Distance Filter](#spawn-distancefilter) item |  |  | 
 | minecraft:height_filter | *not set* | [Height Filter](#spawn-heightfilter) item |  |  | 
 | minecraft:herd | [] | Object | Specifies herd spawning configuration. Can be a single herd object or an array of herd objects. |  | 
@@ -35,6 +36,7 @@ Defines the conditions under which an entity can spawn, including biome filters,
 | minecraft:player_in_village_filter | *not set* | [Player In Village Filter](#spawn-playerinvillagefilter) item |  |  | 
 | minecraft:spawn_event | {"event":""} | [Spawn Event](#spawn-mobeventfilter) item |  |  | 
 | minecraft:spawns_above_block_filter | {"blocks":[],"distance":1} | [Spawns Above Block Filter](#spawns-above-block-filter) item |  |  | 
+| minecraft:spawns_lava | *not set* | Object | Indicates the entity can spawn in lava. |  | 
 | minecraft:spawns_on_block_filter | [] | Array of objects | Specifies blocks on which this entity can spawn. Can be a single block name string, an array of block objects with name property, or an array of strings representing block names. |  | 
 | minecraft:spawns_on_block_filter (Alternate 1) | *not set* | String | A single block name string |  | 
 | minecraft:spawns_on_block_filter (Alternate 2) | *not set* | Array of strings | An array of block name strings |  | 
@@ -44,8 +46,6 @@ Defines the conditions under which an entity can spawn, including biome filters,
 | minecraft:spawns_underwater | *not set* | Object |  |  | 
 | minecraft:weight | *not set* | [Weight](#spawn-weight) item |  |  | 
 | minecraft:world_age_filter | *not set* | [World Age Filter](#spawn-worldagefilter) item |  |  | 
-| minecraft:disallow_spawns_in_bubble | *not set* | Object | Deprecated - no longer in use. Prevents spawning inside bubble columns. This condition appears to have been deprecated after version 1.18.0. This property no longer works after format versions of at least 1.19.0. This spawn condition was used in versions 1.17.20-1.18.0 but has been removed in newer versions. |  | 
-| minecraft:spawns_lava | *not set* | Object | Deprecated - no longer in use. Indicates the entity can spawn in lava. This condition was deprecated in version 1.16.100 and replaced with more general spawning conditions. This property no longer works after format versions of at least 1.16.100. This spawn condition was used in version 1.16 but has been removed in favor of other spawn conditions like minecraft:spawns_on_block_filter. |  | 
 
 ## Biome Filter
 

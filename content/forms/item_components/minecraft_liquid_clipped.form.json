@@ -9,6 +9,7 @@
       }
     ]
   },
+  "description": "The liquid_clipped component determines whether the item interacts with liquid blocks on use. To allow placement of blocks on liquids, see the 'placement_filter' block component.",
   "fields": [],
   "scalarFieldUpgradeName": "value",
   "generated_doNotEdit": {

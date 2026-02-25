@@ -12,7 +12,7 @@
       }
     ]
   },
-  "description": "Sets rules for under what conditions the block can be placed and survive. If the placement conditions are not met, the block cannot be placed. If the block is already placed and the conditions become invalid (e.g., the supporting block is removed), the block will pop off and drop as an item.",
+  "description": "Sets rules for under what conditions the block can be placed and survive. If the placement conditions are not met, the block cannot be placed. If the block is already placed and the conditions become invalid (e.g., the supporting block is removed), the block will pop off and drop as an item. If the blocks in the filter are liquid blocks, ensure that an item block is created with a 'liquid_clipped' component set to 'true' and a 'block_placer' component with 'replace_block_item' set to 'true'.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:placement_filter",

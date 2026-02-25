@@ -10,16 +10,7 @@ ms.date: 02/11/2025
 
 # Entity Documentation - minecraft:behavior.rise_to_liquid_level
 
-> [!IMPORTANT]
-> This type is now deprecated, and no longer in use in the latest versions of Minecraft.
-
-Allows the mob to stay at a certain level when in liquid. This behavior was deprecated in 1.18.20 and replaced with minecraft:behavior.float.
-
-> [!Note]
-> This behavior was used by striders in versions 1.16-1.18.10 but has been replaced with minecraft:behavior.float in newer versions.
-
-> [!Note]
-> This item no longer works after format versions of at least 1.18.20.
+Allows the mob to stay at a certain level when in liquid.
 
 
 ## Rise To Liquid Level Behavior Properties

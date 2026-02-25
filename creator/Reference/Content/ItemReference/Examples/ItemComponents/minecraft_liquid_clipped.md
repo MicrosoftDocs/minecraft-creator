@@ -10,7 +10,7 @@ ms.date: 02/11/2025
 
 # Items Documentation - minecraft:liquid_clipped
 
-The liquid_clipped component determines whether the item interacts with liquid blocks on use.
+The liquid_clipped component determines whether the item interacts with liquid blocks on use. To allow placement of blocks on liquids, see the 'placement_filter' block component.
 
 ## Alternate Simple Representations
 
