@@ -131,20 +131,14 @@
     {
       "id": "minecraft:spawns_lava",
       "title": "Spawns In Lava",
-      "description": "Indicates the entity can spawn in lava. This condition was deprecated in version 1.16.100 and replaced with more general spawning conditions.",
-      "dataType": 16,
-      "isDeprecated": true,
-      "versionDeprecated": "1.16.100",
-      "note": "This spawn condition was used in version 1.16 but has been removed in favor of other spawn conditions like minecraft:spawns_on_block_filter."
+      "description": "Indicates the entity can spawn in lava.",
+      "dataType": 16
     },
     {
       "id": "minecraft:disallow_spawns_in_bubble",
       "title": "Disallow Spawns In Bubble",
-      "description": "Prevents spawning inside bubble columns. This condition appears to have been deprecated after version 1.18.0.",
-      "dataType": 16,
-      "isDeprecated": true,
-      "versionDeprecated": "1.19.0",
-      "note": "This spawn condition was used in versions 1.17.20-1.18.0 but has been removed in newer versions."
+      "description": "Prevents spawning inside bubble columns.",
+      "dataType": 16
     },
     {
       "id": "minecraft:biome_filter",

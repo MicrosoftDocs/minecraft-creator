@@ -56,13 +56,13 @@ Defines an item used in a trade, either as input (wants) or output (gives).
 |:----------|:-------------|:----|:-----------|:------------- |
 | __DEP_fltrs | *not set* | Object | __DEP_fltrs |  | 
 | __DEP_fnctns | *not set* | Object | __DEP_fnctns |  | 
+| choice | *not set* | Array of objects | Alternative items that can be traded. |  | 
 | filters | *not set* | Object | Optional filters that must pass for this item to be included in the trade. |  | 
+| functions | *not set* | Array of objects | Array of functions to apply to the trade item, such as enchantments. |  | 
 | item | *not set* | String | The item identifier, e.g., 'minecraft:emerald' or 'minecraft:coal'. Can include data value suffix like 'minecraft:coal:0'. |  | 
 | price_multiplier | 0.05 | Decimal number | Multiplier applied to price increases when supply/demand changes. Higher values mean prices fluctuate more. Typical value is 0.05. |  | 
 | quantity | 1 | Integer number | Number of this item involved in the trade. Can be a fixed number or an object with min/max for random quantity. |  | 
 | quantity (Alternate 1) | *not set* | [Quantity](#trade-item-quantity) item |  |  | 
-| choice | *not set* | Array of objects | Deprecated - no longer in use. Alternative items that can be traded. This property was deprecated and removed in newer versions of trade tables. This property no longer works after format versions of at least 1.19.0. The choice property was available in versions 1.16 through 1.18 but has been removed. |  | 
-| functions | *not set* | Array of objects | Deprecated - no longer in use. Array of functions to apply to the trade item, such as enchantments. This property was deprecated and removed in newer versions of trade tables. This property no longer works after format versions of at least 1.19.0. The functions property was available in versions 1.16 through 1.18 but has been removed. Use standard item properties instead. |  | 
 
 ## Trade Item Quantity
 Defines a random quantity range for a trade item.
