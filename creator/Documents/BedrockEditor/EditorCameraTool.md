@@ -66,15 +66,17 @@ Click **Export Code** to copy a TypeScript function to your clipboard. The gener
 
 ## Using the camera
 
-1. Select the Camera by clicking the button in the tool rail on the left side of the Editor.
+1. Select Camera by clicking the button in the tool rail on the left side of the Editor.
 
 2. Navigate to the starting position for your camera path and click **+** to add the first control point.
 
 3. Move to subsequent positions, adding control points along the desired path.
+    ![Viewing camera points](../BedrockEditor/media/camera/lookaround.gif)
 
 4. Adjust the **Spline Type**, **Total Duration**, and individual control point settings as needed.
 
-5. Click **Play Animation** to preview the camera path.
+5. Click **Preview Animation** to preview the camera path.
+    ![Preview Animation](../BedrockEditor/media/camera/previewanimation.gif)
 
 6. Click **Export Code** to generate a script you can use in your add-on.
 

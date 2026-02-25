@@ -18,15 +18,19 @@ The Flood Tool fills areas of your world with water or lava. Click a surface blo
     > Pressing **Ctrl+Shift+F** also switches to the Flood Tool.
 
 2. Choose a **Fluid Type** (Water or Lava) in the tool settings pane.
+    ![Flood selected](../BedrockEditor/Media/flood/flood1.png)
 
 3. Click a surface block in the world. An air block above a solid block is required to place the water level indicator. A gizmo widget appears at the clicked location showing the current flood level.
+    ![Flood widgit](../BedrockEditor/Media/flood/floodwidgit.gif)
 
 4. Use **Page Up** and **Page Down** to raise or lower the water level indicator. The tool recalculates the flood area each time you adjust the level.
+    ![Flood size adjusted](../BedrockEditor/Media/flood/floodpgs.gif)
 
     > [!NOTE]
     > A bounding box visualization shows the calculated flood extent. If the boundary turns yellow, the 120,000-block limit has been reached and some area may be excluded. Enable **Ignore Block Limit** to override this restriction.
 
-5. Press **Ctrl+F** or click **Apply** to commit the flood. A progress dialog shows the operation status.
+5. Press **Ctrl+F** or click **Apply Flood** to commit the flood. A progress dialog shows the operation status.
+    ![Flooded with lava](../BedrockEditor/Media/flood/floodlava.gif)
 
     > [!NOTE]
     > The flood operation supports undo. If you need to revert, use the standard undo command.

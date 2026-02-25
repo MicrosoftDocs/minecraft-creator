@@ -31,7 +31,7 @@ Completely removes chunk data for the regions you define.
 
 ## Using the chunk manager
 
-1. Open Chunk Management from the action bar or the **View** menu.
+1. Open Chunk Management from the action bar.
 
 2. Select an **Operation Mode**.
 
@@ -43,13 +43,17 @@ Completely removes chunk data for the regions you define.
     > Regions are snapped to chunk boundaries (multiples of 16 blocks). A bounding box visualization appears in the viewport for each defined region.
 
 4. Click the region list entry to teleport to that area for verification.
+    ![Region list](../BedrockEditor/Media/ChunkManagement/chunkmgmt1.png)
 
 5. Click **Regenerate** or **Delete** to begin the operation. A confirmation dialog will appear before processing starts.
 
 6. A progress modal displays while chunks are being processed and reloaded.
+    ![Progress modal](../BedrockEditor/Media/ChunkManagement/chunkmgmt2.png)
 
     > [!IMPORTANT]
     > Chunk regeneration and deletion are irreversible operations that cannot be undone. Always verify your region bounds before confirming.
+
+![Chunk deleted](../BedrockEditor/Media/ChunkManagement/chunkmgmt3.png)
 
 ## Keyboard shortcuts
 
