@@ -21,7 +21,7 @@ In this tutorial you will learn the following:
 
 It's recommended that the following be completed before beginning this tutorial.
 
-- [Introduction to Loot Tables](IntroductionToLootTables.md)
+- [Introduction to Loot and Trade Tables](IntroductionToLootTables.md)
 
 ## Enchanting
 

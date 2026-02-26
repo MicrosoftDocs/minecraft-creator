@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Loot Overloads
 description: "An overview covering loot overloads"
 ms.service: minecraft-bedrock-edition
+ms.date: 10/25/2024
 ---
 
 # Loot Overloads
@@ -20,7 +21,7 @@ Now that you understand how loot tables work and how to customize them, it's tim
 
 It's recommended that the following be completed before beginning this tutorial.
 
-- [Introduction to Loot Tables](IntroductionToLootTables.md)
+- [Introduction to Loot and Trade Tables](IntroductionToLootTables.md)
 - [Loot and Trade Table Functions](LootAndTradeTableFunctions.md)
 
 Let's take a look at the overloads in more detail, beginning with the `/kill` command.

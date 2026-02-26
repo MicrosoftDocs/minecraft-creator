@@ -418,9 +418,9 @@
             href: Documents/NPCDialogue.md
           - name: NPC DialogueDesigner
             href: Documents/NPCDialogueDesigner.md
-        - name: Loot Tables
+        - name: Loot and Trade Tables
           items:  
-          - name: Introduction to Loot Tables
+          - name: Introduction to Loot and Trade Tables
             href: Documents/IntroductionToLootTables.md
           - name: Loot and Trade Table Functions
             href: Documents/LootAndTradeTableFunctions.md
@@ -430,6 +430,8 @@
             href: Documents/LootTableConditions.md
           - name: Creating a Loot Table
             href: Documents/CreateLootTable.md
+          - name: Creating a Trade Table
+            href: Documents/CreateTradeTable.md
         - name: Introduction to Particles
           href: Reference/Content/ParticlesReference/ParticlesIntroduction.md
         - name: Particle Effects
