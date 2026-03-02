@@ -549,6 +549,16 @@
                 href: Documents/BedrockEditor/EditorSummonTool.md
               - name: Farm Tool
                 href: Documents/BedrockEditor/EditorFarmTool.md
+              - name: Flood
+                href: Documents/BedrockEditor/EditorFlood.md
+              - name: Chunk Management
+                href: Documents/BedrockEditor/EditorChunkManagement.md
+              - name: Camera Tool
+                href: Documents/BedrockEditor/EditorCameraTool.md
+              - name: Jigsaws
+                href: Documents/BedrockEditor/EditorJigsaws.md
+              - name: Scale Tool
+                href: Documents/BedrockEditor/EditorScaleTool.md
               - name: Inspectors and Panels
                 items:
                 - name: Block Inspector

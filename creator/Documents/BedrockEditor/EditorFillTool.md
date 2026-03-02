@@ -41,7 +41,8 @@ Some Action Bar items have default shortcuts. For the full list, see [Editor Hot
 
 |Command |Shortcut |
 |:-------|:-------|
+|Activate Smart Fill tool|Ctrl+Shift+M |
 |Quick Fill selection (without opening the tool)|Ctrl+F |
 
 > [!NOTE]
-> The action executed by **Ctrl**+**F**  depends on the active tool mode. The shortcut is also used in other modes (for example, to fill line in the Line tool or to paste at cursor in Paste Preview). 
+> **Ctrl+Shift+M** opens the Smart Fill tool on the tool rail. **Ctrl+F** performs a quick fill of the current selection using the active block, without switching tools. The **Ctrl+F** shortcut is also used in other modes (for example, to fill a line in the Line tool).

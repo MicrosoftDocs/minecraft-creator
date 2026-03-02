@@ -19,15 +19,15 @@ Use Farm to quickly generate a complete farm layout with crops, optional animals
 
 ## Details
 
-- **Crops**: Check the box for each crop you want to grow on your farm. Crops will be placed randomly within the farm area.
+- **Crops**: Check the box for each crop you want to grow on your farm. Available crops: Wheat, Potato, Beetroot, Pumpkin, and Carrot. Crops will be placed randomly within the farm area.
 
-- **Animals**: Check the box for each type of animal that you want to include on your farm. Animals will be placed in random quantities.
+- **Animals**: Check the box for each type of animal that you want to include on your farm. Available animals: Cow, Sheep, and Pig. Animals will be placed in random quantities.
 
-- **Length**: The length of your farm.
+- **Length** (3–24): The length of your farm, in blocks.
 
-- **Width**: The width of your farm.
+- **Width** (3–24): The width of your farm, in blocks.
 
-- **Fence**: The type of fence surrounding your farm.
+- **Fence**: The type of fence surrounding your farm. Options: Oak, Birch, Acacia, Bamboo, Cherry, Jungle, Spruce, Warped, and Crimson.
 
 - **Irrigation**: Check this box to add irrigation channels between the crops on your farm.
 

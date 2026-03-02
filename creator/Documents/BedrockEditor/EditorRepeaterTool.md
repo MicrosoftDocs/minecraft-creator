@@ -33,7 +33,7 @@ Spacing refers to the size of the area between each repetition. If you leave the
 ## Line
 Makes a one‑dimensional row of copies along the direction implied by non‑zero spacing values.
 
-- **Repetitions**: Set how many copies to make (default is 5). Each copy is offset by multiples of the spacing.
+- **Repetitions**: Set how many copies to make, from 1 to 100 (default is 5). Each copy is offset by multiples of the spacing.
 
 - **Preview**: Shows a row of outlined instances; edit values to update live, then click Apply to write them to the world in one transaction (Undo with Ctrl+Z).
 
@@ -47,7 +47,7 @@ When selected, the repetitions value is applied to all enabled axes.
     > Limits adjust automatically to keep the total number of previewed copies reasonable. With 3 axes enabled, the maximum uniform repetitions per axis is reduced (cube‑root of the internal limit); with 2 axes it’s reduced to a square‑root threshold. This prevents creating more than about 1000 preview widgets.
 
 - **Separate**
-When selected, repetition counts for the X, Y, and Z axes are set independently. The total number of copies generated scales with (X+1) × (Y+1) × (Z+1), minus the original position.
+When selected, repetition counts for the X, Y, and Z axes are set independently (starting from 0). The total number of copies generated scales with (X+1) × (Y+1) × (Z+1), minus the original position.
     > [!NOTE]
     > Controls clamp to prevent exceeding the same internal limit (~1000 widgets).
 

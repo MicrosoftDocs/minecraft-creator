@@ -20,15 +20,30 @@ Creators can place multi-blocks like beds, doors, and double-tall plants, and ca
 
 ## Mode
 
-Use the Pencil to place or erase single blocks with the proper orientation quickly. It supports two edit modes (Draw and Erase), camera‑aware facing, and shares the standard cursor/target controls used for other Editor tools.
+Use the Pencil to place or erase single blocks or objects with the proper orientation quickly. It supports two draw types (Block and Object), two edit modes (Draw and Erase), camera‑aware facing, and shares the standard cursor/target controls used for other Editor tools.
+
+### Draw Type
+
+- **Block**
+
+    Places individual blocks from the Block Picker.
+
+- **Object**
+
+    Places multi-block objects such as doors, beds, plants, candles, and seeds/crops. Use the drop-down to select the object type.
+
+### Edit Mode
 
 -	**Draw**
 
-    Uses the Pencil to add individual blocks to the world.
+    Uses the Pencil to add individual blocks or objects to the world.
 
 -	**Erase**
 
-    Uses the Pencil to remove individual blocks from the world.
+    Uses the Pencil to remove individual blocks or objects from the world.
+
+> [!TIP]
+> Hold **Ctrl** while drawing to temporarily invert the erase mode (draw becomes erase, erase becomes draw).
 
 
 ## Block facing (orientation)
@@ -37,9 +52,9 @@ Use the Pencil to place or erase single blocks with the proper orientation quick
 
     Changes the placed block's rotation based on the direction the camera (player) is facing.
 
--	**Default**
+-	**Manual**
 
-    Places blocks that have rotation or permutations at their default position.
+    Places blocks that have rotation or permutations at their default position. When selected, a front face drop-down lets you specify the exact facing direction.
 
     ![Gif demonstrating Block Facing categories](Media/blockfacing.gif)
 
@@ -76,7 +91,10 @@ Use the Pencil to place or erase single blocks with the proper orientation quick
 |Name|Shortcut|
 |:----|:----|
 |Toggle Pencil|**Space Bar**|
+|Toggle Draw Type (Block/Object)|**Shift+D**|
+|Toggle Edit Mode (Draw/Erase)|**Shift+E**|
 |Single-press paint|**Enter**|
+|Temporarily invert Erase|**Ctrl** (hold)|
 |Paint continuously|**Left‑click and hold** (release to stop)|
 
 > [!NOTE]

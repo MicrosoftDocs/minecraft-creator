@@ -266,3 +266,33 @@ Used to adjust the size of your selection based on the length of each axis.
 1. Create a selection with any of the selection modes.
 
 2. Increase or decrease each coordinate and notice how the size and shape of the selection is affected.
+
+
+## Nudge
+
+Nudge lets you move or copy the blocks in your selection one step at a time. Use directional buttons in the pane or keyboard shortcuts to shift the selection precisely.
+
+- **Nudge Move** moves the selected blocks in the chosen direction.
+- **Nudge Copy** duplicates the selected blocks one step in the chosen direction.
+- **Go-to Position**: Enter exact coordinates to teleport the selection to a specific location.
+
+> [!TIP]
+> Nudge is especially useful for fine alignment when gizmo dragging isn't precise enough.
+
+
+## Keyboard shortcuts
+
+For the full list, see [Editor Hotkeys](../BedrockEditor/EditorKeyboardInputs.md).
+
+| Name | Shortcut |
+|:----|:----|
+| Activate Selection | **Ctrl+S** |
+| Fill Selection | **Ctrl+F** |
+| Deselect | **Ctrl+D** |
+| Select at cursor | **Enter** |
+| Select multiple | **Shift+Enter** |
+| Move selection | **Alt+Arrow** / **Alt+PgUp** / **Alt+PgDn** |
+| Grow selection | **Shift+Arrow** / **Shift+PgUp** / **Shift+PgDn** |
+| Shrink selection | **Ctrl+Arrow** / **Ctrl+PgUp** / **Ctrl+PgDn** |
+| Nudge move | **Alt+Shift+Arrow** |
+| Nudge copy | **Alt+Ctrl+Arrow** |
