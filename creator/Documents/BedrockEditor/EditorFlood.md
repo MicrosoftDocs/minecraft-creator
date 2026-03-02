@@ -39,7 +39,7 @@ The Flood Tool fills areas of your world with water or lava. Click a surface blo
 
 |Limit|Value|
 |:------|:------|
-|Maximum BFS flood size|120,000 blocks|
+|Maximum flood size|120,000 blocks|
 |Flood region extent|1,024 blocks in each direction from the origin|
 
 ## Keyboard shortcuts

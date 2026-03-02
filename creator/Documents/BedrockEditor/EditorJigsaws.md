@@ -9,7 +9,7 @@ ms.date: 02/09/2026
 
 # Jigsaws
 
-Jigsaws let you design modular, procedurally generated structures using template pools. Create collections of structure pieces, assign weights to control how frequently each piece appears, and generate assembled structures directly in your world.
+[Jigsaws](../Structures/IntroductionToJigsawStructures.md) let you design modular, procedurally generated structures using template pools. Create collections of structure pieces, assign weights to control how frequently each piece appears, and generate assembled structures directly in your world.
 
 > [!NOTE]
 > This is the same system that Minecraft vanilla uses to generate villages, trial chambers, and other world structures.
