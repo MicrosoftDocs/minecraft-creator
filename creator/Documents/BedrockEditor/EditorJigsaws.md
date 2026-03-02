@@ -30,7 +30,7 @@ Configure these settings in the **Generate** section of the Jigsaws panel:
 
 - **Starting Target**: An optional target identifier for the jigsaw connector to match.
 
-- **Generate Preview**: Click  to assemble the jigsaw structure at the cursor location. The generation runs in a void world preview so you can inspect the result before committing.
+- **Generate Preview**: Click to assemble the jigsaw structure at the cursor location. The generation runs in a void world preview so you can inspect the result before committing.
 
 ## Using Jigsaws
 
