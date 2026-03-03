@@ -472,6 +472,8 @@
             href: Documents/AdvancedCustomBlocks.md
           - name: Using Block Traits
             href: Documents/intro-block-traits.md
+          - name: Create a Multi-Block
+            href: Documents/multi-blocks.md
           - name: Item Display Transforms
             href: Reference/Content/blockreference/Examples/ItemDisplayTransforms.md
           - name: Customizing the Item for a Block
