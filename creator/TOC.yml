@@ -805,6 +805,8 @@
             href: Reference/Content/MolangReference/Examples/MolangConcepts/QueryFunctions.md
           - name: Molang Math Function Reference
             href: Reference/Content/MolangReference/Examples/MolangConcepts/MathFunctions.md
+      - name: Deep Link Handlers
+        href: Reference/Content/deep-links.md
       - name: Default Minecraft Listings
         href: Reference/Content/VanillaListingsReference/TOC.yml
       - name: Raw Message JSON
