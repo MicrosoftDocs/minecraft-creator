@@ -272,7 +272,7 @@ Use the Operator to define how a color gets remapped from HDR-space to SDR-space
 
     Controls how much the sky light affects the cubemap. This value should be between 0.0 and 1.0, where 0.0 means no contribution from the sky light and 1.0 means full contribution from the sky light.
 
-- **Ambient Light Illuminanace**
+- **Ambient Light Illuminance**
 
     Determines the amount of fixed ambient light applied to the cubemap.
 
