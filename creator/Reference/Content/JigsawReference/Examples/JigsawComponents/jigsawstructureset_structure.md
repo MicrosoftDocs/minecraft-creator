@@ -15,7 +15,7 @@ JigsawStructureSet Structure.
 
 ## JigsawStructureSet Structure Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| structure | *not set* | String | Identifier of the Jigsaw Structure. |  | 
-| weight | *not set* | Integer number | Weight of the Jigsaw Structure in the set. Higher weights are more likely to be selected. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| structure | *not set* | String | Identifier of the Jigsaw Structure. | 
+| weight | *not set* | Integer number | Weight of the Jigsaw Structure in the set. Higher weights are more likely to be selected. | 

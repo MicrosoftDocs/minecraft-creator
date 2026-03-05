@@ -20,17 +20,19 @@ Allows an entity to add or remove status effects from itself. Similarly to `addr
 | add_effects | *not set* | Array of [Add Effects](#add-effects) items | List of effects to add to this entity after adding this component | Player: `[{"display_on_screen_animation":true,"duration":30,"effect":"raid_omen"}]` | 
 | remove_effects | *not set* | String | List of identifiers of effects to be removed from this entity after adding this component | Player: `"bad_omen"` | 
 
-## Add Effects
+### Add Effects
 List of effects to add to this entity after adding this component.
 
 
 #### Add Effects Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| display_on_screen_animation | *not set* | String |  |  | 
-| duration | *not set* | Decimal number |  |  | 
-| effect | *not set* | String | Effect to add to this entity. Includes 'duration' in seconds, 'amplifier' level, 'ambient' if it is to be considered an ambient effect, and 'visible' if the effect should be visible |  | 
+**JSON path:** `add_effects`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| display_on_screen_animation | *not set* | String |  | 
+| duration | *not set* | Decimal number |  | 
+| effect | *not set* | String | Effect to add to this entity. Includes 'duration' in seconds, 'amplifier' level, 'ambient' if it is to be considered an ambient effect, and 'visible' if the effect should be visible | 
 
 ## Samples
 

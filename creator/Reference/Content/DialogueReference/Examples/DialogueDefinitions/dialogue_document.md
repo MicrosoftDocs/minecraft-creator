@@ -15,15 +15,17 @@ A Minecraft Bedrock Edition NPC dialogue definition document. Dialogue files def
 
 ## NPC Dialogue Document Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| format_version | *not set* | Version | The format version of this dialogue file. Use '1.20.80' or later. |  | 
-| minecraft:npc_dialogue | *not set* | [Npc Dialogue](#npc-dialogue) item | The NPC dialogue definition containing scenes. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| format_version | *not set* | Version | The format version of this dialogue file. Use '1.20.80' or later. | 
+| minecraft:npc_dialogue | *not set* | [Npc Dialogue](#npc-dialogue) item | The NPC dialogue definition containing scenes. | 
 
-## Npc Dialogue
+### Npc Dialogue
 
 #### NPC Dialogue Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| scenes | *not set* | Array of strings | Array of dialogue scene definitions. Each scene has a scene_tag, optional text, npc_name, buttons, and commands. |  | 
+**JSON path:** `minecraft:npc_dialogue`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| scenes | *not set* | Array of strings | Array of dialogue scene definitions. Each scene has a scene_tag, optional text, npc_name, buttons, and commands. | 

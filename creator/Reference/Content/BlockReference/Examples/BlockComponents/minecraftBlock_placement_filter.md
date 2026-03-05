@@ -15,29 +15,38 @@ Sets rules for under what conditions the block can be placed and survive. If the
 
 ## Placement Filter Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| conditions | *not set* | Array of [Conditions](#conditions) items | List of conditions where the block can be placed/survive. Limited to 64 conditions. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| conditions | *not set* | Array of [Conditions](#conditions) items | List of conditions where the block can be placed/survive. Limited to 64 conditions. | 
 
-## Conditions
+### Conditions
 List of conditions where the block can be placed/survive. Limited to 64 conditions.
 
 
 #### Conditions Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| allowed_faces | *not set* | Array of strings | List of any of the following strings describing which face(s) this block can be placed on: "up", "down", "north", "south", "east", "west", "side", "all". Limited to 6 faces. |  | 
-| block_filter | *not set* | Array of [Block Filter](#block-filter) items | List of blocks that this block can be placed against in the "allowed_faces" direction. Limited to 64 blocks. Each block in this list can either be specified as a String (block name) or as a BlockDescriptor. A BlockDescriptor is an object that allows you to reference a block (or multiple blocks) based on its tags, or based on its name and states. The fields of a BlockDescriptor are described below. If the blocks in the filter are liquid blocks, ensure that an item block is created with a 'liquid_clipped' component set to 'true' and a 'block_placer' component with 'replace_block_item' set to 'true'. |  | 
+**JSON path:** `conditions`
 
-## Block Filter
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| allowed_faces | *not set* | Array of strings | List of any of the following strings describing which face(s) this block can be placed on: "up", "down", "north", "south", "east", "west", "side", "all". Limited to 6 faces. | 
+| block_filter | *not set* | Array of [Block Filter](#block-filter) items | List of blocks that this block can be placed against in the "allowed_faces" direction. | 
+
+#### block_filter
+
 List of blocks that this block can be placed against in the "allowed_faces" direction. Limited to 64 blocks. Each block in this list can either be specified as a String (block name) or as a BlockDescriptor. A BlockDescriptor is an object that allows you to reference a block (or multiple blocks) based on its tags, or based on its name and states. The fields of a BlockDescriptor are described below. If the blocks in the filter are liquid blocks, ensure that an item block is created with a 'liquid_clipped' component set to 'true' and a 'block_placer' component with 'replace_block_item' set to 'true'.
 
 
-#### Block Filter Properties
+#### Block Filter
+List of blocks that this block can be placed against in the "allowed_faces" direction. Limited to 64 blocks. Each block in this list can either be specified as a String (block name) or as a BlockDescriptor. A BlockDescriptor is an object that allows you to reference a block (or multiple blocks) based on its tags, or based on its name and states. The fields of a BlockDescriptor are described below. If the blocks in the filter are liquid blocks, ensure that an item block is created with a 'liquid_clipped' component set to 'true' and a 'block_placer' component with 'replace_block_item' set to 'true'.
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | String | The name of a block. |  | 
-| states | *not set* | Array of strings | The list of Vanilla block states and their values that the block can have, expressed in key/value pairs. |  | 
-| tags | 1 | String | A condition using Molang queries that results to true/false that can be used to query for blocks with certain tags. |  | 
+
+##### Block Filter Properties
+
+**JSON path:** `conditions > block_filter`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| name | *not set* | String | The name of a block. | 
+| states | *not set* | Array of strings | The list of Vanilla block states and their values that the block can have, expressed in key/value pairs. | 
+| tags | 1 | String | A condition using Molang queries that results to true/false that can be used to query for blocks with certain tags. | 

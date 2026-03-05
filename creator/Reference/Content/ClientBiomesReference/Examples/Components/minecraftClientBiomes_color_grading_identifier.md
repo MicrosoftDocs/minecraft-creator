@@ -15,6 +15,6 @@ Set the identifier used for color grading in Vibrant Visuals mode. Identifiers m
 
 ## Client Biome Color Grading Identifier Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| color_grading_identifier | *not set* | Object | Identifier of color_grading definition to use |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| color_grading_identifier | *not set* | Object | Identifier of color_grading definition to use | 

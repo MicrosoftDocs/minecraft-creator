@@ -15,32 +15,29 @@ Emits particles from random positions within a spherical volume. Configure the r
 
 ## Client Particles Emitter Shape Sphere Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. |  | 
-| direction (Alternate 1) | *not set* | Molang array |  |  | 
-| offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. |  | 
-| offset (Alternate 1) | *not set* | Key/item pairs of [Offset](#offset) items |  |  | 
-| offset (Alternate 2) | *not set* | Decimal number |  |  | 
-| radius | 1 | Molang | The radius of the sphere. Can be a number or Molang expression. |  | 
-| radius (Alternate 1) | *not set* | Key/item pairs of [Radius](#radius) items |  |  | 
-| radius (Alternate 2) | *not set* | Decimal number |  |  | 
-| surface_only | false | Boolean true/false |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. | 
+| direction (as Molang array) | *not set* | Molang array |  | 
+| offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
+| offset (Offset) | *not set* | Key/item pairs of [Offset (Offset)](#offset-offset) items |  | 
+| offset (as Decimal number) | *not set* | Decimal number |  | 
+| radius | 1 | Molang | The radius of the sphere. Can be a number or Molang expression. | 
+| radius (Radius) | *not set* | Key/item pairs of [Radius (Radius)](#radius-radius) items |  | 
+| radius (as Decimal number) | *not set* | Decimal number |  | 
+| surface_only | false | Boolean true/false |  | 
 
-## Offset
+### Offset (Offset)
 
 #### Offset Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `offset`
 
-## Radius
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
-#### Radius Properties
+### Radius (Radius)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+Same structure as [Offset (Offset)](#offset-offset).

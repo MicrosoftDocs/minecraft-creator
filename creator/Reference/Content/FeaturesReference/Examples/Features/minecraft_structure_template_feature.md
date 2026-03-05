@@ -15,43 +15,49 @@ Places a structure in the world. The structure must be stored as a .mcstructure 
 
 ## Structure Template Feature Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| adjustment_radius | *not set* | Integer number | How far the structure is allowed to move when searching for a valid placement position. Search is radial, stopping when the nearest valid position is found. Defaults to 0 if omitted. |  | 
-| constraints | *not set* | [Constraints](#constraints) item | Specific constraints that must be satisfied when placing this structure. |  | 
-| description | *not set* | [Description](#description) item |  |  | 
-| facing_direction"<"north", "south", "east", "west", "random" | *not set* | String | Direction the structure will face when placed in the world. Defaults to "random" if omitted. |  | 
-| format_version | *not set* | String |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| adjustment_radius | *not set* | Integer number | How far the structure is allowed to move when searching for a valid placement position. Search is radial, stopping when the nearest valid position is found. Defaults to 0 if omitted. | 
+| constraints | *not set* | [Constraints](#constraints) item | Specific constraints that must be satisfied when placing this structure. | 
+| description | *not set* | [Description](#description) item |  | 
+| facing_direction"<"north", "south", "east", "west", "random" | *not set* | String | Direction the structure will face when placed in the world. Defaults to "random" if omitted. | 
+| format_version | *not set* | String |  | 
 
-## Constraints
+### Constraints
 
 #### Constraints Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| block_intersection | *not set* | [Block Intersection](#block-intersection) item | When specified, ensures the structure only intersects with allowlisted blocks. |  | 
-| grounded | *not set* | Object | When specified, ensures the structure is on the ground. |  | 
-| unburied | *not set* | Object | When specified, ensures the structure has air above it. |  | 
+**JSON path:** `constraints`
 
-## Block Intersection
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| block_intersection | *not set* | [Block Intersection](#block-intersection) item | When specified, ensures the structure only intersects with allowlisted blocks. | 
+| grounded | *not set* | Object | When specified, ensures the structure is on the ground. | 
+| unburied | *not set* | Object | When specified, ensures the structure has air above it. | 
 
-#### Block Intersection Properties
+#### Block Intersection
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| block_allowlist|block_whitelist | *not set* | Array of strings |  |  | 
+##### Block Intersection Properties
 
-## Description
+**JSON path:** `constraints > block_intersection`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| block_allowlist|block_whitelist | *not set* | Array of strings |  | 
+
+### Description
 
 #### Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
+**JSON path:** `description`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. | 
 
 ## Samples
 
-#### [Example](example)
+#### Example
 
 
 ```json

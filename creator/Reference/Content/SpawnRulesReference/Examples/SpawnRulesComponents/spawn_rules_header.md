@@ -15,7 +15,7 @@ Defines the header fields for a spawn_rules document.
 
 ## Spawn Rules Header Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String |  |  | 
-| population_control | *not set* | String | Specifies a group that this mob is connected with, of which only so many mobs in the group can be spawned |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String |  | 
+| population_control | *not set* | String | Specifies a group that this mob is connected with, of which only so many mobs in the group can be spawned | 

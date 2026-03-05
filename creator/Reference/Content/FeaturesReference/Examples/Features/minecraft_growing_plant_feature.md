@@ -15,27 +15,29 @@ Places a growing plant in the world. A growing plant is a column that is anchore
 
 ## Growing Plant Feature Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| allow_water | *not set* | Boolean true/false | Plant blocks can be placed in water. |  | 
-| body_blocks | *not set* | Array of strings |  |  | 
-| description | *not set* | [Description](#description) item |  |  | 
-| format_version | *not set* | String |  |  | 
-| growth_direction | *not set* | String | Direction that the plant grows towards. Valid values: UP and DOWN |  | 
-| head_blocks | *not set* | Array of strings |  |  | 
-| height_distribution | *not set* | Array of strings |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| allow_water | *not set* | Boolean true/false | Plant blocks can be placed in water. | 
+| body_blocks | *not set* | Array of strings |  | 
+| description | *not set* | [Description](#description) item |  | 
+| format_version | *not set* | String |  | 
+| growth_direction | *not set* | String | Direction that the plant grows towards. Valid values: UP and DOWN | 
+| head_blocks | *not set* | Array of strings |  | 
+| height_distribution | *not set* | Array of strings |  | 
 
-## Description
+### Description
 
 #### Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
+**JSON path:** `description`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. | 
 
 ## Samples
 
-#### [Example](example)
+#### Example
 
 
 ```json

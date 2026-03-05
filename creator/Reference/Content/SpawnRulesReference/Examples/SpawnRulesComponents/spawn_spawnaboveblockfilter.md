@@ -24,7 +24,7 @@ Filters spawning based on blocks above the spawn location. This component appear
 
 ## Spawns Above Block Filter Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| blocks | [] | Object |  |  | 
-| distance | 1 | Integer number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| blocks | [] | Object |  | 
+| distance | 1 | Integer number |  | 

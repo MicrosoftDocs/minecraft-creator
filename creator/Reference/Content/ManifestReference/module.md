@@ -15,24 +15,26 @@ Declares a module within the pack. Modules define what the pack contains: 'data'
 
 ## 3.0.0.Module Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | String |  |  | 
-| entry | *not set* | String |  |  | 
-| language | *not set* | String |  |  | 
-| type | *not set* | String |  |  | 
-| uuid | *not set* | Object |  |  | 
-| version (Version) | *not set* | [Version](#version) item |  |  | 
-| version (Alternate 1) | *not set* | String |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| description | *not set* | String |  | 
+| entry | *not set* | String |  | 
+| language | *not set* | String |  | 
+| type | *not set* | String |  | 
+| uuid | *not set* | Object |  | 
+| version (Version) | *not set* | [Version](#version) item |  | 
+| version (as String) | *not set* | String |  | 
 
-## Version
+### Version
 
 #### Version Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| buildMeta |  | String |  |  | 
-| major | 0 | Integer number |  |  | 
-| minor | 0 | Integer number |  |  | 
-| patch | 0 | Integer number |  |  | 
-| preRelease |  | String |  |  | 
+**JSON path:** `version`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| buildMeta |  | String |  | 
+| major | 0 | Integer number |  | 
+| minor | 0 | Integer number |  | 
+| patch | 0 | Integer number |  | 
+| preRelease |  | String |  | 

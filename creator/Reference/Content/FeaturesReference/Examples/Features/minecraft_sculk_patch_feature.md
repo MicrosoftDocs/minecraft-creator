@@ -18,21 +18,23 @@ Generates clusters of sculk blocks with veins spreading across surfaces, as foun
 
 ## Sculk Patch Feature Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| can_place_sculk_patch_on | *not set* | Array of strings |  |  | 
-| charge_amount | *not set* | Integer number |  |  | 
-| cursor_count | *not set* | Integer number |  |  | 
-| description | *not set* | [Description](#description) item |  |  | 
-| format_version | *not set* | String |  |  | 
-| growth_rounds | *not set* | Integer number |  |  | 
-| spread_attempts | *not set* | Integer number |  |  | 
-| spread_rounds | *not set* | Integer number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| can_place_sculk_patch_on | *not set* | Array of strings |  | 
+| charge_amount | *not set* | Integer number |  | 
+| cursor_count | *not set* | Integer number |  | 
+| description | *not set* | [Description](#description) item |  | 
+| format_version | *not set* | String |  | 
+| growth_rounds | *not set* | Integer number |  | 
+| spread_attempts | *not set* | Integer number |  | 
+| spread_rounds | *not set* | Integer number |  | 
 
-## Description
+### Description
 
 #### Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
+**JSON path:** `description`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. | 

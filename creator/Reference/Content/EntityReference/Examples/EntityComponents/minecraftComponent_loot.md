@@ -18,8 +18,8 @@ Specifies the loot table that determines what items this entity drops upon death
 
 ## Loot Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| table | *not set* | String | Path to the loot table JSON file, relative to the behavior pack's root (e.g., 'loot_tables/entities/zombie.json'). |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| table | *not set* | String | Path to the loot table JSON file, relative to the behavior pack's root (e.g., 'loot_tables/entities/zombie.json'). | 
 
 ## Samples

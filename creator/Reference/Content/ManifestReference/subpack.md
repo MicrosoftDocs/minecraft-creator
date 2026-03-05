@@ -15,8 +15,8 @@ Defines a subpack option that players can choose in pack settings. Subpacks allo
 
 ## 3.0.0.Subpack Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| folder_name | *not set* | String |  |  | 
-| memory_performance_tier | *not set* | Integer number |  |  | 
-| name | *not set* | String |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| folder_name | *not set* | String |  | 
+| memory_performance_tier | *not set* | Integer number |  | 
+| name | *not set* | String |  | 

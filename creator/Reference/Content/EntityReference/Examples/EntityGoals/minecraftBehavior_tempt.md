@@ -23,21 +23,23 @@ Allows a mob to be tempted by a player holding a specific item. Uses pathfinding
 | items | [] | Array of strings | List of items that can tempt the mob. | Chicken: `["wheat_seeds","beetroot_seeds","melon_seeds","pumpkin_seeds","pitcher_pod","torchflower_seeds"]`, Cow: `["wheat"]`, Fox: `["sweet_berries","glow_berries"]` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Chicken: `4`, Fox: `3`, Frog: `5` | 
 | sound_interval | *not set* | Integer number | Range of random ticks to wait between tempt sounds. Can be a number, an array [min, max], or an object with range_min/range_max or min/max. |  | 
-| sound_interval (Alternate 1) | *not set* | Array of [Sound Interval](#sound-interval) items |  |  | 
-| sound_interval (Alternate 2) | *not set* | [Sound Interval](#sound-interval) item |  |  | 
+| sound_interval (as Array of objects) | *not set* | Array of [Sound Interval](#sound-interval) items |  |  | 
+| sound_interval (as Object) | *not set* | [Sound Interval](#sound-interval) item |  |  | 
 | speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Chicken: `1`, Cow: `1.25`, Fox: `0.5` | 
 | stop_distance | 1.5 | Decimal number | The distance at which the mob will stop following the player. |  | 
 | tempt_sound | *not set* | String | Sound to play while the mob is being tempted. |  | 
 | within_radius | 0 | Decimal number | Distance in blocks this mob can get tempted by a player holding an item they like. | Fox: `16` | 
 
-## Sound Interval
+### Sound Interval
 
 #### Sound Interval Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| 0 | *not set* | Integer number |  |  | 
-| 1 | *not set* | Integer number |  |  | 
+**JSON path:** `sound_interval`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| 0 | *not set* | Integer number |  | 
+| 1 | *not set* | Integer number |  | 
 
 ## Samples
 

@@ -15,27 +15,29 @@ Places multiface blocks on floors/walls/ceilings. Despite the name, any block ca
 
 ## Multiface Feature Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| can_place_on | *not set* | Array of strings |  |  | 
-| can_place_on_ceiling | *not set* | Boolean true/false | Can this feature be placed on the ceiling (bottom face of a block)? |  | 
-| can_place_on_floor | *not set* | Boolean true/false | Can this feature be placed on the ground (top face of a block)? |  | 
-| can_place_on_wall | *not set* | Boolean true/false | Can this feature be placed on the wall (side faces of a block)? |  | 
-| description | *not set* | [Description](#description) item |  |  | 
-| format_version | *not set* | String |  |  | 
-| search_range | *not set* | Integer number | How far, in blocks, this feature can search for a valid position to place. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| can_place_on | *not set* | Array of strings |  | 
+| can_place_on_ceiling | *not set* | Boolean true/false | Can this feature be placed on the ceiling (bottom face of a block)? | 
+| can_place_on_floor | *not set* | Boolean true/false | Can this feature be placed on the ground (top face of a block)? | 
+| can_place_on_wall | *not set* | Boolean true/false | Can this feature be placed on the wall (side faces of a block)? | 
+| description | *not set* | [Description](#description) item |  | 
+| format_version | *not set* | String |  | 
+| search_range | *not set* | Integer number | How far, in blocks, this feature can search for a valid position to place. | 
 
-## Description
+### Description
 
 #### Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
+**JSON path:** `description`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. | 
 
 ## Samples
 
-#### [Example](example)
+#### Example
 
 
 ```json

@@ -19,9 +19,9 @@ This item can also be represented as a `String`.
 
 ## Use Animation Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | *not set* | String | Specifies which animation to play when the item is used. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | *not set* | String | Specifies which animation to play when the item is used. | 
 
 ## Samples
 

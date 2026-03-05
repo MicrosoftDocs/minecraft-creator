@@ -15,60 +15,62 @@ Defines a complete voxel shape file.
 
 ## Voxel Shapes VoxelShapeFile Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#voxel-shapes-description) item |  |  | 
-| shape | *not set* | [Shape](#voxel-shapes-shape) item |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| description | *not set* | [Description](#voxel-shapes-description) item |  | 
+| shape | *not set* | [Shape](#voxel-shapes-shape) item |  | 
 
-## Voxel Shapes Description
+### Voxel Shapes Description
 Defines voxel shape identifier.
 
 
 #### Voxel Shapes Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | Object |  |  | 
+**JSON path:** `description`
 
-## Voxel Shapes Shape
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | Object |  | 
+
+### Voxel Shapes Shape
 Defines a voxel shape with boxes.
 
 
 #### Voxel Shapes Shape Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| boxes | *not set* | [Boxes](#voxel-shapes-box) item |  |  | 
+**JSON path:** `shape`
 
-## Voxel Shapes Box
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| boxes | *not set* | [Boxes](#voxel-shapes-box) item |  | 
+
+#### Voxel Shapes Box
 Defines a bounding box with min and max coordinates.
 
 
-#### Voxel Shapes Box Properties
+##### Voxel Shapes Box Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max | *not set* | Array of numbers |  |  | 
-| max (Alternate 1) | *not set* | [Max](#max) item |  |  | 
-| min | *not set* | Array of numbers |  |  | 
-| min (Alternate 1) | *not set* | [Min](#min) item |  |  | 
+**JSON path:** `shape > boxes`
 
-## Max
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | *not set* | Array of numbers |  | 
+| max (Max) | *not set* | [Max (Max)](#max-max) item |  | 
+| min | *not set* | Array of numbers |  | 
+| min (Min) | *not set* | [Min (Min)](#min-min) item |  | 
 
-#### Max Properties
+##### Max (Max)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| x | 0 | Decimal number |  |  | 
-| y | 0 | Decimal number |  |  | 
-| z | 0 | Decimal number |  |  | 
+###### Max Properties
 
-## Min
+**JSON path:** `shape > boxes > max`
 
-#### Min Properties
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| x | 0 | Decimal number |  | 
+| y | 0 | Decimal number |  | 
+| z | 0 | Decimal number |  | 
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| x | 0 | Decimal number |  |  | 
-| y | 0 | Decimal number |  |  | 
-| z | 0 | Decimal number |  |  | 
+##### Min (Min)
+
+Same structure as [Max (Max)](#max-max).

@@ -15,11 +15,11 @@ Specifies a geometry part for culling.
 
 ## Client Block Rule Geometry Part Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| bone | *not set* | String |  |  | 
-| cube | *not set* | Integer number |  |  | 
-| face | *not set* | [Face](#face-choices) choices |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| bone | *not set* | String |  | 
+| cube | *not set* | Integer number |  | 
+| face | *not set* | [Face](#face-choices) choices |  | 
 
 ### Face choices
 

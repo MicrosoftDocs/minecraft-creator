@@ -15,8 +15,8 @@ Sets the color grass and foliage will be tinted by in this biome on the map.
 
 ## Biome Map Tints Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| foliage | *not set* | String | Sets the color foliage will be tinted by in this biome on the map. |  | 
-| foliage (Alternate 1) | *not set* | Array of numbers |  |  | 
-| grass | *not set* | Object | Controls whether the grass will use a custom tint color or a noise based tint color. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| foliage | *not set* | String | Sets the color foliage will be tinted by in this biome on the map. | 
+| foliage (as Array of numbers) | *not set* | Array of numbers |  | 
+| grass | *not set* | Object | Controls whether the grass will use a custom tint color or a noise based tint color. | 

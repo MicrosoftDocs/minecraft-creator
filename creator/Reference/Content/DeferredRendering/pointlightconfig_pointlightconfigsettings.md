@@ -15,18 +15,20 @@ Struct PointLightConfig PointLightConfigSettings Client Deferred Rendering.
 
 ## Point Light Settings Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| format_version | *not set* | String | format_version |  | 
-| minecraft:point_light_settings | *not set* | [Point Light Settings](#point-light-settings) item | minecraft:point_light_settings |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| format_version | *not set* | String | format_version | 
+| minecraft:point_light_settings | *not set* | [Point Light Settings](#point-light-settings) item | minecraft:point_light_settings | 
 
-## Point Light Settings
+### Point Light Settings
 PointLightConfig PointLightConfigSettings PointLightSettings.
 
 
 #### PointLightConfig PointLightConfigSettings PointLightSettings Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| colors | *not set* | String | colors |  | 
-| colors (Alternate 1) | *not set* | Array of numbers |  |  | 
+**JSON path:** `minecraft:point_light_settings`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| colors | *not set* | String | colors | 
+| colors (as Array of numbers) | *not set* | Array of numbers |  | 

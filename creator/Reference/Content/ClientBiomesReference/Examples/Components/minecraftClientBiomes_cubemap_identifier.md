@@ -15,6 +15,6 @@ Set the identifier used for cubemap in Vibrant Visuals mode. Identifiers must re
 
 ## Client Biome Cubemap Identifier Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| cubemap_identifier | *not set* | Object | Identifier of cubemap definition to use |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| cubemap_identifier | *not set* | Object | Identifier of cubemap definition to use | 

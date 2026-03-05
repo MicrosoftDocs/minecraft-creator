@@ -15,6 +15,6 @@ Set the grass color or color map used during rendering. Biomes without this comp
 
 ## Client Biome Grass Appearance Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| color | *not set* | Object | RGB color of grass. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| color | *not set* | Object | RGB color of grass. | 

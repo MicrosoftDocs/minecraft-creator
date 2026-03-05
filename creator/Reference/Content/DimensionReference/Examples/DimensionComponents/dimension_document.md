@@ -15,24 +15,28 @@ A Minecraft Bedrock Edition dimension definition document. Dimensions define cus
 
 ## Dimension Document Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| format_version | *not set* | Version | The format version of this dimension file. Use '1.20.0' or later. |  | 
-| minecraft:dimension_type | *not set* | [Dimension Type](#dimension-type) item | The dimension type definition containing description and components. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| format_version | *not set* | Version | The format version of this dimension file. Use '1.20.0' or later. | 
+| minecraft:dimension_type | *not set* | [Dimension Type](#dimension-type) item | The dimension type definition containing description and components. | 
 
-## Dimension Type
+### Dimension Type
 
 #### Dimension Type Definition Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| components | *not set* | Object | Components that define the dimension's properties. |  | 
-| description | *not set* | [Description](#description) item | Contains the dimension's unique identifier. |  | 
+**JSON path:** `minecraft:dimension_type`
 
-## Description
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| components | *not set* | Object | Components that define the dimension's properties. | 
+| description | *not set* | [Description](#description) item | Contains the dimension's unique identifier. | 
 
-#### Dimension Description Properties
+#### Description
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | Boolean true/false | The unique identifier for this dimension, e.g., 'custom:my_dimension'. |  | 
+##### Dimension Description Properties
+
+**JSON path:** `minecraft:dimension_type > description`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | Boolean true/false | The unique identifier for this dimension, e.g., 'custom:my_dimension'. | 

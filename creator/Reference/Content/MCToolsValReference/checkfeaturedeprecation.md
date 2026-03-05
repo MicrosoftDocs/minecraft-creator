@@ -15,7 +15,7 @@ Checks for deprecated features, blocks, and textures that may be removed in futu
 | [CHECKFEATUREDEPRECATION101](#checkfeaturedeprecation101) | Deprecated Block | 🟡 Warning |  |
 | [CHECKFEATUREDEPRECATION102](#checkfeaturedeprecation102) | Deprecated Terrain | 🟡 Warning |  |
 | [CHECKFEATUREDEPRECATION103](#checkfeaturedeprecation103) | Deprecated Texture | 🟡 Warning |  |
-| [CHECKFEATUREDEPRECATION104](#checkfeaturedeprecation104) | JSON Parse Error | 🔴 Error |  |
+| [CHECKFEATUREDEPRECATION104](#checkfeaturedeprecation104) | JSON Syntax Error (Deprecation Check) | 🔴 Error |  |
 
 ---
 ## Rule Details
@@ -51,7 +51,7 @@ Warning when using a deprecated texture path. Update to the current texture loca
 Data contains the deprecated texture path.
 
 ### CHECKFEATUREDEPRECATION104
-**🔴 JSON Parse Error**  
+**🔴 JSON Syntax Error (Deprecation Check)**  
 **Severity**: Error
 
 #### What This Checks

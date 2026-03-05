@@ -15,7 +15,7 @@ Specifies block types in the template that should be ignored by other processors
 
 ## JigsawStructure Processors BlockIgnore Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| blocks | *not set* | Array of objects | List of blocks evaluated on all blocks of a Structure Template. If a block is matched in the provided list the block will be ignored for processing. |  | 
-| processor_type | *not set* | String | Processors Type |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| blocks | *not set* | Array of objects | List of blocks evaluated on all blocks of a Structure Template. If a block is matched in the provided list the block will be ignored for processing. | 
+| processor_type | *not set* | String | Processors Type | 

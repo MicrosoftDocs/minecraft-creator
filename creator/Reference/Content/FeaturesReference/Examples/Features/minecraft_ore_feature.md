@@ -15,33 +15,37 @@ Places a vein of blocks to simulate ore deposits. Despite the name, any block ca
 
 ## Ore Feature Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| count | *not set* | Integer number | The number of blocks to be placed. |  | 
-| description | *not set* | [Description](#description) item |  |  | 
-| format_version | *not set* | String |  |  | 
-| replace_rules | *not set* | Array of [Replace Rules](#replace-rules) items |  |  | 
-| replace_rules (Alternate 1) | *not set* | Array of strings |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| count | *not set* | Integer number | The number of blocks to be placed. | 
+| description | *not set* | [Description](#description) item |  | 
+| format_version | *not set* | String |  | 
+| replace_rules | *not set* | Array of [Replace Rules](#replace-rules) items |  | 
+| replace_rules (as Array of strings) | *not set* | Array of strings |  | 
 
-## Description
+### Description
 
 #### Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
+**JSON path:** `description`
 
-## Replace Rules
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. | 
+
+### Replace Rules
 
 #### Replace Rules Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| may_replace | *not set* | Array of strings |  |  | 
+**JSON path:** `replace_rules`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| may_replace | *not set* | Array of strings |  | 
 
 ## Samples
 
-#### [Example](example)
+#### Example
 
 At Malachite ore in different materials: 
 

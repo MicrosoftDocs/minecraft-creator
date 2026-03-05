@@ -13,7 +13,7 @@ Validates that add-on content does not use beta features flags. The 'use_beta_fe
 | Rule ID | Rule | Severity | Auto-Fix |
 |:--------|:-----|:---------|:---------|
 | [CBFG101](#cbfg101) | File Read Error | 🔴 Error |  |
-| [CBFG102](#cbfg102) | JSON Parse Error | 🔴 Error |  |
+| [CBFG102](#cbfg102) | JSON Parse Error (Beta Features) | 🔴 Error |  |
 | [CBFG103](#cbfg103) | Beta Features Flag | 🔴 Error |  |
 
 ---
@@ -33,7 +33,7 @@ Check file permissions and ensure the file isn't locked by another program. If t
 Data contains the file path that could not be read.
 
 ### CBFG102
-**🔴 JSON Parse Error**  
+**🔴 JSON Parse Error (Beta Features)**  
 **Severity**: Error
 
 #### What This Checks

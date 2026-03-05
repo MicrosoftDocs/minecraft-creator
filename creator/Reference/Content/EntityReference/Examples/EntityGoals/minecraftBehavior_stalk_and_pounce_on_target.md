@@ -40,9 +40,11 @@ Allows a mob to stalk a target, then once within range pounce onto a target, on 
 | stuck_blocks | *not set* | [Stuck Blocks](#stuck-blocks) item |  | Fox: `{"test":"is_block","subject":"block","operator":"==","value":"snow_layer"}` | 
 | stuck_time | 2 | Decimal number | The amount of time the mob will be stuck if they fail and land on a block they can be stuck on | Fox: `2` | 
 
-## Stuck Blocks
+### Stuck Blocks
 
 #### Stuck blocks Properties
+
+**JSON path:** `stuck_blocks`
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

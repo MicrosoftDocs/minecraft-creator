@@ -15,29 +15,26 @@ Controls individual particle lifetimes using Molang expressions. The max_lifetim
 
 ## Client Particles Particle Lifetime Expression Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expiration_expression | 0 | Molang | When the expression is non-zero, the particle expires. Can be a number or Molang expression. |  | 
-| expiration_expression (Alternate 1) | *not set* | Key/item pairs of [Expiration Expression](#expiration-expression) items |  |  | 
-| expiration_expression (Alternate 2) | *not set* | Decimal number |  |  | 
-| max_lifetime | *not set* | Molang | The maximum lifetime of the particle in seconds. Can be a number or Molang expression. |  | 
-| max_lifetime (Alternate 1) | *not set* | Key/item pairs of [Max Lifetime](#max-lifetime) items |  |  | 
-| max_lifetime (Alternate 2) | *not set* | Decimal number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expiration_expression | 0 | Molang | When the expression is non-zero, the particle expires. Can be a number or Molang expression. | 
+| expiration_expression (Expiration Expression) | *not set* | Key/item pairs of [Expiration Expression (Expiration Expression)](#expiration-expression-expiration-expression) items |  | 
+| expiration_expression (as Decimal number) | *not set* | Decimal number |  | 
+| max_lifetime | *not set* | Molang | The maximum lifetime of the particle in seconds. Can be a number or Molang expression. | 
+| max_lifetime (Max Lifetime) | *not set* | Key/item pairs of [Max Lifetime (Max Lifetime)](#max-lifetime-max-lifetime) items |  | 
+| max_lifetime (as Decimal number) | *not set* | Decimal number |  | 
 
-## Expiration Expression
+### Expiration Expression (Expiration Expression)
 
 #### Expiration Expression Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `expiration_expression`
 
-## Max Lifetime
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
-#### Max Lifetime Properties
+### Max Lifetime (Max Lifetime)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+Same structure as [Expiration Expression (Expiration Expression)](#expiration-expression-expiration-expression).

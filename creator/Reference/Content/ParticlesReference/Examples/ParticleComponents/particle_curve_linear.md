@@ -15,42 +15,35 @@ Creates animation curves using linear interpolation between keyframe values. Def
 
 ## Client Particles Particle Curve Linear Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| horizontal_range | 1 | Keyed set of strings |  |  | 
-| horizontal_range (Alternate 1) | *not set* | Key/item pairs of [Horizontal Range](#horizontal-range) items |  |  | 
-| horizontal_range (Alternate 2) | *not set* | Decimal number |  |  | 
-| input | *not set* | Keyed set of strings |  |  | 
-| input (Alternate 1) | *not set* | Key/item pairs of [Input](#input) items |  |  | 
-| input (Alternate 2) | *not set* | Decimal number |  |  | 
-| nodes | *not set* | Keyed set of strings |  |  | 
-| nodes (Alternate 1) | *not set* | Key/item pairs of [Nodes](#nodes) items |  |  | 
-| nodes (Alternate 2) | *not set* | Decimal number |  |  | 
-| type | *not set* | Object |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| horizontal_range | 1 | Keyed set of strings |  | 
+| horizontal_range (Horizontal Range) | *not set* | Key/item pairs of [Horizontal Range (Horizontal Range)](#horizontal-range-horizontal-range) items |  | 
+| horizontal_range (as Decimal number) | *not set* | Decimal number |  | 
+| input | *not set* | Keyed set of strings |  | 
+| input (Input) | *not set* | Key/item pairs of [Input (Input)](#input-input) items |  | 
+| input (as Decimal number) | *not set* | Decimal number |  | 
+| nodes | *not set* | Keyed set of strings |  | 
+| nodes (Nodes) | *not set* | Key/item pairs of [Nodes (Nodes)](#nodes-nodes) items |  | 
+| nodes (as Decimal number) | *not set* | Decimal number |  | 
+| type | *not set* | Object |  | 
 
-## Horizontal Range
+### Horizontal Range (Horizontal Range)
 
 #### Horizontal Range Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `horizontal_range`
 
-## Input
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
-#### Input Properties
+### Input (Input)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+Same structure as [Horizontal Range (Horizontal Range)](#horizontal-range-horizontal-range).
 
-## Nodes
 
-#### Nodes Properties
+### Nodes (Nodes)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+Same structure as [Horizontal Range (Horizontal Range)](#horizontal-range-horizontal-range).

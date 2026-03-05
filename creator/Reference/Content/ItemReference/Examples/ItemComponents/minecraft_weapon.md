@@ -21,8 +21,8 @@ Deprecated weapon item component. This component is automatically added to vanil
 
 ## Weapon Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| on_hit_block | *not set* | Object | An event trigger that fires when this item is used to strike a block. |  | 
-| on_hurt_entity | *not set* | Object | An event trigger that fires when this item successfully damages another entity. |  | 
-| on_not_hurt_entity | *not set* | Object | An event trigger that fires when this item hits an entity but deals no damage (e.g., due to invincibility frames or immunity). |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| on_hit_block | *not set* | Object | An event trigger that fires when this item is used to strike a block. | 
+| on_hurt_entity | *not set* | Object | An event trigger that fires when this item successfully damages another entity. | 
+| on_not_hurt_entity | *not set* | Object | An event trigger that fires when this item hits an entity but deals no damage (e.g., due to invincibility frames or immunity). | 

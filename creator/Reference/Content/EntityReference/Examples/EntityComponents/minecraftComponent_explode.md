@@ -34,9 +34,11 @@ Defines how the entity explodes.
 | sound_effect | explode | String | The name of the sound effect played when the explosion triggers. This item requires a format version of at least 1.21.40. | Breeze Wind Charge Projectile: `"breeze_wind_charge.burst"`, Wind Charge Projectile: `"wind_charge.burst"` | 
 | toggles_blocks | false | Boolean true/false | If true, the explosion will toggle blocks in the explosion radius. This item requires a format version of at least 1.21.40. | Breeze Wind Charge Projectile: `true` | 
 
-## Add
+### Add
 
 #### Add Properties
+
+**JSON path:** `add`
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

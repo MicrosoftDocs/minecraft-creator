@@ -15,10 +15,10 @@ Allows the player to trade with this mob. When the goal starts, it will stop the
 
 ## Trade With Player Behavior Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| filters | *not set* | Minecraft filter | Conditions that need to be met for the behavior to start. |  | 
-| max_distance_from_player | 8 | Decimal number | The max distance that the mob can be from the player before exiting the goal. |  | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| filters | *not set* | Minecraft filter | Conditions that need to be met for the behavior to start. | 
+| max_distance_from_player | 8 | Decimal number | The max distance that the mob can be from the player before exiting the goal. | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
 
 ## Samples

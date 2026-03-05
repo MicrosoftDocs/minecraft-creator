@@ -10,369 +10,415 @@ ms.date: 02/11/2025
 
 # Particles Documentation - minecraft:particle_effect_component
 
+## Contents
+
+- [Emitter Initialization](#emitter-initialization)
+- [Client Particles Emitter Lifetime Expression](#client-particles-emitter-lifetime-expression)
+- [Client Particles Emitter Lifetime Looping](#client-particles-emitter-lifetime-looping)
+- [Client Particles Emitter Lifetime Once](#client-particles-emitter-lifetime-once)
+- [Client Particles Emitter Rate Instant](#client-particles-emitter-rate-instant)
+- [Client Particles Emitter Rate Manual](#client-particles-emitter-rate-manual)
+- [Client Particles Emitter Rate Steady](#client-particles-emitter-rate-steady)
+- [Client Particles Emitter Shape Box](#client-particles-emitter-shape-box)
+- [Client Particles Emitter Shape Custom](#client-particles-emitter-shape-custom)
+- [Client Particles Emitter Shape Disc](#client-particles-emitter-shape-disc)
+- [Client Particles Emitter Shape Entity Aabb](#client-particles-emitter-shape-entity-aabb)
+- [Client Particles Emitter Shape Sphere](#client-particles-emitter-shape-sphere)
+- [Client Particles Particle Appearance Billboard](#client-particles-particle-appearance-billboard)
+- [Client Particles Particle Appearance Tinting](#client-particles-particle-appearance-tinting)
+- [Client Particles Particle Initial Spin](#client-particles-particle-initial-spin)
+- [Client Particles Particle Initialization](#client-particles-particle-initialization)
+- [Client Particles Particle Lifetime Expression](#client-particles-particle-lifetime-expression)
+- [Client Particles Particle Motion Collision](#client-particles-particle-motion-collision)
+- [Client Particles Particle Motion Dynamic](#client-particles-particle-motion-dynamic)
+- [Client Particles Particle Motion Parametric](#client-particles-particle-motion-parametric)
+
 Container for all particle effect components that define behavior and appearance. Components control every aspect of particle effects: emitter shape and rate, particle lifetime and motion, visual appearance and colors, collision responses, and event triggers. Combine components to build complex effects from reusable, modular pieces.
 
 
 ## Client Particles Particle Effect Component Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| minecraft:emitter_initialization | *not set* | [Emitter Initialization](#emitter-initialization) item |  |  | 
-| minecraft:emitter_lifetime_events | *not set* | Object |  |  | 
-| minecraft:emitter_lifetime_expression | *not set* | [Emitter Lifetime Expression](#client-particles-emitter-lifetime-expression) item |  |  | 
-| minecraft:emitter_lifetime_looping | *not set* | [Emitter Lifetime Looping](#client-particles-emitter-lifetime-looping) item |  |  | 
-| minecraft:emitter_lifetime_once | *not set* | [Emitter Lifetime Once](#client-particles-emitter-lifetime-once) item |  |  | 
-| minecraft:emitter_local_space | *not set* | Object |  |  | 
-| minecraft:emitter_rate_instant | *not set* | [Emitter Rate Instant](#client-particles-emitter-rate-instant) item |  |  | 
-| minecraft:emitter_rate_manual | *not set* | [Emitter Rate Manual](#client-particles-emitter-rate-manual) item |  |  | 
-| minecraft:emitter_rate_steady | *not set* | [Emitter Rate Steady](#client-particles-emitter-rate-steady) item |  |  | 
-| minecraft:emitter_shape_box | *not set* | [Emitter Shape Box](#client-particles-emitter-shape-box) item |  |  | 
-| minecraft:emitter_shape_custom | *not set* | [Emitter Shape Custom](#client-particles-emitter-shape-custom) item |  |  | 
-| minecraft:emitter_shape_disc | *not set* | [Emitter Shape Disc](#client-particles-emitter-shape-disc) item |  |  | 
-| minecraft:emitter_shape_entity_aabb | *not set* | [Emitter Shape Entity Aabb](#client-particles-emitter-shape-entity-aabb) item |  |  | 
-| minecraft:emitter_shape_point | *not set* | [Emitter Shape Point](#client-particles-emitter-shape-point) item |  |  | 
-| minecraft:emitter_shape_sphere | *not set* | [Emitter Shape Sphere](#client-particles-emitter-shape-sphere) item |  |  | 
-| minecraft:particle_appearance_billboard | *not set* | [Particle Appearance Billboard](#client-particles-particle-appearance-billboard) item |  |  | 
-| minecraft:particle_appearance_lighting | *not set* | Object |  |  | 
-| minecraft:particle_appearance_tinting | *not set* | [Particle Appearance Tinting](#client-particles-particle-appearance-tinting) item |  |  | 
-| minecraft:particle_expire_if_in_blocks | *not set* | Array of strings | List of block identifiers. Particles will expire when they are in any of these blocks. |  | 
-| minecraft:particle_expire_if_not_in_blocks | *not set* | Array of strings | List of block identifiers. Particles will expire when they are NOT in any of these blocks. |  | 
-| minecraft:particle_initial_speed | *not set* | Molang | The initial speed of particles. Can be a number, Molang expression, or array of [x, y, z] speeds. |  | 
-| minecraft:particle_initial_speed (Alternate 1) | *not set* | Molang array |  |  | 
-| minecraft:particle_initial_spin | *not set* | [Particle Initial Spin](#client-particles-particle-initial-spin) item |  |  | 
-| minecraft:particle_initialization | *not set* | [Particle Initialization](#client-particles-particle-initialization) item |  |  | 
-| minecraft:particle_kill_plane | *not set* | Molang array | A plane (A, B, C, D coefficients) that kills particles when they cross it. Defined as an array of 4 numbers [A, B, C, D] where Ax + By + Cz + D = 0. Value must have at least 4 items. Value must have at most 4 items. |  | 
-| minecraft:particle_lifetime_events | *not set* | Object |  |  | 
-| minecraft:particle_lifetime_expression | *not set* | [Particle Lifetime Expression](#client-particles-particle-lifetime-expression) item |  |  | 
-| minecraft:particle_motion_collision | *not set* | [Particle Motion Collision](#client-particles-particle-motion-collision) item |  |  | 
-| minecraft:particle_motion_dynamic | *not set* | [Particle Motion Dynamic](#client-particles-particle-motion-dynamic) item |  |  | 
-| minecraft:particle_motion_parametric | *not set* | [Particle Motion Parametric](#client-particles-particle-motion-parametric) item |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| minecraft:emitter_initialization | *not set* | [Emitter Initialization](#emitter-initialization) item |  | 
+| minecraft:emitter_lifetime_events | *not set* | Object |  | 
+| minecraft:emitter_lifetime_expression | *not set* | [Emitter Lifetime Expression](#client-particles-emitter-lifetime-expression) item |  | 
+| minecraft:emitter_lifetime_looping | *not set* | [Emitter Lifetime Looping](#client-particles-emitter-lifetime-looping) item |  | 
+| minecraft:emitter_lifetime_once | *not set* | [Emitter Lifetime Once](#client-particles-emitter-lifetime-once) item |  | 
+| minecraft:emitter_local_space | *not set* | Object |  | 
+| minecraft:emitter_rate_instant | *not set* | [Emitter Rate Instant](#client-particles-emitter-rate-instant) item |  | 
+| minecraft:emitter_rate_manual | *not set* | [Emitter Rate Manual](#client-particles-emitter-rate-manual) item |  | 
+| minecraft:emitter_rate_steady | *not set* | [Emitter Rate Steady](#client-particles-emitter-rate-steady) item |  | 
+| minecraft:emitter_shape_box | *not set* | [Emitter Shape Box](#client-particles-emitter-shape-box) item |  | 
+| minecraft:emitter_shape_custom | *not set* | [Emitter Shape Custom](#client-particles-emitter-shape-custom) item |  | 
+| minecraft:emitter_shape_disc | *not set* | [Emitter Shape Disc](#client-particles-emitter-shape-disc) item |  | 
+| minecraft:emitter_shape_entity_aabb | *not set* | [Emitter Shape Entity Aabb](#client-particles-emitter-shape-entity-aabb) item |  | 
+| minecraft:emitter_shape_point | *not set* | [Emitter Shape Point](#client-particles-emitter-shape-point) item |  | 
+| minecraft:emitter_shape_sphere | *not set* | [Emitter Shape Sphere](#client-particles-emitter-shape-sphere) item |  | 
+| minecraft:particle_appearance_billboard | *not set* | [Particle Appearance Billboard](#client-particles-particle-appearance-billboard) item |  | 
+| minecraft:particle_appearance_lighting | *not set* | Object |  | 
+| minecraft:particle_appearance_tinting | *not set* | [Particle Appearance Tinting](#client-particles-particle-appearance-tinting) item |  | 
+| minecraft:particle_expire_if_in_blocks | *not set* | Array of strings | List of block identifiers. Particles will expire when they are in any of these blocks. | 
+| minecraft:particle_expire_if_not_in_blocks | *not set* | Array of strings | List of block identifiers. Particles will expire when they are NOT in any of these blocks. | 
+| minecraft:particle_initial_speed | *not set* | Molang | The initial speed of particles. Can be a number, Molang expression, or array of [x, y, z] speeds. | 
+| minecraft:particle_initial_speed (as Molang array) | *not set* | Molang array |  | 
+| minecraft:particle_initial_spin | *not set* | [Particle Initial Spin](#client-particles-particle-initial-spin) item |  | 
+| minecraft:particle_initialization | *not set* | [Particle Initialization](#client-particles-particle-initialization) item |  | 
+| minecraft:particle_kill_plane | *not set* | Molang array | A plane (A, B, C, D coefficients) that kills particles when they cross it. | 
+| minecraft:particle_lifetime_events | *not set* | Object |  | 
+| minecraft:particle_lifetime_expression | *not set* | [Particle Lifetime Expression](#client-particles-particle-lifetime-expression) item |  | 
+| minecraft:particle_motion_collision | *not set* | [Particle Motion Collision](#client-particles-particle-motion-collision) item |  | 
+| minecraft:particle_motion_dynamic | *not set* | [Particle Motion Dynamic](#client-particles-particle-motion-dynamic) item |  | 
+| minecraft:particle_motion_parametric | *not set* | [Particle Motion Parametric](#client-particles-particle-motion-parametric) item |  | 
 
-## Emitter Initialization
+### minecraft:particle_kill_plane
+
+A plane (A, B, C, D coefficients) that kills particles when they cross it. Defined as an array of 4 numbers [A, B, C, D] where Ax + By + Cz + D = 0. Value must have at least 4 items. Value must have at most 4 items.
+
+
+### Emitter Initialization
 Defines Molang expressions that run when the emitter is created and on each update. Useful for initializing and updating emitter variables.
 
 
 #### Emitter Initialization Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| creation_expression | 0 | Molang | Molang expression run once when the emitter is created. Use this to initialize variables. |  | 
-| creation_expression (Alternate 1) | *not set* | Key/item pairs of [Creation Expression](#creation-expression) items |  |  | 
-| creation_expression (Alternate 2) | *not set* | Decimal number |  |  | 
-| per_update_expression | 0 | Molang | Molang expression run each frame while the emitter is active. Use this to update variables based on time or other conditions. |  | 
-| per_update_expression (Alternate 1) | *not set* | Key/item pairs of [Per Update Expression](#per-update-expression) items |  |  | 
-| per_update_expression (Alternate 2) | *not set* | Decimal number |  |  | 
+**JSON path:** `minecraft:emitter_initialization`
 
-## Creation Expression
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| creation_expression | 0 | Molang | Molang expression run once when the emitter is created. Use this to initialize variables. | 
+| creation_expression (Creation Expression) | *not set* | Key/item pairs of [Creation Expression (Creation Expression)](#creation-expression-creation-expression) items |  | 
+| creation_expression (as Decimal number) | *not set* | Decimal number |  | 
+| per_update_expression | 0 | Molang | Molang expression run each frame while the emitter is active. Use this to update variables based on time or other conditions. | 
+| per_update_expression (Per Update Expression) | *not set* | Key/item pairs of [Per Update Expression (Per Update Expression)](#per-update-expression-per-update-expression) items |  | 
+| per_update_expression (as Decimal number) | *not set* | Decimal number |  | 
 
-#### Creation Expression Properties
+#### Creation Expression (Creation Expression)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+##### Creation Expression Properties
 
-## Per Update Expression
+**JSON path:** `minecraft:emitter_initialization > creation_expression`
 
-#### Per Update Expression Properties
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+#### Per Update Expression (Per Update Expression)
 
-## Client Particles Emitter Lifetime Expression
+Same structure as [Creation Expression (Creation Expression)](#creation-expression-creation-expression).
+
+
+### Client Particles Emitter Lifetime Expression
 Controls when the emitter activates and expires using Molang expressions. The activation expression starts particle emission when it evaluates to non-zero, and the expiration expression stops it. This enables dynamic effects tied to entity state—like flames that only appear when an entity is on fire, or magic particles that pulse with the caster's mana.
 
 
 #### Client Particles Emitter Lifetime Expression Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| activation_expression | 1 | Molang | When the expression is non-zero, the emitter is activated. Can be a number or Molang expression. |  | 
-| activation_expression (Alternate 1) | *not set* | Key/item pairs of [Activation Expression](#activation-expression) items |  |  | 
-| activation_expression (Alternate 2) | *not set* | Decimal number |  |  | 
-| expiration_expression | 0 | Molang | When the expression is non-zero, the emitter expires. Can be a number or Molang expression. |  | 
-| expiration_expression (Alternate 1) | *not set* | Key/item pairs of [Expiration Expression](#expiration-expression) items |  |  | 
-| expiration_expression (Alternate 2) | *not set* | Decimal number |  |  | 
+**JSON path:** `minecraft:emitter_lifetime_expression`
 
-## Activation Expression
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| activation_expression | 1 | Molang | When the expression is non-zero, the emitter is activated. Can be a number or Molang expression. | 
+| activation_expression (Activation Expression) | *not set* | Key/item pairs of [Activation Expression (Activation Expression)](#activation-expression-activation-expression) items |  | 
+| activation_expression (as Decimal number) | *not set* | Decimal number |  | 
+| expiration_expression | 0 | Molang | When the expression is non-zero, the emitter expires. Can be a number or Molang expression. | 
+| expiration_expression (Expiration Expression) | *not set* | Key/item pairs of [Expiration Expression (Expiration Expression)](#expiration-expression-expiration-expression) items |  | 
+| expiration_expression (as Decimal number) | *not set* | Decimal number |  | 
 
-#### Activation Expression Properties
+#### Activation Expression (Activation Expression)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+##### Activation Expression Properties
 
-## Expiration Expression
+**JSON path:** `minecraft:emitter_lifetime_expression > activation_expression`
 
-#### Expiration Expression Properties
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+#### Expiration Expression (Expiration Expression)
 
-## Client Particles Emitter Lifetime Looping
+Same structure as [Activation Expression (Activation Expression)](#activation-expression-activation-expression).
+
+
+### Client Particles Emitter Lifetime Looping
 Creates repeating particle effects that cycle between active and dormant phases. The emitter runs for the active_time duration, pauses for sleep_time, then repeats indefinitely. Perfect for ambient effects like bubbling cauldrons, flickering torches, pulsing enchantment glows, or creature breathing animations.
 
 
 #### Client Particles Emitter Lifetime Looping Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| active_time | 0 | Molang | The time in seconds that the emitter is active. Can be a number or Molang expression. |  | 
-| active_time (Alternate 1) | *not set* | Key/item pairs of [Active Time](#active-time) items |  |  | 
-| active_time (Alternate 2) | *not set* | Decimal number |  |  | 
-| sleep_time | 0 | Molang | The time in seconds that the emitter sleeps between active periods. Can be a number or Molang expression. |  | 
-| sleep_time (Alternate 1) | *not set* | Key/item pairs of [Sleep Time](#sleep-time) items |  |  | 
-| sleep_time (Alternate 2) | *not set* | Decimal number |  |  | 
+**JSON path:** `minecraft:emitter_lifetime_looping`
 
-## Active Time
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| active_time | 0 | Molang | The time in seconds that the emitter is active. Can be a number or Molang expression. | 
+| active_time (Active Time) | *not set* | Key/item pairs of [Active Time (Active Time)](#active-time-active-time) items |  | 
+| active_time (as Decimal number) | *not set* | Decimal number |  | 
+| sleep_time | 0 | Molang | The time in seconds that the emitter sleeps between active periods. Can be a number or Molang expression. | 
+| sleep_time (Sleep Time) | *not set* | Key/item pairs of [Sleep Time (Sleep Time)](#sleep-time-sleep-time) items |  | 
+| sleep_time (as Decimal number) | *not set* | Decimal number |  | 
 
-#### Active Time Properties
+#### Active Time (Active Time)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+##### Active Time Properties
 
-## Sleep Time
+**JSON path:** `minecraft:emitter_lifetime_looping > active_time`
 
-#### Sleep Time Properties
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+#### Sleep Time (Sleep Time)
 
-## Client Particles Emitter Lifetime Once
+Same structure as [Active Time (Active Time)](#active-time-active-time).
+
+
+### Client Particles Emitter Lifetime Once
 Creates a single-burst particle effect that runs once and stops. The emitter activates for the specified active_time duration, emits particles, then terminates. Ideal for impact effects like explosions, block breaking, critical hits, potion splashes, and other momentary visual feedback.
 
 
 #### Client Particles Emitter Lifetime Once Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| active_time | 0 | Molang | The time in seconds that the emitter is active. Can be a number or Molang expression. |  | 
-| active_time (Alternate 1) | *not set* | Key/item pairs of [Active Time](#active-time) items |  |  | 
-| active_time (Alternate 2) | *not set* | Decimal number |  |  | 
+**JSON path:** `minecraft:emitter_lifetime_once`
 
-## Client Particles Emitter Rate Instant
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| active_time | 0 | Molang | The time in seconds that the emitter is active. Can be a number or Molang expression. | 
+| active_time (Active Time) | *not set* | Key/item pairs of [Active Time (Active Time)](#active-time-active-time) items |  | 
+| active_time (as Decimal number) | *not set* | Decimal number |  | 
+
+### Client Particles Emitter Rate Instant
 Spawns all particles in a single instant burst when the emitter activates. Unlike steady emission that spawns particles over time, this creates an immediate cloud of particles—perfect for explosions, block destruction debris, potion splash impacts, ender teleportation effects, and any effect that needs an instantaneous particle release.
 
 
 #### Client Particles Emitter Rate Instant Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| num_particles | *not set* | Molang | The number of particles to emit. Can be a number or Molang expression. |  | 
-| num_particles (Alternate 1) | *not set* | Key/item pairs of [Num Particles](#num-particles) items |  |  | 
-| num_particles (Alternate 2) | *not set* | Decimal number |  |  | 
+**JSON path:** `minecraft:emitter_rate_instant`
 
-## Num Particles
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| num_particles | *not set* | Molang | The number of particles to emit. Can be a number or Molang expression. | 
+| num_particles (Num Particles) | *not set* | Key/item pairs of [Num Particles (Num Particles)](#num-particles-num-particles) items |  | 
+| num_particles (as Decimal number) | *not set* | Decimal number |  | 
 
-#### Num Particles Properties
+#### Num Particles (Num Particles)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+##### Num Particles Properties
 
-## Client Particles Emitter Rate Manual
+**JSON path:** `minecraft:emitter_rate_instant > num_particles`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
+
+### Client Particles Emitter Rate Manual
 Allows manual control over particle emission through events rather than automatic spawning. Particles are only created when explicitly triggered via Molang or particle events, up to the max_particles limit. Useful for effects that should only spawn under specific conditions, like damage indicators, pickup sparkles, or script-controlled visual feedback.
 
 
 #### Client Particles Emitter Rate Manual Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max_particles | *not set* | Molang | The maximum number of particles that can exist at once. Can be a number or Molang expression. |  | 
-| max_particles (Alternate 1) | *not set* | Key/item pairs of [Max Particles](#max-particles) items |  |  | 
-| max_particles (Alternate 2) | *not set* | Decimal number |  |  | 
+**JSON path:** `minecraft:emitter_rate_manual`
 
-## Max Particles
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max_particles | *not set* | Molang | The maximum number of particles that can exist at once. Can be a number or Molang expression. | 
+| max_particles (Max Particles) | *not set* | Key/item pairs of [Max Particles (Max Particles)](#max-particles-max-particles) items |  | 
+| max_particles (as Decimal number) | *not set* | Decimal number |  | 
 
-#### Max Particles Properties
+#### Max Particles (Max Particles)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+##### Max Particles Properties
 
-## Client Particles Emitter Rate Steady
+**JSON path:** `minecraft:emitter_rate_manual > max_particles`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
+
+### Client Particles Emitter Rate Steady
 Continuously spawns particles at a consistent rate over time. The spawn_rate controls how many particles appear per second, while max_particles limits the total active count. This is the most common emission mode, used for ongoing effects like torch flames, mob auras, weather effects, potion bubbles, and ambient environmental particles.
 
 
 #### Client Particles Emitter Rate Steady Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max_particles | *not set* | Molang | The maximum number of particles that can exist at once. Can be a number or Molang expression. |  | 
-| max_particles (Alternate 1) | *not set* | Key/item pairs of [Max Particles](#max-particles) items |  |  | 
-| max_particles (Alternate 2) | *not set* | Decimal number |  |  | 
-| spawn_rate | *not set* | Molang | The number of particles to spawn per second. Can be a number or Molang expression. |  | 
-| spawn_rate (Alternate 1) | *not set* | Key/item pairs of [Spawn Rate](#spawn-rate) items |  |  | 
-| spawn_rate (Alternate 2) | *not set* | Decimal number |  |  | 
+**JSON path:** `minecraft:emitter_rate_steady`
 
-## Spawn Rate
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max_particles | *not set* | Molang | The maximum number of particles that can exist at once. Can be a number or Molang expression. | 
+| max_particles (Max Particles) | *not set* | Key/item pairs of [Max Particles (Max Particles)](#max-particles-max-particles) items |  | 
+| max_particles (as Decimal number) | *not set* | Decimal number |  | 
+| spawn_rate | *not set* | Molang | The number of particles to spawn per second. Can be a number or Molang expression. | 
+| spawn_rate (Spawn Rate) | *not set* | Key/item pairs of [Spawn Rate (Spawn Rate)](#spawn-rate-spawn-rate) items |  | 
+| spawn_rate (as Decimal number) | *not set* | Decimal number |  | 
 
-#### Spawn Rate Properties
+#### Spawn Rate (Spawn Rate)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+##### Spawn Rate Properties
 
-## Client Particles Emitter Shape Box
+**JSON path:** `minecraft:emitter_rate_steady > spawn_rate`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
+
+### Client Particles Emitter Shape Box
 Emits particles from random positions within a rectangular box volume. Define the box using half_dimensions (distance from center to each edge) and offset from the emitter. Particles can emit outward from spawn points, inward toward center, or in custom directions. Ideal for area effects like smoke filling a room, rain in a region, or magic barriers.
 
 
 #### Client Particles Emitter Shape Box Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. |  | 
-| direction (Alternate 1) | *not set* | Molang array |  |  | 
-| half_dimensions | *not set* | Molang array | The half dimensions of the box, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. |  | 
-| half_dimensions (Alternate 1) | *not set* | Key/item pairs of [Half Dimensions](#half-dimensions) items |  |  | 
-| half_dimensions (Alternate 2) | *not set* | Decimal number |  |  | 
-| offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. |  | 
-| offset (Alternate 1) | *not set* | Key/item pairs of [Offset](#offset) items |  |  | 
-| offset (Alternate 2) | *not set* | Decimal number |  |  | 
-| surface_only | false | Boolean true/false |  |  | 
+**JSON path:** `minecraft:emitter_shape_box`
 
-## Half Dimensions
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. | 
+| direction (as Molang array) | *not set* | Molang array |  | 
+| half_dimensions | *not set* | Molang array | The half dimensions of the box, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
+| half_dimensions (Half Dimensions) | *not set* | Key/item pairs of [Half Dimensions (Half Dimensions)](#half-dimensions-half-dimensions) items |  | 
+| half_dimensions (as Decimal number) | *not set* | Decimal number |  | 
+| offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
+| offset (Offset) | *not set* | Key/item pairs of [Offset (Offset)](#offset-offset) items |  | 
+| offset (as Decimal number) | *not set* | Decimal number |  | 
+| surface_only | false | Boolean true/false |  | 
 
-#### Half Dimensions Properties
+#### Half Dimensions (Half Dimensions)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+##### Half Dimensions Properties
 
-## Offset
+**JSON path:** `minecraft:emitter_shape_box > half_dimensions`
 
-#### Offset Properties
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+#### Offset (Offset)
 
-## Client Particles Emitter Shape Custom
+Same structure as [Half Dimensions (Half Dimensions)](#half-dimensions-half-dimensions).
+
+
+### Client Particles Emitter Shape Custom
 Emits particles from positions calculated by custom Molang expressions. Unlike preset shapes, this gives complete control over spawn locations using math expressions that can create rings, spirals, waves, or any procedural pattern. Use the offset expressions to define X, Y, Z coordinates relative to the emitter for complex artistic effects.
 
 
 #### Client Particles Emitter Shape Custom Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| direction | [0, 0, 0] | Molang array | The direction of particle emission, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. |  | 
-| direction (Alternate 1) | *not set* | Key/item pairs of [Direction](#direction) items |  |  | 
-| direction (Alternate 2) | *not set* | Decimal number |  |  | 
-| offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. |  | 
-| offset (Alternate 1) | *not set* | Key/item pairs of [Offset](#offset) items |  |  | 
-| offset (Alternate 2) | *not set* | Decimal number |  |  | 
+**JSON path:** `minecraft:emitter_shape_custom`
 
-## Direction
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| direction | [0, 0, 0] | Molang array | The direction of particle emission, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
+| direction (Direction) | *not set* | Key/item pairs of [Direction (Direction)](#direction-direction) items |  | 
+| direction (as Decimal number) | *not set* | Decimal number |  | 
+| offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
+| offset (Offset) | *not set* | Key/item pairs of [Offset (Offset)](#offset-offset) items |  | 
+| offset (as Decimal number) | *not set* | Decimal number |  | 
 
-#### Direction Properties
+#### Direction (Direction)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+##### Direction Properties
 
-## Client Particles Emitter Shape Disc
+**JSON path:** `minecraft:emitter_shape_custom > direction`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
+
+### Client Particles Emitter Shape Disc
 Emits particles from random positions on a flat circular disc. Configure the radius and plane normal to control disc size and orientation. Surface_only restricts spawns to the disc edge for ring effects. Perfect for ground-based effects like summoning circles, shockwaves, splash impacts, and aura rings around entities.
 
 
 #### Client Particles Emitter Shape Disc Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. |  | 
-| direction (Alternate 1) | *not set* | Molang array |  |  | 
-| offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. |  | 
-| offset (Alternate 1) | *not set* | Key/item pairs of [Offset](#offset) items |  |  | 
-| offset (Alternate 2) | *not set* | Decimal number |  |  | 
-| plane_normal | [0, 1, 0] | String | The normal vector of the disc plane. Can be 'x', 'y', 'z', or an array of [x, y, z] values. |  | 
-| plane_normal (Alternate 1) | *not set* | Molang array |  |  | 
-| radius | 1 | Molang | The radius of the disc. Can be a number or Molang expression. |  | 
-| radius (Alternate 1) | *not set* | Key/item pairs of [Radius](#radius) items |  |  | 
-| radius (Alternate 2) | *not set* | Decimal number |  |  | 
-| surface_only | false | Boolean true/false |  |  | 
+**JSON path:** `minecraft:emitter_shape_disc`
 
-## Radius
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. | 
+| direction (as Molang array) | *not set* | Molang array |  | 
+| offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
+| offset (Offset) | *not set* | Key/item pairs of [Offset (Offset)](#offset-offset) items |  | 
+| offset (as Decimal number) | *not set* | Decimal number |  | 
+| plane_normal | [0, 1, 0] | String | The normal vector of the disc plane. Can be 'x', 'y', 'z', or an array of [x, y, z] values. | 
+| plane_normal (as Molang array) | *not set* | Molang array |  | 
+| radius | 1 | Molang | The radius of the disc. Can be a number or Molang expression. | 
+| radius (Radius) | *not set* | Key/item pairs of [Radius (Radius)](#radius-radius) items |  | 
+| radius (as Decimal number) | *not set* | Decimal number |  | 
+| surface_only | false | Boolean true/false |  | 
 
-#### Radius Properties
+#### Radius (Radius)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+##### Radius Properties
 
-## Client Particles Emitter Shape Entity Aabb
+**JSON path:** `minecraft:emitter_shape_disc > radius`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
+
+### Client Particles Emitter Shape Entity Aabb
 Emits particles from random positions within the attached entity's axis-aligned bounding box. The emission volume automatically scales with entity size, making it perfect for body-covering effects like burning, freezing, poison clouds, healing auras, or damage feedback that should wrap around creatures of any size.
 
 
 #### Client Particles Emitter Shape Entity Aabb Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. |  | 
-| direction (Alternate 1) | *not set* | Molang array |  |  | 
-| surface_only | false | Boolean true/false |  |  | 
+**JSON path:** `minecraft:emitter_shape_entity_aabb`
 
-## Client Particles Emitter Shape Point
-Emits all particles from a single point in space, offset from the emitter origin. This is the simplest and most common emission shape—all particles spawn at the same location and spread outward based on their initial velocity. Used for torches, candles, sparks, magic projectile cores, and any effect with a focused emission source.
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. | 
+| direction (as Molang array) | *not set* | Molang array |  | 
+| surface_only | false | Boolean true/false |  | 
+
+### Client Particles Emitter Shape Point
+
+Same structure as [Client Particles Emitter Shape Custom](#client-particles-emitter-shape-custom).
 
 
-#### Client Particles Emitter Shape Point Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| direction | *not set* | Molang array | The direction of particle emission, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. |  | 
-| direction (Alternate 1) | *not set* | Key/item pairs of [Direction](#direction) items |  |  | 
-| direction (Alternate 2) | *not set* | Decimal number |  |  | 
-| offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. |  | 
-| offset (Alternate 1) | *not set* | Key/item pairs of [Offset](#offset) items |  |  | 
-| offset (Alternate 2) | *not set* | Decimal number |  |  | 
-
-## Client Particles Emitter Shape Sphere
+### Client Particles Emitter Shape Sphere
 Emits particles from random positions within a spherical volume. Configure the radius to set sphere size and surface_only to restrict spawns to the outer shell. Direction can be inward, outward, or custom. Ideal for explosions, magical orbs, bubble columns, mob spawn effects, and any effect needing uniform 3D distribution.
 
 
 #### Client Particles Emitter Shape Sphere Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. |  | 
-| direction (Alternate 1) | *not set* | Molang array |  |  | 
-| offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. |  | 
-| offset (Alternate 1) | *not set* | Key/item pairs of [Offset](#offset) items |  |  | 
-| offset (Alternate 2) | *not set* | Decimal number |  |  | 
-| radius | 1 | Molang | The radius of the sphere. Can be a number or Molang expression. |  | 
-| radius (Alternate 1) | *not set* | Key/item pairs of [Radius](#radius) items |  |  | 
-| radius (Alternate 2) | *not set* | Decimal number |  |  | 
-| surface_only | false | Boolean true/false |  |  | 
+**JSON path:** `minecraft:emitter_shape_sphere`
 
-## Client Particles Particle Appearance Billboard
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. | 
+| direction (as Molang array) | *not set* | Molang array |  | 
+| offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
+| offset (Offset) | *not set* | Key/item pairs of [Offset (Offset)](#offset-offset) items |  | 
+| offset (as Decimal number) | *not set* | Decimal number |  | 
+| radius | 1 | Molang | The radius of the sphere. Can be a number or Molang expression. | 
+| radius (Radius) | *not set* | Key/item pairs of [Radius (Radius)](#radius-radius) items |  | 
+| radius (as Decimal number) | *not set* | Decimal number |  | 
+| surface_only | false | Boolean true/false |  | 
+
+### Client Particles Particle Appearance Billboard
 Controls how particle sprites render and orient toward the camera. The facing_camera_mode determines billboard behavior: 'lookat_xyz' always faces the camera (classic sprites), 'rotate_y' only rotates vertically (tall flames), and direction modes align with particle velocity (arrows, sparks). Size controls particle dimensions using Molang for dynamic scaling.
 
 
 #### Client Particles Particle Appearance Billboard Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| direction | *not set* | Object |  |  | 
-| facing_camera_mode | *not set* | [Facing Camera Mode](#facing-camera-mode-choices) choices | The facing mode of the billboard. Controls how the particle faces the camera. |  | 
-| size | *not set* | Molang array | The size of the particle billboard, as [width, height] using Molang expressions or numbers. Value must have at least 2 items. Value must have at most 2 items. |  | 
-| size (Alternate 1) | *not set* | Key/item pairs of [Size](#size) items |  |  | 
-| size (Alternate 2) | *not set* | Decimal number |  |  | 
-| uv | *not set* | Object |  |  | 
+**JSON path:** `minecraft:particle_appearance_billboard`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| direction | *not set* | Object |  | 
+| facing_camera_mode | *not set* | [Facing Camera Mode](#facing-camera-mode-choices) choices | The facing mode of the billboard. Controls how the particle faces the camera. | 
+| size | *not set* | Molang array | The size of the particle billboard, as [width, height] using Molang expressions or numbers. Value must have at least 2 items. Value must have at most 2 items. | 
+| size (Size) | *not set* | Key/item pairs of [Size (Size)](#size-size) items |  | 
+| size (as Decimal number) | *not set* | Decimal number |  | 
+| uv | *not set* | Object |  | 
 
 ### Facing Camera Mode choices
 
@@ -390,235 +436,267 @@ Controls how particle sprites render and orient toward the camera. The facing_ca
 | emitter_transform_xz | Emitter Transform XZ | |
 | emitter_transform_yz | Emitter Transform YZ | |
 
-## Size
+#### Size (Size)
 
-#### Size Properties
+##### Size Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `minecraft:particle_appearance_billboard > size`
 
-## Client Particles Particle Appearance Tinting
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
+
+### Client Particles Particle Appearance Tinting
 Applies color tinting to particle textures, from simple solid colors to complex gradients. Use hex colors for static tints, RGBA arrays with Molang for dynamic colors, or gradient objects to blend between colors over particle lifetime. Essential for flames fading orange-to-gray, magical auras shifting colors, or any effect needing color variation.
 
 
 #### Client Particles Particle Appearance Tinting Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| color | *not set* | Molang array | The color of the particle, can be a hex color string (like '#RRGGBB'), an array of [r, g, b, a] values (numbers or Molang), or an object with gradient and interpolant. Value must have at least 3 items. Value must have at most 4 items. |  | 
-| color (Alternate 1) | *not set* | String | A hex color string like '#dfe5ed' or '#RRGGBBAA'. |  | 
-| color (Alternate 2) | *not set* | [Color](#color) item |  |  | 
+**JSON path:** `minecraft:particle_appearance_tinting`
 
-## Color
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| color | *not set* | Molang array | The color of the particle, can be a hex color string (like '#RRGGBB'), an array of [r, g, b, a] values (numbers or Molang), or an object with gradient and interpolant. | 
+| color (as String) | *not set* | String | A hex color string like '#dfe5ed' or '#RRGGBBAA'. | 
+| color (Color) | *not set* | [Color (Color)](#color-color) item |  | 
 
-#### Color Properties
+#### color
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| gradient | *not set* | String | Color gradient - can be an array of color arrays (each being [r, g, b, a] molang/numbers), or an object mapping time points to hex color strings or color arrays. |  | 
-| gradient (Alternate 1) | *not set* | Keyed set of strings | Object mapping time points to hex color strings. |  | 
-| gradient (Alternate 2) | *not set* | Object | Object mapping time points to color arrays with Molang/numbers. |  | 
-| interpolant | *not set* | Molang | A Molang expression that determines which gradient color to use. |  | 
+The color of the particle, can be a hex color string (like '#RRGGBB'), an array of [r, g, b, a] values (numbers or Molang), or an object with gradient and interpolant. Value must have at least 3 items. Value must have at most 4 items.
 
-## Client Particles Particle Initial Spin
+
+#### Color (Color)
+
+##### Color Properties
+
+**JSON path:** `minecraft:particle_appearance_tinting > color`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| gradient | *not set* | String | Color gradient - can be an array of color arrays (each being [r, g, b, a] molang/numbers), or an object mapping time points to hex color strings or color arrays. | 
+| gradient (as Keyed set of strings) | *not set* | Keyed set of strings | Object mapping time points to hex color strings. | 
+| gradient (as Object) | *not set* | Object | Object mapping time points to color arrays with Molang/numbers. | 
+| interpolant | *not set* | Molang | A Molang expression that determines which gradient color to use. | 
+
+### Client Particles Particle Initial Spin
 Sets the starting rotation angle and spin velocity for each particle. Initial rotation provides random orientation variety, while spin_rate creates continuous rotation during the particle's lifetime. Use for debris that tumbles, leaves spinning as they fall, sparks that twist, or any particle needing rotational motion.
 
 
 #### Client Particles Particle Initial Spin Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| rotation | 0 | Keyed set of strings |  |  | 
-| rotation (Alternate 1) | *not set* | Key/item pairs of [Rotation](#rotation) items |  |  | 
-| rotation (Alternate 2) | *not set* | Decimal number |  |  | 
-| rotation_rate | 0 | Keyed set of strings |  |  | 
-| rotation_rate (Alternate 1) | *not set* | Key/item pairs of [Rotation Rate](#rotation-rate) items |  |  | 
-| rotation_rate (Alternate 2) | *not set* | Decimal number |  |  | 
+**JSON path:** `minecraft:particle_initial_spin`
 
-## Rotation
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| rotation | 0 | Keyed set of strings |  | 
+| rotation (Rotation) | *not set* | Key/item pairs of [Rotation (Rotation)](#rotation-rotation) items |  | 
+| rotation (as Decimal number) | *not set* | Decimal number |  | 
+| rotation_rate | 0 | Keyed set of strings |  | 
+| rotation_rate (Rotation Rate) | *not set* | Key/item pairs of [Rotation Rate (Rotation Rate)](#rotation-rate-rotation-rate) items |  | 
+| rotation_rate (as Decimal number) | *not set* | Decimal number |  | 
 
-#### Rotation Properties
+#### Rotation (Rotation)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+##### Rotation Properties
 
-## Rotation Rate
+**JSON path:** `minecraft:particle_initial_spin > rotation`
 
-#### Rotation Rate Properties
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+#### Rotation Rate (Rotation Rate)
 
-## Client Particles Particle Initialization
+Same structure as [Rotation (Rotation)](#rotation-rotation).
+
+
+### Client Particles Particle Initialization
 Runs Molang expressions when each individual particle spawns to initialize per-particle variables. Unlike emitter_initialization which runs once per emitter, this executes for every particle—enabling randomized properties, unique trajectories, or per-particle state that persists through the particle's lifetime.
 
 
 #### Client Particles Particle Initialization Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| per_render_expression | 0 | Keyed set of strings |  |  | 
-| per_render_expression (Alternate 1) | *not set* | Key/item pairs of [Per Render Expression](#per-render-expression) items |  |  | 
-| per_render_expression (Alternate 2) | *not set* | Decimal number |  |  | 
-| per_update_expression | 0 | Keyed set of strings |  |  | 
-| per_update_expression (Alternate 1) | *not set* | Key/item pairs of [Per Update Expression](#per-update-expression) items |  |  | 
-| per_update_expression (Alternate 2) | *not set* | Decimal number |  |  | 
+**JSON path:** `minecraft:particle_initialization`
 
-## Per Render Expression
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| per_render_expression | 0 | Keyed set of strings |  | 
+| per_render_expression (Per Render Expression) | *not set* | Key/item pairs of [Per Render Expression (Per Render Expression)](#per-render-expression-per-render-expression) items |  | 
+| per_render_expression (as Decimal number) | *not set* | Decimal number |  | 
+| per_update_expression | 0 | Keyed set of strings |  | 
+| per_update_expression (Per Update Expression) | *not set* | Key/item pairs of [Per Update Expression (Per Update Expression)](#per-update-expression-per-update-expression) items |  | 
+| per_update_expression (as Decimal number) | *not set* | Decimal number |  | 
 
-#### Per Render Expression Properties
+#### Per Render Expression (Per Render Expression)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+##### Per Render Expression Properties
 
-## Client Particles Particle Lifetime Expression
+**JSON path:** `minecraft:particle_initialization > per_render_expression`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
+
+### Client Particles Particle Lifetime Expression
 Controls individual particle lifetimes using Molang expressions. The max_lifetime sets the absolute duration limit, while expiration_expression can terminate particles early when conditions are met (like leaving a certain area). Enables dynamic particle populations that respond to game state beyond simple time-based expiration.
 
 
 #### Client Particles Particle Lifetime Expression Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expiration_expression | 0 | Molang | When the expression is non-zero, the particle expires. Can be a number or Molang expression. |  | 
-| expiration_expression (Alternate 1) | *not set* | Key/item pairs of [Expiration Expression](#expiration-expression) items |  |  | 
-| expiration_expression (Alternate 2) | *not set* | Decimal number |  |  | 
-| max_lifetime | *not set* | Molang | The maximum lifetime of the particle in seconds. Can be a number or Molang expression. |  | 
-| max_lifetime (Alternate 1) | *not set* | Key/item pairs of [Max Lifetime](#max-lifetime) items |  |  | 
-| max_lifetime (Alternate 2) | *not set* | Decimal number |  |  | 
+**JSON path:** `minecraft:particle_lifetime_expression`
 
-## Max Lifetime
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expiration_expression | 0 | Molang | When the expression is non-zero, the particle expires. Can be a number or Molang expression. | 
+| expiration_expression (Expiration Expression) | *not set* | Key/item pairs of [Expiration Expression (Expiration Expression)](#expiration-expression-expiration-expression) items |  | 
+| expiration_expression (as Decimal number) | *not set* | Decimal number |  | 
+| max_lifetime | *not set* | Molang | The maximum lifetime of the particle in seconds. Can be a number or Molang expression. | 
+| max_lifetime (Max Lifetime) | *not set* | Key/item pairs of [Max Lifetime (Max Lifetime)](#max-lifetime-max-lifetime) items |  | 
+| max_lifetime (as Decimal number) | *not set* | Decimal number |  | 
 
-#### Max Lifetime Properties
+#### Max Lifetime (Max Lifetime)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+##### Max Lifetime Properties
 
-## Client Particles Particle Motion Collision
+**JSON path:** `minecraft:particle_lifetime_expression > max_lifetime`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
+
+### Client Particles Particle Motion Collision
 Enables particle collision with world geometry. Configure collision radius, bounce coefficient (how much velocity is retained), friction to slow sliding, and whether to expire on impact. Essential for physical particles like rain hitting ground, debris bouncing off surfaces, or arrows embedding in blocks.
 
 
 #### Client Particles Particle Motion Collision Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| coefficient_of_restitution | 0 | Decimal number |  |  | 
-| collision_drag | 0 | Decimal number |  |  | 
-| collision_radius | *not set* | Decimal number |  |  | 
-| enabled | 1 | Keyed set of strings |  |  | 
-| enabled (Alternate 1) | *not set* | Key/item pairs of [Enabled](#enabled) items |  |  | 
-| enabled (Alternate 2) | *not set* | Decimal number |  |  | 
-| events (Collision Event) | *not set* | Array of [Events](#events) items |  |  | 
-| events (Alternate 1) | *not set* | [Events](#events) item |  |  | 
-| expire_on_contact | false | Boolean true/false |  |  | 
+**JSON path:** `minecraft:particle_motion_collision`
 
-## Enabled
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| coefficient_of_restitution | 0 | Decimal number |  | 
+| collision_drag | 0 | Decimal number |  | 
+| collision_radius | *not set* | Decimal number |  | 
+| enabled | 1 | Keyed set of strings |  | 
+| enabled (Enabled) | *not set* | Key/item pairs of [Enabled (Enabled)](#enabled-enabled) items |  | 
+| enabled (as Decimal number) | *not set* | Decimal number |  | 
+| events (Collision Event) | *not set* | Array of [Events](#events) items |  | 
+| events (Events) | *not set* | [Events (Events)](#events-events) item |  | 
+| expire_on_contact | false | Boolean true/false |  | 
 
-#### Enabled Properties
+#### Enabled (Enabled)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+##### Enabled Properties
 
-## Events
+**JSON path:** `minecraft:particle_motion_collision > enabled`
 
-#### Collision Event Properties
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| event | *not set* | String |  |  | 
-| min_speed | *not set* | Decimal number |  |  | 
+#### Events
 
-## Client Particles Particle Motion Dynamic
+##### Collision Event Properties
+
+**JSON path:** `minecraft:particle_motion_collision > events`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| event | *not set* | String |  | 
+| min_speed | *not set* | Decimal number |  | 
+
+#### Events (Events)
+
+##### Events Properties
+
+**JSON path:** `minecraft:particle_motion_collision > events`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| event | *not set* | Object |  | 
+| min_speed | 2 | Decimal number |  | 
+
+### Client Particles Particle Motion Dynamic
 Applies physics simulation to particle movement including gravity, acceleration, and air resistance. Linear acceleration adds constant force (gravity pulls down, wind pushes sideways), while drag slows particles over time. Rotation acceleration and drag control spinning. Creates natural-feeling motion for smoke rising, debris falling, or leaves drifting.
 
 
 #### Client Particles Particle Motion Dynamic Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| linear_acceleration | [0, 0, 0] | Molang array | The linear acceleration of particles, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. |  | 
-| linear_acceleration (Alternate 1) | *not set* | Key/item pairs of [Linear Acceleration](#linear-acceleration) items |  |  | 
-| linear_acceleration (Alternate 2) | *not set* | Decimal number |  |  | 
-| linear_drag_coefficient | 0 | Molang | The drag coefficient applied to particle motion. Can be a number or Molang expression. |  | 
-| linear_drag_coefficient (Alternate 1) | *not set* | Key/item pairs of [Linear Drag Coefficient](#linear-drag-coefficient) items |  |  | 
-| linear_drag_coefficient (Alternate 2) | *not set* | Decimal number |  |  | 
-| rotation_acceleration | 0 | Molang | The rotation acceleration. Can be a number or Molang expression. |  | 
-| rotation_acceleration (Alternate 1) | *not set* | Key/item pairs of [Rotation Acceleration](#rotation-acceleration) items |  |  | 
-| rotation_acceleration (Alternate 2) | *not set* | Decimal number |  |  | 
-| rotation_drag_coefficient | 0 | Molang | The rotation drag coefficient. Can be a number or Molang expression. |  | 
-| rotation_drag_coefficient (Alternate 1) | *not set* | Key/item pairs of [Rotation Drag Coefficient](#rotation-drag-coefficient) items |  |  | 
-| rotation_drag_coefficient (Alternate 2) | *not set* | Decimal number |  |  | 
+**JSON path:** `minecraft:particle_motion_dynamic`
 
-## Linear Acceleration
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| linear_acceleration | [0, 0, 0] | Molang array | The linear acceleration of particles, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
+| linear_acceleration (Linear Acceleration) | *not set* | Key/item pairs of [Linear Acceleration (Linear Acceleration)](#linear-acceleration-linear-acceleration) items |  | 
+| linear_acceleration (as Decimal number) | *not set* | Decimal number |  | 
+| linear_drag_coefficient | 0 | Molang | The drag coefficient applied to particle motion. Can be a number or Molang expression. | 
+| linear_drag_coefficient (Linear Drag Coefficient) | *not set* | Key/item pairs of [Linear Drag Coefficient (Linear Drag Coefficient)](#linear-drag-coefficient-linear-drag-coefficient) items |  | 
+| linear_drag_coefficient (as Decimal number) | *not set* | Decimal number |  | 
+| rotation_acceleration | 0 | Molang | The rotation acceleration. Can be a number or Molang expression. | 
+| rotation_acceleration (Rotation Acceleration) | *not set* | Key/item pairs of [Rotation Acceleration (Rotation Acceleration)](#rotation-acceleration-rotation-acceleration) items |  | 
+| rotation_acceleration (as Decimal number) | *not set* | Decimal number |  | 
+| rotation_drag_coefficient | 0 | Molang | The rotation drag coefficient. Can be a number or Molang expression. | 
+| rotation_drag_coefficient (Rotation Drag Coefficient) | *not set* | Key/item pairs of [Rotation Drag Coefficient (Rotation Drag Coefficient)](#rotation-drag-coefficient-rotation-drag-coefficient) items |  | 
+| rotation_drag_coefficient (as Decimal number) | *not set* | Decimal number |  | 
 
-#### Linear Acceleration Properties
+#### Linear Acceleration (Linear Acceleration)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+##### Linear Acceleration Properties
 
-## Linear Drag Coefficient
+**JSON path:** `minecraft:particle_motion_dynamic > linear_acceleration`
 
-#### Linear Drag Coefficient Properties
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+#### Linear Drag Coefficient (Linear Drag Coefficient)
 
-## Rotation Acceleration
+Same structure as [Linear Acceleration (Linear Acceleration)](#linear-acceleration-linear-acceleration).
 
-#### Rotation Acceleration Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+#### Rotation Acceleration (Rotation Acceleration)
 
-## Rotation Drag Coefficient
+Same structure as [Linear Acceleration (Linear Acceleration)](#linear-acceleration-linear-acceleration).
 
-#### Rotation Drag Coefficient Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+#### Rotation Drag Coefficient (Rotation Drag Coefficient)
 
-## Client Particles Particle Motion Parametric
+Same structure as [Linear Acceleration (Linear Acceleration)](#linear-acceleration-linear-acceleration).
+
+
+### Client Particles Particle Motion Parametric
 Controls particle position and rotation using Molang expressions evaluated each frame, overriding physics simulation. Position is relative to emitter origin, allowing mathematical motion patterns like orbits, waves, spirals, or any path describable through equations. Ideal for magical effects, precise choreographed motion, or synchronized particle formations.
 
 
 #### Client Particles Particle Motion Parametric Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| direction | *not set* | Molang array | Direction of particle motion, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. |  | 
-| direction (Alternate 1) | *not set* | Key/item pairs of [Direction](#direction) items |  |  | 
-| direction (Alternate 2) | *not set* | Decimal number |  |  | 
-| relative_position | *not set* | Molang array | Position offset relative to the particle emitter, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. |  | 
-| relative_position (Alternate 1) | *not set* | Key/item pairs of [Relative Position](#relative-position) items |  |  | 
-| relative_position (Alternate 2) | *not set* | Decimal number |  |  | 
-| rotation | *not set* | Keyed set of strings |  |  | 
-| rotation (Alternate 1) | *not set* | Key/item pairs of [Rotation](#rotation) items |  |  | 
-| rotation (Alternate 2) | *not set* | Decimal number |  |  | 
+**JSON path:** `minecraft:particle_motion_parametric`
 
-## Relative Position
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| direction | *not set* | Molang array | Direction of particle motion, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. | 
+| direction (Direction) | *not set* | Key/item pairs of [Direction (Direction)](#direction-direction) items |  | 
+| direction (as Decimal number) | *not set* | Decimal number |  | 
+| relative_position | *not set* | Molang array | Position offset relative to the particle emitter, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. | 
+| relative_position (Relative Position) | *not set* | Key/item pairs of [Relative Position (Relative Position)](#relative-position-relative-position) items |  | 
+| relative_position (as Decimal number) | *not set* | Decimal number |  | 
+| rotation | *not set* | Keyed set of strings |  | 
+| rotation (Rotation) | *not set* | Key/item pairs of [Rotation (Rotation)](#rotation-rotation) items |  | 
+| rotation (as Decimal number) | *not set* | Decimal number |  | 
 
-#### Relative Position Properties
+#### Relative Position (Relative Position)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+##### Relative Position Properties
+
+**JSON path:** `minecraft:particle_motion_parametric > relative_position`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 

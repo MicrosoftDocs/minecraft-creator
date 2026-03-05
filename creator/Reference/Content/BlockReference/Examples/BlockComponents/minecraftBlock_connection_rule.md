@@ -16,7 +16,15 @@ Experimental toggles required: Upcoming Creator Features (in format versions bef
 
 ## Connection Rule Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| accepts_connections_from | all | String | The type of block allowed to connect to this block. Currently, the options are: `all` (default), `only_fences`, and `none`. Note that the `only_fences` option allows connections from all Vanilla fences excluding NetherBrick. |  | 
-| enabled_directions | ['north', 'south', 'east', 'west'] | Array of strings | The cardinal directions that connection is enabled for: `north`, `south`, `east`, and `west`. All directions are enabled by default. Note that if `none` is specified for `accepts_connections_from`, this field will not be used. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| accepts_connections_from | all | String | The type of block allowed to connect to this block. | 
+| enabled_directions | ['north', 'south', 'east', 'west'] | Array of strings | The cardinal directions that connection is enabled for: `north`, `south`, `east`, and `west`. | 
+
+### accepts_connections_from
+
+The type of block allowed to connect to this block. Currently, the options are: `all` (default), `only_fences`, and `none`. Note that the `only_fences` option allows connections from all Vanilla fences excluding NetherBrick.
+
+### enabled_directions
+
+The cardinal directions that connection is enabled for: `north`, `south`, `east`, and `west`. All directions are enabled by default. Note that if `none` is specified for `accepts_connections_from`, this field will not be used.

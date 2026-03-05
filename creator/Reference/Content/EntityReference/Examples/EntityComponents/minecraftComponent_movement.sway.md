@@ -15,11 +15,11 @@ This move control causes the mob to sway side to side giving the impression it i
 
 ## Sway Movement Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max_turn | 30 | Decimal number | The maximum number in degrees the mob can turn per tick. |  | 
-| sway_amplitude | 0.05 | Decimal number | Strength of the sway movement. |  | 
-| sway_frequency | 0.5 | Decimal number | Multiplier for the frequency of the sway movement. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max_turn | 30 | Decimal number | The maximum number in degrees the mob can turn per tick. | 
+| sway_amplitude | 0.05 | Decimal number | Strength of the sway movement. | 
+| sway_frequency | 0.5 | Decimal number | Multiplier for the frequency of the sway movement. | 
 
 ## Samples
 

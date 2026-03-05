@@ -15,49 +15,57 @@ Defines a custom dimension with its description and components.
 
 ## Dimension Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| components | *not set* | [Components](#dimension-components) item |  |  | 
-| description | *not set* | [Description](#dimension-description) item |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| components | *not set* | [Components](#dimension-components) item |  | 
+| description | *not set* | [Description](#dimension-description) item |  | 
 
-## Dimension Components
+### Dimension Components
 Specifies the components that define dimension properties such as bounds and generation.
 
 
 #### Dimension Components Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| minecraft:dimension_bounds | {"max":0,"min":0} | [Dimension Bounds](#dimension-bounds) item |  |  | 
-| minecraft:generation | *not set* | [Generation](#dimension-generation) item |  |  | 
+**JSON path:** `components`
 
-## Dimension Bounds
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| minecraft:dimension_bounds | {"max":0,"min":0} | [Dimension Bounds](#dimension-bounds) item |  | 
+| minecraft:generation | *not set* | [Generation](#dimension-generation) item |  | 
+
+#### Dimension Bounds
 Defines the minimum and maximum vertical bounds for a dimension.
 
 
-#### Dimension Bounds Properties
+##### Dimension Bounds Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max | *not set* | Integer number |  |  | 
-| min | *not set* | Integer number |  |  | 
+**JSON path:** `components > minecraft:dimension_bounds`
 
-## Dimension Generation
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | *not set* | Integer number |  | 
+| min | *not set* | Integer number |  | 
+
+#### Dimension Generation
 Specifies the generator type used for world generation in the dimension.
 
 
-#### Dimension Generation Properties
+##### Dimension Generation Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| generator_type | *not set* | String |  |  | 
+**JSON path:** `components > minecraft:generation`
 
-## Dimension Description
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| generator_type | *not set* | String |  | 
+
+### Dimension Description
 Declares the unique identifier for a custom dimension that players can travel to. The identifier must use namespace:name format (like 'mypack:custom_dimension') and is used by commands, portals, and scripts to reference this dimension. Every custom dimension requires a description with a valid identifier.
 
 
 #### Dimension Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String |  |  | 
+**JSON path:** `description`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String |  | 

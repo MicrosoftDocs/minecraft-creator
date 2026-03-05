@@ -15,19 +15,21 @@ Sets the Equipment table to use for this Entity.
 
 ## Equipment Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| slot_drop_chance | *not set* | Array of strings | A list of slots with the chance to drop an equipped item from that slot. Can be an array of slot name strings or an array of objects with slot and drop_chance properties. |  | 
-| slot_drop_chance (Alternate 1) | *not set* | Array of [Slot Drop Chance](#slot-drop-chance) items |  |  | 
-| table | *not set* | String | The file path to the equipment table, relative to the behavior pack's root. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| slot_drop_chance | *not set* | Array of strings | A list of slots with the chance to drop an equipped item from that slot. Can be an array of slot name strings or an array of objects with slot and drop_chance properties. | 
+| slot_drop_chance (Slot Drop Chance Item) | *not set* | Array of [Slot Drop Chance (Slot Drop Chance Item)](#slot-drop-chance-slot-drop-chance-item) items |  | 
+| table | *not set* | String | The file path to the equipment table, relative to the behavior pack's root. | 
 
-## Slot Drop Chance
+### Slot Drop Chance (Slot Drop Chance Item)
 
 #### Slot Drop Chance Item Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| drop_chance | *not set* | Decimal number | The chance to drop the equipped item (0.0 to 1.0). |  | 
-| slot | *not set* | String | The equipment slot name. |  | 
+**JSON path:** `slot_drop_chance`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| drop_chance | *not set* | Decimal number | The chance to drop the equipped item (0.0 to 1.0). | 
+| slot | *not set* | String | The equipment slot name. | 
 
 ## Samples

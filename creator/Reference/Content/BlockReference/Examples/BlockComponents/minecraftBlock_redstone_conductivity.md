@@ -16,7 +16,7 @@ Experimental toggles required: Upcoming Creator Features (in format versions bef
 
 ## Redstone Conductivity Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| allows_wire_to_step_down | true | Boolean true/false | Specifies if redstone wire can stair-step downward on the block. |  | 
-| redstone_conductor | false | Boolean true/false | Specifies if the block can be powered by redstone. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| allows_wire_to_step_down | true | Boolean true/false | Specifies if redstone wire can stair-step downward on the block. | 
+| redstone_conductor | false | Boolean true/false | Specifies if the block can be powered by redstone. | 

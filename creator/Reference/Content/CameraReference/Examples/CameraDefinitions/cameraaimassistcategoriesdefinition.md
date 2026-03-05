@@ -15,6 +15,6 @@ CameraAimAssistCategoriesDefinition.
 
 ## CameraAimAssistCategoriesDefinition Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| categories | *not set* | Array of objects | List of categories used by Camera Aim-Assist 'minecraft:aim_assist_preset'. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| categories | *not set* | Array of objects | List of categories used by Camera Aim-Assist 'minecraft:aim_assist_preset'. | 

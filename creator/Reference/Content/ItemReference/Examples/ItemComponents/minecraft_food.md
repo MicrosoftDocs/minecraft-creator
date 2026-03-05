@@ -32,12 +32,19 @@ Sets the item as a food component, allowing it to be edible to the player.
 | on_use_range | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  |  | 
 | saturation_modifier | 0.6000000238418579 | Decimal number | saturation_modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff. Default is set to 0.6. | Apple: `0.3`, AppleEnchanted: `"supernatural"`, Baked Potato: `"normal"` | 
 | using_converts_to (Using Converts To) | {} | String | When used, converts to the item specified by the string in this field. Default does not convert item. | Beetroot Soup: `"bowl"`, Honey Bottle: `"glass_bottle"` | 
-| using_converts_to (Alternate 1) | *not set* | Keyed set of strings |  |  | 
-| remove_effects | *not set* | Array of strings | Deprecated - no longer in use. Array of effect names to remove when eating this food. This property was deprecated and is no longer supported in newer versions. This property no longer works after format versions of at least 1.20.0. This property was available in versions 1.14 through 1.18 but has been removed in later versions. |  | 
+| using_converts_to (as Keyed set of strings) | *not set* | Keyed set of strings |  |  | 
+| remove_effects | *not set* | Array of strings | Deprecated - no longer in use. |  | 
 
-## Effects
+### remove_effects
+
+Deprecated - no longer in use. Array of effect names to remove when eating this food. This property was deprecated and is no longer supported in newer versions. This property no longer works after format versions of at least 1.20.0. This property was available in versions 1.14 through 1.18 but has been removed in later versions.
+
+
+### Effects
 
 #### Effects Properties
+
+**JSON path:** `effects`
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

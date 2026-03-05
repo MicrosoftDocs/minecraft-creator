@@ -15,9 +15,9 @@ Defines the entity's movement on the rails. An entity with this component is onl
 
 ## Rail Movement Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max_speed | 0.4 | Decimal number | Maximum speed that this entity will move at when on the rail. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max_speed | 0.4 | Decimal number | Maximum speed that this entity will move at when on the rail. | 
 
 ## Samples
 

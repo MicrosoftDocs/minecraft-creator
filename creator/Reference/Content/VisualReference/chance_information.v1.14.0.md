@@ -15,7 +15,7 @@ Specifies a probability as a fraction with numerator and denominator (format_ver
 
 ## Chance Information (v1.14.0) Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| denominator | *not set* | Integer number |  |  | 
-| numerator | *not set* | Integer number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| denominator | *not set* | Integer number |  | 
+| numerator | *not set* | Integer number |  | 

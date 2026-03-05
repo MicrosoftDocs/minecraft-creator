@@ -15,8 +15,8 @@ Triggers particle events when the emitter has traveled a specified distance. Use
 
 ## Client Particles Emitter Lifetime Events Travel Distance Events Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| distance | *not set* | Decimal number |  |  | 
-| effects | *not set* | Array of objects |  |  | 
-| effects (Alternate 1) | *not set* | String |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| distance | *not set* | Decimal number |  | 
+| effects | *not set* | Array of objects |  | 
+| effects (as String) | *not set* | String |  | 

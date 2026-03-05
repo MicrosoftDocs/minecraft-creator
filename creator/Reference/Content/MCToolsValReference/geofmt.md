@@ -13,7 +13,7 @@ Validates model geometry files for format compatibility and restricted features.
 | Rule ID | Rule | Severity | Auto-Fix |
 |:--------|:-----|:---------|:---------|
 | [GEOFMT101](#geofmt101) | Restricted Poly Mesh | 🔴 Error |  |
-| [GEOFMT102](#geofmt102) | JSON Parse Error | 🔴 Error |  |
+| [GEOFMT102](#geofmt102) | JSON Syntax Error (Geometry) | 🔴 Error |  |
 
 ---
 ## Rule Details
@@ -29,7 +29,7 @@ Error when geometry contains poly_mesh data. Poly meshes are a restricted featur
 Data contains the geometry identifier with poly_mesh.
 
 ### GEOFMT102
-**🔴 JSON Parse Error**  
+**🔴 JSON Syntax Error (Geometry)**  
 **Severity**: Error
 
 #### What This Checks

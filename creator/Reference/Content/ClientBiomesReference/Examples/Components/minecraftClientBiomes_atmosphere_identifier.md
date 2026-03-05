@@ -15,6 +15,6 @@ Set the identifier used for atmospherics in Vibrant Visuals mode. Identifiers mu
 
 ## Client Biome Atmosphere Identifier Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| atmosphere_identifier | *not set* | Object | Identifier of atmosphere definition to use |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| atmosphere_identifier | *not set* | Object | Identifier of atmosphere definition to use | 

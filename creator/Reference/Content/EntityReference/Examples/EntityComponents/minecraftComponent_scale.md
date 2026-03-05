@@ -15,8 +15,8 @@ Sets the entity's visual size multiplier. A value of 1.0 means normal size, 0.5 
 
 ## Scale Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | 1 | Decimal number | The scale multiplier for visual size. 1.0 = normal, 0.5 = half (babies), 2.0 = double size. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | 1 | Decimal number | The scale multiplier for visual size. 1.0 = normal, 0.5 = half (babies), 2.0 = double size. | 
 
 ## Samples

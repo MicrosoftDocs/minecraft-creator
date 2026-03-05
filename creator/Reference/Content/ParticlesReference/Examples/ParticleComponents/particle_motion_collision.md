@@ -15,32 +15,47 @@ Enables particle collision with world geometry. Configure collision radius, boun
 
 ## Client Particles Particle Motion Collision Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| coefficient_of_restitution | 0 | Decimal number |  |  | 
-| collision_drag | 0 | Decimal number |  |  | 
-| collision_radius | *not set* | Decimal number |  |  | 
-| enabled | 1 | Keyed set of strings |  |  | 
-| enabled (Alternate 1) | *not set* | Key/item pairs of [Enabled](#enabled) items |  |  | 
-| enabled (Alternate 2) | *not set* | Decimal number |  |  | 
-| events (Collision Event) | *not set* | Array of [Events](#events) items |  |  | 
-| events (Alternate 1) | *not set* | [Events](#events) item |  |  | 
-| expire_on_contact | false | Boolean true/false |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| coefficient_of_restitution | 0 | Decimal number |  | 
+| collision_drag | 0 | Decimal number |  | 
+| collision_radius | *not set* | Decimal number |  | 
+| enabled | 1 | Keyed set of strings |  | 
+| enabled (Enabled) | *not set* | Key/item pairs of [Enabled (Enabled)](#enabled-enabled) items |  | 
+| enabled (as Decimal number) | *not set* | Decimal number |  | 
+| events (Collision Event) | *not set* | Array of [Events](#events) items |  | 
+| events (Events) | *not set* | [Events (Events)](#events-events) item |  | 
+| expire_on_contact | false | Boolean true/false |  | 
 
-## Enabled
+### Enabled (Enabled)
 
 #### Enabled Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `enabled`
 
-## Events
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
+
+### Events
 
 #### Collision Event Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| event | *not set* | String |  |  | 
-| min_speed | *not set* | Decimal number |  |  | 
+**JSON path:** `events`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| event | *not set* | String |  | 
+| min_speed | *not set* | Decimal number |  | 
+
+### Events (Events)
+
+#### Events Properties
+
+**JSON path:** `events`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| event | *not set* | Object |  | 
+| min_speed | 2 | Decimal number |  | 

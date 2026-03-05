@@ -15,20 +15,22 @@ References another add-on pack that must be present for this pack to work. Commo
 
 ## 3.0.0.PackDependency Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| uuid | *not set* | Object |  |  | 
-| version (Version) | *not set* | [Version](#version) item |  |  | 
-| version (Alternate 1) | *not set* | String |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| uuid | *not set* | Object |  | 
+| version (Version) | *not set* | [Version](#version) item |  | 
+| version (as String) | *not set* | String |  | 
 
-## Version
+### Version
 
 #### Version Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| buildMeta |  | String |  |  | 
-| major | 0 | Integer number |  |  | 
-| minor | 0 | Integer number |  |  | 
-| patch | 0 | Integer number |  |  | 
-| preRelease |  | String |  |  | 
+**JSON path:** `version`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| buildMeta |  | String |  | 
+| major | 0 | Integer number |  | 
+| minor | 0 | Integer number |  | 
+| patch | 0 | Integer number |  | 
+| preRelease |  | String |  | 

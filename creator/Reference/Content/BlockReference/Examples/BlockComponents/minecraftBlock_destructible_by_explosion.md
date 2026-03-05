@@ -19,13 +19,18 @@ This item can also be represented as a `Boolean true/false`.
 
 ## Destructible By Explosion Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| explosion_resistance | 0 | Decimal number | Sets the explosion resistance for the block. Greater values result in greater resistance to explosions. The scale will be different for different explosion power levels. A negative value or 0 means it will easily explode; larger numbers increase level of resistance. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| explosion_resistance | 0 | Decimal number | Sets the explosion resistance for the block. | 
+
+### explosion_resistance
+
+Sets the explosion resistance for the block. Greater values result in greater resistance to explosions. The scale will be different for different explosion power levels. A negative value or 0 means it will easily explode; larger numbers increase level of resistance.
+
 
 ## Samples
 
-#### [Example](Example)
+#### Example
 
 
 ```json

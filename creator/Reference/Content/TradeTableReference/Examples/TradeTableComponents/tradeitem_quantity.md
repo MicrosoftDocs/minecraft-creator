@@ -15,7 +15,7 @@ Defines a random quantity range for a trade item.
 
 ## Trade Item Quantity Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max | 1 | Integer number | Maximum number of items for this trade. |  | 
-| min | 1 | Integer number | Minimum number of items for this trade. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | 1 | Integer number | Maximum number of items for this trade. | 
+| min | 1 | Integer number | Minimum number of items for this trade. | 

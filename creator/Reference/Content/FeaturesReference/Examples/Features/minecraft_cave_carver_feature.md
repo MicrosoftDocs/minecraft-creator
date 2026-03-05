@@ -15,25 +15,27 @@ Carves a cave through the world in the current chunk, and in every chunk around 
 
 ## Cave Carver Feature Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description) item |  |  | 
-| format_version | *not set* | String |  |  | 
-| height_limit | *not set* | Integer number | The height limit where we attempt to carve. |  | 
-| skip_carve_chance | *not set* | Integer number | The chance to skip doing the carve (1 / value). |  | 
-| width_modifier | *not set* | Molang | How many blocks to increase the cave radius by, from the center point of the cave. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| description | *not set* | [Description](#description) item |  | 
+| format_version | *not set* | String |  | 
+| height_limit | *not set* | Integer number | The height limit where we attempt to carve. | 
+| skip_carve_chance | *not set* | Integer number | The chance to skip doing the carve (1 / value). | 
+| width_modifier | *not set* | Molang | How many blocks to increase the cave radius by, from the center point of the cave. | 
 
-## Description
+### Description
 
 #### Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
+**JSON path:** `description`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. | 
 
 ## Samples
 
-#### [Example](example)
+#### Example
 
 
 ```json

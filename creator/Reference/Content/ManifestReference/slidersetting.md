@@ -15,15 +15,15 @@ A numeric slider setting that appears in the pack's world settings UI. Allows pl
 
 ## 3.0.0.SliderSetting Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| default | *not set* | Decimal number |  |  | 
-| max | *not set* | Decimal number |  |  | 
-| min | *not set* | Decimal number |  |  | 
-| name | *not set* | String |  |  | 
-| step | *not set* | Decimal number |  |  | 
-| text | *not set* | String |  |  | 
-| type | *not set* | [Type](#type-choices) choices |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| default | *not set* | Decimal number |  | 
+| max | *not set* | Decimal number |  | 
+| min | *not set* | Decimal number |  | 
+| name | *not set* | String |  | 
+| step | *not set* | Decimal number |  | 
+| text | *not set* | String |  | 
+| type | *not set* | [Type](#type-choices) choices |  | 
 
 ### Type choices
 

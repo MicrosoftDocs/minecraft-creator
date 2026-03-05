@@ -15,6 +15,6 @@ Specifies the generator type used for world generation in the dimension.
 
 ## Dimension Generation Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| generator_type | *not set* | String |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| generator_type | *not set* | String |  | 

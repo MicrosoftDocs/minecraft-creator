@@ -15,29 +15,26 @@ Sets the starting rotation angle and spin velocity for each particle. Initial ro
 
 ## Client Particles Particle Initial Spin Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| rotation | 0 | Keyed set of strings |  |  | 
-| rotation (Alternate 1) | *not set* | Key/item pairs of [Rotation](#rotation) items |  |  | 
-| rotation (Alternate 2) | *not set* | Decimal number |  |  | 
-| rotation_rate | 0 | Keyed set of strings |  |  | 
-| rotation_rate (Alternate 1) | *not set* | Key/item pairs of [Rotation Rate](#rotation-rate) items |  |  | 
-| rotation_rate (Alternate 2) | *not set* | Decimal number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| rotation | 0 | Keyed set of strings |  | 
+| rotation (Rotation) | *not set* | Key/item pairs of [Rotation (Rotation)](#rotation-rotation) items |  | 
+| rotation (as Decimal number) | *not set* | Decimal number |  | 
+| rotation_rate | 0 | Keyed set of strings |  | 
+| rotation_rate (Rotation Rate) | *not set* | Key/item pairs of [Rotation Rate (Rotation Rate)](#rotation-rate-rotation-rate) items |  | 
+| rotation_rate (as Decimal number) | *not set* | Decimal number |  | 
 
-## Rotation
+### Rotation (Rotation)
 
 #### Rotation Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `rotation`
 
-## Rotation Rate
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
-#### Rotation Rate Properties
+### Rotation Rate (Rotation Rate)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+Same structure as [Rotation (Rotation)](#rotation-rotation).

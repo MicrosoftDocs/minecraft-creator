@@ -27,34 +27,33 @@ Allows the Entity to be tamed by mounting it.
 | ride_text | *not set* | String | The text that shows in the riding interact button. | Llama: `"action.interact.mount"` | 
 | tame_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event that triggers when the entity becomes tamed. | Llama: `{"event":"minecraft:on_tame","target":"self"}` | 
 
-## Auto Reject Items
+### Auto Reject Items
 
 #### Auto reject items Properties
+
+**JSON path:** `auto_reject_items`
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | item | *not set* | String |  | Trader Llama: `"horsearmorleather"` | 
 
-## AutoRejectItems
-The list of items that, if carried while interacting with the entity, will anger it.
+### AutoRejectItems
+
+Same structure as [Auto Reject Items](#auto-reject-items).
 
 
-#### AutoRejectItems Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| item | *not set* | String | Name of the item this entity dislikes and will cause it to get angry if used while untamed. |  | 
-
-## Feed Items
+### Feed Items
 The list of items that can be used to increase the entity's temper and speed up the taming process.
 
 
 #### Feed Items Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| item | *not set* | String | Name of the item this entity likes and can be used to increase this entity's temper. |  | 
-| temper_mod | 0 | Integer number | The amount of temper this entity gains when fed this item. |  | 
+**JSON path:** `feed_items`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| item | *not set* | String | Name of the item this entity likes and can be used to increase this entity's temper. | 
+| temper_mod | 0 | Integer number | The amount of temper this entity gains when fed this item. | 
 
 ## Samples
 

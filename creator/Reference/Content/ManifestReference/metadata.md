@@ -15,10 +15,10 @@ Optional metadata about the pack including author names, license information, an
 
 ## 3.0.0.Metadata Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| authors | *not set* | Array of strings |  |  | 
-| generated_with | *not set* | Object |  |  | 
-| license | *not set* | String |  |  | 
-| product_type | *not set* | String |  |  | 
-| url | *not set* | String |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| authors | *not set* | Array of strings |  | 
+| generated_with | *not set* | Object |  | 
+| license | *not set* | String |  | 
+| product_type | *not set* | String |  | 
+| url | *not set* | String |  | 

@@ -15,6 +15,6 @@ JigsawStructureMetadata.
 
 ## JigsawStructureMetadata Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| metadata | *not set* | Object | The registry associating structure locations with generated Jigsaw structure metadata. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| metadata | *not set* | Object | The registry associating structure locations with generated Jigsaw structure metadata. | 

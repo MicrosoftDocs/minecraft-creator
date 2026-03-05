@@ -15,8 +15,8 @@ Defines a single structure template element for template pools.
 
 ## JigsawStructureTemplatePool SinglePoolElement Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| element_type | *not set* | String | The type of pool element. |  | 
-| location | *not set* | String | The path of the structure file. This path is relative to the behavior pack's structures folder. |  | 
-| processors | *not set* | String | The identifier of the processor list to use when placing the structure. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| element_type | *not set* | String | The type of pool element. | 
+| location | *not set* | String | The path of the structure file. This path is relative to the behavior pack's structures folder. | 
+| processors | *not set* | String | The identifier of the processor list to use when placing the structure. | 

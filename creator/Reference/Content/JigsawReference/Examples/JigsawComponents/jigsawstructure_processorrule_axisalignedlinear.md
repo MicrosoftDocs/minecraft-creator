@@ -15,11 +15,11 @@ Predicate that evaluates to true if the block is within the distance range along
 
 ## JigsawStructure ProcessorRule AxisAlignedLinear Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| axis | *not set* | String | The axis along which to measure distance. |  | 
-| max_chance | *not set* | Decimal number | Maximum chance value for the random probability. |  | 
-| max_dist | *not set* | Integer number | Maximum distance along the axis. |  | 
-| min_chance | *not set* | Decimal number | Minimum chance value for the random probability. |  | 
-| min_dist | *not set* | Integer number | Minimum distance along the axis. |  | 
-| predicate_type | *not set* | String | PositionalBlockRuleAxis |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| axis | *not set* | String | The axis along which to measure distance. | 
+| max_chance | *not set* | Decimal number | Maximum chance value for the random probability. | 
+| max_dist | *not set* | Integer number | Maximum distance along the axis. | 
+| min_chance | *not set* | Decimal number | Minimum chance value for the random probability. | 
+| min_dist | *not set* | Integer number | Minimum distance along the axis. | 
+| predicate_type | *not set* | String | PositionalBlockRuleAxis | 

@@ -15,17 +15,19 @@ Creates a single-burst particle effect that runs once and stops. The emitter act
 
 ## Client Particles Emitter Lifetime Once Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| active_time | 0 | Molang | The time in seconds that the emitter is active. Can be a number or Molang expression. |  | 
-| active_time (Alternate 1) | *not set* | Key/item pairs of [Active Time](#active-time) items |  |  | 
-| active_time (Alternate 2) | *not set* | Decimal number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| active_time | 0 | Molang | The time in seconds that the emitter is active. Can be a number or Molang expression. | 
+| active_time (Active Time) | *not set* | Key/item pairs of [Active Time (Active Time)](#active-time-active-time) items |  | 
+| active_time (as Decimal number) | *not set* | Decimal number |  | 
 
-## Active Time
+### Active Time (Active Time)
 
 #### Active Time Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `active_time`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 

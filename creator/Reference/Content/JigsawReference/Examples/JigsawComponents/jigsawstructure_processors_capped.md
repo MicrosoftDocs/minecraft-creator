@@ -15,8 +15,8 @@ Processor that wraps a processor and caps the number of times the delegated proc
 
 ## JigsawStructure Processors Capped Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| delegate | *not set* | Object | The processor that will be executed. |  | 
-| limit | *not set* | Object | The maximum number of times that this delegate can be applied. |  | 
-| processor_type | *not set* | String | Processors Type |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| delegate | *not set* | Object | The processor that will be executed. | 
+| limit | *not set* | Object | The maximum number of times that this delegate can be applied. | 
+| processor_type | *not set* | String | Processors Type | 

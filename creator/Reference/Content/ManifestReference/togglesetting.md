@@ -15,12 +15,12 @@ A boolean on/off setting that appears in the pack's world settings UI. Players c
 
 ## 3.0.0.ToggleSetting Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| default | *not set* | Boolean true/false |  |  | 
-| name | *not set* | String |  |  | 
-| text | *not set* | String |  |  | 
-| type | *not set* | [Type](#type-choices) choices |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| default | *not set* | Boolean true/false |  | 
+| name | *not set* | String |  | 
+| text | *not set* | String |  | 
+| type | *not set* | [Type](#type-choices) choices |  | 
 
 ### Type choices
 

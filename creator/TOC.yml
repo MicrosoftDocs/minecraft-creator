@@ -610,7 +610,7 @@
     - name: Reference Documentation
       items:
       - name: Commands
-        href: Commands/TOC.yml
+        href: Reference/Content/CommandsReference/Examples/Commands/TOC.yml
       - name: Script APIs
         href: ScriptAPI/TOC.yml
       - name: Prior Versions of Script APIs

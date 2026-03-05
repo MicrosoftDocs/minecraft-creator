@@ -20,7 +20,7 @@ Defines what events to call when this entity is damaged by specific entities or 
 | deals_damage | false | [Deals Damage](#deals-damage-choices) choices | Defines how received damage affects the entity. |  | 
 | deals_damage (Alternate 1) | false | Boolean true/false |  |  | 
 | triggers (Damage Sensor Trigger) | *not set* | [Triggers](#triggers) item | List of triggers with the events to call when taking specific kinds of damage. | Allay: `[{"deals_damage":"no","on_damage":{"filters":{"all_of":[{"subject":"other","test":"is_family","value":"player"},{"subject":"other","test":"is_owner"}]}}}]`, Bat: `{"cause":"fall","deals_damage":"no"}`, Breeze: `[{"cause":"fall","deals_damage":"no"},{"cause":"projectile","on_damage":{"filters":{"operator":"!=","test":"is_family","subject":"damager","value":"wind_charge"}},"deals_damage":"no"}]` | 
-| triggers (Alternate 1) | *not set* | Object |  |  | 
+| triggers (as Object) | *not set* | Object |  |  | 
 
 ### Deals Damage choices
 
@@ -30,21 +30,23 @@ Defines what events to call when this entity is damaged by specific entities or 
 | no | No | Received damage is not applied to the entity.|
 | no_but_side_effects_apply | No But Side Effects Apply | Received damage is not applied to the entity, but the side effects of the attack are. This means that the attacker's weapon loses durability, enchantment side effects are applied, and so on.|
 
-## Triggers
+### Triggers
 
 #### Damage Sensor Trigger Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| cause | none | String | Type of damage that triggers the events. |  | 
-| damage_modifier | 0 | Decimal number | A modifier that adds/removes to the base damage received from the specified damage cause. |  | 
-| damage_multiplier | 1 | Decimal number | A multiplier that modifies the base damage received from the specified damage cause. |  | 
-| deals_damage | false | Boolean true/false | Defines how received damage affects the entity. |  | 
-| deals_damage (Alternate 1) | *not set* | String |  |  | 
-| event | *not set* | String | Event to emit when the trigger conditions are met. |  | 
-| filters | *not set* | Minecraft filter | Filter conditions for when this trigger applies. |  | 
-| on_damage | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Defines which entities the trigger applies to, and which event to emit when damaged. |  | 
-| on_damage_sound_event | *not set* | Minecraft Event Reference | Defines what sound to play when the on_damage filters are met. |  | 
+**JSON path:** `triggers`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| cause | none | String | Type of damage that triggers the events. | 
+| damage_modifier | 0 | Decimal number | A modifier that adds/removes to the base damage received from the specified damage cause. | 
+| damage_multiplier | 1 | Decimal number | A multiplier that modifies the base damage received from the specified damage cause. | 
+| deals_damage | false | Boolean true/false | Defines how received damage affects the entity. | 
+| deals_damage (as String) | *not set* | String |  | 
+| event | *not set* | String | Event to emit when the trigger conditions are met. | 
+| filters | *not set* | Minecraft filter | Filter conditions for when this trigger applies. | 
+| on_damage | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Defines which entities the trigger applies to, and which event to emit when damaged. | 
+| on_damage_sound_event | *not set* | Minecraft Event Reference | Defines what sound to play when the on_damage filters are met. | 
 
 ## Samples
 

@@ -15,26 +15,28 @@ Scatters vegetation in an area. The vegetation feature's appearance can be modif
 
 ## Vegetation Patch Feature Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description) item |  |  | 
-| format_version | *not set* | String |  |  | 
-| replaceable_blocks | *not set* | Array of strings |  |  | 
-| surface | *not set* | String | Determines if a vegetation patch will grow from the ceiling or the floor. |  | 
-| vertical_range | *not set* | Integer number | Vertical range used to determine a suitable surface position for the patch. |  | 
-| waterlogged | *not set* | Boolean true/false | If true, waterlogs the positions occupied by the ground blocks. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| description | *not set* | [Description](#description) item |  | 
+| format_version | *not set* | String |  | 
+| replaceable_blocks | *not set* | Array of strings |  | 
+| surface | *not set* | String | Determines if a vegetation patch will grow from the ceiling or the floor. | 
+| vertical_range | *not set* | Integer number | Vertical range used to determine a suitable surface position for the patch. | 
+| waterlogged | *not set* | Boolean true/false | If true, waterlogs the positions occupied by the ground blocks. | 
 
-## Description
+### Description
 
 #### Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
+**JSON path:** `description`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. | 
 
 ## Samples
 
-#### [Example](example)
+#### Example
 
 
 ```json

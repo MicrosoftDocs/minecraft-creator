@@ -15,6 +15,6 @@ JigsawStructureDefinition Description.
 
 ## JigsawStructureDefinition Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | Identifier of the Jigsaw Structure. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | Identifier of the Jigsaw Structure. | 

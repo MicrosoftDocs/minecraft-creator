@@ -15,7 +15,7 @@ Aim Assist Preset.
 
 ## Aim Assist Preset Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| format_version | *not set* | String | Version of the JSON schema for this file. Aim-assist preset requires at least version 1.21.50. |  | 
-| minecraft:aim_assist_preset | *not set* | Object | A single Camera Aim-Assist Preset Definition. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| format_version | *not set* | String | Version of the JSON schema for this file. Aim-assist preset requires at least version 1.21.50. | 
+| minecraft:aim_assist_preset | *not set* | Object | A single Camera Aim-Assist Preset Definition. | 

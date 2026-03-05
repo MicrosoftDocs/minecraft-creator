@@ -141,5 +141,23 @@
     }
   ],
   "permissionLevel": 1,
-  "requiresCheats": true
+  "requiresCheats": true,
+  "commandSamples": [
+    {
+      "command": "/clone 0 64 0 10 70 10 20 64 0",
+      "description": "Clone a region from (0,64,0)-(10,70,10) to (20,64,0)"
+    },
+    {
+      "command": "/clone ~-5 ~ ~-5 ~5 ~10 ~5 ~10 ~ ~ replace",
+      "description": "Clone a structure near you to an offset, replacing all blocks"
+    },
+    {
+      "command": "/clone ~-5 ~ ~-5 ~5 ~10 ~5 ~10 ~ ~ masked",
+      "description": "Clone only non-air blocks to a new location"
+    },
+    {
+      "command": "/clone 0 64 0 10 70 10 20 64 0 replace move",
+      "description": "Move a region (clone then clear original)"
+    }
+  ]
 }

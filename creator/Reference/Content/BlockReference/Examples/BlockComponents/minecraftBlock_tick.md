@@ -17,12 +17,21 @@ Causes the block to tick based on a regular interval equal to a number of ticks 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| interval_range | [0, 0] | Array of numbers | A range of values, specified in ticks, to decide the next tick interval for a block. After each block tick, a new value will be chosen from within the range to determine the next tick interval. If the values in the interval_range are the same, the block will always be ticked after that number of ticks. The first value must be lower or equal to the second value in the array. | Tick Every 1 To 3 Seconds: `[20,60]` | 
-| looping | true | Boolean true/false | If false, the block will only be ticked once after a delay equal to a number of ticks randomly chosen from the interval_range and no further ticking will occur. If true, after the block ticks, a new random value will be chosen from the interval_range for when the block will tick again. | Tick Every 1 To 3 Seconds: `true` | 
+| interval_range | [0, 0] | Array of numbers | A range of values, specified in ticks, to decide the next tick interval for a block. | Tick Every 1 To 3 Seconds: `[20,60]` | 
+| looping | true | Boolean true/false | If false, the block will only be ticked once after a delay equal to a number of ticks randomly chosen from the interval_range and no further ticking will occur. | Tick Every 1 To 3 Seconds: `true` | 
+
+### interval_range
+
+A range of values, specified in ticks, to decide the next tick interval for a block. After each block tick, a new value will be chosen from within the range to determine the next tick interval. If the values in the interval_range are the same, the block will always be ticked after that number of ticks. The first value must be lower or equal to the second value in the array.
+
+### looping
+
+If false, the block will only be ticked once after a delay equal to a number of ticks randomly chosen from the interval_range and no further ticking will occur. If true, after the block ticks, a new random value will be chosen from the interval_range for when the block will tick again.
+
 
 ## Samples
 
-#### [Tick Every 1 To 3 Seconds](Tick every 1 to 3 seconds)
+#### Tick Every 1 To 3 Seconds
 
 
 ```json

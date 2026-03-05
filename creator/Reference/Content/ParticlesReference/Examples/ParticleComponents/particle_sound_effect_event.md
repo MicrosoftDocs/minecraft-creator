@@ -15,6 +15,6 @@ Plays a sound effect when triggered by particle events like spawning, collision,
 
 ## Client Particles Particle Sound Effect Event Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| event_name | *not set* | String |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| event_name | *not set* | String |  | 

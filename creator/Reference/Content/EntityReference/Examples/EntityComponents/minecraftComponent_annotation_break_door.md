@@ -18,10 +18,10 @@ Allows an entity to break doors, assuming that that flags set up for the compone
 
 ## Break doors annotation Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| break_time | 12 | Integer number | The time in seconds required to break through doors. |  | 
-| min_difficulty | hard | String from a list of choices | The minimum difficulty that the world must be on for this entity to break doors. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| break_time | 12 | Integer number | The time in seconds required to break through doors. | 
+| min_difficulty | hard | String from a list of choices | The minimum difficulty that the world must be on for this entity to break doors. | 
 
 ## Samples
 

@@ -21,22 +21,29 @@ A component that owns multiple subsensors, each one firing an event when a set o
 | relative_range | true | Boolean true/false | If true the subsensors' range is additive on top of the entity's size. |  | 
 | subsensors | *not set* | Array of [Subsensors](#subsensors) items | The list of subsensors which sense for entities and emit events when all their conditions are met. | Parrot: `[{"event":"minecraft:on_riding_player","event_filters":{"all_of":[{"test":"is_riding","operator":"equals","subject":"self","value":true},{"test":"has_component","operator":"equals","subject":"self","value":"minecraft:behavior.look_at_player"}]},"range":[2,2]}]`, `[{"event":"minecraft:on_not_riding_player","event_filters":{"all_of":[{"test":"is_riding","operator":"equals","subject":"self","value":false},{"test":"has_component","operator":"not","subject":"self","value":"minecraft:behavior.look_at_player"}]},"range":[2,2]}]` | 
 
-## Subsensors
+### Subsensors
 The list of subsensors which sense for entities and emit events when all their conditions are met.
 
 
 #### Subsensors Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| cooldown | -1 | Decimal number | How many seconds should elapse before the subsensor can once again sense for entities. The cooldown is applied on top of the base 1 tick (0.05 seconds) delay. Negative values will result in no cooldown being used. |  | 
-| event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to fire when the conditions are met. |  | 
-| event_filters | *not set* | Minecraft filter | The set of conditions that must be satisfied to fire the event. |  | 
-| maximum_count | -1 | Integer number | The maximum number of entities that must pass the filter conditions for the event to send. |  | 
-| minimum_count | 1 | Integer number | The minimum number of entities that must pass the filter conditions for the event to send. |  | 
-| range | [10, 10] | a, b coordinate array | The maximum horizontal and vertical distance another entity can be from this and have the filters checked against it. |  | 
-| require_all | false | Boolean true/false | If true requires all nearby entities to pass the filter conditions for the events to send. |  | 
-| y_offset | 0 | Decimal number | Vertical offset applied to the entity's position when computing the distance from other entities. |  | 
+**JSON path:** `subsensors`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| cooldown | -1 | Decimal number | How many seconds should elapse before the subsensor can once again sense for entities. | 
+| event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to fire when the conditions are met. | 
+| event_filters | *not set* | Minecraft filter | The set of conditions that must be satisfied to fire the event. | 
+| maximum_count | -1 | Integer number | The maximum number of entities that must pass the filter conditions for the event to send. | 
+| minimum_count | 1 | Integer number | The minimum number of entities that must pass the filter conditions for the event to send. | 
+| range | [10, 10] | a, b coordinate array | The maximum horizontal and vertical distance another entity can be from this and have the filters checked against it. | 
+| require_all | false | Boolean true/false | If true requires all nearby entities to pass the filter conditions for the events to send. | 
+| y_offset | 0 | Decimal number | Vertical offset applied to the entity's position when computing the distance from other entities. | 
+
+#### cooldown
+
+How many seconds should elapse before the subsensor can once again sense for entities. The cooldown is applied on top of the base 1 tick (0.05 seconds) delay. Negative values will result in no cooldown being used.
+
 
 ## Samples
 

@@ -18,8 +18,8 @@ Skin ID value. Can be used to differentiate skins, such as base skins for villag
 
 ## Skin Id Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | 0 | Integer number | The ID of the skin. By convention, 0 is the ID of the base skin. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | 0 | Integer number | The ID of the skin. By convention, 0 is the ID of the base skin. | 
 
 ## Samples

@@ -17,7 +17,12 @@ Defines the family categories this entity belongs to. Type families are used by 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| family | *not set* | [Family](#family-choices) choices | A set of tags that describe the categories of this entity. In addition to typically having a tag for the type of mob, entities frequently have additional type family tags that modify how the rest of the Minecraft world reacts to them. | Allay: `["allay","mob"]`, Armor Stand: `["armor_stand","inanimate","mob"]`, Bat: `["bat","mob"]` | 
+| family | *not set* | [Family](#family-choices) choices | A set of tags that describe the categories of this entity. | Allay: `["allay","mob"]`, Armor Stand: `["armor_stand","inanimate","mob"]`, Bat: `["bat","mob"]` | 
+
+### family
+
+A set of tags that describe the categories of this entity. In addition to typically having a tag for the type of mob, entities frequently have additional type family tags that modify how the rest of the Minecraft world reacts to them.
+
 
 ### Family choices
 

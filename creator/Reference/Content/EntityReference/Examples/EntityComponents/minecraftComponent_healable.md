@@ -21,21 +21,25 @@ How entities heal.
 | force_use | false | Boolean true/false | Determines if item can be used regardless of entity being at full health. | Parrot: `true` | 
 | items | *not set* | Array of [Items](#items) items | The array of items that can be used to heal this entity. | Llama: `[{"item":"wheat","heal_amount":2},{"item":"hay_block","heal_amount":10}]`, Parrot: `[{"effects":[{"amplifier":0,"chance":1,"duration":1000,"name":"fatal_poison"}],"heal_amount":0,"item":"cookie"}]` | 
 
-## Items
+### Items
 The array of items that can be used to heal this entity.
 
 
 #### Items Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| effects | *not set* | Array of [Effects](#effects) items |  |  | 
-| heal_amount | 1 | Integer number | The amount of health this entity gains when fed this item. |  | 
-| item | *not set* | String | Item identifier that can be used to heal this entity. |  | 
+**JSON path:** `items`
 
-## Effects
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| effects | *not set* | Array of [Effects](#effects) items |  | 
+| heal_amount | 1 | Integer number | The amount of health this entity gains when fed this item. | 
+| item | *not set* | String | Item identifier that can be used to heal this entity. | 
 
-#### Effects Properties
+#### Effects
+
+##### Effects Properties
+
+**JSON path:** `items > effects`
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

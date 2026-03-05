@@ -15,27 +15,29 @@ Snaps the y-value of a feature placement pos to the floor or the ceiling within 
 
 ## Snap To Surface Feature Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| allow_air_placement | *not set* | Boolean true/false | Determines whether the feature can snap through air blocks. Defaults to true. |  | 
-| allow_underwater_placement | *not set* | Boolean true/false | Determines whether the feature can snap through water blocks. Defaults to false. |  | 
-| allowed_surface_blocks | *not set* | Array of strings | A list of blocks that the feature is permitted to snap to. Leaving this empty results in the feature snapping to blocks that can provide support for the given face (up/down/horizontal) |  | 
-| description | *not set* | [Description](#description) item |  |  | 
-| format_version | *not set* | String |  |  | 
-| surface | *not set* | String | Defines the surface that the y-value of the placement position will be snapped to. Valid values: 'ceiling', 'floor' and 'random_horizontal' |  | 
-| vertical_search_range | *not set* | Integer number | Range to search for a floor or ceiling for snaping the feature. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| allow_air_placement | *not set* | Boolean true/false | Determines whether the feature can snap through air blocks. Defaults to true. | 
+| allow_underwater_placement | *not set* | Boolean true/false | Determines whether the feature can snap through water blocks. Defaults to false. | 
+| allowed_surface_blocks | *not set* | Array of strings | A list of blocks that the feature is permitted to snap to. Leaving this empty results in the feature snapping to blocks that can provide support for the given face (up/down/horizontal) | 
+| description | *not set* | [Description](#description) item |  | 
+| format_version | *not set* | String |  | 
+| surface | *not set* | String | Defines the surface that the y-value of the placement position will be snapped to. Valid values: 'ceiling', 'floor' and 'random_horizontal' | 
+| vertical_search_range | *not set* | Integer number | Range to search for a floor or ceiling for snaping the feature. | 
 
-## Description
+### Description
 
 #### Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
+**JSON path:** `description`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. | 
 
 ## Samples
 
-#### [Example](example)
+#### Example
 
 
 ```json

@@ -18,6 +18,6 @@ Triggers the specified event randomly based on the random tick speed gamerule. T
 
 ## Random Ticking Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| on_tick | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | The event that will be triggered on random ticks. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| on_tick | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | The event that will be triggered on random ticks. | 

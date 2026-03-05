@@ -15,6 +15,6 @@ Predicate that always evaluates to true. This is the default predicate if no oth
 
 ## JigsawStructure ProcessorRule AlwaysTrueBlock Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| predicate_type | *not set* | String | The type of block predicate. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| predicate_type | *not set* | String | The type of block predicate. | 

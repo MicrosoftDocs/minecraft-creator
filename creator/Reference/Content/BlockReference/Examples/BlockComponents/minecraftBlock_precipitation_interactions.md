@@ -16,6 +16,6 @@ Experimental toggles required: Upcoming Creator Features (in format versions bef
 
 ## Precipitation Interactions Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| precipitation_behavior | accumulate snow | String | What behavior should the block have. Three possible values: obrain, obstruct_rain_accumulate_snow and none |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| precipitation_behavior | accumulate snow | String | What behavior should the block have. Three possible values: obrain, obstruct_rain_accumulate_snow and none | 

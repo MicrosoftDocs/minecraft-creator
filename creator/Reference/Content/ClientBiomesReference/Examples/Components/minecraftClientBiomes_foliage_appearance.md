@@ -15,6 +15,6 @@ Sets the foliage color or color map used during rendering. Biomes without this c
 
 ## Minecraft Foliage Appearance Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| color | *not set* | Object | RGB color of foliage, or a Foliage Color Map object. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| color | *not set* | Object | RGB color of foliage, or a Foliage Color Map object. | 

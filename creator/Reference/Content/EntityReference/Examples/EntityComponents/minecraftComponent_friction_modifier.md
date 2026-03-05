@@ -15,6 +15,6 @@ Defines how much friction affects this entity.
 
 ## Friction Modifier Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | 1 | Decimal number | The higher the number, the more friction affects this entity. A value of 1.0 means regular friction, while 2.0 means twice as much. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | 1 | Decimal number | The higher the number, the more friction affects this entity. A value of 1.0 means regular friction, while 2.0 means twice as much. | 

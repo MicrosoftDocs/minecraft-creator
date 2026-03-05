@@ -20,7 +20,7 @@ Allows the mob to float around like the Ghast.
 | additional_collision_buffer | false | Boolean true/false | If true, the mob will have an additional buffer zone around it to avoid collisions with blocks when picking a position to wander to. |  | 
 | allow_navigating_through_liquids | false | Boolean true/false | If true allows the mob to navigate through liquids on its way to the target position. |  | 
 | float_duration | *not set* | Array of numbers | Range of time in seconds the mob will float around before landing and choosing to do something else | Bat: `[0.1,0.35]` | 
-| float_duration (Alternate 1) | *not set* | Decimal number |  |  | 
+| float_duration (as Decimal number) | *not set* | Decimal number |  |  | 
 | float_wander_has_move_control | true | Boolean true/false | If true, the MoveControl flag will be added to the behavior which means that it can no longer be active at the same time as other behaviors with MoveControl. |  | 
 | must_reach | false | Boolean true/false | If true, the point has to be reachable to be a valid target |  | 
 | navigate_around_surface | false | Boolean true/false | If true, will prioritize finding random positions in the vicinity of surfaces, i.e. blocks that are not Air or Liquid. |  | 

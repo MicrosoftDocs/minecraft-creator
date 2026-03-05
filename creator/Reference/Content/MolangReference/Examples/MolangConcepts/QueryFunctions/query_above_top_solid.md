@@ -15,7 +15,7 @@ Returns the height of the block immediately above the highest solid block at the
 
 ## Samples
 
-#### [Example](Example)
+#### Example
 
 
 ```json

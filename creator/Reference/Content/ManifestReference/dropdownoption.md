@@ -15,7 +15,7 @@ A single option within a dropdown setting. Contains a unique identifier used by 
 
 ## 3.0.0.DropdownOption Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | String |  |  | 
-| text | *not set* | String |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| name | *not set* | String |  | 
+| text | *not set* | String |  | 

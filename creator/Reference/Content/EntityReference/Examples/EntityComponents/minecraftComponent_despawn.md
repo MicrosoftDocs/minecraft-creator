@@ -26,14 +26,16 @@ Despawns the Actor when the despawn rules or optional filters evaluate to true.
 | min_range_random_chance | 800 | Integer number | A random chance between 1 and the given value. |  | 
 | remove_child_entities | false | Boolean true/false | If true, all entities linked to this entity in a child relationship (eg. leashed) will also be despawned. |  | 
 
-## Despawn From Distance
+### Despawn From Distance
 
 #### Despawn From Distance Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max_distance | 128 | Integer number | Maximum distance for standard despawn rules to instantly despawn the mob. |  | 
-| min_distance | 32 | Integer number | Minimum distance for standard despawn rules to try to despawn the mob. |  | 
+**JSON path:** `despawn_from_distance`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max_distance | 128 | Integer number | Maximum distance for standard despawn rules to instantly despawn the mob. | 
+| min_distance | 32 | Integer number | Minimum distance for standard despawn rules to try to despawn the mob. | 
 
 ## Samples
 

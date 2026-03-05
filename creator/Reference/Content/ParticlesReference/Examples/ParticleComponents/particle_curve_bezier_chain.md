@@ -15,19 +15,21 @@ Creates smooth, organic animation curves using chained bezier segments. Unlike l
 
 ## Client Particles Particle Curve Bezier Chain Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| input | *not set* | Keyed set of strings |  |  | 
-| input (Alternate 1) | *not set* | Key/item pairs of [Input](#input) items |  |  | 
-| input (Alternate 2) | *not set* | Decimal number |  |  | 
-| nodes | *not set* | Object |  |  | 
-| type | *not set* | String |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| input | *not set* | Keyed set of strings |  | 
+| input (Input) | *not set* | Key/item pairs of [Input (Input)](#input-input) items |  | 
+| input (as Decimal number) | *not set* | Decimal number |  | 
+| nodes | *not set* | Object |  | 
+| type | *not set* | String |  | 
 
-## Input
+### Input (Input)
 
 #### Input Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `input`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 

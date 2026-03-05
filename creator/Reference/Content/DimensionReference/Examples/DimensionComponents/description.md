@@ -15,6 +15,6 @@ Declares the unique identifier for a custom dimension that players can travel to
 
 ## Dimension Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String |  | 

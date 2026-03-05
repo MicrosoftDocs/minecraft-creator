@@ -15,7 +15,7 @@ Protect blocks from this structure's placement in the world. Ensuring that it do
 
 ## JigsawStructure Processors ProtectedBlock Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| processor_type | *not set* | String | Processors Type |  | 
-| value | *not set* | String | Block tag for the blocks that will be protected |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| processor_type | *not set* | String | Processors Type | 
+| value | *not set* | String | Block tag for the blocks that will be protected | 

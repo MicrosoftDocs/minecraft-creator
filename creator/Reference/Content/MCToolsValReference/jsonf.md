@@ -29,7 +29,7 @@ Validates JSON files against Minecraft documentation-derived form schemas. These
 | [JSONF119](#jsonf119) | Key Not Allowed | 🟡 Warning |  |
 | [JSONF120](#jsonf120) | Unexpected Property | 🟡 Warning |  |
 | [JSONF121](#jsonf121) | Missing Required Field | 🟡 Warning |  |
-| [JSONF401](#jsonf401) | JSON Parse Error | 🔴 Error |  |
+| [JSONF401](#jsonf401) | JSON Parse Error (Form Validation) | 🔴 Error |  |
 | [JSONF402](#jsonf402) | Form Not Found | ℹ️ Info |  |
 
 ---
@@ -222,7 +222,7 @@ Add the missing required field with an appropriate value. Check the Minecraft Cr
 Triggered when field.isRequired is true and the data for this field is undefined or null.
 
 ### JSONF401
-**🔴 JSON Parse Error**  
+**🔴 JSON Parse Error (Form Validation)**  
 **Severity**: Error
 
 #### What This Checks

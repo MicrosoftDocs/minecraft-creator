@@ -15,6 +15,10 @@ It defines to which armor slot an item equipped to 'minecraft:equippable''s seco
 
 ## Entity Armor Equipment Slot Mapping Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| armor_slot | *not set* | String | The armor slot an item equipped to 'minecraft:equippable''s second slot should be equipped to. It defaults to 'slot.armor.torso' for entities with a format version prior to 1.21.10, and to 'slot.armor.body' otherwise. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| armor_slot | *not set* | String | The armor slot an item equipped to 'minecraft:equippable''s second slot should be equipped to. | 
+
+### armor_slot
+
+The armor slot an item equipped to 'minecraft:equippable''s second slot should be equipped to. It defaults to 'slot.armor.torso' for entities with a format version prior to 1.21.10, and to 'slot.armor.body' otherwise.

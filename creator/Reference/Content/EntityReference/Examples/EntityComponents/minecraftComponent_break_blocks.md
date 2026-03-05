@@ -15,8 +15,8 @@ Specifies the blocks that the entity can break as it moves around.
 
 ## Break Blocks Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| breakable_blocks | *not set* | Array of strings | A list of the blocks that can be broken as this entity moves around. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| breakable_blocks | *not set* | Array of strings | A list of the blocks that can be broken as this entity moves around. | 
 
 ## Samples

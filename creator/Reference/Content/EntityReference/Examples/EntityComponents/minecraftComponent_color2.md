@@ -18,8 +18,8 @@ Defines the entity's second texture color.
 
 ## Color2 Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | 0 | Integer number | The second Palette Color value of the entity. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | 0 | Integer number | The second Palette Color value of the entity. | 
 
 ## Samples

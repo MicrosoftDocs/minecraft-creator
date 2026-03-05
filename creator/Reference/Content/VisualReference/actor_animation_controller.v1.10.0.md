@@ -15,66 +15,76 @@ Animation controllers are state machines that control which animations play and 
 
 ## Animation Controller (v1.10.0) Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| animation_controllers | *not set* | Key/item pairs of [Animation Controllers](#animation-controllers) items |  |  | 
-| format_version | *not set* | Version |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| animation_controllers | *not set* | Key/item pairs of [Animation Controllers](#animation-controllers) items |  | 
+| format_version | *not set* | Version |  | 
 
-## Animation Controllers
+### Animation Controllers
 
 #### Animation Controllers Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| initial_state | *not set* | String |  |  | 
-| states | *not set* | Key/item pairs of [States](#states) items |  |  | 
+**JSON path:** `animation_controllers`
 
-## States
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| initial_state | *not set* | String |  | 
+| states | *not set* | Key/item pairs of [States](#states) items |  | 
 
-#### States Properties
+#### States
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| animations | *not set* | Array of objects |  |  | 
-| animations (Alternate 1) | *not set* | Array of strings |  |  | 
-| animations (Alternate 2) | *not set* | Molang |  |  | 
-| blend_transition | *not set* | Object | Specifies the cross-fade time in seconds when transitioning to another state |  | 
-| blend_via_shortest_path | *not set* | Boolean true/false | When blending a transition to another state, animate each euler axis through the shortest rotation, instead of by value |  | 
-| on_entry | *not set* | Array of strings |  |  | 
-| on_exit | *not set* | Array of strings |  |  | 
-| particle_effects | *not set* | Array of [Particle Effects](#particle-effects) items |  |  | 
-| particle_effects (Alternate 1) | *not set* | Array of strings |  |  | 
-| sound_effects | *not set* | Array of [Sound Effects](#sound-effects) items |  |  | 
-| sound_effects (Alternate 1) | *not set* | Array of strings | Collection of sounds to trigger on entry to this animation state. |  | 
-| transitions | *not set* | Array of objects |  |  | 
-| transitions (Alternate 1) | *not set* | Array of strings |  |  | 
-| variables | *not set* | Key/item pairs of [Variables](#variables) items |  |  | 
+##### States Properties
 
-## Particle Effects
+**JSON path:** `animation_controllers > states`
 
-#### Particle Effects Properties
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| animations | *not set* | Array of objects |  | 
+| animations (as Array of strings) | *not set* | Array of strings |  | 
+| animations (as Molang) | *not set* | Molang |  | 
+| blend_transition | *not set* | Object | Specifies the cross-fade time in seconds when transitioning to another state | 
+| blend_via_shortest_path | *not set* | Boolean true/false | When blending a transition to another state, animate each euler axis through the shortest rotation, instead of by value | 
+| on_entry | *not set* | Array of strings |  | 
+| on_exit | *not set* | Array of strings |  | 
+| particle_effects | *not set* | Array of [Particle Effects](#particle-effects) items |  | 
+| particle_effects (as Array of strings) | *not set* | Array of strings |  | 
+| sound_effects | *not set* | Array of [Sound Effects](#sound-effects) items |  | 
+| sound_effects (as Array of strings) | *not set* | Array of strings | Collection of sounds to trigger on entry to this animation state. | 
+| transitions | *not set* | Array of objects |  | 
+| transitions (as Array of strings) | *not set* | Array of strings |  | 
+| variables | *not set* | Key/item pairs of [Variables](#variables) items |  | 
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| bind_to_actor | *not set* | Boolean true/false | Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor). |  | 
-| effect | *not set* | String | The name of a particle effect that should be played |  | 
-| locator | *not set* | String | The name of a locator on the actor where the effect should be located |  | 
-| pre_effect_script | *not set* | Molang | A Molang script that will be run when the particle emitter is initialized |  | 
+##### Particle Effects
 
-## Sound Effects
+###### Particle Effects Properties
 
-#### Sound Effects Properties
+**JSON path:** `animation_controllers > states > particle_effects`
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| effect | *not set* | String | Valid sound effect names should be listed in the entity's resource_definition json file. |  | 
-| locator | *not set* | String | The name of a locator on the actor where the sound should originate from |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| bind_to_actor | *not set* | Boolean true/false | Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor). | 
+| effect | *not set* | String | The name of a particle effect that should be played | 
+| locator | *not set* | String | The name of a locator on the actor where the effect should be located | 
+| pre_effect_script | *not set* | Molang | A Molang script that will be run when the particle emitter is initialized | 
 
-## Variables
+##### Sound Effects
 
-#### Variables Properties
+###### Sound Effects Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| input | *not set* | Molang |  |  | 
-| remap_curve | *not set* | Object |  |  | 
+**JSON path:** `animation_controllers > states > sound_effects`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| effect | *not set* | String | Valid sound effect names should be listed in the entity's resource_definition json file. | 
+| locator | *not set* | String | The name of a locator on the actor where the sound should originate from | 
+
+##### Variables
+
+###### Variables Properties
+
+**JSON path:** `animation_controllers > states > variables`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| input | *not set* | Molang |  | 
+| remap_curve | *not set* | Object |  | 

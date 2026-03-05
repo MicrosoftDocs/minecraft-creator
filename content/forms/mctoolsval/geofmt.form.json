@@ -26,7 +26,7 @@
     },
     {
       "id": "102",
-      "title": "JSON Parse Error",
+      "title": "JSON Syntax Error (Geometry)",
       "messageType": 2,
       "dataType": 2,
       "description": "Error when the geometry JSON file could not be parsed. Check for syntax errors in the geometry definition.",

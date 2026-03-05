@@ -15,7 +15,7 @@ Modifier will attempt to add loot to a block entity.
 
 ## JigsawStructure ProcessorRule AppendLoot Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| loot_table | *not set* | String | The loot table to append to the block entity. |  | 
-| type | *not set* | String | The type of block entity modifier. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| loot_table | *not set* | String | The loot table to append to the block entity. | 
+| type | *not set* | String | The type of block entity modifier. | 

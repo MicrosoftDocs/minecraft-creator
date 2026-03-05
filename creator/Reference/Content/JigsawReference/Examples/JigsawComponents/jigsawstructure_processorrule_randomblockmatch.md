@@ -15,8 +15,8 @@ Predicate that evaluates to true with a given probability if the block at the sp
 
 ## JigsawStructure ProcessorRule RandomBlockMatch Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| block | *not set* | String | The block to match against. |  | 
-| predicate_type | *not set* | String | The type of block predicate. |  | 
-| probability | *not set* | Decimal number | Probability of evaluating to true when the block matches. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| block | *not set* | String | The block to match against. | 
+| predicate_type | *not set* | String | The type of block predicate. | 
+| probability | *not set* | Decimal number | Probability of evaluating to true when the block matches. | 

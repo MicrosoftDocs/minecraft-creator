@@ -8,22 +8,32 @@
       "title": "action",
       "type": "string",
       "isOptional": false,
-      "description": "Either `list` to list the permissions, `set` to set their permissions, or `reload` to reload a server's permissions file.",
+      "description": "The permissions action to perform: list, set, or reload.",
       "commandType": "PERMISSIONSACTION"
     }
   ],
-  "aliases": [
-    "ops"
-  ],
+  "aliases": ["ops"],
   "overloads": [
     {
       "id": "1",
-      "title": "Permission",
-      "description": "Call a `permission` `action`.",
+      "title": "List permissions",
+      "description": "Lists the current permissions for all players.",
       "params": [
         {
           "name": "action",
-          "type": "PERMISSIONSACTION",
+          "type": "PERMISSIONSACTIONLIST",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Reload permissions",
+      "description": "Reloads the permissions file from disk.",
+      "params": [
+        {
+          "name": "action",
+          "type": "PERMISSIONSACTIONRELOAD",
           "isOptional": false
         }
       ]

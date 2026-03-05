@@ -22,7 +22,7 @@ Walking style of the mob.
 | avoid_sun | false | Boolean true/false | Whether or not the pathfinder should avoid tiles that are exposed to the sun when creating paths | Bogged: `true` | 
 | avoid_water | false | Boolean true/false | Tells the pathfinder to avoid water when creating a path | Blaze: `true` | 
 | blocks_to_avoid | *not set* | Array of strings | List of block descriptors that the pathfinder should avoid. Items can be block identifier strings or objects with name/tags properties. | Breeze: `[{"tags":"query.any_tag('trapdoors')"}]` | 
-| blocks_to_avoid (Alternate 1) | *not set* | Array of [Blocks To Avoid](#blocks-to-avoid) items |  |  | 
+| blocks_to_avoid (Block to Avoid) | *not set* | Array of [Blocks To Avoid (Block To Avoid)](#blocks-to-avoid-block-to-avoid) items |  |  | 
 | can_breach | false | Boolean true/false | Tells the pathfinder whether or not it can jump out of water (like a dolphin) |  | 
 | can_break_doors | false | Boolean true/false | Tells the pathfinder that it can path through a closed door and break it |  | 
 | can_float | *not set* | Boolean true/false |  |  | 
@@ -40,14 +40,16 @@ Walking style of the mob.
 | is_amphibious | false | Boolean true/false | Tells the pathfinder whether or not it can walk on the ground underwater | Bogged: `true` | 
 | using_door_annotation | *not set* | String |  | Blaze: `true` | 
 
-## Blocks To Avoid
+### Blocks To Avoid (Block To Avoid)
 
 #### Block to Avoid Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | String | Block identifier to avoid. |  | 
-| tags | *not set* | Molang | Molang expression to match block tags, e.g. query.any_tag('trapdoors') |  | 
+**JSON path:** `blocks_to_avoid`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| name | *not set* | String | Block identifier to avoid. | 
+| tags | *not set* | Molang | Molang expression to match block tags, e.g. query.any_tag('trapdoors') | 
 
 ## Samples
 

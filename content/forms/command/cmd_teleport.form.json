@@ -330,5 +330,31 @@
     }
   ],
   "permissionLevel": 1,
-  "requiresCheats": true
+  "requiresCheats": true,
+  "commandSamples": [
+    {
+      "command": "/teleport @s 100 64 200",
+      "description": "Teleport yourself to coordinates (100, 64, 200)"
+    },
+    {
+      "command": "/tp @a @s",
+      "description": "Teleport all players to your location"
+    },
+    {
+      "command": "/tp @e[type=pig] ~ ~10 ~",
+      "description": "Teleport all pigs 10 blocks up from their current position"
+    },
+    {
+      "command": "/teleport @s 100 64 200 0 45",
+      "description": "Teleport yourself and face a specific direction (yaw 0, pitch 45)"
+    },
+    {
+      "command": "/tp @s 100 64 200 facing 0 80 0",
+      "description": "Teleport yourself facing a specific position"
+    },
+    {
+      "command": "/tp @p @e[type=villager,c=1]",
+      "description": "Teleport nearest player to the nearest villager"
+    }
+  ]
 }

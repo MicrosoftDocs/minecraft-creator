@@ -20,21 +20,23 @@ Enables the mob to admire items that have been configured as admirable.
 
 ## Admire Item Behavior Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| admire_item_sound | *not set* | String | The sound event to play when admiring the item |  | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
-| sound_interval | 0 | Integer number | The range of time in seconds to randomly wait before playing the sound again. Can be a number, an array [min, max], or an object with range_min and range_max. |  | 
-| sound_interval (Alternate 1) | *not set* | Array of [Sound Interval](#sound-interval) items |  |  | 
-| sound_interval (Alternate 2) | *not set* | [Sound Interval](#sound-interval) item |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| admire_item_sound | *not set* | String | The sound event to play when admiring the item | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
+| sound_interval | 0 | Integer number | The range of time in seconds to randomly wait before playing the sound again. Can be a number, an array [min, max], or an object with range_min and range_max. | 
+| sound_interval (as Array of objects) | *not set* | Array of [Sound Interval](#sound-interval) items |  | 
+| sound_interval (as Object) | *not set* | [Sound Interval](#sound-interval) item |  | 
 
-## Sound Interval
+### Sound Interval
 
 #### Sound Interval Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| 0 | *not set* | Integer number |  |  | 
-| 1 | *not set* | Integer number |  |  | 
+**JSON path:** `sound_interval`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| 0 | *not set* | Integer number |  | 
+| 1 | *not set* | Integer number |  | 
 
 ## Samples

@@ -15,9 +15,9 @@ Object specifying a color map for grass instead of a specific color.
 
 ## Client Biome Grass Color Map Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| color_map | *not set* | [Color Map](#color-map-choices) choices | Color map from textures/colormap to determine color of grass. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| color_map | *not set* | [Color Map](#color-map-choices) choices | Color map from textures/colormap to determine color of grass. | 
 
 ### Color Map choices
 

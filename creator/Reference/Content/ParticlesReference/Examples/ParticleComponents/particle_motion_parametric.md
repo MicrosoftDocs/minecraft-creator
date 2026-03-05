@@ -15,41 +15,34 @@ Controls particle position and rotation using Molang expressions evaluated each 
 
 ## Client Particles Particle Motion Parametric Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| direction | *not set* | Molang array | Direction of particle motion, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. |  | 
-| direction (Alternate 1) | *not set* | Key/item pairs of [Direction](#direction) items |  |  | 
-| direction (Alternate 2) | *not set* | Decimal number |  |  | 
-| relative_position | *not set* | Molang array | Position offset relative to the particle emitter, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. |  | 
-| relative_position (Alternate 1) | *not set* | Key/item pairs of [Relative Position](#relative-position) items |  |  | 
-| relative_position (Alternate 2) | *not set* | Decimal number |  |  | 
-| rotation | *not set* | Keyed set of strings |  |  | 
-| rotation (Alternate 1) | *not set* | Key/item pairs of [Rotation](#rotation) items |  |  | 
-| rotation (Alternate 2) | *not set* | Decimal number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| direction | *not set* | Molang array | Direction of particle motion, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. | 
+| direction (Direction) | *not set* | Key/item pairs of [Direction (Direction)](#direction-direction) items |  | 
+| direction (as Decimal number) | *not set* | Decimal number |  | 
+| relative_position | *not set* | Molang array | Position offset relative to the particle emitter, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. | 
+| relative_position (Relative Position) | *not set* | Key/item pairs of [Relative Position (Relative Position)](#relative-position-relative-position) items |  | 
+| relative_position (as Decimal number) | *not set* | Decimal number |  | 
+| rotation | *not set* | Keyed set of strings |  | 
+| rotation (Rotation) | *not set* | Key/item pairs of [Rotation (Rotation)](#rotation-rotation) items |  | 
+| rotation (as Decimal number) | *not set* | Decimal number |  | 
 
-## Direction
+### Direction (Direction)
 
 #### Direction Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `direction`
 
-## Relative Position
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
-#### Relative Position Properties
+### Relative Position (Relative Position)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+Same structure as [Direction (Direction)](#direction-direction).
 
-## Rotation
 
-#### Rotation Properties
+### Rotation (Rotation)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+Same structure as [Direction (Direction)](#direction-direction).

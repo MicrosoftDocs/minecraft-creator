@@ -15,6 +15,6 @@ Defines a list of alternative items that can satisfy a trade requirement. When u
 
 ## Trade Item List Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| choice | *not set* | Object | choice |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| choice | *not set* | Object | choice | 

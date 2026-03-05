@@ -295,7 +295,1654 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "minecraft:tree_feature",
+      "mergeSubForm": true,
+      "subForm": {
+        "fields": [
+          {
+            "id": "acacia_trunk",
+            "mergeSubForm": true,
+            "subForm": {
+              "fields": [
+                {
+                  "id": "branches",
+                  "mergeSubForm": true,
+                  "subForm": {
+                    "fields": [
+                      {
+                        "id": "branch_canopy",
+                        "mergeSubForm": true,
+                        "subForm": {
+                          "fields": [
+                            {
+                              "id": "canopy",
+                              "mergeSubForm": true,
+                              "subForm": {
+                                "fields": [
+                                  {
+                                    "id": "canopy_decoration",
+                                    "description": "Configuration object for the canopy decoration.",
+                                    "subForm": {
+                                      "fields": [
+                                        {
+                                          "id": "decoration_block",
+                                          "title": "Decoration Block",
+                                          "description": "The block used for decorating. This is the legacy property; use decoration_blocks_sequence instead for placing multiple blocks. If both are present, decoration_blocks_sequence takes priority.",
+                                          "dataType": 2,
+                                          "isRequired": false
+                                        },
+                                        {
+                                          "id": "decoration_blocks_sequence",
+                                          "title": "Decoration Blocks Sequence",
+                                          "description": "A list of blocks and counts to place in sequence as decoration. Each entry specifies a block identifier and a count for how many to place. This replaces the legacy decoration_block and num_steps properties. If both formats are present, this property takes priority.",
+                                          "dataType": 15,
+                                          "subForm": {
+                                            "fields": [
+                                              {
+                                                "id": "block",
+                                                "title": "Block",
+                                                "description": "The block identifier to place (e.g., minecraft:moss_carpet).",
+                                                "dataType": 2,
+                                                "isRequired": true
+                                              },
+                                              {
+                                                "id": "count",
+                                                "title": "Count",
+                                                "description": "The number of this block to place. Can be a fixed integer, an array of two integers for a random range (e.g., [1, 2]), or an object with range_min and range_max fields.",
+                                                "dataType": 0,
+                                                "isRequired": true
+                                              }
+                                            ]
+                                          },
+                                          "alternates": [
+                                            {
+                                              "dataType": 17,
+                                              "id": "decoration_blocks_sequence",
+                                              "title": "Decoration Blocks Sequence",
+                                              "description": "Simplified form where each entry is a block identifier string without a count.",
+                                              "isRequired": false
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "id": "decoration_chance",
+                                          "title": "Decoration Chance",
+                                          "description": "Probability of decorating on each step, specified as a fraction with numerator and denominator fields.",
+                                          "dataType": 16,
+                                          "isRequired": false,
+                                          "subForm": {
+                                            "fields": [
+                                              {
+                                                "id": "numerator",
+                                                "title": "Numerator",
+                                                "description": "The numerator of the probability fraction.",
+                                                "dataType": 0,
+                                                "isRequired": true
+                                              },
+                                              {
+                                                "id": "denominator",
+                                                "title": "Denominator",
+                                                "description": "The denominator of the probability fraction.",
+                                                "dataType": 0,
+                                                "isRequired": true
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "id": "num_steps",
+                                          "title": "Num Steps",
+                                          "description": "Number of decoration blocks to place. This is the legacy property used with decoration_block. Not used if decoration_blocks_sequence is provided.",
+                                          "dataType": 0,
+                                          "isRequired": false
+                                        },
+                                        {
+                                          "id": "step_direction",
+                                          "title": "Step Direction",
+                                          "description": "Direction to spread decoration blocks.",
+                                          "dataType": 2,
+                                          "isRequired": false,
+                                          "choices": [
+                                            {
+                                              "id": "down",
+                                              "title": "Down"
+                                            },
+                                            {
+                                              "id": "up",
+                                              "title": "Up"
+                                            },
+                                            {
+                                              "id": "out",
+                                              "title": "Out"
+                                            },
+                                            {
+                                              "id": "away",
+                                              "title": "Away"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "mangrove_canopy",
+                              "mergeSubForm": true,
+                              "subForm": {
+                                "fields": [
+                                  {
+                                    "id": "canopy_decoration",
+                                    "description": "Configuration object for the canopy decoration.",
+                                    "subForm": {
+                                      "fields": [
+                                        {
+                                          "id": "decoration_block",
+                                          "title": "Decoration Block",
+                                          "description": "The block used for decorating. This is the legacy property; use decoration_blocks_sequence instead for placing multiple blocks. If both are present, decoration_blocks_sequence takes priority.",
+                                          "dataType": 2,
+                                          "isRequired": false
+                                        },
+                                        {
+                                          "id": "decoration_blocks_sequence",
+                                          "title": "Decoration Blocks Sequence",
+                                          "description": "A list of blocks and counts to place in sequence as decoration. Each entry specifies a block identifier and a count for how many to place. This replaces the legacy decoration_block and num_steps properties. If both formats are present, this property takes priority.",
+                                          "dataType": 15,
+                                          "subForm": {
+                                            "fields": [
+                                              {
+                                                "id": "block",
+                                                "title": "Block",
+                                                "description": "The block identifier to place (e.g., minecraft:moss_carpet).",
+                                                "dataType": 2,
+                                                "isRequired": true
+                                              },
+                                              {
+                                                "id": "count",
+                                                "title": "Count",
+                                                "description": "The number of this block to place. Can be a fixed integer, an array of two integers for a random range (e.g., [1, 2]), or an object with range_min and range_max fields.",
+                                                "dataType": 0,
+                                                "isRequired": true
+                                              }
+                                            ]
+                                          },
+                                          "alternates": [
+                                            {
+                                              "dataType": 17,
+                                              "id": "decoration_blocks_sequence",
+                                              "title": "Decoration Blocks Sequence",
+                                              "description": "Simplified form where each entry is a block identifier string without a count.",
+                                              "isRequired": false
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "id": "decoration_chance",
+                                          "title": "Decoration Chance",
+                                          "description": "Probability of decorating on each step, specified as a fraction with numerator and denominator fields.",
+                                          "dataType": 16,
+                                          "isRequired": false,
+                                          "subForm": {
+                                            "fields": [
+                                              {
+                                                "id": "numerator",
+                                                "title": "Numerator",
+                                                "description": "The numerator of the probability fraction.",
+                                                "dataType": 0,
+                                                "isRequired": true
+                                              },
+                                              {
+                                                "id": "denominator",
+                                                "title": "Denominator",
+                                                "description": "The denominator of the probability fraction.",
+                                                "dataType": 0,
+                                                "isRequired": true
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "id": "num_steps",
+                                          "title": "Num Steps",
+                                          "description": "Number of decoration blocks to place. This is the legacy property used with decoration_block. Not used if decoration_blocks_sequence is provided.",
+                                          "dataType": 0,
+                                          "isRequired": false
+                                        },
+                                        {
+                                          "id": "step_direction",
+                                          "title": "Step Direction",
+                                          "description": "Direction to spread decoration blocks.",
+                                          "dataType": 2,
+                                          "isRequired": false,
+                                          "choices": [
+                                            {
+                                              "id": "down",
+                                              "title": "Down"
+                                            },
+                                            {
+                                              "id": "up",
+                                              "title": "Up"
+                                            },
+                                            {
+                                              "id": "out",
+                                              "title": "Out"
+                                            },
+                                            {
+                                              "id": "away",
+                                              "title": "Away"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "trunk_decoration",
+                  "description": "Configuration object for the trunk decoration.",
+                  "subForm": {
+                    "fields": [
+                      {
+                        "id": "decoration_block",
+                        "title": "Decoration Block",
+                        "description": "The block used for decorating the trunk. This is the legacy property; use decoration_blocks_sequence instead for placing multiple blocks. If both are present, decoration_blocks_sequence takes priority.",
+                        "dataType": 2,
+                        "isRequired": false
+                      },
+                      {
+                        "id": "decoration_blocks_sequence",
+                        "title": "Decoration Blocks Sequence",
+                        "description": "A list of blocks and counts to place in sequence as decoration. Each entry specifies a block identifier and a count for how many to place. This replaces the legacy decoration_block and num_steps properties. If both formats are present, this property takes priority.",
+                        "dataType": 15,
+                        "subForm": {
+                          "fields": [
+                            {
+                              "id": "block",
+                              "title": "Block",
+                              "description": "The block identifier to place (e.g., minecraft:moss_carpet).",
+                              "dataType": 2,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "count",
+                              "title": "Count",
+                              "description": "The number of this block to place. Can be a fixed integer, an array of two integers for a random range (e.g., [1, 2]), or an object with range_min and range_max fields.",
+                              "dataType": 0,
+                              "isRequired": true
+                            }
+                          ]
+                        },
+                        "alternates": [
+                          {
+                            "dataType": 17,
+                            "id": "decoration_blocks_sequence",
+                            "title": "Decoration Blocks Sequence",
+                            "description": "Simplified form where each entry is a block identifier string without a count.",
+                            "isRequired": false
+                          }
+                        ]
+                      },
+                      {
+                        "id": "decoration_chance",
+                        "title": "Decoration Chance",
+                        "description": "Probability of decorating on each step, specified as a fraction with numerator and denominator fields.",
+                        "dataType": 16,
+                        "isRequired": false,
+                        "subForm": {
+                          "fields": [
+                            {
+                              "id": "numerator",
+                              "title": "Numerator",
+                              "description": "The numerator of the probability fraction.",
+                              "dataType": 0,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "denominator",
+                              "title": "Denominator",
+                              "description": "The denominator of the probability fraction.",
+                              "dataType": 0,
+                              "isRequired": true
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "num_steps",
+                        "title": "Num Steps",
+                        "description": "Number of decoration blocks to place. This is the legacy property used with decoration_block. Not used if decoration_blocks_sequence is provided.",
+                        "dataType": 0,
+                        "isRequired": false
+                      },
+                      {
+                        "id": "step_direction",
+                        "title": "Step Direction",
+                        "description": "Direction to spread decoration blocks.",
+                        "dataType": 2,
+                        "isRequired": false,
+                        "choices": [
+                          {
+                            "id": "down",
+                            "title": "Down"
+                          },
+                          {
+                            "id": "up",
+                            "title": "Up"
+                          },
+                          {
+                            "id": "out",
+                            "title": "Out"
+                          },
+                          {
+                            "id": "away",
+                            "title": "Away"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "cherry_trunk",
+            "mergeSubForm": true,
+            "subForm": {
+              "fields": [
+                {
+                  "id": "branches",
+                  "mergeSubForm": true,
+                  "subForm": {
+                    "fields": [
+                      {
+                        "id": "branch_canopy",
+                        "mergeSubForm": true,
+                        "subForm": {
+                          "fields": [
+                            {
+                              "id": "canopy",
+                              "mergeSubForm": true,
+                              "subForm": {
+                                "fields": [
+                                  {
+                                    "id": "canopy_decoration",
+                                    "description": "Configuration object for the canopy decoration.",
+                                    "subForm": {
+                                      "fields": [
+                                        {
+                                          "id": "decoration_block",
+                                          "title": "Decoration Block",
+                                          "description": "The block used for decorating. This is the legacy property; use decoration_blocks_sequence instead for placing multiple blocks. If both are present, decoration_blocks_sequence takes priority.",
+                                          "dataType": 2,
+                                          "isRequired": false
+                                        },
+                                        {
+                                          "id": "decoration_blocks_sequence",
+                                          "title": "Decoration Blocks Sequence",
+                                          "description": "A list of blocks and counts to place in sequence as decoration. Each entry specifies a block identifier and a count for how many to place. This replaces the legacy decoration_block and num_steps properties. If both formats are present, this property takes priority.",
+                                          "dataType": 15,
+                                          "subForm": {
+                                            "fields": [
+                                              {
+                                                "id": "block",
+                                                "title": "Block",
+                                                "description": "The block identifier to place (e.g., minecraft:moss_carpet).",
+                                                "dataType": 2,
+                                                "isRequired": true
+                                              },
+                                              {
+                                                "id": "count",
+                                                "title": "Count",
+                                                "description": "The number of this block to place. Can be a fixed integer, an array of two integers for a random range (e.g., [1, 2]), or an object with range_min and range_max fields.",
+                                                "dataType": 0,
+                                                "isRequired": true
+                                              }
+                                            ]
+                                          },
+                                          "alternates": [
+                                            {
+                                              "dataType": 17,
+                                              "id": "decoration_blocks_sequence",
+                                              "title": "Decoration Blocks Sequence",
+                                              "description": "Simplified form where each entry is a block identifier string without a count.",
+                                              "isRequired": false
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "id": "decoration_chance",
+                                          "title": "Decoration Chance",
+                                          "description": "Probability of decorating on each step, specified as a fraction with numerator and denominator fields.",
+                                          "dataType": 16,
+                                          "isRequired": false,
+                                          "subForm": {
+                                            "fields": [
+                                              {
+                                                "id": "numerator",
+                                                "title": "Numerator",
+                                                "description": "The numerator of the probability fraction.",
+                                                "dataType": 0,
+                                                "isRequired": true
+                                              },
+                                              {
+                                                "id": "denominator",
+                                                "title": "Denominator",
+                                                "description": "The denominator of the probability fraction.",
+                                                "dataType": 0,
+                                                "isRequired": true
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "id": "num_steps",
+                                          "title": "Num Steps",
+                                          "description": "Number of decoration blocks to place. This is the legacy property used with decoration_block. Not used if decoration_blocks_sequence is provided.",
+                                          "dataType": 0,
+                                          "isRequired": false
+                                        },
+                                        {
+                                          "id": "step_direction",
+                                          "title": "Step Direction",
+                                          "description": "Direction to spread decoration blocks.",
+                                          "dataType": 2,
+                                          "isRequired": false,
+                                          "choices": [
+                                            {
+                                              "id": "down",
+                                              "title": "Down"
+                                            },
+                                            {
+                                              "id": "up",
+                                              "title": "Up"
+                                            },
+                                            {
+                                              "id": "out",
+                                              "title": "Out"
+                                            },
+                                            {
+                                              "id": "away",
+                                              "title": "Away"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "mangrove_canopy",
+                              "mergeSubForm": true,
+                              "subForm": {
+                                "fields": [
+                                  {
+                                    "id": "canopy_decoration",
+                                    "description": "Configuration object for the canopy decoration.",
+                                    "subForm": {
+                                      "fields": [
+                                        {
+                                          "id": "decoration_block",
+                                          "title": "Decoration Block",
+                                          "description": "The block used for decorating. This is the legacy property; use decoration_blocks_sequence instead for placing multiple blocks. If both are present, decoration_blocks_sequence takes priority.",
+                                          "dataType": 2,
+                                          "isRequired": false
+                                        },
+                                        {
+                                          "id": "decoration_blocks_sequence",
+                                          "title": "Decoration Blocks Sequence",
+                                          "description": "A list of blocks and counts to place in sequence as decoration. Each entry specifies a block identifier and a count for how many to place. This replaces the legacy decoration_block and num_steps properties. If both formats are present, this property takes priority.",
+                                          "dataType": 15,
+                                          "subForm": {
+                                            "fields": [
+                                              {
+                                                "id": "block",
+                                                "title": "Block",
+                                                "description": "The block identifier to place (e.g., minecraft:moss_carpet).",
+                                                "dataType": 2,
+                                                "isRequired": true
+                                              },
+                                              {
+                                                "id": "count",
+                                                "title": "Count",
+                                                "description": "The number of this block to place. Can be a fixed integer, an array of two integers for a random range (e.g., [1, 2]), or an object with range_min and range_max fields.",
+                                                "dataType": 0,
+                                                "isRequired": true
+                                              }
+                                            ]
+                                          },
+                                          "alternates": [
+                                            {
+                                              "dataType": 17,
+                                              "id": "decoration_blocks_sequence",
+                                              "title": "Decoration Blocks Sequence",
+                                              "description": "Simplified form where each entry is a block identifier string without a count.",
+                                              "isRequired": false
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "id": "decoration_chance",
+                                          "title": "Decoration Chance",
+                                          "description": "Probability of decorating on each step, specified as a fraction with numerator and denominator fields.",
+                                          "dataType": 16,
+                                          "isRequired": false,
+                                          "subForm": {
+                                            "fields": [
+                                              {
+                                                "id": "numerator",
+                                                "title": "Numerator",
+                                                "description": "The numerator of the probability fraction.",
+                                                "dataType": 0,
+                                                "isRequired": true
+                                              },
+                                              {
+                                                "id": "denominator",
+                                                "title": "Denominator",
+                                                "description": "The denominator of the probability fraction.",
+                                                "dataType": 0,
+                                                "isRequired": true
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "id": "num_steps",
+                                          "title": "Num Steps",
+                                          "description": "Number of decoration blocks to place. This is the legacy property used with decoration_block. Not used if decoration_blocks_sequence is provided.",
+                                          "dataType": 0,
+                                          "isRequired": false
+                                        },
+                                        {
+                                          "id": "step_direction",
+                                          "title": "Step Direction",
+                                          "description": "Direction to spread decoration blocks.",
+                                          "dataType": 2,
+                                          "isRequired": false,
+                                          "choices": [
+                                            {
+                                              "id": "down",
+                                              "title": "Down"
+                                            },
+                                            {
+                                              "id": "up",
+                                              "title": "Up"
+                                            },
+                                            {
+                                              "id": "out",
+                                              "title": "Out"
+                                            },
+                                            {
+                                              "id": "away",
+                                              "title": "Away"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "fallen_trunk",
+            "mergeSubForm": true,
+            "subForm": {
+              "fields": [
+                {
+                  "id": "trunk_decoration",
+                  "description": "Configuration object for the trunk decoration.",
+                  "subForm": {
+                    "fields": [
+                      {
+                        "id": "decoration_block",
+                        "title": "Decoration Block",
+                        "description": "The block used for decorating the trunk. This is the legacy property; use decoration_blocks_sequence instead for placing multiple blocks. If both are present, decoration_blocks_sequence takes priority.",
+                        "dataType": 2,
+                        "isRequired": false
+                      },
+                      {
+                        "id": "decoration_blocks_sequence",
+                        "title": "Decoration Blocks Sequence",
+                        "description": "A list of blocks and counts to place in sequence as decoration. Each entry specifies a block identifier and a count for how many to place. This replaces the legacy decoration_block and num_steps properties. If both formats are present, this property takes priority.",
+                        "dataType": 15,
+                        "subForm": {
+                          "fields": [
+                            {
+                              "id": "block",
+                              "title": "Block",
+                              "description": "The block identifier to place (e.g., minecraft:moss_carpet).",
+                              "dataType": 2,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "count",
+                              "title": "Count",
+                              "description": "The number of this block to place. Can be a fixed integer, an array of two integers for a random range (e.g., [1, 2]), or an object with range_min and range_max fields.",
+                              "dataType": 0,
+                              "isRequired": true
+                            }
+                          ]
+                        },
+                        "alternates": [
+                          {
+                            "dataType": 17,
+                            "id": "decoration_blocks_sequence",
+                            "title": "Decoration Blocks Sequence",
+                            "description": "Simplified form where each entry is a block identifier string without a count.",
+                            "isRequired": false
+                          }
+                        ]
+                      },
+                      {
+                        "id": "decoration_chance",
+                        "title": "Decoration Chance",
+                        "description": "Probability of decorating on each step, specified as a fraction with numerator and denominator fields.",
+                        "dataType": 16,
+                        "isRequired": false,
+                        "subForm": {
+                          "fields": [
+                            {
+                              "id": "numerator",
+                              "title": "Numerator",
+                              "description": "The numerator of the probability fraction.",
+                              "dataType": 0,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "denominator",
+                              "title": "Denominator",
+                              "description": "The denominator of the probability fraction.",
+                              "dataType": 0,
+                              "isRequired": true
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "num_steps",
+                        "title": "Num Steps",
+                        "description": "Number of decoration blocks to place. This is the legacy property used with decoration_block. Not used if decoration_blocks_sequence is provided.",
+                        "dataType": 0,
+                        "isRequired": false
+                      },
+                      {
+                        "id": "step_direction",
+                        "title": "Step Direction",
+                        "description": "Direction to spread decoration blocks.",
+                        "dataType": 2,
+                        "isRequired": false,
+                        "choices": [
+                          {
+                            "id": "down",
+                            "title": "Down"
+                          },
+                          {
+                            "id": "up",
+                            "title": "Up"
+                          },
+                          {
+                            "id": "out",
+                            "title": "Out"
+                          },
+                          {
+                            "id": "away",
+                            "title": "Away"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "mangrove_trunk",
+            "mergeSubForm": true,
+            "subForm": {
+              "fields": [
+                {
+                  "id": "trunk_decoration",
+                  "description": "Configuration object for the trunk decoration.",
+                  "subForm": {
+                    "fields": [
+                      {
+                        "id": "decoration_block",
+                        "title": "Decoration Block",
+                        "description": "The block used for decorating the trunk. This is the legacy property; use decoration_blocks_sequence instead for placing multiple blocks. If both are present, decoration_blocks_sequence takes priority.",
+                        "dataType": 2,
+                        "isRequired": false
+                      },
+                      {
+                        "id": "decoration_blocks_sequence",
+                        "title": "Decoration Blocks Sequence",
+                        "description": "A list of blocks and counts to place in sequence as decoration. Each entry specifies a block identifier and a count for how many to place. This replaces the legacy decoration_block and num_steps properties. If both formats are present, this property takes priority.",
+                        "dataType": 15,
+                        "subForm": {
+                          "fields": [
+                            {
+                              "id": "block",
+                              "title": "Block",
+                              "description": "The block identifier to place (e.g., minecraft:moss_carpet).",
+                              "dataType": 2,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "count",
+                              "title": "Count",
+                              "description": "The number of this block to place. Can be a fixed integer, an array of two integers for a random range (e.g., [1, 2]), or an object with range_min and range_max fields.",
+                              "dataType": 0,
+                              "isRequired": true
+                            }
+                          ]
+                        },
+                        "alternates": [
+                          {
+                            "dataType": 17,
+                            "id": "decoration_blocks_sequence",
+                            "title": "Decoration Blocks Sequence",
+                            "description": "Simplified form where each entry is a block identifier string without a count.",
+                            "isRequired": false
+                          }
+                        ]
+                      },
+                      {
+                        "id": "decoration_chance",
+                        "title": "Decoration Chance",
+                        "description": "Probability of decorating on each step, specified as a fraction with numerator and denominator fields.",
+                        "dataType": 16,
+                        "isRequired": false,
+                        "subForm": {
+                          "fields": [
+                            {
+                              "id": "numerator",
+                              "title": "Numerator",
+                              "description": "The numerator of the probability fraction.",
+                              "dataType": 0,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "denominator",
+                              "title": "Denominator",
+                              "description": "The denominator of the probability fraction.",
+                              "dataType": 0,
+                              "isRequired": true
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "num_steps",
+                        "title": "Num Steps",
+                        "description": "Number of decoration blocks to place. This is the legacy property used with decoration_block. Not used if decoration_blocks_sequence is provided.",
+                        "dataType": 0,
+                        "isRequired": false
+                      },
+                      {
+                        "id": "step_direction",
+                        "title": "Step Direction",
+                        "description": "Direction to spread decoration blocks.",
+                        "dataType": 2,
+                        "isRequired": false,
+                        "choices": [
+                          {
+                            "id": "down",
+                            "title": "Down"
+                          },
+                          {
+                            "id": "up",
+                            "title": "Up"
+                          },
+                          {
+                            "id": "out",
+                            "title": "Out"
+                          },
+                          {
+                            "id": "away",
+                            "title": "Away"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "mega_trunk",
+            "mergeSubForm": true,
+            "subForm": {
+              "fields": [
+                {
+                  "id": "branches",
+                  "mergeSubForm": true,
+                  "subForm": {
+                    "fields": [
+                      {
+                        "id": "branch_canopy",
+                        "mergeSubForm": true,
+                        "subForm": {
+                          "fields": [
+                            {
+                              "id": "canopy",
+                              "mergeSubForm": true,
+                              "subForm": {
+                                "fields": [
+                                  {
+                                    "id": "canopy_decoration",
+                                    "description": "Configuration object for the canopy decoration.",
+                                    "subForm": {
+                                      "fields": [
+                                        {
+                                          "id": "decoration_block",
+                                          "title": "Decoration Block",
+                                          "description": "The block used for decorating. This is the legacy property; use decoration_blocks_sequence instead for placing multiple blocks. If both are present, decoration_blocks_sequence takes priority.",
+                                          "dataType": 2,
+                                          "isRequired": false
+                                        },
+                                        {
+                                          "id": "decoration_blocks_sequence",
+                                          "title": "Decoration Blocks Sequence",
+                                          "description": "A list of blocks and counts to place in sequence as decoration. Each entry specifies a block identifier and a count for how many to place. This replaces the legacy decoration_block and num_steps properties. If both formats are present, this property takes priority.",
+                                          "dataType": 15,
+                                          "subForm": {
+                                            "fields": [
+                                              {
+                                                "id": "block",
+                                                "title": "Block",
+                                                "description": "The block identifier to place (e.g., minecraft:moss_carpet).",
+                                                "dataType": 2,
+                                                "isRequired": true
+                                              },
+                                              {
+                                                "id": "count",
+                                                "title": "Count",
+                                                "description": "The number of this block to place. Can be a fixed integer, an array of two integers for a random range (e.g., [1, 2]), or an object with range_min and range_max fields.",
+                                                "dataType": 0,
+                                                "isRequired": true
+                                              }
+                                            ]
+                                          },
+                                          "alternates": [
+                                            {
+                                              "dataType": 17,
+                                              "id": "decoration_blocks_sequence",
+                                              "title": "Decoration Blocks Sequence",
+                                              "description": "Simplified form where each entry is a block identifier string without a count.",
+                                              "isRequired": false
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "id": "decoration_chance",
+                                          "title": "Decoration Chance",
+                                          "description": "Probability of decorating on each step, specified as a fraction with numerator and denominator fields.",
+                                          "dataType": 16,
+                                          "isRequired": false,
+                                          "subForm": {
+                                            "fields": [
+                                              {
+                                                "id": "numerator",
+                                                "title": "Numerator",
+                                                "description": "The numerator of the probability fraction.",
+                                                "dataType": 0,
+                                                "isRequired": true
+                                              },
+                                              {
+                                                "id": "denominator",
+                                                "title": "Denominator",
+                                                "description": "The denominator of the probability fraction.",
+                                                "dataType": 0,
+                                                "isRequired": true
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "id": "num_steps",
+                                          "title": "Num Steps",
+                                          "description": "Number of decoration blocks to place. This is the legacy property used with decoration_block. Not used if decoration_blocks_sequence is provided.",
+                                          "dataType": 0,
+                                          "isRequired": false
+                                        },
+                                        {
+                                          "id": "step_direction",
+                                          "title": "Step Direction",
+                                          "description": "Direction to spread decoration blocks.",
+                                          "dataType": 2,
+                                          "isRequired": false,
+                                          "choices": [
+                                            {
+                                              "id": "down",
+                                              "title": "Down"
+                                            },
+                                            {
+                                              "id": "up",
+                                              "title": "Up"
+                                            },
+                                            {
+                                              "id": "out",
+                                              "title": "Out"
+                                            },
+                                            {
+                                              "id": "away",
+                                              "title": "Away"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "mangrove_canopy",
+                              "mergeSubForm": true,
+                              "subForm": {
+                                "fields": [
+                                  {
+                                    "id": "canopy_decoration",
+                                    "description": "Configuration object for the canopy decoration.",
+                                    "subForm": {
+                                      "fields": [
+                                        {
+                                          "id": "decoration_block",
+                                          "title": "Decoration Block",
+                                          "description": "The block used for decorating. This is the legacy property; use decoration_blocks_sequence instead for placing multiple blocks. If both are present, decoration_blocks_sequence takes priority.",
+                                          "dataType": 2,
+                                          "isRequired": false
+                                        },
+                                        {
+                                          "id": "decoration_blocks_sequence",
+                                          "title": "Decoration Blocks Sequence",
+                                          "description": "A list of blocks and counts to place in sequence as decoration. Each entry specifies a block identifier and a count for how many to place. This replaces the legacy decoration_block and num_steps properties. If both formats are present, this property takes priority.",
+                                          "dataType": 15,
+                                          "subForm": {
+                                            "fields": [
+                                              {
+                                                "id": "block",
+                                                "title": "Block",
+                                                "description": "The block identifier to place (e.g., minecraft:moss_carpet).",
+                                                "dataType": 2,
+                                                "isRequired": true
+                                              },
+                                              {
+                                                "id": "count",
+                                                "title": "Count",
+                                                "description": "The number of this block to place. Can be a fixed integer, an array of two integers for a random range (e.g., [1, 2]), or an object with range_min and range_max fields.",
+                                                "dataType": 0,
+                                                "isRequired": true
+                                              }
+                                            ]
+                                          },
+                                          "alternates": [
+                                            {
+                                              "dataType": 17,
+                                              "id": "decoration_blocks_sequence",
+                                              "title": "Decoration Blocks Sequence",
+                                              "description": "Simplified form where each entry is a block identifier string without a count.",
+                                              "isRequired": false
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "id": "decoration_chance",
+                                          "title": "Decoration Chance",
+                                          "description": "Probability of decorating on each step, specified as a fraction with numerator and denominator fields.",
+                                          "dataType": 16,
+                                          "isRequired": false,
+                                          "subForm": {
+                                            "fields": [
+                                              {
+                                                "id": "numerator",
+                                                "title": "Numerator",
+                                                "description": "The numerator of the probability fraction.",
+                                                "dataType": 0,
+                                                "isRequired": true
+                                              },
+                                              {
+                                                "id": "denominator",
+                                                "title": "Denominator",
+                                                "description": "The denominator of the probability fraction.",
+                                                "dataType": 0,
+                                                "isRequired": true
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "id": "num_steps",
+                                          "title": "Num Steps",
+                                          "description": "Number of decoration blocks to place. This is the legacy property used with decoration_block. Not used if decoration_blocks_sequence is provided.",
+                                          "dataType": 0,
+                                          "isRequired": false
+                                        },
+                                        {
+                                          "id": "step_direction",
+                                          "title": "Step Direction",
+                                          "description": "Direction to spread decoration blocks.",
+                                          "dataType": 2,
+                                          "isRequired": false,
+                                          "choices": [
+                                            {
+                                              "id": "down",
+                                              "title": "Down"
+                                            },
+                                            {
+                                              "id": "up",
+                                              "title": "Up"
+                                            },
+                                            {
+                                              "id": "out",
+                                              "title": "Out"
+                                            },
+                                            {
+                                              "id": "away",
+                                              "title": "Away"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "trunk_decoration",
+                  "description": "Configuration object for the trunk decoration.",
+                  "subForm": {
+                    "fields": [
+                      {
+                        "id": "decoration_block",
+                        "title": "Decoration Block",
+                        "description": "The block used for decorating the trunk. This is the legacy property; use decoration_blocks_sequence instead for placing multiple blocks. If both are present, decoration_blocks_sequence takes priority.",
+                        "dataType": 2,
+                        "isRequired": false
+                      },
+                      {
+                        "id": "decoration_blocks_sequence",
+                        "title": "Decoration Blocks Sequence",
+                        "description": "A list of blocks and counts to place in sequence as decoration. Each entry specifies a block identifier and a count for how many to place. This replaces the legacy decoration_block and num_steps properties. If both formats are present, this property takes priority.",
+                        "dataType": 15,
+                        "subForm": {
+                          "fields": [
+                            {
+                              "id": "block",
+                              "title": "Block",
+                              "description": "The block identifier to place (e.g., minecraft:moss_carpet).",
+                              "dataType": 2,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "count",
+                              "title": "Count",
+                              "description": "The number of this block to place. Can be a fixed integer, an array of two integers for a random range (e.g., [1, 2]), or an object with range_min and range_max fields.",
+                              "dataType": 0,
+                              "isRequired": true
+                            }
+                          ]
+                        },
+                        "alternates": [
+                          {
+                            "dataType": 17,
+                            "id": "decoration_blocks_sequence",
+                            "title": "Decoration Blocks Sequence",
+                            "description": "Simplified form where each entry is a block identifier string without a count.",
+                            "isRequired": false
+                          }
+                        ]
+                      },
+                      {
+                        "id": "decoration_chance",
+                        "title": "Decoration Chance",
+                        "description": "Probability of decorating on each step, specified as a fraction with numerator and denominator fields.",
+                        "dataType": 16,
+                        "isRequired": false,
+                        "subForm": {
+                          "fields": [
+                            {
+                              "id": "numerator",
+                              "title": "Numerator",
+                              "description": "The numerator of the probability fraction.",
+                              "dataType": 0,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "denominator",
+                              "title": "Denominator",
+                              "description": "The denominator of the probability fraction.",
+                              "dataType": 0,
+                              "isRequired": true
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "num_steps",
+                        "title": "Num Steps",
+                        "description": "Number of decoration blocks to place. This is the legacy property used with decoration_block. Not used if decoration_blocks_sequence is provided.",
+                        "dataType": 0,
+                        "isRequired": false
+                      },
+                      {
+                        "id": "step_direction",
+                        "title": "Step Direction",
+                        "description": "Direction to spread decoration blocks.",
+                        "dataType": 2,
+                        "isRequired": false,
+                        "choices": [
+                          {
+                            "id": "down",
+                            "title": "Down"
+                          },
+                          {
+                            "id": "up",
+                            "title": "Up"
+                          },
+                          {
+                            "id": "out",
+                            "title": "Out"
+                          },
+                          {
+                            "id": "away",
+                            "title": "Away"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "trunk",
+            "mergeSubForm": true,
+            "subForm": {
+              "fields": [
+                {
+                  "id": "trunk_decoration",
+                  "description": "Configuration object for the trunk decoration.",
+                  "subForm": {
+                    "fields": [
+                      {
+                        "id": "decoration_block",
+                        "title": "Decoration Block",
+                        "description": "The block used for decorating the trunk. This is the legacy property; use decoration_blocks_sequence instead for placing multiple blocks. If both are present, decoration_blocks_sequence takes priority.",
+                        "dataType": 2,
+                        "isRequired": false
+                      },
+                      {
+                        "id": "decoration_blocks_sequence",
+                        "title": "Decoration Blocks Sequence",
+                        "description": "A list of blocks and counts to place in sequence as decoration. Each entry specifies a block identifier and a count for how many to place. This replaces the legacy decoration_block and num_steps properties. If both formats are present, this property takes priority.",
+                        "dataType": 15,
+                        "subForm": {
+                          "fields": [
+                            {
+                              "id": "block",
+                              "title": "Block",
+                              "description": "The block identifier to place (e.g., minecraft:moss_carpet).",
+                              "dataType": 2,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "count",
+                              "title": "Count",
+                              "description": "The number of this block to place. Can be a fixed integer, an array of two integers for a random range (e.g., [1, 2]), or an object with range_min and range_max fields.",
+                              "dataType": 0,
+                              "isRequired": true
+                            }
+                          ]
+                        },
+                        "alternates": [
+                          {
+                            "dataType": 17,
+                            "id": "decoration_blocks_sequence",
+                            "title": "Decoration Blocks Sequence",
+                            "description": "Simplified form where each entry is a block identifier string without a count.",
+                            "isRequired": false
+                          }
+                        ]
+                      },
+                      {
+                        "id": "decoration_chance",
+                        "title": "Decoration Chance",
+                        "description": "Probability of decorating on each step, specified as a fraction with numerator and denominator fields.",
+                        "dataType": 16,
+                        "isRequired": false,
+                        "subForm": {
+                          "fields": [
+                            {
+                              "id": "numerator",
+                              "title": "Numerator",
+                              "description": "The numerator of the probability fraction.",
+                              "dataType": 0,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "denominator",
+                              "title": "Denominator",
+                              "description": "The denominator of the probability fraction.",
+                              "dataType": 0,
+                              "isRequired": true
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "num_steps",
+                        "title": "Num Steps",
+                        "description": "Number of decoration blocks to place. This is the legacy property used with decoration_block. Not used if decoration_blocks_sequence is provided.",
+                        "dataType": 0,
+                        "isRequired": false
+                      },
+                      {
+                        "id": "step_direction",
+                        "title": "Step Direction",
+                        "description": "Direction to spread decoration blocks.",
+                        "dataType": 2,
+                        "isRequired": false,
+                        "choices": [
+                          {
+                            "id": "down",
+                            "title": "Down"
+                          },
+                          {
+                            "id": "up",
+                            "title": "Up"
+                          },
+                          {
+                            "id": "out",
+                            "title": "Out"
+                          },
+                          {
+                            "id": "away",
+                            "title": "Away"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "canopy",
+            "mergeSubForm": true,
+            "subForm": {
+              "fields": [
+                {
+                  "id": "canopy_decoration",
+                  "description": "Configuration object for the canopy decoration.",
+                  "subForm": {
+                    "fields": [
+                      {
+                        "id": "decoration_block",
+                        "title": "Decoration Block",
+                        "description": "The block used for decorating. This is the legacy property; use decoration_blocks_sequence instead for placing multiple blocks. If both are present, decoration_blocks_sequence takes priority.",
+                        "dataType": 2,
+                        "isRequired": false
+                      },
+                      {
+                        "id": "decoration_blocks_sequence",
+                        "title": "Decoration Blocks Sequence",
+                        "description": "A list of blocks and counts to place in sequence as decoration. Each entry specifies a block identifier and a count for how many to place. This replaces the legacy decoration_block and num_steps properties. If both formats are present, this property takes priority.",
+                        "dataType": 15,
+                        "subForm": {
+                          "fields": [
+                            {
+                              "id": "block",
+                              "title": "Block",
+                              "description": "The block identifier to place (e.g., minecraft:moss_carpet).",
+                              "dataType": 2,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "count",
+                              "title": "Count",
+                              "description": "The number of this block to place. Can be a fixed integer, an array of two integers for a random range (e.g., [1, 2]), or an object with range_min and range_max fields.",
+                              "dataType": 0,
+                              "isRequired": true
+                            }
+                          ]
+                        },
+                        "alternates": [
+                          {
+                            "dataType": 17,
+                            "id": "decoration_blocks_sequence",
+                            "title": "Decoration Blocks Sequence",
+                            "description": "Simplified form where each entry is a block identifier string without a count.",
+                            "isRequired": false
+                          }
+                        ]
+                      },
+                      {
+                        "id": "decoration_chance",
+                        "title": "Decoration Chance",
+                        "description": "Probability of decorating on each step, specified as a fraction with numerator and denominator fields.",
+                        "dataType": 16,
+                        "isRequired": false,
+                        "subForm": {
+                          "fields": [
+                            {
+                              "id": "numerator",
+                              "title": "Numerator",
+                              "description": "The numerator of the probability fraction.",
+                              "dataType": 0,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "denominator",
+                              "title": "Denominator",
+                              "description": "The denominator of the probability fraction.",
+                              "dataType": 0,
+                              "isRequired": true
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "num_steps",
+                        "title": "Num Steps",
+                        "description": "Number of decoration blocks to place. This is the legacy property used with decoration_block. Not used if decoration_blocks_sequence is provided.",
+                        "dataType": 0,
+                        "isRequired": false
+                      },
+                      {
+                        "id": "step_direction",
+                        "title": "Step Direction",
+                        "description": "Direction to spread decoration blocks.",
+                        "dataType": 2,
+                        "isRequired": false,
+                        "choices": [
+                          {
+                            "id": "down",
+                            "title": "Down"
+                          },
+                          {
+                            "id": "up",
+                            "title": "Up"
+                          },
+                          {
+                            "id": "out",
+                            "title": "Out"
+                          },
+                          {
+                            "id": "away",
+                            "title": "Away"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "mangrove_canopy",
+            "mergeSubForm": true,
+            "subForm": {
+              "fields": [
+                {
+                  "id": "canopy_decoration",
+                  "description": "Configuration object for the canopy decoration.",
+                  "subForm": {
+                    "fields": [
+                      {
+                        "id": "decoration_block",
+                        "title": "Decoration Block",
+                        "description": "The block used for decorating. This is the legacy property; use decoration_blocks_sequence instead for placing multiple blocks. If both are present, decoration_blocks_sequence takes priority.",
+                        "dataType": 2,
+                        "isRequired": false
+                      },
+                      {
+                        "id": "decoration_blocks_sequence",
+                        "title": "Decoration Blocks Sequence",
+                        "description": "A list of blocks and counts to place in sequence as decoration. Each entry specifies a block identifier and a count for how many to place. This replaces the legacy decoration_block and num_steps properties. If both formats are present, this property takes priority.",
+                        "dataType": 15,
+                        "subForm": {
+                          "fields": [
+                            {
+                              "id": "block",
+                              "title": "Block",
+                              "description": "The block identifier to place (e.g., minecraft:moss_carpet).",
+                              "dataType": 2,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "count",
+                              "title": "Count",
+                              "description": "The number of this block to place. Can be a fixed integer, an array of two integers for a random range (e.g., [1, 2]), or an object with range_min and range_max fields.",
+                              "dataType": 0,
+                              "isRequired": true
+                            }
+                          ]
+                        },
+                        "alternates": [
+                          {
+                            "dataType": 17,
+                            "id": "decoration_blocks_sequence",
+                            "title": "Decoration Blocks Sequence",
+                            "description": "Simplified form where each entry is a block identifier string without a count.",
+                            "isRequired": false
+                          }
+                        ]
+                      },
+                      {
+                        "id": "decoration_chance",
+                        "title": "Decoration Chance",
+                        "description": "Probability of decorating on each step, specified as a fraction with numerator and denominator fields.",
+                        "dataType": 16,
+                        "isRequired": false,
+                        "subForm": {
+                          "fields": [
+                            {
+                              "id": "numerator",
+                              "title": "Numerator",
+                              "description": "The numerator of the probability fraction.",
+                              "dataType": 0,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "denominator",
+                              "title": "Denominator",
+                              "description": "The denominator of the probability fraction.",
+                              "dataType": 0,
+                              "isRequired": true
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "num_steps",
+                        "title": "Num Steps",
+                        "description": "Number of decoration blocks to place. This is the legacy property used with decoration_block. Not used if decoration_blocks_sequence is provided.",
+                        "dataType": 0,
+                        "isRequired": false
+                      },
+                      {
+                        "id": "step_direction",
+                        "title": "Step Direction",
+                        "description": "Direction to spread decoration blocks.",
+                        "dataType": 2,
+                        "isRequired": false,
+                        "choices": [
+                          {
+                            "id": "down",
+                            "title": "Down"
+                          },
+                          {
+                            "id": "up",
+                            "title": "Up"
+                          },
+                          {
+                            "id": "out",
+                            "title": "Out"
+                          },
+                          {
+                            "id": "away",
+                            "title": "Away"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "mangrove_roots",
+            "mergeSubForm": true,
+            "subForm": {
+              "fields": [
+                {
+                  "id": "root_decoration",
+                  "description": "Configuration object for the root decoration.",
+                  "subForm": {
+                    "fields": [
+                      {
+                        "id": "decoration_block",
+                        "title": "Decoration Block",
+                        "description": "The block used for decorating the roots. This is the legacy property; use decoration_blocks_sequence instead for placing multiple blocks. If both are present, decoration_blocks_sequence takes priority.",
+                        "dataType": 2,
+                        "isRequired": false
+                      },
+                      {
+                        "id": "decoration_blocks_sequence",
+                        "title": "Decoration Blocks Sequence",
+                        "description": "A list of blocks and counts to place in sequence as decoration. Each entry specifies a block identifier and a count for how many to place. This replaces the legacy decoration_block and num_steps properties. If both formats are present, this property takes priority.",
+                        "dataType": 15,
+                        "subForm": {
+                          "fields": [
+                            {
+                              "id": "block",
+                              "title": "Block",
+                              "description": "The block identifier to place (e.g., minecraft:moss_carpet).",
+                              "dataType": 2,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "count",
+                              "title": "Count",
+                              "description": "The number of this block to place. Can be a fixed integer, an array of two integers for a random range (e.g., [1, 2]), or an object with range_min and range_max fields.",
+                              "dataType": 0,
+                              "isRequired": true
+                            }
+                          ]
+                        },
+                        "alternates": [
+                          {
+                            "dataType": 17,
+                            "id": "decoration_blocks_sequence",
+                            "title": "Decoration Blocks Sequence",
+                            "description": "Simplified form where each entry is a block identifier string without a count.",
+                            "isRequired": false
+                          }
+                        ]
+                      },
+                      {
+                        "id": "decoration_chance",
+                        "title": "Decoration Chance",
+                        "description": "Probability of decorating on each step, specified as a fraction with numerator and denominator fields.",
+                        "dataType": 16,
+                        "isRequired": false,
+                        "subForm": {
+                          "fields": [
+                            {
+                              "id": "numerator",
+                              "title": "Numerator",
+                              "description": "The numerator of the probability fraction.",
+                              "dataType": 0,
+                              "isRequired": true
+                            },
+                            {
+                              "id": "denominator",
+                              "title": "Denominator",
+                              "description": "The denominator of the probability fraction.",
+                              "dataType": 0,
+                              "isRequired": true
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "num_steps",
+                        "title": "Num Steps",
+                        "description": "Number of decoration blocks to place. This is the legacy property used with decoration_block. Not used if decoration_blocks_sequence is provided.",
+                        "dataType": 0,
+                        "isRequired": false
+                      },
+                      {
+                        "id": "step_direction",
+                        "title": "Step Direction",
+                        "description": "Direction to spread decoration blocks.",
+                        "dataType": 2,
+                        "isRequired": false,
+                        "choices": [
+                          {
+                            "id": "down",
+                            "title": "Down"
+                          },
+                          {
+                            "id": "up",
+                            "title": "Up"
+                          },
+                          {
+                            "id": "out",
+                            "title": "Out"
+                          },
+                          {
+                            "id": "away",
+                            "title": "Away"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
   "generated_doNotEdit": {
     "id": "features",
     "fields": [

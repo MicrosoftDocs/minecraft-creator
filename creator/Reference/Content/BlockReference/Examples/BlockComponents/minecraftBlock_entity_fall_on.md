@@ -21,7 +21,7 @@ Configures what distance an entity must fall onto this block to cause the `onEnt
 
 ## Samples
 
-#### [Fall Distance Of 2 Blocks](Fall Distance of 2 Blocks)
+#### Fall Distance Of 2 Blocks
 
 
 ```json

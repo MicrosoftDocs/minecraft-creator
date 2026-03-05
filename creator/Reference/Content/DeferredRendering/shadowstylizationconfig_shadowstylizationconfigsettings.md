@@ -15,18 +15,20 @@ Struct ShadowStylizationConfig ShadowStylizationConfigSettings Client Deferred R
 
 ## Shadow settings Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| format_version | *not set* | String | format_version |  | 
-| minecraft:shadow_settings | *not set* | [Shadow Settings](#shadow-settings) item | minecraft:shadow_settings |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| format_version | *not set* | String | format_version | 
+| minecraft:shadow_settings | *not set* | [Shadow Settings](#shadow-settings) item | minecraft:shadow_settings | 
 
-## Shadow Settings
+### Shadow Settings
 ShadowStylizationConfig ShadowStylizationConfigSettings ShadowStylizationSettings.
 
 
 #### ShadowStylizationConfig ShadowStylizationConfigSettings ShadowStylizationSettings Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| shadow_style | *not set* | String | enum ShadowStylizationConfig_ShadowStylizationConfigSettings_ShadowStylizationSettings_ShadowStyle |  | 
-| texel_size | *not set* | Integer number | texel_size Value must be >= 1. Value must be <= 1024. |  | 
+**JSON path:** `minecraft:shadow_settings`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| shadow_style | *not set* | String | enum ShadowStylizationConfig_ShadowStylizationConfigSettings_ShadowStylizationSettings_ShadowStyle | 
+| texel_size | *not set* | Integer number | texel_size Value must be >= 1. Value must be <= 1024. | 

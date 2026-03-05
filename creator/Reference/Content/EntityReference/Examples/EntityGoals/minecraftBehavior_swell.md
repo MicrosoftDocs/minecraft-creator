@@ -15,10 +15,10 @@ Allows the creeper to swell up when a player is nearby. It can only be used by C
 
 ## Swell Behavior Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
-| start_distance | 10 | Decimal number | This mob starts swelling when a target is at least this many blocks away |  | 
-| stop_distance | 2 | Decimal number | This mob stops swelling when a target has moved away at least this many blocks |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
+| start_distance | 10 | Decimal number | This mob starts swelling when a target is at least this many blocks away | 
+| stop_distance | 2 | Decimal number | This mob stops swelling when a target has moved away at least this many blocks | 
 
 ## Samples

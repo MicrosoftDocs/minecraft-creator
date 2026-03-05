@@ -466,5 +466,35 @@
     }
   ],
   "permissionLevel": 1,
-  "requiresCheats": true
+  "requiresCheats": true,
+  "commandSamples": [
+    {
+      "command": "/scoreboard objectives add points dummy",
+      "description": "Create a new objective called 'points'"
+    },
+    {
+      "command": "/scoreboard objectives setdisplay sidebar points",
+      "description": "Show 'points' objective on the sidebar"
+    },
+    {
+      "command": "/scoreboard players set @s points 10",
+      "description": "Set your own points score to 10"
+    },
+    {
+      "command": "/scoreboard players add @a points 1",
+      "description": "Add 1 point to all players"
+    },
+    {
+      "command": "/scoreboard players reset @a points",
+      "description": "Reset all players' points scores"
+    },
+    {
+      "command": "/scoreboard players list @s",
+      "description": "List all scores for yourself"
+    },
+    {
+      "command": "/scoreboard objectives remove points",
+      "description": "Remove the 'points' objective entirely"
+    }
+  ]
 }

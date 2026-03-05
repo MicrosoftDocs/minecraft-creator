@@ -16,9 +16,9 @@ Stackable behavior is closely related to collidable behavior. While the "minecra
 
 ## Is Stackable Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | true | Boolean true/false | Whether this entity is stackable. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | true | Boolean true/false | Whether this entity is stackable. | 
 
 ## Samples
 

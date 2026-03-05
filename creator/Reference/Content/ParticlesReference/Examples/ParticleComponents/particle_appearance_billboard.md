@@ -15,14 +15,14 @@ Controls how particle sprites render and orient toward the camera. The facing_ca
 
 ## Client Particles Particle Appearance Billboard Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| direction | *not set* | Object |  |  | 
-| facing_camera_mode | *not set* | [Facing Camera Mode](#facing-camera-mode-choices) choices | The facing mode of the billboard. Controls how the particle faces the camera. |  | 
-| size | *not set* | Molang array | The size of the particle billboard, as [width, height] using Molang expressions or numbers. Value must have at least 2 items. Value must have at most 2 items. |  | 
-| size (Alternate 1) | *not set* | Key/item pairs of [Size](#size) items |  |  | 
-| size (Alternate 2) | *not set* | Decimal number |  |  | 
-| uv | *not set* | Object |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| direction | *not set* | Object |  | 
+| facing_camera_mode | *not set* | [Facing Camera Mode](#facing-camera-mode-choices) choices | The facing mode of the billboard. Controls how the particle faces the camera. | 
+| size | *not set* | Molang array | The size of the particle billboard, as [width, height] using Molang expressions or numbers. Value must have at least 2 items. Value must have at most 2 items. | 
+| size (Size) | *not set* | Key/item pairs of [Size (Size)](#size-size) items |  | 
+| size (as Decimal number) | *not set* | Decimal number |  | 
+| uv | *not set* | Object |  | 
 
 ### Facing Camera Mode choices
 
@@ -40,11 +40,13 @@ Controls how particle sprites render and orient toward the camera. The facing_ca
 | emitter_transform_xz | Emitter Transform XZ | |
 | emitter_transform_yz | Emitter Transform YZ | |
 
-## Size
+### Size (Size)
 
 #### Size Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `size`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 

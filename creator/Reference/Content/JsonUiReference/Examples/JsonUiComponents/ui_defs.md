@@ -21,7 +21,7 @@ The _ui_defs.json file that lists all UI screen files that should be loaded by M
 
 ## Samples
 
-#### [Basic](basic)
+#### Basic
 
 
 ```json

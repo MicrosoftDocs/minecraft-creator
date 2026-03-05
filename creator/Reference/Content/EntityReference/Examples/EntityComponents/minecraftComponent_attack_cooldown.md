@@ -15,11 +15,11 @@ Adds a cooldown to an entity. The intention of this cooldown is to be used to pr
 
 ## Attack Cooldown Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| attack_cooldown_complete_event | *not set* | Object | Event to be run when the cooldown is complete. Can be an object with event and target properties, or a simple event string. |  | 
-| attack_cooldown_complete_event (Alternate 1) | *not set* | String |  |  | 
-| attack_cooldown_time | *not set* | Range of floats | Amount of time in seconds for the cooldown. Can be specified as a number or a pair of numbers (min and max). |  | 
-| attack_cooldown_time (Alternate 1) | *not set* | Decimal number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| attack_cooldown_complete_event | *not set* | Object | Event to be run when the cooldown is complete. Can be an object with event and target properties, or a simple event string. | 
+| attack_cooldown_complete_event (as String) | *not set* | String |  | 
+| attack_cooldown_time | *not set* | Range of floats | Amount of time in seconds for the cooldown. Can be specified as a number or a pair of numbers (min and max). | 
+| attack_cooldown_time (as Decimal number) | *not set* | Decimal number |  | 
 
 ## Samples

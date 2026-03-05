@@ -19,20 +19,22 @@ Defines an entity's behavior for having items equipped to it.
 |:----------|:-------------|:----|:-----------|:------------- |
 | slots | *not set* | Array of [Slots](#slots) items | List of slots and the item that can be equipped. | Llama: `[{"slot":1,"item":"carpet","accepted_items":["carpet"]}]` | 
 
-## Slots
+### Slots
 List of slots and the item that can be equipped.
 
 
 #### Slots Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| accepted_items | *not set* | Array of strings | The list of items that can go in this slot. |  | 
-| interact_text | *not set* | String | Text to be displayed when the entity can be equipped with this item when playing with Touch-screen controls. |  | 
-| item | *not set* | String | Identifier of the item that can be equipped for this slot. |  | 
-| on_equip | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to trigger when this entity is equipped with this item. |  | 
-| on_unequip | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to trigger when this item is removed from this entity. |  | 
-| slot | 0 | Integer number | The slot number of this slot. |  | 
+**JSON path:** `slots`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| accepted_items | *not set* | Array of strings | The list of items that can go in this slot. | 
+| interact_text | *not set* | String | Text to be displayed when the entity can be equipped with this item when playing with Touch-screen controls. | 
+| item | *not set* | String | Identifier of the item that can be equipped for this slot. | 
+| on_equip | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to trigger when this entity is equipped with this item. | 
+| on_unequip | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to trigger when this item is removed from this entity. | 
+| slot | 0 | Integer number | The slot number of this slot. | 
 
 ## Samples
 

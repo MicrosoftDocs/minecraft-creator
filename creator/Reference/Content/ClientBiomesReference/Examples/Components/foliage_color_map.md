@@ -15,9 +15,9 @@ Object specifying a color map for foliage instead of a specific color.
 
 ## Client Biome Foliage Color Map Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| color_map | *not set* | [Color Map](#color-map-choices) choices | Color map from textures/colormap to determine color of foliage. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| color_map | *not set* | [Color Map](#color-map-choices) choices | Color map from textures/colormap to determine color of foliage. | 
 
 ### Color Map choices
 

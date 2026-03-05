@@ -24,7 +24,7 @@ Enables an entity to float on the specified liquid blocks.
 | can_auto_step_from_liquid | false | Boolean true/false | Whether the entity can move out of a liquid block to a neighboring solid block if pushed against it. |  | 
 | drag_down_on_buoyancy_removed | 0 | Decimal number | How much an entity will be dragged down when the component is removed. |  | 
 | liquid_blocks | *not set* | Array of strings | List of blocks this entity can float on. Must be a liquid block. | Xp Orb: `["minecraft:flowing_water","minecraft:water"]` | 
-| movement_type | waves | String | Type of vertical movement applied to the entity:<br>"waves", simulates wave movement based on the entity speed.<br>"bobbing", simulates waves going through.<br>"none", simulates waves going through. |  | 
+| movement_type | waves | String | Type of vertical movement applied to the entity: "waves", simulates wave movement based on the entity speed. "bobbing", simulates waves going through. "none", simulates waves going through. |  | 
 
 ## Samples
 

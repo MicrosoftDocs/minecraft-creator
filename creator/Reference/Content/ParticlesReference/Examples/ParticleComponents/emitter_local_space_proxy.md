@@ -15,8 +15,8 @@ Controls whether particles inherit emitter position and rotation.
 
 ## Client Particles Emitter Local Space Proxy Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| position | false | Boolean true/false |  |  | 
-| rotation | false | Boolean true/false |  |  | 
-| velocity | false | Boolean true/false |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| position | false | Boolean true/false |  | 
+| rotation | false | Boolean true/false |  | 
+| velocity | false | Boolean true/false |  | 

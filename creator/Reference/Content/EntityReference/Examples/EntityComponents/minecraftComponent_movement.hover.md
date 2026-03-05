@@ -15,9 +15,9 @@ This move control causes the mob to hover.
 
 ## Hover Movement Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max_turn | 30 | Decimal number | The maximum number in degrees the mob can turn per tick. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max_turn | 30 | Decimal number | The maximum number in degrees the mob can turn per tick. | 
 
 ## Samples
 

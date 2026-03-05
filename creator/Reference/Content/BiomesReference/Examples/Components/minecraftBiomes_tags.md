@@ -40,6 +40,6 @@ taiga: Biomes tagged "forest" or "forest_generation" will use normal Overworld f
 
 ## Biome Tags Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| tags | *not set* | Array of strings | Array of string tags used by other systems such as entity spawning |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| tags | *not set* | Array of strings | Array of string tags used by other systems such as entity spawning | 

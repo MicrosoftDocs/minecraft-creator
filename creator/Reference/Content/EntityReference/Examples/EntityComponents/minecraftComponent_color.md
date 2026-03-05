@@ -18,8 +18,8 @@ Defines the entity's main color.
 
 ## Color Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | 0 | Integer number | The Palette Color value of the entity. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | 0 | Integer number | The Palette Color value of the entity. | 
 
 ## Samples

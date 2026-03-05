@@ -18,9 +18,9 @@ Emits a particle specified via the particle attribute.
 
 ## Emit Particle Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| particle | *not set* | String | Identifier of the particle to emit. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| particle | *not set* | String | Identifier of the particle to emit. | 
 
 ## Samples
 

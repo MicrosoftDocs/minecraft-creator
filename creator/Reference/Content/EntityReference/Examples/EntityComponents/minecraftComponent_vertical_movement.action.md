@@ -15,8 +15,8 @@ When configured as a rideable entity, the entity will move upwards or downwards 
 
 ## Vertical Movement Action Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| vertical_velocity | 0.5 | Decimal number | Vertical velocity to apply when jump action is issued. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| vertical_velocity | 0.5 | Decimal number | Vertical velocity to apply when jump action is issued. | 
 
 ## Samples

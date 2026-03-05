@@ -15,7 +15,7 @@ Aim Assist Categories.
 
 ## Aim Assist Categories Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| format_version | *not set* | String | Version of the JSON schema for this file. Aim-assist categories requires at least version 1.21.50. |  | 
-| minecraft:aim_assist_categories | *not set* | Object | A single Camera Aim-Assist Categories Definition. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| format_version | *not set* | String | Version of the JSON schema for this file. Aim-assist categories requires at least version 1.21.50. | 
+| minecraft:aim_assist_categories | *not set* | Object | A single Camera Aim-Assist Categories Definition. | 

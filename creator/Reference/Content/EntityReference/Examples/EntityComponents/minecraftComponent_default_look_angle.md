@@ -15,6 +15,6 @@ Sets this entity's default head rotation angle.
 
 ## Default Look Angle Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | 0 | Decimal number | Angle in degrees. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | 0 | Decimal number | Angle in degrees. | 

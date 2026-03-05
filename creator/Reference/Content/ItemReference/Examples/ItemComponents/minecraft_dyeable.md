@@ -18,10 +18,10 @@ enables custom items to be dyed in cauldrons. To use the dyeable component, the 
 
 ## Item Components Dyeable Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| default_color | [255, 255, 255] | String | default_color |  | 
-| default_color (Alternate 1) | *not set* | Array of numbers |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| default_color | [255, 255, 255] | String | default_color | 
+| default_color (as Array of numbers) | *not set* | Array of numbers |  | 
 
 ## Samples
 

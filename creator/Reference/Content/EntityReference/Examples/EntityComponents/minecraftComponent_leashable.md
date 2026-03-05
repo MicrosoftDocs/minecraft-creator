@@ -22,27 +22,38 @@ Describes how this mob can be leashed to other items.
 | hard_distance | 6 | Integer number | Distance in blocks at which the leash stiffens, restricting movement. |  | 
 | max_distance | 0 | Integer number | Distance in blocks it which the leash breaks. |  | 
 | on_leash | *not set* | Object | Event to call when this entity is leashed. Can be an object with event and target properties, or a simple event string. |  | 
-| on_leash (Alternate 1) | *not set* | String |  |  | 
+| on_leash (as String) | *not set* | String |  |  | 
 | on_unleash | *not set* | Object | Event to call when this entity is unleashed. Can be an object with event and target properties, or a simple event string. |  | 
-| on_unleash (Alternate 1) | *not set* | String |  |  | 
+| on_unleash (as String) | *not set* | String |  |  | 
 | on_unleash_interact_only | false | Boolean true/false | When set to true, "on_unleash" does not trigger when the entity gets unleashed for reasons other than the player directly interacting with it. |  | 
 | presets | *not set* | Array of [Presets](#presets) items | Defines how this entity behaves when leashed to another entity. The first preset which "filter" conditions are met will be applied; if none match, a default configuration is used instead. | Boat: `[{"filter":{"subject":"other","test":"is_family","value":"happy_ghast"},"rotation_adjustment":90,"spring_type":"quad_dampened"},{"hard_distance":4,"rotation_adjustment":90,"soft_distance":2}]` | 
 | soft_distance | 4 | Integer number | Distance in blocks at which the 'spring' effect starts acting to keep this entity close to the entity that leashed it. |  | 
 
-## Presets
+### Presets
 Defines how this entity behaves when leashed to another entity. The first preset which "filter" conditions are met will be applied; if none match, a default configuration is used instead.
 
 
 #### Presets Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| filter | *not set* | Minecraft filter | Conditions that must be met for this preset to be applied. |  | 
-| hard_distance | 7 | Decimal number | Distance (in blocks) over which the entity starts being pulled towards the leash holder with a spring-like force. Entities can enter and stay in vehicles if the leash is stretched under this distance, but will dismount once it exceeds it. |  | 
-| max_distance | 12 | Decimal number | Distance in blocks at which the leash breaks. |  | 
-| rotation_adjustment | 0 | Decimal number | Adjusts the rotation at which the entity reaches equilibrium, when "spring_type" is set to "dampened" or "quad_dampened". |  | 
-| soft_distance | 4 | Decimal number | Distance (in blocks) over which the entity starts pathfinding toward the leash holder, if able. |  | 
-| spring_type | dampened | String | Defines the type of spring-like force that pulls the entity towards its leash holder:<br>- "bouncy": Simulates a highly elastic spring that never reaches an equilibrium if the leashed entity is suspended mid-air.<br>- "dampened": Simulates a dampened spring attached to the front of the leashed entity's collision. It reaches an equilibrium if the entity is suspended mid-air and aligns with the movement direction.<br>- "quad_dampened": Simulates four dampened springs connected to the center of each side of the entities' collisions. It reaches an equilibrium if the entity is suspended mid-air and gradually aligns with the leash holder over time. |  | 
+**JSON path:** `presets`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| filter | *not set* | Minecraft filter | Conditions that must be met for this preset to be applied. | 
+| hard_distance | 7 | Decimal number | Distance (in blocks) over which the entity starts being pulled towards the leash holder with a spring-like force. | 
+| max_distance | 12 | Decimal number | Distance in blocks at which the leash breaks. | 
+| rotation_adjustment | 0 | Decimal number | Adjusts the rotation at which the entity reaches equilibrium, when "spring_type" is set to "dampened" or "quad_dampened". | 
+| soft_distance | 4 | Decimal number | Distance (in blocks) over which the entity starts pathfinding toward the leash holder, if able. | 
+| spring_type | dampened | String | Defines the type of spring-like force that pulls the entity towards its leash holder: - "bouncy": Simulates a highly elastic spring that never reaches an equilibrium if the leashed entity is suspended mid-air. | 
+
+#### hard_distance
+
+Distance (in blocks) over which the entity starts being pulled towards the leash holder with a spring-like force. Entities can enter and stay in vehicles if the leash is stretched under this distance, but will dismount once it exceeds it.
+
+#### spring_type
+
+Defines the type of spring-like force that pulls the entity towards its leash holder: - "bouncy": Simulates a highly elastic spring that never reaches an equilibrium if the leashed entity is suspended mid-air. - "dampened": Simulates a dampened spring attached to the front of the leashed entity's collision. It reaches an equilibrium if the entity is suspended mid-air and aligns with the movement direction. - "quad_dampened": Simulates four dampened springs connected to the center of each side of the entities' collisions. It reaches an equilibrium if the entity is suspended mid-air and gradually aligns with the leash holder over time.
+
 
 ## Samples
 

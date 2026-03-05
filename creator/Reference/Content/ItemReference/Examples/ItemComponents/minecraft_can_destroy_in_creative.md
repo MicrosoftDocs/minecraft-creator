@@ -19,6 +19,6 @@ This item can also be represented as a `Boolean true/false`.
 
 ## Can Destroy In Creative Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | *not set* | Boolean true/false | Determines whether the item can be used to destroy blocks while in creative mode. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | *not set* | Boolean true/false | Determines whether the item can be used to destroy blocks while in creative mode. | 

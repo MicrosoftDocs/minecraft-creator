@@ -15,10 +15,10 @@ A block rule that is evaluated on all blocks of a Structure Template. All predic
 
 ## JigsawStructure Rule Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| block_entity_modifier | *not set* | Object | A block state modifier for block entities when all predicate match. |  | 
-| input_predicate | *not set* | Object | A predicate evaluated on the Structure Template block. |  | 
-| location_predicate | *not set* | Object | A predicate evaluated on the world block. |  | 
-| output_state | *not set* | Object | Block to replace the world block with if all predicates evaluate to true. |  | 
-| position_predicate | *not set* | Object | A predicate evaluated on the distance between the structure's world origin and the world block. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| block_entity_modifier | *not set* | Object | A block state modifier for block entities when all predicate match. | 
+| input_predicate | *not set* | Object | A predicate evaluated on the Structure Template block. | 
+| location_predicate | *not set* | Object | A predicate evaluated on the world block. | 
+| output_state | *not set* | Object | Block to replace the world block with if all predicates evaluate to true. | 
+| position_predicate | *not set* | Object | A predicate evaluated on the distance between the structure's world origin and the world block. | 

@@ -15,25 +15,29 @@ A Minecraft Bedrock Edition feature rules definition document. Feature rules con
 
 ## Feature Rules Document Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| format_version | *not set* | Version | The format version of this feature rules file. Use '1.13.0' or later. |  | 
-| minecraft:feature_rules | *not set* | [Feature Rules](#feature-rules) item | The feature rules definition containing description and conditions. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| format_version | *not set* | Version | The format version of this feature rules file. Use '1.13.0' or later. | 
+| minecraft:feature_rules | *not set* | [Feature Rules](#feature-rules) item | The feature rules definition containing description and conditions. | 
 
-## Feature Rules
+### Feature Rules
 
 #### Feature Rules Definition Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| conditions | *not set* | Object | Conditions that control where the feature is placed. |  | 
-| description | *not set* | [Description](#description) item | Contains the identifier and the feature to place. |  | 
+**JSON path:** `minecraft:feature_rules`
 
-## Description
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| conditions | *not set* | Object | Conditions that control where the feature is placed. | 
+| description | *not set* | [Description](#description) item | Contains the identifier and the feature to place. | 
 
-#### Feature Rules Description Properties
+#### Description
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | Boolean true/false | The unique identifier for this feature rule. |  | 
-| places_feature | *not set* | Boolean true/false | The identifier of the feature to place. |  | 
+##### Feature Rules Description Properties
+
+**JSON path:** `minecraft:feature_rules > description`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | Boolean true/false | The unique identifier for this feature rule. | 
+| places_feature | *not set* | Boolean true/false | The identifier of the feature to place. | 

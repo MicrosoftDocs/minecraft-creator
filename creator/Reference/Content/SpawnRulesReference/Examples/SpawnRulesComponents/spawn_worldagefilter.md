@@ -15,7 +15,7 @@ Restricts spawning based on how long the world has existed (measured in ticks). 
 
 ## Spawn WorldAgeFilter Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max | -1 | Integer number |  |  | 
-| min | 0 | Integer number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | -1 | Integer number |  | 
+| min | 0 | Integer number |  | 

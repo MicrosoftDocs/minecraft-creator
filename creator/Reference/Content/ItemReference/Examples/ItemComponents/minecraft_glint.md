@@ -19,9 +19,9 @@ This item can also be represented as a `Boolean true/false`.
 
 ## Glint Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | *not set* | Boolean true/false | Whether the item has the enchanted glint render effect. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | *not set* | Boolean true/false | Whether the item has the enchanted glint render effect. | 
 
 ## Samples
 

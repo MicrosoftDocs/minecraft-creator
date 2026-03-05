@@ -15,7 +15,7 @@ Defines the event triggered when a particle collides with a block or surface. Re
 
 ## Client Particles Particle Motion Collision Event Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| event | *not set* | Object |  |  | 
-| min_speed | 2 | Decimal number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| event | *not set* | Object |  | 
+| min_speed | 2 | Decimal number |  | 

@@ -18,7 +18,7 @@ Adds a timer after which this entity will spawn another entity or item (similar 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | entities (Entities) | *not set* | Array of [Entities](#entities) items | List of entity spawn definitions. Can be a single object or an array of objects. | Chicken: `[{"min_wait_time":300,"max_wait_time":600,"spawn_sound":"plop","spawn_item":"egg","filters":[{"test":"rider_count","subject":"self","operator":"==","value":0},{"test":"enum_property","subject":"self","domain":"minecraft:climate_variant","value":"temperate"}]},{"min_wait_time":300,"max_wait_time":600,"spawn_sound":"plop","spawn_item":"brown_egg","filters":[{"test":"rider_count","subject":"self","operator":"==","value":0},{"test":"enum_property","subject":"self","domain":"minecraft:climate_variant","value":"warm"}]},{"min_wait_time":300,"max_wait_time":600,"spawn_sound":"plop","spawn_item":"blue_egg","filters":[{"test":"rider_count","subject":"self","operator":"==","value":0},{"test":"enum_property","subject":"self","domain":"minecraft:climate_variant","value":"cold"}]}]`, Drowned: `{"max_wait_time":0,"min_wait_time":0,"num_to_spawn":1,"single_use":true,"spawn_entity":"minecraft:zombie_nautilus","spawn_event":"minecraft:entity_spawned"}`, Sniffer: `{"min_wait_time":0,"max_wait_time":0,"spawn_sound":"plop","spawn_item":"sniffer_egg","spawn_item_event":{"event":"on_egg_spawned","target":"self"},"single_use":true}` | 
-| entities (Alternate 1) | *not set* | Object |  |  | 
+| entities (as Object) | *not set* | Object |  |  | 
 | filters | *not set* | Minecraft filter | If present, the specified entity will only spawn if the filter evaluates to true. |  | 
 | max_wait_time | 600 | Integer number | Maximum amount of time to randomly wait in seconds before another entity is spawned. |  | 
 | min_wait_time | 300 | Integer number | Minimum amount of time to randomly wait in seconds before another entity is spawned. |  | 
@@ -32,9 +32,11 @@ Adds a timer after which this entity will spawn another entity or item (similar 
 | spawn_method | born | String | Method to use to spawn the entity. |  | 
 | spawn_sound | plop | String | Identifier of the sound effect to play when the entity is spawned. |  | 
 
-## Entities
+### Entities
 
 #### Entities Properties
+
+**JSON path:** `entities`
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

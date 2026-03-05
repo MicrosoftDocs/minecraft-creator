@@ -15,11 +15,11 @@ Defines physics properties of an actor, including if it is affected by gravity o
 
 ## Physics Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| has_collision | true | Boolean true/false | Whether or not the entity collides with things. |  | 
-| has_gravity | true | Boolean true/false | Whether or not the entity is affected by gravity. |  | 
-| push_towards_closest_space | false | Boolean true/false | Whether or not the entity should be pushed towards the nearest open area when stuck inside a block. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| has_collision | true | Boolean true/false | Whether or not the entity collides with things. | 
+| has_gravity | true | Boolean true/false | Whether or not the entity is affected by gravity. | 
+| push_towards_closest_space | false | Boolean true/false | Whether or not the entity should be pushed towards the nearest open area when stuck inside a block. | 
 
 ## Samples
 

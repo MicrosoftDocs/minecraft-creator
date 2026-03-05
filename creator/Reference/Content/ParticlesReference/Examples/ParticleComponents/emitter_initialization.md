@@ -15,29 +15,26 @@ Defines Molang expressions that run when the emitter is created and on each upda
 
 ## Emitter Initialization Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| creation_expression | 0 | Molang | Molang expression run once when the emitter is created. Use this to initialize variables. |  | 
-| creation_expression (Alternate 1) | *not set* | Key/item pairs of [Creation Expression](#creation-expression) items |  |  | 
-| creation_expression (Alternate 2) | *not set* | Decimal number |  |  | 
-| per_update_expression | 0 | Molang | Molang expression run each frame while the emitter is active. Use this to update variables based on time or other conditions. |  | 
-| per_update_expression (Alternate 1) | *not set* | Key/item pairs of [Per Update Expression](#per-update-expression) items |  |  | 
-| per_update_expression (Alternate 2) | *not set* | Decimal number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| creation_expression | 0 | Molang | Molang expression run once when the emitter is created. Use this to initialize variables. | 
+| creation_expression (Creation Expression) | *not set* | Key/item pairs of [Creation Expression (Creation Expression)](#creation-expression-creation-expression) items |  | 
+| creation_expression (as Decimal number) | *not set* | Decimal number |  | 
+| per_update_expression | 0 | Molang | Molang expression run each frame while the emitter is active. Use this to update variables based on time or other conditions. | 
+| per_update_expression (Per Update Expression) | *not set* | Key/item pairs of [Per Update Expression (Per Update Expression)](#per-update-expression-per-update-expression) items |  | 
+| per_update_expression (as Decimal number) | *not set* | Decimal number |  | 
 
-## Creation Expression
+### Creation Expression (Creation Expression)
 
 #### Creation Expression Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `creation_expression`
 
-## Per Update Expression
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
-#### Per Update Expression Properties
+### Per Update Expression (Per Update Expression)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+Same structure as [Creation Expression (Creation Expression)](#creation-expression-creation-expression).

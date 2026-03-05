@@ -15,22 +15,24 @@ Controls the initial direction and velocity of emitted particles. Direction sett
 
 ## Client Particles DirectionSettings Proxy Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| custom_direction | *not set* | Keyed set of strings |  |  | 
-| custom_direction (Alternate 1) | *not set* | Key/item pairs of [Custom Direction](#custom-direction) items |  |  | 
-| custom_direction (Alternate 2) | *not set* | Decimal number |  |  | 
-| min_speed_threshold | 0 | Decimal number |  |  | 
-| mode | *not set* | [Mode](#mode-choices) choices |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| custom_direction | *not set* | Keyed set of strings |  | 
+| custom_direction (Custom Direction) | *not set* | Key/item pairs of [Custom Direction (Custom Direction)](#custom-direction-custom-direction) items |  | 
+| custom_direction (as Decimal number) | *not set* | Decimal number |  | 
+| min_speed_threshold | 0 | Decimal number |  | 
+| mode | *not set* | [Mode](#mode-choices) choices |  | 
 
-## Custom Direction
+### Custom Direction (Custom Direction)
 
 #### Custom Direction Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `custom_direction`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
 ### Mode choices
 

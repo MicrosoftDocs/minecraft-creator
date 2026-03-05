@@ -15,10 +15,10 @@ Allows the entity go idle, if swimming. Entity must be in water.
 
 ## Swim Idle Behavior Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| idle_time | 5 | Decimal number | Amount of time (in seconds) to stay idle. |  | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
-| success_rate | 0.1 | Decimal number | Percent chance this entity will go idle, 1.0 = 100%. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| idle_time | 5 | Decimal number | Amount of time (in seconds) to stay idle. | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
+| success_rate | 0.1 | Decimal number | Percent chance this entity will go idle, 1.0 = 100%. | 
 
 ## Samples

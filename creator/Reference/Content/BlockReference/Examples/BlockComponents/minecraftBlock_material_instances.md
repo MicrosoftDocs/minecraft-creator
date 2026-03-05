@@ -18,28 +18,30 @@ The material instances for a block. Maps face or material_instance names in a ge
 
 ## Material Instances Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| * (Material Instance Face) | *not set* | [*](#material-instance-face) item |  |  | 
-| * (Alternate 1) | *not set* | String |  |  | 
-| down (Material Instance Face) | *not set* | [Down](#material-instance-face) item |  |  | 
-| down (Alternate 1) | *not set* | String |  |  | 
-| east (Material Instance Face) | *not set* | [East](#material-instance-face) item |  |  | 
-| east (Alternate 1) | *not set* | String |  |  | 
-| north (Material Instance Face) | *not set* | [North](#material-instance-face) item |  |  | 
-| north (Alternate 1) | *not set* | String |  |  | 
-| south (Material Instance Face) | *not set* | [South](#material-instance-face) item |  |  | 
-| south (Alternate 1) | *not set* | String |  |  | 
-| up (Material Instance Face) | *not set* | [Up](#material-instance-face) item |  |  | 
-| up (Alternate 1) | *not set* | String |  |  | 
-| west (Material Instance Face) | *not set* | [West](#material-instance-face) item |  |  | 
-| west (Alternate 1) | *not set* | String |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| * (Material Instance Face) | *not set* | [*](#material-instance-face) item |  | 
+| * (as String) | *not set* | String |  | 
+| down (Material Instance Face) | *not set* | [Down](#material-instance-face) item |  | 
+| down (as String) | *not set* | String |  | 
+| east (Material Instance Face) | *not set* | [East](#material-instance-face) item |  | 
+| east (as String) | *not set* | String |  | 
+| north (Material Instance Face) | *not set* | [North](#material-instance-face) item |  | 
+| north (as String) | *not set* | String |  | 
+| south (Material Instance Face) | *not set* | [South](#material-instance-face) item |  | 
+| south (as String) | *not set* | String |  | 
+| up (Material Instance Face) | *not set* | [Up](#material-instance-face) item |  | 
+| up (as String) | *not set* | String |  | 
+| west (Material Instance Face) | *not set* | [West](#material-instance-face) item |  | 
+| west (as String) | *not set* | String |  | 
 
-## Material Instance Face
+### Material Instance Face
 Configures how a block face renders its texture, including transparency, culling, and lighting. Set the texture reference, choose render method (opaque, alpha_test, blend, or double_sided), control face culling, and configure ambient occlusion. Enables glass-like transparency, leaf rendering, and custom visual effects.
 
 
 #### Material Instance Face Properties
+
+**JSON path:** `*`
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -48,7 +50,12 @@ Configures how a block face renders its texture, including transparency, culling
 | isotropic | false | Boolean true/false | Should the faces that this material is applied to randomize their UVs? This item requires a format version of at least 1.21.80. |  | 
 | render_method | *not set* | [Render Method](#render-method-choices) choices | The render method to use. | Blue Bubble Fish: `"blend"`, Block Orange Ore: `"opaque"`, Block Frond Top: `"alpha_test"` | 
 | texture | *not set* | String | Texture name for the material. | Blue Bubble Fish: `"bubble_fish_blue"`, California Roll: `"sushi_wrap"`, Green Bubble Fish: `"bubble_fish_green"` | 
-| tint_method | false | Boolean true/false | Tint multiplied to the color. Tint method logic varies, but often refers to the "rain" and "temperature" of the biome the block is placed in to compute the tint. Supported tint methods are "none", "default_foliage", "birch_foliage", "evergreen_foliage", "dry_foliage", "grass" and "water" This item requires a format version of at least 1.21.80. |  | 
+| tint_method | false | Boolean true/false | Tint multiplied to the color. |  | 
+
+#### tint_method
+
+Tint multiplied to the color. Tint method logic varies, but often refers to the "rain" and "temperature" of the biome the block is placed in to compute the tint. Supported tint methods are "none", "default_foliage", "birch_foliage", "evergreen_foliage", "dry_foliage", "grass" and "water" This item requires a format version of at least 1.21.80.
+
 
 ### Render Method choices
 

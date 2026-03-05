@@ -15,19 +15,21 @@ Defines a PBR texture set document with format_version 1.21.30.
 
 ## Texture Set (v1.21.30) Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| format_version | *not set* | Version |  |  | 
-| minecraft:texture_set | *not set* | [Texture Set](#texture-set) item |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| format_version | *not set* | Version |  | 
+| minecraft:texture_set | *not set* | [Texture Set](#texture-set) item |  | 
 
-## Texture Set
+### Texture Set
 
 #### Texture Set Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| color | *not set* | String | The texture name of a textureset layer |  | 
-| heightmap | *not set* | String | The texture name of a textureset layer |  | 
-| metalness_emissive_roughness | *not set* | String | The texture name of a textureset layer |  | 
-| metalness_emissive_roughness_subsurface | *not set* | String | The texture name of a textureset layer |  | 
-| normal | *not set* | String | The texture name of a textureset layer |  | 
+**JSON path:** `minecraft:texture_set`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| color | *not set* | String | The texture name of a textureset layer | 
+| heightmap | *not set* | String | The texture name of a textureset layer | 
+| metalness_emissive_roughness | *not set* | String | The texture name of a textureset layer | 
+| metalness_emissive_roughness_subsurface | *not set* | String | The texture name of a textureset layer | 
+| normal | *not set* | String | The texture name of a textureset layer | 

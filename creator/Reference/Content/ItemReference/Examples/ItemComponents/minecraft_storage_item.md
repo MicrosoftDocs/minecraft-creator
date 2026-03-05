@@ -25,9 +25,9 @@ Enables an item to store data of the dynamic container associated with it. A dyn
 |:----------|:-------------|:----|:-----------|:------------- |
 | allow_nested_storage_items | true | Boolean true/false | Determines whether another Storage Item is allowed inside of this item. Default is true. | Black Bundle: `true` | 
 | allowed_items | [] | String | List of items that are exclusively allowed in this Storage Item. If empty all items are allowed. |  | 
-| allowed_items (Alternate 1) | *not set* | Keyed set of strings |  |  | 
+| allowed_items (as Keyed set of strings) | *not set* | Keyed set of strings |  |  | 
 | banned_items | [] | String | List of items that are not allowed in this Storage Item. | Black Bundle: `["minecraft:shulker_box","minecraft:undyed_shulker_box"]` | 
-| banned_items (Alternate 1) | *not set* | Keyed set of strings |  |  | 
+| banned_items (as Keyed set of strings) | *not set* | Keyed set of strings |  |  | 
 | max_slots | 64 | Integer number | The maximum allowed weight of the sum of all contained items. Maximum is 64. Default is 64. Value must be <= 64. | Black Bundle: `64` | 
 | max_weight_limit | *not set* | Decimal number |  | Black Bundle: `64` | 
 | weight_in_storage_item | *not set* | Decimal number |  | Black Bundle: `4` | 

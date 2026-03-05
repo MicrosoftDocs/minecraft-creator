@@ -25,17 +25,21 @@ Allows mobs to occassionally stop and take a nap under certain conditions.
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Fox: `8` | 
 | wake_mob_exceptions | *not set* | [Wake Mob Exceptions](#wake-mob-exceptions) item |  | Fox: `{"any_of":[{"test":"trusts","subject":"other","operator":"==","value":true},{"test":"is_family","subject":"other","operator":"==","value":"fox"},{"test":"is_sneaking","subject":"other","operator":"==","value":true}]}` | 
 
-## Can Nap Filters
+### Can Nap Filters
 
 #### Can nap filters Properties
+
+**JSON path:** `can_nap_filters`
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | all_of | *not set* | String |  | Fox: `[{"test":"in_water","subject":"self","operator":"==","value":false},{"test":"on_ground","subject":"self","operator":"==","value":true},{"test":"is_underground","subject":"self","operator":"==","value":true},{"test":"weather_at_position","subject":"self","operator":"!=","value":"thunderstorm"}]` | 
 
-## Wake Mob Exceptions
+### Wake Mob Exceptions
 
 #### Wake mob exceptions Properties
+
+**JSON path:** `wake_mob_exceptions`
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

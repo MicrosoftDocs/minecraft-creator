@@ -54,6 +54,20 @@
       "id": "1",
       "title": "Give item to target",
       "description": "Give a set of players selected via a target selector an item.",
+      "samples": [
+        {
+          "command": "/give @s diamond 64",
+          "description": "Give yourself 64 diamonds"
+        },
+        {
+          "command": "/give @a iron_sword",
+          "description": "Give all players an iron sword"
+        },
+        {
+          "command": "/give @s golden_apple 16",
+          "description": "Give yourself 16 golden apples"
+        }
+      ],
       "params": [
         {
           "name": "player",
@@ -84,5 +98,23 @@
     }
   ],
   "permissionLevel": 1,
-  "requiresCheats": true
+  "requiresCheats": true,
+  "commandSamples": [
+    {
+      "command": "/give @s netherite_sword",
+      "description": "Give yourself a netherite sword"
+    },
+    {
+      "command": "/give @a cooked_beef 32",
+      "description": "Give 32 cooked beef to all players"
+    },
+    {
+      "command": "/give @p diamond_pickaxe 1 0 {\"minecraft:can_destroy\":{\"blocks\":[\"stone\",\"deepslate\"]}}",
+      "description": "Give a diamond pickaxe that can only destroy stone and deepslate"
+    },
+    {
+      "command": "/give @s firework_rocket 64 1",
+      "description": "Give 64 firework rockets with data value 1"
+    }
+  ]
 }

@@ -15,7 +15,7 @@ Predicate that evaluates to true if the block at the specified location matches 
 
 ## JigsawStructure ProcessorRule BlockMatch Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| block | *not set* | String | The block to match against. |  | 
-| predicate_type | *not set* | String | The type of block predicate. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| block | *not set* | String | The block to match against. | 
+| predicate_type | *not set* | String | The type of block predicate. | 

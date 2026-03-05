@@ -18,7 +18,7 @@ Creates a trigger based on environment conditions.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | triggers | *not set* | Array of objects | The list of triggers that fire when the environment conditions match the given filter criteria. Can be an array of trigger objects or a single trigger object. | Breeze: `[{"event":"minecraft:stop_playing_idle_ground_sound","filters":{"all_of":[{"subject":"self","test":"on_ground","value":true},{"subject":"self","test":"has_target","value":true},{"domain":"minecraft:is_playing_idle_ground_sound","operator":"==","test":"bool_property"}]}},{"event":"minecraft:start_playing_idle_ground_sound","filters":{"all_of":[{"domain":"minecraft:is_playing_idle_ground_sound","operator":"!=","test":"bool_property"},{"any_of":[{"subject":"self","test":"on_ground","value":false},{"subject":"self","test":"has_target","value":false}]}]}}]`, Cave Spider: `{"event":"minecraft:become_neutral","filters":{"operator":">","test":"is_brightness","value":0.49}}`, `{"event":"minecraft:become_hostile","filters":{"operator":"<","test":"is_brightness","value":0.49}}` | 
-| triggers (Alternate 1) | *not set* | Object |  |  | 
+| triggers (as Object) | *not set* | Object |  |  | 
 
 ## Samples
 

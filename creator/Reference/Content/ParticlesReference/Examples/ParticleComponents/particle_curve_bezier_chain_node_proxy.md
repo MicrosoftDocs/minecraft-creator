@@ -15,11 +15,11 @@ Defines a control point in a bezier chain curve, specifying position and slope a
 
 ## Client Particles Particle Curve Bezier Chain Node Proxy Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| left_slope | *not set* | Decimal number |  |  | 
-| left_value | *not set* | Decimal number |  |  | 
-| right_slope | *not set* | Decimal number |  |  | 
-| right_value | *not set* | Decimal number |  |  | 
-| slope | *not set* | Decimal number |  |  | 
-| value | *not set* | Decimal number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| left_slope | *not set* | Decimal number |  | 
+| left_value | *not set* | Decimal number |  | 
+| right_slope | *not set* | Decimal number |  | 
+| right_value | *not set* | Decimal number |  | 
+| slope | *not set* | Decimal number |  | 
+| value | *not set* | Decimal number |  | 

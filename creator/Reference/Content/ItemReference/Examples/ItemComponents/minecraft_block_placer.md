@@ -25,22 +25,29 @@ Sets the item as a placer item component for blocks. Items with this component w
 |:----------|:-------------|:----|:-----------|:------------- |
 | aligned_placement | false | Boolean true/false | If true, block placement through this item will be aligned while holding the interaction button down. Defaults to false. |  | 
 | block | *not set* | Object | Defines the block that will be placed. | My Sword Singing: `"minecraft:dirt"` | 
-| replace_block_item | false | Boolean true/false | If true, the item will be registered as the item for this block. This item will be returned by default when the block is broken/picked. Note: the identifier for this item must match the block's identifier for this field to be valid. Defaults to false. |  | 
+| replace_block_item | false | Boolean true/false | If true, the item will be registered as the item for this block. |  | 
 | use_on (Use On) | [] | Array of [Use On](#use-on) items | List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed. Value must have at most 256 items. | My Sword Singing: `["dirt","grass","anvil"]` | 
-| use_on (Alternate 1) | *not set* | String |  |  | 
-| use_on (Alternate 2) | *not set* | Object |  |  | 
+| use_on (as String) | *not set* | String |  |  | 
+| use_on (as Object) | *not set* | Object |  |  | 
 
-## Use On
+### replace_block_item
+
+If true, the item will be registered as the item for this block. This item will be returned by default when the block is broken/picked. Note: the identifier for this item must match the block's identifier for this field to be valid. Defaults to false.
+
+
+### Use On
 
 #### Use On Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name |  | String |  |  | 
-| states | {} | Integer number |  |  | 
-| states (Alternate 1) | *not set* | String |  |  | 
-| states (Alternate 2) | *not set* | Boolean true/false |  |  | 
-| tags |  | String |  |  | 
+**JSON path:** `use_on`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| name |  | String |  | 
+| states | {} | Integer number |  | 
+| states (as String) | *not set* | String |  | 
+| states (as Boolean true/false) | *not set* | Boolean true/false |  | 
+| tags |  | String |  | 
 
 ## Samples
 

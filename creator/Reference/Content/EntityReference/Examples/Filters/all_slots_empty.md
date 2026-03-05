@@ -15,11 +15,11 @@ Returns true when the designated equipment location for the subject entity is co
 
 ## All Slots Empty Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | any | [Value](#value-choices) choices | (Optional) The equipment location to test |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | 
+| value | any | [Value](#value-choices) choices | (Optional) The equipment location to test | 
 
 ### Operator choices
 

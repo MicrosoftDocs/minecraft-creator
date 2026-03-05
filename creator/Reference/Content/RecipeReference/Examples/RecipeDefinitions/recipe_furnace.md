@@ -15,33 +15,37 @@ A smelting/cooking recipe for Minecraft Bedrock Edition. Furnace recipes define 
 
 ## Furnace Recipe Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| format_version | *not set* | Version | The format version of this recipe file. |  | 
-| minecraft:recipe_furnace | *not set* | [Recipe Furnace](#recipe-furnace) item | The furnace recipe definition container. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| format_version | *not set* | Version | The format version of this recipe file. | 
+| minecraft:recipe_furnace | *not set* | [Recipe Furnace](#recipe-furnace) item | The furnace recipe definition container. | 
 
-## Recipe Furnace
+### Recipe Furnace
 
 #### Recipe Furnace Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description) item | The recipe description containing identifier. |  | 
-| input | *not set* | String | The input item. Can be a simple identifier or include data value (e.g., 'minecraft:wood:4'). |  | 
-| output | *not set* | String | The output item identifier. |  | 
-| tags | *not set* | Array of strings | Tags that specify which smelting stations can use this recipe (e.g., 'furnace', 'smoker', 'blast_furnace', 'campfire'). |  | 
+**JSON path:** `minecraft:recipe_furnace`
 
-## Description
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| description | *not set* | [Description](#description) item | The recipe description containing identifier. | 
+| input | *not set* | String | The input item. Can be a simple identifier or include data value (e.g., 'minecraft:wood:4'). | 
+| output | *not set* | String | The output item identifier. | 
+| tags | *not set* | Array of strings | Tags that specify which smelting stations can use this recipe (e.g., 'furnace', 'smoker', 'blast_furnace', 'campfire'). | 
 
-#### Description Properties
+#### Description
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The unique identifier for this recipe. |  | 
+##### Description Properties
+
+**JSON path:** `minecraft:recipe_furnace > description`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The unique identifier for this recipe. | 
 
 ## Samples
 
-#### [Beef](beef)
+#### Beef
 
 
 ```json

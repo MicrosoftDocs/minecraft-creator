@@ -12,13 +12,13 @@ Validates JSON files against official JSON schemas located at public/schemas. Re
 ## Rules Summary
 | Rule ID | Rule | Severity | Auto-Fix |
 |:--------|:-----|:---------|:---------|
-| [JSON1](#json1) | JSON Parse Error | 🔴 Error |  |
+| [JSON1](#json1) | JSON Parse Error (Schema Validation) | 🔴 Error |  |
 
 ---
 ## Rule Details
 
 ### JSON1
-**🔴 JSON Parse Error**  
+**🔴 JSON Parse Error (Schema Validation)**  
 **Severity**: Error
 
 #### What This Checks

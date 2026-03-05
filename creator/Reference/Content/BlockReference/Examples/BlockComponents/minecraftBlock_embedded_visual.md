@@ -18,7 +18,7 @@ The description identifier of the geometry and material used to render this bloc
 
 ## Embedded Visual Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| geometry | *not set* | Array of objects | The "minecraft:geometry" component that will be used when rendered inside of another block. |  | 
-| material_instances | *not set* | Array of objects | The "minecraft:material_instances" component that will be used when rendered inside of another block. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| geometry | *not set* | Array of objects | The "minecraft:geometry" component that will be used when rendered inside of another block. | 
+| material_instances | *not set* | Array of objects | The "minecraft:material_instances" component that will be used when rendered inside of another block. | 

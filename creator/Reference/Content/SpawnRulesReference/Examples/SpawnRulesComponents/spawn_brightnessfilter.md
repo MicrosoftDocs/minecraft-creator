@@ -15,8 +15,8 @@ Restricts mob spawning based on light level at the spawn location. Hostile mobs 
 
 ## Spawn BrightnessFilter Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| adjust_for_weather | false | Boolean true/false |  |  | 
-| max | 15 | Integer number |  |  | 
-| min | 0 | Integer number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| adjust_for_weather | false | Boolean true/false |  | 
+| max | 15 | Integer number |  | 
+| min | 0 | Integer number |  | 

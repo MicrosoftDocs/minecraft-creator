@@ -15,8 +15,8 @@ Adds a trigger to call when this entity is set on fire.
 
 ## On Ignite Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| event | *not set* | String | The event to run when the conditions for this trigger are met. |  | 
-| filters | *not set* | Minecraft filter | The list of conditions for this trigger to execute. |  | 
-| target | self | String | The target of the event. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| event | *not set* | String | The event to run when the conditions for this trigger are met. | 
+| filters | *not set* | Minecraft filter | The list of conditions for this trigger to execute. | 
+| target | self | String | The target of the event. | 
