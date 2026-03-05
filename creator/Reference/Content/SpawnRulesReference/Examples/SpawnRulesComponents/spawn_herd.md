@@ -15,11 +15,11 @@ Configures group spawning behavior, including minimum and maximum herd size. Mob
 
 ## Spawn Herd Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| event |  | String | An event to run after M number of the herd have spawned |  | 
-| event_skip_count | 0 | Integer number | Number of the herd to skip before running the event |  | 
-| initial_event |  | String | Event run for the first N of the herd are placed. |  | 
-| initial_event_count | 0 | Integer number | Number of times that the initial event will run |  | 
-| max_size | 1 | Integer number | Maximum number in this group to attempt to spawn |  | 
-| min_size | 1 | Integer number | Minimum number in this group to attempt to spawn |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| event |  | String | An event to run after M number of the herd have spawned | 
+| event_skip_count | 0 | Integer number | Number of the herd to skip before running the event | 
+| initial_event |  | String | Event run for the first N of the herd are placed. | 
+| initial_event_count | 0 | Integer number | Number of times that the initial event will run | 
+| max_size | 1 | Integer number | Maximum number in this group to attempt to spawn | 
+| min_size | 1 | Integer number | Minimum number in this group to attempt to spawn | 

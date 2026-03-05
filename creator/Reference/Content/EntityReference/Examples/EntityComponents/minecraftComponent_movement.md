@@ -15,19 +15,21 @@ Defines the base movement speed of an entity. Typical values: creeper (0.2), cow
 
 ## Movement Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max | *not set* | Decimal number | Maximum movement speed this entity can have. |  | 
-| value | *not set* | Decimal number | The base movement speed value. Higher values result in faster movement. Can be a single number or a range object with range_min and range_max properties. |  | 
-| value (Alternate 1) | *not set* | [Value](#value) item |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | *not set* | Decimal number | Maximum movement speed this entity can have. | 
+| value | *not set* | Decimal number | The base movement speed value. Higher values result in faster movement. Can be a single number or a range object with range_min and range_max properties. | 
+| value (as Object) | *not set* | [Value](#value) item |  | 
 
-## Value
+### Value
 
 #### Value Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| range_max | *not set* | Decimal number | Maximum movement speed |  | 
-| range_min | *not set* | Decimal number | Minimum movement speed |  | 
+**JSON path:** `value`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| range_max | *not set* | Decimal number | Maximum movement speed | 
+| range_min | *not set* | Decimal number | Minimum movement speed | 
 
 ## Samples

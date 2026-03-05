@@ -27,7 +27,7 @@ Allows an entity to attack the closest target within a given subset of specific 
 | persist_time | 0 | Decimal number | Time (in seconds) this entity can continue attacking the target after the target is no longer valid. | Drowned: `0.5` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Blaze: `2`, Breeze: `1` | 
 | reselect_targets | false | Boolean true/false | Allows the attacking entity to update the nearest target, otherwise a target is only reselected after each "scan_interval" or "attack_interval". | Bogged: `true` | 
-| scan_interval | 10 | Integer number | If "attack_interval" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to "scan_interval", minimum value is 1. Values under 10 can affect performance. |  | 
+| scan_interval | 10 | Integer number | If "attack_interval" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to "scan_interval", minimum value is 1. |  | 
 | set_persistent | false | Boolean true/false | Allows the actor to be set to persist upon targeting a player |  | 
 | target_acquisition_probability | 1 | Decimal number | Probability (0.0 to 1.0) that this entity will accept a found target. Checked each time a valid target is found during scanning. |  | 
 | target_invisible_multiplier | 0.7 | Decimal number | Multiplied with the target's armor coverage percentage to modify "max_dist" when detecting an invisible target. |  | 
@@ -35,23 +35,30 @@ Allows an entity to attack the closest target within a given subset of specific 
 | target_sneak_visibility_multiplier | 0.8 | Decimal number | Multiplied with the target type's "max_dist" when trying to detect a sneaking target. |  | 
 | within_radius | 0 | Decimal number | Maximum distance this entity can be from the target when following it, otherwise the target becomes invalid. This value is only used if the entity doesn't declare "minecraft:follow_range". | Breeze: `24`, Drowned: `12` | 
 
-## Entity Types
+### scan_interval
+
+If "attack_interval" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to "scan_interval", minimum value is 1. Values under 10 can affect performance.
+
+
+### Entity Types
 List of entity types that this mob considers valid targets.
 
 
 #### Entity Types Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| cooldown | 0 | Decimal number | The amount of time in seconds that the mob has to wait before selecting a target of the same type again |  | 
-| filters | *not set* | Minecraft filter | Conditions that make this entry in the list valid |  | 
-| max_dist | 16 | Decimal number | Maximum distance this mob can be away to be a valid choice |  | 
-| must_see | false | Boolean true/false | If true, the mob has to be visible to be a valid choice |  | 
-| must_see_forget_duration | 3 | Decimal number | Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more |  | 
-| priority | *not set* | Decimal number |  |  | 
-| reevaluate_description | false | Boolean true/false | If true, the targeting entity will continuously reevaluate the target and stop attacking if the target no longer meets the filter conditions. |  | 
-| sprint_speed_multiplier | 1 | Decimal number | Multiplier for the running speed. A value of 1.0 means the speed is unchanged |  | 
-| walk_speed_multiplier | 1 | Decimal number | Multiplier for the walking speed. A value of 1.0 means the speed is unchanged |  | 
+**JSON path:** `entity_types`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| cooldown | 0 | Decimal number | The amount of time in seconds that the mob has to wait before selecting a target of the same type again | 
+| filters | *not set* | Minecraft filter | Conditions that make this entry in the list valid | 
+| max_dist | 16 | Decimal number | Maximum distance this mob can be away to be a valid choice | 
+| must_see | false | Boolean true/false | If true, the mob has to be visible to be a valid choice | 
+| must_see_forget_duration | 3 | Decimal number | Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more | 
+| priority | *not set* | Decimal number |  | 
+| reevaluate_description | false | Boolean true/false | If true, the targeting entity will continuously reevaluate the target and stop attacking if the target no longer meets the filter conditions. | 
+| sprint_speed_multiplier | 1 | Decimal number | Multiplier for the running speed. A value of 1.0 means the speed is unchanged | 
+| walk_speed_multiplier | 1 | Decimal number | Multiplier for the walking speed. A value of 1.0 means the speed is unchanged | 
 
 ## Samples
 

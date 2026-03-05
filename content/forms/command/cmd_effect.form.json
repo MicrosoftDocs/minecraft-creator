@@ -145,5 +145,31 @@
     }
   ],
   "permissionLevel": 1,
-  "requiresCheats": true
+  "requiresCheats": true,
+  "commandSamples": [
+    {
+      "command": "/effect @s speed 60 2",
+      "description": "Give yourself Speed II for 60 seconds"
+    },
+    {
+      "command": "/effect @a night_vision 999999",
+      "description": "Give all players permanent night vision"
+    },
+    {
+      "command": "/effect @s clear",
+      "description": "Clear all effects from yourself"
+    },
+    {
+      "command": "/effect @e[type=zombie] weakness 30 1 true",
+      "description": "Give all zombies Weakness II for 30 seconds, hidden particles"
+    },
+    {
+      "command": "/effect @s regeneration 10 3",
+      "description": "Give yourself Regeneration IV for 10 seconds"
+    },
+    {
+      "command": "/effect @a resistance 120 0",
+      "description": "Give all players Resistance I for 2 minutes"
+    }
+  ]
 }

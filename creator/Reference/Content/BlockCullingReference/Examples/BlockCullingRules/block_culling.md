@@ -15,33 +15,37 @@ Block culling rules allow custom blocks with geometry to have specific faces hid
 
 ## Block Culling Rules Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#client-block-description) item |  |  | 
-| rules | *not set* | [Rules](#client-block-rule) item |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| description | *not set* | [Description](#client-block-description) item |  | 
+| rules | *not set* | [Rules](#client-block-rule) item |  | 
 
-## Client Block Description
+### Client Block Description
 Defines the identifier for a block culling rule.
 
 
 #### Client Block Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The namespace and identifier for this culling rule. |  | 
+**JSON path:** `description`
 
-## Client Block Rule
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The namespace and identifier for this culling rule. | 
+
+### Client Block Rule
 Specifies a culling rule for block face visibility.
 
 
 #### Client Block Rule Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| condition | *not set* | [Condition](#condition-choices) choices |  |  | 
-| cull_against_full_and_opaque | true | Boolean true/false | If set to false, then culling against full and opaque blocks will not be considered. |  | 
-| direction | *not set* | [Direction](#direction-choices) choices |  |  | 
-| geometry_part | *not set* | [Geometry Part](#client-block-rule-geometry-part) item |  |  | 
+**JSON path:** `rules`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| condition | *not set* | [Condition](#condition-choices) choices |  | 
+| cull_against_full_and_opaque | true | Boolean true/false | If set to false, then culling against full and opaque blocks will not be considered. | 
+| direction | *not set* | [Direction](#direction-choices) choices |  | 
+| geometry_part | *not set* | [Geometry Part](#client-block-rule-geometry-part) item |  | 
 
 ### Condition choices
 
@@ -63,32 +67,23 @@ Specifies a culling rule for block face visibility.
 | up | Up | |
 | west | West | |
 
-## Client Block Rule Geometry Part
+#### Client Block Rule Geometry Part
 Specifies a geometry part for culling.
 
 
-#### Client Block Rule Geometry Part Properties
+##### Client Block Rule Geometry Part Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| bone | *not set* | String |  |  | 
-| cube | *not set* | Integer number |  |  | 
-| face | *not set* | [Face](#face-choices) choices |  |  | 
+**JSON path:** `rules > geometry_part`
 
-### Face choices
-
-|Value       |Title |Description |
-|:-----------|:-----|:-----------|
-| down | Down | |
-| east | East | |
-| north | North | |
-| south | South | |
-| up | Up | |
-| west | West | |
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| bone | *not set* | String |  | 
+| cube | *not set* | Integer number |  | 
+| face | *not set* | [Face](#direction-choices) choices |  | 
 
 ## Samples
 
-#### [Culling Rules Horizontal Glass](/block_culling/horizontal_glass.culling_rules.json)
+#### Culling Rules Horizontal Glass
 
 
 ```json
@@ -140,7 +135,7 @@ Specifies a geometry part for culling.
 }
 ```
 
-#### [Culling Rules Leaves](/block_culling/leaves.culling_rules.json)
+#### Culling Rules Leaves
 
 
 ```json

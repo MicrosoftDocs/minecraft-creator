@@ -15,7 +15,7 @@ A Minecraft Bedrock Edition animation definition document. Animations define bon
 
 ## Animation Document Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| animations | *not set* | Object | A dictionary of animation definitions. Keys are animation identifiers like 'animation.entity.anim_name', values are animation objects with loop, animation_length, timeline, and bones properties. |  | 
-| format_version | *not set* | Version | The format version of this animation file. Use '1.8.0' or later. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| animations | *not set* | Object | A dictionary of animation definitions. Keys are animation identifiers like 'animation.entity.anim_name', values are animation objects with loop, animation_length, timeline, and bones properties. | 
+| format_version | *not set* | Version | The format version of this animation file. Use '1.8.0' or later. | 

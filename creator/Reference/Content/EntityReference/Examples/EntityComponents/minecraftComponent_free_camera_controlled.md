@@ -15,9 +15,9 @@ When configured as a rideable entity, the entity will be controlled using WASD c
 
 ## Free Camera Controlled Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| backwards_movement_modifier | 0.5 | Decimal number | Modifies speed going backwards. |  | 
-| strafe_speed_modifier | 0.4 | Decimal number | Modifies the strafe speed. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| backwards_movement_modifier | 0.5 | Decimal number | Modifies speed going backwards. | 
+| strafe_speed_modifier | 0.4 | Decimal number | Modifies the strafe speed. | 
 
 ## Samples

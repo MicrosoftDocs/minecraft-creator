@@ -57,7 +57,7 @@ You can click once once to place one block shape, or click and drag to place blo
 
 - ### Brush Types
 
-    Choose a cursor with one of the six supported shapes:
+    Choose a cursor with one of the five supported shapes:
 
     - Ellipsoid
 
@@ -69,8 +69,6 @@ You can click once once to place one block shape, or click and drag to place blo
 
     - Pyramid
 
-    - Single Block
-
 - ### Offset
     
     Specify the selection's offset from the cursor location.
@@ -78,7 +76,7 @@ You can click once once to place one block shape, or click and drag to place blo
 
 ## Shape Settings
 
-Shape Settings apply to all Brush Types except for Single Block. Here, you'll find sliders that adjust the radius of each of the Brush's axes to fine-tune the shape to suit your needs.
+Here, you'll find sliders that adjust the radius of each of the Brush's axes to fine-tune the shape to suit your needs.
 
 > [!NOTE]
 > Cylinder, Cone, and Pyramid brushes also include an axis of extrusion. 

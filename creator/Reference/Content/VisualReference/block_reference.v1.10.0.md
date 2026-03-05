@@ -15,17 +15,19 @@ Defines a block reference object as used by resource pack client definitions (fo
 
 ## Block Reference (v1.10.0) Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | String |  |  | 
-| states | *not set* | [States](#states) item |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| name | *not set* | String |  | 
+| states | *not set* | [States](#states) item |  | 
 
-## States
+### States
 
 #### States Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| \w*:?\w+ | *not set* | Integer number |  |  | 
-| \w*:?\w+ (Alternate 1) | *not set* | Boolean true/false |  |  | 
-| \w*:?\w+ (Alternate 2) | *not set* | String |  |  | 
+**JSON path:** `states`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| \w*:?\w+ | *not set* | Integer number |  | 
+| \w*:?\w+ (as Boolean true/false) | *not set* | Boolean true/false |  | 
+| \w*:?\w+ (as String) | *not set* | String |  | 

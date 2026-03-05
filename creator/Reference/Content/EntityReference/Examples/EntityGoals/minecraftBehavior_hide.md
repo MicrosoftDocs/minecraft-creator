@@ -18,12 +18,12 @@ Allows a mob with the hide component to attempt to move to - and hide at - an ow
 
 ## Hide Behavior Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| duration | 1 | Decimal number | Amount of time in seconds that the mob reacts. |  | 
-| poi_type | *not set* | String | Defines what POI type to hide at. |  | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
-| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal |  | 
-| timeout_cooldown | 8 | Decimal number | The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| duration | 1 | Decimal number | Amount of time in seconds that the mob reacts. | 
+| poi_type | *not set* | String | Defines what POI type to hide at. | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | 
+| timeout_cooldown | 8 | Decimal number | The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition. | 
 
 ## Samples

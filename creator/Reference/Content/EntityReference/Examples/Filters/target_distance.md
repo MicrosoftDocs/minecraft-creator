@@ -15,11 +15,11 @@ Tests the distance between the calling entity and its target.
 
 ## Target Distance Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | *not set* | Decimal number | (Required) A floating point value. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | 
+| value | *not set* | Decimal number | (Required) A floating point value. | 
 
 ### Operator choices
 

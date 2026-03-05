@@ -18,7 +18,7 @@
   "fields": [
     {
       "id": "1",
-      "title": "JSON Parse Error",
+      "title": "JSON Parse Error (Schema Validation)",
       "description": "The file could not be parsed as valid JSON. Check for syntax errors like missing commas, brackets, or quotes.",
       "howToUse": "Use a JSON validator or your editor's JSON mode to find syntax errors. Common issues include: missing or extra commas, unclosed brackets or braces, unquoted property names, and trailing commas before closing brackets.",
       "messageType": "error",

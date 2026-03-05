@@ -15,6 +15,6 @@ Sets the offset used to determine the next step distance for playing a movement 
 
 ## Movement Sound Distance Offset Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | 1 | Decimal number | The higher the number, the less often the movement sound will be played. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | 1 | Decimal number | The higher the number, the less often the movement sound will be played. | 

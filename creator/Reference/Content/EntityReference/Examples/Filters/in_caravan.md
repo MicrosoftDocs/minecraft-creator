@@ -26,9 +26,11 @@ Returns true if the subject entity is in a caravan.
 | test | *not set* | String |  | Llama: `"in_caravan"` | 
 | value | true | Boolean true/false | (Optional) true or false. |  | 
 
-## Damage Sensor
+### Damage Sensor
 
 #### Minecraft:damage sensor Properties
+
+**JSON path:** `minecraft:damage_sensor`
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

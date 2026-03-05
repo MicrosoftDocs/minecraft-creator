@@ -19,6 +19,6 @@ This item can also be represented as a `Boolean true/false`.
 
 ## Allow Off Hand Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | *not set* | Boolean true/false | Determines whether the item can be placed in the off hand slot. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | *not set* | Boolean true/false | Determines whether the item can be placed in the off hand slot. | 

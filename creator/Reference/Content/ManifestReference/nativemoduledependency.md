@@ -15,8 +15,8 @@ Declares a dependency on a built-in Script API module such as '@minecraft/server
 
 ## 3.0.0.NativeModuleDependency Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| module_name | *not set* | String |  |  | 
-| optional | false | Boolean true/false |  |  | 
-| version | *not set* | Object |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| module_name | *not set* | String |  | 
+| optional | false | Boolean true/false |  | 
+| version | *not set* | Object |  | 

@@ -15,7 +15,7 @@ Restricts entity spawning to specific Y-coordinate ranges. Useful for creating d
 
 ## Spawn HeightFilter Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max | 128 | Integer number |  |  | 
-| min | 24 | Integer number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | 128 | Integer number |  | 
+| min | 24 | Integer number |  | 

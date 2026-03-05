@@ -15,18 +15,20 @@ Defines color gradients with smooth interpolation for particle effects. Use this
 
 ## Client Particles Color Proxy Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| gradient | *not set* | Keyed set of strings |  |  | 
-| interpolant | *not set* | Keyed set of strings |  |  | 
-| interpolant (Alternate 1) | *not set* | Key/item pairs of [Interpolant](#interpolant) items |  |  | 
-| interpolant (Alternate 2) | *not set* | Decimal number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| gradient | *not set* | Keyed set of strings |  | 
+| interpolant | *not set* | Keyed set of strings |  | 
+| interpolant (Interpolant) | *not set* | Key/item pairs of [Interpolant (Interpolant)](#interpolant-interpolant) items |  | 
+| interpolant (as Decimal number) | *not set* | Decimal number |  | 
 
-## Interpolant
+### Interpolant (Interpolant)
 
 #### Interpolant Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `interpolant`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 

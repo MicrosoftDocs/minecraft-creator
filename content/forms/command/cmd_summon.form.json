@@ -216,5 +216,31 @@
     }
   ],
   "permissionLevel": 1,
-  "requiresCheats": true
+  "requiresCheats": true,
+  "commandSamples": [
+    {
+      "command": "/summon pig ~ ~ ~",
+      "description": "Summon a pig at your position"
+    },
+    {
+      "command": "/summon creeper 100 64 200",
+      "description": "Summon a creeper at specific coordinates"
+    },
+    {
+      "command": "/summon villager ~ ~2 ~ minecraft:spawn_farmer",
+      "description": "Summon a farmer villager 2 blocks above you"
+    },
+    {
+      "command": "/summon armor_stand ~ ~ ~ facing @s",
+      "description": "Summon an armor stand facing you"
+    },
+    {
+      "command": "/summon iron_golem ~ ~ ~ \"Iron Guardian\"",
+      "description": "Summon a named iron golem"
+    },
+    {
+      "command": "/summon zombie ~ ~ ~ ~ ~ minecraft:become_drowned",
+      "description": "Summon a zombie and trigger a drowned conversion event"
+    }
+  ]
 }

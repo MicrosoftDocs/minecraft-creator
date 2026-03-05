@@ -15,9 +15,9 @@ Allows players to leash entities to this entity, retrieve entities already leash
 
 ## Leashable To Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| can_retrieve_from | false | Boolean true/false | Allows players to retrieve entities that are leashed to this entity. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| can_retrieve_from | false | Boolean true/false | Allows players to retrieve entities that are leashed to this entity. | 
 
 ## Samples
 

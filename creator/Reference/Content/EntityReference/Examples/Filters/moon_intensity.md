@@ -15,11 +15,11 @@ Compares the current moon intensity with a float value in the range (0.0, 1.0).
 
 ## Moon Intensity Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | *not set* | Decimal number | (Required) A floating point value. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | 
+| value | *not set* | Decimal number | (Required) A floating point value. | 
 
 ### Operator choices
 

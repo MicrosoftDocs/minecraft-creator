@@ -15,7 +15,7 @@ Controls spawning based on distance from the nearest player. Mobs typically spaw
 
 ## Spawn DistanceFilter Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max | 128 | Integer number |  |  | 
-| min | 24 | Integer number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | 128 | Integer number |  | 
+| min | 24 | Integer number |  | 

@@ -15,7 +15,7 @@ The parameters MUST contain a material and texture.
 
 ## Client Particles Particle Effect Basic Render Parameters Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| material | *not set* | String | The material used for rendering the particle effect. |  | 
-| texture | *not set* | String | The texture path used for the particle effect. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| material | *not set* | String | The material used for rendering the particle effect. | 
+| texture | *not set* | String | The texture path used for the particle effect. | 

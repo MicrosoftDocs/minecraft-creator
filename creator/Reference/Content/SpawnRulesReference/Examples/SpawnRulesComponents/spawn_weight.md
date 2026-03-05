@@ -15,7 +15,7 @@ Defines the relative probability of this entity spawning compared to other entit
 
 ## Spawn Weight Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| default | *not set* | Integer number |  |  | 
-| rarity | 0 | Integer number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| default | *not set* | Integer number |  | 
+| rarity | 0 | Integer number |  | 

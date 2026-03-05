@@ -18,10 +18,10 @@ The description identifier of the geometry and material used to render the item 
 
 ## Item Visual Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| geometry | *not set* | Array of objects | [Required] The "minecraft:geometry" component that will be used for the item. |  | 
-| material_instances | *not set* | Array of objects | [Required] The "minecraft:material_instances" component that will be used for the item. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| geometry | *not set* | Array of objects | [Required] The "minecraft:geometry" component that will be used for the item. | 
+| material_instances | *not set* | Array of objects | [Required] The "minecraft:material_instances" component that will be used for the item. | 
 
 ## Samples
 

@@ -18,73 +18,81 @@ Places a single block in the world. The places_block field supports a single blo
 
 ## Single Block Feature Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description) item |  |  | 
-| enforce_placement_rules | *not set* | Boolean true/false | If true, enforce the block's canPlace check. |  | 
-| enforce_survivability_rules | *not set* | Boolean true/false | If true, enforce the block's canSurvive check. |  | 
-| format_version | *not set* | String |  |  | 
-| may_attach_to | *not set* | [May Attach To](#may-attach-to) item | Allowlist which specifies where the block can be placed. |  | 
-| may_not_attach_to | *not set* | [May Not Attach To](#may-not-attach-to) item | Denylist which specifies where the block can't be placed. |  | 
-| may_replace | *not set* | Array of strings |  |  | 
-| places_block | *not set* | Array of [Places Block](#places-block) items |  |  | 
-| places_block (Alternate 1) | *not set* | Object | Reference to the block to be placed. |  | 
-| places_block (Alternate 2) | *not set* | Array of strings |  |  | 
-| randomize_rotation | *not set* | Boolean true/false | If true, randomizes the block's cardinal orientation. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| description | *not set* | [Description](#description) item |  | 
+| enforce_placement_rules | *not set* | Boolean true/false | If true, enforce the block's canPlace check. | 
+| enforce_survivability_rules | *not set* | Boolean true/false | If true, enforce the block's canSurvive check. | 
+| format_version | *not set* | String |  | 
+| may_attach_to | *not set* | [May Attach To](#may-attach-to) item | Allowlist which specifies where the block can be placed. | 
+| may_not_attach_to | *not set* | [May Not Attach To](#may-not-attach-to) item | Denylist which specifies where the block can't be placed. | 
+| may_replace | *not set* | Array of strings |  | 
+| places_block | *not set* | Array of [Places Block](#places-block) items |  | 
+| places_block (as Object) | *not set* | Object | Reference to the block to be placed. | 
+| places_block (as Array of strings) | *not set* | Array of strings |  | 
+| randomize_rotation | *not set* | Boolean true/false | If true, randomizes the block's cardinal orientation. | 
 
-## Description
+### Description
 
 #### Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
+**JSON path:** `description`
 
-## May Attach To
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. | 
+
+### May Attach To
 
 #### May Attach To Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| all | *not set* | Array of strings |  |  | 
-| auto_rotate | *not set* | Boolean true/false | Automatically rotate the block to attach sensibly. This setting is ignored if 'randomize_rotation' is enabled. |  | 
-| bottom | *not set* | Array of strings |  |  | 
-| diagonal | *not set* | Array of strings |  |  | 
-| east | *not set* | Array of strings |  |  | 
-| min_sides_must_attach | *not set* | Integer number | Number of side faces that need to pass the attach conditions before the block can be placed. Default value is four. |  | 
-| north | *not set* | Array of strings |  |  | 
-| sides | *not set* | Array of strings |  |  | 
-| south | *not set* | Array of strings |  |  | 
-| top | *not set* | Array of strings |  |  | 
-| west | *not set* | Array of strings |  |  | 
+**JSON path:** `may_attach_to`
 
-## May Not Attach To
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| all | *not set* | Array of strings |  | 
+| auto_rotate | *not set* | Boolean true/false | Automatically rotate the block to attach sensibly. This setting is ignored if 'randomize_rotation' is enabled. | 
+| bottom | *not set* | Array of strings |  | 
+| diagonal | *not set* | Array of strings |  | 
+| east | *not set* | Array of strings |  | 
+| min_sides_must_attach | *not set* | Integer number | Number of side faces that need to pass the attach conditions before the block can be placed. Default value is four. | 
+| north | *not set* | Array of strings |  | 
+| sides | *not set* | Array of strings |  | 
+| south | *not set* | Array of strings |  | 
+| top | *not set* | Array of strings |  | 
+| west | *not set* | Array of strings |  | 
+
+### May Not Attach To
 
 #### May Not Attach To Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| all | *not set* | Array of strings |  |  | 
-| bottom | *not set* | Array of strings |  |  | 
-| diagonal | *not set* | Array of strings |  |  | 
-| east | *not set* | Array of strings |  |  | 
-| north | *not set* | Array of strings |  |  | 
-| sides | *not set* | Array of strings |  |  | 
-| south | *not set* | Array of strings |  |  | 
-| top | *not set* | Array of strings |  |  | 
-| west | *not set* | Array of strings |  |  | 
+**JSON path:** `may_not_attach_to`
 
-## Places Block
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| all | *not set* | Array of strings |  | 
+| bottom | *not set* | Array of strings |  | 
+| diagonal | *not set* | Array of strings |  | 
+| east | *not set* | Array of strings |  | 
+| north | *not set* | Array of strings |  | 
+| sides | *not set* | Array of strings |  | 
+| south | *not set* | Array of strings |  | 
+| top | *not set* | Array of strings |  | 
+| west | *not set* | Array of strings |  | 
+
+### Places Block
 
 #### Places Block Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| block | *not set* | Object | Reference to the block to be placed. |  | 
+**JSON path:** `places_block`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| block | *not set* | Object | Reference to the block to be placed. | 
 
 ## Samples
 
-#### [Example](example)
+#### Example
 
 
 ```json

@@ -15,6 +15,6 @@ A Minecraft Bedrock Edition feature definition document. Features are world gene
 
 ## Feature Document Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| format_version | *not set* | Version | The format version of this feature file. Use '1.13.0' or later. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| format_version | *not set* | Version | The format version of this feature file. Use '1.13.0' or later. | 

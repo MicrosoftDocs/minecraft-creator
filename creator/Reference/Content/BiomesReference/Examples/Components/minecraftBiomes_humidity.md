@@ -15,6 +15,6 @@ Forces a biome to ether always be humid or never humid. Humidity effects the spr
 
 ## Biome Humidity Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| is_humid | *not set* | Boolean true/false |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| is_humid | *not set* | Boolean true/false |  | 

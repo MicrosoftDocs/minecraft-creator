@@ -19,6 +19,6 @@ This item can also be represented as a `String`.
 
 ## Hover Text Color Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | *not set* | String | The color of the item hover text. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | *not set* | String | The color of the item hover text. | 

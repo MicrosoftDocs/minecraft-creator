@@ -15,7 +15,7 @@ Set the dry foliage color used during rendering. Biomes without this component w
 
 ## Client Biome Dry Foliage Color Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| color | *not set* | String | RGB color of dry foliage |  | 
-| color (Alternate 1) | *not set* | Array of numbers |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| color | *not set* | String | RGB color of dry foliage | 
+| color (as Array of numbers) | *not set* | Array of numbers |  | 

@@ -19,7 +19,7 @@ Defines the way an entity can get into the 'bribed' state.
 |:----------|:-------------|:----|:-----------|:------------- |
 | bribe_cooldown | 2 | Decimal number | Time in seconds before the Entity can be bribed again. |  | 
 | bribe_items | *not set* | Array of strings | The list of items that can be used to bribe the entity. Can be an array or a single item string. | Dolphin: `["fish","salmon"]` | 
-| bribe_items (Alternate 1) | *not set* | String |  |  | 
+| bribe_items (as String) | *not set* | String |  |  | 
 
 ## Samples
 

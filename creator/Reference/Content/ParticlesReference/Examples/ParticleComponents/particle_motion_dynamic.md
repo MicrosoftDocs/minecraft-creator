@@ -15,53 +15,42 @@ Applies physics simulation to particle movement including gravity, acceleration,
 
 ## Client Particles Particle Motion Dynamic Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| linear_acceleration | [0, 0, 0] | Molang array | The linear acceleration of particles, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. |  | 
-| linear_acceleration (Alternate 1) | *not set* | Key/item pairs of [Linear Acceleration](#linear-acceleration) items |  |  | 
-| linear_acceleration (Alternate 2) | *not set* | Decimal number |  |  | 
-| linear_drag_coefficient | 0 | Molang | The drag coefficient applied to particle motion. Can be a number or Molang expression. |  | 
-| linear_drag_coefficient (Alternate 1) | *not set* | Key/item pairs of [Linear Drag Coefficient](#linear-drag-coefficient) items |  |  | 
-| linear_drag_coefficient (Alternate 2) | *not set* | Decimal number |  |  | 
-| rotation_acceleration | 0 | Molang | The rotation acceleration. Can be a number or Molang expression. |  | 
-| rotation_acceleration (Alternate 1) | *not set* | Key/item pairs of [Rotation Acceleration](#rotation-acceleration) items |  |  | 
-| rotation_acceleration (Alternate 2) | *not set* | Decimal number |  |  | 
-| rotation_drag_coefficient | 0 | Molang | The rotation drag coefficient. Can be a number or Molang expression. |  | 
-| rotation_drag_coefficient (Alternate 1) | *not set* | Key/item pairs of [Rotation Drag Coefficient](#rotation-drag-coefficient) items |  |  | 
-| rotation_drag_coefficient (Alternate 2) | *not set* | Decimal number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| linear_acceleration | [0, 0, 0] | Molang array | The linear acceleration of particles, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
+| linear_acceleration (Linear Acceleration) | *not set* | Key/item pairs of [Linear Acceleration (Linear Acceleration)](#linear-acceleration-linear-acceleration) items |  | 
+| linear_acceleration (as Decimal number) | *not set* | Decimal number |  | 
+| linear_drag_coefficient | 0 | Molang | The drag coefficient applied to particle motion. Can be a number or Molang expression. | 
+| linear_drag_coefficient (Linear Drag Coefficient) | *not set* | Key/item pairs of [Linear Drag Coefficient (Linear Drag Coefficient)](#linear-drag-coefficient-linear-drag-coefficient) items |  | 
+| linear_drag_coefficient (as Decimal number) | *not set* | Decimal number |  | 
+| rotation_acceleration | 0 | Molang | The rotation acceleration. Can be a number or Molang expression. | 
+| rotation_acceleration (Rotation Acceleration) | *not set* | Key/item pairs of [Rotation Acceleration (Rotation Acceleration)](#rotation-acceleration-rotation-acceleration) items |  | 
+| rotation_acceleration (as Decimal number) | *not set* | Decimal number |  | 
+| rotation_drag_coefficient | 0 | Molang | The rotation drag coefficient. Can be a number or Molang expression. | 
+| rotation_drag_coefficient (Rotation Drag Coefficient) | *not set* | Key/item pairs of [Rotation Drag Coefficient (Rotation Drag Coefficient)](#rotation-drag-coefficient-rotation-drag-coefficient) items |  | 
+| rotation_drag_coefficient (as Decimal number) | *not set* | Decimal number |  | 
 
-## Linear Acceleration
+### Linear Acceleration (Linear Acceleration)
 
 #### Linear Acceleration Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `linear_acceleration`
 
-## Linear Drag Coefficient
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
-#### Linear Drag Coefficient Properties
+### Linear Drag Coefficient (Linear Drag Coefficient)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+Same structure as [Linear Acceleration (Linear Acceleration)](#linear-acceleration-linear-acceleration).
 
-## Rotation Acceleration
 
-#### Rotation Acceleration Properties
+### Rotation Acceleration (Rotation Acceleration)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+Same structure as [Linear Acceleration (Linear Acceleration)](#linear-acceleration-linear-acceleration).
 
-## Rotation Drag Coefficient
 
-#### Rotation Drag Coefficient Properties
+### Rotation Drag Coefficient (Rotation Drag Coefficient)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+Same structure as [Linear Acceleration (Linear Acceleration)](#linear-acceleration-linear-acceleration).

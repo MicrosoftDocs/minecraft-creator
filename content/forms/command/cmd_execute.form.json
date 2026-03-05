@@ -706,5 +706,31 @@
     }
   ],
   "permissionLevel": 1,
-  "requiresCheats": true
+  "requiresCheats": true,
+  "commandSamples": [
+    {
+      "command": "/execute as @a at @s run setblock ~ ~-1 ~ glowstone",
+      "description": "Place glowstone under every player"
+    },
+    {
+      "command": "/execute at @e[type=creeper] run fill ~-1 ~ ~-1 ~1 ~2 ~1 air",
+      "description": "Clear blocks around every creeper"
+    },
+    {
+      "command": "/execute as @a[scores={points=10..}] run say I have 10+ points!",
+      "description": "Make players with 10+ points say a message"
+    },
+    {
+      "command": "/execute if block ~ ~-1 ~ diamond_ore run give @s diamond",
+      "description": "Give yourself a diamond if standing on diamond ore"
+    },
+    {
+      "command": "/execute positioned 0 64 0 run summon pig ~ ~ ~",
+      "description": "Summon a pig at position (0, 64, 0)"
+    },
+    {
+      "command": "/execute as @e[type=villager] at @s if block ~ ~-1 ~ water run tp @s ~ ~1 ~",
+      "description": "Teleport villagers standing in water one block up"
+    }
+  ]
 }

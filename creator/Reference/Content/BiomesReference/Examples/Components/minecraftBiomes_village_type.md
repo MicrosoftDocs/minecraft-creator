@@ -15,9 +15,9 @@ Determines the type of village for the Biome.
 
 ## Biome Village Type Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| type | *not set* | [Type](#type-choices) choices |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| type | *not set* | [Type](#type-choices) choices |  | 
 
 ### Type choices
 

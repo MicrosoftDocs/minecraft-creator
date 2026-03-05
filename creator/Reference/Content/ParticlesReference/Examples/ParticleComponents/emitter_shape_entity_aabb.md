@@ -15,8 +15,8 @@ Emits particles from random positions within the attached entity's axis-aligned 
 
 ## Client Particles Emitter Shape Entity Aabb Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. |  | 
-| direction (Alternate 1) | *not set* | Molang array |  |  | 
-| surface_only | false | Boolean true/false |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. | 
+| direction (as Molang array) | *not set* | Molang array |  | 
+| surface_only | false | Boolean true/false |  | 

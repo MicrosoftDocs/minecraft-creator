@@ -15,6 +15,6 @@ JigsawStructureProcessorList Description.
 
 ## JigsawStructureProcessorList Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | Identifier of the Processor List. This is referenced by Template Pools when pairing processors with Structure Templates. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | Identifier of the Processor List. This is referenced by Template Pools when pairing processors with Structure Templates. | 

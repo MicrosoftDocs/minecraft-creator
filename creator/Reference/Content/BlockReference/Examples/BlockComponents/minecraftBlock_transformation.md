@@ -15,10 +15,10 @@ The block's translation, rotation and scale with respect to the center of its wo
 
 ## Transformation Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| rotation | *not set* | Array of strings | The block's rotation in increments of 90 degrees |  | 
-| rotation_pivot | *not set* | x, y, z coordinate array | The point to apply rotation around |  | 
-| scale | *not set* | x, y, z coordinate array | The block's scale |  | 
-| scale_pivot | *not set* | x, y, z coordinate array | The point to apply scale around |  | 
-| translation | *not set* | x, y, z coordinate array | The block's translation |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| rotation | *not set* | Array of strings | The block's rotation in increments of 90 degrees | 
+| rotation_pivot | *not set* | x, y, z coordinate array | The point to apply rotation around | 
+| scale | *not set* | x, y, z coordinate array | The block's scale | 
+| scale_pivot | *not set* | x, y, z coordinate array | The point to apply scale around | 
+| translation | *not set* | x, y, z coordinate array | The block's translation | 

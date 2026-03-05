@@ -26,16 +26,18 @@ Adds a rider to the entity.
 | riders | [] | [Riders](#entity-rider-data) item | List of riders to be added to the entity. Can only spawn as many riders as "minecraft:rideable" has "seat_count". | Cave Spider: `[{"entity_type":"minecraft:bogged"}]`, `[{"entity_type":"minecraft:wither_skeleton"}]` | 
 | spawn_event | *not set* | Minecraft Event Reference | Trigger event when a rider is acquired |  | 
 
-## Entity Rider Data
+### Entity Rider Data
 List of riders to be added to the entity. Must have no more riders than "minecraft:rideable" has "seat_count".
 
 
 #### Entity Rider Data Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| entity_type | *not set* | String | The entity type that will be riding this entity. |  | 
-| spawn_event |  | String | The spawn event that will be used when the riding entity is created. |  | 
+**JSON path:** `riders`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| entity_type | *not set* | String | The entity type that will be riding this entity. | 
+| spawn_event |  | String | The spawn event that will be used when the riding entity is created. | 
 
 ## Samples
 

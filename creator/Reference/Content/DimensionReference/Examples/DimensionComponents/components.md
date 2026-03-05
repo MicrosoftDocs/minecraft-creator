@@ -15,28 +15,32 @@ Specifies the components that define dimension properties such as bounds and gen
 
 ## Dimension Components Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| minecraft:dimension_bounds | {"max":0,"min":0} | [Dimension Bounds](#dimension-bounds) item |  |  | 
-| minecraft:generation | *not set* | [Generation](#dimension-generation) item |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| minecraft:dimension_bounds | {"max":0,"min":0} | [Dimension Bounds](#dimension-bounds) item |  | 
+| minecraft:generation | *not set* | [Generation](#dimension-generation) item |  | 
 
-## Dimension Bounds
+### Dimension Bounds
 Defines the minimum and maximum vertical bounds for a dimension.
 
 
 #### Dimension Bounds Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max | *not set* | Integer number |  |  | 
-| min | *not set* | Integer number |  |  | 
+**JSON path:** `minecraft:dimension_bounds`
 
-## Dimension Generation
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | *not set* | Integer number |  | 
+| min | *not set* | Integer number |  | 
+
+### Dimension Generation
 Specifies the generator type used for world generation in the dimension.
 
 
 #### Dimension Generation Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| generator_type | *not set* | String |  |  | 
+**JSON path:** `minecraft:generation`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| generator_type | *not set* | String |  | 

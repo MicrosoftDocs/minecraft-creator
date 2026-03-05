@@ -16,7 +16,11 @@ Experimental toggles required: Upcoming Creator Features (in format versions bef
 
 ## Redstone Consumer Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| min_power | 0 | Integer number | Optional minimum value for incoming signal strength. If signal strength is greater than or equal to this value then the 'onRedstoneUpdate' event is sent to Scripts. Defaults to 0 meaning event is always emitted. |  | 
-| propagates_power | false | Boolean true/false | Optional Boolean to control whether a signal can pass through this block or not, defaults to false. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| min_power | 0 | Integer number | Optional minimum value for incoming signal strength. | 
+| propagates_power | false | Boolean true/false | Optional Boolean to control whether a signal can pass through this block or not, defaults to false. | 
+
+### min_power
+
+Optional minimum value for incoming signal strength. If signal strength is greater than or equal to this value then the 'onRedstoneUpdate' event is sent to Scripts. Defaults to 0 meaning event is always emitted.

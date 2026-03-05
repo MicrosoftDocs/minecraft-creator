@@ -15,48 +15,60 @@ Defines a template pool containing structure elements that can be connected via 
 
 ## Template Pool Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| format_version | *not set* | String | The format version of this template pool definition. |  | 
-| minecraft:template_pool | *not set* | [Template Pool](#template-pool) item | The template pool definition. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| format_version | *not set* | String | The format version of this template pool definition. | 
+| minecraft:template_pool | *not set* | [Template Pool](#template-pool) item | The template pool definition. | 
 
-## Template Pool
+### Template Pool
 
 #### Template Pool Definition Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#jigsawstructuretemplatepool-description) item | The description block containing the template pool identifier. |  | 
-| elements | *not set* | Array of [Elements](#elements) items | Array of pool elements that can be selected when generating structures. |  | 
-| fallback | *not set* | String | Optional fallback pool identifier to use when no elements can be placed. |  | 
+**JSON path:** `minecraft:template_pool`
 
-## JigsawStructureTemplatePool Description
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| description | *not set* | [Description](#jigsawstructuretemplatepool-description) item | The description block containing the template pool identifier. | 
+| elements | *not set* | Array of [Elements](#elements) items | Array of pool elements that can be selected when generating structures. | 
+| fallback | *not set* | String | Optional fallback pool identifier to use when no elements can be placed. | 
+
+#### JigsawStructureTemplatePool Description
 JigsawStructureTemplatePool Description.
 
 
-#### JigsawStructureTemplatePool Description Properties
+##### JigsawStructureTemplatePool Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | Identifier of the template pool. Used by Jigsaw Structures to assign processors to Structure Templates. |  | 
+**JSON path:** `minecraft:template_pool > description`
 
-## Elements
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | Identifier of the template pool. Used by Jigsaw Structures to assign processors to Structure Templates. | 
 
-#### Pool Element Entry Properties
+#### Elements
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| element | *not set* | [Element](#element) item | The structure element configuration. |  | 
-| weight | 1 | Integer number | The relative weight for selecting this element. Higher weights are more likely to be chosen. |  | 
+##### Pool Element Entry Properties
 
-## Element
+**JSON path:** `minecraft:template_pool > elements`
 
-#### Pool Element Properties
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| element | *not set* | [Element](#element) item | The structure element configuration. | 
+| weight | 1 | Integer number | The relative weight for selecting this element. Higher weights are more likely to be chosen. | 
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| element_type | *not set* | String | The type of pool element. Valid values: 'minecraft:single_pool_element', 'minecraft:list_pool_element', 'minecraft:feature_pool_element', 'minecraft:empty_pool_element', 'minecraft:legacy_single_pool_element'. |  | 
-| location | *not set* | String | Path to the structure template file, relative to the structures folder. |  | 
-| processors | *not set* | String | Identifier of the processor list to apply to this element, or inline processor configuration. |  | 
-| processors (Alternate 1) | *not set* | Object | Inline processor configuration. |  | 
-| projection | rigid | String | How the element projects onto terrain. Valid values: 'rigid', 'terrain_matching'. |  | 
+##### Element
+
+###### Pool Element Properties
+
+**JSON path:** `minecraft:template_pool > elements > element`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| element_type | *not set* | String | The type of pool element. | 
+| location | *not set* | String | Path to the structure template file, relative to the structures folder. | 
+| processors | *not set* | String | Identifier of the processor list to apply to this element, or inline processor configuration. | 
+| processors (as Object) | *not set* | Object | Inline processor configuration. | 
+| projection | rigid | String | How the element projects onto terrain. Valid values: 'rigid', 'terrain_matching'. | 
+
+###### element_type
+
+The type of pool element. Valid values: 'minecraft:single_pool_element', 'minecraft:list_pool_element', 'minecraft:feature_pool_element', 'minecraft:empty_pool_element', 'minecraft:legacy_single_pool_element'.

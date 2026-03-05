@@ -37,16 +37,18 @@ Compels the entity to track anger towards a set of nuisances.
 | remove_targets_below_angry_threshold | true | Boolean true/false | Defines if the mob should remove target if it falls below 'angry' threshold | Warden: `true` | 
 | sound_interval | *not set* | Range of integers | Anger boost applied to angry threshold when the entity gets angry. |  | 
 
-## Increase Sounds
+### Increase Sounds
 Sounds to play when the entity is getting provoked. Evaluated in order. First matching condition wins.
 
 
 #### Increase Sounds Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| condition | *not set* | String | A Molang expression describing under which conditions to play this sound, given that the entity was provoked |  | 
-| sound | *not set* | String | The sound to play |  | 
+**JSON path:** `on_increase_sounds`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| condition | *not set* | String | A Molang expression describing under which conditions to play this sound, given that the entity was provoked | 
+| sound | *not set* | String | The sound to play | 
 
 ## Samples
 

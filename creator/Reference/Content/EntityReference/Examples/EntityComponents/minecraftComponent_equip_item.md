@@ -20,13 +20,15 @@ The entity puts on the desired equipment.
 | can_wear_armor | false | Boolean true/false | If true, the entity can pick up and wear armor items from the ground. |  | 
 | excluded_items | *not set* | Array of [Excluded Items](#excluded-items) items | List of items that the entity should not equip. | Bogged: `[{"item":"minecraft:banner:15"}]` | 
 
-## Excluded Items
+### Excluded Items
 
 #### Excluded Item Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| item | *not set* | String |  |  | 
+**JSON path:** `excluded_items`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| item | *not set* | String |  | 
 
 ## Samples
 

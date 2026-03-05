@@ -15,32 +15,29 @@ Emits particles from random positions within a rectangular box volume. Define th
 
 ## Client Particles Emitter Shape Box Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. |  | 
-| direction (Alternate 1) | *not set* | Molang array |  |  | 
-| half_dimensions | *not set* | Molang array | The half dimensions of the box, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. |  | 
-| half_dimensions (Alternate 1) | *not set* | Key/item pairs of [Half Dimensions](#half-dimensions) items |  |  | 
-| half_dimensions (Alternate 2) | *not set* | Decimal number |  |  | 
-| offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. |  | 
-| offset (Alternate 1) | *not set* | Key/item pairs of [Offset](#offset) items |  |  | 
-| offset (Alternate 2) | *not set* | Decimal number |  |  | 
-| surface_only | false | Boolean true/false |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. | 
+| direction (as Molang array) | *not set* | Molang array |  | 
+| half_dimensions | *not set* | Molang array | The half dimensions of the box, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
+| half_dimensions (Half Dimensions) | *not set* | Key/item pairs of [Half Dimensions (Half Dimensions)](#half-dimensions-half-dimensions) items |  | 
+| half_dimensions (as Decimal number) | *not set* | Decimal number |  | 
+| offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
+| offset (Offset) | *not set* | Key/item pairs of [Offset (Offset)](#offset-offset) items |  | 
+| offset (as Decimal number) | *not set* | Decimal number |  | 
+| surface_only | false | Boolean true/false |  | 
 
-## Half Dimensions
+### Half Dimensions (Half Dimensions)
 
 #### Half Dimensions Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `half_dimensions`
 
-## Offset
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
-#### Offset Properties
+### Offset (Offset)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+Same structure as [Half Dimensions (Half Dimensions)](#half-dimensions-half-dimensions).

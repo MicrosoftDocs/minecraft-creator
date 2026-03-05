@@ -15,7 +15,7 @@ The description block that identifies which entity these spawn rules apply to, v
 
 ## Spawn Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String |  |  | 
-| population_control |  | String |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String |  | 
+| population_control |  | String |  | 

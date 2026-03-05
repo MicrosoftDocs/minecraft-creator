@@ -15,17 +15,19 @@ Allows manual control over particle emission through events rather than automati
 
 ## Client Particles Emitter Rate Manual Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max_particles | *not set* | Molang | The maximum number of particles that can exist at once. Can be a number or Molang expression. |  | 
-| max_particles (Alternate 1) | *not set* | Key/item pairs of [Max Particles](#max-particles) items |  |  | 
-| max_particles (Alternate 2) | *not set* | Decimal number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max_particles | *not set* | Molang | The maximum number of particles that can exist at once. Can be a number or Molang expression. | 
+| max_particles (Max Particles) | *not set* | Key/item pairs of [Max Particles (Max Particles)](#max-particles-max-particles) items |  | 
+| max_particles (as Decimal number) | *not set* | Decimal number |  | 
 
-## Max Particles
+### Max Particles (Max Particles)
 
 #### Max Particles Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `max_particles`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 

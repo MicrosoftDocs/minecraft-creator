@@ -15,34 +15,38 @@ A brewing recipe for Minecraft Bedrock Edition. Brewing recipes define how potio
 
 ## Brewing Mix Recipe Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| format_version | *not set* | Version | The format version of this recipe file. |  | 
-| minecraft:recipe_brewing_mix | *not set* | [Recipe Brewing Mix](#recipe-brewing-mix) item | The brewing mix recipe definition container. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| format_version | *not set* | Version | The format version of this recipe file. | 
+| minecraft:recipe_brewing_mix | *not set* | [Recipe Brewing Mix](#recipe-brewing-mix) item | The brewing mix recipe definition container. | 
 
-## Recipe Brewing Mix
+### Recipe Brewing Mix
 
 #### Recipe Brewing Mix Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description) item | The recipe description containing identifier. |  | 
-| input | *not set* | String | The input potion type (e.g., 'minecraft:potion_type:awkward'). |  | 
-| output | *not set* | String | The output potion type (e.g., 'minecraft:potion_type:strength'). |  | 
-| reagent | *not set* | String | The reagent item that modifies the potion (e.g., 'minecraft:blaze_powder'). |  | 
-| tags | *not set* | Array of strings | Tags that specify this is a brewing_stand recipe. |  | 
+**JSON path:** `minecraft:recipe_brewing_mix`
 
-## Description
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| description | *not set* | [Description](#description) item | The recipe description containing identifier. | 
+| input | *not set* | String | The input potion type (e.g., 'minecraft:potion_type:awkward'). | 
+| output | *not set* | String | The output potion type (e.g., 'minecraft:potion_type:strength'). | 
+| reagent | *not set* | String | The reagent item that modifies the potion (e.g., 'minecraft:blaze_powder'). | 
+| tags | *not set* | Array of strings | Tags that specify this is a brewing_stand recipe. | 
 
-#### Description Properties
+#### Description
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The unique identifier for this recipe. |  | 
+##### Description Properties
+
+**JSON path:** `minecraft:recipe_brewing_mix > description`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The unique identifier for this recipe. | 
 
 ## Samples
 
-#### [Strength](strength)
+#### Strength
 
 
 ```json

@@ -15,8 +15,8 @@ BlockCulling Contents.
 
 ## BlockCulling Contents Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| bone | *not set* | String | bone |  | 
-| cube | *not set* | Integer number | cube |  | 
-| face | *not set* | String | Facing |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| bone | *not set* | String | bone | 
+| cube | *not set* | Integer number | cube | 
+| face | *not set* | String | Facing | 

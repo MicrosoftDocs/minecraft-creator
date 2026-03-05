@@ -418,9 +418,9 @@
             href: Documents/NPCDialogue.md
           - name: NPC DialogueDesigner
             href: Documents/NPCDialogueDesigner.md
-        - name: Loot Tables
+        - name: Loot and Trade Tables
           items:  
-          - name: Introduction to Loot Tables
+          - name: Introduction to Loot and Trade Tables
             href: Documents/IntroductionToLootTables.md
           - name: Loot and Trade Table Functions
             href: Documents/LootAndTradeTableFunctions.md
@@ -430,6 +430,8 @@
             href: Documents/LootTableConditions.md
           - name: Creating a Loot Table
             href: Documents/CreateLootTable.md
+          - name: Creating a Trade Table
+            href: Documents/CreateTradeTable.md
         - name: Introduction to Particles
           href: Reference/Content/ParticlesReference/ParticlesIntroduction.md
         - name: Particle Effects
@@ -470,6 +472,8 @@
             href: Documents/AdvancedCustomBlocks.md
           - name: Using Block Traits
             href: Documents/intro-block-traits.md
+          - name: Create a Multi-Block
+            href: Documents/multi-blocks.md
           - name: Item Display Transforms
             href: Reference/Content/blockreference/Examples/ItemDisplayTransforms.md
           - name: Customizing the Item for a Block
@@ -547,6 +551,16 @@
                 href: Documents/BedrockEditor/EditorSummonTool.md
               - name: Farm Tool
                 href: Documents/BedrockEditor/EditorFarmTool.md
+              - name: Flood
+                href: Documents/BedrockEditor/EditorFlood.md
+              - name: Chunk Management
+                href: Documents/BedrockEditor/EditorChunkManagement.md
+              - name: Camera Tool
+                href: Documents/BedrockEditor/EditorCameraTool.md
+              - name: Jigsaws
+                href: Documents/BedrockEditor/EditorJigsaws.md
+              - name: Scale Tool
+                href: Documents/BedrockEditor/EditorScaleTool.md
               - name: Inspectors and Panels
                 items:
                 - name: Block Inspector
@@ -596,7 +610,7 @@
     - name: Reference Documentation
       items:
       - name: Commands
-        href: Commands/TOC.yml
+        href: Reference/Content/CommandsReference/Examples/Commands/TOC.yml
       - name: Script APIs
         href: ScriptAPI/TOC.yml
       - name: Prior Versions of Script APIs
@@ -791,6 +805,8 @@
             href: Reference/Content/MolangReference/Examples/MolangConcepts/QueryFunctions.md
           - name: Molang Math Function Reference
             href: Reference/Content/MolangReference/Examples/MolangConcepts/MathFunctions.md
+      - name: Deep Link Handlers
+        href: Reference/Content/deep-links.md
       - name: Default Minecraft Listings
         href: Reference/Content/VanillaListingsReference/TOC.yml
       - name: Raw Message JSON

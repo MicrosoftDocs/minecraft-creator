@@ -15,9 +15,9 @@ Allows the mob to open doors. Requires the mob to be able to path through doors,
 
 ## Open Door Behavior Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| close_door_after | true | Boolean true/false | If true, the mob will close the door after opening it and going through it |  | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| close_door_after | true | Boolean true/false | If true, the mob will close the door after opening it and going through it | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
 
 ## Samples

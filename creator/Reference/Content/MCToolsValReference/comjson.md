@@ -12,13 +12,13 @@ Validates JSON files against their corresponding schemas based on item type. Rep
 ## Rules Summary
 | Rule ID | Rule | Severity | Auto-Fix |
 |:--------|:-----|:---------|:---------|
-| [COMJSON1](#comjson1) | JSON Parse Error | 🔴 Error |  |
+| [COMJSON1](#comjson1) | JSON Parse Error (Community Schema) | 🔴 Error |  |
 
 ---
 ## Rule Details
 
 ### COMJSON1
-**🔴 JSON Parse Error**  
+**🔴 JSON Parse Error (Community Schema)**  
 **Severity**: Error
 
 #### What This Checks

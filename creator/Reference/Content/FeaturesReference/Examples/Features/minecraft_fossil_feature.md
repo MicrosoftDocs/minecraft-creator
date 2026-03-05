@@ -15,23 +15,25 @@ Generates a skeletal structure composed of bone blocks and parametric ore blocks
 
 ## Fossil Feature Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description) item |  |  | 
-| format_version | *not set* | String |  |  | 
-| max_empty_corners | *not set* | Integer number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| description | *not set* | [Description](#description) item |  | 
+| format_version | *not set* | String |  | 
+| max_empty_corners | *not set* | Integer number |  | 
 
-## Description
+### Description
 
 #### Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
+**JSON path:** `description`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. | 
 
 ## Samples
 
-#### [Example](example)
+#### Example
 
 
 ```json

@@ -15,6 +15,6 @@ Modifier that leaves the state unchanged. This is the default block modifier if 
 
 ## JigsawStructure ProcessorRule Passthrough Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| type | *not set* | String | The type of block entity modifier. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| type | *not set* | String | The type of block entity modifier. | 

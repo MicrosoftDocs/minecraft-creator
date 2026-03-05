@@ -15,9 +15,9 @@ Allows an entity to charge and use their held item.
 
 ## Charge Held Item Behavior Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| items | NA | Array of strings | The list of items that can be used to charge the held item. This list is required and must have at least one item in it. |  | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| items | NA | Array of strings | The list of items that can be used to charge the held item. This list is required and must have at least one item in it. | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
 
 ## Samples

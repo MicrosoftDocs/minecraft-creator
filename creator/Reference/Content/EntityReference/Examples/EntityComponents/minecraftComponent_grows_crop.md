@@ -15,9 +15,9 @@ Could increase crop growth when entity walks over crop.
 
 ## Grows Crop Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| chance | 0 | Decimal number | Value between 0-1. Chance of success per tick. |  | 
-| charges | 10 | Integer number | Number of charges |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| chance | 0 | Decimal number | Value between 0-1. Chance of success per tick. | 
+| charges | 10 | Integer number | Number of charges | 
 
 ## Samples

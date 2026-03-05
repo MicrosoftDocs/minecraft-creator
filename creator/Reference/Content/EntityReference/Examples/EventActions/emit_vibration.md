@@ -15,9 +15,9 @@ Allows the entity to emit a vibration having the entity itself as its source.
 
 ## Emit Vibration Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| vibration | *not set* | [Vibration](#vibration-choices) choices | Type of vibration to emit. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| vibration | *not set* | [Vibration](#vibration-choices) choices | Type of vibration to emit. | 
 
 ### Vibration choices
 

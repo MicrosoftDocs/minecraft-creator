@@ -15,6 +15,6 @@ Sets the distance through which the entity can push through.
 
 ## Push Through Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | 0 | Decimal number | The value of the entity's push-through, in blocks. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | 0 | Decimal number | The value of the entity's push-through, in blocks. | 

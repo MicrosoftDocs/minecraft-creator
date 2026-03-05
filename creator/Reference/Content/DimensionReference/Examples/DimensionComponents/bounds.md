@@ -15,7 +15,7 @@ Defines the minimum and maximum vertical bounds for a dimension.
 
 ## Dimension Bounds Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max | *not set* | Integer number |  |  | 
-| min | *not set* | Integer number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | *not set* | Integer number |  | 
+| min | *not set* | Integer number |  | 

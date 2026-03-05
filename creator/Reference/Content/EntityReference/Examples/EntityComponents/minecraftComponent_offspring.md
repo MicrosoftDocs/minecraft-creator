@@ -27,29 +27,33 @@ Defines the way an entity can create a born offspring.
 | random_extra_variant_mutation_interval | 0 | Range of integers | Range used to determine random extra variant. |  | 
 | random_variant_mutation_interval | 0 | Range of integers | Range used to determine random variant. |  | 
 
-## Deny Parents Variant
+### Deny Parents Variant
 Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead.
 
 
 #### Deny Parents Variant Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| chance | 0 | Decimal number | The percentage chance of denying the parents' variant. |  | 
-| max_variant | 0 | Integer number | The inclusive maximum of the variant range. |  | 
-| min_variant | 0 | Integer number | The inclusive minimum of the variant range. |  | 
+**JSON path:** `deny_parents_variant`
 
-## Mutation Factor
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| chance | 0 | Decimal number | The percentage chance of denying the parents' variant. | 
+| max_variant | 0 | Integer number | The inclusive maximum of the variant range. | 
+| min_variant | 0 | Integer number | The inclusive minimum of the variant range. | 
+
+### Mutation Factor
 Determines how likely the babies are to NOT inherit one of their parent's variances. Values are between 0.0 and 1.0, with a higher number meaning more likely to mutate.
 
 
 #### Mutation Factor Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| color | 0 | Decimal number | The percentage chance of the offspring getting its color as if spawned rather than inheriting color from its parents. |  | 
-| extra_variant | 0 | Decimal number | The percentage chance of a mutation on the entity's extra variant type. |  | 
-| variant | 0 | Decimal number | The percentage chance of a mutation on the entity's variant type. |  | 
+**JSON path:** `mutation_factor`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| color | 0 | Decimal number | The percentage chance of the offspring getting its color as if spawned rather than inheriting color from its parents. | 
+| extra_variant | 0 | Decimal number | The percentage chance of a mutation on the entity's extra variant type. | 
+| variant | 0 | Decimal number | The percentage chance of a mutation on the entity's variant type. | 
 
 ## Samples
 

@@ -16,6 +16,10 @@ Experimental toggles required: Upcoming Creator Features.
 
 ## Chest Obstruction Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| obstruction_rule | shape | String | [optional] How the block should be evaluated by a chest during chest opening. Must be one of the following options:<br>"always" - Will always oba chest from opening when directly above it.<br>"never" - Will never obstruct a chest from opening when directly above it.<br>"shape" - Will use the Blocks AABB shape to determine if the chest is obstructed from opening when directly above it; this is the default value if no rule is provided. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| obstruction_rule | shape | String | [optional] How the block should be evaluated by a chest during chest opening. | 
+
+### obstruction_rule
+
+[optional] How the block should be evaluated by a chest during chest opening. Must be one of the following options: "always" - Will always oba chest from opening when directly above it. "never" - Will never obstruct a chest from opening when directly above it. "shape" - Will use the Blocks AABB shape to determine if the chest is obstructed from opening when directly above it; this is the default value if no rule is provided.

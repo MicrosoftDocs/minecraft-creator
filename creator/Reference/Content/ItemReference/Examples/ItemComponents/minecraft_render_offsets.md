@@ -18,7 +18,7 @@ Render offsets component: optional values can be given to offset the way the ite
 
 ## Render Offsets Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| main_hand | *not set* | Object | Main hand transform data. |  | 
-| off_hand | *not set* | Object | Offhand hand transform data. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| main_hand | *not set* | Object | Main hand transform data. | 
+| off_hand | *not set* | Object | Offhand hand transform data. | 

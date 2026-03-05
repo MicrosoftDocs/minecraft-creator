@@ -16,6 +16,6 @@ Experimental toggles required: Upcoming Creator Features (in format versions bef
 
 ## Support Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| shape | *not set* | String | Required field. The type of support shape for this block. Currently, the options are: `fence` and `stair`. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| shape | *not set* | String | Required field. The type of support shape for this block. Currently, the options are: `fence` and `stair`. | 

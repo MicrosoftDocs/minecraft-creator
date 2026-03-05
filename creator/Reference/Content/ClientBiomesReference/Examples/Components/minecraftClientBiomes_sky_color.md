@@ -15,7 +15,7 @@ Sets the sky color used during rendering. Biomes without this component will hav
 
 ## Minecraft Sky Color Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| sky_color | *not set* | String | RGB color of the sky |  | 
-| sky_color (Alternate 1) | *not set* | Array of numbers |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| sky_color | *not set* | String | RGB color of the sky | 
+| sky_color (as Array of numbers) | *not set* | Array of numbers |  | 

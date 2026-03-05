@@ -15,35 +15,39 @@ Configures an item as a digging tool, allowing it to break specific blocks faste
 
 ## Item Components Digger Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| destroy_speeds | [] | [Destroy Speeds](#item-components-blockinfo) item | An array of objects that define which blocks this item can dig and at what speed. Each entry specifies a block (by ID or tag query) and a speed multiplier. |  | 
-| use_efficiency | false | Boolean true/false | When true, the Efficiency enchantment will increase the dig speed of this item. Default is false. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| destroy_speeds | [] | [Destroy Speeds](#item-components-blockinfo) item | An array of objects that define which blocks this item can dig and at what speed. Each entry specifies a block (by ID or tag query) and a speed multiplier. | 
+| use_efficiency | false | Boolean true/false | When true, the Efficiency enchantment will increase the dig speed of this item. Default is false. | 
 
-## Item Components BlockInfo
+### Item Components BlockInfo
 Has block and digging speed configuration.
 
 
 #### Item Components BlockInfo Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| block (Block) | *not set* | [Block](#block) item | Block to be dug. |  | 
-| block (Alternate 1) | *not set* | String |  |  | 
-| block (Alternate 2) | *not set* | Object |  |  | 
-| speed | *not set* | Integer number | Digging speed for the correlating block(s). |  | 
+**JSON path:** `destroy_speeds`
 
-## Block
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| block (Block) | *not set* | [Block](#block) item | Block to be dug. | 
+| block (as String) | *not set* | String |  | 
+| block (Alternate 2) | *not set* | Object |  | 
+| speed | *not set* | Integer number | Digging speed for the correlating block(s). | 
 
-#### Block Properties
+#### Block
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name |  | String |  |  | 
-| states | {} | Integer number |  |  | 
-| states (Alternate 1) | *not set* | String |  |  | 
-| states (Alternate 2) | *not set* | Boolean true/false |  |  | 
-| tags |  | String |  |  | 
+##### Block Properties
+
+**JSON path:** `destroy_speeds > block`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| name |  | String |  | 
+| states | {} | Integer number |  | 
+| states (as String) | *not set* | String |  | 
+| states (as Boolean true/false) | *not set* | Boolean true/false |  | 
+| tags |  | String |  | 
 
 ## Samples
 

@@ -15,7 +15,7 @@ Restricts spawning based on whether a player is within village boundaries. Used 
 
 ## Spawn PlayerInVillageFilter Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| distance | *not set* | Integer number |  |  | 
-| village_border_tolerance | 10 | Integer number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| distance | *not set* | Integer number |  | 
+| village_border_tolerance | 10 | Integer number |  | 

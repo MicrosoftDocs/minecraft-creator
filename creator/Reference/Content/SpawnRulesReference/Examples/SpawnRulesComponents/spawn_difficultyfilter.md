@@ -15,21 +15,12 @@ Restricts mob spawning to specific difficulty levels (Peaceful, Easy, Normal, Ha
 
 ## Spawn DifficultyFilter Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max | hard | [Max](#max-choices) choices |  |  | 
-| min | peaceful | [Min](#min-choices) choices |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | hard | [Max](#max-choices) choices |  | 
+| min | peaceful | [Min](#max-choices) choices |  | 
 
 ### Max choices
-
-|Value       |Title |Description |
-|:-----------|:-----|:-----------|
-| easy | Easy | |
-| hard | Hard | |
-| normal | Normal | |
-| peaceful | Peaceful | |
-
-### Min choices
 
 |Value       |Title |Description |
 |:-----------|:-----|:-----------|

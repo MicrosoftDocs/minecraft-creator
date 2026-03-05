@@ -15,29 +15,26 @@ Controls when the emitter activates and expires using Molang expressions. The ac
 
 ## Client Particles Emitter Lifetime Expression Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| activation_expression | 1 | Molang | When the expression is non-zero, the emitter is activated. Can be a number or Molang expression. |  | 
-| activation_expression (Alternate 1) | *not set* | Key/item pairs of [Activation Expression](#activation-expression) items |  |  | 
-| activation_expression (Alternate 2) | *not set* | Decimal number |  |  | 
-| expiration_expression | 0 | Molang | When the expression is non-zero, the emitter expires. Can be a number or Molang expression. |  | 
-| expiration_expression (Alternate 1) | *not set* | Key/item pairs of [Expiration Expression](#expiration-expression) items |  |  | 
-| expiration_expression (Alternate 2) | *not set* | Decimal number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| activation_expression | 1 | Molang | When the expression is non-zero, the emitter is activated. Can be a number or Molang expression. | 
+| activation_expression (Activation Expression) | *not set* | Key/item pairs of [Activation Expression (Activation Expression)](#activation-expression-activation-expression) items |  | 
+| activation_expression (as Decimal number) | *not set* | Decimal number |  | 
+| expiration_expression | 0 | Molang | When the expression is non-zero, the emitter expires. Can be a number or Molang expression. | 
+| expiration_expression (Expiration Expression) | *not set* | Key/item pairs of [Expiration Expression (Expiration Expression)](#expiration-expression-expiration-expression) items |  | 
+| expiration_expression (as Decimal number) | *not set* | Decimal number |  | 
 
-## Activation Expression
+### Activation Expression (Activation Expression)
 
 #### Activation Expression Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `activation_expression`
 
-## Expiration Expression
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
-#### Expiration Expression Properties
+### Expiration Expression (Expiration Expression)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+Same structure as [Activation Expression (Activation Expression)](#activation-expression-activation-expression).
