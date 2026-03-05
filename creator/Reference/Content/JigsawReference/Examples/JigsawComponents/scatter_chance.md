@@ -15,7 +15,7 @@ Scatter probability represented by an expression or an object with a numerator a
 
 ## Scatter Chance Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| denominator | *not set* | Integer number | Denominator for scatter probability. |  | 
-| numerator | *not set* | Integer number | Numerator for scatter probability. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| denominator | *not set* | Integer number | Denominator for scatter probability. | 
+| numerator | *not set* | Integer number | Numerator for scatter probability. | 

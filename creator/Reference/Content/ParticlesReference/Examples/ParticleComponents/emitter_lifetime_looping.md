@@ -15,29 +15,26 @@ Creates repeating particle effects that cycle between active and dormant phases.
 
 ## Client Particles Emitter Lifetime Looping Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| active_time | 0 | Molang | The time in seconds that the emitter is active. Can be a number or Molang expression. |  | 
-| active_time (Alternate 1) | *not set* | Key/item pairs of [Active Time](#active-time) items |  |  | 
-| active_time (Alternate 2) | *not set* | Decimal number |  |  | 
-| sleep_time | 0 | Molang | The time in seconds that the emitter sleeps between active periods. Can be a number or Molang expression. |  | 
-| sleep_time (Alternate 1) | *not set* | Key/item pairs of [Sleep Time](#sleep-time) items |  |  | 
-| sleep_time (Alternate 2) | *not set* | Decimal number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| active_time | 0 | Molang | The time in seconds that the emitter is active. Can be a number or Molang expression. | 
+| active_time (Active Time) | *not set* | Key/item pairs of [Active Time (Active Time)](#active-time-active-time) items |  | 
+| active_time (as Decimal number) | *not set* | Decimal number |  | 
+| sleep_time | 0 | Molang | The time in seconds that the emitter sleeps between active periods. Can be a number or Molang expression. | 
+| sleep_time (Sleep Time) | *not set* | Key/item pairs of [Sleep Time (Sleep Time)](#sleep-time-sleep-time) items |  | 
+| sleep_time (as Decimal number) | *not set* | Decimal number |  | 
 
-## Active Time
+### Active Time (Active Time)
 
 #### Active Time Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `active_time`
 
-## Sleep Time
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
-#### Sleep Time Properties
+### Sleep Time (Sleep Time)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+Same structure as [Active Time (Active Time)](#active-time-active-time).

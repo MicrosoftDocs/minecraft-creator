@@ -15,9 +15,9 @@ Allows an entity to ignore attackable targets for a given duration.
 
 ## Admire Item Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| cooldown_after_being_attacked | 0 | Integer number | Duration, in seconds, for which mob won't admire items if it was hurt |  | 
-| duration | 10 | Integer number | Duration, in seconds, that the mob is pacified. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| cooldown_after_being_attacked | 0 | Integer number | Duration, in seconds, for which mob won't admire items if it was hurt | 
+| duration | 10 | Integer number | Duration, in seconds, that the mob is pacified. | 
 
 ## Samples

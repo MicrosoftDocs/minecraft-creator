@@ -15,7 +15,7 @@ Limits how many of this entity type can exist in an area, with separate caps for
 
 ## Spawn DensityLimit Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| surface | -1 | Integer number |  |  | 
-| underground | -1 | Integer number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| surface | -1 | Integer number |  | 
+| underground | -1 | Integer number |  | 

@@ -15,21 +15,23 @@ Declares that this pack requires another pack or native module to function. Depe
 
 ## 3.0.0.Dependency Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| module_name | *not set* | String |  |  | 
-| uuid | *not set* | Object |  |  | 
-| version (Version) | *not set* | [Version](#version) item |  |  | 
-| version (Alternate 1) | *not set* | String |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| module_name | *not set* | String |  | 
+| uuid | *not set* | Object |  | 
+| version (Version) | *not set* | [Version](#version) item |  | 
+| version (as String) | *not set* | String |  | 
 
-## Version
+### Version
 
 #### Version Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| buildMeta | *not set* | String |  |  | 
-| major | *not set* | Integer number |  |  | 
-| minor | *not set* | Integer number |  |  | 
-| patch | *not set* | Integer number |  |  | 
-| preRelease | *not set* | String |  |  | 
+**JSON path:** `version`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| buildMeta | *not set* | String |  | 
+| major | *not set* | Integer number |  | 
+| minor | *not set* | Integer number |  | 
+| patch | *not set* | Integer number |  | 
+| preRelease | *not set* | String |  | 

@@ -10,95 +10,91 @@ ms.date: 02/11/2025
 
 # Biome Documentation - minecraft:surface_builder
 
+## Contents
+
+- [Biome Overworld](#biome-overworld)
+- [Biome Mesa](#biome-mesa)
+- [Biome Swamp](#biome-swamp)
+- [Biome Capped](#biome-capped)
+- [Biome The End](#biome-the-end)
+
 Controls the materials used for terrain generation.
 
 
 ## Biome Surface Builder Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| builder (Biome Overworld) | *not set* | [Builder](#biome-overworld) item | Controls the block types used for terrain generation. |  | 
-| builder (Alternate 1) | *not set* | [Builder](#biome-frozen-ocean) item |  |  | 
-| builder (Alternate 2) | *not set* | [Builder](#biome-mesa) item |  |  | 
-| builder (Alternate 3) | *not set* | [Builder](#biome-swamp) item |  |  | 
-| builder (Alternate 4) | *not set* | [Builder](#biome-capped) item |  |  | 
-| builder (Alternate 5) | *not set* | [Builder](#biome-the-end) item |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| builder (Biome Overworld) | *not set* | [Builder](#biome-overworld) item | Controls the block types used for terrain generation. | 
+| builder (Alternate 1) | *not set* | [Builder](#biome-frozen-ocean) item |  | 
+| builder (Alternate 2) | *not set* | [Builder](#biome-mesa) item |  | 
+| builder (Alternate 3) | *not set* | [Builder](#biome-swamp) item |  | 
+| builder (Alternate 4) | *not set* | [Builder](#biome-capped) item |  | 
+| builder (Alternate 5) | *not set* | [Builder](#biome-the-end) item |  | 
 
-## Biome Overworld
+### Biome Overworld
 Controls the blocks used for the default Minecraft Overworld terrain generation.
 
 
 #### Biome Overworld Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| foundation_material | *not set* | String | Controls the block type used deep underground in this biome |  | 
-| foundation_material (Alternate 1) | *not set* | [Foundation Material](#foundation-material) item |  |  | 
-| mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome |  | 
-| mid_material (Alternate 1) | *not set* | [Mid Material](#mid-material) item |  |  | 
-| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur Value must be <= 127. |  | 
-| sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome |  | 
-| sea_floor_material (Alternate 1) | *not set* | [Sea Floor Material](#sea-floor-material) item |  |  | 
-| sea_material | *not set* | String | Controls the block type used for the bodies of water in this biome |  | 
-| sea_material (Alternate 1) | *not set* | [Sea Material](#sea-material) item |  |  | 
-| top_material | *not set* | String | Controls the block type used for the surface of this biome |  | 
-| top_material (Alternate 1) | *not set* | [Top Material](#top-material) item |  |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use |  | 
+**JSON path:** `builder`
 
-## Foundation Material
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| foundation_material | *not set* | String | Controls the block type used deep underground in this biome | 
+| foundation_material (Foundation Material) | *not set* | [Foundation Material (Foundation Material)](#foundation-material-foundation-material) item |  | 
+| mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome | 
+| mid_material (Mid Material) | *not set* | [Mid Material (Mid Material)](#mid-material-mid-material) item |  | 
+| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur Value must be <= 127. | 
+| sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome | 
+| sea_floor_material (Sea Floor Material) | *not set* | [Sea Floor Material (Sea Floor Material)](#sea-floor-material-sea-floor-material) item |  | 
+| sea_material | *not set* | String | Controls the block type used for the bodies of water in this biome | 
+| sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
+| top_material | *not set* | String | Controls the block type used for the surface of this biome | 
+| top_material (Top Material) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use | 
 
-#### Foundation Material Properties
+#### Foundation Material (Foundation Material)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+##### Foundation Material Properties
 
-## Mid Material
+**JSON path:** `builder > foundation_material`
 
-#### Mid Material Properties
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| name | *not set* | Object | Name of the block | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. | 
+| states (as Keyed collection of boolean values) | *not set* | Keyed collection of boolean values |  | 
+| states (as Keyed set of strings) | *not set* | Keyed set of strings |  | 
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+#### Mid Material (Mid Material)
 
-## Sea Floor Material
+Same structure as [Foundation Material (Foundation Material)](#foundation-material-foundation-material).
 
-#### Sea Floor Material Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+#### Sea Floor Material (Sea Floor Material)
 
-## Sea Material
+Same structure as [Foundation Material (Foundation Material)](#foundation-material-foundation-material).
 
-#### Sea Material Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+#### Sea Material (Sea Material)
 
-## Top Material
+##### Sea Material Properties
 
-#### Top Material Properties
+**JSON path:** `builder > sea_material`
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| name | *not set* | Object | Name of the block | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. | 
+| states (as Keyed collection of boolean values) | *not set* | Keyed collection of boolean values |  | 
+| states (as Keyed set of strings) | *not set* | Keyed set of strings |  | 
+
+#### Top Material (Top Material)
+
+Same structure as [Sea Material (Sea Material)](#sea-material-sea-material).
+
 
 ### Type choices
 
@@ -111,212 +107,140 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 | minecraft:swamp | Minecraft:swamp | |
 | minecraft:the_end | Minecraft:the end | |
 
-## Biome Frozen Ocean
-Similar to overworld_surface. Adds icebergs.
+### Biome Frozen Ocean
+
+Same structure as [Biome Overworld](#biome-overworld).
 
 
-#### Biome Frozen Ocean Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| foundation_material | *not set* | String | Controls the block type used deep underground in this biome |  | 
-| foundation_material (Alternate 1) | *not set* | [Foundation Material](#foundation-material) item |  |  | 
-| mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome |  | 
-| mid_material (Alternate 1) | *not set* | [Mid Material](#mid-material) item |  |  | 
-| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur Value must be <= 127. |  | 
-| sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome |  | 
-| sea_floor_material (Alternate 1) | *not set* | [Sea Floor Material](#sea-floor-material) item |  |  | 
-| sea_material | *not set* | String | Controls the block type used for the bodies of water in this biome |  | 
-| sea_material (Alternate 1) | *not set* | [Sea Material](#sea-material) item |  |  | 
-| top_material | *not set* | String | Controls the block type used for the surface of this biome |  | 
-| top_material (Alternate 1) | *not set* | [Top Material](#top-material) item |  |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use |  | 
-
-### Type choices
-
-|Value       |Title |Description |
-|:-----------|:-----|:-----------|
-| minecraft:capped | Minecraft:capped | |
-| minecraft:frozen_ocean | Minecraft:frozen ocean | |
-| minecraft:mesa | Minecraft:mesa | |
-| minecraft:overworld | Minecraft:overworld | |
-| minecraft:swamp | Minecraft:swamp | |
-| minecraft:the_end | Minecraft:the end | |
-
-## Biome Mesa
+### Biome Mesa
 Similar to overworld_surface. Adds colored strata and optional pillars.
 
 
 #### Biome Mesa Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| bryce_pillars | *not set* | Boolean true/false | Whether the mesa generates with pillars |  | 
-| clay_material | *not set* | String | Base clay block to use |  | 
-| clay_material (Alternate 1) | *not set* | [Clay Material](#clay-material) item |  |  | 
-| foundation_material | *not set* | String | Controls the block type used deep underground in this biome |  | 
-| foundation_material (Alternate 1) | *not set* | [Foundation Material](#foundation-material) item |  |  | 
-| hard_clay_material | *not set* | String | Hardened clay block to use |  | 
-| hard_clay_material (Alternate 1) | *not set* | [Hard Clay Material](#hard-clay-material) item |  |  | 
-| has_forest | *not set* | Boolean true/false | Places coarse dirt and grass at high altitudes |  | 
-| mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome |  | 
-| mid_material (Alternate 1) | *not set* | [Mid Material](#mid-material) item |  |  | 
-| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur Value must be <= 127. |  | 
-| sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome |  | 
-| sea_floor_material (Alternate 1) | *not set* | [Sea Floor Material](#sea-floor-material) item |  |  | 
-| sea_material | *not set* | String | Controls the block type used for the bodies of water in this biome |  | 
-| sea_material (Alternate 1) | *not set* | [Sea Material](#sea-material) item |  |  | 
-| top_material | *not set* | String | Controls the block type used for the surface of this biome |  | 
-| top_material (Alternate 1) | *not set* | [Top Material](#top-material) item |  |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use |  | 
+**JSON path:** `builder`
 
-## Clay Material
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| bryce_pillars | *not set* | Boolean true/false | Whether the mesa generates with pillars | 
+| clay_material | *not set* | String | Base clay block to use | 
+| clay_material (Clay Material) | *not set* | [Clay Material (Clay Material)](#clay-material-clay-material) item |  | 
+| foundation_material | *not set* | String | Controls the block type used deep underground in this biome | 
+| foundation_material (Foundation Material) | *not set* | [Foundation Material (Foundation Material)](#foundation-material-foundation-material) item |  | 
+| hard_clay_material | *not set* | String | Hardened clay block to use | 
+| hard_clay_material (Hard Clay Material) | *not set* | [Hard Clay Material (Hard Clay Material)](#hard-clay-material-hard-clay-material) item |  | 
+| has_forest | *not set* | Boolean true/false | Places coarse dirt and grass at high altitudes | 
+| mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome | 
+| mid_material (Mid Material) | *not set* | [Mid Material (Mid Material)](#mid-material-mid-material) item |  | 
+| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur Value must be <= 127. | 
+| sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome | 
+| sea_floor_material (Sea Floor Material) | *not set* | [Sea Floor Material (Sea Floor Material)](#sea-floor-material-sea-floor-material) item |  | 
+| sea_material | *not set* | String | Controls the block type used for the bodies of water in this biome | 
+| sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
+| top_material | *not set* | String | Controls the block type used for the surface of this biome | 
+| top_material (Top Material) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use | 
 
-#### Clay Material Properties
+#### Clay Material (Clay Material)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+##### Clay Material Properties
 
-## Hard Clay Material
+**JSON path:** `builder > clay_material`
 
-#### Hard Clay Material Properties
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| name | *not set* | Object | Name of the block | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. | 
+| states (as Keyed collection of boolean values) | *not set* | Keyed collection of boolean values |  | 
+| states (as Keyed set of strings) | *not set* | Keyed set of strings |  | 
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+#### Hard Clay Material (Hard Clay Material)
 
-### Type choices
+Same structure as [Clay Material (Clay Material)](#clay-material-clay-material).
 
-|Value       |Title |Description |
-|:-----------|:-----|:-----------|
-| minecraft:capped | Minecraft:capped | |
-| minecraft:frozen_ocean | Minecraft:frozen ocean | |
-| minecraft:mesa | Minecraft:mesa | |
-| minecraft:overworld | Minecraft:overworld | |
-| minecraft:swamp | Minecraft:swamp | |
-| minecraft:the_end | Minecraft:the end | |
 
-## Biome Swamp
+### Biome Swamp
 Used to add decoration to the surface of swamp biomes such as water lilies.
 
 
 #### Biome Swamp Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| foundation_material | *not set* | String | Controls the block type used deep underground in this biome. |  | 
-| foundation_material (Alternate 1) | *not set* | [Foundation Material](#foundation-material) item |  |  | 
-| max_puddle_depth_below_sea_level | *not set* | Integer number | Controls the depth at which surface level blocks can be replaced with water for puddles. The number represents the number of blocks (0, 127) below sea level that we will go down to look for a surface block. Value must be <= 127. |  | 
-| mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome. |  | 
-| mid_material (Alternate 1) | *not set* | [Mid Material](#mid-material) item |  |  | 
-| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur. Value must be <= 127. |  | 
-| sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome. |  | 
-| sea_floor_material (Alternate 1) | *not set* | [Sea Floor Material](#sea-floor-material) item |  |  | 
-| sea_material | *not set* | String | Controls the block type used for the bodies of water in this biome. |  | 
-| sea_material (Alternate 1) | *not set* | [Sea Material](#sea-material) item |  |  | 
-| top_material | *not set* | String | Controls the block type used for the surface of this biome. |  | 
-| top_material (Alternate 1) | *not set* | [Top Material](#top-material) item |  |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use |  | 
+**JSON path:** `builder`
 
-### Type choices
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| foundation_material | *not set* | String | Controls the block type used deep underground in this biome. | 
+| foundation_material (Foundation Material) | *not set* | [Foundation Material (Foundation Material)](#foundation-material-foundation-material) item |  | 
+| max_puddle_depth_below_sea_level | *not set* | Integer number | Controls the depth at which surface level blocks can be replaced with water for puddles. | 
+| mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome. | 
+| mid_material (Mid Material) | *not set* | [Mid Material (Mid Material)](#mid-material-mid-material) item |  | 
+| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur. Value must be <= 127. | 
+| sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome. | 
+| sea_floor_material (Sea Floor Material) | *not set* | [Sea Floor Material (Sea Floor Material)](#sea-floor-material-sea-floor-material) item |  | 
+| sea_material | *not set* | String | Controls the block type used for the bodies of water in this biome. | 
+| sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
+| top_material | *not set* | String | Controls the block type used for the surface of this biome. | 
+| top_material (Top Material) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use | 
 
-|Value       |Title |Description |
-|:-----------|:-----|:-----------|
-| minecraft:capped | Minecraft:capped | |
-| minecraft:frozen_ocean | Minecraft:frozen ocean | |
-| minecraft:mesa | Minecraft:mesa | |
-| minecraft:overworld | Minecraft:overworld | |
-| minecraft:swamp | Minecraft:swamp | |
-| minecraft:the_end | Minecraft:the end | |
+#### max_puddle_depth_below_sea_level
 
-## Biome Capped
+Controls the depth at which surface level blocks can be replaced with water for puddles. The number represents the number of blocks (0, 127) below sea level that we will go down to look for a surface block. Value must be <= 127.
+
+
+### Biome Capped
 Generates surface on blocks with non-solid blocks above or below.
 
 
 #### Biome Capped Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| beach_material | *not set* | String | Material used to decorate surface near sea level. |  | 
-| beach_material (Alternate 1) | *not set* | [Beach Material](#beach-material) item |  |  | 
-| ceiling_materials | *not set* | String | Materials used for the surface ceiling. Value must have at least 1 items. |  | 
-| ceiling_materials (Alternate 1) | *not set* | [Ceiling Materials](#ceiling-materials) item |  |  | 
-| floor_materials | *not set* | String | Materials used for the surface floor. Value must have at least 1 items. |  | 
-| floor_materials (Alternate 1) | *not set* | [Floor Materials](#floor-materials) item |  |  | 
-| foundation_material | *not set* | String | Material used to replace solid blocks that are not surface blocks. |  | 
-| foundation_material (Alternate 1) | *not set* | [Foundation Material](#foundation-material) item |  |  | 
-| sea_material | *not set* | String | Material used to replace air blocks below sea level. |  | 
-| sea_material (Alternate 1) | *not set* | [Sea Material](#sea-material) item |  |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use |  | 
+**JSON path:** `builder`
 
-## Beach Material
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| beach_material | *not set* | String | Material used to decorate surface near sea level. | 
+| beach_material (Beach Material) | *not set* | [Beach Material (Beach Material)](#beach-material-beach-material) item |  | 
+| ceiling_materials | *not set* | String | Materials used for the surface ceiling. Value must have at least 1 items. | 
+| ceiling_materials (Ceiling Materials) | *not set* | [Ceiling Materials (Ceiling Materials)](#ceiling-materials-ceiling-materials) item |  | 
+| floor_materials | *not set* | String | Materials used for the surface floor. Value must have at least 1 items. | 
+| floor_materials (Floor Materials) | *not set* | [Floor Materials (Floor Materials)](#floor-materials-floor-materials) item |  | 
+| foundation_material | *not set* | String | Material used to replace solid blocks that are not surface blocks. | 
+| foundation_material (Foundation Material) | *not set* | [Foundation Material (Foundation Material)](#foundation-material-foundation-material) item |  | 
+| sea_material | *not set* | String | Material used to replace air blocks below sea level. | 
+| sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use | 
 
-#### Beach Material Properties
+#### Beach Material (Beach Material)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+##### Beach Material Properties
 
-## Ceiling Materials
+**JSON path:** `builder > beach_material`
 
-#### Ceiling Materials Properties
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| name | *not set* | Object | Name of the block | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. | 
+| states (as Keyed collection of boolean values) | *not set* | Keyed collection of boolean values |  | 
+| states (as Keyed set of strings) | *not set* | Keyed set of strings |  | 
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+#### Ceiling Materials (Ceiling Materials)
 
-## Floor Materials
+Same structure as [Beach Material (Beach Material)](#beach-material-beach-material).
 
-#### Floor Materials Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+#### Floor Materials (Floor Materials)
 
-### Type choices
+Same structure as [Beach Material (Beach Material)](#beach-material-beach-material).
 
-|Value       |Title |Description |
-|:-----------|:-----|:-----------|
-| minecraft:capped | Minecraft:capped | |
-| minecraft:frozen_ocean | Minecraft:frozen ocean | |
-| minecraft:mesa | Minecraft:mesa | |
-| minecraft:overworld | Minecraft:overworld | |
-| minecraft:swamp | Minecraft:swamp | |
-| minecraft:the_end | Minecraft:the end | |
 
-## Biome The End
+### Biome The End
 Marks a biome as using End dimension terrain generation. Biomes with this component will use the characteristic End terrain style with end stone and void generation.
 
 
 #### Biome The End Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| type | *not set* | [Type](#type-choices) choices | Use default Minecraft End terrain generation. |  | 
+**JSON path:** `builder`
 
-### Type choices
-
-|Value       |Title |Description |
-|:-----------|:-----|:-----------|
-| minecraft:capped | Minecraft:capped | |
-| minecraft:frozen_ocean | Minecraft:frozen ocean | |
-| minecraft:mesa | Minecraft:mesa | |
-| minecraft:overworld | Minecraft:overworld | |
-| minecraft:swamp | Minecraft:swamp | |
-| minecraft:the_end | Minecraft:the end | |
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| type | *not set* | [Type](#type-choices) choices | Use default Minecraft End terrain generation. | 

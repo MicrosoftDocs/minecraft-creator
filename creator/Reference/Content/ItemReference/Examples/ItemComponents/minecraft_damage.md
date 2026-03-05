@@ -19,9 +19,9 @@ This item can also be represented as a `Integer number`.
 
 ## Damage Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | *not set* | Integer number | The amount of extra damage this item deals when attacking. This value is added to the base attack damage. Must be a positive integer. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | *not set* | Integer number | The amount of extra damage this item deals when attacking. This value is added to the base attack damage. Must be a positive integer. | 
 
 ## Samples
 

@@ -15,6 +15,6 @@ Sets the fog settings used during rendering. Biomes without this component will 
 
 ## Minecraft Fog Appearance Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| fog_identifier | *not set* | Object | Identifier of fog definition to use |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| fog_identifier | *not set* | Object | Identifier of fog definition to use | 

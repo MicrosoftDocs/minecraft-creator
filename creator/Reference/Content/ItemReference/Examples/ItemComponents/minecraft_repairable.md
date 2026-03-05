@@ -18,28 +18,32 @@ Defines the items that can be used to repair a defined item, and the amount of d
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | repair_items | [] | String | List of repair item entries. Each entry needs to define a list of strings for `items` that can be used for the repair and an optional `repair_amount` for how much durability is gained. | Chestplate: `[{"items":["minecraft:stick"],"repair_amount":"context.other->query.remaining_durability + 0.05 * context.other->query.max_durability"}]`, My Sword Chuck: `[{"items":["minecraft:diamond"],"repair_amount":"query.max_durability * 0.25"}]` | 
-| repair_items (Alternate 1) | *not set* | [Repair Items](#repair-items) item |  |  | 
+| repair_items (Repair Items) | *not set* | [Repair Items (Repair Items)](#repair-items-repair-items) item |  |  | 
 
-## Repair Items
+### Repair Items (Repair Items)
 
 #### Repair Items Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| items | *not set* | String | Items that may be used to repair an item. |  | 
-| items (Alternate 1) | *not set* | Keyed set of strings |  |  | 
-| repair_amount | {"expression":"","version":-1} | Keyed set of strings | How much the item is repaired. |  | 
-| repair_amount (Alternate 1) | *not set* | Key/item pairs of [Repair Amount](#repair-amount) items |  |  | 
-| repair_amount (Alternate 2) | *not set* | Decimal number |  |  | 
+**JSON path:** `repair_items`
 
-## Repair Amount
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| items | *not set* | String | Items that may be used to repair an item. | 
+| items (as Keyed set of strings) | *not set* | Keyed set of strings |  | 
+| repair_amount | {"expression":"","version":-1} | Keyed set of strings | How much the item is repaired. | 
+| repair_amount (Repair Amount) | *not set* | Key/item pairs of [Repair Amount (Repair Amount)](#repair-amount-repair-amount) items |  | 
+| repair_amount (as Decimal number) | *not set* | Decimal number |  | 
 
-#### Repair Amount Properties
+#### Repair Amount (Repair Amount)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+##### Repair Amount Properties
+
+**JSON path:** `repair_items > repair_amount`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
 ## Samples
 

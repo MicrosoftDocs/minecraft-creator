@@ -15,10 +15,10 @@ A read-only text label in the pack's world settings UI. Use labels to display in
 
 ## 3.0.0.LabelSetting Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| text | *not set* | String |  |  | 
-| type | *not set* | [Type](#type-choices) choices |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| text | *not set* | String |  | 
+| type | *not set* | [Type](#type-choices) choices |  | 
 
 ### Type choices
 

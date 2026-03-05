@@ -17,6 +17,7 @@
       "title": "set",
       "type": "string",
       "isOptional": false,
+      "description": "Applies a camera preset to the selected players, with optional position, rotation, easing, and offset settings.",
       "commandType": "SET"
     },
     {
@@ -134,7 +135,7 @@
       "title": "attach_to_entity",
       "type": "string",
       "isOptional": false,
-      "description": "Related entity",
+      "description": "Attaches the camera to an entity so it follows that entity's movement.",
       "commandType": "ATTACH_TO_ENTITY"
     },
     {
@@ -142,7 +143,7 @@
       "title": "entity",
       "type": "string",
       "isOptional": false,
-      "description": "Related entity",
+      "description": "The target entity to attach to or focus on.",
       "subFormId": "type_selection",
       "commandType": "SELECTION"
     },
@@ -151,7 +152,7 @@
       "title": "detach_from_entity",
       "type": "string",
       "isOptional": false,
-      "description": "Related entity",
+      "description": "Detaches the camera from an entity it was previously attached to.",
       "commandType": "DETACH_FROM_ENTITY"
     },
     {
@@ -159,7 +160,7 @@
       "title": "targetEntity",
       "type": "string",
       "isOptional": false,
-      "description": "Targeted entity that the camera should focus on",
+      "description": "Sets a target entity that the camera should continuously look at while maintaining its current position.",
       "commandType": "TARGET_ENTITY"
     },
     {
@@ -167,7 +168,7 @@
       "title": "targetCenterOffset",
       "type": "string",
       "isOptional": false,
-      "description": "Specifies that there should be offset coordinates for cameras that have a particular coordinate",
+      "description": "Specifies an offset from the center of the target entity for the camera to look at.",
       "commandType": "TARGET_CENTER_OFFSET"
     },
     {
@@ -202,7 +203,7 @@
       "title": "removeTarget",
       "type": "string",
       "isOptional": false,
-      "description": "Value that indicates a target should be removed",
+      "description": "Removes the camera's target entity, so the camera no longer tracks any entity.",
       "commandType": "REMOVE_TARGET"
     },
     {
@@ -210,7 +211,7 @@
       "title": "view_offset",
       "type": "string",
       "isOptional": false,
-      "description": "Specifies that there should be offset coordinates of a view",
+      "description": "Specifies a 2D offset from the camera's view center.",
       "commandType": "VIEW_OFFSET"
     },
     {
@@ -267,7 +268,7 @@
       "title": "clear",
       "type": "string",
       "isOptional": false,
-      "description": "Clears any existing camera update documentation.",
+      "description": "Clears all active camera changes and returns to the default camera.",
       "commandType": "CLEAR"
     },
     {
@@ -275,7 +276,7 @@
       "title": "fade",
       "type": "string",
       "isOptional": false,
-      "description": "Specifies the start of a fade definition section of the command.",
+      "description": "Applies a screen fade effect with optional timing and color.",
       "commandType": "FADE"
     },
     {
@@ -354,6 +355,7 @@
       "title": "fov_set",
       "type": "string",
       "isOptional": false,
+      "description": "Sets a custom field of view with optional easing.",
       "commandType": "FOV_SET"
     },
     {
@@ -384,7 +386,7 @@
       "title": "fov_clear",
       "type": "string",
       "isOptional": false,
-      "description": "Clears any existing camera update documentation.",
+      "description": "Resets the field of view back to the default value.",
       "commandType": "FOV_CLEAR"
     }
   ],
@@ -393,6 +395,16 @@
       "id": "1",
       "title": "Sets camera with easing overrides and initial position and x/y rotation",
       "description": "Sets a camera with a specified preset and a fixed x/y rotation.",
+      "samples": [
+        {
+          "command": "/camera @s set minecraft:free ease 2 linear pos 100 80 100 rot 0 180",
+          "description": "Move the free camera to (100,80,100) facing south over 2 seconds"
+        },
+        {
+          "command": "/camera @a set minecraft:free ease 3 in_out_cubic pos 0 100 0 rot -45 90",
+          "description": "Cinematic camera sweep for all players"
+        }
+      ],
       "params": [
         {
           "name": "players",
@@ -933,8 +945,8 @@
     },
     {
       "id": "12",
-      "title": "Set camera with a target entity",
-      "description": "Specifies a camera transition with target",
+      "title": "Attach camera to entity",
+      "description": "Attaches the camera to an entity so it follows that entity's position and movement.",
       "params": [
         {
           "name": "players",
@@ -955,8 +967,8 @@
     },
     {
       "id": "13",
-      "title": "Set camera with a target entity and positional offset",
-      "description": "",
+      "title": "Detach camera from entity",
+      "description": "Detaches the camera from an entity it was previously attached to, returning to default behavior.",
       "params": [
         {
           "name": "players",
@@ -972,8 +984,8 @@
     },
     {
       "id": "14",
-      "title": "Removes camera target",
-      "description": "Removes a camera target.",
+      "title": "Set camera to look at entity",
+      "description": "Sets a target entity that the camera continuously looks at.",
       "params": [
         {
           "name": "players",
@@ -994,8 +1006,8 @@
     },
     {
       "id": "15",
-      "title": "Set camera with a view offset",
-      "description": "",
+      "title": "Set camera to look at entity with offset",
+      "description": "Sets a target entity with an offset from the entity's center for the camera to look at.",
       "params": [
         {
           "name": "players",
@@ -1036,8 +1048,8 @@
     },
     {
       "id": "16",
-      "title": "Set camera to default",
-      "description": "Sets a camera using the default settings for the camera preset.",
+      "title": "Remove camera target",
+      "description": "Removes the camera's current target entity so it no longer tracks any entity.",
       "params": [
         {
           "name": "players",
@@ -2161,5 +2173,51 @@
     }
   ],
   "permissionLevel": 1,
-  "requiresCheats": true
+  "requiresCheats": true,
+  "commandSamples": [
+    {
+      "command": "/camera @s set minecraft:free ease 2 linear pos 100 80 100 rot 0 180",
+      "description": "Smoothly move the camera to a position looking south"
+    },
+    {
+      "command": "/camera @s set minecraft:free pos 50 100 50 facing 0 64 0",
+      "description": "Set the camera at a position looking at world origin"
+    },
+    {
+      "command": "/camera @s set minecraft:free ease 1.5 in_out_cubic",
+      "description": "Transition to free camera with smooth easing"
+    },
+    {
+      "command": "/camera @s set minecraft:third_person",
+      "description": "Switch to third person camera"
+    },
+    {
+      "command": "/camera @s clear",
+      "description": "Reset camera back to normal"
+    },
+    {
+      "command": "/camera @s fade time 0.5 1.0 0.5 color 0 0 0",
+      "description": "Fade to black, hold 1 second, then fade back"
+    },
+    {
+      "command": "/camera @s fade time 0.5 2.0 0.5 color 255 255 255",
+      "description": "Fade to white for 2 seconds (scene transition)"
+    },
+    {
+      "command": "/camera @a fade",
+      "description": "Apply a quick fade effect to all players"
+    },
+    {
+      "command": "/camera @s set minecraft:follow_orbit ease 1 linear",
+      "description": "Smoothly transition to orbit camera"
+    },
+    {
+      "command": "/camera @s fov_set 30 0.5 linear",
+      "description": "Zoom in by setting FOV to 30 over 0.5 seconds"
+    },
+    {
+      "command": "/camera @s fov_clear",
+      "description": "Reset FOV back to default"
+    }
+  ]
 }

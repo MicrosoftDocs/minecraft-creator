@@ -15,7 +15,7 @@ Jigsaw Structure Metadata.
 
 ## Jigsaw Structure Metadata Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| format_version | *not set* | String | Format version of the contained metadata registry. |  | 
-| minecraft:jigsaw_structure_metadata | *not set* | Object | The Jigsaw metadata registry. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| format_version | *not set* | String | Format version of the contained metadata registry. | 
+| minecraft:jigsaw_structure_metadata | *not set* | Object | The Jigsaw metadata registry. | 

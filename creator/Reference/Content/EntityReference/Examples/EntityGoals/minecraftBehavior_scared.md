@@ -15,9 +15,9 @@ Allows the a mob to become scared when the weather outside is thundering.
 
 ## Scared Behavior Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
-| sound_interval | 0 | Integer number | The interval in which a sound will play when active in a 1/delay chance to kick off |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
+| sound_interval | 0 | Integer number | The interval in which a sound will play when active in a 1/delay chance to kick off | 
 
 ## Samples

@@ -15,7 +15,11 @@ Replaces and modifies blocks based on a series of rules.
 
 ## JigsawStructure Processors BlockRules Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| processor_type | *not set* | String | Processors Type |  | 
-| rules | *not set* | Array of objects | List of block rules evaluated on all blocks of a Structure Template. Block rules are evaluated in order. If a block rule succeeds and the output_state is set, the output_state block will be used as the input_predicate block for subsequent rules. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| processor_type | *not set* | String | Processors Type | 
+| rules | *not set* | Array of objects | List of block rules evaluated on all blocks of a Structure Template. | 
+
+### rules
+
+List of block rules evaluated on all blocks of a Structure Template. Block rules are evaluated in order. If a block rule succeeds and the output_state is set, the output_state block will be used as the input_predicate block for subsequent rules.

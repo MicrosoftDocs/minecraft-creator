@@ -15,22 +15,33 @@ Defines interactions with this entity.
 
 ## Interact Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| cooldown | 0 | Decimal number | Time in seconds before this entity can be interacted with again. |  | 
-| cooldown_after_being_attacked | 0 | Decimal number | Time in seconds before this entity can be interacted with after being attacked. |  | 
-| drop_item_slot | *not set* | String | The entity's slot to remove and drop the item from, if any, upon successful interaction. Inventory slots are denoted by positive numbers. Equipment slots are denoted by 'slot.weapon.mainhand', 'slot.weapon.offhand', 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'. |  | 
-| drop_item_y_offset | 0 | Decimal number | Will offset the item drop position this amount in the y direction. Requires "drop_item_slot" to be specified. |  | 
-| equip_item_slot | *not set* | String | The entity's slot to equip the item to, if any, upon successful interaction. Inventory slots are denoted by positive numbers. Equipment slots are denoted by 'slot.weapon.mainhand', 'slot.weapon.offhand', 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'. |  | 
-| health_amount | 0 | Integer number | The amount of health this entity will recover or lose when interacting with this item. Negative values will harm the entity. |  | 
-| hurt_item | 0 | Integer number | The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability. |  | 
-| interact_text | *not set* | String | Text to show when the player is able to interact in this way with this entity when playing with touch-screen controls. |  | 
-| interactions (Interactions) | *not set* | Array of [Interactions](#interactions) items | The list of interactions for this entity. |  | 
-| interactions (Alternate 1) | *not set* | Object |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| cooldown | 0 | Decimal number | Time in seconds before this entity can be interacted with again. | 
+| cooldown_after_being_attacked | 0 | Decimal number | Time in seconds before this entity can be interacted with after being attacked. | 
+| drop_item_slot | *not set* | String | The entity's slot to remove and drop the item from, if any, upon successful interaction. | 
+| drop_item_y_offset | 0 | Decimal number | Will offset the item drop position this amount in the y direction. Requires "drop_item_slot" to be specified. | 
+| equip_item_slot | *not set* | String | The entity's slot to equip the item to, if any, upon successful interaction. | 
+| health_amount | 0 | Integer number | The amount of health this entity will recover or lose when interacting with this item. Negative values will harm the entity. | 
+| hurt_item | 0 | Integer number | The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability. | 
+| interact_text | *not set* | String | Text to show when the player is able to interact in this way with this entity when playing with touch-screen controls. | 
+| interactions (Interactions) | *not set* | Array of [Interactions](#interactions) items | The list of interactions for this entity. | 
+| interactions (as Object) | *not set* | Object |  | 
 
-## Interactions
+### drop_item_slot
+
+The entity's slot to remove and drop the item from, if any, upon successful interaction. Inventory slots are denoted by positive numbers. Equipment slots are denoted by 'slot.weapon.mainhand', 'slot.weapon.offhand', 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'.
+
+### equip_item_slot
+
+The entity's slot to equip the item to, if any, upon successful interaction. Inventory slots are denoted by positive numbers. Equipment slots are denoted by 'slot.weapon.mainhand', 'slot.weapon.offhand', 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'.
+
+
+### Interactions
 
 #### Interactions Properties
+
+**JSON path:** `interactions`
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -54,38 +65,49 @@ Defines interactions with this entity.
 | use_item | false | Boolean true/false | If true, the interaction will use an item. |  | 
 | vibration | entity_interact | String | Vibration to emit when the interaction occurs. Admitted values are none (no vibration emitted), shear, entity_die, entity_act, entity_interact. |  | 
 
-## Particle On Start
+#### Particle On Start
 Particle effect that will be triggered at the start of the interaction.
 
 
-#### Particle On Start Properties
+##### Particle On Start Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| particle_offset_towards_interactor | false | Boolean true/false | Whether or not the particle will appear closer to who performed the interaction. |  | 
-| particle_type | *not set* | String | The type of particle that will be spawned. |  | 
-| particle_y_offset | 0 | Decimal number | Will offset the particle this amount in the y direction. |  | 
+**JSON path:** `interactions > particle_on_start`
 
-## Repair Entity Item
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| particle_offset_towards_interactor | false | Boolean true/false | Whether or not the particle will appear closer to who performed the interaction. | 
+| particle_type | *not set* | String | The type of particle that will be spawned. | 
+| particle_y_offset | 0 | Decimal number | Will offset the particle this amount in the y direction. | 
+
+#### Repair Entity Item
 Allows to repair one of the entity's items.
 
 
-#### Repair Entity Item Properties
+##### Repair Entity Item Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| amount | *not set* | Integer number | How much of the item durability should be restored upon interaction. |  | 
-| slot | *not set* | Integer number | The entity's slot containing the item to be repaired. Inventory slots are denoted by positive numbers. Armor slots are denoted by 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'. |  | 
+**JSON path:** `interactions > repair_entity_item`
 
-## Spawn Items
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| amount | *not set* | Integer number | How much of the item durability should be restored upon interaction. | 
+| slot | *not set* | Integer number | The entity's slot containing the item to be repaired. | 
+
+##### slot
+
+The entity's slot containing the item to be repaired. Inventory slots are denoted by positive numbers. Armor slots are denoted by 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'.
+
+
+#### Spawn Items
 Loot table with items to drop on the ground upon successful interaction.
 
 
-#### Spawn Items Properties
+##### Spawn Items Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| table | *not set* | String | File path, relative to the Behavior Pack's path, to the loot table file. |  | 
-| y_offset | 1 | Decimal number | Will offset the items spawn position this amount in the y direction. |  | 
+**JSON path:** `interactions > spawn_items`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| table | *not set* | String | File path, relative to the Behavior Pack's path, to the loot table file. | 
+| y_offset | 1 | Decimal number | Will offset the items spawn position this amount in the y direction. | 
 
 ## Samples

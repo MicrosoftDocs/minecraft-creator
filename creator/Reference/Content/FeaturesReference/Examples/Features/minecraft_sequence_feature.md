@@ -15,23 +15,25 @@ Places a collection of features sequentially, in the order they appear in data. 
 
 ## Sequence Feature Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description) item |  |  | 
-| features | *not set* | Array of strings | List of features to be placed in sequence. The output position of the previous feature is used as the input position to the next. |  | 
-| format_version | *not set* | String |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| description | *not set* | [Description](#description) item |  | 
+| features | *not set* | Array of strings | List of features to be placed in sequence. The output position of the previous feature is used as the input position to the next. | 
+| format_version | *not set* | String |  | 
 
-## Description
+### Description
 
 #### Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
+**JSON path:** `description`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. | 
 
 ## Samples
 
-#### [Example](example)
+#### Example
 
 
 ```json

@@ -15,23 +15,25 @@ Determines whether the provided position is below the estimated surface level of
 
 ## Surface Relative Threshold Feature Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description) item |  |  | 
-| format_version | *not set* | String |  |  | 
-| minimum_distance_below_surface | *not set* | Integer number | The minimum number of blocks required to be between the estimated surface level and a valid place for this feature. Defaults to zero. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| description | *not set* | [Description](#description) item |  | 
+| format_version | *not set* | String |  | 
+| minimum_distance_below_surface | *not set* | Integer number | The minimum number of blocks required to be between the estimated surface level and a valid place for this feature. Defaults to zero. | 
 
-## Description
+### Description
 
 #### Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
+**JSON path:** `description`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. | 
 
 ## Samples
 
-#### [Example](example)
+#### Example
 
 
 ```json

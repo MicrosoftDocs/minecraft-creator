@@ -15,10 +15,10 @@ Represents a semantic version number (major.minor.patch format). Minecraft uses 
 
 ## 3.0.0.SemVersionProxy Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| buildMeta |  | String |  |  | 
-| major | 0 | Integer number |  |  | 
-| minor | 0 | Integer number |  |  | 
-| patch | 0 | Integer number |  |  | 
-| preRelease |  | String |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| buildMeta |  | String |  | 
+| major | 0 | Integer number |  | 
+| minor | 0 | Integer number |  | 
+| patch | 0 | Integer number |  | 
+| preRelease |  | String |  | 

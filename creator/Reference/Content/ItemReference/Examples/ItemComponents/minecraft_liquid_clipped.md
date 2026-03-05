@@ -19,6 +19,6 @@ This item can also be represented as a `Boolean true/false`.
 
 ## Liquid Clipped Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | *not set* | Boolean true/false | Deterines whether the item interacts with liquid blocks on use. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | *not set* | Boolean true/false | Deterines whether the item interacts with liquid blocks on use. | 

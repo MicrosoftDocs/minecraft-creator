@@ -15,6 +15,6 @@ Defines the identifier for a block culling rule.
 
 ## Client Block Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The namespace and identifier for this culling rule. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The namespace and identifier for this culling rule. | 

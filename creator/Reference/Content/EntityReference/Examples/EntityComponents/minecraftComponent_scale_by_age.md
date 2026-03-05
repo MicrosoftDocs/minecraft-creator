@@ -15,7 +15,7 @@ Defines the entity's size interpolation based on the entity's age.
 
 ## Scale By Age Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| end_scale | 1 | Decimal number | Ending scale of the entity when it's fully grown. |  | 
-| start_scale | 1 | Decimal number | Initial scale of the newborn entity. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| end_scale | 1 | Decimal number | Ending scale of the entity when it's fully grown. | 
+| start_scale | 1 | Decimal number | Initial scale of the newborn entity. | 

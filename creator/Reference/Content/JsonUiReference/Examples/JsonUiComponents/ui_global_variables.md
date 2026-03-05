@@ -26,7 +26,7 @@ The _global_variables.json file that defines global variables used across all UI
 
 ## Samples
 
-#### [Colors](colors)
+#### Colors
 
 
 ```json

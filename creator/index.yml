@@ -150,7 +150,7 @@ conceptualContent:
           links:
           - url: Documents/IntroductionToLootTables.md
             itemType: get-started
-            text: Introduction to Loot Tables
+            text: Introduction to Loot and Trade Tables
           - url: Documents/LootAndTradeTableFunctions.md
             itemType: overview
             text: Loot Overloads

@@ -15,17 +15,19 @@ Defines the health pool for an entity, measured in health points (1 point = half
 
 ## Health Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max | 20 | Integer number | Maximum health this entity can have. Can be higher than the starting value to allow healing beyond initial health. |  | 
-| value | 20 | Integer number | Starting health for this entity in health points (1 point = half a heart). |  | 
-| value (Alternate 1) | *not set* | [Value](#value) item |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | 20 | Integer number | Maximum health this entity can have. Can be higher than the starting value to allow healing beyond initial health. | 
+| value | 20 | Integer number | Starting health for this entity in health points (1 point = half a heart). | 
+| value (as Object) | *not set* | [Value](#value) item |  | 
 
-## Value
+### Value
 
 #### Value Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| range_max | *not set* | Integer number |  |  | 
-| range_min | *not set* | Integer number |  |  | 
+**JSON path:** `value`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| range_max | *not set* | Integer number |  | 
+| range_min | *not set* | Integer number |  | 

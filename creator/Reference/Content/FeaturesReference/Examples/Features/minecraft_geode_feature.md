@@ -15,33 +15,40 @@ generates a rock formation to simulate a geode. Each layer of, and block within,
 
 ## Geode Feature Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| crack_point_offset | *not set* | Integer number | An offset applied to each distribution point that forms the geode crack opening. [0,10] |  | 
-| description | *not set* | [Description](#description) item |  |  | 
-| format_version | *not set* | String |  |  | 
-| inner_placements | *not set* | Array of strings |  |  | 
-| invalid_blocks_threshold | *not set* | Integer number | The threshold of invalid blocks for a geode to have a distribution point in before it aborts generation entirely. |  | 
-| max_distribution_points | *not set* | Integer number | The maximum number of points inside the distance field that can get generated. The distance field is the area consisting of all points with a minimum distance to all destribution points. [0,20] |  | 
-| max_outer_wall_distance | *not set* | Integer number | The maximum distance each distribution point can be from the outer wall. [0,20] |  | 
-| max_point_offset | *not set* | Integer number | The highest possible value of random offset applied to the position of each distribution point. [0,10] |  | 
-| max_radius | *not set* | Integer number | The maximum possible radius of the geode generated. |  | 
-| min_distribution_points | *not set* | Integer number | The minimum number of points inside the distance field that can get generated. The distance field is the area consisting of all points with a minimum distance to all destribution points. [0,10] |  | 
-| min_outer_wall_distance | *not set* | Integer number | The minimum distance each distribution point must be from the outer wall. [0,10] |  | 
-| min_point_offset | *not set* | Integer number | The lowest possible value of random offset applied to the position of each distribution point. [0,10] |  | 
-| placements_require_layer0_alternate | *not set* | Boolean true/false | If true, the potential placement block will only be placed on the alternate layer0 blocks that get placed. Potential placement blocks are blocks that depend on the existance of another block to be placed. The latter are the layer0 alternate blocks. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| crack_point_offset | *not set* | Integer number | An offset applied to each distribution point that forms the geode crack opening. [0,10] | 
+| description | *not set* | [Description](#description) item |  | 
+| format_version | *not set* | String |  | 
+| inner_placements | *not set* | Array of strings |  | 
+| invalid_blocks_threshold | *not set* | Integer number | The threshold of invalid blocks for a geode to have a distribution point in before it aborts generation entirely. | 
+| max_distribution_points | *not set* | Integer number | The maximum number of points inside the distance field that can get generated. The distance field is the area consisting of all points with a minimum distance to all destribution points. [0,20] | 
+| max_outer_wall_distance | *not set* | Integer number | The maximum distance each distribution point can be from the outer wall. [0,20] | 
+| max_point_offset | *not set* | Integer number | The highest possible value of random offset applied to the position of each distribution point. [0,10] | 
+| max_radius | *not set* | Integer number | The maximum possible radius of the geode generated. | 
+| min_distribution_points | *not set* | Integer number | The minimum number of points inside the distance field that can get generated. The distance field is the area consisting of all points with a minimum distance to all destribution points. [0,10] | 
+| min_outer_wall_distance | *not set* | Integer number | The minimum distance each distribution point must be from the outer wall. [0,10] | 
+| min_point_offset | *not set* | Integer number | The lowest possible value of random offset applied to the position of each distribution point. [0,10] | 
+| placements_require_layer0_alternate | *not set* | Boolean true/false | If true, the potential placement block will only be placed on the alternate layer0 blocks that get placed. | 
 
-## Description
+### placements_require_layer0_alternate
+
+If true, the potential placement block will only be placed on the alternate layer0 blocks that get placed. Potential placement blocks are blocks that depend on the existance of another block to be placed. The latter are the layer0 alternate blocks.
+
+
+### Description
 
 #### Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
+**JSON path:** `description`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. | 
 
 ## Samples
 
-#### [Example](example)
+#### Example
 
 
 ```json

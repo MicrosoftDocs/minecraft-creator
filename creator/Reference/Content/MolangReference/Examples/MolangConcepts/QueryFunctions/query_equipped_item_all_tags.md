@@ -15,7 +15,7 @@ Takes a slot name followed by any tag you want to check for in the form of 'tag_
 
 ## Samples
 
-#### [Example](Example)
+#### Example
 
 
 ```json

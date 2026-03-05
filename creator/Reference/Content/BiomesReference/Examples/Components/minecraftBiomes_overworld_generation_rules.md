@@ -18,14 +18,22 @@ Controls how this biome is instantiated (and then potentially modified) during w
 
 ## Biome Overworld Generation Rules Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| generate_for_climates | *not set* | String | Controls the world generation climate categories that this biome can spawn for. Each entry is an array of [climate_name, weight] where climate_name is 'medium', 'warm', 'lukewarm', 'cold', or 'frozen'. |  | 
-| hills_transformation | *not set* | Array of strings | An array of any size containing arrays of exactly two elements. For each contained array, the first element is a climate category string ('medium', 'warm', 'lukewarm', 'cold', or 'frozen'). The second element is a positive integer for how much that entry is weighted relative to other entries. |  | 
-| hills_transformation (Alternate 1) | *not set* | String |  |  | 
-| mutate_transformation | *not set* | Array of strings | What biome to switch to when converting to a mutated biome |  | 
-| mutate_transformation (Alternate 1) | *not set* | String |  |  | 
-| river_transformation | *not set* | Array of strings | What biome to switch to when converting to a river biome (if not the Vanilla 'river' biome) |  | 
-| river_transformation (Alternate 1) | *not set* | String |  |  | 
-| shore_transformation | *not set* | Array of strings | What biome to switch to when adjacent to an ocean biome |  | 
-| shore_transformation (Alternate 1) | *not set* | String |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| generate_for_climates | *not set* | String | Controls the world generation climate categories that this biome can spawn for. | 
+| hills_transformation | *not set* | Array of strings | An array of any size containing arrays of exactly two elements. | 
+| hills_transformation (as String) | *not set* | String |  | 
+| mutate_transformation | *not set* | Array of strings | What biome to switch to when converting to a mutated biome | 
+| mutate_transformation (as String) | *not set* | String |  | 
+| river_transformation | *not set* | Array of strings | What biome to switch to when converting to a river biome (if not the Vanilla 'river' biome) | 
+| river_transformation (as String) | *not set* | String |  | 
+| shore_transformation | *not set* | Array of strings | What biome to switch to when adjacent to an ocean biome | 
+| shore_transformation (as String) | *not set* | String |  | 
+
+### generate_for_climates
+
+Controls the world generation climate categories that this biome can spawn for. Each entry is an array of [climate_name, weight] where climate_name is 'medium', 'warm', 'lukewarm', 'cold', or 'frozen'.
+
+### hills_transformation
+
+An array of any size containing arrays of exactly two elements. For each contained array, the first element is a climate category string ('medium', 'warm', 'lukewarm', 'cold', or 'frozen'). The second element is a positive integer for how much that entry is weighted relative to other entries.

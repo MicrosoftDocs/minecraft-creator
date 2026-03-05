@@ -15,9 +15,14 @@ Specifies that this entity takes fire damage when exposed to direct sunlight. Th
 
 ## Entity Burns In Daylight Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| protection_slot | slot.armor.head | [Protection Slot](#protection-slot-choices) choices | The equipment slot that provides protection from burning in sunlight. If armor is equipped in this slot, the entity will not burn. Commonly set to 'slot.armor.head' for helmets or 'slot.armor.body' for horse armor. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| protection_slot | slot.armor.head | [Protection Slot](#protection-slot-choices) choices | The equipment slot that provides protection from burning in sunlight. | 
+
+### protection_slot
+
+The equipment slot that provides protection from burning in sunlight. If armor is equipped in this slot, the entity will not burn. Commonly set to 'slot.armor.head' for helmets or 'slot.armor.body' for horse armor.
+
 
 ### Protection Slot choices
 

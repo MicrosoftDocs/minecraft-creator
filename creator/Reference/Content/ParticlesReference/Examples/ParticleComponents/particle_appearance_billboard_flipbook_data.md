@@ -15,34 +15,31 @@ Enables sprite sheet animation for particle billboards, cycling through frames o
 
 ## Client Particles Particle Appearance Billboard Flipbook Data Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| base_UV | *not set* | Keyed set of strings |  |  | 
-| base_UV (Alternate 1) | *not set* | Key/item pairs of [Base UV](#base-uv) items |  |  | 
-| base_UV (Alternate 2) | *not set* | Decimal number |  |  | 
-| frames_per_second | 0 | Decimal number |  |  | 
-| loop | false | Boolean true/false |  |  | 
-| max_frame | *not set* | Keyed set of strings |  |  | 
-| max_frame (Alternate 1) | *not set* | Key/item pairs of [Max Frame](#max-frame) items |  |  | 
-| max_frame (Alternate 2) | *not set* | Decimal number |  |  | 
-| size_UV | [1, 1] | Array of numbers |  |  | 
-| step_UV | [0, 0] | Array of numbers |  |  | 
-| stretch_to_lifetime | false | Boolean true/false |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| base_UV | *not set* | Keyed set of strings |  | 
+| base_UV (Base UV) | *not set* | Key/item pairs of [Base UV (Base UV)](#base-uv-base-uv) items |  | 
+| base_UV (as Decimal number) | *not set* | Decimal number |  | 
+| frames_per_second | 0 | Decimal number |  | 
+| loop | false | Boolean true/false |  | 
+| max_frame | *not set* | Keyed set of strings |  | 
+| max_frame (Max Frame) | *not set* | Key/item pairs of [Max Frame (Max Frame)](#max-frame-max-frame) items |  | 
+| max_frame (as Decimal number) | *not set* | Decimal number |  | 
+| size_UV | [1, 1] | Array of numbers |  | 
+| step_UV | [0, 0] | Array of numbers |  | 
+| stretch_to_lifetime | false | Boolean true/false |  | 
 
-## Base UV
+### Base UV (Base UV)
 
 #### Base UV Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `base_UV`
 
-## Max Frame
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
-#### Max Frame Properties
+### Max Frame (Max Frame)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+Same structure as [Base UV (Base UV)](#base-uv-base-uv).

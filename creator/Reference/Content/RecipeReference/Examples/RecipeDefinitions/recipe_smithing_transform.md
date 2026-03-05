@@ -18,35 +18,39 @@ A smithing table transformation recipe for Minecraft Bedrock Edition. Smithing t
 
 ## Smithing Transform Recipe Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| format_version | *not set* | Version | The format version of this recipe file. |  | 
-| minecraft:recipe_smithing_transform | *not set* | [Recipe Smithing Transform](#recipe-smithing-transform) item | The smithing transform recipe definition container. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| format_version | *not set* | Version | The format version of this recipe file. | 
+| minecraft:recipe_smithing_transform | *not set* | [Recipe Smithing Transform](#recipe-smithing-transform) item | The smithing transform recipe definition container. | 
 
-## Recipe Smithing Transform
+### Recipe Smithing Transform
 
 #### Recipe Smithing Transform Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| addition | *not set* | String | The addition material (e.g., 'minecraft:netherite_ingot'). |  | 
-| base | *not set* | String | The base item to be transformed (e.g., 'minecraft:diamond_axe'). |  | 
-| description | *not set* | [Description](#description) item | The recipe description containing identifier. |  | 
-| result | *not set* | String | The resulting transformed item. |  | 
-| tags | *not set* | Array of strings | Tags that specify this is a smithing_table recipe. |  | 
-| template | *not set* | String | The smithing template item (e.g., 'minecraft:netherite_upgrade_smithing_template'). |  | 
+**JSON path:** `minecraft:recipe_smithing_transform`
 
-## Description
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| addition | *not set* | String | The addition material (e.g., 'minecraft:netherite_ingot'). | 
+| base | *not set* | String | The base item to be transformed (e.g., 'minecraft:diamond_axe'). | 
+| description | *not set* | [Description](#description) item | The recipe description containing identifier. | 
+| result | *not set* | String | The resulting transformed item. | 
+| tags | *not set* | Array of strings | Tags that specify this is a smithing_table recipe. | 
+| template | *not set* | String | The smithing template item (e.g., 'minecraft:netherite_upgrade_smithing_template'). | 
 
-#### Description Properties
+#### Description
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The unique identifier for this recipe. |  | 
+##### Description Properties
+
+**JSON path:** `minecraft:recipe_smithing_transform > description`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The unique identifier for this recipe. | 
 
 ## Samples
 
-#### [Netherite](netherite)
+#### Netherite
 
 
 ```json

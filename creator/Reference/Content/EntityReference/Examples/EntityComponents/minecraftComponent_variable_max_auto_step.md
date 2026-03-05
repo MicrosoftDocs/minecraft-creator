@@ -15,10 +15,10 @@ Entities with this component will have a maximum auto step height that is differ
 
 ## Variable Max Auto Step Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| base_value | 0.5625 | Decimal number | The maximum auto step height when on any other block. |  | 
-| controlled_value | 0.5625 | Decimal number | The maximum auto step height when on any other block and controlled by the player. |  | 
-| jump_prevented_value | 0.5625 | Decimal number | The maximum auto step height when on a block that prevents jumping. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| base_value | 0.5625 | Decimal number | The maximum auto step height when on any other block. | 
+| controlled_value | 0.5625 | Decimal number | The maximum auto step height when on any other block and controlled by the player. | 
+| jump_prevented_value | 0.5625 | Decimal number | The maximum auto step height when on a block that prevents jumping. | 
 
 ## Samples

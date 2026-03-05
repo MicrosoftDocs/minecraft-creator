@@ -42,7 +42,7 @@
     },
     {
       "id": "104",
-      "title": "JSON Parse Error",
+      "title": "JSON Syntax Error (Deprecation Check)",
       "messageType": 2,
       "dataType": 2,
       "description": "Error when a JSON file could not be parsed during deprecation checking.",

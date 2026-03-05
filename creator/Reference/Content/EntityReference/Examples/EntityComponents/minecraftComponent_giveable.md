@@ -15,12 +15,12 @@ Defines sets of items that can be used to trigger events when used on this entit
 
 ## Giveable Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| cooldown | 0 | Decimal number | An optional cool down in seconds to prevent spamming interactions. |  | 
-| items | *not set* | Array of strings | The list of items that can be given to the entity to place in their inventory. Can be an array or a single item string. |  | 
-| items (Alternate 1) | *not set* | String |  |  | 
-| on_give | *not set* | Object | Event to fire when the correct item is given. Can be an object with event and target properties, or a simple event string. |  | 
-| on_give (Alternate 1) | *not set* | String |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| cooldown | 0 | Decimal number | An optional cool down in seconds to prevent spamming interactions. | 
+| items | *not set* | Array of strings | The list of items that can be given to the entity to place in their inventory. Can be an array or a single item string. | 
+| items (as String) | *not set* | String |  | 
+| on_give | *not set* | Object | Event to fire when the correct item is given. Can be an object with event and target properties, or a simple event string. | 
+| on_give (as String) | *not set* | String |  | 
 
 ## Samples

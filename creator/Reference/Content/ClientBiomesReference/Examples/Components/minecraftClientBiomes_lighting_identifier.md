@@ -15,6 +15,6 @@ Set the identifier used for lighting in Vibrant Visuals mode. Identifiers must r
 
 ## Client Biome Lighting Identifier Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| lighting_identifier | *not set* | Object | Identifier of lighting definition to use |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| lighting_identifier | *not set* | Object | Identifier of lighting definition to use | 

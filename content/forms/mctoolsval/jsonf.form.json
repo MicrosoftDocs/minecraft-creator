@@ -151,7 +151,7 @@
     },
     {
       "id": "401",
-      "title": "JSON Parse Error",
+      "title": "JSON Parse Error (Form Validation)",
       "messageType": "error",
       "dataType": 2,
       "description": "Error when a JSON file could not be parsed for form validation. The file may have syntax errors such as missing commas, unquoted keys, trailing commas, or invalid escape sequences.",

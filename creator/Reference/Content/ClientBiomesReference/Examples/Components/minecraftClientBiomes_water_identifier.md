@@ -15,6 +15,6 @@ Set the identifier used for rendering water in Vibrant Visuals mode. Identifiers
 
 ## Client Biome Water Identifier Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| water_identifier | *not set* | Object | Identifier of water definition to use |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| water_identifier | *not set* | Object | Identifier of water definition to use | 

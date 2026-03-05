@@ -15,24 +15,26 @@ Generates a blob of the specified block with the specified dimensions. For the m
 
 ## Partially Exposed Blob Feature Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| description | *not set* | [Description](#description) item |  |  | 
-| exposed_face | *not set* | String | Defines a block face that is allowed to be exposed to air and/or water. Other faces need to be embedded for blocks to be placed by this feature. Defaults to upwards face. |  | 
-| format_version | *not set* | String |  |  | 
-| placement_radius_around_floor | *not set* | Integer number | Defines the cubic radius of the blob. [1, 8] |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| description | *not set* | [Description](#description) item |  | 
+| exposed_face | *not set* | String | Defines a block face that is allowed to be exposed to air and/or water. Other faces need to be embedded for blocks to be placed by this feature. Defaults to upwards face. | 
+| format_version | *not set* | String |  | 
+| placement_radius_around_floor | *not set* | Integer number | Defines the cubic radius of the blob. [1, 8] | 
 
-## Description
+### Description
 
 #### Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
+**JSON path:** `description`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. | 
 
 ## Samples
 
-#### [Example](example)
+#### Example
 
 
 ```json

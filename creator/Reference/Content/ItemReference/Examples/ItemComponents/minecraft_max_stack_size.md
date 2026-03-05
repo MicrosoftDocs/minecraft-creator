@@ -19,9 +19,9 @@ This item can also be represented as a `Integer number`.
 
 ## Max Stack Size Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | 64 | Integer number | How many of an item that can be stacked together. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | 64 | Integer number | How many of an item that can be stacked together. | 
 
 ## Samples
 

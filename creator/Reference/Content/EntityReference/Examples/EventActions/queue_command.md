@@ -15,11 +15,11 @@ Will queue a slash command or a series of slash commands set in an array to trig
 
 ## Queue Command Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| command | *not set* | String | Slash command to run. |  | 
-| command (Alternate 1) | *not set* | Array of strings | List of slash commands to run. |  | 
-| target | *not set* | [Target](#target-choices) choices | The target context to execute against. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| command | *not set* | String | Slash command to run. | 
+| command (as Array of strings) | *not set* | Array of strings | List of slash commands to run. | 
+| target | *not set* | [Target](#target-choices) choices | The target context to execute against. | 
 
 ### Target choices
 

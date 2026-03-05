@@ -22,9 +22,9 @@ This item can also be represented as a `Decimal number`.
 
 ## Use Duration Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | *not set* | Decimal number | How long the item takes to use in seconds. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | *not set* | Decimal number | How long the item takes to use in seconds. | 
 
 ## Samples
 

@@ -15,74 +15,52 @@ Generates surface on blocks with non-solid blocks above or below.
 
 ## Biome Capped Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| beach_material | *not set* | String | Material used to decorate surface near sea level. |  | 
-| beach_material (Alternate 1) | *not set* | [Beach Material](#beach-material) item |  |  | 
-| ceiling_materials | *not set* | String | Materials used for the surface ceiling. Value must have at least 1 items. |  | 
-| ceiling_materials (Alternate 1) | *not set* | [Ceiling Materials](#ceiling-materials) item |  |  | 
-| floor_materials | *not set* | String | Materials used for the surface floor. Value must have at least 1 items. |  | 
-| floor_materials (Alternate 1) | *not set* | [Floor Materials](#floor-materials) item |  |  | 
-| foundation_material | *not set* | String | Material used to replace solid blocks that are not surface blocks. |  | 
-| foundation_material (Alternate 1) | *not set* | [Foundation Material](#foundation-material) item |  |  | 
-| sea_material | *not set* | String | Material used to replace air blocks below sea level. |  | 
-| sea_material (Alternate 1) | *not set* | [Sea Material](#sea-material) item |  |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| beach_material | *not set* | String | Material used to decorate surface near sea level. | 
+| beach_material (Beach Material) | *not set* | [Beach Material (Beach Material)](#beach-material-beach-material) item |  | 
+| ceiling_materials | *not set* | String | Materials used for the surface ceiling. Value must have at least 1 items. | 
+| ceiling_materials (Ceiling Materials) | *not set* | [Ceiling Materials (Ceiling Materials)](#ceiling-materials-ceiling-materials) item |  | 
+| floor_materials | *not set* | String | Materials used for the surface floor. Value must have at least 1 items. | 
+| floor_materials (Floor Materials) | *not set* | [Floor Materials (Floor Materials)](#floor-materials-floor-materials) item |  | 
+| foundation_material | *not set* | String | Material used to replace solid blocks that are not surface blocks. | 
+| foundation_material (Foundation Material) | *not set* | [Foundation Material (Foundation Material)](#foundation-material-foundation-material) item |  | 
+| sea_material | *not set* | String | Material used to replace air blocks below sea level. | 
+| sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use | 
 
-## Beach Material
+### Beach Material (Beach Material)
 
 #### Beach Material Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+**JSON path:** `beach_material`
 
-## Ceiling Materials
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| name | *not set* | Object | Name of the block | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. | 
+| states (as Keyed collection of boolean values) | *not set* | Keyed collection of boolean values |  | 
+| states (as Keyed set of strings) | *not set* | Keyed set of strings |  | 
 
-#### Ceiling Materials Properties
+### Ceiling Materials (Ceiling Materials)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+Same structure as [Beach Material (Beach Material)](#beach-material-beach-material).
 
-## Floor Materials
 
-#### Floor Materials Properties
+### Floor Materials (Floor Materials)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+Same structure as [Beach Material (Beach Material)](#beach-material-beach-material).
 
-## Foundation Material
 
-#### Foundation Material Properties
+### Foundation Material (Foundation Material)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+Same structure as [Beach Material (Beach Material)](#beach-material-beach-material).
 
-## Sea Material
 
-#### Sea Material Properties
+### Sea Material (Sea Material)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+Same structure as [Beach Material (Beach Material)](#beach-material-beach-material).
+
 
 ### Type choices
 

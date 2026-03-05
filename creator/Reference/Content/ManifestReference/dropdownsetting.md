@@ -15,24 +15,26 @@ A dropdown selection setting that appears in the pack's world settings UI. Playe
 
 ## 3.0.0.DropdownSetting Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| default | *not set* | String |  |  | 
-| name | *not set* | String |  |  | 
-| options | *not set* | [Options](#3.0.0.dropdownoption) item |  |  | 
-| text | *not set* | String |  |  | 
-| type | *not set* | [Type](#type-choices) choices |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| default | *not set* | String |  | 
+| name | *not set* | String |  | 
+| options | *not set* | [Options](#3.0.0.dropdownoption) item |  | 
+| text | *not set* | String |  | 
+| type | *not set* | [Type](#type-choices) choices |  | 
 
-## 3.0.0.DropdownOption
+### 3.0.0.DropdownOption
 A single option within a dropdown setting. Contains a unique identifier used by scripts and localized display text shown to players. Options are presented in the order defined.
 
 
 #### 3.0.0.DropdownOption Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | String |  |  | 
-| text | *not set* | String |  |  | 
+**JSON path:** `options`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| name | *not set* | String |  | 
+| text | *not set* | String |  | 
 
 ### Type choices
 

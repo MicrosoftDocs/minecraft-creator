@@ -19,17 +19,19 @@ Defines a set of conditions under which an entity should take damage.
 |:----------|:-------------|:----|:-----------|:------------- |
 | damage_conditions | *not set* | Array of [Damage Conditions](#damage-conditions) items | List of damage conditions that when met can cause damage to the entity. | Allay: `[{"cause":"lava","damage_per_tick":4,"filters":{"subject":"self","test":"in_lava"}}]`, Armor Stand: `[{"cause":"lava","damage_per_tick":4,"filters":{"operator":"==","test":"in_lava","subject":"self","value":true}}]` | 
 
-## Damage Conditions
+### Damage Conditions
 List of damage conditions that when met can cause damage to the entity.
 
 
 #### Damage Conditions Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| cause | *not set* | String | The kind of damage that is caused to the entity. Various armors and spells use this to determine if the entity is immune. |  | 
-| damage_per_tick | 1 | Integer number | The amount of damage done each tick that the conditions are met. |  | 
-| filters | *not set* | Minecraft filter | The set of conditions that must be satisfied before the entity takes the defined damage. |  | 
+**JSON path:** `damage_conditions`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| cause | *not set* | String | The kind of damage that is caused to the entity. Various armors and spells use this to determine if the entity is immune. | 
+| damage_per_tick | 1 | Integer number | The amount of damage done each tick that the conditions are met. | 
+| filters | *not set* | Minecraft filter | The set of conditions that must be satisfied before the entity takes the defined damage. | 
 
 ## Samples
 

@@ -23,10 +23,10 @@ Allows Equine mobs to be Horse Traps and be triggered like them, spawning a ligh
 
 ## Skeleton Horse Trap Behavior Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| duration | 1 | Decimal number | Amount of time in seconds the trap exists. After this amount of time is elapsed, the trap is removed from the world if it hasn't been activated |  | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
-| within_radius | 0 | Decimal number | Distance in blocks that the player has to be within to trigger the horse trap |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| duration | 1 | Decimal number | Amount of time in seconds the trap exists. After this amount of time is elapsed, the trap is removed from the world if it hasn't been activated | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
+| within_radius | 0 | Decimal number | Distance in blocks that the player has to be within to trigger the horse trap | 
 
 ## Samples

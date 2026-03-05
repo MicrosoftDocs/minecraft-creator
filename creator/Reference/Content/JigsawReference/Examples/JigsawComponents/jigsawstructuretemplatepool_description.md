@@ -15,6 +15,6 @@ JigsawStructureTemplatePool Description.
 
 ## JigsawStructureTemplatePool Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | Identifier of the template pool. Used by Jigsaw Structures to assign processors to Structure Templates. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | Identifier of the template pool. Used by Jigsaw Structures to assign processors to Structure Templates. | 

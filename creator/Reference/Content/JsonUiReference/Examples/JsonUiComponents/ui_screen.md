@@ -18,6 +18,6 @@ A UI screen definition file for Minecraft Bedrock Edition. UI screens define com
 
 ## UI Screen Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| namespace | *not set* | String | The namespace for this UI screen. Used to reference elements from other UI files using the 'namespace.element_name' syntax. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| namespace | *not set* | String | The namespace for this UI screen. Used to reference elements from other UI files using the 'namespace.element_name' syntax. | 

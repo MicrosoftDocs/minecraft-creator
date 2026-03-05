@@ -8,7 +8,7 @@
       "title": "action",
       "type": "string",
       "isOptional": false,
-      "description": "Required. Adding a player, removing a player, reloading the allowlist, or listing all players on it.",
+      "description": "The allowlist action to perform: add, remove, list, or reload.",
       "commandType": "ALLOWLISTACTION"
     },
     {
@@ -16,29 +16,68 @@
       "title": "name",
       "type": "string",
       "isOptional": true,
-      "description": "Optional. The players on the allowlist. Must be a valid player name.",
+      "description": "The player name to add to or remove from the allowlist.",
       "subFormId": "type_id",
       "commandType": "ID"
     }
   ],
-  "aliases": [
-    "whitelist"
-  ],
+  "aliases": ["whitelist"],
   "overloads": [
     {
       "id": "1",
-      "title": "Action",
-      "description": "The overload must include an action.",
+      "title": "Add player",
+      "description": "Adds a player to the server allowlist.",
       "params": [
         {
           "name": "action",
-          "type": "ALLOWLISTACTION",
+          "type": "ALLOWLISTACTIONADD",
           "isOptional": false
         },
         {
           "name": "name",
           "type": "ID",
-          "isOptional": true
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Remove player",
+      "description": "Removes a player from the server allowlist.",
+      "params": [
+        {
+          "name": "action",
+          "type": "ALLOWLISTACTIONREMOVE",
+          "isOptional": false
+        },
+        {
+          "name": "name",
+          "type": "ID",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "List players",
+      "description": "Lists all players on the server allowlist.",
+      "params": [
+        {
+          "name": "action",
+          "type": "ALLOWLISTACTIONLIST",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Reload allowlist",
+      "description": "Reloads the allowlist from the file on disk.",
+      "params": [
+        {
+          "name": "action",
+          "type": "ALLOWLISTACTIONRELOAD",
+          "isOptional": false
         }
       ]
     }

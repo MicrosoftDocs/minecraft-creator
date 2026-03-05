@@ -27,7 +27,7 @@
     },
     {
       "id": "102",
-      "title": "JSON Parse Error",
+      "title": "JSON Parse Error (Beta Features)",
       "messageType": 2,
       "dataType": 2,
       "description": "The file contains invalid JSON syntax and could not be parsed. Check for missing commas, unquoted strings, trailing commas, or other JSON syntax errors. Use a JSON validator to identify the exact location of the error.",

@@ -15,12 +15,12 @@ Tests for the presence of a damaged named item in the designated slot of the sub
 
 ## Has Damaged Equipment Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| domain | any | [Domain](#domain-choices) choices | (Optional) The equipment location to test |  | 
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | *not set* | String | (Required) The item name to look for |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| domain | any | [Domain](#domain-choices) choices | (Optional) The equipment location to test | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | 
+| value | *not set* | String | (Required) The item name to look for | 
 
 ### Domain choices
 

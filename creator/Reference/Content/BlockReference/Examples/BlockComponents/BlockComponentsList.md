@@ -14,9 +14,9 @@ ms.date: 02/11/2025
 |:-----|:----------|
 | [minecraft:block_light_absorption](./minecraftBlock_block_light_absorption.md)| Legacy component (format_version < 1.19.40). |
 | [minecraft:block_light_emission](./minecraftBlock_block_light_emission.md)| Legacy component (format_version < 1.19.40). |
-| [minecraft:chest_obstruction](./minecraftBlock_chest_obstruction.md)| The description identifier of the chest obstruction component<br>Experimental toggles required: Upcoming Creator Features |
+| [minecraft:chest_obstruction](./minecraftBlock_chest_obstruction.md)| The description identifier of the chest obstruction component Experimental toggles required: Upcoming Creator Features |
 | [minecraft:collision_box](./minecraftBlock_collision_box.md)| Defines the area of the block that collides with entities. |
-| [minecraft:connection_rule](./minecraftBlock_connection_rule.md)| Defines whether other blocks such as fences, walls, bars, and glass panes are allowed to connect to this block.<br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.26.0) |
+| [minecraft:connection_rule](./minecraftBlock_connection_rule.md)| Defines whether other blocks such as fences, walls, bars, and glass panes are allowed to connect to this block. Experimental toggles required: Upcoming Creator Features (in format versions before 1.26.0) |
 | [minecraft:crafting_table](./minecraftBlock_crafting_table.md)| Makes your block into a custom crafting table which enables the crafting table UI and the ability to craft recipes. |
 | [minecraft:destroy_time](./minecraftBlock_destroy_time.md)| Legacy component (format_version < 1.19.40). |
 | [minecraft:destructible_by_explosion](./minecraftBlock_destructible_by_explosion.md)| Describes the destructible by explosion properties for this block. |
@@ -37,14 +37,14 @@ ms.date: 02/11/2025
 | [minecraft:loot](./minecraftBlock_loot.md)| Specifies the path to the loot table that determines what items are dropped when the block is destroyed. |
 | [minecraft:map_color](./minecraftBlock_map_color.md)| Sets the color of the block when rendered to a map. |
 | [minecraft:material_instances](./minecraftBlock_material_instances.md)| The material instances for a block. |
-| [minecraft:movable](./minecraftBlock_movable.md)| The description identifier of the movable component<br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.100) |
+| [minecraft:movable](./minecraftBlock_movable.md)| The description identifier of the movable component Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.100) |
 | [minecraft:placement_filter](./minecraftBlock_placement_filter.md)| Sets rules for under what conditions the block can be placed and survive. |
-| [minecraft:precipitation_interactions](./minecraftBlock_precipitation_interactions.md)| Component that determines how the block will interact with rain and snow<br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.120) |
+| [minecraft:precipitation_interactions](./minecraftBlock_precipitation_interactions.md)| Component that determines how the block will interact with rain and snow Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.120) |
 | [minecraft:random_offset](./minecraftBlock_random_offset.md)| This component defines a random offset for the block, seeded based on the block's position and the specified range and steps. |
 | [minecraft:redstone_conductivity](./minecraftBlock_redstone_conductivity.md)| The basic redstone properties of a block; if the component is not provided the default values are used. |
 | [minecraft:redstone_consumer](./minecraftBlock_redstone_consumer.md)| A component describing how a block can consume and potentially propogate a redstone signal. |
 | [minecraft:redstone_producer](./minecraftBlock_redstone_producer.md)| If added to a block, indicates that it produces a redstone signal. |
-| [minecraft:replaceable](./minecraftBlock_replaceable.md)| A block with this component can be replaced when another block is placed in the same block position.<br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.60) |
+| [minecraft:replaceable](./minecraftBlock_replaceable.md)| A block with this component can be replaced when another block is placed in the same block position. Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.60) |
 | [minecraft:selection_box](./minecraftBlock_selection_box.md)| Defines the area of the block that is selected by the player's cursor (the outline shown when looking at the block). |
 | [minecraft:support](./minecraftBlock_support.md)| Defines the support shape of the block. |
 | [minecraft:tick](./minecraftBlock_tick.md)| Causes the block to tick based on a regular interval equal to a number of ticks randomly chosen from the internal_range parameter. |

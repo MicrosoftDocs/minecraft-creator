@@ -15,172 +15,160 @@ Minecraft's color grading system allows for many degrees of customization of the
 
 ## Color Grading Settings Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| format_version | *not set* | String | format_version |  | 
-| minecraft:color_grading_settings | *not set* | [Color Grading Settings](#color-grading-settings) item | minecraft:color_grading_settings |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| format_version | *not set* | String | format_version | 
+| minecraft:color_grading_settings | *not set* | [Color Grading Settings](#color-grading-settings) item | minecraft:color_grading_settings | 
 
-## Color Grading Settings
+### Color Grading Settings
 ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings.
 
 
 #### ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| color_grading | *not set* | [Color Grading](#color-grading) item | color_grading |  | 
-| description | *not set* | [Description](#description) item | description |  | 
-| tone_mapping | *not set* | [Tone Mapping](#tone-mapping) item | tone_mapping |  | 
+**JSON path:** `minecraft:color_grading_settings`
 
-## Color Grading
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| color_grading | *not set* | [Color Grading](#color-grading) item | color_grading | 
+| description | *not set* | [Description](#description) item | description | 
+| tone_mapping | *not set* | [Tone Mapping](#tone-mapping) item | tone_mapping | 
+
+#### Color Grading
 ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ColorGrading.
 
 
-#### ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ColorGrading Properties
+##### ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ColorGrading Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| highlights | *not set* | [Highlights](#highlights) item | highlights |  | 
-| midtones | *not set* | [Midtones](#midtones) item | midtones |  | 
-| shadows | *not set* | [Shadows](#shadows) item | shadows |  | 
+**JSON path:** `minecraft:color_grading_settings > color_grading`
 
-## Highlights
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| highlights | *not set* | [Highlights](#highlights) item | highlights | 
+| midtones | *not set* | [Midtones](#midtones) item | midtones | 
+| shadows | *not set* | [Shadows](#shadows) item | shadows | 
+
+##### Highlights
 ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Highlights.
 
 
-#### ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Highlights Properties
+###### ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Highlights Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| contrast | *not set* | Array of numbers | contrast Value must be <= 4. |  | 
-| contrast (Alternate 1) | *not set* | [Contrast](#contrast) item |  |  | 
-| enabled | *not set* | Boolean true/false | enabled |  | 
-| gain | *not set* | Array of numbers | gain Value must be <= 10. |  | 
-| gain (Alternate 1) | *not set* | [Gain](#gain) item |  |  | 
-| gamma | *not set* | Array of numbers | gamma Value must be <= 4. |  | 
-| gamma (Alternate 1) | *not set* | [Gamma](#gamma) item |  |  | 
-| highlightsMin | *not set* | Decimal number | highlightsMin Value must be >= 1. Value must be <= 20. |  | 
-| offset | *not set* | Array of numbers | offset Value must be >= -1. Value must be <= 1. |  | 
-| offset (Alternate 1) | *not set* | [Offset](#offset) item |  |  | 
-| saturation | *not set* | Array of numbers | saturation Value must be <= 10. |  | 
-| saturation (Alternate 1) | *not set* | [Saturation](#saturation) item |  |  | 
+**JSON path:** `minecraft:color_grading_settings > color_grading > highlights`
 
-## Contrast
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| contrast | *not set* | Array of numbers | contrast Value must be <= 4. | 
+| contrast (Contrast) | *not set* | [Contrast (Contrast)](#contrast-contrast) item |  | 
+| enabled | *not set* | Boolean true/false | enabled | 
+| gain | *not set* | Array of numbers | gain Value must be <= 10. | 
+| gain (Gain) | *not set* | [Gain (Gain)](#gain-gain) item |  | 
+| gamma | *not set* | Array of numbers | gamma Value must be <= 4. | 
+| gamma (Gamma) | *not set* | [Gamma (Gamma)](#gamma-gamma) item |  | 
+| highlightsMin | *not set* | Decimal number | highlightsMin Value must be >= 1. Value must be <= 20. | 
+| offset | *not set* | Array of numbers | offset Value must be >= -1. Value must be <= 1. | 
+| offset (Offset) | *not set* | [Offset (Offset)](#offset-offset) item |  | 
+| saturation | *not set* | Array of numbers | saturation Value must be <= 10. | 
+| saturation (Saturation) | *not set* | [Saturation (Saturation)](#saturation-saturation) item |  | 
+
+###### Contrast (Contrast)
 Contrast
 
 
-#### Contrast Properties
+###### Contrast Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| x | *not set* | Decimal number | x |  | 
-| y | *not set* | Decimal number | y |  | 
-| z | *not set* | Decimal number | z |  | 
+**JSON path:** `minecraft:color_grading_settings > color_grading > highlights > contrast`
 
-## Gain
-Gain
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| x | *not set* | Decimal number | x | 
+| y | *not set* | Decimal number | y | 
+| z | *not set* | Decimal number | z | 
 
+###### Gain (Gain)
 
-#### Gain Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| x | *not set* | Decimal number | x |  | 
-| y | *not set* | Decimal number | y |  | 
-| z | *not set* | Decimal number | z |  | 
-
-## Gamma
-Gamma
+Same structure as [Contrast (Contrast)](#contrast-contrast).
 
 
-#### Gamma Properties
+###### Gamma (Gamma)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| x | *not set* | Decimal number | x |  | 
-| y | *not set* | Decimal number | y |  | 
-| z | *not set* | Decimal number | z |  | 
-
-## Offset
-Offset
+Same structure as [Contrast (Contrast)](#contrast-contrast).
 
 
-#### Offset Properties
+###### Offset (Offset)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| x | *not set* | Decimal number | x |  | 
-| y | *not set* | Decimal number | y |  | 
-| z | *not set* | Decimal number | z |  | 
-
-## Saturation
-Saturation
+Same structure as [Contrast (Contrast)](#contrast-contrast).
 
 
-#### Saturation Properties
+###### Saturation (Saturation)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| x | *not set* | Decimal number | x |  | 
-| y | *not set* | Decimal number | y |  | 
-| z | *not set* | Decimal number | z |  | 
+Same structure as [Contrast (Contrast)](#contrast-contrast).
 
-## Midtones
+
+##### Midtones
 ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Midtones.
 
 
-#### ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Midtones Properties
+###### ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Midtones Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| contrast | *not set* | Array of numbers | contrast Value must be <= 4. |  | 
-| contrast (Alternate 1) | *not set* | [Contrast](#contrast) item |  |  | 
-| gain | *not set* | Array of numbers | gain Value must be <= 10. |  | 
-| gain (Alternate 1) | *not set* | [Gain](#gain) item |  |  | 
-| gamma | *not set* | Array of numbers | gamma Value must be <= 4. |  | 
-| gamma (Alternate 1) | *not set* | [Gamma](#gamma) item |  |  | 
-| offset | *not set* | Array of numbers | offset Value must be >= -1. Value must be <= 1. |  | 
-| offset (Alternate 1) | *not set* | [Offset](#offset) item |  |  | 
-| saturation | *not set* | Array of numbers | saturation Value must be <= 10. |  | 
-| saturation (Alternate 1) | *not set* | [Saturation](#saturation) item |  |  | 
+**JSON path:** `minecraft:color_grading_settings > color_grading > midtones`
 
-## Shadows
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| contrast | *not set* | Array of numbers | contrast Value must be <= 4. | 
+| contrast (Contrast) | *not set* | [Contrast (Contrast)](#contrast-contrast) item |  | 
+| gain | *not set* | Array of numbers | gain Value must be <= 10. | 
+| gain (Gain) | *not set* | [Gain (Gain)](#gain-gain) item |  | 
+| gamma | *not set* | Array of numbers | gamma Value must be <= 4. | 
+| gamma (Gamma) | *not set* | [Gamma (Gamma)](#gamma-gamma) item |  | 
+| offset | *not set* | Array of numbers | offset Value must be >= -1. Value must be <= 1. | 
+| offset (Offset) | *not set* | [Offset (Offset)](#offset-offset) item |  | 
+| saturation | *not set* | Array of numbers | saturation Value must be <= 10. | 
+| saturation (Saturation) | *not set* | [Saturation (Saturation)](#saturation-saturation) item |  | 
+
+##### Shadows
 ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Shadows.
 
 
-#### ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Shadows Properties
+###### ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Shadows Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| contrast | *not set* | Array of numbers | contrast Value must be <= 4. |  | 
-| contrast (Alternate 1) | *not set* | [Contrast](#contrast) item |  |  | 
-| enabled | *not set* | Boolean true/false | enabled |  | 
-| gain | *not set* | Array of numbers | gain Value must be <= 10. |  | 
-| gain (Alternate 1) | *not set* | [Gain](#gain) item |  |  | 
-| gamma | *not set* | Array of numbers | gamma Value must be <= 4. |  | 
-| gamma (Alternate 1) | *not set* | [Gamma](#gamma) item |  |  | 
-| offset | *not set* | Array of numbers | offset Value must be >= -1. Value must be <= 1. |  | 
-| offset (Alternate 1) | *not set* | [Offset](#offset) item |  |  | 
-| saturation | *not set* | Array of numbers | saturation Value must be <= 10. |  | 
-| saturation (Alternate 1) | *not set* | [Saturation](#saturation) item |  |  | 
-| shadowsMax | *not set* | Decimal number | shadowsMax Value must be <= 1. |  | 
+**JSON path:** `minecraft:color_grading_settings > color_grading > shadows`
 
-## Description
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| contrast | *not set* | Array of numbers | contrast Value must be <= 4. | 
+| contrast (Contrast) | *not set* | [Contrast (Contrast)](#contrast-contrast) item |  | 
+| enabled | *not set* | Boolean true/false | enabled | 
+| gain | *not set* | Array of numbers | gain Value must be <= 10. | 
+| gain (Gain) | *not set* | [Gain (Gain)](#gain-gain) item |  | 
+| gamma | *not set* | Array of numbers | gamma Value must be <= 4. | 
+| gamma (Gamma) | *not set* | [Gamma (Gamma)](#gamma-gamma) item |  | 
+| offset | *not set* | Array of numbers | offset Value must be >= -1. Value must be <= 1. | 
+| offset (Offset) | *not set* | [Offset (Offset)](#offset-offset) item |  | 
+| saturation | *not set* | Array of numbers | saturation Value must be <= 10. | 
+| saturation (Saturation) | *not set* | [Saturation (Saturation)](#saturation-saturation) item |  | 
+| shadowsMax | *not set* | Decimal number | shadowsMax Value must be <= 1. | 
+
+#### Description
 ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ColorGradingDescription.
 
 
-#### ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ColorGradingDescription Properties
+##### ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ColorGradingDescription Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | identifier |  | 
+**JSON path:** `minecraft:color_grading_settings > description`
 
-## Tone Mapping
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | identifier | 
+
+#### Tone Mapping
 ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ToneMapping.
 
 
-#### ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ToneMapping Properties
+##### ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ToneMapping Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| operator | *not set* | String | enum dragon_framerenderer_modules_Tonemapper |  | 
+**JSON path:** `minecraft:color_grading_settings > tone_mapping`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| operator | *not set* | String | enum dragon_framerenderer_modules_Tonemapper | 

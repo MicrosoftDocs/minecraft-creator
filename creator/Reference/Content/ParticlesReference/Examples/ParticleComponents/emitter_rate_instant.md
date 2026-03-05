@@ -15,17 +15,19 @@ Spawns all particles in a single instant burst when the emitter activates. Unlik
 
 ## Client Particles Emitter Rate Instant Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| num_particles | *not set* | Molang | The number of particles to emit. Can be a number or Molang expression. |  | 
-| num_particles (Alternate 1) | *not set* | Key/item pairs of [Num Particles](#num-particles) items |  |  | 
-| num_particles (Alternate 2) | *not set* | Decimal number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| num_particles | *not set* | Molang | The number of particles to emit. Can be a number or Molang expression. | 
+| num_particles (Num Particles) | *not set* | Key/item pairs of [Num Particles (Num Particles)](#num-particles-num-particles) items |  | 
+| num_particles (as Decimal number) | *not set* | Decimal number |  | 
 
-## Num Particles
+### Num Particles (Num Particles)
 
 #### Num Particles Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `num_particles`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 

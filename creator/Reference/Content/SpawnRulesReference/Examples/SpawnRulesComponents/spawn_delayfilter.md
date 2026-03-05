@@ -15,9 +15,9 @@ Delays entity spawning by a configurable amount of time after spawn conditions a
 
 ## Spawn DelayFilter Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier |  | String |  |  | 
-| max | 0 | Integer number |  |  | 
-| min | 0 | Integer number |  |  | 
-| spawn_chance | 100 | Integer number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier |  | String |  | 
+| max | 0 | Integer number |  | 
+| min | 0 | Integer number |  | 
+| spawn_chance | 100 | Integer number |  | 

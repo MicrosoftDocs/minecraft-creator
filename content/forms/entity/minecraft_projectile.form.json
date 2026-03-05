@@ -12,7 +12,12 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "catch_fire",
+      "description": "Determines whether the entity hit will be set on fire. Note: the presence of this field in the component definition causes targets to catch fire regardless of the value set. To prevent fire, remove this field entirely from the component."
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:projectile",
     "title": "Projectile",

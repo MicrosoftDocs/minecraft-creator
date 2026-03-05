@@ -15,6 +15,6 @@ Controls spawning based on whether a specific mob event is active. Mob events ar
 
 ## Spawn MobEventFilter Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| event |  | String |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| event |  | String |  | 

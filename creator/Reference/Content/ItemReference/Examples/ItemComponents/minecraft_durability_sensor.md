@@ -15,24 +15,31 @@ Enables an item to emit effects when it receives damage. Because of this, the it
 
 ## Item Components Durability Sensor Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| durability | *not set* | Integer number | The effects are emitted when the item durability value is less than or equal to this value. |  | 
-| durability_thresholds | *not set* | [Durability Thresholds](#item-components-durability-sensor-durability-threshold) item | The list of both durability thresholds and effects emitted when each threshold is met. When multiple thresholds are met, only the threshold with the lowest durability after applying the damage is considered. Value must have at least 1 items. |  | 
-| particle_type | *not set* | String | Particle effect to emit when the threshold is met. |  | 
-| sound_event | *not set* | String | Sound effect to emit when the threshold is met. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| durability | *not set* | Integer number | The effects are emitted when the item durability value is less than or equal to this value. | 
+| durability_thresholds | *not set* | [Durability Thresholds](#item-components-durability-sensor-durability-threshold) item | The list of both durability thresholds and effects emitted when each threshold is met. | 
+| particle_type | *not set* | String | Particle effect to emit when the threshold is met. | 
+| sound_event | *not set* | String | Sound effect to emit when the threshold is met. | 
 
-## Item Components Durability Sensor Durability Threshold
+### durability_thresholds
+
+The list of both durability thresholds and effects emitted when each threshold is met. When multiple thresholds are met, only the threshold with the lowest durability after applying the damage is considered. Value must have at least 1 items.
+
+
+### Item Components Durability Sensor Durability Threshold
 Defines both the durability threshold, and the effects emitted when that threshold is met.
 
 
 #### Item Components Durability Sensor Durability Threshold Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| durability | 0 | Integer number | The effects are emitted when the item durability value is less than or equal to this value. |  | 
-| particle_type | none | [Particle Type](#particle-type-choices) choices | Particle effect to emit when the threshold is met. |  | 
-| sound_event | undefined | [Sound Event](#sound-event-choices) choices | Sound effect to emit when the threshold is met. |  | 
+**JSON path:** `durability_thresholds`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| durability | 0 | Integer number | The effects are emitted when the item durability value is less than or equal to this value. | 
+| particle_type | none | [Particle Type](#particle-type-choices) choices | Particle effect to emit when the threshold is met. | 
+| sound_event | undefined | [Sound Event](#sound-event-choices) choices | Sound effect to emit when the threshold is met. | 
 
 ### Particle Type choices
 

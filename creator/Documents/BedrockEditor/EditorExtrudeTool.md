@@ -13,11 +13,33 @@ Use Extrude to add or subtract layers of blocks around the face you click. It gr
 
 ![Gif of Extrude Tool on Garden](Media/GIFs/Extrude.gif)
 
-- **Face Size**: Determines the number of blocks that will be extruded around the cursor. This value represents the radius size from the block face that you click (i.e., if you click the top face of a block, it will add or subtract blocks using the top face as the center of the radius). This value can range from 1 to 32.
+## Quick Extrude Mode
 
-- **Layer Count**: The number of layers that will be added or subtracted from the block that you click. This value can range from 1 to 16.
+Toggle between **Grow** and **Shrink** to control whether Extrude adds layers outward or removes layers inward from the clicked face.
 
-- **Contiguous Selection Type**: You can use this drop-down to set which types of blocks are added or subtracted.
+## Settings
+
+- **Face Size** (1–32): Determines the radius of blocks that will be extruded around the cursor, centered on the block face you click.
+
+- **Layer Count** (1–16): The number of layers that will be added or subtracted from the block that you click.
+
+- **Contiguous Selection Type**: Sets which types of blocks are included in the extrusion. Options:
+
+    - **SameBlock**: Only blocks matching the clicked block type.
+    - **BlockStates**: Blocks matching the type and block states.
+    - **SolidBlock**: Any solid block.
+    - **AllBlocks**: All blocks including air.
+    - **Custom**: Select specific block types from a custom list.
+
+- **Tolerance Level** (1–16): Controls how closely blocks must match the seed block to be included.
+
+- **Has Adjacent Blocks**: When enabled, requires extruded blocks to have adjacent neighbors.
+
+- **Has Trailing Blocks**: When enabled, requires extruded blocks to have trailing block connections.
+
+- **Sample Layer Count** (1–16): Number of layers sampled to determine the extrusion pattern.
+
+- **Search Radius** (1–100): How far from the clicked face to search for matching blocks.
 
 
 #### Use Extrude

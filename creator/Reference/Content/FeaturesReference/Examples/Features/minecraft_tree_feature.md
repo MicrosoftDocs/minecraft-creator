@@ -10,341 +10,407 @@ ms.date: 02/11/2025
 
 # Feature Documentation - minecraft:tree_feature
 
+## Contents
+
+- [Acacia Canopy](#acacia-canopy)
+- [Acacia Trunk](#acacia-trunk)
+- [Base Cluster](#base-cluster)
+- [Cherry Trunk](#cherry-trunk)
+- [Description](#description)
+- [Fallen Trunk](#fallen-trunk)
+- [Fancy Trunk](#fancy-trunk)
+- [Mangrove Roots](#mangrove-roots)
+- [Mangrove Trunk](#mangrove-trunk)
+- [Random Spread Canopy](#random-spread-canopy)
+- [Trunk](#trunk)
+
 Places a tree in the world. A tree consists of a column that is anchored to a base block with set parameters for what it can be placed on and canopy that extends from the column. The trunk height can be randomized with a min and max value, as well as the canopy offset.
 
 
 ## Tree Feature Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| acacia_canopy | *not set* | [Acacia Canopy](#acacia-canopy) item |  |  | 
-| acacia_trunk | *not set* | [Acacia Trunk](#acacia-trunk) item |  |  | 
-| base_block | *not set* | Array of strings |  |  | 
-| base_cluster | *not set* | [Base Cluster](#base-cluster) item | Clusters of blocks randomly replaced with "base_block" around the base of the tree. |  | 
-| canopy | *not set* | [Canopy](#canopy) item |  |  | 
-| cherry_canopy | *not set* | [Cherry Canopy](#cherry-canopy) item |  |  | 
-| cherry_trunk | *not set* | [Cherry Trunk](#cherry-trunk) item |  |  | 
-| description | *not set* | [Description](#description) item |  |  | 
-| fallen_trunk | *not set* | [Fallen Trunk](#fallen-trunk) item |  |  | 
-| fancy_canopy | *not set* | [Fancy Canopy](#fancy-canopy) item |  |  | 
-| fancy_trunk | *not set* | [Fancy Trunk](#fancy-trunk) item |  |  | 
-| format_version | *not set* | String |  |  | 
-| mangrove_canopy | *not set* | Key/item pairs of [Mangrove Canopy](#mangrove-canopy) items |  |  | 
-| mangrove_roots | *not set* | [Mangrove Roots](#mangrove-roots) item |  |  | 
-| mangrove_trunk | *not set* | [Mangrove Trunk](#mangrove-trunk) item |  |  | 
-| may_grow_on | *not set* | Array of strings |  |  | 
-| may_grow_through | *not set* | Array of strings |  |  | 
-| may_replace | *not set* | Array of strings |  |  | 
-| mega_canopy | *not set* | [Mega Canopy](#mega-canopy) item |  |  | 
-| mega_pine_canopy | *not set* | [Mega Pine Canopy](#mega-pine-canopy) item |  |  | 
-| mega_trunk | *not set* | [Mega Trunk](#mega-trunk) item |  |  | 
-| pine_canopy | *not set* | [Pine Canopy](#pine-canopy) item |  |  | 
-| random_spread_canopy | *not set* | Key/item pairs of [Random Spread Canopy](#random-spread-canopy) items |  |  | 
-| roofed_canopy | *not set* | [Roofed Canopy](#roofed-canopy) item |  |  | 
-| spruce_canopy | *not set* | Object |  |  | 
-| trunk | *not set* | [Trunk](#trunk) item |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| acacia_canopy | *not set* | [Acacia Canopy](#acacia-canopy) item |  | 
+| acacia_trunk | *not set* | [Acacia Trunk](#acacia-trunk) item |  | 
+| base_block | *not set* | Array of strings |  | 
+| base_cluster | *not set* | [Base Cluster](#base-cluster) item | Clusters of blocks randomly replaced with "base_block" around the base of the tree. | 
+| canopy | *not set* | [Canopy](#canopy) item |  | 
+| cherry_canopy | *not set* | [Cherry Canopy](#cherry-canopy) item |  | 
+| cherry_trunk | *not set* | [Cherry Trunk](#cherry-trunk) item |  | 
+| description | *not set* | [Description](#description) item |  | 
+| fallen_trunk | *not set* | [Fallen Trunk](#fallen-trunk) item |  | 
+| fancy_canopy | *not set* | [Fancy Canopy](#fancy-canopy) item |  | 
+| fancy_trunk | *not set* | [Fancy Trunk](#fancy-trunk) item |  | 
+| format_version | *not set* | String |  | 
+| mangrove_canopy | *not set* | Key/item pairs of [Mangrove Canopy](#mangrove-canopy) items |  | 
+| mangrove_roots | *not set* | [Mangrove Roots](#mangrove-roots) item |  | 
+| mangrove_trunk | *not set* | [Mangrove Trunk](#mangrove-trunk) item |  | 
+| may_grow_on | *not set* | Array of strings |  | 
+| may_grow_through | *not set* | Array of strings |  | 
+| may_replace | *not set* | Array of strings |  | 
+| mega_canopy | *not set* | [Mega Canopy](#mega-canopy) item |  | 
+| mega_pine_canopy | *not set* | [Mega Pine Canopy](#mega-pine-canopy) item |  | 
+| mega_trunk | *not set* | [Mega Trunk](#mega-trunk) item |  | 
+| pine_canopy | *not set* | [Pine Canopy](#pine-canopy) item |  | 
+| random_spread_canopy | *not set* | Key/item pairs of [Random Spread Canopy](#random-spread-canopy) items |  | 
+| roofed_canopy | *not set* | [Roofed Canopy](#roofed-canopy) item |  | 
+| spruce_canopy | *not set* | Object |  | 
+| trunk | *not set* | [Trunk](#trunk) item |  | 
 
-## Acacia Canopy
+### Acacia Canopy
 
 #### Acacia Canopy Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| canopy_size | *not set* | Integer number | The size of the canopy. |  | 
-| simplify_canopy | *not set* | Boolean true/false | If true the canopy uses a simple pattern. |  | 
+**JSON path:** `acacia_canopy`
 
-## Acacia Trunk
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| canopy_size | *not set* | Integer number | The size of the canopy. | 
+| simplify_canopy | *not set* | Boolean true/false | If true the canopy uses a simple pattern. | 
+
+### Acacia Trunk
 
 #### Acacia Trunk Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| branches | *not set* | [Branches](#branches) item | Configuration object for branches. |  | 
-| trunk_decoration | *not set* | [Trunk Decoration](#trunk-decoration) item | Configuration object for the trunk decoration. |  | 
-| trunk_height | *not set* | [Trunk Height](#trunk-height) item | Configuration object for the trunk height. |  | 
-| trunk_lean | *not set* | [Trunk Lean](#trunk-lean) item | Configuration object for diagonal branches. |  | 
-| trunk_width | *not set* | Integer number | The width of the tree trunk. |  | 
+**JSON path:** `acacia_trunk`
 
-## Branches
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| branches | *not set* | [Branches](#branches) item | Configuration object for branches. | 
+| trunk_decoration | *not set* | [Trunk Decoration](#trunk-decoration) item | Configuration object for the trunk decoration. | 
+| trunk_height | *not set* | [Trunk Height](#trunk-height) item | Configuration object for the trunk height. | 
+| trunk_lean | *not set* | [Trunk Lean](#trunk-lean) item | Configuration object for diagonal branches. | 
+| trunk_width | *not set* | Integer number | The width of the tree trunk. | 
 
-#### Branches Properties
+#### Branches
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| branch_canopy | *not set* | [Branch Canopy](#branch-canopy) item | Configuration object for the canopy. |  | 
+##### Branches Properties
 
-## Branch Canopy
+**JSON path:** `acacia_trunk > branches`
 
-#### Branch Canopy Properties
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| branch_canopy | *not set* | [Branch Canopy](#branch-canopy) item | Configuration object for the canopy. | 
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| acacia_canopy | *not set* | [Acacia Canopy](#acacia-canopy) item |  |  | 
-| canopy | *not set* | [Canopy](#canopy) item |  |  | 
-| cherry_canopy | *not set* | [Cherry Canopy](#cherry-canopy) item |  |  | 
-| fancy_canopy | *not set* | [Fancy Canopy](#fancy-canopy) item |  |  | 
-| mangrove_canopy | *not set* | Key/item pairs of [Mangrove Canopy](#mangrove-canopy) items |  |  | 
-| mega_canopy | *not set* | [Mega Canopy](#mega-canopy) item |  |  | 
-| mega_pine_canopy | *not set* | [Mega Pine Canopy](#mega-pine-canopy) item |  |  | 
-| pine_canopy | *not set* | [Pine Canopy](#pine-canopy) item |  |  | 
-| roofed_canopy | *not set* | [Roofed Canopy](#roofed-canopy) item |  |  | 
-| spruce_canopy | *not set* | Object |  |  | 
+##### Branch Canopy
 
-## Canopy
+###### Branch Canopy Properties
 
-#### Canopy Properties
+**JSON path:** `acacia_trunk > branches > branch_canopy`
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| canopy_decoration | *not set* | [Canopy Decoration](#canopy-decoration) item | Configuration object for the canopy decoration. |  | 
-| canopy_offset | *not set* | [Canopy Offset](#canopy-offset) item | Canopy position offset relative to the block above the trunk. |  | 
-| canopy_slope | *not set* | [Canopy Slope](#canopy-slope) item | Configuration object for the canopy slope. |  | 
-| min_width | *not set* | Integer number | Min width for the canopy. |  | 
-| variation_chance | *not set* | Array of strings |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| acacia_canopy | *not set* | [Acacia Canopy](#acacia-canopy) item |  | 
+| canopy | *not set* | [Canopy](#canopy) item |  | 
+| cherry_canopy | *not set* | [Cherry Canopy](#cherry-canopy) item |  | 
+| fancy_canopy | *not set* | [Fancy Canopy](#fancy-canopy) item |  | 
+| mangrove_canopy | *not set* | Key/item pairs of [Mangrove Canopy](#mangrove-canopy) items |  | 
+| mega_canopy | *not set* | [Mega Canopy](#mega-canopy) item |  | 
+| mega_pine_canopy | *not set* | [Mega Pine Canopy](#mega-pine-canopy) item |  | 
+| pine_canopy | *not set* | [Pine Canopy](#pine-canopy) item |  | 
+| roofed_canopy | *not set* | [Roofed Canopy](#roofed-canopy) item |  | 
+| spruce_canopy | *not set* | Object |  | 
 
-## Canopy Decoration
+###### Canopy
 
-#### Canopy Decoration Properties
+###### Canopy Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| decoration_blocks_sequence | *not set* | Array of objects |  |  | 
-| decoration_blocks_sequence (Alternate 1) | *not set* | Array of strings |  |  | 
-| num_steps | *not set* | Integer number | Number of decoration blocks to place. (Will not be used if "decoration_blocks_sequence" given) |  | 
-| step_direction"<"down", "up", "out", "away" | *not set* | String | Directions to spread decoration blocks. |  | 
+**JSON path:** `acacia_trunk > branches > branch_canopy > canopy`
 
-## Canopy Offset
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| canopy_decoration | *not set* | [Canopy Decoration](#canopy-decoration) item | Configuration object for the canopy decoration. | 
+| canopy_offset | *not set* | [Canopy Offset](#canopy-offset) item | Canopy position offset relative to the block above the trunk. | 
+| canopy_slope | *not set* | [Canopy Slope](#canopy-slope) item | Configuration object for the canopy slope. | 
+| min_width | *not set* | Integer number | Min width for the canopy. | 
+| variation_chance | *not set* | Array of strings |  | 
 
-#### Canopy Offset Properties
+###### Canopy Decoration
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max | *not set* | Integer number | Max canopy position offset. |  | 
-| min | *not set* | Integer number | Min canopy position offset. |  | 
+###### Canopy Decoration Properties
 
-## Canopy Slope
+**JSON path:** `acacia_trunk > branches > branch_canopy > canopy > canopy_decoration`
 
-#### Canopy Slope Properties
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| decoration_blocks_sequence | *not set* | Array of objects |  | 
+| decoration_blocks_sequence (as Array of strings) | *not set* | Array of strings |  | 
+| num_steps | *not set* | Integer number | Number of decoration blocks to place. (Will not be used if "decoration_blocks_sequence" given) | 
+| step_direction"<"down", "up", "out", "away" | *not set* | String | Directions to spread decoration blocks. | 
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| rise | *not set* | Integer number | The numerator for the slope fraction. |  | 
-| run | *not set* | Integer number | The denominator for the slope fraction. |  | 
+###### Canopy Offset
 
-## Cherry Canopy
+###### Canopy Offset Properties
 
-#### Cherry Canopy Properties
+**JSON path:** `acacia_trunk > branches > branch_canopy > canopy > canopy_offset`
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| trunk_width | *not set* | Integer number | The width of the tree trunk. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | *not set* | Integer number | Max canopy position offset. | 
+| min | *not set* | Integer number | Min canopy position offset. | 
 
-## Fancy Canopy
+###### Canopy Slope
 
-#### Fancy Canopy Properties
+###### Canopy Slope Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| height | *not set* | Integer number | Number of layers for the canopy. |  | 
-| radius | *not set* | Integer number | The radius of the canopy. |  | 
+**JSON path:** `acacia_trunk > branches > branch_canopy > canopy > canopy_slope`
 
-## Mangrove Canopy
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| rise | *not set* | Integer number | The numerator for the slope fraction. | 
+| run | *not set* | Integer number | The denominator for the slope fraction. | 
 
-#### Mangrove Canopy Properties
+###### Cherry Canopy
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| canopy_decoration | *not set* | [Canopy Decoration](#canopy-decoration) item | Configuration object for the canopy decoration. |  | 
-| leaf_blocks | *not set* | Array of strings |  |  | 
-| leaf_placement_attempts | *not set* | Integer number | Max number of attempts to create leaf blocks. |  | 
+###### Cherry Canopy Properties
 
-## Mega Canopy
+**JSON path:** `acacia_trunk > branches > branch_canopy > cherry_canopy`
 
-#### Mega Canopy Properties
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| trunk_width | *not set* | Integer number | The width of the tree trunk. | 
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| base_radius | *not set* | Integer number | Radius of the canopy. |  | 
-| core_width | *not set* | Integer number | Width of the tree trunk. |  | 
-| simplify_canopy | *not set* | Boolean true/false | If true the canopy uses a simple pattern. |  | 
+###### Fancy Canopy
 
-## Mega Pine Canopy
+###### Fancy Canopy Properties
 
-#### Mega Pine Canopy Properties
+**JSON path:** `acacia_trunk > branches > branch_canopy > fancy_canopy`
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| base_radius | *not set* | Integer number | Radius of the canopy. |  | 
-| core_width | *not set* | Integer number | Width of the tree trunk. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| height | *not set* | Integer number | Number of layers for the canopy. | 
+| radius | *not set* | Integer number | The radius of the canopy. | 
 
-## Pine Canopy
+###### Mangrove Canopy
 
-#### Pine Canopy Properties
+###### Mangrove Canopy Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| base_radius | *not set* | Integer number | Radius of the canopy. |  | 
+**JSON path:** `acacia_trunk > branches > branch_canopy > mangrove_canopy`
 
-## Roofed Canopy
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| canopy_decoration | *not set* | [Canopy Decoration](#canopy-decoration) item | Configuration object for the canopy decoration. | 
+| leaf_blocks | *not set* | Array of strings |  | 
+| leaf_placement_attempts | *not set* | Integer number | Max number of attempts to create leaf blocks. | 
 
-#### Roofed Canopy Properties
+###### Mega Canopy
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| canopy_height | *not set* | Integer number | Roofed canopies feature a base and a top layer, and an extra cap layer on some occasions, this value controls the number of layers in the middle. |  | 
-| core_width | *not set* | Integer number | Width of the tree trunk. |  | 
-| inner_radius | *not set* | Integer number | Radius used for the middle layers. |  | 
-| outer_radius | *not set* | Integer number | Radius used for the base and top layers. |  | 
+###### Mega Canopy Properties
 
-## Trunk Decoration
+**JSON path:** `acacia_trunk > branches > branch_canopy > mega_canopy`
 
-#### Trunk Decoration Properties
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| base_radius | *not set* | Integer number | Radius of the canopy. | 
+| core_width | *not set* | Integer number | Width of the tree trunk. | 
+| simplify_canopy | *not set* | Boolean true/false | If true the canopy uses a simple pattern. | 
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| decoration_blocks_sequence | *not set* | Array of objects |  |  | 
-| decoration_blocks_sequence (Alternate 1) | *not set* | Array of strings |  |  | 
-| num_steps | *not set* | Integer number | Number of decoration blocks to place. (Will not be used if "decoration_blocks_sequence" given) |  | 
-| step_direction"<"down", "up", "out", "away" | *not set* | String | Directions to spread decoration blocks. |  | 
+###### Mega Pine Canopy
 
-## Trunk Height
+###### Mega Pine Canopy Properties
 
-#### Trunk Height Properties
+**JSON path:** `acacia_trunk > branches > branch_canopy > mega_pine_canopy`
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| base | *not set* | Integer number | Min height for the trunk. |  | 
-| intervals | *not set* | Array of strings |  |  | 
-| min_height_for_canopy | *not set* | Integer number | Min height where the canopy can be placed. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| base_radius | *not set* | Integer number | Radius of the canopy. | 
+| core_width | *not set* | Integer number | Width of the tree trunk. | 
 
-## Trunk Lean
+###### Pine Canopy
 
-#### Trunk Lean Properties
+###### Pine Canopy Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| allow_diagonal_growth | *not set* | Boolean true/false | If true, diagonal branches will be created. |  | 
+**JSON path:** `acacia_trunk > branches > branch_canopy > pine_canopy`
 
-## Base Cluster
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| base_radius | *not set* | Integer number | Radius of the canopy. | 
+
+###### Roofed Canopy
+
+###### Roofed Canopy Properties
+
+**JSON path:** `acacia_trunk > branches > branch_canopy > roofed_canopy`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| canopy_height | *not set* | Integer number | Roofed canopies feature a base and a top layer, and an extra cap layer on some occasions, this value controls the number of layers in the middle. | 
+| core_width | *not set* | Integer number | Width of the tree trunk. | 
+| inner_radius | *not set* | Integer number | Radius used for the middle layers. | 
+| outer_radius | *not set* | Integer number | Radius used for the base and top layers. | 
+
+#### Trunk Decoration
+
+##### Trunk Decoration Properties
+
+**JSON path:** `acacia_trunk > trunk_decoration`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| decoration_blocks_sequence | *not set* | Array of objects |  | 
+| decoration_blocks_sequence (as Array of strings) | *not set* | Array of strings |  | 
+| num_steps | *not set* | Integer number | Number of decoration blocks to place. (Will not be used if "decoration_blocks_sequence" given) | 
+| step_direction"<"down", "up", "out", "away" | *not set* | String | Directions to spread decoration blocks. | 
+
+#### Trunk Height
+
+##### Trunk Height Properties
+
+**JSON path:** `acacia_trunk > trunk_height`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| base | *not set* | Integer number | Min height for the trunk. | 
+| intervals | *not set* | Array of strings |  | 
+| min_height_for_canopy | *not set* | Integer number | Min height where the canopy can be placed. | 
+
+#### Trunk Lean
+
+##### Trunk Lean Properties
+
+**JSON path:** `acacia_trunk > trunk_lean`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| allow_diagonal_growth | *not set* | Boolean true/false | If true, diagonal branches will be created. | 
+
+### Base Cluster
 
 #### Base Cluster Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| cluster_radius | *not set* | Integer number | The radius of each cluster. |  | 
-| may_replace | *not set* | Array of strings |  |  | 
-| num_clusters | *not set* | Integer number | Number of clusters to generate. |  | 
+**JSON path:** `base_cluster`
 
-## Cherry Trunk
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| cluster_radius | *not set* | Integer number | The radius of each cluster. | 
+| may_replace | *not set* | Array of strings |  | 
+| num_clusters | *not set* | Integer number | Number of clusters to generate. | 
+
+### Cherry Trunk
 
 #### Cherry Trunk Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| branches | *not set* | [Branches](#branches) item | Configuration object for branches. |  | 
-| trunk_height | *not set* | [Trunk Height](#trunk-height) item | Configuration object for the trunk height. |  | 
+**JSON path:** `cherry_trunk`
 
-## Description
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| branches | *not set* | [Branches](#branches) item | Configuration object for branches. | 
+| trunk_height | *not set* | [Trunk Height](#trunk-height) item | Configuration object for the trunk height. | 
+
+### Description
 
 #### Description Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
+**JSON path:** `description`
 
-## Fallen Trunk
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. | 
+
+### Fallen Trunk
 
 #### Fallen Trunk Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| trunk_decoration | *not set* | [Trunk Decoration](#trunk-decoration) item | Configuration object for the trunk decoration. |  | 
+**JSON path:** `fallen_trunk`
 
-## Fancy Trunk
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| trunk_decoration | *not set* | [Trunk Decoration](#trunk-decoration) item | Configuration object for the trunk decoration. | 
+
+### Fancy Trunk
 
 #### Fancy Trunk Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| branches | *not set* | Object | Configuration object for branches. |  | 
-| trunk_height | *not set* | [Trunk Height](#trunk-height) item | Configuration object for the trunk height. |  | 
-| trunk_width | *not set* | Integer number | The width of the tree trunk. |  | 
+**JSON path:** `fancy_trunk`
 
-## Mangrove Roots
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| branches | *not set* | Object | Configuration object for branches. | 
+| trunk_height | *not set* | [Trunk Height](#trunk-height) item | Configuration object for the trunk height. | 
+| trunk_width | *not set* | Integer number | The width of the tree trunk. | 
+
+### Mangrove Roots
 
 #### Mangrove Roots Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| above_root | *not set* | Object | Configuration object for blocks decorating the top of the roots. |  | 
-| max_root_length | *not set* | Integer number | Max length for the roots. |  | 
-| max_root_width | *not set* | Integer number | Max width that the roots can occupy. The width increases up to the max width while moving downwards. When a max width is reached, roots will grow vertically. |  | 
-| root_decoration | *not set* | [Root Decoration](#root-decoration) item | Configuration object for the root decoration. |  | 
-| roots_may_grow_through | *not set* | Array of strings |  |  | 
+**JSON path:** `mangrove_roots`
 
-## Root Decoration
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| above_root | *not set* | Object | Configuration object for blocks decorating the top of the roots. | 
+| max_root_length | *not set* | Integer number | Max length for the roots. | 
+| max_root_width | *not set* | Integer number | Max width that the roots can occupy. The width increases up to the max width while moving downwards. When a max width is reached, roots will grow vertically. | 
+| root_decoration | *not set* | [Root Decoration](#root-decoration) item | Configuration object for the root decoration. | 
+| roots_may_grow_through | *not set* | Array of strings |  | 
 
-#### Root Decoration Properties
+#### Root Decoration
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| decoration_blocks_sequence | *not set* | Array of objects |  |  | 
-| decoration_blocks_sequence (Alternate 1) | *not set* | Array of strings |  |  | 
-| num_steps | *not set* | Integer number | Number of decoration blocks to place. (Will not be used if "decoration_blocks_sequence" given) |  | 
-| step_direction"<"down", "up", "out", "away" | *not set* | String | Directions to spread decoration blocks. |  | 
+##### Root Decoration Properties
 
-## Mangrove Trunk
+**JSON path:** `mangrove_roots > root_decoration`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| decoration_blocks_sequence | *not set* | Array of objects |  | 
+| decoration_blocks_sequence (as Array of strings) | *not set* | Array of strings |  | 
+| num_steps | *not set* | Integer number | Number of decoration blocks to place. (Will not be used if "decoration_blocks_sequence" given) | 
+| step_direction"<"down", "up", "out", "away" | *not set* | String | Directions to spread decoration blocks. | 
+
+### Mangrove Trunk
 
 #### Mangrove Trunk Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| branches | *not set* | Object | Configuration object for branches. |  | 
-| trunk_decoration | *not set* | [Trunk Decoration](#trunk-decoration) item | Configuration object for the trunk decoration. |  | 
-| trunk_height | *not set* | [Trunk Height](#trunk-height) item | Configuration object for the trunk height. |  | 
-| trunk_width | *not set* | Integer number | The width of the tree trunk. |  | 
+**JSON path:** `mangrove_trunk`
 
-## Mega Trunk
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| branches | *not set* | Object | Configuration object for branches. | 
+| trunk_decoration | *not set* | [Trunk Decoration](#trunk-decoration) item | Configuration object for the trunk decoration. | 
+| trunk_height | *not set* | [Trunk Height](#trunk-height) item | Configuration object for the trunk height. | 
+| trunk_width | *not set* | Integer number | The width of the tree trunk. | 
 
-#### Mega Trunk Properties
+### Mega Trunk
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| branches | *not set* | [Branches](#branches) item | Configuration object for branches. |  | 
-| trunk_decoration | *not set* | [Trunk Decoration](#trunk-decoration) item | Configuration object for the trunk decoration. |  | 
-| trunk_height | *not set* | [Trunk Height](#trunk-height) item | Configuration object for the trunk height. |  | 
-| trunk_width | *not set* | Integer number | The width of the tree trunk. |  | 
+Same structure as [Mangrove Trunk](#mangrove-trunk).
 
-## Random Spread Canopy
+
+### Random Spread Canopy
 
 #### Random Spread Canopy Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| leaf_blocks | *not set* | Array of strings |  |  | 
-| leaf_placement_attempts | *not set* | Integer number | Max number of attempts to create leaf blocks. |  | 
+**JSON path:** `random_spread_canopy`
 
-## Trunk
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| leaf_blocks | *not set* | Array of strings |  | 
+| leaf_placement_attempts | *not set* | Integer number | Max number of attempts to create leaf blocks. | 
+
+### Trunk
 
 #### Trunk Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| can_be_submerged | *not set* | [Can Be Submerged](#can-be-submerged) item | Specifies if the trunk can be submerged. |  | 
-| can_be_submerged (Alternate 1) | *not set* | Boolean true/false | Specifies if the trunk can be submerged. |  | 
-| trunk_decoration | *not set* | [Trunk Decoration](#trunk-decoration) item | Configuration object for the trunk decoration. |  | 
+**JSON path:** `trunk`
 
-## Can Be Submerged
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| can_be_submerged | *not set* | [Can Be Submerged](#can-be-submerged) item | Specifies if the trunk can be submerged. | 
+| can_be_submerged (as Boolean true/false) | *not set* | Boolean true/false | Specifies if the trunk can be submerged. | 
+| trunk_decoration | *not set* | [Trunk Decoration](#trunk-decoration) item | Configuration object for the trunk decoration. | 
 
-#### Can Be Submerged Properties
+#### Can Be Submerged
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max_depth | *not set* | Integer number | Defines the max depth at which the trunk can be submerged. |  | 
+##### Can Be Submerged Properties
+
+**JSON path:** `trunk > can_be_submerged`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max_depth | *not set* | Integer number | Defines the max depth at which the trunk can be submerged. | 
 
 ## Samples
 
-#### [Example](example)
+#### Example
 
 
 ```json

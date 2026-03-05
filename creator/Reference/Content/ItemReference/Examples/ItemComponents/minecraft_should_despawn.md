@@ -19,6 +19,6 @@ This item can also be represented as a `Boolean true/false`.
 
 ## Should Despawn Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | *not set* | Boolean true/false | Determines whether the item should eventually despawn while floating in the world. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | *not set* | Boolean true/false | Determines whether the item should eventually despawn while floating in the world. | 

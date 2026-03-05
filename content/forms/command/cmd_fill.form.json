@@ -204,5 +204,27 @@
     }
   ],
   "permissionLevel": 1,
-  "requiresCheats": true
+  "requiresCheats": true,
+  "commandSamples": [
+    {
+      "command": "/fill ~-5 ~ ~-5 ~5 ~3 ~5 stone",
+      "description": "Fill a 11x4x11 area around you with stone"
+    },
+    {
+      "command": "/fill ~-5 ~-1 ~-5 ~5 ~-1 ~5 air 0 destroy",
+      "description": "Destroy the layer below you in a 11x1x11 area"
+    },
+    {
+      "command": "/fill 0 64 0 10 64 10 grass_block 0 replace dirt",
+      "description": "Replace all dirt with grass blocks in a region"
+    },
+    {
+      "command": "/fill ~-3 ~ ~-3 ~3 ~4 ~3 glass 0 hollow",
+      "description": "Create a hollow glass box around you"
+    },
+    {
+      "command": "/fill ~-10 ~-10 ~-10 ~10 ~10 ~10 air 0 replace water",
+      "description": "Remove all water in a 21x21x21 area"
+    }
+  ]
 }

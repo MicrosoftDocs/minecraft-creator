@@ -15,14 +15,19 @@ Makes your block into a custom crafting table which enables the crafting table U
 
 ## Crafting Table Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| crafting_tags | *not set* | Array of strings | Defines the tags recipes should define to be crafted on this table. Limited to 64 tags. Each tag is limited to 64 characters. |  | 
-| table_name | *not set* | Localizable String | Specifies the language file key that maps to what text will be displayed in the UI of this table. If the string given can not be resolved as a loc string, the raw string given will be displayed. If this field is omitted, the name displayed will default to the name specified in the "display_name" component. If this block has no "display_name" component, the name displayed will default to the name of the block. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| crafting_tags | *not set* | Array of strings | Defines the tags recipes should define to be crafted on this table. Limited to 64 tags. Each tag is limited to 64 characters. | 
+| table_name | *not set* | Localizable String | Specifies the language file key that maps to what text will be displayed in the UI of this table. | 
+
+### table_name
+
+Specifies the language file key that maps to what text will be displayed in the UI of this table. If the string given can not be resolved as a loc string, the raw string given will be displayed. If this field is omitted, the name displayed will default to the name specified in the "display_name" component. If this block has no "display_name" component, the name displayed will default to the name of the block.
+
 
 ## Samples
 
-#### [Example](Example)
+#### Example
 
 
 ```json

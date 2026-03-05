@@ -15,9 +15,9 @@ Defines the entity's strength to carry items.
 
 ## Strength Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max | 5 | Integer number | The maximum strength of this entity |  | 
-| value | 1 | Integer number | The initial value of the strength |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | 5 | Integer number | The maximum strength of this entity | 
+| value | 1 | Integer number | The initial value of the strength | 
 
 ## Samples

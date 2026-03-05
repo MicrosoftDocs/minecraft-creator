@@ -15,6 +15,6 @@ Sets the entity's base volume for sound effects.
 
 ## Sound Volume Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | 1 | Decimal number | The value of the volume the entity uses for sound effects. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | 1 | Decimal number | The value of the volume the entity uses for sound effects. | 

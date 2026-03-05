@@ -15,29 +15,25 @@ Defines a bounding box with min and max coordinates.
 
 ## Voxel Shapes Box Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max | *not set* | Array of numbers |  |  | 
-| max (Alternate 1) | *not set* | [Max](#max) item |  |  | 
-| min | *not set* | Array of numbers |  |  | 
-| min (Alternate 1) | *not set* | [Min](#min) item |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | *not set* | Array of numbers |  | 
+| max (Max) | *not set* | [Max (Max)](#max-max) item |  | 
+| min | *not set* | Array of numbers |  | 
+| min (Min) | *not set* | [Min (Min)](#min-min) item |  | 
 
-## Max
+### Max (Max)
 
 #### Max Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| x | 0 | Decimal number |  |  | 
-| y | 0 | Decimal number |  |  | 
-| z | 0 | Decimal number |  |  | 
+**JSON path:** `max`
 
-## Min
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| x | 0 | Decimal number |  | 
+| y | 0 | Decimal number |  | 
+| z | 0 | Decimal number |  | 
 
-#### Min Properties
+### Min (Min)
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| x | 0 | Decimal number |  |  | 
-| y | 0 | Decimal number |  |  | 
-| z | 0 | Decimal number |  |  | 
+Same structure as [Max (Max)](#max-max).

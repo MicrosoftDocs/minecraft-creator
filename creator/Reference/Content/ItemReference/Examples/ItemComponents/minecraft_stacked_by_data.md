@@ -19,9 +19,9 @@ This item can also be represented as a `Boolean true/false`.
 
 ## Stacked By Data Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | *not set* | Boolean true/false | Determines whether the same item with different aux values can stack. Also defines whether the item entities can merge while floating in the world. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | *not set* | Boolean true/false | Determines whether the same item with different aux values can stack. Also defines whether the item entities can merge while floating in the world. | 
 
 ## Samples
 

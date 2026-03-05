@@ -15,20 +15,22 @@ Determines the jump height for a horse or similar entity, like a donkey.
 
 ## Horse Jump Strength Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | *not set* | [Value](#value) item | Value of jump strength the entity has when spawned. |  | 
-| value (Alternate 1) | *not set* | Decimal number |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | *not set* | [Value](#value) item | Value of jump strength the entity has when spawned. | 
+| value (as Decimal number) | *not set* | Decimal number |  | 
 
-## Value
+### Value
 Describes the range of jump strength.
 
 
 #### Value Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| range_max | *not set* | Decimal number | Defines the maximum strength level. |  | 
-| range_min | *not set* | Decimal number | Defines the minimum strength level. |  | 
+**JSON path:** `value`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| range_max | *not set* | Decimal number | Defines the maximum strength level. | 
+| range_min | *not set* | Decimal number | Defines the minimum strength level. | 
 
 ## Samples

@@ -15,12 +15,12 @@ Specifies a culling rule for block face visibility.
 
 ## Client Block Rule Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| condition | *not set* | [Condition](#condition-choices) choices |  |  | 
-| cull_against_full_and_opaque | true | Boolean true/false | If set to false, then culling against full and opaque blocks will not be considered. |  | 
-| direction | *not set* | [Direction](#direction-choices) choices |  |  | 
-| geometry_part | *not set* | [Geometry Part](#client-block-rule-geometry-part) item |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| condition | *not set* | [Condition](#condition-choices) choices |  | 
+| cull_against_full_and_opaque | true | Boolean true/false | If set to false, then culling against full and opaque blocks will not be considered. | 
+| direction | *not set* | [Direction](#direction-choices) choices |  | 
+| geometry_part | *not set* | [Geometry Part](#client-block-rule-geometry-part) item |  | 
 
 ### Condition choices
 
@@ -42,25 +42,16 @@ Specifies a culling rule for block face visibility.
 | up | Up | |
 | west | West | |
 
-## Client Block Rule Geometry Part
+### Client Block Rule Geometry Part
 Specifies a geometry part for culling.
 
 
 #### Client Block Rule Geometry Part Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| bone | *not set* | String |  |  | 
-| cube | *not set* | Integer number |  |  | 
-| face | *not set* | [Face](#face-choices) choices |  |  | 
+**JSON path:** `geometry_part`
 
-### Face choices
-
-|Value       |Title |Description |
-|:-----------|:-----|:-----------|
-| down | Down | |
-| east | East | |
-| north | North | |
-| south | South | |
-| up | Up | |
-| west | West | |
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| bone | *not set* | String |  | 
+| cube | *not set* | Integer number |  | 
+| face | *not set* | [Face](#direction-choices) choices |  | 

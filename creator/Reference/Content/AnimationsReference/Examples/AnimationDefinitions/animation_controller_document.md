@@ -15,7 +15,11 @@ A Minecraft Bedrock Edition animation controller definition document. Animation 
 
 ## Animation Controller Document Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| animation_controllers | *not set* | Object | A dictionary of animation controller definitions. Keys are controller identifiers like 'controller.animation.entity.controller_name', values are controller objects with initial_state and states properties. |  | 
-| format_version | *not set* | Version | The format version of this animation controller file. Use '1.10.0' or later. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| animation_controllers | *not set* | Object | A dictionary of animation controller definitions. | 
+| format_version | *not set* | Version | The format version of this animation controller file. Use '1.10.0' or later. | 
+
+### animation_controllers
+
+A dictionary of animation controller definitions. Keys are controller identifiers like 'controller.animation.entity.controller_name', values are controller objects with initial_state and states properties.

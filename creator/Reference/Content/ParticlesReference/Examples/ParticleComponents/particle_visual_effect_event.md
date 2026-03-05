@@ -15,22 +15,24 @@ Spawns another particle effect when triggered by particle events, enabling casca
 
 ## Client Particles Particle Visual Effect Event Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| effect | *not set* | Object |  |  | 
-| pre_effect_expression | 0 | Keyed set of strings |  |  | 
-| pre_effect_expression (Alternate 1) | *not set* | Key/item pairs of [Pre Effect Expression](#pre-effect-expression) items |  |  | 
-| pre_effect_expression (Alternate 2) | *not set* | Decimal number |  |  | 
-| type | *not set* | [Type](#type-choices) choices |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| effect | *not set* | Object |  | 
+| pre_effect_expression | 0 | Keyed set of strings |  | 
+| pre_effect_expression (Pre Effect Expression) | *not set* | Key/item pairs of [Pre Effect Expression (Pre Effect Expression)](#pre-effect-expression-pre-effect-expression) items |  | 
+| pre_effect_expression (as Decimal number) | *not set* | Decimal number |  | 
+| type | *not set* | [Type](#type-choices) choices |  | 
 
-## Pre Effect Expression
+### Pre Effect Expression (Pre Effect Expression)
 
 #### Pre Effect Expression Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String |  |  | 
-| version | *not set* | Integer number |  |  | 
+**JSON path:** `pre_effect_expression`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| expression | *not set* | String |  | 
+| version | *not set* | Integer number |  | 
 
 ### Type choices
 

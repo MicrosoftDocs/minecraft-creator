@@ -15,6 +15,6 @@ Determines whether the item is immune to burning when dropped in fire or lava.
 
 ## Item Components Fire Resistant Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| value | true | Boolean true/false | Determines whether the item is immune to burning when dropped in fire or lava. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | true | Boolean true/false | Determines whether the item is immune to burning when dropped in fire or lava. | 

@@ -15,11 +15,11 @@ Sets the color grass will be tinted by in this biome on the map.
 
 ## Biome Custom Map Tint Grass Tint Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| tint | *not set* | String | Tint color used in this biome on the map. |  | 
-| tint (Alternate 1) | *not set* | Array of numbers |  |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of grass tint to use. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| tint | *not set* | String | Tint color used in this biome on the map. | 
+| tint (as Array of numbers) | *not set* | Array of numbers |  | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of grass tint to use. | 
 
 ### Type choices
 

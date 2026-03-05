@@ -71,5 +71,27 @@
     }
   ],
   "permissionLevel": 1,
-  "requiresCheats": true
+  "requiresCheats": true,
+  "commandSamples": [
+    {
+      "command": "/tag @s add marked",
+      "description": "Add the 'marked' tag to yourself"
+    },
+    {
+      "command": "/tag @e[type=villager] add protected",
+      "description": "Tag all villagers as 'protected'"
+    },
+    {
+      "command": "/tag @s remove marked",
+      "description": "Remove the 'marked' tag from yourself"
+    },
+    {
+      "command": "/tag @s list",
+      "description": "List all tags on yourself"
+    },
+    {
+      "command": "/tag @e[type=zombie,tag=boss] add glowing",
+      "description": "Add 'glowing' tag to zombies that are tagged 'boss'"
+    }
+  ]
 }

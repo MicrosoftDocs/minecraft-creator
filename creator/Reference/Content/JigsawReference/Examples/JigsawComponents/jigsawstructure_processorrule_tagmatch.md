@@ -15,7 +15,7 @@ Predicate that evaluates to true if the block at the specified location contains
 
 ## JigsawStructure ProcessorRule TagMatch Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| predicate_type | *not set* | String | PositionalBlockRuleAxis |  | 
-| tag | *not set* | String | The tag to be matched. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| predicate_type | *not set* | String | PositionalBlockRuleAxis | 
+| tag | *not set* | String | The tag to be matched. | 

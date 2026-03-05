@@ -22,16 +22,18 @@ Delay for an entity playing its sound.
 | range | 16 | Decimal number | Maximum time in seconds to randomly add to the ambient sound delay time. | Allay: `5`, Fox: `160`, Warden: `4` | 
 | value | 8 | Decimal number | Minimum time in seconds before the entity plays its ambient sound again. | Allay: `5`, Fox: `80`, Warden: `2` | 
 
-## Event Names
+### Event Names
 List of dynamic level sound events, with conditions for choosing between them. Evaluated in order, first one wins. If none evaluate to true, 'event_name' will take precedence.
 
 
 #### Event Names Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| condition | *not set* | String | The condition that must be satisfied to select the given ambient sound |  | 
-| event_name | *not set* | String | Level sound event to be played as the ambient sound |  | 
+**JSON path:** `event_names`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| condition | *not set* | String | The condition that must be satisfied to select the given ambient sound | 
+| event_name | *not set* | String | Level sound event to be played as the ambient sound | 
 
 ## Samples
 
