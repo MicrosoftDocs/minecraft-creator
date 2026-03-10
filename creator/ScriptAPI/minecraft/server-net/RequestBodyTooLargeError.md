@@ -4,15 +4,15 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server-net.HttpRequestBodyTooLargeError Class
-description: Contents of the @minecraft/server-net.HttpRequestBodyTooLargeError class.
+title: minecraft/server-net.RequestBodyTooLargeError Class
+description: Contents of the @minecraft/server-net.RequestBodyTooLargeError class.
 ---
-# HttpRequestBodyTooLargeError Class
+# RequestBodyTooLargeError Class
 
 ## Extends
 - *Error*
 
-An error thrown when an HTTP request body exceeds the configured size limit.
+An error thrown when an network request body exceeds the configured size limit.
 
 ## Properties
 

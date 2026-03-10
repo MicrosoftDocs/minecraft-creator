@@ -144,8 +144,6 @@ Represents the unique type of network packet.
 `CurrentStructureFeaturePacket = "CurrentStructureFeaturePacket"`
 ### **DeathInfoPacket**
 `DeathInfoPacket = "DeathInfoPacket"`
-### **DebugDrawerPacket**
-`DebugDrawerPacket = "DebugDrawerPacket"`
 ### **DebugInfoPacket**
 `DebugInfoPacket = "DebugInfoPacket"`
 ### **DimensionDataPacket**
@@ -290,6 +288,8 @@ Represents the unique type of network packet.
 `PositionTrackingDBClientRequestPacket = "PositionTrackingDBClientRequestPacket"`
 ### **PositionTrackingDBServerBroadcastPacket**
 `PositionTrackingDBServerBroadcastPacket = "PositionTrackingDBServerBroadcastPacket"`
+### **PrimitiveShapesPacket**
+`PrimitiveShapesPacket = "PrimitiveShapesPacket"`
 ### **PurchaseReceiptPacket**
 `PurchaseReceiptPacket = "PurchaseReceiptPacket"`
 ### **RefreshEntitlementsPacket**

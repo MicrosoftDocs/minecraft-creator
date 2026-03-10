@@ -20,4 +20,5 @@ Options to create an entry in a collection tree folder
     color?: minecraftserver.RGBA;
     userData?: unknown;
     onSelectedChange?: (selected: boolean, folder: ICollectionTreeEntry) => void;
+    onBeforeRelocated?: (toFolder: ICollectionTreeFolder, toIndex: number, entry: ICollectionTreeEntry) => boolean;
 };`

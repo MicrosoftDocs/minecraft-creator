@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.CatmullRomSpline Class
 description: Contents of the @minecraft/server.CatmullRomSpline class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CatmullRomSpline Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 CatmullRom spline creation.
 

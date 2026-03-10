@@ -9,14 +9,10 @@ description: Contents of the @minecraft/server-editor.IListPaneViewControlPaneOp
 ---
 # IListPaneViewControlPaneOptions Interface
 
+## Extends
+- *IListViewControlPaneOptions*
+
 ## Properties
-
-### **actions**
-`actions?: ListViewControlAction[];`
-
-Default actions
-
-Type: *ListViewControlAction*[]
 
 ### **filterFlags**
 `filterFlags?: ListViewControlFilterFlags;`
@@ -24,13 +20,6 @@ Type: *ListViewControlAction*[]
 Flags to determine visible filters. If undefined it will be All.
 
 Type: *ListViewControlFilterFlags*
-
-### **onActionClicked**
-`onActionClicked?: (arg0: string) => void;`
-
-This function will be called whenever user clicks an action
-
-Type: (arg0: *string*) => *void*
 
 ### **onFilterChanged**
 `onFilterChanged?: (arg0: string[]) => void;`
@@ -45,10 +34,3 @@ Type: (arg0: *string*[]) => *void*
 Custom sort options. If undefined, list pane sort options will be used.
 
 Type: *ListPaneViewSortType*[]
-
-### **visible**
-`visible?: boolean;`
-
-Initial visibility state. It undefined, it will be false.
-
-Type: *boolean*

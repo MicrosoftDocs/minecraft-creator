@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.AimAssistPresetSettings Class
 description: Contents of the @minecraft/server.AimAssistPresetSettings class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # AimAssistPresetSettings Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Settings used with AimAssistRegistry.addPreset for creation of the AimAssistPreset.
 
@@ -52,12 +48,42 @@ Type: *string*
 - [getExcludedEntityTypeFamilyTargets](#getexcludedentitytypefamilytargets)
 - [getItemSettings](#getitemsettings)
 - [getLiquidTargetingItems](#getliquidtargetingitems)
+::: moniker range="=minecraft-bedrock-experimental"
 - [setExcludedBlockTagTargets](#setexcludedblocktagtargets)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [setExcludedBlockTargets](#setexcludedblocktargets)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [setExcludedEntityTargets](#setexcludedentitytargets)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [setExcludedEntityTypeFamilyTargets](#setexcludedentitytypefamilytargets)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [setItemSettings](#setitemsettings)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [setLiquidTargetingItems](#setliquidtargetingitems)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-stable"
+- [setExcludedBlockTagTargets](#setexcludedblocktagtargets)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-stable"
+- [setExcludedBlockTargets](#setexcludedblocktargets)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-stable"
+- [setExcludedEntityTargets](#setexcludedentitytargets)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-stable"
+- [setExcludedEntityTypeFamilyTargets](#setexcludedentitytypefamilytargets)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-stable"
+- [setItemSettings](#setitemsettings)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-stable"
+- [setLiquidTargetingItems](#setliquidtargetingitems)
+::: moniker-end
 
 ### **constructor**
 `
@@ -125,6 +151,7 @@ Gets the list of item Ids that will target liquid blocks with aim-assist when be
 
 **Returns** *string*[] | *undefined* - The array of item Ids.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **setExcludedBlockTagTargets**
 `
 setExcludedBlockTagTargets(targets?: string[]): void
@@ -138,10 +165,15 @@ Sets the list of block tags to exclude from aim assist targeting.
   An array of block tags.
 
 **Returns** *void*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **setExcludedBlockTargets**
 `
 setExcludedBlockTargets(targets?: (minecraftvanilladata.MinecraftBlockTypes | string)[]): void
@@ -155,10 +187,15 @@ Sets the list of block Ids to exclude from aim assist targeting.
   An array of block Ids.
 
 **Returns** *void*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **setExcludedEntityTargets**
 `
 setExcludedEntityTargets(targets?: (minecraftvanilladata.MinecraftEntityTypes | string)[]): void
@@ -172,10 +209,15 @@ Sets the list of entity Ids to exclude from aim assist targeting.
   An array of entity Ids.
 
 **Returns** *void*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **setExcludedEntityTypeFamilyTargets**
 `
 setExcludedEntityTypeFamilyTargets(targets?: string[]): void
@@ -189,10 +231,15 @@ Sets the list of entity type families to exclude from aim assist targeting.
   An array of entity type families.
 
 **Returns** *void*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **setItemSettings**
 `
 setItemSettings(itemSettings: Record<keyof typeof minecraftvanilladata.MinecraftItemTypes | string, string>): void
@@ -206,10 +253,15 @@ Sets the per-item aim-assist category Ids.
   A record mapping item Ids to aim-assist category Ids. Category Ids must have a namespace.
 
 **Returns** *void*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **setLiquidTargetingItems**
 `
 setLiquidTargetingItems(items?: (minecraftvanilladata.MinecraftItemTypes | string)[]): void
@@ -223,6 +275,104 @@ Sets the list of item Ids that will target liquid blocks with aim-assist when be
   An array of item Ids.
 
 **Returns** *void*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-stable"
+### **setExcludedBlockTagTargets**
+`
+setExcludedBlockTagTargets(blockTagTargets?: string[]): void
+`
+
+Sets the list of block tags to exclude from aim assist targeting.
+
+#### **Parameters**
+- **blockTagTargets**?: *string*[] = `null`
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-stable"
+### **setExcludedBlockTargets**
+`
+setExcludedBlockTargets(blockTargets?: string[]): void
+`
+
+Sets the list of block Ids to exclude from aim assist targeting.
+
+#### **Parameters**
+- **blockTargets**?: *string*[] = `null`
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-stable"
+### **setExcludedEntityTargets**
+`
+setExcludedEntityTargets(entityTargets?: string[]): void
+`
+
+Sets the list of entity Ids to exclude from aim assist targeting.
+
+#### **Parameters**
+- **entityTargets**?: *string*[] = `null`
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-stable"
+### **setExcludedEntityTypeFamilyTargets**
+`
+setExcludedEntityTypeFamilyTargets(entityTypeFamilyTargets?: string[]): void
+`
+
+Sets the list of entity type families to exclude from aim assist targeting.
+
+#### **Parameters**
+- **entityTypeFamilyTargets**?: *string*[] = `null`
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-stable"
+### **setItemSettings**
+`
+setItemSettings(itemSettings: Record<string, string>): void
+`
+
+Sets the per-item aim-assist category Ids.
+
+#### **Parameters**
+- **itemSettings**: Record<*string*, *string*>
+  
+  A record mapping item Ids to aim-assist category Ids. Category Ids must have a namespace.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-stable"
+### **setLiquidTargetingItems**
+`
+setLiquidTargetingItems(items?: string[]): void
+`
+
+Sets the list of item Ids that will target liquid blocks with aim-assist when being held.
+
+#### **Parameters**
+- **items**?: *string*[] = `null`
+  
+  An array of item Ids.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+::: moniker-end

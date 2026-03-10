@@ -10,7 +10,8 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.7.0-beta](#270-beta)
+- [2.8.0-beta](#280-beta)
+- [2.6.0](#260)
 - [2.5.0](#250)
 - [2.4.0](#240)
 - [2.3.0](#230)
@@ -38,12 +39,43 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.7.0-beta
-#### Added *[`AimAssistCategory`](AimAssistCategory.md)*
-#### Added *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
-#### Added *[`AimAssistPreset`](AimAssistPreset.md)*
-#### Added *[`AimAssistPresetSettings`](AimAssistPresetSettings.md)*
-#### Added *[`AimAssistRegistry`](AimAssistRegistry.md)*
+## 2.8.0-beta
+#### Changed *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
+- Changed function *[`setBlockPriorities`](AimAssistCategorySettings.md#setblockpriorities)*
+  - Changed return type from *void* to *void*
+  - Changed argument `blockPriorities` type from Record<*string*, *number*> to *Record<keyof typeof minecraftvanilladata.MinecraftBlockTypes | string, number>*
+- Changed function *[`setBlockTagPriorities`](AimAssistCategorySettings.md#setblocktagpriorities)*
+  - Changed return type from *void* to *void*
+  - Changed argument `blockTagPriorities` type from Record<*string*, *number*> to *Record<string, number>*
+- Changed function *[`setEntityPriorities`](AimAssistCategorySettings.md#setentitypriorities)*
+  - Changed return type from *void* to *void*
+  - Changed argument `entityPriorities` type from Record<*string*, *number*> to *Record<keyof typeof minecraftvanilladata.MinecraftEntityTypes | string, number>*
+- Changed function *[`setEntityTypeFamilyPriorities`](AimAssistCategorySettings.md#setentitytypefamilypriorities)*
+  - Changed return type from *void* to *void*
+  - Changed argument `entityTypeFamilyPriorities` type from Record<*string*, *number*> to *Record<string, number>*
+#### Changed *[`AimAssistPresetSettings`](AimAssistPresetSettings.md)*
+- Changed function *[`setExcludedBlockTagTargets`](AimAssistPresetSettings.md#setexcludedblocktagtargets)*
+  - Changed return type from *void* to *void*
+  - Added argument `targets`
+  - Removed argument `blockTagTargets`
+- Changed function *[`setExcludedBlockTargets`](AimAssistPresetSettings.md#setexcludedblocktargets)*
+  - Changed return type from *void* to *void*
+  - Added argument `targets`
+  - Removed argument `blockTargets`
+- Changed function *[`setExcludedEntityTargets`](AimAssistPresetSettings.md#setexcludedentitytargets)*
+  - Changed return type from *void* to *void*
+  - Added argument `targets`
+  - Removed argument `entityTargets`
+- Changed function *[`setExcludedEntityTypeFamilyTargets`](AimAssistPresetSettings.md#setexcludedentitytypefamilytargets)*
+  - Changed return type from *void* to *void*
+  - Added argument `targets`
+  - Removed argument `entityTypeFamilyTargets`
+- Changed function *[`setItemSettings`](AimAssistPresetSettings.md#setitemsettings)*
+  - Changed return type from *void* to *void*
+  - Changed argument `itemSettings` type from Record<*string*, *string*> to *Record<keyof typeof minecraftvanilladata.MinecraftItemTypes | string, string>*
+- Changed function *[`setLiquidTargetingItems`](AimAssistPresetSettings.md#setliquidtargetingitems)*
+  - Changed return type from *void* to *void*
+  - Changed argument `items` type from *string*[] to (*minecraftvanilladata.MinecraftItemTypes* | *string*)[]
 #### Added *[`BannerPattern`](BannerPattern.md)*
 #### Changed *[`BiomeType`](BiomeType.md)*
 - Added function *[`getTags`](BiomeType.md#gettags)*
@@ -52,35 +84,26 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`Block`](Block.md)*
 - Added property *[`isSolid`](Block.md#issolid)*
 - Added function *[`canPlace`](Block.md#canplace)*
-- Added function *[`getComponents`](Block.md#getcomponents)*
 - Added function *[`getMapColor`](Block.md#getmapcolor)*
 - Added function *[`getParts`](Block.md#getparts)*
-- Added function *[`hasComponent`](Block.md#hascomponent)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
-#### Added *[`BlockComponentEntityEvent`](BlockComponentEntityEvent.md)*
-#### Changed *[`BlockComponentRedstoneUpdateEvent`](BlockComponentRedstoneUpdateEvent.md)*
-- Added property *[`previousPowerLevel`](BlockComponentRedstoneUpdateEvent.md#previouspowerlevel)*
+#### Added *[`BlockContainerClosedAfterEvent`](BlockContainerClosedAfterEvent.md)*
+#### Added *[`BlockContainerClosedAfterEventSignal`](BlockContainerClosedAfterEventSignal.md)*
+#### Added *[`BlockContainerOpenedAfterEvent`](BlockContainerOpenedAfterEvent.md)*
+#### Added *[`BlockContainerOpenedAfterEventSignal`](BlockContainerOpenedAfterEventSignal.md)*
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
 - Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
-#### Changed *[`BlockPermutation`](BlockPermutation.md)*
-- Added property *[`localizationKey`](BlockPermutation.md#localizationkey)*
-#### Changed *[`BlockType`](BlockType.md)*
-- Added property *[`localizationKey`](BlockType.md#localizationkey)*
 #### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*
 - Added function *[`getBoundingBox`](BlockVolumeBase.md#getboundingbox)*
 #### Changed *[`Camera`](Camera.md)*
-- Added function *[`attachToEntity`](Camera.md#attachtoentity)*
-- Added function *[`playAnimation`](Camera.md#playanimation)*
 - Added function *[`setCameraWithEase`](Camera.md#setcamerawithease)*
-#### Added *[`CatmullRomSpline`](CatmullRomSpline.md)*
 #### Added *[`ChatSendAfterEvent`](ChatSendAfterEvent.md)*
 #### Added *[`ChatSendAfterEventSignal`](ChatSendAfterEventSignal.md)*
 #### Added *[`ChatSendBeforeEvent`](ChatSendBeforeEvent.md)*
 #### Added *[`ChatSendBeforeEventSignal`](ChatSendBeforeEventSignal.md)*
 #### Added *[`CompoundBlockVolume`](CompoundBlockVolume.md)*
 #### Changed *[`Dimension`](Dimension.md)*
-- Added function *[`containsBiomes`](Dimension.md#containsbiomes)*
 - Added function *[`findClosestBiome`](Dimension.md#findclosestbiome)*
 - Added function *[`getGeneratedStructures`](Dimension.md#getgeneratedstructures)*
 - Added function *[`getWeather`](Dimension.md#getweather)*
@@ -97,6 +120,107 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
 - Added property *[`airSupply`](EntityBreathableComponent.md#airsupply)*
 - Added property *[`canBreathe`](EntityBreathableComponent.md#canbreathe)*
+#### Added *[`EntityContainerClosedAfterEvent`](EntityContainerClosedAfterEvent.md)*
+#### Added *[`EntityContainerClosedAfterEventSignal`](EntityContainerClosedAfterEventSignal.md)*
+#### Added *[`EntityContainerOpenedAfterEvent`](EntityContainerOpenedAfterEvent.md)*
+#### Added *[`EntityContainerOpenedAfterEventSignal`](EntityContainerOpenedAfterEventSignal.md)*
+#### Added *[`EntityEnderInventoryComponent`](EntityEnderInventoryComponent.md)*
+#### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
+#### Changed *[`EntityTypes`](EntityTypes.md)*
+- Changed function *[`get`](EntityTypes.md#get)*
+  - Changed return type from [*EntityType*](EntityType.md) to *EntityType* | *undefined*
+  - Changed argument `identifier` type from *string* to *EntityIdentifierType<NoInfer<T>>*
+#### Added *[`EntityWaypoint`](EntityWaypoint.md)*
+#### Changed *[`GameRules`](GameRules.md)*
+- Added property *[`locatorBar`](GameRules.md#locatorbar)*
+#### Added *[`LocationWaypoint`](LocationWaypoint.md)*
+#### Added *[`LocatorBar`](LocatorBar.md)*
+#### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
+#### Added *[`PackSettingChangeAfterEvent`](PackSettingChangeAfterEvent.md)*
+#### Added *[`PackSettingChangeAfterEventSignal`](PackSettingChangeAfterEventSignal.md)*
+#### Changed *[`Player`](Player.md)*
+- Added property *[`locatorBar`](Player.md#locatorbar)*
+- Added property *[`partyId`](Player.md#partyid)*
+- Added function *[`eatItem`](Player.md#eatitem)*
+- Added function *[`postClientMessage`](Player.md#postclientmessage)*
+- Added function *[`stopAllSounds`](Player.md#stopallsounds)*
+- Added function *[`stopSound`](Player.md#stopsound)*
+#### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
+#### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
+#### Added *[`PlayerUseNameTagAfterEvent`](PlayerUseNameTagAfterEvent.md)*
+#### Added *[`PlayerUseNameTagAfterEventSignal`](PlayerUseNameTagAfterEventSignal.md)*
+#### Added *[`PlayerWaypoint`](PlayerWaypoint.md)*
+#### Changed *[`Potions`](Potions.md)*
+- Changed function *[`resolve`](Potions.md#resolve)*
+  - Changed return type from [*ItemStack*](ItemStack.md) (throws exceptions) to *ItemStack* (throws exceptions)
+  - Changed argument `potionEffectType` type from [*PotionEffectType*](PotionEffectType.md) | *string* to *PotionEffectType* | *T*
+  - Changed argument `potionDeliveryType` type from [*PotionDeliveryType*](PotionDeliveryType.md) | *string* to *PotionDeliveryType* | *U*
+#### Added *[`PrimitiveShape`](PrimitiveShape.md)*
+#### Added *[`PrimitiveShapesManager`](PrimitiveShapesManager.md)*
+#### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
+#### Changed *[`SetBannerDetailsFunction`](SetBannerDetailsFunction.md)*
+- Added property *[`baseColor`](SetBannerDetailsFunction.md#basecolor)*
+- Added property *[`patterns`](SetBannerDetailsFunction.md#patterns)*
+#### Changed *[`StructureManager`](StructureManager.md)*
+- Added function *[`getPackStructureIds`](StructureManager.md#getpackstructureids)*
+#### Changed *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
+- Added property *[`watchdogTerminate`](SystemBeforeEvents.md#watchdogterminate)*
+#### Added *[`TextPrimitive`](TextPrimitive.md)*
+#### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*
+#### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
+#### Added *[`Waypoint`](Waypoint.md)*
+#### Changed *[`World`](World.md)*
+- Added property *[`primitiveShapesManager`](World.md#primitiveshapesmanager)*
+- Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
+- Added function *[`getPackSettings`](World.md#getpacksettings)*
+#### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
+- Added property *[`blockContainerClosed`](WorldAfterEvents.md#blockcontainerclosed)*
+- Added property *[`blockContainerOpened`](WorldAfterEvents.md#blockcontaineropened)*
+- Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
+- Added property *[`entityContainerClosed`](WorldAfterEvents.md#entitycontainerclosed)*
+- Added property *[`entityContainerOpened`](WorldAfterEvents.md#entitycontaineropened)*
+- Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
+- Added property *[`packSettingChange`](WorldAfterEvents.md#packsettingchange)*
+- Added property *[`playerUseNameTag`](WorldAfterEvents.md#playerusenametag)*
+#### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
+- Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
+- Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
+#### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
+#### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
+#### Changed enum [`CustomCommandErrorReason`](CustomCommandErrorReason.md)
+- Added value `UnexpectedEnumName`
+#### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
+- Added value `EnderInventory`
+- Added value `Npc`
+#### Changed enum [`EquipmentSlot`](EquipmentSlot.md)
+- Added value `Body`
+#### Changed enum [`GameRule`](GameRule.md)
+- Added value `LocatorBar`
+#### Added enum [`LocatorBarErrorReason`](LocatorBarErrorReason.md)
+#### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
+#### Added enum [`WaypointTexture`](WaypointTexture.md)
+## 2.6.0
+#### Added *[`AimAssistCategory`](AimAssistCategory.md)*
+#### Added *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
+#### Added *[`AimAssistPreset`](AimAssistPreset.md)*
+#### Added *[`AimAssistPresetSettings`](AimAssistPresetSettings.md)*
+#### Added *[`AimAssistRegistry`](AimAssistRegistry.md)*
+#### Changed *[`Block`](Block.md)*
+- Added function *[`getComponents`](Block.md#getcomponents)*
+- Added function *[`hasComponent`](Block.md#hascomponent)*
+#### Added *[`BlockComponentEntityEvent`](BlockComponentEntityEvent.md)*
+#### Changed *[`BlockComponentRedstoneUpdateEvent`](BlockComponentRedstoneUpdateEvent.md)*
+- Added property *[`previousPowerLevel`](BlockComponentRedstoneUpdateEvent.md#previouspowerlevel)*
+#### Changed *[`BlockPermutation`](BlockPermutation.md)*
+- Added property *[`localizationKey`](BlockPermutation.md#localizationkey)*
+#### Changed *[`BlockType`](BlockType.md)*
+- Added property *[`localizationKey`](BlockType.md#localizationkey)*
+#### Changed *[`Camera`](Camera.md)*
+- Added function *[`attachToEntity`](Camera.md#attachtoentity)*
+- Added function *[`playAnimation`](Camera.md#playanimation)*
+#### Added *[`CatmullRomSpline`](CatmullRomSpline.md)*
+#### Changed *[`Dimension`](Dimension.md)*
+- Added function *[`containsBiomes`](Dimension.md#containsbiomes)*
 #### Changed *[`EntityDefinitionFeedItem`](EntityDefinitionFeedItem.md)*
 - Added property *[`resultItem`](EntityDefinitionFeedItem.md#resultitem)*
 #### Added *[`EntityHealAfterEvent`](EntityHealAfterEvent.md)*
@@ -113,95 +237,36 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`EntityItemPickupAfterEventSignal`](EntityItemPickupAfterEventSignal.md)*
 #### Added *[`EntityItemPickupBeforeEvent`](EntityItemPickupBeforeEvent.md)*
 #### Added *[`EntityItemPickupBeforeEventSignal`](EntityItemPickupBeforeEventSignal.md)*
-#### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
 #### Changed *[`EntityType`](EntityType.md)*
 - Added property *[`localizationKey`](EntityType.md#localizationkey)*
-#### Changed *[`EntityTypes`](EntityTypes.md)*
-- Changed function *[`get`](EntityTypes.md#get)*
-  - Changed return type from [*EntityType*](EntityType.md) to *EntityType* | *undefined*
-  - Changed argument `identifier` type from *string* to *EntityIdentifierType<NoInfer<T>>*
-#### Added *[`EntityWaypoint`](EntityWaypoint.md)*
 #### Changed *[`FeedItem`](FeedItem.md)*
 - Added property *[`resultItem`](FeedItem.md#resultitem)*
-#### Changed *[`GameRules`](GameRules.md)*
-- Added property *[`locatorBar`](GameRules.md#locatorbar)*
 #### Changed *[`ItemDurabilityComponent`](ItemDurabilityComponent.md)*
 - Added property *[`unbreakable`](ItemDurabilityComponent.md#unbreakable)*
 #### Changed *[`ItemType`](ItemType.md)*
 - Added property *[`localizationKey`](ItemType.md#localizationkey)*
 #### Added *[`LinearSpline`](LinearSpline.md)*
-#### Added *[`LocationWaypoint`](LocationWaypoint.md)*
-#### Added *[`LocatorBar`](LocatorBar.md)*
-#### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
-#### Added *[`PackSettingChangeAfterEvent`](PackSettingChangeAfterEvent.md)*
-#### Added *[`PackSettingChangeAfterEventSignal`](PackSettingChangeAfterEventSignal.md)*
 #### Changed *[`Player`](Player.md)*
-- Added property *[`locatorBar`](Player.md#locatorbar)*
-- Added property *[`partyId`](Player.md#partyid)*
-- Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`getAimAssist`](Player.md#getaimassist)*
-- Added function *[`postClientMessage`](Player.md#postclientmessage)*
-- Added function *[`stopAllSounds`](Player.md#stopallsounds)*
-- Added function *[`stopSound`](Player.md#stopsound)*
 #### Added *[`PlayerAimAssist`](PlayerAimAssist.md)*
-#### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
-#### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
-#### Added *[`PlayerUseNameTagAfterEvent`](PlayerUseNameTagAfterEvent.md)*
-#### Added *[`PlayerUseNameTagAfterEventSignal`](PlayerUseNameTagAfterEventSignal.md)*
-#### Added *[`PlayerWaypoint`](PlayerWaypoint.md)*
-#### Changed *[`Potions`](Potions.md)*
-- Changed function *[`resolve`](Potions.md#resolve)*
-  - Changed return type from [*ItemStack*](ItemStack.md) (throws exceptions) to *ItemStack* (throws exceptions)
-  - Changed argument `potionEffectType` type from [*PotionEffectType*](PotionEffectType.md) | *string* to *PotionEffectType* | *T*
-  - Changed argument `potionDeliveryType` type from [*PotionDeliveryType*](PotionDeliveryType.md) | *string* to *PotionDeliveryType* | *U*
-#### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
-#### Changed *[`SetBannerDetailsFunction`](SetBannerDetailsFunction.md)*
-- Added property *[`baseColor`](SetBannerDetailsFunction.md#basecolor)*
-- Added property *[`patterns`](SetBannerDetailsFunction.md#patterns)*
-#### Changed *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
-- Added property *[`watchdogTerminate`](SystemBeforeEvents.md#watchdogterminate)*
 #### Added *[`TickingAreaManager`](TickingAreaManager.md)*
-#### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*
-#### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
-#### Added *[`Waypoint`](Waypoint.md)*
 #### Changed *[`World`](World.md)*
 - Added property *[`seed`](World.md#seed)*
 - Added property *[`tickingAreaManager`](World.md#tickingareamanager)*
-- Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
 - Added function *[`getAimAssist`](World.md#getaimassist)*
-- Added function *[`getPackSettings`](World.md#getpacksettings)*
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
-- Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
 - Added property *[`entityHeal`](WorldAfterEvents.md#entityheal)*
 - Added property *[`entityHurt`](WorldAfterEvents.md#entityhurt)*
 - Added property *[`entityItemDrop`](WorldAfterEvents.md#entityitemdrop)*
 - Added property *[`entityItemPickup`](WorldAfterEvents.md#entityitempickup)*
-- Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
-- Added property *[`packSettingChange`](WorldAfterEvents.md#packsettingchange)*
-- Added property *[`playerUseNameTag`](WorldAfterEvents.md#playerusenametag)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
-- Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
 - Added property *[`entityHeal`](WorldBeforeEvents.md#entityheal)*
 - Added property *[`entityHurt`](WorldBeforeEvents.md#entityhurt)*
 - Added property *[`entityItemPickup`](WorldBeforeEvents.md#entityitempickup)*
-- Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
 #### Added enum [`AimAssistTargetMode`](AimAssistTargetMode.md)
-#### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
-#### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
-#### Changed enum [`CustomCommandErrorReason`](CustomCommandErrorReason.md)
-- Added value `UnexpectedEnumName`
 #### Added enum [`EntityAttachPoint`](EntityAttachPoint.md)
-#### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
-- Added value `Npc`
 #### Added enum [`EntityHealCause`](EntityHealCause.md)
-#### Changed enum [`EquipmentSlot`](EquipmentSlot.md)
-- Added value `Body`
-#### Changed enum [`GameRule`](GameRule.md)
-- Added value `LocatorBar`
-#### Added enum [`LocatorBarErrorReason`](LocatorBarErrorReason.md)
 #### Added enum [`TickingAreaErrorReason`](TickingAreaErrorReason.md)
-#### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
-#### Added enum [`WaypointTexture`](WaypointTexture.md)
 ## 2.5.0
 #### Added *[`PlayerSwingStartAfterEvent`](PlayerSwingStartAfterEvent.md)*
 #### Added *[`PlayerSwingStartAfterEventSignal`](PlayerSwingStartAfterEventSignal.md)*

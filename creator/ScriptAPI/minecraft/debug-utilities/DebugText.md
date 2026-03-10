@@ -12,27 +12,59 @@ description: Contents of the @minecraft/debug-utilities.DebugText class.
 ## Extends
 - [*DebugShape*](DebugShape.md)
 
-A debug shape class that a text label. The text label automatically faces the screen.
+A debug shape class that represents a text label in the world with a background.
 
 ## Properties
 
+### **backgroundColorOverride**
+`backgroundColorOverride?: minecraftserver.RGBA;`
+
+The color of the background plate of the text. If set to undefined, it will use the default color.
+
+Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
+
+### **depthTest**
+`depthTest: boolean;`
+
+If set to true, the text will be hidden behind blocks or entities. By default this is set to false (will always render).
+
+Type: *boolean*
+
 ### **text**
-`text: string;`
+`read-only text: minecraftserver.RawMessage | string;`
 
-The text of the shape to display.
+Get the text of the debug text shape. Returns the RawText of the debug text if `setText` was called with a RawMessage or a RawText object, otherwise returns a string.
 
-Type: *string*
+Type: [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) | *string*
+
+### **useRotation**
+`useRotation: boolean;`
+
+If set to true, the text will not face the camera and instead will use the rotation from the shape.
+
+Type: *boolean*
 
 ## Methods
 - [constructor](#constructor)
+- [setText](#settext)
 
 ### **constructor**
 `
-new DebugText(location: minecraftserver.DimensionLocation | minecraftserver.Vector3, text: string)
+new DebugText(location: minecraftserver.DimensionLocation | minecraftserver.Vector3, text: minecraftserver.RawMessage | string)
 `
 
 #### **Parameters**
 - **location**: [*@minecraft/server.DimensionLocation*](../../../scriptapi/minecraft/server/DimensionLocation.md) | [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
-- **text**: *string*
+- **text**: [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) | *string*
 
 **Returns** [*DebugText*](DebugText.md)
+
+### **setText**
+`
+setText(text: minecraftserver.RawMessage | string): void
+`
+
+Sets the text to display.
+
+#### **Parameters**
+- **text**: [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) | *string*

@@ -18,18 +18,18 @@ Dropdown data for use in {@link CustomForm}.
 ## Properties
 
 ### **description**
-`description?: string;`
+`description?: UIRawMessage | string;`
 
 The description of the dropdown item shown when it is selected.
 
-Type: *string*
+Type: *UIRawMessage* | *string*
 
 ### **label**
-`label: string;`
+`label: UIRawMessage | string;`
 
 The label of the dropdown item in the dropdown.
 
-Type: *string*
+Type: *UIRawMessage* | *string*
 
 ### **value**
 `value: number;`

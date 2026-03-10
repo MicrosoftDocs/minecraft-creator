@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.TickingArea Interface
 description: Contents of the @minecraft/server.TickingArea class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # TickingArea Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 A context which provides information about a specific ticking area.
 

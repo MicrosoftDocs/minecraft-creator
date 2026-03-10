@@ -4,15 +4,15 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server-net.HttpRequestNotAllowedError Class
-description: Contents of the @minecraft/server-net.HttpRequestNotAllowedError class.
+title: minecraft/server-net.UriNotAllowedError Class
+description: Contents of the @minecraft/server-net.UriNotAllowedError class.
 ---
-# HttpRequestNotAllowedError Class
+# UriNotAllowedError Class
 
 ## Extends
 - *Error*
 
-An error thrown when an HTTP request targets a URI that is not in the configured allow list.
+An error thrown when a network request targets a URI that is not in the configured allow list.
 
 ## Properties
 

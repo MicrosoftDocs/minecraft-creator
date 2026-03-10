@@ -16,6 +16,13 @@ Optional properties for Collection Tree Pane property item
 
 ## Properties
 
+### **canDragDropEntries**
+`canDragDropEntries?: boolean;`
+
+Setting true will enable drag and drop support for entries.
+
+Type: *boolean*
+
 ### **title**
 `title?: LocalizedString;`
 

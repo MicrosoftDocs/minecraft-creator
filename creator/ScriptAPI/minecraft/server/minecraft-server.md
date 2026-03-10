@@ -17,13 +17,14 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "2.5.0"
+    "version": "2.6.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.10-beta.26 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.20-beta.20 of Minecraft.
 
 ## Available Versions
-- `2.7.0-beta`
+- `2.8.0-beta`
+- `2.6.0`
 - `2.5.0`
 - `2.4.0`
 - `2.3.0`
@@ -161,6 +162,10 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockComponentStepOffEvent](BlockComponentStepOffEvent.md)
 - [BlockComponentStepOnEvent](BlockComponentStepOnEvent.md)
 - [BlockComponentTickEvent](BlockComponentTickEvent.md)
+- [BlockContainerClosedAfterEvent](BlockContainerClosedAfterEvent.md)
+- [BlockContainerClosedAfterEventSignal](BlockContainerClosedAfterEventSignal.md)
+- [BlockContainerOpenedAfterEvent](BlockContainerOpenedAfterEvent.md)
+- [BlockContainerOpenedAfterEventSignal](BlockContainerOpenedAfterEventSignal.md)
 - [BlockCustomComponentInstance](BlockCustomComponentInstance.md)
 - [BlockEvent](BlockEvent.md)
 - [BlockExplodeAfterEvent](BlockExplodeAfterEvent.md)
@@ -231,9 +236,14 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityColor2Component](EntityColor2Component.md)
 - [EntityColorComponent](EntityColorComponent.md)
 - [EntityComponent](EntityComponent.md)
+- [EntityContainerClosedAfterEvent](EntityContainerClosedAfterEvent.md)
+- [EntityContainerClosedAfterEventSignal](EntityContainerClosedAfterEventSignal.md)
+- [EntityContainerOpenedAfterEvent](EntityContainerOpenedAfterEvent.md)
+- [EntityContainerOpenedAfterEventSignal](EntityContainerOpenedAfterEventSignal.md)
 - [EntityDefinitionFeedItem](EntityDefinitionFeedItem.md)
 - [EntityDieAfterEvent](EntityDieAfterEvent.md)
 - [EntityDieAfterEventSignal](EntityDieAfterEventSignal.md)
+- [EntityEnderInventoryComponent](EntityEnderInventoryComponent.md)
 - [EntityEquippableComponent](EntityEquippableComponent.md)
 - [EntityExhaustionComponent](EntityExhaustionComponent.md)
 - [EntityFireImmuneComponent](EntityFireImmuneComponent.md)
@@ -470,6 +480,8 @@ The following API versions are from a major version that is documented here: [*@
 - [PressurePlatePopAfterEventSignal](PressurePlatePopAfterEventSignal.md)
 - [PressurePlatePushAfterEvent](PressurePlatePushAfterEvent.md)
 - [PressurePlatePushAfterEventSignal](PressurePlatePushAfterEventSignal.md)
+- [PrimitiveShape](PrimitiveShape.md)
+- [PrimitiveShapesManager](PrimitiveShapesManager.md)
 - [ProjectileHitBlockAfterEvent](ProjectileHitBlockAfterEvent.md)
 - [ProjectileHitBlockAfterEventSignal](ProjectileHitBlockAfterEventSignal.md)
 - [ProjectileHitEntityAfterEvent](ProjectileHitEntityAfterEvent.md)
@@ -517,6 +529,7 @@ The following API versions are from a major version that is documented here: [*@
 - [SystemInfo](SystemInfo.md)
 - [TargetBlockHitAfterEvent](TargetBlockHitAfterEvent.md)
 - [TargetBlockHitAfterEventSignal](TargetBlockHitAfterEventSignal.md)
+- [TextPrimitive](TextPrimitive.md)
 - [TickingAreaManager](TickingAreaManager.md)
 - [Trigger](Trigger.md)
 - [TripWireTripAfterEvent](TripWireTripAfterEvent.md)
@@ -540,6 +553,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BiomeFilter](BiomeFilter.md)
 - [BiomeSearchOptions](BiomeSearchOptions.md)
 - [BlockBoundingBox](BlockBoundingBox.md)
+- [BlockContainerAccessEventOptions](BlockContainerAccessEventOptions.md)
 - [BlockCustomComponent](BlockCustomComponent.md)
 - [BlockEventOptions](BlockEventOptions.md)
 - [BlockFillOptions](BlockFillOptions.md)
@@ -558,6 +572,8 @@ The following API versions are from a major version that is documented here: [*@
 - [CameraSetRotOptions](CameraSetRotOptions.md)
 - [CameraTargetOptions](CameraTargetOptions.md)
 - [CompoundBlockVolumeItem](CompoundBlockVolumeItem.md)
+- [ContainerAccessSource](ContainerAccessSource.md)
+- [ContainerAccessSourceFilter](ContainerAccessSourceFilter.md)
 - [ContainerRules](ContainerRules.md)
 - [CustomCommand](CustomCommand.md)
 - [CustomCommandParameter](CustomCommandParameter.md)
@@ -568,6 +584,7 @@ The following API versions are from a major version that is documented here: [*@
 - [Enchantment](Enchantment.md)
 - [EntityApplyDamageByProjectileOptions](EntityApplyDamageByProjectileOptions.md)
 - [EntityApplyDamageOptions](EntityApplyDamageOptions.md)
+- [EntityContainerAccessEventOptions](EntityContainerAccessEventOptions.md)
 - [EntityDamageSource](EntityDamageSource.md)
 - [EntityDataDrivenTriggerEventOptions](EntityDataDrivenTriggerEventOptions.md)
 - [EntityEffectOptions](EntityEffectOptions.md)

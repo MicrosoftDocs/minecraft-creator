@@ -4,12 +4,12 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server-net.MalformedHttpRequestError Class
-description: Contents of the @minecraft/server-net.MalformedHttpRequestError class.
+title: minecraft/server-net.MalformedUriError Class
+description: Contents of the @minecraft/server-net.MalformedUriError class.
 ---
-# MalformedHttpRequestError Class
+# MalformedUriError Class
 
 ## Extends
 - *Error*
 
-An error thrown when a malformed HTTP request is attempted to be sent.
+An error thrown when a malformed URI is used.

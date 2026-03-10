@@ -80,9 +80,11 @@ Type: *unknown*
 - [getFolder](#getfolder)
 - [removeEntryById](#removeentrybyid)
 - [removeEntryByIndex](#removeentrybyindex)
+- [removeFolder](#removefolder)
 - [setColor](#setcolor)
 - [setExpanded](#setexpanded)
 - [setHeaderAction](#setheaderaction)
+- [setMenu](#setmenu)
 - [setSelected](#setselected)
 - [setTitle](#settitle)
 
@@ -226,6 +228,20 @@ Removes the entry at the index if it exists
 
 **Returns** *boolean*
 
+### **removeFolder**
+`
+removeFolder(id: string): boolean
+`
+
+Removes the folder with the id if it exists at the root
+
+#### **Parameters**
+- **id**: *string*
+  
+  Identifier of the folder
+
+**Returns** *boolean*
+
 ### **setColor**
 `
 setColor(color: minecraftserver.RGBA | undefined): void
@@ -263,6 +279,20 @@ Updates the header action for the folder
 
 #### **Parameters**
 - **actionParams**: *ICollectionTreeFolderHeaderActionParams* | *undefined*
+
+**Returns** *void*
+
+### **setMenu**
+`
+setMenu(menu: IMenuCreationParams[] | undefined): void
+`
+
+Updates menu items for the folder
+
+#### **Parameters**
+- **menu**: *IMenuCreationParams*[] | *undefined*
+  
+  New menu items
 
 **Returns** *void*
 

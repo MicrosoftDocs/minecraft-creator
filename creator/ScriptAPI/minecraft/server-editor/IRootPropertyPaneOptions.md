@@ -29,3 +29,10 @@ Type: *IRootPropertyPaneHeaderAction*
 Pane icon shown in front of the pane header
 
 Type: *string*
+
+### **location**
+`location?: RootPaneLocation;`
+
+Determines how root pane will be displayed in the UI.
+
+Type: *RootPaneLocation*

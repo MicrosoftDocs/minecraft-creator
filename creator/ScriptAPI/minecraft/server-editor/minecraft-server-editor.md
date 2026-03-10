@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.10-beta.26 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.20-beta.20 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -88,6 +88,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.10-
 - [ProgressIndicatorPropertyItemVariant](ProgressIndicatorPropertyItemVariant.md)
 - [ProjectExportType](ProjectExportType.md)
 - [PropertyItemType](PropertyItemType.md)
+- [RootPaneLocation](RootPaneLocation.md)
 - [SelectionVolumeEventType](SelectionVolumeEventType.md)
 - [SpeedSettingsProperty](SpeedSettingsProperty.md)
 - [SplineType](SplineType.md)
@@ -307,6 +308,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.10-
 - [ICollectionTreeFolder](ICollectionTreeFolder.md)
 - [ICollectionTreePropertyItem](ICollectionTreePropertyItem.md)
 - [ICollectionTreePropertyItemOptions](ICollectionTreePropertyItemOptions.md)
+- [ICollectionTreeViewControlPaneOptions](ICollectionTreeViewControlPaneOptions.md)
 - [IColorPickerPropertyItem](IColorPickerPropertyItem.md)
 - [IColorPickerPropertyItemOptions](IColorPickerPropertyItemOptions.md)
 - [IColorTimelinePropertyItem](IColorTimelinePropertyItem.md)
@@ -337,8 +339,9 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.10-
 - [IListPaneSlot](IListPaneSlot.md)
 - [IListPaneSlotOptions](IListPaneSlotOptions.md)
 - [IListPaneTextEntry](IListPaneTextEntry.md)
-- [IListPaneViewControlPane](IListPaneViewControlPane.md)
 - [IListPaneViewControlPaneOptions](IListPaneViewControlPaneOptions.md)
+- [IListViewControlPane](IListViewControlPane.md)
+- [IListViewControlPaneOptions](IListViewControlPaneOptions.md)
 - [IMenu](IMenu.md)
 - [IMenuContainer](IMenuContainer.md)
 - [IMenuCreationParams](IMenuCreationParams.md)

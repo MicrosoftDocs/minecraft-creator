@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.EntityItemPickupBeforeEventSignal Class
 description: Contents of the @minecraft/server.EntityItemPickupBeforeEventSignal class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityItemPickupBeforeEventSignal Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Manages callbacks that are connected to when an entity will pick up an item.
 

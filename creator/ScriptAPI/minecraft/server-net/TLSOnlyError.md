@@ -4,22 +4,22 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server-net.HttpsOnlyError Class
-description: Contents of the @minecraft/server-net.HttpsOnlyError class.
+title: minecraft/server-net.TLSOnlyError Class
+description: Contents of the @minecraft/server-net.TLSOnlyError class.
 ---
-# HttpsOnlyError Class
+# TLSOnlyError Class
 
 ## Extends
 - *Error*
 
-An error thrown when HTTPS is required but a non-HTTPS URI was provided.
+An error thrown when secure URI scheme is required but a non-secure URI was provided.
 
 ## Properties
 
 ### **uri**
 `read-only uri: string;`
 
-URI that was rejected for not using HTTPS.
+URI that was rejected for not using secure scheme.
 
 Type: *string*
 

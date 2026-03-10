@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.EntityHurtAfterEventOptions Interface
 description: Contents of the @minecraft/server.EntityHurtAfterEventOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityHurtAfterEventOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains optional parameters for registering an entity hurt after event.
 

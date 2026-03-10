@@ -16,12 +16,26 @@ A property item which supports creating nested folders of collection items
 
 ## Properties
 
+### **canDragDropEntries**
+`read-only canDragDropEntries: boolean;`
+
+Drag and drop support for the entries
+
+Type: *boolean*
+
 ### **folderCount**
 `read-only folderCount: number;`
 
 Count of the child folders
 
 Type: *number*
+
+### **viewControlPane**
+`read-only viewControlPane: IListViewControlPane | undefined;`
+
+View control pane for the collection tree
+
+Type: *IListViewControlPane* | *undefined*
 
 ### **viewSortType**
 `read-only viewSortType: CollectionTreeSortType;`
@@ -32,8 +46,11 @@ Type: *CollectionTreeSortType*
 
 ## Methods
 - [addFolder](#addfolder)
+- [buildViewControl](#buildviewcontrol)
 - [forEachFolder](#foreachfolder)
 - [getFolder](#getfolder)
+- [removeFolder](#removefolder)
+- [setCanDragDropEntries](#setcandragdropentries)
 - [setViewSortType](#setviewsorttype)
 
 ### **addFolder**
@@ -49,6 +66,18 @@ Creates a new folder at the root of the collection
   Options to create a folder
 
 **Returns** *ICollectionTreeFolder*
+
+### **buildViewControl**
+`
+buildViewControl(options: ICollectionTreeViewControlPaneOptions): IListViewControlPane
+`
+
+Creates a pane that displays view and filtering configurations for the collection tree if the parent container supports it.
+
+#### **Parameters**
+- **options**: *ICollectionTreeViewControlPaneOptions*
+
+**Returns** *IListViewControlPane*
 
 ### **forEachFolder**
 `
@@ -77,6 +106,34 @@ Find the folder with the id if it exists at the root
   Identifier of the folder
 
 **Returns** *ICollectionTreeFolder* | *undefined*
+
+### **removeFolder**
+`
+removeFolder(id: string): boolean
+`
+
+Removes the folder with the id if it exists at the root
+
+#### **Parameters**
+- **id**: *string*
+  
+  Identifier of the folder
+
+**Returns** *boolean*
+
+### **setCanDragDropEntries**
+`
+setCanDragDropEntries(enabled: boolean): void
+`
+
+Toggles drag and drop support for the entries
+
+#### **Parameters**
+- **enabled**: *boolean*
+  
+  Whether to enable drag and drop
+
+**Returns** *void*
 
 ### **setViewSortType**
 `

@@ -10,7 +10,10 @@ description: Contents of the @minecraft/server.EntityHurtAfterEventSignal class 
 # EntityHurtAfterEventSignal Class (Version 1.x.x)
 
 > [!IMPORTANT]
-> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/EntityHurtAfterEventSignal.md).
+> This documentation is for an older version of this module.
+
+> [!CAUTION]
+> This class is deprecated and will be removed in 2.0.0.
 
 Manages callbacks that are connected to when an entity is hurt.
 
@@ -30,6 +33,9 @@ Adds a callback that will be called when an entity is hurt.
 - **options**?: [*EntityEventOptions*](EntityEventOptions.md) = `null`
 
 **Returns** (arg0: [*EntityHurtAfterEvent*](EntityHurtAfterEvent.md)) => *void*
+
+> [!CAUTION]
+> This function is deprecated and will be removed in 2.0.0.
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -44,6 +50,9 @@ Removes a callback from being called when an entity is hurt.
 
 #### **Parameters**
 - **callback**: (arg0: [*EntityHurtAfterEvent*](EntityHurtAfterEvent.md)) => *void*
+
+> [!CAUTION]
+> This function is deprecated and will be removed in 2.0.0.
   
 Notes:
 - This function can't be called in restricted-execution mode.

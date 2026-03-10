@@ -100,6 +100,9 @@ This event fires when an entity is hurt (takes damage).
 
 Type: [*EntityHurtAfterEventSignal*](EntityHurtAfterEventSignal.md)
 
+> [!CAUTION]
+> This property is deprecated and will be removed in 2.0.0.
+
 Notes:
   - This property can be read in early-execution mode.
 

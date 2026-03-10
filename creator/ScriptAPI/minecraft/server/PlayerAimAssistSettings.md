@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.PlayerAimAssistSettings Interface
 description: Contents of the @minecraft/server.PlayerAimAssistSettings class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlayerAimAssistSettings Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Settings relating to a player's aim-assist targeting.
 

@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.AimAssistPreset Class
 description: Contents of the @minecraft/server.AimAssistPreset class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # AimAssistPreset Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Handle to an aim-assist preset that exists in the world.aimAssist registry.
 

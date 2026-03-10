@@ -33,17 +33,12 @@ Custom blocks with the "minecraft:replaceable" component will not trigger the ev
 
 Type: (arg0: [*BlockComponentBlockBreakEvent*](BlockComponentBlockBreakEvent.md), arg1: [*CustomComponentParameters*](CustomComponentParameters.md)) => *void*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **onEntity**
 `onEntity?: (arg0: BlockComponentEntityEvent, arg1: CustomComponentParameters) => void;`
 
 This function will be called when an entity fires an event to this block in the world.
 
 Type: (arg0: [*BlockComponentEntityEvent*](BlockComponentEntityEvent.md), arg1: [*CustomComponentParameters*](CustomComponentParameters.md)) => *void*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **onEntityFallOn**
 `onEntityFallOn?: (arg0: BlockComponentEntityFallOnEvent, arg1: CustomComponentParameters) => void;`

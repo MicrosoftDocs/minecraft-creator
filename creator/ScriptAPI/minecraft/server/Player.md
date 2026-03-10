@@ -212,9 +212,7 @@ Notes:
 ::: moniker range="=minecraft-bedrock-experimental"
 - [eatItem](#eatitem)
 ::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [getAimAssist](#getaimassist)
-::: moniker-end
 - [getControlScheme](#getcontrolscheme)
 - [getGameMode](#getgamemode)
 - [getItemCooldown](#getitemcooldown)
@@ -320,7 +318,6 @@ Notes:
   - Throws if the item is not a food item.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getAimAssist**
 `
 getAimAssist(): PlayerAimAssist
@@ -329,10 +326,6 @@ getAimAssist(): PlayerAimAssist
 The player's aim-assist settings.
 
 **Returns** [*PlayerAimAssist*](PlayerAimAssist.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **getControlScheme**
 `

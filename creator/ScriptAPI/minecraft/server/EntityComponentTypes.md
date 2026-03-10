@@ -46,6 +46,10 @@ Defines the entity's color. Only works on certain entities that have predefined 
 Defines the entity's secondary color. Only works on certain entities that have predefined secondary color values (e.g., tropical fish).
 ### **CursorInventory**
 `CursorInventory = "minecraft:cursor_inventory"`
+### **EnderInventory**
+`EnderInventory = "minecraft:ender_inventory"`
+
+Represents this entity's ender inventory properties.
 ### **Equippable**
 `Equippable = "minecraft:equippable"`
 

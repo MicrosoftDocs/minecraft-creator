@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.AimAssistTargetMode Enumeration
 description: Contents of the @minecraft/server.AimAssistTargetMode enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # AimAssistTargetMode Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Specifies different targeting modes for use in aim-assist.
 

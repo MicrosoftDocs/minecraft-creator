@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.EntityHurtBeforeEvent Class
 description: Contents of the @minecraft/server.EntityHurtBeforeEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityHurtBeforeEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains information related to an entity that will be hurt.
 

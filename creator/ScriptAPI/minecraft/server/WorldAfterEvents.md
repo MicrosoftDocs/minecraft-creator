@@ -13,6 +13,36 @@ Contains a set of events that are available across the scope of the World.
 
 ## Properties
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **blockContainerClosed**
+`read-only blockContainerClosed: BlockContainerClosedAfterEventSignal;`
+
+This event fires when a block container is closed.
+
+Type: [*BlockContainerClosedAfterEventSignal*](BlockContainerClosedAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **blockContainerOpened**
+`read-only blockContainerOpened: BlockContainerOpenedAfterEventSignal;`
+
+This event fires when a block container is opened.
+
+Type: [*BlockContainerOpenedAfterEventSignal*](BlockContainerOpenedAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
+
 ### **blockExplode**
 `read-only blockExplode: BlockExplodeAfterEventSignal;`
 
@@ -68,6 +98,36 @@ Type: [*EffectAddAfterEventSignal*](EffectAddAfterEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **entityContainerClosed**
+`read-only entityContainerClosed: EntityContainerClosedAfterEventSignal;`
+
+This event fires when an entity container is closed.
+
+Type: [*EntityContainerClosedAfterEventSignal*](EntityContainerClosedAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **entityContainerOpened**
+`read-only entityContainerOpened: EntityContainerOpenedAfterEventSignal;`
+
+This event fires when an entity container is opened.
+
+Type: [*EntityContainerOpenedAfterEventSignal*](EntityContainerOpenedAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
+
 ### **entityDie**
 `read-only entityDie: EntityDieAfterEventSignal;`
 
@@ -78,18 +138,13 @@ Type: [*EntityDieAfterEventSignal*](EntityDieAfterEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **entityHeal**
 `read-only entityHeal: EntityHealAfterEventSignal;`
 
 Type: [*EntityHealAfterEventSignal*](EntityHealAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
 ### **entityHealthChanged**
 `read-only entityHealthChanged: EntityHealthChangedAfterEventSignal;`
@@ -121,7 +176,6 @@ Type: [*EntityHitEntityAfterEventSignal*](EntityHitEntityAfterEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **entityHurt**
 `read-only entityHurt: EntityHurtAfterEventSignal;`
 
@@ -129,14 +183,9 @@ This event fires when an entity is hurt (takes damage).
 
 Type: [*EntityHurtAfterEventSignal*](EntityHurtAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **entityItemDrop**
 `read-only entityItemDrop: EntityItemDropAfterEventSignal;`
 
@@ -144,14 +193,9 @@ This event fires when an entity drops items.
 
 Type: [*EntityItemDropAfterEventSignal*](EntityItemDropAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **entityItemPickup**
 `read-only entityItemPickup: EntityItemPickupAfterEventSignal;`
 
@@ -159,12 +203,8 @@ This event fires when an entity picks up items.
 
 Type: [*EntityItemPickupAfterEventSignal*](EntityItemPickupAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
 ### **entityLoad**
 `read-only entityLoad: EntityLoadAfterEventSignal;`

@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.EntityItemPickupEventOptions Interface
 description: Contents of the @minecraft/server.EntityItemPickupEventOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityItemPickupEventOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 An interface that is passed into {@link @minecraft/Server.EntityItemPickupAfterEventSignal.subscribe} and {@link @minecraft/Server.EntityItemPickupBeforeEventSignal.subscribe} that filters out which events are passed to the provided callback.
 

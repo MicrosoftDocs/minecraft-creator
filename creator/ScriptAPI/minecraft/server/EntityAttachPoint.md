@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.EntityAttachPoint Enumeration
 description: Contents of the @minecraft/server.EntityAttachPoint enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityAttachPoint Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 The entity's attach location point. Contains points such as head, body, leg, etc to attach the camera to.
 

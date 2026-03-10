@@ -36,7 +36,6 @@ Type: *number*
 Notes:
   - This property can throw errors when used.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **unbreakable**
 `unbreakable: boolean;`
 
@@ -44,12 +43,8 @@ Whether an item breaks or loses durability. Setting to true temporarily removes 
 
 Type: *boolean*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can't be edited in restricted-execution mode.
-::: moniker-end
 
 ## Methods
 - [getDamageChance](#getdamagechance)
