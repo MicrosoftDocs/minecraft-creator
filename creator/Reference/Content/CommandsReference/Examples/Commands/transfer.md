@@ -27,14 +27,14 @@ Transfers a player to another server.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| pfidOrMSA | [Identifier](../CommandTypes/type_id.md) | Required |  |
-| server | [Identifier](../CommandTypes/type_id.md) | Required |  |
-| port | [Integer](../CommandTypes/type_int.md) | Optional |  |
+| pfidOrMSA | [id](../CommandTypes/type_id.md) | Required |  |
+| server | [id](../CommandTypes/type_id.md) | Required |  |
+| port | [int](../CommandTypes/type_int.md) | Optional |  |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| pfidOrMSA | [Identifier](../CommandTypes/type_id.md) |  |
-| port | [Integer](../CommandTypes/type_int.md) |  |
-| server | [Identifier](../CommandTypes/type_id.md) |  |
+| pfidOrMSA | [id](../CommandTypes/type_id.md) |  |
+| port | [int](../CommandTypes/type_int.md) |  |
+| server | [id](../CommandTypes/type_id.md) |  |

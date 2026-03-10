@@ -29,20 +29,20 @@ Spawn players at a particular `x` and `z` rotation with a defined `distance`, `m
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| x | [Rotation Value](../CommandTypes/type_rval.md) | Required | The initial `x` position of the player. |
-| z | [Rotation Value](../CommandTypes/type_rval.md) | Required | The initial `z` position of the player. |
-| spreadDistance | [Value](../CommandTypes/type_val.md) | Required | The distance between players when they spawn. Default: `0.0`. |
-| maxRange | [Value](../CommandTypes/type_val.md) | Required | The furthest distance that players can spawn from each other. Default: `0.0`. |
-| victim | [Entity Selector](../CommandTypes/type_selection.md) | Required | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
-| maxHeight | [Rotation Value](../CommandTypes/type_rval.md) | Optional | The maximum height that players can spawn. Default: `0.0`. |
+| x | [rotation](../CommandTypes/type_rval.md) | Required | The initial `x` position of the player. |
+| z | [rotation](../CommandTypes/type_rval.md) | Required | The initial `z` position of the player. |
+| spreadDistance | [float](../CommandTypes/type_val.md) | Required | The distance between players when they spawn. Default: `0.0`. |
+| maxRange | [float](../CommandTypes/type_val.md) | Required | The furthest distance that players can spawn from each other. Default: `0.0`. |
+| victim | [target](../CommandTypes/type_selection.md) | Required | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| maxHeight | [rotation](../CommandTypes/type_rval.md) | Optional | The maximum height that players can spawn. Default: `0.0`. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| maxHeight | [Rotation Value](../CommandTypes/type_rval.md) | The maximum height that players can spawn. Default: `0.0`. |
-| maxRange | [Value](../CommandTypes/type_val.md) | The furthest distance that players can spawn from each other. Default: `0.0`. |
-| spreadDistance | [Value](../CommandTypes/type_val.md) | The distance between players when they spawn. Default: `0.0`. |
-| victim | [Entity Selector](../CommandTypes/type_selection.md) | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
-| x | [Rotation Value](../CommandTypes/type_rval.md) | The initial `x` position of the player. |
-| z | [Rotation Value](../CommandTypes/type_rval.md) | The initial `z` position of the player. |
+| maxHeight | [rotation](../CommandTypes/type_rval.md) | The maximum height that players can spawn. Default: `0.0`. |
+| maxRange | [float](../CommandTypes/type_val.md) | The furthest distance that players can spawn from each other. Default: `0.0`. |
+| spreadDistance | [float](../CommandTypes/type_val.md) | The distance between players when they spawn. Default: `0.0`. |
+| victim | [target](../CommandTypes/type_selection.md) | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| x | [rotation](../CommandTypes/type_rval.md) | The initial `x` position of the player. |
+| z | [rotation](../CommandTypes/type_rval.md) | The initial `z` position of the player. |

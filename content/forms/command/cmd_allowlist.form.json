@@ -21,7 +21,9 @@
       "commandType": "ID"
     }
   ],
-  "aliases": ["whitelist"],
+  "aliases": [
+    "whitelist"
+  ],
   "overloads": [
     {
       "id": "1",

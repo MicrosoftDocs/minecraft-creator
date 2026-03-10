@@ -29,10 +29,10 @@ Clear the spawn point of a given player.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| player | [Entity Selector](../CommandTypes/type_selection.md) | Optional | The player whose checkpoint should be cleared. When using this command in a command block, a [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) or player name must be specified. When using this command in chat, if no target is specified, then default target is the player using the command. |
+| player | [target](../CommandTypes/type_selection.md) | Optional | The player whose checkpoint should be cleared. When using this command in a command block, a [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) or player name must be specified. When using this command in chat, if no target is specified, then default target is the player using the command. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| player | [Entity Selector](../CommandTypes/type_selection.md) | The player whose checkpoint should be cleared. When using this command in a command block, a [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) or player name must be specified. When using this command in chat, if no target is specified, then default target is the player using the command. |
+| player | [target](../CommandTypes/type_selection.md) | The player whose checkpoint should be cleared. When using this command in a command block, a [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) or player name must be specified. When using this command in chat, if no target is specified, then default target is the player using the command. |

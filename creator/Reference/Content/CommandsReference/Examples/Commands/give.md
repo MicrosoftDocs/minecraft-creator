@@ -29,11 +29,11 @@ Give a set of players selected via a target selector an item.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| player | [Entity Selector](../CommandTypes/type_selection.md) | Required | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
-| itemName | [Item ID](../CommandTypes/type_item.md) | Required | An `enum` of the type of item to give. |
-| amount | [Integer](../CommandTypes/type_int.md) | Optional | Amount to give to player. Default: `1`. |
-| data | [Integer](../CommandTypes/type_int.md) | Optional | Optional. Fireworks related `data` required to give a firework type item. |
-| components | [JSON Object](../CommandTypes/type_json_object.md) | Optional | Optional. Specify if the item has components to call required component events. |
+| player | [target](../CommandTypes/type_selection.md) | Required | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| itemName | [Item](../CommandTypes/type_item.md) | Required | An `enum` of the type of item to give. |
+| amount | [int](../CommandTypes/type_int.md) | Optional | Amount to give to player. Default: `1`. |
+| data | [int](../CommandTypes/type_int.md) | Optional | Optional. Fireworks related `data` required to give a firework type item. |
+| components | [json](../CommandTypes/type_json_object.md) | Optional | Optional. Specify if the item has components to call required component events. |
 
 **Examples:**
 
@@ -85,8 +85,8 @@ Give yourself 16 golden apples:
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| amount | [Integer](../CommandTypes/type_int.md) | Amount to give to player. Default: `1`. |
-| components | [JSON Object](../CommandTypes/type_json_object.md) | Optional. Specify if the item has components to call required component events. |
-| data | [Integer](../CommandTypes/type_int.md) | Optional. Fireworks related `data` required to give a firework type item. |
-| itemName | [Item ID](../CommandTypes/type_item.md) | An `enum` of the type of item to give. |
-| player | [Entity Selector](../CommandTypes/type_selection.md) | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| amount | [int](../CommandTypes/type_int.md) | Amount to give to player. Default: `1`. |
+| components | [json](../CommandTypes/type_json_object.md) | Optional. Specify if the item has components to call required component events. |
+| data | [int](../CommandTypes/type_int.md) | Optional. Fireworks related `data` required to give a firework type item. |
+| itemName | [Item](../CommandTypes/type_item.md) | An `enum` of the type of item to give. |
+| player | [target](../CommandTypes/type_selection.md) | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |

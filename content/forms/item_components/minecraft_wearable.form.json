@@ -213,6 +213,10 @@
             "title": "Slot.armor.legs"
           },
           {
+            "id": "slot.weapon.mainhand",
+            "title": "Slot.weapon.mainhand"
+          },
+          {
             "id": "slot.weapon.offhand",
             "title": "Slot.weapon.offhand"
           }

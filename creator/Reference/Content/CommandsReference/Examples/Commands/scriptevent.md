@@ -29,12 +29,12 @@ Passes a message with the specified ID and payload.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| messageId | [Identifier](../CommandTypes/type_id.md) | Required | Identifier of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world. |
-| message | [Message](../CommandTypes/type_message_root.md) | Required | Data component of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world. Message may not exceed 2048 characters in length. |
+| messageId | [id](../CommandTypes/type_id.md) | Required | Identifier of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world. |
+| message | [message_root](../CommandTypes/type_message_root.md) | Required | Data component of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world. Message may not exceed 2048 characters in length. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| message | [Message](../CommandTypes/type_message_root.md) | Data component of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world. Message may not exceed 2048 characters in length. |
-| messageId | [Identifier](../CommandTypes/type_id.md) | Identifier of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world. |
+| message | [message_root](../CommandTypes/type_message_root.md) | Data component of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world. Message may not exceed 2048 characters in length. |
+| messageId | [id](../CommandTypes/type_id.md) | Identifier of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world. |

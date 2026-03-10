@@ -29,10 +29,10 @@ Send a `message`.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| message | [Message](../CommandTypes/type_message_root.md) | Required | Plain text that can include spaces and selectors. |
+| message | [message_root](../CommandTypes/type_message_root.md) | Required | Plain text that can include spaces and selectors. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| message | [Message](../CommandTypes/type_message_root.md) | Plain text that can include spaces and selectors. |
+| message | [message_root](../CommandTypes/type_message_root.md) | Plain text that can include spaces and selectors. |

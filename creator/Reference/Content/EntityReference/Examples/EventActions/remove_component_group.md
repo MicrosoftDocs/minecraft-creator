@@ -13,6 +13,12 @@ ms.date: 02/11/2025
 Removes component groups from the current entity. This can be any group you have defined in the 'component_groups' section of the file.
 
 
+## Remove Component Group Properties
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| component_groups | *not set* | String | List of component groups to remove from the entity. | 
+
 ## Samples
 
 

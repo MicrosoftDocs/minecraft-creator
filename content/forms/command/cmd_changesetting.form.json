@@ -15,20 +15,37 @@
       "title": "value",
       "type": "string",
       "isOptional": false,
-      "description": "Boolean value",
+      "description": "The value to set.",
       "subFormId": "type_boolean",
       "commandType": "BOOLEAN"
+    },
+    {
+      "id": "difficultyvalue",
+      "title": "value",
+      "type": "string",
+      "isOptional": false,
+      "description": "The difficulty value to set.",
+      "commandType": "DIFFICULTY"
+    },
+    {
+      "id": "difficultyint",
+      "title": "value",
+      "type": "string",
+      "isOptional": false,
+      "description": "The difficulty value as an integer (0=Peaceful, 1=Easy, 2=Normal, 3=Hard).",
+      "subFormId": "type_int",
+      "commandType": "INT"
     }
   ],
   "overloads": [
     {
       "id": "1",
-      "title": "Allow-cheats",
-      "description": "Allows cheats using `Boolean` .",
+      "title": "Allow cheats",
+      "description": "Enables or disables cheats on the server.",
       "params": [
         {
           "name": "setting",
-          "type": "BOOLSETTINGNAME",
+          "type": "CHANGESETTINGACTIONALLOWCHEATS",
           "isOptional": false
         },
         {
@@ -40,16 +57,16 @@
     },
     {
       "id": "2",
-      "title": "Difficulty (difficulty value)",
-      "description": "Changes difficulty using difficulty value from the [Difficulty enum](../enums/Difficulty.md).",
+      "title": "Difficulty (enum)",
+      "description": "Changes the server difficulty using a difficulty name.",
       "params": [
         {
           "name": "setting",
-          "type": "DIFFICULTYSETTINGNAME",
+          "type": "CHANGESETTINGACTIONDIFFICULTY",
           "isOptional": false
         },
         {
-          "name": "value",
+          "name": "difficultyvalue",
           "type": "DIFFICULTY",
           "isOptional": false
         }
@@ -57,16 +74,16 @@
     },
     {
       "id": "3",
-      "title": "Difficulty (integer value)",
-      "description": "Changes difficulty using difficulty `integer` from the [Difficulty enum](../enums/Difficulty.md).",
+      "title": "Difficulty (integer)",
+      "description": "Changes the server difficulty using an integer value (0=Peaceful, 1=Easy, 2=Normal, 3=Hard).",
       "params": [
         {
           "name": "setting",
-          "type": "DIFFICULTYSETTINGNAME",
+          "type": "CHANGESETTINGACTIONDIFFICULTY",
           "isOptional": false
         },
         {
-          "name": "value",
+          "name": "difficultyint",
           "type": "INT",
           "isOptional": false
         }

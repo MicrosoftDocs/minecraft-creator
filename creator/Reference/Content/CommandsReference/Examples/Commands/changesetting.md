@@ -19,50 +19,48 @@ Changes a setting on the dedicated server while it's running.
 
 ## Syntax Overview
 
-`/changesetting <setting: boolsettingname> <value: Boolean>`
+`/changesetting allowcheats <value: Boolean>`
 
-`/changesetting <setting: boolsettingname> <value: Boolean>`
+`/changesetting difficulty <value: difficulty>`
 
-`/changesetting <setting: boolsettingname> <value: Boolean>`
+`/changesetting difficulty <value: int>`
 
 ## Usage
 
-### Allow-cheats
+### Allow cheats
 
-`/changesetting <setting: boolsettingname> <value: Boolean>`
+`/changesetting allowcheats <value: Boolean>`
 
-Allows cheats using `Boolean` .
-
-| Argument | Type | Required | Description |
-|:---------|:-----|:---------|:------------|
-| setting | boolsettingname | Required |  |
-| value | [Boolean](../CommandTypes/type_boolean.md) | Required | Boolean value |
-
-### Difficulty (difficulty value)
-
-`/changesetting <setting: boolsettingname> <value: Boolean>`
-
-Changes difficulty using difficulty value from the [Difficulty enum](../enums/Difficulty.md).
+Enables or disables cheats on the server.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| setting | boolsettingname | Required |  |
-| value | [Boolean](../CommandTypes/type_boolean.md) | Required | Boolean value |
+| value | [Boolean](../CommandTypes/type_boolean.md) | Required | The value to set. |
 
-### Difficulty (integer value)
+### Difficulty (enum)
 
-`/changesetting <setting: boolsettingname> <value: Boolean>`
+`/changesetting difficulty <value: difficulty>`
 
-Changes difficulty using difficulty `integer` from the [Difficulty enum](../enums/Difficulty.md).
+Changes the server difficulty using a difficulty name.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| setting | boolsettingname | Required |  |
-| value | [Boolean](../CommandTypes/type_boolean.md) | Required | Boolean value |
+| value | difficulty | Required | The difficulty value to set. |
+
+### Difficulty (integer)
+
+`/changesetting difficulty <value: int>`
+
+Changes the server difficulty using an integer value (0=Peaceful, 1=Easy, 2=Normal, 3=Hard).
+
+| Argument | Type | Required | Description |
+|:---------|:-----|:---------|:------------|
+| value | [int](../CommandTypes/type_int.md) | Required | The difficulty value as an integer (0=Peaceful, 1=Easy, 2=Normal, 3=Hard). |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| setting | boolsettingname |  |
-| value | [Boolean](../CommandTypes/type_boolean.md) | Boolean value |
+| value | [Boolean](../CommandTypes/type_boolean.md) | The value to set. |
+| value | difficulty | The difficulty value to set. |
+| value | [int](../CommandTypes/type_int.md) | The difficulty value as an integer (0=Peaceful, 1=Easy, 2=Normal, 3=Hard). |

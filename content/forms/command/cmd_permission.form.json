@@ -12,7 +12,9 @@
       "commandType": "PERMISSIONSACTION"
     }
   ],
-  "aliases": ["ops"],
+  "aliases": [
+    "ops"
+  ],
   "overloads": [
     {
       "id": "1",

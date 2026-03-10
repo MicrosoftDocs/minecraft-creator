@@ -35,7 +35,7 @@ Each rule helps identify potential issues in your Minecraft content before deplo
 | [Item Types](itemtype.md) | Validates behavior pack item type definitions including format versions,... | 12 |
 | [JSON Schema Validation](json.md) | Validates JSON files against official JSON schemas located at public/schemas.... | 1 |
 | [JSON Form Structure Validation](jsonf.md) | Validates JSON files against Minecraft documentation-derived form schemas.... | 17 |
-| [Content Tags](jsontags.md) | Tracks content types and component usage across JSON files in the project. Used... | 8 |
+| [Content Tags](jsontags.md) | Tracks content types and component usage across JSON files in the project. Used... | 11 |
 | [Language Files](langfiles.md) | Validates that localization files (.lang) and the languages.json catalog are... | 5 |
 | [File Size/Lines](linesize.md) | Aggregates file size and line count statistics for all project items, broken... | 0 |
 | [MC Functions](mcfunction.md) | Validates .mcfunction files for correct command syntax and formatting.... | 2 |

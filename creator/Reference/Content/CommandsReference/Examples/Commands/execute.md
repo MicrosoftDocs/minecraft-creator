@@ -55,6 +55,8 @@ Executes a command on behalf of one or more entities. See more information in th
 
 `/execute subcommand <command: codebuilderargs>`
 
+## Usage
+
 ### Other variants
 
 #### As another entity
@@ -65,7 +67,7 @@ Executes a command using the context of an entity returned by the chosen selecto
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| origin | [Entity Selector](../CommandTypes/type_selection.md) | Required | The target of the command to execute. Must be a player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
+| origin | [target](../CommandTypes/type_selection.md) | Required | The target of the command to execute. Must be a player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
 | chainedCommand | executechainedoption_0 | Required |  |
 
 #### At the position of an entity
@@ -76,7 +78,7 @@ Executes a command from the position of an entity returned via the selection.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| origin | [Entity Selector](../CommandTypes/type_selection.md) | Required | The target of the command to execute. Must be a player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
+| origin | [target](../CommandTypes/type_selection.md) | Required | The target of the command to execute. Must be a player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
 | chainedCommand | executechainedoption_0 | Required |  |
 
 #### In dimension
@@ -98,7 +100,7 @@ Execute a given command from a `position` and specified `origin` target, while c
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| position | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | A `vector` of where to run the command from. |
+| position | [x y z](../CommandTypes/type_position_float.md) | Required | A `vector` of where to run the command from. |
 | chainedCommand | executechainedoption_0 | Required |  |
 
 #### Rotated with a specific yaw/pitch
@@ -109,8 +111,8 @@ Runs a command with the specified rotation as yaw and pitch.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| yaw | [Rotation Value](../CommandTypes/type_rval.md) | Required | Left-to-right rotation context of the command |
-| pitch | [Rotation Value](../CommandTypes/type_rval.md) | Required | Up-and-down rotation of the command |
+| yaw | [rotation](../CommandTypes/type_rval.md) | Required | Left-to-right rotation context of the command |
+| pitch | [rotation](../CommandTypes/type_rval.md) | Required | Up-and-down rotation of the command |
 | chainedCommand | executechainedoption_0 | Required |  |
 
 #### Facing a position
@@ -121,7 +123,7 @@ Runs a command with an entity facing a particular direction.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| position | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | A `vector` of where to run the command from. |
+| position | [x y z](../CommandTypes/type_position_float.md) | Required | A `vector` of where to run the command from. |
 | chainedCommand | executechainedoption_0 | Required |  |
 
 #### Align
@@ -132,7 +134,7 @@ Runs a command where positions are aligned (floored) to block axes.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| axes | [Identifier](../CommandTypes/type_id.md) | Required |  |
+| axes | [id](../CommandTypes/type_id.md) | Required |  |
 | chainedCommand | executechainedoption_0 | Required |  |
 
 #### Anchored
@@ -164,7 +166,7 @@ Execute a given command from a `position` and specified `origin` target.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| origin | [Entity Selector](../CommandTypes/type_selection.md) | Required | The target of the command to execute. Must be a player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
+| origin | [target](../CommandTypes/type_selection.md) | Required | The target of the command to execute. Must be a player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
 | chainedCommand | executechainedoption_0 | Required |  |
 
 #### Rotated as a another entity
@@ -175,7 +177,7 @@ Runs a command using the rotation from another entity as specified by the select
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| origin | [Entity Selector](../CommandTypes/type_selection.md) | Required | The target of the command to execute. Must be a player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
+| origin | [target](../CommandTypes/type_selection.md) | Required | The target of the command to execute. Must be a player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
 | chainedCommand | executechainedoption_0 | Required |  |
 
 #### Facing a selected entity
@@ -186,7 +188,7 @@ Runs a command with a contextual facing to another entity that is returned by a 
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| origin | [Entity Selector](../CommandTypes/type_selection.md) | Required | The target of the command to execute. Must be a player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
+| origin | [target](../CommandTypes/type_selection.md) | Required | The target of the command to execute. Must be a player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
 | anchor | actorlocation | Required |  |
 | chainedCommand | executechainedoption_0 | Required |  |
 
@@ -198,8 +200,8 @@ Runs a command if or unless there is a block at a position of a particular type.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| position | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | A `vector` of where to run the command from. |
-| block | [Block ID](../CommandTypes/type_block.md) | Required | Compares block to a given block `id`. |
+| position | [x y z](../CommandTypes/type_position_float.md) | Required | A `vector` of where to run the command from. |
+| block | [Block](../CommandTypes/type_block.md) | Required | Compares block to a given block `id`. |
 | chainedCommand | executechainedoption_0 | Optional |  |
 
 #### If/unless block has block states
@@ -210,8 +212,8 @@ Runs a command with if or unless there is a block with a set of block states tha
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| position | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | A `vector` of where to run the command from. |
-| block | [Block ID](../CommandTypes/type_block.md) | Required | Compares block to a given block `id`. |
+| position | [x y z](../CommandTypes/type_position_float.md) | Required | A `vector` of where to run the command from. |
+| block | [Block](../CommandTypes/type_block.md) | Required | Compares block to a given block `id`. |
 | blockStates | block_state_array | Required |  |
 | chainedCommand | executechainedoption_0 | Optional |  |
 
@@ -223,9 +225,9 @@ Runs a command if a particular set of blocks in a volume matches the scan mode c
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| begin | [Block Position](../CommandTypes/type_position.md) | Required |  |
-| end | [Block Position](../CommandTypes/type_position.md) | Required |  |
-| destination | [Block Position](../CommandTypes/type_position.md) | Required |  |
+| begin | [x y z](../CommandTypes/type_position.md) | Required |  |
+| end | [x y z](../CommandTypes/type_position.md) | Required |  |
+| destination | [x y z](../CommandTypes/type_position.md) | Required |  |
 | scan mode | blocksscanmode | Required |  |
 | chainedCommand | executechainedoption_0 | Optional |  |
 
@@ -237,7 +239,7 @@ Runs a command if (or unless) a selector returns at least one matching entity.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| target | [Entity Selector](../CommandTypes/type_selection.md) | Required |  |
+| target | [target](../CommandTypes/type_selection.md) | Required |  |
 | chainedCommand | executechainedoption_0 | Optional |  |
 
 #### If/unless score
@@ -248,10 +250,10 @@ Runs a command if (or unless) a scoreboard objective for a selected entity succe
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| target | [Entity Selector](../CommandTypes/type_selection.md) | Required |  |
+| target | [target](../CommandTypes/type_selection.md) | Required |  |
 | objective | scoreboardobjectives | Required |  |
-| operation | [Comparison Operator](../CommandTypes/type_compareoperator.md) | Required |  |
-| source | [Entity Selector](../CommandTypes/type_selection.md) | Required |  |
+| operation | [compareoperator](../CommandTypes/type_compareoperator.md) | Required |  |
+| source | [target](../CommandTypes/type_selection.md) | Required |  |
 | objective | scoreboardobjectives | Required |  |
 | chainedCommand | executechainedoption_0 | Optional |  |
 
@@ -263,10 +265,10 @@ Runs a command if the score matches particular value or range of values.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| target | [Entity Selector](../CommandTypes/type_selection.md) | Required |  |
+| target | [target](../CommandTypes/type_selection.md) | Required |  |
 | objective | scoreboardobjectives | Required |  |
 | matches | scorerangemode | Required |  |
-| range | [Integer Range](../CommandTypes/type_fullintegerrange.md) | Required |  |
+| range | [fullintegerrange](../CommandTypes/type_fullintegerrange.md) | Required |  |
 | chainedCommand | executechainedoption_0 | Optional |  |
 
 ## Examples
@@ -313,23 +315,23 @@ Runs a command if the score matches particular value or range of values.
 |:---------|:-----|:------------|
 | anchor | actorlocation |  |
 | anchored | actorlocation |  |
-| axes | [Identifier](../CommandTypes/type_id.md) |  |
-| begin | [Block Position](../CommandTypes/type_position.md) |  |
-| block | [Block ID](../CommandTypes/type_block.md) | Compares block to a given block `id`. |
+| axes | [id](../CommandTypes/type_id.md) |  |
+| begin | [x y z](../CommandTypes/type_position.md) |  |
+| block | [Block](../CommandTypes/type_block.md) | Compares block to a given block `id`. |
 | blockStates | block_state_array |  |
 | chainedCommand | executechainedoption_0 |  |
 | command | codebuilderargs | A `string` of the command to run. Must be a valid command. |
-| destination | [Block Position](../CommandTypes/type_position.md) |  |
+| destination | [x y z](../CommandTypes/type_position.md) |  |
 | dimension | dimension |  |
-| end | [Block Position](../CommandTypes/type_position.md) |  |
+| end | [x y z](../CommandTypes/type_position.md) |  |
 | matches | scorerangemode |  |
 | objective | scoreboardobjectives |  |
-| operation | [Comparison Operator](../CommandTypes/type_compareoperator.md) |  |
-| origin | [Entity Selector](../CommandTypes/type_selection.md) | The target of the command to execute. Must be a player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
-| pitch | [Rotation Value](../CommandTypes/type_rval.md) | Up-and-down rotation of the command |
-| position | [Position (x y z)](../CommandTypes/type_position_float.md) | A `vector` of where to run the command from. |
-| range | [Integer Range](../CommandTypes/type_fullintegerrange.md) |  |
+| operation | [compareoperator](../CommandTypes/type_compareoperator.md) |  |
+| origin | [target](../CommandTypes/type_selection.md) | The target of the command to execute. Must be a player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
+| pitch | [rotation](../CommandTypes/type_rval.md) | Up-and-down rotation of the command |
+| position | [x y z](../CommandTypes/type_position_float.md) | A `vector` of where to run the command from. |
+| range | [fullintegerrange](../CommandTypes/type_fullintegerrange.md) |  |
 | scan mode | blocksscanmode |  |
-| source | [Entity Selector](../CommandTypes/type_selection.md) |  |
-| target | [Entity Selector](../CommandTypes/type_selection.md) |  |
-| yaw | [Rotation Value](../CommandTypes/type_rval.md) | Left-to-right rotation context of the command |
+| source | [target](../CommandTypes/type_selection.md) |  |
+| target | [target](../CommandTypes/type_selection.md) |  |
+| yaw | [rotation](../CommandTypes/type_rval.md) | Left-to-right rotation context of the command |

@@ -35,6 +35,8 @@ Add, remove, or list ticking areas. See more information in the [Ticking Area do
 
 `/tickingarea <mode: tickingareamodeadd> <name: id> [preload: Boolean]`
 
+## Usage
+
 ### Add ticking area, rectangle
 
 `/tickingarea <mode: tickingareamodeadd> <from: x y z> <to: x y z> [name: id] [preload: Boolean]`
@@ -44,9 +46,9 @@ Add, remove, or list ticking areas. See more information in the [Ticking Area do
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | mode | tickingareamodeadd | Required |  |
-| from | [Block Position](../CommandTypes/type_position.md) | Required | A `vector` [x y z] that along with `to` of two opposite corners of a rectangular region to test for. |
-| to | [Block Position](../CommandTypes/type_position.md) | Required | A `vector` [x y z] that along with `from` of two opposite corners of a rectangular region to test for. |
-| name | [Identifier](../CommandTypes/type_id.md) | Optional | An optional `string` to specify the name of a ticking area. |
+| from | [x y z](../CommandTypes/type_position.md) | Required | A `vector` [x y z] that along with `to` of two opposite corners of a rectangular region to test for. |
+| to | [x y z](../CommandTypes/type_position.md) | Required | A `vector` [x y z] that along with `from` of two opposite corners of a rectangular region to test for. |
+| name | [id](../CommandTypes/type_id.md) | Optional | An optional `string` to specify the name of a ticking area. |
 | preload | [Boolean](../CommandTypes/type_boolean.md) | Optional | A `Boolean` that queries the preload value. Default: `false`. |
 
 ### Add ticking area, circle
@@ -59,9 +61,9 @@ Add, remove, or list ticking areas. See more information in the [Ticking Area do
 |:---------|:-----|:---------|:------------|
 | mode | tickingareamodeadd | Required |  |
 | circle | addtickingareatype | Required |  |
-| center | [Block Position](../CommandTypes/type_position.md) | Required | A `vector` [x y z] that specifies the center of a defined loaded area. |
-| radius | [Integer](../CommandTypes/type_int.md) | Required | An `integer` that specifies the area as the number of chunks loaded in. Between 0 and 4. |
-| name | [Identifier](../CommandTypes/type_id.md) | Optional | An optional `string` to specify the name of a ticking area. |
+| center | [x y z](../CommandTypes/type_position.md) | Required | A `vector` [x y z] that specifies the center of a defined loaded area. |
+| radius | [int](../CommandTypes/type_int.md) | Required | An `integer` that specifies the area as the number of chunks loaded in. Between 0 and 4. |
+| name | [id](../CommandTypes/type_id.md) | Optional | An optional `string` to specify the name of a ticking area. |
 | preload | [Boolean](../CommandTypes/type_boolean.md) | Optional | A `Boolean` that queries the preload value. Default: `false`. |
 
 ### Remove ticking area, vector
@@ -73,7 +75,7 @@ Add, remove, or list ticking areas. See more information in the [Ticking Area do
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | mode | tickingareamodeadd | Required |  |
-| position | [Block Position](../CommandTypes/type_position.md) | Required | A `vector` [x y z] of a point within the ticking area. |
+| position | [x y z](../CommandTypes/type_position.md) | Required | A `vector` [x y z] of a point within the ticking area. |
 
 ### Remove ticking area, named
 
@@ -84,7 +86,7 @@ Add, remove, or list ticking areas. See more information in the [Ticking Area do
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | mode | tickingareamodeadd | Required |  |
-| name | [Identifier](../CommandTypes/type_id.md) | Required | An optional `string` to specify the name of a ticking area. |
+| name | [id](../CommandTypes/type_id.md) | Required | An optional `string` to specify the name of a ticking area. |
 
 ### Remove all ticking areas
 
@@ -116,7 +118,7 @@ Add, remove, or list ticking areas. See more information in the [Ticking Area do
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | mode | tickingareamodeadd | Required |  |
-| position | [Block Position](../CommandTypes/type_position.md) | Required | A `vector` [x y z] of a point within the ticking area. |
+| position | [x y z](../CommandTypes/type_position.md) | Required | A `vector` [x y z] of a point within the ticking area. |
 | preload | [Boolean](../CommandTypes/type_boolean.md) | Optional | A `Boolean` that queries the preload value. Default: `false`. |
 
 ### Preload ticking area, named
@@ -128,7 +130,7 @@ Add, remove, or list ticking areas. See more information in the [Ticking Area do
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | mode | tickingareamodeadd | Required |  |
-| name | [Identifier](../CommandTypes/type_id.md) | Required | An optional `string` to specify the name of a ticking area. |
+| name | [id](../CommandTypes/type_id.md) | Required | An optional `string` to specify the name of a ticking area. |
 | preload | [Boolean](../CommandTypes/type_boolean.md) | Optional | A `Boolean` that queries the preload value. Default: `false`. |
 
 ## Arguments Reference
@@ -136,12 +138,12 @@ Add, remove, or list ticking areas. See more information in the [Ticking Area do
 | Argument | Type | Description |
 |:---------|:-----|:------------|
 | all-dimensions | alldimensions | Specify `all-dimensions` to determine whether ticking areas in other dimensions are listed. |
-| center | [Block Position](../CommandTypes/type_position.md) | A `vector` [x y z] that specifies the center of a defined loaded area. |
+| center | [x y z](../CommandTypes/type_position.md) | A `vector` [x y z] that specifies the center of a defined loaded area. |
 | circle | addtickingareatype |  |
-| from | [Block Position](../CommandTypes/type_position.md) | A `vector` [x y z] that along with `to` of two opposite corners of a rectangular region to test for. |
+| from | [x y z](../CommandTypes/type_position.md) | A `vector` [x y z] that along with `to` of two opposite corners of a rectangular region to test for. |
 | mode | tickingareamodeadd |  |
-| name | [Identifier](../CommandTypes/type_id.md) | An optional `string` to specify the name of a ticking area. |
-| position | [Block Position](../CommandTypes/type_position.md) | A `vector` [x y z] of a point within the ticking area. |
+| name | [id](../CommandTypes/type_id.md) | An optional `string` to specify the name of a ticking area. |
+| position | [x y z](../CommandTypes/type_position.md) | A `vector` [x y z] of a point within the ticking area. |
 | preload | [Boolean](../CommandTypes/type_boolean.md) | A `Boolean` that queries the preload value. Default: `false`. |
-| radius | [Integer](../CommandTypes/type_int.md) | An `integer` that specifies the area as the number of chunks loaded in. Between 0 and 4. |
-| to | [Block Position](../CommandTypes/type_position.md) | A `vector` [x y z] that along with `from` of two opposite corners of a rectangular region to test for. |
+| radius | [int](../CommandTypes/type_int.md) | An `integer` that specifies the area as the number of chunks loaded in. Between 0 and 4. |
+| to | [x y z](../CommandTypes/type_position.md) | A `vector` [x y z] that along with `from` of two opposite corners of a rectangular region to test for. |

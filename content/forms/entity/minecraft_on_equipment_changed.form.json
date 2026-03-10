@@ -1,0 +1,19 @@
+{
+  "id": "minecraft:on_equipment_changed",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:on_equipment_changed",
+    "title": "Entity On Equipment Changed",
+    "description": "Allows to specify events to execute when equipment is set in the entity's default equipment slots. Doesn't apply to \"minecraft:inventory\", use \"minecraft:equippable\" instead.",
+    "fields": [
+      {
+        "id": "slots",
+        "title": "Slots",
+        "description": "A list of slot-specific events to execute when the entity's equipment changes in those slots.",
+        "dataType": 16,
+        "defaultValue": [],
+        "subFormId": "entity/onequipmentchangedslotentrydescriptor"
+      }
+    ]
+  }
+}

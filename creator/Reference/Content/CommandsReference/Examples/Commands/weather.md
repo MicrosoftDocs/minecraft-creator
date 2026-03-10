@@ -17,15 +17,14 @@ Sets the weather in the environment. See more in the [Popular Commands documenta
 | **Permission Level** | Game Directors |
 | **Requires Cheats** | Yes |
 
-## Syntax Overview
+## Sub-commands
 
-`/weather <type: weathertype> [duration: int]`
+- [**type**](#type) — An `enum` of `clear`, `rain` (will cause snow in cold biomes), or `thunder` (will cause blizzard in cold biomes).
+- [**query**](#query)
 
-`/weather <query: weatherquery>`
+## type
 
-## Usage
-
-### Set weather
+An `enum` of `clear`, `rain` (will cause snow in cold biomes), or `thunder` (will cause blizzard in cold biomes).
 
 `/weather <type: weathertype> [duration: int]`
 
@@ -34,9 +33,9 @@ Sets the weather in the environment. See more in the [Popular Commands documenta
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | type | weathertype | Required | An `enum` of `clear`, `rain` (will cause snow in cold biomes), or `thunder` (will cause blizzard in cold biomes). |
-| duration | [Integer](../CommandTypes/type_int.md) | Optional | An optional `integer` that will a random number between 300 and 900 seconds if not specified. |
+| duration | [int](../CommandTypes/type_int.md) | Optional | An optional `integer` that will a random number between 300 and 900 seconds if not specified. |
 
-### Query weather
+## query
 
 `/weather <query: weatherquery>`
 
@@ -50,6 +49,6 @@ Sets the weather in the environment. See more in the [Popular Commands documenta
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| duration | [Integer](../CommandTypes/type_int.md) | An optional `integer` that will a random number between 300 and 900 seconds if not specified. |
+| duration | [int](../CommandTypes/type_int.md) | An optional `integer` that will a random number between 300 and 900 seconds if not specified. |
 | query | weatherquery |  |
 | type | weathertype | An `enum` of `clear`, `rain` (will cause snow in cold biomes), or `thunder` (will cause blizzard in cold biomes). |

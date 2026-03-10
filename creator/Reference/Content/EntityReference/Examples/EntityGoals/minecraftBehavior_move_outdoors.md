@@ -17,7 +17,7 @@ Allows this entity to move outdoors.
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| goal_radius | 0.5 | Decimal number | The radius away from the target block to count as reaching the goal. | 
+| goal_radius | 2 | Decimal number | The radius away from the target block to count as reaching the goal. | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
 | search_count | 10 | Integer number | The amount of times to try finding a random outdoors position before failing. | 
 | search_height | 5 | Integer number | The y range to search for an outdoors position for. | 

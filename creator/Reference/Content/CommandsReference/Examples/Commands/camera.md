@@ -97,7 +97,7 @@ Applies a camera preset to the selected players, with optional position, rotatio
 
 `/camera <players: target> set <preset: CameraPresets> default`
 
-### With ease
+### Signifies the start of a section for defining ease override parameters
 
 #### Sets camera with easing overrides and initial position and x/y rotation
 
@@ -107,13 +107,13 @@ Sets a camera with a specified preset and a fixed x/y rotation.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| easeTime | [Value](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
+| easeTime | [float](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
 | easeType | Easing | Required | Specified type of the easing to use. |
-| position | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | The position to locate the camera at. |
-| xRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | x Rotation value |
-| yRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | y Rotation value |
+| position | [x y z](../CommandTypes/type_position_float.md) | Required | The position to locate the camera at. |
+| xRot | [rotation](../CommandTypes/type_rval.md) | Required | x Rotation value |
+| yRot | [rotation](../CommandTypes/type_rval.md) | Required | y Rotation value |
 
 **Examples:**
 
@@ -137,12 +137,12 @@ Sets a camera with a specified preset while looking at a selected entity.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| easeTime | [Value](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
+| easeTime | [float](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
 | easeType | Easing | Required | Specified type of the easing to use. |
-| position | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | The position to locate the camera at. |
-| lookAtEntity | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector to use for looking at an entity. |
+| position | [x y z](../CommandTypes/type_position_float.md) | Required | The position to locate the camera at. |
+| lookAtEntity | [target](../CommandTypes/type_selection.md) | Required | A target selector to use for looking at an entity. |
 
 #### Sets camera with easing overrides and a initial position, looking at a particular position
 
@@ -152,12 +152,12 @@ Sets a camera with a specified preset while looking at a particular position.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| easeTime | [Value](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
+| easeTime | [float](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
 | easeType | Easing | Required | Specified type of the easing to use. |
-| position | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | The position to locate the camera at. |
-| lookAtPosition | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | A position to look at. |
+| position | [x y z](../CommandTypes/type_position_float.md) | Required | The position to locate the camera at. |
+| lookAtPosition | [x y z](../CommandTypes/type_position_float.md) | Required | A position to look at. |
 
 #### Sets camera with easing overrides and a position
 
@@ -167,11 +167,11 @@ Sets a camera with a specified preset, easing, and position.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| easeTime | [Value](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
+| easeTime | [float](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
 | easeType | Easing | Required | Specified type of the easing to use. |
-| position | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | The position to locate the camera at. |
+| position | [x y z](../CommandTypes/type_position_float.md) | Required | The position to locate the camera at. |
 
 #### Sets camera with easing overrides and rotation
 
@@ -181,12 +181,12 @@ Sets a camera with a specified preset and rotation.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| easeTime | [Value](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
+| easeTime | [float](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
 | easeType | Easing | Required | Specified type of the easing to use. |
-| xRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | x Rotation value |
-| yRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | y Rotation value |
+| xRot | [rotation](../CommandTypes/type_rval.md) | Required | x Rotation value |
+| yRot | [rotation](../CommandTypes/type_rval.md) | Required | y Rotation value |
 
 #### Sets camera with easing overrides and looking at an entity
 
@@ -196,11 +196,11 @@ Sets a camera with a specified easing and time, facing an entity.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| easeTime | [Value](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
+| easeTime | [float](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
 | easeType | Easing | Required | Specified type of the easing to use. |
-| lookAtEntity | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector to use for looking at an entity. |
+| lookAtEntity | [target](../CommandTypes/type_selection.md) | Required | A target selector to use for looking at an entity. |
 
 #### Sets camera looking at a position, with easing
 
@@ -210,11 +210,11 @@ Sets a camera with a specified easing and time, facing a position.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| easeTime | [Value](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
+| easeTime | [float](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
 | easeType | Easing | Required | Specified type of the easing to use. |
-| lookAtPosition | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | A position to look at. |
+| lookAtPosition | [x y z](../CommandTypes/type_position_float.md) | Required | A position to look at. |
 
 #### Sets camera with an easing
 
@@ -224,9 +224,9 @@ Sets a camera with a specified easing.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| easeTime | [Value](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
+| easeTime | [float](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
 | easeType | Easing | Required | Specified type of the easing to use. |
 
 #### Timed color-tinted fade
@@ -237,12 +237,12 @@ Applies a color tinted fade for the specified fade in, hold, and out time period
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| easeTime | [Value](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
+| easeTime | [float](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
 | easeType | Easing | Required | Specified type of the easing to use. |
-| xViewOffset | [Value](../CommandTypes/type_val.md) | Required | X component of a view offset |
-| yViewOffset | [Value](../CommandTypes/type_val.md) | Required | Y component of a view offset |
+| xViewOffset | [float](../CommandTypes/type_val.md) | Required | X component of a view offset |
+| yViewOffset | [float](../CommandTypes/type_val.md) | Required | Y component of a view offset |
 
 #### Timed fade
 
@@ -252,13 +252,13 @@ Applies a fade for the specified fade in, hold, and out time periods.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| easeTime | [Value](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
+| easeTime | [float](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
 | easeType | Easing | Required | Specified type of the easing to use. |
-| xEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
-| yEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
-| zEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
+| xEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
+| yEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
+| zEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
 
 #### Color-tinted fade
 
@@ -268,14 +268,14 @@ Applies a color-tinted fade for the selected player(s).
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| easeTime | [Value](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
+| easeTime | [float](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
 | easeType | Easing | Required | Specified type of the easing to use. |
-| xRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | x Rotation value |
-| yRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | y Rotation value |
-| xViewOffset | [Value](../CommandTypes/type_val.md) | Required | X component of a view offset |
-| yViewOffset | [Value](../CommandTypes/type_val.md) | Required | Y component of a view offset |
+| xRot | [rotation](../CommandTypes/type_rval.md) | Required | x Rotation value |
+| yRot | [rotation](../CommandTypes/type_rval.md) | Required | y Rotation value |
+| xViewOffset | [float](../CommandTypes/type_val.md) | Required | X component of a view offset |
+| yViewOffset | [float](../CommandTypes/type_val.md) | Required | Y component of a view offset |
 
 #### Fade
 
@@ -285,15 +285,15 @@ Applies a fade for the selected player(s).
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| easeTime | [Value](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
+| easeTime | [float](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
 | easeType | Easing | Required | Specified type of the easing to use. |
-| xRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | x Rotation value |
-| yRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | y Rotation value |
-| xEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
-| yEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
-| zEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
+| xRot | [rotation](../CommandTypes/type_rval.md) | Required | x Rotation value |
+| yRot | [rotation](../CommandTypes/type_rval.md) | Required | y Rotation value |
+| xEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
+| yEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
+| zEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
 
 #### With preset, ease, easeTime, easeType, view_offset, xViewOffset, yViewOffset, entity_offset, xEntityOffset, yEntityOffset, zEntityOffset
 
@@ -301,15 +301,15 @@ Applies a fade for the selected player(s).
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| easeTime | [Value](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
+| easeTime | [float](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
 | easeType | Easing | Required | Specified type of the easing to use. |
-| xViewOffset | [Value](../CommandTypes/type_val.md) | Required | X component of a view offset |
-| yViewOffset | [Value](../CommandTypes/type_val.md) | Required | Y component of a view offset |
-| xEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
-| yEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
-| zEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
+| xViewOffset | [float](../CommandTypes/type_val.md) | Required | X component of a view offset |
+| yViewOffset | [float](../CommandTypes/type_val.md) | Required | Y component of a view offset |
+| xEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
+| yEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
+| zEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
 
 #### With preset, ease, easeTime, easeType, rot, xRot, yRot, view_offset, xViewOffset, yViewOffset, entity_offset, xEntityOffset, yEntityOffset, zEntityOffset
 
@@ -317,19 +317,19 @@ Applies a fade for the selected player(s).
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| easeTime | [Value](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
+| easeTime | [float](../CommandTypes/type_val.md) | Required | Specified time for the easing. |
 | easeType | Easing | Required | Specified type of the easing to use. |
-| xRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | x Rotation value |
-| yRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | y Rotation value |
-| xViewOffset | [Value](../CommandTypes/type_val.md) | Required | X component of a view offset |
-| yViewOffset | [Value](../CommandTypes/type_val.md) | Required | Y component of a view offset |
-| xEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
-| yEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
-| zEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
+| xRot | [rotation](../CommandTypes/type_rval.md) | Required | x Rotation value |
+| yRot | [rotation](../CommandTypes/type_rval.md) | Required | y Rotation value |
+| xViewOffset | [float](../CommandTypes/type_val.md) | Required | X component of a view offset |
+| yViewOffset | [float](../CommandTypes/type_val.md) | Required | Y component of a view offset |
+| xEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
+| yEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
+| zEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
 
-### With pos
+### A subsection of the command for defining a position
 
 #### Sets camera with a position and rotation
 
@@ -339,11 +339,11 @@ Sets a camera with an override position and a specific x/y rotation.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| position | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | The position to locate the camera at. |
-| xRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | x Rotation value |
-| yRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | y Rotation value |
+| position | [x y z](../CommandTypes/type_position_float.md) | Required | The position to locate the camera at. |
+| xRot | [rotation](../CommandTypes/type_rval.md) | Required | x Rotation value |
+| yRot | [rotation](../CommandTypes/type_rval.md) | Required | y Rotation value |
 
 #### Set camera with override facings, looking at an entity
 
@@ -353,10 +353,10 @@ Sets a camera with override positions and facing at a particular entity.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| position | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | The position to locate the camera at. |
-| lookAtEntity | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector to use for looking at an entity. |
+| position | [x y z](../CommandTypes/type_position_float.md) | Required | The position to locate the camera at. |
+| lookAtEntity | [target](../CommandTypes/type_selection.md) | Required | A target selector to use for looking at an entity. |
 
 #### Set camera with override facings, looking at a position
 
@@ -366,10 +366,10 @@ Sets a camera with override positions facing a particular position.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| position | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | The position to locate the camera at. |
-| lookAtPosition | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | A position to look at. |
+| position | [x y z](../CommandTypes/type_position_float.md) | Required | The position to locate the camera at. |
+| lookAtPosition | [x y z](../CommandTypes/type_position_float.md) | Required | A position to look at. |
 
 #### With preset, pos, position
 
@@ -377,11 +377,11 @@ Sets a camera with override positions facing a particular position.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| position | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | The position to locate the camera at. |
+| position | [x y z](../CommandTypes/type_position_float.md) | Required | The position to locate the camera at. |
 
-### With view_offset
+### Specifies a 2D offset from the camera's view center
 
 #### Sets a camera from a position
 
@@ -391,10 +391,10 @@ Sets a camera from a position.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| xViewOffset | [Value](../CommandTypes/type_val.md) | Required | X component of a view offset |
-| yViewOffset | [Value](../CommandTypes/type_val.md) | Required | Y component of a view offset |
+| xViewOffset | [float](../CommandTypes/type_val.md) | Required | X component of a view offset |
+| yViewOffset | [float](../CommandTypes/type_val.md) | Required | Y component of a view offset |
 
 #### Fade
 
@@ -404,13 +404,13 @@ Specifies a general camera fade-out.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| xViewOffset | [Value](../CommandTypes/type_val.md) | Required | X component of a view offset |
-| yViewOffset | [Value](../CommandTypes/type_val.md) | Required | Y component of a view offset |
-| xEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
-| yEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
-| zEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
+| xViewOffset | [float](../CommandTypes/type_val.md) | Required | X component of a view offset |
+| yViewOffset | [float](../CommandTypes/type_val.md) | Required | Y component of a view offset |
+| xEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
+| yEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
+| zEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
 
 ### With entity_offset
 
@@ -422,13 +422,13 @@ Specifies a camera with a particular rotatoin.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| xEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
-| yEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
-| zEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
+| xEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
+| yEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
+| zEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
 
-### With rot
+### Specifies a subsection of the command for defining a rotation
 
 #### Fade out to times
 
@@ -438,12 +438,12 @@ Specifies a camera timed fade-out type operation.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| xRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | x Rotation value |
-| yRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | y Rotation value |
-| xViewOffset | [Value](../CommandTypes/type_val.md) | Required | X component of a view offset |
-| yViewOffset | [Value](../CommandTypes/type_val.md) | Required | Y component of a view offset |
+| xRot | [rotation](../CommandTypes/type_rval.md) | Required | x Rotation value |
+| yRot | [rotation](../CommandTypes/type_rval.md) | Required | y Rotation value |
+| xViewOffset | [float](../CommandTypes/type_val.md) | Required | X component of a view offset |
+| yViewOffset | [float](../CommandTypes/type_val.md) | Required | Y component of a view offset |
 
 #### Camera preset facing/looking at a position
 
@@ -453,13 +453,13 @@ Specifies a camera looking at a particular position.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| xRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | x Rotation value |
-| yRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | y Rotation value |
-| xEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
-| yEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
-| zEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
+| xRot | [rotation](../CommandTypes/type_rval.md) | Required | x Rotation value |
+| yRot | [rotation](../CommandTypes/type_rval.md) | Required | y Rotation value |
+| xEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
+| yEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
+| zEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
 
 #### Clear
 
@@ -469,15 +469,15 @@ Clears any active camera changes for the player.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| xRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | x Rotation value |
-| yRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | y Rotation value |
-| xViewOffset | [Value](../CommandTypes/type_val.md) | Required | X component of a view offset |
-| yViewOffset | [Value](../CommandTypes/type_val.md) | Required | Y component of a view offset |
-| xEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
-| yEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
-| zEntityOffset | [Value](../CommandTypes/type_val.md) | Required |  |
+| xRot | [rotation](../CommandTypes/type_rval.md) | Required | x Rotation value |
+| yRot | [rotation](../CommandTypes/type_rval.md) | Required | y Rotation value |
+| xViewOffset | [float](../CommandTypes/type_val.md) | Required | X component of a view offset |
+| yViewOffset | [float](../CommandTypes/type_val.md) | Required | Y component of a view offset |
+| xEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
+| yEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
+| zEntityOffset | [float](../CommandTypes/type_val.md) | Required |  |
 
 #### With preset, rot, xRot, yRot
 
@@ -485,12 +485,12 @@ Clears any active camera changes for the player.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| xRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | x Rotation value |
-| yRot | [Rotation Value](../CommandTypes/type_rval.md) | Required | y Rotation value |
+| xRot | [rotation](../CommandTypes/type_rval.md) | Required | x Rotation value |
+| yRot | [rotation](../CommandTypes/type_rval.md) | Required | y Rotation value |
 
-### With facing
+### Specifies a facing section of the camera command
 
 #### With preset, facing
 
@@ -498,9 +498,9 @@ Clears any active camera changes for the player.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| lookAtEntity | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector to use for looking at an entity. |
+| lookAtEntity | [target](../CommandTypes/type_selection.md) | Required | A target selector to use for looking at an entity. |
 
 #### With preset, facing, lookAtPosition
 
@@ -508,11 +508,11 @@ Clears any active camera changes for the player.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
-| lookAtPosition | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | A position to look at. |
+| lookAtPosition | [x y z](../CommandTypes/type_position_float.md) | Required | A position to look at. |
 
-### With default
+### Specifies that the camera movement should be reset to its default parameters
 
 #### With preset, default
 
@@ -520,14 +520,12 @@ Clears any active camera changes for the player.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 | preset | CameraPresets | Required | A camera preset defined in a camera JSON file. |
 
 ## attach_to_entity
 
 Attaches the camera to an entity so it follows that entity's movement.
-
-### Attach camera to entity
 
 `/camera <players: target> attach_to_entity <entity: target>`
 
@@ -535,14 +533,12 @@ Attaches the camera to an entity so it follows that entity's position and moveme
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
-| entity | [Entity Selector](../CommandTypes/type_selection.md) | Required | The target entity to attach to or focus on. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| entity | [target](../CommandTypes/type_selection.md) | Required | The target entity to attach to or focus on. |
 
 ## detach_from_entity
 
 Detaches the camera from an entity it was previously attached to.
-
-### Detach camera from entity
 
 `/camera <players: target> detach_from_entity`
 
@@ -550,7 +546,7 @@ Detaches the camera from an entity it was previously attached to, returning to d
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 
 ## targetEntity
 
@@ -564,8 +560,8 @@ Sets a target entity that the camera continuously looks at.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
-| entity | [Entity Selector](../CommandTypes/type_selection.md) | Required | The target entity to attach to or focus on. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| entity | [target](../CommandTypes/type_selection.md) | Required | The target entity to attach to or focus on. |
 
 ### Set camera to look at entity with offset
 
@@ -575,17 +571,15 @@ Sets a target entity with an offset from the entity's center for the camera to l
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
-| entity | [Entity Selector](../CommandTypes/type_selection.md) | Required | The target entity to attach to or focus on. |
-| xTargetCenterOffset | [Value](../CommandTypes/type_val.md) | Required | X offset from the center of a targeted entity |
-| yTargetCenterOffset | [Value](../CommandTypes/type_val.md) | Required | Y offset from the center of a targeted entity |
-| zTargetCenterOffset | [Value](../CommandTypes/type_val.md) | Required | Z offset from the center of a targeted entity |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| entity | [target](../CommandTypes/type_selection.md) | Required | The target entity to attach to or focus on. |
+| xTargetCenterOffset | [float](../CommandTypes/type_val.md) | Required | X offset from the center of a targeted entity |
+| yTargetCenterOffset | [float](../CommandTypes/type_val.md) | Required | Y offset from the center of a targeted entity |
+| zTargetCenterOffset | [float](../CommandTypes/type_val.md) | Required | Z offset from the center of a targeted entity |
 
 ## removeTarget
 
 Removes the camera's target entity, so the camera no longer tracks any entity.
-
-### Remove camera target
 
 `/camera <players: target> removeTarget`
 
@@ -593,19 +587,17 @@ Removes the camera's current target entity so it no longer tracks any entity.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 
 ## clear
 
 Clears all active camera changes and returns to the default camera.
 
-### Basic usage
-
 `/camera <players: target> clear`
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 
 ## fade
 
@@ -617,13 +609,13 @@ Applies a screen fade effect with optional timing and color.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
-| fadeInSeconds | [Value](../CommandTypes/type_val.md) | Required | Specifies a fade-in time value. |
-| holdSeconds | [Value](../CommandTypes/type_val.md) | Required | Specifies the amount of time to hold the camera view. |
-| fadeOutSeconds | [Value](../CommandTypes/type_val.md) | Required | Specifies the number of seconds to fade out the camera. |
-| red | [Integer](../CommandTypes/type_int.md) | Required | Red component of a color value. Valid values are between 0 and 255. |
-| green | [Integer](../CommandTypes/type_int.md) | Required | Green component of a color value. Valid values are between 0 and 255. |
-| blue | [Integer](../CommandTypes/type_int.md) | Required | Blue component of a color value. Valid values are between 0 and 255. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| fadeInSeconds | [float](../CommandTypes/type_val.md) | Required | Specifies a fade-in time value. |
+| holdSeconds | [float](../CommandTypes/type_val.md) | Required | Specifies the amount of time to hold the camera view. |
+| fadeOutSeconds | [float](../CommandTypes/type_val.md) | Required | Specifies the number of seconds to fade out the camera. |
+| red | [int](../CommandTypes/type_int.md) | Required | Red component of a color value. Valid values are between 0 and 255. |
+| green | [int](../CommandTypes/type_int.md) | Required | Green component of a color value. Valid values are between 0 and 255. |
+| blue | [int](../CommandTypes/type_int.md) | Required | Blue component of a color value. Valid values are between 0 and 255. |
 
 ### With time, fadeInSeconds, holdSeconds, fadeOutSeconds
 
@@ -631,10 +623,10 @@ Applies a screen fade effect with optional timing and color.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
-| fadeInSeconds | [Value](../CommandTypes/type_val.md) | Required | Specifies a fade-in time value. |
-| holdSeconds | [Value](../CommandTypes/type_val.md) | Required | Specifies the amount of time to hold the camera view. |
-| fadeOutSeconds | [Value](../CommandTypes/type_val.md) | Required | Specifies the number of seconds to fade out the camera. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| fadeInSeconds | [float](../CommandTypes/type_val.md) | Required | Specifies a fade-in time value. |
+| holdSeconds | [float](../CommandTypes/type_val.md) | Required | Specifies the amount of time to hold the camera view. |
+| fadeOutSeconds | [float](../CommandTypes/type_val.md) | Required | Specifies the number of seconds to fade out the camera. |
 
 ### With color, red, green, blue
 
@@ -642,10 +634,10 @@ Applies a screen fade effect with optional timing and color.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
-| red | [Integer](../CommandTypes/type_int.md) | Required | Red component of a color value. Valid values are between 0 and 255. |
-| green | [Integer](../CommandTypes/type_int.md) | Required | Green component of a color value. Valid values are between 0 and 255. |
-| blue | [Integer](../CommandTypes/type_int.md) | Required | Blue component of a color value. Valid values are between 0 and 255. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| red | [int](../CommandTypes/type_int.md) | Required | Red component of a color value. Valid values are between 0 and 255. |
+| green | [int](../CommandTypes/type_int.md) | Required | Green component of a color value. Valid values are between 0 and 255. |
+| blue | [int](../CommandTypes/type_int.md) | Required | Blue component of a color value. Valid values are between 0 and 255. |
 
 ### Basic usage
 
@@ -653,35 +645,31 @@ Applies a screen fade effect with optional timing and color.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
 
 ## fov_set
 
 Sets a custom field of view with optional easing.
 
-### With fov_value, fovEaseTime, fovEaseType
-
 `/camera <players: target> fov_set <fov_value: float> [fovEaseTime: float] [fovEaseType: Easing]`
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
-| fov_value | [Value](../CommandTypes/type_val.md) | Required |  |
-| fovEaseTime | [Value](../CommandTypes/type_val.md) | Optional |  |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| fov_value | [float](../CommandTypes/type_val.md) | Required |  |
+| fovEaseTime | [float](../CommandTypes/type_val.md) | Optional |  |
 | fovEaseType | Easing | Optional |  |
 
 ## fov_clear
 
 Resets the field of view back to the default value.
 
-### With fovEaseTime, fovEaseType
-
 `/camera <players: target> fov_clear [fovEaseTime: float] [fovEaseType: Easing]`
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of players. |
-| fovEaseTime | [Value](../CommandTypes/type_val.md) | Optional |  |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of players. |
+| fovEaseTime | [float](../CommandTypes/type_val.md) | Optional |  |
 | fovEaseType | Easing | Optional |  |
 
 ## Examples
@@ -756,30 +744,30 @@ Resets the field of view back to the default value.
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| blue | [Integer](../CommandTypes/type_int.md) | Blue component of a color value. Valid values are between 0 and 255. |
-| easeTime | [Value](../CommandTypes/type_val.md) | Specified time for the easing. |
+| blue | [int](../CommandTypes/type_int.md) | Blue component of a color value. Valid values are between 0 and 255. |
+| easeTime | [float](../CommandTypes/type_val.md) | Specified time for the easing. |
 | easeType | Easing | Specified type of the easing to use. |
-| entity | [Entity Selector](../CommandTypes/type_selection.md) | The target entity to attach to or focus on. |
-| fadeInSeconds | [Value](../CommandTypes/type_val.md) | Specifies a fade-in time value. |
-| fadeOutSeconds | [Value](../CommandTypes/type_val.md) | Specifies the number of seconds to fade out the camera. |
-| fov_value | [Value](../CommandTypes/type_val.md) |  |
-| fovEaseTime | [Value](../CommandTypes/type_val.md) |  |
+| entity | [target](../CommandTypes/type_selection.md) | The target entity to attach to or focus on. |
+| fadeInSeconds | [float](../CommandTypes/type_val.md) | Specifies a fade-in time value. |
+| fadeOutSeconds | [float](../CommandTypes/type_val.md) | Specifies the number of seconds to fade out the camera. |
+| fov_value | [float](../CommandTypes/type_val.md) |  |
+| fovEaseTime | [float](../CommandTypes/type_val.md) |  |
 | fovEaseType | Easing |  |
-| green | [Integer](../CommandTypes/type_int.md) | Green component of a color value. Valid values are between 0 and 255. |
-| holdSeconds | [Value](../CommandTypes/type_val.md) | Specifies the amount of time to hold the camera view. |
-| lookAtEntity | [Entity Selector](../CommandTypes/type_selection.md) | A target selector to use for looking at an entity. |
-| lookAtPosition | [Position (x y z)](../CommandTypes/type_position_float.md) | A position to look at. |
-| players | [Entity Selector](../CommandTypes/type_selection.md) | A target selector of players. |
-| position | [Position (x y z)](../CommandTypes/type_position_float.md) | The position to locate the camera at. |
+| green | [int](../CommandTypes/type_int.md) | Green component of a color value. Valid values are between 0 and 255. |
+| holdSeconds | [float](../CommandTypes/type_val.md) | Specifies the amount of time to hold the camera view. |
+| lookAtEntity | [target](../CommandTypes/type_selection.md) | A target selector to use for looking at an entity. |
+| lookAtPosition | [x y z](../CommandTypes/type_position_float.md) | A position to look at. |
+| players | [target](../CommandTypes/type_selection.md) | A target selector of players. |
+| position | [x y z](../CommandTypes/type_position_float.md) | The position to locate the camera at. |
 | preset | CameraPresets | A camera preset defined in a camera JSON file. |
-| red | [Integer](../CommandTypes/type_int.md) | Red component of a color value. Valid values are between 0 and 255. |
-| xEntityOffset | [Value](../CommandTypes/type_val.md) |  |
-| xRot | [Rotation Value](../CommandTypes/type_rval.md) | x Rotation value |
-| xTargetCenterOffset | [Value](../CommandTypes/type_val.md) | X offset from the center of a targeted entity |
-| xViewOffset | [Value](../CommandTypes/type_val.md) | X component of a view offset |
-| yEntityOffset | [Value](../CommandTypes/type_val.md) |  |
-| yRot | [Rotation Value](../CommandTypes/type_rval.md) | y Rotation value |
-| yTargetCenterOffset | [Value](../CommandTypes/type_val.md) | Y offset from the center of a targeted entity |
-| yViewOffset | [Value](../CommandTypes/type_val.md) | Y component of a view offset |
-| zEntityOffset | [Value](../CommandTypes/type_val.md) |  |
-| zTargetCenterOffset | [Value](../CommandTypes/type_val.md) | Z offset from the center of a targeted entity |
+| red | [int](../CommandTypes/type_int.md) | Red component of a color value. Valid values are between 0 and 255. |
+| xEntityOffset | [float](../CommandTypes/type_val.md) |  |
+| xRot | [rotation](../CommandTypes/type_rval.md) | x Rotation value |
+| xTargetCenterOffset | [float](../CommandTypes/type_val.md) | X offset from the center of a targeted entity |
+| xViewOffset | [float](../CommandTypes/type_val.md) | X component of a view offset |
+| yEntityOffset | [float](../CommandTypes/type_val.md) |  |
+| yRot | [rotation](../CommandTypes/type_rval.md) | y Rotation value |
+| yTargetCenterOffset | [float](../CommandTypes/type_val.md) | Y offset from the center of a targeted entity |
+| yViewOffset | [float](../CommandTypes/type_val.md) | Y component of a view offset |
+| zEntityOffset | [float](../CommandTypes/type_val.md) |  |
+| zTargetCenterOffset | [float](../CommandTypes/type_val.md) | Z offset from the center of a targeted entity |

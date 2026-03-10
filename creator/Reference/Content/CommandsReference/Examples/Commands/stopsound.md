@@ -29,12 +29,12 @@ Stop a sound for a `player` with an optional `sound` `string` .
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| player | [Entity Selector](../CommandTypes/type_selection.md) | Required | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
-| sound | [Identifier](../CommandTypes/type_id.md) | Optional | A `string` from the sound `enum` of the sound to stop. |
+| player | [target](../CommandTypes/type_selection.md) | Required | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| sound | [id](../CommandTypes/type_id.md) | Optional | A `string` from the sound `enum` of the sound to stop. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| player | [Entity Selector](../CommandTypes/type_selection.md) | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
-| sound | [Identifier](../CommandTypes/type_id.md) | A `string` from the sound `enum` of the sound to stop. |
+| player | [target](../CommandTypes/type_selection.md) | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| sound | [id](../CommandTypes/type_id.md) | A `string` from the sound `enum` of the sound to stop. |

@@ -17,42 +17,39 @@ Enable Aim Assist.
 | **Permission Level** | Game Directors |
 | **Requires Cheats** | Yes |
 
-## Syntax Overview
+## Sub-commands
 
-`/aimassist <players: target> set [x angle: float] [y angle: float] [max distance: float] [target mode: aimassisttargetmode] [preset id: id]`
+- [**set**](#set)
+- [**clear**](#clear)
 
-`/aimassist <players: target> clear`
-
-## Usage
-
-### With x angle, y angle, max distance, target mode, preset id
+## set
 
 `/aimassist <players: target> set [x angle: float] [y angle: float] [max distance: float] [target mode: aimassisttargetmode] [preset id: id]`
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required |  |
-| x angle | [Value](../CommandTypes/type_val.md) | Optional |  |
-| y angle | [Value](../CommandTypes/type_val.md) | Optional |  |
-| max distance | [Value](../CommandTypes/type_val.md) | Optional |  |
+| players | [target](../CommandTypes/type_selection.md) | Required |  |
+| x angle | [float](../CommandTypes/type_val.md) | Optional |  |
+| y angle | [float](../CommandTypes/type_val.md) | Optional |  |
+| max distance | [float](../CommandTypes/type_val.md) | Optional |  |
 | target mode | aimassisttargetmode | Optional |  |
-| preset id | [Identifier](../CommandTypes/type_id.md) | Optional |  |
+| preset id | [id](../CommandTypes/type_id.md) | Optional |  |
 
-### Basic usage
+## clear
 
 `/aimassist <players: target> clear`
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required |  |
+| players | [target](../CommandTypes/type_selection.md) | Required |  |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| max distance | [Value](../CommandTypes/type_val.md) |  |
-| players | [Entity Selector](../CommandTypes/type_selection.md) |  |
-| preset id | [Identifier](../CommandTypes/type_id.md) |  |
+| max distance | [float](../CommandTypes/type_val.md) |  |
+| players | [target](../CommandTypes/type_selection.md) |  |
+| preset id | [id](../CommandTypes/type_id.md) |  |
 | target mode | aimassisttargetmode |  |
-| x angle | [Value](../CommandTypes/type_val.md) |  |
-| y angle | [Value](../CommandTypes/type_val.md) |  |
+| x angle | [float](../CommandTypes/type_val.md) |  |
+| y angle | [float](../CommandTypes/type_val.md) |  |

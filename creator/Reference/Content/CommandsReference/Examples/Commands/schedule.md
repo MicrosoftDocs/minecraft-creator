@@ -41,6 +41,8 @@ Schedules an action to be executed once an area is loaded, or after a certain am
 
 `/schedule onarealoaded clear <cleartype: tickingareaname> <function: pathcommand>`
 
+## Usage
+
 ### With condition
 
 #### Schedule function call, delay time ticks
@@ -51,8 +53,8 @@ Schedule a function call with a delay using a time in game ticks.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| function | [Function Path](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
-| time | [Integer](../CommandTypes/type_int.md) | Required | Time integer |
+| function | [pathcommand](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
+| time | [int](../CommandTypes/type_int.md) | Required | Time integer |
 | DelayMode | delaymode | Optional | An `enum` of either `append` to allow multiple schedules or `replace` to replace the default schedule. |
 
 #### Schedule function call, delay time ticks
@@ -63,8 +65,8 @@ Schedule a function call with a delay using a time in game ticks.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| function | [Function Path](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
-| time | [Integer](../CommandTypes/type_int.md) | Required | Time integer |
+| function | [pathcommand](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
+| time | [int](../CommandTypes/type_int.md) | Required | Time integer |
 | DelayMode | delaymode | Optional | An `enum` of either `append` to allow multiple schedules or `replace` to replace the default schedule. |
 
 #### Schedule function call, delay time seconds
@@ -75,8 +77,8 @@ Schedule a function call with a delay using a time in seconds.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| function | [Function Path](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
-| time | [Integer](../CommandTypes/type_int.md) | Required | Time integer |
+| function | [pathcommand](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
+| time | [int](../CommandTypes/type_int.md) | Required | Time integer |
 | DelayMode | delaymode | Optional | An `enum` of either `append` to allow multiple schedules or `replace` to replace the default schedule. |
 
 #### Schedule function call, delay time days
@@ -87,8 +89,8 @@ Schedule a function call with a delay using a time in game days.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| function | [Function Path](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
-| time | [Integer](../CommandTypes/type_int.md) | Required | Time integer |
+| function | [pathcommand](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
+| time | [int](../CommandTypes/type_int.md) | Required | Time integer |
 | DelayMode | delaymode | Optional | An `enum` of either `append` to allow multiple schedules or `replace` to replace the default schedule. |
 
 #### Clear Scheduled delay functions
@@ -99,7 +101,7 @@ Clear previously scheduled delay functions by name.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| function | [Function Path](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
+| function | [pathcommand](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
 
 #### Schedule function call when area loaded, location
 
@@ -109,9 +111,9 @@ Schedule a function when an area is loaded from a location to another location.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| from | [Block Position](../CommandTypes/type_position.md) | Required | A `vector` [x y z] that specifies the rectangular area to load, along with `to`. |
-| to | [Block Position](../CommandTypes/type_position.md) | Required | A vector [x y z] that specifies the rectangular area to load, along with `from`. |
-| function | [Function Path](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
+| from | [x y z](../CommandTypes/type_position.md) | Required | A `vector` [x y z] that specifies the rectangular area to load, along with `to`. |
+| to | [x y z](../CommandTypes/type_position.md) | Required | A vector [x y z] that specifies the rectangular area to load, along with `from`. |
+| function | [pathcommand](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
 
 #### Schedule function call when area loaded, radius
 
@@ -122,9 +124,9 @@ Schedule a function when an area is loaded in a radius.
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | type | circlearea | Required |  |
-| center | [Block Position](../CommandTypes/type_position.md) | Required | A `vector` [x y z] that specifies the center of a defined loaded area. |
-| radius | [Integer](../CommandTypes/type_int.md) | Required | An `integer` that specifies the area as the number of chunks loaded in. Default: `0`. |
-| function | [Function Path](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
+| center | [x y z](../CommandTypes/type_position.md) | Required | A `vector` [x y z] that specifies the center of a defined loaded area. |
+| radius | [int](../CommandTypes/type_int.md) | Required | An `integer` that specifies the area as the number of chunks loaded in. Default: `0`. |
+| function | [pathcommand](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
 
 #### Schedule function call when area loaded, ticking area
 
@@ -135,8 +137,8 @@ Schedule a function when an area is loaded in a ticking area.
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | type | circlearea | Required |  |
-| name | [Identifier](../CommandTypes/type_id.md) | Required | A `string` that defines the `tickingarea` where the command is added. |
-| function | [Function Path](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
+| name | [id](../CommandTypes/type_id.md) | Required | A `string` that defines the `tickingarea` where the command is added. |
+| function | [pathcommand](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
 
 #### Clear scheduled area loaded functions, ticking area name
 
@@ -147,8 +149,8 @@ Clear previously scheduled area loaded functions by ticking area name and option
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | cleartype | tickingareaname | Required |  |
-| name | [Identifier](../CommandTypes/type_id.md) | Required | A `string` that defines the `tickingarea` where the command is added. |
-| function | [Function Path](../CommandTypes/type_pathcommand.md) | Optional | Required. The function to run. |
+| name | [id](../CommandTypes/type_id.md) | Required | A `string` that defines the `tickingarea` where the command is added. |
+| function | [pathcommand](../CommandTypes/type_pathcommand.md) | Optional | Required. The function to run. |
 
 #### Clear scheduled area loaded functions, function name
 
@@ -159,7 +161,7 @@ Clear previously scheduled area loaded functions by function name.
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | cleartype | tickingareaname | Required |  |
-| function | [Function Path](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
+| function | [pathcommand](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
 
 ### Other variants
 
@@ -171,19 +173,19 @@ Clear previously scheduled functions by name.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| function | [Function Path](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
+| function | [pathcommand](../CommandTypes/type_pathcommand.md) | Required | Required. The function to run. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| center | [Block Position](../CommandTypes/type_position.md) | A `vector` [x y z] that specifies the center of a defined loaded area. |
+| center | [x y z](../CommandTypes/type_position.md) | A `vector` [x y z] that specifies the center of a defined loaded area. |
 | cleartype | tickingareaname |  |
 | DelayMode | delaymode | An `enum` of either `append` to allow multiple schedules or `replace` to replace the default schedule. |
-| from | [Block Position](../CommandTypes/type_position.md) | A `vector` [x y z] that specifies the rectangular area to load, along with `to`. |
-| function | [Function Path](../CommandTypes/type_pathcommand.md) | Required. The function to run. |
-| name | [Identifier](../CommandTypes/type_id.md) | A `string` that defines the `tickingarea` where the command is added. |
-| radius | [Integer](../CommandTypes/type_int.md) | An `integer` that specifies the area as the number of chunks loaded in. Default: `0`. |
-| time | [Integer](../CommandTypes/type_int.md) | Time integer |
-| to | [Block Position](../CommandTypes/type_position.md) | A vector [x y z] that specifies the rectangular area to load, along with `from`. |
+| from | [x y z](../CommandTypes/type_position.md) | A `vector` [x y z] that specifies the rectangular area to load, along with `to`. |
+| function | [pathcommand](../CommandTypes/type_pathcommand.md) | Required. The function to run. |
+| name | [id](../CommandTypes/type_id.md) | A `string` that defines the `tickingarea` where the command is added. |
+| radius | [int](../CommandTypes/type_int.md) | An `integer` that specifies the area as the number of chunks loaded in. Default: `0`. |
+| time | [int](../CommandTypes/type_int.md) | Time integer |
+| to | [x y z](../CommandTypes/type_position.md) | A vector [x y z] that specifies the rectangular area to load, along with `from`. |
 | type | circlearea |  |

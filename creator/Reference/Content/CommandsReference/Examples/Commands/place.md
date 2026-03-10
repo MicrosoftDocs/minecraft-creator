@@ -27,6 +27,8 @@ Places a jigsaw structure, feature, or feature rule in the world.
 
 `/place featurerule <featurerule: featurerules> [position: x y z]`
 
+## Usage
+
 ### With structure, pos, ignoreStartHeight, keepJigsaws, includeEntities, liquidSettings
 
 `/place structure <structure: jigsawstructure> [pos: x y z] [ignoreStartHeight: Boolean] [keepJigsaws: Boolean] [includeEntities: Boolean] [liquidSettings: liquidsettings]`
@@ -34,7 +36,7 @@ Places a jigsaw structure, feature, or feature rule in the world.
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | structure | jigsawstructure | Required |  |
-| pos | [Block Position](../CommandTypes/type_position.md) | Optional |  |
+| pos | [x y z](../CommandTypes/type_position.md) | Optional |  |
 | ignoreStartHeight | [Boolean](../CommandTypes/type_boolean.md) | Optional |  |
 | keepJigsaws | [Boolean](../CommandTypes/type_boolean.md) | Optional |  |
 | includeEntities | [Boolean](../CommandTypes/type_boolean.md) | Optional |  |
@@ -46,10 +48,10 @@ Places a jigsaw structure, feature, or feature rule in the world.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| pool | [Function Path](../CommandTypes/type_pathcommand.md) | Required |  |
-| jigsawTarget | [Identifier](../CommandTypes/type_id.md) | Required |  |
-| maxDepth | [Integer](../CommandTypes/type_int.md) | Required |  |
-| pos | [Block Position](../CommandTypes/type_position.md) | Optional |  |
+| pool | [pathcommand](../CommandTypes/type_pathcommand.md) | Required |  |
+| jigsawTarget | [id](../CommandTypes/type_id.md) | Required |  |
+| maxDepth | [int](../CommandTypes/type_int.md) | Required |  |
+| pos | [x y z](../CommandTypes/type_position.md) | Optional |  |
 | keepJigsaws | [Boolean](../CommandTypes/type_boolean.md) | Optional |  |
 | includeEntities | [Boolean](../CommandTypes/type_boolean.md) | Optional |  |
 | liquidSettings | liquidsettings | Optional |  |
@@ -61,7 +63,7 @@ Places a jigsaw structure, feature, or feature rule in the world.
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | feature | features | Required |  |
-| position | [Block Position](../CommandTypes/type_position.md) | Optional |  |
+| position | [x y z](../CommandTypes/type_position.md) | Optional |  |
 
 ### With featurerule, position
 
@@ -70,7 +72,7 @@ Places a jigsaw structure, feature, or feature rule in the world.
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | featurerule | featurerules | Required |  |
-| position | [Block Position](../CommandTypes/type_position.md) | Optional |  |
+| position | [x y z](../CommandTypes/type_position.md) | Optional |  |
 
 ## Arguments Reference
 
@@ -80,11 +82,11 @@ Places a jigsaw structure, feature, or feature rule in the world.
 | featurerule | featurerules |  |
 | ignoreStartHeight | [Boolean](../CommandTypes/type_boolean.md) |  |
 | includeEntities | [Boolean](../CommandTypes/type_boolean.md) |  |
-| jigsawTarget | [Identifier](../CommandTypes/type_id.md) |  |
+| jigsawTarget | [id](../CommandTypes/type_id.md) |  |
 | keepJigsaws | [Boolean](../CommandTypes/type_boolean.md) |  |
 | liquidSettings | liquidsettings |  |
-| maxDepth | [Integer](../CommandTypes/type_int.md) |  |
-| pool | [Function Path](../CommandTypes/type_pathcommand.md) |  |
-| pos | [Block Position](../CommandTypes/type_position.md) |  |
-| position | [Block Position](../CommandTypes/type_position.md) |  |
+| maxDepth | [int](../CommandTypes/type_int.md) |  |
+| pool | [pathcommand](../CommandTypes/type_pathcommand.md) |  |
+| pos | [x y z](../CommandTypes/type_position.md) |  |
+| position | [x y z](../CommandTypes/type_position.md) |  |
 | structure | jigsawstructure |  |

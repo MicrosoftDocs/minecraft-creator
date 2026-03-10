@@ -1,0 +1,51 @@
+{
+  "id": "leashable",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "leashable",
+    "title": "Block Components Leashable",
+    "description": "Allows a block to have a lead tied to it.",
+    "fields": [
+      {
+        "id": "offset",
+        "title": "Offset",
+        "dataType": 32,
+        "defaultValue": [
+          0,
+          0.25,
+          0
+        ],
+        "alternates": [
+          {
+            "id": "offset",
+            "dataType": 16,
+            "subForm": {
+              "id": "offset",
+              "title": "Offset",
+              "fields": [
+                {
+                  "id": "x",
+                  "title": "X",
+                  "dataType": 3,
+                  "defaultValue": 0
+                },
+                {
+                  "id": "y",
+                  "title": "Y",
+                  "dataType": 3,
+                  "defaultValue": 0
+                },
+                {
+                  "id": "z",
+                  "title": "Z",
+                  "dataType": 3,
+                  "defaultValue": 0
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -33,9 +33,9 @@ Clone a set of blocks from one location to a destination with an optional `maskM
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| begin | [Block Position](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
-| end | [Block Position](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
-| destination | [Block Position](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. The lower northwest corner of the region being cloned. |
+| begin | [x y z](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
+| end | [x y z](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
+| destination | [x y z](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. The lower northwest corner of the region being cloned. |
 | maskMode | maskmode | Optional | An `enum` that filters the blocks being cloned. If type `masked`, copy non-air blocks. |
 | cloneMode | clonemode | Optional | An `enum` that is one of type `force`, `move`, or `normal`. Default: `normal`. |
 
@@ -47,12 +47,12 @@ Clone a set of blocks from one location to a destination with an optional `maskM
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| begin | [Block Position](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
-| end | [Block Position](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
-| destination | [Block Position](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. The lower northwest corner of the region being cloned. |
+| begin | [x y z](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
+| end | [x y z](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
+| destination | [x y z](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. The lower northwest corner of the region being cloned. |
 | maskMode | maskmode | Required | An `enum` that filters the blocks being cloned. If type `masked`, copy non-air blocks. |
 | cloneMode | clonemode | Required | An `enum` that is one of type `force`, `move`, or `normal`. Default: `normal`. |
-| tileName | [Block ID](../CommandTypes/type_block.md) | Required | An `enum` that must be the `block name` of the blocks that are to be cloned. |
+| tileName | [Block](../CommandTypes/type_block.md) | Required | An `enum` that must be the `block name` of the blocks that are to be cloned. |
 | blockStates | block_state_array | Optional | An `array` of block states. Specifies the block states to use for the cloned blocks. |
 
 ## Examples
@@ -85,10 +85,10 @@ Clone a set of blocks from one location to a destination with an optional `maskM
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| begin | [Block Position](../CommandTypes/type_position.md) | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
+| begin | [x y z](../CommandTypes/type_position.md) | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
 | blockStates | block_state_array | An `array` of block states. Specifies the block states to use for the cloned blocks. |
 | cloneMode | clonemode | An `enum` that is one of type `force`, `move`, or `normal`. Default: `normal`. |
-| destination | [Block Position](../CommandTypes/type_position.md) | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. The lower northwest corner of the region being cloned. |
-| end | [Block Position](../CommandTypes/type_position.md) | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
+| destination | [x y z](../CommandTypes/type_position.md) | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. The lower northwest corner of the region being cloned. |
+| end | [x y z](../CommandTypes/type_position.md) | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
 | maskMode | maskmode | An `enum` that filters the blocks being cloned. If type `masked`, copy non-air blocks. |
-| tileName | [Block ID](../CommandTypes/type_block.md) | An `enum` that must be the `block name` of the blocks that are to be cloned. |
+| tileName | [Block](../CommandTypes/type_block.md) | An `enum` that must be the `block name` of the blocks that are to be cloned. |

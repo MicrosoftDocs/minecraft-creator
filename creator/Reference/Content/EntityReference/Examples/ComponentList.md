@@ -43,7 +43,7 @@ ms.date: 02/11/2025
 | [minecraft:cannot_be_attacked](EntityComponents/minecraftComponent_cannot_be_attacked.md)| When set, blocks entities from attacking the owner entity unless they have the "minecraft:ignore_cannot_be_attacked" component. |
 | [minecraft:can_climb](EntityComponents/minecraftComponent_can_climb.md)| Allows an entity to climb ladders. |
 | [minecraft:can_fly](EntityComponents/minecraftComponent_can_fly.md)| Marks the entity as being able to fly, the pathfinder won't be restricted to paths where a solid block is required underneath it. |
-| [minecraft:can_join_raid](EntityComponents/minecraftComponent_can_join_raid.md)| Determines that this entity can join an existing raid. |
+| [minecraft:can_join_raid](EntityComponents/minecraftComponent_can_join_raid.md)| Specifies if an entity can join a raid. |
 | [minecraft:can_power_jump](EntityComponents/minecraftComponent_can_power_jump.md)| Allows the entity to power jump like the Horse does in Vanilla. |
 | [minecraft:celebrate_hunt](EntityComponents/minecraftComponent_celebrate_hunt.md)| Specifies hunt celebration behaviour. |
 | [minecraft:collision_box](EntityComponents/minecraftComponent_collision_box.md)| Sets the width and height of the Entity's collision box. |
@@ -185,7 +185,7 @@ ms.date: 02/11/2025
 | [minecraft:spawn_entity](EntityComponents/minecraftComponent_spawn_entity.md)| Adds a timer after which this entity will spawn another entity or item (similar to vanilla's chicken's egg-laying behavior). |
 | [minecraft:spell_effects](EntityComponents/minecraftComponent_spell_effects.md)| Allows an entity to add or remove status effects from itself. |
 | [minecraft:strength](EntityComponents/minecraftComponent_strength.md)| Defines the entity's strength to carry items. |
-| [minecraft:suspect_tracking](EntityComponents/minecraftComponent_suspect_tracking.md)| Allows this entity to remember suspicious locations |
+| [minecraft:suspect_tracking](EntityComponents/minecraftComponent_suspect_tracking.md)| Allows this entity to remember suspicious locations. |
 | [minecraft:tameable](EntityComponents/minecraftComponent_tameable.md)| This entity can be tamed |
 | [minecraft:tamemount](EntityComponents/minecraftComponent_tamemount.md)| Allows the Entity to be tamed by mounting it. |
 | [minecraft:target_nearby_sensor](EntityComponents/minecraftComponent_target_nearby_sensor.md)| Defines the entity's range within which it can see or sense other entities to target them. |
@@ -202,10 +202,11 @@ ms.date: 02/11/2025
 | [minecraft:type_family](EntityComponents/minecraftComponent_type_family.md)| Defines the family categories this entity belongs to. |
 | [minecraft:underwater_mount_breathing](EntityComponents/minecraftComponent_underwater_mount_breathing.md)| Pauses this entity's breathing under water. |
 | [minecraft:underwater_movement](EntityComponents/minecraftComponent_underwater_movement.md)| Defines the speed with which an entity can move through water. |
+| [minecraft:uses_legacy_friction](EntityComponents/minecraftComponent_uses_legacy_friction.md)| When set, legacy calculations are used when applying "minecraft:friction_modifier". |
 | [minecraft:variable_max_auto_step](EntityComponents/minecraftComponent_variable_max_auto_step.md)| Entities with this component will have a maximum auto step height that is different depending on whether they are on a block that prevents jumping. |
 | [minecraft:variant](EntityComponents/minecraftComponent_variant.md)| Variant is typically used as a per-type way to express a different visual form of the same mob. |
 | [minecraft:vertical_movement_action](EntityComponents/minecraftComponent_vertical_movement.action.md)| When configured as a rideable entity, the entity will move upwards or downwards when the player uses the jump action. |
-| [minecraft:vibration_damper](EntityComponents/minecraftComponent_vibration_damper.md)| Vibrations emitted by this entity will be ignored. |
+| [minecraft:vibration_damper](EntityComponents/minecraftComponent_vibration_damper.md)| Vibrations emitted by an entity with this component will be ignored. |
 | [minecraft:vibration_listener](EntityComponents/minecraftComponent_vibration_listener.md)| Allows the entity to listen to vibration events. |
 | [minecraft:walk_animation_speed](EntityComponents/minecraftComponent_walk_animation_speed.md)| Sets the speed multiplier for this entity's walk animation speed. |
 | [minecraft:wants_jockey](EntityComponents/minecraftComponent_wants_jockey.md)| Sets that this entity wants to become a jockey. |

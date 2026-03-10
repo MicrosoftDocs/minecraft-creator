@@ -29,10 +29,10 @@ Call the `function` at a particular `file path`.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| name | [Function Path](../CommandTypes/type_pathcommand.md) | Required | Required. A command file path to a function located in a behavior pack. |
+| name | [pathcommand](../CommandTypes/type_pathcommand.md) | Required | Required. A command file path to a function located in a behavior pack. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| name | [Function Path](../CommandTypes/type_pathcommand.md) | Required. A command file path to a function located in a behavior pack. |
+| name | [pathcommand](../CommandTypes/type_pathcommand.md) | Required. A command file path to a function located in a behavior pack. |

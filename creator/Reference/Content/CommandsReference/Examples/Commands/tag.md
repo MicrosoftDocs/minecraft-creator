@@ -33,7 +33,7 @@ Add or remove a `tag` on an `entity`.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| entity | [Entity Selector](../CommandTypes/type_selection.md) | Required | The command's target. |
+| entity | [target](../CommandTypes/type_selection.md) | Required | The command's target. |
 | name | tagvalues | Required | The `tag` name. |
 
 ### List tags
@@ -44,7 +44,7 @@ List all `tags` on a given `entity`.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| entity | [Entity Selector](../CommandTypes/type_selection.md) | Required | The command's target. |
+| entity | [target](../CommandTypes/type_selection.md) | Required | The command's target. |
 
 ## Examples
 
@@ -82,5 +82,5 @@ List all `tags` on a given `entity`.
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| entity | [Entity Selector](../CommandTypes/type_selection.md) | The command's target. |
+| entity | [target](../CommandTypes/type_selection.md) | The command's target. |
 | name | tagvalues | The `tag` name. |

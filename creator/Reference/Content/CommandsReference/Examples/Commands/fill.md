@@ -27,6 +27,8 @@ Fills all or parts of a region with a specific block.
 
 `/fill <from: x y z> <to: x y z> <tileName: Block> <oldBlockHandling: fillmode> [replaceTileName: Block] [replaceBlockStates: block_state_array]`
 
+## Usage
+
 ### Fill with block state, optional fill mode
 
 `/fill <from: x y z> <to: x y z> <tileName: Block> <blockStates: block_state_array> [oldBlockHandling: fillmode]`
@@ -35,9 +37,9 @@ Fill a region `from` one position `to` another of a particular `block state` wit
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| from | [Block Position](../CommandTypes/type_position.md) | Required | A vector that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
-| to | [Block Position](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
-| tileName | [Block ID](../CommandTypes/type_block.md) | Required | An `enum` of the block `id` of the block to fill the region with. |
+| from | [x y z](../CommandTypes/type_position.md) | Required | A vector that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
+| to | [x y z](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
+| tileName | [Block](../CommandTypes/type_block.md) | Required | An `enum` of the block `id` of the block to fill the region with. |
 | blockStates | block_state_array | Required | An array of block states. |
 | oldBlockHandling | fillmode | Optional |  |
 
@@ -49,9 +51,9 @@ Fill a region `from` one position `to` another of a particular `block name`, fil
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| from | [Block Position](../CommandTypes/type_position.md) | Required | A vector that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
-| to | [Block Position](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
-| tileName | [Block ID](../CommandTypes/type_block.md) | Required | An `enum` of the block `id` of the block to fill the region with. |
+| from | [x y z](../CommandTypes/type_position.md) | Required | A vector that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
+| to | [x y z](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
+| tileName | [Block](../CommandTypes/type_block.md) | Required | An `enum` of the block `id` of the block to fill the region with. |
 | oldBlockHandling | fillmode | Optional |  |
 
 ### Fill, filtering on block states, with replacement blocks and states
@@ -60,12 +62,12 @@ Fill a region `from` one position `to` another of a particular `block name`, fil
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| from | [Block Position](../CommandTypes/type_position.md) | Required | A vector that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
-| to | [Block Position](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
-| tileName | [Block ID](../CommandTypes/type_block.md) | Required | An `enum` of the block `id` of the block to fill the region with. |
+| from | [x y z](../CommandTypes/type_position.md) | Required | A vector that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
+| to | [x y z](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
+| tileName | [Block](../CommandTypes/type_block.md) | Required | An `enum` of the block `id` of the block to fill the region with. |
 | blockStates | block_state_array | Required | An array of block states. |
 | oldBlockHandling | fillmode | Required |  |
-| replaceTileName | [Block ID](../CommandTypes/type_block.md) | Optional | An `enum` of the type of the block `id` to replace in the fill region. |
+| replaceTileName | [Block](../CommandTypes/type_block.md) | Optional | An `enum` of the type of the block `id` to replace in the fill region. |
 | replaceBlockStates | block_state_array | Optional | An `array` of block states to replace. |
 
 ### Fill with replacement blocks and states
@@ -74,11 +76,11 @@ Fill a region `from` one position `to` another of a particular `block name`, fil
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| from | [Block Position](../CommandTypes/type_position.md) | Required | A vector that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
-| to | [Block Position](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
-| tileName | [Block ID](../CommandTypes/type_block.md) | Required | An `enum` of the block `id` of the block to fill the region with. |
+| from | [x y z](../CommandTypes/type_position.md) | Required | A vector that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
+| to | [x y z](../CommandTypes/type_position.md) | Required | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
+| tileName | [Block](../CommandTypes/type_block.md) | Required | An `enum` of the block `id` of the block to fill the region with. |
 | oldBlockHandling | fillmode | Required |  |
-| replaceTileName | [Block ID](../CommandTypes/type_block.md) | Optional | An `enum` of the type of the block `id` to replace in the fill region. |
+| replaceTileName | [Block](../CommandTypes/type_block.md) | Optional | An `enum` of the type of the block `id` to replace in the fill region. |
 | replaceBlockStates | block_state_array | Optional | An `array` of block states to replace. |
 
 ## Examples
@@ -118,9 +120,9 @@ Fill a region `from` one position `to` another of a particular `block name`, fil
 | Argument | Type | Description |
 |:---------|:-----|:------------|
 | blockStates | block_state_array | An array of block states. |
-| from | [Block Position](../CommandTypes/type_position.md) | A vector that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
+| from | [x y z](../CommandTypes/type_position.md) | A vector that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
 | oldBlockHandling | fillmode |  |
 | replaceBlockStates | block_state_array | An `array` of block states to replace. |
-| replaceTileName | [Block ID](../CommandTypes/type_block.md) | An `enum` of the type of the block `id` to replace in the fill region. |
-| tileName | [Block ID](../CommandTypes/type_block.md) | An `enum` of the block `id` of the block to fill the region with. |
-| to | [Block Position](../CommandTypes/type_position.md) | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |
+| replaceTileName | [Block](../CommandTypes/type_block.md) | An `enum` of the type of the block `id` to replace in the fill region. |
+| tileName | [Block](../CommandTypes/type_block.md) | An `enum` of the block `id` of the block to fill the region with. |
+| to | [x y z](../CommandTypes/type_position.md) | A `vector` that specifies the location in `x`, `y`, and `z` coordinates of `float` type. |

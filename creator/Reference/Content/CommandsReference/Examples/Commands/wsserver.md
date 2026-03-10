@@ -31,10 +31,10 @@ Attempts to connect to the websocket server on the provided URL.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| serverUri | [Raw JSON Text](../CommandTypes/type_rawtext.md) | Required | A `URI` of the server to connect to. Or use an empty `string` to disconnect. |
+| serverUri | [rawtext](../CommandTypes/type_rawtext.md) | Required | A `URI` of the server to connect to. Or use an empty `string` to disconnect. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| serverUri | [Raw JSON Text](../CommandTypes/type_rawtext.md) | A `URI` of the server to connect to. Or use an empty `string` to disconnect. |
+| serverUri | [rawtext](../CommandTypes/type_rawtext.md) | A `URI` of the server to connect to. Or use an empty `string` to disconnect. |

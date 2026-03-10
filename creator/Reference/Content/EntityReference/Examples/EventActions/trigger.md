@@ -17,6 +17,24 @@ Triggers additional entity events when hit. For example, you could use a randomi
 This item can also be represented as a `String`.
 
 
+## Trigger Properties
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| event | *not set* | String | The event to trigger on the entity. | 
+| target | *not set* | [Target](#target-choices) choices | The target entity for the trigger. | 
+
+### Target choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| self | Self | |
+| other | Other | |
+| player | Player | |
+| target | Target | |
+| baby | Baby | |
+| parent | Parent | |
+
 ## Samples
 
 

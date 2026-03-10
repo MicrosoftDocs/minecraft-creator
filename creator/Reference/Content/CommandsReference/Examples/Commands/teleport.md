@@ -55,7 +55,7 @@ The `vector` [x y z] position to teleport entities to.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| destination | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
+| destination | [x y z](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
 | checkForBlocks | [Boolean](../CommandTypes/type_boolean.md) | Optional | A `Boolean` value to prevent teleporting the player if the location they would end up in is occupied by blocks if `true`. Default: `false`. |
 
 ### Teleport self, x y rotation
@@ -66,9 +66,9 @@ The `vector` [x y z] position to teleport entities to.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| destination | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
-| yRot | [Rotation Value](../CommandTypes/type_rval.md) | Optional | The `float` degrees `y` to rotate a player when teleporting. |
-| xRot | [Rotation Value](../CommandTypes/type_rval.md) | Optional | The `float` degrees `x` to rotate a player when teleporting. |
+| destination | [x y z](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
+| yRot | [rotation](../CommandTypes/type_rval.md) | Optional | The `float` degrees `y` to rotate a player when teleporting. |
+| xRot | [rotation](../CommandTypes/type_rval.md) | Optional | The `float` degrees `x` to rotate a player when teleporting. |
 | checkForBlocks | [Boolean](../CommandTypes/type_boolean.md) | Optional | A `Boolean` value to prevent teleporting the player if the location they would end up in is occupied by blocks if `true`. Default: `false`. |
 
 ### Teleport self, facing position
@@ -79,9 +79,9 @@ The `vector` [x y z] position to teleport entities to.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| destination | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
+| destination | [x y z](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
 | facing | teleportfacing | Required |  |
-| lookAtPosition | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | A `vector` [x y z] of where teleported entities should face. |
+| lookAtPosition | [x y z](../CommandTypes/type_position_float.md) | Required | A `vector` [x y z] of where teleported entities should face. |
 | checkForBlocks | [Boolean](../CommandTypes/type_boolean.md) | Optional | A `Boolean` value to prevent teleporting the player if the location they would end up in is occupied by blocks if `true`. Default: `false`. |
 
 ### Teleport self, facing entity
@@ -92,9 +92,9 @@ The `vector` [x y z] position to teleport entities to.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| destination | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
+| destination | [x y z](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
 | facing | teleportfacing | Required |  |
-| lookAtEntity | [Entity Selector](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which `entity` teleported entities should face. |
+| lookAtEntity | [target](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which `entity` teleported entities should face. |
 | checkForBlocks | [Boolean](../CommandTypes/type_boolean.md) | Optional | A `Boolean` value to prevent teleporting the player if the location they would end up in is occupied by blocks if `true`. Default: `false`. |
 
 ### Teleport player, x y rotation
@@ -105,10 +105,10 @@ The `vector` [x y z] position to teleport entities to.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| victim | [Entity Selector](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which player is teleported. |
-| destination | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
-| yRot | [Rotation Value](../CommandTypes/type_rval.md) | Optional | The `float` degrees `y` to rotate a player when teleporting. |
-| xRot | [Rotation Value](../CommandTypes/type_rval.md) | Optional | The `float` degrees `x` to rotate a player when teleporting. |
+| victim | [target](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which player is teleported. |
+| destination | [x y z](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
+| yRot | [rotation](../CommandTypes/type_rval.md) | Optional | The `float` degrees `y` to rotate a player when teleporting. |
+| xRot | [rotation](../CommandTypes/type_rval.md) | Optional | The `float` degrees `x` to rotate a player when teleporting. |
 | checkForBlocks | [Boolean](../CommandTypes/type_boolean.md) | Optional | A `Boolean` value to prevent teleporting the player if the location they would end up in is occupied by blocks if `true`. Default: `false`. |
 
 ### Teleport player
@@ -119,8 +119,8 @@ The `vector` [x y z] position to teleport entities to.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| victim | [Entity Selector](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which player is teleported. |
-| destination | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
+| victim | [target](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which player is teleported. |
+| destination | [x y z](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
 | checkForBlocks | [Boolean](../CommandTypes/type_boolean.md) | Optional | A `Boolean` value to prevent teleporting the player if the location they would end up in is occupied by blocks if `true`. Default: `false`. |
 
 ### Teleport player, facing position
@@ -131,10 +131,10 @@ The `vector` [x y z] position to teleport entities to.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| victim | [Entity Selector](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which player is teleported. |
-| destination | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
+| victim | [target](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which player is teleported. |
+| destination | [x y z](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
 | facing | teleportfacing | Required |  |
-| lookAtPosition | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | A `vector` [x y z] of where teleported entities should face. |
+| lookAtPosition | [x y z](../CommandTypes/type_position_float.md) | Required | A `vector` [x y z] of where teleported entities should face. |
 | checkForBlocks | [Boolean](../CommandTypes/type_boolean.md) | Optional | A `Boolean` value to prevent teleporting the player if the location they would end up in is occupied by blocks if `true`. Default: `false`. |
 
 ### Teleport player, facing entity
@@ -145,15 +145,13 @@ The `vector` [x y z] position to teleport entities to.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| victim | [Entity Selector](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which player is teleported. |
-| destination | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
+| victim | [target](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which player is teleported. |
+| destination | [x y z](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
 | facing | teleportfacing | Required |  |
-| lookAtEntity | [Entity Selector](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which `entity` teleported entities should face. |
+| lookAtEntity | [target](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which `entity` teleported entities should face. |
 | checkForBlocks | [Boolean](../CommandTypes/type_boolean.md) | Optional | A `Boolean` value to prevent teleporting the player if the location they would end up in is occupied by blocks if `true`. Default: `false`. |
 
 ## default
-
-### Teleport player to entity destination
 
 `/teleport <destination: x y z>`
 
@@ -161,13 +159,11 @@ The `vector` [x y z] position to teleport entities to.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| destination | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
+| destination | [x y z](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
 
 ## checkForBlocks
 
 A `Boolean` value to prevent teleporting the player if the location they would end up in is occupied by blocks if `true`. Default: `false`.
-
-### Teleport player
 
 `/teleport <victim: target> <destination: x y z> [checkForBlocks: Boolean]`
 
@@ -175,8 +171,8 @@ A `Boolean` value to prevent teleporting the player if the location they would e
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| victim | [Entity Selector](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which player is teleported. |
-| destination | [Position (x y z)](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
+| victim | [target](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which player is teleported. |
+| destination | [x y z](../CommandTypes/type_position_float.md) | Required | The `vector` [x y z] position to teleport entities to. |
 | checkForBlocks | [Boolean](../CommandTypes/type_boolean.md) | Optional | A `Boolean` value to prevent teleporting the player if the location they would end up in is occupied by blocks if `true`. Default: `false`. |
 
 ## Examples
@@ -222,10 +218,10 @@ A `Boolean` value to prevent teleporting the player if the location they would e
 | Argument | Type | Description |
 |:---------|:-----|:------------|
 | checkForBlocks | [Boolean](../CommandTypes/type_boolean.md) | A `Boolean` value to prevent teleporting the player if the location they would end up in is occupied by blocks if `true`. Default: `false`. |
-| destination | [Position (x y z)](../CommandTypes/type_position_float.md) | The `vector` [x y z] position to teleport entities to. |
+| destination | [x y z](../CommandTypes/type_position_float.md) | The `vector` [x y z] position to teleport entities to. |
 | facing | teleportfacing |  |
-| lookAtEntity | [Entity Selector](../CommandTypes/type_selection.md) | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which `entity` teleported entities should face. |
-| lookAtPosition | [Position (x y z)](../CommandTypes/type_position_float.md) | A `vector` [x y z] of where teleported entities should face. |
-| victim | [Entity Selector](../CommandTypes/type_selection.md) | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which player is teleported. |
-| xRot | [Rotation Value](../CommandTypes/type_rval.md) | The `float` degrees `x` to rotate a player when teleporting. |
-| yRot | [Rotation Value](../CommandTypes/type_rval.md) | The `float` degrees `y` to rotate a player when teleporting. |
+| lookAtEntity | [target](../CommandTypes/type_selection.md) | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which `entity` teleported entities should face. |
+| lookAtPosition | [x y z](../CommandTypes/type_position_float.md) | A `vector` [x y z] of where teleported entities should face. |
+| victim | [target](../CommandTypes/type_selection.md) | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which player is teleported. |
+| xRot | [rotation](../CommandTypes/type_rval.md) | The `float` degrees `x` to rotate a player when teleporting. |
+| yRot | [rotation](../CommandTypes/type_rval.md) | The `float` degrees `y` to rotate a player when teleporting. |

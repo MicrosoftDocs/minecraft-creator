@@ -2288,8 +2288,9 @@
       {
         "id": "minecraft:behavior.admire_item",
         "title": "Admire Item Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Enables the mob to admire items that have been configured as admirable. Must be used in combination with the admire_item component",
+        "dataType": 16,
+        "subFormId": "entity/admire_item"
       },
       {
         "id": "minecraft:behavior.aquatic_charge_attack",
@@ -2315,8 +2316,9 @@
       {
         "id": "minecraft:behavior.barter",
         "title": "Barter Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Enables the mob to barter for items that have been configured as barter currency. Must be used in combination with the barter component",
+        "dataType": 16,
+        "subFormId": "entity/barter"
       },
       {
         "id": "minecraft:behavior.beg",
@@ -2497,8 +2499,9 @@
       {
         "id": "minecraft:behavior.eat_carried_item",
         "title": "Eat Carried Item Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "If the mob is carrying a food item, the mob will eat it and the effects will be applied to the mob.",
+        "dataType": 16,
+        "subFormId": "entity/eat_carried_item"
       },
       {
         "id": "minecraft:behavior.eat_mob",
@@ -2528,8 +2531,9 @@
       {
         "id": "minecraft:behavior.equip_item",
         "title": "Equip Item Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "The entity puts on the desired equipment.",
+        "dataType": 16,
+        "subFormId": "entity/equip_item"
       },
       {
         "id": "minecraft:behavior.explore_outskirts",
@@ -2658,8 +2662,9 @@
       {
         "id": "minecraft:behavior.hide",
         "title": "Hide Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows a mob with the hide component to attempt to move to - and hide at - an owned or nearby POI.",
+        "dataType": 16,
+        "subFormId": "entity/hide"
       },
       {
         "id": "minecraft:behavior.hold_ground",
@@ -2781,8 +2786,9 @@
       {
         "id": "minecraft:behavior.mingle",
         "title": "Mingle Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows an entity to go to the village bell and mingle with other entities",
+        "dataType": 16,
+        "subFormId": "entity/mingle"
       },
       {
         "id": "minecraft:behavior.mount_pathing",
@@ -2799,14 +2805,16 @@
       {
         "id": "minecraft:behavior.move_indoors",
         "title": "Move Indoors Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows this entity to move indoors.",
+        "dataType": 16,
+        "subFormId": "entity/move_indoors"
       },
       {
         "id": "minecraft:behavior.move_outdoors",
         "title": "Move Outdoors Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows this entity to move outdoors.",
+        "dataType": 16,
+        "subFormId": "entity/move_outdoors"
       },
       {
         "id": "minecraft:behavior.move_through_village",
@@ -2844,8 +2852,9 @@
       {
         "id": "minecraft:behavior.move_to_poi",
         "title": "Move To Poi Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to move to a POI if able to",
+        "dataType": 16,
+        "subFormId": "entity/move_to_poi"
       },
       {
         "id": "minecraft:behavior.move_to_random_block",
@@ -2856,8 +2865,9 @@
       {
         "id": "minecraft:behavior.move_to_village",
         "title": "Move To Village Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to move into a random location within a village.",
+        "dataType": 16,
+        "subFormId": "entity/move_to_village"
       },
       {
         "id": "minecraft:behavior.move_to_water",
@@ -3145,8 +3155,9 @@
       {
         "id": "minecraft:behavior.sleep",
         "title": "Sleep Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows mobs that own a bed to in a village to move to and sleep in it.",
+        "dataType": 16,
+        "subFormId": "entity/sleep"
       },
       {
         "id": "minecraft:behavior.slime_attack",
@@ -3268,8 +3279,9 @@
       {
         "id": "minecraft:behavior.stroll_towards_village",
         "title": "Stroll Towards Village Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to move into a random location within a village within the search range.",
+        "dataType": 16,
+        "subFormId": "entity/stroll_towards_village"
       },
       {
         "id": "minecraft:behavior.summon_entity",
@@ -3439,7 +3451,7 @@
       {
         "id": "minecraft:block_climber",
         "title": "Minecraft Block Climber",
-        "description": "Dynamic value",
+        "description": "Allows the player to detect and maneuver on the scaffolding block.",
         "dataType": 16
       },
       {
@@ -3525,7 +3537,7 @@
       {
         "id": "minecraft:can_join_raid",
         "title": "Minecraft Can Join Raid",
-        "description": "Dynamic value",
+        "description": "Determines that this entity can join an existing raid.",
         "dataType": 16
       },
       {
@@ -3614,7 +3626,7 @@
       {
         "id": "minecraft:dimension_bound",
         "title": "Minecraft Dimension Bound",
-        "description": "Dynamic value",
+        "description": "Prevents the entity from changing dimension through portals.",
         "dataType": 16
       },
       {
@@ -3935,7 +3947,7 @@
       {
         "id": "minecraft:item_hopper",
         "title": "Minecraft Item Hopper",
-        "description": "Dynamic value",
+        "description": "Determines that this entity is an item hopper.",
         "dataType": 16
       },
       {
@@ -4019,6 +4031,54 @@
       {
         "id": "minecraft:memory_behavior.follow_target",
         "title": "Follow Target Minecraft Memory Behavior",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:memory_behavior.move_to_position",
+        "title": "Move To Position Minecraft Memory Behavior",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:memory_sensor.find_nearest_block",
+        "title": "Find Nearest Block Minecraft Memory Sensor",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:memory_sensor.find_nearest_block_from",
+        "title": "Find Nearest Block From Minecraft Memory Sensor",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:memory_sensor.find_nearest_entity",
+        "title": "Find Nearest Entity Minecraft Memory Sensor",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:memory_sensor.find_nearest_entity_from",
+        "title": "Find Nearest Entity From Minecraft Memory Sensor",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:memory_sensor.find_nearest_poi",
+        "title": "Find Nearest Poi Minecraft Memory Sensor",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:memory_sensor.in_range_of_block",
+        "title": "In Range Of Block Minecraft Memory Sensor",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:memory_sensor.in_range_of_entity",
+        "title": "In Range Of Entity Minecraft Memory Sensor",
         "description": "Dynamic value",
         "dataType": 16
       },
@@ -4173,6 +4233,13 @@
         "dataType": 16
       },
       {
+        "id": "minecraft:on_equipment_changed",
+        "title": "Minecraft On Equipment Changed",
+        "description": "Allows to specify events to execute when equipment is set in the entity's default equipment slots. Doesn't apply to \"minecraft:inventory\", use \"minecraft:equippable\" instead.",
+        "dataType": 16,
+        "subFormId": "entity/minecraft_on_equipment_changed"
+      },
+      {
         "id": "minecraft:on_friendly_anger",
         "title": "Minecraft On Friendly Anger",
         "description": "Dynamic value",
@@ -4229,7 +4296,7 @@
       {
         "id": "minecraft:out_of_control",
         "title": "Minecraft Out Of Control",
-        "description": "Dynamic value",
+        "description": "Defines the entity's 'out of control' state.",
         "dataType": 16
       },
       {
@@ -4380,48 +4447,6 @@
         "dataType": 16
       },
       {
-        "id": "minecraft:sensor.find_nearest_block",
-        "title": "Find Nearest Block Minecraft Sensor",
-        "description": "Dynamic value",
-        "dataType": 16
-      },
-      {
-        "id": "minecraft:sensor.find_nearest_block_from",
-        "title": "Find Nearest Block From Minecraft Sensor",
-        "description": "Dynamic value",
-        "dataType": 16
-      },
-      {
-        "id": "minecraft:sensor.find_nearest_entity",
-        "title": "Find Nearest Entity Minecraft Sensor",
-        "description": "Dynamic value",
-        "dataType": 16
-      },
-      {
-        "id": "minecraft:sensor.find_nearest_entity_from",
-        "title": "Find Nearest Entity From Minecraft Sensor",
-        "description": "Dynamic value",
-        "dataType": 16
-      },
-      {
-        "id": "minecraft:sensor.find_nearest_poi",
-        "title": "Find Nearest Poi Minecraft Sensor",
-        "description": "Dynamic value",
-        "dataType": 16
-      },
-      {
-        "id": "minecraft:sensor.in_range_of_block",
-        "title": "In Range Of Block Minecraft Sensor",
-        "description": "Dynamic value",
-        "dataType": 16
-      },
-      {
-        "id": "minecraft:sensor.in_range_of_entity",
-        "title": "In Range Of Entity Minecraft Sensor",
-        "description": "Dynamic value",
-        "dataType": 16
-      },
-      {
         "id": "minecraft:shareables",
         "title": "Minecraft Shareables",
         "description": "Dynamic value",
@@ -4478,7 +4503,7 @@
       {
         "id": "minecraft:suspect_tracking",
         "title": "Minecraft Suspect Tracking",
-        "description": "Dynamic value",
+        "description": "Allows this entity to remember suspicious locations.",
         "dataType": 16
       },
       {
@@ -4545,7 +4570,7 @@
       {
         "id": "minecraft:transient",
         "title": "Minecraft Transient",
-        "description": "Dynamic value",
+        "description": "Marks an entity as transient (do not save).",
         "dataType": 16
       },
       {
@@ -4579,6 +4604,16 @@
         "dataType": 16
       },
       {
+        "id": "minecraft:uses_legacy_friction",
+        "title": "Minecraft Uses Legacy Friction",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:uses_uniform_air_drag",
+        "title": "Minecraft Uses Uniform Air Drag",
+        "dataType": 16
+      },
+      {
         "id": "minecraft:variable_max_auto_step",
         "title": "Minecraft Variable Max Auto Step",
         "description": "Dynamic value",
@@ -4599,13 +4634,13 @@
       {
         "id": "minecraft:vibration_damper",
         "title": "Minecraft Vibration Damper",
-        "description": "Dynamic value",
+        "description": "Vibrations emitted by an entity with this component will be ignored.",
         "dataType": 16
       },
       {
         "id": "minecraft:vibration_listener",
         "title": "Minecraft Vibration Listener",
-        "description": "Dynamic value",
+        "description": "[INTERNAL] Allows this entity to listen to vibration events.",
         "dataType": 16
       },
       {

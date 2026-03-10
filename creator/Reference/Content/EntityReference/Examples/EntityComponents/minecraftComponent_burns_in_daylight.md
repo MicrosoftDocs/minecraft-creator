@@ -33,6 +33,7 @@ The equipment slot that provides protection from burning in sunlight. If armor i
 | slot.armor.feet | Slot.armor.feet | |
 | slot.armor.head | Slot.armor.head | |
 | slot.armor.legs | Slot.armor.legs | |
+| slot.weapon.mainhand | Slot.weapon.mainhand | |
 | slot.weapon.offhand | Slot.weapon.offhand | |
 
 ## Samples

@@ -33,8 +33,8 @@ Set a `block` in a `position` using `tile name` with optional `block states` and
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| position | [Block Position](../CommandTypes/type_position.md) | Required | A `vector` [x y z] that defines the position of the block to change. |
-| tileName | [Block ID](../CommandTypes/type_block.md) | Required | An block name from the `enum` that specifies the new block. |
+| position | [x y z](../CommandTypes/type_position.md) | Required | A `vector` [x y z] that defines the position of the block to change. |
+| tileName | [Block](../CommandTypes/type_block.md) | Required | An block name from the `enum` that specifies the new block. |
 | blockStates | block_state_array | Required | The block states from the `enum` to use for the block to be set. |
 | oldBlockHandling | setblockmode | Optional | An `enum` of type `destroy`, `hollow`, `keep`, `outline`, or `replace`. Default: `replace`. |
 
@@ -44,8 +44,8 @@ Set a `block` in a `position` using `tile name` with optional `block states` and
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| position | [Block Position](../CommandTypes/type_position.md) | Required | A `vector` [x y z] that defines the position of the block to change. |
-| tileName | [Block ID](../CommandTypes/type_block.md) | Required | An block name from the `enum` that specifies the new block. |
+| position | [x y z](../CommandTypes/type_position.md) | Required | A `vector` [x y z] that defines the position of the block to change. |
+| tileName | [Block](../CommandTypes/type_block.md) | Required | An block name from the `enum` that specifies the new block. |
 | oldBlockHandling | setblockmode | Optional | An `enum` of type `destroy`, `hollow`, `keep`, `outline`, or `replace`. Default: `replace`. |
 
 ## Arguments Reference
@@ -54,5 +54,5 @@ Set a `block` in a `position` using `tile name` with optional `block states` and
 |:---------|:-----|:------------|
 | blockStates | block_state_array | The block states from the `enum` to use for the block to be set. |
 | oldBlockHandling | setblockmode | An `enum` of type `destroy`, `hollow`, `keep`, `outline`, or `replace`. Default: `replace`. |
-| position | [Block Position](../CommandTypes/type_position.md) | A `vector` [x y z] that defines the position of the block to change. |
-| tileName | [Block ID](../CommandTypes/type_block.md) | An block name from the `enum` that specifies the new block. |
+| position | [x y z](../CommandTypes/type_position.md) | A `vector` [x y z] that defines the position of the block to change. |
+| tileName | [Block](../CommandTypes/type_block.md) | An block name from the `enum` that specifies the new block. |

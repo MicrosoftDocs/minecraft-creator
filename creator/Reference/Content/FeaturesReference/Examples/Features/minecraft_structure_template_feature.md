@@ -22,6 +22,7 @@ Places a structure in the world. The structure must be stored as a .mcstructure 
 | description | *not set* | [Description](#description) item |  | 
 | facing_direction"<"north", "south", "east", "west", "random" | *not set* | String | Direction the structure will face when placed in the world. Defaults to "random" if omitted. | 
 | format_version | *not set* | String |  | 
+| rotate_around_center | *not set* | Boolean true/false | If true, tries to rotate the structure around its center when placed in the world. Defaults to "false" if omitted. | 
 
 ### Constraints
 

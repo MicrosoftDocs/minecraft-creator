@@ -496,6 +496,13 @@
         "subFormId": "block_components/item_visual"
       },
       {
+        "id": "minecraft:leashable",
+        "title": "Minecraft Leashable",
+        "description": "Allows a block to have a lead tied to it.",
+        "dataType": 16,
+        "subFormId": "block_components/leashable"
+      },
+      {
         "id": "minecraft:light_dampening",
         "title": "Minecraft Light Dampening",
         "description": "The amount that light will be dampened when it passes through the block. Higher value means the light will be dampened more.",

@@ -29,7 +29,7 @@ Configures HUD element visibility for a selection of players.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| target | [Entity Selector](../CommandTypes/type_selection.md) | Required | Selector of the player(s) to toggle visibility for. |
+| target | [target](../CommandTypes/type_selection.md) | Required | Selector of the player(s) to toggle visibility for. |
 | visible | hudvisibility | Required | State to change the HUD element visibility to. |
 | hud_element | hudelement | Optional | Specific HUD element to configure visibility for. |
 
@@ -38,5 +38,5 @@ Configures HUD element visibility for a selection of players.
 | Argument | Type | Description |
 |:---------|:-----|:------------|
 | hud_element | hudelement | Specific HUD element to configure visibility for. |
-| target | [Entity Selector](../CommandTypes/type_selection.md) | Selector of the player(s) to toggle visibility for. |
+| target | [target](../CommandTypes/type_selection.md) | Selector of the player(s) to toggle visibility for. |
 | visible | hudvisibility | State to change the HUD element visibility to. |

@@ -39,6 +39,8 @@ ms.date: 02/11/2025
 
 `/gametest <mode: gametestmoderunthis>`
 
+## Usage
+
 ### Run block test
 
 `/gametest <mode: gametestmoderunthis>`
@@ -59,7 +61,7 @@ Runs a particular gametest with a particular number of rotation steps.
 |:---------|:-----|:---------|:------------|
 | mode | gametestmoderunthis | Required |  |
 | testName | gametestname | Required |  |
-| rotationSteps | [Integer](../CommandTypes/type_int.md) | Optional |  |
+| rotationSteps | [int](../CommandTypes/type_int.md) | Optional |  |
 
 ### Run gametest with custom stop
 
@@ -72,8 +74,8 @@ Runs a gametest with additional controls on stop behavior, repeat count, and rot
 | mode | gametestmoderunthis | Required |  |
 | testName | gametestname | Required |  |
 | stopOnFailure | [Boolean](../CommandTypes/type_boolean.md) | Required |  |
-| repeatCount | [Integer](../CommandTypes/type_int.md) | Required |  |
-| rotationSteps | [Integer](../CommandTypes/type_int.md) | Optional |  |
+| repeatCount | [int](../CommandTypes/type_int.md) | Required |  |
+| rotationSteps | [int](../CommandTypes/type_int.md) | Optional |  |
 
 ### Run gametest with a tag
 
@@ -85,7 +87,7 @@ Runs a set of gametests with a particular tag.
 |:---------|:-----|:---------|:------------|
 | mode | gametestmoderunthis | Required |  |
 | tag | gametesttag | Optional |  |
-| rotationSteps | [Integer](../CommandTypes/type_int.md) | Optional |  |
+| rotationSteps | [int](../CommandTypes/type_int.md) | Optional |  |
 
 ### Run gametest until failure
 
@@ -97,7 +99,7 @@ Runs a set of gametests until a failure is detected, using a particular tag.
 |:---------|:-----|:---------|:------------|
 | mode | gametestmoderunthis | Required |  |
 | tag | gametesttag | Optional |  |
-| rotationSteps | [Integer](../CommandTypes/type_int.md) | Optional |  |
+| rotationSteps | [int](../CommandTypes/type_int.md) | Optional |  |
 
 ### Clear all tests
 
@@ -129,9 +131,9 @@ Creates a new gametest with the specified name, width, height, and depth.
 |:---------|:-----|:---------|:------------|
 | mode | gametestmoderunthis | Required |  |
 | testName | gametestname | Required |  |
-| width | [Integer](../CommandTypes/type_int.md) | Optional |  |
-| height | [Integer](../CommandTypes/type_int.md) | Optional |  |
-| depth | [Integer](../CommandTypes/type_int.md) | Optional |  |
+| width | [int](../CommandTypes/type_int.md) | Optional |  |
+| height | [int](../CommandTypes/type_int.md) | Optional |  |
+| depth | [int](../CommandTypes/type_int.md) | Optional |  |
 
 ### Run nearby tests
 
@@ -157,12 +159,12 @@ Stops all currently-running gametests.
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| depth | [Integer](../CommandTypes/type_int.md) |  |
-| height | [Integer](../CommandTypes/type_int.md) |  |
+| depth | [int](../CommandTypes/type_int.md) |  |
+| height | [int](../CommandTypes/type_int.md) |  |
 | mode | gametestmoderunthis |  |
-| repeatCount | [Integer](../CommandTypes/type_int.md) |  |
-| rotationSteps | [Integer](../CommandTypes/type_int.md) |  |
+| repeatCount | [int](../CommandTypes/type_int.md) |  |
+| rotationSteps | [int](../CommandTypes/type_int.md) |  |
 | stopOnFailure | [Boolean](../CommandTypes/type_boolean.md) |  |
 | tag | gametesttag |  |
 | testName | gametestname |  |
-| width | [Integer](../CommandTypes/type_int.md) |  |
+| width | [int](../CommandTypes/type_int.md) |  |

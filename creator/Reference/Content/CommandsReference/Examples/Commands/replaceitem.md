@@ -33,13 +33,13 @@ Replace an `item` at a required `position` into the slot with type `slot id`, `i
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | block | replaceitemblock | Required |  |
-| position | [Block Position](../CommandTypes/type_position.md) | Required | `Vector` [x y z] of the position of the block to modify. |
+| position | [x y z](../CommandTypes/type_position.md) | Required | `Vector` [x y z] of the position of the block to modify. |
 | slotType | blockequipmentslot | Required | Entity equipment slot |
-| slotId | [Integer](../CommandTypes/type_int.md) | Required | An `integer` that sets the slot to be modified. Default: `0`. |
-| itemName | [Item ID](../CommandTypes/type_item.md) | Required | Specifies the item to be placed in the entity or block inventory slot. |
-| amount | [Integer](../CommandTypes/type_int.md) | Optional | An `integer` to specify the number of items to place in inventory. Default: `1`. |
-| data | [Integer](../CommandTypes/type_int.md) | Optional | An `integer` that specifies the item data for the items in the inventory. Default: `0`. |
-| components | [JSON Object](../CommandTypes/type_json_object.md) | Optional | A `JSON` object that supports `minecraft:can_place_on`, `minecraft:can_destroy`, `minecraft:item_lock`, and `minecraft:keep_on_death`. Default: `false`. |
+| slotId | [int](../CommandTypes/type_int.md) | Required | An `integer` that sets the slot to be modified. Default: `0`. |
+| itemName | [Item](../CommandTypes/type_item.md) | Required | Specifies the item to be placed in the entity or block inventory slot. |
+| amount | [int](../CommandTypes/type_int.md) | Optional | An `integer` to specify the number of items to place in inventory. Default: `1`. |
+| data | [int](../CommandTypes/type_int.md) | Optional | An `integer` that specifies the item data for the items in the inventory. Default: `0`. |
+| components | [json](../CommandTypes/type_json_object.md) | Optional | A `JSON` object that supports `minecraft:can_place_on`, `minecraft:can_destroy`, `minecraft:item_lock`, and `minecraft:keep_on_death`. Default: `false`. |
 
 ### Replace block, old item handling
 
@@ -50,14 +50,14 @@ Replace `item` at a required `position` into the slot with type `slot id`, using
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | block | replaceitemblock | Required |  |
-| position | [Block Position](../CommandTypes/type_position.md) | Required | `Vector` [x y z] of the position of the block to modify. |
+| position | [x y z](../CommandTypes/type_position.md) | Required | `Vector` [x y z] of the position of the block to modify. |
 | slotType | blockequipmentslot | Required | Entity equipment slot |
-| slotId | [Integer](../CommandTypes/type_int.md) | Required | An `integer` that sets the slot to be modified. Default: `0`. |
+| slotId | [int](../CommandTypes/type_int.md) | Required | An `integer` that sets the slot to be modified. Default: `0`. |
 | oldItemHandling | replacemode | Required | Either `destroy` to replace items in slot or `keep` to keep items instead of replacing them. |
-| itemName | [Item ID](../CommandTypes/type_item.md) | Required | Specifies the item to be placed in the entity or block inventory slot. |
-| amount | [Integer](../CommandTypes/type_int.md) | Optional | An `integer` to specify the number of items to place in inventory. Default: `1`. |
-| data | [Integer](../CommandTypes/type_int.md) | Optional | An `integer` that specifies the item data for the items in the inventory. Default: `0`. |
-| components | [JSON Object](../CommandTypes/type_json_object.md) | Optional | A `JSON` object that supports `minecraft:can_place_on`, `minecraft:can_destroy`, `minecraft:item_lock`, and `minecraft:keep_on_death`. Default: `false`. |
+| itemName | [Item](../CommandTypes/type_item.md) | Required | Specifies the item to be placed in the entity or block inventory slot. |
+| amount | [int](../CommandTypes/type_int.md) | Optional | An `integer` to specify the number of items to place in inventory. Default: `1`. |
+| data | [int](../CommandTypes/type_int.md) | Optional | An `integer` that specifies the item data for the items in the inventory. Default: `0`. |
+| components | [json](../CommandTypes/type_json_object.md) | Optional | A `JSON` object that supports `minecraft:can_place_on`, `minecraft:can_destroy`, `minecraft:item_lock`, and `minecraft:keep_on_death`. Default: `false`. |
 
 ## entity
 
@@ -72,13 +72,13 @@ Replace item on an `entity` `target` into the slot with type `slot id` or `slot 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | entity | replaceitementity | Required | Entity equipment slot |
-| target | [Entity Selector](../CommandTypes/type_selection.md) | Required | Specifies the entity to modify, either a player name or a [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
+| target | [target](../CommandTypes/type_selection.md) | Required | Specifies the entity to modify, either a player name or a [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
 | slotType | blockequipmentslot | Required | Entity equipment slot |
-| slotId | [Integer](../CommandTypes/type_int.md) | Required | An `integer` that sets the slot to be modified. Default: `0`. |
-| itemName | [Item ID](../CommandTypes/type_item.md) | Required | Specifies the item to be placed in the entity or block inventory slot. |
-| amount | [Integer](../CommandTypes/type_int.md) | Optional | An `integer` to specify the number of items to place in inventory. Default: `1`. |
-| data | [Integer](../CommandTypes/type_int.md) | Optional | An `integer` that specifies the item data for the items in the inventory. Default: `0`. |
-| components | [JSON Object](../CommandTypes/type_json_object.md) | Optional | A `JSON` object that supports `minecraft:can_place_on`, `minecraft:can_destroy`, `minecraft:item_lock`, and `minecraft:keep_on_death`. Default: `false`. |
+| slotId | [int](../CommandTypes/type_int.md) | Required | An `integer` that sets the slot to be modified. Default: `0`. |
+| itemName | [Item](../CommandTypes/type_item.md) | Required | Specifies the item to be placed in the entity or block inventory slot. |
+| amount | [int](../CommandTypes/type_int.md) | Optional | An `integer` to specify the number of items to place in inventory. Default: `1`. |
+| data | [int](../CommandTypes/type_int.md) | Optional | An `integer` that specifies the item data for the items in the inventory. Default: `0`. |
+| components | [json](../CommandTypes/type_json_object.md) | Optional | A `JSON` object that supports `minecraft:can_place_on`, `minecraft:can_destroy`, `minecraft:item_lock`, and `minecraft:keep_on_death`. Default: `false`. |
 
 ### Replace entity, old item handling
 
@@ -89,27 +89,27 @@ Replace an `entity` with required `target`, into the slot with type `slot id` or
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | entity | replaceitementity | Required | Entity equipment slot |
-| target | [Entity Selector](../CommandTypes/type_selection.md) | Required | Specifies the entity to modify, either a player name or a [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
+| target | [target](../CommandTypes/type_selection.md) | Required | Specifies the entity to modify, either a player name or a [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
 | slotType | blockequipmentslot | Required | Entity equipment slot |
-| slotId | [Integer](../CommandTypes/type_int.md) | Required | An `integer` that sets the slot to be modified. Default: `0`. |
+| slotId | [int](../CommandTypes/type_int.md) | Required | An `integer` that sets the slot to be modified. Default: `0`. |
 | oldItemHandling | replacemode | Required | Either `destroy` to replace items in slot or `keep` to keep items instead of replacing them. |
-| itemName | [Item ID](../CommandTypes/type_item.md) | Required | Specifies the item to be placed in the entity or block inventory slot. |
-| amount | [Integer](../CommandTypes/type_int.md) | Optional | An `integer` to specify the number of items to place in inventory. Default: `1`. |
-| data | [Integer](../CommandTypes/type_int.md) | Optional | An `integer` that specifies the item data for the items in the inventory. Default: `0`. |
-| components | [JSON Object](../CommandTypes/type_json_object.md) | Optional | A `JSON` object that supports `minecraft:can_place_on`, `minecraft:can_destroy`, `minecraft:item_lock`, and `minecraft:keep_on_death`. Default: `false`. |
+| itemName | [Item](../CommandTypes/type_item.md) | Required | Specifies the item to be placed in the entity or block inventory slot. |
+| amount | [int](../CommandTypes/type_int.md) | Optional | An `integer` to specify the number of items to place in inventory. Default: `1`. |
+| data | [int](../CommandTypes/type_int.md) | Optional | An `integer` that specifies the item data for the items in the inventory. Default: `0`. |
+| components | [json](../CommandTypes/type_json_object.md) | Optional | A `JSON` object that supports `minecraft:can_place_on`, `minecraft:can_destroy`, `minecraft:item_lock`, and `minecraft:keep_on_death`. Default: `false`. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| amount | [Integer](../CommandTypes/type_int.md) | An `integer` to specify the number of items to place in inventory. Default: `1`. |
+| amount | [int](../CommandTypes/type_int.md) | An `integer` to specify the number of items to place in inventory. Default: `1`. |
 | block | replaceitemblock |  |
-| components | [JSON Object](../CommandTypes/type_json_object.md) | A `JSON` object that supports `minecraft:can_place_on`, `minecraft:can_destroy`, `minecraft:item_lock`, and `minecraft:keep_on_death`. Default: `false`. |
-| data | [Integer](../CommandTypes/type_int.md) | An `integer` that specifies the item data for the items in the inventory. Default: `0`. |
+| components | [json](../CommandTypes/type_json_object.md) | A `JSON` object that supports `minecraft:can_place_on`, `minecraft:can_destroy`, `minecraft:item_lock`, and `minecraft:keep_on_death`. Default: `false`. |
+| data | [int](../CommandTypes/type_int.md) | An `integer` that specifies the item data for the items in the inventory. Default: `0`. |
 | entity | replaceitementity | Entity equipment slot |
-| itemName | [Item ID](../CommandTypes/type_item.md) | Specifies the item to be placed in the entity or block inventory slot. |
+| itemName | [Item](../CommandTypes/type_item.md) | Specifies the item to be placed in the entity or block inventory slot. |
 | oldItemHandling | replacemode | Either `destroy` to replace items in slot or `keep` to keep items instead of replacing them. |
-| position | [Block Position](../CommandTypes/type_position.md) | `Vector` [x y z] of the position of the block to modify. |
-| slotId | [Integer](../CommandTypes/type_int.md) | An `integer` that sets the slot to be modified. Default: `0`. |
+| position | [x y z](../CommandTypes/type_position.md) | `Vector` [x y z] of the position of the block to modify. |
+| slotId | [int](../CommandTypes/type_int.md) | An `integer` that sets the slot to be modified. Default: `0`. |
 | slotType | blockequipmentslot | Entity equipment slot |
-| target | [Entity Selector](../CommandTypes/type_selection.md) | Specifies the entity to modify, either a player name or a [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
+| target | [target](../CommandTypes/type_selection.md) | Specifies the entity to modify, either a player name or a [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |

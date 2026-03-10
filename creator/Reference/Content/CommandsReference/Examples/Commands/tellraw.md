@@ -29,12 +29,12 @@ Sends a JSON message to players.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| target | [Entity Selector](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player to tell. |
-| raw json message | [JSON Object](../CommandTypes/type_json_object.md) | Required | `JSON` that specifies the message to send. |
+| target | [target](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player to tell. |
+| raw json message | [json](../CommandTypes/type_json_object.md) | Required | `JSON` that specifies the message to send. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| raw json message | [JSON Object](../CommandTypes/type_json_object.md) | `JSON` that specifies the message to send. |
-| target | [Entity Selector](../CommandTypes/type_selection.md) | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player to tell. |
+| raw json message | [json](../CommandTypes/type_json_object.md) | `JSON` that specifies the message to send. |
+| target | [target](../CommandTypes/type_selection.md) | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player to tell. |

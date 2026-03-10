@@ -1,0 +1,65 @@
+{
+  "id": "minecraft:behavior.move_to_poi",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.move_to_poi",
+    "title": "Entity Move To Poi Behavior",
+    "description": "Allows the mob to move to a POI if able to",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "poi_type",
+        "title": "POIType",
+        "description": "Tells the goal what POI type it should be looking for",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "bed",
+            "title": "Bed"
+          },
+          {
+            "id": "jobsite",
+            "title": "Jobsite"
+          },
+          {
+            "id": "meeting_area",
+            "title": "Meeting area"
+          }
+        ],
+        "defaultValue": null
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this goal.",
+        "dataType": 3,
+        "defaultValue": 1
+      }
+    ]
+  }
+}

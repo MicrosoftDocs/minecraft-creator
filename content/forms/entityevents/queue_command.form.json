@@ -46,6 +46,7 @@
     ]
   },
   "id": "queue_command",
+  "tags": ["entityevent"],
   "generated_doNotEdit": {
     "id": "Queue Command",
     "title": "Queue Command",

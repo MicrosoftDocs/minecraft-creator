@@ -27,6 +27,8 @@ Summons an entity.
 
 `/summon <entityType: entitytype> [spawnPos: x y z] <facing: teleportfacing> <lookAtEntity: target> [spawnEvent: entityevents] [nameTag: id]`
 
+## Usage
+
 ### Summon entity with nametag
 
 `/summon <entityType: entitytype> [spawnPos: x y z] [yRot: rotation] [xRot: rotation] [spawnEvent: entityevents] [nameTag: id]`
@@ -35,12 +37,12 @@ Summon an `entity` with a `nametag` into an optional `spawn position`.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| entityType | [Entity Type](../CommandTypes/type_entitytype.md) | Required | An `enum` of the entity to be summoned. |
-| spawnPos | [Position (x y z)](../CommandTypes/type_position_float.md) | Optional | A `vector` of `float` numbers for the position of the summoned entity. |
-| yRot | [Rotation Value](../CommandTypes/type_rval.md) | Optional | The `float` degrees `y` to rotate a player when teleporting. |
-| xRot | [Rotation Value](../CommandTypes/type_rval.md) | Optional | The `float` degrees `x` to rotate a player when teleporting. |
+| entityType | [entitytype](../CommandTypes/type_entitytype.md) | Required | An `enum` of the entity to be summoned. |
+| spawnPos | [x y z](../CommandTypes/type_position_float.md) | Optional | A `vector` of `float` numbers for the position of the summoned entity. |
+| yRot | [rotation](../CommandTypes/type_rval.md) | Optional | The `float` degrees `y` to rotate a player when teleporting. |
+| xRot | [rotation](../CommandTypes/type_rval.md) | Optional | The `float` degrees `x` to rotate a player when teleporting. |
 | spawnEvent | entityevents | Optional | A `string` of the in-game event for the entity. |
-| nameTag | [Identifier](../CommandTypes/type_id.md) | Optional | A `string` of the entity name tag. |
+| nameTag | [id](../CommandTypes/type_id.md) | Optional | A `string` of the entity name tag. |
 
 ### With entityType, nameTag, spawnPos
 
@@ -48,9 +50,9 @@ Summon an `entity` with a `nametag` into an optional `spawn position`.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| entityType | [Entity Type](../CommandTypes/type_entitytype.md) | Required | An `enum` of the entity to be summoned. |
-| nameTag | [Identifier](../CommandTypes/type_id.md) | Required | A `string` of the entity name tag. |
-| spawnPos | [Position (x y z)](../CommandTypes/type_position_float.md) | Optional | A `vector` of `float` numbers for the position of the summoned entity. |
+| entityType | [entitytype](../CommandTypes/type_entitytype.md) | Required | An `enum` of the entity to be summoned. |
+| nameTag | [id](../CommandTypes/type_id.md) | Required | A `string` of the entity name tag. |
+| spawnPos | [x y z](../CommandTypes/type_position_float.md) | Optional | A `vector` of `float` numbers for the position of the summoned entity. |
 
 ### With entityType, spawnPos, facing, lookAtPosition, spawnEvent, nameTag
 
@@ -58,12 +60,12 @@ Summon an `entity` with a `nametag` into an optional `spawn position`.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| entityType | [Entity Type](../CommandTypes/type_entitytype.md) | Required | An `enum` of the entity to be summoned. |
-| spawnPos | [Position (x y z)](../CommandTypes/type_position_float.md) | Optional | A `vector` of `float` numbers for the position of the summoned entity. |
+| entityType | [entitytype](../CommandTypes/type_entitytype.md) | Required | An `enum` of the entity to be summoned. |
+| spawnPos | [x y z](../CommandTypes/type_position_float.md) | Optional | A `vector` of `float` numbers for the position of the summoned entity. |
 | facing | teleportfacing | Required |  |
-| lookAtPosition | [Position (x y z)](../CommandTypes/type_position_float.md) | Required |  |
+| lookAtPosition | [x y z](../CommandTypes/type_position_float.md) | Required |  |
 | spawnEvent | entityevents | Optional | A `string` of the in-game event for the entity. |
-| nameTag | [Identifier](../CommandTypes/type_id.md) | Optional | A `string` of the entity name tag. |
+| nameTag | [id](../CommandTypes/type_id.md) | Optional | A `string` of the entity name tag. |
 
 ### With entityType, spawnPos, facing, spawnEvent, nameTag
 
@@ -71,12 +73,12 @@ Summon an `entity` with a `nametag` into an optional `spawn position`.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| entityType | [Entity Type](../CommandTypes/type_entitytype.md) | Required | An `enum` of the entity to be summoned. |
-| spawnPos | [Position (x y z)](../CommandTypes/type_position_float.md) | Optional | A `vector` of `float` numbers for the position of the summoned entity. |
+| entityType | [entitytype](../CommandTypes/type_entitytype.md) | Required | An `enum` of the entity to be summoned. |
+| spawnPos | [x y z](../CommandTypes/type_position_float.md) | Optional | A `vector` of `float` numbers for the position of the summoned entity. |
 | facing | teleportfacing | Required |  |
-| lookAtEntity | [Entity Selector](../CommandTypes/type_selection.md) | Required |  |
+| lookAtEntity | [target](../CommandTypes/type_selection.md) | Required |  |
 | spawnEvent | entityevents | Optional | A `string` of the in-game event for the entity. |
-| nameTag | [Identifier](../CommandTypes/type_id.md) | Optional | A `string` of the entity name tag. |
+| nameTag | [id](../CommandTypes/type_id.md) | Optional | A `string` of the entity name tag. |
 
 ## Examples
 
@@ -120,12 +122,12 @@ Summon an `entity` with a `nametag` into an optional `spawn position`.
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| entityType | [Entity Type](../CommandTypes/type_entitytype.md) | An `enum` of the entity to be summoned. |
+| entityType | [entitytype](../CommandTypes/type_entitytype.md) | An `enum` of the entity to be summoned. |
 | facing | teleportfacing |  |
-| lookAtEntity | [Entity Selector](../CommandTypes/type_selection.md) |  |
-| lookAtPosition | [Position (x y z)](../CommandTypes/type_position_float.md) |  |
-| nameTag | [Identifier](../CommandTypes/type_id.md) | A `string` of the entity name tag. |
+| lookAtEntity | [target](../CommandTypes/type_selection.md) |  |
+| lookAtPosition | [x y z](../CommandTypes/type_position_float.md) |  |
+| nameTag | [id](../CommandTypes/type_id.md) | A `string` of the entity name tag. |
 | spawnEvent | entityevents | A `string` of the in-game event for the entity. |
-| spawnPos | [Position (x y z)](../CommandTypes/type_position_float.md) | A `vector` of `float` numbers for the position of the summoned entity. |
-| xRot | [Rotation Value](../CommandTypes/type_rval.md) | The `float` degrees `x` to rotate a player when teleporting. |
-| yRot | [Rotation Value](../CommandTypes/type_rval.md) | The `float` degrees `y` to rotate a player when teleporting. |
+| spawnPos | [x y z](../CommandTypes/type_position_float.md) | A `vector` of `float` numbers for the position of the summoned entity. |
+| xRot | [rotation](../CommandTypes/type_rval.md) | The `float` degrees `x` to rotate a player when teleporting. |
+| yRot | [rotation](../CommandTypes/type_rval.md) | The `float` degrees `y` to rotate a player when teleporting. |

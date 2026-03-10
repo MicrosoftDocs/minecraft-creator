@@ -16,7 +16,7 @@
   "generated_doNotEdit": {
     "id": "minecraft:can_join_raid",
     "title": "Can Join Raid",
-    "description": "Determines that this entity can join an existing raid.",
+    "description": "Specifies if an entity can join a raid.",
     "fields": [],
     "samples": {}
   }

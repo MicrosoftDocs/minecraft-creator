@@ -1,6 +1,12 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
-  "fields": [],
+  "fields": [
+    {
+      "id": "component_groups",
+      "description": "List of component groups to add to the entity.",
+      "dataType": 2
+    }
+  ],
   "tags": [
     "entityevent"
   ],
