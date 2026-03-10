@@ -16,6 +16,12 @@ Plays a sound as part of an entity event response.
 > This item requires a format version of at least 1.21.50.
 
 
+## Play Sound Properties
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| sound | *not set* | String | The identifier of the sound to play. | 
+
 ## Samples
 
 

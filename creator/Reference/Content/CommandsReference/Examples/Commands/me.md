@@ -29,10 +29,10 @@ Display a `message`.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| message | [Message](../CommandTypes/type_message_root.md) | Required | A plain text or `string` that can include spaces and [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors)s. |
+| message | [message_root](../CommandTypes/type_message_root.md) | Required | A plain text or `string` that can include spaces and [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors)s. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| message | [Message](../CommandTypes/type_message_root.md) | A plain text or `string` that can include spaces and [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors)s. |
+| message | [message_root](../CommandTypes/type_message_root.md) | A plain text or `string` that can include spaces and [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors)s. |

@@ -27,14 +27,9 @@ Identifier of type of item that can be fed. If a namespace is not specified, 'mi
 
 Type: *string*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **resultItem**
 `read-only resultItem?: string;`
 
 Type ID of the resulting item after feeding has occurred. This will usually be empty but is used for scenarios such as feeding a Nautilus with a bucket of fish, where the result item will be an empty bucket.
 
 Type: *string*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end

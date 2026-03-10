@@ -29,20 +29,20 @@ Play a `sound` with optional `player`, `position`, `volume`, `pitch`, and `minim
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| sound | [Identifier](../CommandTypes/type_id.md) | Required | Required. A `string` that defines the sound. Should be defined in `sound.definitions.josn`. |
-| player | [Entity Selector](../CommandTypes/type_selection.md) | Optional | Optional. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
-| position | [Position (x y z)](../CommandTypes/type_position_float.md) | Optional | Optional. `Vector` [x y z] of the position sounds originate from. |
-| volume | [Value](../CommandTypes/type_val.md) | Optional | Optional. A `float` that specifies the volume. Between 0.0 and 1.0. Below 1.0 diminishes the sound. 0 is inaudible. Default: `1.0`. |
-| pitch | [Value](../CommandTypes/type_val.md) | Optional | Optional. A `float` that specifies the pitch. Must bet between 0.0 and 256. Default: `1.0`. |
-| minimumVolume | [Value](../CommandTypes/type_val.md) | Optional | A `float` that specifies the volume. Between 0.0 and 1.0. Default: `0.0`. |
+| sound | [id](../CommandTypes/type_id.md) | Required | Required. A `string` that defines the sound. Should be defined in `sound.definitions.josn`. |
+| player | [target](../CommandTypes/type_selection.md) | Optional | Optional. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| position | [x y z](../CommandTypes/type_position_float.md) | Optional | Optional. `Vector` [x y z] of the position sounds originate from. |
+| volume | [float](../CommandTypes/type_val.md) | Optional | Optional. A `float` that specifies the volume. Between 0.0 and 1.0. Below 1.0 diminishes the sound. 0 is inaudible. Default: `1.0`. |
+| pitch | [float](../CommandTypes/type_val.md) | Optional | Optional. A `float` that specifies the pitch. Must bet between 0.0 and 256. Default: `1.0`. |
+| minimumVolume | [float](../CommandTypes/type_val.md) | Optional | A `float` that specifies the volume. Between 0.0 and 1.0. Default: `0.0`. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| minimumVolume | [Value](../CommandTypes/type_val.md) | A `float` that specifies the volume. Between 0.0 and 1.0. Default: `0.0`. |
-| pitch | [Value](../CommandTypes/type_val.md) | Optional. A `float` that specifies the pitch. Must bet between 0.0 and 256. Default: `1.0`. |
-| player | [Entity Selector](../CommandTypes/type_selection.md) | Optional. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
-| position | [Position (x y z)](../CommandTypes/type_position_float.md) | Optional. `Vector` [x y z] of the position sounds originate from. |
-| sound | [Identifier](../CommandTypes/type_id.md) | Required. A `string` that defines the sound. Should be defined in `sound.definitions.josn`. |
-| volume | [Value](../CommandTypes/type_val.md) | Optional. A `float` that specifies the volume. Between 0.0 and 1.0. Below 1.0 diminishes the sound. 0 is inaudible. Default: `1.0`. |
+| minimumVolume | [float](../CommandTypes/type_val.md) | A `float` that specifies the volume. Between 0.0 and 1.0. Default: `0.0`. |
+| pitch | [float](../CommandTypes/type_val.md) | Optional. A `float` that specifies the pitch. Must bet between 0.0 and 256. Default: `1.0`. |
+| player | [target](../CommandTypes/type_selection.md) | Optional. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| position | [x y z](../CommandTypes/type_position_float.md) | Optional. `Vector` [x y z] of the position sounds originate from. |
+| sound | [id](../CommandTypes/type_id.md) | Required. A `string` that defines the sound. Should be defined in `sound.definitions.josn`. |
+| volume | [float](../CommandTypes/type_val.md) | Optional. A `float` that specifies the volume. Between 0.0 and 1.0. Below 1.0 diminishes the sound. 0 is inaudible. Default: `1.0`. |

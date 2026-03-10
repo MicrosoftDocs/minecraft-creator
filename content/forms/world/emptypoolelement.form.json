@@ -29,6 +29,10 @@
             "title": "Minecraft:empty pool element"
           },
           {
+            "id": "minecraft:feature_pool_element",
+            "title": "Minecraft:feature pool element"
+          },
+          {
             "id": "minecraft:single_pool_element",
             "title": "Minecraft:single pool element"
           }

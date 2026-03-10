@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.PlayerAimAssist Class
 description: Contents of the @minecraft/server.PlayerAimAssist class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlayerAimAssist Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 A container for APIs related to player aim-assist.
 

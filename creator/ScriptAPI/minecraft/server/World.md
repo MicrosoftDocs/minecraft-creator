@@ -78,6 +78,18 @@ Type: [*GameRules*](GameRules.md)
 
 Type: *boolean*
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **primitiveShapesManager**
+`read-only primitiveShapesManager: PrimitiveShapesManager;`
+
+Manager for adding and removing primitive text objects in the world.
+
+Type: [*PrimitiveShapesManager*](PrimitiveShapesManager.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **scoreboard**
 `read-only scoreboard: Scoreboard;`
 
@@ -85,17 +97,12 @@ Returns the general global scoreboard that applies to the world.
 
 Type: [*Scoreboard*](Scoreboard.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **seed**
 `read-only seed: string;`
 
 The world seed.
 
 Type: *string*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **structureManager**
 `read-only structureManager: StructureManager;`
@@ -104,7 +111,6 @@ Returns the manager for [*@minecraft/server.Structure*](../../../scriptapi/minec
 
 Type: [*StructureManager*](StructureManager.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **tickingAreaManager**
 `read-only tickingAreaManager: TickingAreaManager;`
 
@@ -112,19 +118,13 @@ Manager for adding, removing and querying pack specific ticking areas.
 
 Type: [*TickingAreaManager*](TickingAreaManager.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
 ## Methods
 ::: moniker range="=minecraft-bedrock-experimental"
 - [broadcastClientMessage](#broadcastclientmessage)
 ::: moniker-end
 - [clearDynamicProperties](#cleardynamicproperties)
 - [getAbsoluteTime](#getabsolutetime)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getAimAssist](#getaimassist)
-::: moniker-end
 - [getAllPlayers](#getallplayers)
 - [getDay](#getday)
 - [getDefaultSpawnLocation](#getdefaultspawnlocation)
@@ -191,7 +191,6 @@ Returns the absolute time since the start of the world.
 
 **Returns** *number*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getAimAssist**
 `
 getAimAssist(): AimAssistRegistry
@@ -200,10 +199,6 @@ getAimAssist(): AimAssistRegistry
 The aim-assist presets and categories that can be used in the world.
 
 **Returns** [*AimAssistRegistry*](AimAssistRegistry.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **getAllPlayers**
 `

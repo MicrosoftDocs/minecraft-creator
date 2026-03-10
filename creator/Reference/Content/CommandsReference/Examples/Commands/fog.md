@@ -33,10 +33,10 @@ Add fog setting file to a particular player victim with a `fogId` or `userProvid
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| victim | [Entity Selector](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which player perceives the fog. |
+| victim | [target](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which player perceives the fog. |
 | mode | add | Required | Delete mode |
-| fogId | [Identifier](../CommandTypes/type_id.md) | Required | A `string` that specifies the fog. |
-| userProvidedId | [Identifier](../CommandTypes/type_id.md) | Required | Required. A `string` that identifies the fog to use. |
+| fogId | [id](../CommandTypes/type_id.md) | Required | A `string` that specifies the fog. |
+| userProvidedId | [id](../CommandTypes/type_id.md) | Required | Required. A `string` that identifies the fog to use. |
 
 ### Remove fog
 
@@ -46,15 +46,15 @@ Remove fog setting file to a particular player victim with a `userProvidedId` to
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| victim | [Entity Selector](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which player perceives the fog. |
+| victim | [target](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which player perceives the fog. |
 | mode | add | Required | Delete mode |
-| userProvidedId | [Identifier](../CommandTypes/type_id.md) | Required | Required. A `string` that identifies the fog to use. |
+| userProvidedId | [id](../CommandTypes/type_id.md) | Required | Required. A `string` that identifies the fog to use. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| fogId | [Identifier](../CommandTypes/type_id.md) | A `string` that specifies the fog. |
+| fogId | [id](../CommandTypes/type_id.md) | A `string` that specifies the fog. |
 | mode | add | Delete mode |
-| userProvidedId | [Identifier](../CommandTypes/type_id.md) | Required. A `string` that identifies the fog to use. |
-| victim | [Entity Selector](../CommandTypes/type_selection.md) | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which player perceives the fog. |
+| userProvidedId | [id](../CommandTypes/type_id.md) | Required. A `string` that identifies the fog to use. |
+| victim | [target](../CommandTypes/type_selection.md) | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify which player perceives the fog. |

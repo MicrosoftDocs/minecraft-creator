@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.EntityHealEventOptions Interface
 description: Contents of the @minecraft/server.EntityHealEventOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityHealEventOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains optional parameters for registering an entity heal event.
 

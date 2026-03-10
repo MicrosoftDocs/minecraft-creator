@@ -20,6 +20,9 @@ Tracks content types and component usage across JSON files in the project. Used 
 | [JSONTAGS106](#jsontags106) | Sound Definition | ℹ️ Info |  |
 | [JSONTAGS107](#jsontags107) | Music Definition | ℹ️ Info |  |
 | [JSONTAGS108](#jsontags108) | Sound File | ℹ️ Info |  |
+| [JSONTAGS109](#jsontags109) | Biome Behavior Type | ℹ️ Info |  |
+| [JSONTAGS110](#jsontags110) | Biome Client Type | ℹ️ Info |  |
+| [JSONTAGS111](#jsontags111) | Particle Type | ℹ️ Info |  |
 
 ---
 ## Rule Details
@@ -103,3 +106,33 @@ Tracks individual sound file references across sound definitions.
 
 #### Technical Details
 Data contains the sound file path.
+
+### JSONTAGS109
+**ℹ️ Biome Behavior Type**  
+**Severity**: Info
+
+#### What This Checks
+Tracks biome behavior components defined in behavior pack biome JSON files (minecraft:biome).
+
+#### Technical Details
+Data contains biome behavior component identifiers.
+
+### JSONTAGS110
+**ℹ️ Biome Client Type**  
+**Severity**: Info
+
+#### What This Checks
+Tracks biome client components defined in resource pack biome JSON files (minecraft:client_biome).
+
+#### Technical Details
+Data contains biome client component identifiers.
+
+### JSONTAGS111
+**ℹ️ Particle Type**  
+**Severity**: Info
+
+#### What This Checks
+Tracks particle effect components from particle JSON files, including emitter and particle components.
+
+#### Technical Details
+Data contains particle effect component identifiers.

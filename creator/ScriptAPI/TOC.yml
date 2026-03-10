@@ -238,6 +238,14 @@
       href: minecraft/server/BlockComponentStepOnEvent.md
     - name: BlockComponentTickEvent
       href: minecraft/server/BlockComponentTickEvent.md
+    - name: BlockContainerClosedAfterEvent
+      href: minecraft/server/BlockContainerClosedAfterEvent.md
+    - name: BlockContainerClosedAfterEventSignal
+      href: minecraft/server/BlockContainerClosedAfterEventSignal.md
+    - name: BlockContainerOpenedAfterEvent
+      href: minecraft/server/BlockContainerOpenedAfterEvent.md
+    - name: BlockContainerOpenedAfterEventSignal
+      href: minecraft/server/BlockContainerOpenedAfterEventSignal.md
     - name: BlockCustomComponentInstance
       href: minecraft/server/BlockCustomComponentInstance.md
     - name: BlockEvent
@@ -378,12 +386,22 @@
       href: minecraft/server/EntityColorComponent.md
     - name: EntityComponent
       href: minecraft/server/EntityComponent.md
+    - name: EntityContainerClosedAfterEvent
+      href: minecraft/server/EntityContainerClosedAfterEvent.md
+    - name: EntityContainerClosedAfterEventSignal
+      href: minecraft/server/EntityContainerClosedAfterEventSignal.md
+    - name: EntityContainerOpenedAfterEvent
+      href: minecraft/server/EntityContainerOpenedAfterEvent.md
+    - name: EntityContainerOpenedAfterEventSignal
+      href: minecraft/server/EntityContainerOpenedAfterEventSignal.md
     - name: EntityDefinitionFeedItem
       href: minecraft/server/EntityDefinitionFeedItem.md
     - name: EntityDieAfterEvent
       href: minecraft/server/EntityDieAfterEvent.md
     - name: EntityDieAfterEventSignal
       href: minecraft/server/EntityDieAfterEventSignal.md
+    - name: EntityEnderInventoryComponent
+      href: minecraft/server/EntityEnderInventoryComponent.md
     - name: EntityEquippableComponent
       href: minecraft/server/EntityEquippableComponent.md
     - name: EntityExhaustionComponent
@@ -856,6 +874,10 @@
       href: minecraft/server/PressurePlatePushAfterEvent.md
     - name: PressurePlatePushAfterEventSignal
       href: minecraft/server/PressurePlatePushAfterEventSignal.md
+    - name: PrimitiveShape
+      href: minecraft/server/PrimitiveShape.md
+    - name: PrimitiveShapesManager
+      href: minecraft/server/PrimitiveShapesManager.md
     - name: ProjectileHitBlockAfterEvent
       href: minecraft/server/ProjectileHitBlockAfterEvent.md
     - name: ProjectileHitBlockAfterEventSignal
@@ -950,6 +972,8 @@
       href: minecraft/server/TargetBlockHitAfterEvent.md
     - name: TargetBlockHitAfterEventSignal
       href: minecraft/server/TargetBlockHitAfterEventSignal.md
+    - name: TextPrimitive
+      href: minecraft/server/TextPrimitive.md
     - name: TickingAreaManager
       href: minecraft/server/TickingAreaManager.md
     - name: Trigger
@@ -992,6 +1016,8 @@
       href: minecraft/server/BiomeSearchOptions.md
     - name: BlockBoundingBox
       href: minecraft/server/BlockBoundingBox.md
+    - name: BlockContainerAccessEventOptions
+      href: minecraft/server/BlockContainerAccessEventOptions.md
     - name: BlockCustomComponent
       href: minecraft/server/BlockCustomComponent.md
     - name: BlockEventOptions
@@ -1028,6 +1054,10 @@
       href: minecraft/server/CameraTargetOptions.md
     - name: CompoundBlockVolumeItem
       href: minecraft/server/CompoundBlockVolumeItem.md
+    - name: ContainerAccessSource
+      href: minecraft/server/ContainerAccessSource.md
+    - name: ContainerAccessSourceFilter
+      href: minecraft/server/ContainerAccessSourceFilter.md
     - name: ContainerRules
       href: minecraft/server/ContainerRules.md
     - name: CustomCommand
@@ -1048,6 +1078,8 @@
       href: minecraft/server/EntityApplyDamageByProjectileOptions.md
     - name: EntityApplyDamageOptions
       href: minecraft/server/EntityApplyDamageOptions.md
+    - name: EntityContainerAccessEventOptions
+      href: minecraft/server/EntityContainerAccessEventOptions.md
     - name: EntityDamageSource
       href: minecraft/server/EntityDamageSource.md
     - name: EntityDataDrivenTriggerEventOptions
@@ -1348,6 +1380,8 @@
       href: minecraft/server-editor/ProjectExportType.md
     - name: PropertyItemType
       href: minecraft/server-editor/PropertyItemType.md
+    - name: RootPaneLocation
+      href: minecraft/server-editor/RootPaneLocation.md
     - name: SelectionVolumeEventType
       href: minecraft/server-editor/SelectionVolumeEventType.md
     - name: SpeedSettingsProperty
@@ -1644,6 +1678,8 @@
       href: minecraft/server-editor/ICollectionTreePropertyItem.md
     - name: ICollectionTreePropertyItemOptions
       href: minecraft/server-editor/ICollectionTreePropertyItemOptions.md
+    - name: ICollectionTreeViewControlPaneOptions
+      href: minecraft/server-editor/ICollectionTreeViewControlPaneOptions.md
     - name: IColorPickerPropertyItem
       href: minecraft/server-editor/IColorPickerPropertyItem.md
     - name: IColorPickerPropertyItemOptions
@@ -1704,10 +1740,12 @@
       href: minecraft/server-editor/IListPaneSlotOptions.md
     - name: IListPaneTextEntry
       href: minecraft/server-editor/IListPaneTextEntry.md
-    - name: IListPaneViewControlPane
-      href: minecraft/server-editor/IListPaneViewControlPane.md
     - name: IListPaneViewControlPaneOptions
       href: minecraft/server-editor/IListPaneViewControlPaneOptions.md
+    - name: IListViewControlPane
+      href: minecraft/server-editor/IListViewControlPane.md
+    - name: IListViewControlPaneOptions
+      href: minecraft/server-editor/IListViewControlPaneOptions.md
     - name: IMenu
       href: minecraft/server-editor/IMenu.md
     - name: IMenuContainer

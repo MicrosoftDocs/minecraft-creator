@@ -2,6 +2,8 @@
   href: ../TriggerList.md
 - name: minecraft:on_death
   href: minecraftTrigger_on_death.md
+- name: minecraft:on_equipment_changed
+  href: minecraftTrigger_on_equipment_changed.md
 - name: minecraft:on_friendly_anger
   href: minecraftTrigger_on_friendly_anger.md
 - name: minecraft:on_hurt

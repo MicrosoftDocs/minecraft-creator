@@ -17,32 +17,29 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 | **Permission Level** | Game Directors |
 | **Requires Cheats** | Yes |
 
-## Syntax Overview
+## Sub-commands
 
-`/recipe <give: give> <player: target> <recipe: unlockablerecipevalues>`
+- [**give**](#give)
+- [**take**](#take)
 
-`/recipe <take: take> <player: target> <recipe: unlockablerecipevalues>`
-
-## Usage
-
-### Gives a player a particular vanilla item that they are allowed to craft via recipe.
+## give
 
 `/recipe <give: give> <player: target> <recipe: unlockablerecipevalues>`
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | give | give | Required |  |
-| player | [Entity Selector](../CommandTypes/type_selection.md) | Required |  |
+| player | [target](../CommandTypes/type_selection.md) | Required |  |
 | recipe | unlockablerecipevalues | Required |  |
 
-### Removes a particular vanilla item that a player can craft via a recipe.
+## take
 
 `/recipe <take: take> <player: target> <recipe: unlockablerecipevalues>`
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | take | take | Required |  |
-| player | [Entity Selector](../CommandTypes/type_selection.md) | Required |  |
+| player | [target](../CommandTypes/type_selection.md) | Required |  |
 | recipe | unlockablerecipevalues | Required |  |
 
 ## Arguments Reference
@@ -50,6 +47,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 | Argument | Type | Description |
 |:---------|:-----|:------------|
 | give | give |  |
-| player | [Entity Selector](../CommandTypes/type_selection.md) |  |
+| player | [target](../CommandTypes/type_selection.md) |  |
 | recipe | unlockablerecipevalues |  |
 | take | take |  |

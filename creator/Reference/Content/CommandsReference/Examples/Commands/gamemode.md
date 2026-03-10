@@ -33,8 +33,8 @@ Set a player's game mode using the gamemode `enum`.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| gameMode | [Game Mode](../CommandTypes/type_gamemode.md) | Required | Game mode enum |
-| player | [Entity Selector](../CommandTypes/type_selection.md) | Optional | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| gameMode | [gamemode](../CommandTypes/type_gamemode.md) | Required | Game mode enum |
+| player | [target](../CommandTypes/type_selection.md) | Optional | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
 
 ### Set game mode with integer
 
@@ -44,12 +44,12 @@ Set a player's game mode using an `integer`.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| gameMode | [Game Mode](../CommandTypes/type_gamemode.md) | Required | Game mode enum |
-| player | [Entity Selector](../CommandTypes/type_selection.md) | Optional | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| gameMode | [gamemode](../CommandTypes/type_gamemode.md) | Required | Game mode enum |
+| player | [target](../CommandTypes/type_selection.md) | Optional | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| gameMode | [Game Mode](../CommandTypes/type_gamemode.md) | Game mode enum |
-| player | [Entity Selector](../CommandTypes/type_selection.md) | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| gameMode | [gamemode](../CommandTypes/type_gamemode.md) | Game mode enum |
+| player | [target](../CommandTypes/type_selection.md) | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |

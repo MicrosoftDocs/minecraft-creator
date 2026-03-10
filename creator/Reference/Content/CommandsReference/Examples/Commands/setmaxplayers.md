@@ -29,10 +29,10 @@ Set the maximum number of players for this game session.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| maxPlayers | [Integer](../CommandTypes/type_int.md) | Required | An `integer` that defines the new max number of players. Subject to the maximum number of connections the game allows. |
+| maxPlayers | [int](../CommandTypes/type_int.md) | Required | An `integer` that defines the new max number of players. Subject to the maximum number of connections the game allows. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| maxPlayers | [Integer](../CommandTypes/type_int.md) | An `integer` that defines the new max number of players. Subject to the maximum number of connections the game allows. |
+| maxPlayers | [int](../CommandTypes/type_int.md) | An `integer` that defines the new max number of players. Subject to the maximum number of connections the game allows. |

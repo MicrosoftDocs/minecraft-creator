@@ -17,15 +17,12 @@ Sets or clears control schemes for the camera(s) of selected player(s).
 | **Permission Level** | Game Directors |
 | **Requires Cheats** | Yes |
 
-## Syntax Overview
+## Sub-commands
 
-`/controlscheme <players: target> <set: cameracontrolschemeset> <control scheme: controlscheme>`
+- [**set**](#set)
+- [**clear**](#clear)
 
-`/controlscheme <players: target> <clear: cameracontrolschemeclear>`
-
-## Usage
-
-### Sets control scheme
+## set
 
 `/controlscheme <players: target> <set: cameracontrolschemeset> <control scheme: controlscheme>`
 
@@ -33,11 +30,11 @@ Sets the specified control scheme for the camera(s) of selected player(s).
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of player(s). |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of player(s). |
 | set | cameracontrolschemeset | Required |  |
 | control scheme | controlscheme | Required | The control scheme to apply. |
 
-### Clears control scheme
+## clear
 
 `/controlscheme <players: target> <clear: cameracontrolschemeclear>`
 
@@ -45,7 +42,7 @@ Clears the current control scheme for the camera(s) of selected player(s), reset
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| players | [Entity Selector](../CommandTypes/type_selection.md) | Required | A target selector of player(s). |
+| players | [target](../CommandTypes/type_selection.md) | Required | A target selector of player(s). |
 | clear | cameracontrolschemeclear | Required |  |
 
 ## Arguments Reference
@@ -54,5 +51,5 @@ Clears the current control scheme for the camera(s) of selected player(s), reset
 |:---------|:-----|:------------|
 | clear | cameracontrolschemeclear |  |
 | control scheme | controlscheme | The control scheme to apply. |
-| players | [Entity Selector](../CommandTypes/type_selection.md) | A target selector of player(s). |
+| players | [target](../CommandTypes/type_selection.md) | A target selector of player(s). |
 | set | cameracontrolschemeset |  |

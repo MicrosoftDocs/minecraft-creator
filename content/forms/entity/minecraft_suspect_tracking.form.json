@@ -16,7 +16,7 @@
   "generated_doNotEdit": {
     "id": "minecraft:suspect_tracking",
     "title": "Suspect Tracking",
-    "description": "Allows this entity to remember suspicious locations",
+    "description": "Allows this entity to remember suspicious locations.",
     "fields": [],
     "samples": {
       "/vanilla/behavior_pack/entities/warden.json": [

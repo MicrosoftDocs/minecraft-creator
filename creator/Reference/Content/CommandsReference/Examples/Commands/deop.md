@@ -29,10 +29,10 @@ Revoke operator status from a player.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| player | [Entity Selector](../CommandTypes/type_selection.md) | Required | Required. Specifies which player to remove operator from. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| player | [target](../CommandTypes/type_selection.md) | Required | Required. Specifies which player to remove operator from. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| player | [Entity Selector](../CommandTypes/type_selection.md) | Required. Specifies which player to remove operator from. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| player | [target](../CommandTypes/type_selection.md) | Required. Specifies which player to remove operator from. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |

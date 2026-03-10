@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.TickingAreaManager Class
 description: Contents of the @minecraft/server.TickingAreaManager class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # TickingAreaManager Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 This manager is used to add, remove or query temporary ticking areas to a dimension. These ticking areas are limited by a fixed amount of ticking chunks per pack independent of the command limits. Cannot modify or query ticking areas added by other packs or commands.
 

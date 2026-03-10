@@ -41,6 +41,8 @@ Tracks and displays scores for various objectives. See more information about it
 
 `/scoreboard <category: scoreboardobjectivescategory> operation <targetName: target> <targetObjective: scoreboardobjectives> <operation: operator> <selector: target> <objective: scoreboardobjectives>`
 
+## Usage
+
 ### Add objective
 
 `/scoreboard <category: scoreboardobjectivescategory> add <objective: scoreboardobjectives> <criteria: scoreboardcriteria> [displayName: id]`
@@ -52,7 +54,7 @@ Add an objective for the game to track. This example adds `dummy` for the game t
 | category | scoreboardobjectivescategory | Required |  |
 | objective | scoreboardobjectives | Required | Objective for the game to track |
 | criteria | scoreboardcriteria | Required |  |
-| displayName | [Identifier](../CommandTypes/type_id.md) | Optional | A `string` for the display name. Default: `<objective>`. |
+| displayName | [id](../CommandTypes/type_id.md) | Optional | A `string` for the display name. Default: `<objective>`. |
 
 ### Remove objectives
 
@@ -109,7 +111,7 @@ List players on scoreboard.
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | category | scoreboardobjectivescategory | Required |  |
-| playername | [Entity Selector](../CommandTypes/type_selection.md) | Optional | A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the score havers. |
+| playername | [target](../CommandTypes/type_selection.md) | Optional | A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the score havers. |
 
 ### Reset player objective
 
@@ -120,7 +122,7 @@ List players on scoreboard.
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | category | scoreboardobjectivescategory | Required |  |
-| player | [Entity Selector](../CommandTypes/type_selection.md) | Required | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| player | [target](../CommandTypes/type_selection.md) | Required | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
 | objective | scoreboardobjectives | Optional | Objective for the game to track |
 
 ### Test score
@@ -132,7 +134,7 @@ List players on scoreboard.
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | category | scoreboardobjectivescategory | Required |  |
-| player | [Entity Selector](../CommandTypes/type_selection.md) | Required | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| player | [target](../CommandTypes/type_selection.md) | Required | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
 | objective | scoreboardobjectives | Required | Objective for the game to track |
 | min | wildcardint | Required | Min wildcard int |
 | max | wildcardint | Optional | Max wildcard int |
@@ -146,7 +148,7 @@ Give a player a random score within a range.
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | category | scoreboardobjectivescategory | Required |  |
-| player | [Entity Selector](../CommandTypes/type_selection.md) | Required | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| player | [target](../CommandTypes/type_selection.md) | Required | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
 | objective | scoreboardobjectives | Required | Objective for the game to track |
 | min | wildcardint | Required | Min wildcard int |
 | max | wildcardint | Required | Max wildcard int |
@@ -160,9 +162,9 @@ Change a `player`'s `score` using a math `operation` by a `count`.
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | category | scoreboardobjectivescategory | Required |  |
-| player | [Entity Selector](../CommandTypes/type_selection.md) | Required | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| player | [target](../CommandTypes/type_selection.md) | Required | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
 | objective | scoreboardobjectives | Required | Objective for the game to track |
-| count | [Integer](../CommandTypes/type_int.md) | Required | An `integer` to set the score to. |
+| count | [int](../CommandTypes/type_int.md) | Required | An `integer` to set the score to. |
 
 ### Change score, math operation
 
@@ -173,10 +175,10 @@ Change a `player`'s `score` using a math `operation` on another player's score.
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | category | scoreboardobjectivescategory | Required |  |
-| targetName | [Entity Selector](../CommandTypes/type_selection.md) | Required | A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the score havers. |
+| targetName | [target](../CommandTypes/type_selection.md) | Required | A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the score havers. |
 | targetObjective | scoreboardobjectives | Required |  |
-| operation | [Scoreboard Operation](../CommandTypes/type_operator.md) | Required | A command operator of the `operation` to be applied. Must be `=`, `+=`, `-=`, `*=`, `/=`, `*/`, `<>`, `<`, or. `>`. |
-| selector | [Entity Selector](../CommandTypes/type_selection.md) | Required | A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the source score havers to use as source inputs. |
+| operation | [operator](../CommandTypes/type_operator.md) | Required | A command operator of the `operation` to be applied. Must be `=`, `+=`, `-=`, `*=`, `/=`, `*/`, `<>`, `<`, or. `>`. |
+| selector | [target](../CommandTypes/type_selection.md) | Required | A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the source score havers to use as source inputs. |
 | objective | scoreboardobjectives | Required | Objective for the game to track |
 
 ## Examples
@@ -228,17 +230,17 @@ Change a `player`'s `score` using a math `operation` on another player's score.
 | Argument | Type | Description |
 |:---------|:-----|:------------|
 | category | scoreboardobjectivescategory |  |
-| count | [Integer](../CommandTypes/type_int.md) | An `integer` to set the score to. |
+| count | [int](../CommandTypes/type_int.md) | An `integer` to set the score to. |
 | criteria | scoreboardcriteria |  |
-| displayName | [Identifier](../CommandTypes/type_id.md) | A `string` for the display name. Default: `<objective>`. |
+| displayName | [id](../CommandTypes/type_id.md) | A `string` for the display name. Default: `<objective>`. |
 | displaySlot | scoreboarddisplayslotsortable | Scoreboard display slot sortable |
 | max | wildcardint | Max wildcard int |
 | min | wildcardint | Min wildcard int |
 | objective | scoreboardobjectives | Objective for the game to track |
-| operation | [Scoreboard Operation](../CommandTypes/type_operator.md) | A command operator of the `operation` to be applied. Must be `=`, `+=`, `-=`, `*=`, `/=`, `*/`, `<>`, `<`, or. `>`. |
-| player | [Entity Selector](../CommandTypes/type_selection.md) | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
-| playername | [Entity Selector](../CommandTypes/type_selection.md) | A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the score havers. |
-| selector | [Entity Selector](../CommandTypes/type_selection.md) | A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the source score havers to use as source inputs. |
+| operation | [operator](../CommandTypes/type_operator.md) | A command operator of the `operation` to be applied. Must be `=`, `+=`, `-=`, `*=`, `/=`, `*/`, `<>`, `<`, or. `>`. |
+| player | [target](../CommandTypes/type_selection.md) | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| playername | [target](../CommandTypes/type_selection.md) | A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the score havers. |
+| selector | [target](../CommandTypes/type_selection.md) | A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the source score havers to use as source inputs. |
 | sortOrder | scoreboardsortorder | An `enum` of `ascending` or `descending`. |
-| targetName | [Entity Selector](../CommandTypes/type_selection.md) | A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the score havers. |
+| targetName | [target](../CommandTypes/type_selection.md) | A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the score havers. |
 | targetObjective | scoreboardobjectives |  |

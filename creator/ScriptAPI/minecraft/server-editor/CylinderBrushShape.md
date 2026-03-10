@@ -112,12 +112,13 @@ calculateBounds(): minecraftserver.BlockBoundingBox
 
 ### **createSettingsPane**
 `
-createSettingsPane(parentPane: IPropertyPane, onSettingsChange?: () => void): ISubPanePropertyItem
+createSettingsPane(parentPane: IPropertyPane, onSettingsChange?: () => void, flatLayout?: boolean): ISubPanePropertyItem
 `
 
 #### **Parameters**
 - **parentPane**: *IPropertyPane*
 - **onSettingsChange**?: () => *void*
+- **flatLayout**?: *boolean*
 
 **Returns** *ISubPanePropertyItem*
 

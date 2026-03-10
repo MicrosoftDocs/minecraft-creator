@@ -29,6 +29,8 @@ Makes entities ride other entities, stops entities from riding, makes rides evic
 
 `/ride <riders: target> <mode: ridemodestart> <entityType: entitytype> [rideRules: riderules] [spawnEvent: id] [nameTag: id]`
 
+## Usage
+
 ### Start ride
 
 `/ride <riders: target> <mode: ridemodestart> <ride: target> [teleportRules: teleportrules] [howToFill: filltype]`
@@ -37,9 +39,9 @@ Start `ride` with `riders`, something to `ride`, and optional `teleport rules` a
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| riders | [Entity Selector](../CommandTypes/type_selection.md) | Required | Specifies riders using player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors)s. |
+| riders | [target](../CommandTypes/type_selection.md) | Required | Specifies riders using player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors)s. |
 | mode | ridemodestart | Required |  |
-| ride | [Entity Selector](../CommandTypes/type_selection.md) | Required | Specifies the entity to ride on. A player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
+| ride | [target](../CommandTypes/type_selection.md) | Required | Specifies the entity to ride on. A player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
 | teleportRules | teleportrules | Optional | Either `teleport_ride` or `teleport_rider` (default). |
 | howToFill | filltype | Optional | One of `if_group_fits` to check whether riders can ride and only makes them ride if possible. Or `until_full` which makes them ride until rides is full. Default: `until_full`. |
 
@@ -51,7 +53,7 @@ Stop `riders` from riding.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| riders | [Entity Selector](../CommandTypes/type_selection.md) | Required | Specifies riders using player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors)s. |
+| riders | [target](../CommandTypes/type_selection.md) | Required | Specifies riders using player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors)s. |
 | mode | ridemodestart | Required |  |
 
 ### Evict rider
@@ -62,7 +64,7 @@ Evict riders from ride.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| rides | [Entity Selector](../CommandTypes/type_selection.md) | Required | Specifies the ridden entities. Must be a player name or entity selector. |
+| rides | [target](../CommandTypes/type_selection.md) | Required | Specifies the ridden entities. Must be a player name or entity selector. |
 | mode | ridemodestart | Required |  |
 
 ### Summon ride, optional spawn event
@@ -73,11 +75,11 @@ Summon an `entity` to ride with optional `spawn event` and `nametag`.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| rides | [Entity Selector](../CommandTypes/type_selection.md) | Required | Specifies the ridden entities. Must be a player name or entity selector. |
+| rides | [target](../CommandTypes/type_selection.md) | Required | Specifies the ridden entities. Must be a player name or entity selector. |
 | mode | ridemodestart | Required |  |
-| entityType | [Entity Type](../CommandTypes/type_entitytype.md) | Required | Specifies entities to summon. Must be the name`ID`of something that can be summoned. |
-| spawnEvent | [Identifier](../CommandTypes/type_id.md) | Optional | Specifies the in-game event to call the summoned entities. Must be a spawn event in behavior pack. |
-| nameTag | [Identifier](../CommandTypes/type_id.md) | Optional | Specifies the name of summoned entities. |
+| entityType | [entitytype](../CommandTypes/type_entitytype.md) | Required | Specifies entities to summon. Must be the name`ID`of something that can be summoned. |
+| spawnEvent | [id](../CommandTypes/type_id.md) | Optional | Specifies the in-game event to call the summoned entities. Must be a spawn event in behavior pack. |
+| nameTag | [id](../CommandTypes/type_id.md) | Optional | Specifies the name of summoned entities. |
 
 ### Summon rider, optional ride rules, spawn event
 
@@ -87,24 +89,24 @@ Summon a ride of `entity` type with optional `ride rules`, `spawn event`, and `n
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| riders | [Entity Selector](../CommandTypes/type_selection.md) | Required | Specifies riders using player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors)s. |
+| riders | [target](../CommandTypes/type_selection.md) | Required | Specifies riders using player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors)s. |
 | mode | ridemodestart | Required |  |
-| entityType | [Entity Type](../CommandTypes/type_entitytype.md) | Required | Specifies entities to summon. Must be the name`ID`of something that can be summoned. |
+| entityType | [entitytype](../CommandTypes/type_entitytype.md) | Required | Specifies entities to summon. Must be the name`ID`of something that can be summoned. |
 | rideRules | riderules | Optional | Ride rules |
-| spawnEvent | [Identifier](../CommandTypes/type_id.md) | Optional | Specifies the in-game event to call the summoned entities. Must be a spawn event in behavior pack. |
-| nameTag | [Identifier](../CommandTypes/type_id.md) | Optional | Specifies the name of summoned entities. |
+| spawnEvent | [id](../CommandTypes/type_id.md) | Optional | Specifies the in-game event to call the summoned entities. Must be a spawn event in behavior pack. |
+| nameTag | [id](../CommandTypes/type_id.md) | Optional | Specifies the name of summoned entities. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| entityType | [Entity Type](../CommandTypes/type_entitytype.md) | Specifies entities to summon. Must be the name`ID`of something that can be summoned. |
+| entityType | [entitytype](../CommandTypes/type_entitytype.md) | Specifies entities to summon. Must be the name`ID`of something that can be summoned. |
 | howToFill | filltype | One of `if_group_fits` to check whether riders can ride and only makes them ride if possible. Or `until_full` which makes them ride until rides is full. Default: `until_full`. |
 | mode | ridemodestart |  |
-| nameTag | [Identifier](../CommandTypes/type_id.md) | Specifies the name of summoned entities. |
-| ride | [Entity Selector](../CommandTypes/type_selection.md) | Specifies the entity to ride on. A player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
-| riders | [Entity Selector](../CommandTypes/type_selection.md) | Specifies riders using player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors)s. |
+| nameTag | [id](../CommandTypes/type_id.md) | Specifies the name of summoned entities. |
+| ride | [target](../CommandTypes/type_selection.md) | Specifies the entity to ride on. A player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
+| riders | [target](../CommandTypes/type_selection.md) | Specifies riders using player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors)s. |
 | rideRules | riderules | Ride rules |
-| rides | [Entity Selector](../CommandTypes/type_selection.md) | Specifies the ridden entities. Must be a player name or entity selector. |
-| spawnEvent | [Identifier](../CommandTypes/type_id.md) | Specifies the in-game event to call the summoned entities. Must be a spawn event in behavior pack. |
+| rides | [target](../CommandTypes/type_selection.md) | Specifies the ridden entities. Must be a player name or entity selector. |
+| spawnEvent | [id](../CommandTypes/type_id.md) | Specifies the in-game event to call the summoned entities. Must be a spawn event in behavior pack. |
 | teleportRules | teleportrules | Either `teleport_ride` or `teleport_rider` (default). |

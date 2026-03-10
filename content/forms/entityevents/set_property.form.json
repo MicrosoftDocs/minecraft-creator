@@ -1,9 +1,7 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "set_property",
-  "tags": [
-    "entityevent"
-  ],
+  "tags": ["entityevent"],
   "summarizer": {
     "phrases": [
       {
@@ -18,7 +16,18 @@
   },
   "title": "Set Entity Property",
   "description": "Sets the value of an entity property. The property must be defined in the 'properties' section of the file.",
-  "fields": [],
+  "fields": [
+    {
+      "id": "property",
+      "description": "The property to set on the entity.",
+      "dataType": 2
+    },
+    {
+      "id": "value",
+      "description": "The value to assign to the property.",
+      "dataType": 2
+    }
+  ],
   "samples": {
     "samples": [
       {

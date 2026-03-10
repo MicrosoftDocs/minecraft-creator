@@ -30,6 +30,8 @@
   href: has_damaged_equipment.md
 - name: has_equipment
   href: has_equipment.md
+- name: has_equipment_block_tag
+  href: has_equipment_block_tag.md
 - name: has_equipment_tag
   href: has_equipment_tag.md
 - name: has_item_with_component
@@ -42,6 +44,8 @@
   href: has_property.md
 - name: has_ranged_weapon
   href: has_ranged_weapon.md
+- name: has_same_equipment_in_slot_as
+  href: has_same_equipment_in_slot_as.md
 - name: has_silk_touch
   href: has_silk_touch.md
 - name: has_tag

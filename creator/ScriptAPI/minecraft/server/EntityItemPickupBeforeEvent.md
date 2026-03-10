@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.EntityItemPickupBeforeEvent Class
 description: Contents of the @minecraft/server.EntityItemPickupBeforeEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityItemPickupBeforeEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains information related to an entity picking up an item.
 

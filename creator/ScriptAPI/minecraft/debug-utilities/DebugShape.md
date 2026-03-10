@@ -28,11 +28,11 @@ The entity this shape is attached to. When set, this shape will copy the root lo
 Type: [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md)
 
 ### **color**
-`color: minecraftserver.RGB;`
+`color: minecraftserver.RGBA;`
 
 The color of the shape.
 
-Type: [*@minecraft/server.RGB*](../../../scriptapi/minecraft/server/RGB.md)
+Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
 ### **dimension**
 `read-only dimension: minecraftserver.Dimension;`

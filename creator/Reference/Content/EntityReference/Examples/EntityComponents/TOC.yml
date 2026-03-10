@@ -380,6 +380,8 @@
   href: minecraftComponent_underwater_mount_breathing.md
 - name: minecraft:underwater_movement
   href: minecraftComponent_underwater_movement.md
+- name: minecraft:uses_legacy_friction
+  href: minecraftComponent_uses_legacy_friction.md
 - name: minecraft:variable_max_auto_step
   href: minecraftComponent_variable_max_auto_step.md
 - name: minecraft:variant
