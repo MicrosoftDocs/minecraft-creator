@@ -1,0 +1,38 @@
+{
+  "id": "FeaturePoolElement",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "FeaturePoolElement",
+    "title": "World FeaturePoolElement",
+    "fields": [
+      {
+        "id": "element_type",
+        "title": "ElementType",
+        "description": "The type of element.",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "minecraft:empty_pool_element",
+            "title": "Minecraft:empty pool element"
+          },
+          {
+            "id": "minecraft:feature_pool_element",
+            "title": "Minecraft:feature pool element"
+          },
+          {
+            "id": "minecraft:single_pool_element",
+            "title": "Minecraft:single pool element"
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "feature",
+        "title": "Feature",
+        "description": "The identifier of the feature to place.",
+        "dataType": 16,
+        "isRequired": true
+      }
+    ]
+  }
+}

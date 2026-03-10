@@ -29,6 +29,8 @@ Manages the server allowlist.
 
 `/allowlist reload`
 
+## Usage
+
 ### Add player
 
 `/allowlist add <name: id>`
@@ -37,7 +39,7 @@ Adds a player to the server allowlist.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| name | [Identifier](../CommandTypes/type_id.md) | Required | The player name to add to or remove from the allowlist. |
+| name | [id](../CommandTypes/type_id.md) | Required | The player name to add to or remove from the allowlist. |
 
 ### Remove player
 
@@ -47,7 +49,7 @@ Removes a player from the server allowlist.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| name | [Identifier](../CommandTypes/type_id.md) | Required | The player name to add to or remove from the allowlist. |
+| name | [id](../CommandTypes/type_id.md) | Required | The player name to add to or remove from the allowlist. |
 
 ### List players
 
@@ -65,4 +67,4 @@ Reloads the allowlist from the file on disk.
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| name | [Identifier](../CommandTypes/type_id.md) | The player name to add to or remove from the allowlist. |
+| name | [id](../CommandTypes/type_id.md) | The player name to add to or remove from the allowlist. |

@@ -158,6 +158,13 @@
         "isRequired": false
       },
       {
+        "dataType": 1,
+        "id": "rotate_around_center",
+        "title": "Rotate Around Center",
+        "description": "If true, tries to rotate the structure around its center when placed in the world. Defaults to \"false\" if omitted.",
+        "isRequired": false
+      },
+      {
         "dataType": 16,
         "id": "constraints",
         "title": "Constraints",

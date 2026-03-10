@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.ProgressKeyFrame Interface
 description: Contents of the @minecraft/server.ProgressKeyFrame class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ProgressKeyFrame Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Key frame that holds the progress of the camera animation.
 

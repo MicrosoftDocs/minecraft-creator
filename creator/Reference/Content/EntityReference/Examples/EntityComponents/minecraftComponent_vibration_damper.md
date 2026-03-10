@@ -10,7 +10,7 @@ ms.date: 02/11/2025
 
 # Entity Documentation - minecraft:vibration_damper
 
-Vibrations emitted by this entity will be ignored.
+Vibrations emitted by an entity with this component will be ignored.
 
 
 ## Samples

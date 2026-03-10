@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.AimAssistCategorySettings Class
 description: Contents of the @minecraft/server.AimAssistCategorySettings class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # AimAssistCategorySettings Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Settings used with AimAssistRegistry.addCategory for creation of the AimAssistCategory.
 
@@ -50,10 +46,30 @@ Type: *string*
 - [getBlockTagPriorities](#getblocktagpriorities)
 - [getEntityPriorities](#getentitypriorities)
 - [getEntityTypeFamilyPriorities](#getentitytypefamilypriorities)
+::: moniker range="=minecraft-bedrock-experimental"
 - [setBlockPriorities](#setblockpriorities)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [setBlockTagPriorities](#setblocktagpriorities)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [setEntityPriorities](#setentitypriorities)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [setEntityTypeFamilyPriorities](#setentitytypefamilypriorities)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-stable"
+- [setBlockPriorities](#setblockpriorities)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-stable"
+- [setBlockTagPriorities](#setblocktagpriorities)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-stable"
+- [setEntityPriorities](#setentitypriorities)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-stable"
+- [setEntityTypeFamilyPriorities](#setentitytypefamilypriorities)
+::: moniker-end
 
 ### **constructor**
 `
@@ -103,6 +119,7 @@ Gets the priority settings used for entity targeting.
 
 **Returns** Record<*string*, *number*> - Map entity type families to their priority settings in a Record. Larger numbers have greater priority.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **setBlockPriorities**
 `
 setBlockPriorities(blockPriorities: Record<keyof typeof minecraftvanilladata.MinecraftBlockTypes | string, number>): void
@@ -116,10 +133,15 @@ Sets the priority settings used for block targeting.
   A record mapping block Ids to their priority settings. Larger numbers have greater priority.
 
 **Returns** *void*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **setBlockTagPriorities**
 `
 setBlockTagPriorities(blockTagPriorities: Record<string, number>): void
@@ -131,10 +153,15 @@ Sets the priority settings used for block targeting.
 - **blockTagPriorities**: *Record<string, number>*
 
 **Returns** *void*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **setEntityPriorities**
 `
 setEntityPriorities(entityPriorities: Record<keyof typeof minecraftvanilladata.MinecraftEntityTypes | string, number>): void
@@ -148,10 +175,15 @@ Sets the priority settings used for entity targeting.
   A record mapping entity Ids to their priority settings. Larger numbers have greater priority.
 
 **Returns** *void*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **setEntityTypeFamilyPriorities**
 `
 setEntityTypeFamilyPriorities(entityTypeFamilyPriorities: Record<string, number>): void
@@ -163,6 +195,74 @@ Sets the priority settings used for entity targeting.
 - **entityTypeFamilyPriorities**: *Record<string, number>*
 
 **Returns** *void*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-stable"
+### **setBlockPriorities**
+`
+setBlockPriorities(blockPriorities: Record<string, number>): void
+`
+
+Sets the priority settings used for block targeting.
+
+#### **Parameters**
+- **blockPriorities**: Record<*string*, *number*>
+  
+  A record mapping block Ids to their priority settings. Larger numbers have greater priority.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-stable"
+### **setBlockTagPriorities**
+`
+setBlockTagPriorities(blockTagPriorities: Record<string, number>): void
+`
+
+Sets the priority settings used for block targeting.
+
+#### **Parameters**
+- **blockTagPriorities**: Record<*string*, *number*>
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-stable"
+### **setEntityPriorities**
+`
+setEntityPriorities(entityPriorities: Record<string, number>): void
+`
+
+Sets the priority settings used for entity targeting.
+
+#### **Parameters**
+- **entityPriorities**: Record<*string*, *number*>
+  
+  A record mapping entity Ids to their priority settings. Larger numbers have greater priority.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-stable"
+### **setEntityTypeFamilyPriorities**
+`
+setEntityTypeFamilyPriorities(entityTypeFamilyPriorities: Record<string, number>): void
+`
+
+Sets the priority settings used for entity targeting.
+
+#### **Parameters**
+- **entityTypeFamilyPriorities**: Record<*string*, *number*>
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+::: moniker-end

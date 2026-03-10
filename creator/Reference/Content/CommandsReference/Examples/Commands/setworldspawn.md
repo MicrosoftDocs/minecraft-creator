@@ -29,10 +29,10 @@ Set the `world spawn` at an `[x y z]` location.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| spawnPoint | [Position (x y z)](../CommandTypes/type_position_float.md) | Optional | A `vector` [x y z] with `float` numbers that defines the world spawn. |
+| spawnPoint | [x y z](../CommandTypes/type_position_float.md) | Optional | A `vector` [x y z] with `float` numbers that defines the world spawn. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| spawnPoint | [Position (x y z)](../CommandTypes/type_position_float.md) | A `vector` [x y z] with `float` numbers that defines the world spawn. |
+| spawnPoint | [x y z](../CommandTypes/type_position_float.md) | A `vector` [x y z] with `float` numbers that defines the world spawn. |

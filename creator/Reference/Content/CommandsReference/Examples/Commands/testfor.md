@@ -29,10 +29,10 @@ Counts entities (players, mobs, items, etc.) matching specified conditions.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| victim | [Entity Selector](../CommandTypes/type_selection.md) | Required | A name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify who or what is being counted. |
+| victim | [target](../CommandTypes/type_selection.md) | Required | A name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify who or what is being counted. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| victim | [Entity Selector](../CommandTypes/type_selection.md) | A name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify who or what is being counted. |
+| victim | [target](../CommandTypes/type_selection.md) | A name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify who or what is being counted. |

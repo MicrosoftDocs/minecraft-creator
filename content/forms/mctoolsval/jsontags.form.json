@@ -79,6 +79,30 @@
       "dataType": 2,
       "description": "Tracks individual sound file references across sound definitions.",
       "technicalDescription": "Data contains the sound file path"
+    },
+    {
+      "id": "109",
+      "title": "Biome Behavior Type",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Tracks biome behavior components defined in behavior pack biome JSON files (minecraft:biome).",
+      "technicalDescription": "Data contains biome behavior component identifiers"
+    },
+    {
+      "id": "110",
+      "title": "Biome Client Type",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Tracks biome client components defined in resource pack biome JSON files (minecraft:client_biome).",
+      "technicalDescription": "Data contains biome client component identifiers"
+    },
+    {
+      "id": "111",
+      "title": "Particle Type",
+      "messageType": 0,
+      "dataType": 2,
+      "description": "Tracks particle effect components from particle JSON files, including emitter and particle components.",
+      "technicalDescription": "Data contains particle effect component identifiers"
     }
   ]
 }

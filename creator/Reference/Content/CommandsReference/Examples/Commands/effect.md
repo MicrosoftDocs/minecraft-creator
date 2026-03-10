@@ -17,17 +17,12 @@ Add or clear status effects.
 | **Permission Level** | Game Directors |
 | **Requires Cheats** | Yes |
 
-## Syntax Overview
+## Sub-commands
 
-`/effect <player: target> <Mode: cleareffects> [effect: effect]`
+- [**Mode**](#mode)
+- [**effect**](#effect) — An `enum` to specify the effect being added or removed.
 
-`/effect <player: target> <effect: effect> [seconds: int] [amplifier: int] [hideParticles: Boolean]`
-
-`/effect <player: target> <effect: effect> <Mode: cleareffects> [amplifier: int] [hideParticles: Boolean]`
-
-## Usage
-
-### Clear effect
+## Mode
 
 `/effect <player: target> <Mode: cleareffects> [effect: effect]`
 
@@ -35,9 +30,13 @@ Clear the effect for a target player.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| player | [Entity Selector](../CommandTypes/type_selection.md) | Required | The player to receive the effect. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| player | [target](../CommandTypes/type_selection.md) | Required | The player to receive the effect. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
 | Mode | cleareffects | Required |  |
-| effect | [Effect](../CommandTypes/type_effect.md) | Optional | An `enum` to specify the effect being added or removed. |
+| effect | [effect](../CommandTypes/type_effect.md) | Optional | An `enum` to specify the effect being added or removed. |
+
+## effect
+
+An `enum` to specify the effect being added or removed.
 
 ### Add effect
 
@@ -47,10 +46,10 @@ Add effect to target player with optional `seconds`, `amplifier`, and `hideParti
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| player | [Entity Selector](../CommandTypes/type_selection.md) | Required | The player to receive the effect. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
-| effect | [Effect](../CommandTypes/type_effect.md) | Required | An `enum` to specify the effect being added or removed. |
-| seconds | [Integer](../CommandTypes/type_int.md) | Optional | An `integer` that specifies the duration, in seconds, of this effect. Default: `30`. |
-| amplifier | [Integer](../CommandTypes/type_int.md) | Optional | An `integer` that may have been applied to this effect. Sample values range typically from 0 to 4. Default: `0`. |
+| player | [target](../CommandTypes/type_selection.md) | Required | The player to receive the effect. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| effect | [effect](../CommandTypes/type_effect.md) | Required | An `enum` to specify the effect being added or removed. |
+| seconds | [int](../CommandTypes/type_int.md) | Optional | An `integer` that specifies the duration, in seconds, of this effect. Default: `30`. |
+| amplifier | [int](../CommandTypes/type_int.md) | Optional | An `integer` that may have been applied to this effect. Sample values range typically from 0 to 4. Default: `0`. |
 | hideParticles | [Boolean](../CommandTypes/type_boolean.md) | Optional | A `Boolean` that specifies the visual representation of the effect. Default: `false`. |
 
 ### With effect, Mode, amplifier, hideParticles
@@ -59,10 +58,10 @@ Add effect to target player with optional `seconds`, `amplifier`, and `hideParti
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| player | [Entity Selector](../CommandTypes/type_selection.md) | Required | The player to receive the effect. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
-| effect | [Effect](../CommandTypes/type_effect.md) | Required | An `enum` to specify the effect being added or removed. |
+| player | [target](../CommandTypes/type_selection.md) | Required | The player to receive the effect. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| effect | [effect](../CommandTypes/type_effect.md) | Required | An `enum` to specify the effect being added or removed. |
 | Mode | cleareffects | Required |  |
-| amplifier | [Integer](../CommandTypes/type_int.md) | Optional | An `integer` that may have been applied to this effect. Sample values range typically from 0 to 4. Default: `0`. |
+| amplifier | [int](../CommandTypes/type_int.md) | Optional | An `integer` that may have been applied to this effect. Sample values range typically from 0 to 4. Default: `0`. |
 | hideParticles | [Boolean](../CommandTypes/type_boolean.md) | Optional | A `Boolean` that specifies the visual representation of the effect. Default: `false`. |
 
 ## Examples
@@ -107,9 +106,9 @@ Add effect to target player with optional `seconds`, `amplifier`, and `hideParti
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| amplifier | [Integer](../CommandTypes/type_int.md) | An `integer` that may have been applied to this effect. Sample values range typically from 0 to 4. Default: `0`. |
-| effect | [Effect](../CommandTypes/type_effect.md) | An `enum` to specify the effect being added or removed. |
+| amplifier | [int](../CommandTypes/type_int.md) | An `integer` that may have been applied to this effect. Sample values range typically from 0 to 4. Default: `0`. |
+| effect | [effect](../CommandTypes/type_effect.md) | An `enum` to specify the effect being added or removed. |
 | hideParticles | [Boolean](../CommandTypes/type_boolean.md) | A `Boolean` that specifies the visual representation of the effect. Default: `false`. |
 | Mode | cleareffects |  |
-| player | [Entity Selector](../CommandTypes/type_selection.md) | The player to receive the effect. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
-| seconds | [Integer](../CommandTypes/type_int.md) | An `integer` that specifies the duration, in seconds, of this effect. Default: `30`. |
+| player | [target](../CommandTypes/type_selection.md) | The player to receive the effect. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| seconds | [int](../CommandTypes/type_int.md) | An `integer` that specifies the duration, in seconds, of this effect. Default: `30`. |

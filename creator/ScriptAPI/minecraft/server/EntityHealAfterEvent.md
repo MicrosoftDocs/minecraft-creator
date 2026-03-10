@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.EntityHealAfterEvent Class
 description: Contents of the @minecraft/server.EntityHealAfterEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityHealAfterEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains information related to an entity having been healed.
 

@@ -21,6 +21,7 @@ type EntityComponentTypeMap = {
   'color': EntityColorComponent;
   'color2': EntityColor2Component;
   'cursor_inventory': PlayerCursorInventoryComponent;
+  'ender_inventory': EntityEnderInventoryComponent;
   'equippable': EntityEquippableComponent;
   'fire_immune': EntityFireImmuneComponent;
   'floats_in_liquid': EntityFloatsInLiquidComponent;
@@ -55,6 +56,7 @@ type EntityComponentTypeMap = {
   'minecraft:color': EntityColorComponent;
   'minecraft:color2': EntityColor2Component;
   'minecraft:cursor_inventory': PlayerCursorInventoryComponent;
+  'minecraft:ender_inventory': EntityEnderInventoryComponent;
   'minecraft:equippable': EntityEquippableComponent;
   'minecraft:fire_immune': EntityFireImmuneComponent;
   'minecraft:floats_in_liquid': EntityFloatsInLiquidComponent;

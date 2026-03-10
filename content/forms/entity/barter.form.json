@@ -1,0 +1,37 @@
+{
+  "id": "minecraft:behavior.barter",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.barter",
+    "title": "Entity Barter Behavior",
+    "description": "Enables the mob to barter for items that have been configured as barter currency. Must be used in combination with the barter component",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      }
+    ]
+  }
+}

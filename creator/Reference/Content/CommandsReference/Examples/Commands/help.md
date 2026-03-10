@@ -23,15 +23,14 @@ See more in the [Popular Commands documentation](https://learn.microsoft.com/min
 | **Permission Level** | Any |
 | **Requires Cheats** | No |
 
-## Syntax Overview
+## Sub-commands
 
-`/help [command: commandname]`
+- [**command**](#command) — An optional `enum` that defines the command to be called.
+- [**page**](#page) — Changes which page of commands to show.
 
-`/help <page: int>`
+## command
 
-## Usage
-
-### Show command help
+An optional `enum` that defines the command to be called.
 
 `/help [command: commandname]`
 
@@ -41,7 +40,9 @@ Show `help` information for a `command`.
 |:---------|:-----|:---------|:------------|
 | command | commandname | Optional | An optional `enum` that defines the command to be called. |
 
-### Show help page
+## page
+
+Changes which page of commands to show. Numbers smaller than the pages will be page 1, and larger will be the last page. Default: `1`.
 
 `/help <page: int>`
 
@@ -49,11 +50,11 @@ Show a `page` of help options.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| page | [Integer](../CommandTypes/type_int.md) | Required | Changes which page of commands to show. Numbers smaller than the pages will be page 1, and larger will be the last page. Default: `1`. |
+| page | [int](../CommandTypes/type_int.md) | Required | Changes which page of commands to show. Numbers smaller than the pages will be page 1, and larger will be the last page. Default: `1`. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
 | command | commandname | An optional `enum` that defines the command to be called. |
-| page | [Integer](../CommandTypes/type_int.md) | Changes which page of commands to show. Numbers smaller than the pages will be page 1, and larger will be the last page. Default: `1`. |
+| page | [int](../CommandTypes/type_int.md) | Changes which page of commands to show. Numbers smaller than the pages will be page 1, and larger will be the last page. Default: `1`. |

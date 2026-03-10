@@ -13,6 +13,9 @@
       }
     ]
   },
+  "tags": [
+    "entityevent"
+  ],
   "generated_doNotEdit": {
     "id": "Set Entity Property",
     "title": "Set Entity Property",

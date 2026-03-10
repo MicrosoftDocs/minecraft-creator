@@ -34,7 +34,7 @@ Sets the input permission for the selection to a state.
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | option | option_set | Required |  |
-| targets | [Entity Selector](../CommandTypes/type_selection.md) | Required |  |
+| targets | [target](../CommandTypes/type_selection.md) | Required |  |
 | permission | permission | Required |  |
 | state | state | Required |  |
 
@@ -47,7 +47,7 @@ Retrieves the permissions of entities that match the selection.
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | option | option_set | Required |  |
-| targets | [Entity Selector](../CommandTypes/type_selection.md) | Required |  |
+| targets | [target](../CommandTypes/type_selection.md) | Required |  |
 | permission | permission | Required |  |
 | state | state | Optional |  |
 
@@ -58,4 +58,4 @@ Retrieves the permissions of entities that match the selection.
 | option | option_set |  |
 | permission | permission |  |
 | state | state |  |
-| targets | [Entity Selector](../CommandTypes/type_selection.md) |  |
+| targets | [target](../CommandTypes/type_selection.md) |  |

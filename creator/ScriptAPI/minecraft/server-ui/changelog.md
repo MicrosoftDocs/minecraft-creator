@@ -18,7 +18,7 @@ description: Changelog of the `@minecraft/server-ui` module
 - [1.0.0](#100)
 
 ## 2.1.0-beta
-#### Added module peer dependency `@minecraft/server@2.7.0-beta`
+#### Added module peer dependency `@minecraft/server@2.8.0-beta`
 #### Added *[`CustomForm`](CustomForm.md)*
 #### Added *[`MessageBox`](MessageBox.md)*
 #### Added *[`Observable`](Observable.md)*

@@ -222,6 +222,9 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:silverfish_feature`
 - `minecraft:grass_double_plant_upper_feature`
 - `minecraft:scatter_warm_ocean_seagrass_feature`
+- `minecraft:optional_jungle_tree_cocoa_feature`
+- `minecraft:scatter_swamp_flower_feature`
+- `minecraft:fern_feature`
 - `minecraft:random_oak_tree_from_sapling_feature`
 - `minecraft:underground_extra_cave_carver_feature`
 - `minecraft:scatter_fern_feature`
@@ -332,9 +335,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:nether_cave_carver_feature`
 - `minecraft:scatter_plains_flower_feature`
 - `minecraft:scatter_river_seagrass_feature`
-- `minecraft:fern_feature`
-- `minecraft:optional_jungle_tree_cocoa_feature`
-- `minecraft:scatter_swamp_flower_feature`
 - `minecraft:fixup_waterlily_position_feature`
 - `minecraft:fern_double_plant_patch_feature`
 - `minecraft:scatter_eyeblossom_feature`

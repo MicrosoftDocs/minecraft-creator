@@ -1,0 +1,51 @@
+{
+  "id": "minecraft:behavior.move_indoors",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.move_indoors",
+    "title": "Entity Move Indoors Behavior",
+    "description": "Allows this entity to move indoors.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "The movement speed modifier to apply to the entity while it is moving indoors.",
+        "dataType": 3,
+        "defaultValue": 0.800000011920929
+      },
+      {
+        "id": "timeout_cooldown",
+        "title": "Timeout Cooldown",
+        "description": "The cooldown time in seconds before the goal can be reused after pathfinding fails",
+        "dataType": 3,
+        "defaultValue": 8
+      }
+    ]
+  }
+}

@@ -38,6 +38,7 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 
 #### Values
 - `*`
+- `minecraft:torch`
 - `minecraft:golden_dandelion`
 - `minecraft:name_tag`
 - `minecraft:stonecutter_chiseled_stone_bricks_from_cobblestone`
@@ -1227,7 +1228,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:tinted_glass`
 - `minecraft:tnt`
 - `minecraft:tnt_minecart`
-- `minecraft:torch`
 - `minecraft:trapped_chest`
 - `minecraft:tripwire_hook`
 - `minecraft:turtle_helmet`

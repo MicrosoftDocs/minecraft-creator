@@ -33,7 +33,7 @@ Set the difficulty using the `Difficulty` `enum`.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| difficulty | [Difficulty](../CommandTypes/type_difficulty.md) | Required | Set the difficulty using the Difficult enum: `p` or `peaceful`, `e` or `easy`, `n` or `normal`, `h` or `hard`. |
+| difficulty | [difficulty](../CommandTypes/type_difficulty.md) | Required | Set the difficulty using the Difficult enum: `p` or `peaceful`, `e` or `easy`, `n` or `normal`, `h` or `hard`. |
 
 ### Difficulty using integer: 0 (Peaceful), 1 (Easy), 2 (Normal), 3 (Hard).
 
@@ -43,10 +43,10 @@ Set the difficulty using an integer.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| difficulty | [Difficulty](../CommandTypes/type_difficulty.md) | Required | Set the difficulty using the Difficult enum: `p` or `peaceful`, `e` or `easy`, `n` or `normal`, `h` or `hard`. |
+| difficulty | [difficulty](../CommandTypes/type_difficulty.md) | Required | Set the difficulty using the Difficult enum: `p` or `peaceful`, `e` or `easy`, `n` or `normal`, `h` or `hard`. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| difficulty | [Difficulty](../CommandTypes/type_difficulty.md) | Set the difficulty using the Difficult enum: `p` or `peaceful`, `e` or `easy`, `n` or `normal`, `h` or `hard`. |
+| difficulty | [difficulty](../CommandTypes/type_difficulty.md) | Set the difficulty using the Difficult enum: `p` or `peaceful`, `e` or `easy`, `n` or `normal`, `h` or `hard`. |

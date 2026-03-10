@@ -81,12 +81,13 @@ Calculates the bounding box of the shape in local coordinates. Used for region a
 
 ### **createSettingsPane**
 `
-createSettingsPane(parentPane: IPropertyPane, onSettingsChange?: () => void): ISubPanePropertyItem | undefined
+createSettingsPane(parentPane: IPropertyPane, onSettingsChange?: () => void, flatLayout?: boolean): ISubPanePropertyItem | undefined
 `
 
 #### **Parameters**
 - **parentPane**: *IPropertyPane*
 - **onSettingsChange**?: () => *void*
+- **flatLayout**?: *boolean*
 
 **Returns** *ISubPanePropertyItem* | *undefined*
 

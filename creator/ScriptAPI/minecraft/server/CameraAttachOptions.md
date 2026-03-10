@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.CameraAttachOptions Interface
 description: Contents of the @minecraft/server.CameraAttachOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CameraAttachOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Used to attach the camera to a non player entity.
 

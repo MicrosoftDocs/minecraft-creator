@@ -27,12 +27,14 @@ ms.date: 02/11/2025
 | [has_damage](Filters/has_damage.md)| Returns true when the subject entity receives the named damage type. |
 | [has_damaged_equipment](Filters/has_damaged_equipment.md)| Tests for the presence of a damaged named item in the designated slot of the subject entity. |
 | [has_equipment](Filters/has_equipment.md)| Tests for the presence of a named item in the designated slot of the subject entity. |
+| [has_equipment_block_tag](Filters/has_equipment_block_tag.md)| Tests for the presence of a block item with the specified block tag in the specified slot of the entity. |
 | [has_equipment_tag](Filters/has_equipment_tag.md)| Tests for the presence of an item with the named tag in the designated slot of the subject entity. |
 | [has_item_with_component](Filters/has_item_with_component.md)| Returns true when the subject entity is holding a item with the specified component. |
 | [has_mob_effect](Filters/has_mob_effect.md)| Tests whether the Subject has the specified mob effect. |
 | [has_nametag](Filters/has_nametag.md)| Tests if the subject has been given a custom name. |
 | [has_property](Filters/has_property.md)| Tests for the presence of a property of the subject entity. |
 | [has_ranged_weapon](Filters/has_ranged_weapon.md)| Returns true when the subject entity is holding a ranged weapon like a bow or crossbow. |
+| [has_same_equipment_in_slot_as](Filters/has_same_equipment_in_slot_as.md)| Returns whether the subject entity has the same item equipped in the specified slot as calling entity. |
 | [has_silk_touch](Filters/has_silk_touch.md)| Tests if the subject is holding an item with silk touch. |
 | [has_tag](Filters/has_tag.md)| Returns true if the subject entity has the tag provided. |
 | [has_target](Filters/has_target.md)| Returns true if the subject entity has a valid target. |

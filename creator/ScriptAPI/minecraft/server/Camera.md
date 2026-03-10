@@ -21,14 +21,10 @@ Returns whether the Camera is valid to access and use. A Camera is considered va
 Type: *boolean*
 
 ## Methods
-::: moniker range="=minecraft-bedrock-experimental"
 - [attachToEntity](#attachtoentity)
-::: moniker-end
 - [clear](#clear)
 - [fade](#fade)
-::: moniker range="=minecraft-bedrock-experimental"
 - [playAnimation](#playanimation)
-::: moniker-end
 - [setCamera](#setcamera)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [setCameraWithEase](#setcamerawithease)
@@ -36,7 +32,6 @@ Type: *boolean*
 - [setDefaultCamera](#setdefaultcamera)
 - [setFov](#setfov)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **attachToEntity**
 `
 attachToEntity(attachCameraOptions?: CameraAttachOptions): void
@@ -48,14 +43,10 @@ Attaches the camera to a non-player entity.
 - **attachCameraOptions**?: [*CameraAttachOptions*](CameraAttachOptions.md) = `null`
   
   Options for the entity the camera is attaching to. Contains the entity identifier and optional entity location.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
-::: moniker-end
 
 ### **clear**
 `
@@ -84,7 +75,6 @@ Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playAnimation**
 `
 playAnimation(splineType: CatmullRomSpline | LinearSpline, cameraAnimationOptions: AnimationOptions): void
@@ -93,14 +83,10 @@ playAnimation(splineType: CatmullRomSpline | LinearSpline, cameraAnimationOption
 #### **Parameters**
 - **splineType**: [*CatmullRomSpline*](CatmullRomSpline.md) | [*LinearSpline*](LinearSpline.md)
 - **cameraAnimationOptions**: [*AnimationOptions*](AnimationOptions.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
-::: moniker-end
 
 ### **setCamera**
 `

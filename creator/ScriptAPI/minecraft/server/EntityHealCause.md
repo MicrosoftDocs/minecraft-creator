@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.EntityHealCause Enumeration
 description: Contents of the @minecraft/server.EntityHealCause enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityHealCause Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Describes the source of healing of an Entity.
 

@@ -42,13 +42,13 @@ Finds the nearest specified biome or structure if it exists in the current dimen
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | subcommand | locatesubcommandstructure | Required |  |
-| biome | [Biome](../CommandTypes/type_biome.md) | Required |  |
+| biome | [biome](../CommandTypes/type_biome.md) | Required |  |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| biome | [Biome](../CommandTypes/type_biome.md) |  |
+| biome | [biome](../CommandTypes/type_biome.md) |  |
 | structure | structurefeature |  |
 | subcommand | locatesubcommandstructure |  |
 | useNewChunksOnly | [Boolean](../CommandTypes/type_boolean.md) | A `Boolean` to specify whether to use new chunks only. Default: `false`. |

@@ -22,19 +22,19 @@ Manages tags stored in entities.
 
 ## Usage
 ### Add or remove tag
-`/tag <entity: target> <action: TagChangeAction> <name: TagValues>`
+`/tag <entity: targets> <action: TagChangeAction> <name: TagValues>`
 
 Add or remove a `tag` on an `entity`.
 
 ### List tags
-`/tag <entity: target> list`
+`/tag <entity: targets> list`
 
 List all `tags` on a given `entity`.
 
 ## Arguments
 - `action`: TagChangeAction
 Change the `tags` on an `entity` using the `TagChangeAction` Enums.
-- `entity`: target
+- `entity`: targets
 The command's target.
 - `name`: TagValues
 The `tag` name.

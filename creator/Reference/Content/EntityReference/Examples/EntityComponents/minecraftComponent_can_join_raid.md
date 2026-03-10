@@ -10,7 +10,7 @@ ms.date: 02/11/2025
 
 # Entity Documentation - minecraft:can_join_raid
 
-Determines that this entity can join an existing raid.
+Specifies if an entity can join a raid.
 
 
 ## Samples

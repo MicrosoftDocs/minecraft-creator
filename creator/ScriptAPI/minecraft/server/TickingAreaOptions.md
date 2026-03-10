@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.TickingAreaOptions Interface
 description: Contents of the @minecraft/server.TickingAreaOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # TickingAreaOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Options to create a ticking area using the [*@minecraft/server.TickingAreaManager*](../../../scriptapi/minecraft/server/TickingAreaManager.md).
 

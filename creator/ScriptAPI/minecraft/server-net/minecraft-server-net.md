@@ -24,7 +24,7 @@ The `@minecraft/server-net` module contains types for executing HTTP-based reque
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.10-beta.26 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.20-beta.20 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`
@@ -48,12 +48,12 @@ This is version 1.x.x of this module, which is the latest as of version 1.26.10-
 - [PacketEventOptions](PacketEventOptions.md)
 
 ## Errors
-- [HttpRequestBodyTooLargeError](HttpRequestBodyTooLargeError.md)
 - [HttpRequestLimitExceededError](HttpRequestLimitExceededError.md)
-- [HttpRequestNotAllowedError](HttpRequestNotAllowedError.md)
-- [HttpsOnlyError](HttpsOnlyError.md)
 - [InternalHttpRequestError](InternalHttpRequestError.md)
-- [MalformedHttpRequestError](MalformedHttpRequestError.md)
+- [MalformedUriError](MalformedUriError.md)
+- [RequestBodyTooLargeError](RequestBodyTooLargeError.md)
+- [TLSOnlyError](TLSOnlyError.md)
+- [UriNotAllowedError](UriNotAllowedError.md)
 
 ## Objects
   

@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.AimAssistRegistry Class
 description: Contents of the @minecraft/server.AimAssistRegistry class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # AimAssistRegistry Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 A container for APIs related to the world's aim-assist settings.
 

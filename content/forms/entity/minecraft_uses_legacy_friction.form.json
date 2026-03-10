@@ -1,0 +1,10 @@
+{
+  "id": "minecraft:uses_legacy_friction",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:uses_legacy_friction",
+    "title": "Uses Legacy Friction",
+    "description": "When set, legacy calculations are used when applying \"minecraft:friction_modifier\". This component is automatically added to legacy content to preserve existing behavior. The legacy calculations are incorrect and should not be used for new content.",
+    "fields": []
+  }
+}

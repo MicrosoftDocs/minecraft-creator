@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.ItemFilter Interface
 description: Contents of the @minecraft/server.ItemFilter class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemFilter Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains options for filtering items.
 

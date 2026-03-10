@@ -22,7 +22,7 @@
         "id": "goal_radius",
         "title": "Goal Radius",
         "description": "The radius away from the target block to count as reaching the goal.",
-        "defaultValue": 0.5,
+        "defaultValue": 2,
         "dataType": 3
       },
       {

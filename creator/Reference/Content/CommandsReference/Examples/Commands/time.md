@@ -27,6 +27,8 @@ Changes or queries the world's game time. See more in the [Popular Commands docu
 
 `/time <mode: timemodeadd> <time: timespec>`
 
+## Usage
+
 ### Add time, integer
 
 `/time <mode: timemodeadd> <amount: int>`
@@ -36,7 +38,7 @@ Changes or queries the world's game time. See more in the [Popular Commands docu
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | mode | timemodeadd | Required |  |
-| amount | [Integer](../CommandTypes/type_int.md) | Required | An `integer` of the time to add or set. Default: `0`. |
+| amount | [int](../CommandTypes/type_int.md) | Required | An `integer` of the time to add or set. Default: `0`. |
 
 ### Set time, integer
 
@@ -47,7 +49,7 @@ Changes or queries the world's game time. See more in the [Popular Commands docu
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
 | mode | timemodeadd | Required |  |
-| amount | [Integer](../CommandTypes/type_int.md) | Required | An `integer` of the time to add or set. Default: `0`. |
+| amount | [int](../CommandTypes/type_int.md) | Required | An `integer` of the time to add or set. Default: `0`. |
 
 ### Set time spec
 
@@ -75,6 +77,6 @@ Changes or queries the world's game time. See more in the [Popular Commands docu
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| amount | [Integer](../CommandTypes/type_int.md) | An `integer` of the time to add or set. Default: `0`. |
+| amount | [int](../CommandTypes/type_int.md) | An `integer` of the time to add or set. Default: `0`. |
 | mode | timemodeadd |  |
 | time | timespec |  |

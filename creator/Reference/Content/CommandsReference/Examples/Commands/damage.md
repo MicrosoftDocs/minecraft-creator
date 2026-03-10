@@ -33,8 +33,8 @@ Damage a target with an amount of damage. Optionally include a cause.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| target | [Entity Selector](../CommandTypes/type_selection.md) | Required | Required. The target to damage. A player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
-| amount | [Integer](../CommandTypes/type_int.md) | Required | Required. Default `0`. An `integer` that specifies the amount of damage. |
+| target | [target](../CommandTypes/type_selection.md) | Required | Required. The target to damage. A player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
+| amount | [int](../CommandTypes/type_int.md) | Required | Required. Default `0`. An `integer` that specifies the amount of damage. |
 | cause | damagecause | Optional | Optional. Default `none`. An `enum` of the damage cause. |
 
 ### Damage with optional cause, entity, damager
@@ -45,18 +45,18 @@ Damage a target with an amount of damage. Optionally include a cause, entity, an
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| target | [Entity Selector](../CommandTypes/type_selection.md) | Required | Required. The target to damage. A player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
-| amount | [Integer](../CommandTypes/type_int.md) | Required | Required. Default `0`. An `integer` that specifies the amount of damage. |
+| target | [target](../CommandTypes/type_selection.md) | Required | Required. The target to damage. A player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
+| amount | [int](../CommandTypes/type_int.md) | Required | Required. Default `0`. An `integer` that specifies the amount of damage. |
 | cause | damagecause | Required | Optional. Default `none`. An `enum` of the damage cause. |
 | origin | damageoriginactor | Required |  |
-| damager | [Entity Selector](../CommandTypes/type_selection.md) | Required | A `selector` that specifies which entity will be treated as dealing the damage to the target. Should be one entity or player. |
+| damager | [target](../CommandTypes/type_selection.md) | Required | A `selector` that specifies which entity will be treated as dealing the damage to the target. Should be one entity or player. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| amount | [Integer](../CommandTypes/type_int.md) | Required. Default `0`. An `integer` that specifies the amount of damage. |
+| amount | [int](../CommandTypes/type_int.md) | Required. Default `0`. An `integer` that specifies the amount of damage. |
 | cause | damagecause | Optional. Default `none`. An `enum` of the damage cause. |
-| damager | [Entity Selector](../CommandTypes/type_selection.md) | A `selector` that specifies which entity will be treated as dealing the damage to the target. Should be one entity or player. |
+| damager | [target](../CommandTypes/type_selection.md) | A `selector` that specifies which entity will be treated as dealing the damage to the target. Should be one entity or player. |
 | origin | damageoriginactor |  |
-| target | [Entity Selector](../CommandTypes/type_selection.md) | Required. The target to damage. A player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |
+| target | [target](../CommandTypes/type_selection.md) | Required. The target to damage. A player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors). |

@@ -29,8 +29,8 @@ Test for a `block name` in a `vector` position with optional `block states`.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| position | [Block Position](../CommandTypes/type_position.md) | Required | Required. A `vector` of the location the block to test. |
-| tileName | [Block ID](../CommandTypes/type_block.md) | Required | Required. An `enum` of the block to test for. |
+| position | [x y z](../CommandTypes/type_position.md) | Required | Required. A `vector` of the location the block to test. |
+| tileName | [Block](../CommandTypes/type_block.md) | Required | Required. An `enum` of the block to test for. |
 | blockStates | block_state_array | Optional | Optional. The `block states` to match when testing. |
 
 ## Arguments Reference
@@ -38,5 +38,5 @@ Test for a `block name` in a `vector` position with optional `block states`.
 | Argument | Type | Description |
 |:---------|:-----|:------------|
 | blockStates | block_state_array | Optional. The `block states` to match when testing. |
-| position | [Block Position](../CommandTypes/type_position.md) | Required. A `vector` of the location the block to test. |
-| tileName | [Block ID](../CommandTypes/type_block.md) | Required. An `enum` of the block to test for. |
+| position | [x y z](../CommandTypes/type_position.md) | Required. A `vector` of the location the block to test. |
+| tileName | [Block](../CommandTypes/type_block.md) | Required. An `enum` of the block to test for. |

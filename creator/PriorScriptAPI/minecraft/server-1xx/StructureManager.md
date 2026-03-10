@@ -117,7 +117,9 @@ Notes:
 getWorldStructureIds(): string[]
 `
 
-**Returns** *string*[]
+Returns a list of all structures saved to the world and to memory. Does not include structures contained in behavior packs.
+
+**Returns** *string*[] - The list of structure identifiers.
   
 Notes:
 - This function can't be called in restricted-execution mode.

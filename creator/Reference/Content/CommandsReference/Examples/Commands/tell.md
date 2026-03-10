@@ -31,12 +31,12 @@ Sends a private message to one or more players.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| target | [Entity Selector](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player to tell. |
-| message | [Message](../CommandTypes/type_message_root.md) | Required | A `string` of the message. |
+| target | [target](../CommandTypes/type_selection.md) | Required | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player to tell. |
+| message | [message_root](../CommandTypes/type_message_root.md) | Required | A `string` of the message. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| message | [Message](../CommandTypes/type_message_root.md) | A `string` of the message. |
-| target | [Entity Selector](../CommandTypes/type_selection.md) | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player to tell. |
+| message | [message_root](../CommandTypes/type_message_root.md) | A `string` of the message. |
+| target | [target](../CommandTypes/type_selection.md) | A `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player to tell. |

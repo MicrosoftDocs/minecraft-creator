@@ -13,6 +13,13 @@ ms.date: 02/11/2025
 Sets the value of an entity property. The property must be defined in the 'properties' section of the file.
 
 
+## Set Entity Property Properties
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| property | *not set* | String | The property to set on the entity. | 
+| value | *not set* | String | The value to assign to the property. | 
+
 ## Samples
 
 

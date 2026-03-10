@@ -172,6 +172,13 @@
         "title": "Allowed Surface Blocks",
         "description": "A list of blocks that the feature is permitted to snap to. Leaving this empty results in the feature snapping to blocks that can provide support for the given face (up/down/horizontal)",
         "isRequired": false
+      },
+      {
+        "dataType": 1,
+        "id": "embed_in_surface",
+        "title": "Embed In Surface",
+        "description": "Determines whether the placed feature should be embedded in the found surface.",
+        "isRequired": false
       }
     ]
   }

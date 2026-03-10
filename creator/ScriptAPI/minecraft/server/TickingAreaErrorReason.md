@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.TickingAreaErrorReason Enumeration
 description: Contents of the @minecraft/server.TickingAreaErrorReason enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # TickingAreaErrorReason Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 The reason that the {@link @minecraft/server.TickingAreaError} was thrown.
 

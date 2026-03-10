@@ -29,12 +29,12 @@ Kick a player with `name` and `reason`.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| name | [Entity Selector](../CommandTypes/type_selection.md) | Required | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
-| reason | [Message](../CommandTypes/type_message_root.md) | Required | A `message` in plain text that explains why player was kicked. Default: `Kicked by an operator`. |
+| name | [target](../CommandTypes/type_selection.md) | Required | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| reason | [message_root](../CommandTypes/type_message_root.md) | Required | A `message` in plain text that explains why player was kicked. Default: `Kicked by an operator`. |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| name | [Entity Selector](../CommandTypes/type_selection.md) | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
-| reason | [Message](../CommandTypes/type_message_root.md) | A `message` in plain text that explains why player was kicked. Default: `Kicked by an operator`. |
+| name | [target](../CommandTypes/type_selection.md) | A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player. |
+| reason | [message_root](../CommandTypes/type_message_root.md) | A `message` in plain text that explains why player was kicked. Default: `Kicked by an operator`. |

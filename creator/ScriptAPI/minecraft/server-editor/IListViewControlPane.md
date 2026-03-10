@@ -4,12 +4,10 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server-editor.IListPaneViewControlPane Interface
-description: Contents of the @minecraft/server-editor.IListPaneViewControlPane class.
+title: minecraft/server-editor.IListViewControlPane Interface
+description: Contents of the @minecraft/server-editor.IListViewControlPane class.
 ---
-# IListPaneViewControlPane Interface
-
-View control for a list pane to manage how slots are displayed
+# IListViewControlPane Interface
 
 ## Properties
 

@@ -13,10 +13,14 @@
     ]
   },
   "description": "Plays a sound as part of an entity event response.",
-  "fields": [],
-  "tags": [
-    "entityevent"
+  "fields": [
+    {
+      "id": "sound",
+      "description": "The identifier of the sound to play.",
+      "dataType": 2
+    }
   ],
+  "tags": ["entityevent"],
   "samples": {
     "samples": [
       {
