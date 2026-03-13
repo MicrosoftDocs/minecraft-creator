@@ -11,8 +11,6 @@ ms.date: 03/09/2026
 
 This tutorial explains how to create and test a features behavior pack using the **hot_air_balloon** sample feature from the [Minecraft Custom Features Project sample pack](https://github.com/microsoft/minecraft-samples/tree/main/custom_features).
 
-This is considered a "simple" tutorial because it uses only one pack, three subfolders, and four files&mdash;the bare minimum required to implement a feature in a Minecraft world.
-
 ## More Information
 
 If this is your first time working with Features, take a look at the [Introduction to Features](../Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md) reference page for a more in-depth overview of the parts before you continue.
