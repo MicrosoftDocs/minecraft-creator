@@ -31,7 +31,7 @@ Finally, check out the video below for an example of how to save a structure and
 
 4. Open the **example_feature_set** folder, then open the **behavior_packs** folder inside it.
 
-5. Inside **behavior_packs**, find the second folder named **example_feature_set** wheer you'll find the folders and files of the project we are using as a starting point for our tutorial.
+5. Inside **behavior_packs**, find the second folder named **example_feature_set** where you'll find the folders and files of the project we are using as a starting point for our tutorial.
     > [!TIP]
     > The only file we will actually *need* to copy and paste from this sample is **hot_air_balloon.mcstructure**.
 
@@ -39,7 +39,7 @@ Finally, check out the video below for an example of how to save a structure and
 
 1. Create the main folder for your behavior pack and call it something like **hot_air_balloon_BP**.
 
-2. Create a manifest.json file in there, like the one below.
+2. Create a **manifest.json** file in there, like the one below.
 
 ```json
 {
