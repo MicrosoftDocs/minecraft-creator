@@ -41,7 +41,7 @@ Finally, check out the video below for an example of how to save a structure and
 
 1. Create the main folder for your behavior pack and call it something like **hot_air_balloon_BP**.
 
-2. Create a manifest.json file in there, like the one below.
+2. Create a **manifest.json** file in there, like the one below.
 
 ```json
 {
