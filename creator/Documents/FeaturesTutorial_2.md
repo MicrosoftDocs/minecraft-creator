@@ -1,6 +1,6 @@
 ---
 author: iconicNurdle
-ms.author: v-cwilkers
+ms.author: v-cwilkerson
 title: Features Tutorial - A More Complex Feature
 description: "How to add a feature to a world with a behavior pack and a resource pack."
 ms.service: minecraft-bedrock-edition
