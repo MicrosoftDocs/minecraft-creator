@@ -9,7 +9,9 @@ ms.date: 03/16/2026
 
 # Features Tutorial - A More Complex Feature
 
-This tutorial uses both a behavior pack and a resource pack and covers a fairly complex feature. The completed feature (**oak_apple**) searches your world for oak trees, then adds blocks that reward you with 1 to 4 apples as loot when broken.
+So you're ready for something a bit more challenging, huh? Well, this tutorial uses both a behavior pack *and* a resource pack and covers a fairly complex feature.
+
+You'll walk through the behavior and resource pack structures to compile a custom feature project that generates a unique type of oak tree. The completed feature (**oak_apple**) searches your world for oak trees, then adds blocks that reward you with 1 to 4 apples as loot when broken.
 
 ## More information
 
