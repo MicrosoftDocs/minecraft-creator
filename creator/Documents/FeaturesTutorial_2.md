@@ -1,98 +1,93 @@
 ---
 author: iconicNurdle
-ms.author: mikeam
+ms.author: v-cwilkerson
 title: Features Tutorial - A More Complex Feature
 description: "How to add a feature to a world with a behavior pack and a resource pack."
 ms.service: minecraft-bedrock-edition
-ms.date: 02/20/2025
+ms.date: 03/16/2026
 ---
 
 # Features Tutorial - A More Complex Feature
 
-This tutorial covers a fairly complex feature. It uses both a behavior pack and a resource pack. 
+So you're ready for something a bit more challenging, huh? Well, this tutorial uses both a behavior pack *and* a resource pack and covers a fairly complex feature.
 
-The completed feature searches a world for oak trees, then it adds blocks that reward you with 1 to 4 apples as loot when you break them.
+You'll walk through the behavior and resource pack structures to compile a custom feature project that generates a unique type of oak tree. The completed feature (**oak_apple**) searches your world for oak trees, then adds blocks that reward you with 1 to 4 apples as loot when broken.
 
-So, a pretty good name for this project is: **oak_apple**.
-
-## More Information
+## More information
 
 For a more in-depth explanation about features, take a look at the [Introduction to Features](../Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md) reference page.
 
-## Start with the Minecraft Custom Feature Project
+## Create a custom feature project
 
-If you already did the [simple feature tutorial](FeaturesTutorial_1.md), this next part will look very familiar...
+If you already did the [simple feature tutorial](FeaturesTutorial_1.md), this next part should seem very familiar.
 
 1. Go to the [minecraft-samples](https://github.com/microsoft/minecraft-samples/tree/main) page and download the .zip file of the code.
 
-1. Expand the folder. It will be called **mineraft-samples-main**.
+2. Unzip the folder, then expand the folder called **mineraft-samples-main**.
 
-1. Find the **custom_features** folder and open it.
+3. Find and open the folder called **custom_features**.
 
-1. Inside custom_features, find the **example_feature_set** folder, we want both the **behavior_packs** folder and the **resource_packs** folder right now.
+4. Inside custom_features, find the **example_feature_set** folder, we want both the **behavior_packs** folder and the **resource_packs** folder right now.
 
-## oak_apple - Behavior Pack Structure
+## Behavior pack structure
 
-[Create a behavior pack folder](BehaviorPack.md) and call it something like **oak_apple_BP**.
+1. Create a [behavior pack folder](BehaviorPack.md) and call it something like **oak_apple_BP**.
 
-This should be the final behavior pack structure:
+2. Create a manifest.json file inside your new behavior pack like the one below:
 
-```
-- oak_apple_BP (main behavior pack folder)
-  - blocks (folder)
-    - apple_block.json
-  - feature_rules
-    - find_valid_apples_feature_rules.json
-    - oak_tree_then_apples_feature_rules.json
-  - features (folder)
-    - apple_feature.json
-    - find_valid_apples_feature.json
-    - oak_tree_feature.json
-    - oak_tree_then_apples_feature.json
-    - scatter_apples_feature.json
-  - loot_tables (folder)
-    - blocks (folder)
-      - apple_block.json
-  - manifest.json
-```
+    ```
+    {
+      "format_version": 2,
+      "header": {
+        "description": "Feature: Oak trees can grow apples! (BP)",
+        "name": "Oak Apple",
+        "uuid":"<PUT A UNIQUE UUID HERE>",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 20, 20]
+      },
+      "modules":
+        [
+          {
+            "description": "Features Samples",
+              "type": "data",
+              "uuid": "<PUT A UNIQUE UUID HERE>",
+              "version": [1, 0, 0]
+          }
+        ],
+        "dependencies": [ 
+          { 
+            "uuid": "<PUT A UUID HERE>", 
+            "version": [ 1, 0, 0 ] 
+          } 
+        ] 
+    }
+    ```
 
-Go ahead and put a manifest.json file in there, like this one:
+    > [!IMPORTANT]
+    > Remember that the UUID in the dependencies section should match the UUID for the resource pack if you want them to load each other automatically. For more information, review [Creating a Behavior Pack from Scratch](BehaviorPackFromScratch.md#create-the-dependency).
 
-```
-{
-  "format_version": 2,
-  "header": {
-    "description": "Feature: Oak trees can grow apples! (BP)",
-    "name": "Oak Apple",
-    "uuid":"<PUT A UNIQUE UUID HERE>",
-    "version": [1, 0, 0],
-    "min_engine_version": [1, 20, 20]
-  },
-  "modules":
-    [
-      {
-        "description": "Features Samples",
-          "type": "data",
-          "uuid": "<PUT A UNIQUE UUID HERE>",
-          "version": [1, 0, 0]
-      }
-    ],
-    "dependencies": [ 
-      { 
-        "uuid": "<PUT A UUID HERE>", 
-        "version": [ 1, 0, 0 ] 
-      } 
-    ] 
-}
-```
+3. The final behavior pack structure should be:
+    
+    - oak_apple_BP (main behavior pack folder)
+      - blocks (folder)
+        - apple_block.json
+      - feature_rules
+        - find_valid_apples_feature_rules.json
+        - oak_tree_then_apples_feature_rules.json
+      - features (folder)
+        - apple_feature.json
+        - find_valid_apples_feature.json
+        - oak_tree_feature.json
+        - oak_tree_then_apples_feature.json
+        - scatter_apples_feature.json
+      - loot_tables (folder)
+        - blocks (folder)
+          - apple_block.json
+      - manifest.json
 
->[!IMPORTANT]
->Remember that the UUID in the dependencies section should match the UUID for the resource pack if you want them to load each other automatically.
->For more information, review [Creating a Behavior Pack from Scratch](BehaviorPackFromScratch.md#create-the-dependency).
-
-The path and contents for the other files are next. The content given next in this section might look different from what you find in the sample pack because the features we are not using right now have been removed, for clarity.
-
-Also, remember we're changing the pack names from **example_feature_set** to **oak_apple_BP**, wherever we need to.
+The path and contents for the other files are next.
+> [!NOTE]
+> The content given next in structrue above section probably looks different from what you see in the sample pack&mdash;don't panic! The features we're not using right now have been removed for clarity. We also changed the pack names from **example_feature_set** to **oak_apple_BP** to match our new behavior pack theme.
 
 ### oak_apple_BP/blocks/apple_block.json
 
@@ -166,10 +161,9 @@ This file specifies information about how the apple_block can be viewed and affe
 }
 ```
 
-
 ### oak_apple_BP/feature_rules/find_valid_apples_feature_rules.json
 
-This code tells Minecraft to scan the surface of the world to find a forest, but **not** one that is mutated, or jungle, or rare, and to place the feature found in the find_valid_apples_feature.
+This code tells Minecraft to scan the surface of the world and place the feature found in `"find_valid_apples_feature"` in **unmutated** forests that are neither jungles nor rare.
 
 ```json
 {
@@ -219,10 +213,9 @@ This code tells Minecraft to scan the surface of the world to find a forest, but
 }
 ```
 
-
 ### oak_apple_BP/feature_rules/oak_tree_then_apples_feature_rules.json
 
-This code tells Minecraft to scan the surface of the world to find a forest, but **not** one that is mutated, or jungle, or rare, and to place the feature found in the oak_tree_then_apples_feature.
+This code tells Minecraft to scan the surface of the world and place the feature found in `"oak_tree_then_apples_feature"` in **unmutated** forests that are neither jungles nor rare.
 
 ```json
 {
@@ -274,7 +267,7 @@ This code tells Minecraft to scan the surface of the world to find a forest, but
 
 ### oak_apple_BP/features/apple_feature.json
 
-This feature places a single block, the apple_block, and states that the placement will adhere to the rules in the feature rules that call this file. The **may_replace** line makes sure that apple_blocks can only replace **minecraft:air**, so it cannot "dig" into wood or leaves when it is placed.
+This feature places a single block&mdash;the apple_block&mdash;that adheres to the specifications outlined in the feature rules that call this file. The **may_replace** line makes sure that apple_blocks can only replace **minecraft:air**, so it cannot "dig" into wood or leaves when it's placed.
 
 ```json
 {
@@ -314,9 +307,10 @@ After the feature rule finds a valid block, the apple_feature is called. apple_f
   }
 }
 ```
+
 ### oak_apple_BP/features/oak_tree_feature.json
 
-This file tells Minecraft how to identify an oak tree. Players can tell an oak tree just by looking at it, but the game has to formally look at each block and determine if that block is an oak log or oak_leaves. It also tells Minecraft which blocks the apple_block can replace or grow on. 
+This file tells Minecraft how to identify an oak tree. You can probably recognize an oak tree just by looking at it, but the game has to formally look at each block and determine if that block is an oak log or oak_leaves. It also tells Minecraft which blocks the apple_block can replace or grow on.
 
 ```json
 {
@@ -405,7 +399,6 @@ This file tells Minecraft how to identify an oak tree. Players can tell an oak t
 }
 ```
 
-
 ### oak_apple_BP/features/oak_tree_then_apples_feature.json
 
 This features calls two other features in the specified order: first the **oak_tree_feature**, then the **scatter_apples_feature**.
@@ -454,7 +447,7 @@ This feature determines how and where to use the apple_feature.
 
 ### oak_apple_BP/loot_tables/blocks/apple_block.json
 
-This may be the most important aspect of the apple_block feature... what wonderful loot can you drop to your players! This code specifies that you get at least one but no more than four apples when you break the block. 
+This may be the most important aspect of the apple_block feature because it specifies that you get at least one but no more than four apples when you break the block.
 
 ```json
 {
@@ -484,23 +477,9 @@ This may be the most important aspect of the apple_block feature... what wonderf
 
 If you want to learn more about how to make your feature's loot drop more varied, read [Loot Table Conditions](LootTableConditions.md).
 
-## oak_apple_RP - Resource Pack Structure
+## Resource pack structure
 
-```
-- oak_apple_RP (main resource pack folder)
-  - models (folder)
-    - blocks (folder)
-      - apple_block_geo.json
-  - texts (folder)
-    - en_US.lang
-  - textures (folder)
-    - blocks (folder)
-      - apple_block.png
-    - terrain_texture.json
-  - manifest.json
-```
-
-Just like you did for the behavior pack, create a manifest.json file in there like this one:
+Just like you did for the behavior pack, start by creating a manifest.json file inside your resource pack:
 
 ```
 {
@@ -530,16 +509,31 @@ Just like you did for the behavior pack, create a manifest.json file in there li
 }
 ```
 
->[!IMPORTANT]
->Remember that the UUID in the dependencies section should match the UUID for the resource pack if you want them to load each other automatically.
+> [!IMPORTANT]
+> Remember that the UUID in the dependencies section should match the UUID for the resource pack if you want them to load each other automatically.
 
-The path and contents for the other files are next. Again, the content given next in this section might look different from what you find in the sample pack because the features we are not using right now have been removed, for clarity. 
+The resource pack structure should look like this:
 
-Also, remember we're changing the pack names from **example_feature_set** to **oak_apple_RP**.
+- oak_apple_RP (main resource pack folder)
+  - models (folder)
+    - blocks (folder)
+      - apple_block_geo.json
+  - texts (folder)
+    - en_US.lang
+  - textures (folder)
+    - blocks (folder)
+      - apple_block.png
+    - terrain_texture.json
+  - manifest.json
+
+The path and contents for the other files are next.
+
+> [!TIP]
+> Remember, the content given next in this section might look different from what you find in the sample pack because we removed the features we are not using, for clarity. We also changed the pack names from **example_feature_set** to **oak_apple_RP**.
 
 ### oak_apple_RP/models/blocks/apple_block_geo.json
 
-This is the geometry file for the custom apple block itself. To learn more about Minecraft custom block geometry, and about custom blocks in general, here is a link to the [Add Custom Die Block tutorial](AddCustomDieBlock.md).
+This is the geometry file for the custom apple block itself. Check out our   [Custom Die Block tutorial](AddCustomDieBlock.md) to learn more about Minecraft custom block geometry.
 
 ```json
 {
@@ -581,7 +575,7 @@ This is the geometry file for the custom apple block itself. To learn more about
 
 ### oak_apple_RP/texts/en_US.lang
 
-This is the name to use when you want to give yourself apple blocks.
+This is the name to use when you want to give yourself apple blocks with a / command.
 
 ```
 title.example:apple_block.name="Apple Block"
@@ -589,7 +583,7 @@ title.example:apple_block.name="Apple Block"
 
 ### oak_apple_RP/textures/blocks/apple_block.png
 
-You can right-click this image and save it in the **blocks** folder inside the **textures** folder.
+You can right-click the image below and save it in the **blocks** folder inside the **textures** folder.
 
 ![Downloadable image of an 'apple block'](../Documents/Media/Features/apple_block.png)
 
@@ -611,10 +605,8 @@ This is the path to the texture for the custom apple_block.
 }
 ```
 
-## What Success Looks Like...
-
-This is a forest with apple blocks appended to the trees. After you activate the packs and find your apple trees, take a moment to break an apple block and munch on some apples. 
-
-Notice that the apple blocks only attach to oak logs (because that's what oak tree trunks are made of) and oak leaves.
+## What to expect
 
 ![Image of a forest with oak trees that have apple blocks from the features packs added to them.](Media/Features/features_tutorial2_apples_galore.png)
+
+This is a forest with apple blocks attached to the trees. After you activate the packs and find your apple trees, take a moment to break an apple block and munch on some apples&mdash;you earned it!
