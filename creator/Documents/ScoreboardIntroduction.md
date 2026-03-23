@@ -34,7 +34,7 @@ In this example, you'll learn how to create a basic scoreboard, display it on th
 - **Players** are the characters in your world playing the game and the associated count of how many times each player accomplished the objective.
 
 > [!NOTE]
-> Because the objectives we're tracking don't already exist in the game, you should give them the type "dummy" or some other unique title to distinguish them.
+> Because the objectives we're tracking don't already exist in the game, you should give them the type "dummy" to distinguish them.
 
 1. In a world with cheats enabled, open the chat window and enter `/scoreboard` with a space after the command. The chat window will display the available scoreboard commands.
 
