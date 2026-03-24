@@ -3,10 +3,21 @@
   "summarizer": {
     "phrases": [
       {
-        "visibility": [{ "field": "value", "comparison": "defined" }],
+        "visibility": [
+          {
+            "field": "value",
+            "comparison": "defined"
+          }
+        ],
         "tokens": [
-          { "type": "literal", "text": "has knockback resistance of " },
-          { "type": "value", "field": "value" }
+          {
+            "type": "literal",
+            "text": "has knockback resistance of "
+          },
+          {
+            "type": "value",
+            "field": "value"
+          }
         ]
       }
     ]
@@ -20,13 +31,13 @@
       "id": "value",
       "title": "Value",
       "description": "The amount of knockback resistance, from 0.0 (none) to 1.0 (full immunity).",
-      "dataType": 3
+      "dataType": "float"
     },
     {
       "id": "max",
       "title": "Maximum Value",
       "description": "Maximum potential knockback resistance for this entity.",
-      "dataType": 3
+      "dataType": "float"
     }
   ]
 }

@@ -17,14 +17,14 @@
   "description": "A behavior pack block definition document for Minecraft Bedrock Edition. This describes the complete JSON file structure including format_version and the minecraft:block wrapper.",
   "fields": [
     {
-      "dataType": 25,
+      "dataType": "version",
       "id": "format_version",
       "title": "Format Version",
       "description": "The format version of this block behavior file. Determines which features and component schemas are available.",
       "isRequired": true
     },
     {
-      "dataType": 16,
+      "dataType": "object",
       "id": "minecraft:block",
       "title": "Block Definition",
       "description": "The block definition container with all behavior pack block data.",

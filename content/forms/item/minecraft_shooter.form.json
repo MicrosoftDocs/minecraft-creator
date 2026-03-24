@@ -23,7 +23,7 @@
         "id": "ammunition",
         "title": "Ammunition",
         "description": "Ammunition.",
-        "dataType": 16,
+        "dataType": 15,
         "defaultValue": [],
         "subFormId": "item_components/ammunition"
       },

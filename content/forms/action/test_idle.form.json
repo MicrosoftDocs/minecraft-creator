@@ -22,7 +22,7 @@
     {
       "id": "idle",
       "title": "Ticks",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "description": "Pauses test execution for a specified number of ticks, allowing time for world state to update. Essential for tests that need to wait for entity AI decisions, block updates, redstone propagation, or animation completion before asserting results."

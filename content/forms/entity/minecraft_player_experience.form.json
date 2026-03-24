@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "has an experience system" }
+          {
+            "type": "literal",
+            "text": "has an experience system"
+          }
         ]
       }
     ]
@@ -18,14 +21,14 @@
       "title": "Value",
       "description": "The initial value of the player experience.",
       "defaultValue": 1,
-      "dataType": 0
+      "dataType": "int"
     },
     {
       "id": "max",
       "title": "Maximum Value",
       "description": "The maximum player experience of this entity.",
       "defaultValue": 5,
-      "dataType": 0
+      "dataType": "int"
     }
   ]
 }

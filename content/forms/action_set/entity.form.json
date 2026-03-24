@@ -18,7 +18,7 @@
     {
       "id": "typeId",
       "title": "Entity Type Id",
-      "dataType": 2,
+      "dataType": "string",
       "defaultValue": ""
     }
   ],

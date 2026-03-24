@@ -125,7 +125,7 @@
   "scalarField": {
     "id": "number",
     "title": "Explosion Resistance",
-    "dataType": 1
+    "dataType": "boolean"
   },
   "title": "Explosion Resistance (Legacy)",
   "id": "minecraft:explosion_resistance"

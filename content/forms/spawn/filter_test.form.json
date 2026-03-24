@@ -15,19 +15,19 @@
   "fields": [
     {
       "id": "domain",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "operator",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "subject",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "value",
-      "dataType": 0
+      "dataType": "int"
     }
   ],
   "generatedFromSchema_doNotEdit": {

@@ -22,13 +22,13 @@
     {
       "id": "location",
       "title": "Location Offset",
-      "dataType": 41,
+      "dataType": "locationOffset",
       "priority": 10
     },
     {
       "id": "particleName",
       "title": "Particle to place",
-      "dataType": 2,
+      "dataType": "string",
       "isRequired": true,
       "priority": 1
     }

@@ -17,7 +17,7 @@ Replaces a specified portion of one or more Minecraft biomes.
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| replacements | *not set* | [Replacements](#biome-replacement) item | List of biome replacement configurations. | 
+| replacements | *not set* | Array of [Replacements](#biome-replacement) items | List of biome replacement configurations. | 
 
 ### replacements
 

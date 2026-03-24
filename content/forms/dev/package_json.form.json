@@ -18,42 +18,42 @@
     {
       "id": "name",
       "title": "Name",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "productName",
       "title": "Product Name",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "main",
       "title": "Main Entrypoint",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "homepage",
       "title": "Homepage",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "icon",
       "title": "Icon",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "private",
       "title": "Private",
-      "dataType": 1
+      "dataType": "boolean"
     },
     {
       "id": "description",
       "title": "Description",
-      "dataType": 13
+      "dataType": "longFormString"
     },
     {
       "id": "version",
       "title": "Version",
-      "dataType": 2
+      "dataType": "string"
     }
   ]
 }

@@ -22,7 +22,7 @@
     {
       "id": "location",
       "title": "Location",
-      "dataType": 11
+      "dataType": "point3"
     }
   ],
   "description": "Commands a simulated player to navigate to a target location using pathfinding. The simulated player moves like a real player, triggering pressure plates, opening doors, and interacting with the world. Used in GameTest Framework to verify player-centric behaviors."

@@ -16,12 +16,21 @@ If the mob is carrying a food item, the mob will eat it and the effects will be 
 > Requires food items to be in the entity's inventory in order to eat the food.
 
 
-## Eat Carried Item Behavior Properties
+## Entity Eat Carried Item Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| delay_before_eating | *not set* | Decimal number | Time in seconds the mob should wait before eating the item. | Fox: `28` | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Fox: `12` | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
+| delay_before_eating | 0 | Decimal number | Time in seconds the mob should wait before eating the item. | Fox: `28` | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Fox: `12` | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples
 

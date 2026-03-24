@@ -13,10 +13,27 @@ ms.date: 02/11/2025
 Allows the mob to move to a POI if able to.
 
 
-## Move To Poi Behavior Properties
+## Entity Move To Poi Behavior Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| poi_type | *not set* | String | Tells the goal what POI type it should be looking for | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
-| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  | 
+| poi_type | null | [Poi Type](#poi-type-choices) choices | Tells the goal what POI type it should be looking for | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this goal. | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
+
+### Poi Type choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| bed | Bed | |
+| jobsite | Jobsite | |
+| meeting_area | Meeting area | |

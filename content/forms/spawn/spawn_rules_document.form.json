@@ -7,21 +7,24 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "defines a spawn rules document" }
+          {
+            "type": "literal",
+            "text": "defines a spawn rules document"
+          }
         ]
       }
     ]
   },
   "fields": [
     {
-      "dataType": 25,
+      "dataType": "version",
       "id": "format_version",
       "title": "Format Version",
       "description": "The format version of this spawn rules file.",
       "isRequired": true
     },
     {
-      "dataType": 16,
+      "dataType": "object",
       "id": "minecraft:spawn_rules",
       "title": "Spawn Rules Definition",
       "description": "The spawn rules definition container.",

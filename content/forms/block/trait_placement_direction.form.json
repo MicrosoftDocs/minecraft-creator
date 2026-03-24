@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "has player rotation states on placement" }
+          {
+            "type": "literal",
+            "text": "has player rotation states on placement"
+          }
         ]
       }
     ]
@@ -13,7 +16,7 @@
     {
       "id": "enabled_states",
       "title": "Enabled States",
-      "dataType": 33,
+      "dataType": "checkboxListAsStringArray",
       "choices": [
         {
           "id": "minecraft:cardinal_direction",
@@ -30,7 +33,7 @@
     {
       "id": "y_rotation_offset",
       "title": "Y rotation offset",
-      "dataType": 3
+      "dataType": "float"
     }
   ],
   "title": "Placement Direction",

@@ -20,7 +20,7 @@
       "id": "0",
       "title": "Language Code",
       "description": "A locale code identifying a language translation (e.g., en_US, de_DE, ja_JP).",
-      "dataType": 2,
+      "dataType": "string",
       "samples": {
         "vanilla_data/resource_packs/vanilla/texts/languages.json": [
           {

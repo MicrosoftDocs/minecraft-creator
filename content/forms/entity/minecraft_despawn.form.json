@@ -91,7 +91,7 @@
       "id": "despawn_from_distance",
       "title": "Despawn From Distance",
       "description": "Specifies if the 'min_distance' and 'max_distance' are used in the standard despawn rules.",
-      "dataType": 16,
+      "dataType": "object",
       "subForm": {
         "id": "despawn_from_distance",
         "title": "Despawn From Distance",
@@ -101,14 +101,14 @@
             "title": "Max Distance",
             "description": "Maximum distance for standard despawn rules to instantly despawn the mob.",
             "defaultValue": 128,
-            "dataType": 0
+            "dataType": "int"
           },
           {
             "id": "min_distance",
             "title": "Min Distance",
             "description": "Minimum distance for standard despawn rules to try to despawn the mob.",
             "defaultValue": 32,
-            "dataType": 0
+            "dataType": "int"
           }
         ]
       }

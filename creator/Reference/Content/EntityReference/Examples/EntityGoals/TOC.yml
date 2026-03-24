@@ -2,6 +2,8 @@
   href: ../AIGoalList.md
 - name: minecraft:behavior.admire_item
   href: minecraftBehavior_admire_item.md
+- name: minecraft:behavior.aquatic_charge_attack
+  href: minecraftBehavior_aquatic_charge_attack.md
 - name: minecraft:behavior.avoid_block
   href: minecraftBehavior_avoid_block.md
 - name: minecraft:behavior.avoid_mob_type
@@ -166,6 +168,8 @@
   href: minecraftBehavior_move_towards_dwelling_restriction.md
 - name: minecraft:behavior.move_towards_home_restriction
   href: minecraftBehavior_move_towards_home_restriction.md
+- name: minecraft:behavior.move_towards_restriction
+  href: minecraftBehavior_move_towards_restriction.md
 - name: minecraft:behavior.move_towards_target
   href: minecraftBehavior_move_towards_target.md
 - name: minecraft:behavior.move_to_block
@@ -336,6 +340,10 @@
   href: minecraftBehavior_trade_interest.md
 - name: minecraft:behavior.trade_with_player
   href: minecraftBehavior_trade_with_player.md
+- name: minecraft:behavior.transport_items
+  href: minecraftBehavior_transport_items.md
+- name: minecraft:behavior.use_kinetic_weapon
+  href: minecraftBehavior_use_kinetic_weapon.md
 - name: minecraft:behavior.vex_copy_owner_target
   href: minecraftBehavior_vex_copy_owner_target.md
 - name: minecraft:behavior.vex_random_move

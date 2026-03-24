@@ -17,7 +17,7 @@ Configures an item as a digging tool, allowing it to break specific blocks faste
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| destroy_speeds | [] | [Destroy Speeds](#item-components-blockinfo) item | An array of objects that define which blocks this item can dig and at what speed. Each entry specifies a block (by ID or tag query) and a speed multiplier. | 
+| destroy_speeds | [] | Array of [Destroy Speeds](#item-components-blockinfo) items | An array of objects that define which blocks this item can dig and at what speed. Each entry specifies a block (by ID or tag query) and a speed multiplier. | 
 | use_efficiency | false | Boolean true/false | When true, the Efficiency enchantment will increase the dig speed of this item. Default is false. | 
 
 ### Item Components BlockInfo

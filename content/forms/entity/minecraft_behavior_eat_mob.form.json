@@ -138,5 +138,152 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.eat_mob",
+    "title": "Entity Eat Mob Behavior",
+    "description": "Allows the entity to eat a specified Mob.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "eat_animation_time",
+        "title": "Eat Animation Time",
+        "description": "Sets the time in seconds the eat animation should play for.",
+        "dataType": 3,
+        "defaultValue": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.eat_mob/",
+              "content": 0.3
+            }
+          ]
+        }
+      },
+      {
+        "id": "eat_mob_sound",
+        "title": "Eat Mob Sound",
+        "description": "Sets the sound that should play when eating a mob.",
+        "dataType": 2,
+        "defaultValue": "",
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.eat_mob/",
+              "content": "tongue"
+            }
+          ]
+        }
+      },
+      {
+        "id": "loot_table",
+        "title": "Loot Table",
+        "description": "The loot table for loot to be dropped when eating a mob.",
+        "dataType": 2,
+        "defaultValue": "",
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.eat_mob/",
+              "content": "loot_tables/entities/frog.json"
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.eat_mob/",
+              "content": 7
+            }
+          ]
+        }
+      },
+      {
+        "id": "pull_in_force",
+        "title": "Pull In Force",
+        "description": "Sets the force which the mob-to-be-eaten is pulled towards the eating mob.",
+        "dataType": 3,
+        "defaultValue": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.eat_mob/",
+              "content": 0.75
+            }
+          ]
+        }
+      },
+      {
+        "id": "reach_mob_distance",
+        "title": "Reach Mob Distance",
+        "description": "Sets the desired distance to be reached before eating the mob.",
+        "dataType": 3,
+        "defaultValue": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.eat_mob/",
+              "content": 1.75
+            }
+          ]
+        }
+      },
+      {
+        "id": "run_speed",
+        "title": "Run Speed",
+        "description": "Sets the entity's speed when running toward the target.",
+        "dataType": 3,
+        "defaultValue": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.eat_mob/",
+              "content": 2
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/frog.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.eat_mob/",
+          "content": {
+            "run_speed": 2,
+            "eat_animation_time": 0.3,
+            "pull_in_force": 0.75,
+            "reach_mob_distance": 1.75,
+            "eat_mob_sound": "tongue",
+            "loot_table": "loot_tables/entities/frog.json",
+            "priority": 7
+          }
+        }
+      ]
+    }
   }
 }

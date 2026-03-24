@@ -17,12 +17,12 @@
     {
       "id": "id",
       "title": "Id",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "name",
       "title": "Name",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "description": "Defines a documented API class."

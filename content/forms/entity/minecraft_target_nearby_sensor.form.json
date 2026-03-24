@@ -17,12 +17,12 @@
       "id": "on_inside_range",
       "title": "On Inside Range",
       "description": "Event to call when an entity gets in the inside range. Can be an object with event and target properties, or a simple event string.",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "ActorDefinitionTrigger",
       "alternates": [
         {
           "id": "on_inside_range",
-          "dataType": 2
+          "dataType": "string"
         }
       ]
     },
@@ -30,12 +30,12 @@
       "id": "on_outside_range",
       "title": "On Outside Range",
       "description": "Event to call when an entity gets outside the outside range. Can be an object with event and target properties, or a simple event string.",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "ActorDefinitionTrigger",
       "alternates": [
         {
           "id": "on_outside_range",
-          "dataType": 2
+          "dataType": "string"
         }
       ]
     }

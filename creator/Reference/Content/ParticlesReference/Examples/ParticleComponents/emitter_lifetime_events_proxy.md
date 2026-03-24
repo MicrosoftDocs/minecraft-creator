@@ -21,7 +21,7 @@ Controls emitter lifetime events like creation and expiration.
 | creation_event (as String) | *not set* | String |  | 
 | expiration_event | [] | Array of objects |  | 
 | expiration_event (as String) | *not set* | String |  | 
-| looping_travel_distance_events | [] | [Looping Travel Distance Events](#client-particles-emitter-lifetime-events-travel-distance-events) item |  | 
+| looping_travel_distance_events | [] | Array of [Looping Travel Distance Events](#client-particles-emitter-lifetime-events-travel-distance-events) items |  | 
 | timeline | {} | Array of objects |  | 
 | timeline (as String) | *not set* | String |  | 
 | travel_distance_events | {} | Array of objects |  | 

@@ -82,5 +82,88 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.sleep",
+    "title": "Entity Sleep Behavior",
+    "description": "Allows mobs that own a bed to in a village to move to and sleep in it.",
+    "fields": [
+      {
+        "id": "can_sleep_while_riding",
+        "title": "Can Sleep While Riding",
+        "description": "If true, the mob will be able to use the sleep goal if riding something",
+        "dataType": 1,
+        "defaultValue": false
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "cooldown_time",
+        "title": "Cooldown Time",
+        "description": "Time in seconds the mob has to wait before using the goal again",
+        "dataType": 3,
+        "defaultValue": 0
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "sleep_collider_height",
+        "title": "Sleep Collider Height",
+        "description": "The height of the mob's collider while sleeping",
+        "dataType": 3,
+        "defaultValue": 1
+      },
+      {
+        "id": "sleep_collider_width",
+        "title": "Sleep Collider Width",
+        "description": "The width of the mob's collider while sleeping",
+        "dataType": 3,
+        "defaultValue": 1
+      },
+      {
+        "id": "sleep_y_offset",
+        "title": "Sleep y Offset",
+        "description": "The y offset of the mob's collider while sleeping",
+        "dataType": 3,
+        "defaultValue": 1
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this goal.",
+        "dataType": 3,
+        "defaultValue": 1
+      },
+      {
+        "id": "timeout_cooldown",
+        "title": "Timeout Cooldown",
+        "description": "The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition.",
+        "dataType": 3,
+        "defaultValue": 8
+      }
+    ],
+    "samples": {}
   }
 }

@@ -30,7 +30,7 @@
   "fields": [
     {
       "id": "event_name",
-      "dataType": 2,
+      "dataType": "string",
       "lookupId": "entityTypeEvents"
     }
   ],

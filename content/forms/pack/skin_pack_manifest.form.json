@@ -17,7 +17,7 @@
   "description": "The manifest.json file for a Minecraft Bedrock Edition skin pack. Skin packs contain custom player skins that can be applied in-game. The manifest identifies the pack and its contents.",
   "fields": [
     {
-      "dataType": 0,
+      "dataType": "int",
       "id": "format_version",
       "title": "Format Version",
       "description": "The format version of this manifest file. Use 1 or 2.",
@@ -25,7 +25,7 @@
       "defaultValue": 1
     },
     {
-      "dataType": 16,
+      "dataType": "object",
       "id": "header",
       "title": "Header",
       "description": "The header section containing the pack's identity: name, description, unique UUID, and version.",
@@ -33,14 +33,38 @@
       "subFormId": "pack/behavior_pack_rest_of_file"
     },
     {
-      "dataType": 17,
+      "dataType": "objectArray",
       "id": "modules",
       "title": "Modules",
       "description": "Declares modules within the pack. For skin packs, use type 'skin_pack'.",
-      "isRequired": true
+      "isRequired": true,
+      "subForm": {
+        "fields": [
+          {
+            "id": "description",
+            "description": "Description of this module.",
+            "dataType": "longFormString"
+          },
+          {
+            "id": "type",
+            "description": "Type of this module.",
+            "dataType": "string"
+          },
+          {
+            "id": "uuid",
+            "description": "Unique identifier of this module.",
+            "dataType": "string"
+          },
+          {
+            "id": "version",
+            "description": "Version of this module.",
+            "dataType": "string"
+          }
+        ]
+      }
     },
     {
-      "dataType": 16,
+      "dataType": "object",
       "id": "metadata",
       "title": "Metadata",
       "description": "Optional metadata about the pack including author names and license."

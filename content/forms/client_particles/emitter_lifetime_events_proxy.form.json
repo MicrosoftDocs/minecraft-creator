@@ -44,7 +44,7 @@
       {
         "id": "looping_travel_distance_events",
         "title": "Looping Travel Distance Events",
-        "dataType": 16,
+        "dataType": 15,
         "defaultValue": [],
         "subFormId": "client_particles/emitter_lifetime_events_travel_distance_events"
       },

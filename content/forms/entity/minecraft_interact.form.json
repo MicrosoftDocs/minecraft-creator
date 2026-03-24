@@ -138,12 +138,12 @@
     },
     {
       "id": "interactions",
-      "dataType": 15,
+      "dataType": "objectArray",
       "description": "The list of interactions for this entity.",
       "alternates": [
         {
           "id": "interactions",
-          "dataType": 16,
+          "dataType": "object",
           "subFormId": "interactions"
         }
       ],
@@ -154,7 +154,7 @@
             "id": "particle_on_start",
             "title": "Particle On Start",
             "description": "Particle effect that will be triggered at the start of the interaction.",
-            "dataType": 15,
+            "dataType": "objectArray",
             "subForm": {
               "description": "Particle effect that will be triggered at the start of the interaction.",
               "fields": [
@@ -163,20 +163,20 @@
                   "title": "Particle Offset Towards Interactor",
                   "description": "Whether or not the particle will appear closer to who performed the interaction.",
                   "defaultValue": false,
-                  "dataType": 1
+                  "dataType": "boolean"
                 },
                 {
                   "id": "particle_type",
                   "title": "Particle Type",
                   "description": "The type of particle that will be spawned.",
-                  "dataType": 2
+                  "dataType": "string"
                 },
                 {
                   "id": "particle_y_offset",
                   "title": "Particle Y Offset",
                   "description": "Will offset the particle this amount in the y direction.",
                   "defaultValue": 0,
-                  "dataType": 3
+                  "dataType": "float"
                 }
               ]
             }
@@ -185,13 +185,13 @@
             "id": "play_sounds",
             "title": "Play Sounds",
             "description": "List of sounds to play when the interaction occurs.",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "repair_entity_item",
             "title": "Repair Entity Item",
             "description": "Allows to repair one of the entity's items.",
-            "dataType": 15,
+            "dataType": "objectArray",
             "subForm": {
               "description": "Allows to repair one of the entity's items.",
               "fields": [
@@ -199,13 +199,13 @@
                   "id": "amount",
                   "title": "Amount",
                   "description": "How much of the item durability should be restored upon interaction.",
-                  "dataType": 0
+                  "dataType": "int"
                 },
                 {
                   "id": "slot",
                   "title": "Slot",
                   "description": "The entity's slot containing the item to be repaired. Inventory slots are denoted by positive numbers. Armor slots are denoted by 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'.",
-                  "dataType": 0
+                  "dataType": "int"
                 }
               ]
             }
@@ -214,13 +214,13 @@
             "id": "spawn_entities",
             "title": "Spawn Entities",
             "description": "List of entities to spawn when the interaction occurs.",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "spawn_items",
             "title": "Spawn Items",
             "description": "Loot table with items to drop on the ground upon successful interaction.",
-            "dataType": 15,
+            "dataType": "objectArray",
             "subForm": {
               "description": "Loot table with items to drop on the ground upon successful interaction.",
               "fields": [
@@ -228,14 +228,14 @@
                   "id": "table",
                   "title": "Table",
                   "description": "File path, relative to the Behavior Pack's path, to the loot table file.",
-                  "dataType": 2
+                  "dataType": "string"
                 },
                 {
                   "id": "y_offset",
                   "title": "Y Offset",
                   "description": "Will offset the items spawn position this amount in the y direction.",
                   "defaultValue": 1,
-                  "dataType": 3
+                  "dataType": "float"
                 }
               ]
             }
@@ -245,33 +245,33 @@
             "title": "Swing",
             "description": "If true, the player will do the 'swing' animation when interacting with this entity.",
             "defaultValue": false,
-            "dataType": 1
+            "dataType": "boolean"
           },
           {
             "id": "transform_to_item",
             "title": "Transform To Item",
             "description": "The item used will transform to this item upon successful interaction. Format: itemName:auxValue",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "use_item",
             "title": "Use Item",
             "description": "If true, the interaction will use an item.",
             "defaultValue": false,
-            "dataType": 1
+            "dataType": "boolean"
           },
           {
             "id": "vibration",
             "title": "Vibration",
             "description": "Vibration to emit when the interaction occurs. Admitted values are none (no vibration emitted), shear, entity_die, entity_act, entity_interact.",
             "defaultValue": "entity_interact",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "on_interact",
             "title": "On Interact",
             "description": "Event to fire when the interaction occurs. Can be a string event name or an object with filters.",
-            "dataType": 22,
+            "dataType": "minecraftEventTrigger",
             "samples": {
               "/vanilla/behavior_pack/entities/allay.json": [
                 {
@@ -301,7 +301,7 @@
             "title": "Give Item",
             "description": "If true, the player can give items to the entity during interaction.",
             "defaultValue": false,
-            "dataType": 1,
+            "dataType": "boolean",
             "samples": {
               "/vanilla/behavior_pack/entities/allay.json": [
                 {
@@ -316,7 +316,7 @@
             "title": "Take Item",
             "description": "If true, the player can take items from the entity during interaction.",
             "defaultValue": false,
-            "dataType": 1,
+            "dataType": "boolean",
             "samples": {
               "/vanilla/behavior_pack/entities/allay.json": [
                 {
@@ -329,7 +329,7 @@
           {
             "id": "interact_text",
             "title": "Interact_text",
-            "dataType": 2,
+            "dataType": "string",
             "samples": {
               "/vanilla/behavior_pack/entities/allay.json": [
                 {
@@ -342,24 +342,24 @@
           {
             "id": "play_sounds",
             "title": "Play Sounds",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "hurt_item",
             "title": "Hurt Item",
-            "dataType": 7
+            "dataType": "number"
           },
           {
             "id": "swing",
             "title": "Swing",
             "description": "If true, the player will do the 'swing' animation when interacting with this entity.",
             "defaultValue": false,
-            "dataType": 1
+            "dataType": "boolean"
           },
           {
             "id": "spawn_items",
             "title": "Spawn Items",
-            "dataType": 16,
+            "dataType": "object",
             "subForm": {
               "id": "spawn_items",
               "title": "Spawn_items",
@@ -367,7 +367,7 @@
                 {
                   "id": "table",
                   "title": "Table",
-                  "dataType": 2,
+                  "dataType": "string",
                   "samples": {
                     "/vanilla/behavior_pack/entities/armadillo.json": [
                       {
@@ -385,12 +385,12 @@
             "title": "Use Item",
             "description": "If true, the interaction will use an item.",
             "defaultValue": false,
-            "dataType": 1
+            "dataType": "boolean"
           },
           {
             "id": "particle_on_start",
             "title": "Particle On Start",
-            "dataType": 16,
+            "dataType": "object",
             "subForm": {
               "id": "particle_on_start",
               "title": "Particle_on_start",
@@ -398,7 +398,7 @@
                 {
                   "id": "particle_type",
                   "title": "Particle_type",
-                  "dataType": 2,
+                  "dataType": "string",
                   "samples": {
                     "/vanilla/behavior_pack/entities/bee.json": [
                       {

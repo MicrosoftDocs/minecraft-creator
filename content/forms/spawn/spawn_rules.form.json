@@ -40,7 +40,7 @@
       "id": "conditions",
       "title": "Conditions",
       "description": "Array of spawn condition objects that define when and how this entity spawns.",
-      "dataType": 15,
+      "dataType": "objectArray",
       "defaultValue": [],
       "subFormId": "spawn/spawn_biomeconditions"
     }
@@ -52,7 +52,7 @@
       {
         "id": "conditions",
         "title": "Conditions",
-        "dataType": 16,
+        "dataType": 15,
         "defaultValue": [],
         "subFormId": "spawn/spawn_biomeconditions"
       },

@@ -19,88 +19,88 @@
     {
       "id": "101",
       "title": "Entity Type",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Tracks entity type identifiers defined in behavior pack entity JSON files.",
       "technicalDescription": "Data contains the entity type identifier"
     },
     {
       "id": "102",
       "title": "Block Type",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Tracks custom block type identifiers defined in behavior pack block JSON files.",
       "technicalDescription": "Data contains the block type identifier"
     },
     {
       "id": "103",
       "title": "Item Type",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Tracks custom item type identifiers defined in behavior pack item JSON files.",
       "technicalDescription": "Data contains the item type identifier"
     },
     {
       "id": "104",
       "title": "Terrain Texture",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Tracks terrain texture short names defined in terrain_texture.json.",
       "technicalDescription": "Data contains the terrain texture short name"
     },
     {
       "id": "105",
       "title": "Item Texture",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Tracks item texture short names defined in item_texture.json.",
       "technicalDescription": "Data contains the item texture short name"
     },
     {
       "id": "106",
       "title": "Sound Definition",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Tracks sound definition identifiers defined in sound_definitions.json.",
       "technicalDescription": "Data contains the sound definition identifier"
     },
     {
       "id": "107",
       "title": "Music Definition",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Tracks music definition identifiers defined in music_definitions.json.",
       "technicalDescription": "Data contains the music definition identifier"
     },
     {
       "id": "108",
       "title": "Sound File",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Tracks individual sound file references across sound definitions.",
       "technicalDescription": "Data contains the sound file path"
     },
     {
       "id": "109",
       "title": "Biome Behavior Type",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Tracks biome behavior components defined in behavior pack biome JSON files (minecraft:biome).",
       "technicalDescription": "Data contains biome behavior component identifiers"
     },
     {
       "id": "110",
       "title": "Biome Client Type",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Tracks biome client components defined in resource pack biome JSON files (minecraft:client_biome).",
       "technicalDescription": "Data contains biome client component identifiers"
     },
     {
       "id": "111",
       "title": "Particle Type",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Tracks particle effect components from particle JSON files, including emitter and particle components.",
       "technicalDescription": "Data contains particle effect component identifiers"
     }

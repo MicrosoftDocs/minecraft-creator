@@ -13,11 +13,20 @@ ms.date: 02/11/2025
 The entity puts on the desired equipment.
 
 
-## Equip Item Behavior Properties
+## Entity Equip Item Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Bogged: `3`, Fox: `2`, Parched: `4` | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Bogged: `3`, Fox: `2`, Parched: `4` | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples
 

@@ -13,19 +13,41 @@ ms.date: 02/11/2025
 Compels an entity to look at the player by rotating the `head` bone pose within a set limit.
 
 
-## Look At Player Behavior Properties
+## Entity Look At Player Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| angle_of_view_horizontal | 360 | Integer number | The angle in degrees that the mob can see in the Y-axis (up-down). | Ravager: `45` | 
-| angle_of_view_vertical | 360 | Integer number | The angle in degrees that the mob can see in the X-axis (left-right). |  | 
-| look_distance | 8 | Decimal number | The distance in blocks from which the entity will look at the nearest player. | Bogged: `8`, Breeze: `16`, Cave Spider: `6` | 
-| look_time | *not set* | Range of integers | Time range to look at the nearest player. | Zombie Horse: `[2,4]`, Campghost: `[0,100]` | 
+| angle_of_view_horizontal | 360 | Integer number | The angle in degrees that the mob can see rotated on the Y-axis (left-right). Value must be <= 360. | Ravager: `45` | 
+| angle_of_view_vertical | 360 | Integer number | The angle in degrees that the mob can see rotated on the X-axis (up-down). Value must be <= 360. |  | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
+| look_distance | 8 | Decimal number | The distance in blocks from which the entity will look at the nearest entity. | Bogged: `8`, Breeze: `16`, Cave Spider: `6` | 
+| look_time | {"max":4,"min":2} | [Look Time](#item-components-floatrange) item | Time range to look at the nearest entity. | Zombie Horse: `[2,4]`, Campghost: `[0,100]` | 
 | max_look_time | *not set* | Decimal number |  | Armadillo: `80` | 
 | min_look_time | *not set* | Decimal number |  | Armadillo: `40` | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `8`, Armadillo: `7`, Axolotl: `10` | 
-| probability | 0.02 | Decimal number | The probability of looking at the target. A value of 1.00 is 100%. | Allay: `0.02`, Elder Guardian: `0.01`, Enderman: `8` | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `8`, Armadillo: `7`, Axolotl: `10` | 
+| probability | 0.019999999552965164 | Decimal number | The probability of looking at the target. A value of 1.00 is 100%. Value must be <= 1. | Allay: `0.02`, Elder Guardian: `0.01`, Enderman: `8` | 
 | target_distance | *not set* | Decimal number |  | Allay: `6` | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
+
+### Item Components FloatRange
+Has minimum and maximum float values.
+
+
+#### Item Components FloatRange Properties
+
+**JSON path:** `look_time`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | 0 | Decimal number |  | 
+| min | 0 | Decimal number |  | 
 
 ## Samples
 
@@ -36,6 +58,37 @@ Compels an entity to look at the player by rotating the `head` bone pose within 
 "minecraft:behavior.look_at_player": {
   "priority": 8,
   "target_distance": 6,
+  "probability": 0.02
+}
+```
+
+#### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
+
+
+```json
+"minecraft:behavior.look_at_player": {
+  "priority": 7,
+  "look_distance": 8
+}
+```
+
+#### [Breeze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze.json)
+
+
+```json
+"minecraft:behavior.look_at_player": {
+  "priority": 7,
+  "look_distance": 16
+}
+```
+
+#### [Cave Spider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cave_spider.json)
+
+
+```json
+"minecraft:behavior.look_at_player": {
+  "priority": 7,
+  "look_distance": 6,
   "probability": 0.02
 }
 ```
@@ -64,26 +117,6 @@ Compels an entity to look at the player by rotating the `head` bone pose within 
 }
 ```
 
-#### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
-
-
-```json
-"minecraft:behavior.look_at_player": {
-  "priority": 7,
-  "look_distance": 8
-}
-```
-
-#### [Breeze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze.json)
-
-
-```json
-"minecraft:behavior.look_at_player": {
-  "priority": 7,
-  "look_distance": 16
-}
-```
-
 #### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
 
 
@@ -101,17 +134,6 @@ Compels an entity to look at the player by rotating the `head` bone pose within 
 ```json
 "minecraft:behavior.look_at_player": {
   "priority": 9
-}
-```
-
-#### [Cave Spider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cave_spider.json)
-
-
-```json
-"minecraft:behavior.look_at_player": {
-  "priority": 7,
-  "look_distance": 6,
-  "probability": 0.02
 }
 ```
 

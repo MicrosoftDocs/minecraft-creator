@@ -16,16 +16,38 @@ Compels an entity to look at the player that is currently trading with the entit
 > Requires the ability to trade in order to work properly.
 
 
-## Look At Trading Player Behavior Properties
+## Entity Look At Trading Player Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| angle_of_view_horizontal | 360 | Integer number | The angle in degrees that the mob can see in the Y-axis (up-down). |  | 
-| angle_of_view_vertical | 360 | Integer number | The angle in degrees that the mob can see in the X-axis (left-right). |  | 
-| look_distance | 8 | Decimal number | The distance in blocks from which the entity will look at the player this mob is trading with. |  | 
-| look_time | *not set* | Range of integers | Time range to look at the player this mob is trading with. |  | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager: `2`, Villager v2: `7`, Wandering Trader: `4` | 
-| probability | 0.02 | Decimal number | The probability of looking at the target. A value of 1.00 is 100%. |  | 
+| angle_of_view_horizontal | 360 | Integer number | The angle in degrees that the mob can see rotated on the Y-axis (left-right). Value must be <= 360. |  | 
+| angle_of_view_vertical | 360 | Integer number | The angle in degrees that the mob can see rotated on the X-axis (up-down). Value must be <= 360. |  | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
+| look_distance | 8 | Decimal number | The distance in blocks from which the entity will look at the nearest entity. |  | 
+| look_time | {"max":4,"min":2} | [Look Time](#item-components-floatrange) item | Time range to look at the nearest entity. |  | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager: `2`, Villager v2: `7`, Wandering Trader: `4` | 
+| probability | 0.019999999552965164 | Decimal number | The probability of looking at the target. A value of 1.00 is 100%. Value must be <= 1. |  | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
+
+### Item Components FloatRange
+Has minimum and maximum float values.
+
+
+#### Item Components FloatRange Properties
+
+**JSON path:** `look_time`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | 0 | Decimal number |  | 
+| min | 0 | Decimal number |  | 
 
 ## Samples
 

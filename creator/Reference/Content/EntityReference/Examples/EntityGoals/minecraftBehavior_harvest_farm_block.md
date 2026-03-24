@@ -19,23 +19,32 @@ Allows the entity to search within an area for farmland with air above it. If fo
 > * [Navigation (minecraft:navigation)](../EntityComponents/minecraftComponent_navigation.md)
 > 
 
-## Harvest Farm Block Behavior Properties
+## Entity Harvest Farm Block Behavior Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| goal_radius | 1.5 | Decimal number | Distance in blocks within the entity considers it has reached it's target position. | 
-| max_seconds_before_search | 1 | Decimal number | The maximum amount of time in seconds that the goal can take before searching for the first harvest block. The time is chosen between 0 and this number. | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
-| search_cooldown_max_seconds | 8 | Decimal number | The maximum amount of time in seconds that the goal can take before searching again, after failing to find a a harvest block already. The time is chosen between 0 and this number. | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  | 
+| goal_radius | 1.5 | Decimal number | Distance in blocks within the entity considers it has reached it's target position. Value must be > 0. | 
+| max_seconds_before_search | 1 | Decimal number | The maximum amount of time in seconds that the goal can take before searching for the first harvest block. The time is chosen between 0 and this number. Value must be > 0. | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
+| search_cooldown_max_seconds | 8 | Decimal number | The maximum amount of time in seconds that the goal can take before searching again, after failing to find a a harvest block already. The time is chosen between 0 and this number. Value must be > 0. | 
 | search_count | 0 | Integer number | The number of randomly selected blocks each tick that the mob will check within its search range and height for a valid block to move to. | 
-| search_height | 1 | Integer number | The height in blocks the entity will search within to find a valid target position. | 
-| search_range | 16 | Integer number | The distance in blocks the entity will search within to find a valid target position. | 
-| seconds_until_new_task | 0.5 | Decimal number | The amount of time in seconds that the goal will cooldown after a successful reap/sow, before it can start again. | 
+| search_height | 1 | Integer number | The height in blocks the entity will search within to find a valid target position. Value must be > 0. | 
+| search_range | 16 | Integer number | The distance in blocks the entity will search within to find a valid target position. Value must be > 0. | 
+| seconds_until_new_task | 0.5 | Decimal number | The amount of time in seconds that the goal will cooldown after a successful reap/sow, before it can start again. Value must be > 0. | 
 | speed_multiplier | 0.5 | Decimal number | Movement speed multiplier of the mob when using this goal. | 
 
 ### search_count
 
 The number of randomly selected blocks each tick that the mob will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick.
 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples

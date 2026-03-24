@@ -6,7 +6,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "defines entity instance properties" }
+          {
+            "type": "literal",
+            "text": "defines entity instance properties"
+          }
         ]
       }
     ]
@@ -16,42 +19,42 @@
       "id": "fallDistance",
       "altId": "FallDistance",
       "groupId": "minecraft:instance",
-      "dataType": 3,
+      "dataType": "float",
       "title": "Current max fall distance of the entity"
     },
     {
       "id": "fire",
       "altId": "Fire",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "title": "Fire time"
     },
     {
       "id": "air",
       "altId": "Air",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "title": "Air time"
     },
     {
       "id": "attackTime",
       "altId": "AttackTime",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "title": "Attack time"
     },
     {
       "id": "hurtTime",
       "altId": "HurtTime",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "title": "Hurt time"
     },
     {
       "id": "invulnerable",
       "altId": "Invulnerable",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Invulnerable"
     },
@@ -59,14 +62,14 @@
       "id": "bodyRot",
       "altId": "BodyRot",
       "groupId": "minecraft:instance",
-      "dataType": 3,
+      "dataType": "float",
       "title": "Body Rotation"
     },
     {
       "id": "dead",
       "altId": "Dead",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": false,
       "title": "Dead"
     },
@@ -74,28 +77,28 @@
       "id": "deathTime",
       "altId": "DeathTime",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "title": "Death Time"
     },
     {
       "id": "invulnerable",
       "altId": "Invulnerable",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "title": "Invulnerable time"
     },
     {
       "id": "inventoryVersion",
       "altId": "InventoryVersion",
       "groupId": "minecraft:core",
-      "dataType": 2,
+      "dataType": "string",
       "title": "Inventory version"
     },
     {
       "id": "isAngry",
       "altId": "IsAngry",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Whether an entity is angry"
     },
@@ -103,7 +106,7 @@
       "id": "isAutonomous",
       "altId": "IsAutonomous",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Entity is autonomous"
     },
@@ -111,7 +114,7 @@
       "id": "isBaby",
       "altId": "IsBaby",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Entity is a baby"
     },
@@ -119,7 +122,7 @@
       "id": "isEating",
       "altId": "IsEating",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Entity is eating"
     },
@@ -127,7 +130,7 @@
       "id": "isGliding",
       "altId": "IsGliding",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Entity is gliding"
     },
@@ -135,7 +138,7 @@
       "id": "isGlobal",
       "altId": "IsGlobal",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Entity is global"
     },
@@ -143,7 +146,7 @@
       "id": "isIllagerCaptain",
       "altId": "IsIllagerCaptain",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Entity is an illager captain"
     },
@@ -151,7 +154,7 @@
       "id": "isOrphaned",
       "altId": "IsOrphaned",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Entity is orphaned"
     },
@@ -160,7 +163,7 @@
       "altId": "IsPregnant",
       "groupId": "minecraft:instance",
       "defaultValue": 0,
-      "dataType": 6,
+      "dataType": "intBoolean",
       "title": "Entity is pregnant"
     },
     {
@@ -168,14 +171,14 @@
       "altId": "IsOutOfControl",
       "groupId": "minecraft:instance",
       "defaultValue": 0,
-      "dataType": 6,
+      "dataType": "intBoolean",
       "title": "Entity is out of control"
     },
     {
       "id": "isRoaring",
       "altId": "IsRoaring",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Entity is roaring"
     },
@@ -183,7 +186,7 @@
       "id": "isScared",
       "altId": "IsScared",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Entity is scared"
     },
@@ -191,7 +194,7 @@
       "id": "isStunned",
       "altId": "IsStunned",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Entity is stunned"
     },
@@ -199,7 +202,7 @@
       "id": "isSwimming",
       "altId": "IsSwimming",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Entity is swimming"
     },
@@ -207,7 +210,7 @@
       "id": "isTamed",
       "altId": "IsTamed",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Entity is tamed"
     },
@@ -215,7 +218,7 @@
       "id": "isTrusting",
       "altId": "IsTrusting",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Entity is trusting"
     },
@@ -223,7 +226,7 @@
       "id": "lastDimensionId",
       "altId": "LastDimensionId",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 0,
       "title": "Last dimension ID"
     },
@@ -231,7 +234,7 @@
       "id": "leasherId",
       "altId": "LeasherID",
       "groupId": "minecraft:instance",
-      "dataType": 10,
+      "dataType": "long",
       "defaultValue": 0,
       "title": "Leasher ID"
     },
@@ -239,7 +242,7 @@
       "id": "lootDropped",
       "altId": "LootDropped",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 0,
       "title": "Whether loot was dropped"
     },
@@ -247,7 +250,7 @@
       "id": "markVariant",
       "altId": "MarkVariant",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 0,
       "title": "Last dimension ID"
     },
@@ -255,7 +258,7 @@
       "id": "naturalSpawn",
       "altId": "NaturalSpawn",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Natural spawn"
     },
@@ -263,7 +266,7 @@
       "id": "onGround",
       "altId": "OnGround",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "On ground"
     },
@@ -271,7 +274,7 @@
       "id": "persistent",
       "altId": "Persistent",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Persistent"
     },
@@ -279,14 +282,14 @@
       "id": "motion",
       "altId": "Motion",
       "groupId": "minecraft:instance",
-      "dataType": 3,
+      "dataType": "float",
       "title": "Motion"
     },
     {
       "id": "onGround",
       "altId": "OnGround",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Entity is on ground"
     },
@@ -294,7 +297,7 @@
       "id": "ownerNew",
       "altId": "OwnerNew",
       "groupId": "minecraft:instance",
-      "dataType": 10,
+      "dataType": "long",
       "defaultValue": 0,
       "title": "Owner New"
     },
@@ -302,7 +305,7 @@
       "id": "portalCooldown",
       "altId": "PortalCooldown",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 0,
       "title": "Portal Cooldown"
     },
@@ -310,7 +313,7 @@
       "id": "breedCooldown",
       "altId": "BreedCooldown",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 0,
       "title": "Breed Cooldown"
     },
@@ -318,7 +321,7 @@
       "id": "inLove",
       "altId": "InLove",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 0,
       "title": "In Love"
     },
@@ -326,7 +329,7 @@
       "id": "loveCause",
       "altId": "LoveCause",
       "groupId": "minecraft:instance",
-      "dataType": 10,
+      "dataType": "long",
       "defaultValue": 0,
       "title": "Love Cause"
     },
@@ -334,7 +337,7 @@
       "id": "saddled",
       "altId": "Saddled",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Saddled"
     },
@@ -343,7 +346,7 @@
       "altId": "Sheared",
       "groupId": "minecraft:instance",
       "defaultValue": 0,
-      "dataType": 6,
+      "dataType": "intBoolean",
       "title": "Sheared"
     },
     {
@@ -351,14 +354,14 @@
       "altId": "ShowBottom",
       "groupId": "minecraft:instance",
       "defaultValue": 0,
-      "dataType": 6,
+      "dataType": "intBoolean",
       "title": "Show bottom"
     },
     {
       "id": "sitting",
       "altId": "Sitting",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Sitting"
     },
@@ -366,7 +369,7 @@
       "id": "skinId",
       "altId": "SkinID",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 0,
       "title": "Skin ID"
     },
@@ -374,7 +377,7 @@
       "id": "strength",
       "altId": "Strength",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 0,
       "title": "Strength"
     },
@@ -382,7 +385,7 @@
       "id": "strengthMax",
       "altId": "StrengthMax",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 0,
       "title": "Max Strength"
     },
@@ -390,7 +393,7 @@
       "id": "surface",
       "altId": "Surface",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Surface"
     },
@@ -398,7 +401,7 @@
       "id": "targetId",
       "altId": "TargetID",
       "groupId": "minecraft:instance",
-      "dataType": 10,
+      "dataType": "long",
       "defaultValue": 0,
       "title": "Target Id"
     },
@@ -406,7 +409,7 @@
       "id": "temper",
       "altId": "Temper",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 0,
       "title": "Temper"
     },
@@ -414,7 +417,7 @@
       "id": "tradeExperience",
       "altId": "TradeExperience",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 0,
       "title": "Trade Experience"
     },
@@ -422,7 +425,7 @@
       "id": "tradeTier",
       "altId": "TradeTier",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 0,
       "title": "Trade Tier"
     },
@@ -430,7 +433,7 @@
       "id": "uniqueId",
       "altId": "UniqueID",
       "groupId": "minecraft:instance",
-      "dataType": 10,
+      "dataType": "long",
       "defaultValue": 0,
       "title": "Unique Id"
     },
@@ -438,56 +441,56 @@
       "id": "variant",
       "altId": "Variant",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 0,
       "title": "Variant"
     },
     {
       "id": "boundX",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 0,
       "title": "Bound X"
     },
     {
       "id": "boundY",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 0,
       "title": "Bound Y"
     },
     {
       "id": "boundZ",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 0,
       "title": "Bound Z"
     },
     {
       "id": "canPickupItems",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": 0,
       "title": "Can pickup items"
     },
     {
       "id": "hasBoundOrigin",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": false,
       "title": "Has a bounding origin"
     },
     {
       "id": "hasSetCanPickupItems",
       "groupId": "minecraft:instance",
-      "dataType": 6,
+      "dataType": "intBoolean",
       "defaultValue": false,
       "title": "Can Pickup Items was set"
     },
     {
       "id": "limitedLife",
       "groupId": "minecraft:instance",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 0,
       "title": "Limited life"
     }

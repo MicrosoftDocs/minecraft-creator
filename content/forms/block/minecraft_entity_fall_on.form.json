@@ -3,11 +3,25 @@
   "summarizer": {
     "phrases": [
       {
-        "visibility": [{ "field": "minimum_fall_distance", "comparison": "defined" }],
+        "visibility": [
+          {
+            "field": "minimum_fall_distance",
+            "comparison": "defined"
+          }
+        ],
         "tokens": [
-          { "type": "literal", "text": "triggers fall events after " },
-          { "type": "value", "field": "minimum_fall_distance" },
-          { "type": "literal", "text": " blocks" }
+          {
+            "type": "literal",
+            "text": "triggers fall events after "
+          },
+          {
+            "type": "value",
+            "field": "minimum_fall_distance"
+          },
+          {
+            "type": "literal",
+            "text": " blocks"
+          }
         ]
       }
     ]
@@ -21,7 +35,7 @@
       "title": "Minimum Fall Distance",
       "defaultValue": 1,
       "description": "The minimum distance in blocks that an entity needs to fall before events are raised.",
-      "dataType": 3
+      "dataType": "float"
     }
   ],
   "samples": {

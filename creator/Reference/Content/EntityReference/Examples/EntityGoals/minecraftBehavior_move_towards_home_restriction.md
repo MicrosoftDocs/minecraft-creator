@@ -19,12 +19,21 @@ Allows entities with a `minecraft:home` component to move towards their home pos
 > * [Home (minecraft:home)](../EntityComponents/minecraftComponent_home.md)
 > 
 
-## Move Towards Home Restriction Behavior Properties
+## Entity Move Towards Home Restriction Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Elder Guardian: `5` | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Elder Guardian: `5` | 
 | speed_multiplier | 1 | Decimal number | This multiplier modifies the entity's speed when moving towards its restriction. |  | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples
 

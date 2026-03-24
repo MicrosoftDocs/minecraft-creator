@@ -10,7 +10,7 @@
         "id": "slots",
         "title": "Slots",
         "description": "A list of slot-specific events to execute when the entity's equipment changes in those slots.",
-        "dataType": 16,
+        "dataType": 15,
         "defaultValue": [],
         "subFormId": "entity/onequipmentchangedslotentrydescriptor"
       }

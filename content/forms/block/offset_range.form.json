@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "has offset range with steps" }
+          {
+            "type": "literal",
+            "text": "has offset range with steps"
+          }
         ]
       }
     ]
@@ -16,7 +19,7 @@
       "id": "range",
       "title": "Range",
       "description": "Range of values",
-      "dataType": 16,
+      "dataType": "object",
       "subForm": {
         "id": "range",
         "title": "Range of values",
@@ -25,13 +28,13 @@
             "id": "min",
             "title": "Minimum value",
             "description": "Minimum value of the range",
-            "dataType": 3
+            "dataType": "float"
           },
           {
             "id": "max",
             "title": "Maximum value",
             "description": "Maximum value of the range",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       }
@@ -40,7 +43,7 @@
       "id": "steps",
       "title": "Steps",
       "description": "Number of steps between the range",
-      "dataType": 0
+      "dataType": "int"
     }
   ]
 }

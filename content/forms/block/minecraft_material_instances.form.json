@@ -136,77 +136,77 @@
     {
       "id": "*",
       "title": "Default settings for all faces (*)",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "block/materialinstanceface",
       "alternates": [
         {
-          "dataType": 2
+          "dataType": "string"
         }
       ]
     },
     {
       "id": "north",
       "title": "North",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "block/materialinstanceface",
       "alternates": [
         {
-          "dataType": 2
+          "dataType": "string"
         }
       ]
     },
     {
       "id": "south",
       "title": "South",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "block/materialinstanceface",
       "alternates": [
         {
-          "dataType": 2
+          "dataType": "string"
         }
       ]
     },
     {
       "id": "east",
       "title": "East",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "block/materialinstanceface",
       "alternates": [
         {
-          "dataType": 2
+          "dataType": "string"
         }
       ]
     },
     {
       "id": "west",
       "title": "West",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "block/materialinstanceface",
       "alternates": [
         {
-          "dataType": 2
+          "dataType": "string"
         }
       ]
     },
     {
       "id": "up",
       "title": "Up",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "block/materialinstanceface",
       "alternates": [
         {
-          "dataType": 2
+          "dataType": "string"
         }
       ]
     },
     {
       "id": "down",
       "title": "Down",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "block/materialinstanceface",
       "alternates": [
         {
-          "dataType": 2
+          "dataType": "string"
         }
       ]
     },
@@ -214,7 +214,7 @@
       "id": "Material Instance",
       "title": "<Example Custom Material Instance>",
       "isRemoved": true,
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "block/materialinstanceface"
     }
   ],

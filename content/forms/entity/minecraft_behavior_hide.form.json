@@ -55,5 +55,81 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.hide",
+    "title": "Entity Hide Behavior",
+    "description": "Allows a mob with the hide component to attempt to move to - and hide at - an owned or nearby POI.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "Amount of time in seconds that the mob reacts.",
+        "dataType": 3,
+        "defaultValue": 1
+      },
+      {
+        "id": "poi_type",
+        "title": "POIType",
+        "description": "Tells the goal what POI type it should be looking for",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "bed",
+            "title": "Bed"
+          },
+          {
+            "id": "jobsite",
+            "title": "Jobsite"
+          },
+          {
+            "id": "meeting_area",
+            "title": "Meeting area"
+          }
+        ],
+        "defaultValue": null
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this goal.",
+        "dataType": 3,
+        "defaultValue": 1
+      },
+      {
+        "id": "timeout_cooldown",
+        "title": "Timeout Cooldown",
+        "description": "The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition.",
+        "dataType": 3,
+        "defaultValue": 8
+      }
+    ],
+    "samples": {}
   }
 }

@@ -22,7 +22,7 @@
     {
       "id": "location",
       "title": "Location",
-      "dataType": 11
+      "dataType": "point3"
     }
   ],
   "description": "Creates a simulated player entity for automated testing. Simulated players can move, interact with blocks, attack entities, and use items just like real players, but are controlled programmatically. Essential for testing player-facing features in the GameTest Framework."

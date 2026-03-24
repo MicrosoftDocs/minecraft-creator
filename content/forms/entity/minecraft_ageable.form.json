@@ -135,35 +135,56 @@
     {
       "id": "duration",
       "description": "Length of time before an entity grows up (-1 to always stay a baby)",
-      "dataType": 3
+      "dataType": "float"
     },
     {
       "id": "feed_items",
       "title": "Feed Items",
-      "description": "List of items that can be fed to an entity to age them up. Can be a single item string or an array of items.",
-      "dataType": 17,
+      "description": "List of items that can be fed to an entity to age them up. Can be a single item string, an array of strings, or an array of objects with item and growth properties.",
+      "dataType": "objectArray",
+      "subForm": {
+        "id": "ageable_feed_item",
+        "fields": [
+          {
+            "id": "item",
+            "title": "Item",
+            "description": "The item identifier.",
+            "dataType": "string"
+          },
+          {
+            "id": "growth",
+            "title": "Growth",
+            "description": "How much the entity ages when fed this item.",
+            "dataType": "float"
+          }
+        ]
+      },
       "alternates": [
         {
           "id": "feed_items",
-          "dataType": 2
+          "dataType": "stringArray"
+        },
+        {
+          "id": "feed_items",
+          "dataType": "string"
         }
       ]
     },
     {
       "id": "drop_items",
       "description": "List of items that are dropped when an entity grows up",
-      "dataType": 17
+      "dataType": "stringArray"
     },
     {
       "id": "grow_up",
       "title": "Grow up event",
       "description": "Event to fire when an entity grows up. Can be an object with event and target properties, or a simple event string.",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "ActorDefinitionTrigger",
       "alternates": [
         {
           "id": "grow_up",
-          "dataType": 2
+          "dataType": "string"
         }
       ]
     }

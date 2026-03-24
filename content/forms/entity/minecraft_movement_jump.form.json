@@ -17,7 +17,7 @@
       "id": "jump_delay",
       "title": "Jump Delay",
       "description": "Delay in seconds after landing when using the slime move control. Can be a single number, an array [min, max], or an object with range_min and range_max.",
-      "dataType": 19
+      "dataType": "floatRange"
     }
   ],
   "note": "In order to follow targets, this entity must have the `minecraft:behavior.slime_attack` component, otherwise the entity will jump in the direction it's looking in.",

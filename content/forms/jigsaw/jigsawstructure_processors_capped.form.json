@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "limits how many times a delegated processor can be applied" }
+          {
+            "type": "literal",
+            "text": "limits how many times a delegated processor can be applied"
+          }
         ]
       }
     ]
@@ -14,7 +17,7 @@
       "id": "processor_type",
       "title": "Processors Type",
       "description": "Processors Type",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "generated_doNotEdit": {

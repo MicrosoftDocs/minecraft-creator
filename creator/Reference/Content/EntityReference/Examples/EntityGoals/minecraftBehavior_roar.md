@@ -18,12 +18,21 @@ Allows this entity to roar at another entity based on data in `minecraft:anger_l
 > * [Anger Level (minecraft:anger_level)](../EntityComponents/minecraftComponent_anger_level.md)
 > 
 
-## Roar Behavior Properties
+## Entity Roar Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
 | duration | 0 | Decimal number | The amount of time to roar for. | Warden: `4.2` | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Warden: `2` | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Warden: `2` | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples
 

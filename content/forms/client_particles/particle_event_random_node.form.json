@@ -72,13 +72,13 @@
       {
         "id": "randomize",
         "title": "Randomize",
-        "dataType": 16,
+        "dataType": 15,
         "subFormId": "client_particles/particle_event_random_node"
       },
       {
         "id": "sequence",
         "title": "Sequence",
-        "dataType": 16,
+        "dataType": 15,
         "subFormId": "client_particles/particle_event_node"
       },
       {

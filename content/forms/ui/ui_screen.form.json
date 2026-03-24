@@ -17,7 +17,7 @@
   "description": "A UI screen definition file for Minecraft Bedrock Edition. UI screens define complete interface layouts including namespaces, element definitions, and global variables.",
   "fields": [
     {
-      "dataType": 2,
+      "dataType": "string",
       "id": "namespace",
       "title": "Namespace",
       "description": "The namespace for this UI screen. Used to reference elements from other UI files using the 'namespace.element_name' syntax.",

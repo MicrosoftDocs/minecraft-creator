@@ -20,14 +20,14 @@
       "id": "items",
       "title": "Items",
       "description": "Flattened list of file paths that were indexed for quick lookup.",
-      "dataType": 17,
+      "dataType": "stringArray",
       "allowCreateDelete": true
     },
     {
       "id": "trie",
       "title": "Trie",
       "description": "Sparse trie keyed by tokenised path segments for accelerated search. The structure is generator-specific and may contain deeply nested objects.",
-      "dataType": 16
+      "dataType": "object"
     }
   ]
 }

@@ -62,5 +62,74 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.mingle",
+    "title": "Entity Mingle Behavior",
+    "description": "Allows an entity to go to the village bell and mingle with other entities",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "cooldown_time",
+        "title": "Cooldown Time",
+        "description": "Time in seconds the mob has to wait before using the goal again",
+        "dataType": 3,
+        "defaultValue": 0
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "Amount of time in seconds that the entity will chat with another entity",
+        "dataType": 3,
+        "defaultValue": 1
+      },
+      {
+        "id": "mingle_distance",
+        "title": "Mingle Distance",
+        "description": "The distance from its partner that this entity will mingle. If the entity type is not the same as the entity, this value needs to be identical on both entities.",
+        "dataType": 3,
+        "defaultValue": 2
+      },
+      {
+        "id": "mingle_partner_type",
+        "title": "Mingle Partner Type",
+        "description": "The entity type that this entity is allowed to mingle with",
+        "dataType": 2,
+        "defaultValue": ""
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this goal.",
+        "dataType": 3,
+        "defaultValue": 1
+      }
+    ],
+    "samples": {}
   }
 }

@@ -18,15 +18,27 @@ Allows this entity to use a flame-breath attack.
 > * Ender Dragon (minecraft:ender_dragon)
 > 
 
-## Dragonflaming Behavior Properties
+## Entity Dragonflaming Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
 | cooldown_time | 10 | Decimal number | Time (in seconds) between each start of the cycle to roar, then breath flame. |  | 
 | flame_time | 0.5 | Decimal number | Time (in seconds), after roar, to breath flame. |  | 
 | ground_flame_count | 4 | Integer number | Number of ground flame-breath attacks to use before flight-takeoff. |  | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Ender Dragon: `1` | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Ender Dragon: `1` | 
 | roar_time | 2 | Decimal number | Time (in seconds) to roar, before breathing flame. |  | 
+| smoke_color | #DC00EF | String |  |  | 
+| smoke_radius | 5 | Decimal number |  |  | 
+| smoke_time | 10 | Decimal number |  |  | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples
 

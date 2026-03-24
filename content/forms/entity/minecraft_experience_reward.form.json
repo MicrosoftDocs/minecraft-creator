@@ -51,11 +51,11 @@
   "fields": [
     {
       "id": "on_bred",
-      "dataType": 34
+      "dataType": "molang"
     },
     {
       "id": "on_death",
-      "dataType": 34
+      "dataType": "molang"
     }
   ],
   "generated_doNotEdit": {

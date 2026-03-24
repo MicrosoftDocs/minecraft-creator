@@ -134,22 +134,22 @@
     {
       "id": "min_delay_secs",
       "title": "The minimum the scheduler will be delayed.",
-      "dataType": 3
+      "dataType": "float"
     },
     {
       "id": "max_delay_secs",
       "title": "The maximum the scheduler will be delayed.",
-      "dataType": 3
+      "dataType": "float"
     },
     {
       "id": "scheduled_events",
       "title": "Scheduled Events",
       "description": "The list of triggers that fire when the conditions match the given filter criteria. Can be an array of event objects or a single event object.",
-      "dataType": 15,
+      "dataType": "objectArray",
       "alternates": [
         {
           "id": "scheduled_events",
-          "dataType": 16
+          "dataType": "object"
         }
       ]
     }

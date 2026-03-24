@@ -115,5 +115,126 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.flee_sun",
+    "title": "Entity Flee Sun Behavior",
+    "description": "Allows the mob to run away from direct sunlight and seek shade.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
+              "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
+              "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/parched.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
+              "content": 3
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal",
+        "dataType": 3,
+        "defaultValue": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
+              "content": 1
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
+          "content": {
+            "priority": 2,
+            "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
+          "content": {
+            "priority": 2,
+            "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
+          "content": {
+            "priority": 2,
+            "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/stray.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
+          "content": {
+            "priority": 2,
+            "speed_multiplier": 1
+          }
+        }
+      ]
+    }
   }
 }

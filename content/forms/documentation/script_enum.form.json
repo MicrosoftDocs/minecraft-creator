@@ -17,7 +17,7 @@
     {
       "id": "name",
       "title": "Name",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "description": "Defines a documented script enumeration."

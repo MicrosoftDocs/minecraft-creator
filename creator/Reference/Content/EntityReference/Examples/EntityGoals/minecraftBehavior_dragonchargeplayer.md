@@ -23,16 +23,38 @@ Allows this entity to attack a player by charging at them. The player is chosen 
 > * Ender Dragon (minecraft:ender_dragon)
 > 
 
-## Dragonchargeplayer Behavior Properties
+## Entity Dragonchargeplayer Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | active_speed | 3 | Decimal number | The speed this entity moves when this behavior has started or while it's active. |  | 
-| continue_charge_threshold_time | 0.5 | Decimal number | If the dragon is outside the "target_zone" for longer than "continue_charge_threshold_time" seconds, the charge is canceled. |  | 
-| flight_speed | 0.6 | Decimal number | The speed this entity moves while this behavior is not active. |  | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Ender Dragon: `1` | 
-| target_zone | *not set* | Range of integers | Minimum and maximum distance, from the target, this entity can use this behavior. |  | 
-| turn_speed | 0.7 | Decimal number | The speed at which this entity turns while using this behavior. |  | 
+| continue_charge_threshold_time | 0.5 | Decimal number | If the dragon is outside the "target_zone" for longer than "continue_charge_threshold_time" seconds, the charge is canceled. Value must be > 0. |  | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
+| flight_speed | 0.6000000238418579 | Decimal number | The speed this entity moves while this behavior is not active. |  | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Ender Dragon: `1` | 
+| target_zone | {"max":150,"min":10} | [Target Zone](#item-components-floatrange) item | Minimum and maximum distance, from the target, this entity can use this behavior. |  | 
+| turn_speed | 0.699999988079071 | Decimal number | The speed at which this entity turns while using this behavior. |  | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
+
+### Item Components FloatRange
+Has minimum and maximum float values.
+
+
+#### Item Components FloatRange Properties
+
+**JSON path:** `target_zone`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | 0 | Decimal number |  | 
+| min | 0 | Decimal number |  | 
 
 ## Samples
 

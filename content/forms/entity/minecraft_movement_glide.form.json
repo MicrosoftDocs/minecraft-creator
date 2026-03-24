@@ -1,26 +1,31 @@
 {
-  "$schema": "../../../schemas/dataform/form-definition.schema.json",  "summarizer": {
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "uses gliding movement" }
+          {
+            "type": "literal",
+            "text": "uses gliding movement"
+          }
         ]
       }
     ]
-  },  "fields": [
+  },
+  "fields": [
     {
       "id": "max_turn",
       "title": "Max Turn",
       "description": "The maximum number in degrees the mob can turn per tick.",
       "defaultValue": 30,
-      "dataType": 3
+      "dataType": "float"
     },
     {
       "id": "speed_when_turning",
       "title": "Speed when turning",
       "description": "Speed that the mob adjusts to when it has to turn quickly.",
       "defaultValue": 0.2,
-      "dataType": 3
+      "dataType": "float"
     }
   ],
   "generated_doNotEdit": {

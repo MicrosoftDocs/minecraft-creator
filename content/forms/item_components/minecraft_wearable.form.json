@@ -30,7 +30,7 @@
     },
     {
       "id": "dispensable",
-      "dataType": 1,
+      "dataType": "boolean",
       "isDeprecated": true
     }
   ],

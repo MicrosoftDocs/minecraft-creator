@@ -98,7 +98,7 @@
       "id": "pickup_same_items_as_in_hand",
       "title": "Pickup Same Items As In Hand",
       "description": "If true, the mob will only pick up items that match what it is already holding.",
-      "dataType": 1
+      "dataType": "boolean"
     }
   ],
   "generated_doNotEdit": {

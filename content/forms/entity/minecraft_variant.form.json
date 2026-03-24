@@ -60,7 +60,7 @@
       "title": "Value",
       "description": "The Id of the variant. By convention, 0 is the Id of the base entity/default appearance.",
       "defaultValue": 0,
-      "dataType": 0,
+      "dataType": "int",
       "hideSamples": true
     }
   ],

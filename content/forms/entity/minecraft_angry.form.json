@@ -133,66 +133,66 @@
     {
       "id": "angry_sound",
       "description": "The sound event to play when the mob is angry",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "sound_interval",
       "description": "The range of time in seconds to randomly wait before playing the sound again.",
-      "dataType": 18
+      "dataType": "intRange"
     },
     {
       "id": "duration",
       "description": "The amount of time in seconds that the entity will be angry.",
-      "dataType": 0
+      "dataType": "int"
     },
     {
       "id": "duration_delta",
       "description": "Variance in seconds added to the duration [-delta, delta].",
-      "dataType": 0
+      "dataType": "int"
     },
     {
       "id": "filters",
       "title": "Anger exemption filters",
       "description": "Filter out mob types that it should not attack while angry (other Piglins)",
-      "dataType": 20
+      "dataType": "minecraftFilter"
     },
     {
       "id": "broadcast_anger",
       "description": "If set, other entities of the same entity definition within the broadcastRange will also become angry",
-      "dataType": 1,
+      "dataType": "boolean",
       "defaultValue": false
     },
     {
       "id": "broadcast_anger_on_attack",
       "description": "If set, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob attacks",
-      "dataType": 1,
+      "dataType": "boolean",
       "defaultValue": false
     },
     {
       "id": "broadcast_range",
       "description": "Distance in blocks within which other entities of the same entity type will become angry",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 20
     },
     {
       "id": "broadcast_targets",
       "description": "A list of entity families to broadcast anger to",
-      "dataType": 17
+      "dataType": "stringArray"
     },
     {
       "id": "broadcast_filters",
       "description": "Conditions that make this entry in the list valid",
-      "dataType": 20
+      "dataType": "minecraftFilter"
     },
     {
       "id": "calm_event",
       "description": "Event to fire when this entity is calmed down. Can be a simple event name string or an object with event and target properties.",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "ActorDefinitionTrigger",
       "alternates": [
         {
           "id": "calm_event",
-          "dataType": 2
+          "dataType": "string"
         }
       ]
     }

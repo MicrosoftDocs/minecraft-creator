@@ -92,5 +92,104 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.find_underwater_treasure",
+    "title": "Entity Find Underwater Treasure Behavior",
+    "description": "Allows the mob to move towards the nearest underwater ruin or shipwreck.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.find_underwater_treasure/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "search_range",
+        "title": "Search Range",
+        "description": "The range that the mob will search for a treasure chest within a ruin or shipwreck to move towards.",
+        "dataType": 0,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.find_underwater_treasure/",
+              "content": 30
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal",
+        "dataType": 3,
+        "defaultValue": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.find_underwater_treasure/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "stop_distance",
+        "title": "Stop Distance",
+        "description": "The distance the mob will move before stopping.",
+        "dataType": 3,
+        "defaultValue": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.find_underwater_treasure/",
+              "content": 50
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.find_underwater_treasure/",
+          "content": {
+            "priority": 2,
+            "speed_multiplier": 2,
+            "search_range": 30,
+            "stop_distance": 50
+          }
+        }
+      ]
+    }
   }
 }

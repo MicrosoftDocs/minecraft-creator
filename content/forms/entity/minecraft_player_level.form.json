@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "has a level system" }
+          {
+            "type": "literal",
+            "text": "has a level system"
+          }
         ]
       }
     ]
@@ -17,13 +20,13 @@
       "id": "value",
       "title": "Value",
       "description": "The initial value of the player level.",
-      "dataType": 0
+      "dataType": "int"
     },
     {
       "id": "max",
       "title": "Maximum Value",
       "description": "The maximum player level value of the entity.",
-      "dataType": 0
+      "dataType": "int"
     }
   ]
 }

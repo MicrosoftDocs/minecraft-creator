@@ -169,47 +169,47 @@
       "id": "sound_interval",
       "title": "Sound Interval",
       "description": "Range of random ticks to wait between tempt sounds. Can be a number, an array [min, max], or an object with range_min/range_max or min/max.",
-      "dataType": 0,
+      "dataType": "int",
       "alternates": [
         {
           "id": "sound_interval",
-          "dataType": 15,
+          "dataType": "objectArray",
           "subForm": {
             "fields": [
               {
                 "id": "0",
-                "dataType": 0
+                "dataType": "int"
               },
               {
                 "id": "1",
-                "dataType": 0
+                "dataType": "int"
               }
             ]
           }
         },
         {
           "id": "sound_interval",
-          "dataType": 16,
+          "dataType": "object",
           "subForm": {
             "fields": [
               {
                 "id": "range_min",
-                "dataType": 0,
+                "dataType": "int",
                 "description": "Minimum interval"
               },
               {
                 "id": "range_max",
-                "dataType": 0,
+                "dataType": "int",
                 "description": "Maximum interval"
               },
               {
                 "id": "min",
-                "dataType": 0,
+                "dataType": "int",
                 "description": "Minimum interval"
               },
               {
                 "id": "max",
-                "dataType": 0,
+                "dataType": "int",
                 "description": "Maximum interval"
               }
             ]

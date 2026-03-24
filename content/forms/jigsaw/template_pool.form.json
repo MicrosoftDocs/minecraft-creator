@@ -7,7 +7,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "defines a pool of structure elements for jigsaw connections" }
+          {
+            "type": "literal",
+            "text": "defines a pool of structure elements for jigsaw connections"
+          }
         ]
       }
     ]
@@ -17,14 +20,14 @@
       "id": "format_version",
       "title": "Format Version",
       "description": "The format version of this template pool definition.",
-      "dataType": 2,
+      "dataType": "string",
       "isRequired": true
     },
     {
       "id": "minecraft:template_pool",
       "title": "Template Pool Definition",
       "description": "The template pool definition.",
-      "dataType": 16,
+      "dataType": "object",
       "isRequired": true,
       "subForm": {
         "id": "template_pool_definition",
@@ -33,7 +36,7 @@
             "id": "description",
             "title": "Description",
             "description": "The description block containing the template pool identifier.",
-            "dataType": 16,
+            "dataType": "object",
             "isRequired": true,
             "subFormId": "jigsaw/jigsawstructuretemplatepool_description"
           },
@@ -41,7 +44,7 @@
             "id": "elements",
             "title": "Elements",
             "description": "Array of pool elements that can be selected when generating structures.",
-            "dataType": 15,
+            "dataType": "objectArray",
             "isRequired": true,
             "subForm": {
               "id": "pool_element_entry",
@@ -50,7 +53,7 @@
                   "id": "element",
                   "title": "Element",
                   "description": "The structure element configuration.",
-                  "dataType": 16,
+                  "dataType": "object",
                   "isRequired": true,
                   "subForm": {
                     "id": "pool_element",
@@ -59,24 +62,24 @@
                         "id": "element_type",
                         "title": "Element Type",
                         "description": "The type of pool element. Valid values: 'minecraft:single_pool_element', 'minecraft:list_pool_element', 'minecraft:feature_pool_element', 'minecraft:empty_pool_element', 'minecraft:legacy_single_pool_element'.",
-                        "dataType": 2,
+                        "dataType": "string",
                         "isRequired": true
                       },
                       {
                         "id": "location",
                         "title": "Location",
                         "description": "Path to the structure template file, relative to the structures folder.",
-                        "dataType": 2
+                        "dataType": "string"
                       },
                       {
                         "id": "processors",
                         "title": "Processors",
                         "description": "Identifier of the processor list to apply to this element, or inline processor configuration.",
-                        "dataType": 2,
+                        "dataType": "string",
                         "alternates": [
                           {
                             "id": "processors",
-                            "dataType": 16,
+                            "dataType": "object",
                             "description": "Inline processor configuration."
                           }
                         ]
@@ -85,7 +88,7 @@
                         "id": "projection",
                         "title": "Projection",
                         "description": "How the element projects onto terrain. Valid values: 'rigid', 'terrain_matching'.",
-                        "dataType": 2,
+                        "dataType": "string",
                         "defaultValue": "rigid"
                       }
                     ]
@@ -95,7 +98,7 @@
                   "id": "weight",
                   "title": "Weight",
                   "description": "The relative weight for selecting this element. Higher weights are more likely to be chosen.",
-                  "dataType": 0,
+                  "dataType": "int",
                   "defaultValue": 1,
                   "minValue": 1
                 }
@@ -106,7 +109,7 @@
             "id": "fallback",
             "title": "Fallback Pool",
             "description": "Optional fallback pool identifier to use when no elements can be placed.",
-            "dataType": 2
+            "dataType": "string"
           }
         ]
       }

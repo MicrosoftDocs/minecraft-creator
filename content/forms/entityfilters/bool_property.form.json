@@ -22,7 +22,7 @@
       "title": "Operator",
       "description": "(Optional) The comparison to apply with 'value'.",
       "defaultValue": "equals",
-      "dataType": 2,
+      "dataType": "string",
       "mustMatchChoices": true,
       "choices": [
         {

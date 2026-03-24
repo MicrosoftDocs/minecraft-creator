@@ -17,23 +17,23 @@
     {
       "id": "volume",
       "title": "Volume",
-      "dataType": 3,
+      "dataType": "float",
       "minValue": 0,
       "maxValue": 1,
       "step": 0.05,
-      "experienceType": 3,
+      "experienceType": "slider",
       "description": "Overall adjustment to the volume level of the set of sounds"
     },
     {
       "id": "pitch",
       "title": "Pitch",
-      "dataType": 3,
+      "dataType": "float",
       "description": "Overall adjustment to the pitch level of the set of sounds"
     },
     {
       "id": "events",
       "title": "Events",
-      "dataType": 24,
+      "dataType": "keyedStringCollection",
       "description": "A set of associated events."
     }
   ],

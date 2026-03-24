@@ -3,11 +3,25 @@
   "summarizer": {
     "phrases": [
       {
-        "visibility": [{ "field": "value", "comparison": "defined" }],
+        "visibility": [
+          {
+            "field": "value",
+            "comparison": "defined"
+          }
+        ],
         "tokens": [
-          { "type": "literal", "text": "has a follow range of " },
-          { "type": "value", "field": "value" },
-          { "type": "literal", "text": " blocks" }
+          {
+            "type": "literal",
+            "text": "has a follow range of "
+          },
+          {
+            "type": "value",
+            "field": "value"
+          },
+          {
+            "type": "literal",
+            "text": " blocks"
+          }
         ]
       }
     ]
@@ -20,13 +34,13 @@
       "id": "value",
       "title": "Value",
       "description": "The default follow range in blocks. Entities will attempt to stay within this radius of their target.",
-      "dataType": 0
+      "dataType": "int"
     },
     {
       "id": "max",
       "title": "Max",
       "description": "Maximum follow distance in blocks. The entity will not pursue targets beyond this range.",
-      "dataType": 0
+      "dataType": "int"
     }
   ]
 }

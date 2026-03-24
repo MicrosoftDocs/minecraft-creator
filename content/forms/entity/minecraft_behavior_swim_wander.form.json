@@ -55,5 +55,67 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.swim_wander",
+    "title": "Entity Swim Wander Behavior",
+    "description": "Allows the entity to wander around while swimming, when not path-finding.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "interval",
+        "title": "Interval",
+        "description": "Percent chance to start wandering, when not path-finding. 1 = 100%",
+        "dataType": 3,
+        "defaultValue": 0.008329999633133411
+      },
+      {
+        "id": "look_ahead",
+        "title": "Look Ahead",
+        "description": "Distance to look ahead for obstacle avoidance, while wandering.",
+        "dataType": 3,
+        "defaultValue": 5
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "This multiplier modifies the entity's speed when wandering.",
+        "dataType": 3,
+        "defaultValue": 1
+      },
+      {
+        "id": "wander_time",
+        "title": "Wander Time",
+        "description": "Amount of time (in seconds) to wander after wandering behavior was successfully started.",
+        "dataType": 3,
+        "defaultValue": 5
+      }
+    ],
+    "samples": {}
   }
 }

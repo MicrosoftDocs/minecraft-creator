@@ -7,7 +7,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "plays a sound from the entity" }
+          {
+            "type": "literal",
+            "text": "plays a sound from the entity"
+          }
         ]
       }
     ]
@@ -17,10 +20,12 @@
     {
       "id": "sound",
       "description": "The identifier of the sound to play.",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
-  "tags": ["entityevent"],
+  "tags": [
+    "entityevent"
+  ],
   "samples": {
     "samples": [
       {

@@ -18,7 +18,7 @@
       "title": "Value",
       "description": "Whether this entity is stackable.",
       "defaultValue": true,
-      "dataType": 1
+      "dataType": "boolean"
     }
   ],
   "generated_doNotEdit": {

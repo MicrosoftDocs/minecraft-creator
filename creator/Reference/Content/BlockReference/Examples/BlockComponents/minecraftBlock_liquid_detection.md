@@ -25,7 +25,7 @@ Experimental toggles required: Upcoming Creator Features (in format versions bef
 | liquid_type | water | String | The type of liquid this detection rule is for. Currently, `water` is the only supported liquid type. If this field is omitted, `water` will be the liquid type by default. | 
 | on_liquid_touches | blocking | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | How the block reacts to flowing water. | 
 | stops_liquid_flowing_from_direction | *not set* | Array of strings | When a block contains a liquid, controls the directions in which the liquid can't flow out from the block. | 
-| use_liquid_clipping | false | Boolean true/false | Whether this block uses the encompassing collider to visually clip the liquid. The encompassing collider is the smallest single AABB that contains all of the block's colliders. | 
+| use_liquid_clipping | false | Boolean true/false | Whether this block uses the encompassing collider to visually clip the liquid. | 
 
 ### on_liquid_touches
 
@@ -34,6 +34,10 @@ How the block reacts to flowing water. Must be one of the following options: "bl
 ### stops_liquid_flowing_from_direction
 
 When a block contains a liquid, controls the directions in which the liquid can't flow out from the block. Also controls the directions in which a block can stop liquid flowing into it if `no_reaction` is set for the `on_liquid_touches` field. Can be a list of the following directions: "up", "down", "north", "south", "east", "west". The default is an empty list; this means that liquid can flow out of all directions by default.
+
+### use_liquid_clipping
+
+Whether this block uses the encompassing collider to visually clip the liquid. The encompassing collider is the smallest single AABB that contains all of the block's colliders. A liquid's base visual shape is ALWAYS a quad, they do not have more subdivisions. When use_liquid_clipping is TRUE, the game will attempt to reduce the visible volume of water if the collision shape allows it. Eg. a wall will turn the water base shape into a rectangle on the side of the incoming water. When use_liquid_clipping is FALSE, the game will preserve the water base shape as a full square, no matter what the collision shape of the block they share space with is.
 
 
 ## Samples

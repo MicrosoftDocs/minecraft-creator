@@ -13,6 +13,7 @@ ms.date: 02/11/2025
 | Entity Behavior (AI) Components | Description |
 |:-----|:----------|
 | [minecraft:behavior.admire_item](EntityGoals/minecraftBehavior_admire_item.md)| Enables the mob to admire items that have been configured as admirable. |
+| [minecraft:behavior.aquatic_charge_attack](EntityGoals/minecraftBehavior_aquatic_charge_attack.md)| Enables an aquatic mob to dash at its target with knockback; includes overshoot and cooldown settings. |
 | [minecraft:behavior.avoid_block](EntityGoals/minecraftBehavior_avoid_block.md)| Allows this entity to avoid certain blocks. |
 | [minecraft:behavior.avoid_mob_type](EntityGoals/minecraftBehavior_avoid_mob_type.md)| Allows the entity to run away from other entities that meet the criteria specified. |
 | [minecraft:behavior.barter](EntityGoals/minecraftBehavior_barter.md)| Enables the mob to barter for items that have been configured as barter currency. |
@@ -20,7 +21,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.break_door](EntityGoals/minecraftBehavior_break_door.md)| Allows this mob to break doors. |
 | [minecraft:behavior.breed](EntityGoals/minecraftBehavior_breed.md)| Allows this mob to breed with other mobs. |
 | [minecraft:behavior.celebrate](EntityGoals/minecraftBehavior_celebrate.md)| Allows this entity to celebrate surviving a raid by making celebration sounds and jumping. |
-| [minecraft:behavior.celebrate_survive](EntityGoals/minecraftBehavior_celebrate_survive.md)| Allows this entity to celebrate surviving a raid by shooting fireworks. |
+| [minecraft:behavior.celebrate_survive](EntityGoals/minecraftBehavior_celebrate_survive.md)| Allows the player to trade with this mob. |
 | [minecraft:behavior.charge_attack](EntityGoals/minecraftBehavior_charge_attack.md)| Allows this entity to damage a target by using a running attack. |
 | [minecraft:behavior.charge_held_item](EntityGoals/minecraftBehavior_charge_held_item.md)| Allows an entity to charge and use their held item. |
 | [minecraft:behavior.circle_around_anchor](EntityGoals/minecraftBehavior_circle_around_anchor.md)| Causes an entity to circle around an anchor point placed near a point or target. |
@@ -89,12 +90,13 @@ ms.date: 02/11/2025
 | [minecraft:behavior.melee_box_attack](EntityGoals/minecraftBehavior_melee_box_attack.md)| Allows an entity to deal damage through a melee attack with reach calculations based on bounding boxes. |
 | [minecraft:behavior.mingle](EntityGoals/minecraftBehavior_mingle.md)| Allows an entity to go to the village bell and mingle with other entities |
 | [minecraft:behavior.mount_pathing](EntityGoals/minecraftBehavior_mount_pathing.md)| Allows the mob to move around on its own while mounted seeking a target to attack. |
-| [minecraft:behavior.move_around_target](EntityGoals/minecraftBehavior_move_around_target.md)| Allows an entity to move around a target. |
+| [minecraft:behavior.move_around_target](EntityGoals/minecraftBehavior_move_around_target.md)| Allows an entity to move around a target.If the entity is too close(i.e.closer than destination range min and height difference limit) it will try to move away from its target.If the entity is too far away from its target it will try to move closer to a random position within the destination range.A randomized amount of those positions will be behind the target, and the spread can be tweaked with 'destination_pos_spread_degrees'. |
 | [minecraft:behavior.move_indoors](EntityGoals/minecraftBehavior_move_indoors.md)| Allows this entity to move indoors. |
 | [minecraft:behavior.move_outdoors](EntityGoals/minecraftBehavior_move_outdoors.md)| Allows this entity to move outdoors. |
 | [minecraft:behavior.move_through_village](EntityGoals/minecraftBehavior_move_through_village.md)| Can only be used by Villagers. |
-| [minecraft:behavior.move_towards_dwelling_restriction](EntityGoals/minecraftBehavior_move_towards_dwelling_restriction.md)| Allows entities with the "minecraft:dweller" component to move toward their Village area that the entity should be restricted to. |
+| [minecraft:behavior.move_towards_dwelling_restriction](EntityGoals/minecraftBehavior_move_towards_dwelling_restriction.md)| Allows entities with the "minecraft:dweller" component to move toward their village area that the entity should be restricted to. |
 | [minecraft:behavior.move_towards_home_restriction](EntityGoals/minecraftBehavior_move_towards_home_restriction.md)| Allows entities with a `minecraft:home` component to move towards their home position. |
+| [minecraft:behavior.move_towards_restriction](EntityGoals/minecraftBehavior_move_towards_restriction.md)| AI goal that drives entities back toward their designated home area when they've wandered too far. |
 | [minecraft:behavior.move_towards_target](EntityGoals/minecraftBehavior_move_towards_target.md)| Allows mob to move towards its current target. |
 | [minecraft:behavior.move_to_block](EntityGoals/minecraftBehavior_move_to_block.md)| Allows mob to move towards a block. |
 | [minecraft:behavior.move_to_land](EntityGoals/minecraftBehavior_move_to_land.md)| Allows the mob to move back onto land when in water. |
@@ -106,7 +108,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.nap](EntityGoals/minecraftBehavior_nap.md)| Allows mobs to occassionally stop and take a nap under certain conditions. |
 | [minecraft:behavior.nearest_attackable_target](EntityGoals/minecraftBehavior_nearest_attackable_target.md)| Allows an entity to attack the closest target within a given subset of specific target types. |
 | [minecraft:behavior.nearest_prioritized_attackable_target](EntityGoals/minecraftBehavior_nearest_prioritized_attackable_target.md)| Allows the mob to check for and pursue the nearest valid target. |
-| [minecraft:behavior.ocelotattack](EntityGoals/minecraftBehavior_ocelotattack.md)| Allows an entity to attack by sneaking and pouncing. |
+| [minecraft:behavior.ocelotattack](EntityGoals/minecraftBehavior_ocelotattack.md)| Controls specific attack behavior for Ocelots. |
 | [minecraft:behavior.ocelot_sit_on_block](EntityGoals/minecraftBehavior_ocelot_sit_on_block.md)| Allows to mob to be able to sit in place like the ocelot. |
 | [minecraft:behavior.offer_flower](EntityGoals/minecraftBehavior_offer_flower.md)| Allows the mob to offer a flower to another mob with the minecraft:take_flower behavior. |
 | [minecraft:behavior.open_door](EntityGoals/minecraftBehavior_open_door.md)| Allows the mob to open doors. |
@@ -116,7 +118,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.pet_sleep_with_owner](EntityGoals/minecraftBehavior_pet_sleep_with_owner.md)| Allows the pet mob to move onto a bed with its owner while sleeping. |
 | [minecraft:behavior.pickup_items](EntityGoals/minecraftBehavior_pickup_items.md)| Allows the mob to pick up items on the ground. |
 | [minecraft:behavior.place_block](EntityGoals/minecraftBehavior_place_block.md)| AI goal that makes entities place blocks into the world, like Endermen placing their carried block or snow golems leaving snow trails. |
-| [minecraft:behavior.play](EntityGoals/minecraftBehavior_play.md)| Allows the mob to play with other mobs by chasing each other and moving around randomly. |
+| [minecraft:behavior.play](EntityGoals/minecraftBehavior_play.md)| Allows the mob to offer a flower to another mob with the minecraft:take_flower behavior. |
 | [minecraft:behavior.player_ride_tamed](EntityGoals/minecraftBehavior_player.ride_tamed.md)| Allows the mob to be ridden by the player after being tamed. |
 | [minecraft:behavior.play_dead](EntityGoals/minecraftBehavior_play_dead.md)| Allows this entity to pretend to be dead to avoid being targeted by attackers. |
 | [minecraft:behavior.raid_garden](EntityGoals/minecraftBehavior_raid_garden.md)| Allows the mob to eat/raid crops out of farms until they are full. |
@@ -180,6 +182,8 @@ ms.date: 02/11/2025
 | [minecraft:behavior.timer_flag_3](EntityGoals/minecraftBehavior_timer_flag_3.md)| Fires an event when this behavior starts, then waits for a duration before stopping. |
 | [minecraft:behavior.trade_interest](EntityGoals/minecraftBehavior_trade_interest.md)| Allows the mob to look at a player that is holding a tradable item. |
 | [minecraft:behavior.trade_with_player](EntityGoals/minecraftBehavior_trade_with_player.md)| Allows the player to trade with this mob. |
+| [minecraft:behavior.transport_items](EntityGoals/minecraftBehavior_transport_items.md)| A behavior that enables a mob to transport items from and to containers. |
+| [minecraft:behavior.use_kinetic_weapon](EntityGoals/minecraftBehavior_use_kinetic_weapon.md)| Enables a mob to use kinetic weaponry by intermittently charging at its target and repositioning afterward. |
 | [minecraft:behavior.vex_copy_owner_target](EntityGoals/minecraftBehavior_vex_copy_owner_target.md)| Allows the mob to target the same entity its owner is targeting. |
 | [minecraft:behavior.vex_random_move](EntityGoals/minecraftBehavior_vex_random_move.md)| Allows the mob to move around randomly like the Vex. |
 | [minecraft:behavior.wither_random_attack_pos_goal](EntityGoals/minecraftBehavior_wither_random_attack_pos_goal.md)| Allows the wither to launch random attacks. |

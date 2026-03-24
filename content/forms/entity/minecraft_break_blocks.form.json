@@ -17,7 +17,7 @@
     {
       "id": "breakable_blocks",
       "description": "A list of the blocks that can be broken as this entity moves around.",
-      "dataType": 17
+      "dataType": "stringArray"
     }
   ],
   "generated_doNotEdit": {

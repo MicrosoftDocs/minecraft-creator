@@ -17,7 +17,7 @@
       "id": "tint_method",
       "title": "Tint Method",
       "description": "Tint multiplied to the color. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint.",
-      "dataType": 2,
+      "dataType": "string",
       "isRequired": false,
       "mustMatchChoices": true,
       "choices": [

@@ -17,7 +17,7 @@
       "id": "entity_types",
       "title": "Entity Types",
       "description": "List of entity types that this mob can target if they hurt their owner",
-      "dataType": 15,
+      "dataType": "objectArray",
       "subForm": {
         "description": "List of entity types that this mob can target if they hurt their owner",
         "fields": [
@@ -26,7 +26,7 @@
             "title": "Reevaluate Target",
             "description": "If true, the targeting entity will continuously reevaluate the target and stop attacking if the target no longer meets the filter conditions.",
             "defaultValue": false,
-            "dataType": 1
+            "dataType": "boolean"
           }
         ]
       }

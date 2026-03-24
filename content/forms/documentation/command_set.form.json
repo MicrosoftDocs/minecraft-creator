@@ -17,7 +17,7 @@
     {
       "id": "id",
       "title": "Name",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "description": "Defines a documented command set."

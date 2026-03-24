@@ -37,7 +37,7 @@
       "id": "family",
       "title": "Type Family (Tag)",
       "description": "A set of tags that describe the categories of this entity. In addition to typically having a tag for the type of mob, entities frequently have additional type family tags that modify how the rest of the Minecraft world reacts to them.",
-      "dataType": 17,
+      "dataType": "stringArray",
       "mustMatchChoices": false,
       "choices": [
         {

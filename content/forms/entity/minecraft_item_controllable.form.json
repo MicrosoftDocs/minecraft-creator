@@ -12,7 +12,20 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "control_items",
+      "title": "Control Items",
+      "description": "List of items that can be used to control this entity while ridden. Can be a single string or an array of strings.",
+      "dataType": "stringArray",
+      "alternates": [
+        {
+          "id": "control_items",
+          "dataType": "string"
+        }
+      ]
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:item_controllable",
     "title": "Item Controllable",

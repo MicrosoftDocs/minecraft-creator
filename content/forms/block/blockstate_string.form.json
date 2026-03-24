@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "has string block state values" }
+          {
+            "type": "literal",
+            "text": "has string block state values"
+          }
         ]
       }
     ]
@@ -20,7 +23,7 @@
         "value1",
         "value2"
       ],
-      "dataType": 17
+      "dataType": "stringArray"
     }
   ]
 }

@@ -137,7 +137,7 @@
       "id": "item_specific_speeds",
       "title": "Item Specific Speeds",
       "description": "Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. This array currently requires UpcomingFeatures experiment to be enabled.",
-      "dataType": 15,
+      "dataType": "objectArray",
       "subForm": {
         "description": "Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. This array currently requires UpcomingFeatures experiment to be enabled.",
         "fields": [
@@ -145,20 +145,20 @@
             "id": "destroy_speed",
             "title": "Destroy Speed",
             "description": "Required. A destroy speed applied while using the defined 'item'.",
-            "dataType": 3
+            "dataType": "float"
           },
           {
             "id": "item",
             "title": "Item",
             "description": "Required. A filter for the item used while mining.",
-            "dataType": 15,
+            "dataType": "objectArray",
             "subForm": {
               "description": "Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. This array currently requires UpcomingFeatures experiment to be enabled.",
               "fields": [
                 {
                   "id": "tags",
                   "title": "Tags",
-                  "dataType": 32
+                  "dataType": "numberArray"
                 }
               ]
             },
@@ -167,7 +167,7 @@
                 "id": "item",
                 "title": "Item",
                 "description": "An item tag that is usable for the item.",
-                "dataType": 2,
+                "dataType": "string",
                 "lookupId": "itemType"
               }
             ]
@@ -256,7 +256,7 @@
       "title": "Seconds To Destroy",
       "description": "Sets the number of seconds it takes to destroy the block with base equipment. Greater numbers result in greater mining times.",
       "defaultValue": 0,
-      "dataType": 3
+      "dataType": "float"
     }
   ],
   "scalarField": {
@@ -265,7 +265,7 @@
     "tags": [
       "presence"
     ],
-    "dataType": 1
+    "dataType": "boolean"
   },
   "samples": {
     "samples": [

@@ -19,13 +19,25 @@ Adds a timer for the entity to grow up. It can be accelerated by giving the enti
 |:----------|:-------------|:----|:-----------|:------------- |
 | drop_items | *not set* | Array of strings | List of items that are dropped when an entity grows up |  | 
 | duration | 1200 | Decimal number | Length of time before an entity grows up (-1 to always stay a baby) | Chicken: `1200` | 
-| feed_items | *not set* | Array of strings | List of items that can be fed to an entity to age them up. Can be a single item string or an array of items. | Chicken: `["wheat_seeds","beetroot_seeds","melon_seeds","pumpkin_seeds","pitcher_pod","torchflower_seeds"]`, Cow: `"wheat"`, Dolphin: `["fish","salmon"]` | 
+| feed_items (Ageable Feed Item) | *not set* | Array of [Feed Items](#feed-items) items | List of items that can be fed to an entity to age them up. Can be a single item string, an array of strings, or an array of objects with item and growth properties. | Chicken: `["wheat_seeds","beetroot_seeds","melon_seeds","pumpkin_seeds","pitcher_pod","torchflower_seeds"]`, Cow: `"wheat"`, Dolphin: `["fish","salmon"]` | 
+| feed_items (as Array of strings) | *not set* | Array of strings |  |  | 
 | feed_items (as String) | *not set* | String |  |  | 
 | grow_up | *not set* | Object | Event to fire when an entity grows up. Can be an object with event and target properties, or a simple event string. | Chicken: `{"event":"minecraft:ageable_grow_up","target":"self"}`, Dolphin: `{"event":"ageable_grow_up","target":"self"}` | 
 | grow_up (as String) | *not set* | String |  |  | 
 | interact_filters | *not set* | Minecraft filter | List of conditions to meet so that the entity can be fed. |  | 
 | pause_growth_items | *not set* | Array of strings | List of items that can be fed to the entity to pause growth for baby entities. | Chicken: `["golden_dandelion"]` | 
 | reset_growth_items | *not set* | Array of strings | List of items that can be used to reset growth for baby entities. | Chicken: `["golden_dandelion"]` | 
+
+### Feed Items
+
+#### Ageable Feed Item Properties
+
+**JSON path:** `feed_items`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| growth | *not set* | Decimal number | How much the entity ages when fed this item. | 
+| item | *not set* | String | The item identifier. | 
 
 ## Samples
 

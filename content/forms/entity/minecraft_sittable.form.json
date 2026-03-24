@@ -17,12 +17,12 @@
       "id": "sit_event",
       "title": "Sit Event",
       "description": "Event to run when the entity enters the 'sit' state. Can be an object with event and target properties, or a simple event string.",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "ActorDefinitionTrigger",
       "alternates": [
         {
           "id": "sit_event",
-          "dataType": 2
+          "dataType": "string"
         }
       ]
     },
@@ -30,12 +30,12 @@
       "id": "stand_event",
       "title": "Stand Event",
       "description": "Event to run when the entity exits the 'sit' state. Can be an object with event and target properties, or a simple event string.",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "ActorDefinitionTrigger",
       "alternates": [
         {
           "id": "stand_event",
-          "dataType": 2
+          "dataType": "string"
         }
       ]
     }

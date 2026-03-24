@@ -22,7 +22,7 @@
         "id": "markers",
         "title": "Markers",
         "description": "The Jigsaw blocks contained within the generated structure.",
-        "dataType": 16,
+        "dataType": 15,
         "subFormId": "structure/jigsaw_block_metadata",
         "isRequired": true
       },

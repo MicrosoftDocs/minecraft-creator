@@ -91,7 +91,7 @@
         "id": "destroy_speeds",
         "title": "Destroy Speeds",
         "description": "A list of blocks to dig with correlating speeds of digging.",
-        "dataType": 16,
+        "dataType": 15,
         "defaultValue": [],
         "subFormId": "item_components/blockinfo"
       },

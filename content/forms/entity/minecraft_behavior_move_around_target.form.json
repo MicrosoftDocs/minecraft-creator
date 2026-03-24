@@ -160,5 +160,228 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.move_around_target",
+    "title": "Entity Move Around Target Behavior",
+    "description": "Allows an entity to move around a target.If the entity is too close(i.e.closer than destination range min and height difference limit) it will try to move away from its target.If the entity is too far away from its target it will try to move closer to a random position within the destination range.A randomized amount of those positions will be behind the target, and the spread can be tweaked with 'destination_pos_spread_degrees'.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "destination_pos_spread_degrees",
+        "title": "Destination Pos Spread Degrees",
+        "description": "This angle (in degrees) is used for controlling the spread when picking a destination position behind the target. A zero spread angle means the destination position will be straight behind the target with no variance. A 90 degree spread angle means the destination position can be up to 45 degrees to the left and to the right of the position straight behind the target's view direction.",
+        "dataType": 3,
+        "defaultValue": 90,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_around_target/",
+              "content": 360
+            }
+          ]
+        }
+      },
+      {
+        "id": "destination_position_range",
+        "title": "Destination Position Range",
+        "description": "The range of distances from the target entity within which the goal should look for a position to move the owner entity to.",
+        "dataType": 16,
+        "defaultValue": {
+          "max": 8,
+          "min": 4
+        },
+        "subFormId": "item_components/floatrange",
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_around_target/",
+              "content": [
+                4,
+                8
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "filters",
+        "description": "Conditions that need to be met for the behavior to start.",
+        "dataType": 16,
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "filters",
+          "title": "Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": 16
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": 16
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": 16
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": 2,
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": 16
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "filters",
+            "dataType": 16
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_around_target/",
+              "content": {
+                "all_of": [
+                  {
+                    "test": "on_ground",
+                    "value": true
+                  },
+                  {
+                    "operator": "<=",
+                    "test": "target_distance",
+                    "subject": "self",
+                    "value": 24
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "height_difference_limit",
+        "title": "Height Difference Limit",
+        "description": "Distance in height (in blocks) between the owner entity and the target has to be less than this value when owner checks if it is too close and should move away from the target. This value needs to be bigger than zero for the move away logic to trigger.",
+        "dataType": 3,
+        "defaultValue": 10
+      },
+      {
+        "id": "horizontal_search_distance",
+        "title": "Horizontal Search Distance",
+        "description": "Horizontal search distance (in blocks) when searching for a position to move away from target.",
+        "dataType": 0,
+        "defaultValue": 5
+      },
+      {
+        "id": "movement_speed",
+        "title": "Movement Speed",
+        "description": "The speed with which the entity should move to its target position.",
+        "dataType": 3,
+        "defaultValue": 0.6000000238418579,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_around_target/",
+              "content": 1.2
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_around_target/",
+              "content": 3
+            }
+          ]
+        }
+      },
+      {
+        "id": "vertical_search_distance",
+        "title": "Vertical Search Distance",
+        "description": "Vertical search distance (in blocks) when searching for a position to move away from target.",
+        "dataType": 0,
+        "defaultValue": 5
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/breeze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.move_around_target/",
+          "content": {
+            "destination_pos_spread_degrees": 360,
+            "destination_position_range": [
+              4,
+              8
+            ],
+            "priority": 3,
+            "filters": {
+              "all_of": [
+                {
+                  "test": "on_ground",
+                  "value": true
+                },
+                {
+                  "operator": "<=",
+                  "test": "target_distance",
+                  "subject": "self",
+                  "value": 24
+                }
+              ]
+            },
+            "movement_speed": 1.2
+          }
+        }
+      ]
+    }
   }
 }

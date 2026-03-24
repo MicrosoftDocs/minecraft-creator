@@ -134,39 +134,39 @@
     {
       "id": "seat_count",
       "title": "Number of seats",
-      "dataType": 0,
+      "dataType": "int",
       "priority": 10
     },
     {
       "id": "crouching_skip_interact",
       "title": "This entity can't be interacted with while crouching.",
-      "dataType": 1
+      "dataType": "boolean"
     },
     {
       "id": "controlling_seat",
       "title": "The seat that controls how this entity moves",
-      "dataType": 0,
+      "dataType": "int",
       "priority": 12
     },
     {
       "id": "pulls_in_entities",
       "title": "This entity will pull in nearby entities.",
-      "dataType": 1,
+      "dataType": "boolean",
       "isDeprecated": true
     },
     {
       "id": "rider_can_interact",
       "title": "Whether a rider can interact with this item.",
-      "dataType": 1
+      "dataType": "boolean"
     },
     {
       "id": "on_rider_enter_event",
-      "dataType": 39,
+      "dataType": "minecraftEventReference",
       "versionIntroduced": "1.21.80"
     },
     {
       "id": "on_rider_exit_event",
-      "dataType": 39,
+      "dataType": "minecraftEventReference",
       "versionIntroduced": "1.21.80"
     },
     {
@@ -185,11 +185,11 @@
     {
       "id": "seats",
       "priority": 11,
-      "dataType": 15,
+      "dataType": "objectArray",
       "alternates": [
         {
           "id": "seats",
-          "dataType": 16
+          "dataType": "object"
         }
       ],
       "subForm": {
@@ -207,14 +207,14 @@
             "title": "Rotate Rider By",
             "description": "Offset to rotate riders by. Can be a number or a Molang expression.",
             "defaultValue": 0,
-            "dataType": 34
+            "dataType": "molang"
           },
           {
             "id": "lock_rider_rotation",
             "title": "Lock Rider Rotation",
             "description": "Angle in degrees to rotate the rider by. Can be a number or a Molang expression.",
             "defaultValue": 0,
-            "dataType": 34
+            "dataType": "molang"
           }
         ]
       }

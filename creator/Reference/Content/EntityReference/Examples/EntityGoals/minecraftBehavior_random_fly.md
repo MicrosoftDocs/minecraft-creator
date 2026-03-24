@@ -17,7 +17,7 @@ Allows a mob to randomly fly around.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| avoid_damage_blocks | *not set* | String |  | Parrot: `true` | 
+| avoid_damage_blocks | *not set* | Boolean true/false | If true, the mob will avoid blocks that cause damage when flying. | Parrot: `true` | 
 | can_land_on_trees | true | Boolean true/false | If true, the mob can stop flying and land on a tree instead of the ground | Parrot: `true` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Parrot: `3` | 
 | speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Parrot: `1` | 

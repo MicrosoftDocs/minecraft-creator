@@ -6,7 +6,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "has texture resources" }
+          {
+            "type": "literal",
+            "text": "has texture resources"
+          }
         ]
       }
     ]
@@ -14,7 +17,7 @@
   "fields": [
     {
       "id": "textures",
-      "dataType": 24,
+      "dataType": "keyedStringCollection",
       "title": "Textures",
       "description": "A list of identified textures that this entity uses."
     }

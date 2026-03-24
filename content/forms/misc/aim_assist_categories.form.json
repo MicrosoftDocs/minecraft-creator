@@ -21,14 +21,14 @@
       "id": "format_version",
       "title": "Format Version",
       "description": "The format version of the aim assist categories file.",
-      "dataType": 25,
+      "dataType": "version",
       "isRequired": true
     },
     {
       "id": "minecraft:aim_assist_categories",
       "title": "Aim Assist Categories",
       "description": "The root object containing the category definitions.",
-      "dataType": 16,
+      "dataType": "object",
       "isRequired": true,
       "subForm": {
         "id": "aim_assist_categories_root",
@@ -37,7 +37,7 @@
             "id": "categories",
             "title": "Categories",
             "description": "Array of aim assist category definitions.",
-            "dataType": 15,
+            "dataType": "objectArray",
             "isRequired": true,
             "subForm": {
               "id": "aim_assist_category",
@@ -48,14 +48,14 @@
                   "id": "name",
                   "title": "Name",
                   "description": "The namespaced identifier for this category (e.g., 'minecraft:bucket').",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "priorities",
                   "title": "Priorities",
                   "description": "Priority values for targeting different types of targets.",
-                  "dataType": 16,
+                  "dataType": "object",
                   "subForm": {
                     "id": "aim_assist_priorities",
                     "fields": [
@@ -63,19 +63,19 @@
                         "id": "entity_default",
                         "title": "Entity Default",
                         "description": "Default priority for targeting entities. Higher values mean higher priority.",
-                        "dataType": 0
+                        "dataType": "int"
                       },
                       {
                         "id": "block_default",
                         "title": "Block Default",
                         "description": "Default priority for targeting blocks. Higher values mean higher priority.",
-                        "dataType": 0
+                        "dataType": "int"
                       },
                       {
                         "id": "blocks",
                         "title": "Blocks",
                         "description": "Map of block identifiers to their targeting priority values.",
-                        "dataType": 14,
+                        "dataType": "keyedObjectCollection",
                         "subForm": {
                           "id": "block_priority",
                           "scalarFieldUpgradeName": "priority",
@@ -84,7 +84,7 @@
                               "id": "priority",
                               "title": "Priority",
                               "description": "Priority value for targeting this block.",
-                              "dataType": 0
+                              "dataType": "int"
                             }
                           ]
                         }
@@ -93,7 +93,7 @@
                         "id": "entities",
                         "title": "Entities",
                         "description": "Map of entity identifiers to their targeting priority values.",
-                        "dataType": 14,
+                        "dataType": "keyedObjectCollection",
                         "subForm": {
                           "id": "entity_priority",
                           "scalarFieldUpgradeName": "priority",
@@ -102,7 +102,7 @@
                               "id": "priority",
                               "title": "Priority",
                               "description": "Priority value for targeting this entity.",
-                              "dataType": 0
+                              "dataType": "int"
                             }
                           ]
                         }

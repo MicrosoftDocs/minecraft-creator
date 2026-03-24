@@ -83,5 +83,84 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.slime_float",
+    "title": "Entity Slime Float Behavior",
+    "description": "Allow slimes to float in water / lava. Can only be used by Slime and Magma Cubes.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "jump_chance_percentage",
+        "title": "Jump Chance Percentage",
+        "description": "Percent chance a slime or magma cube has to jump while in water / lava.",
+        "dataType": 3,
+        "defaultValue": 0.800000011920929
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/magma_cube.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.slime_float/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/slime.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.slime_float/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Determines the multiplier the entity's speed is modified by when moving through water / lava.",
+        "dataType": 3,
+        "defaultValue": 1.2000000476837158
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/magma_cube.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.slime_float/",
+          "content": {
+            "priority": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/slime.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.slime_float/",
+          "content": {
+            "priority": 1
+          }
+        }
+      ]
+    }
   }
 }

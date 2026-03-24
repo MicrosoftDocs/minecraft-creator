@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "ignores specified block types during processing" }
+          {
+            "type": "literal",
+            "text": "ignores specified block types during processing"
+          }
         ]
       }
     ]
@@ -14,7 +17,7 @@
       "id": "processor_type",
       "title": "Processors Type",
       "description": "Processors Type",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "generated_doNotEdit": {

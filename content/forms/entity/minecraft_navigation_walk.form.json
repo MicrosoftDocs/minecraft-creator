@@ -108,17 +108,17 @@
     {
       "id": "can_float",
       "title": "Tells the pathfinder that it can path through through the air.",
-      "dataType": 1
+      "dataType": "boolean"
     },
     {
       "id": "blocks_to_avoid",
       "title": "Tells the pathfinder which blocks to avoid when creating a path.",
       "description": "List of block descriptors that the pathfinder should avoid. Items can be block identifier strings or objects with name/tags properties.",
-      "dataType": 17,
+      "dataType": "stringArray",
       "alternates": [
         {
           "id": "blocks_to_avoid",
-          "dataType": 15,
+          "dataType": "objectArray",
           "subForm": {
             "id": "block_to_avoid",
             "title": "Block to Avoid",
@@ -127,13 +127,13 @@
                 "id": "tags",
                 "title": "Tags",
                 "description": "Molang expression to match block tags, e.g. query.any_tag('trapdoors')",
-                "dataType": 34
+                "dataType": "molang"
               },
               {
                 "id": "name",
                 "title": "Name",
                 "description": "Block identifier to avoid.",
-                "dataType": 2
+                "dataType": "string"
               }
             ]
           }
@@ -143,37 +143,37 @@
     {
       "id": "can_breach",
       "title": "Tells the pathfinder whether or not it can jump out of water (like a dolphin).",
-      "dataType": 1
+      "dataType": "boolean"
     },
     {
       "id": "can_break_doors",
       "title": "Tells the pathfinder that it can path through a closed door and break it.",
-      "dataType": 1
+      "dataType": "boolean"
     },
     {
       "id": "can_jump",
       "title": " Tells the pathfinder whether or not it can jump up blocks.",
-      "dataType": 1
+      "dataType": "boolean"
     },
     {
       "id": "can_open_doors",
       "title": " Tells the pathfinder that it can path through a closed door assuming the AI will open the door.",
-      "dataType": 1
+      "dataType": "boolean"
     },
     {
       "id": "can_open_iron_doors",
       "title": " Tells the pathfinder that it can path through a closed iron door assuming the AI will open the door.",
-      "dataType": 1
+      "dataType": "boolean"
     },
     {
       "id": "avoid_water",
       "title": "Avoids water",
-      "dataType": 1
+      "dataType": "boolean"
     },
     {
       "id": "avoid_damage_blocks",
       "title": "Avoid damaging blocks",
-      "dataType": 1
+      "dataType": "boolean"
     }
   ],
   "generated_doNotEdit": {

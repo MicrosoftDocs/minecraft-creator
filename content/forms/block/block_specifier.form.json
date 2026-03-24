@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "specifies a block by name and states" }
+          {
+            "type": "literal",
+            "text": "specifies a block by name and states"
+          }
         ]
       }
     ]
@@ -16,13 +19,13 @@
       "id": "name",
       "title": "name",
       "description": "Name of the block",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "states",
       "title": "states",
       "description": "Contains members named after each state, with boolean, integer, or string values.",
-      "dataType": 24
+      "dataType": "keyedStringCollection"
     }
   ]
 }

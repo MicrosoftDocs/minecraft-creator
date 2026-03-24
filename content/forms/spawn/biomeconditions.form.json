@@ -17,7 +17,7 @@
     {
       "id": "biome_filter",
       "description": "Filter to limit spawns to specific biomes. Can be a single filter object or an array of filter objects.",
-      "dataType": 16,
+      "dataType": "object",
       "subForm": {
         "id": "biome_filter",
         "title": "Biome Filter",
@@ -26,57 +26,57 @@
             "id": "domain",
             "title": "Domain",
             "description": "The domain the test should be performed in.",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "operator",
             "title": "Operator",
             "description": "The comparison to apply with 'value'.",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "subject",
             "title": "Subject",
             "description": "The subject of this filter test.",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "test",
             "title": "Test",
             "description": "The name of the test to apply.",
-            "dataType": 2,
+            "dataType": "string",
             "isRequired": true
           },
           {
             "id": "value",
             "title": "Value",
             "description": "The value being compared with the test.",
-            "dataType": 0
+            "dataType": "int"
           },
           {
             "id": "all_of",
             "title": "All Of",
             "description": "All of these tests must pass.",
-            "dataType": 15
+            "dataType": "objectArray"
           },
           {
             "id": "any_of",
             "title": "Any Of",
             "description": "Any of these tests must pass.",
-            "dataType": 15
+            "dataType": "objectArray"
           },
           {
             "id": "none_of",
             "title": "None Of",
             "description": "None of these tests must pass.",
-            "dataType": 15
+            "dataType": "objectArray"
           }
         ]
       },
       "alternates": [
         {
           "id": "biome_filter",
-          "dataType": 15,
+          "dataType": "objectArray",
           "description": "Array of filter objects."
         }
       ]
@@ -149,7 +149,7 @@
         "id": "herds",
         "title": "Herds",
         "description": "Configurations for size and events when spawning groups of entities",
-        "dataType": 16,
+        "dataType": 15,
         "defaultValue": [],
         "subFormId": "spawn/herd"
       },
@@ -164,7 +164,7 @@
         "id": "permute_types",
         "title": "Permute Types",
         "description": "List of randomly choosable permutations of the entity",
-        "dataType": 16,
+        "dataType": 15,
         "defaultValue": [],
         "subFormId": "spawn/permutetype"
       },

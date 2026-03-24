@@ -155,5 +155,115 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.float",
+    "title": "Entity Float Behavior",
+    "description": "Allows the mob to stay afloat while swimming. Passengers will be kicked out the moment the mob's head goes underwater, which may not happen for tall mobs.",
+    "fields": [
+      {
+        "id": "chance_per_tick_to_float",
+        "title": "Chance Per Tick To Float",
+        "description": "The chance per tick to cause an upward impulse.",
+        "dataType": 3,
+        "defaultValue": 0.800000011920929
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.float/",
+              "content": 7
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cave_spider.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.float/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "sink_with_passengers",
+        "title": "Sink With Passengers",
+        "description": "If true, the mob will keep sinking as long as it has passengers.",
+        "dataType": 1,
+        "defaultValue": false
+      },
+      {
+        "id": "time_under_water_to_dismount_passengers",
+        "title": "Time Under Water To Dismount Passengers",
+        "description": "Time in seconds that a floating vehicles head can be underwater before it causes its passengers to dismount.",
+        "dataType": 3,
+        "defaultValue": 0
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/allay.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.float/",
+          "content": {
+            "priority": 7
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.float/",
+          "content": {
+            "priority": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/blaze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.float/",
+          "content": {
+            "priority": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/breeze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.float/",
+          "content": {
+            "priority": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cave_spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.float/",
+          "content": {
+            "priority": 1
+          }
+        }
+      ]
+    }
   }
 }

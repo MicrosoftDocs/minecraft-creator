@@ -3,10 +3,21 @@
   "summarizer": {
     "phrases": [
       {
-        "visibility": [{ "field": "value", "comparison": "defined" }],
+        "visibility": [
+          {
+            "field": "value",
+            "comparison": "defined"
+          }
+        ],
         "tokens": [
-          { "type": "literal", "text": "has lava movement speed of " },
-          { "type": "value", "field": "value" }
+          {
+            "type": "literal",
+            "text": "has lava movement speed of "
+          },
+          {
+            "type": "value",
+            "field": "value"
+          }
         ]
       }
     ]
@@ -19,7 +30,7 @@
       "id": "value",
       "title": "Value",
       "description": "The speed the mob moves over a lava block.",
-      "dataType": 3
+      "dataType": "float"
     }
   ]
 }

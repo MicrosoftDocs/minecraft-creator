@@ -13,32 +13,55 @@ ms.date: 02/11/2025
 Allows an entity to attack the closest target within a given subset of specific target types.
 
 
-## Nearest Attackable Target Behavior Properties
+## Entity Nearest Attackable Target Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| attack_interval | *not set* | Range of integers | Time range (in seconds) between searching for an attack target, range is in (0, "attack_interval"]. Only used if "attack_interval" is greater than 0, otherwise "scan_interval" is used. | Cave Spider: `{"min":10,"max":10}`, `{"min":5,"max":5}` | 
+| attack_interval | {"max":0,"min":0} | [Attack Interval](#item-components-floatrange) item | Time range (in seconds) between searching for an attack target, range is in (0, "attack_interval"]. Only used if "attack_interval" is greater than 0, otherwise "scan_interval" is used. | Cave Spider: `{"min":10,"max":10}`, `{"min":5,"max":5}` | 
 | attack_interval|attack_interval_min | *not set* | String |  |  | 
 | attack_owner | false | Boolean true/false | If true, this entity can attack its owner. |  | 
-| entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entity types that this mob considers valid targets | Blaze: `[{"filters":{"AND":[{"test":"is_family","subject":1,"operator":0,"value":"player"}]},"max_dist":48}]`, Bogged: `[{"filters":{"test":"is_family","subject":"other","value":"player"}},{"filters":{"test":"is_family","subject":"other","value":"irongolem"}},{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"baby_turtle"},{"test":"in_water","subject":"other","operator":"!=","value":true}]}}]`, Breeze: `[{"filters":{"AND":[{"test":"is_family","subject":1,"operator":0,"value":"player"}]},"max_dist":24},{"filters":{"AND":[{"test":"is_family","subject":1,"operator":0,"value":"irongolem"}]},"max_dist":24}]` | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
+| entity_types | [] | Array of [Entity Types](#entity-types) items | List of entity types that this mob considers valid targets | Blaze: `[{"filters":{"AND":[{"test":"is_family","subject":1,"operator":0,"value":"player"}]},"max_dist":48}]`, Bogged: `[{"filters":{"test":"is_family","subject":"other","value":"player"}},{"filters":{"test":"is_family","subject":"other","value":"irongolem"}},{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"baby_turtle"},{"test":"in_water","subject":"other","operator":"!=","value":true}]}}]`, Breeze: `[{"filters":{"AND":[{"test":"is_family","subject":1,"operator":0,"value":"player"}]},"max_dist":24},{"filters":{"AND":[{"test":"is_family","subject":1,"operator":0,"value":"irongolem"}]},"max_dist":24}]` | 
+| entity_types (Entity Types) | *not set* | [Entity Types (Entity Types)](#entity-types-entity-types) item |  |  | 
 | must_reach | false | Boolean true/false | If true, this entity requires a path to the target. |  | 
 | must_see | false | Boolean true/false | Determines if target-validity requires this entity to be in range only, or both in range and in sight. | Blaze: `true` | 
 | must_see_forget_duration | 3 | Decimal number | Time (in seconds) the target must not be seen by this entity to become invalid. Used only if "must_see" is true. | Drowned: `17` | 
 | persist_time | 0 | Decimal number | Time (in seconds) this entity can continue attacking the target after the target is no longer valid. | Drowned: `0.5` | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Blaze: `2`, Breeze: `1` | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Blaze: `2`, Breeze: `1` | 
 | reselect_targets | false | Boolean true/false | Allows the attacking entity to update the nearest target, otherwise a target is only reselected after each "scan_interval" or "attack_interval". | Bogged: `true` | 
 | scan_interval | 10 | Integer number | If "attack_interval" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to "scan_interval", minimum value is 1. |  | 
 | set_persistent | false | Boolean true/false | Allows the actor to be set to persist upon targeting a player |  | 
 | target_acquisition_probability | 1 | Decimal number | Probability (0.0 to 1.0) that this entity will accept a found target. Checked each time a valid target is found during scanning. |  | 
-| target_invisible_multiplier | 0.7 | Decimal number | Multiplied with the target's armor coverage percentage to modify "max_dist" when detecting an invisible target. |  | 
-| target_search_height | -1 | Decimal number | Maximum vertical target-search distance, if it's greater than the target type's "max_dist". A negative value defaults to "entity_types" greatest "max_dist". |  | 
-| target_sneak_visibility_multiplier | 0.8 | Decimal number | Multiplied with the target type's "max_dist" when trying to detect a sneaking target. |  | 
+| target_invisible_multiplier | 0.699999988079071 | Decimal number | Multiplied with the target's armor coverage percentage to modify "max_dist" when detecting an invisible target. |  | 
+| target_search_height | -1 | Decimal number | Maximum vertical target-search distance, if it's greater than the target type's "max_dist". A negative value defaults to "entity_types" greatest "max_dist". Value must be >= -1. |  | 
+| target_sneak_visibility_multiplier | 0.800000011920929 | Decimal number | Multiplied with the target type's "max_dist" when trying to detect a sneaking target. |  | 
 | within_radius | 0 | Decimal number | Maximum distance this entity can be from the target when following it, otherwise the target becomes invalid. This value is only used if the entity doesn't declare "minecraft:follow_range". | Breeze: `24`, Drowned: `12` | 
 
 ### scan_interval
 
-If "attack_interval" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to "scan_interval", minimum value is 1. Values under 10 can affect performance.
+If "attack_interval" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to "scan_interval", minimum value is 1. Values under 10 can affect performance. Value must be >= 1.
 
+
+### Item Components FloatRange
+Has minimum and maximum float values.
+
+
+#### Item Components FloatRange Properties
+
+**JSON path:** `attack_interval`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | 0 | Decimal number |  | 
+| min | 0 | Decimal number |  | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ### Entity Types
 List of entity types that this mob considers valid targets.
@@ -59,6 +82,42 @@ List of entity types that this mob considers valid targets.
 | reevaluate_description | false | Boolean true/false | If true, the targeting entity will continuously reevaluate the target and stop attacking if the target no longer meets the filter conditions. | 
 | sprint_speed_multiplier | 1 | Decimal number | Multiplier for the running speed. A value of 1.0 means the speed is unchanged | 
 | walk_speed_multiplier | 1 | Decimal number | Multiplier for the walking speed. A value of 1.0 means the speed is unchanged | 
+
+### Entity Types (Entity Types)
+
+#### Entity Types Properties
+
+**JSON path:** `entity_types`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| check_if_outnumbered | false | Boolean true/false | If true, the mob will check if its outnumbered | 
+| cooldown | 0 | Integer number | The amount of time in seconds that the mob has to wait before selecting a target of the same type again | 
+| filters (Filters) | {"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null} | [Filters](#filters) item | Conditions that make this entry in the list valid | 
+| filters (Alternate 1) | *not set* | Object |  | 
+| max_dist | 16 | Decimal number | Maximum distance this mob can be away to be a valid choice | 
+| max_flee | 10 | Decimal number | Maximum distance this mob can be from the target to stop fleeing | 
+| max_height | -1 | Decimal number | Maximum height this mob can be away to be a valid choice | 
+| must_see | *not set* | Boolean true/false | If true, the mob has to be visible to be a valid choice | 
+| must_see_forget_duration | 3 | Integer number | Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more | 
+| priority | 0 | Integer number | Priority for this mob type | 
+| reevaluate_description | false | Boolean true/false | If true, the mob will stop being targeted if it stops meeting any conditions. | 
+| sprint_speed_multiplier | 1 | Decimal number | Multiplier for the sprinting speed. A value of 1.0 means the speed is unchanged | 
+| walk_speed_multiplier | 1 | Decimal number | Multiplier for the walking speed. A value of 1.0 means the speed is unchanged | 
+
+#### Filters
+
+##### Filters Properties
+
+**JSON path:** `entity_types > filters`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| domain | *not set* | Object | The domain the test should be performed in. | 
+| operator | *not set* | Object | The comparison to apply with 'value'. | 
+| subject | *not set* | Object | The subject of this filter test. | 
+| test | *not set* | String | The name of the test to apply. | 
+| value | *not set* | Object | The value being compared with the test. | 
 
 ## Samples
 

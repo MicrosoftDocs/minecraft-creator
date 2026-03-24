@@ -22,7 +22,7 @@
         "id": "item_specific_speeds",
         "title": "Item Specific Speeds",
         "description": "Optional array with item specific mining speeds.",
-        "dataType": 16,
+        "dataType": 15,
         "defaultValue": [],
         "subFormId": "block_components/item_specific_speed"
       },

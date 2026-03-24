@@ -20,7 +20,7 @@
       "id": "packs",
       "title": "Packs",
       "description": "An array of pack registrations defining which packs are active.",
-      "dataType": 17,
+      "dataType": "stringArray",
       "subForm": {
         "id": "pack_registration",
         "title": "Pack Registration",
@@ -30,21 +30,21 @@
             "id": "pack_id",
             "title": "Pack ID",
             "description": "The UUID of the pack from its manifest.json header.uuid field.",
-            "dataType": 2,
+            "dataType": "string",
             "isRequired": true
           },
           {
             "id": "version",
             "title": "Version",
             "description": "The version of the pack as an array of three integers [major, minor, patch].",
-            "dataType": 17,
+            "dataType": "stringArray",
             "subForm": {
               "id": "version_number",
               "fields": [
                 {
                   "id": "value",
                   "title": "Version Component",
-                  "dataType": 0
+                  "dataType": "int"
                 }
               ]
             },
@@ -54,7 +54,7 @@
             "id": "priority",
             "title": "Priority",
             "description": "Optional priority for pack loading order. Lower values load first.",
-            "dataType": 0
+            "dataType": "int"
           }
         ]
       }
@@ -68,7 +68,11 @@
         "content": [
           {
             "pack_id": "12345678-1234-1234-1234-123456789abc",
-            "version": [1, 0, 0]
+            "version": [
+              1,
+              0,
+              0
+            ]
           }
         ]
       }

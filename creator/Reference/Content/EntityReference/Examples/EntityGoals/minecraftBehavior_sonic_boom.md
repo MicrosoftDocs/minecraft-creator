@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Allows this entity to perform a 'sonic boom' ranged attack.
 
 
-## Sonic Boom Behavior Properties
+## Entity Sonic Boom Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -21,15 +21,24 @@ Allows this entity to perform a 'sonic boom' ranged attack.
 | attack_damage | 30 | Decimal number | Attack damage of the sonic boom. | Warden: `10` | 
 | attack_range_horizontal | 15 | Decimal number | Horizontal range (in blocks) at which the sonic boom can damage the target. |  | 
 | attack_range_vertical | 20 | Decimal number | Vertical range (in blocks) at which the sonic boom can damage the target. |  | 
-| attack_sound | *not set* | String | Sound event for the attack. | Warden: `"sonic_boom"` | 
-| charge_sound | *not set* | String | Sound event for the charge up. | Warden: `"sonic_charge"` | 
+| attack_sound |  | String | Sound event for the attack. | Warden: `"sonic_boom"` | 
+| charge_sound |  | String | Sound event for the charge up. | Warden: `"sonic_charge"` | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
 | duration | 0 | Decimal number | Goal duration in seconds | Warden: `3` | 
-| duration_until_attack_sound | 1.7 | Decimal number | Duration in seconds until the attack sound is played. |  | 
+| duration_until_attack_sound | 1.7000000476837158 | Decimal number | Duration in seconds until the attack sound is played. |  | 
 | knockback_height_cap | 0 | Decimal number | Height cap of the attack knockback's vertical delta. | Warden: `0.5` | 
 | knockback_horizontal_strength | 0 | Decimal number | Horizontal strength of the attack's knockback applied to the attack target. | Warden: `2.5` | 
 | knockback_vertical_strength | 0 | Decimal number | Vertical strength of the attack's knockback applied to the attack target. | Warden: `0.5` | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Warden: `3` | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Warden: `3` | 
 | speed_multiplier | 1 | Decimal number | This multiplier modifies the attacking entity's speed when moving toward the target. | Warden: `1.2` | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples
 

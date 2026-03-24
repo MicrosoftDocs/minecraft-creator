@@ -23,7 +23,7 @@
         "id": "replacements",
         "title": "Replacements",
         "description": "List of biome replacement configurations. Retroactively adding a new replacement to the front of this list will cause the world generation to change. Please add any new replacements to the end of the list.",
-        "dataType": 16,
+        "dataType": 15,
         "technicalDescription": "Check that there is at least one value in the array, that there are no duplicates, and that the dimension is either minecraft:overworld or minecraft:nether",
         "subFormId": "biome/biome_replacement",
         "isRequired": true

@@ -17,14 +17,14 @@
       "id": "active_time",
       "title": "Active Time",
       "description": "The time in seconds that the emitter is active. Can be a number or Molang expression.",
-      "dataType": 34,
+      "dataType": "molang",
       "defaultValue": 0
     },
     {
       "id": "sleep_time",
       "title": "Sleep Time",
       "description": "The time in seconds that the emitter sleeps between active periods. Can be a number or Molang expression.",
-      "dataType": 34,
+      "dataType": "molang",
       "defaultValue": 0
     }
   ],

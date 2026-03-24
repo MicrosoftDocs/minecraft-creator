@@ -18,7 +18,7 @@ Block culling rules allow custom blocks with geometry to have specific faces hid
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | description | *not set* | [Description](#client-block-description) item |  | 
-| rules | *not set* | [Rules](#client-block-rule) item |  | 
+| rules | *not set* | Array of [Rules](#client-block-rule) items |  | 
 
 ### Client Block Description
 Defines the identifier for a block culling rule.

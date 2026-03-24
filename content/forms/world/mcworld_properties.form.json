@@ -17,37 +17,37 @@
     {
       "id": "spawnX",
       "title": "Spawn X",
-      "dataType": 0
+      "dataType": "int"
     },
     {
       "id": "spawnY",
       "title": "Spawn Y",
-      "dataType": 0
+      "dataType": "int"
     },
     {
       "id": "spawnZ",
       "title": "Spawn Z",
-      "dataType": 0
+      "dataType": "int"
     },
     {
       "id": "difficulty",
       "title": "Difficulty",
-      "dataType": 0
+      "dataType": "int"
     },
     {
       "id": "generator",
       "title": "Generator",
-      "dataType": 0
+      "dataType": "int"
     },
     {
       "id": "gameType",
       "title": "Game Type",
-      "dataType": 0
+      "dataType": "int"
     },
     {
       "id": "isEditor",
       "title": "Editor World",
-      "dataType": 1
+      "dataType": "boolean"
     }
   ],
   "description": "Defines world properties including spawn location, difficulty, and game type."

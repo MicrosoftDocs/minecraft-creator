@@ -6,7 +6,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "defines visual and audio resources for an item" }
+          {
+            "type": "literal",
+            "text": "defines visual and audio resources for an item"
+          }
         ]
       }
     ]
@@ -15,29 +18,29 @@
     {
       "id": "identifier",
       "title": "Id",
-      "dataType": 2,
+      "dataType": "string",
       "description": "A targeted identifier this visual/audio description uses."
     },
     {
       "id": "materials",
-      "dataType": 24,
+      "dataType": "keyedStringCollection",
       "description": "A list of identified models that this item uses."
     },
     {
       "id": "textures",
-      "dataType": 24,
+      "dataType": "keyedStringCollection",
       "title": "Textures",
       "description": "A list of identified textures that this item uses."
     },
     {
       "id": "geometry",
-      "dataType": 24,
+      "dataType": "keyedStringCollection",
       "title": "Geometry model",
       "description": "A list of identified models that this item uses."
     },
     {
       "id": "animations",
-      "dataType": 24,
+      "dataType": "keyedStringCollection",
       "title": "Animations",
       "description": "A list of identified animation that this item uses."
     }

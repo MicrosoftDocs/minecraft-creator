@@ -17,14 +17,14 @@
       "id": "material",
       "title": "Material",
       "description": "The material used for rendering the particle effect.",
-      "dataType": 2,
+      "dataType": "string",
       "isRequired": true
     },
     {
       "id": "texture",
       "title": "Texture",
       "description": "The texture path used for the particle effect.",
-      "dataType": 2,
+      "dataType": "string",
       "isRequired": true
     }
   ],

@@ -18,19 +18,19 @@
     {
       "id": "x",
       "title": "x",
-      "dataType": 3,
+      "dataType": "float",
       "required": true
     },
     {
       "id": "y",
       "title": "y",
-      "dataType": 3,
+      "dataType": "float",
       "required": true
     },
     {
       "id": "z",
       "title": "z",
-      "dataType": 3,
+      "dataType": "float",
       "required": true
     }
   ],

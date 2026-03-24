@@ -18,18 +18,18 @@
     {
       "id": "id",
       "title": "Id",
-      "dataType": 0,
+      "dataType": "int",
       "readOnly": true
     },
     {
       "id": "header",
       "title": "Header",
-      "dataType": 13
+      "dataType": "longFormString"
     },
     {
       "id": "description",
       "title": "Description",
-      "dataType": 17
+      "dataType": "stringArray"
     }
   ]
 }

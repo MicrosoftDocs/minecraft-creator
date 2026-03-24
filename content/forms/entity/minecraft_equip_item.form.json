@@ -15,13 +15,13 @@
   "fields": [
     {
       "id": "excluded_items",
-      "dataType": 15,
+      "dataType": "objectArray",
       "subForm": {
         "id": "excluded_item",
         "fields": [
           {
             "id": "item",
-            "dataType": 2
+            "dataType": "string"
           }
         ]
       }
@@ -31,7 +31,7 @@
       "title": "Can Wear Armor",
       "description": "If true, the entity can pick up and wear armor items from the ground.",
       "defaultValue": false,
-      "dataType": 1
+      "dataType": "boolean"
     }
   ],
   "generated_doNotEdit": {

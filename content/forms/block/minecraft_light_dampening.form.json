@@ -25,7 +25,7 @@
   "scalarField": {
     "id": "integer",
     "title": "Light Dampening Value",
-    "dataType": 0
+    "dataType": "int"
   },
   "generated_doNotEdit": {
     "id": "minecraft:light_dampening",

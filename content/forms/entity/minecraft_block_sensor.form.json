@@ -17,7 +17,7 @@
       "id": "on_break",
       "title": "Break",
       "description": "List of blocks to watch for being broken to fire off a specified event. If a block is in multiple lists, multiple events will fire.",
-      "dataType": 15,
+      "dataType": "objectArray",
       "subForm": {
         "id": "on_break_item",
         "title": "Block Break Entry",
@@ -26,13 +26,13 @@
             "id": "block_list",
             "title": "Block List",
             "description": "List of blocks that trigger the on_block_broken event.",
-            "dataType": 17
+            "dataType": "stringArray"
           },
           {
             "id": "on_block_broken",
             "title": "On Block Broken",
             "description": "Event to call when a block in block_list is broken.",
-            "dataType": 2
+            "dataType": "string"
           }
         ]
       }
@@ -41,7 +41,7 @@
       "id": "sources",
       "title": "Sources",
       "description": "List of sources that break the block to listen for. If none are specified, all block breaks will be detected.",
-      "dataType": 20
+      "dataType": "minecraftFilter"
     }
   ],
   "generated_doNotEdit": {

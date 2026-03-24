@@ -84,7 +84,7 @@
     "tags": [
       "presence"
     ],
-    "dataType": 1
+    "dataType": "boolean"
   },
   "generated_doNotEdit": {
     "id": "minecraft:flammable",

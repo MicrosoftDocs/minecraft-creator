@@ -90,7 +90,7 @@
       "id": "default_values",
       "title": "Default Values",
       "description": "The object containing the default bandwidth optimization values.",
-      "dataType": 16,
+      "dataType": "object",
       "subForm": {
         "id": "default_values",
         "title": "Default Values",
@@ -100,21 +100,21 @@
             "title": "Max Optimized Distance",
             "description": "The maximum distance considered during bandwidth optimizations.",
             "defaultValue": 80,
-            "dataType": 3
+            "dataType": "float"
           },
           {
             "id": "max_dropped_ticks",
             "title": "Max Dropped Ticks",
             "description": "Determines the maximum ticks spatial update packets can be not sent.",
             "defaultValue": 10,
-            "dataType": 0
+            "dataType": "int"
           },
           {
             "id": "use_motion_prediction_hints",
             "title": "Use Motion Prediction Hints",
             "description": "When true, smaller motion packets will be sent during drop packet intervals.",
             "defaultValue": false,
-            "dataType": 1
+            "dataType": "boolean"
           }
         ]
       }

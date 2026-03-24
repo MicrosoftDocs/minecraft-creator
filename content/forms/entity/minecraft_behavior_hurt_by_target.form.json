@@ -59,11 +59,11 @@
   "fields": [
     {
       "id": "entity_types",
-      "dataType": 15,
+      "dataType": "objectArray",
       "alternates": [
         {
           "id": "entity_types",
-          "dataType": 16
+          "dataType": "object"
         }
       ]
     }

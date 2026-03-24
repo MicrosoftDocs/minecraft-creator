@@ -7,9 +7,18 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "unlocks at " },
-          { "type": "value", "field": "total_exp_required" },
-          { "type": "literal", "text": " experience points and contains trade groups or direct trades" }
+          {
+            "type": "literal",
+            "text": "unlocks at "
+          },
+          {
+            "type": "value",
+            "field": "total_exp_required"
+          },
+          {
+            "type": "literal",
+            "text": " experience points and contains trade groups or direct trades"
+          }
         ]
       }
     ]
@@ -19,7 +28,7 @@
       "id": "total_exp_required",
       "title": "Total Experience Required",
       "description": "The total experience points required for this tier to unlock. For novice (tier 1), this is typically 0. Higher tiers require more XP (e.g., 10, 70, 150, 250).",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 0,
       "minValue": 0
     },
@@ -27,14 +36,14 @@
       "id": "groups",
       "title": "Trade Groups",
       "description": "Array of trade groups available at this tier. Each group can randomly select one or more trades to offer.",
-      "dataType": 15,
+      "dataType": "objectArray",
       "subFormId": "trade/tradegroup"
     },
     {
       "id": "trades",
       "title": "Trades (Direct)",
       "description": "Array of trades directly in this tier, without grouping. Alternative to using groups.",
-      "dataType": 15,
+      "dataType": "objectArray",
       "subFormId": "trade/tradesingle"
     }
   ],

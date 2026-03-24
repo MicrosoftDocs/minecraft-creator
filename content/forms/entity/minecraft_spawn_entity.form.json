@@ -183,11 +183,23 @@
       "id": "entities",
       "title": "Entities",
       "description": "List of entity spawn definitions. Can be a single object or an array of objects.",
-      "dataType": 15,
+      "dataType": "objectArray",
+      "subForm": {
+        "id": "spawn_entity_entry",
+        "fields": [
+          {
+            "id": "filters",
+            "title": "Filters",
+            "description": "If present, the specified entity will only spawn if the filter evaluates to true.",
+            "dataType": "minecraftFilter"
+          }
+        ]
+      },
+      "mergeSubForm": true,
       "alternates": [
         {
           "id": "entities",
-          "dataType": 16
+          "dataType": "object"
         }
       ]
     }

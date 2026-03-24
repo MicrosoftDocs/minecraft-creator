@@ -12,7 +12,21 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "entity_types",
+      "title": "Entity Types",
+      "description": "List of entity types that this mob can follow in a caravan. Can be a single filter object or an array of filter objects.",
+      "dataType": "object",
+      "mergeSubForm": true,
+      "alternates": [
+        {
+          "id": "entity_types",
+          "dataType": "objectArray"
+        }
+      ]
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.follow_caravan",
     "title": "Follow Caravan Behavior",

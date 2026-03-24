@@ -19,7 +19,7 @@
       "id": "texture",
       "title": "Texture",
       "description": "Texture name for the material.",
-      "dataType": 2,
+      "dataType": "string",
       "lookupId": "terrainTexture",
       "samples": {
         "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/blue_bubble_fish.json": [
@@ -33,14 +33,14 @@
     {
       "id": "ambient_occlusion",
       "title": "Ambient Occlusion",
-      "dataType": 3,
+      "dataType": "float",
       "description": "If this material has ambient occlusion applied when lighting, shadows will be created around and underneath the block. Decimal value controls exponent applied to a value after lighting."
     },
     {
       "id": "render_method",
       "title": "Render Method",
       "description": "The render method to use.",
-      "dataType": 2,
+      "dataType": "string",
       "mustMatchChoices": true,
       "choices": [
         {
@@ -102,7 +102,7 @@
       "versionIntroduced": "1.21.80",
       "description": "Tint multiplied to the color. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint. Supported tint methods are \"none\", \"default_foliage\", \"birch_foliage\", \"evergreen_foliage\", \"dry_foliage\", \"grass\" and \"water\"",
       "defaultValue": false,
-      "dataType": 1
+      "dataType": "boolean"
     },
     {
       "id": "isotropic",
@@ -110,13 +110,13 @@
       "versionIntroduced": "1.21.80",
       "description": "Should the faces that this material is applied to randomize their UVs?",
       "defaultValue": false,
-      "dataType": 1
+      "dataType": "boolean"
     },
     {
       "id": "face_dimming",
       "title": "Face Dimming",
       "description": "This material should be dimmed by the direction its facing.",
-      "dataType": 2,
+      "dataType": "string",
       "samples": {
         "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/blue_bubble_fish.json": [
           {

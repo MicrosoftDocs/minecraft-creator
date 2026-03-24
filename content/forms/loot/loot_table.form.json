@@ -7,33 +7,78 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "defines loot drops and rewards" }
+          {
+            "type": "literal",
+            "text": "defines loot drops and rewards"
+          }
         ]
       },
       {
-        "visibility": [{ "field": "pools", "comparison": "defined" }],
+        "visibility": [
+          {
+            "field": "pools",
+            "comparison": "defined"
+          }
+        ],
         "tokens": [
-          { "type": "literal", "text": "contains " },
-          { "type": "value", "field": "pools.length" },
+          {
+            "type": "literal",
+            "text": "contains "
+          },
+          {
+            "type": "value",
+            "field": "pools.length"
+          },
           {
             "type": "plural",
             "countField": "pools.length",
-            "singular": [{ "type": "literal", "text": " loot pool" }],
-            "plural": [{ "type": "literal", "text": " loot pools" }],
+            "singular": [
+              {
+                "type": "literal",
+                "text": " loot pool"
+              }
+            ],
+            "plural": [
+              {
+                "type": "literal",
+                "text": " loot pools"
+              }
+            ],
             "includeCount": false
           }
         ]
       },
       {
-        "visibility": [{ "field": "pools[0].rolls", "comparison": "defined" }],
+        "visibility": [
+          {
+            "field": "pools[0].rolls",
+            "comparison": "defined"
+          }
+        ],
         "tokens": [
-          { "type": "literal", "text": "first pool rolls " },
-          { "type": "value", "field": "pools[0].rolls" },
+          {
+            "type": "literal",
+            "text": "first pool rolls "
+          },
+          {
+            "type": "value",
+            "field": "pools[0].rolls"
+          },
           {
             "type": "plural",
             "countField": "pools[0].rolls",
-            "singular": [{ "type": "literal", "text": " time" }],
-            "plural": [{ "type": "literal", "text": " times" }],
+            "singular": [
+              {
+                "type": "literal",
+                "text": " time"
+              }
+            ],
+            "plural": [
+              {
+                "type": "literal",
+                "text": " times"
+              }
+            ],
             "includeCount": false
           }
         ]
@@ -45,7 +90,7 @@
       "id": "pools",
       "title": "Pools",
       "description": "A list of loot pools. Each pool is rolled independently to select entries.",
-      "dataType": 15,
+      "dataType": "objectArray",
       "noun": "Pool",
       "subFormId": "loot/loot_pool"
     }

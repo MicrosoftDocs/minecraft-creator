@@ -49,7 +49,7 @@
     {
       "id": "format_version",
       "title": "Format Version",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "samples": {

@@ -19,16 +19,16 @@
     {
       "id": "101",
       "title": "Resource Manifest",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Summary of the resource pack manifest.json including name, description, UUID, and version information.",
       "technicalDescription": "Data contains formatted manifest details including name, description, UUID, and version"
     },
     {
       "id": "102",
       "title": "Behavior Manifest",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Summary of the behavior pack manifest.json including name, description, UUID, version, and script module dependencies.",
       "technicalDescription": "Data contains formatted manifest details including name, description, UUID, version, and dependencies"
     }

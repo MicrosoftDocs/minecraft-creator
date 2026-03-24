@@ -19,27 +19,27 @@
     {
       "id": "title",
       "title": "Title",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "defaultMessage",
       "title": "Default Message",
-      "dataType": 13
+      "dataType": "longFormString"
     },
     {
       "id": "errors",
       "title": "Errors",
-      "dataType": 0
+      "dataType": "int"
     },
     {
       "id": "testCompleteFails",
       "title": "Test Complete Fails",
-      "dataType": 0
+      "dataType": "int"
     },
     {
       "id": "testCompleteSuccesses",
       "title": "Test Complete Successes",
-      "dataType": 0
+      "dataType": "int"
     }
   ]
 }

@@ -46,12 +46,12 @@
     {
       "id": "force_use",
       "title": "Whether an item can be used even if the entity is at full health",
-      "dataType": 1
+      "dataType": "boolean"
     },
     {
       "id": "filters",
       "title": "Additional filters when healing happens",
-      "dataType": 20
+      "dataType": "minecraftFilter"
     }
   ],
   "generated_doNotEdit": {

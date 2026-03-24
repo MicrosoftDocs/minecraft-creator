@@ -6,7 +6,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "defines animations for an item" }
+          {
+            "type": "literal",
+            "text": "defines animations for an item"
+          }
         ]
       }
     ]
@@ -14,7 +17,7 @@
   "fields": [
     {
       "id": "animations",
-      "dataType": 24,
+      "dataType": "keyedStringCollection",
       "title": "Animations",
       "description": "A list of identified animation that this item uses."
     }

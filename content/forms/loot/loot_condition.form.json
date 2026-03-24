@@ -6,10 +6,21 @@
   "summarizer": {
     "phrases": [
       {
-        "visibility": [{ "field": "condition", "comparison": "defined" }],
+        "visibility": [
+          {
+            "field": "condition",
+            "comparison": "defined"
+          }
+        ],
         "tokens": [
-          { "type": "literal", "text": "requires condition " },
-          { "type": "value", "field": "condition" }
+          {
+            "type": "literal",
+            "text": "requires condition "
+          },
+          {
+            "type": "value",
+            "field": "condition"
+          }
         ]
       }
     ]
@@ -19,80 +30,80 @@
       "id": "condition",
       "title": "Condition",
       "description": "The condition type. Common values: 'killed_by_player', 'killed_by_player_or_pets', 'random_chance', 'random_chance_with_looting', 'has_mark_variant', 'has_variant', 'entity_properties', 'match_tool', 'random_difficulty_chance'.",
-      "dataType": 2,
+      "dataType": "string",
       "isRequired": true
     },
     {
       "id": "chance",
       "title": "Chance",
       "description": "For 'random_chance' and 'random_chance_with_looting': the base probability (0.0-1.0).",
-      "dataType": 3
+      "dataType": "float"
     },
     {
       "id": "looting_multiplier",
       "title": "Looting Multiplier",
       "description": "For 'random_chance_with_looting': additional chance per looting level.",
-      "dataType": 3
+      "dataType": "float"
     },
     {
       "id": "value",
       "title": "Value",
       "description": "For 'has_mark_variant' or 'has_variant': the variant value to match.",
-      "dataType": 0
+      "dataType": "int"
     },
     {
       "id": "default_chance",
       "title": "Default Chance",
       "description": "For 'random_difficulty_chance': default probability if difficulty not matched.",
-      "dataType": 3
+      "dataType": "float"
     },
     {
       "id": "peaceful",
       "title": "Peaceful Chance",
       "description": "For 'random_difficulty_chance': probability on peaceful difficulty.",
-      "dataType": 3
+      "dataType": "float"
     },
     {
       "id": "easy",
       "title": "Easy Chance",
       "description": "For 'random_difficulty_chance': probability on easy difficulty.",
-      "dataType": 3
+      "dataType": "float"
     },
     {
       "id": "normal",
       "title": "Normal Chance",
       "description": "For 'random_difficulty_chance': probability on normal difficulty.",
-      "dataType": 3
+      "dataType": "float"
     },
     {
       "id": "hard",
       "title": "Hard Chance",
       "description": "For 'random_difficulty_chance': probability on hard difficulty.",
-      "dataType": 3
+      "dataType": "float"
     },
     {
       "id": "entity",
       "title": "Entity Type",
       "description": "For 'entity_properties': which entity to check ('this', 'attacker', or 'attacking_player').",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "properties",
       "title": "Properties",
       "description": "For 'entity_properties': the entity properties to match.",
-      "dataType": 16,
+      "dataType": "object",
       "subForm": {
         "id": "entity_props",
         "fields": [
           {
             "id": "on_fire",
             "title": "On Fire",
-            "dataType": 1
+            "dataType": "boolean"
           },
           {
             "id": "on_ground",
             "title": "On Ground",
-            "dataType": 1
+            "dataType": "boolean"
           }
         ]
       }
@@ -101,38 +112,38 @@
       "id": "match_tool",
       "title": "Match Tool",
       "description": "For 'match_tool': the tool item properties to match.",
-      "dataType": 16,
+      "dataType": "object",
       "subForm": {
         "id": "tool_match",
         "fields": [
           {
             "id": "item",
             "title": "Item",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "enchantments",
             "title": "Enchantments",
-            "dataType": 15,
+            "dataType": "objectArray",
             "subForm": {
               "id": "tool_enchant",
               "fields": [
                 {
                   "id": "enchantment",
                   "title": "Enchantment",
-                  "dataType": 2
+                  "dataType": "string"
                 },
                 {
                   "id": "levels",
                   "title": "Levels",
-                  "dataType": 16,
+                  "dataType": "object",
                   "subForm": {
                     "id": "enchant_levels",
                     "fields": [
                       {
                         "id": "min",
                         "title": "Minimum",
-                        "dataType": 0
+                        "dataType": "int"
                       }
                     ]
                   }

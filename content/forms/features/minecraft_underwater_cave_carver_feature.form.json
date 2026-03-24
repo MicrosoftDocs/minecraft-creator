@@ -64,7 +64,7 @@
     {
       "id": "format_version",
       "title": "Format Version",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "description": "Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8-block radial pattern. This feature will specifically target creating caves only below sea level. This feature will only work when placed specifically in the pass \"pregeneration_pass\".",

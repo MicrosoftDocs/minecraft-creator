@@ -159,17 +159,17 @@
       "id": "preferred_path_blocks",
       "title": "Preferred Path Blocks",
       "description": "A list of block types with their associated pathfinding costs. Each entry specifies blocks and their cost value.",
-      "dataType": 15,
+      "dataType": "objectArray",
       "subForm": {
         "fields": [
           {
             "id": "cost",
-            "dataType": 0,
+            "dataType": "int",
             "description": "The cost value for these blocks during pathfinding. Lower costs make paths more preferred."
           },
           {
             "id": "blocks",
-            "dataType": 17,
+            "dataType": "stringArray",
             "description": "Array of block identifiers that share this cost value."
           }
         ]

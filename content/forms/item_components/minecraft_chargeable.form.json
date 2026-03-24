@@ -7,7 +7,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "can be charged" }
+          {
+            "type": "literal",
+            "text": "can be charged"
+          }
         ]
       }
     ]
@@ -17,13 +20,13 @@
       "id": "on_complete",
       "title": "on_complete",
       "description": "Event trigger for when the item has completed its use duration.",
-      "dataType": 16
+      "dataType": "object"
     },
     {
       "id": "movement_modifier",
       "title": "movement_modifier",
       "description": "Modifier value to scale the players movement speed when item is in use.",
-      "dataType": 3
+      "dataType": "float"
     }
   ]
 }

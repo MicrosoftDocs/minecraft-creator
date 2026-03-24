@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "has custom visuals when embedded" }
+          {
+            "type": "literal",
+            "text": "has custom visuals when embedded"
+          }
         ]
       }
     ]
@@ -21,14 +24,14 @@
       "id": "geometry",
       "title": "Geometry",
       "description": "The \"minecraft:geometry\" component that will be used when rendered inside of another block.",
-      "dataType": 15,
+      "dataType": "objectArray",
       "isRequired": true
     },
     {
       "id": "material_instances",
       "title": "Material Instances",
       "description": "The \"minecraft:material_instances\" component that will be used when rendered inside of another block.",
-      "dataType": 15,
+      "dataType": "objectArray",
       "isRequired": true
     }
   ]

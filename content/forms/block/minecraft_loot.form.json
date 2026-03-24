@@ -21,7 +21,7 @@
   "scalarField": {
     "id": "string",
     "title": "Path to loot table",
-    "dataType": 2
+    "dataType": "string"
   },
   "generated_doNotEdit": {
     "id": "minecraft:loot",

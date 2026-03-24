@@ -13,14 +13,23 @@ ms.date: 02/11/2025
 Allows the mob to stay afloat while swimming. Passengers will be kicked out the moment the mob's head goes underwater, which may not happen for tall mobs.
 
 
-## Float Behavior Properties
+## Entity Float Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| chance_per_tick_to_float | 0.8 | Decimal number | The chance per tick to cause an upward impulse. |  | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `7`, Cave Spider: `1` | 
+| chance_per_tick_to_float | 0.800000011920929 | Decimal number | The chance per tick to cause an upward impulse. |  | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `7`, Cave Spider: `1` | 
 | sink_with_passengers | false | Boolean true/false | If true, the mob will keep sinking as long as it has passengers. |  | 
 | time_under_water_to_dismount_passengers | 0 | Decimal number | Time in seconds that a floating vehicles head can be underwater before it causes its passengers to dismount. |  | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples
 

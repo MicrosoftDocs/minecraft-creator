@@ -25,7 +25,7 @@
   "fields": [
     {
       "id": "projectile_entity",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "description": "Defines an item as a projectile that can be shot from dispensers or used as ammunition with minecraft:shooter. When combined with minecraft:throwable, this component specifies which entity is spawned when the item is thrown.",

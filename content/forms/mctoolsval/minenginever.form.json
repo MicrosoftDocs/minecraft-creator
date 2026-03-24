@@ -19,16 +19,16 @@
     {
       "id": "100",
       "title": "BP Version Defined",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Confirms that min_engine_version is defined in the behavior pack manifest header.",
       "technicalDescription": "Data contains the min_engine_version value"
     },
     {
       "id": "110",
       "title": "BP Major Low",
-      "messageType": 1,
-      "dataType": 2,
+      "messageType": "warning",
+      "dataType": "string",
       "description": "Warning when the behavior pack's min_engine_version major number is below the current Minecraft version. Update to access newer features.",
       "technicalDescription": "Data contains the current min_engine_version",
       "matchedValues": [
@@ -42,8 +42,8 @@
     {
       "id": "111",
       "title": "BP Major High",
-      "messageType": 2,
-      "dataType": 2,
+      "messageType": "error",
+      "dataType": "string",
       "description": "Error when the behavior pack's min_engine_version major number is above the current Minecraft version. The pack may not load.",
       "technicalDescription": "Data contains the min_engine_version exceeding current",
       "matchedValues": [
@@ -57,8 +57,8 @@
     {
       "id": "120",
       "title": "BP Minor Low",
-      "messageType": 1,
-      "dataType": 2,
+      "messageType": "warning",
+      "dataType": "string",
       "description": "Warning when the behavior pack's min_engine_version minor number is below the current Minecraft version.",
       "technicalDescription": "Data contains the current min_engine_version",
       "matchedValues": [
@@ -72,8 +72,8 @@
     {
       "id": "121",
       "title": "BP Minor High",
-      "messageType": 2,
-      "dataType": 2,
+      "messageType": "error",
+      "dataType": "string",
       "description": "Error when the behavior pack's min_engine_version minor number is above the current Minecraft version.",
       "technicalDescription": "Data contains the min_engine_version exceeding current",
       "matchedValues": [
@@ -87,8 +87,8 @@
     {
       "id": "130",
       "title": "BP Patch Low",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Information when the behavior pack's min_engine_version patch number is below the current Minecraft version.",
       "technicalDescription": "Data contains the current min_engine_version",
       "matchedValues": [
@@ -102,8 +102,8 @@
     {
       "id": "131",
       "title": "BP Patch High",
-      "messageType": 1,
-      "dataType": 2,
+      "messageType": "warning",
+      "dataType": "string",
       "description": "Warning when the behavior pack's min_engine_version patch number is above the current Minecraft version.",
       "technicalDescription": "Data contains the min_engine_version exceeding current",
       "matchedValues": [
@@ -117,32 +117,32 @@
     {
       "id": "180",
       "title": "No Manifest",
-      "messageType": 2,
-      "dataType": 2,
+      "messageType": "error",
+      "dataType": "string",
       "description": "Error when no manifest.json file was found in the pack root.",
       "technicalDescription": "Data contains the expected manifest path"
     },
     {
       "id": "181",
       "title": "Version Errors",
-      "messageType": 2,
-      "dataType": 2,
+      "messageType": "error",
+      "dataType": "string",
       "description": "Error when the min_engine_version field could not be parsed or validated.",
       "technicalDescription": "Data contains the version processing error"
     },
     {
       "id": "200",
       "title": "RP Version Defined",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Confirms that min_engine_version is defined in the resource pack manifest header.",
       "technicalDescription": "Data contains the min_engine_version value"
     },
     {
       "id": "210",
       "title": "RP Major Low",
-      "messageType": 1,
-      "dataType": 2,
+      "messageType": "warning",
+      "dataType": "string",
       "description": "Warning when the resource pack's min_engine_version major number is below the current Minecraft version.",
       "technicalDescription": "Data contains the current min_engine_version",
       "matchedValues": [
@@ -156,8 +156,8 @@
     {
       "id": "211",
       "title": "RP Major High",
-      "messageType": 2,
-      "dataType": 2,
+      "messageType": "error",
+      "dataType": "string",
       "description": "Error when the resource pack's min_engine_version major number is above the current Minecraft version.",
       "technicalDescription": "Data contains the min_engine_version exceeding current",
       "matchedValues": [
@@ -171,8 +171,8 @@
     {
       "id": "220",
       "title": "RP Minor Low",
-      "messageType": 1,
-      "dataType": 2,
+      "messageType": "warning",
+      "dataType": "string",
       "description": "Warning when the resource pack's min_engine_version minor number is below the current Minecraft version.",
       "technicalDescription": "Data contains the current min_engine_version",
       "matchedValues": [
@@ -186,8 +186,8 @@
     {
       "id": "221",
       "title": "RP Minor High",
-      "messageType": 2,
-      "dataType": 2,
+      "messageType": "error",
+      "dataType": "string",
       "description": "Error when the resource pack's min_engine_version minor number is above the current Minecraft version.",
       "technicalDescription": "Data contains the min_engine_version exceeding current",
       "matchedValues": [
@@ -201,8 +201,8 @@
     {
       "id": "230",
       "title": "RP Patch Low",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Information when the resource pack's min_engine_version patch number is below the current Minecraft version.",
       "technicalDescription": "Data contains the current min_engine_version",
       "matchedValues": [
@@ -216,8 +216,8 @@
     {
       "id": "231",
       "title": "RP Patch High",
-      "messageType": 1,
-      "dataType": 2,
+      "messageType": "warning",
+      "dataType": "string",
       "description": "Warning when the resource pack's min_engine_version patch number is above the current Minecraft version.",
       "technicalDescription": "Data contains the min_engine_version exceeding current",
       "matchedValues": [
@@ -231,16 +231,16 @@
     {
       "id": "500",
       "title": "Version Retrieved",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Status indicating the current Minecraft version was retrieved for comparison.",
       "technicalDescription": "Data contains the retrieved Minecraft version"
     },
     {
       "id": "501",
       "title": "Version Parsed",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Status indicating the Minecraft version string was parsed into version numbers.",
       "technicalDescription": "Data contains the parsed version components"
     }

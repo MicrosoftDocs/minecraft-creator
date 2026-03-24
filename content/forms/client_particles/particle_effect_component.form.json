@@ -17,11 +17,11 @@
       "id": "minecraft:particle_initial_speed",
       "title": "Particle Initial Speed",
       "description": "The initial speed of particles. Can be a number, Molang expression, or array of [x, y, z] speeds.",
-      "dataType": 34,
+      "dataType": "molang",
       "alternates": [
         {
           "id": "minecraft:particle_initial_speed",
-          "dataType": 35,
+          "dataType": "molangArray",
           "minLength": 3,
           "maxLength": 3
         }
@@ -31,19 +31,19 @@
       "id": "minecraft:particle_expire_if_in_blocks",
       "title": "Particle Expire If In Blocks",
       "description": "List of block identifiers. Particles will expire when they are in any of these blocks.",
-      "dataType": 17
+      "dataType": "stringArray"
     },
     {
       "id": "minecraft:particle_expire_if_not_in_blocks",
       "title": "Particle Expire If Not In Blocks",
       "description": "List of block identifiers. Particles will expire when they are NOT in any of these blocks.",
-      "dataType": 17
+      "dataType": "stringArray"
     },
     {
       "id": "minecraft:particle_kill_plane",
       "title": "Particle Kill Plane",
       "description": "A plane (A, B, C, D coefficients) that kills particles when they cross it. Defined as an array of 4 numbers [A, B, C, D] where Ax + By + Cz + D = 0.",
-      "dataType": 35,
+      "dataType": "molangArray",
       "minLength": 4,
       "maxLength": 4
     }

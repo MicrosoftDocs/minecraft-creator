@@ -18,7 +18,8 @@ Allows the mob to follow mobs that are in a caravan.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | entity_count | 1 | Integer number | Number of entities that can be in the caravan | Llama: `10` | 
-| entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entity types that this mob can follow in a caravan | Llama: `{"filters":{"test":"is_family","subject":"other","value":"llama"}}` | 
+| entity_types | *not set* | [Entity Types](#entity-types) item | List of entity types that this mob can follow in a caravan. Can be a single filter object or an array of filter objects. | Llama: `{"filters":{"test":"is_family","subject":"other","value":"llama"}}` | 
+| entity_types (as Array of objects) | *not set* | Array of objects |  |  | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Llama: `3` | 
 | speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Llama: `2.1` | 
 
