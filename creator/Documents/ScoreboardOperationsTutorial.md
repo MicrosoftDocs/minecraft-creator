@@ -13,7 +13,7 @@ In this tutorial, we'll show you how to use each of the scoreboard player operat
 
 - Numbers: 0, 1, 2, 3, 5, 10
 
-- Friends: Alex & Toast
+- Friends: Alex and Toast
 
 ## Setting things up
 
