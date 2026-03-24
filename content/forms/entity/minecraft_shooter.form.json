@@ -79,7 +79,7 @@
       "id": "sound",
       "title": "Sound",
       "description": "Sound that is played when the shooter shoots a projectile.",
-      "dataType": 2,
+      "dataType": "string",
       "lookupId": "soundDefinition"
     }
   ],

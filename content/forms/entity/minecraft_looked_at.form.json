@@ -131,7 +131,7 @@
   "fields": [
     {
       "id": "set_target",
-      "dataType": 2,
+      "dataType": "string",
       "description": "Defines if and how the owner entity will set entities that are looking at it as its combat targets. Valid values: 'never', 'once_and_stop_scanning', 'once_and_keep_scanning'.",
       "choices": [
         {
@@ -150,7 +150,7 @@
       "alternates": [
         {
           "id": "set_target",
-          "dataType": 5,
+          "dataType": "intEnum",
           "description": "Set to true/false for legacy boolean targeting behavior."
         }
       ]

@@ -8,26 +8,29 @@
       "id": "fog_start",
       "title": "Fog Start",
       "description": "The distance at which fog begins. For render distance type, this is a percentage (0.0-1.0). For fixed type, this is in blocks.",
-      "dataType": 3
+      "dataType": "float"
     },
     {
       "id": "fog_end",
-      "title": "Fog End", 
+      "title": "Fog End",
       "description": "The distance at which fog is fully opaque. For render distance type, this is a percentage (0.0-1.0). For fixed type, this is in blocks.",
-      "dataType": 3
+      "dataType": "float"
     },
     {
       "id": "fog_color",
       "title": "Fog Color",
       "description": "The color of the fog as a hex string (e.g., '#ABD2FF') or RGB array.",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "render_distance_type",
       "title": "Render Distance Type",
       "description": "How fog distances are calculated. 'fixed' uses block distances, 'render' uses percentage of render distance.",
-      "dataType": 4,
-      "enumValues": ["fixed", "render"]
+      "dataType": "stringEnum",
+      "enumValues": [
+        "fixed",
+        "render"
+      ]
     }
   ]
 }

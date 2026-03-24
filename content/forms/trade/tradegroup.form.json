@@ -7,9 +7,18 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "selects " },
-          { "type": "value", "field": "num_to_select" },
-          { "type": "literal", "text": " trade(s) randomly from a group of possible trades" }
+          {
+            "type": "literal",
+            "text": "selects "
+          },
+          {
+            "type": "value",
+            "field": "num_to_select"
+          },
+          {
+            "type": "literal",
+            "text": " trade(s) randomly from a group of possible trades"
+          }
         ]
       }
     ]
@@ -19,7 +28,7 @@
       "id": "num_to_select",
       "title": "Number to Select",
       "description": "The number of trades to randomly select from this group to offer to the player. Typically 1-2.",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 1,
       "minValue": 1
     },
@@ -27,7 +36,7 @@
       "id": "trades",
       "title": "Trades",
       "description": "Array of possible trades in this group. The specified number will be randomly chosen.",
-      "dataType": 15,
+      "dataType": "objectArray",
       "subFormId": "trade/tradesingle"
     }
   ],

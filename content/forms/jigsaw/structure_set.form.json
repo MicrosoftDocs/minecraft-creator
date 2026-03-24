@@ -7,7 +7,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "controls structure placement and distribution in the world" }
+          {
+            "type": "literal",
+            "text": "controls structure placement and distribution in the world"
+          }
         ]
       }
     ]
@@ -17,14 +20,14 @@
       "id": "format_version",
       "title": "Format Version",
       "description": "The format version of this structure set definition.",
-      "dataType": 2,
+      "dataType": "string",
       "isRequired": true
     },
     {
       "id": "minecraft:structure_set",
       "title": "Structure Set Definition",
       "description": "The structure set definition.",
-      "dataType": 16,
+      "dataType": "object",
       "isRequired": true,
       "subForm": {
         "id": "structure_set_definition",
@@ -33,7 +36,7 @@
             "id": "description",
             "title": "Description",
             "description": "The description block containing the structure set identifier.",
-            "dataType": 16,
+            "dataType": "object",
             "isRequired": true,
             "subFormId": "jigsaw/jigsawstructureset_description"
           },
@@ -41,7 +44,7 @@
             "id": "placement",
             "title": "Placement",
             "description": "Defines how structures in this set are placed in the world.",
-            "dataType": 16,
+            "dataType": "object",
             "isRequired": true,
             "subForm": {
               "id": "placement",
@@ -50,21 +53,21 @@
                   "id": "type",
                   "title": "Type",
                   "description": "The placement algorithm type. Valid values: 'minecraft:random_spread', 'minecraft:concentric_rings'.",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "salt",
                   "title": "Salt",
                   "description": "A seed modifier for randomization. Each structure set should use a unique salt.",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 },
                 {
                   "id": "separation",
                   "title": "Separation",
                   "description": "Minimum distance in chunks between structure placements.",
-                  "dataType": 0,
+                  "dataType": "int",
                   "defaultValue": 8,
                   "minValue": 1
                 },
@@ -72,7 +75,7 @@
                   "id": "spacing",
                   "title": "Spacing",
                   "description": "Average distance in chunks between structure placements. Must be greater than separation.",
-                  "dataType": 0,
+                  "dataType": "int",
                   "defaultValue": 34,
                   "minValue": 2
                 },
@@ -80,7 +83,7 @@
                   "id": "spread_type",
                   "title": "Spread Type",
                   "description": "How structures spread within the grid. Valid values: 'linear', 'triangular'.",
-                  "dataType": 2,
+                  "dataType": "string",
                   "defaultValue": "linear"
                 }
               ]
@@ -90,7 +93,7 @@
             "id": "structures",
             "title": "Structures",
             "description": "Array of structures in this set with their relative weights.",
-            "dataType": 15,
+            "dataType": "objectArray",
             "isRequired": true,
             "subFormId": "jigsaw/jigsawstructureset_structure"
           }

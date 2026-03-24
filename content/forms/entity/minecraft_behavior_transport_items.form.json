@@ -1,0 +1,376 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can transport items to storage blocks"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "minecraft:behavior.transport_items",
+  "fields": [
+    {
+      "id": "destination_container_types",
+      "title": "Destination Container Types",
+      "description": "A list of block descriptors that should be container types to put items in. Can be simple block identifier strings or objects with name, states, and tags.",
+      "dataType": "stringArray",
+      "defaultValue": [],
+      "alternates": [
+        {
+          "id": "destination_container_types",
+          "dataType": "objectArray",
+          "subForm": {
+            "id": "destination_container_type",
+            "title": "Destination Container Type",
+            "fields": [
+              {
+                "id": "name",
+                "title": "Name",
+                "description": "Block identifier like 'minecraft:chest'",
+                "dataType": "string"
+              },
+              {
+                "id": "states",
+                "title": "States",
+                "description": "Block state values to match",
+                "dataType": "keyedStringCollection"
+              },
+              {
+                "id": "tags",
+                "title": "Tags",
+                "description": "Block tags to match",
+                "dataType": "string"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "source_container_types",
+      "title": "Source Container Types",
+      "description": "A list of block descriptors that should be container types to take items from. Can be simple block identifier strings or objects with name, states, and tags.",
+      "dataType": "stringArray",
+      "defaultValue": [],
+      "alternates": [
+        {
+          "id": "source_container_types",
+          "dataType": "objectArray",
+          "subForm": {
+            "id": "source_container_type",
+            "title": "Source Container Type",
+            "fields": [
+              {
+                "id": "name",
+                "title": "Name",
+                "description": "Block identifier like 'minecraft:chest'",
+                "dataType": "string"
+              },
+              {
+                "id": "states",
+                "title": "States",
+                "description": "Block state values to match",
+                "dataType": "keyedStringCollection"
+              },
+              {
+                "id": "tags",
+                "title": "Tags",
+                "description": "Block tags to match",
+                "dataType": "string"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.transport_items",
+    "title": "Entity Transport Items Behavior",
+    "description": "A behavior that enables a mob to transport items from and to containers.",
+    "fields": [
+      {
+        "id": "allow_simultaneous_interaction",
+        "title": "Allow Simultaneous Interaction",
+        "description": "When true the mob will wait until a container is not used by other entities before starting to interact with it.",
+        "dataType": 1,
+        "defaultValue": false
+      },
+      {
+        "id": "allowed_items",
+        "title": "Allowed Items",
+        "description": "A list of item descriptors that are the only items the mob is allowed to transport. If this and \"disallowed_items\" are both empty, then all items are allowed. If non-empty \"disallowed_items\" must be empty.",
+        "dataType": 2,
+        "defaultValue": [],
+        "alternates": [
+          {
+            "id": "allowed_items",
+            "dataType": 24
+          }
+        ]
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "destination_container_types",
+        "description": "A list of block descriptors that should be a container type to put items in.",
+        "dataType": 15,
+        "defaultValue": [],
+        "subForm": {
+          "id": "destination_container_types",
+          "title": "Destination Container Types",
+          "fields": [
+            {
+              "id": "name",
+              "title": "Name",
+              "dataType": 2,
+              "defaultValue": ""
+            },
+            {
+              "id": "states",
+              "title": "States",
+              "dataType": 0,
+              "defaultValue": {},
+              "alternates": [
+                {
+                  "id": "states",
+                  "dataType": 2
+                },
+                {
+                  "id": "states",
+                  "dataType": 1
+                }
+              ]
+            },
+            {
+              "id": "tags",
+              "title": "Tags",
+              "dataType": 2,
+              "defaultValue": ""
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "destination_container_types",
+            "dataType": 2
+          },
+          {
+            "id": "destination_container_types",
+            "dataType": 16
+          }
+        ]
+      },
+      {
+        "id": "disallowed_items",
+        "title": "Disallowed Items",
+        "description": "A list of item descriptors that are the mob is not allowed to transport. If non-empty \"allowed_items\" must be empty.",
+        "dataType": 2,
+        "defaultValue": [],
+        "alternates": [
+          {
+            "id": "disallowed_items",
+            "dataType": 24
+          }
+        ]
+      },
+      {
+        "id": "idle_cooldown",
+        "title": "Idle Cooldown",
+        "description": "When the mob cannot find a container in which to get or put items, the goal will stop being active for this amount of time in seconds.",
+        "dataType": 0,
+        "defaultValue": 20
+      },
+      {
+        "id": "initial_cooldown",
+        "title": "Initial Cooldown",
+        "description": "How long the mob will wait after spawning or getting the goal added before the goal can start.",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "interaction_time",
+        "title": "Interaction Time",
+        "description": "The amount of time in seconds spent interacting with the containers.",
+        "dataType": 3,
+        "defaultValue": 3
+      },
+      {
+        "id": "max_stack_size",
+        "title": "Max Stack Size",
+        "description": "The maximum stack size that the mob will try to take from a container.",
+        "dataType": 0,
+        "defaultValue": 64,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 1
+          },
+          {
+            "comparison": "<=",
+            "value": 64
+          }
+        ]
+      },
+      {
+        "id": "max_visited_containers",
+        "title": "Max Visited Containers",
+        "description": "The maximum number of containers that the mob will try to take/place items from before going on cooldown and starting over.",
+        "dataType": 0,
+        "defaultValue": 16
+      },
+      {
+        "id": "place_strategy",
+        "title": "Place Strategy",
+        "description": "The strategy to use for placing the transported item. Any - always place if there is room, With matching - place if there is a matching item in the container, With matching or empty - like With matching but will also place in empty containers",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "any",
+            "title": "Any"
+          },
+          {
+            "id": "with_matching",
+            "title": "With matching"
+          },
+          {
+            "id": "with_matching_or_empty",
+            "title": "With matching or empty"
+          }
+        ],
+        "defaultValue": "any"
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "search_distance",
+        "title": "Search Distance",
+        "description": "The maximum search distance horizontally and vertically at which to find containers for taking or placing items.",
+        "dataType": 32,
+        "defaultValue": [
+          64,
+          32
+        ],
+        "alternates": [
+          {
+            "id": "search_distance",
+            "dataType": 16,
+            "subForm": {
+              "id": "search_distance",
+              "title": "Search Distance",
+              "fields": [
+                {
+                  "id": "x",
+                  "title": "X",
+                  "dataType": 3,
+                  "defaultValue": 0
+                },
+                {
+                  "id": "y",
+                  "title": "Y",
+                  "dataType": 3,
+                  "defaultValue": 0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "search_strategy",
+        "title": "Search Strategy",
+        "description": "The strategy to use for finding source or destination containers. The nearest valid container or a random valid container in range.",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "nearest",
+            "title": "Nearest"
+          },
+          {
+            "id": "random",
+            "title": "Random"
+          }
+        ],
+        "defaultValue": "random"
+      },
+      {
+        "id": "source_container_types",
+        "description": "A list of block descriptors that should be a container type to get items from.",
+        "dataType": 15,
+        "defaultValue": [],
+        "subForm": {
+          "id": "source_container_types",
+          "title": "Source Container Types",
+          "fields": [
+            {
+              "id": "name",
+              "title": "Name",
+              "dataType": 2,
+              "defaultValue": ""
+            },
+            {
+              "id": "states",
+              "title": "States",
+              "dataType": 0,
+              "defaultValue": {},
+              "alternates": [
+                {
+                  "id": "states",
+                  "dataType": 2
+                },
+                {
+                  "id": "states",
+                  "dataType": 1
+                }
+              ]
+            },
+            {
+              "id": "tags",
+              "title": "Tags",
+              "dataType": 2,
+              "defaultValue": ""
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "source_container_types",
+            "dataType": 2
+          },
+          {
+            "id": "source_container_types",
+            "dataType": 16
+          }
+        ]
+      }
+    ],
+    "samples": {}
+  }
+}

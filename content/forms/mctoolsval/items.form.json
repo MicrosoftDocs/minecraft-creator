@@ -19,16 +19,16 @@
     {
       "id": "102",
       "title": "Behavior Pack",
-      "messageType": 0,
-      "dataType": 6,
+      "messageType": "info",
+      "dataType": "intBoolean",
       "description": "Indicates a behavior pack manifest.json was found in the project.",
       "technicalDescription": "Data contains a count (1) indicating a behavior pack exists"
     },
     {
       "id": "103",
       "title": "Resource Pack",
-      "messageType": 0,
-      "dataType": 6,
+      "messageType": "info",
+      "dataType": "intBoolean",
       "description": "Indicates a resource pack manifest.json was found in the project.",
       "technicalDescription": "Data contains a count (1) indicating a resource pack exists"
     }

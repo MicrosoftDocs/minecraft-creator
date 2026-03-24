@@ -18,12 +18,21 @@ Allows this mob to breed with other mobs.
 > * [Breedable (minecraft:breedable)](../EntityComponents/minecraftComponent_breedable.md)
 > 
 
-## Breed Behavior Properties
+## Entity Breed Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Chicken: `3`, Frog: `4` | 
-| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Chicken: `1`, Goat: `0.6` | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Chicken: `3`, Frog: `4` | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier applied to the mob when using this AI Goal. | Chicken: `1`, Goat: `0.6` | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples
 

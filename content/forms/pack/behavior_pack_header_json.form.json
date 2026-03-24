@@ -6,7 +6,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "defines the name, description, and version for a behavior pack header" }
+          {
+            "type": "literal",
+            "text": "defines the name, description, and version for a behavior pack header"
+          }
         ]
       }
     ]
@@ -15,17 +18,17 @@
     {
       "id": "name",
       "title": "Name",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "description",
       "title": "Description",
-      "dataType": 13
+      "dataType": "longFormString"
     },
     {
       "id": "version",
       "title": "Version",
-      "dataType": 13
+      "dataType": "longFormString"
     }
   ]
 }

@@ -42,7 +42,7 @@ Defines a voxel shape with boxes.
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| boxes | *not set* | [Boxes](#voxel-shapes-box) item |  | 
+| boxes | *not set* | Array of [Boxes](#voxel-shapes-box) items |  | 
 
 #### Voxel Shapes Box
 Defines a bounding box with min and max coordinates.

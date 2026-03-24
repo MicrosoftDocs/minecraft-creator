@@ -88,14 +88,14 @@
   "fields": [
     {
       "id": "can_be_stolen",
-      "dataType": 1,
+      "dataType": "boolean",
       "defaultValue": false
     },
     {
       "id": "hard_distance",
       "description": "Distance in blocks at which the leash stiffens, restricting movement.",
-      "dataType": 0,
-      "experienceType": 3,
+      "dataType": "int",
+      "experienceType": "slider",
       "minValue": 0,
       "suggestedMaxValue": 20,
       "defaultValue": 6
@@ -103,8 +103,8 @@
     {
       "id": "soft_distance",
       "description": "Distance in blocks at which the 'spring' effect starts acting to keep this entity close to the entity that leashed it.",
-      "dataType": 0,
-      "experienceType": 3,
+      "dataType": "int",
+      "experienceType": "slider",
       "minValue": 0,
       "suggestedMaxValue": 20,
       "defaultValue": 4
@@ -112,8 +112,8 @@
     {
       "id": "max_distance",
       "description": "Distance in blocks it which the leash breaks.",
-      "dataType": 0,
-      "experienceType": 3,
+      "dataType": "int",
+      "experienceType": "slider",
       "minValue": 0,
       "suggestedMaxValue": 20,
       "defaultValue": 0
@@ -122,12 +122,12 @@
       "id": "on_leash",
       "title": "Leash Event",
       "description": "Event to call when this entity is leashed. Can be an object with event and target properties, or a simple event string.",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "ActorDefinitionTrigger",
       "alternates": [
         {
           "id": "on_leash",
-          "dataType": 2
+          "dataType": "string"
         }
       ]
     },
@@ -135,12 +135,12 @@
       "id": "on_unleash",
       "title": "Unleash Event",
       "description": "Event to call when this entity is unleashed. Can be an object with event and target properties, or a simple event string.",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "ActorDefinitionTrigger",
       "alternates": [
         {
           "id": "on_unleash",
-          "dataType": 2
+          "dataType": "string"
         }
       ]
     }

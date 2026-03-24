@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "defines an event trigger with optional conditions" }
+          {
+            "type": "literal",
+            "text": "defines an event trigger with optional conditions"
+          }
         ]
       }
     ]
@@ -14,7 +17,7 @@
       "id": "target",
       "title": "Filter target subject",
       "description": "Filter target subject",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "generated_doNotEdit": {

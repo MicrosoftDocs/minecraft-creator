@@ -17,14 +17,14 @@
       "id": "expiration_expression",
       "title": "Expiration Expression",
       "description": "When the expression is non-zero, the particle expires. Can be a number or Molang expression.",
-      "dataType": 34,
+      "dataType": "molang",
       "defaultValue": 0
     },
     {
       "id": "max_lifetime",
       "title": "Max Lifetime",
       "description": "The maximum lifetime of the particle in seconds. Can be a number or Molang expression.",
-      "dataType": 34
+      "dataType": "molang"
     }
   ],
   "generatedFromSchema_doNotEdit": {

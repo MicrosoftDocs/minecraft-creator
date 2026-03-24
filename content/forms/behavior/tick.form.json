@@ -55,7 +55,7 @@
       "id": "values",
       "title": "Values",
       "description": "An array of function paths to execute every tick. Function paths are relative to the functions folder without the .mcfunction extension (e.g., 'namespace/function_name').",
-      "dataType": 17,
+      "dataType": "stringArray",
       "subForm": {
         "id": "function_path",
         "fields": [
@@ -63,7 +63,7 @@
             "id": "value",
             "title": "Function Path",
             "description": "Path to a .mcfunction file relative to the functions folder, without file extension.",
-            "dataType": 2
+            "dataType": "string"
           }
         ]
       },
@@ -75,7 +75,10 @@
     "sample_behavior_pack/functions/tick.json": [
       {
         "path": "values",
-        "content": ["wiki/function_1", "wiki/function_2"]
+        "content": [
+          "wiki/function_1",
+          "wiki/function_2"
+        ]
       }
     ]
   }

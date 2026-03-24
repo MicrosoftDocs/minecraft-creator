@@ -3,11 +3,25 @@
   "summarizer": {
     "phrases": [
       {
-        "visibility": [{ "field": "value", "comparison": "defined" }],
+        "visibility": [
+          {
+            "field": "value",
+            "comparison": "defined"
+          }
+        ],
         "tokens": [
-          { "type": "literal", "text": "deals " },
-          { "type": "value", "field": "value" },
-          { "type": "literal", "text": " attack damage" }
+          {
+            "type": "literal",
+            "text": "deals "
+          },
+          {
+            "type": "value",
+            "field": "value"
+          },
+          {
+            "type": "literal",
+            "text": " attack damage"
+          }
         ]
       }
     ]
@@ -18,7 +32,7 @@
     {
       "id": "value",
       "description": "How much an attack should damage a target.",
-      "dataType": 18,
+      "dataType": "intRange",
       "minValue": -50,
       "maxValue": 50
     }

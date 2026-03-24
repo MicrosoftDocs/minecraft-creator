@@ -1316,5 +1316,205 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.look_at_player",
+    "title": "Entity Look At Player Behavior",
+    "description": "Allows the mob to look at the player when the player is nearby.",
+    "fields": [
+      {
+        "id": "angle_of_view_horizontal",
+        "title": "Angle Of View Horizontal",
+        "description": "The angle in degrees that the mob can see rotated on the Y-axis (left-right).",
+        "dataType": 0,
+        "defaultValue": 360,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 360
+          }
+        ]
+      },
+      {
+        "id": "angle_of_view_vertical",
+        "title": "Angle Of View Vertical",
+        "description": "The angle in degrees that the mob can see rotated on the X-axis (up-down).",
+        "dataType": 0,
+        "defaultValue": 360,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 360
+          }
+        ]
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "look_distance",
+        "title": "Look Distance",
+        "description": "The distance in blocks from which the entity will look at the nearest entity.",
+        "dataType": 3,
+        "defaultValue": 8,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+              "content": 6
+            }
+          ],
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+              "content": 16
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cave_spider.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+              "content": 6
+            }
+          ]
+        }
+      },
+      {
+        "id": "look_time",
+        "title": "Look Time",
+        "description": "Time range to look at the nearest entity.",
+        "dataType": 16,
+        "defaultValue": {
+          "max": 4,
+          "min": 2
+        },
+        "subFormId": "item_components/floatrange",
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+              "content": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+              "content": 8
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+              "content": 7
+            }
+          ],
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+              "content": 7
+            }
+          ]
+        }
+      },
+      {
+        "id": "probability",
+        "title": "Probability",
+        "description": "The probability of looking at the target. A value of 1.00 is 100%.",
+        "dataType": 3,
+        "defaultValue": 0.019999999552965164,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+              "content": 0.02
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/allay.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+          "content": {
+            "look_distance": 6,
+            "priority": 8
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+          "content": {
+            "priority": 7
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/breeze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+          "content": {
+            "look_time": {
+              "min": 1,
+              "max": 2
+            },
+            "look_distance": 16,
+            "priority": 7
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cave_spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+          "content": {
+            "look_distance": 6,
+            "priority": 7
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+          "content": {
+            "priority": 7,
+            "look_distance": 6,
+            "probability": 0.02
+          }
+        }
+      ]
+    }
   }
 }

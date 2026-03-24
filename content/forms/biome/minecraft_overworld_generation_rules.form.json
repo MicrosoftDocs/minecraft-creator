@@ -17,7 +17,7 @@
       "id": "generate_for_climates",
       "title": "Generate For Climates",
       "description": "Controls the world generation climate categories that this biome can spawn for. Each entry is an array of [climate_name, weight] where climate_name is 'medium', 'warm', 'lukewarm', 'cold', or 'frozen'.",
-      "dataType": 45
+      "dataType": "stringNumberTupleArray"
     },
     {
       "id": "hills_transformation",

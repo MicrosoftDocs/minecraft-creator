@@ -17,7 +17,7 @@
       "id": "event",
       "title": "Event",
       "description": "The event to run when the conditions for this trigger are met.",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "title": "On wake with owner trigger",

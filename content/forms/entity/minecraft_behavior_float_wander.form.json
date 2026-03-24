@@ -15,11 +15,11 @@
   "fields": [
     {
       "id": "float_duration",
-      "dataType": 32,
+      "dataType": "numberArray",
       "alternates": [
         {
           "id": "float_duration",
-          "dataType": 3
+          "dataType": "float"
         }
       ]
     }

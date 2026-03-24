@@ -20,7 +20,7 @@
       "id": "biome_music",
       "title": "Biome/State Music",
       "description": "Music configuration keyed by biome identifier or game state (e.g., 'forest', 'desert', 'menu', 'creative', 'credits').",
-      "dataType": 14,
+      "dataType": "keyedObjectCollection",
       "subForm": {
         "id": "music_definition_entry",
         "title": "Music Definition",
@@ -30,21 +30,21 @@
             "id": "event_name",
             "title": "Event Name",
             "description": "The sound event identifier that plays music for this biome/state (e.g., 'music.overworld.forest', 'music.game.nether').",
-            "dataType": 2,
+            "dataType": "string",
             "isRequired": true
           },
           {
             "id": "min_delay",
             "title": "Minimum Delay",
             "description": "The minimum delay in seconds before the music starts playing after entering this biome or after the previous track ends.",
-            "dataType": 0,
+            "dataType": "int",
             "defaultValue": 60
           },
           {
             "id": "max_delay",
             "title": "Maximum Delay",
             "description": "The maximum delay in seconds before the music starts playing. The actual delay is randomly chosen between min_delay and max_delay.",
-            "dataType": 0,
+            "dataType": "int",
             "defaultValue": 180
           }
         ]

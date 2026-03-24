@@ -79,5 +79,102 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.dragonflaming",
+    "title": "Entity Dragonflaming Behavior",
+    "description": "Allows this entity to use a flame-breath attack. Can only be used by the Ender Dragon.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "cooldown_time",
+        "title": "Cooldown Time",
+        "description": "Time (in seconds) between each start of the cycle to roar, then breath flame.",
+        "dataType": 3,
+        "defaultValue": 10
+      },
+      {
+        "id": "flame_time",
+        "title": "Flame Time",
+        "description": "Time (in seconds), after roar, to breath flame.",
+        "dataType": 3,
+        "defaultValue": 0.5
+      },
+      {
+        "id": "ground_flame_count",
+        "title": "Ground Flame Count",
+        "description": "Number of ground flame-breath attacks to use before flight-takeoff.",
+        "dataType": 0,
+        "defaultValue": 4
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/ender_dragon.json": [
+            {
+              "path": "/minecraft:entity/component_groups/dragon_sitting/minecraft:behavior.dragonflaming/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "roar_time",
+        "title": "Roar Time",
+        "description": "Time (in seconds) to roar, before breathing flame.",
+        "dataType": 3,
+        "defaultValue": 2
+      },
+      {
+        "id": "smoke_color",
+        "title": "Smoke Color",
+        "dataType": 2,
+        "defaultValue": "#DC00EF"
+      },
+      {
+        "id": "smoke_radius",
+        "title": "Smoke Radius",
+        "dataType": 3,
+        "defaultValue": 5
+      },
+      {
+        "id": "smoke_time",
+        "title": "Smoke Time",
+        "dataType": 3,
+        "defaultValue": 10
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/ender_dragon.json": [
+        {
+          "path": "/minecraft:entity/component_groups/dragon_sitting/minecraft:behavior.dragonflaming/",
+          "content": {
+            "priority": 1
+          }
+        }
+      ]
+    }
   }
 }

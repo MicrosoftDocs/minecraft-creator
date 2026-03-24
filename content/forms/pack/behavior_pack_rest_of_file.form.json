@@ -6,7 +6,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "specifies the modules and dependencies for a behavior pack" }
+          {
+            "type": "literal",
+            "text": "specifies the modules and dependencies for a behavior pack"
+          }
         ]
       }
     ]
@@ -15,38 +18,38 @@
     {
       "id": "modules",
       "title": "Modules",
-      "dataType": 15,
+      "dataType": "objectArray",
       "subForm": {
         "fields": [
           {
             "id": "description",
             "description": "Description of this module.",
-            "dataType": 13
+            "dataType": "longFormString"
           },
           {
             "id": "language",
             "description": "The scripting language of this module (e.g., 'javascript').",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "type",
             "description": "Type of this module.",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "uuid",
             "description": "Unique identifier of this module.",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "version",
             "description": "Version",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "entry",
             "description": "Script entry point for this behavior pack.",
-            "dataType": 2
+            "dataType": "string"
           }
         ]
       }
@@ -54,7 +57,7 @@
     {
       "id": "dependencies",
       "title": "Dependencies",
-      "dataType": 24
+      "dataType": "keyedStringCollection"
     }
   ]
 }

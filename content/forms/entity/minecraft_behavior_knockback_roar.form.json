@@ -17,12 +17,12 @@
       "id": "on_roar_end",
       "title": "Roar End Event",
       "description": "Event that is triggered when the roar ends. Can be an object with event and target properties, or a simple event string.",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "ActorDefinitionTrigger",
       "alternates": [
         {
           "id": "on_roar_end",
-          "dataType": 2
+          "dataType": "string"
         }
       ]
     }

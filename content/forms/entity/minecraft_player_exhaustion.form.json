@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "has an exhaustion level" }
+          {
+            "type": "literal",
+            "text": "has an exhaustion level"
+          }
         ]
       }
     ]
@@ -17,13 +20,13 @@
       "id": "value",
       "title": "Value",
       "description": "The initial value of a player's exhaustion level.",
-      "dataType": 0
+      "dataType": "int"
     },
     {
       "id": "max",
       "title": "Maximum Value",
       "description": "A maximum value for a player's exhaustion.",
-      "dataType": 0
+      "dataType": "int"
     }
   ]
 }

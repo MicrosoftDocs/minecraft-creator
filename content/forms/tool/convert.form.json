@@ -17,12 +17,12 @@
     {
       "id": "name",
       "title": "Name",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "targetJavaVersion",
       "title": "Target Java Version",
-      "dataType": 5,
+      "dataType": "intEnum",
       "choices": [
         {
           "id": 0,

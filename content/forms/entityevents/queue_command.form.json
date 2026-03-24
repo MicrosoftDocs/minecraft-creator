@@ -4,19 +4,19 @@
     {
       "id": "command",
       "description": "Slash command to run.",
-      "dataType": 2,
+      "dataType": "string",
       "alternates": [
         {
           "id": "command",
           "description": "List of slash commands to run.",
-          "dataType": 17
+          "dataType": "stringArray"
         }
       ]
     },
     {
       "id": "target",
       "description": "The target context to execute against.",
-      "dataType": 2,
+      "dataType": "string",
       "choices": [
         {
           "id": "self"
@@ -46,7 +46,9 @@
     ]
   },
   "id": "queue_command",
-  "tags": ["entityevent"],
+  "tags": [
+    "entityevent"
+  ],
   "generated_doNotEdit": {
     "id": "Queue Command",
     "title": "Queue Command",

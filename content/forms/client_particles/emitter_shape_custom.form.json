@@ -17,7 +17,7 @@
       "id": "direction",
       "title": "Direction",
       "description": "The direction of particle emission, as [x, y, z] Molang expressions or numbers.",
-      "dataType": 35,
+      "dataType": "molangArray",
       "defaultValue": [
         0,
         0,
@@ -30,7 +30,7 @@
       "id": "offset",
       "title": "Offset",
       "description": "The offset from the emitter position, as [x, y, z] Molang expressions or numbers.",
-      "dataType": 35,
+      "dataType": "molangArray",
       "defaultValue": [
         0,
         0,

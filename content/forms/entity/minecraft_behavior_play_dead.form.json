@@ -74,5 +74,293 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.play_dead",
+    "title": "Entity Play Dead Behavior",
+    "description": "Allows this entity to pretend to be dead to avoid being targeted by attackers.",
+    "fields": [
+      {
+        "id": "apply_regeneration",
+        "title": "Apply Regeneration",
+        "description": "Whether the mob will receive the regeneration effect while playing dead.",
+        "dataType": 1,
+        "defaultValue": false
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "damage_sources",
+        "title": "Damage Sources",
+        "description": "The list of Entity Damage Sources that will cause this mob to play dead.",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "all",
+            "title": "All"
+          },
+          {
+            "id": "anvil",
+            "title": "Anvil"
+          },
+          {
+            "id": "block_explosion",
+            "title": "Block explosion"
+          },
+          {
+            "id": "campfire",
+            "title": "Campfire"
+          },
+          {
+            "id": "charging",
+            "title": "Charging"
+          },
+          {
+            "id": "contact",
+            "title": "Contact"
+          },
+          {
+            "id": "drowning",
+            "title": "Drowning"
+          },
+          {
+            "id": "entity_attack",
+            "title": "Entity attack"
+          },
+          {
+            "id": "entity_explosion",
+            "title": "Entity explosion"
+          },
+          {
+            "id": "fall",
+            "title": "Fall"
+          },
+          {
+            "id": "falling_block",
+            "title": "Falling block"
+          },
+          {
+            "id": "fire",
+            "title": "Fire"
+          },
+          {
+            "id": "fire_tick",
+            "title": "Fire tick"
+          },
+          {
+            "id": "fireworks",
+            "title": "Fireworks"
+          },
+          {
+            "id": "fly_into_wall",
+            "title": "Fly into wall"
+          },
+          {
+            "id": "freezing",
+            "title": "Freezing"
+          },
+          {
+            "id": "lava",
+            "title": "Lava"
+          },
+          {
+            "id": "lightning",
+            "title": "Lightning"
+          },
+          {
+            "id": "mace_smash",
+            "title": "Mace smash"
+          },
+          {
+            "id": "magic",
+            "title": "Magic"
+          },
+          {
+            "id": "magma",
+            "title": "Magma"
+          },
+          {
+            "id": "none",
+            "title": "None"
+          },
+          {
+            "id": "override",
+            "title": "Override"
+          },
+          {
+            "id": "piston",
+            "title": "Piston"
+          },
+          {
+            "id": "projectile",
+            "title": "Projectile"
+          },
+          {
+            "id": "ram_attack",
+            "title": "Ram attack"
+          },
+          {
+            "id": "self_destruct",
+            "title": "Self destruct"
+          },
+          {
+            "id": "sonic_boom",
+            "title": "Sonic boom"
+          },
+          {
+            "id": "soul_campfire",
+            "title": "Soul campfire"
+          },
+          {
+            "id": "stalactite",
+            "title": "Stalactite"
+          },
+          {
+            "id": "stalagmite",
+            "title": "Stalagmite"
+          },
+          {
+            "id": "starve",
+            "title": "Starve"
+          },
+          {
+            "id": "suffocation",
+            "title": "Suffocation"
+          },
+          {
+            "id": "temperature",
+            "title": "Temperature"
+          },
+          {
+            "id": "thorns",
+            "title": "Thorns"
+          },
+          {
+            "id": "void",
+            "title": "Void"
+          },
+          {
+            "id": "wither",
+            "title": "Wither"
+          }
+        ]
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "The amount of time the mob will remain playing dead (in seconds).",
+        "dataType": 3,
+        "defaultValue": 1
+      },
+      {
+        "id": "filters",
+        "description": "The list of other triggers that are required for the mob to activate play dead",
+        "dataType": 16,
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "filters",
+          "title": "Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": 16
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": 16
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": 16
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": 2,
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": 16
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "filters",
+            "dataType": 16
+          }
+        ]
+      },
+      {
+        "id": "force_below_health",
+        "title": "Force Below Health",
+        "description": "The amount of health at which damage will cause the mob to play dead.",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "random_damage_range",
+        "title": "Random Damage Range",
+        "description": "The range of damage that may cause the goal to start depending on randomness. Damage taken below the min will never cause the goal to start. Damage taken above the max will always cause the goal to start.",
+        "dataType": 16,
+        "defaultValue": {
+          "max": 0,
+          "min": 0
+        },
+        "subFormId": "item_components/intrange"
+      },
+      {
+        "id": "random_start_chance",
+        "title": "Random Start Chance",
+        "description": "The likelihood of this goal starting upon taking damage.",
+        "dataType": 3,
+        "defaultValue": 1
+      }
+    ],
+    "samples": {}
   }
 }

@@ -124,7 +124,7 @@
     "tags": [
       "presence"
     ],
-    "dataType": 1
+    "dataType": "boolean"
   },
   "samples": {
     "Example": [

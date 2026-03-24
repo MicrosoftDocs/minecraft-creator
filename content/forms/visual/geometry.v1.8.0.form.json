@@ -20,7 +20,7 @@
       "id": "bones.reset",
       "title": "Bone Reset",
       "description": "When true, resets the bone to its bind pose before applying animations. This property has been deprecated in newer geometry format versions.",
-      "dataType": 1,
+      "dataType": "boolean",
       "isDeprecated": true,
       "versionDeprecated": "1.16.0",
       "note": "The reset property on bones was available in geometry v1.8.0 through v1.14.0 but is no longer used in modern formats."
@@ -29,7 +29,7 @@
       "id": "bones.inflate",
       "title": "Bone Inflate",
       "description": "Expands or shrinks the bone's cubes. This property has been deprecated in newer geometry format versions.",
-      "dataType": 3,
+      "dataType": "float",
       "isDeprecated": true,
       "versionDeprecated": "1.16.0",
       "note": "The inflate property on bones was available in geometry v1.8.0 through v1.14.0 but is no longer used in modern formats. Use cube-level inflate instead."

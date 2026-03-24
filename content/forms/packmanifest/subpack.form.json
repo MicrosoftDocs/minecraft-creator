@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "3.0.0.Subpack",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "specifies a subpack with folder name and memory performance tier"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Subpack",
+    "title": "Packmanifest Subpack",
+    "fields": [
+      {
+        "id": "folder_name",
+        "title": "Folder Name",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "memory_performance_tier",
+        "title": "Memory Performance Tier",
+        "dataType": 0,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 5
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "name",
+        "title": "Name",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  },
+  "description": "Defines a subpack option that players can choose in pack settings. Subpacks allow offering different quality levels (like HD vs SD textures) that map to memory tiers, letting players with lower-end devices select lighter alternatives."
+}

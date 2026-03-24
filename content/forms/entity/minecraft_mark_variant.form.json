@@ -29,7 +29,7 @@
       "title": "Value",
       "description": "The Id of the mark_variant. By convention, 0 is the Id of the base entity.",
       "defaultValue": 0,
-      "dataType": 0,
+      "dataType": "int",
       "hideSamples": true
     }
   ],

@@ -198,5 +198,137 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.breed",
+    "title": "Entity Breed Behavior",
+    "description": "Allows this mob to breed with other mobs.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:behavior.breed/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_adult/minecraft:behavior.breed/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.breed/",
+              "content": 4
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier applied to the mob when using this AI Goal.",
+        "dataType": 3,
+        "defaultValue": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:behavior.breed/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_adult/minecraft:behavior.breed/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/goat_adult/minecraft:behavior.breed/",
+              "content": 0.6
+            }
+          ],
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:behavior.breed/",
+              "content": 0.6
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:behavior.breed/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:fox_adult/minecraft:behavior.breed/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/frog.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.breed/",
+          "content": {
+            "priority": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/goat.json": [
+        {
+          "path": "/minecraft:entity/component_groups/goat_adult/minecraft:behavior.breed/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 0.6
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/hoglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:behavior.breed/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 0.6
+          }
+        }
+      ]
+    }
   }
 }

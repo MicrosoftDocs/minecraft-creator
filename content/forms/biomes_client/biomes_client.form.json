@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "defines client-side biome visuals including water and fog colors" }
+          {
+            "type": "literal",
+            "text": "defines client-side biome visuals including water and fog colors"
+          }
         ]
       }
     ]
@@ -15,63 +18,63 @@
   "fields": [
     {
       "id": "biomes",
-      "dataType": 14,
+      "dataType": "keyedObjectCollection",
       "title": "Biomes",
       "description": "A collection of biome visual definitions. Keys are biome identifiers (e.g., 'minecraft:plains') or 'default' for fallback settings.",
       "isRequired": true,
       "subForm": {
         "fields": [
           {
-            "dataType": 2,
+            "dataType": "string",
             "id": "water_surface_color",
             "title": "Water Surface Color",
             "description": "The color of water surfaces in this biome. Specified as a hex color string (e.g., '#44AFF5').",
             "isRequired": false
           },
           {
-            "dataType": 3,
+            "dataType": "float",
             "id": "water_surface_transparency",
             "title": "Water Surface Transparency",
             "description": "The transparency of water surfaces. 0.0 is fully transparent, 1.0 is fully opaque.",
             "isRequired": false
           },
           {
-            "dataType": 2,
+            "dataType": "string",
             "id": "water_fog_color",
             "title": "Water Fog Color",
             "description": "The color of fog when underwater in this biome. Specified as a hex color string.",
             "isRequired": false
           },
           {
-            "dataType": 0,
+            "dataType": "int",
             "id": "water_fog_distance",
             "title": "Water Fog Distance",
             "description": "The distance at which underwater fog becomes fully opaque.",
             "isRequired": false
           },
           {
-            "dataType": 2,
+            "dataType": "string",
             "id": "fog_color",
             "title": "Fog Color",
             "description": "The color of atmospheric fog in this biome. Specified as a hex color string.",
             "isRequired": false
           },
           {
-            "dataType": 2,
+            "dataType": "string",
             "id": "fog_identifier",
             "title": "Fog Identifier",
             "description": "Reference to a fog definition file that controls fog rendering for this biome (e.g., 'minecraft:fog_default').",
             "isRequired": false
           },
           {
-            "dataType": 1,
+            "dataType": "boolean",
             "id": "remove_all_prior_fog",
             "title": "Remove All Prior Fog",
             "description": "When true, removes all fog definitions that were inherited from prior biomes or defaults before applying this biome's fog settings.",
             "isRequired": false
           },
           {
-            "dataType": 1,
+            "dataType": "boolean",
             "id": "inherit_from_prior_fog",
             "title": "Inherit From Prior Fog",
             "description": "When true, inherits fog settings from the prior fog stack. When false, uses only this biome's explicit fog settings.",

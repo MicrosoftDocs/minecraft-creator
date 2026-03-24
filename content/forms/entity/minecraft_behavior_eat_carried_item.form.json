@@ -60,5 +60,72 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.eat_carried_item",
+    "title": "Entity Eat Carried Item Behavior",
+    "description": "If the mob is carrying a food item, the mob will eat it and the effects will be applied to the mob.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "delay_before_eating",
+        "title": "Delay Before Eating",
+        "description": "Time in seconds the mob should wait before eating the item.",
+        "dataType": 3,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.eat_carried_item/",
+              "content": 28
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.eat_carried_item/",
+              "content": 12
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.eat_carried_item/",
+          "content": {
+            "priority": 12,
+            "delay_before_eating": 28
+          }
+        }
+      ]
+    }
   }
 }

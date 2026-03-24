@@ -17,7 +17,7 @@
       "id": "sound",
       "title": "Sound",
       "description": "Sound to play when the sneeze occurs.",
-      "dataType": 2,
+      "dataType": "string",
       "lookupId": "soundDefinition"
     }
   ],

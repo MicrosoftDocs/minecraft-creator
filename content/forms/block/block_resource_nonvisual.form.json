@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "has custom sound" }
+          {
+            "type": "literal",
+            "text": "has custom sound"
+          }
         ]
       }
     ]
@@ -17,7 +20,7 @@
       "title": "Sound",
       "description": "Sound item to use.",
       "lookupId": "soundDefinition",
-      "dataType": 2
+      "dataType": "string"
     }
   ]
 }

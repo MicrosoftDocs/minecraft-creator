@@ -22,7 +22,7 @@
     {
       "id": "location",
       "title": "Location Offset",
-      "dataType": 41
+      "dataType": "locationOffset"
     }
   ],
   "description": "Triggers the destruction of a block at a specified world location. When executed, the block is removed and any associated loot tables or block events are processed. Commonly used in automated testing scenarios or scripted world modifications."

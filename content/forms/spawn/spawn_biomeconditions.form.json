@@ -132,18 +132,18 @@
       "id": "minecraft:spawns_lava",
       "title": "Spawns In Lava",
       "description": "Indicates the entity can spawn in lava.",
-      "dataType": 16
+      "dataType": "object"
     },
     {
       "id": "minecraft:disallow_spawns_in_bubble",
       "title": "Disallow Spawns In Bubble",
       "description": "Prevents spawning inside bubble columns.",
-      "dataType": 16
+      "dataType": "object"
     },
     {
       "id": "minecraft:biome_filter",
       "description": "Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.",
-      "dataType": 20,
+      "dataType": "minecraftFilter",
       "note": "This uses the Minecraft filter dataType (20) which properly handles the complex filter structure including string operators and values.",
       "subForm": {
         "id": "minecraft:biome_filter",
@@ -153,50 +153,50 @@
             "id": "domain",
             "title": "Domain",
             "description": "The domain the test should be performed in.",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "operator",
             "title": "Operator",
             "description": "The comparison to apply with 'value'.",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "subject",
             "title": "Subject",
             "description": "The subject of this filter test.",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "test",
             "title": "Test",
             "description": "The name of the test to apply.",
-            "dataType": 2,
+            "dataType": "string",
             "isRequired": true
           },
           {
             "id": "value",
             "title": "Value",
             "description": "The value being compared with the test.",
-            "dataType": 0
+            "dataType": "int"
           },
           {
             "id": "all_of",
             "title": "All Of",
             "description": "All of these tests must pass.",
-            "dataType": 15
+            "dataType": "objectArray"
           },
           {
             "id": "any_of",
             "title": "Any Of",
             "description": "Any of these tests must pass.",
-            "dataType": 15
+            "dataType": "objectArray"
           },
           {
             "id": "none_of",
             "title": "None Of",
             "description": "None of these tests must pass.",
-            "dataType": 15
+            "dataType": "objectArray"
           }
         ]
       },
@@ -204,7 +204,7 @@
         {
           "id": "minecraft:biome_filter",
           "description": "Array of filter objects.",
-          "dataType": 15
+          "dataType": "objectArray"
         }
       ]
     },
@@ -212,17 +212,17 @@
       "id": "minecraft:spawns_on_block_filter",
       "title": "Spawns On Block Filter",
       "description": "Specifies blocks on which this entity can spawn. Can be a single block name string, an array of block objects with name property, or an array of strings representing block names.",
-      "dataType": 15,
+      "dataType": "objectArray",
       "alternates": [
         {
           "id": "minecraft:spawns_on_block_filter",
           "description": "A single block name string",
-          "dataType": 2
+          "dataType": "string"
         },
         {
           "id": "minecraft:spawns_on_block_filter",
           "description": "An array of block name strings",
-          "dataType": 17
+          "dataType": "stringArray"
         }
       ]
     },
@@ -230,18 +230,18 @@
       "id": "minecraft:spawns_on_block_prevented_filter",
       "title": "Spawns On Block Prevented Filter",
       "description": "Specifies blocks on which this entity cannot spawn. Can be an array of block name strings.",
-      "dataType": 17
+      "dataType": "stringArray"
     },
     {
       "id": "minecraft:herd",
       "title": "Herd",
       "description": "Specifies herd spawning configuration. Can be a single herd object or an array of herd objects.",
-      "dataType": 16,
+      "dataType": "object",
       "alternates": [
         {
           "id": "minecraft:herd",
           "description": "Array of herd configurations.",
-          "dataType": 15
+          "dataType": "objectArray"
         }
       ]
     },
@@ -249,12 +249,12 @@
       "id": "minecraft:permute_type",
       "title": "Permute Type",
       "description": "Specifies permutation types for spawning. Can be a single object or an array of permutation objects.",
-      "dataType": 16,
+      "dataType": "object",
       "alternates": [
         {
           "id": "minecraft:permute_type",
           "description": "Array of permutation configurations.",
-          "dataType": 15
+          "dataType": "objectArray"
         }
       ]
     }

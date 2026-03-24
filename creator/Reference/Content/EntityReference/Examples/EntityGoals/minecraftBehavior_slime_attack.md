@@ -33,15 +33,25 @@ Causes the entity to grow tired every once in a while, while attacking.
 > * Magma Cube (minecraft:magma_cube)
 > 
 
-## Slime Attack Behavior Properties
+## Entity Slime Attack Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Magma Cube: `3` | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
+| grow_tired_cooldown_time | 15 | Decimal number |  |  | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Magma Cube: `3` | 
 | set_persistent | false | Boolean true/false | Allows the actor to be set to persist upon targeting a player |  | 
 | speed_multiplier | 1 | Decimal number | During attack behavior, this multiplier modifies the entity's speed when moving toward the target. |  | 
 | x_max_rotation | 10 | Decimal number | Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target. |  | 
 | y_max_rotation | 10 | Decimal number | Maximum rotation (in degrees), on the Y-axis, this entity can rotate while trying to look at the target. |  | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples
 

@@ -12,7 +12,20 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "can_nap_filters",
+      "title": "Can Nap Filters",
+      "description": "Conditions that need to be met for the entity to nap.",
+      "dataType": "minecraftFilter"
+    },
+    {
+      "id": "wake_mob_exceptions",
+      "title": "Wake Mob Exceptions",
+      "description": "Filters for mobs that will not wake this entity from napping.",
+      "dataType": "minecraftFilter"
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.nap",
     "title": "Nap Behavior",

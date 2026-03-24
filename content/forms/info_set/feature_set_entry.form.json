@@ -19,7 +19,7 @@
     {
       "id": "count",
       "title": "Count",
-      "dataType": 0,
+      "dataType": "int",
       "description": "Number of occurrences attributed to this feature."
     }
   ]

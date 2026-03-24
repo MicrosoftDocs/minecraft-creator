@@ -67,5 +67,72 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.roar",
+    "title": "Entity Roar Behavior",
+    "description": "Allows this entity to roar at another entity based on data in minecraft:anger_level. Once the anger threshold specified in minecraft:anger_level has been reached, this entity will roar for the specified amount of time, look at the other entity, apply anger boost towards it, and finally target it.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "The amount of time to roar for.",
+        "dataType": 3,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.roar/",
+              "content": 4.2
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.roar/",
+              "content": 2
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/warden.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.roar/",
+          "content": {
+            "duration": 4.2,
+            "priority": 2
+          }
+        }
+      ]
+    }
   }
 }

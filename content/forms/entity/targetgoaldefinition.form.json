@@ -49,7 +49,7 @@
         "id": "entity_types",
         "title": "Entity Types",
         "description": "Filters which types of targets are valid for this entity.",
-        "dataType": 16,
+        "dataType": 15,
         "defaultValue": [],
         "alternates": [
           {

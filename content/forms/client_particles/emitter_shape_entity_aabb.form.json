@@ -17,11 +17,11 @@
       "id": "direction",
       "title": "Direction",
       "description": "The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions.",
-      "dataType": 2,
+      "dataType": "string",
       "alternates": [
         {
           "id": "direction",
-          "dataType": 35,
+          "dataType": "molangArray",
           "minLength": 3,
           "maxLength": 3
         }

@@ -22,13 +22,13 @@
     {
       "id": "location",
       "title": "Location Offset",
-      "dataType": 41,
+      "dataType": "locationOffset",
       "priority": 10
     },
     {
       "id": "blockType",
       "title": "Block to place",
-      "dataType": 2,
+      "dataType": "string",
       "isRequired": true,
       "lookupId": "blockType",
       "priority": 1

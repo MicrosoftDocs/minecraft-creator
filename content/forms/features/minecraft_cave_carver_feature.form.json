@@ -82,7 +82,7 @@
     {
       "id": "format_version",
       "title": "Format Version",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "description": "Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern. This feature only works when placed in the pass \"pregeneration_pass\".",

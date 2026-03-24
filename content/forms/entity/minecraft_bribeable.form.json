@@ -17,11 +17,11 @@
       "id": "bribe_items",
       "title": "Bribe Items",
       "description": "The list of items that can be used to bribe the entity. Can be an array or a single item string.",
-      "dataType": 17,
+      "dataType": "stringArray",
       "alternates": [
         {
           "id": "bribe_items",
-          "dataType": 2
+          "dataType": "string"
         }
       ]
     }

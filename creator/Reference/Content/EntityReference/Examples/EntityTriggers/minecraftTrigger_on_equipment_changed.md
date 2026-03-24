@@ -17,7 +17,7 @@ Allows to specify events to execute when equipment is set in the entity's defaul
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| slots | [] | [Slots](#entity-onequipmentchangedslotentrydescriptor) item | A list of slot-specific events to execute when the entity's equipment changes in those slots. | 
+| slots | [] | Array of [Slots](#entity-onequipmentchangedslotentrydescriptor) items | A list of slot-specific events to execute when the entity's equipment changes in those slots. | 
 
 ### Entity OnEquipmentChangedSlotEntryDescriptor
 

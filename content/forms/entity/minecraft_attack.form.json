@@ -54,19 +54,19 @@
     {
       "id": "damage",
       "description": "Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it. Can be a number, an array [min, max], or an object with range_min and range_max properties.",
-      "dataType": 19,
+      "dataType": "floatRange",
       "minValue": -50,
       "maxValue": 50
     },
     {
       "id": "effect_duration",
       "description": "Duration in seconds of the status ailment applied to the damaged entity.",
-      "dataType": 3
+      "dataType": "float"
     },
     {
       "id": "effect_name",
       "description": "Identifier of the status ailment to apply to an entity attacked by this entity's melee attack.",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "generated_doNotEdit": {

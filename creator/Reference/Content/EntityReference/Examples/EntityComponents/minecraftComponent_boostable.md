@@ -17,7 +17,7 @@ Defines the conditions and behavior of a rideable entity's boost.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| boost_items | *not set* | [Boost Items](#boost-items) item | List of items that can be used to boost while riding this entity. | Pig: `[{"item":"carrotOnAStick","damage":2,"replace_item":"fishing_rod"}]`, Strider: `[{"item":"warped_fungus_on_a_stick","damage":1,"replace_item":"fishing_rod"}]` | 
+| boost_items | *not set* | Array of [Boost Items](#boost-items) items | List of items that can be used to boost while riding this entity. | Pig: `[{"item":"carrotOnAStick","damage":2,"replace_item":"fishing_rod"}]`, Strider: `[{"item":"warped_fungus_on_a_stick","damage":1,"replace_item":"fishing_rod"}]` | 
 | duration | 3 | Decimal number | Time in seconds for the boost. | Pig: `3`, Strider: `16` | 
 | speed_multiplier | 1 | Decimal number | Factor by which the entity's normal speed increases. E.g. 2.0 means go twice as fast. | Pig: `1.35` | 
 
@@ -29,7 +29,7 @@ Defines the conditions and behavior of a rideable entity's boost.
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| damage | *not set* | Array of strings | This is the damage that the item will take each time it is used. | 
+| damage | *not set* | Integer number | This is the damage that the item will take each time it is used. | 
 | item | *not set* | String | Name of the item that can be used to boost. | 
 | replace_item | *not set* | String | The item used to boost will become this item once it is used up. | 
 

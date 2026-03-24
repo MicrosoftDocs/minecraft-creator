@@ -19,7 +19,7 @@
     {
       "id": "$button_text_color",
       "title": "$button Text Color",
-      "dataType": 2,
+      "dataType": "string",
       "samples": {
         "colors": [
           {
@@ -44,7 +44,7 @@
     {
       "id": "$background_color",
       "title": "$background Color",
-      "dataType": 2,
+      "dataType": "string",
       "samples": {
         "colors": [
           {
@@ -71,7 +71,7 @@
     {
       "id": "$highlight_color",
       "title": "$highlight Color",
-      "dataType": 2,
+      "dataType": "string",
       "samples": {
         "colors": [
           {

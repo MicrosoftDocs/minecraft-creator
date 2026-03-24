@@ -62,14 +62,22 @@
       "id": "entity_type",
       "title": "Entity type to ride",
       "description": "Type of entity to acquire as a rider",
-      "dataType": 8,
+      "dataType": "stringLookup",
       "lookupId": "entityType"
     },
     {
       "id": "spawn_event",
       "description": "Trigger event when a rider is acquired",
-      "dataType": 39,
+      "dataType": "minecraftEventReference",
       "lookupId": "entityTypeEvents"
+    },
+    {
+      "id": "riders",
+      "title": "Riders",
+      "description": "List of riders to be added to the entity. Can only spawn as many riders as \"minecraft:rideable\" has \"seat_count\".",
+      "dataType": "objectArray",
+      "subFormId": "entity/rider_data",
+      "mergeSubForm": true
     }
   ],
   "generated_doNotEdit": {
@@ -274,7 +282,7 @@
         "id": "riders",
         "title": "Riders",
         "description": "List of riders to be added to the entity. Can only spawn as many riders as \"minecraft:rideable\" has \"seat_count\".",
-        "dataType": 16,
+        "dataType": 15,
         "defaultValue": [],
         "subFormId": "entity/rider_data",
         "samples": {

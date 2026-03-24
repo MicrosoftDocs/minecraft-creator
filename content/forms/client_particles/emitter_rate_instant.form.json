@@ -17,7 +17,7 @@
       "id": "num_particles",
       "title": "Num Particles",
       "description": "The number of particles to emit. Can be a number or Molang expression.",
-      "dataType": 34
+      "dataType": "molang"
     }
   ],
   "generatedFromSchema_doNotEdit": {

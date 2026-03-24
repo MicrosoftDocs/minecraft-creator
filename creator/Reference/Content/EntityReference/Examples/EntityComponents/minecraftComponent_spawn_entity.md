@@ -40,7 +40,7 @@ Adds a timer after which this entity will spawn another entity or item (similar 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| filters | *not set* | String |  | Chicken: `[{"test":"rider_count","subject":"self","operator":"==","value":0},{"test":"enum_property","subject":"self","domain":"minecraft:climate_variant","value":"temperate"}]` | 
+| filters | *not set* | Minecraft filter | If present, the specified entity will only spawn if the filter evaluates to true. | Chicken: `[{"test":"rider_count","subject":"self","operator":"==","value":0},{"test":"enum_property","subject":"self","domain":"minecraft:climate_variant","value":"temperate"}]` | 
 | max_wait_time | *not set* | Decimal number |  | Chicken: `600` | 
 | min_wait_time | *not set* | Decimal number |  | Chicken: `300` | 
 | spawn_item | *not set* | String |  | Chicken: `"egg"` | 

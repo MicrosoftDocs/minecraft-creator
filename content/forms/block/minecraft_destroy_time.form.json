@@ -125,7 +125,7 @@
   "scalarField": {
     "id": "number",
     "title": "Destroy Time (seconds)",
-    "dataType": 1
+    "dataType": "boolean"
   },
   "title": "Destroy Time (Legacy)",
   "id": "minecraft:destroy_time"

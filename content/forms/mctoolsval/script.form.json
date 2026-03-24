@@ -19,8 +19,8 @@
     {
       "id": "101",
       "title": "APIs Used",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Tracks which Minecraft Script APIs are being used in the project. Identifies imports from @minecraft/ modules and API method calls.",
       "technicalDescription": "Data contains the API name or method being referenced"
     }

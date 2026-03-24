@@ -17,14 +17,14 @@
       "id": "activation_expression",
       "title": "Activation Expression",
       "description": "When the expression is non-zero, the emitter is activated. Can be a number or Molang expression.",
-      "dataType": 34,
+      "dataType": "molang",
       "defaultValue": 1
     },
     {
       "id": "expiration_expression",
       "title": "Expiration Expression",
       "description": "When the expression is non-zero, the emitter expires. Can be a number or Molang expression.",
-      "dataType": 34,
+      "dataType": "molang",
       "defaultValue": 0
     }
   ],

@@ -34,13 +34,13 @@
     {
       "id": "barter_table",
       "description": "Loot table that's used to drop a random item.",
-      "dataType": 8,
+      "dataType": "stringLookup",
       "lookupId": "lootTable"
     },
     {
       "id": "cooldown_after_being_attacked",
       "description": "Duration, in seconds, for which mob won't barter items if it was hurt.",
-      "dataType": 18,
+      "dataType": "intRange",
       "minValue": 0,
       "maxValue": 60
     }

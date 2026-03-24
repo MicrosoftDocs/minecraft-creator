@@ -17,7 +17,7 @@
       "id": "active_time",
       "title": "Active Time",
       "description": "The time in seconds that the emitter is active. Can be a number or Molang expression.",
-      "dataType": 34,
+      "dataType": "molang",
       "defaultValue": 0
     }
   ],

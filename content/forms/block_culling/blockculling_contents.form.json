@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "specifies block culling content with bone, cube, and face data" }
+          {
+            "type": "literal",
+            "text": "specifies block culling content with bone, cube, and face data"
+          }
         ]
       }
     ]
@@ -14,7 +17,7 @@
       "id": "face",
       "title": "Facing",
       "description": "Facing",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "generated_doNotEdit": {

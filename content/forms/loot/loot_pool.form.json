@@ -7,9 +7,18 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "rolls " },
-          { "type": "value", "field": "rolls" },
-          { "type": "literal", "text": " times from a pool of entries" }
+          {
+            "type": "literal",
+            "text": "rolls "
+          },
+          {
+            "type": "value",
+            "field": "rolls"
+          },
+          {
+            "type": "literal",
+            "text": " times from a pool of entries"
+          }
         ]
       }
     ]
@@ -19,26 +28,26 @@
       "id": "rolls",
       "title": "Rolls",
       "description": "Number of times to roll this pool. Can be a fixed number or a range object with min/max.",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 1,
       "minValue": 1,
       "alternates": [
         {
           "id": "rolls",
-          "dataType": 16,
+          "dataType": "object",
           "subForm": {
             "id": "rolls_range",
             "fields": [
               {
                 "id": "min",
                 "title": "Minimum",
-                "dataType": 0,
+                "dataType": "int",
                 "defaultValue": 1
               },
               {
                 "id": "max",
                 "title": "Maximum",
-                "dataType": 0,
+                "dataType": "int",
                 "defaultValue": 1
               }
             ]
@@ -50,14 +59,14 @@
       "id": "bonus_rolls",
       "title": "Bonus Rolls",
       "description": "Additional rolls added based on luck attribute. Can be fixed or range.",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 0
     },
     {
       "id": "entries",
       "title": "Entries",
       "description": "Array of possible entries to select from when rolling this pool.",
-      "dataType": 15,
+      "dataType": "objectArray",
       "subFormId": "loot/loot_entry",
       "isRequired": true
     },
@@ -65,31 +74,31 @@
       "id": "conditions",
       "title": "Conditions",
       "description": "Array of conditions that must be met for this pool to be rolled.",
-      "dataType": 15,
+      "dataType": "objectArray",
       "subFormId": "loot/loot_condition"
     },
     {
       "id": "tiers",
       "title": "Tiers",
       "description": "Tiered entry selection configuration.",
-      "dataType": 16,
+      "dataType": "object",
       "subForm": {
         "id": "pool_tiers",
         "fields": [
           {
             "id": "initial_range",
             "title": "Initial Range",
-            "dataType": 0
+            "dataType": "int"
           },
           {
             "id": "bonus_rolls",
             "title": "Bonus Rolls",
-            "dataType": 0
+            "dataType": "int"
           },
           {
             "id": "bonus_chance",
             "title": "Bonus Chance",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       }

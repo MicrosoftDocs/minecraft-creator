@@ -22,13 +22,13 @@
     {
       "id": "location",
       "title": "Location Offset",
-      "dataType": 41,
+      "dataType": "locationOffset",
       "priority": 10
     },
     {
       "id": "soundName",
       "title": "Play Sound",
-      "dataType": 2,
+      "dataType": "string",
       "isRequired": true,
       "lookupId": "soundDefinition",
       "priority": 1

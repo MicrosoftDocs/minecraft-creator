@@ -19,8 +19,8 @@
     {
       "id": "101",
       "title": "Type Summary",
-      "messageType": 0,
-      "dataType": 2,
+      "messageType": "info",
+      "dataType": "string",
       "description": "Summary of all custom content types (entities, blocks, items, etc.) defined across behavior and resource packs in the project.",
       "technicalDescription": "Data contains the type identifier and definition summary"
     }

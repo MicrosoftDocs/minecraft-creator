@@ -20,19 +20,28 @@ Allows the entity to be controlled by the player using an item in the item_contr
 > * [Item Controllable (minecraft:item_controllable)](../EntityComponents/minecraftComponent_item_controllable.md)
 > 
 
-## Controlled By Player Behavior Properties
+## Entity Controlled By Player Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
 | fractional_rotation | 0.5 | Decimal number | The entity will attempt to rotate to face where the player is facing each tick. |  | 
 | fractional_rotation_limit | 5 | Decimal number | Limits the total degrees the entity can rotate to face where the player is facing on each tick. |  | 
 | mount_speed_multiplier | 1 | Decimal number | Speed multiplier of mount when controlled by player. | Strider: `1.45` | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
 
 ### fractional_rotation
 
-The entity will attempt to rotate to face where the player is facing each tick. The entity will target this percentage of their difference in their current facing angles each tick (from 0.0 to 1.0 where 1.0 = 100%). This is limited by FractionalRotationLimit. A value of 0.0 will result in the entity no longer turning to where the player is facing.
+The entity will attempt to rotate to face where the player is facing each tick. The entity will target this percentage of their difference in their current facing angles each tick (from 0.0 to 1.0 where 1.0 = 100%). This is limited by "fractional_rotation_limit". A value of 0.0 will result in the entity no longer turning to where the player is facing. Value must be >= 0.5. Value must be <= 1.
 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples
 

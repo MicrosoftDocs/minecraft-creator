@@ -17,7 +17,7 @@ Compels the entity to track anger towards a set of nuisances.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| anger_decrement_interval | 1 | String | Anger level will decay over time. Defines how often anger towards all nuisances will decrease by on. | Warden: `1` | 
+| anger_decrement_interval | 1 | Decimal number | Anger level will decay over time. Defines how often anger towards all nuisances will decrease by one. | Warden: `1` | 
 | angry_boost | 20 | Integer number | Anger boost applied to angry threshold when mob gets angry Value must be >= 0. | Warden: `20` | 
 | angry_threshold | 80 | Integer number | Threshold that define when the mob is considered angry at a nuisance Value must be >= 0. | Warden: `80` | 
 | broadcast_anger | false | Boolean true/false | If set, other entities of the same entity definition within the broadcastRange will also become angry |  | 
@@ -26,7 +26,7 @@ Compels the entity to track anger towards a set of nuisances.
 | broadcast_range | 20 | Integer number | Distance in blocks within which other entities of the same entity type will become angry |  | 
 | broadcast_targets | *not set* | Array of strings | A list of entity families to broadcast anger to |  | 
 | calm_event | *not set* | String from a list of choices | Event to fire when this entity is calmed down |  | 
-| default_annoyingness | 0 | String | The default amount of annoyingness for any given nuisance. Specifies how much to raise anger level on each provocation | Warden: `35` | 
+| default_annoyingness | 0 | Integer number | The default amount of annoyingness for any given nuisance. Specifies how much to raise anger level on each provocation. | Warden: `35` | 
 | default_projectile_annoyingness | *not set* | Decimal number |  | Warden: `10` | 
 | duration | *not set* | Integer number | The amount of time in seconds that the entity will be angry. |  | 
 | duration_delta | *not set* | Integer number | Variance in seconds added to the duration [-delta, delta]. |  | 

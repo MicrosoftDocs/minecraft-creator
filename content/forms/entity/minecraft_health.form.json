@@ -3,11 +3,25 @@
   "summarizer": {
     "phrases": [
       {
-        "visibility": [{ "field": "value", "comparison": "defined" }],
+        "visibility": [
+          {
+            "field": "value",
+            "comparison": "defined"
+          }
+        ],
         "tokens": [
-          { "type": "literal", "text": "has " },
-          { "type": "value", "field": "value" },
-          { "type": "literal", "text": " health points" }
+          {
+            "type": "literal",
+            "text": "has "
+          },
+          {
+            "type": "value",
+            "field": "value"
+          },
+          {
+            "type": "literal",
+            "text": " health points"
+          }
         ]
       }
     ]
@@ -19,24 +33,24 @@
       "id": "value",
       "title": "Value",
       "description": "Starting health for this entity in health points (1 point = half a heart).",
-      "dataType": 0,
-      "experienceType": 3,
+      "dataType": "int",
+      "experienceType": "slider",
       "minValue": 0,
       "suggestedMaxValue": 120,
       "defaultValue": 20,
       "alternates": [
         {
           "id": "value",
-          "dataType": 16,
+          "dataType": "object",
           "subForm": {
             "fields": [
               {
                 "id": "range_min",
-                "dataType": 0
+                "dataType": "int"
               },
               {
                 "id": "range_max",
-                "dataType": 0
+                "dataType": "int"
               }
             ]
           }
@@ -47,8 +61,8 @@
       "id": "max",
       "title": "Max",
       "description": "Maximum health this entity can have. Can be higher than the starting value to allow healing beyond initial health.",
-      "dataType": 0,
-      "experienceType": 3,
+      "dataType": "int",
+      "experienceType": "slider",
       "minValue": 0,
       "suggestedMaxValue": 120,
       "defaultValue": 20

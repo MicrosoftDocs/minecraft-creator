@@ -22,7 +22,7 @@
       "description": "Checks that the world template manifest has a header/base_game_version field defined. This field is required for world templates.",
       "howToUse": "Add base_game_version to your world template manifest header. Example: \"base_game_version\": [1, 21, 0]. Use the Minecraft version your world was created with.",
       "messageType": "error",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "110",
@@ -30,7 +30,7 @@
       "description": "The base_game_version major version number is lower than the current Minecraft version. This may cause compatibility issues.",
       "howToUse": "Update base_game_version to the current Minecraft version using the 'Fix' button, or manually edit the manifest header to use the latest version array.",
       "messageType": "recommendation",
-      "dataType": 2,
+      "dataType": "string",
       "matchedValues": [
         {
           "updaterId": "BASEGAMEVER",
@@ -45,7 +45,7 @@
       "description": "The base_game_version major version number is higher than the current Minecraft version. This indicates an invalid future version.",
       "howToUse": "Lower the base_game_version to match the current Minecraft release. Future versions are not valid.",
       "messageType": "error",
-      "dataType": 2,
+      "dataType": "string",
       "matchedValues": [
         {
           "updaterId": "BASEGAMEVER",
@@ -60,7 +60,7 @@
       "description": "The base_game_version minor version number is lower than the current or previous minor version. Consider updating to ensure compatibility.",
       "howToUse": "Update the base_game_version minor version to current using the 'Fix' button for automatic update.",
       "messageType": "recommendation",
-      "dataType": 2,
+      "dataType": "string",
       "matchedValues": [
         {
           "updaterId": "BASEGAMEVER",
@@ -75,7 +75,7 @@
       "description": "The base_game_version minor version number is higher than the current Minecraft version. This indicates an invalid future version.",
       "howToUse": "The minor version is ahead of the current release. Update to a valid current version.",
       "messageType": "error",
-      "dataType": 2,
+      "dataType": "string",
       "matchedValues": [
         {
           "updaterId": "BASEGAMEVER",
@@ -90,7 +90,7 @@
       "description": "The base_game_version patch version number is lower than the current Minecraft version. Consider updating for the latest fixes.",
       "howToUse": "Update the patch version to current using the 'Fix' button, or manually update in the manifest.",
       "messageType": "recommendation",
-      "dataType": 2,
+      "dataType": "string",
       "matchedValues": [
         {
           "updaterId": "BASEGAMEVER",
@@ -104,7 +104,7 @@
       "title": "Patch Version High",
       "description": "The base_game_version patch version number is higher than the current Minecraft version. This indicates an invalid future version.",
       "messageType": "error",
-      "dataType": 2,
+      "dataType": "string",
       "matchedValues": [
         {
           "updaterId": "BASEGAMEVER",
@@ -118,14 +118,14 @@
       "title": "Version Retrieval Failed",
       "description": "Internal error: Could not retrieve the latest Minecraft version from the database.",
       "messageType": "error",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "501",
       "title": "Version Parse Failed",
       "description": "Internal error: Could not parse the latest Minecraft version string into version components.",
       "messageType": "error",
-      "dataType": 2,
+      "dataType": "string",
       "technicalDescription": "Data field contains the version string that failed to parse."
     }
   ]

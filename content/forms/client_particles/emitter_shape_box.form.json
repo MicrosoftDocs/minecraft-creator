@@ -17,11 +17,11 @@
       "id": "direction",
       "title": "Direction",
       "description": "The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions.",
-      "dataType": 2,
+      "dataType": "string",
       "alternates": [
         {
           "id": "direction",
-          "dataType": 35,
+          "dataType": "molangArray",
           "minLength": 3,
           "maxLength": 3
         }
@@ -31,7 +31,7 @@
       "id": "offset",
       "title": "Offset",
       "description": "The offset from the emitter position, as [x, y, z] Molang expressions or numbers.",
-      "dataType": 35,
+      "dataType": "molangArray",
       "minLength": 3,
       "maxLength": 3
     },
@@ -39,7 +39,7 @@
       "id": "half_dimensions",
       "title": "Half Dimensions",
       "description": "The half dimensions of the box, as [x, y, z] Molang expressions or numbers.",
-      "dataType": 35,
+      "dataType": "molangArray",
       "minLength": 3,
       "maxLength": 3
     }

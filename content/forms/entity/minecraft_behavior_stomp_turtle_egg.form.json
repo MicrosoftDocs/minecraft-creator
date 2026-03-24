@@ -124,5 +124,167 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.stomp_turtle_egg",
+    "title": "Entity Stomp Turtle Egg Behavior",
+    "description": "Allows this mob to stomp turtle eggs",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "goal_radius",
+        "title": "Goal Radius",
+        "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot.",
+        "dataType": 3,
+        "defaultValue": 0.5,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
+              "content": 1.14
+            }
+          ]
+        }
+      },
+      {
+        "id": "interval",
+        "title": "Interval",
+        "description": "A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal",
+        "dataType": 0,
+        "defaultValue": 120,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
+              "content": 20
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
+              "content": 4
+            }
+          ]
+        }
+      },
+      {
+        "id": "search_count",
+        "title": "Search Count",
+        "description": "The number of randomly selected blocks each tick that the mob will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick.",
+        "dataType": 0,
+        "defaultValue": 10
+      },
+      {
+        "id": "search_height",
+        "title": "Search Height",
+        "description": "Height in blocks the mob will look for turtle eggs to move towards",
+        "dataType": 0,
+        "defaultValue": 1,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "search_range",
+        "title": "Search Range",
+        "description": "The distance in blocks it will look for turtle eggs to move towards",
+        "dataType": 0,
+        "defaultValue": 0,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
+              "content": 10
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this goal.",
+        "dataType": 3,
+        "defaultValue": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
+              "content": 1
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.stomp_turtle_egg/",
+          "content": {
+            "goal_radius": 1.14,
+            "priority": 4,
+            "search_height": 2,
+            "interval": 20,
+            "search_range": 10,
+            "speed_multiplier": 1
+          }
+        }
+      ]
+    }
   }
 }

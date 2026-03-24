@@ -7,9 +7,18 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "specifies " },
-          { "type": "value", "field": "item" },
-          { "type": "literal", "text": " as a trade item" }
+          {
+            "type": "literal",
+            "text": "specifies "
+          },
+          {
+            "type": "value",
+            "field": "item"
+          },
+          {
+            "type": "literal",
+            "text": " as a trade item"
+          }
         ]
       }
     ]
@@ -19,20 +28,20 @@
       "id": "item",
       "title": "Item",
       "description": "The item identifier, e.g., 'minecraft:emerald' or 'minecraft:coal'. Can include data value suffix like 'minecraft:coal:0'.",
-      "dataType": 2,
+      "dataType": "string",
       "isRequired": true
     },
     {
       "id": "quantity",
       "title": "Quantity",
       "description": "Number of this item involved in the trade. Can be a fixed number or an object with min/max for random quantity.",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": 1,
       "minValue": 1,
       "alternates": [
         {
           "id": "quantity",
-          "dataType": 16,
+          "dataType": "object",
           "subFormId": "trade/tradeitem_quantity"
         }
       ]
@@ -41,27 +50,27 @@
       "id": "price_multiplier",
       "title": "Price Multiplier",
       "description": "Multiplier applied to price increases when supply/demand changes. Higher values mean prices fluctuate more. Typical value is 0.05.",
-      "dataType": 3,
+      "dataType": "float",
       "defaultValue": 0.05
     },
     {
       "id": "filters",
       "title": "Filters",
       "description": "Optional filters that must pass for this item to be included in the trade.",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "entityfilters/filter_group"
     },
     {
       "id": "functions",
       "title": "Functions",
       "description": "Array of functions to apply to the trade item, such as enchantments.",
-      "dataType": 15
+      "dataType": "objectArray"
     },
     {
       "id": "choice",
       "title": "Choice",
       "description": "Alternative items that can be traded.",
-      "dataType": 15
+      "dataType": "objectArray"
     }
   ],
   "generated_doNotEdit": {

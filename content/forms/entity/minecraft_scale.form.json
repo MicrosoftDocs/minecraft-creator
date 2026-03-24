@@ -41,7 +41,7 @@
       "id": "value",
       "title": "Value",
       "description": "The scale multiplier for visual size. 1.0 = normal, 0.5 = half (babies), 2.0 = double size.",
-      "dataType": 3,
+      "dataType": "float",
       "defaultValue": 1
     }
   ],

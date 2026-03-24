@@ -1,0 +1,176 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "3.0.0.Header",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "defines the pack header with name, description, version, and engine requirements"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Header",
+    "title": "Packmanifest Header",
+    "fields": [
+      {
+        "id": "allow_random_seed",
+        "title": "Allow Random Seed",
+        "dataType": 1
+      },
+      {
+        "id": "base_game_version",
+        "title": "Base Game Version",
+        "dataType": 2
+      },
+      {
+        "id": "description",
+        "title": "Description",
+        "dataType": 2
+      },
+      {
+        "id": "lock_template_options",
+        "title": "Lock Template Options",
+        "dataType": 1
+      },
+      {
+        "id": "min_engine_version",
+        "title": "Min Engine Version",
+        "dataType": 2
+      },
+      {
+        "id": "name",
+        "title": "Name",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "pack_optimization_version",
+        "dataType": 16,
+        "subForm": {
+          "id": "pack_optimization_version",
+          "title": "Pack Optimization Version",
+          "fields": [
+            {
+              "id": "buildMeta",
+              "title": "BuildMeta",
+              "dataType": 2,
+              "defaultValue": ""
+            },
+            {
+              "id": "major",
+              "title": "Major",
+              "dataType": 0,
+              "defaultValue": 0
+            },
+            {
+              "id": "minor",
+              "title": "Minor",
+              "dataType": 0,
+              "defaultValue": 0
+            },
+            {
+              "id": "patch",
+              "title": "Patch",
+              "dataType": 0,
+              "defaultValue": 0
+            },
+            {
+              "id": "preRelease",
+              "title": "PreRelease",
+              "dataType": 2,
+              "defaultValue": ""
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "pack_optimization_version",
+            "dataType": 2
+          }
+        ]
+      },
+      {
+        "id": "pack_scope",
+        "title": "Pack Scope",
+        "dataType": 2
+      },
+      {
+        "id": "platform_locked",
+        "title": "Platform Locked",
+        "dataType": 1
+      },
+      {
+        "id": "uuid",
+        "title": "Uuid",
+        "dataType": 16,
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "version",
+        "dataType": 16,
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^([1-9]+)\\.([0-9]+)\\.([0-9]+)$"
+          }
+        ],
+        "subForm": {
+          "id": "version",
+          "title": "Version",
+          "fields": [
+            {
+              "id": "buildMeta",
+              "title": "BuildMeta",
+              "dataType": 2,
+              "defaultValue": ""
+            },
+            {
+              "id": "major",
+              "title": "Major",
+              "dataType": 0,
+              "defaultValue": 0
+            },
+            {
+              "id": "minor",
+              "title": "Minor",
+              "dataType": 0,
+              "defaultValue": 0
+            },
+            {
+              "id": "patch",
+              "title": "Patch",
+              "dataType": 0,
+              "defaultValue": 0
+            },
+            {
+              "id": "preRelease",
+              "title": "PreRelease",
+              "dataType": 2,
+              "defaultValue": ""
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "version",
+            "dataType": 2
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  },
+  "description": "The header section of manifest.json containing the pack's identity: its name shown in the UI, description, unique UUID, and version. The min_engine_version field specifies the minimum Minecraft version required to load the pack."
+}

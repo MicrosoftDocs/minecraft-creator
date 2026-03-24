@@ -8,32 +8,35 @@
       "id": "fog_start",
       "title": "Fog Start",
       "description": "The distance at which fog begins. For render distance type, this is a percentage (0.0-1.0). For fixed type, this is in blocks.",
-      "dataType": 3
+      "dataType": "float"
     },
     {
       "id": "fog_end",
-      "title": "Fog End", 
+      "title": "Fog End",
       "description": "The distance at which fog is fully opaque. For render distance type, this is a percentage (0.0-1.0). For fixed type, this is in blocks.",
-      "dataType": 3
+      "dataType": "float"
     },
     {
       "id": "fog_color",
       "title": "Fog Color",
       "description": "The color of the fog as a hex string (e.g., '#ABD2FF') or RGB array.",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "render_distance_type",
       "title": "Render Distance Type",
       "description": "How fog distances are calculated. 'fixed' uses block distances, 'render' uses percentage of render distance.",
-      "dataType": 4,
-      "enumValues": ["fixed", "render"]
+      "dataType": "stringEnum",
+      "enumValues": [
+        "fixed",
+        "render"
+      ]
     },
     {
       "id": "transition_fog",
       "title": "Transition Fog",
       "description": "Settings for fog transition when entering this environment.",
-      "dataType": 16,
+      "dataType": "object",
       "subForm": {
         "id": "fog_transition",
         "title": "Fog Transition",
@@ -42,32 +45,32 @@
             "id": "init_fog",
             "title": "Initial Fog",
             "description": "The initial fog settings when entering transition.",
-            "dataType": 16,
+            "dataType": "object",
             "subFormId": "fog/fog_distance_settings"
           },
           {
             "id": "min_percent",
             "title": "Minimum Percent",
             "description": "The minimum fog percentage during transition.",
-            "dataType": 3
+            "dataType": "float"
           },
           {
             "id": "mid_seconds",
             "title": "Mid Seconds",
             "description": "Time in seconds to reach the mid-point of the transition.",
-            "dataType": 3
+            "dataType": "float"
           },
           {
             "id": "mid_percent",
             "title": "Mid Percent",
             "description": "The fog percentage at the mid-point of transition.",
-            "dataType": 3
+            "dataType": "float"
           },
           {
             "id": "max_seconds",
             "title": "Max Seconds",
             "description": "Total time in seconds for the full transition.",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       }

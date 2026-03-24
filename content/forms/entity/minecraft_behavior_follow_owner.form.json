@@ -158,5 +158,169 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.follow_owner",
+    "title": "Entity Follow Owner Behavior",
+    "description": "Allows a mob to follow the player that owns it.",
+    "fields": [
+      {
+        "id": "can_teleport",
+        "title": "Can Teleport",
+        "description": "Defines if the mob will teleport to its owner when too far away.",
+        "dataType": 1,
+        "defaultValue": true
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "ignore_vibration",
+        "title": "Ignore Vibration",
+        "description": "Defines if the mob should disregard following its owner after detecting a recent vibration.",
+        "dataType": 1,
+        "defaultValue": false
+      },
+      {
+        "id": "max_distance",
+        "title": "Max Distance",
+        "description": "The maximum distance the mob can be from its owner to start following it. Applicable only when \"can_teleport\" is set to false.",
+        "dataType": 3,
+        "defaultValue": 60
+      },
+      {
+        "id": "post_teleport_distance",
+        "title": "Post Teleport Distance",
+        "description": "Defines how far (in blocks) the entity will be from its owner after teleporting. If not specified, it defaults to \"stop_distance\" + 1, allowing the entity to seamlessly resume navigation.",
+        "dataType": 0,
+        "defaultValue": 3
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.follow_owner/",
+              "content": 6
+            }
+          ],
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:behavior.follow_owner/",
+              "content": 3
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal",
+        "dataType": 3,
+        "defaultValue": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.follow_owner/",
+              "content": 8
+            }
+          ],
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:behavior.follow_owner/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "start_distance",
+        "title": "Start Distance",
+        "description": "The minimum distance the mob must be from its owner to start following it.",
+        "dataType": 3,
+        "defaultValue": 10,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.follow_owner/",
+              "content": 16
+            }
+          ],
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:behavior.follow_owner/",
+              "content": 5
+            }
+          ]
+        }
+      },
+      {
+        "id": "stop_distance",
+        "title": "Stop Distance",
+        "description": "The distance at which the mob will stop following its owner.",
+        "dataType": 3,
+        "defaultValue": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.follow_owner/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:behavior.follow_owner/",
+              "content": 1
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/allay.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.follow_owner/",
+          "content": {
+            "can_teleport": false,
+            "priority": 6,
+            "ignore_vibration": false,
+            "speed_multiplier": 8,
+            "start_distance": 16,
+            "stop_distance": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parrot.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:behavior.follow_owner/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 1,
+            "start_distance": 5,
+            "stop_distance": 1
+          }
+        }
+      ]
+    }
   }
 }

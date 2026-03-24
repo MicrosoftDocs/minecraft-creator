@@ -5,7 +5,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "has an enchanted glint" }
+          {
+            "type": "literal",
+            "text": "has an enchanted glint"
+          }
         ]
       }
     ]
@@ -16,7 +19,7 @@
       "id": "value",
       "title": "value",
       "description": "Whether the item has the enchanted glint render effect.",
-      "dataType": 1
+      "dataType": "boolean"
     }
   ],
   "generatedFromSchema_doNotEdit": {
