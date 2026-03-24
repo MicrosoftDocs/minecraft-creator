@@ -28,7 +28,7 @@ Compels an item to shoot projectiles, similarly to a bow or crossbow. Must have 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| ammunition | [] | [Ammunition](#item-components-ammunition) item | A list of ammunition entries that define which items can be used as projectiles for this shooter. | My Sword Shoot: `[{"item":"minecraft:snowball","use_offhand":true,"search_inventory":true,"use_in_creative":true}]` | 
+| ammunition | [] | Array of [Ammunition](#item-components-ammunition) items | A list of ammunition entries that define which items can be used as projectiles for this shooter. | My Sword Shoot: `[{"item":"minecraft:snowball","use_offhand":true,"search_inventory":true,"use_in_creative":true}]` | 
 | charge_on_draw | false | Boolean true/false | When true, the shooter begins charging when the player starts drawing, similar to a crossbow. Default is false. |  | 
 | max_draw_duration | 0 | Decimal number | The maximum time in seconds that a player can draw the shooter before it automatically fires or reaches maximum power. Default is 0. | My Sword Shoot: `1` | 
 | scale_power_by_draw_duration | false | Boolean true/false | When true, the projectile's launch power increases based on how long the player holds the use button before releasing. Default is false. | My Sword Shoot: `true` | 

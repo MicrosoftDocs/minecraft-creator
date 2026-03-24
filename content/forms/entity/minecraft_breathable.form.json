@@ -180,8 +180,8 @@
       "id": "total_supply",
       "title": "Total air supply",
       "description": "Time in seconds the entity can hold its breath.",
-      "dataType": 0,
-      "experienceType": 3,
+      "dataType": "int",
+      "experienceType": "slider",
       "minValue": 0,
       "suggestedMaxValue": 120,
       "defaultValue": 15
@@ -190,61 +190,61 @@
       "id": "suffocate_time",
       "title": "Suffocate length",
       "description": "Time in seconds between suffocation damage.",
-      "dataType": 0,
+      "dataType": "int",
       "defaultValue": -20
     },
     {
       "id": "breathes_air",
       "title": "Breathes in air",
       "description": "If set, this entity can breathe in air.",
-      "dataType": 1,
+      "dataType": "boolean",
       "defaultValue": true
     },
     {
       "id": "breathes_lava",
       "title": "Breathes in lava",
       "description": "If set, this entity can breathe in lava.",
-      "dataType": 1,
+      "dataType": "boolean",
       "defaultValue": true
     },
     {
       "id": "breathes_solids",
       "title": "Breathes in solids",
       "description": "If set, this entity can breathe in solid blocks.",
-      "dataType": 1,
+      "dataType": "boolean",
       "defaultValue": false
     },
     {
       "id": "breathes_water",
       "title": "Breathes in water",
       "description": "If set, this entity can breathe in water.",
-      "dataType": 1,
+      "dataType": "boolean",
       "defaultValue": false
     },
     {
       "id": "generates_bubbles",
       "description": "If set, this entity will have visible bubbles while in water.",
-      "dataType": 1,
+      "dataType": "boolean",
       "defaultValue": true
     },
     {
       "id": "inhale_time",
       "description": "Time in seconds to recover breath to maximum.",
-      "dataType": 7,
+      "dataType": "number",
       "defaultValue": 0
     },
     {
       "id": "breathe_blocks",
       "title": "Breathable blocks",
       "description": "List of blocks this entity can breathe in, in addition to the selected items above.",
-      "dataType": 17,
+      "dataType": "stringArray",
       "lookupId": "blockType"
     },
     {
       "id": "non_breathe_blocks",
       "title": "Non-breathable blocks",
       "description": "List of blocks this entity cannot breathe in, in addition to the selected items above.",
-      "dataType": 17,
+      "dataType": "stringArray",
       "lookupId": "blockType"
     }
   ],

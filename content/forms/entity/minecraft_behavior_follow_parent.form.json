@@ -227,5 +227,150 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.follow_parent",
+    "title": "Entity Follow Parent Behavior",
+    "description": "Allows the mob to follow their parent around.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:chicken_baby/minecraft:behavior.follow_parent/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/dolphin_baby/minecraft:behavior.follow_parent/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_baby/minecraft:behavior.follow_parent/",
+              "content": 9
+            }
+          ],
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/goat_baby/minecraft:behavior.follow_parent/",
+              "content": 6
+            }
+          ],
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:behavior.follow_parent/",
+              "content": 6
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal",
+        "dataType": 3,
+        "defaultValue": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:chicken_baby/minecraft:behavior.follow_parent/",
+              "content": 1.1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/dolphin_baby/minecraft:behavior.follow_parent/",
+              "content": 1.1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/goat_baby/minecraft:behavior.follow_parent/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:behavior.follow_parent/",
+              "content": 1
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:chicken_baby/minecraft:behavior.follow_parent/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 1.1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/dolphin_baby/minecraft:behavior.follow_parent/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 1.1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:fox_baby/minecraft:behavior.follow_parent/",
+          "content": {
+            "priority": 9,
+            "speed_multiplier": 1.1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/goat.json": [
+        {
+          "path": "/minecraft:entity/component_groups/goat_baby/minecraft:behavior.follow_parent/",
+          "content": {
+            "priority": 6,
+            "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/hoglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:behavior.follow_parent/",
+          "content": {
+            "priority": 6,
+            "speed_multiplier": 1
+          }
+        }
+      ]
+    }
   }
 }

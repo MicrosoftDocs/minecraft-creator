@@ -19,8 +19,8 @@
     {
       "id": "102",
       "title": "Unknown File Type",
-      "messageType": 2,
-      "dataType": 2,
+      "messageType": "error",
+      "dataType": "string",
       "description": "Error when a file with an unrecognized extension is found in the pack. Minecraft only supports specific file types (JSON, PNG, TGA, OGG, FSB, etc.). Remove or relocate unknown files.",
       "technicalDescription": "Data contains the file extension or path of the unknown file"
     }

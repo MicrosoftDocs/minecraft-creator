@@ -30,7 +30,7 @@
         "id": "targets",
         "title": "Targets",
         "description": "List of potential pools",
-        "dataType": 16,
+        "dataType": 15,
         "subFormId": "world/jigsawtemplatepool",
         "isRequired": true
       }

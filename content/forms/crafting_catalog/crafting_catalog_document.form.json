@@ -23,7 +23,7 @@
         "id": "categories",
         "title": "Categories",
         "description": "The categories we are adding groups to.",
-        "dataType": 16,
+        "dataType": 15,
         "subFormId": "crafting_catalog/crafting_catalog_category",
         "isRequired": true
       }

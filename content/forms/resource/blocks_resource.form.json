@@ -7,7 +7,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "maps block identifiers to their textures and sound properties" }
+          {
+            "type": "literal",
+            "text": "maps block identifiers to their textures and sound properties"
+          }
         ]
       }
     ]
@@ -17,7 +20,7 @@
       "id": "format_version",
       "title": "Format Version",
       "description": "The format version of the blocks.json file. Can be an array like [1, 1, 0] or a string like '1.1.0'.",
-      "dataType": 25
+      "dataType": "version"
     }
   ],
   "customField": {

@@ -17,7 +17,7 @@
       "id": "block_list",
       "title": "Block List",
       "description": "List of blocks, with certain block states, that we are monitoring to see if the entity is inside.",
-      "dataType": 15,
+      "dataType": "objectArray",
       "subForm": {
         "id": "inside_block_entry",
         "title": "Block Entry",
@@ -26,7 +26,7 @@
             "id": "block",
             "title": "Block",
             "description": "The block to monitor, including name and optional states.",
-            "dataType": 16,
+            "dataType": "object",
             "subForm": {
               "id": "block_descriptor",
               "fields": [
@@ -34,13 +34,13 @@
                   "id": "name",
                   "title": "Name",
                   "description": "The block identifier.",
-                  "dataType": 2
+                  "dataType": "string"
                 },
                 {
                   "id": "states",
                   "title": "States",
                   "description": "Block states to match.",
-                  "dataType": 27
+                  "dataType": "keyedBooleanCollection"
                 }
               ]
             }
@@ -49,13 +49,13 @@
             "id": "entered_block_event",
             "title": "Entered Block Event",
             "description": "Event to fire when the entity enters the block.",
-            "dataType": 22
+            "dataType": "minecraftEventTrigger"
           },
           {
             "id": "exited_block_event",
             "title": "Exited Block Event",
             "description": "Event to fire when the entity exits the block.",
-            "dataType": 22
+            "dataType": "minecraftEventTrigger"
           }
         ]
       }

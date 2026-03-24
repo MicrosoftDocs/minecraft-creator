@@ -4,7 +4,7 @@
     {
       "id": "vibration",
       "description": "Type of vibration to emit.",
-      "dataType": 2,
+      "dataType": "string",
       "mustMatchChoices": true,
       "choices": [
         {
@@ -26,7 +26,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "emits a vibration from the entity" }
+          {
+            "type": "literal",
+            "text": "emits a vibration from the entity"
+          }
         ]
       }
     ]

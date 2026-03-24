@@ -17,7 +17,7 @@
     {
       "id": "location",
       "title": "Location",
-      "dataType": 11
+      "dataType": "point3"
     }
   ],
   "description": "Defines a world test area location for automated testing. Used by automated test definitions."

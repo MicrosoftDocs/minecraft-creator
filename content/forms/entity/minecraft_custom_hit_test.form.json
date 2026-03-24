@@ -16,7 +16,31 @@
     {
       "id": "hitboxes",
       "title": "Hitboxes",
-      "description": "Comma-separated list of hitboxes."
+      "description": "List of hitboxes for melee and ranged hits against the entity.",
+      "dataType": "objectArray",
+      "subForm": {
+        "id": "hitbox_entry",
+        "fields": [
+          {
+            "id": "width",
+            "title": "Width",
+            "description": "Width of the hitbox.",
+            "dataType": "float"
+          },
+          {
+            "id": "height",
+            "title": "Height",
+            "description": "Height of the hitbox.",
+            "dataType": "float"
+          },
+          {
+            "id": "pivot",
+            "title": "Pivot",
+            "description": "Pivot point of the hitbox.",
+            "dataType": "point3"
+          }
+        ]
+      }
     }
   ],
   "generated_doNotEdit": {

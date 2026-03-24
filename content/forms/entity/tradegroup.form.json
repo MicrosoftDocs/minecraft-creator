@@ -27,7 +27,7 @@
       {
         "id": "trades",
         "title": "Trades",
-        "dataType": 16,
+        "dataType": 15,
         "minLength": 1,
         "subFormId": "entity/trade",
         "isRequired": true

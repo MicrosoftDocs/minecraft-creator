@@ -787,8 +787,8 @@ Defines actions triggered by particle events like spawning, collision, or expira
 | expression (as Decimal number) | *not set* | Decimal number |  | 
 | log |  | String |  | 
 | particle_effect | {"effect":"","pre_effect_expression":0,"type":null} | [Particle Effect](#client-particles-particle-visual-effect-event) item |  | 
-| randomize | *not set* | [Randomize](#client-particles-particle-event-random-node) item |  | 
-| sequence | *not set* | [Sequence](#client-particles-particle-event-node) item |  | 
+| randomize | *not set* | Array of [Randomize](#client-particles-particle-event-random-node) items |  | 
+| sequence | *not set* | Array of [Sequence](#client-particles-particle-event-node) items |  | 
 | sound_effect | *not set* | [Sound Effect](#client-particles-particle-sound-effect-event) item |  | 
 
 ##### Expression (Expression)
@@ -853,8 +853,8 @@ Triggers one of several possible effects randomly when a particle event fires, w
 | expression (as Decimal number) | *not set* | Decimal number |  | 
 | log |  | String |  | 
 | particle_effect | {"effect":"","pre_effect_expression":0,"type":null} | [Particle Effect](#client-particles-particle-visual-effect-event) item |  | 
-| randomize | *not set* | [Randomize](#client-particles-particle-event-random-node) item |  | 
-| sequence | *not set* | [Sequence](#client-particles-particle-event-node) item |  | 
+| randomize | *not set* | Array of [Randomize](#client-particles-particle-event-random-node) items |  | 
+| sequence | *not set* | Array of [Sequence](#client-particles-particle-event-node) items |  | 
 | sound_effect | *not set* | [Sound Effect](#client-particles-particle-sound-effect-event) item |  | 
 | weight | *not set* | Decimal number |  | 
 

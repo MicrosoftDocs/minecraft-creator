@@ -17,18 +17,18 @@
       "id": "color",
       "title": "Color",
       "description": "The color of the particle, can be a hex color string (like '#RRGGBB'), an array of [r, g, b, a] values (numbers or Molang), or an object with gradient and interpolant.",
-      "dataType": 35,
+      "dataType": "molangArray",
       "minLength": 3,
       "maxLength": 4,
       "alternates": [
         {
           "id": "color",
-          "dataType": 2,
+          "dataType": "string",
           "description": "A hex color string like '#dfe5ed' or '#RRGGBBAA'."
         },
         {
           "id": "color",
-          "dataType": 16,
+          "dataType": "object",
           "subForm": {
             "id": "color",
             "title": "Color",
@@ -37,18 +37,18 @@
                 "id": "gradient",
                 "title": "Gradient",
                 "description": "Color gradient - can be an array of color arrays (each being [r, g, b, a] molang/numbers), or an object mapping time points to hex color strings or color arrays.",
-                "dataType": 47,
+                "dataType": "twoDMolangArray",
                 "alternates": [
                   {
                     "id": "gradient",
                     "description": "Object mapping time points to hex color strings.",
-                    "dataType": 24
+                    "dataType": "keyedStringCollection"
                   },
                   {
                     "id": "gradient",
                     "description": "Object mapping time points to color arrays with Molang/numbers.",
-                    "dataType": 16,
-                    "additionalPropertiesOf": 35
+                    "dataType": "object",
+                    "additionalPropertiesOf": "molangArray"
                   }
                 ]
               },
@@ -56,7 +56,7 @@
                 "id": "interpolant",
                 "title": "Interpolant",
                 "description": "A Molang expression that determines which gradient color to use.",
-                "dataType": 34
+                "dataType": "molang"
               }
             ]
           }

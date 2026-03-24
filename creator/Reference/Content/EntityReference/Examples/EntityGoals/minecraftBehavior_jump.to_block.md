@@ -13,21 +13,50 @@ ms.date: 02/11/2025
 Allows an entity to jump to another random block.
 
 
-## Jump To Block Behavior Properties
+## Entity Jump To Block Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| cooldown_range | *not set* | Range of integers | Minimum and maximum cooldown time-range (positive, in seconds) between each attempted jump. | Frog: `[5,7]`, Goat: `[30,60]` | 
-| forbidden_blocks | *not set* | Array of strings | Blocks that the mob can't jump to. | Frog: `["minecraft:water"]` | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
+| cooldown_range | {"max":20,"min":10} | [Cooldown Range](#item-components-floatrange) item | Minimum and maximum cooldown time-range (positive, in seconds) between each attempted jump. | Frog: `[5,7]`, Goat: `[30,60]` | 
+| forbidden_blocks | [] | String | Blocks that the mob can't jump to. | Frog: `["minecraft:water"]` | 
+| forbidden_blocks (as Keyed set of strings) | *not set* | Keyed set of strings |  |  | 
 | max_velocity | 1.5 | Decimal number | The maximum velocity with which the mob can jump. | Frog: `1` | 
 | minimum_distance | 2 | Integer number | The minimum distance (in blocks) from the mob to a block, in order to consider jumping to it. | Frog: `1` | 
 | minimum_path_length | 5 | Integer number | The minimum length (in blocks) of the mobs path to a block, in order to consider jumping to it. | Frog: `2`, Goat: `8` | 
-| preferred_blocks | *not set* | Array of strings | Blocks that the mob prefers jumping to. | Frog: `["minecraft:waterlily","minecraft:big_dripleaf"]` | 
-| preferred_blocks_chance | 1 | Decimal number | Chance (between 0.0 and 1.0) that the mob will jump to a preferred block, if in range. Only matters if preferred blocks are defined. | Frog: `0.5` | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Frog: `10`, Goat: `8` | 
-| scale_factor | 0.7 | Decimal number | The scalefactor of the bounding box of the mob while it is jumping. | Frog: `0.6` | 
-| search_height | 10 | Integer number | The height (in blocks, in range [2, 15]) of the search box, centered around the mob. | Frog: `4`, Goat: `10` | 
-| search_width | 8 | Integer number | The width (in blocks, in range [2, 15]) of the search box, centered around the mob. | Frog: `8`, Goat: `10` | 
+| preferred_blocks | [] | String | Blocks that the mob prefers jumping to. | Frog: `["minecraft:waterlily","minecraft:big_dripleaf"]` | 
+| preferred_blocks (as Keyed set of strings) | *not set* | Keyed set of strings |  |  | 
+| preferred_blocks_chance | 1 | Decimal number | Chance (between 0.0 and 1.0) that the mob will jump to a preferred block, if in range. Only matters if preferred blocks are defined. Value must be <= 1. | Frog: `0.5` | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Frog: `10`, Goat: `8` | 
+| scale_factor | 0.699999988079071 | Decimal number | The scalefactor of the bounding box of the mob while it is jumping. | Frog: `0.6` | 
+| search_height | 10 | Integer number | The height (in blocks, in range [1, 15]) of the search box, centered around the mob. Value must be >= 1. Value must be <= 15. | Frog: `4`, Goat: `10` | 
+| search_width | 8 | Integer number | The width (in blocks, in range [1, 15]) of the search box, centered around the mob. Value must be >= 1. Value must be <= 15. | Frog: `8`, Goat: `10` | 
+
+### cooldown_range
+
+Minimum and maximum cooldown time-range (positive, in seconds) between each attempted jump.  Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected.
+
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
+
+### Item Components FloatRange
+Has minimum and maximum float values.
+
+
+#### Item Components FloatRange Properties
+
+**JSON path:** `cooldown_range`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | 0 | Decimal number |  | 
+| min | 0 | Decimal number |  | 
 
 ## Samples
 

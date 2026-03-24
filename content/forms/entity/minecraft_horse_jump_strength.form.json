@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "has horse-like jump strength" }
+          {
+            "type": "literal",
+            "text": "has horse-like jump strength"
+          }
         ]
       }
     ]
@@ -17,7 +20,7 @@
       "id": "value",
       "title": "Value",
       "description": "Value of jump strength the entity has when spawned.",
-      "dataType": 16,
+      "dataType": "object",
       "subForm": {
         "description": "Describes the range of jump strength.",
         "fields": [
@@ -25,19 +28,19 @@
             "id": "range_min",
             "title": "Range Minimum",
             "description": "Defines the minimum strength level.",
-            "dataType": 3
+            "dataType": "float"
           },
           {
             "id": "range_max",
             "title": "Range Maximum",
             "description": "Defines the maximum strength level.",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       },
       "alternates": [
         {
-          "dataType": 3
+          "dataType": "float"
         }
       ]
     }

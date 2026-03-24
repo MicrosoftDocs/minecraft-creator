@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "specifies a single block culling rule" }
+          {
+            "type": "literal",
+            "text": "specifies a single block culling rule"
+          }
         ]
       }
     ]
@@ -14,7 +17,7 @@
       "id": "face",
       "title": "Facing",
       "description": "Facing",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "generated_doNotEdit": {

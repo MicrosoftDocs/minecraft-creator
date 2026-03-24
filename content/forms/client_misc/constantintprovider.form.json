@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "specifies a constant integer value" }
+          {
+            "type": "literal",
+            "text": "specifies a constant integer value"
+          }
         ]
       }
     ]
@@ -14,7 +17,7 @@
       "id": "type",
       "title": "Provider Type",
       "description": "Provider Type",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "generated_doNotEdit": {

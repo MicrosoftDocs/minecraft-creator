@@ -148,7 +148,7 @@
       {
         "id": "rules",
         "title": "Rules",
-        "dataType": 16,
+        "dataType": 15,
         "subFormId": "client_block/rule",
         "isRequired": true
       }

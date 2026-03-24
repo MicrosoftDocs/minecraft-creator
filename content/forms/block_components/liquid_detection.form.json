@@ -9,7 +9,7 @@
       {
         "id": "detection_rules",
         "title": "Detection Rules",
-        "dataType": 16,
+        "dataType": 15,
         "minLength": 1,
         "maxLength": 1,
         "subFormId": "block_components/detection_rule",

@@ -4,7 +4,7 @@
     {
       "id": "particle",
       "description": "Identifier of the particle to emit.",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "tags": [
@@ -14,7 +14,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "emits a particle effect from the entity" }
+          {
+            "type": "literal",
+            "text": "emits a particle effect from the entity"
+          }
         ]
       }
     ]

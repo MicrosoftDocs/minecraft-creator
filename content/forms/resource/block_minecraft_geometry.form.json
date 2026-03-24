@@ -6,7 +6,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "specifies the geometry model used to render this block" }
+          {
+            "type": "literal",
+            "text": "specifies the geometry model used to render this block"
+          }
         ]
       }
     ]
@@ -14,12 +17,12 @@
   "fields": [
     {
       "id": "identifier",
-      "dataType": 2,
+      "dataType": "string",
       "description": "The geometry description identifier to use to render this block. This identifier must match an existing geometry identifier in any of the currently loaded resource packs."
     },
     {
       "id": "bone_visibility",
-      "dataType": 27,
+      "dataType": "keyedBooleanCollection",
       "description": "Defines the visibility of individual bones in the geometry file. \n\nNote that all bones default to 'true,' so bones should only be defined if they are being set to 'false.' Including bones set to 'true' will work the same as the default."
     }
   ],

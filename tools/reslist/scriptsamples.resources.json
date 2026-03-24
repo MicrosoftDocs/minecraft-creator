@@ -1,5 +1,5 @@
 {
   "url": "https://github.com/microsoft/minecraft-scripting-samples/archive/30325c580e1dc0a3e090bc507260143479871ce9.zip",
-  "replaceFirstFolderWith": "minecraft-scripting-samples-main",
+  "replaceFirstFolderWith": "script-samples",
   "exclude": []
 }

@@ -13,7 +13,15 @@
     ]
   },
   "id": "BlockDefinitionDocument",
-  "fields": [],
+  "fields": [
+    {
+      "id": "permutations",
+      "title": "Permutations",
+      "description": "Array of conditional component overrides. Each permutation has a Molang condition and components that override the base components when the condition is true.",
+      "dataType": "objectArray",
+      "subFormId": "block/permutation"
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "BlockDefinitionDocument",
     "title": "BlockDefinitionDocument",
@@ -36,7 +44,7 @@
       {
         "id": "permutations",
         "title": "Permutations",
-        "dataType": 16,
+        "dataType": 15,
         "defaultValue": [],
         "subFormId": "block/permutation"
       }

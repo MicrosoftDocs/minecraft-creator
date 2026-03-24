@@ -21,7 +21,7 @@
   "scalarField": {
     "id": "integer",
     "title": "Light Emission Value",
-    "dataType": 0
+    "dataType": "int"
   },
   "title": "Block Light Emission (Legacy)",
   "id": "minecraft:block_light_emission"

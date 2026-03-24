@@ -6,7 +6,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "defines materials for an item" }
+          {
+            "type": "literal",
+            "text": "defines materials for an item"
+          }
         ]
       }
     ]
@@ -14,7 +17,7 @@
   "fields": [
     {
       "id": "materials",
-      "dataType": 24,
+      "dataType": "keyedStringCollection",
       "description": "A list of identified models that this item uses."
     }
   ]

@@ -21,14 +21,14 @@
       "title": "No Deploy Tasks",
       "description": "The project contains a .vscode/tasks.json file but does not have any Minecraft deployment tasks configured. Consider adding tasks for deploying to Minecraft.",
       "messageType": "recommendation",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "101",
       "title": "No Debug Config",
       "description": "The project contains a .vscode/launch.json file but is not configured for launching a Minecraft Dedicated Server debug session. Consider adding a debug configuration.",
       "messageType": "recommendation",
-      "dataType": 2
+      "dataType": "string"
     }
   ]
 }

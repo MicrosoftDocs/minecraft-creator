@@ -17,7 +17,8 @@ Defines what items can be used to control this entity while ridden.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| control_items | *not set* | Array of strings | List of items that can be used to control this entity. | Pig: `"carrotOnAStick"`, Strider: `"warped_fungus_on_a_stick"` | 
+| control_items | *not set* | Array of strings | List of items that can be used to control this entity while ridden. Can be a single string or an array of strings. | Pig: `"carrotOnAStick"`, Strider: `"warped_fungus_on_a_stick"` | 
+| control_items (as String) | *not set* | String |  |  | 
 
 ## Samples
 

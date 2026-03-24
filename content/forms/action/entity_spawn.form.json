@@ -22,13 +22,13 @@
     {
       "id": "location",
       "title": "Location Offset",
-      "dataType": 41,
+      "dataType": "locationOffset",
       "priority": 10
     },
     {
       "id": "entityType",
       "title": "Entity Type",
-      "dataType": 2,
+      "dataType": "string",
       "isRequired": true,
       "lookupId": "entityType",
       "priority": 1

@@ -18,13 +18,13 @@
     {
       "id": "name",
       "title": "Name",
-      "dataType": 2,
+      "dataType": "string",
       "readOnly": true
     },
     {
       "id": "description",
       "title": "Description",
-      "dataType": 17
+      "dataType": "stringArray"
     }
   ]
 }

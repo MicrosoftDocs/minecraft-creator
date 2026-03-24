@@ -4,12 +4,12 @@
     {
       "id": "event",
       "description": "The event to trigger on the entity.",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "target",
       "description": "The target entity for the trigger.",
-      "dataType": 2,
+      "dataType": "string",
       "choices": [
         {
           "id": "self"
@@ -39,7 +39,7 @@
   "scalarField": {
     "id": "trigger",
     "title": "Trigger Value",
-    "dataType": 2
+    "dataType": "string"
   },
   "summarizer": {
     "phrases": [

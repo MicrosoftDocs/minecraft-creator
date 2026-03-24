@@ -18,32 +18,32 @@
     {
       "id": "id",
       "title": "Group Identifier",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "name",
       "title": "Name",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "name",
       "title": "Name",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "canvasX",
       "title": "Canvas X",
-      "dataType": 3
+      "dataType": "float"
     },
     {
       "id": "canvasY",
       "title": "Canvas Y",
-      "dataType": 3
+      "dataType": "float"
     },
     {
       "id": "actions",
       "title": "Actions",
-      "dataType": 15
+      "dataType": "objectArray"
     }
   ],
   "description": "Groups multiple actions together to be executed as a sequence. Action groups enable complex multi-step behaviors by chaining actions like entity spawns, block modifications, and effects into a single reusable unit."

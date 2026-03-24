@@ -18,19 +18,19 @@
     {
       "id": "name",
       "title": "Name",
-      "dataType": 2,
+      "dataType": "string",
       "required": true
     },
     {
       "id": "blockPlanesInViewFrontToBack",
       "title": "Block planes in view (front to back)",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "action_set/block_volume"
     },
     {
       "id": "entitiesAroundPlayer",
       "title": "Entities around player",
-      "dataType": 15,
+      "dataType": "objectArray",
       "subFormId": "action_set/entity"
     }
   ],

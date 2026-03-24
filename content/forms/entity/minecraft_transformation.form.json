@@ -80,7 +80,21 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "delay",
+      "title": "Delay",
+      "description": "Defines the properties of the delay for the transformation. Can be a simple number (seconds) or a complex object.",
+      "dataType": "object",
+      "mergeSubForm": true,
+      "alternates": [
+        {
+          "id": "delay",
+          "dataType": "float"
+        }
+      ]
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:transformation",
     "title": "Transformation",

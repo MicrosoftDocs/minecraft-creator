@@ -79,11 +79,11 @@
       "id": "triggers",
       "title": "Triggers",
       "description": "The list of triggers that fire when the environment conditions match the given filter criteria. Can be an array of trigger objects or a single trigger object.",
-      "dataType": 15,
+      "dataType": "objectArray",
       "alternates": [
         {
           "id": "triggers",
-          "dataType": 16
+          "dataType": "object"
         }
       ]
     }

@@ -17,19 +17,19 @@
   "fields": [
     {
       "id": "id",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "title",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "description",
-      "dataType": 13
+      "dataType": "longFormString"
     },
     {
       "id": "fields",
-      "dataType": 15,
+      "dataType": "objectArray",
       "defaultValue": false,
       "objectArrayTitleFieldKey": "id",
       "matchObjectArrayToSubFieldKey": true,
@@ -42,17 +42,17 @@
           {
             "id": "id",
             "description": "Identifier of the field.",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "description",
             "description": "Description of the of the field.",
-            "dataType": 13
+            "dataType": "longFormString"
           },
           {
             "id": "dataType",
             "description": "Type of data.",
-            "dataType": 5,
+            "dataType": "intEnum",
             "choices": [
               {
                 "id": 0,
@@ -175,7 +175,7 @@
           {
             "id": "Minimum value",
             "description": "Minimum value for this number.",
-            "dataType": 1,
+            "dataType": "boolean",
             "visibility": [
               {
                 "field": "dataType",
@@ -190,7 +190,7 @@
           {
             "id": "Maximum value",
             "description": "Maximum value for this number.",
-            "dataType": 1,
+            "dataType": "boolean",
             "visibility": [
               {
                 "field": "dataType",

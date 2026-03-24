@@ -18,7 +18,7 @@ Enables an item to emit effects when it receives damage. Because of this, the it
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | durability | *not set* | Integer number | The effects are emitted when the item durability value is less than or equal to this value. | 
-| durability_thresholds | *not set* | [Durability Thresholds](#item-components-durability-sensor-durability-threshold) item | The list of both durability thresholds and effects emitted when each threshold is met. | 
+| durability_thresholds | *not set* | Array of [Durability Thresholds](#item-components-durability-sensor-durability-threshold) items | The list of both durability thresholds and effects emitted when each threshold is met. | 
 | particle_type | *not set* | String | Particle effect to emit when the threshold is met. | 
 | sound_event | *not set* | String | Sound effect to emit when the threshold is met. | 
 

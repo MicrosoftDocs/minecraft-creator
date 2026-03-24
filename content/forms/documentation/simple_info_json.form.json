@@ -18,7 +18,7 @@
     {
       "id": "description",
       "title": "Description",
-      "dataType": 13
+      "dataType": "longFormString"
     }
   ]
 }

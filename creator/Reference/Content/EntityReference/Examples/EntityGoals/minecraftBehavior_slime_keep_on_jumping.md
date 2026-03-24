@@ -19,12 +19,21 @@ Allows the entity to continuously jump around like a slime.
 > * Magma Cube (minecraft:magma_cube)
 > 
 
-## Slime Keep On Jumping Behavior Properties
+## Entity Slime Keep On Jumping Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Magma Cube: `5` | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Magma Cube: `5` | 
 | speed_multiplier | 1 | Decimal number | Determines the multiplier this entity's speed is modified by when jumping around. |  | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples
 

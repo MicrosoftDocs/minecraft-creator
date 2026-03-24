@@ -22,7 +22,7 @@
     {
       "id": "message",
       "title": "Message",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "description": "Broadcasts a chat message to all players in the world. The message appears in the chat log and can include formatting codes for colors and styles. Useful for debugging, test status updates, or simulating in-game announcements during automated testing."

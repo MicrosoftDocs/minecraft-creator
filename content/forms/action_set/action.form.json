@@ -18,7 +18,7 @@
     {
       "id": "id",
       "title": "Action Identifier",
-      "dataType": 2,
+      "dataType": "string",
       "required": true
     },
     {
@@ -91,22 +91,22 @@
     {
       "id": "args",
       "title": "Arguments",
-      "dataType": 16
+      "dataType": "object"
     },
     {
       "id": "value",
       "title": "Value",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "withId",
       "title": "With Id",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "setId",
       "title": "Set Id",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "description": "Represents a single action that can be executed as part of an action set. Actions include spawning entities, breaking blocks, playing sounds, and other world modifications. Each action has a type that determines its behavior and required arguments."

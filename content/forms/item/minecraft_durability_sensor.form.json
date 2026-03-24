@@ -23,7 +23,7 @@
         "id": "durability_thresholds",
         "title": "Durability Thresholds",
         "description": "The list of both durability thresholds and effects emitted when each threshold is met. When multiple thresholds are met, only the threshold with the lowest durability after applying the damage is considered.",
-        "dataType": 16,
+        "dataType": 15,
         "minLength": 1,
         "subFormId": "item_components/minecraft_durability_sensor_durability_threshold",
         "isRequired": true

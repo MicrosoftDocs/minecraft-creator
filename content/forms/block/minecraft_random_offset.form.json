@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "has a random positional offset" }
+          {
+            "type": "literal",
+            "text": "has a random positional offset"
+          }
         ]
       }
     ]
@@ -17,21 +20,21 @@
       "id": "x",
       "title": "X",
       "description": "X coordinate",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "block/offset_range"
     },
     {
       "id": "y",
       "title": "Y",
       "description": "Y coordinate",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "block/offset_range"
     },
     {
       "id": "z",
       "title": "Z",
       "description": "Z coordinate",
-      "dataType": 16,
+      "dataType": "object",
       "subFormId": "block/offset_range"
     }
   ]

@@ -17,7 +17,19 @@ List of hitboxes for melee and ranged hits against the entity.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| hitboxes | *not set* | Array of strings | Comma-separated list of hitboxes. | Hoglin: `[{"width":1,"height":0.85,"pivot":[0,0.5,0]}]`, `[{"width":2,"height":1.75,"pivot":[0,1,0]}]`, Zoglin: `[{"height":1.75,"pivot":[0,1,0],"width":2}]`, `[{"height":0.85,"pivot":[0,0.5,0],"width":1}]` | 
+| hitboxes | *not set* | Array of [Hitboxes](#hitboxes) items | List of hitboxes for melee and ranged hits against the entity. | Hoglin: `[{"width":1,"height":0.85,"pivot":[0,0.5,0]}]`, `[{"width":2,"height":1.75,"pivot":[0,1,0]}]`, Zoglin: `[{"height":1.75,"pivot":[0,1,0],"width":2}]`, `[{"height":0.85,"pivot":[0,0.5,0],"width":1}]` | 
+
+### Hitboxes
+
+#### Hitbox Entry Properties
+
+**JSON path:** `hitboxes`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| height | *not set* | Decimal number | Height of the hitbox. | 
+| pivot | *not set* | x, y, z coordinate array | Pivot point of the hitbox. | 
+| width | *not set* | Decimal number | Width of the hitbox. | 
 
 ## Samples
 

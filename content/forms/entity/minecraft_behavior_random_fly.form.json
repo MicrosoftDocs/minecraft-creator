@@ -12,7 +12,14 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "avoid_damage_blocks",
+      "title": "Avoid Damage Blocks",
+      "description": "If true, the mob will avoid blocks that cause damage when flying.",
+      "dataType": "boolean"
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.random_fly",
     "title": "Random Fly Behavior",

@@ -7,7 +7,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "maps item texture names to their file paths in the atlas" }
+          {
+            "type": "literal",
+            "text": "maps item texture names to their file paths in the atlas"
+          }
         ]
       }
     ]
@@ -17,14 +20,14 @@
       "id": "resource_pack_name",
       "title": "Resource Pack Name",
       "description": "The name of the resource pack this atlas belongs to.",
-      "dataType": 2,
+      "dataType": "string",
       "isRequired": true
     },
     {
       "id": "texture_name",
       "title": "Texture Name",
       "description": "The name of the texture atlas. Typically 'atlas.items' for item textures.",
-      "dataType": 2,
+      "dataType": "string",
       "defaultValue": "atlas.items",
       "isRequired": true
     },
@@ -32,19 +35,19 @@
       "id": "padding",
       "title": "Padding",
       "description": "The padding in pixels between textures in the atlas to prevent bleeding.",
-      "dataType": 0
+      "dataType": "int"
     },
     {
       "id": "num_mip_levels",
       "title": "Number of Mip Levels",
       "description": "The number of mipmap levels to generate for the atlas.",
-      "dataType": 0
+      "dataType": "int"
     },
     {
       "id": "texture_data",
       "title": "Texture Data",
       "description": "A collection of texture definitions keyed by texture name. Each entry maps a texture name to its source file(s).",
-      "dataType": 14,
+      "dataType": "keyedObjectCollection",
       "isRequired": true,
       "subForm": {
         "id": "item_texture_entry",
@@ -55,7 +58,7 @@
             "id": "textures",
             "title": "Textures",
             "description": "Array of texture file paths. Multiple paths can be provided for variants (used with aux values in older versions).",
-            "dataType": 17,
+            "dataType": "stringArray",
             "isRequired": true
           }
         ]

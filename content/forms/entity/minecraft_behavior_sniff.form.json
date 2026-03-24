@@ -135,5 +135,152 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.sniff",
+    "title": "Entity Sniff Behavior",
+    "description": "Allows this entity to detect the nearest player within \"sniffing_radius\" and update its \"minecraft:suspect_tracking\" component state",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "cooldown_range",
+        "title": "Cooldown Range",
+        "description": "Cooldown range between sniffs in seconds",
+        "dataType": 16,
+        "defaultValue": {
+          "max": 10,
+          "min": 3
+        },
+        "subFormId": "item_components/floatrange",
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.sniff/",
+              "content": {
+                "min": 5,
+                "max": 10
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "Sniffing duration in seconds",
+        "dataType": 3,
+        "defaultValue": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.sniff/",
+              "content": 4.16
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.sniff/",
+              "content": 6
+            }
+          ]
+        }
+      },
+      {
+        "id": "sniffing_radius",
+        "title": "Sniffing Radius",
+        "description": "Mob detection radius",
+        "dataType": 3,
+        "defaultValue": 5,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.sniff/",
+              "content": 24
+            }
+          ]
+        }
+      },
+      {
+        "id": "suspicion_radius_horizontal",
+        "title": "Suspicion Radius Horizontal",
+        "description": "Mob suspicion horizontal radius. When a player is within this radius horizontally, the anger level towards that player is increased",
+        "dataType": 3,
+        "defaultValue": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.sniff/",
+              "content": 6
+            }
+          ]
+        }
+      },
+      {
+        "id": "suspicion_radius_vertical",
+        "title": "Suspicion Radius Vertical",
+        "description": "Mob suspicion vertical radius. When a player is within this radius vertically, the anger level towards that player is increased",
+        "dataType": 3,
+        "defaultValue": 3,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 1
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.sniff/",
+              "content": 20
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/warden.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.sniff/",
+          "content": {
+            "duration": 4.16,
+            "sniffing_radius": 24,
+            "suspicion_radius_horizontal": 6,
+            "suspicion_radius_vertical": 20,
+            "cooldown_range": {
+              "min": 5,
+              "max": 10
+            },
+            "priority": 6
+          }
+        }
+      ]
+    }
   }
 }

@@ -21,7 +21,7 @@
   "scalarField": {
     "id": "number",
     "title": "Friction value",
-    "dataType": 7
+    "dataType": "number"
   },
   "generated_doNotEdit": {
     "id": "minecraft:friction",

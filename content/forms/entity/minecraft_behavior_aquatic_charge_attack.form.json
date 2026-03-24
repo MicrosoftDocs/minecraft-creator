@@ -1,0 +1,104 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer": {
+    "phrases": [
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "dashes at targets with knockback"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "minecraft:behavior.aquatic_charge_attack",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.aquatic_charge_attack",
+    "title": "Entity Aquatic Charge Attack Behavior",
+    "description": "Enables an aquatic mob to dash at its target with knockback; includes overshoot and cooldown settings.",
+    "fields": [
+      {
+        "id": "attack_reach",
+        "title": "Attack Reach",
+        "description": "Horizontal reach grown around the mob's AABB to register a hit.",
+        "dataType": 3,
+        "defaultValue": 0.05000000074505806
+      },
+      {
+        "id": "charge_cooldown_time",
+        "title": "Charge Cooldown Time",
+        "description": "Range of time in seconds to wait before starting another charge.",
+        "dataType": 16,
+        "defaultValue": {
+          "max": 6,
+          "min": 2
+        },
+        "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
+        "subFormId": "item_components/floatrange"
+      },
+      {
+        "id": "charge_overshoot_distance",
+        "title": "Charge Overshoot Distance",
+        "description": "Distance beyond the target the mob aims during a charge.",
+        "dataType": 3,
+        "defaultValue": 1.5
+      },
+      {
+        "id": "charge_speed",
+        "title": "Charge Speed",
+        "description": "Absolute speed used during the charge attack.",
+        "dataType": 3,
+        "defaultValue": 0.05999999865889549,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 0.05000000074505806
+          }
+        ]
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "knockback_force",
+        "title": "Knockback Force",
+        "description": "Knockback force applied to the target on hit.",
+        "dataType": 3,
+        "defaultValue": 2
+      },
+      {
+        "id": "max_charge_distance",
+        "title": "Max Charge Distance",
+        "description": "Maximum distance at which the mob attempts a charge.",
+        "dataType": 3,
+        "defaultValue": 16
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      }
+    ],
+    "samples": {}
+  }
+}

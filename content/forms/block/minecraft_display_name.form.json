@@ -20,7 +20,7 @@
   "scalarField": {
     "id": "string",
     "title": "Display Name",
-    "dataType": 2
+    "dataType": "string"
   },
   "generated_doNotEdit": {
     "id": "minecraft:display_name",

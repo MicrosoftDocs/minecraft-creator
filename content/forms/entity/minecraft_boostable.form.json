@@ -34,22 +34,22 @@
     {
       "id": "boost_items",
       "description": "List of items that can be used to boost while riding this entity.",
-      "dataType": 16,
+      "dataType": "objectArray",
       "subForm": {
         "fields": [
           {
             "id": "damage",
             "description": "This is the damage that the item will take each time it is used.",
-            "dataType": 17
+            "dataType": "int"
           },
           {
             "id": "item",
-            "dataType": 2,
+            "dataType": "string",
             "description": "Name of the item that can be used to boost."
           },
           {
             "id": "replace_item",
-            "dataType": 2,
+            "dataType": "string",
             "description": "The item used to boost will become this item once it is used up."
           }
         ]
@@ -58,13 +58,13 @@
     {
       "id": "duration",
       "description": "Time in seconds for the boost.",
-      "dataType": 3,
+      "dataType": "float",
       "defaultValue": 3
     },
     {
       "id": "speed_multiplier",
       "description": "Factor by which the entity's normal speed increases. E.g. 2.0 means go twice as fast.",
-      "dataType": 3,
+      "dataType": "float",
       "defaultValue": 1
     }
   ],

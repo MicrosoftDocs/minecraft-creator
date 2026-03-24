@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "has block face and vertical half states" }
+          {
+            "type": "literal",
+            "text": "has block face and vertical half states"
+          }
         ]
       }
     ]
@@ -13,7 +16,7 @@
     {
       "id": "enabled_states",
       "title": "Enabled States",
-      "dataType": 33,
+      "dataType": "checkboxListAsStringArray",
       "choices": [
         {
           "id": "minecraft:block_face",

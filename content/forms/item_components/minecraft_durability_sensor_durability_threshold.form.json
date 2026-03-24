@@ -17,7 +17,7 @@
       "id": "sound_event",
       "title": "Sound event",
       "description": "Sound effect to emit when the threshold is met.",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "generated_doNotEdit": {

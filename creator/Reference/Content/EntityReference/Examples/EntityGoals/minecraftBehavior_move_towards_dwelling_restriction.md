@@ -10,7 +10,7 @@ ms.date: 02/11/2025
 
 # Entity Documentation - minecraft:behavior.move_towards_dwelling_restriction
 
-Allows entities with the "minecraft:dweller" component to move toward their Village area that the entity should be restricted to.
+Allows entities with the "minecraft:dweller" component to move toward their village area that the entity should be restricted to.
 
 > [!Note]
 > Requires the following component in order to work properly:
@@ -18,12 +18,21 @@ Allows entities with the "minecraft:dweller" component to move toward their Vill
 > * [Dweller (minecraft:dweller)](../EntityComponents/minecraftComponent_dweller.md)
 > 
 
-## Move Towards Dwelling Restriction Behavior Properties
+## Entity Move Towards Dwelling Restriction Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Iron Golem: `4` | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Iron Golem: `4` | 
 | speed_multiplier | 1 | Decimal number | This multiplier modifies the entity's speed when moving towards its restriction. |  | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples
 

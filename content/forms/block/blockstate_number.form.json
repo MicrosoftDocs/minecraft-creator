@@ -4,7 +4,10 @@
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "has numeric block state values" }
+          {
+            "type": "literal",
+            "text": "has numeric block state values"
+          }
         ]
       }
     ]
@@ -21,7 +24,7 @@
         1,
         2
       ],
-      "dataType": 32
+      "dataType": "numberArray"
     }
   ]
 }

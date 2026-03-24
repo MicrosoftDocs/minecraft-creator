@@ -57,5 +57,63 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.move_towards_dwelling_restriction",
+    "title": "Entity Move Towards Dwelling Restriction Behavior",
+    "description": "Allows entities with the \"minecraft:dweller\" component to move toward their village area that the entity should be restricted to.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/iron_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_towards_dwelling_restriction/",
+              "content": 4
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "This multiplier modifies the entity's speed when moving towards its restriction.",
+        "dataType": 3,
+        "defaultValue": 1
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/iron_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.move_towards_dwelling_restriction/",
+          "content": {
+            "priority": 4
+          }
+        }
+      ]
+    }
   }
 }

@@ -19,14 +19,14 @@
       "id": "creation_expression",
       "title": "Creation Expression",
       "description": "Molang expression run once when the emitter is created. Use this to initialize variables.",
-      "dataType": 34,
+      "dataType": "molang",
       "defaultValue": 0
     },
     {
       "id": "per_update_expression",
       "title": "Per Update Expression",
       "description": "Molang expression run each frame while the emitter is active. Use this to update variables based on time or other conditions.",
-      "dataType": 34,
+      "dataType": "molang",
       "defaultValue": 0
     }
   ],

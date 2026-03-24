@@ -17,12 +17,12 @@
     {
       "id": "uuid",
       "title": "Unique Id",
-      "dataType": 2
+      "dataType": "string"
     },
     {
       "id": "version",
       "title": "Version",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "description": "Defines a documented script module."

@@ -17,11 +17,11 @@
       "id": "cooldown_range",
       "title": "Cooldown Range",
       "description": "Goal cooldown range in seconds. Can be a range object or a single number.",
-      "dataType": 19,
+      "dataType": "floatRange",
       "alternates": [
         {
           "id": "cooldown_range",
-          "dataType": 3
+          "dataType": "float"
         }
       ]
     },
@@ -29,11 +29,11 @@
       "id": "duration_range",
       "title": "Duration Range",
       "description": "Goal duration range in seconds. Can be a range object or a single number.",
-      "dataType": 19,
+      "dataType": "floatRange",
       "alternates": [
         {
           "id": "duration_range",
-          "dataType": 3
+          "dataType": "float"
         }
       ]
     }
@@ -127,6 +127,181 @@
                 "move",
                 "look"
               ]
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/sniffer.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.timer_flag_1/",
+          "content": {
+            "priority": 6,
+            "control_flags": [
+              "move",
+              "look"
+            ],
+            "cooldown_range": {
+              "min": 400,
+              "max": 500
+            },
+            "duration_range": {
+              "min": 2,
+              "max": 2
+            },
+            "on_end": {
+              "event": "on_scenting_success",
+              "target": "self"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.timer_flag_1",
+    "title": "Entity Timer Flag 1 Behavior",
+    "description": "Fires an event when this behavior starts, then waits for a duration before stopping. When stopping due to that timeout or due to being interrupted by another behavior, fires another event. query.timer_flag_1 will return 1.0 on both the client and server when this behavior is running, and 0.0 otherwise.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.timer_flag_1/",
+              "content": [
+                "move",
+                "look"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "cooldown_range",
+        "title": "Cooldown Range",
+        "description": "Goal cooldown range in seconds. If specified, the cooldown will have to elapse even before the goal can be selected for the first time.",
+        "dataType": 16,
+        "defaultValue": {
+          "max": 0,
+          "min": 0
+        },
+        "subFormId": "item_components/floatrange",
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.timer_flag_1/",
+              "content": {
+                "min": 400,
+                "max": 500
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "duration_range",
+        "title": "Duration Range",
+        "description": "Goal duration range in seconds.",
+        "dataType": 16,
+        "defaultValue": {
+          "max": 0,
+          "min": 0
+        },
+        "subFormId": "item_components/floatrange",
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.timer_flag_1/",
+              "content": {
+                "min": 2,
+                "max": 2
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_end",
+        "title": "End",
+        "description": "Event(s) to run when the goal ends.",
+        "dataType": 16,
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger",
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.timer_flag_1/",
+              "content": {
+                "event": "on_scenting_success",
+                "target": "self"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_start",
+        "title": "Start",
+        "description": "Event(s) to run when the goal starts.",
+        "dataType": 16,
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.timer_flag_1/",
+              "content": 6
             }
           ]
         }

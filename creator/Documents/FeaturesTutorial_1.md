@@ -1,65 +1,47 @@
 ---
 author: iconicNurdle
-ms.author: mikeam
+ms.author: v-cwilkerson
 title: Features Tutorial - A Simple Feature
 description: "How to add a simple feature to a world with a behavior pack."
 ms.service: minecraft-bedrock-edition
-ms.date: 02/20/2025
+ms.date: 03/09/2026
 ---
 
 # Features Tutorial - a Simple Feature
 
 This tutorial explains how to create and test a features behavior pack using the **hot_air_balloon** sample feature from the [Minecraft Custom Features Project sample pack](https://github.com/microsoft/minecraft-samples/tree/main/custom_features).
 
-This is considered a "simple" tutorial because it uses only one pack, three subfolders, and four files. 
-
-This is the bare minimum to implement a feature in a Minecraft world.
-
 ## More Information
 
-For a more in-depth overview of the parts, take a look at the [Introduction to Features](../Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md) reference page.
+If this is your first time working with Features, take a look at the [Introduction to Features](../Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md) reference page for a more in-depth overview of the parts before you continue.
 
-There's even a [Change the World with Features video](https://www.youtube.com/watch?v=kzWSItyz5Pk&t=1s) showing how to save a structure and then put it into the world as a feature.
+We also have an [Introduction to Structure Blocks](Structures/IntroductionToStructureBlocks.md) article to get you started with everything you need if you are new to the world of creating, exporting, and importing structures.
 
-If you are new to the world of creating, exporting, and importing structures, we have an [Introduction to Structure Blocks tutorial](Structures/IntroductionToStructureBlocks.md).
+Finally, check out the video below for an example of how to save a structure and place it into your world as a feature.
 
-## Start with the Minecraft Custom Feature Project
+> [!VIDEO https://www.youtube.com/embed/kzWSItyz5Pk]
+
+## Set up the Features
 
 1. Go to the [minecraft-samples](https://github.com/microsoft/minecraft-samples/tree/main) page and download the .zip file of the code.
 
-1. Expand/unzip the folder. It will be called **minecraft-samples-main**.
+2. Expand/unzip the folder (it should be called **minecraft-samples-main**).
 
-1. Take a look at all the delightful Minecraft sample projects and find **custom_features**.
+3. Take a look at all the delightful Minecraft sample projects, then find and open **custom_features**.
 
-1. Inside custom_features, find the **example_feature_set** folder.
+4. Open the **example_feature_set** folder, then open the **behavior_packs** folder inside it.
 
-1. Inside example_feature_set, find the **behavior_packs** folder.
-
-1. Inside the behavior_packs folder, find the second folder named **example_feature_set**.
-
-1. Inside this example_feature_set folder, you will find the folders and files of the project we are using as a starting point for our tutorial. Spoiler alert: the only file we will actually need to copy and paste from this sample is **hot_air_balloon.mcstructure**.
+5. Inside **behavior_packs**, find the second folder named **example_feature_set** where you'll find the folders and files of the project we are using as a starting point for our tutorial.
+    > [!TIP]
+    > The only file we will actually *need* to copy and paste from this sample is **hot_air_balloon.mcstructure**.
 
 ## hot_air_balloon - Behavior Pack Structure
 
-The finished behavior pack will have this structure:
-
-```
-- hot_air_balloon_BP (main behavior pack folder)
-  - feature_rules (folder)
-    - hot_air_balloon_feature_rules.json
-  - features (folder)
-    - hot_air_balloon_feature.json
-  - structures (folder)
-    - example (folder)
-      - hot_air_balloon.mcstructure
-  - manifest.json
-```
-
 1. Create the main folder for your behavior pack and call it something like **hot_air_balloon_BP**.
 
-1. Create a manifest.json file in there, like this one.
+2. Create a **manifest.json** file in there, like the one below.
 
-```
+```json
 {
   "format_version": 2,
   "header": {
@@ -81,11 +63,20 @@ The finished behavior pack will have this structure:
 }
 ```
 
-3. Next, create the folders and subfolders, according to the pack structure.
-
-The following content shows the original file content from the sample pack, and then there will be a description about what you should change and why. Then you'll find the modified content you should actually use. 
+3. Next, create the folders and subfolders, according to the pack structure. The finished behavior pack should have the following structure:
+    - hot_air_balloon_BP (main behavior pack folder)
+      - feature_rules (folder)
+        - hot_air_balloon_feature_rules.json
+      - features (folder)
+        - hot_air_balloon_feature.json
+      - structures (folder)
+        - example (folder)
+          - hot_air_balloon.mcstructure
+      - manifest.json
 
 ### feature_rules/hot_air_balloon_feature_rules.json
+
+Next, use the following content from the original sample pack file as a structure for the balloon's feature rules and refer to the description below about what you should change and why.
 
 Original example from the sample pack:
 
@@ -118,23 +109,23 @@ Original example from the sample pack:
 }
 ```
 
-The `"minecraft:biome_filter"` section will place the balloons only in the End. If you want to have the balloons overhead as soon as you enter the world with your behavior back activated, then you'll need to create a world and make a note of what biome you spawn into.
-
-Changing the biome to "forest" is a pretty good bet, since forest is the most common biome in Minecraft. 
+The `"minecraft:biome_filter"` section currently places the balloons only in the End. Change the `"value"` to make balloons spawn in your biome(s) of choice. If you want the balloons overhead as soon as players enter the world with your behavior back activated, you'll need to create a world, take note of what biome you spawn into, then change the value to match that biome.
 
 ```json
 "minecraft:biome_filter": [
         {
           "test": "has_biome_tag",
           "operator": "==",
-          "value": "forest"
+          "value": "[insert biome(s) here]"
         }
       ]
 ```
 
-Take a look at the [`/locate` command](../Commands/commands/locate.md) page for the latest list of biomes. (This is also a hint for you to use the `locate` command if you can't find your hot air balloons. Also, try looking at night. The balloon glow!)
+Take a look at the [`/locate` command](../Commands/commands/locate.md) page for the latest list of biomes. You can also try using the `locate` command if you can't find your hot air balloons.
+> [!TIP]
+> Changing the biome to "forest" is a pretty good bet, since forest is the most common biome in Minecraft. Also, try looking at night to see the balloons glow!
 
-Also, see that `"operator"` line? That means you can play with this value like a Boolean. If you want a world simply *covered* in hot air balloons (except for the End), try this:
+You can also use the `"operator"` line like a Boolean to simply *cover* the world in hot air balloons (except for the specified `"value"` biome(s)).
 
 ```json
 "minecraft:biome_filter": [
@@ -146,14 +137,14 @@ Also, see that `"operator"` line? That means you can play with this value like a
       ]
 ```
 
-Beware: this will be pretty resource-intensive.
+> [!NOTE]
+> Doing this is very resource-intensive and may slow things down.
 
-The sample has the iteration setting cranked up to 10 so you will get a noticeable number of balloons when you try it. 
-You might want to change the `"iterations"` setting from 10 to a more reasonable 1.
+The sample has the iteration setting cranked up to 10 so you will get a noticeable number of balloons when you try it, but you might want to change the `"iterations"` setting from 10 to a more reasonable 1.
 
-This is the edited file to use for your **hot_air_balloon** feature behavior pack:
+The finished file for your **hot_air_balloon** feature behavior pack should look something like this:
 
-**Final EDITED feature_rules/hot_air_balloon_feature_rules.json**
+#### hot_air_balloon_feature_rules.json
 
 ```json
 {
@@ -184,11 +175,13 @@ This is the edited file to use for your **hot_air_balloon** feature behavior pac
 }
 ```
 
-What this code is saying... "Hey Minecraft... use the feature rule whose name is 'example:hot_air_balloon_feature_rules' to place a feature named 'example:hot_air_balloon_feature' during the phase when Minecraft is loading in the surface of the world. But only place the feature in a forest biome, and only place (iterate) one feature per chunk (a chunk is 16 X 16 blocks, remember?), and position each feature relative to the 'y' coordinate of the world."
+> [!TIP]
+> This code says:
+> "Hey Minecraft, use the feature rule whose name is `"example:hot_air_balloon_feature_rules"` to place a feature named `"sample:hot_air_balloon_feature"` during the phase when Minecraft is loading in the surface of the world. Only place the feature in forest biomes, and only iterate (place) one feature per chunk (a chunk is a 16 X 16 block section of the world), and position each feature relative to the 'y' coordinate of the world."
 
 ### features/hot_air_balloon_feature.json
 
-There are features that are used to place other features, and the "minecraft:structure_template_feature" is one of them.
+There are features that are used to place other features, like `"minecraft:structure_template_feature"`.
 
 ```json
 {
@@ -212,31 +205,30 @@ There are features that are used to place other features, and the "minecraft:str
 }
 ```
 
-This code is saying: "Hey Minecraft! This is the template named "example:hot_air_balloon_feature" that places a structure named "example:hot_air_balloon". Each placed structure can face a random direction (well, any one of the four directions a block can face in Minecraft) and you have to make sure the balloon is only allowed to be placed in the air. (Fun fact: Minecraft air is in blocks, too...)
+> [!TIP]
+> This code says: "Hey Minecraft! This is the template named `"example:hot_air_balloon_feature"` that places a structure named `"example:hot_air_balloon"`. Each placed structure can face a random direction as long as the balloon is placed somewhere in the air."
 
 ### structures/example/hot_air_balloon.mcstructure
 
+The .mcstructure itself includes the air between the ground and the balloon, creating the floating effect. This graphic shows how the feature is distributed in relation to the surface area.
+
 ![Image of a hot air balloon structure](Media/Features/features_tutorial_hot_air_balloon_structure.png)
 
-The .mcstructure itself includes the air between the ground and the balloon, creating the floating effect.
+`"hot_air_balloon.mcstructure"` is the only file we actually needed from the sample pack. If you don't have it, you can make your own structure and export it to this folder using [structure blocks](../Documents/Structures/IntroductionToStructureBlocks.md).
 
-This graphic shows how the feature is distributed in relation to the surface area.
-
-This is the only file we actually needed from the sample pack. If you don't have it, you can make your own structure and export it to this folder using [structure blocks](../Documents/Structures/IntroductionToStructureBlocks.md).
-
-## What Success Looks Like...
+## What does success look like?
 
 This feature has its own light source (blue soul flames!) so it's easier to find your feature at night.
 
 ![Image of a forest at night with dozens of beautiful glowing balloons hanging over it. ](Media/Features/features_tutorial_hot_air_balloon_vista_night.png)
 
-Now that you have a working feature, this is a good time to experiment with some of the settings in the files. 
+Now that you have a working feature, this is a good time to experiment with some of the settings in the files.
 
-You could try changing the **iteration** parameter in the **feature_rules/hot_air_balloon_feature_rules.json** file from 1.0 to 0.1. Then change it to 10.0 and see the results.
+You could try changing the **iteration** parameter in the **feature_rules/hot_air_balloon_feature_rules.json** file from 1.0 to 0.1. Then change it to 10.0 and see how the results change.
 
-## What's Next?
+## What's next?
 
-Want to work with a more complicated feature? 
+Want to work with a more complicated feature? Try the advanced Features tutorial next!
 
 > [!div class="nextstepaction"]
 > [Features Tutorial Advanced](FeaturesTutorial_2.md)

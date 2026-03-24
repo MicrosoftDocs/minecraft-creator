@@ -19,7 +19,8 @@ Defines an entity's transformation from the current definition into another.
 |:----------|:-------------|:----|:-----------|:------------- |
 | add | *not set* | Array of [Add](#add) items | List of components to add to the entity after the transformation |  | 
 | begin_transform_sound | *not set* | String | Sound to play when the transformation starts |  | 
-| delay | *not set* | Array of [Delay](#delay) items | Defines the properties of the delay for the transformation | Pig: `0.5` | 
+| delay | *not set* | [Delay](#delay) item | Defines the properties of the delay for the transformation. Can be a simple number (seconds) or a complex object. | Pig: `0.5` | 
+| delay (as Decimal number) | *not set* | Decimal number |  |  | 
 | drop_equipment | false | Boolean true/false | Cause the entity to drop all equipment upon transformation |  | 
 | drop_inventory | false | Boolean true/false | Cause the entity to drop all items in inventory upon transformation | Skeleton: `true` | 
 | into | *not set* | String | Entity Definition that this entity will transform into | Hoglin: `"minecraft:zoglin"`, Pig: `"minecraft:pig_zombie"`, Skeleton: `"minecraft:stray"` | 

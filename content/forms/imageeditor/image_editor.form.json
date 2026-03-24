@@ -18,20 +18,20 @@
     {
       "id": "width",
       "title": "Width",
-      "dataType": 0,
+      "dataType": "int",
       "priority": 1
     },
     {
       "id": "height",
       "title": "Height",
-      "dataType": 0,
+      "dataType": "int",
       "priority": 2
     },
     {
       "id": "outputs",
       "title": "Outputs",
       "noun": "Output",
-      "dataType": 15,
+      "dataType": "objectArray",
       "priority": 10,
       "subForm": {
         "id": "output",
@@ -41,13 +41,13 @@
             "id": "name",
             "title": "Name",
             "description": "Name of the block",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "type",
             "title": "Type",
             "description": "Type of fun thing you want to create from this image.",
-            "dataType": 9,
+            "dataType": "intValueLookup",
             "mustMatchChoices": true,
             "choices": [
               {

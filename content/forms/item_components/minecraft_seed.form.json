@@ -6,11 +6,25 @@
   "summarizer": {
     "phrases": [
       {
-        "visibility": [{ "field": "crop_result", "comparison": "defined" }],
+        "visibility": [
+          {
+            "field": "crop_result",
+            "comparison": "defined"
+          }
+        ],
         "tokens": [
-          { "type": "literal", "text": "grows " },
-          { "type": "value", "field": "crop_result" },
-          { "type": "literal", "text": " when planted" }
+          {
+            "type": "literal",
+            "text": "grows "
+          },
+          {
+            "type": "value",
+            "field": "crop_result"
+          },
+          {
+            "type": "literal",
+            "text": " when planted"
+          }
         ]
       }
     ]
@@ -21,20 +35,20 @@
       "id": "crop_result",
       "title": "Crop Result",
       "description": "The block identifier that will be placed when the seed is planted (e.g., 'wheat', 'beetroot', 'cave_vines').",
-      "dataType": 2,
+      "dataType": "string",
       "isRequired": true
     },
     {
       "id": "plant_at",
       "title": "Plant At",
       "description": "Array of block identifiers that this seed can be planted on or attached to. If not specified, standard farmland rules apply.",
-      "dataType": 17
+      "dataType": "stringArray"
     },
     {
       "id": "plant_at_any_solid_surface",
       "title": "Plant At Any Solid Surface",
       "description": "If true, the seed can be planted on any solid surface, not just farmland or specified blocks. This property was deprecated and removed in versions after 1.18.",
-      "dataType": 1,
+      "dataType": "boolean",
       "defaultValue": false,
       "isDeprecated": true,
       "versionDeprecated": "1.19.0",
@@ -45,7 +59,7 @@
       "id": "plant_at_face",
       "title": "Plant At Face",
       "description": "The face of a block where this seed can be planted. Values: 'UP' for top of blocks (normal crops), 'DOWN' for bottom (hanging plants like glow berries). This property was deprecated and removed in versions after 1.18.",
-      "dataType": 4,
+      "dataType": "stringEnum",
       "enumValues": [
         "UP",
         "DOWN",

@@ -4,11 +4,25 @@
   "summarizer": {
     "phrases": [
       {
-        "visibility": [{ "field": "value", "comparison": "defined" }],
+        "visibility": [
+          {
+            "field": "value",
+            "comparison": "defined"
+          }
+        ],
         "tokens": [
-          { "type": "literal", "text": "has " },
-          { "type": "value", "field": "value" },
-          { "type": "literal", "text": " hover text" }
+          {
+            "type": "literal",
+            "text": "has "
+          },
+          {
+            "type": "value",
+            "field": "value"
+          },
+          {
+            "type": "literal",
+            "text": " hover text"
+          }
         ]
       }
     ]
@@ -19,7 +33,7 @@
       "id": "value",
       "title": "value",
       "description": "The color of the item hover text.",
-      "dataType": 2
+      "dataType": "string"
     }
   ],
   "generated_doNotEdit": {

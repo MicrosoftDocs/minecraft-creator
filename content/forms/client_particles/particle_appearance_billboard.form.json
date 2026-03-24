@@ -17,7 +17,7 @@
       "id": "facing_camera_mode",
       "title": "Facing Camera Mode",
       "description": "The facing mode of the billboard. Controls how the particle faces the camera.",
-      "dataType": 2,
+      "dataType": "string",
       "choices": [
         {
           "id": "lookat_xyz",
@@ -69,7 +69,7 @@
       "id": "size",
       "title": "Size",
       "description": "The size of the particle billboard, as [width, height] using Molang expressions or numbers.",
-      "dataType": 35,
+      "dataType": "molangArray",
       "minLength": 2,
       "maxLength": 2
     }
