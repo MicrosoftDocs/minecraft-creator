@@ -1,0 +1,72 @@
+{
+  "id": "minecraft:behavior.stroll_towards_village",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.stroll_towards_village",
+    "title": "Entity Stroll Towards Village Behavior",
+    "description": "Allows the mob to move into a random location within a village within the search range.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "cooldown_time",
+        "title": "Cooldown Time",
+        "description": "Time in seconds the mob has to wait before using the goal again",
+        "dataType": 3,
+        "defaultValue": 8
+      },
+      {
+        "id": "goal_radius",
+        "title": "Goal Radius",
+        "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot.",
+        "dataType": 3,
+        "defaultValue": 1.5
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "search_range",
+        "title": "Search Range",
+        "description": "The distance in blocks to search for villages. If <= 0, find the closest village regardless of distance.",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this goal.",
+        "dataType": 3,
+        "defaultValue": 1
+      },
+      {
+        "id": "start_chance",
+        "title": "Start Chance",
+        "description": "Chance that the mob will start this goal, from 0 to 1.",
+        "dataType": 3,
+        "defaultValue": 1
+      }
+    ]
+  }
+}

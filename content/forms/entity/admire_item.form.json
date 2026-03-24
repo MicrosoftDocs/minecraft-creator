@@ -1,0 +1,97 @@
+{
+  "id": "minecraft:behavior.admire_item",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.admire_item",
+    "title": "Entity Admire Item Behavior",
+    "description": "Enables the mob to admire items that have been configured as admirable. Must be used in combination with the admire_item component",
+    "fields": [
+      {
+        "id": "admire_item_sound",
+        "title": "Admire Item Sound",
+        "description": "The sound event to play when admiring the item",
+        "dataType": 2,
+        "defaultValue": ""
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17,
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "on_admire_item_start",
+        "title": "Admire Item Start",
+        "description": "Event to run when the mob starts admiring an item.",
+        "dataType": 16,
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "on_admire_item_stop",
+        "title": "Admire Item Stop",
+        "description": "Event to run when the mob stops admiring an item.",
+        "dataType": 16,
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0,
+        "defaultValue": 0
+      },
+      {
+        "id": "sound_interval",
+        "title": "Sound Interval",
+        "description": "The range of time in seconds to randomly wait before playing the sound again.",
+        "dataType": 16,
+        "defaultValue": {
+          "max": 0,
+          "min": 0
+        },
+        "subFormId": "item_components/floatrange"
+      }
+    ]
+  }
+}
