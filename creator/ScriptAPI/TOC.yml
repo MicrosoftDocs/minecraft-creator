@@ -1066,6 +1066,8 @@
       href: minecraft/server/CustomCommandParameter.md
     - name: CustomCommandResult
       href: minecraft/server/CustomCommandResult.md
+    - name: CustomTexture
+      href: minecraft/server/CustomTexture.md
     - name: DefinitionModifier
       href: minecraft/server/DefinitionModifier.md
     - name: DimensionLocation
@@ -2094,6 +2096,8 @@
       href: minecraft/server-net/HttpRequestMethod.md
     - name: PacketId
       href: minecraft/server-net/PacketId.md
+    - name: CloseAfterEventSignal
+      href: minecraft/server-net/CloseAfterEventSignal.md
     - name: HttpClient
       href: minecraft/server-net/HttpClient.md
     - name: HttpHeader
@@ -2102,6 +2106,8 @@
       href: minecraft/server-net/HttpRequest.md
     - name: HttpResponse
       href: minecraft/server-net/HttpResponse.md
+    - name: MessageAfterEventSignal
+      href: minecraft/server-net/MessageAfterEventSignal.md
     - name: NetworkBeforeEvents
       href: minecraft/server-net/NetworkBeforeEvents.md
     - name: PacketReceiveBeforeEventSignal
@@ -2112,6 +2118,16 @@
       href: minecraft/server-net/PacketSendBeforeEvent.md
     - name: PacketSendBeforeEventSignal
       href: minecraft/server-net/PacketSendBeforeEventSignal.md
+    - name: WebSocket
+      href: minecraft/server-net/WebSocket.md
+    - name: WebSocketClient
+      href: minecraft/server-net/WebSocketClient.md
+    - name: WebSocketClientAfterEvents
+      href: minecraft/server-net/WebSocketClientAfterEvents.md
+    - name: WebSocketClientCloseAfterEvent
+      href: minecraft/server-net/WebSocketClientCloseAfterEvent.md
+    - name: WebSocketClientReceiveAfterEvent
+      href: minecraft/server-net/WebSocketClientReceiveAfterEvent.md
     - name: PacketEventOptions
       href: minecraft/server-net/PacketEventOptions.md
   - name: minecraft/server-ui
@@ -2120,6 +2136,8 @@
       href: minecraft/server-ui/minecraft-server-ui.md
     - name: minecraft/server-ui Changelog
       href: minecraft/server-ui/changelog.md
+    - name: DataDrivenScreenClosedReason
+      href: minecraft/server-ui/DataDrivenScreenClosedReason.md
     - name: FormCancelationReason
       href: minecraft/server-ui/FormCancelationReason.md
     - name: FormRejectReason
@@ -2130,6 +2148,8 @@
       href: minecraft/server-ui/ActionFormResponse.md
     - name: CustomForm
       href: minecraft/server-ui/CustomForm.md
+    - name: FormCloseError
+      href: minecraft/server-ui/FormCloseError.md
     - name: FormResponse
       href: minecraft/server-ui/FormResponse.md
     - name: MessageBox
@@ -2144,6 +2164,10 @@
       href: minecraft/server-ui/ModalFormResponse.md
     - name: Observable
       href: minecraft/server-ui/Observable.md
+    - name: PlayerLeftError
+      href: minecraft/server-ui/PlayerLeftError.md
+    - name: ServerShutdownError
+      href: minecraft/server-ui/ServerShutdownError.md
     - name: UIManager
       href: minecraft/server-ui/UIManager.md
     - name: ButtonOptions

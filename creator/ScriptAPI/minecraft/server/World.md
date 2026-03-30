@@ -23,6 +23,21 @@ Type: [*WorldAfterEvents*](WorldAfterEvents.md)
 Notes:
   - This property can be read in early-execution mode.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **allowCheats**
+`allowCheats: boolean;`
+
+Enables or disables cheats.
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can't be edited in restricted-execution mode.
+::: moniker-end
+
 ### **beforeEvents**
 `read-only beforeEvents: WorldBeforeEvents;`
 
@@ -38,23 +53,23 @@ Notes:
 ##### ***customCommand.ts***
 
 ```typescript
-import { world, DimensionLocation } from "@minecraft/server";
+import { world, DimensionLocation } from '@minecraft/server';
 
 function customCommand(targetLocation: DimensionLocation) {
-  const chatCallback = world.beforeEvents.chatSend.subscribe((eventData) => {
-    if (eventData.message.includes("cancel")) {
+  const chatCallback = world.beforeEvents.chatSend.subscribe(eventData => {
+    if (eventData.message.includes('cancel')) {
       // Cancel event if the message contains "cancel"
       eventData.cancel = true;
     } else {
-      const args = eventData.message.split(" ");
+      const args = eventData.message.split(' ');
 
       if (args.length > 0) {
         switch (args[0].toLowerCase()) {
-          case "echo":
+          case 'echo':
             // Send a modified version of chat message
             world.sendMessage(`Echo '${eventData.message.substring(4).trim()}'`);
             break;
-          case "help":
+          case 'help':
             world.sendMessage(`Available commands: echo <message>`);
             break;
         }
@@ -277,26 +292,23 @@ Returns a property value.
 ##### ***incrementDynamicProperty.ts***
 
 ```typescript
-import { world, DimensionLocation } from "@minecraft/server";
+import { world, DimensionLocation } from '@minecraft/server';
 
-function incrementDynamicProperty(
-  log: (message: string, status?: number) => void,
-  targetLocation: DimensionLocation
-) {
-  let number = world.getDynamicProperty("samplelibrary:number");
+function incrementDynamicProperty(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  let number = world.getDynamicProperty('samplelibrary:number');
 
-  log("Current value is: " + number);
+  log('Current value is: ' + number);
 
   if (number === undefined) {
     number = 0;
   }
 
-  if (typeof number !== "number") {
-    log("Number is of an unexpected type.");
+  if (typeof number !== 'number') {
+    log('Number is of an unexpected type.');
     return -1;
   }
 
-  world.setDynamicProperty("samplelibrary:number", number + 1);
+  world.setDynamicProperty('samplelibrary:number', number + 1);
 }
 ```
 
@@ -305,44 +317,44 @@ function incrementDynamicProperty(
 ##### ***incrementDynamicPropertyInJsonBlob.ts***
 
 ```typescript
-import { world, DimensionLocation } from "@minecraft/server";
+import { world, DimensionLocation } from '@minecraft/server';
 
 function incrementDynamicPropertyInJsonBlob(
   log: (message: string, status?: number) => void,
   targetLocation: DimensionLocation
 ) {
-  let paintStr = world.getDynamicProperty("samplelibrary:longerjson");
+  let paintStr = world.getDynamicProperty('samplelibrary:longerjson');
   let paint: { color: string; intensity: number } | undefined = undefined;
 
-  log("Current value is: " + paintStr);
+  log('Current value is: ' + paintStr);
 
   if (paintStr === undefined) {
     paint = {
-      color: "purple",
+      color: 'purple',
       intensity: 0,
     };
   } else {
-    if (typeof paintStr !== "string") {
-      log("Paint is of an unexpected type.");
+    if (typeof paintStr !== 'string') {
+      log('Paint is of an unexpected type.');
       return -1;
     }
 
     try {
       paint = JSON.parse(paintStr);
     } catch (e) {
-      log("Error parsing serialized struct.");
+      log('Error parsing serialized struct.');
       return -1;
     }
   }
 
   if (!paint) {
-    log("Error parsing serialized struct.");
+    log('Error parsing serialized struct.');
     return -1;
   }
 
   paint.intensity++;
   paintStr = JSON.stringify(paint); // be very careful to ensure your serialized JSON str cannot exceed limits
-  world.setDynamicProperty("samplelibrary:longerjson", paintStr);
+  world.setDynamicProperty('samplelibrary:longerjson', paintStr);
 }
 ```
 
@@ -467,7 +479,7 @@ Notes:
 ##### ***playMusicAndSound.ts***
 
 ```typescript
-import { world, MusicOptions, WorldSoundOptions, PlayerSoundOptions, DimensionLocation } from "@minecraft/server";
+import { world, MusicOptions, WorldSoundOptions, PlayerSoundOptions, DimensionLocation } from '@minecraft/server';
 
 function playMusicAndSound(targetLocation: DimensionLocation) {
   const players = world.getPlayers();
@@ -477,20 +489,20 @@ function playMusicAndSound(targetLocation: DimensionLocation) {
     loop: true,
     volume: 1.0,
   };
-  world.playMusic("music.menu", musicOptions);
+  world.playMusic('music.menu', musicOptions);
 
   const worldSoundOptions: WorldSoundOptions = {
     pitch: 0.5,
     volume: 4.0,
   };
-  world.playSound("ambient.weather.thunder", targetLocation, worldSoundOptions);
+  world.playSound('ambient.weather.thunder', targetLocation, worldSoundOptions);
 
   const playerSoundOptions: PlayerSoundOptions = {
     pitch: 1.0,
     volume: 1.0,
   };
 
-  players[0].playSound("bucket.fill_water", playerSoundOptions);
+  players[0].playSound('bucket.fill_water', playerSoundOptions);
 }
 ```
 
@@ -619,26 +631,23 @@ Notes:
 ##### ***incrementDynamicProperty.ts***
 
 ```typescript
-import { world, DimensionLocation } from "@minecraft/server";
+import { world, DimensionLocation } from '@minecraft/server';
 
-function incrementDynamicProperty(
-  log: (message: string, status?: number) => void,
-  targetLocation: DimensionLocation
-) {
-  let number = world.getDynamicProperty("samplelibrary:number");
+function incrementDynamicProperty(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  let number = world.getDynamicProperty('samplelibrary:number');
 
-  log("Current value is: " + number);
+  log('Current value is: ' + number);
 
   if (number === undefined) {
     number = 0;
   }
 
-  if (typeof number !== "number") {
-    log("Number is of an unexpected type.");
+  if (typeof number !== 'number') {
+    log('Number is of an unexpected type.');
     return -1;
   }
 
-  world.setDynamicProperty("samplelibrary:number", number + 1);
+  world.setDynamicProperty('samplelibrary:number', number + 1);
 }
 ```
 
@@ -647,44 +656,44 @@ function incrementDynamicProperty(
 ##### ***incrementDynamicPropertyInJsonBlob.ts***
 
 ```typescript
-import { world, DimensionLocation } from "@minecraft/server";
+import { world, DimensionLocation } from '@minecraft/server';
 
 function incrementDynamicPropertyInJsonBlob(
   log: (message: string, status?: number) => void,
   targetLocation: DimensionLocation
 ) {
-  let paintStr = world.getDynamicProperty("samplelibrary:longerjson");
+  let paintStr = world.getDynamicProperty('samplelibrary:longerjson');
   let paint: { color: string; intensity: number } | undefined = undefined;
 
-  log("Current value is: " + paintStr);
+  log('Current value is: ' + paintStr);
 
   if (paintStr === undefined) {
     paint = {
-      color: "purple",
+      color: 'purple',
       intensity: 0,
     };
   } else {
-    if (typeof paintStr !== "string") {
-      log("Paint is of an unexpected type.");
+    if (typeof paintStr !== 'string') {
+      log('Paint is of an unexpected type.');
       return -1;
     }
 
     try {
       paint = JSON.parse(paintStr);
     } catch (e) {
-      log("Error parsing serialized struct.");
+      log('Error parsing serialized struct.');
       return -1;
     }
   }
 
   if (!paint) {
-    log("Error parsing serialized struct.");
+    log('Error parsing serialized struct.');
     return -1;
   }
 
   paint.intensity++;
   paintStr = JSON.stringify(paint); // be very careful to ensure your serialized JSON str cannot exceed limits
-  world.setDynamicProperty("samplelibrary:longerjson", paintStr);
+  world.setDynamicProperty('samplelibrary:longerjson', paintStr);
 }
 ```
 

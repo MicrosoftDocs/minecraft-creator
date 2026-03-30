@@ -112,10 +112,10 @@ Notes:
 ##### ***createExplosion.ts***
 
 ```typescript
-import { DimensionLocation } from "@minecraft/server";
+import { DimensionLocation } from '@minecraft/server';
 
 function createExplosion(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
-  log("Creating an explosion of radius 10.");
+  log('Creating an explosion of radius 10.');
   targetLocation.dimension.createExplosion(targetLocation, 10);
 }
 ```
@@ -125,16 +125,13 @@ function createExplosion(log: (message: string, status?: number) => void, target
 ##### ***createNoBlockExplosion.ts***
 
 ```typescript
-import { DimensionLocation } from "@minecraft/server";
-import { Vector3Utils } from "@minecraft/math";
+import { DimensionLocation } from '@minecraft/server';
+import { Vector3Utils } from '@minecraft/math';
 
-function createNoBlockExplosion(
-  log: (message: string, status?: number) => void,
-  targetLocation: DimensionLocation
-) {
+function createNoBlockExplosion(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
   const explodeNoBlocksLoc = Vector3Utils.floor(Vector3Utils.add(targetLocation, { x: 1, y: 2, z: 1 }));
 
-  log("Creating an explosion of radius 15 that does not break blocks.");
+  log('Creating an explosion of radius 15 that does not break blocks.');
   targetLocation.dimension.createExplosion(explodeNoBlocksLoc, 15, { breaksBlocks: false });
 }
 ```
@@ -144,18 +141,18 @@ function createNoBlockExplosion(
 ##### ***createExplosions.ts***
 
 ```typescript
-import { DimensionLocation } from "@minecraft/server";
-import { Vector3Utils } from "@minecraft/math";
+import { DimensionLocation } from '@minecraft/server';
+import { Vector3Utils } from '@minecraft/math';
 
 function createExplosions(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
   const explosionLoc = Vector3Utils.add(targetLocation, { x: 0.5, y: 0.5, z: 0.5 });
 
-  log("Creating an explosion of radius 15 that causes fire.");
+  log('Creating an explosion of radius 15 that causes fire.');
   targetLocation.dimension.createExplosion(explosionLoc, 15, { causesFire: true });
 
   const belowWaterLoc = Vector3Utils.add(targetLocation, { x: 3, y: 1, z: 3 });
 
-  log("Creating an explosion of radius 10 that can go underwater.");
+  log('Creating an explosion of radius 10 that can go underwater.');
   targetLocation.dimension.createExplosion(belowWaterLoc, 10, { allowUnderwater: true });
 }
 ```
@@ -275,10 +272,10 @@ Notes:
 ##### ***bounceSkeletons.ts***
 
 ```typescript
-import { EntityQueryOptions, DimensionLocation } from "@minecraft/server";
+import { EntityQueryOptions, DimensionLocation } from '@minecraft/server';
 
 function bounceSkeletons(targetLocation: DimensionLocation) {
-  const mobs = ["creeper", "skeleton", "sheep"];
+  const mobs = ['creeper', 'skeleton', 'sheep'];
 
   // create some sample mob data
   for (let i = 0; i < 10; i++) {
@@ -286,7 +283,7 @@ function bounceSkeletons(targetLocation: DimensionLocation) {
   }
 
   const eqo: EntityQueryOptions = {
-    type: "skeleton",
+    type: 'skeleton',
   };
 
   for (const entity of targetLocation.dimension.getEntities(eqo)) {
@@ -300,20 +297,20 @@ function bounceSkeletons(targetLocation: DimensionLocation) {
 ##### ***tagsQuery.ts***
 
 ```typescript
-import { EntityQueryOptions, DimensionLocation } from "@minecraft/server";
+import { EntityQueryOptions, DimensionLocation } from '@minecraft/server';
 
 function tagsQuery(targetLocation: DimensionLocation) {
-  const mobs = ["creeper", "skeleton", "sheep"];
+  const mobs = ['creeper', 'skeleton', 'sheep'];
 
   // create some sample mob data
   for (let i = 0; i < 10; i++) {
     const mobTypeId = mobs[i % mobs.length];
     const entity = targetLocation.dimension.spawnEntity(mobTypeId, targetLocation);
-    entity.addTag("mobparty." + mobTypeId);
+    entity.addTag('mobparty.' + mobTypeId);
   }
 
   const eqo: EntityQueryOptions = {
-    tags: ["mobparty.skeleton"],
+    tags: ['mobparty.skeleton'],
   };
 
   for (const entity of targetLocation.dimension.getEntities(eqo)) {
@@ -327,7 +324,7 @@ function tagsQuery(targetLocation: DimensionLocation) {
 ##### ***testThatEntityIsFeatherItem.ts***
 
 ```typescript
-import { EntityItemComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
+import { EntityItemComponent, EntityComponentTypes, DimensionLocation } from '@minecraft/server';
 
 function testThatEntityIsFeatherItem(
   log: (message: string, status?: number) => void,
@@ -342,8 +339,8 @@ function testThatEntityIsFeatherItem(
     const itemComp = item.getComponent(EntityComponentTypes.Item) as EntityItemComponent;
 
     if (itemComp) {
-      if (itemComp.itemStack.typeId.endsWith("feather")) {
-        log("Success! Found a feather", 1);
+      if (itemComp.itemStack.typeId.endsWith('feather')) {
+        log('Success! Found a feather', 1);
       }
     }
   }
@@ -622,11 +619,11 @@ import { DimensionLocation } from '@minecraft/server';
 import { Vector3Utils } from '@minecraft/math';
 
 function spawnAdultHorse(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
-    log('Create a horse and triggering the ageable_grow_up event, ensuring the horse is created as an adult');
-    targetLocation.dimension.spawnEntity(
-        'minecraft:horse<minecraft:ageable_grow_up>',
-        Vector3Utils.add(targetLocation, { x: 0, y: 1, z: 0 })
-    );
+  log('Create a horse and triggering the ageable_grow_up event, ensuring the horse is created as an adult');
+  targetLocation.dimension.spawnEntity(
+    'minecraft:horse<minecraft:ageable_grow_up>',
+    Vector3Utils.add(targetLocation, { x: 0, y: 1, z: 0 })
+  );
 }
 ```
 
@@ -635,8 +632,8 @@ function spawnAdultHorse(log: (message: string, status?: number) => void, target
 ##### ***quickFoxLazyDog.ts***
 
 ```typescript
-import { DimensionLocation } from "@minecraft/server";
-import { MinecraftEntityTypes, MinecraftEffectTypes } from "@minecraft/vanilla-data";
+import { DimensionLocation } from '@minecraft/server';
+import { MinecraftEntityTypes, MinecraftEffectTypes } from '@minecraft/vanilla-data';
 
 function quickFoxLazyDog(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
   const fox = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Fox, {
@@ -648,7 +645,7 @@ function quickFoxLazyDog(log: (message: string, status?: number) => void, target
   fox.addEffect(MinecraftEffectTypes.Speed, 10, {
     amplifier: 2,
   });
-  log("Created a fox.");
+  log('Created a fox.');
 
   const wolf = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Wolf, {
     x: targetLocation.x + 4,
@@ -659,7 +656,7 @@ function quickFoxLazyDog(log: (message: string, status?: number) => void, target
     amplifier: 2,
   });
   wolf.isSneaking = true;
-  log("Created a sneaking wolf.", 1);
+  log('Created a sneaking wolf.', 1);
 }
 ```
 
@@ -668,13 +665,13 @@ function quickFoxLazyDog(log: (message: string, status?: number) => void, target
 ##### ***triggerEvent.ts***
 
 ```typescript
-import { DimensionLocation } from "@minecraft/server";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { DimensionLocation } from '@minecraft/server';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function triggerEvent(targetLocation: DimensionLocation) {
   const creeper = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Creeper, targetLocation);
 
-  creeper.triggerEvent("minecraft:start_exploding_forced");
+  creeper.triggerEvent('minecraft:start_exploding_forced');
 }
 ```
 
@@ -705,8 +702,8 @@ Notes:
 ##### ***itemStacks.ts***
 
 ```typescript
-import { ItemStack, DimensionLocation } from "@minecraft/server";
-import { MinecraftItemTypes } from "@minecraft/vanilla-data";
+import { ItemStack, DimensionLocation } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
 
 function itemStacks(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
   const oneItemLoc = { x: targetLocation.x + targetLocation.y + 3, y: 2, z: targetLocation.z + 1 };
@@ -733,8 +730,8 @@ function itemStacks(log: (message: string, status?: number) => void, targetLocat
 ##### ***spawnFeatherItem.ts***
 
 ```typescript
-import { ItemStack, DimensionLocation } from "@minecraft/server";
-import { MinecraftItemTypes } from "@minecraft/vanilla-data";
+import { ItemStack, DimensionLocation } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
 
 function spawnFeatherItem(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
   const featherItem = new ItemStack(MinecraftItemTypes.Feather, 1);
@@ -774,20 +771,20 @@ Notes:
 ##### ***spawnParticle.ts***
 
 ```typescript
-import { MolangVariableMap, DimensionLocation } from "@minecraft/server";
+import { MolangVariableMap, DimensionLocation } from '@minecraft/server';
 
 function spawnParticle(targetLocation: DimensionLocation) {
   for (let i = 0; i < 100; i++) {
     const molang = new MolangVariableMap();
 
-    molang.setColorRGB("variable.color", { red: Math.random(), green: Math.random(), blue: Math.random() });
+    molang.setColorRGB('variable.color', { red: Math.random(), green: Math.random(), blue: Math.random() });
 
     const newLocation = {
       x: targetLocation.x + Math.floor(Math.random() * 8) - 4,
       y: targetLocation.y + Math.floor(Math.random() * 8) - 4,
       z: targetLocation.z + Math.floor(Math.random() * 8) - 4,
     };
-    targetLocation.dimension.spawnParticle("minecraft:colored_flame_particle", newLocation, molang);
+    targetLocation.dimension.spawnParticle('minecraft:colored_flame_particle', newLocation, molang);
   }
 }
 ```

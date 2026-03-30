@@ -19,6 +19,7 @@ A class that represents data that can be Observed. Extensively used for UI.
 - [getData](#getdata)
 - [setData](#setdata)
 - [subscribe](#subscribe)
+- [toJSON](#tojson)
 - [unsubscribe](#unsubscribe)
 - [create](#create)
 
@@ -54,6 +55,13 @@ Subscribes a callback to any changes that occur to the Observable. The return va
 - **listener**: (arg0: *T*) => *void*
 
 **Returns** (arg0: *T*) => *void*
+
+### **toJSON**
+`
+toJSON(): unknown
+`
+
+**Returns** *unknown*
 
 ### **unsubscribe**
 `

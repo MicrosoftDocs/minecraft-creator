@@ -28,11 +28,11 @@ Notes:
   - This property has a minimum bound of `0`
 
 ### **texture**
-`texture: WaypointTexture;`
+`texture: CustomTexture | WaypointTexture;`
 
-The [*@minecraft/server.WaypointTexture*](../../../scriptapi/minecraft/server/WaypointTexture.md) to display within this distance range.
+The [*@minecraft/server.WaypointTexture*](../../../scriptapi/minecraft/server/WaypointTexture.md) or [*@minecraft/server.CustomTexture*](../../../scriptapi/minecraft/server/CustomTexture.md) to display within this distance range.
 
-Type: [*WaypointTexture*](WaypointTexture.md)
+Type: [*CustomTexture*](CustomTexture.md) | [*WaypointTexture*](WaypointTexture.md)
 
 ### **upperBound**
 `upperBound?: number;`

@@ -13,6 +13,11 @@ Interface used to specify the options when a clipboard item is being written to 
 
 ## Properties
 
+### **excludeAirBlocks**
+`excludeAirBlocks?: boolean;`
+
+Type: *boolean*
+
 ### **mirror**
 `mirror?: minecraftserver.StructureMirrorAxis;`
 

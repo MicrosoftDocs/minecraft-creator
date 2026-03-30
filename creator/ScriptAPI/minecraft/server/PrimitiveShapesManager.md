@@ -15,6 +15,15 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 Primitive Shapes class used to allow adding and removing text primitives to the world.
 
+## Properties
+
+### **maxShapes**
+`read-only maxShapes: number;`
+
+This is the maximum number of allowed primitive shapes.
+
+Type: *number*
+
 ## Methods
 - [addText](#addtext)
 - [removeAll](#removeall)
@@ -32,6 +41,10 @@ Adds a new text primitive to the world.
   
   The text primitive to be added.
 - **dimension**?: [*Dimension*](Dimension.md) = `null`
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*PrimitiveShapeError*](PrimitiveShapeError.md)
 
 ### **removeAll**
 `

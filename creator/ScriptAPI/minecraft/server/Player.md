@@ -434,7 +434,7 @@ Notes:
 ##### ***playMusicAndSound.ts***
 
 ```typescript
-import { world, MusicOptions, WorldSoundOptions, PlayerSoundOptions, DimensionLocation } from "@minecraft/server";
+import { world, MusicOptions, WorldSoundOptions, PlayerSoundOptions, DimensionLocation } from '@minecraft/server';
 
 function playMusicAndSound(targetLocation: DimensionLocation) {
   const players = world.getPlayers();
@@ -444,20 +444,20 @@ function playMusicAndSound(targetLocation: DimensionLocation) {
     loop: true,
     volume: 1.0,
   };
-  world.playMusic("music.menu", musicOptions);
+  world.playMusic('music.menu', musicOptions);
 
   const worldSoundOptions: WorldSoundOptions = {
     pitch: 0.5,
     volume: 4.0,
   };
-  world.playSound("ambient.weather.thunder", targetLocation, worldSoundOptions);
+  world.playSound('ambient.weather.thunder', targetLocation, worldSoundOptions);
 
   const playerSoundOptions: PlayerSoundOptions = {
     pitch: 1.0,
     volume: 1.0,
   };
 
-  players[0].playSound("bucket.fill_water", playerSoundOptions);
+  players[0].playSound('bucket.fill_water', playerSoundOptions);
 }
 ```
 
@@ -559,13 +559,13 @@ Notes:
 ##### ***nestedTranslation.ts***
 
 ```typescript
-import { world, DimensionLocation } from "@minecraft/server";
+import { world, DimensionLocation } from '@minecraft/server';
 
 function nestedTranslation(targetLocation: DimensionLocation) {
   // Displays "Apple or Coal"
   const rawMessage = {
-    translate: "accessibility.list.or.two",
-    with: { rawtext: [{ translate: "item.apple.name" }, { translate: "item.coal.name" }] },
+    translate: 'accessibility.list.or.two',
+    with: { rawtext: [{ translate: 'item.apple.name' }, { translate: 'item.coal.name' }] },
   };
   world.sendMessage(rawMessage);
 }
@@ -576,11 +576,11 @@ function nestedTranslation(targetLocation: DimensionLocation) {
 ##### ***scoreWildcard.ts***
 
 ```typescript
-import { world, DimensionLocation } from "@minecraft/server";
+import { world, DimensionLocation } from '@minecraft/server';
 
 function scoreWildcard(targetLocation: DimensionLocation) {
   // Displays the player's score for objective "obj". Each player will see their own score.
-  const rawMessage = { score: { name: "*", objective: "obj" } };
+  const rawMessage = { score: { name: '*', objective: 'obj' } };
   world.sendMessage(rawMessage);
 }
 ```
@@ -590,12 +590,12 @@ function scoreWildcard(targetLocation: DimensionLocation) {
 ##### ***sendBasicMessage.ts***
 
 ```typescript
-import { world, DimensionLocation } from "@minecraft/server";
+import { world, DimensionLocation } from '@minecraft/server';
 
 function sendBasicMessage(targetLocation: DimensionLocation) {
   const players = world.getPlayers();
 
-  players[0].sendMessage("Hello World!");
+  players[0].sendMessage('Hello World!');
 }
 ```
 
@@ -604,28 +604,28 @@ function sendBasicMessage(targetLocation: DimensionLocation) {
 ##### ***sendPlayerMessages.ts***
 
 ```typescript
-import { world, DimensionLocation } from "@minecraft/server";
+import { world, DimensionLocation } from '@minecraft/server';
 
 function sendPlayerMessages(targetLocation: DimensionLocation) {
   for (const player of world.getAllPlayers()) {
     // Displays "First or Second"
-    const rawMessage = { translate: "accessibility.list.or.two", with: ["First", "Second"] };
+    const rawMessage = { translate: 'accessibility.list.or.two', with: ['First', 'Second'] };
     player.sendMessage(rawMessage);
 
     // Displays "Hello, world!"
-    player.sendMessage("Hello, world!");
+    player.sendMessage('Hello, world!');
 
     // Displays "Welcome, Amazing Player 1!"
-    player.sendMessage({ translate: "authentication.welcome", with: ["Amazing Player 1"] });
+    player.sendMessage({ translate: 'authentication.welcome', with: ['Amazing Player 1'] });
 
     // Displays the player's score for objective "obj". Each player will see their own score.
-    const rawMessageWithScore = { score: { name: "*", objective: "obj" } };
+    const rawMessageWithScore = { score: { name: '*', objective: 'obj' } };
     player.sendMessage(rawMessageWithScore);
 
     // Displays "Apple or Coal"
     const rawMessageWithNestedTranslations = {
-      translate: "accessibility.list.or.two",
-      with: { rawtext: [{ translate: "item.apple.name" }, { translate: "item.coal.name" }] },
+      translate: 'accessibility.list.or.two',
+      with: { rawtext: [{ translate: 'item.apple.name' }, { translate: 'item.coal.name' }] },
     };
     player.sendMessage(rawMessageWithNestedTranslations);
   }
@@ -637,14 +637,12 @@ function sendPlayerMessages(targetLocation: DimensionLocation) {
 ##### ***sendTranslatedMessage.ts***
 
 ```typescript
-import { world, DimensionLocation } from "@minecraft/server";
+import { world, DimensionLocation } from '@minecraft/server';
 
-function sendTranslatedMessage(
-    targetLocation: DimensionLocation
-) {
+function sendTranslatedMessage(targetLocation: DimensionLocation) {
   const players = world.getPlayers();
 
-  players[0].sendMessage({ translate: "authentication.welcome", with: ["Amazing Player 1"] });
+  players[0].sendMessage({ translate: 'authentication.welcome', with: ['Amazing Player 1'] });
 }
 ```
 
@@ -756,23 +754,23 @@ Notes:
 import { world, MolangVariableMap, Vector3 } from '@minecraft/server';
 
 world.afterEvents.playerSpawn.subscribe(event => {
-    const targetLocation = event.player.location;
-    for (let i = 0; i < 100; i++) {
-        const molang = new MolangVariableMap();
+  const targetLocation = event.player.location;
+  for (let i = 0; i < 100; i++) {
+    const molang = new MolangVariableMap();
 
-        molang.setColorRGB('variable.color', {
-            red: Math.random(),
-            green: Math.random(),
-            blue: Math.random()
-        });
+    molang.setColorRGB('variable.color', {
+      red: Math.random(),
+      green: Math.random(),
+      blue: Math.random(),
+    });
 
-        const newLocation: Vector3 = {
-            x: targetLocation.x + Math.floor(Math.random() * 8) - 4,
-            y: targetLocation.y + Math.floor(Math.random() * 8) - 4,
-            z: targetLocation.z + Math.floor(Math.random() * 8) - 4,
-        };
-        event.player.spawnParticle('minecraft:colored_flame_particle', newLocation, molang);
-    }
+    const newLocation: Vector3 = {
+      x: targetLocation.x + Math.floor(Math.random() * 8) - 4,
+      y: targetLocation.y + Math.floor(Math.random() * 8) - 4,
+      z: targetLocation.z + Math.floor(Math.random() * 8) - 4,
+    };
+    event.player.spawnParticle('minecraft:colored_flame_particle', newLocation, molang);
+  }
 });
 ```
 

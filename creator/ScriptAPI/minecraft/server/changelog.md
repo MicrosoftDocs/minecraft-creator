@@ -102,6 +102,8 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`ChatSendAfterEventSignal`](ChatSendAfterEventSignal.md)*
 #### Added *[`ChatSendBeforeEvent`](ChatSendBeforeEvent.md)*
 #### Added *[`ChatSendBeforeEventSignal`](ChatSendBeforeEventSignal.md)*
+#### Changed *[`ClientSystemInfo`](ClientSystemInfo.md)*
+- Added property *[`locale`](ClientSystemInfo.md#locale)*
 #### Added *[`CompoundBlockVolume`](CompoundBlockVolume.md)*
 #### Changed *[`Dimension`](Dimension.md)*
 - Added function *[`findClosestBiome`](Dimension.md#findclosestbiome)*
@@ -170,6 +172,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
 #### Added *[`Waypoint`](Waypoint.md)*
 #### Changed *[`World`](World.md)*
+- Added property *[`allowCheats`](World.md#allowcheats)*
 - Added property *[`primitiveShapesManager`](World.md#primitiveshapesmanager)*
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
 - Added function *[`getPackSettings`](World.md#getpacksettings)*

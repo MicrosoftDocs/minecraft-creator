@@ -16,6 +16,18 @@ Contains the device information for a client instance.
 
 ## Properties
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **locale**
+`read-only locale: string;`
+
+The locale selected by the client (e.g., en_US, fr_FR, ja_JP). Note that in most cases, server scripts should not use this property to manually localize text. Instead, use [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) with a translate field to send localization keys, allowing each client to resolve them in their own language automatically. Direct use of locale for localization is fragile and may produce unexpected results when players with different languages are on the same server.
+
+Type: *string*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **maxRenderDistance**
 `read-only maxRenderDistance: number;`
 

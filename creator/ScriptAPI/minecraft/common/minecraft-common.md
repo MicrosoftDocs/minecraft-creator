@@ -15,12 +15,13 @@ description: Contents of the @minecraft/common module
 ```json
 {
     "module_name": "@minecraft/common",
-    "version": "1.2.0"
+    "version": "1.3.0"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.20-beta.20 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.20-beta.22 of Minecraft.
 
 ## Available Versions
+- `1.3.0`
 - `1.2.0`
 - `1.1.0`
 - `1.0.0`

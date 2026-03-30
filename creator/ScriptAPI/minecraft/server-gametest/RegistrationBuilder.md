@@ -198,8 +198,8 @@ Notes:
 ##### ***phantomsShouldFlyFromCats.ts***
 
 ```typescript
-import { Test, register } from "@minecraft/server-gametest";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { Test, register } from '@minecraft/server-gametest';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function phantomsShouldFlyFromCats(test: Test) {
   test.spawn(MinecraftEntityTypes.Cat, { x: 4, y: 3, z: 3 });
@@ -208,8 +208,9 @@ function phantomsShouldFlyFromCats(test: Test) {
   test.succeedWhenEntityPresent(MinecraftEntityTypes.Phantom, { x: 4, y: 6, z: 3 }, true);
 }
 
-register("MobBehaviorTests", "phantoms_should_fly_from_cats", phantomsShouldFlyFromCats)
-  .structureName("gametests:glass_cells");
+register('MobBehaviorTests', 'phantoms_should_fly_from_cats', phantomsShouldFlyFromCats).structureName(
+  'gametests:glass_cells'
+);
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/phantomsShouldFlyFromCats.ts) code sandbox.
@@ -235,8 +236,8 @@ Notes:
 ##### ***phantomsShouldFlyFromCats.ts***
 
 ```typescript
-import { Test, register } from "@minecraft/server-gametest";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { Test, register } from '@minecraft/server-gametest';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function phantomsShouldFlyFromCats(test: Test) {
   test.spawn(MinecraftEntityTypes.Cat, { x: 4, y: 3, z: 3 });
@@ -245,8 +246,9 @@ function phantomsShouldFlyFromCats(test: Test) {
   test.succeedWhenEntityPresent(MinecraftEntityTypes.Phantom, { x: 4, y: 6, z: 3 }, true);
 }
 
-register("MobBehaviorTests", "phantoms_should_fly_from_cats", phantomsShouldFlyFromCats)
-  .structureName("gametests:glass_cells");
+register('MobBehaviorTests', 'phantoms_should_fly_from_cats', phantomsShouldFlyFromCats).structureName(
+  'gametests:glass_cells'
+);
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/phantomsShouldFlyFromCats.ts) code sandbox.

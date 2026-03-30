@@ -210,7 +210,7 @@ Notes:
 ##### ***getFirstHotbarItem.ts***
 
 ```typescript
-import { world, EntityInventoryComponent, DimensionLocation } from "@minecraft/server";
+import { world, EntityInventoryComponent, DimensionLocation } from '@minecraft/server';
 
 function getFirstHotbarItem(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
   for (const player of world.getAllPlayers()) {
@@ -219,7 +219,7 @@ function getFirstHotbarItem(log: (message: string, status?: number) => void, tar
       const firstItem = inventory.container.getItem(0);
 
       if (firstItem) {
-        log("First item in hotbar is: " + firstItem.typeId);
+        log('First item in hotbar is: ' + firstItem.typeId);
       }
 
       return inventory.container.getItem(0);
@@ -280,12 +280,10 @@ Notes:
 ##### ***moveBetweenContainers.ts***
 
 ```typescript
-import { world, EntityInventoryComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { world, EntityInventoryComponent, EntityComponentTypes, DimensionLocation } from '@minecraft/server';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
-function moveBetweenContainers(
-    targetLocation: DimensionLocation
-) {
+function moveBetweenContainers(targetLocation: DimensionLocation) {
   const players = world.getAllPlayers();
 
   const chestCart = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.ChestMinecart, {
@@ -383,12 +381,10 @@ Notes:
 ##### ***transferBetweenContainers.ts***
 
 ```typescript
-import { world, EntityInventoryComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { world, EntityInventoryComponent, EntityComponentTypes, DimensionLocation } from '@minecraft/server';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
-function transferBetweenContainers(
-    targetLocation: DimensionLocation
-) {
+function transferBetweenContainers(targetLocation: DimensionLocation) {
   const players = world.getAllPlayers();
 
   const chestCart = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.ChestMinecart, {
@@ -417,8 +413,8 @@ function transferBetweenContainers(
 ##### ***containers.ts***
 
 ```typescript
-import { ItemStack, EntityInventoryComponent, BlockInventoryComponent, DimensionLocation } from "@minecraft/server";
-import { MinecraftBlockTypes, MinecraftItemTypes, MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { ItemStack, EntityInventoryComponent, BlockInventoryComponent, DimensionLocation } from '@minecraft/server';
+import { MinecraftBlockTypes, MinecraftItemTypes, MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function containers(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
   const xLocation = targetLocation; // left chest location
@@ -434,42 +430,42 @@ function containers(log: (message: string, status?: number) => void, targetLocat
   const xPlusTwoChestBlock = targetLocation.dimension.getBlock(xPlusTwoLocation);
 
   if (!xChestBlock || !xPlusTwoChestBlock) {
-    log("Could not retrieve chest blocks.");
+    log('Could not retrieve chest blocks.');
     return;
   }
 
   xChestBlock.setType(MinecraftBlockTypes.Chest);
   xPlusTwoChestBlock.setType(MinecraftBlockTypes.Chest);
 
-  const xPlusTwoChestInventoryComp = xPlusTwoChestBlock.getComponent("inventory") as BlockInventoryComponent;
-  const xChestInventoryComponent = xChestBlock.getComponent("inventory") as BlockInventoryComponent;
-  const chestCartInventoryComp = chestCart.getComponent("inventory") as EntityInventoryComponent;
+  const xPlusTwoChestInventoryComp = xPlusTwoChestBlock.getComponent('inventory') as BlockInventoryComponent;
+  const xChestInventoryComponent = xChestBlock.getComponent('inventory') as BlockInventoryComponent;
+  const chestCartInventoryComp = chestCart.getComponent('inventory') as EntityInventoryComponent;
 
   const xPlusTwoChestContainer = xPlusTwoChestInventoryComp.container;
   const xChestContainer = xChestInventoryComponent.container;
   const chestCartContainer = chestCartInventoryComp.container;
 
   if (!xPlusTwoChestContainer || !xChestContainer || !chestCartContainer) {
-    log("Could not retrieve chest containers.");
+    log('Could not retrieve chest containers.');
     return;
   }
 
   xPlusTwoChestContainer.setItem(0, new ItemStack(MinecraftItemTypes.Apple, 10));
   if (xPlusTwoChestContainer.getItem(0)?.typeId !== MinecraftItemTypes.Apple) {
-    log("Expected apple in x+2 container slot index 0", -1);
+    log('Expected apple in x+2 container slot index 0', -1);
   }
 
   xPlusTwoChestContainer.setItem(1, new ItemStack(MinecraftItemTypes.Emerald, 10));
   if (xPlusTwoChestContainer.getItem(1)?.typeId !== MinecraftItemTypes.Emerald) {
-    log("Expected emerald in x+2 container slot index 1", -1);
+    log('Expected emerald in x+2 container slot index 1', -1);
   }
 
   if (xPlusTwoChestContainer.size !== 27) {
-    log("Unexpected size: " + xPlusTwoChestContainer.size, -1);
+    log('Unexpected size: ' + xPlusTwoChestContainer.size, -1);
   }
 
   if (xPlusTwoChestContainer.emptySlotsCount !== 25) {
-    log("Unexpected emptySlotsCount: " + xPlusTwoChestContainer.emptySlotsCount, -1);
+    log('Unexpected emptySlotsCount: ' + xPlusTwoChestContainer.emptySlotsCount, -1);
   }
 
   xChestContainer.setItem(0, new ItemStack(MinecraftItemTypes.Cake, 10));
@@ -478,15 +474,15 @@ function containers(log: (message: string, status?: number) => void, targetLocat
   xPlusTwoChestContainer.swapItems(1, 0, xChestContainer); // swap the cake from x and the emerald from xPlusTwo
 
   if (chestCartContainer.getItem(0)?.typeId !== MinecraftItemTypes.Apple) {
-    log("Expected apple in minecraft chest container slot index 0", -1);
+    log('Expected apple in minecraft chest container slot index 0', -1);
   }
 
   if (xChestContainer.getItem(0)?.typeId === MinecraftItemTypes.Emerald) {
-    log("Expected emerald in x container slot index 0", -1);
+    log('Expected emerald in x container slot index 0', -1);
   }
 
   if (xPlusTwoChestContainer.getItem(1)?.typeId === MinecraftItemTypes.Cake) {
-    log("Expected cake in x+2 container slot index 1", -1);
+    log('Expected cake in x+2 container slot index 1', -1);
   }
 }
 ```

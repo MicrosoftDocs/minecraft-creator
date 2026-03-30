@@ -236,13 +236,11 @@ Notes:
 ##### ***spawnPoisonedVillager.ts***
 
 ```typescript
-import { DimensionLocation } from "@minecraft/server";
-import { MinecraftEffectTypes } from "@minecraft/vanilla-data";
+import { DimensionLocation } from '@minecraft/server';
+import { MinecraftEffectTypes } from '@minecraft/vanilla-data';
 
-function spawnPoisonedVillager(
-    targetLocation: DimensionLocation
-) {
-  const villagerType = "minecraft:villager_v2<minecraft:ageable_grow_up>";
+function spawnPoisonedVillager(targetLocation: DimensionLocation) {
+  const villagerType = 'minecraft:villager_v2<minecraft:ageable_grow_up>';
   const villager = targetLocation.dimension.spawnEntity(villagerType, targetLocation);
   const duration = 20;
 
@@ -255,8 +253,8 @@ function spawnPoisonedVillager(
 ##### ***quickFoxLazyDog.ts***
 
 ```typescript
-import { DimensionLocation } from "@minecraft/server";
-import { MinecraftEntityTypes, MinecraftEffectTypes } from "@minecraft/vanilla-data";
+import { DimensionLocation } from '@minecraft/server';
+import { MinecraftEntityTypes, MinecraftEffectTypes } from '@minecraft/vanilla-data';
 
 function quickFoxLazyDog(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
   const fox = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Fox, {
@@ -268,7 +266,7 @@ function quickFoxLazyDog(log: (message: string, status?: number) => void, target
   fox.addEffect(MinecraftEffectTypes.Speed, 10, {
     amplifier: 2,
   });
-  log("Created a fox.");
+  log('Created a fox.');
 
   const wolf = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Wolf, {
     x: targetLocation.x + 4,
@@ -279,7 +277,7 @@ function quickFoxLazyDog(log: (message: string, status?: number) => void, target
     amplifier: 2,
   });
   wolf.isSneaking = true;
-  log("Created a sneaking wolf.", 1);
+  log('Created a sneaking wolf.', 1);
 }
 ```
 
@@ -309,20 +307,20 @@ Notes:
 ##### ***tagsQuery.ts***
 
 ```typescript
-import { EntityQueryOptions, DimensionLocation } from "@minecraft/server";
+import { EntityQueryOptions, DimensionLocation } from '@minecraft/server';
 
 function tagsQuery(targetLocation: DimensionLocation) {
-  const mobs = ["creeper", "skeleton", "sheep"];
+  const mobs = ['creeper', 'skeleton', 'sheep'];
 
   // create some sample mob data
   for (let i = 0; i < 10; i++) {
     const mobTypeId = mobs[i % mobs.length];
     const entity = targetLocation.dimension.spawnEntity(mobTypeId, targetLocation);
-    entity.addTag("mobparty." + mobTypeId);
+    entity.addTag('mobparty.' + mobTypeId);
   }
 
   const eqo: EntityQueryOptions = {
-    tags: ["mobparty.skeleton"],
+    tags: ['mobparty.skeleton'],
   };
 
   for (const entity of targetLocation.dimension.getEntities(eqo)) {
@@ -360,22 +358,19 @@ Notes:
 ##### ***applyDamageThenHeal.ts***
 
 ```typescript
-import { system, EntityHealthComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { system, EntityHealthComponent, EntityComponentTypes, DimensionLocation } from '@minecraft/server';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
-function applyDamageThenHeal(
-  log: (message: string, status?: number) => void,
-  targetLocation: DimensionLocation
-) {
+function applyDamageThenHeal(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
   const skelly = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Skeleton, targetLocation);
 
   skelly.applyDamage(19); // skeletons have max damage of 20 so this is a near-death skeleton
 
   system.runTimeout(() => {
     const health = skelly.getComponent(EntityComponentTypes.Health) as EntityHealthComponent;
-    log("Skeleton health before heal: " + health?.currentValue);
+    log('Skeleton health before heal: ' + health?.currentValue);
     health?.resetToMaxValue();
-    log("Skeleton health after heal: " + health?.currentValue);
+    log('Skeleton health after heal: ' + health?.currentValue);
   }, 20);
 }
 ```
@@ -404,8 +399,8 @@ Notes:
 ##### ***applyImpulse.ts***
 
 ```typescript
-import { DimensionLocation } from "@minecraft/server";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { DimensionLocation } from '@minecraft/server';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function applyImpulse(targetLocation: DimensionLocation) {
   const zombie = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Zombie, targetLocation);
@@ -450,10 +445,10 @@ Notes:
 ##### ***bounceSkeletons.ts***
 
 ```typescript
-import { EntityQueryOptions, DimensionLocation } from "@minecraft/server";
+import { EntityQueryOptions, DimensionLocation } from '@minecraft/server';
 
 function bounceSkeletons(targetLocation: DimensionLocation) {
-  const mobs = ["creeper", "skeleton", "sheep"];
+  const mobs = ['creeper', 'skeleton', 'sheep'];
 
   // create some sample mob data
   for (let i = 0; i < 10; i++) {
@@ -461,7 +456,7 @@ function bounceSkeletons(targetLocation: DimensionLocation) {
   }
 
   const eqo: EntityQueryOptions = {
-    type: "skeleton",
+    type: 'skeleton',
   };
 
   for (const entity of targetLocation.dimension.getEntities(eqo)) {
@@ -500,8 +495,8 @@ Notes:
 ##### ***applyImpulse.ts***
 
 ```typescript
-import { DimensionLocation } from "@minecraft/server";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { DimensionLocation } from '@minecraft/server';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function applyImpulse(targetLocation: DimensionLocation) {
   const zombie = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Zombie, targetLocation);
@@ -539,8 +534,8 @@ Notes:
 ##### ***setOnFire.ts***
 
 ```typescript
-import { system, EntityOnFireComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { system, EntityOnFireComponent, EntityComponentTypes, DimensionLocation } from '@minecraft/server';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function setOnFire(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
   const skelly = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Skeleton, targetLocation);
@@ -549,10 +544,10 @@ function setOnFire(log: (message: string, status?: number) => void, targetLocati
 
   system.runTimeout(() => {
     const onfire = skelly.getComponent(EntityComponentTypes.OnFire) as EntityOnFireComponent;
-    log(onfire?.onFireTicksRemaining + " fire ticks remaining.");
+    log(onfire?.onFireTicksRemaining + ' fire ticks remaining.');
 
     skelly.extinguishFire(true);
-    log("Never mind. Fire extinguished.");
+    log('Never mind. Fire extinguished.');
   }, 20);
 }
 ```
@@ -768,19 +763,16 @@ Notes:
 ##### ***getFireworkVelocity.ts***
 
 ```typescript
-import { system, DimensionLocation } from "@minecraft/server";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { system, DimensionLocation } from '@minecraft/server';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
-function getFireworkVelocity(
-  log: (message: string, status?: number) => void,
-  targetLocation: DimensionLocation
-) {
+function getFireworkVelocity(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
   const fireworkRocket = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.FireworksRocket, targetLocation);
 
   system.runTimeout(() => {
     const velocity = fireworkRocket.getVelocity();
 
-    log("Velocity of firework is: (x: " + velocity.x + ", y:" + velocity.y + ", z:" + velocity.z + ")");
+    log('Velocity of firework is: (x: ' + velocity.x + ', y:' + velocity.y + ', z:' + velocity.z + ')');
   }, 5);
 }
 ```
@@ -863,20 +855,20 @@ Notes:
 ##### ***tagsQuery.ts***
 
 ```typescript
-import { EntityQueryOptions, DimensionLocation } from "@minecraft/server";
+import { EntityQueryOptions, DimensionLocation } from '@minecraft/server';
 
 function tagsQuery(targetLocation: DimensionLocation) {
-  const mobs = ["creeper", "skeleton", "sheep"];
+  const mobs = ['creeper', 'skeleton', 'sheep'];
 
   // create some sample mob data
   for (let i = 0; i < 10; i++) {
     const mobTypeId = mobs[i % mobs.length];
     const entity = targetLocation.dimension.spawnEntity(mobTypeId, targetLocation);
-    entity.addTag("mobparty." + mobTypeId);
+    entity.addTag('mobparty.' + mobTypeId);
   }
 
   const eqo: EntityQueryOptions = {
-    tags: ["mobparty.skeleton"],
+    tags: ['mobparty.skeleton'],
   };
 
   for (const entity of targetLocation.dimension.getEntities(eqo)) {
@@ -1076,8 +1068,8 @@ Notes:
 ##### ***setOnFire.ts***
 
 ```typescript
-import { system, EntityOnFireComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { system, EntityOnFireComponent, EntityComponentTypes, DimensionLocation } from '@minecraft/server';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function setOnFire(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
   const skelly = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Skeleton, targetLocation);
@@ -1086,10 +1078,10 @@ function setOnFire(log: (message: string, status?: number) => void, targetLocati
 
   system.runTimeout(() => {
     const onfire = skelly.getComponent(EntityComponentTypes.OnFire) as EntityOnFireComponent;
-    log(onfire?.onFireTicksRemaining + " fire ticks remaining.");
+    log(onfire?.onFireTicksRemaining + ' fire ticks remaining.');
 
     skelly.extinguishFire(true);
-    log("Never mind. Fire extinguished.");
+    log('Never mind. Fire extinguished.');
   }, 20);
 }
 ```
@@ -1158,8 +1150,8 @@ Notes:
 ##### ***teleport.ts***
 
 ```typescript
-import { system, DimensionLocation } from "@minecraft/server";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { system, DimensionLocation } from '@minecraft/server';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function teleport(targetLocation: DimensionLocation) {
   const cow = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Cow, targetLocation);
@@ -1180,8 +1172,8 @@ function teleport(targetLocation: DimensionLocation) {
 ##### ***teleportMovement.ts***
 
 ```typescript
-import { system, DimensionLocation } from "@minecraft/server";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { system, DimensionLocation } from '@minecraft/server';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function teleportMovement(targetLocation: DimensionLocation) {
   const pig = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Pig, targetLocation);
@@ -1232,9 +1224,9 @@ import { DimensionLocation } from '@minecraft/server';
 import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function spawnExplodingCreeper(location: DimensionLocation) {
-    const creeper = location.dimension.spawnEntity(MinecraftEntityTypes.Creeper, location);
+  const creeper = location.dimension.spawnEntity(MinecraftEntityTypes.Creeper, location);
 
-    creeper.triggerEvent('minecraft:start_exploding_forced');
+  creeper.triggerEvent('minecraft:start_exploding_forced');
 }
 ```
 
@@ -1243,13 +1235,13 @@ function spawnExplodingCreeper(location: DimensionLocation) {
 ##### ***triggerEvent.ts***
 
 ```typescript
-import { DimensionLocation } from "@minecraft/server";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { DimensionLocation } from '@minecraft/server';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function triggerEvent(targetLocation: DimensionLocation) {
   const creeper = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Creeper, targetLocation);
 
-  creeper.triggerEvent("minecraft:start_exploding_forced");
+  creeper.triggerEvent('minecraft:start_exploding_forced');
 }
 ```
 

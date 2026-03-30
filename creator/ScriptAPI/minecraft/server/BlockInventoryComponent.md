@@ -38,15 +38,15 @@ Type: *string*
 ##### ***placeItemsInChest.ts***
 
 ```typescript
-import { ItemStack, BlockInventoryComponent, DimensionLocation } from "@minecraft/server";
-import { MinecraftBlockTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
+import { ItemStack, BlockInventoryComponent, DimensionLocation } from '@minecraft/server';
+import { MinecraftBlockTypes, MinecraftItemTypes } from '@minecraft/vanilla-data';
 
 function placeItemsInChest(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
   // Fetch block
   const block = targetLocation.dimension.getBlock(targetLocation);
 
   if (!block) {
-    log("Could not find block. Maybe it is not loaded?", -1);
+    log('Could not find block. Maybe it is not loaded?', -1);
     return;
   }
 
@@ -54,10 +54,10 @@ function placeItemsInChest(log: (message: string, status?: number) => void, targ
   block.setType(MinecraftBlockTypes.Chest);
 
   // Get the inventory
-  const inventoryComponent = block.getComponent("inventory") as BlockInventoryComponent;
+  const inventoryComponent = block.getComponent('inventory') as BlockInventoryComponent;
 
   if (!inventoryComponent || !inventoryComponent.container) {
-    log("Could not find inventory component.", -1);
+    log('Could not find inventory component.', -1);
     return;
   }
 

@@ -16,6 +16,13 @@ A debug shape class that represents a text label in the world with a background.
 
 ## Properties
 
+### **backfaceVisible**
+`backfaceVisible: boolean;`
+
+If set to true, the debug text will render the back-face of the background. Defaults to true but will always be false if 'useRotation' is set to false.
+
+Type: *boolean*
+
 ### **backgroundColorOverride**
 `backgroundColorOverride?: minecraftserver.RGBA;`
 
@@ -36,6 +43,13 @@ Type: *boolean*
 Get the text of the debug text shape. Returns the RawText of the debug text if `setText` was called with a RawMessage or a RawText object, otherwise returns a string.
 
 Type: [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) | *string*
+
+### **textBackfaceVisible**
+`textBackfaceVisible: boolean;`
+
+If set to true, the debug text will render the back-face of the text. Defaults to true but will always be false if 'useRotation' is set to false.
+
+Type: *boolean*
 
 ### **useRotation**
 `useRotation: boolean;`

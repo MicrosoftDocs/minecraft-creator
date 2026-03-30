@@ -24,7 +24,7 @@ Contains types related to administering a Bedrock Dedicated Server. These types 
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.20-beta.20 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.20-beta.22 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`
@@ -48,11 +48,30 @@ This is version 1.x.x of this module, which is the latest as of version 1.26.20-
 ## Errors
 - [AllowListFileReloadError](AllowListFileReloadError.md)
 - [AllowListModificationError](AllowListModificationError.md)
+- [CannotDeopPlayerError](CannotDeopPlayerError.md)
 - [CannotKickPlayerError](CannotKickPlayerError.md)
 - [DisconnectedError](DisconnectedError.md)
 - [LevelStorageSaveStateChangeError](LevelStorageSaveStateChangeError.md)
+- [PlayerAlreadyOpError](PlayerAlreadyOpError.md)
 
 ## Functions
+
+### **deopPlayer**
+`
+deopPlayer(player: minecraftserver.Player): void
+`
+
+Removes the player's op permissions.
+
+#### **Parameters**
+- **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
+  
+  Player to remove permissions from.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*CannotDeopPlayerError*](CannotDeopPlayerError.md), [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
 ### **kickPlayer**
 `
@@ -73,6 +92,23 @@ Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*CannotKickPlayerError*](CannotKickPlayerError.md), [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
+
+### **opPlayer**
+`
+opPlayer(player: minecraftserver.Player): void
+`
+
+Gives the player op permissions.
+
+#### **Parameters**
+- **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
+  
+  Player to add permissions to.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*PlayerAlreadyOpError*](PlayerAlreadyOpError.md)
 
 ### **transferPlayer**
 `

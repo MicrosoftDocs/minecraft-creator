@@ -10,10 +10,15 @@ description: Changelog of the `@minecraft/common` module
 # `@minecraft/common` Changelog
 
 ## Version Changes
+- [1.3.0](#130)
 - [1.2.0](#120)
 - [1.1.0](#110)
 - [1.0.0](#100)
 
+## 1.3.0
+#### Changed enum [`InvalidArgumentErrorType`](InvalidArgumentErrorType.md)
+- Added value `InvalidType`
+- Added value `UnsupportedValue`
 ## 1.2.0
 #### Added enum [`InvalidArgumentErrorType`](InvalidArgumentErrorType.md)
 ## 1.1.0

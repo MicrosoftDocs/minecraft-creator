@@ -148,13 +148,13 @@ Notes:
 ##### ***setTitle.ts***
 
 ```typescript
-import { world, DimensionLocation } from "@minecraft/server";
+import { world, DimensionLocation } from '@minecraft/server';
 
 function setTitle(targetLocation: DimensionLocation) {
   const players = world.getPlayers();
 
   if (players.length > 0) {
-    players[0].onScreenDisplay.setTitle("§o§6Fancy Title§r");
+    players[0].onScreenDisplay.setTitle('§o§6Fancy Title§r');
   }
 }
 ```
@@ -164,18 +164,16 @@ function setTitle(targetLocation: DimensionLocation) {
 ##### ***setTitleAndSubtitle.ts***
 
 ```typescript
-import { world, DimensionLocation } from "@minecraft/server";
+import { world, DimensionLocation } from '@minecraft/server';
 
-function setTitleAndSubtitle(
-    targetLocation: DimensionLocation
-) {
+function setTitleAndSubtitle(targetLocation: DimensionLocation) {
   const players = world.getPlayers();
 
-  players[0].onScreenDisplay.setTitle("Chapter 1", {
+  players[0].onScreenDisplay.setTitle('Chapter 1', {
     stayDuration: 100,
     fadeInDuration: 2,
     fadeOutDuration: 4,
-    subtitle: "Trouble in Block Town",
+    subtitle: 'Trouble in Block Town',
   });
 }
 ```
@@ -185,16 +183,16 @@ function setTitleAndSubtitle(
 ##### ***countdown.ts***
 
 ```typescript
-import { world, system, DimensionLocation } from "@minecraft/server";
+import { world, system, DimensionLocation } from '@minecraft/server';
 
 function countdown(targetLocation: DimensionLocation) {
   const players = world.getPlayers();
 
-  players[0].onScreenDisplay.setTitle("Get ready!", {
+  players[0].onScreenDisplay.setTitle('Get ready!', {
     stayDuration: 220,
     fadeInDuration: 2,
     fadeOutDuration: 4,
-    subtitle: "10",
+    subtitle: '10',
   });
 
   let countdown = 10;
@@ -232,16 +230,16 @@ Notes:
 ##### ***countdown.ts***
 
 ```typescript
-import { world, system, DimensionLocation } from "@minecraft/server";
+import { world, system, DimensionLocation } from '@minecraft/server';
 
 function countdown(targetLocation: DimensionLocation) {
   const players = world.getPlayers();
 
-  players[0].onScreenDisplay.setTitle("Get ready!", {
+  players[0].onScreenDisplay.setTitle('Get ready!', {
     stayDuration: 220,
     fadeInDuration: 2,
     fadeOutDuration: 4,
-    subtitle: "10",
+    subtitle: '10',
   });
 
   let countdown = 10;
@@ -264,13 +262,13 @@ function countdown(targetLocation: DimensionLocation) {
 ##### ***setTitle.ts***
 
 ```typescript
-import { world, DimensionLocation } from "@minecraft/server";
+import { world, DimensionLocation } from '@minecraft/server';
 
 function setTitle(targetLocation: DimensionLocation) {
   const players = world.getPlayers();
 
   if (players.length > 0) {
-    players[0].onScreenDisplay.setTitle("§o§6Fancy Title§r");
+    players[0].onScreenDisplay.setTitle('§o§6Fancy Title§r');
   }
 }
 ```
@@ -280,18 +278,16 @@ function setTitle(targetLocation: DimensionLocation) {
 ##### ***setTitleAndSubtitle.ts***
 
 ```typescript
-import { world, DimensionLocation } from "@minecraft/server";
+import { world, DimensionLocation } from '@minecraft/server';
 
-function setTitleAndSubtitle(
-    targetLocation: DimensionLocation
-) {
+function setTitleAndSubtitle(targetLocation: DimensionLocation) {
   const players = world.getPlayers();
 
-  players[0].onScreenDisplay.setTitle("Chapter 1", {
+  players[0].onScreenDisplay.setTitle('Chapter 1', {
     stayDuration: 100,
     fadeInDuration: 2,
     fadeOutDuration: 4,
-    subtitle: "Trouble in Block Town",
+    subtitle: 'Trouble in Block Town',
   });
 }
 ```
@@ -301,16 +297,16 @@ function setTitleAndSubtitle(
 ##### ***countdown.ts***
 
 ```typescript
-import { world, system, DimensionLocation } from "@minecraft/server";
+import { world, system, DimensionLocation } from '@minecraft/server';
 
 function countdown(targetLocation: DimensionLocation) {
   const players = world.getPlayers();
 
-  players[0].onScreenDisplay.setTitle("Get ready!", {
+  players[0].onScreenDisplay.setTitle('Get ready!', {
     stayDuration: 220,
     fadeInDuration: 2,
     fadeOutDuration: 4,
-    subtitle: "10",
+    subtitle: '10',
   });
 
   let countdown = 10;

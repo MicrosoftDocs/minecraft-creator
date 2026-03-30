@@ -141,7 +141,7 @@ Checks to see if the permutation has a specific tag.
 ##### ***checkBlockTags.ts***
 
 ```typescript
-import { DimensionLocation } from "@minecraft/server";
+import { DimensionLocation } from '@minecraft/server';
 
 function checkBlockTags(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
   // Fetch the block
@@ -149,9 +149,9 @@ function checkBlockTags(log: (message: string, status?: number) => void, targetL
 
   // check that the block is loaded
   if (block) {
-    log(`Block is dirt: ${block.hasTag("dirt")}`);
-    log(`Block is wood: ${block.hasTag("wood")}`);
-    log(`Block is stone: ${block.hasTag("stone")}`);
+    log(`Block is dirt: ${block.hasTag('dirt')}`);
+    log(`Block is wood: ${block.hasTag('wood')}`);
+    log(`Block is stone: ${block.hasTag('stone')}`);
   }
 }
 ```
@@ -250,9 +250,9 @@ Notes:
 ##### ***addBlockColorCube.ts***
 
 ```typescript
-import { BlockPermutation, DimensionLocation } from "@minecraft/server";
-import { Vector3Utils } from "@minecraft/math";
-import { MinecraftBlockTypes } from "@minecraft/vanilla-data";
+import { BlockPermutation, DimensionLocation } from '@minecraft/server';
+import { Vector3Utils } from '@minecraft/math';
+import { MinecraftBlockTypes } from '@minecraft/vanilla-data';
 
 function addBlockColorCube(targetLocation: DimensionLocation) {
   const allWoolBlocks: string[] = [
@@ -298,8 +298,8 @@ function addBlockColorCube(targetLocation: DimensionLocation) {
 ##### ***addTranslatedSign.ts***
 
 ```typescript
-import { world, BlockPermutation, BlockSignComponent, BlockComponentTypes, DimensionLocation } from "@minecraft/server";
-import { MinecraftBlockTypes } from "@minecraft/vanilla-data";
+import { world, BlockPermutation, BlockSignComponent, BlockComponentTypes, DimensionLocation } from '@minecraft/server';
+import { MinecraftBlockTypes } from '@minecraft/vanilla-data';
 
 function addTranslatedSign(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
   const players = world.getPlayers();
@@ -309,7 +309,7 @@ function addTranslatedSign(log: (message: string, status?: number) => void, targ
   const signBlock = dim.getBlock(targetLocation);
 
   if (!signBlock) {
-    log("Could not find a block at specified location.");
+    log('Could not find a block at specified location.');
     return -1;
   }
   const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, { ground_sign_direction: 8 });
@@ -318,7 +318,7 @@ function addTranslatedSign(log: (message: string, status?: number) => void, targ
 
   const signComponent = signBlock.getComponent(BlockComponentTypes.Sign) as BlockSignComponent;
 
-  signComponent?.setText({ translate: "item.skull.player.name", with: [players[0].name] });
+  signComponent?.setText({ translate: 'item.skull.player.name', with: [players[0].name] });
 }
 ```
 

@@ -123,16 +123,16 @@ Notes:
 ##### ***trapTick.ts***
 
 ```typescript
-import { world, system } from "@minecraft/server";
+import { world, system } from '@minecraft/server';
 
 function trapTick() {
   try {
     // Minecraft runs at 20 ticks per second.
     if (system.currentTick % 1200 === 0) {
-      world.sendMessage("Another minute passes...");
+      world.sendMessage('Another minute passes...');
     }
   } catch (e) {
-    console.warn("Error: " + e);
+    console.warn('Error: ' + e);
   }
 
   system.run(trapTick);
@@ -166,13 +166,13 @@ Notes:
 ##### ***every30Seconds.ts***
 
 ```typescript
-import { world, system, DimensionLocation } from "@minecraft/server";
+import { world, system, DimensionLocation } from '@minecraft/server';
 
 function every30Seconds(targetLocation: DimensionLocation) {
   const intervalRunIdentifier = Math.floor(Math.random() * 10000);
 
   system.runInterval(() => {
-    world.sendMessage("This is an interval run " + intervalRunIdentifier + " sending a message every 30 seconds.");
+    world.sendMessage('This is an interval run ' + intervalRunIdentifier + ' sending a message every 30 seconds.');
   }, 600);
 }
 ```
@@ -201,10 +201,10 @@ Notes:
 ##### ***cubeGenerator.ts***
 
 ```typescript
-import { system, BlockPermutation, DimensionLocation } from "@minecraft/server";
+import { system, BlockPermutation, DimensionLocation } from '@minecraft/server';
 
 function cubeGenerator(targetLocation: DimensionLocation) {
-  const blockPerm = BlockPermutation.resolve("minecraft:cobblestone");
+  const blockPerm = BlockPermutation.resolve('minecraft:cobblestone');
 
   system.runJob(blockPlacingGenerator(blockPerm, targetLocation, 15));
 }

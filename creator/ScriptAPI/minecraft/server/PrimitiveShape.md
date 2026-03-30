@@ -55,6 +55,16 @@ The location of the shape.
 
 Type: [*Vector3*](Vector3.md)
 
+### **maximumRenderDistance**
+`maximumRenderDistance?: number;`
+
+If defined, this distance will be used to determine how far away this primitive will be rendered for each client. By default the distance will match the client's render distance setting.
+
+Type: *number*
+
+Notes:
+  - This property has a minimum bound of `0`
+
 ### **rotation**
 `rotation: Vector3;`
 
@@ -68,6 +78,9 @@ Type: [*Vector3*](Vector3.md)
 The scale of the shape.
 
 Type: *number*
+
+Notes:
+  - This property has a bounds of [`-1000`, `1000`]
 
 ### **timeLeft**
 `timeLeft?: number;`
