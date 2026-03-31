@@ -35,13 +35,10 @@ Notes:
 ##### ***logEntitySpawnEvent.ts***
 
 ```typescript
-import { world, system, EntitySpawnAfterEvent, DimensionLocation } from "@minecraft/server";
-import { Vector3Utils } from "@minecraft/math";
+import { world, system, EntitySpawnAfterEvent, DimensionLocation } from '@minecraft/server';
+import { Vector3Utils } from '@minecraft/math';
 
-function logEntitySpawnEvent(
-  log: (message: string, status?: number) => void,
-  targetLocation: DimensionLocation
-) {
+function logEntitySpawnEvent(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
   // register a new function that is called when a new entity is created.
   world.afterEvents.entitySpawn.subscribe((entityEvent: EntitySpawnAfterEvent) => {
     if (entityEvent && entityEvent.entity) {
@@ -53,7 +50,7 @@ function logEntitySpawnEvent(
 
   system.runTimeout(() => {
     targetLocation.dimension.spawnEntity(
-      "minecraft:horse<minecraft:ageable_grow_up>",
+      'minecraft:horse<minecraft:ageable_grow_up>',
       Vector3Utils.add(targetLocation, { x: 0, y: 1, z: 0 })
     );
   }, 20);

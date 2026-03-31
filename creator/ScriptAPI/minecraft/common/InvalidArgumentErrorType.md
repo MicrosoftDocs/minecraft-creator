@@ -20,6 +20,10 @@ The argument has a duplicate in this domain.
 `Empty = "Empty"`
 
 The argument is empty.
+### **InvalidType**
+`InvalidType = "InvalidType"`
+
+The argument is not the correct type.
 ### **Unknown**
 `Unknown = "Unknown"`
 
@@ -28,3 +32,7 @@ The argument is unknown in this domain.
 `Unspecified = "Unspecified"`
 
 No specified error type.
+### **UnsupportedValue**
+`UnsupportedValue = "UnsupportedValue"`
+
+The argument is unsupported for this type.

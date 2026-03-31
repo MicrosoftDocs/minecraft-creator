@@ -338,12 +338,16 @@ Represents the unique type of network packet.
 `ServerboundPackSettingChangePacket = "ServerboundPackSettingChangePacket"`
 ### **ServerPlayerPostMovePositionPacket**
 `ServerPlayerPostMovePositionPacket = "ServerPlayerPostMovePositionPacket"`
+### **ServerPresenceInfoPacket**
+`ServerPresenceInfoPacket = "ServerPresenceInfoPacket"`
 ### **ServerSettingsRequestPacket**
 `ServerSettingsRequestPacket = "ServerSettingsRequestPacket"`
 ### **ServerSettingsResponsePacket**
 `ServerSettingsResponsePacket = "ServerSettingsResponsePacket"`
 ### **ServerStatsPacket**
 `ServerStatsPacket = "ServerStatsPacket"`
+### **ServerStoreInfoPacket**
+`ServerStoreInfoPacket = "ServerStoreInfoPacket"`
 ### **ServerToClientHandshakePacket**
 `ServerToClientHandshakePacket = "ServerToClientHandshakePacket"`
 ### **SetActorDataPacket**

@@ -87,12 +87,18 @@ Type: *string*
 ##### ***giveHurtDiamondSword.ts***
 
 ```typescript
-import { world, ItemStack, EntityInventoryComponent, EntityComponentTypes, ItemComponentTypes, ItemDurabilityComponent, DimensionLocation } from "@minecraft/server";
-import { MinecraftItemTypes } from "@minecraft/vanilla-data";
+import {
+  world,
+  ItemStack,
+  EntityInventoryComponent,
+  EntityComponentTypes,
+  ItemComponentTypes,
+  ItemDurabilityComponent,
+  DimensionLocation,
+} from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
 
-function giveHurtDiamondSword(
-    targetLocation: DimensionLocation
-) {
+function giveHurtDiamondSword(targetLocation: DimensionLocation) {
   const hurtDiamondSword = new ItemStack(MinecraftItemTypes.DiamondSword);
 
   const durabilityComponent = hurtDiamondSword.getComponent(ItemComponentTypes.Durability) as ItemDurabilityComponent;

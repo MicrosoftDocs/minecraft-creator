@@ -56,8 +56,8 @@ Type: [*Vector2*](Vector2.md)
 ##### ***teleport.ts***
 
 ```typescript
-import { system, DimensionLocation } from "@minecraft/server";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { system, DimensionLocation } from '@minecraft/server';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function teleport(targetLocation: DimensionLocation) {
   const cow = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Cow, targetLocation);
@@ -78,8 +78,8 @@ function teleport(targetLocation: DimensionLocation) {
 ##### ***teleportMovement.ts***
 
 ```typescript
-import { system, DimensionLocation } from "@minecraft/server";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { system, DimensionLocation } from '@minecraft/server';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function teleportMovement(targetLocation: DimensionLocation) {
   const pig = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Pig, targetLocation);

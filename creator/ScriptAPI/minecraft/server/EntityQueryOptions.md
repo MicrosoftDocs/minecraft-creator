@@ -63,24 +63,24 @@ Type: [*Vector3*](Vector3.md)
 ##### ***blockConditional.ts***
 
 ```typescript
-import { DimensionLocation } from "@minecraft/server";
+import { DimensionLocation } from '@minecraft/server';
 
 function blockConditional(targetLocation: DimensionLocation) {
   targetLocation.dimension
     .getEntities({
-      type: "fox",
+      type: 'fox',
     })
-    .filter((entity) => {
+    .filter(entity => {
       const block = targetLocation.dimension.getBlock({
         x: entity.location.x,
         y: entity.location.y - 1,
         z: entity.location.z,
       });
 
-      return block !== undefined && block.matches("minecraft:stone");
+      return block !== undefined && block.matches('minecraft:stone');
     })
-    .forEach((entity) => {
-      targetLocation.dimension.spawnEntity("salmon", entity.location);
+    .forEach(entity => {
+      targetLocation.dimension.spawnEntity('salmon', entity.location);
     });
 }
 ```
@@ -90,14 +90,12 @@ function blockConditional(targetLocation: DimensionLocation) {
 ##### ***findEntitiesHavingPropertyEqualsTo.ts***
 
 ```typescript
-import { EntityQueryOptions, DimensionLocation } from "@minecraft/server";
+import { EntityQueryOptions, DimensionLocation } from '@minecraft/server';
 
-function findEntitiesHavingPropertyEqualsTo(
-    targetLocation: DimensionLocation
-) {
+function findEntitiesHavingPropertyEqualsTo(targetLocation: DimensionLocation) {
   // Minecraft bees have a has_nectar boolean property
   const queryOption: EntityQueryOptions = {
-    propertyOptions: [{ propertyId: "minecraft:has_nectar", value: { equals: true } }],
+    propertyOptions: [{ propertyId: 'minecraft:has_nectar', value: { equals: true } }],
   };
 
   const entities = targetLocation.dimension.getEntities(queryOption);
@@ -109,20 +107,20 @@ function findEntitiesHavingPropertyEqualsTo(
 ##### ***playSoundChained.ts***
 
 ```typescript
-import { DimensionLocation } from "@minecraft/server";
+import { DimensionLocation } from '@minecraft/server';
 
 function playSoundChained(targetLocation: DimensionLocation) {
   const targetPlayers = targetLocation.dimension.getPlayers();
   const originEntities = targetLocation.dimension.getEntities({
-    type: "armor_stand",
-    name: "myArmorStand",
-    tags: ["dummyTag1"],
-    excludeTags: ["dummyTag2"],
+    type: 'armor_stand',
+    name: 'myArmorStand',
+    tags: ['dummyTag1'],
+    excludeTags: ['dummyTag2'],
   });
 
-  originEntities.forEach((entity) => {
-    targetPlayers.forEach((player) => {
-      player.playSound("raid.horn");
+  originEntities.forEach(entity => {
+    targetPlayers.forEach(player => {
+      player.playSound('raid.horn');
     });
   });
 }
@@ -133,18 +131,16 @@ function playSoundChained(targetLocation: DimensionLocation) {
 ##### ***setScoreboardChained.ts***
 
 ```typescript
-import { world, DimensionLocation } from "@minecraft/server";
+import { world, DimensionLocation } from '@minecraft/server';
 
-function setScoreboardChained(
-    targetLocation: DimensionLocation
-) {
-  const objective = world.scoreboard.addObjective("scoreObjective1", "dummy");
+function setScoreboardChained(targetLocation: DimensionLocation) {
+  const objective = world.scoreboard.addObjective('scoreObjective1', 'dummy');
   targetLocation.dimension
     .getEntities({
-      type: "armor_stand",
-      name: "myArmorStand",
+      type: 'armor_stand',
+      name: 'myArmorStand',
     })
-    .forEach((entity) => {
+    .forEach(entity => {
       if (entity.scoreboardIdentity !== undefined) {
         objective.setScore(entity.scoreboardIdentity, -1);
       }
@@ -157,20 +153,20 @@ function setScoreboardChained(
 ##### ***summonMobChained.ts***
 
 ```typescript
-import { DimensionLocation } from "@minecraft/server";
+import { DimensionLocation } from '@minecraft/server';
 
 function summonMobChained(targetLocation: DimensionLocation) {
   const armorStandArray = targetLocation.dimension.getEntities({
-    type: "armor_stand",
+    type: 'armor_stand',
   });
   const playerArray = targetLocation.dimension.getPlayers({
     location: { x: 0, y: -60, z: 0 },
     closest: 4,
     maxDistance: 15,
   });
-  armorStandArray.forEach((entity) => {
-    playerArray.forEach((player) => {
-      targetLocation.dimension.spawnEntity("pig", {
+  armorStandArray.forEach(entity => {
+    playerArray.forEach(player => {
+      targetLocation.dimension.spawnEntity('pig', {
         x: player.location.x + 1,
         y: player.location.y,
         z: player.location.z,
@@ -185,10 +181,10 @@ function summonMobChained(targetLocation: DimensionLocation) {
 ##### ***bounceSkeletons.ts***
 
 ```typescript
-import { EntityQueryOptions, DimensionLocation } from "@minecraft/server";
+import { EntityQueryOptions, DimensionLocation } from '@minecraft/server';
 
 function bounceSkeletons(targetLocation: DimensionLocation) {
-  const mobs = ["creeper", "skeleton", "sheep"];
+  const mobs = ['creeper', 'skeleton', 'sheep'];
 
   // create some sample mob data
   for (let i = 0; i < 10; i++) {
@@ -196,7 +192,7 @@ function bounceSkeletons(targetLocation: DimensionLocation) {
   }
 
   const eqo: EntityQueryOptions = {
-    type: "skeleton",
+    type: 'skeleton',
   };
 
   for (const entity of targetLocation.dimension.getEntities(eqo)) {
@@ -210,20 +206,20 @@ function bounceSkeletons(targetLocation: DimensionLocation) {
 ##### ***tagsQuery.ts***
 
 ```typescript
-import { EntityQueryOptions, DimensionLocation } from "@minecraft/server";
+import { EntityQueryOptions, DimensionLocation } from '@minecraft/server';
 
 function tagsQuery(targetLocation: DimensionLocation) {
-  const mobs = ["creeper", "skeleton", "sheep"];
+  const mobs = ['creeper', 'skeleton', 'sheep'];
 
   // create some sample mob data
   for (let i = 0; i < 10; i++) {
     const mobTypeId = mobs[i % mobs.length];
     const entity = targetLocation.dimension.spawnEntity(mobTypeId, targetLocation);
-    entity.addTag("mobparty." + mobTypeId);
+    entity.addTag('mobparty.' + mobTypeId);
   }
 
   const eqo: EntityQueryOptions = {
-    tags: ["mobparty.skeleton"],
+    tags: ['mobparty.skeleton'],
   };
 
   for (const entity of targetLocation.dimension.getEntities(eqo)) {
@@ -237,7 +233,7 @@ function tagsQuery(targetLocation: DimensionLocation) {
 ##### ***testThatEntityIsFeatherItem.ts***
 
 ```typescript
-import { EntityItemComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
+import { EntityItemComponent, EntityComponentTypes, DimensionLocation } from '@minecraft/server';
 
 function testThatEntityIsFeatherItem(
   log: (message: string, status?: number) => void,
@@ -252,8 +248,8 @@ function testThatEntityIsFeatherItem(
     const itemComp = item.getComponent(EntityComponentTypes.Item) as EntityItemComponent;
 
     if (itemComp) {
-      if (itemComp.itemStack.typeId.endsWith("feather")) {
-        log("Success! Found a feather", 1);
+      if (itemComp.itemStack.typeId.endsWith('feather')) {
+        log('Success! Found a feather', 1);
       }
     }
   }

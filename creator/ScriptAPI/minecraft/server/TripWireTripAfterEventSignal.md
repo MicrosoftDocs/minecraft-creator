@@ -50,8 +50,8 @@ Notes:
 ##### ***tripWireTripEvent.ts***
 
 ```typescript
-import { world, system, BlockPermutation, TripWireTripAfterEvent, DimensionLocation } from "@minecraft/server";
-import { MinecraftBlockTypes } from "@minecraft/vanilla-data";
+import { world, system, BlockPermutation, TripWireTripAfterEvent, DimensionLocation } from '@minecraft/server';
+import { MinecraftBlockTypes } from '@minecraft/vanilla-data';
 
 function tripWireTripEvent(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
   // set up a tripwire
@@ -63,7 +63,7 @@ function tripWireTripEvent(log: (message: string, status?: number) => void, targ
   const tripwire = targetLocation.dimension.getBlock(targetLocation);
 
   if (redstone === undefined || tripwire === undefined) {
-    log("Could not find block at location.");
+    log('Could not find block at location.');
     return -1;
   }
 
@@ -75,9 +75,9 @@ function tripWireTripEvent(log: (message: string, status?: number) => void, targ
 
     if (eventLoc.x === targetLocation.x && eventLoc.y === targetLocation.y && eventLoc.z === targetLocation.z) {
       log(
-        "Tripwire trip event at tick " +
+        'Tripwire trip event at tick ' +
           system.currentTick +
-          (tripWireTripEvent.sources.length > 0 ? " by entity " + tripWireTripEvent.sources[0].id : "")
+          (tripWireTripEvent.sources.length > 0 ? ' by entity ' + tripWireTripEvent.sources[0].id : '')
       );
     }
   });

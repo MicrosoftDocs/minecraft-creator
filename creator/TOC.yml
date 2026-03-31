@@ -454,6 +454,10 @@
           href: Documents/CraftingItemCatalogDocumentation.md
         - name: Introduction to Enchantments
           href: Documents/IntroToEnchantments.md
+        - name: Using Attachables
+          href: Documents/attachables.md
+        - name: Creating Custom Projectiles
+          href: Documents/custom_projectiles.md
     - name: Blocks
       items:
         - name: Block States and Permutations

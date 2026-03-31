@@ -35,3 +35,19 @@ Type: [*InvalidArgumentErrorType*](InvalidArgumentErrorType.md)
 
 Notes:
   - This property can be read in early-execution mode.
+
+## Methods
+- [constructor](#constructor)
+
+### **constructor**
+`
+new InvalidArgumentError(funcName: string, argTypeName: string, errorType: InvalidArgumentErrorType, argIndex?: number)
+`
+
+#### **Parameters**
+- **funcName**: *string*
+- **argTypeName**: *string*
+- **errorType**: [*InvalidArgumentErrorType*](InvalidArgumentErrorType.md)
+- **argIndex**?: *number* = ``
+
+**Returns** [*InvalidArgumentError*](InvalidArgumentError.md)

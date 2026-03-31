@@ -16,20 +16,16 @@ An error thrown when a platform-level HTTP error occurs.  Information provided i
 
 ## Properties
 
-### **code**
-`read-only code: number;`
-
-The platform-provided numeric error code for the error.
+### **errorCode**
+`read-only errorCode: number;`
 
 Type: *number*
 
 Notes:
   - This property can be read in early-execution mode.
 
-### **message**
-`read-only message: string;`
-
-The platform-provided message for the error.
+### **errorMessage**
+`read-only errorMessage: string;`
 
 Type: *string*
 

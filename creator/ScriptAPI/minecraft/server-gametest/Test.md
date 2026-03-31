@@ -304,21 +304,21 @@ Notes:
 import * as gameTest from '@minecraft/server-gametest';
 
 gameTest
-    .register('StarterTests', 'simpleMobTest', (test: gameTest.Test) => {
-        const attackerId = 'fox';
-        const victimId = 'chicken';
+  .register('StarterTests', 'simpleMobTest', (test: gameTest.Test) => {
+    const attackerId = 'fox';
+    const victimId = 'chicken';
 
-        test.spawn(attackerId, { x: 5, y: 2, z: 5 });
-        const victim = test.spawn(victimId, { x: 2, y: 2, z: 2 });
+    test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+    const victim = test.spawn(victimId, { x: 2, y: 2, z: 2 });
 
-        test.assertEntityInstancePresentInArea(victim, true);
+    test.assertEntityInstancePresentInArea(victim, true);
 
-        test.succeedWhen(() => {
-            test.assertEntityInstancePresentInArea(victim, false);
-        });
-    })
-    .maxTicks(400)
-    .structureName('gametests:mediumglass');
+    test.succeedWhen(() => {
+      test.assertEntityInstancePresentInArea(victim, false);
+    });
+  })
+  .maxTicks(400)
+  .structureName('gametests:mediumglass');
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleMobTest.ts) code sandbox.
@@ -375,21 +375,21 @@ Notes:
 import * as gameTest from '@minecraft/server-gametest';
 
 gameTest
-    .register('StarterTests', 'simpleMobTest', (test: gameTest.Test) => {
-        const attackerId = 'fox';
-        const victimId = 'chicken';
+  .register('StarterTests', 'simpleMobTest', (test: gameTest.Test) => {
+    const attackerId = 'fox';
+    const victimId = 'chicken';
 
-        test.spawn(attackerId, { x: 5, y: 2, z: 5 });
-        test.spawn(victimId, { x: 2, y: 2, z: 2 });
+    test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+    test.spawn(victimId, { x: 2, y: 2, z: 2 });
 
-        test.assertEntityPresentInArea(victimId, true);
+    test.assertEntityPresentInArea(victimId, true);
 
-        test.succeedWhen(() => {
-            test.assertEntityPresentInArea(victimId, false);
-        });
-    })
-    .maxTicks(400)
-    .structureName('gametests:mediumglass');
+    test.succeedWhen(() => {
+      test.assertEntityPresentInArea(victimId, false);
+    });
+  })
+  .maxTicks(400)
+  .structureName('gametests:mediumglass');
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleMobTest.ts) code sandbox.
@@ -397,8 +397,8 @@ gameTest
 ##### ***simpleMobGameTest.ts***
 
 ```typescript
-import { Test, register } from "@minecraft/server-gametest";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { Test, register } from '@minecraft/server-gametest';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function simpleMobGameTest(test: Test) {
   const attackerId = MinecraftEntityTypes.Fox;
@@ -413,7 +413,7 @@ function simpleMobGameTest(test: Test) {
     test.assertEntityPresentInArea(victimId, false);
   });
 }
-register("StarterTests", "simpleMobTest", simpleMobGameTest).maxTicks(400).structureName("gametests:mediumglass");
+register('StarterTests', 'simpleMobTest', simpleMobGameTest).maxTicks(400).structureName('gametests:mediumglass');
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleMobGameTest.ts) code sandbox.
@@ -1011,9 +1011,9 @@ Notes:
 ##### ***minibiomes.ts***
 
 ```typescript
-import { EntityComponentTypes } from "@minecraft/server";
-import { Test, register } from "@minecraft/server-gametest";
-import { MinecraftBlockTypes, MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { EntityComponentTypes } from '@minecraft/server';
+import { Test, register } from '@minecraft/server-gametest';
+import { MinecraftBlockTypes, MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function minibiomes(test: Test) {
   const minecart = test.spawn(MinecraftEntityTypes.Minecart, { x: 9, y: 7, z: 7 });
@@ -1027,7 +1027,7 @@ function minibiomes(test: Test) {
 
   test.succeedWhenEntityPresent(MinecraftEntityTypes.Pig, { x: 8, y: 3, z: 1 }, true);
 }
-register("ChallengeTests", "minibiomes", minibiomes).structureName("gametests:minibiomes").maxTicks(160);
+register('ChallengeTests', 'minibiomes', minibiomes).structureName('gametests:minibiomes').maxTicks(160);
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/minibiomes.ts) code sandbox.
@@ -1100,21 +1100,21 @@ Notes:
 import * as gameTest from '@minecraft/server-gametest';
 
 gameTest
-    .register('StarterTests', 'simpleMobTest', (test: gameTest.Test) => {
-        const attackerId = 'fox';
-        const victimId = 'chicken';
+  .register('StarterTests', 'simpleMobTest', (test: gameTest.Test) => {
+    const attackerId = 'fox';
+    const victimId = 'chicken';
 
-        test.spawn(attackerId, { x: 5, y: 2, z: 5 });
-        test.spawn(victimId, { x: 2, y: 2, z: 2 });
+    test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+    test.spawn(victimId, { x: 2, y: 2, z: 2 });
 
-        test.assertEntityPresentInArea(victimId, true);
+    test.assertEntityPresentInArea(victimId, true);
 
-        test.succeedWhen(() => {
-            test.assertEntityPresentInArea(victimId, false);
-        });
-    })
-    .maxTicks(400)
-    .structureName('gametests:mediumglass');
+    test.succeedWhen(() => {
+      test.assertEntityPresentInArea(victimId, false);
+    });
+  })
+  .maxTicks(400)
+  .structureName('gametests:mediumglass');
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleMobTest.ts) code sandbox.
@@ -1122,8 +1122,8 @@ gameTest
 ##### ***simpleMobGameTest.ts***
 
 ```typescript
-import { Test, register } from "@minecraft/server-gametest";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { Test, register } from '@minecraft/server-gametest';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function simpleMobGameTest(test: Test) {
   const attackerId = MinecraftEntityTypes.Fox;
@@ -1138,7 +1138,7 @@ function simpleMobGameTest(test: Test) {
     test.assertEntityPresentInArea(victimId, false);
   });
 }
-register("StarterTests", "simpleMobTest", simpleMobGameTest).maxTicks(400).structureName("gametests:mediumglass");
+register('StarterTests', 'simpleMobTest', simpleMobGameTest).maxTicks(400).structureName('gametests:mediumglass');
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleMobGameTest.ts) code sandbox.
@@ -1146,8 +1146,8 @@ register("StarterTests", "simpleMobTest", simpleMobGameTest).maxTicks(400).struc
 ##### ***phantomsShouldFlyFromCats.ts***
 
 ```typescript
-import { Test, register } from "@minecraft/server-gametest";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { Test, register } from '@minecraft/server-gametest';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function phantomsShouldFlyFromCats(test: Test) {
   test.spawn(MinecraftEntityTypes.Cat, { x: 4, y: 3, z: 3 });
@@ -1156,8 +1156,9 @@ function phantomsShouldFlyFromCats(test: Test) {
   test.succeedWhenEntityPresent(MinecraftEntityTypes.Phantom, { x: 4, y: 6, z: 3 }, true);
 }
 
-register("MobBehaviorTests", "phantoms_should_fly_from_cats", phantomsShouldFlyFromCats)
-  .structureName("gametests:glass_cells");
+register('MobBehaviorTests', 'phantoms_should_fly_from_cats', phantomsShouldFlyFromCats).structureName(
+  'gametests:glass_cells'
+);
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/phantomsShouldFlyFromCats.ts) code sandbox.
@@ -1165,9 +1166,9 @@ register("MobBehaviorTests", "phantoms_should_fly_from_cats", phantomsShouldFlyF
 ##### ***minibiomes.ts***
 
 ```typescript
-import { EntityComponentTypes } from "@minecraft/server";
-import { Test, register } from "@minecraft/server-gametest";
-import { MinecraftBlockTypes, MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { EntityComponentTypes } from '@minecraft/server';
+import { Test, register } from '@minecraft/server-gametest';
+import { MinecraftBlockTypes, MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function minibiomes(test: Test) {
   const minecart = test.spawn(MinecraftEntityTypes.Minecart, { x: 9, y: 7, z: 7 });
@@ -1181,7 +1182,7 @@ function minibiomes(test: Test) {
 
   test.succeedWhenEntityPresent(MinecraftEntityTypes.Pig, { x: 8, y: 3, z: 1 }, true);
 }
-register("ChallengeTests", "minibiomes", minibiomes).structureName("gametests:minibiomes").maxTicks(160);
+register('ChallengeTests', 'minibiomes', minibiomes).structureName('gametests:minibiomes').maxTicks(160);
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/minibiomes.ts) code sandbox.
@@ -1411,8 +1412,8 @@ Notes:
 ##### ***simpleMobGameTest.ts***
 
 ```typescript
-import { Test, register } from "@minecraft/server-gametest";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { Test, register } from '@minecraft/server-gametest';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function simpleMobGameTest(test: Test) {
   const attackerId = MinecraftEntityTypes.Fox;
@@ -1427,7 +1428,7 @@ function simpleMobGameTest(test: Test) {
     test.assertEntityPresentInArea(victimId, false);
   });
 }
-register("StarterTests", "simpleMobTest", simpleMobGameTest).maxTicks(400).structureName("gametests:mediumglass");
+register('StarterTests', 'simpleMobTest', simpleMobGameTest).maxTicks(400).structureName('gametests:mediumglass');
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleMobGameTest.ts) code sandbox.
@@ -1507,8 +1508,8 @@ Notes:
 ##### ***phantomsShouldFlyFromCats.ts***
 
 ```typescript
-import { Test, register } from "@minecraft/server-gametest";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { Test, register } from '@minecraft/server-gametest';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function phantomsShouldFlyFromCats(test: Test) {
   test.spawn(MinecraftEntityTypes.Cat, { x: 4, y: 3, z: 3 });
@@ -1517,8 +1518,9 @@ function phantomsShouldFlyFromCats(test: Test) {
   test.succeedWhenEntityPresent(MinecraftEntityTypes.Phantom, { x: 4, y: 6, z: 3 }, true);
 }
 
-register("MobBehaviorTests", "phantoms_should_fly_from_cats", phantomsShouldFlyFromCats)
-  .structureName("gametests:glass_cells");
+register('MobBehaviorTests', 'phantoms_should_fly_from_cats', phantomsShouldFlyFromCats).structureName(
+  'gametests:glass_cells'
+);
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/phantomsShouldFlyFromCats.ts) code sandbox.
@@ -1526,9 +1528,9 @@ register("MobBehaviorTests", "phantoms_should_fly_from_cats", phantomsShouldFlyF
 ##### ***minibiomes.ts***
 
 ```typescript
-import { EntityComponentTypes } from "@minecraft/server";
-import { Test, register } from "@minecraft/server-gametest";
-import { MinecraftBlockTypes, MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { EntityComponentTypes } from '@minecraft/server';
+import { Test, register } from '@minecraft/server-gametest';
+import { MinecraftBlockTypes, MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function minibiomes(test: Test) {
   const minecart = test.spawn(MinecraftEntityTypes.Minecart, { x: 9, y: 7, z: 7 });
@@ -1542,7 +1544,7 @@ function minibiomes(test: Test) {
 
   test.succeedWhenEntityPresent(MinecraftEntityTypes.Pig, { x: 8, y: 3, z: 1 }, true);
 }
-register("ChallengeTests", "minibiomes", minibiomes).structureName("gametests:minibiomes").maxTicks(160);
+register('ChallengeTests', 'minibiomes', minibiomes).structureName('gametests:minibiomes').maxTicks(160);
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/minibiomes.ts) code sandbox.

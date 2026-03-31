@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.6.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.20-beta.20 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.20-beta.22 of Minecraft.
 
 ## Available Versions
 - `2.8.0-beta`
@@ -578,6 +578,7 @@ The following API versions are from a major version that is documented here: [*@
 - [CustomCommand](CustomCommand.md)
 - [CustomCommandParameter](CustomCommandParameter.md)
 - [CustomCommandResult](CustomCommandResult.md)
+- [CustomTexture](CustomTexture.md)
 - [DefinitionModifier](DefinitionModifier.md)
 - [DimensionLocation](DimensionLocation.md)
 - [EaseOptions](EaseOptions.md)
@@ -686,6 +687,7 @@ The following API versions are from a major version that is documented here: [*@
 - [LocatorBarError](LocatorBarError.md)
 - [NamespaceNameError](NamespaceNameError.md)
 - [PlaceJigsawError](PlaceJigsawError.md)
+- [PrimitiveShapeError](PrimitiveShapeError.md)
 - [RawMessageError](RawMessageError.md)
 - [TickingAreaError](TickingAreaError.md)
 - [UnloadedChunksError](UnloadedChunksError.md)
