@@ -1,9 +1,10 @@
 ---
 author: IconicNurdle
-ms.author: mikeam
+ms.author: v-cwilkerson
 title: Introduction to Scoreboards
 description: "A guide about scoreboards and different ways to use them"
 ms.service: minecraft-bedrock-edition
+ms.date: 03/18/2026
 ---
 
 # Introduction to Scoreboards
@@ -18,42 +19,44 @@ In this tutorial you will learn the following:
 > - The `/scoreboard` command syntax.
 > - How to use a scoreboard.
 
-### Requirements
+## Requirements
 
 It's recommended that the following be completed before beginning this tutorial.
 
 - [Introduction to Commands](CommandsIntroduction.md)
 
-## Parts of a Scoreboard
+## Scoreboard operations
 
-In this example, you will create a basic scoreboard, display it on the screen, and make it show a few player names and values.
+In this example, you'll learn how to create a basic scoreboard, display it on the screen, and make it show a few player names and values. The two main things to notice here are the subcategories for a scoreboard:
+
+- **Objectives** represent something in the game you want to track, such as how many times a sheep is sheared or a potato is planted. You create objectives and give them an internal name and a name to display on the screen. In this example, we are going to create an objective to track the number of sheep that have been sheared.
+
+- **Players** are the characters in your world playing the game and the associated count of how many times each player accomplished the objective.
+
+> [!NOTE]
+> Because the objectives we're tracking don't already exist in the game, you should give them the type "dummy" to distinguish them.
 
 1. In a world with cheats enabled, open the chat window and enter `/scoreboard` with a space after the command. The chat window will display the available scoreboard commands.
 
-The two main things to notice here are the subcategories for a scoreboard: **objectives** and **players**. An objective is something in the game you want to track, such as how many times a sheep is sheared or a potato is planted. You create objectives and give them an internal name and a name to display on the screen. In this example, we are going to create an objective to track the number of sheep that have been sheared. Then, we will add players and some made-up scores that say how many times each player accomplished the objective.
-
-Because the objectives we are tracking do not already exist in the game, you will give them the type called "dummy."
-
-1. In chat, enter `/scoreboard objectives add shearedSheep dummy "Top Shearers"`. You should get the message "Added new objective 'shearedSheep' successfully."
+2. In chat, enter `/scoreboard objectives add shearedSheep dummy "Top Shearers"`. You should get the message "Added new objective 'shearedSheep' successfully."
 
     ![Image of a new scoreboard objective displayed in a sidebar](Media/Commands/scoreboard_shearedSheep_added.png)
 
-1. Your objective exists, but we can't see it until we display it on the screen. Your options are to display the information in a sidebar, on the pause screen, or below the player's name.
+3. Your objective exists now, but we can't see it until we display it on the screen. You can display the information in a sidebar, on the pause screen, or below the player's name to give you flexibility to match the vibe of your world.
 
     Enter `/scoreboard objectives setdisplay sidebar shearedSheep`. You should now see a sidebar on the screen with the header Top Shearers.
 
     ![Image of a scoreboard objective successfully displayed in a sidebar](Media/Commands/scoreboard_setdisplay_sidebar.png)
 
-1. Now that our objective exists, add a player named "SomeRandomPlayer" and give them a score of 0. Enter `/scoreboard players set SomeRandomPlayer shearedSheep 0`. The player's name will be displayed on the sidebar under Top Shearers.
+4. Now that our objective exists, add a player named "SomeRandomPlayer" and give them a score of 0. Enter `/scoreboard players set SomeRandomPlayer shearedSheep 0`. The player's name will be displayed on the sidebar under Top Shearers.
 
     ![Image of a player name displayed in a sidebar](Media/Commands/scoreboard_player1_sidebar.png)
 
-1. Add yourself and give yourself a score of 50: `/scoreboard players set @s shearedSheep 50`. Your own name will be displayed on the list.
+5. Add yourself and give yourself a score of 50: `/scoreboard players set @s shearedSheep 50`. Your own name will be displayed on the list.
 
     ![Image of a player name displayed in a different sidebar](Media/Commands/scoreboard_player2_sidebar.png)
 
-
-## Scoreboard Objectives Commands
+## Objective commands
 
 The available scoreboard objective commands can be listed using the chat's auto-complete feature.
 
@@ -85,7 +88,7 @@ To remove an objective from the game use:
 /scoreboard objective remove <objective: string>
 ```
 
-### setdisplay 
+### setdisplay
 
 You can modify how scoreboard objectives are displayed in the game. There are three slots that an objective can be displayed in: **belowName**, **list**, and **sidebar**. Specifying a slot without an objective name clears that display slot.
 
@@ -108,7 +111,7 @@ Use the **belowname** option to display objective information below player names
 /scoreboard objectives setdisplay belowname [objective: string]
 ```
 
-## Scoreboard Players Commands
+## Player commands
 
 The following scoreboard player commands affect a player's score value. The arguments can be listed using the chat's auto-complete feature.
 

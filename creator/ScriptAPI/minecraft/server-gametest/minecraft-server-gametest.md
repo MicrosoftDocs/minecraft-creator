@@ -24,7 +24,7 @@ The @minecraft/server-gametest module provides scriptable APIs for scaffolding a
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.20-beta.20 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.20-beta.22 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`
@@ -106,8 +106,8 @@ Notes:
 ##### ***simpleMobGameTest.ts***
 
 ```typescript
-import { Test, register } from "@minecraft/server-gametest";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { Test, register } from '@minecraft/server-gametest';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
 function simpleMobGameTest(test: Test) {
   const attackerId = MinecraftEntityTypes.Fox;
@@ -122,7 +122,7 @@ function simpleMobGameTest(test: Test) {
     test.assertEntityPresentInArea(victimId, false);
   });
 }
-register("StarterTests", "simpleMobTest", simpleMobGameTest).maxTicks(400).structureName("gametests:mediumglass");
+register('StarterTests', 'simpleMobTest', simpleMobGameTest).maxTicks(400).structureName('gametests:mediumglass');
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleMobGameTest.ts) code sandbox.
@@ -159,21 +159,21 @@ Notes:
 import * as gameTest from '@minecraft/server-gametest';
 
 gameTest
-    .registerAsync('StarterTests', 'simpleMobTest', async (test: gameTest.Test) => {
-        const attackerId = 'fox';
-        const victimId = 'chicken';
+  .registerAsync('StarterTests', 'simpleMobTest', async (test: gameTest.Test) => {
+    const attackerId = 'fox';
+    const victimId = 'chicken';
 
-        test.spawn(attackerId, { x: 5, y: 2, z: 5 });
-        test.spawn(victimId, { x: 2, y: 2, z: 2 });
+    test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+    test.spawn(victimId, { x: 2, y: 2, z: 2 });
 
-        test.assertEntityPresentInArea(victimId, true);
+    test.assertEntityPresentInArea(victimId, true);
 
-        test.succeedWhen(() => {
-            test.assertEntityPresentInArea(victimId, false);
-        });
-    })
-    .maxTicks(400)
-    .structureName('gametests:mediumglass');
+    test.succeedWhen(() => {
+      test.assertEntityPresentInArea(victimId, false);
+    });
+  })
+  .maxTicks(400)
+  .structureName('gametests:mediumglass');
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleMobAsyncTest.ts) code sandbox.

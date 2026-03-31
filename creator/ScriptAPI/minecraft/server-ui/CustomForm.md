@@ -127,12 +127,12 @@ Inserts a label (i.e. medium sized text) into the Custom form.
 
 ### **show**
 `
-show(): Promise<boolean>
+show(): Promise<DataDrivenScreenClosedReason>
 `
 
 Shows the form to the player. Will return false if the client was busy (i.e. in another menu or this one is open). Will throw if the user disconnects.
 
-**Returns** *Promise<boolean>*
+**Returns** *Promise<DataDrivenScreenClosedReason>*
 
 ### **slider**
 `

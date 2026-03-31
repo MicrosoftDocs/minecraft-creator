@@ -17,16 +17,16 @@ The result when a {@link MessageBox} is closed.
 
 ## Properties
 
+### **closeReason**
+`closeReason: DataDrivenScreenClosedReason;`
+
+The reason the message box was closed.
+
+Type: *DataDrivenScreenClosedReason*
+
 ### **selection**
 `selection?: number;`
 
 The button that was selected, undefined if it was closed without pressing a button.
 
 Type: *number*
-
-### **wasShown**
-`wasShown: boolean;`
-
-Whether the message box was shown
-
-Type: *boolean*

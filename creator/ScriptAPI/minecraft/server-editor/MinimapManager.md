@@ -18,6 +18,8 @@ Manage minimap instances within the editor, providing functionality to create, d
 - [destroyMinimap](#destroyminimap)
 - [getAllMinimapIds](#getallminimapids)
 - [getMinimap](#getminimap)
+- [setVanillaBiomeColorMap](#setvanillabiomecolormap)
+- [updateVanillaColorMap](#updatevanillacolormap)
 
 ### **createMinimap**
 `
@@ -76,6 +78,31 @@ Retrieve a specific minimap instance using its unique identifier.
 - **minimapId**: *string*
 
 **Returns** [*MinimapItem*](MinimapItem.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+
+### **setVanillaBiomeColorMap**
+`
+setVanillaBiomeColorMap(colorMap: Record<string, minecraftserver.RGB>): void
+`
+
+#### **Parameters**
+- **colorMap**: Record<*string*, [*@minecraft/server.RGB*](../../../scriptapi/minecraft/server/RGB.md)>
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+
+### **updateVanillaColorMap**
+`
+updateVanillaColorMap(biomeType: minecraftserver.BiomeType, color: minecraftserver.RGB): void
+`
+
+#### **Parameters**
+- **biomeType**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
+- **color**: [*@minecraft/server.RGB*](../../../scriptapi/minecraft/server/RGB.md)
   
 Notes:
 - This function can't be called in restricted-execution mode.

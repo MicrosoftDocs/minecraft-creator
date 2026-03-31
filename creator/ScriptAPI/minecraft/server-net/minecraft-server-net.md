@@ -24,7 +24,7 @@ The `@minecraft/server-net` module contains types for executing HTTP-based reque
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.20-beta.20 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.20-beta.22 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`
@@ -34,15 +34,22 @@ This is version 1.x.x of this module, which is the latest as of version 1.26.20-
 - [PacketId](PacketId.md)
 
 ## Classes
+- [CloseAfterEventSignal](CloseAfterEventSignal.md)
 - [HttpClient](HttpClient.md)
 - [HttpHeader](HttpHeader.md)
 - [HttpRequest](HttpRequest.md)
 - [HttpResponse](HttpResponse.md)
+- [MessageAfterEventSignal](MessageAfterEventSignal.md)
 - [NetworkBeforeEvents](NetworkBeforeEvents.md)
 - [PacketReceiveBeforeEventSignal](PacketReceiveBeforeEventSignal.md)
 - [PacketReceivedBeforeEvent](PacketReceivedBeforeEvent.md)
 - [PacketSendBeforeEvent](PacketSendBeforeEvent.md)
 - [PacketSendBeforeEventSignal](PacketSendBeforeEventSignal.md)
+- [WebSocket](WebSocket.md)
+- [WebSocketClient](WebSocketClient.md)
+- [WebSocketClientAfterEvents](WebSocketClientAfterEvents.md)
+- [WebSocketClientCloseAfterEvent](WebSocketClientCloseAfterEvent.md)
+- [WebSocketClientReceiveAfterEvent](WebSocketClientReceiveAfterEvent.md)
 
 ## Interfaces
 - [PacketEventOptions](PacketEventOptions.md)
@@ -50,10 +57,14 @@ This is version 1.x.x of this module, which is the latest as of version 1.26.20-
 ## Errors
 - [HttpRequestLimitExceededError](HttpRequestLimitExceededError.md)
 - [InternalHttpRequestError](InternalHttpRequestError.md)
+- [InternalWebSocketError](InternalWebSocketError.md)
 - [MalformedUriError](MalformedUriError.md)
 - [RequestBodyTooLargeError](RequestBodyTooLargeError.md)
 - [TLSOnlyError](TLSOnlyError.md)
 - [UriNotAllowedError](UriNotAllowedError.md)
+- [WebSocketConnectionFailedError](WebSocketConnectionFailedError.md)
+- [WebSocketLimitExceededError](WebSocketLimitExceededError.md)
+- [WebSocketNotConnectedError](WebSocketNotConnectedError.md)
 
 ## Objects
   
@@ -66,6 +77,13 @@ Type: [*NetworkBeforeEvents*](NetworkBeforeEvents.md)
 `static read-only http: HttpClient;`
 
 Type: [*HttpClient*](HttpClient.md)
+  
+### **websocket**
+`static read-only websocket: WebSocket;`
+
+Used to manage WebSocket connections.
+
+Type: [*WebSocket*](WebSocket.md)
 
 ## Peer Dependencies
 - [`@minecraft/common`](../../../scriptapi/minecraft/common/minecraft-common.md)

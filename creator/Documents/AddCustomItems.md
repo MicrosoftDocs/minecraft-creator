@@ -235,7 +235,11 @@ Copy and past this JSON into **development_resource_pack/attachables/wrench.play
 }
 ```
 
-And copy and paste this JSON into **development_resource_pack/models/entity/wrench.geo.json**:
+> [!NOTE]
+>
+> What's an "attachable"? That's an item that the player (or other entities) can hold or wear. For more information about attachables, read [Using Attachables](./attachables.md)!
+
+Now, copy and paste this JSON into **development_resource_pack/models/entity/wrench.geo.json**. This is the wrench's geometry and bone definition:
 
 ```json
 {

@@ -28,7 +28,7 @@ The `@minecraft/server-ui` module contains types for expressing simple dialog-ba
     "version": "2.0.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.20-beta.20 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.20-beta.22 of Minecraft.
 
 ## Available Versions
 - `2.1.0-beta`
@@ -44,6 +44,7 @@ The following API versions are from a major version that is documented here: [*@
 
 
 ## Enumerations
+- [DataDrivenScreenClosedReason](DataDrivenScreenClosedReason.md)
 - [FormCancelationReason](FormCancelationReason.md)
 - [FormRejectReason](FormRejectReason.md)
 
@@ -51,6 +52,7 @@ The following API versions are from a major version that is documented here: [*@
 - [ActionFormData](ActionFormData.md)
 - [ActionFormResponse](ActionFormResponse.md)
 - [CustomForm](CustomForm.md)
+- [FormCloseError](FormCloseError.md)
 - [FormResponse](FormResponse.md)
 - [MessageBox](MessageBox.md)
 - [MessageFormData](MessageFormData.md)
@@ -58,6 +60,8 @@ The following API versions are from a major version that is documented here: [*@
 - [ModalFormData](ModalFormData.md)
 - [ModalFormResponse](ModalFormResponse.md)
 - [Observable](Observable.md)
+- [PlayerLeftError](PlayerLeftError.md)
+- [ServerShutdownError](ServerShutdownError.md)
 - [UIManager](UIManager.md)
 
 ## Interfaces

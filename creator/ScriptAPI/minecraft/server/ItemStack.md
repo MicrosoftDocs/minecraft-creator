@@ -209,12 +209,18 @@ Gets a component (that represents additional capabilities) for an item stack.
 ##### ***giveHurtDiamondSword.ts***
 
 ```typescript
-import { world, ItemStack, EntityInventoryComponent, EntityComponentTypes, ItemComponentTypes, ItemDurabilityComponent, DimensionLocation } from "@minecraft/server";
-import { MinecraftItemTypes } from "@minecraft/vanilla-data";
+import {
+  world,
+  ItemStack,
+  EntityInventoryComponent,
+  EntityComponentTypes,
+  ItemComponentTypes,
+  ItemDurabilityComponent,
+  DimensionLocation,
+} from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
 
-function giveHurtDiamondSword(
-    targetLocation: DimensionLocation
-) {
+function giveHurtDiamondSword(targetLocation: DimensionLocation) {
   const hurtDiamondSword = new ItemStack(MinecraftItemTypes.DiamondSword);
 
   const durabilityComponent = hurtDiamondSword.getComponent(ItemComponentTypes.Durability) as ItemDurabilityComponent;
@@ -383,17 +389,15 @@ Notes:
 ##### ***giveDestroyRestrictedPickaxe.ts***
 
 ```typescript
-import { world, ItemStack, EntityInventoryComponent, DimensionLocation } from "@minecraft/server";
-import { MinecraftItemTypes } from "@minecraft/vanilla-data";
+import { world, ItemStack, EntityInventoryComponent, DimensionLocation } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
 
-function giveDestroyRestrictedPickaxe(
-    targetLocation: DimensionLocation
-) {
+function giveDestroyRestrictedPickaxe(targetLocation: DimensionLocation) {
   for (const player of world.getAllPlayers()) {
     const specialPickaxe = new ItemStack(MinecraftItemTypes.DiamondPickaxe);
     specialPickaxe.setCanDestroy([MinecraftItemTypes.Cobblestone, MinecraftItemTypes.Obsidian]);
 
-    const inventory = player.getComponent("inventory") as EntityInventoryComponent;
+    const inventory = player.getComponent('inventory') as EntityInventoryComponent;
     if (inventory === undefined || inventory.container === undefined) {
       return;
     }
@@ -427,12 +431,10 @@ Notes:
 ##### ***givePlaceRestrictedGoldBlock.ts***
 
 ```typescript
-import { world, ItemStack, EntityInventoryComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
-import { MinecraftItemTypes } from "@minecraft/vanilla-data";
+import { world, ItemStack, EntityInventoryComponent, EntityComponentTypes, DimensionLocation } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
 
-function givePlaceRestrictedGoldBlock(
-    targetLocation: DimensionLocation
-) {
+function givePlaceRestrictedGoldBlock(targetLocation: DimensionLocation) {
   for (const player of world.getAllPlayers()) {
     const specialGoldBlock = new ItemStack(MinecraftItemTypes.GoldBlock);
     specialGoldBlock.setCanPlaceOn([MinecraftItemTypes.GrassBlock, MinecraftItemTypes.Dirt]);
@@ -510,19 +512,16 @@ import { EntityComponentTypes, ItemStack, Player } from '@minecraft/server';
 import { MinecraftItemTypes } from '@minecraft/vanilla-data';
 
 function giveAwesomeSword(player: Player) {
-    const diamondAwesomeSword = new ItemStack(MinecraftItemTypes.DiamondSword, 1);
-    diamondAwesomeSword.setLore([
-        '§c§lDiamond Sword of Awesome§r',
-         '+10 coolness', '§p+4 shiny§r'
-    ]);
+  const diamondAwesomeSword = new ItemStack(MinecraftItemTypes.DiamondSword, 1);
+  diamondAwesomeSword.setLore(['§c§lDiamond Sword of Awesome§r', '+10 coolness', '§p+4 shiny§r']);
 
-    // hover over/select the item in your inventory to see the lore.
-    const inventory = player.getComponent(EntityComponentTypes.Inventory);
-    if (inventory === undefined || inventory.container === undefined) {
-        return;
-    }
+  // hover over/select the item in your inventory to see the lore.
+  const inventory = player.getComponent(EntityComponentTypes.Inventory);
+  if (inventory === undefined || inventory.container === undefined) {
+    return;
+  }
 
-    inventory.container.setItem(0, diamondAwesomeSword);
+  inventory.container.setItem(0, diamondAwesomeSword);
 }
 ```
 
@@ -533,8 +532,8 @@ function giveAwesomeSword(player: Player) {
 ##### ***itemStacks.ts***
 
 ```typescript
-import { ItemStack, DimensionLocation } from "@minecraft/server";
-import { MinecraftItemTypes } from "@minecraft/vanilla-data";
+import { ItemStack, DimensionLocation } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
 
 function itemStacks(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
   const oneItemLoc = { x: targetLocation.x + targetLocation.y + 3, y: 2, z: targetLocation.z + 1 };
@@ -561,12 +560,17 @@ function itemStacks(log: (message: string, status?: number) => void, targetLocat
 ##### ***givePlayerEquipment.ts***
 
 ```typescript
-import { world, ItemStack, EntityEquippableComponent, EquipmentSlot, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
-import { MinecraftItemTypes } from "@minecraft/vanilla-data";
+import {
+  world,
+  ItemStack,
+  EntityEquippableComponent,
+  EquipmentSlot,
+  EntityComponentTypes,
+  DimensionLocation,
+} from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
 
-function givePlayerEquipment(
-    targetLocation: DimensionLocation
-) {
+function givePlayerEquipment(targetLocation: DimensionLocation) {
   const players = world.getAllPlayers();
 
   const armorStandLoc = { x: targetLocation.x, y: targetLocation.y, z: targetLocation.z + 4 };
@@ -599,8 +603,8 @@ function givePlayerEquipment(
 ##### ***spawnFeatherItem.ts***
 
 ```typescript
-import { ItemStack, DimensionLocation } from "@minecraft/server";
-import { MinecraftItemTypes } from "@minecraft/vanilla-data";
+import { ItemStack, DimensionLocation } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
 
 function spawnFeatherItem(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
   const featherItem = new ItemStack(MinecraftItemTypes.Feather, 1);

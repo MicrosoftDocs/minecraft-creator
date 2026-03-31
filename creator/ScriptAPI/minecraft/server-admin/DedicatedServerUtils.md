@@ -28,7 +28,43 @@ Returns an object that manages the level's storage.
 Type: [*LevelStorage*](LevelStorage.md)
 
 ## Methods
+- [reloadCDNConfig](#reloadcdnconfig)
+- [reloadPermissions](#reloadpermissions)
+- [reloadScriptingConfig](#reloadscriptingconfig)
 - [stopServer](#stopserver)
+
+### **reloadCDNConfig**
+`
+reloadCDNConfig(): void
+`
+
+Reloads the cdn configuration from disk.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
+
+### **reloadPermissions**
+`
+reloadPermissions(): void
+`
+
+Reloads the permissions for the server from disk.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
+
+### **reloadScriptingConfig**
+`
+reloadScriptingConfig(): void
+`
+
+Reloads the script configuration for the server from disk.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
 ### **stopServer**
 `

@@ -43,11 +43,11 @@ Notes:
 ##### ***updateScoreboard.ts***
 
 ```typescript
-import { world, DisplaySlotId, ObjectiveSortOrder, DimensionLocation } from "@minecraft/server";
+import { world, DisplaySlotId, ObjectiveSortOrder, DimensionLocation } from '@minecraft/server';
 
 function updateScoreboard(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
-  const scoreboardObjectiveId = "scoreboard_demo_objective";
-  const scoreboardObjectiveDisplayName = "Demo Objective";
+  const scoreboardObjectiveId = 'scoreboard_demo_objective';
+  const scoreboardObjectiveDisplayName = 'Demo Objective';
 
   const players = world.getPlayers();
 
@@ -62,7 +62,7 @@ function updateScoreboard(log: (message: string, status?: number) => void, targe
   const player0Identity = players[0].scoreboardIdentity;
 
   if (player0Identity === undefined) {
-    log("Could not get a scoreboard identity for player 0.");
+    log('Could not get a scoreboard identity for player 0.');
     return -1;
   }
 
@@ -180,11 +180,11 @@ Notes:
 ##### ***updateScoreboard.ts***
 
 ```typescript
-import { world, DisplaySlotId, ObjectiveSortOrder, DimensionLocation } from "@minecraft/server";
+import { world, DisplaySlotId, ObjectiveSortOrder, DimensionLocation } from '@minecraft/server';
 
 function updateScoreboard(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
-  const scoreboardObjectiveId = "scoreboard_demo_objective";
-  const scoreboardObjectiveDisplayName = "Demo Objective";
+  const scoreboardObjectiveId = 'scoreboard_demo_objective';
+  const scoreboardObjectiveDisplayName = 'Demo Objective';
 
   const players = world.getPlayers();
 
@@ -199,7 +199,7 @@ function updateScoreboard(log: (message: string, status?: number) => void, targe
   const player0Identity = players[0].scoreboardIdentity;
 
   if (player0Identity === undefined) {
-    log("Could not get a scoreboard identity for player 0.");
+    log('Could not get a scoreboard identity for player 0.');
     return -1;
   }
 
