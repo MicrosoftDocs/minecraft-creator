@@ -28,7 +28,7 @@ The `@minecraft/server-ui` module contains types for expressing simple dialog-ba
     "version": "2.0.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.20-beta.22 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.20-beta.23 of Minecraft.
 
 ## Available Versions
 - `2.1.0-beta`
@@ -47,6 +47,7 @@ The following API versions are from a major version that is documented here: [*@
 - [DataDrivenScreenClosedReason](DataDrivenScreenClosedReason.md)
 - [FormCancelationReason](FormCancelationReason.md)
 - [FormRejectReason](FormRejectReason.md)
+- [TextFilteringError](TextFilteringError.md)
 
 ## Classes
 - [ActionFormData](ActionFormData.md)

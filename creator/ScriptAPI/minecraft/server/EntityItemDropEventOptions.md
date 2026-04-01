@@ -9,7 +9,7 @@ description: Contents of the @minecraft/server.EntityItemDropEventOptions class.
 ---
 # EntityItemDropEventOptions Interface
 
-An interface that is passed into {@link @minecraft/Server.EntityItemDropAfterEventSignal.subscribe} that filters out which events are passed to the provided callback.
+An interface that is passed into [*@minecraft/server.EntityItemDropAfterEventSignal.subscribe*](../../../scriptapi/minecraft/server/EntityItemDropAfterEventSignal.md#subscribe) that filters out which events are passed to the provided callback.
 
 ## Properties
 

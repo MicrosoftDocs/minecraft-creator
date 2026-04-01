@@ -150,6 +150,7 @@ Entity becomes angry
 - `minecraft:become_armorable`
 - `minecraft:become_armorer`
 Entity, presumably a villager, takes on the role of armorer
+- `minecraft:become_beach_ball`
 - `minecraft:become_black_tang`
 Entity becomes a black tang
 - `minecraft:become_blue_dory`
@@ -176,6 +177,7 @@ Entity becomes a cichlid
 Entity, presumably a villager, takes on the role of cleric
 - `minecraft:become_clownfish`
 Entity becomes a clownfish
+- `minecraft:become_curling_stone`
 - `minecraft:become_dog_fish`
 Entity becomes a dog fish
 - `minecraft:become_e_red_snapper`
@@ -186,8 +188,12 @@ Entity, presumably a villager, takes on the role of farmer
 Entity, presumably a villager, takes on the role of fisherman
 - `minecraft:become_fletcher`
 Entity, presumably a villager, takes on the role of fletcher
+- `minecraft:become_football`
 - `minecraft:become_goat_fish`
 Entity becomes a goat fish
+- `minecraft:become_golf_ball`
+- `minecraft:become_high_resistance`
+- `minecraft:become_hockey_puck`
 - `minecraft:become_hostile`
 Entity becomes hostile
 - `minecraft:become_immobile`
@@ -197,6 +203,7 @@ Entity, presumably a villager, takes on the role of leatherworker
 Entity, presumably a villager, takes on the role of librarian
 - `minecraft:become_mason`
 Entity, presumably a villager, takes on the role of mason
+- `minecraft:become_medicine_ball`
 - `minecraft:become_mobile`
 - `minecraft:become_moorish_idol`
 Entity becomes a moorish idol
@@ -220,11 +227,13 @@ Entity becomes a red cichlid
 Entity becomes a red-lipped benny
 - `minecraft:become_red_snapper`
 Entity becomes a red snapper
+- `minecraft:become_rubber_ball`
 - `minecraft:become_scared`
 Entity becomes scared
 - `minecraft:become_sheperd`
 Entity, presumably a villager, becomes a shepherd
 - `minecraft:become_statue`
+- `minecraft:become_sticky`
 - `minecraft:become_stunned`
 Entity becomes stunned
 - `minecraft:become_threadfin`
@@ -391,6 +400,8 @@ Mule is not wearing a saddle
 - `minecraft:on_anger`
 Entity is angered
 - `minecraft:on_armor_equip`
+- `minecraft:on_block_absorbed`
+- `minecraft:on_block_ejected`
 - `minecraft:on_calm`
 Entity is calmed
 - `minecraft:on_chest`
@@ -404,6 +415,7 @@ Entity deflates
 Entity eats a block
 - `minecraft:on_full_puff`
 Entity is on full puff
+- `minecraft:on_gain_target`
 - `minecraft:on_half_puff`
 Entity is on half puff
 - `minecraft:on_harnessed`
@@ -413,6 +425,7 @@ Entity is hurt
 Entity is instantly primed
 - `minecraft:on_leash`
 Entity is on a leash
+- `minecraft:on_lose_target`
 - `minecraft:on_mount`
 - `minecraft:on_normal_puff`
 Entity is on a normal puff
@@ -420,6 +433,7 @@ Entity is on a normal puff
 Entity is on a non-riding player
 - `minecraft:on_passenger_dismount`
 - `minecraft:on_passenger_mount`
+- `minecraft:on_pickup_timeout`
 - `minecraft:on_player_dismount`
 - `minecraft:on_player_mount`
 - `minecraft:on_prime`
@@ -546,10 +560,12 @@ Entity spawns for a raid with a pillager rider
 Entity spawns with ties to a village
 - `minecraft:spawn_librarian`
 Entity spawns as a librarian
+- `minecraft:spawn_medium`
 - `minecraft:spawn_midnight_cat`
 Entity spawns as a midnight cat
 - `minecraft:spawn_skilled_adult`
 Entity spawns as a skilled adult
+- `minecraft:spawn_small`
 - `minecraft:spawn_tame`
 - `minecraft:spawn_tame_adult`
 - `minecraft:spawn_tame_baby`

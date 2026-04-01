@@ -16,6 +16,18 @@ Contains information regarding a specific block redstone update event.
 
 ## Properties
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **firstUpdate**
+`read-only firstUpdate: boolean;`
+
+The first update event for the redstone component.
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **powerLevel**
 `read-only powerLevel: number;`
 

@@ -138,6 +138,8 @@ Red Nether Brick
 Red Nether Brick
 - `minecraft:brick_wall`
 - `brick_wall`
+- `minecraft:polished_sulfur`
+- `polished_sulfur`
 - `minecraft:cobbled_deepslate_stairs`
 Cobbled Deepslate Stairs
 - `cobbled_deepslate_stairs`
@@ -254,6 +256,8 @@ Deepslate
 - `waxed_exposed_chiseled_copper`
 - `minecraft:tuff_slab`
 - `tuff_slab`
+- `minecraft:cinnabar_wall`
+- `cinnabar_wall`
 - `minecraft:warped_pressure_plate`
 Warped Pressure Plate
 - `warped_pressure_plate`
@@ -648,6 +652,8 @@ Cyan Candle Cake
 Torch
 - `torch`
 Torch
+- `minecraft:sulfur_bricks`
+- `sulfur_bricks`
 - `minecraft:mud_brick_wall`
 Mud Brick Wall
 - `mud_brick_wall`
@@ -840,6 +846,8 @@ Copper Ore
 Copper Ore
 - `minecraft:dark_oak_planks`
 - `dark_oak_planks`
+- `minecraft:sulfur_brick_double_slab`
+- `sulfur_brick_double_slab`
 - `minecraft:birch_pressure_plate`
 Birch Pressure Plate
 - `birch_pressure_plate`
@@ -968,6 +976,8 @@ Smithing Table
 - `weathered_copper_grate`
 - `minecraft:poppy`
 - `poppy`
+- `minecraft:sulfur_slab`
+- `sulfur_slab`
 - `minecraft:tuff_brick_slab`
 - `tuff_brick_slab`
 - `minecraft:copper_chain`
@@ -1168,6 +1178,8 @@ Polished Blackstone Brick Slab
 Polished Blackstone Brick Slab
 - `minecraft:normal_stone_slab`
 - `normal_stone_slab`
+- `minecraft:sulfur_stairs`
+- `sulfur_stairs`
 - `minecraft:spruce_sapling`
 - `spruce_sapling`
 - `minecraft:yellow_terracotta`
@@ -1220,6 +1232,8 @@ Lapis Block
 Coal Ore
 - `coal_ore`
 Coal Ore
+- `minecraft:cinnabar_double_slab`
+- `cinnabar_double_slab`
 - `minecraft:mossy_stone_brick_double_slab`
 - `mossy_stone_brick_double_slab`
 - `minecraft:cut_red_sandstone_double_slab`
@@ -1242,6 +1256,8 @@ Redstone Ore
 - `bubble_coral_block`
 - `minecraft:infested_chiseled_stone_bricks`
 - `infested_chiseled_stone_bricks`
+- `minecraft:polished_cinnabar_wall`
+- `polished_cinnabar_wall`
 - `minecraft:nether_brick_fence`
 Nether Brick Fence
 - `nether_brick_fence`
@@ -1288,6 +1304,8 @@ Weathered Cut Copper Stairs
 Small Dripleaf Block
 - `small_dripleaf_block`
 Small Dripleaf Block
+- `minecraft:polished_sulfur_stairs`
+- `polished_sulfur_stairs`
 - `minecraft:pink_stained_glass`
 - `pink_stained_glass`
 - `minecraft:waxed_weathered_copper_grate`
@@ -1432,6 +1450,14 @@ Chorus Flower
 - `orange_stained_glass`
 - `minecraft:white_stained_glass_pane`
 - `white_stained_glass_pane`
+- `minecraft:cinnabar_brick_double_slab`
+- `cinnabar_brick_double_slab`
+- `minecraft:polished_cinnabar_double_slab`
+- `polished_cinnabar_double_slab`
+- `minecraft:sulfur_wall`
+- `sulfur_wall`
+- `minecraft:sulfur_brick_stairs`
+- `sulfur_brick_stairs`
 - `minecraft:stripped_birch_wood`
 - `stripped_birch_wood`
 - `minecraft:cracked_nether_bricks`
@@ -1664,6 +1690,10 @@ Jigsaw
 Jigsaw
 - `minecraft:waxed_oxidized_copper_golem_statue`
 - `waxed_oxidized_copper_golem_statue`
+- `minecraft:chiseled_sulfur`
+- `chiseled_sulfur`
+- `minecraft:polished_cinnabar_slab`
+- `polished_cinnabar_slab`
 - `minecraft:prismarine_wall`
 - `prismarine_wall`
 - `minecraft:border_block`
@@ -1702,6 +1732,8 @@ Chiseled Deepslate
 Cut Copper Slab
 - `cut_copper_slab`
 Cut Copper Slab
+- `minecraft:polished_sulfur_double_slab`
+- `polished_sulfur_double_slab`
 - `minecraft:red_stained_glass`
 - `red_stained_glass`
 - `minecraft:pale_oak_wood`
@@ -1830,6 +1862,8 @@ Waxed Double Cut Copper Slab
 Kelp
 - `kelp`
 Kelp
+- `minecraft:sulfur_double_slab`
+- `sulfur_double_slab`
 - `minecraft:waxed_exposed_copper_door`
 - `waxed_exposed_copper_door`
 - `minecraft:deepslate_bricks`
@@ -2020,6 +2054,8 @@ Waxed Oxidized Cut Copper Stairs
 Stripped Acacia Log
 - `stripped_acacia_log`
 Stripped Acacia Log
+- `minecraft:cinnabar_bricks`
+- `cinnabar_bricks`
 - `minecraft:cobbled_deepslate_double_slab`
 Cobbled Deepslate Double Slab
 - `cobbled_deepslate_double_slab`
@@ -2040,6 +2076,8 @@ Sea Pickle
 - `cherry_standing_sign`
 - `minecraft:pale_oak_shelf`
 - `pale_oak_shelf`
+- `minecraft:potent_sulfur`
+- `potent_sulfur`
 - `minecraft:brown_concrete_powder`
 - `brown_concrete_powder`
 - `minecraft:mangrove_hanging_sign`
@@ -2224,6 +2262,8 @@ Magenta Candle Cake
 - `black_terracotta`
 - `minecraft:resin_brick_stairs`
 - `resin_brick_stairs`
+- `minecraft:cinnabar_brick_stairs`
+- `cinnabar_brick_stairs`
 - `minecraft:deepslate_gold_ore`
 Deepslate Gold Ore
 - `deepslate_gold_ore`
@@ -2298,6 +2338,8 @@ Acacia Standing Sign
 Acacia Standing Sign
 - `minecraft:polished_granite_slab`
 - `polished_granite_slab`
+- `minecraft:cinnabar`
+- `cinnabar`
 - `minecraft:smooth_red_sandstone_double_slab`
 - `smooth_red_sandstone_double_slab`
 - `minecraft:tuff_brick_stairs`
@@ -2336,6 +2378,8 @@ Azalea Leaves Flowered
 Sticky Piston Arm Collision
 - `sticky_piston_arm_collision`
 Sticky Piston Arm Collision
+- `minecraft:chiseled_cinnabar`
+- `chiseled_cinnabar`
 - `minecraft:warped_nylium`
 Warped Nylium
 - `warped_nylium`
@@ -2448,6 +2492,8 @@ Cocoa
 Lever
 - `lever`
 Lever
+- `minecraft:cinnabar_stairs`
+- `cinnabar_stairs`
 - `minecraft:bamboo_slab`
 - `bamboo_slab`
 - `minecraft:brick_stairs`
@@ -2644,6 +2690,8 @@ Birch Wall Sign
 - `bamboo_wall_sign`
 - `minecraft:acacia_wood`
 - `acacia_wood`
+- `minecraft:sulfur_brick_wall`
+- `sulfur_brick_wall`
 - `minecraft:gray_stained_glass_pane`
 - `gray_stained_glass_pane`
 - `minecraft:hopper`
@@ -2766,6 +2814,8 @@ Lit Blast Furnace
 Lit Blast Furnace
 - `minecraft:waxed_oxidized_lightning_rod`
 - `waxed_oxidized_lightning_rod`
+- `minecraft:cinnabar_brick_slab`
+- `cinnabar_brick_slab`
 - `minecraft:pink_stained_glass_pane`
 - `pink_stained_glass_pane`
 - `minecraft:light_blue_wool`
@@ -2820,6 +2870,8 @@ Warped Standing Sign
 Warped Standing Sign
 - `minecraft:polished_andesite_double_slab`
 - `polished_andesite_double_slab`
+- `minecraft:polished_cinnabar`
+- `polished_cinnabar`
 - `minecraft:cracked_polished_blackstone_bricks`
 Cracked Polished Blackstone Bricks
 - `cracked_polished_blackstone_bricks`
@@ -2872,6 +2924,8 @@ Prismarine Stairs
 Prismarine Stairs
 - `minecraft:white_carpet`
 - `white_carpet`
+- `minecraft:polished_sulfur_slab`
+- `polished_sulfur_slab`
 - `minecraft:cyan_concrete`
 - `cyan_concrete`
 - `minecraft:polished_tuff_stairs`
@@ -2900,6 +2954,8 @@ Wheat
 Waxed Cut Copper
 - `waxed_cut_copper`
 Waxed Cut Copper
+- `minecraft:sulfur`
+- `sulfur`
 - `minecraft:iron_chain`
 - `iron_chain`
 - `minecraft:resin_brick_slab`
@@ -3082,6 +3138,8 @@ Stonecutter Block
 Stonecutter Block
 - `minecraft:smooth_quartz_slab`
 - `smooth_quartz_slab`
+- `minecraft:sulfur_brick_slab`
+- `sulfur_brick_slab`
 - `minecraft:yellow_concrete_powder`
 - `yellow_concrete_powder`
 - `minecraft:white_candle_cake`
@@ -3100,6 +3158,8 @@ End Portal
 End Portal
 - `minecraft:yellow_stained_glass`
 - `yellow_stained_glass`
+- `minecraft:polished_cinnabar_stairs`
+- `polished_cinnabar_stairs`
 - `minecraft:jungle_double_slab`
 - `jungle_double_slab`
 - `minecraft:polished_granite_double_slab`
@@ -3200,6 +3260,8 @@ Purpur Stairs
 Portal
 - `portal`
 Portal
+- `minecraft:cinnabar_brick_wall`
+- `cinnabar_brick_wall`
 - `minecraft:birch_button`
 Birch Button
 - `birch_button`
@@ -3248,6 +3310,8 @@ Dried Kelp Block
 Crimson Fence
 - `crimson_fence`
 Crimson Fence
+- `minecraft:cinnabar_slab`
+- `cinnabar_slab`
 - `minecraft:chiseled_tuff`
 - `chiseled_tuff`
 - `minecraft:lime_concrete_powder`
@@ -3338,6 +3402,8 @@ Weathered Copper
 Unlit Redstone Torch
 - `unlit_redstone_torch`
 Unlit Redstone Torch
+- `minecraft:polished_sulfur_wall`
+- `polished_sulfur_wall`
 - `minecraft:pale_oak_double_slab`
 - `pale_oak_double_slab`
 - `minecraft:lime_terracotta`

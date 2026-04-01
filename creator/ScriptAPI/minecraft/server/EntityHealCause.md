@@ -24,3 +24,7 @@ Healing caused by regeneration effects.
 `SelfHeal = "SelfHeal"`
 
 Healing caused when hunger is full.
+### **TotemOfUndying**
+`TotemOfUndying = "TotemOfUndying"`
+
+Healing caused when Totem of Undying is activated.

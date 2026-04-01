@@ -147,8 +147,12 @@ Notes:
 setTimeout(timeout: number): HttpRequest
 `
 
+Sets the maximum amount of time, in seconds, before the request times out and is cancelled.
+
 #### **Parameters**
 - **timeout**: *number*
+  
+  The timeout value, in seconds.
 
 **Returns** [*HttpRequest*](HttpRequest.md)
   

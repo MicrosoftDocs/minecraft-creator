@@ -82,3 +82,7 @@ Sets the text to display.
 
 #### **Parameters**
 - **text**: [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) | *string*
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/server.RawMessageError*](../../../scriptapi/minecraft/server/RawMessageError.md)

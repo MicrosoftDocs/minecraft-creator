@@ -150,6 +150,36 @@ Notes:
   - This property can throw errors when used.
     - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **nameplateDepthTested**
+`nameplateDepthTested: boolean;`
+
+Boolean which determines if the player nameplate should be depth tested for visibility.
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can't be edited in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **nameplateRenderDistance**
+`nameplateRenderDistance: number;`
+
+Float that determines the render distance of this entity's nameplate.
+
+Type: *number*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can't be edited in restricted-execution mode.
+::: moniker-end
+
 ### **nameTag**
 `nameTag: string;`
 

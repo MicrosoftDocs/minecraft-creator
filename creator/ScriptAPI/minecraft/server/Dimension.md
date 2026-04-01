@@ -76,6 +76,9 @@ Type: *string*
 - [spawnItem](#spawnitem)
 - [spawnParticle](#spawnparticle)
 ::: moniker range="=minecraft-bedrock-experimental"
+- [spawnXp](#spawnxp)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [stopAllSounds](#stopallsounds)
 ::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -998,6 +1001,32 @@ function spawnParticle(targetLocation: DimensionLocation) {
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/spawnParticle.ts) code sandbox.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **spawnXp**
+`
+spawnXp(location: Vector3, amount: number): void
+`
+
+Spawns an experience orb at a specified location in the dimension.
+
+#### **Parameters**
+- **location**: [*Vector3*](Vector3.md)
+  
+  The location at which to spawn the experience orb.
+- **amount**: *number*
+  * Bounds: [`1`, `12000`]
+  
+  The amount of experience to give the experience orb.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **stopAllSounds**

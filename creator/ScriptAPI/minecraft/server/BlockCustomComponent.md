@@ -20,6 +20,16 @@ This function will be called before a player places the block.
 
 Type: (arg0: [*BlockComponentPlayerPlaceBeforeEvent*](BlockComponentPlayerPlaceBeforeEvent.md), arg1: [*CustomComponentParameters*](CustomComponentParameters.md)) => *void*
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **onBlockStateChange**
+`onBlockStateChange?: (arg0: BlockComponentBlockStateChangeEvent, arg1: CustomComponentParameters) => void;`
+
+Type: (arg0: [*BlockComponentBlockStateChangeEvent*](BlockComponentBlockStateChangeEvent.md), arg1: [*CustomComponentParameters*](CustomComponentParameters.md)) => *void*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **onBreak**
 `onBreak?: (arg0: BlockComponentBlockBreakEvent, arg1: CustomComponentParameters) => void;`
 

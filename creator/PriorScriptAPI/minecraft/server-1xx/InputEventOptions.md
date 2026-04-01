@@ -12,7 +12,7 @@ description: Contents of the @minecraft/server.InputEventOptions class (Version 
 > [!IMPORTANT]
 > This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/InputEventOptions.md).
 
-An interface that is passed into {@link @minecraft/Server.PlayerButtonInputAfterEventSignal.subscribe} that filters out which events are passed to the provided callback.
+An interface that is passed into [*@minecraft/server.PlayerButtonInputAfterEventSignal.subscribe*](../../../priorscriptapi/minecraft/server-1xx/PlayerButtonInputAfterEventSignal.md#subscribe) that filters out which events are passed to the provided callback.
 
 ## Properties
 

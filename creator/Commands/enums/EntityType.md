@@ -180,6 +180,7 @@ Zoglin
 - `minecraft:copper_golem`
 - `minecraft:parched`
 - `minecraft:camel_husk`
+- `minecraft:sulfur_cube`
 - `minecraft:minecart`
 Minecart
 - `minecraft:hopper_minecart`
@@ -383,6 +384,7 @@ Zoglin
 - `copper_golem`
 - `parched`
 - `camel_husk`
+- `sulfur_cube`
 - `minecart`
 Minecart
 - `hopper_minecart`
@@ -426,9 +428,9 @@ Fireworks Rocket
 NPC
 - `editor:ruler_pointer_selected`
 - `editor:location_pointer_idle`
-- `editor:location_pointer_selected`
-- `editor:ruler_idle`
 - `editor:map_marker`
+- `editor:ruler_idle`
+- `editor:location_pointer_selected`
 
 ## References
 The following commands reference this enum:

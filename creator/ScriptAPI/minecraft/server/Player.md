@@ -29,6 +29,67 @@ Type: [*Camera*](Camera.md)
 Notes:
   - This property can throw errors when used.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **chatDisplayName**
+`read-only chatDisplayName: string;`
+
+The player's chat display name, composed from {@link Player.chatNamePrefix} + {@link Player.name} + {@link Player.chatNameSuffix}. This is the name shown as the author of chat messages sent by this player. To change the name shown above the player's head, use {@link Entity.nameTag}.
+
+Type: *string*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **chatMessagePrefix**
+`chatMessagePrefix?: string;`
+
+An optional string that, when set, is prepended to the text of chat messages sent by this player. Useful for applying formatting or color codes to a player's messages (e.g., '§a' to make their messages green). Does not affect the player's name display - use {@link Player.chatNamePrefix} for the name shown in chat, or {@link Entity.nameTag} for the name above the player's head. Set to undefined to clear.
+
+Type: *string*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can't be edited in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **chatNamePrefix**
+`chatNamePrefix?: string;`
+
+An optional string that, when set, is prepended to the player's name in chat messages. Does not affect the name tag above the player's head or the player list - use {@link Entity.nameTag} for that. To prefix the message text itself, use {@link Player.chatMessagePrefix}. Set to undefined to clear.
+
+Type: *string*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can't be edited in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **chatNameSuffix**
+`chatNameSuffix?: string;`
+
+An optional string that, when set, is appended to the player's name in chat messages. Does not affect the name tag above the player's head or the player list - use {@link Entity.nameTag} for that. See also {@link Player.chatNamePrefix}. Set to undefined to clear.
+
+Type: *string*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can't be edited in restricted-execution mode.
+::: moniker-end
+
 ### **clientSystemInfo**
 `read-only clientSystemInfo: ClientSystemInfo;`
 
@@ -155,10 +216,12 @@ Notes:
   - This property can throw errors when used.
 
 ::: moniker range="=minecraft-bedrock-experimental"
-### **partyId**
-`read-only partyId?: string;`
+### **partyInfo**
+`read-only partyInfo?: PartyInfo;`
 
-Type: *string*
+The party information for this player, or undefined if the player is not in a party.
+
+Type: [*PartyInfo*](PartyInfo.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.

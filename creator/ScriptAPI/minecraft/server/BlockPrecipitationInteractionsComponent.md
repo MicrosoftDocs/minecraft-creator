@@ -16,6 +16,9 @@ Represents a how a block interacts with precipitation (such as rain or snow).
 
 ## Methods
 - [accumulatesSnow](#accumulatessnow)
+::: moniker range="=minecraft-bedrock-experimental"
+- [isSnowLoggable](#issnowloggable)
+::: moniker-end
 - [obstructsRain](#obstructsrain)
 
 ### **accumulatesSnow**
@@ -30,6 +33,24 @@ Returns `true` if falling snow will accumulate naturally on the block. Returns `
 Notes:
 - This function can throw errors.
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **isSnowLoggable**
+`
+isSnowLoggable(): boolean
+`
+
+Returns `true` if this block can have snow within it, like a flower submerged in snow. Returns `false` if this block cannot have snow within it.
+
+**Returns** *boolean*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
 
 ### **obstructsRain**
 `

@@ -24,20 +24,30 @@ The `@minecraft/server-graphics` module contains APIs to change graphics and ren
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.20-beta.22 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.20-beta.23 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`
 
 ## Classes
-- [Atmospherics](Atmospherics.md)
+- [BiomeAtmospherics](BiomeAtmospherics.md)
 
-## Objects
+## Functions
+
+### **getBiomeAtmospherics**
+`
+getBiomeAtmospherics(biome: minecraftserver.BiomeType): BiomeAtmospherics
+`
+
+Retrieves the BiomeAtmospherics component to control atmoshperic scattering for Vibrant Visuals.
+
+#### **Parameters**
+- **biome**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
+
+**Returns** [*BiomeAtmospherics*](BiomeAtmospherics.md)
   
-### **atmosphere**
-`static read-only atmosphere: Atmospherics;`
-
-Type: [*Atmospherics*](Atmospherics.md)
+Notes:
+- This function can't be called in restricted-execution mode.
 
 ## Peer Dependencies
 - [`@minecraft/common`](../../../scriptapi/minecraft/common/minecraft-common.md)
