@@ -88,12 +88,17 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`getParts`](Block.md#getparts)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
+#### Added *[`BlockComponentBlockStateChangeEvent`](BlockComponentBlockStateChangeEvent.md)*
+#### Changed *[`BlockComponentRedstoneUpdateEvent`](BlockComponentRedstoneUpdateEvent.md)*
+- Added property *[`firstUpdate`](BlockComponentRedstoneUpdateEvent.md#firstupdate)*
 #### Added *[`BlockContainerClosedAfterEvent`](BlockContainerClosedAfterEvent.md)*
 #### Added *[`BlockContainerClosedAfterEventSignal`](BlockContainerClosedAfterEventSignal.md)*
 #### Added *[`BlockContainerOpenedAfterEvent`](BlockContainerOpenedAfterEvent.md)*
 #### Added *[`BlockContainerOpenedAfterEventSignal`](BlockContainerOpenedAfterEventSignal.md)*
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
 - Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
+#### Changed *[`BlockPrecipitationInteractionsComponent`](BlockPrecipitationInteractionsComponent.md)*
+- Added function *[`isSnowLoggable`](BlockPrecipitationInteractionsComponent.md#issnowloggable)*
 #### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*
 - Added function *[`getBoundingBox`](BlockVolumeBase.md#getboundingbox)*
 #### Changed *[`Camera`](Camera.md)*
@@ -114,9 +119,12 @@ description: Changelog of the `@minecraft/server` module
   - Changed argument `identifier` type from [*EntityType*](EntityType.md) | *string* to *EntityIdentifierType<NoInfer<T>>*
   - Changed argument `location` type from [*Vector3*](Vector3.md) to *Vector3*
   - Changed argument `options` type from [*SpawnEntityOptions*](SpawnEntityOptions.md) to *SpawnEntityOptions*
+- Added function *[`spawnXp`](Dimension.md#spawnxp)*
 - Added function *[`stopAllSounds`](Dimension.md#stopallsounds)*
 - Added function *[`stopSound`](Dimension.md#stopsound)*
 #### Changed *[`Entity`](Entity.md)*
+- Added property *[`nameplateDepthTested`](Entity.md#nameplatedepthtested)*
+- Added property *[`nameplateRenderDistance`](Entity.md#nameplaterenderdistance)*
 - Added property *[`target`](Entity.md#target)*
 - Added function *[`addItem`](Entity.md#additem)*
 #### Changed *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
@@ -141,8 +149,12 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PackSettingChangeAfterEvent`](PackSettingChangeAfterEvent.md)*
 #### Added *[`PackSettingChangeAfterEventSignal`](PackSettingChangeAfterEventSignal.md)*
 #### Changed *[`Player`](Player.md)*
+- Added property *[`chatDisplayName`](Player.md#chatdisplayname)*
+- Added property *[`chatMessagePrefix`](Player.md#chatmessageprefix)*
+- Added property *[`chatNamePrefix`](Player.md#chatnameprefix)*
+- Added property *[`chatNameSuffix`](Player.md#chatnamesuffix)*
 - Added property *[`locatorBar`](Player.md#locatorbar)*
-- Added property *[`partyId`](Player.md#partyid)*
+- Added property *[`partyInfo`](Player.md#partyinfo)*
 - Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`postClientMessage`](Player.md#postclientmessage)*
 - Added function *[`stopAllSounds`](Player.md#stopallsounds)*
@@ -195,6 +207,8 @@ description: Changelog of the `@minecraft/server` module
 #### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
 - Added value `EnderInventory`
 - Added value `Npc`
+#### Changed enum [`EntityHealCause`](EntityHealCause.md)
+- Added value `TotemOfUndying`
 #### Changed enum [`EquipmentSlot`](EquipmentSlot.md)
 - Added value `Body`
 #### Changed enum [`GameRule`](GameRule.md)

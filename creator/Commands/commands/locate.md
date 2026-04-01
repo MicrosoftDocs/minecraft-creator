@@ -122,6 +122,7 @@ Default: `false`.
 - `minecraft:mangrove_swamp`
 - `minecraft:cherry_grove`
 - `minecraft:pale_garden`
+- `minecraft:sulfur_caves`
 
 ### `StructureFeature`
 

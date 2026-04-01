@@ -9,7 +9,7 @@ description: Contents of the @minecraft/server.PlayerSwingEventOptions class.
 ---
 # PlayerSwingEventOptions Interface
 
-An interface that is passed into {@link @minecraft/Server.PlayerSwingStartAfterEvent.subscribe} that filters out which events are passed to the provided callback.
+An interface that is passed into {@link @minecraft/server.PlayerSwingStartAfterEvent.subscribe} that filters out which events are passed to the provided callback.
 
 ## Properties
 

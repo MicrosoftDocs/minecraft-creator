@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.6.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.20-beta.22 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.20-beta.23 of Minecraft.
 
 ## Available Versions
 - `2.8.0-beta`
@@ -150,6 +150,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockBoundingBoxUtils](BlockBoundingBoxUtils.md)
 - [BlockComponent](BlockComponent.md)
 - [BlockComponentBlockBreakEvent](BlockComponentBlockBreakEvent.md)
+- [BlockComponentBlockStateChangeEvent](BlockComponentBlockStateChangeEvent.md)
 - [BlockComponentEntityEvent](BlockComponentEntityEvent.md)
 - [BlockComponentEntityFallOnEvent](BlockComponentEntityFallOnEvent.md)
 - [BlockComponentOnPlaceEvent](BlockComponentOnPlaceEvent.md)
@@ -619,6 +620,7 @@ The following API versions are from a major version that is documented here: [*@
 - [LessThanOrEqualsComparison](LessThanOrEqualsComparison.md)
 - [MusicOptions](MusicOptions.md)
 - [NotEqualsComparison](NotEqualsComparison.md)
+- [PartyInfo](PartyInfo.md)
 - [PlayAnimationOptions](PlayAnimationOptions.md)
 - [PlayerAimAssistSettings](PlayerAimAssistSettings.md)
 - [PlayerSoundOptions](PlayerSoundOptions.md)

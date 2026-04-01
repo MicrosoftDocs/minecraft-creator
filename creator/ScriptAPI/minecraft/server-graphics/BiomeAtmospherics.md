@@ -4,12 +4,12 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server-graphics.Atmospherics Class
-description: Contents of the @minecraft/server-graphics.Atmospherics class.
+title: minecraft/server-graphics.BiomeAtmospherics Class
+description: Contents of the @minecraft/server-graphics.BiomeAtmospherics class.
 ---
-# Atmospherics Class
+# BiomeAtmospherics Class
 
-Used to affect atmospheric scattering for Vibrant Visuals
+Used to affect atmospheric scattering per biome for Vibrant Visuals
 
 ## Methods
 - [resetHorizonBlendMax](#resethorizonblendmax)
@@ -35,15 +35,10 @@ Used to affect atmospheric scattering for Vibrant Visuals
 
 ### **resetHorizonBlendMax**
 `
-resetHorizonBlendMax(biomeIdentifier: minecraftserver.BiomeType): void
+resetHorizonBlendMax(): void
 `
 
 Resets the horizon blend max to the value set by resource packs
-
-#### **Parameters**
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. If the corresponding biome has had its horizon blend max overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -52,15 +47,10 @@ Notes:
 
 ### **resetHorizonBlendMieStart**
 `
-resetHorizonBlendMieStart(biomeIdentifier: minecraftserver.BiomeType): void
+resetHorizonBlendMieStart(): void
 `
 
 Resets the horizon blend mie start to the value set by resource packs
-
-#### **Parameters**
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. If the corresponding biome has had its horizon blend mie start overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -69,15 +59,10 @@ Notes:
 
 ### **resetHorizonBlendMin**
 `
-resetHorizonBlendMin(biomeIdentifier: minecraftserver.BiomeType): void
+resetHorizonBlendMin(): void
 `
 
 Resets the horizon blend min to the value set by resource packs
-
-#### **Parameters**
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. If the corresponding biome has had its horizon blend min overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -86,15 +71,10 @@ Notes:
 
 ### **resetHorizonBlendStart**
 `
-resetHorizonBlendStart(biomeIdentifier: minecraftserver.BiomeType): void
+resetHorizonBlendStart(): void
 `
 
 Resets the horizon blend start to the value set by resource packs
-
-#### **Parameters**
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. If the corresponding biome has had its horizon blend start overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -103,15 +83,10 @@ Notes:
 
 ### **resetMoonMieStrength**
 `
-resetMoonMieStrength(biomeIdentifier: minecraftserver.BiomeType): void
+resetMoonMieStrength(): void
 `
 
 Resets the moon mie strength to the value set by resource packs
-
-#### **Parameters**
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. If the corresponding biome has had its moon mie strength overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -120,15 +95,10 @@ Notes:
 
 ### **resetRayleighStrength**
 `
-resetRayleighStrength(biomeIdentifier: minecraftserver.BiomeType): void
+resetRayleighStrength(): void
 `
 
 Resets the rayleigh strength to the value set by resource packs
-
-#### **Parameters**
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. If the corresponding biome has had its rayleigh strength overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -137,15 +107,10 @@ Notes:
 
 ### **resetSkyHorizonColor**
 `
-resetSkyHorizonColor(biomeIdentifier: minecraftserver.BiomeType): void
+resetSkyHorizonColor(): void
 `
 
 Resets the sky horizon color to the color set by resource packs
-
-#### **Parameters**
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. If the corresponding biome has had its sky horizon color overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -154,15 +119,10 @@ Notes:
 
 ### **resetSkyZenithColor**
 `
-resetSkyZenithColor(biomeIdentifier: minecraftserver.BiomeType): void
+resetSkyZenithColor(): void
 `
 
 Resets the sky zenith color to the color set by resource packs
-
-#### **Parameters**
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. If the corresponding biome has had its sky zenith color overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -171,15 +131,10 @@ Notes:
 
 ### **resetSunGlareShape**
 `
-resetSunGlareShape(biomeIdentifier: minecraftserver.BiomeType): void
+resetSunGlareShape(): void
 `
 
 Resets the sun glare shape to the value set by resource packs
-
-#### **Parameters**
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. If the corresponding biome has had its sun glare shape overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -188,15 +143,10 @@ Notes:
 
 ### **resetSunMieStrength**
 `
-resetSunMieStrength(biomeIdentifier: minecraftserver.BiomeType): void
+resetSunMieStrength(): void
 `
 
 Resets the sun mie strength to the value set by resource packs
-
-#### **Parameters**
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. If the corresponding biome has had its sun mie strength overriden using scripting, then the override value will be removed and the biome will use the value provided by json
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -205,7 +155,7 @@ Notes:
 
 ### **setHorizonBlendMax**
 `
-setHorizonBlendMax(blendMax: number | Record<number, number>, biomeIdentifier: minecraftserver.BiomeType): void
+setHorizonBlendMax(blendMax: number | Record<number, number>): void
 `
 
 Sets the horizon blend max for atmospheric scattering in Vibrant Visuals
@@ -214,9 +164,6 @@ Sets the horizon blend max for atmospheric scattering in Vibrant Visuals
 - **blendMax**: *number* | Record<*number*, *number*>
   
   Either a number (range [0,1]) or a set of keyframes. The keyframes are composed of key value pairs. The key is a number (range [0,1]) to signify a time of day (0.0 and 1.0 are noon, 0.25 is sunset, 0.5 is midnight, and 0.75 is sunrise). The value is also a number (range [0,1])
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. The horizon blend max will be set for the specified biome.
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -225,7 +172,7 @@ Notes:
 
 ### **setHorizonBlendMieStart**
 `
-setHorizonBlendMieStart(blendMieStart: number | Record<number, number>, biomeIdentifier: minecraftserver.BiomeType): void
+setHorizonBlendMieStart(blendMieStart: number | Record<number, number>): void
 `
 
 Sets the horizon blend mie start for atmospheric scattering in Vibrant Visuals
@@ -234,9 +181,6 @@ Sets the horizon blend mie start for atmospheric scattering in Vibrant Visuals
 - **blendMieStart**: *number* | Record<*number*, *number*>
   
   Either a number (range [0,1.2]) or a set of keyframes. The keyframes are composed of key value pairs. The key is a number (range [0,1]) to signify a time of day (0.0 and 1.0 are noon, 0.25 is sunset, 0.5 is midnight, and 0.75 is sunrise). The value is also a number (range [0,1.2])
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. The horizon blend mie start will be set for the specified biome.
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -245,7 +189,7 @@ Notes:
 
 ### **setHorizonBlendMin**
 `
-setHorizonBlendMin(blendMin: number | Record<number, number>, biomeIdentifier: minecraftserver.BiomeType): void
+setHorizonBlendMin(blendMin: number | Record<number, number>): void
 `
 
 Sets the horizon blend min for atmospheric scattering in Vibrant Visuals
@@ -254,9 +198,6 @@ Sets the horizon blend min for atmospheric scattering in Vibrant Visuals
 - **blendMin**: *number* | Record<*number*, *number*>
   
   Either a number (range [0,1]) or a set of keyframes. The keyframes are composed of key value pairs. The key is a number (range [0,1]) to signify a time of day (0.0 and 1.0 are noon, 0.25 is sunset, 0.5 is midnight, and 0.75 is sunrise). The value is also a number (range [0,1])
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. The horizon blend min will be set for the specified biome.
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -265,7 +206,7 @@ Notes:
 
 ### **setHorizonBlendStart**
 `
-setHorizonBlendStart(blendStart: number | Record<number, number>, biomeIdentifier: minecraftserver.BiomeType): void
+setHorizonBlendStart(blendStart: number | Record<number, number>): void
 `
 
 Sets the horizon blend start for atmospheric scattering in Vibrant Visuals
@@ -274,9 +215,6 @@ Sets the horizon blend start for atmospheric scattering in Vibrant Visuals
 - **blendStart**: *number* | Record<*number*, *number*>
   
   Either a number (range [0,1]) or a set of keyframes. The keyframes are composed of key value pairs. The key is a number (range [0,1]) to signify a time of day (0.0 and 1.0 are noon, 0.25 is sunset, 0.5 is midnight, and 0.75 is sunrise). The value is also a number (range [0,1])
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. The horizon blend start will be set for the specified biome.
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -285,7 +223,7 @@ Notes:
 
 ### **setMoonMieStrength**
 `
-setMoonMieStrength(moonMieStrength: number | Record<number, number>, biomeIdentifier: minecraftserver.BiomeType): void
+setMoonMieStrength(moonMieStrength: number | Record<number, number>): void
 `
 
 Sets the moon mie strength for atmospheric scattering in Vibrant Visuals
@@ -294,9 +232,6 @@ Sets the moon mie strength for atmospheric scattering in Vibrant Visuals
 - **moonMieStrength**: *number* | Record<*number*, *number*>
   
   Either a number (range [0,60]) or a set of keyframes. The keyframes are composed of key value pairs. The key is a number (range [0,1]) to signify a time of day (0.0 and 1.0 are noon, 0.25 is sunset, 0.5 is midnight, and 0.75 is sunrise). The value is also a number (range [0,60])
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. The moon mie strength will be set for the specified biome.
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -305,7 +240,7 @@ Notes:
 
 ### **setRayleighStrength**
 `
-setRayleighStrength(rayleighStrength: number | Record<number, number>, biomeIdentifier: minecraftserver.BiomeType): void
+setRayleighStrength(rayleighStrength: number | Record<number, number>): void
 `
 
 Sets the rayleigh strength for atmospheric scattering in Vibrant Visuals
@@ -314,9 +249,6 @@ Sets the rayleigh strength for atmospheric scattering in Vibrant Visuals
 - **rayleighStrength**: *number* | Record<*number*, *number*>
   
   Either a number (range [0,11]) or a set of keyframes. The keyframes are composed of key value pairs. The key is a number (range [0,1]) to signify a time of day (0.0 and 1.0 are noon, 0.25 is sunset, 0.5 is midnight, and 0.75 is sunrise). The value is also a number (range [0,11])
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. The rayleigh strength will be set for the specified biome.
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -325,7 +257,7 @@ Notes:
 
 ### **setSkyHorizonColor**
 `
-setSkyHorizonColor(color: Record<number, minecraftserver.RGB> | minecraftserver.RGB, biomeIdentifier: minecraftserver.BiomeType): void
+setSkyHorizonColor(color: Record<number, minecraftserver.RGB> | minecraftserver.RGB): void
 `
 
 Sets the sky horizon color for atmospheric scattering in Vibrant Visuals
@@ -334,9 +266,6 @@ Sets the sky horizon color for atmospheric scattering in Vibrant Visuals
 - **color**: Record<*number*, [*@minecraft/server.RGB*](../../../scriptapi/minecraft/server/RGB.md)> | [*@minecraft/server.RGB*](../../../scriptapi/minecraft/server/RGB.md)
   
   Either a RGB triplet or a set of keyframes. The keyframes are composed of key value pairs. The key is a number (range [0,1]) to signify a time of day (0.0 and 1.0 are noon, 0.25 is sunset, 0.5 is midnight, and 0.75 is sunrise). The value is a RGB triplet
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. The sky horizon color will be set for the specified biome.
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -345,7 +274,7 @@ Notes:
 
 ### **setSkyZenithColor**
 `
-setSkyZenithColor(color: Record<number, minecraftserver.RGB> | minecraftserver.RGB, biomeIdentifier: minecraftserver.BiomeType): void
+setSkyZenithColor(color: Record<number, minecraftserver.RGB> | minecraftserver.RGB): void
 `
 
 Sets the sky zenith color for atmospheric scattering in Vibrant Visuals
@@ -354,9 +283,6 @@ Sets the sky zenith color for atmospheric scattering in Vibrant Visuals
 - **color**: Record<*number*, [*@minecraft/server.RGB*](../../../scriptapi/minecraft/server/RGB.md)> | [*@minecraft/server.RGB*](../../../scriptapi/minecraft/server/RGB.md)
   
   Either a RGB triplet or a set of keyframes. The keyframes are composed of key value pairs. The key is a float in the range 0-1 to signify a time of day and the value is a RGB triplet
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. The sky zenith color will be set for the specified biome.
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -365,7 +291,7 @@ Notes:
 
 ### **setSunGlareShape**
 `
-setSunGlareShape(sunGlareShape: number | Record<number, number>, biomeIdentifier: minecraftserver.BiomeType): void
+setSunGlareShape(sunGlareShape: number | Record<number, number>): void
 `
 
 Sets the sun glare shape for atmospheric scattering in Vibrant Visuals
@@ -374,9 +300,6 @@ Sets the sun glare shape for atmospheric scattering in Vibrant Visuals
 - **sunGlareShape**: *number* | Record<*number*, *number*>
   
   Either a number (range [0,50]) or a set of keyframes. The keyframes are composed of key value pairs. The key is a number (range [0,1]) to signify a time of day (0.0 and 1.0 are noon, 0.25 is sunset, 0.5 is midnight, and 0.75 is sunrise). The value is also a number (range [0,50])
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. The sun glare shape will be set for the specified biome.
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -385,7 +308,7 @@ Notes:
 
 ### **setSunMieStrength**
 `
-setSunMieStrength(sunMieStrength: number | Record<number, number>, biomeIdentifier: minecraftserver.BiomeType): void
+setSunMieStrength(sunMieStrength: number | Record<number, number>): void
 `
 
 Sets the sun mie strength for atmospheric scattering in Vibrant Visuals
@@ -394,9 +317,6 @@ Sets the sun mie strength for atmospheric scattering in Vibrant Visuals
 - **sunMieStrength**: *number* | Record<*number*, *number*>
   
   Either a number (range [0,60]) or a set of keyframes. The keyframes are composed of key value pairs. The key is a number (range [0,1]) to signify a time of day (0.0 and 1.0 are noon, 0.25 is sunset, 0.5 is midnight, and 0.75 is sunrise). The value is also a number (range [0,60])
-- **biomeIdentifier**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
-  
-  Biome Identifier. The sun mie will be set for the specified biome.
   
 Notes:
 - This function can't be called in restricted-execution mode.
