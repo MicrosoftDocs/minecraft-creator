@@ -55,6 +55,16 @@ The location of the shape. For most shapes the location is the centre of the sha
 
 Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
+### **maximumRenderDistance**
+`maximumRenderDistance?: number;`
+
+If defined, this distance will be used to determine how far away this shape will be rendered for each client. By default the distance will match the client's render distance setting.
+
+Type: *number*
+
+Notes:
+  - This property has a minimum bound of `0`
+
 ### **rotation**
 `rotation: minecraftserver.Vector3;`
 

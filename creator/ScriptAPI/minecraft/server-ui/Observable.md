@@ -17,6 +17,7 @@ A class that represents data that can be Observed. Extensively used for UI.
 
 ## Methods
 - [getData](#getdata)
+- [getFilteredText](#getfilteredtext)
 - [setData](#setdata)
 - [subscribe](#subscribe)
 - [toJSON](#tojson)
@@ -31,6 +32,19 @@ getData(): T
 Gets the data from the Observable.
 
 **Returns** *T*
+
+### **getFilteredText**
+`
+getFilteredText(this: Observable<T & string>, player: minecraftserver.Player): Promise<string | TextFilteringError[]>
+`
+
+Gets filtered data from the Observable (only available for strings). In case of failure, it will return an array of TextFilteringError that can provide more context about the filtering process. For testing purposes, the options are available under "Creator -> Text Filtering" settings menu. This delay is only applied to the getFilteredText function and can be used to simulate network latency when testing.
+
+#### **Parameters**
+- **this**: *Observable<T & string>*
+- **player**: *minecraftserver.Player*
+
+**Returns** *Promise<string | TextFilteringError[]>*
 
 ### **setData**
 `

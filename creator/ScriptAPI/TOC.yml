@@ -214,6 +214,8 @@
       href: minecraft/server/BlockComponent.md
     - name: BlockComponentBlockBreakEvent
       href: minecraft/server/BlockComponentBlockBreakEvent.md
+    - name: BlockComponentBlockStateChangeEvent
+      href: minecraft/server/BlockComponentBlockStateChangeEvent.md
     - name: BlockComponentEntityEvent
       href: minecraft/server/BlockComponentEntityEvent.md
     - name: BlockComponentEntityFallOnEvent
@@ -1148,6 +1150,8 @@
       href: minecraft/server/MusicOptions.md
     - name: NotEqualsComparison
       href: minecraft/server/NotEqualsComparison.md
+    - name: PartyInfo
+      href: minecraft/server/PartyInfo.md
     - name: PlayAnimationOptions
       href: minecraft/server/PlayAnimationOptions.md
     - name: PlayerAimAssistSettings
@@ -2084,8 +2088,8 @@
       href: minecraft/server-graphics/minecraft-server-graphics.md
     - name: minecraft/server-graphics Changelog
       href: minecraft/server-graphics/changelog.md
-    - name: Atmospherics
-      href: minecraft/server-graphics/Atmospherics.md
+    - name: BiomeAtmospherics
+      href: minecraft/server-graphics/BiomeAtmospherics.md
   - name: minecraft/server-net
     items:
     - name: minecraft/server-net
@@ -2142,6 +2146,8 @@
       href: minecraft/server-ui/FormCancelationReason.md
     - name: FormRejectReason
       href: minecraft/server-ui/FormRejectReason.md
+    - name: TextFilteringError
+      href: minecraft/server-ui/TextFilteringError.md
     - name: ActionFormData
       href: minecraft/server-ui/ActionFormData.md
     - name: ActionFormResponse

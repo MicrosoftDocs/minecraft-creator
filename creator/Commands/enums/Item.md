@@ -114,6 +114,8 @@ Red Nether Brick
 Red Nether Brick
 - `minecraft:brick_wall`
 - `brick_wall`
+- `minecraft:polished_sulfur`
+- `polished_sulfur`
 - `minecraft:cobbled_deepslate_stairs`
 Cobbled Deepslate Stairs
 - `cobbled_deepslate_stairs`
@@ -222,6 +224,8 @@ Deepslate
 - `waxed_exposed_chiseled_copper`
 - `minecraft:tuff_slab`
 - `tuff_slab`
+- `minecraft:cinnabar_wall`
+- `cinnabar_wall`
 - `minecraft:warped_pressure_plate`
 Warped Pressure Plate
 - `warped_pressure_plate`
@@ -542,6 +546,8 @@ Waxed Oxidized Cut Copper Slab
 Torch
 - `torch`
 Torch
+- `minecraft:sulfur_bricks`
+- `sulfur_bricks`
 - `minecraft:mud_brick_wall`
 Mud Brick Wall
 - `mud_brick_wall`
@@ -832,6 +838,8 @@ Smithing Table
 - `weathered_copper_grate`
 - `minecraft:poppy`
 - `poppy`
+- `minecraft:sulfur_slab`
+- `sulfur_slab`
 - `minecraft:tuff_brick_slab`
 - `tuff_brick_slab`
 - `minecraft:copper_chain`
@@ -1010,6 +1018,8 @@ Polished Blackstone Brick Slab
 Polished Blackstone Brick Slab
 - `minecraft:normal_stone_slab`
 - `normal_stone_slab`
+- `minecraft:sulfur_stairs`
+- `sulfur_stairs`
 - `minecraft:spruce_sapling`
 - `spruce_sapling`
 - `minecraft:yellow_terracotta`
@@ -1074,6 +1084,8 @@ Redstone Ore
 - `bubble_coral_block`
 - `minecraft:infested_chiseled_stone_bricks`
 - `infested_chiseled_stone_bricks`
+- `minecraft:polished_cinnabar_wall`
+- `polished_cinnabar_wall`
 - `minecraft:nether_brick_fence`
 Nether Brick Fence
 - `nether_brick_fence`
@@ -1118,6 +1130,8 @@ Weathered Cut Copper Stairs
 Small Dripleaf Block
 - `small_dripleaf_block`
 Small Dripleaf Block
+- `minecraft:polished_sulfur_stairs`
+- `polished_sulfur_stairs`
 - `minecraft:pink_stained_glass`
 - `pink_stained_glass`
 - `minecraft:waxed_weathered_copper_grate`
@@ -1240,6 +1254,10 @@ Chorus Flower
 - `orange_stained_glass`
 - `minecraft:white_stained_glass_pane`
 - `white_stained_glass_pane`
+- `minecraft:sulfur_wall`
+- `sulfur_wall`
+- `minecraft:sulfur_brick_stairs`
+- `sulfur_brick_stairs`
 - `minecraft:stripped_birch_wood`
 - `stripped_birch_wood`
 - `minecraft:cracked_nether_bricks`
@@ -1434,6 +1452,10 @@ Jigsaw
 Jigsaw
 - `minecraft:waxed_oxidized_copper_golem_statue`
 - `waxed_oxidized_copper_golem_statue`
+- `minecraft:chiseled_sulfur`
+- `chiseled_sulfur`
+- `minecraft:polished_cinnabar_slab`
+- `polished_cinnabar_slab`
 - `minecraft:prismarine_wall`
 - `prismarine_wall`
 - `minecraft:border_block`
@@ -1746,6 +1768,8 @@ Waxed Oxidized Cut Copper Stairs
 Stripped Acacia Log
 - `stripped_acacia_log`
 Stripped Acacia Log
+- `minecraft:cinnabar_bricks`
+- `cinnabar_bricks`
 - `minecraft:warped_fence`
 Warped Fence
 - `warped_fence`
@@ -1760,6 +1784,8 @@ Sea Pickle
 Sea Pickle
 - `minecraft:pale_oak_shelf`
 - `pale_oak_shelf`
+- `minecraft:potent_sulfur`
+- `potent_sulfur`
 - `minecraft:brown_concrete_powder`
 - `brown_concrete_powder`
 - `minecraft:mangrove_hanging_sign`
@@ -1904,6 +1930,8 @@ Prismarine
 - `black_terracotta`
 - `minecraft:resin_brick_stairs`
 - `resin_brick_stairs`
+- `minecraft:cinnabar_brick_stairs`
+- `cinnabar_brick_stairs`
 - `minecraft:deepslate_gold_ore`
 Deepslate Gold Ore
 - `deepslate_gold_ore`
@@ -1972,6 +2000,8 @@ Polished Blackstone Pressure Plate
 Polished Blackstone Pressure Plate
 - `minecraft:polished_granite_slab`
 - `polished_granite_slab`
+- `minecraft:cinnabar`
+- `cinnabar`
 - `minecraft:tuff_brick_stairs`
 - `tuff_brick_stairs`
 - `minecraft:blue_shulker_box`
@@ -2000,6 +2030,8 @@ Stripped Spruce Lo
 Azalea Leaves Flowered
 - `azalea_leaves_flowered`
 Azalea Leaves Flowered
+- `minecraft:chiseled_cinnabar`
+- `chiseled_cinnabar`
 - `minecraft:warped_nylium`
 Warped Nylium
 - `warped_nylium`
@@ -2102,6 +2134,8 @@ Stripped Crimson Hyphae
 Lever
 - `lever`
 Lever
+- `minecraft:cinnabar_stairs`
+- `cinnabar_stairs`
 - `minecraft:bamboo_slab`
 - `bamboo_slab`
 - `minecraft:brick_stairs`
@@ -2278,6 +2312,8 @@ Mud Bricks
 Mud Bricks
 - `minecraft:acacia_wood`
 - `acacia_wood`
+- `minecraft:sulfur_brick_wall`
+- `sulfur_brick_wall`
 - `minecraft:gray_stained_glass_pane`
 - `gray_stained_glass_pane`
 - `minecraft:hopper`
@@ -2384,6 +2420,8 @@ Lantern
 - `red_stained_glass_pane`
 - `minecraft:waxed_oxidized_lightning_rod`
 - `waxed_oxidized_lightning_rod`
+- `minecraft:cinnabar_brick_slab`
+- `cinnabar_brick_slab`
 - `minecraft:pink_stained_glass_pane`
 - `pink_stained_glass_pane`
 - `minecraft:light_blue_wool`
@@ -2432,6 +2470,8 @@ Deepslate Coal Ore
 Weathered Cut Copper
 - `weathered_cut_copper`
 Weathered Cut Copper
+- `minecraft:polished_cinnabar`
+- `polished_cinnabar`
 - `minecraft:cracked_polished_blackstone_bricks`
 Cracked Polished Blackstone Bricks
 - `cracked_polished_blackstone_bricks`
@@ -2474,6 +2514,8 @@ Prismarine Stairs
 Prismarine Stairs
 - `minecraft:white_carpet`
 - `white_carpet`
+- `minecraft:polished_sulfur_slab`
+- `polished_sulfur_slab`
 - `minecraft:cyan_concrete`
 - `cyan_concrete`
 - `minecraft:polished_tuff_stairs`
@@ -2502,6 +2544,8 @@ Wheat
 Waxed Cut Copper
 - `waxed_cut_copper`
 Waxed Cut Copper
+- `minecraft:sulfur`
+- `sulfur`
 - `minecraft:iron_chain`
 - `iron_chain`
 - `minecraft:resin_brick_slab`
@@ -2654,12 +2698,16 @@ Stonecutter Block
 Stonecutter Block
 - `minecraft:smooth_quartz_slab`
 - `smooth_quartz_slab`
+- `minecraft:sulfur_brick_slab`
+- `sulfur_brick_slab`
 - `minecraft:yellow_concrete_powder`
 - `yellow_concrete_powder`
 - `minecraft:lime_stained_glass_pane`
 - `lime_stained_glass_pane`
 - `minecraft:yellow_stained_glass`
 - `yellow_stained_glass`
+- `minecraft:polished_cinnabar_stairs`
+- `polished_cinnabar_stairs`
 - `minecraft:spruce_wood`
 - `spruce_wood`
 - `minecraft:blackstone`
@@ -2732,6 +2780,8 @@ Purpur Stairs
 - `tube_coral`
 - `minecraft:waxed_copper_door`
 - `waxed_copper_door`
+- `minecraft:cinnabar_brick_wall`
+- `cinnabar_brick_wall`
 - `minecraft:birch_button`
 Birch Button
 - `birch_button`
@@ -2776,6 +2826,8 @@ Dried Kelp Block
 Crimson Fence
 - `crimson_fence`
 Crimson Fence
+- `minecraft:cinnabar_slab`
+- `cinnabar_slab`
 - `minecraft:chiseled_tuff`
 - `chiseled_tuff`
 - `minecraft:lime_concrete_powder`
@@ -2850,6 +2902,8 @@ Weathered Copper
 Weathered Copper
 - `minecraft:mossy_stone_brick_wall`
 - `mossy_stone_brick_wall`
+- `minecraft:polished_sulfur_wall`
+- `polished_sulfur_wall`
 - `minecraft:lime_terracotta`
 - `lime_terracotta`
 - `minecraft:cherry_fence_gate`
@@ -3646,6 +3700,8 @@ Endermite Spawn Egg
 Shulker Spawn Egg
 - `shulker_spawn_egg`
 Shulker Spawn Egg
+- `minecraft:sulfur_cube_spawn_egg`
+- `sulfur_cube_spawn_egg`
 - `editor:map_marker_spawn_egg`
 - `minecraft:chorus_fruit`
 Chorus Fruit
@@ -4765,6 +4821,8 @@ Firework Star
 - `trial_key`
 - `minecraft:ominous_trial_key`
 - `ominous_trial_key`
+- `minecraft:sulfur_cube_bucket`
+- `sulfur_cube_bucket`
 - `speckled_melon`
 Speckled Melon
 - `nametag`

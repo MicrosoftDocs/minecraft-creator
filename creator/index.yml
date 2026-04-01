@@ -181,7 +181,7 @@ conceptualContent:
       - title: Using Script APIs
         summary: "Learn how new Script APIs can speed up your development time and make more dynamic content."
         links:
-          - url:  Documents/ScriptingIntroduction.md
+          - url:  Documents/Scripting/introduction.md
             itemType: get-started
             text: Getting Started with Scripting APIs
           - url: ScriptAPI/index.yml

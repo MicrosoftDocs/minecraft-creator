@@ -33,6 +33,7 @@ description: Contents of the @minecraft/server.BlockEvent class.
 - [*TripWireTripAfterEvent*](TripWireTripAfterEvent.md)
 - [*BlockComponentBlockBreakEvent*](BlockComponentBlockBreakEvent.md)
 - [*BlockComponentEntityEvent*](BlockComponentEntityEvent.md)
+- [*BlockComponentBlockStateChangeEvent*](BlockComponentBlockStateChangeEvent.md)
 - [*BlockContainerClosedAfterEvent*](BlockContainerClosedAfterEvent.md)
 - [*BlockContainerOpenedAfterEvent*](BlockContainerOpenedAfterEvent.md)
 - [*PlayerPlaceBlockBeforeEvent*](PlayerPlaceBlockBeforeEvent.md)

@@ -9,7 +9,7 @@ description: Contents of the @minecraft/server.EntityItemPickupEventOptions clas
 ---
 # EntityItemPickupEventOptions Interface
 
-An interface that is passed into {@link @minecraft/Server.EntityItemPickupAfterEventSignal.subscribe} and {@link @minecraft/Server.EntityItemPickupBeforeEventSignal.subscribe} that filters out which events are passed to the provided callback.
+An interface that is passed into [*@minecraft/server.EntityItemPickupAfterEventSignal.subscribe*](../../../scriptapi/minecraft/server/EntityItemPickupAfterEventSignal.md#subscribe) and [*@minecraft/server.EntityItemPickupBeforeEventSignal.subscribe*](../../../scriptapi/minecraft/server/EntityItemPickupBeforeEventSignal.md#subscribe) that filters out which events are passed to the provided callback.
 
 ## Properties
 

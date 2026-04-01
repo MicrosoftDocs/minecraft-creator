@@ -210,6 +210,7 @@ Totem of Undying
 - `minecraft:iron_spear`
 - `minecraft:white_stained_glass_pane`
 - `minecraft:black_bundle`
+- `minecraft:cinnabar_slab`
 - `minecraft:item.mangrove_door`
 Mangrove Door
 - `minecraft:endermite_spawn_egg`
@@ -380,6 +381,7 @@ Smooth Stone
 Beetroot
 - `minecraft:music_disc_strad`
 Music Disc Strad
+- `minecraft:chiseled_cinnabar`
 - `minecraft:iron_sword`
 Iron Sword
 - `minecraft:trial_key`
@@ -388,6 +390,7 @@ Iron Sword
 Lantern
 - `minecraft:torchflower_seeds`
 - `minecraft:green_harness`
+- `minecraft:cinnabar_bricks`
 - `minecraft:resin_brick`
 - `minecraft:white_candle`
 White Candle
@@ -488,6 +491,7 @@ Horse Spawn Egg
 - `minecraft:baked_potato`
 Baked Potato
 - `minecraft:pink_tulip`
+- `minecraft:cinnabar_brick_stairs`
 - `minecraft:chiseled_copper`
 - `minecraft:obsidian`
 Obsidian
@@ -575,11 +579,11 @@ Music Disc Mall
 - `minecraft:camel_husk_spawn_egg`
 - `minecraft:hay_block`
 Hay Block
+- `minecraft:music_disc_creator_music_box`
 - `minecraft:nautilus_shell`
 Nautilus Shell
 - `minecraft:wooden_shovel`
 Wooden Shovel
-- `minecraft:music_disc_creator_music_box`
 - `minecraft:zombie_pigman_spawn_egg`
 Zombie Pigman Spawn Egg
 - `minecraft:crimson_trapdoor`
@@ -660,6 +664,7 @@ Golden Sword
 Lit Deepslate Redstone Ore
 - `minecraft:golden_shovel`
 Golden Shovel
+- `minecraft:cinnabar_double_slab`
 - `minecraft:elytra`
 Elytra
 - `minecraft:green_wool`
@@ -671,6 +676,7 @@ Golden Pickaxe
 [Education Edition] Tellurium (Te)
 - `minecraft:golden_axe`
 Golden Axe
+- `minecraft:sulfur_cube_spawn_egg`
 - `minecraft:string`
 String
 - `minecraft:feather`
@@ -692,6 +698,7 @@ Stone Hoe
 - `minecraft:panda_spawn_egg`
 Panda Spawn Egg
 - `minecraft:brown_terracotta`
+- `minecraft:cinnabar_wall`
 - `minecraft:iron_hoe`
 Iron Hoe
 - `minecraft:diamond_hoe`
@@ -716,6 +723,7 @@ Leather Helmet
 Leather Chestplate
 - `minecraft:leather_leggings`
 Leather Leggings
+- `minecraft:sulfur_slab`
 - `minecraft:glistering_melon_slice`
 Glistering Melon Slice
 - `minecraft:lodestone`
@@ -832,6 +840,7 @@ Crimson Pressure Plate
 Spruce Fence Gate
 - `minecraft:exposed_cut_copper_slab`
 Exposed Cut Copper Slab
+- `minecraft:polished_cinnabar_wall`
 - `minecraft:tropical_fish_bucket`
 Tropical Fish Bucket
 - `minecraft:pufferfish_bucket`
@@ -874,6 +883,7 @@ Elder Guardian Spawn Egg
 Crossbow
 - `minecraft:waxed_weathered_copper_bars`
 - `minecraft:dead_fire_coral_wall_fan`
+- `minecraft:sulfur_bricks`
 - `minecraft:white_shulker_box`
 - `minecraft:activator_rail`
 Activator Rail
@@ -927,6 +937,7 @@ Sugar Cane
 - `minecraft:paper`
 Paper
 - `minecraft:granite`
+- `minecraft:sulfur_cube_bucket`
 - `minecraft:magenta_shulker_box`
 - `minecraft:element_23`
 [Education Edition] Vanadium (V)
@@ -954,6 +965,8 @@ Egg
 - `minecraft:fishing_rod`
 Fishing Rod
 - `minecraft:bogged_spawn_egg`
+- `minecraft:sulfur_brick_stairs`
+- `minecraft:sulfur_wall`
 - `minecraft:clock`
 Clock
 - `minecraft:jungle_sapling`
@@ -1007,6 +1020,7 @@ Music Disc 13
 Cyan Dye
 - `minecraft:orange_wool`
 - `minecraft:andesite_double_slab`
+- `minecraft:sulfur_brick_double_slab`
 - `minecraft:blaze_rod`
 Blaze Rod
 - `minecraft:oak_planks`
@@ -1065,9 +1079,9 @@ Flower Pot
 Bone Meal
 - `minecraft:turtle_helmet`
 Turtle Helmet
+- `minecraft:compound_creator`
 - `minecraft:ink_sac`
 Ink Sac
-- `minecraft:compound_creator`
 - `minecraft:stripped_crimson_stem`
 Stripped Crimson Stem
 - `minecraft:camera`
@@ -1276,9 +1290,9 @@ Dolphin Spawn Egg
 Turtle Spawn Egg
 - `minecraft:double_cut_copper_slab`
 Double Cut Copper Slab
+- `minecraft:element_constructor`
 - `minecraft:phantom_spawn_egg`
 Phantom Spawn Egg
-- `minecraft:element_constructor`
 - `minecraft:item.acacia_door`
 Acacia Door
 - `minecraft:oxidized_cut_copper_slab`
@@ -1323,6 +1337,7 @@ Goat Spawn Egg
 Glow Ink Sac
 - `minecraft:copper_ingot`
 Copper Ingot
+- `minecraft:polished_sulfur_slab`
 - `minecraft:orange_candle_cake`
 Orange Candle Cake
 - `minecraft:copper_block`
@@ -1768,6 +1783,7 @@ Skull
 - `minecraft:cracked_deepslate_tiles`
 Cracked Deepslate Tiles
 - `minecraft:white_terracotta`
+- `minecraft:polished_cinnabar_stairs`
 - `minecraft:copper_nugget`
 - `minecraft:cracked_polished_blackstone_bricks`
 Cracked Polished Blackstone Bricks
@@ -1894,6 +1910,14 @@ Barrier
 - `minecraft:iron_nautilus_armor`
 - `minecraft:acacia_double_slab`
 - `minecraft:golden_nautilus_armor`
+- `minecraft:andesite_slab`
+- `minecraft:bubble_coral`
+- `minecraft:hard_black_stained_glass_pane`
+- `minecraft:sulfur_brick_slab`
+- `minecraft:element_67`
+[Education Edition] Holmium (Ho)
+- `minecraft:polished_cinnabar_slab`
+- `minecraft:cinnabar_brick_slab`
 - `minecraft:nether_brick_stairs`
 Nether Brick Stairs
 - `minecraft:white_wool`
@@ -1924,6 +1948,7 @@ Deepslate Brick Stairs
 - `minecraft:hard_black_stained_glass`
 - `minecraft:light_blue_carpet`
 - `minecraft:gray_carpet`
+- `minecraft:polished_sulfur`
 - `minecraft:light_gray_carpet`
 - `minecraft:oak_log`
 - `minecraft:birch_log`
@@ -1982,8 +2007,6 @@ Leaves 2
 Lectern
 - `minecraft:dead_brain_coral`
 - `minecraft:polished_andesite_slab`
-- `minecraft:andesite_slab`
-- `minecraft:bubble_coral`
 - `minecraft:diorite_slab`
 - `minecraft:prismarine_bricks`
 - `minecraft:granite_slab`
@@ -2018,6 +2041,7 @@ Border Block
 [Education Edition] Neon (Ne)
 - `minecraft:polished_granite_double_slab`
 - `minecraft:mossy_stone_brick_double_slab`
+- `minecraft:chiseled_sulfur`
 - `minecraft:dead_fire_coral`
 - `minecraft:purple_stained_glass_pane`
 - `minecraft:smooth_quartz_double_slab`
@@ -2080,6 +2104,7 @@ Warped Roots
 - `minecraft:allium`
 - `minecraft:cornflower`
 - `minecraft:lime_concrete`
+- `minecraft:polished_sulfur_double_slab`
 - `minecraft:large_fern`
 - `minecraft:red_flower`
 Red Flower
@@ -2161,7 +2186,6 @@ Lime Candle
 - `minecraft:black_concrete`
 - `minecraft:yellow_concrete_powder`
 - `minecraft:pink_concrete_powder`
-- `minecraft:music_disc_lava_chicken`
 - `minecraft:spruce_trapdoor`
 Spruce Trapdoor
 - `minecraft:firefly_bush`
@@ -2169,6 +2193,7 @@ Spruce Trapdoor
 - `minecraft:purple_concrete_powder`
 - `minecraft:blue_concrete_powder`
 - `minecraft:green_concrete_powder`
+- `minecraft:sulfur`
 - `minecraft:red_concrete_powder`
 - `minecraft:black_concrete_powder`
 - `minecraft:concrete_powder`
@@ -2241,10 +2266,11 @@ Bell
 - `minecraft:dark_oak_wood`
 - `minecraft:stripped_oak_wood`
 - `minecraft:stripped_birch_wood`
-- `minecraft:stripped_dark_oak_wood`
 - `minecraft:music_disc_creator`
+- `minecraft:stripped_dark_oak_wood`
 - `minecraft:music_disc_precipice`
 - `minecraft:music_disc_tears`
+- `minecraft:music_disc_lava_chicken`
 - `minecraft:material_reducer`
 - `minecraft:lab_table`
 - `minecraft:chemistry_table`
@@ -2259,6 +2285,7 @@ Cobbled Deepslate
 - `minecraft:hard_yellow_stained_glass`
 - `minecraft:hard_lime_stained_glass`
 - `minecraft:hard_gray_stained_glass`
+- `minecraft:potent_sulfur`
 - `minecraft:hard_light_gray_stained_glass`
 - `minecraft:hard_cyan_stained_glass`
 - `minecraft:crimson_double_slab`
@@ -2282,7 +2309,6 @@ Carrots
 - `minecraft:hard_light_gray_stained_glass_pane`
 - `minecraft:hard_purple_stained_glass_pane`
 - `minecraft:hard_blue_stained_glass_pane`
-- `minecraft:hard_black_stained_glass_pane`
 - `minecraft:hard_stained_glass_pane`
 [Education Edition] Hard Stained Glass Pane
 - `minecraft:gravel`
@@ -2319,6 +2345,7 @@ Slime
 Pumpkin
 - `minecraft:crimson_slab`
 Crimson Slab
+- `minecraft:polished_sulfur_wall`
 - `minecraft:candle`
 Candle
 - `minecraft:orange_candle`
@@ -2436,8 +2463,6 @@ Crafting Table
 [Education Edition] Terbium (Tb)
 - `minecraft:element_66`
 [Education Edition] Dysprosium (Dy)
-- `minecraft:element_67`
-[Education Edition] Holmium (Ho)
 - `minecraft:element_70`
 [Education Edition] Ytterbium (Yb)
 - `minecraft:element_71`
@@ -2790,6 +2815,7 @@ Red Glazed Terracotta
 - `minecraft:bamboo_mosaic_double_slab`
 - `minecraft:structure_void`
 Structure Void
+- `minecraft:sulfur_stairs`
 - `minecraft:acacia_button`
 Acacia Button
 - `minecraft:snow`
@@ -2822,6 +2848,7 @@ Crimson Hyphae
 - `minecraft:wildflowers`
 - `minecraft:polished_blackstone_stairs`
 Polished Blackstone Stairs
+- `minecraft:polished_sulfur_stairs`
 - `minecraft:waxed_weathered_copper_grate`
 - `minecraft:ender_chest`
 Ender Chest
@@ -2843,6 +2870,8 @@ Honeycomb Block
 Blackstone
 - `minecraft:chorus_flower`
 Chorus Flower
+- `minecraft:cinnabar_brick_double_slab`
+- `minecraft:polished_cinnabar_double_slab`
 - `minecraft:cracked_nether_bricks`
 Cracked Nether Bricks
 - `minecraft:powered_repeater`
@@ -2938,6 +2967,7 @@ Coal Block
 Waxed Double Cut Copper Slab
 - `minecraft:item.kelp`
 Kelp
+- `minecraft:sulfur_double_slab`
 - `minecraft:chorus_plant`
 Chorus Plant
 - `minecraft:water`
@@ -3010,6 +3040,7 @@ Waxed Weathered Cut Copper Stairs
 Polished Blackstone Pressure Plate
 - `minecraft:acacia_standing_sign`
 Acacia Standing Sign
+- `minecraft:cinnabar`
 - `minecraft:tuff_brick_stairs`
 - `minecraft:exposed_copper_bulb`
 - `minecraft:crimson_stairs`
@@ -3041,6 +3072,7 @@ Stripped Crimson Hyphae
 Cocoa
 - `minecraft:lever`
 Lever
+- `minecraft:cinnabar_stairs`
 - `minecraft:weathered_copper_trapdoor`
 - `minecraft:mangrove_fence`
 Mangrove Fence
@@ -3064,6 +3096,7 @@ Mud Bricks
 - `minecraft:birch_wall_sign`
 Birch Wall Sign
 - `minecraft:bamboo_wall_sign`
+- `minecraft:sulfur_brick_wall`
 - `minecraft:bush`
 - `minecraft:bamboo_sapling`
 Bamboo Sapling
@@ -3097,6 +3130,7 @@ Mangrove Button
 - `minecraft:item.birch_door`
 Birch Door
 - `minecraft:cherry_wood`
+- `minecraft:polished_cinnabar`
 - `minecraft:bamboo_standing_sign`
 - `minecraft:cherry_log`
 - `minecraft:prismarine_stairs`
@@ -3144,6 +3178,7 @@ Repeating Command Block
 - `minecraft:polished_deepslate`
 Polished Deepslate
 - `minecraft:tuff_double_slab`
+- `minecraft:cinnabar_brick_wall`
 - `minecraft:furnace`
 Furnace
 - `minecraft:amethyst_cluster`
