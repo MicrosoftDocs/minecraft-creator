@@ -282,6 +282,8 @@
             href: Documents/scripting/components-tutorial.md
           - name: Scripting Custom Commands
             href: Documents/scripting/custom-commands.md
+          - name: Building with the Custom Dimension API
+            href: Documents/scripting/custom-dimension-api-tutorial.md
           - name: Game Loops and Timed Callbacks
             href: Documents/scripting/system-run-guide.md
           - name: Building Multiplayer-Aware Scripts
