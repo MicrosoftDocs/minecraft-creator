@@ -27,6 +27,19 @@ Type: [*CustomCommandRegistry*](CustomCommandRegistry.md)
 Notes:
   - This property can be read in early-execution mode.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **dimensionRegistry**
+`read-only dimensionRegistry: DimensionRegistry;`
+
+Type: [*DimensionRegistry*](DimensionRegistry.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
+
 ### **itemComponentRegistry**
 `read-only itemComponentRegistry: ItemComponentRegistry;`
 

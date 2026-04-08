@@ -26,7 +26,7 @@ We strongly recommend that you read through these guides and can confidently com
 
 First, we're going to create and add a custom sound for when the Shapeshifter changes forms.
 
-1. Create a sound pack folder in the shapeshifter resource pack we created in the [previous tutorial](../Documents/behaviorrendercontrollers.md) to house the shapeshifter’s custom sounds.
+1. Create a sound pack folder in the shapeshifter Resource Pack we created in the [previous tutorial](../Documents/behaviorrendercontrollers.md) to house the shapeshifter’s custom sounds.
 
 2. Record your custom sound and save it to the new sounds folder as an .ogg file. For this tutorial, our sample will leverage a custom sound we called phase_change.ogg.
     > [!TIP]
@@ -46,7 +46,7 @@ First, we're going to create and add a custom sound for when the Shapeshifter ch
     "format_version" : "1.20.20",
     "sound_definitions" : {
         "shapeshifter.phase_change" : {
-            "__use_legacy_max_distance" : true,
+            "__use_legacy_max_distance" : "true",
             "category" : "block",
             "max_distance" : null,
             "min_distance" : null,
@@ -57,7 +57,7 @@ First, we're going to create and add a custom sound for when the Shapeshifter ch
     } 
     ```
 
-5. Finally, add a `play_sound` object to the server-side behavior file (i.e. shapeshifter.behavior.json) description, before the `randomize` component we created in the first tutorial:
+5. Finally, add a `play_sound` object to the `minecraft:become_angry` event on the server-side behavior file (i.e. shapeshifter.behavior.json), before the `randomize` component we created in the first tutorial:
 
     ```json
     {
@@ -98,7 +98,8 @@ Now it's time to add a custom animation to the Shapeshifter to signal when it's 
 1. Open shapeshifter.geo in Blockbench to edit the shapeshifter.
 
 2. Click **Animate** in the top right corner of the canvas, then create a new animation and select shapeshifter.geo as the file to save to.
-![New Shapeshifter Animation](../Documents/Media/AdvancedCustomMobs/new_animation.png)
+
+    ![New Shapeshifter Animation](../Documents/Media/AdvancedCustomMobs/new_animation.png)
 
 3. Use Blockbench to create a custom animation for the shapeshifter, then save your animation to update the shapeshifter’s file.
 
