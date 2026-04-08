@@ -12,13 +12,13 @@ description: Contents of the @minecraft/server.DimensionType class (Version 1.x.
 > [!IMPORTANT]
 > This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/DimensionType.md).
 
-Represents a type of dimension.
+Represents a type of dimension. Currently only works with Vanilla dimensions.
 
 ## Properties
 
 ### **typeId**
 `read-only typeId: string;`
 
-Identifier of the dimension type.
+Identifier of the dimension type. Currently only works with Vanilla dimensions.
 
 Type: *string*

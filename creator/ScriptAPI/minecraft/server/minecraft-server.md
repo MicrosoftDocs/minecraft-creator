@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.6.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.20-beta.23 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.20-beta.26 of Minecraft.
 
 ## Available Versions
 - `2.8.0-beta`
@@ -209,6 +209,7 @@ The following API versions are from a major version that is documented here: [*@
 - [DataDrivenEntityTriggerAfterEvent](DataDrivenEntityTriggerAfterEvent.md)
 - [DataDrivenEntityTriggerAfterEventSignal](DataDrivenEntityTriggerAfterEventSignal.md)
 - [Dimension](Dimension.md)
+- [DimensionRegistry](DimensionRegistry.md)
 - [DimensionType](DimensionType.md)
 - [DimensionTypes](DimensionTypes.md)
 - [Effect](Effect.md)
@@ -664,6 +665,10 @@ The following API versions are from a major version that is documented here: [*@
 - [CustomCommandError](CustomCommandError.md)
 - [CustomComponentInvalidRegistryError](CustomComponentInvalidRegistryError.md)
 - [CustomComponentNameError](CustomComponentNameError.md)
+- [CustomDimensionAlreadyRegisteredError](CustomDimensionAlreadyRegisteredError.md)
+- [CustomDimensionInvalidRegistryError](CustomDimensionInvalidRegistryError.md)
+- [CustomDimensionNameError](CustomDimensionNameError.md)
+- [CustomDimensionReloadNewDimensionError](CustomDimensionReloadNewDimensionError.md)
 - [EnchantmentLevelOutOfBoundsError](EnchantmentLevelOutOfBoundsError.md)
 - [EnchantmentTypeNotCompatibleError](EnchantmentTypeNotCompatibleError.md)
 - [EnchantmentTypeUnknownIdError](EnchantmentTypeUnknownIdError.md)

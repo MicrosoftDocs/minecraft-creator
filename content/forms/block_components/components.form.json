@@ -117,7 +117,33 @@
     ]
   },
   "id": "Components",
-  "fields": [],
+  "fields": [
+    {
+      "id": "minecraft:light_dampening",
+      "dataType": "int"
+    },
+    {
+      "id": "minecraft:light_emission",
+      "dataType": "int"
+    },
+    {
+      "id": "minecraft:map_color",
+      "dataType": "string",
+      "alternates": [
+        {
+          "id": "minecraft:map_color",
+          "dataType": "numberArray",
+          "minLength": 3,
+          "maxLength": 3
+        },
+        {
+          "id": "minecraft:map_color",
+          "dataType": "object",
+          "subFormId": "block_components/map_color"
+        }
+      ]
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "Components",
     "title": "Block Components Components",
