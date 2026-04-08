@@ -332,6 +332,8 @@
       href: minecraft/server/DataDrivenEntityTriggerAfterEventSignal.md
     - name: Dimension
       href: minecraft/server/Dimension.md
+    - name: DimensionRegistry
+      href: minecraft/server/DimensionRegistry.md
     - name: DimensionType
       href: minecraft/server/DimensionType.md
     - name: DimensionTypes

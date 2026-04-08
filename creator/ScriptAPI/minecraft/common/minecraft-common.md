@@ -18,7 +18,7 @@ description: Contents of the @minecraft/common module
     "version": "1.3.0"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.20-beta.23 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.20-beta.26 of Minecraft.
 
 ## Available Versions
 - `1.3.0`
@@ -34,6 +34,7 @@ This is version 1.x.x of this module, which is the latest as of version 1.26.20-
 
 ## Errors
 - [ArgumentOutOfBoundsError](ArgumentOutOfBoundsError.md)
+- [ContainerSizeOutOfBoundsError](ContainerSizeOutOfBoundsError.md)
 - [EngineError](EngineError.md)
 - [InvalidArgumentError](InvalidArgumentError.md)
 - [PropertyOutOfBoundsError](PropertyOutOfBoundsError.md)

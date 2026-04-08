@@ -89,4 +89,4 @@ Sets the text to display.
   
 Notes:
 - This function can throw errors.
-  - Throws [*RawMessageError*](RawMessageError.md)
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*RawMessageError*](RawMessageError.md)

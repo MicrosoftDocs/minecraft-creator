@@ -122,6 +122,7 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`spawnXp`](Dimension.md#spawnxp)*
 - Added function *[`stopAllSounds`](Dimension.md#stopallsounds)*
 - Added function *[`stopSound`](Dimension.md#stopsound)*
+#### Added *[`DimensionRegistry`](DimensionRegistry.md)*
 #### Changed *[`Entity`](Entity.md)*
 - Added property *[`nameplateDepthTested`](Entity.md#nameplatedepthtested)*
 - Added property *[`nameplateRenderDistance`](Entity.md#nameplaterenderdistance)*
@@ -175,6 +176,8 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`SetBannerDetailsFunction`](SetBannerDetailsFunction.md)*
 - Added property *[`baseColor`](SetBannerDetailsFunction.md#basecolor)*
 - Added property *[`patterns`](SetBannerDetailsFunction.md#patterns)*
+#### Changed *[`StartupEvent`](StartupEvent.md)*
+- Added property *[`dimensionRegistry`](StartupEvent.md#dimensionregistry)*
 #### Changed *[`StructureManager`](StructureManager.md)*
 - Added function *[`getPackStructureIds`](StructureManager.md#getpackstructureids)*
 #### Changed *[`SystemBeforeEvents`](SystemBeforeEvents.md)*

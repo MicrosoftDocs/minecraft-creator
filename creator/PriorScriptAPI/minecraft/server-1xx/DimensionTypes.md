@@ -12,7 +12,7 @@ description: Contents of the @minecraft/server.DimensionTypes class (Version 1.x
 > [!IMPORTANT]
 > This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/DimensionTypes.md).
 
-Used for accessing all available dimension types.
+Used for accessing all available dimension types. Currently only works with Vanilla dimensions.
 
 ## Methods
 - [get](#get)
@@ -23,7 +23,7 @@ Used for accessing all available dimension types.
 static get(dimensionTypeId: string): DimensionType | undefined
 `
 
-Retrieves a dimension type using a string-based identifier.
+Retrieves a dimension type using a string-based identifier. Currently only works with Vanilla dimensions.
 
 #### **Parameters**
 - **dimensionTypeId**: *string*
@@ -38,7 +38,7 @@ Notes:
 static getAll(): DimensionType[]
 `
 
-Retrieves an array of all dimension types.
+Retrieves an array of all dimension types. Currently only works with Vanilla dimensions.
 
 **Returns** [*DimensionType*](DimensionType.md)[]
   
