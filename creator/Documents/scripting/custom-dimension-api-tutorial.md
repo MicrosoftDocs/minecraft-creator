@@ -9,6 +9,9 @@ ms.date: 04/07/2026
 
 # Building with the Custom Dimension API
 
+> [!VIDEO https://www.youtube.com/embed/ND_Prq3Sz7w]
+*Video version of this article from the Minecraft Creator Channel*
+
 Custom dimensions let your add-on create new spaces outside the Overworld, Nether, and End. In this tutorial, you'll use scripting to register two void dimensions, generate safe landing platforms inside them, and send players there through a custom command and UI menu.
 
 This walkthrough focuses on script-managed destinations such as lobbies, arenas, and minigame rooms. Before you begin, work through the prerequisite tutorials so you're comfortable with behavior-pack structure, script modules, and TypeScript.
@@ -25,6 +28,9 @@ Before going through this tutorial, you should have worked through the following
 * [Next Steps: Scripting with TypeScript](./next-steps.md)
 
 You'll also need Minecraft: Bedrock Edition 1.21.80 or later, a world with the Beta APIs experiment enabled, and a behavior pack that can deploy a compiled script into its `scripts` folder.
+
+> [!NOTE] 
+> A variant of this sample is availble on the Minecraft Samples repository at [https://github.com/microsoft/minecraft-samples/](https://github.com/microsoft/minecraft-samples/tree/main/custom_dimensions).
 
 ## Configure the behavior pack
 
@@ -59,8 +65,6 @@ A custom-dimension script still starts as a normal behavior pack. The important 
 }
 ```
 
-The `@minecraft/server-ui` dependency is only needed if you want to open a menu like the sample pack does. If you prefer to travel entirely through commands or other gameplay triggers, you can omit the UI module.
-
 In the sample pack, the script is authored in TypeScript and compiled into `behavior_pack/scripts/main.js` before deployment. Whatever build system you use, make sure the compiled file matches the `entry` value in the manifest.
 
 ## Register custom dimensions during startup
@@ -78,6 +82,8 @@ system.beforeEvents.startup.subscribe((event) => {
   event.dimensionRegistry.registerCustomDimension(SKY_LOUNGE_ID);
 });
 ```
+
+API Reference: [DimensionRegistry](../../ScriptAPI/minecraft/server/DimensionRegistry.md)
 
 The two `registerCustomDimension` calls create void-generator dimensions with the identifiers you provide. They do not automatically create a safe spawn location, so you should treat registration as the first step in a larger setup flow.
 
