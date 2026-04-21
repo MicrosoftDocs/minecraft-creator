@@ -22,7 +22,7 @@
         "id": "on_close",
         "title": "Close",
         "description": "Event to call when the entity is done peeking.",
-        "dataType": 22,
+        "dataType": "minecraftEventTrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/shulker.json": [
             {
@@ -38,7 +38,7 @@
         "id": "on_open",
         "title": "Open",
         "description": "Event to call when the entity starts peeking.",
-        "dataType": 22,
+        "dataType": "minecraftEventTrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/shulker.json": [
             {
@@ -54,7 +54,7 @@
         "id": "on_target_open",
         "title": "Target Open",
         "description": "Event to call when the entity's target entity starts peeking.",
-        "dataType": 22,
+        "dataType": "minecraftEventTrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/shulker.json": [
             {

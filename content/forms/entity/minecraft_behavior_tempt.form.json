@@ -228,22 +228,14 @@
         "title": "Can Get Scared",
         "description": "If true, the mob can stop being tempted if the player moves too fast while close to this mob.",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": "boolean"
       },
       {
         "id": "can_tempt_vertically",
         "title": "Can Tempt Vertically",
         "description": "If true, vertical distance to the player will be considered when tempting.",
         "defaultValue": false,
-        "dataType": 1,
+        "dataType": "boolean",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -258,14 +250,14 @@
         "title": "Can Tempt While Ridden",
         "description": "If true, the mob can be tempted even if it has a passenger (i.e. if being ridden).",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "items",
         "title": "Items",
         "description": "List of items that can tempt the mob.",
         "defaultValue": "[]",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
@@ -288,15 +280,6 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
-              "content": [
-                "sweet_berries",
-                "glow_berries"
-              ]
-            }
-          ],
           "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
@@ -312,6 +295,14 @@
                 "wheat"
               ]
             }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "hay_block"
+              ]
+            }
           ]
         }
       },
@@ -319,14 +310,14 @@
         "id": "sound_interval",
         "title": "Sound Interval",
         "description": "Range of random ticks to wait between tempt sounds.",
-        "dataType": 18
+        "dataType": "intRange"
       },
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Movement speed multiplier of the mob when using this AI Goal",
         "defaultValue": 1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
@@ -340,12 +331,6 @@
               "content": 1.25
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
-              "content": 0.5
-            }
-          ],
           "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
@@ -357,6 +342,12 @@
               "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
               "content": 0.75
             }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": 1.2
+            }
           ]
         }
       },
@@ -365,35 +356,27 @@
         "title": "Stop Distance",
         "description": "The distance at which the mob will stop following the player.",
         "defaultValue": 1.5,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "tempt_sound",
         "title": "Tempt Sound",
         "description": "Sound to play while the mob is being tempted.",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "within_radius",
         "title": "Within Radius",
         "description": "Distance in blocks this mob can get tempted by a player holding an item they like.",
         "defaultValue": 0,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
-              "content": 16
-            }
-          ]
-        }
+        "dataType": "float"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
@@ -407,13 +390,13 @@
               "content": 4
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
+          "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
-              "content": 3
+              "content": 5
             }
           ],
-          "/vanilla/behavior_pack/entities/frog.json": [
+          "/vanilla/behavior_pack/entities/llama.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
               "content": 5
@@ -452,21 +435,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/fox.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 0.5,
-            "within_radius": 16,
-            "can_get_scared": true,
-            "items": [
-              "sweet_berries",
-              "glow_berries"
-            ]
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/frog.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
@@ -488,6 +456,18 @@
             "speed_multiplier": 0.75,
             "items": [
               "wheat"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 1.2,
+            "items": [
+              "hay_block"
             ]
           }
         }

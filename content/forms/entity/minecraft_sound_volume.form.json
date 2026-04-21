@@ -23,7 +23,7 @@
         "title": "Value",
         "description": "The value of the volume the entity uses for sound effects.",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       }
     ]
   }

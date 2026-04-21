@@ -14,3 +14,7 @@ description: Contents of the @minecraft/server-editor.MinimapMarkerType enumerat
 `Multiplayer = 0`
 
 Multiplayer markers shown on the minimap.
+### **Location**
+`Location = 1`
+### **Custom**
+`Custom = 2`

@@ -20,11 +20,11 @@
       {
         "id": "input",
         "title": "Input",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "alternates": [
           {
             "id": "input",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "input",
@@ -33,13 +33,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -47,7 +47,7 @@
           },
           {
             "id": "input",
-            "dataType": 3
+            "dataType": "float"
           }
         ],
         "isRequired": true
@@ -55,13 +55,13 @@
       {
         "id": "nodes",
         "title": "Nodes",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       },
       {
         "id": "type",
         "title": "Type",
-        "dataType": 2,
+        "dataType": "string",
         "validity": [
           {
             "comparison": "pattern",

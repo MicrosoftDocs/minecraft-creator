@@ -20,17 +20,8 @@ Allows the squid to swim in place idly.
 
 ## Squid Idle Behavior Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Glow Squid: `2` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
 
 ## Samples
-
-#### [Glow Squid](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/glow_squid.json)
-
-
-```json
-"minecraft:behavior.squid_idle": {
-  "priority": 2
-}
-```

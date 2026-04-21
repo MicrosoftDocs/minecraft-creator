@@ -23,7 +23,7 @@
         "id": "type",
         "title": "SurfaceBuilderType",
         "description": "Use default Minecraft End terrain generation.",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "minecraft:capped",
@@ -36,6 +36,10 @@
           {
             "id": "minecraft:mesa",
             "title": "Minecraft:mesa"
+          },
+          {
+            "id": "minecraft:noise_gradient",
+            "title": "Minecraft:noise gradient"
           },
           {
             "id": "minecraft:overworld",

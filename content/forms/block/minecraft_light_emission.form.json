@@ -23,6 +23,20 @@
     "title": "Light Emission Value",
     "dataType": "int"
   },
+  "samples": {
+    "Block Fabricator": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json",
+        "content": 7
+      }
+    ],
+    "Block Gray Ore": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/gray_ore.block.json",
+        "content": 15
+      }
+    ]
+  },
   "generated_doNotEdit": {
     "id": "minecraft:light_emission",
     "title": "Light Emission",
@@ -31,7 +45,7 @@
     "scalarField": {
       "id": "integer",
       "title": "Integer",
-      "dataType": 0
+      "dataType": "int"
     },
     "samples": {}
   }

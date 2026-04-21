@@ -23,7 +23,7 @@
         "id": "identifier",
         "title": "Identifier",
         "description": "Must have a namespace and can't use the \"minecraft\" one. Example: \"namespace:my_block\"",
-        "dataType": 2,
+        "dataType": "string",
         "validity": [
           {
             "comparison": "pattern",
@@ -36,21 +36,26 @@
         "id": "menu_category",
         "title": "Menu Category",
         "description": "Configures the block behavior in inventory and menu category",
-        "dataType": 16,
+        "dataType": "object",
+        "defaultValue": {
+          "category": "none",
+          "group": "",
+          "is_hidden_in_commands": false
+        },
         "subFormId": "block/menu_category"
       },
       {
         "id": "states",
         "title": "States",
         "description": "Define custom states for a block that can be referenced in permutation. Each state must contain an array or a \"values\" with an array or a \"min\"/\"max\" range",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {}
       },
       {
         "id": "traits",
         "title": "Traits",
         "description": "Change the connection, multiblock state, placement position and/or direction behaviors of a block",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "minecraft:connection": {
             "enabled_states": []

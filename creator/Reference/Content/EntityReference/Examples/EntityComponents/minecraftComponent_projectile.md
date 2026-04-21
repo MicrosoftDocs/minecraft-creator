@@ -30,6 +30,7 @@ Allows the entity to be a thrown entity.
 | ignored_entities | *not set* | Array of strings | [EXPERIMENTAL] An array of strings defining the types of entities that this entity does not collide with. | 
 | inertia | 0.99 | Decimal number | The fraction of the projectile's speed maintained every frame while traveling in air | 
 | is_dangerous | false | Boolean true/false | If true, the projectile will be treated as dangerous to the players | 
+| isolated_physics | true | Boolean true/false | [EXPERIMENTAL] If true, this projectile will not be affected by outside forces such as friction and drag. | 
 | knockback | true | Boolean true/false | If true, the projectile will knock back the entity it hits | 
 | lightning | false | Boolean true/false | If true, the entity hit will be struck by lightning | 
 | liquid_inertia | 0.6 | Decimal number | The fraction of the projectile's speed maintained every frame while traveling in water | 

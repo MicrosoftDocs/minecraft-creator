@@ -21,13 +21,13 @@
       {
         "id": "folder_name",
         "title": "Folder Name",
-        "dataType": 2,
+        "dataType": "string",
         "isRequired": true
       },
       {
         "id": "memory_performance_tier",
         "title": "Memory Performance Tier",
-        "dataType": 0,
+        "dataType": "int",
         "validity": [
           {
             "comparison": "<=",
@@ -39,7 +39,7 @@
       {
         "id": "name",
         "title": "Name",
-        "dataType": 2,
+        "dataType": "string",
         "isRequired": true
       }
     ]

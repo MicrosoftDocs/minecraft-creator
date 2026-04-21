@@ -29,21 +29,21 @@
         "id": "home_block_list",
         "title": "Home Block List",
         "description": "Optional list of blocks that can be considered a valid home. If no such block longer exists at that position,\n\t\t\t\t\t\t\t\t\t\t\tthe home restriction is removed. Example syntax: minecraft:sand. Not supported: minecraft:sand:1.",
-        "dataType": 17
+        "dataType": "stringArray"
       },
       {
         "id": "restriction_radius",
         "title": "Restriction Radius",
         "description": "Optional radius that the entity will be restricted to in relation to its home.",
         "defaultValue": 0,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "restriction_type",
         "title": "Restriction Type",
         "description": "Defines how the the entity will be restricted to its home position. The possible values are:\n\t\t\t\t\t\t\t\t\t\t\t\t\\n- \"none\", which poses no restriction.\n\t\t\t\t\t\t\t\t\t\t\t\t\\n- \"random_movement\", which restricts randomized movement to be around the home position.\n\t\t\t\t\t\t\t\t\t\t\t\t\\n- \"all_movement\", which restricts any kind of movement to be around the home position.\n\t\t\t\t\t\t\t\t\t\t\t\t\tHowever, entities that somehow got too far away from their home will always be able to move closer to it, if prompted to do so.",
         "defaultValue": "none",
-        "dataType": 2
+        "dataType": "string"
       }
     ],
     "samples": {}

@@ -100,6 +100,8 @@ Represents the unique type of network packet.
 `ClientboundMapItemDataPacket = "ClientboundMapItemDataPacket"`
 ### **ClientboundTextureShiftPacket**
 `ClientboundTextureShiftPacket = "ClientboundTextureShiftPacket"`
+### **ClientboundUpdateSoundDataPacket**
+`ClientboundUpdateSoundDataPacket = "ClientboundUpdateSoundDataPacket"`
 ### **ClientCacheBlobStatusPacket**
 `ClientCacheBlobStatusPacket = "ClientCacheBlobStatusPacket"`
 ### **ClientCacheMissResponsePacket**
@@ -254,6 +256,8 @@ Represents the unique type of network packet.
 `PacketViolationWarningPacket = "PacketViolationWarningPacket"`
 ### **PartyChangedPacket**
 `PartyChangedPacket = "PartyChangedPacket"`
+### **PartyDestinationCookieResponsePacket**
+`PartyDestinationCookieResponsePacket = "PartyDestinationCookieResponsePacket"`
 ### **PhotoTransferPacket**
 `PhotoTransferPacket = "PhotoTransferPacket"`
 ### **PlayerActionPacket**
@@ -326,6 +330,8 @@ Represents the unique type of network packet.
 `RespawnPacket = "RespawnPacket"`
 ### **ScriptMessagePacket**
 `ScriptMessagePacket = "ScriptMessagePacket"`
+### **SendPartyDestinationCookiePacket**
+`SendPartyDestinationCookiePacket = "SendPartyDestinationCookiePacket"`
 ### **ServerboundDataDrivenScreenClosedPacket**
 `ServerboundDataDrivenScreenClosedPacket = "ServerboundDataDrivenScreenClosedPacket"`
 ### **ServerboundDataStorePacket**

@@ -29,25 +29,25 @@
       {
         "id": "identifier",
         "title": "Identifier",
-        "dataType": 2,
+        "dataType": "string",
         "defaultValue": ""
       },
       {
         "id": "max",
         "title": "Max",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "min",
         "title": "Min",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "spawn_chance",
         "title": "Spawn Chance",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 100
       }
     ]

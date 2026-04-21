@@ -68,7 +68,7 @@
         "title": "Bred",
         "description": "A Molang expression defining the amount of experience rewarded when this entity is successfully bred. An array of expressions adds each expression's result together for a final total.",
         "defaultValue": "0",
-        "dataType": 22,
+        "dataType": "minecraftEventTrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -92,7 +92,7 @@
         "title": "Death",
         "description": "A Molang expression defining the amount of experience rewarded when this entity dies. An array of expressions adds each expression's result together for a final total.",
         "defaultValue": "0",
-        "dataType": 22,
+        "dataType": "minecraftEventTrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/blaze.json": [
             {
@@ -207,7 +207,7 @@
         "id": "on_bred",
         "title": "Bred",
         "description": "A Molang expression defining the amount of experience rewarded when this entity is successfully bred.",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": {
           "expression": "",
           "version": -1
@@ -215,7 +215,7 @@
         "alternates": [
           {
             "id": "on_bred",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "on_bred",
@@ -224,13 +224,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -238,7 +238,7 @@
           },
           {
             "id": "on_bred",
-            "dataType": 3
+            "dataType": "float"
           }
         ],
         "samples": {
@@ -263,7 +263,7 @@
         "id": "on_death",
         "title": "Death",
         "description": "A Molang expression defining the amount of experience rewarded when this entity dies.",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": {
           "expression": "",
           "version": -1
@@ -271,7 +271,7 @@
         "alternates": [
           {
             "id": "on_death",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "on_death",
@@ -280,13 +280,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -294,7 +294,7 @@
           },
           {
             "id": "on_death",
-            "dataType": 3
+            "dataType": "float"
           }
         ],
         "samples": {

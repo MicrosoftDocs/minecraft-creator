@@ -8,3 +8,10 @@ title: minecraft/server-net.WebSocketClientCloseAfterEvent Class
 description: Contents of the @minecraft/server-net.WebSocketClientCloseAfterEvent class.
 ---
 # WebSocketClientCloseAfterEvent Class
+
+## Properties
+
+### **reason**
+`read-only reason: WebSocketClientCloseReasons;`
+
+Type: [*WebSocketClientCloseReasons*](WebSocketClientCloseReasons.md)

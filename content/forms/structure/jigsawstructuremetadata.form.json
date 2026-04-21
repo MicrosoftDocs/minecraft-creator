@@ -22,7 +22,7 @@
         "id": "markers",
         "title": "Markers",
         "description": "The Jigsaw blocks contained within the generated structure.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subFormId": "structure/jigsawblockmetadata",
         "isRequired": true
       },
@@ -30,14 +30,14 @@
         "id": "size",
         "title": "Size",
         "description": "The generated structures bounding size.",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       },
       {
         "id": "use_legacy_rotation",
         "title": "Use Legacy Rotation",
         "description": "Unused - Previously if true would use legacy size rotation.",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": false
       }
     ]

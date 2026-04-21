@@ -34,12 +34,12 @@
       {
         "id": "expiration_expression",
         "title": "Expiration Expression",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": 0,
         "alternates": [
           {
             "id": "expiration_expression",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "expiration_expression",
@@ -48,13 +48,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -62,18 +62,18 @@
           },
           {
             "id": "expiration_expression",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       },
       {
         "id": "max_lifetime",
         "title": "Max Lifetime",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "alternates": [
           {
             "id": "max_lifetime",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "max_lifetime",
@@ -82,13 +82,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -96,7 +96,7 @@
           },
           {
             "id": "max_lifetime",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       }

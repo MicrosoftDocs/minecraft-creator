@@ -132,6 +132,62 @@
         "path": "Boolean",
         "content": true
       }
+    ],
+    "Block Fabricator": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json",
+        "content": {
+          "explosion_resistance": 15
+        }
+      }
+    ],
+    "Block Gray Ore": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/gray_ore.block.json",
+        "content": {
+          "explosion_resistance": 96
+        }
+      }
+    ],
+    "Block Palm Leave": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json",
+        "content": {
+          "explosion_resistance": 1.3
+        }
+      }
+    ],
+    "Block White Sand": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/white_sand.block.json",
+        "content": {
+          "explosion_resistance": 1.1
+        }
+      }
+    ],
+    "Block Leaf Pile": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json",
+        "content": {
+          "explosion_resistance": 0.5
+        }
+      }
+    ],
+    "Block Orange Ore": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json",
+        "content": {
+          "explosion_resistance": 30
+        }
+      }
+    ],
+    "Apple Block": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/custom_features/example_feature_set/behavior_packs/example_feature_set/blocks/apple_block.json",
+        "content": {
+          "explosion_resistance": 2.9
+        }
+      }
     ]
   },
   "generated_doNotEdit": {
@@ -144,13 +200,13 @@
         "title": "Explosion Resistance",
         "description": "Sets the explosion resistance for the block. Greater values result in greater resistance to explosions. The scale will be different for different explosion power levels. A negative value or 0 means it will easily explode; larger numbers increase level of resistance.",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       }
     ],
     "scalarField": {
       "id": "boolean",
       "title": "Boolean",
-      "dataType": 1
+      "dataType": "boolean"
     },
     "samples": {}
   }

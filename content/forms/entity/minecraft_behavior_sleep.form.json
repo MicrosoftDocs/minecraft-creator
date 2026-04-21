@@ -29,56 +29,56 @@
         "title": "Can Sleep While Riding",
         "description": "If true, the mob will be able to use the sleep goal if riding something",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "cooldown_time",
         "title": "Cooldown Time",
         "description": "Time in seconds the mob has to wait before using the goal again",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "sleep_collider_height",
         "title": "Sleep Collider Height",
         "description": "The height of the mob's collider while sleeping",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "sleep_collider_width",
         "title": "Sleep Collider Width",
         "description": "The width of the mob's collider while sleeping",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "sleep_y_offset",
         "title": "Sleep y Offset",
         "description": "The y offset of the mob's collider while sleeping",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Movement speed multiplier of the mob when using this AI Goal",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "timeout_cooldown",
         "title": "Timeout Cooldown",
         "description": "The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition",
         "defaultValue": 8,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "samples": {}
@@ -92,13 +92,13 @@
         "id": "can_sleep_while_riding",
         "title": "Can Sleep While Riding",
         "description": "If true, the mob will be able to use the sleep goal if riding something",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": false
       },
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -119,48 +119,48 @@
         "id": "cooldown_time",
         "title": "Cooldown Time",
         "description": "Time in seconds the mob has to wait before using the goal again",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0
       },
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "sleep_collider_height",
         "title": "Sleep Collider Height",
         "description": "The height of the mob's collider while sleeping",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1
       },
       {
         "id": "sleep_collider_width",
         "title": "Sleep Collider Width",
         "description": "The width of the mob's collider while sleeping",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1
       },
       {
         "id": "sleep_y_offset",
         "title": "Sleep y Offset",
         "description": "The y offset of the mob's collider while sleeping",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1
       },
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Movement speed multiplier of the mob when using this goal.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1
       },
       {
         "id": "timeout_cooldown",
         "title": "Timeout Cooldown",
         "description": "The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 8
       }
     ],

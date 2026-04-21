@@ -41,3 +41,28 @@ This item can also be represented as a `Boolean true/false`.
   ]
 }
 ```
+
+#### Block Fabricator
+
+
+```json
+"minecraft:collision_box": true
+```
+
+#### Block Leaf Pile
+
+
+```json
+"minecraft:collision_box": {
+  "origin": [
+    -8,
+    2,
+    -8
+  ],
+  "size": [
+    16,
+    4,
+    16
+  ]
+}
+```

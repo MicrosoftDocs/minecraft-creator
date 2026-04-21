@@ -33,13 +33,13 @@
       {
         "id": "adjust_for_weather",
         "title": "Adjust For Weather",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": false
       },
       {
         "id": "max",
         "title": "Max",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 15,
         "validity": [
           {
@@ -51,7 +51,7 @@
       {
         "id": "min",
         "title": "Min",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "validity": [
           {

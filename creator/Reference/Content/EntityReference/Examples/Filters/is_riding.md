@@ -22,7 +22,7 @@ Returns true if the subject entity is riding on another entity.
 |:----------|:-------------|:----|:-----------|:------------- |
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Parrot: `"!="`, `"equals"` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Parrot: `"self"` | 
-| test | *not set* | String |  | Drowned: `"is_riding"` | 
+| test | *not set* | String |  | Parrot: `"is_riding"` | 
 | value | true | Boolean true/false | (Optional) true or false. | Parrot: `true` | 
 
 ### Operator choices
@@ -64,17 +64,6 @@ At Short (using Defaults)..:
 
 ```json
 { "test": "is_riding" }
-```
-
-#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
-
-At /minecraft:entity/events/minecraft:has_target/filters/: 
-
-```json
-{
-  "test": "is_riding",
-  "value": false
-}
 ```
 
 #### [Parrot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parrot.json)

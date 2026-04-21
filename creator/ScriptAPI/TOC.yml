@@ -162,6 +162,8 @@
       href: minecraft/server/PlayerInventoryType.md
     - name: PlayerPermissionLevel
       href: minecraft/server/PlayerPermissionLevel.md
+    - name: PlayerWaypointsMode
+      href: minecraft/server/PlayerWaypointsMode.md
     - name: ScoreboardIdentityType
       href: minecraft/server/ScoreboardIdentityType.md
     - name: ScriptEventSource
@@ -590,6 +592,10 @@
       href: minecraft/server/EntityTypes.md
     - name: EntityUnderwaterMovementComponent
       href: minecraft/server/EntityUnderwaterMovementComponent.md
+    - name: EntityUpgradeAfterEvent
+      href: minecraft/server/EntityUpgradeAfterEvent.md
+    - name: EntityUpgradeAfterEventSignal
+      href: minecraft/server/EntityUpgradeAfterEventSignal.md
     - name: EntityVariantComponent
       href: minecraft/server/EntityVariantComponent.md
     - name: EntityWantsJockeyComponent
@@ -1356,6 +1362,8 @@
       href: minecraft/server-editor/LogChannel.md
     - name: MinimapMarkerType
       href: minecraft/server-editor/MinimapMarkerType.md
+    - name: MinimapTrackingMode
+      href: minecraft/server-editor/MinimapTrackingMode.md
     - name: MinimapViewType
       href: minecraft/server-editor/MinimapViewType.md
     - name: ModalDialogResponseType
@@ -1870,6 +1878,10 @@
       href: minecraft/server-editor/LocalizationEntry.md
     - name: LogProperties
       href: minecraft/server-editor/LogProperties.md
+    - name: MinimapCreateOptions
+      href: minecraft/server-editor/MinimapCreateOptions.md
+    - name: MinimapMarkerData
+      href: minecraft/server-editor/MinimapMarkerData.md
     - name: ModalDialogCreationParams
       href: minecraft/server-editor/ModalDialogCreationParams.md
     - name: ModalToolCreationParameters
@@ -2100,8 +2112,12 @@
       href: minecraft/server-net/changelog.md
     - name: HttpRequestMethod
       href: minecraft/server-net/HttpRequestMethod.md
+    - name: HttpStatusCode
+      href: minecraft/server-net/HttpStatusCode.md
     - name: PacketId
       href: minecraft/server-net/PacketId.md
+    - name: WebSocketClientCloseReasons
+      href: minecraft/server-net/WebSocketClientCloseReasons.md
     - name: CloseAfterEventSignal
       href: minecraft/server-net/CloseAfterEventSignal.md
     - name: HttpClient

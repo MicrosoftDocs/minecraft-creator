@@ -13,14 +13,23 @@ ms.date: 02/11/2025
 Allows the mob to stay at a certain level when in liquid.
 
 
-## Rise To Liquid Level Behavior Properties
+## Entity Rise To Liquid Level Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
 | liquid_y_offset | 0 | Decimal number | Target distance down from the liquid surface. i.e. Positive values move the target Y down. | Strider: `0.25` | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
 | rise_delta | 0 | Decimal number | Movement up in Y per tick when below the liquid surface. | Strider: `0.01` | 
 | sink_delta | 0 | Decimal number | Movement down in Y per tick when above the liquid surface. | Strider: `0.01` | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples
 

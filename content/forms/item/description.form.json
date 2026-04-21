@@ -30,14 +30,14 @@
         "id": "identifier",
         "title": "Identifier",
         "description": "Unique name for the item that must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla item.",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       },
       {
         "id": "menu_category",
         "title": "Menu Category",
         "description": "menu_category contains the creative group name and category for this item.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "category": "none",
           "group": null,

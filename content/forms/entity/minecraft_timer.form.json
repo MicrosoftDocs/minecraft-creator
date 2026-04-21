@@ -49,33 +49,33 @@
         "title": "Looping",
         "description": "If true, the timer will restart every time after it fires.",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "randomInterval",
         "title": "RandomInterval",
         "description": "If true, the amount of time on the timer will be random between the min and max values specified in time.",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "random_time_choices",
         "title": "Random Time Choices",
         "description": "This is a list of objects, representing one value in seconds that can be picked before firing the event and an optional weight. Incompatible with time.",
         "defaultValue": "[ ]",
-        "dataType": 17
+        "dataType": "stringArray"
       },
       {
         "id": "time",
         "title": "Time",
         "description": "Amount of time in seconds for the timer. Can be specified as a number or a pair of numbers (min and max). Incompatible with random_time_choices.",
-        "dataType": 18
+        "dataType": "intRange"
       },
       {
         "id": "time_down_event",
         "title": "Time Down Event",
         "description": "Event to fire when the time on the timer runs out.",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       }
     ],
     "samples": {}

@@ -31,12 +31,6 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/drowned.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-          "content": {}
-        }
-      ],
       "/vanilla/behavior_pack/entities/magma_cube.json": [
         {
           "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
@@ -54,6 +48,12 @@
           "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
           "content": {}
         }
+      ],
+      "/vanilla/behavior_pack/entities/stray.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
+          "content": {}
+        }
       ]
     }
   },
@@ -64,7 +64,7 @@
       {
         "id": "protection_slot",
         "title": "EquipmentSlot",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "slot.armor.body",
@@ -105,12 +105,6 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/drowned.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-          "content": {}
-        }
-      ],
       "/vanilla/behavior_pack/entities/magma_cube.json": [
         {
           "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
@@ -124,6 +118,12 @@
         }
       ],
       "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/stray.json": [
         {
           "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
           "content": {}

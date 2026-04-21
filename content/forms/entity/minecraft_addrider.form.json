@@ -89,18 +89,18 @@
         "id": "entity_type",
         "title": "Entity Type",
         "description": "The entity type that will be riding this entity.",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "spawn_event",
         "title": "Spawn Event",
         "description": "The spawn event that will be used when the riding entity is created.",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "riders",
         "title": "Riders",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "riders",
           "title": "Riders",
@@ -108,7 +108,7 @@
             {
               "id": "entity_type",
               "title": "Entity type",
-              "dataType": 2,
+              "dataType": "string",
               "samples": {
                 "/vanilla/behavior_pack/entities/cave_spider.json": [
                   {
@@ -282,7 +282,7 @@
         "id": "riders",
         "title": "Riders",
         "description": "List of riders to be added to the entity. Can only spawn as many riders as \"minecraft:rideable\" has \"seat_count\".",
-        "dataType": 15,
+        "dataType": "objectArray",
         "defaultValue": [],
         "subFormId": "entity/rider_data",
         "samples": {

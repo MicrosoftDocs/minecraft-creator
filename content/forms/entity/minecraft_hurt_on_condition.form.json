@@ -154,7 +154,7 @@
         "id": "damage_conditions",
         "title": "Damage Conditions",
         "description": "List of damage conditions that when met can cause damage to the entity.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "List of damage conditions that when met can cause damage to the entity.",
@@ -163,20 +163,20 @@
               "id": "cause",
               "title": "Cause",
               "description": "The kind of damage that is caused to the entity. Various armors and spells use this to determine if the entity is immune.",
-              "dataType": 2
+              "dataType": "string"
             },
             {
               "id": "damage_per_tick",
               "title": "Damage Per Tick",
               "description": "The amount of damage done each tick that the conditions are met.",
               "defaultValue": 1,
-              "dataType": 0
+              "dataType": "int"
             },
             {
               "id": "filters",
               "title": "Filters",
               "description": "The set of conditions that must be satisfied before the entity takes the defined damage.",
-              "dataType": 20
+              "dataType": "minecraftFilter"
             }
           ]
         },

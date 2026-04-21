@@ -37,7 +37,7 @@
         "id": "value",
         "title": "Value",
         "description": "Duration, in seconds, of the item's swing animation played when mining or attacking. Affects visuals only and does not impact attack frequency or other gameplay mechanics.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.30000001192092896
       }
     ]

@@ -97,14 +97,14 @@
     "title": "Surface Relative Threshold Feature",
     "fields": [
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "description",
         "title": "Description",
         "isRequired": true,
         "subForm": {
           "fields": [
             {
-              "dataType": 2,
+              "dataType": "string",
               "id": "identifier",
               "title": "Identifier",
               "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -114,7 +114,7 @@
         }
       },
       {
-        "dataType": 0,
+        "dataType": "int",
         "id": "minimum_distance_below_surface",
         "title": "Minimum Distance Below Surface",
         "description": "The minimum number of blocks required to be between the estimated surface level and a valid place for this feature. Defaults to zero.",

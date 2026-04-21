@@ -1,0 +1,97 @@
+{
+  "id": "minecraft:apply_knockback_rules_instance",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:apply_knockback_rules_instance",
+    "title": "Entity Apply Knockback Rules Instance",
+    "description": "Intance of rules definition.",
+    "fields": [
+      {
+        "id": "check_if_target_is_immersed_in_water",
+        "title": "Check If Target Is Immersed In Water",
+        "description": "Whether or not the target should be fully immersed in water for the knockback rules to apply.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "filter",
+        "description": "Filter for the entity type that will be affected by these knockback rules.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "filter",
+          "title": "Filter",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "filter",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "horizontal_power",
+        "title": "Horizontal Power",
+        "description": "Power with which a target should be knocked backwards.",
+        "dataType": "float",
+        "defaultValue": 1
+      },
+      {
+        "id": "vertical_power",
+        "title": "Vertical Power",
+        "description": "Power with which a target should be knocked upwards.",
+        "dataType": "float",
+        "defaultValue": 0.4000000059604645
+      },
+      {
+        "id": "vertical_velocity_cap",
+        "title": "Vertical Velocity Cap",
+        "description": "Maximum allowed Y velocity after target's knockback rules have been evaluated.",
+        "dataType": "float",
+        "defaultValue": 0.4000000059604645
+      }
+    ]
+  }
+}

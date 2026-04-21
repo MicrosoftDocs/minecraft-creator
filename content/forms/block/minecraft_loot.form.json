@@ -23,6 +23,32 @@
     "title": "Path to loot table",
     "dataType": "string"
   },
+  "samples": {
+    "Block Fabricator": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json",
+        "content": "loot_tables/mikeamm/gray_wave/fabricator.loot.json"
+      }
+    ],
+    "Block Gray Ore": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/gray_ore.block.json",
+        "content": "loot_tables/mikeamm/gray_wave/gray_ore.loot.json"
+      }
+    ],
+    "Block Orange Ore": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json",
+        "content": "loot_tables/blocks/orange_ore.json"
+      }
+    ],
+    "Apple Block": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/custom_features/example_feature_set/behavior_packs/example_feature_set/blocks/apple_block.json",
+        "content": "loot_tables/blocks/apple_block.json"
+      }
+    ]
+  },
   "generated_doNotEdit": {
     "id": "minecraft:loot",
     "title": "Loot",
@@ -31,7 +57,7 @@
     "scalarField": {
       "id": "string",
       "title": "String",
-      "dataType": 2
+      "dataType": "string"
     }
   }
 }

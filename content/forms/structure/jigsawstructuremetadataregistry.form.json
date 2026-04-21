@@ -22,7 +22,7 @@
         "id": "metadata",
         "title": "Metadata",
         "description": "The registry associating structure locations with generated Jigsaw structure metadata.",
-        "dataType": 14,
+        "dataType": "keyedObjectCollection",
         "isRequired": true
       }
     ]

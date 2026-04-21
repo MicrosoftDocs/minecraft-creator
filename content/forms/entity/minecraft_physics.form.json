@@ -80,21 +80,21 @@
         "title": "Has Collision",
         "description": "Whether or not the entity collides with things.",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "has_gravity",
         "title": "Has Gravity",
         "description": "Whether or not the entity is affected by gravity.",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "push_towards_closest_space",
         "title": "Push Towards Closest Space",
         "description": "Whether or not the entity should be pushed towards the nearest open area when stuck inside a block.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       }
     ],
     "samples": {

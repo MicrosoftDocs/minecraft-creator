@@ -25,55 +25,17 @@ Allows a mob to stalk a target, then once within range pounce onto a target, on 
 
 ## Stalk And Pounce On Target Behavior Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| interest_time | 2 | Decimal number | The amount of time the mob will be interested before pouncing. This happens when the mob is within range of pouncing | Fox: `2` | 
-| leap_dist | *not set* | Decimal number |  | Fox: `0.8` | 
-| leap_distance | 0.8 | Decimal number | The distance in blocks the mob jumps in the direction of its target |  | 
-| leap_height | 0.9 | Decimal number | The height in blocks the mob jumps when leaping at its target | Fox: `0.9` | 
-| max_stalk_dist | 10 | Decimal number | The maximum distance away a target can be before the mob gives up on stalking | Fox: `12` | 
-| pounce_max_dist | 5 | Decimal number | The maximum distance away from the target in blocks to begin pouncing at the target | Fox: `5` | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Fox: `7` | 
-| set_persistent | false | Boolean true/false | Allows the actor to be set to persist upon targeting a player |  | 
-| stalk_speed | 1.2 | Decimal number | The movement speed in which you stalk your target | Fox: `1.2` | 
-| strike_dist | 2 | Decimal number | The max distance away from the target when landing from the pounce that will still result in damaging the target | Fox: `2` | 
-| stuck_blocks | *not set* | [Stuck Blocks](#stuck-blocks) item |  | Fox: `{"test":"is_block","subject":"block","operator":"==","value":"snow_layer"}` | 
-| stuck_time | 2 | Decimal number | The amount of time the mob will be stuck if they fail and land on a block they can be stuck on | Fox: `2` | 
-
-### Stuck Blocks
-
-#### Stuck blocks Properties
-
-**JSON path:** `stuck_blocks`
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| operator | *not set* | String |  | Fox: `"=="` | 
-| subject | *not set* | String |  | Fox: `"block"` | 
-| test | *not set* | String |  | Fox: `"is_block"` | 
-| value | *not set* | String |  | Fox: `"snow_layer"` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| interest_time | 2 | Decimal number | The amount of time the mob will be interested before pouncing. This happens when the mob is within range of pouncing | 
+| leap_distance | 0.8 | Decimal number | The distance in blocks the mob jumps in the direction of its target | 
+| leap_height | 0.9 | Decimal number | The height in blocks the mob jumps when leaping at its target | 
+| max_stalk_dist | 10 | Decimal number | The maximum distance away a target can be before the mob gives up on stalking | 
+| pounce_max_dist | 5 | Decimal number | The maximum distance away from the target in blocks to begin pouncing at the target | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
+| set_persistent | false | Boolean true/false | Allows the actor to be set to persist upon targeting a player | 
+| stalk_speed | 1.2 | Decimal number | The movement speed in which you stalk your target | 
+| strike_dist | 2 | Decimal number | The max distance away from the target when landing from the pounce that will still result in damaging the target | 
+| stuck_time | 2 | Decimal number | The amount of time the mob will be stuck if they fail and land on a block they can be stuck on | 
 
 ## Samples
-
-#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
-
-
-```json
-"minecraft:behavior.stalk_and_pounce_on_target": {
-  "priority": 7,
-  "stalk_speed": 1.2,
-  "max_stalk_dist": 12,
-  "leap_height": 0.9,
-  "leap_dist": 0.8,
-  "pounce_max_dist": 5,
-  "interest_time": 2,
-  "stuck_time": 2,
-  "strike_dist": 2,
-  "stuck_blocks": {
-    "test": "is_block",
-    "subject": "block",
-    "operator": "==",
-    "value": "snow_layer"
-  }
-}
-```

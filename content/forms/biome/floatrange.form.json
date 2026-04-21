@@ -1,0 +1,22 @@
+{
+  "id": "FloatRange",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "FloatRange",
+    "title": "Biome FloatRange",
+    "fields": [
+      {
+        "id": "max",
+        "title": "Max",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "min",
+        "title": "Min",
+        "dataType": "float",
+        "defaultValue": 0
+      }
+    ]
+  }
+}

@@ -20,12 +20,14 @@ Determines how long an item takes to use in combination with components such as 
 | emit_vibrations | true | Boolean true/false | Whether vibrations are emitted when the item starts or stops being used. |  | 
 | movement_modifier | *not set* | Decimal number | Multiplier applied to the player's movement speed while the item is in use. Value must be <= 1. | Apple: `0.35` | 
 | start_sound | *not set* | [Start Sound](#start-sound-choices) choices | Sound played when the item starts being used. |  | 
+| start_using | if_first | [Start Using](#start-using-choices) choices | Controls how using the item triggers start using behavior. "if_first" only starts if no other component has started using yet; "always" always restarts using. Defaults to "if_first". |  | 
 | use_duration | 0 | Decimal number | Time, in seconds, that the item takes to use. | Apple: `1.6` | 
 
 ### Start Sound choices
 
 |Value       |Title |Description |
 |:-----------|:-----|:-----------|
+| absorb_block | Absorb block | |
 | activate | Activate | |
 | add.chest | Add.chest | |
 | admire | Admire | |
@@ -146,6 +148,7 @@ Determines how long an item takes to use in combination with components such as 
 | bottle.dragonbreath | Bottle.dragonbreath | |
 | bottle.empty | Bottle.empty | |
 | bottle.fill | Bottle.fill | |
+| bounce | Bounce | |
 | bow | Bow | |
 | bow.hit | Bow.hit | |
 | break | Break | |
@@ -237,6 +240,7 @@ Determines how long an item takes to use in combination with components such as 
 | drip.water.pointed_dripstone | Drip.water.pointed dripstone | |
 | drop.slot | Drop.slot | |
 | eat | Eat | |
+| eject_block | Eject block | |
 | elderguardian.curse | Elderguardian.curse | |
 | elemconstruct.open | Elemconstruct.open | |
 | enderchest.closed | Enderchest.closed | |
@@ -468,6 +472,7 @@ Determines how long an item takes to use in combination with components such as 
 | pumpkin.carve | Pumpkin.carve | |
 | purr | Purr | |
 | purreow | Purreow | |
+| pushed_by_player | Pushed by player | |
 | raid.horn | Raid.horn | |
 | ram_impact | Ram impact | |
 | ram_impact.screamer | Ram impact.screamer | |
@@ -518,6 +523,7 @@ Determines how long an item takes to use in combination with components such as 
 | shulkerbox.open | Shulkerbox.open | |
 | single_swap | Single swap | |
 | sleep | Sleep | |
+| slime_landing | Slime landing | |
 | smithing_table.use | Smithing table.use | |
 | sneeze | Sneeze | |
 | sonic_boom | Sonic boom | |
@@ -580,6 +586,13 @@ Determines how long an item takes to use in combination with components such as 
 | water | Water | |
 | whine | Whine | |
 | wind_charge.burst | Wind charge.burst | |
+
+### Start Using choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| always | Always | |
+| if_first | If first | |
 
 ## Samples
 

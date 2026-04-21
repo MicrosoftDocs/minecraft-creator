@@ -41,21 +41,21 @@
         "id": "entity_type",
         "title": "Entity Type",
         "description": "Permutation to spawn when selected",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": ""
       },
       {
         "id": "min_guaranteed",
         "title": "Min Guaranteed",
         "description": "The minimum number of this permutation to spawn",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "weight",
         "title": "Weight",
         "description": "The ratio of all of the entities that are in the permutation",
-        "dataType": 0,
+        "dataType": "int",
         "isRequired": true
       }
     ]

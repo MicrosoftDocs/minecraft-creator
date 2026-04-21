@@ -8,7 +8,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -28,14 +28,14 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Movement speed multiplier of the mob when using this goal.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1
       }
     ]

@@ -21,7 +21,7 @@
       {
         "id": "boxes",
         "title": "Boxes",
-        "dataType": 15,
+        "dataType": "objectArray",
         "minLength": 1,
         "maxLength": 32,
         "subFormId": "voxel_shapes/box",

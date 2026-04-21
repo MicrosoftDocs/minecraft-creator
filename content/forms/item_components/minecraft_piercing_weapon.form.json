@@ -23,21 +23,21 @@
         "id": "creative_reach",
         "title": "Creative Reach",
         "description": "Defines the reach used when the user is in Creative Mode. Defaults to \"reach\" if unspecified.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "item_components/floatrange"
       },
       {
         "id": "hitbox_margin",
         "title": "Hitbox Margin",
         "description": "Added tolerance to the view vector raycast for detecting entity collisions.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0
       },
       {
         "id": "reach",
         "title": "Reach",
         "description": "Defines the range (in blocks) along the user's view vector where entities can be hit. Only targets within this distance are considered. Block collisions between the user and target block damage and its effects.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 3,
           "min": 0

@@ -22,7 +22,7 @@
         "id": "element_type",
         "title": "ElementType",
         "description": "The type of element.",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "minecraft:empty_pool_element",
@@ -43,21 +43,21 @@
         "id": "location",
         "title": "Location",
         "description": "The path of the structure file. This path is relative to the behavior pack's structures folder.",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       },
       {
         "id": "processors",
         "title": "Processors",
         "description": "The identifier of the processor list to use when placing the structure.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": ""
       },
       {
         "id": "projection",
         "title": "Projection",
         "description": "Specifies how structures should be placed relative to the terrain.",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "rigid",

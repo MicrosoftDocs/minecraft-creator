@@ -46,7 +46,7 @@
         "title": "Probability",
         "description": "The chance of taming the entity with each item use between 0.0 and 1.0, where 1.0 is 100%",
         "defaultValue": 1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/parrot.json": [
             {
@@ -60,7 +60,7 @@
         "id": "tame_event",
         "title": "Tame Event",
         "description": "Event to run when this entity becomes tamed",
-        "dataType": 22,
+        "dataType": "minecraftEventTrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/parrot.json": [
             {
@@ -77,7 +77,7 @@
         "id": "tame_items",
         "title": "Tame Items",
         "description": "The list of items that can be used to tame this entity",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/parrot.json": [
             {

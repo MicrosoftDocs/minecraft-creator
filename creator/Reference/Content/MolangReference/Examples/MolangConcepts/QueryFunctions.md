@@ -80,6 +80,7 @@ ms.date: 02/11/2025
 | [query.eye_target_y_rotation](queryfunctions/query_eye_target_y_rotation.md)| Returns the Y eye rotation of the entity, else it returns 0.0. |
 | [query.facing_target_to_range_attack](queryfunctions/query_facing_target_to_range_attack.md)| Returns 1.0 if the entity is attacking from range (i.e. |
 | [query.frame_alpha](queryfunctions/query_frame_alpha.md)| Returns the ratio (from 0 to 1) of how much between AI ticks this frame is being rendered. |
+| [query.fuse_time](queryfunctions/query_fuse_time.md)| Returns the remaining fuse time of the entity. |
 | [query.get_actor_info_id](queryfunctions/query_get_actor_info_id.md)| Returns the integer id of an entity (actor) by its string name. |
 | [query.get_animation_frame](queryfunctions/query_get_animation_frame.md)| Returns the current texture of an item whose appearance can change (such as a drawn bow). |
 | [query.get_default_bone_pivot](queryfunctions/query_get_default_bone_pivot.md)| Gets specified axis of the specified bone orientation pivot. |

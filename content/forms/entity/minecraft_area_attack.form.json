@@ -163,7 +163,7 @@
         "id": "cause",
         "title": "Cause",
         "description": "The type of damage that is applied to entities that enter the damage range.",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/magma_cube.json": [
             {
@@ -182,7 +182,7 @@
         "title": "Damage Cooldown",
         "description": "Attack cooldown (in seconds) for how often this entity can attack a target.",
         "defaultValue": 0,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/magma_cube.json": [
             {
@@ -201,7 +201,7 @@
         "title": "Damage Per Tick",
         "description": "How much damage per tick is applied to entities that enter the damage range.",
         "defaultValue": 2,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/magma_cube.json": [
             {
@@ -234,7 +234,7 @@
         "title": "Damage Range",
         "description": "How close a hostile entity must be to have the damage applied.",
         "defaultValue": 0.2,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/magma_cube.json": [
             {
@@ -252,7 +252,7 @@
         "id": "entity_filter",
         "title": "Entity Filter",
         "description": "The set of entities that are valid to apply the damage to when within range.",
-        "dataType": 20,
+        "dataType": "minecraftFilter",
         "samples": {
           "/vanilla/behavior_pack/entities/magma_cube.json": [
             {
@@ -343,7 +343,7 @@
         "title": "Play Attack Sound",
         "description": "If the entity should play their attack sound when attacking a target.",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       }
     ],
     "samples": {

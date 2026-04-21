@@ -157,19 +157,6 @@ Type: *boolean*
 Notes:
   - This property can't be edited in restricted-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
-### **locatorBar**
-`locatorBar: boolean;`
-
-Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-Notes:
-  - This property can't be edited in restricted-execution mode.
-::: moniker-end
-
 ### **maxCommandChainLength**
 `maxCommandChainLength: number;`
 
@@ -201,6 +188,19 @@ Type: *number*
 
 Notes:
   - This property can't be edited in restricted-execution mode.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **playerWaypoints**
+`playerWaypoints: PlayerWaypointsMode;`
+
+Type: [*PlayerWaypointsMode*](PlayerWaypointsMode.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can't be edited in restricted-execution mode.
+::: moniker-end
 
 ### **projectilesCanBreakBlocks**
 `projectilesCanBreakBlocks: boolean;`

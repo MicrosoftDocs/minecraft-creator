@@ -17,7 +17,7 @@ Adds a trigger to call when this entity loses the target it currently has.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| event | *not set* | String | The event to run when the conditions for this trigger are met. | Drowned: `"minecraft:lost_target"`, Llama: `"minecraft:on_calm"`, Magma Cube: `"minecraft:become_calm"` | 
+| event | *not set* | String | The event to run when the conditions for this trigger are met. | Llama: `"minecraft:on_calm"`, Magma Cube: `"minecraft:become_calm"` | 
 | filters | *not set* | Minecraft filter | The list of conditions for this trigger to execute. | Llama: `{"all_of":[{"test":"is_family","subject":"target","value":"wolf"},{"test":"has_component","subject":"target","operator":"!=","value":"minecraft:is_tamed"}]}` | 
 | target | self | String | The target of the event. | Dolphin: `"self"` | 
 
@@ -28,16 +28,6 @@ Adds a trigger to call when this entity loses the target it currently has.
 
 ```json
 "minecraft:on_target_escape": {
-  "target": "self"
-}
-```
-
-#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
-
-
-```json
-"minecraft:on_target_escape": {
-  "event": "minecraft:lost_target",
   "target": "self"
 }
 ```

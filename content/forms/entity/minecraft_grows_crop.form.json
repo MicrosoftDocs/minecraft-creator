@@ -23,14 +23,14 @@
         "title": "Chance",
         "description": "Value between 0-1. Chance of success per tick.",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "charges",
         "title": "Charges",
         "description": "Number of charges",
         "defaultValue": 10,
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "samples": {}

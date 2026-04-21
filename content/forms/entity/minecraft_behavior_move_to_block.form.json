@@ -23,60 +23,60 @@
         "title": "Goal Radius",
         "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
         "defaultValue": 0.5,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "on_reach",
         "title": "Reach",
         "description": "Event to run on block reached.",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "on_stay_completed",
         "title": "Stay Completed",
         "description": "Event to run on completing a stay of stay_duration at the block.",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "search_height",
         "title": "Search Height",
         "description": "The height in blocks that the mob will look for the block.",
         "defaultValue": 1,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "search_range",
         "title": "Search Range",
         "description": "The distance in blocks that the mob will look for the block.",
         "defaultValue": 0,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Movement speed multiplier of the mob when using this AI Goal",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "start_chance",
         "title": "Start Chance",
         "description": "Chance to start the behavior (applied after each random tick_interval).",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "stay_duration",
         "title": "Stay Duration",
         "description": "Number of ticks needed to complete a stay at the block.",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "target_blocks",
         "title": "Target Blocks",
         "description": "Block types to move to.",
-        "dataType": 17
+        "dataType": "stringArray"
       },
       {
         "id": "target_offset",
@@ -87,28 +87,28 @@
           0,
           0
         ],
-        "dataType": 11
+        "dataType": "point3"
       },
       {
         "id": "target_selection_method",
         "title": "Target Selection Method",
         "description": "Kind of block to find fitting the specification. Valid values are \"random\" and \"nearest\".",
         "defaultValue": "nearest",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "tick_interval",
         "title": "Tick Interval",
         "description": "Average interval in ticks to try to run this behavior.",
         "defaultValue": 20,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "samples": {}

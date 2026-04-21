@@ -34,63 +34,63 @@
         "title": "Goal Radius",
         "description": "Distance in blocks within the entity considers it has reached it's target position.",
         "defaultValue": 1.5,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "max_seconds_before_search",
         "title": "Max Seconds Before Search",
         "description": "The maximum amount of time in seconds that the goal can take before searching for the first harvest block. The time is chosen between 0 and this number.",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "search_cooldown_max_seconds",
         "title": "Search Cooldown Max Seconds",
         "description": "The maximum amount of time in seconds that the goal can take before searching again, after failing to find a a harvest block already. The time is chosen between 0 and this number.",
         "defaultValue": 8,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "search_count",
         "title": "Search Count",
         "description": "The number of randomly selected blocks each tick that the mob will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick.",
         "defaultValue": 0,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "search_height",
         "title": "Search Height",
         "description": "The height in blocks the entity will search within to find a valid target position.",
         "defaultValue": 1,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "search_range",
         "title": "Search Range",
         "description": "The distance in blocks the entity will search within to find a valid target position.",
         "defaultValue": 16,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "seconds_until_new_task",
         "title": "Seconds Until New Task",
         "description": "The amount of time in seconds that the goal will cooldown after a successful reap/sow, before it can start again.",
         "defaultValue": 0.5,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Movement speed multiplier of the mob when using this goal.",
         "defaultValue": 0.5,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "samples": {}
@@ -103,7 +103,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -124,7 +124,7 @@
         "id": "goal_radius",
         "title": "Goal Radius",
         "description": "Distance in blocks within the entity considers it has reached it's target position.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1.5,
         "validity": [
           {
@@ -137,7 +137,7 @@
         "id": "max_seconds_before_search",
         "title": "Max Seconds Before Search",
         "description": "The maximum amount of time in seconds that the goal can take before searching for the first harvest block. The time is chosen between 0 and this number.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1,
         "validity": [
           {
@@ -149,14 +149,14 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "search_cooldown_max_seconds",
         "title": "Search Cooldown Max Seconds",
         "description": "The maximum amount of time in seconds that the goal can take before searching again, after failing to find a a harvest block already. The time is chosen between 0 and this number.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 8,
         "validity": [
           {
@@ -169,14 +169,14 @@
         "id": "search_count",
         "title": "Search Count",
         "description": "The number of randomly selected blocks each tick that the mob will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "search_height",
         "title": "Search Height",
         "description": "The height in blocks the entity will search within to find a valid target position.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 1,
         "validity": [
           {
@@ -189,7 +189,7 @@
         "id": "search_range",
         "title": "Search Range",
         "description": "The distance in blocks the entity will search within to find a valid target position.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 16,
         "validity": [
           {
@@ -202,7 +202,7 @@
         "id": "seconds_until_new_task",
         "title": "Seconds Until New Task",
         "description": "The amount of time in seconds that the goal will cooldown after a successful reap/sow, before it can start again.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.5,
         "validity": [
           {
@@ -215,7 +215,7 @@
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Movement speed multiplier of the mob when using this goal.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.5
       }
     ],

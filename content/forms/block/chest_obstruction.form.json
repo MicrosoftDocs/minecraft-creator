@@ -9,7 +9,7 @@
       {
         "id": "obstruction_rule",
         "title": "Chest Obstruction Rule",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "always",

@@ -15,12 +15,11 @@ Tests the current weather, at the actor's position, against a provided weather v
 
 ## Weather At Position Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Fox: `"!="` | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Fox: `"self"` | 
-| test | *not set* | String |  | Fox: `"weather_at_position"` | 
-| value | *not set* | String | (Required) The Family name to look for | Fox: `"thunderstorm"` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | 
+| value | *not set* | String | (Required) The Family name to look for | 
 
 ### Operator choices
 
@@ -61,36 +60,4 @@ At Short (using Defaults)..:
 
 ```json
 { "test": "weather_at_position", "value": "player" }
-```
-
-#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
-
-At /minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers[0]/filters/all_of[0]/: 
-
-```json
-{
-  "test": "weather_at_position",
-  "operator": "!=",
-  "value": "thunderstorm"
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:fox_day/minecraft:environment_sensor/triggers[0]/filters/: 
-
-```json
-{
-  "test": "weather_at_position",
-  "value": "thunderstorm"
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:fox_day/minecraft:behavior.nap/can_nap_filters/all_of[3]/: 
-
-```json
-{
-  "test": "weather_at_position",
-  "subject": "self",
-  "operator": "!=",
-  "value": "thunderstorm"
-}
 ```

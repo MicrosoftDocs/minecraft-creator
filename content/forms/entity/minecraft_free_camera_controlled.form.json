@@ -24,14 +24,14 @@
         "title": "Backwards Movement Modifier",
         "description": "Modifies speed going backwards.",
         "defaultValue": 0.5,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "strafe_speed_modifier",
         "title": "Strafe Speed Modifier",
         "description": "Modifies the strafe speed.",
         "defaultValue": 0.4,
-        "dataType": 3
+        "dataType": "float"
       }
     ],
     "samples": {}

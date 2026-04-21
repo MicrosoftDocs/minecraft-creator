@@ -33,7 +33,7 @@
         "title": "Value",
         "description": "Flying speed in blocks per tick.",
         "defaultValue": 0.02,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
             {

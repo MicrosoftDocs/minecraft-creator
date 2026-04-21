@@ -81,23 +81,23 @@
       {
         "id": "direction",
         "title": "Direction",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "facing_camera_mode",
         "title": "Facing Camera Mode",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "size",
         "title": "Size",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "minLength": 2,
         "maxLength": 2,
         "alternates": [
           {
             "id": "size",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "size",
@@ -106,13 +106,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -120,7 +120,7 @@
           },
           {
             "id": "size",
-            "dataType": 3
+            "dataType": "float"
           }
         ],
         "isRequired": true
@@ -128,7 +128,7 @@
       {
         "id": "uv",
         "title": "Uv",
-        "dataType": 16
+        "dataType": "object"
       }
     ]
   },

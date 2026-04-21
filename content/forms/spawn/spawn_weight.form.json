@@ -25,13 +25,13 @@
       {
         "id": "default",
         "title": "Default",
-        "dataType": 0,
+        "dataType": "int",
         "isRequired": true
       },
       {
         "id": "rarity",
         "title": "Rarity",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       }
     ]

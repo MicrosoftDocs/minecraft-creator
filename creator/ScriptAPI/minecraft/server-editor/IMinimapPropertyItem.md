@@ -38,45 +38,51 @@ Width of the map image.
 Type: *number*
 
 ## Methods
-- [assignMarker](#assignmarker)
-- [refreshMap](#refreshmap)
-- [removeMarker](#removemarker)
+- [isMarkerTypeVisible](#ismarkertypevisible)
+- [isMeMarkerShown](#ismemarkershown)
+- [registerCustomMarkerIcon](#registercustommarkericon)
 - [resizeMapImage](#resizemapimage)
+- [setMarkerTypeVisible](#setmarkertypevisible)
+- [setMeMarkerShown](#setmemarkershown)
+- [unregisterCustomMarkerIcon](#unregistercustommarkericon)
 
-### **assignMarker**
+### **isMarkerTypeVisible**
 `
-assignMarker(markerType: MinimapMarkerType): void
+isMarkerTypeVisible(type: MinimapMarkerType): boolean
 `
 
-Adds a marker to the minimap.
+Get visibility for a specific marker type.
 
 #### **Parameters**
-- **markerType**: *MinimapMarkerType*
+- **type**: *MinimapMarkerType*
   
-  The type of marker to add.
+  The marker type to query.
 
-**Returns** *void*
+**Returns** *boolean*
 
-### **refreshMap**
+### **isMeMarkerShown**
 `
-refreshMap(): void
-`
-
-Refreshes the map.
-
-**Returns** *void*
-
-### **removeMarker**
-`
-removeMarker(markerType: MinimapMarkerType): void
+isMeMarkerShown(): boolean
 `
 
-Removes a marker from the minimap.
+Get me marker visibility.
+
+**Returns** *boolean*
+
+### **registerCustomMarkerIcon**
+`
+registerCustomMarkerIcon(iconIdentifier: string, imagePath: string): void
+`
+
+Register a custom marker icon for UI rendering.
 
 #### **Parameters**
-- **markerType**: *MinimapMarkerType*
+- **iconIdentifier**: *string*
   
-  The type of marker to remove.
+  The iconIdentifier string.
+- **imagePath**: *string*
+  
+  The image resource path.
 
 **Returns** *void*
 
@@ -94,5 +100,48 @@ Updates the size of the map image.
 - **height**: *number*
   
   New height of the image.
+
+**Returns** *void*
+
+### **setMarkerTypeVisible**
+`
+setMarkerTypeVisible(type: MinimapMarkerType, visible: boolean): void
+`
+
+Set visibility for a specific marker type.
+
+#### **Parameters**
+- **type**: *MinimapMarkerType*
+  
+  The marker type to toggle.
+- **visible**: *boolean*
+  
+  Whether the marker type should be visible.
+
+**Returns** *void*
+
+### **setMeMarkerShown**
+`
+setMeMarkerShown(shown: boolean): void
+`
+
+Set me marker visibility.
+
+#### **Parameters**
+- **shown**: *boolean*
+
+**Returns** *void*
+
+### **unregisterCustomMarkerIcon**
+`
+unregisterCustomMarkerIcon(iconIdentifier: string): void
+`
+
+Unregister a custom marker icon.
+
+#### **Parameters**
+- **iconIdentifier**: *string*
+  
+  The iconIdentifier string.
 
 **Returns** *void*

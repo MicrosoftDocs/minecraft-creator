@@ -75,28 +75,28 @@
         "title": "Chance Per Tick To Float",
         "description": "The chance per tick to cause an upward impulse.",
         "defaultValue": 0.8,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "sink_with_passengers",
         "title": "Sink With Passengers",
         "description": "If true, the mob will keep sinking as long as it has passengers.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "time_under_water_to_dismount_passengers",
         "title": "Time Under Water To Dismount Passengers",
         "description": "Time in seconds that a floating vehicles head can be underwater before it causes its passengers to dismount.",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
             {
@@ -165,13 +165,13 @@
         "id": "chance_per_tick_to_float",
         "title": "Chance Per Tick To Float",
         "description": "The chance per tick to cause an upward impulse.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.800000011920929
       },
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -191,7 +191,7 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
@@ -212,14 +212,14 @@
         "id": "sink_with_passengers",
         "title": "Sink With Passengers",
         "description": "If true, the mob will keep sinking as long as it has passengers.",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": false
       },
       {
         "id": "time_under_water_to_dismount_passengers",
         "title": "Time Under Water To Dismount Passengers",
         "description": "Time in seconds that a floating vehicles head can be underwater before it causes its passengers to dismount.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0
       }
     ],

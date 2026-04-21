@@ -143,14 +143,14 @@
     "title": "Vegetation Patch Feature",
     "fields": [
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "description",
         "title": "Description",
         "isRequired": true,
         "subForm": {
           "fields": [
             {
-              "dataType": 2,
+              "dataType": "string",
               "id": "identifier",
               "title": "Identifier",
               "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -160,27 +160,27 @@
         }
       },
       {
-        "dataType": 17,
+        "dataType": "stringArray",
         "id": "replaceable_blocks",
         "title": "Replaceable Blocks",
         "isRequired": true
       },
       {
-        "dataType": 2,
+        "dataType": "string",
         "id": "surface",
         "title": "Surface",
         "description": "Determines if a vegetation patch will grow from the ceiling or the floor.",
         "isRequired": false
       },
       {
-        "dataType": 0,
+        "dataType": "int",
         "id": "vertical_range",
         "title": "Vertical Range",
         "description": "Vertical range used to determine a suitable surface position for the patch.",
         "isRequired": true
       },
       {
-        "dataType": 1,
+        "dataType": "boolean",
         "id": "waterlogged",
         "title": "Waterlogged",
         "description": "If true, waterlogs the positions occupied by the ground blocks.",

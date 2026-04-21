@@ -1,0 +1,84 @@
+{
+  "id": "NoiseBlockSpecifier",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "NoiseBlockSpecifier",
+    "title": "Biome NoiseBlockSpecifier",
+    "fields": [
+      {
+        "id": "block",
+        "description": "The block to place if the noise sample satisfies the provided threshold/range",
+        "dataType": "string",
+        "alternates": [
+          {
+            "id": "block",
+            "dataType": "object",
+            "readOnly": true,
+            "subForm": {
+              "id": "block",
+              "title": "Block",
+              "fields": [
+                {
+                  "id": "name",
+                  "title": "Name",
+                  "description": "Name of the block",
+                  "dataType": "object",
+                  "isRequired": true
+                },
+                {
+                  "id": "states",
+                  "title": "States",
+                  "description": "Contains members named after each state, with boolean, integer, or string values.",
+                  "dataType": "keyedNumberCollection",
+                  "defaultValue": {},
+                  "alternates": [
+                    {
+                      "id": "states",
+                      "dataType": "keyedBooleanCollection"
+                    },
+                    {
+                      "id": "states",
+                      "dataType": "keyedStringCollection"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "noise",
+        "title": "Noise",
+        "description": "The string identifier of the noise associated with this NoiseBlockSpecifier.",
+        "dataType": "string",
+        "defaultValue": "",
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^\\S+$"
+          }
+        ]
+      },
+      {
+        "id": "range",
+        "title": "Range",
+        "description": "The range of sampled noise value associated with the provided Block.",
+        "dataType": "object",
+        "defaultValue": {
+          "max": 0,
+          "min": 0
+        },
+        "subFormId": "item_components/floatrange"
+      },
+      {
+        "id": "threshold",
+        "title": "Threshold",
+        "description": "The minimum sampled noise value associated with the provided Block.",
+        "dataType": "float",
+        "defaultValue": 0
+      }
+    ]
+  }
+}

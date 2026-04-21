@@ -65,6 +65,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.follow_owner](EntityGoals/minecraftBehavior_follow_owner.md)| Allows a mob to follow the player that owns it. |
 | [minecraft:behavior.follow_parent](EntityGoals/minecraftBehavior_follow_parent.md)| Allows the mob to follow their parent around. |
 | [minecraft:behavior.follow_target_captain](EntityGoals/minecraftBehavior_follow_target_captain.md)| Allows mob to move towards its current target captain. |
+| [minecraft:behavior.follow_target_leader](EntityGoals/minecraftBehavior_follow_target_leader.md)| Allows mob to move towards its target leader. |
 | [minecraft:behavior.go_and_give_items_to_noteblock](EntityGoals/minecraftBehavior_go_and_give_items_to_noteblock.md)| The entity will attempt to toss the items from its inventory to a nearby recently played noteblock. |
 | [minecraft:behavior.go_and_give_items_to_owner](EntityGoals/minecraftBehavior_go_and_give_items_to_owner.md)| The entity will attempt to toss the items from its inventory to its owner. |
 | [minecraft:behavior.go_home](EntityGoals/minecraftBehavior_go_home.md)| Allows the mob to move back to the position they were spawned. |
@@ -72,6 +73,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.harvest_farm_block](EntityGoals/minecraftBehavior_harvest_farm_block.md)| Allows the entity to search within an area for farmland with air above it. |
 | [minecraft:behavior.hide](EntityGoals/minecraftBehavior_hide.md)| Allows a mob with the hide component to attempt to move to - and hide at - an owned or nearby POI. |
 | [minecraft:behavior.hold_ground](EntityGoals/minecraftBehavior_hold_ground.md)| Compels an entity to stop at their current location, turn to face a mob they are targeting, and react with an event. |
+| [minecraft:behavior.hover](EntityGoals/minecraftBehavior_hover.md)| Allows the mob to hover in place. |
 | [minecraft:behavior.hurt_by_target](EntityGoals/minecraftBehavior_hurt_by_target.md)| Allows the mob to target another mob that hurts them. |
 | [minecraft:behavior.inspect_bookshelf](EntityGoals/minecraftBehavior_inspect_bookshelf.md)| Allows the mob to inspect bookshelves. |
 | [minecraft:behavior.investigate_suspicious_location](EntityGoals/minecraftBehavior_investigate_suspicious_location.md)| Allows this entity to move towards a "suspicious" position based on data gathered in `minecraft:suspect_tracking`. |
@@ -125,7 +127,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.ram_attack](EntityGoals/minecraftBehavior_ram_attack.md)| Allows this entity to damage a target by using a running attack. |
 | [minecraft:behavior.random_breach](EntityGoals/minecraftBehavior_random_breach.md)| Allows the mob to randomly break surface of the water. |
 | [minecraft:behavior.random_fly](EntityGoals/minecraftBehavior_random_fly.md)| Allows a mob to randomly fly around. |
-| [minecraft:behavior.random_hover](EntityGoals/minecraftBehavior_random_hover.md)| Allows the mob to hover around randomly, close to the surface |
+| [minecraft:behavior.random_hover](EntityGoals/minecraftBehavior_random_hover.md)| Allows the mob to hover around randomly, close to the surface. |
 | [minecraft:behavior.random_look_around](EntityGoals/minecraftBehavior_random_look_around.md)| Allows the mob to randomly look around. |
 | [minecraft:behavior.random_look_around_and_sit](EntityGoals/minecraftBehavior_random_look_around_and_sit.md)| Allows the mob to randomly sit and look around for a duration. |
 | [minecraft:behavior.random_search_and_dig](EntityGoals/minecraftBehavior_random_search_and_dig.md)| Allows this entity to locate a random target block that it can path find to. |
@@ -140,7 +142,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.roar](EntityGoals/minecraftBehavior_roar.md)| Allows this entity to roar at another entity based on data in `minecraft:anger_level`. |
 | [minecraft:behavior.roll](EntityGoals/minecraftBehavior_roll.md)| This allows the mob to roll forward. |
 | [minecraft:behavior.run_around_like_crazy](EntityGoals/minecraftBehavior_run_around_like_crazy.md)| Allows the mob to run around aimlessly. |
-| [minecraft:behavior.scared](EntityGoals/minecraftBehavior_scared.md)| Allows the a mob to become scared when the weather outside is thundering |
+| [minecraft:behavior.scared](EntityGoals/minecraftBehavior_scared.md)| Allows the mob to become scared when the weather outside is thundering. |
 | [minecraft:behavior.send_event](EntityGoals/minecraftBehavior_send_event.md)| Allows the mob to send an event to another mob. |
 | [minecraft:behavior.share_items](EntityGoals/minecraftBehavior_share_items.md)| Allows the mob to give items it has to others. |
 | [minecraft:behavior.silverfish_merge_with_stone](EntityGoals/minecraftBehavior_silverfish_merge_with_stone.md)| Allows the mob to go into stone blocks like Silverfish do. |
@@ -152,7 +154,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.slime_keep_on_jumping](EntityGoals/minecraftBehavior_slime_keep_on_jumping.md)| Allows the entity to continuously jump around like a slime. |
 | [minecraft:behavior.slime_random_direction](EntityGoals/minecraftBehavior_slime_random_direction.md)| Allows the entity to move in random directions like a slime. |
 | [minecraft:behavior.snacking](EntityGoals/minecraftBehavior_snacking.md)| Allows the mob to take a load off and snack on food that it found nearby. |
-| [minecraft:behavior.sneeze](EntityGoals/minecraftBehavior_sneeze.md)| Allows the mob to stop and sneeze possibly startling nearby mobs and dropping an item. |
+| [minecraft:behavior.sneeze](EntityGoals/minecraftBehavior_sneeze.md)| Allows the mob to sneeze, causing it to drop items and affect nearby mobs. |
 | [minecraft:behavior.sniff](EntityGoals/minecraftBehavior_sniff.md)| Allows this entity to detect the nearest player within "sniffing_radius" and update its "minecraft:suspect_tracking" component state |
 | [minecraft:behavior.sonic_boom](EntityGoals/minecraftBehavior_sonic_boom.md)| Allows this entity to perform a 'sonic boom' ranged attack |
 | [minecraft:behavior.squid_dive](EntityGoals/minecraftBehavior_squid_dive.md)| Allows the squid to dive down in water. |
@@ -175,6 +177,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.swoop_attack](EntityGoals/minecraftBehavior_swoop_attack.md)| Allows an entity to attack using swoop attack behavior; Ideal for use with flying mobs. |
 | [minecraft:behavior.take_block](EntityGoals/minecraftBehavior_take_block.md)| AI goal that makes entities pick up blocks from the world, like Endermen grabbing blocks to carry. |
 | [minecraft:behavior.take_flower](EntityGoals/minecraftBehavior_take_flower.md)| Allows the mob to accept flowers from another mob with the minecraft:offer_flower behavior. |
+| [minecraft:behavior.target_when_pushed](EntityGoals/minecraftBehavior_target_when_pushed.md)| Allows the mob to target another mob when it is pushed by that mob. |
 | [minecraft:behavior.teleport_to_owner](EntityGoals/minecraftBehavior_teleport_to_owner.md)| Allows an entity to teleport to its owner. |
 | [minecraft:behavior.tempt](EntityGoals/minecraftBehavior_tempt.md)| Allows a mob to be tempted by a player holding a specific item. |
 | [minecraft:behavior.timer_flag_1](EntityGoals/minecraftBehavior_timer_flag_1.md)| Fires an event when this behavior starts, then waits for a duration before stopping. |

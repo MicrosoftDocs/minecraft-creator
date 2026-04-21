@@ -23,14 +23,14 @@
         "title": "Max",
         "description": "The maximum strength of this entity",
         "defaultValue": 5,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "value",
         "title": "Value",
         "description": "The initial value of the strength",
         "defaultValue": 1,
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "samples": {}

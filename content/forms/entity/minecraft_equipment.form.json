@@ -52,13 +52,13 @@
         "id": "slot_drop_chance",
         "title": "Slot Drop Chance",
         "description": "A list of slots with the chance to drop an equipped item from that slot.",
-        "dataType": 17
+        "dataType": "stringArray"
       },
       {
         "id": "table",
         "title": "Table",
         "description": "The file path to the equipment table, relative to the behavior pack's root.",
-        "dataType": 2
+        "dataType": "string"
       }
     ],
     "samples": {}

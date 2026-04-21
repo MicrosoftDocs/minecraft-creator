@@ -230,14 +230,14 @@
         "title": "Controlling Seat",
         "description": "The seat that designates the driver of the entity. Entities with the \"minecraft:behavior.controlled_by_player\" goal ignore this field and give control to any player in any seat.",
         "defaultValue": 0,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "crouching_skip_interact",
         "title": "Crouching Skip Interact",
         "description": "If true, this entity can't be interacted with if the entity interacting with it is crouching.",
         "defaultValue": true,
-        "dataType": 1,
+        "dataType": "boolean",
         "samples": {
           "/vanilla/behavior_pack/entities/llama.json": [
             {
@@ -252,13 +252,13 @@
         "title": "Dismount Mode",
         "description": "Defines where riders are placed when dismounting this entity:\n- \"default\", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found.\n- \"on_top_center\", riders are placed at the center of the top of the entity's collision box.",
         "defaultValue": "default",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "family_types",
         "title": "Family Types",
         "description": "List of entities that can ride this entity.",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
@@ -273,14 +273,6 @@
               "path": "/minecraft:entity/component_groups/minecraft:cow_baby/minecraft:rideable/",
               "content": [
                 "baby_undead"
-              ]
-            }
-          ],
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:rideable/",
-              "content": [
-                "piglin"
               ]
             }
           ],
@@ -304,7 +296,7 @@
         "id": "interact_text",
         "title": "Interact Text",
         "description": "The text to display when the player can interact with the entity when playing with touch-screen controls.",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/llama.json": [
             {
@@ -321,6 +313,12 @@
               "path": "/minecraft:entity/components/minecraft:rideable/",
               "content": "action.interact.ride.minecart"
             }
+          ],
+          "/vanilla/behavior_pack/entities/pig.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:rideable/",
+              "content": "action.interact.ride.horse"
+            }
           ]
         }
       },
@@ -328,33 +326,33 @@
         "id": "on_rider_enter_event",
         "title": "Rider Enter Event",
         "description": "Event to execute on the owner entity when an entity starts riding it.",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "on_rider_exit_event",
         "title": "Rider Exit Event",
         "description": "Event to execute on the owner entity when an entity stops riding it.",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "passenger_max_width",
         "title": "Passenger Max Width",
         "description": "The max width a mob can have to be a rider. A value of 0 ignores this parameter.",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "priority",
         "title": "Priority",
         "description": "This field may exist in old data but isn't used by \"minecraft:rideable\".",
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "pull_in_entities",
         "title": "Pull In Entities",
         "description": "If true, this entity will pull entities matching the specified \"family_types\" into any available seats. Entities that are leashed will only be pulled in if their distance to their leash holder is less than the \"hard_distance\" defined in their own \"minecraft:leashable\" component.",
         "defaultValue": false,
-        "dataType": 1,
+        "dataType": "boolean",
         "samples": {
           "/vanilla/behavior_pack/entities/minecart.json": [
             {
@@ -369,14 +367,14 @@
         "title": "Rider Can Interact",
         "description": "If true, this entity will be picked when looked at by the rider.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "seat_count",
         "title": "Seat Count",
         "description": "The number of entities that can ride this entity at the same time.",
         "defaultValue": 1,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
@@ -389,12 +387,6 @@
               "path": "/minecraft:entity/component_groups/minecraft:cow_baby/minecraft:rideable/",
               "content": 1
             }
-          ],
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:rideable/",
-              "content": 3
-            }
           ]
         }
       },
@@ -402,7 +394,7 @@
         "id": "seats",
         "title": "Seats",
         "description": "The list of positions and number of riders for each position for entities riding this entity.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "The list of positions and number of riders for each position for entities riding this entity.",
@@ -412,21 +404,21 @@
               "title": "Lock Rider Rotation",
               "description": "Angle in degrees that a rider is allowed to rotate while riding this entity. Omit this property for no limit.",
               "defaultValue": 181,
-              "dataType": 3
+              "dataType": "float"
             },
             {
               "id": "max_rider_count",
               "title": "Max Rider Count",
               "description": "Defines the maximum number of riders that can be riding this entity for this seat to be valid.",
               "defaultValue": 0,
-              "dataType": 0
+              "dataType": "int"
             },
             {
               "id": "min_rider_count",
               "title": "Min Rider Count",
               "description": "Defines the minimum number of riders that need to be riding this entity before this seat can be used.",
               "defaultValue": 0,
-              "dataType": 0
+              "dataType": "int"
             },
             {
               "id": "position",
@@ -437,14 +429,14 @@
                 0,
                 0
               ],
-              "dataType": 11
+              "dataType": "point3"
             },
             {
               "id": "rotate_rider_by",
               "title": "Rotate Rider By",
               "description": "Offset to rotate riders by.",
               "defaultValue": "0",
-              "dataType": 2
+              "dataType": "string"
             }
           ]
         },
@@ -483,37 +475,6 @@
               }
             }
           ],
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:rideable/",
-              "content": [
-                {
-                  "position": [
-                    0,
-                    1.125,
-                    -0.3
-                  ],
-                  "lock_rider_rotation": 0
-                },
-                {
-                  "position": [
-                    0,
-                    2.625,
-                    -0.3
-                  ],
-                  "lock_rider_rotation": 0
-                },
-                {
-                  "position": [
-                    0,
-                    4.125,
-                    -0.3
-                  ],
-                  "lock_rider_rotation": 0
-                }
-              ]
-            }
-          ],
           "/vanilla/behavior_pack/entities/llama.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:rideable/",
@@ -543,6 +504,28 @@
                 "position": [
                   0,
                   -0.2,
+                  0
+                ]
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pig.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:rideable/",
+              "content": {
+                "position": [
+                  0,
+                  0.7,
+                  0
+                ]
+              }
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:rideable/",
+              "content": {
+                "position": [
+                  0,
+                  0.63,
                   0
                 ]
               }
@@ -604,43 +587,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/hoglin.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:rideable/",
-          "content": {
-            "seat_count": 3,
-            "family_types": [
-              "piglin"
-            ],
-            "seats": [
-              {
-                "position": [
-                  0,
-                  1.125,
-                  -0.3
-                ],
-                "lock_rider_rotation": 0
-              },
-              {
-                "position": [
-                  0,
-                  2.625,
-                  -0.3
-                ],
-                "lock_rider_rotation": 0
-              },
-              {
-                "position": [
-                  0,
-                  4.125,
-                  -0.3
-                ],
-                "lock_rider_rotation": 0
-              }
-            ]
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/llama.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:rideable/",
@@ -689,6 +635,41 @@
               "position": [
                 0,
                 -0.2,
+                0
+              ]
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pig.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:rideable/",
+          "content": {
+            "seat_count": 1,
+            "family_types": [
+              "baby_undead"
+            ],
+            "seats": {
+              "position": [
+                0,
+                0.7,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:rideable/",
+          "content": {
+            "seat_count": 1,
+            "interact_text": "action.interact.ride.horse",
+            "family_types": [
+              "player"
+            ],
+            "seats": {
+              "position": [
+                0,
+                0.63,
                 0
               ]
             }

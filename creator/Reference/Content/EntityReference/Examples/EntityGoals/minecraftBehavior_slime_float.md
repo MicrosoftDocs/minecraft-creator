@@ -24,9 +24,9 @@ Allow slimes to float in water / lava.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
-| jump_chance_percentage | 0.800000011920929 | Decimal number | Percent chance a slime or magma cube has to jump while in water / lava. |  | 
+| jump_chance_percentage | 0.800000011920929 | Decimal number | Percent chance a slime or magma cube has to jump while in water / lava. | Sulfur Cube: `0.8` | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Magma Cube: `1` | 
-| speed_multiplier | 1.2000000476837158 | Decimal number | Determines the multiplier the entity's speed is modified by when moving through water / lava. |  | 
+| speed_multiplier | 1.2000000476837158 | Decimal number | Determines the multiplier the entity's speed is modified by when moving through water / lava. | Sulfur Cube: `1.2` | 
 
 ### Control Flags choices
 
@@ -44,5 +44,16 @@ Allow slimes to float in water / lava.
 ```json
 "minecraft:behavior.slime_float": {
   "priority": 1
+}
+```
+
+#### [Sulfur Cube](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/sulfur_cube.json)
+
+
+```json
+"minecraft:behavior.slime_float": {
+  "priority": 1,
+  "jump_chance_percentage": 0.8,
+  "speed_multiplier": 1.2
 }
 ```

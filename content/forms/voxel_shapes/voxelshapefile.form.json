@@ -21,14 +21,14 @@
       {
         "id": "description",
         "title": "Description",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "voxel_shapes/description",
         "isRequired": true
       },
       {
         "id": "shape",
         "title": "Shape",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "voxel_shapes/shape",
         "isRequired": true
       }

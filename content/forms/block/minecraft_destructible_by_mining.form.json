@@ -299,6 +299,77 @@
           ]
         }
       }
+    ],
+    "Block Fabricator": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json",
+        "content": {
+          "seconds_to_destroy": 0.4
+        }
+      }
+    ],
+    "Block White Sand": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/white_sand.block.json",
+        "content": {
+          "seconds_to_destroy": 7.5,
+          "item_specific_speeds": [
+            {
+              "item": {
+                "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:wooden_tier')"
+              },
+              "destroy_speed": 1.15
+            },
+            {
+              "item": {
+                "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:stone_tier')"
+              },
+              "destroy_speed": 0.6
+            },
+            {
+              "item": {
+                "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier')"
+              },
+              "destroy_speed": 0.4
+            },
+            {
+              "item": {
+                "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:golden_tier')"
+              },
+              "destroy_speed": 0.2
+            },
+            {
+              "item": {
+                "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:diamond_tier')"
+              },
+              "destroy_speed": 0.3
+            },
+            {
+              "item": {
+                "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:netherite_tier')"
+              },
+              "destroy_speed": 0.25
+            }
+          ]
+        }
+      }
+    ],
+    "Block Leaf Pile": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json",
+        "content": {
+          "seconds_to_destroy": 1
+        }
+      }
+    ],
+    "Luckyblock": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/lucky_block/version_1/behavior_packs/mike_luck/blocks/luckyblock.json",
+        "content": {
+          "seconds_to_destroy": 5,
+          "item_specific_speeds": []
+        }
+      }
     ]
   },
   "generated_doNotEdit": {
@@ -310,7 +381,7 @@
         "id": "item_specific_speeds",
         "title": "Item Specific Speeds",
         "description": "Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. This array currently requires UpcomingFeatures experiment to be enabled.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. This array currently requires UpcomingFeatures experiment to be enabled.",
@@ -319,13 +390,13 @@
               "id": "destroy_speed",
               "title": "Destroy Speed",
               "description": "Required.\nA destroy speed applied while using the defined 'item'.",
-              "dataType": 3
+              "dataType": "float"
             },
             {
               "id": "item",
               "title": "Item",
               "description": "Required.\nAn ItemDescriptor filtering for the item used while mining.",
-              "dataType": 17
+              "dataType": "stringArray"
             }
           ],
           "samples": {
@@ -359,13 +430,13 @@
         "title": "Seconds To Destroy",
         "description": "Sets the number of seconds it takes to destroy the block with base equipment. Greater numbers result in greater mining times.",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       }
     ],
     "scalarField": {
       "id": "boolean",
       "title": "Boolean",
-      "dataType": 1
+      "dataType": "boolean"
     },
     "samples": {}
   }

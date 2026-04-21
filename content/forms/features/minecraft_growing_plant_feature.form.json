@@ -159,14 +159,14 @@
     "title": "Growing Plant Feature",
     "fields": [
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "description",
         "title": "Description",
         "isRequired": true,
         "subForm": {
           "fields": [
             {
-              "dataType": 2,
+              "dataType": "string",
               "id": "identifier",
               "title": "Identifier",
               "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -176,32 +176,32 @@
         }
       },
       {
-        "dataType": 17,
+        "dataType": "stringArray",
         "id": "height_distribution",
         "title": "Height Distribution",
         "isRequired": true
       },
       {
-        "dataType": 2,
+        "dataType": "string",
         "id": "growth_direction",
         "title": "Growth Direction",
         "description": "Direction that the plant grows towards. Valid values: UP and DOWN",
         "isRequired": true
       },
       {
-        "dataType": 17,
+        "dataType": "stringArray",
         "id": "body_blocks",
         "title": "Body Blocks",
         "isRequired": true
       },
       {
-        "dataType": 17,
+        "dataType": "stringArray",
         "id": "head_blocks",
         "title": "Head Blocks",
         "isRequired": true
       },
       {
-        "dataType": 1,
+        "dataType": "boolean",
         "id": "allow_water",
         "title": "Allow Water",
         "description": "Plant blocks can be placed in water.",

@@ -257,35 +257,35 @@
         "id": "breathe_blocks",
         "title": "Breathe Blocks",
         "description": "List of blocks this entity can breathe in, in addition to the other \"breathes\" parameters.",
-        "dataType": 17
+        "dataType": "stringArray"
       },
       {
         "id": "breathes_air",
         "title": "Breathes Air",
         "description": "If true, this entity can breathe in air.",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "breathes_lava",
         "title": "Breathes Lava",
         "description": "If true, this entity can breathe in lava.",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "breathes_solids",
         "title": "Breathes Solids",
         "description": "If true, this entity can breathe in solid blocks.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "breathes_water",
         "title": "Breathes Water",
         "description": "If true, this entity can breathe in water.",
         "defaultValue": false,
-        "dataType": 1,
+        "dataType": "boolean",
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
@@ -300,34 +300,34 @@
         "title": "Generates Bubbles",
         "description": "If true, this entity will have visible bubbles while in water.",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "inhale_time",
         "title": "Inhale Time",
         "description": "Time in seconds to recover breath to maximum.",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "non_breathe_blocks",
         "title": "Non Breathe Blocks",
         "description": "List of blocks this entity can't breathe in, in addition to the other \"breathes\" parameters.",
-        "dataType": 17
+        "dataType": "stringArray"
       },
       {
         "id": "suffocate_time",
         "title": "Suffocate Time",
         "description": "Time in seconds between suffocation damage.",
         "defaultValue": -20,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "total_supply",
         "title": "Total Supply",
         "description": "Time in seconds the entity can hold its breath.",
         "defaultValue": 15,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/bat.json": [
             {
@@ -346,12 +346,12 @@
       {
         "id": "suffocateTime",
         "title": "SuffocateTime",
-        "dataType": 7
+        "dataType": "number"
       },
       {
         "id": "totalSupply",
         "title": "TotalSupply",
-        "dataType": 7,
+        "dataType": "number",
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
             {

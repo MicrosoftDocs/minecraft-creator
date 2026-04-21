@@ -43,7 +43,7 @@
         "id": "table",
         "title": "Table",
         "description": "The path to the loot table, relative to the Behavior Pack's root.",
-        "dataType": 2
+        "dataType": "string"
       }
     ],
     "samples": {}

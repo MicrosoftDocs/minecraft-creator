@@ -29,7 +29,7 @@
         "title": "Operator",
         "description": "(Optional) The comparison to apply with 'value'.",
         "defaultValue": "equals",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "!=",
@@ -81,26 +81,14 @@
             "title": "Not",
             "description": "Test for inequality."
           }
-        ],
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/zombification_sensor/minecraft:environment_sensor/triggers/filters/",
-              "content": "=="
-            },
-            {
-              "path": "/minecraft:entity/component_groups/start_zombification/minecraft:environment_sensor/triggers/filters/",
-              "content": "=="
-            }
-          ]
-        }
+        ]
       },
       {
         "id": "subject",
         "title": "Subject",
         "description": "(Optional) The subject of this filter test.",
         "defaultValue": "self",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "block",
@@ -137,51 +125,14 @@
             "title": "Target",
             "description": "The caller's current target."
           }
-        ],
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/zombification_sensor/minecraft:environment_sensor/triggers/filters/",
-              "content": "self"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/start_zombification/minecraft:environment_sensor/triggers/filters/",
-              "content": "self"
-            }
-          ]
-        }
+        ]
       },
       {
         "id": "value",
         "title": "Value",
         "description": "(Optional) true or false.",
         "defaultValue": true,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/start_zombification/minecraft:environment_sensor/triggers/filters/",
-              "content": true
-            }
-          ]
-        }
-      },
-      {
-        "id": "test",
-        "title": "Test",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/zombification_sensor/minecraft:environment_sensor/triggers/filters/",
-              "content": "in_nether"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/start_zombification/minecraft:environment_sensor/triggers/filters/",
-              "content": "in_nether"
-            }
-          ]
-        }
+        "dataType": "boolean"
       }
     ],
     "samples": {
@@ -193,26 +144,6 @@
         {
           "path": "Short (using Defaults)..",
           "content": "{ \"test\": \"in_nether\" }"
-        }
-      ],
-      "/vanilla/behavior_pack/entities/hoglin.json": [
-        {
-          "path": "/minecraft:entity/component_groups/zombification_sensor/minecraft:environment_sensor/triggers/filters/",
-          "content": {
-            "test": "in_nether",
-            "subject": "self",
-            "operator": "==",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/start_zombification/minecraft:environment_sensor/triggers/filters/",
-          "content": {
-            "test": "in_nether",
-            "subject": "self",
-            "operator": "==",
-            "value": true
-          }
         }
       ]
     }

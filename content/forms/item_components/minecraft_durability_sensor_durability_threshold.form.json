@@ -53,14 +53,14 @@
         "id": "durability",
         "title": "Durability",
         "description": "The effects are emitted when the item durability value is less than or equal to this value.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "particle_type",
         "title": "ParticleType",
         "description": "Particle effect to emit when the threshold is met.",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "balloongas",
@@ -375,6 +375,10 @@
             "title": "Stalactitedripwater"
           },
           {
+            "id": "sulfurcube",
+            "title": "Sulfurcube"
+          },
+          {
             "id": "terrain",
             "title": "Terrain"
           },
@@ -441,8 +445,12 @@
         "id": "sound_event",
         "title": "LevelSoundEvent",
         "description": "Sound effect to emit when the threshold is met.",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
+          {
+            "id": "absorb_block",
+            "title": "Absorb block"
+          },
           {
             "id": "activate",
             "title": "Activate"
@@ -924,6 +932,10 @@
             "title": "Bottle.fill"
           },
           {
+            "id": "bounce",
+            "title": "Bounce"
+          },
+          {
             "id": "bow",
             "title": "Bow"
           },
@@ -1286,6 +1298,10 @@
           {
             "id": "eat",
             "title": "Eat"
+          },
+          {
+            "id": "eject_block",
+            "title": "Eject block"
           },
           {
             "id": "elderguardian.curse",
@@ -2212,6 +2228,10 @@
             "title": "Purreow"
           },
           {
+            "id": "pushed_by_player",
+            "title": "Pushed by player"
+          },
+          {
             "id": "raid.horn",
             "title": "Raid.horn"
           },
@@ -2410,6 +2430,10 @@
           {
             "id": "sleep",
             "title": "Sleep"
+          },
+          {
+            "id": "slime_landing",
+            "title": "Slime landing"
           },
           {
             "id": "smithing_table.use",

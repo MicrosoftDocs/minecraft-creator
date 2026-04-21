@@ -42,7 +42,7 @@
         "id": "add_effects",
         "title": "Add Effects",
         "description": "List of effects to add to this entity after adding this component",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "List of effects to add to this entity after adding this component",
@@ -51,17 +51,17 @@
               "id": "effect",
               "title": "Effect",
               "description": "Effect to add to this entity. Includes 'duration' in seconds, 'amplifier' level, 'ambient' if it is to be considered an ambient effect, and 'visible' if the effect should be visible",
-              "dataType": 2
+              "dataType": "string"
             },
             {
               "id": "display_on_screen_animation",
               "title": "Display On Screen Animation",
-              "dataType": 2
+              "dataType": "string"
             },
             {
               "id": "duration",
               "title": "Duration",
-              "dataType": 7
+              "dataType": "number"
             }
           ]
         },
@@ -84,7 +84,7 @@
         "id": "remove_effects",
         "title": "Remove Effects",
         "description": "List of identifiers of effects to be removed from this entity after adding this component",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/player.json": [
             {

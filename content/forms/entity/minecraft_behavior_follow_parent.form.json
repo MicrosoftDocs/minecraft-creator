@@ -112,7 +112,7 @@
         "title": "Speed Multiplier",
         "description": "Movement speed multiplier of the mob when using this AI Goal",
         "defaultValue": 1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
@@ -132,9 +132,9 @@
               "content": 1
             }
           ],
-          "/vanilla/behavior_pack/entities/hoglin.json": [
+          "/vanilla/behavior_pack/entities/llama.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:behavior.follow_parent/",
+              "path": "/minecraft:entity/component_groups/minecraft:llama_baby/minecraft:behavior.follow_parent/",
               "content": 1
             }
           ]
@@ -145,7 +145,7 @@
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
@@ -159,21 +159,21 @@
               "content": 4
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_baby/minecraft:behavior.follow_parent/",
-              "content": 9
-            }
-          ],
           "/vanilla/behavior_pack/entities/goat.json": [
             {
               "path": "/minecraft:entity/component_groups/goat_baby/minecraft:behavior.follow_parent/",
               "content": 6
             }
           ],
-          "/vanilla/behavior_pack/entities/hoglin.json": [
+          "/vanilla/behavior_pack/entities/llama.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:behavior.follow_parent/",
+              "path": "/minecraft:entity/component_groups/minecraft:llama_baby/minecraft:behavior.follow_parent/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pig.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:pig_baby/minecraft:behavior.follow_parent/",
               "content": 6
             }
           ]
@@ -199,15 +199,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/fox.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:fox_baby/minecraft:behavior.follow_parent/",
-          "content": {
-            "priority": 9,
-            "speed_multiplier": 1.1
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/goat.json": [
         {
           "path": "/minecraft:entity/component_groups/goat_baby/minecraft:behavior.follow_parent/",
@@ -217,12 +208,21 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/hoglin.json": [
+      "/vanilla/behavior_pack/entities/llama.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:behavior.follow_parent/",
+          "path": "/minecraft:entity/component_groups/minecraft:llama_baby/minecraft:behavior.follow_parent/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pig.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:pig_baby/minecraft:behavior.follow_parent/",
           "content": {
             "priority": 6,
-            "speed_multiplier": 1
+            "speed_multiplier": 1.1
           }
         }
       ]
@@ -236,7 +236,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -256,7 +256,7 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
@@ -271,21 +271,21 @@
               "content": 4
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_baby/minecraft:behavior.follow_parent/",
-              "content": 9
-            }
-          ],
           "/vanilla/behavior_pack/entities/goat.json": [
             {
               "path": "/minecraft:entity/component_groups/goat_baby/minecraft:behavior.follow_parent/",
               "content": 6
             }
           ],
-          "/vanilla/behavior_pack/entities/hoglin.json": [
+          "/vanilla/behavior_pack/entities/llama.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:behavior.follow_parent/",
+              "path": "/minecraft:entity/component_groups/minecraft:llama_baby/minecraft:behavior.follow_parent/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pig.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:pig_baby/minecraft:behavior.follow_parent/",
               "content": 6
             }
           ]
@@ -295,7 +295,7 @@
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Movement speed multiplier of the mob when using this AI Goal",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1,
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
@@ -316,9 +316,9 @@
               "content": 1
             }
           ],
-          "/vanilla/behavior_pack/entities/hoglin.json": [
+          "/vanilla/behavior_pack/entities/llama.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:behavior.follow_parent/",
+              "path": "/minecraft:entity/component_groups/minecraft:llama_baby/minecraft:behavior.follow_parent/",
               "content": 1
             }
           ]
@@ -344,15 +344,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/fox.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:fox_baby/minecraft:behavior.follow_parent/",
-          "content": {
-            "priority": 9,
-            "speed_multiplier": 1.1
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/goat.json": [
         {
           "path": "/minecraft:entity/component_groups/goat_baby/minecraft:behavior.follow_parent/",
@@ -362,12 +353,21 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/hoglin.json": [
+      "/vanilla/behavior_pack/entities/llama.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:behavior.follow_parent/",
+          "path": "/minecraft:entity/component_groups/minecraft:llama_baby/minecraft:behavior.follow_parent/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pig.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:pig_baby/minecraft:behavior.follow_parent/",
           "content": {
             "priority": 6,
-            "speed_multiplier": 1
+            "speed_multiplier": 1.1
           }
         }
       ]

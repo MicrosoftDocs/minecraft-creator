@@ -20,7 +20,7 @@ Defines the way an entity can create a born offspring.
 | blend_attributes | true | Boolean true/false | If true, the entities will blend their attributes in the offspring after they breed. |  | 
 | deny_parents_variant | *not set* | Array of [Deny Parents Variant](#deny-parents-variant) items | Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead. |  | 
 | inherit_tamed | true | Boolean true/false | If true, the babies will be automatically tamed if its parents are |  | 
-| mutation_factor | *not set* | Array of [Mutation Factor](#mutation-factor) items | Determines how likely the babies are to NOT inherit one of their parent's variances. Values are between 0.0 and 1.0, with a higher number meaning more likely to mutate. |  | 
+| mutation_factor | *not set* | Array of [Mutation Factor](#mutation-factor) items | Determines how likely the babies are to NOT inherit one of their parent's variances. Values are between 0.0 and 1.0, with a higher number meaning more likely to mutate. | Goat: `{"variant":0}` | 
 | offspring_pairs | *not set* | Array of strings | The map of entity to offspring definitions that this entity can make offspring with. | Chicken: `{"minecraft:chicken":"minecraft:chicken"}`, Cow: `{"minecraft:cow":"minecraft:cow"}`, Dolphin: `{"minecraft:dolphin":"minecraft:dolphin"}` | 
 | parent_centric_attribute_blending | *not set* | Array of strings | List of attributes that should benefit from parent centric attribute blending. For example, horses blend their health, movement, and jump_strength in their offspring. |  | 
 | property_inheritance | *not set* | Array of strings | List of Entity Properties that should be inherited from the parent entities and potentially mutated. | Chicken: `{"minecraft:climate_variant":{}}` | 
@@ -96,24 +96,27 @@ Determines how likely the babies are to NOT inherit one of their parent's varian
 }
 ```
 
-#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
+#### [Frog](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/frog.json)
 
 
 ```json
 "minecraft:offspring": {
   "offspring_pairs": {
-    "minecraft:drowned": "minecraft:drowned"
+    "minecraft:frog": "minecraft:tadpole"
   }
 }
 ```
 
-#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
+#### [Goat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/goat.json)
 
 
 ```json
 "minecraft:offspring": {
   "offspring_pairs": {
-    "minecraft:fox": "minecraft:fox"
+    "minecraft:goat": "minecraft:goat"
+  },
+  "mutation_factor": {
+    "variant": 0
   }
 }
 ```

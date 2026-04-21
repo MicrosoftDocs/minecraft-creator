@@ -43,7 +43,7 @@
     "scalarField": {
       "id": "string",
       "title": "String",
-      "dataType": 2
+      "dataType": "string"
     }
   }
 }

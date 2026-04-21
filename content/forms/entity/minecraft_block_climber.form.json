@@ -26,12 +26,6 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/fox.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:block_climber/",
-          "content": {}
-        }
-      ],
       "/vanilla/behavior_pack/entities/player.json": [
         {
           "path": "/minecraft:entity/components/minecraft:block_climber/",

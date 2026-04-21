@@ -22,7 +22,7 @@
         "id": "eat_and_replace_block_pairs",
         "title": "Eat And Replace Block Pairs",
         "description": "A collection of pairs of blocks; the first (\"eat_block\")is the block the entity should eat, the second (\"replace_block\") is the block that should replace the eaten block.",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/sheep.json": [
             {
@@ -53,7 +53,7 @@
         "id": "on_eat",
         "title": "Eat",
         "description": "The event to trigger when the block eating animation has completed.",
-        "dataType": 22,
+        "dataType": "minecraftEventTrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/sheep.json": [
             {
@@ -71,7 +71,7 @@
         "title": "Success Chance",
         "description": "A molang expression defining the success chance the entity has to consume a block.",
         "defaultValue": "0.02",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/sheep.json": [
             {
@@ -86,7 +86,7 @@
         "title": "Time Until Eat",
         "description": "The amount of time (in seconds) it takes for the block to be eaten upon a successful eat attempt.",
         "defaultValue": 1.8,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/sheep.json": [
             {
@@ -101,7 +101,7 @@
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/sheep.json": [
             {

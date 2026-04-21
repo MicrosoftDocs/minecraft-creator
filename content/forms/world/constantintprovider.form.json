@@ -22,7 +22,7 @@
       {
         "id": "type",
         "title": "IntProviderType",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "constant",
@@ -39,7 +39,7 @@
         "id": "value",
         "title": "Value",
         "description": "Constant value",
-        "dataType": 0,
+        "dataType": "int",
         "isRequired": true
       }
     ]

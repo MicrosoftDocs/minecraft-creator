@@ -21,7 +21,7 @@
       {
         "id": "uuid",
         "title": "Uuid",
-        "dataType": 16,
+        "dataType": "object",
         "validity": [
           {
             "comparison": "pattern",
@@ -32,7 +32,7 @@
       },
       {
         "id": "version",
-        "dataType": 16,
+        "dataType": "object",
         "validity": [
           {
             "comparison": "pattern",
@@ -46,31 +46,31 @@
             {
               "id": "buildMeta",
               "title": "BuildMeta",
-              "dataType": 2,
+              "dataType": "string",
               "defaultValue": ""
             },
             {
               "id": "major",
               "title": "Major",
-              "dataType": 0,
+              "dataType": "int",
               "defaultValue": 0
             },
             {
               "id": "minor",
               "title": "Minor",
-              "dataType": 0,
+              "dataType": "int",
               "defaultValue": 0
             },
             {
               "id": "patch",
               "title": "Patch",
-              "dataType": 0,
+              "dataType": "int",
               "defaultValue": 0
             },
             {
               "id": "preRelease",
               "title": "PreRelease",
-              "dataType": 2,
+              "dataType": "string",
               "defaultValue": ""
             }
           ]
@@ -78,7 +78,7 @@
         "alternates": [
           {
             "id": "version",
-            "dataType": 2
+            "dataType": "string"
           }
         ],
         "isRequired": true

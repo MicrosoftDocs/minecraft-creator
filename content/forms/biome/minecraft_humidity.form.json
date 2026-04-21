@@ -44,7 +44,7 @@
       {
         "id": "is_humid",
         "title": "Is Humid",
-        "dataType": 1,
+        "dataType": "boolean",
         "isRequired": true
       }
     ]

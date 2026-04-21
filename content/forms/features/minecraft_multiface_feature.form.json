@@ -140,14 +140,14 @@
     "title": "Multiface Feature",
     "fields": [
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "description",
         "title": "Description",
         "isRequired": true,
         "subForm": {
           "fields": [
             {
-              "dataType": 2,
+              "dataType": "string",
               "id": "identifier",
               "title": "Identifier",
               "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -157,35 +157,35 @@
         }
       },
       {
-        "dataType": 0,
+        "dataType": "int",
         "id": "search_range",
         "title": "Search Range",
         "description": "How far, in blocks, this feature can search for a valid position to place.",
         "isRequired": true
       },
       {
-        "dataType": 1,
+        "dataType": "boolean",
         "id": "can_place_on_floor",
         "title": "Can Place On Floor",
         "description": "Can this feature be placed on the ground (top face of a block)?",
         "isRequired": true
       },
       {
-        "dataType": 1,
+        "dataType": "boolean",
         "id": "can_place_on_ceiling",
         "title": "Can Place On Ceiling",
         "description": "Can this feature be placed on the ceiling (bottom face of a block)?",
         "isRequired": true
       },
       {
-        "dataType": 1,
+        "dataType": "boolean",
         "id": "can_place_on_wall",
         "title": "Can Place On Wall",
         "description": "Can this feature be placed on the wall (side faces of a block)?",
         "isRequired": true
       },
       {
-        "dataType": 17,
+        "dataType": "stringArray",
         "id": "can_place_on",
         "title": "Can Place On",
         "isRequired": false

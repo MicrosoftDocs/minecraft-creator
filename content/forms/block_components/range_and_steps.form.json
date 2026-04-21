@@ -22,7 +22,7 @@
         "id": "range",
         "title": "Range",
         "description": "The range of the random offset.",
-        "dataType": 16,
+        "dataType": "object",
         "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
         "subFormId": "item_components/floatrange",
         "isRequired": true
@@ -31,7 +31,7 @@
         "id": "steps",
         "title": "Steps",
         "description": "The number of steps between the range. Specify 0 for all possible values between the range.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       }
     ]

@@ -43,7 +43,7 @@
         "title": "Value",
         "description": "The ID of the variant. By convention, 0 is the ID of the base entity.",
         "defaultValue": 0,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/trader_llama.json": [
             {

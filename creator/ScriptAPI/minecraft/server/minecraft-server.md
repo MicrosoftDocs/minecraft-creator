@@ -17,13 +17,14 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "2.6.0"
+    "version": "2.7.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.20-beta.26 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.30-beta.20 of Minecraft.
 
 ## Available Versions
-- `2.8.0-beta`
+- `2.9.0-beta`
+- `2.7.0`
 - `2.6.0`
 - `2.5.0`
 - `2.4.0`
@@ -111,6 +112,7 @@ The following API versions are from a major version that is documented here: [*@
 - [PlatformType](PlatformType.md)
 - [PlayerInventoryType](PlayerInventoryType.md)
 - [PlayerPermissionLevel](PlayerPermissionLevel.md)
+- [PlayerWaypointsMode](PlayerWaypointsMode.md)
 - [ScoreboardIdentityType](ScoreboardIdentityType.md)
 - [ScriptEventSource](ScriptEventSource.md)
 - [SignSide](SignSide.md)
@@ -338,6 +340,8 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityTypeFamilyComponent](EntityTypeFamilyComponent.md)
 - [EntityTypes](EntityTypes.md)
 - [EntityUnderwaterMovementComponent](EntityUnderwaterMovementComponent.md)
+- [EntityUpgradeAfterEvent](EntityUpgradeAfterEvent.md)
+- [EntityUpgradeAfterEventSignal](EntityUpgradeAfterEventSignal.md)
 - [EntityVariantComponent](EntityVariantComponent.md)
 - [EntityWantsJockeyComponent](EntityWantsJockeyComponent.md)
 - [EntityWaypoint](EntityWaypoint.md)

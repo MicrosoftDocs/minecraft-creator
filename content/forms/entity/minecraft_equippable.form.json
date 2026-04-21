@@ -93,7 +93,7 @@
         "id": "slots",
         "title": "Slots",
         "description": "List of slots and the item that can be equipped.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "List of slots and the item that can be equipped.",
@@ -102,38 +102,38 @@
               "id": "accepted_items",
               "title": "Accepted Items",
               "description": "The list of items that can go in this slot.",
-              "dataType": 17
+              "dataType": "stringArray"
             },
             {
               "id": "interact_text",
               "title": "Interact Text",
               "description": "Text to be displayed when the entity can be equipped with this item when playing with Touch-screen controls.",
-              "dataType": 2
+              "dataType": "string"
             },
             {
               "id": "item",
               "title": "Item",
               "description": "Identifier of the item that can be equipped for this slot.",
-              "dataType": 2
+              "dataType": "string"
             },
             {
               "id": "on_equip",
               "title": "Equip",
               "description": "Event to trigger when this entity is equipped with this item.",
-              "dataType": 22
+              "dataType": "minecraftEventTrigger"
             },
             {
               "id": "on_unequip",
               "title": "Unequip",
               "description": "Event to trigger when this item is removed from this entity.",
-              "dataType": 22
+              "dataType": "minecraftEventTrigger"
             },
             {
               "id": "slot",
               "title": "Slot",
               "description": "The slot number of this slot.",
               "defaultValue": 0,
-              "dataType": 0
+              "dataType": "int"
             }
           ]
         },

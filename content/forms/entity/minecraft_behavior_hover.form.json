@@ -1,0 +1,37 @@
+{
+  "id": "minecraft:behavior.hover",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.hover",
+    "title": "Entity Hover Behavior",
+    "description": "Allows the mob to hover in place.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      }
+    ]
+  }
+}

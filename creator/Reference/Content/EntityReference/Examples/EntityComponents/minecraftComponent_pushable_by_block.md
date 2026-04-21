@@ -15,7 +15,7 @@ Allows the entity to be pushed by certain blocks, like Shulker Boxes and Pistons
 
 ## Samples
 
-#### [Chicken](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chicken.json)
+#### [Boat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/boat.json)
 
 
 ```json

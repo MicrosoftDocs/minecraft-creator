@@ -10,7 +10,8 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.8.0-beta](#280-beta)
+- [2.9.0-beta](#290-beta)
+- [2.7.0](#270)
 - [2.6.0](#260)
 - [2.5.0](#250)
 - [2.4.0](#240)
@@ -39,7 +40,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.8.0-beta
+## 2.9.0-beta
 #### Changed *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 - Changed function *[`setBlockPriorities`](AimAssistCategorySettings.md#setblockpriorities)*
   - Changed return type from *void* to *void*
@@ -77,10 +78,6 @@ description: Changelog of the `@minecraft/server` module
   - Changed return type from *void* to *void*
   - Changed argument `items` type from *string*[] to (*minecraftvanilladata.MinecraftItemTypes* | *string*)[]
 #### Added *[`BannerPattern`](BannerPattern.md)*
-#### Changed *[`BiomeType`](BiomeType.md)*
-- Added function *[`getTags`](BiomeType.md#gettags)*
-- Added function *[`hasTags`](BiomeType.md#hastags)*
-#### Added *[`BiomeTypes`](BiomeTypes.md)*
 #### Changed *[`Block`](Block.md)*
 - Added property *[`isSolid`](Block.md#issolid)*
 - Added function *[`canPlace`](Block.md#canplace)*
@@ -127,7 +124,6 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`nameplateDepthTested`](Entity.md#nameplatedepthtested)*
 - Added property *[`nameplateRenderDistance`](Entity.md#nameplaterenderdistance)*
 - Added property *[`target`](Entity.md#target)*
-- Added function *[`addItem`](Entity.md#additem)*
 #### Changed *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
 - Added property *[`airSupply`](EntityBreathableComponent.md#airsupply)*
 - Added property *[`canBreathe`](EntityBreathableComponent.md#canbreathe)*
@@ -141,9 +137,11 @@ description: Changelog of the `@minecraft/server` module
 - Changed function *[`get`](EntityTypes.md#get)*
   - Changed return type from [*EntityType*](EntityType.md) to *EntityType* | *undefined*
   - Changed argument `identifier` type from *string* to *EntityIdentifierType<NoInfer<T>>*
+#### Added *[`EntityUpgradeAfterEvent`](EntityUpgradeAfterEvent.md)*
+#### Added *[`EntityUpgradeAfterEventSignal`](EntityUpgradeAfterEventSignal.md)*
 #### Added *[`EntityWaypoint`](EntityWaypoint.md)*
 #### Changed *[`GameRules`](GameRules.md)*
-- Added property *[`locatorBar`](GameRules.md#locatorbar)*
+- Added property *[`playerWaypoints`](GameRules.md#playerwaypoints)*
 #### Added *[`LocationWaypoint`](LocationWaypoint.md)*
 #### Added *[`LocatorBar`](LocatorBar.md)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
@@ -156,7 +154,9 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`chatNameSuffix`](Player.md#chatnamesuffix)*
 - Added property *[`locatorBar`](Player.md#locatorbar)*
 - Added property *[`partyInfo`](Player.md#partyinfo)*
+- Added property *[`playfabId`](Player.md#playfabid)*
 - Added function *[`eatItem`](Player.md#eatitem)*
+- Added function *[`getPing`](Player.md#getping)*
 - Added function *[`postClientMessage`](Player.md#postclientmessage)*
 - Added function *[`stopAllSounds`](Player.md#stopallsounds)*
 - Added function *[`stopSound`](Player.md#stopsound)*
@@ -197,6 +197,7 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
 - Added property *[`entityContainerClosed`](WorldAfterEvents.md#entitycontainerclosed)*
 - Added property *[`entityContainerOpened`](WorldAfterEvents.md#entitycontaineropened)*
+- Added property *[`entityUpgrade`](WorldAfterEvents.md#entityupgrade)*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
 - Added property *[`packSettingChange`](WorldAfterEvents.md#packsettingchange)*
 - Added property *[`playerUseNameTag`](WorldAfterEvents.md#playerusenametag)*
@@ -215,10 +216,18 @@ description: Changelog of the `@minecraft/server` module
 #### Changed enum [`EquipmentSlot`](EquipmentSlot.md)
 - Added value `Body`
 #### Changed enum [`GameRule`](GameRule.md)
-- Added value `LocatorBar`
+- Added value `PlayerWaypoints`
 #### Added enum [`LocatorBarErrorReason`](LocatorBarErrorReason.md)
+#### Added enum [`PlayerWaypointsMode`](PlayerWaypointsMode.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
 #### Added enum [`WaypointTexture`](WaypointTexture.md)
+## 2.7.0
+#### Changed *[`BiomeType`](BiomeType.md)*
+- Added function *[`getTags`](BiomeType.md#gettags)*
+- Added function *[`hasTags`](BiomeType.md#hastags)*
+#### Added *[`BiomeTypes`](BiomeTypes.md)*
+#### Changed *[`Entity`](Entity.md)*
+- Added function *[`addItem`](Entity.md#additem)*
 ## 2.6.0
 #### Added *[`AimAssistCategory`](AimAssistCategory.md)*
 #### Added *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*

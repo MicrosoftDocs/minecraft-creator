@@ -23,14 +23,14 @@
         "title": "Angle Change",
         "description": "Number of degrees to change this entity's facing by, when the entity selects its next anchor point.",
         "defaultValue": 15,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "goal_radius",
         "title": "Goal Radius",
         "description": "Maximum distance from the anchor-point in which this entity considers itself to have reached the anchor point. This is to prevent the entity from bouncing back and forth trying to reach a specific spot.",
         "defaultValue": 0.5,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/phantom.json": [
             {
@@ -44,7 +44,7 @@
         "id": "height_above_target_range",
         "title": "Height Above Target Range",
         "description": "The number of blocks above the target that the next anchor point can be set. This value is used only when the entity is tracking a target.",
-        "dataType": 18,
+        "dataType": "intRange",
         "samples": {
           "/vanilla/behavior_pack/entities/phantom.json": [
             {
@@ -62,13 +62,13 @@
         "title": "Height Adjustment Chance",
         "description": "Percent chance to determine how often to increase or decrease the current height around the anchor point. 1 = 100%. \"height_change_chance\" is deprecated and has been replaced with \"height_adjustment_chance\".",
         "defaultValue": 0.002857,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "height_offset_range",
         "title": "Height Offset Range",
         "description": "Vertical distance from the anchor point this entity must stay within, upon a successful height adjustment.",
-        "dataType": 18,
+        "dataType": "intRange",
         "samples": {
           "/vanilla/behavior_pack/entities/phantom.json": [
             {
@@ -86,34 +86,34 @@
         "title": "Radius Adjustment Chance",
         "description": "Percent chance to determine how often to increase the size of the current movement radius around the anchor point. 1 = 100%. \"radius_change_chance\" is deprecated and has been replaced with \"radius_adjustment_chance\".",
         "defaultValue": 0.004,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "radius_change",
         "title": "Radius Change",
         "description": "The number of blocks to increase the current movement radius by, upon successful \"radius_adjustment_chance\". If the current radius increases over the range maximum, the current radius will be set back to the range minimum and the entity will change between clockwise and counter-clockwise movement..",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "radius_range",
         "title": "Radius Range",
         "description": "Horizontal distance from the anchor point this entity must stay within upon a successful radius adjustment.",
-        "dataType": 18
+        "dataType": "intRange"
       },
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Multiplies the speed at which this entity travels to its next desired position.",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/phantom.json": [
             {
@@ -153,13 +153,13 @@
         "id": "angle_change",
         "title": "Angle Change",
         "description": "Number of degrees to change this entity's facing by, when the entity selects its next anchor point.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 15
       },
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -180,7 +180,7 @@
         "id": "goal_radius",
         "title": "Goal Radius",
         "description": "Maximum distance from the anchor-point in which this entity considers itself to have reached the anchor point. This is to prevent the entity from bouncing back and forth trying to reach a specific spot.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.5,
         "samples": {
           "/vanilla/behavior_pack/entities/phantom.json": [
@@ -195,7 +195,7 @@
         "id": "height_above_target_range",
         "title": "Height Above Target Range",
         "description": "The number of blocks above the target that the next anchor point can be set. This value is used only when the entity is tracking a target.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 0,
           "min": 0
@@ -218,14 +218,14 @@
         "id": "height_adjustment_chance",
         "title": "Height Adjustment Chance",
         "description": "Percent chance to determine how often to increase or decrease the current height around the anchor point. 1 = 100%. \"height_change_chance\" is deprecated and has been replaced with \"height_adjustment_chance\".",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.0028570001013576984
       },
       {
         "id": "height_offset_range",
         "title": "Height Offset Range",
         "description": "Vertical distance from the anchor point this entity must stay within, upon a successful height adjustment.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 0,
           "min": 0
@@ -246,7 +246,7 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/phantom.json": [
@@ -261,21 +261,21 @@
         "id": "radius_adjustment_chance",
         "title": "Radius Adjustment Chance",
         "description": "Percent chance to determine how often to increase the size of the current movement radius around the anchor point. 1 = 100%. \"radius_change_chance\" is deprecated and has been replaced with \"radius_adjustment_chance\".",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.004000000189989805
       },
       {
         "id": "radius_change",
         "title": "Radius Change",
         "description": "The number of blocks to increase the current movement radius by, upon successful \"radius_adjustment_chance\". If the current radius increases over the range maximum, the current radius will be set back to the range minimum and the entity will change between clockwise and counter-clockwise movement.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1
       },
       {
         "id": "radius_range",
         "title": "Radius Range",
         "description": "Horizontal distance from the anchor point this entity must stay within upon a successful radius adjustment.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 15,
           "min": 5
@@ -287,7 +287,7 @@
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Multiplies the speed at which this entity travels to its next desired position.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1
       }
     ],

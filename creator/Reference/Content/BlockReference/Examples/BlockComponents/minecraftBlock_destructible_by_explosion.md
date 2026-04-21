@@ -36,3 +36,66 @@ Sets the explosion resistance for the block. Greater values result in greater re
 ```json
 "minecraft:destructible_by_explosion": true
 ```
+
+#### Block Fabricator
+
+
+```json
+"minecraft:destructible_by_explosion": {
+  "explosion_resistance": 15
+}
+```
+
+#### Block Gray Ore
+
+
+```json
+"minecraft:destructible_by_explosion": {
+  "explosion_resistance": 96
+}
+```
+
+#### Block Palm Leave
+
+
+```json
+"minecraft:destructible_by_explosion": {
+  "explosion_resistance": 1.3
+}
+```
+
+#### Block White Sand
+
+
+```json
+"minecraft:destructible_by_explosion": {
+  "explosion_resistance": 1.1
+}
+```
+
+#### Block Leaf Pile
+
+
+```json
+"minecraft:destructible_by_explosion": {
+  "explosion_resistance": 0.5
+}
+```
+
+#### Block Orange Ore
+
+
+```json
+"minecraft:destructible_by_explosion": {
+  "explosion_resistance": 30
+}
+```
+
+#### Apple Block
+
+
+```json
+"minecraft:destructible_by_explosion": {
+  "explosion_resistance": 2.9
+}
+```

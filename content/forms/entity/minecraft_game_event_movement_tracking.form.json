@@ -23,7 +23,7 @@
         "title": "Emit Flap",
         "description": "If true, the `flap` game event will be emitted when the entity moves through air.",
         "defaultValue": false,
-        "dataType": 1,
+        "dataType": "boolean",
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
             {
@@ -44,14 +44,14 @@
         "title": "Emit Move",
         "description": "If true, the `entityMove` game event will be emitted when the entity moves on ground or through a solid.",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "emit_swim",
         "title": "Emit Swim",
         "description": "If true, the `swim` game event will be emitted when the entity moves through a liquid.",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       }
     ],
     "samples": {

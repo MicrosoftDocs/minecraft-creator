@@ -358,20 +358,20 @@
         "title": "Allow Sitting",
         "description": "If true, entities can breed while sitting",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "breed_cooldown",
         "title": "Breed Cooldown",
         "description": "Time in seconds before the Entity can breed again.",
         "defaultValue": 60,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "breed_items",
         "title": "Breed Items",
         "description": "The list of items that can be used to get the entity into the 'love' state. Includes 'item' for the item name, and 'result_item' that defines what item the breed item will transform to upon successful interaction (Format: itemName:auxValue).",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
@@ -394,15 +394,6 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_adult/minecraft:breedable/",
-              "content": [
-                "sweet_berries",
-                "glow_berries"
-              ]
-            }
-          ],
           "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:breedable/",
@@ -418,6 +409,14 @@
                 "wheat"
               ]
             }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:breedable/",
+              "content": [
+                "hay_block"
+              ]
+            }
           ]
         }
       },
@@ -425,7 +424,7 @@
         "id": "breeds_with",
         "title": "Breeds With",
         "description": "The map of entity definitions this entity can breed with to breeding events that fire on breeding.",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
@@ -440,14 +439,6 @@
               "path": "/minecraft:entity/component_groups/minecraft:cow_adult/minecraft:breedable/",
               "content": {
                 "minecraft:cow": {}
-              }
-            }
-          ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_adult/minecraft:breedable/",
-              "content": {
-                "minecraft:fox": {}
               }
             }
           ],
@@ -469,6 +460,14 @@
                 "minecraft:goat": {}
               }
             }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:breedable/",
+              "content": {
+                "minecraft:llama": {}
+              }
+            }
           ]
         }
       },
@@ -477,7 +476,7 @@
         "title": "Causes Pregnancy",
         "description": "If true, the entity will become pregnant instead of spawning a baby.",
         "defaultValue": false,
-        "dataType": 1,
+        "dataType": "boolean",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -491,7 +490,7 @@
         "id": "environment_requirements",
         "title": "Environment Requirements",
         "description": "The list of nearby block requirements to get the entity into the 'love' state.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "The list of nearby block requirements to get the entity into the 'love' state.",
@@ -500,21 +499,21 @@
               "id": "blocks",
               "title": "Blocks",
               "description": "The block types required nearby for the entity to breed.",
-              "dataType": 17
+              "dataType": "stringArray"
             },
             {
               "id": "count",
               "title": "Count",
               "description": "The number of the required block types nearby for the entity to breed.",
               "defaultValue": 1,
-              "dataType": 0
+              "dataType": "int"
             },
             {
               "id": "radius",
               "title": "Radius",
               "description": "How many blocks radius from the mob's center to search in for the required blocks. Bounded between 0 and 16.",
               "defaultValue": 5,
-              "dataType": 0
+              "dataType": "int"
             }
           ]
         }
@@ -524,27 +523,35 @@
         "title": "Extra Baby Chance",
         "description": "Chance that up to 16 babies will spawn between 0.0 and 1.0, where 1.0 is 100%.",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "love_filters",
         "title": "Love Filters",
         "description": "The filters to run when attempting to fall in love.",
-        "dataType": 20
+        "dataType": "minecraftFilter"
       },
       {
         "id": "require_full_health",
         "title": "Require Full Health",
         "description": "If true, the entity needs to be at full health before it can breed.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "require_tame",
         "title": "Require Tame",
         "description": "If true, the entities need to be tamed first before they can breed.",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean",
+        "samples": {
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:breedable/",
+              "content": true
+            }
+          ]
+        }
       }
     ],
     "samples": {
@@ -581,21 +588,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/fox.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:fox_adult/minecraft:breedable/",
-          "content": {
-            "require_tame": false,
-            "breed_items": [
-              "sweet_berries",
-              "glow_berries"
-            ],
-            "breeds_with": {
-              "minecraft:fox": {}
-            }
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/frog.json": [
         {
           "path": "/minecraft:entity/components/minecraft:breedable/",
@@ -625,6 +617,20 @@
             "breeds_with": {
               "minecraft:goat": {}
             }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": true,
+            "breeds_with": {
+              "minecraft:llama": {}
+            },
+            "breed_items": [
+              "hay_block"
+            ]
           }
         }
       ]

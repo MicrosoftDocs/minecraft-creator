@@ -23,54 +23,54 @@
         "title": "Apply Regeneration",
         "description": "Whether the mob will receive the regeneration effect while playing dead.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "damage_sources",
         "title": "Damage Sources",
         "description": "The list of Entity Damage Sources that will cause this mob to play dead.",
         "defaultValue": "all",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "duration",
         "title": "Duration",
         "description": "The amount of time the mob will remain playing dead (in seconds).",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "filters",
         "title": "Filters",
         "description": "The list of other triggers that are required for the mob to activate play dead",
-        "dataType": 20
+        "dataType": "minecraftFilter"
       },
       {
         "id": "force_below_health",
         "title": "Force Below Health",
         "description": "The amount of health at which damage will cause the mob to play dead.",
         "defaultValue": 0,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "random_damage_range",
         "title": "Random Damage Range",
         "description": "The range of damage that may cause the goal to start depending on randomness. Damage taken below the min will never cause the goal to start. Damage taken above the max will always cause the goal to start.",
-        "dataType": 18
+        "dataType": "intRange"
       },
       {
         "id": "random_start_chance",
         "title": "Random Start Chance",
         "description": "The likelihood of this goal starting upon taking damage.",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "samples": {}
@@ -84,13 +84,13 @@
         "id": "apply_regeneration",
         "title": "Apply Regeneration",
         "description": "Whether the mob will receive the regeneration effect while playing dead.",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": false
       },
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -111,7 +111,7 @@
         "id": "damage_sources",
         "title": "Damage Sources",
         "description": "The list of Entity Damage Sources that will cause this mob to play dead.",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -268,13 +268,13 @@
         "id": "duration",
         "title": "Duration",
         "description": "The amount of time the mob will remain playing dead (in seconds).",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1
       },
       {
         "id": "filters",
         "description": "The list of other triggers that are required for the mob to activate play dead",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "AND": null,
           "NOT": null,
@@ -293,39 +293,39 @@
               "id": "domain",
               "title": "Domain",
               "description": "The domain the test should be performed in.",
-              "dataType": 16
+              "dataType": "object"
             },
             {
               "id": "operator",
               "title": "Operator",
               "description": "The comparison to apply with 'value'.",
-              "dataType": 16
+              "dataType": "object"
             },
             {
               "id": "subject",
               "title": "Subject",
               "description": "The subject of this filter test.",
-              "dataType": 16
+              "dataType": "object"
             },
             {
               "id": "test",
               "title": "Test",
               "description": "The name of the test to apply.",
-              "dataType": 2,
+              "dataType": "string",
               "isRequired": true
             },
             {
               "id": "value",
               "title": "Value",
               "description": "The value being compared with the test.",
-              "dataType": 16
+              "dataType": "object"
             }
           ]
         },
         "alternates": [
           {
             "id": "filters",
-            "dataType": 16
+            "dataType": "object"
           }
         ]
       },
@@ -333,20 +333,20 @@
         "id": "force_below_health",
         "title": "Force Below Health",
         "description": "The amount of health at which damage will cause the mob to play dead.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "random_damage_range",
         "title": "Random Damage Range",
         "description": "The range of damage that may cause the goal to start depending on randomness. Damage taken below the min will never cause the goal to start. Damage taken above the max will always cause the goal to start.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 0,
           "min": 0
@@ -357,7 +357,7 @@
         "id": "random_start_chance",
         "title": "Random Start Chance",
         "description": "The likelihood of this goal starting upon taking damage.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1
       }
     ],

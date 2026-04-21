@@ -61,23 +61,16 @@
         "title": "Break Time",
         "description": "The time in seconds required to break through doors.",
         "defaultValue": 12,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "min_difficulty",
         "title": "Min Difficulty",
         "description": "The minimum difficulty that the world must be on for this entity to break doors.",
         "defaultValue": "hard",
-        "dataType": 2
+        "dataType": "string"
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/drowned.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:can_break_doors/minecraft:annotation.break_door/",
-          "content": {}
-        }
-      ]
-    }
+    "samples": {}
   }
 }

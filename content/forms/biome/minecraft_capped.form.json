@@ -22,11 +22,11 @@
       {
         "id": "beach_material",
         "description": "Material used to decorate surface near sea level.",
-        "dataType": 2,
+        "dataType": "string",
         "alternates": [
           {
             "id": "beach_material",
-            "dataType": 16,
+            "dataType": "object",
             "readOnly": true,
             "subForm": {
               "id": "beach_material",
@@ -36,23 +36,23 @@
                   "id": "name",
                   "title": "Name",
                   "description": "Name of the block",
-                  "dataType": 16,
+                  "dataType": "object",
                   "isRequired": true
                 },
                 {
                   "id": "states",
                   "title": "States",
                   "description": "Contains members named after each state, with boolean, integer, or string values.",
-                  "dataType": 31,
+                  "dataType": "keyedNumberCollection",
                   "defaultValue": {},
                   "alternates": [
                     {
                       "id": "states",
-                      "dataType": 27
+                      "dataType": "keyedBooleanCollection"
                     },
                     {
                       "id": "states",
-                      "dataType": 24
+                      "dataType": "keyedStringCollection"
                     }
                   ]
                 }
@@ -64,12 +64,12 @@
       {
         "id": "ceiling_materials",
         "description": "Materials used for the surface ceiling.",
-        "dataType": 2,
+        "dataType": "string",
         "minLength": 1,
         "alternates": [
           {
             "id": "ceiling_materials",
-            "dataType": 16,
+            "dataType": "object",
             "readOnly": true,
             "subForm": {
               "id": "ceiling_materials",
@@ -79,23 +79,23 @@
                   "id": "name",
                   "title": "Name",
                   "description": "Name of the block",
-                  "dataType": 16,
+                  "dataType": "object",
                   "isRequired": true
                 },
                 {
                   "id": "states",
                   "title": "States",
                   "description": "Contains members named after each state, with boolean, integer, or string values.",
-                  "dataType": 31,
+                  "dataType": "keyedNumberCollection",
                   "defaultValue": {},
                   "alternates": [
                     {
                       "id": "states",
-                      "dataType": 27
+                      "dataType": "keyedBooleanCollection"
                     },
                     {
                       "id": "states",
-                      "dataType": 24
+                      "dataType": "keyedStringCollection"
                     }
                   ]
                 }
@@ -108,12 +108,12 @@
       {
         "id": "floor_materials",
         "description": "Materials used for the surface floor.",
-        "dataType": 2,
+        "dataType": "string",
         "minLength": 1,
         "alternates": [
           {
             "id": "floor_materials",
-            "dataType": 16,
+            "dataType": "object",
             "readOnly": true,
             "subForm": {
               "id": "floor_materials",
@@ -123,23 +123,23 @@
                   "id": "name",
                   "title": "Name",
                   "description": "Name of the block",
-                  "dataType": 16,
+                  "dataType": "object",
                   "isRequired": true
                 },
                 {
                   "id": "states",
                   "title": "States",
                   "description": "Contains members named after each state, with boolean, integer, or string values.",
-                  "dataType": 31,
+                  "dataType": "keyedNumberCollection",
                   "defaultValue": {},
                   "alternates": [
                     {
                       "id": "states",
-                      "dataType": 27
+                      "dataType": "keyedBooleanCollection"
                     },
                     {
                       "id": "states",
-                      "dataType": 24
+                      "dataType": "keyedStringCollection"
                     }
                   ]
                 }
@@ -152,11 +152,11 @@
       {
         "id": "foundation_material",
         "description": "Material used to replace solid blocks that are not surface blocks.",
-        "dataType": 2,
+        "dataType": "string",
         "alternates": [
           {
             "id": "foundation_material",
-            "dataType": 16,
+            "dataType": "object",
             "readOnly": true,
             "subForm": {
               "id": "foundation_material",
@@ -166,23 +166,23 @@
                   "id": "name",
                   "title": "Name",
                   "description": "Name of the block",
-                  "dataType": 16,
+                  "dataType": "object",
                   "isRequired": true
                 },
                 {
                   "id": "states",
                   "title": "States",
                   "description": "Contains members named after each state, with boolean, integer, or string values.",
-                  "dataType": 31,
+                  "dataType": "keyedNumberCollection",
                   "defaultValue": {},
                   "alternates": [
                     {
                       "id": "states",
-                      "dataType": 27
+                      "dataType": "keyedBooleanCollection"
                     },
                     {
                       "id": "states",
-                      "dataType": 24
+                      "dataType": "keyedStringCollection"
                     }
                   ]
                 }
@@ -195,11 +195,11 @@
       {
         "id": "sea_material",
         "description": "Material used to replace air blocks below sea level.",
-        "dataType": 2,
+        "dataType": "string",
         "alternates": [
           {
             "id": "sea_material",
-            "dataType": 16,
+            "dataType": "object",
             "readOnly": true,
             "subForm": {
               "id": "sea_material",
@@ -209,23 +209,23 @@
                   "id": "name",
                   "title": "Name",
                   "description": "Name of the block",
-                  "dataType": 16,
+                  "dataType": "object",
                   "isRequired": true
                 },
                 {
                   "id": "states",
                   "title": "States",
                   "description": "Contains members named after each state, with boolean, integer, or string values.",
-                  "dataType": 31,
+                  "dataType": "keyedNumberCollection",
                   "defaultValue": {},
                   "alternates": [
                     {
                       "id": "states",
-                      "dataType": 27
+                      "dataType": "keyedBooleanCollection"
                     },
                     {
                       "id": "states",
-                      "dataType": 24
+                      "dataType": "keyedStringCollection"
                     }
                   ]
                 }
@@ -239,7 +239,7 @@
         "id": "type",
         "title": "SurfaceBuilderType",
         "description": "Controls the type of surface builder to use",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "minecraft:capped",
@@ -252,6 +252,10 @@
           {
             "id": "minecraft:mesa",
             "title": "Minecraft:mesa"
+          },
+          {
+            "id": "minecraft:noise_gradient",
+            "title": "Minecraft:noise gradient"
           },
           {
             "id": "minecraft:overworld",

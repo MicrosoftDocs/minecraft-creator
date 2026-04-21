@@ -49,17 +49,17 @@
       {
         "id": "direction",
         "title": "Direction Type",
-        "dataType": 2,
+        "dataType": "string",
         "alternates": [
           {
             "id": "direction",
-            "dataType": 24,
+            "dataType": "keyedStringCollection",
             "minLength": 3,
             "maxLength": 3,
             "alternates": [
               {
                 "id": "direction",
-                "dataType": 14,
+                "dataType": "keyedObjectCollection",
                 "readOnly": true,
                 "subForm": {
                   "id": "direction",
@@ -68,13 +68,13 @@
                     {
                       "id": "expression",
                       "title": "Expression",
-                      "dataType": 2,
+                      "dataType": "string",
                       "isRequired": true
                     },
                     {
                       "id": "version",
                       "title": "Version",
-                      "dataType": 0,
+                      "dataType": "int",
                       "isRequired": true
                     }
                   ]
@@ -82,7 +82,7 @@
               },
               {
                 "id": "direction",
-                "dataType": 3
+                "dataType": "float"
               }
             ]
           }
@@ -91,7 +91,7 @@
       {
         "id": "offset",
         "title": "Offset",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": [
           0,
           0,
@@ -102,7 +102,7 @@
         "alternates": [
           {
             "id": "offset",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "offset",
@@ -111,13 +111,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -125,19 +125,19 @@
           },
           {
             "id": "offset",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       },
       {
         "id": "radius",
         "title": "Radius",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": 1,
         "alternates": [
           {
             "id": "radius",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "radius",
@@ -146,13 +146,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -160,14 +160,14 @@
           },
           {
             "id": "radius",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       },
       {
         "id": "surface_only",
         "title": "Surface Only",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": false
       }
     ]

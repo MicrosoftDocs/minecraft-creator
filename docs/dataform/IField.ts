@@ -6,107 +6,107 @@ import ICondition from "./ICondition";
 import IFormDefinition, { IFormSample } from "./IFormDefinition";
 
 export enum FieldExperienceType {
-  text = 1,
-  dropdown = 2,
-  slider = 3,
+  text = "text",
+  dropdown = "dropdown",
+  slider = "slider",
 }
 
 export enum FieldVisualExperience {
-  normal = 0,
-  deemphasized = 1,
+  normal = "normal",
+  deemphasized = "deemphasized",
 }
 
 export enum FieldDataType {
   /**
    * Represents a 32-bit integer value.
    */
-  int = 0,
+  int = "int",
   /**
    * Represents a boolean value (true or false).
    */
-  boolean = 1,
+  boolean = "boolean",
   /**
    * Represents a string value.
    */
-  string = 2,
+  string = "string",
   /**
    * Represents a floating-point number.
    */
-  float = 3,
+  float = "float",
   /**
    * Represents a string that can take on a limited set of values, often used for enumerations.
    */
-  stringEnum = 4,
+  stringEnum = "stringEnum",
   /**
    * Represents an integer that can take on a limited set of values, often used for enumerations.
    */
-  intEnum = 5,
+  intEnum = "intEnum",
   /**
    * Represents a boolean value that can be represented as an integer (0 or 1).
    * This is often used for compatibility with systems that expect boolean values as integers.
    */
-  intBoolean = 6,
+  intBoolean = "intBoolean",
   /**
    * Represents a numeric value (integer or floating-point).
    */
-  number = 7,
+  number = "number",
   /**
    * Represents a string-based value that is chosen from a typically data-driven set of options (a lookup).
    */
-  stringLookup = 8,
+  stringLookup = "stringLookup",
 
   /**
    * Represents an integer-based value that is chosen from a typically data-driven set of options (a lookup).
    */
-  intValueLookup = 9,
+  intValueLookup = "intValueLookup",
 
   /**
    * Represents a long integer value, which is typically a 64-bit integer.
    * This is used for larger numeric values that exceed the range of standard integers.
    */
-  long = 10,
+  long = "long",
 
   /**
    * Represents a point in 3D space, with x, y, and z coordinates.
    */
-  point3 = 11,
+  point3 = "point3",
   /**
    * Represents a point in 3D space, with integer x, y, and z coordinates.
    */
-  intPoint3 = 12,
+  intPoint3 = "intPoint3",
   /**
    * Represents a long-form string, which is typically used for very long text entries.
    * This is often used in contexts where the string may exceed standard length limits.
    */
-  longFormString = 13,
+  longFormString = "longFormString",
   /**
    * Represents a collection of objects where each object is identified by a unique string key.
    * For example, { "foo": {x: 1, z: 3}, "bar": {x:10, y: 4} }
    */
-  keyedObjectCollection = 14,
+  keyedObjectCollection = "keyedObjectCollection",
   /**
    * Represents an array of objects, where each object can have multiple properties.
    * For example, [ { x: 1, id: "alpha", z: 3}, { x: 1, id: "bravo", z: 3} ]
    */
-  objectArray = 15,
+  objectArray = "objectArray",
   /**
    * Represents a generic object that can have any structure.
    */
-  object = 16,
+  object = "object",
   /**
    * Represents an array of strings, which is often used for lists of text values.
    */
-  stringArray = 17,
+  stringArray = "stringArray",
   /**
    * Represents a range of integers. This can either be represented as a pair of integers on an object with min and max properties, or as a two element array, or as a single integer if the range is collapsed.
    * For example, { "min": 0, "max": 100 } or [0, 100] or 50.
    */
-  intRange = 18,
+  intRange = "intRange",
   /**
    * Represents a range of floating-point numbers. This can either be represented as a pair of floats on an object with min and max properties, or as a two element array, or as a single float if the range is collapsed.
    * For example, { "min": 0.4, "max": 99.6 } or [0.4, 99.6] or 48.8.
    */
-  floatRange = 19,
+  floatRange = "floatRange",
   /**
    * Represents a filter that is specific to Minecraft, which can be used to filter entities or blocks based on certain criteria.
    * This is fundamentally an object, e.g.,
@@ -114,141 +114,141 @@ export enum FieldDataType {
    *   "test": "in_lava", "subject": "self"
    *  }
    */
-  minecraftFilter = 20,
+  minecraftFilter = "minecraftFilter",
   /**
    * Represents a range of floating-point numbers that represent a percentage chance, and the numbers should range between 0.0 and 1.0. This can either be represented as a pair of floats on an object with min and max properties, or as a two element array, or as a single float if the range is collapsed.
    * For example, { "min": 0.04, "max": 0.996 } or [0.04, 0.996] or 0.488.
    */
-  percentRange = 21,
+  percentRange = "percentRange",
 
   /**
    * Represents a single Minecraft event trigger, which can be used to specify the identifier and context for an action that should fire.
    */
-  minecraftEventTrigger = 22,
+  minecraftEventTrigger = "minecraftEventTrigger",
   /**
    * Represents an array of long-form string that can contain multiple lines of text, often used for detailed descriptions or notes.
    */
-  longFormStringArray = 23,
+  longFormStringArray = "longFormStringArray",
   /**
    * Represents a collection of key-value pairs where each key is a string and the value is also a string.
    * For example, { "foo": "blah", "barg" : "borg" }
    */
-  keyedStringCollection = 24,
+  keyedStringCollection = "keyedStringCollection",
   /**
    * Represents a version, which can either be a semantic version string (e.g., "1.2.3") or a simple version number or an array of three numbers, for major, minor, and patch version.
    */
-  version = 25,
+  version = "version",
   /**
    * Represents a universally unique identifier (UUID), which is a 128-bit number used to uniquely identify information in computer systems.
    * This is typically represented as a string in the format "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx".
    */
-  uuid = 26,
+  uuid = "uuid",
   /**
    * Represents a collection of key-value pairs where each key is a string and the value is a boolean.
    * For example, { "foo": true, "blah": false }
    */
-  keyedBooleanCollection = 27,
+  keyedBooleanCollection = "keyedBooleanCollection",
   /**
    * Represents a collection of key-value pairs where each key is a string and the value is an array of strings.
    * For example, { "foo": ["blah", "alpha"], "barg" : ["borg"] }
    */
-  keyedStringArrayCollection = 28,
+  keyedStringArrayCollection = "keyedStringArrayCollection",
   /**
    * Represents an array of keyed string collections, where each element is a collection of key-value pairs.
    * For example, [ { "blah": "alpha", "blaz": "blay" }, {"barg": "borg"} ]
    */
-  arrayOfKeyedStringCollection = 29,
+  arrayOfKeyedStringCollection = "arrayOfKeyedStringCollection",
   /**
    * Represents a collection of key-value pairs where each key is a string and the value is by itself a keyed string collection of an array of strings.
    * For example, { "alpha":  { "foo": ["blah", "alpha"], "barg" : ["borg"] } }
    */
-  keyedKeyedStringArrayCollection = 30,
+  keyedKeyedStringArrayCollection = "keyedKeyedStringArrayCollection",
   /**
    * Represents a collection of key-value pairs where each key is a string and the value is a number.
    * For example, { "foo": 17, "blah": 43 }
    */
-  keyedNumberCollection = 31,
+  keyedNumberCollection = "keyedNumberCollection",
   /**
    * Represents an array of numbers.
    */
-  numberArray = 32,
+  numberArray = "numberArray",
   /**
    * Represents a checkbox list that is represented as an array of strings.
    */
-  checkboxListAsStringArray = 33,
+  checkboxListAsStringArray = "checkboxListAsStringArray",
   /**
    * Represents a Molang expression in string form, which is a Minecraft-specific language used for data-driven content.
    */
-  molang = 34,
+  molang = "molang",
   /**
    * Represents an array of Molang expressions (an array of strings), which can be used to define multiple data-driven behaviors or properties in Minecraft.
    */
-  molangArray = 35,
+  molangArray = "molangArray",
   /**
    * Represents a point in 2D space, with x and y coordinates.
    * This is often used for 2D graphical representations or spatial calculations.
    */
-  point2 = 36,
+  point2 = "point2",
   /**
    * Represents a localizable string, which is a string that is a token that is a refence to a localized string in a resource file. Or it can be a string literal (unlocalized)
    */
-  localizableString = 37,
+  localizableString = "localizableString",
   /**
    * Represents a keyed collection of numbers, where each key is a string and the value is an array of numbers.
    * For example, { "foo": [255, 0.0, 2555], "barg" : [128, 0, 0] }
    */
-  keyedNumberArrayCollection = 38,
+  keyedNumberArrayCollection = "keyedNumberArrayCollection",
   /**
    * Represents a reference to a Minecraft event, which can be used to specify the identifier and context for an action that should fire.
    */
-  minecraftEventReference = 39,
+  minecraftEventReference = "minecraftEventReference",
   /**
    * Represents a location in 3D space, with x, y, and z coordinates but that is intended to be a location in a Minecraft world.
    */
-  location = 40,
+  location = "location",
   /**
    * Represents a location in 3D space, with x, y, and z coordinates but that is intended to be a location offset adjustment in a Minecraft world.
    */
-  locationOffset = 41,
+  locationOffset = "locationOffset",
   /**
    * Represents an array of Minecraft event triggers, which can be used to specify multiple identifiers and contexts for actions that should fire.
    */
-  minecraftEventTriggerArray = 42,
+  minecraftEventTriggerArray = "minecraftEventTriggerArray",
   /**
    * Represents a two dimensional string array, i.e.., string[][], e.g., [ ["a", "b"], ["c", "d"] ]
    */
-  twoDStringArray = 43,
+  twoDStringArray = "twoDStringArray",
   /**
    * Represents an array where each item can be either a string or an object.
    * This is commonly used for animation references like ["animation.walk", { "animation.jump": "query.is_jumping" }]
    * Each item in the array can be a simple string reference OR an object with conditional properties.
    */
-  stringOrObjectArray = 44,
+  stringOrObjectArray = "stringOrObjectArray",
   /**
    * Represents an array of tuples where each tuple is [string, number].
    * This is used for weighted lists like generate_for_climates: [["medium", 1], ["cold", 2]]
    */
-  stringNumberTupleArray = 45,
+  stringNumberTupleArray = "stringNumberTupleArray",
   /**
    * Represents a single item that can be either a string or an object (not an array).
    * Used when a field accepts "animation_name" OR { "animation_name": "condition" }
    */
-  stringOrObject = 46,
+  stringOrObject = "stringOrObject",
   /**
    * Represents a two dimensional array where each inner array contains Molang values (string OR number).
    * This is used for gradient colors like: [[1.0, 0.5, 0.5, 1.0], ["variable.color", 0.5, 0.5, 1.0]]
    * Schema: Array<Array<string | number>>
    */
-  twoDMolangArray = 47,
+  twoDMolangArray = "twoDMolangArray",
 }
 
 /**
  * Describes the way field values should be converted to a more human-readable format.
  */
 export enum FieldValueHumanify {
-  none = 0,
-  general = 1,
-  minecraft = 2,
+  none = "none",
+  general = "general",
+  minecraft = "minecraft",
 }
 
 /**
@@ -299,6 +299,13 @@ export default interface IField {
   description?: string;
 
   /**
+   * For command form fields, the type of command parameter this field represents
+   * (e.g., "SELECTION", "POSITION", "BLOCKPOS", "SET", "INT", "BOOLEAN").
+   * Used by the command documentation generator to map fields to parameter types.
+   */
+  commandType?: string;
+
+  /**
    * Optional human-readable guidance on how to use or fix issues related to this field.
    * For validation rules, this contains tips for how to resolve validation errors or warnings.
    */
@@ -310,6 +317,20 @@ export default interface IField {
    * In practice, this is not shown in tools but is shown in technical documentation.
    */
   technicalDescription?: string;
+
+  /**
+   * Optional hint for diagnostic providers to locate this issue in a document.
+   * Contains a JSON token or pattern to search for when highlighting this issue.
+   * Examples: "format_version", "identifier", "minecraft:entity"
+   */
+  suggestedLineToken?: string;
+
+  /**
+   * If true, the diagnostic provider should also search for the ProjectInfoItem.data
+   * value on the same line as suggestedLineToken. This helps pinpoint the exact line
+   * when the data contains a specific value like a version string or identifier.
+   */
+  suggestedLineShouldHaveData?: boolean;
 
   /**
    * Any additional English descriptions about notes for this data of this field definition.
@@ -476,6 +497,17 @@ export default interface IField {
   suggestedMaxValue?: number;
 
   /**
+   * References another sibling field by ID whose current value should be used as this field's effective maximum.
+   * For example, a "value" field with maxValueField: "max" will be clamped to the current value of the "max" field.
+   */
+  maxValueField?: string;
+
+  /**
+   * References another sibling field by ID whose current value should be used as this field's effective minimum.
+   */
+  minValueField?: string;
+
+  /**
    * A set of context dependent tag strings that can be used to filter or categorize the field.
    */
   tags?: string[];
@@ -532,6 +564,12 @@ export default interface IField {
    */
   choices?: ISimpleReference[];
   /**
+   * Specifies a simple list of enum values for stringEnum or intEnum fields.
+   * This is a shorthand alternative to choices when you don't need labels/descriptions.
+   * If both enumValues and choices are provided, choices takes precedence.
+   */
+  enumValues?: (string | number)[];
+  /**
    * Specifies the data type for additional properties in a keyed collection.
    * When set, this generates additionalProperties schema based on the specified FieldDataType.
    * For example, additionalPropertiesOf: FieldDataType.molangArray would generate
@@ -543,6 +581,19 @@ export default interface IField {
    */
   samples?: { [path: string]: IFormSample[] };
   /**
+   * Specifies a UX variant for how this field should be rendered.
+   * This allows different visual experiences for the same data type.
+   *
+   * Supported variants by data type:
+   * - minecraftFilter (dataType 20):
+   *   - "biome": Simplified biome tag selector with categorized checkboxes
+   *
+   * The variant editor should auto-detect if existing data is too complex for the
+   * simplified view and fall back to the standard editor. A toggle allows users
+   * to switch between simplified and advanced modes.
+   */
+  uxVariant?: string;
+  /**
    * Specifies matched values that reference project updaters. Used in mctoolsval forms
    * to associate topic IDs with their corresponding updaters.
    */
@@ -552,4 +603,184 @@ export default interface IField {
    * This helps categorize the severity or nature of validation results.
    */
   messageType?: FieldMessageType;
+  /**
+   * Per-field summarizer for generating human-readable descriptions of this field's value.
+   * Used by JSON editor value decorations to show contextual information inline.
+   *
+   * This allows fields to define how their values should be visualized and summarized,
+   * enabling features like:
+   * - Health bars for health values
+   * - Color swatches for color values
+   * - Speed comparisons for movement values
+   * - Probability bars for chance values
+   *
+   * @example
+   * // For a health value field
+   * "valueSummarizer": {
+   *   "type": "healthBar",
+   *   "maxReference": 100,
+   *   "unit": "HP"
+   * }
+   *
+   * @example
+   * // For a movement speed field
+   * "valueSummarizer": {
+   *   "type": "comparison",
+   *   "references": [
+   *     { "value": 0.1, "label": "a Turtle" },
+   *     { "value": 0.25, "label": "a Player" },
+   *     { "value": 0.3, "label": "a Spider" }
+   *   ]
+   * }
+   */
+  valueSummarizer?: IFieldValueSummarizer;
+
+  /**
+   * Specifies an action to offer on values of this field, such as navigating to a project resource.
+   * When set, the data form renderer will add a clickable action button next to each value.
+   *
+   * Supported actions:
+   * - "openProjectItem": Treat the value as a resource path and navigate to the matching project item.
+   */
+  valueAction?: string;
+}
+
+/**
+ * Defines how a field value should be summarized for visual display in the JSON editor.
+ */
+export interface IFieldValueSummarizer {
+  /**
+   * The type of visualization to use.
+   */
+  type: FieldValueSummarizerType;
+
+  /**
+   * The unit to display after values (e.g., "HP", "blocks/sec", "%").
+   */
+  unit?: string;
+
+  /**
+   * For bar visualizations, the maximum value for scaling.
+   */
+  maxReference?: number;
+
+  /**
+   * For comparison-based summarization, reference values to compare against.
+   */
+  references?: IFieldValueReference[];
+
+  /**
+   * Icon to display (emoji or icon name).
+   */
+  icon?: string;
+
+  /**
+   * Format string for the value (e.g., "{value}x" for scale, "{value}%" for percentages).
+   */
+  format?: string;
+
+  /**
+   * For color values, whether to show a color swatch.
+   */
+  showColorSwatch?: boolean;
+
+  /**
+   * Custom thresholds for qualitative descriptions.
+   */
+  thresholds?: IFieldValueThreshold[];
+}
+
+/**
+ * The type of value summarizer visualization.
+ */
+export enum FieldValueSummarizerType {
+  /**
+   * Simple text display with optional unit.
+   */
+  text = "text",
+
+  /**
+   * Health bar visualization (hearts or bar).
+   */
+  healthBar = "healthBar",
+
+  /**
+   * Probability bar visualization (0-100% or 0-1).
+   */
+  probabilityBar = "probabilityBar",
+
+  /**
+   * Scale indicator showing percentage of normal size.
+   */
+  scale = "scale",
+
+  /**
+   * Time visualization (ticks converted to seconds).
+   */
+  time = "time",
+
+  /**
+   * Distance visualization with block unit.
+   */
+  distance = "distance",
+
+  /**
+   * Color swatch for color values.
+   */
+  color = "color",
+
+  /**
+   * Comparison against known reference values.
+   */
+  comparison = "comparison",
+
+  /**
+   * Qualitative description based on thresholds.
+   */
+  qualitative = "qualitative",
+}
+
+/**
+ * A reference value for comparison-based summarization.
+ */
+export interface IFieldValueReference {
+  /**
+   * The reference value.
+   */
+  value: number;
+
+  /**
+   * Human-readable label for this reference (e.g., "a Player", "an Iron Golem").
+   */
+  label: string;
+
+  /**
+   * Optional icon for this reference.
+   */
+  icon?: string;
+}
+
+/**
+ * A threshold for qualitative descriptions.
+ */
+export interface IFieldValueThreshold {
+  /**
+   * Values at or below this threshold get this description.
+   */
+  maxValue: number;
+
+  /**
+   * The qualitative description (e.g., "very low", "moderate", "extremely high").
+   */
+  description: string;
+
+  /**
+   * Optional sentiment for styling.
+   */
+  sentiment?: "positive" | "negative" | "neutral" | "warning";
+
+  /**
+   * Optional icon for this threshold level.
+   */
+  icon?: string;
 }

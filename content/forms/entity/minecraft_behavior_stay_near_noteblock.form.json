@@ -23,14 +23,14 @@
         "title": "Listen Time",
         "description": "Sets the time an entity should stay near a noteblock after hearing it.",
         "defaultValue": 30,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "speed",
         "title": "Speed",
         "description": "Sets the entity's speed when moving toward the block.",
         "defaultValue": 1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
             {
@@ -45,7 +45,7 @@
         "title": "Start Distance",
         "description": "Sets the distance the entity needs to be away from the block to attempt to start the goal.",
         "defaultValue": 10,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
             {
@@ -60,7 +60,7 @@
         "title": "Stop Distance",
         "description": "Sets the distance from the block the entity will attempt to reach.",
         "defaultValue": 2,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
             {
@@ -75,7 +75,7 @@
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
             {
@@ -108,7 +108,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -129,13 +129,13 @@
         "id": "listen_time",
         "title": "Listen Time",
         "description": "Sets the time an entity should stay near a noteblock after hearing it.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 30
       },
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
@@ -150,7 +150,7 @@
         "id": "speed",
         "title": "Speed",
         "description": "Sets the entity's speed when moving toward the block.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1,
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
@@ -165,7 +165,7 @@
         "id": "start_distance",
         "title": "Start Distance",
         "description": "Sets the distance the entity needs to be away from the block to attempt to start the goal.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 10,
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
@@ -180,7 +180,7 @@
         "id": "stop_distance",
         "title": "Stop Distance",
         "description": "Sets the distance from the block the entity will attempt to reach.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 2,
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [

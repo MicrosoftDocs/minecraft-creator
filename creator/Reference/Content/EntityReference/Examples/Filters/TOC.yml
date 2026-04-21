@@ -194,6 +194,8 @@
   href: owner_distance.md
 - name: random_chance
   href: random_chance.md
+- name: redstone_strength_at_position
+  href: redstone_strength_at_position.md
 - name: rider_count
   href: rider_count.md
 - name: surface_mob

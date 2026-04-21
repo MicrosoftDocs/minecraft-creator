@@ -20,13 +20,13 @@
     "id": "chance_information",
     "fields": [
       {
-        "dataType": 0,
+        "dataType": "int",
         "id": "numerator",
         "title": "Numerator",
         "isRequired": true
       },
       {
-        "dataType": 0,
+        "dataType": "int",
         "id": "denominator",
         "title": "Denominator",
         "isRequired": true

@@ -45,7 +45,7 @@ The entity puts on the desired equipment.
 }
 ```
 
-#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
+#### [Sulfur Cube](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/sulfur_cube.json)
 
 
 ```json

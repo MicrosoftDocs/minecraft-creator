@@ -213,87 +213,87 @@
         "id": "filters",
         "title": "Filters",
         "description": "If present, the specified entity will only spawn if the filter evaluates to true.",
-        "dataType": 20
+        "dataType": "minecraftFilter"
       },
       {
         "id": "max_wait_time",
         "title": "Max Wait Time",
         "description": "Maximum amount of time to randomly wait in seconds before another entity is spawned.",
         "defaultValue": 600,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "min_wait_time",
         "title": "Min Wait Time",
         "description": "Minimum amount of time to randomly wait in seconds before another entity is spawned.",
         "defaultValue": 300,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "num_to_spawn",
         "title": "Num To Spawn",
         "description": "The number of entities of this type to spawn each time that this triggers.",
         "defaultValue": 1,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "should_leash",
         "title": "Should Leash",
         "description": "If true, this the spawned entity will be leashed to the parent.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "single_use",
         "title": "Single Use",
         "description": "If true, this component will only ever spawn the specified entity once.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "spawn_entity",
         "title": "Spawn Entity",
         "description": "Identifier of the entity to spawn, leave empty to spawn the item defined by \"spawn_item\" instead.",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "spawn_event",
         "title": "Spawn Event",
         "description": "Event to call on the spawned entity when it spawns.",
         "defaultValue": "minecraft:entity_born",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "spawn_item",
         "title": "Spawn Item",
         "description": "Item identifier of the item to spawn.",
         "defaultValue": "egg",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "spawn_item_event",
         "title": "Spawn Item Event",
         "description": "Event to call on this entity when the item is spawned.",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "spawn_method",
         "title": "Spawn Method",
         "description": "Method to use to spawn the entity.",
         "defaultValue": "born",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "spawn_sound",
         "title": "Spawn Sound",
         "description": "Identifier of the sound effect to play when the entity is spawned.",
         "defaultValue": "plop",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "entities",
         "title": "Entities",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "entities",
           "title": "Entities",
@@ -301,7 +301,7 @@
             {
               "id": "min_wait_time",
               "title": "Min wait time",
-              "dataType": 7,
+              "dataType": "number",
               "samples": {
                 "/vanilla/behavior_pack/entities/chicken.json": [
                   {
@@ -314,7 +314,7 @@
             {
               "id": "max_wait_time",
               "title": "Max wait time",
-              "dataType": 7,
+              "dataType": "number",
               "samples": {
                 "/vanilla/behavior_pack/entities/chicken.json": [
                   {
@@ -327,7 +327,7 @@
             {
               "id": "spawn_sound",
               "title": "Spawn sound",
-              "dataType": 2,
+              "dataType": "string",
               "samples": {
                 "/vanilla/behavior_pack/entities/chicken.json": [
                   {
@@ -340,7 +340,7 @@
             {
               "id": "spawn_item",
               "title": "Spawn item",
-              "dataType": 2,
+              "dataType": "string",
               "samples": {
                 "/vanilla/behavior_pack/entities/chicken.json": [
                   {
@@ -353,7 +353,7 @@
             {
               "id": "filters",
               "title": "Filters",
-              "dataType": 2,
+              "dataType": "string",
               "samples": {
                 "/vanilla/behavior_pack/entities/chicken.json": [
                   {
@@ -446,19 +446,6 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/drowned.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:drowned_rider/minecraft:spawn_entity/",
-              "content": {
-                "max_wait_time": 0,
-                "min_wait_time": 0,
-                "num_to_spawn": 1,
-                "single_use": true,
-                "spawn_entity": "minecraft:zombie_nautilus",
-                "spawn_event": "minecraft:entity_spawned"
-              }
-            }
-          ],
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
               "path": "/minecraft:entity/component_groups/sniffer_pregnant/minecraft:spawn_entity/",
@@ -545,21 +532,6 @@
                 ]
               }
             ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/drowned.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:drowned_rider/minecraft:spawn_entity/",
-          "content": {
-            "entities": {
-              "max_wait_time": 0,
-              "min_wait_time": 0,
-              "num_to_spawn": 1,
-              "single_use": true,
-              "spawn_entity": "minecraft:zombie_nautilus",
-              "spawn_event": "minecraft:entity_spawned"
-            }
           }
         }
       ],

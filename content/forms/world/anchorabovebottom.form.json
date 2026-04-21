@@ -23,7 +23,7 @@
         "id": "above_bottom",
         "title": "Above Bottom",
         "description": "Offset from anchored vertical position",
-        "dataType": 0,
+        "dataType": "int",
         "isRequired": true
       }
     ]

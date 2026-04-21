@@ -21,35 +21,35 @@
       {
         "id": "creation_event",
         "title": "Creation Event",
-        "dataType": 15,
+        "dataType": "objectArray",
         "defaultValue": [],
         "alternates": [
           {
             "id": "creation_event",
-            "dataType": 2
+            "dataType": "string"
           }
         ]
       },
       {
         "id": "expiration_event",
         "title": "Expiration Event",
-        "dataType": 15,
+        "dataType": "objectArray",
         "defaultValue": [],
         "alternates": [
           {
             "id": "expiration_event",
-            "dataType": 2
+            "dataType": "string"
           }
         ]
       },
       {
         "id": "timeline",
         "title": "Timeline",
-        "dataType": 15,
+        "dataType": "objectArray",
         "alternates": [
           {
             "id": "timeline",
-            "dataType": 2
+            "dataType": "string"
           }
         ]
       }

@@ -23,7 +23,7 @@
         "id": "enabled_states",
         "title": "Enabled States",
         "description": "Which states to enable. Must specify at least one. Options: [\"minecraft:block_face\", \"minecraft:vertical_half\"].",
-        "dataType": 17,
+        "dataType": "stringArray",
         "minLength": 1,
         "choices": [
           {

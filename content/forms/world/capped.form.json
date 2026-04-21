@@ -28,20 +28,20 @@
         "id": "delegate",
         "title": "Delegate",
         "description": "The processor that will be executed.",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       },
       {
         "id": "limit",
         "title": "Limit",
         "description": "The maximum number of times that this delegate can be applied.",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       },
       {
         "id": "processor_type",
         "title": "Jigsaw Processro Type",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "minecraft:block_ignore",

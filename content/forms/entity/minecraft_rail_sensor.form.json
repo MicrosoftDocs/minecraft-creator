@@ -22,7 +22,7 @@
         "title": "Check Block Types",
         "description": "If true, on tick this entity will trigger its on_deactivate behavior",
         "defaultValue": false,
-        "dataType": 1,
+        "dataType": "boolean",
         "samples": {
           "/vanilla/behavior_pack/entities/command_block_minecart.json": [
             {
@@ -37,7 +37,7 @@
         "title": "Eject On Activate",
         "description": "If true, this entity will eject all of its riders when it passes over an activated rail",
         "defaultValue": true,
-        "dataType": 1,
+        "dataType": "boolean",
         "samples": {
           "/vanilla/behavior_pack/entities/minecart.json": [
             {
@@ -52,13 +52,13 @@
         "title": "Eject On Deactivate",
         "description": "If true, this entity will eject all of its riders when it passes over a deactivated rail",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "on_activate",
         "title": "Activate",
         "description": "Event to call when the rail is activated",
-        "dataType": 22,
+        "dataType": "minecraftEventTrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/command_block_minecart.json": [
             {
@@ -100,7 +100,7 @@
         "id": "on_deactivate",
         "title": "Deactivate",
         "description": "Event to call when the rail is deactivated",
-        "dataType": 22,
+        "dataType": "minecraftEventTrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/command_block_minecart.json": [
             {
@@ -125,7 +125,7 @@
         "title": "Tick Command Block On Activate",
         "description": "If true, command blocks will start ticking when passing over an activated rail",
         "defaultValue": true,
-        "dataType": 1,
+        "dataType": "boolean",
         "samples": {
           "/vanilla/behavior_pack/entities/command_block_minecart.json": [
             {
@@ -144,7 +144,7 @@
         "title": "Tick Command Block On Deactivate",
         "description": "If false, command blocks will stop ticking when passing over a deactivated rail",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       }
     ],
     "samples": {

@@ -29,7 +29,7 @@
         "title": "Operator",
         "description": "(Optional) The comparison to apply with 'value'.",
         "defaultValue": "equals",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "!=",
@@ -96,7 +96,7 @@
         "title": "Subject",
         "description": "(Optional) The subject of this filter test.",
         "defaultValue": "self",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "block",
@@ -151,7 +151,7 @@
         "id": "value",
         "title": "Value",
         "description": "(Optional) A string value.",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/skeleton.json": [
             {
@@ -168,7 +168,7 @@
       {
         "id": "test",
         "title": "Test",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/skeleton.json": [
             {
@@ -221,6 +221,14 @@
         },
         {
           "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[2]/filters/",
+          "content": {
+            "subject": "self",
+            "test": "in_block",
+            "value": "minecraft:powder_snow"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:environment_sensor/triggers[2]/filters/",
           "content": {
             "subject": "self",
             "test": "in_block",

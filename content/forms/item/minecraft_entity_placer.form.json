@@ -64,7 +64,7 @@
       {
         "id": "dispense_on",
         "description": "List of block descriptors of the blocks that this item can be dispensed on. If left empty, all blocks will be allowed.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "defaultValue": [],
         "subForm": {
           "id": "dispense_on",
@@ -73,29 +73,29 @@
             {
               "id": "name",
               "title": "Name",
-              "dataType": 2,
+              "dataType": "string",
               "defaultValue": ""
             },
             {
               "id": "states",
               "title": "States",
-              "dataType": 0,
+              "dataType": "int",
               "defaultValue": {},
               "alternates": [
                 {
                   "id": "states",
-                  "dataType": 2
+                  "dataType": "string"
                 },
                 {
                   "id": "states",
-                  "dataType": 1
+                  "dataType": "boolean"
                 }
               ]
             },
             {
               "id": "tags",
               "title": "Tags",
-              "dataType": 2,
+              "dataType": "string",
               "defaultValue": ""
             }
           ]
@@ -103,11 +103,11 @@
         "alternates": [
           {
             "id": "dispense_on",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "dispense_on",
-            "dataType": 16
+            "dataType": "object"
           }
         ]
       },
@@ -115,7 +115,7 @@
         "id": "entity",
         "title": "Entity",
         "description": "The entity to be placed in the world.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": "",
         "validity": [
           {
@@ -127,7 +127,7 @@
       {
         "id": "use_on",
         "description": "List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "defaultValue": [],
         "subForm": {
           "id": "use_on",
@@ -136,29 +136,29 @@
             {
               "id": "name",
               "title": "Name",
-              "dataType": 2,
+              "dataType": "string",
               "defaultValue": ""
             },
             {
               "id": "states",
               "title": "States",
-              "dataType": 0,
+              "dataType": "int",
               "defaultValue": {},
               "alternates": [
                 {
                   "id": "states",
-                  "dataType": 2
+                  "dataType": "string"
                 },
                 {
                   "id": "states",
-                  "dataType": 1
+                  "dataType": "boolean"
                 }
               ]
             },
             {
               "id": "tags",
               "title": "Tags",
-              "dataType": 2,
+              "dataType": "string",
               "defaultValue": ""
             }
           ]
@@ -166,11 +166,11 @@
         "alternates": [
           {
             "id": "use_on",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "use_on",
-            "dataType": 16
+            "dataType": "object"
           }
         ]
       }

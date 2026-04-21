@@ -26,13 +26,13 @@
       {
         "id": "blocks",
         "title": "Blocks",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": []
       },
       {
         "id": "distance",
         "title": "Distance",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 1
       }
     ]

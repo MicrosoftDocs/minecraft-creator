@@ -37,7 +37,7 @@
         "id": "max_weight_limit",
         "title": "Max Weight Limit",
         "description": "The maximum allowed weight of the sum of all contained items. Maximum is 64. Default is 64.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 64,
         "validity": [
           {

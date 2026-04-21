@@ -20,7 +20,7 @@
     "fields": [
       {
         "id": "gives",
-        "dataType": 15,
+        "dataType": "objectArray",
         "minLength": 1,
         "subForm": {
           "id": "gives",
@@ -29,7 +29,7 @@
             {
               "id": "filters",
               "description": "Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.",
-              "dataType": 16,
+              "dataType": "object",
               "defaultValue": {
                 "AND": null,
                 "NOT": null,
@@ -48,63 +48,63 @@
                     "id": "domain",
                     "title": "Domain",
                     "description": "The domain the test should be performed in.",
-                    "dataType": 16
+                    "dataType": "object"
                   },
                   {
                     "id": "operator",
                     "title": "Operator",
                     "description": "The comparison to apply with 'value'.",
-                    "dataType": 16
+                    "dataType": "object"
                   },
                   {
                     "id": "subject",
                     "title": "Subject",
                     "description": "The subject of this filter test.",
-                    "dataType": 16
+                    "dataType": "object"
                   },
                   {
                     "id": "test",
                     "title": "Test",
                     "description": "The name of the test to apply.",
-                    "dataType": 2,
+                    "dataType": "string",
                     "isRequired": true
                   },
                   {
                     "id": "value",
                     "title": "Value",
                     "description": "The value being compared with the test.",
-                    "dataType": 16
+                    "dataType": "object"
                   }
                 ]
               },
               "alternates": [
                 {
                   "id": "filters",
-                  "dataType": 16
+                  "dataType": "object"
                 }
               ]
             },
             {
               "id": "functions",
               "title": "Functions",
-              "dataType": 17
+              "dataType": "stringArray"
             },
             {
               "id": "item",
               "title": "Item",
-              "dataType": 16,
+              "dataType": "object",
               "isRequired": true
             },
             {
               "id": "price_multiplier",
               "title": "Price Multiplier",
-              "dataType": 3,
+              "dataType": "float",
               "defaultValue": 0
             },
             {
               "id": "quantity",
               "title": "Quantity",
-              "dataType": 0,
+              "dataType": "int",
               "defaultValue": {
                 "max": 1,
                 "min": 1
@@ -113,7 +113,7 @@
               "alternates": [
                 {
                   "id": "quantity",
-                  "dataType": 16,
+                  "dataType": "object",
                   "subForm": {
                     "id": "quantity",
                     "title": "Quantity",
@@ -121,7 +121,7 @@
                       {
                         "id": "max",
                         "title": "Max",
-                        "dataType": 0,
+                        "dataType": "int",
                         "defaultValue": 1,
                         "validity": [
                           {
@@ -133,7 +133,7 @@
                       {
                         "id": "min",
                         "title": "Min",
-                        "dataType": 0,
+                        "dataType": "int",
                         "defaultValue": 1,
                         "validity": [
                           {
@@ -152,7 +152,7 @@
         "alternates": [
           {
             "id": "gives",
-            "dataType": 16,
+            "dataType": "object",
             "readOnly": true,
             "subForm": {
               "id": "gives",
@@ -161,7 +161,7 @@
                 {
                   "id": "choice",
                   "title": "Choice",
-                  "dataType": 16,
+                  "dataType": "object",
                   "isRequired": true
                 }
               ]
@@ -173,24 +173,24 @@
       {
         "id": "max_uses",
         "title": "Max Uses",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 7
       },
       {
         "id": "reward_exp",
         "title": "Reward Exp",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": true
       },
       {
         "id": "trader_exp",
         "title": "Trader Exp",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 1
       },
       {
         "id": "wants",
-        "dataType": 15,
+        "dataType": "objectArray",
         "minLength": 1,
         "subForm": {
           "id": "wants",
@@ -199,7 +199,7 @@
             {
               "id": "filters",
               "description": "Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.",
-              "dataType": 16,
+              "dataType": "object",
               "defaultValue": {
                 "AND": null,
                 "NOT": null,
@@ -218,63 +218,63 @@
                     "id": "domain",
                     "title": "Domain",
                     "description": "The domain the test should be performed in.",
-                    "dataType": 16
+                    "dataType": "object"
                   },
                   {
                     "id": "operator",
                     "title": "Operator",
                     "description": "The comparison to apply with 'value'.",
-                    "dataType": 16
+                    "dataType": "object"
                   },
                   {
                     "id": "subject",
                     "title": "Subject",
                     "description": "The subject of this filter test.",
-                    "dataType": 16
+                    "dataType": "object"
                   },
                   {
                     "id": "test",
                     "title": "Test",
                     "description": "The name of the test to apply.",
-                    "dataType": 2,
+                    "dataType": "string",
                     "isRequired": true
                   },
                   {
                     "id": "value",
                     "title": "Value",
                     "description": "The value being compared with the test.",
-                    "dataType": 16
+                    "dataType": "object"
                   }
                 ]
               },
               "alternates": [
                 {
                   "id": "filters",
-                  "dataType": 16
+                  "dataType": "object"
                 }
               ]
             },
             {
               "id": "functions",
               "title": "Functions",
-              "dataType": 17
+              "dataType": "stringArray"
             },
             {
               "id": "item",
               "title": "Item",
-              "dataType": 16,
+              "dataType": "object",
               "isRequired": true
             },
             {
               "id": "price_multiplier",
               "title": "Price Multiplier",
-              "dataType": 3,
+              "dataType": "float",
               "defaultValue": 0
             },
             {
               "id": "quantity",
               "title": "Quantity",
-              "dataType": 0,
+              "dataType": "int",
               "defaultValue": {
                 "max": 1,
                 "min": 1
@@ -283,7 +283,7 @@
               "alternates": [
                 {
                   "id": "quantity",
-                  "dataType": 16,
+                  "dataType": "object",
                   "subForm": {
                     "id": "quantity",
                     "title": "Quantity",
@@ -291,7 +291,7 @@
                       {
                         "id": "max",
                         "title": "Max",
-                        "dataType": 0,
+                        "dataType": "int",
                         "defaultValue": 1,
                         "validity": [
                           {
@@ -303,7 +303,7 @@
                       {
                         "id": "min",
                         "title": "Min",
-                        "dataType": 0,
+                        "dataType": "int",
                         "defaultValue": 1,
                         "validity": [
                           {
@@ -322,7 +322,7 @@
         "alternates": [
           {
             "id": "wants",
-            "dataType": 16,
+            "dataType": "object",
             "readOnly": true,
             "subForm": {
               "id": "wants",
@@ -331,7 +331,7 @@
                 {
                   "id": "choice",
                   "title": "Choice",
-                  "dataType": 16,
+                  "dataType": "object",
                   "isRequired": true
                 }
               ]
@@ -343,7 +343,7 @@
       {
         "id": "weight",
         "title": "Weight",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 1,
         "validity": [
           {

@@ -37,11 +37,11 @@
         "id": "tint",
         "title": "Tint",
         "description": "Tint color used in this biome on the map.",
-        "dataType": 2,
+        "dataType": "string",
         "alternates": [
           {
             "id": "tint",
-            "dataType": 32,
+            "dataType": "numberArray",
             "minLength": 3,
             "maxLength": 3
           }
@@ -52,7 +52,7 @@
         "id": "type",
         "title": "GrassType",
         "description": "Controls the type of grass tint to use.",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "noise",

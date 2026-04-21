@@ -23,17 +23,17 @@
         "id": "group_identifier",
         "title": "Group Identifier",
         "description": "Optional field to give an icon and name to a group. Otherwise the items are added as loose items.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "crafting_catalog/crafting_catalog_group_icon"
       },
       {
         "id": "items",
         "description": "The items to add to the group.",
-        "dataType": 2,
+        "dataType": "string",
         "alternates": [
           {
             "id": "items",
-            "dataType": 16,
+            "dataType": "object",
             "readOnly": true,
             "subForm": {
               "id": "items",
@@ -43,7 +43,7 @@
                   "id": "name",
                   "title": "Name",
                   "description": "The name of an item or block. A namespace for the item is required. You can optionally provide an aux value for items that use it at the end. Example: namespace:my_item:1",
-                  "dataType": 16,
+                  "dataType": "object",
                   "validity": [
                     {
                       "comparison": "pattern",
