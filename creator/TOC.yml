@@ -134,6 +134,8 @@
               href: Documents/CreateAnInWorldGame.md
             - name: Create a Village with Structure Blocks
               href: Documents/Structures/StructureBlocksCommandTutorial.md
+            - name: Managing Village Generation
+              href: Documents/managing-villages.md
             - name: Create a Loot Table
               href: Documents/CreateLootTable.md
             - name: Non-Player Character (NPC) Dialogue
