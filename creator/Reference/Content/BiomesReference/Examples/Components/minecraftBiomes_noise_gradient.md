@@ -17,25 +17,22 @@ Places continuous bands of blocks according to a noise distribution. This surfac
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| amplitudes | *not set* | Array of numbers | Governs the attenuation of the first n octaves in the generated noise. Value must have at least 1 items. | 
-| first_octave | *not set* | Integer number | Governs the general frequency characteristics of the generated noise. Lower value results in noise with lower frequency content. | 
-| gradient_blocks | *not set* | String | A list of block names that will be sampled according to a Perlin noise distribution. | 
-| gradient_blocks (Gradient Blocks) | *not set* | [Gradient Blocks (Gradient Blocks)](#gradient-blocks-gradient-blocks) item |  | 
-| noise_seed_string | *not set* | String | The string used to initialize the noise. Has no impact on the qualitative aspects of the generated values. | 
+| noise_block_specifiers | *not set* | Array of objects | The noise block specifiers defining which ranges of noise are associated with which blocks. | 
+| noise_descriptor | *not set* | Object | The Specification for the Noise used by the surface builder. | 
 | non_replaceable_blocks | *not set* | String | A list of blocks that the surface builder is not allowed to replace. Leaving this list empty or unspecified will allow the replacement of any (non-air) block type. | 
 | non_replaceable_blocks (Non Replaceable Blocks) | *not set* | [Non Replaceable Blocks (Non Replaceable Blocks)](#non-replaceable-blocks-non-replaceable-blocks) item |  | 
 | type | *not set* | [Type](#type-choices) choices |  | 
 
-### gradient_blocks
+### noise_block_specifiers
 
-A list of block names that will be sampled according to a Perlin noise distribution. Specifying `minecraft:air`-blocks is permitted, and will result in the original block not being replaced, meaning it is possible to adjust the density/intensity of block replacement in the biome using this surface builder type. Value must have at least 1 items.
+The noise block specifiers defining which ranges of noise are associated with which blocks. The ranges provided are valid on the interval [0, 1], and may overlap at their endpoints. Value must have at least 1 items.
 
 
-### Gradient Blocks (Gradient Blocks)
+### Non Replaceable Blocks (Non Replaceable Blocks)
 
-#### Gradient Blocks Properties
+#### Non Replaceable Blocks Properties
 
-**JSON path:** `gradient_blocks`
+**JSON path:** `non_replaceable_blocks`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -43,11 +40,6 @@ A list of block names that will be sampled according to a Perlin noise distribut
 | states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. | 
 | states (as Keyed collection of boolean values) | *not set* | Keyed collection of boolean values |  | 
 | states (as Keyed set of strings) | *not set* | Keyed set of strings |  | 
-
-### Non Replaceable Blocks (Non Replaceable Blocks)
-
-Same structure as [Gradient Blocks (Gradient Blocks)](#gradient-blocks-gradient-blocks).
-
 
 ### Type choices
 

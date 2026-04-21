@@ -12,7 +12,7 @@
         "description": "The noise block specifiers defining which ranges of noise are associated with which blocks. The ranges provided are valid on the interval [0, 1], and may overlap at their endpoints.",
         "dataType": "objectArray",
         "minLength": 1,
-        "subFormId": "beta/noiseblockspecifier",
+        "subFormId": "biome/noiseblockspecifier",
         "isRequired": true
       },
       {
@@ -20,7 +20,7 @@
         "title": "Noise Descriptor",
         "description": "The Specification for the Noise used by the surface builder.",
         "dataType": "object",
-        "subFormId": "beta/noisedescriptor",
+        "subFormId": "biome/noisedescriptor",
         "isRequired": true
       },
       {

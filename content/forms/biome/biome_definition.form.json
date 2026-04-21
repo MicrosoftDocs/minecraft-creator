@@ -31,7 +31,7 @@
         "title": "Description",
         "description": "Non-component settings, including the Biome name.",
         "dataType": "object",
-        "subFormId": "beta/biome_description",
+        "subFormId": "biome/biome_description",
         "isRequired": true
       }
     ]

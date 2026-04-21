@@ -255,7 +255,7 @@
           },
           "target": "self"
         },
-        "subFormId": "beta/actordefinitiontrigger",
+        "subFormId": "entity/actordefinitiontrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -287,7 +287,7 @@
           },
           "target": "self"
         },
-        "subFormId": "beta/actordefinitiontrigger"
+        "subFormId": "entity/actordefinitiontrigger"
       },
       {
         "id": "priority",

@@ -18,7 +18,7 @@ The entity puts on the desired equipment.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
-| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Bogged: `3`, Parched: `4` | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Bogged: `3`, Parched: `4`, Sulfur Cube: `2` | 
 
 ### Control Flags choices
 
@@ -45,5 +45,14 @@ The entity puts on the desired equipment.
 ```json
 "minecraft:behavior.equip_item": {
   "priority": 4
+}
+```
+
+#### [Sulfur Cube](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/sulfur_cube.json)
+
+
+```json
+"minecraft:behavior.equip_item": {
+  "priority": 2
 }
 ```

@@ -602,7 +602,7 @@
           },
           "target": "self"
         },
-        "subFormId": "beta/actordefinitiontrigger"
+        "subFormId": "entity/actordefinitiontrigger"
       },
       {
         "id": "on_pickup_item_start",
@@ -623,7 +623,7 @@
           },
           "target": "self"
         },
-        "subFormId": "beta/actordefinitiontrigger"
+        "subFormId": "entity/actordefinitiontrigger"
       },
       {
         "id": "pickup_based_on_chance",

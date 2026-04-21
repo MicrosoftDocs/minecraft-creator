@@ -138,7 +138,7 @@
           },
           "target": "self"
         },
-        "subFormId": "beta/actordefinitiontrigger"
+        "subFormId": "entity/actordefinitiontrigger"
       }
     ],
     "samples": {}

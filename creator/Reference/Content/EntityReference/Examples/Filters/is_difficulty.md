@@ -17,7 +17,7 @@ Tests the current difficulty level of the game.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Bogged: `"!="` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
 | test | *not set* | String |  | Arrow: `"is_difficulty"` | 
 | value | *not set* | [Value](#value-choices) choices | (Required) The game's difficulty level to test | Arrow: `"hard"`, Cave Spider: `"easy"`, `"normal"` | 
@@ -78,6 +78,18 @@ At Short (using Defaults)..:
 ```json
 {
   "test": "is_difficulty",
+  "value": "hard"
+}
+```
+
+#### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
+
+At /minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:environment_sensor/triggers[2]/filters/: 
+
+```json
+{
+  "test": "is_difficulty",
+  "operator": "!=",
   "value": "hard"
 }
 ```

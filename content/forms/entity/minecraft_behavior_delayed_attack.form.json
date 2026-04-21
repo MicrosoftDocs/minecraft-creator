@@ -292,7 +292,7 @@
           },
           "target": "self"
         },
-        "subFormId": "beta/actordefinitiontrigger"
+        "subFormId": "entity/actordefinitiontrigger"
       },
       {
         "id": "on_kill",
@@ -313,7 +313,7 @@
           },
           "target": "self"
         },
-        "subFormId": "beta/actordefinitiontrigger"
+        "subFormId": "entity/actordefinitiontrigger"
       },
       {
         "id": "outer_boundary_time_increase",

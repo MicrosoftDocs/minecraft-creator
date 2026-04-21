@@ -40,6 +40,7 @@ Defines the entity's ranged attack behavior. The "minecraft:behavior.ranged_atta
 
 #### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
 
+At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/: 
 
 ```json
 "minecraft:shooter": {
@@ -69,6 +70,7 @@ Defines the entity's ranged attack behavior. The "minecraft:behavior.ranged_atta
 
 #### [Parched](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parched.json)
 
+At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/: 
 
 ```json
 "minecraft:shooter": {

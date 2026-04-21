@@ -2377,7 +2377,7 @@
         "description": "Escape triggers.",
         "dataType": "objectArray",
         "defaultValue": [],
-        "subFormId": "beta/actordefinitiontrigger"
+        "subFormId": "entity/actordefinitiontrigger"
       },
       {
         "id": "priority",

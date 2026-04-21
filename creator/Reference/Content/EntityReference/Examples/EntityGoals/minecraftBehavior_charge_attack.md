@@ -37,6 +37,7 @@ Allows this entity to damage a target by using a running attack.
 
 |Value       |Title |Description |
 |:-----------|:-----|:-----------|
+| absorb_block | Absorb block | |
 | activate | Activate | |
 | add.chest | Add.chest | |
 | admire | Admire | |
@@ -249,6 +250,7 @@ Allows this entity to damage a target by using a running attack.
 | drip.water.pointed_dripstone | Drip.water.pointed dripstone | |
 | drop.slot | Drop.slot | |
 | eat | Eat | |
+| eject_block | Eject block | |
 | elderguardian.curse | Elderguardian.curse | |
 | elemconstruct.open | Elemconstruct.open | |
 | enderchest.closed | Enderchest.closed | |
@@ -531,6 +533,7 @@ Allows this entity to damage a target by using a running attack.
 | shulkerbox.open | Shulkerbox.open | |
 | single_swap | Single swap | |
 | sleep | Sleep | |
+| slime_landing | Slime landing | |
 | smithing_table.use | Smithing table.use | |
 | sneeze | Sneeze | |
 | sonic_boom | Sonic boom | |

@@ -66,6 +66,11 @@
             }
           ]
         }
+      },
+      {
+        "id": "can_wear_armor",
+        "title": "Can Wear Armor",
+        "dataType": "string"
       }
     ],
     "samples": {
@@ -117,15 +122,11 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
+      "/vanilla/behavior_pack/entities/sulfur_cube.json": [
         {
-          "path": "/minecraft:entity/components/minecraft:equip_item/",
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium/minecraft:equip_item/",
           "content": {
-            "excluded_items": [
-              {
-                "item": "minecraft:banner:15"
-              }
-            ]
+            "can_wear_armor": false
           }
         }
       ]

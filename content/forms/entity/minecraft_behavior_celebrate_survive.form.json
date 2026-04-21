@@ -109,7 +109,7 @@
           },
           "target": "self"
         },
-        "subFormId": "beta/actordefinitiontrigger"
+        "subFormId": "entity/actordefinitiontrigger"
       },
       {
         "id": "priority",

@@ -563,7 +563,7 @@
         "description": "The event to trigger when attacking",
         "dataType": "objectArray",
         "defaultValue": [],
-        "subFormId": "beta/actordefinitiontrigger",
+        "subFormId": "entity/actordefinitiontrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
             {

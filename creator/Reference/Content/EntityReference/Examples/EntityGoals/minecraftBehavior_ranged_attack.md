@@ -17,7 +17,7 @@ Allows an entity to attack by using ranged shots. "charge_shoot_trigger" must be
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| attack_interval | 0 | Decimal number | Alternative to "attack_interval_min" & "attack_interval_max". Consistent reload-time (in seconds), when not using a charged shot. Does not scale with target-distance. | Bogged: `3.5` | 
+| attack_interval | 0 | Decimal number | Alternative to "attack_interval_min" & "attack_interval_max". Consistent reload-time (in seconds), when not using a charged shot. Does not scale with target-distance. | Bogged: `3.5`, `2.5` | 
 | attack_interval_max | 0 | Decimal number | Maximum bound for reload-time range (in seconds), when not using a charged shot. Reload-time range scales with target-distance. | Blaze: `5`, Shulker: `3` | 
 | attack_interval_min | 0 | Decimal number | Minimum bound for reload-time range (in seconds), when not using a charged shot. Reload-time range scales with target-distance. | Blaze: `3`, Shulker: `1` | 
 | attack_radius | 0 | Decimal number | Minimum distance to target before this entity will attempt to shoot. | Blaze: `48`, Bogged: `15`, Llama: `64` | 
@@ -55,10 +55,21 @@ Allows an entity to attack by using ranged shots. "charge_shoot_trigger" must be
 
 #### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
 
+At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:behavior.ranged_attack/: 
 
 ```json
 "minecraft:behavior.ranged_attack": {
   "attack_interval": 3.5,
+  "attack_radius": 15,
+  "priority": 0
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:behavior.ranged_attack/: 
+
+```json
+"minecraft:behavior.ranged_attack": {
+  "attack_interval": 2.5,
   "attack_radius": 15,
   "priority": 0
 }
@@ -79,10 +90,21 @@ At /minecraft:entity/component_groups/minecraft:llama_angry/minecraft:behavior.r
 
 #### [Parched](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parched.json)
 
+At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:behavior.ranged_attack/: 
 
 ```json
 "minecraft:behavior.ranged_attack": {
   "attack_interval": 3.5,
+  "attack_radius": 15,
+  "priority": 1
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:behavior.ranged_attack/: 
+
+```json
+"minecraft:behavior.ranged_attack": {
+  "attack_interval": 2.5,
   "attack_radius": 15,
   "priority": 1
 }

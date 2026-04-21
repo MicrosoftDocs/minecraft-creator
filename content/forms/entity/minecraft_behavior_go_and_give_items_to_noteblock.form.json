@@ -167,7 +167,7 @@
         "description": "Event(s) to run when this mob throws items.",
         "dataType": "objectArray",
         "defaultValue": [],
-        "subFormId": "beta/actordefinitiontrigger",
+        "subFormId": "entity/actordefinitiontrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
             {

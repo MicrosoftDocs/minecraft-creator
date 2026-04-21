@@ -120,7 +120,7 @@
         "description": "Event(s) to run when this goal fails.",
         "dataType": "objectArray",
         "defaultValue": [],
-        "subFormId": "beta/actordefinitiontrigger"
+        "subFormId": "entity/actordefinitiontrigger"
       },
       {
         "id": "on_home",
@@ -128,7 +128,7 @@
         "description": "Event(s) to run when this mob gets home.",
         "dataType": "objectArray",
         "defaultValue": [],
-        "subFormId": "beta/actordefinitiontrigger"
+        "subFormId": "entity/actordefinitiontrigger"
       },
       {
         "id": "priority",

@@ -70,7 +70,19 @@
             "id": "torso",
             "title": "Torso"
           }
-        ]
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[0]/",
+              "content": "main_hand"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[1]/",
+              "content": "main_hand"
+            }
+          ]
+        }
       },
       {
         "id": "operator",
@@ -173,13 +185,118 @@
             "title": "Target",
             "description": "The caller's current target."
           }
-        ]
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[0]/",
+              "content": "other"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[1]/",
+              "content": "other"
+            }
+          ]
+        }
       },
       {
         "id": "value",
         "title": "Value",
         "description": "(Required) The item name to look for",
-        "dataType": "string"
+        "dataType": "string",
+        "samples": {
+          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[0]/",
+              "content": "minecraft:sulfur_cube_archetype_bouncy"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[1]/",
+              "content": "minecraft:sulfur_cube_archetype_regular"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[2]/",
+              "content": "minecraft:sulfur_cube_archetype_slow_flat"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[3]/",
+              "content": "minecraft:sulfur_cube_archetype_fast_flat"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[4]/",
+              "content": "minecraft:sulfur_cube_archetype_light"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[5]/",
+              "content": "minecraft:sulfur_cube_archetype_fast_sliding"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[6]/",
+              "content": "minecraft:sulfur_cube_archetype_slow_sliding"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[7]/",
+              "content": "minecraft:sulfur_cube_archetype_sticky"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[8]/",
+              "content": "minecraft:sulfur_cube_archetype_high_resistance"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:interact/interactions[1]/on_interact/filters/all_of[0]/any_of[0]/",
+              "content": "minecraft:sulfur_cube_archetype_bouncy"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:interact/interactions[1]/on_interact/filters/all_of[0]/any_of[1]/",
+              "content": "minecraft:sulfur_cube_archetype_regular"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:interact/interactions[1]/on_interact/filters/all_of[0]/any_of[2]/",
+              "content": "minecraft:sulfur_cube_archetype_slow_flat"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:interact/interactions[1]/on_interact/filters/all_of[0]/any_of[3]/",
+              "content": "minecraft:sulfur_cube_archetype_fast_flat"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:interact/interactions[1]/on_interact/filters/all_of[0]/any_of[4]/",
+              "content": "minecraft:sulfur_cube_archetype_light"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:interact/interactions[1]/on_interact/filters/all_of[0]/any_of[5]/",
+              "content": "minecraft:sulfur_cube_archetype_fast_sliding"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:interact/interactions[1]/on_interact/filters/all_of[0]/any_of[6]/",
+              "content": "minecraft:sulfur_cube_archetype_slow_sliding"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:interact/interactions[1]/on_interact/filters/all_of[0]/any_of[7]/",
+              "content": "minecraft:sulfur_cube_archetype_sticky"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:interact/interactions[1]/on_interact/filters/all_of[0]/any_of[8]/",
+              "content": "minecraft:sulfur_cube_archetype_high_resistance"
+            }
+          ]
+        }
+      },
+      {
+        "id": "test",
+        "title": "Test",
+        "dataType": "string",
+        "samples": {
+          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[0]/",
+              "content": "has_equipment_tag"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[1]/",
+              "content": "has_equipment_tag"
+            }
+          ]
+        }
       }
     ],
     "samples": {
@@ -191,6 +308,242 @@
         {
           "path": "Short (using Defaults)..",
           "content": "{ \"test\": \"has_equipment_tag\", \"value\": \"dirt\" }"
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sulfur_cube.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[0]/",
+          "content": {
+            "test": "has_equipment_tag",
+            "subject": "other",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_bouncy"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[1]/",
+          "content": {
+            "test": "has_equipment_tag",
+            "subject": "other",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_regular"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[2]/",
+          "content": {
+            "test": "has_equipment_tag",
+            "subject": "other",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_slow_flat"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[3]/",
+          "content": {
+            "test": "has_equipment_tag",
+            "subject": "other",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_fast_flat"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[4]/",
+          "content": {
+            "test": "has_equipment_tag",
+            "subject": "other",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_light"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[5]/",
+          "content": {
+            "test": "has_equipment_tag",
+            "subject": "other",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_fast_sliding"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[6]/",
+          "content": {
+            "test": "has_equipment_tag",
+            "subject": "other",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_slow_sliding"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[7]/",
+          "content": {
+            "test": "has_equipment_tag",
+            "subject": "other",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_sticky"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:interact/interactions[0]/on_interact/filters/any_of[8]/",
+          "content": {
+            "test": "has_equipment_tag",
+            "subject": "other",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_high_resistance"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:interact/interactions[1]/on_interact/filters/all_of[0]/any_of[0]/",
+          "content": {
+            "test": "has_equipment_tag",
+            "subject": "other",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_bouncy"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:interact/interactions[1]/on_interact/filters/all_of[0]/any_of[1]/",
+          "content": {
+            "test": "has_equipment_tag",
+            "subject": "other",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_regular"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:interact/interactions[1]/on_interact/filters/all_of[0]/any_of[2]/",
+          "content": {
+            "test": "has_equipment_tag",
+            "subject": "other",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_slow_flat"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:interact/interactions[1]/on_interact/filters/all_of[0]/any_of[3]/",
+          "content": {
+            "test": "has_equipment_tag",
+            "subject": "other",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_fast_flat"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:interact/interactions[1]/on_interact/filters/all_of[0]/any_of[4]/",
+          "content": {
+            "test": "has_equipment_tag",
+            "subject": "other",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_light"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:interact/interactions[1]/on_interact/filters/all_of[0]/any_of[5]/",
+          "content": {
+            "test": "has_equipment_tag",
+            "subject": "other",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_fast_sliding"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:interact/interactions[1]/on_interact/filters/all_of[0]/any_of[6]/",
+          "content": {
+            "test": "has_equipment_tag",
+            "subject": "other",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_slow_sliding"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:interact/interactions[1]/on_interact/filters/all_of[0]/any_of[7]/",
+          "content": {
+            "test": "has_equipment_tag",
+            "subject": "other",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_sticky"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:interact/interactions[1]/on_interact/filters/all_of[0]/any_of[8]/",
+          "content": {
+            "test": "has_equipment_tag",
+            "subject": "other",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_high_resistance"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_block_absorbed/sequence[1]/filters/",
+          "content": {
+            "test": "has_equipment_tag",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_bouncy"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_block_absorbed/sequence[2]/filters/",
+          "content": {
+            "test": "has_equipment_tag",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_regular"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_block_absorbed/sequence[3]/filters/",
+          "content": {
+            "test": "has_equipment_tag",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_slow_flat"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_block_absorbed/sequence[4]/filters/",
+          "content": {
+            "test": "has_equipment_tag",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_fast_flat"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_block_absorbed/sequence[5]/filters/",
+          "content": {
+            "test": "has_equipment_tag",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_light"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_block_absorbed/sequence[6]/filters/",
+          "content": {
+            "test": "has_equipment_tag",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_fast_sliding"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_block_absorbed/sequence[7]/filters/",
+          "content": {
+            "test": "has_equipment_tag",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_slow_sliding"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_block_absorbed/sequence[8]/filters/",
+          "content": {
+            "test": "has_equipment_tag",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_sticky"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_block_absorbed/sequence[9]/filters/",
+          "content": {
+            "test": "has_equipment_tag",
+            "domain": "main_hand",
+            "value": "minecraft:sulfur_cube_archetype_high_resistance"
+          }
         }
       ]
     }

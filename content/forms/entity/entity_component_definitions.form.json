@@ -2199,7 +2199,7 @@
         "title": "Minecraft Addrider",
         "description": "Adds riders to the entity. Requires \"minecraft:rideable\". Can only spawn as many riders as \"minecraft:rideable\" has \"seat_count\".",
         "dataType": "object",
-        "subFormId": "beta/minecraft_addrider"
+        "subFormId": "entity/minecraft_addrider"
       },
       {
         "id": "minecraft:admire_item",
@@ -2297,35 +2297,35 @@
         "title": "Admire Item Minecraft Behavior",
         "description": "Enables the mob to admire items that have been configured as admirable. Must be used in combination with the admire_item component",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_admire_item"
+        "subFormId": "entity/minecraft_behavior_admire_item"
       },
       {
         "id": "minecraft:behavior.aquatic_charge_attack",
         "title": "Aquatic Charge Attack Minecraft Behavior",
         "description": "Enables an aquatic mob to dash at its target with knockback; includes overshoot and cooldown settings.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_aquatic_charge_attack"
+        "subFormId": "entity/minecraft_behavior_aquatic_charge_attack"
       },
       {
         "id": "minecraft:behavior.avoid_block",
         "title": "Avoid Block Minecraft Behavior",
         "description": "Allows this entity to avoid certain blocks.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_avoid_block"
+        "subFormId": "entity/minecraft_behavior_avoid_block"
       },
       {
         "id": "minecraft:behavior.avoid_mob_type",
         "title": "Avoid Mob Type Minecraft Behavior",
         "description": "Allows the entity to run away from other entities that meet the criteria specified.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_avoid_mob_type"
+        "subFormId": "entity/minecraft_behavior_avoid_mob_type"
       },
       {
         "id": "minecraft:behavior.barter",
         "title": "Barter Minecraft Behavior",
         "description": "Enables the mob to barter for items that have been configured as barter currency. Must be used in combination with the barter component",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_barter"
+        "subFormId": "entity/minecraft_behavior_barter"
       },
       {
         "id": "minecraft:behavior.beg",
@@ -2344,28 +2344,28 @@
         "title": "Breed Minecraft Behavior",
         "description": "Allows this mob to breed with other mobs.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_breed"
+        "subFormId": "entity/minecraft_behavior_breed"
       },
       {
         "id": "minecraft:behavior.celebrate",
         "title": "Celebrate Minecraft Behavior",
         "description": "Allows this entity to celebrate surviving a raid by making celebration sounds and jumping.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_celebrate"
+        "subFormId": "entity/minecraft_behavior_celebrate"
       },
       {
         "id": "minecraft:behavior.celebrate_survive",
         "title": "Celebrate Survive Minecraft Behavior",
         "description": "Allows the player to trade with this mob. When the goal starts, it will stop the mob's navigation.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_celebrate_survive"
+        "subFormId": "entity/minecraft_behavior_celebrate_survive"
       },
       {
         "id": "minecraft:behavior.charge_attack",
         "title": "Charge Attack Minecraft Behavior",
         "description": "Allows this entity to damage a target by using a running attack.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_charge_attack"
+        "subFormId": "entity/minecraft_behavior_charge_attack"
       },
       {
         "id": "minecraft:behavior.charge_held_item",
@@ -2378,21 +2378,21 @@
         "title": "Circle Around Anchor Minecraft Behavior",
         "description": "Causes an entity to circle around an anchor point placed near a point or target.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_circle_around_anchor"
+        "subFormId": "entity/minecraft_behavior_circle_around_anchor"
       },
       {
         "id": "minecraft:behavior.controlled_by_player",
         "title": "Controlled By Player Minecraft Behavior",
         "description": "Allows the entity to be controlled by a player which is holding the item specified in \"minecraft:item_controllable\" component's \"control_items\" field (required). Also requires the \"minecraft:movement\" component, and the \"minecraft:rideable\" component. On every tick, the entity will attempt to rotate towards where the player is facing with the control item whilst simultaneously moving forward.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_controlled_by_player"
+        "subFormId": "entity/minecraft_behavior_controlled_by_player"
       },
       {
         "id": "minecraft:behavior.croak",
         "title": "Croak Minecraft Behavior",
         "description": "Allows the entity to croak at a random time interval with configurable conditions.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_croak"
+        "subFormId": "entity/minecraft_behavior_croak"
       },
       {
         "id": "minecraft:behavior.defend_trusted_target",
@@ -2405,21 +2405,21 @@
         "title": "Defend Village Target Minecraft Behavior",
         "description": "Allows the entity to stay in a village and defend the village from aggressors. If a player is in bad standing with the village this goal will cause the entity to attack the player regardless of filter conditions.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_defend_village_target"
+        "subFormId": "entity/minecraft_behavior_defend_village_target"
       },
       {
         "id": "minecraft:behavior.delayed_attack",
         "title": "Delayed Attack Minecraft Behavior",
         "description": "Allows an entity to attack, while also delaying the damage-dealt until a specific time in the attack animation.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_delayed_attack"
+        "subFormId": "entity/minecraft_behavior_delayed_attack"
       },
       {
         "id": "minecraft:behavior.dig",
         "title": "Dig Minecraft Behavior",
         "description": "Allows this entity to dig into the ground before despawning.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_dig"
+        "subFormId": "entity/minecraft_behavior_dig"
       },
       {
         "id": "minecraft:behavior.door_interact",
@@ -2432,7 +2432,7 @@
         "title": "Dragonchargeplayer Minecraft Behavior",
         "description": "Allows this entity to attack a player by charging at them. The player is chosen by the \"minecraft:behavior.dragonscanning\". Can only be used by the Ender Dragon.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_dragonchargeplayer"
+        "subFormId": "entity/minecraft_behavior_dragonchargeplayer"
       },
       {
         "id": "minecraft:behavior.dragondeath",
@@ -2445,7 +2445,7 @@
         "title": "Dragonflaming Minecraft Behavior",
         "description": "Allows this entity to use a flame-breath attack. Can only be used by the Ender Dragon.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_dragonflaming"
+        "subFormId": "entity/minecraft_behavior_dragonflaming"
       },
       {
         "id": "minecraft:behavior.dragonholdingpattern",
@@ -2470,7 +2470,7 @@
         "title": "Dragonstrafeplayer Minecraft Behavior",
         "description": "Allows this entity to fly around looking for a player to shoot fireballs at. Can only be used by the Ender Dragon.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_dragonstrafeplayer"
+        "subFormId": "entity/minecraft_behavior_dragonstrafeplayer"
       },
       {
         "id": "minecraft:behavior.dragontakeoff",
@@ -2483,7 +2483,7 @@
         "title": "Drink Milk Minecraft Behavior",
         "description": "Allows the mob to drink milk based on specified environment conditions.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_drink_milk"
+        "subFormId": "entity/minecraft_behavior_drink_milk"
       },
       {
         "id": "minecraft:behavior.drink_potion",
@@ -2496,7 +2496,7 @@
         "title": "Drop Item For Minecraft Behavior",
         "description": "Allows the entity to move toward a target, and drop an item near the target. This goal requires a \"minecraft:navigation\" to execute.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_drop_item_for"
+        "subFormId": "entity/minecraft_behavior_drop_item_for"
       },
       {
         "id": "minecraft:behavior.eat_block",
@@ -2509,21 +2509,21 @@
         "title": "Eat Carried Item Minecraft Behavior",
         "description": "If the mob is carrying a food item, the mob will eat it and the effects will be applied to the mob.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_eat_carried_item"
+        "subFormId": "entity/minecraft_behavior_eat_carried_item"
       },
       {
         "id": "minecraft:behavior.eat_mob",
         "title": "Eat Mob Minecraft Behavior",
         "description": "Allows the entity to eat a specified Mob.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_eat_mob"
+        "subFormId": "entity/minecraft_behavior_eat_mob"
       },
       {
         "id": "minecraft:behavior.emerge",
         "title": "Emerge Minecraft Behavior",
         "description": "Allows this entity to emerge from the ground",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_emerge"
+        "subFormId": "entity/minecraft_behavior_emerge"
       },
       {
         "id": "minecraft:behavior.enderman_leave_block",
@@ -2542,63 +2542,63 @@
         "title": "Equip Item Minecraft Behavior",
         "description": "The entity puts on the desired equipment.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_equip_item"
+        "subFormId": "entity/minecraft_behavior_equip_item"
       },
       {
         "id": "minecraft:behavior.explore_outskirts",
         "title": "Explore Outskirts Minecraft Behavior",
         "description": "Allows the entity to first travel to a random point on the outskirts of the village, and then explore random points within a small distance. This goal requires \"minecraft:dweller\" and \"minecraft:navigation\" to execute.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_explore_outskirts"
+        "subFormId": "entity/minecraft_behavior_explore_outskirts"
       },
       {
         "id": "minecraft:behavior.fertilize_farm_block",
         "title": "Fertilize Farm Block Minecraft Behavior",
         "description": "Allows the mob to search within an area for a growable crop block. If found, the mob will use any available fertilizer in their inventory on the crop. This goal will not execute if the mob does not have a fertilizer item in its inventory.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_fertilize_farm_block"
+        "subFormId": "entity/minecraft_behavior_fertilize_farm_block"
       },
       {
         "id": "minecraft:behavior.find_cover",
         "title": "Find Cover Minecraft Behavior",
         "description": "Allows the mob to seek shade.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_find_cover"
+        "subFormId": "entity/minecraft_behavior_find_cover"
       },
       {
         "id": "minecraft:behavior.find_mount",
         "title": "Find Mount Minecraft Behavior",
         "description": "Allows the mob to look around for another mob to ride atop it.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_find_mount"
+        "subFormId": "entity/minecraft_behavior_find_mount"
       },
       {
         "id": "minecraft:behavior.find_underwater_treasure",
         "title": "Find Underwater Treasure Minecraft Behavior",
         "description": "Allows the mob to move towards the nearest underwater ruin or shipwreck.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_find_underwater_treasure"
+        "subFormId": "entity/minecraft_behavior_find_underwater_treasure"
       },
       {
         "id": "minecraft:behavior.fire_at_target",
         "title": "Fire At Target Minecraft Behavior",
         "description": "Allows an entity to attack by firing a shot with a delay. Anchor and offset parameters of this component overrides the anchor and offset from projectile component.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_fire_at_target"
+        "subFormId": "entity/minecraft_behavior_fire_at_target"
       },
       {
         "id": "minecraft:behavior.flee_sun",
         "title": "Flee Sun Minecraft Behavior",
         "description": "Allows the mob to run away from direct sunlight and seek shade.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_flee_sun"
+        "subFormId": "entity/minecraft_behavior_flee_sun"
       },
       {
         "id": "minecraft:behavior.float",
         "title": "Float Minecraft Behavior",
         "description": "Allows the mob to stay afloat while swimming. Passengers will be kicked out the moment the mob's head goes underwater, which may not happen for tall mobs.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_float"
+        "subFormId": "entity/minecraft_behavior_float"
       },
       {
         "id": "minecraft:behavior.float_tempt",
@@ -2617,7 +2617,7 @@
         "title": "Follow Caravan Minecraft Behavior",
         "description": "Allows the mob to follow mobs that are in a caravan.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_follow_caravan"
+        "subFormId": "entity/minecraft_behavior_follow_caravan"
       },
       {
         "id": "minecraft:behavior.follow_mob",
@@ -2630,14 +2630,14 @@
         "title": "Follow Owner Minecraft Behavior",
         "description": "Allows a mob to follow the player that owns it.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_follow_owner"
+        "subFormId": "entity/minecraft_behavior_follow_owner"
       },
       {
         "id": "minecraft:behavior.follow_parent",
         "title": "Follow Parent Minecraft Behavior",
         "description": "Allows the mob to follow their parent around.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_follow_parent"
+        "subFormId": "entity/minecraft_behavior_follow_parent"
       },
       {
         "id": "minecraft:behavior.follow_target_leader",
@@ -2650,56 +2650,56 @@
         "title": "Go And Give Items To Noteblock Minecraft Behavior",
         "description": "The entity will attempt to toss the items from its inventory to a nearby recently played noteblock.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_go_and_give_items_to_noteblock"
+        "subFormId": "entity/minecraft_behavior_go_and_give_items_to_noteblock"
       },
       {
         "id": "minecraft:behavior.go_and_give_items_to_owner",
         "title": "Go And Give Items To Owner Minecraft Behavior",
         "description": "The entity will attempt to toss the items from its inventory to its owner.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_go_and_give_items_to_owner"
+        "subFormId": "entity/minecraft_behavior_go_and_give_items_to_owner"
       },
       {
         "id": "minecraft:behavior.go_home",
         "title": "Go Home Minecraft Behavior",
         "description": "Allows the mob to move back to the position they were spawned.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_go_home"
+        "subFormId": "entity/minecraft_behavior_go_home"
       },
       {
         "id": "minecraft:behavior.guardian_attack",
         "title": "Guardian Attack Minecraft Behavior",
         "description": "Allows this entity to use a laser beam attack. Can only be used by Guardians and Elder Guardians.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_guardian_attack"
+        "subFormId": "entity/minecraft_behavior_guardian_attack"
       },
       {
         "id": "minecraft:behavior.harvest_farm_block",
         "title": "Harvest Farm Block Minecraft Behavior",
         "description": "Allows the entity to search within an area for farmland with air above it. If found, the entity will replace the air block by planting a seed item from its inventory on the farmland block. This goal requires \"minecraft:inventory\" and \"minecraft:navigation\" to execute. This goal will not execute if the entity does not have an item in its inventory.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_harvest_farm_block"
+        "subFormId": "entity/minecraft_behavior_harvest_farm_block"
       },
       {
         "id": "minecraft:behavior.hide",
         "title": "Hide Minecraft Behavior",
         "description": "Allows a mob with the hide component to attempt to move to - and hide at - an owned or nearby POI.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_hide"
+        "subFormId": "entity/minecraft_behavior_hide"
       },
       {
         "id": "minecraft:behavior.hold_ground",
         "title": "Hold Ground Minecraft Behavior",
         "description": "The mob freezes and looks at the mob they are targeting.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_hold_ground"
+        "subFormId": "entity/minecraft_behavior_hold_ground"
       },
       {
         "id": "minecraft:behavior.hover",
         "title": "Hover Minecraft Behavior",
         "description": "Allows the mob to hover in place.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_hover"
+        "subFormId": "entity/minecraft_behavior_hover"
       },
       {
         "id": "minecraft:behavior.hurt_by_target",
@@ -2712,28 +2712,28 @@
         "title": "Inspect Bookshelf Minecraft Behavior",
         "description": "Allows the mob to inspect bookshelves.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_inspect_bookshelf"
+        "subFormId": "entity/minecraft_behavior_inspect_bookshelf"
       },
       {
         "id": "minecraft:behavior.investigate_suspicious_location",
         "title": "Investigate Suspicious Location Minecraft Behavior",
         "description": "Allows this entity to move towards a \"suspicious\" position based on data gathered in minecraft:suspect_tracking",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_investigate_suspicious_location"
+        "subFormId": "entity/minecraft_behavior_investigate_suspicious_location"
       },
       {
         "id": "minecraft:behavior.jump_around_target",
         "title": "Jump Around Target Minecraft Behavior",
         "description": "Allows an entity to jump around a target.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_jump_around_target"
+        "subFormId": "entity/minecraft_behavior_jump_around_target"
       },
       {
         "id": "minecraft:behavior.jump_to_block",
         "title": "Jump To Block Minecraft Behavior",
         "description": "Allows an entity to jump to another random block.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_jump_to_block"
+        "subFormId": "entity/minecraft_behavior_jump_to_block"
       },
       {
         "id": "minecraft:behavior.knockback_roar",
@@ -2746,14 +2746,14 @@
         "title": "Lay Down Minecraft Behavior",
         "description": "Allows mobs to lay down at times",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_lay_down"
+        "subFormId": "entity/minecraft_behavior_lay_down"
       },
       {
         "id": "minecraft:behavior.lay_egg",
         "title": "Lay Egg Minecraft Behavior",
         "description": "Allows the mob to lay an egg block on certain types of blocks if the mob is pregnant.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_lay_egg"
+        "subFormId": "entity/minecraft_behavior_lay_egg"
       },
       {
         "id": "minecraft:behavior.leap_at_target",
@@ -2766,28 +2766,28 @@
         "title": "Look At Entity Minecraft Behavior",
         "description": "Allows the mob to look at nearby entities.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_look_at_entity"
+        "subFormId": "entity/minecraft_behavior_look_at_entity"
       },
       {
         "id": "minecraft:behavior.look_at_player",
         "title": "Look At Player Minecraft Behavior",
         "description": "Allows the mob to look at the player when the player is nearby.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_look_at_player"
+        "subFormId": "entity/minecraft_behavior_look_at_player"
       },
       {
         "id": "minecraft:behavior.look_at_target",
         "title": "Look At Target Minecraft Behavior",
         "description": "Allows the mob to look at the entity they are targeting.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_look_at_target"
+        "subFormId": "entity/minecraft_behavior_look_at_target"
       },
       {
         "id": "minecraft:behavior.look_at_trading_player",
         "title": "Look At Trading Player Minecraft Behavior",
         "description": "Allows the mob to look at the player they are trading with.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_look_at_trading_player"
+        "subFormId": "entity/minecraft_behavior_look_at_trading_player"
       },
       {
         "id": "minecraft:behavior.make_love",
@@ -2800,56 +2800,56 @@
         "title": "Melee Attack Minecraft Behavior",
         "description": "Allows an entity to deal damage through a melee attack.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_melee_attack"
+        "subFormId": "entity/minecraft_behavior_melee_attack"
       },
       {
         "id": "minecraft:behavior.melee_box_attack",
         "title": "Melee Box Attack Minecraft Behavior",
         "description": "Allows an entity to deal damage through a melee attack with reach calculations based on bounding boxes.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_melee_box_attack"
+        "subFormId": "entity/minecraft_behavior_melee_box_attack"
       },
       {
         "id": "minecraft:behavior.mingle",
         "title": "Mingle Minecraft Behavior",
         "description": "Allows an entity to go to the village bell and mingle with other entities",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_mingle"
+        "subFormId": "entity/minecraft_behavior_mingle"
       },
       {
         "id": "minecraft:behavior.mount_pathing",
         "title": "Mount Pathing Minecraft Behavior",
         "description": "Allows the mob to move around on its own while mounted seeking a target to attack.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_mount_pathing"
+        "subFormId": "entity/minecraft_behavior_mount_pathing"
       },
       {
         "id": "minecraft:behavior.move_around_target",
         "title": "Move Around Target Minecraft Behavior",
         "description": "Allows an entity to move around a target.If the entity is too close(i.e.closer than destination range min and height difference limit) it will try to move away from its target.If the entity is too far away from its target it will try to move closer to a random position within the destination range.A randomized amount of those positions will be behind the target, and the spread can be tweaked with 'destination_pos_spread_degrees'.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_move_around_target"
+        "subFormId": "entity/minecraft_behavior_move_around_target"
       },
       {
         "id": "minecraft:behavior.move_indoors",
         "title": "Move Indoors Minecraft Behavior",
         "description": "Allows this entity to move indoors.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_move_indoors"
+        "subFormId": "entity/minecraft_behavior_move_indoors"
       },
       {
         "id": "minecraft:behavior.move_outdoors",
         "title": "Move Outdoors Minecraft Behavior",
         "description": "Allows this entity to move outdoors.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_move_outdoors"
+        "subFormId": "entity/minecraft_behavior_move_outdoors"
       },
       {
         "id": "minecraft:behavior.move_through_village",
         "title": "Move Through Village Minecraft Behavior",
         "description": "Can only be used by Villagers. Allows the villagers to create paths around the village.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_move_through_village"
+        "subFormId": "entity/minecraft_behavior_move_through_village"
       },
       {
         "id": "minecraft:behavior.move_to_block",
@@ -2862,70 +2862,70 @@
         "title": "Move To Land Minecraft Behavior",
         "description": "Allows the mob to move back onto land when in water.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_move_to_land"
+        "subFormId": "entity/minecraft_behavior_move_to_land"
       },
       {
         "id": "minecraft:behavior.move_to_lava",
         "title": "Move To Lava Minecraft Behavior",
         "description": "Allows the mob to move back into lava when on land.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_move_to_lava"
+        "subFormId": "entity/minecraft_behavior_move_to_lava"
       },
       {
         "id": "minecraft:behavior.move_to_liquid",
         "title": "Move To Liquid Minecraft Behavior",
         "description": "Allows the mob to move into a liquid when on land.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_move_to_liquid"
+        "subFormId": "entity/minecraft_behavior_move_to_liquid"
       },
       {
         "id": "minecraft:behavior.move_to_poi",
         "title": "Move To Poi Minecraft Behavior",
         "description": "Allows the mob to move to a POI if able to",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_move_to_poi"
+        "subFormId": "entity/minecraft_behavior_move_to_poi"
       },
       {
         "id": "minecraft:behavior.move_to_random_block",
         "title": "Move To Random Block Minecraft Behavior",
         "description": "Allows mob to move towards a random block.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_move_to_random_block"
+        "subFormId": "entity/minecraft_behavior_move_to_random_block"
       },
       {
         "id": "minecraft:behavior.move_to_village",
         "title": "Move To Village Minecraft Behavior",
         "description": "Allows the mob to move into a random location within a village.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_move_to_village"
+        "subFormId": "entity/minecraft_behavior_move_to_village"
       },
       {
         "id": "minecraft:behavior.move_to_water",
         "title": "Move To Water Minecraft Behavior",
         "description": "Allows the mob to move back into water when on land.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_move_to_water"
+        "subFormId": "entity/minecraft_behavior_move_to_water"
       },
       {
         "id": "minecraft:behavior.move_towards_dwelling_restriction",
         "title": "Move Towards Dwelling Restriction Minecraft Behavior",
         "description": "Allows entities with the \"minecraft:dweller\" component to move toward their village area that the entity should be restricted to.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_move_towards_dwelling_restriction"
+        "subFormId": "entity/minecraft_behavior_move_towards_dwelling_restriction"
       },
       {
         "id": "minecraft:behavior.move_towards_home_restriction",
         "title": "Move Towards Home Restriction Minecraft Behavior",
         "description": "Allows entities with a \"minecraft:home\" component to move towards their home position. If \"restriction_radius\" is set, entities will be able to run this behavior only if outside of it.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_move_towards_home_restriction"
+        "subFormId": "entity/minecraft_behavior_move_towards_home_restriction"
       },
       {
         "id": "minecraft:behavior.move_towards_target",
         "title": "Move Towards Target Minecraft Behavior",
         "description": "Allows mob to move towards its current target.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_move_towards_target"
+        "subFormId": "entity/minecraft_behavior_move_towards_target"
       },
       {
         "id": "minecraft:behavior.nap",
@@ -2938,7 +2938,7 @@
         "title": "Nearest Attackable Target Minecraft Behavior",
         "description": "Allows an entity to attack the closest target within a given subset of specific target types.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_nearest_attackable_target"
+        "subFormId": "entity/minecraft_behavior_nearest_attackable_target"
       },
       {
         "id": "minecraft:behavior.nearest_prioritized_attackable_target",
@@ -2951,21 +2951,21 @@
         "title": "Ocelot Sit On Block Minecraft Behavior",
         "description": "Allows to mob to be able to sit in place like the ocelot.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_ocelot_sit_on_block"
+        "subFormId": "entity/minecraft_behavior_ocelot_sit_on_block"
       },
       {
         "id": "minecraft:behavior.ocelotattack",
         "title": "Ocelotattack Minecraft Behavior",
         "description": "Controls specific attack behavior for Ocelots.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_ocelotattack"
+        "subFormId": "entity/minecraft_behavior_ocelotattack"
       },
       {
         "id": "minecraft:behavior.offer_flower",
         "title": "Offer Flower Minecraft Behavior",
         "description": "Allows the mob to offer a flower to another mob with the minecraft:take_flower behavior.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_offer_flower"
+        "subFormId": "entity/minecraft_behavior_offer_flower"
       },
       {
         "id": "minecraft:behavior.open_door",
@@ -2996,14 +2996,14 @@
         "title": "Pet Sleep With Owner Minecraft Behavior",
         "description": "Allows the pet mob to move onto a bed with its owner while sleeping.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_pet_sleep_with_owner"
+        "subFormId": "entity/minecraft_behavior_pet_sleep_with_owner"
       },
       {
         "id": "minecraft:behavior.pickup_items",
         "title": "Pickup Items Minecraft Behavior",
         "description": "Allows the mob to pick up items on the ground.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_pickup_items"
+        "subFormId": "entity/minecraft_behavior_pickup_items"
       },
       {
         "id": "minecraft:behavior.place_block",
@@ -3016,35 +3016,35 @@
         "title": "Play Minecraft Behavior",
         "description": "Allows the mob to offer a flower to another mob with the minecraft:take_flower behavior.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_play"
+        "subFormId": "entity/minecraft_behavior_play"
       },
       {
         "id": "minecraft:behavior.play_dead",
         "title": "Play Dead Minecraft Behavior",
         "description": "Allows this entity to pretend to be dead to avoid being targeted by attackers.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_play_dead"
+        "subFormId": "entity/minecraft_behavior_play_dead"
       },
       {
         "id": "minecraft:behavior.player_ride_tamed",
         "title": "Player Ride Tamed Minecraft Behavior",
         "description": "Allows the mob to be ridden by the player after being tamed.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_player_ride_tamed"
+        "subFormId": "entity/minecraft_behavior_player_ride_tamed"
       },
       {
         "id": "minecraft:behavior.raid_garden",
         "title": "Raid Garden Minecraft Behavior",
         "description": "Allows the mob to eat/raid crops out of farms until they are full.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_raid_garden"
+        "subFormId": "entity/minecraft_behavior_raid_garden"
       },
       {
         "id": "minecraft:behavior.ram_attack",
         "title": "Ram Attack Minecraft Behavior",
         "description": "Allows this entity to damage a target by using a running attack.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_ram_attack"
+        "subFormId": "entity/minecraft_behavior_ram_attack"
       },
       {
         "id": "minecraft:behavior.random_breach",
@@ -3063,7 +3063,7 @@
         "title": "Random Hover Minecraft Behavior",
         "description": "Allows the mob to hover around randomly, close to the surface.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_random_hover"
+        "subFormId": "entity/minecraft_behavior_random_hover"
       },
       {
         "id": "minecraft:behavior.random_look_around",
@@ -3082,21 +3082,21 @@
         "title": "Random Search And Dig Minecraft Behavior",
         "description": "Allows this entity to locate a random target block that it can path find to. Once found, the entity will move towards it and dig up an item. [Default target block types: Dirt, Grass, Podzol, DirtWithRoots, MossBlock, Mud, MuddyMangroveRoots].",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_random_search_and_dig"
+        "subFormId": "entity/minecraft_behavior_random_search_and_dig"
       },
       {
         "id": "minecraft:behavior.random_sitting",
         "title": "Random Sitting Minecraft Behavior",
         "description": "Allows the mob to randomly sit for a duration.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_random_sitting"
+        "subFormId": "entity/minecraft_behavior_random_sitting"
       },
       {
         "id": "minecraft:behavior.random_stroll",
         "title": "Random Stroll Minecraft Behavior",
         "description": "Allows a mob to randomly stroll around.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_random_stroll"
+        "subFormId": "entity/minecraft_behavior_random_stroll"
       },
       {
         "id": "minecraft:behavior.random_swim",
@@ -3121,49 +3121,49 @@
         "title": "Restrict Open Door Minecraft Behavior",
         "description": "Allows the mob to stay indoors during night time.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_restrict_open_door"
+        "subFormId": "entity/minecraft_behavior_restrict_open_door"
       },
       {
         "id": "minecraft:behavior.restrict_sun",
         "title": "Restrict Sun Minecraft Behavior",
         "description": "Allows the mob to automatically start avoiding the sun when its a clear day out.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_restrict_sun"
+        "subFormId": "entity/minecraft_behavior_restrict_sun"
       },
       {
         "id": "minecraft:behavior.rise_to_liquid_level",
         "title": "Rise To Liquid Level Minecraft Behavior",
         "description": "Allows the mob to stay at a certain level when in liquid.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_rise_to_liquid_level"
+        "subFormId": "entity/minecraft_behavior_rise_to_liquid_level"
       },
       {
         "id": "minecraft:behavior.roar",
         "title": "Roar Minecraft Behavior",
         "description": "Allows this entity to roar at another entity based on data in minecraft:anger_level. Once the anger threshold specified in minecraft:anger_level has been reached, this entity will roar for the specified amount of time, look at the other entity, apply anger boost towards it, and finally target it.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_roar"
+        "subFormId": "entity/minecraft_behavior_roar"
       },
       {
         "id": "minecraft:behavior.roll",
         "title": "Roll Minecraft Behavior",
         "description": "This allows the mob to roll forward.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_roll"
+        "subFormId": "entity/minecraft_behavior_roll"
       },
       {
         "id": "minecraft:behavior.run_around_like_crazy",
         "title": "Run Around Like Crazy Minecraft Behavior",
         "description": "Allows the mob to run around aimlessly.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_run_around_like_crazy"
+        "subFormId": "entity/minecraft_behavior_run_around_like_crazy"
       },
       {
         "id": "minecraft:behavior.scared",
         "title": "Scared Minecraft Behavior",
         "description": "Allows the mob to become scared when the weather outside is thundering.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_scared"
+        "subFormId": "entity/minecraft_behavior_scared"
       },
       {
         "id": "minecraft:behavior.send_event",
@@ -3176,7 +3176,7 @@
         "title": "Share Items Minecraft Behavior",
         "description": "Allows the mob to give items it has to others.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_share_items"
+        "subFormId": "entity/minecraft_behavior_share_items"
       },
       {
         "id": "minecraft:behavior.silverfish_merge_with_stone",
@@ -3201,35 +3201,35 @@
         "title": "Sleep Minecraft Behavior",
         "description": "Allows mobs that own a bed to in a village to move to and sleep in it.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_sleep"
+        "subFormId": "entity/minecraft_behavior_sleep"
       },
       {
         "id": "minecraft:behavior.slime_attack",
         "title": "Slime Attack Minecraft Behavior",
         "description": "Causes the entity to grow tired every once in a while, while attacking.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_slime_attack"
+        "subFormId": "entity/minecraft_behavior_slime_attack"
       },
       {
         "id": "minecraft:behavior.slime_float",
         "title": "Slime Float Minecraft Behavior",
         "description": "Allow slimes to float in water / lava. Can only be used by Slime and Magma Cubes.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_slime_float"
+        "subFormId": "entity/minecraft_behavior_slime_float"
       },
       {
         "id": "minecraft:behavior.slime_keep_on_jumping",
         "title": "Slime Keep On Jumping Minecraft Behavior",
         "description": "Allows the entity to continuously jump around like a slime.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_slime_keep_on_jumping"
+        "subFormId": "entity/minecraft_behavior_slime_keep_on_jumping"
       },
       {
         "id": "minecraft:behavior.slime_random_direction",
         "title": "Slime Random Direction Minecraft Behavior",
         "description": "Allows the entity to move in random directions like a slime.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_slime_random_direction"
+        "subFormId": "entity/minecraft_behavior_slime_random_direction"
       },
       {
         "id": "minecraft:behavior.snacking",
@@ -3242,21 +3242,21 @@
         "title": "Sneeze Minecraft Behavior",
         "description": "Allows the mob to sneeze, causing it to drop items and affect nearby mobs.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_sneeze"
+        "subFormId": "entity/minecraft_behavior_sneeze"
       },
       {
         "id": "minecraft:behavior.sniff",
         "title": "Sniff Minecraft Behavior",
         "description": "Allows this entity to detect the nearest player within \"sniffing_radius\" and update its \"minecraft:suspect_tracking\" component state",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_sniff"
+        "subFormId": "entity/minecraft_behavior_sniff"
       },
       {
         "id": "minecraft:behavior.sonic_boom",
         "title": "Sonic Boom Minecraft Behavior",
         "description": "Allows this entity to perform a 'sonic boom' ranged attack",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_sonic_boom"
+        "subFormId": "entity/minecraft_behavior_sonic_boom"
       },
       {
         "id": "minecraft:behavior.squid_dive",
@@ -3299,35 +3299,35 @@
         "title": "Stay Near Noteblock Minecraft Behavior",
         "description": "The entity will attempt to toss the items from its inventory to a nearby recently played noteblock.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_stay_near_noteblock"
+        "subFormId": "entity/minecraft_behavior_stay_near_noteblock"
       },
       {
         "id": "minecraft:behavior.stay_while_sitting",
         "title": "Stay While Sitting Minecraft Behavior",
         "description": "Allows the mob to stay put while it is in a sitting state instead of doing something else.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_stay_while_sitting"
+        "subFormId": "entity/minecraft_behavior_stay_while_sitting"
       },
       {
         "id": "minecraft:behavior.stomp_attack",
         "title": "Stomp Attack Minecraft Behavior",
         "description": "Allows an entity to attack using stomp AoE damage behavior.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_stomp_attack"
+        "subFormId": "entity/minecraft_behavior_stomp_attack"
       },
       {
         "id": "minecraft:behavior.stomp_turtle_egg",
         "title": "Stomp Turtle Egg Minecraft Behavior",
         "description": "Allows this mob to stomp turtle eggs",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_stomp_turtle_egg"
+        "subFormId": "entity/minecraft_behavior_stomp_turtle_egg"
       },
       {
         "id": "minecraft:behavior.stroll_towards_village",
         "title": "Stroll Towards Village Minecraft Behavior",
         "description": "Allows the mob to move into a random location within a village within the search range.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_stroll_towards_village"
+        "subFormId": "entity/minecraft_behavior_stroll_towards_village"
       },
       {
         "id": "minecraft:behavior.summon_entity",
@@ -3346,35 +3346,35 @@
         "title": "Swim Idle Minecraft Behavior",
         "description": "Allows the entity go idle, if swimming. Entity must be in water.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_swim_idle"
+        "subFormId": "entity/minecraft_behavior_swim_idle"
       },
       {
         "id": "minecraft:behavior.swim_up_for_breath",
         "title": "Swim Up For Breath Minecraft Behavior",
         "description": "Allows the mob to try to move to air once it is close to running out of its total breathable supply. Requires \"minecraft:breathable\".",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_swim_up_for_breath"
+        "subFormId": "entity/minecraft_behavior_swim_up_for_breath"
       },
       {
         "id": "minecraft:behavior.swim_wander",
         "title": "Swim Wander Minecraft Behavior",
         "description": "Allows the entity to wander around while swimming, when not path-finding.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_swim_wander"
+        "subFormId": "entity/minecraft_behavior_swim_wander"
       },
       {
         "id": "minecraft:behavior.swim_with_entity",
         "title": "Swim With Entity Minecraft Behavior",
         "description": "Allows this entity to locate a random target block that it can path find to. Once found, the entity will move towards it and dig up an item. [Default target block types: Dirt, Grass, Podzol, DirtWithRoots, MossBlock, Mud, MuddyMangroveRoots].",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_swim_with_entity"
+        "subFormId": "entity/minecraft_behavior_swim_with_entity"
       },
       {
         "id": "minecraft:behavior.swoop_attack",
         "title": "Swoop Attack Minecraft Behavior",
         "description": "Allows an entity to attack using swoop attack behavior; Ideal for use with flying mobs. The behavior ends if the entity has a horizontal collision or gets hit.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_swoop_attack"
+        "subFormId": "entity/minecraft_behavior_swoop_attack"
       },
       {
         "id": "minecraft:behavior.take_block",
@@ -3387,21 +3387,21 @@
         "title": "Take Flower Minecraft Behavior",
         "description": "Allows the mob to accept flowers from another mob with the minecraft:offer_flower behavior.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_take_flower"
+        "subFormId": "entity/minecraft_behavior_take_flower"
       },
       {
         "id": "minecraft:behavior.target_when_pushed",
         "title": "Target When Pushed Minecraft Behavior",
         "description": "Allows the mob to target another mob when it is pushed by that mob.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_target_when_pushed"
+        "subFormId": "entity/minecraft_behavior_target_when_pushed"
       },
       {
         "id": "minecraft:behavior.teleport_to_owner",
         "title": "Teleport To Owner Minecraft Behavior",
         "description": "Allows an entity to teleport to its owner.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_teleport_to_owner"
+        "subFormId": "entity/minecraft_behavior_teleport_to_owner"
       },
       {
         "id": "minecraft:behavior.tempt",
@@ -3414,49 +3414,49 @@
         "title": "Timer Flag 1 Minecraft Behavior",
         "description": "Fires an event when this behavior starts, then waits for a duration before stopping. When stopping due to that timeout or due to being interrupted by another behavior, fires another event. query.timer_flag_1 will return 1.0 on both the client and server when this behavior is running, and 0.0 otherwise.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_timer_flag_1"
+        "subFormId": "entity/minecraft_behavior_timer_flag_1"
       },
       {
         "id": "minecraft:behavior.timer_flag_2",
         "title": "Timer Flag 2 Minecraft Behavior",
         "description": "Fires an event when this behavior starts, then waits for a duration before stopping. When stopping due to that timeout or due to being interrupted by another behavior, fires another event. query.timer_flag_2 will return 1.0 on both the client and server when this behavior is running, and 0.0 otherwise.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_timer_flag_2"
+        "subFormId": "entity/minecraft_behavior_timer_flag_2"
       },
       {
         "id": "minecraft:behavior.timer_flag_3",
         "title": "Timer Flag 3 Minecraft Behavior",
         "description": "Fires an event when this behavior starts, then waits for a duration before stopping. When stopping due to that timeout or due to being interrupted by another behavior, fires another event. query.timer_flag_3 will return 1.0 on both the client and server when this behavior is running, and 0.0 otherwise.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_timer_flag_3"
+        "subFormId": "entity/minecraft_behavior_timer_flag_3"
       },
       {
         "id": "minecraft:behavior.trade_interest",
         "title": "Trade Interest Minecraft Behavior",
         "description": "Allows the mob to look at a player that is holding a tradable item.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_trade_interest"
+        "subFormId": "entity/minecraft_behavior_trade_interest"
       },
       {
         "id": "minecraft:behavior.trade_with_player",
         "title": "Trade With Player Minecraft Behavior",
         "description": "Allows the player to trade with this mob. When the goal starts, it will stop the mob's navigation.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_trade_with_player"
+        "subFormId": "entity/minecraft_behavior_trade_with_player"
       },
       {
         "id": "minecraft:behavior.transport_items",
         "title": "Transport Items Minecraft Behavior",
         "description": "A behavior that enables a mob to transport items from and to containers.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_transport_items"
+        "subFormId": "entity/minecraft_behavior_transport_items"
       },
       {
         "id": "minecraft:behavior.use_kinetic_weapon",
         "title": "Use Kinetic Weapon Minecraft Behavior",
         "description": "Enables a mob to use kinetic weaponry by intermittently charging at its target and repositioning afterward.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_use_kinetic_weapon"
+        "subFormId": "entity/minecraft_behavior_use_kinetic_weapon"
       },
       {
         "id": "minecraft:behavior.vex_copy_owner_target",
@@ -3487,14 +3487,14 @@
         "title": "Work Minecraft Behavior",
         "description": "Allows the NPC to use the POI",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_work"
+        "subFormId": "entity/minecraft_behavior_work"
       },
       {
         "id": "minecraft:behavior.work_composter",
         "title": "Work Composter Minecraft Behavior",
         "description": "Allows the NPC to use the composter POI to convert excess seeds into bone meal.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_behavior_work_composter"
+        "subFormId": "entity/minecraft_behavior_work_composter"
       },
       {
         "id": "minecraft:block_climber",
@@ -3570,7 +3570,7 @@
         "id": "minecraft:burns_in_daylight",
         "title": "Minecraft Burns In Daylight",
         "dataType": "object",
-        "subFormId": "beta/minecraft_burns_in_daylight"
+        "subFormId": "entity/minecraft_burns_in_daylight"
       },
       {
         "id": "minecraft:can_climb",
@@ -3741,7 +3741,7 @@
         "id": "minecraft:experience_reward",
         "title": "Minecraft Experience Reward",
         "dataType": "object",
-        "subFormId": "beta/minecraft_experience_reward"
+        "subFormId": "entity/minecraft_experience_reward"
       },
       {
         "id": "minecraft:explode",
@@ -4279,7 +4279,7 @@
         "title": "Minecraft On Equipment Changed",
         "description": "Allows to specify events to execute when equipment is set in the entity's default equipment slots. Doesn't apply to \"minecraft:inventory\", use \"minecraft:equippable\" instead.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_on_equipment_changed"
+        "subFormId": "entity/minecraft_on_equipment_changed"
       },
       {
         "id": "minecraft:on_friendly_anger",
@@ -4535,7 +4535,7 @@
         "title": "Minecraft Spawn On Death",
         "description": "Component for spawning entities when an entity perishes.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_spawn_on_death"
+        "subFormId": "entity/minecraft_spawn_on_death"
       },
       {
         "id": "minecraft:spell_effects",
@@ -4584,7 +4584,7 @@
         "title": "Minecraft Tick World",
         "description": "Defines if the entity ticks the world and the radius around it to tick.",
         "dataType": "object",
-        "subFormId": "beta/minecraft_tick_world"
+        "subFormId": "entity/minecraft_tick_world"
       },
       {
         "id": "minecraft:timer",

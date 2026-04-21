@@ -44,3 +44,12 @@ The entity puts on the desired equipment.
   ]
 }
 ```
+
+#### [Sulfur Cube](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/sulfur_cube.json)
+
+
+```json
+"minecraft:equip_item": {
+  "can_wear_armor": false
+}
+```
