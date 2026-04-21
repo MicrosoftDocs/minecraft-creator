@@ -23,7 +23,7 @@
         "id": "atmosphere_identifier",
         "title": "Atmosphere Identifier",
         "description": "Identifier of atmosphere definition to use",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       }
     ]

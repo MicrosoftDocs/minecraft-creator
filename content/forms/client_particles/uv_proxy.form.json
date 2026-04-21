@@ -21,31 +21,31 @@
       {
         "id": "flipbook",
         "title": "Flipbook",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "client_particles/particle_appearance_billboard_flipbook_data"
       },
       {
         "id": "texture_height",
         "title": "Texture Height",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 1
       },
       {
         "id": "texture_width",
         "title": "Texture Width",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 1
       },
       {
         "id": "uv",
         "title": "Uv",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "minLength": 2,
         "maxLength": 2,
         "alternates": [
           {
             "id": "uv",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "uv",
@@ -54,13 +54,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -68,20 +68,20 @@
           },
           {
             "id": "uv",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       },
       {
         "id": "uv_size",
         "title": "Uv Size",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "minLength": 2,
         "maxLength": 2,
         "alternates": [
           {
             "id": "uv_size",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "uv_size",
@@ -90,13 +90,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -104,7 +104,7 @@
           },
           {
             "id": "uv_size",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       }

@@ -1,0 +1,251 @@
+{
+  "id": "minecraft:behavior.fire_at_target",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.fire_at_target",
+    "title": "Beta Fire At Target Behavior",
+    "description": "Allows an entity to attack by firing a shot with a delay. Anchor and offset parameters of this component overrides the anchor and offset from projectile component.",
+    "fields": [
+      {
+        "id": "attack_cooldown",
+        "title": "Attack Cooldown",
+        "description": "The cooldown time in seconds before this goal can be used again.",
+        "dataType": "float",
+        "defaultValue": 0.5
+      },
+      {
+        "id": "attack_range",
+        "title": "Attack Range",
+        "description": "Target needs to be within this range for the attack to happen.",
+        "dataType": "object",
+        "defaultValue": {
+          "max": 0,
+          "min": 0
+        },
+        "subFormId": "item_components/floatrange"
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "filters",
+        "description": "Conditions that need to be met for the behavior to start.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "filters",
+          "title": "Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "filters",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "max_head_rotation_x",
+        "title": "Max Head Rotation X",
+        "description": "Maximum head rotation (in degrees), on the X-axis, that this entity can apply while trying to look at the target.",
+        "dataType": "float",
+        "defaultValue": 30
+      },
+      {
+        "id": "max_head_rotation_y",
+        "title": "Max Head Rotation Y",
+        "description": "Maximum head rotation (in degrees), on the Y-axis, that this entity can apply while trying to look at the target.",
+        "dataType": "float",
+        "defaultValue": 30
+      },
+      {
+        "id": "owner_anchor",
+        "title": "Owner Anchor",
+        "description": "Entity anchor for the projectile spawn location.",
+        "dataType": "object",
+        "defaultValue": 2
+      },
+      {
+        "id": "owner_offset",
+        "title": "Owner Offset",
+        "description": "Offset vector from the owner_anchor.",
+        "dataType": "numberArray",
+        "defaultValue": [
+          0,
+          0,
+          0
+        ],
+        "alternates": [
+          {
+            "id": "owner_offset",
+            "dataType": "object",
+            "subForm": {
+              "id": "owner_offset",
+              "title": "Owner Offset",
+              "fields": [
+                {
+                  "id": "x",
+                  "title": "X",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "y",
+                  "title": "Y",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "z",
+                  "title": "Z",
+                  "dataType": "float",
+                  "defaultValue": 0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "post_shoot_delay",
+        "title": "Post Shoot Delay",
+        "description": "Time in seconds between firing the projectile and ending the goal.",
+        "dataType": "float",
+        "defaultValue": 0.20000000298023224
+      },
+      {
+        "id": "pre_shoot_delay",
+        "title": "Pre Shoot Delay",
+        "description": "Time in seconds before firing the projectile.",
+        "dataType": "float",
+        "defaultValue": 0.75
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "projectile_def",
+        "title": "Projectile Def",
+        "description": "Actor definition to use as projectile for the ranged attack. The actor must be a projectile. This field is required for the goal to be usable.",
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      {
+        "id": "ranged_fov",
+        "title": "Ranged Fov",
+        "description": "Field of view (in degrees) when using sensing to detect a target for attack.",
+        "dataType": "float",
+        "defaultValue": 90
+      },
+      {
+        "id": "target_anchor",
+        "title": "Target Anchor",
+        "description": "Entity anchor for projectile target.",
+        "dataType": "object",
+        "defaultValue": 2
+      },
+      {
+        "id": "target_offset",
+        "title": "Target Offset",
+        "description": "Offset vector from the target_anchor.",
+        "dataType": "numberArray",
+        "defaultValue": [
+          0,
+          0,
+          0
+        ],
+        "alternates": [
+          {
+            "id": "target_offset",
+            "dataType": "object",
+            "subForm": {
+              "id": "target_offset",
+              "title": "Target Offset",
+              "fields": [
+                {
+                  "id": "x",
+                  "title": "X",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "y",
+                  "title": "Y",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "z",
+                  "title": "Z",
+                  "dataType": "float",
+                  "defaultValue": 0
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -49,19 +49,19 @@
         "title": "Cooldown",
         "description": "An optional cool down in seconds to prevent spamming interactions.",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "items",
         "title": "Items",
         "description": "The list of items that can be given to the entity to place in their inventory.",
-        "dataType": 17
+        "dataType": "stringArray"
       },
       {
         "id": "on_give",
         "title": "Give",
         "description": "Event to fire when the correct item is given.",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       }
     ],
     "samples": {}

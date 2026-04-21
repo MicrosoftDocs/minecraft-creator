@@ -20,3 +20,12 @@ Sets an ordered list of custom component names which are bound in script to be e
 
 
 ## Samples
+
+#### Luckyblock
+
+
+```json
+"minecraft:custom_components": [
+  "mike_luck:luckyblock_actions"
+]
+```

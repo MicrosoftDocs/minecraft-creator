@@ -21,25 +21,25 @@
       {
         "id": "minecraft:breathability",
         "title": "Minecraft Breathability",
-        "dataType": 16,
+        "dataType": "object",
         "isDeprecated": true
       },
       {
         "id": "minecraft:chest_obstruction",
         "title": "Minecraft Chest Obstruction",
         "description": "This defines how a block reacts to a chest being opened underneath it.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "block_components/chest_obstruction"
       },
       {
         "id": "minecraft:collision_box",
         "title": "Minecraft Collision Box",
         "description": "Defines the area of the block that collides with entities. If set to true, default values are used. If set to false, the block's collision with entities is disabled. If this component is omitted, default values are used.",
-        "dataType": 1,
+        "dataType": "boolean",
         "alternates": [
           {
             "id": "minecraft:collision_box",
-            "dataType": 16,
+            "dataType": "object",
             "subForm": {
               "id": "minecraft:collision_box",
               "title": "Collision Box",
@@ -49,7 +49,7 @@
                   "id": "origin",
                   "title": "Origin",
                   "description": "Minimal position of the bounds of the collision box.",
-                  "dataType": 32,
+                  "dataType": "numberArray",
                   "defaultValue": [
                     -8,
                     0,
@@ -59,7 +59,7 @@
                   "alternates": [
                     {
                       "id": "origin",
-                      "dataType": 16,
+                      "dataType": "object",
                       "subForm": {
                         "id": "origin",
                         "title": "Origin",
@@ -67,19 +67,19 @@
                           {
                             "id": "x",
                             "title": "X",
-                            "dataType": 3,
+                            "dataType": "float",
                             "defaultValue": 0
                           },
                           {
                             "id": "y",
                             "title": "Y",
-                            "dataType": 3,
+                            "dataType": "float",
                             "defaultValue": 0
                           },
                           {
                             "id": "z",
                             "title": "Z",
-                            "dataType": 3,
+                            "dataType": "float",
                             "defaultValue": 0
                           }
                         ]
@@ -91,7 +91,7 @@
                   "id": "size",
                   "title": "Size",
                   "description": "Size of each side of the collision box.",
-                  "dataType": 32,
+                  "dataType": "numberArray",
                   "defaultValue": [
                     16,
                     16,
@@ -101,7 +101,7 @@
                   "alternates": [
                     {
                       "id": "size",
-                      "dataType": 16,
+                      "dataType": "object",
                       "subForm": {
                         "id": "size",
                         "title": "Size",
@@ -109,19 +109,19 @@
                           {
                             "id": "x",
                             "title": "X",
-                            "dataType": 3,
+                            "dataType": "float",
                             "defaultValue": 0
                           },
                           {
                             "id": "y",
                             "title": "Y",
-                            "dataType": 3,
+                            "dataType": "float",
                             "defaultValue": 0
                           },
                           {
                             "id": "z",
                             "title": "Z",
-                            "dataType": 3,
+                            "dataType": "float",
                             "defaultValue": 0
                           }
                         ]
@@ -134,9 +134,9 @@
           },
           {
             "id": "minecraft:collision_box",
-            "dataType": 16,
+            "dataType": "object",
             "maxLength": 16,
-            "technicalDescription": "\"origin\" + \"size\", must be inside the following limit: Vec3(-8,0,-8) and Vec3(8,24,8)"
+            "technicalDescription": "The total of each \"origin\" + \"size\" pair, must be inside the following limit: Vec3(-8,0,-8) and Vec3(8,24,8)"
           }
         ]
       },
@@ -144,25 +144,25 @@
         "id": "minecraft:connection_rule",
         "title": "Minecraft Connection Rule",
         "description": "Defines whether other blocks such as fences, walls, bars, and glass panes are allowed to connect to this block.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "block_components/connection_rule"
       },
       {
         "id": "minecraft:crafting_table",
         "title": "Minecraft Crafting Table",
         "description": "Makes your block into a custom crafting table which enables the crafting table UI and the ability to craft recipes.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "block_components/crafting_table"
       },
       {
         "id": "minecraft:destructible_by_explosion",
         "title": "Minecraft Destructible By Explosion",
         "description": "Describes the destructible by explosion properties for this block. If set to true, the block will have the default explosion resistance. If set to false, this block is indestructible by explosion. If the component is omitted, the block will have the default explosion resistance.",
-        "dataType": 1,
+        "dataType": "boolean",
         "alternates": [
           {
             "id": "minecraft:destructible_by_explosion",
-            "dataType": 16,
+            "dataType": "object",
             "subForm": {
               "id": "minecraft:destructible_by_explosion",
               "title": "Destructible By Explosion",
@@ -171,7 +171,7 @@
                   "id": "explosion_resistance",
                   "title": "Explosion Resistance",
                   "description": "Sets the explosion resistance for the block. Greater values result in greater resistance to explosions. The scale will be different for different explosion power levels. A negative value or 0 means it will easily explode; larger numbers increase level of resistance.",
-                  "dataType": 3,
+                  "dataType": "float",
                   "isRequired": true
                 }
               ]
@@ -183,11 +183,11 @@
         "id": "minecraft:destructible_by_mining",
         "title": "Minecraft Destructible By Mining",
         "description": "Describes the destructible by mining properties for this block. If set to true, the block will take the default number of seconds to destroy. If set to false, this block is indestructible by mining. If the component is omitted, the block will take the default number of seconds to mine.",
-        "dataType": 1,
+        "dataType": "boolean",
         "alternates": [
           {
             "id": "minecraft:destructible_by_mining",
-            "dataType": 16,
+            "dataType": "object",
             "subForm": {
               "id": "minecraft:destructible_by_mining",
               "title": "Destructible By Mining",
@@ -196,7 +196,7 @@
                   "id": "item_specific_speeds",
                   "title": "Item Specific Speeds",
                   "description": "Optional array with item specific mining speeds.",
-                  "dataType": 15,
+                  "dataType": "objectArray",
                   "defaultValue": [],
                   "subFormId": "block_components/item_specific_speed"
                 },
@@ -204,7 +204,7 @@
                   "id": "seconds_to_destroy",
                   "title": "Seconds To Destroy",
                   "description": "Sets the number of seconds it takes to mine the block with base equipment. Greater numbers result in greater mining times. A negative number means the block can't be mined",
-                  "dataType": 3,
+                  "dataType": "float",
                   "isRequired": true
                 }
               ]
@@ -216,38 +216,38 @@
         "id": "minecraft:destruction_particles",
         "title": "Minecraft Destruction Particles",
         "description": "Sets the particles that will be used when block is destroyed. This component can be omitted.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "block_components/destruction_particles"
       },
       {
         "id": "minecraft:display_name",
         "title": "Minecraft Display Name",
         "description": "Specifies the language file key that maps to what text will be displayed when you hover over the block in your inventory and hotbar. If the string given can not be resolved as a loc string, the raw string given will be displayed. If this component is omitted, the name of the block will be used as the display name.",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:embedded_visual",
         "title": "Minecraft Embedded Visual",
         "description": "This defines how a block embedded into an other block renders. Eg. a block in a flowerpot.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "block_components/embedded_visual"
       },
       {
         "id": "minecraft:entity_fall_on",
         "title": "Minecraft Entity Fall On",
         "description": "Configures the behavior of an entity falling on this block. The minimum distance in blocks that an actor needs to fall before events are triggered.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "block_components/entity_fall_on"
       },
       {
         "id": "minecraft:flammable",
         "title": "Minecraft Flammable",
         "description": "Describes the flammable properties for this block. If set to true, default values are used. If set to false, or if this component is omitted, the block will not be able to catch on fire naturally from neighbors, but it can still be directly ignited.",
-        "dataType": 1,
+        "dataType": "boolean",
         "alternates": [
           {
             "id": "minecraft:flammable",
-            "dataType": 16,
+            "dataType": "object",
             "subForm": {
               "id": "minecraft:flammable",
               "title": "Flammable",
@@ -257,14 +257,14 @@
                   "id": "catch_chance_modifier",
                   "title": "Catch Chance Modifier",
                   "description": "A modifier affecting the chance that this block will catch flame when next to a fire. Values are greater than or equal to 0, with a higher number meaning more likely to catch on fire. For a catch_chance_modifier greater than 0, the fire will continue to burn until the block is destroyed (or it will burn forever if the destroy_chance_modifier is 0). If the catch_chance_modifier is 0, and the block is directly ignited, the fire will eventually burn out without destroying the block (or it will have a chance to be destroyed if destroy_chance_modifier is greater than 0). The default value of 5 is the same as that of Planks.",
-                  "dataType": 0,
+                  "dataType": "int",
                   "defaultValue": 5
                 },
                 {
                   "id": "destroy_chance_modifier",
                   "title": "Destroy Chance Modifier",
                   "description": "A modifier affecting the chance that this block will be destroyed by flames when on fire. Values are greater than or equal to 0, with a higher number meaning more likely to be destroyed by fire. For a destroy_chance_modifier of 0, the block will never be destroyed by fire, and the fire will burn forever if the catch_chance_modifier is greater than 0. The default value of 20 is the same as that of Planks.",
-                  "dataType": 0,
+                  "dataType": "int",
                   "defaultValue": 20
                 }
               ]
@@ -276,23 +276,23 @@
         "id": "minecraft:flower_pottable",
         "title": "Minecraft Flower Pottable",
         "description": "This component allows the held item version of this block to be interacted with an empty flowerpot to place the block in it.",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:friction",
         "title": "Minecraft Friction",
         "description": "Describes the friction for this block in a range of (0.0-0.9). Friction affects an entity's movement speed when it travels on the block. Greater value results in more friction.",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:geometry",
         "title": "Minecraft Geometry",
         "description": "The component that describes the geometry to use to render this block. It can be specified as a JSON object with the following fields, or simply as a string containing the description identifier of the geometry to use to render this block. This identifier must either match an existing geometry identifier in any of the loaded resource packs or be one of the currently supported Vanilla identifiers: \"minecraft:geometry.full_block\" or \"minecraft:geometry.cross\".",
-        "dataType": 2,
+        "dataType": "string",
         "alternates": [
           {
             "id": "minecraft:geometry",
-            "dataType": 16,
+            "dataType": "object",
             "subForm": {
               "id": "minecraft:geometry",
               "title": "Geometry",
@@ -301,12 +301,12 @@
                   "id": "bone_visibility",
                   "title": "Bone Visibility",
                   "description": "A JSON object that contains a list of key/value pairs that map from bone name in the specified geometry file (key) to a Molang expression that tells whether the bone should be visible or not (value). The expression is limited to using the \"query.block_state()\" query. When using \"bone_visibility\" in geometry components in the \"permutations\" section, you must also have a default version of the geometry component with \"bone_visibility\" in the \"components\" section.",
-                  "dataType": 24,
+                  "dataType": "keyedStringCollection",
                   "defaultValue": {},
                   "alternates": [
                     {
                       "id": "bone_visibility",
-                      "dataType": 14,
+                      "dataType": "keyedObjectCollection",
                       "readOnly": true,
                       "subForm": {
                         "id": "bone_visibility",
@@ -315,13 +315,13 @@
                           {
                             "id": "expression",
                             "title": "Expression",
-                            "dataType": 2,
+                            "dataType": "string",
                             "isRequired": true
                           },
                           {
                             "id": "version",
                             "title": "Version",
-                            "dataType": 0,
+                            "dataType": "int",
                             "isRequired": true
                           }
                         ]
@@ -329,7 +329,7 @@
                     },
                     {
                       "id": "bone_visibility",
-                      "dataType": 3
+                      "dataType": "float"
                     }
                   ]
                 },
@@ -337,14 +337,14 @@
                   "id": "culling",
                   "title": "Culling",
                   "description": "Which block_culling .json file to use when rendering this block.",
-                  "dataType": 2,
+                  "dataType": "string",
                   "defaultValue": ""
                 },
                 {
                   "id": "culling_layer",
                   "title": "Culling Layer",
                   "description": "A string that allows culling rule to group multiple blocks together when comparing them. When using the minecraft namespace, the only allowed culling layer identifiers are : \"minecraft:culling_layer.undefined\" or \"minecraft:culling_layer.leaves\". When using no namespaces or a custom one, the names must start and end with an alpha-numeric character.",
-                  "dataType": 2,
+                  "dataType": "string",
                   "validity": [
                     {
                       "comparison": "pattern",
@@ -356,7 +356,7 @@
                   "id": "culling_shape",
                   "title": "Culling Shape",
                   "description": "Currently only available with the VoxelShape experiment on. The voxel shape used for culling adjacent block faces. Voxel shapes work together with culling rules and will not function if there is no culling rule defined for the block. Only adjacent blocks with voxel shapes will occlude using this shape. Blocks using \\\"minecraft:geometry.full_block\\\" always use the unit cube shape and will ignore custom shapes if specified. When using the minecraft namespace, the only currently available culling shape identifiers are : \\\"minecraft:empty\\\" or \\\"minecraft:unit_cube\\\". When using no namespaces or a custom one, the names must start and end with an alpha-numeric character.",
-                  "dataType": 2,
+                  "dataType": "string",
                   "defaultValue": "",
                   "validity": [
                     {
@@ -369,14 +369,14 @@
                   "id": "identifier",
                   "title": "Identifier",
                   "description": "The description identifier of the geometry to use to render this block. This identifier must either match an existing geometry identifier in any of the loaded resource packs or be one of the currently supported Vanilla identifiers: \"minecraft:geometry.full_block\" or \"minecraft:geometry.cross\".",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "uv_lock",
                   "title": "Uv Lock",
                   "description": "A field that is either a Boolean or an array of strings, max size 64 strings. This field locks UV orientation for all/some bones in the geometry, regardless of how the block is rotated using \"minecraft:transformation\" component. For performance reasons it's recommended to use the Boolean.",
-                  "dataType": 16,
+                  "dataType": "object",
                   "defaultValue": false
                 }
               ]
@@ -388,56 +388,56 @@
         "id": "minecraft:item_visual",
         "title": "Minecraft Item Visual",
         "description": "The \"minecraft:geometry\" component and \"minecraft:material_instances\" component of an item. Can be used instead of having separated component for each.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "block_components/item_visual"
       },
       {
         "id": "minecraft:leashable",
         "title": "Minecraft Leashable",
         "description": "Allows a block to have a lead tied to it.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "block_components/leashable"
       },
       {
         "id": "minecraft:light_dampening",
         "title": "Minecraft Light Dampening",
         "description": "The amount that light will be dampened when it passes through the block. Higher value means the light will be dampened more.",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:light_emission",
         "title": "Minecraft Light Emission",
         "description": "The amount of light this block will emit. Higher value means more light will be emitted.",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:liquid_detection",
         "title": "Minecraft Liquid Detection",
         "description": "The definitions for how a block behaves when detecting liquid. Only one rule definition is allowed per liquid type - if multiple are specified, the first will be used and the rest will be ignored.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "block_components/liquid_detection"
       },
       {
         "id": "minecraft:loot",
         "title": "Minecraft Loot",
         "description": "The path to the loot table, relative to the behavior pack. Path string is limited to 256 characters.",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:map_color",
         "title": "Minecraft Map Color",
         "description": "Sets the color of the block when rendered to a map.Can be a direct color representation or an object with a \"color\" and \"tint_method\" field.",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "alternates": [
           {
             "id": "minecraft:map_color",
-            "dataType": 38,
+            "dataType": "keyedNumberArrayCollection",
             "minLength": 3,
             "maxLength": 3
           },
           {
             "id": "minecraft:map_color",
-            "dataType": 16,
+            "dataType": "object",
             "subForm": {
               "id": "minecraft:map_color",
               "title": "Map Color",
@@ -447,14 +447,14 @@
                   "id": "color",
                   "title": "Color",
                   "description": "Sets the color of the block when rendered to a map.",
-                  "dataType": 16,
+                  "dataType": "object",
                   "isRequired": true
                 },
                 {
                   "id": "tint_method",
                   "title": "Tint Method",
                   "description": "Sets the tint method of the block when rendered to a map. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint. Supported tint methods are \"none\", \"default_foliage\", \"birch_foliage\", \"evergreen_foliage\", \"dry_foliage\", \"grass\" and \"water\"",
-                  "dataType": 2,
+                  "dataType": "string",
                   "choices": [
                     {
                       "id": "birch_foliage",
@@ -496,125 +496,125 @@
         "id": "minecraft:material_instances",
         "title": "Minecraft Material Instances",
         "description": "The material instances for a block.\nMaps face or material_instance names in a geometry file to an actual material instance. Material instance can either be a full material instance or a name to another already defined instance.\nLimited to 64 instances.",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:movable",
         "title": "Minecraft Movable",
         "description": "This defines how a block reacts to being moved by another block like a piston.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "block_components/movable"
       },
       {
         "id": "minecraft:on_fall_on",
         "title": "Minecraft On Fall On",
-        "dataType": 16,
+        "dataType": "object",
         "isDeprecated": true
       },
       {
         "id": "minecraft:on_interact",
         "title": "Minecraft On Interact",
-        "dataType": 16,
+        "dataType": "object",
         "isDeprecated": true
       },
       {
         "id": "minecraft:on_placed",
         "title": "Minecraft On Placed",
-        "dataType": 16,
+        "dataType": "object",
         "isDeprecated": true
       },
       {
         "id": "minecraft:on_player_destroyed",
         "title": "Minecraft On Player Destroyed",
-        "dataType": 16,
+        "dataType": "object",
         "isDeprecated": true
       },
       {
         "id": "minecraft:on_player_placing",
         "title": "Minecraft On Player Placing",
-        "dataType": 16,
+        "dataType": "object",
         "isDeprecated": true
       },
       {
         "id": "minecraft:on_step_off",
         "title": "Minecraft On Step Off",
-        "dataType": 16,
+        "dataType": "object",
         "isDeprecated": true
       },
       {
         "id": "minecraft:on_step_on",
         "title": "Minecraft On Step On",
-        "dataType": 16,
+        "dataType": "object",
         "isDeprecated": true
       },
       {
         "id": "minecraft:placement_filter",
         "title": "Minecraft Placement Filter",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "block_components/placement_filter"
       },
       {
         "id": "minecraft:precipitation_interactions",
         "title": "Minecraft Precipitation Interactions",
         "description": "Determines interactions the block will have with different precipitations. Three possible values: obrain, obstruct_rain_accumulate_snow and none",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "block_components/precipitation_interactions"
       },
       {
         "id": "minecraft:queued_ticking",
         "title": "Minecraft Queued Ticking",
-        "dataType": 16,
+        "dataType": "object",
         "isDeprecated": true
       },
       {
         "id": "minecraft:random_offset",
         "title": "Minecraft Random Offset",
         "description": "This component defines a random offset for the block, seeded based on the block's position and the specified range and steps. It affects the block's rendered position, outline, and collision.\nIf the random offset causes the collision box to extend beyond the bounds of a cube, the offset range will automatically adjust to keep the collision box within the cube.\nCulling for this block is performed without considering the random offset.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "block_components/random_offset"
       },
       {
         "id": "minecraft:random_ticking",
         "title": "Minecraft Random Ticking",
-        "dataType": 16,
+        "dataType": "object",
         "isDeprecated": true
       },
       {
         "id": "minecraft:redstone_conductivity",
         "title": "Minecraft Redstone Conductivity",
         "description": "The basic redstone properties of a block. If the component is not provided the default values are used.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "block_components/redstone_conductivity"
       },
       {
         "id": "minecraft:redstone_consumer",
         "title": "Minecraft Redstone Consumer",
         "description": "A component describing how a block can consume and potentially propagate a redstone signal. This component is not available for block permutations.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "block_components/redstone_consumer"
       },
       {
         "id": "minecraft:redstone_producer",
         "title": "Minecraft Redstone Producer",
         "description": "The definitions for how a block can produce a redstone signal.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "block_components/redstone_producer"
       },
       {
         "id": "minecraft:replaceable",
         "title": "Minecraft Replaceable",
         "description": "A block with this component can be replaced when another block is placed in the same block position.",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:selection_box",
         "title": "Minecraft Selection Box",
         "description": "Defines the area of the block that is selected by the player's cursor. If set to true, default values are used. If set to false, this block is not selectable by the player's cursor. If this component is omitted, default values are used.",
-        "dataType": 1,
+        "dataType": "boolean",
         "alternates": [
           {
             "id": "minecraft:selection_box",
-            "dataType": 16,
+            "dataType": "object",
             "subForm": {
               "id": "minecraft:selection_box",
               "title": "Selection Box",
@@ -624,7 +624,7 @@
                   "id": "origin",
                   "title": "Origin",
                   "description": "Minimal position of the bounds of the collision box.",
-                  "dataType": 32,
+                  "dataType": "numberArray",
                   "defaultValue": [
                     -8,
                     0,
@@ -634,7 +634,7 @@
                   "alternates": [
                     {
                       "id": "origin",
-                      "dataType": 16,
+                      "dataType": "object",
                       "subForm": {
                         "id": "origin",
                         "title": "Origin",
@@ -642,19 +642,19 @@
                           {
                             "id": "x",
                             "title": "X",
-                            "dataType": 3,
+                            "dataType": "float",
                             "defaultValue": 0
                           },
                           {
                             "id": "y",
                             "title": "Y",
-                            "dataType": 3,
+                            "dataType": "float",
                             "defaultValue": 0
                           },
                           {
                             "id": "z",
                             "title": "Z",
-                            "dataType": 3,
+                            "dataType": "float",
                             "defaultValue": 0
                           }
                         ]
@@ -666,7 +666,7 @@
                   "id": "size",
                   "title": "Size",
                   "description": "Size of each side of the collision box.",
-                  "dataType": 32,
+                  "dataType": "numberArray",
                   "defaultValue": [
                     16,
                     16,
@@ -676,7 +676,7 @@
                   "alternates": [
                     {
                       "id": "size",
-                      "dataType": 16,
+                      "dataType": "object",
                       "subForm": {
                         "id": "size",
                         "title": "Size",
@@ -684,19 +684,19 @@
                           {
                             "id": "x",
                             "title": "X",
-                            "dataType": 3,
+                            "dataType": "float",
                             "defaultValue": 0
                           },
                           {
                             "id": "y",
                             "title": "Y",
-                            "dataType": 3,
+                            "dataType": "float",
                             "defaultValue": 0
                           },
                           {
                             "id": "z",
                             "title": "Z",
-                            "dataType": 3,
+                            "dataType": "float",
                             "defaultValue": 0
                           }
                         ]
@@ -713,31 +713,31 @@
         "id": "minecraft:support",
         "title": "Minecraft Support",
         "description": "Defines the support shape of the block. Currently only allows for blocks to have the same shape as a Vanilla fence and Vanilla stair. To work with custom stairs, requires the use of \"minecraft:vertical_half\" and \"minecraft:cardinal_direction\" or \"minecraft:facing_direction\" which can be set through the \"minecraft:placement_direction\" block trait. Custom blocks without this component will default to unit cube support. The type of support shape for this block. Currently, the options are: \"fence\" and \"stair\".",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "block_components/support"
       },
       {
         "id": "minecraft:tags",
         "title": "Minecraft Tags",
         "description": "Use this component to define tags, vanilla or custom. Valid tags are of the format \"namespace:tag_name\". The array of tags must be non-empty.",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:tick",
         "title": "Minecraft Tick",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "block_components/tick"
       },
       {
         "id": "minecraft:transformation",
         "title": "Minecraft Transformation",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "block_components/transformation"
       },
       {
         "id": "minecraft:unit_cube",
         "title": "Minecraft Unit Cube",
-        "dataType": 16,
+        "dataType": "object",
         "isDeprecated": true
       }
     ]

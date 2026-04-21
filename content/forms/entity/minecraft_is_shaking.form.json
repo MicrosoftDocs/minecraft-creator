@@ -19,12 +19,6 @@
     "description": "Sets that this entity is currently shaking.",
     "fields": [],
     "samples": {
-      "/vanilla/behavior_pack/entities/hoglin.json": [
-        {
-          "path": "/minecraft:entity/component_groups/start_zombification/minecraft:is_shaking/",
-          "content": {}
-        }
-      ],
       "/vanilla/behavior_pack/entities/skeleton.json": [
         {
           "path": "/minecraft:entity/component_groups/in_powder_snow/minecraft:is_shaking/",

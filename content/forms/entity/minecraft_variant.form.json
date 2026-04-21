@@ -74,14 +74,8 @@
         "title": "Value",
         "description": "The ID of the variant. By convention, 0 is the ID of the base entity.",
         "defaultValue": 0,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_arctic/minecraft:variant/",
-              "content": 1
-            }
-          ],
           "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/component_groups/cold_frog/minecraft:variant/",
@@ -90,6 +84,12 @@
             {
               "path": "/minecraft:entity/component_groups/warm_frog/minecraft:variant/",
               "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/goat_screamer/minecraft:variant/",
+              "content": 1
             }
           ],
           "/vanilla/behavior_pack/entities/llama.json": [
@@ -107,25 +107,21 @@
               "path": "/minecraft:entity/component_groups/minecraft:slime_large/minecraft:variant/",
               "content": 4
             }
+          ],
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_cyan/minecraft:variant/",
+              "content": 3
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_silver/minecraft:variant/",
+              "content": 4
+            }
           ]
         }
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/fox.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:fox_red/minecraft:variant/",
-          "content": {
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:fox_arctic/minecraft:variant/",
-          "content": {
-            "value": 1
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/frog.json": [
         {
           "path": "/minecraft:entity/component_groups/cold_frog/minecraft:variant/",
@@ -203,6 +199,38 @@
           "path": "/minecraft:entity/component_groups/minecraft:slime_small/minecraft:variant/",
           "content": {
             "value": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parrot.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:parrot_blue/minecraft:variant/",
+          "content": {
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:parrot_cyan/minecraft:variant/",
+          "content": {
+            "value": 3
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:parrot_green/minecraft:variant/",
+          "content": {
+            "value": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:parrot_red/minecraft:variant/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:parrot_silver/minecraft:variant/",
+          "content": {
+            "value": 4
           }
         }
       ]

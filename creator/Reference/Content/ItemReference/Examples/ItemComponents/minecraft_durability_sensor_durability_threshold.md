@@ -103,6 +103,7 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | spit | Spit | |
 | stalactitedriplava | Stalactitedriplava | |
 | stalactitedripwater | Stalactitedripwater | |
+| sulfurcube | Sulfurcube | |
 | terrain | Terrain | |
 | totem | Totem | |
 | townaura | Townaura | |
@@ -123,6 +124,7 @@ Defines both the durability threshold, and the effects emitted when that thresho
 
 |Value       |Title |Description |
 |:-----------|:-----|:-----------|
+| absorb_block | Absorb block | |
 | activate | Activate | |
 | add.chest | Add.chest | |
 | admire | Admire | |
@@ -243,6 +245,7 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | bottle.dragonbreath | Bottle.dragonbreath | |
 | bottle.empty | Bottle.empty | |
 | bottle.fill | Bottle.fill | |
+| bounce | Bounce | |
 | bow | Bow | |
 | bow.hit | Bow.hit | |
 | break | Break | |
@@ -334,6 +337,7 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | drip.water.pointed_dripstone | Drip.water.pointed dripstone | |
 | drop.slot | Drop.slot | |
 | eat | Eat | |
+| eject_block | Eject block | |
 | elderguardian.curse | Elderguardian.curse | |
 | elemconstruct.open | Elemconstruct.open | |
 | enderchest.closed | Enderchest.closed | |
@@ -565,6 +569,7 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | pumpkin.carve | Pumpkin.carve | |
 | purr | Purr | |
 | purreow | Purreow | |
+| pushed_by_player | Pushed by player | |
 | raid.horn | Raid.horn | |
 | ram_impact | Ram impact | |
 | ram_impact.screamer | Ram impact.screamer | |
@@ -615,6 +620,7 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | shulkerbox.open | Shulkerbox.open | |
 | single_swap | Single swap | |
 | sleep | Sleep | |
+| slime_landing | Slime landing | |
 | smithing_table.use | Smithing table.use | |
 | sneeze | Sneeze | |
 | sonic_boom | Sonic boom | |

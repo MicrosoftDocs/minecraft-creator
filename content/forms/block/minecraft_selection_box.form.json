@@ -52,6 +52,14 @@
     ],
     "dataType": "boolean"
   },
+  "samples": {
+    "Block Fabricator": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json",
+        "content": true
+      }
+    ]
+  },
   "generated_doNotEdit": {
     "id": "minecraft:selection_box",
     "title": "Selection Box",
@@ -66,7 +74,7 @@
           0,
           -8
         ],
-        "dataType": 11
+        "dataType": "point3"
       },
       {
         "id": "size",
@@ -77,13 +85,13 @@
           16,
           16
         ],
-        "dataType": 11
+        "dataType": "point3"
       }
     ],
     "scalarField": {
       "id": "boolean",
       "title": "Boolean",
-      "dataType": 1
+      "dataType": "boolean"
     },
     "samples": {}
   }

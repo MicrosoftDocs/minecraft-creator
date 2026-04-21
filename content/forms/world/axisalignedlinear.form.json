@@ -23,7 +23,7 @@
       {
         "id": "axis",
         "title": "PositionalBlockRuleAxis",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "x",
@@ -43,7 +43,7 @@
       {
         "id": "max_chance",
         "title": "Max Chance",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0,
         "validity": [
           {
@@ -55,13 +55,13 @@
       {
         "id": "max_dist",
         "title": "Max Dist",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "min_chance",
         "title": "Min Chance",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0,
         "validity": [
           {
@@ -73,13 +73,13 @@
       {
         "id": "min_dist",
         "title": "Min Dist",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "predicate_type",
         "title": "PosType",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "minecraft:always_true",

@@ -1,0 +1,79 @@
+{
+  "id": "minecraft:behavior.hold_ground",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.hold_ground",
+    "title": "Beta Hold Ground Behavior",
+    "description": "The mob freezes and looks at the mob they are targeting.",
+    "fields": [
+      {
+        "id": "broadcast",
+        "title": "Broadcast",
+        "description": "Whether to broadcast out the mob's target to other mobs of the same type.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "broadcast_range",
+        "title": "Broadcast Range",
+        "description": "Range in blocks for how far to broadcast.",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "min_radius",
+        "title": "Min Radius",
+        "description": "Minimum distance the target must be for the mob to run this goal.",
+        "dataType": "float",
+        "defaultValue": 10
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "within_radius_event",
+        "title": "Within Radius Event",
+        "description": "Event to run when target is within the radius. This event is broadcasted if broadcast is true.",
+        "dataType": "object",
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "beta/actordefinitiontrigger"
+      }
+    ]
+  }
+}

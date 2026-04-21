@@ -13,17 +13,39 @@ ms.date: 02/11/2025
 Allows the mob to hover around randomly, close to the surface.
 
 
-## Random Hover Behavior Properties
+## Entity Random Hover Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| hover_height | *not set* | Range of integers | The height above the surface which the mob will try to maintain | Allay: `[1,4]` | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
+| hover_height | {"max":0,"min":0} | [Hover Height](#item-components-intrange) item | The height above the surface which the mob will try to maintain | Allay: `[1,4]` | 
 | interval | 120 | Integer number | A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal | Allay: `1` | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `9` | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `9` | 
 | speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal |  | 
 | xz_dist | 10 | Integer number | Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1 | Allay: `8` | 
 | y_dist | 7 | Integer number | Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1 | Allay: `8` | 
 | y_offset | 0 | Decimal number | Height in blocks to add to the selected target position | Allay: `-1` | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
+
+### Item Components IntRange
+Has minimum and maximum integer values.
+
+
+#### Item Components IntRange Properties
+
+**JSON path:** `hover_height`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | 0 | Integer number |  | 
+| min | 0 | Integer number |  | 
 
 ## Samples
 

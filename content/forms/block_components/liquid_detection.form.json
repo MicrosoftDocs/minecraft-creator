@@ -1,6 +1,34 @@
 {
   "id": "Liquid Detection",
   "fields": [],
+  "samples": {
+    "Block Fabricator": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json",
+        "content": {
+          "detection_rules": [
+            {
+              "liquid_type": "water",
+              "on_liquid_touches": "broken"
+            }
+          ]
+        }
+      }
+    ],
+    "Block Leaf Pile": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json",
+        "content": {
+          "detection_rules": [
+            {
+              "liquid_type": "water",
+              "on_liquid_touches": "popped"
+            }
+          ]
+        }
+      }
+    ]
+  },
   "generatedFromSchema_doNotEdit": {
     "id": "Liquid Detection",
     "title": "Block Components Liquid Detection",
@@ -9,7 +37,7 @@
       {
         "id": "detection_rules",
         "title": "Detection Rules",
-        "dataType": 15,
+        "dataType": "objectArray",
         "minLength": 1,
         "maxLength": 1,
         "subFormId": "block_components/detection_rule",

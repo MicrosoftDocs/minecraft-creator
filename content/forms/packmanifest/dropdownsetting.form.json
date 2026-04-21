@@ -21,13 +21,13 @@
       {
         "id": "default",
         "title": "Default",
-        "dataType": 2,
+        "dataType": "string",
         "isRequired": true
       },
       {
         "id": "name",
         "title": "Name",
-        "dataType": 2,
+        "dataType": "string",
         "validity": [
           {
             "comparison": "pattern",
@@ -39,7 +39,7 @@
       {
         "id": "options",
         "title": "Options",
-        "dataType": 15,
+        "dataType": "objectArray",
         "minLength": 2,
         "maxLength": 20,
         "subFormId": "packmanifest/dropdownoption",
@@ -48,13 +48,13 @@
       {
         "id": "text",
         "title": "Text",
-        "dataType": 2,
+        "dataType": "string",
         "isRequired": true
       },
       {
         "id": "type",
         "title": "SettingType",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "dropdown",

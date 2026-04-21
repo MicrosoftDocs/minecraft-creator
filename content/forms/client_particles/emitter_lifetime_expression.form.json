@@ -35,12 +35,12 @@
       {
         "id": "activation_expression",
         "title": "Activation Expression",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": 1,
         "alternates": [
           {
             "id": "activation_expression",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "activation_expression",
@@ -49,13 +49,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -63,19 +63,19 @@
           },
           {
             "id": "activation_expression",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       },
       {
         "id": "expiration_expression",
         "title": "Expiration Expression",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": 0,
         "alternates": [
           {
             "id": "expiration_expression",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "expiration_expression",
@@ -84,13 +84,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -98,7 +98,7 @@
           },
           {
             "id": "expiration_expression",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       }

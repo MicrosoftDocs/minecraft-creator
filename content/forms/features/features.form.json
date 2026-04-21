@@ -1947,27 +1947,27 @@
     "id": "features",
     "fields": [
       {
-        "dataType": 25,
+        "dataType": "version",
         "id": "format_version",
         "title": "Format Version",
         "isRequired": true
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:aggregate_feature",
         "title": "Aggregate Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -1977,7 +1977,7 @@
               }
             },
             {
-              "dataType": 17,
+              "dataType": "stringArray",
               "id": "features",
               "title": "Features",
               "description": "Collection of features to be placed one by one. No guarantee of order. All features use the same input position.",
@@ -1987,21 +1987,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:sequence_feature",
         "title": "Sequence Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -2011,7 +2011,7 @@
               }
             },
             {
-              "dataType": 17,
+              "dataType": "stringArray",
               "id": "features",
               "title": "Features",
               "description": "List of features to be placed in sequence. The output position of the previous feature is used as the input position to the next.",
@@ -2021,21 +2021,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:beards_and_shavers",
         "title": "Beards And Shavers",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -2045,14 +2045,14 @@
               }
             },
             {
-              "dataType": 17,
+              "dataType": "stringArray",
               "id": "bounding_box_min",
               "title": "Bounding Box Min",
               "description": "Dimensions of the Bounding Box",
               "isRequired": true
             },
             {
-              "dataType": 17,
+              "dataType": "stringArray",
               "id": "bounding_box_max",
               "title": "Bounding Box Max",
               "description": "Dimensions of the Bounding Box",
@@ -2062,21 +2062,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:cave_carver_feature",
         "title": "Cave Carver Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -2086,21 +2086,21 @@
               }
             },
             {
-              "dataType": 34,
+              "dataType": "molang",
               "id": "width_modifier",
               "title": "Width Modifier",
               "description": "How many blocks to increase the cave radius by, from the center point of the cave.",
               "isRequired": false
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "skip_carve_chance",
               "title": "Skip Carve Chance",
               "description": "The chance to skip doing the carve (1 / value).",
               "isRequired": false
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "height_limit",
               "title": "Height Limit",
               "description": "The height limit where we attempt to carve.",
@@ -2110,21 +2110,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:conditional_list",
         "title": "Conditional List",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -2135,11 +2135,11 @@
             },
             {
               "id": "conditional_features",
-              "dataType": 15,
+              "dataType": "objectArray",
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 34,
+                    "dataType": "molang",
                     "id": "condition",
                     "title": "Condition",
                     "description": "Condition for placing associated Feature",
@@ -2149,7 +2149,7 @@
               },
               "alternates": [
                 {
-                  "dataType": 17,
+                  "dataType": "stringArray",
                   "id": "conditional_features",
                   "title": "Conditional Features",
                   "description": "Array of Features, and their associated Conditions, for attempted placement. These features will be evaluated as ordered.",
@@ -2158,7 +2158,7 @@
               ]
             },
             {
-              "dataType": 2,
+              "dataType": "string",
               "id": "early_out_scheme\"<\"condition_success\", \"placement_success\"",
               "title": "Early Out Scheme\"<\"condition Success\", \"placement Success\"",
               "description": "Denote whether placement should end on first successful placement or first passed condition.",
@@ -2168,21 +2168,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:fossil_feature",
         "title": "Fossil Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -2192,7 +2192,7 @@
               }
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "max_empty_corners",
               "title": "Max Empty Corners",
               "isRequired": true
@@ -2201,21 +2201,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:geode_feature",
         "title": "Geode Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -2225,76 +2225,76 @@
               }
             },
             {
-              "dataType": 17,
+              "dataType": "stringArray",
               "id": "inner_placements",
               "title": "Inner Placements",
               "isRequired": false
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "min_outer_wall_distance",
               "title": "Min Outer Wall Distance",
               "description": "The minimum distance each distribution point must be from the outer wall. [0,10]",
               "isRequired": true
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "max_outer_wall_distance",
               "title": "Max Outer Wall Distance",
               "description": "The maximum distance each distribution point can be from the outer wall. [0,20]",
               "isRequired": true
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "min_distribution_points",
               "title": "Min Distribution Points",
               "description": "The minimum number of points inside the distance field that can get generated. The distance field is the area consisting of all points with a minimum distance to all destribution points. [0,10]",
               "isRequired": true
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "max_distribution_points",
               "title": "Max Distribution Points",
               "description": "The maximum number of points inside the distance field that can get generated. The distance field is the area consisting of all points with a minimum distance to all destribution points. [0,20]",
               "isRequired": true
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "min_point_offset",
               "title": "Min Point Offset",
               "description": "The lowest possible value of random offset applied to the position of each distribution point. [0,10]",
               "isRequired": true
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "max_point_offset",
               "title": "Max Point Offset",
               "description": "The highest possible value of random offset applied to the position of each distribution point. [0,10]",
               "isRequired": true
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "max_radius",
               "title": "Max Radius",
               "description": "The maximum possible radius of the geode generated.",
               "isRequired": true
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "crack_point_offset",
               "title": "Crack Point Offset",
               "description": "An offset applied to each distribution point that forms the geode crack opening. [0,10]",
               "isRequired": true
             },
             {
-              "dataType": 1,
+              "dataType": "boolean",
               "id": "placements_require_layer0_alternate",
               "title": "Placements Require Layer0 Alternate",
               "description": "If true, the potential placement block will only be placed on the alternate layer0 blocks that get placed. Potential placement blocks are blocks that depend on the existance of another block to be placed. The latter are the layer0 alternate blocks.",
               "isRequired": true
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "invalid_blocks_threshold",
               "title": "Invalid Blocks Threshold",
               "description": "The threshold of invalid blocks for a geode to have a distribution point in before it aborts generation entirely.",
@@ -2304,21 +2304,21 @@
         }
       },
       {
-        "dataType": 14,
+        "dataType": "keyedObjectCollection",
         "id": "minecraft:growing_plant_feature",
         "title": "Growing Plant Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -2328,32 +2328,32 @@
               }
             },
             {
-              "dataType": 17,
+              "dataType": "stringArray",
               "id": "height_distribution",
               "title": "Height Distribution",
               "isRequired": true
             },
             {
-              "dataType": 2,
+              "dataType": "string",
               "id": "growth_direction",
               "title": "Growth Direction",
               "description": "Direction that the plant grows towards. Valid values: UP and DOWN",
               "isRequired": true
             },
             {
-              "dataType": 17,
+              "dataType": "stringArray",
               "id": "body_blocks",
               "title": "Body Blocks",
               "isRequired": true
             },
             {
-              "dataType": 17,
+              "dataType": "stringArray",
               "id": "head_blocks",
               "title": "Head Blocks",
               "isRequired": true
             },
             {
-              "dataType": 1,
+              "dataType": "boolean",
               "id": "allow_water",
               "title": "Allow Water",
               "description": "Plant blocks can be placed in water.",
@@ -2364,21 +2364,21 @@
         "keyDescription": "<any array element>"
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:nether_cave_carver_feature",
         "title": "Nether Cave Carver Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -2388,21 +2388,21 @@
               }
             },
             {
-              "dataType": 34,
+              "dataType": "molang",
               "id": "width_modifier",
               "title": "Width Modifier",
               "description": "How many blocks to increase the cave radius by, from the center point of the cave.",
               "isRequired": false
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "skip_carve_chance",
               "title": "Skip Carve Chance",
               "description": "The chance to skip doing the carve (1 / value).",
               "isRequired": false
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "height_limit",
               "title": "Height Limit",
               "description": "The height limit where we attempt to carve.",
@@ -2412,21 +2412,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:multiface_feature",
         "title": "Multiface Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -2436,35 +2436,35 @@
               }
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "search_range",
               "title": "Search Range",
               "description": "How far, in blocks, this feature can search for a valid position to place.",
               "isRequired": true
             },
             {
-              "dataType": 1,
+              "dataType": "boolean",
               "id": "can_place_on_floor",
               "title": "Can Place On Floor",
               "description": "Can this feature be placed on the ground (top face of a block)?",
               "isRequired": true
             },
             {
-              "dataType": 1,
+              "dataType": "boolean",
               "id": "can_place_on_ceiling",
               "title": "Can Place On Ceiling",
               "description": "Can this feature be placed on the ceiling (bottom face of a block)?",
               "isRequired": true
             },
             {
-              "dataType": 1,
+              "dataType": "boolean",
               "id": "can_place_on_wall",
               "title": "Can Place On Wall",
               "description": "Can this feature be placed on the wall (side faces of a block)?",
               "isRequired": true
             },
             {
-              "dataType": 17,
+              "dataType": "stringArray",
               "id": "can_place_on",
               "title": "Can Place On",
               "isRequired": false
@@ -2473,21 +2473,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:ore_feature",
         "title": "Ore Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -2497,7 +2497,7 @@
               }
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "count",
               "title": "Count",
               "description": "The number of blocks to be placed.",
@@ -2505,11 +2505,11 @@
             },
             {
               "id": "replace_rules",
-              "dataType": 15,
+              "dataType": "objectArray",
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "may_replace",
                     "title": "May Replace",
                     "isRequired": false
@@ -2518,7 +2518,7 @@
               },
               "alternates": [
                 {
-                  "dataType": 17,
+                  "dataType": "stringArray",
                   "id": "replace_rules",
                   "title": "Replace Rules",
                   "isRequired": false
@@ -2529,21 +2529,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:partially_exposed_blob_feature",
         "title": "Partially Exposed Blob Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -2553,14 +2553,14 @@
               }
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "placement_radius_around_floor",
               "title": "Placement Radius Around Floor",
               "description": "Defines the cubic radius of the blob. [1, 8]",
               "isRequired": true
             },
             {
-              "dataType": 2,
+              "dataType": "string",
               "id": "exposed_face",
               "title": "Exposed Face",
               "description": "Defines a block face that is allowed to be exposed to air and/or water. Other faces need to be embedded for blocks to be placed by this feature. Defaults to upwards face.",
@@ -2570,21 +2570,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:rect_layout",
         "title": "Rect Layout",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -2595,24 +2595,24 @@
             },
             {
               "id": "feature_areas",
-              "dataType": 15,
+              "dataType": "objectArray",
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "area_dimensions",
                     "title": "Area Dimensions",
                     "description": "Dimensions (size) of the associated Feature.",
                     "isRequired": true
                   },
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "[0..0]",
                     "title": "",
                     "isRequired": true
                   },
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "[1..1]",
                     "title": "",
                     "isRequired": true
@@ -2621,7 +2621,7 @@
               },
               "alternates": [
                 {
-                  "dataType": 17,
+                  "dataType": "stringArray",
                   "id": "feature_areas",
                   "title": "Feature Areas",
                   "isRequired": true
@@ -2632,21 +2632,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:scan_surface",
         "title": "Scan Surface",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -2659,21 +2659,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:scatter_feature",
         "title": "Scatter Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -2683,14 +2683,14 @@
               }
             },
             {
-              "dataType": 1,
+              "dataType": "boolean",
               "id": "project_input_to_floor",
               "title": "Project Input To Floor",
               "description": "If true, snaps the y-value of the scattered position to the terrain heightmap. If false or unset, y-value is unmodified.",
               "isRequired": false
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "distribution",
               "title": "Distribution",
               "description": "Parameters controlling the scatter of the feature. Object of type ScatterParams",
@@ -2700,21 +2700,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:sculk_patch_feature",
         "title": "Sculk Patch Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -2724,37 +2724,37 @@
               }
             },
             {
-              "dataType": 17,
+              "dataType": "stringArray",
               "id": "can_place_sculk_patch_on",
               "title": "Can Place Sculk Patch On",
               "isRequired": true
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "cursor_count",
               "title": "Cursor Count",
               "isRequired": true
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "charge_amount",
               "title": "Charge Amount",
               "isRequired": true
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "spread_attempts",
               "title": "Spread Attempts",
               "isRequired": true
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "growth_rounds",
               "title": "Growth Rounds",
               "isRequired": true
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "spread_rounds",
               "title": "Spread Rounds",
               "isRequired": true
@@ -2763,21 +2763,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:search_feature",
         "title": "Search Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -2787,7 +2787,7 @@
               }
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "search_volume",
               "title": "Search Volume",
               "description": "Axis-aligned bounding box that will be searched for valid placement positions. Expressed as offsets from the input position.",
@@ -2795,21 +2795,21 @@
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "min",
                     "title": "Min",
                     "description": "Minimum extent of the bounding volume expressed as [ x, y, z ]",
                     "isRequired": true
                   },
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "[0..0]",
                     "title": "",
                     "description": "x_min",
                     "isRequired": true,
                     "alternates": [
                       {
-                        "dataType": 0,
+                        "dataType": "int",
                         "id": "[0..0]",
                         "description": "x_max",
                         "isRequired": true
@@ -2817,14 +2817,14 @@
                     ]
                   },
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "[1..1]",
                     "title": "",
                     "description": "y_min",
                     "isRequired": true,
                     "alternates": [
                       {
-                        "dataType": 0,
+                        "dataType": "int",
                         "id": "[1..1]",
                         "description": "y_max",
                         "isRequired": true
@@ -2832,14 +2832,14 @@
                     ]
                   },
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "[2..2]",
                     "title": "",
                     "description": "z_min",
                     "isRequired": true,
                     "alternates": [
                       {
-                        "dataType": 0,
+                        "dataType": "int",
                         "id": "[2..2]",
                         "description": "z_max",
                         "isRequired": true
@@ -2847,7 +2847,7 @@
                     ]
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "max",
                     "title": "Max",
                     "description": "Maxium extent of the bounding volume expressed as [ x, y, z ]",
@@ -2857,14 +2857,14 @@
               }
             },
             {
-              "dataType": 2,
+              "dataType": "string",
               "id": "search_axis\"<\"-x\", \"+x\", \"-y\", \"+y\", \"-z\", \"+z\"",
               "title": "Search Axis\"<\"-x\", \"+x\", \"-y\", \"+y\", \"-z\", \"+z\"",
               "description": "Axis that the search will sweep along through the 'search_volume'",
               "isRequired": true
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "required_successes",
               "title": "Required Successes",
               "description": "Number of valid positions the search must find in order to place the referenced feature",
@@ -2874,21 +2874,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:single_block_feature",
         "title": "Single Block Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -2899,11 +2899,11 @@
             },
             {
               "id": "places_block",
-              "dataType": 15,
+              "dataType": "objectArray",
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "block",
                     "title": "Block",
                     "description": "Reference to the block to be placed.",
@@ -2913,14 +2913,14 @@
               },
               "alternates": [
                 {
-                  "dataType": 16,
+                  "dataType": "object",
                   "id": "places_block",
                   "title": "Places Block",
                   "description": "Reference to the block to be placed.",
                   "isRequired": false
                 },
                 {
-                  "dataType": 17,
+                  "dataType": "stringArray",
                   "id": "places_block",
                   "title": "Places Block",
                   "isRequired": false
@@ -2928,28 +2928,28 @@
               ]
             },
             {
-              "dataType": 1,
+              "dataType": "boolean",
               "id": "enforce_placement_rules",
               "title": "Enforce Placement Rules",
               "description": "If true, enforce the block's canPlace check.",
               "isRequired": true
             },
             {
-              "dataType": 1,
+              "dataType": "boolean",
               "id": "enforce_survivability_rules",
               "title": "Enforce Survivability Rules",
               "description": "If true, enforce the block's canSurvive check.",
               "isRequired": true
             },
             {
-              "dataType": 1,
+              "dataType": "boolean",
               "id": "randomize_rotation",
               "title": "Randomize Rotation",
               "description": "If true, randomizes the block's cardinal orientation.",
               "isRequired": false
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "may_attach_to",
               "title": "May Attach To",
               "description": "Allowlist which specifies where the block can be placed.",
@@ -2957,69 +2957,69 @@
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "min_sides_must_attach",
                     "title": "Min Sides Must Attach",
                     "description": "Number of side faces that need to pass the attach conditions before the block can be placed. Default value is four.",
                     "isRequired": false
                   },
                   {
-                    "dataType": 1,
+                    "dataType": "boolean",
                     "id": "auto_rotate",
                     "title": "Auto Rotate",
                     "description": "Automatically rotate the block to attach sensibly. This setting is ignored if 'randomize_rotation' is enabled.",
                     "isRequired": false
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "top",
                     "title": "Top",
                     "isRequired": false
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "bottom",
                     "title": "Bottom",
                     "isRequired": false
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "north",
                     "title": "North",
                     "isRequired": false
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "east",
                     "title": "East",
                     "isRequired": false
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "south",
                     "title": "South",
                     "isRequired": false
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "west",
                     "title": "West",
                     "isRequired": false
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "all",
                     "title": "All",
                     "isRequired": false
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "sides",
                     "title": "Sides",
                     "isRequired": false
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "diagonal",
                     "title": "Diagonal",
                     "isRequired": false
@@ -3028,7 +3028,7 @@
               }
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "may_not_attach_to",
               "title": "May Not Attach To",
               "description": "Denylist which specifies where the block can't be placed.",
@@ -3036,55 +3036,55 @@
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "top",
                     "title": "Top",
                     "isRequired": false
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "bottom",
                     "title": "Bottom",
                     "isRequired": false
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "north",
                     "title": "North",
                     "isRequired": false
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "east",
                     "title": "East",
                     "isRequired": false
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "south",
                     "title": "South",
                     "isRequired": false
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "west",
                     "title": "West",
                     "isRequired": false
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "all",
                     "title": "All",
                     "isRequired": false
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "sides",
                     "title": "Sides",
                     "isRequired": false
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "diagonal",
                     "title": "Diagonal",
                     "isRequired": false
@@ -3093,7 +3093,7 @@
               }
             },
             {
-              "dataType": 17,
+              "dataType": "stringArray",
               "id": "may_replace",
               "title": "May Replace",
               "isRequired": false
@@ -3102,21 +3102,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:snap_to_surface_feature",
         "title": "Snap To Surface Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -3126,42 +3126,42 @@
               }
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "vertical_search_range",
               "title": "Vertical Search Range",
               "description": "Range to search for a floor or ceiling for snaping the feature.",
               "isRequired": true
             },
             {
-              "dataType": 2,
+              "dataType": "string",
               "id": "surface",
               "title": "Surface",
               "description": "Defines the surface that the y-value of the placement position will be snapped to. Valid values: 'ceiling', 'floor' and 'random_horizontal'",
               "isRequired": false
             },
             {
-              "dataType": 1,
+              "dataType": "boolean",
               "id": "allow_air_placement",
               "title": "Allow Air Placement",
               "description": "Determines whether the feature can snap through air blocks. Defaults to true.",
               "isRequired": false
             },
             {
-              "dataType": 1,
+              "dataType": "boolean",
               "id": "allow_underwater_placement",
               "title": "Allow Underwater Placement",
               "description": "Determines whether the feature can snap through water blocks. Defaults to false.",
               "isRequired": false
             },
             {
-              "dataType": 17,
+              "dataType": "stringArray",
               "id": "allowed_surface_blocks",
               "title": "Allowed Surface Blocks",
               "description": "A list of blocks that the feature is permitted to snap to. Leaving this empty results in the feature snapping to blocks that can provide support for the given face (up/down/horizontal)",
               "isRequired": false
             },
             {
-              "dataType": 1,
+              "dataType": "boolean",
               "id": "embed_in_surface",
               "title": "Embed In Surface",
               "description": "Determines whether the placed feature should be embedded in the found surface.",
@@ -3171,21 +3171,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:structure_template_feature",
         "title": "Structure Template Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -3195,28 +3195,28 @@
               }
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "adjustment_radius",
               "title": "Adjustment Radius",
               "description": "How far the structure is allowed to move when searching for a valid placement position. Search is radial, stopping when the nearest valid position is found. Defaults to 0 if omitted.",
               "isRequired": false
             },
             {
-              "dataType": 2,
+              "dataType": "string",
               "id": "facing_direction\"<\"north\", \"south\", \"east\", \"west\", \"random\"",
               "title": "Facing Direction\"<\"north\", \"south\", \"east\", \"west\", \"random\"",
               "description": "Direction the structure will face when placed in the world. Defaults to \"random\" if omitted.",
               "isRequired": false
             },
             {
-              "dataType": 1,
+              "dataType": "boolean",
               "id": "rotate_around_center",
               "title": "Rotate Around Center",
               "description": "If true, tries to rotate the structure around its center when placed in the world. Defaults to \"false\" if omitted.",
               "isRequired": false
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "constraints",
               "title": "Constraints",
               "description": "Specific constraints that must be satisfied when placing this structure.",
@@ -3224,21 +3224,21 @@
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "grounded",
                     "title": "Grounded",
                     "description": "When specified, ensures the structure is on the ground.",
                     "isRequired": false
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "unburied",
                     "title": "Unburied",
                     "description": "When specified, ensures the structure has air above it.",
                     "isRequired": false
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "block_intersection",
                     "title": "Block Intersection",
                     "description": "When specified, ensures the structure only intersects with allowlisted blocks.",
@@ -3246,7 +3246,7 @@
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "block_allowlist|block_whitelist",
                           "title": "Block Allowlist|block Whitelist",
                           "isRequired": true
@@ -3261,21 +3261,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:surface_relative_threshold_feature",
         "title": "Surface Relative Threshold Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -3285,7 +3285,7 @@
               }
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "minimum_distance_below_surface",
               "title": "Minimum Distance Below Surface",
               "description": "The minimum number of blocks required to be between the estimated surface level and a valid place for this feature. Defaults to zero.",
@@ -3295,21 +3295,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:underwater_cave_carver_feature",
         "title": "Underwater Cave Carver Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -3319,21 +3319,21 @@
               }
             },
             {
-              "dataType": 34,
+              "dataType": "molang",
               "id": "width_modifier",
               "title": "Width Modifier",
               "description": "How many blocks to increase the cave radius by, from the center point of the cave.",
               "isRequired": false
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "skip_carve_chance",
               "title": "Skip Carve Chance",
               "description": "The chance to skip doing the carve (1 / value).",
               "isRequired": false
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "height_limit",
               "title": "Height Limit",
               "description": "The height limit where we attempt to carve.",
@@ -3343,21 +3343,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:tree_feature",
         "title": "Tree Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -3367,13 +3367,13 @@
               }
             },
             {
-              "dataType": 17,
+              "dataType": "stringArray",
               "id": "base_block",
               "title": "Base Block",
               "isRequired": false
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "base_cluster",
               "title": "Base Cluster",
               "description": "Clusters of blocks randomly replaced with \"base_block\" around the base of the tree.",
@@ -3381,20 +3381,20 @@
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "may_replace",
                     "title": "May Replace",
                     "isRequired": true
                   },
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "num_clusters",
                     "title": "Num Clusters",
                     "description": "Number of clusters to generate.",
                     "isRequired": true
                   },
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "cluster_radius",
                     "title": "Cluster Radius",
                     "description": "The radius of each cluster.",
@@ -3404,39 +3404,39 @@
               }
             },
             {
-              "dataType": 17,
+              "dataType": "stringArray",
               "id": "may_grow_on",
               "title": "May Grow On",
               "isRequired": false
             },
             {
-              "dataType": 17,
+              "dataType": "stringArray",
               "id": "may_replace",
               "title": "May Replace",
               "isRequired": false
             },
             {
-              "dataType": 17,
+              "dataType": "stringArray",
               "id": "may_grow_through",
               "title": "May Grow Through",
               "isRequired": false
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "acacia_trunk",
               "title": "Acacia Trunk",
               "isRequired": false,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "trunk_width",
                     "title": "Trunk Width",
                     "description": "The width of the tree trunk.",
                     "isRequired": true
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "trunk_height",
                     "title": "Trunk Height",
                     "description": "Configuration object for the trunk height.",
@@ -3444,20 +3444,20 @@
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "base",
                           "title": "Base",
                           "description": "Min height for the trunk.",
                           "isRequired": true
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "intervals",
                           "title": "Intervals",
                           "isRequired": false
                         },
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "min_height_for_canopy",
                           "title": "Min Height For Canopy",
                           "description": "Min height where the canopy can be placed.",
@@ -3467,7 +3467,7 @@
                     }
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "trunk_lean",
                     "title": "Trunk Lean",
                     "description": "Configuration object for diagonal branches.",
@@ -3475,7 +3475,7 @@
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 1,
+                          "dataType": "boolean",
                           "id": "allow_diagonal_growth",
                           "title": "Allow Diagonal Growth",
                           "description": "If true, diagonal branches will be created.",
@@ -3485,7 +3485,7 @@
                     }
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "branches",
                     "title": "Branches",
                     "description": "Configuration object for branches.",
@@ -3493,7 +3493,7 @@
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 16,
+                          "dataType": "object",
                           "id": "branch_canopy",
                           "title": "Branch Canopy",
                           "description": "Configuration object for the canopy.",
@@ -3501,21 +3501,21 @@
                           "subForm": {
                             "fields": [
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "acacia_canopy",
                                 "title": "Acacia Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "canopy_size",
                                       "title": "Canopy Size",
                                       "description": "The size of the canopy.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 1,
+                                      "dataType": "boolean",
                                       "id": "simplify_canopy",
                                       "title": "Simplify Canopy",
                                       "description": "If true the canopy uses a simple pattern.",
@@ -3525,14 +3525,14 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "canopy",
                                 "title": "Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 16,
+                                      "dataType": "object",
                                       "id": "canopy_offset",
                                       "title": "Canopy Offset",
                                       "description": "Canopy position offset relative to the block above the trunk.",
@@ -3540,14 +3540,14 @@
                                       "subForm": {
                                         "fields": [
                                           {
-                                            "dataType": 0,
+                                            "dataType": "int",
                                             "id": "min",
                                             "title": "Min",
                                             "description": "Min canopy position offset.",
                                             "isRequired": true
                                           },
                                           {
-                                            "dataType": 0,
+                                            "dataType": "int",
                                             "id": "max",
                                             "title": "Max",
                                             "description": "Max canopy position offset.",
@@ -3557,14 +3557,14 @@
                                       }
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "min_width",
                                       "title": "Min Width",
                                       "description": "Min width for the canopy.",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 16,
+                                      "dataType": "object",
                                       "id": "canopy_slope",
                                       "title": "Canopy Slope",
                                       "description": "Configuration object for the canopy slope.",
@@ -3572,14 +3572,14 @@
                                       "subForm": {
                                         "fields": [
                                           {
-                                            "dataType": 0,
+                                            "dataType": "int",
                                             "id": "rise",
                                             "title": "Rise",
                                             "description": "The numerator for the slope fraction.",
                                             "isRequired": false
                                           },
                                           {
-                                            "dataType": 0,
+                                            "dataType": "int",
                                             "id": "run",
                                             "title": "Run",
                                             "description": "The denominator for the slope fraction.",
@@ -3589,13 +3589,13 @@
                                       }
                                     },
                                     {
-                                      "dataType": 17,
+                                      "dataType": "stringArray",
                                       "id": "variation_chance",
                                       "title": "Variation Chance",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 16,
+                                      "dataType": "object",
                                       "id": "canopy_decoration",
                                       "title": "Canopy Decoration",
                                       "description": "Configuration object for the canopy decoration.",
@@ -3604,13 +3604,13 @@
                                         "fields": [
                                           {
                                             "id": "decoration_blocks_sequence",
-                                            "dataType": 15,
+                                            "dataType": "objectArray",
                                             "subForm": {
                                               "fields": []
                                             },
                                             "alternates": [
                                               {
-                                                "dataType": 17,
+                                                "dataType": "stringArray",
                                                 "id": "decoration_blocks_sequence",
                                                 "title": "Decoration Blocks Sequence",
                                                 "isRequired": false
@@ -3618,14 +3618,14 @@
                                             ]
                                           },
                                           {
-                                            "dataType": 0,
+                                            "dataType": "int",
                                             "id": "num_steps",
                                             "title": "Num Steps",
                                             "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                                             "isRequired": false
                                           },
                                           {
-                                            "dataType": 2,
+                                            "dataType": "string",
                                             "id": "step_direction\"<\"down\", \"up\", \"out\", \"away\"",
                                             "title": "Step Direction\"<\"down\", \"up\", \"out\", \"away\"",
                                             "description": "Directions to spread decoration blocks.",
@@ -3638,14 +3638,14 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "cherry_canopy",
                                 "title": "Cherry Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "trunk_width",
                                       "title": "Trunk Width",
                                       "description": "The width of the tree trunk.",
@@ -3655,21 +3655,21 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "fancy_canopy",
                                 "title": "Fancy Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "height",
                                       "title": "Height",
                                       "description": "Number of layers for the canopy.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "radius",
                                       "title": "Radius",
                                       "description": "The radius of the canopy.",
@@ -3679,27 +3679,27 @@
                                 }
                               },
                               {
-                                "dataType": 14,
+                                "dataType": "keyedObjectCollection",
                                 "id": "mangrove_canopy",
                                 "title": "Mangrove Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "leaf_placement_attempts",
                                       "title": "Leaf Placement Attempts",
                                       "description": "Max number of attempts to create leaf blocks.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 17,
+                                      "dataType": "stringArray",
                                       "id": "leaf_blocks",
                                       "title": "Leaf Blocks",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 16,
+                                      "dataType": "object",
                                       "id": "canopy_decoration",
                                       "title": "Canopy Decoration",
                                       "description": "Configuration object for the canopy decoration.",
@@ -3708,13 +3708,13 @@
                                         "fields": [
                                           {
                                             "id": "decoration_blocks_sequence",
-                                            "dataType": 15,
+                                            "dataType": "objectArray",
                                             "subForm": {
                                               "fields": []
                                             },
                                             "alternates": [
                                               {
-                                                "dataType": 17,
+                                                "dataType": "stringArray",
                                                 "id": "decoration_blocks_sequence",
                                                 "title": "Decoration Blocks Sequence",
                                                 "isRequired": false
@@ -3722,14 +3722,14 @@
                                             ]
                                           },
                                           {
-                                            "dataType": 0,
+                                            "dataType": "int",
                                             "id": "num_steps",
                                             "title": "Num Steps",
                                             "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                                             "isRequired": false
                                           },
                                           {
-                                            "dataType": 2,
+                                            "dataType": "string",
                                             "id": "step_direction\"<\"down\", \"up\", \"out\", \"away\"",
                                             "title": "Step Direction\"<\"down\", \"up\", \"out\", \"away\"",
                                             "description": "Directions to spread decoration blocks.",
@@ -3743,28 +3743,28 @@
                                 "keyDescription": "<any array element>"
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "mega_canopy",
                                 "title": "Mega Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "base_radius",
                                       "title": "Base Radius",
                                       "description": "Radius of the canopy.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "core_width",
                                       "title": "Core Width",
                                       "description": "Width of the tree trunk.",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 1,
+                                      "dataType": "boolean",
                                       "id": "simplify_canopy",
                                       "title": "Simplify Canopy",
                                       "description": "If true the canopy uses a simple pattern.",
@@ -3774,21 +3774,21 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "mega_pine_canopy",
                                 "title": "Mega Pine Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "base_radius",
                                       "title": "Base Radius",
                                       "description": "Radius of the canopy.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "core_width",
                                       "title": "Core Width",
                                       "description": "Width of the tree trunk.",
@@ -3798,14 +3798,14 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "pine_canopy",
                                 "title": "Pine Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "base_radius",
                                       "title": "Base Radius",
                                       "description": "Radius of the canopy.",
@@ -3815,35 +3815,35 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "roofed_canopy",
                                 "title": "Roofed Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "canopy_height",
                                       "title": "Canopy Height",
                                       "description": "Roofed canopies feature a base and a top layer, and an extra cap layer on some occasions, this value controls the number of layers in the middle.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "core_width",
                                       "title": "Core Width",
                                       "description": "Width of the tree trunk.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "outer_radius",
                                       "title": "Outer Radius",
                                       "description": "Radius used for the base and top layers.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "inner_radius",
                                       "title": "Inner Radius",
                                       "description": "Radius used for the middle layers.",
@@ -3853,7 +3853,7 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "spruce_canopy",
                                 "title": "Spruce Canopy",
                                 "isRequired": false,
@@ -3868,7 +3868,7 @@
                     }
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "trunk_decoration",
                     "title": "Trunk Decoration",
                     "description": "Configuration object for the trunk decoration.",
@@ -3877,13 +3877,13 @@
                       "fields": [
                         {
                           "id": "decoration_blocks_sequence",
-                          "dataType": 15,
+                          "dataType": "objectArray",
                           "subForm": {
                             "fields": []
                           },
                           "alternates": [
                             {
-                              "dataType": 17,
+                              "dataType": "stringArray",
                               "id": "decoration_blocks_sequence",
                               "title": "Decoration Blocks Sequence",
                               "isRequired": false
@@ -3891,14 +3891,14 @@
                           ]
                         },
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "num_steps",
                           "title": "Num Steps",
                           "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                           "isRequired": false
                         },
                         {
-                          "dataType": 2,
+                          "dataType": "string",
                           "id": "step_direction\"<\"down\", \"up\", \"out\", \"away\"",
                           "title": "Step Direction\"<\"down\", \"up\", \"out\", \"away\"",
                           "description": "Directions to spread decoration blocks.",
@@ -3911,14 +3911,14 @@
               }
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "cherry_trunk",
               "title": "Cherry Trunk",
               "isRequired": false,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "trunk_height",
                     "title": "Trunk Height",
                     "description": "Configuration object for the trunk height.",
@@ -3926,14 +3926,14 @@
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "base",
                           "title": "Base",
                           "description": "Min height for the trunk.",
                           "isRequired": true
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "intervals",
                           "title": "Intervals",
                           "isRequired": false
@@ -3942,7 +3942,7 @@
                     }
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "branches",
                     "title": "Branches",
                     "description": "Configuration object for branches.",
@@ -3950,7 +3950,7 @@
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 16,
+                          "dataType": "object",
                           "id": "tree_type_weights",
                           "title": "Tree Type Weights",
                           "description": "Configuration object to pick a tree variant based on a weighted random number.",
@@ -3958,21 +3958,21 @@
                           "subForm": {
                             "fields": [
                               {
-                                "dataType": 0,
+                                "dataType": "int",
                                 "id": "one_branch",
                                 "title": "One Branch",
                                 "description": "Tree variant with one branch.",
                                 "isRequired": true
                               },
                               {
-                                "dataType": 0,
+                                "dataType": "int",
                                 "id": "two_branches",
                                 "title": "Two Branches",
                                 "description": "Tree variant with two branches.",
                                 "isRequired": true
                               },
                               {
-                                "dataType": 0,
+                                "dataType": "int",
                                 "id": "two_branches_and_trunk",
                                 "title": "Two Branches And Trunk",
                                 "description": "Tree variant with three branches.",
@@ -3982,7 +3982,7 @@
                           }
                         },
                         {
-                          "dataType": 16,
+                          "dataType": "object",
                           "id": "branch_canopy",
                           "title": "Branch Canopy",
                           "description": "Configuration object for the canopy.",
@@ -3990,21 +3990,21 @@
                           "subForm": {
                             "fields": [
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "acacia_canopy",
                                 "title": "Acacia Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "canopy_size",
                                       "title": "Canopy Size",
                                       "description": "The size of the canopy.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 1,
+                                      "dataType": "boolean",
                                       "id": "simplify_canopy",
                                       "title": "Simplify Canopy",
                                       "description": "If true the canopy uses a simple pattern.",
@@ -4014,14 +4014,14 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "canopy",
                                 "title": "Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 16,
+                                      "dataType": "object",
                                       "id": "canopy_offset",
                                       "title": "Canopy Offset",
                                       "description": "Canopy position offset relative to the block above the trunk.",
@@ -4029,14 +4029,14 @@
                                       "subForm": {
                                         "fields": [
                                           {
-                                            "dataType": 0,
+                                            "dataType": "int",
                                             "id": "min",
                                             "title": "Min",
                                             "description": "Min canopy position offset.",
                                             "isRequired": true
                                           },
                                           {
-                                            "dataType": 0,
+                                            "dataType": "int",
                                             "id": "max",
                                             "title": "Max",
                                             "description": "Max canopy position offset.",
@@ -4046,14 +4046,14 @@
                                       }
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "min_width",
                                       "title": "Min Width",
                                       "description": "Min width for the canopy.",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 16,
+                                      "dataType": "object",
                                       "id": "canopy_slope",
                                       "title": "Canopy Slope",
                                       "description": "Configuration object for the canopy slope.",
@@ -4061,14 +4061,14 @@
                                       "subForm": {
                                         "fields": [
                                           {
-                                            "dataType": 0,
+                                            "dataType": "int",
                                             "id": "rise",
                                             "title": "Rise",
                                             "description": "The numerator for the slope fraction.",
                                             "isRequired": false
                                           },
                                           {
-                                            "dataType": 0,
+                                            "dataType": "int",
                                             "id": "run",
                                             "title": "Run",
                                             "description": "The denominator for the slope fraction.",
@@ -4078,13 +4078,13 @@
                                       }
                                     },
                                     {
-                                      "dataType": 17,
+                                      "dataType": "stringArray",
                                       "id": "variation_chance",
                                       "title": "Variation Chance",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 16,
+                                      "dataType": "object",
                                       "id": "canopy_decoration",
                                       "title": "Canopy Decoration",
                                       "description": "Configuration object for the canopy decoration.",
@@ -4093,13 +4093,13 @@
                                         "fields": [
                                           {
                                             "id": "decoration_blocks_sequence",
-                                            "dataType": 15,
+                                            "dataType": "objectArray",
                                             "subForm": {
                                               "fields": []
                                             },
                                             "alternates": [
                                               {
-                                                "dataType": 17,
+                                                "dataType": "stringArray",
                                                 "id": "decoration_blocks_sequence",
                                                 "title": "Decoration Blocks Sequence",
                                                 "isRequired": false
@@ -4107,14 +4107,14 @@
                                             ]
                                           },
                                           {
-                                            "dataType": 0,
+                                            "dataType": "int",
                                             "id": "num_steps",
                                             "title": "Num Steps",
                                             "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                                             "isRequired": false
                                           },
                                           {
-                                            "dataType": 2,
+                                            "dataType": "string",
                                             "id": "step_direction\"<\"down\", \"up\", \"out\", \"away\"",
                                             "title": "Step Direction\"<\"down\", \"up\", \"out\", \"away\"",
                                             "description": "Directions to spread decoration blocks.",
@@ -4127,14 +4127,14 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "cherry_canopy",
                                 "title": "Cherry Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "trunk_width",
                                       "title": "Trunk Width",
                                       "description": "The width of the tree trunk.",
@@ -4144,21 +4144,21 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "fancy_canopy",
                                 "title": "Fancy Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "height",
                                       "title": "Height",
                                       "description": "Number of layers for the canopy.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "radius",
                                       "title": "Radius",
                                       "description": "The radius of the canopy.",
@@ -4168,27 +4168,27 @@
                                 }
                               },
                               {
-                                "dataType": 14,
+                                "dataType": "keyedObjectCollection",
                                 "id": "mangrove_canopy",
                                 "title": "Mangrove Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "leaf_placement_attempts",
                                       "title": "Leaf Placement Attempts",
                                       "description": "Max number of attempts to create leaf blocks.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 17,
+                                      "dataType": "stringArray",
                                       "id": "leaf_blocks",
                                       "title": "Leaf Blocks",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 16,
+                                      "dataType": "object",
                                       "id": "canopy_decoration",
                                       "title": "Canopy Decoration",
                                       "description": "Configuration object for the canopy decoration.",
@@ -4197,13 +4197,13 @@
                                         "fields": [
                                           {
                                             "id": "decoration_blocks_sequence",
-                                            "dataType": 15,
+                                            "dataType": "objectArray",
                                             "subForm": {
                                               "fields": []
                                             },
                                             "alternates": [
                                               {
-                                                "dataType": 17,
+                                                "dataType": "stringArray",
                                                 "id": "decoration_blocks_sequence",
                                                 "title": "Decoration Blocks Sequence",
                                                 "isRequired": false
@@ -4211,14 +4211,14 @@
                                             ]
                                           },
                                           {
-                                            "dataType": 0,
+                                            "dataType": "int",
                                             "id": "num_steps",
                                             "title": "Num Steps",
                                             "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                                             "isRequired": false
                                           },
                                           {
-                                            "dataType": 2,
+                                            "dataType": "string",
                                             "id": "step_direction\"<\"down\", \"up\", \"out\", \"away\"",
                                             "title": "Step Direction\"<\"down\", \"up\", \"out\", \"away\"",
                                             "description": "Directions to spread decoration blocks.",
@@ -4232,28 +4232,28 @@
                                 "keyDescription": "<any array element>"
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "mega_canopy",
                                 "title": "Mega Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "base_radius",
                                       "title": "Base Radius",
                                       "description": "Radius of the canopy.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "core_width",
                                       "title": "Core Width",
                                       "description": "Width of the tree trunk.",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 1,
+                                      "dataType": "boolean",
                                       "id": "simplify_canopy",
                                       "title": "Simplify Canopy",
                                       "description": "If true the canopy uses a simple pattern.",
@@ -4263,21 +4263,21 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "mega_pine_canopy",
                                 "title": "Mega Pine Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "base_radius",
                                       "title": "Base Radius",
                                       "description": "Radius of the canopy.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "core_width",
                                       "title": "Core Width",
                                       "description": "Width of the tree trunk.",
@@ -4287,14 +4287,14 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "pine_canopy",
                                 "title": "Pine Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "base_radius",
                                       "title": "Base Radius",
                                       "description": "Radius of the canopy.",
@@ -4304,35 +4304,35 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "roofed_canopy",
                                 "title": "Roofed Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "canopy_height",
                                       "title": "Canopy Height",
                                       "description": "Roofed canopies feature a base and a top layer, and an extra cap layer on some occasions, this value controls the number of layers in the middle.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "core_width",
                                       "title": "Core Width",
                                       "description": "Width of the tree trunk.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "outer_radius",
                                       "title": "Outer Radius",
                                       "description": "Radius used for the base and top layers.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "inner_radius",
                                       "title": "Inner Radius",
                                       "description": "Radius used for the middle layers.",
@@ -4342,7 +4342,7 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "spruce_canopy",
                                 "title": "Spruce Canopy",
                                 "isRequired": false,
@@ -4360,14 +4360,14 @@
               }
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "fallen_trunk",
               "title": "Fallen Trunk",
               "isRequired": false,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "trunk_decoration",
                     "title": "Trunk Decoration",
                     "description": "Configuration object for the trunk decoration.",
@@ -4376,13 +4376,13 @@
                       "fields": [
                         {
                           "id": "decoration_blocks_sequence",
-                          "dataType": 15,
+                          "dataType": "objectArray",
                           "subForm": {
                             "fields": []
                           },
                           "alternates": [
                             {
-                              "dataType": 17,
+                              "dataType": "stringArray",
                               "id": "decoration_blocks_sequence",
                               "title": "Decoration Blocks Sequence",
                               "isRequired": false
@@ -4390,14 +4390,14 @@
                           ]
                         },
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "num_steps",
                           "title": "Num Steps",
                           "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                           "isRequired": false
                         },
                         {
-                          "dataType": 2,
+                          "dataType": "string",
                           "id": "step_direction\"<\"down\", \"up\", \"out\", \"away\"",
                           "title": "Step Direction\"<\"down\", \"up\", \"out\", \"away\"",
                           "description": "Directions to spread decoration blocks.",
@@ -4410,14 +4410,14 @@
               }
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "fancy_trunk",
               "title": "Fancy Trunk",
               "isRequired": false,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "trunk_height",
                     "title": "Trunk Height",
                     "description": "Configuration object for the trunk height.",
@@ -4425,14 +4425,14 @@
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "base",
                           "title": "Base",
                           "description": "Min height for the trunk.",
                           "isRequired": true
                         },
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "variance",
                           "title": "Variance",
                           "description": "Modifier for the trunk height.",
@@ -4442,14 +4442,14 @@
                     }
                   },
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "trunk_width",
                     "title": "Trunk Width",
                     "description": "The width of the tree trunk.",
                     "isRequired": true
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "branches",
                     "title": "Branches",
                     "description": "Configuration object for branches.",
@@ -4462,21 +4462,21 @@
               }
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "mangrove_trunk",
               "title": "Mangrove Trunk",
               "isRequired": false,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "trunk_width",
                     "title": "Trunk Width",
                     "description": "The width of the tree trunk.",
                     "isRequired": true
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "trunk_height",
                     "title": "Trunk Height",
                     "description": "Configuration object for the trunk height.",
@@ -4484,21 +4484,21 @@
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "base",
                           "title": "Base",
                           "description": "Min height for the trunk.",
                           "isRequired": true
                         },
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "height_rand_a",
                           "title": "Height Rand A",
                           "description": "Tree height modifier A.",
                           "isRequired": true
                         },
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "height_rand_b",
                           "title": "Height Rand B",
                           "description": "Tree height modifier B.",
@@ -4508,7 +4508,7 @@
                     }
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "branches",
                     "title": "Branches",
                     "description": "Configuration object for branches.",
@@ -4518,7 +4518,7 @@
                     }
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "trunk_decoration",
                     "title": "Trunk Decoration",
                     "description": "Configuration object for the trunk decoration.",
@@ -4527,13 +4527,13 @@
                       "fields": [
                         {
                           "id": "decoration_blocks_sequence",
-                          "dataType": 15,
+                          "dataType": "objectArray",
                           "subForm": {
                             "fields": []
                           },
                           "alternates": [
                             {
-                              "dataType": 17,
+                              "dataType": "stringArray",
                               "id": "decoration_blocks_sequence",
                               "title": "Decoration Blocks Sequence",
                               "isRequired": false
@@ -4541,14 +4541,14 @@
                           ]
                         },
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "num_steps",
                           "title": "Num Steps",
                           "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                           "isRequired": false
                         },
                         {
-                          "dataType": 2,
+                          "dataType": "string",
                           "id": "step_direction\"<\"down\", \"up\", \"out\", \"away\"",
                           "title": "Step Direction\"<\"down\", \"up\", \"out\", \"away\"",
                           "description": "Directions to spread decoration blocks.",
@@ -4561,21 +4561,21 @@
               }
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "mega_trunk",
               "title": "Mega Trunk",
               "isRequired": false,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "trunk_width",
                     "title": "Trunk Width",
                     "description": "The width of the tree trunk.",
                     "isRequired": true
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "trunk_height",
                     "title": "Trunk Height",
                     "description": "Configuration object for the trunk height.",
@@ -4583,14 +4583,14 @@
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "base",
                           "title": "Base",
                           "description": "Min height for the trunk.",
                           "isRequired": true
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "intervals",
                           "title": "Intervals",
                           "isRequired": false
@@ -4599,7 +4599,7 @@
                     }
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "trunk_decoration",
                     "title": "Trunk Decoration",
                     "description": "Configuration object for the trunk decoration.",
@@ -4608,13 +4608,13 @@
                       "fields": [
                         {
                           "id": "decoration_blocks_sequence",
-                          "dataType": 15,
+                          "dataType": "objectArray",
                           "subForm": {
                             "fields": []
                           },
                           "alternates": [
                             {
-                              "dataType": 17,
+                              "dataType": "stringArray",
                               "id": "decoration_blocks_sequence",
                               "title": "Decoration Blocks Sequence",
                               "isRequired": false
@@ -4622,14 +4622,14 @@
                           ]
                         },
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "num_steps",
                           "title": "Num Steps",
                           "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                           "isRequired": false
                         },
                         {
-                          "dataType": 2,
+                          "dataType": "string",
                           "id": "step_direction\"<\"down\", \"up\", \"out\", \"away\"",
                           "title": "Step Direction\"<\"down\", \"up\", \"out\", \"away\"",
                           "description": "Directions to spread decoration blocks.",
@@ -4639,7 +4639,7 @@
                     }
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "branches",
                     "title": "Branches",
                     "description": "Configuration object for branches.",
@@ -4647,14 +4647,14 @@
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "branch_length",
                           "title": "Branch Length",
                           "description": "Length for the branch.",
                           "isRequired": true
                         },
                         {
-                          "dataType": 16,
+                          "dataType": "object",
                           "id": "branch_altitude_factor",
                           "title": "Branch Altitude Factor",
                           "description": "Altitude at which branches can spawn, relative to the tree height.",
@@ -4664,7 +4664,7 @@
                           }
                         },
                         {
-                          "dataType": 16,
+                          "dataType": "object",
                           "id": "branch_canopy",
                           "title": "Branch Canopy",
                           "description": "Configuration object for the canopy.",
@@ -4672,21 +4672,21 @@
                           "subForm": {
                             "fields": [
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "acacia_canopy",
                                 "title": "Acacia Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "canopy_size",
                                       "title": "Canopy Size",
                                       "description": "The size of the canopy.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 1,
+                                      "dataType": "boolean",
                                       "id": "simplify_canopy",
                                       "title": "Simplify Canopy",
                                       "description": "If true the canopy uses a simple pattern.",
@@ -4696,14 +4696,14 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "canopy",
                                 "title": "Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 16,
+                                      "dataType": "object",
                                       "id": "canopy_offset",
                                       "title": "Canopy Offset",
                                       "description": "Canopy position offset relative to the block above the trunk.",
@@ -4711,14 +4711,14 @@
                                       "subForm": {
                                         "fields": [
                                           {
-                                            "dataType": 0,
+                                            "dataType": "int",
                                             "id": "min",
                                             "title": "Min",
                                             "description": "Min canopy position offset.",
                                             "isRequired": true
                                           },
                                           {
-                                            "dataType": 0,
+                                            "dataType": "int",
                                             "id": "max",
                                             "title": "Max",
                                             "description": "Max canopy position offset.",
@@ -4728,14 +4728,14 @@
                                       }
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "min_width",
                                       "title": "Min Width",
                                       "description": "Min width for the canopy.",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 16,
+                                      "dataType": "object",
                                       "id": "canopy_slope",
                                       "title": "Canopy Slope",
                                       "description": "Configuration object for the canopy slope.",
@@ -4743,14 +4743,14 @@
                                       "subForm": {
                                         "fields": [
                                           {
-                                            "dataType": 0,
+                                            "dataType": "int",
                                             "id": "rise",
                                             "title": "Rise",
                                             "description": "The numerator for the slope fraction.",
                                             "isRequired": false
                                           },
                                           {
-                                            "dataType": 0,
+                                            "dataType": "int",
                                             "id": "run",
                                             "title": "Run",
                                             "description": "The denominator for the slope fraction.",
@@ -4760,13 +4760,13 @@
                                       }
                                     },
                                     {
-                                      "dataType": 17,
+                                      "dataType": "stringArray",
                                       "id": "variation_chance",
                                       "title": "Variation Chance",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 16,
+                                      "dataType": "object",
                                       "id": "canopy_decoration",
                                       "title": "Canopy Decoration",
                                       "description": "Configuration object for the canopy decoration.",
@@ -4775,13 +4775,13 @@
                                         "fields": [
                                           {
                                             "id": "decoration_blocks_sequence",
-                                            "dataType": 15,
+                                            "dataType": "objectArray",
                                             "subForm": {
                                               "fields": []
                                             },
                                             "alternates": [
                                               {
-                                                "dataType": 17,
+                                                "dataType": "stringArray",
                                                 "id": "decoration_blocks_sequence",
                                                 "title": "Decoration Blocks Sequence",
                                                 "isRequired": false
@@ -4789,14 +4789,14 @@
                                             ]
                                           },
                                           {
-                                            "dataType": 0,
+                                            "dataType": "int",
                                             "id": "num_steps",
                                             "title": "Num Steps",
                                             "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                                             "isRequired": false
                                           },
                                           {
-                                            "dataType": 2,
+                                            "dataType": "string",
                                             "id": "step_direction\"<\"down\", \"up\", \"out\", \"away\"",
                                             "title": "Step Direction\"<\"down\", \"up\", \"out\", \"away\"",
                                             "description": "Directions to spread decoration blocks.",
@@ -4809,14 +4809,14 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "cherry_canopy",
                                 "title": "Cherry Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "trunk_width",
                                       "title": "Trunk Width",
                                       "description": "The width of the tree trunk.",
@@ -4826,21 +4826,21 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "fancy_canopy",
                                 "title": "Fancy Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "height",
                                       "title": "Height",
                                       "description": "Number of layers for the canopy.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "radius",
                                       "title": "Radius",
                                       "description": "The radius of the canopy.",
@@ -4850,27 +4850,27 @@
                                 }
                               },
                               {
-                                "dataType": 14,
+                                "dataType": "keyedObjectCollection",
                                 "id": "mangrove_canopy",
                                 "title": "Mangrove Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "leaf_placement_attempts",
                                       "title": "Leaf Placement Attempts",
                                       "description": "Max number of attempts to create leaf blocks.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 17,
+                                      "dataType": "stringArray",
                                       "id": "leaf_blocks",
                                       "title": "Leaf Blocks",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 16,
+                                      "dataType": "object",
                                       "id": "canopy_decoration",
                                       "title": "Canopy Decoration",
                                       "description": "Configuration object for the canopy decoration.",
@@ -4879,13 +4879,13 @@
                                         "fields": [
                                           {
                                             "id": "decoration_blocks_sequence",
-                                            "dataType": 15,
+                                            "dataType": "objectArray",
                                             "subForm": {
                                               "fields": []
                                             },
                                             "alternates": [
                                               {
-                                                "dataType": 17,
+                                                "dataType": "stringArray",
                                                 "id": "decoration_blocks_sequence",
                                                 "title": "Decoration Blocks Sequence",
                                                 "isRequired": false
@@ -4893,14 +4893,14 @@
                                             ]
                                           },
                                           {
-                                            "dataType": 0,
+                                            "dataType": "int",
                                             "id": "num_steps",
                                             "title": "Num Steps",
                                             "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                                             "isRequired": false
                                           },
                                           {
-                                            "dataType": 2,
+                                            "dataType": "string",
                                             "id": "step_direction\"<\"down\", \"up\", \"out\", \"away\"",
                                             "title": "Step Direction\"<\"down\", \"up\", \"out\", \"away\"",
                                             "description": "Directions to spread decoration blocks.",
@@ -4914,28 +4914,28 @@
                                 "keyDescription": "<any array element>"
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "mega_canopy",
                                 "title": "Mega Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "base_radius",
                                       "title": "Base Radius",
                                       "description": "Radius of the canopy.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "core_width",
                                       "title": "Core Width",
                                       "description": "Width of the tree trunk.",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 1,
+                                      "dataType": "boolean",
                                       "id": "simplify_canopy",
                                       "title": "Simplify Canopy",
                                       "description": "If true the canopy uses a simple pattern.",
@@ -4945,21 +4945,21 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "mega_pine_canopy",
                                 "title": "Mega Pine Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "base_radius",
                                       "title": "Base Radius",
                                       "description": "Radius of the canopy.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "core_width",
                                       "title": "Core Width",
                                       "description": "Width of the tree trunk.",
@@ -4969,14 +4969,14 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "pine_canopy",
                                 "title": "Pine Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "base_radius",
                                       "title": "Base Radius",
                                       "description": "Radius of the canopy.",
@@ -4986,35 +4986,35 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "roofed_canopy",
                                 "title": "Roofed Canopy",
                                 "isRequired": false,
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "canopy_height",
                                       "title": "Canopy Height",
                                       "description": "Roofed canopies feature a base and a top layer, and an extra cap layer on some occasions, this value controls the number of layers in the middle.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "core_width",
                                       "title": "Core Width",
                                       "description": "Width of the tree trunk.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "outer_radius",
                                       "title": "Outer Radius",
                                       "description": "Radius used for the base and top layers.",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "inner_radius",
                                       "title": "Inner Radius",
                                       "description": "Radius used for the middle layers.",
@@ -5024,7 +5024,7 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "spruce_canopy",
                                 "title": "Spruce Canopy",
                                 "isRequired": false,
@@ -5042,14 +5042,14 @@
               }
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "trunk",
               "title": "Trunk",
               "isRequired": false,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "can_be_submerged",
                     "title": "Can Be Submerged",
                     "description": "Specifies if the trunk can be submerged.",
@@ -5057,7 +5057,7 @@
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "max_depth",
                           "title": "Max Depth",
                           "description": "Defines the max depth at which the trunk can be submerged.",
@@ -5067,7 +5067,7 @@
                     },
                     "alternates": [
                       {
-                        "dataType": 1,
+                        "dataType": "boolean",
                         "id": "can_be_submerged",
                         "description": "Specifies if the trunk can be submerged.",
                         "isRequired": false
@@ -5075,7 +5075,7 @@
                     ]
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "trunk_decoration",
                     "title": "Trunk Decoration",
                     "description": "Configuration object for the trunk decoration.",
@@ -5084,13 +5084,13 @@
                       "fields": [
                         {
                           "id": "decoration_blocks_sequence",
-                          "dataType": 15,
+                          "dataType": "objectArray",
                           "subForm": {
                             "fields": []
                           },
                           "alternates": [
                             {
-                              "dataType": 17,
+                              "dataType": "stringArray",
                               "id": "decoration_blocks_sequence",
                               "title": "Decoration Blocks Sequence",
                               "isRequired": false
@@ -5098,14 +5098,14 @@
                           ]
                         },
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "num_steps",
                           "title": "Num Steps",
                           "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                           "isRequired": false
                         },
                         {
-                          "dataType": 2,
+                          "dataType": "string",
                           "id": "step_direction\"<\"down\", \"up\", \"out\", \"away\"",
                           "title": "Step Direction\"<\"down\", \"up\", \"out\", \"away\"",
                           "description": "Directions to spread decoration blocks.",
@@ -5118,21 +5118,21 @@
               }
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "acacia_canopy",
               "title": "Acacia Canopy",
               "isRequired": false,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "canopy_size",
                     "title": "Canopy Size",
                     "description": "The size of the canopy.",
                     "isRequired": true
                   },
                   {
-                    "dataType": 1,
+                    "dataType": "boolean",
                     "id": "simplify_canopy",
                     "title": "Simplify Canopy",
                     "description": "If true the canopy uses a simple pattern.",
@@ -5142,14 +5142,14 @@
               }
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "canopy",
               "title": "Canopy",
               "isRequired": false,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "canopy_offset",
                     "title": "Canopy Offset",
                     "description": "Canopy position offset relative to the block above the trunk.",
@@ -5157,14 +5157,14 @@
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "min",
                           "title": "Min",
                           "description": "Min canopy position offset.",
                           "isRequired": true
                         },
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "max",
                           "title": "Max",
                           "description": "Max canopy position offset.",
@@ -5174,14 +5174,14 @@
                     }
                   },
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "min_width",
                     "title": "Min Width",
                     "description": "Min width for the canopy.",
                     "isRequired": false
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "canopy_slope",
                     "title": "Canopy Slope",
                     "description": "Configuration object for the canopy slope.",
@@ -5189,14 +5189,14 @@
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "rise",
                           "title": "Rise",
                           "description": "The numerator for the slope fraction.",
                           "isRequired": false
                         },
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "run",
                           "title": "Run",
                           "description": "The denominator for the slope fraction.",
@@ -5206,13 +5206,13 @@
                     }
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "variation_chance",
                     "title": "Variation Chance",
                     "isRequired": false
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "canopy_decoration",
                     "title": "Canopy Decoration",
                     "description": "Configuration object for the canopy decoration.",
@@ -5221,13 +5221,13 @@
                       "fields": [
                         {
                           "id": "decoration_blocks_sequence",
-                          "dataType": 15,
+                          "dataType": "objectArray",
                           "subForm": {
                             "fields": []
                           },
                           "alternates": [
                             {
-                              "dataType": 17,
+                              "dataType": "stringArray",
                               "id": "decoration_blocks_sequence",
                               "title": "Decoration Blocks Sequence",
                               "isRequired": false
@@ -5235,14 +5235,14 @@
                           ]
                         },
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "num_steps",
                           "title": "Num Steps",
                           "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                           "isRequired": false
                         },
                         {
-                          "dataType": 2,
+                          "dataType": "string",
                           "id": "step_direction\"<\"down\", \"up\", \"out\", \"away\"",
                           "title": "Step Direction\"<\"down\", \"up\", \"out\", \"away\"",
                           "description": "Directions to spread decoration blocks.",
@@ -5255,14 +5255,14 @@
               }
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "cherry_canopy",
               "title": "Cherry Canopy",
               "isRequired": false,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "trunk_width",
                     "title": "Trunk Width",
                     "description": "The width of the tree trunk.",
@@ -5272,21 +5272,21 @@
               }
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "fancy_canopy",
               "title": "Fancy Canopy",
               "isRequired": false,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "height",
                     "title": "Height",
                     "description": "Number of layers for the canopy.",
                     "isRequired": true
                   },
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "radius",
                     "title": "Radius",
                     "description": "The radius of the canopy.",
@@ -5296,27 +5296,27 @@
               }
             },
             {
-              "dataType": 14,
+              "dataType": "keyedObjectCollection",
               "id": "mangrove_canopy",
               "title": "Mangrove Canopy",
               "isRequired": false,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "leaf_placement_attempts",
                     "title": "Leaf Placement Attempts",
                     "description": "Max number of attempts to create leaf blocks.",
                     "isRequired": true
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "leaf_blocks",
                     "title": "Leaf Blocks",
                     "isRequired": true
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "canopy_decoration",
                     "title": "Canopy Decoration",
                     "description": "Configuration object for the canopy decoration.",
@@ -5325,13 +5325,13 @@
                       "fields": [
                         {
                           "id": "decoration_blocks_sequence",
-                          "dataType": 15,
+                          "dataType": "objectArray",
                           "subForm": {
                             "fields": []
                           },
                           "alternates": [
                             {
-                              "dataType": 17,
+                              "dataType": "stringArray",
                               "id": "decoration_blocks_sequence",
                               "title": "Decoration Blocks Sequence",
                               "isRequired": false
@@ -5339,14 +5339,14 @@
                           ]
                         },
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "num_steps",
                           "title": "Num Steps",
                           "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                           "isRequired": false
                         },
                         {
-                          "dataType": 2,
+                          "dataType": "string",
                           "id": "step_direction\"<\"down\", \"up\", \"out\", \"away\"",
                           "title": "Step Direction\"<\"down\", \"up\", \"out\", \"away\"",
                           "description": "Directions to spread decoration blocks.",
@@ -5360,28 +5360,28 @@
               "keyDescription": "<any array element>"
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "mega_canopy",
               "title": "Mega Canopy",
               "isRequired": false,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "base_radius",
                     "title": "Base Radius",
                     "description": "Radius of the canopy.",
                     "isRequired": true
                   },
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "core_width",
                     "title": "Core Width",
                     "description": "Width of the tree trunk.",
                     "isRequired": false
                   },
                   {
-                    "dataType": 1,
+                    "dataType": "boolean",
                     "id": "simplify_canopy",
                     "title": "Simplify Canopy",
                     "description": "If true the canopy uses a simple pattern.",
@@ -5391,21 +5391,21 @@
               }
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "mega_pine_canopy",
               "title": "Mega Pine Canopy",
               "isRequired": false,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "base_radius",
                     "title": "Base Radius",
                     "description": "Radius of the canopy.",
                     "isRequired": true
                   },
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "core_width",
                     "title": "Core Width",
                     "description": "Width of the tree trunk.",
@@ -5415,14 +5415,14 @@
               }
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "pine_canopy",
               "title": "Pine Canopy",
               "isRequired": false,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "base_radius",
                     "title": "Base Radius",
                     "description": "Radius of the canopy.",
@@ -5432,35 +5432,35 @@
               }
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "roofed_canopy",
               "title": "Roofed Canopy",
               "isRequired": false,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "canopy_height",
                     "title": "Canopy Height",
                     "description": "Roofed canopies feature a base and a top layer, and an extra cap layer on some occasions, this value controls the number of layers in the middle.",
                     "isRequired": true
                   },
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "core_width",
                     "title": "Core Width",
                     "description": "Width of the tree trunk.",
                     "isRequired": true
                   },
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "outer_radius",
                     "title": "Outer Radius",
                     "description": "Radius used for the base and top layers.",
                     "isRequired": true
                   },
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "inner_radius",
                     "title": "Inner Radius",
                     "description": "Radius used for the middle layers.",
@@ -5470,7 +5470,7 @@
               }
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "spruce_canopy",
               "title": "Spruce Canopy",
               "isRequired": false,
@@ -5479,21 +5479,21 @@
               }
             },
             {
-              "dataType": 14,
+              "dataType": "keyedObjectCollection",
               "id": "random_spread_canopy",
               "title": "Random Spread Canopy",
               "isRequired": false,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "leaf_placement_attempts",
                     "title": "Leaf Placement Attempts",
                     "description": "Max number of attempts to create leaf blocks.",
                     "isRequired": true
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "leaf_blocks",
                     "title": "Leaf Blocks",
                     "isRequired": true
@@ -5503,28 +5503,28 @@
               "keyDescription": "<any array element>"
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "mangrove_roots",
               "title": "Mangrove Roots",
               "isRequired": false,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "max_root_width",
                     "title": "Max Root Width",
                     "description": "Max width that the roots can occupy. The width increases up to the max width while moving downwards. When a max width is reached, roots will grow vertically.",
                     "isRequired": true
                   },
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "max_root_length",
                     "title": "Max Root Length",
                     "description": "Max length for the roots.",
                     "isRequired": true
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "above_root",
                     "title": "Above Root",
                     "description": "Configuration object for blocks decorating the top of the roots.",
@@ -5534,13 +5534,13 @@
                     }
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "roots_may_grow_through",
                     "title": "Roots May Grow Through",
                     "isRequired": true
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "root_decoration",
                     "title": "Root Decoration",
                     "description": "Configuration object for the root decoration.",
@@ -5549,13 +5549,13 @@
                       "fields": [
                         {
                           "id": "decoration_blocks_sequence",
-                          "dataType": 15,
+                          "dataType": "objectArray",
                           "subForm": {
                             "fields": []
                           },
                           "alternates": [
                             {
-                              "dataType": 17,
+                              "dataType": "stringArray",
                               "id": "decoration_blocks_sequence",
                               "title": "Decoration Blocks Sequence",
                               "isRequired": false
@@ -5563,14 +5563,14 @@
                           ]
                         },
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "num_steps",
                           "title": "Num Steps",
                           "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
                           "isRequired": false
                         },
                         {
-                          "dataType": 2,
+                          "dataType": "string",
                           "id": "step_direction\"<\"down\", \"up\", \"out\", \"away\"",
                           "title": "Step Direction\"<\"down\", \"up\", \"out\", \"away\"",
                           "description": "Directions to spread decoration blocks.",
@@ -5586,21 +5586,21 @@
         }
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:vegetation_patch_feature",
         "title": "Vegetation Patch Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -5610,27 +5610,27 @@
               }
             },
             {
-              "dataType": 17,
+              "dataType": "stringArray",
               "id": "replaceable_blocks",
               "title": "Replaceable Blocks",
               "isRequired": true
             },
             {
-              "dataType": 2,
+              "dataType": "string",
               "id": "surface",
               "title": "Surface",
               "description": "Determines if a vegetation patch will grow from the ceiling or the floor.",
               "isRequired": false
             },
             {
-              "dataType": 0,
+              "dataType": "int",
               "id": "vertical_range",
               "title": "Vertical Range",
               "description": "Vertical range used to determine a suitable surface position for the patch.",
               "isRequired": true
             },
             {
-              "dataType": 1,
+              "dataType": "boolean",
               "id": "waterlogged",
               "title": "Waterlogged",
               "description": "If true, waterlogs the positions occupied by the ground blocks.",
@@ -5640,21 +5640,21 @@
         }
       },
       {
-        "dataType": 14,
+        "dataType": "keyedObjectCollection",
         "id": "minecraft:weighted_random_feature",
         "title": "Weighted Random Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -5664,7 +5664,7 @@
               }
             },
             {
-              "dataType": 17,
+              "dataType": "stringArray",
               "id": "features",
               "title": "Features",
               "isRequired": true

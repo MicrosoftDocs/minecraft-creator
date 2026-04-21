@@ -21,13 +21,13 @@
       {
         "id": "text",
         "title": "Text",
-        "dataType": 2,
+        "dataType": "string",
         "isRequired": true
       },
       {
         "id": "type",
         "title": "SettingType",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "dropdown",

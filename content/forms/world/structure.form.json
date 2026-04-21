@@ -22,14 +22,14 @@
         "id": "structure",
         "title": "Structure",
         "description": "Identifier of the Jigsaw Structure.",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       },
       {
         "id": "weight",
         "title": "Weight",
         "description": "Weight of the Jigsaw Structure in the set. Higher weights are more likely to be selected.",
-        "dataType": 0,
+        "dataType": "int",
         "validity": [
           {
             "comparison": ">=",

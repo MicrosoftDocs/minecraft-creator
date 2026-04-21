@@ -1,0 +1,43 @@
+{
+  "id": "custom_map_tint_grass_tint",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "custom_map_tint_grass_tint",
+    "title": "Beta Custom Map Tint Grass Tint",
+    "description": "Sets the color grass will be tinted by in this biome on the map.",
+    "fields": [
+      {
+        "id": "tint",
+        "title": "Tint",
+        "description": "Tint color used in this biome on the map.",
+        "dataType": "string",
+        "alternates": [
+          {
+            "id": "tint",
+            "dataType": "numberArray",
+            "minLength": 3,
+            "maxLength": 3
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "type",
+        "title": "GrassType",
+        "description": "Controls the type of grass tint to use.",
+        "dataType": "string",
+        "choices": [
+          {
+            "id": "noise",
+            "title": "Noise"
+          },
+          {
+            "id": "tint",
+            "title": "Tint"
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  }
+}

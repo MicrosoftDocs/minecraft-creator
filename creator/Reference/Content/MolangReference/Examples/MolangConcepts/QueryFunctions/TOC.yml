@@ -136,6 +136,8 @@
   href: query_facing_target_to_range_attack.md
 - name: query.frame_alpha
   href: query_frame_alpha.md
+- name: query.fuse_time
+  href: query_fuse_time.md
 - name: query.get_actor_info_id
   href: query_get_actor_info_id.md
 - name: query.get_animation_frame

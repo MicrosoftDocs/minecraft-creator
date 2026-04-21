@@ -25,7 +25,7 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/fox.json": [
+      "/vanilla/behavior_pack/entities/egg.json": [
         {
           "path": "/minecraft:entity/components/minecraft:pushable_by_entity/",
           "content": {}

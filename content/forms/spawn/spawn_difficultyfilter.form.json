@@ -33,7 +33,7 @@
       {
         "id": "max",
         "title": "SpawnDifficulty Legacy",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "easy",
@@ -57,7 +57,7 @@
       {
         "id": "min",
         "title": "SpawnDifficulty Legacy",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "easy",

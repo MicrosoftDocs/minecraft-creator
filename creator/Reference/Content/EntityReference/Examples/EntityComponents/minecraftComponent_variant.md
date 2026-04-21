@@ -20,21 +20,13 @@ Variant is typically used as a per-type way to express a different visual form o
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| value | 0 | Integer number | The Id of the variant. By convention, 0 is the Id of the base entity/default appearance. | Fox: `1`, Frog: `2`, Llama: `3` | 
+| value | 0 | Integer number | The Id of the variant. By convention, 0 is the Id of the base entity/default appearance. | Frog: `1`, `2`, Llama: `3` | 
 
 ## Samples
 
-#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
+#### [Frog](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/frog.json)
 
-At /minecraft:entity/component_groups/minecraft:fox_red/minecraft:variant/: 
-
-```json
-"minecraft:variant": {
-  "value": 0
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:fox_arctic/minecraft:variant/: 
+At /minecraft:entity/component_groups/cold_frog/minecraft:variant/: 
 
 ```json
 "minecraft:variant": {
@@ -42,7 +34,13 @@ At /minecraft:entity/component_groups/minecraft:fox_arctic/minecraft:variant/:
 }
 ```
 
-#### [Frog](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/frog.json)
+At /minecraft:entity/component_groups/temperate_frog/minecraft:variant/: 
+
+```json
+"minecraft:variant": {
+  "value": 0
+}
+```
 
 At /minecraft:entity/component_groups/warm_frog/minecraft:variant/: 
 

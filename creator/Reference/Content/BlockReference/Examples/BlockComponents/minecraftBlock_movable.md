@@ -28,3 +28,6 @@ Experimental toggles required: Upcoming Creator Features (in format versions bef
 ### sticky
 
 [Optional] How the block should handle adjacent blocks around it when being pushed by another block like a piston. Must be one of the following options: "same" - Adjacent blocks to this block will be moved when moved. This excludes other blocks with the "same" property. This will only work with the movement_type: "push_pull". "none" - The default and will not move adjacent blocks.
+
+
+## Samples

@@ -21,7 +21,7 @@
       {
         "id": "identifier",
         "title": "Identifier",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       }
     ]

@@ -23,14 +23,14 @@
         "id": "entity_type",
         "title": "Entity Type",
         "description": "The entity type that will be riding this entity.",
-        "dataType": 2,
+        "dataType": "string",
         "isRequired": true
       },
       {
         "id": "spawn_event",
         "title": "Spawn Event",
         "description": "The spawn event that will be used when the riding entity is created.",
-        "dataType": 2,
+        "dataType": "string",
         "defaultValue": ""
       }
     ]

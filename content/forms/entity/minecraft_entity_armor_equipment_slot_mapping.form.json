@@ -22,7 +22,7 @@
         "id": "armor_slot",
         "title": "Armor Slot",
         "description": "The armor slot an item equipped to 'minecraft:equippable''s second slot should be equipped to. It defaults to 'slot.armor.torso' for entities with a format version prior to 1.21.10, and to 'slot.armor.body' otherwise.",
-        "dataType": 2
+        "dataType": "string"
       }
     ]
   }

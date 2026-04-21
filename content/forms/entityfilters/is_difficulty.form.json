@@ -35,7 +35,7 @@
         "title": "Operator",
         "description": "(Optional) The comparison to apply with 'value'.",
         "defaultValue": "equals",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "!=",
@@ -94,7 +94,7 @@
         "title": "Subject",
         "description": "(Optional) The subject of this filter test.",
         "defaultValue": "self",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "block",
@@ -137,7 +137,7 @@
         "id": "value",
         "title": "Value",
         "description": "(Required) The game's difficulty level to test",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "easy",
@@ -190,7 +190,7 @@
       {
         "id": "test",
         "title": "Test",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/arrow.json": [
             {

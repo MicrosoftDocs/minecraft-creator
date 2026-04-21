@@ -1,0 +1,72 @@
+{
+  "id": "minecraft:behavior.emerge",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.emerge",
+    "title": "Beta Emerge Behavior",
+    "description": "Allows this entity to emerge from the ground",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "cooldown_time",
+        "title": "Cooldown Time",
+        "description": "Time in seconds the mob has to wait before using the goal again",
+        "dataType": "float",
+        "defaultValue": 0.5
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "Goal duration in seconds",
+        "dataType": "float",
+        "defaultValue": 5
+      },
+      {
+        "id": "on_done",
+        "title": "Done",
+        "description": "Trigger to be executed when the goal execution is about to end",
+        "dataType": "object",
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "beta/actordefinitiontrigger"
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      }
+    ]
+  }
+}

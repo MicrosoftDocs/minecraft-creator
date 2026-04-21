@@ -72,11 +72,11 @@
       {
         "id": "color",
         "title": "Color",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "alternates": [
           {
             "id": "color",
-            "dataType": 16,
+            "dataType": "object",
             "subForm": {
               "id": "color",
               "title": "Color",
@@ -84,18 +84,18 @@
                 {
                   "id": "gradient",
                   "title": "Gradient",
-                  "dataType": 16,
+                  "dataType": "object",
                   "alternates": [],
                   "isRequired": true
                 },
                 {
                   "id": "interpolant",
                   "title": "Interpolant",
-                  "dataType": 24,
+                  "dataType": "keyedStringCollection",
                   "alternates": [
                     {
                       "id": "interpolant",
-                      "dataType": 14,
+                      "dataType": "keyedObjectCollection",
                       "readOnly": true,
                       "subForm": {
                         "id": "interpolant",
@@ -104,13 +104,13 @@
                           {
                             "id": "expression",
                             "title": "Expression",
-                            "dataType": 2,
+                            "dataType": "string",
                             "isRequired": true
                           },
                           {
                             "id": "version",
                             "title": "Version",
-                            "dataType": 0,
+                            "dataType": "int",
                             "isRequired": true
                           }
                         ]
@@ -118,7 +118,7 @@
                     },
                     {
                       "id": "interpolant",
-                      "dataType": 3
+                      "dataType": "float"
                     }
                   ],
                   "isRequired": true

@@ -22,7 +22,7 @@
       {
         "id": "predicate_type",
         "title": "PosType",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "minecraft:always_true",

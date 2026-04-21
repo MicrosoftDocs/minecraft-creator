@@ -23,14 +23,14 @@
         "id": "alias",
         "title": "Alias",
         "description": "Alias of Direct pool",
-        "dataType": 2,
+        "dataType": "string",
         "isRequired": true
       },
       {
         "id": "target",
         "title": "Target",
         "description": "Target pool",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       }
     ]

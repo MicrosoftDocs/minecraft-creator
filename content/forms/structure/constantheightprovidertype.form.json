@@ -22,7 +22,7 @@
       {
         "id": "type",
         "title": "HeightProviderType",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "constant",
@@ -39,7 +39,7 @@
         "id": "value",
         "title": "Value",
         "description": "Constant anchor point",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       }
     ]

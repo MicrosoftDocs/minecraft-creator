@@ -13,14 +13,23 @@ ms.date: 02/11/2025
 Allows the mob to move around on its own while mounted seeking a target to attack. Also will allow an entity to target another entity for an attack.
 
 
-## Mount Pathing Behavior Properties
+## Entity Mount Pathing Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Cave Spider: `5`, Chicken: `2`, Llama: `1` | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Cave Spider: `5`, Chicken: `2`, Llama: `1` | 
 | speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Cave Spider: `1.25`, Chicken: `1.5` | 
 | target_dist | 0 | Decimal number | The distance at which this mob wants to be away from its target |  | 
 | track_target | false | Boolean true/false | If true, this mob will chase after the target as long as it's a valid target | Cave Spider: `true` | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples
 

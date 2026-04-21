@@ -206,87 +206,87 @@
         "id": "angry_sound",
         "title": "Angry Sound",
         "description": "The sound event to play when the mob is angry",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "broadcast_anger",
         "title": "Broadcast Anger",
         "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "broadcast_anger_on_attack",
         "title": "Broadcast Anger On Attack",
         "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob attacks",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "broadcast_anger_on_being_attacked",
         "title": "Broadcast Anger On Being Attacked",
         "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob is attacked",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "broadcast_anger_when_dying",
         "title": "Broadcast Anger When Dying",
         "description": "If false, when this mob is killed it does not spread its anger to other entities of the same entity definition within the broadcastRange",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "broadcast_filters",
         "title": "Broadcast Filters",
         "description": "Conditions that make this entry in the list valid",
-        "dataType": 20
+        "dataType": "minecraftFilter"
       },
       {
         "id": "broadcast_range",
         "title": "Broadcast Range",
         "description": "Distance in blocks within which other entities of the same entity definition will become angry",
         "defaultValue": 20,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "broadcast_targets",
         "title": "Broadcast Targets",
         "description": "A list of entity families to broadcast anger to",
-        "dataType": 17
+        "dataType": "stringArray"
       },
       {
         "id": "calm_event",
         "title": "Calm Event",
         "description": "Event to run after the number of seconds specified in duration expires (when the entity stops being 'angry')",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "duration",
         "title": "Duration",
         "description": "The amount of time in seconds that the entity will be angry",
         "defaultValue": 25,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "duration_delta",
         "title": "Duration Delta",
         "description": "Variance in seconds added to the duration [-delta, delta]",
         "defaultValue": 0,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "filters",
         "title": "Filters",
         "description": "Filter out mob types that it should not attack while angry (other Piglins)",
-        "dataType": 20
+        "dataType": "minecraftFilter"
       },
       {
         "id": "sound_interval",
         "title": "Sound Interval",
         "description": "The range of time in seconds to randomly wait before playing the sound again",
         "defaultValue": 0,
-        "dataType": 18
+        "dataType": "intRange"
       }
     ],
     "samples": {}

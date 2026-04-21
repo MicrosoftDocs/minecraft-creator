@@ -29,208 +29,77 @@
         "id": "avoid_block_sound",
         "title": "Avoid Block Sound",
         "description": "The sound event to play when the mob is avoiding a block.",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": "retreat"
-            }
-          ]
-        }
+        "dataType": "string"
       },
       {
         "id": "on_escape",
         "title": "Escape",
         "description": "Escape trigger.",
-        "dataType": 22,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": [
-                {
-                  "event": "escaped_event",
-                  "target": "self"
-                }
-              ]
-            }
-          ]
-        }
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "search_height",
         "title": "Search Height",
         "description": "Maximum distance to look for a block in y.",
         "defaultValue": 0,
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": 4
-            }
-          ]
-        }
+        "dataType": "int"
       },
       {
         "id": "search_range",
         "title": "Search Range",
         "description": "Maximum distance to look for a block in xz.",
         "defaultValue": 0,
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": 8
-            }
-          ]
-        }
+        "dataType": "int"
       },
       {
         "id": "sound_interval",
         "title": "Sound Interval",
         "description": "The range of time in seconds to randomly wait before playing the sound again.",
-        "dataType": 18,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": {
-                "min": 2,
-                "max": 5
-              }
-            }
-          ]
-        }
+        "dataType": "intRange"
       },
       {
         "id": "sprint_speed_modifier",
         "title": "Sprint Speed Modifier",
         "description": "Modifier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster.",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": "float"
       },
       {
         "id": "target_blocks",
         "title": "Target Blocks",
         "description": "List of block types this mob avoids.",
-        "dataType": 17,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": [
-                "minecraft:warped_fungus",
-                "minecraft:portal",
-                "minecraft:respawn_anchor"
-              ]
-            }
-          ]
-        }
+        "dataType": "stringArray"
       },
       {
         "id": "target_selection_method",
         "title": "Target Selection Method",
         "description": "Block search method.",
         "defaultValue": "nearest",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": "nearest"
-            }
-          ]
-        }
+        "dataType": "string"
       },
       {
         "id": "tick_interval",
         "title": "Tick Interval",
         "description": "Should start tick interval.",
         "defaultValue": 1,
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": 5
-            }
-          ]
-        }
+        "dataType": "int"
       },
       {
         "id": "walk_speed_modifier",
         "title": "Walk Speed Modifier",
         "description": "Modifier for walking speed. 1.0 means keep the regular speed, while higher numbers make the walking speed faster.",
         "defaultValue": 1,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": "float"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": "int"
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/hoglin.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-          "content": {
-            "priority": 1,
-            "tick_interval": 5,
-            "search_range": 8,
-            "search_height": 4,
-            "walk_speed_modifier": 1,
-            "sprint_speed_modifier": 1,
-            "avoid_block_sound": "retreat",
-            "sound_interval": {
-              "min": 2,
-              "max": 5
-            },
-            "target_selection_method": "nearest",
-            "target_blocks": [
-              "minecraft:warped_fungus",
-              "minecraft:portal",
-              "minecraft:respawn_anchor"
-            ],
-            "on_escape": [
-              {
-                "event": "escaped_event",
-                "target": "self"
-              }
-            ]
-          }
-        }
-      ]
-    }
+    "samples": {}
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.avoid_block",
@@ -241,8 +110,12 @@
         "id": "avoid_block_sound",
         "title": "LevelSoundEvent",
         "description": "The sound event to play when the mob is avoiding a block.",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
+          {
+            "id": "absorb_block",
+            "title": "Absorb block"
+          },
           {
             "id": "activate",
             "title": "Activate"
@@ -724,6 +597,10 @@
             "title": "Bottle.fill"
           },
           {
+            "id": "bounce",
+            "title": "Bounce"
+          },
+          {
             "id": "bow",
             "title": "Bow"
           },
@@ -1086,6 +963,10 @@
           {
             "id": "eat",
             "title": "Eat"
+          },
+          {
+            "id": "eject_block",
+            "title": "Eject block"
           },
           {
             "id": "elderguardian.curse",
@@ -2012,6 +1893,10 @@
             "title": "Purreow"
           },
           {
+            "id": "pushed_by_player",
+            "title": "Pushed by player"
+          },
+          {
             "id": "raid.horn",
             "title": "Raid.horn"
           },
@@ -2210,6 +2095,10 @@
           {
             "id": "sleep",
             "title": "Sleep"
+          },
+          {
+            "id": "slime_landing",
+            "title": "Slime landing"
           },
           {
             "id": "smithing_table.use",
@@ -2460,20 +2349,12 @@
             "title": "Wind charge.burst"
           }
         ],
-        "defaultValue": "undefined",
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": "retreat"
-            }
-          ]
-        }
+        "defaultValue": "undefined"
       },
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -2494,206 +2375,83 @@
         "id": "on_escape",
         "title": "Escape",
         "description": "Escape triggers.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "defaultValue": [],
-        "subFormId": "entity/actordefinitiontrigger",
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": [
-                {
-                  "event": "escaped_event",
-                  "target": "self"
-                }
-              ]
-            }
-          ]
-        }
+        "subFormId": "beta/actordefinitiontrigger"
       },
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
-        "defaultValue": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": "int",
+        "defaultValue": 0
       },
       {
         "id": "search_height",
         "title": "Search Height",
         "description": "Maximum distance to look for a block in y.",
-        "dataType": 0,
-        "defaultValue": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": 4
-            }
-          ]
-        }
+        "dataType": "int",
+        "defaultValue": 0
       },
       {
         "id": "search_range",
         "title": "Search Range",
         "description": "Maximum distance to look for a block in xz.",
-        "dataType": 0,
-        "defaultValue": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": 8
-            }
-          ]
-        }
+        "dataType": "int",
+        "defaultValue": 0
       },
       {
         "id": "sound_interval",
         "title": "Sound Interval",
         "description": "The range of time in seconds to randomly wait before playing the sound again.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 8,
           "min": 3
         },
-        "subFormId": "item_components/floatrange",
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": {
-                "min": 2,
-                "max": 5
-              }
-            }
-          ]
-        }
+        "subFormId": "item_components/floatrange"
       },
       {
         "id": "sprint_speed_modifier",
         "title": "Sprint Speed Modifier",
         "description": "Modifier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster.",
-        "dataType": 3,
-        "defaultValue": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": "float",
+        "defaultValue": 1
       },
       {
         "id": "target_blocks",
         "title": "Target Blocks",
         "description": "List of block types this mob avoids.",
-        "dataType": 2,
+        "dataType": "string",
         "defaultValue": [],
         "alternates": [
           {
             "id": "target_blocks",
-            "dataType": 24
+            "dataType": "keyedStringCollection"
           }
-        ],
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": [
-                "minecraft:warped_fungus",
-                "minecraft:portal",
-                "minecraft:respawn_anchor"
-              ]
-            }
-          ]
-        }
+        ]
       },
       {
         "id": "target_selection_method",
         "title": "Target Selection Method",
         "description": "Block search method.",
-        "dataType": 2,
-        "defaultValue": "nearest",
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": "nearest"
-            }
-          ]
-        }
+        "dataType": "string",
+        "defaultValue": "nearest"
       },
       {
         "id": "tick_interval",
         "title": "Tick Interval",
         "description": "Should start tick interval.",
-        "dataType": 0,
-        "defaultValue": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": 5
-            }
-          ]
-        }
+        "dataType": "int",
+        "defaultValue": 1
       },
       {
         "id": "walk_speed_modifier",
         "title": "Walk Speed Modifier",
         "description": "Modifier for walking speed. 1.0 means keep the regular speed, while higher numbers make the walking speed faster.",
-        "dataType": 3,
-        "defaultValue": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": "float",
+        "defaultValue": 1
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/hoglin.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
-          "content": {
-            "priority": 1,
-            "tick_interval": 5,
-            "search_range": 8,
-            "search_height": 4,
-            "walk_speed_modifier": 1,
-            "sprint_speed_modifier": 1,
-            "avoid_block_sound": "retreat",
-            "sound_interval": {
-              "min": 2,
-              "max": 5
-            },
-            "target_selection_method": "nearest",
-            "target_blocks": [
-              "minecraft:warped_fungus",
-              "minecraft:portal",
-              "minecraft:respawn_anchor"
-            ],
-            "on_escape": [
-              {
-                "event": "escaped_event",
-                "target": "self"
-              }
-            ]
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

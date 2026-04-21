@@ -22,11 +22,11 @@
       {
         "id": "block_state",
         "description": "The block state to match against.",
-        "dataType": 2,
+        "dataType": "string",
         "alternates": [
           {
             "id": "block_state",
-            "dataType": 16,
+            "dataType": "object",
             "readOnly": true,
             "subForm": {
               "id": "block_state",
@@ -36,23 +36,23 @@
                   "id": "name",
                   "title": "Name",
                   "description": "Name of the block",
-                  "dataType": 16,
+                  "dataType": "object",
                   "isRequired": true
                 },
                 {
                   "id": "states",
                   "title": "States",
                   "description": "Contains members named after each state, with boolean, integer, or string values.",
-                  "dataType": 31,
+                  "dataType": "keyedNumberCollection",
                   "defaultValue": {},
                   "alternates": [
                     {
                       "id": "states",
-                      "dataType": 27
+                      "dataType": "keyedBooleanCollection"
                     },
                     {
                       "id": "states",
-                      "dataType": 24
+                      "dataType": "keyedStringCollection"
                     }
                   ]
                 }
@@ -65,7 +65,7 @@
       {
         "id": "predicate_type",
         "title": "BlockType",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "minecraft:always_true",

@@ -33,7 +33,7 @@
         "id": "shape",
         "title": "Shape",
         "description": "Required field. The type of support shape for this block. Currently, the options are: `fence` and `stair`.",
-        "dataType": 2
+        "dataType": "string"
       }
     ]
   }

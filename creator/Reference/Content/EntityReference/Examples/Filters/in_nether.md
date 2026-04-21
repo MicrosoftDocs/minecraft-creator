@@ -18,12 +18,11 @@ Returns true when the subject entity is in Nether.
 
 ## In Nether Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Hoglin: `"=="` | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Hoglin: `"self"` | 
-| test | *not set* | String |  | Hoglin: `"in_nether"` | 
-| value | true | Boolean true/false | (Optional) true or false. | Hoglin: `true` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | 
+| value | true | Boolean true/false | (Optional) true or false. | 
 
 ### Operator choices
 
@@ -64,28 +63,4 @@ At Short (using Defaults)..:
 
 ```json
 { "test": "in_nether" }
-```
-
-#### [Hoglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/hoglin.json)
-
-At /minecraft:entity/component_groups/zombification_sensor/minecraft:environment_sensor/triggers/filters/: 
-
-```json
-{
-  "test": "in_nether",
-  "subject": "self",
-  "operator": "==",
-  "value": false
-}
-```
-
-At /minecraft:entity/component_groups/start_zombification/minecraft:environment_sensor/triggers/filters/: 
-
-```json
-{
-  "test": "in_nether",
-  "subject": "self",
-  "operator": "==",
-  "value": true
-}
 ```

@@ -39,3 +39,33 @@ The description identifier of the geometry and material used to render the item 
   }
 }
 ```
+
+#### Block Fabricator
+
+
+```json
+"minecraft:item_visual": {
+  "geometry": "geometry.mikeamm_gwve_fabricator_in_hand",
+  "material_instances": {
+    "*": {
+      "texture": "mikeamm_gwve_fabricator_in_hand",
+      "render_method": "alpha_test"
+    }
+  }
+}
+```
+
+#### Die
+
+
+```json
+"minecraft:item_visual": {
+  "geometry": "minecraft:geometry.full_block",
+  "material_instances": {
+    "*": {
+      "texture": "die_red",
+      "render_method": "opaque"
+    }
+  }
+}
+```

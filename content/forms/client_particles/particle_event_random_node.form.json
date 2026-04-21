@@ -20,12 +20,12 @@
       {
         "id": "expression",
         "title": "Expression",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": 0,
         "alternates": [
           {
             "id": "expression",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "expression",
@@ -34,13 +34,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -48,20 +48,20 @@
           },
           {
             "id": "expression",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       },
       {
         "id": "log",
         "title": "Log",
-        "dataType": 2,
+        "dataType": "string",
         "defaultValue": ""
       },
       {
         "id": "particle_effect",
         "title": "Particle Effect",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "effect": "",
           "pre_effect_expression": 0,
@@ -72,25 +72,25 @@
       {
         "id": "randomize",
         "title": "Randomize",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subFormId": "client_particles/particle_event_random_node"
       },
       {
         "id": "sequence",
         "title": "Sequence",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subFormId": "client_particles/particle_event_node"
       },
       {
         "id": "sound_effect",
         "title": "Sound Effect",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "client_particles/particle_sound_effect_event"
       },
       {
         "id": "weight",
         "title": "Weight",
-        "dataType": 3,
+        "dataType": "float",
         "isRequired": true
       }
     ]

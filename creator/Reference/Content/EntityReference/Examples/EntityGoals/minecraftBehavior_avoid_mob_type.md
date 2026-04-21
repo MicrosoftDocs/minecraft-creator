@@ -30,7 +30,7 @@ Allows the entity to run away from other entities that meet the criteria specifi
 | max_dist | 3 | Decimal number | Maximum distance to look for an avoid target for the entity. |  | 
 | max_flee | 10 | Decimal number | How many blocks away from its avoid target the entity must be for it to stop fleeing from the avoid target. |  | 
 | on_escape_event | {"event":"","filters":{"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null},"target":"self"} | [Escape Event](#entity-actordefinitiontrigger) item | Event that is triggered when escaping from a mob. |  | 
-| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Bogged: `4`, Cave Spider: `2`, Fox: `5` | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Bogged: `4`, Cave Spider: `2`, Guardian: `1` | 
 | probability_per_strength | 1 | Decimal number | Percent chance this entity will stop avoiding another entity based on that entity's strength, where 1.0 = 100%. Value must be <= 1. | Dolphin: `0.14` | 
 | remove_target | false | Boolean true/false | Determine if we should remove target when fleeing or not. |  | 
 | river_speed_multiplier | 0.75 | Decimal number | Multiplier for speed when following river. 1.0 means keep the regular speed, while higher numbers make the speed faster. |  | 
@@ -163,6 +163,7 @@ Allows the entity to run away from other entities that meet the criteria specifi
 | bottle.dragonbreath | Bottle.dragonbreath | |
 | bottle.empty | Bottle.empty | |
 | bottle.fill | Bottle.fill | |
+| bounce | Bounce | |
 | bow | Bow | |
 | bow.hit | Bow.hit | |
 | break | Break | |
@@ -485,6 +486,7 @@ Allows the entity to run away from other entities that meet the criteria specifi
 | pumpkin.carve | Pumpkin.carve | |
 | purr | Purr | |
 | purreow | Purreow | |
+| pushed_by_player | Pushed by player | |
 | raid.horn | Raid.horn | |
 | ram_impact | Ram impact | |
 | ram_impact.screamer | Ram impact.screamer | |
@@ -774,57 +776,6 @@ Has minimum and maximum float values.
 }
 ```
 
-#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
-
-
-```json
-"minecraft:behavior.avoid_mob_type": {
-  "priority": 5,
-  "entity_types": [
-    {
-      "filters": {
-        "any_of": [
-          {
-            "all_of": [
-              {
-                "test": "is_family",
-                "subject": "other",
-                "value": "player"
-              },
-              {
-                "test": "trusts",
-                "subject": "other",
-                "operator": "!=",
-                "value": true
-              },
-              {
-                "test": "is_sneaking",
-                "subject": "other",
-                "operator": "!=",
-                "value": true
-              }
-            ]
-          },
-          {
-            "test": "is_family",
-            "subject": "other",
-            "value": "polarbear"
-          },
-          {
-            "test": "is_family",
-            "subject": "other",
-            "value": "wolf"
-          }
-        ]
-      },
-      "max_dist": 10,
-      "walk_speed_multiplier": 1,
-      "sprint_speed_multiplier": 1.5
-    }
-  ]
-}
-```
-
 #### [Guardian](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/guardian.json)
 
 
@@ -846,5 +797,26 @@ Has minimum and maximum float values.
     }
   ],
   "priority": 1
+}
+```
+
+#### [Parched](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parched.json)
+
+
+```json
+"minecraft:behavior.avoid_mob_type": {
+  "entity_types": [
+    {
+      "filters": {
+        "test": "is_family",
+        "subject": "other",
+        "value": "wolf"
+      },
+      "max_dist": 6,
+      "walk_speed_multiplier": 1.2,
+      "sprint_speed_multiplier": 1.2
+    }
+  ],
+  "priority": 5
 }
 ```

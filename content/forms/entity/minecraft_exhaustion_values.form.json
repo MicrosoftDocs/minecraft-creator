@@ -23,7 +23,7 @@
         "title": "Attack",
         "description": "Amount of exhaustion applied when attacking.",
         "defaultValue": 0.1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/player.json": [
             {
@@ -38,7 +38,7 @@
         "title": "Damage",
         "description": "Amount of exhaustion applied when taking damage.",
         "defaultValue": 0.1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/player.json": [
             {
@@ -53,7 +53,7 @@
         "title": "Heal",
         "description": "Amount of exhaustion applied when healed through food regeneration.",
         "defaultValue": 6,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/player.json": [
             {
@@ -68,7 +68,7 @@
         "title": "Jump",
         "description": "Amount of exhaustion applied when jumping.",
         "defaultValue": 0.05,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/player.json": [
             {
@@ -83,7 +83,7 @@
         "title": "Lunge",
         "description": "Amount of exhaustion applied when triggering the lunge enchantment, multiplied by the enchantment level.",
         "defaultValue": 4,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/player.json": [
             {
@@ -98,7 +98,7 @@
         "title": "Mine",
         "description": "Amount of exhaustion applied when mining.",
         "defaultValue": 0.005,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/player.json": [
             {
@@ -113,7 +113,7 @@
         "title": "Sprint",
         "description": "Amount of exhaustion applied when sprinting.",
         "defaultValue": 0.01,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/player.json": [
             {
@@ -128,7 +128,7 @@
         "title": "Sprint Jump",
         "description": "Amount of exhaustion applied when sprint jumping.",
         "defaultValue": 0.2,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/player.json": [
             {
@@ -143,7 +143,7 @@
         "title": "Swim",
         "description": "Amount of exhaustion applied when swimming.",
         "defaultValue": 0.01,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/player.json": [
             {
@@ -158,7 +158,7 @@
         "title": "Walk",
         "description": "Amount of exhaustion applied when walking.",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       }
     ],
     "samples": {

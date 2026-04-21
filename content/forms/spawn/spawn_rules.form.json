@@ -52,14 +52,14 @@
       {
         "id": "conditions",
         "title": "Conditions",
-        "dataType": 15,
+        "dataType": "objectArray",
         "defaultValue": [],
         "subFormId": "spawn/spawn_biomeconditions"
       },
       {
         "id": "description",
         "title": "Description",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "spawn/spawn_description",
         "isRequired": true
       }

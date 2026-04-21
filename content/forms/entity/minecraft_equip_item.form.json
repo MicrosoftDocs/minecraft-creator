@@ -43,7 +43,7 @@
         "id": "excluded_items",
         "title": "Excluded Items",
         "description": "List of items that the entity should not equip.",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
@@ -55,7 +55,7 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/drowned.json": [
+          "/vanilla/behavior_pack/entities/parched.json": [
             {
               "path": "/minecraft:entity/components/minecraft:equip_item/",
               "content": [
@@ -66,11 +66,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "can_wear_armor",
-        "title": "Can Wear Armor",
-        "dataType": 2
       }
     ],
     "samples": {
@@ -83,26 +78,6 @@
                 "item": "minecraft:banner:15"
               }
             ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/drowned.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:equip_item/",
-          "content": {
-            "excluded_items": [
-              {
-                "item": "minecraft:banner:15"
-              }
-            ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/fox.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:equip_item/",
-          "content": {
-            "can_wear_armor": false
           }
         }
       ],
@@ -119,6 +94,30 @@
         }
       ],
       "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equip_item/",
+          "content": {
+            "excluded_items": [
+              {
+                "item": "minecraft:banner:15"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/stray.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equip_item/",
+          "content": {
+            "excluded_items": [
+              {
+                "item": "minecraft:banner:15"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
         {
           "path": "/minecraft:entity/components/minecraft:equip_item/",
           "content": {

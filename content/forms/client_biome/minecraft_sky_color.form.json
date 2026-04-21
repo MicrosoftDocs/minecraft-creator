@@ -25,11 +25,11 @@
         "id": "sky_color",
         "title": "Sky Color",
         "description": "RGB color of the sky",
-        "dataType": 2,
+        "dataType": "string",
         "alternates": [
           {
             "id": "sky_color",
-            "dataType": 32,
+            "dataType": "numberArray",
             "minLength": 3,
             "maxLength": 3
           }

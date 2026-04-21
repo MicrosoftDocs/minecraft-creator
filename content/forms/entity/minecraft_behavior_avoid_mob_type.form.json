@@ -23,27 +23,27 @@
         "id": "avoid_mob_sound",
         "title": "Avoid Mob Sound",
         "description": "The sound event to play when the mob is avoiding another mob.",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "avoid_target_xz",
         "title": "Avoid Target Xz",
         "description": "The next target position the entity chooses to avoid another entity will be chosen within this XZ Distance.",
         "defaultValue": 16,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "avoid_target_y",
         "title": "Avoid Target Y",
         "description": "The next target position the entity chooses to avoid another entity will be chosen within this Y Distance.",
         "defaultValue": 7,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "entity_types",
         "title": "Entity Types",
         "description": "The list of conditions another entity must meet to be a valid target to avoid.",
-        "dataType": 20,
+        "dataType": "minecraftFilter",
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
@@ -114,53 +114,6 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
-              "content": [
-                {
-                  "filters": {
-                    "any_of": [
-                      {
-                        "all_of": [
-                          {
-                            "test": "is_family",
-                            "subject": "other",
-                            "value": "player"
-                          },
-                          {
-                            "test": "trusts",
-                            "subject": "other",
-                            "operator": "!=",
-                            "value": true
-                          },
-                          {
-                            "test": "is_sneaking",
-                            "subject": "other",
-                            "operator": "!=",
-                            "value": true
-                          }
-                        ]
-                      },
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "polarbear"
-                      },
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "wolf"
-                      }
-                    ]
-                  },
-                  "max_dist": 10,
-                  "walk_speed_multiplier": 1,
-                  "sprint_speed_multiplier": 1.5
-                }
-              ]
-            }
-          ],
           "/vanilla/behavior_pack/entities/guardian.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:guardian_passive/minecraft:behavior.avoid_mob_type/",
@@ -180,6 +133,23 @@
                 }
               ]
             }
+          ],
+          "/vanilla/behavior_pack/entities/parched.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "wolf"
+                  },
+                  "max_dist": 6,
+                  "walk_speed_multiplier": 1.2,
+                  "sprint_speed_multiplier": 1.2
+                }
+              ]
+            }
           ]
         }
       },
@@ -188,34 +158,34 @@
         "title": "Ignore Visibility",
         "description": "Whether or not to ignore direct line of sight while this entity is running away from other specified entities.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "max_dist",
         "title": "Max Dist",
         "description": "Maximum distance to look for an avoid target for the entity.",
         "defaultValue": 3,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "max_flee",
         "title": "Max Flee",
         "description": "How many blocks away from its avoid target the entity must be for it to stop fleeing from the avoid target.",
         "defaultValue": 10,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "on_escape_event",
         "title": "Escape Event",
         "description": "Event that is triggered when escaping from a mob.",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "probability_per_strength",
         "title": "Probability Per Strength",
         "description": "Percent chance this entity will stop avoiding another entity based on that entity's strength, where 1.0 = 100%.",
         "defaultValue": 1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/dolphin.json": [
             {
@@ -230,41 +200,41 @@
         "title": "Remove Target",
         "description": "Determine if we should remove target when fleeing or not.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "sound_interval",
         "title": "Sound Interval",
         "description": "The range of time in seconds to randomly wait before playing the sound again.",
-        "dataType": 18
+        "dataType": "intRange"
       },
       {
         "id": "sprint_distance",
         "title": "Sprint Distance",
         "description": "How many blocks within range of its avoid target the entity must be for it to begin sprinting away from the avoid target.",
         "defaultValue": 7,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "sprint_speed_multiplier",
         "title": "Sprint Speed Multiplier",
         "description": "Multiplier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster.",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "walk_speed_multiplier",
         "title": "Walk Speed Multiplier",
         "description": "Multiplier for walking speed. 1.0 means keep the regular speed, while higher numbers make the walking speed faster.",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
@@ -284,16 +254,16 @@
               "content": 2
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
-              "content": 5
-            }
-          ],
           "/vanilla/behavior_pack/entities/guardian.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:guardian_passive/minecraft:behavior.avoid_mob_type/",
               "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/parched.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
+              "content": 5
             }
           ]
         }
@@ -379,56 +349,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/fox.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
-          "content": {
-            "priority": 5,
-            "entity_types": [
-              {
-                "filters": {
-                  "any_of": [
-                    {
-                      "all_of": [
-                        {
-                          "test": "is_family",
-                          "subject": "other",
-                          "value": "player"
-                        },
-                        {
-                          "test": "trusts",
-                          "subject": "other",
-                          "operator": "!=",
-                          "value": true
-                        },
-                        {
-                          "test": "is_sneaking",
-                          "subject": "other",
-                          "operator": "!=",
-                          "value": true
-                        }
-                      ]
-                    },
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "polarbear"
-                    },
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "wolf"
-                    }
-                  ]
-                },
-                "max_dist": 10,
-                "walk_speed_multiplier": 1,
-                "sprint_speed_multiplier": 1.5
-              }
-            ]
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/guardian.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:guardian_passive/minecraft:behavior.avoid_mob_type/",
@@ -451,6 +371,26 @@
             "priority": 1
           }
         }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
+          "content": {
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "wolf"
+                },
+                "max_dist": 6,
+                "walk_speed_multiplier": 1.2,
+                "sprint_speed_multiplier": 1.2
+              }
+            ],
+            "priority": 5
+          }
+        }
       ]
     }
   },
@@ -463,8 +403,12 @@
         "id": "avoid_mob_sound",
         "title": "LevelSoundEvent",
         "description": "The sound event to play when the mob is avoiding another mob.",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
+          {
+            "id": "absorb_block",
+            "title": "Absorb block"
+          },
           {
             "id": "activate",
             "title": "Activate"
@@ -946,6 +890,10 @@
             "title": "Bottle.fill"
           },
           {
+            "id": "bounce",
+            "title": "Bounce"
+          },
+          {
             "id": "bow",
             "title": "Bow"
           },
@@ -1308,6 +1256,10 @@
           {
             "id": "eat",
             "title": "Eat"
+          },
+          {
+            "id": "eject_block",
+            "title": "Eject block"
           },
           {
             "id": "elderguardian.curse",
@@ -2234,6 +2186,10 @@
             "title": "Purreow"
           },
           {
+            "id": "pushed_by_player",
+            "title": "Pushed by player"
+          },
+          {
             "id": "raid.horn",
             "title": "Raid.horn"
           },
@@ -2432,6 +2388,10 @@
           {
             "id": "sleep",
             "title": "Sleep"
+          },
+          {
+            "id": "slime_landing",
+            "title": "Slime landing"
           },
           {
             "id": "smithing_table.use",
@@ -2688,20 +2648,20 @@
         "id": "avoid_target_xz",
         "title": "Avoid Target Xz",
         "description": "The next target position the entity chooses to avoid another entity will be chosen within this XZ Distance.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 16
       },
       {
         "id": "avoid_target_y",
         "title": "Avoid Target Y",
         "description": "The next target position the entity chooses to avoid another entity will be chosen within this Y Distance.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 7
       },
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -2722,12 +2682,12 @@
         "id": "entity_types",
         "title": "Entity Types",
         "description": "The list of conditions another entity must meet to be a valid target to avoid.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "defaultValue": [],
         "alternates": [
           {
             "id": "entity_types",
-            "dataType": 16,
+            "dataType": "object",
             "subForm": {
               "id": "entity_types",
               "title": "Entity Types",
@@ -2736,20 +2696,20 @@
                   "id": "check_if_outnumbered",
                   "title": "Check If Outnumbered",
                   "description": "If true, the mob will check if its outnumbered",
-                  "dataType": 1,
+                  "dataType": "boolean",
                   "defaultValue": false
                 },
                 {
                   "id": "cooldown",
                   "title": "Cooldown",
                   "description": "The amount of time in seconds that the mob has to wait before selecting a target of the same type again",
-                  "dataType": 0,
+                  "dataType": "int",
                   "defaultValue": 0
                 },
                 {
                   "id": "filters",
                   "description": "Conditions that make this entry in the list valid",
-                  "dataType": 16,
+                  "dataType": "object",
                   "defaultValue": {
                     "AND": null,
                     "NOT": null,
@@ -2768,39 +2728,39 @@
                         "id": "domain",
                         "title": "Domain",
                         "description": "The domain the test should be performed in.",
-                        "dataType": 16
+                        "dataType": "object"
                       },
                       {
                         "id": "operator",
                         "title": "Operator",
                         "description": "The comparison to apply with 'value'.",
-                        "dataType": 16
+                        "dataType": "object"
                       },
                       {
                         "id": "subject",
                         "title": "Subject",
                         "description": "The subject of this filter test.",
-                        "dataType": 16
+                        "dataType": "object"
                       },
                       {
                         "id": "test",
                         "title": "Test",
                         "description": "The name of the test to apply.",
-                        "dataType": 2,
+                        "dataType": "string",
                         "isRequired": true
                       },
                       {
                         "id": "value",
                         "title": "Value",
                         "description": "The value being compared with the test.",
-                        "dataType": 16
+                        "dataType": "object"
                       }
                     ]
                   },
                   "alternates": [
                     {
                       "id": "filters",
-                      "dataType": 16
+                      "dataType": "object"
                     }
                   ]
                 },
@@ -2808,62 +2768,62 @@
                   "id": "max_dist",
                   "title": "Max Dist",
                   "description": "Maximum distance this mob can be away to be a valid choice",
-                  "dataType": 3,
+                  "dataType": "float",
                   "defaultValue": 16
                 },
                 {
                   "id": "max_flee",
                   "title": "Max Flee",
                   "description": "Maximum distance this mob can be from the target to stop fleeing",
-                  "dataType": 3,
+                  "dataType": "float",
                   "defaultValue": 10
                 },
                 {
                   "id": "max_height",
                   "title": "Max Height",
                   "description": "Maximum height this mob can be away to be a valid choice",
-                  "dataType": 3,
+                  "dataType": "float",
                   "defaultValue": -1
                 },
                 {
                   "id": "must_see",
                   "title": "Must See",
                   "description": "If true, the mob has to be visible to be a valid choice",
-                  "dataType": 1
+                  "dataType": "boolean"
                 },
                 {
                   "id": "must_see_forget_duration",
                   "title": "Must See Forget Duration",
                   "description": "Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more",
-                  "dataType": 0,
+                  "dataType": "int",
                   "defaultValue": 3
                 },
                 {
                   "id": "priority",
                   "title": "Priority",
                   "description": "Priority for this mob type",
-                  "dataType": 0,
+                  "dataType": "int",
                   "defaultValue": 0
                 },
                 {
                   "id": "reevaluate_description",
                   "title": "Reevaluate Description",
                   "description": "If true, the mob will stop being targeted if it stops meeting any conditions.",
-                  "dataType": 1,
+                  "dataType": "boolean",
                   "defaultValue": false
                 },
                 {
                   "id": "sprint_speed_multiplier",
                   "title": "Sprint Speed Multiplier",
                   "description": "Multiplier for the sprinting speed. A value of 1.0 means the speed is unchanged",
-                  "dataType": 3,
+                  "dataType": "float",
                   "defaultValue": 1
                 },
                 {
                   "id": "walk_speed_multiplier",
                   "title": "Walk Speed Multiplier",
                   "description": "Multiplier for the walking speed. A value of 1.0 means the speed is unchanged",
-                  "dataType": 3,
+                  "dataType": "float",
                   "defaultValue": 1
                 }
               ]
@@ -2940,53 +2900,6 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
-              "content": [
-                {
-                  "filters": {
-                    "any_of": [
-                      {
-                        "all_of": [
-                          {
-                            "test": "is_family",
-                            "subject": "other",
-                            "value": "player"
-                          },
-                          {
-                            "test": "trusts",
-                            "subject": "other",
-                            "operator": "!=",
-                            "value": true
-                          },
-                          {
-                            "test": "is_sneaking",
-                            "subject": "other",
-                            "operator": "!=",
-                            "value": true
-                          }
-                        ]
-                      },
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "polarbear"
-                      },
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "wolf"
-                      }
-                    ]
-                  },
-                  "max_dist": 10,
-                  "walk_speed_multiplier": 1,
-                  "sprint_speed_multiplier": 1.5
-                }
-              ]
-            }
-          ],
           "/vanilla/behavior_pack/entities/guardian.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:guardian_passive/minecraft:behavior.avoid_mob_type/",
@@ -3006,6 +2919,23 @@
                 }
               ]
             }
+          ],
+          "/vanilla/behavior_pack/entities/parched.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "wolf"
+                  },
+                  "max_dist": 6,
+                  "walk_speed_multiplier": 1.2,
+                  "sprint_speed_multiplier": 1.2
+                }
+              ]
+            }
           ]
         }
       },
@@ -3013,28 +2943,28 @@
         "id": "ignore_visibility",
         "title": "Ignore Visibility",
         "description": "Whether or not to ignore direct line of sight while this entity is running away from other specified entities.",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": false
       },
       {
         "id": "max_dist",
         "title": "Max Dist",
         "description": "Maximum distance to look for an avoid target for the entity.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 3
       },
       {
         "id": "max_flee",
         "title": "Max Flee",
         "description": "How many blocks away from its avoid target the entity must be for it to stop fleeing from the avoid target.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 10
       },
       {
         "id": "on_escape_event",
         "title": "Escape Event",
         "description": "Event that is triggered when escaping from a mob.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "event": "",
           "filters": {
@@ -3049,12 +2979,12 @@
           },
           "target": "self"
         },
-        "subFormId": "entity/actordefinitiontrigger"
+        "subFormId": "beta/actordefinitiontrigger"
       },
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
@@ -3075,16 +3005,16 @@
               "content": 2
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
-              "content": 5
-            }
-          ],
           "/vanilla/behavior_pack/entities/guardian.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:guardian_passive/minecraft:behavior.avoid_mob_type/",
               "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/parched.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
+              "content": 5
             }
           ]
         }
@@ -3093,7 +3023,7 @@
         "id": "probability_per_strength",
         "title": "Probability Per Strength",
         "description": "Percent chance this entity will stop avoiding another entity based on that entity's strength, where 1.0 = 100%.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1,
         "validity": [
           {
@@ -3114,21 +3044,21 @@
         "id": "remove_target",
         "title": "Remove Target",
         "description": "Determine if we should remove target when fleeing or not.",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": false
       },
       {
         "id": "river_speed_multiplier",
         "title": "River Speed Multiplier",
         "description": "Multiplier for speed when following river. 1.0 means keep the regular speed, while higher numbers make the speed faster.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.75
       },
       {
         "id": "sound_interval",
         "title": "Sound Interval",
         "description": "The range of time in seconds to randomly wait before playing the sound again.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 8,
           "min": 3
@@ -3139,21 +3069,21 @@
         "id": "sprint_distance",
         "title": "Sprint Distance",
         "description": "How many blocks within range of its avoid target the entity must be for it to begin sprinting away from the avoid target.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 7
       },
       {
         "id": "sprint_speed_multiplier",
         "title": "Sprint Speed Multiplier",
         "description": "Multiplier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1
       },
       {
         "id": "walk_speed_multiplier",
         "title": "Walk Speed Multiplier",
         "description": "Multiplier for walking speed. 1.0 means keep the regular speed, while higher numbers make the walking speed faster.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1
       }
     ],
@@ -3237,56 +3167,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/fox.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
-          "content": {
-            "priority": 5,
-            "entity_types": [
-              {
-                "filters": {
-                  "any_of": [
-                    {
-                      "all_of": [
-                        {
-                          "test": "is_family",
-                          "subject": "other",
-                          "value": "player"
-                        },
-                        {
-                          "test": "trusts",
-                          "subject": "other",
-                          "operator": "!=",
-                          "value": true
-                        },
-                        {
-                          "test": "is_sneaking",
-                          "subject": "other",
-                          "operator": "!=",
-                          "value": true
-                        }
-                      ]
-                    },
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "polarbear"
-                    },
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "wolf"
-                    }
-                  ]
-                },
-                "max_dist": 10,
-                "walk_speed_multiplier": 1,
-                "sprint_speed_multiplier": 1.5
-              }
-            ]
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/guardian.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:guardian_passive/minecraft:behavior.avoid_mob_type/",
@@ -3307,6 +3187,26 @@
               }
             ],
             "priority": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
+          "content": {
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "wolf"
+                },
+                "max_dist": 6,
+                "walk_speed_multiplier": 1.2,
+                "sprint_speed_multiplier": 1.2
+              }
+            ],
+            "priority": 5
           }
         }
       ]

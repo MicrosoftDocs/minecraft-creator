@@ -1,0 +1,170 @@
+{
+  "id": "minecraft:behavior.offer_flower",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.offer_flower",
+    "title": "Beta Offer Flower Behavior",
+    "description": "Allows the mob to offer a flower to another mob with the minecraft:take_flower behavior.",
+    "fields": [
+      {
+        "id": "chance_to_start",
+        "title": "Chance To Start",
+        "description": "Percent chance that the mob will start this goal from 0.0 to 1.0 (where 1.0 = 100%).",
+        "dataType": "float",
+        "defaultValue": 0.0001250000059371814,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "filters",
+        "description": "Conditions that need to be met for the behavior to start.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "filters",
+          "title": "Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "filters",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "max_head_rotation_y",
+        "title": "Max Head Rotation Y",
+        "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target.",
+        "dataType": "float",
+        "defaultValue": 30
+      },
+      {
+        "id": "max_offer_flower_duration",
+        "title": "Max Offer Flower Duration",
+        "description": "The max amount of time (in seconds) that the mob will offer the flower for before exiting the Goal.",
+        "dataType": "float",
+        "defaultValue": 20
+      },
+      {
+        "id": "max_rotation_x",
+        "title": "Max Rotation X",
+        "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target.",
+        "dataType": "float",
+        "defaultValue": 30
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "search_area",
+        "title": "Search Area",
+        "description": "The dimensions of the AABB used to search for a potential mob to offer flower to.",
+        "dataType": "numberArray",
+        "defaultValue": [
+          6,
+          2,
+          6
+        ],
+        "alternates": [
+          {
+            "id": "search_area",
+            "dataType": "object",
+            "subForm": {
+              "id": "search_area",
+              "title": "Search Area",
+              "fields": [
+                {
+                  "id": "x",
+                  "title": "X",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "y",
+                  "title": "Y",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "z",
+                  "title": "Z",
+                  "dataType": "float",
+                  "defaultValue": 0
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

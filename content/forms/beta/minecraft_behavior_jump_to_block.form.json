@@ -1,0 +1,150 @@
+{
+  "id": "minecraft:behavior.jump_to_block",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.jump_to_block",
+    "title": "Beta Jump To Block Behavior",
+    "description": "Allows an entity to jump to another random block.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "cooldown_range",
+        "title": "Cooldown Range",
+        "description": "Minimum and maximum cooldown time-range (positive, in seconds) between each attempted jump.",
+        "dataType": "object",
+        "defaultValue": {
+          "max": 20,
+          "min": 10
+        },
+        "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
+        "subFormId": "item_components/floatrange"
+      },
+      {
+        "id": "forbidden_blocks",
+        "title": "Forbidden Blocks",
+        "description": "Blocks that the mob can't jump to.",
+        "dataType": "string",
+        "defaultValue": [],
+        "alternates": [
+          {
+            "id": "forbidden_blocks",
+            "dataType": "keyedStringCollection"
+          }
+        ]
+      },
+      {
+        "id": "max_velocity",
+        "title": "Max Velocity",
+        "description": "The maximum velocity with which the mob can jump.",
+        "dataType": "float",
+        "defaultValue": 1.5
+      },
+      {
+        "id": "minimum_distance",
+        "title": "Minimum Distance",
+        "description": "The minimum distance (in blocks) from the mob to a block, in order to consider jumping to it.",
+        "dataType": "int",
+        "defaultValue": 2
+      },
+      {
+        "id": "minimum_path_length",
+        "title": "Minimum Path Length",
+        "description": "The minimum length (in blocks) of the mobs path to a block, in order to consider jumping to it.",
+        "dataType": "int",
+        "defaultValue": 5
+      },
+      {
+        "id": "preferred_blocks",
+        "title": "Preferred Blocks",
+        "description": "Blocks that the mob prefers jumping to.",
+        "dataType": "string",
+        "defaultValue": [],
+        "alternates": [
+          {
+            "id": "preferred_blocks",
+            "dataType": "keyedStringCollection"
+          }
+        ]
+      },
+      {
+        "id": "preferred_blocks_chance",
+        "title": "Preferred Blocks Chance",
+        "description": "Chance (between 0.0 and 1.0) that the mob will jump to a preferred block, if in range. Only matters if preferred blocks are defined.",
+        "dataType": "float",
+        "defaultValue": 1,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "scale_factor",
+        "title": "Scale Factor",
+        "description": "The scalefactor of the bounding box of the mob while it is jumping.",
+        "dataType": "float",
+        "defaultValue": 0.699999988079071
+      },
+      {
+        "id": "search_height",
+        "title": "Search Height",
+        "description": "The height (in blocks, in range [1, 15]) of the search box, centered around the mob.",
+        "dataType": "int",
+        "defaultValue": 10,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 1
+          },
+          {
+            "comparison": "<=",
+            "value": 15
+          }
+        ]
+      },
+      {
+        "id": "search_width",
+        "title": "Search Width",
+        "description": "The width (in blocks, in range [1, 15]) of the search box, centered around the mob.",
+        "dataType": "int",
+        "defaultValue": 8,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 1
+          },
+          {
+            "comparison": "<=",
+            "value": 15
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -301,7 +301,7 @@
         "id": "triggers",
         "title": "Triggers",
         "description": "List of triggers with the events to call when taking specific kinds of damage.\"",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "List of triggers with the events to call when taking specific kinds of damage.\"",
@@ -311,40 +311,40 @@
               "title": "Cause",
               "description": "Type of damage that triggers the events.",
               "defaultValue": "none",
-              "dataType": 2
+              "dataType": "string"
             },
             {
               "id": "damage_modifier",
               "title": "Damage Modifier",
               "description": "A modifier that adds/removes to the base damage received from the specified damage cause. It does not reduce damage to less than 0.",
               "defaultValue": 0,
-              "dataType": 3
+              "dataType": "float"
             },
             {
               "id": "damage_multiplier",
               "title": "Damage Multiplier",
               "description": "A multiplier that modifies the base damage received from the specified damage cause. If \"deals_damage\" is true the multiplier can only reduce the damage the entity will take to a minimum of 1.",
               "defaultValue": 1,
-              "dataType": 3
+              "dataType": "float"
             },
             {
               "id": "deals_damage",
               "title": "Deals Damage",
               "description": "Defines how received damage affects the entity:\n                                          \\n- \"yes\", received damage is applied to the entity and all consequences of the attack occur.\n                                          \\n- \"no\", entity is unaffected and no side effects from attacking occur.\n                                          \\n- \"no_but_side_effects_apply\", entity is unaffected, but the side effects of the attack apply. This means that the attacker's weapon loses durability.\n                                          \\n- \"no_but_entity_effects_apply\", damage is not applied to the entity, but knockback and enchantments are applied and the attacker's weapon is used as normal. The entity does not flash red.",
               "defaultValue": false,
-              "dataType": 1
+              "dataType": "boolean"
             },
             {
               "id": "on_damage",
               "title": "Damage",
               "description": "Defines which entities the trigger applies to, and which, if any, event to emit when damaged.",
-              "dataType": 22
+              "dataType": "minecraftEventTrigger"
             },
             {
               "id": "on_damage_sound_event",
               "title": "Damage Sound Event",
               "description": "Defines what sound to play, if any, when the \"on_damage\" filters are met.",
-              "dataType": 2
+              "dataType": "string"
             }
           ]
         },

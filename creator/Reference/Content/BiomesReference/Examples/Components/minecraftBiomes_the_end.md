@@ -26,6 +26,7 @@ Marks a biome as using End dimension terrain generation. Biomes with this compon
 | minecraft:capped | Minecraft:capped | |
 | minecraft:frozen_ocean | Minecraft:frozen ocean | |
 | minecraft:mesa | Minecraft:mesa | |
+| minecraft:noise_gradient | Minecraft:noise gradient | |
 | minecraft:overworld | Minecraft:overworld | |
 | minecraft:swamp | Minecraft:swamp | |
 | minecraft:the_end | Minecraft:the end | |

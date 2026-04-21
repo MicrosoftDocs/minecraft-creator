@@ -37,12 +37,12 @@
       {
         "id": "creation_expression",
         "title": "Creation Expression",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": 0,
         "alternates": [
           {
             "id": "creation_expression",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "creation_expression",
@@ -51,13 +51,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -65,19 +65,19 @@
           },
           {
             "id": "creation_expression",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       },
       {
         "id": "per_update_expression",
         "title": "Per Update Expression",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": 0,
         "alternates": [
           {
             "id": "per_update_expression",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "per_update_expression",
@@ -86,13 +86,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -100,7 +100,7 @@
           },
           {
             "id": "per_update_expression",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       }

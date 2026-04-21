@@ -25,7 +25,7 @@
         "id": "color",
         "title": "Color",
         "description": "RGB color of foliage, or a Foliage Color Map object.",
-        "dataType": 16
+        "dataType": "object"
       }
     ]
   }

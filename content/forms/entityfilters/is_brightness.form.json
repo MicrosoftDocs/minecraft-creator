@@ -27,7 +27,7 @@
         "title": "Operator",
         "description": "(Optional) The comparison to apply with 'value'.",
         "defaultValue": "equals",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "!=",
@@ -108,7 +108,7 @@
         "title": "Subject",
         "description": "(Optional) The subject of this filter test.",
         "defaultValue": "self",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "block",
@@ -151,7 +151,7 @@
         "id": "value",
         "title": "Value",
         "description": "(Required) The brightness value to compare with.",
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
@@ -168,7 +168,7 @@
       {
         "id": "test",
         "title": "Test",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {

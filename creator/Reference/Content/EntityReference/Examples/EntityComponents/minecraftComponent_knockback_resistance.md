@@ -22,7 +22,7 @@ This item can also be represented as a `Decimal number`.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | max | *not set* | Decimal number | Maximum potential knockback resistance for this entity. | Ender Dragon: `100` | 
-| value | *not set* | Decimal number | The amount of knockback resistance, from 0.0 (none) to 1.0 (full immunity). | Armor Stand: `1`, Ender Dragon: `100`, Hoglin: `0.6` | 
+| value | *not set* | Decimal number | The amount of knockback resistance, from 0.0 (none) to 1.0 (full immunity). | Armor Stand: `1`, Ender Dragon: `100` | 
 
 ## Samples
 
@@ -51,14 +51,5 @@ This item can also be represented as a `Decimal number`.
 "minecraft:knockback_resistance": {
   "max": 100,
   "value": 100
-}
-```
-
-#### [Hoglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/hoglin.json)
-
-
-```json
-"minecraft:knockback_resistance": {
-  "value": 0.6
 }
 ```

@@ -1,0 +1,26 @@
+{
+  "id": "Biome JSON File",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Biome JSON File",
+    "title": "Beta Biome JSON File",
+    "description": "Contains a format version and a biome definition",
+    "fields": [
+      {
+        "id": "format_version",
+        "title": "Format Version",
+        "description": "Version of the JSON schema used by this file",
+        "dataType": "string",
+        "isRequired": true
+      },
+      {
+        "id": "minecraft:biome",
+        "title": "Minecraft Biome",
+        "description": "A single biome definition",
+        "dataType": "object",
+        "subFormId": "beta/biome_definition",
+        "isRequired": true
+      }
+    ]
+  }
+}

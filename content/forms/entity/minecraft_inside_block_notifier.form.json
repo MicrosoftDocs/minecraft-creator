@@ -70,7 +70,7 @@
         "id": "block_list",
         "title": "Block List",
         "description": "List of blocks, with certain block states, that we are monitoring to see if the entity is inside.",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/boat.json": [
             {

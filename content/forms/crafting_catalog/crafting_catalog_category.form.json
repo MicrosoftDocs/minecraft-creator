@@ -23,7 +23,7 @@
         "id": "category_name",
         "title": "CraftingCatalogItemCategory",
         "description": "The category that the items will go to. This is restricted to construction, nature, equipment, or items.",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "construction",
@@ -48,7 +48,7 @@
         "id": "groups",
         "title": "Groups",
         "description": "The groups that we are adding to a category.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subFormId": "crafting_catalog/crafting_catalog_group",
         "isRequired": true
       }

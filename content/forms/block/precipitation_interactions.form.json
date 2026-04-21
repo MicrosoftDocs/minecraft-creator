@@ -9,8 +9,8 @@
       {
         "id": "precipitation_behavior",
         "title": "Precipitation Behavior",
-        "description": "What behavior should the block have. Three possible values: obrain, obstruct_rain_accumulate_snow and none",
-        "dataType": 2,
+        "description": "What behavior should the block have. Possible values: obrain, obstruct_rain_accumulate_snow, snowlogging, and none",
+        "dataType": "string",
         "choices": [
           {
             "id": "none",
@@ -23,6 +23,10 @@
           {
             "id": "obstruct_rain_accumulate_snow",
             "title": "Obstruct rain accumulate snow"
+          },
+          {
+            "id": "snowlogging",
+            "title": "Snowlogging"
           }
         ],
         "isRequired": true

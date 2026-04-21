@@ -85,7 +85,7 @@
         "id": "family",
         "title": "Family",
         "description": "List of family names.",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
             {

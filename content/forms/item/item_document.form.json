@@ -1,0 +1,26 @@
+{
+  "id": "Item Document",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Item Document",
+    "title": "Item Document",
+    "fields": [
+      {
+        "id": "components",
+        "title": "Components",
+        "description": "List of all components used in this item.",
+        "dataType": "object",
+        "subFormId": "item/item_components",
+        "isRequired": true
+      },
+      {
+        "id": "description",
+        "title": "Description",
+        "description": "Contains the required identifier for the item. May contain optional fields like menu_category.",
+        "dataType": "object",
+        "subFormId": "item/description",
+        "isRequired": true
+      }
+    ]
+  }
+}

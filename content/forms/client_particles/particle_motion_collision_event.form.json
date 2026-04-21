@@ -20,13 +20,13 @@
       {
         "id": "event",
         "title": "Event",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       },
       {
         "id": "min_speed",
         "title": "Min Speed",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 2
       }
     ]

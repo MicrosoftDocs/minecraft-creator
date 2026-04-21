@@ -21,14 +21,14 @@
       {
         "id": "components",
         "title": "Components",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "dimension/components",
         "isRequired": true
       },
       {
         "id": "description",
         "title": "Description",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "dimension/description",
         "isRequired": true
       }

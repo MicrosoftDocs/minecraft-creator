@@ -1,0 +1,87 @@
+{
+  "id": "minecraft:overworld_height",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:overworld_height",
+    "title": "Beta Overworld Height",
+    "description": "Noise parameters used to drive terrain height in the Overworld.",
+    "fields": [
+      {
+        "id": "noise_params",
+        "title": "Noise Params",
+        "description": "First value is depth - more negative means deeper underwater, while more positive means higher. Second value is scale, which affects how much noise changes as it moves from the surface.",
+        "dataType": "numberArray",
+        "minLength": 2,
+        "maxLength": 2
+      },
+      {
+        "id": "noise_type",
+        "title": "Noise Type",
+        "description": "Specifies a preset based on a built-in setting rather than manually using noise_params",
+        "dataType": "string",
+        "choices": [
+          {
+            "id": "beach",
+            "title": "Beach"
+          },
+          {
+            "id": "deep_ocean",
+            "title": "Deep ocean"
+          },
+          {
+            "id": "default",
+            "title": "Default"
+          },
+          {
+            "id": "default_mutated",
+            "title": "Default mutated"
+          },
+          {
+            "id": "extreme",
+            "title": "Extreme"
+          },
+          {
+            "id": "highlands",
+            "title": "Highlands"
+          },
+          {
+            "id": "less_extreme",
+            "title": "Less extreme"
+          },
+          {
+            "id": "lowlands",
+            "title": "Lowlands"
+          },
+          {
+            "id": "mountains",
+            "title": "Mountains"
+          },
+          {
+            "id": "mushroom",
+            "title": "Mushroom"
+          },
+          {
+            "id": "ocean",
+            "title": "Ocean"
+          },
+          {
+            "id": "river",
+            "title": "River"
+          },
+          {
+            "id": "stone_beach",
+            "title": "Stone beach"
+          },
+          {
+            "id": "swamp",
+            "title": "Swamp"
+          },
+          {
+            "id": "taiga",
+            "title": "Taiga"
+          }
+        ]
+      }
+    ]
+  }
+}

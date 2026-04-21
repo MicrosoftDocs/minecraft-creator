@@ -23,7 +23,7 @@
         "title": "Eat Animation Time",
         "description": "Sets the time in seconds the eat animation should play for.",
         "defaultValue": 1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -37,7 +37,7 @@
         "id": "eat_mob_sound",
         "title": "Eat Mob Sound",
         "description": "Sets the sound that should play when eating a mob.",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -51,7 +51,7 @@
         "id": "loot_table",
         "title": "Loot Table",
         "description": "The loot table for loot to be dropped when eating a mob.",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -66,7 +66,7 @@
         "title": "Pull In Force",
         "description": "Sets the force which the mob-to-be-eaten is pulled towards the eating mob.",
         "defaultValue": 1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -81,7 +81,7 @@
         "title": "Reach Mob Distance",
         "description": "Sets the desired distance to be reached before eating the mob.",
         "defaultValue": 1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -96,7 +96,7 @@
         "title": "Run Speed",
         "description": "Sets the entity's speed when running toward the target.",
         "defaultValue": 1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -111,7 +111,7 @@
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -147,7 +147,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -168,7 +168,7 @@
         "id": "eat_animation_time",
         "title": "Eat Animation Time",
         "description": "Sets the time in seconds the eat animation should play for.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1,
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
@@ -183,7 +183,7 @@
         "id": "eat_mob_sound",
         "title": "Eat Mob Sound",
         "description": "Sets the sound that should play when eating a mob.",
-        "dataType": 2,
+        "dataType": "string",
         "defaultValue": "",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
@@ -198,7 +198,7 @@
         "id": "loot_table",
         "title": "Loot Table",
         "description": "The loot table for loot to be dropped when eating a mob.",
-        "dataType": 2,
+        "dataType": "string",
         "defaultValue": "",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
@@ -212,7 +212,7 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
@@ -227,7 +227,7 @@
         "id": "pull_in_force",
         "title": "Pull In Force",
         "description": "Sets the force which the mob-to-be-eaten is pulled towards the eating mob.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1,
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
@@ -242,7 +242,7 @@
         "id": "reach_mob_distance",
         "title": "Reach Mob Distance",
         "description": "Sets the desired distance to be reached before eating the mob.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1,
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
@@ -257,7 +257,7 @@
         "id": "run_speed",
         "title": "Run Speed",
         "description": "Sets the entity's speed when running toward the target.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1,
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [

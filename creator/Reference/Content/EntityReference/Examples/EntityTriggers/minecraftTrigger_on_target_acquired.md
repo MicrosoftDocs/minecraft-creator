@@ -17,9 +17,9 @@ Adds a trigger to call when this entity finds a target.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| event | *not set* | String | The event to run when the conditions for this trigger are met. | Cave Spider: `"minecraft:become_angry"`, Drowned: `"minecraft:has_target"`, Hoglin: `"become_angry_event"` | 
+| event | *not set* | String | The event to run when the conditions for this trigger are met. | Cave Spider: `"minecraft:become_angry"`, Llama: `"minecraft:mad_at_wolf"`, Magma Cube: `"minecraft:become_aggressive"` | 
 | filters | *not set* | Minecraft filter | The list of conditions for this trigger to execute. | Llama: `{"all_of":[{"test":"is_family","subject":"target","value":"wolf"},{"test":"has_component","subject":"target","operator":"!=","value":"minecraft:is_tamed"}]}` | 
-| target | self | String | The target of the event. | Drowned: `"self"` | 
+| target | self | String | The target of the event. | Llama: `"self"` | 
 
 ## Samples
 
@@ -29,26 +29,6 @@ Adds a trigger to call when this entity finds a target.
 ```json
 "minecraft:on_target_acquired": {
   "event": "minecraft:become_angry"
-}
-```
-
-#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
-
-
-```json
-"minecraft:on_target_acquired": {
-  "event": "minecraft:has_target",
-  "target": "self"
-}
-```
-
-#### [Hoglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/hoglin.json)
-
-
-```json
-"minecraft:on_target_acquired": {
-  "event": "become_angry_event",
-  "target": "self"
 }
 ```
 
@@ -83,6 +63,36 @@ Adds a trigger to call when this entity finds a target.
 ```json
 "minecraft:on_target_acquired": {
   "event": "minecraft:become_aggressive",
+  "target": "self"
+}
+```
+
+#### [Polar Bear](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/polar_bear.json)
+
+At /minecraft:entity/component_groups/minecraft:baby_wild/minecraft:on_target_acquired/: 
+
+```json
+"minecraft:on_target_acquired": {
+  "event": "minecraft:on_scared",
+  "target": "self"
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:adult_wild/minecraft:on_target_acquired/: 
+
+```json
+"minecraft:on_target_acquired": {
+  "event": "minecraft:on_anger",
+  "target": "self"
+}
+```
+
+#### [Silverfish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/silverfish.json)
+
+
+```json
+"minecraft:on_target_acquired": {
+  "event": "minecraft:become_angry",
   "target": "self"
 }
 ```

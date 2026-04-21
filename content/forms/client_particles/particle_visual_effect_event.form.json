@@ -20,18 +20,18 @@
       {
         "id": "effect",
         "title": "Effect",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       },
       {
         "id": "pre_effect_expression",
         "title": "Pre Effect Expression",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": 0,
         "alternates": [
           {
             "id": "pre_effect_expression",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "pre_effect_expression",
@@ -40,13 +40,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -54,14 +54,14 @@
           },
           {
             "id": "pre_effect_expression",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       },
       {
         "id": "type",
         "title": "Particle Visual Effect Event Effect Type",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "emitter",

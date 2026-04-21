@@ -18,13 +18,22 @@ Allows mob to move towards its current target.
 > * [minecraft:behavior.nearest_attackable_target](../EntityGoals/minecraftBehavior_nearest_attackable_target.md)
 > * [minecraft:behavior.hurt_by_target](../EntityGoals/minecraftBehavior_hurt_by_target.md)
 
-## Move Towards Target Behavior Properties
+## Entity Move Towards Target Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Iron Golem: `2` | 
-| speed_multiplier | *not set* | Decimal number |  | Iron Golem: `0.9` | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Iron Golem: `2` | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Iron Golem: `0.9` | 
 | within_radius | 0 | Decimal number | Defines the radius in blocks that the mob tries to be from the target. A value of 0 means it tries to occupy the same block as the target | Iron Golem: `32` | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples
 

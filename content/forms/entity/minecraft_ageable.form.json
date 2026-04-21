@@ -198,14 +198,14 @@
         "id": "drop_items",
         "title": "Drop Items",
         "description": "List of items that the entity drops when it grows up.",
-        "dataType": 17
+        "dataType": "stringArray"
       },
       {
         "id": "duration",
         "title": "Duration",
         "description": "Amount of time before the entity grows up, -1 for always a baby.",
         "defaultValue": 1200,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
@@ -225,7 +225,7 @@
         "id": "feed_items",
         "title": "Feed Items",
         "description": "List of items that can be fed to the entity. Includes 'item' for the item name, 'growth' to define how much time it grows up by, and 'result_item' that defines what item the feed item will transform to upon successful interaction (Format: itemName:auxValue).",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
@@ -255,12 +255,24 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
+          "/vanilla/behavior_pack/entities/goat.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_baby/minecraft:ageable/",
+              "path": "/minecraft:entity/component_groups/goat_baby/minecraft:ageable/",
+              "content": "wheat"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_baby/minecraft:ageable/",
               "content": [
-                "sweet_berries",
-                "glow_berries"
+                {
+                  "item": "wheat",
+                  "growth": 0.1
+                },
+                {
+                  "item": "hay_block",
+                  "growth": 0.9
+                }
               ]
             }
           ]
@@ -270,7 +282,7 @@
         "id": "grow_up",
         "title": "Grow Up",
         "description": "Event to run when this entity grows up.",
-        "dataType": 22,
+        "dataType": "minecraftEventTrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
@@ -305,13 +317,13 @@
         "id": "interact_filters",
         "title": "Interact Filters",
         "description": "List of conditions to meet so that the entity can be fed.",
-        "dataType": 20
+        "dataType": "minecraftFilter"
       },
       {
         "id": "pause_growth_items",
         "title": "Pause Growth Items",
         "description": "List of items that can be fed to the entity to pause growth for baby entities.",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
@@ -335,7 +347,7 @@
         "id": "reset_growth_items",
         "title": "Reset Growth Items",
         "description": "List of items that can be used to reset growth for baby entities.",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
@@ -424,15 +436,12 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/fox.json": [
+      "/vanilla/behavior_pack/entities/goat.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:fox_baby/minecraft:ageable/",
+          "path": "/minecraft:entity/component_groups/goat_baby/minecraft:ageable/",
           "content": {
             "duration": 1200,
-            "feed_items": [
-              "sweet_berries",
-              "glow_berries"
-            ],
+            "feed_items": "wheat",
             "pause_growth_items": [
               "golden_dandelion"
             ],
@@ -446,11 +455,21 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/glow_squid.json": [
+      "/vanilla/behavior_pack/entities/llama.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:squid_baby/minecraft:ageable/",
+          "path": "/minecraft:entity/component_groups/minecraft:llama_baby/minecraft:ageable/",
           "content": {
             "duration": 1200,
+            "feed_items": [
+              {
+                "item": "wheat",
+                "growth": 0.1
+              },
+              {
+                "item": "hay_block",
+                "growth": 0.9
+              }
+            ],
             "pause_growth_items": [
               "golden_dandelion"
             ],

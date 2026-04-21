@@ -52,7 +52,7 @@
       {
         "id": "linear_acceleration",
         "title": "Linear Acceleration",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": [
           0,
           0,
@@ -63,7 +63,7 @@
         "alternates": [
           {
             "id": "linear_acceleration",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "linear_acceleration",
@@ -72,13 +72,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -86,19 +86,19 @@
           },
           {
             "id": "linear_acceleration",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       },
       {
         "id": "linear_drag_coefficient",
         "title": "Linear Drag Coefficient",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": 0,
         "alternates": [
           {
             "id": "linear_drag_coefficient",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "linear_drag_coefficient",
@@ -107,13 +107,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -121,19 +121,19 @@
           },
           {
             "id": "linear_drag_coefficient",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       },
       {
         "id": "rotation_acceleration",
         "title": "Rotation Acceleration",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": 0,
         "alternates": [
           {
             "id": "rotation_acceleration",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "rotation_acceleration",
@@ -142,13 +142,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -156,19 +156,19 @@
           },
           {
             "id": "rotation_acceleration",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       },
       {
         "id": "rotation_drag_coefficient",
         "title": "Rotation Drag Coefficient",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": 0,
         "alternates": [
           {
             "id": "rotation_drag_coefficient",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "rotation_drag_coefficient",
@@ -177,13 +177,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -191,7 +191,7 @@
           },
           {
             "id": "rotation_drag_coefficient",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       }

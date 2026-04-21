@@ -25,3 +25,5 @@ Defines an entity's teleporting behavior.
 | random_teleports | true | Boolean true/false | If true, the entity will teleport randomly | 
 | target_distance | 16 | Decimal number | Maximum distance the entity will teleport when chasing a target | 
 | target_teleport_chance | 1 | Decimal number | The chance that the entity will teleport between 0.0 and 1.0. 1.0 means 100% | 
+
+## Samples

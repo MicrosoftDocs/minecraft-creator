@@ -33,27 +33,27 @@
         "id": "aligned_placement",
         "title": "Aligned Placement",
         "description": "If true, block placement through this item will be aligned while holding the interaction button down. Defaults to false.",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": false
       },
       {
         "id": "block",
         "title": "Block",
         "description": "Defines the block that will be placed.",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       },
       {
         "id": "replace_block_item",
         "title": "Replace Block Item",
         "description": "If true, the item will be registered as the item for this block. This item will be returned by default when the block is broken/picked. Note: the identifier for this item must match the block's identifier for this field to be valid. Defaults to false.",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": false
       },
       {
         "id": "use_on",
         "description": "List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "defaultValue": [],
         "maxLength": 256,
         "subForm": {
@@ -63,29 +63,29 @@
             {
               "id": "name",
               "title": "Name",
-              "dataType": 2,
+              "dataType": "string",
               "defaultValue": ""
             },
             {
               "id": "states",
               "title": "States",
-              "dataType": 0,
+              "dataType": "int",
               "defaultValue": {},
               "alternates": [
                 {
                   "id": "states",
-                  "dataType": 2
+                  "dataType": "string"
                 },
                 {
                   "id": "states",
-                  "dataType": 1
+                  "dataType": "boolean"
                 }
               ]
             },
             {
               "id": "tags",
               "title": "Tags",
-              "dataType": 2,
+              "dataType": "string",
               "defaultValue": ""
             }
           ]
@@ -93,11 +93,11 @@
         "alternates": [
           {
             "id": "use_on",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "use_on",
-            "dataType": 16
+            "dataType": "object"
           }
         ]
       }

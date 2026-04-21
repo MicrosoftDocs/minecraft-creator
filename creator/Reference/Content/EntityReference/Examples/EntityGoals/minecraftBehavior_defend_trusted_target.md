@@ -18,17 +18,15 @@ Allows the mob to target another mob that hurts an entity it trusts.
 
 ## Defend Trusted Target Behavior Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| aggro_sound | *not set* | String | Sound to occasionally play while defending. | Fox: `"mad"` | 
-| attack_interval | 0 | Integer number | Time in seconds between attacks |  | 
-| entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entity types that this mob considers valid targets |  | 
-| must_see | false | Boolean true/false | If true, only entities in this mob's viewing range can be selected as targets |  | 
-| must_see_forget_duration | 3 | Decimal number | Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more |  | 
-| on_defend_start | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  | Fox: `{"event":"minecraft:fox_configure_defending","target":"self"}` | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
-| sound_chance | *not set* | Decimal number |  | Fox: `0.05` | 
-| within_radius | 0 | Decimal number | Distance in blocks that the target can be within to launch an attack | Fox: `25` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| aggro_sound | *not set* | String | Sound to occasionally play while defending. | 
+| attack_interval | 0 | Integer number | Time in seconds between attacks | 
+| entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entity types that this mob considers valid targets | 
+| must_see | false | Boolean true/false | If true, only entities in this mob's viewing range can be selected as targets | 
+| must_see_forget_duration | 3 | Decimal number | Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
+| within_radius | 0 | Decimal number | Distance in blocks that the target can be within to launch an attack | 
 
 ### Entity Types
 List of entity types that this mob considers valid targets.
@@ -50,20 +48,3 @@ List of entity types that this mob considers valid targets.
 | walk_speed_multiplier | 1 | Decimal number | Multiplier for the walking speed. A value of 1.0 means the speed is unchanged | 
 
 ## Samples
-
-#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
-
-
-```json
-"minecraft:behavior.defend_trusted_target": {
-  "priority": 0,
-  "within_radius": 25,
-  "must_see": false,
-  "aggro_sound": "mad",
-  "sound_chance": 0.05,
-  "on_defend_start": {
-    "event": "minecraft:fox_configure_defending",
-    "target": "self"
-  }
-}
-```

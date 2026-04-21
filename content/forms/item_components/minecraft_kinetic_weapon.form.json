@@ -23,63 +23,63 @@
         "id": "creative_reach",
         "title": "Creative Reach",
         "description": "Defines the reach used when the user is in Creative Mode. Defaults to \"reach\" if unspecified.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "item_components/floatrange"
       },
       {
         "id": "damage_conditions",
         "title": "Damage Conditions",
         "description": "Conditions that need to be satisfied for damage to be applied. If not specified, damage is not applied.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "item_components/minecraft_kinetic_weapon_kinetic_effect_conditions"
       },
       {
         "id": "damage_modifier",
         "title": "Damage Modifier",
         "description": "Value added to the the scaled dot product (after applying \"damage_multiplier\").",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0
       },
       {
         "id": "damage_multiplier",
         "title": "Damage Multiplier",
         "description": "Value multiplied to sum of the dot products of the user and target's velocity vectors projected onto the view vector.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1
       },
       {
         "id": "delay",
         "title": "Delay",
         "description": "Time, in ticks, after which kinetic damage and its effects start being applied.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "dismount_conditions",
         "title": "Dismount Conditions",
         "description": "Conditions that need to be satisfied for riders to be dismounted. If not specified, riders cannot be dismounted.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "item_components/minecraft_kinetic_weapon_kinetic_effect_conditions"
       },
       {
         "id": "hitbox_margin",
         "title": "Hitbox Margin",
         "description": "Added tolerance to the view vector raycast for detecting entity collisions.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0
       },
       {
         "id": "knockback_conditions",
         "title": "Knockback Conditions",
         "description": "Conditions that need to be satisfied for knockback to be applied. If not specified, knockback is not applied.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "item_components/minecraft_kinetic_weapon_kinetic_effect_conditions"
       },
       {
         "id": "reach",
         "title": "Reach",
         "description": "Defines the range (in blocks) along the user's view vector where entities can be hit. Only targets within this distance are considered. Block collisions between the user and target block damage and its effects.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 3,
           "min": 0

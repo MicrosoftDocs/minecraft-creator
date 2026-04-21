@@ -129,7 +129,7 @@
         "id": "conditional_values",
         "title": "Conditional Values",
         "description": "The object containing the conditional bandwidth optimization values.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "The object containing the conditional bandwidth optimization values.",
@@ -138,14 +138,14 @@
               "id": "conditional_values",
               "title": "Conditional Values",
               "description": "Conditions that must be met for these optimization values to be used.",
-              "dataType": 20
+              "dataType": "minecraftFilter"
             },
             {
               "id": "max_dropped_ticks",
               "title": "Max Dropped Ticks",
               "description": "In relation to the optimization value, determines the maximum ticks spatial update packets can be not sent.",
               "defaultValue": 10,
-              "dataType": 0,
+              "dataType": "int",
               "validity": [
                 {
                   "comparison": ">=",
@@ -158,14 +158,14 @@
               "title": "Max Optimized Distance",
               "description": "The maximum distance considered during bandwidth optimizations. Any value below the max is interpolated to find optimization, and any value greater than or equal to this max results in max optimization.",
               "defaultValue": 80,
-              "dataType": 3
+              "dataType": "float"
             },
             {
               "id": "use_motion_prediction_hints",
               "title": "Use Motion Prediction Hints",
               "description": "When set to true, smaller motion packets will be sent during drop packet intervals, resulting in the same amount of packets being sent as without optimizations but with much less data being sent. This should be used when actors are travelling very quickly or teleporting to prevent visual oddities.",
               "defaultValue": false,
-              "dataType": 1
+              "dataType": "boolean"
             }
           ]
         }
@@ -174,7 +174,7 @@
         "id": "default_values",
         "title": "Default Values",
         "description": "The object containing the default bandwidth optimization values.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "The object containing the default bandwidth optimization values.",
@@ -184,7 +184,7 @@
               "title": "Max Dropped Ticks",
               "description": "In relation to the optimization value, determines the maximum ticks spatial update packets can be not sent.",
               "defaultValue": 10,
-              "dataType": 0,
+              "dataType": "int",
               "validity": [
                 {
                   "comparison": ">=",
@@ -197,14 +197,14 @@
               "title": "Max Optimized Distance",
               "description": "The maximum distance considered during bandwidth optimizations. Any value below the max is interpolated to find optimization, and any value greater than or equal to this max results in max optimization.",
               "defaultValue": 80,
-              "dataType": 3
+              "dataType": "float"
             },
             {
               "id": "use_motion_prediction_hints",
               "title": "Use Motion Prediction Hints",
               "description": "When set to true, smaller motion packets will be sent during drop packet intervals, resulting in the same amount of packets being sent as without optimizations but with much less data being sent. This should be used when actors are travelling very quickly or teleporting to prevent visual oddities.",
               "defaultValue": false,
-              "dataType": 1
+              "dataType": "boolean"
             }
           ]
         },

@@ -30,13 +30,13 @@
         "title": "Chance To Start",
         "description": "Percent chance that the mob will start this goal from 0.0 to 1.0 (where 1.0 = 100%).",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "filters",
         "title": "Filters",
         "description": "Conditions that need to be met for the behavior to start.",
-        "dataType": 20,
+        "dataType": "minecraftFilter",
         "samples": {
           "/vanilla/behavior_pack/entities/iron_golem.json": [
             {
@@ -53,21 +53,21 @@
         "title": "Max Head Rotation Y",
         "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target.",
         "defaultValue": 30,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "max_offer_flower_duration",
         "title": "Max Offer Flower Duration",
         "description": "The max amount of time (in seconds) that the mob will offer the flower for before exiting the Goal.",
         "defaultValue": 20,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "max_rotation_x",
         "title": "Max Rotation X",
         "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target.",
         "defaultValue": 30,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "search_area",
@@ -78,14 +78,14 @@
           2,
           6
         ],
-        "dataType": 11
+        "dataType": "point3"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/iron_golem.json": [
             {
@@ -119,7 +119,7 @@
         "id": "chance_to_start",
         "title": "Chance To Start",
         "description": "Percent chance that the mob will start this goal from 0.0 to 1.0 (where 1.0 = 100%).",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.0001250000059371814,
         "validity": [
           {
@@ -131,7 +131,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -151,7 +151,7 @@
       {
         "id": "filters",
         "description": "Conditions that need to be met for the behavior to start.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "AND": null,
           "NOT": null,
@@ -170,39 +170,39 @@
               "id": "domain",
               "title": "Domain",
               "description": "The domain the test should be performed in.",
-              "dataType": 16
+              "dataType": "object"
             },
             {
               "id": "operator",
               "title": "Operator",
               "description": "The comparison to apply with 'value'.",
-              "dataType": 16
+              "dataType": "object"
             },
             {
               "id": "subject",
               "title": "Subject",
               "description": "The subject of this filter test.",
-              "dataType": 16
+              "dataType": "object"
             },
             {
               "id": "test",
               "title": "Test",
               "description": "The name of the test to apply.",
-              "dataType": 2,
+              "dataType": "string",
               "isRequired": true
             },
             {
               "id": "value",
               "title": "Value",
               "description": "The value being compared with the test.",
-              "dataType": 16
+              "dataType": "object"
             }
           ]
         },
         "alternates": [
           {
             "id": "filters",
-            "dataType": 16
+            "dataType": "object"
           }
         ],
         "samples": {
@@ -220,27 +220,27 @@
         "id": "max_head_rotation_y",
         "title": "Max Head Rotation Y",
         "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 30
       },
       {
         "id": "max_offer_flower_duration",
         "title": "Max Offer Flower Duration",
         "description": "The max amount of time (in seconds) that the mob will offer the flower for before exiting the Goal.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 20
       },
       {
         "id": "max_rotation_x",
         "title": "Max Rotation X",
         "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 30
       },
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/iron_golem.json": [
@@ -255,7 +255,7 @@
         "id": "search_area",
         "title": "Search Area",
         "description": "The dimensions of the AABB used to search for a potential mob to offer flower to.",
-        "dataType": 32,
+        "dataType": "numberArray",
         "defaultValue": [
           6,
           2,
@@ -264,7 +264,7 @@
         "alternates": [
           {
             "id": "search_area",
-            "dataType": 16,
+            "dataType": "object",
             "subForm": {
               "id": "search_area",
               "title": "Search Area",
@@ -272,19 +272,19 @@
                 {
                   "id": "x",
                   "title": "X",
-                  "dataType": 3,
+                  "dataType": "float",
                   "defaultValue": 0
                 },
                 {
                   "id": "y",
                   "title": "Y",
-                  "dataType": 3,
+                  "dataType": "float",
                   "defaultValue": 0
                 },
                 {
                   "id": "z",
                   "title": "Z",
-                  "dataType": 3,
+                  "dataType": "float",
                   "defaultValue": 0
                 }
               ]

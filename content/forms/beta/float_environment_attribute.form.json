@@ -1,0 +1,53 @@
+{
+  "id": "Float Environment Attribute",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Float Environment Attribute",
+    "title": "Beta Float Environment Attribute",
+    "description": "Environment attribute that can hold a value of type float.",
+    "fields": [
+      {
+        "id": "operation",
+        "title": "Float Attribute Operation",
+        "dataType": "string",
+        "choices": [
+          {
+            "id": "add",
+            "title": "Add"
+          },
+          {
+            "id": "alpha_blend",
+            "title": "Alpha blend"
+          },
+          {
+            "id": "maximum",
+            "title": "Maximum"
+          },
+          {
+            "id": "minimum",
+            "title": "Minimum"
+          },
+          {
+            "id": "multiply",
+            "title": "Multiply"
+          },
+          {
+            "id": "override",
+            "title": "Override"
+          },
+          {
+            "id": "subtract",
+            "title": "Subtract"
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "dataType": "float",
+        "isRequired": true
+      }
+    ]
+  }
+}

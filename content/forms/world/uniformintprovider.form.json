@@ -23,20 +23,20 @@
         "id": "max_inclusive",
         "title": "Max Inclusive",
         "description": "Maximum value (inclusive)",
-        "dataType": 0,
+        "dataType": "int",
         "isRequired": true
       },
       {
         "id": "min_inclusive",
         "title": "Min Inclusive",
         "description": "Minimum value (inclusive)",
-        "dataType": 0,
+        "dataType": "int",
         "isRequired": true
       },
       {
         "id": "type",
         "title": "IntProviderType",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "constant",

@@ -29,13 +29,13 @@
       {
         "id": "distance",
         "title": "Distance",
-        "dataType": 0,
+        "dataType": "int",
         "isRequired": true
       },
       {
         "id": "village_border_tolerance",
         "title": "Village Border Tolerance",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 10
       }
     ]

@@ -36,7 +36,7 @@
       {
         "id": "type",
         "title": "VillageType",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "default",

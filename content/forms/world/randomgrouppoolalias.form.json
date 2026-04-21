@@ -23,7 +23,7 @@
         "id": "groups",
         "title": "Groups",
         "description": "Aliases for a RandomGroup",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subFormId": "world/randomgroupbindings",
         "isRequired": true
       }

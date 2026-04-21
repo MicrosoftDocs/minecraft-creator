@@ -21,37 +21,37 @@
       {
         "id": "allow_random_seed",
         "title": "Allow Random Seed",
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "base_game_version",
         "title": "Base Game Version",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "description",
         "title": "Description",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "lock_template_options",
         "title": "Lock Template Options",
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "min_engine_version",
         "title": "Min Engine Version",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "name",
         "title": "Name",
-        "dataType": 2,
+        "dataType": "string",
         "isRequired": true
       },
       {
         "id": "pack_optimization_version",
-        "dataType": 16,
+        "dataType": "object",
         "subForm": {
           "id": "pack_optimization_version",
           "title": "Pack Optimization Version",
@@ -59,31 +59,31 @@
             {
               "id": "buildMeta",
               "title": "BuildMeta",
-              "dataType": 2,
+              "dataType": "string",
               "defaultValue": ""
             },
             {
               "id": "major",
               "title": "Major",
-              "dataType": 0,
+              "dataType": "int",
               "defaultValue": 0
             },
             {
               "id": "minor",
               "title": "Minor",
-              "dataType": 0,
+              "dataType": "int",
               "defaultValue": 0
             },
             {
               "id": "patch",
               "title": "Patch",
-              "dataType": 0,
+              "dataType": "int",
               "defaultValue": 0
             },
             {
               "id": "preRelease",
               "title": "PreRelease",
-              "dataType": 2,
+              "dataType": "string",
               "defaultValue": ""
             }
           ]
@@ -91,24 +91,24 @@
         "alternates": [
           {
             "id": "pack_optimization_version",
-            "dataType": 2
+            "dataType": "string"
           }
         ]
       },
       {
         "id": "pack_scope",
         "title": "Pack Scope",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "platform_locked",
         "title": "Platform Locked",
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "uuid",
         "title": "Uuid",
-        "dataType": 16,
+        "dataType": "object",
         "validity": [
           {
             "comparison": "pattern",
@@ -119,7 +119,7 @@
       },
       {
         "id": "version",
-        "dataType": 16,
+        "dataType": "object",
         "validity": [
           {
             "comparison": "pattern",
@@ -133,31 +133,31 @@
             {
               "id": "buildMeta",
               "title": "BuildMeta",
-              "dataType": 2,
+              "dataType": "string",
               "defaultValue": ""
             },
             {
               "id": "major",
               "title": "Major",
-              "dataType": 0,
+              "dataType": "int",
               "defaultValue": 0
             },
             {
               "id": "minor",
               "title": "Minor",
-              "dataType": 0,
+              "dataType": "int",
               "defaultValue": 0
             },
             {
               "id": "patch",
               "title": "Patch",
-              "dataType": 0,
+              "dataType": "int",
               "defaultValue": 0
             },
             {
               "id": "preRelease",
               "title": "PreRelease",
-              "dataType": 2,
+              "dataType": "string",
               "defaultValue": ""
             }
           ]
@@ -165,7 +165,7 @@
         "alternates": [
           {
             "id": "version",
-            "dataType": 2
+            "dataType": "string"
           }
         ],
         "isRequired": true

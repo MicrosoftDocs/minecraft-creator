@@ -1,0 +1,46 @@
+{
+  "id": "minecraft:burns_in_daylight",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:burns_in_daylight",
+    "title": "Beta Burns In Daylight",
+    "fields": [
+      {
+        "id": "protection_slot",
+        "title": "EquipmentSlot",
+        "dataType": "string",
+        "choices": [
+          {
+            "id": "slot.armor.body",
+            "title": "Slot.armor.body"
+          },
+          {
+            "id": "slot.armor.chest",
+            "title": "Slot.armor.chest"
+          },
+          {
+            "id": "slot.armor.feet",
+            "title": "Slot.armor.feet"
+          },
+          {
+            "id": "slot.armor.head",
+            "title": "Slot.armor.head"
+          },
+          {
+            "id": "slot.armor.legs",
+            "title": "Slot.armor.legs"
+          },
+          {
+            "id": "slot.weapon.mainhand",
+            "title": "Slot.weapon.mainhand"
+          },
+          {
+            "id": "slot.weapon.offhand",
+            "title": "Slot.weapon.offhand"
+          }
+        ],
+        "defaultValue": "slot.armor.head"
+      }
+    ]
+  }
+}

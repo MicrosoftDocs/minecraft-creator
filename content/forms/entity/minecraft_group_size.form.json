@@ -22,66 +22,16 @@
         "id": "filters",
         "title": "Filters",
         "description": "The list of conditions that must be satisfied for other entities to be counted towards group size.",
-        "dataType": 20,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:group_size/",
-              "content": {
-                "all_of": [
-                  {
-                    "test": "has_component",
-                    "operator": "!=",
-                    "value": "minecraft:is_baby"
-                  },
-                  {
-                    "test": "is_family",
-                    "value": "hoglin"
-                  }
-                ]
-              }
-            }
-          ]
-        }
+        "dataType": "minecraftFilter"
       },
       {
         "id": "radius",
         "title": "Radius",
         "description": "Radius from center of entity.",
         "defaultValue": 16,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:group_size/",
-              "content": 32
-            }
-          ]
-        }
+        "dataType": "float"
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/hoglin.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:group_size/",
-          "content": {
-            "radius": 32,
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_component",
-                  "operator": "!=",
-                  "value": "minecraft:is_baby"
-                },
-                {
-                  "test": "is_family",
-                  "value": "hoglin"
-                }
-              ]
-            }
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

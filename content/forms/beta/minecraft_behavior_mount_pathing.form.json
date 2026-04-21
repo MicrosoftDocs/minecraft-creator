@@ -1,0 +1,58 @@
+{
+  "id": "minecraft:behavior.mount_pathing",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.mount_pathing",
+    "title": "Beta Mount Pathing Behavior",
+    "description": "Allows the mob to move around on its own while mounted seeking a target to attack.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal",
+        "dataType": "float",
+        "defaultValue": 1
+      },
+      {
+        "id": "target_dist",
+        "title": "Target Dist",
+        "description": "The distance at which this mob wants to be away from its target",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "track_target",
+        "title": "Track Target",
+        "description": "If true, this mob will chase after the target as long as it's a valid target",
+        "dataType": "boolean",
+        "defaultValue": false
+      }
+    ]
+  }
+}

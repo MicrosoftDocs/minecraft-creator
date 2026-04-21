@@ -28,116 +28,123 @@
         "title": "Angle Offset",
         "description": "Determines the angle at which the projectile is thrown",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "catch_fire",
         "title": "Catch Fire",
         "description": "If true, the entity hit will be set on fire",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "crit_particle_on_hurt",
         "title": "Crit Particle On Hurt",
         "description": "If true, the projectile will produce additional particles when a critical hit happens",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "destroy_on_hurt",
         "title": "Destroy On Hurt",
         "description": "If true, this entity will be destroyed when hit",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "filter",
         "title": "Filter",
         "description": "Entity Definitions defined here can't be hurt by the projectile",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "fire_affected_by_griefing",
         "title": "Fire Affected By Griefing",
         "description": "If true, whether the projectile causes fire is affected by the mob griefing game rule",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "gravity",
         "title": "Gravity",
         "description": "The gravity applied to this entity when thrown. The higher the value, the faster the entity falls",
         "defaultValue": 0.05,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "hit_nearest_passenger",
         "title": "Hit Nearest Passenger",
         "description": "If true, when hitting a vehicle, and there's at least one passenger in the vehicle, the damage will be dealt to the passenger closest to the projectile impact point. If there are no passengers, this setting does nothing.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "hit_sound",
         "title": "Hit Sound",
         "description": "The sound that plays when the projectile hits something",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "homing",
         "title": "Homing",
         "description": "If true, the projectile homes in to the nearest entity",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "ignored_entities",
         "title": "Ignored Entities",
         "description": "[EXPERIMENTAL] An array of strings defining the types of entities that this entity does not collide with.",
-        "dataType": 17
+        "dataType": "stringArray"
       },
       {
         "id": "inertia",
         "title": "Inertia",
         "description": "The fraction of the projectile's speed maintained every frame while traveling in air",
         "defaultValue": 0.99,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "is_dangerous",
         "title": "Is Dangerous",
         "description": "If true, the projectile will be treated as dangerous to the players",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
+      },
+      {
+        "id": "isolated_physics",
+        "title": "Isolated Physics",
+        "description": "[EXPERIMENTAL] If true, this projectile will not be affected by outside forces such as friction and drag.",
+        "defaultValue": true,
+        "dataType": "boolean"
       },
       {
         "id": "knockback",
         "title": "Knockback",
         "description": "If true, the projectile will knock back the entity it hits",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "lightning",
         "title": "Lightning",
         "description": "If true, the entity hit will be struck by lightning",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "liquid_inertia",
         "title": "Liquid Inertia",
         "description": "The fraction of the projectile's speed maintained every frame while traveling in water",
         "defaultValue": 0.6,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "multiple_targets",
         "title": "Multiple Targets",
         "description": "If true, the projectile can hit multiple entities per flight",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "offset",
@@ -148,104 +155,104 @@
           0,
           0
         ],
-        "dataType": 11
+        "dataType": "point3"
       },
       {
         "id": "on_fire_time",
         "title": "Fire Time",
         "description": "Time in seconds that the entity hit will be on fire for",
         "defaultValue": 5,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "particle",
         "title": "Particle",
         "description": "Particle to use upon collision",
         "defaultValue": "iconcrack",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "potion_effect",
         "title": "Potion Effect",
         "description": "Defines the effect the arrow will apply to the entity it hits",
         "defaultValue": -1,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "power",
         "title": "Power",
         "description": "Determines the velocity of the projectile",
         "defaultValue": 1.3,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "reflect_immunity",
         "title": "Reflect Immunity",
         "description": "During the specified time, in seconds, the projectile cannot be reflected by hitting it",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "reflect_on_hurt",
         "title": "Reflect On Hurt",
         "description": "If true, this entity will be reflected back when hit",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "semi_random_diff_damage",
         "title": "Semi Random Diff Damage",
         "description": "If true, damage will be randomized based on damage and speed",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "shoot_sound",
         "title": "Shoot Sound",
         "description": "The sound that plays when the projectile is shot",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "shoot_target",
         "title": "Shoot Target",
         "description": "If true, the projectile will be shot towards the target of the entity firing it",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "should_bounce",
         "title": "Should Bounce",
         "description": "If true, the projectile will bounce upon hit",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "splash_potion",
         "title": "Splash Potion",
         "description": "If true, the projectile will be treated like a splash potion",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "splash_range",
         "title": "Splash Range",
         "description": "Radius in blocks of the 'splash' effect",
         "defaultValue": 4,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "uncertainty_base",
         "title": "Uncertainty Base",
         "description": "The base accuracy. Accuracy is determined by the formula uncertaintyBase - difficultyLevel * uncertaintyMultiplier",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "uncertainty_multiplier",
         "title": "Uncertainty Multiplier",
         "description": "Determines how much difficulty affects accuracy. Accuracy is determined by the formula uncertaintyBase - difficultyLevel * uncertaintyMultiplier",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       }
     ]
   }

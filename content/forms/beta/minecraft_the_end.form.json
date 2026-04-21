@@ -1,0 +1,47 @@
+{
+  "id": "minecraft:the_end",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:the_end",
+    "title": "Beta The End",
+    "fields": [
+      {
+        "id": "type",
+        "title": "SurfaceBuilderType",
+        "description": "Use default Minecraft End terrain generation.",
+        "dataType": "string",
+        "choices": [
+          {
+            "id": "minecraft:capped",
+            "title": "Minecraft:capped"
+          },
+          {
+            "id": "minecraft:frozen_ocean",
+            "title": "Minecraft:frozen ocean"
+          },
+          {
+            "id": "minecraft:mesa",
+            "title": "Minecraft:mesa"
+          },
+          {
+            "id": "minecraft:noise_gradient",
+            "title": "Minecraft:noise gradient"
+          },
+          {
+            "id": "minecraft:overworld",
+            "title": "Minecraft:overworld"
+          },
+          {
+            "id": "minecraft:swamp",
+            "title": "Minecraft:swamp"
+          },
+          {
+            "id": "minecraft:the_end",
+            "title": "Minecraft:the end"
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  }
+}

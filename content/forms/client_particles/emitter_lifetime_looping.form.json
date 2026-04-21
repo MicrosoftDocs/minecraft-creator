@@ -35,12 +35,12 @@
       {
         "id": "active_time",
         "title": "Active Time",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": 0,
         "alternates": [
           {
             "id": "active_time",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "active_time",
@@ -49,13 +49,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -63,19 +63,19 @@
           },
           {
             "id": "active_time",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       },
       {
         "id": "sleep_time",
         "title": "Sleep Time",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": 0,
         "alternates": [
           {
             "id": "sleep_time",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "sleep_time",
@@ -84,13 +84,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -98,7 +98,7 @@
           },
           {
             "id": "sleep_time",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       }

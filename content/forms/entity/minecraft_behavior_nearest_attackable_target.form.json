@@ -98,7 +98,7 @@
         "id": "attack_interval",
         "title": "Attack Interval",
         "description": "Time range (in seconds) between searching for an attack target, range is in (0, \"attack_interval\"]. Only used if \"attack_interval\" is greater than 0, otherwise \"scan_interval\" is used.",
-        "dataType": 18,
+        "dataType": "intRange",
         "samples": {
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
@@ -115,6 +115,14 @@
                 "max": 5
               }
             }
+          ],
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": {
+                "max": 1
+              }
+            }
           ]
         }
       },
@@ -123,13 +131,13 @@
         "title": "Attack Owner",
         "description": "If true, this entity can attack its owner.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "entity_types",
         "title": "Entity Types",
         "description": "Filters which types of targets are valid for this entity.",
-        "dataType": 20,
+        "dataType": "minecraftFilter",
         "samples": {
           "/vanilla/behavior_pack/entities/blaze.json": [
             {
@@ -276,106 +284,37 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/drowned.json": [
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
               "content": [
                 {
                   "filters": {
-                    "all_of": [
+                    "AND": [
                       {
-                        "any_of": [
+                        "OR": [
                           {
                             "test": "is_family",
-                            "subject": "other",
+                            "subject": 1,
+                            "operator": 0,
                             "value": "player"
                           },
                           {
                             "test": "is_family",
-                            "subject": "other",
-                            "value": "snowgolem"
+                            "subject": 1,
+                            "operator": 0,
+                            "value": "squid"
                           },
                           {
                             "test": "is_family",
-                            "subject": "other",
-                            "value": "irongolem"
-                          },
-                          {
-                            "test": "is_family",
-                            "subject": "other",
+                            "subject": 1,
+                            "operator": 0,
                             "value": "axolotl"
                           }
                         ]
-                      },
-                      {
-                        "any_of": [
-                          {
-                            "test": "in_water",
-                            "subject": "other",
-                            "value": true
-                          },
-                          {
-                            "test": "is_daytime",
-                            "value": false
-                          }
-                        ]
                       }
                     ]
-                  },
-                  "max_dist": 20
-                },
-                {
-                  "filters": {
-                    "all_of": [
-                      {
-                        "any_of": [
-                          {
-                            "test": "is_family",
-                            "subject": "other",
-                            "value": "villager"
-                          },
-                          {
-                            "test": "is_family",
-                            "subject": "other",
-                            "value": "wandering_trader"
-                          }
-                        ]
-                      },
-                      {
-                        "any_of": [
-                          {
-                            "test": "in_water",
-                            "subject": "other",
-                            "value": true
-                          },
-                          {
-                            "test": "is_daytime",
-                            "value": false
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  "max_dist": 20,
-                  "must_see": false
-                },
-                {
-                  "filters": {
-                    "all_of": [
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "baby_turtle"
-                      },
-                      {
-                        "test": "in_water",
-                        "subject": "other",
-                        "operator": "!=",
-                        "value": true
-                      }
-                    ]
-                  },
-                  "max_dist": 20
+                  }
                 }
               ]
             }
@@ -387,14 +326,14 @@
         "title": "Must Reach",
         "description": "If true, this entity requires a path to the target.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "must_see",
         "title": "Must See",
         "description": "Determines if target-validity requires this entity to be in range only, or both in range and in sight.",
         "defaultValue": false,
-        "dataType": 1,
+        "dataType": "boolean",
         "samples": {
           "/vanilla/behavior_pack/entities/blaze.json": [
             {
@@ -415,45 +354,23 @@
         "title": "Must See Forget Duration",
         "description": "Time (in seconds) the target must not be seen by this entity to become invalid. Used only if \"must_see\" is true.",
         "defaultValue": 3,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/drowned.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
-              "content": 17
-            }
-          ]
-        }
+        "dataType": "float"
       },
       {
         "id": "persist_time",
         "title": "Persist Time",
         "description": "Time (in seconds) this entity can continue attacking the target after the target is no longer valid.",
         "defaultValue": 0,
-        "dataType": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/drowned.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
-              "content": 0.5
-            }
-          ]
-        }
+        "dataType": "float"
       },
       {
         "id": "reselect_targets",
         "title": "Reselect Targets",
         "description": "Allows the attacking entity to update the nearest target, otherwise a target is only reselected after each \"scan_interval\" or \"attack_interval\".",
         "defaultValue": false,
-        "dataType": 1,
+        "dataType": "boolean",
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/entities/drowned.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
               "content": true
@@ -466,60 +383,54 @@
         "title": "Scan Interval",
         "description": "If \"attack_interval\" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to \"scan_interval\", minimum value is 1. Values under 10 can affect performance.",
         "defaultValue": 10,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "set_persistent",
         "title": "Set Persistent",
         "description": "Allows the actor to be set to persist upon targeting a player",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "target_acquisition_probability",
         "title": "Target Acquisition Probability",
         "description": "Probability (0.0 to 1.0) that this entity will accept a found target. Checked each time a valid target is found during scanning.",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "target_invisible_multiplier",
         "title": "Target Invisible Multiplier",
         "description": "Multiplied with the target's armor coverage percentage to modify \"max_dist\" when detecting an invisible target.",
         "defaultValue": 0.7,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "target_search_height",
         "title": "Target Search Height",
         "description": "Maximum vertical target-search distance, if it's greater than the target type's \"max_dist\". A negative value defaults to \"entity_types\" greatest \"max_dist\".",
         "defaultValue": -1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "target_sneak_visibility_multiplier",
         "title": "Target Sneak Visibility Multiplier",
         "description": "Multiplied with the target type's \"max_dist\" when trying to detect a sneaking target.",
         "defaultValue": 0.8,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "within_radius",
         "title": "Within Radius",
         "description": "Maximum distance this entity can be from the target when following it, otherwise the target becomes invalid. This value is only used if the entity doesn't declare \"minecraft:follow_range\".",
         "defaultValue": 0,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
               "content": 24
-            }
-          ],
-          "/vanilla/behavior_pack/entities/drowned.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
-              "content": 12
             }
           ]
         }
@@ -529,7 +440,7 @@
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/blaze.json": [
             {
@@ -544,6 +455,12 @@
             }
           ],
           "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
               "content": 1
@@ -728,115 +645,45 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/drowned.json": [
+      "/vanilla/behavior_pack/entities/elder_guardian.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
           "content": {
-            "reselect_targets": true,
+            "attack_interval": {
+              "max": 1
+            },
             "must_see": true,
-            "within_radius": 12,
-            "must_see_forget_duration": 17,
-            "persist_time": 0.5,
             "entity_types": [
               {
                 "filters": {
-                  "all_of": [
+                  "AND": [
                     {
-                      "any_of": [
+                      "OR": [
                         {
                           "test": "is_family",
-                          "subject": "other",
+                          "subject": 1,
+                          "operator": 0,
                           "value": "player"
                         },
                         {
                           "test": "is_family",
-                          "subject": "other",
-                          "value": "snowgolem"
+                          "subject": 1,
+                          "operator": 0,
+                          "value": "squid"
                         },
                         {
                           "test": "is_family",
-                          "subject": "other",
-                          "value": "irongolem"
-                        },
-                        {
-                          "test": "is_family",
-                          "subject": "other",
+                          "subject": 1,
+                          "operator": 0,
                           "value": "axolotl"
                         }
                       ]
-                    },
-                    {
-                      "any_of": [
-                        {
-                          "test": "in_water",
-                          "subject": "other",
-                          "value": true
-                        },
-                        {
-                          "test": "is_daytime",
-                          "value": false
-                        }
-                      ]
                     }
                   ]
-                },
-                "max_dist": 20
-              },
-              {
-                "filters": {
-                  "all_of": [
-                    {
-                      "any_of": [
-                        {
-                          "test": "is_family",
-                          "subject": "other",
-                          "value": "villager"
-                        },
-                        {
-                          "test": "is_family",
-                          "subject": "other",
-                          "value": "wandering_trader"
-                        }
-                      ]
-                    },
-                    {
-                      "any_of": [
-                        {
-                          "test": "in_water",
-                          "subject": "other",
-                          "value": true
-                        },
-                        {
-                          "test": "is_daytime",
-                          "value": false
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "max_dist": 20,
-                "must_see": false
-              },
-              {
-                "filters": {
-                  "all_of": [
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "baby_turtle"
-                    },
-                    {
-                      "test": "in_water",
-                      "subject": "other",
-                      "operator": "!=",
-                      "value": true
-                    }
-                  ]
-                },
-                "max_dist": 20
+                }
               }
             ],
-            "priority": 2
+            "priority": 1
           }
         }
       ]
@@ -851,7 +698,7 @@
         "id": "attack_interval",
         "title": "Attack Interval",
         "description": "Time range (in seconds) between searching for an attack target, range is in (0, \"attack_interval\"]. Only used if \"attack_interval\" is greater than 0, otherwise \"scan_interval\" is used.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 0,
           "min": 0
@@ -873,6 +720,14 @@
                 "max": 5
               }
             }
+          ],
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": {
+                "max": 1
+              }
+            }
           ]
         }
       },
@@ -880,13 +735,13 @@
         "id": "attack_owner",
         "title": "Attack Owner",
         "description": "If true, this entity can attack its owner.",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": false
       },
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -907,12 +762,12 @@
         "id": "entity_types",
         "title": "Entity Types",
         "description": "Filters which types of targets are valid for this entity.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "defaultValue": [],
         "alternates": [
           {
             "id": "entity_types",
-            "dataType": 16,
+            "dataType": "object",
             "subForm": {
               "id": "entity_types",
               "title": "Entity Types",
@@ -921,20 +776,20 @@
                   "id": "check_if_outnumbered",
                   "title": "Check If Outnumbered",
                   "description": "If true, the mob will check if its outnumbered",
-                  "dataType": 1,
+                  "dataType": "boolean",
                   "defaultValue": false
                 },
                 {
                   "id": "cooldown",
                   "title": "Cooldown",
                   "description": "The amount of time in seconds that the mob has to wait before selecting a target of the same type again",
-                  "dataType": 0,
+                  "dataType": "int",
                   "defaultValue": 0
                 },
                 {
                   "id": "filters",
                   "description": "Conditions that make this entry in the list valid",
-                  "dataType": 16,
+                  "dataType": "object",
                   "defaultValue": {
                     "AND": null,
                     "NOT": null,
@@ -953,39 +808,39 @@
                         "id": "domain",
                         "title": "Domain",
                         "description": "The domain the test should be performed in.",
-                        "dataType": 16
+                        "dataType": "object"
                       },
                       {
                         "id": "operator",
                         "title": "Operator",
                         "description": "The comparison to apply with 'value'.",
-                        "dataType": 16
+                        "dataType": "object"
                       },
                       {
                         "id": "subject",
                         "title": "Subject",
                         "description": "The subject of this filter test.",
-                        "dataType": 16
+                        "dataType": "object"
                       },
                       {
                         "id": "test",
                         "title": "Test",
                         "description": "The name of the test to apply.",
-                        "dataType": 2,
+                        "dataType": "string",
                         "isRequired": true
                       },
                       {
                         "id": "value",
                         "title": "Value",
                         "description": "The value being compared with the test.",
-                        "dataType": 16
+                        "dataType": "object"
                       }
                     ]
                   },
                   "alternates": [
                     {
                       "id": "filters",
-                      "dataType": 16
+                      "dataType": "object"
                     }
                   ]
                 },
@@ -993,62 +848,62 @@
                   "id": "max_dist",
                   "title": "Max Dist",
                   "description": "Maximum distance this mob can be away to be a valid choice",
-                  "dataType": 3,
+                  "dataType": "float",
                   "defaultValue": 16
                 },
                 {
                   "id": "max_flee",
                   "title": "Max Flee",
                   "description": "Maximum distance this mob can be from the target to stop fleeing",
-                  "dataType": 3,
+                  "dataType": "float",
                   "defaultValue": 10
                 },
                 {
                   "id": "max_height",
                   "title": "Max Height",
                   "description": "Maximum height this mob can be away to be a valid choice",
-                  "dataType": 3,
+                  "dataType": "float",
                   "defaultValue": -1
                 },
                 {
                   "id": "must_see",
                   "title": "Must See",
                   "description": "If true, the mob has to be visible to be a valid choice",
-                  "dataType": 1
+                  "dataType": "boolean"
                 },
                 {
                   "id": "must_see_forget_duration",
                   "title": "Must See Forget Duration",
                   "description": "Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more",
-                  "dataType": 0,
+                  "dataType": "int",
                   "defaultValue": 3
                 },
                 {
                   "id": "priority",
                   "title": "Priority",
                   "description": "Priority for this mob type",
-                  "dataType": 0,
+                  "dataType": "int",
                   "defaultValue": 0
                 },
                 {
                   "id": "reevaluate_description",
                   "title": "Reevaluate Description",
                   "description": "If true, the mob will stop being targeted if it stops meeting any conditions.",
-                  "dataType": 1,
+                  "dataType": "boolean",
                   "defaultValue": false
                 },
                 {
                   "id": "sprint_speed_multiplier",
                   "title": "Sprint Speed Multiplier",
                   "description": "Multiplier for the sprinting speed. A value of 1.0 means the speed is unchanged",
-                  "dataType": 3,
+                  "dataType": "float",
                   "defaultValue": 1
                 },
                 {
                   "id": "walk_speed_multiplier",
                   "title": "Walk Speed Multiplier",
                   "description": "Multiplier for the walking speed. A value of 1.0 means the speed is unchanged",
-                  "dataType": 3,
+                  "dataType": "float",
                   "defaultValue": 1
                 }
               ]
@@ -1201,106 +1056,37 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/drowned.json": [
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
               "content": [
                 {
                   "filters": {
-                    "all_of": [
+                    "AND": [
                       {
-                        "any_of": [
+                        "OR": [
                           {
                             "test": "is_family",
-                            "subject": "other",
+                            "subject": 1,
+                            "operator": 0,
                             "value": "player"
                           },
                           {
                             "test": "is_family",
-                            "subject": "other",
-                            "value": "snowgolem"
+                            "subject": 1,
+                            "operator": 0,
+                            "value": "squid"
                           },
                           {
                             "test": "is_family",
-                            "subject": "other",
-                            "value": "irongolem"
-                          },
-                          {
-                            "test": "is_family",
-                            "subject": "other",
+                            "subject": 1,
+                            "operator": 0,
                             "value": "axolotl"
                           }
                         ]
-                      },
-                      {
-                        "any_of": [
-                          {
-                            "test": "in_water",
-                            "subject": "other",
-                            "value": true
-                          },
-                          {
-                            "test": "is_daytime",
-                            "value": false
-                          }
-                        ]
                       }
                     ]
-                  },
-                  "max_dist": 20
-                },
-                {
-                  "filters": {
-                    "all_of": [
-                      {
-                        "any_of": [
-                          {
-                            "test": "is_family",
-                            "subject": "other",
-                            "value": "villager"
-                          },
-                          {
-                            "test": "is_family",
-                            "subject": "other",
-                            "value": "wandering_trader"
-                          }
-                        ]
-                      },
-                      {
-                        "any_of": [
-                          {
-                            "test": "in_water",
-                            "subject": "other",
-                            "value": true
-                          },
-                          {
-                            "test": "is_daytime",
-                            "value": false
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  "max_dist": 20,
-                  "must_see": false
-                },
-                {
-                  "filters": {
-                    "all_of": [
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "baby_turtle"
-                      },
-                      {
-                        "test": "in_water",
-                        "subject": "other",
-                        "operator": "!=",
-                        "value": true
-                      }
-                    ]
-                  },
-                  "max_dist": 20
+                  }
                 }
               ]
             }
@@ -1311,14 +1097,14 @@
         "id": "must_reach",
         "title": "Must Reach",
         "description": "If true, this entity requires a path to the target.",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": false
       },
       {
         "id": "must_see",
         "title": "Must See",
         "description": "Determines if target-validity requires this entity to be in range only, or both in range and in sight.",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": false,
         "samples": {
           "/vanilla/behavior_pack/entities/blaze.json": [
@@ -1339,36 +1125,20 @@
         "id": "must_see_forget_duration",
         "title": "Must See Forget Duration",
         "description": "Time (in seconds) the target must not be seen by this entity to become invalid. Used only if \"must_see\" is true.",
-        "dataType": 3,
-        "defaultValue": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/drowned.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
-              "content": 17
-            }
-          ]
-        }
+        "dataType": "float",
+        "defaultValue": 3
       },
       {
         "id": "persist_time",
         "title": "Persist Time",
         "description": "Time (in seconds) this entity can continue attacking the target after the target is no longer valid.",
-        "dataType": 3,
-        "defaultValue": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/drowned.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
-              "content": 0.5
-            }
-          ]
-        }
+        "dataType": "float",
+        "defaultValue": 0
       },
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/blaze.json": [
@@ -1388,6 +1158,12 @@
               "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
               "content": 1
             }
+          ],
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 1
+            }
           ]
         }
       },
@@ -1395,16 +1171,10 @@
         "id": "reselect_targets",
         "title": "Reselect Targets",
         "description": "Allows the attacking entity to update the nearest target, otherwise a target is only reselected after each \"scan_interval\" or \"attack_interval\".",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": false,
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/entities/drowned.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
               "content": true
@@ -1416,7 +1186,7 @@
         "id": "scan_interval",
         "title": "Scan Interval",
         "description": "If \"attack_interval\" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to \"scan_interval\", minimum value is 1. Values under 10 can affect performance.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 10,
         "validity": [
           {
@@ -1429,28 +1199,28 @@
         "id": "set_persistent",
         "title": "Set Persistent",
         "description": "Allows the actor to be set to persist upon targeting a player",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": false
       },
       {
         "id": "target_acquisition_probability",
         "title": "Target Acquisition Probability",
         "description": "Probability (0.0 to 1.0) that this entity will accept a found target. Checked each time a valid target is found during scanning.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1
       },
       {
         "id": "target_invisible_multiplier",
         "title": "Target Invisible Multiplier",
         "description": "Multiplied with the target's armor coverage percentage to modify \"max_dist\" when detecting an invisible target.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.699999988079071
       },
       {
         "id": "target_search_height",
         "title": "Target Search Height",
         "description": "Maximum vertical target-search distance, if it's greater than the target type's \"max_dist\". A negative value defaults to \"entity_types\" greatest \"max_dist\".",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": -1,
         "validity": [
           {
@@ -1463,26 +1233,20 @@
         "id": "target_sneak_visibility_multiplier",
         "title": "Target Sneak Visibility Multiplier",
         "description": "Multiplied with the target type's \"max_dist\" when trying to detect a sneaking target.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.800000011920929
       },
       {
         "id": "within_radius",
         "title": "Within Radius",
         "description": "Maximum distance this entity can be from the target when following it, otherwise the target becomes invalid. This value is only used if the entity doesn't declare \"minecraft:follow_range\".",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
               "content": 24
-            }
-          ],
-          "/vanilla/behavior_pack/entities/drowned.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
-              "content": 12
             }
           ]
         }
@@ -1664,115 +1428,45 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/drowned.json": [
+      "/vanilla/behavior_pack/entities/elder_guardian.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
           "content": {
-            "reselect_targets": true,
+            "attack_interval": {
+              "max": 1
+            },
             "must_see": true,
-            "within_radius": 12,
-            "must_see_forget_duration": 17,
-            "persist_time": 0.5,
             "entity_types": [
               {
                 "filters": {
-                  "all_of": [
+                  "AND": [
                     {
-                      "any_of": [
+                      "OR": [
                         {
                           "test": "is_family",
-                          "subject": "other",
+                          "subject": 1,
+                          "operator": 0,
                           "value": "player"
                         },
                         {
                           "test": "is_family",
-                          "subject": "other",
-                          "value": "snowgolem"
+                          "subject": 1,
+                          "operator": 0,
+                          "value": "squid"
                         },
                         {
                           "test": "is_family",
-                          "subject": "other",
-                          "value": "irongolem"
-                        },
-                        {
-                          "test": "is_family",
-                          "subject": "other",
+                          "subject": 1,
+                          "operator": 0,
                           "value": "axolotl"
                         }
                       ]
-                    },
-                    {
-                      "any_of": [
-                        {
-                          "test": "in_water",
-                          "subject": "other",
-                          "value": true
-                        },
-                        {
-                          "test": "is_daytime",
-                          "value": false
-                        }
-                      ]
                     }
                   ]
-                },
-                "max_dist": 20
-              },
-              {
-                "filters": {
-                  "all_of": [
-                    {
-                      "any_of": [
-                        {
-                          "test": "is_family",
-                          "subject": "other",
-                          "value": "villager"
-                        },
-                        {
-                          "test": "is_family",
-                          "subject": "other",
-                          "value": "wandering_trader"
-                        }
-                      ]
-                    },
-                    {
-                      "any_of": [
-                        {
-                          "test": "in_water",
-                          "subject": "other",
-                          "value": true
-                        },
-                        {
-                          "test": "is_daytime",
-                          "value": false
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "max_dist": 20,
-                "must_see": false
-              },
-              {
-                "filters": {
-                  "all_of": [
-                    {
-                      "test": "is_family",
-                      "subject": "other",
-                      "value": "baby_turtle"
-                    },
-                    {
-                      "test": "in_water",
-                      "subject": "other",
-                      "operator": "!=",
-                      "value": true
-                    }
-                  ]
-                },
-                "max_dist": 20
+                }
               }
             ],
-            "priority": 2
+            "priority": 1
           }
         }
       ]

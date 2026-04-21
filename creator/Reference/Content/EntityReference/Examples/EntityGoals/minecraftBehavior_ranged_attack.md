@@ -18,9 +18,9 @@ Allows an entity to attack by using ranged shots. "charge_shoot_trigger" must be
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | attack_interval | 0 | Decimal number | Alternative to "attack_interval_min" & "attack_interval_max". Consistent reload-time (in seconds), when not using a charged shot. Does not scale with target-distance. | Bogged: `3.5` | 
-| attack_interval_max | 0 | Decimal number | Maximum bound for reload-time range (in seconds), when not using a charged shot. Reload-time range scales with target-distance. | Blaze: `5`, Drowned: `3` | 
-| attack_interval_min | 0 | Decimal number | Minimum bound for reload-time range (in seconds), when not using a charged shot. Reload-time range scales with target-distance. | Blaze: `3`, Drowned: `1` | 
-| attack_radius | 0 | Decimal number | Minimum distance to target before this entity will attempt to shoot. | Blaze: `48`, Bogged: `15`, Drowned: `10` | 
+| attack_interval_max | 0 | Decimal number | Maximum bound for reload-time range (in seconds), when not using a charged shot. Reload-time range scales with target-distance. | Blaze: `5`, Shulker: `3` | 
+| attack_interval_min | 0 | Decimal number | Minimum bound for reload-time range (in seconds), when not using a charged shot. Reload-time range scales with target-distance. | Blaze: `3`, Shulker: `1` | 
+| attack_radius | 0 | Decimal number | Minimum distance to target before this entity will attempt to shoot. | Blaze: `48`, Bogged: `15`, Llama: `64` | 
 | attack_radius_min | 0 | Decimal number | Minimum distance the target can be for this mob to fire. If the target is closer, this mob will move first before firing |  | 
 | burst_interval | 0 | Decimal number | Time (in seconds) between each individual shot when firing a burst of shots from a charged up attack. | Blaze: `0.3` | 
 | burst_shots | 1 | Integer number | Number of shots fired every time the attacking entity uses a charged up attack. | Blaze: `3` | 
@@ -30,7 +30,7 @@ Allows an entity to attack by using ranged shots. "charge_shoot_trigger" must be
 | ranged_fov | 90 | Decimal number | Field of view (in degrees) when using sensing to detect a target for attack. |  | 
 | set_persistent | false | Boolean true/false | Allows the actor to be set to persist upon targeting a player |  | 
 | speed_multiplier | 1 | Decimal number | During attack behavior, this multiplier modifies the entity's speed when moving toward the target. |  | 
-| swing | false | Boolean true/false | If a swing animation (using variable.attack_time) exists, this causes the actor to swing their arm(s) upon firing the ranged attack. | Drowned: `true` | 
+| swing | false | Boolean true/false | If a swing animation (using variable.attack_time) exists, this causes the actor to swing their arm(s) upon firing the ranged attack. |  | 
 | target_in_sight_time | 1 | Decimal number | Minimum amount of time (in seconds) the attacking entity needs to see the target before moving toward it. |  | 
 | x_max_rotation | 30 | Decimal number | Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target. |  | 
 | y_max_head_rotation | 30 | Decimal number | Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target. |  | 
@@ -64,19 +64,6 @@ Allows an entity to attack by using ranged shots. "charge_shoot_trigger" must be
 }
 ```
 
-#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
-
-
-```json
-"minecraft:behavior.ranged_attack": {
-  "attack_interval_max": 3,
-  "attack_interval_min": 1,
-  "attack_radius": 10,
-  "priority": 3,
-  "swing": true
-}
-```
-
 #### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
 
 At /minecraft:entity/component_groups/minecraft:llama_angry/minecraft:behavior.ranged_attack/: 
@@ -98,5 +85,16 @@ At /minecraft:entity/component_groups/minecraft:llama_angry/minecraft:behavior.r
   "attack_interval": 3.5,
   "attack_radius": 15,
   "priority": 1
+}
+```
+
+#### [Shulker](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/shulker.json)
+
+
+```json
+"minecraft:behavior.ranged_attack": {
+  "attack_interval_max": 3,
+  "attack_interval_min": 1,
+  "attack_radius": 15
 }
 ```

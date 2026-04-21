@@ -23,21 +23,21 @@
         "title": "Base Value",
         "description": "The maximum auto step height when on any other block.",
         "defaultValue": 0.5625,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "controlled_value",
         "title": "Controlled Value",
         "description": "The maximum auto step height when on any other block and controlled by the player.",
         "defaultValue": 0.5625,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "jump_prevented_value",
         "title": "Jump Prevented Value",
         "description": "The maximum auto step height when on a block that prevents jumping.",
         "defaultValue": 0.5625,
-        "dataType": 3
+        "dataType": "float"
       }
     ],
     "samples": {}

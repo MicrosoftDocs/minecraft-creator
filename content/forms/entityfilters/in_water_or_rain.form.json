@@ -29,7 +29,7 @@
         "title": "Operator",
         "description": "(Optional) The comparison to apply with 'value'.",
         "defaultValue": "equals",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "!=",
@@ -96,7 +96,7 @@
         "title": "Subject",
         "description": "(Optional) The subject of this filter test.",
         "defaultValue": "self",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "block",
@@ -140,7 +140,7 @@
         "title": "Value",
         "description": "(Optional) true or false.",
         "defaultValue": true,
-        "dataType": 1,
+        "dataType": "boolean",
         "samples": {
           "/vanilla/behavior_pack/entities/dolphin.json": [
             {
@@ -153,7 +153,7 @@
       {
         "id": "test",
         "title": "Test",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/dolphin.json": [
             {

@@ -21,7 +21,7 @@
       {
         "id": "minecraft:dimension_bounds",
         "title": "Minecraft Dimension Bounds",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 0,
           "min": 0
@@ -31,7 +31,7 @@
       {
         "id": "minecraft:generation",
         "title": "Minecraft Generation",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "dimension/generation",
         "isRequired": true
       }

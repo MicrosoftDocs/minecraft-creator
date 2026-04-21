@@ -1,0 +1,19 @@
+{
+  "id": "minecraft:addrider",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:addrider",
+    "title": "Beta Addrider",
+    "description": "Adds riders to the entity. Requires \"minecraft:rideable\". Can only spawn as many riders as \"minecraft:rideable\" has \"seat_count\".",
+    "fields": [
+      {
+        "id": "riders",
+        "title": "Riders",
+        "description": "List of riders to be added to the entity. Can only spawn as many riders as \"minecraft:rideable\" has \"seat_count\".",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subFormId": "beta/rider_data"
+      }
+    ]
+  }
+}

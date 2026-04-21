@@ -1,0 +1,376 @@
+{
+  "id": "minecraft:mesa",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:mesa",
+    "title": "Beta Mesa",
+    "description": "Similar to overworld_surface. Adds colored strata and optional pillars.",
+    "fields": [
+      {
+        "id": "bryce_pillars",
+        "title": "Bryce Pillars",
+        "description": "Whether the mesa generates with pillars",
+        "dataType": "boolean",
+        "isRequired": true
+      },
+      {
+        "id": "clay_material",
+        "description": "Base clay block to use",
+        "dataType": "string",
+        "alternates": [
+          {
+            "id": "clay_material",
+            "dataType": "object",
+            "readOnly": true,
+            "subForm": {
+              "id": "clay_material",
+              "title": "Clay Material",
+              "fields": [
+                {
+                  "id": "name",
+                  "title": "Name",
+                  "description": "Name of the block",
+                  "dataType": "object",
+                  "isRequired": true
+                },
+                {
+                  "id": "states",
+                  "title": "States",
+                  "description": "Contains members named after each state, with boolean, integer, or string values.",
+                  "dataType": "keyedNumberCollection",
+                  "defaultValue": {},
+                  "alternates": [
+                    {
+                      "id": "states",
+                      "dataType": "keyedBooleanCollection"
+                    },
+                    {
+                      "id": "states",
+                      "dataType": "keyedStringCollection"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "foundation_material",
+        "description": "Controls the block type used deep underground in this biome.",
+        "dataType": "string",
+        "alternates": [
+          {
+            "id": "foundation_material",
+            "dataType": "object",
+            "readOnly": true,
+            "subForm": {
+              "id": "foundation_material",
+              "title": "Foundation Material",
+              "fields": [
+                {
+                  "id": "name",
+                  "title": "Name",
+                  "description": "Name of the block",
+                  "dataType": "object",
+                  "isRequired": true
+                },
+                {
+                  "id": "states",
+                  "title": "States",
+                  "description": "Contains members named after each state, with boolean, integer, or string values.",
+                  "dataType": "keyedNumberCollection",
+                  "defaultValue": {},
+                  "alternates": [
+                    {
+                      "id": "states",
+                      "dataType": "keyedBooleanCollection"
+                    },
+                    {
+                      "id": "states",
+                      "dataType": "keyedStringCollection"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "hard_clay_material",
+        "description": "Hardened clay block to use",
+        "dataType": "string",
+        "alternates": [
+          {
+            "id": "hard_clay_material",
+            "dataType": "object",
+            "readOnly": true,
+            "subForm": {
+              "id": "hard_clay_material",
+              "title": "Hard Clay Material",
+              "fields": [
+                {
+                  "id": "name",
+                  "title": "Name",
+                  "description": "Name of the block",
+                  "dataType": "object",
+                  "isRequired": true
+                },
+                {
+                  "id": "states",
+                  "title": "States",
+                  "description": "Contains members named after each state, with boolean, integer, or string values.",
+                  "dataType": "keyedNumberCollection",
+                  "defaultValue": {},
+                  "alternates": [
+                    {
+                      "id": "states",
+                      "dataType": "keyedBooleanCollection"
+                    },
+                    {
+                      "id": "states",
+                      "dataType": "keyedStringCollection"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "has_forest",
+        "title": "Has Forest",
+        "description": "Places coarse dirt and grass at high altitudes",
+        "dataType": "boolean",
+        "isRequired": true
+      },
+      {
+        "id": "mid_material",
+        "description": "Controls the block type used in a layer below the surface of this biome.",
+        "dataType": "string",
+        "alternates": [
+          {
+            "id": "mid_material",
+            "dataType": "object",
+            "readOnly": true,
+            "subForm": {
+              "id": "mid_material",
+              "title": "Mid Material",
+              "fields": [
+                {
+                  "id": "name",
+                  "title": "Name",
+                  "description": "Name of the block",
+                  "dataType": "object",
+                  "isRequired": true
+                },
+                {
+                  "id": "states",
+                  "title": "States",
+                  "description": "Contains members named after each state, with boolean, integer, or string values.",
+                  "dataType": "keyedNumberCollection",
+                  "defaultValue": {},
+                  "alternates": [
+                    {
+                      "id": "states",
+                      "dataType": "keyedBooleanCollection"
+                    },
+                    {
+                      "id": "states",
+                      "dataType": "keyedStringCollection"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "sea_floor_depth",
+        "title": "Sea Floor Depth",
+        "description": "Controls how deep below the world water level the floor should occur.",
+        "dataType": "int",
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 127
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "sea_floor_material",
+        "description": "Controls the block type used as a floor for bodies of water in this biome.",
+        "dataType": "string",
+        "alternates": [
+          {
+            "id": "sea_floor_material",
+            "dataType": "object",
+            "readOnly": true,
+            "subForm": {
+              "id": "sea_floor_material",
+              "title": "Sea Floor Material",
+              "fields": [
+                {
+                  "id": "name",
+                  "title": "Name",
+                  "description": "Name of the block",
+                  "dataType": "object",
+                  "isRequired": true
+                },
+                {
+                  "id": "states",
+                  "title": "States",
+                  "description": "Contains members named after each state, with boolean, integer, or string values.",
+                  "dataType": "keyedNumberCollection",
+                  "defaultValue": {},
+                  "alternates": [
+                    {
+                      "id": "states",
+                      "dataType": "keyedBooleanCollection"
+                    },
+                    {
+                      "id": "states",
+                      "dataType": "keyedStringCollection"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "sea_material",
+        "description": "Controls the block type used for the bodies of water in this biome.",
+        "dataType": "string",
+        "alternates": [
+          {
+            "id": "sea_material",
+            "dataType": "object",
+            "readOnly": true,
+            "subForm": {
+              "id": "sea_material",
+              "title": "Sea Material",
+              "fields": [
+                {
+                  "id": "name",
+                  "title": "Name",
+                  "description": "Name of the block",
+                  "dataType": "object",
+                  "isRequired": true
+                },
+                {
+                  "id": "states",
+                  "title": "States",
+                  "description": "Contains members named after each state, with boolean, integer, or string values.",
+                  "dataType": "keyedNumberCollection",
+                  "defaultValue": {},
+                  "alternates": [
+                    {
+                      "id": "states",
+                      "dataType": "keyedBooleanCollection"
+                    },
+                    {
+                      "id": "states",
+                      "dataType": "keyedStringCollection"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "top_material",
+        "description": "Controls the block type used for the surface of this biome.",
+        "dataType": "string",
+        "alternates": [
+          {
+            "id": "top_material",
+            "dataType": "object",
+            "readOnly": true,
+            "subForm": {
+              "id": "top_material",
+              "title": "Top Material",
+              "fields": [
+                {
+                  "id": "name",
+                  "title": "Name",
+                  "description": "Name of the block",
+                  "dataType": "object",
+                  "isRequired": true
+                },
+                {
+                  "id": "states",
+                  "title": "States",
+                  "description": "Contains members named after each state, with boolean, integer, or string values.",
+                  "dataType": "keyedNumberCollection",
+                  "defaultValue": {},
+                  "alternates": [
+                    {
+                      "id": "states",
+                      "dataType": "keyedBooleanCollection"
+                    },
+                    {
+                      "id": "states",
+                      "dataType": "keyedStringCollection"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "type",
+        "title": "SurfaceBuilderType",
+        "description": "Controls the type of surface builder to use.",
+        "dataType": "string",
+        "choices": [
+          {
+            "id": "minecraft:capped",
+            "title": "Minecraft:capped"
+          },
+          {
+            "id": "minecraft:frozen_ocean",
+            "title": "Minecraft:frozen ocean"
+          },
+          {
+            "id": "minecraft:mesa",
+            "title": "Minecraft:mesa"
+          },
+          {
+            "id": "minecraft:noise_gradient",
+            "title": "Minecraft:noise gradient"
+          },
+          {
+            "id": "minecraft:overworld",
+            "title": "Minecraft:overworld"
+          },
+          {
+            "id": "minecraft:swamp",
+            "title": "Minecraft:swamp"
+          },
+          {
+            "id": "minecraft:the_end",
+            "title": "Minecraft:the end"
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  }
+}

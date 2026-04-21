@@ -20,12 +20,12 @@ Defines the entity's ranged attack behavior. The "minecraft:behavior.ranged_atta
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| aux_val | -1 | Integer number | ID of the Potion effect for the default projectile to be applied on hit. | Bogged: `26` | 
-| def | *not set* | String | Actor definition to use as the default projectile for the ranged attack. The actor definition must have the projectile component to be able to be shot as a projectile. | Blaze: `"minecraft:small_fireball"`, Bogged: `"minecraft:arrow"`, Drowned: `"minecraft:thrown_trident"` | 
+| aux_val | -1 | Integer number | ID of the Potion effect for the default projectile to be applied on hit. | Bogged: `26`, Parched: `35` | 
+| def | *not set* | String | Actor definition to use as the default projectile for the ranged attack. The actor definition must have the projectile component to be able to be shot as a projectile. | Blaze: `"minecraft:small_fireball"`, Bogged: `"minecraft:arrow"`, Ender Dragon: `"minecraft:dragon_fireball"` | 
 | magic | false | Boolean true/false | Sets whether the projectiles being used are flagged as magic. If set, the ranged attack goal will not be used at the same time as other magic goals, such as minecraft:behavior.drink_potion |  | 
 | power | 0 | Decimal number | Velocity in which the projectiles will be shot at. A power of 0 will be overwritten by the default projectile throw power. |  | 
 | projectiles | *not set* | Array of strings | List of projectiles that can be used by the shooter. Projectiles are evaluated in the order of the list; After a projectile is chosen, the rest of the list is ignored. |  | 
-| sound | *not set* | String | Sound that is played when the shooter shoots a projectile. | Bogged: `"bow"`, Drowned: `"item.trident.throw"` | 
+| sound | *not set* | String | Sound that is played when the shooter shoots a projectile. | Bogged: `"bow"` | 
 
 ## Samples
 
@@ -49,16 +49,6 @@ Defines the entity's ranged attack behavior. The "minecraft:behavior.ranged_atta
 }
 ```
 
-#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
-
-
-```json
-"minecraft:shooter": {
-  "def": "minecraft:thrown_trident",
-  "sound": "item.trident.throw"
-}
-```
-
 #### [Ender Dragon](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ender_dragon.json)
 
 
@@ -74,5 +64,16 @@ Defines the entity's ranged attack behavior. The "minecraft:behavior.ranged_atta
 ```json
 "minecraft:shooter": {
   "def": "minecraft:llama_spit"
+}
+```
+
+#### [Parched](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parched.json)
+
+
+```json
+"minecraft:shooter": {
+  "aux_val": 35,
+  "def": "minecraft:arrow",
+  "sound": "bow"
 }
 ```

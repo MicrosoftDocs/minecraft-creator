@@ -23,9 +23,9 @@ Allows an entity to establish a way to get into the love state used for breeding
 | allow_sitting | false | Boolean true/false | If true, entities can breed while sitting |  | 
 | blend_attributes | true | Boolean true/false | If true, the entities will blend their attributes in the offspring after they breed. For example, horses blend their health, movement, and jump_strength in their offspring. |  | 
 | breed_cooldown | 60 | Decimal number | Time in seconds before the Entity can breed again. |  | 
-| breed_items | *not set* | Array of strings | The list of items that can be used to get the entity into the 'love' state. Can be a single item or an array. | Chicken: `["wheat_seeds","beetroot_seeds","melon_seeds","pumpkin_seeds","pitcher_pod","torchflower_seeds"]`, Cow: `["wheat"]`, Fox: `["sweet_berries","glow_berries"]` | 
+| breed_items | *not set* | Array of strings | The list of items that can be used to get the entity into the 'love' state. Can be a single item or an array. | Chicken: `["wheat_seeds","beetroot_seeds","melon_seeds","pumpkin_seeds","pitcher_pod","torchflower_seeds"]`, Cow: `["wheat"]`, Frog: `["slime_ball"]` | 
 | breed_items (as String) | *not set* | String |  |  | 
-| breeds_with | *not set* | Array of [Breeds With](#breeds-with) items | The entity definitions that this entity can breed with. Can be a single object or an array. | Chicken: `{"minecraft:chicken":{}}`, Cow: `{"minecraft:cow":{}}`, Fox: `{"minecraft:fox":{}}` | 
+| breeds_with | *not set* | Array of [Breeds With](#breeds-with) items | The entity definitions that this entity can breed with. Can be a single object or an array. | Chicken: `{"minecraft:chicken":{}}`, Cow: `{"minecraft:cow":{}}`, Frog: `{"minecraft:frog":{"event":"become_pregnant","target":"self"}}` | 
 | breeds_with (as Object) | *not set* | [Breeds With (Breed With Single)](#breeds-with-breed-with-single) item |  |  | 
 | causes_pregnancy | false | Boolean true/false | If true, the entity will become pregnant instead of spawning a baby. | Frog: `true` | 
 | deny_parents_variant | *not set* | [Deny Parents Variant](#deny-parents-variant) item | Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead. |  | 
@@ -35,7 +35,7 @@ Allows an entity to establish a way to get into the love state used for breeding
 | love_filters | *not set* | Minecraft filter | The filters to run when attempting to fall in love. |  | 
 | mutation_factor | *not set* | [Mutation Factor](#mutation-factor) item | Determines how likely the babies are to NOT inherit one of their parent's variances. |  | 
 | require_full_health | false | Boolean true/false | If true, the entity needs to be at full health before it can breed. |  | 
-| require_tame | true | Boolean true/false | If true, the entities need to be tamed first before they can breed. |  | 
+| require_tame | true | Boolean true/false | If true, the entities need to be tamed first before they can breed. | Llama: `true` | 
 
 ### Breeds With
 
@@ -131,22 +131,6 @@ Same structure as [Breeds With](#breeds-with).
 }
 ```
 
-#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
-
-
-```json
-"minecraft:breedable": {
-  "require_tame": false,
-  "breed_items": [
-    "sweet_berries",
-    "glow_berries"
-  ],
-  "breeds_with": {
-    "minecraft:fox": {}
-  }
-}
-```
-
 #### [Frog](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/frog.json)
 
 
@@ -178,5 +162,20 @@ Same structure as [Breeds With](#breeds-with).
   "breeds_with": {
     "minecraft:goat": {}
   }
+}
+```
+
+#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
+
+
+```json
+"minecraft:breedable": {
+  "require_tame": true,
+  "breeds_with": {
+    "minecraft:llama": {}
+  },
+  "breed_items": [
+    "hay_block"
+  ]
 }
 ```

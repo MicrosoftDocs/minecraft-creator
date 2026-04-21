@@ -18,7 +18,7 @@
   "generated_doNotEdit": {
     "id": "query.swell_amount",
     "title": "Swell Amount",
-    "description": "Returns how swollen the entity is.",
+    "description": "Returns how swollen the entity is. Only works for \"minecraft:creeper\" and \"minecraft:wither\".",
     "fields": []
   }
 }

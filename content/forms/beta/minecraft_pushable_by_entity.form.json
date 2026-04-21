@@ -1,0 +1,19 @@
+{
+  "id": "minecraft:pushable_by_entity",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:pushable_by_entity",
+    "title": "Beta Pushable By Entity",
+    "description": "Allows an entity to be pushed by other entities.",
+    "fields": [
+      {
+        "id": "presets",
+        "title": "Presets",
+        "description": "Defines how this entity behaves when pushed by another entity. The first preset whose \"filter\" conditions are met will be applied; if none match, a default configuration is used instead.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subFormId": "beta/pushablebyentitypreset"
+      }
+    ]
+  }
+}

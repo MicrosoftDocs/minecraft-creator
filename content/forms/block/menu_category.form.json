@@ -23,7 +23,7 @@
         "id": "category",
         "title": "CreativeItemCategory",
         "description": "The creative inventory or recipe book tab that the block is placed into. Default to \"none\".",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "construction",
@@ -52,7 +52,8 @@
         "id": "group",
         "title": "Group",
         "description": "The expandable group that the block is a part of. Must be a namespace and can use vanilla ones",
-        "dataType": 2,
+        "dataType": "string",
+        "defaultValue": "",
         "validity": [
           {
             "comparison": "pattern",
@@ -64,7 +65,8 @@
         "id": "is_hidden_in_commands",
         "title": "Is Hidden In Commands",
         "description": "Is the block hidden from use in commands.",
-        "dataType": 1
+        "dataType": "boolean",
+        "defaultValue": false
       }
     ]
   }

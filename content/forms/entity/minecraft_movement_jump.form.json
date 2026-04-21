@@ -30,14 +30,14 @@
         "id": "jump_delay",
         "title": "Jump Delay",
         "description": "Delay after landing when using the slime move control.",
-        "dataType": 18
+        "dataType": "intRange"
       },
       {
         "id": "max_turn",
         "title": "Max Turn",
         "description": "The maximum number in degrees the mob can turn per tick.",
         "defaultValue": 30,
-        "dataType": 3
+        "dataType": "float"
       }
     ]
   }

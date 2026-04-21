@@ -23,7 +23,7 @@
         "title": "Allow Laying From Below",
         "description": "Allows the mob to lay its eggs from below the target if it can't get there. This is useful if the target block is water with air above, since mobs may not be able to get to the air block above water.",
         "defaultValue": false,
-        "dataType": 1,
+        "dataType": "boolean",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -38,7 +38,7 @@
         "title": "Egg Type",
         "description": "Block type for the egg to lay. If this is a turtle egg, the number of eggs in the block is randomly set.",
         "defaultValue": "minecraft:turtle_egg",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -53,7 +53,7 @@
         "title": "Goal Radius",
         "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
         "defaultValue": 0.5,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -68,7 +68,7 @@
         "title": "Lay Egg Sound",
         "description": "Name of the sound event played when laying the egg. Defaults to lay_egg, which is used for Turtles.",
         "defaultValue": "lay_egg",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -83,7 +83,7 @@
         "title": "Lay Seconds",
         "description": "Duration of the laying egg process in seconds.",
         "defaultValue": 10,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -97,7 +97,7 @@
         "id": "on_lay",
         "title": "Lay",
         "description": "Event to run when this mob lays the egg.",
-        "dataType": 22,
+        "dataType": "minecraftEventTrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -115,7 +115,7 @@
         "title": "Search Height",
         "description": "Height in blocks the mob will look for a target block to move towards",
         "defaultValue": 1,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -130,7 +130,7 @@
         "title": "Search Range",
         "description": "The distance in blocks it will look for a target block to move towards",
         "defaultValue": 0,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -145,7 +145,7 @@
         "title": "Speed Multiplier",
         "description": "Movement speed multiplier of the mob when using this AI Goal",
         "defaultValue": 1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -160,7 +160,7 @@
         "title": "Target Blocks",
         "description": "Blocks that the mob can lay its eggs on top of.",
         "defaultValue": "[ minecraft:sand ]",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -177,7 +177,7 @@
         "title": "Target Materials Above Block",
         "description": "Types of materials that can exist above the target block. Valid types are Air, Water, and Lava.",
         "defaultValue": "[ Air ]",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -194,14 +194,14 @@
         "title": "Use Default Animation",
         "description": "Specifies if the default lay-egg animation should be played when the egg is placed or not.",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -251,7 +251,7 @@
         "id": "allow_laying_from_below",
         "title": "Allow Laying From Below",
         "description": "Allows the mob to lay its eggs from below the target if it can't get there. This is useful if the target block is water with air above, since mobs may not be able to get to the air block above water.",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": false,
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
@@ -265,7 +265,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -286,7 +286,7 @@
         "id": "egg_type",
         "title": "Egg Type",
         "description": "Block type for the egg to lay. If this is a turtle egg, the number of eggs in the block is randomly set.",
-        "dataType": 2,
+        "dataType": "string",
         "defaultValue": "minecraft:turtle_egg",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
@@ -301,7 +301,7 @@
         "id": "goal_radius",
         "title": "Goal Radius",
         "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.5,
         "validity": [
           {
@@ -322,8 +322,12 @@
         "id": "lay_egg_sound",
         "title": "LevelSoundEvent",
         "description": "Name of the sound event played when laying the egg. Defaults to lay_egg, which is used for Turtles.",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
+          {
+            "id": "absorb_block",
+            "title": "Absorb block"
+          },
           {
             "id": "activate",
             "title": "Activate"
@@ -805,6 +809,10 @@
             "title": "Bottle.fill"
           },
           {
+            "id": "bounce",
+            "title": "Bounce"
+          },
+          {
             "id": "bow",
             "title": "Bow"
           },
@@ -1167,6 +1175,10 @@
           {
             "id": "eat",
             "title": "Eat"
+          },
+          {
+            "id": "eject_block",
+            "title": "Eject block"
           },
           {
             "id": "elderguardian.curse",
@@ -2093,6 +2105,10 @@
             "title": "Purreow"
           },
           {
+            "id": "pushed_by_player",
+            "title": "Pushed by player"
+          },
+          {
             "id": "raid.horn",
             "title": "Raid.horn"
           },
@@ -2291,6 +2307,10 @@
           {
             "id": "sleep",
             "title": "Sleep"
+          },
+          {
+            "id": "slime_landing",
+            "title": "Slime landing"
           },
           {
             "id": "smithing_table.use",
@@ -2555,7 +2575,7 @@
         "id": "lay_seconds",
         "title": "Lay Seconds",
         "description": "Duration of the laying egg process in seconds.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 10,
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
@@ -2570,7 +2590,7 @@
         "id": "on_lay",
         "title": "Lay",
         "description": "Event to run when this mob lays the egg.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "event": "",
           "filters": {
@@ -2585,7 +2605,7 @@
           },
           "target": "self"
         },
-        "subFormId": "entity/actordefinitiontrigger",
+        "subFormId": "beta/actordefinitiontrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -2601,7 +2621,7 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
@@ -2616,7 +2636,7 @@
         "id": "search_height",
         "title": "Search Height",
         "description": "The height in blocks the mob will look for the block to move towards.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 1,
         "validity": [
           {
@@ -2637,7 +2657,7 @@
         "id": "search_range",
         "title": "Search Range",
         "description": "The distance in blocks it will look for the block to move towards.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "validity": [
           {
@@ -2658,7 +2678,7 @@
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Movement speed multiplier of the mob when using this goal.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1,
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
@@ -2673,7 +2693,7 @@
         "id": "target_blocks",
         "title": "Target Blocks",
         "description": "Blocks that the mob can lay its eggs on top of.",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [
           "minecraft:sand"
         ],
@@ -2692,7 +2712,7 @@
         "id": "target_materials_above_block",
         "title": "Target Materials Above Block",
         "description": "Types of materials that can exist above the target block. Valid types are Air, Water, and Lava.",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [
           "air"
         ],
@@ -2711,7 +2731,7 @@
         "id": "use_default_animation",
         "title": "Use Default Animation",
         "description": "Specifies if the default lay-egg animation should be played when the egg is placed or not.",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": true
       }
     ],

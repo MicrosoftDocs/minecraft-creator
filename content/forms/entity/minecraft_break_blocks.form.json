@@ -29,7 +29,7 @@
         "id": "breakable_blocks",
         "title": "Breakable Blocks",
         "description": "A list of the blocks that can be broken as this entity moves around",
-        "dataType": 17
+        "dataType": "stringArray"
       }
     ],
     "samples": {}

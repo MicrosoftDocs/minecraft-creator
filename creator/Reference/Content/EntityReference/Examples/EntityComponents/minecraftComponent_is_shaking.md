@@ -15,7 +15,7 @@ Sets that this entity is currently shaking.
 
 ## Samples
 
-#### [Hoglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/hoglin.json)
+#### [Skeleton](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton.json)
 
 
 ```json

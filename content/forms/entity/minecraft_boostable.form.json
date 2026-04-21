@@ -77,7 +77,7 @@
         "id": "boost_items",
         "title": "Boost Items",
         "description": "List of items that can be used to boost while riding this entity. Each item has the following properties:",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "List of items that can be used to boost while riding this entity. Each item has the following properties:",
@@ -87,19 +87,19 @@
               "title": "Damage",
               "description": "This is the damage that the item will take each time it is used.",
               "defaultValue": 1,
-              "dataType": 0
+              "dataType": "int"
             },
             {
               "id": "item",
               "title": "Item",
               "description": "Name of the item that can be used to boost.",
-              "dataType": 2
+              "dataType": "string"
             },
             {
               "id": "replace_item",
               "title": "Replace Item",
               "description": "The item used to boost will become this item once it is used up.",
-              "dataType": 2
+              "dataType": "string"
             }
           ]
         },
@@ -135,7 +135,7 @@
         "title": "Duration",
         "description": "Time in seconds for the boost.",
         "defaultValue": 3,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/pig.json": [
             {
@@ -156,7 +156,7 @@
         "title": "Speed Multiplier",
         "description": "Factor by which the entity's normal speed increases. E.g. 2.0 means go twice as fast. Requires \"format_version\" of 1.20 or more, otherwise the value 1.35 will be used.",
         "defaultValue": 1.35,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/pig.json": [
             {

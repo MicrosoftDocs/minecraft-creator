@@ -25,13 +25,13 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/drowned.json": [
+      "/vanilla/behavior_pack/entities/frog.json": [
         {
           "path": "/minecraft:entity/components/minecraft:spawn_egg_interaction/",
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/fox.json": [
+      "/vanilla/behavior_pack/entities/goat.json": [
         {
           "path": "/minecraft:entity/components/minecraft:spawn_egg_interaction/",
           "content": {}

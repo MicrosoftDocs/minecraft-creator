@@ -20,6 +20,8 @@ ms.date: 02/11/2025
 | [minecraft:angry](EntityComponents/minecraftComponent_angry.md)| Defines an entity's 'angry' state using a timer. |
 | [minecraft:annotation.break_door](EntityComponents/minecraftComponent_annotation_break_door.md)| Allows an entity to break doors, assuming that that flags set up for the component to use in navigation. |
 | [minecraft:annotation.open_door](EntityComponents/minecraftComponent_annotation_open_door.md)| Allows the entity to open doors. |
+| [minecraft:apply_knockback_rules](EntityComponents/minecraftComponent_apply_knockback_rules.md)| Defines how an entity applies knockback. |
+| [minecraft:apply_knockback_rules_instance](EntityComponents/minecraftComponent_apply_knockback_rules_instance.md)| Intance of rules definition. |
 | [minecraft:area_attack](EntityComponents/minecraftComponent_area_attack.md)| A component that does damage to entities that get within range. |
 | [minecraft:attack](EntityComponents/minecraftComponent_attack.md)| Defines an entity's melee attack damage and any additional status effects applied on hit. |
 | [minecraft:attack_cooldown](EntityComponents/minecraftComponent_attack_cooldown.md)| Adds a cooldown to an entity. |
@@ -183,6 +185,7 @@ ms.date: 02/11/2025
 | [minecraft:sound_volume](EntityComponents/minecraftComponent_sound_volume.md)| Sets the entity's base volume for sound effects. |
 | [minecraft:spawn_egg_interaction](EntityComponents/minecraftComponent_spawn_egg_interaction.md)| Enables interacting with this entity using its own spawn egg to spawn a born child. |
 | [minecraft:spawn_entity](EntityComponents/minecraftComponent_spawn_entity.md)| Adds a timer after which this entity will spawn another entity or item (similar to vanilla's chicken's egg-laying behavior). |
+| [minecraft:spawn_on_death](EntityComponents/minecraftComponent_spawn_on_death.md)| Component for spawning entities when an entity perishes. |
 | [minecraft:spell_effects](EntityComponents/minecraftComponent_spell_effects.md)| Allows an entity to add or remove status effects from itself. |
 | [minecraft:strength](EntityComponents/minecraftComponent_strength.md)| Defines the entity's strength to carry items. |
 | [minecraft:suspect_tracking](EntityComponents/minecraftComponent_suspect_tracking.md)| Allows this entity to remember suspicious locations. |

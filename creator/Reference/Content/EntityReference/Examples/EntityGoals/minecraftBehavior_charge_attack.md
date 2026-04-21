@@ -157,6 +157,7 @@ Allows this entity to damage a target by using a running attack.
 | bottle.dragonbreath | Bottle.dragonbreath | |
 | bottle.empty | Bottle.empty | |
 | bottle.fill | Bottle.fill | |
+| bounce | Bounce | |
 | bow | Bow | |
 | bow.hit | Bow.hit | |
 | break | Break | |
@@ -479,6 +480,7 @@ Allows this entity to damage a target by using a running attack.
 | pumpkin.carve | Pumpkin.carve | |
 | purr | Purr | |
 | purreow | Purreow | |
+| pushed_by_player | Pushed by player | |
 | raid.horn | Raid.horn | |
 | ram_impact | Ram impact | |
 | ram_impact.screamer | Ram impact.screamer | |

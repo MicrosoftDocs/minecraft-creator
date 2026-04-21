@@ -164,6 +164,7 @@ Allows the mob to lay an egg block on certain types of blocks if the mob is preg
 | bottle.dragonbreath | Bottle.dragonbreath | |
 | bottle.empty | Bottle.empty | |
 | bottle.fill | Bottle.fill | |
+| bounce | Bounce | |
 | bow | Bow | |
 | bow.hit | Bow.hit | |
 | break | Break | |
@@ -486,6 +487,7 @@ Allows the mob to lay an egg block on certain types of blocks if the mob is preg
 | pumpkin.carve | Pumpkin.carve | |
 | purr | Purr | |
 | purreow | Purreow | |
+| pushed_by_player | Pushed by player | |
 | raid.horn | Raid.horn | |
 | ram_impact | Ram impact | |
 | ram_impact.screamer | Ram impact.screamer | |

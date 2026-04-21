@@ -20,31 +20,31 @@
     "id": "block_reference",
     "fields": [
       {
-        "dataType": 2,
+        "dataType": "string",
         "id": "name",
         "title": "Name",
         "isRequired": true
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "states",
         "title": "States",
         "isRequired": true,
         "subForm": {
           "fields": [
             {
-              "dataType": 0,
+              "dataType": "boolean",
               "id": "\\w*:?\\w+",
               "title": "\\w* ?\\w+",
               "isRequired": false,
               "alternates": [
                 {
-                  "dataType": 1,
+                  "dataType": "int",
                   "id": "\\w*:?\\w+",
                   "isRequired": false
                 },
                 {
-                  "dataType": 2,
+                  "dataType": "string",
                   "id": "\\w*:?\\w+",
                   "isRequired": false
                 }

@@ -25,31 +25,31 @@
         "id": "rotation",
         "title": "Rotation",
         "description": "The block's rotation in increments of 90 degrees",
-        "dataType": 17
+        "dataType": "stringArray"
       },
       {
         "id": "rotation_pivot",
         "title": "Rotation Pivot",
         "description": "The point to apply rotation around",
-        "dataType": 11
+        "dataType": "point3"
       },
       {
         "id": "scale",
         "title": "Scale",
         "description": "The block's scale",
-        "dataType": 11
+        "dataType": "point3"
       },
       {
         "id": "scale_pivot",
         "title": "Scale Pivot",
         "description": "The point to apply scale around",
-        "dataType": 11
+        "dataType": "point3"
       },
       {
         "id": "translation",
         "title": "Translation",
         "description": "The block's translation",
-        "dataType": 11
+        "dataType": "point3"
       }
     ]
   }

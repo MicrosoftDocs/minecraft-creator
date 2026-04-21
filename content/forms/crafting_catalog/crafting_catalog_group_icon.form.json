@@ -22,11 +22,11 @@
       {
         "id": "icon",
         "description": "The item or block that represents the group.",
-        "dataType": 2,
+        "dataType": "string",
         "alternates": [
           {
             "id": "icon",
-            "dataType": 16,
+            "dataType": "object",
             "readOnly": true,
             "subForm": {
               "id": "icon",
@@ -36,7 +36,7 @@
                   "id": "name",
                   "title": "Name",
                   "description": "The name of an item or block. A namespace for the item is required. You can optionally provide an aux value for items that use it at the end. Example: namespace:my_item:1",
-                  "dataType": 16,
+                  "dataType": "object",
                   "validity": [
                     {
                       "comparison": "pattern",
@@ -54,7 +54,7 @@
         "id": "name",
         "title": "Name",
         "description": "A localization key representing the name of the group that starts with a namespace. The 'minecraft' namespace is reservered for the Vanilla game. Creating new group names starting with 'minecraft' run the risk of being overwritten in later updates.",
-        "dataType": 2,
+        "dataType": "string",
         "validity": [
           {
             "comparison": "pattern",

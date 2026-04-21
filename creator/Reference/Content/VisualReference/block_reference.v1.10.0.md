@@ -28,6 +28,6 @@ Defines a block reference object as used by resource pack client definitions (fo
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| \w*:?\w+ | *not set* | Integer number |  | 
-| \w*:?\w+ (as Boolean true/false) | *not set* | Boolean true/false |  | 
+| \w*:?\w+ | *not set* | Boolean true/false |  | 
+| \w*:?\w+ (as Integer number) | *not set* | Integer number |  | 
 | \w*:?\w+ (as String) | *not set* | String |  | 

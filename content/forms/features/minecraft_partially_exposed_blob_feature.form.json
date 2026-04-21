@@ -109,14 +109,14 @@
     "title": "Partially Exposed Blob Feature",
     "fields": [
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "description",
         "title": "Description",
         "isRequired": true,
         "subForm": {
           "fields": [
             {
-              "dataType": 2,
+              "dataType": "string",
               "id": "identifier",
               "title": "Identifier",
               "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -126,14 +126,14 @@
         }
       },
       {
-        "dataType": 0,
+        "dataType": "int",
         "id": "placement_radius_around_floor",
         "title": "Placement Radius Around Floor",
         "description": "Defines the cubic radius of the blob. [1, 8]",
         "isRequired": true
       },
       {
-        "dataType": 2,
+        "dataType": "string",
         "id": "exposed_face",
         "title": "Exposed Face",
         "description": "Defines a block face that is allowed to be exposed to air and/or water. Other faces need to be embedded for blocks to be placed by this feature. Defaults to upwards face.",

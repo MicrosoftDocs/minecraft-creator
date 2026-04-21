@@ -44,12 +44,3 @@ The entity puts on the desired equipment.
   ]
 }
 ```
-
-#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
-
-
-```json
-"minecraft:equip_item": {
-  "can_wear_armor": false
-}
-```

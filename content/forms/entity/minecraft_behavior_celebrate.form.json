@@ -22,39 +22,39 @@
         "id": "celebration_sound",
         "title": "Celebration Sound",
         "description": "The sound event to trigger during the celebration.",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "duration",
         "title": "Duration",
         "description": "The duration in seconds that the celebration lasts for.",
         "defaultValue": 30,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "jump_interval",
         "title": "Jump Interval",
         "description": "Minimum and maximum time between jumping (positive, in seconds).",
-        "dataType": 18
+        "dataType": "intRange"
       },
       {
         "id": "on_celebration_end_event",
         "title": "Celebration End Event",
         "description": "The event to trigger when the goal's duration expires.",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "sound_interval",
         "title": "Sound Interval",
         "description": "Minimum and maximum time between sound events (positive, in seconds).",
-        "dataType": 18
+        "dataType": "intRange"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "samples": {}
@@ -68,8 +68,12 @@
         "id": "celebration_sound",
         "title": "LevelSoundEvent",
         "description": "The sound event to trigger during the celebration.",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
+          {
+            "id": "absorb_block",
+            "title": "Absorb block"
+          },
           {
             "id": "activate",
             "title": "Activate"
@@ -551,6 +555,10 @@
             "title": "Bottle.fill"
           },
           {
+            "id": "bounce",
+            "title": "Bounce"
+          },
+          {
             "id": "bow",
             "title": "Bow"
           },
@@ -913,6 +921,10 @@
           {
             "id": "eat",
             "title": "Eat"
+          },
+          {
+            "id": "eject_block",
+            "title": "Eject block"
           },
           {
             "id": "elderguardian.curse",
@@ -1839,6 +1851,10 @@
             "title": "Purreow"
           },
           {
+            "id": "pushed_by_player",
+            "title": "Pushed by player"
+          },
+          {
             "id": "raid.horn",
             "title": "Raid.horn"
           },
@@ -2037,6 +2053,10 @@
           {
             "id": "sleep",
             "title": "Sleep"
+          },
+          {
+            "id": "slime_landing",
+            "title": "Slime landing"
           },
           {
             "id": "smithing_table.use",
@@ -2292,7 +2312,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -2313,14 +2333,14 @@
         "id": "duration",
         "title": "Duration",
         "description": "The duration in seconds that the celebration lasts for.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 30
       },
       {
         "id": "jump_interval",
         "title": "Jump Interval",
         "description": "Minimum and maximum time between jumping (positive, in seconds).",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 3.5,
           "min": 1
@@ -2332,7 +2352,7 @@
         "id": "on_celebration_end_event",
         "title": "Celebration End Event",
         "description": "The event to trigger when the goal's duration expires.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "event": "",
           "filters": {
@@ -2347,19 +2367,19 @@
           },
           "target": "self"
         },
-        "subFormId": "entity/actordefinitiontrigger"
+        "subFormId": "beta/actordefinitiontrigger"
       },
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "sound_interval",
         "title": "Sound Interval",
         "description": "Minimum and maximum time between sound events (positive, in seconds).",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 7,
           "min": 2

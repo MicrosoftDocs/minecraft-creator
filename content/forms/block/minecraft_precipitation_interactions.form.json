@@ -24,7 +24,7 @@
         "title": "Precipitation Behavior",
         "description": "What behavior should the block have. Three possible values: obrain, obstruct_rain_accumulate_snow and none",
         "defaultValue": "accumulate snow",
-        "dataType": 2
+        "dataType": "string"
       }
     ]
   }

@@ -207,6 +207,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:chest | minecraft:cardinal_direction |
 | minecraft:chipped_anvil | minecraft:cardinal_direction |
 | minecraft:chiseled_bookshelf | books_stored, direction |
+| minecraft:chiseled_cinnabar |  |
 | minecraft:chiseled_copper |  |
 | minecraft:chiseled_deepslate |  |
 | minecraft:chiseled_nether_bricks |  |
@@ -216,13 +217,24 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:chiseled_resin_bricks |  |
 | minecraft:chiseled_sandstone |  |
 | minecraft:chiseled_stone_bricks |  |
+| minecraft:chiseled_sulfur |  |
 | minecraft:chiseled_tuff |  |
-| minecraft:chiseled_tuff_bricks |  |
-| minecraft:chorus_flower | age |
 
 | Name | States |
 |:-----------|:-----------|
+| minecraft:chiseled_tuff_bricks |  |
+| minecraft:chorus_flower | age |
 | minecraft:chorus_plant |  |
+| minecraft:cinnabar |  |
+| minecraft:cinnabar_brick_double_slab | minecraft:vertical_half |
+| minecraft:cinnabar_brick_slab | minecraft:vertical_half |
+| minecraft:cinnabar_brick_stairs | upside_down_bit, weirdo_direction |
+| minecraft:cinnabar_brick_wall | wall_connection_type_east, wall_connection_type_north, wall_connection_type_south, wall_connection_type_west, wall_post_bit |
+| minecraft:cinnabar_bricks |  |
+| minecraft:cinnabar_double_slab | minecraft:vertical_half |
+| minecraft:cinnabar_slab | minecraft:vertical_half |
+| minecraft:cinnabar_stairs | upside_down_bit, weirdo_direction |
+| minecraft:cinnabar_wall | wall_connection_type_east, wall_connection_type_north, wall_connection_type_south, wall_connection_type_west, wall_post_bit |
 | minecraft:clay |  |
 | minecraft:closed_eyeblossom |  |
 | minecraft:coal_block |  |
@@ -410,6 +422,9 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:element_11 |  |
 | minecraft:element_110 |  |
 | minecraft:element_111 |  |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:element_112 |  |
 | minecraft:element_113 |  |
 | minecraft:element_114 |  |
@@ -422,9 +437,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:element_14 |  |
 | minecraft:element_15 |  |
 | minecraft:element_16 |  |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:element_17 |  |
 | minecraft:element_18 |  |
 | minecraft:element_19 |  |
@@ -613,6 +625,9 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:hard_brown_stained_glass |  |
 | minecraft:hard_brown_stained_glass_pane |  |
 | minecraft:hard_cyan_stained_glass |  |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:hard_cyan_stained_glass_pane |  |
 | minecraft:hard_glass |  |
 | minecraft:hard_glass_pane |  |
@@ -625,9 +640,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:hard_light_gray_stained_glass |  |
 | minecraft:hard_light_gray_stained_glass_pane |  |
 | minecraft:hard_lime_stained_glass |  |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:hard_lime_stained_glass_pane |  |
 | minecraft:hard_magenta_stained_glass |  |
 | minecraft:hard_magenta_stained_glass_pane |  |
@@ -816,6 +828,9 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:mud_brick_wall | wall_connection_type_east, wall_connection_type_north, wall_connection_type_south, wall_connection_type_west, wall_post_bit |
 | minecraft:mud_bricks |  |
 | minecraft:muddy_mangrove_roots | pillar_axis |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:mushroom_stem | huge_mushroom_bits |
 | minecraft:mycelium |  |
 | minecraft:nether_brick |  |
@@ -828,9 +843,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:nether_sprouts |  |
 | minecraft:nether_wart | age |
 | minecraft:nether_wart_block |  |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:netherite_block |  |
 | minecraft:netherrack |  |
 | minecraft:normal_stone_double_slab | minecraft:vertical_half |
@@ -946,6 +958,11 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:polished_blackstone_slab | minecraft:vertical_half |
 | minecraft:polished_blackstone_stairs | upside_down_bit, weirdo_direction |
 | minecraft:polished_blackstone_wall | wall_connection_type_east, wall_connection_type_north, wall_connection_type_south, wall_connection_type_west, wall_post_bit |
+| minecraft:polished_cinnabar |  |
+| minecraft:polished_cinnabar_double_slab | minecraft:vertical_half |
+| minecraft:polished_cinnabar_slab | minecraft:vertical_half |
+| minecraft:polished_cinnabar_stairs | upside_down_bit, weirdo_direction |
+| minecraft:polished_cinnabar_wall | wall_connection_type_east, wall_connection_type_north, wall_connection_type_south, wall_connection_type_west, wall_post_bit |
 | minecraft:polished_deepslate |  |
 | minecraft:polished_deepslate_double_slab | minecraft:vertical_half |
 | minecraft:polished_deepslate_slab | minecraft:vertical_half |
@@ -959,6 +976,11 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:polished_granite_double_slab | minecraft:vertical_half |
 | minecraft:polished_granite_slab | minecraft:vertical_half |
 | minecraft:polished_granite_stairs | upside_down_bit, weirdo_direction |
+| minecraft:polished_sulfur |  |
+| minecraft:polished_sulfur_double_slab | minecraft:vertical_half |
+| minecraft:polished_sulfur_slab | minecraft:vertical_half |
+| minecraft:polished_sulfur_stairs | upside_down_bit, weirdo_direction |
+| minecraft:polished_sulfur_wall | wall_connection_type_east, wall_connection_type_north, wall_connection_type_south, wall_connection_type_west, wall_post_bit |
 | minecraft:polished_tuff |  |
 | minecraft:polished_tuff_double_slab | minecraft:vertical_half |
 | minecraft:polished_tuff_slab | minecraft:vertical_half |
@@ -967,6 +989,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:poppy |  |
 | minecraft:portal | portal_axis |
 | minecraft:potatoes | growth |
+| minecraft:potent_sulfur |  |
 | minecraft:powder_snow |  |
 | minecraft:powered_comparator | minecraft:cardinal_direction, output_lit_bit, output_subtract_bit |
 | minecraft:powered_repeater | minecraft:cardinal_direction, repeater_delay |
@@ -1008,6 +1031,9 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:raw_copper_block |  |
 | minecraft:raw_gold_block |  |
 | minecraft:raw_iron_block |  |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:red_candle | candles, lit |
 | minecraft:red_candle_cake | lit |
 | minecraft:red_carpet |  |
@@ -1031,9 +1057,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:red_stained_glass |  |
 | minecraft:red_stained_glass_pane |  |
 | minecraft:red_terracotta |  |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:red_tulip |  |
 | minecraft:red_wool |  |
 | minecraft:redstone_block |  |
@@ -1162,6 +1185,17 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:stripped_warped_stem | pillar_axis |
 | minecraft:structure_block | structure_block_type |
 | minecraft:structure_void |  |
+| minecraft:sulfur |  |
+| minecraft:sulfur_brick_double_slab | minecraft:vertical_half |
+| minecraft:sulfur_brick_slab | minecraft:vertical_half |
+| minecraft:sulfur_brick_stairs | upside_down_bit, weirdo_direction |
+| minecraft:sulfur_brick_wall | wall_connection_type_east, wall_connection_type_north, wall_connection_type_south, wall_connection_type_west, wall_post_bit |
+| minecraft:sulfur_bricks |  |
+| minecraft:sulfur_double_slab | minecraft:vertical_half |
+| minecraft:sulfur_slab | minecraft:vertical_half |
+| minecraft:sulfur_spike | dripstone_thickness, hanging |
+| minecraft:sulfur_stairs | upside_down_bit, weirdo_direction |
+| minecraft:sulfur_wall | wall_connection_type_east, wall_connection_type_north, wall_connection_type_south, wall_connection_type_west, wall_post_bit |
 | minecraft:sunflower | upper_block_bit |
 | minecraft:suspicious_gravel | brushed_progress, hanging |
 | minecraft:suspicious_sand | brushed_progress, hanging |
@@ -1200,6 +1234,9 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:undyed_shulker_box |  |
 | minecraft:unknown |  |
 | minecraft:unlit_redstone_torch | torch_facing_direction |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:unpowered_comparator | minecraft:cardinal_direction, output_lit_bit, output_subtract_bit |
 | minecraft:unpowered_repeater | minecraft:cardinal_direction, repeater_delay |
 | minecraft:vault | minecraft:cardinal_direction, ominous, vault_state |
@@ -1234,9 +1271,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:waxed_copper_bars |  |
 | minecraft:waxed_copper_bulb | lit, powered_bit |
 | minecraft:waxed_copper_chain | pillar_axis |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:waxed_copper_chest | minecraft:cardinal_direction |
 | minecraft:waxed_copper_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:waxed_copper_golem_statue | minecraft:cardinal_direction |

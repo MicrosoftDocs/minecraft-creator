@@ -1,0 +1,34 @@
+{
+  "id": "Biome Definition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Biome Definition",
+    "title": "Beta Biome Definition",
+    "description": "Contains a description and components to define a Biome.",
+    "fields": [
+      {
+        "id": "components",
+        "title": "Components",
+        "description": "Components for this Biome.",
+        "dataType": "object",
+        "subFormId": "beta/biome_components",
+        "isRequired": true
+      },
+      {
+        "id": "description",
+        "title": "Description",
+        "description": "Non-component settings, including the Biome name.",
+        "dataType": "object",
+        "subFormId": "beta/biome_description",
+        "isRequired": true
+      },
+      {
+        "id": "environment_attributes",
+        "title": "Environment Attributes",
+        "description": "Environment attributes for this Biome.",
+        "dataType": "object",
+        "subFormId": "beta/environment_attributes"
+      }
+    ]
+  }
+}

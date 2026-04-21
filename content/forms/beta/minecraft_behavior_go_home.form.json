@@ -1,0 +1,81 @@
+{
+  "id": "minecraft:behavior.go_home",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.go_home",
+    "title": "Beta Go Home Behavior",
+    "description": "Allows the mob to move back to the position they were spawned.",
+    "fields": [
+      {
+        "id": "calculate_new_path_radius",
+        "title": "Calculate New Path Radius",
+        "description": "Distance in blocks that the mob is considered close enough to the end of the current path. A new path will then be calculated to continue toward home.",
+        "dataType": "float",
+        "defaultValue": 2
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "goal_radius",
+        "title": "Goal Radius",
+        "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot.",
+        "dataType": "float",
+        "defaultValue": 0.5
+      },
+      {
+        "id": "interval",
+        "title": "Interval",
+        "description": "A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal.",
+        "dataType": "int",
+        "defaultValue": 120
+      },
+      {
+        "id": "on_failed",
+        "title": "Failed",
+        "description": "Event(s) to run when this goal fails.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subFormId": "beta/actordefinitiontrigger"
+      },
+      {
+        "id": "on_home",
+        "title": "Home",
+        "description": "Event(s) to run when this mob gets home.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subFormId": "beta/actordefinitiontrigger"
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal.",
+        "dataType": "float",
+        "defaultValue": 1
+      }
+    ]
+  }
+}

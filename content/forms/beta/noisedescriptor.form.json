@@ -1,0 +1,39 @@
+{
+  "id": "NoiseDescriptor",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "NoiseDescriptor",
+    "title": "Beta NoiseDescriptor",
+    "fields": [
+      {
+        "id": "amplitudes",
+        "title": "Amplitudes",
+        "description": "Governs the attenuation of the first n octaves in the generated noise.",
+        "dataType": "numberArray",
+        "minLength": 1,
+        "maxLength": 100,
+        "isRequired": true
+      },
+      {
+        "id": "first_octave",
+        "title": "First Octave",
+        "description": "Governs the general frequency characteristics of the generated noise. Lower value results in noise with lower frequency content.",
+        "dataType": "int",
+        "isRequired": true
+      },
+      {
+        "id": "name",
+        "title": "Name",
+        "description": "The string used to initialize the noise. Has no impact on the qualitative aspects of the generated values.",
+        "dataType": "string",
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^\\S+$"
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  }
+}

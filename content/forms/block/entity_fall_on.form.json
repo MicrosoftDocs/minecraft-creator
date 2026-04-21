@@ -23,7 +23,7 @@
         "id": "min_fall_distance",
         "title": "Min Fall Distance",
         "description": "The minimum distance in blocks that an actor needs to fall before events are triggered.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0
       }
     ]

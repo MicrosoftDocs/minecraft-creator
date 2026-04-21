@@ -28,7 +28,7 @@
         "id": "cooldown_range",
         "title": "Cooldown Range",
         "description": "Cooldown range between sniffs in seconds",
-        "dataType": 18,
+        "dataType": "intRange",
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
             {
@@ -46,7 +46,7 @@
         "title": "Duration",
         "description": "Sniffing duration in seconds",
         "defaultValue": 1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
             {
@@ -61,7 +61,7 @@
         "title": "Sniffing Radius",
         "description": "Mob detection radius",
         "defaultValue": 5,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
             {
@@ -76,7 +76,7 @@
         "title": "Suspicion Radius Horizontal",
         "description": "Mob suspicion horizontal radius. When a player is within this radius horizontally, the anger level towards that player is increased",
         "defaultValue": 3,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
             {
@@ -91,7 +91,7 @@
         "title": "Suspicion Radius Vertical",
         "description": "Mob suspicion vertical radius. When a player is within this radius vertically, the anger level towards that player is increased",
         "defaultValue": 3,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
             {
@@ -106,7 +106,7 @@
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
             {
@@ -144,7 +144,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -165,7 +165,7 @@
         "id": "cooldown_range",
         "title": "Cooldown Range",
         "description": "Cooldown range between sniffs in seconds",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 10,
           "min": 3
@@ -187,7 +187,7 @@
         "id": "duration",
         "title": "Duration",
         "description": "Sniffing duration in seconds",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1,
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
@@ -201,7 +201,7 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
@@ -216,7 +216,7 @@
         "id": "sniffing_radius",
         "title": "Sniffing Radius",
         "description": "Mob detection radius",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 5,
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
@@ -231,7 +231,7 @@
         "id": "suspicion_radius_horizontal",
         "title": "Suspicion Radius Horizontal",
         "description": "Mob suspicion horizontal radius. When a player is within this radius horizontally, the anger level towards that player is increased",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 3,
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
@@ -246,7 +246,7 @@
         "id": "suspicion_radius_vertical",
         "title": "Suspicion Radius Vertical",
         "description": "Mob suspicion vertical radius. When a player is within this radius vertically, the anger level towards that player is increased",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 3,
         "validity": [
           {

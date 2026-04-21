@@ -161,13 +161,13 @@
         "title": "Baby Knockback Modifier",
         "description": "The modifier to knockback that babies have.",
         "defaultValue": 0.333333,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "cooldown_range",
         "title": "Cooldown Range",
         "description": "Minimum and maximum cooldown time-range (positive, in seconds) between each attempted ram attack.",
-        "dataType": 18,
+        "dataType": "intRange",
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
             {
@@ -192,7 +192,7 @@
         "title": "Knockback Force",
         "description": "The force of the knockback of the ram attack.",
         "defaultValue": 5,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
             {
@@ -211,7 +211,7 @@
         "title": "Knockback Height",
         "description": "The height of the knockback of the ram attack.",
         "defaultValue": 0.1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
             {
@@ -230,7 +230,7 @@
         "title": "Min Ram Distance",
         "description": "The minimum distance at which the mob can start a ram attack.",
         "defaultValue": 4,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
             {
@@ -248,7 +248,7 @@
         "id": "on_start",
         "title": "Start",
         "description": "The event to trigger when attacking",
-        "dataType": 22,
+        "dataType": "minecraftEventTrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
             {
@@ -276,7 +276,7 @@
         "id": "pre_ram_sound",
         "title": "Pre Ram Sound",
         "description": "The sound to play when an entity is about to perform a ram attack.",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
             {
@@ -295,7 +295,7 @@
         "title": "Ram Distance",
         "description": "The distance at which the mob start to run with ram speed.",
         "defaultValue": 7,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
             {
@@ -313,7 +313,7 @@
         "id": "ram_impact_sound",
         "title": "Ram Impact Sound",
         "description": "The sound to play when an entity is impacting on a ram attack.",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
             {
@@ -332,7 +332,7 @@
         "title": "Ram Speed",
         "description": "Sets the entity's speed when charging toward the target.",
         "defaultValue": 2,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
             {
@@ -351,7 +351,7 @@
         "title": "Run Speed",
         "description": "Sets the entity's speed when running toward the target.",
         "defaultValue": 1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
             {
@@ -370,7 +370,7 @@
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
             {
@@ -447,13 +447,13 @@
         "id": "baby_knockback_modifier",
         "title": "Baby Knockback Modifier",
         "description": "The modifier to knockback that babies have.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.3333333432674408
       },
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -474,7 +474,7 @@
         "id": "cooldown_range",
         "title": "Cooldown Range",
         "description": "Minimum and maximum cooldown time-range (positive, in seconds) between each attempted ram attack.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 20,
           "min": 10
@@ -504,7 +504,7 @@
         "id": "knockback_force",
         "title": "Knockback Force",
         "description": "The force of the knockback of the ram attack.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 5,
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
@@ -523,7 +523,7 @@
         "id": "knockback_height",
         "title": "Knockback Height",
         "description": "The height of the knockback of the ram attack.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.10000000149011612,
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
@@ -542,7 +542,7 @@
         "id": "min_ram_distance",
         "title": "Min Ram Distance",
         "description": "The minimum distance at which the mob can start a ram attack.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 4,
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
@@ -561,9 +561,9 @@
         "id": "on_start",
         "title": "Start",
         "description": "The event to trigger when attacking",
-        "dataType": 15,
+        "dataType": "objectArray",
         "defaultValue": [],
-        "subFormId": "entity/actordefinitiontrigger",
+        "subFormId": "beta/actordefinitiontrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
             {
@@ -591,8 +591,12 @@
         "id": "pre_ram_sound",
         "title": "LevelSoundEvent",
         "description": "The sound to play when an entity is about to perform a ram attack.",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
+          {
+            "id": "absorb_block",
+            "title": "Absorb block"
+          },
           {
             "id": "activate",
             "title": "Activate"
@@ -1074,6 +1078,10 @@
             "title": "Bottle.fill"
           },
           {
+            "id": "bounce",
+            "title": "Bounce"
+          },
+          {
             "id": "bow",
             "title": "Bow"
           },
@@ -1436,6 +1444,10 @@
           {
             "id": "eat",
             "title": "Eat"
+          },
+          {
+            "id": "eject_block",
+            "title": "Eject block"
           },
           {
             "id": "elderguardian.curse",
@@ -2362,6 +2374,10 @@
             "title": "Purreow"
           },
           {
+            "id": "pushed_by_player",
+            "title": "Pushed by player"
+          },
+          {
             "id": "raid.horn",
             "title": "Raid.horn"
           },
@@ -2560,6 +2576,10 @@
           {
             "id": "sleep",
             "title": "Sleep"
+          },
+          {
+            "id": "slime_landing",
+            "title": "Slime landing"
           },
           {
             "id": "smithing_table.use",
@@ -2827,7 +2847,7 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
@@ -2846,7 +2866,7 @@
         "id": "ram_distance",
         "title": "Ram Distance",
         "description": "The distance at which the mob start to run with ram speed.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 7,
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
@@ -2865,8 +2885,12 @@
         "id": "ram_impact_sound",
         "title": "LevelSoundEvent",
         "description": "The sound to play when an entity is impacting on a ram attack.",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
+          {
+            "id": "absorb_block",
+            "title": "Absorb block"
+          },
           {
             "id": "activate",
             "title": "Activate"
@@ -3348,6 +3372,10 @@
             "title": "Bottle.fill"
           },
           {
+            "id": "bounce",
+            "title": "Bounce"
+          },
+          {
             "id": "bow",
             "title": "Bow"
           },
@@ -3710,6 +3738,10 @@
           {
             "id": "eat",
             "title": "Eat"
+          },
+          {
+            "id": "eject_block",
+            "title": "Eject block"
           },
           {
             "id": "elderguardian.curse",
@@ -4636,6 +4668,10 @@
             "title": "Purreow"
           },
           {
+            "id": "pushed_by_player",
+            "title": "Pushed by player"
+          },
+          {
             "id": "raid.horn",
             "title": "Raid.horn"
           },
@@ -4834,6 +4870,10 @@
           {
             "id": "sleep",
             "title": "Sleep"
+          },
+          {
+            "id": "slime_landing",
+            "title": "Slime landing"
           },
           {
             "id": "smithing_table.use",
@@ -5102,7 +5142,7 @@
         "id": "ram_speed",
         "title": "Ram Speed",
         "description": "Sets the entity's speed when charging toward the target.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 2,
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
@@ -5121,7 +5161,7 @@
         "id": "run_speed",
         "title": "Run Speed",
         "description": "Sets the entity's speed when running toward the target.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1,
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [

@@ -1,0 +1,119 @@
+{
+  "id": "minecraft:behavior.croak",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.croak",
+    "title": "Beta Croak Behavior",
+    "description": "Allows the entity to croak at a random time interval with configurable conditions.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "Random range in seconds after which the croaking stops. Can also be a constant.",
+        "dataType": "object",
+        "defaultValue": {
+          "max": 4.5,
+          "min": 4.5
+        },
+        "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
+        "subFormId": "item_components/floatrange"
+      },
+      {
+        "id": "filters",
+        "description": "Conditions for the behavior to start and keep running. The interval between runs only starts after passing the filters.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "filters",
+          "title": "Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "filters",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "interval",
+        "title": "Interval",
+        "description": "Random range in seconds between runs of this behavior. Can also be a constant.",
+        "dataType": "object",
+        "defaultValue": {
+          "max": 20,
+          "min": 10
+        },
+        "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
+        "subFormId": "item_components/floatrange"
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      }
+    ]
+  }
+}

@@ -25,7 +25,7 @@
         "title": "Value",
         "description": "The second Palette Color value of the entity.",
         "defaultValue": 0,
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "samples": {}

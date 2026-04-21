@@ -20,32 +20,32 @@
       {
         "id": "left_slope",
         "title": "Left Slope",
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "left_value",
         "title": "Left Value",
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "right_slope",
         "title": "Right Slope",
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "right_value",
         "title": "Right Value",
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "slope",
         "title": "Slope",
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "value",
         "title": "Value",
-        "dataType": 3
+        "dataType": "float"
       }
     ]
   },

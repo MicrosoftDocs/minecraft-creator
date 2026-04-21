@@ -10,7 +10,7 @@
         "id": "components",
         "title": "Components",
         "description": "List of all components used in this item.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "minecraft:allow_off_hand": null,
           "minecraft:block_placer": null,
@@ -63,7 +63,7 @@
         "id": "description",
         "title": "Description",
         "description": "Contains the required identifier for the item. May contain optional fields like menu_category.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "item/description",
         "isRequired": true
       }

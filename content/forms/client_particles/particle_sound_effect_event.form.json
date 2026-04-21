@@ -20,7 +20,7 @@
       {
         "id": "event_name",
         "title": "Event Name",
-        "dataType": 2,
+        "dataType": "string",
         "isRequired": true
       }
     ]

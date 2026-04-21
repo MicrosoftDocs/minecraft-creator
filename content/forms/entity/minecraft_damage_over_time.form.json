@@ -37,7 +37,7 @@
         "title": "Damage Per Hurt",
         "description": "Amount of damage caused each hurt.",
         "defaultValue": 1,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/dolphin.json": [
             {
@@ -58,7 +58,7 @@
         "title": "Time Between Hurt",
         "description": "Time in seconds between damage.",
         "defaultValue": 0,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/vex.json": [
             {

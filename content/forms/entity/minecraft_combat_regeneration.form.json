@@ -24,21 +24,21 @@
         "title": "Apply To Family",
         "description": "Determines if the mob will grant mobs of the same type combat buffs if they kill the target.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "apply_to_self",
         "title": "Apply To Self",
         "description": "Determines if the mob will grant itself the combat buffs if it kills the target.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "regeneration_duration",
         "title": "Regeneration Duration",
         "description": "The duration in seconds of Regeneration I added to the mob. Can also be set to \"infinite\"",
         "defaultValue": 5,
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "samples": {}

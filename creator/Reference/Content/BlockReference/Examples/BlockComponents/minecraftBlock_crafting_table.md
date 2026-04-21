@@ -39,3 +39,15 @@ Specifies the language file key that maps to what text will be displayed in the 
   "table_name": "My Crafting Table"
 }
 ```
+
+#### Block Fabricator
+
+
+```json
+"minecraft:crafting_table": {
+  "crafting_tags": [
+    "graywave_fabricator"
+  ],
+  "table_name": "Fabricator"
+}
+```

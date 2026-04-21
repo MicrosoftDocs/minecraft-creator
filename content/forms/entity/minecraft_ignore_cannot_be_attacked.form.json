@@ -23,7 +23,7 @@
         "id": "filters",
         "title": "Filters",
         "description": "Defines which entities are exceptions and are allowed to be attacked by the owner entity, potentially attacked entity is subject \"other\". If this is not specified then all attacks by the owner are allowed.",
-        "dataType": 20
+        "dataType": "minecraftFilter"
       }
     ]
   }

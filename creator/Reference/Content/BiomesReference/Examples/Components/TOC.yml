@@ -12,6 +12,8 @@
   href: minecraftBiomes_mountain_parameters.md
 - name: minecraft:multinoise_generation_rules
   href: minecraftBiomes_multinoise_generation_rules.md
+- name: minecraft:noise_gradient
+  href: minecraftBiomes_noise_gradient.md
 - name: minecraft:overworld_generation_rules
   href: minecraftBiomes_overworld_generation_rules.md
 - name: minecraft:overworld_height

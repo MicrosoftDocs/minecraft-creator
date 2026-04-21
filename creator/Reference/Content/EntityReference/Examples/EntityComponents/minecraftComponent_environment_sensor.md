@@ -165,40 +165,6 @@ At /minecraft:entity/component_groups/dolphin_on_land_in_rain/minecraft:environm
 }
 ```
 
-#### [Hoglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/hoglin.json)
-
-At /minecraft:entity/component_groups/zombification_sensor/minecraft:environment_sensor/: 
-
-```json
-"minecraft:environment_sensor": {
-  "triggers": {
-    "filters": {
-      "test": "in_nether",
-      "subject": "self",
-      "operator": "==",
-      "value": false
-    },
-    "event": "start_zombification_event"
-  }
-}
-```
-
-At /minecraft:entity/component_groups/start_zombification/minecraft:environment_sensor/: 
-
-```json
-"minecraft:environment_sensor": {
-  "triggers": {
-    "filters": {
-      "test": "in_nether",
-      "subject": "self",
-      "operator": "==",
-      "value": true
-    },
-    "event": "stop_zombification_event"
-  }
-}
-```
-
 #### [Player](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/player.json)
 
 

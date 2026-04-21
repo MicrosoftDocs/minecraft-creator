@@ -29,14 +29,8 @@
         "id": "event",
         "title": "Event",
         "description": "The event to run when the conditions for this trigger are met.",
-        "dataType": 22,
+        "dataType": "minecraftEventTrigger",
         "samples": {
-          "/vanilla/behavior_pack/entities/drowned.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:on_target_escape/",
-              "content": "minecraft:lost_target"
-            }
-          ],
           "/vanilla/behavior_pack/entities/llama.json": [
             {
               "path": "/minecraft:entity/components/minecraft:on_target_escape/",
@@ -54,6 +48,12 @@
               "path": "/minecraft:entity/components/minecraft:on_target_escape/",
               "content": "minecraft:become_calm"
             }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:on_target_escape/",
+              "content": "minecraft:on_calm"
+            }
           ]
         }
       },
@@ -61,9 +61,29 @@
         "id": "filters",
         "title": "Filters",
         "description": "The list of conditions for this trigger to execute.",
-        "dataType": 20,
+        "dataType": "minecraftFilter",
         "samples": {
           "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:on_target_escape/",
+              "content": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "target",
+                    "value": "wolf"
+                  },
+                  {
+                    "test": "has_component",
+                    "subject": "target",
+                    "operator": "!=",
+                    "value": "minecraft:is_tamed"
+                  }
+                ]
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
             {
               "path": "/minecraft:entity/components/minecraft:on_target_escape/",
               "content": {
@@ -90,7 +110,7 @@
         "title": "Target",
         "description": "The target of the event.",
         "defaultValue": "self",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/dolphin.json": [
             {
@@ -98,7 +118,7 @@
               "content": "self"
             }
           ],
-          "/vanilla/behavior_pack/entities/drowned.json": [
+          "/vanilla/behavior_pack/entities/llama.json": [
             {
               "path": "/minecraft:entity/components/minecraft:on_target_escape/",
               "content": "self"
@@ -112,15 +132,6 @@
         {
           "path": "/minecraft:entity/components/minecraft:on_target_escape/",
           "content": {
-            "target": "self"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/drowned.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:on_target_escape/",
-          "content": {
-            "event": "minecraft:lost_target",
             "target": "self"
           }
         }
@@ -163,6 +174,30 @@
           "path": "/minecraft:entity/components/minecraft:on_target_escape/",
           "content": {
             "event": "minecraft:become_calm",
+            "target": "self"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/trader_llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:on_target_escape/",
+          "content": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "target",
+                  "value": "wolf"
+                },
+                {
+                  "test": "has_component",
+                  "subject": "target",
+                  "operator": "!=",
+                  "value": "minecraft:is_tamed"
+                }
+              ]
+            },
+            "event": "minecraft:on_calm",
             "target": "self"
           }
         }

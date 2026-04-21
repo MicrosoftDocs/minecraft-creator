@@ -23,21 +23,21 @@
         "title": "Max Turn",
         "description": "The maximum number in degrees the mob can turn per tick.",
         "defaultValue": 30,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "sway_amplitude",
         "title": "Sway Amplitude",
         "description": "Strength of the sway movement.",
         "defaultValue": 0.05,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "sway_frequency",
         "title": "Sway Frequency",
         "description": "Multiplier for the frequency of the sway movement.",
         "defaultValue": 0.5,
-        "dataType": 3
+        "dataType": "float"
       }
     ],
     "samples": {

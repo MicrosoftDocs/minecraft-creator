@@ -23,77 +23,77 @@
         "title": "Cooldown Time",
         "description": "Time (in seconds) between attacks.",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "max_distance",
         "title": "Max Distance",
         "description": "Max distance from the target, this entity will use this attack behavior.",
         "defaultValue": 15,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "max_sneak_range",
         "title": "Max Sneak Range",
         "description": "Max distance from the target, this entity starts sneaking.",
         "defaultValue": 15,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "max_sprint_range",
         "title": "Max Sprint Range",
         "description": "Max distance from the target, this entity starts sprinting (sprinting takes priority over sneaking).",
         "defaultValue": 4,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "reach_multiplier",
         "title": "Reach Multiplier",
         "description": "Used with the base size of the entity to determine minimum target-distance before trying to deal attack damage.",
         "defaultValue": 2,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "sneak_speed_multiplier",
         "title": "Sneak Speed Multiplier",
         "description": "Modifies the attacking entity's movement speed while sneaking.",
         "defaultValue": 0.6,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "sprint_speed_multiplier",
         "title": "Sprint Speed Multiplier",
         "description": "Modifies the attacking entity's movement speed while sprinting.",
         "defaultValue": 1.33,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "walk_speed_multiplier",
         "title": "Walk Speed Multiplier",
         "description": "Modifies the attacking entity's movement speed when not sneaking or sprinting, but still within attack range.",
         "defaultValue": 0.8,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "x_max_rotation",
         "title": "x Max Rotation",
         "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target.",
         "defaultValue": 30,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "y_max_head_rotation",
         "title": "y Max Head Rotation",
         "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target.",
         "defaultValue": 30,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "samples": {}
@@ -106,7 +106,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -127,7 +127,7 @@
         "id": "cooldown_time",
         "title": "Cooldown Time",
         "description": "Time (in seconds) between attacks.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1,
         "validity": [
           {
@@ -140,7 +140,7 @@
         "id": "max_distance",
         "title": "Max Distance",
         "description": "Max distance from the target, this entity will use this attack behavior.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 15,
         "validity": [
           {
@@ -153,7 +153,7 @@
         "id": "max_sneak_range",
         "title": "Max Sneak Range",
         "description": "Max distance from the target, this entity starts sneaking.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 15,
         "validity": [
           {
@@ -166,7 +166,7 @@
         "id": "max_sprint_range",
         "title": "Max Sprint Range",
         "description": "Max distance from the target, this entity starts sprinting (sprinting takes priority over sneaking).",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 4,
         "validity": [
           {
@@ -178,14 +178,14 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "reach_multiplier",
         "title": "Reach Multiplier",
         "description": "Used with the base size of the entity to determine minimum target-distance before trying to deal attack damage.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 2,
         "validity": [
           {
@@ -198,7 +198,7 @@
         "id": "sneak_speed_multiplier",
         "title": "Sneak Speed Multiplier",
         "description": "Modifies the attacking entity's movement speed while sneaking.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.6000000238418579,
         "validity": [
           {
@@ -211,7 +211,7 @@
         "id": "sprint_speed_multiplier",
         "title": "Sprint Speed Multiplier",
         "description": "Modifies the attacking entity's movement speed while sprinting.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1.3300000429153442,
         "validity": [
           {
@@ -224,7 +224,7 @@
         "id": "walk_speed_multiplier",
         "title": "Walk Speed Multiplier",
         "description": "Modifies the attacking entity's movement speed when not sneaking or sprinting, but still within attack range.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.800000011920929,
         "validity": [
           {
@@ -237,7 +237,7 @@
         "id": "x_max_rotation",
         "title": "x Max Rotation",
         "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 30,
         "validity": [
           {
@@ -250,7 +250,7 @@
         "id": "y_max_head_rotation",
         "title": "y Max Head Rotation",
         "description": "Maximum rotation (in degrees), on the Y-axis, this entity's head can rotate while trying to look at the target.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 30,
         "validity": [
           {

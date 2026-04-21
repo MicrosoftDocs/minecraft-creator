@@ -22,7 +22,7 @@
         "id": "components",
         "title": "Components",
         "description": "Components for this Biome.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "biome/biome_components",
         "isRequired": true
       },
@@ -30,8 +30,8 @@
         "id": "description",
         "title": "Description",
         "description": "Non-component settings, including the Biome name.",
-        "dataType": 16,
-        "subFormId": "biome/biome_description",
+        "dataType": "object",
+        "subFormId": "beta/biome_description",
         "isRequired": true
       }
     ]

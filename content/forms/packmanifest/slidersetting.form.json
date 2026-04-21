@@ -21,25 +21,25 @@
       {
         "id": "default",
         "title": "Default",
-        "dataType": 3,
+        "dataType": "float",
         "isRequired": true
       },
       {
         "id": "max",
         "title": "Max",
-        "dataType": 3,
+        "dataType": "float",
         "isRequired": true
       },
       {
         "id": "min",
         "title": "Min",
-        "dataType": 3,
+        "dataType": "float",
         "isRequired": true
       },
       {
         "id": "name",
         "title": "Name",
-        "dataType": 2,
+        "dataType": "string",
         "validity": [
           {
             "comparison": "pattern",
@@ -51,7 +51,7 @@
       {
         "id": "step",
         "title": "Step",
-        "dataType": 3,
+        "dataType": "float",
         "validity": [
           {
             "comparison": ">",
@@ -63,13 +63,13 @@
       {
         "id": "text",
         "title": "Text",
-        "dataType": 2,
+        "dataType": "string",
         "isRequired": true
       },
       {
         "id": "type",
         "title": "SettingType",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "dropdown",

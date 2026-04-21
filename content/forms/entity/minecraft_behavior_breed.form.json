@@ -96,17 +96,11 @@
         "title": "Speed Multiplier",
         "description": "Movement speed multiplier of the mob when using this AI Goal",
         "defaultValue": 1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:behavior.breed/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_adult/minecraft:behavior.breed/",
               "content": 1
             }
           ],
@@ -116,10 +110,10 @@
               "content": 0.6
             }
           ],
-          "/vanilla/behavior_pack/entities/hoglin.json": [
+          "/vanilla/behavior_pack/entities/llama.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:behavior.breed/",
-              "content": 0.6
+              "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:behavior.breed/",
+              "content": 1
             }
           ]
         }
@@ -129,7 +123,7 @@
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
@@ -137,15 +131,21 @@
               "content": 3
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_adult/minecraft:behavior.breed/",
-              "content": 3
-            }
-          ],
           "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.breed/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/goat_adult/minecraft:behavior.breed/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:behavior.breed/",
               "content": 4
             }
           ]
@@ -156,15 +156,6 @@
       "/vanilla/behavior_pack/entities/chicken.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/fox.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:fox_adult/minecraft:behavior.breed/",
           "content": {
             "priority": 3,
             "speed_multiplier": 1
@@ -188,12 +179,21 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/hoglin.json": [
+      "/vanilla/behavior_pack/entities/llama.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:behavior.breed/",
+          "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:behavior.breed/",
           "content": {
-            "priority": 3,
-            "speed_multiplier": 0.6
+            "priority": 4,
+            "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pig.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:pig_adult/minecraft:behavior.breed/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 1
           }
         }
       ]
@@ -207,7 +207,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -227,7 +227,7 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
@@ -236,15 +236,21 @@
               "content": 3
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_adult/minecraft:behavior.breed/",
-              "content": 3
-            }
-          ],
           "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.breed/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/goat_adult/minecraft:behavior.breed/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:behavior.breed/",
               "content": 4
             }
           ]
@@ -254,18 +260,12 @@
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Movement speed multiplier applied to the mob when using this AI Goal.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1,
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:behavior.breed/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_adult/minecraft:behavior.breed/",
               "content": 1
             }
           ],
@@ -275,10 +275,10 @@
               "content": 0.6
             }
           ],
-          "/vanilla/behavior_pack/entities/hoglin.json": [
+          "/vanilla/behavior_pack/entities/llama.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:behavior.breed/",
-              "content": 0.6
+              "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:behavior.breed/",
+              "content": 1
             }
           ]
         }
@@ -288,15 +288,6 @@
       "/vanilla/behavior_pack/entities/chicken.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:behavior.breed/",
-          "content": {
-            "priority": 3,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/fox.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:fox_adult/minecraft:behavior.breed/",
           "content": {
             "priority": 3,
             "speed_multiplier": 1
@@ -320,12 +311,21 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/hoglin.json": [
+      "/vanilla/behavior_pack/entities/llama.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:behavior.breed/",
+          "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:behavior.breed/",
           "content": {
-            "priority": 3,
-            "speed_multiplier": 0.6
+            "priority": 4,
+            "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pig.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:pig_adult/minecraft:behavior.breed/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 1
           }
         }
       ]

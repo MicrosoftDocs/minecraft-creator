@@ -23,35 +23,35 @@
         "title": "Interval",
         "description": "Percent chance to start wandering, when not path-finding. 1 = 100%",
         "defaultValue": 0.00833,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "look_ahead",
         "title": "Look Ahead",
         "description": "Distance to look ahead for obstacle avoidance, while wandering.",
         "defaultValue": 5,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "This multiplier modifies the entity's speed when wandering.",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "wander_time",
         "title": "Wander Time",
         "description": "Amount of time (in seconds) to wander after wandering behavior was successfully started.",
         "defaultValue": 5,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "samples": {}
@@ -64,7 +64,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -85,34 +85,34 @@
         "id": "interval",
         "title": "Interval",
         "description": "Percent chance to start wandering, when not path-finding. 1 = 100%",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.008329999633133411
       },
       {
         "id": "look_ahead",
         "title": "Look Ahead",
         "description": "Distance to look ahead for obstacle avoidance, while wandering.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 5
       },
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "This multiplier modifies the entity's speed when wandering.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1
       },
       {
         "id": "wander_time",
         "title": "Wander Time",
         "description": "Amount of time (in seconds) to wander after wandering behavior was successfully started.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 5
       }
     ],

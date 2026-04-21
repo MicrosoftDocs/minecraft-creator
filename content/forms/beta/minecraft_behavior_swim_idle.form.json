@@ -1,0 +1,51 @@
+{
+  "id": "minecraft:behavior.swim_idle",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.swim_idle",
+    "title": "Beta Swim Idle Behavior",
+    "description": "Allows the entity go idle, if swimming. Entity must be in water.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "idle_time",
+        "title": "Idle Time",
+        "description": "Amount of time (in seconds) to stay idle.",
+        "dataType": "float",
+        "defaultValue": 5
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "success_rate",
+        "title": "Success Rate",
+        "description": "Percent chance this entity will go idle, 1.0 = 100%.",
+        "dataType": "float",
+        "defaultValue": 0.10000000149011612
+      }
+    ]
+  }
+}

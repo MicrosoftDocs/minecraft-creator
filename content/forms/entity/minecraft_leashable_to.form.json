@@ -24,7 +24,7 @@
         "title": "Can Retrieve From",
         "description": "Allows players to retrieve entities that are leashed to this entity.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       }
     ],
     "samples": {

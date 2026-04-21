@@ -1,0 +1,22 @@
+{
+  "id": "IntRange",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "IntRange",
+    "title": "Beta IntRange",
+    "fields": [
+      {
+        "id": "max",
+        "title": "Max",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "min",
+        "title": "Min",
+        "dataType": "int",
+        "defaultValue": 0
+      }
+    ]
+  }
+}

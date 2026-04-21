@@ -29,7 +29,7 @@ Used to add decoration to the surface of swamp biomes such as water lilies.
 | sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome. | 
 | top_material (Top Material) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
 
 ### max_puddle_depth_below_sea_level
 
@@ -76,6 +76,7 @@ Same structure as [Foundation Material (Foundation Material)](#foundation-materi
 | minecraft:capped | Minecraft:capped | |
 | minecraft:frozen_ocean | Minecraft:frozen ocean | |
 | minecraft:mesa | Minecraft:mesa | |
+| minecraft:noise_gradient | Minecraft:noise gradient | |
 | minecraft:overworld | Minecraft:overworld | |
 | minecraft:swamp | Minecraft:swamp | |
 | minecraft:the_end | Minecraft:the end | |

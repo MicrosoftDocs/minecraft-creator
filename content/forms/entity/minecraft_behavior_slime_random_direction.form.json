@@ -33,28 +33,28 @@
         "title": "Add Random Time Range",
         "description": "Additional time (in whole seconds), chosen randomly in the range of [0, \"add_random_time_range\"], to add to \"min_change_direction_time\".",
         "defaultValue": 3,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "min_change_direction_time",
         "title": "Min Change Direction Time",
         "description": "Constant minimum time (in seconds) to wait before choosing a new direction.",
         "defaultValue": 2,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "turn_range",
         "title": "Turn Range",
         "description": "Maximum rotation angle range (in degrees) when randomly choosing a new direction.",
         "defaultValue": 360,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/magma_cube.json": [
             {
@@ -99,13 +99,13 @@
         "id": "add_random_time_range",
         "title": "Add Random Time Range",
         "description": "Additional time (in whole seconds), chosen randomly in the range of [0, \"add_random_time_range\"], to add to \"min_change_direction_time\".",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 3
       },
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -126,13 +126,13 @@
         "id": "min_change_direction_time",
         "title": "Min Change Direction Time",
         "description": "Constant minimum time (in seconds) to wait before choosing a new direction.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 2
       },
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/magma_cube.json": [
@@ -153,7 +153,7 @@
         "id": "turn_range",
         "title": "Turn Range",
         "description": "Maximum rotation angle range (in degrees) when randomly choosing a new direction.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 360
       }
     ],

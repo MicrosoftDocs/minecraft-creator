@@ -122,14 +122,14 @@
     "title": "Snap To Surface Feature",
     "fields": [
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "description",
         "title": "Description",
         "isRequired": true,
         "subForm": {
           "fields": [
             {
-              "dataType": 2,
+              "dataType": "string",
               "id": "identifier",
               "title": "Identifier",
               "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -139,42 +139,42 @@
         }
       },
       {
-        "dataType": 0,
+        "dataType": "int",
         "id": "vertical_search_range",
         "title": "Vertical Search Range",
         "description": "Range to search for a floor or ceiling for snaping the feature.",
         "isRequired": true
       },
       {
-        "dataType": 2,
+        "dataType": "string",
         "id": "surface",
         "title": "Surface",
         "description": "Defines the surface that the y-value of the placement position will be snapped to. Valid values: 'ceiling', 'floor' and 'random_horizontal'",
         "isRequired": false
       },
       {
-        "dataType": 1,
+        "dataType": "boolean",
         "id": "allow_air_placement",
         "title": "Allow Air Placement",
         "description": "Determines whether the feature can snap through air blocks. Defaults to true.",
         "isRequired": false
       },
       {
-        "dataType": 1,
+        "dataType": "boolean",
         "id": "allow_underwater_placement",
         "title": "Allow Underwater Placement",
         "description": "Determines whether the feature can snap through water blocks. Defaults to false.",
         "isRequired": false
       },
       {
-        "dataType": 17,
+        "dataType": "stringArray",
         "id": "allowed_surface_blocks",
         "title": "Allowed Surface Blocks",
         "description": "A list of blocks that the feature is permitted to snap to. Leaving this empty results in the feature snapping to blocks that can provide support for the given face (up/down/horizontal)",
         "isRequired": false
       },
       {
-        "dataType": 1,
+        "dataType": "boolean",
         "id": "embed_in_surface",
         "title": "Embed In Surface",
         "description": "Determines whether the placed feature should be embedded in the found surface.",

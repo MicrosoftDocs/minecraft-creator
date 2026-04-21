@@ -114,20 +114,20 @@
         "id": "cast_duration",
         "title": "Cast Duration",
         "description": "Time in seconds for the entire event sending process",
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "look_at_target",
         "title": "Look At Target",
         "description": "If true, the mob will face the entity it sends an event to",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "sequence",
         "title": "Sequence",
         "description": "List of events to send",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "List of events to send",
@@ -137,19 +137,19 @@
               "title": "Base Delay",
               "description": "Amount of time in seconds before starting this step",
               "defaultValue": 0,
-              "dataType": 3
+              "dataType": "float"
             },
             {
               "id": "event",
               "title": "Event",
               "description": "The event to send to the entity",
-              "dataType": 22
+              "dataType": "minecraftEventTrigger"
             },
             {
               "id": "sound_event",
               "title": "Sound Event",
               "description": "The sound event to play when this step happens",
-              "dataType": 22
+              "dataType": "minecraftEventTrigger"
             }
           ]
         }
@@ -159,7 +159,7 @@
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "samples": {}

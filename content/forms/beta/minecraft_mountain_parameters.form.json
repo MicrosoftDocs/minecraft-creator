@@ -1,0 +1,110 @@
+{
+  "id": "minecraft:mountain_parameters",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:mountain_parameters",
+    "title": "Beta Mountain Parameters",
+    "description": "Noise parameters used to drive mountain terrain generation in Overworld.",
+    "fields": [
+      {
+        "id": "steep_material_adjustment",
+        "title": "Steep Material Adjustment",
+        "description": "Defines surface material for steep slopes",
+        "dataType": "object",
+        "subForm": {
+          "id": "minecraft:mountain_parameters - steep_material_adjustment settings",
+          "title": "Mountain Parameters - Steep Material Adjustment Settings",
+          "description": "Defines surface material for steep slopes",
+          "fields": [
+            {
+              "id": "east_slopes",
+              "title": "East Slopes",
+              "description": "Enable for east-facing slopes",
+              "dataType": "boolean"
+            },
+            {
+              "id": "material",
+              "description": "Block type use as steep material",
+              "dataType": "string",
+              "alternates": [
+                {
+                  "id": "material",
+                  "dataType": "object",
+                  "readOnly": true,
+                  "subForm": {
+                    "id": "material",
+                    "title": "Material",
+                    "fields": [
+                      {
+                        "id": "name",
+                        "title": "Name",
+                        "description": "Name of the block",
+                        "dataType": "object",
+                        "isRequired": true
+                      },
+                      {
+                        "id": "states",
+                        "title": "States",
+                        "description": "Contains members named after each state, with boolean, integer, or string values.",
+                        "dataType": "keyedNumberCollection",
+                        "defaultValue": {},
+                        "alternates": [
+                          {
+                            "id": "states",
+                            "dataType": "keyedBooleanCollection"
+                          },
+                          {
+                            "id": "states",
+                            "dataType": "keyedStringCollection"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "north_slopes",
+              "title": "North Slopes",
+              "description": "Enable for north-facing slopes",
+              "dataType": "boolean"
+            },
+            {
+              "id": "south_slopes",
+              "title": "South Slopes",
+              "description": "Enable for south-facing slopes",
+              "dataType": "boolean"
+            },
+            {
+              "id": "west_slopes",
+              "title": "West Slopes",
+              "description": "Enable for west-facing slopes",
+              "dataType": "boolean"
+            }
+          ]
+        }
+      },
+      {
+        "id": "top_slide",
+        "title": "Top Slide",
+        "description": "Controls the density tapering that happens at the top of the world to prevent terrain from reaching too high",
+        "dataType": "object",
+        "subForm": {
+          "id": "minecraft:mountain_parameters - top_slide settings",
+          "title": "Mountain Parameters - Top Slide Settings",
+          "description": "Controls the density tapering that happens at the top of the world to prevent terrain from reaching too high.",
+          "fields": [
+            {
+              "id": "enabled",
+              "title": "Enabled",
+              "description": "If false, top slide will be disabled. If true, other parameters will be taken into account.",
+              "dataType": "boolean",
+              "isRequired": true
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

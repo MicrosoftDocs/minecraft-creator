@@ -97,7 +97,7 @@
         "id": "allow_nested_storage_items",
         "title": "Allow Nested Storage Items",
         "description": "Determines whether another Storage Item is allowed inside of this item. Default is true.",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": true,
         "samples": {
           "/vanilla/behavior_pack/items/black_bundle.json": [
@@ -118,12 +118,12 @@
         "id": "allowed_items",
         "title": "Allowed Items",
         "description": "List of items that are exclusively allowed in this Storage Item. If empty all items are allowed.",
-        "dataType": 2,
+        "dataType": "string",
         "defaultValue": [],
         "alternates": [
           {
             "id": "allowed_items",
-            "dataType": 24
+            "dataType": "keyedStringCollection"
           }
         ]
       },
@@ -131,12 +131,12 @@
         "id": "banned_items",
         "title": "Banned Items",
         "description": "List of items that are not allowed in this Storage Item.",
-        "dataType": 2,
+        "dataType": "string",
         "defaultValue": [],
         "alternates": [
           {
             "id": "banned_items",
-            "dataType": 24
+            "dataType": "keyedStringCollection"
           }
         ],
         "samples": {
@@ -164,7 +164,7 @@
         "id": "max_slots",
         "title": "Max Slots",
         "description": "The maximum allowed weight of the sum of all contained items. Maximum is 64. Default is 64.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 64,
         "validity": [
           {

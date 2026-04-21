@@ -1,0 +1,53 @@
+{
+  "id": "Color Environment Attribute",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Color Environment Attribute",
+    "title": "Beta Color Environment Attribute",
+    "description": "Environment attribute that can hold a value of type color.",
+    "fields": [
+      {
+        "id": "operation",
+        "title": "Color Attribute Operation",
+        "dataType": "string",
+        "choices": [
+          {
+            "id": "add",
+            "title": "Add"
+          },
+          {
+            "id": "alpha_blend",
+            "title": "Alpha blend"
+          },
+          {
+            "id": "multiply",
+            "title": "Multiply"
+          },
+          {
+            "id": "override",
+            "title": "Override"
+          },
+          {
+            "id": "subtract",
+            "title": "Subtract"
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "dataType": "string",
+        "alternates": [
+          {
+            "id": "value",
+            "dataType": "numberArray",
+            "minLength": 4,
+            "maxLength": 4
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  }
+}

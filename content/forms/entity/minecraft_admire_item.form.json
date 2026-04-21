@@ -46,14 +46,14 @@
         "title": "Cooldown After Being Attacked",
         "description": "Duration, in seconds, for which mob won't admire items if it was hurt",
         "defaultValue": 0,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "duration",
         "title": "Duration",
         "description": "Duration, in seconds, that the mob is pacified.",
         "defaultValue": 10,
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "samples": {}

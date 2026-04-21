@@ -39,35 +39,35 @@
         "title": "Can Dash Underwater",
         "description": "Whether the entity can dash underwater. Default value is false.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "cooldown_time",
         "title": "Cooldown Time",
         "description": "The dash cooldown in seconds. Default value is 1.000000.",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "direction",
         "title": "Direction",
         "description": "Should the momentum be applied in the direction of the 'entity' or 'passenger'. When 'entity' is used the momentum is applied horizontally according to the direction the entity is looking, using only the entity's yaw. When 'passenger' is used the momentum will be applied in the direction the controlling passenger is looking, using the passenger's pitch and yaw.",
         "defaultValue": "entity",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "horizontal_momentum",
         "title": "Horizontal Momentum",
         "description": "Horizontal momentum of the dash.",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "vertical_momentum",
         "title": "Vertical Momentum",
         "description": "Vertical momentum of the dash.",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       }
     ],
     "samples": {}

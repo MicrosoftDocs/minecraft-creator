@@ -22,7 +22,7 @@
         "id": "category",
         "title": "CreativeItemCategory",
         "description": "Creative category where this item belongs. Defaults to \"none\".",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "construction",
@@ -51,7 +51,7 @@
         "id": "group",
         "title": "Group",
         "description": "The Creative Group that this item belongs to. Group name is limited to 256 characters. The name also must start with a namespace.",
-        "dataType": 2,
+        "dataType": "string",
         "validity": [
           {
             "comparison": "pattern",
@@ -63,7 +63,7 @@
         "id": "is_hidden_in_commands",
         "title": "Is Hidden In Commands",
         "description": "Determines whether or not this item can be used with commands. Defaults to false.",
-        "dataType": 1
+        "dataType": "boolean"
       }
     ]
   }

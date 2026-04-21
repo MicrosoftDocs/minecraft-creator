@@ -15,31 +15,9 @@ Keeps track of entity group size in the given radius.
 
 ## Group Size Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| filters | *not set* | Minecraft filter | The list of conditions that must be satisfied for other entities to be counted towards group size. | Hoglin: `{"all_of":[{"test":"has_component","operator":"!=","value":"minecraft:is_baby"},{"test":"is_family","value":"hoglin"}]}` | 
-| radius | 16 | Decimal number | Radius from center of entity. | Hoglin: `32` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| filters | *not set* | Minecraft filter | The list of conditions that must be satisfied for other entities to be counted towards group size. | 
+| radius | 16 | Decimal number | Radius from center of entity. | 
 
 ## Samples
-
-#### [Hoglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/hoglin.json)
-
-
-```json
-"minecraft:group_size": {
-  "radius": 32,
-  "filters": {
-    "all_of": [
-      {
-        "test": "has_component",
-        "operator": "!=",
-        "value": "minecraft:is_baby"
-      },
-      {
-        "test": "is_family",
-        "value": "hoglin"
-      }
-    ]
-  }
-}
-```

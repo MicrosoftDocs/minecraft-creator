@@ -27,7 +27,7 @@
       {
         "id": "processor_type",
         "title": "Jigsaw Processro Type",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "minecraft:block_ignore",
@@ -52,7 +52,7 @@
         "id": "value",
         "title": "Value",
         "description": "Block tag for the blocks that will be protected",
-        "dataType": 2,
+        "dataType": "string",
         "isRequired": true
       }
     ]

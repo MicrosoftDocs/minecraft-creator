@@ -23,21 +23,21 @@
         "title": "Idle Time",
         "description": "Amount of time (in seconds) to stay idle.",
         "defaultValue": 5,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "success_rate",
         "title": "Success Rate",
         "description": "Percent chance this entity will go idle, 1.0 = 100%.",
         "defaultValue": 0.1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "samples": {}
@@ -50,7 +50,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -71,20 +71,20 @@
         "id": "idle_time",
         "title": "Idle Time",
         "description": "Amount of time (in seconds) to stay idle.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 5
       },
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "success_rate",
         "title": "Success Rate",
         "description": "Percent chance this entity will go idle, 1.0 = 100%.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.10000000149011612
       }
     ],

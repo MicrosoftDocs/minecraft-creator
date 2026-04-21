@@ -20,12 +20,12 @@
       {
         "id": "horizontal_range",
         "title": "Horizontal Range",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": 1,
         "alternates": [
           {
             "id": "horizontal_range",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "horizontal_range",
@@ -34,13 +34,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -48,18 +48,18 @@
           },
           {
             "id": "horizontal_range",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       },
       {
         "id": "input",
         "title": "Input",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "alternates": [
           {
             "id": "input",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "input",
@@ -68,13 +68,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -82,7 +82,7 @@
           },
           {
             "id": "input",
-            "dataType": 3
+            "dataType": "float"
           }
         ],
         "isRequired": true
@@ -90,11 +90,11 @@
       {
         "id": "nodes",
         "title": "Nodes",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "alternates": [
           {
             "id": "nodes",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "nodes",
@@ -103,13 +103,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -117,7 +117,7 @@
           },
           {
             "id": "nodes",
-            "dataType": 3
+            "dataType": "float"
           }
         ],
         "isRequired": true
@@ -125,7 +125,7 @@
       {
         "id": "type",
         "title": "Type",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       }
     ]

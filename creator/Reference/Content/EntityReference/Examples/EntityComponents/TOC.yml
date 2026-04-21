@@ -16,6 +16,10 @@
   href: minecraftComponent_annotation_break_door.md
 - name: minecraft:annotation.open_door
   href: minecraftComponent_annotation_open_door.md
+- name: minecraft:apply_knockback_rules
+  href: minecraftComponent_apply_knockback_rules.md
+- name: minecraft:apply_knockback_rules_instance
+  href: minecraftComponent_apply_knockback_rules_instance.md
 - name: minecraft:area_attack
   href: minecraftComponent_area_attack.md
 - name: minecraft:attack
@@ -342,6 +346,8 @@
   href: minecraftComponent_spawn_egg_interaction.md
 - name: minecraft:spawn_entity
   href: minecraftComponent_spawn_entity.md
+- name: minecraft:spawn_on_death
+  href: minecraftComponent_spawn_on_death.md
 - name: minecraft:spell_effects
   href: minecraftComponent_spell_effects.md
 - name: minecraft:strength

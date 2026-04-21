@@ -21,17 +21,17 @@
       {
         "id": "capabilities",
         "title": "Capabilities",
-        "dataType": 17
+        "dataType": "stringArray"
       },
       {
         "id": "dependencies",
         "title": "Dependencies",
-        "dataType": 17
+        "dataType": "stringArray"
       },
       {
         "id": "format_version",
         "title": "Format Version",
-        "dataType": 0,
+        "dataType": "int",
         "validity": [
           {
             "comparison": "<=",
@@ -43,25 +43,25 @@
       {
         "id": "has_education_metadata",
         "title": "Has Education Metadata",
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "header",
         "title": "Header",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "packmanifest/header",
         "isRequired": true
       },
       {
         "id": "metadata",
         "title": "Metadata",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "packmanifest/metadata"
       },
       {
         "id": "modules",
         "title": "Modules",
-        "dataType": 15,
+        "dataType": "objectArray",
         "minLength": 1,
         "subFormId": "packmanifest/module",
         "isRequired": true
@@ -69,14 +69,14 @@
       {
         "id": "settings",
         "title": "Settings",
-        "dataType": 17,
+        "dataType": "stringArray",
         "minLength": 1,
         "maxLength": 50
       },
       {
         "id": "subpacks",
         "title": "Subpacks",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subFormId": "packmanifest/subpack"
       }
     ]
