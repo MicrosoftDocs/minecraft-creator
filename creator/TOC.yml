@@ -214,7 +214,7 @@
             href: Documents/BuildingSubpacks.md
           - name: 'Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition'
             href: Documents/ConvertingTexturePacks.md
-          - name: Custom Pack Settings (currently in preview)
+          - name: Custom Pack Settings
             href: Documents/AddOns/CustomPackSettings.md
           - name: Preparing Raw Text for Localization
             href: Documents/PreparingRawTextForLocalization.md
