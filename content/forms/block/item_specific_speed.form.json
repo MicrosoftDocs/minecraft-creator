@@ -22,18 +22,18 @@
         "id": "destroy_speed",
         "title": "Destroy Speed",
         "description": "Mining speed for that specific item. A negative number means the block can't be mined with that item.",
-        "dataType": 3,
+        "dataType": "float",
         "isRequired": true
       },
       {
         "id": "item",
         "title": "Item",
         "description": "The item with a specific mining speed.",
-        "dataType": 2,
+        "dataType": "string",
         "alternates": [
           {
             "id": "item",
-            "dataType": 24
+            "dataType": "keyedStringCollection"
           }
         ],
         "isRequired": true

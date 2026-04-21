@@ -36,13 +36,13 @@
         "title": "Bribe Cooldown",
         "description": "Time in seconds before the Entity can be bribed again.",
         "defaultValue": 2,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "bribe_items",
         "title": "Bribe Items",
         "description": "The list of items that can be used to bribe the entity.",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/dolphin.json": [
             {

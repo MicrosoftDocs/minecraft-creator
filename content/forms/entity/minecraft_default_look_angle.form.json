@@ -37,7 +37,7 @@
         "title": "Value",
         "description": "Angle in degrees.",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       }
     ]
   }

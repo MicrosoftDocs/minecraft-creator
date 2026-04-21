@@ -9,7 +9,7 @@
         "id": "conditions",
         "title": "Conditions",
         "description": "List of conditions where the block can be placed/survive",
-        "dataType": 15,
+        "dataType": "objectArray",
         "defaultValue": [],
         "maxLength": 64,
         "subFormId": "block_components/placement_condition"

@@ -13,6 +13,11 @@ A MinimapItem represents an individual minimap instance that manages map data, c
 
 ## Properties
 
+### **freeCenter**
+`read-only freeCenter: minecraftserver.VectorXZ;`
+
+Type: [*@minecraft/server.VectorXZ*](../../../scriptapi/minecraft/server/VectorXZ.md)
+
 ### **id**
 `read-only id: string;`
 
@@ -25,27 +30,72 @@ Indicate whether this minimap instance is currently active and being displayed t
 
 Type: *boolean*
 
+### **yLevel**
+`read-only yLevel: number;`
+
+Type: *number*
+
 ## Methods
-- [addMarker](#addmarker)
+- [addCustomMarker](#addcustommarker)
+- [addLocationMarker](#addlocationmarker)
+- [addMultiplayerMarker](#addmultiplayermarker)
+- [getMarkerTypes](#getmarkertypes)
 - [getPlayerColor](#getplayercolor)
-- [removeMarker](#removemarker)
+- [hasCustomGroup](#hascustomgroup)
+- [hasMarkerOfType](#hasmarkeroftype)
+- [removeAllCustomMarkers](#removeallcustommarkers)
+- [removeCustomMarker](#removecustommarker)
+- [removeLocationMarker](#removelocationmarker)
+- [removeMultiplayerMarker](#removemultiplayermarker)
 - [setActive](#setactive)
+- [setFreeCenter](#setfreecenter)
 - [setSize](#setsize)
+- [setTrackingMode](#settrackingmode)
 - [setViewType](#setviewtype)
+- [setYLevel](#setylevel)
 
-### **addMarker**
+### **addCustomMarker**
 `
-addMarker(markerType: MinimapMarkerType): void
+addCustomMarker(iconIdentifier: string, data: MinimapMarkerData[], dimensionId: string): void
 `
-
-Add a visual marker of the specified type to the minimap display.
 
 #### **Parameters**
-- **markerType**: [*MinimapMarkerType*](MinimapMarkerType.md)
+- **iconIdentifier**: *string*
+- **data**: [*MinimapMarkerData*](MinimapMarkerData.md)[]
+- **dimensionId**: *string*
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
+
+### **addLocationMarker**
+`
+addLocationMarker(data: MinimapMarkerData[], dimensionId: string): void
+`
+
+#### **Parameters**
+- **data**: [*MinimapMarkerData*](MinimapMarkerData.md)[]
+- **dimensionId**: *string*
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+
+### **addMultiplayerMarker**
+`
+addMultiplayerMarker(): void
+`
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+
+### **getMarkerTypes**
+`
+getMarkerTypes(): MinimapMarkerType[]
+`
+
+**Returns** [*MinimapMarkerType*](MinimapMarkerType.md)[]
 
 ### **getPlayerColor**
 `
@@ -62,15 +112,67 @@ Retrieve the color assigned to a specific player on the minimap.
 Notes:
 - This function can throw errors.
 
-### **removeMarker**
+### **hasCustomGroup**
 `
-removeMarker(markerType: MinimapMarkerType): void
+hasCustomGroup(iconIdentifier: string): boolean
 `
-
-Remove a previously added marker of the specified type from the minimap.
 
 #### **Parameters**
-- **markerType**: [*MinimapMarkerType*](MinimapMarkerType.md)
+- **iconIdentifier**: *string*
+
+**Returns** *boolean*
+
+### **hasMarkerOfType**
+`
+hasMarkerOfType(type: MinimapMarkerType): boolean
+`
+
+#### **Parameters**
+- **type**: [*MinimapMarkerType*](MinimapMarkerType.md)
+
+**Returns** *boolean*
+
+### **removeAllCustomMarkers**
+`
+removeAllCustomMarkers(dimensionId: string): void
+`
+
+#### **Parameters**
+- **dimensionId**: *string*
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+
+### **removeCustomMarker**
+`
+removeCustomMarker(iconIdentifier: string, dimensionId: string): void
+`
+
+#### **Parameters**
+- **iconIdentifier**: *string*
+- **dimensionId**: *string*
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+
+### **removeLocationMarker**
+`
+removeLocationMarker(dimensionId: string): void
+`
+
+#### **Parameters**
+- **dimensionId**: *string*
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+
+### **removeMultiplayerMarker**
+`
+removeMultiplayerMarker(): void
+`
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -85,6 +187,18 @@ Control whether the minimap is currently active and visible to the player.
 
 #### **Parameters**
 - **active**: *boolean*
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+
+### **setFreeCenter**
+`
+setFreeCenter(center: minecraftserver.VectorXZ): void
+`
+
+#### **Parameters**
+- **center**: [*@minecraft/server.VectorXZ*](../../../scriptapi/minecraft/server/VectorXZ.md)
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -105,6 +219,18 @@ Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
+### **setTrackingMode**
+`
+setTrackingMode(mode: MinimapTrackingMode): void
+`
+
+#### **Parameters**
+- **mode**: [*MinimapTrackingMode*](MinimapTrackingMode.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+
 ### **setViewType**
 `
 setViewType(viewType: MinimapViewType): void
@@ -114,6 +240,18 @@ Change the visual perspective or style of the minimap view.
 
 #### **Parameters**
 - **viewType**: [*MinimapViewType*](MinimapViewType.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+
+### **setYLevel**
+`
+setYLevel(yLevel: number): void
+`
+
+#### **Parameters**
+- **yLevel**: *number*
   
 Notes:
 - This function can't be called in restricted-execution mode.

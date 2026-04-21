@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.BiomeTypes Class
 description: Contents of the @minecraft/server.BiomeTypes class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BiomeTypes Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Supports a catalog of available biome types registered within Minecraft.
 

@@ -18,14 +18,14 @@ ms.date: 02/11/2025
 - [Biome Capped](#biome-capped)
 - [Biome The End](#biome-the-end)
 
-Controls the materials used for terrain generation.
+Controls materials used for terrain generation.
 
 
 ## Biome Surface Builder Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| builder (Biome Overworld) | *not set* | [Builder](#biome-overworld) item | Controls the block types used for terrain generation. | 
+| builder (Biome Overworld) | *not set* | [Builder](#biome-overworld) item | Controls block types and strategy used for terrain generation. | 
 | builder (Alternate 1) | *not set* | [Builder](#biome-frozen-ocean) item |  | 
 | builder (Alternate 2) | *not set* | [Builder](#biome-mesa) item |  | 
 | builder (Alternate 3) | *not set* | [Builder](#biome-swamp) item |  | 

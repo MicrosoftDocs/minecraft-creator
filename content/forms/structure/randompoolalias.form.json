@@ -23,14 +23,14 @@
         "id": "alias",
         "title": "Alias",
         "description": "Alias of Random Pool",
-        "dataType": 2,
+        "dataType": "string",
         "isRequired": true
       },
       {
         "id": "targets",
         "title": "Targets",
         "description": "List of potential pools",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subFormId": "world/jigsawtemplatepool",
         "isRequired": true
       }

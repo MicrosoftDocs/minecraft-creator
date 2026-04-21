@@ -8,7 +8,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -29,7 +29,7 @@
         "id": "cooldown_range",
         "title": "Cooldown Range",
         "description": "Goal cooldown range in seconds. If specified, the cooldown will have to elapse even before the goal can be selected for the first time.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 0,
           "min": 0
@@ -40,7 +40,7 @@
         "id": "duration_range",
         "title": "Duration Range",
         "description": "Goal duration range in seconds.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 0,
           "min": 0
@@ -51,7 +51,7 @@
         "id": "on_end",
         "title": "End",
         "description": "Event(s) to run when the goal ends.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "event": "",
           "filters": {
@@ -72,7 +72,7 @@
         "id": "on_start",
         "title": "Start",
         "description": "Event(s) to run when the goal starts.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "event": "",
           "filters": {
@@ -92,7 +92,7 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       }
     ]

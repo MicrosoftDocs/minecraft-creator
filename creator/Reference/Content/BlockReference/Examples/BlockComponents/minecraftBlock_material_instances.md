@@ -71,3 +71,108 @@ Tint multiplied to the color. Tint method logic varies, but often refers to the 
 | alpha_test_single_sided_to_opaque | Alpha Test (Single Sided) to Opaque | Used for a block like the sugar cane. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also enables backface culling.|
 
 ## Samples
+
+#### Block Fabricator
+
+
+```json
+"minecraft:material_instances": {
+  "*": {
+    "texture": "mikeamm_gwve_fabricator",
+    "render_method": "alpha_test",
+    "ambient_occlusion": 1
+  }
+}
+```
+
+#### Block Gray Ore
+
+
+```json
+"minecraft:material_instances": {
+  "*": {
+    "texture": "mikeamm_gwve_gray_ore",
+    "render_method": "alpha_test",
+    "face_dimming": false
+  }
+}
+```
+
+#### Block Frond Top
+
+
+```json
+"minecraft:material_instances": {
+  "*": {
+    "texture": "frond_top",
+    "render_method": "alpha_test"
+  }
+}
+```
+
+#### Block Palm Leave
+
+
+```json
+"minecraft:material_instances": {
+  "*": {
+    "texture": "palm_leave",
+    "render_method": "alpha_test"
+  }
+}
+```
+
+#### Block White Sand
+
+
+```json
+"minecraft:material_instances": {
+  "*": {
+    "texture": "white_sand",
+    "render_method": "alpha_test"
+  }
+}
+```
+
+#### Block Leaf Pile
+
+
+```json
+"minecraft:material_instances": {
+  "*": {
+    "texture": "leaf_pile",
+    "render_method": "alpha_test",
+    "tint_method": "default_foliage"
+  }
+}
+```
+
+#### Tuna Roll
+
+
+```json
+"minecraft:material_instances": {
+  "north": "sushi_side",
+  "south": "sushi_side",
+  "*": {
+    "texture": "sushi_wrap"
+  },
+  "sushi_side": {
+    "texture": "tuna_roll"
+  }
+}
+```
+
+#### Blue Bubble Fish
+
+
+```json
+"minecraft:material_instances": {
+  "*": {
+    "texture": "bubble_fish_blue",
+    "render_method": "blend",
+    "face_dimming": true,
+    "ambient_occlusion": 1
+  }
+}
+```

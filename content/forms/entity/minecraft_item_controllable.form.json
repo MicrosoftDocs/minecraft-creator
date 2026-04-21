@@ -35,7 +35,7 @@
         "id": "control_items",
         "title": "Control Items",
         "description": "List of items that can be used to control this entity.",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/pig.json": [
             {

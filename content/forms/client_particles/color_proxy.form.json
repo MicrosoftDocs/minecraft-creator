@@ -21,18 +21,18 @@
       {
         "id": "gradient",
         "title": "Gradient",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "alternates": [],
         "isRequired": true
       },
       {
         "id": "interpolant",
         "title": "Interpolant",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "alternates": [
           {
             "id": "interpolant",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "interpolant",
@@ -41,13 +41,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -55,7 +55,7 @@
           },
           {
             "id": "interpolant",
-            "dataType": 3
+            "dataType": "float"
           }
         ],
         "isRequired": true

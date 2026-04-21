@@ -21,13 +21,13 @@
       {
         "id": "name",
         "title": "Name",
-        "dataType": 2,
+        "dataType": "string",
         "isRequired": true
       },
       {
         "id": "text",
         "title": "Text",
-        "dataType": 2,
+        "dataType": "string",
         "isRequired": true
       }
     ]

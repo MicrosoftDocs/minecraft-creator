@@ -424,7 +424,7 @@
         "id": "add_items",
         "title": "Add Items",
         "description": "Loot table with items to add to the player's inventory upon successful interaction.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "Loot table with items to add to the player's inventory upon successful interaction.",
@@ -433,7 +433,7 @@
               "id": "table",
               "title": "Table",
               "description": "File path, relative to the Behavior Pack's path, to the loot table file.",
-              "dataType": 2
+              "dataType": "string"
             }
           ]
         }
@@ -443,65 +443,65 @@
         "title": "Cooldown",
         "description": "Time in seconds before this entity can be interacted with again.",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "cooldown_after_being_attacked",
         "title": "Cooldown After Being Attacked",
         "description": "Time in seconds before this entity can be interacted with after being attacked.",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "drop_item_slot",
         "title": "Drop Item Slot",
         "description": "The entity's slot to remove and drop the item from, if any, upon successful interaction. Inventory slots are denoted by positive numbers. Equipment slots are denoted by 'slot.weapon.mainhand', 'slot.weapon.offhand', 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'.",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "drop_item_y_offset",
         "title": "Drop Item y Offset",
         "description": "Will offset the item drop position this amount in the y direction. Requires \"drop_item_slot\" to be specified.",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "equip_item_slot",
         "title": "Equip Item Slot",
         "description": "The entity's slot to equip the item to, if any, upon successful interaction. Inventory slots are denoted by positive numbers. Equipment slots are denoted by 'slot.weapon.mainhand', 'slot.weapon.offhand', 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'.",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "health_amount",
         "title": "Health Amount",
         "description": "The amount of health this entity will recover or lose when interacting with this item. Negative values will harm the entity.",
         "defaultValue": 0,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "hurt_item",
         "title": "Hurt Item",
         "description": "The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability.",
         "defaultValue": 0,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "interact_text",
         "title": "Interact Text",
         "description": "Text to show when the player is able to interact in this way with this entity when playing with touch-screen controls.",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "on_interact",
         "title": "Interact",
         "description": "Event to fire when the interaction occurs.",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "particle_on_start",
         "title": "Particle On Start",
         "description": "Particle effect that will be triggered at the start of the interaction.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "Particle effect that will be triggered at the start of the interaction.",
@@ -511,20 +511,20 @@
               "title": "Particle Offset Towards Interactor",
               "description": "Whether or not the particle will appear closer to who performed the interaction.",
               "defaultValue": false,
-              "dataType": 1
+              "dataType": "boolean"
             },
             {
               "id": "particle_type",
               "title": "Particle Type",
               "description": "The type of particle that will be spawned.",
-              "dataType": 2
+              "dataType": "string"
             },
             {
               "id": "particle_y_offset",
               "title": "Particle y Offset",
               "description": "Will offset the particle this amount in the y direction.",
               "defaultValue": 0,
-              "dataType": 3
+              "dataType": "float"
             }
           ]
         }
@@ -533,13 +533,13 @@
         "id": "play_sounds",
         "title": "Play Sounds",
         "description": "List of sounds to play when the interaction occurs.",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "repair_entity_item",
         "title": "Repair Entity Item",
         "description": "Allows to repair one of the entity's items.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "Allows to repair one of the entity's items.",
@@ -548,13 +548,13 @@
               "id": "amount",
               "title": "Amount",
               "description": "How much of the item durability should be restored upon interaction.",
-              "dataType": 0
+              "dataType": "int"
             },
             {
               "id": "slot",
               "title": "Slot",
               "description": "The entity's slot containing the item to be repaired. Inventory slots are denoted by positive numbers. Equipment slots are denoted by 'slot.weapon.mainhand', 'slot.weapon.offhand', 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'.",
-              "dataType": 0
+              "dataType": "int"
             }
           ]
         }
@@ -563,13 +563,13 @@
         "id": "spawn_entities",
         "title": "Spawn Entities",
         "description": "List of entities to spawn when the interaction occurs.",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "spawn_items",
         "title": "Spawn Items",
         "description": "Loot table with items to drop on the ground upon successful interaction.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "Loot table with items to drop on the ground upon successful interaction.",
@@ -578,14 +578,14 @@
               "id": "table",
               "title": "Table",
               "description": "File path, relative to the Behavior Pack's path, to the loot table file.",
-              "dataType": 2
+              "dataType": "string"
             },
             {
               "id": "y_offset",
               "title": "y Offset",
               "description": "Will offset the items spawn position this amount in the y direction.",
               "defaultValue": 1,
-              "dataType": 3
+              "dataType": "float"
             }
           ]
         }
@@ -595,27 +595,27 @@
         "title": "Swing",
         "description": "If true, the player will do the 'swing' animation when interacting with this entity.",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "transform_to_item",
         "title": "Transform To Item",
         "description": "The item used will transform to this item upon successful interaction. Format: itemName:auxValue",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "use_item",
         "title": "Use Item",
         "description": "If true, the interaction will use an item.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "vibration",
         "title": "Vibration",
         "description": "Vibration to emit when the interaction occurs. Admitted values are none (no vibration emitted), shear, entity_die, entity_act, entity_interact.",
         "defaultValue": "entity_interact",
-        "dataType": 2
+        "dataType": "string"
       }
     ],
     "samples": {}

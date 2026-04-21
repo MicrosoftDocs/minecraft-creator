@@ -53,3 +53,68 @@ A Boolean locking UV orientation of all bones in the geometry, or an array of st
 
 
 ## Samples
+
+#### Block Fabricator
+
+
+```json
+"minecraft:geometry": "geometry.mikeamm_gwve_fabricator"
+```
+
+#### Block Gray Ore
+
+
+```json
+"minecraft:geometry": "geometry.mikeamm_gwve_gray_ore"
+```
+
+#### Block Frond Top
+
+
+```json
+"minecraft:geometry": "geometry.frond_top"
+```
+
+#### Block Palm Leave
+
+
+```json
+"minecraft:geometry": "geometry.palm_leave"
+```
+
+#### Block White Sand
+
+
+```json
+"minecraft:geometry": "geometry.white_sand"
+```
+
+#### Tuna Roll
+
+
+```json
+"minecraft:geometry": {
+  "identifier": "geometry.sushi",
+  "culling": "test:sushi_cull"
+}
+```
+
+#### Blue Bubble Fish
+
+
+```json
+"minecraft:geometry": {
+  "identifier": "geometry.bubble_fish",
+  "bone_visibility": {
+    "bb_main": true,
+    "fish": true
+  }
+}
+```
+
+#### California Roll
+
+
+```json
+"minecraft:geometry": "geometry.sushi"
+```

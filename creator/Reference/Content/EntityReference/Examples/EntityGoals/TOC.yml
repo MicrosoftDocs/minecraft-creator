@@ -106,6 +106,8 @@
   href: minecraftBehavior_follow_parent.md
 - name: minecraft:behavior.follow_target_captain
   href: minecraftBehavior_follow_target_captain.md
+- name: minecraft:behavior.follow_target_leader
+  href: minecraftBehavior_follow_target_leader.md
 - name: minecraft:behavior.go_and_give_items_to_noteblock
   href: minecraftBehavior_go_and_give_items_to_noteblock.md
 - name: minecraft:behavior.go_and_give_items_to_owner
@@ -120,6 +122,8 @@
   href: minecraftBehavior_hide.md
 - name: minecraft:behavior.hold_ground
   href: minecraftBehavior_hold_ground.md
+- name: minecraft:behavior.hover
+  href: minecraftBehavior_hover.md
 - name: minecraft:behavior.hurt_by_target
   href: minecraftBehavior_hurt_by_target.md
 - name: minecraft:behavior.inspect_bookshelf
@@ -326,6 +330,8 @@
   href: minecraftBehavior_take_block.md
 - name: minecraft:behavior.take_flower
   href: minecraftBehavior_take_flower.md
+- name: minecraft:behavior.target_when_pushed
+  href: minecraftBehavior_target_when_pushed.md
 - name: minecraft:behavior.teleport_to_owner
   href: minecraftBehavior_teleport_to_owner.md
 - name: minecraft:behavior.tempt

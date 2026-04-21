@@ -21,13 +21,13 @@
       {
         "id": "num_to_select",
         "title": "Num To Select",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "trades",
         "title": "Trades",
-        "dataType": 15,
+        "dataType": "objectArray",
         "minLength": 1,
         "subFormId": "entity/trade",
         "isRequired": true

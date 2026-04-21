@@ -134,6 +134,8 @@
               href: Documents/CreateAnInWorldGame.md
             - name: Create a Village with Structure Blocks
               href: Documents/Structures/StructureBlocksCommandTutorial.md
+            - name: Managing Village Generation
+              href: Documents/managing-villages.md
             - name: Create a Loot Table
               href: Documents/CreateLootTable.md
             - name: Non-Player Character (NPC) Dialogue
@@ -214,7 +216,7 @@
             href: Documents/BuildingSubpacks.md
           - name: 'Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition'
             href: Documents/ConvertingTexturePacks.md
-          - name: Custom Pack Settings (currently in preview)
+          - name: Custom Pack Settings
             href: Documents/AddOns/CustomPackSettings.md
           - name: Preparing Raw Text for Localization
             href: Documents/PreparingRawTextForLocalization.md

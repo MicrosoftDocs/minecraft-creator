@@ -86,6 +86,26 @@
     ],
     "dataType": "boolean"
   },
+  "samples": {
+    "Block Fabricator": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json",
+        "content": {
+          "destroy_chance_modifier": 20,
+          "catch_chance_modifier": 5
+        }
+      }
+    ],
+    "Block Leaf Pile": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json",
+        "content": {
+          "destroy_chance_modifier": 100,
+          "catch_chance_modifier": 100
+        }
+      }
+    ]
+  },
   "generated_doNotEdit": {
     "id": "minecraft:flammable",
     "title": "Flammable",
@@ -96,20 +116,20 @@
         "title": "Catch Chance Modifier",
         "description": "A modifier affecting the chance that this block will catch flame when next to a fire. Values are greater than or equal to 0, with a higher number meaning more likely to catch on fire. For a \"catch_chance_modifier\" greater than 0, the fire will continue to burn until the block is destroyed (or it will burn forever if the \"destroy_chance_modifier\" is 0). If the \"catch_chance_modifier\" is 0, and the block is directly ignited, the fire will eventually burn out without destroying the block (or it will have a chance to be destroyed if \"destroy_chance_modifier\" is greater than 0). The default value of 5 is the same as that of Planks.",
         "defaultValue": 5,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "destroy_chance_modifier",
         "title": "Destroy Chance Modifier",
         "description": "A modifier affecting the chance that this block will be destroyed by flames when on fire. Values are greater than or equal to 0, with a higher number meaning more likely to be destroyed by fire. For a \"destroy_chance_modifier\" of 0, the block will never be destroyed by fire, and the fire will burn forever if the \"catch_chance_modifier\" is greater than 0. The default value of 20 is the same as that of Planks.",
         "defaultValue": 20,
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "scalarField": {
       "id": "boolean",
       "title": "Boolean",
-      "dataType": 1
+      "dataType": "boolean"
     },
     "samples": {}
   }

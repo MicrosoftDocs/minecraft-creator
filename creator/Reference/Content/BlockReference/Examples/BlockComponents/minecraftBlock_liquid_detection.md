@@ -41,3 +41,31 @@ Whether this block uses the encompassing collider to visually clip the liquid. T
 
 
 ## Samples
+
+#### Block Fabricator
+
+
+```json
+"minecraft:liquid_detection": {
+  "detection_rules": [
+    {
+      "liquid_type": "water",
+      "on_liquid_touches": "broken"
+    }
+  ]
+}
+```
+
+#### Block Leaf Pile
+
+
+```json
+"minecraft:liquid_detection": {
+  "detection_rules": [
+    {
+      "liquid_type": "water",
+      "on_liquid_touches": "popped"
+    }
+  ]
+}
+```

@@ -63,7 +63,7 @@
         "id": "filters",
         "title": "Filters",
         "description": "The filter group that defines the conditions for using this item to heal the entity.",
-        "dataType": 20,
+        "dataType": "minecraftFilter",
         "samples": {
           "/vanilla/behavior_pack/entities/parrot.json": [
             {
@@ -82,7 +82,7 @@
         "title": "Force Use",
         "description": "Determines if item can be used regardless of entity being at full health.",
         "defaultValue": false,
-        "dataType": 1,
+        "dataType": "boolean",
         "samples": {
           "/vanilla/behavior_pack/entities/parrot.json": [
             {
@@ -96,7 +96,7 @@
         "id": "items",
         "title": "Items",
         "description": "The array of items that can be used to heal this entity.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "The array of items that can be used to heal this entity.",
@@ -106,18 +106,18 @@
               "title": "Heal Amount",
               "description": "The amount of health this entity gains when fed this item.",
               "defaultValue": 1,
-              "dataType": 0
+              "dataType": "int"
             },
             {
               "id": "item",
               "title": "Item",
               "description": "Item identifier that can be used to heal this entity.",
-              "dataType": 2
+              "dataType": "string"
             },
             {
               "id": "effects",
               "title": "Effects",
-              "dataType": 15,
+              "dataType": "objectArray",
               "subForm": {
                 "id": "effects",
                 "title": "Effects",
@@ -125,7 +125,7 @@
                   {
                     "id": "amplifier",
                     "title": "Amplifier",
-                    "dataType": 7,
+                    "dataType": "number",
                     "samples": {
                       "/vanilla/behavior_pack/entities/parrot.json": [
                         {
@@ -138,7 +138,7 @@
                   {
                     "id": "chance",
                     "title": "Chance",
-                    "dataType": 7,
+                    "dataType": "number",
                     "samples": {
                       "/vanilla/behavior_pack/entities/parrot.json": [
                         {
@@ -151,7 +151,7 @@
                   {
                     "id": "duration",
                     "title": "Duration",
-                    "dataType": 7,
+                    "dataType": "number",
                     "samples": {
                       "/vanilla/behavior_pack/entities/parrot.json": [
                         {
@@ -164,7 +164,7 @@
                   {
                     "id": "name",
                     "title": "Name",
-                    "dataType": 2,
+                    "dataType": "string",
                     "samples": {
                       "/vanilla/behavior_pack/entities/parrot.json": [
                         {

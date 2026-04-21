@@ -23,7 +23,7 @@ Allows the mob to follow their parent around.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
-| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Chicken: `5`, Dolphin: `4`, Fox: `9` | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Chicken: `5`, Dolphin: `4`, Goat: `6` | 
 | speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Chicken: `1.1`, Goat: `1` | 
 
 ### Control Flags choices
@@ -56,16 +56,6 @@ Allows the mob to follow their parent around.
 }
 ```
 
-#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
-
-
-```json
-"minecraft:behavior.follow_parent": {
-  "priority": 9,
-  "speed_multiplier": 1.1
-}
-```
-
 #### [Goat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/goat.json)
 
 
@@ -73,5 +63,25 @@ Allows the mob to follow their parent around.
 "minecraft:behavior.follow_parent": {
   "priority": 6,
   "speed_multiplier": 1
+}
+```
+
+#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
+
+
+```json
+"minecraft:behavior.follow_parent": {
+  "priority": 5,
+  "speed_multiplier": 1
+}
+```
+
+#### [Pig](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pig.json)
+
+
+```json
+"minecraft:behavior.follow_parent": {
+  "priority": 6,
+  "speed_multiplier": 1.1
 }
 ```

@@ -15,3 +15,34 @@ Specifies the path to the loot table that determines what items are dropped when
 ## Alternate Simple Representations
 
 This item can also be represented as a `String`.
+
+
+## Samples
+
+#### Block Fabricator
+
+
+```json
+"minecraft:loot": "loot_tables/mikeamm/gray_wave/fabricator.loot.json"
+```
+
+#### Block Gray Ore
+
+
+```json
+"minecraft:loot": "loot_tables/mikeamm/gray_wave/gray_ore.loot.json"
+```
+
+#### Block Orange Ore
+
+
+```json
+"minecraft:loot": "loot_tables/blocks/orange_ore.json"
+```
+
+#### Apple Block
+
+
+```json
+"minecraft:loot": "loot_tables/blocks/apple_block.json"
+```

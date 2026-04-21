@@ -99,7 +99,7 @@
         "title": "Jump Power",
         "description": "The initial vertical velocity for the jump.",
         "defaultValue": 0.42,
-        "dataType": 3
+        "dataType": "float"
       }
     ],
     "samples": {

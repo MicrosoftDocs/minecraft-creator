@@ -23,7 +23,7 @@
         "title": "Attack Cooldown",
         "description": "Cooldown in seconds required after using this attack until the entity can use sonic boom again.",
         "defaultValue": 5,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
             {
@@ -38,7 +38,7 @@
         "title": "Attack Damage",
         "description": "Attack damage of the sonic boom.",
         "defaultValue": 30,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
             {
@@ -53,20 +53,20 @@
         "title": "Attack Range Horizontal",
         "description": "Horizontal range (in blocks) at which the sonic boom can damage the target.",
         "defaultValue": 15,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "attack_range_vertical",
         "title": "Attack Range Vertical",
         "description": "Vertical range (in blocks) at which the sonic boom can damage the target.",
         "defaultValue": 20,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "attack_sound",
         "title": "Attack Sound",
         "description": "Sound event for the attack.",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
             {
@@ -80,7 +80,7 @@
         "id": "charge_sound",
         "title": "Charge Sound",
         "description": "Sound event for the charge up.",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
             {
@@ -95,7 +95,7 @@
         "title": "Duration",
         "description": "Goal duration in seconds",
         "defaultValue": 0,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
             {
@@ -110,14 +110,14 @@
         "title": "Duration Until Attack Sound",
         "description": "Duration in seconds until the attack sound is played.",
         "defaultValue": 1.7,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "knockback_height_cap",
         "title": "Knockback Height Cap",
         "description": "Height cap of the attack knockback's vertical delta.",
         "defaultValue": 0,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
             {
@@ -132,7 +132,7 @@
         "title": "Knockback Horizontal Strength",
         "description": "Horizontal strength of the attack's knockback applied to the attack target.",
         "defaultValue": 0,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
             {
@@ -147,7 +147,7 @@
         "title": "Knockback Vertical Strength",
         "description": "Vertical strength of the attack's knockback applied to the attack target.",
         "defaultValue": 0,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
             {
@@ -162,7 +162,7 @@
         "title": "Speed Multiplier",
         "description": "This multiplier modifies the attacking entity's speed when moving toward the target.",
         "defaultValue": 1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
             {
@@ -177,7 +177,7 @@
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
             {
@@ -217,7 +217,7 @@
         "id": "attack_cooldown",
         "title": "Attack Cooldown",
         "description": "Cooldown in seconds required after using this attack until the entity can use sonic boom again.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 5,
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
@@ -232,7 +232,7 @@
         "id": "attack_damage",
         "title": "Attack Damage",
         "description": "Attack damage of the sonic boom.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 30,
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
@@ -247,21 +247,21 @@
         "id": "attack_range_horizontal",
         "title": "Attack Range Horizontal",
         "description": "Horizontal range (in blocks) at which the sonic boom can damage the target.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 15
       },
       {
         "id": "attack_range_vertical",
         "title": "Attack Range Vertical",
         "description": "Vertical range (in blocks) at which the sonic boom can damage the target.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 20
       },
       {
         "id": "attack_sound",
         "title": "Attack Sound",
         "description": "Sound event for the attack.",
-        "dataType": 2,
+        "dataType": "string",
         "defaultValue": "",
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
@@ -276,7 +276,7 @@
         "id": "charge_sound",
         "title": "Charge Sound",
         "description": "Sound event for the charge up.",
-        "dataType": 2,
+        "dataType": "string",
         "defaultValue": "",
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
@@ -290,7 +290,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -311,7 +311,7 @@
         "id": "duration",
         "title": "Duration",
         "description": "Goal duration in seconds",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
@@ -326,14 +326,14 @@
         "id": "duration_until_attack_sound",
         "title": "Duration Until Attack Sound",
         "description": "Duration in seconds until the attack sound is played.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1.7000000476837158
       },
       {
         "id": "knockback_height_cap",
         "title": "Knockback Height Cap",
         "description": "Height cap of the attack knockback's vertical delta.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
@@ -348,7 +348,7 @@
         "id": "knockback_horizontal_strength",
         "title": "Knockback Horizontal Strength",
         "description": "Horizontal strength of the attack's knockback applied to the attack target.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
@@ -363,7 +363,7 @@
         "id": "knockback_vertical_strength",
         "title": "Knockback Vertical Strength",
         "description": "Vertical strength of the attack's knockback applied to the attack target.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
@@ -377,7 +377,7 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [
@@ -392,7 +392,7 @@
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "This multiplier modifies the attacking entity's speed when moving toward the target.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1,
         "samples": {
           "/vanilla/behavior_pack/entities/warden.json": [

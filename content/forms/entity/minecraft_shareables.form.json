@@ -24,50 +24,34 @@
         "title": "All Items",
         "description": "A bucket for all other items in the game. Note this category is always least priority items.",
         "defaultValue": false,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:shareables/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": "boolean"
       },
       {
         "id": "all_items_max_amount",
         "title": "All Items Max Amount",
         "description": "Maximum number of this item the mob will hold.",
         "defaultValue": -1,
-        "dataType": 0,
-        "samples": {
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:shareables/",
-              "content": 1
-            }
-          ]
-        }
+        "dataType": "int"
       },
       {
         "id": "all_items_surplus_amount",
         "title": "All Items Surplus Amount",
         "description": "Number of this item considered extra that the entity wants to share.",
         "defaultValue": -1,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "all_items_want_amount",
         "title": "All Items Want Amount",
         "description": "Number of this item this entity wants to share.",
         "defaultValue": -1,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "items",
         "title": "Items",
         "description": "List of items or item tags that the entity wants to share. Items in-game will match to this list from top to bottom, meaning that the first occurance of a match, be it name or tag, will shadow those coming after.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "List of items or item tags that the entity wants to share. Items in-game will match to this list from top to bottom, meaning that the first occurance of a match, be it name or tag, will shadow those coming after.",
@@ -77,82 +61,82 @@
               "title": "Admire",
               "description": "Mob will admire the item after picking up by looking at it. For this to happen the mob needs to have an Admire component and an Admire goal.",
               "defaultValue": false,
-              "dataType": 1
+              "dataType": "boolean"
             },
             {
               "id": "barter",
               "title": "Barter",
               "description": "Mob will barter for the item after picking it up. For this to work the mob needs to have a Barter component and a Barter goal.",
               "defaultValue": false,
-              "dataType": 1
+              "dataType": "boolean"
             },
             {
               "id": "consume_item",
               "title": "Consume Item",
               "description": "Determines whether the mob will consume the item or not.",
               "defaultValue": false,
-              "dataType": 1
+              "dataType": "boolean"
             },
             {
               "id": "craft_into",
               "title": "Craft Into",
               "description": "Defines the item this entity wants to craft with the item defined by \"item\". Should be an item name.",
-              "dataType": 2
+              "dataType": "string"
             },
             {
               "id": "item",
               "title": "Item",
               "description": "The name of the item. Aux value can be specified, for instance 'minecraft:skull:1'. Alternatively, a tag can be specified to match all items with that tag.",
-              "dataType": 2
+              "dataType": "string"
             },
             {
               "id": "max_amount",
               "title": "Max Amount",
               "description": "Maximum number of this item the mob will hold.",
               "defaultValue": -1,
-              "dataType": 0
+              "dataType": "int"
             },
             {
               "id": "pickup_limit",
               "title": "Pickup Limit",
               "description": "Maximum number items the mob will pick up during a single goal tick.",
               "defaultValue": -1,
-              "dataType": 0
+              "dataType": "int"
             },
             {
               "id": "pickup_only",
               "title": "Pickup Only",
               "description": "Determines whether the mob can only pickup the item and not drop it.",
               "defaultValue": false,
-              "dataType": 1
+              "dataType": "boolean"
             },
             {
               "id": "priority",
               "title": "Priority",
               "description": "Prioritizes which items the entity prefers. 0 is the highest priority.",
               "defaultValue": 0,
-              "dataType": 0
+              "dataType": "int"
             },
             {
               "id": "stored_in_inventory",
               "title": "Stored In Inventory",
               "description": "Determines whether the mob will try to put the item in its inventory if it has the inventory component and if it can't be equipped.",
               "defaultValue": false,
-              "dataType": 1
+              "dataType": "boolean"
             },
             {
               "id": "surplus_amount",
               "title": "Surplus Amount",
               "description": "Number of this item considered extra that the entity wants to share.",
               "defaultValue": -1,
-              "dataType": 0
+              "dataType": "int"
             },
             {
               "id": "want_amount",
               "title": "Want Amount",
               "description": "Number of this item this entity wants to share.",
               "defaultValue": -1,
-              "dataType": 0
+              "dataType": "int"
             }
           ]
         },
@@ -404,61 +388,55 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/drowned.json": [
+          "/vanilla/behavior_pack/entities/parched.json": [
             {
               "path": "/minecraft:entity/components/minecraft:shareables/",
               "content": [
                 {
-                  "item": "minecraft:trident",
+                  "item": "minecraft:netherite_sword",
                   "priority": 0,
                   "surplus_amount": 1,
                   "want_amount": 1
                 },
                 {
-                  "item": "minecraft:nautilus_shell",
+                  "item": "minecraft:diamond_sword",
                   "priority": 1,
                   "surplus_amount": 1,
                   "want_amount": 1
                 },
                 {
-                  "item": "minecraft:netherite_sword",
+                  "item": "minecraft:iron_sword",
                   "priority": 2,
                   "surplus_amount": 1,
                   "want_amount": 1
                 },
                 {
-                  "item": "minecraft:diamond_sword",
+                  "item": "minecraft:golden_sword",
                   "priority": 3,
                   "surplus_amount": 1,
                   "want_amount": 1
                 },
                 {
-                  "item": "minecraft:iron_sword",
+                  "item": "minecraft:copper_sword",
                   "priority": 4,
                   "surplus_amount": 1,
                   "want_amount": 1
                 },
                 {
-                  "item": "minecraft:golden_sword",
+                  "item": "minecraft:stone_sword",
                   "priority": 5,
                   "surplus_amount": 1,
                   "want_amount": 1
                 },
                 {
-                  "item": "minecraft:copper_sword",
+                  "item": "minecraft:wooden_sword",
                   "priority": 6,
                   "surplus_amount": 1,
                   "want_amount": 1
                 },
                 {
-                  "item": "minecraft:stone_sword",
-                  "priority": 7,
-                  "surplus_amount": 1,
-                  "want_amount": 1
-                },
-                {
-                  "item": "minecraft:wooden_sword",
-                  "priority": 8,
+                  "item": "minecraft:bow",
+                  "priority": 6,
                   "surplus_amount": 1,
                   "want_amount": 1
                 },
@@ -664,7 +642,7 @@
         "title": "Singular Pickup",
         "description": "Boolean value that controls if the mob is able to pick up more of the same item if it is already holding that item",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       }
     ],
     "samples": {
@@ -915,289 +893,6 @@
               }
             ],
             "singular_pickup": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/drowned.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:shareables/",
-          "content": {
-            "items": [
-              {
-                "item": "minecraft:trident",
-                "priority": 0,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:nautilus_shell",
-                "priority": 1,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:netherite_sword",
-                "priority": 2,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:diamond_sword",
-                "priority": 3,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:iron_sword",
-                "priority": 4,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:golden_sword",
-                "priority": 5,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:copper_sword",
-                "priority": 6,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:stone_sword",
-                "priority": 7,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:wooden_sword",
-                "priority": 8,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:netherite_helmet",
-                "priority": 0,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:diamond_helmet",
-                "priority": 1,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:iron_helmet",
-                "priority": 2,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:chainmail_helmet",
-                "priority": 3,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:golden_helmet",
-                "priority": 4,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:copper_helmet",
-                "priority": 5,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:leather_helmet",
-                "priority": 6,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:turtle_helmet",
-                "priority": 7,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:skull:0",
-                "priority": 8,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:skull:1",
-                "priority": 8,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:carved_pumpkin",
-                "priority": 8,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:netherite_chestplate",
-                "priority": 0,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:diamond_chestplate",
-                "priority": 1,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:iron_chestplate",
-                "priority": 2,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:chainmail_chestplate",
-                "priority": 3,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:golden_chestplate",
-                "priority": 4,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:copper_chestplate",
-                "priority": 5,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:leather_chestplate",
-                "priority": 6,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:netherite_leggings",
-                "priority": 0,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:diamond_leggings",
-                "priority": 1,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:iron_leggings",
-                "priority": 2,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:chainmail_leggings",
-                "priority": 3,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:golden_leggings",
-                "priority": 4,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:copper_leggings",
-                "priority": 5,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:leather_leggings",
-                "priority": 6,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:netherite_boots",
-                "priority": 0,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:diamond_boots",
-                "priority": 1,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:iron_boots",
-                "priority": 2,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:chainmail_boots",
-                "priority": 3,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:golden_boots",
-                "priority": 4,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:copper_boots",
-                "priority": 5,
-                "surplus_amount": 1,
-                "want_amount": 1
-              },
-              {
-                "item": "minecraft:leather_boots",
-                "priority": 6,
-                "surplus_amount": 1,
-                "want_amount": 1
-              }
-            ],
-            "singular_pickup": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/fox.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:shareables/",
-          "content": {
-            "singular_pickup": true,
-            "all_items": true,
-            "all_items_max_amount": 1,
-            "items": [
-              {
-                "item": "minecraft:is_food",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:glow_berries",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:bundle",
-                "priority": 1,
-                "max_amount": 1
-              }
-            ]
           }
         }
       ],
@@ -1698,6 +1393,302 @@
               }
             ],
             "singular_pickup": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/stray.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:shareables/",
+          "content": {
+            "items": [
+              {
+                "item": "minecraft:netherite_sword",
+                "priority": 0,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:diamond_sword",
+                "priority": 1,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:iron_sword",
+                "priority": 2,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:golden_sword",
+                "priority": 3,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:copper_sword",
+                "priority": 4,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:stone_sword",
+                "priority": 5,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:wooden_sword",
+                "priority": 6,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:bow",
+                "priority": 7,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:netherite_helmet",
+                "priority": 0,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:diamond_helmet",
+                "priority": 1,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:iron_helmet",
+                "priority": 2,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:chainmail_helmet",
+                "priority": 3,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:golden_helmet",
+                "priority": 4,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:copper_helmet",
+                "priority": 5,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:leather_helmet",
+                "priority": 6,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:turtle_helmet",
+                "priority": 7,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:skull:0",
+                "priority": 8,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:skull:1",
+                "priority": 8,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:carved_pumpkin",
+                "priority": 8,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:netherite_chestplate",
+                "priority": 0,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:diamond_chestplate",
+                "priority": 1,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:iron_chestplate",
+                "priority": 2,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:chainmail_chestplate",
+                "priority": 3,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:golden_chestplate",
+                "priority": 4,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:copper_chestplate",
+                "priority": 5,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:leather_chestplate",
+                "priority": 6,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:netherite_leggings",
+                "priority": 0,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:diamond_leggings",
+                "priority": 1,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:iron_leggings",
+                "priority": 2,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:chainmail_leggings",
+                "priority": 3,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:golden_leggings",
+                "priority": 4,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:copper_leggings",
+                "priority": 5,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:leather_leggings",
+                "priority": 6,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:netherite_boots",
+                "priority": 0,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:diamond_boots",
+                "priority": 1,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:iron_boots",
+                "priority": 2,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:chainmail_boots",
+                "priority": 3,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:golden_boots",
+                "priority": 4,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:copper_boots",
+                "priority": 5,
+                "surplus_amount": 1,
+                "want_amount": 1
+              },
+              {
+                "item": "minecraft:leather_boots",
+                "priority": 6,
+                "surplus_amount": 1,
+                "want_amount": 1
+              }
+            ],
+            "singular_pickup": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sulfur_cube.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:shareables/",
+          "content": {
+            "singular_pickup": true,
+            "items": [
+              {
+                "item": "minecraft:sulfur_cube_archetype_bouncy",
+                "max_amount": 1
+              },
+              {
+                "item": "minecraft:sulfur_cube_archetype_regular",
+                "max_amount": 1
+              },
+              {
+                "item": "minecraft:sulfur_cube_archetype_slow_flat",
+                "max_amount": 1
+              },
+              {
+                "item": "minecraft:sulfur_cube_archetype_fast_flat",
+                "max_amount": 1
+              },
+              {
+                "item": "minecraft:sulfur_cube_archetype_light",
+                "max_amount": 1
+              },
+              {
+                "item": "minecraft:sulfur_cube_archetype_fast_sliding",
+                "max_amount": 1
+              },
+              {
+                "item": "minecraft:sulfur_cube_archetype_slow_sliding",
+                "max_amount": 1
+              },
+              {
+                "item": "minecraft:sulfur_cube_archetype_sticky",
+                "max_amount": 1
+              },
+              {
+                "item": "minecraft:sulfur_cube_archetype_high_resistance",
+                "max_amount": 1
+              }
+            ]
           }
         }
       ]

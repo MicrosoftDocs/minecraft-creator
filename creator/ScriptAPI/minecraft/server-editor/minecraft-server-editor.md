@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.20-beta.26 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.30-beta.20 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -72,6 +72,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.20-
 - [ListViewControlFilterFlags](ListViewControlFilterFlags.md)
 - [LogChannel](LogChannel.md)
 - [MinimapMarkerType](MinimapMarkerType.md)
+- [MinimapTrackingMode](MinimapTrackingMode.md)
 - [MinimapViewType](MinimapViewType.md)
 - [ModalDialogResponseType](ModalDialogResponseType.md)
 - [ModalDialogType](ModalDialogType.md)
@@ -400,6 +401,8 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.20-
 - [IVector3TimelinePropertyItemOptions](IVector3TimelinePropertyItemOptions.md)
 - [LocalizationEntry](LocalizationEntry.md)
 - [LogProperties](LogProperties.md)
+- [MinimapCreateOptions](MinimapCreateOptions.md)
+- [MinimapMarkerData](MinimapMarkerData.md)
 - [ModalDialogCreationParams](ModalDialogCreationParams.md)
 - [ModalToolCreationParameters](ModalToolCreationParameters.md)
 - [ProjectExportOptions](ProjectExportOptions.md)

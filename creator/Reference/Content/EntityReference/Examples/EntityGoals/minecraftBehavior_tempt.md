@@ -17,18 +17,18 @@ Allows a mob to be tempted by a player holding a specific item. Uses pathfinding
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| can_get_scared | false | Boolean true/false | If true, the mob can stop being tempted if the player moves too fast while close to this mob. | Fox: `true` | 
+| can_get_scared | false | Boolean true/false | If true, the mob can stop being tempted if the player moves too fast while close to this mob. |  | 
 | can_tempt_vertically | false | Boolean true/false | If true, vertical distance to the player will be considered when tempting. | Frog: `true` | 
 | can_tempt_while_ridden | false | Boolean true/false | If true, the mob can be tempted even if it has a passenger (i.e. if being ridden). |  | 
-| items | [] | Array of strings | List of items that can tempt the mob. | Chicken: `["wheat_seeds","beetroot_seeds","melon_seeds","pumpkin_seeds","pitcher_pod","torchflower_seeds"]`, Cow: `["wheat"]`, Fox: `["sweet_berries","glow_berries"]` | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Chicken: `4`, Fox: `3`, Frog: `5` | 
+| items | [] | Array of strings | List of items that can tempt the mob. | Chicken: `["wheat_seeds","beetroot_seeds","melon_seeds","pumpkin_seeds","pitcher_pod","torchflower_seeds"]`, Cow: `["wheat"]`, Frog: `["slime_ball"]` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Chicken: `4`, Frog: `5` | 
 | sound_interval | *not set* | Integer number | Range of random ticks to wait between tempt sounds. Can be a number, an array [min, max], or an object with range_min/range_max or min/max. |  | 
 | sound_interval (as Array of objects) | *not set* | Array of [Sound Interval](#sound-interval) items |  |  | 
 | sound_interval (as Object) | *not set* | [Sound Interval](#sound-interval) item |  |  | 
-| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Chicken: `1`, Cow: `1.25`, Fox: `0.5` | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Chicken: `1`, Cow: `1.25`, Goat: `0.75` | 
 | stop_distance | 1.5 | Decimal number | The distance at which the mob will stop following the player. |  | 
 | tempt_sound | *not set* | String | Sound to play while the mob is being tempted. |  | 
-| within_radius | 0 | Decimal number | Distance in blocks this mob can get tempted by a player holding an item they like. | Fox: `16` | 
+| within_radius | 0 | Decimal number | Distance in blocks this mob can get tempted by a player holding an item they like. |  | 
 
 ### Sound Interval
 
@@ -74,22 +74,6 @@ Allows a mob to be tempted by a player holding a specific item. Uses pathfinding
 }
 ```
 
-#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
-
-
-```json
-"minecraft:behavior.tempt": {
-  "priority": 3,
-  "speed_multiplier": 0.5,
-  "within_radius": 16,
-  "can_get_scared": true,
-  "items": [
-    "sweet_berries",
-    "glow_berries"
-  ]
-}
-```
-
 #### [Frog](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/frog.json)
 
 
@@ -113,6 +97,19 @@ Allows a mob to be tempted by a player holding a specific item. Uses pathfinding
   "speed_multiplier": 0.75,
   "items": [
     "wheat"
+  ]
+}
+```
+
+#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
+
+
+```json
+"minecraft:behavior.tempt": {
+  "priority": 5,
+  "speed_multiplier": 1.2,
+  "items": [
+    "hay_block"
   ]
 }
 ```

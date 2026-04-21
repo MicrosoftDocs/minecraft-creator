@@ -22,7 +22,7 @@
         "id": "element_type",
         "title": "ElementType",
         "description": "The type of element",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "minecraft:empty_pool_element",

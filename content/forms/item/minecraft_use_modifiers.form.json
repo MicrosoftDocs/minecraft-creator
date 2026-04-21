@@ -23,14 +23,14 @@
         "id": "emit_vibrations",
         "title": "Emit Vibrations",
         "description": "Whether vibrations are emitted when the item starts or stops being used.",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": true
       },
       {
         "id": "movement_modifier",
         "title": "Movement Modifier",
         "description": "Multiplier applied to the player's movement speed while the item is in use.",
-        "dataType": 3,
+        "dataType": "float",
         "validity": [
           {
             "comparison": "<=",
@@ -50,8 +50,12 @@
         "id": "start_sound",
         "title": "LevelSoundEvent",
         "description": "Sound played when the item starts being used.",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
+          {
+            "id": "absorb_block",
+            "title": "Absorb block"
+          },
           {
             "id": "activate",
             "title": "Activate"
@@ -533,6 +537,10 @@
             "title": "Bottle.fill"
           },
           {
+            "id": "bounce",
+            "title": "Bounce"
+          },
+          {
             "id": "bow",
             "title": "Bow"
           },
@@ -895,6 +903,10 @@
           {
             "id": "eat",
             "title": "Eat"
+          },
+          {
+            "id": "eject_block",
+            "title": "Eject block"
           },
           {
             "id": "elderguardian.curse",
@@ -1821,6 +1833,10 @@
             "title": "Purreow"
           },
           {
+            "id": "pushed_by_player",
+            "title": "Pushed by player"
+          },
+          {
             "id": "raid.horn",
             "title": "Raid.horn"
           },
@@ -2019,6 +2035,10 @@
           {
             "id": "sleep",
             "title": "Sleep"
+          },
+          {
+            "id": "slime_landing",
+            "title": "Slime landing"
           },
           {
             "id": "smithing_table.use",
@@ -2271,10 +2291,27 @@
         ]
       },
       {
+        "id": "start_using",
+        "title": "StartUsing",
+        "description": "Controls how using the item triggers start using behavior. \"if_first\" only starts if no other component has started using yet; \"always\" always restarts using. Defaults to \"if_first\".",
+        "dataType": "string",
+        "choices": [
+          {
+            "id": "always",
+            "title": "Always"
+          },
+          {
+            "id": "if_first",
+            "title": "If first"
+          }
+        ],
+        "defaultValue": "if_first"
+      },
+      {
         "id": "use_duration",
         "title": "Use Duration",
         "description": "Time, in seconds, that the item takes to use.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/items/apple.json": [

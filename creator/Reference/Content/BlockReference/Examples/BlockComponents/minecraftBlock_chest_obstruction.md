@@ -11,7 +11,7 @@ ms.date: 02/11/2025
 # Block Components Documentation - minecraft:chest_obstruction
 
 The description identifier of the chest obstruction component
-Experimental toggles required: Upcoming Creator Features.
+Experimental toggles required: Upcoming Creator Features (in format versions before 1.26.20).
 
 
 ## Chest Obstruction Properties

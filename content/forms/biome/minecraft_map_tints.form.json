@@ -23,11 +23,11 @@
         "id": "foliage",
         "title": "Foliage",
         "description": "Sets the color foliage will be tinted by in this biome on the map.",
-        "dataType": 2,
+        "dataType": "string",
         "alternates": [
           {
             "id": "foliage",
-            "dataType": 32,
+            "dataType": "numberArray",
             "minLength": 3,
             "maxLength": 3
           }
@@ -37,7 +37,7 @@
         "id": "grass",
         "title": "Grass",
         "description": "Controls whether the grass will use a custom tint color or a noise based tint color.",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       }
     ]

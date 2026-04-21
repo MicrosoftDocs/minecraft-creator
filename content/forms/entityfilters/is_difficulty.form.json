@@ -35,7 +35,7 @@
         "title": "Operator",
         "description": "(Optional) The comparison to apply with 'value'.",
         "defaultValue": "equals",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "!=",
@@ -87,14 +87,26 @@
             "title": "Not",
             "description": "Test for inequality."
           }
-        ]
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:environment_sensor/triggers[2]/filters/",
+              "content": "!="
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/",
+              "content": "!="
+            }
+          ]
+        }
       },
       {
         "id": "subject",
         "title": "Subject",
         "description": "(Optional) The subject of this filter test.",
         "defaultValue": "self",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "block",
@@ -137,7 +149,7 @@
         "id": "value",
         "title": "Value",
         "description": "(Required) The game's difficulty level to test",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "easy",
@@ -163,6 +175,12 @@
               "content": "hard"
             }
           ],
+          "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[2]/filters/",
+              "content": "hard"
+            }
+          ],
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
               "path": "/minecraft:entity/events/minecraft:become_angry/sequence[1]/filters/",
@@ -171,10 +189,6 @@
             {
               "path": "/minecraft:entity/events/minecraft:become_angry/sequence[2]/filters/",
               "content": "normal"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:become_angry/sequence[3]/filters/",
-              "content": "hard"
             },
             {
               "path": "/minecraft:entity/events/minecraft:become_hostile/sequence[1]/filters/",
@@ -190,7 +204,7 @@
       {
         "id": "test",
         "title": "Test",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/arrow.json": [
             {
@@ -198,9 +212,9 @@
               "content": "is_difficulty"
             }
           ],
-          "/vanilla/behavior_pack/entities/cave_spider.json": [
+          "/vanilla/behavior_pack/entities/bogged.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:become_angry/sequence[1]/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[2]/filters/",
               "content": "is_difficulty"
             }
           ]
@@ -223,6 +237,53 @@
           "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[0]/filters/",
           "content": {
             "test": "is_difficulty",
+            "value": "hard"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[2]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:environment_sensor/triggers[2]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "operator": "!=",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[0]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "operator": "!=",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:ranged_mode/sequence[0]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:ranged_mode/sequence[1]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "operator": "!=",
             "value": "hard"
           }
         }
@@ -267,6 +328,100 @@
           "path": "/minecraft:entity/events/minecraft:become_hostile/sequence[3]/filters/",
           "content": {
             "test": "is_difficulty",
+            "value": "hard"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[2]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:environment_sensor/triggers[2]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "operator": "!=",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[0]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "operator": "!=",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:ranged_mode/sequence[0]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:ranged_mode/sequence[1]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "operator": "!=",
+            "value": "hard"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[3]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:environment_sensor/triggers[3]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "operator": "!=",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[0]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "operator": "!=",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:ranged_mode/sequence[0]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:ranged_mode/sequence[1]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "operator": "!=",
             "value": "hard"
           }
         }

@@ -23,14 +23,14 @@
         "title": "End Scale",
         "description": "Ending scale of the entity when it's fully grown.",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "start_scale",
         "title": "Start Scale",
         "description": "Initial scale of the newborn entity.",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       }
     ]
   }

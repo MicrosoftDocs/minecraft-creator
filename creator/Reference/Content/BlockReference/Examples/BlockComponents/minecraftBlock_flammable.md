@@ -34,3 +34,23 @@ A modifier affecting the chance that this block will be destroyed by flames when
 
 
 ## Samples
+
+#### Block Fabricator
+
+
+```json
+"minecraft:flammable": {
+  "destroy_chance_modifier": 20,
+  "catch_chance_modifier": 5
+}
+```
+
+#### Block Leaf Pile
+
+
+```json
+"minecraft:flammable": {
+  "destroy_chance_modifier": 100,
+  "catch_chance_modifier": 100
+}
+```

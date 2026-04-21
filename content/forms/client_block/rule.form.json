@@ -48,7 +48,7 @@
       {
         "id": "condition",
         "title": "Rule Condition",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "same_block",
@@ -67,13 +67,13 @@
       {
         "id": "cull_against_full_and_opaque",
         "title": "Cull Against Full And Opaque",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": true
       },
       {
         "id": "direction",
         "title": "Facing",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "down",
@@ -105,7 +105,7 @@
       {
         "id": "geometry_part",
         "title": "Geometry Part",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "client_block/rule_geometry_part",
         "isRequired": true
       }

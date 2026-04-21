@@ -24,14 +24,16 @@ The `@minecraft/server-net` module contains types for executing HTTP-based reque
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.20-beta.26 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.30-beta.20 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`
 
 ## Enumerations
 - [HttpRequestMethod](HttpRequestMethod.md)
+- [HttpStatusCode](HttpStatusCode.md)
 - [PacketId](PacketId.md)
+- [WebSocketClientCloseReasons](WebSocketClientCloseReasons.md)
 
 ## Classes
 - [CloseAfterEventSignal](CloseAfterEventSignal.md)

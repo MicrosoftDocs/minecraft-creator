@@ -23,20 +23,20 @@
         "title": "Find Players Only",
         "description": "Limits the search to Players only for all subsensors.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "relative_range",
         "title": "Relative Range",
         "description": "If true the subsensors' range is additive on top of the entity's size.",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "subsensors",
         "title": "Subsensors",
         "description": "The list of subsensors which sense for entities and emit events when all their conditions are met.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "The list of subsensors which sense for entities and emit events when all their conditions are met.",
@@ -46,54 +46,54 @@
               "title": "Cooldown",
               "description": "How many seconds should elapse before the subsensor can once again sense for entities. The cooldown is applied on top of the base 1 tick (0.05 seconds) delay. Negative values will result in no cooldown being used.",
               "defaultValue": -1,
-              "dataType": 3
+              "dataType": "float"
             },
             {
               "id": "event",
               "title": "Event",
               "description": "Event to fire when the conditions are met.",
-              "dataType": 22
+              "dataType": "minecraftEventTrigger"
             },
             {
               "id": "event_filters",
               "title": "Event Filters",
               "description": "The set of conditions that must be satisfied to fire the event.",
-              "dataType": 20
+              "dataType": "minecraftFilter"
             },
             {
               "id": "maximum_count",
               "title": "Maximum Count",
               "description": "The maximum number of entities that must pass the filter conditions for the event to send.",
               "defaultValue": -1,
-              "dataType": 0
+              "dataType": "int"
             },
             {
               "id": "minimum_count",
               "title": "Minimum Count",
               "description": "The minimum number of entities that must pass the filter conditions for the event to send.",
               "defaultValue": 1,
-              "dataType": 0
+              "dataType": "int"
             },
             {
               "id": "range",
               "title": "Range",
               "description": "The maximum horizontal and vertical distance another entity can be from this and have the filters checked against it.",
               "defaultValue": "[10, 10]",
-              "dataType": 36
+              "dataType": "point2"
             },
             {
               "id": "require_all",
               "title": "Require All",
               "description": "If true requires all nearby entities to pass the filter conditions for the events to send.",
               "defaultValue": false,
-              "dataType": 1
+              "dataType": "boolean"
             },
             {
               "id": "y_offset",
               "title": "y Offset",
               "description": "Vertical offset applied to the entity's position when computing the distance from other entities.",
               "defaultValue": 0,
-              "dataType": 3
+              "dataType": "float"
             }
           ]
         },

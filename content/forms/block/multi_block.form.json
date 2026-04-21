@@ -10,7 +10,7 @@
         "id": "direction",
         "title": "Facing",
         "description": "The direction the block parts are placed starting from 'minecraft:multi_block_part' permutation '0' to permutation 'parts'. Default value is 'up'.",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "down",
@@ -27,7 +27,7 @@
         "id": "enabled_states",
         "title": "Enabled States",
         "description": "Which state to enable. Must specify at least one. Options: [\"minecraft:multi_block_part\"].",
-        "dataType": 17,
+        "dataType": "stringArray",
         "minLength": 1,
         "choices": [
           {
@@ -41,7 +41,7 @@
         "id": "parts",
         "title": "Parts",
         "description": "The number of block parts, this sets the value for state 'minecraft:multi_block_part'. Default value is '2'.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 2,
         "validity": [
           {

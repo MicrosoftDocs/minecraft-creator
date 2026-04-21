@@ -22,7 +22,7 @@
         "id": "interact_text",
         "title": "Interact Text",
         "description": "The text that will display when interacting with this entity with a dye when playing with Touch-screen controls.",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/sheep.json": [
             {

@@ -186,7 +186,7 @@
         "title": "Default Block Cost",
         "description": "Cost for non-preferred blocks",
         "defaultValue": 0,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/iron_golem.json": [
             {
@@ -201,7 +201,7 @@
         "title": "Jump Cost",
         "description": "Added cost for jumping up a node",
         "defaultValue": 0,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/iron_golem.json": [
             {
@@ -216,7 +216,7 @@
         "title": "Max Fall Blocks",
         "description": "Distance mob can fall without taking damage",
         "defaultValue": 3,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/iron_golem.json": [
             {
@@ -236,7 +236,7 @@
         "id": "preferred_path_blocks",
         "title": "Preferred Path Blocks",
         "description": "A list of blocks with their associated cost",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/iron_golem.json": [
             {

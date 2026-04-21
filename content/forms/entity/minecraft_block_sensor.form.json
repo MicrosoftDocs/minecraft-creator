@@ -53,20 +53,20 @@
         "id": "on_break",
         "title": "Break",
         "description": "List of blocks to watch for being broken to fire off a specified event. If a block is in multiple lists, multiple events will fire.",
-        "dataType": 17
+        "dataType": "stringArray"
       },
       {
         "id": "sensor_radius",
         "title": "Sensor Radius",
         "description": "The maximum radial distance in which a specified block can be detected. The biggest radius is 32.0.",
         "defaultValue": 16,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "sources",
         "title": "Sources",
         "description": "List of sources that break the block to listen for. If none are specified, all block breaks will be detected.",
-        "dataType": 17
+        "dataType": "stringArray"
       }
     ],
     "samples": {}

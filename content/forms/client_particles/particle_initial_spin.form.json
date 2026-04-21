@@ -20,12 +20,12 @@
       {
         "id": "rotation",
         "title": "Rotation",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": 0,
         "alternates": [
           {
             "id": "rotation",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "rotation",
@@ -34,13 +34,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -48,19 +48,19 @@
           },
           {
             "id": "rotation",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       },
       {
         "id": "rotation_rate",
         "title": "Rotation Rate",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": 0,
         "alternates": [
           {
             "id": "rotation_rate",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "rotation_rate",
@@ -69,13 +69,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -83,7 +83,7 @@
           },
           {
             "id": "rotation_rate",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       }

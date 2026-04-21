@@ -23,35 +23,35 @@
         "title": "Max Distance",
         "description": "A charge attack cannot start if the entity is farther than this distance to the target.",
         "defaultValue": 3,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "min_distance",
         "title": "Min Distance",
         "description": "A charge attack cannot start if the entity is closer than this distance to the target.",
         "defaultValue": 2,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Modifies the entity's speed when charging toward the target.",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "success_rate",
         "title": "Success Rate",
         "description": "Percent chance this entity will start a charge attack, if not already attacking (1.0 = 100%)",
         "defaultValue": 0.1428,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/vex.json": [
             {
@@ -81,7 +81,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -102,20 +102,20 @@
         "id": "max_distance",
         "title": "Max Distance",
         "description": "A charge attack cannot start if the entity is farther than this distance to the target.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 3
       },
       {
         "id": "min_distance",
         "title": "Min Distance",
         "description": "A charge attack cannot start if the entity is closer than this distance to the target.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 2
       },
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/vex.json": [
@@ -129,8 +129,12 @@
       {
         "id": "sound_event",
         "title": "LevelSoundEvent",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
+          {
+            "id": "absorb_block",
+            "title": "Absorb block"
+          },
           {
             "id": "activate",
             "title": "Activate"
@@ -612,6 +616,10 @@
             "title": "Bottle.fill"
           },
           {
+            "id": "bounce",
+            "title": "Bounce"
+          },
+          {
             "id": "bow",
             "title": "Bow"
           },
@@ -974,6 +982,10 @@
           {
             "id": "eat",
             "title": "Eat"
+          },
+          {
+            "id": "eject_block",
+            "title": "Eject block"
           },
           {
             "id": "elderguardian.curse",
@@ -1900,6 +1912,10 @@
             "title": "Purreow"
           },
           {
+            "id": "pushed_by_player",
+            "title": "Pushed by player"
+          },
+          {
             "id": "raid.horn",
             "title": "Raid.horn"
           },
@@ -2098,6 +2114,10 @@
           {
             "id": "sleep",
             "title": "Sleep"
+          },
+          {
+            "id": "slime_landing",
+            "title": "Slime landing"
           },
           {
             "id": "smithing_table.use",
@@ -2354,14 +2374,14 @@
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Modifies the entity's speed when charging toward the target.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1
       },
       {
         "id": "success_rate",
         "title": "Success Rate",
         "description": "Percent chance this entity will start a charge attack, if not already attacking (1.0 = 100%).",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.1428000032901764
       }
     ],

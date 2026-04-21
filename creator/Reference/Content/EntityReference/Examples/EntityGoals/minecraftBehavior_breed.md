@@ -64,3 +64,13 @@ Allows this mob to breed with other mobs.
   "speed_multiplier": 0.6
 }
 ```
+
+#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
+
+
+```json
+"minecraft:behavior.breed": {
+  "priority": 4,
+  "speed_multiplier": 1
+}
+```

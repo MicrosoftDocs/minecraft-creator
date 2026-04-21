@@ -21,7 +21,7 @@
       {
         "id": "surface",
         "title": "Surface",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": -1,
         "validity": [
           {
@@ -33,7 +33,7 @@
       {
         "id": "underground",
         "title": "Underground",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": -1,
         "validity": [
           {

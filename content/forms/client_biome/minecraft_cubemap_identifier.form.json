@@ -23,7 +23,7 @@
         "id": "cubemap_identifier",
         "title": "Cubemap Identifier",
         "description": "Identifier of cubemap definition to use",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       }
     ]

@@ -23,14 +23,14 @@
         "id": "allows_wire_to_step_down",
         "title": "Allows Wire To Step Down",
         "description": "Specifies if redstone wire can stair-step downward on the block.",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": true
       },
       {
         "id": "redstone_conductor",
         "title": "Redstone Conductor",
         "description": "Specifies if the block can be powered by redstone.",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": false
       }
     ]

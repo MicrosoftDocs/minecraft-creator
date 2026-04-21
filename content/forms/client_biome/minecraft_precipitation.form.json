@@ -48,25 +48,25 @@
         "id": "ash",
         "title": "Ash",
         "description": "Density of ash precipitation visuals",
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "blue_spores",
         "title": "Blue Spores",
         "description": "Density of blue spore precipitation visuals",
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "red_spores",
         "title": "Red Spores",
         "description": "Density of blue spore precipitation visuals",
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "white_ash",
         "title": "White Ash",
         "description": "Density of white ash precipitation visuals",
-        "dataType": 3
+        "dataType": "float"
       }
     ]
   }

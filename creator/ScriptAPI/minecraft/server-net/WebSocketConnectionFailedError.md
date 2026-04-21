@@ -17,11 +17,11 @@ An error thrown when the connection with the WebSocket server has failed.
 ## Properties
 
 ### **errorCode**
-`read-only errorCode: number;`
+`read-only errorCode: HttpStatusCode;`
 
 The error code received when attempting to connect with the server.
 
-Type: *number*
+Type: [*HttpStatusCode*](HttpStatusCode.md)
 
 Notes:
   - This property can be read in early-execution mode.

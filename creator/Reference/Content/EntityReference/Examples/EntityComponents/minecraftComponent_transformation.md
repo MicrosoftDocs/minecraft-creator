@@ -23,11 +23,11 @@ Defines an entity's transformation from the current definition into another.
 | delay (as Decimal number) | *not set* | Decimal number |  |  | 
 | drop_equipment | false | Boolean true/false | Cause the entity to drop all equipment upon transformation |  | 
 | drop_inventory | false | Boolean true/false | Cause the entity to drop all items in inventory upon transformation | Skeleton: `true` | 
-| into | *not set* | String | Entity Definition that this entity will transform into | Hoglin: `"minecraft:zoglin"`, Pig: `"minecraft:pig_zombie"`, Skeleton: `"minecraft:stray"` | 
-| keep_level | false | Boolean true/false | If this entity has trades and has leveled up, it should maintain that level after transformation. | Hoglin: `true` | 
+| into | *not set* | String | Entity Definition that this entity will transform into | Pig: `"minecraft:pig_zombie"`, Skeleton: `"minecraft:stray"`, Stray: `"minecraft:skeleton"` | 
+| keep_level | false | Boolean true/false | If this entity has trades and has leveled up, it should maintain that level after transformation. | Skeleton: `true` | 
 | keep_owner | false | Boolean true/false | If this entity is owned by another entity, it should remain owned after transformation. |  | 
 | preserve_equipment | false | Boolean true/false | Cause the entity to keep equipment after going through transformation | Skeleton: `true` | 
-| transformation_sound | *not set* | String | Sound to play when the entity is done transforming | Hoglin: `"mob.hoglin.converted_to_zombified"`, Pig: `"mob.pig.death"`, Skeleton: `"convert_to_stray"` | 
+| transformation_sound | *not set* | String | Sound to play when the entity is done transforming | Pig: `"mob.pig.death"`, Skeleton: `"convert_to_stray"` | 
 
 ### Add
 List of components to add to the entity after the transformation.
@@ -70,17 +70,6 @@ Time in seconds to be added to value to have the minimum random time range value
 
 
 ## Samples
-
-#### [Hoglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/hoglin.json)
-
-
-```json
-"minecraft:transformation": {
-  "into": "minecraft:zoglin",
-  "transformation_sound": "mob.hoglin.converted_to_zombified",
-  "keep_level": true
-}
-```
 
 #### [Pig](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pig.json)
 

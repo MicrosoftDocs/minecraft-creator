@@ -33,14 +33,22 @@
         "title": "Speed Multiplier",
         "description": "Determines the multiplier this entity's speed is modified by when jumping around.",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float",
+        "samples": {
+          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:behavior.slime_keep_on_jumping/",
+              "content": 1
+            }
+          ]
+        }
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/magma_cube.json": [
             {
@@ -73,6 +81,15 @@
             "priority": 5
           }
         }
+      ],
+      "/vanilla/behavior_pack/entities/sulfur_cube.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:behavior.slime_keep_on_jumping/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 1
+          }
+        }
       ]
     }
   },
@@ -84,7 +101,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -104,7 +121,7 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/magma_cube.json": [
@@ -125,8 +142,16 @@
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Determines the multiplier this entity's speed is modified by when jumping around.",
-        "dataType": 3,
-        "defaultValue": 1
+        "dataType": "float",
+        "defaultValue": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:behavior.slime_keep_on_jumping/",
+              "content": 1
+            }
+          ]
+        }
       }
     ],
     "samples": {
@@ -143,6 +168,15 @@
           "path": "/minecraft:entity/components/minecraft:behavior.slime_keep_on_jumping/",
           "content": {
             "priority": 5
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sulfur_cube.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:behavior.slime_keep_on_jumping/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 1
           }
         }
       ]

@@ -22,12 +22,12 @@
         "id": "triggered_event",
         "title": "Triggered Event",
         "description": "Event to run when a raid is triggered on the village.",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "minecraft:raid_trigger",
         "title": "Raid Trigger",
-        "dataType": 16,
+        "dataType": "object",
         "subForm": {
           "id": "minecraft:raid_trigger",
           "title": "Minecraft:raid trigger",
@@ -35,7 +35,7 @@
             {
               "id": "triggered_event",
               "title": "Triggered event",
-              "dataType": 2,
+              "dataType": "string",
               "samples": {
                 "/vanilla/behavior_pack/entities/player.json": [
                   {

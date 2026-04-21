@@ -1,0 +1,377 @@
+{
+  "id": "minecraft:apply_knockback_rules",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:apply_knockback_rules",
+    "title": "Entity Apply Knockback Rules",
+    "description": "Defines how an entity applies knockback.",
+    "fields": [
+      {
+        "id": "presets",
+        "title": "Presets",
+        "description": "Array of rules instances defining how knockback should be applied to the entity.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subFormId": "entity/minecraft_apply_knockback_rules_instance",
+        "samples": {
+          "/vanilla/behavior_pack/entities/egg.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:apply_knockback_rules/",
+              "content": [
+                {
+                  "vertical_power": 0.12,
+                  "vertical_velocity_cap": 0.12
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/iron_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:apply_knockback_rules/",
+              "content": [
+                {
+                  "horizontal_power": 1.3,
+                  "vertical_power": 0.39,
+                  "vertical_velocity_cap": 0.8
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/player.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:apply_knockback_rules/",
+              "content": [
+                {
+                  "filter": {
+                    "test": "enum_property",
+                    "subject": "other",
+                    "domain": "minecraft:sulfur_cube_archetype",
+                    "value": "bouncy"
+                  },
+                  "horizontal_power": 0.33,
+                  "vertical_power": 0.06,
+                  "vertical_velocity_cap": 8,
+                  "scale_previous_velocity": 1,
+                  "horizontal_hit_angle_scale": 1.6,
+                  "vertical_hit_angle_scale": 0.5,
+                  "vertical_position_angle_scale": 0.8,
+                  "scale_with_damage": true
+                },
+                {
+                  "filter": {
+                    "test": "enum_property",
+                    "subject": "other",
+                    "domain": "minecraft:sulfur_cube_archetype",
+                    "value": "regular"
+                  },
+                  "horizontal_power": 0.33,
+                  "vertical_power": 0.06,
+                  "vertical_velocity_cap": 8,
+                  "scale_previous_velocity": 1,
+                  "horizontal_hit_angle_scale": 1.6,
+                  "vertical_hit_angle_scale": 0.5,
+                  "vertical_position_angle_scale": 0.8,
+                  "scale_with_damage": true
+                },
+                {
+                  "filter": {
+                    "test": "enum_property",
+                    "subject": "other",
+                    "domain": "minecraft:sulfur_cube_archetype",
+                    "value": "slow_flat"
+                  },
+                  "horizontal_power": 0.33,
+                  "vertical_power": 0.06,
+                  "vertical_velocity_cap": 8,
+                  "scale_previous_velocity": 1,
+                  "horizontal_hit_angle_scale": 1.6,
+                  "vertical_hit_angle_scale": 0.5,
+                  "vertical_position_angle_scale": 0.8,
+                  "scale_with_damage": true
+                },
+                {
+                  "filter": {
+                    "test": "enum_property",
+                    "subject": "other",
+                    "domain": "minecraft:sulfur_cube_archetype",
+                    "value": "fast_flat"
+                  },
+                  "horizontal_power": 0.33,
+                  "vertical_power": 0.06,
+                  "vertical_velocity_cap": 8,
+                  "scale_previous_velocity": 1,
+                  "horizontal_hit_angle_scale": 1.6,
+                  "vertical_hit_angle_scale": 0.5,
+                  "vertical_position_angle_scale": 0.8,
+                  "scale_with_damage": true
+                },
+                {
+                  "filter": {
+                    "test": "enum_property",
+                    "subject": "other",
+                    "domain": "minecraft:sulfur_cube_archetype",
+                    "value": "light"
+                  },
+                  "horizontal_power": 0.33,
+                  "vertical_power": 0.06,
+                  "vertical_velocity_cap": 8,
+                  "scale_previous_velocity": 1,
+                  "horizontal_hit_angle_scale": 1.6,
+                  "vertical_hit_angle_scale": 0.5,
+                  "vertical_position_angle_scale": 0.8,
+                  "scale_with_damage": true
+                },
+                {
+                  "filter": {
+                    "test": "enum_property",
+                    "subject": "other",
+                    "domain": "minecraft:sulfur_cube_archetype",
+                    "value": "fast_sliding"
+                  },
+                  "horizontal_power": 0.33,
+                  "vertical_power": 0.06,
+                  "vertical_velocity_cap": 8,
+                  "scale_previous_velocity": 1,
+                  "horizontal_hit_angle_scale": 1.6,
+                  "vertical_hit_angle_scale": 0.5,
+                  "vertical_position_angle_scale": 0.8,
+                  "scale_with_damage": true
+                },
+                {
+                  "filter": {
+                    "test": "enum_property",
+                    "subject": "other",
+                    "domain": "minecraft:sulfur_cube_archetype",
+                    "value": "slow_sliding"
+                  },
+                  "horizontal_power": 0.33,
+                  "vertical_power": 0.06,
+                  "vertical_velocity_cap": 8,
+                  "scale_previous_velocity": 1,
+                  "horizontal_hit_angle_scale": 1.6,
+                  "vertical_hit_angle_scale": 0.5,
+                  "vertical_position_angle_scale": 0.8,
+                  "scale_with_damage": true
+                },
+                {
+                  "filter": {
+                    "test": "enum_property",
+                    "subject": "other",
+                    "domain": "minecraft:sulfur_cube_archetype",
+                    "value": "sticky"
+                  },
+                  "horizontal_power": 0.33,
+                  "vertical_power": 0.06,
+                  "vertical_velocity_cap": 8,
+                  "scale_previous_velocity": 1,
+                  "horizontal_hit_angle_scale": 1.6,
+                  "vertical_hit_angle_scale": 0.5,
+                  "vertical_position_angle_scale": 0.8,
+                  "scale_with_damage": true
+                },
+                {
+                  "filter": {
+                    "test": "enum_property",
+                    "subject": "other",
+                    "domain": "minecraft:sulfur_cube_archetype",
+                    "value": "high_resistance"
+                  },
+                  "horizontal_power": 0.33,
+                  "vertical_power": 0.06,
+                  "vertical_velocity_cap": 8,
+                  "scale_previous_velocity": 1,
+                  "horizontal_hit_angle_scale": 1.6,
+                  "vertical_hit_angle_scale": 0.5,
+                  "vertical_position_angle_scale": 0.8,
+                  "scale_with_damage": true
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/egg.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:apply_knockback_rules/",
+          "content": {
+            "presets": [
+              {
+                "vertical_power": 0.12,
+                "vertical_velocity_cap": 0.12
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/iron_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:apply_knockback_rules/",
+          "content": {
+            "presets": [
+              {
+                "horizontal_power": 1.3,
+                "vertical_power": 0.39,
+                "vertical_velocity_cap": 0.8
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/player.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:apply_knockback_rules/",
+          "content": {
+            "presets": [
+              {
+                "filter": {
+                  "test": "enum_property",
+                  "subject": "other",
+                  "domain": "minecraft:sulfur_cube_archetype",
+                  "value": "bouncy"
+                },
+                "horizontal_power": 0.33,
+                "vertical_power": 0.06,
+                "vertical_velocity_cap": 8,
+                "scale_previous_velocity": 1,
+                "horizontal_hit_angle_scale": 1.6,
+                "vertical_hit_angle_scale": 0.5,
+                "vertical_position_angle_scale": 0.8,
+                "scale_with_damage": true
+              },
+              {
+                "filter": {
+                  "test": "enum_property",
+                  "subject": "other",
+                  "domain": "minecraft:sulfur_cube_archetype",
+                  "value": "regular"
+                },
+                "horizontal_power": 0.33,
+                "vertical_power": 0.06,
+                "vertical_velocity_cap": 8,
+                "scale_previous_velocity": 1,
+                "horizontal_hit_angle_scale": 1.6,
+                "vertical_hit_angle_scale": 0.5,
+                "vertical_position_angle_scale": 0.8,
+                "scale_with_damage": true
+              },
+              {
+                "filter": {
+                  "test": "enum_property",
+                  "subject": "other",
+                  "domain": "minecraft:sulfur_cube_archetype",
+                  "value": "slow_flat"
+                },
+                "horizontal_power": 0.33,
+                "vertical_power": 0.06,
+                "vertical_velocity_cap": 8,
+                "scale_previous_velocity": 1,
+                "horizontal_hit_angle_scale": 1.6,
+                "vertical_hit_angle_scale": 0.5,
+                "vertical_position_angle_scale": 0.8,
+                "scale_with_damage": true
+              },
+              {
+                "filter": {
+                  "test": "enum_property",
+                  "subject": "other",
+                  "domain": "minecraft:sulfur_cube_archetype",
+                  "value": "fast_flat"
+                },
+                "horizontal_power": 0.33,
+                "vertical_power": 0.06,
+                "vertical_velocity_cap": 8,
+                "scale_previous_velocity": 1,
+                "horizontal_hit_angle_scale": 1.6,
+                "vertical_hit_angle_scale": 0.5,
+                "vertical_position_angle_scale": 0.8,
+                "scale_with_damage": true
+              },
+              {
+                "filter": {
+                  "test": "enum_property",
+                  "subject": "other",
+                  "domain": "minecraft:sulfur_cube_archetype",
+                  "value": "light"
+                },
+                "horizontal_power": 0.33,
+                "vertical_power": 0.06,
+                "vertical_velocity_cap": 8,
+                "scale_previous_velocity": 1,
+                "horizontal_hit_angle_scale": 1.6,
+                "vertical_hit_angle_scale": 0.5,
+                "vertical_position_angle_scale": 0.8,
+                "scale_with_damage": true
+              },
+              {
+                "filter": {
+                  "test": "enum_property",
+                  "subject": "other",
+                  "domain": "minecraft:sulfur_cube_archetype",
+                  "value": "fast_sliding"
+                },
+                "horizontal_power": 0.33,
+                "vertical_power": 0.06,
+                "vertical_velocity_cap": 8,
+                "scale_previous_velocity": 1,
+                "horizontal_hit_angle_scale": 1.6,
+                "vertical_hit_angle_scale": 0.5,
+                "vertical_position_angle_scale": 0.8,
+                "scale_with_damage": true
+              },
+              {
+                "filter": {
+                  "test": "enum_property",
+                  "subject": "other",
+                  "domain": "minecraft:sulfur_cube_archetype",
+                  "value": "slow_sliding"
+                },
+                "horizontal_power": 0.33,
+                "vertical_power": 0.06,
+                "vertical_velocity_cap": 8,
+                "scale_previous_velocity": 1,
+                "horizontal_hit_angle_scale": 1.6,
+                "vertical_hit_angle_scale": 0.5,
+                "vertical_position_angle_scale": 0.8,
+                "scale_with_damage": true
+              },
+              {
+                "filter": {
+                  "test": "enum_property",
+                  "subject": "other",
+                  "domain": "minecraft:sulfur_cube_archetype",
+                  "value": "sticky"
+                },
+                "horizontal_power": 0.33,
+                "vertical_power": 0.06,
+                "vertical_velocity_cap": 8,
+                "scale_previous_velocity": 1,
+                "horizontal_hit_angle_scale": 1.6,
+                "vertical_hit_angle_scale": 0.5,
+                "vertical_position_angle_scale": 0.8,
+                "scale_with_damage": true
+              },
+              {
+                "filter": {
+                  "test": "enum_property",
+                  "subject": "other",
+                  "domain": "minecraft:sulfur_cube_archetype",
+                  "value": "high_resistance"
+                },
+                "horizontal_power": 0.33,
+                "vertical_power": 0.06,
+                "vertical_velocity_cap": 8,
+                "scale_previous_velocity": 1,
+                "horizontal_hit_angle_scale": 1.6,
+                "vertical_hit_angle_scale": 0.5,
+                "vertical_position_angle_scale": 0.8,
+                "scale_with_damage": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -18,7 +18,7 @@ Returns true when the subject entity contains the named component.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Sheep: `"!="` | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Sheep: `"self"`, Zoglin: `"other"` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Sheep: `"self"` | 
 | test | *not set* | String |  | Sheep: `"has_component"` | 
 | value | *not set* | String | (Required) The component name to look for | Sheep: `"minecraft:is_baby"`, `"minecraft:is_dyeable"` | 
 
@@ -103,29 +103,6 @@ At /minecraft:entity/events/minecraft:on_eat_block/sequence[1]/filters/:
   "test": "has_component",
   "subject": "self",
   "operator": "!=",
-  "value": "minecraft:is_baby"
-}
-```
-
-#### [Zoglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zoglin.json)
-
-At /minecraft:entity/events/minecraft:entity_transformed/sequence[0]/filters/: 
-
-```json
-{
-  "subject": "other",
-  "test": "has_component",
-  "value": "minecraft:is_baby"
-}
-```
-
-At /minecraft:entity/events/minecraft:entity_transformed/sequence[1]/filters/: 
-
-```json
-{
-  "test": "has_component",
-  "operator": "!=",
-  "subject": "other",
   "value": "minecraft:is_baby"
 }
 ```

@@ -141,14 +141,14 @@
       {
         "id": "description",
         "title": "Description",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "client_block/description",
         "isRequired": true
       },
       {
         "id": "rules",
         "title": "Rules",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subFormId": "client_block/rule",
         "isRequired": true
       }

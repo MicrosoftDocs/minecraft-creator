@@ -23,7 +23,7 @@
         "title": "Azimuth Angle",
         "description": "[EXPERIMENTAL] A Molang expression defining the angle in degrees to add to the projectile's y axis rotation.",
         "defaultValue": "0",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -38,13 +38,13 @@
         "title": "Elevation Angle",
         "description": "[EXPERIMENTAL] A Molang expression defining the angle in degrees to add to the projectile's x axis rotation.",
         "defaultValue": "0",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "reflected_projectiles",
         "title": "Reflected Projectiles",
         "description": "[EXPERIMENTAL] An array of strings defining the types of projectiles that are reflected when they hit the entity.",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -77,7 +77,7 @@
         "title": "Reflection Scale",
         "description": "[EXPERIMENTAL] A Molang expression defining the velocity scaling of the reflected projectile. Values below 1 decrease the projectile's velocity, and values above 1 increase it.",
         "defaultValue": "1",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -92,7 +92,7 @@
         "title": "Reflection Sound",
         "description": "[EXPERIMENTAL] A string defining the name of the sound event to be played when a projectile is reflected. \"reflect\" unless specified.",
         "defaultValue": "reflect",
-        "dataType": 2
+        "dataType": "string"
       }
     ],
     "samples": {

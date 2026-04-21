@@ -20,7 +20,7 @@
       {
         "id": "minecraft:biome_filter",
         "description": "List of filter tests to determine which biomes this rule will attach to.",
-        "dataType": 16,
+        "dataType": "object",
         "subForm": {
           "id": "minecraft:biome_filter",
           "title": "Biome Filter",
@@ -29,39 +29,39 @@
               "id": "domain",
               "title": "Domain",
               "description": "The domain the test should be performed in.",
-              "dataType": 16
+              "dataType": "object"
             },
             {
               "id": "operator",
               "title": "Operator",
               "description": "The comparison to apply with 'value'.",
-              "dataType": 16
+              "dataType": "object"
             },
             {
               "id": "subject",
               "title": "Subject",
               "description": "The subject of this filter test.",
-              "dataType": 16
+              "dataType": "object"
             },
             {
               "id": "test",
               "title": "Test",
               "description": "The name of the test to apply.",
-              "dataType": 2,
+              "dataType": "string",
               "isRequired": true
             },
             {
               "id": "value",
               "title": "Value",
               "description": "The value being compared with the test.",
-              "dataType": 16
+              "dataType": "object"
             }
           ]
         },
         "alternates": [
           {
             "id": "minecraft:biome_filter",
-            "dataType": 16
+            "dataType": "object"
           }
         ]
       },
@@ -69,7 +69,7 @@
         "id": "placement_pass",
         "title": "Placement Pass",
         "description": "When the feature should be placed relative to others. Earlier passes in the list are guaranteed to occur before later passes. Order is not guaranteed within each pass.",
-        "dataType": 2,
+        "dataType": "string",
         "isRequired": true
       }
     ]

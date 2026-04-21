@@ -23,23 +23,66 @@
         "title": "Base Value",
         "description": "The maximum auto step height when on any other block.",
         "defaultValue": 0.5625,
-        "dataType": 3
+        "dataType": "float",
+        "samples": {
+          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:variable_max_auto_step/",
+              "content": 0.5625
+            }
+          ]
+        }
       },
       {
         "id": "controlled_value",
         "title": "Controlled Value",
         "description": "The maximum auto step height when on any other block and controlled by the player.",
         "defaultValue": 0.5625,
-        "dataType": 3
+        "dataType": "float",
+        "samples": {
+          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:variable_max_auto_step/",
+              "content": 0.5625
+            }
+          ]
+        }
       },
       {
         "id": "jump_prevented_value",
         "title": "Jump Prevented Value",
         "description": "The maximum auto step height when on a block that prevents jumping.",
         "defaultValue": 0.5625,
-        "dataType": 3
+        "dataType": "float",
+        "samples": {
+          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:variable_max_auto_step/",
+              "content": 0.5625
+            }
+          ]
+        }
       }
     ],
-    "samples": {}
+    "samples": {
+      "/vanilla/behavior_pack/entities/sulfur_cube.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:variable_max_auto_step/",
+          "content": {
+            "base_value": 0.5625,
+            "controlled_value": 0.5625,
+            "jump_prevented_value": 0.5625
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:variable_max_auto_step/",
+          "content": {
+            "base_value": 0,
+            "controlled_value": 0,
+            "jump_prevented_value": 0
+          }
+        }
+      ]
+    }
   }
 }

@@ -11,13 +11,13 @@
         "title": "Blend Attributes",
         "description": "If true, the entities will blend their attributes in the offspring after they breed.",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "deny_parents_variant",
         "title": "Deny Parents Variant",
         "description": "Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead.",
@@ -27,21 +27,21 @@
               "title": "Chance",
               "description": "The percentage chance of denying the parents' variant.",
               "defaultValue": 0,
-              "dataType": 3
+              "dataType": "float"
             },
             {
               "id": "max_variant",
               "title": "Max Variant",
               "description": "The inclusive maximum of the variant range.",
               "defaultValue": 0,
-              "dataType": 0
+              "dataType": "int"
             },
             {
               "id": "min_variant",
               "title": "Min Variant",
               "description": "The inclusive minimum of the variant range.",
               "defaultValue": 0,
-              "dataType": 0
+              "dataType": "int"
             }
           ]
         }
@@ -51,13 +51,13 @@
         "title": "Inherit Tamed",
         "description": "If true, the babies will be automatically tamed if its parents are",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "mutation_factor",
         "title": "Mutation Factor",
         "description": "Determines how likely the babies are to NOT inherit one of their parent's variances. Values are between 0.0 and 1.0, with a higher number meaning more likely to mutate.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "Determines how likely the babies are to NOT inherit one of their parent's variances. Values are between 0.0 and 1.0, with a higher number meaning more likely to mutate.",
@@ -67,21 +67,31 @@
               "title": "Color",
               "description": "The percentage chance of the offspring getting its color as if spawned rather than inheriting color from its parents.",
               "defaultValue": 0,
-              "dataType": 3
+              "dataType": "float"
             },
             {
               "id": "extra_variant",
               "title": "Extra Variant",
               "description": "The percentage chance of a mutation on the entity's extra variant type.",
               "defaultValue": 0,
-              "dataType": 3
+              "dataType": "float"
             },
             {
               "id": "variant",
               "title": "Variant",
               "description": "The percentage chance of a mutation on the entity's variant type.",
               "defaultValue": 0,
-              "dataType": 3
+              "dataType": "float"
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:offspring/",
+              "content": {
+                "variant": 0
+              }
             }
           ]
         }
@@ -90,7 +100,7 @@
         "id": "offspring_pairs",
         "title": "Offspring Pairs",
         "description": "The map of entity to offspring definitions that this entity can make offspring with.",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
@@ -116,19 +126,19 @@
               }
             }
           ],
-          "/vanilla/behavior_pack/entities/drowned.json": [
+          "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:offspring/",
               "content": {
-                "minecraft:drowned": "minecraft:drowned"
+                "minecraft:frog": "minecraft:tadpole"
               }
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
+          "/vanilla/behavior_pack/entities/goat.json": [
             {
               "path": "/minecraft:entity/components/minecraft:offspring/",
               "content": {
-                "minecraft:fox": "minecraft:fox"
+                "minecraft:goat": "minecraft:goat"
               }
             }
           ]
@@ -138,13 +148,13 @@
         "id": "parent_centric_attribute_blending",
         "title": "Parent Centric Attribute Blending",
         "description": "List of attributes that should benefit from parent centric attribute blending. For example, horses blend their health, movement, and jump_strength in their offspring.",
-        "dataType": 17
+        "dataType": "stringArray"
       },
       {
         "id": "property_inheritance",
         "title": "Property Inheritance",
         "description": "List of Entity Properties that should be inherited from the parent entities and potentially mutated.",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
@@ -169,14 +179,14 @@
         "title": "Random Extra Variant Mutation Interval",
         "description": "Range used to determine random extra variant.",
         "defaultValue": 0,
-        "dataType": 18
+        "dataType": "intRange"
       },
       {
         "id": "random_variant_mutation_interval",
         "title": "Random Variant Mutation Interval",
         "description": "Range used to determine random variant.",
         "defaultValue": 0,
-        "dataType": 18
+        "dataType": "intRange"
       }
     ],
     "samples": {
@@ -216,22 +226,25 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/drowned.json": [
+      "/vanilla/behavior_pack/entities/frog.json": [
         {
           "path": "/minecraft:entity/components/minecraft:offspring/",
           "content": {
             "offspring_pairs": {
-              "minecraft:drowned": "minecraft:drowned"
+              "minecraft:frog": "minecraft:tadpole"
             }
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/fox.json": [
+      "/vanilla/behavior_pack/entities/goat.json": [
         {
           "path": "/minecraft:entity/components/minecraft:offspring/",
           "content": {
             "offspring_pairs": {
-              "minecraft:fox": "minecraft:fox"
+              "minecraft:goat": "minecraft:goat"
+            },
+            "mutation_factor": {
+              "variant": 0
             }
           }
         }

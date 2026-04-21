@@ -166,79 +166,79 @@
         "title": "Field Of View",
         "description": "Defines, in degrees, the width of the field of view for entities looking at the owner entity. If \"scale_fov_by_distance\" is set to true, this value corresponds to the field of view at a distance of one block between the entities.",
         "defaultValue": 26,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "filters",
         "title": "Filters",
         "description": "Defines which entities are considered when searching for entities looking at the owner entity.",
-        "dataType": 20
+        "dataType": "minecraftFilter"
       },
       {
         "id": "find_players_only",
         "title": "Find Players Only",
         "description": "Limits the search to only the nearest Player that meets the specified \"filters\" rather than all nearby entities.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "line_of_sight_obstruction_type",
         "title": "Line Of Sight Obstruction Type",
         "description": "Defines the type of block shape used to check for line of sight obstructions. Valid values: \"outline\", \"collision\", \"collision_for_camera\".",
         "defaultValue": "collision",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "look_at_locations",
         "title": "Look At Locations",
         "description": "A list of locations on the owner entity towards which line of sight checks are performed. At least one location must be unobstructed for the entity to be considered as looked at.",
-        "dataType": 17
+        "dataType": "stringArray"
       },
       {
         "id": "looked_at_cooldown",
         "title": "Looked At Cooldown",
         "description": "Specifies the range for the random number of seconds that must pass before the owner entity can check again for entities looking at it, after detecting an entity looking at it.",
-        "dataType": 18
+        "dataType": "intRange"
       },
       {
         "id": "looked_at_event",
         "title": "Looked At Event",
         "description": "Defines the event to trigger when an entity is detected looking at the owner entity.",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "min_looked_at_duration",
         "title": "Min Looked At Duration",
         "description": "Defines the minimum, continuous time the owner entity has to be looked at before being considered as such. Defaults to 0 if not explicitly specified.",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "not_looked_at_event",
         "title": "Not Looked At Event",
         "description": "Defines the event to trigger when no entity is found looking at the owner entity.",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "scale_fov_by_distance",
         "title": "Scale Fov By Distance",
         "description": "When true, the field of view narrows as the distance between the owner entity and the entity looking at it increases. This ensures that the width of the view cone remains somewhat constant towards the owner entity position, regardless of distance.",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "search_radius",
         "title": "Search Radius",
         "description": "Maximum distance the owner entity will search for entities looking at it.",
         "defaultValue": 10,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "set_target",
         "title": "Set Target",
         "description": "Defines if and how the owner entity will set entities that are looking at it as its combat targets. Valid values:\n                                          \\n- \"never\", looking entities are never set as targets, but events are emitted.\n                                          \\n- \"once_and_stop_scanning\", the first detected looking entity is set as target. Scanning and event emission is suspended if and until the owner entity has a target.\n                                          \\n- \"once_and_keep_scanning\", the first detected looking entity is set as target. Scanning and event emission continues.s",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       }
     ],
     "samples": {}

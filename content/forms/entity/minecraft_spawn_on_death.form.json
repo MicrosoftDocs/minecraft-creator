@@ -1,0 +1,114 @@
+{
+  "id": "minecraft:spawn_on_death",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:spawn_on_death",
+    "title": "Entity Spawn On Death",
+    "description": "Component for spawning entities when an entity perishes.",
+    "fields": [
+      {
+        "id": "additional_spawn_range",
+        "title": "Additional Spawn Range",
+        "description": "Additional random range of entities to spawn, defaults to 0, 0 when not set",
+        "dataType": "object",
+        "defaultValue": {
+          "max": 0,
+          "min": 0
+        },
+        "subFormId": "item_components/intrange"
+      },
+      {
+        "id": "entity_to_spawn",
+        "title": "Entity To Spawn",
+        "description": "What entity to spawn, defaults to owning entity when not set",
+        "dataType": "string",
+        "defaultValue": "self"
+      },
+      {
+        "id": "filters",
+        "description": "Conditions that need to be met for the behavior to start.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "filters",
+          "title": "Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "filters",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "inherit_parent_name",
+        "title": "Inherit Parent Name",
+        "description": "If true, the entity will inherit the name of the parent entity, defaults to true when not set",
+        "dataType": "boolean",
+        "defaultValue": true
+      },
+      {
+        "id": "spawn_amount",
+        "title": "Spawn Amount",
+        "description": "How many entities to spawn, defaults to 1 when not set",
+        "dataType": "int",
+        "defaultValue": 1,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": "spawn_method",
+        "title": "Spawn Method",
+        "description": "Spawn method. born, spawned, or summoned, defaults to spawned when not set",
+        "dataType": "string",
+        "defaultValue": "spawned"
+      }
+    ]
+  }
+}

@@ -49,19 +49,19 @@
         "title": "Probability",
         "description": "The chance of the entity trusting with each item use between 0.0 and 1.0, where 1.0 is 100%.",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "trust_event",
         "title": "Trust Event",
         "description": "Event to run when this entity becomes trusting.",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "trust_items",
         "title": "Trust Items",
         "description": "The list of items that can be used to get the entity to trust players.",
-        "dataType": 17
+        "dataType": "stringArray"
       }
     ],
     "samples": {}

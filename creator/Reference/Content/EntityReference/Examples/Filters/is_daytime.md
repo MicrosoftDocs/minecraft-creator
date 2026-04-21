@@ -22,8 +22,8 @@ Returns true during the daylight hours.
 |:----------|:-------------|:----|:-----------|:------------- |
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| test | *not set* | String |  | Fox: `"is_daytime"` | 
-| value | true | Boolean true/false | (Optional) true or false. | Fox: `true` | 
+| test | *not set* | String |  | Iron Golem: `"is_daytime"` | 
+| value | true | Boolean true/false | (Optional) true or false. |  | 
 
 ### Operator choices
 
@@ -64,26 +64,6 @@ At Short (using Defaults)..:
 
 ```json
 { "test": "is_daytime" }
-```
-
-#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
-
-At /minecraft:entity/component_groups/minecraft:defending_fox/minecraft:environment_sensor/triggers[0]/filters/all_of[0]/: 
-
-```json
-{
-  "test": "is_daytime",
-  "value": true
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:defending_fox/minecraft:environment_sensor/triggers[1]/filters/all_of[0]/: 
-
-```json
-{
-  "test": "is_daytime",
-  "value": false
-}
 ```
 
 #### [Iron Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/iron_golem.json)

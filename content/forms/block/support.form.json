@@ -23,7 +23,7 @@
         "id": "shape",
         "title": "Support Shape",
         "description": "Required field. The type of support shape for this block.",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "fence",

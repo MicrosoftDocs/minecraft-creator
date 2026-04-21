@@ -23,13 +23,13 @@
         "title": "Cooldown",
         "description": "The time in seconds that must pass for the entity to be able to try to teleport again.",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "filters",
         "title": "Filters",
         "description": "Conditions to be satisfied for the entity to teleport to its owner.",
-        "dataType": 20,
+        "dataType": "minecraftFilter",
         "samples": {
           "/vanilla/behavior_pack/entities/parrot.json": [
             {
@@ -55,7 +55,7 @@
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "samples": {
@@ -89,7 +89,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -110,13 +110,13 @@
         "id": "cooldown",
         "title": "Cooldown",
         "description": "The time in seconds that must pass for the entity to be able to try to teleport again.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1
       },
       {
         "id": "filters",
         "description": "Conditions to be satisfied for the entity to teleport to its owner.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "AND": null,
           "NOT": null,
@@ -135,39 +135,39 @@
               "id": "domain",
               "title": "Domain",
               "description": "The domain the test should be performed in.",
-              "dataType": 16
+              "dataType": "object"
             },
             {
               "id": "operator",
               "title": "Operator",
               "description": "The comparison to apply with 'value'.",
-              "dataType": 16
+              "dataType": "object"
             },
             {
               "id": "subject",
               "title": "Subject",
               "description": "The subject of this filter test.",
-              "dataType": 16
+              "dataType": "object"
             },
             {
               "id": "test",
               "title": "Test",
               "description": "The name of the test to apply.",
-              "dataType": 2,
+              "dataType": "string",
               "isRequired": true
             },
             {
               "id": "value",
               "title": "Value",
               "description": "The value being compared with the test.",
-              "dataType": 16
+              "dataType": "object"
             }
           ]
         },
         "alternates": [
           {
             "id": "filters",
-            "dataType": 16
+            "dataType": "object"
           }
         ],
         "samples": {
@@ -193,7 +193,7 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       }
     ],

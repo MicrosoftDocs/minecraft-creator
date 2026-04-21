@@ -27,6 +27,16 @@
  * - Form: `minecraft_health.form.json`
  * - Summarizer: `minecraft_health.summarizer.json`
  *
+ * ## AI Generation Guidelines
+ *
+ * When generating summarizers, AI should:
+ *
+ * 1. **Examine the form's samples** to understand typical and extreme values
+ * 2. **Create meaningful thresholds** based on sample data distribution
+ * 3. **Use comparisons to known entities** (zombies, ender dragons, etc.)
+ * 4. **Prefer qualitative over quantitative** ("extremely high" vs "500")
+ * 5. **Include the raw value parenthetically** for precision
+ *
  * ## Example Summarizer
  *
  * ```json
@@ -208,6 +218,7 @@ export interface ISummarizerPhrase {
 
   /**
    * Human-readable description of what this phrase describes.
+   * Helps AI understand the purpose when generating or modifying summarizers.
    */
   description?: string;
 
@@ -252,7 +263,7 @@ export interface ISummarizerPhrase {
 }
 
 /**
- * An example input/output pair.
+ * An example input/output pair for AI training and validation.
  *
  * @example
  * {
@@ -419,6 +430,7 @@ export default interface ISummarizer {
 
   /**
    * High-level intent of this summarizer.
+   * Helps AI understand what aspects of the data to focus on.
    *
    * @example
    * "Describe how survivable this entity is based on health configuration"
@@ -439,7 +451,8 @@ export default interface ISummarizer {
   phrases: ISummarizerPhrase[];
 
   /**
-   * Example input/output pairs for learning and validation.
+   * Example input/output pairs for AI learning and validation.
+   * AI should study these to understand the expected style and detail level.
    *
    * ## Style Guide for Examples
    *
@@ -451,7 +464,7 @@ export default interface ISummarizer {
   examples?: ISummarizerExample[];
 
   /**
-   * Style notes for generating or modifying this summarizer.
+   * Style notes for AI generating or modifying this summarizer.
    * Can include tone preferences, vocabulary choices, etc.
    *
    * @example

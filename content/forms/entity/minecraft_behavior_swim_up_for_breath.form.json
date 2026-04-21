@@ -23,35 +23,35 @@
         "title": "Material Type",
         "description": "The material the mob is traveling in. An air block will only be considered valid to move to with a block of this material below it. Options are: \"water\", \"lava\", or \"any\".",
         "defaultValue": "water",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "search_height",
         "title": "Search Height",
         "description": "The height (in blocks) above the mob's current position that it will search for a valid air block to move to. If a valid block cannot be found, the mob will move to the position this many blocks above it.",
         "defaultValue": 16,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "search_radius",
         "title": "Search Radius",
         "description": "The radius (in blocks) around the mob's current position that it will search for a valid air block to move to.",
         "defaultValue": 4,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "speed_mod",
         "title": "Speed Mod",
         "description": "Movement speed multiplier of the mob when using this Goal.",
         "defaultValue": 1.4,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/dolphin.json": [
             {
@@ -81,7 +81,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -102,13 +102,13 @@
         "id": "material_type",
         "title": "Material Type",
         "description": "The material the mob is traveling in. An air block will only be considered valid to move to with a block of this material below it. Options are: \"water\", \"lava\", or \"any\".",
-        "dataType": 2,
+        "dataType": "string",
         "defaultValue": "water"
       },
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/dolphin.json": [
@@ -123,21 +123,21 @@
         "id": "search_height",
         "title": "Search Height",
         "description": "The height (in blocks) above the mob's current position that it will search for a valid air block to move to. If a valid block cannot be found, the mob will move to the position this many blocks above it.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 16
       },
       {
         "id": "search_radius",
         "title": "Search Radius",
         "description": "The radius (in blocks) around the mob's current position that it will search for a valid air block to move to.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 4
       },
       {
         "id": "speed_mod",
         "title": "Speed Mod",
         "description": "Movement speed multiplier of the mob when using this Goal.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1.399999976158142
       }
     ],

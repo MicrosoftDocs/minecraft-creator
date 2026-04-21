@@ -52,28 +52,28 @@
       {
         "id": "component_groups",
         "title": "Component Groups",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {},
         "subFormId": "entity/entity_component_definitions"
       },
       {
         "id": "components",
         "title": "Components",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/entity_component_definitions"
       },
       {
         "id": "description",
         "title": "Description",
         "description": "Dynamic value",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       },
       {
         "id": "events",
         "title": "Events",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       }
     ]
   }

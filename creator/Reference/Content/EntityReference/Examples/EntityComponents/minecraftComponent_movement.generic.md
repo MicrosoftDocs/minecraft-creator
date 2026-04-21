@@ -20,10 +20,3 @@ This move control allows a mob to fly, swim, climb, etc.
 | max_turn | 30 | Decimal number | The maximum number in degrees the mob can turn per tick. | 
 
 ## Samples
-
-#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
-
-
-```json
-"minecraft:movement.generic": {}
-```

@@ -69,6 +69,29 @@
           ]
         }
       }
+    ],
+    "Block Fabricator": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json",
+        "content": true
+      }
+    ],
+    "Block Leaf Pile": [
+      {
+        "path": "https://github.com/microsoft/minecraft-samples/tree/main/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json",
+        "content": {
+          "origin": [
+            -8,
+            2,
+            -8
+          ],
+          "size": [
+            16,
+            4,
+            16
+          ]
+        }
+      }
     ]
   },
   "generated_doNotEdit": {
@@ -85,7 +108,7 @@
           0,
           -8
         ],
-        "dataType": 11
+        "dataType": "point3"
       },
       {
         "id": "size",
@@ -96,13 +119,13 @@
           24,
           16
         ],
-        "dataType": 11
+        "dataType": "point3"
       }
     ],
     "scalarField": {
       "id": "boolean",
       "title": "Boolean",
-      "dataType": 1
+      "dataType": "boolean"
     },
     "samples": {}
   }

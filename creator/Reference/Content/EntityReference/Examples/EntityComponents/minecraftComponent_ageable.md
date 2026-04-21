@@ -111,35 +111,22 @@ Adds a timer for the entity to grow up. It can be accelerated by giving the enti
 }
 ```
 
-#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
+#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
 
 
 ```json
 "minecraft:ageable": {
   "duration": 1200,
   "feed_items": [
-    "sweet_berries",
-    "glow_berries"
+    {
+      "item": "wheat",
+      "growth": 0.1
+    },
+    {
+      "item": "hay_block",
+      "growth": 0.9
+    }
   ],
-  "pause_growth_items": [
-    "golden_dandelion"
-  ],
-  "reset_growth_items": [
-    "golden_dandelion"
-  ],
-  "grow_up": {
-    "event": "minecraft:ageable_grow_up",
-    "target": "self"
-  }
-}
-```
-
-#### [Glow Squid](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/glow_squid.json)
-
-
-```json
-"minecraft:ageable": {
-  "duration": 1200,
   "pause_growth_items": [
     "golden_dandelion"
   ],

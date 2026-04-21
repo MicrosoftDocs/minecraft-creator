@@ -21,19 +21,19 @@
       {
         "id": "components",
         "title": "Components",
-        "dataType": 16,
-        "technicalDescription": "Block with \"geometry\" set at \"minecraft:geometry.full_block\" cannot have a \"random_offset\"",
+        "dataType": "object",
+        "technicalDescription": "Blocks with precipitation interactions \"snowlogging\" must have collision box disabled",
         "subFormId": "block_components/components",
         "isRequired": true
       },
       {
         "id": "condition",
         "title": "Condition",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "alternates": [
           {
             "id": "condition",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "condition",
@@ -42,13 +42,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -56,7 +56,7 @@
           },
           {
             "id": "condition",
-            "dataType": 3
+            "dataType": "float"
           }
         ],
         "isRequired": true

@@ -22,7 +22,7 @@
         "id": "cooldown_range",
         "title": "Cooldown Range",
         "description": "Goal cooldown range in seconds.",
-        "dataType": 18,
+        "dataType": "intRange",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -39,7 +39,7 @@
         "id": "digging_duration_range",
         "title": "Digging Duration Range",
         "description": "Digging duration in seconds.",
-        "dataType": 18,
+        "dataType": "intRange",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -57,7 +57,7 @@
         "title": "Find Valid Position Retries",
         "description": "Amount of retries to find a valid target position within search range.",
         "defaultValue": 5,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -72,7 +72,7 @@
         "title": "Goal Radius",
         "description": "Distance in blocks within the entity to considers it has reached it's target position.",
         "defaultValue": 1.5,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -86,7 +86,7 @@
         "id": "item_table",
         "title": "Item Table",
         "description": "File path relative to the resource pack root for items to spawn list (loot table format).",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -100,7 +100,7 @@
         "id": "on_digging_start",
         "title": "Digging Start",
         "description": "Event to run when the goal ends searching has begins digging.",
-        "dataType": 22,
+        "dataType": "minecraftEventTrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -117,7 +117,7 @@
         "id": "on_fail_during_digging",
         "title": "Fail During Digging",
         "description": "Event to run when the goal failed while in digging state.",
-        "dataType": 22,
+        "dataType": "minecraftEventTrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -134,7 +134,7 @@
         "id": "on_fail_during_searching",
         "title": "Fail During Searching",
         "description": "Event to run when the goal failed while in searching state.",
-        "dataType": 22,
+        "dataType": "minecraftEventTrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -151,7 +151,7 @@
         "id": "on_item_found",
         "title": "Item Found",
         "description": "Event to run when the goal find a item.",
-        "dataType": 22,
+        "dataType": "minecraftEventTrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -168,7 +168,7 @@
         "id": "on_searching_start",
         "title": "Searching Start",
         "description": "Event to run when the goal starts searching.",
-        "dataType": 22,
+        "dataType": "minecraftEventTrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -185,7 +185,7 @@
         "id": "on_success",
         "title": "Success",
         "description": "Event to run when searching and digging has ended.",
-        "dataType": 22,
+        "dataType": "minecraftEventTrigger",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -203,7 +203,7 @@
         "title": "Search Range Xz",
         "description": "Width and length of the volume around the entity used to find a valid target position",
         "defaultValue": 10,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -218,7 +218,7 @@
         "title": "Search Range Y",
         "description": "Height of the volume around the entity used to find a valid target position",
         "defaultValue": 7,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -233,7 +233,7 @@
         "title": "Spawn Item After Seconds",
         "description": "Digging duration before spawning item in seconds.",
         "defaultValue": 0,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -248,7 +248,7 @@
         "title": "Spawn Item Pos Offset",
         "description": "Distance to offset the item's spawn location in the direction the mob is facing.",
         "defaultValue": 0,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -263,7 +263,7 @@
         "title": "Speed Multiplier",
         "description": "Searching movement speed multiplier.",
         "defaultValue": 1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -277,7 +277,7 @@
         "id": "target_blocks",
         "title": "Target Blocks",
         "description": "List of target block types the goal will look to dig on. Overrides the default list.",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -302,14 +302,14 @@
         "title": "Target Dig Position Offset",
         "description": "Dig target position offset from the feet position of the mob in their facing direction.",
         "defaultValue": 2.25,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -390,7 +390,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -411,7 +411,7 @@
         "id": "cooldown_range",
         "title": "Cooldown Range",
         "description": "Goal cooldown range in seconds.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 0,
           "min": 0
@@ -433,7 +433,7 @@
         "id": "digging_duration_range",
         "title": "Digging Duration Range",
         "description": "Digging duration in seconds.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 10,
           "min": 8
@@ -455,7 +455,7 @@
         "id": "find_valid_position_retries",
         "title": "Find Valid Position Retries",
         "description": "Amount of retries to find a valid target position within search range.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 5,
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
@@ -470,7 +470,7 @@
         "id": "goal_radius",
         "title": "Goal Radius",
         "description": "Distance in blocks within the entity to considers it has reached it's target position.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1.5,
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
@@ -485,7 +485,7 @@
         "id": "item_table",
         "title": "Item Table",
         "description": "File path relative to the resource pack root for items to spawn list (loot table format).",
-        "dataType": 2,
+        "dataType": "string",
         "defaultValue": "",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
@@ -500,7 +500,7 @@
         "id": "on_digging_start",
         "title": "Digging Start",
         "description": "Event to run when the goal ends searching has begins digging.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "event": "",
           "filters": {
@@ -532,7 +532,7 @@
         "id": "on_fail_during_digging",
         "title": "Fail During Digging",
         "description": "Event to run when the goal failed while in digging state.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "event": "",
           "filters": {
@@ -564,7 +564,7 @@
         "id": "on_fail_during_searching",
         "title": "Fail During Searching",
         "description": "Event to run when the goal failed while in searching state.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "event": "",
           "filters": {
@@ -596,7 +596,7 @@
         "id": "on_item_found",
         "title": "Item Found",
         "description": "Event to run when the goal find a item.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "event": "",
           "filters": {
@@ -628,7 +628,7 @@
         "id": "on_searching_start",
         "title": "Searching Start",
         "description": "Event to run when the goal starts searching.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "event": "",
           "filters": {
@@ -660,7 +660,7 @@
         "id": "on_success",
         "title": "Success",
         "description": "Event to run when searching and digging has ended.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "event": "",
           "filters": {
@@ -691,7 +691,7 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
@@ -706,7 +706,7 @@
         "id": "search_range_xz",
         "title": "Search Range Xz",
         "description": "Width and length of the volume around the entity used to find a valid target position",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 10,
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
@@ -721,7 +721,7 @@
         "id": "search_range_y",
         "title": "Search Range Y",
         "description": "Height of the volume around the entity used to find a valid target position",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 7,
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
@@ -736,7 +736,7 @@
         "id": "spawn_item_after_seconds",
         "title": "Spawn Item After Seconds",
         "description": "Digging duration before spawning item in seconds.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
@@ -751,7 +751,7 @@
         "id": "spawn_item_pos_offset",
         "title": "Spawn Item Pos Offset",
         "description": "Distance to offset the item's spawn location in the direction the mob is facing.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
@@ -766,7 +766,7 @@
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Searching movement speed multiplier.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1,
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
@@ -780,7 +780,7 @@
       {
         "id": "target_blocks",
         "description": "List of target block types the goal will look to dig on. Overrides the default list.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "defaultValue": [],
         "subForm": {
           "id": "target_blocks",
@@ -789,29 +789,29 @@
             {
               "id": "name",
               "title": "Name",
-              "dataType": 2,
+              "dataType": "string",
               "defaultValue": ""
             },
             {
               "id": "states",
               "title": "States",
-              "dataType": 0,
+              "dataType": "int",
               "defaultValue": {},
               "alternates": [
                 {
                   "id": "states",
-                  "dataType": 2
+                  "dataType": "string"
                 },
                 {
                   "id": "states",
-                  "dataType": 1
+                  "dataType": "boolean"
                 }
               ]
             },
             {
               "id": "tags",
               "title": "Tags",
-              "dataType": 2,
+              "dataType": "string",
               "defaultValue": ""
             }
           ]
@@ -819,11 +819,11 @@
         "alternates": [
           {
             "id": "target_blocks",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "target_blocks",
-            "dataType": 16
+            "dataType": "object"
           }
         ],
         "samples": {
@@ -849,7 +849,7 @@
         "id": "target_dig_position_offset",
         "title": "Target Dig Position Offset",
         "description": "Dig target position offset from the feet position of the mob in their facing direction.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 2.25
       }
     ],

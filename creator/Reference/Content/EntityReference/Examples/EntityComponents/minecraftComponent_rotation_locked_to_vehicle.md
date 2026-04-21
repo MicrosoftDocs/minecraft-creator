@@ -15,7 +15,7 @@ Causes the entity's rotation to match their vehicle's facing direction.
 
 ## Samples
 
-#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
+#### [Skeleton](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton.json)
 
 
 ```json

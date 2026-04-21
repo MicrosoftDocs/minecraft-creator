@@ -22,13 +22,13 @@
       {
         "id": "max",
         "title": "Max",
-        "dataType": 0,
+        "dataType": "int",
         "isRequired": true
       },
       {
         "id": "min",
         "title": "Min",
-        "dataType": 0,
+        "dataType": "int",
         "isRequired": true
       }
     ]

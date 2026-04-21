@@ -54,14 +54,14 @@
         "id": "barter_table",
         "title": "Barter Table",
         "description": "Loot table that's used to drop a random item.",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "cooldown_after_being_attacked",
         "title": "Cooldown After Being Attacked",
         "description": "Duration, in seconds, for which mob won't barter items if it was hurt",
         "defaultValue": 0,
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "samples": {}

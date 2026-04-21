@@ -21,7 +21,7 @@
       {
         "id": "minecraft:dimension",
         "title": "Minecraft Dimension",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "dimension/dimension",
         "isRequired": true
       }

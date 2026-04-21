@@ -2192,2491 +2192,2529 @@
         "id": "minecraft:absorption",
         "title": "Minecraft Absorption",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:addrider",
         "title": "Minecraft Addrider",
         "description": "Adds riders to the entity. Requires \"minecraft:rideable\". Can only spawn as many riders as \"minecraft:rideable\" has \"seat_count\".",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_addrider"
       },
       {
         "id": "minecraft:admire_item",
         "title": "Minecraft Admire Item",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:ageable",
         "title": "Minecraft Ageable",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:ambient_sound_interval",
         "title": "Minecraft Ambient Sound Interval",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:anger_level",
         "title": "Minecraft Anger Level",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:angry",
         "title": "Minecraft Angry",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:annotation.break_door",
         "title": "Break Door Minecraft Annotation",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:annotation.open_door",
         "title": "Open Door Minecraft Annotation",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
+      },
+      {
+        "id": "minecraft:apply_knockback_rules",
+        "title": "Minecraft Apply Knockback Rules",
+        "description": "Defines how an entity applies knockback.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_apply_knockback_rules"
       },
       {
         "id": "minecraft:area_attack",
         "title": "Minecraft Area Attack",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:attack",
         "title": "Minecraft Attack",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:attack_cooldown",
         "title": "Minecraft Attack Cooldown",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:attack_damage",
         "title": "Minecraft Attack Damage",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:balloon",
         "title": "Minecraft Balloon",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:balloonable",
         "title": "Minecraft Balloonable",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:barter",
         "title": "Minecraft Barter",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.admire_item",
         "title": "Admire Item Minecraft Behavior",
         "description": "Enables the mob to admire items that have been configured as admirable. Must be used in combination with the admire_item component",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_admire_item"
       },
       {
         "id": "minecraft:behavior.aquatic_charge_attack",
         "title": "Aquatic Charge Attack Minecraft Behavior",
         "description": "Enables an aquatic mob to dash at its target with knockback; includes overshoot and cooldown settings.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_aquatic_charge_attack"
       },
       {
         "id": "minecraft:behavior.avoid_block",
         "title": "Avoid Block Minecraft Behavior",
         "description": "Allows this entity to avoid certain blocks.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_avoid_block"
       },
       {
         "id": "minecraft:behavior.avoid_mob_type",
         "title": "Avoid Mob Type Minecraft Behavior",
         "description": "Allows the entity to run away from other entities that meet the criteria specified.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_avoid_mob_type"
       },
       {
         "id": "minecraft:behavior.barter",
         "title": "Barter Minecraft Behavior",
         "description": "Enables the mob to barter for items that have been configured as barter currency. Must be used in combination with the barter component",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_barter"
       },
       {
         "id": "minecraft:behavior.beg",
         "title": "Beg Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.break_door",
         "title": "Break Door Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.breed",
         "title": "Breed Minecraft Behavior",
         "description": "Allows this mob to breed with other mobs.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_breed"
       },
       {
         "id": "minecraft:behavior.celebrate",
         "title": "Celebrate Minecraft Behavior",
         "description": "Allows this entity to celebrate surviving a raid by making celebration sounds and jumping.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_celebrate"
       },
       {
         "id": "minecraft:behavior.celebrate_survive",
         "title": "Celebrate Survive Minecraft Behavior",
         "description": "Allows the player to trade with this mob. When the goal starts, it will stop the mob's navigation.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_celebrate_survive"
       },
       {
         "id": "minecraft:behavior.charge_attack",
         "title": "Charge Attack Minecraft Behavior",
         "description": "Allows this entity to damage a target by using a running attack.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_charge_attack"
       },
       {
         "id": "minecraft:behavior.charge_held_item",
         "title": "Charge Held Item Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.circle_around_anchor",
         "title": "Circle Around Anchor Minecraft Behavior",
         "description": "Causes an entity to circle around an anchor point placed near a point or target.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_circle_around_anchor"
       },
       {
         "id": "minecraft:behavior.controlled_by_player",
         "title": "Controlled By Player Minecraft Behavior",
         "description": "Allows the entity to be controlled by a player which is holding the item specified in \"minecraft:item_controllable\" component's \"control_items\" field (required). Also requires the \"minecraft:movement\" component, and the \"minecraft:rideable\" component. On every tick, the entity will attempt to rotate towards where the player is facing with the control item whilst simultaneously moving forward.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_controlled_by_player"
       },
       {
         "id": "minecraft:behavior.croak",
         "title": "Croak Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the entity to croak at a random time interval with configurable conditions.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_croak"
       },
       {
         "id": "minecraft:behavior.defend_trusted_target",
         "title": "Defend Trusted Target Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.defend_village_target",
         "title": "Defend Village Target Minecraft Behavior",
         "description": "Allows the entity to stay in a village and defend the village from aggressors. If a player is in bad standing with the village this goal will cause the entity to attack the player regardless of filter conditions.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_defend_village_target"
       },
       {
         "id": "minecraft:behavior.delayed_attack",
         "title": "Delayed Attack Minecraft Behavior",
         "description": "Allows an entity to attack, while also delaying the damage-dealt until a specific time in the attack animation.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_delayed_attack"
       },
       {
         "id": "minecraft:behavior.dig",
         "title": "Dig Minecraft Behavior",
         "description": "Allows this entity to dig into the ground before despawning.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_dig"
       },
       {
         "id": "minecraft:behavior.door_interact",
         "title": "Door Interact Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.dragonchargeplayer",
         "title": "Dragonchargeplayer Minecraft Behavior",
         "description": "Allows this entity to attack a player by charging at them. The player is chosen by the \"minecraft:behavior.dragonscanning\". Can only be used by the Ender Dragon.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_dragonchargeplayer"
       },
       {
         "id": "minecraft:behavior.dragondeath",
         "title": "Dragondeath Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.dragonflaming",
         "title": "Dragonflaming Minecraft Behavior",
         "description": "Allows this entity to use a flame-breath attack. Can only be used by the Ender Dragon.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_dragonflaming"
       },
       {
         "id": "minecraft:behavior.dragonholdingpattern",
         "title": "Dragonholdingpattern Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.dragonlanding",
         "title": "Dragonlanding Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.dragonscanning",
         "title": "Dragonscanning Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.dragonstrafeplayer",
         "title": "Dragonstrafeplayer Minecraft Behavior",
         "description": "Allows this entity to fly around looking for a player to shoot fireballs at. Can only be used by the Ender Dragon.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_dragonstrafeplayer"
       },
       {
         "id": "minecraft:behavior.dragontakeoff",
         "title": "Dragontakeoff Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.drink_milk",
         "title": "Drink Milk Minecraft Behavior",
         "description": "Allows the mob to drink milk based on specified environment conditions.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_drink_milk"
       },
       {
         "id": "minecraft:behavior.drink_potion",
         "title": "Drink Potion Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.drop_item_for",
         "title": "Drop Item For Minecraft Behavior",
         "description": "Allows the entity to move toward a target, and drop an item near the target. This goal requires a \"minecraft:navigation\" to execute.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_drop_item_for"
       },
       {
         "id": "minecraft:behavior.eat_block",
         "title": "Eat Block Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.eat_carried_item",
         "title": "Eat Carried Item Minecraft Behavior",
         "description": "If the mob is carrying a food item, the mob will eat it and the effects will be applied to the mob.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_eat_carried_item"
       },
       {
         "id": "minecraft:behavior.eat_mob",
         "title": "Eat Mob Minecraft Behavior",
         "description": "Allows the entity to eat a specified Mob.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_eat_mob"
       },
       {
         "id": "minecraft:behavior.emerge",
         "title": "Emerge Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows this entity to emerge from the ground",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_emerge"
       },
       {
         "id": "minecraft:behavior.enderman_leave_block",
         "title": "Enderman Leave Block Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.enderman_take_block",
         "title": "Enderman Take Block Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.equip_item",
         "title": "Equip Item Minecraft Behavior",
         "description": "The entity puts on the desired equipment.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_equip_item"
       },
       {
         "id": "minecraft:behavior.explore_outskirts",
         "title": "Explore Outskirts Minecraft Behavior",
         "description": "Allows the entity to first travel to a random point on the outskirts of the village, and then explore random points within a small distance. This goal requires \"minecraft:dweller\" and \"minecraft:navigation\" to execute.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_explore_outskirts"
       },
       {
         "id": "minecraft:behavior.fertilize_farm_block",
         "title": "Fertilize Farm Block Minecraft Behavior",
         "description": "Allows the mob to search within an area for a growable crop block. If found, the mob will use any available fertilizer in their inventory on the crop. This goal will not execute if the mob does not have a fertilizer item in its inventory.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_fertilize_farm_block"
       },
       {
         "id": "minecraft:behavior.find_cover",
         "title": "Find Cover Minecraft Behavior",
         "description": "Allows the mob to seek shade.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_find_cover"
       },
       {
         "id": "minecraft:behavior.find_mount",
         "title": "Find Mount Minecraft Behavior",
         "description": "Allows the mob to look around for another mob to ride atop it.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_find_mount"
       },
       {
         "id": "minecraft:behavior.find_underwater_treasure",
         "title": "Find Underwater Treasure Minecraft Behavior",
         "description": "Allows the mob to move towards the nearest underwater ruin or shipwreck.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_find_underwater_treasure"
       },
       {
         "id": "minecraft:behavior.fire_at_target",
         "title": "Fire At Target Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows an entity to attack by firing a shot with a delay. Anchor and offset parameters of this component overrides the anchor and offset from projectile component.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_fire_at_target"
       },
       {
         "id": "minecraft:behavior.flee_sun",
         "title": "Flee Sun Minecraft Behavior",
         "description": "Allows the mob to run away from direct sunlight and seek shade.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_flee_sun"
       },
       {
         "id": "minecraft:behavior.float",
         "title": "Float Minecraft Behavior",
         "description": "Allows the mob to stay afloat while swimming. Passengers will be kicked out the moment the mob's head goes underwater, which may not happen for tall mobs.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_float"
       },
       {
         "id": "minecraft:behavior.float_tempt",
         "title": "Float Tempt Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.float_wander",
         "title": "Float Wander Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.follow_caravan",
         "title": "Follow Caravan Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to follow mobs that are in a caravan.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_follow_caravan"
       },
       {
         "id": "minecraft:behavior.follow_mob",
         "title": "Follow Mob Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.follow_owner",
         "title": "Follow Owner Minecraft Behavior",
         "description": "Allows a mob to follow the player that owns it.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_follow_owner"
       },
       {
         "id": "minecraft:behavior.follow_parent",
         "title": "Follow Parent Minecraft Behavior",
         "description": "Allows the mob to follow their parent around.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_follow_parent"
       },
       {
-        "id": "minecraft:behavior.follow_target_captain",
-        "title": "Follow Target Captain Minecraft Behavior",
+        "id": "minecraft:behavior.follow_target_leader",
+        "title": "Follow Target Leader Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.go_and_give_items_to_noteblock",
         "title": "Go And Give Items To Noteblock Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "The entity will attempt to toss the items from its inventory to a nearby recently played noteblock.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_go_and_give_items_to_noteblock"
       },
       {
         "id": "minecraft:behavior.go_and_give_items_to_owner",
         "title": "Go And Give Items To Owner Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "The entity will attempt to toss the items from its inventory to its owner.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_go_and_give_items_to_owner"
       },
       {
         "id": "minecraft:behavior.go_home",
         "title": "Go Home Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to move back to the position they were spawned.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_go_home"
       },
       {
         "id": "minecraft:behavior.guardian_attack",
         "title": "Guardian Attack Minecraft Behavior",
         "description": "Allows this entity to use a laser beam attack. Can only be used by Guardians and Elder Guardians.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_guardian_attack"
       },
       {
         "id": "minecraft:behavior.harvest_farm_block",
         "title": "Harvest Farm Block Minecraft Behavior",
         "description": "Allows the entity to search within an area for farmland with air above it. If found, the entity will replace the air block by planting a seed item from its inventory on the farmland block. This goal requires \"minecraft:inventory\" and \"minecraft:navigation\" to execute. This goal will not execute if the entity does not have an item in its inventory.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_harvest_farm_block"
       },
       {
         "id": "minecraft:behavior.hide",
         "title": "Hide Minecraft Behavior",
         "description": "Allows a mob with the hide component to attempt to move to - and hide at - an owned or nearby POI.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_hide"
       },
       {
         "id": "minecraft:behavior.hold_ground",
         "title": "Hold Ground Minecraft Behavior",
         "description": "The mob freezes and looks at the mob they are targeting.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_hold_ground"
       },
       {
         "id": "minecraft:behavior.hover",
         "title": "Hover Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to hover in place.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_hover"
       },
       {
         "id": "minecraft:behavior.hurt_by_target",
         "title": "Hurt By Target Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.inspect_bookshelf",
         "title": "Inspect Bookshelf Minecraft Behavior",
         "description": "Allows the mob to inspect bookshelves.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_inspect_bookshelf"
       },
       {
         "id": "minecraft:behavior.investigate_suspicious_location",
         "title": "Investigate Suspicious Location Minecraft Behavior",
         "description": "Allows this entity to move towards a \"suspicious\" position based on data gathered in minecraft:suspect_tracking",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_investigate_suspicious_location"
       },
       {
         "id": "minecraft:behavior.jump_around_target",
         "title": "Jump Around Target Minecraft Behavior",
         "description": "Allows an entity to jump around a target.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_jump_around_target"
       },
       {
         "id": "minecraft:behavior.jump_to_block",
         "title": "Jump To Block Minecraft Behavior",
         "description": "Allows an entity to jump to another random block.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_jump_to_block"
       },
       {
         "id": "minecraft:behavior.knockback_roar",
         "title": "Knockback Roar Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.lay_down",
         "title": "Lay Down Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows mobs to lay down at times",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_lay_down"
       },
       {
         "id": "minecraft:behavior.lay_egg",
         "title": "Lay Egg Minecraft Behavior",
         "description": "Allows the mob to lay an egg block on certain types of blocks if the mob is pregnant.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_lay_egg"
       },
       {
         "id": "minecraft:behavior.leap_at_target",
         "title": "Leap At Target Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.look_at_entity",
         "title": "Look At Entity Minecraft Behavior",
         "description": "Allows the mob to look at nearby entities.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_look_at_entity"
       },
       {
         "id": "minecraft:behavior.look_at_player",
         "title": "Look At Player Minecraft Behavior",
         "description": "Allows the mob to look at the player when the player is nearby.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_look_at_player"
       },
       {
         "id": "minecraft:behavior.look_at_target",
         "title": "Look At Target Minecraft Behavior",
         "description": "Allows the mob to look at the entity they are targeting.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_look_at_target"
       },
       {
         "id": "minecraft:behavior.look_at_trading_player",
         "title": "Look At Trading Player Minecraft Behavior",
         "description": "Allows the mob to look at the player they are trading with.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_look_at_trading_player"
       },
       {
         "id": "minecraft:behavior.make_love",
         "title": "Make Love Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.melee_attack",
         "title": "Melee Attack Minecraft Behavior",
         "description": "Allows an entity to deal damage through a melee attack.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_melee_attack"
       },
       {
         "id": "minecraft:behavior.melee_box_attack",
         "title": "Melee Box Attack Minecraft Behavior",
         "description": "Allows an entity to deal damage through a melee attack with reach calculations based on bounding boxes.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_melee_box_attack"
       },
       {
         "id": "minecraft:behavior.mingle",
         "title": "Mingle Minecraft Behavior",
         "description": "Allows an entity to go to the village bell and mingle with other entities",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_mingle"
       },
       {
         "id": "minecraft:behavior.mount_pathing",
         "title": "Mount Pathing Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to move around on its own while mounted seeking a target to attack.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_mount_pathing"
       },
       {
         "id": "minecraft:behavior.move_around_target",
         "title": "Move Around Target Minecraft Behavior",
         "description": "Allows an entity to move around a target.If the entity is too close(i.e.closer than destination range min and height difference limit) it will try to move away from its target.If the entity is too far away from its target it will try to move closer to a random position within the destination range.A randomized amount of those positions will be behind the target, and the spread can be tweaked with 'destination_pos_spread_degrees'.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_move_around_target"
       },
       {
         "id": "minecraft:behavior.move_indoors",
         "title": "Move Indoors Minecraft Behavior",
         "description": "Allows this entity to move indoors.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_move_indoors"
       },
       {
         "id": "minecraft:behavior.move_outdoors",
         "title": "Move Outdoors Minecraft Behavior",
         "description": "Allows this entity to move outdoors.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_move_outdoors"
       },
       {
         "id": "minecraft:behavior.move_through_village",
         "title": "Move Through Village Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Can only be used by Villagers. Allows the villagers to create paths around the village.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_move_through_village"
       },
       {
         "id": "minecraft:behavior.move_to_block",
         "title": "Move To Block Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.move_to_land",
         "title": "Move To Land Minecraft Behavior",
         "description": "Allows the mob to move back onto land when in water.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_move_to_land"
       },
       {
         "id": "minecraft:behavior.move_to_lava",
         "title": "Move To Lava Minecraft Behavior",
         "description": "Allows the mob to move back into lava when on land.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_move_to_lava"
       },
       {
         "id": "minecraft:behavior.move_to_liquid",
         "title": "Move To Liquid Minecraft Behavior",
         "description": "Allows the mob to move into a liquid when on land.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_move_to_liquid"
       },
       {
         "id": "minecraft:behavior.move_to_poi",
         "title": "Move To Poi Minecraft Behavior",
         "description": "Allows the mob to move to a POI if able to",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_move_to_poi"
       },
       {
         "id": "minecraft:behavior.move_to_random_block",
         "title": "Move To Random Block Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows mob to move towards a random block.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_move_to_random_block"
       },
       {
         "id": "minecraft:behavior.move_to_village",
         "title": "Move To Village Minecraft Behavior",
         "description": "Allows the mob to move into a random location within a village.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_move_to_village"
       },
       {
         "id": "minecraft:behavior.move_to_water",
         "title": "Move To Water Minecraft Behavior",
         "description": "Allows the mob to move back into water when on land.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_move_to_water"
       },
       {
         "id": "minecraft:behavior.move_towards_dwelling_restriction",
         "title": "Move Towards Dwelling Restriction Minecraft Behavior",
         "description": "Allows entities with the \"minecraft:dweller\" component to move toward their village area that the entity should be restricted to.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_move_towards_dwelling_restriction"
       },
       {
         "id": "minecraft:behavior.move_towards_home_restriction",
         "title": "Move Towards Home Restriction Minecraft Behavior",
         "description": "Allows entities with a \"minecraft:home\" component to move towards their home position. If \"restriction_radius\" is set, entities will be able to run this behavior only if outside of it.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_move_towards_home_restriction"
       },
       {
         "id": "minecraft:behavior.move_towards_target",
         "title": "Move Towards Target Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows mob to move towards its current target.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_move_towards_target"
       },
       {
         "id": "minecraft:behavior.nap",
         "title": "Nap Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.nearest_attackable_target",
         "title": "Nearest Attackable Target Minecraft Behavior",
         "description": "Allows an entity to attack the closest target within a given subset of specific target types.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_nearest_attackable_target"
       },
       {
         "id": "minecraft:behavior.nearest_prioritized_attackable_target",
         "title": "Nearest Prioritized Attackable Target Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.ocelot_sit_on_block",
         "title": "Ocelot Sit On Block Minecraft Behavior",
         "description": "Allows to mob to be able to sit in place like the ocelot.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_ocelot_sit_on_block"
       },
       {
         "id": "minecraft:behavior.ocelotattack",
         "title": "Ocelotattack Minecraft Behavior",
         "description": "Controls specific attack behavior for Ocelots.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_ocelotattack"
       },
       {
         "id": "minecraft:behavior.offer_flower",
         "title": "Offer Flower Minecraft Behavior",
         "description": "Allows the mob to offer a flower to another mob with the minecraft:take_flower behavior.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_offer_flower"
       },
       {
         "id": "minecraft:behavior.open_door",
         "title": "Open Door Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.owner_hurt_by_target",
         "title": "Owner Hurt By Target Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.owner_hurt_target",
         "title": "Owner Hurt Target Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.panic",
         "title": "Panic Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.pet_sleep_with_owner",
         "title": "Pet Sleep With Owner Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the pet mob to move onto a bed with its owner while sleeping.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_pet_sleep_with_owner"
       },
       {
         "id": "minecraft:behavior.pickup_items",
         "title": "Pickup Items Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to pick up items on the ground.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_pickup_items"
       },
       {
         "id": "minecraft:behavior.place_block",
         "title": "Place Block Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.play",
         "title": "Play Minecraft Behavior",
         "description": "Allows the mob to offer a flower to another mob with the minecraft:take_flower behavior.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_play"
       },
       {
         "id": "minecraft:behavior.play_dead",
         "title": "Play Dead Minecraft Behavior",
         "description": "Allows this entity to pretend to be dead to avoid being targeted by attackers.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_play_dead"
       },
       {
         "id": "minecraft:behavior.player_ride_tamed",
         "title": "Player Ride Tamed Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to be ridden by the player after being tamed.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_player_ride_tamed"
       },
       {
         "id": "minecraft:behavior.raid_garden",
         "title": "Raid Garden Minecraft Behavior",
         "description": "Allows the mob to eat/raid crops out of farms until they are full.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_raid_garden"
       },
       {
         "id": "minecraft:behavior.ram_attack",
         "title": "Ram Attack Minecraft Behavior",
         "description": "Allows this entity to damage a target by using a running attack.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_ram_attack"
       },
       {
         "id": "minecraft:behavior.random_breach",
         "title": "Random Breach Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.random_fly",
         "title": "Random Fly Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.random_hover",
         "title": "Random Hover Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to hover around randomly, close to the surface.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_random_hover"
       },
       {
         "id": "minecraft:behavior.random_look_around",
         "title": "Random Look Around Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.random_look_around_and_sit",
         "title": "Random Look Around And Sit Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.random_search_and_dig",
         "title": "Random Search And Dig Minecraft Behavior",
         "description": "Allows this entity to locate a random target block that it can path find to. Once found, the entity will move towards it and dig up an item. [Default target block types: Dirt, Grass, Podzol, DirtWithRoots, MossBlock, Mud, MuddyMangroveRoots].",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_random_search_and_dig"
       },
       {
         "id": "minecraft:behavior.random_sitting",
         "title": "Random Sitting Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to randomly sit for a duration.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_random_sitting"
       },
       {
         "id": "minecraft:behavior.random_stroll",
         "title": "Random Stroll Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows a mob to randomly stroll around.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_random_stroll"
       },
       {
         "id": "minecraft:behavior.random_swim",
         "title": "Random Swim Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.ranged_attack",
         "title": "Ranged Attack Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.receive_love",
         "title": "Receive Love Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.restrict_open_door",
         "title": "Restrict Open Door Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to stay indoors during night time.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_restrict_open_door"
       },
       {
         "id": "minecraft:behavior.restrict_sun",
         "title": "Restrict Sun Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to automatically start avoiding the sun when its a clear day out.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_restrict_sun"
       },
       {
         "id": "minecraft:behavior.rise_to_liquid_level",
         "title": "Rise To Liquid Level Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to stay at a certain level when in liquid.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_rise_to_liquid_level"
       },
       {
         "id": "minecraft:behavior.roar",
         "title": "Roar Minecraft Behavior",
         "description": "Allows this entity to roar at another entity based on data in minecraft:anger_level. Once the anger threshold specified in minecraft:anger_level has been reached, this entity will roar for the specified amount of time, look at the other entity, apply anger boost towards it, and finally target it.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_roar"
       },
       {
         "id": "minecraft:behavior.roll",
         "title": "Roll Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "This allows the mob to roll forward.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_roll"
       },
       {
         "id": "minecraft:behavior.run_around_like_crazy",
         "title": "Run Around Like Crazy Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to run around aimlessly.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_run_around_like_crazy"
       },
       {
         "id": "minecraft:behavior.scared",
         "title": "Scared Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to become scared when the weather outside is thundering.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_scared"
       },
       {
         "id": "minecraft:behavior.send_event",
         "title": "Send Event Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.share_items",
         "title": "Share Items Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to give items it has to others.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_share_items"
       },
       {
         "id": "minecraft:behavior.silverfish_merge_with_stone",
         "title": "Silverfish Merge With Stone Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.silverfish_wake_up_friends",
         "title": "Silverfish Wake Up Friends Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.skeleton_horse_trap",
         "title": "Skeleton Horse Trap Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.sleep",
         "title": "Sleep Minecraft Behavior",
         "description": "Allows mobs that own a bed to in a village to move to and sleep in it.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_sleep"
       },
       {
         "id": "minecraft:behavior.slime_attack",
         "title": "Slime Attack Minecraft Behavior",
         "description": "Causes the entity to grow tired every once in a while, while attacking.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_slime_attack"
       },
       {
         "id": "minecraft:behavior.slime_float",
         "title": "Slime Float Minecraft Behavior",
         "description": "Allow slimes to float in water / lava. Can only be used by Slime and Magma Cubes.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_slime_float"
       },
       {
         "id": "minecraft:behavior.slime_keep_on_jumping",
         "title": "Slime Keep On Jumping Minecraft Behavior",
         "description": "Allows the entity to continuously jump around like a slime.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_slime_keep_on_jumping"
       },
       {
         "id": "minecraft:behavior.slime_random_direction",
         "title": "Slime Random Direction Minecraft Behavior",
         "description": "Allows the entity to move in random directions like a slime.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_slime_random_direction"
       },
       {
         "id": "minecraft:behavior.snacking",
         "title": "Snacking Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.sneeze",
         "title": "Sneeze Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to sneeze, causing it to drop items and affect nearby mobs.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_sneeze"
       },
       {
         "id": "minecraft:behavior.sniff",
         "title": "Sniff Minecraft Behavior",
         "description": "Allows this entity to detect the nearest player within \"sniffing_radius\" and update its \"minecraft:suspect_tracking\" component state",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_sniff"
       },
       {
         "id": "minecraft:behavior.sonic_boom",
         "title": "Sonic Boom Minecraft Behavior",
         "description": "Allows this entity to perform a 'sonic boom' ranged attack",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_sonic_boom"
       },
       {
         "id": "minecraft:behavior.squid_dive",
         "title": "Squid Dive Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.squid_flee",
         "title": "Squid Flee Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.squid_idle",
         "title": "Squid Idle Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.squid_move_away_from_ground",
         "title": "Squid Move Away From Ground Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.squid_out_of_water",
         "title": "Squid Out Of Water Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.stalk_and_pounce_on_target",
         "title": "Stalk And Pounce On Target Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.stay_near_noteblock",
         "title": "Stay Near Noteblock Minecraft Behavior",
         "description": "The entity will attempt to toss the items from its inventory to a nearby recently played noteblock.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_stay_near_noteblock"
       },
       {
         "id": "minecraft:behavior.stay_while_sitting",
         "title": "Stay While Sitting Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to stay put while it is in a sitting state instead of doing something else.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_stay_while_sitting"
       },
       {
         "id": "minecraft:behavior.stomp_attack",
         "title": "Stomp Attack Minecraft Behavior",
         "description": "Allows an entity to attack using stomp AoE damage behavior.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_stomp_attack"
       },
       {
         "id": "minecraft:behavior.stomp_turtle_egg",
         "title": "Stomp Turtle Egg Minecraft Behavior",
         "description": "Allows this mob to stomp turtle eggs",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_stomp_turtle_egg"
       },
       {
         "id": "minecraft:behavior.stroll_towards_village",
         "title": "Stroll Towards Village Minecraft Behavior",
         "description": "Allows the mob to move into a random location within a village within the search range.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_stroll_towards_village"
       },
       {
         "id": "minecraft:behavior.summon_entity",
         "title": "Summon Entity Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.swell",
         "title": "Swell Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.swim_idle",
         "title": "Swim Idle Minecraft Behavior",
         "description": "Allows the entity go idle, if swimming. Entity must be in water.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_swim_idle"
       },
       {
         "id": "minecraft:behavior.swim_up_for_breath",
         "title": "Swim Up For Breath Minecraft Behavior",
         "description": "Allows the mob to try to move to air once it is close to running out of its total breathable supply. Requires \"minecraft:breathable\".",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_swim_up_for_breath"
       },
       {
         "id": "minecraft:behavior.swim_wander",
         "title": "Swim Wander Minecraft Behavior",
         "description": "Allows the entity to wander around while swimming, when not path-finding.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_swim_wander"
       },
       {
         "id": "minecraft:behavior.swim_with_entity",
         "title": "Swim With Entity Minecraft Behavior",
         "description": "Allows this entity to locate a random target block that it can path find to. Once found, the entity will move towards it and dig up an item. [Default target block types: Dirt, Grass, Podzol, DirtWithRoots, MossBlock, Mud, MuddyMangroveRoots].",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_swim_with_entity"
       },
       {
         "id": "minecraft:behavior.swoop_attack",
         "title": "Swoop Attack Minecraft Behavior",
         "description": "Allows an entity to attack using swoop attack behavior; Ideal for use with flying mobs. The behavior ends if the entity has a horizontal collision or gets hit.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_swoop_attack"
       },
       {
         "id": "minecraft:behavior.take_block",
         "title": "Take Block Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.take_flower",
         "title": "Take Flower Minecraft Behavior",
         "description": "Allows the mob to accept flowers from another mob with the minecraft:offer_flower behavior.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_take_flower"
       },
       {
         "id": "minecraft:behavior.target_when_pushed",
         "title": "Target When Pushed Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to target another mob when it is pushed by that mob.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_target_when_pushed"
       },
       {
         "id": "minecraft:behavior.teleport_to_owner",
         "title": "Teleport To Owner Minecraft Behavior",
         "description": "Allows an entity to teleport to its owner.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_teleport_to_owner"
       },
       {
         "id": "minecraft:behavior.tempt",
         "title": "Tempt Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.timer_flag_1",
         "title": "Timer Flag 1 Minecraft Behavior",
         "description": "Fires an event when this behavior starts, then waits for a duration before stopping. When stopping due to that timeout or due to being interrupted by another behavior, fires another event. query.timer_flag_1 will return 1.0 on both the client and server when this behavior is running, and 0.0 otherwise.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_timer_flag_1"
       },
       {
         "id": "minecraft:behavior.timer_flag_2",
         "title": "Timer Flag 2 Minecraft Behavior",
         "description": "Fires an event when this behavior starts, then waits for a duration before stopping. When stopping due to that timeout or due to being interrupted by another behavior, fires another event. query.timer_flag_2 will return 1.0 on both the client and server when this behavior is running, and 0.0 otherwise.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_timer_flag_2"
       },
       {
         "id": "minecraft:behavior.timer_flag_3",
         "title": "Timer Flag 3 Minecraft Behavior",
         "description": "Fires an event when this behavior starts, then waits for a duration before stopping. When stopping due to that timeout or due to being interrupted by another behavior, fires another event. query.timer_flag_3 will return 1.0 on both the client and server when this behavior is running, and 0.0 otherwise.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_timer_flag_3"
       },
       {
         "id": "minecraft:behavior.trade_interest",
         "title": "Trade Interest Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows the mob to look at a player that is holding a tradable item.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_trade_interest"
       },
       {
         "id": "minecraft:behavior.trade_with_player",
         "title": "Trade With Player Minecraft Behavior",
         "description": "Allows the player to trade with this mob. When the goal starts, it will stop the mob's navigation.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_trade_with_player"
       },
       {
         "id": "minecraft:behavior.transport_items",
         "title": "Transport Items Minecraft Behavior",
         "description": "A behavior that enables a mob to transport items from and to containers.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_transport_items"
       },
       {
         "id": "minecraft:behavior.use_kinetic_weapon",
         "title": "Use Kinetic Weapon Minecraft Behavior",
         "description": "Enables a mob to use kinetic weaponry by intermittently charging at its target and repositioning afterward.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_use_kinetic_weapon"
       },
       {
         "id": "minecraft:behavior.vex_copy_owner_target",
         "title": "Vex Copy Owner Target Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.vex_random_move",
         "title": "Vex Random Move Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.wither_random_attack_pos_goal",
         "title": "Wither Random Attack Pos Goal Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.wither_target_highest_damage",
         "title": "Wither Target Highest Damage Minecraft Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:behavior.work",
         "title": "Work Minecraft Behavior",
         "description": "Allows the NPC to use the POI",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_work"
       },
       {
         "id": "minecraft:behavior.work_composter",
         "title": "Work Composter Minecraft Behavior",
         "description": "Allows the NPC to use the composter POI to convert excess seeds into bone meal.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_behavior_work_composter"
       },
       {
         "id": "minecraft:block_climber",
         "title": "Minecraft Block Climber",
         "description": "Allows the player to detect and maneuver on the scaffolding block.",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:block_sensor",
         "title": "Minecraft Block Sensor",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:body_rotation_always_follows_head",
         "title": "Minecraft Body Rotation Always Follows Head",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:body_rotation_blocked",
         "title": "Minecraft Body Rotation Blocked",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:boostable",
         "title": "Minecraft Boostable",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:boss",
         "title": "Minecraft Boss",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:break_blocks",
         "title": "Minecraft Break Blocks",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:breathable",
         "title": "Minecraft Breathable",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:breedable",
         "title": "Minecraft Breedable",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:bribeable",
         "title": "Minecraft Bribeable",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:bucketable",
         "title": "Minecraft Bucketable",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:buoyant",
         "title": "Minecraft Buoyant",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:burns_in_daylight",
         "title": "Minecraft Burns In Daylight",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_burns_in_daylight"
       },
       {
         "id": "minecraft:can_climb",
         "title": "Minecraft Can Climb",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:can_fly",
         "title": "Minecraft Can Fly",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:can_join_raid",
         "title": "Minecraft Can Join Raid",
         "description": "Determines that this entity can join an existing raid.",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:can_power_jump",
         "title": "Minecraft Can Power Jump",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:cannot_be_attacked",
         "title": "Minecraft Cannot Be Attacked",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:celebrate_hunt",
         "title": "Minecraft Celebrate Hunt",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:collision_box",
         "title": "Minecraft Collision Box",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:color",
         "title": "Minecraft Color",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:color2",
         "title": "Minecraft Color2",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:combat_regeneration",
         "title": "Minecraft Combat Regeneration",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:conditional_bandwidth_optimization",
         "title": "Minecraft Conditional Bandwidth Optimization",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:custom_hit_test",
         "title": "Minecraft Custom Hit Test",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:damage_over_time",
         "title": "Minecraft Damage Over Time",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:damage_sensor",
         "title": "Minecraft Damage Sensor",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:dash_action",
         "title": "Minecraft Dash Action",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:default_look_angle",
         "title": "Minecraft Default Look Angle",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:despawn",
         "title": "Minecraft Despawn",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:dimension_bound",
         "title": "Minecraft Dimension Bound",
         "description": "Prevents the entity from changing dimension through portals.",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:drying_out_timer",
         "title": "Minecraft Drying Out Timer",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:dweller",
         "title": "Minecraft Dweller",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:economy_trade_table",
         "title": "Minecraft Economy Trade Table",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:entity_armor_equipment_slot_mapping",
         "title": "Minecraft Entity Armor Equipment Slot Mapping",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:entity_sensor",
         "title": "Minecraft Entity Sensor",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:environment_sensor",
         "title": "Minecraft Environment Sensor",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:equip_item",
         "title": "Minecraft Equip Item",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:equipment",
         "title": "Minecraft Equipment",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:equippable",
         "title": "Minecraft Equippable",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:exhaustion_values",
         "title": "Minecraft Exhaustion Values",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:experience_reward",
         "title": "Minecraft Experience Reward",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_experience_reward"
       },
       {
         "id": "minecraft:explode",
         "title": "Minecraft Explode",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:fire_immune",
         "title": "Minecraft Fire Immune",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:floats_in_liquid",
         "title": "Minecraft Floats In Liquid",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:flocking",
         "title": "Minecraft Flocking",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:flying_speed",
         "title": "Minecraft Flying Speed",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:follow_range",
         "title": "Minecraft Follow Range",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:free_camera_controlled",
         "title": "Minecraft Free Camera Controlled",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:friction_modifier",
         "title": "Minecraft Friction Modifier",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:game_event_movement_tracking",
         "title": "Minecraft Game Event Movement Tracking",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:genetics",
         "title": "Minecraft Genetics",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:giveable",
         "title": "Minecraft Giveable",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:ground_offset",
         "title": "Minecraft Ground Offset",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:group_size",
         "title": "Minecraft Group Size",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:grows_crop",
         "title": "Minecraft Grows Crop",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:healable",
         "title": "Minecraft Healable",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:health",
         "title": "Minecraft Health",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:heartbeat",
         "title": "Minecraft Heartbeat",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:hide",
         "title": "Minecraft Hide",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:home",
         "title": "Minecraft Home",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:horse.jump_strength",
         "title": "Jump Strength Minecraft Horse",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:hurt_on_condition",
         "title": "Minecraft Hurt On Condition",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:ignore_cannot_be_attacked",
         "title": "Minecraft Ignore Cannot Be Attacked",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:input_ground_controlled",
         "title": "Minecraft Input Ground Controlled",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:inside_block_notifier",
         "title": "Minecraft Inside Block Notifier",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:insomnia",
         "title": "Minecraft Insomnia",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:instant_despawn",
         "title": "Minecraft Instant Despawn",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:interact",
         "title": "Minecraft Interact",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:inventory",
         "title": "Minecraft Inventory",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:is_baby",
         "title": "Minecraft Is Baby",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:is_charged",
         "title": "Minecraft Is Charged",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:is_chested",
         "title": "Minecraft Is Chested",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:is_collidable",
         "title": "Minecraft Is Collidable",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:is_dyeable",
         "title": "Minecraft Is Dyeable",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:is_hidden_when_invisible",
         "title": "Minecraft Is Hidden When Invisible",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:is_ignited",
         "title": "Minecraft Is Ignited",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:is_illager_captain",
         "title": "Minecraft Is Illager Captain",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:is_pregnant",
         "title": "Minecraft Is Pregnant",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:is_saddled",
         "title": "Minecraft Is Saddled",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:is_shaking",
         "title": "Minecraft Is Shaking",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:is_sheared",
         "title": "Minecraft Is Sheared",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:is_stackable",
         "title": "Minecraft Is Stackable",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:is_stunned",
         "title": "Minecraft Is Stunned",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:is_tamed",
         "title": "Minecraft Is Tamed",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:item_controllable",
         "title": "Minecraft Item Controllable",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:item_hopper",
         "title": "Minecraft Item Hopper",
         "description": "Determines that this entity is an item hopper.",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:jump.dynamic",
         "title": "Dynamic Minecraft Jump",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:jump.static",
         "title": "Static Minecraft Jump",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:knockback_resistance",
         "title": "Minecraft Knockback Resistance",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:lava_movement",
         "title": "Minecraft Lava Movement",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:leashable",
         "title": "Minecraft Leashable",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:leashable_to",
         "title": "Minecraft Leashable To",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:looked_at",
         "title": "Minecraft Looked At",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:loot",
         "title": "Minecraft Loot",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:luck",
         "title": "Minecraft Luck",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:managed_wandering_trader",
         "title": "Minecraft Managed Wandering Trader",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:mark_variant",
         "title": "Minecraft Mark Variant",
         "description": "Dynamic value",
-        "dataType": 16
-      },
-      {
-        "id": "minecraft:memory_behavior.collect_nectar",
-        "title": "Collect Nectar Minecraft Memory Behavior",
-        "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:memory_behavior.flee_threat",
         "title": "Flee Threat Minecraft Memory Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:memory_behavior.follow_target",
         "title": "Follow Target Minecraft Memory Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:memory_behavior.move_to_position",
         "title": "Move To Position Minecraft Memory Behavior",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:memory_sensor.find_nearest_block",
         "title": "Find Nearest Block Minecraft Memory Sensor",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:memory_sensor.find_nearest_block_from",
         "title": "Find Nearest Block From Minecraft Memory Sensor",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:memory_sensor.find_nearest_entity",
         "title": "Find Nearest Entity Minecraft Memory Sensor",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:memory_sensor.find_nearest_entity_from",
         "title": "Find Nearest Entity From Minecraft Memory Sensor",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:memory_sensor.find_nearest_poi",
         "title": "Find Nearest Poi Minecraft Memory Sensor",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:memory_sensor.in_range_of_block",
         "title": "In Range Of Block Minecraft Memory Sensor",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:memory_sensor.in_range_of_entity",
         "title": "In Range Of Entity Minecraft Memory Sensor",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:mob_effect",
         "title": "Minecraft Mob Effect",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:mob_effect_immunity",
         "title": "Minecraft Mob Effect Immunity",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:movement",
         "title": "Minecraft Movement",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:movement.amphibious",
         "title": "Amphibious Minecraft Movement",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:movement.basic",
         "title": "Basic Minecraft Movement",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:movement.dolphin",
         "title": "Dolphin Minecraft Movement",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:movement.fly",
         "title": "Fly Minecraft Movement",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:movement.generic",
         "title": "Generic Minecraft Movement",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:movement.glide",
         "title": "Glide Minecraft Movement",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:movement.hover",
         "title": "Hover Minecraft Movement",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:movement.jump",
         "title": "Jump Minecraft Movement",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:movement.skip",
         "title": "Skip Minecraft Movement",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:movement.sway",
         "title": "Sway Minecraft Movement",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:movement_sound_distance_offset",
         "title": "Minecraft Movement Sound Distance Offset",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:nameable",
         "title": "Minecraft Nameable",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:navigation.climb",
         "title": "Climb Minecraft Navigation",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:navigation.float",
         "title": "Float Minecraft Navigation",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:navigation.fly",
         "title": "Fly Minecraft Navigation",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:navigation.generic",
         "title": "Generic Minecraft Navigation",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:navigation.hover",
         "title": "Hover Minecraft Navigation",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:navigation.swim",
         "title": "Swim Minecraft Navigation",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:navigation.walk",
         "title": "Walk Minecraft Navigation",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:npc",
         "title": "Minecraft Npc",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:offspring",
         "title": "Minecraft Offspring",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:on_death",
         "title": "Minecraft On Death",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:on_equipment_changed",
         "title": "Minecraft On Equipment Changed",
         "description": "Allows to specify events to execute when equipment is set in the entity's default equipment slots. Doesn't apply to \"minecraft:inventory\", use \"minecraft:equippable\" instead.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_on_equipment_changed"
       },
       {
         "id": "minecraft:on_friendly_anger",
         "title": "Minecraft On Friendly Anger",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:on_hurt",
         "title": "Minecraft On Hurt",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:on_hurt_by_player",
         "title": "Minecraft On Hurt By Player",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:on_ignite",
         "title": "Minecraft On Ignite",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:on_start_landing",
         "title": "Minecraft On Start Landing",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:on_start_takeoff",
         "title": "Minecraft On Start Takeoff",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:on_target_acquired",
         "title": "Minecraft On Target Acquired",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:on_target_escape",
         "title": "Minecraft On Target Escape",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:on_wake_with_owner",
         "title": "Minecraft On Wake With Owner",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:out_of_control",
         "title": "Minecraft Out Of Control",
         "description": "Defines the entity's 'out of control' state.",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:peek",
         "title": "Minecraft Peek",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:persistent",
         "title": "Minecraft Persistent",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:physics",
         "title": "Minecraft Physics",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:player.exhaustion",
         "title": "Exhaustion Minecraft Player",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:player.experience",
         "title": "Experience Minecraft Player",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:player.hunger",
         "title": "Hunger Minecraft Player",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:player.level",
         "title": "Level Minecraft Player",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:player.saturation",
         "title": "Saturation Minecraft Player",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:preferred_path",
         "title": "Minecraft Preferred Path",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:projectile",
         "title": "Minecraft Projectile",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:push_through",
         "title": "Minecraft Push Through",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:pushable_by_block",
         "title": "Minecraft Pushable By Block",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:pushable_by_entity",
         "title": "Minecraft Pushable By Entity",
-        "description": "Dynamic value",
-        "dataType": 16
+        "description": "Allows an entity to be pushed by other entities.",
+        "dataType": "object"
       },
       {
         "id": "minecraft:raid_trigger",
         "title": "Minecraft Raid Trigger",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:rail_movement",
         "title": "Minecraft Rail Movement",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:rail_sensor",
         "title": "Minecraft Rail Sensor",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:ravager_blocked",
         "title": "Minecraft Ravager Blocked",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:reflect_projectiles",
         "title": "Minecraft Reflect Projectiles",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:renders_when_invisible",
         "title": "Minecraft Renders When Invisible",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:rideable",
         "title": "Minecraft Rideable",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:rotation_axis_aligned",
         "title": "Minecraft Rotation Axis Aligned",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:rotation_locked_to_vehicle",
         "title": "Minecraft Rotation Locked To Vehicle",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:scale",
         "title": "Minecraft Scale",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:scale_by_age",
         "title": "Minecraft Scale By Age",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:scheduler",
         "title": "Minecraft Scheduler",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:shareables",
         "title": "Minecraft Shareables",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:shooter",
         "title": "Minecraft Shooter",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:sittable",
         "title": "Minecraft Sittable",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:skin_id",
         "title": "Minecraft Skin Id",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:sound_volume",
         "title": "Minecraft Sound Volume",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:spawn_egg_interaction",
         "title": "Minecraft Spawn Egg Interaction",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:spawn_entity",
         "title": "Minecraft Spawn Entity",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
+      },
+      {
+        "id": "minecraft:spawn_on_death",
+        "title": "Minecraft Spawn On Death",
+        "description": "Component for spawning entities when an entity perishes.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_spawn_on_death"
       },
       {
         "id": "minecraft:spell_effects",
         "title": "Minecraft Spell Effects",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:strength",
         "title": "Minecraft Strength",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:suspect_tracking",
         "title": "Minecraft Suspect Tracking",
         "description": "Allows this entity to remember suspicious locations.",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:tameable",
         "title": "Minecraft Tameable",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:tamemount",
         "title": "Minecraft Tamemount",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:target_nearby_sensor",
         "title": "Minecraft Target Nearby Sensor",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:teleport",
         "title": "Minecraft Teleport",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:tick_world",
         "title": "Minecraft Tick World",
         "description": "Defines if the entity ticks the world and the radius around it to tick.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "entity/minecraft_tick_world"
       },
       {
         "id": "minecraft:timer",
         "title": "Minecraft Timer",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:trade_resupply",
         "title": "Minecraft Trade Resupply",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:trade_table",
         "title": "Minecraft Trade Table",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:trail",
         "title": "Minecraft Trail",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:transformation",
         "title": "Minecraft Transformation",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:transient",
         "title": "Minecraft Transient",
         "description": "Marks an entity as transient (do not save).",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:trust",
         "title": "Minecraft Trust",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:trusting",
         "title": "Minecraft Trusting",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:type_family",
         "title": "Minecraft Type Family",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:underwater_mount_breathing",
         "title": "Minecraft Underwater Mount Breathing",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:underwater_movement",
         "title": "Minecraft Underwater Movement",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:uses_legacy_friction",
         "title": "Minecraft Uses Legacy Friction",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:uses_uniform_air_drag",
         "title": "Minecraft Uses Uniform Air Drag",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:variable_max_auto_step",
         "title": "Minecraft Variable Max Auto Step",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:variant",
         "title": "Minecraft Variant",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:vertical_movement_action",
         "title": "Minecraft Vertical Movement Action",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:vibration_damper",
         "title": "Minecraft Vibration Damper",
         "description": "Vibrations emitted by an entity with this component will be ignored.",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:vibration_listener",
         "title": "Minecraft Vibration Listener",
         "description": "[INTERNAL] Allows this entity to listen to vibration events.",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:walk_animation_speed",
         "title": "Minecraft Walk Animation Speed",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:wants_jockey",
         "title": "Minecraft Wants Jockey",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:water_movement",
         "title": "Minecraft Water Movement",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "minecraft:wither_target_highest_damage",
         "title": "Minecraft Wither Target Highest Damage",
         "description": "Dynamic value",
-        "dataType": 16
+        "dataType": "object"
       }
     ]
   },

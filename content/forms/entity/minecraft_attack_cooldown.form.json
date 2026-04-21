@@ -49,13 +49,13 @@
         "id": "attack_cooldown_complete_event",
         "title": "Attack Cooldown Complete Event",
         "description": "Event to be run when the cooldown is complete.",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "attack_cooldown_time",
         "title": "Attack Cooldown Time",
         "description": "Amount of time in seconds for the cooldown. Can be specified as a number or a pair of numbers (min and max).",
-        "dataType": 18
+        "dataType": "intRange"
       }
     ],
     "samples": {}

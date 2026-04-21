@@ -109,6 +109,7 @@ ms.date: 02/11/2025
 | [on_ladder](Filters/on_ladder.md)| Returns true when the subject entity is on a ladder. |
 | [owner_distance](Filters/owner_distance.md)| Tests the distance between the subject and its owner. |
 | [random_chance](Filters/random_chance.md)| Returns true if the random chance rolls 0 out of a specified max range. |
+| [redstone_strength_at_position](Filters/redstone_strength_at_position.md)| Tests the redstone strength at the subject's position. |
 | [rider_count](Filters/rider_count.md)| Returns the number of riders on this entity. |
 | [surface_mob](Filters/surface_mob.md)| Tests if the subject is a surface mob. |
 | [taking_fire_damage](Filters/taking_fire_damage.md)| Tests if the subject is taking fire damage. |

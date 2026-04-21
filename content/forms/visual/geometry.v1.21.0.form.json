@@ -109,51 +109,51 @@
     "id": "geometry",
     "fields": [
       {
-        "dataType": 25,
+        "dataType": "version",
         "id": "format_version",
         "title": "Format Version",
         "isRequired": true
       },
       {
-        "dataType": 1,
+        "dataType": "boolean",
         "id": "debug",
         "title": "Debug",
         "isRequired": false
       },
       {
         "id": "minecraft:geometry",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "description": "Entity definition and Client Block definition files refer to this geometry via this identifier.",
                     "isRequired": true
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "visible_bounds_offset",
                     "title": "Visible Bounds Offset",
                     "isRequired": false
                   },
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "texture_width",
                     "title": "Texture Width",
                     "description": "Assumed width in texels of the texture that will be bound to this geometry.",
                     "isRequired": false
                   },
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "texture_height",
                     "title": "Texture Height",
                     "description": "Assumed height in texels of the texture that will be bound to this geometry.",
@@ -163,7 +163,7 @@
               }
             },
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "item_display_transforms",
               "title": "Item Display Transforms",
               "description": "Components of the 3d matrix transform to be applied to this geometry when displayed in this item rendering context. Valid contexts: [\"gui\", \"firstperson_righthand\", \"firstperson_lefthand\", \"thirdperson_righthand\", \"thirdperson_lefthand\", \"ground\", \"fixed\", \"head\", \"embedded\"].",
@@ -171,44 +171,44 @@
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "gui",
                     "title": "Gui",
                     "isRequired": false,
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "translation",
                           "title": "Translation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation",
                           "title": "Rotation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "scale",
                           "title": "Scale",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation_pivot",
                           "title": "Rotation Pivot",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "scale_pivot",
                           "title": "Scale Pivot",
                           "isRequired": false
                         },
                         {
-                          "dataType": 1,
+                          "dataType": "boolean",
                           "id": "fit_to_frame",
                           "title": "Fit To Frame",
                           "description": "If true, the geometry will be automatically scaled and translated to fit within the GUI frame. Default is 'true'.",
@@ -218,38 +218,38 @@
                     }
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "firstperson_righthand",
                     "title": "Firstperson Righthand",
                     "isRequired": false,
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "translation",
                           "title": "Translation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation",
                           "title": "Rotation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "scale",
                           "title": "Scale",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation_pivot",
                           "title": "Rotation Pivot",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "scale_pivot",
                           "title": "Scale Pivot",
                           "isRequired": false
@@ -258,38 +258,38 @@
                     }
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "firstperson_lefthand",
                     "title": "Firstperson Lefthand",
                     "isRequired": false,
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "translation",
                           "title": "Translation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation",
                           "title": "Rotation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "scale",
                           "title": "Scale",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation_pivot",
                           "title": "Rotation Pivot",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "scale_pivot",
                           "title": "Scale Pivot",
                           "isRequired": false
@@ -298,38 +298,38 @@
                     }
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "thirdperson_righthand",
                     "title": "Thirdperson Righthand",
                     "isRequired": false,
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "translation",
                           "title": "Translation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation",
                           "title": "Rotation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "scale",
                           "title": "Scale",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation_pivot",
                           "title": "Rotation Pivot",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "scale_pivot",
                           "title": "Scale Pivot",
                           "isRequired": false
@@ -338,38 +338,38 @@
                     }
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "thirdperson_lefthand",
                     "title": "Thirdperson Lefthand",
                     "isRequired": false,
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "translation",
                           "title": "Translation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation",
                           "title": "Rotation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "scale",
                           "title": "Scale",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation_pivot",
                           "title": "Rotation Pivot",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "scale_pivot",
                           "title": "Scale Pivot",
                           "isRequired": false
@@ -378,38 +378,38 @@
                     }
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "ground",
                     "title": "Ground",
                     "isRequired": false,
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "translation",
                           "title": "Translation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation",
                           "title": "Rotation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "scale",
                           "title": "Scale",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation_pivot",
                           "title": "Rotation Pivot",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "scale_pivot",
                           "title": "Scale Pivot",
                           "isRequired": false
@@ -418,38 +418,38 @@
                     }
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "fixed",
                     "title": "Fixed",
                     "isRequired": false,
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "translation",
                           "title": "Translation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation",
                           "title": "Rotation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "scale",
                           "title": "Scale",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation_pivot",
                           "title": "Rotation Pivot",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "scale_pivot",
                           "title": "Scale Pivot",
                           "isRequired": false
@@ -458,38 +458,38 @@
                     }
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "head",
                     "title": "Head",
                     "isRequired": false,
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "translation",
                           "title": "Translation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation",
                           "title": "Rotation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "scale",
                           "title": "Scale",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation_pivot",
                           "title": "Rotation Pivot",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "scale_pivot",
                           "title": "Scale Pivot",
                           "isRequired": false
@@ -498,38 +498,38 @@
                     }
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "embedded",
                     "title": "Embedded",
                     "isRequired": false,
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "translation",
                           "title": "Translation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation",
                           "title": "Rotation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "scale",
                           "title": "Scale",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation_pivot",
                           "title": "Rotation Pivot",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "scale_pivot",
                           "title": "Scale Pivot",
                           "isRequired": false
@@ -541,99 +541,99 @@
               }
             },
             {
-              "dataType": 2,
+              "dataType": "string",
               "id": "cape",
               "title": "Cape",
               "isRequired": false
             },
             {
               "id": "bones",
-              "dataType": 15,
+              "dataType": "objectArray",
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "name",
                     "title": "Name",
                     "description": "Animation files refer to this bone via this identifier.",
                     "isRequired": true
                   },
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "parent",
                     "title": "Parent",
                     "description": "Bone that this bone is relative to. If the parent bone moves, this bone will move along with it.",
                     "isRequired": false
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "pivot",
                     "title": "Pivot",
                     "isRequired": false
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "rotation",
                     "title": "Rotation",
                     "isRequired": false
                   },
                   {
-                    "dataType": 1,
+                    "dataType": "boolean",
                     "id": "mirror",
                     "title": "Mirror",
                     "description": "Mirrors the UV's of the unrotated cubes along the x axis, also causes the east/west faces to get flipped.",
                     "isRequired": false
                   },
                   {
-                    "dataType": 1,
+                    "dataType": "boolean",
                     "id": "debug",
                     "title": "Debug",
                     "isRequired": false
                   },
                   {
-                    "dataType": 0,
+                    "dataType": "int",
                     "id": "render_group_id",
                     "title": "Render Group Id",
                     "isRequired": false
                   },
                   {
                     "id": "cubes",
-                    "dataType": 15,
+                    "dataType": "objectArray",
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "origin",
                           "title": "Origin",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "size",
                           "title": "Size",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation",
                           "title": "Rotation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "pivot",
                           "title": "Pivot",
                           "isRequired": false
                         },
                         {
-                          "dataType": 1,
+                          "dataType": "boolean",
                           "id": "mirror",
                           "title": "Mirror",
                           "description": "Mirrors this cube about the unrotated x axis (effectively flipping the east / west faces), overriding the bone's 'mirror' setting for this cube.",
                           "isRequired": false
                         },
                         {
-                          "dataType": 16,
+                          "dataType": "object",
                           "id": "uv",
                           "title": "Uv",
                           "description": "This is an alternate per-face uv mapping which specifies each face of the cube. Omitting a face will cause that face to not get drawn.",
@@ -641,7 +641,7 @@
                           "subForm": {
                             "fields": [
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "north",
                                 "title": "North",
                                 "description": "Specifies the UV's for the face that stretches along the x and y axes, and faces the -z axis.",
@@ -649,26 +649,26 @@
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 17,
+                                      "dataType": "stringArray",
                                       "id": "uv",
                                       "title": "Uv",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 17,
+                                      "dataType": "stringArray",
                                       "id": "uv_size",
                                       "title": "Uv Size",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "uv_rotation",
                                       "title": "Uv Rotation",
                                       "description": "Rotates the uv rect clockwise the specified amount of degrees before applying it to the face. Valid values are 0, 90, 180 and 270. If not specified, no rotation will be applied.",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 2,
+                                      "dataType": "string",
                                       "id": "material_instance",
                                       "title": "Material Instance",
                                       "isRequired": false
@@ -677,7 +677,7 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "south",
                                 "title": "South",
                                 "description": "Specifies the UV's for the face that stretches along the x and y axes, and faces the z axis",
@@ -685,26 +685,26 @@
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 17,
+                                      "dataType": "stringArray",
                                       "id": "uv",
                                       "title": "Uv",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 17,
+                                      "dataType": "stringArray",
                                       "id": "uv_size",
                                       "title": "Uv Size",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "uv_rotation",
                                       "title": "Uv Rotation",
                                       "description": "Rotates the uv rect clockwise the specified amount of degrees before applying it to the face. Valid values are 0, 90, 180 and 270. If not specified, no rotation will be applied.",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 2,
+                                      "dataType": "string",
                                       "id": "material_instance",
                                       "title": "Material Instance",
                                       "isRequired": false
@@ -713,7 +713,7 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "east",
                                 "title": "East",
                                 "description": "Specifies the UV's for the face that stretches along the z and y axes, and faces the x axis",
@@ -721,26 +721,26 @@
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 17,
+                                      "dataType": "stringArray",
                                       "id": "uv",
                                       "title": "Uv",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 17,
+                                      "dataType": "stringArray",
                                       "id": "uv_size",
                                       "title": "Uv Size",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "uv_rotation",
                                       "title": "Uv Rotation",
                                       "description": "Rotates the uv rect clockwise the specified amount of degrees before applying it to the face. Valid values are 0, 90, 180 and 270. If not specified, no rotation will be applied.",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 2,
+                                      "dataType": "string",
                                       "id": "material_instance",
                                       "title": "Material Instance",
                                       "isRequired": false
@@ -749,7 +749,7 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "west",
                                 "title": "West",
                                 "description": "Specifies the UV's for the face that stretches along the z and y axes, and faces the -x axis",
@@ -757,26 +757,26 @@
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 17,
+                                      "dataType": "stringArray",
                                       "id": "uv",
                                       "title": "Uv",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 17,
+                                      "dataType": "stringArray",
                                       "id": "uv_size",
                                       "title": "Uv Size",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "uv_rotation",
                                       "title": "Uv Rotation",
                                       "description": "Rotates the uv rect clockwise the specified amount of degrees before applying it to the face. Valid values are 0, 90, 180 and 270. If not specified, no rotation will be applied.",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 2,
+                                      "dataType": "string",
                                       "id": "material_instance",
                                       "title": "Material Instance",
                                       "isRequired": false
@@ -785,7 +785,7 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "up",
                                 "title": "Up",
                                 "description": "Specifies the UV's for the face that stretches along the x and z axes, and faces the y axis",
@@ -793,26 +793,26 @@
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 17,
+                                      "dataType": "stringArray",
                                       "id": "uv",
                                       "title": "Uv",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 17,
+                                      "dataType": "stringArray",
                                       "id": "uv_size",
                                       "title": "Uv Size",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "uv_rotation",
                                       "title": "Uv Rotation",
                                       "description": "Rotates the uv rect clockwise the specified amount of degrees before applying it to the face. Valid values are 0, 90, 180 and 270. If not specified, no rotation will be applied.",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 2,
+                                      "dataType": "string",
                                       "id": "material_instance",
                                       "title": "Material Instance",
                                       "isRequired": false
@@ -821,7 +821,7 @@
                                 }
                               },
                               {
-                                "dataType": 16,
+                                "dataType": "object",
                                 "id": "down",
                                 "title": "Down",
                                 "description": "Specifies the UV's for the face that stretches along the x and z axes, and faces the -y axis",
@@ -829,26 +829,26 @@
                                 "subForm": {
                                   "fields": [
                                     {
-                                      "dataType": 17,
+                                      "dataType": "stringArray",
                                       "id": "uv",
                                       "title": "Uv",
                                       "isRequired": true
                                     },
                                     {
-                                      "dataType": 17,
+                                      "dataType": "stringArray",
                                       "id": "uv_size",
                                       "title": "Uv Size",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 0,
+                                      "dataType": "int",
                                       "id": "uv_rotation",
                                       "title": "Uv Rotation",
                                       "description": "Rotates the uv rect clockwise the specified amount of degrees before applying it to the face. Valid values are 0, 90, 180 and 270. If not specified, no rotation will be applied.",
                                       "isRequired": false
                                     },
                                     {
-                                      "dataType": 2,
+                                      "dataType": "string",
                                       "id": "material_instance",
                                       "title": "Material Instance",
                                       "isRequired": false
@@ -860,7 +860,7 @@
                           },
                           "alternates": [
                             {
-                              "dataType": 17,
+                              "dataType": "stringArray",
                               "id": "uv",
                               "isRequired": false
                             }
@@ -870,7 +870,7 @@
                     },
                     "alternates": [
                       {
-                        "dataType": 17,
+                        "dataType": "stringArray",
                         "id": "cubes",
                         "title": "Cubes",
                         "description": "This is the list of cubes associated with this bone.",
@@ -879,33 +879,33 @@
                     ]
                   },
                   {
-                    "dataType": 34,
+                    "dataType": "molang",
                     "id": "binding",
                     "title": "Binding",
                     "description": "Useful for items. A molang expression specifying the bone name of the parent skeletal hierarchy that this bone should use as the root transform. Without this field it will look for a bone in the parent entity with the same name as this bone. If both are missing, it will assume a local skeletal hierarchy (via the \"parent\" field). If that is also missing, it will attach to the owning entity's root transform.",
                     "isRequired": false
                   },
                   {
-                    "dataType": 14,
+                    "dataType": "keyedObjectCollection",
                     "id": "locators",
                     "title": "Locators",
                     "isRequired": false,
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "offset",
                           "title": "Offset",
                           "isRequired": true
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation",
                           "title": "Rotation",
                           "isRequired": true
                         },
                         {
-                          "dataType": 1,
+                          "dataType": "boolean",
                           "id": "ignore_inherited_scale",
                           "title": "Ignore Inherited Scale",
                           "description": "Discard scale inherited from parent bone.",
@@ -916,7 +916,7 @@
                     "keyDescription": "<identifier>",
                     "alternates": [
                       {
-                        "dataType": 24,
+                        "dataType": "keyedStringCollection",
                         "id": "locators",
                         "title": "<identifier>",
                         "description": "This is a list of locators associated with this bone. A locator is a point in model space that tracks a particular bone as the bone animates (by maintaining it's relationship to the bone through the animation).",
@@ -926,7 +926,7 @@
                     ]
                   },
                   {
-                    "dataType": 14,
+                    "dataType": "keyedObjectCollection",
                     "id": "poly_mesh",
                     "title": "Poly Mesh",
                     "description": "[Deprecated] A triangle or quad mesh object. Can be used in conjunction with cubes and texture geometry. This feature is deprecated, and using it in new content will result in content errors.",
@@ -934,32 +934,32 @@
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 1,
+                          "dataType": "boolean",
                           "id": "normalized_uvs",
                           "title": "Normalized Uvs",
                           "description": "If true, UVs are assumed to be [0-1]. If false, UVs are assumed to be [0-texture_width] and [0-texture_height] respectively.",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "positions",
                           "title": "Positions",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "normals",
                           "title": "Normals",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "uvs",
                           "title": "Uvs",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "polys",
                           "title": "Polys",
                           "isRequired": true
@@ -970,42 +970,42 @@
                   },
                   {
                     "id": "texture_meshes",
-                    "dataType": 15,
+                    "dataType": "objectArray",
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 2,
+                          "dataType": "string",
                           "id": "texture",
                           "title": "Texture",
                           "description": "The friendly-named texture to use.",
                           "isRequired": true
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "position",
                           "title": "Position",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "local_pivot",
                           "title": "Local Pivot",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "rotation",
                           "title": "Rotation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 17,
+                          "dataType": "stringArray",
                           "id": "scale",
                           "title": "Scale",
                           "isRequired": false
                         },
                         {
-                          "dataType": 1,
+                          "dataType": "boolean",
                           "id": "use_pixel_depth",
                           "title": "Use Pixel Depth",
                           "description": "If set to \"true\", the geometry will have a depth of one pixel (in entity space, not texture space). This causes geometries with a texture resolution different from 16x16 to appear stretched. If set to \"false\", the geometry will be built from perfectly cubic voxels, no matter the texture's aspect ratio. The default value is \"true\".",
@@ -1015,7 +1015,7 @@
                     },
                     "alternates": [
                       {
-                        "dataType": 17,
+                        "dataType": "stringArray",
                         "id": "texture_meshes",
                         "title": "Texture Meshes",
                         "description": "Adds a mesh to the bone's geometry by converting texels in a texture into voxels.",
@@ -1027,7 +1027,7 @@
               },
               "alternates": [
                 {
-                  "dataType": 17,
+                  "dataType": "stringArray",
                   "id": "bones",
                   "title": "Bones",
                   "description": "Bones define the 'skeleton' of the mob: the parts that can be animated, and to which geometry and other bones are attached.",
@@ -1039,7 +1039,7 @@
         },
         "alternates": [
           {
-            "dataType": 17,
+            "dataType": "stringArray",
             "id": "minecraft:geometry",
             "title": "Geometry",
             "isRequired": true

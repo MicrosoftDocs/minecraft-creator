@@ -22,7 +22,7 @@
       {
         "id": "x",
         "title": "X",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "range": {
             "max": 0,
@@ -35,7 +35,7 @@
       {
         "id": "y",
         "title": "Y",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "range": {
             "max": 0,
@@ -48,7 +48,7 @@
       {
         "id": "z",
         "title": "Z",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "range": {
             "max": 0,

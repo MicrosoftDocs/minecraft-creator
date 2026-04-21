@@ -45,11 +45,11 @@ May be type `add`, `list`, `off`, `on`, `reload`, or `remove.`
 Adds a player to the allowlist if they are not included.
 - `remove`
 Removes a player from the allowlist if they are on it.
+- `off`
+Disables the allowlist.
 - `list`
 List the player names, uuids, or xuids.
 - `reload`
 Reloads the allowlist file.
 - `on`
 Enables the allowlist.
-- `off`
-Disables the allowlist.

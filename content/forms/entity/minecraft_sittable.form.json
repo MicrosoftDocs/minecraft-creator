@@ -49,13 +49,13 @@
         "id": "sit_event",
         "title": "Sit Event",
         "description": "Event to run when the entity enters the 'sit' state",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "stand_event",
         "title": "Stand Event",
         "description": "Event to run when the entity exits the 'sit' state",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       }
     ],
     "samples": {

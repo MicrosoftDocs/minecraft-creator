@@ -3618,6 +3618,8 @@ Silverfish Spawn Egg
 Slime Spawn Egg
 - `slime_spawn_egg`
 Slime Spawn Egg
+- `minecraft:sulfur_cube_spawn_egg`
+- `sulfur_cube_spawn_egg`
 - `minecraft:warden_spawn_egg`
 Warden Spawn Egg
 - `warden_spawn_egg`
@@ -3700,8 +3702,6 @@ Endermite Spawn Egg
 Shulker Spawn Egg
 - `shulker_spawn_egg`
 Shulker Spawn Egg
-- `minecraft:sulfur_cube_spawn_egg`
-- `sulfur_cube_spawn_egg`
 - `editor:map_marker_spawn_egg`
 - `minecraft:chorus_fruit`
 Chorus Fruit
@@ -4399,6 +4399,8 @@ Axolotl Bucket
 Tadpole Bucket
 - `tadpole_bucket`
 Tadpole Bucket
+- `minecraft:sulfur_cube_bucket`
+- `sulfur_cube_bucket`
 - `minecraft:coal`
 Coal
 - `coal`
@@ -4821,8 +4823,6 @@ Firework Star
 - `trial_key`
 - `minecraft:ominous_trial_key`
 - `ominous_trial_key`
-- `minecraft:sulfur_cube_bucket`
-- `sulfur_cube_bucket`
 - `speckled_melon`
 Speckled Melon
 - `nametag`

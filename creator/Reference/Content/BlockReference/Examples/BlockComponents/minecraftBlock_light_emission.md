@@ -18,3 +18,17 @@ This item can also be represented as a `Integer number`.
 
 
 ## Samples
+
+#### Block Fabricator
+
+
+```json
+"minecraft:light_emission": 7
+```
+
+#### Block Gray Ore
+
+
+```json
+"minecraft:light_emission": 15
+```

@@ -94,12 +94,26 @@
         "title": "Aux Val",
         "description": "ID of the Potion effect for the default projectile to be applied on hit.",
         "defaultValue": -1,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/",
               "content": 26
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:shooter/",
+              "content": 26
+            }
+          ],
+          "/vanilla/behavior_pack/entities/parched.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/",
+              "content": 35
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:shooter/",
+              "content": 35
             }
           ]
         }
@@ -108,7 +122,7 @@
         "id": "def",
         "title": "Def",
         "description": "Actor definition to use as the default projectile for the ranged attack. The actor definition must have the projectile component to be able to be shot as a projectile.",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/blaze.json": [
             {
@@ -120,12 +134,10 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/",
               "content": "minecraft:arrow"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/drowned.json": [
+            },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:shooter/",
-              "content": "minecraft:thrown_trident"
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:shooter/",
+              "content": "minecraft:arrow"
             }
           ],
           "/vanilla/behavior_pack/entities/ender_dragon.json": [
@@ -147,37 +159,35 @@
         "title": "Magic",
         "description": "Sets whether the projectiles being used are flagged as magic. If set, the ranged attack goal will not be used at the same time as other magic goals, such as minecraft:behavior.drink_potion",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "power",
         "title": "Power",
         "description": "Velocity in which the projectiles will be shot at. A power of 0 will be overwritten by the default projectile throw power.",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "projectiles",
         "title": "Projectiles",
         "description": "List of projectiles that can be used by the shooter. Projectiles are evaluated in the order of the list; After a projectile is chosen, the rest of the list is ignored.",
-        "dataType": 17
+        "dataType": "stringArray"
       },
       {
         "id": "sound",
         "title": "Sound",
         "description": "Sound that is played when the shooter shoots a projectile.",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/",
               "content": "bow"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/drowned.json": [
+            },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:shooter/",
-              "content": "item.trident.throw"
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:shooter/",
+              "content": "bow"
             }
           ]
         }
@@ -200,14 +210,13 @@
             "def": "minecraft:arrow",
             "sound": "bow"
           }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/drowned.json": [
+        },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:shooter/",
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:shooter/",
           "content": {
-            "def": "minecraft:thrown_trident",
-            "sound": "item.trident.throw"
+            "aux_val": 26,
+            "def": "minecraft:arrow",
+            "sound": "bow"
           }
         }
       ],
@@ -224,6 +233,24 @@
           "path": "/minecraft:entity/components/minecraft:shooter/",
           "content": {
             "def": "minecraft:llama_spit"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parched.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/",
+          "content": {
+            "aux_val": 35,
+            "def": "minecraft:arrow",
+            "sound": "bow"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:shooter/",
+          "content": {
+            "aux_val": 35,
+            "def": "minecraft:arrow",
+            "sound": "bow"
           }
         }
       ]

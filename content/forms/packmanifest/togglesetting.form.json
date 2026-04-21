@@ -21,13 +21,13 @@
       {
         "id": "default",
         "title": "Default",
-        "dataType": 1,
+        "dataType": "boolean",
         "isRequired": true
       },
       {
         "id": "name",
         "title": "Name",
-        "dataType": 2,
+        "dataType": "string",
         "validity": [
           {
             "comparison": "pattern",
@@ -39,13 +39,13 @@
       {
         "id": "text",
         "title": "Text",
-        "dataType": 2,
+        "dataType": "string",
         "isRequired": true
       },
       {
         "id": "type",
         "title": "SettingType",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "dropdown",

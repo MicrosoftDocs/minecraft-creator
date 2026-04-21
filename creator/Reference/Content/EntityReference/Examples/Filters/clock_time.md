@@ -10,7 +10,11 @@ ms.date: 02/11/2025
 
 # Entity Filters Documentation - minecraft:clock_time
 
-Compares the current time with a float value in the range (0.0, 1.0).0.0= Noon0.25= Sunset0.5= Midnight0.75= Sunrise.
+Compares the current time with a float value in the range (0.0, 1.0).
+0.0= Noon
+0.25= Sunset
+0.5= Midnight
+0.75= Sunrise.
 
 > [!Note]
 > `hourly_clock_time` an updated version of the clock_time filter that uses an Integer in a range of 0 to 24000 based on the in-game time.

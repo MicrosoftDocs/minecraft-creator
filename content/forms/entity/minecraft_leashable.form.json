@@ -155,39 +155,39 @@
         "title": "Can Be Cut",
         "description": "If true, players can cut both incoming and outgoing leashes by using shears on the entity.",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "can_be_stolen",
         "title": "Can Be Stolen",
         "description": "If true, players can leash this entity even if it is already leashed to another entity.",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "on_leash",
         "title": "Leash",
         "description": "Event to call when this entity is leashed.",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "on_unleash",
         "title": "Unleash",
         "description": "Event to call when this entity is unleashed.",
-        "dataType": 22
+        "dataType": "minecraftEventTrigger"
       },
       {
         "id": "on_unleash_interact_only",
         "title": "Unleash Interact Only",
         "description": "When set to true, \"on_unleash\" does not trigger when the entity gets unleashed for reasons other than the player directly interacting with it.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "presets",
         "title": "Presets",
         "description": "Defines how this entity behaves when leashed to another entity. The first preset which \"filter\" conditions are met will be applied; if none match, a default configuration is used instead.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "Defines how this entity behaves when leashed to another entity. The first preset which \"filter\" conditions are met will be applied; if none match, a default configuration is used instead.",
@@ -196,42 +196,42 @@
               "id": "filter",
               "title": "Filter",
               "description": "Conditions that must be met for this preset to be applied.",
-              "dataType": 20
+              "dataType": "minecraftFilter"
             },
             {
               "id": "hard_distance",
               "title": "Hard Distance",
               "description": "Distance (in blocks) over which the entity starts being pulled towards the leash holder with a spring-like force. Entities can enter and stay in vehicles if the leash is stretched under this distance, but will dismount once it exceeds it.",
               "defaultValue": 7,
-              "dataType": 3
+              "dataType": "float"
             },
             {
               "id": "max_distance",
               "title": "Max Distance",
               "description": "Distance in blocks at which the leash breaks.",
               "defaultValue": 12,
-              "dataType": 3
+              "dataType": "float"
             },
             {
               "id": "rotation_adjustment",
               "title": "Rotation Adjustment",
               "description": "Adjusts the rotation at which the entity reaches equilibrium, when \"spring_type\" is set to \"dampened\" or \"quad_dampened\".",
               "defaultValue": 0,
-              "dataType": 3
+              "dataType": "float"
             },
             {
               "id": "soft_distance",
               "title": "Soft Distance",
               "description": "Distance (in blocks) over which the entity starts pathfinding toward the leash holder, if able.",
               "defaultValue": 4,
-              "dataType": 3
+              "dataType": "float"
             },
             {
               "id": "spring_type",
               "title": "Spring Type",
               "description": "Defines the type of spring-like force that pulls the entity towards its leash holder:\n- \"bouncy\": Simulates a highly elastic spring that never reaches an equilibrium if the leashed entity is suspended mid-air.\n- \"dampened\": Simulates a dampened spring attached to the front of the leashed entity's collision. It reaches an equilibrium if the entity is suspended mid-air and aligns with the movement direction.\n- \"quad_dampened\": Simulates four dampened springs connected to the center of each side of the entities' collisions. It reaches an equilibrium if the entity is suspended mid-air and gradually aligns with the leash holder over time.",
               "defaultValue": "dampened",
-              "dataType": 2
+              "dataType": "string"
             }
           ]
         },

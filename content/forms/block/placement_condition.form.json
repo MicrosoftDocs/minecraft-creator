@@ -9,7 +9,7 @@
         "id": "allowed_faces",
         "title": "Allowed Faces",
         "description": "List of any of the following strings describing which face(s) this block can be placed on",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": [
           "down",
           "up",
@@ -22,7 +22,7 @@
       {
         "id": "block_filter",
         "description": "List of blocks that this block can be placed against in the \"allowed_faces\" direction. Each block in this list can either be specified as a String (block name) or as a BlockDescriptor.",
-        "dataType": 15,
+        "dataType": "objectArray",
         "defaultValue": [],
         "maxLength": 64,
         "subForm": {
@@ -32,29 +32,29 @@
             {
               "id": "name",
               "title": "Name",
-              "dataType": 2,
+              "dataType": "string",
               "defaultValue": ""
             },
             {
               "id": "states",
               "title": "States",
-              "dataType": 0,
+              "dataType": "int",
               "defaultValue": {},
               "alternates": [
                 {
                   "id": "states",
-                  "dataType": 2
+                  "dataType": "string"
                 },
                 {
                   "id": "states",
-                  "dataType": 1
+                  "dataType": "boolean"
                 }
               ]
             },
             {
               "id": "tags",
               "title": "Tags",
-              "dataType": 2,
+              "dataType": "string",
               "defaultValue": ""
             }
           ]
@@ -62,11 +62,11 @@
         "alternates": [
           {
             "id": "block_filter",
-            "dataType": 2
+            "dataType": "string"
           },
           {
             "id": "block_filter",
-            "dataType": 16
+            "dataType": "object"
           }
         ]
       }

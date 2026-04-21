@@ -23,35 +23,35 @@
         "title": "Cooldown Time",
         "description": "Time in seconds the mob has to wait before using the goal again",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "goal_radius",
         "title": "Goal Radius",
         "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
         "defaultValue": 0.5,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "search_range",
         "title": "Search Range",
         "description": "The distance in blocks to search for villages. If <= 0, find the closest village regardless of distance.",
         "defaultValue": 0,
-        "dataType": 0
+        "dataType": "int"
       },
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Movement speed multiplier of the mob when using this AI Goal",
         "defaultValue": 1,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "samples": {}
@@ -64,7 +64,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -85,34 +85,34 @@
         "id": "cooldown_time",
         "title": "Cooldown Time",
         "description": "Time in seconds the mob has to wait before using the goal again",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 8
       },
       {
         "id": "goal_radius",
         "title": "Goal Radius",
         "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1.5
       },
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "search_range",
         "title": "Search Range",
         "description": "The distance in blocks to search for villages. If <= 0, find the closest village regardless of distance.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       },
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Movement speed multiplier of the mob when using this goal.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1
       }
     ],

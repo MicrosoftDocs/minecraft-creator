@@ -37,7 +37,7 @@
         "title": "Value",
         "description": "The value of the entity's offset from the terrain, in blocks.",
         "defaultValue": 0,
-        "dataType": 3
+        "dataType": "float"
       }
     ]
   }

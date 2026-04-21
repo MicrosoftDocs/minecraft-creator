@@ -36,13 +36,13 @@
       {
         "id": "material",
         "title": "Material",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       },
       {
         "id": "texture",
         "title": "Texture",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       }
     ]

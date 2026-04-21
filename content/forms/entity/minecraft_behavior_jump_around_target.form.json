@@ -24,14 +24,14 @@
         "title": "Check Collision",
         "description": "Enables collision checks when calculating the jump. Setting check_collision to true may affect performance and should be used with care.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "entity_bounding_box_scale",
         "title": "Entity Bounding Box Scale",
         "description": "Scaling temporarily applied to the entity's AABB bounds when jumping. A smaller bounding box reduces the risk of collisions during the jump. When check_collision is true it also increases the chance of being able to jump when close to obstacles.",
         "defaultValue": 0.7,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -45,7 +45,7 @@
         "id": "filters",
         "title": "Filters",
         "description": "Conditions that need to be met for the behavior to start.",
-        "dataType": 20,
+        "dataType": "minecraftFilter",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -83,7 +83,7 @@
         "title": "Jump Angles",
         "description": "The jump angles in float degrees that are allowed when performing the jump. The order in which the angles are chosen is randomized.",
         "defaultValue": "[ 40.0, 55.0, 60.0, 75.0, 80.0 ]",
-        "dataType": 17,
+        "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -104,7 +104,7 @@
         "title": "Jump Cooldown Duration",
         "description": "The time in seconds to spend in cooldown before this goal can be used again.",
         "defaultValue": 0.5,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -119,7 +119,7 @@
         "title": "Jump Cooldown When Hurt Duration",
         "description": "The time in seconds to spend in cooldown after being hurt before this goal can be used again.",
         "defaultValue": 0.1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -133,7 +133,7 @@
         "id": "landing_distance_from_target",
         "title": "Landing Distance From Target",
         "description": "The range deciding how close to and how far away from the target the landing position can be when jumping.",
-        "dataType": 18,
+        "dataType": "intRange",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -151,7 +151,7 @@
         "title": "Landing Position Spread Degrees",
         "description": "This angle (in degrees) is used for controlling the spread when picking a landing position behind the target. A zero spread angle means the landing position will be straight behind the target with no variance. A 90 degree spread angle means the landing position can be up to 45 degrees to the left and to the right of the position straight behind the target's view direction.",
         "defaultValue": 90,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -166,7 +166,7 @@
         "title": "Last Hurt Duration",
         "description": "If the entity was hurt within these last seconds, the jump_cooldown_when_hurt_duration will be used instead of jump_cooldown_duration.",
         "defaultValue": 2,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -181,7 +181,7 @@
         "title": "Line Of Sight Obstruction Height Ignore",
         "description": "If the entity's line of sight towards its target is obstructed by an obstacle with a height below this number, the obstacle will be ignored, and the goal will try to find a valid landing position.",
         "defaultValue": 4,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -196,7 +196,7 @@
         "title": "Max Jump Velocity",
         "description": "Maximum velocity a jump can be performed at.",
         "defaultValue": 1.4,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -211,7 +211,7 @@
         "title": "Prepare Jump Duration",
         "description": "The time in seconds to spend preparing for the jump.",
         "defaultValue": 0.5,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -226,7 +226,7 @@
         "title": "Required Vertical Space",
         "description": "The number of blocks above the entity's head that has to be air for this goal to be usable.",
         "defaultValue": 4,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -241,7 +241,7 @@
         "title": "Snap To Surface Block Range",
         "description": "The number of blocks above and below from the jump target position that will be checked to find a surface to land on.",
         "defaultValue": 10,
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -255,7 +255,7 @@
         "id": "valid_distance_to_target",
         "title": "Valid Distance To Target",
         "description": "Target needs to be within this range for the jump to happen.",
-        "dataType": 18,
+        "dataType": "intRange",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -273,7 +273,7 @@
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0,
+        "dataType": "int",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -354,13 +354,13 @@
         "id": "check_collision",
         "title": "Check Collision",
         "description": "Enables collision checks when calculating the jump. Setting check_collision to true may affect performance and should be used with care.",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": false
       },
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -381,7 +381,7 @@
         "id": "entity_bounding_box_scale",
         "title": "Entity Bounding Box Scale",
         "description": "Scaling temporarily applied to the entity's AABB bounds when jumping. A smaller bounding box reduces the risk of collisions during the jump. When check_collision is true it also increases the chance of being able to jump when close to obstacles.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.699999988079071,
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
@@ -395,7 +395,7 @@
       {
         "id": "filters",
         "description": "Conditions that need to be met for the behavior to start.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "AND": null,
           "NOT": null,
@@ -414,39 +414,39 @@
               "id": "domain",
               "title": "Domain",
               "description": "The domain the test should be performed in.",
-              "dataType": 16
+              "dataType": "object"
             },
             {
               "id": "operator",
               "title": "Operator",
               "description": "The comparison to apply with 'value'.",
-              "dataType": 16
+              "dataType": "object"
             },
             {
               "id": "subject",
               "title": "Subject",
               "description": "The subject of this filter test.",
-              "dataType": 16
+              "dataType": "object"
             },
             {
               "id": "test",
               "title": "Test",
               "description": "The name of the test to apply.",
-              "dataType": 2,
+              "dataType": "string",
               "isRequired": true
             },
             {
               "id": "value",
               "title": "Value",
               "description": "The value being compared with the test.",
-              "dataType": 16
+              "dataType": "object"
             }
           ]
         },
         "alternates": [
           {
             "id": "filters",
-            "dataType": 16
+            "dataType": "object"
           }
         ],
         "samples": {
@@ -485,7 +485,7 @@
         "id": "jump_angles",
         "title": "Jump Angles",
         "description": "The jump angles in float degrees that are allowed when performing the jump. The order in which the angles are chosen is randomized.",
-        "dataType": 32,
+        "dataType": "numberArray",
         "defaultValue": [
           40,
           55,
@@ -512,7 +512,7 @@
         "id": "jump_cooldown_duration",
         "title": "Jump Cooldown Duration",
         "description": "The time in seconds to spend in cooldown before this goal can be used again.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.5,
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
@@ -527,7 +527,7 @@
         "id": "jump_cooldown_when_hurt_duration",
         "title": "Jump Cooldown When Hurt Duration",
         "description": "The time in seconds to spend in cooldown after being hurt before this goal can be used again.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.10000000149011612,
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
@@ -542,7 +542,7 @@
         "id": "landing_distance_from_target",
         "title": "Landing Distance From Target",
         "description": "The range deciding how close to and how far away from the target the landing position can be when jumping.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 8,
           "min": 4
@@ -564,7 +564,7 @@
         "id": "landing_position_spread_degrees",
         "title": "Landing Position Spread Degrees",
         "description": "This angle (in degrees) is used for controlling the spread when picking a landing position behind the target. A zero spread angle means the landing position will be straight behind the target with no variance. A 90 degree spread angle means the landing position can be up to 45 degrees to the left and to the right of the position straight behind the target's view direction.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 90,
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
@@ -579,7 +579,7 @@
         "id": "last_hurt_duration",
         "title": "Last Hurt Duration",
         "description": "If the entity was hurt within these last seconds, the jump_cooldown_when_hurt_duration will be used instead of jump_cooldown_duration.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 2,
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
@@ -594,7 +594,7 @@
         "id": "line_of_sight_obstruction_height_ignore",
         "title": "Line Of Sight Obstruction Height Ignore",
         "description": "If the entity's line of sight towards its target is obstructed by an obstacle with a height below this number, the obstacle will be ignored, and the goal will try to find a valid landing position.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 4,
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
@@ -609,7 +609,7 @@
         "id": "max_jump_velocity",
         "title": "Max Jump Velocity",
         "description": "Maximum velocity a jump can be performed at.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1.399999976158142,
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
@@ -624,7 +624,7 @@
         "id": "prepare_jump_duration",
         "title": "Prepare Jump Duration",
         "description": "The time in seconds to spend preparing for the jump.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.5,
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
@@ -638,7 +638,7 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
@@ -653,7 +653,7 @@
         "id": "required_vertical_space",
         "title": "Required Vertical Space",
         "description": "The number of blocks above the entity's head that has to be air for this goal to be usable.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 4,
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
@@ -668,7 +668,7 @@
         "id": "snap_to_surface_block_range",
         "title": "Snap To Surface Block Range",
         "description": "The number of blocks above and below from the jump target position that will be checked to find a surface to land on.",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 10,
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
@@ -683,7 +683,7 @@
         "id": "valid_distance_to_target",
         "title": "Valid Distance To Target",
         "description": "Target needs to be within this range for the jump to happen.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 20,
           "min": 4

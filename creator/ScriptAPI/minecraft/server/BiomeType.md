@@ -21,14 +21,9 @@ Identifier of the biome type.
 Type: *string*
 
 ## Methods
-::: moniker range="=minecraft-bedrock-experimental"
 - [getTags](#gettags)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [hasTags](#hastags)
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getTags**
 `
 getTags(): string[]
@@ -38,11 +33,6 @@ Returns a list of the biome's tags.
 
 **Returns** *string*[]
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **hasTags**
 `
 hasTags(tags: string[]): boolean
@@ -56,7 +46,3 @@ Checks if the biome has all of the provided tags.
   The list of tags to check against the biome.
 
 **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end

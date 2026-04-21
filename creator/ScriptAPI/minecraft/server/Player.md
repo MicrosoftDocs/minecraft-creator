@@ -240,6 +240,22 @@ Notes:
   - This property can throw errors when used.
     - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **playfabId**
+`read-only playfabId: string;`
+
+Gets the player's Playfab ID.
+
+Type: *string*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
+
 ### **selectedSlotIndex**
 `selectedSlotIndex: number;`
 
@@ -279,6 +295,9 @@ Notes:
 - [getControlScheme](#getcontrolscheme)
 - [getGameMode](#getgamemode)
 - [getItemCooldown](#getitemcooldown)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getPing](#getping)
+::: moniker-end
 - [getSpawnPoint](#getspawnpoint)
 - [getTotalXp](#gettotalxp)
 - [playMusic](#playmusic)
@@ -431,6 +450,25 @@ Gets the current item cooldown time for a particular cooldown category.
   
 Notes:
 - This function can throw errors.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getPing**
+`
+getPing(): number
+`
+
+Gets the player's ping in milliseconds.
+
+**Returns** *number* - The player's ping in milliseconds.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
 
 ### **getSpawnPoint**
 `

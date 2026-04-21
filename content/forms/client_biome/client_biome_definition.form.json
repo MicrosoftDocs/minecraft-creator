@@ -24,7 +24,7 @@
         "id": "components",
         "title": "Components",
         "description": "Components for this Client Biome.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "client_biome/client_biome_components",
         "isRequired": true
       },
@@ -32,7 +32,7 @@
         "id": "description",
         "title": "Description",
         "description": "Non-component settings, including the Client Biome name.",
-        "dataType": 16,
+        "dataType": "object",
         "subFormId": "client_biome/client_biome_description",
         "isRequired": true
       }

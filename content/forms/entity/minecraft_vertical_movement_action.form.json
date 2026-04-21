@@ -24,7 +24,7 @@
         "title": "Vertical Velocity",
         "description": "Vertical velocity to apply when jump action is issued.",
         "defaultValue": 0.5,
-        "dataType": 3
+        "dataType": "float"
       }
     ],
     "samples": {}

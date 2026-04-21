@@ -1,0 +1,10 @@
+{
+  "id": "query.fuse_time",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.fuse_time",
+    "title": "Fuse Time",
+    "description": "Returns the remaining fuse time of the entity. Returns -1 if the entity doesn't have a \"minecraft:explode\" component.",
+    "fields": []
+  }
+}

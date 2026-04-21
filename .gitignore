@@ -12,6 +12,7 @@ _repo.*/
 *.tsbuildinfo
 *.localhistory/
 
+temp/
 dlresources/
 node_modules/
 bin/

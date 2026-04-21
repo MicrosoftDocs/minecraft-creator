@@ -104,7 +104,7 @@
         "id": "add",
         "title": "Add",
         "description": "List of components to add to the entity after the transformation",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "List of components to add to the entity after the transformation",
@@ -113,7 +113,7 @@
               "id": "component_groups",
               "title": "Component Groups",
               "description": "Names of component groups to add",
-              "dataType": 17
+              "dataType": "stringArray"
             }
           ]
         }
@@ -122,13 +122,13 @@
         "id": "begin_transform_sound",
         "title": "Begin Transform Sound",
         "description": "Sound to play when the transformation starts",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "delay",
         "title": "Delay",
         "description": "Defines the properties of the delay for the transformation",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "Defines the properties of the delay for the transformation",
@@ -138,55 +138,55 @@
               "title": "Block Assist Chance",
               "description": "Chance that the entity will look for nearby blocks that can speed up the transformation. Value must be between 0.0 and 1.0",
               "defaultValue": 0,
-              "dataType": 3
+              "dataType": "float"
             },
             {
               "id": "block_chance",
               "title": "Block Chance",
               "description": "Chance that, once a block is found, will help speed up the transformation",
               "defaultValue": 0,
-              "dataType": 3
+              "dataType": "float"
             },
             {
               "id": "block_max",
               "title": "Block Max",
               "description": "Maximum number of blocks the entity will look for to aid in the transformation. If not defined or set to 0, it will be set to the block radius",
               "defaultValue": 0,
-              "dataType": 0
+              "dataType": "int"
             },
             {
               "id": "block_radius",
               "title": "Block Radius",
               "description": "Distance in Blocks that the entity will search for blocks that can help the transformation",
               "defaultValue": 0,
-              "dataType": 0
+              "dataType": "int"
             },
             {
               "id": "block_types",
               "title": "Block Types",
               "description": "List of blocks that can help the transformation of this entity",
-              "dataType": 17
+              "dataType": "stringArray"
             },
             {
               "id": "range_max",
               "title": "Range Max",
               "description": "Time in seconds to be added to value to have the maximum random time range value until the entity transforms (if non-zero then the time in seconds before the entity transforms will be random between value+range_min and value+range_max)",
               "defaultValue": 0,
-              "dataType": 3
+              "dataType": "float"
             },
             {
               "id": "range_min",
               "title": "Range Min",
               "description": "Time in seconds to be added to value to have the minimum random time range value until the entity transforms (if non-zero then the time in seconds before the entity transforms will be random between value+range_min and value+range_max)",
               "defaultValue": 0,
-              "dataType": 3
+              "dataType": "float"
             },
             {
               "id": "value",
               "title": "Value",
               "description": "Time in seconds before the entity transforms",
               "defaultValue": 0,
-              "dataType": 3
+              "dataType": "float"
             }
           ]
         },
@@ -210,14 +210,14 @@
         "title": "Drop Equipment",
         "description": "Cause the entity to drop all equipment upon transformation",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "drop_inventory",
         "title": "Drop Inventory",
         "description": "Cause the entity to drop all items in inventory upon transformation",
         "defaultValue": false,
-        "dataType": 1,
+        "dataType": "boolean",
         "samples": {
           "/vanilla/behavior_pack/entities/skeleton.json": [
             {
@@ -231,14 +231,8 @@
         "id": "into",
         "title": "Into",
         "description": "Entity Definition that this entity will transform into",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
-              "content": "minecraft:zoglin"
-            }
-          ],
           "/vanilla/behavior_pack/entities/pig.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:pig_transform/minecraft:transformation/",
@@ -264,14 +258,8 @@
         "title": "Keep Level",
         "description": "If this entity has trades and has leveled up, it should maintain that level after transformation.",
         "defaultValue": false,
-        "dataType": 1,
+        "dataType": "boolean",
         "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
-              "content": true
-            }
-          ],
           "/vanilla/behavior_pack/entities/skeleton.json": [
             {
               "path": "/minecraft:entity/component_groups/become_stray/minecraft:transformation/",
@@ -285,14 +273,14 @@
         "title": "Keep Owner",
         "description": "If this entity is owned by another entity, it should remain owned after transformation.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "preserve_equipment",
         "title": "Preserve Equipment",
         "description": "Cause the entity to keep equipment after going through transformation",
         "defaultValue": false,
-        "dataType": 1,
+        "dataType": "boolean",
         "samples": {
           "/vanilla/behavior_pack/entities/skeleton.json": [
             {
@@ -306,14 +294,8 @@
         "id": "transformation_sound",
         "title": "Transformation Sound",
         "description": "Sound to play when the entity is done transforming",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
-          "/vanilla/behavior_pack/entities/hoglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
-              "content": "mob.hoglin.converted_to_zombified"
-            }
-          ],
           "/vanilla/behavior_pack/entities/pig.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:pig_transform/minecraft:transformation/",
@@ -330,16 +312,6 @@
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/hoglin.json": [
-        {
-          "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
-          "content": {
-            "into": "minecraft:zoglin",
-            "transformation_sound": "mob.hoglin.converted_to_zombified",
-            "keep_level": true
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/pig.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:pig_transform/minecraft:transformation/",

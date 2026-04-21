@@ -81,26 +81,26 @@
         "title": "Allow Name Tag Renaming",
         "description": "If true, this entity can be renamed with name tags",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "always_show",
         "title": "Always Show",
         "description": "If true, the name will always be shown",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": "boolean"
       },
       {
         "id": "default_trigger",
         "title": "Default Trigger",
         "description": "Trigger to run when the entity gets named",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "name_actions",
         "title": "Name Actions",
         "description": "Describes the special names for this entity and the events to call when the entity acquires those names",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subForm": {
           "id": "",
           "description": "Describes the special names for this entity and the events to call when the entity acquires those names",
@@ -109,13 +109,13 @@
               "id": "name_filter",
               "title": "Name Filter",
               "description": "List of special names that will cause the events defined in 'on_named' to fire",
-              "dataType": 2
+              "dataType": "string"
             },
             {
               "id": "on_named",
               "title": "Named",
               "description": "Event to be called when this entity acquires the name specified in 'name_filter'",
-              "dataType": 22
+              "dataType": "minecraftEventTrigger"
             }
           ]
         }

@@ -12,7 +12,7 @@ ms.date: 05/05/2025
 Many packs in Minecraft present broad gameplay experiences, and it's natural that you might want to let players tailor how that experience functions out in their world. For example, you can imagine a pack that has specific settings for how much treasure is dropped, or the mix of mobs that are spawned, or specific types of assists that might be given. Pack settings provides a consistent "meta-experience" across packs that can help players get just the gameplay experience they are looking for.
 
 > [!NOTE]
-> The pack settings capability for behavior packs is still experimental and subject to change, as of Minecraft preview versions 1.21.110. It may be significantly altered or even removed in future updates. Pack settings support for resource packs will be available in the next release.
+> The pack settings capability for **behavior packs** is still experimental and subject to change, as of Minecraft preview versions 1.21.110.
 
 ### Elements of Custom Pack Settings
 
@@ -83,7 +83,21 @@ Pack settings is an ordered list of different controls that you can add that sho
 * The `slider` setting type lets you pick a number within a range. 
 * The `dropdown` setting type lets you choose between a fixed number of options.
 
-### Accessing pack settings in game: Behavior Packs
+All setting types have a `text` field which supports localization IDs, allowing you to provide translations for different languages.
+
+### Accessing pack settings in game: Resource Packs
+
+You can define custom settings in a resource pack’s manifest.json just as you would in a behavior pack. These settings can be accessed using Molang, allowing you to dynamically adjust models, animations, particles, and render controllers based on resource pack settings.
+
+Three new Molang queries will can be used to access pack settings:
+
+- `query.get_pack_setting('mypack:explosion_power')` the value of a slider
+- `query.is_pack_setting_enabled('mypack:explosion_hands')` check if toggle is enabled
+- `query.is_pack_setting_selected('mypack:explosion_level', 'high')` if a dropdown option is selected
+
+Keep in mind that [Subpacks](./../UtilizingSubpacks.md) also can come with a singular slider setting that can configure which sets of files load for a resource pack. Configuring a resource pack via a subpack slider remains a great choice for certain types of customizations (e.g., scaling the resources that get loaded based on performance tier of the device).
+
+### Accessing pack settings in game: Behavior Packs (experimental)
 
 Within behavior packs, custom pack settings can be accessed via new [`world.getPackSettings()` APIs](../../ScriptAPI/minecraft/server/World.md), currently in Beta. The following code snippet from the Configurable Pack samples shows how to use this:
 
@@ -104,19 +118,6 @@ Within behavior packs, custom pack settings can be accessed via new [`world.getP
       }
     }
 ```
-
-### Accessing pack settings in game: Resource Packs
-
-You can define custom settings in a resource pack’s manifest.json just as you would in a behavior pack. These settings can be accessed using Molang, allowing you to dynamically adjust models, animations, particles, and render controllers based on resource pack settings.
-
-Three new Molang queries will can be used to access pack settings:
-
-- `query.get_pack_setting('mypack:explosion_power')` the value of a slider
-- `query.is_pack_setting_enabled('mypack:explosion_hands')` check if toggle is enabled
-- `query.is_pack_setting_selected('mypack:explosion_level', 'high')` if a dropdown option is selected
-
-Keep in mind that [Subpacks](./../UtilizingSubpacks.md) also can come with a singular slider setting that can configure which sets of files load for a resource pack. Configuring a resource pack via a subpack slider remains a great choice for certain types of customizations (e.g., scaling the resources that get loaded based on performance tier of the device).
-
 
  ### Summary
 

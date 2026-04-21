@@ -29,7 +29,7 @@
         "title": "Operator",
         "description": "(Optional) The comparison to apply with 'value'.",
         "defaultValue": "equals",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "!=",
@@ -88,7 +88,7 @@
         "title": "Subject",
         "description": "(Optional) The subject of this filter test.",
         "defaultValue": "self",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "block",
@@ -132,32 +132,16 @@
         "title": "Value",
         "description": "(Optional) true or false.",
         "defaultValue": true,
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/entities/fox.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:defending_fox/minecraft:environment_sensor/triggers[0]/filters/all_of[0]/",
-              "content": true
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers[0]/filters/all_of[1]/",
-              "content": true
-            }
-          ]
-        }
+        "dataType": "boolean"
       },
       {
         "id": "test",
         "title": "Test",
-        "dataType": 2,
+        "dataType": "string",
         "samples": {
-          "/vanilla/behavior_pack/entities/fox.json": [
+          "/vanilla/behavior_pack/entities/iron_golem.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:defending_fox/minecraft:environment_sensor/triggers[0]/filters/all_of[0]/",
-              "content": "is_daytime"
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:defending_fox/minecraft:environment_sensor/triggers[1]/filters/all_of[0]/",
+              "path": "/minecraft:entity/components/minecraft:behavior.offer_flower/filters/",
               "content": "is_daytime"
             }
           ]
@@ -173,78 +157,6 @@
         {
           "path": "Short (using Defaults)..",
           "content": "{ \"test\": \"is_daytime\" }"
-        }
-      ],
-      "/vanilla/behavior_pack/entities/fox.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:defending_fox/minecraft:environment_sensor/triggers[0]/filters/all_of[0]/",
-          "content": {
-            "test": "is_daytime",
-            "value": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:defending_fox/minecraft:environment_sensor/triggers[1]/filters/all_of[0]/",
-          "content": {
-            "test": "is_daytime",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers[0]/filters/all_of[1]/",
-          "content": {
-            "test": "is_daytime",
-            "value": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers[1]/filters/all_of[1]/",
-          "content": {
-            "test": "is_daytime",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:fox_day/minecraft:environment_sensor/triggers[1]/filters/",
-          "content": {
-            "test": "is_daytime",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:fox_night/minecraft:environment_sensor/triggers[1]/filters/",
-          "content": {
-            "test": "is_daytime",
-            "value": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:scheduler/scheduled_events[1]/filters/all_of[0]/",
-          "content": {
-            "test": "is_daytime",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:scheduler/scheduled_events[2]/filters/all_of[1]/any_of[0]/",
-          "content": {
-            "test": "is_daytime",
-            "value": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[0]/filters/",
-          "content": {
-            "test": "is_daytime",
-            "value": false
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers[1]/filters/",
-          "content": {
-            "test": "is_daytime",
-            "value": true
-          }
         }
       ],
       "/vanilla/behavior_pack/entities/iron_golem.json": [

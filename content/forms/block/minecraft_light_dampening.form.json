@@ -35,7 +35,7 @@
     "scalarField": {
       "id": "integer",
       "title": "Integer",
-      "dataType": 0
+      "dataType": "int"
     }
   }
 }

@@ -25,7 +25,7 @@
         "id": "fog_identifier",
         "title": "Fog Identifier",
         "description": "Identifier of fog definition to use",
-        "dataType": 16,
+        "dataType": "object",
         "isRequired": true
       }
     ]

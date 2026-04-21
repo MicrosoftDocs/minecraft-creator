@@ -23,17 +23,24 @@ Alignment of the map in the container. If not defined, LayoutAlignment.Center is
 
 Type: *LayoutAlignment*
 
+### **clickable**
+`clickable?: boolean;`
+
+Whether the minimap is clickable. If undefined, defaults to true.
+
+Type: *boolean*
+
+### **customMarkerIcons**
+`customMarkerIcons?: Record<string, string>;`
+
+Custom marker icon registration. Maps the iconIdentifier (used when adding custom markers via addCustomMarker) to image resource paths for UI rendering. Only needed for Custom marker type. Multiplayer and Location use built-in icons.
+
+Type: *Record<string, string>*
+
 ### **isMeMarkerShown**
 `isMeMarkerShown?: boolean;`
 
 Whether to show me marker on the minimap. If undefined, defaults to true.
-
-Type: *boolean*
-
-### **isMultiplayerMarkerShown**
-`isMultiplayerMarkerShown?: boolean;`
-
-Whether to show multiplayer markers on the minimap. If undefined, defaults to false.
 
 Type: *boolean*
 
@@ -51,8 +58,15 @@ Type: *number* | *{
     }*
 
 ### **onClick**
-`onClick?: (arg0: number, arg1: number) => void;`
+`onClick?: (arg0: number, arg1: number, arg2: number) => void;`
 
-Called when map is clicked.
+Called when the minimap is clicked.
 
-Type: (arg0: *number*, arg1: *number*) => *void*
+Type: (arg0: *number*, arg1: *number*, arg2: *number*) => *void*
+
+### **visibleMarkerTypes**
+`visibleMarkerTypes?: MinimapMarkerType[];`
+
+Per-type marker visibility. If omitted, no marker types are shown. Only controls presentation. Markers must be added via C++ API to exist.
+
+Type: *MinimapMarkerType*[]

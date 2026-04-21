@@ -49,7 +49,7 @@
         "id": "composting_chance",
         "title": "Composting Chance",
         "description": "The chance of this item to create a layer upon composting with the composter. Valid value range is 1 - 100 inclusive",
-        "dataType": 0,
+        "dataType": "int",
         "validity": [
           {
             "comparison": ">=",

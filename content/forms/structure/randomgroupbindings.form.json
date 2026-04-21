@@ -23,14 +23,14 @@
         "id": "data",
         "title": "Data",
         "description": "Item's data",
-        "dataType": 17,
+        "dataType": "stringArray",
         "isRequired": true
       },
       {
         "id": "weight",
         "title": "Weight",
         "description": "Weight of item",
-        "dataType": 0,
+        "dataType": "int",
         "isRequired": true
       }
     ]

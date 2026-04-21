@@ -21,27 +21,27 @@
       {
         "id": "authors",
         "title": "Authors",
-        "dataType": 17
+        "dataType": "stringArray"
       },
       {
         "id": "generated_with",
         "title": "Generated With",
-        "dataType": 16
+        "dataType": "object"
       },
       {
         "id": "license",
         "title": "License",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "product_type",
         "title": "Product Type",
-        "dataType": 2
+        "dataType": "string"
       },
       {
         "id": "url",
         "title": "Url",
-        "dataType": 2
+        "dataType": "string"
       }
     ]
   },

@@ -23,7 +23,7 @@
         "id": "minecraft:connection",
         "title": "Minecraft Connection",
         "description": "Adds connection states to the block. The values of these states are updated when the block or neighboring blocks change.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "enabled_states": []
         },
@@ -33,7 +33,7 @@
         "id": "minecraft:multi_block",
         "title": "Minecraft Multi Block",
         "description": "Adds the \"minecraft:multi_block_part\" state and multi block functionality to the block.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "direction": "up",
           "enabled_states": [],
@@ -45,7 +45,7 @@
         "id": "minecraft:placement_direction",
         "title": "Minecraft Placement Direction",
         "description": "Adds the \"minecraft:cardinal_direction\", \"minecraft:facing_direction\" and/or \"minecraft:corner_and_cardinal_direction\" states and setter function to the block.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "blocks_to_corner_with": [],
           "enabled_states": [],
@@ -58,7 +58,7 @@
         "id": "minecraft:placement_position",
         "title": "Minecraft Placement Position",
         "description": "Adds the \"minecraft:block_face\" and/or \"minecraft:vertical_half\" states and setter function to the block.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "enabled_states": []
         },

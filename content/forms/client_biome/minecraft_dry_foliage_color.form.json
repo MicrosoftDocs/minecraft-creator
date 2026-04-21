@@ -23,11 +23,11 @@
         "id": "color",
         "title": "Color",
         "description": "RGB color of dry foliage",
-        "dataType": 2,
+        "dataType": "string",
         "alternates": [
           {
             "id": "color",
-            "dataType": 32,
+            "dataType": "numberArray",
             "minLength": 3,
             "maxLength": 3
           }

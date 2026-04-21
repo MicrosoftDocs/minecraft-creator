@@ -84,8 +84,6 @@ The maximum number of commands that can be executed simultaneously by the /funct
 `KeepInventory = "keepInventory"`
 
 Controls whether players keep their inventories when they die.
-### **LocatorBar**
-`LocatorBar = "locatorBar"`
 ### **MaxCommandChainLength**
 `MaxCommandChainLength = "maxCommandChainLength"`
 
@@ -102,6 +100,10 @@ Controls whether players can regenerate health.
 `PlayersSleepingPercentage = "playersSleepingPercentage"`
 
 The percentage of players required to be sleeping in order to advance to the next day.
+### **PlayerWaypoints**
+`PlayerWaypoints = "playerWaypoints"`
+
+Controls which player waypoints are automatically added to the players locator bar.
 ### **ProjectilesCanBreakBlocks**
 `ProjectilesCanBreakBlocks = "projectilesCanBreakBlocks"`
 

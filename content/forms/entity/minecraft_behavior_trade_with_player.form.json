@@ -22,21 +22,21 @@
         "id": "filters",
         "title": "Filters",
         "description": "Conditions that need to be met for the behavior to start.",
-        "dataType": 20
+        "dataType": "minecraftFilter"
       },
       {
         "id": "max_distance_from_player",
         "title": "Max Distance From Player",
         "description": "The max distance that the mob can be from the player before exiting the goal.",
         "defaultValue": 8,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "priority",
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "samples": {}

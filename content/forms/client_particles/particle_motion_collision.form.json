@@ -38,19 +38,19 @@
       {
         "id": "coefficient_of_restitution",
         "title": "Coefficient Of Restitution",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0
       },
       {
         "id": "collision_drag",
         "title": "Collision Drag",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0
       },
       {
         "id": "collision_radius",
         "title": "Collision Radius",
-        "dataType": 3,
+        "dataType": "float",
         "validity": [
           {
             "comparison": "<=",
@@ -62,12 +62,12 @@
       {
         "id": "enabled",
         "title": "Enabled",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": 1,
         "alternates": [
           {
             "id": "enabled",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "enabled",
@@ -76,13 +76,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -90,18 +90,18 @@
           },
           {
             "id": "enabled",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       },
       {
         "id": "events",
         "title": "Events",
-        "dataType": 15,
+        "dataType": "objectArray",
         "alternates": [
           {
             "id": "events",
-            "dataType": 16,
+            "dataType": "object",
             "subForm": {
               "id": "events",
               "title": "Events",
@@ -109,13 +109,13 @@
                 {
                   "id": "event",
                   "title": "Event",
-                  "dataType": 16,
+                  "dataType": "object",
                   "isRequired": true
                 },
                 {
                   "id": "min_speed",
                   "title": "Min Speed",
-                  "dataType": 3,
+                  "dataType": "float",
                   "defaultValue": 2
                 }
               ]
@@ -126,7 +126,7 @@
       {
         "id": "expire_on_contact",
         "title": "Expire On Contact",
-        "dataType": 1,
+        "dataType": "boolean",
         "defaultValue": false
       }
     ]

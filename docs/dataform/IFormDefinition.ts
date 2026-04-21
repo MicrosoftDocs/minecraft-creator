@@ -4,6 +4,59 @@
 import IField from "./IField";
 import ISummarizer from "./ISummarizer";
 
+/**
+ * Represents a parameter in a command overload.
+ * Used to define the structure of command overloads in form definitions.
+ */
+export interface IFormOverloadParam {
+  /**
+   * Name of the parameter. Should match the id of a field in the parent form.
+   */
+  name: string;
+
+  /**
+   * The type of the parameter (e.g., "POSITION", "BLOCK", "SELECTION").
+   */
+  type: string;
+
+  /**
+   * Whether this parameter is optional in this overload.
+   */
+  isOptional?: boolean;
+}
+
+/**
+ * Represents a command overload - a specific way to call a command with different parameters.
+ * Commands can have multiple overloads representing different usage patterns.
+ */
+export interface IFormOverload {
+  /**
+   * Unique identifier for this overload.
+   */
+  id: string;
+
+  /**
+   * Human-readable title/header for this overload.
+   */
+  title?: string;
+
+  /**
+   * Description of what this overload does.
+   */
+  description?: string;
+
+  /**
+   * The parameters for this overload, in order.
+   */
+  params: IFormOverloadParam[];
+
+  /**
+   * Example command strings demonstrating this overload in action.
+   * Each entry is an object with a command string and an optional description.
+   */
+  samples?: { command: string; description?: string }[];
+}
+
 export interface IFormSample {
   /**
    * Path where the sample is exhibited, or simple description of the sample.
@@ -32,6 +85,65 @@ export interface IFormDependency {
    * This can help clarify the purpose and usage of the dependency.
    */
   description?: string;
+}
+
+/**
+ * Defines the layout style for grouped fields.
+ */
+export enum FieldGroupLayout {
+  /**
+   * Fields are rendered in a horizontal flow, wrapping to new rows as needed.
+   */
+  flow = "flow",
+  /**
+   * Fields are rendered in a compact grid layout.
+   */
+  grid = "grid",
+  /**
+   * Fields are rendered vertically but with reduced spacing.
+   */
+  compact = "compact",
+}
+
+/**
+ * IFieldGroup defines a group of related fields that should be rendered together
+ * in a more compact or visually cohesive manner.
+ */
+export interface IFieldGroup {
+  /**
+   * Unique identifier for the field group.
+   * Fields reference this via their groupId property.
+   */
+  id: string;
+
+  /**
+   * Optional human-readable title for the group.
+   * Displayed once for the entire group, not repeated per field.
+   */
+  title?: string;
+
+  /**
+   * Optional human-readable description for the group.
+   * Displayed once for the entire group instead of repeating per field.
+   */
+  description?: string;
+
+  /**
+   * Layout style for the grouped fields.
+   * Defaults to "flow" which renders fields horizontally with wrapping.
+   */
+  layout?: FieldGroupLayout;
+
+  /**
+   * If true, individual field titles are hidden (only group title is shown).
+   * Field titles will still appear as placeholders or tooltips.
+   */
+  hideFieldTitles?: boolean;
+
+  /**
+   * If true, individual field descriptions are hidden (only group description is shown).
+   */
+  hideFieldDescriptions?: boolean;
 }
 
 /**
@@ -76,6 +188,12 @@ export default interface IFormDefinition {
    * This is the fundamental structure of the form definition, detailing the data it can contain.
    */
   fields: IField[];
+
+  /**
+   * Optional list of field groups that define how related fields should be rendered together.
+   * Fields reference groups via their groupId property.
+   */
+  fieldGroups?: IFieldGroup[];
 
   /**
    * A base definition of the data in this form that can be used as foundation for any annotations or modifications.
@@ -196,6 +314,49 @@ export default interface IFormDefinition {
   customField?: IField;
 
   /**
+   * Optional list of form definition IDs that this form is an alias of.
+   * When this form is essentially the same as another form, this property can reference the canonical form(s).
+   * Useful for command parameter types that have multiple names for the same underlying type.
+   */
+  aliasOf?: string[];
+
+  /**
+   * Optional format hint string showing the expected syntax or pattern for data of this form.
+   * For example, "@a, @e, @p, @r, @s" for entity selectors, or "x y z" for positions.
+   */
+  formatHint?: string;
+
+  /**
+   * For command forms, the list of command overloads representing different ways to call the command.
+   * Each overload has a specific set of parameters.
+   */
+  overloads?: IFormOverload[];
+
+  /**
+   * For command forms, a list of alias names for this command.
+   * For example, "teleport" has an alias "tp".
+   * Note: This is different from `aliasOf` which points to other forms this is an alias of.
+   */
+  aliases?: string[];
+
+  /**
+   * For command forms, the permission level required to execute the command.
+   * 0 = any, 1 = game directors, 2 = admin, 3 = host, 4 = owner.
+   */
+  permissionLevel?: number;
+
+  /**
+   * For command forms, whether cheats must be enabled to use this command.
+   */
+  requiresCheats?: boolean;
+
+  /**
+   * For command forms, example command strings demonstrating the command in action.
+   * These are rendered in an "Examples" section at the bottom of the command doc page.
+   */
+  commandSamples?: { command: string; description?: string }[];
+
+  /**
    * Controls whether the validator should flag unexpected properties that are not defined in the form's fields.
    * If true, the validator will report any properties that are not in the schema as validation errors.
    * If false or undefined, unexpected properties will be allowed (default behavior for Minecraft content).
@@ -232,4 +393,15 @@ export default interface IFormDefinition {
    * @example \"entity/minecraft_health\"
    */
   summarizerId?: string;
+
+  /**
+   * Optional noun to use in summarizer output.
+   * When present, the summarizer will prepend "This <noun>" to the summary.
+   * If not provided and no prefix is specified at render time, the first letter
+   * of the summary will be capitalized.
+   *
+   * @example "feature rule" → "This feature rule defines..."
+   * @example "entity" → "This entity has..."
+   */
+  summarizerNoun?: string;
 }

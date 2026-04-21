@@ -42,13 +42,13 @@
       {
         "id": "direction",
         "title": "Direction",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "minLength": 3,
         "maxLength": 3,
         "alternates": [
           {
             "id": "direction",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "direction",
@@ -57,13 +57,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -71,14 +71,14 @@
           },
           {
             "id": "direction",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       },
       {
         "id": "offset",
         "title": "Offset",
-        "dataType": 24,
+        "dataType": "keyedStringCollection",
         "defaultValue": [
           0,
           0,
@@ -89,7 +89,7 @@
         "alternates": [
           {
             "id": "offset",
-            "dataType": 14,
+            "dataType": "keyedObjectCollection",
             "readOnly": true,
             "subForm": {
               "id": "offset",
@@ -98,13 +98,13 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2,
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0,
+                  "dataType": "int",
                   "isRequired": true
                 }
               ]
@@ -112,7 +112,7 @@
           },
           {
             "id": "offset",
-            "dataType": 3
+            "dataType": "float"
           }
         ]
       }

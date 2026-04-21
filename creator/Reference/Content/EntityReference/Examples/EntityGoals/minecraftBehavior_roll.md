@@ -13,11 +13,20 @@ ms.date: 02/11/2025
 This allows the mob to roll forward.
 
 
-## Roll Behavior Properties
+## Entity Roll Behavior Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
-| probability | *not set* | Decimal number | The probability that the mob will use the goal. | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
+| probability | 0.019999999552965164 | Decimal number | The probability that the mob will use the goal. | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples

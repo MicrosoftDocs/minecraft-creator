@@ -21,14 +21,14 @@
       {
         "id": "groups",
         "title": "Groups",
-        "dataType": 15,
+        "dataType": "objectArray",
         "subFormId": "entity/tradegroup",
         "isRequired": true
       },
       {
         "id": "total_exp_required",
         "title": "Total Exp Required",
-        "dataType": 0,
+        "dataType": "int",
         "isRequired": true
       }
     ]

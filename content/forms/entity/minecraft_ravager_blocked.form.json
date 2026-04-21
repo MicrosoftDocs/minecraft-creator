@@ -23,14 +23,14 @@
         "title": "Knockback Strength",
         "description": "The strength with which blocking entities should be knocked back",
         "defaultValue": 3,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "reaction_choices",
         "title": "Reaction Choices",
         "description": "A list of weighted responses to the melee attack being blocked",
         "defaultValue": "[ ]",
-        "dataType": 17
+        "dataType": "stringArray"
       }
     ],
     "samples": {}

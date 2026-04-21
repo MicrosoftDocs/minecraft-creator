@@ -1326,7 +1326,7 @@
         "id": "angle_of_view_horizontal",
         "title": "Angle Of View Horizontal",
         "description": "The angle in degrees that the mob can see rotated on the Y-axis (left-right).",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 360,
         "validity": [
           {
@@ -1339,7 +1339,7 @@
         "id": "angle_of_view_vertical",
         "title": "Angle Of View Vertical",
         "description": "The angle in degrees that the mob can see rotated on the X-axis (up-down).",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 360,
         "validity": [
           {
@@ -1351,7 +1351,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -1372,7 +1372,7 @@
         "id": "look_distance",
         "title": "Look Distance",
         "description": "The distance in blocks from which the entity will look at the nearest entity.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 8,
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
@@ -1399,7 +1399,7 @@
         "id": "look_time",
         "title": "Look Time",
         "description": "Time range to look at the nearest entity.",
-        "dataType": 16,
+        "dataType": "object",
         "defaultValue": {
           "max": 4,
           "min": 2
@@ -1420,7 +1420,7 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0,
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
@@ -1447,7 +1447,7 @@
         "id": "probability",
         "title": "Probability",
         "description": "The probability of looking at the target. A value of 1.00 is 100%.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.019999999552965164,
         "validity": [
           {

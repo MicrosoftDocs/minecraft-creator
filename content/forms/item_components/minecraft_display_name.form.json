@@ -289,7 +289,7 @@
         "id": "value",
         "title": "Value",
         "description": "Name shown for an item.",
-        "dataType": 2,
+        "dataType": "string",
         "defaultValue": ""
       }
     ]

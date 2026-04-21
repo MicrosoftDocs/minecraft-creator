@@ -27,20 +27,20 @@ Sets or queries a game rule value. See more in the [Popular Commands documentati
 Check the current game rule.
 
 ### Set game rule, Boolean
-`/gamerule <rule: BoolGameRule> [value: Boolean]`
+`/gamerule playerwaypoints <value: playerwaypointsValues>`
 
 Set a gamerule using a `Boolean`.
 
-### Set game rule, integer
-`/gamerule <rule: IntGameRule> [value: int]`
+### `/gamerule <rule: BoolGameRule> [value: Boolean]`
 
-Set a gamerule using an `integer`.
+### `/gamerule <rule: IntGameRule> [value: int]`
 
 ## Arguments
 - `rule`: BoolGameRule
 Boolean game rule setting
 - `rule`: IntGameRule
 Integer game rule setting
+- `value`: playerwaypointsValues
 - `value`: [Boolean](../enums/Boolean.md)
 Boolean value
 - `value`: int
@@ -85,7 +85,6 @@ controls whether mob griefing can happen in the world
 controls whether players can damage each other
 - `showcoordinates`
 controls whether coordinates are displayed
-- `locatorbar`
 - `showdaysplayed`
 - `naturalregeneration`
 controls whether players can regenerate health
@@ -135,3 +134,9 @@ Function Command Limit
 - `spawnradius`
 Spawn Radius
 - `playerssleepingpercentage`
+
+### `playerwaypointsValues`
+
+#### Values
+- `everyone`
+- `off`

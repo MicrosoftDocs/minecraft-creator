@@ -22,7 +22,7 @@
       {
         "id": "type",
         "title": "BlockEntityModifierType",
-        "dataType": 2,
+        "dataType": "string",
         "choices": [
           {
             "id": "minecraft:append_loot",

@@ -38,21 +38,21 @@
         "title": "Fractional Rotation",
         "description": "The entity will attempt to rotate to face where the player is facing each tick. The entity will target this percentage of their difference in their current facing angles each tick (from 0.0 to 1.0 where 1.0 = 100%). This is limited by FractionalRotationLimit. A value of 0.0 will result in the entity no longer turning to where the player is facing.",
         "defaultValue": 0.5,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "fractional_rotation_limit",
         "title": "Fractional Rotation Limit",
         "description": "Limits the total degrees the entity can rotate to face where the player is facing on each tick.",
         "defaultValue": 5,
-        "dataType": 3
+        "dataType": "float"
       },
       {
         "id": "mount_speed_multiplier",
         "title": "Mount Speed Multiplier",
         "description": "Speed multiplier of mount when controlled by player.",
         "defaultValue": 1,
-        "dataType": 3,
+        "dataType": "float",
         "samples": {
           "/vanilla/behavior_pack/entities/strider.json": [
             {
@@ -67,7 +67,7 @@
         "title": "Priority",
         "hideSamples": true,
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
-        "dataType": 0
+        "dataType": "int"
       }
     ],
     "samples": {
@@ -98,7 +98,7 @@
       {
         "id": "control_flags",
         "title": "Control Flags",
-        "dataType": 17,
+        "dataType": "stringArray",
         "defaultValue": [],
         "choices": [
           {
@@ -119,7 +119,7 @@
         "id": "fractional_rotation",
         "title": "Fractional Rotation",
         "description": "The entity will attempt to rotate to face where the player is facing each tick. The entity will target this percentage of their difference in their current facing angles each tick (from 0.0 to 1.0 where 1.0 = 100%). This is limited by \"fractional_rotation_limit\". A value of 0.0 will result in the entity no longer turning to where the player is facing.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0.5,
         "validity": [
           {
@@ -136,14 +136,14 @@
         "id": "fractional_rotation_limit",
         "title": "Fractional Rotation Limit",
         "description": "Limits the total degrees the entity can rotate to face where the player is facing on each tick.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 5
       },
       {
         "id": "mount_speed_multiplier",
         "title": "Mount Speed Multiplier",
         "description": "Speed multiplier of mount when controlled by player.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 1,
         "samples": {
           "/vanilla/behavior_pack/entities/strider.json": [
@@ -157,7 +157,7 @@
       {
         "id": "priority",
         "title": "Priority",
-        "dataType": 0,
+        "dataType": "int",
         "defaultValue": 0
       }
     ],

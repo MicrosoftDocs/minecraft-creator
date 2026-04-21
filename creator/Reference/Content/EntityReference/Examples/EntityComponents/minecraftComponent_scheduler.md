@@ -15,72 +15,11 @@ Fires off scheduled mob events at time of day events.
 
 ## Scheduler Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| max_delay_secs | *not set* | Decimal number |  |  | 
-| min_delay_secs | *not set* | Decimal number |  |  | 
-| scheduled_events | *not set* | Array of objects | The list of triggers that fire when the conditions match the given filter criteria. Can be an array of event objects or a single event object. | Fox: `[{"filters":[{"test":"is_sleeping","value":true}],"event":"minecraft:ambient_sleep"},{"filters":{"all_of":[{"test":"is_daytime","value":false},{"test":"distance_to_nearest_player","operator":">","value":16}]},"event":"minecraft:ambient_night"},{"filters":{"all_of":[{"test":"is_sleeping","value":false},{"any_of":[{"test":"is_daytime","value":true},{"test":"distance_to_nearest_player","operator":"<=","value":16}]}]},"event":"minecraft:ambient_normal"}]` | 
-| scheduled_events (as Object) | *not set* | Object |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max_delay_secs | *not set* | Decimal number |  | 
+| min_delay_secs | *not set* | Decimal number |  | 
+| scheduled_events | *not set* | Array of objects | The list of triggers that fire when the conditions match the given filter criteria. Can be an array of event objects or a single event object. | 
+| scheduled_events (as Object) | *not set* | Object |  | 
 
 ## Samples
-
-#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
-
-
-```json
-"minecraft:scheduler": {
-  "min_delay_secs": 0,
-  "max_delay_secs": 0,
-  "scheduled_events": [
-    {
-      "filters": [
-        {
-          "test": "is_sleeping",
-          "value": true
-        }
-      ],
-      "event": "minecraft:ambient_sleep"
-    },
-    {
-      "filters": {
-        "all_of": [
-          {
-            "test": "is_daytime",
-            "value": false
-          },
-          {
-            "test": "distance_to_nearest_player",
-            "operator": ">",
-            "value": 16
-          }
-        ]
-      },
-      "event": "minecraft:ambient_night"
-    },
-    {
-      "filters": {
-        "all_of": [
-          {
-            "test": "is_sleeping",
-            "value": false
-          },
-          {
-            "any_of": [
-              {
-                "test": "is_daytime",
-                "value": true
-              },
-              {
-                "test": "distance_to_nearest_player",
-                "operator": "<=",
-                "value": 16
-              }
-            ]
-          }
-        ]
-      },
-      "event": "minecraft:ambient_normal"
-    }
-  ]
-}
-```

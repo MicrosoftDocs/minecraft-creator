@@ -76,14 +76,14 @@
     "title": "Sequence Feature",
     "fields": [
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "description",
         "title": "Description",
         "isRequired": true,
         "subForm": {
           "fields": [
             {
-              "dataType": 2,
+              "dataType": "string",
               "id": "identifier",
               "title": "Identifier",
               "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
@@ -93,7 +93,7 @@
         }
       },
       {
-        "dataType": 17,
+        "dataType": "stringArray",
         "id": "features",
         "title": "Features",
         "description": "List of features to be placed in sequence. The output position of the previous feature is used as the input position to the next.",

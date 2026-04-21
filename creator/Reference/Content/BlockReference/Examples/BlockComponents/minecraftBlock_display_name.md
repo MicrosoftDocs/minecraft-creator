@@ -18,3 +18,17 @@ This item can also be represented as a `String`.
 
 
 ## Samples
+
+#### Block White Sand
+
+
+```json
+"minecraft:display_name": "White Sand"
+```
+
+#### Luckyblock
+
+
+```json
+"minecraft:display_name": "Lucky Block"
+```

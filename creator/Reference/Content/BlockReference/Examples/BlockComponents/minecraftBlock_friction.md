@@ -18,3 +18,17 @@ This item can also be represented as a `Decimal number`.
 
 
 ## Samples
+
+#### Block Palm Leave
+
+
+```json
+"minecraft:friction": 0.38
+```
+
+#### Block White Sand
+
+
+```json
+"minecraft:friction": 0.2
+```

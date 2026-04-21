@@ -129,14 +129,14 @@
         "id": "minimum_critical_power",
         "title": "Minimum Critical Power",
         "description": "Specifies how long a player must charge a projectile for it to critically hit.",
-        "dataType": 3,
+        "dataType": "float",
         "defaultValue": 0
       },
       {
         "id": "projectile_entity",
         "title": "Projectile Entity",
         "description": "Which entity is to be fired as a projectile.",
-        "dataType": 16,
+        "dataType": "object",
         "validity": [
           {
             "comparison": "pattern",
