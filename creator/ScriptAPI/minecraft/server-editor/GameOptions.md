@@ -146,11 +146,6 @@ Type: *boolean*
 
 Type: *boolean*
 
-### **locatorBar**
-`locatorBar?: boolean;`
-
-Type: *boolean*
-
 ### **maxCommandChainLength**
 `maxCommandChainLength?: number;`
 
@@ -190,6 +185,11 @@ Type: [*GamePublishSetting*](GamePublishSetting.md)
 `playerPermissions?: minecraftserver.PlayerPermissionLevel;`
 
 Type: [*@minecraft/server.PlayerPermissionLevel*](../../../scriptapi/minecraft/server/PlayerPermissionLevel.md)
+
+### **playerWaypoints**
+`playerWaypoints?: minecraftserver.PlayerWaypointsMode;`
+
+Type: [*@minecraft/server.PlayerWaypointsMode*](../../../scriptapi/minecraft/server/PlayerWaypointsMode.md)
 
 ### **randomTickSpeed**
 `randomTickSpeed?: number;`

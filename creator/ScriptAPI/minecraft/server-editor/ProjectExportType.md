@@ -16,3 +16,5 @@ description: Contents of the @minecraft/server-editor.ProjectExportType enumerat
 `ProjectBackup = 1`
 ### **WorldTemplate**
 `WorldTemplate = 2`
+### **ShareableWorld**
+`ShareableWorld = 3`

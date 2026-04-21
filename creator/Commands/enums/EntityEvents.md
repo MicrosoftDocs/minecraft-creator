@@ -150,11 +150,11 @@ Entity becomes angry
 - `minecraft:become_armorable`
 - `minecraft:become_armorer`
 Entity, presumably a villager, takes on the role of armorer
-- `minecraft:become_beach_ball`
 - `minecraft:become_black_tang`
 Entity becomes a black tang
 - `minecraft:become_blue_dory`
 Entity becomes a blue dory
+- `minecraft:become_bouncy`
 - `minecraft:become_brown`
 Entity becomes brown
 - `minecraft:become_brown_adult`
@@ -177,23 +177,21 @@ Entity becomes a cichlid
 Entity, presumably a villager, takes on the role of cleric
 - `minecraft:become_clownfish`
 Entity becomes a clownfish
-- `minecraft:become_curling_stone`
 - `minecraft:become_dog_fish`
 Entity becomes a dog fish
 - `minecraft:become_e_red_snapper`
 Entity becomes a red snapper
 - `minecraft:become_farmer`
 Entity, presumably a villager, takes on the role of farmer
+- `minecraft:become_fast_flat`
+- `minecraft:become_fast_sliding`
 - `minecraft:become_fisherman`
 Entity, presumably a villager, takes on the role of fisherman
 - `minecraft:become_fletcher`
 Entity, presumably a villager, takes on the role of fletcher
-- `minecraft:become_football`
 - `minecraft:become_goat_fish`
 Entity becomes a goat fish
-- `minecraft:become_golf_ball`
 - `minecraft:become_high_resistance`
-- `minecraft:become_hockey_puck`
 - `minecraft:become_hostile`
 Entity becomes hostile
 - `minecraft:become_immobile`
@@ -201,9 +199,9 @@ Entity becomes hostile
 Entity, presumably a villager, takes on the role of leatherworker
 - `minecraft:become_librarian`
 Entity, presumably a villager, takes on the role of librarian
+- `minecraft:become_light`
 - `minecraft:become_mason`
 Entity, presumably a villager, takes on the role of mason
-- `minecraft:become_medicine_ball`
 - `minecraft:become_mobile`
 - `minecraft:become_moorish_idol`
 Entity becomes a moorish idol
@@ -227,11 +225,13 @@ Entity becomes a red cichlid
 Entity becomes a red-lipped benny
 - `minecraft:become_red_snapper`
 Entity becomes a red snapper
-- `minecraft:become_rubber_ball`
+- `minecraft:become_regular`
 - `minecraft:become_scared`
 Entity becomes scared
 - `minecraft:become_sheperd`
 Entity, presumably a villager, becomes a shepherd
+- `minecraft:become_slow_flat`
+- `minecraft:become_slow_sliding`
 - `minecraft:become_statue`
 - `minecraft:become_sticky`
 - `minecraft:become_stunned`
@@ -644,8 +644,10 @@ Entity stops Johnny action
 Entity stops transforming
 - `minecraft:stopped_riding`
 - `minecraft:switch_to_ai_controlled`
+- `minecraft:switch_to_hard_ranged`
 - `minecraft:switch_to_melee`
 Entity switches to melee attack
+- `minecraft:switch_to_normal_ranged`
 - `minecraft:switch_to_player_controlled`
 - `minecraft:switch_to_ranged`
 Entity switches to ranged attack

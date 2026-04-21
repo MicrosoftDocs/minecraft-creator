@@ -1744,6 +1744,7 @@ Polished Deepslate Double Slab
 - `minecraft:tide_armor_trim_smithing_template`
 - `minecraft:wayfinder_armor_trim_smithing_template`
 - `minecraft:red_carpet`
+- `minecraft:sulfur_spike`
 - `minecraft:raiser_armor_trim_smithing_template`
 - `minecraft:bamboo_button`
 - `minecraft:element_118`

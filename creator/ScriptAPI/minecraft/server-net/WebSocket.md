@@ -16,7 +16,7 @@ Used to manage WebSocket connections.
 
 ### **connect**
 `
-connect(uri: string): Promise<WebSocketClient>
+connect(uri: string, headers?: HttpHeader[]): Promise<WebSocketClient>
 `
 
 Attempts to connect a WebSocket client.
@@ -25,6 +25,7 @@ Attempts to connect a WebSocket client.
 - **uri**: *string*
   
   URL to make connection to.
+- **headers**?: [*HttpHeader*](HttpHeader.md)[] = `null`
 
 **Returns** Promise&lt;[*WebSocketClient*](WebSocketClient.md)&gt; - An awaitable promise that contains the WebSocket client that was connected.
   

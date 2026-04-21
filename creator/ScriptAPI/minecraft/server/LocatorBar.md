@@ -21,7 +21,7 @@ Invalid waypoints in the locator bar will be automatically removed in the next t
 
 
 
-Note: You can control whether vanilla player waypoints are automatically added to the locator bar using the `locatorbar` [*@minecraft/server.GameRule*](../../../scriptapi/minecraft/server/GameRule.md). This game rule is currently named `locatorbar` but will likely be renamed in a future update to be more descriptive.
+Note: You can control whether vanilla player waypoints are automatically added to the locator bar using the `playerWaypoints` [*@minecraft/server.GameRule*](../../../scriptapi/minecraft/server/GameRule.md). Accepted values are `off` (players are not shown on the locator bar) and `everyone` (all players are visible on the locator bar).
 
 
 

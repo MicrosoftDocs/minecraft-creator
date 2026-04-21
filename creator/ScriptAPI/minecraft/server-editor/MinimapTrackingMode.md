@@ -4,12 +4,13 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server.InvalidEntityComponentError Class
-description: Contents of the @minecraft/server.InvalidEntityComponentError class.
+title: minecraft/server-editor.MinimapTrackingMode Enumeration
+description: Contents of the @minecraft/server-editor.MinimapTrackingMode enumeration.
 ---
-# InvalidEntityComponentError Class
+# MinimapTrackingMode Enumeration
 
-## Extends
-- *Error*
-
-This error can occur when accessing components on an entity that doesn't have them.
+## Constants
+### **FollowPlayer**
+`FollowPlayer = 0`
+### **FreeCenter**
+`FreeCenter = 1`

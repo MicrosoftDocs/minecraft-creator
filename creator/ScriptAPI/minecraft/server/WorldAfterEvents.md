@@ -236,6 +236,19 @@ Type: [*EntitySpawnAfterEventSignal*](EntitySpawnAfterEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **entityUpgrade**
+`read-only entityUpgrade: EntityUpgradeAfterEventSignal;`
+
+Type: [*EntityUpgradeAfterEventSignal*](EntityUpgradeAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
+
 ### **explosion**
 `read-only explosion: ExplosionAfterEventSignal;`
 

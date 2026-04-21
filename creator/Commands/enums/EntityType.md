@@ -428,9 +428,9 @@ Fireworks Rocket
 NPC
 - `editor:ruler_pointer_selected`
 - `editor:location_pointer_idle`
-- `editor:map_marker`
-- `editor:ruler_idle`
 - `editor:location_pointer_selected`
+- `editor:ruler_idle`
+- `editor:map_marker`
 
 ## References
 The following commands reference this enum:

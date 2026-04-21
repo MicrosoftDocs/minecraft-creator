@@ -76,6 +76,8 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:overworld_after_surface_bush_feature_rules`
 - `minecraft:sulfur_caves_after_surface_sulfur_spring_trail_to_surface_system_feature_rules`
 - `minecraft:swamp_after_surface_flowers_feature_rules`
+- `minecraft:mangrove_swamp_mangrove_tree_with_beenest_feature`
+- `minecraft:cold_ocean_after_surface_seagrass_feature_rules`
 - `minecraft:desert_after_surface_dry_grass_feature_rules`
 - `minecraft:flower_forest_after_surface_flowers_feature_rules`
 - `minecraft:desert_or_swamp_after_surface_fossil_deepslate_feature`
@@ -83,7 +85,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:bamboo_jungle_after_surface_tall_grass_feature_rules`
 - `minecraft:plains_after_surface_double_plant_sunflower_feature_rules`
 - `minecraft:savanna_after_surface_tall_grass_feature_rules`
-- `minecraft:cold_ocean_after_surface_seagrass_feature_rules`
 - `minecraft:overworld_underground_andesite_upper_feature`
 - `minecraft:overworld_underground_gravel_ore_feature`
 - `minecraft:cold_taiga_after_surface_sweet_berry_bush_feature_rules`
@@ -174,7 +175,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:swamp_surface_waterlily_feature`
 - `minecraft:taiga_surface_tall_grass_feature`
 - `minecraft:eyeblossom_feature_rules`
-- `minecraft:mangrove_swamp_mangrove_tree_with_beenest_feature`
 - `minecraft:grove_pine_tree_feature`
 - `minecraft:overworld_underground_lapis_ore_buried_feature`
 - `minecraft:crimson_feature`
@@ -240,7 +240,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:deepslate_feature`
 - `minecraft:scatter_ocean_seagrass_feature`
 - `minecraft:nether_sprouts_scatter_feature`
-- `minecraft:scatter_random_sulfur_spring_feature`
 - `minecraft:birch_tree_with_optional_beehive_feature`
 - `minecraft:beehive_east_feature`
 - `minecraft:fern_double_plant_lower_feature`
@@ -257,7 +256,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:scatter_deep_warm_ocean_seagrass_feature`
 - `minecraft:fancy_oak_tree_feature`
 - `minecraft:jungle_bush_feature`
-- `minecraft:sulfur_spring_medium_1_feature`
 - `minecraft:pine_tree_feature`
 - `minecraft:mega_jungle_tree_feature`
 - `minecraft:diorite_feature`
@@ -294,7 +292,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:diamond_ore_buried_feature`
 - `minecraft:scatter_meadow_wildflowers_feature`
 - `minecraft:short_dry_grass_feature`
-- `minecraft:sulfur_spring_small_3_feature`
 - `minecraft:scatter_sweet_berry_bush_feature`
 - `minecraft:jungle_tall_grass_feature`
 - `minecraft:random_oak_tree_with_beehive_from_sapling_feature`
@@ -366,7 +363,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:small_dripstone_feature`
 - `minecraft:dripstone_caves_copper_ore_feature`
 - `minecraft:fixup_vines_position_feature`
-- `minecraft:sulfur_spring_large_1_feature`
 - `minecraft:vines_single_face_scatter_feature`
 - `minecraft:gold_ore_extra_feature`
 - `minecraft:coal_ore_feature`
@@ -378,7 +374,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:gravel_ore_feature`
 - `minecraft:beehive_search_feature`
 - `minecraft:underground_glow_lichen_feature`
-- `minecraft:random_sulfur_spring_feature`
 - `minecraft:gold_ore_lower_feature`
 - `minecraft:optional_oak_tree_with_vines_feature`
 - `minecraft:granite_feature`
@@ -414,7 +409,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:noop_undecorated_jungle_tree_feature`
 - `minecraft:sulfur_pool_with_potent_sulfur`
 - `minecraft:crimson_roots_feature`
-- `minecraft:sulfur_spring_medium_2_feature`
 - `minecraft:random_dry_grass_block_feature`
 - `minecraft:bush_feature`
 - `minecraft:optional_podzol_feature`
@@ -439,12 +433,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:fallen_oak_tree_feature`
 - `minecraft:fallen_jungle_tree_feature`
 - `minecraft:select_undecorated_jungle_tree_feature`
-- `minecraft:sulfur_spring_small_1_feature`
-- `minecraft:sulfur_spring_small_2_feature`
-- `minecraft:sulfur_spring_small_4_feature`
-- `minecraft:sulfur_spring_medium_3_feature`
-- `minecraft:sulfur_spring_large_2_feature`
-- `minecraft:sulfur_spring_extra_large_1_feature`
 - `minecraft:potent_sulfur_block_search_feature`
 - `minecraft:tall_dry_grass_feature`
 - `minecraft:pale_hanging_moss_feature`
