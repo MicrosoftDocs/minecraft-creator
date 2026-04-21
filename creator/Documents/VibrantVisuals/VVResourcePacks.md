@@ -16,13 +16,14 @@ The new pipeline supports both Height Map and Normal Map inputs for bump mapping
 
 Vibrant Visuals also supports a new texture set property that describes a material's [subsurface scattering](https://en.wikipedia.org/wiki/Subsurface_scattering) properties in addition to its metallic, emissive, and roughness (MER) properties. For more details, read about [Subsurface Scattering](./SubSurfaceScatteringCustomization.md) customization, or consult the [Texture Sets documentation](../../Reference/Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md).
 
-To let Minecraft know your resource pack includes Vibrant Visuals assets, you need to add the `"pbr"` capability to the `capabilities` array of your pack's **manifest.json** file:
+To let Minecraft know your resource pack includes Vibrant Visuals assets, you need to add the `"pbr"` capability to the `capabilities` array of your pack's **manifest.json** file and make sure the `"min_engine_version"` is set to `1, 21, 120` or higher:
 
 ```json
 { 
   "format_version": 1,
   "header": {
     ...
+    "min_engine_version": [1, 21, 120]
   }, 
   "modules": [
     ...
