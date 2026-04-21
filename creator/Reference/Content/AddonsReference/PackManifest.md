@@ -66,7 +66,8 @@ Note that in versions of preview Minecraft version 1.21.110 and higher, we have 
 | chemistry| The pack can add, remove, or modify chemistry behavior. |
 | editorExtension| Indicates that this pack contains extensions for the Minecraft Editor. |
 | experimental_custom_ui| The pack can use HTML files to create custom UI, as well as use or modify the custom UI. |
-| raytraced| The pack uses Ray Tracking functionality and may use custom shaders. |
+| raytraced| The pack uses Ray Tracing functionality and will enable the mode on supported devices. |
+| pbr| The pack is optimized to used with the Vibrant Visuals feature set with supported devices. |
 
 ### metadata
 
