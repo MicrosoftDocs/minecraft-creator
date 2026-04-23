@@ -681,6 +681,8 @@
             href: Reference/Content/itemreference/Examples/ItemComponents/TOC.yml
           - name: Custom Item Use Priority
             href: Reference/Content/itemreference/Examples/ItemUsePriority.md
+          - name: Vanilla Item Tags
+            href: Reference/Content/ItemReference/Examples/vanilla-item-tags.md
         - name: Jigsaw JSON
           items:
           - name: Jigsaw Structures
