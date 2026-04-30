@@ -1,0 +1,170 @@
+{
+  "id": "PushableByEntityPreset",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "PushableByEntityPreset",
+    "title": "Entity PushableByEntityPreset",
+    "fields": [
+      {
+        "id": "filters",
+        "description": "Conditions that must be met for this preset to be applied.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "filters",
+          "title": "Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "filters",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "kick_distance_threshold",
+        "title": "Kick Distance Threshold",
+        "description": "Maximum horizontal distance at which another entity can kick this entity. Only used when push_mode is \"ball\".",
+        "dataType": "float",
+        "defaultValue": 1.2999999523162842
+      },
+      {
+        "id": "kick_speed_scale",
+        "title": "Kick Speed Scale",
+        "description": "Multiplier applied to the pushing entity's movement speed to determine kick force. Only used when push_mode is \"ball\".",
+        "dataType": "float",
+        "defaultValue": 2
+      },
+      {
+        "id": "max_kick_speed",
+        "title": "Max Kick Speed",
+        "description": "Maximum speed the ball can be kicked at, regardless of how fast the pushing entity is moving. Only used when push_mode is \"ball\".",
+        "dataType": "float",
+        "defaultValue": 0.5
+      },
+      {
+        "id": "min_distance",
+        "title": "Min Distance",
+        "description": "Minimum distance between two entities for push forces to be applied. Entities closer than this will not push each other.",
+        "dataType": "float",
+        "defaultValue": 0.009999999776482582
+      },
+      {
+        "id": "min_kick_speed",
+        "title": "Min Kick Speed",
+        "description": "Minimum speed the ball will be kicked at, regardless of how slowly the pushing entity is moving. Only used when push_mode is \"ball\".",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "play_sound_cooldown_in_seconds",
+        "title": "Play Sound Cooldown In Seconds",
+        "description": "Cooldown in seconds between sounds. A lower number results in more sounds.",
+        "dataType": "float",
+        "defaultValue": 0.20000000298023224
+      },
+      {
+        "id": "play_sound_impulse_threshold",
+        "title": "Play Sound Impulse Threshold",
+        "description": "Minimum change of velocity needed to trigger the push sound. A lower value means higher sensitivity.",
+        "dataType": "float",
+        "defaultValue": 0.20000000298023224
+      },
+      {
+        "id": "push_mode",
+        "title": "PushMode",
+        "description": "Defines the type of push vector calculation applied to the entity:\n- \"default\": Standard push calculation used by most entities.\n- \"legacy_boat\": Legacy push calculation historically used by boats. Includes dampened forces and sneak-based cancellation.\n- \"legacy_minecart\": Legacy push calculation historically used by minecarts. Includes alignment-based collision handling and velocity averaging.- \"ball\": Push calculation for ball-like entities. The ball is kicked in the direction of the pushing entity's movement, with force based on their movement speed.",
+        "dataType": "string",
+        "choices": [
+          {
+            "id": "ball",
+            "title": "Ball"
+          },
+          {
+            "id": "default",
+            "title": "Default"
+          },
+          {
+            "id": "legacy_boat",
+            "title": "Legacy boat"
+          },
+          {
+            "id": "legacy_minecart",
+            "title": "Legacy minecart"
+          }
+        ],
+        "defaultValue": "default"
+      },
+      {
+        "id": "push_scale_other",
+        "title": "Push Scale Other",
+        "description": "Scales how much push force this entity applies to the other entity when colliding. A value of 1.0 applies full force, 0.5 applies half.",
+        "dataType": "float",
+        "defaultValue": 1
+      },
+      {
+        "id": "push_scale_self",
+        "title": "Push Scale Self",
+        "description": "Scales how much this entity pushes itself away when colliding with another entity. A value of 1.0 applies full force, 0.5 applies half.",
+        "dataType": "float",
+        "defaultValue": 1
+      },
+      {
+        "id": "strength_multiplier",
+        "title": "Strength Multiplier",
+        "description": "Multiplier applied to the push strength. Higher values result in stronger pushes.",
+        "dataType": "float",
+        "defaultValue": 0.05000000074505806
+      },
+      {
+        "id": "vertical_kick_multiplier",
+        "title": "Vertical Kick Multiplier",
+        "description": "Multiplier for the upward force applied when the ball is kicked while on the ground. A value of 0 keeps the ball flat. Only used when push_mode is \"ball\".",
+        "dataType": "float",
+        "defaultValue": 0.30000001192092896
+      }
+    ]
+  }
+}

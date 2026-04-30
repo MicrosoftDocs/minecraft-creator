@@ -10,10 +10,8 @@ ms.date: 02/11/2025
 
 # Visuals Documentation - minecraft:actor_resource_definition.v1.8.0
 
-Defines an entity client resource definition document with format_version 1.8.0.
 
-
-## Actor Resource Definition (v1.8.0) Properties
+## Actor Resource Definition Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

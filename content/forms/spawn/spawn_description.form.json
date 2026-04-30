@@ -1,6 +1,8 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Spawn Description",
+  "title": "Spawn Description",
+  "description": "The description block that identifies which entity these spawn rules apply to, via the entity identifier (e.g., 'minecraft:zombie'). Also specifies the population control group for managing spawn caps.",
   "summarizer": {
     "phrases": [
       {
@@ -42,6 +44,5 @@
         "defaultValue": ""
       }
     ]
-  },
-  "description": "The description block that identifies which entity these spawn rules apply to, via the entity identifier (e.g., 'minecraft:zombie'). Also specifies the population control group for managing spawn caps."
+  }
 }

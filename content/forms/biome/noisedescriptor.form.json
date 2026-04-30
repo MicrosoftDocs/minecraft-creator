@@ -26,12 +26,6 @@
         "title": "Name",
         "description": "The string used to initialize the noise. Has no impact on the qualitative aspects of the generated values.",
         "dataType": "string",
-        "validity": [
-          {
-            "comparison": "pattern",
-            "value": "^\\S+$"
-          }
-        ],
         "isRequired": true
       }
     ]

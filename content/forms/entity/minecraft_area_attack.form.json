@@ -344,6 +344,13 @@
         "description": "If the entity should play their attack sound when attacking a target.",
         "defaultValue": true,
         "dataType": "boolean"
+      },
+      {
+        "id": "use_self_as_damage_source",
+        "title": "Use Self As Damage Source",
+        "description": "If the entity should use itself as the damage source when attacking a target. If set to `false`, the target entity won't retaliate and its `minecraft:damage_sensor` won't be able to identify the attacker as the damage source.",
+        "defaultValue": true,
+        "dataType": "boolean"
       }
     ],
     "samples": {

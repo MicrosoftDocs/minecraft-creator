@@ -89,9 +89,16 @@
         "subFormId": "biome/minecraft_replace_biomes"
       },
       {
+        "id": "minecraft:subsurface_builder",
+        "title": "Minecraft Subsurface Builder",
+        "description": "Sub Surface Builders allow specifying a `minecraft:surface_builder` to be applied to biomes located underneath regular terrain surface. Note, however, that pre-existing surface builder types' processing have not been updated to accommodate the ability to specify them for sub-terrain height ranges, which may lead to unexpected results when using them.",
+        "dataType": "object",
+        "subFormId": "biome/minecraft_surface_builder"
+      },
+      {
         "id": "minecraft:surface_builder",
         "title": "Minecraft Surface Builder",
-        "description": "Controls the materials used for terrain generation.",
+        "description": "Controls materials used for terrain generation.",
         "dataType": "object",
         "subFormId": "biome/minecraft_surface_builder"
       },

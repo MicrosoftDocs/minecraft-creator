@@ -1,6 +1,8 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Spawn PlayerInVillageFilter",
+  "title": "Player In Village Filter",
+  "description": "Restricts spawning based on whether a player is within village boundaries. Used for village-specific spawns like iron golems, cats, and raid mobs that should only appear when players are near villages.",
   "summarizer": {
     "phrases": [
       {
@@ -39,6 +41,5 @@
         "defaultValue": 10
       }
     ]
-  },
-  "description": "Restricts spawning based on whether a player is within village boundaries. Used for village-specific spawns like iron golems, cats, and raid mobs that should only appear when players are near villages."
+  }
 }

@@ -141,7 +141,7 @@ Adds the `minecraft:cardinal_direction` , `minecraft:facing_direction`, and/or `
 
 | Name | Type | Default Value | Description |
 |:-----|:-----|:--------------|:------------|
-| enabled_states | Array | | Which states to enable. Must specify at least one. Valid values are `minecraft:cardinal_direction`, `minecraft:corner_and_cardinal_direction` (requires Beta APIs toggle and `use_beta_features` flag), and `minecraft:facing_direction`. |
+| enabled_states | Array | | Which states to enable. Must specify at least one. Valid values are `minecraft:cardinal_direction`, `minecraft:corner_and_cardinal_direction`, and `minecraft:facing_direction`. |
 | y_rotation_offset| Decimal |0.0 - 360.0 | The y rotation offset to apply to the block. Must be [0.0, 90.0, 180.0, 270.0]. Default is 0, meaning if the player is facing north, the "minecraft:cardinal_direction" and/or minecraft:facing_direction state will be north. |
 | blocks_to_corner_with | Array | Same Block Name | A list of block descriptors that define the blocks to connect with the corner shape. Requires `minecraft:corner_and_cardinal_direction` to be enabled. |
 
@@ -189,7 +189,6 @@ Using `corner_and_cardinal_direction`:
 ```json
 {
   "format_version": "1.21.130",
-  // Required to use minecraft:corner_and_cardinal_direction, along with Beta APIs toggle in Minecraft 1.21.130 or later
   "use_beta_features": true,
   "minecraft:block": {
     "description": {

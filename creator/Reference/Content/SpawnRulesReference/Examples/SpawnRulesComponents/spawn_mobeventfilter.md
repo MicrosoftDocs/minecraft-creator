@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Controls spawning based on whether a specific mob event is active. Mob events are world-level toggles (like raids or wandering traders) that can enable or disable certain spawn behaviors.
 
 
-## Spawn MobEventFilter Properties
+## Mob Event Filter Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

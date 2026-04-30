@@ -30,9 +30,6 @@ The `minecraft:placement_direction` block trait records information about the di
   - `outer_right`
   - `none`
 
-> [!NOTE]
-> The `corner_and_cardinal_direction` trait requires Minecraft version 1.21.130 or higher, requires you to enable the `use_beta_features` flag in your block JSON, and requires the Beta APIs experimental toggle in the world using this block to be on.
-
 ## Rotation offset
 
 This trait supports an additional property: `y_rotation_offset` lets you specify a value to rotate the stored cardinal direction counter-clockwise from the direction the player had been facing. A value of `90.0`, for example, would cause a block placed when the player faced south to store the state of `east`, a 90-degree rotation from south.
@@ -69,7 +66,6 @@ The valid values for `y_rotation_offset` are `0.0` (the default, no rotation), `
 ```json
 {
   "format_version": "1.21.130",
-  // Required to use minecraft:corner_and_cardinal_direction, along with Beta APIs toggle in Minecraft 1.21.130 or later
   "use_beta_features": true,
   "minecraft:block": {
     "description": {

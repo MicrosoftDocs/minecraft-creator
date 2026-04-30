@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Restricts mob spawning to specific difficulty levels (Peaceful, Easy, Normal, Hard). For example, hostile mobs don't spawn on Peaceful, and some dangerous variants only appear on Hard difficulty.
 
 
-## Spawn DifficultyFilter Properties
+## Difficulty Filter Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

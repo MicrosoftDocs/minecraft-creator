@@ -13,25 +13,11 @@ ms.date: 02/11/2025
 Allows an entity to be pushed by other entities.
 
 
-## Pushable By Entity Properties
+## Entity Pushable By Entity Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| presets | *not set* | Array of [Presets](#presets) items |  | Boat: `[{"push_mode":"legacy_boat","strength_multiplier":0.1,"min_distance":0.3,"push_scale_self":0.5,"push_scale_other":0.25}]` | 
-
-### Presets
-
-#### Presets Properties
-
-**JSON path:** `presets`
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| min_distance | *not set* | Decimal number |  | Boat: `0.3` | 
-| push_mode | *not set* | String |  | Boat: `"legacy_boat"` | 
-| push_scale_other | *not set* | Decimal number |  | Boat: `0.25` | 
-| push_scale_self | *not set* | Decimal number |  | Boat: `0.5` | 
-| strength_multiplier | *not set* | Decimal number |  | Boat: `0.1` | 
+| presets | [] | Array of objects | Defines how this entity behaves when pushed by another entity. The first preset whose "filter" conditions are met will be applied; if none match, a default configuration is used instead. | Boat: `[{"push_mode":"legacy_boat","strength_multiplier":0.1,"min_distance":0.3,"push_scale_self":0.5,"push_scale_other":0.25}]` | 
 
 ## Samples
 

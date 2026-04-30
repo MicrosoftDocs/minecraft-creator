@@ -17,6 +17,6 @@ Restricts mob spawning based on light level at the spawn location. Hostile mobs 
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| adjust_for_weather | false | Boolean true/false |  | 
-| max | 15 | Integer number |  | 
-| min | 0 | Integer number |  | 
+| adjust_for_weather | false | Boolean true/false | When true, brightness is adjusted for the current weather (rain/thunder reduce light levels). | 
+| max | 15 | Integer number | Maximum light level (0-15) at which this entity can spawn. Value must be <= 15. | 
+| min | 0 | Integer number | Minimum light level (0-15) at which this entity can spawn. Value must be <= 15. | 
