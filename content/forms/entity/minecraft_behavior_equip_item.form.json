@@ -42,12 +42,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.equip_item/",
               "content": 3
             }
-          ],
-          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:behavior.equip_item/",
-              "content": 2
-            }
           ]
         }
       }
@@ -85,11 +79,11 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/sulfur_cube.json": [
+      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:behavior.equip_item/",
+          "path": "/minecraft:entity/components/minecraft:behavior.equip_item/",
           "content": {
-            "priority": 2
+            "priority": 3
           }
         }
       ]
@@ -143,12 +137,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.equip_item/",
               "content": 3
             }
-          ],
-          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:behavior.equip_item/",
-              "content": 2
-            }
           ]
         }
       }
@@ -186,11 +174,11 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/sulfur_cube.json": [
+      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_medium_without_block/minecraft:behavior.equip_item/",
+          "path": "/minecraft:entity/components/minecraft:behavior.equip_item/",
           "content": {
-            "priority": 2
+            "priority": 3
           }
         }
       ]

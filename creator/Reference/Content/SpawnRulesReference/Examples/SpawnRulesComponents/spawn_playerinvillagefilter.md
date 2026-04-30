@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Restricts spawning based on whether a player is within village boundaries. Used for village-specific spawns like iron golems, cats, and raid mobs that should only appear when players are near villages.
 
 
-## Spawn PlayerInVillageFilter Properties
+## Player In Village Filter Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

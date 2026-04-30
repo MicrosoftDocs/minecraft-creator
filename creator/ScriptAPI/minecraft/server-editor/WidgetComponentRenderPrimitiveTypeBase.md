@@ -19,6 +19,7 @@ description: Contents of the @minecraft/server-editor.WidgetComponentRenderPrimi
 - [*WidgetComponentRenderPrimitiveTypeEllipsoid*](WidgetComponentRenderPrimitiveTypeEllipsoid.md)
 - [*WidgetComponentRenderPrimitiveTypeLine*](WidgetComponentRenderPrimitiveTypeLine.md)
 - [*WidgetComponentRenderPrimitiveTypePyramid*](WidgetComponentRenderPrimitiveTypePyramid.md)
+- [*WidgetComponentRenderPrimitiveTypeWireframeMesh*](WidgetComponentRenderPrimitiveTypeWireframeMesh.md)
 
 ## Properties
 

@@ -27,5 +27,39 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.receive_love",
+    "title": "Entity Receive Love Behavior",
+    "description": "Allows the villager to stop so another villager can breed with it. Can only be used by a Villager.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      }
+    ],
+    "samples": {}
   }
 }

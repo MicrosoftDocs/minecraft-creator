@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.30-beta.20 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.30-beta.25 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -165,9 +165,10 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.30-
 - [StatefulAction](StatefulAction.md)
 - [SupportedKeyboardActionTypes](SupportedKeyboardActionTypes.md)
 - [SupportedMouseActionTypes](SupportedMouseActionTypes.md)
+- [TooltipButton](TooltipButton.md)
 - [TooltipContent](TooltipContent.md)
 - [TooltipInteractiveContent](TooltipInteractiveContent.md)
-- [TooltipInteractiveContentDescription](TooltipInteractiveContentDescription.md)
+- [TooltipInteractiveContentDescriptionItem](TooltipInteractiveContentDescriptionItem.md)
 - [TooltipLink](TooltipLink.md)
 - [UnregisterInputBindingCallback](UnregisterInputBindingCallback.md)
 
@@ -262,6 +263,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.30-
 - [WidgetComponentRenderPrimitiveTypeEllipsoid](WidgetComponentRenderPrimitiveTypeEllipsoid.md)
 - [WidgetComponentRenderPrimitiveTypeLine](WidgetComponentRenderPrimitiveTypeLine.md)
 - [WidgetComponentRenderPrimitiveTypePyramid](WidgetComponentRenderPrimitiveTypePyramid.md)
+- [WidgetComponentRenderPrimitiveTypeWireframeMesh](WidgetComponentRenderPrimitiveTypeWireframeMesh.md)
 - [WidgetComponentSpline](WidgetComponentSpline.md)
 - [WidgetComponentText](WidgetComponentText.md)
 - [WidgetComponentVolumeOutline](WidgetComponentVolumeOutline.md)
@@ -425,6 +427,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.30-
 - [WidgetComponentVolumeOutlineOptions](WidgetComponentVolumeOutlineOptions.md)
 - [WidgetCreateOptions](WidgetCreateOptions.md)
 - [WidgetGroupCreateOptions](WidgetGroupCreateOptions.md)
+- [WireframeMeshOptions](WireframeMeshOptions.md)
 
 ## Errors
 - [InvalidWidgetComponentError](InvalidWidgetComponentError.md)

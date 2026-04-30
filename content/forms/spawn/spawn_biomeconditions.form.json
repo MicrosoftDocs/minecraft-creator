@@ -257,6 +257,120 @@
           "dataType": "objectArray"
         }
       ]
+    },
+    {
+      "id": "minecraft:brightness_filter",
+      "title": "Brightness Filter",
+      "description": "Restricts spawning based on light level. Hostile mobs typically spawn in darkness (0-7), passive mobs in brighter areas.",
+      "dataType": "object",
+      "subFormId": "spawn/spawn_brightnessfilter"
+    },
+    {
+      "id": "minecraft:delay_filter",
+      "title": "Delay Filter",
+      "description": "Delays entity spawning by a configurable time after conditions are met. Useful for cooldowns after mob deaths.",
+      "dataType": "object",
+      "subFormId": "spawn/spawn_delayfilter"
+    },
+    {
+      "id": "minecraft:density_limit",
+      "title": "Density Limit",
+      "description": "Limits how many of this entity can exist in an area, with separate caps for surface and underground. Set -1 for unlimited.",
+      "dataType": "object",
+      "subFormId": "spawn/spawn_densitylimit"
+    },
+    {
+      "id": "minecraft:difficulty_filter",
+      "title": "Difficulty Filter",
+      "description": "Restricts spawning to specific difficulty levels (Peaceful, Easy, Normal, Hard).",
+      "dataType": "object",
+      "subFormId": "spawn/spawn_difficultyfilter"
+    },
+    {
+      "id": "minecraft:distance_filter",
+      "title": "Distance Filter",
+      "description": "Controls spawning based on distance from the nearest player. Mobs typically spawn 24-128 blocks from players.",
+      "dataType": "object",
+      "subFormId": "spawn/spawn_distancefilter"
+    },
+    {
+      "id": "minecraft:height_filter",
+      "title": "Height Filter",
+      "description": "Restricts spawning to specific Y-coordinate ranges. Useful for depth-based mob distribution.",
+      "dataType": "object",
+      "subFormId": "spawn/spawn_heightfilter"
+    },
+    {
+      "id": "minecraft:is_experimental",
+      "title": "Is Experimental",
+      "description": "Marks this spawn rule as experimental. Only active when the corresponding experiment toggle is enabled.",
+      "dataType": "object"
+    },
+    {
+      "id": "minecraft:is_persistent",
+      "title": "Is Persistent",
+      "description": "When enabled, spawned entities will not despawn naturally. Used for mobs like villagers.",
+      "dataType": "object"
+    },
+    {
+      "id": "minecraft:mob_event_filter",
+      "title": "Mob Event Filter",
+      "description": "Controls spawning based on whether a specific mob event (like raids or wandering traders) is active.",
+      "dataType": "object",
+      "subFormId": "spawn/spawn_mobeventfilter"
+    },
+    {
+      "id": "minecraft:player_in_village_filter",
+      "title": "Player In Village Filter",
+      "description": "Restricts spawning to when a player is near a village. Used for iron golems, cats, and raid mobs.",
+      "dataType": "object",
+      "subFormId": "spawn/spawn_playerinvillagefilter"
+    },
+    {
+      "id": "minecraft:spawn_event",
+      "title": "Spawn Event",
+      "description": "Triggers a specific entity event when the mob spawns. Commonly used to initialize entity behavior.",
+      "dataType": "object",
+      "subFormId": "spawn/spawn_mobeventfilter"
+    },
+    {
+      "id": "minecraft:spawns_above_block_filter",
+      "title": "Spawns Above Block Filter",
+      "description": "Filters spawning based on blocks above the spawn point.",
+      "dataType": "object",
+      "subFormId": "spawn/spawn_spawnaboveblockfilter"
+    },
+    {
+      "id": "minecraft:spawns_on_surface",
+      "title": "Spawns On Surface",
+      "description": "When enabled, this entity can spawn on the world surface.",
+      "dataType": "object"
+    },
+    {
+      "id": "minecraft:spawns_underground",
+      "title": "Spawns Underground",
+      "description": "When enabled, this entity can spawn underground (below the surface).",
+      "dataType": "object"
+    },
+    {
+      "id": "minecraft:spawns_underwater",
+      "title": "Spawns Underwater",
+      "description": "When enabled, this entity can spawn in water.",
+      "dataType": "object"
+    },
+    {
+      "id": "minecraft:weight",
+      "title": "Weight",
+      "description": "Relative spawn probability compared to other entities in the same biome. Higher values = more frequent spawns. 100 is typical for common mobs.",
+      "dataType": "object",
+      "subFormId": "spawn/spawn_weight"
+    },
+    {
+      "id": "minecraft:world_age_filter",
+      "title": "World Age Filter",
+      "description": "Restricts spawning based on world age (in ticks). Useful for progressive difficulty where certain mobs appear later.",
+      "dataType": "object",
+      "subFormId": "spawn/spawn_worldagefilter"
     }
   ],
   "generatedFromSchema_doNotEdit": {

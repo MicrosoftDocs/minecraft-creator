@@ -29,8 +29,10 @@ Type: *EventSink<SelectedModalToolChangedEventPayload>*
 - [addTool](#addtool)
 - [focusToolInputContext](#focustoolinputcontext)
 - [getSelectedToolId](#getselectedtoolid)
+- [getSortOrder](#getsortorder)
 - [removeTool](#removetool)
 - [setSelectedToolId](#setselectedtoolid)
+- [setSortOrder](#setsortorder)
 
 ### **addTool**
 `
@@ -67,6 +69,15 @@ Returns identifier of the selected tool.
 
 **Returns** *string* | *undefined*
 
+### **getSortOrder**
+`
+getSortOrder(): string[] | undefined
+`
+
+Returns the current sort order of tools.
+
+**Returns** *string*[] | *undefined* - Array of tool identifiers in sort order, or undefined if not set
+
 ### **removeTool**
 `
 removeTool(id: string): void
@@ -92,5 +103,19 @@ Selects a tool in the container.
 - **id**: *string* | *undefined*
   
   Identifier of the tool
+
+**Returns** *void*
+
+### **setSortOrder**
+`
+setSortOrder(ids: string[] | undefined): void
+`
+
+Sets the sort order for tools in the container.
+
+#### **Parameters**
+- **ids**: *string*[] | *undefined*
+  
+  Array of tool identifiers in the desired order, or undefined to clear
 
 **Returns** *void*

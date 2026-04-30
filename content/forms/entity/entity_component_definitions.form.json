@@ -2214,6 +2214,12 @@
         "dataType": "object"
       },
       {
+        "id": "minecraft:air_drag_modifier",
+        "title": "Minecraft Air Drag Modifier",
+        "description": "Dynamic value",
+        "dataType": "object"
+      },
+      {
         "id": "minecraft:ambient_sound_interval",
         "title": "Minecraft Ambient Sound Interval",
         "description": "Dynamic value",
@@ -2792,8 +2798,9 @@
       {
         "id": "minecraft:behavior.make_love",
         "title": "Make Love Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the villager to look for a mate to spawn other villagers with. Can only be used by Villagers.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_make_love"
       },
       {
         "id": "minecraft:behavior.melee_attack",
@@ -3113,8 +3120,9 @@
       {
         "id": "minecraft:behavior.receive_love",
         "title": "Receive Love Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the villager to stop so another villager can breed with it. Can only be used by a Villager.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_receive_love"
       },
       {
         "id": "minecraft:behavior.restrict_open_door",
@@ -3193,8 +3201,9 @@
       {
         "id": "minecraft:behavior.skeleton_horse_trap",
         "title": "Skeleton Horse Trap Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows Equine mobs to be Horse Traps and be triggered like them, spawning a lightning bolt and a bunch of horses when a player is nearby. Can only be used by Horses, Mules, Donkeys and Skeleton Horses.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_skeleton_horse_trap"
       },
       {
         "id": "minecraft:behavior.sleep",
@@ -3338,8 +3347,9 @@
       {
         "id": "minecraft:behavior.swell",
         "title": "Swell Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the creeper to swell up when a player is nearby. It can only be used by Creepers.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_swell"
       },
       {
         "id": "minecraft:behavior.swim_idle",
@@ -3527,6 +3537,12 @@
       {
         "id": "minecraft:boss",
         "title": "Minecraft Boss",
+        "description": "Dynamic value",
+        "dataType": "object"
+      },
+      {
+        "id": "minecraft:bounciness",
+        "title": "Minecraft Bounciness",
         "description": "Dynamic value",
         "dataType": "object"
       },
@@ -4417,7 +4433,8 @@
         "id": "minecraft:pushable_by_entity",
         "title": "Minecraft Pushable By Entity",
         "description": "Allows an entity to be pushed by other entities.",
-        "dataType": "object"
+        "dataType": "object",
+        "subFormId": "entity/minecraft_pushable_by_entity"
       },
       {
         "id": "minecraft:raid_trigger",

@@ -960,6 +960,8 @@
       href: minecraft/server/ShutdownEvent.md
     - name: SmeltItemFunction
       href: minecraft/server/SmeltItemFunction.md
+    - name: SoundInstance
+      href: minecraft/server/SoundInstance.md
     - name: SpecificEnchantFunction
       href: minecraft/server/SpecificEnchantFunction.md
     - name: StartupBeforeEventSignal
@@ -1604,6 +1606,8 @@
       href: minecraft/server-editor/WidgetComponentRenderPrimitiveTypeLine.md
     - name: WidgetComponentRenderPrimitiveTypePyramid
       href: minecraft/server-editor/WidgetComponentRenderPrimitiveTypePyramid.md
+    - name: WidgetComponentRenderPrimitiveTypeWireframeMesh
+      href: minecraft/server-editor/WidgetComponentRenderPrimitiveTypeWireframeMesh.md
     - name: WidgetComponentSpline
       href: minecraft/server-editor/WidgetComponentSpline.md
     - name: WidgetComponentText
@@ -1926,6 +1930,8 @@
       href: minecraft/server-editor/WidgetCreateOptions.md
     - name: WidgetGroupCreateOptions
       href: minecraft/server-editor/WidgetGroupCreateOptions.md
+    - name: WireframeMeshOptions
+      href: minecraft/server-editor/WireframeMeshOptions.md
     - name: Action
       href: minecraft/server-editor/Action.md
     - name: ActionID
@@ -2046,12 +2052,14 @@
       href: minecraft/server-editor/SupportedKeyboardActionTypes.md
     - name: SupportedMouseActionTypes
       href: minecraft/server-editor/SupportedMouseActionTypes.md
+    - name: TooltipButton
+      href: minecraft/server-editor/TooltipButton.md
     - name: TooltipContent
       href: minecraft/server-editor/TooltipContent.md
     - name: TooltipInteractiveContent
       href: minecraft/server-editor/TooltipInteractiveContent.md
-    - name: TooltipInteractiveContentDescription
-      href: minecraft/server-editor/TooltipInteractiveContentDescription.md
+    - name: TooltipInteractiveContentDescriptionItem
+      href: minecraft/server-editor/TooltipInteractiveContentDescriptionItem.md
     - name: TooltipLink
       href: minecraft/server-editor/TooltipLink.md
     - name: UnregisterInputBindingCallback

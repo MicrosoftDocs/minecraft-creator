@@ -12,7 +12,7 @@ description: Contents of the @minecraft/server-editor.TooltipInteractiveContent 
 Content properties to display interactive tooltips
 
 ## Declaration
-`export declare type TooltipInteractiveContent = {
+`export type TooltipInteractiveContent = {
     title?: LocalizedString;
-    description?: TooltipInteractiveContentDescription[];
+    description?: (TooltipInteractiveContentDescriptionItem | TooltipInteractiveContentDescriptionItem[])[];
 };`

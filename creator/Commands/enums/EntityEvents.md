@@ -181,6 +181,7 @@ Entity becomes a clownfish
 Entity becomes a dog fish
 - `minecraft:become_e_red_snapper`
 Entity becomes a red snapper
+- `minecraft:become_explosive`
 - `minecraft:become_farmer`
 Entity, presumably a villager, takes on the role of farmer
 - `minecraft:become_fast_flat`
@@ -666,6 +667,8 @@ Entity fully puffs
 - `minecraft:transport_items.stop_interaction`
 - `minecraft:trigger_raid`
 Entity triggers a raid
+- `minecraft:try_priming`
+- `minecraft:try_priming_on_explosion`
 - `minecraft:turn_black`
 Entity turns black
 - `minecraft:turn_blue`

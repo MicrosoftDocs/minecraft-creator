@@ -20,7 +20,12 @@ Intance of rules definition.
 | check_if_target_is_immersed_in_water | false | Boolean true/false | Whether or not the target should be fully immersed in water for the knockback rules to apply. | 
 | filter (Filter) | {"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null} | [Filter](#filter) item | Filter for the entity type that will be affected by these knockback rules. | 
 | filter (Alternate 1) | *not set* | Object |  | 
+| horizontal_hit_angle_scale | 0 | Decimal number | Scaling factor to angle the knockback horizontally based on the attacker's aim direction. | 
 | horizontal_power | 1 | Decimal number | Power with which a target should be knocked backwards. | 
+| scale_previous_velocity | 0.5 | Decimal number | Scaling factor to apply to the target's velocity before applying knockback. Value must be <= 1. | 
+| scale_with_damage | false | Boolean true/false | Scaling factor to the magnitude of knockback based on the inverse square of the damage. | 
+| vertical_hit_angle_scale | 0 | Decimal number | Scaling factor to angle the knockback vertically based on the attacker's aim direction. Value must be <= 1. | 
+| vertical_position_angle_scale | 0 | Decimal number | Scaling factor to angle the knockback vertically based on the difference in the attacker's feet position to the target's feet position. Value must be <= 1. | 
 | vertical_power | 0.4000000059604645 | Decimal number | Power with which a target should be knocked upwards. | 
 | vertical_velocity_cap | 0.4000000059604645 | Decimal number | Maximum allowed Y velocity after target's knockback rules have been evaluated. | 
 

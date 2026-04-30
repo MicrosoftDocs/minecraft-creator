@@ -34,30 +34,14 @@
         "title": "Jump Chance Percentage",
         "description": "Percent chance a slime or magma cube has to jump while in water / lava.",
         "defaultValue": 0.8,
-        "dataType": "float",
-        "samples": {
-          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:behavior.slime_float/",
-              "content": 0.8
-            }
-          ]
-        }
+        "dataType": "float"
       },
       {
         "id": "speed_multiplier",
         "title": "Speed Multiplier",
         "description": "Determines the multiplier the entity's speed is modified by when moving through water / lava.",
         "defaultValue": 1.2,
-        "dataType": "float",
-        "samples": {
-          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:behavior.slime_float/",
-              "content": 1.2
-            }
-          ]
-        }
+        "dataType": "float"
       },
       {
         "id": "priority",
@@ -97,16 +81,6 @@
             "priority": 1
           }
         }
-      ],
-      "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:behavior.slime_float/",
-          "content": {
-            "priority": 1,
-            "jump_chance_percentage": 0.8,
-            "speed_multiplier": 1.2
-          }
-        }
       ]
     }
   },
@@ -140,15 +114,7 @@
         "title": "Jump Chance Percentage",
         "description": "Percent chance a slime or magma cube has to jump while in water / lava.",
         "dataType": "float",
-        "defaultValue": 0.800000011920929,
-        "samples": {
-          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:behavior.slime_float/",
-              "content": 0.8
-            }
-          ]
-        }
+        "defaultValue": 0.800000011920929
       },
       {
         "id": "priority",
@@ -175,15 +141,7 @@
         "title": "Speed Multiplier",
         "description": "Determines the multiplier the entity's speed is modified by when moving through water / lava.",
         "dataType": "float",
-        "defaultValue": 1.2000000476837158,
-        "samples": {
-          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:behavior.slime_float/",
-              "content": 1.2
-            }
-          ]
-        }
+        "defaultValue": 1.2000000476837158
       }
     ],
     "samples": {
@@ -200,16 +158,6 @@
           "path": "/minecraft:entity/components/minecraft:behavior.slime_float/",
           "content": {
             "priority": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:behavior.slime_float/",
-          "content": {
-            "priority": 1,
-            "jump_chance_percentage": 0.8,
-            "speed_multiplier": 1.2
           }
         }
       ]

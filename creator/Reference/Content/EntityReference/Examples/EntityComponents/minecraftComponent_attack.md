@@ -18,6 +18,7 @@ Defines an entity's melee attack damage and any additional status effects applie
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | damage | *not set* | Range of floats | Range of the random amount of damage the melee attack deals. | 
+| effect_amplifier | 0 | Integer number | Amplifier level (potion tier) of the status ailment applied to the damaged entity. Higher values increase the strength of the effect. | 
 | effect_duration | 0 | Decimal number | Duration in seconds of the status ailment applied to the damaged entity. | 
 | effect_name | *not set* | String | Identifier of the status ailment to apply to an entity attacked by this entity's melee attack. | 
 

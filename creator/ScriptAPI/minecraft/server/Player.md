@@ -301,7 +301,9 @@ Notes:
 - [getSpawnPoint](#getspawnpoint)
 - [getTotalXp](#gettotalxp)
 - [playMusic](#playmusic)
+::: moniker range="=minecraft-bedrock-experimental"
 - [playSound](#playsound)
+::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [postClientMessage](#postclientmessage)
 ::: moniker-end
@@ -321,6 +323,9 @@ Notes:
 - [stopMusic](#stopmusic)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [stopSound](#stopsound)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-stable"
+- [playSound](#playsound)
 ::: moniker-end
 
 ### **addExperience**
@@ -513,9 +518,10 @@ Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **playSound**
 `
-playSound(soundId: string, soundOptions?: PlayerSoundOptions): void
+playSound(soundId: string, soundOptions?: PlayerSoundOptions): SoundInstance
 `
 
 Plays a sound that only this particular player can hear.
@@ -525,10 +531,16 @@ Plays a sound that only this particular player can hear.
 - **soundOptions**?: [*PlayerSoundOptions*](PlayerSoundOptions.md) = `null`
   
   Additional optional options for the sound.
+
+**Returns** [*SoundInstance*](SoundInstance.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*
 
 #### Examples
 
@@ -563,6 +575,7 @@ function playMusicAndSound(targetLocation: DimensionLocation) {
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/playMusicAndSound.ts) code sandbox.
+::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **postClientMessage**
@@ -945,4 +958,57 @@ Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-stable"
+### **playSound**
+`
+playSound(soundId: string, soundOptions?: PlayerSoundOptions): void
+`
+
+Plays a sound that only this particular player can hear.
+
+#### **Parameters**
+- **soundId**: *string*
+- **soundOptions**?: [*PlayerSoundOptions*](PlayerSoundOptions.md) = `null`
+  
+  Additional optional options for the sound.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+
+#### Examples
+
+##### ***playMusicAndSound.ts***
+
+```typescript
+import { world, MusicOptions, WorldSoundOptions, PlayerSoundOptions, DimensionLocation } from '@minecraft/server';
+
+function playMusicAndSound(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
+
+  const musicOptions: MusicOptions = {
+    fade: 0.5,
+    loop: true,
+    volume: 1.0,
+  };
+  world.playMusic('music.menu', musicOptions);
+
+  const worldSoundOptions: WorldSoundOptions = {
+    pitch: 0.5,
+    volume: 4.0,
+  };
+  world.playSound('ambient.weather.thunder', targetLocation, worldSoundOptions);
+
+  const playerSoundOptions: PlayerSoundOptions = {
+    pitch: 1.0,
+    volume: 1.0,
+  };
+
+  players[0].playSound('bucket.fill_water', playerSoundOptions);
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/playMusicAndSound.ts) code sandbox.
 ::: moniker-end

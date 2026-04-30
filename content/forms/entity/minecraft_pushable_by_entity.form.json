@@ -175,5 +175,126 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:pushable_by_entity",
+    "title": "Entity Pushable By Entity",
+    "description": "Allows an entity to be pushed by other entities.",
+    "fields": [
+      {
+        "id": "presets",
+        "title": "Presets",
+        "description": "Defines how this entity behaves when pushed by another entity. The first preset whose \"filter\" conditions are met will be applied; if none match, a default configuration is used instead.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subFormId": "entity/pushablebyentitypreset",
+        "samples": {
+          "/vanilla/behavior_pack/entities/boat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:pushable_by_entity/",
+              "content": [
+                {
+                  "push_mode": "legacy_boat",
+                  "strength_multiplier": 0.1,
+                  "min_distance": 0.3,
+                  "push_scale_self": 0.5,
+                  "push_scale_other": 0.25
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/chest_boat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:pushable_by_entity/",
+              "content": [
+                {
+                  "push_mode": "legacy_boat",
+                  "strength_multiplier": 0.1,
+                  "min_distance": 0.3,
+                  "push_scale_self": 0.5,
+                  "push_scale_other": 0.25
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/chest_minecart.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:pushable_by_entity/",
+              "content": [
+                {
+                  "push_mode": "legacy_minecart",
+                  "strength_multiplier": 0.1,
+                  "min_distance": 0.0001,
+                  "push_scale_self": 0.5,
+                  "push_scale_other": 0.25
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/boat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable_by_entity/",
+          "content": {
+            "presets": [
+              {
+                "push_mode": "legacy_boat",
+                "strength_multiplier": 0.1,
+                "min_distance": 0.3,
+                "push_scale_self": 0.5,
+                "push_scale_other": 0.25
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable_by_entity/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chest_boat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable_by_entity/",
+          "content": {
+            "presets": [
+              {
+                "push_mode": "legacy_boat",
+                "strength_multiplier": 0.1,
+                "min_distance": 0.3,
+                "push_scale_self": 0.5,
+                "push_scale_other": 0.25
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chest_minecart.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable_by_entity/",
+          "content": {
+            "presets": [
+              {
+                "push_mode": "legacy_minecart",
+                "strength_multiplier": 0.1,
+                "min_distance": 0.0001,
+                "push_scale_self": 0.5,
+                "push_scale_other": 0.25
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable_by_entity/",
+          "content": {}
+        }
+      ]
+    }
   }
 }

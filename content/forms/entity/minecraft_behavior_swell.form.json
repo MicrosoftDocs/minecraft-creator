@@ -41,5 +41,53 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.swell",
+    "title": "Entity Swell Behavior",
+    "description": "Allows the creeper to swell up when a player is nearby. It can only be used by Creepers.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "start_distance",
+        "title": "Start Distance",
+        "description": "This mob starts swelling when a target is at least this many blocks away.",
+        "dataType": "float",
+        "defaultValue": 10
+      },
+      {
+        "id": "stop_distance",
+        "title": "Stop Distance",
+        "description": "This mob stops swelling when a target has moved away at least this many blocks.",
+        "dataType": "float",
+        "defaultValue": 2
+      }
+    ],
+    "samples": {}
   }
 }

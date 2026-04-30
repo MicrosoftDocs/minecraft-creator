@@ -33,45 +33,21 @@
         "title": "Add Random Time Range",
         "description": "Additional time (in whole seconds), chosen randomly in the range of [0, \"add_random_time_range\"], to add to \"min_change_direction_time\".",
         "defaultValue": 3,
-        "dataType": "int",
-        "samples": {
-          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:behavior.slime_random_direction/",
-              "content": 3
-            }
-          ]
-        }
+        "dataType": "int"
       },
       {
         "id": "min_change_direction_time",
         "title": "Min Change Direction Time",
         "description": "Constant minimum time (in seconds) to wait before choosing a new direction.",
         "defaultValue": 2,
-        "dataType": "float",
-        "samples": {
-          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:behavior.slime_random_direction/",
-              "content": 2
-            }
-          ]
-        }
+        "dataType": "float"
       },
       {
         "id": "turn_range",
         "title": "Turn Range",
         "description": "Maximum rotation angle range (in degrees) when randomly choosing a new direction.",
         "defaultValue": 360,
-        "dataType": "int",
-        "samples": {
-          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:behavior.slime_random_direction/",
-              "content": 360
-            }
-          ]
-        }
+        "dataType": "int"
       },
       {
         "id": "priority",
@@ -111,17 +87,6 @@
             "priority": 4
           }
         }
-      ],
-      "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:behavior.slime_random_direction/",
-          "content": {
-            "priority": 4,
-            "add_random_time_range": 3,
-            "turn_range": 360,
-            "min_change_direction_time": 2
-          }
-        }
       ]
     }
   },
@@ -135,15 +100,7 @@
         "title": "Add Random Time Range",
         "description": "Additional time (in whole seconds), chosen randomly in the range of [0, \"add_random_time_range\"], to add to \"min_change_direction_time\".",
         "dataType": "int",
-        "defaultValue": 3,
-        "samples": {
-          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:behavior.slime_random_direction/",
-              "content": 3
-            }
-          ]
-        }
+        "defaultValue": 3
       },
       {
         "id": "control_flags",
@@ -170,15 +127,7 @@
         "title": "Min Change Direction Time",
         "description": "Constant minimum time (in seconds) to wait before choosing a new direction.",
         "dataType": "float",
-        "defaultValue": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:behavior.slime_random_direction/",
-              "content": 2
-            }
-          ]
-        }
+        "defaultValue": 2
       },
       {
         "id": "priority",
@@ -205,15 +154,7 @@
         "title": "Turn Range",
         "description": "Maximum rotation angle range (in degrees) when randomly choosing a new direction.",
         "dataType": "int",
-        "defaultValue": 360,
-        "samples": {
-          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:behavior.slime_random_direction/",
-              "content": 360
-            }
-          ]
-        }
+        "defaultValue": 360
       }
     ],
     "samples": {
@@ -230,17 +171,6 @@
           "path": "/minecraft:entity/components/minecraft:behavior.slime_random_direction/",
           "content": {
             "priority": 4
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:behavior.slime_random_direction/",
-          "content": {
-            "priority": 4,
-            "add_random_time_range": 3,
-            "turn_range": 360,
-            "min_change_direction_time": 2
           }
         }
       ]

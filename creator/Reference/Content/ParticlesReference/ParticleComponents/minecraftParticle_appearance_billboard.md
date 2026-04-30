@@ -47,8 +47,8 @@ This component tells the particle system to render the particle as a billboard, 
         // defaults to 1
         // when set to 1, UV's work just like normalized UV's
         // when set to the texture width/height, this works like texels
-        "texturewidth": <int>,
-        "textureheight": <int>,
+        "texture_width": <int>,
+        "texture_height": <int>,
 
         // Assuming the specified texture width and height, use these
         // uv coordinates.
