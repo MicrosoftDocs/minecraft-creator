@@ -15,9 +15,9 @@ Allows to specify events to execute when equipment is set in the entity's defaul
 
 ## Entity On Equipment Changed Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| slots | [] | Array of [Slots](#entity-onequipmentchangedslotentrydescriptor) items | A list of slot-specific events to execute when the entity's equipment changes in those slots. | Sulfur Cube: `[{"slot":"slot.weapon.mainhand","on_equip":"minecraft:on_block_absorbed","on_unequip":"minecraft:on_block_ejected"}]` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| slots | [] | Array of [Slots](#entity-onequipmentchangedslotentrydescriptor) items | A list of slot-specific events to execute when the entity's equipment changes in those slots. | 
 
 ### Entity OnEquipmentChangedSlotEntryDescriptor
 
@@ -44,18 +44,3 @@ Allows to specify events to execute when equipment is set in the entity's defaul
 | slot.weapon.offhand | Slot.weapon.offhand | |
 
 ## Samples
-
-#### [Sulfur Cube](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/sulfur_cube.json)
-
-
-```json
-"minecraft:on_equipment_changed": {
-  "slots": [
-    {
-      "slot": "slot.weapon.mainhand",
-      "on_equip": "minecraft:on_block_absorbed",
-      "on_unequip": "minecraft:on_block_ejected"
-    }
-  ]
-}
-```

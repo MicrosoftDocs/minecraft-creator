@@ -72,11 +72,64 @@
         ]
       },
       {
+        "id": "horizontal_hit_angle_scale",
+        "title": "Horizontal Hit Angle Scale",
+        "description": "Scaling factor to angle the knockback horizontally based on the attacker's aim direction.",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
         "id": "horizontal_power",
         "title": "Horizontal Power",
         "description": "Power with which a target should be knocked backwards.",
         "dataType": "float",
         "defaultValue": 1
+      },
+      {
+        "id": "scale_previous_velocity",
+        "title": "Scale Previous Velocity",
+        "description": "Scaling factor to apply to the target's velocity before applying knockback.",
+        "dataType": "float",
+        "defaultValue": 0.5,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "scale_with_damage",
+        "title": "Scale With Damage",
+        "description": "Scaling factor to the magnitude of knockback based on the inverse square of the damage.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "vertical_hit_angle_scale",
+        "title": "Vertical Hit Angle Scale",
+        "description": "Scaling factor to angle the knockback vertically based on the attacker's aim direction.",
+        "dataType": "float",
+        "defaultValue": 0,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "vertical_position_angle_scale",
+        "title": "Vertical Position Angle Scale",
+        "description": "Scaling factor to angle the knockback vertically based on the difference in the attacker's feet position to the target's feet position.",
+        "dataType": "float",
+        "defaultValue": 0,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ]
       },
       {
         "id": "vertical_power",

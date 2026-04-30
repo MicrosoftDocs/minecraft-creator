@@ -12,38 +12,9 @@
         "description": "A list of slot-specific events to execute when the entity's equipment changes in those slots.",
         "dataType": "objectArray",
         "defaultValue": [],
-        "subFormId": "entity/onequipmentchangedslotentrydescriptor",
-        "samples": {
-          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:on_equipment_changed/",
-              "content": [
-                {
-                  "slot": "slot.weapon.mainhand",
-                  "on_equip": "minecraft:on_block_absorbed",
-                  "on_unequip": "minecraft:on_block_ejected"
-                }
-              ]
-            }
-          ]
-        }
+        "subFormId": "entity/onequipmentchangedslotentrydescriptor"
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:on_equipment_changed/",
-          "content": {
-            "slots": [
-              {
-                "slot": "slot.weapon.mainhand",
-                "on_equip": "minecraft:on_block_absorbed",
-                "on_unequip": "minecraft:on_block_ejected"
-              }
-            ]
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

@@ -30,25 +30,7 @@
         "id": "jump_delay",
         "title": "Jump Delay",
         "description": "Delay after landing when using the slime move control.",
-        "dataType": "intRange",
-        "samples": {
-          "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_without_target/minecraft:movement.jump/",
-              "content": [
-                0.5,
-                1.5
-              ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_with_target/minecraft:movement.jump/",
-              "content": [
-                0.16,
-                0.5
-              ]
-            }
-          ]
-        }
+        "dataType": "intRange"
       },
       {
         "id": "max_turn",
@@ -58,27 +40,6 @@
         "dataType": "float"
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/entities/sulfur_cube.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_without_target/minecraft:movement.jump/",
-          "content": {
-            "jump_delay": [
-              0.5,
-              1.5
-            ]
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:sulfur_cube_with_target/minecraft:movement.jump/",
-          "content": {
-            "jump_delay": [
-              0.16,
-              0.5
-            ]
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

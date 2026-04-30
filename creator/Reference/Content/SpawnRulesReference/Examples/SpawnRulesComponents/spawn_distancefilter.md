@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Controls spawning based on distance from the nearest player. Mobs typically spawn within a certain radius around players (24-128 blocks) and despawn when players move too far away.
 
 
-## Spawn DistanceFilter Properties
+## Distance Filter Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

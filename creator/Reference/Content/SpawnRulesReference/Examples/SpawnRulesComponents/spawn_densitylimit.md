@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Limits how many of this entity type can exist in an area, with separate caps for surface and underground spawning. This prevents overpopulation and controls mob density for performance and gameplay balance.
 
 
-## Spawn DensityLimit Properties
+## Density Limit Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

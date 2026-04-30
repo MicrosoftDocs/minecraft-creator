@@ -1,6 +1,8 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Spawn Weight",
+  "title": "Spawn Weight",
+  "description": "Defines the relative probability of this entity spawning compared to other entities in the same biome and spawn pool. Higher weight values mean more frequent spawns. A weight of 100 is typical for common mobs.",
   "summarizer": {
     "phrases": [
       {
@@ -35,6 +37,5 @@
         "defaultValue": 0
       }
     ]
-  },
-  "description": "Defines the relative probability of this entity spawning compared to other entities in the same biome and spawn pool. Higher weight values mean more frequent spawns. A weight of 100 is typical for common mobs."
+  }
 }

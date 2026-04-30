@@ -1,6 +1,8 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "Spawn MobEventFilter",
+  "title": "Mob Event Filter",
+  "description": "Controls spawning based on whether a specific mob event is active. Mob events are world-level toggles (like raids or wandering traders) that can enable or disable certain spawn behaviors.",
   "summarizer": {
     "phrases": [
       {
@@ -39,6 +41,5 @@
         "defaultValue": ""
       }
     ]
-  },
-  "description": "Controls spawning based on whether a specific mob event is active. Mob events are world-level toggles (like raids or wandering traders) that can enable or disable certain spawn behaviors."
+  }
 }

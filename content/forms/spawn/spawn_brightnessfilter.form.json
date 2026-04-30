@@ -25,7 +25,29 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "adjust_for_weather",
+      "title": "Adjust For Weather",
+      "description": "When true, brightness is adjusted for the current weather (rain/thunder reduce light levels).",
+      "dataType": "boolean",
+      "defaultValue": false
+    },
+    {
+      "id": "max",
+      "title": "Max Light Level",
+      "description": "Maximum light level (0-15) at which this entity can spawn.",
+      "dataType": "int",
+      "defaultValue": 15
+    },
+    {
+      "id": "min",
+      "title": "Min Light Level",
+      "description": "Minimum light level (0-15) at which this entity can spawn.",
+      "dataType": "int",
+      "defaultValue": 0
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "Spawn BrightnessFilter",
     "title": "Spawn BrightnessFilter",

@@ -989,7 +989,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:poppy |  |
 | minecraft:portal | portal_axis |
 | minecraft:potatoes | growth |
-| minecraft:potent_sulfur |  |
+| minecraft:potent_sulfur | potent_sulfur_state |
 | minecraft:powder_snow |  |
 | minecraft:powered_comparator | minecraft:cardinal_direction, output_lit_bit, output_subtract_bit |
 | minecraft:powered_repeater | minecraft:cardinal_direction, repeater_delay |

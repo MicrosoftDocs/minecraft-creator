@@ -15,44 +15,42 @@
   },
   "fields": [],
   "generated_doNotEdit": {
-    "title": "Actor Resource Definition (v1.8.0)",
-    "description": "Defines an entity client resource definition document with format_version 1.8.0.",
     "id": "actor_resource_definition",
     "fields": [
       {
-        "dataType": 25,
+        "dataType": "version",
         "id": "format_version",
         "title": "Format Version",
         "isRequired": true
       },
       {
-        "dataType": 16,
+        "dataType": "object",
         "id": "minecraft:(client_entity|attachable)",
         "title": "(client Entity|attachable)",
         "isRequired": true,
         "subForm": {
           "fields": [
             {
-              "dataType": 16,
+              "dataType": "object",
               "id": "description",
               "title": "Description",
               "isRequired": true,
               "subForm": {
                 "fields": [
                   {
-                    "dataType": 2,
+                    "dataType": "string",
                     "id": "identifier",
                     "title": "Identifier",
                     "isRequired": true
                   },
                   {
-                    "dataType": 25,
+                    "dataType": "version",
                     "id": "min_engine_version",
                     "title": "Min Engine Version",
                     "isRequired": false
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "materials",
                     "title": "Materials",
                     "isRequired": false,
@@ -61,7 +59,7 @@
                     },
                     "alternates": [
                       {
-                        "dataType": 2,
+                        "dataType": "string",
                         "id": "materials",
                         "title": "<identifier>",
                         "isRequired": true,
@@ -70,7 +68,7 @@
                     ]
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "textures",
                     "title": "Textures",
                     "isRequired": false,
@@ -79,7 +77,7 @@
                     },
                     "alternates": [
                       {
-                        "dataType": 2,
+                        "dataType": "string",
                         "id": "textures",
                         "title": "<identifier>",
                         "isRequired": true,
@@ -88,7 +86,7 @@
                     ]
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "geometry",
                     "title": "Geometry",
                     "isRequired": false,
@@ -97,7 +95,7 @@
                     },
                     "alternates": [
                       {
-                        "dataType": 2,
+                        "dataType": "string",
                         "id": "geometry",
                         "title": "<identifier>",
                         "isRequired": true,
@@ -106,32 +104,32 @@
                     ]
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "spawn_egg",
                     "title": "Spawn Egg",
                     "isRequired": false,
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 2,
+                          "dataType": "string",
                           "id": "texture",
                           "title": "Texture",
                           "isRequired": false
                         },
                         {
-                          "dataType": 2,
+                          "dataType": "string",
                           "id": "base_color",
                           "title": "Base Color",
                           "isRequired": false
                         },
                         {
-                          "dataType": 2,
+                          "dataType": "string",
                           "id": "overlay_color",
                           "title": "Overlay Color",
                           "isRequired": false
                         },
                         {
-                          "dataType": 0,
+                          "dataType": "int",
                           "id": "texture_index",
                           "title": "Texture Index",
                           "isRequired": false
@@ -140,44 +138,44 @@
                     }
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "scripts",
                     "title": "Scripts",
                     "isRequired": false,
                     "subForm": {
                       "fields": [
                         {
-                          "dataType": 35,
+                          "dataType": "molangArray",
                           "id": "pre_animation",
                           "title": "Pre Animation",
                           "isRequired": false
                         },
                         {
-                          "dataType": 34,
+                          "dataType": "molang",
                           "id": "scale",
                           "title": "Scale",
                           "isRequired": false
                         },
                         {
-                          "dataType": 34,
+                          "dataType": "molang",
                           "id": "scale[xX]",
                           "title": "Scale",
                           "isRequired": false
                         },
                         {
-                          "dataType": 34,
+                          "dataType": "molang",
                           "id": "scale[yY]",
                           "title": "Scale",
                           "isRequired": false
                         },
                         {
-                          "dataType": 34,
+                          "dataType": "molang",
                           "id": "scale[zZ]",
                           "title": "Scale",
                           "isRequired": false
                         },
                         {
-                          "dataType": 34,
+                          "dataType": "molang",
                           "id": "parent_setup",
                           "title": "Parent Setup",
                           "isRequired": false
@@ -186,7 +184,7 @@
                     }
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "particle_effects",
                     "title": "Particle Effects",
                     "isRequired": false,
@@ -195,7 +193,7 @@
                     },
                     "alternates": [
                       {
-                        "dataType": 2,
+                        "dataType": "string",
                         "id": "particle_effects",
                         "title": "<identifier>",
                         "isRequired": false,
@@ -204,7 +202,7 @@
                     ]
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "particle_emitters",
                     "title": "Particle Emitters",
                     "isRequired": false,
@@ -213,7 +211,7 @@
                     },
                     "alternates": [
                       {
-                        "dataType": 2,
+                        "dataType": "string",
                         "id": "particle_emitters",
                         "title": "<identifier>",
                         "isRequired": false,
@@ -222,7 +220,7 @@
                     ]
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "animations",
                     "title": "Animations",
                     "isRequired": false,
@@ -231,7 +229,7 @@
                     },
                     "alternates": [
                       {
-                        "dataType": 2,
+                        "dataType": "string",
                         "id": "animations",
                         "title": "<identifier>",
                         "isRequired": false,
@@ -241,13 +239,13 @@
                   },
                   {
                     "id": "animation_controllers",
-                    "dataType": 15,
+                    "dataType": "objectArray",
                     "subForm": {
                       "fields": []
                     },
                     "alternates": [
                       {
-                        "dataType": 17,
+                        "dataType": "stringArray",
                         "id": "animation_controllers",
                         "title": "Animation Controllers",
                         "isRequired": false
@@ -255,13 +253,13 @@
                     ]
                   },
                   {
-                    "dataType": 17,
+                    "dataType": "stringArray",
                     "id": "render_controllers",
                     "title": "Render Controllers",
                     "isRequired": false
                   },
                   {
-                    "dataType": 16,
+                    "dataType": "object",
                     "id": "sound_effects",
                     "title": "Sound Effects",
                     "isRequired": false,
@@ -270,7 +268,7 @@
                     },
                     "alternates": [
                       {
-                        "dataType": 2,
+                        "dataType": "string",
                         "id": "sound_effects",
                         "title": "<identifier>",
                         "isRequired": false,
@@ -279,19 +277,19 @@
                     ]
                   },
                   {
-                    "dataType": 1,
+                    "dataType": "boolean",
                     "id": "enable_attachables",
                     "title": "Enable Attachables",
                     "isRequired": false
                   },
                   {
-                    "dataType": 1,
+                    "dataType": "boolean",
                     "id": "held_item_ignores_lighting",
                     "title": "Held Item Ignores Lighting",
                     "isRequired": false
                   },
                   {
-                    "dataType": 1,
+                    "dataType": "boolean",
                     "id": "hide_armor",
                     "title": "Hide Armor",
                     "isRequired": false

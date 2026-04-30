@@ -246,6 +246,8 @@ Oak Stairs
 - `oak_log`
 - `minecraft:brown_stained_glass_pane`
 - `brown_stained_glass_pane`
+- `minecraft:sulfur_spike`
+- `sulfur_spike`
 - `minecraft:end_bricks`
 End Bricks
 - `end_bricks`

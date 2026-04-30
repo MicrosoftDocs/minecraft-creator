@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Restricts spawning based on how long the world has existed (measured in ticks). Useful for progressive difficulty where certain mobs only start appearing after the world has been played for a minimum amount of time.
 
 
-## Spawn WorldAgeFilter Properties
+## World Age Filter Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

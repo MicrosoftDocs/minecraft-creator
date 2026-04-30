@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Restricts entity spawning to specific Y-coordinate ranges. Useful for creating depth-based mob distribution like slimes in swamps (below Y=40), or limiting surface mobs from spawning underground.
 
 
-## Spawn HeightFilter Properties
+## Height Filter Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

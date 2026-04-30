@@ -2305,7 +2305,15 @@
             "title": "If first"
           }
         ],
-        "defaultValue": "if_first"
+        "defaultValue": "if_first",
+        "samples": {
+          "/vanilla/behavior_pack/items/apple.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:use_modifiers/",
+              "content": "always"
+            }
+          ]
+        }
       },
       {
         "id": "use_duration",
@@ -2328,6 +2336,7 @@
         {
           "path": "/minecraft:item/components/minecraft:use_modifiers/",
           "content": {
+            "start_using": "always",
             "use_duration": 1.6,
             "movement_modifier": 0.35
           }

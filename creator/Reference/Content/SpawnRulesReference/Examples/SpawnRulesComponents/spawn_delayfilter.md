@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Delays entity spawning by a configurable amount of time after spawn conditions are met. Useful for preventing immediate respawning after mob deaths or creating spawn cooldowns for rare creatures.
 
 
-## Spawn DelayFilter Properties
+## Delay Filter Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

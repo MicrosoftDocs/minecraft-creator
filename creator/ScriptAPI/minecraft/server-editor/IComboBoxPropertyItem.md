@@ -26,6 +26,7 @@ Type: *string*
 ## Methods
 - [setTitle](#settitle)
 - [setTooltip](#settooltip)
+- [updateEntries](#updateentries)
 
 ### **setTitle**
 `
@@ -52,5 +53,22 @@ Updates tooltip of the property item.
 - **tooltip**: *BasicTooltipContent* | *undefined*
   
   New tooltip.
+
+**Returns** *void*
+
+### **updateEntries**
+`
+updateEntries(entries: IComboBoxPropertyItemEntry[] | undefined, newValue?: string): void
+`
+
+Update list of combo box entries.
+
+#### **Parameters**
+- **entries**: *IComboBoxPropertyItemEntry*[] | *undefined*
+  
+  New list of updated entries.
+- **newValue**?: *string*
+  
+  New value to use for the combo box.
 
 **Returns** *void*

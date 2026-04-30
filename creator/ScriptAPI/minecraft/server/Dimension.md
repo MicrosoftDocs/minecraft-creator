@@ -67,7 +67,9 @@ Type: *string*
 - [isChunkLoaded](#ischunkloaded)
 - [placeFeature](#placefeature)
 - [placeFeatureRule](#placefeaturerule)
+::: moniker range="=minecraft-bedrock-experimental"
 - [playSound](#playsound)
+::: moniker-end
 - [runCommand](#runcommand)
 - [setBlockPermutation](#setblockpermutation)
 - [setBlockType](#setblocktype)
@@ -83,6 +85,9 @@ Type: *string*
 ::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [stopSound](#stopsound)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-stable"
+- [playSound](#playsound)
 ::: moniker-end
 
 ### **containsBiomes**
@@ -696,9 +701,10 @@ Notes:
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **playSound**
 `
-playSound(soundId: string, location: Vector3, soundOptions?: WorldSoundOptions): void
+playSound(soundId: string, location: Vector3, soundOptions?: WorldSoundOptions): SoundInstance
 `
 
 Plays a sound for all players.
@@ -713,11 +719,17 @@ Plays a sound for all players.
 - **soundOptions**?: [*WorldSoundOptions*](WorldSoundOptions.md) = `null`
   
   Additional options for configuring additional effects for the sound.
+
+**Returns** [*SoundInstance*](SoundInstance.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
+::: moniker-end
 
 ### **runCommand**
 `
@@ -1061,4 +1073,29 @@ Stops a sound from playing for all players.
   
 Notes:
 - This function can't be called in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-stable"
+### **playSound**
+`
+playSound(soundId: string, location: Vector3, soundOptions?: WorldSoundOptions): void
+`
+
+Plays a sound for all players.
+
+#### **Parameters**
+- **soundId**: *string*
+  
+  Identifier of the sound.
+- **location**: [*Vector3*](Vector3.md)
+  
+  Location of the sound.
+- **soundOptions**?: [*WorldSoundOptions*](WorldSoundOptions.md) = `null`
+  
+  Additional options for configuring additional effects for the sound.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
 ::: moniker-end
