@@ -64,12 +64,12 @@ DDUI forms are **dynamic**—content can update in real-time while the form is o
 ```typescript
 import { CustomForm, Observable } from "@minecraft/server-ui";
 
-const playerName = Observable.create<string>("Player", { clientWritable: true });
-const difficulty = Observable.create<number>(1, { clientWritable: true });
-const musicEnabled = Observable.create<boolean>(true, { clientWritable: true });
-const volumeLevel = Observable.create<number>(75, { clientWritable: true });
+const playerName = new ObservableString("Player", { clientWritable: true });
+const difficulty = new ObservableNumber(1, { clientWritable: true });
+const musicEnabled = new ObservableBoolean(true, { clientWritable: true });
+const volumeLevel = new ObservableNumber(75, { clientWritable: true });
 
-CustomForm.create(player, "Game Settings")
+new CustomForm(player, "Game Settings")
     .closeButton()
     .spacer()
     .label("General Settings")
@@ -111,13 +111,14 @@ CustomForm.create(player, "Game Settings")
 ```typescript
 import { MessageBox } from "@minecraft/server-ui";
 
-MessageBox.create(player)
-    .title("Confirm Action")
+new MessageBox(player, "Confirm Action")
     .body("Are you sure you want to delete this item? This action cannot be undone.")
     .button1("Delete")
     .button2("Cancel", "Keep the item and close this dialog")
     .show()
     .then((response) => {
+        // The selection will be undefined if they user did not make a selection 
+        // and the UI was closed, 0 for button 1 and 1 for button 2.
         if (response.selection === 0) {
             deleteItem();
         }
@@ -133,16 +134,16 @@ MessageBox.create(player)
 
 ```typescript
 // Read-only Observable (server controls the value)
-const status = Observable.create<string>("Loading...");
+const status = new ObservableString("Loading...");
 
 // Client-writable Observable (UI controls can update it)
-const userInput = Observable.create<string>("", { clientWritable: true });
+const userInput = new ObservableString("", { clientWritable: true });
 ```
 
 ### Updating Observable values
 
 ```typescript
-const entityCount = Observable.create<number>(0);
+const entityCount = new ObservableNumber(0);
 
 // Update the value - UI automatically reflects the change
 system.runInterval(() => {
@@ -154,7 +155,7 @@ system.runInterval(() => {
 ### Subscribing to changes
 
 ```typescript
-const selectedOption = Observable.create<number>(0, { clientWritable: true });
+const selectedOption = new ObservableNumber(0, { clientWritable: true });
 
 selectedOption.subscribe((newValue) => {
     console.log(`Selection changed to: ${newValue}`);
@@ -165,15 +166,15 @@ selectedOption.subscribe((newValue) => {
 ### Using Observables for dynamic labels
 
 ```typescript
-const statusLabel = Observable.create<string>("Ready");
-const itemCount = Observable.create<number>(0);
+const statusLabel = new ObservableString("Ready");
+const itemCount = new ObservableNumber(0);
 
 // Update label based on data changes
 itemCount.subscribe((count) => {
     statusLabel.setData(`Found ${count} items`);
 });
 
-CustomForm.create(player, "Inventory")
+new CustomForm(player, "Inventory")
     .label(statusLabel) // Label updates automatically
     .button("Refresh", () => refreshInventory())
     .show()
@@ -187,7 +188,7 @@ CustomForm.create(player, "Inventory")
 DDUI supports localized text using the RawMessage format:
 
 ```typescript
-CustomForm.create(player, { translate: "ui.settings.title" })
+new CustomForm(player, { translate: "ui.settings.title" })
     .label({ translate: "ui.settings.description", with: ["value1", "value2"] })
     .button({ translate: "ui.button.save" }, () => save())
     .show()
@@ -204,7 +205,7 @@ CustomForm.create(player, { translate: "ui.settings.title" })
 import { CustomForm } from "@minecraft/server-ui";
 
 function showMenu(player: Player) {
-    CustomForm.create(player, "Main Menu")
+    new CustomForm(player, "Main Menu")
         .label("What would you like to do?")
         .spacer()
         .button("Play Game", () => startGame(player))
@@ -223,12 +224,12 @@ function showMenu(player: Player) {
 import { CustomForm, Observable } from "@minecraft/server-ui";
 
 function showSettings(player: Player) {
-    const username = Observable.create<string>("", { clientWritable: true });
-    const renderDistance = Observable.create<number>(12, { clientWritable: true });
-    const showParticles = Observable.create<boolean>(true, { clientWritable: true });
-    const language = Observable.create<number>(0, { clientWritable: true });
+    const username = new ObservableString("", { clientWritable: true });
+    const renderDistance = new ObservableNumber(12, { clientWritable: true });
+    const showParticles = new ObservableBoolean(true, { clientWritable: true });
+    const language = new ObservableNumber(0, { clientWritable: true });
 
-    CustomForm.create(player, "Settings")
+    new CustomForm(player, "Settings")
         .textField("Username", username, {
             description: "Your display name"
         })
@@ -269,9 +270,9 @@ import { CustomForm, Observable } from "@minecraft/server-ui";
 import { system, TicksPerSecond } from "@minecraft/server";
 
 function showEntityMonitor(player: Player) {
-    const entityStatus = Observable.create<string>("Scanning...");
-    const killButtonDisabled = Observable.create<boolean>(true);
-    const statusMessage = Observable.create<string>("");
+    const entityStatus = new ObservableString("Scanning...");
+    const killButtonDisabled = new ObservableBoolean(true);
+    const statusMessage = new ObservableString("");
 
     // Update entity count every 4 seconds while form is open
     const intervalId = system.runInterval(() => {
@@ -284,7 +285,7 @@ function showEntityMonitor(player: Player) {
         killButtonDisabled.setData(nearbyEntities.length === 0);
     }, TicksPerSecond * 4);
 
-    CustomForm.create(player, "Entity Monitor")
+    new CustomForm(player, "Entity Monitor")
         .spacer()
         .label(entityStatus)
         .spacer()
@@ -327,9 +328,9 @@ When migrating from `@minecraft/server-ui` to DDUI:
 
 | Server-ui | DDUI | Notes |
 |-----------|------|-------|
-| `new ActionFormData()` | `CustomForm.create(player, title)` | Player passed at creation |
-| `new ModalFormData()` | `CustomForm.create(player, title)` | Unified form type |
-| `new MessageFormData()` | `MessageBox.create(player)` | Simplified message dialogs |
+| `new ActionFormData()` | `new CustomForm(player, title)` | Player passed at creation |
+| `new ModalFormData()` | `new CustomForm(player, title)` | Unified form type |
+| `new MessageFormData()` | `new MessageBox(player)` | Simplified message dialogs |
 | `.show(player)` | `.show()` | Player already provided |
 | `.button("text")` | `.button("text", callback)` | Inline callbacks |
 | `response.formValues[0]` | `observable.getData()` | Direct value access |
@@ -365,9 +366,9 @@ form.show(player).then((response) => {
 ```typescript
 import { CustomForm, Observable } from "@minecraft/server-ui";
 
-const volume = Observable.create<number>(50, { clientWritable: true });
+const volume = new ObservableNumber(50, { clientWritable: true });
 
-CustomForm.create(player, 'Settings')
+new CustomForm(player, 'Settings')
     .slider('Volume', volume, 0, 100, { step: 5 })
     .show()
     .then(() => {
@@ -404,7 +405,7 @@ form.show(player)
 Forms are created with a static factory method that accepts both the player and title:
 
 ```typescript
-const form = CustomForm.create(player, "My Form")
+const form = new CustomForm(player, "My Form")
     .label("Select an option")
     .button("Option 1", () => handleOption1());
 
@@ -450,7 +451,7 @@ Buttons accept inline callback functions that execute when pressed:
 ```typescript
 import { CustomForm } from "@minecraft/server-ui";
 
-CustomForm.create(player, "Actions")
+new CustomForm(player, "Actions")
     .button("Save", () => save())
     .button("Load", () => load())
     .button("Exit", () => exit())
@@ -468,15 +469,15 @@ CustomForm.create(player, "Actions")
 DDUI forms can dynamically enable, disable, show, or hide controls based on Observable values.
 
 ```typescript
-const isAdvancedMode = Observable.create<boolean>(false, { clientWritable: true });
-const isNotAdvancedMode = Observable.create<boolean>(true, { clientWritable: true });
-const showAdvancedOptions = Observable.create<boolean>(false, { clientWritable: true });
+const isAdvancedMode = new ObservableBoolean(false, { clientWritable: true });
+const isNotAdvancedMode = new ObservableBoolean(true, { clientWritable: true });
+const showAdvancedOptions = new ObservableBoolean(false, { clientWritable: true });
 
 isAdvancedMode.subscribe(newVal => {
     isNotAdvancedMode.setData(!newVal);
 });
 
-CustomForm.create(player, "Settings")
+new CustomForm(player, "Settings")
     .toggle("Enable Advanced Mode", isAdvancedMode)
     .toggle("Show Advanced Options", showAdvancedOptions)
     .button("Advanced Settings", () => openAdvancedSettings(), {
@@ -494,7 +495,7 @@ CustomForm.create(player, "Settings")
 DDUI controls support additional options like descriptions and tooltips:
 
 ```typescript
-CustomForm.create(player, "Player Settings")
+new CustomForm(player, "Player Settings")
     .textField("Display Name", playerName, {
         description: "Enter the name shown to other players",
         disabled: isLocked
@@ -512,6 +513,31 @@ CustomForm.create(player, "Player Settings")
         console.error(e);
     });
 ```
+
+### 6. Dealing with User Busy
+
+DDUI forms will not show if another UI is open. You can check for this by looking at the result of the show methods:
+
+```typescript
+new CustomForm(player, "Player Settings")
+    .textField("Display Name", playerName, {
+        description: "Enter the name shown to other players",
+        disabled: isLocked
+    })
+    .show()
+    .then(showResult => {
+        if (showResult === DataDrivenScreenClosedReason.UserBusy) {
+            player.sendMessage("Player was busy, try again.");
+            return;
+        }
+
+        player.sendMessage(`Display name is ${playerName.getData()}`)
+    })
+    .catch(e => {
+        console.error(e);
+    });
+```
+
 
 ## See also
 
