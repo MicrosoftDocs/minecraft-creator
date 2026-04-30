@@ -59,10 +59,8 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 - [addVector2](#addvector2)
 - [addVector3](#addvector3)
 - [addVector3Timeline](#addvector3timeline)
-- [beginConstruct](#beginconstruct)
 - [collapse](#collapse)
 - [createSubPane](#createsubpane)
-- [endConstruct](#endconstruct)
 - [expand](#expand)
 - [getTitle](#gettitle)
 - [removeSubPane](#removesubpane)
@@ -427,15 +425,6 @@ Adds a Vector3 Timeline item to the pane.
 
 **Returns** *IVector3TimelinePropertyItem*
 
-### **beginConstruct**
-`
-beginConstruct(): void
-`
-
-Begins pane construction for batching property item additions
-
-**Returns** *void*
-
 ### **collapse**
 `
 collapse(): void
@@ -456,15 +445,6 @@ Creates an sub pane that can store property items.
 - **options**: *ISubPanePropertyItemOptions*
 
 **Returns** *ISubPanePropertyItem*
-
-### **endConstruct**
-`
-endConstruct(): void
-`
-
-Finalizes pane construction and synchronizes item data
-
-**Returns** *void*
 
 ### **expand**
 `

@@ -45,6 +45,7 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:cinnabar_slab`
 - `minecraft:cinnabar_stairs`
 - `minecraft:cinnabar_wall`
+- `minecraft:WorkBench_recipeId_from_oak`
 - `minecraft:polished_cinnabar`
 - `minecraft:polished_cinnabar_slab`
 - `minecraft:polished_cinnabar_stairs`
@@ -102,6 +103,7 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:stonecutter_sulfur_slab_from_sulfur`
 - `minecraft:stonecutter_sulfur_stairs_from_sulfur`
 - `minecraft:stonecutter_sulfur_wall_from_sulfur`
+- `minecraft:sulfur`
 - `minecraft:sulfur_bricks`
 - `minecraft:sulfur_brick_slab`
 - `minecraft:sulfur_brick_stairs`
@@ -770,7 +772,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:wind_charge`
 - `minecraft:banner_pattern_flower`
 - `minecraft:blue_dye_from_cornflower`
-- `minecraft:WorkBench_recipeId_from_oak`
 - `minecraft:light_blue_dye_from_blue_orchid`
 - `minecraft:light_gray_dye_from_azure_bluet`
 - `minecraft:light_gray_dye_from_oxeye_daisy`

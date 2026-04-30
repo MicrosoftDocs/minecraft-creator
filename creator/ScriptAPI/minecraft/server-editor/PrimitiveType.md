@@ -30,3 +30,5 @@ description: Contents of the @minecraft/server-editor.PrimitiveType enumeration.
 `Cuboid = 10`
 ### **Cone**
 `Cone = 11`
+### **WireframeMesh**
+`WireframeMesh = 12`

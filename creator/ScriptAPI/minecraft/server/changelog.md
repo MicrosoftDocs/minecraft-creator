@@ -111,6 +111,8 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`findClosestBiome`](Dimension.md#findclosestbiome)*
 - Added function *[`getGeneratedStructures`](Dimension.md#getgeneratedstructures)*
 - Added function *[`getWeather`](Dimension.md#getweather)*
+- Changed function *[`playSound`](Dimension.md#playsound)*
+  - Changed return type from *void* (throws exceptions) to [*SoundInstance*](SoundInstance.md) (throws exceptions)
 - Changed function *[`spawnEntity`](Dimension.md#spawnentity)*
   - Changed return type from [*Entity*](Entity.md) (throws exceptions) to *Entity* (throws exceptions)
   - Changed argument `identifier` type from [*EntityType*](EntityType.md) | *string* to *EntityIdentifierType<NoInfer<T>>*
@@ -157,6 +159,8 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`playfabId`](Player.md#playfabid)*
 - Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`getPing`](Player.md#getping)*
+- Changed function *[`playSound`](Player.md#playsound)*
+  - Changed return type from *void* (throws exceptions) to [*SoundInstance*](SoundInstance.md) (throws exceptions)
 - Added function *[`postClientMessage`](Player.md#postclientmessage)*
 - Added function *[`stopAllSounds`](Player.md#stopallsounds)*
 - Added function *[`stopSound`](Player.md#stopsound)*
@@ -176,6 +180,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`SetBannerDetailsFunction`](SetBannerDetailsFunction.md)*
 - Added property *[`baseColor`](SetBannerDetailsFunction.md#basecolor)*
 - Added property *[`patterns`](SetBannerDetailsFunction.md#patterns)*
+#### Added *[`SoundInstance`](SoundInstance.md)*
 #### Changed *[`StartupEvent`](StartupEvent.md)*
 - Added property *[`dimensionRegistry`](StartupEvent.md#dimensionregistry)*
 #### Changed *[`StructureManager`](StructureManager.md)*
