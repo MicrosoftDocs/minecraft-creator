@@ -15,10 +15,32 @@ Entities with this component will have a maximum auto step height that is differ
 
 ## Variable Max Auto Step Properties
 
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| base_value | 0.5625 | Decimal number | The maximum auto step height when on any other block. | 
-| controlled_value | 0.5625 | Decimal number | The maximum auto step height when on any other block and controlled by the player. | 
-| jump_prevented_value | 0.5625 | Decimal number | The maximum auto step height when on a block that prevents jumping. | 
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| base_value | 0.5625 | Decimal number | The maximum auto step height when on any other block. | Sulfur Cube: `0.5625` | 
+| controlled_value | 0.5625 | Decimal number | The maximum auto step height when on any other block and controlled by the player. | Sulfur Cube: `0.5625` | 
+| jump_prevented_value | 0.5625 | Decimal number | The maximum auto step height when on a block that prevents jumping. | Sulfur Cube: `0.5625` | 
 
 ## Samples
+
+#### [Sulfur Cube](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/sulfur_cube.json)
+
+At /minecraft:entity/component_groups/minecraft:sulfur_cube_ai/minecraft:variable_max_auto_step/: 
+
+```json
+"minecraft:variable_max_auto_step": {
+  "base_value": 0.5625,
+  "controlled_value": 0.5625,
+  "jump_prevented_value": 0.5625
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:sulfur_cube_medium_with_block/minecraft:variable_max_auto_step/: 
+
+```json
+"minecraft:variable_max_auto_step": {
+  "base_value": 0,
+  "controlled_value": 0,
+  "jump_prevented_value": 0
+}
+```
