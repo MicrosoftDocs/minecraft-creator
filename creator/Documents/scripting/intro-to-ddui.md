@@ -118,8 +118,8 @@ new MessageBox(player, "Confirm Action")
     .show()
     .then((response) => {
         // The selection will be undefined if they user did not make a selection 
-        // and the UI was closed, 0 for button 1 and 1 for button 2.
-        if (response.selection === 0) {
+        // and the UI was closed, 1 for button 1 and 2 for button 2.
+        if (response.selection === 1) {
             deleteItem();
         }
     })
