@@ -61,7 +61,6 @@ The entity's slot to equip the item to, if any, upon successful interaction. Inv
 | take_item | false | Boolean true/false | If true, the player can take items from the entity during interaction. | Allay: `true` | 
 | transform_to_item | *not set* | String | The item used will transform to this item upon successful interaction. Format: itemName:auxValue |  | 
 | use_item | false | Boolean true/false | If true, the interaction will use an item. |  | 
-| use_item | false | Boolean true/false | If true, the interaction will use an item. |  | 
 | vibration | entity_interact | String | Vibration to emit when the interaction occurs. Admitted values are none (no vibration emitted), shear, entity_die, entity_act, entity_interact. |  | 
 
 #### Particle On Start
