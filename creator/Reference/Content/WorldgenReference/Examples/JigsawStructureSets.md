@@ -79,7 +79,7 @@ Randomness algorithm used when placing structures.
 |Name       |Default Value |Requirement Status |Type |Description |Example Values |
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | linear | *not set* | Required | String | Basic randomness: `rand(x)` | `"spread_type": "linear"`  | 
-| triangle | *not set* | Required | String | Average of 2 randoms: `(rand(x) + rand(x)) / 2` | `"spread_type": "triangle"`  | 
+| triangular | *not set* | Required | String | Average of 2 randoms: `(rand(x) + rand(x)) / 2` | `"spread_type": "triangular"`  | 
 
  
 ## structures
