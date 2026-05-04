@@ -51,7 +51,7 @@ The DDUI framework introduces:
 |-------|---------|
 | `CustomForm` | A unified, flexible form with dynamic content and reactive bindings |
 | `MessageBox` | A streamlined two-button dialog with enhanced options |
-| `Observable` | A reactive wrapper for values that automatically updates the UI |
+| `Observable*` | A reactive wrapper for values that automatically updates the UI where * is String, Boolean, Number, and UIRawMessage |
 
 DDUI forms are **dynamic**—content can update in real-time while the form is open.
 
