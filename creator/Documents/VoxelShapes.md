@@ -27,8 +27,6 @@ In Minecraft: Bedrock Edition, voxel shapes are used for _face culling,_ determi
 
 > [!IMPORTANT]
 >
-> The Voxel Shapes experimental toggle must be enabled in the world settings for any voxel shape features to function!
->
 > Currently, voxel shapes only participate in culling when a block defines [culling rules](../Reference/Content/BlockCullingReference/Examples/BlockCullingRules/block_culling.md).
 
 ## Creating a voxel shape
