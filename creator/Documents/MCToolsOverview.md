@@ -80,7 +80,7 @@ The project editor gives you a full editing environment for your add-on files. I
 
 Minecraft Creator Tools includes a built-in validation suite that checks your project against a range of rules and surfaces issues before you're discovering them in-game. Validation is available on both the website and through the command line tools, and results can be exported as a CSV or HTML report&mdash;useful for tracking down issues across a larger project or sharing findings with collaborators.
 
-To run validation in the website, select your project as a zip file using the validation tool. Supported formats include MCAddon, MCPack, and ZIP files that contain **behavior_packs** and **resource_packs** folders. Your files are processed locally in the browser and aren't sent anywhere.
+To run validation in the website, add your project as a zip file and click on the Inspector tool. Note that you might need to switch from "Focused mode" to "Full" or "Raw" mode in project settings. Supported formats include MCAddon, MCPack, and ZIP files that contain **behavior_packs** and **resource_packs** folders. Your files are processed locally in the browser and aren't sent anywhere.
 
 You can choose from different rule suites depending on what you're validating — whether it's a full add-on, a specific content type, or the current platform target. Results show up in the inspector area where you can iterate from there.
 
