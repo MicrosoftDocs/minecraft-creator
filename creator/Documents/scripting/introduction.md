@@ -29,8 +29,6 @@ You'll need a text editor, ideally one that's designed for programming. [Visual 
 
 This tutorial uses the Attack Code sample behavior pack from the Minecraft Samples GitHub repository. If you haven't already downloaded it, here's how:
 
-If you have never downloaded and used a sample behavior pack, here's how:
-
 1. Go to <https://github.com/microsoft/minecraft-samples/tree/main> in your web browser. Click the green **Code** button, and select **Download ZIP** from the drop-down menu.
 1. Open your Downloads folder and extract the **minecraft-samples-main** zipped folder contents.
 1. Inside the extracted **minecraft-samples-main** folder, find the **behavior\_pack\_sample** folder and open it.

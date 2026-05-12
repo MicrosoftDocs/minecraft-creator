@@ -1,353 +1,358 @@
 ---
-author: iconicNurdle
+author: chipotle
 ms.author: mikeam
-title: Free Camera Script API Tutorial
-description: "A tutorial about free camera script API."
+title: Animating with the Free Camera Script API
+description: "How to use the camera scripting API with the free camera preset, including flyover animation with camera splines."
 ms.service: minecraft-bedrock-edition
+ms.date: 05/01/2026
 ---
 
-# Free Camera Script API Tutorial
+# Animating with the Free Camera Script API
 
-In this tutorial you will learn how to set up a basic free camera script API. You can find more information at [Camera Command Introduction](CameraCommandIntroduction.md).
-
-## Free Camera Functionality
-
-The free camera preset can be used to accomplish many gameplay scenarios by setting the camera at a distance away from players and entities to show more of the environment. One use could even be setting up cutscenes and using easing methods to have the camera do a flyover a scene.
-
-In this tutorial we will focus on how the free camera preset can be set up in TypeScript to be executed in the game at the exact parameters and settings you choose.
-
-In this tutorial, you will learn how to:
+In this tutorial, you'll learn how to use the camera scripting API to move the camera away from players and other entities, showing more of the environment and even performing swooping flyovers. Among other features, you'll learn how to:
 
 > [!div class="checklist"]
 >
-> - Set the position of the camera
-> - Set the position and facing direction
-> - Set the easing method
-> - Add easing, position, and facing direction together for a flyover
-> - Disable player input during a flyover
-> - Apply a fade
-> - Clear camera during a fade
-> - Teleport during a fade
-> - Activate a camera based on a player's distance from a location
-> - Set up an NPC to activate a camera
+> - Set up a free camera with the script API
+> - Animate the camera's motion along spline-based paths
+> - Use easing functions
 
-To practice these features and see what they look like in the game, let's try out a cutscene scenario. Say you want to make a cutscene where the camera transitions from the player's view to show a flyover of the landscape and then turn to face the player. Let's try it!
+## Prerequisites
 
-**Step 1: Set up your Script API workspace**
+You should be familiar with the following before starting this tutorial:
 
-To get started, you will need to make some adjustments to your workspace so you can work with Script APIs. 
+- [The Camera System](./CameraCommandIntroduction.md)
+- [Introduction to Scripting in Minecraft](../scripting/introduction.md)
+- [Scripting with TypeScript](../scripting/next-steps.md)
 
-Follow the [Build a Gameplay Experience with TypeScript](../ScriptingGettingStarted.md) tutorial from the beginning through **Chapter 3** and then stop. Keep the behavior pack you create handy.
+## Set up your workspace
 
-After you have completed the tutorial, continue to Step 2.
+We're going to start by using the TypeScript starter project that's available as a template in Minecraft Creator Tools. This is also available in the Minecraft Scripting Samples GitHub repository (<https://github.com/microsoft/minecraft-scripting-samples/>), but for this tutorial, we'll start at the Creator Tools website.
 
-**Step 2: Create your own JSON Preset**
+1. Open <https://mctools.dev> in your browser.
 
-If you're using one of the vanilla camera types or built-in examples, you can skip this step. Using the built-in examples requires activation of the Camera experimental toggle.
+2. Scroll down to **Start From a Template** and find **Code Starter (TypeScript)**. Click **Create New**.
 
-To add your own camera preset, follow the instructions below.
+3. In the dialog box, enter a title like "CameraAnimation" and your creator name.
 
-1. In VSCode, right click the  behavior pack and add a new folder at file path **behavior_packs\starterbp** called **cameras**.
+4. Open the **Advanced Options** and give the project a folder name and a description.
 
-2. Add a new folder under **behavior_packs\starterbp\cameras** called **presets**.
+5. Select **Save to My Computer** and choose an empty folder to save to. (We created one named **mc_camera** for the tutorial.)
 
-3. Add a new file under the presets folder called **example_free.json**.
+    :::image type="content" source="./Media/mctools-create-project.png" alt-text="The mctools.dev TypeScript Starter creation dialog box, with the fields filled out.":::
 
-4. Inside of that file, add the following code example:
+6. Click **Create Project**.
 
-```json
-{
-  "format_version": "1.19.50",
-  "minecraft:camera_preset": {
-    "identifier": "demo:example_free",
-    "inherit_from": "minecraft:free",
-    "pos_y": 90,
-    "rot_x": 10,
-    "rot_y": 40
+    After Creator Tools finishes, it'll show you the dashboard for your project, and the files will be saved in the folder you selected in step 5.
+
+7. In Windows Terminal or PowerShell, change to the directory you created in Step 5, and install the required Node tools and libraries:
+
+    ```powershell
+    npm i
+    ```
+ 
+> [!TIP]
+>
+> You can edit your files directly in Minecraft Creator Tools, or edit them in Visual Studio Code (or another text editor).
+>
+> You can also download the TypeScript Code Starter sample pack from the [Scripting Samples repository](https://github.com/microsoft/minecraft-scripting-samples/), either by downloading a Zip file or cloning the repository with Git. If you take this approach, you should copy the **ts-starter** folder to a new work directory (like **mc_camera** in the example above).
+
+## Build the flyover script
+
+Open **scripts/main.ts** in your editor, and replace its code with the following setup:
+
+```typescript
+import { world, system, BlockPermutation, Player, CatmullRomSpline, EasingType } from "@minecraft/server";
+
+const FLYOVER_DURATION = 20; // fly over for 20 seconds
+const INIT_RETRY_TICKS = 40; // retry every two seconds
+const MAX_INIT_RETRIES = 15; // try to spawn for about 30 sec
+
+let ticksSinceLoad = 0;
+let initRetries = 0;
+
+// -- Startup Tick --
+function mainTick() {
+  ticksSinceLoad++;
+
+  if (ticksSinceLoad === 100) {
+    world.sendMessage("Welcome to the flyover!");
+    initialize();
   }
+
+  system.run(mainTick);
 }
+
+// -- start the mainTick loop --
+system.run(mainTick);
 ```
 
-**Step 3: Set up your Script API workspace**
+You've seen code like this before: a main loop driven by counting ticks, whose main purpose is to wait 100 ticks and then call the `initialize()` function. Now, let's work on that function.
 
-Remove all the existing script code in **main.ts** and replace it with this:
+```typescript
+// -- place the button --
+function initialize() {
+  const overworld = world.getDimension("overworld");
+  const buttonLocation = setButtonLocation();
 
-```TypeScript
-enum CameraTypes {
-  Vanilla = 0,
-  NPCGreeter = 1,
-  TownCutScene = 2,
-  TownStaticCamera = 3,
-  TonCenterStaticCamera = 4,
-}
-```
-
-We are creating an enum to easily reference the different types of cameras that we'll have active in our gameplay session. This assigns reference numbers to the individual camera types. Setting them equal to numeric values allows us to iterate through them if we use the camera types in an array.
-
-1. Add the following code example below the enum:
-
-```TypeScript
-interface CameraState {
-  p: Player;
-  previous: CameraTypes;
-  current: CameraTypes;
-}
-```
-
-A TypeScript interfaces is an object that holds multiple variables at once. The `CameraState` interface will hold on to the Camera State of any player, allowing this camera system to work nicely in multiplayer.
-
-The `CameraState` interface includes a reference to a specific player, as well as the previous camera type that they had and the current camera type. This will allow you to go back to a previous camera type without needing to put tags on a player.
-
-2. Add the following code below the interface:
-
-```TypeScript
-let playerCameraStates: CameraState[] = []; let curTick = 0; const ticksPerSecond = 20;
-
-// Gameplay Data
-const townCenterLocation = { x: -1003, y: 65, z: -1355 };
-const townCenterRadius = 8;
-const townRadius = 35;
-const defaultCameraType = CameraTypes.Vanilla;
-```
-
-- **playerCameraStates** - Tracks the current state of the player camera; if null, no players have entered the game
-
-- **curTick** - Keeps track of the current tick of the game
-
-- **ticksPerSecond** - Tracks the number of ticks that happen in the game per second
-
-- **townCenterLocation** - Tracks location of the town center; can be used to determine proximity to town
-
-- **townCenterRadius** - Tracks the area around the town center and is a subset of the townRadius variable
-
-- **townRadius** - Tracks the area around the town
-
-- **defaultCameraType** - Represents the default Vanilla camera
-
-
-**Step 4: Create initial event subscriptions and functions**
-
-1. After the previous code snippet add this code:
-
-```TypeScript
-function PlayerSpawnCameraSetup(currentPlayer: Player) {}
-
-world.afterEvents.playerSpawn.subscribe((event) => {
-const player = event.player;
-PlayerSpawnCameraSetup(player);}
-);
-```
-To setup a camera for the player, we need to know when they've joined the game. But we actually want to be able to reset the camera state when they've died as well, so we can capture both of those scenarios by subscribing to the playerSpawn after event.
-
-2. To setup the camera per player we will replace the empty `PlayerSpawnCameraSetup` with this snippet:
-
-```TypeScript
-function PlayerSpawnCameraSetup(currentPlayer: Player) {
-  // Set the default camera state
-  let setDefaultCameraState: CameraState = {
-  p: currentPlayer,
-  current: CameraTypes.Vanilla,
-  previous: CameraTypes.Vanilla,
-  counter: 0,
-  };
-
-// Check to see if this player previously had their creator camera setup
-let foundplayer = false;
-if (PlayerCameraStates != null && PlayerCameraStates.length > 0) {
-  for (let pcs of PlayerCameraStates) {
-    if (pcs.p == currentPlayer) {
-
-      // Existing player found, reset their state to default
-      foundplayer = true;
-      currentPlayer.camera.clear();
-      pcs.current = setDefaultCameraState.current;
-      pcs.previous = setDefaultCameraState.previous;
-      pcs.counter = 0;
-  break;
-
-    }}
-} else {
-  if (!foundplayer) {
-
-// if no player was found, add & setup the default camera state
-   PlayerCameraStates.push(setDefaultCameraState);
-}}}
-```
-For this function we are passing the player in, this both allows us to check if they are already initialized in our camera state system, but has the added benefit of allowing us to do this at a per player level meaning this setup will work in multiplayer.
-
-We check the existing `PlayerCameraStates` array for the player, if they are stored in the array we will reset their state back to the default camera state defined earlier in this function. If they are new player who is not captured in the camera states, we'll add them to the array with the default settings.
-
-3. Add the following function below the **PlayerSpawnCameraSetup** function:
-
-```TypeScript
-function ApplyPlayerCamera(ct: CameraTypes, currentPlayer: Player) {
-  let currentPCS = GetPlayerCameraState(currentPlayer);
-  let revert = false;
-
-    switch (ct) {
-      case CameraTypes.NPCGreeter:
-        // Check if we are already talking to the NPC Greeter
-
-        if (currentPCS.current != CameraTypes.NPCGreeter) {
-          currentPCS.p.camera.setCamera("example:example_free", {
-            location: { x: -1054.87, y: 71.27, z: -1343.5 },
-            rotation: { x: 35, y: 230 },
-          });
-        } else {
-          // We've finished talking to the greeter
-          revert = true;
-        }
-        break;
-      case CameraTypes.TownCutscene:
-
-        if (currentPCS.current != CameraTypes.TownCutscene) {
-          //camera @a fade time 1 1 1 color 0 0 0
-          currentPCS.p.camera.fade({ fadeTime: { fadeInTime: 1, holdTime: 1, fadeOutTime: 1 } });
-          const transitionTime = 5;
-          currentPCS.counter = transitionTime * TicksPerSecond;
-
-          system.runTimeout(() => {
-            if (currentPCS != null) {
-              CameraCutScene(currentPCS, transitionTime);
-            }
-          }, 1 * TicksPerSecond);
-        }
-        break;
-      case CameraTypes.TownCenterStaticCamera:
-
-        if (currentPCS.current != CameraTypes.TownCenterStaticCamera) {
-          currentPCS.p.camera.setCamera("example:example_free", {
-            location: { x: -1009.03, y: 69.9, z: -1345.82 },
-            rotation: { x: 35, y: 210 },
-          });
-        }
-        break;
-      case CameraTypes.TownStaticCamera:
-
-        if (currentPCS.current != CameraTypes.TownStaticCamera) {
-          currentPCS.p.camera.setCamera("example:example_free", {
-            location: { x: -1042, y: 81.78, z: -1323.33 },
-            rotation: { x: 30, y: 220 },
-          });
-        }
-        break;
-      case CameraTypes.Vanilla:
-        currentPCS.p.camera.clear();
-        break;
-    }
-
-    // There are some instances where we are switching back the camera, do that for all here
-    if (revert) {
-      RevertCurrentCamera(currentPCS);
+  if (buttonLocation === undefined) {
+    if (initRetries < MAX_INIT_RETRIES) {
+      initRetries++;
+      world.sendMessage(
+        "Waiting for chunks to load near spawn (attempt " + initRetries + " of " + MAX_INIT_RETRIES + ")"
+      );
+      system.runTimeout(() => initialize(), INIT_RETRY_TICKS);
     } else {
-      currentPCS.previous = currentPCS.current.valueOf();
-      currentPCS.current = ct;
+      world.sendMessage("Could not find a valid location for the button. Try moving closer to spawn and /reload!");
     }
-}
-```
-
-The `ApplyPlayerCamera` function sets the player's camera to a specific camera type. This function takes the parameters for the cameraType enum that we created and a player, allowing it to be run for any player uniquely.
-
-The switch state inside of the function sets up different configurations for the player depending on the camera being selected. In this logic we also set the previous state of the camera, allowing for reverting the camera state to it's previous form when needed. Like when looking at the NPC Greeter in a close up camera and then reverting back to whatever camera the player was using last when the dialogue is completed.
-
-4. Add the following function below `playerSpawn` subscriber:
-
-```TypeScript
-system.afterEvents.scriptEventReceive.subscribe((event) => {
-  // Player that interacted with an NPC
-  let player = event.initiator as Player;
-
-  // Apply Camera depending on NPC
-  switch (event.id) {
-    case "demo:greet":
-      ApplyPlayerCamera(CameraTypes.NPCGreeter, player);
-      break;
-    case "demo:cutscene":
-      ApplyPlayerCamera(CameraTypes.TownCutscene, player);
-      break;
-    case "demo:debug":
-      player.sendMessage(`[DEBUG] Resetting ${player.name}`);
-      PlayerSpawnCameraSetup (player);
-      player.camera.clear();
-      break;
+    return;
   }
-});
-```
 
-There are two ways that we are going to apply the camera to a player. One of them is from receiving an event from a player interacting with an NPC. The NPC will fire a `/scriptevent` that uses the specific camera name with a namespace.
+  // we have the button location, so let's try and spawn it
+  const cobblestone = overworld.getBlock(buttonLocation);
+  const button = overworld.getBlock({
+    x: buttonLocation.x,
+    y: buttonLocation.y + 1,
+    z: buttonLocation.z,
+  });
 
-![Picture of NPC with /scriptevent demo:debug open](Media/camera_NPC_scriptevent_dialog.png)
+  if (button === undefined || cobblestone === undefined) {
+    if (initRetries < MAX_INIT_RETRIES) {
+      initRetries++;
+      system.runTimeout(() => initialize(), INIT_RETRY_TICKS);
+    } else {
+      world.sendMessage("Could not place the switch.");
+    }
+    return;
+  }
 
-After the event is fired, the `scriptEventRecieve` after event will capture the player who initiated the interaction and apply the appropriate camera based on the camera type.
+  // all systems go!
+  cobblestone.setPermutation(BlockPermutation.resolve("cobblestone"));
+  button.setPermutation(BlockPermutation.resolve("spruce_button", { facing_direction: 1 }));
+  world.afterEvents.buttonPush.subscribe(onButtonPush);
 
-Step 5: Creating camera code to affect players
+  world.sendMessage(
+    "Press the button at X:" + buttonLocation.x + " Y:" + buttonLocation.y + " Z:" + buttonLocation.z + " to start!"
+  );
+}
 
-Below the code currently in **main.ts**, add the following snippet.
+function setButtonLocation(): { x: number; y: number; z: number } | undefined {
+  const spawnLoc = world.getDefaultSpawnLocation();
+  const x = spawnLoc.x - 5;
+  const z = spawnLoc.z - 5;
+  const y = findTopmostBlock(x, z);
+  if (y === undefined) return undefined;
+  return { x, y, z };
+}
 
-```TypeScript
-function gameTick() {
-  try {
-    curTick++;
+function findTopmostBlock(x: number, z: number): number | undefined {
+  const overworld = world.getDimension("overworld");
+  const players = world.getPlayers();
+  if (players.length === 0) return undefined;
+  const startY = Math.floor(Math.max(players[0].location.y, -62));
 
-    // Check to see if there are PlayerCameraStates setup (ie. are there players in the game yet?)
-    if (PlayerCameraStates != null && PlayerCameraStates.length > 0) {
-      for (let pcs of PlayerCameraStates) {
-        // If in a Cutscene, don't update any proximity cameras
-        if(pcs.current == CameraTypes.TownCutscene) {
-          // Check to see if Cutscene countdown is complete
-          if (pcs.counter <= 0) {
-            // Fade the camera out & revert camera type to previous camera
-            pcs.p.camera.fade({ fadeTime: { fadeInTime: 1, holdTime: 1, fadeOutTime: 1 } });
-            system.runTimeout(() => {
-              RevertCurrentCamera(pcs);
-            }, 1 * TicksPerSecond);
-          } else {
-            // Continue to countdown until cutscene is complete
-            pcs.counter--;
-          }
-        }
-        else {
-          // The only other camera to check in a ticking scenario are proximity cameras
-         
-          // Checking player to camera distance every other tick for better performance
-          if (curTick % 2) {
+  // Check if the chunk is loaded at this position
+  let block = overworld.getBlock({ x, y: startY, z });
+  if (block === undefined) return undefined;
 
-            // Are we in proximity of the town?
-            if (Utilities.distance(pcs.p.location, TownCenterLocation) <= TownRadius) {
-              // We are in the town, but which static camera should be active?
-              if (Utilities.distance(pcs.p.location, TownCenterLocation) <= TownCenterRadius) {
-                // If we aren't already in Town Center camera, switch to it
-                if (pcs.current != CameraTypes.TownCenterStaticCamera) {
-                  ApplyPlayerCamera(CameraTypes.TownCenterStaticCamera, pcs.p);
-                }
-              } else {
-                // If we aren't already in the Town camera, switch to it
-                if (pcs.current != CameraTypes.TownStaticCamera) {
-                  ApplyPlayerCamera(CameraTypes.TownStaticCamera, pcs.p);
-                }
-              }
-            } else {
-              // We are no longer inside the camera proximity, so reset the camera to the Vanilla Camera
-              if (pcs.current == CameraTypes.TownStaticCamera) {
-                ApplyPlayerCamera(defaultCameraType, pcs.p);
-              }
-            }
-          }
-       }
+  // if we're in air, go down to find the topmost solid block
+  if (block.permutation.matches("minecraft:air")) {
+    let y = startY;
+    while (y >= -62) {
+      block = overworld.getBlock({ x, y, z });
+      if (block === undefined) return undefined;
+      if (!block.permutation.matches("minecraft:air")) {
+        return y + 1; // first air block above ground
       }
+      y--;
     }
-  } catch (e) {
-    // Throw an error if there is a problem in the looping code
-      console.warn("Tick error: " + e);
+    return undefined; // no solid ground found
+  } else {
+    // We're underground; go up to find the first air block
+    let y = startY;
+    while (y <= 320) {
+      block = overworld.getBlock({ x, y, z });
+      if (block === undefined) return undefined;
+      if (block.permutation.matches("minecraft:air")) {
+        return y;
+      }
+      y++;
+    }
+    return undefined; // no air found (shouldn't happen)
   }
-  // Allow the gameTick function to keep re-running every tick
-  system.run(gameTick);
 }
-// Runs the main gameTick function for the first time
-system.run(gameTick);
 ```
 
-Using **system.run** we will start a function that is called every tick. To improve performance inside of that gameTick function we won't do our logic every tick, but instead every other tick. This is represented by the `%2` in the `if(curtick % 2)` statement, if the number is bigger the check will happen less often, but doing this check becomes less taxing. The player has 3 camera types that are either updated constantly or need to have an action taken during the time of the camera transitioning. 
+That's a big chunk. Going through it in order, here's what it does:
 
-For the cutscene camera, we need to countdown until it's complete, to be able to to reset the camera to a different state.
+- Gets what should be a viable location for the button by calling `setButtonLocation()`, trying up to `MAX_INIT_RETRIES` to find a valid spot
+- Tries to get a block at that location
+- Sets that block to be our button
+- Sets the button's event handler to `onButtonPush()`, which we haven't written yet
+- Sends a message with the button's location to the player
 
+We also define two helper functions, `setButtonLocation()` and `findTopmostBlock()`, that are needed for placing the button.
+
+The button's event handler is simple: it just calls yet another function for each player, `startFlyover()`.
+
+```typescript
+// -- fire off flyover when button is pushed --
+function onButtonPush() {
+  system.run(() => {
+    const players = world.getPlayers();
+    for (const player of players) {
+      startFlyover(player);
+    }
+  });
+}
+```
+
+Last but not least, `startFlyover()` is the actual animation player function.
+
+```typescript
+// -- run the flyover --
+function startFlyover(player: Player) {
+  const playerLoc = player.location;
+  const flyoverHeight = Math.min(playerLoc.y + 200, 320) - playerLoc.y;
+
+  // build a CatmullRom spline that arcs over the player
+  const flyover = new CatmullRomSpline();
+  flyover.controlPoints = [
+    { x: playerLoc.x, y: playerLoc.y + 1, z: playerLoc.z },
+    { x: playerLoc.x - 100, y: playerLoc.y + flyoverHeight * 0.5, z: playerLoc.z - 100 },
+    { x: playerLoc.x + 100, y: playerLoc.y + flyoverHeight, z: playerLoc.z - 100 },
+    { x: playerLoc.x + 100, y: playerLoc.y + flyoverHeight, z: playerLoc.z + 100 },
+    { x: playerLoc.x - 100, y: playerLoc.y + flyoverHeight * 0.66, z: playerLoc.z + 100 },
+    { x: playerLoc.x, y: playerLoc.y + 1, z: playerLoc.z },
+  ];
+
+  // set camera to free mode
+  try {
+    player.camera.setCamera("minecraft:free", {
+      location: { x: playerLoc.x, y: playerLoc.y + 1, z: playerLoc.z },
+      rotation: { x: 0, y: 0 },
+    });
+  } catch (e) {
+    world.sendMessage("Error setting free camera: " + e);
+  }
+
+  // play the animation
+  system.runTimeout(() => {
+    try {
+      player.camera.playAnimation(flyover, {
+        animation: {
+          progressKeyFrames: [
+            { timeSeconds: 0, alpha: 0, easingFunc: EasingType.InOutCubic },
+            { timeSeconds: FLYOVER_DURATION, alpha: 1, easingFunc: EasingType.InOutCubic },
+          ],
+          rotationKeyFrames: [
+            {
+              timeSeconds: 0,
+              rotation: { x: -20, y: 180, z: 0 },
+              easingFunc: EasingType.InOutSine,
+            },
+            {
+              timeSeconds: FLYOVER_DURATION * 0.5,
+              rotation: { x: -55, y: 0, z: 0 },
+              easingFunc: EasingType.InOutSine,
+            },
+            {
+              timeSeconds: FLYOVER_DURATION,
+              rotation: { x: -20, y: 270, z: 0 },
+              easingFunc: EasingType.InOutSine,
+            },
+          ],
+        },
+        totalTimeSeconds: FLYOVER_DURATION,
+      });
+    } catch (e) {
+      world.sendMessage("Error playing animation: " + e);
+    }
+  }, 2); // 2-tick delay for free camera to take effect
+
+  // clear camera after tour
+  system.runTimeout(
+    () => {
+      player.camera.clear();
+    },
+    FLYOVER_DURATION * 20 + 1
+  );
+}
+```
+
+The flyover is defined as a Catmull-Rom [spline](https://en.wikipedia.org/wiki/Spline_(mathematics)), which constructs a smooth, curved path defined by a handful of control points. You set the control points, and Minecraft uses the Catmull-Rom spline formula to plot a curve that passes through all of them. In the code above, we use five control points that describe a square around the player's location when they press the button, rising into the air and then descending again as it finishes by moving directly over the player. The curve that the spline function creates from these control points will be a counter-clockwise spiral.
+
+> [!NOTE]
+>
+> Where did the name "Catmull-Rom" come from, you wonder? [Edwin Catmull](https://en.wikipedia.org/wiki/Edwin_Catmull) was its co-inventor&mdash;and also the co-founder of Pixar.
+
+After that, we set up a [free camera](./CameraPresetFree.md), which we start over the player. Then we start the main event: the `playAnimation()` function, which takes the spline we've defined as its first parameter, then a few options in a key/value object:
+
+- `animation.progressKeyFrames` defines an [easing function](https://easings.net/) and alpha value at the start and end of the animation
+- `animation.rotationKeyFrames` defines rotation values and easing functions at the start, halfway point, and end of the animation, so the camera rotates to different facings throughout the flyover
+- `totalTimeSeconds` is set to the total time of the animation
+
+Finally, we execute `player.camera.clear()` at the end of the tour to return the player's camera to normal.
+
+## Test the add-on
+
+Now we're ready to give it a whirl! In your PowerShell or terminal window, make sure you're in the top-level directory for your add-on (like **mc_camera**) and type:
+
+```powershell
+npx just local-deploy
+```
+
+This copies the files over to Minecraft: Bedrock Edition's resource and behavior pack add-on directories for you.
+
+Now, launch Bedrock Edition and create a new world. Use the **Creative** game mode. Turn on **Cheats**, and in Experiments, turn on **Experimental Creator Camera Features**.
+
+In **Resource packs**, activate the resource pack for the flyover.
+
+:::image type="content" source="./Media/flyover-activate-rp.png" alt-text="Minecraft: Bedrock Edition Create World screen, showing the resource pack activation tab":::
+
+> [!TIP]
+>
+> If your resource pack still has the default name of "My Resource Pack," you can edit that in **behavior_packs/camera/manifest.json**.
+
+Now, create the world!
+
+When the world launches, you'll be shown a message with the button's coordinates. You can find it on your own, or teleport to it.
+
+:::image type="content" source="./Media/flyover-start-message.png" alt-text="The message sent at game startup with the coordinates of the flyover start button":::
+
+Then, find the button and press it with a right click...
+
+:::image type="content" source="./Media/flyover-start-button.jpg" alt-text="The button as it appears in Minecraft":::
+
+...and you'll be off and soaring! At the end of the tour, the camera should return to where you are, and switch back to first-person view.
+
+:::image type="content" source="./Media/flyover-in-flight.jpg" alt-text="An overhead view of the world, seen from the flyover tour.":::
+
+## Using the Bedrock Editor to create splines
+
+While you can define spline control points the way we did in this example, there's an alternative which can be easier, especially the more control points you have. The [Camera Tool](../BedrockEditor/EditorCameraTool.md) offers a GUI-based, interactive way to define the control points for splines. After you define the spline to make the moves you want, you can export the code from the Editor to use in your own add-on.
+
+## Attach the camera to an entity
+
+While the flyover doesn't demonstrate the ability to attach a camera to an entity, you can find an example of that in the [1.26.10 Update Video](https://www.youtube.com/watch?v=IRKOm9zRj_E), which features a similar flyover script that gives you a "tour" of a zoo. After the tour, it lets you look through the eyes of a sheepomelon for three seconds.
+
+This code excerpt uses the `player` object as defined in our flyover ( a single player `Entity`), and assumes we've got a sheepomelon `Entity` assigned to `sheepomelon`.
+
+```typescript
+// assume we have a player entity object and a sheepomelon entity object
+world.sendMessage("Seeing through a sheepomelon's eyes...");
+player.camera.attachToEntity({ entity: sheepomelon, locator: EntityAttachPoint.Eyes });
+
+// return control to the player after three seconds!
+system.runTimeout(() => {
+  player.camera.clear();
+}, 60);
+```
+
+(If you don't execute `player.camera.clear()` at the end, the player will have to use the `/camera` command to do it on their own when they get bored.)
+
+You can use this to attach the camera to any non-player entity, giving you a lot of new power in creating cutscenes and movies!
+
+## Go further
+
+There are enhancements and improvements you can make to this script on your own. You might want to change the path or timing of the flyover, or even use a [fade transition](../../ScriptAPI/minecraft/server/Camera.md#fade) at its start or end (or both).
