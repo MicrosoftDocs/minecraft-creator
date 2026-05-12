@@ -37,6 +37,7 @@ Allows the entity to be a thrown entity.
 | multiple_targets | true | Boolean true/false | If true, the projectile can hit multiple entities per flight | 
 | offset | [0, 0, 0] | x, y, z coordinate array | The offset from the entity's anchor where the projectile will spawn | 
 | on_fire_time | 5 | Decimal number | Time in seconds that the entity hit will be on fire for | 
+| owner_launch_immunity_ticks | 5 | Integer number | [EXPERIMENTAL] Number of ticks after launch during which the projectile cannot hit its owner | 
 | particle | iconcrack | String | Particle to use upon collision | 
 | potion_effect | -1 | Integer number | Defines the effect the arrow will apply to the entity it hits | 
 | power | 1.3 | Decimal number | Determines the velocity of the projectile | 

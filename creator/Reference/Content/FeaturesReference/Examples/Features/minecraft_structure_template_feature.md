@@ -22,7 +22,13 @@ Places a structure in the world. The structure must be stored as a .mcstructure 
 | description | *not set* | [Description](#description) item |  | 
 | facing_direction"<"north", "south", "east", "west", "random" | *not set* | String | Direction the structure will face when placed in the world. Defaults to "random" if omitted. | 
 | format_version | *not set* | String |  | 
-| rotate_around_center | *not set* | Boolean true/false | If true, tries to rotate the structure around its center when placed in the world. Defaults to "false" if omitted. | 
+| ground_level | *not set* | Integer number | Specifies which Y coordinate of the structure is considered its ground level. | 
+| rotate_around_center | *not set* | Boolean true/false | If true, centers and rotates the structure around the placement position, overriding any specified horizontal "offset". Defaults to "false" if omitted. | 
+
+### ground_level
+
+Specifies which Y coordinate of the structure is considered its ground level. This value determines which layer of the structure is checked by the "grounded" and "leveled" constraints and is used as a downward vertical offset during placement. If the value exceeds the structure's height, it is clamped to the maximum valid value and a content warning is emitted. Defaults to 0.
+
 
 ### Constraints
 
@@ -33,7 +39,8 @@ Places a structure in the world. The structure must be stored as a .mcstructure 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | block_intersection | *not set* | [Block Intersection](#block-intersection) item | When specified, ensures the structure only intersects with allowlisted blocks. | 
-| grounded | *not set* | Object | When specified, ensures the structure is on the ground. | 
+| grounded | *not set* | Object | When specified, ensures the structure's ground level touches the ground. | 
+| leveled | *not set* | [Leveled](#leveled) item | When specified, ensures the structure's ground level is placed on mostly flat terrain. | 
 | unburied | *not set* | Object | When specified, ensures the structure has air above it. | 
 
 #### Block Intersection
@@ -45,6 +52,27 @@ Places a structure in the world. The structure must be stored as a .mcstructure 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | block_allowlist|block_whitelist | *not set* | Array of strings |  | 
+| only_check_intersection_for_motion_blocking_blocks | *not set* | Boolean true/false | If true, only motion-blocking blocks within the structure are checked for intersections with blocks in "block_allowlist|block_whitelist". | 
+
+##### only_check_intersection_for_motion_blocking_blocks
+
+If true, only motion-blocking blocks within the structure are checked for intersections with blocks in "block_allowlist|block_whitelist". If false, all blocks in the structure except empty ones are checked for intersections, including air.
+
+
+#### Leveled
+
+##### Leveled Properties
+
+**JSON path:** `constraints > leveled`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max_steepness | *not set* | Integer number | Maximum allowed height difference between the placement position and terrain samples taken halfway along each side of the structure. | 
+
+##### max_steepness
+
+Maximum allowed height difference between the placement position and terrain samples taken halfway along each side of the structure. A valid terrain sample consists of a solid block with a non‑solid block above it. Defaults to 2.
+
 
 ### Description
 

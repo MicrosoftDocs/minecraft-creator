@@ -1,0 +1,62 @@
+{
+  "id": "minecraft:height_difference_filter_feature",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:height_difference_filter_feature",
+    "title": "Height Difference Filter Feature",
+    "fields": [
+      {
+        "dataType": "object",
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": "string",
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": "int",
+        "id": "min_required_upward_height_diff",
+        "title": "Min Required Upward Height Diff",
+        "description": "Specifies the minimum height difference required upwards.",
+        "isRequired": false
+      },
+      {
+        "dataType": "int",
+        "id": "min_required_downward_height_diff",
+        "title": "Min Required Downward Height Diff",
+        "description": "Specifies the minimum height difference required downwards.",
+        "isRequired": false
+      },
+      {
+        "dataType": "int",
+        "id": "max_allowed_upward_height_diff",
+        "title": "Max Allowed Upward Height Diff",
+        "description": "Specifies the maximum height difference allowed upwards.",
+        "isRequired": false
+      },
+      {
+        "dataType": "int",
+        "id": "max_allowed_downward_height_diff",
+        "title": "Max Allowed Downward Height Diff",
+        "description": "Specifies the maximum height difference allowed downwards.",
+        "isRequired": false
+      },
+      {
+        "dataType": "int",
+        "id": "search_radius",
+        "title": "Search Radius",
+        "description": "'search_radius' specifies the the length in each cardinal direction the filter will check for blocks against the given differences.",
+        "isRequired": true
+      }
+    ]
+  }
+}

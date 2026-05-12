@@ -120,72 +120,14 @@
         "title": "Nutrition",
         "description": "Value that is added to the entity's nutrition when the item is used. Default is set to 0.",
         "dataType": "int",
-        "defaultValue": 0,
-        "samples": {
-          "/vanilla/behavior_pack/items/apple.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:food/",
-              "content": 4
-            }
-          ],
-          "/vanilla/behavior_pack/items/baked_potato.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:food/",
-              "content": 5
-            }
-          ],
-          "/vanilla/behavior_pack/items/beef.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:food/",
-              "content": 3
-            }
-          ],
-          "/vanilla/behavior_pack/items/beetroot.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:food/",
-              "content": 1
-            }
-          ],
-          "/vanilla/behavior_pack/items/beetroot_soup.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:food/",
-              "content": 6
-            }
-          ]
-        }
+        "defaultValue": 0
       },
       {
         "id": "saturation_modifier",
         "title": "Saturation Modifier",
         "description": "saturation_modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff. Default is set to 0.6.",
         "dataType": "float",
-        "defaultValue": 0.6000000238418579,
-        "samples": {
-          "/vanilla/behavior_pack/items/apple.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:food/",
-              "content": 0.3
-            }
-          ],
-          "/vanilla/behavior_pack/items/baked_potato.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:food/",
-              "content": "normal"
-            }
-          ],
-          "/vanilla/behavior_pack/items/beef.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:food/",
-              "content": "low"
-            }
-          ],
-          "/vanilla/behavior_pack/items/beetroot.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:food/",
-              "content": "normal"
-            }
-          ]
-        }
+        "defaultValue": 0.6000000238418579
       },
       {
         "id": "using_converts_to",
@@ -198,64 +140,9 @@
             "id": "using_converts_to",
             "dataType": "keyedStringCollection"
           }
-        ],
-        "samples": {
-          "/vanilla/behavior_pack/items/beetroot_soup.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:food/",
-              "content": "bowl"
-            }
-          ]
-        }
+        ]
       }
     ],
-    "samples": {
-      "/vanilla/behavior_pack/items/apple.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:food/",
-          "content": {
-            "nutrition": 4,
-            "saturation_modifier": 0.3
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/items/baked_potato.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:food/",
-          "content": {
-            "nutrition": 5,
-            "saturation_modifier": "normal"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/items/beef.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:food/",
-          "content": {
-            "nutrition": 3,
-            "saturation_modifier": "low"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/items/beetroot.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:food/",
-          "content": {
-            "nutrition": 1,
-            "saturation_modifier": "normal"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/items/beetroot_soup.json": [
-        {
-          "path": "/minecraft:item/components/minecraft:food/",
-          "content": {
-            "nutrition": 6,
-            "saturation_modifier": "normal",
-            "using_converts_to": "bowl"
-          }
-        }
-      ]
-    }
+    "samples": {}
   }
 }

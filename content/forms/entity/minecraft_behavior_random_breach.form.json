@@ -106,5 +106,118 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.random_breach",
+    "title": "Entity Random Breach Behavior",
+    "description": "Allows the mob to randomly break surface of the water.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "cooldown_time",
+        "title": "Cooldown Time",
+        "description": "Time in seconds the mob has to wait before using the goal again",
+        "dataType": "float",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_breach/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "interval",
+        "title": "Interval",
+        "description": "A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal",
+        "dataType": "int",
+        "defaultValue": 120,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_breach/",
+              "content": 50
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_breach/",
+              "content": 6
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal",
+        "dataType": "float",
+        "defaultValue": 1
+      },
+      {
+        "id": "xz_dist",
+        "title": "Xz Dist",
+        "description": "Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1",
+        "dataType": "int",
+        "defaultValue": 10,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_breach/",
+              "content": 6
+            }
+          ]
+        }
+      },
+      {
+        "id": "y_dist",
+        "title": "y Dist",
+        "description": "Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1",
+        "dataType": "int",
+        "defaultValue": 7
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_breach/",
+          "content": {
+            "priority": 6,
+            "interval": 50,
+            "xz_dist": 6,
+            "cooldown_time": 2
+          }
+        }
+      ]
+    }
   }
 }

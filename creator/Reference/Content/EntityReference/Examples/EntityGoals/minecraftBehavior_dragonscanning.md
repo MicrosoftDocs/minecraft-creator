@@ -18,11 +18,20 @@ Allows the dragon to look around for a player to attack while in perch mode.
 > * Ender Dragon (minecraft:ender_dragon)
 > 
 
-## Dragonscanning Behavior Properties
+## Entity Dragonscanning Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Ender Dragon: `2` | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Ender Dragon: `2` | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples
 

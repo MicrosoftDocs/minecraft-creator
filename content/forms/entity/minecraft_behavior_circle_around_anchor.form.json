@@ -91,7 +91,7 @@
       {
         "id": "radius_change",
         "title": "Radius Change",
-        "description": "The number of blocks to increase the current movement radius by, upon successful \"radius_adjustment_chance\". If the current radius increases over the range maximum, the current radius will be set back to the range minimum and the entity will change between clockwise and counter-clockwise movement..",
+        "description": "The number of blocks to increase the current movement radius by, upon successful \"radius_adjustment_chance\". If the current radius increases over the range maximum, the current radius will be set back to the range minimum and the entity will change between clockwise and counter-clockwise movement.",
         "defaultValue": 1,
         "dataType": "float"
       },

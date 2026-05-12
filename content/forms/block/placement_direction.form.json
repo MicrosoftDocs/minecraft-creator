@@ -17,7 +17,7 @@
   "generatedFromSchema_doNotEdit": {
     "id": "Placement Direction",
     "title": "Block Placement Direction",
-    "description": "Adds the \"minecraft:cardinal_direction\", \"minecraft:facing_direction\" and/or \"minecraft:corner_and_cardinal_direction\" states and setter function to the block.",
+    "description": "Adds the \"minecraft:cardinal_direction\", \"minecraft:facing_direction\", \"minecraft:corner_and_cardinal_direction\" and/or \"minecraft:sixteen_way_rotation\" states and setter function to the block.",
     "fields": [
       {
         "id": "blocks_to_corner_with",
@@ -72,7 +72,7 @@
       {
         "id": "enabled_states",
         "title": "Enabled States",
-        "description": "Which states to enable. Must specify at least one. Options: [\"minecraft:cardinal_direction\", \"minecraft:facing_direction\", \"minecraft:corner_and_cardinal_direction\"].",
+        "description": "Which states to enable. Must specify at least one. Options: [\"minecraft:cardinal_direction\", \"minecraft:facing_direction\", \"minecraft:corner_and_cardinal_direction\", \"minecraft:sixteen_way_rotation\"].",
         "dataType": "stringArray",
         "minLength": 1,
         "choices": [
@@ -87,6 +87,10 @@
           {
             "id": "minecraft:facing_direction",
             "title": "Minecraft:facing direction"
+          },
+          {
+            "id": "minecraft:sixteen_way_rotation",
+            "title": "Minecraft:sixteen way rotation"
           }
         ],
         "isRequired": true

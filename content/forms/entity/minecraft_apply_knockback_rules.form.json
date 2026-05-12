@@ -49,7 +49,7 @@
                     "value": "bouncy"
                   },
                   "horizontal_power": 0.33,
-                  "vertical_power": 0.06,
+                  "vertical_power": 0.07,
                   "vertical_velocity_cap": 8,
                   "scale_previous_velocity": 1,
                   "horizontal_hit_angle_scale": 1.6,
@@ -65,7 +65,23 @@
                     "value": "regular"
                   },
                   "horizontal_power": 0.33,
-                  "vertical_power": 0.06,
+                  "vertical_power": 0.07,
+                  "vertical_velocity_cap": 8,
+                  "scale_previous_velocity": 1,
+                  "horizontal_hit_angle_scale": 1.6,
+                  "vertical_hit_angle_scale": 0.5,
+                  "vertical_position_angle_scale": 0.8,
+                  "scale_with_damage": true
+                },
+                {
+                  "filter": {
+                    "test": "enum_property",
+                    "subject": "other",
+                    "domain": "minecraft:ball_archetype",
+                    "value": "slow_bouncy"
+                  },
+                  "horizontal_power": 0.33,
+                  "vertical_power": 0.16,
                   "vertical_velocity_cap": 8,
                   "scale_previous_velocity": 1,
                   "horizontal_hit_angle_scale": 1.6,
@@ -81,7 +97,7 @@
                     "value": "slow_flat"
                   },
                   "horizontal_power": 0.33,
-                  "vertical_power": 0.06,
+                  "vertical_power": 0.07,
                   "vertical_velocity_cap": 8,
                   "scale_previous_velocity": 1,
                   "horizontal_hit_angle_scale": 1.6,
@@ -96,7 +112,7 @@
                     "domain": "minecraft:sulfur_cube_archetype",
                     "value": "fast_flat"
                   },
-                  "horizontal_power": 0.33,
+                  "horizontal_power": 0.73,
                   "vertical_power": 0.06,
                   "vertical_velocity_cap": 8,
                   "scale_previous_velocity": 1,
@@ -113,7 +129,7 @@
                     "value": "light"
                   },
                   "horizontal_power": 0.33,
-                  "vertical_power": 0.06,
+                  "vertical_power": 0.12,
                   "vertical_velocity_cap": 8,
                   "scale_previous_velocity": 1,
                   "horizontal_hit_angle_scale": 1.6,
@@ -128,7 +144,7 @@
                     "domain": "minecraft:sulfur_cube_archetype",
                     "value": "fast_sliding"
                   },
-                  "horizontal_power": 0.33,
+                  "horizontal_power": 0.53,
                   "vertical_power": 0.06,
                   "vertical_velocity_cap": 8,
                   "scale_previous_velocity": 1,
@@ -200,6 +216,22 @@
                   "vertical_hit_angle_scale": 0.5,
                   "vertical_position_angle_scale": 0.8,
                   "scale_with_damage": true
+                },
+                {
+                  "filter": {
+                    "test": "enum_property",
+                    "subject": "other",
+                    "domain": "minecraft:sulfur_cube_archetype",
+                    "value": "hot"
+                  },
+                  "horizontal_power": 0.33,
+                  "vertical_power": 0.06,
+                  "vertical_velocity_cap": 8,
+                  "scale_previous_velocity": 1,
+                  "horizontal_hit_angle_scale": 1.6,
+                  "vertical_hit_angle_scale": 0.5,
+                  "vertical_position_angle_scale": 0.8,
+                  "scale_with_damage": true
                 }
               ]
             }
@@ -248,7 +280,7 @@
                   "value": "bouncy"
                 },
                 "horizontal_power": 0.33,
-                "vertical_power": 0.06,
+                "vertical_power": 0.07,
                 "vertical_velocity_cap": 8,
                 "scale_previous_velocity": 1,
                 "horizontal_hit_angle_scale": 1.6,
@@ -264,7 +296,23 @@
                   "value": "regular"
                 },
                 "horizontal_power": 0.33,
-                "vertical_power": 0.06,
+                "vertical_power": 0.07,
+                "vertical_velocity_cap": 8,
+                "scale_previous_velocity": 1,
+                "horizontal_hit_angle_scale": 1.6,
+                "vertical_hit_angle_scale": 0.5,
+                "vertical_position_angle_scale": 0.8,
+                "scale_with_damage": true
+              },
+              {
+                "filter": {
+                  "test": "enum_property",
+                  "subject": "other",
+                  "domain": "minecraft:ball_archetype",
+                  "value": "slow_bouncy"
+                },
+                "horizontal_power": 0.33,
+                "vertical_power": 0.16,
                 "vertical_velocity_cap": 8,
                 "scale_previous_velocity": 1,
                 "horizontal_hit_angle_scale": 1.6,
@@ -280,7 +328,7 @@
                   "value": "slow_flat"
                 },
                 "horizontal_power": 0.33,
-                "vertical_power": 0.06,
+                "vertical_power": 0.07,
                 "vertical_velocity_cap": 8,
                 "scale_previous_velocity": 1,
                 "horizontal_hit_angle_scale": 1.6,
@@ -295,7 +343,7 @@
                   "domain": "minecraft:sulfur_cube_archetype",
                   "value": "fast_flat"
                 },
-                "horizontal_power": 0.33,
+                "horizontal_power": 0.73,
                 "vertical_power": 0.06,
                 "vertical_velocity_cap": 8,
                 "scale_previous_velocity": 1,
@@ -312,7 +360,7 @@
                   "value": "light"
                 },
                 "horizontal_power": 0.33,
-                "vertical_power": 0.06,
+                "vertical_power": 0.12,
                 "vertical_velocity_cap": 8,
                 "scale_previous_velocity": 1,
                 "horizontal_hit_angle_scale": 1.6,
@@ -327,7 +375,7 @@
                   "domain": "minecraft:sulfur_cube_archetype",
                   "value": "fast_sliding"
                 },
-                "horizontal_power": 0.33,
+                "horizontal_power": 0.53,
                 "vertical_power": 0.06,
                 "vertical_velocity_cap": 8,
                 "scale_previous_velocity": 1,
@@ -390,6 +438,22 @@
                   "subject": "other",
                   "domain": "minecraft:sulfur_cube_archetype",
                   "value": "explosive"
+                },
+                "horizontal_power": 0.33,
+                "vertical_power": 0.06,
+                "vertical_velocity_cap": 8,
+                "scale_previous_velocity": 1,
+                "horizontal_hit_angle_scale": 1.6,
+                "vertical_hit_angle_scale": 0.5,
+                "vertical_position_angle_scale": 0.8,
+                "scale_with_damage": true
+              },
+              {
+                "filter": {
+                  "test": "enum_property",
+                  "subject": "other",
+                  "domain": "minecraft:sulfur_cube_archetype",
+                  "value": "hot"
                 },
                 "horizontal_power": 0.33,
                 "vertical_power": 0.06,

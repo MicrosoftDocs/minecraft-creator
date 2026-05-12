@@ -25,7 +25,7 @@ Allows the entity to continuously jump around like a slime.
 |:----------|:-------------|:----|:-----------|:------------- |
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Magma Cube: `5` | 
-| speed_multiplier | 1 | Decimal number | Determines the multiplier this entity's speed is modified by when jumping around. | Sulfur Cube: `1` | 
+| speed_multiplier | 1 | Decimal number | Determines the multiplier this entity's speed is modified by when jumping around. |  | 
 
 ### Control Flags choices
 
@@ -43,15 +43,5 @@ Allows the entity to continuously jump around like a slime.
 ```json
 "minecraft:behavior.slime_keep_on_jumping": {
   "priority": 5
-}
-```
-
-#### [Sulfur Cube](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/sulfur_cube.json)
-
-
-```json
-"minecraft:behavior.slime_keep_on_jumping": {
-  "priority": 5,
-  "speed_multiplier": 1
 }
 ```

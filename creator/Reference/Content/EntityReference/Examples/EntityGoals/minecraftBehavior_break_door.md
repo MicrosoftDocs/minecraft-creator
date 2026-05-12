@@ -16,8 +16,17 @@ Allows this mob to break doors.
 > Not currently used by any entities within Minecraft: Bedrock Edition. In its place, the parameter `can_break_doors` has been added to the `minecraft:navigation` component to allow entities to break down doors.
 
 
-## Break Door Behavior Properties
+## Entity Break Door Behavior Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |

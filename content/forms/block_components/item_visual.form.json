@@ -154,6 +154,13 @@
                   "isRequired": true
                 },
                 {
+                  "id": "n_way_visual_rotation",
+                  "title": "n Way Visual Rotation",
+                  "description": "Optional object that maps x/y/z axes to block state names that drive visual-only geometry rotation.",
+                  "dataType": "object",
+                  "subFormId": "block_components/nwayvisualrotation"
+                },
+                {
                   "id": "uv_lock",
                   "title": "Uv Lock",
                   "description": "A field that is either a Boolean or an array of strings, max size 64 strings. This field locks UV orientation for all/some bones in the geometry, regardless of how the block is rotated using \"minecraft:transformation\" component. For performance reasons it's recommended to use the Boolean.",
