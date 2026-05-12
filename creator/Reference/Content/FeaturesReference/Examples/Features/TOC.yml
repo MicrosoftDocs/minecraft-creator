@@ -10,6 +10,8 @@
   href: minecraft_geode_feature.md
 - name: minecraft:growing_plant_feature
   href: minecraft_growing_plant_feature.md
+- name: minecraft:height_difference_filter_feature
+  href: minecraft_height_difference_filter_feature.md
 - name: minecraft:multiface_feature
   href: minecraft_multiface_feature.md
 - name: minecraft:nether_cave_carver_feature

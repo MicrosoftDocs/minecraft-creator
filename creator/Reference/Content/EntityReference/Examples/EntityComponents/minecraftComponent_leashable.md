@@ -28,6 +28,7 @@ Describes how this mob can be leashed to other items.
 | on_unleash_interact_only | false | Boolean true/false | When set to true, "on_unleash" does not trigger when the entity gets unleashed for reasons other than the player directly interacting with it. |  | 
 | presets | *not set* | Array of [Presets](#presets) items | Defines how this entity behaves when leashed to another entity. The first preset which "filter" conditions are met will be applied; if none match, a default configuration is used instead. | Boat: `[{"filter":{"subject":"other","test":"is_family","value":"happy_ghast"},"rotation_adjustment":90,"spring_type":"quad_dampened"},{"hard_distance":4,"rotation_adjustment":90,"soft_distance":2}]` | 
 | soft_distance | 4 | Integer number | Distance in blocks at which the 'spring' effect starts acting to keep this entity close to the entity that leashed it. |  | 
+| unleash_on_removal | true | Boolean true/false | If true, the entity is unleashed when the component is removed. |  | 
 
 ### Presets
 Defines how this entity behaves when leashed to another entity. The first preset which "filter" conditions are met will be applied; if none match, a default configuration is used instead.

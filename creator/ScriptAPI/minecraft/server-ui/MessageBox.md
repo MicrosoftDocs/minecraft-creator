@@ -13,91 +13,135 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-A simple message form UI, 2 buttons and a text body.
+A simple message form with two buttons and a text body. Use this class to show a basic dialog to a player and handle the player's button selection.
 
 ## Methods
+- [constructor](#constructor)
 - [body](#body)
 - [button1](#button1)
 - [button2](#button2)
 - [close](#close)
 - [isShowing](#isshowing)
 - [show](#show)
-- [create](#create)
+
+### **constructor**
+`
+new MessageBox(player: minecraftserver.Player, title: ObservableString | ObservableUIRawMessage | string | UIRawMessage)
+`
+
+Creates a new MessageBox for the specified player with the given title.
+
+#### **Parameters**
+- **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
+  
+  The player to show this message box to.
+- **title**: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+  
+  The title text to display at the top of the message box.
+
+**Returns** [*MessageBox*](MessageBox.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
 ### **body**
 `
-body(text: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage): MessageBox
+body(body: ObservableString | ObservableUIRawMessage | string | UIRawMessage): MessageBox
 `
 
-Sets the data for the text in the body of the message box. It is contained within a scroll view to allow for lots of text.
+Sets the body text displayed in the message box. Returns the message box instance to allow method chaining.
 
 #### **Parameters**
-- **text**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
+- **body**: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+  
+  The body text to display. Accepts either a plain string or an ObservableString.
 
-**Returns** *MessageBox*
+**Returns** [*MessageBox*](MessageBox.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md)
 
 ### **button1**
 `
-button1(label: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, tooltip?: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage): MessageBox
+button1(label: ObservableString | ObservableUIRawMessage | string | UIRawMessage, tooltip?: ObservableString | ObservableUIRawMessage | string | UIRawMessage): MessageBox
 `
 
-Sets the data for the top button in the message box.
+Sets the label for the first button of the message box. Returns the message box instance to allow method chaining.
 
 #### **Parameters**
-- **label**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
-- **tooltip**?: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
+- **label**: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+  
+  The text label to display on the first button.
+- **tooltip**?: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md) = `null`
+  
+  Optional tooltip text shown when hovering over the first button.
 
-**Returns** *MessageBox*
+**Returns** [*MessageBox*](MessageBox.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md)
 
 ### **button2**
 `
-button2(label: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, tooltip?: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage): MessageBox
+button2(label: ObservableString | ObservableUIRawMessage | string | UIRawMessage, tooltip?: ObservableString | ObservableUIRawMessage | string | UIRawMessage): MessageBox
 `
 
-Sets the data for the bottom button in the message box.
+Sets the label for the second button of the message box. Returns the message box instance to allow method chaining.
 
 #### **Parameters**
-- **label**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
-- **tooltip**?: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
+- **label**: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+  
+  The text label to display on the second button.
+- **tooltip**?: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md) = `null`
+  
+  Optional tooltip text shown when hovering over the second button.
 
-**Returns** *MessageBox*
+**Returns** [*MessageBox*](MessageBox.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md)
 
 ### **close**
 `
 close(): void
 `
 
-Tell the client to close the message box. Throws {@link FormCloseError} if the message box is not open.
-
-**Returns** *void*
+Closes the message box if it is currently being shown to the player. Throws a FormVisibilityError if the form is not currently open.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*FormVisibilityError*](FormVisibilityError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
 ### **isShowing**
 `
 isShowing(): boolean
 `
 
-Returns true if the message box is currently being shown to the player.
+Returns true if the message box is currently being shown to the player, false otherwise.
 
 **Returns** *boolean*
+  
+Notes:
+- This function can't be called in restricted-execution mode.
 
 ### **show**
 `
 show(): Promise<MessageBoxResult>
 `
 
-Show this message box to the player. Will return a result even if the client was busy (i.e. in another menu). Will throw if the user disconnects.
+Shows the message box to the player. Returns a promise that resolves with a MessageBoxResult containing the close reason and the player's button selection.
 
-**Returns** *Promise<MessageBoxResult>*
-
-### **create**
-`
-static create(player: minecraftserver.Player, title: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage): MessageBox
-`
-
-Creates a message box for a certain player. Use this instead of a constructor.
-
-#### **Parameters**
-- **player**: *minecraftserver.Player*
-- **title**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
-
-**Returns** *MessageBox*
+**Returns** Promise&lt;[*MessageBoxResult*](MessageBoxResult.md)&gt;
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*FormVisibilityError*](FormVisibilityError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)

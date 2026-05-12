@@ -17,6 +17,7 @@ ms.date: 02/11/2025
 | [minecraft:fossil_feature](Features/minecraft_fossil_feature.md)| Generates a skeletal structure composed of bone blocks and parametric ore blocks. |
 | [minecraft:geode_feature](Features/minecraft_geode_feature.md)| generates a rock formation to simulate a geode. |
 | [minecraft:growing_plant_feature](Features/minecraft_growing_plant_feature.md)| Places a growing plant in the world. |
+| [minecraft:height_difference_filter_feature](Features/minecraft_height_difference_filter_feature.md)|  |
 | [minecraft:multiface_feature](Features/minecraft_multiface_feature.md)| Places multiface blocks on floors/walls/ceilings. |
 | [minecraft:nether_cave_carver_feature](Features/minecraft_nether_cave_carver_feature.md)| Carves a cave through the Nether in the current chunk, and in every chunk around the current chunk in an 8 radial pattern. |
 | [minecraft:ore_feature](Features/minecraft_ore_feature.md)| Places a vein of blocks to simulate ore deposits. |

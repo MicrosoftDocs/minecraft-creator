@@ -350,6 +350,10 @@ KeyboardEvent.DOM_VK_F11
 `F12 = 123`
 
 KeyboardEvent.DOM_VK_F12
+### **SEMICOLON**
+`SEMICOLON = 186`
+
+KeyboardEvent.DOM_VK_SEMICOLON, ie. ';'
 ### **COMMA**
 `COMMA = 188`
 

@@ -96,6 +96,8 @@ description: Contents of the @minecraft/server-editor.ThemeSettingsColorKey enum
 `PrefillVolumeFill = "PrefillVolumeFill"`
 ### **PrimaryActive**
 `PrimaryActive = "PrimaryActive"`
+### **PrimaryAttention**
+`PrimaryAttention = "PrimaryAttention"`
 ### **PrimaryBackground1**
 `PrimaryBackground1 = "PrimaryBackground1"`
 ### **PrimaryBackground2**
@@ -114,6 +116,8 @@ description: Contents of the @minecraft/server-editor.ThemeSettingsColorKey enum
 `ScrollBar = "ScrollBar"`
 ### **SecondaryActive**
 `SecondaryActive = "SecondaryActive"`
+### **SecondaryAttention**
+`SecondaryAttention = "SecondaryAttention"`
 ### **SecondaryBackground1**
 `SecondaryBackground1 = "SecondaryBackground1"`
 ### **SecondaryBackground2**

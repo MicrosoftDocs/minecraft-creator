@@ -195,6 +195,7 @@ Entity becomes a goat fish
 - `minecraft:become_high_resistance`
 - `minecraft:become_hostile`
 Entity becomes hostile
+- `minecraft:become_hot`
 - `minecraft:become_immobile`
 - `minecraft:become_leatherworker`
 Entity, presumably a villager, takes on the role of leatherworker
@@ -231,6 +232,7 @@ Entity becomes a red snapper
 Entity becomes scared
 - `minecraft:become_sheperd`
 Entity, presumably a villager, becomes a shepherd
+- `minecraft:become_slow_bouncy`
 - `minecraft:become_slow_flat`
 - `minecraft:become_slow_sliding`
 - `minecraft:become_statue`

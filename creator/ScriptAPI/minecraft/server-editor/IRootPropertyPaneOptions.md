@@ -16,6 +16,13 @@ The options to create a root pane.
 
 ## Properties
 
+### **contentBadgeId**
+`contentBadgeId?: string;`
+
+Optional content badge identifier associated with the root pane.
+
+Type: *string*
+
 ### **headerAction**
 `headerAction?: IRootPropertyPaneHeaderAction;`
 

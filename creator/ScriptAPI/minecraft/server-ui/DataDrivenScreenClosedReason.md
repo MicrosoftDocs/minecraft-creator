@@ -13,18 +13,18 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-The reason why a data driven screen (i.e. MessageBox or CustomForm) was closed.
+The reason why a data driven UI screen (MessageBox or CustomForm) was closed.
 
 ## Constants
-### **ServerClose**
-`ServerClose = ServerClose`
+### **ClientClosed**
+`ClientClosed = "ClientClosed"`
 
-Closed because it was programmatically told by the server to close using `form.close()`.
+The screen was closed by the client (e.g., the player dismissed it or there was a client authoritative close button).
+### **ServerClosed**
+`ServerClosed = "ServerClosed"`
+
+The screen was closed by the server, likely by the close API.
 ### **UserBusy**
-`UserBusy = UserBusy`
+`UserBusy = "UserBusy"`
 
-Closed because the user was busy (i.e. other UI was open).
-### **UserClose**
-`UserClose = UserClose`
-
-Closed because the client closed the form. This can be with a close button on the form (i.e. the X in the corner of a message box, the 'Close' button on a custom form, or either button in the message box)
+The screen could not be shown because the player was busy with another UI interaction.

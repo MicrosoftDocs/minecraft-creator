@@ -181,10 +181,12 @@ Allows the mob to lay an egg block on certain types of blocks if the mob is preg
 | bubble.up | Bubble.up | |
 | bubble.upinside | Bubble.upinside | |
 | bucket.empty.fish | Bucket.empty.fish | |
+| bucket.empty.land_animal | Bucket.empty.land animal | |
 | bucket.empty.lava | Bucket.empty.lava | |
 | bucket.empty.powder_snow | Bucket.empty.powder snow | |
 | bucket.empty.water | Bucket.empty.water | |
 | bucket.fill.fish | Bucket.fill.fish | |
+| bucket.fill.land_animal | Bucket.fill.land animal | |
 | bucket.fill.lava | Bucket.fill.lava | |
 | bucket.fill.powder_snow | Bucket.fill.powder snow | |
 | bucket.fill.water | Bucket.fill.water | |
@@ -279,6 +281,8 @@ Allows the mob to lay an egg block on certain types of blocks if the mob is preg
 | freeze | Freeze | |
 | fuse | Fuse | |
 | gallop | Gallop | |
+| geyser_eruption_active | Geyser eruption active | |
+| geyser_eruption_start | Geyser eruption start | |
 | glass | Glass | |
 | glow_squid.ink_squirt | Glow squid.ink squirt | |
 | glowstick.use | Glowstick.use | |
@@ -499,6 +503,7 @@ Allows the mob to lay an egg block on certain types of blocks if the mob is preg
 | record.13 | Record.13 | |
 | record.5 | Record.5 | |
 | record.blocks | Record.blocks | |
+| record.bounce | Record.bounce | |
 | record.cat | Record.cat | |
 | record.chirp | Record.chirp | |
 | record.creator | Record.creator | |
@@ -507,6 +512,7 @@ Allows the mob to lay an egg block on certain types of blocks if the mob is preg
 | record.lava_chicken | Record.lava chicken | |
 | record.mall | Record.mall | |
 | record.mellohi | Record.mellohi | |
+| record.null | Record.null | |
 | record.otherside | Record.otherside | |
 | record.pigstep | Record.pigstep | |
 | record.precipice | Record.precipice | |

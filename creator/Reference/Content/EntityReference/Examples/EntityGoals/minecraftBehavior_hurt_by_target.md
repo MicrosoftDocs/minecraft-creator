@@ -13,15 +13,24 @@ ms.date: 02/11/2025
 Allows the mob to target another mob that hurts them.
 
 
-## Hurt By Target Behavior Properties
+## Entity Hurt By Target Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | alert_same_type | false | Boolean true/false | If true, nearby mobs of the same type will be alerted about the damage |  | 
-| entity_types | *not set* | Array of [Entity Types](#entity-types) items | List of entity types that this mob can target when hurt by them | Bogged: `[{"filters":{"operator":"!=","test":"is_family","subject":"other","value":"breeze"}}]`, Breeze: `[{"filters":{"all_of":[{"operator":"!=","test":"is_family","subject":"other","value":"skeleton"},{"operator":"!=","test":"is_family","subject":"other","value":"stray"},{"operator":"!=","test":"is_family","subject":"other","value":"zombie"},{"operator":"!=","test":"is_family","subject":"other","value":"husk"},{"operator":"!=","test":"is_family","subject":"other","value":"spider"},{"operator":"!=","test":"is_family","subject":"other","value":"cavespider"},{"operator":"!=","test":"is_family","subject":"other","value":"slime"}]}}]` | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
+| entity_types | [] | Array of [Entity Types](#entity-types) items | List of entity types that this mob can target when hurt by them | Bogged: `[{"filters":{"operator":"!=","test":"is_family","subject":"other","value":"breeze"}}]`, Breeze: `[{"filters":{"all_of":[{"operator":"!=","test":"is_family","subject":"other","value":"skeleton"},{"operator":"!=","test":"is_family","subject":"other","value":"stray"},{"operator":"!=","test":"is_family","subject":"other","value":"zombie"},{"operator":"!=","test":"is_family","subject":"other","value":"husk"},{"operator":"!=","test":"is_family","subject":"other","value":"spider"},{"operator":"!=","test":"is_family","subject":"other","value":"cavespider"},{"operator":"!=","test":"is_family","subject":"other","value":"slime"}]}}]` | 
 | entity_types (as Object) | *not set* | Object |  |  | 
 | hurt_owner | false | Boolean true/false | If true, the mob will hurt its owner and other mobs with the same owner as itself |  | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ### Entity Types
 List of entity types that this mob can target when hurt by them.

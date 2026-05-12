@@ -13,27 +13,27 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-The options for including a dropdown in {@link CustomForm}.
+Options for configuring a dropdown component.
 
 ## Properties
 
 ### **description**
-`description?: Observable<string> | string | UIRawMessage;`
+`description?: ObservableString | ObservableUIRawMessage | string | UIRawMessage;`
 
-The description of the dropdown, shown in the UI.
+Descriptive text shown around the dropdown to provide additional context.
 
-Type: *Observable<string>* | *string* | *UIRawMessage*
+Type: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
 
 ### **disabled**
-`disabled?: Observable<boolean> | boolean;`
+`disabled?: boolean | ObservableBoolean;`
 
-Whether or not this dropdown is disabled.
+When true or bound to a true ObservableBoolean, the dropdown is shown but cannot be changed.
 
-Type: *Observable<boolean>* | *boolean*
+Type: *boolean* | [*ObservableBoolean*](ObservableBoolean.md)
 
 ### **visible**
-`visible?: Observable<boolean> | boolean;`
+`visible?: boolean | ObservableBoolean;`
 
-Whether or not this dropdown is visible.
+When false or bound to a false ObservableBoolean, the dropdown is hidden.
 
-Type: *Observable<boolean>* | *boolean*
+Type: *boolean* | [*ObservableBoolean*](ObservableBoolean.md)

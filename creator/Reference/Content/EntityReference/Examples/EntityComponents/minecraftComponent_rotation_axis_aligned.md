@@ -15,10 +15,3 @@ Combining this with the "minecraft:body_rotation_blocked" component will cause t
 
 
 ## Samples
-
-#### [Sulfur Cube](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/sulfur_cube.json)
-
-
-```json
-"minecraft:rotation_axis_aligned": {}
-```

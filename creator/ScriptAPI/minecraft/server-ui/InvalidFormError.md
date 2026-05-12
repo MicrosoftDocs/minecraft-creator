@@ -4,11 +4,11 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server-ui.FormCloseError Class
-description: Contents of the @minecraft/server-ui.FormCloseError class.
+title: minecraft/server-ui.InvalidFormError Class
+description: Contents of the @minecraft/server-ui.InvalidFormError class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# FormCloseError Class
+# InvalidFormError Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -16,4 +16,16 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Extends
 - *Error*
 
-Thrown when attempting to close a DDUI form that isn't open.
+Thrown when attempting to interact with a form using an invalid or unknown form identifier.
+
+## Properties
+
+### **formId**
+`read-only formId: string;`
+
+The identifier of the invalid form that was referenced.
+
+Type: *string*
+
+Notes:
+  - This property can be read in early-execution mode.

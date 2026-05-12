@@ -17,6 +17,7 @@
   "generated_doNotEdit": {
     "id": "minecraft:behavior.take_block",
     "title": "Take Block Behavior",
+    "description": "Allows the entity to take a block from the world and carry it around.",
     "fields": [
       {
         "id": "affected_by_griefing_rule",
@@ -76,5 +77,217 @@
     ],
     "samples": {}
   },
-  "description": "AI goal that makes entities pick up blocks from the world, like Endermen grabbing blocks to carry. Configure which blocks the entity can take and the search radius. Works with place_block behavior to create entities that relocate blocks or harvest materials from the environment."
+  "description": "AI goal that makes entities pick up blocks from the world, like Endermen grabbing blocks to carry. Configure which blocks the entity can take and the search radius. Works with place_block behavior to create entities that relocate blocks or harvest materials from the environment.",
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.take_block",
+    "title": "Entity Take Block Behavior",
+    "description": "Allows the entity to take a block from the world and carry it around.",
+    "fields": [
+      {
+        "id": "affected_by_griefing_rule",
+        "title": "Affected By Griefing Rule",
+        "description": "If true, whether the goal is affected by the mob griefing game rule.",
+        "dataType": "boolean",
+        "defaultValue": true
+      },
+      {
+        "id": "blocks",
+        "description": "Block descriptors for which blocks are valid to be taken by the entity, if empty all blocks are valid.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subForm": {
+          "id": "blocks",
+          "title": "Blocks",
+          "fields": [
+            {
+              "id": "name",
+              "title": "Name",
+              "dataType": "string",
+              "defaultValue": ""
+            },
+            {
+              "id": "states",
+              "title": "States",
+              "dataType": "int",
+              "defaultValue": {},
+              "alternates": [
+                {
+                  "id": "states",
+                  "dataType": "string"
+                },
+                {
+                  "id": "states",
+                  "dataType": "boolean"
+                }
+              ]
+            },
+            {
+              "id": "tags",
+              "title": "Tags",
+              "dataType": "string",
+              "defaultValue": ""
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "blocks",
+            "dataType": "string"
+          },
+          {
+            "id": "blocks",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "can_take",
+        "description": "Filters for if the entity should try to take a block. Self and Target are set.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "can_take",
+          "title": "Can Take",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "can_take",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "chance",
+        "title": "Chance",
+        "description": "Chance each tick for the entity to try and take a block.",
+        "dataType": "float",
+        "defaultValue": 1,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "on_take",
+        "title": "Take",
+        "description": "Trigger ran if the entity does take a block. Self, Target, and Block are set.",
+        "dataType": "object",
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "requires_line_of_sight",
+        "title": "Requires Line Of Sight",
+        "description": "If true, whether the entity needs line of sight to the block they are trying to take.",
+        "dataType": "boolean",
+        "defaultValue": true
+      },
+      {
+        "id": "xz_range",
+        "title": "Xz Range",
+        "description": "XZ range from which the entity will try and take blocks from.",
+        "dataType": "object",
+        "defaultValue": {
+          "max": 2,
+          "min": -2
+        },
+        "subFormId": "item_components/intrange"
+      },
+      {
+        "id": "y_range",
+        "title": "y Range",
+        "description": "Y range from which the entity will try and take blocks from.",
+        "dataType": "object",
+        "defaultValue": {
+          "max": 3,
+          "min": 0
+        },
+        "subFormId": "item_components/intrange"
+      }
+    ],
+    "samples": {}
+  }
 }

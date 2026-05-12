@@ -279,6 +279,13 @@
             }
           ]
         }
+      },
+      {
+        "id": "unleash_on_removal",
+        "title": "Unleash On Removal",
+        "description": "If true, the entity is unleashed when the component is removed.",
+        "defaultValue": true,
+        "dataType": "boolean"
       }
     ],
     "samples": {

@@ -19,6 +19,13 @@
     "title": "Block Components",
     "fields": [
       {
+        "id": "minecraft:block_entity",
+        "title": "Minecraft Block Entity",
+        "description": "Adds per-instance metadata for this block.",
+        "dataType": "object",
+        "subFormId": "block_components/block_entity"
+      },
+      {
         "id": "minecraft:breathability",
         "title": "Minecraft Breathability",
         "dataType": "object",
@@ -266,6 +273,23 @@
                   "description": "A modifier affecting the chance that this block will be destroyed by flames when on fire. Values are greater than or equal to 0, with a higher number meaning more likely to be destroyed by fire. For a destroy_chance_modifier of 0, the block will never be destroyed by fire, and the fire will burn forever if the catch_chance_modifier is greater than 0. The default value of 20 is the same as that of Planks.",
                   "dataType": "int",
                   "defaultValue": 20
+                },
+                {
+                  "id": "lava_flammable",
+                  "title": "Lava Flammable",
+                  "description": "Determines lava fire consideration. \"always\" includes this block when lava attempts to spread fire\"\n\t\t\t\t\t\" (triggered by adjacent block changes), but normal fire-placement rules still apply. \"never\" excludes\"\n\t\t\t\t\t\" this block from that check.",
+                  "dataType": "string",
+                  "choices": [
+                    {
+                      "id": "always",
+                      "title": "Always"
+                    },
+                    {
+                      "id": "never",
+                      "title": "Never"
+                    }
+                  ],
+                  "defaultValue": "never"
                 }
               ]
             }
@@ -371,6 +395,13 @@
                   "description": "The description identifier of the geometry to use to render this block. This identifier must either match an existing geometry identifier in any of the loaded resource packs or be one of the currently supported Vanilla identifiers: \"minecraft:geometry.full_block\" or \"minecraft:geometry.cross\".",
                   "dataType": "string",
                   "isRequired": true
+                },
+                {
+                  "id": "n_way_visual_rotation",
+                  "title": "n Way Visual Rotation",
+                  "description": "Optional object that maps x/y/z axes to block state names that drive visual-only geometry rotation.",
+                  "dataType": "object",
+                  "subFormId": "block_components/nwayvisualrotation"
                 },
                 {
                   "id": "uv_lock",

@@ -27,5 +27,38 @@
         "dataType": "int"
       }
     ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.door_interact",
+    "title": "Entity Door Interact Behavior",
+    "description": "Allows the mob to open and close doors.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      }
+    ]
   }
 }

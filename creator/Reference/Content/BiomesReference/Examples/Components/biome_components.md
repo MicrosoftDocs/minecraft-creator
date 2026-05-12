@@ -325,7 +325,7 @@ Scaling value used to alter the frequency of replacement attempts. A lower frequ
 
 
 ### Biome Surface Builder
-Controls the materials used for terrain generation.
+Controls materials used for terrain generation.
 
 
 #### Biome Surface Builder Properties
@@ -334,7 +334,7 @@ Controls the materials used for terrain generation.
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| builder (Biome Overworld) | *not set* | [Builder](#biome-overworld) item | Controls the block types used for terrain generation. | 
+| builder (Biome Overworld) | *not set* | [Builder](#biome-overworld) item | Controls block types and strategy used for terrain generation. | 
 | builder (Alternate 1) | *not set* | [Builder](#biome-frozen-ocean) item |  | 
 | builder (Alternate 2) | *not set* | [Builder](#biome-mesa) item |  | 
 | builder (Alternate 3) | *not set* | [Builder](#biome-swamp) item |  | 
@@ -351,18 +351,18 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| foundation_material | *not set* | String | Controls the block type used deep underground in this biome | 
+| foundation_material | *not set* | String | Controls the block type used deep underground in this biome. | 
 | foundation_material (Foundation Material) | *not set* | [Foundation Material (Foundation Material)](#foundation-material-foundation-material) item |  | 
-| mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome | 
+| mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome. | 
 | mid_material (Mid Material) | *not set* | [Mid Material (Mid Material)](#mid-material-mid-material) item |  | 
-| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur Value must be <= 127. | 
-| sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome | 
+| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur. Value must be <= 127. | 
+| sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome. | 
 | sea_floor_material (Sea Floor Material) | *not set* | [Sea Floor Material (Sea Floor Material)](#sea-floor-material-sea-floor-material) item |  | 
-| sea_material | *not set* | String | Controls the block type used for the bodies of water in this biome | 
+| sea_material | *not set* | String | Controls the block type used for the bodies of water in this biome. | 
 | sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
-| top_material | *not set* | String | Controls the block type used for the surface of this biome | 
+| top_material | *not set* | String | Controls the block type used for the surface of this biome. | 
 | top_material (Top Material) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
 
 ##### Foundation Material (Foundation Material)
 
@@ -404,6 +404,7 @@ Same structure as [Foundation Material (Foundation Material)](#foundation-materi
 | minecraft:capped | Minecraft:capped | |
 | minecraft:frozen_ocean | Minecraft:frozen ocean | |
 | minecraft:mesa | Minecraft:mesa | |
+| minecraft:noise_gradient | Minecraft:noise gradient | |
 | minecraft:overworld | Minecraft:overworld | |
 | minecraft:swamp | Minecraft:swamp | |
 | minecraft:the_end | Minecraft:the end | |
@@ -426,21 +427,21 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 | bryce_pillars | *not set* | Boolean true/false | Whether the mesa generates with pillars | 
 | clay_material | *not set* | String | Base clay block to use | 
 | clay_material (Clay Material) | *not set* | [Clay Material (Clay Material)](#clay-material-clay-material) item |  | 
-| foundation_material | *not set* | String | Controls the block type used deep underground in this biome | 
+| foundation_material | *not set* | String | Controls the block type used deep underground in this biome. | 
 | foundation_material (Foundation Material) | *not set* | [Foundation Material (Foundation Material)](#foundation-material-foundation-material) item |  | 
 | hard_clay_material | *not set* | String | Hardened clay block to use | 
 | hard_clay_material (Hard Clay Material) | *not set* | [Hard Clay Material (Hard Clay Material)](#hard-clay-material-hard-clay-material) item |  | 
 | has_forest | *not set* | Boolean true/false | Places coarse dirt and grass at high altitudes | 
-| mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome | 
+| mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome. | 
 | mid_material (Mid Material) | *not set* | [Mid Material (Mid Material)](#mid-material-mid-material) item |  | 
-| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur Value must be <= 127. | 
-| sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome | 
+| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur. Value must be <= 127. | 
+| sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome. | 
 | sea_floor_material (Sea Floor Material) | *not set* | [Sea Floor Material (Sea Floor Material)](#sea-floor-material-sea-floor-material) item |  | 
-| sea_material | *not set* | String | Controls the block type used for the bodies of water in this biome | 
+| sea_material | *not set* | String | Controls the block type used for the bodies of water in this biome. | 
 | sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
-| top_material | *not set* | String | Controls the block type used for the surface of this biome | 
+| top_material | *not set* | String | Controls the block type used for the surface of this biome. | 
 | top_material (Top Material) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
 
 ##### Clay Material (Clay Material)
 
@@ -482,7 +483,7 @@ Used to add decoration to the surface of swamp biomes such as water lilies.
 | sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome. | 
 | top_material (Top Material) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
 
 ##### max_puddle_depth_below_sea_level
 

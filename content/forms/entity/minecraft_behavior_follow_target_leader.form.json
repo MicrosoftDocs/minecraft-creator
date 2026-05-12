@@ -48,5 +48,131 @@
         "dataType": "int"
       }
     ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.follow_target_leader",
+    "title": "Entity Follow Target Leader Behavior",
+    "description": "Allows mob to move towards its target leader.",
+    "fields": [
+      {
+        "id": "always_look_for_leader",
+        "title": "Always Look For Leader",
+        "description": "If true, the mob will always search for a valid leader to follow if none is found or current leader is not valid anymore",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "follow_distance",
+        "title": "Follow Distance",
+        "description": "Defines the distance in blocks the mob will stay from its target while following.",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "leader_filters",
+        "description": "The filters to use when determining if a mob is a suitable leader or not.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "leader_filters",
+          "title": "Leader Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "leader_filters",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "search_cooldown",
+        "title": "Search Cooldown",
+        "description": "Number of ticks that must pass before a new search is initiated after a target is not found, lost, or becomes invalid.",
+        "dataType": "int",
+        "defaultValue": 20
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal",
+        "dataType": "float",
+        "defaultValue": 1
+      },
+      {
+        "id": "within_radius",
+        "title": "Within Radius",
+        "description": "Defines the maximum distance in blocks a mob can get from its target leader before giving up trying to follow it.",
+        "dataType": "float",
+        "defaultValue": 0
+      }
+    ]
   }
 }

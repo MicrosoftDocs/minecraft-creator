@@ -18,9 +18,9 @@ Represents a UI session for a given player
 - [navigateToPauseScreen](#navigatetopausescreen)
 - [navigateToSamples](#navigatetosamples)
 - [saveAndExit](#saveandexit)
+- [showUpdateInformation](#showupdateinformation)
 - [updateLogPanelVisibility](#updatelogpanelvisibility)
 - [updateUISettingsPanelVisibility](#updateuisettingspanelvisibility)
-- [updateWelcomePanelVisibility](#updatewelcomepanelvisibility)
 
 ### **activateTutorial**
 `
@@ -76,6 +76,15 @@ Saves levels & exits back to Editor main menu.
 
 **Returns** *void*
 
+### **showUpdateInformation**
+`
+showUpdateInformation(): void
+`
+
+Shows update information for the current version
+
+**Returns** *void*
+
 ### **updateLogPanelVisibility**
 `
 updateLogPanelVisibility(visibility: boolean): void
@@ -94,18 +103,6 @@ updateUISettingsPanelVisibility(visibility: boolean): void
 `
 
 Updates the visibility of the control demo
-
-#### **Parameters**
-- **visibility**: *boolean*
-
-**Returns** *void*
-
-### **updateWelcomePanelVisibility**
-`
-updateWelcomePanelVisibility(visibility: boolean): void
-`
-
-Updates the visibility of the welcome panel
 
 #### **Parameters**
 - **visibility**: *boolean*

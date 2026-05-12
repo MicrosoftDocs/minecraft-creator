@@ -28,7 +28,7 @@ The `@minecraft/server-ui` module contains types for expressing simple dialog-ba
     "version": "2.0.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.30-beta.25 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.30-beta.28 of Minecraft.
 
 ## Available Versions
 - `2.1.0-beta`
@@ -47,28 +47,29 @@ The following API versions are from a major version that is documented here: [*@
 - [DataDrivenScreenClosedReason](DataDrivenScreenClosedReason.md)
 - [FormCancelationReason](FormCancelationReason.md)
 - [FormRejectReason](FormRejectReason.md)
+- [FormVisibilityErrorReason](FormVisibilityErrorReason.md)
 - [TextFilteringError](TextFilteringError.md)
 
 ## Classes
 - [ActionFormData](ActionFormData.md)
 - [ActionFormResponse](ActionFormResponse.md)
 - [CustomForm](CustomForm.md)
-- [FormCloseError](FormCloseError.md)
 - [FormResponse](FormResponse.md)
 - [MessageBox](MessageBox.md)
 - [MessageFormData](MessageFormData.md)
 - [MessageFormResponse](MessageFormResponse.md)
 - [ModalFormData](ModalFormData.md)
 - [ModalFormResponse](ModalFormResponse.md)
-- [Observable](Observable.md)
-- [PlayerLeftError](PlayerLeftError.md)
-- [ServerShutdownError](ServerShutdownError.md)
+- [ObservableBoolean](ObservableBoolean.md)
+- [ObservableNumber](ObservableNumber.md)
+- [ObservableString](ObservableString.md)
+- [ObservableUIRawMessage](ObservableUIRawMessage.md)
 - [UIManager](UIManager.md)
 
 ## Interfaces
 - [ButtonOptions](ButtonOptions.md)
 - [DividerOptions](DividerOptions.md)
-- [DropdownItem](DropdownItem.md)
+- [DropdownItemData](DropdownItemData.md)
 - [DropdownOptions](DropdownOptions.md)
 - [MessageBoxResult](MessageBoxResult.md)
 - [ModalFormDataDropdownOptions](ModalFormDataDropdownOptions.md)
@@ -85,6 +86,11 @@ The following API versions are from a major version that is documented here: [*@
 
 ## Errors
 - [FormRejectError](FormRejectError.md)
+- [FormVisibilityError](FormVisibilityError.md)
+- [InvalidFormError](InvalidFormError.md)
+- [InvalidFormModificationError](InvalidFormModificationError.md)
+- [InvalidObservableError](InvalidObservableError.md)
+- [PlayerLeftError](PlayerLeftError.md)
 
 ## Objects
   

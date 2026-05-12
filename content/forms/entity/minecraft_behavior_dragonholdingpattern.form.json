@@ -51,5 +51,56 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.dragonholdingpattern",
+    "title": "Entity Dragonholdingpattern Behavior",
+    "description": "Allows the Dragon to fly around in a circle around the center podium. Can only be used by the Ender Dragon.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/ender_dragon.json": [
+            {
+              "path": "/minecraft:entity/component_groups/dragon_flying/minecraft:behavior.dragonholdingpattern/",
+              "content": 3
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/ender_dragon.json": [
+        {
+          "path": "/minecraft:entity/component_groups/dragon_flying/minecraft:behavior.dragonholdingpattern/",
+          "content": {
+            "priority": 3
+          }
+        }
+      ]
+    }
   }
 }

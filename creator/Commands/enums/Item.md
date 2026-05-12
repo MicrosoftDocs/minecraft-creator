@@ -4299,6 +4299,8 @@ Music Disc Pigstep
 - `music_disc_tears`
 - `minecraft:music_disc_lava_chicken`
 - `music_disc_lava_chicken`
+- `minecraft:music_disc_bounce`
+- `music_disc_bounce`
 - `minecraft:disc_fragment_5`
 Disc Fragment 5
 - `disc_fragment_5`
@@ -4874,6 +4876,8 @@ Glazed Terracotta Green
 Glazed Terracotta Black
 - `glazedterracotta.red`
 Glazed Terracotta Red
+- `record_bounce`
+- `record_relic`
 - `record_tears`
 - `record_cat`
 Record Cat
@@ -4902,7 +4906,6 @@ Record Pigstep
 Record Mall
 - `record_mellohi`
 Record Mellohi
-- `record_relic`
 - `record_stal`
 Record Stal
 - `record_strad`

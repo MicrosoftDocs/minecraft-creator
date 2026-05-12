@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.7.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.30-beta.25 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.30-beta.28 of Minecraft.
 
 ## Available Versions
 - `2.9.0-beta`
@@ -170,6 +170,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockContainerOpenedAfterEvent](BlockContainerOpenedAfterEvent.md)
 - [BlockContainerOpenedAfterEventSignal](BlockContainerOpenedAfterEventSignal.md)
 - [BlockCustomComponentInstance](BlockCustomComponentInstance.md)
+- [BlockDynamicPropertiesComponent](BlockDynamicPropertiesComponent.md)
 - [BlockEvent](BlockEvent.md)
 - [BlockExplodeAfterEvent](BlockExplodeAfterEvent.md)
 - [BlockExplodeAfterEventSignal](BlockExplodeAfterEventSignal.md)
@@ -333,6 +334,8 @@ The following API versions are from a major version that is documented here: [*@
 - [EntitySkinIdComponent](EntitySkinIdComponent.md)
 - [EntitySpawnAfterEvent](EntitySpawnAfterEvent.md)
 - [EntitySpawnAfterEventSignal](EntitySpawnAfterEventSignal.md)
+- [EntityStartSneakingAfterEvent](EntityStartSneakingAfterEvent.md)
+- [EntityStartSneakingAfterEventSignal](EntityStartSneakingAfterEventSignal.md)
 - [EntityStrengthComponent](EntityStrengthComponent.md)
 - [EntityTameableComponent](EntityTameableComponent.md)
 - [EntityTameMountComponent](EntityTameMountComponent.md)
@@ -474,6 +477,8 @@ The following API versions are from a major version that is documented here: [*@
 - [PlayerPlaceBlockBeforeEventSignal](PlayerPlaceBlockBeforeEventSignal.md)
 - [PlayerSpawnAfterEvent](PlayerSpawnAfterEvent.md)
 - [PlayerSpawnAfterEventSignal](PlayerSpawnAfterEventSignal.md)
+- [PlayerStartBreakingBlockAfterEvent](PlayerStartBreakingBlockAfterEvent.md)
+- [PlayerStartBreakingBlockAfterEventSignal](PlayerStartBreakingBlockAfterEventSignal.md)
 - [PlayerSwingStartAfterEvent](PlayerSwingStartAfterEvent.md)
 - [PlayerSwingStartAfterEventSignal](PlayerSwingStartAfterEventSignal.md)
 - [PlayerUseNameTagAfterEvent](PlayerUseNameTagAfterEvent.md)
@@ -609,6 +614,7 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityQueryScoreOptions](EntityQueryScoreOptions.md)
 - [EntityRaycastHit](EntityRaycastHit.md)
 - [EntityRaycastOptions](EntityRaycastOptions.md)
+- [EntitySneakingChangedEventOptions](EntitySneakingChangedEventOptions.md)
 - [EntityVisibilityRules](EntityVisibilityRules.md)
 - [EqualsComparison](EqualsComparison.md)
 - [ExplosionOptions](ExplosionOptions.md)
@@ -626,9 +632,9 @@ The following API versions are from a major version that is documented here: [*@
 - [LessThanOrEqualsComparison](LessThanOrEqualsComparison.md)
 - [MusicOptions](MusicOptions.md)
 - [NotEqualsComparison](NotEqualsComparison.md)
-- [PartyInfo](PartyInfo.md)
 - [PlayAnimationOptions](PlayAnimationOptions.md)
 - [PlayerAimAssistSettings](PlayerAimAssistSettings.md)
+- [PlayerBreakingBlockEventOptions](PlayerBreakingBlockEventOptions.md)
 - [PlayerSoundOptions](PlayerSoundOptions.md)
 - [PlayerSwingEventOptions](PlayerSwingEventOptions.md)
 - [PlayerVisibilityRules](PlayerVisibilityRules.md)

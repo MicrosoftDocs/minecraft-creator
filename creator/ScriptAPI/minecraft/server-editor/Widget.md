@@ -130,6 +130,7 @@ Type: *string*
 - [addGizmoComponent](#addgizmocomponent)
 - [addGridComponent](#addgridcomponent)
 - [addGuideComponent](#addguidecomponent)
+- [addRenderPlaneComponent](#addrenderplanecomponent)
 - [addRenderPrimitiveComponent](#addrenderprimitivecomponent)
 - [addSplineComponent](#addsplinecomponent)
 - [addTextComponent](#addtextcomponent)
@@ -228,6 +229,21 @@ addGuideComponent(componentName: string, options?: WidgetComponentGuideOptions):
 - **options**?: [*WidgetComponentGuideOptions*](WidgetComponentGuideOptions.md) = `null`
 
 **Returns** [*WidgetComponentGuide*](WidgetComponentGuide.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+
+### **addRenderPlaneComponent**
+`
+addRenderPlaneComponent(componentName: string, options?: WidgetComponentRenderPlaneOptions): WidgetComponentRenderPlane
+`
+
+#### **Parameters**
+- **componentName**: *string*
+- **options**?: [*WidgetComponentRenderPlaneOptions*](WidgetComponentRenderPlaneOptions.md) = `null`
+
+**Returns** [*WidgetComponentRenderPlane*](WidgetComponentRenderPlane.md)
   
 Notes:
 - This function can't be called in restricted-execution mode.

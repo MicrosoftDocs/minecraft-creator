@@ -13,9 +13,10 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-A customizable form that lets you put buttons, labels, toggles, dropdowns, sliders, and more into a form! Built on top of Observable, the form will update when the Observables' value changes.
+A customizable data driven (DDUI) form that lets you add buttons, labels, toggles, dropdowns, sliders, text fields, and more. The form layout is built by calling methods to add components before calling show(). Any Observable values bound to form components will automatically update the UI when their values change.
 
 ## Methods
+- [constructor](#constructor)
 - [button](#button)
 - [close](#close)
 - [closeButton](#closebutton)
@@ -29,176 +30,292 @@ A customizable form that lets you put buttons, labels, toggles, dropdowns, slide
 - [spacer](#spacer)
 - [textField](#textfield)
 - [toggle](#toggle)
-- [create](#create)
+
+### **constructor**
+`
+new CustomForm(player: minecraftserver.Player, title: ObservableString | ObservableUIRawMessage | string | UIRawMessage)
+`
+
+Creates a new CustomForm for the specified player with the given title.
+
+#### **Parameters**
+- **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
+  
+  The player to show this form to.
+- **title**: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+  
+  The title text to display at the top of the form.
+
+**Returns** [*CustomForm*](CustomForm.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
 ### **button**
 `
-button(label: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, onClick: () => void, options?: ButtonOptions): CustomForm
+button(label: ObservableString | ObservableUIRawMessage | string | UIRawMessage, onClick: () => void, options?: ButtonOptions): CustomForm
 `
 
-Inserts a button into the Custom form. onClick is called when the button is pressed.
+Adds a clickable button to the form layout. Returns the form instance to allow method chaining.
 
 #### **Parameters**
-- **label**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
+- **label**: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+  
+  The text label to display on the button.
 - **onClick**: () => *void*
-- **options**?: *ButtonOptions*
+  
+  A callback function that is invoked when the player clicks the button.
+- **options**?: [*ButtonOptions*](ButtonOptions.md) = `null`
+  
+  Optional configuration for the button, such as a tooltip, disabled state, or visibility.
 
-**Returns** *CustomForm*
+**Returns** [*CustomForm*](CustomForm.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md)
 
 ### **close**
 `
 close(): void
 `
 
-Tell the client to close the form. Throws an error if the form is not open.
-
-**Returns** *void*
+Closes the form if it is currently being shown to the player. Throws a FormVisibilityError if the form is not currently open.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*FormVisibilityError*](FormVisibilityError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
 ### **closeButton**
 `
 closeButton(): CustomForm
 `
 
-Adds a close "X" button to the form.
+Adds a close button to the form at the bottom and as an 'X' in the corner. Returns the form instance to allow method chaining.
 
-**Returns** *CustomForm*
+**Returns** [*CustomForm*](CustomForm.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md)
 
 ### **divider**
 `
 divider(options?: DividerOptions): CustomForm
 `
 
-Inserts a divider (i.e. a line) into the Custom form.
+Adds a horizontal divider line to the form layout. Useful for visually separating sections of the form. Returns the form instance to allow method chaining.
 
 #### **Parameters**
-- **options**?: *DividerOptions*
+- **options**?: [*DividerOptions*](DividerOptions.md) = `null`
+  
+  Optional configuration for the divider, such as visibility.
 
-**Returns** *CustomForm*
+**Returns** [*CustomForm*](CustomForm.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md)
 
 ### **dropdown**
 `
-dropdown(label: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, value: Observable<number>, items: DropdownItem[], options?: DropdownOptions): CustomForm
+dropdown(label: ObservableString | ObservableUIRawMessage | string | UIRawMessage, value: ObservableNumber, items: DropdownItemData[], options?: DropdownOptions): CustomForm
 `
 
-Inserts a dropdown into the Custom form with the provided items. The value is based on the items value that selected.
+Adds a dropdown selection control to the form layout. The current selection is tracked via an ObservableNumber and will update when the player changes the selection. Returns the form instance to allow method chaining.
 
 #### **Parameters**
-- **label**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
-- **value**: *Observable<number>*
-- **items**: *DropdownItem*[]
-- **options**?: *DropdownOptions*
+- **label**: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+  
+  The text label displayed around the dropdown.
+- **value**: [*ObservableNumber*](ObservableNumber.md)
+  
+  An ObservableNumber that holds the index of the currently selected item.
+- **items**: [*DropdownItemData*](DropdownItemData.md)[]
+  
+  The list of items to display in the dropdown.
+- **options**?: [*DropdownOptions*](DropdownOptions.md) = `null`
+  
+  Optional configuration for the dropdown, such as a description, disabled state, or visibility.
 
-**Returns** *CustomForm*
+**Returns** [*CustomForm*](CustomForm.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md), [*InvalidObservableError*](InvalidObservableError.md)
 
 ### **header**
 `
-header(text: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, options?: TextOptions): CustomForm
+header(text: ObservableString | ObservableUIRawMessage | string | UIRawMessage, options?: TextOptions): CustomForm
 `
 
-Inserts a header (i.e. large sized text) into the Custom form.
+Adds a header text component to the form layout. Headers are displayed in a larger or bolder style than regular labels, and are suitable for section titles. Returns the form instance to allow method chaining.
 
 #### **Parameters**
-- **text**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
-- **options**?: *TextOptions*
+- **text**: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+  
+  The header text to display.
+- **options**?: [*TextOptions*](TextOptions.md) = `null`
+  
+  Optional configuration for the header, such as visibility.
 
-**Returns** *CustomForm*
+**Returns** [*CustomForm*](CustomForm.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md)
 
 ### **isShowing**
 `
 isShowing(): boolean
 `
 
-Returns true if the form is currently being shown to the player.
+Returns true if the form is currently being shown to the player, false otherwise.
 
 **Returns** *boolean*
+  
+Notes:
+- This function can't be called in restricted-execution mode.
 
 ### **label**
 `
-label(text: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, options?: TextOptions): CustomForm
+label(text: ObservableString | ObservableUIRawMessage | string | UIRawMessage, options?: TextOptions): CustomForm
 `
 
-Inserts a label (i.e. medium sized text) into the Custom form.
+Adds a read-only text label to the form layout. Returns the form instance to allow method chaining.
 
 #### **Parameters**
-- **text**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
-- **options**?: *TextOptions*
+- **text**: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+  
+  The text to display in the label.
+- **options**?: [*TextOptions*](TextOptions.md) = `null`
+  
+  Optional configuration for the label, such as visibility.
 
-**Returns** *CustomForm*
+**Returns** [*CustomForm*](CustomForm.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md)
 
 ### **show**
 `
 show(): Promise<DataDrivenScreenClosedReason>
 `
 
-Shows the form to the player. Will return false if the client was busy (i.e. in another menu or this one is open). Will throw if the user disconnects.
+Shows the form to the player. Returns a promise that resolves with a DataDrivenScreenClosedReason indicating how the form was closed.
 
-**Returns** *Promise<DataDrivenScreenClosedReason>*
+**Returns** Promise&lt;[*DataDrivenScreenClosedReason*](DataDrivenScreenClosedReason.md)&gt;
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*FormVisibilityError*](FormVisibilityError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
 ### **slider**
 `
-slider(label: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, value: Observable<number>, minValue: Observable<number> | number, maxValue: Observable<number> | number, options?: SliderOptions): CustomForm
+slider(label: ObservableString | ObservableUIRawMessage | string | UIRawMessage, value: ObservableNumber, min: number | ObservableNumber, max: number | ObservableNumber, options?: SliderOptions): CustomForm
 `
 
-Creates a slider that lets players pick a number between minValue and maxValue. value must be client writable.
+Adds a numeric slider control to the form layout. The current value is tracked via an ObservableNumber and will update as the player moves the slider. Returns the form instance to allow method chaining.
 
 #### **Parameters**
-- **label**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
-- **value**: *Observable<number>*
-- **minValue**: *Observable<number>* | *number*
-- **maxValue**: *Observable<number>* | *number*
-- **options**?: *SliderOptions*
+- **label**: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+  
+  The text label displayed around the slider.
+- **value**: [*ObservableNumber*](ObservableNumber.md)
+  
+  An ObservableNumber that holds the current value of the slider.
+- **min**: *number* | [*ObservableNumber*](ObservableNumber.md)
+  
+  The minimum value of the slider range.
+- **max**: *number* | [*ObservableNumber*](ObservableNumber.md)
+  
+  The maximum value of the slider range.
+- **options**?: [*SliderOptions*](SliderOptions.md) = `null`
+  
+  Optional configuration for the slider, such as step size, a description, disabled state, or visibility.
 
-**Returns** *CustomForm*
+**Returns** [*CustomForm*](CustomForm.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md), [*InvalidObservableError*](InvalidObservableError.md)
 
 ### **spacer**
 `
 spacer(options?: SpacingOptions): CustomForm
 `
 
-Inserts a space into the Custom form.
+Adds a vertical spacer component to the form layout. Useful for adding empty space between form components. Returns the form instance to allow method chaining.
 
 #### **Parameters**
-- **options**?: *SpacingOptions*
+- **options**?: [*SpacingOptions*](SpacingOptions.md) = `null`
+  
+  Optional configuration for the spacer, such as visibility.
 
-**Returns** *CustomForm*
+**Returns** [*CustomForm*](CustomForm.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md)
 
 ### **textField**
 `
-textField(label: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, text: Observable<string>, options?: TextFieldOptions): CustomForm
+textField(label: ObservableString | ObservableUIRawMessage | string | UIRawMessage, text: ObservableString, options?: TextFieldOptions): CustomForm
 `
 
-Inserts a text field into the Custom for that players can enter text into.
+Adds a text input field to the form layout. The current text value is tracked via an ObservableString and will update as the player types. Returns the form instance to allow method chaining.
 
 #### **Parameters**
-- **label**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
-- **text**: *Observable<string>*
-- **options**?: *TextFieldOptions*
+- **label**: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+  
+  The text label displayed around the text field.
+- **text**: [*ObservableString*](ObservableString.md)
+  
+  An ObservableString that holds the current text value of the input field.
+- **options**?: [*TextFieldOptions*](TextFieldOptions.md) = `null`
+  
+  Optional configuration for the text field, such as a description, disabled state, or visibility.
 
-**Returns** *CustomForm*
+**Returns** [*CustomForm*](CustomForm.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md), [*InvalidObservableError*](InvalidObservableError.md)
 
 ### **toggle**
 `
-toggle(label: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage, toggled: Observable<boolean>, options?: ToggleOptions): CustomForm
+toggle(label: ObservableString | ObservableUIRawMessage | string | UIRawMessage, toggled: ObservableBoolean, options?: ToggleOptions): CustomForm
 `
 
-Inserts an on/off toggle that players can interact with into the Custom form.
+Adds a toggle (on/off switch) control to the form layout. The current state is tracked via an ObservableBoolean and will update when the player toggles it. Returns the form instance to allow method chaining.
 
 #### **Parameters**
-- **label**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
-- **toggled**: *Observable<boolean>*
-- **options**?: *ToggleOptions*
+- **label**: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+  
+  The text label displayed next to the toggle.
+- **toggled**: [*ObservableBoolean*](ObservableBoolean.md)
+  
+  An ObservableBoolean that holds the current on/off state of the toggle.
+- **options**?: [*ToggleOptions*](ToggleOptions.md) = `null`
+  
+  Optional configuration for the toggle, such as a description, disabled state, or visibility.
 
-**Returns** *CustomForm*
-
-### **create**
-`
-static create(player: minecraftserver.Player, title: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage): CustomForm
-`
-
-Creates a Custom form to show to the player. Use this instead of a constructor.
-
-#### **Parameters**
-- **player**: *minecraftserver.Player*
-- **title**: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
-
-**Returns** *CustomForm*
+**Returns** [*CustomForm*](CustomForm.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md), [*InvalidObservableError*](InvalidObservableError.md)

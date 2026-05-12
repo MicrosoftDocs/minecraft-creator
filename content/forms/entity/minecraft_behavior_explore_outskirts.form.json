@@ -43,14 +43,14 @@
       {
         "id": "explore_dist",
         "title": "Explore Dist",
-        "description": "Total distance in blocks the the entity will explore beyond the village bounds when choosing its travel point.",
+        "description": "Total distance in blocks the entity will explore beyond the village bounds when choosing its travel point.",
         "defaultValue": 5,
         "dataType": "float"
       },
       {
         "id": "max_travel_time",
         "title": "Max Travel Time",
-        "description": "This is the maximum amount of time an entity will attempt to reach it's travel point on the outskirts of the village before the goal exits.",
+        "description": "This is the maximum amount of time an entity will attempt to reach its travel point on the outskirts of the village before the goal exits.",
         "defaultValue": 60,
         "dataType": "float"
       },

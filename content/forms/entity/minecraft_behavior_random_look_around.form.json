@@ -142,5 +142,138 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.random_look_around",
+    "title": "Entity Random Look Around Behavior",
+    "description": "Allows the mob to randomly look around.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "look_time",
+        "title": "Look Time",
+        "description": "The range of time in seconds the mob will stay looking in a random direction before looking elsewhere",
+        "dataType": "object",
+        "defaultValue": {
+          "max": 40,
+          "min": 20
+        },
+        "subFormId": "item_components/intrange"
+      },
+      {
+        "id": "max_angle_of_view_horizontal",
+        "title": "Max Angle Of View Horizontal",
+        "description": "The rightmost angle a mob can look at on the horizontal plane with respect to its initial facing direction.",
+        "dataType": "float",
+        "defaultValue": 180
+      },
+      {
+        "id": "min_angle_of_view_horizontal",
+        "title": "Min Angle Of View Horizontal",
+        "description": "The leftmost angle a mob can look at on the horizontal plane with respect to its initial facing direction.",
+        "dataType": "float",
+        "defaultValue": -180
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
+              "content": 8
+            }
+          ],
+          "/vanilla/behavior_pack/entities/blaze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
+              "content": 8
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cave_spider.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
+              "content": 7
+            }
+          ]
+        }
+      },
+      {
+        "id": "probability",
+        "title": "Probability",
+        "description": "The probability of randomly looking around.",
+        "dataType": "float",
+        "defaultValue": 0.019999999552965164
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/allay.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
+          "content": {
+            "priority": 8
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/blaze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
+          "content": {
+            "priority": 5
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
+          "content": {
+            "priority": 8
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/breeze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
+          "content": {
+            "priority": 8
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cave_spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
+          "content": {
+            "priority": 7
+          }
+        }
+      ]
+    }
   }
 }

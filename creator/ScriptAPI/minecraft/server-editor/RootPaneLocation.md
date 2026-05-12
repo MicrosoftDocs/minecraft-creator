@@ -16,3 +16,5 @@ Determines the location root pane will be displayed in
 `Drawer = 0`
 ### **Viewport**
 `Viewport = 1`
+### **Bottom**
+`Bottom = 2`

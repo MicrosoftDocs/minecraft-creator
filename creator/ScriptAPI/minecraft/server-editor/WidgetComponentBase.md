@@ -16,6 +16,7 @@ description: Contents of the @minecraft/server-editor.WidgetComponentBase class.
 - [*WidgetComponentGizmo*](WidgetComponentGizmo.md)
 - [*WidgetComponentGrid*](WidgetComponentGrid.md)
 - [*WidgetComponentGuide*](WidgetComponentGuide.md)
+- [*WidgetComponentRenderPlane*](WidgetComponentRenderPlane.md)
 - [*WidgetComponentRenderPrimitive*](WidgetComponentRenderPrimitive.md)
 - [*WidgetComponentSpline*](WidgetComponentSpline.md)
 - [*WidgetComponentText*](WidgetComponentText.md)
