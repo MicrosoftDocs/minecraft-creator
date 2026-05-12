@@ -16,4 +16,16 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Extends
 - *Error*
 
-Thrown when a DDUI screen is rejected because the player left before responding.
+Thrown when a form operation fails because the target player has left the game.
+
+## Properties
+
+### **formId**
+`read-only formId: string;`
+
+The identifier of the form that was being shown when the player left the game.
+
+Type: *string*
+
+Notes:
+  - This property can be read in early-execution mode.

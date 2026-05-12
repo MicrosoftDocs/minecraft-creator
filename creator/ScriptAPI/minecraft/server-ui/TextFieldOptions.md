@@ -13,27 +13,27 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-The options for including a textfield in {@link CustomForm}.
+Options for configuring a text field component.
 
 ## Properties
 
 ### **description**
-`description?: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage;`
+`description?: ObservableString | ObservableUIRawMessage | string | UIRawMessage;`
 
-The description for this text field, shown in the UI.
+Descriptive text shown around the text field label to provide additional context.
 
-Type: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
+Type: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
 
 ### **disabled**
-`disabled?: Observable<boolean> | boolean;`
+`disabled?: boolean | ObservableBoolean;`
 
-Whether or not this text field is disabled.
+When true or bound to a true ObservableBoolean, the text field is shown but cannot be edited.
 
-Type: *Observable<boolean>* | *boolean*
+Type: *boolean* | [*ObservableBoolean*](ObservableBoolean.md)
 
 ### **visible**
-`visible?: Observable<boolean> | boolean;`
+`visible?: boolean | ObservableBoolean;`
 
-Whether or not this text field is visible.
+When false or bound to a false ObservableBoolean, the text field is hidden.
 
-Type: *Observable<boolean>* | *boolean*
+Type: *boolean* | [*ObservableBoolean*](ObservableBoolean.md)

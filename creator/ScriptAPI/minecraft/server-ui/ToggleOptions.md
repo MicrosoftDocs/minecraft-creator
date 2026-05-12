@@ -13,27 +13,27 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-The options for including a toggle in {@link CustomForm}.
+Options for configuring a toggle component.
 
 ## Properties
 
 ### **description**
-`description?: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage;`
+`description?: ObservableString | ObservableUIRawMessage | string | UIRawMessage;`
 
-The description for this toggle, shown in the UI.
+Descriptive text shown around the toggle to provide additional context.
 
-Type: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
+Type: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
 
 ### **disabled**
-`disabled?: Observable<boolean> | boolean;`
+`disabled?: boolean | ObservableBoolean;`
 
-Whether or not this toggle is disabled.
+When true or bound to a true ObservableBoolean, the toggle is shown but cannot be interacted with.
 
-Type: *Observable<boolean>* | *boolean*
+Type: *boolean* | [*ObservableBoolean*](ObservableBoolean.md)
 
 ### **visible**
-`visible?: Observable<boolean> | boolean;`
+`visible?: boolean | ObservableBoolean;`
 
-Whether or not this toggle is visible.
+When false or bound to a false ObservableBoolean, the toggle is hidden.
 
-Type: *Observable<boolean>* | *boolean*
+Type: *boolean* | [*ObservableBoolean*](ObservableBoolean.md)

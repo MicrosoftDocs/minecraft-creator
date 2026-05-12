@@ -13,6 +13,13 @@ Properties required to create an Action Bar item.
 
 ## Properties
 
+### **contentBadgeId**
+`contentBadgeId?: string;`
+
+Optional content badge identifier associated with the item.
+
+Type: *string*
+
 ### **enabled**
 `enabled?: boolean;`
 

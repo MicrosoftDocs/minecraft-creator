@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.30-beta.25 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.30-beta.28 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -78,6 +78,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.30-
 - [ModalDialogType](ModalDialogType.md)
 - [MouseActionCategory](MouseActionCategory.md)
 - [MouseActionType](MouseActionType.md)
+- [MouseCursorIconType](MouseCursorIconType.md)
 - [MouseInputType](MouseInputType.md)
 - [NumberPropertyItemVariant](NumberPropertyItemVariant.md)
 - [PaintCompletionState](PaintCompletionState.md)
@@ -89,6 +90,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.30-
 - [ProgressIndicatorPropertyItemVariant](ProgressIndicatorPropertyItemVariant.md)
 - [ProjectExportType](ProjectExportType.md)
 - [PropertyItemType](PropertyItemType.md)
+- [RenderPlaneGridResolution](RenderPlaneGridResolution.md)
 - [RootPaneLocation](RootPaneLocation.md)
 - [SelectionVolumeEventType](SelectionVolumeEventType.md)
 - [SpeedSettingsProperty](SpeedSettingsProperty.md)
@@ -208,6 +210,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.30-
 - [ExtensionContext](ExtensionContext.md)
 - [ExtensionContextAfterEvents](ExtensionContextAfterEvents.md)
 - [GraphicsSettings](GraphicsSettings.md)
+- [GuidePlaneManager](GuidePlaneManager.md)
 - [IBlockPaletteItem](IBlockPaletteItem.md)
 - [Logger](Logger.md)
 - [MinecraftEditor](MinecraftEditor.md)
@@ -252,6 +255,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.30-
 - [WidgetComponentGizmoStateChangeEventParameters](WidgetComponentGizmoStateChangeEventParameters.md)
 - [WidgetComponentGrid](WidgetComponentGrid.md)
 - [WidgetComponentGuide](WidgetComponentGuide.md)
+- [WidgetComponentRenderPlane](WidgetComponentRenderPlane.md)
 - [WidgetComponentRenderPrimitive](WidgetComponentRenderPrimitive.md)
 - [WidgetComponentRenderPrimitiveTypeAxialSphere](WidgetComponentRenderPrimitiveTypeAxialSphere.md)
 - [WidgetComponentRenderPrimitiveTypeBase](WidgetComponentRenderPrimitiveTypeBase.md)
@@ -289,6 +293,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.30-
 - [EventSink](EventSink.md)
 - [ExtensionOptionalParameters](ExtensionOptionalParameters.md)
 - [GameOptions](GameOptions.md)
+- [GuidePlane](GuidePlane.md)
 - [IActionBar](IActionBar.md)
 - [IActionBarItem](IActionBarItem.md)
 - [IActionBarItemCreationParams](IActionBarItemCreationParams.md)
@@ -320,6 +325,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.30-
 - [IComboBoxPropertyItem](IComboBoxPropertyItem.md)
 - [IComboBoxPropertyItemEntry](IComboBoxPropertyItemEntry.md)
 - [IComboBoxPropertyItemOptions](IComboBoxPropertyItemOptions.md)
+- [IContentBadgeManager](IContentBadgeManager.md)
 - [IDataTablePropertyItem](IDataTablePropertyItem.md)
 - [IDataTablePropertyItemEntry](IDataTablePropertyItemEntry.md)
 - [IDataTablePropertyItemOptions](IDataTablePropertyItemOptions.md)
@@ -331,6 +337,8 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.30-
 - [IGlobalInputManager](IGlobalInputManager.md)
 - [IImagePropertyItem](IImagePropertyItem.md)
 - [IImagePropertyItemOptions](IImagePropertyItemOptions.md)
+- [IIntroductionPane](IIntroductionPane.md)
+- [IIntroductionPaneOptions](IIntroductionPaneOptions.md)
 - [ILinkPropertyItem](ILinkPropertyItem.md)
 - [ILinkPropertyItemOptions](ILinkPropertyItemOptions.md)
 - [IListPaneBoolEntry](IListPaneBoolEntry.md)
@@ -360,6 +368,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.30-
 - [IModalOverlayPaneOptions](IModalOverlayPaneOptions.md)
 - [IModalTool](IModalTool.md)
 - [IModalToolContainer](IModalToolContainer.md)
+- [IntroductionPaneTabProps](IntroductionPaneTabProps.md)
 - [INumberPropertyItem](INumberPropertyItem.md)
 - [INumberPropertyItemOptions](INumberPropertyItemOptions.md)
 - [INumberTimelinePropertyItem](INumberTimelinePropertyItem.md)
@@ -367,6 +376,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.30-
 - [INumberTimelinePropertyItemOptions](INumberTimelinePropertyItemOptions.md)
 - [IObservable](IObservable.md)
 - [IPane](IPane.md)
+- [IPaneManager](IPaneManager.md)
 - [IPlayerLogger](IPlayerLogger.md)
 - [IPlayerLoggerProperties](IPlayerLoggerProperties.md)
 - [IProgressIndicatorPropertyItem](IProgressIndicatorPropertyItem.md)
@@ -421,6 +431,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.30-
 - [WidgetComponentGizmoOptions](WidgetComponentGizmoOptions.md)
 - [WidgetComponentGridOptions](WidgetComponentGridOptions.md)
 - [WidgetComponentGuideOptions](WidgetComponentGuideOptions.md)
+- [WidgetComponentRenderPlaneOptions](WidgetComponentRenderPlaneOptions.md)
 - [WidgetComponentRenderPrimitiveOptions](WidgetComponentRenderPrimitiveOptions.md)
 - [WidgetComponentSplineOptions](WidgetComponentSplineOptions.md)
 - [WidgetComponentTextOptions](WidgetComponentTextOptions.md)

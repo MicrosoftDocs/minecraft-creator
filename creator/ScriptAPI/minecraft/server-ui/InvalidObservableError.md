@@ -4,11 +4,11 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server-ui.ServerShutdownError Class
-description: Contents of the @minecraft/server-ui.ServerShutdownError class.
+title: minecraft/server-ui.InvalidObservableError Class
+description: Contents of the @minecraft/server-ui.InvalidObservableError class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# ServerShutdownError Class
+# InvalidObservableError Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -16,4 +16,4 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Extends
 - *Error*
 
-Thrown when a DDUI screen is rejected because the server is shutting down.
+Thrown when an observable value is expected to be writable, but it is not.

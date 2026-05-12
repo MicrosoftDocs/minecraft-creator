@@ -211,8 +211,6 @@ Totem of Undying
 - `minecraft:white_stained_glass_pane`
 - `minecraft:black_bundle`
 - `minecraft:cinnabar_slab`
-- `minecraft:item.mangrove_door`
-Mangrove Door
 - `minecraft:endermite_spawn_egg`
 Endermite Spawn Egg
 - `minecraft:pink_bundle`
@@ -433,8 +431,6 @@ Prismarine Bricks Stairs
 Cooked Rabbit
 - `minecraft:glow_squid_spawn_egg`
 Glow Squid Spawn Egg
-- `minecraft:item.iron_door`
-Item Iron Door
 - `minecraft:cod`
 Cod
 - `minecraft:beef`
@@ -514,6 +510,7 @@ Chest
 [Education Edition] Helium (He)
 - `minecraft:pumpkin_seeds`
 Pumpkin Seeds
+- `minecraft:music_disc_bounce`
 - `minecraft:melon_seeds`
 Melon Seeds
 - `minecraft:acacia_shelf`
@@ -1293,8 +1290,6 @@ Double Cut Copper Slab
 - `minecraft:element_constructor`
 - `minecraft:phantom_spawn_egg`
 Phantom Spawn Egg
-- `minecraft:item.acacia_door`
-Acacia Door
 - `minecraft:oxidized_cut_copper_slab`
 Oxidized Cut Copper Slab
 - `minecraft:cat_spawn_egg`
@@ -2224,8 +2219,6 @@ Deepslate Redstone Ore
 Reinforced Deepslate
 - `minecraft:black_stained_glass`
 - `minecraft:orange_stained_glass_pane`
-- `minecraft:item.dark_oak_door`
-Item Dark Oak Door
 - `minecraft:light_block`
 Light Block
 - `minecraft:magenta_stained_glass_pane`
@@ -2572,8 +2565,6 @@ Polished Basalt
 Nether Gold Ore
 - `minecraft:waxed_weathered_copper_chain`
 - `minecraft:waxed_weathered_copper_chest`
-- `minecraft:item.warped_door`
-Warped Door
 - `minecraft:mangrove_trapdoor`
 Mangrove Trapdoor
 - `minecraft:piston_arm_collision`
@@ -2773,8 +2764,6 @@ Stone Stairs
 Warped Stairs
 - `minecraft:weathered_copper_grate`
 - `minecraft:copper_chest`
-- `minecraft:item.wooden_door`
-Wooden Door
 - `minecraft:wooden_button`
 Wooden Button
 - `minecraft:pitcher_plant`
@@ -2789,8 +2778,6 @@ Waxed Exposed Cut Copper
 - `minecraft:lava`
 Lava
 - `minecraft:waxed_weathered_copper_lantern`
-- `minecraft:item.crimson_door`
-Crimson Door
 - `minecraft:mangrove_pressure_plate`
 Mangrove Pressure Plate
 - `minecraft:small_dripleaf_block`
@@ -2907,10 +2894,6 @@ Crimson Fence Gate
 - `minecraft:deadbush`
 Deadbush
 - `minecraft:waxed_weathered_copper_golem_statue`
-- `minecraft:item.wheat`
-Wheat
-- `minecraft:item.spruce_door`
-Spruce Door
 - `minecraft:suspicious_gravel`
 - `minecraft:brick_block`
 Brick Block
@@ -3028,8 +3011,6 @@ Camera
 - `minecraft:vault`
 - `minecraft:beehive`
 Beehive
-- `minecraft:item.jungle_door`
-Jungle Door
 - `minecraft:glass`
 Glass
 - `minecraft:wither_rose`
@@ -3128,8 +3109,6 @@ Mangrove Button
 - `minecraft:waxed_oxidized_lightning_rod`
 - `minecraft:allow`
 [Education Edition] Allow
-- `minecraft:item.birch_door`
-Birch Door
 - `minecraft:cherry_wood`
 - `minecraft:polished_cinnabar`
 - `minecraft:bamboo_standing_sign`
@@ -3141,6 +3120,8 @@ Prismarine Stairs
 Nether Brick
 - `minecraft:deepslate_iron_ore`
 Deepslate Iron Ore
+- `minecraft:item.wheat`
+Wheat
 - `minecraft:waxed_cut_copper`
 Waxed Cut Copper
 - `minecraft:iron_chain`

@@ -67,6 +67,11 @@ Contains information about the registered extension instance.
 
 Type: [*Extension*](Extension.md)
 
+### **guidePlaneManager**
+`read-only guidePlaneManager: GuidePlaneManager;`
+
+Type: [*GuidePlaneManager*](GuidePlaneManager.md)
+
 ### **minimapManager**
 `read-only minimapManager: MinimapManager;`
 

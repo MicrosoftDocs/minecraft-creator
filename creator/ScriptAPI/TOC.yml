@@ -20,10 +20,18 @@
       href: minecraft/debug-utilities/DebugBox.md
     - name: DebugCircle
       href: minecraft/debug-utilities/DebugCircle.md
+    - name: DebugCone
+      href: minecraft/debug-utilities/DebugCone.md
+    - name: DebugCylinder
+      href: minecraft/debug-utilities/DebugCylinder.md
     - name: DebugDrawer
       href: minecraft/debug-utilities/DebugDrawer.md
+    - name: DebugEllipsoid
+      href: minecraft/debug-utilities/DebugEllipsoid.md
     - name: DebugLine
       href: minecraft/debug-utilities/DebugLine.md
+    - name: DebugPyramid
+      href: minecraft/debug-utilities/DebugPyramid.md
     - name: DebugShape
       href: minecraft/debug-utilities/DebugShape.md
     - name: DebugSphere
@@ -252,6 +260,8 @@
       href: minecraft/server/BlockContainerOpenedAfterEventSignal.md
     - name: BlockCustomComponentInstance
       href: minecraft/server/BlockCustomComponentInstance.md
+    - name: BlockDynamicPropertiesComponent
+      href: minecraft/server/BlockDynamicPropertiesComponent.md
     - name: BlockEvent
       href: minecraft/server/BlockEvent.md
     - name: BlockExplodeAfterEvent
@@ -578,6 +588,10 @@
       href: minecraft/server/EntitySpawnAfterEvent.md
     - name: EntitySpawnAfterEventSignal
       href: minecraft/server/EntitySpawnAfterEventSignal.md
+    - name: EntityStartSneakingAfterEvent
+      href: minecraft/server/EntityStartSneakingAfterEvent.md
+    - name: EntityStartSneakingAfterEventSignal
+      href: minecraft/server/EntityStartSneakingAfterEventSignal.md
     - name: EntityStrengthComponent
       href: minecraft/server/EntityStrengthComponent.md
     - name: EntityTameableComponent
@@ -860,6 +874,10 @@
       href: minecraft/server/PlayerSpawnAfterEvent.md
     - name: PlayerSpawnAfterEventSignal
       href: minecraft/server/PlayerSpawnAfterEventSignal.md
+    - name: PlayerStartBreakingBlockAfterEvent
+      href: minecraft/server/PlayerStartBreakingBlockAfterEvent.md
+    - name: PlayerStartBreakingBlockAfterEventSignal
+      href: minecraft/server/PlayerStartBreakingBlockAfterEventSignal.md
     - name: PlayerSwingStartAfterEvent
       href: minecraft/server/PlayerSwingStartAfterEvent.md
     - name: PlayerSwingStartAfterEventSignal
@@ -1126,6 +1144,8 @@
       href: minecraft/server/EntityRaycastHit.md
     - name: EntityRaycastOptions
       href: minecraft/server/EntityRaycastOptions.md
+    - name: EntitySneakingChangedEventOptions
+      href: minecraft/server/EntitySneakingChangedEventOptions.md
     - name: EntityVisibilityRules
       href: minecraft/server/EntityVisibilityRules.md
     - name: EqualsComparison
@@ -1160,12 +1180,12 @@
       href: minecraft/server/MusicOptions.md
     - name: NotEqualsComparison
       href: minecraft/server/NotEqualsComparison.md
-    - name: PartyInfo
-      href: minecraft/server/PartyInfo.md
     - name: PlayAnimationOptions
       href: minecraft/server/PlayAnimationOptions.md
     - name: PlayerAimAssistSettings
       href: minecraft/server/PlayerAimAssistSettings.md
+    - name: PlayerBreakingBlockEventOptions
+      href: minecraft/server/PlayerBreakingBlockEventOptions.md
     - name: PlayerSoundOptions
       href: minecraft/server/PlayerSoundOptions.md
     - name: PlayerSwingEventOptions
@@ -1376,6 +1396,8 @@
       href: minecraft/server-editor/MouseActionCategory.md
     - name: MouseActionType
       href: minecraft/server-editor/MouseActionType.md
+    - name: MouseCursorIconType
+      href: minecraft/server-editor/MouseCursorIconType.md
     - name: MouseInputType
       href: minecraft/server-editor/MouseInputType.md
     - name: NumberPropertyItemVariant
@@ -1398,6 +1420,8 @@
       href: minecraft/server-editor/ProjectExportType.md
     - name: PropertyItemType
       href: minecraft/server-editor/PropertyItemType.md
+    - name: RenderPlaneGridResolution
+      href: minecraft/server-editor/RenderPlaneGridResolution.md
     - name: RootPaneLocation
       href: minecraft/server-editor/RootPaneLocation.md
     - name: SelectionVolumeEventType
@@ -1496,6 +1520,8 @@
       href: minecraft/server-editor/ExtensionContextAfterEvents.md
     - name: GraphicsSettings
       href: minecraft/server-editor/GraphicsSettings.md
+    - name: GuidePlaneManager
+      href: minecraft/server-editor/GuidePlaneManager.md
     - name: IBlockPaletteItem
       href: minecraft/server-editor/IBlockPaletteItem.md
     - name: Logger
@@ -1584,6 +1610,8 @@
       href: minecraft/server-editor/WidgetComponentGrid.md
     - name: WidgetComponentGuide
       href: minecraft/server-editor/WidgetComponentGuide.md
+    - name: WidgetComponentRenderPlane
+      href: minecraft/server-editor/WidgetComponentRenderPlane.md
     - name: WidgetComponentRenderPrimitive
       href: minecraft/server-editor/WidgetComponentRenderPrimitive.md
     - name: WidgetComponentRenderPrimitiveTypeAxialSphere
@@ -1654,6 +1682,8 @@
       href: minecraft/server-editor/ExtensionOptionalParameters.md
     - name: GameOptions
       href: minecraft/server-editor/GameOptions.md
+    - name: GuidePlane
+      href: minecraft/server-editor/GuidePlane.md
     - name: IActionBar
       href: minecraft/server-editor/IActionBar.md
     - name: IActionBarItem
@@ -1716,6 +1746,8 @@
       href: minecraft/server-editor/IComboBoxPropertyItemEntry.md
     - name: IComboBoxPropertyItemOptions
       href: minecraft/server-editor/IComboBoxPropertyItemOptions.md
+    - name: IContentBadgeManager
+      href: minecraft/server-editor/IContentBadgeManager.md
     - name: IDataTablePropertyItem
       href: minecraft/server-editor/IDataTablePropertyItem.md
     - name: IDataTablePropertyItemEntry
@@ -1738,6 +1770,10 @@
       href: minecraft/server-editor/IImagePropertyItem.md
     - name: IImagePropertyItemOptions
       href: minecraft/server-editor/IImagePropertyItemOptions.md
+    - name: IIntroductionPane
+      href: minecraft/server-editor/IIntroductionPane.md
+    - name: IIntroductionPaneOptions
+      href: minecraft/server-editor/IIntroductionPaneOptions.md
     - name: ILinkPropertyItem
       href: minecraft/server-editor/ILinkPropertyItem.md
     - name: ILinkPropertyItemOptions
@@ -1796,6 +1832,8 @@
       href: minecraft/server-editor/IModalTool.md
     - name: IModalToolContainer
       href: minecraft/server-editor/IModalToolContainer.md
+    - name: IntroductionPaneTabProps
+      href: minecraft/server-editor/IntroductionPaneTabProps.md
     - name: INumberPropertyItem
       href: minecraft/server-editor/INumberPropertyItem.md
     - name: INumberPropertyItemOptions
@@ -1810,6 +1848,8 @@
       href: minecraft/server-editor/IObservable.md
     - name: IPane
       href: minecraft/server-editor/IPane.md
+    - name: IPaneManager
+      href: minecraft/server-editor/IPaneManager.md
     - name: IPlayerLogger
       href: minecraft/server-editor/IPlayerLogger.md
     - name: IPlayerLoggerProperties
@@ -1918,6 +1958,8 @@
       href: minecraft/server-editor/WidgetComponentGridOptions.md
     - name: WidgetComponentGuideOptions
       href: minecraft/server-editor/WidgetComponentGuideOptions.md
+    - name: WidgetComponentRenderPlaneOptions
+      href: minecraft/server-editor/WidgetComponentRenderPlaneOptions.md
     - name: WidgetComponentRenderPrimitiveOptions
       href: minecraft/server-editor/WidgetComponentRenderPrimitiveOptions.md
     - name: WidgetComponentSplineOptions
@@ -2112,6 +2154,12 @@
       href: minecraft/server-graphics/changelog.md
     - name: BiomeAtmospherics
       href: minecraft/server-graphics/BiomeAtmospherics.md
+    - name: BiomeColorGrading
+      href: minecraft/server-graphics/BiomeColorGrading.md
+    - name: BiomeLighting
+      href: minecraft/server-graphics/BiomeLighting.md
+    - name: BiomeWater
+      href: minecraft/server-graphics/BiomeWater.md
   - name: minecraft/server-net
     items:
     - name: minecraft/server-net
@@ -2172,6 +2220,8 @@
       href: minecraft/server-ui/FormCancelationReason.md
     - name: FormRejectReason
       href: minecraft/server-ui/FormRejectReason.md
+    - name: FormVisibilityErrorReason
+      href: minecraft/server-ui/FormVisibilityErrorReason.md
     - name: TextFilteringError
       href: minecraft/server-ui/TextFilteringError.md
     - name: ActionFormData
@@ -2180,8 +2230,6 @@
       href: minecraft/server-ui/ActionFormResponse.md
     - name: CustomForm
       href: minecraft/server-ui/CustomForm.md
-    - name: FormCloseError
-      href: minecraft/server-ui/FormCloseError.md
     - name: FormResponse
       href: minecraft/server-ui/FormResponse.md
     - name: MessageBox
@@ -2194,20 +2242,22 @@
       href: minecraft/server-ui/ModalFormData.md
     - name: ModalFormResponse
       href: minecraft/server-ui/ModalFormResponse.md
-    - name: Observable
-      href: minecraft/server-ui/Observable.md
-    - name: PlayerLeftError
-      href: minecraft/server-ui/PlayerLeftError.md
-    - name: ServerShutdownError
-      href: minecraft/server-ui/ServerShutdownError.md
+    - name: ObservableBoolean
+      href: minecraft/server-ui/ObservableBoolean.md
+    - name: ObservableNumber
+      href: minecraft/server-ui/ObservableNumber.md
+    - name: ObservableString
+      href: minecraft/server-ui/ObservableString.md
+    - name: ObservableUIRawMessage
+      href: minecraft/server-ui/ObservableUIRawMessage.md
     - name: UIManager
       href: minecraft/server-ui/UIManager.md
     - name: ButtonOptions
       href: minecraft/server-ui/ButtonOptions.md
     - name: DividerOptions
       href: minecraft/server-ui/DividerOptions.md
-    - name: DropdownItem
-      href: minecraft/server-ui/DropdownItem.md
+    - name: DropdownItemData
+      href: minecraft/server-ui/DropdownItemData.md
     - name: DropdownOptions
       href: minecraft/server-ui/DropdownOptions.md
     - name: MessageBoxResult
