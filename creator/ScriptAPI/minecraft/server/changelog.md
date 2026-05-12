@@ -92,6 +92,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`BlockContainerClosedAfterEventSignal`](BlockContainerClosedAfterEventSignal.md)*
 #### Added *[`BlockContainerOpenedAfterEvent`](BlockContainerOpenedAfterEvent.md)*
 #### Added *[`BlockContainerOpenedAfterEventSignal`](BlockContainerOpenedAfterEventSignal.md)*
+#### Added *[`BlockDynamicPropertiesComponent`](BlockDynamicPropertiesComponent.md)*
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
 - Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
 #### Changed *[`BlockPrecipitationInteractionsComponent`](BlockPrecipitationInteractionsComponent.md)*
@@ -135,6 +136,8 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`EntityContainerOpenedAfterEventSignal`](EntityContainerOpenedAfterEventSignal.md)*
 #### Added *[`EntityEnderInventoryComponent`](EntityEnderInventoryComponent.md)*
 #### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
+#### Added *[`EntityStartSneakingAfterEvent`](EntityStartSneakingAfterEvent.md)*
+#### Added *[`EntityStartSneakingAfterEventSignal`](EntityStartSneakingAfterEventSignal.md)*
 #### Changed *[`EntityTypes`](EntityTypes.md)*
 - Changed function *[`get`](EntityTypes.md#get)*
   - Changed return type from [*EntityType*](EntityType.md) to *EntityType* | *undefined*
@@ -146,6 +149,8 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`playerWaypoints`](GameRules.md#playerwaypoints)*
 #### Added *[`LocationWaypoint`](LocationWaypoint.md)*
 #### Added *[`LocatorBar`](LocatorBar.md)*
+#### Changed *[`LootItem`](LootItem.md)*
+- Added property *[`conditions`](LootItem.md#conditions)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
 #### Added *[`PackSettingChangeAfterEvent`](PackSettingChangeAfterEvent.md)*
 #### Added *[`PackSettingChangeAfterEventSignal`](PackSettingChangeAfterEventSignal.md)*
@@ -155,7 +160,6 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`chatNamePrefix`](Player.md#chatnameprefix)*
 - Added property *[`chatNameSuffix`](Player.md#chatnamesuffix)*
 - Added property *[`locatorBar`](Player.md#locatorbar)*
-- Added property *[`partyInfo`](Player.md#partyinfo)*
 - Added property *[`playfabId`](Player.md#playfabid)*
 - Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`getPing`](Player.md#getping)*
@@ -166,6 +170,8 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`stopSound`](Player.md#stopsound)*
 #### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
 #### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
+#### Added *[`PlayerStartBreakingBlockAfterEvent`](PlayerStartBreakingBlockAfterEvent.md)*
+#### Added *[`PlayerStartBreakingBlockAfterEventSignal`](PlayerStartBreakingBlockAfterEventSignal.md)*
 #### Added *[`PlayerUseNameTagAfterEvent`](PlayerUseNameTagAfterEvent.md)*
 #### Added *[`PlayerUseNameTagAfterEventSignal`](PlayerUseNameTagAfterEventSignal.md)*
 #### Added *[`PlayerWaypoint`](PlayerWaypoint.md)*
@@ -202,13 +208,17 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
 - Added property *[`entityContainerClosed`](WorldAfterEvents.md#entitycontainerclosed)*
 - Added property *[`entityContainerOpened`](WorldAfterEvents.md#entitycontaineropened)*
+- Added property *[`entityStartSneaking`](WorldAfterEvents.md#entitystartsneaking)*
 - Added property *[`entityUpgrade`](WorldAfterEvents.md#entityupgrade)*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
 - Added property *[`packSettingChange`](WorldAfterEvents.md#packsettingchange)*
+- Added property *[`playerStartBreakingBlock`](WorldAfterEvents.md#playerstartbreakingblock)*
 - Added property *[`playerUseNameTag`](WorldAfterEvents.md#playerusenametag)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
+#### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
+- Added value `DynamicProperties`
 #### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
 #### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
 #### Changed enum [`CustomCommandErrorReason`](CustomCommandErrorReason.md)

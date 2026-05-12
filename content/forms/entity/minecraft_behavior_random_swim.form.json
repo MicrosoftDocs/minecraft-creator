@@ -144,5 +144,156 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.random_swim",
+    "title": "Entity Random Swim Behavior",
+    "description": "Allows an entity to randomly move through water",
+    "fields": [
+      {
+        "id": "avoid_surface",
+        "title": "Avoid Surface",
+        "description": "If true, the mob will avoid surface water blocks by swimming below them",
+        "dataType": "boolean",
+        "defaultValue": true
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "interval",
+        "title": "Interval",
+        "description": "A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal",
+        "dataType": "int",
+        "defaultValue": 120,
+        "samples": {
+          "/vanilla/behavior_pack/entities/guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 80
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 7
+            }
+          ],
+          "/vanilla/behavior_pack/entities/guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 7
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal",
+        "dataType": "float",
+        "defaultValue": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 0.5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "xz_dist",
+        "title": "Xz Dist",
+        "description": "Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1",
+        "dataType": "int",
+        "defaultValue": 10,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 20
+            }
+          ]
+        }
+      },
+      {
+        "id": "y_dist",
+        "title": "y Dist",
+        "description": "Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1",
+        "dataType": "int",
+        "defaultValue": 7
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+          "content": {
+            "priority": 5,
+            "interval": 0,
+            "xz_dist": 20
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/elder_guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+          "content": {
+            "avoid_surface": false,
+            "speed_multiplier": 0.5,
+            "priority": 7
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+          "content": {
+            "avoid_surface": false,
+            "speed_multiplier": 1,
+            "interval": 80,
+            "priority": 7
+          }
+        }
+      ]
+    }
   }
 }

@@ -53,55 +53,8 @@
       },
       {
         "id": "version",
+        "title": "Version",
         "dataType": "object",
-        "validity": [
-          {
-            "comparison": "pattern",
-            "value": "^([1-9]+)\\.([0-9]+)\\.([0-9]+)$"
-          }
-        ],
-        "subForm": {
-          "id": "version",
-          "title": "Version",
-          "fields": [
-            {
-              "id": "buildMeta",
-              "title": "BuildMeta",
-              "dataType": "string",
-              "defaultValue": ""
-            },
-            {
-              "id": "major",
-              "title": "Major",
-              "dataType": "int",
-              "defaultValue": 0
-            },
-            {
-              "id": "minor",
-              "title": "Minor",
-              "dataType": "int",
-              "defaultValue": 0
-            },
-            {
-              "id": "patch",
-              "title": "Patch",
-              "dataType": "int",
-              "defaultValue": 0
-            },
-            {
-              "id": "preRelease",
-              "title": "PreRelease",
-              "dataType": "string",
-              "defaultValue": ""
-            }
-          ]
-        },
-        "alternates": [
-          {
-            "id": "version",
-            "dataType": "string"
-          }
-        ],
         "isRequired": true
       }
     ]

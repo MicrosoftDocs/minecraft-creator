@@ -22,7 +22,7 @@ A message that can be sent to the client. This is a subset of the RawMessage typ
 
 Provides a raw-text equivalent of the current message.
 
-Type: *UIRawMessage*[]
+Type: [*UIRawMessage*](UIRawMessage.md)[]
 
 ### **text**
 `text?: string;`
@@ -34,13 +34,13 @@ Type: *string*
 ### **translate**
 `translate?: string;`
 
-Provides a translation token where, if the client has an available resource in the players' language which matches the token, will get translated on the client.
+Provides a localization string where, if the client has an available resource in the players' language which matches the localization string, will get translated on the client.
 
 Type: *string*
 
 ### **with**
 `with?: string[] | UIRawMessage;`
 
-Arguments for the translation token. Can be either an array of strings or UIRawMessage containing an array of raw text objects.
+Arguments for the localization string. Can be either an array of strings or UIRawMessage containing an array of raw text objects.
 
-Type: *string*[] | *UIRawMessage*
+Type: *string*[] | [*UIRawMessage*](UIRawMessage.md)

@@ -165,6 +165,13 @@
         "dataType": "float"
       },
       {
+        "id": "owner_launch_immunity_ticks",
+        "title": "Owner Launch Immunity Ticks",
+        "description": "[EXPERIMENTAL] Number of ticks after launch during which the projectile cannot hit its owner",
+        "defaultValue": 5,
+        "dataType": "int"
+      },
+      {
         "id": "particle",
         "title": "Particle",
         "description": "Particle to use upon collision",

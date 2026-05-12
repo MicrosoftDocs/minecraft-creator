@@ -53,10 +53,15 @@ Any components that this Biome uses.
 | minecraft:overworld_height | *not set* | [Overworld Height](#biome-overworld-height) item | Noise parameters used to drive terrain height in the Overworld. | 
 | minecraft:partially_frozen | *not set* | Object | Component will impact the temperature in a frozen biome, causing some areas to not be frozen. Ex: patchy ice, patchy snow | 
 | minecraft:replace_biomes | *not set* | [Replace Biomes](#biome-replace-biomes) item | Replaces a specified portion of one or more Minecraft biomes. | 
-| minecraft:surface_builder | *not set* | [Surface Builder](#biome-surface-builder) item | Controls the materials used for terrain generation. | 
+| minecraft:subsurface_builder | *not set* | [Subsurface Builder](#biome-surface-builder) item | Sub Surface Builders allow specifying a `minecraft:surface_builder` to be applied to biomes located underneath regular terrain surface. | 
+| minecraft:surface_builder | *not set* | [Surface Builder](#biome-surface-builder) item | Controls materials used for terrain generation. | 
 | minecraft:surface_material_adjustments | *not set* | [Surface Material Adjustments](#biome-surface-material-adjustments) item | Specify fine-detail changes to blocks used in terrain generation (based on a noise function). | 
 | minecraft:tags | *not set* | [Tags](#biome-tags) item | Attach arbitrary string tags to this biome. | 
 | minecraft:village_type | *not set* | [Village Type](#biome-village-type) item | Determines the type of village for the Biome | 
+
+##### minecraft:subsurface_builder
+
+Sub Surface Builders allow specifying a `minecraft:surface_builder` to be applied to biomes located underneath regular terrain surface. Note, however, that pre-existing surface builder types' processing have not been updated to accommodate the ability to specify them for sub-terrain height ranges, which may lead to unexpected results when using them.
 
 ##### minecraft:tags
 
@@ -330,16 +335,16 @@ Scaling value used to alter the frequency of replacement attempts. A lower frequ
 
 
 ##### Biome Surface Builder
-Controls the materials used for terrain generation.
+Controls materials used for terrain generation.
 
 
 ###### Biome Surface Builder Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:surface_builder`
+**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| builder (Biome Overworld) | *not set* | [Builder](#biome-overworld) item | Controls the block types used for terrain generation. | 
+| builder (Biome Overworld) | *not set* | [Builder](#biome-overworld) item | Controls block types and strategy used for terrain generation. | 
 | builder (Alternate 1) | *not set* | [Builder](#biome-frozen-ocean) item |  | 
 | builder (Alternate 2) | *not set* | [Builder](#biome-mesa) item |  | 
 | builder (Alternate 3) | *not set* | [Builder](#biome-swamp) item |  | 
@@ -352,28 +357,28 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 
 ###### Biome Overworld Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder`
+**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| foundation_material | *not set* | String | Controls the block type used deep underground in this biome | 
+| foundation_material | *not set* | String | Controls the block type used deep underground in this biome. | 
 | foundation_material (Foundation Material) | *not set* | [Foundation Material (Foundation Material)](#foundation-material-foundation-material) item |  | 
-| mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome | 
+| mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome. | 
 | mid_material (Mid Material) | *not set* | [Mid Material (Mid Material)](#mid-material-mid-material) item |  | 
-| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur Value must be <= 127. | 
-| sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome | 
+| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur. Value must be <= 127. | 
+| sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome. | 
 | sea_floor_material (Sea Floor Material) | *not set* | [Sea Floor Material (Sea Floor Material)](#sea-floor-material-sea-floor-material) item |  | 
-| sea_material | *not set* | String | Controls the block type used for the bodies of water in this biome | 
+| sea_material | *not set* | String | Controls the block type used for the bodies of water in this biome. | 
 | sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
-| top_material | *not set* | String | Controls the block type used for the surface of this biome | 
+| top_material | *not set* | String | Controls the block type used for the surface of this biome. | 
 | top_material (Top Material) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
 
 ###### Foundation Material (Foundation Material)
 
 ###### Foundation Material Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder > foundation_material`
+**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder > foundation_material`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -391,7 +396,7 @@ Same structure as [Foundation Material (Foundation Material)](#foundation-materi
 
 ###### Sea Floor Material Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder > sea_floor_material`
+**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder > sea_floor_material`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -417,6 +422,7 @@ Same structure as [Sea Floor Material (Sea Floor Material)](#sea-floor-material-
 | minecraft:capped | Minecraft:capped | |
 | minecraft:frozen_ocean | Minecraft:frozen ocean | |
 | minecraft:mesa | Minecraft:mesa | |
+| minecraft:noise_gradient | Minecraft:noise gradient | |
 | minecraft:overworld | Minecraft:overworld | |
 | minecraft:swamp | Minecraft:swamp | |
 | minecraft:the_end | Minecraft:the end | |
@@ -432,34 +438,34 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 
 ###### Biome Mesa Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder`
+**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | bryce_pillars | *not set* | Boolean true/false | Whether the mesa generates with pillars | 
 | clay_material | *not set* | String | Base clay block to use | 
 | clay_material (Clay Material) | *not set* | [Clay Material (Clay Material)](#clay-material-clay-material) item |  | 
-| foundation_material | *not set* | String | Controls the block type used deep underground in this biome | 
+| foundation_material | *not set* | String | Controls the block type used deep underground in this biome. | 
 | foundation_material (Foundation Material) | *not set* | [Foundation Material (Foundation Material)](#foundation-material-foundation-material) item |  | 
 | hard_clay_material | *not set* | String | Hardened clay block to use | 
 | hard_clay_material (Hard Clay Material) | *not set* | [Hard Clay Material (Hard Clay Material)](#hard-clay-material-hard-clay-material) item |  | 
 | has_forest | *not set* | Boolean true/false | Places coarse dirt and grass at high altitudes | 
-| mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome | 
+| mid_material | *not set* | String | Controls the block type used in a layer below the surface of this biome. | 
 | mid_material (Mid Material) | *not set* | [Mid Material (Mid Material)](#mid-material-mid-material) item |  | 
-| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur Value must be <= 127. | 
-| sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome | 
+| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur. Value must be <= 127. | 
+| sea_floor_material | *not set* | String | Controls the block type used as a floor for bodies of water in this biome. | 
 | sea_floor_material (Sea Floor Material) | *not set* | [Sea Floor Material (Sea Floor Material)](#sea-floor-material-sea-floor-material) item |  | 
-| sea_material | *not set* | String | Controls the block type used for the bodies of water in this biome | 
+| sea_material | *not set* | String | Controls the block type used for the bodies of water in this biome. | 
 | sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
-| top_material | *not set* | String | Controls the block type used for the surface of this biome | 
+| top_material | *not set* | String | Controls the block type used for the surface of this biome. | 
 | top_material (Top Material) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
 
 ###### Clay Material (Clay Material)
 
 ###### Clay Material Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder > clay_material`
+**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder > clay_material`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -479,7 +485,7 @@ Used to add decoration to the surface of swamp biomes such as water lilies.
 
 ###### Biome Swamp Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder`
+**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -495,7 +501,7 @@ Used to add decoration to the surface of swamp biomes such as water lilies.
 | sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome. | 
 | top_material (Top Material) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use | 
+| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
 
 ###### max_puddle_depth_below_sea_level
 
@@ -508,7 +514,7 @@ Generates surface on blocks with non-solid blocks above or below.
 
 ###### Biome Capped Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder`
+**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -528,7 +534,7 @@ Generates surface on blocks with non-solid blocks above or below.
 
 ###### Beach Material Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder > beach_material`
+**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder > beach_material`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -546,7 +552,7 @@ Same structure as [Beach Material (Beach Material)](#beach-material-beach-materi
 
 ###### Floor Materials Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder > floor_materials`
+**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder > floor_materials`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -561,7 +567,7 @@ Marks a biome as using End dimension terrain generation. Biomes with this compon
 
 ###### Biome The End Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder`
+**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

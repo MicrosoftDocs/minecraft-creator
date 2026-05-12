@@ -22,6 +22,8 @@ description: Contents of the @minecraft/server-editor.WidgetComponentType enumer
 `Grid = "Grid"`
 ### **Guide**
 `Guide = "Guide"`
+### **RenderPlane**
+`RenderPlane = "RenderPlane"`
 ### **RenderPrim**
 `RenderPrim = "RenderPrim"`
 ### **Spline**

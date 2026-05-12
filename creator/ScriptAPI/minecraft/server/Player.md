@@ -215,22 +215,6 @@ Type: [*ScreenDisplay*](ScreenDisplay.md)
 Notes:
   - This property can throw errors when used.
 
-::: moniker range="=minecraft-bedrock-experimental"
-### **partyInfo**
-`read-only partyInfo?: PartyInfo;`
-
-The party information for this player, or undefined if the player is not in a party.
-
-Type: [*PartyInfo*](PartyInfo.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-Notes:
-  - This property can throw errors when used.
-    - Throws [*InvalidEntityError*](InvalidEntityError.md)
-::: moniker-end
-
 ### **playerPermissionLevel**
 `read-only playerPermissionLevel: PlayerPermissionLevel;`
 

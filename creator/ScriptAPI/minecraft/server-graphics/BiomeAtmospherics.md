@@ -38,7 +38,7 @@ Used to affect atmospheric scattering per biome for Vibrant Visuals
 resetHorizonBlendMax(): void
 `
 
-Resets the horizon blend max to the value set by resource packs
+Resets the horizon blend max to the value set by resource packs or via the 'setHorizonBlendMax' API in behavior packs
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -50,7 +50,7 @@ Notes:
 resetHorizonBlendMieStart(): void
 `
 
-Resets the horizon blend mie start to the value set by resource packs
+Resets the horizon blend mie start to the value set by resource packs or via the 'setHorizonBlendMieStart' API in behavior packs
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -62,7 +62,7 @@ Notes:
 resetHorizonBlendMin(): void
 `
 
-Resets the horizon blend min to the value set by resource packs
+Resets the horizon blend min to the value set by resource packs or via the 'setHorizonBlendMin' API in behavior packs
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -74,7 +74,7 @@ Notes:
 resetHorizonBlendStart(): void
 `
 
-Resets the horizon blend start to the value set by resource packs
+Resets the horizon blend start to the value set by resource packs or via the 'setHorizonBlendStart' API in behavior packs
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -86,7 +86,7 @@ Notes:
 resetMoonMieStrength(): void
 `
 
-Resets the moon mie strength to the value set by resource packs
+Resets the moon mie strength to the value set by resource packs or via the 'setMoonMieStrength' API in behavior packs
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -98,7 +98,7 @@ Notes:
 resetRayleighStrength(): void
 `
 
-Resets the rayleigh strength to the value set by resource packs
+Resets the rayleigh strength to the value set by resource packs or via the 'setRayleighStrength' API in behavior packs
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -110,7 +110,7 @@ Notes:
 resetSkyHorizonColor(): void
 `
 
-Resets the sky horizon color to the color set by resource packs
+Resets the sky horizon color to the color set by resource packs or via the 'setSkyHorizonColor' API in behavior packs
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -122,7 +122,7 @@ Notes:
 resetSkyZenithColor(): void
 `
 
-Resets the sky zenith color to the color set by resource packs
+Resets the sky zenith color to the color set by resource packs or via the 'setSkyZenithColor' API in behavior packs
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -134,7 +134,7 @@ Notes:
 resetSunGlareShape(): void
 `
 
-Resets the sun glare shape to the value set by resource packs
+Resets the sun glare shape to the value set by resource packs or via the 'setSunGlareShape' API in behavior packs
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -146,7 +146,7 @@ Notes:
 resetSunMieStrength(): void
 `
 
-Resets the sun mie strength to the value set by resource packs
+Resets the sun mie strength to the value set by resource packs or via the 'setSunMieStrength' API in behavior packs
   
 Notes:
 - This function can't be called in restricted-execution mode.

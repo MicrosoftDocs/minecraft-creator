@@ -2342,8 +2342,9 @@
       {
         "id": "minecraft:behavior.break_door",
         "title": "Break Door Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows this mob to break doors.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_break_door"
       },
       {
         "id": "minecraft:behavior.breed",
@@ -2403,8 +2404,9 @@
       {
         "id": "minecraft:behavior.defend_trusted_target",
         "title": "Defend Trusted Target Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to target another mob that hurts an entity it trusts.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_defend_trusted_target"
       },
       {
         "id": "minecraft:behavior.defend_village_target",
@@ -2430,8 +2432,9 @@
       {
         "id": "minecraft:behavior.door_interact",
         "title": "Door Interact Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to open and close doors.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_door_interact"
       },
       {
         "id": "minecraft:behavior.dragonchargeplayer",
@@ -2443,8 +2446,9 @@
       {
         "id": "minecraft:behavior.dragondeath",
         "title": "Dragondeath Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the dragon to go out with glory. This controls the Ender Dragon's death animation and can't be used by other mobs.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_dragondeath"
       },
       {
         "id": "minecraft:behavior.dragonflaming",
@@ -2456,20 +2460,23 @@
       {
         "id": "minecraft:behavior.dragonholdingpattern",
         "title": "Dragonholdingpattern Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the Dragon to fly around in a circle around the center podium. Can only be used by the Ender Dragon.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_dragonholdingpattern"
       },
       {
         "id": "minecraft:behavior.dragonlanding",
         "title": "Dragonlanding Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the Dragon to stop flying and transition into perching mode. Can only be used by the Ender Dragon.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_dragonlanding"
       },
       {
         "id": "minecraft:behavior.dragonscanning",
         "title": "Dragonscanning Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the dragon to look around for a player to attack while in perch mode. Can only be used by the Ender Dragon.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_dragonscanning"
       },
       {
         "id": "minecraft:behavior.dragonstrafeplayer",
@@ -2481,8 +2488,9 @@
       {
         "id": "minecraft:behavior.dragontakeoff",
         "title": "Dragontakeoff Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the dragon to leave perch mode and go back to flying around. Can only be used by the Ender Dragon.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_dragontakeoff"
       },
       {
         "id": "minecraft:behavior.drink_milk",
@@ -2648,8 +2656,9 @@
       {
         "id": "minecraft:behavior.follow_target_leader",
         "title": "Follow Target Leader Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows mob to move towards its target leader.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_follow_target_leader"
       },
       {
         "id": "minecraft:behavior.go_and_give_items_to_noteblock",
@@ -2710,8 +2719,9 @@
       {
         "id": "minecraft:behavior.hurt_by_target",
         "title": "Hurt By Target Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to target another mob that hurts them.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_hurt_by_target"
       },
       {
         "id": "minecraft:behavior.inspect_bookshelf",
@@ -2950,8 +2960,9 @@
       {
         "id": "minecraft:behavior.nearest_prioritized_attackable_target",
         "title": "Nearest Prioritized Attackable Target Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to check for and pursue the nearest valid target.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_nearest_prioritized_attackable_target"
       },
       {
         "id": "minecraft:behavior.ocelot_sit_on_block",
@@ -2977,20 +2988,23 @@
       {
         "id": "minecraft:behavior.open_door",
         "title": "Open Door Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to open doors. Requires the mob to be able to path through doors, otherwise the mob won't even want to try opening them.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_open_door"
       },
       {
         "id": "minecraft:behavior.owner_hurt_by_target",
         "title": "Owner Hurt By Target Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to target another mob that hurts their owner.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_owner_hurt_by_target"
       },
       {
         "id": "minecraft:behavior.owner_hurt_target",
         "title": "Owner Hurt Target Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to target a mob that is hurt by their owner.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_owner_hurt_target"
       },
       {
         "id": "minecraft:behavior.panic",
@@ -3015,8 +3029,9 @@
       {
         "id": "minecraft:behavior.place_block",
         "title": "Place Block Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the entity to place a block.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_place_block"
       },
       {
         "id": "minecraft:behavior.play",
@@ -3056,14 +3071,16 @@
       {
         "id": "minecraft:behavior.random_breach",
         "title": "Random Breach Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to randomly break surface of the water.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_random_breach"
       },
       {
         "id": "minecraft:behavior.random_fly",
         "title": "Random Fly Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows a mob to randomly fly around.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_random_fly"
       },
       {
         "id": "minecraft:behavior.random_hover",
@@ -3075,14 +3092,16 @@
       {
         "id": "minecraft:behavior.random_look_around",
         "title": "Random Look Around Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to randomly look around.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_random_look_around"
       },
       {
         "id": "minecraft:behavior.random_look_around_and_sit",
         "title": "Random Look Around And Sit Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to randomly sit and look around for a duration. Note: Must have a sitting animation set up to use this.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_random_look_around_and_sit"
       },
       {
         "id": "minecraft:behavior.random_search_and_dig",
@@ -3108,8 +3127,9 @@
       {
         "id": "minecraft:behavior.random_swim",
         "title": "Random Swim Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows an entity to randomly move through water",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_random_swim"
       },
       {
         "id": "minecraft:behavior.ranged_attack",
@@ -3389,8 +3409,9 @@
       {
         "id": "minecraft:behavior.take_block",
         "title": "Take Block Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the entity to take a block from the world and carry it around.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_take_block"
       },
       {
         "id": "minecraft:behavior.take_flower",
@@ -3483,14 +3504,16 @@
       {
         "id": "minecraft:behavior.wither_random_attack_pos_goal",
         "title": "Wither Random Attack Pos Goal Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the wither to launch random attacks. Can only be used by the Wither Boss.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_wither_random_attack_pos_goal"
       },
       {
         "id": "minecraft:behavior.wither_target_highest_damage",
         "title": "Wither Target Highest Damage Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the wither to focus its attacks on whichever mob has dealt the most damage to it.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_wither_target_highest_damage"
       },
       {
         "id": "minecraft:behavior.work",
@@ -4095,18 +4118,13 @@
       {
         "id": "minecraft:memory_behavior.move_to_position",
         "title": "Move To Position Minecraft Memory Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to move to a target position. Using memories, the mob will try to stick to the original target position it chose until that position is removed. Requires a FindBlockSensor.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_memory_behavior_move_to_position"
       },
       {
         "id": "minecraft:memory_sensor.find_nearest_block",
         "title": "Find Nearest Block Minecraft Memory Sensor",
-        "description": "Dynamic value",
-        "dataType": "object"
-      },
-      {
-        "id": "minecraft:memory_sensor.find_nearest_block_from",
-        "title": "Find Nearest Block From Minecraft Memory Sensor",
         "description": "Dynamic value",
         "dataType": "object"
       },
@@ -4730,8 +4748,9 @@
       {
         "id": "minecraft:wither_target_highest_damage",
         "title": "Minecraft Wither Target Highest Damage",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the wither to focus its attacks on whichever mob has dealt the most damage to it.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_wither_target_highest_damage"
       }
     ]
   },

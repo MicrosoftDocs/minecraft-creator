@@ -97,5 +97,109 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.random_look_around_and_sit",
+    "title": "Entity Random Look Around And Sit Behavior",
+    "description": "Allows the mob to randomly sit and look around for a duration. Note: Must have a sitting animation set up to use this.",
+    "fields": [
+      {
+        "id": "continue_if_leashed",
+        "title": "Continue If Leashed",
+        "description": "If the goal should continue to be used as long as the mob is leashed.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "continue_sitting_on_reload",
+        "title": "Continue Sitting On Reload",
+        "description": "The mob will stay sitting on reload.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "max_angle_of_view_horizontal",
+        "title": "Max Angle Of View Horizontal",
+        "description": "The rightmost angle a mob can look at on the horizontal plane with respect to its initial facing direction.",
+        "dataType": "float",
+        "defaultValue": 180
+      },
+      {
+        "id": "max_look_count",
+        "title": "Max Look Count",
+        "description": "The max amount of unique looks a mob will have while looking around.",
+        "dataType": "int",
+        "defaultValue": 2
+      },
+      {
+        "id": "max_look_time",
+        "title": "Max Look Time",
+        "description": "The max amount of time (in ticks) a mob will stay looking at a direction while looking around.",
+        "dataType": "int",
+        "defaultValue": 40
+      },
+      {
+        "id": "min_angle_of_view_horizontal",
+        "title": "Min Angle Of View Horizontal",
+        "description": "The leftmost angle a mob can look at on the horizontal plane with respect to its initial facing direction.",
+        "dataType": "float",
+        "defaultValue": -180
+      },
+      {
+        "id": "min_look_count",
+        "title": "Min Look Count",
+        "description": "The min amount of unique looks a mob will have while looking around.",
+        "dataType": "int",
+        "defaultValue": 1
+      },
+      {
+        "id": "min_look_time",
+        "title": "Min Look Time",
+        "description": "The min amount of time (in ticks) a mob will stay looking at a direction while looking around.",
+        "dataType": "int",
+        "defaultValue": 20
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "probability",
+        "title": "Probability",
+        "description": "The probability of randomly looking around.",
+        "dataType": "float",
+        "defaultValue": 0.019999999552965164
+      },
+      {
+        "id": "random_look_around_cooldown",
+        "title": "Random Look Around Cooldown",
+        "description": "The cooldown in seconds before the goal can be used again.",
+        "dataType": "int",
+        "defaultValue": 0
+      }
+    ],
+    "samples": {}
   }
 }

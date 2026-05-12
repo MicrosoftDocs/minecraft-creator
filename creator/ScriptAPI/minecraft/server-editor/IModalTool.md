@@ -38,6 +38,7 @@ Type: *EventSink<ModalToolLifecycleEventPayload>*
 - [registerMouseButtonBinding](#registermousebuttonbinding)
 - [registerMouseDragBinding](#registermousedragbinding)
 - [registerMouseWheelBinding](#registermousewheelbinding)
+- [setMouseIcon](#setmouseicon)
 - [unregisterInputBindings](#unregisterinputbindings)
 
 ### **bindPropertyPane**
@@ -113,6 +114,20 @@ Register an action to be called when mouse wheel is scrolled.
 - **action**: *SupportedMouseActionTypes*
   
   Action to register the binding for.
+
+**Returns** *void*
+
+### **setMouseIcon**
+`
+setMouseIcon(mouseIcon: MouseCursorIconType | undefined): void
+`
+
+Set the mouse cursor icon for this tool when it's active. The icon will only be visible when this tool is the currently selected tool.
+
+#### **Parameters**
+- **mouseIcon**: *MouseCursorIconType* | *undefined*
+  
+  The mouse cursor icon, or undefined to reset to default.
 
 **Returns** *void*
 

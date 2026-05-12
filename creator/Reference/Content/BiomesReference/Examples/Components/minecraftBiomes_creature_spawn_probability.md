@@ -17,4 +17,4 @@ Probability that creatures will spawn within the biome when a chunk is generated
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| probability | *not set* | Decimal number | Probabiltity between [0.0, 0.75] of creatures spawning within the biome on chunk generation. Value must be <= 0.75. | 
+| probability | *not set* | Decimal number | Probability between [0.0, 0.75] of creatures spawning within the biome on chunk generation. Value must be <= 0.75. | 

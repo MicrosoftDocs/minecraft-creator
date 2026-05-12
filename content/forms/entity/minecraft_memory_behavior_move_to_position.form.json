@@ -1,0 +1,37 @@
+{
+  "id": "minecraft:memory_behavior.move_to_position",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:memory_behavior.move_to_position",
+    "title": "Entity Move To Position Memory Behavior",
+    "description": "Allows the mob to move to a target position. Using memories, the mob will try to stick to the original target position it chose until that position is removed. Requires a FindBlockSensor.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      }
+    ]
+  }
+}

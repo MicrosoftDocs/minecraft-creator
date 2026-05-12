@@ -11,6 +11,7 @@ description: Contents of the @minecraft/server-editor.IGlobalInputManager class.
 
 ## Methods
 - [registerKeyBinding](#registerkeybinding)
+- [setMouseIcon](#setmouseicon)
 
 ### **registerKeyBinding**
 `
@@ -34,3 +35,20 @@ Register a key press binding for an action which will be handled by the specifie
   Additional information about key binding.
 
 **Returns** *IRegisteredKeyBinding*
+
+### **setMouseIcon**
+`
+setMouseIcon(contextId: EditorInputContext, mouseIcon: MouseCursorIconType | undefined): void
+`
+
+Set or clear the mouse cursor icon for a given editor input context layer.
+
+#### **Parameters**
+- **contextId**: *EditorInputContext*
+  
+  The editor input context id (maps to EditorInputContext).
+- **mouseIcon**: *MouseCursorIconType* | *undefined*
+  
+  The MouseCursorIconType, or null to clear.
+
+**Returns** *void*

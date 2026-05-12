@@ -13,13 +13,13 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-The options for including a spacer in {@link CustomForm}.
+Options for configuring a divider component in a CustomForm.
 
 ## Properties
 
 ### **visible**
-`visible?: Observable<boolean> | boolean;`
+`visible?: boolean | ObservableBoolean;`
 
-Whether or not this divider is visible
+When false or bound to a false ObservableBoolean, the divider is hidden.
 
-Type: *Observable<boolean>* | *boolean*
+Type: *boolean* | [*ObservableBoolean*](ObservableBoolean.md)

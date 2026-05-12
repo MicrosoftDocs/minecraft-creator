@@ -17,6 +17,7 @@
   "generated_doNotEdit": {
     "id": "minecraft:behavior.place_block",
     "title": "Place Block Behavior",
+    "description": "Allows the entity to place a block.",
     "fields": [
       {
         "id": "affected_by_griefing_rule",
@@ -76,5 +77,218 @@
     ],
     "samples": {}
   },
-  "description": "AI goal that makes entities place blocks into the world, like Endermen placing their carried block or snow golems leaving snow trails. Configure which blocks can be placed, where they can be placed, and how often the entity attempts placement. Creates mobs that modify the environment."
+  "description": "AI goal that makes entities place blocks into the world, like Endermen placing their carried block or snow golems leaving snow trails. Configure which blocks can be placed, where they can be placed, and how often the entity attempts placement. Creates mobs that modify the environment.",
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.place_block",
+    "title": "Entity Place Block Behavior",
+    "description": "Allows the entity to place a block.",
+    "fields": [
+      {
+        "id": "affected_by_griefing_rule",
+        "title": "Affected By Griefing Rule",
+        "description": "If true, whether the goal is affected by the mob griefing game rule.",
+        "dataType": "boolean",
+        "defaultValue": true
+      },
+      {
+        "id": "can_place",
+        "description": "Filters for if the entity should try to place its block. Self and Target are set.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "can_place",
+          "title": "Can Place",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "can_place",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "chance",
+        "title": "Chance",
+        "description": "Chance each tick for the entity to try and place a block.",
+        "dataType": "float",
+        "defaultValue": 1,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "on_place",
+        "title": "Place",
+        "description": "Trigger ran if the entity does place its block. Self, Target, and Block are set.",
+        "dataType": "object",
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "placeable_carried_blocks",
+        "description": "Block descriptors for which blocks are valid to be placed from the entity's carried item, if empty all blocks are valid.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subForm": {
+          "id": "placeable_carried_blocks",
+          "title": "Placeable Carried Blocks",
+          "fields": [
+            {
+              "id": "name",
+              "title": "Name",
+              "dataType": "string",
+              "defaultValue": ""
+            },
+            {
+              "id": "states",
+              "title": "States",
+              "dataType": "int",
+              "defaultValue": {},
+              "alternates": [
+                {
+                  "id": "states",
+                  "dataType": "string"
+                },
+                {
+                  "id": "states",
+                  "dataType": "boolean"
+                }
+              ]
+            },
+            {
+              "id": "tags",
+              "title": "Tags",
+              "dataType": "string",
+              "defaultValue": ""
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "placeable_carried_blocks",
+            "dataType": "string"
+          },
+          {
+            "id": "placeable_carried_blocks",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "randomly_placeable_blocks",
+        "title": "Randomly Placeable Blocks",
+        "description": "Weighted block descriptors for which blocks should be randomly placed, if empty the entity will try to place its carried block from placeable_carried_blocks.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subFormId": "entity/placeblockgoalweightedblockdescriptor"
+      },
+      {
+        "id": "xz_range",
+        "title": "Xz Range",
+        "description": "XZ range from which the entity will try and place blocks in.",
+        "dataType": "object",
+        "defaultValue": {
+          "max": 2,
+          "min": -2
+        },
+        "subFormId": "item_components/intrange"
+      },
+      {
+        "id": "y_range",
+        "title": "y Range",
+        "description": "Y range from which the entity will try and place blocks in.",
+        "dataType": "object",
+        "defaultValue": {
+          "max": 3,
+          "min": 0
+        },
+        "subFormId": "item_components/intrange"
+      }
+    ],
+    "samples": {}
+  }
 }

@@ -17,7 +17,8 @@ Allows an entity to attack the closest target within a given subset of specific 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| attack_interval | {"max":0,"min":0} | [Attack Interval](#item-components-floatrange) item | Time range (in seconds) between searching for an attack target, range is in (0, "attack_interval"]. Only used if "attack_interval" is greater than 0, otherwise "scan_interval" is used. | Cave Spider: `{"min":10,"max":10}`, `{"min":5,"max":5}`, Elder Guardian: `{"max":1}` | 
+| attack_interval (Item Components FloatRange) | {"max":0,"min":0} | [Attack Interval](#item-components-floatrange) item | Time range (in seconds) between searching for an attack target, range is in (0, "attack_interval"]. Only used if "attack_interval" is greater than 0, otherwise "scan_interval" is used. | Cave Spider: `{"min":10,"max":10}`, `{"min":5,"max":5}`, Elder Guardian: `{"max":1}` | 
+| attack_interval (as Integer number) | *not set* | Integer number |  |  | 
 | attack_interval|attack_interval_min | *not set* | String |  |  | 
 | attack_owner | false | Boolean true/false | If true, this entity can attack its owner. |  | 
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 

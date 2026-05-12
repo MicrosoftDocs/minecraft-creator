@@ -41,6 +41,13 @@ Localized display text of the menu
 
 Type: *string*
 
+### **sortIndex**
+`sortIndex?: number;`
+
+Determines the order of the menu item among its siblings.
+
+Type: *number*
+
 ### **tooltip**
 `tooltip?: string;`
 

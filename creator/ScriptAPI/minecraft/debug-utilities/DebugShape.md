@@ -12,7 +12,11 @@ description: Contents of the @minecraft/debug-utilities.DebugShape class.
 ## Classes that extend DebugShape
 - [*DebugBox*](DebugBox.md)
 - [*DebugCircle*](DebugCircle.md)
+- [*DebugCone*](DebugCone.md)
+- [*DebugCylinder*](DebugCylinder.md)
+- [*DebugEllipsoid*](DebugEllipsoid.md)
 - [*DebugLine*](DebugLine.md)
+- [*DebugPyramid*](DebugPyramid.md)
 - [*DebugSphere*](DebugSphere.md)
 - [*DebugText*](DebugText.md)
 

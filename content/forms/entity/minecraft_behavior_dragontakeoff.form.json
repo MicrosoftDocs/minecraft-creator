@@ -43,5 +43,48 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.dragontakeoff",
+    "title": "Entity Dragontakeoff Behavior",
+    "description": "Allows the dragon to leave perch mode and go back to flying around. Can only be used by the Ender Dragon.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/ender_dragon.json": [
+        {
+          "path": "/minecraft:entity/component_groups/dragon_flying/minecraft:behavior.dragontakeoff/",
+          "content": {
+            "priority": 0
+          }
+        }
+      ]
+    }
   }
 }

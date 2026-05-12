@@ -20,12 +20,13 @@ description: Changelog of the `@minecraft/server-ui` module
 ## 2.1.0-beta
 #### Added module peer dependency `@minecraft/server@2.9.0-beta`
 #### Added *[`CustomForm`](CustomForm.md)*
-#### Added *[`FormCloseError`](FormCloseError.md)*
 #### Added *[`MessageBox`](MessageBox.md)*
-#### Added *[`Observable`](Observable.md)*
-#### Added *[`PlayerLeftError`](PlayerLeftError.md)*
-#### Added *[`ServerShutdownError`](ServerShutdownError.md)*
+#### Added *[`ObservableBoolean`](ObservableBoolean.md)*
+#### Added *[`ObservableNumber`](ObservableNumber.md)*
+#### Added *[`ObservableString`](ObservableString.md)*
+#### Added *[`ObservableUIRawMessage`](ObservableUIRawMessage.md)*
 #### Added enum [`DataDrivenScreenClosedReason`](DataDrivenScreenClosedReason.md)
+#### Added enum [`FormVisibilityErrorReason`](FormVisibilityErrorReason.md)
 #### Added enum [`TextFilteringError`](TextFilteringError.md)
 ## 2.0.0
 #### Added module peer dependency `@minecraft/server@2.0.0`

@@ -161,7 +161,14 @@
         "dataType": "boolean",
         "id": "rotate_around_center",
         "title": "Rotate Around Center",
-        "description": "If true, tries to rotate the structure around its center when placed in the world. Defaults to \"false\" if omitted.",
+        "description": "If true, centers and rotates the structure around the placement position, overriding any specified horizontal \"offset\". Defaults to \"false\" if omitted.",
+        "isRequired": false
+      },
+      {
+        "dataType": "int",
+        "id": "ground_level",
+        "title": "Ground Level",
+        "description": "Specifies which Y coordinate of the structure is considered its ground level. This value determines which layer of the structure is checked by the \"grounded\" and \"leveled\" constraints and is used as a downward vertical offset during placement. If the value exceeds the structure's height, it is clamped to the maximum valid value and a content warning is emitted. Defaults to 0.",
         "isRequired": false
       },
       {
@@ -176,8 +183,26 @@
               "dataType": "object",
               "id": "grounded",
               "title": "Grounded",
-              "description": "When specified, ensures the structure is on the ground.",
+              "description": "When specified, ensures the structure's ground level touches the ground.",
               "isRequired": false
+            },
+            {
+              "dataType": "object",
+              "id": "leveled",
+              "title": "Leveled",
+              "description": "When specified, ensures the structure's ground level is placed on mostly flat terrain.",
+              "isRequired": false,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": "int",
+                    "id": "max_steepness",
+                    "title": "Max Steepness",
+                    "description": "Maximum allowed height difference between the placement position and terrain samples taken halfway along each side of the structure. A valid terrain sample consists of a solid block with a non‑solid block above it. Defaults to 2.",
+                    "isRequired": false
+                  }
+                ]
+              }
             },
             {
               "dataType": "object",
@@ -198,6 +223,13 @@
                     "dataType": "stringArray",
                     "id": "block_allowlist|block_whitelist",
                     "title": "Block Allowlist|block Whitelist",
+                    "isRequired": true
+                  },
+                  {
+                    "dataType": "boolean",
+                    "id": "only_check_intersection_for_motion_blocking_blocks",
+                    "title": "Only Check Intersection For Motion Blocking Blocks",
+                    "description": "If true, only motion-blocking blocks within the structure are checked for intersections with blocks in \"block_allowlist|block_whitelist\". If false, all blocks in the structure except empty ones are checked for intersections, including air.",
                     "isRequired": true
                   }
                 ]

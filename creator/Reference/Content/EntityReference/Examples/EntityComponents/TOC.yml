@@ -404,3 +404,5 @@
   href: minecraftComponent_wants_jockey.md
 - name: minecraft:water_movement
   href: minecraftComponent_water_movement.md
+- name: minecraft:wither_target_highest_damage
+  href: minecraftComponent_wither_target_highest_damage.md

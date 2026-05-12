@@ -13,13 +13,13 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-An interface passed into `Observable.create`.
+Configuration options for creating an Observable. Controls how the observable value can be accessed and modified.
 
 ## Properties
 
 ### **clientWritable**
-`clientWritable?: boolean;`
+`clientWritable: boolean;`
 
-If set to true, the client can update this value. This should be used for things like dropdown values, toggles, textfields, etc. If unset or false, the client cannot write to this observable.
+When true, allows the client to write to this observable's value directly, enabling two-way data binding between the UI and the observable.
 
 Type: *boolean*

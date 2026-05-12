@@ -214,6 +214,7 @@ ms.date: 02/11/2025
 | [minecraft:walk_animation_speed](EntityComponents/minecraftComponent_walk_animation_speed.md)| Sets the speed multiplier for this entity's walk animation speed. |
 | [minecraft:wants_jockey](EntityComponents/minecraftComponent_wants_jockey.md)| Sets that this entity wants to become a jockey. |
 | [minecraft:water_movement](EntityComponents/minecraftComponent_water_movement.md)| Customizes how the entity moves through water by adjusting drag coefficient. |
+| [minecraft:wither_target_highest_damage](EntityComponents/minecraftComponent_wither_target_highest_damage.md)| Allows the wither to focus its attacks on whichever mob has dealt the most damage to it. |
 
 ## Internal/Deprecated Components
 These components are either deprecated or internal to Minecraft and not usable in custom content.

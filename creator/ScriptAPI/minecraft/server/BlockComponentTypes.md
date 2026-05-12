@@ -12,6 +12,8 @@ description: Contents of the @minecraft/server.BlockComponentTypes enumeration.
 The types of block components that are accessible via function Block.getComponent.
 
 ## Constants
+### **DynamicProperties**
+`DynamicProperties = "minecraft:dynamic_properties"`
 ### **FluidContainer**
 `FluidContainer = "minecraft:fluid_container"`
 ### **Inventory**

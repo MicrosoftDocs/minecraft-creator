@@ -16,11 +16,13 @@ The IPlayerUISession represents the editor user interface for a given player and
     createPropertyPane(options: IRootPropertyPaneOptions): IRootPropertyPane;
     readonly actionManager: ActionManager;
     readonly inputManager: IGlobalInputManager;
+    readonly paneManager: IPaneManager;
     readonly menuBar: IMenuContainer;
     readonly actionBar: IActionBar;
     readonly statusBar: IStatusBar;
     readonly dialogManager: IModalDialogManager;
     readonly toolRail: IModalToolContainer;
+    readonly badgeManager: IContentBadgeManager;
     readonly log: IPlayerLogger;
     readonly extensionContext: ExtensionContext;
     readonly builtInUIManager: BuiltInUIManager;

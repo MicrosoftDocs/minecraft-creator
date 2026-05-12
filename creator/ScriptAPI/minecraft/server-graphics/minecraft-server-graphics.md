@@ -24,13 +24,16 @@ The `@minecraft/server-graphics` module contains APIs to change graphics and ren
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.30-beta.25 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.30-beta.28 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`
 
 ## Classes
 - [BiomeAtmospherics](BiomeAtmospherics.md)
+- [BiomeColorGrading](BiomeColorGrading.md)
+- [BiomeLighting](BiomeLighting.md)
+- [BiomeWater](BiomeWater.md)
 
 ## Functions
 
@@ -45,6 +48,115 @@ Retrieves the BiomeAtmospherics component to control atmoshperic scattering for 
 - **biome**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
 
 **Returns** [*BiomeAtmospherics*](BiomeAtmospherics.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+
+### **getBiomeColorGrading**
+`
+getBiomeColorGrading(biome: minecraftserver.BiomeType): BiomeColorGrading
+`
+
+Retrieves the BiomeColorGrading component to control color grading for Vibrant Visuals.
+
+#### **Parameters**
+- **biome**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
+
+**Returns** [*BiomeColorGrading*](BiomeColorGrading.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+
+### **getBiomeLighting**
+`
+getBiomeLighting(biome: minecraftserver.BiomeType): BiomeLighting
+`
+
+Retrieves the BiomeLighting component to control lighting for Vibrant Visuals.
+
+#### **Parameters**
+- **biome**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
+
+**Returns** [*BiomeLighting*](BiomeLighting.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+
+### **getBiomeWater**
+`
+getBiomeWater(biome: minecraftserver.BiomeType): BiomeWater
+`
+
+Retrieves the BiomeWater component to control water for Vibrant Visuals
+
+#### **Parameters**
+- **biome**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
+
+**Returns** [*BiomeWater*](BiomeWater.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+
+### **getPlayerAtmospherics**
+`
+getPlayerAtmospherics(biome: minecraftserver.BiomeType, player: minecraftserver.Player): BiomeAtmospherics
+`
+
+Retrieves the PlayerAtmospherics component to control atmospheric scattering for a particular player in Vibrant Visuals. This offers the same controls as BiomeAtmospherics, but PlayerAtmospherics controls will always take precedence over BiomeAtmospherics.
+
+#### **Parameters**
+- **biome**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
+- **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
+
+**Returns** [*BiomeAtmospherics*](BiomeAtmospherics.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+
+### **getPlayerColorGrading**
+`
+getPlayerColorGrading(biome: minecraftserver.BiomeType, player: minecraftserver.Player): BiomeColorGrading
+`
+
+Retrieves the PlayerColorGrading component to control color grading for a particular player in Vibrant Visuals. This offers the same controls as BiomeColorGrading, but PlayerColorGrading controls will always take precedence over BiomeColorGrading.
+
+#### **Parameters**
+- **biome**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
+- **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
+
+**Returns** [*BiomeColorGrading*](BiomeColorGrading.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+
+### **getPlayerLighting**
+`
+getPlayerLighting(biome: minecraftserver.BiomeType, player: minecraftserver.Player): BiomeLighting
+`
+
+Retrieves the PlayerLighting component to control lighting for a particular player in Vibrant Visuals. This offers the same controls as BiomeLighting, but PlayerLighting controls will always take precedence over BiomeLighting.
+
+#### **Parameters**
+- **biome**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
+- **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
+
+**Returns** [*BiomeLighting*](BiomeLighting.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+
+### **getPlayerWater**
+`
+getPlayerWater(biome: minecraftserver.BiomeType, player: minecraftserver.Player): BiomeWater
+`
+
+Retrieves the PlayerWater component to control water for a particular player in Vibrant Visuals. This offers the same controls as BiomeWater, but PlayerWater controls will always take precedence over BiomeWater.
+
+#### **Parameters**
+- **biome**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
+- **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
+
+**Returns** [*BiomeWater*](BiomeWater.md)
   
 Notes:
 - This function can't be called in restricted-execution mode.

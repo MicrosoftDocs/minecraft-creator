@@ -18,6 +18,18 @@
       "isRemoved": true
     },
     {
+      "id": "attack_interval",
+      "title": "Attack Interval",
+      "description": "Time range (in seconds) between searching for an attack target, range is in (0, \"attack_interval\"]. Only used if \"attack_interval\" is greater than 0, otherwise \"scan_interval\" is used.",
+      "dataType": "intRange",
+      "alternates": [
+        {
+          "id": "attack_interval",
+          "dataType": "int"
+        }
+      ]
+    },
+    {
       "id": "entity_types",
       "title": "Entity Types",
       "description": "List of entity types that this mob considers valid targets",

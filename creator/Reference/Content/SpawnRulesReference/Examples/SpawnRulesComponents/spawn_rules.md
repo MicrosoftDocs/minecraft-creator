@@ -32,33 +32,33 @@ Defines the conditions under which an entity can spawn, including biome filters,
 |:----------|:-------------|:----|:-----------|
 | minecraft:biome_filter (Biome Filter) | {"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null} | [Biome Filter](#biome-filter) item | Filters allow data objects to specify test criteria which allows their use. | 
 | minecraft:biome_filter (as Array of objects) | *not set* | Array of objects | Array of filter objects. | 
-| minecraft:brightness_filter | *not set* | [Brightness Filter](#spawn-brightnessfilter) item |  | 
-| minecraft:delay_filter | *not set* | [Delay Filter](#spawn-delayfilter) item |  | 
-| minecraft:density_limit | *not set* | [Density Limit](#spawn-densitylimit) item |  | 
-| minecraft:difficulty_filter | *not set* | [Difficulty Filter](#spawn-difficultyfilter) item |  | 
+| minecraft:brightness_filter | *not set* | [Brightness Filter](#spawn-brightnessfilter) item | Restricts spawning based on light level. Hostile mobs typically spawn in darkness (0-7), passive mobs in brighter areas. | 
+| minecraft:delay_filter | *not set* | [Delay Filter](#delay-filter) item | Delays entity spawning by a configurable time after conditions are met. Useful for cooldowns after mob deaths. | 
+| minecraft:density_limit | *not set* | [Density Limit](#density-limit) item | Limits how many of this entity can exist in an area, with separate caps for surface and underground. Set -1 for unlimited. | 
+| minecraft:difficulty_filter | *not set* | [Difficulty Filter](#difficulty-filter) item | Restricts spawning to specific difficulty levels (Peaceful, Easy, Normal, Hard). | 
 | minecraft:disallow_spawns_in_bubble | *not set* | Object | Prevents spawning inside bubble columns. | 
-| minecraft:distance_filter | *not set* | [Distance Filter](#spawn-distancefilter) item |  | 
-| minecraft:height_filter | *not set* | [Height Filter](#spawn-heightfilter) item |  | 
+| minecraft:distance_filter | *not set* | [Distance Filter](#distance-filter) item | Controls spawning based on distance from the nearest player. Mobs typically spawn 24-128 blocks from players. | 
+| minecraft:height_filter | *not set* | [Height Filter](#height-filter) item | Restricts spawning to specific Y-coordinate ranges. Useful for depth-based mob distribution. | 
 | minecraft:herd | [] | Object | Specifies herd spawning configuration. Can be a single herd object or an array of herd objects. | 
 | minecraft:herd (as Array of objects) | *not set* | Array of objects | Array of herd configurations. | 
-| minecraft:is_experimental | *not set* | Object |  | 
-| minecraft:is_persistent | *not set* | Object |  | 
-| minecraft:mob_event_filter | *not set* | [Mob Event Filter](#spawn-mobeventfilter) item |  | 
+| minecraft:is_experimental | *not set* | Object | Marks this spawn rule as experimental. Only active when the corresponding experiment toggle is enabled. | 
+| minecraft:is_persistent | *not set* | Object | When enabled, spawned entities will not despawn naturally. Used for mobs like villagers. | 
+| minecraft:mob_event_filter | *not set* | [Mob Event Filter](#mob-event-filter) item | Controls spawning based on whether a specific mob event (like raids or wandering traders) is active. | 
 | minecraft:permute_type | [] | Object | Specifies permutation types for spawning. Can be a single object or an array of permutation objects. | 
 | minecraft:permute_type (as Array of objects) | *not set* | Array of objects | Array of permutation configurations. | 
-| minecraft:player_in_village_filter | *not set* | [Player In Village Filter](#spawn-playerinvillagefilter) item |  | 
-| minecraft:spawn_event | {"event":""} | [Spawn Event](#spawn-mobeventfilter) item |  | 
-| minecraft:spawns_above_block_filter | {"blocks":[],"distance":1} | [Spawns Above Block Filter](#spawns-above-block-filter) item |  | 
+| minecraft:player_in_village_filter | *not set* | [Player In Village Filter](#player-in-village-filter) item | Restricts spawning to when a player is near a village. Used for iron golems, cats, and raid mobs. | 
+| minecraft:spawn_event | {"event":""} | [Spawn Event](#mob-event-filter) item | Triggers a specific entity event when the mob spawns. Commonly used to initialize entity behavior. | 
+| minecraft:spawns_above_block_filter | {"blocks":[],"distance":1} | [Spawns Above Block Filter](#spawns-above-block-filter) item | Filters spawning based on blocks above the spawn point. | 
 | minecraft:spawns_lava | *not set* | Object | Indicates the entity can spawn in lava. | 
 | minecraft:spawns_on_block_filter | [] | Array of objects | Specifies blocks on which this entity can spawn. Can be a single block name string, an array of block objects with name property, or an array of strings representing block names. | 
 | minecraft:spawns_on_block_filter (as String) | *not set* | String | A single block name string | 
 | minecraft:spawns_on_block_filter (as Array of strings) | *not set* | Array of strings | An array of block name strings | 
 | minecraft:spawns_on_block_prevented_filter | [] | Array of strings | Specifies blocks on which this entity cannot spawn. Can be an array of block name strings. | 
-| minecraft:spawns_on_surface | *not set* | Object |  | 
-| minecraft:spawns_underground | *not set* | Object |  | 
-| minecraft:spawns_underwater | *not set* | Object |  | 
-| minecraft:weight | *not set* | [Weight](#spawn-weight) item |  | 
-| minecraft:world_age_filter | *not set* | [World Age Filter](#spawn-worldagefilter) item |  | 
+| minecraft:spawns_on_surface | *not set* | Object | When enabled, this entity can spawn on the world surface. | 
+| minecraft:spawns_underground | *not set* | Object | When enabled, this entity can spawn underground (below the surface). | 
+| minecraft:spawns_underwater | *not set* | Object | When enabled, this entity can spawn in water. | 
+| minecraft:weight | *not set* | [Weight](#spawn-weight) item | Relative spawn probability compared to other entities in the same biome. Higher values = more frequent spawns. 100 is typical for common mobs. | 
+| minecraft:world_age_filter | *not set* | [World Age Filter](#world-age-filter) item | Restricts spawning based on world age (in ticks). Useful for progressive difficulty where certain mobs appear later. | 
 
 #### minecraft:biome_filter
 
@@ -92,15 +92,15 @@ Restricts mob spawning based on light level at the spawn location. Hostile mobs 
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| adjust_for_weather | false | Boolean true/false |  | 
-| max | 15 | Integer number |  | 
-| min | 0 | Integer number |  | 
+| adjust_for_weather | false | Boolean true/false | When true, brightness is adjusted for the current weather (rain/thunder reduce light levels). | 
+| max | 15 | Integer number | Maximum light level (0-15) at which this entity can spawn. Value must be <= 15. | 
+| min | 0 | Integer number | Minimum light level (0-15) at which this entity can spawn. Value must be <= 15. | 
 
-#### Spawn DelayFilter
+#### Delay Filter
 Delays entity spawning by a configurable amount of time after spawn conditions are met. Useful for preventing immediate respawning after mob deaths or creating spawn cooldowns for rare creatures.
 
 
-##### Spawn DelayFilter Properties
+##### Delay Filter Properties
 
 **JSON path:** `conditions > minecraft:delay_filter`
 
@@ -111,11 +111,11 @@ Delays entity spawning by a configurable amount of time after spawn conditions a
 | min | 0 | Integer number |  | 
 | spawn_chance | 100 | Integer number |  | 
 
-#### Spawn DensityLimit
+#### Density Limit
 Limits how many of this entity type can exist in an area, with separate caps for surface and underground spawning. This prevents overpopulation and controls mob density for performance and gameplay balance.
 
 
-##### Spawn DensityLimit Properties
+##### Density Limit Properties
 
 **JSON path:** `conditions > minecraft:density_limit`
 
@@ -124,11 +124,11 @@ Limits how many of this entity type can exist in an area, with separate caps for
 | surface | -1 | Integer number |  | 
 | underground | -1 | Integer number |  | 
 
-#### Spawn DifficultyFilter
+#### Difficulty Filter
 Restricts mob spawning to specific difficulty levels (Peaceful, Easy, Normal, Hard). For example, hostile mobs don't spawn on Peaceful, and some dangerous variants only appear on Hard difficulty.
 
 
-##### Spawn DifficultyFilter Properties
+##### Difficulty Filter Properties
 
 **JSON path:** `conditions > minecraft:difficulty_filter`
 
@@ -146,11 +146,11 @@ Restricts mob spawning to specific difficulty levels (Peaceful, Easy, Normal, Ha
 | normal | Normal | |
 | peaceful | Peaceful | |
 
-#### Spawn DistanceFilter
+#### Distance Filter
 Controls spawning based on distance from the nearest player. Mobs typically spawn within a certain radius around players (24-128 blocks) and despawn when players move too far away.
 
 
-##### Spawn DistanceFilter Properties
+##### Distance Filter Properties
 
 **JSON path:** `conditions > minecraft:distance_filter`
 
@@ -159,16 +159,16 @@ Controls spawning based on distance from the nearest player. Mobs typically spaw
 | max | 128 | Integer number |  | 
 | min | 24 | Integer number |  | 
 
-#### Spawn HeightFilter
+#### Height Filter
 
-Same structure as [Spawn DistanceFilter](#spawn-distancefilter).
+Same structure as [Distance Filter](#distance-filter).
 
 
-#### Spawn MobEventFilter
+#### Mob Event Filter
 Controls spawning based on whether a specific mob event is active. Mob events are world-level toggles (like raids or wandering traders) that can enable or disable certain spawn behaviors.
 
 
-##### Spawn MobEventFilter Properties
+##### Mob Event Filter Properties
 
 **JSON path:** `conditions > minecraft:mob_event_filter`
 
@@ -176,11 +176,11 @@ Controls spawning based on whether a specific mob event is active. Mob events ar
 |:----------|:-------------|:----|:-----------|
 | event |  | String |  | 
 
-#### Spawn PlayerInVillageFilter
+#### Player In Village Filter
 Restricts spawning based on whether a player is within village boundaries. Used for village-specific spawns like iron golems, cats, and raid mobs that should only appear when players are near villages.
 
 
-##### Spawn PlayerInVillageFilter Properties
+##### Player In Village Filter Properties
 
 **JSON path:** `conditions > minecraft:player_in_village_filter`
 
@@ -221,9 +221,9 @@ Defines the relative probability of this entity spawning compared to other entit
 | default | *not set* | Integer number |  | 
 | rarity | 0 | Integer number |  | 
 
-#### Spawn WorldAgeFilter
+#### World Age Filter
 
-Same structure as [Spawn DistanceFilter](#spawn-distancefilter).
+Same structure as [Distance Filter](#distance-filter).
 
 
 ### Spawn Description

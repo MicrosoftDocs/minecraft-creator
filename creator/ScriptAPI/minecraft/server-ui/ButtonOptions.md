@@ -13,27 +13,27 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-The options for including a button in {@link CustomForm}.
+Options for configuring a button component.
 
 ## Properties
 
 ### **disabled**
-`disabled?: Observable<boolean> | boolean;`
+`disabled?: boolean | ObservableBoolean;`
 
-Whether or not this button is disabled.
+When true or bound to a true ObservableBoolean, the button is shown but cannot be pressed.
 
-Type: *Observable<boolean>* | *boolean*
+Type: *boolean* | [*ObservableBoolean*](ObservableBoolean.md)
 
 ### **tooltip**
-`tooltip?: Observable<string> | Observable<UIRawMessage> | string | UIRawMessage;`
+`tooltip?: ObservableString | ObservableUIRawMessage | string | UIRawMessage;`
 
-The tooltip for this button, shown when hovering the button.
+Text shown in a tooltip when the player hovers over the button.
 
-Type: *Observable<string>* | *Observable<UIRawMessage>* | *string* | *UIRawMessage*
+Type: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
 
 ### **visible**
-`visible?: Observable<boolean> | boolean;`
+`visible?: boolean | ObservableBoolean;`
 
-Whether or not this button is visible.
+When false or bound to a false ObservableBoolean, the button is hidden.
 
-Type: *Observable<boolean>* | *boolean*
+Type: *boolean* | [*ObservableBoolean*](ObservableBoolean.md)

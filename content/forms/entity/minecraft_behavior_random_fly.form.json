@@ -135,5 +135,140 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.random_fly",
+    "title": "Entity Random Fly Behavior",
+    "description": "Allows a mob to randomly fly around.",
+    "fields": [
+      {
+        "id": "can_land_on_trees",
+        "title": "Can Land On Trees",
+        "description": "If true, the mob can stop flying and land on a tree instead of the ground",
+        "dataType": "boolean",
+        "defaultValue": true,
+        "samples": {
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:behavior.random_fly/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:behavior.random_fly/",
+              "content": 3
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal",
+        "dataType": "float",
+        "defaultValue": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:behavior.random_fly/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "xz_dist",
+        "title": "Xz Dist",
+        "description": "Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1",
+        "dataType": "int",
+        "defaultValue": 10,
+        "samples": {
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:behavior.random_fly/",
+              "content": 15
+            }
+          ]
+        }
+      },
+      {
+        "id": "y_dist",
+        "title": "y Dist",
+        "description": "Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1",
+        "dataType": "int",
+        "defaultValue": 7,
+        "samples": {
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:behavior.random_fly/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "avoid_damage_blocks",
+        "title": "Avoid Damage Blocks",
+        "dataType": "string",
+        "samples": {
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:behavior.random_fly/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "y_offset",
+        "title": "y Offset",
+        "dataType": "number"
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/parrot.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:behavior.random_fly/",
+          "content": {
+            "priority": 3,
+            "avoid_damage_blocks": true,
+            "can_land_on_trees": true,
+            "y_offset": 0,
+            "speed_multiplier": 1,
+            "xz_dist": 15,
+            "y_dist": 1
+          }
+        }
+      ]
+    }
   }
 }
