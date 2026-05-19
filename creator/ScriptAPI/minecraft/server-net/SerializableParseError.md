@@ -4,12 +4,10 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server-ui.InvalidObservableError Class
-description: Contents of the @minecraft/server-ui.InvalidObservableError class.
+title: minecraft/server-net.SerializableParseError Class
+description: Contents of the @minecraft/server-net.SerializableParseError class.
 ---
-# InvalidObservableError Class
+# SerializableParseError Class
 
 ## Extends
 - *Error*
-
-Thrown when an observable value is expected to be writable, but it is not.

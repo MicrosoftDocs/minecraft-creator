@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server-ui.ObservableOptions Interface
 description: Contents of the @minecraft/server-ui.ObservableOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ObservableOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Configuration options for creating an Observable. Controls how the observable value can be accessed and modified.
 

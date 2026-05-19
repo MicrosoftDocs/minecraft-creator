@@ -9,10 +9,18 @@ description: Contents of the @minecraft/server-ui.FormRejectReason enumeration.
 ---
 # FormRejectReason Enumeration
 
+An enum representing the reasons why a form was rejected.
+
 ## Constants
 ### **MalformedResponse**
 `MalformedResponse = "MalformedResponse"`
+
+The form was rejected because the response from the client was malformed or could not be parsed.
 ### **PlayerQuit**
 `PlayerQuit = "PlayerQuit"`
+
+The form was rejected because the player quit the game before responding.
 ### **ServerShutdown**
 `ServerShutdown = "ServerShutdown"`
+
+The form was rejected because the server shut down before the player responded.

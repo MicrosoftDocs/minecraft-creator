@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server-ui.InvalidFormModificationError Class
 description: Contents of the @minecraft/server-ui.InvalidFormModificationError class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # InvalidFormModificationError Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - *Error*

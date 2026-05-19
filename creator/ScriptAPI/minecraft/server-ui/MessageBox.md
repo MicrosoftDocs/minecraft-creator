@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server-ui.MessageBox Class
 description: Contents of the @minecraft/server-ui.MessageBox class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # MessageBox Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 A simple message form with two buttons and a text body. Use this class to show a basic dialog to a player and handle the player's button selection.
 

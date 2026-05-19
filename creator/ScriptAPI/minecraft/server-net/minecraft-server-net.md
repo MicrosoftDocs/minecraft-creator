@@ -24,7 +24,7 @@ The `@minecraft/server-net` module contains types for executing HTTP-based reque
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.30-beta.28 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.30-beta.30 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`
@@ -62,6 +62,7 @@ This is version 1.x.x of this module, which is the latest as of version 1.26.30-
 - [InternalWebSocketError](InternalWebSocketError.md)
 - [MalformedUriError](MalformedUriError.md)
 - [RequestBodyTooLargeError](RequestBodyTooLargeError.md)
+- [SerializableParseError](SerializableParseError.md)
 - [TLSOnlyError](TLSOnlyError.md)
 - [UriNotAllowedError](UriNotAllowedError.md)
 - [WebSocketConnectionFailedError](WebSocketConnectionFailedError.md)

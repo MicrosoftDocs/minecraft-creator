@@ -428,6 +428,8 @@
       href: minecraft/server/EntityFloatsInLiquidComponent.md
     - name: EntityFlyingSpeedComponent
       href: minecraft/server/EntityFlyingSpeedComponent.md
+    - name: EntityFogComponent
+      href: minecraft/server/EntityFogComponent.md
     - name: EntityFrictionModifierComponent
       href: minecraft/server/EntityFrictionModifierComponent.md
     - name: EntityHasMarkVariantCondition
@@ -646,6 +648,8 @@
       href: minecraft/server/InputInfo.md
     - name: IsBabyCondition
       href: minecraft/server/IsBabyCondition.md
+    - name: ISerializable
+      href: minecraft/server/ISerializable.md
     - name: ItemBookComponent
       href: minecraft/server/ItemBookComponent.md
     - name: ItemCompleteUseAfterEvent
@@ -798,6 +802,10 @@
       href: minecraft/server/PlayerButtonInputAfterEvent.md
     - name: PlayerButtonInputAfterEventSignal
       href: minecraft/server/PlayerButtonInputAfterEventSignal.md
+    - name: PlayerCancelBreakingBlockAfterEvent
+      href: minecraft/server/PlayerCancelBreakingBlockAfterEvent.md
+    - name: PlayerCancelBreakingBlockAfterEventSignal
+      href: minecraft/server/PlayerCancelBreakingBlockAfterEventSignal.md
     - name: PlayerCursorInventoryComponent
       href: minecraft/server/PlayerCursorInventoryComponent.md
     - name: PlayerDimensionChangeAfterEvent
@@ -1756,6 +1764,8 @@
       href: minecraft/server-editor/IDataTablePropertyItemOptions.md
     - name: IDisposable
       href: minecraft/server-editor/IDisposable.md
+    - name: IDividerPropertyItemOptions
+      href: minecraft/server-editor/IDividerPropertyItemOptions.md
     - name: IDropdownPropertyItem
       href: minecraft/server-editor/IDropdownPropertyItem.md
     - name: IDropdownPropertyItemEntry

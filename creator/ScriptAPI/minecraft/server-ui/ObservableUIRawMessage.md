@@ -6,12 +6,10 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server-ui.ObservableUIRawMessage Class
 description: Contents of the @minecraft/server-ui.ObservableUIRawMessage class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ObservableUIRawMessage Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
+An observable that holds a UIRawMessage value. Listeners are notified whenever the value changes.
 
 ## Methods
 - [constructor](#constructor)
@@ -25,9 +23,15 @@ monikerRange: "=minecraft-bedrock-experimental"
 new ObservableUIRawMessage(data: UIRawMessage, options?: ObservableOptions)
 `
 
+Creates a new ObservableUIRawMessage with the provided initial UIRawMessage value.
+
 #### **Parameters**
 - **data**: [*UIRawMessage*](UIRawMessage.md)
+  
+  The initial UIRawMessage value for this observable.
 - **options**?: [*ObservableOptions*](ObservableOptions.md) = `null`
+  
+  Optional configuration for the observable, such as whether the value can be written by the client.
 
 **Returns** [*ObservableUIRawMessage*](ObservableUIRawMessage.md)
   
@@ -40,6 +44,8 @@ Notes:
 getData(): UIRawMessage
 `
 
+Returns the current UIRawMessage value held by this observable.
+
 **Returns** [*UIRawMessage*](UIRawMessage.md)
   
 Notes:
@@ -51,8 +57,12 @@ Notes:
 setData(data: UIRawMessage): void
 `
 
+Updates the UIRawMessage value held by this observable. If the new value differs from the current value, all subscribed listeners are notified with the new value.
+
 #### **Parameters**
 - **data**: [*UIRawMessage*](UIRawMessage.md)
+  
+  The new UIRawMessage value to set.
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -63,8 +73,12 @@ Notes:
 subscribe(callback: (arg0: UIRawMessage) => void): (arg0: UIRawMessage) => void
 `
 
+Registers a callback to be invoked whenever the observable's value changes. Returns the callback, which can be passed to unsubscribe to remove the listener.
+
 #### **Parameters**
 - **callback**: (arg0: [*UIRawMessage*](UIRawMessage.md)) => *void*
+  
+  A function that receives the new UIRawMessage value each time the observable changes.
 
 **Returns** (arg0: [*UIRawMessage*](UIRawMessage.md)) => *void*
   
@@ -77,8 +91,12 @@ Notes:
 unsubscribe(callback: (arg0: UIRawMessage) => void): boolean
 `
 
+Removes a previously registered listener from this observable. Returns true if the listener was found and removed, false if it was not found.
+
 #### **Parameters**
 - **callback**: (arg0: [*UIRawMessage*](UIRawMessage.md)) => *void*
+  
+  The callback handle previously returned by subscribe.
 
 **Returns** *boolean*
   

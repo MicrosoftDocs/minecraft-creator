@@ -28,6 +28,33 @@ This function will be called whenever the filter is changed by the user
 
 Type: (arg0: *string*[]) => *void*
 
+### **onShowOptionChanged**
+`onShowOptionChanged?: (arg0: number) => void;`
+
+Called when the user selects an entry in the "Show" dropdown. Receives the zero-based option index from the provided showOptions.
+
+Type: (arg0: *number*) => *void*
+
+### **renderInline**
+`renderInline?: boolean;`
+
+When true, the view control renders inline at the bottom of the list element instead of in a footer.
+
+Type: *boolean*
+
+### **showOptions**
+`showOptions?: {
+        label: LocalizedString;
+        value: number;
+    }[];`
+
+Labels for the "Show" dropdown. When provided, a dropdown is shown and onShowOptionChanged is called with the selected index whenever the user changes the selection.
+
+Type: *{
+        label: LocalizedString;
+        value: number;
+    }*[]
+
 ### **sortOptions**
 `sortOptions?: ListPaneViewSortType[];`
 

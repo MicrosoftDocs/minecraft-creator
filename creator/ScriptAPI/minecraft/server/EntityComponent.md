@@ -62,6 +62,7 @@ description: Contents of the @minecraft/server.EntityComponent class.
 - [*EntityWantsJockeyComponent*](EntityWantsJockeyComponent.md)
 - [*PlayerCursorInventoryComponent*](PlayerCursorInventoryComponent.md)
 - [*EntityEnderInventoryComponent*](EntityEnderInventoryComponent.md)
+- [*EntityFogComponent*](EntityFogComponent.md)
 - [*EntityNpcComponent*](EntityNpcComponent.md)
 
 Base class for downstream entity components.

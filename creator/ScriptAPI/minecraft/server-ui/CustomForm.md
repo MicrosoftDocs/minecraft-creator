@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server-ui.CustomForm Class
 description: Contents of the @minecraft/server-ui.CustomForm class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CustomForm Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 A customizable data driven (DDUI) form that lets you add buttons, labels, toggles, dropdowns, sliders, text fields, and more. The form layout is built by calling methods to add components before calling show(). Any Observable values bound to form components will automatically update the UI when their values change.
 

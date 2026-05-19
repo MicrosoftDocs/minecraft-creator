@@ -20,6 +20,13 @@ Action associated with tool activation
 
 Type: *RegisteredAction<NoArgsAction>*
 
+### **contentBadgeId**
+`contentBadgeId?: string;`
+
+Content badge id associated with the modal tool
+
+Type: *string*
+
 ### **icon**
 `icon?: string;`
 

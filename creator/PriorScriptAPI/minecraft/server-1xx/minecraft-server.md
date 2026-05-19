@@ -253,6 +253,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [IPlayerJoinAfterEventSignal](IPlayerJoinAfterEventSignal.md)
 - [IPlayerLeaveAfterEventSignal](IPlayerLeaveAfterEventSignal.md)
 - [IPlayerSpawnAfterEventSignal](IPlayerSpawnAfterEventSignal.md)
+- [ISerializable](ISerializable.md)
 - [ItemCompleteUseAfterEvent](ItemCompleteUseAfterEvent.md)
 - [ItemCompleteUseAfterEventSignal](ItemCompleteUseAfterEventSignal.md)
 - [ItemCompleteUseEvent](ItemCompleteUseEvent.md)

@@ -396,6 +396,8 @@
       href: minecraft/server-1xx/IPlayerLeaveAfterEventSignal.md
     - name: IPlayerSpawnAfterEventSignal
       href: minecraft/server-1xx/IPlayerSpawnAfterEventSignal.md
+    - name: ISerializable
+      href: minecraft/server-1xx/ISerializable.md
     - name: ItemCompleteUseAfterEvent
       href: minecraft/server-1xx/ItemCompleteUseAfterEvent.md
     - name: ItemCompleteUseAfterEventSignal

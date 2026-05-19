@@ -40,3 +40,21 @@ Type: [*HttpRequest*](HttpRequest.md)
 HTTP response code for the request. For example, 404 represents resource not found, and 500 represents an internal server error.
 
 Type: *number*
+
+## Methods
+- [deserialize](#deserialize)
+
+### **deserialize**
+`
+deserialize(identifier: string): minecraftserver.ISerializable
+`
+
+#### **Parameters**
+- **identifier**: *string*
+
+**Returns** [*@minecraft/server.ISerializable*](../../../scriptapi/minecraft/server/ISerializable.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*SerializableParseError*](SerializableParseError.md)
