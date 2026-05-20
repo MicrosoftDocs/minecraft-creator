@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server-ui.ObservableBoolean Class
 description: Contents of the @minecraft/server-ui.ObservableBoolean class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ObservableBoolean Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 An observable that holds a boolean value. Listeners are notified whenever the value changes.
 

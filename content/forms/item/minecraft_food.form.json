@@ -102,7 +102,17 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "remove_effects",
+      "title": "Remove Effects",
+      "description": "Array of effect names to remove when eating this food. This property was deprecated and is no longer supported in newer versions.",
+      "dataType": "stringArray",
+      "isDeprecated": true,
+      "versionDeprecated": "1.20.0",
+      "note": "This property was available in versions 1.14 through 1.18 but has been removed in later versions."
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:food",
     "title": "Item Food",
@@ -144,5 +154,25 @@
       }
     ],
     "samples": {}
+  },
+  "description": "Sets the item as a food component, allowing it to be edible to the player.",
+  "requires": [
+    {
+      "id": "minecraft:use_modifiers",
+      "type": "item_component"
+    }
+  ],
+  "samples": {
+    "sample": [
+      {
+        "path": "sample",
+        "content": {
+          "can_always_eat": false,
+          "nutrition": 3,
+          "saturation_modifier": 0.6,
+          "using_converts_to": "bowl"
+        }
+      }
+    ]
   }
 }

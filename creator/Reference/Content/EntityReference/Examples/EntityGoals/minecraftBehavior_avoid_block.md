@@ -23,7 +23,7 @@ Allows this entity to avoid certain blocks.
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
 | search_height | 0 | Integer number | Maximum distance to look for a block in y. | 
 | search_range | 0 | Integer number | Maximum distance to look for a block in xz. | 
-| sound_interval | {"max":8,"min":3} | [Sound Interval](#item-components-floatrange) item | The range of time in seconds to randomly wait before playing the sound again. | 
+| sound_interval | {"max":8,"min":3} | [Sound Interval](#item-floatrange) item | The range of time in seconds to randomly wait before playing the sound again. | 
 | sprint_speed_modifier | 1 | Decimal number | Modifier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster. | 
 | target_blocks | [] | String | List of block types this mob avoids. | 
 | target_blocks (as Keyed set of strings) | *not set* | Keyed set of strings |  | 
@@ -272,6 +272,8 @@ Allows this entity to avoid certain blocks.
 | freeze | Freeze | |
 | fuse | Fuse | |
 | gallop | Gallop | |
+| geyser_continuous_eruption_active | Geyser continuous eruption active | |
+| geyser_continuous_eruption_start | Geyser continuous eruption start | |
 | geyser_eruption_active | Geyser eruption active | |
 | geyser_eruption_start | Geyser eruption start | |
 | glass | Glass | |
@@ -658,11 +660,11 @@ Filters allow data objects to specify test criteria which allows their use. Filt
 | self | Self | |
 | target | Target | |
 
-### Item Components FloatRange
-Has minimum and maximum float values.
+### Item FloatRange
+Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
 
 
-#### Item Components FloatRange Properties
+#### Item FloatRange Properties
 
 **JSON path:** `sound_interval`
 

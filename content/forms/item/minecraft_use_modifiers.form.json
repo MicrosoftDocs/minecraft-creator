@@ -1001,6 +1001,14 @@
             "title": "Gallop"
           },
           {
+            "id": "geyser_continuous_eruption_active",
+            "title": "Geyser continuous eruption active"
+          },
+          {
+            "id": "geyser_continuous_eruption_start",
+            "title": "Geyser continuous eruption start"
+          },
+          {
             "id": "geyser_eruption_active",
             "title": "Geyser eruption active"
           },
@@ -2367,5 +2375,6 @@
         }
       ]
     }
-  }
+  },
+  "description": "Determines how long an item takes to use in combination with components such as Shooter, Throwable, or Food."
 }

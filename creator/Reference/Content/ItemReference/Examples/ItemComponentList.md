@@ -25,7 +25,7 @@ ms.date: 02/11/2025
 | [minecraft:durability](./ItemComponents/minecraft_durability.md)| Sets how much damage the item can take before breaking, and allows the item to be combined at an anvil, grindstone, or crafting table. |
 | [minecraft:durability_sensor](./ItemComponents/minecraft_durability_sensor.md)| Enables an item to emit effects when it receives damage. |
 | [minecraft:durability_sensor durability_threshold](./ItemComponents/minecraft_durability_sensor_durability_threshold.md)| Defines both the durability threshold, and the effects emitted when that threshold is met. |
-| [minecraft:dyeable](./ItemComponents/minecraft_dyeable.md)| enables custom items to be dyed in cauldrons. |
+| [minecraft:dyeable](./ItemComponents/minecraft_dyeable.md)| Enables players to dye this item using dyes in a crafting grid, like leather armor. |
 | [minecraft:enchantable](./ItemComponents/minecraft_enchantable.md)| Determines what enchantments can be applied to the item. |
 | [minecraft:entity_placer](./ItemComponents/minecraft_entity_placer.md)| Allows an item to place entities into the world. |
 | [minecraft:fire_resistant](./ItemComponents/minecraft_fire_resistant.md)| Determines whether the item is immune to burning when dropped in fire or lava. |
@@ -36,7 +36,9 @@ ms.date: 02/11/2025
 | [minecraft:hover_text_color](./ItemComponents/minecraft_hover_text_color.md)| Determines the color of the item name when hovering over it. |
 | [minecraft:icon](./ItemComponents/minecraft_icon.md)| Determines the icon to represent the item in the UI and elsewhere. |
 | [minecraft:interact_button](./ItemComponents/minecraft_interact_button.md)| A boolean or string that determines if the interact button is shown in touch controls, and what text is displayed on the button. |
-| [Minecraft Item Item](./ItemComponents/minecraft_item.md)| Refers to the item definition, which includes the 'description' and 'components' sections of the file. |
+| [minecraft:item v1.26.0](./ItemComponents/minecraft_item.md)| Refers to the item definition, which includes the 'description' and 'components' sections of the file. |
+| [minecraft:item v1.21.90](./ItemComponents/minecraft_item_v1_21_90.md)| Item definition includes the "description" and "components" sections. |
+| [minecraft:item v1.26.0](./ItemComponents/minecraft_item_v1_26_0.md)| Item definition includes the "description" and "components" sections. |
 | [minecraft:kinetic_weapon](./ItemComponents/minecraft_kinetic_weapon.md)| Allows an item to deal kinetic damage and its effects. |
 | [minecraft:kinetic_weapon kinetic_effect_conditions](./ItemComponents/minecraft_kinetic_weapon_kinetic_effect_conditions.md)| Conditions that need to be satisfied for a specific effect of a kinetic weapon to be applied. |
 | [minecraft:liquid_clipped](./ItemComponents/minecraft_liquid_clipped.md)| The liquid_clipped component determines whether the item interacts with liquid blocks on use. |

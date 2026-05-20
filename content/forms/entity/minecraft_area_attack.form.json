@@ -134,7 +134,7 @@
   "fields": [
     {
       "id": "cause",
-      "description": "The type of damage that is applied to entities that enter the damage range. A list of available damage sources can be found at [Entity Damage Sources located in the Vanilla Listings Documentation](../../VanillaListingsReference/AddonEntityDamageSources.md).",
+      "description": "The type of damage that is applied to entities that enter the damage range. A list of available damage sources can be found at [Entity Damage Sources located in the Vanilla Listings Documentation](../../../VanillaListingsReference/AddonEntityDamageSources.md).",
       "dataType": "stringLookup",
       "lookupId": "damageCause"
     },
@@ -247,6 +247,12 @@
             }
           ]
         }
+      },
+      {
+        "id": "death_message_override",
+        "title": "Death Message Override",
+        "description": "A localization key to use as the death message when the area attack kills an entity. If empty, the default death message for the damage cause is used.",
+        "dataType": "string"
       },
       {
         "id": "entity_filter",

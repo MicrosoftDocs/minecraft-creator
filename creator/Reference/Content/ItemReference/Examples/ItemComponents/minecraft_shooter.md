@@ -21,28 +21,28 @@ Compels an item to shoot projectiles, similarly to a bow or crossbow. Must have 
 > [!Note]
 > Requires the following component in order to work properly:
 > 
-> * [Projectile (minecraft:projectile)](../EntityComponents/minecraftComponent_projectile.md)
+> * [Projectile (minecraft:projectile)](./minecraft_projectile.md)
 > 
 
-## Item Components Shooter Properties
+## Item Shooter Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| ammunition | [] | Array of [Ammunition](#item-components-ammunition) items | A list of ammunition entries that define which items can be used as projectiles for this shooter. | My Sword Shoot: `[{"item":"minecraft:snowball","use_offhand":true,"search_inventory":true,"use_in_creative":true}]` | 
-| charge_on_draw | false | Boolean true/false | When true, the shooter begins charging when the player starts drawing, similar to a crossbow. Default is false. |  | 
-| max_draw_duration | 0 | Decimal number | The maximum time in seconds that a player can draw the shooter before it automatically fires or reaches maximum power. Default is 0. | My Sword Shoot: `1` | 
-| scale_power_by_draw_duration | false | Boolean true/false | When true, the projectile's launch power increases based on how long the player holds the use button before releasing. Default is false. | My Sword Shoot: `true` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| ammunition | [] | Array of [Ammunition](#item-ammunition) items | A list of ammunition entries that define which items can be used as projectiles for this shooter. | 
+| charge_on_draw | false | Boolean true/false | When true, the shooter begins charging when the player starts drawing, similar to a crossbow. Default is false. | 
+| max_draw_duration | 0 | Decimal number | The maximum time in seconds that a player can draw the shooter before it automatically fires or reaches maximum power. Default is 0. | 
+| scale_power_by_draw_duration | false | Boolean true/false | When true, the projectile's launch power increases based on how long the player holds the use button before releasing. Default is false. | 
 
 ### ammunition
 
 A list of ammunition entries that define which items can be used as projectiles for this shooter. Each entry specifies the item, whether to search the offhand, inventory, and whether to use in creative mode.
 
 
-### Item Components Ammunition
-Is ammunition for a shooter item.
+### Item Ammunition
+Configures this item as ammunition consumed by ranged weapons like bows and crossbows. Reference compatible shooter items and specify search behavior for inventory slots. When players use the associated weapon, this item is consumed and its projectile is launched.
 
 
-#### Item Components Ammunition Properties
+#### Item Ammunition Properties
 
 **JSON path:** `ammunition`
 
@@ -62,25 +62,6 @@ Is ammunition for a shooter item.
   "ammunition": [
     {
       "item": "custom_projectile",
-      "use_offhand": true,
-      "search_inventory": true,
-      "use_in_creative": true
-    }
-  ],
-  "max_draw_duration": 1,
-  "scale_power_by_draw_duration": true,
-  "charge_on_draw": false
-}
-```
-
-#### [My Sword Shoot](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json)
-
-
-```json
-"minecraft:shooter": {
-  "ammunition": [
-    {
-      "item": "minecraft:snowball",
       "use_offhand": true,
       "search_inventory": true,
       "use_in_creative": true

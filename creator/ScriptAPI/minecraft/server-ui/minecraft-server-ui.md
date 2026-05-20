@@ -25,13 +25,14 @@ The `@minecraft/server-ui` module contains types for expressing simple dialog-ba
 ```json
 {
     "module_name": "@minecraft/server-ui",
-    "version": "2.0.0"
+    "version": "2.1.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.30-beta.28 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.30-beta.30 of Minecraft.
 
 ## Available Versions
-- `2.1.0-beta`
+- `2.2.0-beta`
+- `2.1.0`
 - `2.0.0`
 
 ### Prior Versions

@@ -204,7 +204,7 @@
           "max": 0,
           "min": 0
         },
-        "subFormId": "item_components/floatrange",
+        "subFormId": "item/floatrange",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -226,7 +226,7 @@
           "max": 0,
           "min": 0
         },
-        "subFormId": "item_components/floatrange",
+        "subFormId": "item/floatrange",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {

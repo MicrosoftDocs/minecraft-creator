@@ -13,13 +13,11 @@ ms.date: 02/11/2025
 Enables an item to emit effects when it receives damage. Because of this, the item also needs a `minecraft:durability` component.
 
 
-## Item Components Durability Sensor Properties
+## Item Durability Sensor Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| durability | *not set* | Integer number | The effects are emitted when the item durability value is less than or equal to this value. | 
-| durability_thresholds | *not set* | Array of [Durability Thresholds](#item-components-durability-sensor-durability-threshold) items | The list of both durability thresholds and effects emitted when each threshold is met. | 
-| particle_type | *not set* | String | Particle effect to emit when the threshold is met. | 
+| durability_thresholds | *not set* | Array of [Durability Thresholds](#item-durability-sensor-durability-threshold) items | The list of both durability thresholds and effects emitted when each threshold is met. | 
 | sound_event | *not set* | String | Sound effect to emit when the threshold is met. | 
 
 ### durability_thresholds
@@ -27,11 +25,11 @@ Enables an item to emit effects when it receives damage. Because of this, the it
 The list of both durability thresholds and effects emitted when each threshold is met. When multiple thresholds are met, only the threshold with the lowest durability after applying the damage is considered. Value must have at least 1 items.
 
 
-### Item Components Durability Sensor Durability Threshold
+### Item Durability Sensor Durability Threshold
 Defines both the durability threshold, and the effects emitted when that threshold is met.
 
 
-#### Item Components Durability Sensor Durability Threshold Properties
+#### Item Durability Sensor Durability Threshold Properties
 
 **JSON path:** `durability_thresholds`
 

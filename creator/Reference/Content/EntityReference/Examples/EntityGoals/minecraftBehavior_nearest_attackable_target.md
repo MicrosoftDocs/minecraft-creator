@@ -17,9 +17,9 @@ Allows an entity to attack the closest target within a given subset of specific 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| attack_interval (Item Components FloatRange) | {"max":0,"min":0} | [Attack Interval](#item-components-floatrange) item | Time range (in seconds) between searching for an attack target, range is in (0, "attack_interval"]. Only used if "attack_interval" is greater than 0, otherwise "scan_interval" is used. | Cave Spider: `{"min":10,"max":10}`, `{"min":5,"max":5}`, Elder Guardian: `{"max":1}` | 
+| attack_interval (Item FloatRange) | {"max":0,"min":0} | [Attack Interval](#item-floatrange) item | Time range (in seconds) between searching for an attack target, range is in (0, "attack_interval"]. Only used if "attack_interval" is greater than 0, otherwise "scan_interval" is used. | Cave Spider: `{"min":10,"max":10}`, `{"min":5,"max":5}`, Elder Guardian: `{"max":1}` | 
 | attack_interval (as Integer number) | *not set* | Integer number |  |  | 
-| attack_interval|attack_interval_min | *not set* | String |  |  | 
+| attack_interval\|attack_interval_min | *not set* | String |  |  | 
 | attack_owner | false | Boolean true/false | If true, this entity can attack its owner. |  | 
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
 | entity_types | [] | Array of [Entity Types](#entity-types) items | List of entity types that this mob considers valid targets | Blaze: `[{"filters":{"AND":[{"test":"is_family","subject":1,"operator":0,"value":"player"}]},"max_dist":48}]`, Bogged: `[{"filters":{"test":"is_family","subject":"other","value":"player"}},{"filters":{"test":"is_family","subject":"other","value":"irongolem"}},{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"baby_turtle"},{"test":"in_water","subject":"other","operator":"!=","value":true}]}}]`, Breeze: `[{"filters":{"AND":[{"test":"is_family","subject":1,"operator":0,"value":"player"}]},"max_dist":24},{"filters":{"AND":[{"test":"is_family","subject":1,"operator":0,"value":"irongolem"}]},"max_dist":24}]` | 
@@ -43,11 +43,11 @@ Allows an entity to attack the closest target within a given subset of specific 
 If "attack_interval" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to "scan_interval", minimum value is 1. Values under 10 can affect performance. Value must be >= 1.
 
 
-### Item Components FloatRange
-Has minimum and maximum float values.
+### Item FloatRange
+Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
 
 
-#### Item Components FloatRange Properties
+#### Item FloatRange Properties
 
 **JSON path:** `attack_interval`
 

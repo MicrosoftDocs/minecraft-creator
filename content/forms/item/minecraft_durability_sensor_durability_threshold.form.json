@@ -13,7 +13,14 @@
     ]
   },
   "id": "minecraft:durability_sensor durability_threshold",
-  "fields": [],
+  "fields": [
+    {
+      "id": "sound_event",
+      "title": "Sound event",
+      "description": "Sound effect to emit when the threshold is met.",
+      "dataType": "string"
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:durability_sensor durability_threshold",
     "title": "Item Durability Sensor Durability Threshold",
@@ -1364,6 +1371,14 @@
           {
             "id": "gallop",
             "title": "Gallop"
+          },
+          {
+            "id": "geyser_continuous_eruption_active",
+            "title": "Geyser continuous eruption active"
+          },
+          {
+            "id": "geyser_continuous_eruption_start",
+            "title": "Geyser continuous eruption start"
           },
           {
             "id": "geyser_eruption_active",

@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server-ui.ObservableString Class
 description: Contents of the @minecraft/server-ui.ObservableString class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ObservableString Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 An observable that holds a string value. Listeners are notified whenever the value changes.
 

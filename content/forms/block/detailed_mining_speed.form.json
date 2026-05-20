@@ -6,7 +6,7 @@
         "tokens": [
           {
             "type": "literal",
-            "text": "has custom mining speed"
+            "text": "defines mining speed with item-specific overrides"
           }
         ]
       }
@@ -24,7 +24,7 @@
         "description": "Optional array with item specific mining speeds.",
         "dataType": "objectArray",
         "defaultValue": [],
-        "subFormId": "block_components/item_specific_speed"
+        "subFormId": "block/item_specific_speed"
       },
       {
         "id": "seconds_to_destroy",

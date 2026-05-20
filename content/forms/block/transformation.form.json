@@ -6,7 +6,7 @@
         "tokens": [
           {
             "type": "literal",
-            "text": "has rotation, scale, or translation"
+            "text": "defines rotation, scale, and translation transforms"
           }
         ]
       }

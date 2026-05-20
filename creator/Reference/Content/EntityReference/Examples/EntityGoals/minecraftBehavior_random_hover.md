@@ -18,7 +18,7 @@ Allows the mob to hover around randomly, close to the surface.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
-| hover_height | {"max":0,"min":0} | [Hover Height](#item-components-intrange) item | The height above the surface which the mob will try to maintain | Allay: `[1,4]` | 
+| hover_height | {"max":0,"min":0} | [Hover Height](#item-intrange) item | The height above the surface which the mob will try to maintain | Allay: `[1,4]` | 
 | interval | 120 | Integer number | A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal | Allay: `1` | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `9` | 
 | speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal |  | 
@@ -34,11 +34,11 @@ Allows the mob to hover around randomly, close to the surface.
 | look | Look | |
 | move | Move | |
 
-### Item Components IntRange
-Has minimum and maximum integer values.
+### Item IntRange
+Specifies an integer range between minimum and maximum values for item properties requiring whole numbers. Used for stack count variations, discrete charge levels, or quantity ranges in loot tables. Ensures values stay within valid bounds for countable item properties.
 
 
-#### Item Components IntRange Properties
+#### Item IntRange Properties
 
 **JSON path:** `hover_height`
 

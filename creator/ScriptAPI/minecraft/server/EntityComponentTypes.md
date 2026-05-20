@@ -226,6 +226,10 @@ When present on an entity, this entity is on fire.
 `Exhaustion = "minecraft:player.exhaustion"`
 
 Use this component to read the exhaustion of a player. This is only available on players.
+### **Fog**
+`Fog = "minecraft:player.fog"`
+
+Use this component to access and manipulate the fog definitions stack of a player. This is only available on players.
 ### **Hunger**
 `Hunger = "minecraft:player.hunger"`
 

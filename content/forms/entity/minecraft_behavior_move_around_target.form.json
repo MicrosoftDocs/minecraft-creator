@@ -210,7 +210,7 @@
           "max": 8,
           "min": 4
         },
-        "subFormId": "item_components/floatrange",
+        "subFormId": "item/floatrange",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {

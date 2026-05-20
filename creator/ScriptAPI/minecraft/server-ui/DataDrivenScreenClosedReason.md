@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server-ui.DataDrivenScreenClosedReason Enumeration
 description: Contents of the @minecraft/server-ui.DataDrivenScreenClosedReason enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # DataDrivenScreenClosedReason Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 The reason why a data driven UI screen (MessageBox or CustomForm) was closed.
 

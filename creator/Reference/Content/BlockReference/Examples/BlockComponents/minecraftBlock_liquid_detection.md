@@ -23,7 +23,7 @@ Experimental toggles required: Upcoming Creator Features (in format versions bef
 |:----------|:-------------|:----|:-----------|
 | can_contain_liquid | false | Boolean true/false | Whether this block can contain the liquid. For example, if the liquid type is `water`, this means the block can be waterlogged. | 
 | liquid_type | water | String | The type of liquid this detection rule is for. Currently, `water` is the only supported liquid type. If this field is omitted, `water` will be the liquid type by default. | 
-| on_liquid_touches | blocking | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | How the block reacts to flowing water. | 
+| on_liquid_touches | blocking | Minecraft Event Trigger | How the block reacts to flowing water. | 
 | stops_liquid_flowing_from_direction | *not set* | Array of strings | When a block contains a liquid, controls the directions in which the liquid can't flow out from the block. | 
 | use_liquid_clipping | false | Boolean true/false | Whether this block uses the encompassing collider to visually clip the liquid. | 
 

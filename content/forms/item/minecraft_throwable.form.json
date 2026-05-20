@@ -4,6 +4,21 @@
   "summarizer": {
     "phrases": [
       {
+        "visibility": [
+          {
+            "field": "scale_power_by_draw_duration",
+            "comparison": "equals",
+            "value": true
+          }
+        ],
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can be thrown with charge-up power"
+          }
+        ]
+      },
+      {
         "tokens": [
           {
             "type": "literal",
@@ -98,5 +113,7 @@
         }
       ]
     }
-  }
+  },
+  "description": "Makes an item throwable by the player, similar to a snowball or ender pearl. Use with minecraft:projectile to specify which entity is spawned when thrown.",
+  "note": "Combine with minecraft:projectile to define the projectile entity. For charged throws (like tridents), set scale_power_by_draw_duration to true and configure min/max draw durations."
 }

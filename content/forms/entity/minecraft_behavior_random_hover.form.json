@@ -171,7 +171,7 @@
           "max": 0,
           "min": 0
         },
-        "subFormId": "item_components/intrange",
+        "subFormId": "item/intrange",
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
             {

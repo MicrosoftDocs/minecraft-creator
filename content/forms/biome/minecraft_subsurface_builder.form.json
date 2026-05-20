@@ -1,0 +1,18 @@
+{
+  "id": "minecraft:subsurface_builder",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:subsurface_builder",
+    "title": "Subsurface Builder",
+    "description": "Sub Surface Builders allow specifying a `minecraft:surface_builder` to be applied to biomes located underneath regular terrain surface. Note, however, that pre-existing surface builder types' processing have not been updated to accommodate the ability to specify them for sub-terrain height ranges, which may lead to unexpected results when using them.",
+    "fields": [
+      {
+        "id": "builder",
+        "title": "Builder",
+        "description": "Controls block types and strategy used for terrain generation.",
+        "dataType": "object",
+        "isRequired": true
+      }
+    ]
+  }
+}

@@ -201,7 +201,7 @@
           "min": 0
         },
         "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
-        "subFormId": "item_components/floatrange",
+        "subFormId": "item/floatrange",
         "samples": {
           "/vanilla/behavior_pack/entities/phantom.json": [
             {
@@ -230,7 +230,7 @@
           "max": 0,
           "min": 0
         },
-        "subFormId": "item_components/floatrange",
+        "subFormId": "item/floatrange",
         "samples": {
           "/vanilla/behavior_pack/entities/phantom.json": [
             {
@@ -281,7 +281,7 @@
           "min": 5
         },
         "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
-        "subFormId": "item_components/floatrange"
+        "subFormId": "item/floatrange"
       },
       {
         "id": "speed_multiplier",

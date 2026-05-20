@@ -30,13 +30,14 @@ ms.date: 02/11/2025
 | [minecraft:flower_pottable](./minecraftBlock_flower_pottable.md)| When added to a block type, indicates that this block can be placed inside a flower pot. |
 | [minecraft:friction](./minecraftBlock_friction.md)| Describes the friction for this block in a range of 0.0 to 0.9. |
 | [minecraft:geometry](./minecraftBlock_geometry.md)| The description identifier of the geometry to use to render this block. |
+| [minecraft:instrument_sound](./minecraftBlock_instrument_sound.md)| [Note: This component is currently experimental]. |
 | [minecraft:item_visual](./minecraftBlock_item_visual.md)| The description identifier of the geometry and material used to render the item of this block. |
 | [minecraft:light_dampening](./minecraftBlock_light_dampening.md)| The amount that light will be dampened when it passes through the block, in a range of 0-15. |
 | [minecraft:light_emission](./minecraftBlock_light_emission.md)| The amount of light this block will emit in a range of 0-15. |
 | [minecraft:liquid_detection](./minecraftBlock_liquid_detection.md)| The definitions for how a block behaves when detecting liquid. |
 | [minecraft:loot](./minecraftBlock_loot.md)| Specifies the path to the loot table that determines what items are dropped when the block is destroyed. |
 | [minecraft:map_color](./minecraftBlock_map_color.md)| Sets the color of the block when rendered to a map. |
-| [minecraft:material_instances](./minecraftBlock_material_instances.md)| The material instances for a block. |
+| [minecraft:material_instances](./minecraftBlock_material_instances.md)| The material instances for a block. Maps face or material_instance names in a geometry file to an actual material instance. |
 | [minecraft:movable](./minecraftBlock_movable.md)| The description identifier of the movable component Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.100) |
 | [minecraft:placement_filter](./minecraftBlock_placement_filter.md)| Sets rules for under what conditions the block can be placed and survive. |
 | [minecraft:precipitation_interactions](./minecraftBlock_precipitation_interactions.md)| Component that determines how the block will interact with rain and snow Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.120) |

@@ -6,7 +6,7 @@
         "tokens": [
           {
             "type": "literal",
-            "text": "has custom geometry with culling and visibility"
+            "text": "defines detailed geometry settings with bone visibility"
           }
         ]
       }
@@ -98,7 +98,7 @@
         "title": "n Way Visual Rotation",
         "description": "Optional object that maps x/y/z axes to block state names that drive visual-only geometry rotation.",
         "dataType": "object",
-        "subFormId": "block_components/nwayvisualrotation"
+        "subFormId": "block/nwayvisualrotation"
       },
       {
         "id": "uv_lock",

@@ -118,7 +118,7 @@
           "min": 100
         },
         "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
-        "subFormId": "item_components/intrange"
+        "subFormId": "item/intrange"
       },
       {
         "id": "max_durability",
@@ -129,5 +129,20 @@
       }
     ],
     "samples": {}
+  },
+  "description": "Sets how much damage the item can take before breaking, and allows the item to be combined at an anvil, grindstone, or crafting table.",
+  "samples": {
+    "sample": [
+      {
+        "path": "sample",
+        "content": {
+          "damage_chance": {
+            "min": 10,
+            "max": 50
+          },
+          "max_durability": 36
+        }
+      }
+    ]
   }
 }

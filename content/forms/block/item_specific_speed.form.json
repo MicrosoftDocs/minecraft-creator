@@ -6,7 +6,7 @@
         "tokens": [
           {
             "type": "literal",
-            "text": "has item-specific mining speed"
+            "text": "defines mining speed for a specific item"
           }
         ]
       }

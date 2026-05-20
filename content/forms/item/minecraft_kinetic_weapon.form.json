@@ -24,14 +24,14 @@
         "title": "Creative Reach",
         "description": "Defines the reach used when the user is in Creative Mode. Defaults to \"reach\" if unspecified.",
         "dataType": "object",
-        "subFormId": "item_components/floatrange"
+        "subFormId": "item/floatrange"
       },
       {
         "id": "damage_conditions",
         "title": "Damage Conditions",
         "description": "Conditions that need to be satisfied for damage to be applied. If not specified, damage is not applied.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_kinetic_weapon_kinetic_effect_conditions"
+        "subFormId": "item/minecraft_kinetic_weapon_kinetic_effect_conditions"
       },
       {
         "id": "damage_modifier",
@@ -59,7 +59,7 @@
         "title": "Dismount Conditions",
         "description": "Conditions that need to be satisfied for riders to be dismounted. If not specified, riders cannot be dismounted.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_kinetic_weapon_kinetic_effect_conditions"
+        "subFormId": "item/minecraft_kinetic_weapon_kinetic_effect_conditions"
       },
       {
         "id": "hitbox_margin",
@@ -73,7 +73,7 @@
         "title": "Knockback Conditions",
         "description": "Conditions that need to be satisfied for knockback to be applied. If not specified, knockback is not applied.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_kinetic_weapon_kinetic_effect_conditions"
+        "subFormId": "item/minecraft_kinetic_weapon_kinetic_effect_conditions"
       },
       {
         "id": "reach",
@@ -84,7 +84,7 @@
           "max": 3,
           "min": 0
         },
-        "subFormId": "item_components/floatrange"
+        "subFormId": "item/floatrange"
       }
     ],
     "samples": {}

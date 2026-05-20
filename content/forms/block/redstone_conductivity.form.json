@@ -6,7 +6,7 @@
         "tokens": [
           {
             "type": "literal",
-            "text": "can conduct redstone"
+            "text": "defines redstone power conductivity properties"
           }
         ]
       }

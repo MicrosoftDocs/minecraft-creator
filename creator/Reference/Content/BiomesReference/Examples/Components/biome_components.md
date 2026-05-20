@@ -43,7 +43,7 @@ Any components that this Biome uses.
 | minecraft:overworld_height | *not set* | [Overworld Height](#biome-overworld-height) item | Noise parameters used to drive terrain height in the Overworld. | 
 | minecraft:partially_frozen | *not set* | Object | Component will impact the temperature in a frozen biome, causing some areas to not be frozen. Ex: patchy ice, patchy snow | 
 | minecraft:replace_biomes | *not set* | [Replace Biomes](#biome-replace-biomes) item | Replaces a specified portion of one or more Minecraft biomes. | 
-| minecraft:subsurface_builder | *not set* | [Subsurface Builder](#biome-surface-builder) item | Sub Surface Builders allow specifying a `minecraft:surface_builder` to be applied to biomes located underneath regular terrain surface. | 
+| minecraft:subsurface_builder | *not set* | Object | Sub Surface Builders allow specifying a `minecraft:surface_builder` to be applied to biomes located underneath regular terrain surface. | 
 | minecraft:surface_builder | *not set* | [Surface Builder](#biome-surface-builder) item | Controls materials used for terrain generation. | 
 | minecraft:surface_material_adjustments | *not set* | [Surface Material Adjustments](#biome-surface-material-adjustments) item | Specify fine-detail changes to blocks used in terrain generation (based on a noise function). | 
 | minecraft:tags | *not set* | [Tags](#biome-tags) item | Attach arbitrary string tags to this biome. | 
@@ -330,7 +330,7 @@ Controls materials used for terrain generation.
 
 #### Biome Surface Builder Properties
 
-**JSON path:** `minecraft:subsurface_builder`
+**JSON path:** `minecraft:surface_builder`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -347,7 +347,7 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 
 ##### Biome Overworld Properties
 
-**JSON path:** `minecraft:subsurface_builder > builder`
+**JSON path:** `minecraft:surface_builder > builder`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -368,7 +368,7 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 
 ###### Foundation Material Properties
 
-**JSON path:** `minecraft:subsurface_builder > builder > foundation_material`
+**JSON path:** `minecraft:surface_builder > builder > foundation_material`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -420,7 +420,7 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 
 ##### Biome Mesa Properties
 
-**JSON path:** `minecraft:subsurface_builder > builder`
+**JSON path:** `minecraft:surface_builder > builder`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -447,7 +447,7 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 
 ###### Clay Material Properties
 
-**JSON path:** `minecraft:subsurface_builder > builder > clay_material`
+**JSON path:** `minecraft:surface_builder > builder > clay_material`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -467,7 +467,7 @@ Used to add decoration to the surface of swamp biomes such as water lilies.
 
 ##### Biome Swamp Properties
 
-**JSON path:** `minecraft:subsurface_builder > builder`
+**JSON path:** `minecraft:surface_builder > builder`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -496,7 +496,7 @@ Generates surface on blocks with non-solid blocks above or below.
 
 ##### Biome Capped Properties
 
-**JSON path:** `minecraft:subsurface_builder > builder`
+**JSON path:** `minecraft:surface_builder > builder`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -516,7 +516,7 @@ Generates surface on blocks with non-solid blocks above or below.
 
 ###### Beach Material Properties
 
-**JSON path:** `minecraft:subsurface_builder > builder > beach_material`
+**JSON path:** `minecraft:surface_builder > builder > beach_material`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -541,7 +541,7 @@ Marks a biome as using End dimension terrain generation. Biomes with this compon
 
 ##### Biome The End Properties
 
-**JSON path:** `minecraft:subsurface_builder > builder`
+**JSON path:** `minecraft:surface_builder > builder`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

@@ -132,8 +132,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:desert_or_swamp_after_surface_fossil_feature`
 - `minecraft:jungle_after_surface_vines_feature`
 - `minecraft:overworld_amethyst_geode_feature`
-- `minecraft:sulfur_caves_after_underground_glow_lichen_cluster_feature_rules`
-- `minecraft:overworld_underground_glow_lichen_feature`
 - `minecraft:overworld_underground_iron_ore_small_feature`
 - `minecraft:mesa_underground_gold_ore_feature`
 - `minecraft:overworld_underground_diamond_ore_feature_square`
@@ -211,6 +209,7 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:crimson_roots_soul_sand_valley_feature`
 - `minecraft:nether_sprouts_feature_rules`
 - `minecraft:roofed_forest_surface_roofed_tree_feature_rules`
+- `minecraft:overworld_underground_glow_lichen_feature`
 - `minecraft:overworld_underground_deepslate_feature`
 - `minecraft:overworld_extra_cave_carver_feature`
 - `minecraft:overworld_cave_carver_feature`
@@ -326,7 +325,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:warped_roots_scatter_feature`
 - `minecraft:warped_roots_feature`
 - `minecraft:random_sulfur_spring_with_tuff_feature`
-- `minecraft:glow_lichen_cluster_feature`
 - `minecraft:gold_ore_lower_feature`
 - `minecraft:sulfur_spring_trail_to_surface_snap_to_ceiling_feature`
 - `minecraft:crimson_roots_scatter_feature`

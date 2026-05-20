@@ -1,0 +1,10 @@
+{
+  "id": "minecraft:partially_frozen",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:partially_frozen",
+    "title": "Partially Frozen",
+    "description": "Component will impact the temperature in a frozen biome, causing some areas to not be frozen. Ex: patchy ice, patchy snow",
+    "fields": []
+  }
+}

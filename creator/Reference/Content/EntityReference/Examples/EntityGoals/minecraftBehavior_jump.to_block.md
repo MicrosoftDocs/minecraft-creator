@@ -18,7 +18,7 @@ Allows an entity to jump to another random block.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
-| cooldown_range | {"max":20,"min":10} | [Cooldown Range](#item-components-floatrange) item | Minimum and maximum cooldown time-range (positive, in seconds) between each attempted jump. | Frog: `[5,7]`, Goat: `[30,60]` | 
+| cooldown_range | {"max":20,"min":10} | [Cooldown Range](#item-floatrange) item | Minimum and maximum cooldown time-range (positive, in seconds) between each attempted jump. | Frog: `[5,7]`, Goat: `[30,60]` | 
 | forbidden_blocks | [] | String | Blocks that the mob can't jump to. | Frog: `["minecraft:water"]` | 
 | forbidden_blocks (as Keyed set of strings) | *not set* | Keyed set of strings |  |  | 
 | max_velocity | 1.5 | Decimal number | The maximum velocity with which the mob can jump. | Frog: `1` | 
@@ -45,11 +45,11 @@ Minimum and maximum cooldown time-range (positive, in seconds) between each atte
 | look | Look | |
 | move | Move | |
 
-### Item Components FloatRange
-Has minimum and maximum float values.
+### Item FloatRange
+Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
 
 
-#### Item Components FloatRange Properties
+#### Item FloatRange Properties
 
 **JSON path:** `cooldown_range`
 

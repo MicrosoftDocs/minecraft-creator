@@ -68,9 +68,9 @@ Fireworks
 Thorns
 - `none`
 None
-- `sonic_boom`
 - `contact`
 Contact
+- `sonic_boom`
 - `override`
 Override
 - `entity_attack`

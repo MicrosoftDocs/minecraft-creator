@@ -1,76 +1,122 @@
-{
-  "$schema": "../../../schemas/dataform/form-definition.schema.json",
-  "summarizer": {
-    "phrases": [
-      {
-        "tokens": [
-          {
-            "type": "literal",
-            "text": "has custom map color"
-          }
-        ]
-      }
-    ]
-  },
-  "id": "Map Color",
-  "fields": [],
-  "generatedFromSchema_doNotEdit": {
-    "id": "Map Color",
-    "title": "Block Map Color",
-    "description": "Sets the color and optional tint of the block when rendered to a map.",
-    "fields": [
-      {
-        "id": "color",
-        "title": "Color",
-        "description": "Sets the color of the block when rendered to a map. The color is represented as a hex value in the format \"#RRGGBB\". May also be expressed as an array of [R, G, B] from 0 to 255.",
-        "dataType": 2,
-        "alternates": [
-          {
-            "id": "color",
-            "dataType": 32,
-            "minLength": 3,
-            "maxLength": 3
-          }
+﻿{
+  "$schema":  "../../../schemas/dataform/form-definition.schema.json",
+  "summarizer":  {
+            "phrases":  [
+                    {
+                      "tokens":  [
+                             {
+                               "type":  "literal",
+                               "text":  "defines the block color when rendered on maps"
+                             }
+                           ]
+                    }
+                  ]
+          },
+  "id":  "Map Color",
+  "fields":  [
+
         ],
-        "isRequired": true
-      },
-      {
-        "id": "tint_method",
-        "title": "Tint Method",
-        "description": "Sets the tint method of the block when rendered to a map. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint. Supported tint methods are \"none\", \"default_foliage\", \"birch_foliage\", \"evergreen_foliage\", \"dry_foliage\", \"grass\" and \"water\"",
-        "dataType": 2,
-        "choices": [
-          {
-            "id": "birch_foliage",
-            "title": "Birch foliage"
-          },
-          {
-            "id": "default_foliage",
-            "title": "Default foliage"
-          },
-          {
-            "id": "dry_foliage",
-            "title": "Dry foliage"
-          },
-          {
-            "id": "evergreen_foliage",
-            "title": "Evergreen foliage"
-          },
-          {
-            "id": "grass",
-            "title": "Grass"
-          },
-          {
-            "id": "none",
-            "title": "None"
-          },
-          {
-            "id": "water",
-            "title": "Water"
-          }
-        ],
-        "defaultValue": "none"
-      }
-    ]
-  }
+  "generatedFromSchema_doNotEdit":  {
+                     "id":  "Map Color",
+                     "title":  "Block Map Color",
+                     "description":  "Sets the color and optional tint of the block when rendered to a map.",
+                     "fields":  [
+                            {
+                              "id":  "color",
+                              "title":  "Color",
+                              "description":  "Sets the color of the block when rendered to a map. The color is represented as a hex value in the format \"#RRGGBB\". May also be expressed as an array of [R, G, B] from 0 to 255.",
+                              "dataType":  2,
+                              "alternates":  [
+                                        {
+                                          "id":  "color",
+                                          "dataType":  32,
+                                          "minLength":  3,
+                                          "maxLength":  3
+                                        }
+                                      ],
+                              "isRequired":  true
+                            },
+                            {
+                              "id":  "tint_method",
+                              "title":  "Tint Method",
+                              "description":  "Sets the tint method of the block when rendered to a map. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint. Supported tint methods are \"none\", \"default_foliage\", \"birch_foliage\", \"evergreen_foliage\", \"dry_foliage\", \"grass\" and \"water\"",
+                              "dataType":  2,
+                              "choices":  [
+                                      {
+                                        "id":  "birch_foliage",
+                                        "title":  "Birch foliage"
+                                      },
+                                      {
+                                        "id":  "default_foliage",
+                                        "title":  "Default foliage"
+                                      },
+                                      {
+                                        "id":  "dry_foliage",
+                                        "title":  "Dry foliage"
+                                      },
+                                      {
+                                        "id":  "evergreen_foliage",
+                                        "title":  "Evergreen foliage"
+                                      },
+                                      {
+                                        "id":  "grass",
+                                        "title":  "Grass"
+                                      },
+                                      {
+                                        "id":  "none",
+                                        "title":  "None"
+                                      },
+                                      {
+                                        "id":  "water",
+                                        "title":  "Water"
+                                      }
+                                    ],
+                              "defaultValue":  "none"
+                            }
+                          ]
+                   },
+  "samples":  {
+          "Block Fabricator":  [
+                      {
+                        "path":  "https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json",
+                        "content":  "#5f4a2b"
+                      }
+                    ],
+          "Block Gray Ore":  [
+                      {
+                        "path":  "https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/gray_ore.block.json",
+                        "content":  "#ffcd17"
+                      }
+                    ],
+          "Block Palm Leave":  [
+                      {
+                        "path":  "https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json",
+                        "content":  "#639f28"
+                      }
+                    ],
+          "Block White Sand":  [
+                      {
+                        "path":  "https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/white_sand.block.json",
+                        "content":  "#fdfdfd"
+                      }
+                    ],
+          "Block Leaf Pile":  [
+                      {
+                        "path":  "https://github.com/microsoft/minecraft-samples/tree/main/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json",
+                        "content":  "#ffffff"
+                      }
+                    ],
+          "Block Orange Ore":  [
+                      {
+                        "path":  "https://github.com/microsoft/minecraft-samples/tree/main/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json",
+                        "content":  "#a69787"
+                      }
+                    ],
+          "Apple Block":  [
+                    {
+                      "path":  "https://github.com/microsoft/minecraft-samples/tree/main/custom_features/example_feature_set/behavior_packs/example_feature_set/blocks/apple_block.json",
+                      "content":  "#f30000"
+                    }
+                  ]
+        }
 }

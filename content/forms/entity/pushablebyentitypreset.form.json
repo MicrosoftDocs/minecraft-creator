@@ -64,18 +64,18 @@
         ]
       },
       {
-        "id": "kick_distance_threshold",
-        "title": "Kick Distance Threshold",
-        "description": "Maximum horizontal distance at which another entity can kick this entity. Only used when push_mode is \"ball\".",
-        "dataType": "float",
-        "defaultValue": 1.2999999523162842
-      },
-      {
         "id": "kick_speed_scale",
         "title": "Kick Speed Scale",
         "description": "Multiplier applied to the pushing entity's movement speed to determine kick force. Only used when push_mode is \"ball\".",
         "dataType": "float",
         "defaultValue": 2
+      },
+      {
+        "id": "max_distance",
+        "title": "Max Distance",
+        "description": "Maximum horizontal distance between the center of the pushed entity and the collision of the pushing entity for push forces to be applied. Entities further apart than this will not push each other.",
+        "dataType": "float",
+        "defaultValue": 3.4028234663852886e+38
       },
       {
         "id": "max_kick_speed",
@@ -87,7 +87,7 @@
       {
         "id": "min_distance",
         "title": "Min Distance",
-        "description": "Minimum distance between two entities for push forces to be applied. Entities closer than this will not push each other.",
+        "description": "Minimum horizontal distance between the centers of the two entities for push forces to be applied. Entities closer than this will not push each other.",
         "dataType": "float",
         "defaultValue": 0.009999999776482582
       },
@@ -97,6 +97,13 @@
         "description": "Minimum speed the ball will be kicked at, regardless of how slowly the pushing entity is moving. Only used when push_mode is \"ball\".",
         "dataType": "float",
         "defaultValue": 0
+      },
+      {
+        "id": "play_sound",
+        "title": "Play Sound",
+        "description": "If the \"pushed_by_player\" sound should be played when the entity is pushed by any other entity (despite the sound name).",
+        "dataType": "boolean",
+        "defaultValue": false
       },
       {
         "id": "play_sound_cooldown_in_seconds",
@@ -115,7 +122,7 @@
       {
         "id": "push_mode",
         "title": "PushMode",
-        "description": "Defines the type of push vector calculation applied to the entity:\n- \"default\": Standard push calculation used by most entities.\n- \"legacy_boat\": Legacy push calculation historically used by boats. Includes dampened forces and sneak-based cancellation.\n- \"legacy_minecart\": Legacy push calculation historically used by minecarts. Includes alignment-based collision handling and velocity averaging.- \"ball\": Push calculation for ball-like entities. The ball is kicked in the direction of the pushing entity's movement, with force based on their movement speed.",
+        "description": "Defines the type of push vector calculation applied to the entity:\n- \"none\": The entity cannot be pushed.\n- \"default\": Standard push calculation used by most entities.\n- \"legacy_boat\": Legacy push calculation historically used by boats. Includes dampened forces and sneak-based cancellation.\n- \"legacy_minecart\": Legacy push calculation historically used by minecarts. Includes alignment-based collision handling and velocity averaging.- \"ball\": Push calculation for ball-like entities. The ball is kicked in the direction of the pushing entity's movement, with force based on their movement speed.",
         "dataType": "string",
         "choices": [
           {
@@ -133,6 +140,10 @@
           {
             "id": "legacy_minecart",
             "title": "Legacy minecart"
+          },
+          {
+            "id": "none",
+            "title": "None"
           }
         ],
         "defaultValue": "default"

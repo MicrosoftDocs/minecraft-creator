@@ -58,8 +58,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:polished_sulfur_wall`
 - `minecraft:potent_sulfur`
 - `minecraft:stonecutter_chiseled_cinnabar_from_cinnabar`
-- `minecraft:stonecutter_chiseled_cinnabar_from_cinnabar_bricks`
-- `minecraft:stonecutter_chiseled_sulfur_from_polished_sulfur`
 - `minecraft:stonecutter_chiseled_sulfur_from_sulfur`
 - `minecraft:stonecutter_cinnabar_bricks_from_cinnabar`
 - `minecraft:stonecutter_cinnabar_bricks_from_polished_cinnabar`

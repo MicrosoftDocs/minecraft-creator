@@ -383,5 +383,19 @@
       }
     ],
     "samples": {}
-  }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:material_instances",
+    "title": "Material Instances",
+    "description": "The material instances for a block.\nMaps face or material_instance names in a geometry file to an actual material instance. Material instance can either be a full material instance or a name to another already defined instance.\nLimited to 64 instances.",
+    "fields": [
+      {
+        "id": "*",
+        "title": "<key>",
+        "dataType": "string"
+      }
+    ],
+    "samples": {}
+  },
+  "id": "minecraft:material_instances"
 }

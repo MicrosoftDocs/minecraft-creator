@@ -12,7 +12,7 @@
         "dataType": "objectArray",
         "defaultValue": [],
         "maxLength": 64,
-        "subFormId": "block_components/placement_condition"
+        "subFormId": "block/placement_condition"
       }
     ]
   }

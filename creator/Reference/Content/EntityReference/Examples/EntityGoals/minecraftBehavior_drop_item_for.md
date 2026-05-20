@@ -15,7 +15,7 @@ Allows the entity to move toward a target, and drop an item near the target.
 > [!Note]
 > Requires the following component in order to work properly:
 > 
-> * [Navigation (minecraft:navigation)](../EntityComponents/minecraftComponent_navigation.md)
+> * Navigation (minecraft:navigation)
 > 
 
 ## Entity Drop Item For Behavior Properties
@@ -43,7 +43,7 @@ Allows the entity to move toward a target, and drop an item near the target.
 | target_range (Target Range) | *not set* | [Target Range (Target Range)](#target-range-target-range) item |  | 
 | teleport_offset | [0, 1, 0] | Array of numbers | When the entity teleports, offset the teleport position by this many blocks in the X, Y, and Z coordinate. | 
 | teleport_offset (Teleport Offset) | *not set* | [Teleport Offset (Teleport Offset)](#teleport-offset-teleport-offset) item |  | 
-| time_of_day_range | {"max":1,"min":0} | [Time Of Day Range](#item-components-floatrange) item | The valid times of day that this goal can be used. For reference: noon is 0.0, sunset is 0.25, midnight is 0.5, and sunrise is 0.75, and back to noon for 1.0. | 
+| time_of_day_range | {"max":1,"min":0} | [Time Of Day Range](#item-floatrange) item | The valid times of day that this goal can be used. For reference: noon is 0.0, sunset is 0.25, midnight is 0.5, and sunrise is 0.75, and back to noon for 1.0. | 
 
 ### search_count
 
@@ -146,11 +146,11 @@ Filters allow data objects to specify test criteria which allows their use. Filt
 Same structure as [Target Range (Target Range)](#target-range-target-range).
 
 
-### Item Components FloatRange
-Has minimum and maximum float values.
+### Item FloatRange
+Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
 
 
-#### Item Components FloatRange Properties
+#### Item FloatRange Properties
 
 **JSON path:** `time_of_day_range`
 

@@ -6,7 +6,7 @@
         "tokens": [
           {
             "type": "literal",
-            "text": "has material instance for geometry rendering"
+            "text": "defines material rendering settings for block faces"
           }
         ]
       }

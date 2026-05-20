@@ -10,17 +10,17 @@ ms.date: 02/11/2025
 
 # Items Documentation - minecraft:dyeable
 
-enables custom items to be dyed in cauldrons. To use the dyeable component, the format version on the item and the attachable needs to have a format_version of 1.21.30 or greater.
+Enables players to dye this item using dyes in a crafting grid, like leather armor. Configure the default color when undyed. The item stores its color in NBT data and renders with the player-chosen tint, enabling customizable cosmetic appearances for armor and equipment.
 
 > [!Note]
 > This item requires a format version of at least 1.21.30.
 
 
-## Item Components Dyeable Properties
+## Item Dyeable Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| default_color | [255, 255, 255] | String | default_color | 
+| default_color | [255, 255, 255] | String |  | 
 | default_color (as Array of numbers) | *not set* | Array of numbers |  | 
 
 ## Samples

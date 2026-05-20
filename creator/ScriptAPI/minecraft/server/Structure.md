@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.Structure class.
 ---
 # Structure Class
 
+## Extends
+- [*ISerializable*](ISerializable.md)
+
 Represents a loaded structure template (.mcstructure file). Structures can be placed in a world using the /structure command or the [*@minecraft/server.StructureManager*](../../../scriptapi/minecraft/server/StructureManager.md) APIs.
 
 ## Properties

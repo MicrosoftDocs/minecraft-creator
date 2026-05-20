@@ -4,16 +4,42 @@
   "summarizer": {
     "phrases": [
       {
+        "visibility": [
+          {
+            "field": "use_efficiency",
+            "comparison": "equals",
+            "value": true
+          }
+        ],
         "tokens": [
           {
             "type": "literal",
-            "text": "can dig blocks faster"
+            "text": "can dig specific blocks faster, efficiency enchantment applies"
+          }
+        ]
+      },
+      {
+        "tokens": [
+          {
+            "type": "literal",
+            "text": "can dig specific blocks faster"
           }
         ]
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "use_efficiency",
+      "title": "Use Efficiency",
+      "description": "When true, the Efficiency enchantment will increase the dig speed of this item. Default is false."
+    },
+    {
+      "id": "destroy_speeds",
+      "title": "Destroy Speeds",
+      "description": "An array of objects that define which blocks this item can dig and at what speed. Each entry specifies a block (by ID or tag query) and a speed multiplier."
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:digger",
     "title": "Item Digger",
@@ -25,7 +51,7 @@
         "description": "A list of blocks to dig with correlating speeds of digging.",
         "dataType": "objectArray",
         "defaultValue": [],
-        "subFormId": "item_components/blockinfo"
+        "subFormId": "item/blockinfo"
       },
       {
         "id": "use_efficiency",
@@ -33,6 +59,31 @@
         "description": "Determines whether this item should be impacted if the efficiency enchantment is applied to it.",
         "dataType": "boolean",
         "defaultValue": false
+      }
+    ]
+  },
+  "description": "Configures an item as a digging tool, allowing it to break specific blocks faster than normal. Define which blocks are affected and the speed multiplier for each.",
+  "samples": {
+    "sample": [
+      {
+        "path": "digger",
+        "content": {
+          "minecraft:digger": {
+            "use_efficiency": true,
+            "destroy_speeds": [
+              {
+                "speed": 6,
+                "block": {
+                  "tags": "query.any_tag( 'wood' )"
+                }
+              },
+              {
+                "block": "minecraft:coal_ore",
+                "speed": 2
+              }
+            ]
+          }
+        }
       }
     ]
   }

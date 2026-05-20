@@ -19,7 +19,7 @@ Legacy geometry format using box-mapped UVs. This format uses the 'geometry.<nam
 |:----------|:-------------|:----|:-----------|
 | debug | *not set* | Boolean true/false |  | 
 | format_version | *not set* | Version |  | 
-| geometry.[a-zA-Z0-9_.'-:]+ | *not set* | [+ Geometry](#+-geometry) item |  | 
+| geometry.[a-zA-Z0-9_.'-:]+ | *not set* | [+ Geometry](#-geometry) item |  | 
 | bones.inflate | *not set* | Decimal number | Deprecated - no longer in use. | 
 | bones.reset | *not set* | Boolean true/false | Deprecated - no longer in use. | 
 

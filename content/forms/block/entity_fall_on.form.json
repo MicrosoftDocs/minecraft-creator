@@ -6,7 +6,7 @@
         "tokens": [
           {
             "type": "literal",
-            "text": "triggers events when entities fall on it"
+            "text": "defines behavior when entities fall on this block"
           }
         ]
       }

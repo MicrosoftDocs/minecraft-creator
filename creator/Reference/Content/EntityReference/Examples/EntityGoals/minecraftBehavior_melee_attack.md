@@ -15,8 +15,8 @@ Allows an entity to deal damage through a melee attack.
 > [!Note]
 > Requires a target in order to work properly. Entities can generate targets via one of the following behaviors:
 > 
-> * [minecraft:behavior.nearest_attackable_target](../EntityGoals/minecraftBehavior_nearest_attackable_target.md)
-> * [minecraft:behavior.hurt_by_target](../EntityGoals/minecraftBehavior_hurt_by_target.md)
+> * [Nearest Attackable Target Behavior (minecraft:behavior.nearest_attackable_target)](./minecraftBehavior_nearest_attackable_target.md)
+> * [Hurt By Target Behavior (minecraft:behavior.hurt_by_target)](./minecraftBehavior_hurt_by_target.md)
 > [!Note]
 > Requires the following component in order to work properly:
 > 

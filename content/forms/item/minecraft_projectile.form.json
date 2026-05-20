@@ -23,7 +23,12 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "projectile_entity",
+      "dataType": "string"
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:projectile",
     "title": "Item Projectile",
@@ -51,5 +56,17 @@
       }
     ],
     "samples": {}
+  },
+  "description": "Defines an item as a projectile that can be shot from dispensers or used as ammunition with minecraft:shooter. When combined with minecraft:throwable, this component specifies which entity is spawned when the item is thrown.",
+  "samples": {
+    "sample": [
+      {
+        "path": "sample",
+        "content": {
+          "minimum_critical_power": 1.25,
+          "projectile_entity": "arrow"
+        }
+      }
+    ]
   }
 }

@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.7.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.30-beta.28 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.30-beta.30 of Minecraft.
 
 ## Available Versions
 - `2.9.0-beta`
@@ -254,6 +254,7 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityFireImmuneComponent](EntityFireImmuneComponent.md)
 - [EntityFloatsInLiquidComponent](EntityFloatsInLiquidComponent.md)
 - [EntityFlyingSpeedComponent](EntityFlyingSpeedComponent.md)
+- [EntityFogComponent](EntityFogComponent.md)
 - [EntityFrictionModifierComponent](EntityFrictionModifierComponent.md)
 - [EntityHasMarkVariantCondition](EntityHasMarkVariantCondition.md)
 - [EntityHasVariantCondition](EntityHasVariantCondition.md)
@@ -363,6 +364,7 @@ The following API versions are from a major version that is documented here: [*@
 - [GameRules](GameRules.md)
 - [InputInfo](InputInfo.md)
 - [IsBabyCondition](IsBabyCondition.md)
+- [ISerializable](ISerializable.md)
 - [ItemBookComponent](ItemBookComponent.md)
 - [ItemCompleteUseAfterEvent](ItemCompleteUseAfterEvent.md)
 - [ItemCompleteUseAfterEventSignal](ItemCompleteUseAfterEventSignal.md)
@@ -439,6 +441,8 @@ The following API versions are from a major version that is documented here: [*@
 - [PlayerBreakBlockBeforeEventSignal](PlayerBreakBlockBeforeEventSignal.md)
 - [PlayerButtonInputAfterEvent](PlayerButtonInputAfterEvent.md)
 - [PlayerButtonInputAfterEventSignal](PlayerButtonInputAfterEventSignal.md)
+- [PlayerCancelBreakingBlockAfterEvent](PlayerCancelBreakingBlockAfterEvent.md)
+- [PlayerCancelBreakingBlockAfterEventSignal](PlayerCancelBreakingBlockAfterEventSignal.md)
 - [PlayerCursorInventoryComponent](PlayerCursorInventoryComponent.md)
 - [PlayerDimensionChangeAfterEvent](PlayerDimensionChangeAfterEvent.md)
 - [PlayerDimensionChangeAfterEventSignal](PlayerDimensionChangeAfterEventSignal.md)
@@ -683,6 +687,7 @@ The following API versions are from a major version that is documented here: [*@
 - [EnchantmentLevelOutOfBoundsError](EnchantmentLevelOutOfBoundsError.md)
 - [EnchantmentTypeNotCompatibleError](EnchantmentTypeNotCompatibleError.md)
 - [EnchantmentTypeUnknownIdError](EnchantmentTypeUnknownIdError.md)
+- [EntityFogComponentError](EntityFogComponentError.md)
 - [EntitySpawnError](EntitySpawnError.md)
 - [InvalidBlockComponentError](InvalidBlockComponentError.md)
 - [InvalidContainerError](InvalidContainerError.md)

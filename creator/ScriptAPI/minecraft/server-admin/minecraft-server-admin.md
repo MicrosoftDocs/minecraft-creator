@@ -24,7 +24,7 @@ Contains types related to administering a Bedrock Dedicated Server. These types 
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.30-beta.28 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.30-beta.30 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`

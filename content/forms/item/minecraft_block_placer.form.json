@@ -103,5 +103,23 @@
       }
     ],
     "samples": {}
+  },
+  "description": "Sets the item as a placer item component for blocks. Items with this component will place a block when used.",
+  "note": "This component can also be used instead of the minecraft:icon component to render the block this item will place as the icon.",
+  "versionIntroduced": "1.21.50",
+  "samples": {
+    "sample": [
+      {
+        "path": "/minecraft:item/components/minecraft:block_placer/",
+        "content": {
+          "block": "seeds",
+          "use_on": [
+            "dirt",
+            "grass"
+          ],
+          "replace_block_item": true
+        }
+      }
+    ]
   }
 }
