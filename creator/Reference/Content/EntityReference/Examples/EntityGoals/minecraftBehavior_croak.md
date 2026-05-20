@@ -18,10 +18,10 @@ Allows the entity to croak at a random time interval with configurable condition
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
-| duration | {"max":4.5,"min":4.5} | [Duration](#item-components-floatrange) item | Random range in seconds after which the croaking stops. Can also be a constant. Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected | Frog: `4.5` | 
+| duration | {"max":4.5,"min":4.5} | [Duration](#item-floatrange) item | Random range in seconds after which the croaking stops. Can also be a constant. Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected | Frog: `4.5` | 
 | filters (Filters) | {"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null} | [Filters](#filters) item | Conditions for the behavior to start and keep running. The interval between runs only starts after passing the filters. | Frog: `{"all_of":[{"test":"in_water","value":false},{"test":"in_lava","value":false}]}` | 
 | filters (Alternate 1) | *not set* | Object |  |  | 
-| interval | {"max":20,"min":10} | [Interval](#item-components-floatrange) item | Random range in seconds between runs of this behavior. Can also be a constant. Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected | Frog: `[10,20]` | 
+| interval | {"max":20,"min":10} | [Interval](#item-floatrange) item | Random range in seconds between runs of this behavior. Can also be a constant. Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected | Frog: `[10,20]` | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Frog: `9` | 
 
 ### Control Flags choices
@@ -32,11 +32,11 @@ Allows the entity to croak at a random time interval with configurable condition
 | look | Look | |
 | move | Move | |
 
-### Item Components FloatRange
-Has minimum and maximum float values.
+### Item FloatRange
+Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
 
 
-#### Item Components FloatRange Properties
+#### Item FloatRange Properties
 
 **JSON path:** `duration`
 

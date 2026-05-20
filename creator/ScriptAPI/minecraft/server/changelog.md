@@ -135,6 +135,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`EntityContainerOpenedAfterEvent`](EntityContainerOpenedAfterEvent.md)*
 #### Added *[`EntityContainerOpenedAfterEventSignal`](EntityContainerOpenedAfterEventSignal.md)*
 #### Added *[`EntityEnderInventoryComponent`](EntityEnderInventoryComponent.md)*
+#### Added *[`EntityFogComponent`](EntityFogComponent.md)*
 #### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
 #### Added *[`EntityStartSneakingAfterEvent`](EntityStartSneakingAfterEvent.md)*
 #### Added *[`EntityStartSneakingAfterEventSignal`](EntityStartSneakingAfterEventSignal.md)*
@@ -168,6 +169,8 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`postClientMessage`](Player.md#postclientmessage)*
 - Added function *[`stopAllSounds`](Player.md#stopallsounds)*
 - Added function *[`stopSound`](Player.md#stopsound)*
+#### Added *[`PlayerCancelBreakingBlockAfterEvent`](PlayerCancelBreakingBlockAfterEvent.md)*
+#### Added *[`PlayerCancelBreakingBlockAfterEventSignal`](PlayerCancelBreakingBlockAfterEventSignal.md)*
 #### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
 #### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
 #### Added *[`PlayerStartBreakingBlockAfterEvent`](PlayerStartBreakingBlockAfterEvent.md)*
@@ -212,6 +215,7 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`entityUpgrade`](WorldAfterEvents.md#entityupgrade)*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
 - Added property *[`packSettingChange`](WorldAfterEvents.md#packsettingchange)*
+- Added property *[`playerCancelBreakingBlock`](WorldAfterEvents.md#playercancelbreakingblock)*
 - Added property *[`playerStartBreakingBlock`](WorldAfterEvents.md#playerstartbreakingblock)*
 - Added property *[`playerUseNameTag`](WorldAfterEvents.md#playerusenametag)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
@@ -226,6 +230,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
 - Added value `EnderInventory`
 - Added value `Npc`
+- Added value `Fog`
 #### Changed enum [`EntityHealCause`](EntityHealCause.md)
 - Added value `TotemOfUndying`
 #### Changed enum [`EquipmentSlot`](EquipmentSlot.md)
@@ -1003,6 +1008,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`EntityType`](EntityType.md)*
 #### Added *[`EntityTypeFamilyComponent`](EntityTypeFamilyComponent.md)*
 #### Added *[`EntityTypes`](EntityTypes.md)*
+#### Added *[`ISerializable`](ISerializable.md)*
 #### Added *[`ItemCooldownComponent`](ItemCooldownComponent.md)*
 #### Changed *[`Player`](Player.md)*
 - Added function *[`playMusic`](Player.md#playmusic)*

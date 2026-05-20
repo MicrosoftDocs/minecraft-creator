@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Conditions that need to be satisfied for a specific effect of a kinetic weapon to be applied.
 
 
-## Item Components Kinetic Weapon Kinetic Effect Conditions Properties
+## Item Kinetic Weapon Kinetic Effect Conditions Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

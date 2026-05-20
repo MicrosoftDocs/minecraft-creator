@@ -55,7 +55,8 @@
                   "horizontal_hit_angle_scale": 1.6,
                   "vertical_hit_angle_scale": 0.5,
                   "vertical_position_angle_scale": 0.8,
-                  "scale_with_damage": true
+                  "scale_with_damage": true,
+                  "extra_knockback_approach": "multiply_reduced"
                 },
                 {
                   "filter": {
@@ -71,7 +72,8 @@
                   "horizontal_hit_angle_scale": 1.6,
                   "vertical_hit_angle_scale": 0.5,
                   "vertical_position_angle_scale": 0.8,
-                  "scale_with_damage": true
+                  "scale_with_damage": true,
+                  "extra_knockback_approach": "multiply_reduced"
                 },
                 {
                   "filter": {
@@ -87,7 +89,8 @@
                   "horizontal_hit_angle_scale": 1.6,
                   "vertical_hit_angle_scale": 0.5,
                   "vertical_position_angle_scale": 0.8,
-                  "scale_with_damage": true
+                  "scale_with_damage": true,
+                  "extra_knockback_approach": "multiply_reduced"
                 },
                 {
                   "filter": {
@@ -103,7 +106,8 @@
                   "horizontal_hit_angle_scale": 1.6,
                   "vertical_hit_angle_scale": 0.5,
                   "vertical_position_angle_scale": 0.8,
-                  "scale_with_damage": true
+                  "scale_with_damage": true,
+                  "extra_knockback_approach": "multiply_reduced"
                 },
                 {
                   "filter": {
@@ -119,7 +123,8 @@
                   "horizontal_hit_angle_scale": 1.6,
                   "vertical_hit_angle_scale": 0.5,
                   "vertical_position_angle_scale": 0.8,
-                  "scale_with_damage": true
+                  "scale_with_damage": true,
+                  "extra_knockback_approach": "multiply_reduced"
                 },
                 {
                   "filter": {
@@ -135,7 +140,8 @@
                   "horizontal_hit_angle_scale": 1.6,
                   "vertical_hit_angle_scale": 0.5,
                   "vertical_position_angle_scale": 0.8,
-                  "scale_with_damage": true
+                  "scale_with_damage": true,
+                  "extra_knockback_approach": "multiply_reduced"
                 },
                 {
                   "filter": {
@@ -151,7 +157,8 @@
                   "horizontal_hit_angle_scale": 1.6,
                   "vertical_hit_angle_scale": 0.5,
                   "vertical_position_angle_scale": 0.8,
-                  "scale_with_damage": true
+                  "scale_with_damage": true,
+                  "extra_knockback_approach": "multiply_reduced"
                 },
                 {
                   "filter": {
@@ -167,7 +174,8 @@
                   "horizontal_hit_angle_scale": 1.6,
                   "vertical_hit_angle_scale": 0.5,
                   "vertical_position_angle_scale": 0.8,
-                  "scale_with_damage": true
+                  "scale_with_damage": true,
+                  "extra_knockback_approach": "multiply_reduced"
                 },
                 {
                   "filter": {
@@ -183,7 +191,8 @@
                   "horizontal_hit_angle_scale": 1.6,
                   "vertical_hit_angle_scale": 0.5,
                   "vertical_position_angle_scale": 0.8,
-                  "scale_with_damage": true
+                  "scale_with_damage": true,
+                  "extra_knockback_approach": "multiply_reduced"
                 },
                 {
                   "filter": {
@@ -199,7 +208,8 @@
                   "horizontal_hit_angle_scale": 1.6,
                   "vertical_hit_angle_scale": 0.5,
                   "vertical_position_angle_scale": 0.8,
-                  "scale_with_damage": true
+                  "scale_with_damage": true,
+                  "extra_knockback_approach": "multiply_reduced"
                 },
                 {
                   "filter": {
@@ -215,7 +225,8 @@
                   "horizontal_hit_angle_scale": 1.6,
                   "vertical_hit_angle_scale": 0.5,
                   "vertical_position_angle_scale": 0.8,
-                  "scale_with_damage": true
+                  "scale_with_damage": true,
+                  "extra_knockback_approach": "multiply_reduced"
                 },
                 {
                   "filter": {
@@ -231,7 +242,8 @@
                   "horizontal_hit_angle_scale": 1.6,
                   "vertical_hit_angle_scale": 0.5,
                   "vertical_position_angle_scale": 0.8,
-                  "scale_with_damage": true
+                  "scale_with_damage": true,
+                  "extra_knockback_approach": "multiply_reduced"
                 }
               ]
             }
@@ -286,7 +298,8 @@
                 "horizontal_hit_angle_scale": 1.6,
                 "vertical_hit_angle_scale": 0.5,
                 "vertical_position_angle_scale": 0.8,
-                "scale_with_damage": true
+                "scale_with_damage": true,
+                "extra_knockback_approach": "multiply_reduced"
               },
               {
                 "filter": {
@@ -302,7 +315,8 @@
                 "horizontal_hit_angle_scale": 1.6,
                 "vertical_hit_angle_scale": 0.5,
                 "vertical_position_angle_scale": 0.8,
-                "scale_with_damage": true
+                "scale_with_damage": true,
+                "extra_knockback_approach": "multiply_reduced"
               },
               {
                 "filter": {
@@ -318,7 +332,8 @@
                 "horizontal_hit_angle_scale": 1.6,
                 "vertical_hit_angle_scale": 0.5,
                 "vertical_position_angle_scale": 0.8,
-                "scale_with_damage": true
+                "scale_with_damage": true,
+                "extra_knockback_approach": "multiply_reduced"
               },
               {
                 "filter": {
@@ -334,7 +349,8 @@
                 "horizontal_hit_angle_scale": 1.6,
                 "vertical_hit_angle_scale": 0.5,
                 "vertical_position_angle_scale": 0.8,
-                "scale_with_damage": true
+                "scale_with_damage": true,
+                "extra_knockback_approach": "multiply_reduced"
               },
               {
                 "filter": {
@@ -350,7 +366,8 @@
                 "horizontal_hit_angle_scale": 1.6,
                 "vertical_hit_angle_scale": 0.5,
                 "vertical_position_angle_scale": 0.8,
-                "scale_with_damage": true
+                "scale_with_damage": true,
+                "extra_knockback_approach": "multiply_reduced"
               },
               {
                 "filter": {
@@ -366,7 +383,8 @@
                 "horizontal_hit_angle_scale": 1.6,
                 "vertical_hit_angle_scale": 0.5,
                 "vertical_position_angle_scale": 0.8,
-                "scale_with_damage": true
+                "scale_with_damage": true,
+                "extra_knockback_approach": "multiply_reduced"
               },
               {
                 "filter": {
@@ -382,7 +400,8 @@
                 "horizontal_hit_angle_scale": 1.6,
                 "vertical_hit_angle_scale": 0.5,
                 "vertical_position_angle_scale": 0.8,
-                "scale_with_damage": true
+                "scale_with_damage": true,
+                "extra_knockback_approach": "multiply_reduced"
               },
               {
                 "filter": {
@@ -398,7 +417,8 @@
                 "horizontal_hit_angle_scale": 1.6,
                 "vertical_hit_angle_scale": 0.5,
                 "vertical_position_angle_scale": 0.8,
-                "scale_with_damage": true
+                "scale_with_damage": true,
+                "extra_knockback_approach": "multiply_reduced"
               },
               {
                 "filter": {
@@ -414,7 +434,8 @@
                 "horizontal_hit_angle_scale": 1.6,
                 "vertical_hit_angle_scale": 0.5,
                 "vertical_position_angle_scale": 0.8,
-                "scale_with_damage": true
+                "scale_with_damage": true,
+                "extra_knockback_approach": "multiply_reduced"
               },
               {
                 "filter": {
@@ -430,7 +451,8 @@
                 "horizontal_hit_angle_scale": 1.6,
                 "vertical_hit_angle_scale": 0.5,
                 "vertical_position_angle_scale": 0.8,
-                "scale_with_damage": true
+                "scale_with_damage": true,
+                "extra_knockback_approach": "multiply_reduced"
               },
               {
                 "filter": {
@@ -446,7 +468,8 @@
                 "horizontal_hit_angle_scale": 1.6,
                 "vertical_hit_angle_scale": 0.5,
                 "vertical_position_angle_scale": 0.8,
-                "scale_with_damage": true
+                "scale_with_damage": true,
+                "extra_knockback_approach": "multiply_reduced"
               },
               {
                 "filter": {
@@ -462,7 +485,8 @@
                 "horizontal_hit_angle_scale": 1.6,
                 "vertical_hit_angle_scale": 0.5,
                 "vertical_position_angle_scale": 0.8,
-                "scale_with_damage": true
+                "scale_with_damage": true,
+                "extra_knockback_approach": "multiply_reduced"
               }
             ]
           }

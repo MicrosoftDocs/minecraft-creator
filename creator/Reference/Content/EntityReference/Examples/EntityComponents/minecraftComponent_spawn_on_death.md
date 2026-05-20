@@ -17,7 +17,7 @@ Component for spawning entities when an entity perishes.
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| additional_spawn_range | {"max":0,"min":0} | [Additional Spawn Range](#item-components-intrange) item | Additional random range of entities to spawn, defaults to 0, 0 when not set | 
+| additional_spawn_range | {"max":0,"min":0} | [Additional Spawn Range](#item-intrange) item | Additional random range of entities to spawn, defaults to 0, 0 when not set | 
 | entity_to_spawn | self | String | What entity to spawn, defaults to owning entity when not set | 
 | filters (Filters) | {"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null} | [Filters](#filters) item | Conditions that need to be met for the behavior to start. | 
 | filters (Alternate 1) | *not set* | Object |  | 
@@ -25,11 +25,11 @@ Component for spawning entities when an entity perishes.
 | spawn_amount | 1 | Integer number | How many entities to spawn, defaults to 1 when not set Value must be > 0. | 
 | spawn_method | spawned | String | Spawn method. born, spawned, or summoned, defaults to spawned when not set | 
 
-### Item Components IntRange
-Has minimum and maximum integer values.
+### Item IntRange
+Specifies an integer range between minimum and maximum values for item properties requiring whole numbers. Used for stack count variations, discrete charge levels, or quantity ranges in loot tables. Ensures values stay within valid bounds for countable item properties.
 
 
-#### Item Components IntRange Properties
+#### Item IntRange Properties
 
 **JSON path:** `additional_spawn_range`
 

@@ -32,6 +32,7 @@ Allows the mob to pick up items on the ground.
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `2`, Bogged: `5`, Parched: `6` | 
 | search_height | 1 | Integer number | Height in blocks the mob will search for items | Allay: `32` | 
 | speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Allay: `6`, Bogged: `1` | 
+| stop_if_holding_item | false | Boolean true/false | If true, the mob will not pick up another item if the item's preferred slot matches |  | 
 | track_target | false | Boolean true/false | If true, this mob will chase after the target as long as it's a valid target |  | 
 
 ### Control Flags choices

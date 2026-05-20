@@ -195,10 +195,13 @@ Adds a data table to the pane.
 
 ### **addDivider**
 `
-addDivider(): IPropertyItemBase
+addDivider(options?: IDividerPropertyItemOptions): IPropertyItemBase
 `
 
 Adds an divider item to the pane.
+
+#### **Parameters**
+- **options**?: *IDividerPropertyItemOptions*
 
 **Returns** *IPropertyItemBase*
 

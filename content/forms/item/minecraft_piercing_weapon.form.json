@@ -24,7 +24,7 @@
         "title": "Creative Reach",
         "description": "Defines the reach used when the user is in Creative Mode. Defaults to \"reach\" if unspecified.",
         "dataType": "object",
-        "subFormId": "item_components/floatrange"
+        "subFormId": "item/floatrange"
       },
       {
         "id": "hitbox_margin",
@@ -42,7 +42,7 @@
           "max": 3,
           "min": 0
         },
-        "subFormId": "item_components/floatrange"
+        "subFormId": "item/floatrange"
       }
     ],
     "samples": {}

@@ -12,10 +12,14 @@ description: Contents of the @minecraft/server-ui.FormRejectError class.
 ## Extends
 - *Error*
 
+Thrown when a form is rejected. Contains the reason for the rejection.
+
 ## Properties
 
 ### **reason**
 `read-only reason: FormRejectReason;`
+
+The reason the form was rejected.
 
 Type: [*FormRejectReason*](FormRejectReason.md)
 

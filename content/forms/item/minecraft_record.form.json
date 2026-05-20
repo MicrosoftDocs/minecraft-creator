@@ -13,7 +13,22 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "sound_event",
+      "title": "Sound Event",
+      "description": "Sound event type: 13, cat, blocks, chirp, far, mall, mellohi, stal, strad, ward, 11, wait, pigstep, otherside, 5, relic.",
+      "dataType": "string",
+      "samples": {
+        "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+          {
+            "path": "/minecraft:item/components/minecraft:record/",
+            "content": "pre_ram.screamer"
+          }
+        ]
+      }
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:record",
     "title": "Item Record",
@@ -986,6 +1001,14 @@
           {
             "id": "gallop",
             "title": "Gallop"
+          },
+          {
+            "id": "geyser_continuous_eruption_active",
+            "title": "Geyser continuous eruption active"
+          },
+          {
+            "id": "geyser_continuous_eruption_start",
+            "title": "Geyser continuous eruption start"
           },
           {
             "id": "geyser_eruption_active",
@@ -2304,5 +2327,18 @@
       }
     ],
     "samples": {}
+  },
+  "description": "Used by record items to play music.",
+  "samples": {
+    "sample": [
+      {
+        "path": "sample",
+        "content": {
+          "comparator_signal": 1,
+          "duration": 5,
+          "sound_event": "ambient.tame"
+        }
+      }
+    ]
   }
 }

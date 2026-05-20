@@ -13,8 +13,10 @@ ms.date: 02/11/2025
 Duration, in seconds, of the item's swing animation played when mining or attacking. Affects visuals only and does not impact attack frequency or other gameplay mechanics.
 
 
-## Item Components Swing Duration Properties
+## Item Swing Duration Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | value | 0.30000001192092896 | Decimal number | Duration, in seconds, of the item's swing animation played when mining or attacking. Affects visuals only and does not impact attack frequency or other gameplay mechanics. | 
+
+## Samples

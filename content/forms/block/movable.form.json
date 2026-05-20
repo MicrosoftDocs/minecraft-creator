@@ -6,7 +6,7 @@
         "tokens": [
           {
             "type": "literal",
-            "text": "has piston movement behavior"
+            "text": "defines how the block reacts to pistons"
           }
         ]
       }

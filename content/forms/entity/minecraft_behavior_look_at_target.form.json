@@ -321,7 +321,7 @@
           "max": 4,
           "min": 2
         },
-        "subFormId": "item_components/floatrange",
+        "subFormId": "item/floatrange",
         "samples": {
           "/vanilla/behavior_pack/entities/wither.json": [
             {

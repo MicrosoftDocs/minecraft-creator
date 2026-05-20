@@ -18,7 +18,7 @@ Allows this entity to detect the nearest player within "sniffing_radius" and upd
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
-| cooldown_range | {"max":10,"min":3} | [Cooldown Range](#item-components-floatrange) item | Cooldown range between sniffs in seconds | Warden: `{"min":5,"max":10}` | 
+| cooldown_range | {"max":10,"min":3} | [Cooldown Range](#item-floatrange) item | Cooldown range between sniffs in seconds | Warden: `{"min":5,"max":10}` | 
 | duration | 1 | Decimal number | Sniffing duration in seconds | Warden: `4.16` | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Warden: `6` | 
 | sniffing_radius | 5 | Decimal number | Mob detection radius | Warden: `24` | 
@@ -33,11 +33,11 @@ Allows this entity to detect the nearest player within "sniffing_radius" and upd
 | look | Look | |
 | move | Move | |
 
-### Item Components FloatRange
-Has minimum and maximum float values.
+### Item FloatRange
+Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
 
 
-#### Item Components FloatRange Properties
+#### Item FloatRange Properties
 
 **JSON path:** `cooldown_range`
 

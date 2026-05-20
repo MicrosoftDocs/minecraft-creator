@@ -13,12 +13,12 @@ ms.date: 02/11/2025
 Defines the items that can be used to repair a defined item, and the amount of durability each item restores upon repair. Each entry needs to define a list of strings for 'items' that can be used for the repair and an optional 'repair_amount' for how much durability is repaired.
 
 
-## Item Components Repairable Properties
+## Item Repairable Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| repair_items | [] | String | List of repair item entries. Each entry needs to define a list of strings for `items` that can be used for the repair and an optional `repair_amount` for how much durability is gained. | Chestplate: `[{"items":["minecraft:stick"],"repair_amount":"context.other->query.remaining_durability + 0.05 * context.other->query.max_durability"}]`, My Sword Chuck: `[{"items":["minecraft:diamond"],"repair_amount":"query.max_durability * 0.25"}]` | 
-| repair_items (Repair Items) | *not set* | [Repair Items (Repair Items)](#repair-items-repair-items) item |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| repair_items | [] | String | List of repair item entries. Each entry needs to define a list of strings for `items` that can be used for the repair and an optional `repair_amount` for how much durability is gained. | 
+| repair_items (Repair Items) | *not set* | [Repair Items (Repair Items)](#repair-items-repair-items) item |  | 
 
 ### Repair Items (Repair Items)
 
@@ -53,38 +53,6 @@ Defines the items that can be used to repair a defined item, and the amount of d
   "on_repaired": "minecraft:celebrate",
   "repair_items": [
     "anvil"
-  ]
-}
-```
-
-#### [Chestplate](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/chestplate.json)
-
-
-```json
-"minecraft:repairable": {
-  "repair_items": [
-    {
-      "items": [
-        "minecraft:stick"
-      ],
-      "repair_amount": "context.other->query.remaining_durability + 0.05 * context.other->query.max_durability"
-    }
-  ]
-}
-```
-
-#### [My Sword Chuck](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json)
-
-
-```json
-"minecraft:repairable": {
-  "repair_items": [
-    {
-      "items": [
-        "minecraft:diamond"
-      ],
-      "repair_amount": "query.max_durability * 0.25"
-    }
   ]
 }
 ```

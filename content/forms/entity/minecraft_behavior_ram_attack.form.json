@@ -480,7 +480,7 @@
           "min": 10
         },
         "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
-        "subFormId": "item_components/floatrange",
+        "subFormId": "item/floatrange",
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
             {
@@ -1540,6 +1540,14 @@
           {
             "id": "gallop",
             "title": "Gallop"
+          },
+          {
+            "id": "geyser_continuous_eruption_active",
+            "title": "Geyser continuous eruption active"
+          },
+          {
+            "id": "geyser_continuous_eruption_start",
+            "title": "Geyser continuous eruption start"
           },
           {
             "id": "geyser_eruption_active",
@@ -3858,6 +3866,14 @@
           {
             "id": "gallop",
             "title": "Gallop"
+          },
+          {
+            "id": "geyser_continuous_eruption_active",
+            "title": "Geyser continuous eruption active"
+          },
+          {
+            "id": "geyser_continuous_eruption_start",
+            "title": "Geyser continuous eruption start"
           },
           {
             "id": "geyser_eruption_active",

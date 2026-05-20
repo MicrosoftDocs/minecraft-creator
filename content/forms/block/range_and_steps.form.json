@@ -6,7 +6,7 @@
         "tokens": [
           {
             "type": "literal",
-            "text": "has range with steps"
+            "text": "defines a value range with discrete steps"
           }
         ]
       }
@@ -24,7 +24,7 @@
         "description": "The range of the random offset.",
         "dataType": "object",
         "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
-        "subFormId": "item_components/floatrange",
+        "subFormId": "item/floatrange",
         "isRequired": true
       },
       {

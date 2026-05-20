@@ -13,14 +13,14 @@ ms.date: 02/11/2025
 Determines how long an item takes to use in combination with components such as Shooter, Throwable, or Food.
 
 
-## Item Components Use Modifiers Properties
+## Item Use Modifiers Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | emit_vibrations | true | Boolean true/false | Whether vibrations are emitted when the item starts or stops being used. |  | 
 | movement_modifier | *not set* | Decimal number | Multiplier applied to the player's movement speed while the item is in use. Value must be <= 1. | Apple: `0.35` | 
 | start_sound | *not set* | [Start Sound](#start-sound-choices) choices | Sound played when the item starts being used. |  | 
-| start_using | if_first | [Start Using](#start-using-choices) choices | Controls how using the item triggers start using behavior. "if_first" only starts if no other component has started using yet; "always" always restarts using. Defaults to "if_first". |  | 
+| start_using | if_first | [Start Using](#start-using-choices) choices | Controls how using the item triggers start using behavior. "if_first" only starts if no other component has started using yet; "always" always restarts using. Defaults to "if_first". | Apple: `"always"` | 
 | use_duration | 0 | Decimal number | Time, in seconds, that the item takes to use. | Apple: `1.6` | 
 
 ### Start Sound choices
@@ -264,6 +264,8 @@ Determines how long an item takes to use in combination with components such as 
 | freeze | Freeze | |
 | fuse | Fuse | |
 | gallop | Gallop | |
+| geyser_continuous_eruption_active | Geyser continuous eruption active | |
+| geyser_continuous_eruption_start | Geyser continuous eruption start | |
 | geyser_eruption_active | Geyser eruption active | |
 | geyser_eruption_start | Geyser eruption start | |
 | glass | Glass | |
@@ -607,6 +609,7 @@ Determines how long an item takes to use in combination with components such as 
 
 ```json
 "minecraft:use_modifiers": {
+  "start_using": "always",
   "use_duration": 1.6,
   "movement_modifier": 0.35
 }

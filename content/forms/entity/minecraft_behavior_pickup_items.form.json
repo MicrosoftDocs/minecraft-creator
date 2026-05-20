@@ -736,6 +736,13 @@
         }
       },
       {
+        "id": "stop_if_holding_item",
+        "title": "Stop If Holding Item",
+        "description": "If true, the mob will not pick up another item if the item's preferred slot matches",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
         "id": "track_target",
         "title": "Track Target",
         "description": "If true, this mob will chase after the target as long as it's a valid target",

@@ -27,7 +27,7 @@ Enables the mob to admire items that have been configured as admirable.
 | on_admire_item_start | {"event":"","filters":{"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null},"target":"self"} | [Admire Item Start](#entity-actordefinitiontrigger) item | Event to run when the mob starts admiring an item. | 
 | on_admire_item_stop | {"event":"","filters":{"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null},"target":"self"} | [Admire Item Stop](#entity-actordefinitiontrigger) item | Event to run when the mob stops admiring an item. | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
-| sound_interval (Item Components FloatRange) | 0 | [Sound Interval](#item-components-floatrange) item | The range of time in seconds to randomly wait before playing the sound again. Can be a number, an array [min, max], or an object with range_min and range_max. | 
+| sound_interval (Item FloatRange) | 0 | [Sound Interval](#item-floatrange) item | The range of time in seconds to randomly wait before playing the sound again. Can be a number, an array [min, max], or an object with range_min and range_max. | 
 | sound_interval (as Array of objects) | *not set* | Array of [Sound Interval](#sound-interval) items |  | 
 | sound_interval (as Object) | *not set* | [Sound Interval](#sound-interval) item |  | 
 
@@ -88,11 +88,11 @@ Filters allow data objects to specify test criteria which allows their use. Filt
 | self | Self | |
 | target | Target | |
 
-### Item Components FloatRange
-Has minimum and maximum float values.
+### Item FloatRange
+Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
 
 
-#### Item Components FloatRange Properties
+#### Item FloatRange Properties
 
 **JSON path:** `sound_interval`
 

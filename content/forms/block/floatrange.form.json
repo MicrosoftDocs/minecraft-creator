@@ -6,7 +6,7 @@
         "tokens": [
           {
             "type": "literal",
-            "text": "has min and max float range"
+            "text": "defines a min/max float range"
           }
         ]
       }

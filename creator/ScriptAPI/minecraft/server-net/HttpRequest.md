@@ -14,11 +14,11 @@ Main object for structuring a request.
 ## Properties
 
 ### **body**
-`body: string;`
+`body: minecraftserver.ISerializable | string;`
 
 Content of the body of the HTTP request.
 
-Type: *string*
+Type: [*@minecraft/server.ISerializable*](../../../scriptapi/minecraft/server/ISerializable.md) | *string*
 
 Notes:
   - This property can be edited in early-execution mode.
@@ -99,13 +99,13 @@ Notes:
 
 ### **setBody**
 `
-setBody(body: string): HttpRequest
+setBody(body: minecraftserver.ISerializable | string): HttpRequest
 `
 
 Updates the content of the body of the HTTP request.
 
 #### **Parameters**
-- **body**: *string*
+- **body**: [*@minecraft/server.ISerializable*](../../../scriptapi/minecraft/server/ISerializable.md) | *string*
 
 **Returns** [*HttpRequest*](HttpRequest.md)
   

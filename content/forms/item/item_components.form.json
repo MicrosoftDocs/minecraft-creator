@@ -36,14 +36,14 @@
         "title": "Minecraft Block Placer",
         "description": "Items with the block_placer component will place a block when used. \nThis component can also be used instead of the \"minecraft:icon\" component to render the referenced block as the item icon.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_block_placer"
+        "subFormId": "item/minecraft_block_placer"
       },
       {
         "id": "minecraft:bundle_interaction",
         "title": "Minecraft Bundle Interaction",
         "description": "[EXPERIMENTAL] Adds bundle-specific interactions and tooltip to the item. Requires a \"minecraft:storage_item\" component.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_bundle_interaction"
+        "subFormId": "item/minecraft_bundle_interaction"
       },
       {
         "id": "minecraft:can_destroy_in_creative",
@@ -75,14 +75,14 @@
         "title": "Minecraft Compostable",
         "description": "Specifies that an item is compostable and provides the chance of creating a composting layer in the composter",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_compostable"
+        "subFormId": "item/minecraft_compostable"
       },
       {
         "id": "minecraft:cooldown",
         "title": "Minecraft Cooldown",
         "description": "Adds a cooldown to the item so that, after performing an action of the specified \"type\", all items with a \"minecraft:cooldown\" component in the same \"category\" become unable to perform that same type of action for the number of seconds defined in \"duration\".",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_cooldown"
+        "subFormId": "item/minecraft_cooldown"
       },
       {
         "id": "minecraft:damage",
@@ -120,69 +120,69 @@
         "title": "Minecraft Damage Absorption",
         "description": "It allows an item to absorb damage that would otherwise be dealt to its wearer. For this to happen, the item needs to be equipped in an armor slot. The absorbed damage reduces the item's durability, with any excess damage being ignored. Because of this, the item also needs a `minecraft:durability` component.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_damage_absorption"
+        "subFormId": "item/minecraft_damage_absorption"
       },
       {
         "id": "minecraft:digger",
         "title": "Minecraft Digger",
         "description": "Digger item component specifies how quickly this item can dig specific blocks.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_digger"
+        "subFormId": "item/minecraft_digger"
       },
       {
         "id": "minecraft:display_name",
         "title": "Minecraft Display Name",
         "description": "The display_name item component specifies the text shown whenever an item's name is displayed, like in hover text.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_display_name"
+        "subFormId": "item/minecraft_display_name"
       },
       {
         "id": "minecraft:durability",
         "title": "Minecraft Durability",
         "description": "The durability item component specifies how much damage the item takes before breaking, and allows the item to be combined to repair or augment them.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_durability"
+        "subFormId": "item/minecraft_durability"
       },
       {
         "id": "minecraft:durability_sensor",
         "title": "Minecraft Durability Sensor",
         "description": "Enables an item to emit effects when it receives damage. Because of this, the item also needs a `minecraft:durability` component.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_durability_sensor"
+        "subFormId": "item/minecraft_durability_sensor"
       },
       {
         "id": "minecraft:dyeable",
         "title": "Minecraft Dyeable",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_dyeable"
+        "subFormId": "item/minecraft_dyeable"
       },
       {
         "id": "minecraft:enchantable",
         "title": "Minecraft Enchantable",
         "description": "The enchantable component specifies what enchantments can be applied to the item. Not all enchantments will have an effect on all item components.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_enchantable"
+        "subFormId": "item/minecraft_enchantable"
       },
       {
         "id": "minecraft:entity_placer",
         "title": "Minecraft Entity Placer",
         "description": "The entity_placer item component specifies the blocks that the item can be placed on.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_entity_placer"
+        "subFormId": "item/minecraft_entity_placer"
       },
       {
         "id": "minecraft:fire_resistant",
         "title": "Minecraft Fire Resistant",
         "description": "Determines whether the item is immune to burning when dropped in fire or lava.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_fire_resistant"
+        "subFormId": "item/minecraft_fire_resistant"
       },
       {
         "id": "minecraft:food",
         "title": "Minecraft Food",
         "description": "When an item has a food component, it becomes edible to the player. Must have the 'minecraft:use_duration' component in order to function properly.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_food"
+        "subFormId": "item/minecraft_food"
       },
       {
         "id": "minecraft:fuel",
@@ -332,7 +332,7 @@
         "title": "Minecraft Kinetic Weapon",
         "description": "Allows an item to deal kinetic damage and its effects. This happens every tick while in use, in a straight line along the user's view vector, with damage computed based on both the user's and the target's velocity projected onto the view vector (via a dot product). The more the user and target move toward each other, and the more this movement is aligned with the user's view vector, the higher the damage. After \"damage_multiplier\" and \"damage_modifier\" are applied, the resulting damage is floored to the nearest lower integer.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_kinetic_weapon"
+        "subFormId": "item/minecraft_kinetic_weapon"
       },
       {
         "id": "minecraft:liquid_clipped",
@@ -399,14 +399,14 @@
         "title": "Minecraft Piercing Weapon",
         "description": "Allows an item to deal damage to all entities detected in a straight line along the user's view vector. Items with this component cannot destroy blocks, as the attack action always takes priority, regardless of what the user is looking at.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_piercing_weapon"
+        "subFormId": "item/minecraft_piercing_weapon"
       },
       {
         "id": "minecraft:projectile",
         "title": "Minecraft Projectile",
         "description": "Projectile items shoot out, like an arrow.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_projectile"
+        "subFormId": "item/minecraft_projectile"
       },
       {
         "id": "minecraft:rarity",
@@ -438,21 +438,21 @@
         "title": "Minecraft Record",
         "description": "Record Item Component. Used by record items to play music.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_record"
+        "subFormId": "item/minecraft_record"
       },
       {
         "id": "minecraft:repairable",
         "title": "Minecraft Repairable",
         "description": "The repairable item component specifies which items can be used to repair this item, along with how much durability is gained.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_repairable"
+        "subFormId": "item/minecraft_repairable"
       },
       {
         "id": "minecraft:shooter",
         "title": "Minecraft Shooter",
         "description": "Shooter Item Component.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_shooter"
+        "subFormId": "item/minecraft_shooter"
       },
       {
         "id": "minecraft:should_despawn",
@@ -509,49 +509,49 @@
         "title": "Minecraft Storage Item",
         "description": "[EXPERIMENTAL] Storage Items can be used by other components to store other items within this item.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_storage_item"
+        "subFormId": "item/minecraft_storage_item"
       },
       {
         "id": "minecraft:storage_weight_limit",
         "title": "Minecraft Storage Weight Limit",
         "description": "Specifies the maximum weight limit that a storage item can hold",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_storage_weight_limit"
+        "subFormId": "item/minecraft_storage_weight_limit"
       },
       {
         "id": "minecraft:storage_weight_modifier",
         "title": "Minecraft Storage Weight Modifier",
         "description": "Specifies the maximum weight limit that a storage item can hold",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_storage_weight_modifier"
+        "subFormId": "item/minecraft_storage_weight_modifier"
       },
       {
         "id": "minecraft:swing_duration",
         "title": "Minecraft Swing Duration",
         "description": "Duration, in seconds, of the item's swing animation played when mining or attacking. Affects visuals only and does not impact attack frequency or other gameplay mechanics.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_swing_duration"
+        "subFormId": "item/minecraft_swing_duration"
       },
       {
         "id": "minecraft:swing_sounds",
         "title": "Minecraft Swing Sounds",
         "description": "Overrides the swing sounds emitted by the user.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_swing_sounds"
+        "subFormId": "item/minecraft_swing_sounds"
       },
       {
         "id": "minecraft:tags",
         "title": "Minecraft Tags",
         "description": "The tags component specifies which tags an item has on it.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_tags"
+        "subFormId": "item/minecraft_tags"
       },
       {
         "id": "minecraft:throwable",
         "title": "Minecraft Throwable",
         "description": "Throwable items can be thrown by the player, such as a snowball.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_throwable"
+        "subFormId": "item/minecraft_throwable"
       },
       {
         "id": "minecraft:use_animation",
@@ -625,14 +625,14 @@
         "title": "Minecraft Use Modifiers",
         "description": "Modifies use behavior, including how long the item takes to use and the player's movement speed.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_use_modifiers"
+        "subFormId": "item/minecraft_use_modifiers"
       },
       {
         "id": "minecraft:wearable",
         "title": "Minecraft Wearable",
         "description": "Wearable items can be worn by a player in a specified slot.",
         "dataType": "object",
-        "subFormId": "item_components/minecraft_wearable"
+        "subFormId": "item/minecraft_wearable"
       }
     ]
   }

@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server-ui.TextOptions Interface
 description: Contents of the @minecraft/server-ui.TextOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # TextOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Options for configuring a text component (label or header).
 

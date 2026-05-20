@@ -15,6 +15,39 @@
           "title": "Presets",
           "fields": [
             {
+              "id": "filters",
+              "title": "Filters",
+              "dataType": "string",
+              "samples": {
+                "/vanilla/behavior_pack/entities/boat.json": [
+                  {
+                    "path": "filters",
+                    "content": {
+                      "all_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "sulfur_cube"
+                        },
+                        {
+                          "test": "enum_property",
+                          "subject": "other",
+                          "domain": "minecraft:sulfur_cube_archetype",
+                          "operator": "not",
+                          "value": "none"
+                        },
+                        {
+                          "test": "is_controlling_passenger_family",
+                          "subject": "self",
+                          "value": "player"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
               "id": "push_mode",
               "title": "Push mode",
               "dataType": "string",
@@ -22,62 +55,30 @@
                 "/vanilla/behavior_pack/entities/boat.json": [
                   {
                     "path": "push_mode",
-                    "content": "legacy_boat"
+                    "content": "none"
                   }
                 ]
               }
             },
             {
               "id": "strength_multiplier",
-              "title": "Strength multiplier",
-              "dataType": "number",
-              "samples": {
-                "/vanilla/behavior_pack/entities/boat.json": [
-                  {
-                    "path": "strength_multiplier",
-                    "content": 0.1
-                  }
-                ]
-              }
+              "title": "Strength Multiplier",
+              "dataType": "number"
             },
             {
               "id": "min_distance",
-              "title": "Min distance",
-              "dataType": "number",
-              "samples": {
-                "/vanilla/behavior_pack/entities/boat.json": [
-                  {
-                    "path": "min_distance",
-                    "content": 0.3
-                  }
-                ]
-              }
+              "title": "Min Distance",
+              "dataType": "number"
             },
             {
               "id": "push_scale_self",
-              "title": "Push scale self",
-              "dataType": "number",
-              "samples": {
-                "/vanilla/behavior_pack/entities/boat.json": [
-                  {
-                    "path": "push_scale_self",
-                    "content": 0.5
-                  }
-                ]
-              }
+              "title": "Push Scale Self",
+              "dataType": "number"
             },
             {
               "id": "push_scale_other",
-              "title": "Push scale other",
-              "dataType": "number",
-              "samples": {
-                "/vanilla/behavior_pack/entities/boat.json": [
-                  {
-                    "path": "push_scale_other",
-                    "content": 0.25
-                  }
-                ]
-              }
+              "title": "Push Scale Other",
+              "dataType": "number"
             }
           ]
         },
@@ -87,9 +88,33 @@
               "path": "/minecraft:entity/components/minecraft:pushable_by_entity/",
               "content": [
                 {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "sulfur_cube"
+                      },
+                      {
+                        "test": "enum_property",
+                        "subject": "other",
+                        "domain": "minecraft:sulfur_cube_archetype",
+                        "operator": "not",
+                        "value": "none"
+                      },
+                      {
+                        "test": "is_controlling_passenger_family",
+                        "subject": "self",
+                        "value": "player"
+                      }
+                    ]
+                  },
+                  "push_mode": "none"
+                },
+                {
                   "push_mode": "legacy_boat",
                   "strength_multiplier": 0.1,
-                  "min_distance": 0.3,
+                  "min_distance": 0.55,
                   "push_scale_self": 0.5,
                   "push_scale_other": 0.25
                 }
@@ -101,9 +126,33 @@
               "path": "/minecraft:entity/components/minecraft:pushable_by_entity/",
               "content": [
                 {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "sulfur_cube"
+                      },
+                      {
+                        "test": "enum_property",
+                        "subject": "other",
+                        "domain": "minecraft:sulfur_cube_archetype",
+                        "operator": "not",
+                        "value": "none"
+                      },
+                      {
+                        "test": "is_controlling_passenger_family",
+                        "subject": "self",
+                        "value": "player"
+                      }
+                    ]
+                  },
+                  "push_mode": "none"
+                },
+                {
                   "push_mode": "legacy_boat",
                   "strength_multiplier": 0.1,
-                  "min_distance": 0.3,
+                  "min_distance": 0.55,
                   "push_scale_self": 0.5,
                   "push_scale_other": 0.25
                 }
@@ -120,9 +169,33 @@
           "content": {
             "presets": [
               {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "sulfur_cube"
+                    },
+                    {
+                      "test": "enum_property",
+                      "subject": "other",
+                      "domain": "minecraft:sulfur_cube_archetype",
+                      "operator": "not",
+                      "value": "none"
+                    },
+                    {
+                      "test": "is_controlling_passenger_family",
+                      "subject": "self",
+                      "value": "player"
+                    }
+                  ]
+                },
+                "push_mode": "none"
+              },
+              {
                 "push_mode": "legacy_boat",
                 "strength_multiplier": 0.1,
-                "min_distance": 0.3,
+                "min_distance": 0.55,
                 "push_scale_self": 0.5,
                 "push_scale_other": 0.25
               }
@@ -142,9 +215,33 @@
           "content": {
             "presets": [
               {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "sulfur_cube"
+                    },
+                    {
+                      "test": "enum_property",
+                      "subject": "other",
+                      "domain": "minecraft:sulfur_cube_archetype",
+                      "operator": "not",
+                      "value": "none"
+                    },
+                    {
+                      "test": "is_controlling_passenger_family",
+                      "subject": "self",
+                      "value": "player"
+                    }
+                  ]
+                },
+                "push_mode": "none"
+              },
+              {
                 "push_mode": "legacy_boat",
                 "strength_multiplier": 0.1,
-                "min_distance": 0.3,
+                "min_distance": 0.55,
                 "push_scale_self": 0.5,
                 "push_scale_other": 0.25
               }
@@ -160,7 +257,7 @@
               {
                 "push_mode": "legacy_minecart",
                 "strength_multiplier": 0.1,
-                "min_distance": 0.0001,
+                "min_distance": 0.01,
                 "push_scale_self": 0.5,
                 "push_scale_other": 0.25
               }
@@ -194,9 +291,33 @@
               "path": "/minecraft:entity/components/minecraft:pushable_by_entity/",
               "content": [
                 {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "sulfur_cube"
+                      },
+                      {
+                        "test": "enum_property",
+                        "subject": "other",
+                        "domain": "minecraft:sulfur_cube_archetype",
+                        "operator": "not",
+                        "value": "none"
+                      },
+                      {
+                        "test": "is_controlling_passenger_family",
+                        "subject": "self",
+                        "value": "player"
+                      }
+                    ]
+                  },
+                  "push_mode": "none"
+                },
+                {
                   "push_mode": "legacy_boat",
                   "strength_multiplier": 0.1,
-                  "min_distance": 0.3,
+                  "min_distance": 0.55,
                   "push_scale_self": 0.5,
                   "push_scale_other": 0.25
                 }
@@ -208,9 +329,33 @@
               "path": "/minecraft:entity/components/minecraft:pushable_by_entity/",
               "content": [
                 {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "sulfur_cube"
+                      },
+                      {
+                        "test": "enum_property",
+                        "subject": "other",
+                        "domain": "minecraft:sulfur_cube_archetype",
+                        "operator": "not",
+                        "value": "none"
+                      },
+                      {
+                        "test": "is_controlling_passenger_family",
+                        "subject": "self",
+                        "value": "player"
+                      }
+                    ]
+                  },
+                  "push_mode": "none"
+                },
+                {
                   "push_mode": "legacy_boat",
                   "strength_multiplier": 0.1,
-                  "min_distance": 0.3,
+                  "min_distance": 0.55,
                   "push_scale_self": 0.5,
                   "push_scale_other": 0.25
                 }
@@ -224,7 +369,7 @@
                 {
                   "push_mode": "legacy_minecart",
                   "strength_multiplier": 0.1,
-                  "min_distance": 0.0001,
+                  "min_distance": 0.01,
                   "push_scale_self": 0.5,
                   "push_scale_other": 0.25
                 }
@@ -241,9 +386,33 @@
           "content": {
             "presets": [
               {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "sulfur_cube"
+                    },
+                    {
+                      "test": "enum_property",
+                      "subject": "other",
+                      "domain": "minecraft:sulfur_cube_archetype",
+                      "operator": "not",
+                      "value": "none"
+                    },
+                    {
+                      "test": "is_controlling_passenger_family",
+                      "subject": "self",
+                      "value": "player"
+                    }
+                  ]
+                },
+                "push_mode": "none"
+              },
+              {
                 "push_mode": "legacy_boat",
                 "strength_multiplier": 0.1,
-                "min_distance": 0.3,
+                "min_distance": 0.55,
                 "push_scale_self": 0.5,
                 "push_scale_other": 0.25
               }
@@ -263,9 +432,33 @@
           "content": {
             "presets": [
               {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "sulfur_cube"
+                    },
+                    {
+                      "test": "enum_property",
+                      "subject": "other",
+                      "domain": "minecraft:sulfur_cube_archetype",
+                      "operator": "not",
+                      "value": "none"
+                    },
+                    {
+                      "test": "is_controlling_passenger_family",
+                      "subject": "self",
+                      "value": "player"
+                    }
+                  ]
+                },
+                "push_mode": "none"
+              },
+              {
                 "push_mode": "legacy_boat",
                 "strength_multiplier": 0.1,
-                "min_distance": 0.3,
+                "min_distance": 0.55,
                 "push_scale_self": 0.5,
                 "push_scale_other": 0.25
               }
@@ -281,7 +474,7 @@
               {
                 "push_mode": "legacy_minecart",
                 "strength_multiplier": 0.1,
-                "min_distance": 0.0001,
+                "min_distance": 0.01,
                 "push_scale_self": 0.5,
                 "push_scale_other": 0.25
               }

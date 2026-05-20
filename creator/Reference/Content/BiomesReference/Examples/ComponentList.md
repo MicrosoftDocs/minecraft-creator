@@ -21,7 +21,9 @@ ms.date: 02/11/2025
 | [minecraft:noise_gradient](Components/minecraftBiomes_noise_gradient.md)| Places continuous bands of blocks according to a noise distribution. |
 | [minecraft:overworld_generation_rules](Components/minecraftBiomes_overworld_generation_rules.md)| Controls how this biome is instantiated (and then potentially modified) during world generation of the overworld. |
 | [minecraft:overworld_height](Components/minecraftBiomes_overworld_height.md)| Noise parameters used to drive terrain height in the Overworld. |
+| [minecraft:partially_frozen](Components/minecraftBiomes_partially_frozen.md)| Component will impact the temperature in a frozen biome, causing some areas to not be frozen. |
 | [minecraft:replace_biomes](Components/minecraftBiomes_replace_biomes.md)| Replaces a specified portion of one or more Minecraft biomes. |
+| [minecraft:subsurface_builder](Components/minecraftBiomes_subsurface_builder.md)| Sub Surface Builders allow specifying a `minecraft:surface_builder` to be applied to biomes located underneath regular terrain surface. |
 | [minecraft:surface_builder](Components/minecraftBiomes_surface_builder.md)| Controls materials used for terrain generation. |
 | [minecraft:surface_material_adjustments](Components/minecraftBiomes_surface_material_adjustments.md)| Specify fine-detail changes to blocks used in terrain generation (based on a noise function). |
 | [minecraft:tags](Components/minecraftBiomes_tags.md)| Attach arbitrary string tags to this biome. Most biome tags are referenced by JSON settings, but some meanings of tags are directly implemented in the game's code. |

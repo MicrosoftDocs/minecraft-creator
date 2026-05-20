@@ -36,6 +36,8 @@
   href: minecraftBlock_friction.md
 - name: minecraft:geometry
   href: minecraftBlock_geometry.md
+- name: minecraft:instrument_sound
+  href: minecraftBlock_instrument_sound.md
 - name: minecraft:item_visual
   href: minecraftBlock_item_visual.md
 - name: minecraft:light_dampening

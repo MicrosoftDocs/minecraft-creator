@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Defines both the durability threshold, and the effects emitted when that threshold is met.
 
 
-## Item Components Durability Sensor Durability Threshold Properties
+## Item Durability Sensor Durability Threshold Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -361,6 +361,8 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | freeze | Freeze | |
 | fuse | Fuse | |
 | gallop | Gallop | |
+| geyser_continuous_eruption_active | Geyser continuous eruption active | |
+| geyser_continuous_eruption_start | Geyser continuous eruption start | |
 | geyser_eruption_active | Geyser eruption active | |
 | geyser_eruption_start | Geyser eruption start | |
 | glass | Glass | |

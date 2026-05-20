@@ -18,8 +18,12 @@
   href: minecraftBiomes_overworld_generation_rules.md
 - name: minecraft:overworld_height
   href: minecraftBiomes_overworld_height.md
+- name: minecraft:partially_frozen
+  href: minecraftBiomes_partially_frozen.md
 - name: minecraft:replace_biomes
   href: minecraftBiomes_replace_biomes.md
+- name: minecraft:subsurface_builder
+  href: minecraftBiomes_subsurface_builder.md
 - name: minecraft:surface_builder
   href: minecraftBiomes_surface_builder.md
 - name: minecraft:surface_material_adjustments

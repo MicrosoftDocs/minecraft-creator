@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server-ui.UIRawMessage Interface
 description: Contents of the @minecraft/server-ui.UIRawMessage class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # UIRawMessage Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 A message that can be sent to the client. This is a subset of the RawMessage type, and is used for UI messages.
 

@@ -562,7 +562,7 @@
           "max": 1,
           "min": 0
         },
-        "subFormId": "item_components/floatrange"
+        "subFormId": "item/floatrange"
       }
     ],
     "samples": {}

@@ -12,8 +12,14 @@ description: Contents of the @minecraft/server-ui.FormCancelationReason enumerat
 > [!IMPORTANT]
 > This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server-ui/FormCancelationReason.md).
 
+An enum representing the reasons why a form was canceled.
+
 ## Constants
 ### **UserBusy**
 `UserBusy = "UserBusy"`
+
+The form was canceled because the player was busy with another UI interaction.
 ### **UserClosed**
 `UserClosed = "UserClosed"`
+
+The form was canceled because the player closed it.

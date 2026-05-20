@@ -34,7 +34,7 @@
           "max": 0,
           "min": 0
         },
-        "subFormId": "item_components/floatrange"
+        "subFormId": "item/floatrange"
       },
       {
         "id": "duration_range",
@@ -45,7 +45,7 @@
           "max": 0,
           "min": 0
         },
-        "subFormId": "item_components/floatrange"
+        "subFormId": "item/floatrange"
       },
       {
         "id": "on_end",

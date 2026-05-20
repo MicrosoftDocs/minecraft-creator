@@ -13,18 +13,18 @@ ms.date: 02/11/2025
 Configures an item as a digging tool, allowing it to break specific blocks faster than normal. Define which blocks are affected and the speed multiplier for each.
 
 
-## Item Components Digger Properties
+## Item Digger Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| destroy_speeds | [] | Array of [Destroy Speeds](#item-components-blockinfo) items | An array of objects that define which blocks this item can dig and at what speed. Each entry specifies a block (by ID or tag query) and a speed multiplier. | 
+| destroy_speeds | [] | Array of [Destroy Speeds](#item-blockinfo) items | An array of objects that define which blocks this item can dig and at what speed. Each entry specifies a block (by ID or tag query) and a speed multiplier. | 
 | use_efficiency | false | Boolean true/false | When true, the Efficiency enchantment will increase the dig speed of this item. Default is false. | 
 
-### Item Components BlockInfo
-Has block and digging speed configuration.
+### Item BlockInfo
+Associates a block type with a custom digging speed multiplier for the minecraft:digger component. Map blocks to speed values so pickaxes mine stone quickly, axes chop wood faster, and custom tools excel at specific materials. Enables tool specialization matching vanilla Minecraft conventions.
 
 
-#### Item Components BlockInfo Properties
+#### Item BlockInfo Properties
 
 **JSON path:** `destroy_speeds`
 

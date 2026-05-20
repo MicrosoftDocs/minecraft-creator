@@ -6,7 +6,7 @@
         "tokens": [
           {
             "type": "literal",
-            "text": "can produce redstone signal"
+            "text": "defines how a block produces redstone signals"
           }
         ]
       }

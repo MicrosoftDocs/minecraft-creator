@@ -25,7 +25,7 @@ Places continuous bands of blocks according to a noise distribution. This surfac
 
 ### noise_block_specifiers
 
-The noise block specifiers defining which ranges of noise are associated with which blocks. The ranges provided are valid on the interval [0, 1], and may overlap at their endpoints. Value must have at least 1 items.
+The noise block specifiers defining which ranges of noise are associated with which blocks. The ranges provided are valid on the interval [-1, 1], and may overlap at their endpoints. Value must have at least 1 items.
 
 
 ### Biome NoiseBlockSpecifier

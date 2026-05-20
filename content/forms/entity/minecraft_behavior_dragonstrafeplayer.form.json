@@ -208,7 +208,7 @@
           "max": 150,
           "min": 10
         },
-        "subFormId": "item_components/floatrange"
+        "subFormId": "item/floatrange"
       },
       {
         "id": "turn_speed",

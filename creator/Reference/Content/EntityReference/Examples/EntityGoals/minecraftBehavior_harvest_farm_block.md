@@ -16,7 +16,7 @@ Allows the entity to search within an area for farmland with air above it. If fo
 > Requires the following components in order to work properly:
 > 
 > * [Inventory (minecraft:inventory)](../EntityComponents/minecraftComponent_inventory.md)
-> * [Navigation (minecraft:navigation)](../EntityComponents/minecraftComponent_navigation.md)
+> * Navigation (minecraft:navigation)
 > 
 
 ## Entity Harvest Farm Block Behavior Properties

@@ -6,7 +6,7 @@
         "tokens": [
           {
             "type": "literal",
-            "text": "has custom support shape"
+            "text": "defines support shape for fence or stair blocks"
           }
         ]
       }

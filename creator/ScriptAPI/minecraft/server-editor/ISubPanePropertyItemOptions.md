@@ -44,6 +44,13 @@ Adds additional margins to sub pane. If undefined, it will default to true.
 
 Type: *boolean*
 
+### **height**
+`height?: number | LayoutSize | LayoutFlex;`
+
+Custom height of the property item. Use LayoutFlex.Grow to fill available vertical space.
+
+Type: *number* | *LayoutSize* | *LayoutFlex*
+
 ### **icon**
 `icon?: string;`
 

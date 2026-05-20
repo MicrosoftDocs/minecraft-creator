@@ -6,7 +6,7 @@
         "tokens": [
           {
             "type": "literal",
-            "text": "has custom bounding box origin and size"
+            "text": "defines collision box origin and size for a block"
           }
         ]
       }

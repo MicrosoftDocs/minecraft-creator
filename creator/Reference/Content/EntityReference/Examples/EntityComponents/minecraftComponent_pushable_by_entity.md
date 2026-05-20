@@ -17,7 +17,7 @@ Allows an entity to be pushed by other entities.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| presets | [] | Array of [Presets](#entity-pushablebyentitypreset) items | Defines how this entity behaves when pushed by another entity. The first preset whose "filter" conditions are met will be applied; if none match, a default configuration is used instead. | Boat: `[{"push_mode":"legacy_boat","strength_multiplier":0.1,"min_distance":0.3,"push_scale_self":0.5,"push_scale_other":0.25}]` | 
+| presets | [] | Array of [Presets](#entity-pushablebyentitypreset) items | Defines how this entity behaves when pushed by another entity. The first preset whose "filter" conditions are met will be applied; if none match, a default configuration is used instead. | Boat: `[{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"sulfur_cube"},{"test":"enum_property","subject":"other","domain":"minecraft:sulfur_cube_archetype","operator":"not","value":"none"},{"test":"is_controlling_passenger_family","subject":"self","value":"player"}]},"push_mode":"none"},{"push_mode":"legacy_boat","strength_multiplier":0.1,"min_distance":0.55,"push_scale_self":0.5,"push_scale_other":0.25}]` | 
 
 ### Entity PushableByEntityPreset
 
@@ -79,9 +79,33 @@ Defines the type of push vector calculation applied to the entity: - "default": 
 "minecraft:pushable_by_entity": {
   "presets": [
     {
+      "filters": {
+        "all_of": [
+          {
+            "test": "is_family",
+            "subject": "other",
+            "value": "sulfur_cube"
+          },
+          {
+            "test": "enum_property",
+            "subject": "other",
+            "domain": "minecraft:sulfur_cube_archetype",
+            "operator": "not",
+            "value": "none"
+          },
+          {
+            "test": "is_controlling_passenger_family",
+            "subject": "self",
+            "value": "player"
+          }
+        ]
+      },
+      "push_mode": "none"
+    },
+    {
       "push_mode": "legacy_boat",
       "strength_multiplier": 0.1,
-      "min_distance": 0.3,
+      "min_distance": 0.55,
       "push_scale_self": 0.5,
       "push_scale_other": 0.25
     }
@@ -105,7 +129,7 @@ Defines the type of push vector calculation applied to the entity: - "default": 
     {
       "push_mode": "legacy_minecart",
       "strength_multiplier": 0.1,
-      "min_distance": 0.0001,
+      "min_distance": 0.01,
       "push_scale_self": 0.5,
       "push_scale_other": 0.25
     }
